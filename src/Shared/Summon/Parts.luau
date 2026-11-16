@@ -197,7 +197,8 @@ function Parts.wings(B: any, o: any)
 		-- single sculpted wing shape per side
 		local col = if kind == "insect" then "wingGlass" elseif kind == "feather" then "primary" else "membrane"
 		B:mell(span * 0.95, span * 0.07, span * (if kind == "feather" then 0.4 else 0.5), at(x + span * 0.46, y + span * 0.08, z + span * 0.12, 0, rad(-14), rad(10)),
-			{ col = col, mat = if kind == "insect" then "glass" else "skin", tr = if kind == "insect" then 0.4 else nil, bone = "Wing#", pri = pri, role = "wing", trail = true })
+			{ col = col, mat = if kind == "insect" then "glass" else "skin", tr = if kind == "insect" then 0.4 else nil, bone = "Wing#", pri = pri, role = "wing", trail = true,
+				mesh = if kind == "bat" then "s_wing_bat" else nil, name = if kind == "bat" then "Membrane" else nil })
 		return
 	end
 	if kind == "insect" then
@@ -225,25 +226,18 @@ function Parts.wings(B: any, o: any)
 	-- bat / dragon: arm bone along the leading edge, then fingers, membrane panels between
 	local shoulder = { x, y, z }
 	-- raised in a strong V (the membrane shows as a sail from the side as well as from the front)
-	local elbow = { x + span * 0.4, y + span * 0.36, z - span * 0.05 }
-	local wrist = { x + span * 0.68, y + span * 0.56, z + span * 0.08 }
-	B:mlimb(shoulder, elbow, span * 0.07, { col = "dark", mat = "skin", bone = "Wing#", pri = pri, role = "wing" }, 0.1)
-	B:mlimb(elbow, wrist, span * 0.05, { col = "dark", mat = "skin", bone = "Wing#", pri = pri + 0.2, role = "wing" }, 0.1)
+	local wrist0 = { x + span * 0.68, y + span * 0.56, z + span * 0.08 }
 	local tips = {
 		{ x + span * 0.98, y + span * 0.46, z + span * 0.18 },
 		{ x + span * 0.86, y + span * 0.2, z + span * 0.42 },
 		{ x + span * 0.55, y - span * 0.02, z + span * 0.55 },
 	}
-	-- finger spars (thin)
-	for i, tip in (if detail >= 3 then tips else {}) do
-		B:mrod(wrist, tip, span * 0.035, { col = "dark", mat = "skin", bone = "Wing#", pri = pri + 2 + i * 0.2, role = "wing", trail = i == 1 })
-	end
 	-- membrane: ONE taut skin hanging from the arm, in the plane of the spread wing (root at the shoulder, tip at
-	-- the longest finger, leading edge along the arm bones). It is the wing's silhouette, so it survives the part
-	-- budget right after the upper arm; bare wing bones read as an insect. Sculpt: s_wing_bat (ribs, scalloped
-	-- trailing edge); primitive fallback: a thin ellipsoid sail.
+	-- the longest finger). It is the wing's silhouette, so it survives the part budget right after the upper arm;
+	-- bare wing bones read as an insect. Sculpt: s_wing_bat (ribs, scalloped trailing edge); primitive fallback:
+	-- a thin ellipsoid sail.
 	local tip, back = tips[1], tips[3]
-	local mx, my, mz = (wrist[1] + tip[1]) / 2 - x, (wrist[2] + tip[2]) / 2 - y, (wrist[3] + tip[3]) / 2 - z
+	local mx, my, mz = (wrist0[1] + tip[1]) / 2 - x, (wrist0[2] + tip[2]) / 2 - y, (wrist0[3] + tip[3]) / 2 - z
 	local ml = math.sqrt(mx * mx + my * my + mz * mz)
 	local Xx, Xy, Xz = mx / ml, my / ml, mz / ml
 	local L = math.sqrt((tip[1] - x) ^ 2 + (tip[2] - y) ^ 2 + (tip[3] - z) ^ 2)
@@ -256,6 +250,20 @@ function Parts.wings(B: any, o: any)
 	local Yx, Yy, Yz = Zy * Xz - Zz * Xy, Zz * Xx - Zx * Xz, Zx * Xy - Zy * Xx
 	local chord = span * 0.66
 	local cx, cy, cz = x + Xx * L * 0.52 + Zx * chord * 0.3, y + Xy * L * 0.52 + Zy * chord * 0.3, z + Xz * L * 0.52 + Zz * chord * 0.3
+	-- the arm bones lie IN the membrane, along its leading edge (the edge curve of s_wing_bat at 42% and 76% of
+	-- the span), so skin and bone never part company whatever the wing's pose
+	local function onEdge(t: number): { number }
+		local lx = (t - 0.5) * L * 1.02
+		local lz = ((-0.31 + 0.1 * t * t + 0.04 * math.sin(math.pi * t)) / 0.62 + 0.012) * chord
+		return { cx + Xx * lx + Zx * lz, cy + Xy * lx + Zy * lz, cz + Xz * lx + Zz * lz }
+	end
+	local elbow, wrist = onEdge(0.42), onEdge(0.76)
+	B:mlimb(shoulder, elbow, span * 0.07, { col = "dark", mat = "skin", bone = "Wing#", pri = pri, role = "wing" }, 0.1)
+	B:mlimb(elbow, wrist, span * 0.05, { col = "dark", mat = "skin", bone = "Wing#", pri = pri + 0.2, role = "wing" }, 0.1)
+	-- finger spars (thin)
+	for i, ft in (if detail >= 3 then tips else {}) do
+		B:mrod(wrist, ft, span * 0.035, { col = "dark", mat = "skin", bone = "Wing#", pri = pri + 2 + i * 0.2, role = "wing", trail = i == 1 })
+	end
 	B:mell(L * 1.02, span * 0.03, chord, { cx, cy, cz, Xx, Yx, Zx, Xy, Yy, Zy, Xz, Yz, Zz },
 		{ col = "membrane", mat = "skin", bone = "Wing#", pri = pri + 0.1, role = "wing", tr = o.membraneTr, mesh = "s_wing_bat", name = "Membrane" })
 end

@@ -136,8 +136,8 @@ function K.tank(B: any, ctx: any)
 	local tread = 0.95
 	B.boneIndex.Body.pos = { 0, tread + H / 2, 0 }
 	B:block(W - 0.5, H, L * 0.86, at(0, tread + H / 2 - 0.05, 0.1), { col = "primary", mat = "metal", pri = 1, role = "body", name = "Hull" })
-	-- sloped glacis plate in front
-	B:wedge(W - 0.52, H * 0.96, 0.9, at(0, tread + H / 2 - 0.06, -L * 0.43 + 0.1 - 0.42, 0, math.pi, 0) :: any, { col = "primary", mat = "metal", pri = 1.2, role = "body", name = "Glacis" })
+	-- sloped glacis plate in front: the wedge's tall face backs onto the hull, the slope faces up and forward
+	B:wedge(W - 0.52, H * 0.96, 0.9, at(0, tread + H / 2 - 0.06, -L * 0.43 + 0.1 - 0.42) :: any, { col = "primary", mat = "metal", pri = 1.2, role = "body", name = "Glacis" })
 	Parts.treads(B, { x = W / 2 - 0.12, len = L, h = tread, w = 0.6, wheels = if detail >= 2 then 3 else 0 })
 	-- turret + barrel on yaw/pitch bones
 	local ty = tread + H + 0.32

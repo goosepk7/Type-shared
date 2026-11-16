@@ -40,7 +40,19 @@ face; "summon": s_organic, s_heads, s_hard, s_hero).
 `lead=(sx, sy, sz)` (third addition, unit pieces only): the sculpt is authored in the lead primitive's local
 frame in studs, at the reference lead size, so its normals keep true proportions; the manifest size / origin are
 divided by `lead`. `catalogue/refs.py` (`Group.local`, `Group.region_local`) converts a model-space sculpt.
-Hero sets: `s_dragon.py`, `s_fx.py` (shark, tornado, asteroid, blaze, accretion disc).
+Hero sets: `s_dragon.py` (full and compact dragon), `s_trex.py`, `s_canine.py` (wolf), `s_fx.py` (shark, tornado,
+asteroid, blaze, accretion disc, `s_noodle_wrap` material wrap).
+
+`upload.py --adopt <MeshAssets.json> ...` takes another repository's record (asset id, size, origin, tris, hash) for
+every piece id both manifests list, marks it `"source": "adopted"` and never uploads that id from the local build
+again (the local glb of a "td" piece is our higher-triangle build and is only used by the offline renderer). The
+uploader takes a lock file: two overlapping runs once uploaded 22 pieces twice (`uploads_orphans.tsv` lists the
+unreferenced duplicates).
+
+`export_refs.luau` with arguments re-exports only those keys (`lune run tools/meshgen/export_refs "sig:dragon@1"`)
+and keeps every other entry of `refs.json`: a full re-export moves each existing sculpt by whatever the generators
+changed since, so do it on purpose only. `sig:dragon@1` / `@0` are the low-detail dragon layouts
+(`Summon.blueprint(..., { detail = n })`, a tooling option).
 
 Kinds:
 

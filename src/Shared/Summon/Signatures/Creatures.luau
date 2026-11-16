@@ -5,6 +5,7 @@
 local Kit = require(script.Parent.Parent.SigKit)
 local Parts = require(script.Parent.Parent.Parts)
 local Geom = require(script.Parent.Parent.Geom)
+local MeshMap = require(script.Parent.Parent.MeshMap)
 
 local at, rad = Kit.at, Kit.rad
 local sin, cos = math.sin, math.cos
@@ -24,7 +25,9 @@ end
 -- The dragon hero sculpt (tools/meshgen/catalogue/s_dragon.py): one coherent dragon cut along the rig. Each piece
 -- leads from one primitive of its bone and absorbs the same-bone primitives it replaces; the primitives stay as
 -- the fallback build and as the z-fighting checker's subject.
-local function dragonSculpt(B: any)
+local sculptor = MeshMap.sculptor
+
+local function dragonSculpt(B: any, compact: boolean)
 	local byName: { [string]: any } = {}
 	for _, p in B.parts do
 		if p.name then
@@ -40,44 +43,87 @@ local function dragonSculpt(B: any)
 		end
 		return out
 	end
-	local function lead(part: any?, id: string, members: { any }?)
+	-- hull: how much wider than the primitive the sculpt is (material units wrap that hull); nil = the material
+	-- only recolours this piece (head, horns, claws stay as modelled)
+	local function lead(part: any?, id: string, members: { any }?, hull: number?)
 		if part then
 			for _, m in members or {} do
 				m.mesh = nil
 			end
 			B:sculpt(part, id, members)
 			part.heroSet = "dragon"
+			part.heroHull = hull
+			part.heroKeep = hull == nil
 		end
 	end
 	local chest = byName.Chest
-	lead(byName.Torso, "s_dragon_body", if chest then { chest } else {})
 	local plates = {}
-	for i = 2, 4 do
+	for i = (if compact then 1 else 2), 4 do
 		table.insert(plates, byName["BellyPlate" .. i])
 	end
-	lead(byName.BellyPlate1, "s_dragon_belly", plates)
-	lead(byName.Neck, "s_dragon_neck")
+	if compact then
+		-- low-detail layout (Small / Medium dragons, budget-hungry materials): the same dragon in fewer, larger
+		-- pieces (catalogue/s_dragon.py, compact set); head and jaw are shared with the full set
+		for _, m in plates do
+			m.pri = 3.2 -- inside the trunk sculpt: first to go
+		end
+		lead(byName.Torso, "s_dragon_c_body", plates, 1.45)
+		for _, tag in { "F", "B" } do
+			local suffix = if tag == "F" then "_f" else "_h"
+			lead(byName["Leg" .. tag .. "R"], "s_dragon_c_leg" .. suffix, nil, 1.6)
+			lead(byName["Leg" .. tag .. "L"], "s_dragon_c_leg" .. suffix, nil, 1.6)
+			lead(byName["Legs" .. tag], "s_dragon_c_legs" .. suffix)
+		end
+		local tail = where("tail")[1]
+		if tail then
+			lead(tail, "s_dragon_c_tail", where("spike", tail.bone), 1.7)
+		end
+	else
+		if chest then
+			chest.pri = 3.2
+		end
+		lead(byName.Torso, "s_dragon_body", if chest then { chest } else {}, 1.55)
+		lead(byName.BellyPlate1, "s_dragon_belly", plates)
+		lead(byName.Neck, "s_dragon_neck", nil, 1.5)
+	end
 	if byName.Head then
 		local hb = byName.Head.bone
 		local members = where("ear", hb)
+		for _, m in members do
+			m.pri = 3.2
+		end
 		table.insert(members, byName.Snout)
 		lead(byName.Head, "s_dragon_head", members)
 		local horns = where("horn", hb)
 		local first = table.remove(horns, 1)
-		lead(first, "s_dragon_horns", horns)
+		for _, m in horns do
+			m.pri = 3.2 -- the crown is one piece on the first horn
+		end
+		lead(first, if compact then "s_dragon_c_horns" else "s_dragon_horns", horns)
 	end
 	lead(byName.Jaw, "s_dragon_jaw")
+	for _, n in { "PupilR", "PupilL" } do
+		if byName[n] then
+			byName[n].pri = math.min(byName[n].pri or 2, 1.52) -- never one-eyed: both pupils outrank the wing bones
+		end
+	end
+	if compact then
+		return
+	end
 	for _, tag in { "F", "B" } do
 		for _, side in { "R", "L" } do
 			local suffix = if tag == "F" then "_f" else "_h"
-			lead(where("limb", "Hip" .. tag .. side)[1], "s_dragon_thigh" .. suffix)
+			lead(where("limb", "Hip" .. tag .. side)[1], "s_dragon_thigh" .. suffix, nil, 1.6)
 			lead(where("limb", "Knee" .. tag .. side)[1], "s_dragon_shin" .. suffix)
 		end
 	end
 	local tails = where("tail")
 	for i, seg in tails do
 		if i <= 3 and (i < 3 or seg.trail or i == #tails) then
-			lead(seg, "s_dragon_tail" .. i, where("spike", seg.bone))
+			lead(seg, "s_dragon_tail" .. i, where("spike", seg.bone), 1.5)
+			-- a dragon without its tail is a stub: the whole whip outranks the forearm wing bones (they lie in
+			-- the membrane, which carries its own leading arm)
+			seg.pri = math.min(seg.pri or 2, 1.6 + i * 0.02)
 		end
 	end
 end
@@ -101,9 +147,7 @@ S.dragon = {
 		end
 		B:emit("flame", nil, { socket = "mouth", rate = 30, spread = 0.3 })
 		B:setRig("breath", "mouth")
-		if ctx.detail >= 2 then
-			dragonSculpt(B)
-		end
+		dragonSculpt(B, ctx.detail < 2)
 	end,
 }
 
@@ -185,10 +229,10 @@ S.shark = {
 		for _, p in B.parts do
 			if p.name == "Body" then
 				B:sculpt(p, "s_shark_body")
-				p.heroSet = "shark"
+				p.heroSet, p.heroHull = "shark", 1.1
 			elseif p.name == "Rear" then
 				B:sculpt(p, "s_shark_rear")
-				p.heroSet = "shark"
+				p.heroSet, p.heroHull = "shark", 1.25
 			elseif p.name == "TailTop" then
 				top = p
 			elseif p.name == "TailLow" then
@@ -202,11 +246,11 @@ S.shark = {
 				low.mesh = nil
 			end
 			B:sculpt(top, "s_shark_tail", { low })
-			top.heroSet = "shark"
+			top.heroSet, top.heroKeep = "shark", true
 		end
 		if dorsal then
 			B:sculpt(dorsal, "s_shark_dorsal")
-			dorsal.heroSet = "shark"
+			dorsal.heroSet, dorsal.heroKeep = "shark", true
 		end
 	end,
 }
@@ -261,6 +305,45 @@ S["t rex"] = {
 			B:mell(s * 0.34, s * 0.1, s * 0.3, at(s * 0.2, A.face[2] + A.eyeSize * 0.75, A.face[3] + s * 0.05, rad(-10), 0, rad(-12)), { col = "dark", mat = "skin", bone = A.headBone, pri = 2.3, role = "detail", name = "Ridge#", noCore = true })
 		end
 		B:setRig("gait", "stomp")
+		-- hero sculpt (catalogue/s_trex.py), cut along the biped rig; needs the two-segment legs of detail 2+
+		local P, lead, named, on = sculptor(B, "trex")
+		local thighR, shinR = on("limb", "HipR")[1], on("limb", "KneeR")[1]
+		if ctx.detail >= 2 and P.Torso and P.Head and P.Snout and thighR and shinR then
+			lead(P.Torso, "s_trex_body", named("Belly"), 1.2)
+			lead(P.Neck, "s_trex_neck", nil, 1.25)
+			local inHead = named("Snout", "RidgeR", "RidgeL")
+			for _, p in on("nose", P.Head.bone) do
+				table.insert(inHead, p)
+			end
+			lead(P.Head, "s_trex_head", inHead)
+			lead(P.Jaw, "s_trex_jaw")
+			for _, side in { "R", "L" } do
+				lead(on("limb", "Hip" .. side)[1], "s_trex_thigh", nil, 1.3)
+				local knee = "Knee" .. side
+				local inShin = on("foot", knee)
+				for _, c in on("claw", knee) do
+					table.insert(inShin, c)
+				end
+				lead(on("limb", knee)[1], "s_trex_shin", inShin)
+				local inArm = {}
+				for _, bone in { "Arm" .. side, "Fore" .. side } do
+					for _, role in { "limb", "hand", "claw" } do
+						for _, p in on(role, bone) do
+							table.insert(inArm, p)
+						end
+					end
+				end
+				lead(P["TinyArm" .. side], "s_trex_arm", inArm)
+			end
+			local i = 0
+			for _, p in B.parts do
+				if p.role == "tail" and i < 3 then
+					i += 1
+					lead(p, "s_trex_tail" .. i, nil, 1.15)
+					p.pri = math.min(p.pri or 2, 1.6 + i * 0.02)
+				end
+			end
+		end
 	end,
 }
 

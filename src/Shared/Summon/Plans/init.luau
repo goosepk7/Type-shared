@@ -82,6 +82,12 @@ for name, route in ROUTES do
 					return sig(B, ctx)
 				end
 			end
+			if name == "Vortex" and string.find(string.lower(ctx.result.id), "black hole", 1, true) and Plans.Orb then
+				-- the Library files "black hole" under Vortex; it is an event horizon with an accretion disc (Orb), not
+				-- a wind funnel
+				ctx.kind = nil
+				return Plans.Orb(B, ctx)
+			end
 			ctx.kind = route[2]
 			return gen(B, ctx)
 		end

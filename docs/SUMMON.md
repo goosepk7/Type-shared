@@ -13,6 +13,7 @@ The design is in DESIGN.md §8, and the Roblox research behind it is in `docs/pl
 local Summon = WordEngine.Summon
 local bp    = Summon.blueprint(result, { style = "Solid" | "Spectral", seed = n?, scale = k?,
                                          budget = { maxParts?, maxParticles? }?, material = id | record? })
+                                         -- tooling only: meshes = false (primitive build), detail = 0..3 (force a layout)
 local model = Summon.build(result, opts)          -- Roblox: Model (PrimaryPart Root, Motor6D rig, fx)
 local model = Summon.buildBlueprint(bp, opts)     -- opts: anchored, collisionGroup, parent, cframe, effects, loadMesh
 local anim  = Summon.animate(model, result)       -- :play("Idle"|"Move"|"Attack"|"Hit"|"Die"|"Spawn"), :setSpeed(s), :onFinished(fn), :destroy()
@@ -181,14 +182,16 @@ loaded and builds the primitive otherwise, so the primitive build is always the 
   are coplanar only where their primitives were; organic and unit sculpts have no planar box faces, they sit
   inside or bulge slightly past the primitive's curved surface, where surfaces intersect at an angle instead
   of lying coincident. A mesh next to a still-primitive neighbour is the same case.
-- **Budgets.** 107 summon pieces, 70.8k triangles in total; a generic piece costs 20-1500 triangles, a hero piece up to
+- **Budgets.** 144 summon pieces, 102.4k triangles in total (the 134 shared "td" pieces: 73.9k, Type to Defend's
+  phone re-export, adopted with `upload.py --adopt`); worst-case summon: the Huge dragon, 20.0k triangles Solid,
+  23.2k Spectral (the aura shell repeats the body); t rex 14.1k, castle 16.0k, tank 10.4k, shark 8.3k; a generic piece costs 20-1500 triangles, a hero piece up to
   3200 (blocks about 300,
   limbs about 300, heads 600-1300, bodies up to 1500). The part budget already caps a summon's part count, and
   sculpt groups remove parts, so a 50-part hero stays under about 20k triangles.
 - **Hero sculpts.** Signature heroes are one coherent model sculpted in model space on the signature's reference
   build (`tools/meshgen/refs.json`) and then cut along the rig, one unit piece per bone, so the Animator still
   moves every joint (joints are overlapping balls):
-  - *dragon* (`catalogue/s_dragon.py`, 17 pieces, 19.9k triangles, about 22k with the wings): body, belly and breast
+  - *dragon* (`catalogue/s_dragon.py`, 17 pieces, 15.4k triangles): body, belly and breast
     plates, neck with throat scutes and dorsal fins, skull, jaw, horn crown, four two-piece legs with clawed feet,
     three tail pieces ending in a barbed spade, plus the `s_wing_bat` membranes;
   - *shark* (`s_fx.py`): trunk with overhanging snout, tail stock with keels and small fins, crescent caudal
@@ -196,12 +199,47 @@ loaded and builds the primitive otherwise, so the primitive build is always the 
   - *tornado*: every funnel ring is an `s_funnel` auger with three helical ridges (the per-ring rotors make it a
     barber pole), `s_streak` wind ribbons, boulder debris;
   - *asteroid / meteor*: `s_asteroid` (rimmed craters, chipped facets) leading the Rock blocks, `s_blaze` flame
-    shroud and wake; *black hole*: `s_accretion` pinwheel discs.
-  Each hero lead carries `heroSet`; when a material or accent takes any piece of a set back to a primitive
-  (spaghetti dragon, glass shark), `MeshMap.validate` steps the WHOLE set down to the generic role / shape pieces,
-  so sculpted and primitive pieces of one hero never mix.
+    shroud and wake;
+  - *black hole* (also when the Library files it under Vortex: `Plans/init.luau` routes it to the Orb kit): horizon,
+    two `s_accretion` discs on the Disc rotor, a ragged outer disc turning the other way, an upright
+    `s_photon_ring` facing the viewer, two `s_jet` polar jets, rocks with hot streaks on a fast infall orbit. It
+    reads standing still (ring, jets) as well as turning;
+  - *tank*: the glacis wedge slopes up and back from the bow; turret detail for a static display: gun mantlet (on
+    the barrel bone), cupola machine gun on a pintle, smoke dischargers, stowage bustle, headlamps, fuel drums.
+  - *compact dragon* (`s_dragon.py`, 9 pieces): Small and Medium dragons, and builds where a material reserves
+    budget, use the low-detail layout (one limb per leg, no neck bone, one tail segment, one wing sail; detail 0
+    merges each leg pair). The compact set is the same dragon in fewer, larger pieces: `s_dragon_c_body` (trunk with
+    the neck), `s_dragon_c_leg_f/h` (whole legs), `s_dragon_c_legs_f/h` (leg pairs), `s_dragon_c_tail`,
+    `s_dragon_c_horns`; head and jaw are shared with the full set, the wing sail takes `s_wing_bat`;
+  - *t rex* (`s_trex.py`, 13 pieces): keeled trunk, neck, skull with brow horns, nasal rugosity and the upper tooth
+    row, mandible with the lower row, drumstick thighs, shanks with three-toed taloned feet, two-fingered tiny
+    arms, three tail pieces (detail 2+; smaller budgets keep the generic pieces);
+  - *wolf* (`s_canine.py`, 12 pieces): assigned at the end of `Plans/Quadruped.luau` to the wild bushy-tailed canines
+    (wolf, coyote, jackal, dingo, husky, malamute, warg, fenrir, werewolf, hellhound, dhole) at detail 2+: trunk
+    with a breast ruff and hackles, maned neck, two-piece legs with toed paws, a two-piece brush; the head keeps
+    `s_head_canine`.
+  Hero leads are assigned through `MeshMap.sculptor(B, set)` (`lead(part, id, members, hull)`), which sets
+  `heroSet`, `heroHull` and `heroKeep` (all cleared in `MeshMap.settle`).
+- **Materials on hero sculpts.** A material never takes a hero sculpt apart (`Materials.apply`): the sculpt is the
+  silhouette. On a hero build only the set's own masses take the construction; head, jaw, horns, claws, fins
+  (`heroKeep`) and parts outside the set (wings) are recoloured only.
+  - Surface constructions (Solid, Panels, Bricks, Inflated: gold, ice, metal, chocolate ...) keep the full sculpt
+    with the material's colour, transparency and Roblox material, and add no units. Shards (glass, crystal, gems)
+    do the same and set a few small shards on the hull.
+  - Strands (spaghetti, yarn ...): one `s_noodle_wrap` per mass, three noodles wound round the sculpt's hull
+    (`heroHull` = how much wider than its primitive the sculpt is). The wrap is a unit piece led by a belt round
+    the middle of the mass; without assets the belt shows as a single noodle ring. Sauce blobs stay, the
+    under-belly drip is dropped.
+  - Woven, Swarm, Pile, Energy, Shards lay their usual units on that hull; Wobble and Liquid work on the primitive as is
+    (bits inside the jelly, drips), without reshaping it.
+  `MeshMap.validate` still steps a whole set down to the generic pieces when an accent or style reshapes one of
+  its parts, so sculpted and primitive pieces of one hero never mix. Preview: `docs/img/hero_materials.png`.
+- **Bat wings.** The two arm bones lie in the membrane, on the leading edge curve of `s_wing_bat` (42% and 76% of
+  the span), so skin and bone stay together; at detail 0-1 the single wing sail takes `s_wing_bat` as well.
+- **Scaled models.** `Instantiate.upgradeMeshes` multiplies a swapped-in sculpt's size and its offset from the
+  primitive by `model:GetScale()`, so a model scaled with `Model:ScaleTo` after `Summon.build` upgrades correctly.
 - **Offline.** `lune run tools/render_blueprint hero <words> out.png` draws Solid primitives, Solid sculpt and
-  Spectral sculpt next to a 5 stud figure (`docs/img/hero_*.png`); `lune run tools/render_blueprint beforeafter out.png` ray-traces the same blueprints with and
+  Spectral sculpt next to a 5 stud figure (`docs/img/hero_*.png`; a word may carry a size or a material: `small dragon`, `glass shark`); `lune run tools/render_blueprint beforeafter out.png` ray-traces the same blueprints with and
   without the pieces (`docs/img/mesh_before_after.png`); `scale <style> <words> out.png` draws summons next to a
   5 stud character-height figure (`docs/img/spectral_scale.png`); the contact sheet shows the mesh build
   (`SUMMON_MESH=0` for primitives). `tests/specs/mesh.spec.luau` checks the manifest, that every referenced

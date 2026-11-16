@@ -67,6 +67,48 @@ S.tank = {
 			end
 			B:ell(s[1] * 0.22, s[2] * 0.3, s[1] * 0.22, at(turret.cf[1] + s[1] * 0.5, turret.cf[2], turret.cf[3] + s[3] * 0.05, 0, 0, rad(90)), { col = "white", mat = "hard", bone = turret.bone, pri = 1.9, role = "detail", name = "Emblem", noCore = true })
 		end
+		-- Standing still (on a plinth) the tank has to read without its tracks turning: the turret carries the detail.
+		-- Gun mantlet, a pintle machine gun on the cupola, smoke dischargers, a stowage bustle, headlights, fuel drums.
+		local barrel = Kit.find(B, "Barrel")
+		if turret and hull and mn and mx and ctx.detail >= 1 then
+			local s, tc = turret.size, turret.cf
+			local w, h, l = mx[1] - mn[1], mx[2] - mn[2], mx[3] - mn[3]
+			-- the extras only take budget nothing else has claimed: a material's construction and extras (cheese holes,
+			-- bricks) and the Spectral layers keep their share
+			local spare = (ctx.budget or 30) - #B.parts - (if ctx.material then math.floor((ctx.budget or 30) * 0.3) else 0) - (if ctx.style == "Spectral" then 3 else 0)
+			local function fits(n: number): boolean
+				if spare >= n then
+					spare -= n
+					return true
+				end
+				return false
+			end
+			if fits(1) then
+				B:ell(s[1] * 0.46, s[2] * 0.66, s[3] * 0.22, at(tc[1], tc[2] + s[2] * 0.05, tc[3] - s[3] * 0.46), { col = "secondary", mat = "metal", bone = if barrel then barrel.bone else turret.bone, pri = 2.0, role = "detail", name = "Mantlet", noCore = true })
+			end
+			local hx, hy, hz = tc[1] + s[1] * 0.12, tc[2] + s[2] * 0.47, tc[3] + s[3] * 0.12
+			if fits(2) then
+				B:rod({ hx, hy + s[2] * 0.42, hz + s[3] * 0.06 }, { hx, hy + s[2] * 0.5, hz - s[3] * 0.36 }, s[2] * 0.05, { col = "dark", mat = "metal", bone = turret.bone, pri = 2.3, role = "cannon", name = "MG", noCore = true })
+				B:rod({ hx, hy + s[2] * 0.12, hz - s[3] * 0.05 }, { hx, hy + s[2] * 0.44, hz - s[3] * 0.05 }, s[2] * 0.035, { col = "dark", mat = "metal", bone = turret.bone, pri = 2.32, role = "detail", name = "Pintle", noCore = true, needs = "MG" })
+			end
+			if fits(2) then
+				B:mell(w * 0.1, w * 0.1, w * 0.06, at(w * 0.36, mx[2] + w * 0.035, mn[3] + l * 0.03), { col = "white", mat = "neon", glow = true, bone = hull.bone, pri = 2.36, role = "light", name = "Lamp#", noCore = true })
+			end
+			if fits(1) then
+				B:block(s[1] * 0.72, s[2] * 0.4, s[3] * 0.2, at(tc[1], tc[2] - s[2] * 0.04, tc[3] + s[3] * 0.53), { col = "secondary", mat = "metal", bone = turret.bone, pri = 2.4, role = "detail", name = "Bustle", noCore = true })
+			end
+			if ctx.detail >= 2 then
+				if fits(2) then
+					B:mrod({ w * 0.06, mx[2] + h * 0.19, mx[3] - l * 0.06 }, { w * 0.4, mx[2] + h * 0.19, mx[3] - l * 0.06 }, h * 0.19, { col = "secondary", mat = "metal", bone = hull.bone, pri = 2.5, role = "detail", name = "Drum#", noCore = true })
+				end
+				for i = 1, 2 do
+					if fits(2) then
+						local z = tc[3] - s[3] * (0.12 + i * 0.1)
+						B:mrod({ s[1] * 0.44, tc[2] + s[2] * 0.08, z }, { s[1] * 0.54, tc[2] + s[2] * 0.3, z - s[3] * 0.1 }, s[2] * 0.075, { col = "dark", mat = "metal", bone = turret.bone, pri = 2.6 + i * 0.05, role = "detail", name = "Smoke" .. i .. "#", noCore = true })
+					end
+				end
+			end
+		end
 		B:setRig("materialMotion", "clank")
 	end,
 }

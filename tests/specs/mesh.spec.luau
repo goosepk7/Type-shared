@@ -11,10 +11,10 @@ return function(t)
 	local MeshMap = t.load("src/Shared/Summon/MeshMap")
 	local Assets = t.load("src/Shared/Meshes/MeshAssets")
 
-	local function sig(word: string): any
+	local function sig(word: string, size: string?): any
 		for _, sw in F.SignatureWords do
 			if sw[1] == word then
-				return F.signatureResult(Schema, sw)
+				return F.signatureResult(Schema, sw, size)
 			end
 		end
 		error("no signature " .. word)
@@ -252,18 +252,103 @@ return function(t)
 				t.ok(ns == 4 or (style == "Spectral" and ns == 5), style .. " shark hero pieces (Spectral adds the aura shell), got " .. ns)
 			end
 		end
-		-- a material that rebuilds the masses takes the WHOLE hero set back to the generic pieces
-		local r = sig("dragon")
-		r.material = "spaghetti"
-		local bp = Summon.blueprint(r, { style = "Solid", seed = 1 })
-		t.eq(leads(bp, "s_dragon_"), 0, "spaghetti dragon: no stray hero piece")
-		t.ok(bp.stats.meshParts > 0, "spaghetti dragon keeps the generic pieces")
-		t.eq(#Summon.check(bp), 0, "spaghetti dragon z-fighting")
-		local g = sig("shark")
-		g.material = "glass"
-		local gb = Summon.blueprint(g, { style = "Solid", seed = 1 })
-		local n = leads(gb, "s_shark_")
-		t.ok(n == 0 or n >= 4, "glass shark: all or nothing")
+		-- materials never take a hero sculpt apart: surface materials (glass, metal, gold, ice ...) recolour the
+		-- full sculpt, strand / pile constructions lay their units round it and leave head, horns and claws alone
+		local function has(bp: any, id: string): boolean
+			for _, p in bp.parts do
+				if p.mesh == id then
+					return true
+				end
+			end
+			return false
+		end
+		for _, mat in { "spaghetti", "glass", "crystal", "metal", "gold", "ice", "jelly", "chocolate", "coins", "yarn", "lightning", "leaves", "cotton candy", "honey", "bread" } do
+			for _, style in { "Solid", "Spectral" } do
+				local r = sig("dragon")
+				r.material = mat
+				local bp = Summon.blueprint(r, { style = style, seed = 1 })
+				for _, id in { "s_dragon_body", "s_dragon_neck", "s_dragon_head", "s_dragon_horns", "s_dragon_shin_f", "s_dragon_shin_h_l", "s_dragon_tail1", "s_wing_bat" } do
+					t.ok(has(bp, id), mat .. " dragon (" .. style .. ") keeps " .. id)
+				end
+				t.eq(#Summon.check(bp), 0, mat .. " dragon z-fighting")
+				for _, p in bp.parts do
+					t.ok(p.heroHull == nil and p.heroKeep == nil and p.heroProxy == nil, "helper fields cleared")
+				end
+				local g = sig("shark")
+				g.material = mat
+				local gb = Summon.blueprint(g, { style = style, seed = 1 })
+				t.ok(leads(gb, "s_shark_") >= 4, mat .. " shark (" .. style .. ") keeps the sculpt")
+				t.eq(#Summon.check(gb), 0, mat .. " shark z-fighting")
+			end
+		end
+		-- small and medium dragons: the compact set on the low-detail layout, never the generic blocks
+		for _, style in { "Solid", "Spectral" } do
+			local small = Summon.blueprint(sig("dragon", "Small"), { style = style, seed = 1 })
+			for _, id in { "s_dragon_c_body", "s_dragon_c_leg_f", "s_dragon_c_leg_h_l", "s_dragon_head", "s_dragon_c_horns", "s_dragon_c_tail", "s_wing_bat", "s_wing_bat_l" } do
+				t.ok(has(small, id), "small dragon (" .. style .. ") has " .. id)
+			end
+			t.eq(#Summon.check(small), 0, "small dragon z-fighting")
+			local medium = Summon.blueprint(sig("dragon", "Medium"), { style = style, seed = 1 })
+			local pupils = 0
+			for _, p in medium.parts do
+				if p.role == "pupil" then
+					pupils += 1
+				end
+			end
+			t.ok(pupils == 0 or pupils == 2, "medium dragon is never one-eyed")
+			t.ok(has(medium, "s_dragon_c_tail") or (has(medium, "s_dragon_tail1") and has(medium, "s_dragon_tail3")), "medium dragon (" .. style .. ") keeps its whole tail")
+		end
+		local tiny = sig("dragon", "Small")
+		tiny.material = "spaghetti"
+		local tb = Summon.blueprint(tiny, { style = "Solid", seed = 1 })
+		t.ok(has(tb, "s_dragon_c_body") and (has(tb, "s_dragon_c_legs_f") or has(tb, "s_dragon_c_leg_f")), "small spaghetti dragon keeps the compact sculpt")
+		-- t rex (signature) and wolf (canine archetype of the Quadruped plan)
+		for _, style in { "Solid", "Spectral" } do
+			local rex = Summon.blueprint(sig("t rex"), { style = style, seed = 1 })
+			for _, id in { "s_trex_body", "s_trex_neck", "s_trex_head", "s_trex_jaw", "s_trex_thigh", "s_trex_shin_l", "s_trex_arm", "s_trex_tail1", "s_trex_tail3" } do
+				t.ok(has(rex, id), "t rex (" .. style .. ") has " .. id)
+			end
+			local _, rexBones = leads(rex, "s_trex_")
+			for _, bone in { "Body", "Neck", "Head", "Jaw", "HipR", "KneeL", "Tail1", "Tail3" } do
+				t.ok(rexBones[bone], "t rex sculpt has a piece on bone " .. bone)
+			end
+			t.eq(#Summon.check(rex), 0, "t rex z-fighting")
+			local wolf
+			for v, var in F.Variants.Quadruped do
+				if var[1] == "wolf" then
+					wolf = Summon.blueprint(F.synthetic(Schema, "Quadruped", "Large", v), { style = style, seed = 1 })
+				end
+			end
+			t.ok(wolf ~= nil, "wolf fixture")
+			for _, id in { "s_wolf_body", "s_wolf_neck", "s_wolf_thigh_f", "s_wolf_shin_f_l", "s_wolf_thigh_h_l", "s_wolf_shin_h", "s_wolf_tail1", "s_wolf_tail2", "s_head_canine" } do
+				t.ok(has(wolf, id), "wolf (" .. style .. ") has " .. id)
+			end
+			t.eq(#Summon.check(wolf), 0, "wolf z-fighting")
+		end
+		-- black hole: reads standing still (photon ring, jets, layered discs, infalling debris)
+		local hole
+		for _, e in F.library(Schema) do
+			if e.id == "black hole" then
+				hole = Summon.blueprint(e, { style = "Solid", seed = 1 })
+			end
+		end
+		if hole then
+			t.ok(has(hole, "s_photon_ring") and has(hole, "s_accretion"), "black hole has its photon ring and discs")
+			t.ok(hole.stats.meshParts >= 5, "black hole is not thin: " .. hole.stats.meshParts .. " mesh parts")
+			t.eq(#Summon.check(hole), 0, "black hole z-fighting")
+		end
+		local sp = sig("dragon")
+		sp.material = "spaghetti"
+		local spb = Summon.blueprint(sp, { style = "Solid", seed = 1 })
+		t.ok(leads(spb, "s_noodle_wrap") >= 3, "spaghetti dragon is wound in noodles")
+		local gl = sig("shark")
+		gl.material = "glass"
+		local glb = Summon.blueprint(gl, { style = "Solid", seed = 1 })
+		for _, p in glb.parts do
+			if p.mesh == "s_shark_body" then
+				t.ok((p.transparency or 0) > 0.2, "glass shark body is see-through")
+			end
+		end
 	end)
 
 	t.test("Instantiate: primitives without assets, MeshParts with them, hot swap", function()

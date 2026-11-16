@@ -393,14 +393,42 @@ end
 
 function K.blackhole(B: any, ctx: any)
 	local detail = ctx.detail
-	local y = 2.6
+	local y = 3.5
+	local tilt = at(0, y, 0, rad(12), 0, 0)
 	B:ball(2.4, at(0, y, 0), { col = "black", mat = "glass", pri = 1, role = "core", name = "Horizon", noCore = true })
 	B:bone("Disc", "Body", 0, y, 0)
 	B:addRig("rotors", { bone = "Disc", axis = "Y", speed = 3 })
-	B:ell(6.0, 0.18, 6.0, at(0, y, 0, rad(12), 0, 0), { col = "glow", mat = "neon", glow = true, tr = 0.2, bone = "Disc", pri = 1.1, role = "ring", name = "Accretion", noCore = true, mesh = "s_accretion" })
-	B:ell(4.2, 0.26, 4.2, at(0, y, 0, rad(12), 0, 0), { col = "flameCore", mat = "neon", glow = true, tr = 0.1, bone = "Disc", pri = 1.2, role = "ring", name = "Inner", noCore = true, mesh = "s_accretion" })
+	B:ell(6.0, 0.18, 6.0, tilt, { col = "glow", mat = "neon", glow = true, tr = 0.2, bone = "Disc", pri = 1.1, role = "ring", name = "Accretion", noCore = true, mesh = "s_accretion" })
+	B:ell(4.2, 0.26, 4.2, tilt, { col = "flameCore", mat = "neon", glow = true, tr = 0.1, bone = "Disc", pri = 1.2, role = "ring", name = "Inner", noCore = true, mesh = "s_accretion" })
+	-- photon ring: the far side of the disc bent up over the horizon. It stands upright and faces the viewer, so
+	-- the hole reads as a black hole from a standstill (on a plinth) and not only while the disc turns
+	B:ell(3.0, 0.2, 3.0, at(0, y, 0, rad(84), 0, 0), { col = "flameCore", mat = "neon", glow = true, bone = "Body", pri = 1.25, role = "ring", name = "PhotonRing", noCore = true, mesh = "s_photon_ring" })
+	if detail >= 1 then
+		-- polar jets along the disc's axis
+		for i, side in { 1, -1 } do
+			local cf = Geom.mul(tilt, at(0, side * 2.45, 0, if side < 0 then rad(180) else 0, 0, 0))
+			B:ell(0.8, 2.7, 0.8, cf, { col = "glow", mat = "neon", glow = true, tr = 0.3, bone = "Body", pri = 1.3 + i * 0.02, role = "ring", name = if side > 0 then "JetUp" else "JetDown", noCore = true, mesh = "s_jet", trail = side > 0 })
+		end
+	end
 	if detail >= 2 then
 		B:ell(2.9, 2.9, 2.9, at(0, y, 0), { col = "secondary", mat = "glass", tr = 0.7, pri = 1.6, role = "shell", name = "Lens", noCore = true })
+		-- a ragged outer disc turning the other way, slower
+		B:bone("DiscOuter", "Body", 0, y, 0)
+		B:addRig("rotors", { bone = "DiscOuter", axis = "Y", speed = -1.6 })
+		B:ell(7.6, 0.1, 7.6, Geom.mul(tilt, at(0, 0, 0, 0, rad(40), 0)), { col = "secondary", mat = "neon", glow = true, tr = 0.5, bone = "DiscOuter", pri = 1.7, role = "ring", name = "Outer", noCore = true, mesh = "s_accretion" })
+		-- infalling matter: rocks on a fast inner orbit, each dragging a hot streak
+		B:bone("Infall", "Body", 0, y, 0)
+		B:addRig("rotors", { bone = "Infall", axis = "Y", speed = 5.5 })
+		local m = if detail >= 3 then 4 else 3
+		for i = 1, m do
+			local a = (i - 1) / m * math.pi * 2 + 0.5
+			local r = 3.25 + (i % 2) * 0.45
+			local s = 0.34 + (i % 3) * 0.1
+			local c = Geom.mul(tilt, at(math.cos(a) * r, 0.32 + (i % 2) * 0.2, math.sin(a) * r, rad(20 * i), rad(40 * i), 0))
+			B:block(s, s * 0.8, s * 0.9, c, { col = "dark", mat = "stone", bone = "Infall", pri = 1.9 + i * 0.05, role = "detail", name = "Debris" .. i, noCore = true })
+			local st = Geom.mul(tilt, at(math.cos(a - 0.22) * r, 0.32 + (i % 2) * 0.2, math.sin(a - 0.22) * r, 0, -a + math.pi / 2 + 0.1, 0))
+			B:ell(1.3, 0.14, 0.2, st, { col = "flameCore", mat = "neon", glow = true, tr = 0.25, bone = "Infall", pri = 2.3 + i * 0.05, role = "detail", name = "DebrisStreak" .. i, noCore = true, needs = "Debris" .. i, mesh = "s_streak" })
+		end
 	end
 	B:emit("wisps", "Horizon", { socket = "core", rate = 30 })
 	face(B, ctx, { 0, y, 0 }, 1.2)

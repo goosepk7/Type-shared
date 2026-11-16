@@ -296,16 +296,23 @@ elseif mode == "hero" then
 	-- lune run tools/render_blueprint hero <comma list> out.png [size]: per word three rows with a 5 stud reference
 	-- figure: Solid primitives, Solid sculpt, Spectral sculpt (side + 3/4 view)
 	for _, s in string.split(args[2] or "dragon", ",") do
+		local SIZES = { tiny = "Tiny", small = "Small", baby = "Small", medium = "Medium", large = "Large", big = "Large", huge = "Huge" }
 		local function base(word)
+			-- "<size> <word>" (small dragon, baby dragon)
+			local sz, rest = string.match(word, "^(%S+)%s+(.+)$")
+			local size = args[4]
+			if sz and SIZES[sz] then
+				word, size = rest, SIZES[sz]
+			end
 			for _, sw in F.SignatureWords do
 				if sw[1] == word then
-					return F.signatureResult(Schema, sw, args[4])
+					return F.signatureResult(Schema, sw, size)
 				end
 			end
 			for _, plan in Schema.Enums.BodyPlan do
 				for v, var in F.Variants[plan] or {} do
 					if var[1] == word then
-						return F.synthetic(Schema, plan, args[4] or "Medium", v)
+						return F.synthetic(Schema, plan, size or "Medium", v)
 					end
 				end
 			end

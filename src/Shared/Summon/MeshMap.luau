@@ -25,6 +25,15 @@ MeshMap.Left = {
 	s_dragon_shin_f = true,
 	s_dragon_thigh_h = true,
 	s_dragon_shin_h = true,
+	s_dragon_c_leg_f = true,
+	s_trex_thigh = true,
+	s_wolf_thigh_f = true,
+	s_wolf_shin_f = true,
+	s_wolf_thigh_h = true,
+	s_wolf_shin_h = true,
+	s_trex_shin = true,
+	s_trex_arm = true,
+	s_dragon_c_leg_h = true,
 } :: { [string]: boolean }
 
 -- Pieces from the shared "td" set (uploaded by Type-defend) that the summon builder uses too. Instantiate preloads
@@ -321,7 +330,8 @@ function MeshMap.validate(parts: { any })
 	end
 	-- Hero sculpts (part.heroSet, e.g. the dragon) are one coherent model cut along the rig: when a material or an
 	-- accent takes any piece of it back to a primitive, the whole set steps down to the generic role / shape
-	-- pieces, so a "spaghetti dragon" never mixes a sculpted hind leg with a noodle-wrapped primitive torso.
+	-- pieces, so a hero model never mixes a sculpted hind leg with a reshaped primitive torso. (Materials leave
+	-- hero pieces intact, see Materials.apply; this covers accents and styles that reshape parts.)
 	local failed: { [string]: boolean } = {}
 	for _, p in parts do
 		local lead = p.meshOf
@@ -392,8 +402,57 @@ function MeshMap.settle(parts: { any }): number
 			n += 1
 		end
 		p.meshShape, p.meshSize, p.noMesh, p.heroSet = nil, nil, nil, nil
+		p.heroHull, p.heroKeep = nil, nil
 	end
 	return n
+end
+
+-- Shared by the hero sets: look parts up by name, and lead(part, id, members, hull) assigns one piece of `set`.
+-- hull: how much wider than the primitive the sculpt is (material units wrap that hull); nil = the material only
+-- recolours this piece (heads, claws, horns stay as modelled). Members inside a sculpt are the first to go when the
+-- budget is short (their lead already shows them).
+function MeshMap.sculptor(B: any, set: string)
+	local byName: { [string]: any } = {}
+	for _, p in B.parts do
+		if p.name then
+			byName[p.name] = p
+		end
+	end
+	local function lead(part: any?, id: string, members: { any }?, hull: number?)
+		if part == nil then
+			return
+		end
+		local list = {}
+		for _, m in members or {} do
+			if m ~= nil then
+				m.mesh = nil
+				table.insert(list, m)
+			end
+		end
+		B:sculpt(part, id, list)
+		part.heroSet = set
+		part.heroHull = hull
+		part.heroKeep = hull == nil
+	end
+	local function named(...: string): { any }
+		local out = {}
+		for _, n in { ... } do
+			if byName[n] then
+				table.insert(out, byName[n])
+			end
+		end
+		return out
+	end
+	local function on(role: string, bone: string): { any }
+		local out = {}
+		for _, p in B.parts do
+			if p.role == role and p.bone == bone then
+				table.insert(out, p)
+			end
+		end
+		return out
+	end
+	return byName, lead, named, on
 end
 
 -- Every piece id the role/shape rules and the name table can produce (tests check them against the manifest).

@@ -10,7 +10,8 @@
 --
 -- opts = { style = "Spectral" | "Solid", seed = number?, scale = number?, budget = { maxParts?, maxParticles? }?,
 --          meshes = false? (no sculpted-mesh hints: primitives only) }
--- Summon.preloadMeshes() starts loading the sculpted MeshPart pieces (server; returns at once).
+-- Summon.preloadMeshes() starts loading the sculpted MeshPart pieces on the server (returns at once; on a client it
+-- only watches the replicated folder). Summon.setMeshLibrary(lib) swaps in a game's own compatible library.
 
 local Builder = require(script.Builder)
 local Geom = require(script.Geom)
@@ -308,6 +309,9 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 	local spectralReserve = if style == "Spectral" then 3 else 0
 	local avail = maxParts - spectralReserve - matReserve - accReserve
 	local detail = if avail <= 9 then 0 elseif avail <= 15 then 1 elseif avail <= 24 then 2 else 3
+	if type(o.detail) == "number" then
+		detail = math.clamp(math.floor(o.detail), 0, 3) -- tooling: reference builds of a low-detail layout (export_refs)
+	end
 	local ctx = { result = r, traits = t, style = style, rng = rng, seed = seed, detail = detail, budget = maxParts, material = material }
 	t.detail = detail
 	local B = Builder.new(ctx, rng)
@@ -498,6 +502,12 @@ end
 function Summon.preloadMeshes()
 	local Instantiate = require(script.Instantiate) :: any
 	Instantiate.preloadMeshes()
+end
+
+-- Use a game's own MeshLibrary-compatible module (same get/place/fit/has/info/preload API) for summon pieces.
+function Summon.setMeshLibrary(lib: any)
+	local Instantiate = require(script.Instantiate) :: any
+	Instantiate.setMeshLibrary(lib)
 end
 
 function Summon.build(result: any, opts: any?): any

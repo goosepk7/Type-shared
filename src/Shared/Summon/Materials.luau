@@ -641,6 +641,9 @@ local function sauce(p: any, n: number, env: any)
 				pri = (p.pri or 2) + 0.35 + i * 0.01, role = "sauce", name = (p.name or "M") .. "Sauce" .. i, noCore = true }))
 		end
 	end
+	if p.heroProxy then
+		return -- a drip under a sculpted belly reads as anatomy, not sauce
+	end
 	local bpt = surface(p, 0.3, -0.85, -0.3, 0.92)
 	local d = math.min(s[1], s[3]) * 0.16
 	table.insert(env.out, sub(p, { shape = "Ellipsoid", size = { d, d * 2.4, d }, cf = Geom.new(bpt[1], bpt[2] - d * 0.8, bpt[3]), col = p.col, mcol = col,
@@ -669,6 +672,41 @@ end
 
 -- Applies material m to the builder's parts. room = extra parts the construction may add.
 local SURFACE: { [string]: boolean } = { Strands = true, Woven = true, Bricks = true, Panels = true, Swarm = true, Shards = true, Pile = true }
+-- Hero sculpts (part.heroSet): the sculpt is the silhouette, so a construction never reshapes it. Constructions in
+-- HERO_WRAP lay their units on a hull around the sculpt (part.heroHull widens the primitive's cross-section to the
+-- sculpt's girth); HERO_INSIDE ones work on the primitive as it is; every other construction is surface only
+-- (colour, transparency, Roblox material), which is what metal, gold and ice want on a finished model.
+local HERO_WRAP: { [string]: boolean } = { Strands = true, Woven = true, Swarm = true, Pile = true, Energy = true, Shards = true }
+local HERO_INSIDE: { [string]: boolean } = { Wobble = true, Liquid = true }
+
+-- Strands on a hero sculpt: one wrap of noodles round the mass (piece s_noodle_wrap, authored in the frame of a
+-- belt round the middle). Without mesh assets the belt itself shows: a single noodle ring.
+local function heroWrap(p: any, env: any)
+	local a = longAxis(p)
+	local k = p.heroHull or 1.25
+	local s = p.size
+	local cf, g1, g2 = p.cf, s[1], s[3]
+	if a == 3 then
+		cf, g1, g2 = Geom.mul(p.cf, at(0, 0, 0, math.rad(90), 0, 0)), s[1], s[2]
+	elseif a == 1 then
+		cf, g1, g2 = Geom.mul(p.cf, at(0, 0, 0, 0, 0, math.rad(90))), s[2], s[3]
+	end
+	table.insert(env.out, sub(p, {
+		shape = "Ellipsoid", size = { g1 * k, s[a] * 0.13, g2 * k }, cf = cf, col = p.col, mcol = Palette.tint(env.pal[1], 0.12),
+		pri = (p.pri or 2) + 0.05, role = "strand", name = (p.name or "M") .. "Wrap", pairTag = "wr", noCore = true, mesh = "s_noodle_wrap",
+	}))
+end
+
+local function heroProxy(p: any, wrap: boolean): any
+	local q = table.clone(p)
+	q.heroProxy = true
+	if wrap then
+		local k = p.heroHull or 1.25
+		local a = longAxis(p)
+		q.size = { p.size[1] * (if a == 1 then 1 else k), p.size[2] * (if a == 2 then 1 else k), p.size[3] * (if a == 3 then 1 else k) }
+	end
+	return q
+end
 
 function Materials.apply(B: any, m: any, room: number, ctx: any): any
 	if m == nil then
@@ -713,9 +751,21 @@ function Materials.apply(B: any, m: any, room: number, ctx: any): any
 	end
 
 	-- masses, biggest first
+	local heroBuild = false
+	for _, p in parts do
+		if p.heroSet then
+			heroBuild = true
+			break
+		end
+	end
 	local masses = {}
 	for _, p in parts do
 		local w = MASS[p.role]
+		-- on a hero build only the sculpt's own masses take the construction; its head, horns, claws and wings
+		-- (heroKeep, or parts outside the set) stay as modelled and are recoloured only
+		if heroBuild and (p.heroSet == nil or p.heroKeep) then
+			w = nil
+		end
 		if w and not p.glow then
 			table.insert(masses, { p = p, w = vol(p) * w })
 		end
@@ -746,6 +796,7 @@ function Materials.apply(B: any, m: any, room: number, ctx: any): any
 		extraRoom = math.min(4, math.floor(left * 0.3))
 		left -= extraRoom
 	end
+	local wraps = 0
 	for i, ms in chosen do
 		local p = ms.p
 		local share = math.floor(left * ms.w / math.max(sum, 1e-6) + 0.5)
@@ -755,7 +806,18 @@ function Materials.apply(B: any, m: any, room: number, ctx: any): any
 			n = math.max(n, math.min(cap, math.floor(left / mult), 3))
 		end
 		env.first = i == 1
-		if n > 0 or construction == "Inflated" or construction == "Panels" then
+		if p.heroSet and construction == "Strands" then
+			if wraps + mult <= left then
+				wraps += mult
+				heroWrap(p, env)
+			end
+		elseif p.heroSet then
+			if n > 0 and (HERO_WRAP[construction] or HERO_INSIDE[construction]) then
+				local q = heroProxy(p, HERO_WRAP[construction] == true)
+				fn(q, n, env)
+				p.mcol, p.mglow = q.mcol, q.mglow
+			end
+		elseif n > 0 or construction == "Inflated" or construction == "Panels" then
 			fn(p, n, env)
 			-- constructions that rebuild a mass out of units (strands, bricks, plates, shards, a pile, a swarm) sit on
 			-- the primitive's own surface: that mass keeps its primitive instead of a sculpted mesh
@@ -763,20 +825,23 @@ function Materials.apply(B: any, m: any, room: number, ctx: any): any
 				p.noMesh = true
 			end
 		end
-		if construction == "Wobble" or construction == "Liquid" then
+		if (construction == "Wobble" or construction == "Liquid") and not p.heroSet then
 			roundify(p)
 		end
-		if i == 1 and extras.wedge and p.shape == "Block" and (p.role == "body" or p.role == "torso") then
+		if i == 1 and not p.heroSet and extras.wedge and p.shape == "Block" and (p.role == "body" or p.role == "torso") then
 			p.shape = "Wedge"
 		end
 	end
 	if chosen[1] then
 		local p = chosen[1].p
+		if p.heroSet then
+			p = heroProxy(p, true)
+		end
 		local n = math.max(1, extraRoom)
 		if extras.holes then
 			holes(p, n, env)
 			if chosen[2] and extraRoom >= 4 then
-				holes(chosen[2].p, 1, env)
+				holes(if chosen[2].p.heroSet then heroProxy(chosen[2].p, true) else chosen[2].p, 1, env)
 			end
 		end
 		if extras.sauce then

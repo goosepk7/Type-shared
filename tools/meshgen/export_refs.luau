@@ -12,9 +12,24 @@ local F = require("../../tests/specs/summon_fixtures")
 local Schema = load("src/Shared/Schema")
 local Summon = load("src/Shared/Summon")
 
+-- With arguments, only those keys are (re)exported and every other entry of refs.json is kept as committed:
+--   lune run tools/meshgen/export_refs "sig:dragon@1" "sig:wolf"
+-- (a full re-export moves every existing sculpt by whatever the generators changed since; do that on purpose only)
+local process = require("@lune/process")
+local only: { [string]: boolean }? = nil
 local out = {}
-local function add(key: string, r: any)
-	local bp = Summon.blueprint(r, { style = "Solid", seed = 1, budget = { maxParts = 400 } })
+if #process.args > 0 then
+	only = {}
+	for _, k in process.args do
+		(only :: any)[k] = true
+	end
+	out = serde.decode("json", fs.readFile("tools/meshgen/refs.json"))
+end
+local function add(key: string, r: any, detail: number?)
+	if only and not only[key] then
+		return
+	end
+	local bp = Summon.blueprint(r, { style = "Solid", seed = 1, budget = { maxParts = 400 }, detail = detail })
 	local parts = {}
 	for _, p in bp.parts do
 		local cf = {}
@@ -39,6 +54,11 @@ for _, plan in Schema.Enums.BodyPlan do
 end
 for _, s in F.SignatureWords do
 	add("sig:" .. s[1], F.signatureResult(Schema, s, "Huge"))
+	-- the low-detail layouts (Small / Medium summons, or a material that reserves budget) for the compact hero sets
+	if s[1] == "dragon" then
+		add("sig:dragon@1", F.signatureResult(Schema, s, "Huge"), 1)
+		add("sig:dragon@0", F.signatureResult(Schema, s, "Huge"), 0)
+	end
 end
 -- extra exemplars (quadruped archetypes, orbs, structures) that the fixtures only reach through the renderer
 local EX = {

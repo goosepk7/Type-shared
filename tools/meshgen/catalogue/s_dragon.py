@@ -65,7 +65,7 @@ def body():
 GBe = Group(W, "BellyPlate1", ["BellyPlate2"])
 
 
-@_def("s_dragon_belly", GBe, 900, 150, "Dragon underbelly (lead BellyPlate1, member BellyPlate2): overlapping scutes from throat to tail root.",
+@_def("s_dragon_belly", GBe, 600, 150, "Dragon underbelly (lead BellyPlate1, member BellyPlate2): overlapping scutes from throat to tail root.",
       extra=[(0.8, 1.5, -2.2), (0, 1.3, 2.2), (0, 3.4, -2.7)])
 def belly():
     s = None
@@ -89,7 +89,7 @@ def belly():
 GN = Group(W, "Neck")
 
 
-@_def("s_dragon_neck", GN, 1500, 150, "Dragon neck (lead Neck): thick base tapering to the skull, throat scutes in front, dorsal fins.",
+@_def("s_dragon_neck", GN, 1000, 150, "Dragon neck (lead Neck): thick base tapering to the skull, throat scutes in front, dorsal fins.",
       extra=[(0.9, 3.0, -1.6), (0, 6.3, -3.2), (0, 2.6, -1.9)])
 def neck():
     a, b, c, d = (0, 3.0, -1.72), (0, 3.95, -2.3), (0, 4.95, -2.95), (0, 5.8, -3.5)
@@ -132,7 +132,7 @@ def head():
 GJ = Group(W, "Jaw")
 
 
-@_def("s_dragon_jaw", GJ, 700, 140, "Dragon lower jaw (lead Jaw): tapering mandible, chin spikes, a row of lower teeth.",
+@_def("s_dragon_jaw", GJ, 500, 140, "Dragon lower jaw (lead Jaw): tapering mandible, chin spikes, a row of lower teeth.",
       extra=[(0.6, 5.2, -4.0), (0, 5.2, -5.8)])
 def jaw():
     s = ellipsoid(0.47, 0.2, 0.8, (0, 5.5, -4.9))
@@ -149,7 +149,7 @@ def jaw():
 GHo = Group(W, _first("horn", "Head"))
 
 
-@_def("s_dragon_horns", GHo, 1300, 150, "Dragon horn crown (lead: first horn segment; members: every other horn): two long swept horns with growth rings, two side horns.",
+@_def("s_dragon_horns", GHo, 800, 150, "Dragon horn crown (lead: first horn segment; members: every other horn): two long swept horns with growth rings, two side horns.",
       extra=[(1.3, 7.6, -1.6), (-1.3, 6.0, -3.8)], pad=0.2)
 def horns():
     def horn(pts, radii):
@@ -190,23 +190,23 @@ GTF, GSF = Group(W, "limb3"), Group(W, "limb5")
 GTH, GSH = Group(W, "limb7"), Group(W, "limb9")
 
 
-@_def("s_dragon_thigh_f", GTF, 800, 130, "Dragon foreleg, upper (lead: front hip limb): shoulder ball, biceps, elbow.", extra=[(1.3, 2.6, -1.2), (0.1, 0.7, -1.2)], mirror=True)
+@_def("s_dragon_thigh_f", GTF, 500, 130, "Dragon foreleg, upper (lead: front hip limb): shoulder ball, biceps, elbow.", extra=[(1.3, 2.6, -1.2), (0.1, 0.7, -1.2)], mirror=True)
 def thigh_f():
     return _leg((0.68, 2.45, -1.18), (0.74, 1.0, -1.1), 0.5, 0.33, (0.78, 2.0, -0.98))
 
 
-@_def("s_dragon_shin_f", GSF, 1000, 140, "Dragon foreleg, lower (lead: front knee limb): forearm, clawed foot with three talons and a heel spur.",
+@_def("s_dragon_shin_f", GSF, 800, 140, "Dragon foreleg, lower (lead: front knee limb): forearm, clawed foot with three talons and a heel spur.",
       extra=[(1.3, 0.0, -1.9), (0.2, 1.3, -0.7)], mirror=True)
 def shin_f():
     return _shin((0.74, 1.0, -1.1), (0.78, 0.3, -1.22), (0.78, -1.62), 0.34, 0.23, 0.2)
 
 
-@_def("s_dragon_thigh_h", GTH, 900, 130, "Dragon hind leg, upper (lead: hind hip limb): heavy haunch, knee.", extra=[(1.45, 2.7, 1.5), (0.0, 0.7, 1.5)], mirror=True)
+@_def("s_dragon_thigh_h", GTH, 550, 130, "Dragon hind leg, upper (lead: hind hip limb): heavy haunch, knee.", extra=[(1.45, 2.7, 1.5), (0.0, 0.7, 1.5)], mirror=True)
 def thigh_h():
     return _leg((0.7, 2.45, 1.5), (0.78, 1.0, 1.72), 0.6, 0.37, (0.82, 2.05, 1.3))
 
 
-@_def("s_dragon_shin_h", GSH, 1000, 140, "Dragon hind leg, lower (lead: hind knee limb): hock, clawed foot.", extra=[(1.35, 0.0, 0.85), (0.2, 1.3, 2.1)], mirror=True)
+@_def("s_dragon_shin_h", GSH, 800, 140, "Dragon hind leg, lower (lead: hind knee limb): hock, clawed foot.", extra=[(1.35, 0.0, 0.85), (0.2, 1.3, 2.1)], mirror=True)
 def shin_h():
     return _shin((0.78, 1.0, 1.72), (0.8, 0.3, 1.5), (0.8, 1.08), 0.37, 0.25, 0.22)
 
@@ -227,19 +227,119 @@ def _tail(a, b, r0, r1, fins):
     return s
 
 
-@_def("s_dragon_tail1", GT1, 800, 130, "Dragon tail root (lead: first tail segment): heavy, dorsal fins, under scutes.", extra=[(0, 3.9, 3.0), (0.7, 2.8, 1.7)])
+@_def("s_dragon_tail1", GT1, 500, 130, "Dragon tail root (lead: first tail segment): heavy, dorsal fins, under scutes.", extra=[(0, 3.9, 3.0), (0.7, 2.8, 1.7)])
 def tail1():
     return _tail((0, 2.8, 1.95), (0, 2.68, 4.05), 0.58, 0.42, 3)
 
 
-@_def("s_dragon_tail2", GT2, 700, 130, "Dragon tail, middle (lead: second tail segment).", extra=[(0, 3.4, 4.6), (0.5, 2.6, 3.4)])
+@_def("s_dragon_tail2", GT2, 450, 130, "Dragon tail, middle (lead: second tail segment).", extra=[(0, 3.4, 4.6), (0.5, 2.6, 3.4)])
 def tail2():
     return _tail((0, 2.66, 3.6), (0, 2.38, 5.7), 0.42, 0.27, 3)
 
 
-@_def("s_dragon_tail3", GT3, 800, 140, "Dragon tail tip (lead: last tail segment): whip ending in a barbed spade.", extra=[(0, 3.0, 7.0), (0, 1.3, 8.0), (0.4, 2.2, 5.2)])
+@_def("s_dragon_tail3", GT3, 500, 140, "Dragon tail tip (lead: last tail segment): whip ending in a barbed spade.", extra=[(0, 3.0, 7.0), (0, 1.3, 8.0), (0.4, 2.2, 5.2)])
 def tail3():
     s = round_cone((0, 2.36, 5.25), (0, 2.1, 7.0), 0.27, 0.1).su(sphere(0.27, (0, 2.36, 5.25)), 0.05)
     spade = ellipsoid(0.07, 0.62, 0.62, (0, 2.06, 7.25)).si(round_cone((0, 2.06, 6.75), (0, 2.02, 7.95), 0.68, 0.01), 0.06)
     spade = spade.ss(sphere(0.3, (0, 2.75, 6.72)), 0.05).ss(sphere(0.3, (0, 1.37, 6.72)), 0.05)  # barbs
     return s.su(spade, 0.08)
+
+
+# ================================================================================================ compact dragon
+# Small / Medium dragons (and material builds that reserve budget) use the low-detail layout: one limb per leg, no
+# neck bone, one tail segment, one wing sail (refs "sig:dragon@1"; "sig:dragon@0" merges each leg pair). The compact
+# set is the same dragon cut into fewer, larger pieces. Head and jaw are shared with the full set (same unit frame).
+W1, W0 = "sig:dragon@1", "sig:dragon@0"
+_p1 = {p["name"]: p for p in refs()[W1]["parts"]}
+
+
+def _plates(names):
+    return [n for n in names if n in _p1]
+
+
+GCB = Group(W1, "Torso", _plates(["BellyPlate1", "BellyPlate2"]))
+
+
+@_def("s_dragon_c_body", GCB, 2600, 170, "Compact dragon trunk (lead Torso, members belly plates): chest, barrel, haunches, short neck up to the skull, "
+      "dorsal fins, belly scutes.", extra=[(1.5, 2.8, 0), (0, 1.4, 0), (0, 4.6, -2.9), (0, 3.2, 2.9), (0, 4.5, 0)])
+def c_body():
+    s = ellipsoid(1.14, 1.26, 1.45, (0, 2.95, -1.2))
+    s = s.su(ellipsoid(1.0, 1.06, 1.95, (0, 2.85, 0.15)), 0.35)
+    s = s.su(ellipsoid(1.08, 1.12, 1.3, (0, 2.85, 1.4)), 0.35)
+    s = s.su(ellipsoid(0.44, 0.82, 0.64, (0.92, 2.75, -1.4)).mirror_x(), 0.18)  # shoulders
+    s = s.su(ellipsoid(0.52, 0.9, 0.76, (0.92, 2.7, 1.45)).mirror_x(), 0.18)  # hips
+    s = s.su(ellipsoid(0.32, 0.28, 0.44, (0.45, 3.78, -1.0)).mirror_x(), 0.16)  # wing roots
+    s = s.su(tube([(0, 3.2, -1.85), (0, 3.7, -2.3), (0, 4.02, -2.62)], [0.9, 0.74, 0.62], k=0.2), 0.25)  # neck
+    s = s.su(round_cone((0, 2.95, 1.9), (0, 3.08, 2.6), 0.82, 0.58), 0.25)  # tail root
+    s = s.ss(capsule((0.66, 3.35, -0.5), (0.66, 3.25, 0.9), 0.1).mirror_x(), 0.2)
+    for i in range(9):  # belly scutes
+        u = i / 8
+        z = -1.9 + u * 3.9
+        y = 1.72 + 0.22 * abs(2 * u - 1) ** 2.5
+        s = s.su(ellipsoid(0.72 - 0.22 * (2 * u - 1) ** 2, 0.2, 0.28, (0, y, z)), 0.04)
+    for i in range(1, 5):  # breast plates up the chest
+        th = np.radians(i * 16 + 24)
+        s = s.su(ellipsoid(0.64 - 0.05 * i, 0.25, 0.25, (0, 2.95 - 1.3 * np.cos(th), -1.2 - 1.48 * np.sin(th))), 0.04)
+    for i in range(7):  # dorsal fins from the nape to the rump
+        u = i / 6
+        z = -2.0 + u * 3.9
+        y = 3.98 - 0.12 * (2 * u - 1) ** 2 + (0.25 if i == 0 else 0)
+        s = s.su(_blade((0, y - 0.15, z - 0.05), (0, y + 0.36, z + 0.42), 0.22, 0.03), 0.05)
+    return s
+
+
+def _c_leg(front):
+    if front:
+        return _leg((0.72, 2.55, -1.4), (0.76, 1.12, -1.3), 0.5, 0.34, (0.8, 2.1, -1.2)).su(
+            _shin((0.76, 1.12, -1.3), (0.78, 0.3, -1.42), (0.78, -1.86), 0.35, 0.24, 0.2), 0.05)
+    return _leg((0.74, 2.55, 1.45), (0.8, 1.1, 1.68), 0.62, 0.38, (0.84, 2.1, 1.25)).su(
+        _shin((0.8, 1.1, 1.68), (0.82, 0.3, 1.45), (0.82, 1.02), 0.38, 0.26, 0.22), 0.05)
+
+
+for _f, _tag, _lead1, _lead0, _ex in (
+        (True, "f", "LegFR", "LegsF", [(1.35, 2.7, -1.4), (0.15, 0.0, -2.3), (0.8, 1.0, -0.6)]),
+        (False, "h", "LegBR", "LegsB", [(1.5, 2.8, 1.45), (0.1, 0.0, 0.5), (0.8, 1.0, 2.2)])):
+    _g1, _g0 = Group(W1, _lead1), Group(W0, _lead0)
+    _def("s_dragon_c_leg_" + _tag, _g1, 1100, 150, "Compact dragon %s leg in one piece (lead: the leg limb): thigh, knee, clawed foot." % ("fore" if _f else "hind"),
+         extra=_ex, mirror=True)(lambda f=_f: _c_leg(f))
+    _def("s_dragon_c_legs_" + _tag, _g0, 2000, 170, "Compact dragon %s leg PAIR in one piece (lead: the merged leg pair of the lowest detail)." % ("fore" if _f else "hind"),
+         extra=_ex + [(-_ex[0][0], _ex[0][1], _ex[0][2])])(lambda f=_f: _c_leg(f).mirror_x())
+
+
+_t1 = [p["name"] for p in refs()[W1]["parts"] if p.get("role") == "tail"][0]
+GCT = Group(W1, _t1)
+
+
+@_def("s_dragon_c_tail", GCT, 1000, 170, "Compact dragon tail in one piece (lead: the tail segment, members its spikes): tapering whip, dorsal fins, barbed spade.",
+      extra=[(0, 4.0, 2.4), (0.75, 3.0, 2.0), (0, 1.2, 8.9), (0, 3.2, 8.9)])
+def c_tail():
+    pts = [(0, 3.08, 2.2), (0, 2.86, 4.1), (0, 2.56, 6.0), (0, 2.28, 7.8)]
+    rad = [0.6, 0.43, 0.26, 0.11]
+    s = tube(pts, rad, k=0.15)
+    for i in range(8):
+        u = (i + 0.5) / 8
+        z = 2.2 + u * 5.2
+        y = 3.08 - u * 0.78
+        r = 0.6 - u * 0.47
+        s = s.su(_blade((0, y + r * 0.6, z - 0.1), (0, y + r + 0.12 + 0.36 * r, z + 0.32), 0.3 * r + 0.05, 0.02, 0.05), 0.04)
+        s = s.su(ellipsoid(r * 0.75, r * 0.3, 0.22, (0, y - r * 0.86, z)), 0.04)
+    spade = ellipsoid(0.08, 0.7, 0.7, (0, 2.24, 8.1)).si(round_cone((0, 2.24, 7.55), (0, 2.2, 8.9), 0.76, 0.01), 0.06)
+    spade = spade.ss(sphere(0.33, (0, 3.0, 7.52)), 0.05).ss(sphere(0.33, (0, 1.48, 7.52)), 0.05)
+    return s.su(spade, 0.08)
+
+
+_h1 = [p["name"] for p in refs()[W1]["parts"] if p.get("role") == "horn" and not p.get("mirrored")][0]
+GCH = Group(W1, _h1)
+_hk = float(Group(W1, "Head").s[0] / GH.s[0])
+_ho, _hn = GH.pos.copy(), Group(W1, "Head").pos.copy()
+
+
+def _to_c(pt):
+    return tuple(_hn + (np.asarray(pt, float) - _ho) * _hk)
+
+
+@_def("s_dragon_c_horns", GCH, 800, 150, "Compact dragon horn crown (lead: first horn; members: the other horns): the full set's crown on the low-detail head.",
+      extra=[_to_c((1.3, 7.6, -1.6)), _to_c((-1.3, 6.0, -3.8))], pad=0.25)
+def c_horns():
+    h = horns()
+    return SDF(lambda p: h((p - _hn) / _hk + _ho) * _hk)

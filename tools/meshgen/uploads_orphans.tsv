@@ -1,0 +1,25 @@
+# Assets uploaded by mistake (two upload.py runs overlapped on 2026-11-16): byte-identical duplicates of the
+# recorded asset of the same piece. Not referenced anywhere; safe to archive in the group.
+# piece	assetId
+s_dragon_shin_h_l	130709402828225
+s_dragon_tail1	128942103530372
+s_dragon_tail2	138029269480001
+s_dragon_tail3	103118477943155
+s_dragon_thigh_f	116828818694676
+s_dragon_thigh_f_l	80363127144918
+s_dragon_thigh_h	137061497948458
+s_dragon_thigh_h_l	70472555984521
+s_noodle_wrap	101699416585466
+s_trex_arm	128932105331107
+s_trex_arm_l	125966270876966
+s_trex_body	78849724015561
+s_trex_head	105307059900635
+s_trex_jaw	113403232292825
+s_trex_neck	137381059509241
+s_trex_shin	110715495806590
+s_trex_shin_l	139174633250986
+s_trex_tail1	116031854149609
+s_trex_tail2	134642660089495
+s_trex_tail3	136827399014117
+s_trex_thigh	75534185288759
+s_trex_thigh_l	121138375316142

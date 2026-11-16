@@ -530,6 +530,13 @@ function Instantiate.upgradeMeshes(model: any, bp: any?, opts: any?): number
 	local swapped = 0
 	for _, m in members do
 		local shown: { [string]: boolean } = {}
+		local scale = 1
+		pcall(function()
+			local k = m:GetScale()
+			if type(k) == "number" and k > 0 and math.abs(k - 1) > 1e-4 then
+				scale = k
+			end
+		end)
 		for _, p in blueprint.parts do
 			local old = m:FindFirstChild(p.name)
 			if old and old:GetAttribute("Mesh") then
@@ -544,6 +551,12 @@ function Instantiate.upgradeMeshes(model: any, bp: any?, opts: any?): number
 					if okNew and inst and inst:GetAttribute("Mesh") then
 						-- "unit" pieces sit off the part's centre: keep that offset relative to the primitive's frame
 						local rel = cf(p.cf):Inverse() * inst.CFrame
+						if scale ~= 1 then
+							-- the model was scaled after it was built (Model:ScaleTo): the old primitive and its weld
+							-- already carry that scale, the fresh sculpt is at blueprint size
+							inst.Size = inst.Size * scale
+							rel = rel.Rotation + rel.Position * scale
+						end
 						inst.CFrame = frame * rel
 						local w = R.Instance.new("Weld")
 						w.Name = "W"

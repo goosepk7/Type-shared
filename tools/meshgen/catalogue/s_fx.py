@@ -167,3 +167,72 @@ def shark_dorsal():
     s = _fin([((0, 6.3, -2.2), (0, 8.6, -0.1), 0.6, 0.3), ((0, 8.6, -0.1), (0, 9.55, 1.0), 0.3, 0.07), ((0, 6.3, -1.6), (0, 6.3, 0.5), 0.6, 0.5),
               ((0, 6.9, -0.9), (0, 8.1, 0.2), 0.75, 0.4)], 0.12)
     return s.ss(ellipsoid(1.0, 1.25, 0.9, (0, 7.95, 1.45)), 0.15)
+
+
+# ------------------------------------------------------------------------------------------------ material wraps
+def _tube(path, rad, sides=6):
+    """Round tube along a polyline (path: (n, 3), rad: (n,) radii); pointed where the radius reaches 0."""
+    path = np.asarray(path, float)
+    n = len(path)
+    tan = np.gradient(path, axis=0)
+    tan /= np.linalg.norm(tan, axis=1, keepdims=True)
+    up = np.tile(np.array([0.0, 1.0, 0.0]), (n, 1))
+    a = np.cross(tan, up)
+    a /= np.linalg.norm(a, axis=1, keepdims=True)
+    b = np.cross(a, tan)
+    V, N, F = [], [], []
+    for i in range(n):
+        for k in range(sides):
+            th = 2 * np.pi * k / sides
+            d = a[i] * np.cos(th) + b[i] * np.sin(th)
+            V.append(path[i] + d * rad[i])
+            N.append(d)
+    for i in range(n - 1):
+        for k in range(sides):
+            k2 = (k + 1) % sides
+            p0, p1, p2, p3 = i * sides + k, i * sides + k2, (i + 1) * sides + k, (i + 1) * sides + k2
+            F.append((p0, p2, p1))
+            F.append((p1, p2, p3))
+    return direct._finish(V, N, F)
+
+
+_WRAP_L = 1.6     # reference mass: girth 1, length 1.6; the lead is a belt 13% of the length thick
+@piece("s_noodle_wrap", (0.6, 0.7, 0.6), tris=1300, kind="unit", lead=(1.0, 0.13 * _WRAP_L, 1.0),
+       note="material wrap: lead = a belt round the middle of a sculpted mass")
+def s_noodle_wrap():
+    """Three thick noodles wound round a body (long axis Y), in the frame of a belt round its middle: strands
+    cross and wander so the wrap reads as a loose tangle, not a spring. Laid on the hull of a hero sculpt."""
+    rng = np.random.default_rng(11)
+    parts = []
+    for j in range(3):
+        t = np.linspace(0, 1, 42)
+        turns = 2.4 + 0.35 * j
+        ph = 2 * np.pi * j / 3 + rng.uniform(-0.3, 0.3)
+        y = (t - 0.5) * 0.8 * _WRAP_L + 0.07 * np.sin(2 * np.pi * (turns * 1.7 * t) + ph * 2)
+        th = 2 * np.pi * turns * t * (1 if j != 1 else -1) + ph
+        hull = 0.5 * np.sqrt(np.clip(1 - (y / (0.56 * _WRAP_L)) ** 2, 0.2, 1))
+        r = hull * (1 + 0.035 * np.sin(5 * th + j))
+        path = np.stack([np.cos(th) * r, y, np.sin(th) * r], axis=1)
+        rad = 0.052 * np.clip(np.minimum(t, 1 - t) / 0.04, 0, 1) ** 0.5
+        parts.append(_tube(path, rad, 5))
+    return direct.merge(*parts)
+
+
+# ------------------------------------------------------------------------------------------------ black hole extras
+@piece("s_photon_ring", (0.6, 0.1, 0.6), tris=500, fit=(1.0, 0.07, 1.0))
+def s_photon_ring():
+    """Photon ring (thin in Y): a bright hoop of bent light hugging the event horizon, thicker on one side
+    (Doppler beaming) so it reads as light, not as a wire."""
+    n = 40
+    th = np.linspace(0, 2 * np.pi, n + 1)
+    path = np.stack([np.cos(th) * 0.465, np.zeros(n + 1), np.sin(th) * 0.465], axis=1)
+    rad = 0.022 + 0.012 * (1 + np.cos(th - 0.6))
+    rad[-1] = rad[0]
+    return _tube(path, rad, 6)
+
+
+@piece("s_jet", (0.6, 0.6, 0.6), tris=300, fit=(1.0, 1.0, 1.0))
+def s_jet():
+    """Relativistic jet (long in Y, base at -Y): a tight beam leaving the pole, three shock diamonds, a pointed head."""
+    pts = [(-0.5, 0), (-0.47, 0.3), (-0.36, 0.46), (-0.26, 0.3), (-0.14, 0.42), (-0.04, 0.26), (0.08, 0.36), (0.18, 0.2), (0.3, 0.26), (0.5, 0)]
+    return direct.revolve(pts, segs=10, axis=1, spline=2)

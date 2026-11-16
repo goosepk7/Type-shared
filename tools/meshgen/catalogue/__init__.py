@@ -79,7 +79,7 @@ def _flip_x(p):
 
 _CURRENT_SET = ["td"]
 # Modules ported unchanged from Type-defend (set "td", asset ids shared with that game) and the Summon set.
-_MODULES = [("td", ["body", "features", "face"]), ("summon", ["s_organic", "s_heads", "s_hard", "s_hero", "s_dragon", "s_fx"])]
+_MODULES = [("td", ["body", "features", "face"]), ("summon", ["s_organic", "s_heads", "s_hard", "s_hero", "s_dragon", "s_trex", "s_canine", "s_fx"])]
 
 
 def load_all():

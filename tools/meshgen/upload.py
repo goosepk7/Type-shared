@@ -13,6 +13,10 @@
   and the generated runtime module src/Shared/Meshes/MeshAssets.luau (no JSON decode at runtime).
 * --sync only regenerates MeshAssets.luau from the JSON. --import <MeshAssets.json> merges another
   repository's manifest (records whose glb hash equals our build's hash; no upload).
+* --adopt <MeshAssets.json> [more.json ...] takes another repository's records for every piece id both
+  manifests list (asset id, size, origin, tris, hash; our set / flat are kept) so one id is one asset in both
+  games. Adopted records carry "source": "adopted" and are never uploaded again from the local build, whose
+  glb differs (only --force together with --only <id> replaces one).
 * The egress proxy injects the API key; this script sends a placeholder header and never prints a key.
 """
 import argparse, hashlib, json, os, subprocess, sys, time
@@ -117,12 +121,31 @@ def main():
     ap.add_argument("--max", type=int, default=400)
     ap.add_argument("--sync", action="store_true")
     ap.add_argument("--import", dest="imp", default="")
+    ap.add_argument("--adopt", nargs="+", default=[])
     a = ap.parse_args()
     man = json.load(open(os.path.join(OUT, "manifest.json")))
     assets = json.load(open(ASSETS)) if os.path.exists(ASSETS) else {}
     if a.sync:
         write_assets(assets)
         print(f"synced {len(assets)} records")
+        return
+    if a.adopt:
+        took = same = 0
+        for path in a.adopt:
+            for pid, rec in sorted(json.load(open(path)).items()):
+                mine = assets.get(pid)
+                if mine is None or not rec.get("assetId"):
+                    continue
+                if mine.get("assetId") == rec["assetId"]:
+                    same += 1
+                    continue
+                for k in ("size", "origin", "tris", "kind", "pivot", "assetId", "hash"):
+                    if k in rec:
+                        mine[k] = rec[k]
+                mine["source"] = "adopted"
+                took += 1
+        write_assets(assets)
+        print(f"adopted {took} records ({same} already identical)")
         return
     if a.imp:
         other = json.load(open(a.imp))
@@ -134,6 +157,15 @@ def main():
         write_assets(assets)
         print(f"imported {took}/{len(other)} records with identical hashes")
         return
+    # one uploader at a time: two concurrent runs each upload every pending piece (22 duplicate assets were made
+    # that way once, see uploads_orphans.tsv)
+    import fcntl
+    lock = open(os.path.join(OUT, ".upload.lock"), "w")
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        sys.exit("another upload.py is running; wait for it to finish")
+    assets = json.load(open(ASSETS)) if os.path.exists(ASSETS) else {}
     only = {s for s in a.only.split(",") if s}
     by_hash = {v["hash"]: v["assetId"] for v in assets.values() if v.get("hash")}
     n = 0
@@ -144,6 +176,8 @@ def main():
         path = os.path.join(OUT, pid + ".glb")
         h = glb_hash(pid)
         prev = assets.get(pid)
+        if prev and prev.get("source") == "adopted" and not (a.force and pid in only):
+            continue  # this id is another repository's asset: the local build never replaces it
         if prev and prev.get("hash") == h and not a.force:
             if prev.get("flat") != info.get("flat", []) or prev.get("set") != info.get("set", "td"):
                 assets[pid] = record(info, prev["assetId"], h)

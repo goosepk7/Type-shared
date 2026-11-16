@@ -13,6 +13,7 @@
 -- Part priorities put the silhouette features (ears, snout, tail) right after the body masses, so a tight budget
 -- drops shading layers (chest, belly, inner ears) and never the things that say "wolf" or "cat".
 
+local MeshMap = require(script.Parent.Parent.MeshMap)
 local Geom = require(script.Parent.Parent.Geom)
 local Parts = require(script.Parent.Parent.Parts)
 local Heads = require(script.Parent.Parent.Heads)
@@ -404,4 +405,32 @@ return function(B: any, ctx: any)
 
 	B:socket("core", at(0, bodyY, 0), "Body")
 	B:setRig("gait", if heavy then "heavy" elseif reptile then "sprawl" else "trot")
+
+	-- wolf hero sculpt (catalogue/s_canine.py) for the wild, bushy-tailed canines: trunk with the breast ruff, maned
+	-- neck, legs with toed paws, brush. The head keeps s_head_canine. Needs the two-segment legs and tail of detail 2+.
+	if arch == "canine" and detail >= 2 and idHas(id, "wolf wolves coyote jackal dingo husky malamute warg fenrir werewolf hellhound dhole") then
+		local N, lead, named, on = MeshMap.sculptor(B, "wolf")
+		local tails = {}
+		for _, p in B.parts do
+			if p.role == "tail" then
+				table.insert(tails, p)
+			end
+		end
+		if N.Torso and N.Neck and #tails == 2 and on("limb", "KneeFR")[1] and on("limb", "KneeBR")[1] then
+			for _, m in named("Chest", "Haunch", "Belly") do
+				m.pri = 3.2
+			end
+			lead(N.Torso, "s_wolf_body", named("Chest", "Haunch", "Belly"), 1.3)
+			lead(N.Neck, "s_wolf_neck", nil, 1.5)
+			for _, tag in { "F", "B" } do
+				local suffix = if tag == "F" then "_f" else "_h"
+				for _, side in { "R", "L" } do
+					lead(on("limb", "Hip" .. tag .. side)[1], "s_wolf_thigh" .. suffix, nil, 1.3)
+					lead(on("limb", "Knee" .. tag .. side)[1], "s_wolf_shin" .. suffix, on("foot", "Knee" .. tag .. side))
+				end
+			end
+			lead(tails[1], "s_wolf_tail1", nil, 1.4)
+			lead(tails[2], "s_wolf_tail2", nil, 1.4)
+		end
+	end
 end
