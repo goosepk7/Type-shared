@@ -181,6 +181,8 @@ WordEngine.Library.isSignature(id): boolean
 WordEngine.Library.count(): number
 WordEngine.Library.prefixSearch(prefix, limit): { string }   -- autocomplete
 WordEngine.Library.random(filter?): WordResult               -- bots / empty loadout
+    -- filter = { shape?, element?, category?, size?, excludeGroups: {[string]: true}?, signatureOnly?, rng: Random? }
+WordEngine.Suggest.prefix(prefix, wordBook: {string}?, limit): { string }  -- client-side autocomplete, word book first
 WordEngine.Modifiers.parse(tokens): (rest: {string}, mods: {Modifier})
 WordEngine.Modifiers.apply(result, mods): WordResult         -- caps enforced (Config.Modifiers)
 WordEngine.Resolver.resolveLocal(text): WordResult           -- full pipeline minus AI; never nil
@@ -190,6 +192,7 @@ WordEngine.Reactions.all(): { Reaction }
 WordEngine.Summon.build(result, opts: SummonOptions): Model
     -- opts = { style: "Spectral" | "Solid", budget: { maxParts: number?, maxParticles: number? }?,
     --          scale: number?, seed: number? }
+    -- Deterministic: same (result, seed) -> identical model on every client. Summon.blueprint(result, opts) is the pure stage.
 WordEngine.Summon.animate(model, result): Animator   -- :play("Idle"|"Move"|"Attack"|"Hit"|"Die"|"Spawn"), :destroy()
 WordEngine.Effects.play(effectId, params): EffectHandle  -- pooled
 WordEngine.Effects.status(target, status, duration)       -- Burn/Freeze/Shock/Poison/Slow/Stun visuals
