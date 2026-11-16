@@ -92,6 +92,10 @@ local function step(dt: number)
 	end
 end
 
+-- Manual tick for headless checks: PreSimulation does not fire where RunService:IsRunning() is false
+-- (Open Cloud Luau execution), so a simulation can call Animator.step(dt) itself to pose the rigs.
+Animator.step = step
+
 local function ensureLoop()
 	if conn == nil then
 		local RunService = game:GetService("RunService")
