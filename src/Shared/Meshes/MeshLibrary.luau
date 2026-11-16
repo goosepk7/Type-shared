@@ -2,11 +2,12 @@
 -- MeshLibrary: sculpted MeshPart pieces (tools/meshgen, data/mesh_assets.json -> Meshes/MeshAssets.luau).
 -- Shared by the Summon builder and by games built on WordEngine (Type-defend's enemy Kit uses the same API).
 --
--- SERVER   MeshLibrary.start(filter?)  loads the manifest entries with InsertService:LoadAsset in parallel tasks
---          (retries with backoff), renames each MeshPart to its pieceId, stamps NativeSize / Origin / Kind
---          attributes and parents the templates to ReplicatedStorage[MeshLibrary.FolderName]. It yields, so
---          call it from its own thread: MeshLibrary.preload(filter?) does that and returns at once.
--- CLIENT   templates are picked up from that folder on demand (and as they replicate).
+-- SERVER   MeshLibrary.start(filter?, { priority = { "core_", "prop_" } }?) loads the manifest entries with
+--          InsertService:LoadAsset (MeshLibrary.MAX_PARALLEL at a time, retries with backoff), renames each
+--          MeshPart to its pieceId, stamps NativeSize / Origin / Kind attributes and parents the templates to
+--          ReplicatedStorage[MeshLibrary.FolderName]. It returns at once and may be called again for more ids.
+-- CLIENT   never loads assets (start/preload only watch the folder): templates are picked up from the
+--          replicated folder on demand and as they arrive.
 -- OFFLINE  tools and tests register stand-in templates with MeshLibrary.register().
 --
 --   MeshLibrary.get(pieceId, size, cframe, color?, material?) -> MeshPart?
@@ -289,104 +290,180 @@ function MeshLibrary.ready(): Ready
 	}
 end
 
--- SERVER: load the manifest pieces (all of them, or those `filter(id, record)` accepts). Safe to call more
--- than once. Yields while it throttles the loads: use preload() from code that must not wait.
-function MeshLibrary.start(filter: ((string, any) -> boolean)?)
-	if started or not isLive() then
-		return
-	end
-	started = true
-	local RS = gameAny():GetService("ReplicatedStorage")
-	local InsertService = gameAny():GetService("InsertService")
-	local data = loadManifest()
-	local folder = RS:FindFirstChild(MeshLibrary.FolderName) or Instance.new("Folder")
-	folder.Name = MeshLibrary.FolderName
-	folder.Parent = RS
-	folderHooked = true
+-- Parallel InsertService loads. 12 made a cold load of ~700 pieces take about 40 s; games may raise or lower it.
+MeshLibrary.MAX_PARALLEL = 24
 
-	local ids: { string } = {}
-	for id, rec in data do
-		if type(rec) == "table" and rec.assetId and (filter == nil or filter(id, rec)) then
-			table.insert(ids, id)
-		end
+local function isServer(): boolean
+	if not isLive() then
+		return false
 	end
-	table.sort(ids)
-	local pending = #ids
-	local failed = 0
-	local function done()
-		pending -= 1
-		if pending <= 0 then
-			folder:SetAttribute("Ready", true)
-			folder:SetAttribute("Failed", failed)
-			if failed > 0 then
-				warn(("[MeshLibrary] %d/%d pieces failed to load (parts fallback)"):format(failed, #ids))
-			end
-			markReady()
+	local ok, v = pcall(function(): boolean
+		return gameAny():GetService("RunService"):IsServer()
+	end)
+	return ok and v == true
+end
+
+local requested: { [string]: boolean } = {}
+local queue: { string } = {}
+local pending = 0
+local failed = 0
+local running = 0
+local loadFolder: any = nil
+
+local function finishOne()
+	pending -= 1
+	if pending <= 0 and loadFolder then
+		loadFolder:SetAttribute("Failed", failed)
+		loadFolder:SetAttribute("Ready", true)
+		if failed > 0 then
+			warn(("[MeshLibrary] %d pieces failed to load (parts fallback)"):format(failed))
 		end
-	end
-	if pending == 0 then
-		folder:SetAttribute("Ready", true)
 		markReady()
-		return
 	end
-	local MAX_PARALLEL = 12
-	local running = 0
-	for _, id in ids do
-		local rec = data[id]
-		while running >= MAX_PARALLEL do
-			task.wait()
-		end
-		running += 1
-		task.spawn(function()
-			local mesh: BasePart? = nil
-			for attempt = 1, 4 do
-				local ok, model = pcall(function(): Instance?
-					return InsertService:LoadAsset(rec.assetId)
-				end)
-				if ok and model then
-					for _, d in model:GetDescendants() do
-						if d:IsA("MeshPart") then
-							mesh = d
-							break
-						end
-					end
-					if mesh then
-						(mesh :: BasePart).Parent = nil
-					end
-					model:Destroy()
+end
+
+local function loadOne(id: string)
+	local rec = loadManifest()[id]
+	local InsertService = gameAny():GetService("InsertService")
+	local mesh: BasePart? = nil
+	for attempt = 1, 4 do
+		local ok, model = pcall(function(): Instance?
+			return InsertService:LoadAsset(rec.assetId)
+		end)
+		if ok and model then
+			for _, d in model:GetDescendants() do
+				if d:IsA("MeshPart") then
+					mesh = d
 					break
 				end
-				task.wait(0.5 * 2 ^ attempt)
+			end
+			if mesh then
+				(mesh :: BasePart).Parent = nil
+			end
+			model:Destroy()
+			break
+		end
+		task.wait(0.5 * 2 ^ attempt)
+	end
+	if mesh then
+		local m = mesh :: BasePart
+		m.Name = id
+		m.Anchored = true
+		m.CanCollide = false
+		m.CanQuery = false
+		m.CanTouch = false
+		m.CastShadow = true
+		m:SetAttribute("NativeSize", v3(rec.size))
+		m:SetAttribute("Origin", v3(rec.origin))
+		m:SetAttribute("Kind", rec.kind or "box")
+		m:SetAttribute("Tris", rec.tris)
+		MeshLibrary.register(id, m, rec)
+		m.Parent = loadFolder
+	else
+		failed += 1
+	end
+end
+
+local function pump()
+	while running < math.max(1, MeshLibrary.MAX_PARALLEL) and #queue > 0 do
+		local id = table.remove(queue, 1) :: string
+		running += 1
+		task.spawn(function()
+			local ok, err = pcall(loadOne, id)
+			if not ok then
+				failed += 1
+				warn("[MeshLibrary] " .. id .. ": " .. tostring(err))
 			end
 			running -= 1
-			if mesh then
-				local m = mesh :: BasePart
-				m.Name = id
-				m.Anchored = true
-				m.CanCollide = false
-				m.CanQuery = false
-				m.CanTouch = false
-				m.CastShadow = true
-				m:SetAttribute("NativeSize", v3(rec.size))
-				m:SetAttribute("Origin", v3(rec.origin))
-				m:SetAttribute("Kind", rec.kind or "box")
-				m:SetAttribute("Tris", rec.tris)
-				MeshLibrary.register(id, m, rec)
-				m.Parent = folder
-			else
-				failed += 1
-			end
-			done()
+			finishOne()
+			pump()
 		end)
 	end
 end
 
--- Non-yielding start: spawns the loader (server) and returns. No-op offline and after the first call.
-function MeshLibrary.preload(filter: ((string, any) -> boolean)?)
-	if started or not isLive() then
+export type StartOptions = {
+	-- load order: id prefixes, earlier first ({ "core_", "prop_" }), or a function (lower number loads first).
+	-- Ids that match nothing load last, alphabetically.
+	priority: ({ string } | (id: string, record: any) -> number)?,
+}
+
+-- SERVER ONLY: load manifest pieces (all, or those `filter(id, record)` accepts) into
+-- ReplicatedStorage[FolderName]. Call it again at any time to add more ids (a different filter, or after
+-- addAssets); ready() is true only while nothing is pending. On a client this never loads anything: it only
+-- watches the replicated folder. Returns at once; ready():Wait() yields until the pieces are in.
+function MeshLibrary.start(filter: ((string, any) -> boolean)?, opts: StartOptions?)
+	if not isLive() then
 		return
 	end
-	task.spawn(MeshLibrary.start, filter)
+	if not isServer() then
+		hookFolder()
+		return
+	end
+	started = true
+	if loadFolder == nil then
+		local RS = gameAny():GetService("ReplicatedStorage")
+		local folder = RS:FindFirstChild(MeshLibrary.FolderName) or Instance.new("Folder")
+		folder.Name = MeshLibrary.FolderName
+		folder.Parent = RS
+		loadFolder = folder
+		folderHooked = true
+	end
+	local data = loadManifest()
+	local ids: { string } = {}
+	for id, rec in data do
+		if not requested[id] and type(rec) == "table" and rec.assetId and (filter == nil or filter(id, rec)) then
+			table.insert(ids, id)
+		end
+	end
+	if #ids == 0 then
+		if pending <= 0 then
+			loadFolder:SetAttribute("Ready", true)
+			markReady()
+		end
+		return
+	end
+	local prio = opts and opts.priority
+	local function rankOf(id: string): number
+		if type(prio) == "function" then
+			return tonumber(prio(id, data[id])) or math.huge
+		elseif type(prio) == "table" then
+			for i, prefix in prio do
+				if string.sub(id, 1, #prefix) == prefix then
+					return i
+				end
+			end
+		end
+		return math.huge
+	end
+	local ranks: { [string]: number } = {}
+	for _, id in ids do
+		ranks[id] = rankOf(id)
+	end
+	table.sort(ids, function(a, b)
+		if ranks[a] ~= ranks[b] then
+			return ranks[a] < ranks[b]
+		end
+		return a < b
+	end)
+	readyFlag = false
+	loadFolder:SetAttribute("Ready", false)
+	for _, id in ids do
+		requested[id] = true
+		pending += 1
+		table.insert(queue, id)
+	end
+	pump()
+end
+
+-- Same as start (kept for callers that used the old non-yielding entry point). Safe on a client: no-op there
+-- apart from watching the replicated folder.
+function MeshLibrary.preload(filter: ((string, any) -> boolean)?, opts: StartOptions?)
+	MeshLibrary.start(filter, opts)
+end
+
+-- All manifest records ({ [pieceId] = { assetId, size, origin, tris, kind } }), including addAssets ones.
+function MeshLibrary.records(): { [string]: any }
+	return loadManifest()
 end
 
 return MeshLibrary
