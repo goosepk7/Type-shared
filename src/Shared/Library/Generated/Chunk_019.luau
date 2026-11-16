@@ -388,7 +388,7 @@ return {
 	{"rusty-spotted cat","AMAJAA","ZfT",2,7,3,"B89A7A","8A4A2A","tiny rusty cat","hiss","Smallest cat on Earth. Feisty.","mammal,predator,wild"},
 	{"rutabaga","IEBAKK","keO",3,7,6,"D8B85A","9A6A8A","big round yellow-purple root","bonk","A turnip with a bigger lunch.","edible,vegetable"},
 	{"rye bread","IMCCII","Gk",4,2,7,"6B4026","A8784A","dark dense oval loaf","thud","Dark, dense, and serious.","edible,giant"},
-	{"ryujin","ABFJCC","kHhB",9,5,9,"0F766E","FACC15","giant sea dragon with pearl crown","roar","Controls the tides with a pearl.","mythical,reptile,royal,aquatic,boss"},
+	{"ryujin","ABFJCC","kHhB",9,5,9,"0F766E","FACC15","giant sea dragon with pearl crown","roar","Controls the tides with a pearl.","mythical,reptile,royal,aquatic,boss,danger"},
 	{"s'more","IABLGI","FcN",2,3,3,"F7F2E8","4A2516","cracker, chocolate, toasted marshmallow","gloop","Campfire perfection. You'll want some more.","edible,sticky"},
 	{"saag","IMBOKI","WF",3,5,3,"3E7A2B","2E5A2E","green leafy curry","chomp","A green power curry.","edible"},
 	{"saber-toothed tiger","ACDJAA","DkfTO",7,6,8,"C8964A","F2E8D8","stocky cat with huge dagger fangs","roar","Two daggers for teeth. Zero dentists.","mammal,extinct,ancient,heavy"},

@@ -84,6 +84,10 @@ local function build(text: string, spell: SpellResult, unknownBelow: number): Wo
 			table.insert(result.tags, "group")
 		end
 	end
+	-- A thing made of a material is a different idea for no-repeat rules ("spaghetti dragon" ~= "dragon").
+	if result.material then
+		result.synonymGroup = result.synonymGroup .. ":" .. result.material
+	end
 	result.input = string.sub(raw, 1, 200)
 	result.confidence = spell.confidence
 	result.source = "Library"

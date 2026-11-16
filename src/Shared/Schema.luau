@@ -246,7 +246,7 @@ function Schema.fallback(input: string?): WordResult
 		durability = 1,
 		count = 1,
 		modifiers = {},
-		signature = true,
+		signature = false,
 		-- Per-phrase group so two different unknown words are not "repeats" of each other.
 		synonymGroup = "fallback:" .. string.lower(text),
 		visual = table.clone(FALLBACK_VISUAL),

@@ -274,7 +274,11 @@ local function spanOptions(tokens: { string }, i: number, j: number, n: number, 
 	-- material (exact span)
 	local matId, matMiss = Library.lookupMaterial(phrase)
 	if matId then
-		table.insert(opts, { kind = "Mod", cost = if matMiss then 0.21 else 0.06, conf = if matMiss then 0.93 else 1, mod = Modifiers.material(matId), fuzzy = false })
+		-- "made of X" / "out of X" / "of X" / "but X": X is the material, never an element or base thing.
+		local prevTok = tokens[i - 1]
+		local slot = prevTok == "of" or prevTok == "but"
+		local matCost = if slot then -0.5 elseif matMiss then 0.21 else 0.06
+		table.insert(opts, { kind = "Mod", cost = matCost, conf = if matMiss then 0.93 else 1, mod = Modifiers.material(matId), fuzzy = false })
 	end
 	if L == 1 then
 		local tok = phrase

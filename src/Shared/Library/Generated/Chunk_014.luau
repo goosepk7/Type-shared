@@ -240,7 +240,7 @@ return {
 	{"magma crab","AABJFA","GKf",3,3,6,"7F1D1D","F97316","crab with a volcanic rock shell","click","Pinches. Burns. Repeat.","fire"},
 	{"magma spike","FACLII","KlT",6,5,5,"D84315","FFAB40","glowing rock spike erupting from ground","crack","Hot and pointy. Worst combo.","fire,sharp"},
 	{"magma storm","FAEEOJ","KkP",8,5,5,"BF360C","5D4037","storm of molten rocks and ash","rumble","Two elements, one bad day.","fire,heavy,storm"},
-	{"magma titan","AAFJNA","KEkS",9,2,9,"450A0A","F97316","volcano-shouldered giant dripping lava","rumble","A walking volcano with no off switch.","elemental,giant,boss,fire"},
+	{"magma titan","AAFJNA","KEkS",9,2,9,"450A0A","F97316","volcano-shouldered giant dripping lava","rumble","A walking volcano with no off switch.","elemental,giant,boss,fire,danger"},
 	{"magnet","BKBLJK","lHN",4,5,6,"C0392B","C9CED4","U-shaped red magnet, silver tips","clank","Attracts trouble. And bolts.","magnetic"},
 	{"magnet ball","BKAG3I","H",2,5,3,"8E9196","C0392B","round magnet sphere","bubble","Clacks onto everything.","magnetic"},
 	{"magnet glove","BKBANK","lHe",4,7,3,"C0392B","C9CED4","glove with horseshoe magnet palm","thud","Yoink metal from afar.","magnetic"},

@@ -297,7 +297,7 @@ return {
 	{"cat lady","LMCJNA","dh",3,4,4,"A855F7","F59E0B","cardigan covered in fur, cat carrier","meow","Summons 47 cats.","silly,cat"},
 	{"cat tower","EMBCII","GdSc",1,1,3,"BCAAA4","8D6E63","carpeted tower with perches","thud","Built for cats. Ruled by cats.","silly,cute"},
 	{"cat toy","BMALKI","dc",1,7,1,"7D3CB5","8B5A2B","stick with dangling feather","squeak","Irresistible. Even to bosses.","pet,toy"},
-	{"cataclysm","HLFNOI","EkPO",9,4,7,"4A148C","FF6D00","whole area cracks, fire and violet lightning","boom","All the bad things at once.","explosive"},
+	{"cataclysm","HLFNOI","EkPO",9,4,7,"4A148C","FF6D00","whole area cracks, fire and violet lightning","boom","All the bad things at once.","explosive,danger"},
 	{"catacombs","MIENII","jSh",5,1,9,"BCAAA4","3E2723","narrow tunnels lined with skulls","rumble","Bones to the left. Bones to the right.","spooky,undead"},
 	{"catalpa","NGDCMI","GWkS",3,1,6,"6D4C41","F5F5F5","big heart leaves, long bean pods","rustle","Grows cigars. Not real ones.","plant,tree"},
 	{"catamaran","DFCKHC","DkgB",4,7,5,"F5F5F5","26C6DA","twin hulls joined by a deck, tall sail","splash","Two hulls. Twice the splash.","vehicle,aquatic"},
@@ -401,6 +401,6 @@ return {
 	{"charisma","KHBOKJ","jc",2,5,2,"FF4081","FFD54F","sparkly confident aura","ding","Everyone suddenly likes you.","cute"},
 	{"charm","KLBAKB","jcb",3,7,1,"FF80AB","FFFFFF","floating pink heart sparkle","chime","Aww. They like you now.","cute"},
 	{"charon","MLCGKJ","kRe",5,4,7,"9E9E9E","795548","grey moon with a reddish cap","twinkle","Pluto's best friend. Very loyal.","space,star"},
-	{"charybdis","ABFNOK","kSHB",9,3,9,"0C4A6E","BAE6FD","ocean whirlpool with a gaping maw","splash","A whirlpool that's always hungry.","mythical,aquatic"},
+	{"charybdis","ABFNOK","kSHB",9,3,9,"0C4A6E","BAE6FD","ocean whirlpool with a gaping maw","splash","A whirlpool that's always hungry.","mythical,aquatic,danger"},
 	{"chase","KMCAKB","DQ",4,8,2,"FF7043","FFFFFF","glowing streak homing on target","zoom","You can run. Not far.","speed"},
 }

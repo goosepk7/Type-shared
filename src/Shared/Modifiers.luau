@@ -175,6 +175,15 @@ function Modifiers.parse(tokens: { string }): ({ string }, { Modifier })
 	while i <= #tokens do
 		local m, len = Modifiers.match(tokens, i)
 		local mat, mlen = Modifiers.matchMaterial(tokens, i)
+		-- "made of X", "out of X", "of X", "but X": X is a material whenever it is one.
+		local prev = tokens[i - 1]
+		local materialSlot = prev == "of" or prev == "but"
+		if mat and materialSlot then
+			table.insert(mods, mat)
+			table.insert(consumed, { word = table.concat(tokens, " ", i, i + mlen - 1), index = #mods })
+			i += mlen
+			continue
+		end
 		-- a library thing spanning more tokens beats a shorter modifier ("laser beam" is a thing)
 		local thingLen = 0
 		for l = math.min(4, #tokens - i + 1), 1, -1 do

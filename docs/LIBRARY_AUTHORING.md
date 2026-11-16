@@ -25,7 +25,7 @@ Rules:
 - `pc`/`sc`: real, tasteful colours for the thing (a shark is slate grey-blue + off-white, not element colour).
 - `t` tags (<= 8): useful gameplay tags such as mythical, extinct, undead, robot, mechanical, edible, sweet, royal,
   aquatic, insect, reptile, bird, mammal, plant, space, holiday, sport, music, silly, meme, spooky, cute, ancient,
-  explosive, sharp, heavy, flammable, frozen, magnetic, holy.
+  explosive, sharp, heavy, flammable, frozen, magnetic, holy, danger (world-ending power 9-10 things the games telegraph or limit; added automatically for power >= 9).
 - `sig: 1` for iconic, high-fantasy-value words that deserve hand-made visuals (~5% of each domain).
 - Safe for a kids' platform: no real people, brands/trademarks, real tragedies, drugs, sexual content, gore, slurs,
   real-world weapons by model name (say "rifle", never a brand/model). Cartoon violence is fine.
