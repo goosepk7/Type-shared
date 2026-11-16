@@ -53,9 +53,12 @@ The build runs these stages in order:
    nothing.
 5. **Style.**
    - **Solid:** colours come from the word's own colours, and the material's colour and Roblox material win.
-   - **Spectral:** each big mass becomes a ForceField shell with a smaller Neon core. Other parts get layered Neon
-     transparency. A Spectral summon gets a Highlight, Trails on extremities, element particles and a core
-     PointLight.
+   - **Spectral:** the silhouette stays solid. Body, head and torso masses, limbs, necks, tails, wings, horns and
+     held / worn parts are near-opaque SmoothPlastic in the element's colours (wing membranes and fins at most
+     0.25 transparent); only small detail is layered Neon, and pure energy (orb cores) keeps the ForceField shell
+     around a smaller Neon core. Glow is an accent: one ForceField aura shell on the biggest mass, the Highlight
+     rim, glowing eyes, Trails on extremities, element particles and a core PointLight. (A body made of faint
+     shells around small cores read as a firefly, not a dragon.)
    - **Split element:** when `secondaryElement` is set, the left half takes the second element's palette, and
      the second element adds its own particles.
 6. **Finishing passes.**
@@ -107,8 +110,14 @@ Rules that apply to every material:
   Nothing decorative is flush with a face: insets and proud details are always offset.
 - **Swarms** have hero units in front (full detail: bee bands and wings, bat membranes, firefly bodies) and a
   depth-sorted cloud of cheaper fillers.
-- **Spectral** masses get a ForceField shell, a Neon core with a strictly smaller radius, and an aura shell on the
-  biggest mass.
+- **Spectral** masses are solid; the biggest one gets a ForceField aura shell of strictly larger radii, and orb
+  cores keep a ForceField shell around a strictly smaller Neon core.
+- **Bat / dragon wings** are an arm (two bones) plus ONE membrane per side in the plane of the spread wing
+  (`Membrane`, sculpt `s_wing_bat`), budgeted right after the upper arm so a dragon never loses its wings.
+- **Vortex** (tornado): every funnel ring is its own rotor under Body (`rig.rotors`), odd rings one way and even
+  rings the other at different speeds; rings are oval, off-axis and carry wind streaks so the rotation reads;
+  two counter-orbiting debris rings at the base; streak, wisp and dust emitters and trails ride the spinning
+  parts. The ring that carries a face does not spin.
 
 ## Faces
 
@@ -135,6 +144,51 @@ How a word finds its signature:
 - A signature recolours to the word's own colours and element. Materials, moods and accents apply on top, so
   "spaghetti dragon" is the dragon woven from noodles.
 - A signature can also be backed by an uploaded mesh (see `docs/platform/summon.md`).
+
+## Sculpted meshes
+
+Blueprint parts carry an optional piece id (`part.mesh`) from the shared mesh library
+(`src/Shared/Meshes`, sculpted by `tools/meshgen`). `Instantiate` shows the piece as a MeshPart when its asset is
+loaded and builds the primitive otherwise, so the primitive build is always the complete fallback.
+
+- **Choosing pieces is pure data.** `Summon/MeshMap.luau` runs after the plan: (1) hints from the generator
+  (`mesh = "id"` on a part spec, `mesh = false` to opt out, `B:sculpt(lead, id, members)`), (2) hero pieces by
+  role + name + shape (`MeshMap.Hero`: rocket body, nose, nozzle, gun barrel, muzzle, treads, saucer, tower drum,
+  roof cone, mantle, wizard hat, beard, robe, helmet, pauldron, rocks, rain drops, flame licks, sword blade) and
+  by name (`MeshMap.Named`: cloud puffs, canopies, turret ...), (3) role + shape rules (limbs, tails, horns,
+  claws, teeth, fins, ears, feathers, fists, hooves, wheels) and bevelled blocks / cylinders for every other
+  hard-surface part. Nothing random is drawn, no part moves: `Summon.blueprint(r, { meshes = false })` gives the
+  identical primitive build without mesh fields, and `stats.meshParts` counts the sculpted parts.
+- **Fit.** A box piece fills the part's box (MeshPart.Size = part size). Head and body sculpts are *unit*
+  pieces authored in the lead ellipsoid's unit frame, so they scale with every seed and size; the sculpt contains
+  the lead ellipsoid untouched where the face goes, so eyes, lids and mouths sit on it. Primitives a sculpt
+  absorbs (snout, chest, haunch, lower beak) are its group members (`part.meshOf = lead name`): they are built
+  only while the lead's primitive is shown. Left copies of mirrored pairs use the `_l` twin of asymmetric pieces.
+- **Materials and accents.** Pieces carry only greyscale baked AO in vertex colour, which multiplies
+  `MeshPart.Color`: palette colours, Roblox materials, moods and faces are unchanged. Materials that rebuild a
+  surface out of units (strands, weave, bricks, panels, swarm, shards, pile) and accents that reshape a part keep
+  the primitive (`MeshMap.validate`); a sculpt group falls back as a whole. Faces (eyes, pupils, brows, lids,
+  mouths), glows, cores, shells, rings and paper-thin or translucent sheets are never meshed.
+- **Spectral.** The sculpt is the solid body; the ForceField aura (and the Neon core of an orb shell) reuse the
+  piece at their own, distinct sizes, so no two layers are coincident.
+- **Loading.** `Summon.preloadMeshes()` (or the first build) starts `MeshLibrary.preload` for the "summon" set plus
+  `MeshMap.Shared` pieces of the "td" set. It never yields a build: a model built early has
+  `MeshPending = true` and `Instantiate.upgradeMeshes(model)` swaps its parts when the library is ready (wired
+  automatically in a live game). `opts.meshes = false` forces primitives.
+- **Z-fighting.** The checker keeps testing every part as its primitive, which is what the fallback renders, and
+  that verdict covers the mesh build: box pieces that keep flat faces (bevelled blocks, cylinders, treads, tower
+  drums; listed per piece as `flat` in the manifest) keep them exactly on the primitive's faces, so two meshes
+  are coplanar only where their primitives were; organic and unit sculpts have no planar box faces, they sit
+  inside or bulge slightly past the primitive's curved surface, where surfaces intersect at an angle instead
+  of lying coincident. A mesh next to a still-primitive neighbour is the same case.
+- **Budgets.** 81 summon pieces, 39.2k triangles in total; a piece costs 20-1500 triangles (blocks about 300,
+  limbs about 300, heads 600-1300, bodies up to 1500). The part budget already caps a summon's part count, and
+  sculpt groups remove parts, so a 50-part hero stays under about 20k triangles.
+- **Offline.** `lune run tools/render_blueprint beforeafter out.png` ray-traces the same blueprints with and
+  without the pieces (`docs/img/mesh_before_after.png`); `scale <style> <words> out.png` draws summons next to a
+  5 stud character-height figure (`docs/img/spectral_scale.png`); the contact sheet shows the mesh build
+  (`SUMMON_MESH=0` for primitives). `tests/specs/mesh.spec.luau` checks the manifest, that every referenced
+  piece exists, determinism, and both Instantiate paths.
 
 ## Part counts
 

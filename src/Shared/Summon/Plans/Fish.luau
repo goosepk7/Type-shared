@@ -126,7 +126,7 @@ return function(B: any, ctx: any)
 	B.boneIndex.Body.pos = { 0, y, 0 }
 	-- body: front mass + tapering rear on the first tail bone (so the whole back half undulates)
 	local hc, hr = { 0, y + H * 0.02, -L * 0.18 }, { W * 0.5, H * 0.5, L * 0.36 }
-	B:ell(hr[1] * 2, hr[2] * 2, hr[3] * 2, at(hc[1], hc[2], hc[3]), { col = "primary", mat = "skin", pri = 1, role = "body", name = "Body" })
+	B:ell(hr[1] * 2, hr[2] * 2, hr[3] * 2, at(hc[1], hc[2], hc[3]), { col = "primary", mat = "skin", pri = 1, role = "body", name = "Body", mesh = "fish_body" })
 	if detail >= 1 then
 		B:ell(W * 0.8, H * 0.55, L * 0.62, at(0, y - H * 0.2, -L * 0.12), { col = "belly", mat = "skin", pri = 1.9, role = "detail", name = "Belly" })
 	end
@@ -134,7 +134,7 @@ return function(B: any, ctx: any)
 	local t2 = B:bone("Tail2", t1, 0, y, L * 0.38)
 	B:addRig("tail", t1)
 	B:addRig("tail", t2)
-	B:ell(W * 0.72, H * 0.72, L * 0.55, at(0, y, L * 0.22), { col = "primary", mat = "skin", bone = t1, pri = 1.1, role = "body", name = "Rear" })
+	B:ell(W * 0.72, H * 0.72, L * 0.55, at(0, y, L * 0.22), { col = "primary", mat = "skin", bone = t1, pri = 1.1, role = "body", name = "Rear", mesh = "fish_rear" })
 	-- tail fin
 	if whale then
 		B:mell(L * 0.32, 0.12, L * 0.16, at(L * 0.14, y + 0.05, L * 0.55, 0, rad(-25), 0), { col = "primary", mat = "skin", bone = t2, pri = 1.3, role = "fin", name = "Fluke#", trail = true })

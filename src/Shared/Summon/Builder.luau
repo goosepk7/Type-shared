@@ -13,7 +13,7 @@ type Frame = Geom.Frame
 
 export type PartSpec = {
 	name: string?,
-	shape: string, -- Block | Ball | Cylinder | Wedge | CornerWedge | Ellipsoid | Mesh
+	shape: string, -- Block | Ball | Cylinder | Wedge | CornerWedge | Ellipsoid
 	size: { number },
 	cf: Frame,
 	col: any?, -- colour key or {r,g,b}
@@ -23,8 +23,13 @@ export type PartSpec = {
 	pair: string?, -- parts sharing a pair id are kept or dropped together
 	role: string?, -- "body","head","eye","pupil","shine","limb","wing","tail","spike","detail","core","shell","wheel","glow"
 	tr: number?, -- transparency
-	meshId: string?,
-	textureId: string?,
+	-- Sculpted look (docs/SUMMON.md "Sculpted meshes"). `mesh` is a piece id from Meshes/MeshAssets: Instantiate
+	-- swaps the primitive for that MeshPart when the asset is loaded, placed in THIS part's box (Size + CFrame).
+	-- false opts the part out of MeshMap's defaults. `meshL` is the piece for the mirrored (left) copy.
+	-- `meshOf` names the lead part whose sculpt already contains this part (not built while that mesh shows).
+	mesh: (string | boolean)?,
+	meshL: string?,
+	meshOf: any?,
 	trail: boolean?, -- extremity: Spectral style may hang a Trail here
 	glow: boolean?, -- emissive accent (Neon) in both styles
 	noCore: boolean?, -- Spectral: never give this part an inner core
@@ -126,6 +131,11 @@ function Builder.mirror(self: Builder, spec: PartSpec): (Part, Part)
 	l.bone = spec.bone and (string.gsub(spec.bone, "#", "L")) or nil
 	l.cf = Geom.mirrorX(spec.cf)
 	l.size = table.clone(spec.size)
+	l.mirrored = true
+	if spec.meshL then
+		l.mesh = spec.meshL
+	end
+	r.meshL, l.meshL = nil, nil
 	return self:part(r), self:part(l)
 end
 
@@ -169,6 +179,7 @@ function Builder.limb(self: Builder, a: { number }, b: { number }, w: number, o:
 	local d = s.depth or w
 	s.depth = nil
 	s.shape, s.size, s.cf = "Ellipsoid", { w, len * (1 + (over or 0.18)), d }, f
+	s.seg = "Y" -- local +Y runs from a to b (MeshMap picks tapered pieces by this)
 	return self:part(s)
 end
 
@@ -225,6 +236,7 @@ function Builder.mlimb(self: Builder, a: { number }, b: { number }, w: number, o
 	local d = s.depth or w
 	s.depth = nil
 	s.shape, s.size, s.cf = "Ellipsoid", { w, len * (1 + (over or 0.18)), d }, f
+	s.seg = "Y"
 	return self:mirror(s)
 end
 
@@ -240,6 +252,20 @@ function Builder.mbeam(self: Builder, a: { number }, b: { number }, w: number, d
 	local s = table.clone(o or {}) :: any
 	s.shape, s.size, s.cf = "Block", { w, len, dpt }, f
 	return self:mirror(s)
+end
+
+-- Sculpt group: `lead` shows mesh piece `pieceId` (placed in the lead's own box, so it follows the lead through
+-- scaling, the z-fighting fixer and animation) and `members` are primitives the sculpt already contains: they
+-- stay in the blueprint as the fallback and are skipped by Instantiate while the lead's mesh shows.
+function Builder.sculpt(self: Builder, lead: Part, pieceId: string, members: { Part }?): Part
+	local l = lead :: any
+	l.mesh = pieceId
+	for _, m in members or {} do
+		if m ~= lead then
+			(m :: any).meshOf = lead
+		end
+	end
+	return lead
 end
 
 -- Rig metadata for the animator ----------------------------------------------------------------------------

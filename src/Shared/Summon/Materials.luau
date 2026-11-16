@@ -668,6 +668,8 @@ local function paletteOf(m: any): { any }
 end
 
 -- Applies material m to the builder's parts. room = extra parts the construction may add.
+local SURFACE: { [string]: boolean } = { Strands = true, Woven = true, Bricks = true, Panels = true, Swarm = true, Shards = true, Pile = true }
+
 function Materials.apply(B: any, m: any, room: number, ctx: any): any
 	if m == nil then
 		return nil
@@ -755,6 +757,11 @@ function Materials.apply(B: any, m: any, room: number, ctx: any): any
 		env.first = i == 1
 		if n > 0 or construction == "Inflated" or construction == "Panels" then
 			fn(p, n, env)
+			-- constructions that rebuild a mass out of units (strands, bricks, plates, shards, a pile, a swarm) sit on
+			-- the primitive's own surface: that mass keeps its primitive instead of a sculpted mesh
+			if SURFACE[construction] then
+				p.noMesh = true
+			end
 		end
 		if construction == "Wobble" or construction == "Liquid" then
 			roundify(p)

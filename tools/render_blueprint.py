@@ -5,13 +5,64 @@ Each blueprint becomes a tile with four orthographic views: front (looking at th
 top (from +Y) and a 3/4 view, flat-shaded with a key light. Spectral parts are drawn translucent/additive-ish.
 
 usage: python3 tools/render_blueprint.py blueprints.json out.png [--cols N] [--tile PX] [--views front,side,top,iso]
+                                         [--mesh] [--rt]
+
+--mesh  draw parts that carry a sculpted piece (`mesh`) with the real triangle mesh from tools/meshgen/out
+        (build it first: python3 tools/meshgen/build.py) and hide the primitives a sculpt contains (`meshOf`),
+        exactly as Instantiate does when the assets are loaded. A blueprint with "meshes": false stays primitive.
+--rt    ray-trace Solid tiles with tools/meshgen/rt.py (smooth normals, shadows, AO, baked vertex AO); Spectral
+        tiles keep the additive painter below.
 """
 import json
 import math
 import sys
 
+import os
+
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
+
+USE_MESH = False
+USE_RT = False
+_rt = None
+
+
+def rt_mod():
+    """tools/meshgen/rt.py (needs trimesh + embreex); imported only for --mesh / --rt."""
+    global _rt
+    if _rt is None:
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "meshgen"))
+        import rt
+
+        _rt = rt
+    return _rt
+
+
+def visible_parts(bp):
+    """Parts as Instantiate builds them: with --mesh, a part whose piece exists becomes that mesh (in the box
+    MeshLibrary.fit gives it) and the members of a shown sculpt are dropped."""
+    parts = [p for p in bp["parts"] if p.get("transparency", 0) < 0.99]
+    if not USE_MESH or bp.get("meshes") is False:
+        return parts
+    rt = rt_mod()
+    shown = {}
+    for p in parts:
+        if p.get("mesh"):
+            box = rt.piece_box(p["mesh"], p["size"], p["cf"])
+            if box:
+                shown[p["name"]] = box
+    out = []
+    for p in parts:
+        if p.get("meshOf") in shown:
+            continue
+        if p["name"] in shown:
+            q = dict(p)
+            q["size"], q["cf"] = shown[p["name"]]
+            q["piece"] = p["mesh"]
+            out.append(q)
+        else:
+            out.append(p)
+    return out
 
 SS = 2  # supersampling
 
@@ -83,7 +134,10 @@ WEDGE_T = [(0, 1, 2), (0, 2, 3), (3, 2, 5), (3, 5, 4), (1, 5, 2), (0, 3, 4), (0,
 def part_tris(p):
     shape = p["shape"]
     size = np.array(p["size"], dtype=float)
-    if shape in ("Ball", "Ellipsoid"):
+    if p.get("piece"):
+        v, _n, f, _ao = rt_mod().piece_mesh(p["piece"])
+        t = [tuple(x) for x in f]
+    elif shape in ("Ball", "Ellipsoid"):
         v, t = SPHERE
         if shape == "Ball":
             size = np.array([min(size)] * 3)
@@ -137,10 +191,8 @@ def render_view(bp, view, size, bg=(40, 43, 52)):
     members = bp.get("members") or [None]
     for m in members:
         mp, mr = (np.zeros(3), np.eye(3)) if m is None else frame_matrix(m)
-        for p in bp["parts"]:
+        for p in visible_parts(bp):
             tr = p.get("transparency", 0)
-            if tr >= 0.99:
-                continue
             world, tris = part_tris(p)
             world = world @ mr.T + mp
             cam = world @ R.T
@@ -236,16 +288,47 @@ def render_view(bp, view, size, bg=(40, 43, 52)):
     return img.resize((size, size), Image.LANCZOS)
 
 
+RT_VIEWS = {"front": (0, 6), "side": (90, 6), "top": (0, 88), "iso": (42, 20)}
+
+
+def render_view_rt(bp, view, size):
+    """Ray-traced view (Solid look): smooth shading, soft shadow, ambient occlusion, baked mesh AO."""
+    rt = rt_mod()
+    parts = []
+    members = bp.get("members") or [None]
+    for m in members:
+        mp, mr = (np.zeros(3), np.eye(3)) if m is None else frame_matrix(m)
+        for p in visible_parts(bp):
+            pos, rot = frame_matrix(p["cf"])
+            pos = mr @ pos + mp
+            rot = mr @ rot
+            parts.append({
+                "s": "Mesh" if p.get("piece") else p["shape"], "piece": p.get("piece", ""), "size": p["size"],
+                "cf": list(pos) + list(rot.reshape(-1)), "col": p.get("colour", [0.7, 0.7, 0.7]),
+                "tr": p.get("transparency", 0), "mat": p.get("material", "SmoothPlastic"),
+            })
+    if not parts:
+        return Image.new("RGB", (size, size), (40, 43, 52))
+    az, el = RT_VIEWS.get(view, RT_VIEWS["iso"])
+    return Image.fromarray(rt.render(parts, az, el, size, ss=2, ao_rays=6, ground=True))
+
+
 def tile(bp, tile_px, views):
     vsz = tile_px
     lab = 34
     img = Image.new("RGB", (vsz * len(views), vsz + lab), (28, 30, 36))
     for i, v in enumerate(views):
-        r = render_view(bp, v, vsz, (40, 43, 52) if i % 2 == 0 else (44, 47, 57))
+        if USE_RT and bp.get("style") != "Spectral":
+            r = render_view_rt(bp, v, vsz)
+        else:
+            r = render_view(bp, v, vsz, (40, 43, 52) if i % 2 == 0 else (44, 47, 57))
         img.paste(r, (i * vsz, lab))
     d = ImageDraw.Draw(img)
     st = bp.get("stats", {})
+    nmesh = sum(1 for p in visible_parts(bp) if p.get("piece"))
     text = f'{bp["id"]}  [{bp["style"]} {bp["size"]}]  {bp.get("builder","")}  parts {st.get("parts")}/{st.get("budget")}  drop {st.get("dropped")}  fix {st.get("fixes")}'
+    if USE_MESH:
+        text = f'{bp["id"]}  [{bp["style"]} {bp["size"]}]  {len(visible_parts(bp))}p ({nmesh} mesh)  ' + ("primitive parts" if bp.get("meshes") is False else bp.get("builder", ""))
     try:
         font = ImageFont.truetype("DejaVuSans.ttf", 13)
     except Exception:
@@ -281,6 +364,9 @@ def main():
         tpx = int(args[args.index("--tile") + 1])
     if "--views" in args:
         views = args[args.index("--views") + 1].split(",")
+    global USE_MESH, USE_RT
+    USE_MESH = "--mesh" in args
+    USE_RT = "--rt" in args
     with open(src) as f:
         bps = json.load(f)
     tiles = [tile(bp, tpx, views) for bp in bps]

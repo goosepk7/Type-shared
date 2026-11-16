@@ -41,7 +41,7 @@ function Heads.mammal(B: any, o: any, t: any): HeadInfo
 	local c = { p[1], p[2] + s * 0.22, p[3] - s * 0.2 }
 	local long = o.long or 1
 	local r = { s * 0.5, s * 0.46, s * 0.48 }
-	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "fur", bone = bone, pri = 1.1, role = "head", name = "Head" })
+	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "fur", bone = bone, pri = 1.1, role = "head", name = "Head", mesh = "s_head_round" })
 	local mz = c[3] - s * 0.42 * long
 	local mr = { s * 0.32, s * 0.25, s * 0.3 * long }
 	local mc = { c[1], c[2] - s * 0.18, mz }
@@ -66,14 +66,16 @@ function Heads.reptile(B: any, o: any, t: any): HeadInfo
 	local detail = t.detail or 2
 	local c = { p[1], p[2] + s * 0.18, p[3] - s * 0.3 }
 	local r = { s * 0.43, s * 0.36, s * 0.5 }
-	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "scale", bone = bone, pri = 1.1, role = "head", name = "Head" })
+	local head = B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "scale", bone = bone, pri = 1.1, role = "head", name = "Head" })
 	local sc = { c[1], c[2] - s * 0.04, c[3] - s * 0.66 }
 	local sr = { s * 0.31, s * 0.22, s * 0.48 }
-	B:ell(sr[1] * 2, sr[2] * 2, sr[3] * 2, at(sc[1], sc[2], sc[3], rad(4), 0, 0), { col = "primary", mat = "scale", bone = bone, pri = 1.3, role = "snout", name = "Snout" })
+	local snout = B:ell(sr[1] * 2, sr[2] * 2, sr[3] * 2, at(sc[1], sc[2], sc[3], rad(4), 0, 0), { col = "primary", mat = "scale", bone = bone, pri = 1.3, role = "snout", name = "Snout" })
+	-- one sculpt for skull + snout (same colour, same bone): brow ridges, nostrils, cheek plates
+	B:sculpt(head, "s_head_reptile", { snout })
 	local jawBone = B:bone("Jaw", bone, c[1], c[2] - s * 0.18, c[3] - s * 0.15)
 	B:setRig("jaw", jawBone)
 	if detail >= 1 then
-		B:ell(s * 0.54, s * 0.24, s * 0.92, at(c[1], c[2] - s * 0.3, c[3] - s * 0.62, rad(-4), 0, 0), { col = "belly", mat = "scale", bone = jawBone, pri = 1.7, role = "jaw", name = "Jaw" })
+		B:ell(s * 0.54, s * 0.24, s * 0.92, at(c[1], c[2] - s * 0.3, c[3] - s * 0.62, rad(-4), 0, 0), { col = "belly", mat = "scale", bone = jawBone, pri = 1.7, role = "jaw", name = "Jaw", mesh = "s_jaw" })
 	end
 	if detail >= 3 then
 		B:mball(s * 0.1, at(s * 0.12, c[2] + s * 0.13, c[3] - s * 1.05), { col = "darker", mat = "skin", bone = bone, pri = 4.2, role = "nose" })
@@ -98,12 +100,15 @@ function Heads.bird(B: any, o: any, t: any): HeadInfo
 	local detail = t.detail or 2
 	local c = { p[1], p[2] + s * 0.3, p[3] - s * 0.12 }
 	local r = { s * 0.48, s * 0.48, s * 0.5 }
-	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "fur", bone = bone, pri = 1.1, role = "head", name = "Head" })
+	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "fur", bone = bone, pri = 1.1, role = "head", name = "Head", mesh = "s_head_bird" })
 	local hooked = t.mythical or (t.power or 5) >= 6
-	B:ell(s * 0.34, s * 0.3, s * (if hooked then 0.62 else 0.7), at(c[1], c[2] - s * 0.06, c[3] - s * 0.6, rad(if hooked then -14 else -4), 0, 0), { col = "beak", mat = "hard", bone = bone, pri = 1.3, role = "beak", name = "Beak" })
+	local beak = B:ell(s * 0.34, s * 0.3, s * (if hooked then 0.62 else 0.7), at(c[1], c[2] - s * 0.06, c[3] - s * 0.6, rad(if hooked then -14 else -4), 0, 0), { col = "beak", mat = "hard", bone = bone, pri = 1.3, role = "beak", name = "Beak" })
+	local beakLow = nil
 	if detail >= 2 then
-		B:ell(s * 0.26, s * 0.16, s * 0.45, at(c[1], c[2] - s * 0.19, c[3] - s * 0.5, rad(6), 0, 0), { col = "beak", mat = "hard", bone = bone, pri = 2.8, role = "beak", name = "BeakLow" })
+		beakLow = B:ell(s * 0.26, s * 0.16, s * 0.45, at(c[1], c[2] - s * 0.19, c[3] - s * 0.5, rad(6), 0, 0), { col = "beak", mat = "hard", bone = bone, pri = 2.8, role = "beak", name = "BeakLow" })
 	end
+	-- both mandibles as one sculpt on the upper beak's frame
+	B:sculpt(beak, "s_beak", { beakLow })
 	local kind = eyeKind(t, o)
 	Face.build(B, {
 		face = { kind = "ellipsoid", c = c, r = r }, bone = bone, mood = mood(B), detail = detail, kind = kind,
@@ -118,7 +123,7 @@ function Heads.bug(B: any, o: any, t: any): HeadInfo
 	local detail = t.detail or 2
 	local c = { p[1], p[2] + s * 0.05, p[3] - s * 0.28 }
 	local r = { s * 0.45, s * 0.39, s * 0.4 }
-	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = o.col or "dark", mat = "hard", bone = bone, pri = 1.1, role = "head", name = "Head" })
+	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = o.col or "dark", mat = "hard", bone = bone, pri = 1.1, role = "head", name = "Head", mesh = "s_head_bug" })
 	local m = mood(B)
 	Face.build(B, {
 		face = { kind = "ellipsoid", c = c, r = r }, bone = bone, mood = m, detail = detail,
@@ -161,7 +166,8 @@ function Heads.beast(B: any, o: any, t: any): HeadInfo
 	local m = mood(B)
 	local c = { p[1], p[2] + s * 0.16, p[3] - s * 0.14 }
 	local r = { s * A.cran[1], s * A.cran[2], s * A.cran[3] }
-	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "fur", bone = bone, pri = 1.1, role = "head", name = "Head" })
+	local head = B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "fur", bone = bone, pri = 1.1, role = "head", name = "Head",
+		mesh = if o.arch == "feline" then "s_head_feline" else "s_head_round" })
 	local mouthFace = { kind = "ellipsoid", c = c, r = r }
 	local tip = { c[1], c[2] - s * 0.05, c[3] - r[3] } -- front-most point of the face (nose goes here)
 	local mouthY = -r[2] * 0.45
@@ -169,8 +175,15 @@ function Heads.beast(B: any, o: any, t: any): HeadInfo
 		local sn = A.snout
 		local sc = { c[1], c[2] + s * sn[1], c[3] + s * sn[2] }
 		local sr = { s * sn[3], s * sn[4], s * sn[5] }
-		B:ell(sr[1] * 2, sr[2] * 2, sr[3] * 2, at(sc[1], sc[2], sc[3], rad(-(sn[6] or 0)), 0, 0),
-			{ col = o.snoutCol or (if o.arch == "ursine" or o.arch == "rodent" then "belly" else "primary"), mat = "fur", bone = bone, pri = 1.15, role = "snout", name = "Snout" })
+		local snoutCol = o.snoutCol or (if o.arch == "ursine" or o.arch == "rodent" then "belly" else "primary")
+		local snout = B:ell(sr[1] * 2, sr[2] * 2, sr[3] * 2, at(sc[1], sc[2], sc[3], rad(-(sn[6] or 0)), 0, 0),
+			{ col = snoutCol, mat = "fur", bone = bone, pri = 1.15, role = "snout", name = "Snout" })
+		-- skull + same-coloured snout as one sculpt (the archetype fixes their layout in the head's unit frame)
+		if snoutCol == "primary" and (o.arch == nil or o.arch == "canine" or ARCH[o.arch] == nil) then
+			B:sculpt(head, "s_head_canine", { snout })
+		elseif snoutCol == "primary" and o.arch == "equine" then
+			B:sculpt(head, "s_head_equine", { snout })
+		end
 		local pitch = rad(sn[6] or 0)
 		tip = { sc[1], sc[2] + sr[2] * 0.55 - math.sin(pitch) * sr[3] * 0.9, sc[3] - math.cos(pitch) * sr[3] * 0.92 }
 		if sn[6] == 0 or sn[6] == nil or sn[6] < 10 then
@@ -252,7 +265,7 @@ function Heads.person(B: any, o: any, t: any): HeadInfo
 	local detail = t.detail or 2
 	local c = { p[1], p[2] + s * 0.5, p[3] }
 	local r = { s * 0.46, s * 0.5, s * 0.45 }
-	B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = o.skin or "skin", mat = "skin", bone = bone, pri = 1.1, role = "head", name = "Head" })
+	local head = B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = o.skin or "skin", mat = "skin", bone = bone, pri = 1.1, role = "head", name = "Head", mesh = "s_head_person" })
 	local kind = o.eyes or (if t.robot or t.undead then "glow" else "cute")
 	Face.build(B, {
 		face = { kind = "ellipsoid", c = c, r = r }, bone = bone, mood = mood(B), detail = detail, kind = kind,
@@ -261,7 +274,8 @@ function Heads.person(B: any, o: any, t: any): HeadInfo
 	})
 	if detail >= 3 and not o.noNose then
 		local np = Face.onEllipsoid(c, r, 0, -s * 0.08)
-		B:ell(s * 0.13, s * 0.17, s * 0.14, at(np[1], np[2], np[3] + s * 0.02), { col = o.skin or "skin", mat = "skin", bone = bone, pri = 3.8, role = "nose" })
+		local nose = B:ell(s * 0.13, s * 0.17, s * 0.14, at(np[1], np[2], np[3] + s * 0.02), { col = o.skin or "skin", mat = "skin", bone = bone, pri = 3.8, role = "nose" })
+		B:sculpt(head, "s_head_person", { nose })
 	end
 	B:socket("mouth", at(c[1], c[2] - s * 0.25, c[3] - s * 0.45), bone)
 	return { top = { c[1], c[2] + s * 0.5, c[3] }, earX = s * 0.46, earY = c[2], earZ = c[3], mouth = { c[1], c[2] - s * 0.25, c[3] - s * 0.45 }, c = c, s = s, r = r } :: any

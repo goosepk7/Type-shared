@@ -237,36 +237,26 @@ function Parts.wings(B: any, o: any)
 	for i, tip in (if detail >= 3 then tips else {}) do
 		B:mrod(wrist, tip, span * 0.035, { col = "dark", mat = "skin", bone = "Wing#", pri = pri + 2 + i * 0.2, role = "wing", trail = i == 1 })
 	end
-	-- membrane: thin blocks spanning between spars, each tilted a little differently (never coplanar)
-	local root = { x + span * 0.08, y - span * 0.04, z + span * 0.32 }
-	local panels = {
-		{ wrist, tips[1], tips[2] },
-		{ wrist, tips[2], tips[3] },
-		{ elbow, wrist, tips[3], root },
-	}
-	for i, poly in panels do
-		-- centroid and orientation from the polygon
-		local cx, cy, cz, n = 0, 0, 0, #poly
-		for _, p in poly do
-			cx += p[1] / n
-			cy += p[2] / n
-			cz += p[3] / n
-		end
-		-- extents in x/z
-		local minx, maxx, minz, maxz = math.huge, -math.huge, math.huge, -math.huge
-		for _, p in poly do
-			minx = math.min(minx, p[1])
-			maxx = math.max(maxx, p[1])
-			minz = math.min(minz, p[3])
-			maxz = math.max(maxz, p[3])
-		end
-		local w = (maxx - minx) * 0.92
-		local dpt = (maxz - minz) * 0.82
-		-- tilt follows the vertical drop across the panel
-		local slope = math.atan2(poly[1][2] - poly[#poly][2], maxx - minx + 1e-3) * 0.6
-		B:mell(w, span * (0.025 + i * 0.004), dpt, at(cx, cy - span * 0.03 * i, cz, rad(3 * i), rad(-6 + i * 4), slope + rad(2 * i)),
-			{ col = "membrane", mat = "skin", bone = "Wing#", pri = pri + 0.4 + i * 0.6, role = "wing", tr = o.membraneTr })
-	end
+	-- membrane: ONE taut skin hanging from the arm, in the plane of the spread wing (root at the shoulder, tip at
+	-- the longest finger, leading edge along the arm bones). It is the wing's silhouette, so it survives the part
+	-- budget right after the upper arm; bare wing bones read as an insect. Sculpt: s_wing_bat (ribs, scalloped
+	-- trailing edge); primitive fallback: a thin ellipsoid sail.
+	local tip, back = tips[1], tips[3]
+	local mx, my, mz = (wrist[1] + tip[1]) / 2 - x, (wrist[2] + tip[2]) / 2 - y, (wrist[3] + tip[3]) / 2 - z
+	local ml = math.sqrt(mx * mx + my * my + mz * mz)
+	local Xx, Xy, Xz = mx / ml, my / ml, mz / ml
+	local L = math.sqrt((tip[1] - x) ^ 2 + (tip[2] - y) ^ 2 + (tip[3] - z) ^ 2)
+	-- chord direction: toward the trailing inner finger, made perpendicular to the span axis
+	local bx, by, bz = back[1] - (x + Xx * L * 0.5), back[2] - (y + Xy * L * 0.5), back[3] - (z + Xz * L * 0.5)
+	local d = bx * Xx + by * Xy + bz * Xz
+	bx, by, bz = bx - d * Xx, by - d * Xy, bz - d * Xz
+	local bl = math.sqrt(bx * bx + by * by + bz * bz)
+	local Zx, Zy, Zz = bx / bl, by / bl, bz / bl
+	local Yx, Yy, Yz = Zy * Xz - Zz * Xy, Zz * Xx - Zx * Xz, Zx * Xy - Zy * Xx
+	local chord = span * 0.66
+	local cx, cy, cz = x + Xx * L * 0.52 + Zx * chord * 0.3, y + Xy * L * 0.52 + Zy * chord * 0.3, z + Xz * L * 0.52 + Zz * chord * 0.3
+	B:mell(L * 1.02, span * 0.03, chord, { cx, cy, cz, Xx, Yx, Zx, Xy, Yy, Zy, Xz, Yz, Zz },
+		{ col = "membrane", mat = "skin", bone = "Wing#", pri = pri + 0.1, role = "wing", tr = o.membraneTr, mesh = "s_wing_bat", name = "Membrane" })
 end
 
 -- TAIL ------------------------------------------------------------------------------------------------------

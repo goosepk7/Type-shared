@@ -8,7 +8,9 @@
 --   Summon.registerSignature(id, fn)               Hand-built blueprint for a word id (fn(B, ctx) using Builder).
 --   Summon.check(blueprint) -> { Violation }       Z-fighting checker (coplanar / coincident surfaces).
 --
--- opts = { style = "Spectral" | "Solid", seed = number?, scale = number?, budget = { maxParts?, maxParticles? }? }
+-- opts = { style = "Spectral" | "Solid", seed = number?, scale = number?, budget = { maxParts?, maxParticles? }?,
+--          meshes = false? (no sculpted-mesh hints: primitives only) }
+-- Summon.preloadMeshes() starts loading the sculpted MeshPart pieces (server; returns at once).
 
 local Builder = require(script.Builder)
 local Geom = require(script.Geom)
@@ -20,6 +22,7 @@ local Plans = require(script.Plans)
 local Signatures = require(script.Signatures)
 local Materials = require(script.Materials)
 local Accents = require(script.Accents)
+local MeshMap = require(script.MeshMap)
 
 local Summon = {}
 
@@ -29,6 +32,7 @@ Summon.Traits = Traits
 Summon.Plans = Plans
 Summon.Materials = Materials
 Summon.Accents = Accents
+Summon.MeshMap = MeshMap
 
 -- Material records come from Library.material when present; a provider can supply them otherwise.
 function Summon.setMaterialProvider(fn: ((string) -> any)?)
@@ -318,6 +322,15 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 		fn(B, ctx)
 		builderName = "plan:" .. plan
 	end
+	-- sculpted look: every part the plan did not hint itself gets its mesh piece by role and shape. Pure data (piece
+	-- ids only): whether an asset is loaded is Instantiate's business, so the blueprint stays deterministic.
+	if o.meshes ~= false then
+		MeshMap.assign(B, ctx)
+	else
+		for _, p in B.parts do
+			p.mesh, p.meshOf, p.meshL = nil, nil, nil -- generator hints too: the plain primitive build
+		end
+	end
 	if B.sockets.core == nil then
 		-- default core socket: centre of the most important body part
 		local best
@@ -343,6 +356,7 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 		matInfo = Materials.apply(B, material, room, ctx)
 	end
 	local accentFx = Accents.apply(B, accents, t)
+	MeshMap.validate(B.parts)
 	if B.sockets.head == nil and #B.parts > 0 then
 		local A = Accents._anchors(B)
 		B:socket("head", Geom.new(A.top[1], A.top[2], A.top[3]), A.headBone)
@@ -392,6 +406,8 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 			seen[nm] = 1
 		end
 	end
+	-- mesh hints: drop the ones a material or accent invalidated (reshaped parts), resolve sculpt groups to names
+	local meshParts = MeshMap.settle(bp.parts)
 
 	local fx = Style.budgetFx(bp, style, cfg)
 	-- looping attached effects (Effects.play ids): accent effects first (the modifier must be visible), then the
@@ -466,6 +482,7 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 		trails = #fx.trails,
 		lights = #fx.lights,
 		members = count,
+		meshParts = meshParts,
 	}
 	return bp
 end
@@ -475,6 +492,13 @@ function Summon.check(bp: any): { Overlap.Violation }
 end
 
 -- ROBLOX STAGES (lazy so Lune never touches Roblox APIs) ----------------------------------------------------
+
+-- Start loading the sculpted mesh pieces the builder uses (server only, non-yielding, idempotent). Instantiate
+-- also calls this on its first build; call it at startup so the first summons already look sculpted.
+function Summon.preloadMeshes()
+	local Instantiate = require(script.Instantiate) :: any
+	Instantiate.preloadMeshes()
+end
 
 function Summon.build(result: any, opts: any?): any
 	local Instantiate = require(script.Instantiate) :: any

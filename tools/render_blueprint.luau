@@ -6,6 +6,10 @@
 --   lune run tools/render_blueprint plan <Plan> [Solid|Spectral] out.png    -- one plan, all variants x sizes
 --   lune run tools/render_blueprint lib <n> [Solid|Spectral] out.png        -- n library entries (seeded pick)
 --   lune run tools/render_blueprint sheet out.png                           -- docs contact sheet
+--   lune run tools/render_blueprint beforeafter out.png                     -- primitives vs sculpted meshes
+--
+-- Set SUMMON_MESH=0 to draw primitives only, SUMMON_RT=0 to use the flat painter for Solid tiles too. With the
+-- defaults the sheets show the sculpted pieces from tools/meshgen/out (run `python3 tools/meshgen/build.py`).
 local fs = require("@lune/fs")
 local serde = require("@lune/serde")
 local process = require("@lune/process")
@@ -21,8 +25,14 @@ local bps = {}
 local out = args[#args]
 local cols, tilePx, views = "2", "200", "front,side,top,iso"
 
-local function add(r, style, seed)
+local useMesh = process.env.SUMMON_MESH ~= "0"
+local useRt = process.env.SUMMON_RT ~= "0"
+
+local function add(r, style, seed, primitive)
 	local bp = Summon.blueprint(r, { style = style, seed = seed })
+	if primitive then
+		bp.meshes = false
+	end
 	if r.phrase then
 		bp.id = r.phrase
 	elseif r.material then
@@ -208,6 +218,73 @@ elseif mode == "sheet" then
 	cols = "4"
 	views = "front,iso"
 	tilePx = "230"
+elseif mode == "beforeafter" then
+	-- the same blueprint twice: primitive parts, then the sculpted pieces swapped in (same builder, same budget)
+	local picks = { "dragon", "t rex", "shark", "unicorn", "golem", "robot", "knight", "wizard", "tank", "pirate ship", "castle", "rocket", "ufo", "cannon", "cat", "octopus" }
+	if args[2] ~= out and args[2] ~= nil then
+		picks = string.split(args[2], ",")
+	end
+	for _, s in picks do
+		local found = false
+		for _, sw in F.SignatureWords do
+			if sw[1] == s then
+				found = true
+				add(F.signatureResult(Schema, sw), "Solid", 1, true)
+				add(F.signatureResult(Schema, sw), "Solid", 1)
+			end
+		end
+		if not found then
+			for _, plan in Schema.Enums.BodyPlan do
+				for v, var in F.Variants[plan] or {} do
+					if var[1] == s then
+						add(F.synthetic(Schema, plan, "Medium", v), "Solid", 1, true)
+						add(F.synthetic(Schema, plan, "Medium", v), "Solid", 1)
+					end
+				end
+			end
+		end
+	end
+	cols = "4"
+	views = "iso"
+	tilePx = "300"
+elseif mode == "scale" then
+	-- lune run tools/render_blueprint scale <Solid|Spectral> <comma list> out.png: each word next to a 5 stud
+	-- tall character-height reference figure (grey), to judge silhouette and size
+	local style = args[2] or "Spectral"
+	for _, s in string.split(args[3] or "dragon", ",") do
+		local r
+		for _, sw in F.SignatureWords do
+			if sw[1] == s then
+				r = F.signatureResult(Schema, sw)
+			end
+		end
+		for _, plan in Schema.Enums.BodyPlan do
+			for v, var in F.Variants[plan] or {} do
+				if r == nil and var[1] == s then
+					r = F.synthetic(Schema, plan, "Medium", v)
+				end
+			end
+		end
+		if r then
+			add(r, style, 1)
+			local bp = bps[#bps]
+			local minX = math.huge
+			for _, p in bp.parts do
+				minX = math.min(minX, p.cf[1] - math.max(p.size[1], p.size[3]) / 2)
+			end
+			local x = minX - 2
+			local grey = { 0.62, 0.62, 0.66 }
+			local function ref(name, shape, sx, sy, sz, y)
+				table.insert(bp.parts, { name = name, shape = shape, size = { sx, sy, sz }, cf = { x, y, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1 }, colour = grey, material = "SmoothPlastic", transparency = 0 })
+			end
+			ref("RefLegs", "Block", 1.6, 2, 0.9, 1)
+			ref("RefTorso", "Block", 2, 1.9, 1, 2.95)
+			ref("RefHead", "Ball", 1.15, 1.15, 1.15, 4.42)
+		end
+	end
+	cols = "2"
+	views = "front,iso"
+	tilePx = "420"
 end
 
 -- strip non-serialisable fields
@@ -215,12 +292,21 @@ local clean = {}
 for _, bp in bps do
 	local parts = {}
 	for _, p in bp.parts do
-		table.insert(parts, { shape = p.shape, size = p.size, cf = p.cf, colour = p.colour, material = p.material, transparency = p.transparency, name = p.name })
+		table.insert(parts, { shape = p.shape, size = p.size, cf = p.cf, colour = p.colour, material = p.material, transparency = p.transparency, name = p.name,
+			mesh = p.mesh, meshOf = p.meshOf })
 	end
-	table.insert(clean, { id = bp.id, style = bp.style, size = bp.size, builder = bp.builder, stats = bp.stats, parts = parts, members = bp.members, fx = { highlight = bp.fx and bp.fx.highlight } })
+	table.insert(clean, { id = bp.id, style = bp.style, size = bp.size, builder = bp.builder, stats = bp.stats, parts = parts, members = bp.members, fx = { highlight = bp.fx and bp.fx.highlight },
+		meshes = bp.meshes })
 end
 local tmp = out .. ".json"
 fs.writeFile(tmp, serde.encode("json", clean))
-local res = process.exec("python3", { "tools/render_blueprint.py", tmp, out, "--cols", cols, "--tile", tilePx, "--views", views })
+local pyArgs = { "tools/render_blueprint.py", tmp, out, "--cols", cols, "--tile", tilePx, "--views", views }
+if useMesh then
+	table.insert(pyArgs, "--mesh")
+end
+if useRt then
+	table.insert(pyArgs, "--rt")
+end
+local res = process.exec("python3", pyArgs)
 print(res.stdout, res.stderr)
 fs.removeFile(tmp)

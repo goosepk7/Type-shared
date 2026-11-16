@@ -139,11 +139,14 @@ return function(B: any, ctx: any)
 	if detail <= 1 then
 		B:ell(W * 1.04, H * 1.08, L * 1.02, at(0, bodyY + H * 0.03, 0), { col = "primary", mat = "fur", pri = 1, role = "body", name = "Torso" })
 	else
-		B:ell(W, H, L * 0.86, at(0, bodyY, 0.04), { col = "primary", mat = "fur", pri = 1, role = "body", name = "Torso" })
+		local torso = B:ell(W, H, L * 0.86, at(0, bodyY, 0.04), { col = "primary", mat = "fur", pri = 1, role = "body", name = "Torso" })
 		-- deep chest: the shoulders stand a little proud of the back line (a strong read for canines/felines)
-		B:ell(W * 1.06, H * 1.12, L * 0.46, at(0, bodyY + H * 0.05, -L * 0.29, rad(-10), 0, 0), { col = "primary", mat = "fur", pri = 1.55, role = "body", name = "Chest" })
+		local chest = B:ell(W * 1.06, H * 1.12, L * 0.46, at(0, bodyY + H * 0.05, -L * 0.29, rad(-10), 0, 0), { col = "primary", mat = "fur", pri = 1.55, role = "body", name = "Chest" })
+		-- torso + chest + haunch are one sculpt in the torso's unit frame (their layout is fixed in W / H / L)
+		B:sculpt(torso, "s_body_quad", { chest })
 		if detail >= 3 then
-			B:ell(W * 1.0, H * 1.02, L * 0.44, at(0, bodyY + H * 0.04, L * 0.3), { col = "primary", mat = "fur", pri = 2.0, role = "body", name = "Haunch" })
+			local haunch = B:ell(W * 1.0, H * 1.02, L * 0.44, at(0, bodyY + H * 0.04, L * 0.3), { col = "primary", mat = "fur", pri = 2.0, role = "body", name = "Haunch" })
+			haunch.meshOf = torso
 		end
 	end
 	if detail >= 3 and arch ~= "porcine" then

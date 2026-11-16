@@ -109,6 +109,14 @@ local function spectralColour(key: any, ep: Palette.ElementPalette): RGB
 end
 
 -- Resolve every part to concrete colour/material/transparency; add the style layers.
+-- Spectral: roles that make up the silhouette and therefore stay solid (see the mass branch below).
+local STRUCTURAL: { [string]: boolean } = {
+	limb = true, tail = true, tentacle = true, wing = true, fin = true, horn = true, foot = true, hand = true, ear = true, snout = true,
+	jaw = true, beak = true, claw = true, tooth = true, spike = true, antenna = true, mane = true, crest = true, hat = true, held = true,
+	armour = true, cape = true, beard = true, wheel = true, tread = true, cannon = true, roof = true, mast = true, sail = true, handle = true,
+	blade = true, petal = true, nose = true, door = true, flag = true, body = true, head = true, torso = true,
+}
+
 -- Returns extra parts (cores) to be budgeted together with the geometry, and FX lists.
 function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 	local parts = B.parts
@@ -153,7 +161,15 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 			elseif isEye then
 				p.material = "Neon"
 				p.transparency = 0
-			elseif (p.pri or 2) <= 1.3 and not p.noCore and (role == "body" or role == "head" or role == "core" or role == "torso") then
+			elseif (p.pri or 2) <= 1.3 and not p.noCore and (role == "body" or role == "head" or role == "torso") then
+				-- big masses of a creature / object: a solid, readable silhouette in the element's colour. The glow is
+				-- an accent around it (aura shell, Highlight rim, eyes, trails), never the body itself: a summon made of
+				-- faint shells around small neon cores reads as a firefly, not as a dragon.
+				p.material = "SmoothPlastic"
+				p.transparency = 0.08
+				p.colour = Palette.lerp(p.colour, pep.deep, 0.12)
+				p.spectralMass = true
+			elseif (p.pri or 2) <= 1.3 and not p.noCore and role == "core" then
 				-- big masses: shimmering energy shell around a brighter inner core of strictly smaller size
 				p.material = "ForceField"
 				p.transparency = 0
@@ -181,25 +197,33 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 					transparency = 0.4,
 					noCore = true,
 					name = (p.name or "Part") .. "Core",
+					-- a sculpted shell gets the same sculpt as its core, at the core's strictly smaller size
+					mesh = p.mesh,
+					meshShape = if p.mesh then shape else nil,
+					meshOf = p.meshOf,
 				}
 				table.insert(extra, core)
 			else
-				p.material = "Neon"
-				-- deeper detail gets more transparent: layered energy rather than a solid neon lump
 				local pri = p.pri or 2
-				p.transparency = math.clamp(0.22 + (pri - 1) * 0.08, 0.22, 0.55)
-				if p.colour == pep.outer then
-					-- limbs and secondary masses sit a value step below the cores: the light hierarchy is
-					-- core > eyes/accents > shells > limbs, so the summon reads as one glowing body, not a pile of bulbs
-					p.colour = Palette.lerp(pep.outer, pep.deep, 0.3)
-				end
-				if role == "wing" or role == "petal" or role == "fin" then
-					p.transparency = math.max(p.transparency, 0.35)
-					p.material = if role == "wing" and (pri or 2) < 2 then "Neon" else "ForceField"
+				if STRUCTURAL[role or ""] then
+					-- limbs, necks, tails, wings, horns: part of the silhouette, as solid as the body (wing and fin
+					-- blades a little lighter so they read as membranes)
+					p.material = "SmoothPlastic"
+					p.transparency = if role == "wing" or role == "fin" or role == "petal" then 0.2 else 0.08
+					p.colour = Palette.lerp(p.colour, pep.deep, if p.colour == pep.outer then 0.3 else 0.12)
+				else
+					-- small detail keeps the energy look: layered Neon, more transparent the deeper it sits
+					p.material = "Neon"
+					p.transparency = math.clamp(0.22 + (pri - 1) * 0.08, 0.22, 0.55)
+					if p.colour == pep.outer then
+						p.colour = Palette.lerp(pep.outer, pep.deep, 0.3)
+					end
 				end
 			end
 			if p.tr ~= nil then
-				p.transparency = math.max(p.transparency, p.tr)
+				-- silhouette parts (wing membranes, fins) stay readable: their own translucency is capped
+				p.transparency = if STRUCTURAL[role or ""] and p.material == "SmoothPlastic" then math.max(p.transparency, math.min(p.tr, 0.25))
+					else math.max(p.transparency, p.tr)
 			end
 			p.castShadow = false
 		end
@@ -207,7 +231,7 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 		-- reads as layered energy (aura > shell > core) rather than a single glowing surface
 		local big, bigV = nil, 0
 		for _, p in parts do
-			if p.material == "ForceField" and p.role == "body" and (p.shape == "Ellipsoid" or p.shape == "Ball") then
+			if (p.material == "ForceField" or p.spectralMass) and p.role == "body" and (p.shape == "Ellipsoid" or p.shape == "Ball") then
 				local v = p.size[1] * p.size[2] * p.size[3]
 				if v > bigV then
 					big, bigV = p, v
@@ -219,11 +243,14 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 			table.insert(extra, {
 				shape = big.shape, size = { s[1] * 1.14, s[2] * 1.14, s[3] * 1.1 }, cf = big.cf, bone = big.bone,
 				pri = (big.pri or 1) + 1.2, role = "aura", colour = ep.glow, material = "ForceField", transparency = 0.55,
-				noCore = true, name = (big.name or "Part") .. "Aura",
+				noCore = true, name = (big.name or "Part") .. "Aura", mesh = big.mesh, meshShape = if big.mesh then big.shape else nil,
 			})
 		end
 		for _, c in extra do
 			table.insert(parts, c)
+		end
+		for _, p in parts do
+			p.spectralMass = nil
 		end
 		fx.highlight = cfg.SpectralHighlight and {
 			fill = ep.main, fillTransparency = 0.82, outline = ep.glow, outlineTransparency = 0.15,

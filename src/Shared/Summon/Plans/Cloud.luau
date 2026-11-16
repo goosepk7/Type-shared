@@ -104,35 +104,68 @@ function K.vortex(B: any, ctx: any)
 	local water = string.find(string.lower(ctx.result.id), "whirlpool") ~= nil
 	local n = if detail <= 1 then 4 elseif detail == 2 then 6 else 7
 	local H = 7.0
-	local prev = "Body"
+	local wantsFace = Heads.wantsFace(B, ctx.traits)
+	local faceRing = math.max(1, math.floor(n * 0.6))
+	-- Funnel of stacked rings, each on its OWN bone under Body, so every ring is a separate rotor: odd rings whip
+	-- one way, even rings turn back the other way at a different rate, and the speed falls off toward the wide
+	-- top. A plain ellipsoid of revolution looks the same at every angle, so rotation is made readable three
+	-- ways: the ring is oval and sits off its axis (it wobbles), wind streaks ride on its rim, and the streaks
+	-- carry trails and particle emitters that draw spirals.
 	for i = 1, n do
 		local u = (i - 1) / (n - 1)
 		local y = 0.3 + u * H
-		local r = 0.45 + u * u * 2.6
-		-- each ring is a flattened ellipsoid tilted and offset a little so the funnel snakes as it spins
-		local b = B:bone("Ring" .. i, prev, sin(u * 3) * 0.4, y, 0)
-		B:addRig("rotors", { bone = b, axis = "Y", speed = 6 - u * 3 })
-		B:addRig("spine", b)
-		B:ell(r * 2, 1.05 + u * 0.35, r * 2, at(sin(u * 3) * 0.4, y, cos(u * 2.4) * 0.15, rad(4 + i * 2), 0, rad(-6 + i * 3)),
-			{ col = if i % 2 == 0 then "secondary" else "primary", mat = "cloth", tr = 0.15 + u * 0.15, bone = b, pri = 1 + i * 0.05, role = "body", name = "Ring" .. i, trail = i == n })
-		prev = b
-	end
-	-- debris ring at the base (Lifts / flings things)
-	if detail >= 1 and not water then
-		B:bone("Debris", "Body", 0, 0.8, 0)
-		B:addRig("rotors", { bone = "Debris", axis = "Y", speed = 4 })
-		local m = if detail >= 3 then 5 elseif detail == 2 then 4 else 2
-		for i = 1, m do
-			local a = (i - 1) / m * math.pi * 2
-			local s = 0.35 + (i % 3) * 0.12
-			B:block(s, s * 0.8, s * 1.2, at(cos(a) * 2.0, 0.8 + (i % 2) * 0.9, sin(a) * 2.0, i, i * 0.7, i * 0.3), { col = if i % 2 == 0 then "wood" else "stone", mat = if i % 2 == 0 then "wood" else "stone", bone = "Debris", pri = 1.7 + i * 0.05, role = "detail", name = "Debris" .. i })
+		local r = 0.6 + u ^ 1.6 * 2.45
+		local sx = sin(u * 3) * 0.4
+		local still = wantsFace and i == faceRing -- the face ring keeps looking forward
+		local b = B:bone("Ring" .. i, "Body", sx, y, 0)
+		if not still then
+			local dir = if i % 2 == 1 then 1 else -0.62
+			B:addRig("rotors", { bone = b, axis = "Y", speed = dir * (7.5 - u * 3.5) })
+		end
+		B:addRig("sway", b)
+		local ecc = if still then 0 else r * 0.14
+		local ea = i * 2.1
+		local col = if i % 2 == 0 then "secondary" else "primary"
+		-- thick enough to overlap the next ring: one continuous funnel, not a stack of plates
+		B:ell(r * 2, math.max(1.05 + u * 0.35, H / (n - 1) * 1.3), r * (if still then 2 else 1.72), at(sx + cos(ea) * ecc, y, sin(ea) * ecc, rad(4 + i * 2), 0, rad(-6 + i * 3)),
+			{ col = col, mat = "cloth", tr = 0.15 + u * 0.15, bone = b, pri = 1 + i * 0.05, role = "body", name = "Ring" .. i, trail = i == n })
+		if not still then
+			for k = 1, 2 do
+				local a = i * 1.3 + k * 2.5
+				local rr = r * (if k == 1 then 1.02 else 0.9)
+				B:ell(r * (1.25 - k * 0.2) + 0.3, 0.26 + u * 0.12 + k * 0.03, r * 0.34 + 0.12,
+					at(sx + cos(a) * rr, y + (k - 1.5) * (0.3 + u * 0.1), sin(a) * rr, 0, a + math.pi / 2, rad(k * 16 - 14)),
+					{ col = if (k + i) % 2 == 0 then "dark" else "light", mat = "cloth", tr = 0.1, bone = b, pri = (if k == 1 then 1.32 else 2.1) + i * 0.04, role = "detail",
+						name = "Ring" .. i .. "Streak" .. k, trail = k == 1 and (i == 2 or i == n - 1) })
+			end
 		end
 	end
+	-- debris caught in the base: two orbits turning against each other
+	if detail >= 1 and not water then
+		B:bone("Debris", "Body", 0, 0.8, 0)
+		B:addRig("rotors", { bone = "Debris", axis = "Y", speed = 4.5 })
+		B:bone("DebrisHigh", "Body", 0, 1.9, 0)
+		B:addRig("rotors", { bone = "DebrisHigh", axis = "Y", speed = -3 })
+		local m = if detail >= 3 then 6 elseif detail == 2 then 5 else 3
+		for i = 1, m do
+			local a = (i - 1) / m * math.pi * 2 + (i % 2) * 0.35
+			local s = 0.35 + (i % 3) * 0.12
+			local high = i % 2 == 0
+			local rad0 = if high then 2.5 else 1.9 + (i % 3) * 0.15
+			B:block(s, s * 0.8, s * 1.2, at(cos(a) * rad0, (if high then 1.9 else 0.8) + (i % 3) * 0.18, sin(a) * rad0, i, i * 0.7, i * 0.3),
+				{ col = if i % 2 == 0 then "wood" else "stone", mat = if i % 2 == 0 then "wood" else "stone", bone = if high then "DebrisHigh" else "Debris", pri = 1.5 + i * 0.07,
+					role = "detail", name = "Debris" .. i, trail = i == 1 })
+		end
+		B:emit("dust", "Debris1", { rate = 14, spread = 0.6 })
+	end
+	-- swirling particles: emitted from streaks that ride the spinning rings, so they are flung off in spirals
+	B:emit("streaks", "Ring2Streak1", { rate = 26, spread = 0.5 })
+	B:emit("wisps", "Ring" .. (n - 1) .. "Streak1", { rate = 16, spread = 0.8 })
 	B:emit("streaks", nil, { socket = "core", rate = 30 })
 	B:socket("core", at(0, H * 0.45, 0), "Body")
-	if Heads.wantsFace(B, ctx.traits) then
+	if wantsFace then
 		local y = 0.3 + H * 0.6
-		face(B, ctx, { 0, y, 0 }, { 1.6, 1.0, 1.6 }, "Ring" .. math.max(1, math.floor(n * 0.6)), true)
+		face(B, ctx, { 0, y, 0 }, { 1.6, 1.0, 1.6 }, "Ring" .. faceRing, true)
 	end
 	B:setRig("gait", "spin")
 end

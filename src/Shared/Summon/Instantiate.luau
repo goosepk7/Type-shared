@@ -11,9 +11,17 @@
 -- Formation (count > 1): a Model of member Models, leader's Root is the PrimaryPart.
 --
 -- opts: { anchored = true, collisionGroup = string?, parent = Instance?, cframe = CFrame?, effects = true,
---         loadMesh = true }. Instantiate.setCollisionGroupHook(fn(part)) lets the game assign groups centrally.
+--         loadMesh = true, meshes = true }. Instantiate.setCollisionGroupHook(fn(part)) lets the game assign groups
+-- centrally.
+--
+-- Sculpted meshes: a part with `mesh = pieceId` is built as a clone of that MeshPart (Meshes/MeshLibrary.fit: same
+-- box as the primitive, same colour / material / transparency) when the asset is loaded, and as the primitive
+-- otherwise. Parts with `meshOf = leadName` are inside the lead's sculpt and are not built while it shows. The
+-- library loads in the background (Instantiate.preloadMeshes, also kicked by the first build): a build never
+-- waits for it, and a model built before the pieces arrived is upgraded in place once they are ready.
 
 local Geom = require(script.Parent.Geom)
+local MeshMap = require(script.Parent.MeshMap)
 
 local Instantiate = {}
 
@@ -31,6 +39,48 @@ local function rt(): any
 		}
 	end
 	return RT
+end
+
+-- MeshLibrary, resolved lazily (absent in bare test loaders) and injectable for tests.
+local MeshLib: any = nil
+local meshLibTried = false
+function Instantiate.setMeshLibrary(lib: any)
+	MeshLib = lib
+	meshLibTried = true
+end
+local function meshLib(): any
+	if not meshLibTried then
+		meshLibTried = true
+		local ok, lib = pcall(function(): any
+			return require(script.Parent.Parent.Meshes.MeshLibrary) :: any
+		end)
+		if ok and type(lib) == "table" then
+			MeshLib = lib
+		end
+	end
+	return MeshLib
+end
+
+-- Start loading the mesh pieces (server; returns immediately; safe to call repeatedly).
+function Instantiate.preloadMeshes()
+	local lib = meshLib()
+	if lib and type(lib.preload) == "function" then
+		pcall(lib.preload, function(_id: string, rec: any): boolean
+			return rec.set == "summon" or MeshMap.Shared[_id] == true
+		end)
+	end
+end
+
+local function hasMesh(p: any, opts: any): boolean
+	if type(p.mesh) ~= "string" or opts.meshes == false then
+		return false
+	end
+	local lib = meshLib()
+	if lib == nil then
+		return false
+	end
+	local ok, has = pcall(lib.has, p.mesh)
+	return ok and has == true
 end
 
 local collisionHook: ((any) -> ())? = nil
@@ -99,27 +149,40 @@ local function colourSeq(cols: { any }?): any
 	return R.ColorSequence.new(kps)
 end
 
-local function newPart(p: any): any
+local function newPart(p: any, useMesh: boolean?): any
 	local R = rt()
 	local E = R.Enum
 	local inst
-	if p.shape == "Wedge" then
-		inst = R.Instance.new("WedgePart")
-	else
-		inst = R.Instance.new("Part")
-		if p.shape == "Ball" then
-			inst.Shape = E.PartType.Ball
-		elseif p.shape == "Cylinder" then
-			inst.Shape = E.PartType.Cylinder
-		else
-			inst.Shape = E.PartType.Block
+	if useMesh then
+		local lib = meshLib()
+		local ok, m = pcall(lib.fit, p.mesh, v3(p.size), cf(p.cf), c3(p.colour), material(p.material))
+		if ok and m then
+			inst = m
+			inst:SetAttribute("Mesh", p.mesh)
 		end
 	end
+	local sculpted = inst ~= nil
+	if inst == nil then
+		if p.shape == "Wedge" then
+			inst = R.Instance.new("WedgePart")
+		else
+			inst = R.Instance.new("Part")
+			if p.shape == "Ball" then
+				inst.Shape = E.PartType.Ball
+			elseif p.shape == "Cylinder" then
+				inst.Shape = E.PartType.Cylinder
+			else
+				inst.Shape = E.PartType.Block
+			end
+		end
+		inst.Size = v3(p.size)
+		inst.CFrame = cf(p.cf)
+		inst.Color = c3(p.colour)
+		inst.Material = material(p.material)
+		inst.TopSurface = E.SurfaceType.Smooth
+		inst.BottomSurface = E.SurfaceType.Smooth
+	end
 	inst.Name = p.name or "Part"
-	inst.Size = v3(p.size)
-	inst.CFrame = cf(p.cf)
-	inst.Color = c3(p.colour)
-	inst.Material = material(p.material)
 	inst.Transparency = p.transparency or 0
 	inst.CastShadow = p.castShadow ~= false
 	inst.CanCollide = false
@@ -127,9 +190,7 @@ local function newPart(p: any): any
 	inst.CanQuery = false
 	inst.Massless = true
 	inst.Anchored = false
-	inst.TopSurface = E.SurfaceType.Smooth
-	inst.BottomSurface = E.SurfaceType.Smooth
-	if p.shape == "Ellipsoid" then
+	if p.shape == "Ellipsoid" and not sculpted then
 		local mesh = R.Instance.new("SpecialMesh")
 		mesh.MeshType = E.MeshType.Sphere
 		mesh.Parent = inst
@@ -221,21 +282,41 @@ local function buildMember(bp: any, opts: any, name: string): (any, any)
 		m6.Parent = parentPart
 	end
 
-	local partsByName: { [string]: any } = {}
+	-- which sculpts can show right now (asset loaded); their group members are not built
+	local shown: { [string]: boolean } = {}
+	local pending = false
 	for _, p in bp.parts do
-		local inst = newPart(p)
-		local bone = boneParts[p.bone] or boneParts.Body or root
-		local w = R.Instance.new("Weld")
-		w.Name = "W"
-		w.Part0 = bone
-		w.Part1 = inst
-		w.C0 = bone.CFrame:Inverse() * inst.CFrame
-		w.C1 = R.CFrame.new()
-		w.Parent = inst
-		inst.Parent = model
-		applyGroup(inst, opts.collisionGroup)
-		partsByName[inst.Name] = inst
+		if type(p.mesh) == "string" and opts.meshes ~= false then
+			if hasMesh(p, opts) then
+				shown[p.name] = true
+			else
+				pending = true
+			end
+		end
 	end
+	local partsByName: { [string]: any } = {}
+	local meshCount = 0
+	for _, p in bp.parts do
+		if not (p.meshOf and shown[p.meshOf]) then
+			local inst = newPart(p, shown[p.name])
+			if inst:GetAttribute("Mesh") then
+				meshCount += 1
+			end
+			local bone = boneParts[p.bone] or boneParts.Body or root
+			local w = R.Instance.new("Weld")
+			w.Name = "W"
+			w.Part0 = bone
+			w.Part1 = inst
+			w.C0 = bone.CFrame:Inverse() * inst.CFrame
+			w.C1 = R.CFrame.new()
+			w.Parent = inst
+			inst.Parent = model
+			applyGroup(inst, opts.collisionGroup)
+			partsByName[inst.Name] = inst
+		end
+	end
+	model:SetAttribute("MeshParts", meshCount)
+	model:SetAttribute("MeshPending", pending)
 
 	-- sockets as attachments on their bones
 	local sockets: { [string]: any } = {}
@@ -427,6 +508,80 @@ function Instantiate.attachMesh(model: any, bp: any, mesh: any)
 	end)
 end
 
+-- Swap primitives for their sculpts in a model that was built before the pieces were loaded. Welds keep their
+-- bone and offset, children (trails, emitters, attachments) move to the new part. Returns the number swapped.
+function Instantiate.upgradeMeshes(model: any, bp: any?, opts: any?): number
+	local o = opts or {}
+	local blueprint = bp or Instantiate.blueprintOf[model]
+	if blueprint == nil or model == nil then
+		return 0
+	end
+	local R = rt()
+	local members = {}
+	if model:FindFirstChild("Root") then
+		table.insert(members, model)
+	else
+		for _, c in model:GetChildren() do
+			if c:IsA("Model") and c:FindFirstChild("Root") then
+				table.insert(members, c)
+			end
+		end
+	end
+	local swapped = 0
+	for _, m in members do
+		local shown: { [string]: boolean } = {}
+		for _, p in blueprint.parts do
+			local old = m:FindFirstChild(p.name)
+			if old and old:GetAttribute("Mesh") then
+				shown[p.name] = true
+			elseif old and hasMesh(p, o) then
+				local weld = old:FindFirstChild("W")
+				local bone = weld and weld.Part0
+				if bone then
+					-- the model may have moved or be mid-animation: place the sculpt through the weld's own offset
+					local frame = bone.CFrame * weld.C0
+					local okNew, inst = pcall(newPart, p, true)
+					if okNew and inst and inst:GetAttribute("Mesh") then
+						-- "unit" pieces sit off the part's centre: keep that offset relative to the primitive's frame
+						local rel = cf(p.cf):Inverse() * inst.CFrame
+						inst.CFrame = frame * rel
+						local w = R.Instance.new("Weld")
+						w.Name = "W"
+						w.Part0 = bone
+						w.Part1 = inst
+						w.C0 = bone.CFrame:Inverse() * inst.CFrame
+						w.C1 = R.CFrame.new()
+						for _, child in old:GetChildren() do
+							if child ~= weld and not child:IsA("SpecialMesh") then
+								child.Parent = inst
+							end
+						end
+						w.Parent = inst
+						pcall(function()
+							inst.CollisionGroup = old.CollisionGroup
+						end)
+						inst.Parent = m
+						old:Destroy()
+						shown[p.name] = true
+						swapped += 1
+					end
+				end
+			end
+		end
+		for _, p in blueprint.parts do
+			if p.meshOf and shown[p.meshOf] then
+				local old = m:FindFirstChild(p.name)
+				if old and not old:GetAttribute("Mesh") then
+					old:Destroy()
+				end
+			end
+		end
+		m:SetAttribute("MeshParts", (m:GetAttribute("MeshParts") or 0) + swapped)
+		m:SetAttribute("MeshPending", false)
+	end
+	return swapped
+end
+
 function Instantiate.build(bp: any, result: any?, opts: any?): any
 	local o = opts or {}
 	local R = rt()
@@ -462,6 +617,21 @@ function Instantiate.build(bp: any, result: any?, opts: any?): any
 	end
 	if bp.meshAsset and o.loadMesh ~= false then
 		Instantiate.attachMesh(top, bp, bp.meshAsset)
+	end
+	-- sculpted pieces still loading: start the loader if nobody did, and upgrade this model when they arrive
+	if o.meshes ~= false and (bp.stats and (bp.stats.meshParts or 0) > 0) then
+		local lib = meshLib()
+		if lib and type(lib.ready) == "function" and type(lib.live) == "function" and lib.live() then
+			local okReady, ready = pcall(lib.ready)
+			if okReady and ready and not ready.isReady() then
+				Instantiate.preloadMeshes()
+				ready.Connect(function()
+					if top.Parent ~= nil then
+						pcall(Instantiate.upgradeMeshes, top, bp, o)
+					end
+				end)
+			end
+		end
 	end
 	if o.parent then
 		top.Parent = o.parent
