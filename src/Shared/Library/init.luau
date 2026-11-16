@@ -520,6 +520,30 @@ function Library.material(id: string): Types.Material?
 	return loadMaterials()[id]
 end
 
+-- True for a real English word that is not itself a library key ("gun" before it had an entry). The Speller
+-- never fuzzy-corrects such a word into a different thing; it is left for the AI (or the fallback).
+local realWords: { [string]: boolean }? = nil
+function Library.isRealWord(word: string): boolean
+	if type(word) ~= "string" then
+		return false
+	end
+	local set = realWords
+	if set == nil then
+		local built: { [string]: boolean } = {}
+		local inst = script.Generated:FindFirstChild("RealWords")
+		if inst then
+			for _, blob in require(inst :: any) :: { string } do
+				for w in string.gmatch(blob, "%a+") do
+					built[w] = true
+				end
+			end
+		end
+		realWords = built
+		set = built
+	end
+	return set[word] == true
+end
+
 -- Returns (id, isMisspelling). Strict: no fuzzy matching (the Speller does that).
 function Library.lookupMaterial(word: string): (string?, boolean)
 	if type(word) ~= "string" then

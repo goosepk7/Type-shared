@@ -90,6 +90,10 @@ local function fuzzyLookup(form: string): Hit?
 	if n < 3 then
 		return nil
 	end
+	-- A correctly spelled English word that the library does not have is not a typo: "gun" is not "gum".
+	if Library.isRealWord(form) then
+		return nil
+	end
 	local maxCost = maxCostFor(n)
 	local cands = Fuzzy.search(form, maxCost, cfg().PhoneticExtraCost, cfg().FuzzyCandidates)
 	if #cands == 0 then
@@ -136,6 +140,10 @@ local function fuzzyLookup(form: string): Hit?
 	local conf = fuzzyConf(best.cost, n, phoneticOnly)
 	if second and second.eff - best.eff < 0.2 then
 		conf -= 0.08
+	end
+	-- One edit is a quarter of a 3-4 letter word: never sure enough to skip the AI's second opinion.
+	if n <= 4 then
+		conf = math.min(conf, cfg().ShortWordMaxConf or 0.78)
 	end
 	return {
 		ord = best.owner,
