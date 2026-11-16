@@ -1,0 +1,14 @@
+{
+  "name": "WordEngine",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "WordEngine": { "$path": "src/Shared" }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "WordEngineServer": { "$path": "src/Server" }
+    }
+  }
+}

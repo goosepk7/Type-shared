@@ -1,0 +1,10 @@
+*.rbxl
+*.rbxlx
+*.rbxm
+*.lock
+!Cargo.lock
+.env
+.env.*
+__pycache__/
+/build/
+sourcemap.json

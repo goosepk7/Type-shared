@@ -1,0 +1,24 @@
+{
+  "name": "WordEngineTestPlace",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "WordEngine": { "$path": "src/Shared" }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "WordEngineServer": { "$path": "src/Server" },
+      "TestPlaceServer": { "$path": "testplace/Server" }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "TestPlaceClient": { "$path": "testplace/Client" }
+      }
+    },
+    "Workspace": { "$className": "Workspace", "$properties": { "StreamingEnabled": false } },
+    "Lighting": { "$className": "Lighting", "$properties": { "Technology": "Future" } }
+  }
+}
