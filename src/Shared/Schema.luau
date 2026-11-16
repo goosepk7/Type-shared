@@ -21,11 +21,22 @@ local Enums = {
 		"Grows", "Shrinks", "Teleports", "Invisible", "Reflects", "Steals", "Lures", "Distracts", "Ranged", "Melee",
 		"Rideable", "Summons", "Drains", "Confuses", "Knockback", "Lifts",
 	},
-	BodyPlan = { "Quadruped", "Biped", "Serpent", "Bird", "Fish", "Insect", "Blob", "Vehicle", "Structure", "Weapon", "Orb", "Swarm", "Plant", "Humanoid", "Cloud" },
+	BodyPlan = {
+		-- generic (v0)
+		"Quadruped", "Biped", "Serpent", "Bird", "Fish", "Insect", "Blob", "Vehicle", "Structure", "Weapon", "Orb", "Swarm", "Plant", "Humanoid", "Cloud",
+		-- specialised (brief 4)
+		"Dragon", "Spider", "Crab", "Octopus", "Worm", "Turtle", "Ghost", "Robot", "Giant", "Knight", "Wizard",
+		"Tree", "Flower", "Mushroom", "Cactus",
+		"CarWheeled", "Tracked", "Aircraft", "Helicopter", "Boat", "Submarine", "Rocket",
+		"Building", "Tower", "Wall", "Gate", "Bridge", "Castle",
+		"Sword", "Axe", "Hammer", "Spear", "Bow", "Gun", "Cannon", "Shield", "Staff",
+		"Furniture", "Appliance", "Container", "Ball", "Crystal", "Vortex", "Wave", "Food",
+	},
 	Motion = { "Walk", "Fly", "Swim", "Slither", "Hover", "Roll", "Hop", "Burrow", "Static", "Float", "Spin", "Drive" },
 	Source = { "Library", "Cache", "AI", "Admin", "Fallback" },
 	CorrectionMethod = { "Exact", "Alias", "Normalized", "Stem", "Misspelling", "Fuzzy", "Phonetic", "MultiWord", "AI" },
-	ModifierKind = { "Size", "Element", "Count", "Quality" },
+	ModifierKind = { "Size", "Count", "Mood", "Quality", "Element", "State", "Motion", "Material" },
+	Mood = { "Neutral", "Angry", "Sleepy", "Scared", "Crazy", "Hungry", "Happy", "Sneaky", "Lazy", "Hyper", "Confused", "Sad", "Smug", "Cute" },
 }
 Schema.Enums = Enums
 
@@ -50,6 +61,20 @@ for name, list in Enums do
 	Lower[name] = m
 end
 
+-- Specialised body plan -> generic parent (builders fall back to the parent).
+Schema.BodyPlanParent = {
+	Dragon = "Quadruped", Spider = "Insect", Crab = "Insect", Octopus = "Blob", Worm = "Serpent", Turtle = "Quadruped",
+	Ghost = "Humanoid", Robot = "Humanoid", Giant = "Humanoid", Knight = "Humanoid", Wizard = "Humanoid",
+	Tree = "Plant", Flower = "Plant", Mushroom = "Plant", Cactus = "Plant",
+	CarWheeled = "Vehicle", Tracked = "Vehicle", Aircraft = "Vehicle", Helicopter = "Vehicle", Boat = "Vehicle",
+	Submarine = "Vehicle", Rocket = "Vehicle",
+	Building = "Structure", Tower = "Structure", Wall = "Structure", Gate = "Structure", Bridge = "Structure", Castle = "Structure",
+	Sword = "Weapon", Axe = "Weapon", Hammer = "Weapon", Spear = "Weapon", Bow = "Weapon", Gun = "Weapon", Cannon = "Weapon",
+	Shield = "Weapon", Staff = "Weapon",
+	Furniture = "Structure", Appliance = "Structure", Container = "Structure", Ball = "Orb", Crystal = "Orb",
+	Vortex = "Cloud", Wave = "Cloud", Food = "Blob",
+} :: { [string]: string }
+
 Schema.SizeIndex = { Tiny = 1, Small = 2, Medium = 3, Large = 4, Huge = 5, Colossal = 6 } :: { [string]: number }
 
 Schema.Limits = {
@@ -64,6 +89,7 @@ Schema.Limits = {
 }
 
 local FALLBACK_VISUAL: Types.Visual = {
+	accents = { "sparkle" },
 	primaryColour = "#C77DFF",
 	secondaryColour = "#FFD6FF",
 	bodyPlan = "Blob",
@@ -207,6 +233,9 @@ function Schema.fallback(input: string?): WordResult
 		correction = nil,
 		category = "Creature",
 		element = "Arcane",
+		secondaryElement = "None",
+		material = nil,
+		mood = "Confused",
 		size = "Tiny",
 		shape = "Summon",
 		behaviours = { "Confuses", "Distracts" },
@@ -280,6 +309,12 @@ function Schema.repair(raw: any, input: string?): WordResult
 		correction = correction,
 		category = category :: any,
 		element = enumOf("Element", raw.element, "None") :: any,
+		secondaryElement = enumOf("Element", raw.secondaryElement, "None") :: any,
+		material = (function()
+			local m = string.lower(cleanString(raw.material, 24, ""))
+			return if m == "" or m == "none" then nil else m
+		end)(),
+		mood = enumOf("Mood", raw.mood, "Neutral") :: any,
 		size = enumOf("Size", raw.size, "Medium") :: any,
 		shape = enumOf("Shape", raw.shape, defaults.shape) :: any,
 		behaviours = enumList("Behaviour", raw.behaviours, L.MaxBehaviours),
@@ -297,6 +332,7 @@ function Schema.repair(raw: any, input: string?): WordResult
 			silhouetteHint = cleanString(v.silhouetteHint, L.MaxHint, ""),
 			motionHint = enumOf("Motion", v.motionHint, defaults.motion) :: any,
 			soundHint = string.lower(cleanString(v.soundHint, 24, "whoosh")),
+			accents = tagList(v.accents),
 		},
 		flavourText = cleanString(raw.flavourText, L.MaxFlavour, ""),
 		tags = tagList(raw.tags),

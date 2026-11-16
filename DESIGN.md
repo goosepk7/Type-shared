@@ -3,6 +3,9 @@
 WordEngine turns anything a player types into one structured, validated `WordResult`.
 Each game maps that result into its own gameplay. **The engine decides meaning, never balance.**
 
+Brief 4 (update: Claude API, stacked modifiers, materials, 40+ body plans, promotion pipeline) is folded in;
+it overrides earlier briefs where they conflict.
+
 Status: v0 interfaces (frozen for game threads; additive changes only, breaking changes bump `WordEngine.VERSION` major).
 
 ## 0. Design principles
@@ -107,6 +110,9 @@ export type WordResult = {
   correction: Correction?,    -- set when input ~= canonical; drives "did you mean"
   category: Category,
   element: Element,
+  secondaryElement: Element,  -- "None" unless split-element ("fire ice dragon")
+  material: string?,          -- material id ("spaghetti"); nil = the thing's natural material
+  mood: Mood,                 -- "Neutral" default; drives face, posture, particles, sound pitch
   size: Size,
   shape: Shape,
   behaviours: { Behaviour },  -- array, unique, sorted. Use Schema.has(r, "Flies")
@@ -129,6 +135,7 @@ export type Visual = {
   silhouetteHint: string,     -- short free text: "long neck, wings, spiked tail"
   motionHint: Motion,
   soundHint: string,          -- sound key: "roar","whoosh","clank","splash","zap",...
+  accents: { string },        -- feature hints from modifiers/materials: "scowl","steam","thrusters","halo","snore"
 }
 
 export type Correction = { method: CorrectionMethod, from: string, to: string, confidence: number,
@@ -145,11 +152,17 @@ Enums (exact strings; `Schema.Enums.*` lists them):
 - **Behaviour**: Flies, Swims, Burrows, Charges, Explodes, Heals, Blocks, Pulls, Pushes, Freezes, Burns, Shocks,
   Poisons, Slows, Stuns, Spreads, Follows, Orbits, Lingers, Pierces, Bounces, Splits, Grows, Shrinks, Teleports,
   Invisible, Reflects, Steals, Lures, Distracts, Ranged, Melee, Rideable, Summons, Drains, Confuses, Knockback, Lifts
-- **BodyPlan**: Quadruped, Biped, Serpent, Bird, Fish, Insect, Blob, Vehicle, Structure, Weapon, Orb, Swarm, Plant, Humanoid, Cloud
+- **BodyPlan** (60): generic Quadruped, Biped, Serpent, Bird, Fish, Insect, Blob, Vehicle, Structure, Weapon, Orb, Swarm,
+  Plant, Humanoid, Cloud; specialised Dragon, Spider, Crab, Octopus, Worm, Turtle, Ghost, Robot, Giant, Knight, Wizard, Tree,
+  Flower, Mushroom, Cactus, CarWheeled, Tracked, Aircraft, Helicopter, Boat, Submarine, Rocket, Building, Tower, Wall, Gate,
+  Bridge, Castle, Sword, Axe, Hammer, Spear, Bow, Gun, Cannon, Shield, Staff, Furniture, Appliance, Container, Ball, Crystal,
+  Vortex, Wave, Food. `Schema.BodyPlanParent` maps each specialised plan to its generic parent, so a builder can always
+  fall back.
+- **Mood**: Neutral, Angry, Sleepy, Scared, Crazy, Hungry, Happy, Sneaky, Lazy, Hyper, Confused, Sad, Smug, Cute
 - **Motion**: Walk, Fly, Swim, Slither, Hover, Roll, Hop, Burrow, Static, Float, Spin, Drive
 - **Source**: Library, Cache, AI, Admin, Fallback
 - **CorrectionMethod**: Exact, Alias, Normalized, Stem, Misspelling, Fuzzy, Phonetic, MultiWord, AI
-- **ModifierKind**: Size, Element, Count, Quality
+- **ModifierKind** (also the application order): Size, Count, Mood, Quality, Element, State, Motion, Material
 
 Notes:
 - `Plant` and `Machine` categories were added to the brief's list (both briefs need them: TD maps Machines to turrets).
@@ -223,7 +236,7 @@ export type Reaction = {
 local WordEngineServer = require(ServerScriptService.WordEngineServer)
 WordEngineServer.start({
   game = "Wizard" | "Defend",          -- analytics namespace
-  aiSecretName = "WORDENGINE_AI_KEY",  -- Secrets Store name
+  aiSecretName = "ANTHROPIC_API_KEY",  -- Secrets Store name (domain api.anthropic.com), one key per game
   remotes = true,                       -- create default remotes in ReplicatedStorage.WordEngineRemotes
 })
 
@@ -246,16 +259,35 @@ Admin.retag(id, patch) / Admin.forceResult(word, result) / Admin.ban(word) / Adm
 input
  -> Safety (rate limit, spam, blocklist on normalized text) -> Fallback if blocked
  -> Normalizer (lowercase, trim, collapse spaces, strip punctuation/emoji, number words, leetspeak, 3+ repeats -> 2)
+ -> per-server memory cache -> MemoryStore hot cache -> DataStore permanent cache     [server; free]
  -> Library exact / alias
  -> Stemmer (plurals, -ing/-ed/-er, irregulars: wolves->wolf, mice->mouse)
  -> Known-misspellings table
  -> Fuzzy: Damerau-Levenshtein w/ keyboard-adjacency costs (QWERTY + phone), BK-tree, length-scaled thresholds
  -> Phonetic: Double Metaphone index
- -> Multi-word: split, strip/parse modifiers (max 3, Config caps), correct each token, longest library phrase wins
- -> [server] Cache (MemoryStore -> DataStore)
- -> [server] AI (strict JSON -> Schema.repair) — only if confidence < Config.AI.Threshold
+ -> Phrase parser (§5a): count + modifiers + material + base thing + extras, each token corrected
+ -> [server] AI (Claude, strict JSON via tool use -> Schema.repair) — only if confidence < Config.AI.Threshold,
+    the AI is enabled (live kill switch), under the daily spend cap and the player's new-phrase rate limit.
+    MemoryStore lock per phrase so only one server in the game ever pays for a phrase. Result written to the
+    permanent cache immediately (retry + queue, never lose a paid result), plus the typo as an alias.
  -> Fallback blob
 ```
+
+### 5a. Phrase parser (brief 4 §2-3)
+
+Every input parses into **count + modifiers + material + base thing + extras**:
+
+- Word order is forgiving ("shark angry" == "angry shark"). Articles/fillers are dropped ("a", "the", "some").
+- Material phrasings: "spaghetti dragon", "dragon made of spaghetti", "dragon made out of spaghetti",
+  "spaghetti-dragon", "dragon of spaghetti", "dragon but spaghetti". A token that is both a thing and a material
+  is a material when another base thing is present ("cheese tank") and the base otherwise ("cheese").
+- Modifier kinds, applied in this order with caps from `Config.Modifiers`: Size, Count, Mood, Quality, Element,
+  State, Motion, Material. At least 4 stacked modifiers are supported ("tiny angry golden robot shark").
+- Contradictions resolve sensibly and with humour: opposing sizes cancel to Medium and set mood Confused
+  ("tiny giant shark"); two elements make a split-element result (`element` + `secondaryElement`).
+- Every applied modifier must be visible: modifiers add `visual.accents` and/or `mood`, which the builder renders.
+- Brands, franchises, copyrighted characters and real people are stripped to the generic idea by the parser
+  (blocklist of protected names -> generic replacement table) and by the AI prompt.
 
 Confidence bands: `>= 0.9` silent; `0.6..0.9` show "did you mean" chip with `correction.alternatives`; `< 0.6`
 treated as unknown (AI). Every successful correction is cached (`Cache`), so a typo is fuzzy-matched once.
@@ -293,6 +325,16 @@ Fire+Nature=Wildfire (Spreads), Wind+Fire=Firestorm, Earth blocks Lightning, Lig
 
 ## 8. Visual generation
 
+Build order: **body plan from the base thing -> material reshapes construction -> modifiers change proportions,
+posture, face, accents, effects and sound.** Faces (eyes + mouth with mood expressions) go on everything, objects
+included ("angry toaster"). Materials define construction (Strands for spaghetti/yarn, Bricks, Panels for cardboard,
+Wobble for jelly, Swarm for bees, Shards for glass/crystal, Inflated for balloons...), palette, particles, sound and
+gameplay hooks; they apply to signature models too and to both styles (a spectral spaghetti dragon is woven from
+glowing noodle strands). Material data: `data/materials.json` (150+), material x element interactions in
+`data/material_reactions.json` (fire melts cheese/ice, burns wood/cardboard; water ruins paper; lightning conducts
+through metal). Visual QA: `tools/gallery` renders 300+ random base x material x modifier phrases in both styles to a
+contact sheet each milestone; the worst 10% get fixed before moving on.
+
 - One builder, two styles. `Spectral` = Neon/ForceField energy, element-gradient Beams, Trails, ParticleEmitters,
   additive glow; `Solid` = chunky stylized SmoothPlastic/Plastic/Metal parts with readable silhouettes and
   colour-blocked materials.
@@ -319,19 +361,19 @@ Fire+Nature=Wildfire (Spreads), Wind+Fire=Firestorm, Earth blocks Lightning, Lig
 
 - Player data: session-locked DataStore records (lock with server JobId + timestamp, steal after timeout), retries
   with backoff, `version` field + ordered migrations, autosave + BindToClose.
-- **Cross-game sharing (word book + global word cache).** DataStores are per-universe, and the two games are
-  separate universes. Design: the **Type to Defend universe (10777140395) is the "home" store** for cross-game data.
-  - Each game keeps a local copy in its own DataStores (`WordEngine_WordBook_v1`, `WordEngine_WordCache_v1`) so
-    play never depends on the network.
-  - Servers sync with the home universe through **Open Cloud DataStore/MemoryStore APIs called from HttpService**
-    (`apis.roblox.com`, API key from the Secrets Store, scoped to the home universe's DataStores only). The Defend
-    game talks to its own stores directly and skips HTTP.
-  - Sync is write-behind and batched (word book merged on join/leave; cache entries pushed when the AI creates them,
-    pulled on cache miss before calling the AI). Merge is a union with max(playCount), so it is conflict-free.
-  - If the home is unreachable everything still works locally; the AI may be called twice for one word in the
-    worst case. Exact API availability and limits are verified in `docs/ROBLOX_PLATFORM_NOTES.md`.
-- Global word cache keys: normalized input -> `WordResult` JSON (+ `playCount`, `firstSeen`, `source`).
-  MemoryStore SortedMap is the hot layer (TTL 7 days, refreshed on hit).
+- **Cross-game sharing = promotion pipeline (brief 4 §5).** DataStores are per-game, so each game keeps its own
+  permanent word cache (`WordEngine_WordCache_v1`) and word book. `tools/promote.py` (run offline with an Open Cloud
+  key from env vars) pulls both games' caches through the Open Cloud DataStore API, merges them, flags conflicts and
+  popular new phrases for review, and writes approved entries into `data/words/promoted_*.jsonl`. Shipping a shared
+  update gives both games every word either has learned. Unknown/fallback phrases are logged with counts
+  (`WordEngine_Unknown_v1`) and pulled by the same tool into a coverage report.
+- The word book is per game in v1 (brief 1 wanted it shared; brief 4 makes per-game stores the rule). The promotion
+  tool can merge word books later if needed.
+- Permanent cache record: normalized phrase -> `{ result: WordResult JSON, playCount, firstSeen, source, aliasOf? }`.
+  MemoryStore SortedMap is the hot layer and also holds the per-phrase AI lock.
+- AI cost controls: daily spend cap (estimated from returned token usage, MemoryStore counter per UTC day), per-player
+  new-phrase limit, live kill switch (`Config.AI.Enabled`, readable live from a DataStore/attribute), Studio play-solo
+  uses an obvious mock provider because Secrets are only available in live servers and Team Test.
 
 ## 11. Testing
 
