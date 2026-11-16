@@ -46,14 +46,14 @@ return function(t)
 			t.ok(rec.set == "td" or rec.set == "summon", id .. " set")
 			t.ok(type(rec.size) == "table" and #rec.size == 3 and rec.size[1] > 0 and rec.size[2] > 0 and rec.size[3] > 0, id .. " size")
 			t.ok(type(rec.origin) == "table" and #rec.origin == 3, id .. " origin")
-			t.ok(type(rec.tris) == "number" and rec.tris > 0 and rec.tris <= 2200, id .. " triangle budget")
+			t.ok(type(rec.tris) == "number" and rec.tris > 0 and rec.tris <= 4000, id .. " triangle budget")
 			t.ok(type(rec.assetId) == "number" and rec.assetId > 0, id .. " uploaded asset id")
 			local j = json[id]
 			t.ok(j ~= nil and j.assetId == rec.assetId and j.tris == rec.tris, id .. " same as the JSON record")
 			if rec.set == "summon" then
 				summon += 1
 				tris += rec.tris
-				t.ok(rec.tris <= 1500, id .. " summon piece budget")
+				t.ok(rec.tris <= (if rec.kind == "unit" then 3200 else 1500), id .. " summon piece budget")
 			end
 		end
 		local jn = 0
@@ -217,6 +217,53 @@ return function(t)
 			t.ok(a.Ring1 ~= nil and a.Ring2 ~= nil and a.Ring1[5] * a.Ring2[5] < 0, style .. ": neighbouring rings counter-rotate while idle")
 			t.ok(a.Debris ~= nil and math.abs(a.Debris[5]) > 0.5, style .. ": debris orbits")
 		end
+	end)
+
+	t.test("hero sculpts: dragon and shark are cut along the rig and fall back as a whole", function()
+		local function leads(bp: any, prefix: string): (number, { [string]: boolean })
+			local n, bones = 0, {}
+			for _, p in bp.parts do
+				if type(p.mesh) == "string" and string.sub(p.mesh, 1, #prefix) == prefix then
+					n += 1
+					bones[p.bone or "Body"] = true
+					t.ok(Assets[p.mesh] ~= nil and Assets[p.mesh].kind == "unit", p.mesh .. " is a unit sculpt")
+					t.ok(Assets[p.mesh].tris <= 4000, p.mesh .. " stays under 4k triangles")
+				end
+			end
+			return n, bones
+		end
+		for _, style in { "Solid", "Spectral" } do
+			for seed = 1, 3 do
+				local bp = Summon.blueprint(sig("dragon"), { style = style, seed = seed })
+				local n, bones = leads(bp, "s_dragon_")
+				t.ok(n >= 14, style .. " dragon hero pieces, got " .. n)
+				for _, b in { "Body", "Neck", "Head", "Jaw", "HipFR", "KneeFR", "HipBL", "KneeBL", "Tail1", "Tail3" } do
+					t.ok(bones[b], "dragon piece on bone " .. b)
+				end
+				local tris = 0
+				for _, p in bp.parts do
+					if p.mesh then
+						tris += Assets[p.mesh].tris
+					end
+				end
+				t.ok(tris < 30000, "dragon triangle total " .. tris)
+				local sb = Summon.blueprint(sig("shark"), { style = style, seed = seed })
+				local ns = leads(sb, "s_shark_")
+				t.ok(ns == 4 or (style == "Spectral" and ns == 5), style .. " shark hero pieces (Spectral adds the aura shell), got " .. ns)
+			end
+		end
+		-- a material that rebuilds the masses takes the WHOLE hero set back to the generic pieces
+		local r = sig("dragon")
+		r.material = "spaghetti"
+		local bp = Summon.blueprint(r, { style = "Solid", seed = 1 })
+		t.eq(leads(bp, "s_dragon_"), 0, "spaghetti dragon: no stray hero piece")
+		t.ok(bp.stats.meshParts > 0, "spaghetti dragon keeps the generic pieces")
+		t.eq(#Summon.check(bp), 0, "spaghetti dragon z-fighting")
+		local g = sig("shark")
+		g.material = "glass"
+		local gb = Summon.blueprint(g, { style = "Solid", seed = 1 })
+		local n = leads(gb, "s_shark_")
+		t.ok(n == 0 or n >= 4, "glass shark: all or nothing")
 	end)
 
 	t.test("Instantiate: primitives without assets, MeshParts with them, hot swap", function()

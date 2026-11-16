@@ -21,6 +21,67 @@ local function bellyPlates(B: any, A: any, n: number)
 	end
 end
 
+-- The dragon hero sculpt (tools/meshgen/catalogue/s_dragon.py): one coherent dragon cut along the rig. Each piece
+-- leads from one primitive of its bone and absorbs the same-bone primitives it replaces; the primitives stay as
+-- the fallback build and as the z-fighting checker's subject.
+local function dragonSculpt(B: any)
+	local byName: { [string]: any } = {}
+	for _, p in B.parts do
+		if p.name then
+			byName[p.name] = p
+		end
+	end
+	local function where(role: string, bone: string?): { any }
+		local out = {}
+		for _, p in B.parts do
+			if p.role == role and (bone == nil or p.bone == bone) and p.shape ~= "Wedge" == (role ~= "ear" and role ~= "spike") then
+				table.insert(out, p)
+			end
+		end
+		return out
+	end
+	local function lead(part: any?, id: string, members: { any }?)
+		if part then
+			for _, m in members or {} do
+				m.mesh = nil
+			end
+			B:sculpt(part, id, members)
+			part.heroSet = "dragon"
+		end
+	end
+	local chest = byName.Chest
+	lead(byName.Torso, "s_dragon_body", if chest then { chest } else {})
+	local plates = {}
+	for i = 2, 4 do
+		table.insert(plates, byName["BellyPlate" .. i])
+	end
+	lead(byName.BellyPlate1, "s_dragon_belly", plates)
+	lead(byName.Neck, "s_dragon_neck")
+	if byName.Head then
+		local hb = byName.Head.bone
+		local members = where("ear", hb)
+		table.insert(members, byName.Snout)
+		lead(byName.Head, "s_dragon_head", members)
+		local horns = where("horn", hb)
+		local first = table.remove(horns, 1)
+		lead(first, "s_dragon_horns", horns)
+	end
+	lead(byName.Jaw, "s_dragon_jaw")
+	for _, tag in { "F", "B" } do
+		for _, side in { "R", "L" } do
+			local suffix = if tag == "F" then "_f" else "_h"
+			lead(where("limb", "Hip" .. tag .. side)[1], "s_dragon_thigh" .. suffix)
+			lead(where("limb", "Knee" .. tag .. side)[1], "s_dragon_shin" .. suffix)
+		end
+	end
+	local tails = where("tail")
+	for i, seg in tails do
+		if i <= 3 and (i < 3 or seg.trail or i == #tails) then
+			lead(seg, "s_dragon_tail" .. i, where("spike", seg.bone))
+		end
+	end
+end
+
 S.dragon = {
 	plan = "Quadruped|Dragon",
 	build = function(B: any, ctx: any)
@@ -40,6 +101,9 @@ S.dragon = {
 		end
 		B:emit("flame", nil, { socket = "mouth", rate = 30, spread = 0.3 })
 		B:setRig("breath", "mouth")
+		if ctx.detail >= 2 then
+			dragonSculpt(B)
+		end
 	end,
 }
 
@@ -115,6 +179,34 @@ S.shark = {
 		-- toothy grin
 		if ctx.detail >= 2 then
 			Parts.teeth(B, { bone = A.headBone, y = A.mouth[2] + h * 0.02, z = A.mouth[3] + l * 0.03, r = w * 0.22, n = 4, h = h * 0.14, pri = 2.2 })
+		end
+		-- hero sculpt (catalogue/s_fx.py), cut along the swim rig: trunk, tail stock, caudal fin, dorsal fin
+		local top, low, dorsal
+		for _, p in B.parts do
+			if p.name == "Body" then
+				B:sculpt(p, "s_shark_body")
+				p.heroSet = "shark"
+			elseif p.name == "Rear" then
+				B:sculpt(p, "s_shark_rear")
+				p.heroSet = "shark"
+			elseif p.name == "TailTop" then
+				top = p
+			elseif p.name == "TailLow" then
+				low = p
+			elseif p.role == "fin" and p.shape == "Wedge" and p.bone == A.body.bone and dorsal == nil then
+				dorsal = p
+			end
+		end
+		if top then
+			if low then
+				low.mesh = nil
+			end
+			B:sculpt(top, "s_shark_tail", { low })
+			top.heroSet = "shark"
+		end
+		if dorsal then
+			B:sculpt(dorsal, "s_shark_dorsal")
+			dorsal.heroSet = "shark"
 		end
 	end,
 }

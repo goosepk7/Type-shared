@@ -100,6 +100,15 @@ class Group:
         m = float(np.mean(s))
         return S.SDF(lambda u: shape((u * s) @ R.T + pos) / m)
 
+    def local(self, shape):
+        """Model-space SDF -> the lead's local frame in studs (use with piece(..., kind="unit", lead=G.s))."""
+        pos, R = self.pos, self.R
+        return S.SDF(lambda q: shape(q @ R.T + pos))
+
+    def region_local(self, pad=0.2, extra=()):
+        u = np.array(self.region(0.0, extra))
+        return tuple(float(v) for v in (u * self.s + pad))
+
     def to_unit(self, pts):
         return ((np.asarray(pts, float) - self.pos) @ self.R) / self.s
 

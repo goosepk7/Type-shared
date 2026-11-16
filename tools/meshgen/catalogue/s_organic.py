@@ -147,13 +147,13 @@ def s_hoof():
     return direct.revolve([(-0.3, 0), (-0.27, 0.4), (-0.2, 0.5), (-0.05, 0.47), (0.12, 0.41), (0.2, 0.44), (0.27, 0.4), (0.3, 0)], segs=12, axis=0, spline=2)
 
 
-@piece("s_wing_feather", (0.6, 0.12, 0.4), tris=400, fit=(1.0, 0.1, 0.42), mirror=True)
+@piece("s_wing_feather", (0.6, 0.2, 0.4), tris=400, fit=(1.0, 0.16, 0.42), mirror=True)
 def s_wing_feather():
     """Feathered wing blade (root -X, tip +X, leading edge -Z): thick leading arm, layered flight feathers with
     scalloped trailing tips."""
     lead = lambda t: -0.2 + 0.05 * np.sin(t * np.pi) - 0.02 * t
-    trail = lambda t: lead(t) + 0.4 * (0.5 + 0.6 * np.sin(np.pi * min(t * 0.9 + 0.05, 1))) * (1 - 0.4 * t ** 3) - 0.035 * abs(np.sin(t * np.pi * 6))
-    thick = lambda t, u: (0.012 + 0.045 * (1 - u) ** 2.2) * (1 - 0.5 * t) + 0.006 * (np.cos(t * np.pi * 12) > 0) * (u > 0.35)
+    trail = lambda t: lead(t) + 0.42 * (0.72 + 0.4 * np.sin(np.pi * min(t * 0.9 + 0.05, 1))) * (1 - 0.3 * t ** 3) - 0.04 * abs(np.sin(t * np.pi * 6))
+    thick = lambda t, u: (0.03 + 0.075 * (1 - u) ** 1.6) * (1 - 0.45 * t) + 0.012 * (np.cos(t * np.pi * 12) > 0) * (u > 0.3)
     return direct.blade(lead, trail, thick, camber=lambda t, u: 0.02 * (1 - u), nt=25, nu=7)
 
 

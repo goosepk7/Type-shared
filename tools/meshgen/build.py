@@ -27,6 +27,10 @@ def make(pid, ao=True):
     aoc = mesher.bake_ao(m) if ao else None
     mesher.export_glb(m, os.path.join(OUT, pid + ".glb"), pid, aoc)
     size = (m.bounds[1] - m.bounds[0]).tolist()
+    if p.lead:
+        # authored in studs on a reference lead: record unit-frame values (fractions of the lead's size)
+        size = [float(s / l) for s, l in zip(size, p.lead)]
+        origin = [float(o / l) for o, l in zip(origin, p.lead)]
     flat = mesher.flat_faces(m)
     return pid, {
         "size": [round(v, 4) for v in size],

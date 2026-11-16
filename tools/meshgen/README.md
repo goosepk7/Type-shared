@@ -37,6 +37,11 @@ pivot="center", mirror=False, set=None)`. `mirror` and `set` are additions to th
 `mirror=True` also emits the x-mirrored twin `<id>_l`; `set` is filled in by the loader ("td": body, features,
 face; "summon": s_organic, s_heads, s_hard, s_hero).
 
+`lead=(sx, sy, sz)` (third addition, unit pieces only): the sculpt is authored in the lead primitive's local
+frame in studs, at the reference lead size, so its normals keep true proportions; the manifest size / origin are
+divided by `lead`. `catalogue/refs.py` (`Group.local`, `Group.region_local`) converts a model-space sculpt.
+Hero sets: `s_dragon.py`, `s_fx.py` (shark, tornado, asteroid, blaze, accretion disc).
+
 Kinds:
 
 | kind | authored in | placed by |

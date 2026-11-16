@@ -41,6 +41,25 @@ local function add(r, style, seed, primitive)
 	table.insert(bps, bp)
 end
 
+local libCache
+-- 5 stud tall character-height reference figure beside a blueprint
+local function addRef(bp)
+	local minX, minZ = math.huge, math.huge
+	for _, p in bp.parts do
+		local e = math.max(p.size[1], p.size[2], p.size[3]) / 2
+		minX = math.min(minX, p.cf[1] - e)
+		minZ = math.min(minZ, p.cf[3] - e)
+	end
+	local x, z = minX - 1.5, minZ - 1.5
+	local grey = { 0.62, 0.62, 0.66 }
+	local function ref(name, shape, sx, sy, sz, y)
+		table.insert(bp.parts, { name = name, shape = shape, size = { sx, sy, sz }, cf = { x, y, z, 1, 0, 0, 0, 1, 0, 0, 0, 1 }, colour = grey, material = "SmoothPlastic", transparency = 0 })
+	end
+	ref("RefLegs", "Block", 1.6, 2, 0.9, 1)
+	ref("RefTorso", "Block", 2, 1.9, 1, 2.95)
+	ref("RefHead", "Ball", 1.15, 1.15, 1.15, 4.42)
+end
+
 if mode == "plans" then
 	local style = args[2] or "Solid"
 	local size = args[3] or "Medium"
@@ -267,6 +286,70 @@ elseif mode == "scale" then
 		end
 		if r then
 			add(r, style, 1)
+			addRef(bps[#bps])
+		end
+	end
+	cols = "2"
+	views = "front,iso"
+	tilePx = "420"
+elseif mode == "hero" then
+	-- lune run tools/render_blueprint hero <comma list> out.png [size]: per word three rows with a 5 stud reference
+	-- figure: Solid primitives, Solid sculpt, Spectral sculpt (side + 3/4 view)
+	for _, s in string.split(args[2] or "dragon", ",") do
+		local function base(word)
+			for _, sw in F.SignatureWords do
+				if sw[1] == word then
+					return F.signatureResult(Schema, sw, args[4])
+				end
+			end
+			for _, plan in Schema.Enums.BodyPlan do
+				for v, var in F.Variants[plan] or {} do
+					if var[1] == word then
+						return F.synthetic(Schema, plan, args[4] or "Medium", v)
+					end
+				end
+			end
+			libCache = libCache or F.library(Schema)
+			for _, e in libCache do
+				if e.id == word then
+					local copy = table.clone(e)
+					copy.visual = table.clone(e.visual)
+					return copy
+				end
+			end
+			return nil
+		end
+		local function result()
+			local r = base(s)
+			if r == nil then
+				-- "<material> <word>" (glass shark, spaghetti dragon)
+				local mat, rest = string.match(s, "^(%S+)%s+(.+)$")
+				if mat then
+					r = base(rest)
+					if r then
+						r.material = mat
+						r.phrase = s
+					end
+				end
+			end
+			return r
+		end
+		if result() then
+			add(result(), "Solid", 1, true)
+			addRef(bps[#bps])
+			add(result(), "Solid", 1)
+			addRef(bps[#bps])
+			add(result(), "Spectral", 1)
+			addRef(bps[#bps])
+		end
+	end
+	cols = "3"
+	views = "side,iso"
+	tilePx = "400"
+end
+if false then
+	do
+		do
 			local bp = bps[#bps]
 			local minX = math.huge
 			for _, p in bp.parts do
@@ -300,6 +383,8 @@ for _, bp in bps do
 end
 local tmp = out .. ".json"
 fs.writeFile(tmp, serde.encode("json", clean))
+tilePx = process.env.SUMMON_TILE or tilePx
+views = process.env.SUMMON_VIEWS or views
 local pyArgs = { "tools/render_blueprint.py", tmp, out, "--cols", cols, "--tile", tilePx, "--views", views }
 if useMesh then
 	table.insert(pyArgs, "--mesh")

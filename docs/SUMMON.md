@@ -181,10 +181,27 @@ loaded and builds the primitive otherwise, so the primitive build is always the 
   are coplanar only where their primitives were; organic and unit sculpts have no planar box faces, they sit
   inside or bulge slightly past the primitive's curved surface, where surfaces intersect at an angle instead
   of lying coincident. A mesh next to a still-primitive neighbour is the same case.
-- **Budgets.** 81 summon pieces, 39.2k triangles in total; a piece costs 20-1500 triangles (blocks about 300,
+- **Budgets.** 107 summon pieces, 70.8k triangles in total; a generic piece costs 20-1500 triangles, a hero piece up to
+  3200 (blocks about 300,
   limbs about 300, heads 600-1300, bodies up to 1500). The part budget already caps a summon's part count, and
   sculpt groups remove parts, so a 50-part hero stays under about 20k triangles.
-- **Offline.** `lune run tools/render_blueprint beforeafter out.png` ray-traces the same blueprints with and
+- **Hero sculpts.** Signature heroes are one coherent model sculpted in model space on the signature's reference
+  build (`tools/meshgen/refs.json`) and then cut along the rig, one unit piece per bone, so the Animator still
+  moves every joint (joints are overlapping balls):
+  - *dragon* (`catalogue/s_dragon.py`, 17 pieces, 19.9k triangles, about 22k with the wings): body, belly and breast
+    plates, neck with throat scutes and dorsal fins, skull, jaw, horn crown, four two-piece legs with clawed feet,
+    three tail pieces ending in a barbed spade, plus the `s_wing_bat` membranes;
+  - *shark* (`s_fx.py`): trunk with overhanging snout, tail stock with keels and small fins, crescent caudal
+    fin, swept dorsal fin; the pale Belly primitive stays a separate part in a recess of the trunk;
+  - *tornado*: every funnel ring is an `s_funnel` auger with three helical ridges (the per-ring rotors make it a
+    barber pole), `s_streak` wind ribbons, boulder debris;
+  - *asteroid / meteor*: `s_asteroid` (rimmed craters, chipped facets) leading the Rock blocks, `s_blaze` flame
+    shroud and wake; *black hole*: `s_accretion` pinwheel discs.
+  Each hero lead carries `heroSet`; when a material or accent takes any piece of a set back to a primitive
+  (spaghetti dragon, glass shark), `MeshMap.validate` steps the WHOLE set down to the generic role / shape pieces,
+  so sculpted and primitive pieces of one hero never mix.
+- **Offline.** `lune run tools/render_blueprint hero <words> out.png` draws Solid primitives, Solid sculpt and
+  Spectral sculpt next to a 5 stud figure (`docs/img/hero_*.png`); `lune run tools/render_blueprint beforeafter out.png` ray-traces the same blueprints with and
   without the pieces (`docs/img/mesh_before_after.png`); `scale <style> <words> out.png` draws summons next to a
   5 stud character-height figure (`docs/img/spectral_scale.png`); the contact sheet shows the mesh build
   (`SUMMON_MESH=0` for primitives). `tests/specs/mesh.spec.luau` checks the manifest, that every referenced

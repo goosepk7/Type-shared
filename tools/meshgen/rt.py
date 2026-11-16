@@ -313,7 +313,8 @@ def render(parts, az, el, W, ss=2, ao_rays=6, ground=True, bounds_pts=None, bg=N
             lam = np.clip(n @ LIGHT, 0, 1)
             hemi = SKY * (0.5 + 0.5 * n[:, 1:2]) + GROUND * (0.5 - 0.5 * n[:, 1:2])
             rim = np.clip(n @ RIM, 0, 1) ** 2
-            shade = base * (1.05 * lam[:, None] * vis[:, None] * np.array([1.0, 0.96, 0.9]) + 0.5 * hemi * ao[:, None]) + 0.18 * rim[:, None] * ao[:, None]
+            fill = np.clip(-(n @ fwd), 0, 1)  # camera-side fill: faces turned away from the key light still read
+            shade = base * (1.05 * lam[:, None] * vis[:, None] * np.array([1.0, 0.96, 0.9]) + 0.5 * hemi * ao[:, None] + 0.3 * fill[:, None] * ao[:, None]) + 0.18 * rim[:, None] * ao[:, None]
             h = LIGHT - fwd
             h /= np.linalg.norm(h)
             spec = np.clip(n @ h, 0, 1) ** np.where(fl[:, 1] > 0, 40, 18)

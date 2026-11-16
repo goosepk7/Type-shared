@@ -224,14 +224,15 @@ function Parts.wings(B: any, o: any)
 	end
 	-- bat / dragon: arm bone along the leading edge, then fingers, membrane panels between
 	local shoulder = { x, y, z }
-	local elbow = { x + span * 0.42, y + span * 0.28, z - span * 0.05 }
-	local wrist = { x + span * 0.72, y + span * 0.36, z + span * 0.08 }
-	B:mlimb(shoulder, elbow, span * 0.09, { col = "dark", mat = "skin", bone = "Wing#", pri = pri, role = "wing" }, 0.1)
-	B:mlimb(elbow, wrist, span * 0.07, { col = "dark", mat = "skin", bone = "Wing#", pri = pri + 0.2, role = "wing" }, 0.1)
+	-- raised in a strong V (the membrane shows as a sail from the side as well as from the front)
+	local elbow = { x + span * 0.4, y + span * 0.36, z - span * 0.05 }
+	local wrist = { x + span * 0.68, y + span * 0.56, z + span * 0.08 }
+	B:mlimb(shoulder, elbow, span * 0.07, { col = "dark", mat = "skin", bone = "Wing#", pri = pri, role = "wing" }, 0.1)
+	B:mlimb(elbow, wrist, span * 0.05, { col = "dark", mat = "skin", bone = "Wing#", pri = pri + 0.2, role = "wing" }, 0.1)
 	local tips = {
-		{ x + span * 1.0, y + span * 0.12, z + span * 0.18 },
-		{ x + span * 0.86, y - span * 0.12, z + span * 0.42 },
-		{ x + span * 0.55, y - span * 0.22, z + span * 0.55 },
+		{ x + span * 0.98, y + span * 0.46, z + span * 0.18 },
+		{ x + span * 0.86, y + span * 0.2, z + span * 0.42 },
+		{ x + span * 0.55, y - span * 0.02, z + span * 0.55 },
 	}
 	-- finger spars (thin)
 	for i, tip in (if detail >= 3 then tips else {}) do

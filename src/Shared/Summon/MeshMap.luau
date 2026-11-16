@@ -21,6 +21,10 @@ MeshMap.Left = {
 	s_wing_feather = true,
 	s_fin_side = true,
 	s_wing_bat = true,
+	s_dragon_thigh_f = true,
+	s_dragon_shin_f = true,
+	s_dragon_thigh_h = true,
+	s_dragon_shin_h = true,
 } :: { [string]: boolean }
 
 -- Pieces from the shared "td" set (uploaded by Type-defend) that the summon builder uses too. Instantiate preloads
@@ -76,6 +80,9 @@ local HERO: { [string]: { [string]: string } } = {
 	["hat/Helmet"] = { Ellipsoid = "s_helmet" },
 	["armour/Pauldron"] = { Ellipsoid = "biped_pauldron" },
 	["blade/Blade"] = { Block = "s_blade" },
+	["body/Ring"] = { Ellipsoid = "s_funnel" }, -- tornado funnel segments
+	["detail/RingStreak"] = { Ellipsoid = "s_streak" },
+	["detail/Debris"] = { Block = "boulder" },
 }
 MeshMap.Hero = HERO
 
@@ -312,6 +319,43 @@ function MeshMap.validate(parts: { any })
 	local function changed(p: any): boolean
 		return p.noMesh == true or (p.meshShape ~= nil and (p.shape ~= p.meshShape or not sameProportions(p.meshSize, p.size)))
 	end
+	-- Hero sculpts (part.heroSet, e.g. the dragon) are one coherent model cut along the rig: when a material or an
+	-- accent takes any piece of it back to a primitive, the whole set steps down to the generic role / shape
+	-- pieces, so a "spaghetti dragon" never mixes a sculpted hind leg with a noodle-wrapped primitive torso.
+	local failed: { [string]: boolean } = {}
+	for _, p in parts do
+		local lead = p.meshOf
+		if p.heroSet and p.mesh and changed(p) then
+			failed[p.heroSet] = true
+		elseif type(lead) == "table" and lead.heroSet and changed(p) then
+			failed[lead.heroSet] = true
+		end
+	end
+	local function generic(p: any)
+		p.mesh = nil
+		if not changed(p) then
+			local id = MeshMap.pick(p, nil)
+			if id and p.mirrored and MeshMap.Left[id] then
+				id ..= "_l"
+			end
+			p.mesh = id
+		end
+	end
+	if next(failed) then
+		for _, p in parts do
+			local lead = p.meshOf
+			if type(lead) == "table" and lead.heroSet and failed[lead.heroSet] then
+				p.meshOf = nil
+				generic(p)
+			end
+		end
+		for _, p in parts do
+			if p.heroSet and failed[p.heroSet] then
+				p.heroSet = nil
+				generic(p)
+			end
+		end
+	end
 	for _, p in parts do
 		if p.mesh and changed(p) then
 			p.mesh = nil
@@ -347,7 +391,7 @@ function MeshMap.settle(parts: { any }): number
 		if p.mesh then
 			n += 1
 		end
-		p.meshShape, p.meshSize, p.noMesh = nil, nil, nil
+		p.meshShape, p.meshSize, p.noMesh, p.heroSet = nil, nil, nil, nil
 	end
 	return n
 end

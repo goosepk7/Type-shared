@@ -39,18 +39,22 @@ class Piece:
     pivot: str = "center"
     tags: list = field(default_factory=list)
     set: str = "td"
+    lead: Optional[Tuple[float, float, float]] = None
 
 
-def piece(id, region, tris=1200, fit=None, kind=None, note="", res=120, smooth=6, pivot="center", mirror=False, set=None):
-    """Same signature as the Type-defend copy plus two optional keywords: mirror, set."""
+def piece(id, region, tris=1200, fit=None, kind=None, note="", res=120, smooth=6, pivot="center", mirror=False, set=None, lead=None):
+    """Same signature as the Type-defend copy plus three optional keywords: mirror, set, lead.
+    lead (unit pieces): size in studs of the reference lead primitive. The sculpt is then authored in the lead's
+    local frame in STUDS (true proportions, so normals survive the stretch) and the manifest size / origin are
+    divided by it to give unit-frame values."""
 
     def deco(fn):
         k = kind or ("box" if fit else "anchor")
         doc = note or (fn.__doc__ or "").strip()
         group = set or _CURRENT_SET[0]
-        REGISTRY[id] = Piece(id, fn, tuple(region), tris, tuple(fit) if fit else None, k, doc, res, smooth, pivot, [], group)
+        REGISTRY[id] = Piece(id, fn, tuple(region), tris, tuple(fit) if fit else None, k, doc, res, smooth, pivot, [], group, tuple(lead) if lead else None)
         if mirror:
-            REGISTRY[id + "_l"] = Piece(id + "_l", lambda: _mirrored(fn()), tuple(region), tris, tuple(fit) if fit else None, k, doc + " (left: mirrored in x)", res, smooth, pivot, [], group)
+            REGISTRY[id + "_l"] = Piece(id + "_l", lambda: _mirrored(fn()), tuple(region), tris, tuple(fit) if fit else None, k, doc + " (left: mirrored in x)", res, smooth, pivot, [], group, tuple(lead) if lead else None)
         return fn
 
     return deco
@@ -75,7 +79,7 @@ def _flip_x(p):
 
 _CURRENT_SET = ["td"]
 # Modules ported unchanged from Type-defend (set "td", asset ids shared with that game) and the Summon set.
-_MODULES = [("td", ["body", "features", "face"]), ("summon", ["s_organic", "s_heads", "s_hard", "s_hero"])]
+_MODULES = [("td", ["body", "features", "face"]), ("summon", ["s_organic", "s_heads", "s_hard", "s_hero", "s_dragon", "s_fx"])]
 
 
 def load_all():

@@ -147,9 +147,10 @@ function K.fireball(B: any, ctx: any)
 	local hot, mid, deep = "flameCore", "flame", { 0.86, 0.2, 0.05 }
 	if rocky then
 		-- meteor: a dark faceted rock leading, wrapped in fire
-		B:block(2.2, 2.0, 2.3, at(0, y, -0.25, rad(23), rad(31), rad(12)), { col = "darkStone", mat = "stone", pri = 1, role = "body", name = "Rock" })
-		B:block(1.9, 2.1, 1.8, at(0.1, y - 0.05, -0.2, rad(-17), rad(-8), rad(37)), { col = "stone", mat = "stone", pri = 1.05, role = "body", name = "Rock2" })
-		B:ell(2.5, 2.5, 2.9, at(0, y, 0.35), { col = mid, mat = "neon", glow = true, tr = 0.35, pri = 1.1, role = "core", name = "Blaze", noCore = true })
+		local rock = B:block(2.2, 2.0, 2.3, at(0, y, -0.25, rad(23), rad(31), rad(12)), { col = "darkStone", mat = "stone", pri = 1, role = "body", name = "Rock" })
+		local rock2 = B:block(1.9, 2.1, 1.8, at(0.1, y - 0.05, -0.2, rad(-17), rad(-8), rad(37)), { col = "stone", mat = "stone", pri = 1.05, role = "body", name = "Rock2" })
+		B:sculpt(rock, "s_asteroid", { rock2 }) -- one cratered rock
+		B:ell(2.5, 2.5, 2.9, at(0, y, 0.35), { col = mid, mat = "neon", glow = true, tr = 0.35, pri = 1.1, role = "core", name = "Blaze", noCore = true, mesh = "s_blaze" })
 	else
 		B:ball(1.5, at(0, y, -0.1), { col = hot, mat = "neon", glow = true, pri = 1, role = "core", name = "Core", noCore = true })
 		B:ball(2.3, at(0, y, 0), { col = mid, mat = "neon", glow = true, tr = 0.3, pri = 1.05, role = "core", name = "Flame", noCore = true })
@@ -169,7 +170,7 @@ function K.fireball(B: any, ctx: any)
 	for i = 1, k do
 		local z = 2.2 + i * 1.5
 		local d = 2.0 - i * 0.55
-		B:ell(d, d, d * 1.8, at(0, y + i * 0.15, z), { col = if i == 1 then mid else deep, mat = "neon", glow = true, tr = 0.4 + i * 0.12, pri = 1.5 + i * 0.1, role = "tail", name = "Trail" .. i, trail = i == k, noCore = true })
+		B:ell(d, d, d * 1.8, at(0, y + i * 0.15, z), { col = if i == 1 then mid else deep, mat = "neon", glow = true, tr = 0.4 + i * 0.12, pri = 1.5 + i * 0.1, role = "tail", name = "Trail" .. i, trail = i == k, noCore = true, mesh = "s_blaze" })
 	end
 	B:emit("embers", nil, { socket = "core", rate = 30 })
 	table.insert(B.lights, { kind = "PointLight", colour = { 1, 0.6, 0.25 }, brightness = 2.2, range = 1.6, socket = "core", shadows = false })
@@ -308,16 +309,29 @@ function K.boulder(B: any, ctx: any)
 		{ 2.5, 2.7, 2.3, 0.15, 0.1, -0.1, -23, 61, 37, "light" },
 		{ 2.3, 2.2, 2.8, -0.2, -0.1, 0.12, 41, -13, -29, "dark" },
 	}
+	local built = {}
 	for i, r in rocks do
 		if i <= 2 or detail >= 1 then
-			B:block(r[1], r[2], r[3], at(r[4], y + r[5], r[6], rad(r[7]), rad(r[8]), rad(r[9])), { col = r[10], mat = "stone", pri = 1 + i * 0.05, role = "body", name = "Rock" .. i })
+			table.insert(built, B:block(r[1], r[2], r[3], at(r[4], y + r[5], r[6], rad(r[7]), rad(r[8]), rad(r[9])), { col = r[10], mat = "stone", pri = 1 + i * 0.05, role = "body", name = "Rock" .. i }))
 		end
 	end
+	-- the overlapping blocks are the fallback; the sculpt is one cratered rock in the first block's frame
+	B:sculpt(built[1], "s_asteroid", { built[2], built[3] })
 	if detail >= 2 then
 		B:block(1.1, 0.9, 1.2, at(1.2, y - 0.7, 0.6, rad(12), rad(33), rad(-21)), { col = "darker", mat = "stone", pri = 1.6, role = "detail", name = "Chip1" })
 		B:block(0.9, 1.0, 0.8, at(-1.15, y - 0.75, -0.5, rad(-31), rad(9), rad(18)), { col = "light", mat = "stone", pri = 1.65, role = "detail", name = "Chip2" })
 	end
-	if ctx.result.category ~= "Object" and ctx.result.element ~= "None" then
+	local spaceRock = string.find(string.lower(ctx.result.id), "asteroid") ~= nil or string.find(string.lower(ctx.result.id), "comet") ~= nil
+	if spaceRock then
+		-- a rock falling through the sky: a dim ember wake streaming off the back (+Z), sparks and a trail
+		if detail >= 1 then
+			B:ell(2.1, 2.0, 2.5, at(0.1, y + 0.15, 1.75, rad(-6), 0, 0), { col = "flame", mat = "neon", glow = true, tr = 0.5, pri = 1.45, role = "tail", name = "Wake1", noCore = true, mesh = "s_blaze" })
+		end
+		if detail >= 2 then
+			B:ell(1.3, 1.25, 1.9, at(0.15, y + 0.4, 3.35, rad(-8), 0, 0), { col = "flameCore", mat = "neon", glow = true, tr = 0.6, pri = 1.7, role = "tail", name = "Wake2", noCore = true, mesh = "s_blaze", trail = true })
+		end
+		B:emit("embers", nil, { socket = "core", rate = 18, spread = 0.9 })
+	elseif ctx.result.category ~= "Object" and ctx.result.element ~= "None" then
 		-- magical earth: a molten seam glowing out of the cracks
 		B:ell(3.1, 0.18, 2.9, at(0, y + 0.1, 0, rad(-14), rad(21), rad(9)), { col = "glow", mat = "neon", glow = true, pri = 1.4, role = "gem", name = "Seam", noCore = true })
 	end
@@ -383,8 +397,8 @@ function K.blackhole(B: any, ctx: any)
 	B:ball(2.4, at(0, y, 0), { col = "black", mat = "glass", pri = 1, role = "core", name = "Horizon", noCore = true })
 	B:bone("Disc", "Body", 0, y, 0)
 	B:addRig("rotors", { bone = "Disc", axis = "Y", speed = 3 })
-	B:ell(6.0, 0.18, 6.0, at(0, y, 0, rad(12), 0, 0), { col = "glow", mat = "neon", glow = true, tr = 0.2, bone = "Disc", pri = 1.1, role = "ring", name = "Accretion", noCore = true })
-	B:ell(4.2, 0.26, 4.2, at(0, y, 0, rad(12), 0, 0), { col = "flameCore", mat = "neon", glow = true, tr = 0.1, bone = "Disc", pri = 1.2, role = "ring", name = "Inner", noCore = true })
+	B:ell(6.0, 0.18, 6.0, at(0, y, 0, rad(12), 0, 0), { col = "glow", mat = "neon", glow = true, tr = 0.2, bone = "Disc", pri = 1.1, role = "ring", name = "Accretion", noCore = true, mesh = "s_accretion" })
+	B:ell(4.2, 0.26, 4.2, at(0, y, 0, rad(12), 0, 0), { col = "flameCore", mat = "neon", glow = true, tr = 0.1, bone = "Disc", pri = 1.2, role = "ring", name = "Inner", noCore = true, mesh = "s_accretion" })
 	if detail >= 2 then
 		B:ell(2.9, 2.9, 2.9, at(0, y, 0), { col = "secondary", mat = "glass", tr = 0.7, pri = 1.6, role = "shell", name = "Lens", noCore = true })
 	end
