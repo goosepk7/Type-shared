@@ -110,7 +110,8 @@ function Resolver.resolveLocalDetailed(text: string, aiThreshold: number?): (Wor
 	local spell = Speller.correct(text)
 	local threshold = aiThreshold or ((Config :: any).AI and (Config :: any).AI.Threshold) or 0.6
 	local result = build(text, spell, Config.Speller.UnknownBelow)
-	local needsAI = spell.canonical == nil or spell.confidence < threshold
+	-- Unplaced words ("kazoo orchestra" with no kazoo in the library) always get a second opinion from the AI.
+	local needsAI = spell.canonical == nil or spell.confidence < threshold or (spell.extras ~= nil and #spell.extras > 0)
 	return result, spell, needsAI
 end
 

@@ -40,6 +40,12 @@
       "$properties": {
         "Technology": "Future"
       }
+    },
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
     }
   }
 }

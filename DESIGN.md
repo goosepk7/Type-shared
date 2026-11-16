@@ -45,6 +45,10 @@ In the game's `default.project.json`:
   "WordEngineServer": { "$path": "Packages/WordEngine/src/Server" } }
 ```
 
+**Required in every game's project file:** `"HttpService": { "$className": "HttpService", "$properties": { "HttpEnabled": true } }`.
+"Allow HTTP Requests" is stored in the place file, so a Rojo-built place without this line turns HTTP back off and the
+AI silently falls back to the library (found in live checks on 2026-11-16).
+
 The shared repo ships `default.project.json` exposing the same two mounts, and `test.project.json`
 for the standalone test place.
 
@@ -289,7 +293,8 @@ Every input parses into **count + modifiers + material + base thing + extras**:
 - Brands, franchises, copyrighted characters and real people are stripped to the generic idea by the parser
   (blocklist of protected names -> generic replacement table) and by the AI prompt.
 
-Confidence bands: `>= 0.9` silent; `0.6..0.9` show "did you mean" chip with `correction.alternatives`; `< 0.6`
+Confidence bands: `>= 0.9` silent; `0.8..0.9` show "did you mean" chip with `correction.alternatives`; `< 0.8`
+(or any unplaced extra words) asks the AI while the library guess is shown instantly; `< 0.6`
 treated as unknown (AI). Every successful correction is cached (`Cache`), so a typo is fuzzy-matched once.
 
 ## 6. Data formats (`data/`)
