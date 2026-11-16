@@ -30,12 +30,16 @@ local BAND_TABLE = [[
 | Huge | 6-9 | elephant, dragon, tornado |
 | Colossal | 8-10 | kaiju, black hole, asteroid, tsunami |]]
 
+-- Order matters: the model writes fields in this order (schema properties and examples both use it), so the
+-- identifying fields come first and the judgement fields (stats, flavour, confidence) come after it has
+-- described the thing. Roblox's JSONEncode does not keep key order, hence Prompt.schemaJson below.
 local ITEM_FIELDS = {
-	"key", "refused", "id", "corrected", "confidence", "category", "element", "secondaryElement", "material",
-	"mood", "size", "shape", "behaviours", "power", "speed", "durability", "primaryColour", "secondaryColour",
-	"bodyPlan", "silhouetteHint", "motionHint", "soundHint", "accents", "flavourText", "tags",
+	"key", "refused", "id", "corrected", "category", "shape", "element", "secondaryElement", "material",
+	"size", "mood", "bodyPlan", "silhouetteHint", "behaviours", "power", "speed", "durability", "primaryColour",
+	"secondaryColour", "motionHint", "soundHint", "accents", "tags", "flavourText", "confidence",
 }
 Prompt.ItemFields = ITEM_FIELDS
+local schemaJsonCache: string? = nil
 
 -- Used when the Materials module isn't available. Generic, brand-free.
 local BUILTIN_MATERIALS = {
@@ -142,6 +146,7 @@ Prompt.encodeItem = encodeItem
 local cachedSystem: string? = nil
 
 function Prompt.resetCache()
+	schemaJsonCache = nil
 	cachedSystem = nil
 end
 
@@ -319,6 +324,27 @@ function Prompt.schema(): { [string]: any }
 		required = { "results" },
 		additionalProperties = false,
 	}
+end
+
+-- The same schema as Prompt.schema(), as a JSON string with properties in ITEM_FIELDS order.
+function Prompt.schemaJson(): string?
+	if schemaJsonCache then
+		return schemaJsonCache
+	end
+	local schema = Prompt.schema()
+	local item = schema.properties.results.items
+	local props, req = {}, {}
+	for _, k in ITEM_FIELDS do
+		local enc = Runtime.jsonEncode(item.properties[k])
+		if enc == nil then
+			return nil
+		end
+		table.insert(props, '"' .. k .. '":' .. enc)
+		table.insert(req, '"' .. k .. '"')
+	end
+	local itemJson = '{"type":"object","properties":{' .. table.concat(props, ",") .. '},"required":[' .. table.concat(req, ",") .. '],"additionalProperties":false}'
+	schemaJsonCache = '{"type":"object","properties":{"results":{"type":"array","items":' .. itemJson .. '}},"required":["results"],"additionalProperties":false}'
+	return schemaJsonCache
 end
 
 -- Model item -> raw table for Schema.repair (WordResult shape). Untrusted in, untrusted out.

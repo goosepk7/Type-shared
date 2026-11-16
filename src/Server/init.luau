@@ -2,7 +2,7 @@
 -- WordEngineServer facade. DESIGN §4.
 --
 --   local WordEngineServer = require(ServerScriptService.WordEngineServer)
---   WordEngineServer.start({ game = "Wizard", aiSecretName = "WORDENGINE_AI_KEY", remotes = true })
+--   WordEngineServer.start({ game = "Wizard", aiSecretName = "ANTHROPIC_API_KEY", remotes = true })
 --   local result, handle = WordEngineServer.Interpreter.interpretAsync(player, "flaming toaster")
 --
 -- Child modules load lazily (WordEngineServer.WordBook, .Admin, ...), like the Shared facade.

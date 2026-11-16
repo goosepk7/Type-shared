@@ -287,6 +287,7 @@ sendBatch = function(keys: { string }, gen: number)
 		system = Prompt.system(),
 		user = Prompt.user(keys),
 		schema = Prompt.schema(),
+		schemaJson = Prompt.schemaJson(),
 		maxTokens = maxTokens,
 		toolName = Prompt.TOOL_NAME,
 		keys = keys,

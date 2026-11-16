@@ -64,13 +64,13 @@ Config.AI = {
 		DisableThinking = true, -- Haiku 5.5 accepts thinking {type="disabled"} at effort high or below
 		OutputMode = "tool", -- "tool": forced tool_choice + strict JSON-schema tool; "json_schema": output_config.format
 		MaxTokensBase = 150,
-		MaxTokensPerWord = 260,
+		MaxTokensPerWord = 340,
 	},
 	OpenAICompatible = {
 		Endpoint = "", -- e.g. a /v1/chat/completions URL; set Model too
 		Model = "",
 		MaxTokensBase = 150,
-		MaxTokensPerWord = 260,
+		MaxTokensPerWord = 340,
 	},
 	Mock = { Latency = 0.3 }, -- seconds; canned results so play-solo exercises the whole pipeline
 	-- USD per million tokens (claude-haiku-5-5, prompts <= 100K tokens). Cache reads 0.1x, 5-min cache writes 1.25x.

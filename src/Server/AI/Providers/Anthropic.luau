@@ -17,7 +17,9 @@ Anthropic.name = "Anthropic"
 
 local modeOverride: string? = nil
 
-export type BuildArgs = { system: string, user: string, schema: any?, maxTokens: number, toolName: string? }
+export type BuildArgs = { system: string, user: string, schema: any?, schemaJson: string?, maxTokens: number, toolName: string? }
+
+local SCHEMA_SLOT = "@@WE_SCHEMA_SLOT@@"
 
 function Anthropic.mode(cfg: any): string
 	return modeOverride or cfg.OutputMode or "tool"
@@ -30,6 +32,8 @@ end
 function Anthropic.build(cfg: any, secret: any, args: BuildArgs): any
 	local mode = Anthropic.mode(cfg)
 	local outputConfig: { [string]: any } = { effort = cfg.Effort or "low" }
+	-- schemaJson (ordered properties) is spliced in after encoding: JSONEncode would shuffle the key order.
+	local schemaValue: any = if args.schemaJson then SCHEMA_SLOT else args.schema
 	local body: { [string]: any } = {
 		model = cfg.Model or "claude-haiku-5-5",
 		max_tokens = args.maxTokens,
@@ -43,16 +47,23 @@ function Anthropic.build(cfg: any, secret: any, args: BuildArgs): any
 			body.tools = { {
 				name = name,
 				description = "Submit exactly one interpreted result per input phrase.",
-				input_schema = args.schema,
+				input_schema = schemaValue,
 				strict = true,
 			} }
 			body.tool_choice = { type = "tool", name = name }
 		else
-			outputConfig.format = { type = "json_schema", schema = args.schema }
+			outputConfig.format = { type = "json_schema", schema = schemaValue }
 		end
 	end
 	if cfg.DisableThinking ~= false then
 		body.thinking = { type = "disabled" }
+	end
+	local encoded = Runtime.jsonEncode(body)
+	if encoded and args.schemaJson and args.schema then
+		local a, b = string.find(encoded, '"' .. SCHEMA_SLOT .. '"', 1, true)
+		if a and b then
+			encoded = string.sub(encoded, 1, a - 1) .. args.schemaJson .. string.sub(encoded, b + 1)
+		end
 	end
 	return {
 		Url = cfg.Endpoint or "https://api.anthropic.com/v1/messages",
@@ -62,7 +73,7 @@ function Anthropic.build(cfg: any, secret: any, args: BuildArgs): any
 			["anthropic-version"] = cfg.ApiVersion or "2026-10-21",
 			["Content-Type"] = "application/json",
 		},
-		Body = Runtime.jsonEncode(body),
+		Body = encoded,
 	}
 end
 
