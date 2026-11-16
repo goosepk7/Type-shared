@@ -1,0 +1,564 @@
+# typo<TAB>expected canonical (Resolver.resolveLocal(typo).canonical). Hand-written classics, phonetic
+# spellings and multi-word phrases first, then phone-adjacent / doubled / missing / transposed slips (seed 1337).
+pheonix	phoenix
+fenix	phoenix
+nite	night
+dinasour	dinosaur
+tornadoe	tornado
+missle	missile
+rhinocerous	rhinoceros
+sandwhich	sandwich
+lightening	lightning
+volcanoe	volcano
+sunami	tsunami
+huricane	hurricane
+asteriod	asteroid
+skeliton	skeleton
+zombi	zombie
+vampier	vampire
+wizzard	wizard
+spagetti	spaghetti
+brocoli	broccoli
+bananna	banana
+potatoe	potato
+chocolat	chocolate
+elefant	elephant
+girafe	giraffe
+crocodial	crocodile
+aligator	alligator
+gorila	gorilla
+octapus	octopus
+pengiun	penguin
+dolfin	dolphin
+squirel	squirrel
+kangeroo	kangaroo
+hippopotamous	hippopotamus
+butterfy	butterfly
+caterpiller	caterpillar
+scorpian	scorpion
+racoon	raccoon
+lizzard	lizard
+sheild	shield
+catapolt	catapult
+boomarang	boomerang
+granade	grenade
+dinamite	dynamite
+rockit	rocket
+helecopter	helicopter
+bycicle	bicycle
+ambulence	ambulance
+sissors	scissors
+pyramyd	pyramid
+blizard	blizzard
+avalanch	avalanche
+explosoin	explode
+firebal	fireball
+satelite	satellite
+mushrom	mushroom
+chiken	chicken
+mermade	mermaid
+centuar	centaur
+sorceror	wizard
+lemonaid	lemonade
+marshmellow	marshmallow
+pumkin	pumpkin
+krakken	kraken
+dragun	dragon
+dr4gon	dragon
+f1re	fire
+fiiiire	fire
+DRAGON!!!	dragon
+  Shark  	shark
+sharks	shark
+wolves	wolf
+mice	mouse
+geese	goose
+burning	burn
+t rex	tyrannosaurus rex
+trex	tyrannosaurus rex
+tyranosaurus rex	tyrannosaurus rex
+blak hole	black hole
+blackhole	black hole
+icecream	ice cream
+ice creme	ice cream
+giant fire shark	giant fire shark
+giatn fire shark	giant fire shark
+giant fier shark	giant fire shark
+giant fire shrak	giant fire shark
+shark giant	giant shark
+angry shark	angry shark
+angery shark	angry shark
+shark angry	angry shark
+tiny angry golden zombie shark	tiny angry golden zombie shark
+tiny angery goldan zombi shark	tiny angry golden zombie shark
+spaghetti dragon	spaghetti dragon
+spagetti dragn	spaghetti dragon
+dragon made of spaghetti	spaghetti dragon
+dragon made out of spaghetti	spaghetti dragon
+dragon of spaghetti	spaghetti dragon
+dragon but spaghetti	spaghetti dragon
+spaghetti-dragon	spaghetti dragon
+dragon made of spagetti	spaghetti dragon
+cheese tank	cheese tank
+tiny giant shark	tiny giant shark
+fire ice dragon	fire ice dragon
+swarm of bees	swarm of bees
+swarm of bes	swarm of bees
+army of zombies	army of zombies
+armey of zombies	army of zombies
+three sharks	three sharks
+3 sharks	three sharks
+small tornado	small tornado
+smal tornado	small tornado
+small tornadoe	small tornado
+giant asteroid	giant asteroid
+gaint asteroid	giant asteroid
+flaming meteor	fire meteor
+flamming meteor	fire meteor
+electric eel	electric eel
+golden dragon	golden dragon
+goldan dragon	golden dragon
+rainbow unicorn	rainbow unicorn
+rainbo unicorn	rainbow unicorn
+invisable ninja	invisible ninja
+ghost pirate	ghost ship crew
+robot dinosaur	robot dinosaur
+baby dragon	baby dragon
+babey dragon	baby dragon
+rocket powered shark	rocket powered shark
+rocket-powered shark	rocket powered shark
+roket powered shark	rocket powered shark
+spinning sword	spinning sword
+spining sword	spinning sword
+sleepy bear	sleepy bear
+sleapy bear	sleepy bear
+hungry hungry hippo	hungry hippopotamus
+upside down castle	upside down castle
+upside-down castle	upside down castle
+inflatable shark	inflatable shark
+inflatible shark	inflatable shark
+glitched robot	glitched robot
+legandary sword	legendary sword
+cursed sword	cursed sword
+holy shield	holy shield
+poisonous frog	poisonous frog
+poisinous frog	poisonous frog
+frozen dragon	frozen dragon
+frozzen dragon	frozen dragon
+ice phoenix	ice phoenix
+ice pheonix	ice phoenix
+lava golem	fire golem
+mega tornado	mega tornado
+colosal shark	colossal shark
+tiny elephant	tiny elephant
+tinie elephant	tiny elephant
+angry bees	angry bee
+pikachu	yellow electric mouse
+shrek	green ogre
+lego dragon	toy bricks dragon
+alirn	alien
+djinnn	djinn
+ghos	ghost
+faiyr	fairy
+hore	horse
+robpt	robot
+rbbit	rabbit
+wizadr	wizard
+grandms	grandma
+keetchup	ketchup
+helicopte	helicopter
+swapm	swamp
+werewokf	werewolf
+torndo	tornado
+flowre	flower
+astrobaut	astronaut
+chiccken	chicken
+glem	golem
+submraine	submarine
+draon	dragon
+aurors	aurora
+moutain	mountain
+muhsroom	mushroom
+treanr	treant
+islandd	island
+kiju	kaiju
+snkae	snake
+skeletn	skeleton
+doctoe	doctor
+frtress	fortress
+pospicle	popsicle
+pefasus	pegasus
+spacesship	spaceship
+golin	goblin
+caslte	castle
+prate	pirate
+pterodactyk	pterodactyl
+apocalyse	apocalypse
+bigfoto	bigfoot
+mobster	monster
+octopuus	octopus
+phoeni	phoenix
+vamipre	vampire
+exolode	explode
+graeyard	graveyard
+hpipopotamus	hippopotamus
+villaim	villain
+dinosauur	dinosaur
+firebll	fireball
+padna	panda
+pjone	phone
+sandwrm	sandworm
+spiedr	spider
+rockey	rocket
+vikiing	viking
+fiefighter	firefighter
+frostblot	frostbolt
+shriken	shuriken
+woldfire	wildfire
+corl	coral
+muose	mouse
+rhinpceros	rhinoceros
+sheeep	sheep
+site	smite
+cerbeurs	cerberus
+draonfire	dragonfire
+jellu	jelly
+seep	sleep
+trani	train
+sanfstorm	sandstorm
+broomsticck	broomstick
+cacus	cactus
+knigth	knight
+bsnshee	banshee
+cowoy	cowboy
+cyclosp	cyclops
+gorolla	gorilla
+jesster	jester
+jugle	jungle
+nebual	nebula
+plaet	planet
+dybamite	dynamite
+lightsber	lightsaber
+anegl	angel
+firefky	firefly
+magicc	magic
+slme	slime
+superhreo	superhero
+cavean	caveman
+drumstock	drumstick
+eephant	elephant
+pancaek	pancake
+thunderstoem	thunderstorm
+supernnova	supernova
+tsunai	tsunami
+lumberajck	lumberjack
+medua	medusa
+swoed	sword
+crocoile	crocodile
+freeez	freeze
+fridgw	fridge
+galaxxy	galaxy
+meglodon	megalodon
+spinoasurus	spinosaurus
+vaish	vanish
+windnill	windmill
+dolphi	dolphin
+ktisune	kitsune
+mernaid	mermaid
+narwwhal	narwhal
+mimi	mimic
+ninaj	ninja
+paladn	paladin
+armoe	armor
+cmet	comet
+couhc	couch
+dancr	dance
+kangarooo	kangaroo
+platpus	platypus
+seped	speed
+zobie	zombie
+beerle	beetle
+burgr	burger
+fernir	fenrir
+lighthpuse	lighthouse
+monkkey	monkey
+stegosauru	stegosaurus
+wvyern	wyvern
+earhquake	earthquake
+lsser	laser
+alligtor	alligator
+aoxlotl	axolotl
+gieaffe	giraffe
+invincibiility	invincibility
+jellyfis	jellyfish
+sleihg	sleigh
+sneze	sneeze
+simmon	summon
+wrnch	wrench
+silng	sling
+ankykosaurus	ankylosaurus
+hyydra	hydra
+mumm	mummy
+pyraimd	pyramid
+velocirptor	velociraptor
+watwr	water
+cown	clown
+courgae	courage
+mosasairus	mosasaurus
+treeehouse	treehouse
+vlcano	volcano
+acrane	arcane
+brachosaurus	brachiosaurus
+stsff	staff
+teeport	teleport
+elcipse	eclipse
+bsguette	baguette
+cyborrg	cyborg
+jormngandr	jormungandr
+lgihtning	lightning
+vacuim	vacuum
+fligt	flight
+garilc	garlic
+graviyy	gravity
+penguuin	penguin
+eruptin	eruption
+womrhole	wormhole
+benstalk	beanstalk
+brintosaurus	brontosaurus
+dwrf	dwarf
+juptier	jupiter
+quetzslcoatl	quetzalcoatl
+saamurai	samurai
+sorm	storm
+hurricaen	hurricane
+anacona	anaconda
+krsken	kraken
+pano	piano
+punhc	punch
+ramem	ramen
+smaash	smash
+valkyre	valkyrie
+haetwave	heatwave
+leviate	levitate
+lizsrd	lizard
+nurkabe	nurikabe
+prarot	parrot
+telepoeter	teleporter
+cheetaah	cheetah
+shrnk	shrink
+tikcle	tickle
+umicorn	unicorn
+meeor	meteor
+babrarian	barbarian
+esgle	eagle
+giaant	giant
+lunch	launch
+shakr	shark
+shockwae	shockwave
+tifer	tiger
+trll	troll
+basilsik	basilisk
+chsriot	chariot
+doonut	donut
+invisiblity	invisibility
+minotuar	minotaur
+missike	missile
+bthtub	bathtub
+darnkess	darkness
+parassurolophus	parasaurolophus
+poisoon	poison
+shaow	shadow
+chameleno	chameleon
+ateroid	asteroid
+catapuly	catapult
+flod	flood
+crsytal	crystal
+drsgonfly	dragonfly
+infernoo	inferno
+pranha	piranha
+quetzalocatlus	quetzalcoatlus
+telekiness	telekinesis
+crosabow	crossbow
+firewor	firework
+scyteh	scythe
+sonkhole	sinkhole
+balloonn	balloon
+cobr	cobra
+earht	earth
+ligh	light
+msgma	magma
+meta	metal
+pizaz	pizza
+polynorph	polymorph
+snaill	snail
+sunfloer	sunflower
+titna	titan
+whae	whale
+biomerang	boomerang
+strfall	starfall
+terbuchet	trebuchet
+cutse	curse
+flaamingo	flamingo
+gagoyle	gargoyle
+hsate	haste
+picaxe	pickaxe
+resurrextion	resurrection
+scopion	scorpion
+sepllbook	spellbook
+typgoon	typhoon
+bananaa	banana
+prnicess	princess
+strengrh	strength
+trutle	turtle
+umvrella	umbrella
+firesttorm	firestorm
+miigun	minigun
+rialgun	railgun
+guitat	guitar
+leviathn	leviathan
+maeltsrom	maelstrom
+msgnet	magnet
+porrtal	portal
+poton	potion
+sautrn	saturn
+thunderbid	thunderbird
+tgunderbolt	thunderbolt
+bulder	boulder
+lobtser	lobster
+ostrixh	ostrich
+rainnbow	rainbow
+scram	scream
+speedurnner	speedrunner
+kstana	katana
+chao	chaos
+wicth	witch
+avalanvhe	avalanche
+blizzarrd	blizzard
+bazooa	bazooka
+infintiy	infinity
+shiel	shield
+flamerhrower	flamethrower
+abracaabra	abracadabra
+mriror	mirror
+rahnarok	ragnarok
+androoid	android
+barrer	barrier
+tempets	tempest
+monfall	moonfall
+anvol	anvil
+appl	apple
+drudi	druid
+omion	onion
+booots	boots
+tramoline	trampoline
+triceratosp	triceratops
+anchr	anchor
+chainssw	chainsaw
+cokie	cookie
+hammre	hammer
+keyboatd	keyboard
+kimchii	kimchi
+pinaa	pinata
+kaobom	kaboom
+throe	throne
+burruto	burrito
+coonut	coconut
+cpucake	cupcake
+dunklwosteus	dunkleosteus
+imaggination	imagination
+microave	microwave
+pumpkni	pumpkin
+spiach	spinach
+toastet	toaster
+strwberry	strawberry
+chesee	cheese
+coffre	coffee
+tridennt	trident
+chcolate	chocolate
+marhsmallow	marshmallow
+tomat	tomato
+nostalgua	nostalgia
+pineappe	pineapple
+bacno	bacon
+cyrry	curry
+doddgeball	dodgeball
+hone	honey
+susih	sushi
+froendship	friendship
+krma	karma
+sotnehenge	stonehenge
+wstermelon	watermelon
+butterr	butter
+dumplng	dumpling
+druian	durian
+pomegrnate	pomegranate
+spahhetti	spaghetti
+pocorn	popcorn
+braed	bread
+cauldton	cauldron
+dachshuund	dachshund
+beah	beach
+trukc	truck
+airpane	airplane
+grabdpa	grandpa
+mnsion	mansion
+chisp	chips
+harbot	harbor
+meeadow	meadow
+biycle	bicycle
+blmip	blimp
+bron	baron
+kenab	kebab
+platea	plateau
+towre	tower
+bogeynan	bogeyman
+riverr	river
+teners	tenders
+henchamn	henchman
+watchtwer	watchtower
+chixkpea	chickpea
+earhworm	earthworm
+mrainara	marinara
+ssilboat	sailboat
+wandderer	wanderer
+cathedra	cathedral
+hgihlands	highlands
+houe	house
+ocwan	ocean
+syru	syrup
+battlehsip	battleship
+cgard	chard
+chiili	chili
+cinnaon	cinnamon
+couagr	cougar
+late	latke
+reeda	reeds
+sdan	sedan
+skyscrpaer	skyscraper
+ceresl	cereal
+shopkeeperr	shopkeeper
+bson	bison
+raccono	raccoon
+wruter	writer
+caoe	canoe
+cookuot	cookout
+glaciwr	glacier
+mosquitoo	mosquito
+seawed	seaweed
+villaeg	village
+airprt	airport
+aruguka	arugula
+bamble	bramble
+hdege	hedge
+labeador	labrador
+palmieer	palmier
+pgeon	pigeon
+saplign	sapling
+deert	desert
+gravwstone	gravestone
+sanbags	sandbags
+chmiera	chimera
+cleroc	cleric
+clovver	clover
+jnkyard	junkyard
+physlais	physalis

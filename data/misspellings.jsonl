@@ -1,0 +1,579 @@
+{"w": "abracadabra", "ms": ["abracaddabra"]}
+{"w": "acrobat", "ms": ["acrobbat", "akrobat"]}
+{"w": "airplane", "ms": ["airplain", "airplan", "airplanne", "ayrplane"]}
+{"w": "airport", "ms": ["ayrport", "airpert"]}
+{"w": "alien", "ms": ["aliene"]}
+{"w": "alley", "ms": ["aley", "alleie"]}
+{"w": "alligator", "ms": ["aligator", "alligater", "alligatur", "aligater", "alliggator"]}
+{"w": "ambulance", "ms": ["ambulence", "ambulanse", "ambalance"]}
+{"w": "anchor", "ms": ["ancher", "anshor"]}
+{"w": "android", "ms": ["androide", "andorid"]}
+{"w": "angel", "ms": ["angele"]}
+{"w": "ankylosaurus", "ms": ["ankylosaurrus", "ankielosaurus"]}
+{"w": "anvil", "ms": ["anvile"]}
+{"w": "apocalypse", "ms": ["appocalypse", "apocaliepse"]}
+{"w": "arcane", "ms": ["arcanne", "ercane"]}
+{"w": "archer", "ms": ["archur", "ercher"]}
+{"w": "archmage", "ms": ["archmagge", "erchmage"]}
+{"w": "arena", "ms": ["erena"]}
+{"w": "armor", "ms": ["ermor"]}
+{"w": "armory", "ms": ["armorry", "armorie"]}
+{"w": "arugula", "ms": ["arrugula", "erugula"]}
+{"w": "asteroid", "ms": ["asteriod", "asteroyd", "astroid", "asterod", "asterid", "asterroid", "asturoid"]}
+{"w": "astronaut", "ms": ["astronot", "astronaught", "astranaut", "astronnaut", "aztronaut"]}
+{"w": "aurora", "ms": ["aurrora", "aurera"]}
+{"w": "avalanche", "ms": ["avalanch", "avalance", "avalaunch", "avallanche", "avalanshe"]}
+{"w": "avocado", "ms": ["avacado", "avocadoe", "avokado"]}
+{"w": "axolotl", "ms": ["axollotl", "aksolotl"]}
+{"w": "bacon", "ms": ["bakon", "bacone"]}
+{"w": "baguette", "ms": ["bagguette"]}
+{"w": "balloon", "ms": ["ballun"]}
+{"w": "bamboo", "ms": ["bambo", "bambooo", "bambu", "bamoo"]}
+{"w": "banana", "ms": ["bananna", "banannna", "bannana", "bananah", "bannaa"]}
+{"w": "banshee", "ms": ["banshea", "banzhee"]}
+{"w": "baobab", "ms": ["baobbab", "baobabe"]}
+{"w": "barbarian", "ms": ["barbarrian", "berbarian"]}
+{"w": "barber", "ms": ["barbur", "berber"]}
+{"w": "barge", "ms": ["berge", "barg"]}
+{"w": "baron", "ms": ["beron", "barone"]}
+{"w": "basilisk", "ms": ["basalisk", "basilick", "basilsk", "basillisk", "bazilisk"]}
+{"w": "bathtub", "ms": ["bathtube", "batthub"]}
+{"w": "batter", "ms": ["bater", "battur"]}
+{"w": "battlefield", "ms": ["batlefield", "battlefeild"]}
+{"w": "battleship", "ms": ["battelship"]}
+{"w": "bazooka", "ms": ["bazookka", "bazuka"]}
+{"w": "beach", "ms": ["beash"]}
+{"w": "beanstalk", "ms": ["beanztalk"]}
+{"w": "bear", "ms": ["baer"]}
+{"w": "beluga", "ms": ["belluga", "belgua"]}
+{"w": "bicycle", "ms": ["bycicle", "bicicle", "bicyle", "bisycle", "biciecle"]}
+{"w": "bigfoot", "ms": ["bigfut", "bigfoote"]}
+{"w": "biplane", "ms": ["biplanne", "biplan"]}
+{"w": "birch", "ms": ["birsh", "birkh"]}
+{"w": "biscuit", "ms": ["biscut", "bisquit", "biskit"]}
+{"w": "bison", "ms": ["bisone"]}
+{"w": "black hole", "ms": ["black whole", "blak hole"]}
+{"w": "blimp", "ms": ["blimpe"]}
+{"w": "blizzard", "ms": ["blizard", "blizzerd", "blizzad"]}
+{"w": "bogeyman", "ms": ["boggeyman", "bogeieman"]}
+{"w": "bomb", "ms": ["bom", "bommb"]}
+{"w": "boomerang", "ms": ["boomarang", "bumerang", "boomerange", "boommerang"]}
+{"w": "boots", "ms": ["buts", "bootz"]}
+{"w": "boulder", "ms": ["bouldur"]}
+{"w": "brachiosaurus", "ms": ["brachiosaurrus", "brashiosaurus"]}
+{"w": "bramble", "ms": ["bramle", "brambel"]}
+{"w": "bread", "ms": ["breed", "breade"]}
+{"w": "broccoli", "ms": ["brocoli", "brocolli", "broccolli", "brockoli"]}
+{"w": "brontosaurus", "ms": ["brontosaurrus", "brontozaurus"]}
+{"w": "broomstick", "ms": ["brumstick"]}
+{"w": "budgie", "ms": ["budgei", "budgi"]}
+{"w": "bulldozer", "ms": ["buldozer", "bulldoser", "bulldozzer"]}
+{"w": "bunker", "ms": ["bunkur", "bunkere"]}
+{"w": "burger", "ms": ["burgere"]}
+{"w": "burrito", "ms": ["burito", "burritto", "buritto"]}
+{"w": "butter", "ms": ["buttur"]}
+{"w": "butterfly", "ms": ["butterfy", "buterfly", "butterfley", "buttafly", "butterflie"]}
+{"w": "cabin", "ms": ["cabine"]}
+{"w": "cactus", "ms": ["catcus", "cactis", "cacktus", "caktus", "cactuz"]}
+{"w": "cadet", "ms": ["cadete"]}
+{"w": "camel", "ms": ["camele"]}
+{"w": "campfire", "ms": ["campfirre", "campfir"]}
+{"w": "campsite", "ms": ["campsitte", "camsite"]}
+{"w": "cannon", "ms": ["canon", "cannnon", "cannone"]}
+{"w": "canoe", "ms": ["cano"]}
+{"w": "canyon", "ms": ["cannyon", "canieon"]}
+{"w": "carrot", "ms": ["carot", "carrott", "karrot"]}
+{"w": "castle", "ms": ["cassle", "casle", "caztle"]}
+{"w": "cataclysm", "ms": ["cattaclysm", "catacliesm"]}
+{"w": "catapult", "ms": ["catapolt", "catipult", "catapul", "cattapult", "catapulte"]}
+{"w": "caterpillar", "ms": ["caterpiller", "catterpillar", "caterpilar"]}
+{"w": "cathedral", "ms": ["cathedrale", "cathderal"]}
+{"w": "cauldron", "ms": ["cauldrone", "caulrdon"]}
+{"w": "caveman", "ms": ["cavemman", "cavemane"]}
+{"w": "centaur", "ms": ["centuar", "centar", "sentaur"]}
+{"w": "cerberus", "ms": ["cerberrus"]}
+{"w": "cereal", "ms": ["cerial", "sereal", "ceral", "cerreal"]}
+{"w": "chainsaw", "ms": ["chaynsaw", "shainsaw"]}
+{"w": "chameleon", "ms": ["chamelion", "chamealeon", "camelion", "chamelon", "chammeleon", "chameelon"]}
+{"w": "chaos", "ms": ["shaos", "chaoz"]}
+{"w": "chard", "ms": ["cherd", "shard"]}
+{"w": "chariot", "ms": ["charriot", "cheriot"]}
+{"w": "chasm", "ms": ["shasm", "chazm"]}
+{"w": "cheese", "ms": ["chese", "cheeze", "cheeese", "chease", "sheese"]}
+{"w": "cheetah", "ms": ["cheeta", "cheetha", "cheata", "cheettah", "cheatah"]}
+{"w": "chef", "ms": ["cheff", "shef"]}
+{"w": "cherub", "ms": ["churub"]}
+{"w": "chicken", "ms": ["chiken", "chickin", "chikin", "shicken"]}
+{"w": "chickpea", "ms": ["chikpea", "chickpee"]}
+{"w": "chili", "ms": ["shili"]}
+{"w": "chimera", "ms": ["chimmera", "chimura"]}
+{"w": "chips", "ms": ["chis"]}
+{"w": "chocolate", "ms": ["chocolat", "choclate", "chocalate", "chocolote", "chockolate", "chocollate", "shocolate"]}
+{"w": "cider", "ms": ["sider", "cidur"]}
+{"w": "cinnamon", "ms": ["cinnammon"]}
+{"w": "cleric", "ms": ["clerric", "celric"]}
+{"w": "cliff", "ms": ["clif", "cliffe"]}
+{"w": "clover", "ms": ["clovur", "clovere"]}
+{"w": "clown", "ms": ["clowne"]}
+{"w": "clydesdale", "ms": ["clydesdalle", "cliedesdale"]}
+{"w": "cockroach", "ms": ["cockroash"]}
+{"w": "coconut", "ms": ["cocnut", "cocanut", "coconot", "coconnut", "cokonut"]}
+{"w": "cocoon", "ms": ["cocun", "cokoon"]}
+{"w": "coffee", "ms": ["coffea"]}
+{"w": "colosseum", "ms": ["coloseum", "collosseum"]}
+{"w": "comet", "ms": ["commet", "comit", "comete"]}
+{"w": "cookie", "ms": ["cookkie"]}
+{"w": "cookout", "ms": ["cookkout", "cukout"]}
+{"w": "coral", "ms": ["corale"]}
+{"w": "couch", "ms": ["coch", "coush"]}
+{"w": "cougar", "ms": ["couggar", "cogar"]}
+{"w": "courage", "ms": ["courrage"]}
+{"w": "cowboy", "ms": ["cowby", "coboy", "cowboie", "cowoby"]}
+{"w": "crayfish", "ms": ["craifish", "craiefish"]}
+{"w": "crocodile", "ms": ["crocodial", "crocadile", "crokodile", "crocidile", "crocoddile", "crocodiel"]}
+{"w": "crossbow", "ms": ["crosbow", "crossbo", "crozsbow"]}
+{"w": "crown", "ms": ["crowne"]}
+{"w": "crystal", "ms": ["criestal", "cryztal"]}
+{"w": "cucumber", "ms": ["cucumbur", "cucomber", "cumcumber", "cucumbar"]}
+{"w": "cupcake", "ms": ["cup cake", "cupcak", "cupcacke", "cupcakke", "cupkake"]}
+{"w": "curse", "ms": ["curs"]}
+{"w": "cyborg", "ms": ["cieborg"]}
+{"w": "cyclone", "ms": ["syclone", "cyclon", "cycloen"]}
+{"w": "cyclops", "ms": ["syclops", "cylops", "cieclops"]}
+{"w": "dachshund", "ms": ["dashshund", "dakhshund"]}
+{"w": "daisy", "ms": ["daysy", "daisie"]}
+{"w": "dalgona", "ms": ["dalgonna", "dalogna"]}
+{"w": "dance", "ms": ["dence"]}
+{"w": "dancer", "ms": ["danser", "dencer"]}
+{"w": "darkness", "ms": ["darness"]}
+{"w": "desert", "ms": ["desurt", "dezert"]}
+{"w": "detective", "ms": ["dettective", "detektive"]}
+{"w": "dinosaur", "ms": ["dinasour", "dinosour", "dinasaur", "dinosor", "dinosaurr", "dinosuar", "dinasor", "dinnosaur", "dinozaur"]}
+{"w": "dispel", "ms": ["dizpel", "dispele"]}
+{"w": "djinn", "ms": ["djinne"]}
+{"w": "doctor", "ms": ["docter", "doktor", "dcotor"]}
+{"w": "dodgeball", "ms": ["dodgebal", "dodgebball"]}
+{"w": "dolphin", "ms": ["dolfin", "dolphine", "dolhpin"]}
+{"w": "donkey", "ms": ["donkeie", "doneky"]}
+{"w": "donut", "ms": ["donute"]}
+{"w": "doughnut", "ms": ["dougnut", "donught", "dohnut"]}
+{"w": "dragon", "ms": ["dragen", "dragan", "dargon", "dragun", "drgaon", "draggon", "dragone"]}
+{"w": "dragonfire", "ms": ["draggonfire", "dragonfir"]}
+{"w": "dragonfly", "ms": ["draggonfly"]}
+{"w": "drill", "ms": ["dril", "drille"]}
+{"w": "drone", "ms": ["dron"]}
+{"w": "droplet", "ms": ["dropelt", "droplete"]}
+{"w": "drumstick", "ms": ["drumstik", "drumstikk"]}
+{"w": "dryad", "ms": ["driead", "dryade"]}
+{"w": "dumpling", "ms": ["dumplinge", "dumpilng"]}
+{"w": "dunkleosteus", "ms": ["dunkleozteus"]}
+{"w": "durian", "ms": ["durrian", "duriane"]}
+{"w": "dwarf", "ms": ["dwerf", "dwarfe"]}
+{"w": "dynamite", "ms": ["dynamyte", "dinamite", "dynomite", "dynammite", "dienamite"]}
+{"w": "eagle", "ms": ["egle", "eagel", "eegle"]}
+{"w": "earth", "ms": ["eerth", "earthe"]}
+{"w": "earthquake", "ms": ["earthquack", "eathquake", "erthquake", "earthqake", "earth quack", "earthquakke", "earthkwake"]}
+{"w": "earthworm", "ms": ["eerthworm", "earthwerm"]}
+{"w": "eclipse", "ms": ["eclise", "eklipse"]}
+{"w": "elephant", "ms": ["elefant", "elephent", "elaphant", "elephnat", "elehpant", "ellephant"]}
+{"w": "eruption", "ms": ["erupshun"]}
+{"w": "excavator", "ms": ["excavattor", "ekscavator"]}
+{"w": "explode", "ms": ["explodde", "eksplode"]}
+{"w": "explosion", "ms": ["explosoin", "explotion", "exploshun", "explossion"]}
+{"w": "fairy", "ms": ["fayry"]}
+{"w": "fenrir", "ms": ["fenirr"]}
+{"w": "ferry", "ms": ["fery", "ferrie"]}
+{"w": "fireball", "ms": ["firebal", "fireballl", "fierball", "firreball"]}
+{"w": "firefighter", "ms": ["firefigher", "firefiter", "firrefighter", "firefiteer"]}
+{"w": "firefly", "ms": ["firrefly", "fireflie"]}
+{"w": "firestorm", "ms": ["firrestorm", "firesterm"]}
+{"w": "firework", "ms": ["firrework"]}
+{"w": "flamethrower", "ms": ["flammethrower", "flamethrowur"]}
+{"w": "flamingo", "ms": ["flamigo", "flamingoe", "flamango", "flammingo", "flamnigo"]}
+{"w": "flight", "ms": ["flit"]}
+{"w": "flood", "ms": ["floode"]}
+{"w": "flower", "ms": ["flowur", "flowere"]}
+{"w": "forest", "ms": ["ferest"]}
+{"w": "fortress", "ms": ["fortres", "forteress", "fertress"]}
+{"w": "freeze", "ms": ["freese"]}
+{"w": "fridge", "ms": ["fridg"]}
+{"w": "friendship", "ms": ["friendzhip"]}
+{"w": "frostbolt", "ms": ["froztbolt", "frostbolte"]}
+{"w": "galago", "ms": ["gallago", "galgao"]}
+{"w": "galaxy", "ms": ["galaxie", "gallaxy", "galixy", "galaksy"]}
+{"w": "gargoyle", "ms": ["gargoil", "gargole", "gargoyl", "gargoiele", "gargoyel"]}
+{"w": "garlic", "ms": ["garlick", "garlik", "gerlic"]}
+{"w": "ghost", "ms": ["gost", "ghots", "goast", "ghoast", "ost", "ghozt"]}
+{"w": "giant", "ms": ["giante"]}
+{"w": "giraffe", "ms": ["girafe", "giraff", "jiraffe", "giraf", "geraffe", "girraffe"]}
+{"w": "glacier", "ms": ["glaceir"]}
+{"w": "goblin", "ms": ["goblen", "gobblin", "goblinn", "gobline", "gobiln"]}
+{"w": "golabki", "ms": ["gollabki", "golbaki"]}
+{"w": "golem", "ms": ["goelm", "goleme"]}
+{"w": "gorilla", "ms": ["gorila", "gorrilla", "gorrila", "guerilla"]}
+{"w": "gorse", "ms": ["gerse", "gorze"]}
+{"w": "grandma", "ms": ["gradnma"]}
+{"w": "grandpa", "ms": ["gradnpa"]}
+{"w": "grass", "ms": ["gras", "grazs"]}
+{"w": "gravestone", "ms": ["gravestonne", "graveztone"]}
+{"w": "graveyard", "ms": ["graveieard", "graveyerd"]}
+{"w": "gravity", "ms": ["gravitie"]}
+{"w": "greatsword", "ms": ["greetsword", "greatswerd"]}
+{"w": "grenade", "ms": ["granade", "grenaid", "grenad"]}
+{"w": "griffin", "ms": ["grifin", "griffine"]}
+{"w": "grump", "ms": ["grumpe"]}
+{"w": "guard", "ms": ["guerd", "guarde"]}
+{"w": "guitar", "ms": ["gitar", "guitarr", "guiter", "guittar"]}
+{"w": "hamburger", "ms": ["hamburgur", "hamberger", "hamburguer"]}
+{"w": "hammer", "ms": ["hammur"]}
+{"w": "hamster", "ms": ["hampster", "hamstar"]}
+{"w": "harbor", "ms": ["herbor"]}
+{"w": "haste", "ms": ["hazte"]}
+{"w": "heatwave", "ms": ["heetwave"]}
+{"w": "hedge", "ms": ["hedg"]}
+{"w": "hedgehog", "ms": ["hedghog", "hedgehogg", "hegdehog"]}
+{"w": "helicopter", "ms": ["helecopter", "helicoptor", "helicoper", "helocopter", "hellicopter", "helicoptur"]}
+{"w": "henchman", "ms": ["henshman", "henkhman"]}
+{"w": "highlands", "ms": ["hilands", "highlandz"]}
+{"w": "hippopotamus", "ms": ["hippopotamous", "hipopotamus", "hippopatamus", "hippopotomus", "hippoppotamus"]}
+{"w": "honey", "ms": ["honeie"]}
+{"w": "horse", "ms": ["herse", "horze"]}
+{"w": "hotel", "ms": ["hotele"]}
+{"w": "house", "ms": ["huse"]}
+{"w": "hurricane", "ms": ["huricane", "hurracane", "hurrican", "hericane", "huricain", "hurricanne"]}
+{"w": "husky", "ms": ["huzky"]}
+{"w": "hydra", "ms": ["hidra", "hydrah", "hiedra"]}
+{"w": "ice cream", "ms": ["ice creme", "ice crem"]}
+{"w": "iceberg", "ms": ["icebberg", "iseberg"]}
+{"w": "ifrit", "ms": ["ifrite"]}
+{"w": "imagination", "ms": ["immagination", "imaginashun"]}
+{"w": "impostor", "ms": ["impoztor"]}
+{"w": "inferno", "ms": ["infreno"]}
+{"w": "infinity", "ms": ["infinnity", "infinitie"]}
+{"w": "invincibility", "ms": ["invincibbility", "invinsibility"]}
+{"w": "invisibility", "ms": ["invisibbility", "invisibilitie"]}
+{"w": "island", "ms": ["izland", "islande"]}
+{"w": "jamaica", "ms": ["jammaica", "jamayca"]}
+{"w": "jelly", "ms": ["jellie"]}
+{"w": "jellyfish", "ms": ["jelyfish", "jellifish", "jelly fishe", "jelliefish"]}
+{"w": "jester", "ms": ["jestur", "jezter"]}
+{"w": "jiangshi", "ms": ["jiangzhi", "jiansghi"]}
+{"w": "jormungandr", "ms": ["jermungandr", "jormungandre"]}
+{"w": "jungle", "ms": ["jungl"]}
+{"w": "junkyard", "ms": ["junkieard", "junkyerd"]}
+{"w": "jupiter", "ms": ["juppiter", "jupitur"]}
+{"w": "kaboom", "ms": ["kabboom", "kabum"]}
+{"w": "kaiju", "ms": ["kayju"]}
+{"w": "kangaroo", "ms": ["kangeroo", "kangaro", "kangarroo", "kangaru"]}
+{"w": "kapok", "ms": ["kapoke"]}
+{"w": "karma", "ms": ["kerma"]}
+{"w": "katana", "ms": ["kattana", "katnaa"]}
+{"w": "kebab", "ms": ["kebabe"]}
+{"w": "ketchup", "ms": ["ketshup"]}
+{"w": "keyboard", "ms": ["keieboard", "keyboerd"]}
+{"w": "kimchi", "ms": ["kimshi", "kimkhi"]}
+{"w": "kitsune", "ms": ["kitzune"]}
+{"w": "kitten", "ms": ["kittene"]}
+{"w": "knight", "ms": ["knigt", "kinght", "knite", "nkight"]}
+{"w": "kraken", "ms": ["krakken", "craken", "krakene"]}
+{"w": "labrador", "ms": ["labraddor", "labrader"]}
+{"w": "ladybug", "ms": ["ladiebug"]}
+{"w": "lasagna", "ms": ["lazagna", "lasanya", "lasagnia"]}
+{"w": "laser", "ms": ["lasur"]}
+{"w": "latke", "ms": ["latk"]}
+{"w": "launch", "ms": ["launsh", "launkh"]}
+{"w": "lemonade", "ms": ["lemonaid", "lemmonade", "lemonad"]}
+{"w": "lemur", "ms": ["elmur", "lemure"]}
+{"w": "leopard", "ms": ["leapord", "lepard", "leperd"]}
+{"w": "leshy", "ms": ["leshie", "elshy"]}
+{"w": "lettuce", "ms": ["lettice", "letuce", "lettus"]}
+{"w": "levee", "ms": ["levea", "elvee"]}
+{"w": "leviathan", "ms": ["leviathon", "leviathen", "levaithan", "elviathan", "leviathane"]}
+{"w": "levitate", "ms": ["levittate", "elvitate"]}
+{"w": "licorice", "ms": ["licorrice"]}
+{"w": "light", "ms": ["lit"]}
+{"w": "lighthouse", "ms": ["lighthous", "litehouse", "lighhouse", "lighthose"]}
+{"w": "lightning", "ms": ["lightening", "lightnin", "litening", "lighning", "ligtning", "litning"]}
+{"w": "lightsaber", "ms": ["lightsabre", "lightsabor", "lite saber", "lightsabber", "litesaber"]}
+{"w": "limousine", "ms": ["limmousine"]}
+{"w": "lizard", "ms": ["lizerd", "lizad", "lisard"]}
+{"w": "lizardfolk", "ms": ["lizerdfolk", "lisardfolk"]}
+{"w": "lobster", "ms": ["lobstar", "lobstor", "lobstur", "lobzter"]}
+{"w": "lollipop", "ms": ["lollippop"]}
+{"w": "macaw", "ms": ["makaw", "macawe"]}
+{"w": "maelstrom", "ms": ["maelztrom", "maelstrome"]}
+{"w": "magic", "ms": ["magice"]}
+{"w": "magnet", "ms": ["magnit", "magnut", "magent", "manet", "magnete"]}
+{"w": "mansion", "ms": ["manzion", "mansione"]}
+{"w": "margherita", "ms": ["margherrita", "marerita"]}
+{"w": "marinara", "ms": ["marrinara", "merinara"]}
+{"w": "market", "ms": ["merket", "markete"]}
+{"w": "marshmallow", "ms": ["marshmellow", "marshmelow", "marshmalow", "mershmallow"]}
+{"w": "mausoleum", "ms": ["mausolleum", "mausoelum"]}
+{"w": "meadow", "ms": ["meaddow", "meedow"]}
+{"w": "medusa", "ms": ["meddusa", "meduza"]}
+{"w": "megalodon", "ms": ["meggalodon", "megalodone"]}
+{"w": "melonpan", "ms": ["mellonpan", "melonpane"]}
+{"w": "mercenary", "ms": ["mercennary", "mersenary"]}
+{"w": "mermaid", "ms": ["mermade", "mermaide", "murmaid", "mermayd"]}
+{"w": "metal", "ms": ["metale"]}
+{"w": "meteor", "ms": ["meteour", "meator", "meteer", "metior", "meetor", "metteor"]}
+{"w": "microwave", "ms": ["mikrowave", "microwav"]}
+{"w": "mimic", "ms": ["mimice"]}
+{"w": "miner", "ms": ["minur", "minere"]}
+{"w": "minigun", "ms": ["minnigun", "minigune"]}
+{"w": "minotaur", "ms": ["minotour", "minataur", "minotar", "minnotaur", "minotaure"]}
+{"w": "mirror", "ms": ["mirrer"]}
+{"w": "missile", "ms": ["missle", "missel", "misile", "missil", "missal", "missille"]}
+{"w": "monkey", "ms": ["monkeie", "moneky"]}
+{"w": "monster", "ms": ["monstor", "monstre", "monter", "monstur", "monzter"]}
+{"w": "moonfall", "ms": ["moonfal", "munfall"]}
+{"w": "mosasaurus", "ms": ["mosasaurrus", "mozasaurus"]}
+{"w": "mosquito", "ms": ["mosquitoe", "mosqito", "musquito", "moskito", "mosquitto", "moskwito"]}
+{"w": "motorcycle", "ms": ["motercycle", "motorcyle", "motocycle", "mottorcycle", "motorsycle"]}
+{"w": "mountain", "ms": ["mountayn"]}
+{"w": "mouse", "ms": ["muse"]}
+{"w": "mushroom", "ms": ["mushrom", "mushroon", "musroom", "mushrum", "muzhroom"]}
+{"w": "myconid", "ms": ["mieconid"]}
+{"w": "mynah", "ms": ["mienah", "mynahe"]}
+{"w": "narwhal", "ms": ["nerwhal"]}
+{"w": "nebula", "ms": ["nebbula", "neblua"]}
+{"w": "necromancer", "ms": ["necromanser", "necromancar", "nekromancer"]}
+{"w": "nemesis", "ms": ["nemmesis", "nemezis"]}
+{"w": "night", "ms": ["nite", "nyte", "nigt", "niht"]}
+{"w": "ninja", "ms": ["ninjia", "ninnja", "nija", "ninga"]}
+{"w": "nisse", "ms": ["nise", "nizse"]}
+{"w": "nixie", "ms": ["nixei", "niksie"]}
+{"w": "nostalgia", "ms": ["noztalgia", "nostlagia"]}
+{"w": "nunchucks", "ms": ["nunshucks"]}
+{"w": "nurikabe", "ms": ["nurrikabe", "nurikab"]}
+{"w": "nymph", "ms": ["nymf", "niemph"]}
+{"w": "ocean", "ms": ["osean", "oceen"]}
+{"w": "octopus", "ms": ["octapus", "octopuss", "ocotpus", "octupus", "octoppus", "oktopus"]}
+{"w": "onion", "ms": ["onoin", "onian", "oinon", "onione"]}
+{"w": "orangutan", "ms": ["orrangutan", "erangutan"]}
+{"w": "ostrich", "ms": ["ostrish", "ostrikh"]}
+{"w": "palace", "ms": ["palase"]}
+{"w": "palmier", "ms": ["palmeir", "palmiur"]}
+{"w": "pancake", "ms": ["pancak", "pankake", "pan cake", "pancakke"]}
+{"w": "panther", "ms": ["panter", "panthur"]}
+{"w": "parasaurolophus", "ms": ["parrasaurolophus", "parasaurolofus"]}
+{"w": "parrot", "ms": ["parot", "parrott", "perrot"]}
+{"w": "peasant", "ms": ["peesant", "peasent"]}
+{"w": "pegasus", "ms": ["peggasus", "pegazus"]}
+{"w": "penguin", "ms": ["pengiun", "penguine", "pengwin", "pengin", "penugin"]}
+{"w": "phoenix", "ms": ["pheonix", "fenix", "feonix", "phenix", "phoenx", "phonix", "pheonics", "fenex", "phoennix", "foenix"]}
+{"w": "phone", "ms": ["phon"]}
+{"w": "physalis", "ms": ["physallis", "fysalis"]}
+{"w": "piano", "ms": ["pianno", "peano"]}
+{"w": "pickaxe", "ms": ["pickakse"]}
+{"w": "pierogi", "ms": ["pierrogi", "peirogi"]}
+{"w": "pigeon", "ms": ["pidgeon", "pigen", "pidgin", "piggeon", "pigeone"]}
+{"w": "pinata", "ms": ["pinnata", "pintaa"]}
+{"w": "pineapple", "ms": ["pinapple", "pineaple", "pinaple", "pineappel", "pinneapple"]}
+{"w": "piranha", "ms": ["pirranha", "pirnaha"]}
+{"w": "pirate", "ms": ["pirat", "pyrate", "pirite", "pierate", "pirrate"]}
+{"w": "pizza", "ms": ["piza", "pitza", "peetza", "pizzza", "pisza"]}
+{"w": "planet", "ms": ["plannet", "planit", "planete"]}
+{"w": "plateau", "ms": ["platteau", "plateeu"]}
+{"w": "platypus", "ms": ["plattypus", "platiepus"]}
+{"w": "poison", "ms": ["poizon", "poisone"]}
+{"w": "poltergeist", "ms": ["poltergiest", "poltergyst"]}
+{"w": "pomegranate", "ms": ["pommegranate", "pomegranat"]}
+{"w": "popcorn", "ms": ["pop corn", "popkorn", "popcon", "popcern"]}
+{"w": "popsicle", "ms": ["posicle"]}
+{"w": "porcupine", "ms": ["porcupin", "porkupine", "porcapine"]}
+{"w": "portal", "ms": ["pertal", "portale"]}
+{"w": "possum", "ms": ["pozsum"]}
+{"w": "potato", "ms": ["potatoe", "potatos", "potatto", "patato"]}
+{"w": "potion", "ms": ["pottion"]}
+{"w": "princess", "ms": ["princesss", "prinsess"]}
+{"w": "prison", "ms": ["prizon", "prisone"]}
+{"w": "programmer", "ms": ["programmur"]}
+{"w": "pterodactyl", "ms": ["pterrodactyl", "pterodactiel"]}
+{"w": "pufferfish", "ms": ["puffurfish"]}
+{"w": "puffin", "ms": ["puffine"]}
+{"w": "pumpkin", "ms": ["pumkin", "pumpkn", "punkin", "pumpkine", "pumkpin"]}
+{"w": "punch", "ms": ["punkh"]}
+{"w": "pylon", "ms": ["pielon", "pylone"]}
+{"w": "pyramid", "ms": ["pyramyd", "piramid", "pyrimid", "pyrmaid", "pyrammid", "pieramid"]}
+{"w": "qilin", "ms": ["qiline"]}
+{"w": "queen", "ms": ["kween", "quean"]}
+{"w": "quetzalcoatl", "ms": ["kwetzalcoatl", "qutzalcoatl"]}
+{"w": "quetzalcoatlus", "ms": ["kwetzalcoatlus", "qutzalcoatlus"]}
+{"w": "rabbit", "ms": ["rabit", "rabbitt", "rabbet", "rabbite"]}
+{"w": "raccoon", "ms": ["raccon", "racoone", "raccun"]}
+{"w": "ragnarok", "ms": ["ragnarrok", "ranarok"]}
+{"w": "railgun", "ms": ["raylgun", "railgune"]}
+{"w": "rainbow", "ms": ["rainbo", "ranbow", "rainboe", "raynbow", "rainbowe"]}
+{"w": "ramen", "ms": ["ramene"]}
+{"w": "rampart", "ms": ["rampert", "ramparte"]}
+{"w": "rattlesnake", "ms": ["rattlesnakke"]}
+{"w": "reeds", "ms": ["reads", "reedz"]}
+{"w": "referee", "ms": ["referea"]}
+{"w": "restaurant", "ms": ["restaurrant", "restaurent"]}
+{"w": "resurrection", "ms": ["resurrecshun"]}
+{"w": "rhinoceros", "ms": ["rhinocerus", "rinoceros", "rhinosaurus", "rhinoserous", "rinocerous", "rhinnoceros", "rhinoseros"]}
+{"w": "rickshaw", "ms": ["rikshaw", "rikkshaw"]}
+{"w": "ridge", "ms": ["rige", "ridg"]}
+{"w": "river", "ms": ["rivur", "rivere"]}
+{"w": "roadblock", "ms": ["roadblok", "roadblokk"]}
+{"w": "robber", "ms": ["robbur"]}
+{"w": "robot", "ms": ["robit", "robbot", "rowbot", "robut", "robote"]}
+{"w": "rocket", "ms": ["rockit", "roket", "rokket"]}
+{"w": "rogue", "ms": ["rogu"]}
+{"w": "rosti", "ms": ["rozti"]}
+{"w": "sailboat", "ms": ["saylboat", "sailboate"]}
+{"w": "sailor", "ms": ["saillor", "saylor"]}
+{"w": "samurai", "ms": ["samuri", "samaurai", "samurie", "sammurai", "samuray"]}
+{"w": "sandbags", "ms": ["sandbagz", "sandbagse"]}
+{"w": "sandbar", "ms": ["sandber", "sandbare"]}
+{"w": "sandstorm", "ms": ["sandsterm", "sandztorm"]}
+{"w": "sandwich", "ms": ["sandwhich", "sandwitch", "sanwich", "sandwhitch", "samwich"]}
+{"w": "sandworm", "ms": ["sandwerm", "sandworme"]}
+{"w": "sapling", "ms": ["saplinge", "sapilng"]}
+{"w": "satellite", "ms": ["satelite", "sattelite", "satellit"]}
+{"w": "saturn", "ms": ["satturn"]}
+{"w": "satyr", "ms": ["satier"]}
+{"w": "sausage", "ms": ["sausege", "sasuage", "sausige", "sossage"]}
+{"w": "scientist", "ms": ["sceintist", "ssientist"]}
+{"w": "scissors", "ms": ["sissors", "scisors", "scissers", "sizzors"]}
+{"w": "scorpion", "ms": ["scorpian", "scorpoin", "skorpion", "sorpion", "scerpion"]}
+{"w": "scream", "ms": ["screem", "sream"]}
+{"w": "scythe", "ms": ["ssythe"]}
+{"w": "seaweed", "ms": ["seeweed", "seawead"]}
+{"w": "sedan", "ms": ["sedane"]}
+{"w": "sewer", "ms": ["sewur", "sewere"]}
+{"w": "shadow", "ms": ["shadowe"]}
+{"w": "shaman", "ms": ["shamman", "shamane"]}
+{"w": "shark", "ms": ["sharck", "sharke", "shrak", "sherk"]}
+{"w": "sheep", "ms": ["sheepe"]}
+{"w": "shield", "ms": ["sheild", "sheld", "shild", "sheeld", "shielde"]}
+{"w": "shiitake", "ms": ["shiittake", "shiitak"]}
+{"w": "shockwave", "ms": ["shokkwave"]}
+{"w": "shopkeeper", "ms": ["shopkeepper", "shopkeaper"]}
+{"w": "shrink", "ms": ["shrinke", "shrnik"]}
+{"w": "shuriken", "ms": ["shurriken", "shurikene"]}
+{"w": "signpost", "ms": ["sinpost", "signpozt"]}
+{"w": "singer", "ms": ["singur", "singere"]}
+{"w": "sinkhole", "ms": ["sinkholle", "sinkhoel"]}
+{"w": "skeleton", "ms": ["skeliton", "skelaton", "skeletin", "skelton", "skelliton", "skelleton", "skeelton"]}
+{"w": "skunk", "ms": ["skunke"]}
+{"w": "skyscraper", "ms": ["skyscaper", "skyscrapper", "sky scrapper", "skysraper"]}
+{"w": "sleep", "ms": ["selep"]}
+{"w": "sleigh", "ms": ["sliegh", "slei"]}
+{"w": "slide", "ms": ["slid"]}
+{"w": "sling", "ms": ["slinge"]}
+{"w": "sloth", "ms": ["slothe"]}
+{"w": "smash", "ms": ["smazh", "smashe"]}
+{"w": "smite", "ms": ["smit"]}
+{"w": "snail", "ms": ["snayl", "snaile"]}
+{"w": "snake", "ms": ["snak", "snaek", "sanke"]}
+{"w": "sneeze", "ms": ["sneese"]}
+{"w": "soldier", "ms": ["soldjer", "soilder", "solider", "soldeir", "soldiur"]}
+{"w": "sorcerer", "ms": ["sorceror", "sorcerrer", "sorserer"]}
+{"w": "spaceship", "ms": ["spaseship", "spakeship"]}
+{"w": "spaghetti", "ms": ["spagetti", "spagheti", "spageti", "spaghettie", "sphaghetti", "spahgetti", "spegetti", "spaetti"]}
+{"w": "speed", "ms": ["spead", "speede"]}
+{"w": "speedboat", "ms": ["speadboat", "speedboate"]}
+{"w": "speedrunner", "ms": ["speadrunner"]}
+{"w": "spellbook", "ms": ["spelbook", "spellbuk"]}
+{"w": "sphinx", "ms": ["sphinks"]}
+{"w": "spider", "ms": ["spyder", "spidder", "spiderr", "spidur"]}
+{"w": "spinach", "ms": ["spinich", "spinage", "spinatch", "spinnach", "spinash"]}
+{"w": "spinosaurus", "ms": ["spinnosaurus", "spinozaurus"]}
+{"w": "squirrel", "ms": ["squirel", "squirell", "squrrel", "sqirrel"]}
+{"w": "staff", "ms": ["staffe"]}
+{"w": "staircase", "ms": ["stayrcase", "stairkase"]}
+{"w": "starfall", "ms": ["starfal", "sterfall"]}
+{"w": "statue", "ms": ["stattue"]}
+{"w": "stegosaurus", "ms": ["steggosaurus", "stegozaurus"]}
+{"w": "stonehenge", "ms": ["stonnehenge", "stoneheng"]}
+{"w": "storm", "ms": ["sterm"]}
+{"w": "strawberry", "ms": ["strawbery", "strawberri", "strawbarry", "stawberry", "strawberrie"]}
+{"w": "strength", "ms": ["strengthe", "stregnth"]}
+{"w": "submarine", "ms": ["submarien", "submerine", "submareen", "submarrine"]}
+{"w": "succulent", "ms": ["suculent", "succullent"]}
+{"w": "summon", "ms": ["summone"]}
+{"w": "sunbeam", "ms": ["sunbeem", "sunbeame"]}
+{"w": "sunflower", "ms": ["sunflour", "sunfower", "sunflowur", "sunflowere"]}
+{"w": "superhero", "ms": ["supperhero", "supurhero"]}
+{"w": "supernova", "ms": ["supanova", "supernovva", "suppernova", "supurnova"]}
+{"w": "sushi", "ms": ["suzhi"]}
+{"w": "swamp", "ms": ["swampe"]}
+{"w": "sword", "ms": ["sowrd", "swrod", "sord", "swerd", "sworde"]}
+{"w": "syrup", "ms": ["sierup", "syrupe"]}
+{"w": "tarantula", "ms": ["tarantual", "tarantla", "terantula"]}
+{"w": "tavern", "ms": ["tavurn", "taverne"]}
+{"w": "teacher", "ms": ["teecher", "teachur"]}
+{"w": "teepee", "ms": ["teeppee", "teapee"]}
+{"w": "telekinesis", "ms": ["tellekinesis", "teelkinesis"]}
+{"w": "teleport", "ms": ["telleport", "teelport"]}
+{"w": "teleporter", "ms": ["telleporter", "teelporter"]}
+{"w": "telescope", "ms": ["telescop", "teliscope", "telescoop"]}
+{"w": "tempest", "ms": ["tempezt", "tempeste"]}
+{"w": "tenders", "ms": ["tendurs", "tenderz"]}
+{"w": "thorn", "ms": ["thern", "thorne"]}
+{"w": "throne", "ms": ["thronne", "thron"]}
+{"w": "throw", "ms": ["throwe"]}
+{"w": "thunder", "ms": ["thundar", "thunda"]}
+{"w": "thunderbird", "ms": ["thundurbird", "thunderbirde"]}
+{"w": "thunderbolt", "ms": ["thundurbolt", "thunderbolte"]}
+{"w": "thunderstorm", "ms": ["thundurstorm", "thundersterm"]}
+{"w": "tiger", "ms": ["tigar", "tyger", "tigre", "tigur", "tigere"]}
+{"w": "titan", "ms": ["titane"]}
+{"w": "toaster", "ms": ["toastur", "toazter"]}
+{"w": "tomato", "ms": ["tomatoe", "tommato", "tamato", "tomtao"]}
+{"w": "tornado", "ms": ["tornadoe", "tornato", "tornadu", "tornaydo", "tornadow", "tornaddo", "ternado"]}
+{"w": "toucan", "ms": ["tocan", "toukan"]}
+{"w": "tower", "ms": ["towur", "towere"]}
+{"w": "train", "ms": ["trayn"]}
+{"w": "trampoline", "ms": ["trampoleen", "trampolene", "trampaline", "trampolline", "trampolin"]}
+{"w": "treant", "ms": ["treante"]}
+{"w": "trebuchet", "ms": ["trebbuchet"]}
+{"w": "treehouse", "ms": ["treahouse", "treehose"]}
+{"w": "triceratops", "ms": ["tricerratops"]}
+{"w": "trident", "ms": ["triddent", "tridant"]}
+{"w": "troll", "ms": ["trolle"]}
+{"w": "truck", "ms": ["trukk"]}
+{"w": "trumpet", "ms": ["trumpit", "trumphet"]}
+{"w": "tryhard", "ms": ["triehard", "tryherd"]}
+{"w": "tsunami", "ms": ["sunami", "tsunamy", "tsumani", "tusnami", "tsunammi", "tsunnami", "tzunami"]}
+{"w": "tulip", "ms": ["tulep", "toolip"]}
+{"w": "turkey", "ms": ["turky", "turkee", "turkeie", "tureky"]}
+{"w": "turret", "ms": ["turet", "turrete"]}
+{"w": "turtle", "ms": ["turtel", "turtul", "tutle", "turtl"]}
+{"w": "typhoon", "ms": ["typhun"]}
+{"w": "umbrella", "ms": ["umbrela", "umberella", "umbrrella", "umrella"]}
+{"w": "undead", "ms": ["undeed", "undeade"]}
+{"w": "unicorn", "ms": ["unicron", "unacorn", "unicorne", "unicoron", "younicorn", "unnicorn", "unicern"]}
+{"w": "universe", "ms": ["unniverse", "univurse"]}
+{"w": "vacuum", "ms": ["vakuum", "vacuume"]}
+{"w": "valkyrie", "ms": ["valkierie"]}
+{"w": "vampire", "ms": ["vampier", "vampair", "vampir", "vampirre"]}
+{"w": "vanish", "ms": ["vanizh"]}
+{"w": "velociraptor", "ms": ["vellociraptor"]}
+{"w": "viking", "ms": ["vikin", "vikeing", "vikking", "vikinge"]}
+{"w": "village", "ms": ["villagge"]}
+{"w": "villain", "ms": ["villayn"]}
+{"w": "violet", "ms": ["viollet", "vioelt"]}
+{"w": "violin", "ms": ["violen", "vilin", "viloin"]}
+{"w": "volcano", "ms": ["volcanoe", "vulcano", "volkano", "valcano", "volcanno"]}
+{"w": "wanderer", "ms": ["wanderrer", "wandurer"]}
+{"w": "watchtower", "ms": ["watchtowur", "wachtower"]}
+{"w": "water", "ms": ["watur", "watere"]}
+{"w": "watermelon", "ms": ["watermellon", "watermelone", "wattermelon", "watermalon", "waturmelon"]}
+{"w": "watermill", "ms": ["watermil", "wattermill"]}
+{"w": "werewolf", "ms": ["warewolf", "wearwolf", "werewolve", "werrewolf", "wurewolf"]}
+{"w": "whale", "ms": ["wale", "whail", "whaile", "whael"]}
+{"w": "wheat", "ms": ["wheet", "weat"]}
+{"w": "wildfire", "ms": ["wildfirre", "wildfir"]}
+{"w": "windmill", "ms": ["windmille"]}
+{"w": "witch", "ms": ["wich", "whitch", "witsh"]}
+{"w": "wizard", "ms": ["wizzard", "wizerd", "wizrd", "wisard"]}
+{"w": "wolf", "ms": ["wolfe", "wulf"]}
+{"w": "wormhole", "ms": ["wormholle", "wormhoel"]}
+{"w": "wraith", "ms": ["wrath ghost", "wraithe", "raith"]}
+{"w": "wrench", "ms": ["wrensh"]}
+{"w": "wyvern", "ms": ["wievern", "wyvurn"]}
+{"w": "zombie", "ms": ["zomby", "zombee", "zomie", "zombe", "zombei"]}

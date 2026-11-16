@@ -90,6 +90,10 @@ export type Modifier = {
 	mood: Mood?,
 	accents: { string }?,
 	aliases: { string }?,
+	misspellings: { string }?,
+	motion: Motion?,
+	tint: string?, -- hex tint blended into colours
+	colour2: string?, -- override secondary colour
 	size: number?, -- size steps (+2 giant, -2 tiny)
 	element: Element?,
 	count: number?, -- multiply count

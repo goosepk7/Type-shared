@@ -85,7 +85,9 @@ Schema.Limits = {
 	MaxTags = 8,
 	MaxFlavour = 80,
 	MaxHint = 60,
-	MaxWord = 40,
+	MaxWord = 40, -- single word / id
+	MaxPhrase = 80, -- canonical phrase with stacked modifiers
+	MaxModifiers = 6,
 }
 
 local FALLBACK_VISUAL: Types.Visual = {
@@ -289,7 +291,7 @@ function Schema.repair(raw: any, input: string?): WordResult
 	local mods: { Types.AppliedModifier } = {}
 	if type(raw.modifiers) == "table" then
 		for _, m in raw.modifiers do
-			if type(m) == "table" and type(m.id) == "string" and #mods < 3 then
+			if type(m) == "table" and type(m.id) == "string" and #mods < Schema.Limits.MaxModifiers then
 				table.insert(mods, {
 					id = string.lower(cleanString(m.id, 24, "")),
 					kind = enumOf("ModifierKind", m.kind, "Quality") :: any,
@@ -302,8 +304,8 @@ function Schema.repair(raw: any, input: string?): WordResult
 	return {
 		schemaVersion = Schema.VERSION,
 		id = id,
-		canonical = string.lower(cleanString(raw.canonical, L.MaxWord, id)),
-		input = cleanString(raw.input or input, L.MaxWord, id),
+		canonical = string.lower(cleanString(raw.canonical, L.MaxPhrase, id)),
+		input = cleanString(raw.input or input, L.MaxPhrase, id),
 		confidence = clampNum(raw.confidence, 0, 1, 0.5),
 		source = enumOf("Source", raw.source, "AI") :: any,
 		correction = correction,
