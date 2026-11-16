@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"primrose","NGANMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow little rosette blooms","rustle","First sign of spring. Sneaky healer.","plant,flower"},
 	{"prince","LHCJNA","Dcf",4,6,4,"1D4ED8","FACC15","small crown, cape, fancy sword","horn","Charming. Exhaustingly charming.","royal"},
 	{"princess","LHCJNA","Fch",4,5,4,"F472B6","FACC15","tiara, puffy gown, glass slippers","chime","Rescues herself. Thanks anyway.","royal"},
 	{"princess guard","LKCJNA","GQ",4,5,6,"F472B6","94A3B8","pink-plumed armor and shield","clang","Guards the princess. And the cake.","royal,warrior"},
@@ -402,5 +403,4 @@ return {
 	{"robot bird","OKAJDB","dAe",2,8,3,"CA8A04","22D3EE","brass bird with ticking gear wings","whistle","Sings in beeps.","robot,bird"},
 	{"robot butler","OKCJNA","GdF",3,4,5,"F8FAFC","1F2937","tuxedo-painted robot holding a tray","beep","Tea is served. Then the laser is served.","robot,silly"},
 	{"robot cat","OKBJAA","dZf",3,8,4,"E5E7EB","F472B6","sleek chrome kitty, glowing whiskers","meow","Knocks things off tables at 200 mph.","robot,cute,cat"},
-	{"robot chef","OKCJNA","KFe",3,5,5,"F8FAFC","DC2626","robot with chef hat and spatula arms","beep","Flips burgers. And enemies.","robot,silly"},
 }

@@ -292,6 +292,7 @@ return {
 	{"partridge","AMBJDA","df",2,4,2,"8A7A6A","C8703A","round plump game bird","cluck","Sits in pear trees. Allegedly.","bird,farm,holiday"},
 	{"party","KMCNOI","jdc",2,5,2,"FF4081","FFEB3B","confetti, streamers and disco lights","music","Nobody fights at a party.","silly"},
 	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
+	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
 	{"party bus","DMDKHL","Ddkcg",4,5,7,"7E57C2","FF4081","bus with flashing lights and music","music","Nobody can resist the party.","mechanical,vehicle,land,silly"},
 	{"party hat","BMAONI","d",1,6,1,"FF3EA5","D4A72C","pointy striped cardboard cone hat","squeak","You can't be sad in this hat.","party,silly"},
 	{"party horn","BMAFKI","jd",1,9,1,"D4A72C","C0392B","curly paper horn","honk","Pweeeeeeep!","party,silly"},
@@ -320,7 +321,7 @@ return {
 	{"pea","IGAELB","UeP",2,7,1,"7DBE3A","4E8E2B","tiny green sphere","pitter","The original pea shooter ammo.","edible,vegetable"},
 	{"pea chick","AMAJDA","df",1,4,2,"B8A07A","E8D8B8","fluffy brown baby peafowl","cluck","Future show-off. Currently fluff.","bird,farm"},
 	{"pea plant","NGBMMI","SeV",3,1,3,"7CB342","C5E1A5","climbing vine with pods that pop","rustle","Pea pea pea pea. Rapid fire.","plant,silly"},
-	{"pea shooter","IGAMII","UeP",2,7,1,"7DBE3A","4E8E2B","tube firing peas","pitter","A green ballistic straw.","edible"},
+	{"pea shooter","CMAAwI","eV",1,9,1,"2E8B57","8BC34A","thin green tube","thwip","Pft pft pft pft.","toy,silly"},
 	{"pea soup","IBBOGI","FN",3,4,3,"8DB84A","5E8A2B","thick green soup","slurp","Thick as fog. Green as goblins.","edible,warm,healthy"},
 	{"peace","KHCNOI","FO",2,3,4,"B2EBF2","FFFFFF","calm pale blue glow with doves","hush","Everyone just... chill.","support"},
 	{"peace lily","NHBOMI","FS",1,1,3,"1B5E20","FFFFFF","dark leaves with white sail flowers","rustle","Peace. Calm. Healing.","plant,houseplant"},
@@ -402,5 +403,4 @@ return {
 	{"petrify","KECAKB","eNO",6,6,2,"9E9E9E","E0E0E0","grey creeping stone wave over target","crackle","Hold still. Forever.","magic,heavy"},
 	{"petunia","NGBNMI","dFS",2,1,2,"AB47BC","FFFFFF","velvety trumpet blooms","rustle","Hangs in baskets, plotting.","plant,flower"},
 	{"phantom of the stage","AICJNA","jZc",5,6,4,"111827","F8FAFC","cape and half-mask","sing","Haunts theaters. Loves a dramatic chord.","ghost,music"},
-	{"pharaoh","LHCJNA","GOh",6,3,6,"1E3A8A","CA8A04","striped headdress, crook and flail","horn","Owns several pyramids. Humble about it.","royal,ancient"},
 }

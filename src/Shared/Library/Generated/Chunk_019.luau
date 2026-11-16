@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot chef","OKCJNA","KFe",3,5,5,"F8FAFC","DC2626","robot with chef hat and spatula arms","beep","Flips burgers. And enemies.","robot,silly"},
 	{"robot crab","OKBJFA","Gf",3,4,7,"DC2626","94A3B8","metal crab with pincer claws","click","Walks sideways. Pinches forward.","robot,aquatic"},
 	{"robot dance","KKBNOI","jd",1,5,2,"90A4AE","00E5FF","stiff jerky moves with beeps","beep","Beep boop. Groovy.","music,dance,silly"},
 	{"robot dance crew","OKCJNA","jdh",3,6,4,"F472B6","22D3EE","three robots doing the robot","beep","Doing the robot. Ironically.","robot,silly,music"},
@@ -402,5 +403,4 @@ return {
 	{"sea serpent hatchling","ABAJCC","HB",1,6,1,"0F766E","99F6E4","tiny looping serpent","hiss","Practices being scary. Not yet.","aquatic,cute"},
 	{"sea slug","ABAJGI","MN",1,1,2,"8A3AD8","F2A02A","neon frilly slug","squelch","The ocean's most fashionable slug.","mollusk,aquatic"},
 	{"sea snake","ABCJCC","fMNB",4,6,3,"3A5A8A","F2F2F0","banded snake, paddle tail","hiss","Swims with a paddle tail.","reptile,venomous"},
-	{"sea spider","ABBJRA","GfT",2,4,5,"E8D8C0","C88A5A","spindly legs, tiny body","clack","All legs, almost no body.","crustacean,aquatic,armored"},
 }

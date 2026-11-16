@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weed","NGALMI","WSP",1,1,3,"7CB342","C0CA33","scraggly green sprouts","rustle","You can not get rid of them. Ever.","plant,silly"},
+	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
 	{"weeping cherry","NGCCMI","GdFS",2,1,5,"5D4037","F8BBD0","drooping branches of pink blossom","rustle","Weeps flowers. Beautifully.","plant,tree,cute"},
 	{"weeping fig","NGCCMI","GWkS",2,1,5,"8D6E63","2E7D32","small tree with glossy drooping leaves","rustle","Sulks if you move it.","plant,tree"},
 	{"weevil","AMAJFA","Gf",1,3,4,"6A4A2A","3A2A1A","beetle with long trunk snout","click","A beetle with an elephant nose.","insect,armored"},

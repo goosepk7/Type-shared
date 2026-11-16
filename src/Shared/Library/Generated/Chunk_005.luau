@@ -255,7 +255,7 @@ return {
 	{"coat rack","BMCC0I","G",1,1,4,"5A3A1E","B58A3A","tall pole with hooks","thud","Hats on. Enemies off.","furniture,household"},
 	{"coati","AMBJAA","Cfb",2,5,3,"8E6A44","E8D8C0","long ringed tail held up, long snout","squeak","Tail up, nose in everything.","mammal,wild"},
 	{"coatl","AHCJCB","AFM",4,8,3,"10B981","FDE047","small feathered serpent with rainbow wings","hiss","A flying rainbow noodle.","mythical,reptile"},
-	{"cobbler","IGBOKI","F",2,5,3,"C8762B","E8C070","baked fruit, biscuit top","crunch","Fruit with a crispy blanket.","edible,healthy"},
+	{"cobbler","LMCJNI","dN",3,4,4,"78350F","F8FAFC","leather apron, tiny hammer","thud","Fixes your shoes. Ties the laces together.","silly"},
 	{"cobia","ABCJEC","DfB",4,7,4,"3A3A30","C8C0A8","shark-like dark fish","splash","Pretends to be a shark.","fish,aquatic"},
 	{"cobra","AMCJCD","fMeN",5,6,3,"3A3020","E8C87A","raised hood, swaying upright","hiss","Flares its hood. Means business.","reptile,venomous"},
 	{"cobra lily","NGCLMI","ScH",4,1,4,"9E9D24","B71C1C","hooded tube like a rearing snake","chomp","Looks like a snake. Acts like a trap.","plant,carnivorous"},

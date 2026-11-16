@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea spider","ABBJRA","GfT",2,4,5,"E8D8C0","C88A5A","spindly legs, tiny body","clack","All legs, almost no body.","crustacean,aquatic,armored"},
 	{"sea sponge","ABCLMI","GiWN",3,1,4,"E8C83A","D8A02A","porous tube sponge","crackle","Soaks up everything. Even drama.","aquatic,ocean,reef"},
 	{"sea spray","FBBDOJ","dN",2,6,1,"8FD6F2","FFFFFF","fine salty mist burst","splash","Salty mist to the face.","aquatic"},
 	{"sea squirt","ABAJGI","GeN",1,1,6,"E8A04A","F2D07A","squishy tube with two siphons","squelch","Squirts water at you. Rude.","mollusk,aquatic"},
@@ -381,7 +382,7 @@ return {
 	{"sludge","FJCF6F","MN",4,3,4,"5C6B2E","98A65A","thick murky green-brown flow","squelch","Slow, gross and coming for you.","toxic,silly"},
 	{"slug","AMAJGI","SN",1,1,2,"8A7A4A","C8B87A","slimy shell-less snail, eye stalks","squelch","A snail that moved out.","mollusk,aquatic,garden"},
 	{"slurpee","ICBNGI","JN",3,3,2,"E8434F","4FA3E8","cup of colorful frozen slush","crackle","Brain freeze on demand.","edible,frozen,sweet"},
-	{"slushie machine","OCCMII","JeN",3,3,2,"4FA3E8","E8434F","machine with spinning ice tanks","crackle","Endless brain freeze.","edible,frozen,sweet"},
+	{"slushie machine","OCCM1I","JN",2,2,5,"47D7E8","C0392B","tank of spinning icy drink","clang","Brain freeze, weaponised.","kitchen,household"},
 	{"smack","KMBAKB","kf",3,9,1,"FF8A80","FFFFFF","giant cartoon hand swat","smack","Rude, but effective.","silly"},
 	{"smartwatch","BDAO1I","c",1,6,2,"24262A","BFE6F2","wrist screen watch","beep","Notifications: you are winning.","tech"},
 	{"smash","KECAKB","kfO",6,7,3,"8D6E63","FFE082","giant fist-shaped impact burst","crash","Big hands. Big crash. Big fun.","heavy"},
@@ -402,5 +403,4 @@ return {
 	{"smoked sausage","IMBHJI","cf",3,5,4,"8A3A1E","C8603A","curved smoky sausage","bonk","Smoky and snappy.","edible,silly"},
 	{"smokejumper","LBCJNB","AFI",5,7,5,"FACC15","DC2626","parachute, fire shovel, yellow shirt","whoosh","Jumps out of planes into fires. Daily.","rescue,flying"},
 	{"smolder","FABNOI","KSN",3,2,4,"5A2A1A","E0703A","low glowing coals, curls of thin smoke","hiss","Patient fire. It can wait.","fire"},
-	{"smoothie","IBBOKI","WF",2,6,2,"E8434F","F7F2EC","tall glass of blended fruit","slurp","Fruit in a blender storm.","edible,drink"},
 }

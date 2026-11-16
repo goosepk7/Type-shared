@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"trombone","BKCFJI","kIe",3,5,3,"B58A3A","D4A72C","long brass slide horn","fanfare","Wah wah waaaah.","music,silly"},
+	{"troodon","AMCJBA","DjQfT",3,9,3,"8A7A4A","E8D07A","big-eyed smart little dino","screech","Smartest dinosaur. Allegedly.","dinosaur,extinct,reptile,predator,smart"},
 	{"trophy","BHBOKF","F",2,3,5,"D4A72C","24262A","golden cup on a base","bonk","Winners never quit. Trophies never move.","sport,shiny"},
 	{"trophy cup","BHBOKJ","F",3,4,4,"D4A72C","B0103A","jewelled golden goblet","chime","Drink deep. Heal up.","treasure,holy"},
 	{"tropical fruit","IGAELB","FeP",2,7,1,"F4B33A","E0427C","pile of mango, pineapple, papaya","pitter","A whole beach vacation.","edible,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"weddell seal","ACCJEC","UfB",3,5,4,"4A4A50","B8B8C0","spotted dark seal","bark","Sings underwater in Antarctica.","mammal,aquatic"},
 	{"wedding cake","IMEJII","Gdkc",6,1,7,"F7F4EC","E8C8D0","towering five-tier white cake","thud","Five tiers of pure distraction.","edible,giant,silly,party"},
 	{"wedge","JKALJK","O",1,1,6,"8A929B","8E9196","triangular metal wedge","clank","Jammed tight.","tool"},
-	{"weed","NGALMI","WSP",1,1,3,"7CB342","C0CA33","scraggly green sprouts","rustle","You can not get rid of them. Ever.","plant,silly"},
-	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
 }

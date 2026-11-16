@@ -197,7 +197,7 @@ return {
 	{"garden","MGCNII","WFS",2,1,5,"66BB6A","F06292","neat beds of flowers and veggies","rumble","Weeding in progress. Enemies are weeds.","place,terrain,plant"},
 	{"garden eel","ABAJCC","CdZB",1,6,1,"F2EEE6","3A3A3A","thin eels poking up from sand","splash","Pops up. Pops down. Repeat.","fish,aquatic,silly"},
 	{"garden fork","JGCHuI","CfT",3,5,4,"8A929B","8B5A2B","four-tine digging fork","thud","Digs dirt. Pokes pests.","garden"},
-	{"garden gnome","AEALNI","GUd",1,2,5,"DC2626","22C55E","ceramic gnome, fishing rod, rosy cheeks","giggle","Guards your lawn with deep focus.","silly"},
+	{"garden gnome","BEBJNK","Gd",1,1,4,"C0392B","2F6FD1","little bearded statue with pointy hat","clank","Watching. Always watching.","garden,silly"},
 	{"garden hose","JBCFJK","IeN",2,6,3,"2E8B57","F1C40F","coiled hose with spray nozzle","splash","The best part of summer.","garden,summer"},
 	{"gardener","LGCJNA","WFe",3,4,4,"15803D","92400E","sun hat, gloves, watering can","rustle","Grows walls of hedges in seconds.","plant,outdoor"},
 	{"gardenia","NGBNMI","dFS",2,1,2,"FFFFFF","1B5E20","creamy white waxy bloom","rustle","Smells like a fancy hotel.","plant,flower"},

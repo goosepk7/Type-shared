@@ -387,7 +387,7 @@ return {
 	{"ice cream man","LCCJNA","dJc",3,5,4,"F8FAFC","F9A8D4","white hat, bell, cone","jingle","Plays a jingle. Everyone follows.","food,sweet"},
 	{"ice cream parlor","ECCNII","dScN",2,1,4,"F8BBD0","80DEEA","pastel shop with a giant cone sign","ding","Free samples. Enemies cannot resist.","sweet,silly"},
 	{"ice cream sandwich","ICBAKJ","JeN",3,5,2,"3A2416","F7F2EC","two dark cookies, white cream","squish","Cold cream, cookie armour.","edible,frozen,sweet"},
-	{"ice cream scoop","ICBAKJ","JeN",3,5,2,"F7E7CE","F2E8D8","perfect round scoop","squish","One scoop, launched.","edible,frozen,sweet"},
+	{"ice cream scoop","BCAHJK","Jf",1,7,3,"C9CED4","8E9196","round scooping spoon","clang","Perfect spheres of chill.","kitchen,household"},
 	{"ice cream social","ICCNGI","JcN",3,3,2,"F7E7CE","F2A6C8","table of scoops","crackle","Cold treats, warm friends.","edible,frozen,sweet"},
 	{"ice cream sundae","ICBNGI","JScN",3,3,2,"F7E7CE","B0101E","glass dish, scoops, sauce, cherry","crackle","Everything good, in a tall glass.","edible,frozen,sweet"},
 	{"ice cream truck","DMDKHL","dkcg",4,5,6,"F7C6D9","8FD3F4","boxy van, giant cone on roof, serving window","jingle","Plays a jingle that no one can resist.","sweet,silly"},

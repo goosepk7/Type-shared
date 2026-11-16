@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pharaoh","LHCJNA","GOh",6,3,6,"1E3A8A","CA8A04","striped headdress, crook and flail","horn","Owns several pyramids. Humble about it.","royal,ancient"},
 	{"pharaoh mummy","AIDJNA","ieNh",7,3,7,"CA8A04","1E3A8A","golden death mask, striped headdress, bandages","groan","Woke up from a 3000-year nap. Still tired.","undead,royal,ancient,spooky"},
 	{"pharmacist","LJCJNA","FM",3,4,4,"F8FAFC","22C55E","lab coat, pill bottles","ding","Here's your potion. Twice daily.","healer"},
 	{"pharmacy","EMCNII","FS",2,1,6,"F5F5F5","43A047","white shopfront with a green cross","ding","Healing supplies in stock.","structure,building,shop"},
@@ -149,7 +150,7 @@ return {
 	{"pizza delivery","IMCJHL","DFc",3,7,2,"D72B2B","F7F2EC","scooter with pizza box","whoosh","Hot pizza in thirty minutes or less.","edible"},
 	{"pizza dough","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","round stretchy dough ball","wobble","Stretchy, sticky, full of potential.","edible,wobbly"},
 	{"pizza ninja","LMCJNA","DZe",4,9,3,"111827","DC2626","ninja carrying pizza boxes","whoosh","Delivers pizza. And pain.","silly,stealth"},
-	{"pizza oven","EACNII","KS",4,4,2,"B0502B","3A2A1E","domed brick oven, fire glow","sizzle","A dome of fire that makes pizza.","edible,spicy"},
+	{"pizza oven","OACM1I","K",4,1,7,"9C4A3A","FF6A1A","domed brick oven glowing inside","clang","Wood-fired fury.","kitchen,household"},
 	{"pizza party","IMCJII","dFc",5,1,6,"E8B04A","D72B2B","stacked pizza boxes","thud","Free pizza. Everyone comes.","edible,giant,silly"},
 	{"pizza peel","BMCHtK","klf",2,6,3,"C49A6C","8B5A2B","big flat wooden paddle","clang","Scoop. Flip. Fling.","kitchen,household"},
 	{"pizza place","EMCNII","dSc",2,1,5,"E53935","FFC107","shopfront with a leaning pizza sign","ding","Free delivery. Very fast delivery.","structure,building,shop,silly"},
@@ -402,5 +403,4 @@ return {
 	{"pretzel stick","IMBHJI","kf",2,5,4,"8A4A1E","F2F0E8","thin salted brown stick","bonk","Salty little wands.","edible,silly"},
 	{"prickly pear","NECLMI","GFST",3,1,6,"7CB342","E91E63","stacked flat paddles, pink fruit","thud","Pretty fruit. Spiky everything else.","plant,desert,sharp"},
 	{"pride","KHBOKI","GW",3,4,4,"FFD54F","7E57C2","puffed-up golden shine","ding","Look at me. Seriously, look.","silly"},
-	{"primrose","NGANMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow little rosette blooms","rustle","First sign of spring. Sneaky healer.","plant,flower"},
 }

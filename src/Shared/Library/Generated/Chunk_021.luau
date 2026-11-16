@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"smoothie","IBBOKI","WF",2,6,2,"E8434F","F7F2EC","tall glass of blended fruit","slurp","Fruit in a blender storm.","edible,drink"},
 	{"smoothie bowl","IGBOKI","F",2,5,3,"7A3A6A","E8434F","bowl of purple puree, fruit","crunch","A smoothie that you eat with a spoon.","edible,healthy,breakfast"},
 	{"smorrebrod","IGBOKI","F",2,5,3,"5A3A2A","F2E8D0","dark rye with toppings","crunch","Open-faced, open-minded.","edible,healthy"},
 	{"snack table","IMCJII","Gdc",5,1,6,"D72B2B","F2C24A","folding table of snacks","thud","Everyone stops for snacks.","edible,giant,silly"},
@@ -402,5 +403,4 @@ return {
 	{"starting pistol","BMBFwF","O",1,9,2,"24262A","C9CED4","blank-firing pistol","bang","Ready, set, BANG.","sport"},
 	{"stasis","KLCLKI","GO",6,3,6,"FFC107","5E35B1","golden bubble with frozen target inside","hum","On hold. Please wait.","time"},
 	{"stasis field","OLCN1I","SNO",5,3,5,"3FC1D9","F2F2EE","cube projecting a freeze bubble","hum","Everything stops. Even time.","scifi"},
-	{"static","FDBLII","dL",2,6,1,"C6D8FF","FFF6A0","frizzy spark field, hair-raising arcs","crackle","Hair goes up. Dignity goes down.","electric,silly"},
 }

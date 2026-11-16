@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"taunt","KMBFOB","dc",1,8,1,"FF5252","FFFFFF","tongue-out face ring","neener","Nyah nyah! Come get me.","silly"},
+	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
 	{"tavern","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
 	{"taxi","DMCKHL","Dkg",4,7,5,"F7C600","1A1A1A","yellow sedan, roof sign, checker stripe","engine","Meter is running. So are the enemies.","mechanical,vehicle,land"},
 	{"taxi driver","LMCJNL","Dd",3,8,4,"FACC15","111827","cap, checkered cab, honking","honk","Takes the long way. On purpose.","vehicle,silly"},
@@ -401,6 +403,4 @@ return {
 	{"troll king","AEEJNA","Fkh",8,3,9,"57534E","FACC15","huge troll with stone crown","roar","Charges everyone a toll. Even friends.","giant,royal,boss"},
 	{"troll shaman","AJDJNA","FMh",6,4,7,"0F766E","A855F7","tusked troll with feathered staff","drum","Mojo. So much mojo.","giant,magic"},
 	{"trolleybus","DDDKHL","DkgL",4,4,7,"3A7D44","F2E6C9","bus with twin poles to overhead wires","engine","Powered by sparks and patience.","mechanical,vehicle,land"},
-	{"trombone","BKCFJI","kIe",3,5,3,"B58A3A","D4A72C","long brass slide horn","fanfare","Wah wah waaaah.","music,silly"},
-	{"troodon","AMCJBA","DjQfT",3,9,3,"8A7A4A","E8D07A","big-eyed smart little dino","screech","Smartest dinosaur. Allegedly.","dinosaur,extinct,reptile,predator,smart"},
 }

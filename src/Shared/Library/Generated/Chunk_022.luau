@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"static","FDBLII","dL",2,6,1,"C6D8FF","FFF6A0","frizzy spark field, hair-raising arcs","crackle","Hair goes up. Dignity goes down.","electric,silly"},
 	{"static shock","FDBAKB","LO",3,10,1,"BFD7FF","FFF59D","tiny blue snap between fingertips","zap","Doorknob revenge.","electric,silly"},
 	{"statice","NGBNMI","dFS",1,1,2,"7E57C2","FFFFFF","papery clusters of tiny blooms","rustle","Never wilts. Never quits.","plant,flower"},
 	{"station wagon","DMCKHL","Dkg",4,6,6,"8A6E4B","E8DCC2","long boxy car, wood side panels, roof rack","engine","Grandma's battle wagon. Fully loaded.","mechanical,vehicle,land,silly"},
@@ -229,6 +230,7 @@ return {
 	{"sundial","EHBCII","GSN",2,1,8,"BCAAA4","FFD54F","stone pillar with a bronze dial","thud","Tells time. Only when sunny.","structure,ancient"},
 	{"sundog","GHBGKE","VO",3,5,2,"FFF3C4","FF8A80","twin glowing spots beside the sun","chime","Two extra suns. Very confusing.","space"},
 	{"sunfire","FHDNOI","KFS",7,5,3,"FFB703","FFF3C4","golden sun circle on the ground, rays up","hum","Sunscreen strongly recommended.","fire,holy"},
+	{"sunfire bird","AACJDB","KAF",4,8,3,"FDE047","F97316","small radiant bird with sunray tail","chime","Brings the dawn. Every morning.","fire,bird"},
 	{"sunfish","ABDJEC","DfB",5,2,6,"9AA0A8","D8DCE0","huge round flat fish, no tail","splash","A giant swimming head. Tail sold separately.","fish,aquatic,silly"},
 	{"sunflower","NHCMMI","FSe",3,1,3,"FFC107","5D4037","tall stalk, giant yellow face","rustle","Follows the sun. Shoots seeds.","plant,flower"},
 	{"sunflower field","NHENMI","FSe",3,1,4,"FFC107","43A047","rows of tall sunflowers facing the sun","rustle","Thousands of faces. All staring.","plant,crop"},
@@ -401,6 +403,4 @@ return {
 	{"tater tots","IMAELB","eVP",2,7,1,"D49A3A","F2CE7A","little golden cylinders","pitter","Tiny potato barrels. Fire at will.","edible,savory"},
 	{"tattletale","LMBJNA","jh",2,7,2,"FACC15","DC2626","pointing kid shouting","whistle","I'M TELLING. Teacher arrives.","silly,school"},
 	{"tatzelwurm","AJBJCD","CfM",3,6,3,"57534E","D97706","cat-headed lizard worm","hiss","A cat-faced lizard that hisses at hikers.","cryptid,reptile"},
-	{"taunt","KMBFOB","dc",1,8,1,"FF5252","FFFFFF","tongue-out face ring","neener","Nyah nyah! Come get me.","silly"},
-	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
 }
