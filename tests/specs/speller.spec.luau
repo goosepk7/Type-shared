@@ -213,7 +213,8 @@ return function(t)
 		for line in string.gmatch(fs.readFile("tests/data/typos.tsv"), "[^\n]+") do
 			if string.sub(line, 1, 1) ~= "#" then
 				local a, b = string.match(line, "^(.-)\t(.+)$")
-				if a then
+				-- a "typo" that is itself a library word or a real English word is not a typo ("lunch" for launch)
+				if a and Library.lookup(a) == nil and not Library.isRealWord(a) then
 					table.insert(rows, { a, b })
 				end
 			end

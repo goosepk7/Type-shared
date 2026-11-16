@@ -61,7 +61,8 @@ local function cheapLookup(form: string): Hit?
 		local method: CorrectionMethod = if kind == "Id" then "Exact" elseif kind == "Alias" then "Alias" else "Normalized"
 		return { ord = o, conf = if kind == "Variant" then 0.97 else 1, method = method, alts = {} }
 	end
-	local mo = Library.misspelling(form)
+	-- a listed misspelling that is itself a real word ("dessert" for desert) is not a typo
+	local mo = if Library.isRealWord(form) then nil else Library.misspelling(form)
 	if mo then
 		return { ord = mo, conf = 0.93, method = "Misspelling", alts = {} }
 	end
@@ -110,8 +111,8 @@ local function fuzzyLookup(form: string): Hit?
 		-- matching sounds is evidence (stronger for longer codes).
 		local eff = c.cost
 			- (if c.phonetic then phonBonus else 0)
-			- 0.25 * math.min(rank, 800) / 800
-			+ (if keyIsId then 0 else 0.12)
+			- 0.35 * math.min(rank, 800) / 800
+			+ (if keyIsId then 0 else 0.3)
 			+ (if string.find(key, " ", 1, true) and not string.find(form, " ", 1, true) then 0.1 else 0)
 		table.insert(scored, { owner = owner, eff = eff, cost = c.cost, phonetic = c.phonetic, rank = rank })
 	end
@@ -268,6 +269,13 @@ local function spanOptions(tokens: { string }, i: number, j: number, n: number, 
 		local cost = (1 - h.conf) * 2 - 0.12 * (L - 1) + 0.05 * (n - j)
 		if accessory[i] then
 			cost += 0.6 -- "shark wearing a monocle": the head noun comes before wearing/with/holding
+		end
+		-- "army of bees", "swarm of wasps": a count word right before "of" counts the next thing
+		if L == 1 and tokens[j + 1] == "of" then
+			local cm = Modifiers.lookup(phrase)
+			if cm and (cm :: any).kind == "Count" then
+				cost += 0.8
+			end
 		end
 		table.insert(opts, { kind = "Base", cost = cost, conf = h.conf, hit = h, fuzzy = h.method == "Fuzzy" or h.method == "Phonetic" })
 	end
