@@ -117,6 +117,7 @@ Config.Visual = {
 	SummonPartBudget = { Tiny = 8, Small = 12, Medium = 20, Large = 30, Huge = 40, Colossal = 40 },
 	SummonSignatureBonus = 0.25, -- hand-built signature summons may use up to +25% parts
 	SummonEmitterBudget = { Solid = 2, Spectral = 3 },
+	SummonEffectBudget = { Solid = 2, Spectral = 3 }, -- looping Effects.play attachments (accents + material particles)
 	SummonMaxParticleRate = 60, -- particles/sec per emitter
 	SummonMaxTrails = 4,
 	SummonMaxLights = 1,

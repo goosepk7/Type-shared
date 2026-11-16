@@ -1,0 +1,152 @@
+{
+ "arrow_down": {
+  "id": "115018562119352",
+  "moderation": "Reviewing",
+  "sha1": "167a77d91288a7f7dc0b0f53f3c9533ae62e6ed3"
+ },
+ "beam_energy": {
+  "id": "116423703780479",
+  "moderation": "Reviewing",
+  "sha1": "81b1ec6a07d6e9bba500af9d246eb9663d7bbd1b"
+ },
+ "beam_lightning": {
+  "id": "70395068362289",
+  "moderation": "Reviewing",
+  "sha1": "3c6450c2c430d335c1eb371bc6e462de8698603e"
+ },
+ "bubble": {
+  "id": "113657217057347",
+  "moderation": "Reviewing",
+  "sha1": "2cad61979916fadf70c3b2daf0e04f113ddfcf6f"
+ },
+ "burst": {
+  "id": "90731198380571",
+  "moderation": "Reviewing",
+  "sha1": "adc39c957a4b7b03904efe57bb5439c0a374d010"
+ },
+ "crack": {
+  "id": "131635135177237",
+  "moderation": "Reviewing",
+  "sha1": "272c0d47791d20cfdf78f490997022d1c9056ea9"
+ },
+ "flame_4x4": {
+  "id": "84269975033882",
+  "moderation": "Reviewing",
+  "sha1": "8460c14942eeea621e31d8fead1410e60e1b0b46"
+ },
+ "frost": {
+  "id": "133740720915321",
+  "moderation": "Reviewing",
+  "sha1": "0fb85bc4f9962346297d9ed0c5d7680875ac845d"
+ },
+ "glow": {
+  "id": "108414744795407",
+  "moderation": "Approved",
+  "sha1": "8fa2c4baa909cff90dbf177990bb8b0dc8a59e67"
+ },
+ "glow_core": {
+  "id": "120665502333487",
+  "moderation": "Reviewing",
+  "sha1": "3d894106a603ad99489c397a9d7a9780370a0842"
+ },
+ "heart": {
+  "id": "95408201195461",
+  "moderation": "Reviewing",
+  "sha1": "453662317dd6e3fa6d60fd64c18591dd5c1f1216"
+ },
+ "leaf": {
+  "id": "105117799632413",
+  "moderation": "Reviewing",
+  "sha1": "1b48916b2a74bd1e47d8984c1d62fa639eeeef47"
+ },
+ "music_note": {
+  "id": "138541781100642",
+  "moderation": "Reviewing",
+  "sha1": "279ae96d160daf33eae89604d3037beb8cbd0ecd"
+ },
+ "petal": {
+  "id": "93531842425016",
+  "moderation": "Reviewing",
+  "sha1": "86382c397eaa224fb3b624194349b2ede14b6c77"
+ },
+ "pixel": {
+  "id": "101267979794980",
+  "moderation": "Reviewing",
+  "sha1": "61dca1ab31a546e8fdc5e094439a7977e95b0c99"
+ },
+ "plus": {
+  "id": "100926321747312",
+  "moderation": "Reviewing",
+  "sha1": "99e6d594e60bba81b990c203684d5736676804a0"
+ },
+ "question": {
+  "id": "112555779802186",
+  "moderation": "Reviewing",
+  "sha1": "ac15528a172779b28ac71cd10afcbbcb33db53db"
+ },
+ "raindrop": {
+  "id": "135306251181160",
+  "moderation": "Reviewing",
+  "sha1": "7d5363e523381df9559a9aa6b8ab57ba9ae21b30"
+ },
+ "ring": {
+  "id": "126560562764406",
+  "moderation": "Reviewing",
+  "sha1": "a61ede51a1921402c0f1c4c0c558723acc84cc94"
+ },
+ "rune_circle": {
+  "id": "99686842686304",
+  "moderation": "Reviewing",
+  "sha1": "03402a89e774955fb1ea414d9643ed275a26c41d"
+ },
+ "runes_4x4": {
+  "id": "93740234994056",
+  "moderation": "Reviewing",
+  "sha1": "4344b1017654f7212b0a673a202a6094e3ab762f"
+ },
+ "scorch": {
+  "id": "104778299592906",
+  "moderation": "Reviewing",
+  "sha1": "d4efc66773b1efae215e89ec477579cab96a816e"
+ },
+ "shadow": {
+  "id": "83054151130461",
+  "moderation": "Reviewing",
+  "sha1": "f60ffa08589d1b0b4fd21ad93bce8c8a67f57c4a"
+ },
+ "shard": {
+  "id": "81857599346218",
+  "moderation": "Reviewing",
+  "sha1": "34a34a8bc063faa319e8d9195f3b2eb6a6768d4a"
+ },
+ "smoke_4x4": {
+  "id": "85397871768583",
+  "moderation": "Reviewing",
+  "sha1": "1bf7492d80cb06ce14b714f50509b783c85906cc"
+ },
+ "snowflake": {
+  "id": "119336287745323",
+  "moderation": "Reviewing",
+  "sha1": "29395657721fcafd18da1f3304acc922c3892f1d"
+ },
+ "spark": {
+  "id": "72408877003550",
+  "moderation": "Reviewing",
+  "sha1": "1cc1c7cfb26a9b6d16059ac4a87eefdead94c777"
+ },
+ "star": {
+  "id": "113044384448754",
+  "moderation": "Reviewing",
+  "sha1": "076b950d56f443ea273dc058cfd445cbeb8df333"
+ },
+ "swirl": {
+  "id": "105237882062007",
+  "moderation": "Reviewing",
+  "sha1": "261a58cc88f0afb62b8990de7012a87061416018"
+ },
+ "zzz": {
+  "id": "129250538149931",
+  "moderation": "Reviewing",
+  "sha1": "861d62c0d01a46c42b35fd85532adeffb81dc1d9"
+ }
+}

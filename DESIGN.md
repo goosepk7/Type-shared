@@ -319,9 +319,138 @@ compiles to `src/Shared/Library/Generated/*.luau` (chunks of ~400 entries, loade
 
 ## 7. Element reactions
 
-12 elements, full 12x12 matchup table (`data/matchups.json`, multiplier hints) and 40+ reactions
-(`data/reactions.json`). Examples: Fire+Ice=Steam (BlocksVision), Water+Lightning=Electrified (Chain, AreaDamage),
-Fire+Nature=Wildfire (Spreads), Wind+Fire=Firestorm, Earth blocks Lightning, Light weakens Shadow.
+Source of truth: `data/matchups.json`, `data/reactions.json`, `data/material_reactions.json`, compiled into
+`src/Shared/Reactions.luau` by `python3 tools/gen_reactions.py` (the spec fails if the embedded block is stale).
+Ids are stable PascalCase keys; games may persist and switch on them.
+
+- **Matchups**: 12 elements, full 12x12 table. `Reactions.matchup(attacker, defender)` returns a multiplier hint
+  (1.5 strong / 1 neutral / 0.5 resisted) and `matchupReason` a one-line reason. Every element is strong against
+  2-3 others and weak to 2-4; same element resists itself; Light and Shadow are mutual rivals (1.5 both ways).
+- **Element + element**: `Reactions.get(a, b)` (order-independent) -> Reaction: 66 pairs + 12 same-element
+  amplifiers = 78 reactions. Each has hooks (`Reactions.HookInfo`), statuses, magnitude/duration hints, a vfx id
+  (`Effects.reaction(r)` plays it) and an sfx key. Also `byId`, `all`, `forElement`, `strongAgainst`, `weakTo`.
+- **Material + element**: `Reactions.material(materialIdOrRecord, element)` -> MaterialReaction? (`id` is the
+  outcome key). Lookup: per-material override, then the first rule for the element whose tags intersect the
+  material's tags + lowercased family + construction. Covers every material in `data/materials.json`.
+
+### Element reactions
+
+| id | elements | hooks | statuses |
+|---|---|---|---|
+| Extinguish | Fire+Water | CancelsElement, Cleanses, BlocksVision | Wet |
+| Steam | Fire+Ice | BlocksVision, AreaDamage, Lingers | Blind |
+| Plasma | Fire+Lightning | AreaDamage, Pierces, Knockback | Burn, Shock |
+| Magma | Fire+Earth | GroundHazard, DamageOverTime, Lingers | Burn, Slow |
+| Firestorm | Fire+Wind | Spreads, Moves, Knockback, DamageOverTime, Lifts | Burn |
+| Wildfire | Fire+Nature | Spreads, DamageOverTime, GroundHazard | Burn |
+| SolarFlare | Fire+Light | AreaDamage, BlocksVision | Burn, Blind |
+| Shadowflame | Fire+Shadow | IgnoresShields, DamageOverTime | Burn, Weaken |
+| GasExplosion | Fire+Poison | AreaDamage, Knockback, Explodes | Burn, Poison |
+| Molten | Fire+Metal | ArmorBreak, DamageOverTime | Burn, Slow |
+| Spellfire | Fire+Arcane | BuffDamage, Marks, Spreads | Burn |
+| Electrocute | Water+Lightning | Chain, AreaDamage | Shock, Stun, Wet |
+| FlashFreeze | Water+Ice | Freezes, Roots | Freeze |
+| Mudslide | Water+Earth | Pushes, Knockback, GroundHazard, Moves | Slow |
+| Typhoon | Water+Wind | Pushes, AreaDamage, BlocksVision, Moves | Wet, Slow |
+| Bloom | Water+Nature | Heals, Grows, Roots | Regen |
+| Abyss | Water+Shadow | Pulls, DamageOverTime, BlocksVision | Slow, Blind |
+| Contamination | Water+Poison | Spreads, DamageOverTime, GroundHazard | Poison, Wet |
+| Rust | Water+Metal | ArmorBreak, Weakens | Corrode, Slow |
+| Rainbow | Water+Light | BuffSpeed, Charms, Heals | Haste, Charm |
+| ManaSpring | Water+Arcane | Heals, Cleanses, Lingers | Regen |
+| Superconductor | Ice+Lightning | Chain, ArmorBreak | Shock, Slow |
+| Permafrost | Ice+Earth | GroundHazard, Roots, Lingers | Slow, Root |
+| Blizzard | Ice+Wind | BlocksVision, DamageOverTime, Moves | Slow, Freeze, Blind |
+| Frostbloom | Ice+Nature | Roots, AreaDamage, Wall | Root, Slow |
+| Prism | Ice+Light | Splits, Reflects, Pierces | Blind |
+| BlackIce | Ice+Shadow | GroundHazard, Invisibility, Lingers | Slow, Stun |
+| Cryotoxin | Ice+Poison | DamageOverTime, ExtendsStatus | Poison, Slow |
+| Shatter | Ice+Metal | ArmorBreak, AreaDamage, Splits | Stun |
+| Stasis | Ice+Arcane | Stuns, Freezes | Freeze, Stun |
+| Fulgurite | Lightning+Earth | CancelsElement, AreaDamage, Splits | Stun |
+| Thunderstorm | Lightning+Wind | RandomStrikes, AreaDamage, Moves, Lingers | Shock |
+| Sparkbloom | Lightning+Nature | Chain, Spreads | Shock, Confuse |
+| Flashbang | Lightning+Light | BlocksVision, Stuns | Blind, Stun |
+| BlackLightning | Lightning+Shadow | Pierces, IgnoresShields, Chain | Shock |
+| Neurotoxin | Lightning+Poison | Stuns, DamageOverTime | Poison, Stun |
+| MagneticStorm | Lightning+Metal | Pulls, Chain, Lifts, Disarms | Shock, Stun |
+| LeylineSurge | Lightning+Arcane | Chain, Marks, BuffDamage | Shock |
+| Sandstorm | Earth+Wind | BlocksVision, DamageOverTime, Moves | Blind, Slow |
+| Thornwall | Earth+Nature | Wall, Roots, AreaDamage, Blocks | Root |
+| Crystallize | Earth+Light | Shields, Reflects | Shielded |
+| Sinkhole | Earth+Shadow | Pulls, GroundHazard, Roots | Root, Slow |
+| Blight | Earth+Poison | GroundHazard, DamageOverTime, Spreads, Lingers | Poison, Weaken |
+| IronSpikes | Earth+Metal | AreaDamage, Pierces, Lifts, Wall | Slow |
+| Runequake | Earth+Arcane | Summons, AreaDamage, Knockback | Stun |
+| PollenStorm | Wind+Nature | Charms, Confuses, Spreads, Moves | Charm, Confuse |
+| Aurora | Wind+Light | BuffSpeed, Heals, Lingers | Haste, Regen |
+| Nightwind | Wind+Shadow | Invisibility, BuffSpeed, BlocksVision | Blind |
+| ToxicCloud | Wind+Poison | Spreads, DamageOverTime, Moves, Lingers | Poison |
+| Bladestorm | Wind+Metal | AreaDamage, Pierces, Moves, Knockback | Slow |
+| WarpGale | Wind+Arcane | Teleports, Knockback, Confuses | Confuse |
+| Sunbloom | Nature+Light | Heals, Grows, Cleanses | Regen |
+| Wither | Nature+Shadow | Drains, Weakens | Weaken, Slow |
+| Spores | Nature+Poison | Spreads, DamageOverTime, Confuses | Poison, Confuse |
+| Ironbark | Nature+Metal | Shields, Blocks | Shielded |
+| FeyRing | Nature+Arcane | Charms, Teleports, Lingers | Charm |
+| Eclipse | Light+Shadow | BlocksVision, CancelsBuffs, AreaDamage | Blind |
+| Purify | Light+Poison | Cleanses, CancelsElement, Heals | Regen |
+| Mirror | Light+Metal | Reflects, Shields | Shielded |
+| Starfall | Light+Arcane | RandomStrikes, AreaDamage, Lingers | Stun |
+| Plague | Shadow+Poison | Spreads, DamageOverTime, Weakens | Poison, Weaken |
+| PhantomBlades | Shadow+Metal | Pierces, IgnoresShields, Splits | Weaken |
+| Void | Shadow+Arcane | Pulls, Lifts, DamageOverTime, AreaDamage | Slow, Stun |
+| Corrosion | Poison+Metal | ArmorBreak, DamageOverTime | Corrode, Poison |
+| Hex | Poison+Arcane | Weakens, Confuses, Silences | Weaken, Confuse, Silence |
+| Enchant | Metal+Arcane | BuffDamage, Shields, Summons | Shielded |
+| Inferno | Fire+Fire | Amplify, AreaDamage, DamageOverTime, Spreads | Burn |
+| Tsunami | Water+Water | Amplify, Pushes, Knockback, AreaDamage | Wet, Slow |
+| AbsoluteZero | Ice+Ice | Amplify, Freezes, AreaDamage | Freeze, Stun |
+| Overcharge | Lightning+Lightning | Amplify, Chain, AreaDamage | Shock, Stun |
+| Earthquake | Earth+Earth | Amplify, AreaDamage, Knockback, Lifts | Stun, Slow |
+| Tornado | Wind+Wind | Amplify, Lifts, Pulls, Knockback, Moves | Slow |
+| Overgrowth | Nature+Nature | Amplify, Roots, Heals, Grows | Root, Regen |
+| Supernova | Light+Light | Amplify, AreaDamage, Knockback, BlocksVision | Blind, Burn |
+| Blackout | Shadow+Shadow | Amplify, BlocksVision, Invisibility, Drains | Blind, Weaken |
+| Pandemic | Poison+Poison | Amplify, Spreads, DamageOverTime, ExtendsStatus | Poison, Weaken |
+| Fortress | Metal+Metal | Amplify, Shields, Wall, Blocks, Reflects | Shielded |
+| ArcaneOverload | Arcane+Arcane | Amplify, AreaDamage, Silences, Knockback | Stun, Silence |
+
+### Material reactions
+
+| id | triggered by (element: tags / overrides) | hooks | statuses |
+|---|---|---|---|
+| Bake | Fire: clay/dough; overrides: clay (Fire), play dough (Fire) | Hardens, Durable | - |
+| Conduct | Lightning: conductive/metal/liquid; overrides: ice (Lightning), iron (Lightning), steel (Lightning), water (Lightning) | Chain, AreaDamage, Conductive | Shock |
+| Cook | Fire: edible; overrides: bread (Fire), marshmallow (Fire), spaghetti (Fire) | EdibleLure, Lures | - |
+| Cool | Water: hot/lava; Ice: hot/lava; overrides: lava (Ice), lava (Water) | CancelsElement, Hardens | - |
+| Corrode | Poison: metal/conductive | ArmorBreak, DamageOverTime | Corrode, Poison |
+| Crack | Ice: stone/brick/hard; Nature: stone/brick; Metal: stone/brick/hard/heavy | ArmorBreak, Grows | - |
+| Decay | Shadow: edible/organic/plant/living | Weakens, DamageOverTime | Weaken |
+| Dissolve | Water: soluble/sweet/powder; Poison: plastic/cloth/rubber; overrides: candy (Water), smoke (Water), soap (Water), sugar (Water) | Shrinks, DamageOverTime | - |
+| Drift | Wind: inflated; overrides: balloon (Wind) | Lifts, Flies | - |
+| Empower | Light: glowing/magic/holy; Arcane: magical/magic/glowing; overrides: gold (Arcane), pixels (Arcane) | BuffDamage | - |
+| Evaporate | Fire: liquid/cold; overrides: slime (Fire), water (Fire) | Shrinks, BlocksVision | - |
+| Explode | Fire: explosive; Lightning: explosive | Explodes, AreaDamage, Knockback | Burn |
+| Freeze | Ice: liquid/sticky/rubber/edible/brittle/glass/living/organic/soft/bouncy; overrides: jelly (Ice), slime (Ice), water (Ice) | Freezes, ShattersOnHit | Freeze |
+| Fuse | Lightning: sand/glass; overrides: sand (Lightning) | Hardens, Transform | - |
+| Gleam | Light: shiny/glass/crystal/metal; overrides: crystal (Light), gold (Light) | Reflects, BlocksVision | Blind |
+| Grow | Water: plant/living/organic; Earth: plant; Nature: wood/soil/plant/organic/living; overrides: wood (Nature) | Grows, Heals | Regen |
+| Heat | Fire: metal/conductive | DamageAura, Burns | Burn |
+| Ignite | Fire: flammable/wood/paper/cloth/plant/straw; Lightning: flammable/wood/paper/straw; Wind: flammable; overrides: cardboard (Fire), paper (Fire), wood (Fire) | BurnsFast, Spreads, DamageOverTime | Burn |
+| Melt | Fire: frozen/meltable/plastic/rubber/wax; Light: frozen; overrides: butter (Fire), candy (Fire), cheese (Fire), cheese (Light), chocolate (Fire), chocolate (Light), ice (Fire), ice (Light), ice cream (Fire), ice cream (Light), jelly (Fire), snow (Fire), snow (Light), wax (Fire) | Melts, Slows, GroundHazard | Slow |
+| Mud | Water: soil/sand/clay; Earth: liquid; overrides: clay (Water), sand (Water), water (Earth) | GroundHazard, Slows | Slow |
+| Pop | Fire: inflated; Lightning: inflated; Earth: inflated; Metal: inflated; overrides: balloon (Fire), balloon (Metal), popcorn (Fire) | Explodes, Knockback | - |
+| Purify | Light: cursed/toxic/undead; Shadow: holy; Arcane: cursed | Cleanses, Heals | Regen |
+| Rust | Water: metal; overrides: iron (Water), steel (Water) | ArmorBreak, Slows | Corrode |
+| Scatter | Wind: light/paper/powder/feather/leaf/sand/smoke/fluffy; overrides: sand (Wind) | Knockback, Pushes, Splits | - |
+| Shatter | Earth: brittle/glass/crystal; Metal: brittle/glass/crystal/frozen; overrides: crystal (Metal), glass (Earth), glass (Metal), ice (Metal) | Splits, AreaDamage, Pierces | - |
+| ShortCircuit | Fire: electronic; Water: electronic; Lightning: electronic; overrides: pixels (Lightning) | Stuns, Disarms | Stun, Shock |
+| Shred | Metal: cloth/paper/rope/strands/wood | Splits, ArmorBreak | - |
+| Soggy | Water: absorbent/paper/cloth/dough; overrides: bread (Water), cardboard (Water), paper (Water), play dough (Water), spaghetti (Water) | Weakens, Slows | Wet, Slow |
+| Spoil | Poison: edible | Poisons, Weakens | Poison |
+| Transmute | Arcane: metal | Transform, Durable, Slows | - |
+| Wilt | Ice: plant; Poison: plant/living/organic | Weakens, Shrinks | Weaken |
 
 ## 8. Visual generation
 

@@ -1,0 +1,1072 @@
+{
+ "version": 1,
+ "doc": "Material x element interactions. Lookup order: overrides[materialId][element], then the first rule for the element whose tags intersect the material's match set (its tags plus its lowercased family and construction, e.g. 'food', 'inflated', 'strands'). Outcomes are semantic (hooks/statuses + hints); games pick numbers. transform hints how the summon should change (material/colour/construction).",
+ "outcomes": {
+  "Ignite": {
+   "name": "Ignites",
+   "description": "Catches fire and burns fast.",
+   "hooks": [
+    "BurnsFast",
+    "Spreads",
+    "DamageOverTime"
+   ],
+   "statuses": [
+    "Burn"
+   ],
+   "magnitudeHint": 0.7,
+   "durationHint": 5,
+   "vfx": "mat.ignite",
+   "sfx": "mat_ignite",
+   "transform": {
+    "material": "ash",
+    "colour": "#3A3330"
+   }
+  },
+  "Melt": {
+   "name": "Melts",
+   "description": "Softens, sags and drips into a puddle.",
+   "hooks": [
+    "Melts",
+    "Slows",
+    "GroundHazard"
+   ],
+   "statuses": [
+    "Slow"
+   ],
+   "magnitudeHint": 0.6,
+   "durationHint": 4,
+   "vfx": "mat.melt",
+   "sfx": "mat_melt",
+   "transform": {
+    "construction": "Liquid"
+   }
+  },
+  "Bake": {
+   "name": "Bakes Hard",
+   "description": "Bakes solid: tougher than before.",
+   "hooks": [
+    "Hardens",
+    "Durable"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.4,
+   "durationHint": 6,
+   "vfx": "mat.bake",
+   "sfx": "mat_bake",
+   "transform": {
+    "colour": "#B8743A"
+   }
+  },
+  "Cook": {
+   "name": "Cooks",
+   "description": "Sizzles and smells delicious; enemies are drawn to it.",
+   "hooks": [
+    "EdibleLure",
+    "Lures"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.4,
+   "durationHint": 6,
+   "vfx": "mat.cook",
+   "sfx": "mat_sizzle",
+   "transform": {
+    "colour": "#A0522D"
+   }
+  },
+  "Pop": {
+   "name": "Pops",
+   "description": "Bursts with a bang.",
+   "hooks": [
+    "Explodes",
+    "Knockback"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.5,
+   "durationHint": 1,
+   "vfx": "mat.pop",
+   "sfx": "mat_pop"
+  },
+  "Explode": {
+   "name": "Explodes",
+   "description": "Goes off like a bomb.",
+   "hooks": [
+    "Explodes",
+    "AreaDamage",
+    "Knockback"
+   ],
+   "statuses": [
+    "Burn"
+   ],
+   "magnitudeHint": 1.0,
+   "durationHint": 1,
+   "vfx": "mat.explode",
+   "sfx": "mat_boom"
+  },
+  "Heat": {
+   "name": "Red-Hot",
+   "description": "Glows red-hot and burns whatever touches it.",
+   "hooks": [
+    "DamageAura",
+    "Burns"
+   ],
+   "statuses": [
+    "Burn"
+   ],
+   "magnitudeHint": 0.6,
+   "durationHint": 6,
+   "vfx": "mat.heat",
+   "sfx": "mat_heat",
+   "transform": {
+    "colour": "#FF4A1C"
+   }
+  },
+  "Evaporate": {
+   "name": "Evaporates",
+   "description": "Boils away into steam.",
+   "hooks": [
+    "Shrinks",
+    "BlocksVision"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.5,
+   "durationHint": 3,
+   "vfx": "mat.evaporate",
+   "sfx": "mat_evaporate"
+  },
+  "Soggy": {
+   "name": "Goes Soggy",
+   "description": "Soaks through and goes floppy.",
+   "hooks": [
+    "Weakens",
+    "Slows"
+   ],
+   "statuses": [
+    "Wet",
+    "Slow"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 6,
+   "vfx": "mat.soggy",
+   "sfx": "mat_soggy",
+   "transform": {
+    "colour": "#8A7A5A"
+   }
+  },
+  "Mud": {
+   "name": "Turns to Mud",
+   "description": "Becomes a sticky mud puddle.",
+   "hooks": [
+    "GroundHazard",
+    "Slows"
+   ],
+   "statuses": [
+    "Slow"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 6,
+   "vfx": "mat.mud",
+   "sfx": "mat_mud",
+   "transform": {
+    "material": "mud"
+   }
+  },
+  "Rust": {
+   "name": "Rusts",
+   "description": "Rusts and seizes up.",
+   "hooks": [
+    "ArmorBreak",
+    "Slows"
+   ],
+   "statuses": [
+    "Corrode"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 8,
+   "vfx": "mat.rust",
+   "sfx": "mat_rust",
+   "transform": {
+    "colour": "#B5562A"
+   }
+  },
+  "Dissolve": {
+   "name": "Dissolves",
+   "description": "Fizzes and dissolves away.",
+   "hooks": [
+    "Shrinks",
+    "DamageOverTime"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.6,
+   "durationHint": 4,
+   "vfx": "mat.dissolve",
+   "sfx": "mat_fizz"
+  },
+  "Cool": {
+   "name": "Cools to Stone",
+   "description": "Hisses and hardens into rock.",
+   "hooks": [
+    "CancelsElement",
+    "Hardens"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.5,
+   "durationHint": 3,
+   "vfx": "mat.cool",
+   "sfx": "mat_hiss",
+   "transform": {
+    "material": "obsidian"
+   }
+  },
+  "Grow": {
+   "name": "Grows",
+   "description": "Sprouts, swells and regrows.",
+   "hooks": [
+    "Grows",
+    "Heals"
+   ],
+   "statuses": [
+    "Regen"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 6,
+   "vfx": "mat.grow",
+   "sfx": "mat_grow"
+  },
+  "ShortCircuit": {
+   "name": "Short-Circuits",
+   "description": "Sparks, smokes and shuts down for a moment.",
+   "hooks": [
+    "Stuns",
+    "Disarms"
+   ],
+   "statuses": [
+    "Stun",
+    "Shock"
+   ],
+   "magnitudeHint": 0.6,
+   "durationHint": 3,
+   "vfx": "mat.short",
+   "sfx": "mat_short"
+  },
+  "Freeze": {
+   "name": "Freezes Solid",
+   "description": "Freezes solid and turns brittle.",
+   "hooks": [
+    "Freezes",
+    "ShattersOnHit"
+   ],
+   "statuses": [
+    "Freeze"
+   ],
+   "magnitudeHint": 0.6,
+   "durationHint": 4,
+   "vfx": "mat.freeze",
+   "sfx": "mat_freeze",
+   "transform": {
+    "colour": "#BDEBFF"
+   }
+  },
+  "Wilt": {
+   "name": "Wilts",
+   "description": "Wilts and weakens.",
+   "hooks": [
+    "Weakens",
+    "Shrinks"
+   ],
+   "statuses": [
+    "Weaken"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 6,
+   "vfx": "mat.wilt",
+   "sfx": "mat_wilt"
+  },
+  "Conduct": {
+   "name": "Conducts",
+   "description": "Electricity races through it and jumps to anything nearby.",
+   "hooks": [
+    "Chain",
+    "AreaDamage",
+    "Conductive"
+   ],
+   "statuses": [
+    "Shock"
+   ],
+   "magnitudeHint": 0.7,
+   "durationHint": 2,
+   "vfx": "mat.conduct",
+   "sfx": "mat_conduct"
+  },
+  "Fuse": {
+   "name": "Fuses to Glass",
+   "description": "Melts into gleaming glass.",
+   "hooks": [
+    "Hardens",
+    "Transform"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.5,
+   "durationHint": 3,
+   "vfx": "mat.fuse",
+   "sfx": "mat_fuse",
+   "transform": {
+    "material": "glass"
+   }
+  },
+  "Shatter": {
+   "name": "Shatters",
+   "description": "Shatters into sharp pieces.",
+   "hooks": [
+    "Splits",
+    "AreaDamage",
+    "Pierces"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.7,
+   "durationHint": 1,
+   "vfx": "mat.shatter",
+   "sfx": "mat_shatter"
+  },
+  "Scatter": {
+   "name": "Scatters",
+   "description": "Gets blown everywhere.",
+   "hooks": [
+    "Knockback",
+    "Pushes",
+    "Splits"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.4,
+   "durationHint": 2,
+   "vfx": "mat.scatter",
+   "sfx": "mat_scatter"
+  },
+  "Drift": {
+   "name": "Drifts Away",
+   "description": "Catches the wind and floats off.",
+   "hooks": [
+    "Lifts",
+    "Flies"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.4,
+   "durationHint": 3,
+   "vfx": "mat.drift",
+   "sfx": "mat_drift"
+  },
+  "Crack": {
+   "name": "Cracks Apart",
+   "description": "Splits open and crumbles.",
+   "hooks": [
+    "ArmorBreak",
+    "Grows"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.5,
+   "durationHint": 3,
+   "vfx": "mat.crack",
+   "sfx": "mat_crack"
+  },
+  "Gleam": {
+   "name": "Gleams",
+   "description": "Flashes blinding reflections.",
+   "hooks": [
+    "Reflects",
+    "BlocksVision"
+   ],
+   "statuses": [
+    "Blind"
+   ],
+   "magnitudeHint": 0.4,
+   "durationHint": 3,
+   "vfx": "mat.gleam",
+   "sfx": "mat_gleam"
+  },
+  "Purify": {
+   "name": "Purified",
+   "description": "Cleansed of curses and toxins.",
+   "hooks": [
+    "Cleanses",
+    "Heals"
+   ],
+   "statuses": [
+    "Regen"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 3,
+   "vfx": "mat.purify",
+   "sfx": "mat_purify"
+  },
+  "Decay": {
+   "name": "Rots",
+   "description": "Rots and crumbles.",
+   "hooks": [
+    "Weakens",
+    "DamageOverTime"
+   ],
+   "statuses": [
+    "Weaken"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 6,
+   "vfx": "mat.decay",
+   "sfx": "mat_decay",
+   "transform": {
+    "colour": "#5A6B3A"
+   }
+  },
+  "Corrode": {
+   "name": "Corrodes",
+   "description": "Acid eats through it.",
+   "hooks": [
+    "ArmorBreak",
+    "DamageOverTime"
+   ],
+   "statuses": [
+    "Corrode",
+    "Poison"
+   ],
+   "magnitudeHint": 0.6,
+   "durationHint": 6,
+   "vfx": "mat.corrode",
+   "sfx": "mat_acid"
+  },
+  "Spoil": {
+   "name": "Spoils",
+   "description": "Goes green and stinky; nobody wants it now.",
+   "hooks": [
+    "Poisons",
+    "Weakens"
+   ],
+   "statuses": [
+    "Poison"
+   ],
+   "magnitudeHint": 0.5,
+   "durationHint": 6,
+   "vfx": "mat.spoil",
+   "sfx": "mat_spoil",
+   "transform": {
+    "colour": "#7A9A3A"
+   }
+  },
+  "Shred": {
+   "name": "Shredded",
+   "description": "Sliced into ribbons.",
+   "hooks": [
+    "Splits",
+    "ArmorBreak"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.5,
+   "durationHint": 2,
+   "vfx": "mat.shred",
+   "sfx": "mat_shred"
+  },
+  "Transmute": {
+   "name": "Turns to Gold",
+   "description": "Transmuted into solid gold. Heavy, shiny, very slow.",
+   "hooks": [
+    "Transform",
+    "Durable",
+    "Slows"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.6,
+   "durationHint": 8,
+   "vfx": "mat.transmute",
+   "sfx": "mat_transmute",
+   "transform": {
+    "material": "gold",
+    "colour": "#FFD54A"
+   }
+  },
+  "Empower": {
+   "name": "Empowered",
+   "description": "Hums with magic; its effects grow stronger.",
+   "hooks": [
+    "BuffDamage"
+   ],
+   "statuses": [],
+   "magnitudeHint": 0.5,
+   "durationHint": 6,
+   "vfx": "mat.empower",
+   "sfx": "mat_empower"
+  }
+ },
+ "rules": [
+  {
+   "element": "Fire",
+   "tags": [
+    "explosive"
+   ],
+   "outcome": "Explode"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "inflated"
+   ],
+   "outcome": "Pop"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "frozen",
+    "meltable",
+    "plastic",
+    "rubber",
+    "wax"
+   ],
+   "outcome": "Melt"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "flammable",
+    "wood",
+    "paper",
+    "cloth",
+    "plant",
+    "straw"
+   ],
+   "outcome": "Ignite"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "clay",
+    "dough"
+   ],
+   "outcome": "Bake"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "edible"
+   ],
+   "outcome": "Cook"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "liquid",
+    "cold"
+   ],
+   "outcome": "Evaporate"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "metal",
+    "conductive"
+   ],
+   "outcome": "Heat"
+  },
+  {
+   "element": "Fire",
+   "tags": [
+    "electronic"
+   ],
+   "outcome": "ShortCircuit"
+  },
+  {
+   "element": "Water",
+   "tags": [
+    "hot",
+    "lava"
+   ],
+   "outcome": "Cool"
+  },
+  {
+   "element": "Water",
+   "tags": [
+    "electronic"
+   ],
+   "outcome": "ShortCircuit"
+  },
+  {
+   "element": "Water",
+   "tags": [
+    "soluble",
+    "sweet",
+    "powder"
+   ],
+   "outcome": "Dissolve"
+  },
+  {
+   "element": "Water",
+   "tags": [
+    "absorbent",
+    "paper",
+    "cloth",
+    "dough"
+   ],
+   "outcome": "Soggy"
+  },
+  {
+   "element": "Water",
+   "tags": [
+    "soil",
+    "sand",
+    "clay"
+   ],
+   "outcome": "Mud"
+  },
+  {
+   "element": "Water",
+   "tags": [
+    "metal"
+   ],
+   "outcome": "Rust"
+  },
+  {
+   "element": "Water",
+   "tags": [
+    "plant",
+    "living",
+    "organic"
+   ],
+   "outcome": "Grow"
+  },
+  {
+   "element": "Ice",
+   "tags": [
+    "hot",
+    "lava"
+   ],
+   "outcome": "Cool"
+  },
+  {
+   "element": "Ice",
+   "tags": [
+    "plant"
+   ],
+   "outcome": "Wilt"
+  },
+  {
+   "element": "Ice",
+   "tags": [
+    "liquid",
+    "sticky",
+    "rubber",
+    "edible",
+    "brittle",
+    "glass",
+    "living",
+    "organic",
+    "soft",
+    "bouncy"
+   ],
+   "outcome": "Freeze"
+  },
+  {
+   "element": "Ice",
+   "tags": [
+    "stone",
+    "brick",
+    "hard"
+   ],
+   "outcome": "Crack"
+  },
+  {
+   "element": "Lightning",
+   "tags": [
+    "electronic"
+   ],
+   "outcome": "ShortCircuit"
+  },
+  {
+   "element": "Lightning",
+   "tags": [
+    "explosive"
+   ],
+   "outcome": "Explode"
+  },
+  {
+   "element": "Lightning",
+   "tags": [
+    "inflated"
+   ],
+   "outcome": "Pop"
+  },
+  {
+   "element": "Lightning",
+   "tags": [
+    "conductive",
+    "metal",
+    "liquid"
+   ],
+   "outcome": "Conduct"
+  },
+  {
+   "element": "Lightning",
+   "tags": [
+    "sand",
+    "glass"
+   ],
+   "outcome": "Fuse"
+  },
+  {
+   "element": "Lightning",
+   "tags": [
+    "flammable",
+    "wood",
+    "paper",
+    "straw"
+   ],
+   "outcome": "Ignite"
+  },
+  {
+   "element": "Earth",
+   "tags": [
+    "liquid"
+   ],
+   "outcome": "Mud"
+  },
+  {
+   "element": "Earth",
+   "tags": [
+    "brittle",
+    "glass",
+    "crystal"
+   ],
+   "outcome": "Shatter"
+  },
+  {
+   "element": "Earth",
+   "tags": [
+    "inflated"
+   ],
+   "outcome": "Pop"
+  },
+  {
+   "element": "Earth",
+   "tags": [
+    "plant"
+   ],
+   "outcome": "Grow"
+  },
+  {
+   "element": "Wind",
+   "tags": [
+    "inflated"
+   ],
+   "outcome": "Drift"
+  },
+  {
+   "element": "Wind",
+   "tags": [
+    "light",
+    "paper",
+    "powder",
+    "feather",
+    "leaf",
+    "sand",
+    "smoke",
+    "fluffy"
+   ],
+   "outcome": "Scatter"
+  },
+  {
+   "element": "Wind",
+   "tags": [
+    "flammable"
+   ],
+   "outcome": "Ignite"
+  },
+  {
+   "element": "Nature",
+   "tags": [
+    "wood",
+    "soil",
+    "plant",
+    "organic",
+    "living"
+   ],
+   "outcome": "Grow"
+  },
+  {
+   "element": "Nature",
+   "tags": [
+    "stone",
+    "brick"
+   ],
+   "outcome": "Crack"
+  },
+  {
+   "element": "Light",
+   "tags": [
+    "cursed",
+    "toxic",
+    "undead"
+   ],
+   "outcome": "Purify"
+  },
+  {
+   "element": "Light",
+   "tags": [
+    "frozen"
+   ],
+   "outcome": "Melt"
+  },
+  {
+   "element": "Light",
+   "tags": [
+    "shiny",
+    "glass",
+    "crystal",
+    "metal"
+   ],
+   "outcome": "Gleam"
+  },
+  {
+   "element": "Light",
+   "tags": [
+    "glowing",
+    "magic",
+    "holy"
+   ],
+   "outcome": "Empower"
+  },
+  {
+   "element": "Shadow",
+   "tags": [
+    "holy"
+   ],
+   "outcome": "Purify"
+  },
+  {
+   "element": "Shadow",
+   "tags": [
+    "edible",
+    "organic",
+    "plant",
+    "living"
+   ],
+   "outcome": "Decay"
+  },
+  {
+   "element": "Poison",
+   "tags": [
+    "metal",
+    "conductive"
+   ],
+   "outcome": "Corrode"
+  },
+  {
+   "element": "Poison",
+   "tags": [
+    "edible"
+   ],
+   "outcome": "Spoil"
+  },
+  {
+   "element": "Poison",
+   "tags": [
+    "plant",
+    "living",
+    "organic"
+   ],
+   "outcome": "Wilt"
+  },
+  {
+   "element": "Poison",
+   "tags": [
+    "plastic",
+    "cloth",
+    "rubber"
+   ],
+   "outcome": "Dissolve"
+  },
+  {
+   "element": "Metal",
+   "tags": [
+    "inflated"
+   ],
+   "outcome": "Pop"
+  },
+  {
+   "element": "Metal",
+   "tags": [
+    "brittle",
+    "glass",
+    "crystal",
+    "frozen"
+   ],
+   "outcome": "Shatter"
+  },
+  {
+   "element": "Metal",
+   "tags": [
+    "cloth",
+    "paper",
+    "rope",
+    "strands",
+    "wood"
+   ],
+   "outcome": "Shred"
+  },
+  {
+   "element": "Metal",
+   "tags": [
+    "stone",
+    "brick",
+    "hard",
+    "heavy"
+   ],
+   "outcome": "Crack"
+  },
+  {
+   "element": "Arcane",
+   "tags": [
+    "magical",
+    "magic",
+    "glowing"
+   ],
+   "outcome": "Empower"
+  },
+  {
+   "element": "Arcane",
+   "tags": [
+    "metal"
+   ],
+   "outcome": "Transmute"
+  },
+  {
+   "element": "Arcane",
+   "tags": [
+    "cursed"
+   ],
+   "outcome": "Purify"
+  }
+ ],
+ "overrides": {
+  "cheese": {
+   "Fire": "Melt",
+   "Light": "Melt"
+  },
+  "ice": {
+   "Fire": "Melt",
+   "Light": "Melt",
+   "Metal": "Shatter",
+   "Lightning": "Conduct"
+  },
+  "chocolate": {
+   "Fire": "Melt",
+   "Light": "Melt"
+  },
+  "butter": {
+   "Fire": "Melt"
+  },
+  "wax": {
+   "Fire": "Melt"
+  },
+  "ice cream": {
+   "Fire": "Melt",
+   "Light": "Melt"
+  },
+  "cardboard": {
+   "Water": "Soggy",
+   "Fire": "Ignite"
+  },
+  "paper": {
+   "Water": "Soggy",
+   "Fire": "Ignite"
+  },
+  "clay": {
+   "Fire": "Bake",
+   "Water": "Mud"
+  },
+  "jelly": {
+   "Ice": "Freeze",
+   "Fire": "Melt"
+  },
+  "water": {
+   "Ice": "Freeze",
+   "Lightning": "Conduct",
+   "Fire": "Evaporate",
+   "Earth": "Mud"
+  },
+  "popcorn": {
+   "Fire": "Pop"
+  },
+  "balloon": {
+   "Fire": "Pop",
+   "Metal": "Pop",
+   "Wind": "Drift"
+  },
+  "lava": {
+   "Water": "Cool",
+   "Ice": "Cool"
+  },
+  "glass": {
+   "Metal": "Shatter",
+   "Earth": "Shatter"
+  },
+  "sand": {
+   "Lightning": "Fuse",
+   "Water": "Mud",
+   "Wind": "Scatter"
+  },
+  "gold": {
+   "Arcane": "Empower",
+   "Light": "Gleam"
+  },
+  "bread": {
+   "Fire": "Cook",
+   "Water": "Soggy"
+  },
+  "marshmallow": {
+   "Fire": "Cook"
+  },
+  "candy": {
+   "Water": "Dissolve",
+   "Fire": "Melt"
+  },
+  "sugar": {
+   "Water": "Dissolve"
+  },
+  "slime": {
+   "Ice": "Freeze",
+   "Fire": "Evaporate"
+  },
+  "spaghetti": {
+   "Water": "Soggy",
+   "Fire": "Cook"
+  },
+  "wood": {
+   "Fire": "Ignite",
+   "Nature": "Grow"
+  },
+  "steel": {
+   "Lightning": "Conduct",
+   "Water": "Rust"
+  },
+  "iron": {
+   "Lightning": "Conduct",
+   "Water": "Rust"
+  },
+  "crystal": {
+   "Light": "Gleam",
+   "Metal": "Shatter"
+  },
+  "snow": {
+   "Fire": "Melt",
+   "Light": "Melt"
+  },
+  "pixels": {
+   "Lightning": "ShortCircuit",
+   "Arcane": "Empower"
+  },
+  "soap": {
+   "Water": "Dissolve"
+  },
+  "smoke": {
+   "Water": "Dissolve"
+  },
+  "play dough": {
+   "Fire": "Bake",
+   "Water": "Soggy"
+  }
+ }
+}

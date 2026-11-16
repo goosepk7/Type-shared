@@ -1,0 +1,625 @@
+{
+ "version": 1,
+ "doc": "Attacker -> defender damage multiplier HINTS. 1.5 = strong, 1 = neutral, 0.5 = resisted. Games may rescale. If A is strong into B, B is resisted by A (0.5) except the Light/Shadow rivalry, where both are strong. Same element is resisted.",
+ "values": {
+  "strong": 1.5,
+  "neutral": 1.0,
+  "resisted": 0.5
+ },
+ "elements": [
+  "Fire",
+  "Water",
+  "Ice",
+  "Lightning",
+  "Earth",
+  "Wind",
+  "Nature",
+  "Light",
+  "Shadow",
+  "Poison",
+  "Metal",
+  "Arcane"
+ ],
+ "table": {
+  "Fire": {
+   "Fire": {
+    "m": 0.5,
+    "why": "Fire cannot burn what is already burning."
+   },
+   "Water": {
+    "m": 0.5,
+    "why": "Water resists Fire: water douses flames."
+   },
+   "Ice": {
+    "m": 1.5,
+    "why": "Heat melts ice in seconds."
+   },
+   "Lightning": {
+    "m": 1.0,
+    "why": "Fire burns Lightning as well as anything else."
+   },
+   "Earth": {
+    "m": 0.5,
+    "why": "Earth resists Fire: dirt and stone smother flames."
+   },
+   "Wind": {
+    "m": 1.0,
+    "why": "Wind fans the flames, but it does not burn."
+   },
+   "Nature": {
+    "m": 1.5,
+    "why": "Fire burns through leaves, roots and bark."
+   },
+   "Light": {
+    "m": 1.0,
+    "why": "Fire burns Light as well as anything else."
+   },
+   "Shadow": {
+    "m": 1.0,
+    "why": "Fire burns Shadow as well as anything else."
+   },
+   "Poison": {
+    "m": 1.0,
+    "why": "Fire burns Poison as well as anything else."
+   },
+   "Metal": {
+    "m": 1.5,
+    "why": "Forge heat softens steel and cooks whoever wears it."
+   },
+   "Arcane": {
+    "m": 1.0,
+    "why": "Fire burns Arcane as well as anything else."
+   }
+  },
+  "Water": {
+   "Fire": {
+    "m": 1.5,
+    "why": "Water douses flames."
+   },
+   "Water": {
+    "m": 0.5,
+    "why": "Water just joins more water."
+   },
+   "Ice": {
+    "m": 0.5,
+    "why": "Ice resists Water: cold freezes water solid."
+   },
+   "Lightning": {
+    "m": 0.5,
+    "why": "Lightning resists Water: water conducts every volt."
+   },
+   "Earth": {
+    "m": 1.5,
+    "why": "Floods erode stone and turn soil to mud."
+   },
+   "Wind": {
+    "m": 1.0,
+    "why": "Water splashes Wind without special effect."
+   },
+   "Nature": {
+    "m": 0.5,
+    "why": "Nature resists Water: roots drink the water up."
+   },
+   "Light": {
+    "m": 1.0,
+    "why": "Water splashes Light without special effect."
+   },
+   "Shadow": {
+    "m": 1.0,
+    "why": "Water splashes Shadow without special effect."
+   },
+   "Poison": {
+    "m": 0.5,
+    "why": "Poison resists Water: toxins taint the water."
+   },
+   "Metal": {
+    "m": 1.0,
+    "why": "Water slowly rusts metal; on its own it barely dents it."
+   },
+   "Arcane": {
+    "m": 1.0,
+    "why": "Water splashes Arcane without special effect."
+   }
+  },
+  "Ice": {
+   "Fire": {
+    "m": 0.5,
+    "why": "Fire resists Ice: heat melts ice in seconds."
+   },
+   "Water": {
+    "m": 1.5,
+    "why": "Cold freezes water solid."
+   },
+   "Ice": {
+    "m": 0.5,
+    "why": "Ice is already as cold as it gets."
+   },
+   "Lightning": {
+    "m": 1.0,
+    "why": "Ice chills Lightning, nothing more."
+   },
+   "Earth": {
+    "m": 1.0,
+    "why": "Frost cracks stone over winters, not seconds."
+   },
+   "Wind": {
+    "m": 1.5,
+    "why": "Freezing air goes heavy and still."
+   },
+   "Nature": {
+    "m": 1.5,
+    "why": "Frost kills leaves and stops growth."
+   },
+   "Light": {
+    "m": 0.5,
+    "why": "Light resists Ice: sunlight melts ice."
+   },
+   "Shadow": {
+    "m": 1.0,
+    "why": "Ice chills Shadow, nothing more."
+   },
+   "Poison": {
+    "m": 1.0,
+    "why": "Ice chills Poison, nothing more."
+   },
+   "Metal": {
+    "m": 0.5,
+    "why": "Metal resists Ice: steel shatters brittle ice."
+   },
+   "Arcane": {
+    "m": 1.0,
+    "why": "Ice chills Arcane, nothing more."
+   }
+  },
+  "Lightning": {
+   "Fire": {
+    "m": 1.0,
+    "why": "Lightning hits Fire for normal damage."
+   },
+   "Water": {
+    "m": 1.5,
+    "why": "Water conducts every volt."
+   },
+   "Ice": {
+    "m": 1.0,
+    "why": "Lightning hits Ice for normal damage."
+   },
+   "Lightning": {
+    "m": 0.5,
+    "why": "A charged target has nowhere to send more charge."
+   },
+   "Earth": {
+    "m": 0.5,
+    "why": "Earth resists Lightning: earth grounds the charge harmlessly."
+   },
+   "Wind": {
+    "m": 1.5,
+    "why": "Lightning splits open the storm sky."
+   },
+   "Nature": {
+    "m": 0.5,
+    "why": "Nature resists Lightning: wood does not conduct; vines absorb the jolt."
+   },
+   "Light": {
+    "m": 1.0,
+    "why": "Lightning hits Light for normal damage."
+   },
+   "Shadow": {
+    "m": 1.0,
+    "why": "Lightning hits Shadow for normal damage."
+   },
+   "Poison": {
+    "m": 1.0,
+    "why": "Lightning hits Poison for normal damage."
+   },
+   "Metal": {
+    "m": 1.5,
+    "why": "Metal is a lightning rod."
+   },
+   "Arcane": {
+    "m": 0.5,
+    "why": "Arcane resists Lightning: arcane bends raw energy to its will."
+   }
+  },
+  "Earth": {
+   "Fire": {
+    "m": 1.5,
+    "why": "Dirt and stone smother flames."
+   },
+   "Water": {
+    "m": 0.5,
+    "why": "Water resists Earth: floods erode stone and turn soil to mud."
+   },
+   "Ice": {
+    "m": 1.0,
+    "why": "Stone hits Ice as hard as anything."
+   },
+   "Lightning": {
+    "m": 1.5,
+    "why": "Earth grounds the charge harmlessly."
+   },
+   "Earth": {
+    "m": 0.5,
+    "why": "Stone meets stone. Very little happens."
+   },
+   "Wind": {
+    "m": 0.5,
+    "why": "Wind resists Earth: endless wind erodes rock to sand."
+   },
+   "Nature": {
+    "m": 0.5,
+    "why": "Nature resists Earth: roots crack stone apart."
+   },
+   "Light": {
+    "m": 1.0,
+    "why": "Stone hits Light as hard as anything."
+   },
+   "Shadow": {
+    "m": 1.0,
+    "why": "Stone hits Shadow as hard as anything."
+   },
+   "Poison": {
+    "m": 1.5,
+    "why": "Soil soaks up and filters toxins."
+   },
+   "Metal": {
+    "m": 1.0,
+    "why": "Ore and stone are old relatives."
+   },
+   "Arcane": {
+    "m": 1.0,
+    "why": "Stone hits Arcane as hard as anything."
+   }
+  },
+  "Wind": {
+   "Fire": {
+    "m": 1.0,
+    "why": "Wind feeds fire as much as it hurts it."
+   },
+   "Water": {
+    "m": 1.0,
+    "why": "Wind buffets Water like anything else."
+   },
+   "Ice": {
+    "m": 0.5,
+    "why": "Ice resists Wind: freezing air goes heavy and still."
+   },
+   "Lightning": {
+    "m": 0.5,
+    "why": "Lightning resists Wind: lightning splits open the storm sky."
+   },
+   "Earth": {
+    "m": 1.5,
+    "why": "Endless wind erodes rock to sand."
+   },
+   "Wind": {
+    "m": 0.5,
+    "why": "Wind into wind just makes a breeze."
+   },
+   "Nature": {
+    "m": 1.0,
+    "why": "Wind bends trees, but they bend back."
+   },
+   "Light": {
+    "m": 1.0,
+    "why": "Wind buffets Light like anything else."
+   },
+   "Shadow": {
+    "m": 1.5,
+    "why": "Wind tears the shadow veil to shreds."
+   },
+   "Poison": {
+    "m": 1.5,
+    "why": "Gales blow toxic clouds away."
+   },
+   "Metal": {
+    "m": 1.0,
+    "why": "Wind buffets Metal like anything else."
+   },
+   "Arcane": {
+    "m": 0.5,
+    "why": "Arcane resists Wind: runes bind the air in place."
+   }
+  },
+  "Nature": {
+   "Fire": {
+    "m": 0.5,
+    "why": "Fire resists Nature: fire burns through leaves, roots and bark."
+   },
+   "Water": {
+    "m": 1.5,
+    "why": "Roots drink the water up."
+   },
+   "Ice": {
+    "m": 0.5,
+    "why": "Ice resists Nature: frost kills leaves and stops growth."
+   },
+   "Lightning": {
+    "m": 1.5,
+    "why": "Wood does not conduct; vines absorb the jolt."
+   },
+   "Earth": {
+    "m": 1.5,
+    "why": "Roots crack stone apart."
+   },
+   "Wind": {
+    "m": 1.0,
+    "why": "Vines and thorns treat Wind like anyone."
+   },
+   "Nature": {
+    "m": 0.5,
+    "why": "Plants share; they do not feed on each other."
+   },
+   "Light": {
+    "m": 1.0,
+    "why": "Plants love sunlight; light hits them normally."
+   },
+   "Shadow": {
+    "m": 0.5,
+    "why": "Shadow resists Nature: without sun, plants wither."
+   },
+   "Poison": {
+    "m": 0.5,
+    "why": "Poison resists Nature: blight rots living things."
+   },
+   "Metal": {
+    "m": 1.0,
+    "why": "Vines and thorns treat Metal like anyone."
+   },
+   "Arcane": {
+    "m": 1.0,
+    "why": "Vines and thorns treat Arcane like anyone."
+   }
+  },
+  "Light": {
+   "Fire": {
+    "m": 1.0,
+    "why": "Light hits Fire with no bonus."
+   },
+   "Water": {
+    "m": 1.0,
+    "why": "Light hits Water with no bonus."
+   },
+   "Ice": {
+    "m": 1.5,
+    "why": "Sunlight melts ice."
+   },
+   "Lightning": {
+    "m": 1.0,
+    "why": "Light hits Lightning with no bonus."
+   },
+   "Earth": {
+    "m": 1.0,
+    "why": "Light hits Earth with no bonus."
+   },
+   "Wind": {
+    "m": 1.0,
+    "why": "Light hits Wind with no bonus."
+   },
+   "Nature": {
+    "m": 1.0,
+    "why": "Light feeds plants as much as it hurts them."
+   },
+   "Light": {
+    "m": 0.5,
+    "why": "Light passes through light."
+   },
+   "Shadow": {
+    "m": 1.5,
+    "why": "Light banishes darkness."
+   },
+   "Poison": {
+    "m": 1.5,
+    "why": "Pure light cleanses toxins."
+   },
+   "Metal": {
+    "m": 0.5,
+    "why": "Metal resists Light: polished steel throws light back."
+   },
+   "Arcane": {
+    "m": 0.5,
+    "why": "Arcane resists Light: arcane twists light into illusions."
+   }
+  },
+  "Shadow": {
+   "Fire": {
+    "m": 1.0,
+    "why": "Shadow strikes Fire without advantage."
+   },
+   "Water": {
+    "m": 1.0,
+    "why": "Shadow strikes Water without advantage."
+   },
+   "Ice": {
+    "m": 1.0,
+    "why": "Shadow strikes Ice without advantage."
+   },
+   "Lightning": {
+    "m": 1.0,
+    "why": "Shadow strikes Lightning without advantage."
+   },
+   "Earth": {
+    "m": 1.0,
+    "why": "Shadow strikes Earth without advantage."
+   },
+   "Wind": {
+    "m": 0.5,
+    "why": "Wind resists Shadow: wind tears the shadow veil to shreds."
+   },
+   "Nature": {
+    "m": 1.5,
+    "why": "Without sun, plants wither."
+   },
+   "Light": {
+    "m": 1.5,
+    "why": "Darkness swallows light: the eternal rivalry."
+   },
+   "Shadow": {
+    "m": 0.5,
+    "why": "Shadow hides in shadow."
+   },
+   "Poison": {
+    "m": 1.0,
+    "why": "Shadow strikes Poison without advantage."
+   },
+   "Metal": {
+    "m": 1.0,
+    "why": "Shadow strikes Metal without advantage."
+   },
+   "Arcane": {
+    "m": 1.5,
+    "why": "Shadow devours spellwork."
+   }
+  },
+  "Poison": {
+   "Fire": {
+    "m": 1.0,
+    "why": "Poison affects Fire normally."
+   },
+   "Water": {
+    "m": 1.5,
+    "why": "Toxins taint the water."
+   },
+   "Ice": {
+    "m": 1.0,
+    "why": "Poison affects Ice normally."
+   },
+   "Lightning": {
+    "m": 1.0,
+    "why": "Poison affects Lightning normally."
+   },
+   "Earth": {
+    "m": 0.5,
+    "why": "Earth resists Poison: soil soaks up and filters toxins."
+   },
+   "Wind": {
+    "m": 0.5,
+    "why": "Wind resists Poison: gales blow toxic clouds away."
+   },
+   "Nature": {
+    "m": 1.5,
+    "why": "Blight rots living things."
+   },
+   "Light": {
+    "m": 0.5,
+    "why": "Light resists Poison: pure light cleanses toxins."
+   },
+   "Shadow": {
+    "m": 1.0,
+    "why": "Poison affects Shadow normally."
+   },
+   "Poison": {
+    "m": 0.5,
+    "why": "Venomous things are immune to their own venom."
+   },
+   "Metal": {
+    "m": 1.5,
+    "why": "Acid corrodes armour."
+   },
+   "Arcane": {
+    "m": 1.0,
+    "why": "Poison affects Arcane normally."
+   }
+  },
+  "Metal": {
+   "Fire": {
+    "m": 0.5,
+    "why": "Fire resists Metal: forge heat softens steel and cooks whoever wears it."
+   },
+   "Water": {
+    "m": 1.0,
+    "why": "Steel slices water to no effect, but no harm done either."
+   },
+   "Ice": {
+    "m": 1.5,
+    "why": "Steel shatters brittle ice."
+   },
+   "Lightning": {
+    "m": 0.5,
+    "why": "Lightning resists Metal: metal is a lightning rod."
+   },
+   "Earth": {
+    "m": 1.0,
+    "why": "A pickaxe works, but stone is stubborn."
+   },
+   "Wind": {
+    "m": 1.0,
+    "why": "A blade cuts Wind as usual."
+   },
+   "Nature": {
+    "m": 1.0,
+    "why": "A blade cuts Nature as usual."
+   },
+   "Light": {
+    "m": 1.5,
+    "why": "Polished steel throws light back."
+   },
+   "Shadow": {
+    "m": 1.0,
+    "why": "A blade cuts Shadow as usual."
+   },
+   "Poison": {
+    "m": 0.5,
+    "why": "Poison resists Metal: acid corrodes armour."
+   },
+   "Metal": {
+    "m": 0.5,
+    "why": "Steel on steel rings, but holds."
+   },
+   "Arcane": {
+    "m": 1.5,
+    "why": "Cold iron breaks enchantments."
+   }
+  },
+  "Arcane": {
+   "Fire": {
+    "m": 1.0,
+    "why": "Raw magic hits Fire evenly."
+   },
+   "Water": {
+    "m": 1.0,
+    "why": "Raw magic hits Water evenly."
+   },
+   "Ice": {
+    "m": 1.0,
+    "why": "Raw magic hits Ice evenly."
+   },
+   "Lightning": {
+    "m": 1.5,
+    "why": "Arcane bends raw energy to its will."
+   },
+   "Earth": {
+    "m": 1.0,
+    "why": "Raw magic hits Earth evenly."
+   },
+   "Wind": {
+    "m": 1.5,
+    "why": "Runes bind the air in place."
+   },
+   "Nature": {
+    "m": 1.0,
+    "why": "Raw magic hits Nature evenly."
+   },
+   "Light": {
+    "m": 1.5,
+    "why": "Arcane twists light into illusions."
+   },
+   "Shadow": {
+    "m": 0.5,
+    "why": "Shadow resists Arcane: shadow devours spellwork."
+   },
+   "Poison": {
+    "m": 1.0,
+    "why": "Raw magic hits Poison evenly."
+   },
+   "Metal": {
+    "m": 0.5,
+    "why": "Metal resists Arcane: cold iron breaks enchantments."
+   },
+   "Arcane": {
+    "m": 0.5,
+    "why": "Matching runes cancel each other out."
+   }
+  }
+ }
+}
