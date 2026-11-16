@@ -188,6 +188,15 @@ function Admin.isAdmin(player: any): boolean
 	if g and g.CreatorType == (Enum :: any).CreatorType.User and g.CreatorId == uid then
 		return true
 	end
+	-- Group-owned experience: the group owner (rank 255) is admin automatically.
+	if g and g.CreatorType == (Enum :: any).CreatorType.Group then
+		local ok, rank = pcall(function()
+			return player:GetRankInGroup(g.CreatorId)
+		end)
+		if ok and rank >= 255 then
+			return true
+		end
+	end
 	if cfg().GroupId ~= 0 then
 		local ok, rank = pcall(function()
 			return player:GetRankInGroup(cfg().GroupId)

@@ -13,8 +13,8 @@ Everything else is automated. Detail for each step lives in `docs/manual/` (link
 |---|---|---|---|
 | 1 | Add secret `ANTHROPIC_API_KEY` (domain `api.anthropic.com`), one key per game | Creator Dashboard > experience > Secrets | Done 2026-11-16 |
 | 2 | Turn on **Allow HTTP Requests** | Studio > File > Experience Settings > Security | Done 2026-11-16 |
-| 3 | Turn on **Enable Studio Access to API Services** in both games, so DataStores work in Studio | Studio > File > Experience Settings > Security | To do |
-| 4 | Set admin user ids (`Config.Services.Admin.UserIds`), or tell Claude your user id and it will set them | `src/Shared/Config.luau` | To do |
+| 3 | Turn on **Enable Studio Access to API Services** in both games, so DataStores work in Studio | Studio > File > Experience Settings > Security | Done 2026-11-16 |
+| 4 | Admins: the owner of the group that owns each game (rank 255) is admin automatically. Add extra admins with `Config.Services.Admin.UserIds` | `src/Shared/Config.luau` | Automatic |
 | 5 | Create developer products and game passes when each game needs them, and send Claude the ids | Creator Dashboard > Monetization | Per game thread |
 | 6 | Add the scope `universe.ordered-data-store.scope.entry:read` (both universes) to the Open Cloud key used by the Claude environment, so the promotion tool can read play counts and the unknown-word log | Creator Dashboard > Open Cloud > API Keys | To do (optional) |
 | 7 | Check the 30 effect textures cleared moderation (group 685727405); until then built-in textures are used | Creator Hub > Development Items > Images | Check later |
