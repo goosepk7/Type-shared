@@ -4,21 +4,42 @@
     "$className": "DataModel",
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "WordEngine": { "$path": "src/Shared" }
+      "WordEngine": {
+        "$path": "src/Shared"
+      }
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
-      "WordEngineServer": { "$path": "src/Server" },
-      "TestPlaceServer": { "$path": "testplace/Server" }
+      "WordEngineServer": {
+        "$path": "src/Server"
+      },
+      "TestPlaceServer": {
+        "$path": "testplace/Server"
+      }
     },
     "StarterPlayer": {
       "$className": "StarterPlayer",
       "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts",
-        "TestPlaceClient": { "$path": "testplace/Client" }
+        "TestPlaceClient": {
+          "$path": "testplace/Client"
+        },
+        "SummonGallery": {
+          "$path": "testplace/Gallery"
+        }
       }
     },
-    "Workspace": { "$className": "Workspace", "$properties": { "StreamingEnabled": false } },
-    "Lighting": { "$className": "Lighting", "$properties": { "Technology": "Future" } }
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "StreamingEnabled": false
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "Technology": "Future"
+      }
+    }
   }
 }
