@@ -285,7 +285,8 @@ local function spanOptions(tokens: { string }, i: number, j: number, n: number, 
 		m = Modifiers.number(phrase)
 	end
 	if m then
-		table.insert(opts, { kind = "Mod", cost = if miss then 0.2 else 0.05, conf = if miss then 0.93 else 1, mod = m, fuzzy = false })
+		-- a multi-word modifier/material keeps its words together ("candy cane" + sword, not candy + "cane sword")
+		table.insert(opts, { kind = "Mod", cost = (if miss then 0.2 else 0.05) - 0.14 * (L - 1), conf = if miss then 0.93 else 1, mod = m, fuzzy = false })
 	end
 	-- material (exact span)
 	local matId, matMiss = Library.lookupMaterial(phrase)
@@ -293,7 +294,7 @@ local function spanOptions(tokens: { string }, i: number, j: number, n: number, 
 		-- "made of X" / "out of X" / "of X" / "but X": X is the material, never an element or base thing.
 		local prevTok = tokens[i - 1]
 		local slot = prevTok == "of" or prevTok == "but"
-		local matCost = if slot then -0.5 elseif matMiss then 0.21 else 0.06
+		local matCost = (if slot then -0.5 elseif matMiss then 0.21 else 0.06) - 0.14 * (L - 1)
 		table.insert(opts, { kind = "Mod", cost = matCost, conf = if matMiss then 0.93 else 1, mod = Modifiers.material(matId), fuzzy = false })
 	end
 	if L == 1 then

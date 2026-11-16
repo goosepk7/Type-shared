@@ -221,8 +221,11 @@ return function(t)
 		end
 		local ok, fails = 0, {}
 		for _, r in rows do
-			local got = Resolver.resolveLocal(r[1]).canonical
-			if got == r[2] then
+			-- same thing, not same text: an exact alias or plural now displays as typed
+			local res = Resolver.resolveLocal(r[1])
+			local want = Resolver.resolveLocal(r[2])
+			local got = res.canonical
+			if got == r[2] or (res.id == want.id and res.material == want.material and #res.modifiers == #want.modifiers) then
 				ok += 1
 			else
 				table.insert(fails, string.format("%q -> %s (want %s)", r[1], got, r[2]))

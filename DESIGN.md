@@ -107,7 +107,8 @@ testplace/             -- test place scripts (type any word, see both styles sid
 export type WordResult = {
   schemaVersion: number,      -- 1
   id: string,                 -- canonical library key incl. modifiers stripped: "shark"
-  canonical: string,          -- display canonical incl. modifiers: "giant fire shark"
+  canonical: string,          -- display name. What the player typed when it was understood exactly (alias "ice beam",
+                              -- plural "wolves", clean phrase "bee wall"); otherwise built from modifiers + id
   input: string,              -- what the player typed (UNFILTERED; server only, never replicate raw)
   confidence: number,         -- 0..1 overall
   source: Source,             -- "Library" | "Cache" | "AI" | "Admin" | "Fallback"

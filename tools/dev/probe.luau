@@ -1,6 +1,6 @@
 local load = require("../../tests/loader")
 local R = load("src/Shared/Resolver")
-for _, p in { "wall made of metal", "dragon of gold", "dragon but spaghetti", "metal wall", "fire", "armageddon", "angry shark", "summon asteroid", "call in an asteroid", "small tornado", "giant fire shark", "spagetti dragn", "dragon made of spaghetti", "tiny angry golden robot shark", "frozen shark", "summon a dragon", "bees", "cheese tank", "glass shark", "bee wall", "fire ice dragon", "tiny giant shark", "shark angry", "pikachu", "dr4gon", "fiiiire" } do
+for _, p in require("@lune/process").args do
 	local r = R.resolveLocal(p)
 	local mods = {}
 	for _, m in r.modifiers do table.insert(mods, m.id) end

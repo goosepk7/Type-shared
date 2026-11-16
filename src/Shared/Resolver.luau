@@ -61,6 +61,12 @@ function Resolver.isPluralInput(text: string, baseId: string): boolean
 	return isPluralOf(lastWord(typed), lastWord(baseId))
 end
 
+local NOT_DISPLAYED = {
+	of = true, but = true, made = true, out = true, from = true, wearing = true, with = true, holding = true,
+	riding = true, carrying = true, eating = true, on = true, inside = true, under = true, wielding = true,
+	using = true, has = true, having = true, a = true, an = true, the = true, summon = true, call = true,
+}
+
 local function build(text: string, spell: SpellResult, unknownBelow: number): WordResult
 	local raw = if type(text) == "string" then text else ""
 	if spell.canonical == nil or spell.confidence < unknownBelow then
@@ -92,6 +98,21 @@ local function build(text: string, spell: SpellResult, unknownBelow: number): Wo
 	result.confidence = spell.confidence
 	result.source = "Library"
 	local typed = Normalizer.light(raw)
+	-- Show what the player typed when it was understood exactly: an alias ("ice beam" for ray of frost), a
+	-- plural ("wolves"), or a clean modifier/material + thing phrase ("bee wall"). Filler phrasing ("dragon
+	-- made out of spaghetti") and anything corrected keep the constructed name.
+	if typed ~= result.canonical and spell.confidence >= 0.97 and #spell.extras == 0 and #typed <= Schema.Limits.MaxPhrase then
+		local clean = true
+		for tok in string.gmatch(typed, "%S+") do
+			if Modifiers.Fillers[tok] or NOT_DISPLAYED[tok] then
+				clean = false
+				break
+			end
+		end
+		if clean then
+			result.canonical = typed
+		end
+	end
 	if typed ~= result.canonical then
 		result.correction = {
 			method = spell.method or "Normalized",
