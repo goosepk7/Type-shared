@@ -479,6 +479,7 @@ function Accents.apply(B: any, accents: { string }?, t: any): { any }
 	end
 	local A = anchors(B)
 	local seen: { [string]: boolean } = {}
+	local rank = 0
 	for _, id in accents do
 		if not seen[id] then
 			seen[id] = true
@@ -491,6 +492,22 @@ function Accents.apply(B: any, accents: { string }?, t: any): { any }
 					for i = #B.parts, before + 1, -1 do
 						table.remove(B.parts, i)
 					end
+				end
+				-- a modifier must read: lift this accent's parts so its lead piece outranks plan dressing (ears, tails,
+				-- spines) but never the body masses or face; relative order inside the accent is kept
+				local lo = math.huge
+				for i = before + 1, #B.parts do
+					lo = math.min(lo, B.parts[i].pri or 2)
+				end
+				local target = 1.16 + rank * 0.04
+				if lo < math.huge and lo > target then
+					for i = before + 1, #B.parts do
+						local q = B.parts[i]
+						q.pri = (q.pri or 2) - (lo - target)
+					end
+				end
+				if #B.parts > before then
+					rank += 1
 				end
 				mark(B, before)
 			end

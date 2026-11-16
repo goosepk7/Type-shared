@@ -109,7 +109,7 @@ local function clean(bp: any, label: string, flags: { string }): any
 	for _, p in bp.parts do
 		table.insert(parts, { shape = p.shape, size = p.size, cf = p.cf, colour = p.colour, material = p.material, transparency = p.transparency, name = p.name })
 	end
-	return { id = bp.id, label = label, flags = flags, style = bp.style, size = bp.size, builder = bp.builder, stats = bp.stats, parts = parts }
+	return { id = bp.id, label = label, flags = flags, style = bp.style, size = bp.size, builder = bp.builder, stats = bp.stats, parts = parts, members = bp.members, fx = { highlight = bp.fx and bp.fx.highlight } }
 end
 
 local function render(list: { any }, out: string, cols: number, tile: number)

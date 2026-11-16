@@ -11,7 +11,7 @@ import math
 import sys
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 SS = 2  # supersampling
 
@@ -109,19 +109,28 @@ def view_rot(view):
     if view == "top":  # camera above, forward (-Z) is screen-up
         return np.array([[1, 0, 0], [0, 0, -1], [0, 1, 0]], dtype=float)
     # iso 3/4 from front-right-above
-    yaw, pitch = math.radians(-145), math.radians(-24)
+    # 50 degrees off the front: shows the face AND the body length (a quadruped reads as four-legged)
+    yaw, pitch = math.radians(-130), math.radians(22)
     ry = np.array([[math.cos(yaw), 0, math.sin(yaw)], [0, 1, 0], [-math.sin(yaw), 0, math.cos(yaw)]])
     rx = np.array([[1, 0, 0], [0, math.cos(pitch), -math.sin(pitch)], [0, math.sin(pitch), math.cos(pitch)]])
     return rx @ ry
 
 
-LIGHT = np.array([0.45, 0.8, 0.4])
+LIGHT = np.array([0.4, 0.75, -0.55])  # key light from above, front-right (camera side), like a studio key
 LIGHT = LIGHT / np.linalg.norm(LIGHT)
 
 
-def render_view(bp, view, size):
+def render_view(bp, view, size, bg=(40, 43, 52)):
+    """Render one view onto an opaque background.
+
+    PIL only alpha-BLENDS polygons drawn on an RGB image (on RGBA it overwrites), so colour is accumulated on an
+    opaque RGB canvas, coverage in a separate mask (for the Spectral highlight outline), emissive light in a glow
+    layer (bloom), and ForceField shells in an additive layer.
+    """
     W = H = size * SS
-    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    img = Image.new("RGB", (W, H), bg)
+    glow = Image.new("RGB", (W, H), (0, 0, 0))  # emissive light (Neon / ForceField), blurred + added
+    spectral = bp.get("style") == "Spectral"
     R = view_rot(view)
     polys = []
     allpts = []
@@ -154,15 +163,22 @@ def render_view(bp, view, size):
                     shade = col * (0.55 + 0.6 * (1 - abs(cn[2])))  # fresnel rim
                 else:
                     lam = max(0.0, float(np.dot(n, LIGHT)))
-                    shade = col * (0.42 + 0.62 * lam)
+                    shade = col * (0.5 + 0.55 * lam)
                 alpha = 1 - tr
+                if mat == "Neon":
+                    alpha = 1 - tr
                 if mat == "ForceField":
                     alpha *= 0.55
                 if mat == "Glass":
                     alpha *= 0.8
                 pa, pb, pc = cam[t[0]], cam[t[1]], cam[t[2]]
                 depth = (pa[2] + pb[2] + pc[2]) / 3
-                polys.append((depth, (pa, pb, pc), np.clip(shade, 0, 1), alpha))
+                emit = 0.0
+                if mat == "Neon":
+                    emit = 0.9 * (1 - tr * 0.6)
+                elif mat == "ForceField":
+                    emit = 0.45 * (1 - abs(cn[2])) + 0.08
+                polys.append((depth, (pa, pb, pc), np.clip(shade, 0, 1), alpha, emit, np.clip(col, 0, 1), mat))
     if not allpts:
         return img.resize((size, size), Image.LANCZOS)
     pts = np.vstack(allpts)
@@ -171,15 +187,52 @@ def render_view(bp, view, size):
     scale = (W * 0.86) / span
     cx, cy = (mn[0] + mx[0]) / 2, (mn[1] + mx[1]) / 2
     draw = ImageDraw.Draw(img, "RGBA")
-    # ground line for front/side
     if view in ("front", "side"):
         gy = H / 2 - (0 - cy) * scale
         draw.line([(0, gy), (W, gy)], fill=(120, 120, 130, 120), width=SS)
+    mask = Image.new("L", (W, H), 0)
+    mdraw = ImageDraw.Draw(mask)
+    gdraw = ImageDraw.Draw(glow, "RGBA")
+    # ForceField shells are additive in Roblox (they brighten what is behind them, never darken it): accumulate
+    # them in their own layer, erased where an opaque part lies in front, and add that layer at the end
+    ff = Image.new("RGB", (W, H), (0, 0, 0))
+    fdraw = ImageDraw.Draw(ff, "RGBA")
     polys.sort(key=lambda q: q[0])
-    for depth, tri, shade, alpha in polys:
+    for depth, tri, shade, alpha, emit, col, mat in polys:
         xy = [(W / 2 + (v[0] - cx) * scale, H / 2 - (v[1] - cy) * scale) for v in tri]
-        c = tuple(int(x * 255) for x in shade) + (int(alpha * 255),)
-        draw.polygon(xy, fill=c)
+        if alpha > 0.15:
+            mdraw.polygon(xy, fill=255)
+        if mat == "ForceField":
+            fc = tuple(int(x * 255) for x in shade) + (int(alpha * 255),)
+            fdraw.polygon(xy, fill=fc)
+            gdraw.polygon(xy, fill=tuple(int(min(1, x * (0.6 + emit)) * 255) for x in col) + (int(min(1, emit) * 255),))
+            continue
+        draw.polygon(xy, fill=tuple(int(x * 255) for x in shade) + (int(alpha * 255),))
+        if emit > 0:
+            gdraw.polygon(xy, fill=tuple(int(min(1, x * (0.6 + emit)) * 255) for x in col) + (int(min(1, emit * (0.4 + alpha * 0.6)) * 255),))
+        elif alpha > 0.7:
+            # occluders hide emitters and shells behind them
+            gdraw.polygon(xy, fill=(0, 0, 0, int(alpha * 255)))
+        if alpha > 0.7:
+            fdraw.polygon(xy, fill=(0, 0, 0, int(alpha * 255)))
+    out = np.asarray(img, dtype=float)
+    out = out + np.asarray(ff, dtype=float) * 0.9
+    g = np.asarray(glow, dtype=float)
+    if g.max() > 0:
+        gimg = Image.fromarray(g.astype("uint8"))
+        wide = np.asarray(gimg.filter(ImageFilter.GaussianBlur(W * 0.035)), dtype=float)
+        tight = np.asarray(gimg.filter(ImageFilter.GaussianBlur(W * 0.01)), dtype=float)
+        k = 0.8 if spectral else 0.6
+        out = out + (wide * 0.55 + tight * 0.3) * k
+    img = Image.fromarray(np.clip(out, 0, 255).astype("uint8"))
+    hl = (bp.get("fx") or {}).get("highlight")
+    if spectral and hl:
+        # Roblox Highlight: coloured silhouette outline
+        grown = mask.filter(ImageFilter.MaxFilter(2 * SS + 1))
+        ring = ImageChops.subtract(grown, mask)
+        oc = tuple(int(x * 255) for x in hl.get("outline", [1, 1, 1]))
+        oa = 1 - hl.get("outlineTransparency", 0.2)
+        img.paste(Image.new("RGB", (W, H), oc), (0, 0), ring.point(lambda v: int(v * oa)))
     return img.resize((size, size), Image.LANCZOS)
 
 
@@ -188,10 +241,8 @@ def tile(bp, tile_px, views):
     lab = 34
     img = Image.new("RGB", (vsz * len(views), vsz + lab), (28, 30, 36))
     for i, v in enumerate(views):
-        bg = Image.new("RGBA", (vsz, vsz), (40, 43, 52, 255) if i % 2 == 0 else (44, 47, 57, 255))
-        r = render_view(bp, v, vsz)
-        bg.alpha_composite(r)
-        img.paste(bg.convert("RGB"), (i * vsz, lab))
+        r = render_view(bp, v, vsz, (40, 43, 52) if i % 2 == 0 else (44, 47, 57))
+        img.paste(r, (i * vsz, lab))
     d = ImageDraw.Draw(img)
     st = bp.get("stats", {})
     text = f'{bp["id"]}  [{bp["style"]} {bp["size"]}]  {bp.get("builder","")}  parts {st.get("parts")}/{st.get("budget")}  drop {st.get("dropped")}  fix {st.get("fixes")}'

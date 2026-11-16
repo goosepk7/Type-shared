@@ -100,7 +100,7 @@ local function spectralColour(key: any, ep: Palette.ElementPalette): RGB
 	elseif key == "secondary" or key == "accent" or key == "horn" or key == "claw" or key == "nail" or key == "beak"
 		or key == "gem" or key == "glow" or key == "gold" or key == "inner" or key == "flame" or key == "tongue" or key == "blush" then
 		return ep.glow
-	elseif key == "dark" or key == "darker" or key == "tyre" or key == "gunmetal" or key == "hoof" or key == "darkStone" or key == "darkWood" then
+	elseif key == "dark" or key == "darker" or key == "black" or key == "tyre" or key == "gunmetal" or key == "hoof" or key == "darkStone" or key == "darkWood" then
 		return ep.deep
 	elseif key == "membrane" or key == "wingGlass" or key == "wingTip" or key == "sail" then
 		return ep.main
@@ -143,11 +143,16 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 			p.colour = if type(key) == "table" then key else spectralColour(key, pep)
 			if p.mcol then
 				-- material look carried into energy: glowing noodle strands, glowing bricks
-				p.colour = Palette.lerp(p.colour, Palette.tint(p.mcol, 0.25), 0.55)
+				p.colour = Palette.lerp(p.colour, Palette.tint(p.mcol, 0.25), 0.4)
 			end
-			if isEye then
+			if role == "pupil" or (role == "mouth" and (key == "mouth" or key == "pupil")) or key == "pupil" then
+				-- the face must read on glowing energy: pupils, nostrils and mouth cavities are solid deep ink
+				p.colour = Palette.shade(pep.deep, 0.55)
+				p.material = "SmoothPlastic"
+				p.transparency = 0
+			elseif isEye then
 				p.material = "Neon"
-				p.transparency = if role == "pupil" then 0 else 0
+				p.transparency = 0
 			elseif (p.pri or 2) <= 1.3 and not p.noCore and (role == "body" or role == "head" or role == "core" or role == "torso") then
 				-- big masses: shimmering energy shell around a brighter inner core of strictly smaller size
 				p.material = "ForceField"
@@ -158,7 +163,8 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 				-- slope passes through its box centre, so its core sits at the wedge centroid instead.
 				local shape = if p.shape == "Block" or p.shape == "Cylinder" then p.shape else "Ellipsoid"
 				local ccf = p.cf
-				local ck = k
+				-- round masses (planets, orbs, heads) carry surface detail: a smaller core keeps it readable
+				local ck = if p.shape == "Ball" then k * 0.78 else k
 				if p.shape == "Wedge" then
 					ccf = Geom.offset(p.cf, 0, -s[2] / 6, s[3] / 6)
 					ck = k * 0.6
@@ -170,9 +176,9 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 					bone = p.bone,
 					pri = (p.pri or 1) + 0.9,
 					role = "core",
-					colour = ep.core,
+					colour = Palette.lerp(ep.core, ep.main, 0.2),
 					material = "Neon",
-					transparency = 0.35,
+					transparency = 0.4,
 					noCore = true,
 					name = (p.name or "Part") .. "Core",
 				}
@@ -181,7 +187,12 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 				p.material = "Neon"
 				-- deeper detail gets more transparent: layered energy rather than a solid neon lump
 				local pri = p.pri or 2
-				p.transparency = math.clamp(0.12 + (pri - 1) * 0.07, 0.12, 0.45)
+				p.transparency = math.clamp(0.22 + (pri - 1) * 0.08, 0.22, 0.55)
+				if p.colour == pep.outer then
+					-- limbs and secondary masses sit a value step below the cores: the light hierarchy is
+					-- core > eyes/accents > shells > limbs, so the summon reads as one glowing body, not a pile of bulbs
+					p.colour = Palette.lerp(pep.outer, pep.deep, 0.3)
+				end
 				if role == "wing" or role == "petal" or role == "fin" then
 					p.transparency = math.max(p.transparency, 0.35)
 					p.material = if role == "wing" and (pri or 2) < 2 then "Neon" else "ForceField"
@@ -191,6 +202,25 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 				p.transparency = math.max(p.transparency, p.tr)
 			end
 			p.castShadow = false
+		end
+		-- aura: one extra outer shell on the biggest torso mass (strictly larger radii on every axis), so the body
+		-- reads as layered energy (aura > shell > core) rather than a single glowing surface
+		local big, bigV = nil, 0
+		for _, p in parts do
+			if p.material == "ForceField" and p.role == "body" and (p.shape == "Ellipsoid" or p.shape == "Ball") then
+				local v = p.size[1] * p.size[2] * p.size[3]
+				if v > bigV then
+					big, bigV = p, v
+				end
+			end
+		end
+		if big then
+			local s = big.size
+			table.insert(extra, {
+				shape = big.shape, size = { s[1] * 1.14, s[2] * 1.14, s[3] * 1.1 }, cf = big.cf, bone = big.bone,
+				pri = (big.pri or 1) + 1.2, role = "aura", colour = ep.glow, material = "ForceField", transparency = 0.55,
+				noCore = true, name = (big.name or "Part") .. "Aura",
+			})
 		end
 		for _, c in extra do
 			table.insert(parts, c)
@@ -245,6 +275,24 @@ function Style.apply(bp: any, B: any, r: any, t: any, style: string, cfg: any)
 			end
 			p.transparency = p.tr or 0
 			p.castShadow = (p.pri or 2) < 2.5
+		end
+		-- dark dot eyes on a dark head vanish (ninja, shadow, black cat): swap them for bright catch-light eyes
+		local head, hv = nil, 0
+		for _, p in parts do
+			if p.role == "head" or p.role == "body" then
+				local v = p.size[1] * p.size[2] * p.size[3]
+				if v > hv and p.transparency < 0.5 then
+					head, hv = p, v
+				end
+			end
+		end
+		if head then
+			local hl = Palette.luma(head.colour)
+			for _, p in parts do
+				if p.role == "eye" and (p.col == "pupil" or p.col == "bugEye") and math.abs(Palette.luma(p.colour) - hl) < 0.22 then
+					p.colour = if hl < 0.28 then { 0.97, 0.95, 0.88 } else { 0.06, 0.05, 0.08 }
+				end
+			end
 		end
 		-- glowing eyes for elemental creatures that already asked for glow eyes (handled by the plan via kind="glow")
 		if r.element and r.element ~= "None" then

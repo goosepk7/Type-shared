@@ -117,6 +117,77 @@ elseif mode == "mat" then
 	end
 	cols = "4"
 	views = "front,iso"
+elseif mode == "quads" then
+	-- one exemplar per quadruped archetype: quads [Solid|Spectral] [Size] out.png
+	local style = args[2] or "Solid"
+	local size = if args[3] and args[3] ~= out then args[3] else "Medium"
+	local Q = {
+		{ "wolf", { "mammal" }, "pointy ears, bushy tail", "#7D8590", "#D9DDE2" }, { "fox", { "mammal" }, "", "#E0782E", "#FFF3E6" },
+		{ "dog", { "mammal" }, "", "#B8835A", "#F4E6D0" }, { "cat", { "mammal" }, "", "#8E8E96", "#F2F2F2" },
+		{ "tiger", { "mammal" }, "", "#F08A24", "#FFF6E8" }, { "lion", { "mammal" }, "mane, tufted tail", "#C8902E", "#7A4A1E" },
+		{ "bear", { "mammal" }, "", "#6B4A2E", "#C9A57A" }, { "panda", { "mammal" }, "", "#F4F4F4", "#22252B" },
+		{ "horse", { "mammal" }, "", "#8A5A33", "#3A2A1E" }, { "deer", { "mammal" }, "", "#B07A45", "#F4E6D0" },
+		{ "cow", { "mammal" }, "", "#F4F4F4", "#3A3A3F" }, { "goat", { "mammal" }, "", "#D9D2C2", "#8A7A62" },
+		{ "pig", { "mammal" }, "", "#F2A7B5", "#E07A8E" }, { "mouse", { "mammal", "cute" }, "", "#A8A39C", "#F2C6CC" },
+		{ "squirrel", { "mammal" }, "", "#B5652E", "#F4E0C2" }, { "rabbit", { "mammal", "cute" }, "long ears", "#E8DCCB", "#FFFFFF" },
+		{ "elephant", { "mammal", "heavy" }, "big ears, trunk, tusks", "#8E8A86", "#C9C2BA" }, { "rhino", { "mammal", "heavy" }, "", "#8E8A86", "#B9B2AA" },
+		{ "lizard", { "reptile" }, "", "#5E9A3A", "#D9E27A" }, { "unicorn", { "mythical" }, "spiral horn, flowing mane", "#F7F3FF", "#C77DFF" },
+	}
+	for _, q in Q do
+		local r = Schema.repair({
+			id = q[1], canonical = q[1], category = "Creature", element = "None", size = size, shape = "Summon", behaviours = { "Melee" },
+			power = 5, speed = 5, durability = 5, count = 1, source = "Library", confidence = 1,
+			visual = { primaryColour = q[4], secondaryColour = q[5], bodyPlan = "Quadruped", silhouetteHint = q[3], motionHint = "Walk", soundHint = "roar" },
+			flavourText = "", tags = q[2],
+		})
+		add(r, style, 1)
+	end
+	cols = "4"
+	views = "side,iso"
+	tilePx = "200"
+elseif mode == "orbs" or mode == "builds" or mode == "swarms" then
+	-- exemplars for the Orb, Structure and Swarm plans: <mode> [Solid|Spectral] [Size] out.png
+	local style = args[2] or "Solid"
+	local size = if args[3] and args[3] ~= out then args[3] else "Medium"
+	local EX = {
+		orbs = {
+			{ "fireball", "Element", "Fire", "#FF5A1F", "#FFD23A" }, { "meteor", "Disaster", "Fire", "#5A4A3E", "#FF8A2B" },
+			{ "planet", "Place", "Arcane", "#D99A4A", "#F4E1B4" }, { "earth", "Place", "Nature", "#2F6FD6", "#5BA33A" },
+			{ "sun", "Place", "Fire", "#FFC83A", "#FF8A1F" }, { "moon", "Place", "Light", "#C9C6BE", "#8E8A86" },
+			{ "magic orb", "Object", "Arcane", "#B65CFF", "#FFE6FF" }, { "heal", "Abstract", "Light", "#FFE58A", "#FFFFFF" },
+			{ "ball lightning", "Element", "Lightning", "#9FD8F2", "#FFF07A" }, { "ice orb", "Element", "Ice", "#A8E9FF", "#FFFFFF" },
+			{ "boulder", "Element", "Earth", "#8E8A80", "#C9B27A" }, { "shadow orb", "Element", "Shadow", "#2A1A3A", "#A974FF" },
+			{ "bomb", "Weapon", "Fire", "#22252B", "#FF8A1F" }, { "black hole", "Disaster", "Shadow", "#120A1E", "#A974FF" },
+			{ "bubble", "Element", "Water", "#9FD8F2", "#FFFFFF" }, { "apple", "Food", "Nature", "#D62F2F", "#5BA33A" },
+		},
+		builds = {
+			{ "tower", "Structure", "Earth", "#A39E93", "#5A3A6B", "Tower" }, { "house", "Structure", "None", "#E8D8B4", "#A33A2A", "Structure" },
+			{ "castle", "Structure", "Earth", "#A39E93", "#2F5AA3", "Castle" }, { "wall", "Structure", "Earth", "#8E8A80", "#5E5A52", "Wall" },
+			{ "lighthouse", "Structure", "Light", "#F2F2F2", "#D62F2F", "Structure" }, { "windmill", "Structure", "Wind", "#E8D8B4", "#8A5A33", "Structure" },
+			{ "wizard tower", "Structure", "Arcane", "#6E6A8A", "#5A3A9B", "Tower" }, { "igloo", "Structure", "Ice", "#EEF6FA", "#BFD8E8", "Structure" },
+			{ "pyramid", "Structure", "Light", "#D9B97A", "#E8B53A", "Structure" }, { "gate", "Structure", "Earth", "#8E8A80", "#6B4A2E", "Gate" },
+			{ "cottage", "Structure", "None", "#E8D8B4", "#A33A2A", "Building" }, { "watchtower", "Structure", "Earth", "#A39E93", "#5A3A6B", "Tower" },
+		},
+		swarms = {
+			{ "bees", "Creature", "Nature", "#F2C22F", "#2A2A30", "Swarm" }, { "bee", "Creature", "Nature", "#F2C22F", "#2A2A30", "Insect" },
+			{ "wasps", "Creature", "Poison", "#E8B020", "#1D1D22", "Swarm" }, { "bats", "Creature", "Shadow", "#2A2230", "#7A5AA3", "Swarm" },
+			{ "fireflies", "Creature", "Light", "#FFE58A", "#7ED957", "Swarm" }, { "piranhas", "Creature", "Water", "#8E8A86", "#D62F2F", "Swarm" },
+			{ "locusts", "Creature", "Nature", "#7A8B3A", "#C9B27A", "Swarm" }, { "crows", "Creature", "Shadow", "#22252B", "#5A5A66", "Swarm" },
+		},
+	}
+	local planOf = { orbs = "Orb" }
+	for _, q in EX[mode] do
+		local r = Schema.repair({
+			id = q[1], canonical = q[1], category = q[2], element = q[3], size = size, shape = "Summon", behaviours = {},
+			power = 5, speed = 5, durability = 5, count = 1, source = "Library", confidence = 1,
+			visual = { primaryColour = q[4], secondaryColour = q[5], bodyPlan = q[6] or planOf[mode], silhouetteHint = "", motionHint = "Float", soundHint = "hum" },
+			flavourText = "", tags = if q[2] == "Place" then { "space" } elseif q[6] == "Swarm" or q[6] == "Insect" then { "insect" } else {},
+		})
+		add(r, style, 1)
+	end
+	cols = "4"
+	views = "front,iso"
+	tilePx = "200"
 elseif mode == "sheet" then
 	for _, s in F.SignatureWords do
 		add(F.signatureResult(Schema, s), "Solid", 1)
@@ -146,7 +217,7 @@ for _, bp in bps do
 	for _, p in bp.parts do
 		table.insert(parts, { shape = p.shape, size = p.size, cf = p.cf, colour = p.colour, material = p.material, transparency = p.transparency, name = p.name })
 	end
-	table.insert(clean, { id = bp.id, style = bp.style, size = bp.size, builder = bp.builder, stats = bp.stats, parts = parts, members = bp.members })
+	table.insert(clean, { id = bp.id, style = bp.style, size = bp.size, builder = bp.builder, stats = bp.stats, parts = parts, members = bp.members, fx = { highlight = bp.fx and bp.fx.highlight } })
 end
 local tmp = out .. ".json"
 fs.writeFile(tmp, serde.encode("json", clean))

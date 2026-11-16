@@ -120,7 +120,7 @@ function Parts.ears(B: any, o: any)
 	local s = o.s
 	local pri = o.pri or 2
 	if kind == "round" then
-		B:mell(s, s, s * 0.35, at(o.x, o.y, o.z, 0, rad(-10), rad(-15)), { col = "primary", mat = "fur", bone = o.bone, pri = pri, role = "ear" })
+		B:mell(s, s, s * 0.35, at(o.x, o.y, o.z, 0, rad(-10), rad(-15)), { col = o.col or "primary", mat = "fur", bone = o.bone, pri = pri, role = "ear" })
 		B:mell(s * 0.62, s * 0.62, s * 0.3, at(o.x + s * 0.0, o.y, o.z - s * 0.06, 0, rad(-10), rad(-15)), { col = "inner", mat = "fur", bone = o.bone, pri = pri + 1.5, role = "ear" })
 	elseif kind == "long" then
 		B:mell(s * 0.42, s * 1.7, s * 0.22, at(o.x, o.y + s * 0.75, o.z + s * 0.1, rad(-12), 0, rad(-14)), { col = "primary", mat = "fur", bone = o.bone, pri = pri, role = "ear", trail = true })
@@ -131,10 +131,27 @@ function Parts.ears(B: any, o: any)
 		B:mell(s * 0.25, s * 1.4, s * 1.2, at(o.x, o.y - s * 0.1, o.z + s * 0.2, 0, rad(-25), 0), { col = "primary", mat = "skin", bone = o.bone, pri = pri, role = "ear" })
 	elseif kind == "fin" then
 		B:mwedge(s * 0.12, s * 0.9, s * 0.9, at(o.x, o.y + s * 0.2, o.z + s * 0.35, rad(-10), rad(-30), rad(-25)), { col = "secondary", mat = "skin", bone = o.bone, pri = pri, role = "ear" })
-	else -- pointy: triangular ear from a wedge-ish tall ellipsoid plus an inner ear
-		local f = at(o.x, o.y + s * 0.45, o.z, rad(-8), rad(-18), rad(-16))
-		B:mwedge(s * 0.22, s * 1.05, s * 0.62, Geom.mul(f, at(0, 0, 0, 0, math.pi, 0)), { col = "primary", mat = "fur", bone = o.bone, pri = pri, role = "ear" })
-		B:mwedge(s * 0.12, s * 0.72, s * 0.4, Geom.mul(f, at(0, -s * 0.09, -s * 0.06, 0, math.pi, 0)), { col = "inner", mat = "fur", bone = o.bone, pri = pri + 1.5, role = "ear" })
+	elseif kind == "side" then
+		-- cattle: leaf-shaped ears sticking out sideways under the horns
+		B:mell(s * 0.95, s * 0.3, s * 0.5, at(o.x + s * 0.38, o.y - s * 0.12, o.z + s * 0.05, 0, rad(-20), rad(-18)), { col = "primary", mat = "fur", bone = o.bone, pri = pri, role = "ear" })
+		B:mell(s * 0.62, s * 0.2, s * 0.32, at(o.x + s * 0.42, o.y - s * 0.12, o.z - s * 0.04, 0, rad(-20), rad(-18)), { col = "inner", mat = "fur", bone = o.bone, pri = pri + 1.5, role = "ear" })
+	else
+		-- triangular ear seen from the front: a wedge yawed so its right-triangle profile faces forward, the
+		-- vertical edge on the inside, the slope falling to the outside, rolled outward. pointy = tall (wolf, fox),
+		-- tri = broad (cat), flop = tipped forward (pig). The inner ear is a smaller wedge proud of the front face.
+		local hgt, base, roll, pitch = s * 1.0, s * 0.62, rad(-12), rad(-6)
+		if kind == "tri" then
+			hgt, base, roll, pitch = s * 0.86, s * 0.78, rad(-22), rad(-4)
+		elseif kind == "flop" then
+			hgt, base, roll, pitch = s * 0.8, s * 0.7, rad(-30), rad(-58)
+		end
+		local thick = s * 0.16
+		local root = at(o.x, o.y, o.z, pitch, 0, roll)
+		local yaw = at(0, 0, 0, 0, -math.pi / 2, 0)
+		local outer = Geom.mul(Geom.mul(root, at(base * 0.18, hgt * 0.42, 0)), yaw)
+		local ro = B:mwedge(thick, hgt, base, outer, { col = if kind == "flop" then "primary" else (o.col or "primary"), mat = "fur", bone = o.bone, pri = pri, role = "ear", trail = kind == "pointy" })
+		local inner = Geom.mul(Geom.mul(root, at(base * 0.18 - base * 0.05, hgt * 0.42 + hgt * 0.02, -thick * 0.32)), yaw)
+		B:mwedge(thick * 0.6, hgt * 0.7, base * 0.58, inner, { col = "inner", mat = "fur", bone = o.bone, pri = pri + 1.6, role = "ear", needs = ro.pair })
 	end
 end
 
@@ -273,8 +290,8 @@ function Parts.tail(B: any, o: any)
 		local ez = z + dz * segLen
 		local ww = if kind == "bushy" then w * (1.2 + 0.25 * i) else w
 		B:limb({ x, y, z }, { ex, ey, ez }, ww, {
-			col = if (i % 2 == 0 and o.banded) then "secondary" else "primary", mat = if kind == "bushy" then "fur" else "skin",
-			bone = bname, pri = 1.5 + i * 0.4, role = "tail", trail = i == segs, depth = ww * (o.flat or 1),
+			col = if (i % 2 == 0 and o.banded) then "secondary" else (o.col or "primary"), mat = if kind == "bushy" then "fur" else "skin",
+			bone = bname, pri = (o.pri or 1.1) + i * 0.4, role = "tail", trail = i == segs, depth = ww * (o.flat or 1),
 		}, if kind == "bushy" then 0.4 else 0.3)
 		if kind == "spiked" and i < segs then
 			B:wedge(ww * 0.25, ww * 0.9, ww * 0.9, at((x + ex) / 2, (y + ey) / 2 + ww * 0.55, (z + ez) / 2, 0, 0, 0),
@@ -288,7 +305,7 @@ function Parts.tail(B: any, o: any)
 	if kind == "club" then
 		B:ell(w * 2.6, w * 2.0, w * 2.6, at(x, y, z), { col = "accent", mat = "hard", bone = last, pri = 2, role = "tail", trail = true })
 	elseif kind == "tuft" then
-		B:ell(w * 2.2, w * 2.2, w * 3.0, at(x, y, z + w), { col = "secondary", mat = "fur", bone = last, pri = 2.5, role = "tail" })
+		B:ell(w * 2.2, w * 2.2, w * 3.0, at(x, y, z + w), { col = o.tuftCol or "secondary", mat = "fur", bone = last, pri = o.tuftPri or 2.5, role = "tail" })
 	elseif kind == "spiked" then
 		B:wedge(w * 0.4, w * 1.6, w * 2.6, at(x, y + w * 0.3, z + w * 0.8, 0, 0, 0), { col = "accent", mat = "hard", bone = last, pri = 2.5, role = "spike", trail = true })
 	elseif kind == "stinger" then

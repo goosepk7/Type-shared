@@ -93,6 +93,23 @@ Rules that apply to every material:
   or flicker.
 - **Particles.** The material's particles use the Effects ids.
 
+## Plan notes
+
+- **Quadrupeds** pick a head archetype from the id (`Heads.Arch`): canine, feline, ursine, equine, bovine,
+  porcine, rodent, plus reptile, bird (beak) and pachyderm fallbacks from traits. Each archetype sets body
+  proportions, neck, snout, nose, ears, tail and coat marks (stripes, spots, panda patches). Posture is horizontal,
+  with the head carried forward on a short neck.
+- **Orbs** have a distinct build per kind: fireball/meteor (hot core, flame shell, licks, trail), planet (bands as
+  separate shells, rings, craters), earth, sun, moon, magic orb (rune ring on a rotor), plasma, frost, boulder,
+  void, bomb, bubble. Food words go to the Blob food builders.
+- **Structures:** towers have a plinth, machicolations, merlons, a 4-wedge roof with staggered lifts, and framed
+  windows and doors set back from the wall. Portals stand on a plinth with a keystone, a turning vortex and runes.
+  Nothing decorative is flush with a face: insets and proud details are always offset.
+- **Swarms** have hero units in front (full detail: bee bands and wings, bat membranes, firefly bodies) and a
+  depth-sorted cloud of cheaper fillers.
+- **Spectral** masses get a ForceField shell, a Neon core with a strictly smaller radius, and an aura shell on the
+  biggest mass.
+
 ## Faces
 
 - **Who gets a face.** Creatures always get one. Objects get one only when the mood is not Neutral, or the tags
@@ -100,6 +117,10 @@ Rules that apply to every material:
 - **Mood.** `result.mood` drives the expression: eye shape, pupils, lids, brows, mouth, tongue, teeth and blush.
   There are 14 moods (Face.Expressions).
 - **Small budgets.** At detail 0–1 the eyes outrank secondary limbs.
+- **Contrast.** In Solid, dot eyes that would melt into a dark (or mid-tone) head are swapped for bright (or
+  near-black) ones.
+- **Accents stay visible.** Each accent's lead part is lifted to just below the face, so a modifier outranks plan
+  dressing such as ears, tails and spines.
 
 ## Signatures
 
@@ -117,16 +138,16 @@ How a word finds its signature:
 
 ## Part counts
 
-These are measured over all 60 plans at seed 1, as average and maximum parts. The budget is in brackets; a
-signature can go 25% over it.
+These are measured over the generic plans (one variant each) at seed 1, as average and maximum parts. The budget
+is in brackets; a signature can go 25% over it.
 
 | Size | Solid avg / max | Spectral avg / max |
 |---|---|---|
-| Tiny (8) | 6.2 / 10 | 7.2 / 10 |
-| Small (12) | 8.2 / 15 | 8.9 / 15 |
-| Medium (20) | 12.6 / 25 | 14.1 / 25 |
-| Large (30) | 16.2 / 37 | 18.1 / 37 |
-| Huge / Colossal (40) | 17.5 / 50 | 19.8 / 50 |
+| Tiny (8) | 6.9 / 8 | 7.6 / 8 |
+| Small (12) | 10.1 / 12 | 10.1 / 12 |
+| Medium (20) | 15.4 / 20 | 16.7 / 20 |
+| Large (30) | 21.5 / 30 | 23.1 / 30 |
+| Huge / Colossal (40) | 23.1 / 40 | 25.8 / 40 |
 
 Other budgets:
 - **FX:** 2 emitters in Solid and 3 in Spectral, at most 60 particles/s each; 4 trails; 1 light; 2 or 3 looping
@@ -157,7 +178,10 @@ Other budgets:
 
   The worst builds go in `gallery_flagged.png`.
 - **`lune run tools/render_blueprint ...`.** Renders single plans, all plans, special plans, signatures,
-  phrases, one material, or the contact sheet (`docs/img/summons_contact_sheet.png`).
+  phrases, one material, exemplar sheets (`quads`, `orbs`, `builds`, `swarms`), or the contact sheet
+  (`docs/img/summons_contact_sheet.png`). The renderer is flat-shaded with a camera-side key light, blends
+  translucent parts properly, draws ForceField and Neon parts additively with bloom, and draws the Spectral
+  Highlight outline.
 - **`testplace/Gallery`.** The Roblox client gallery shows the same phrases and signatures, Solid and Spectral
   side by side, animated, with flags shown on labels. Keys:
   - G: new seed;

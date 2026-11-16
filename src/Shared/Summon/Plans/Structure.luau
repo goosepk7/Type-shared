@@ -53,7 +53,7 @@ end
 
 local K = {}
 
-function K.tower(B: any, ctx: any, o: any?)
+local function towerLite(B: any, ctx: any, o: any?)
 	local oo = o or {}
 	local detail = ctx.detail
 	local r = oo.r or 1.3
@@ -85,6 +85,77 @@ function K.tower(B: any, ctx: any, o: any?)
 	end
 end
 
+-- Hero tower: battered plinth, stone shaft, string course, a corbelled machicolation ring with merlons standing
+-- proud of it, an optional pyramid roof set inside the parapet (four wedges whose hidden back and bottom faces are
+-- staggered so none coincide), framed windows and an arched door with the pane/door set back from its frame.
+function K.tower(B: any, ctx: any, o: any?)
+	local oo = o or {}
+	if oo.lite then
+		return towerLite(B, ctx, oo)
+	end
+	local detail = ctx.detail
+	local id = string.lower(ctx.result.id)
+	local r = oo.r or 1.3
+	local h = oo.h or 5.6
+	local col = oo.col or "stone"
+	local magic = ctx.result.element == "Arcane" or string.find(id, "wizard") ~= nil or string.find(id, "mage") ~= nil
+	local roofed = oo.cone or ctx.traits.roof or magic or detail <= 0
+	B:cyl(h, r * 2, at(0, h / 2, 0, 0, 0, rad(90)), { col = col, mat = "stone", pri = 1, role = "body", name = "Tower" })
+	B:cyl(0.9, r * 2.36, at(0, 0.45, 0, 0, 0, rad(90)), { col = "darkStone", mat = "stone", pri = 1.2, role = "body", name = "Plinth" })
+	-- corbelled top: wider ring, then merlons around its rim
+	local topY = h + 0.3
+	B:cyl(0.7, r * 2.44, at(0, h + 0.05, 0, 0, 0, rad(90)), { col = "darkStone", mat = "stone", pri = 1.1, role = "body", name = "Machicolation" })
+	if detail >= 1 then
+		local n = if detail >= 3 then 8 elseif detail == 2 then 7 else 6
+		for i = 1, n do
+			local a2 = (i - 0.5) / n * math.pi * 2
+			B:block(0.55, 0.62, 0.42, at(sin(a2) * r * 1.06, topY + 0.38, cos(a2) * r * 1.06, 0, a2, 0),
+				{ col = col, mat = "stone", pri = 1.5 + i * 0.01, role = "detail", name = "Merlon" .. i })
+		end
+	end
+	if roofed then
+		-- pyramid roof: four wedges, slopes outward, set inside the parapet
+		local rr, rh = r * 1.02, r * 2.4
+		local roofCol = if magic then "secondary" else "roof"
+		for i = 1, 4 do
+			local yaw = (i - 1) * math.pi / 2
+			-- every wedge gets its own base height and its back face sits 0.03 past the axis: no shared planes
+			local odd = i % 2 == 0
+			local lift = ({ 0, 0.04, 0.02, 0.06 })[i]
+			local back = 0.03
+			local f = Geom.mul(at(0, topY + 0.1 + lift + (rh - lift) / 2, 0, 0, yaw, 0), at(0, 0, -rr / 2 + back, 0, 0, 0))
+			B:wedge(rr * 2 - (if odd then 0.04 else 0), rh - lift, rr, f, { col = roofCol, mat = "wood", pri = 1.3 + i * 0.01, role = "roof", name = "Roof" .. i })
+		end
+		if detail >= 2 then
+			B:rod({ 0, topY + rh - 0.2, 0 }, { 0, topY + rh + 1.0, 0 }, 0.09, { col = "dark", mat = "metal", pri = 2.4, role = "detail", name = "Pole" })
+			B:block(0.75, 0.42, 0.05, at(0.4, topY + rh + 0.75, 0.01, 0, 0, rad(-4)), { col = if magic then "glow" else "secondary", mat = "cloth", pri = 2.5, role = "flag", name = "Flag", trail = true, needs = "Pole" })
+		end
+		if magic then
+			B:ball(0.55, at(0, topY + rh + 0.15, 0), { col = "glow", mat = "neon", glow = true, pri = 1.45, role = "gem", name = "Beacon", noCore = true })
+		end
+	end
+	-- door: frame proud of the round wall (0.14), dark planks proud by only 0.05 so the door sits back inside it
+	local fz = -r
+	B:block(1.1, 1.55, 0.36, at(0, 0.97 + 0.775, fz + 0.04), { col = "darkStone", mat = "stone", pri = 1.35, role = "door", name = "DoorFrame" })
+	B:block(0.78, 1.3, 0.27, at(0, 0.93 + 0.65, fz - 0.08), { col = "darkWood", mat = "wood", pri = 1.4, role = "door", name = "Door", needs = "DoorFrame" })
+	if detail >= 2 then
+		-- framed windows up the shaft (stagger around the curve so each frame meets the wall at a new angle)
+		local nw = if detail >= 3 then 3 else 2
+		for i = 1, nw do
+			local a2 = (i - (nw + 1) / 2) * rad(34)
+			local wy = 0.9 + 1.6 + i * (h - 2.6) / (nw + 0.5)
+			local fx, fz2 = sin(a2) * r, -cos(a2) * r
+			B:block(0.62, 0.95, 0.3, at(fx * 0.98, wy, fz2 * 0.98, 0, -a2, 0), { col = "darkStone", mat = "stone", pri = 1.6 + i * 0.05, role = "window", name = "WinFrame" .. i })
+			B:block(0.38, 0.7, 0.22, at(fx * 1.03, wy - 0.03, fz2 * 1.03, 0, -a2, 0), { col = if magic then "glow" else "darker", mat = if magic then "neon" else "glass", glow = magic, pri = 1.62 + i * 0.05, role = "window", name = "Win" .. i, needs = "WinFrame" .. i, noCore = true })
+		end
+		B:cyl(0.24, r * 2.12, at(0, 0.9 + 1.75 + 0.02, 0, 0, 0, rad(90)), { col = "darkStone", mat = "stone", pri = 2.2, role = "detail", name = "Course" })
+	end
+	if not oo.noFace then
+		face(B, ctx, at(0, h * 0.52, -r - 0.02), r * 1.4, { curve = 0.35 })
+	end
+	B:socket("core", at(0, h * 0.6, 0), "Body")
+end
+
 function K.building(B: any, ctx: any)
 	local detail = ctx.detail
 	local W, D, H = 4.0, 3.2, 2.6
@@ -94,21 +165,30 @@ function K.building(B: any, ctx: any)
 	-- a wedge's vertical face is at +Z and its slope faces -Z: the front half needs no rotation (ridge at z = 0)
 	B:wedge(W + overhang * 2, rh, D / 2 + overhang + 0.02, at(0, H + rh / 2 - 0.02, -(D / 2 + overhang) / 2 + 0.01, 0, 0, 0), { col = "roof", mat = "wood", pri = 1.1, role = "roof", name = "RoofF" })
 	B:wedge(W + overhang * 2 - 0.04, rh - 0.02, D / 2 + overhang + 0.02, at(0, H + rh / 2 - 0.03, (D / 2 + overhang) / 2 - 0.01, 0, math.pi, 0), { col = "roof", mat = "wood", pri = 1.1, role = "roof", name = "RoofB" })
-	-- door + windows proud of the front wall
-	B:block(0.8, 1.4, 0.1, at(0.9, 0.7, -D / 2 - 0.03), { col = "darkWood", mat = "wood", pri = 1.4, role = "door", name = "Door" })
+	-- stone foundation course (wider than the walls, so its faces never meet theirs)
+	B:block(W + 0.24, 0.34, D + 0.24, at(0, 0.15, 0), { col = "darkStone", mat = "stone", pri = 1.25, role = "body", name = "Foundation" })
+	-- door: a proud timber frame with the door set back inside it (frame front 0.16 out, door front 0.07 out)
+	B:block(1.06, 1.62, 0.2, at(0.9, 0.34 + 0.81, -D / 2 - 0.06), { col = "wood", mat = "wood", pri = 1.35, role = "door", name = "DoorFrame" })
+	B:block(0.78, 1.42, 0.16, at(0.9, 0.36 + 0.71, -D / 2 + 0.01), { col = "darkWood", mat = "wood", pri = 1.4, role = "door", name = "Door", needs = "DoorFrame" })
 	if detail >= 1 then
-		B:block(0.85, 0.75, 0.1, at(-0.9, 1.5, -D / 2 - 0.03), { col = "glass", mat = "glass", pri = 1.6, role = "window", name = "Window" })
+		B:block(1.0, 0.92, 0.2, at(-0.9, 1.55, -D / 2 - 0.06), { col = "white", mat = "wood", pri = 1.55, role = "window", name = "WindowFrame" })
+		B:block(0.78, 0.7, 0.16, at(-0.9, 1.55, -D / 2 + 0.01), { col = "glass", mat = "glass", pri = 1.6, role = "window", name = "Window", needs = "WindowFrame" })
+	end
+	if detail >= 2 then
+		-- cross mullion inside the window, standing between pane and frame depth
+		B:block(0.07, 0.72, 0.17, at(-0.9, 1.55, -D / 2 - 0.005), { col = "white", mat = "wood", pri = 2.6, role = "detail", name = "Mullion", needs = "WindowFrame" })
+		B:block(0.8, 0.07, 0.18, at(-0.9, 1.56, -D / 2 - 0.012), { col = "white", mat = "wood", pri = 2.65, role = "detail", name = "Transom", needs = "WindowFrame" })
 	end
 	if detail >= 2 then
 		B:block(0.55, 1.4, 0.55, at(-1.2, H + 1.3, 0.6), { col = "secondary", mat = "stone", pri = 2.0, role = "detail", name = "Chimney" })
-		B:block(1.05, 0.12, 0.2, at(-0.9, 1.08, -D / 2 - 0.08), { col = "white", mat = "wood", pri = 2.5, role = "detail", name = "Sill" })
+		B:block(1.16, 0.12, 0.34, at(-0.9, 1.06, -D / 2 - 0.1), { col = "white", mat = "wood", pri = 2.5, role = "detail", name = "Sill" })
 		B:socket("smoke", at(-1.2, H + 2.1, 0.6), "Body")
 		B:emit("smoke", nil, { socket = "smoke", rate = 8 })
 	end
 	if detail >= 3 then
 		B:mblock(0.1, 0.75, 0.85, at(W / 2 + 0.03, 1.5, 0), { col = "glass", mat = "glass", pri = 3.0, role = "window", name = "SideWindow#" })
 	end
-	face(B, ctx, at(-0.2, 1.5, -D / 2 - 0.05), 2.6)
+	face(B, ctx, at(-0.2, 1.5, -D / 2 - 0.18), 2.6)
 end
 
 function K.wall(B: any, ctx: any)
@@ -146,6 +226,21 @@ function K.gate(B: any, ctx: any)
 		end
 		B:cyl(0.12, 3.6, at(0, 2.6, 0, 0, rad(90), 0), { col = "glow", mat = "neon", glow = true, pri = 1.2, role = "gem", name = "Portal", noCore = true })
 		B:bone("Spin", "Body", 0, 2.6, 0)
+		-- stepped plinth and a proud keystone: the ring stands on something and has a top
+		B:block(4.6, 0.5, 1.7, at(0, 0.25, 0), { col = "darkStone", mat = "stone", pri = 1.25, role = "body", name = "Plinth" })
+		B:block(3.3, 0.36, 1.3, at(0, 0.66, 0.03), { col = "stone", mat = "stone", pri = 1.6, role = "detail", name = "Step" })
+		B:block(1.0, 1.25, 0.98, at(0, 4.62, 0.01), { col = "darkStone", mat = "stone", pri = 1.3, role = "body", name = "Keystone" })
+		-- vortex: two offset swirl lobes on the rotor (they read as turning) and a hot eye, each its own depth
+		B:ell(3.0, 1.15, 0.06, at(0, 2.6, -0.12, 0, 0, rad(20)), { col = "secondary", mat = "neon", glow = true, tr = 0.25, bone = "Spin", pri = 1.35, role = "gem", name = "Swirl1", noCore = true })
+		B:ell(1.15, 2.6, 0.06, at(0, 2.6, -0.2, 0, 0, rad(20)), { col = "secondary", mat = "neon", glow = true, tr = 0.35, bone = "Spin", pri = 1.45, role = "gem", name = "Swirl2", noCore = true })
+		B:cyl(0.08, 1.1, at(0, 2.6, -0.28, 0, rad(90), 0), { col = "flameCore", mat = "neon", glow = true, pri = 1.5, role = "gem", name = "VortexEye", noCore = true })
+		if detail >= 2 then
+			-- runes cut into every other stone (sunk 0.01 into the face, never flush)
+			for i = 1, n, 2 do
+				local a = (i - 0.5) / n * math.pi * 2
+				B:block(0.34, 0.34, 0.06, at(sin(a) * 2.0, 2.6 + cos(a) * 2.0, -0.37, 0, 0, -a + rad(45)), { col = "glow", mat = "neon", glow = true, pri = 1.9 + i * 0.01, role = "detail", name = "Rune" .. i, noCore = true })
+			end
+		end
 		B:addRig("rotors", { bone = "Spin", axis = "Z", speed = 1 })
 		B:socket("core", at(0, 2.6, 0), "Body")
 		return
@@ -197,7 +292,7 @@ function K.castle(B: any, ctx: any)
 	local n = if detail <= 1 then 2 else 4
 	for i = 1, n do
 		local c = corners[i]
-		K.tower(B, ctx, { x = c[1] * W / 2, z = c[2] * D / 2, r = 0.95, h = H + 1.6, name = "Tower" .. i, pri = 1.1 + i * 0.05, cone = true, noFace = true })
+		K.tower(B, ctx, { lite = true, x = c[1] * W / 2, z = c[2] * D / 2, r = 0.95, h = H + 1.6, name = "Tower" .. i, pri = 1.1 + i * 0.05, cone = true, noFace = true })
 	end
 	if detail >= 2 then
 		Parts.crenellations(B, { kind = "rect", cx = 0, cz = 0, y = H, w = W - 1.6, d = D - 1.6, n = if detail >= 3 then 3 else 2, s = 0.45, pri = 3.0 })

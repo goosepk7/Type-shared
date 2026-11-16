@@ -96,9 +96,17 @@ return function(B: any, ctx: any)
 	B:ell(abSize[1], abSize[2], abSize[3], at(0, y + (if spider then 0.35 else 0.05), 0.45 + abSize[3] * 0.45, rad(if spider then 10 else -8), 0, 0),
 		{ col = "primary", mat = if t.fluffy then "fur" else "hard", bone = ab, pri = 1, role = "body", name = "Abdomen" })
 	-- stripes (bee/wasp) or shell (beetle) or markings (spider)
-	if detail >= 2 and (t.stinger or string.find(string.lower(ctx.result.id), "bee") or string.find(string.lower(ctx.result.id), "wasp")) then
-		for i = 1, 2 do
-			B:ell(abSize[1] * 1.03, abSize[2] * 1.03, 0.3, at(0, y + 0.05, 0.45 + abSize[3] * (0.25 + i * 0.22), rad(-8), 0, 0), { col = "secondary", mat = "hard", bone = ab, pri = 2.0 + i * 0.2, role = "detail", name = "Stripe" .. i })
+	local lid = string.lower(ctx.result.id)
+	local beeish = t.stinger or (string.find(lid, "bee") ~= nil and string.find(lid, "beetle") == nil) or string.find(lid, "wasp") ~= nil or string.find(lid, "hornet") ~= nil
+	if beeish and not spider then
+		-- bold bands are THE bee read: thick discs whose rims follow the abdomen's cross-section x1.06, ranked
+		-- right after the body masses (they survive any budget that keeps the abdomen)
+		local n = if detail >= 2 then 3 elseif detail == 1 then 2 else 1
+		local az, rz = 0.45 + abSize[3] * 0.45, abSize[3] / 2
+		for i = 1, n do
+			local z = az - rz * 0.45 + (i - 1) * rz * (if n == 1 then 0 else 0.95 / (n - 1)) + (if n == 1 then rz * 0.45 else 0)
+			local k = math.sqrt(math.max(0.1, 1 - ((z - az) / rz) ^ 2)) * 1.06
+			B:ell(abSize[1] * k, abSize[2] * k, abSize[3] * 0.15, at(0, y + 0.05 + (z - az) * math.tan(rad(8)), z, rad(-8), 0, 0), { col = "black", mat = "fur", bone = ab, pri = 1.12 + i * 0.03, role = "detail", name = "Stripe" .. i })
 		end
 	elseif t.shell and detail >= 1 then
 		B:mell(abSize[1] * 0.56, abSize[2] * 1.06, abSize[3] * 1.04, at(abSize[1] * 0.23, y + 0.1, 0.45 + abSize[3] * 0.45, rad(-8), 0, rad(-4)), { col = "secondary", mat = "hard", bone = ab, pri = 1.4, role = "shell", name = "Elytra#" })
@@ -112,6 +120,12 @@ return function(B: any, ctx: any)
 	-- legs
 	if spider then
 		legs(B, detail, if detail <= 1 then 2 else 4, 0.38, y, -0.35, 0.35, 0.13, "dark")
+	elseif (t.wings or t.flies) and beeish then
+		-- flying: three short legs per side tucked under the thorax, dangling (cheap, never sprawling like a spider)
+		for i = 1, (if detail >= 2 then 3 else 2) do
+			local z = -0.25 + (i - 1) * 0.25
+			B:mlimb({ 0.25, y - 0.25, z }, { 0.42, y - 0.95, z + 0.18 }, 0.11, { col = "dark", mat = "hard", pri = 1.8 + i * 0.05, role = "limb", name = "Leg" .. i .. "#" }, 0.1)
+		end
 	else
 		legs(B, detail, if detail <= 0 then 2 else 3, 0.35, y - 0.1, -0.3, 0.3, 0.1, "dark")
 	end
@@ -132,7 +146,7 @@ return function(B: any, ctx: any)
 		B:addRig("arms", { arm = "ClawR", side = 1 })
 		B:addRig("arms", { arm = "ClawL", side = -1 })
 	elseif t.stinger and detail >= 2 then
-		B:limb({ 0, y, 0.45 + abSize[3] * 0.85 }, { 0, y - 0.15, 0.45 + abSize[3] * 1.15 }, 0.16, { col = "darker", mat = "hard", bone = ab, pri = 2.5, role = "tail", trail = true }, 0.1)
+		B:limb({ 0, y - 0.05, 0.45 + abSize[3] * 0.82 }, { 0, y - 0.3, 0.45 + abSize[3] * 1.2 }, 0.2, { col = "black", mat = "hard", bone = ab, pri = 1.5, role = "tail", trail = true }, 0.1)
 	end
 	if t.horns and detail >= 1 then
 		Parts.horns(B, { bone = "Head", x = 0, y = y + 0.3, z = -0.85, len = 0.9, w = 0.22, kind = "uni", segs = 2, pri = 1.6, col = "secondary" })

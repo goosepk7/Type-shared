@@ -48,9 +48,9 @@ S.cat = {
 	build = function(B: any, ctx: any)
 		local A = Kit.base(B, ctx, "Quadruped", nil, { mammal = true, cute = true, longTail = true, bigHead = true, claws = false })
 		local s = A.headW
-		-- whiskers: three thin rods each side of the muzzle
-		if ctx.detail >= 2 then
-			for i = 1, (if ctx.detail >= 3 then 3 else 2) do
+		-- whiskers: thin rods each side of the muzzle (at detail 3 the feline head already grows them)
+		if ctx.detail == 2 then
+			for i = 1, 2 do
 				local y = A.mouth[2] + s * (0.12 - i * 0.06)
 				B:mrod({ s * 0.16, y, A.mouth[3] + s * 0.06 }, { s * 0.62, y + s * (0.08 - i * 0.07), A.mouth[3] + s * 0.02 }, s * 0.025,
 					{ col = "white", mat = "hard", bone = A.headBone, pri = 2.6 + i * 0.1, role = "detail", name = "Whisker" .. i .. "#", noCore = true })
