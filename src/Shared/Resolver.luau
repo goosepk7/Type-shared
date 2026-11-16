@@ -19,6 +19,48 @@ type SpellResult = Types.SpellResult
 
 local Resolver = {}
 
+-- Plural input ("bees", "wolves", "mice") with no explicit count reads as a small group.
+-- Counts by size keep balance sane; abstract/area categories never multiply.
+local PLURAL_COUNT: { [string]: number } = { Tiny = 5, Small = 3, Medium = 2, Large = 2, Huge = 1, Colossal = 1 }
+local NO_PLURAL_COUNT: { [string]: boolean } = {
+	Element = true, Weather = true, Disaster = true, Abstract = true, Place = true,
+}
+local IRREGULAR: { [string]: string } = {
+	mice = "mouse", geese = "goose", teeth = "tooth", feet = "foot", people = "person", children = "child",
+	oxen = "ox", men = "man", women = "woman", dice = "die", lice = "louse", octopi = "octopus", cacti = "cactus",
+	fungi = "fungus", wolves = "wolf", knives = "knife", leaves = "leaf", elves = "elf", dwarves = "dwarf",
+}
+
+local function lastWord(s: string): string
+	return string.match(s, "([^%s]+)$") or s
+end
+
+local function isPluralOf(typed: string, singular: string): boolean
+	if typed == singular then
+		return false
+	end
+	if IRREGULAR[typed] == singular then
+		return true
+	end
+	if typed == singular .. "s" or typed == singular .. "es" then
+		return true
+	end
+	if string.sub(singular, -1) == "y" and typed == string.sub(singular, 1, -2) .. "ies" then
+		return true
+	end
+	local stemF = string.match(singular, "^(.-)fe?$")
+	if stemF and typed == stemF .. "ves" then
+		return true
+	end
+	return false
+end
+
+-- True when the typed phrase names the base thing in plural form.
+function Resolver.isPluralInput(text: string, baseId: string): boolean
+	local typed = Normalizer.light(if type(text) == "string" then text else "")
+	return isPluralOf(lastWord(typed), lastWord(baseId))
+end
+
 local function build(text: string, spell: SpellResult, unknownBelow: number): WordResult
 	local raw = if type(text) == "string" then text else ""
 	if spell.canonical == nil or spell.confidence < unknownBelow then
@@ -29,6 +71,19 @@ local function build(text: string, spell: SpellResult, unknownBelow: number): Wo
 		return Schema.fallback(raw)
 	end
 	local result = Modifiers.apply(base, spell.modifiers)
+	local hasCount = false
+	for _, m in spell.modifiers do
+		if m.kind == "Count" then
+			hasCount = true
+		end
+	end
+	if not hasCount and result.count == 1 and not NO_PLURAL_COUNT[result.category]
+		and Resolver.isPluralInput(raw, base.id) then
+		result.count = PLURAL_COUNT[result.size] or 1
+		if result.count > 1 and table.find(result.tags, "group") == nil and #result.tags < Schema.Limits.MaxTags then
+			table.insert(result.tags, "group")
+		end
+	end
 	result.input = string.sub(raw, 1, 200)
 	result.confidence = spell.confidence
 	result.source = "Library"
