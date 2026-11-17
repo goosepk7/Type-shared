@@ -108,6 +108,20 @@ if structure and objects then
 					return objects(B, ctx)
 				end
 			end
+			if ctx.result.category == "Food" and Plans.Blob then
+				-- "giant pancake", "bread", "lasagna": food filed under Structure is food, not a house with a face.
+				-- Only edible architecture ("gingerbread house", "cheese wall", "cake tower") stays a building.
+				local building = false
+				for _, w in { "house", "tower", "wall", "castle", "gate", "bridge", "fort", "fountain", "hut", "cabin", "pyramid", "shield" } do
+					if string.find(id, w, 1, true) then
+						building = true
+					end
+				end
+				if not building then
+					ctx.kind = "Food"
+					return Plans.Blob(B, ctx)
+				end
+			end
 			if ctx.result.category == "Object" or ctx.result.category == "Tool" or ctx.result.category == "Machine" then
 				-- non-architectural things that fell back to Structure: a chunky prop rather than a house
 				local plain = true

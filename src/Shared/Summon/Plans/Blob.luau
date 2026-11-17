@@ -28,7 +28,9 @@ local function foodKind(t: any, id: string): string?
 		end
 		return false
 	end
-	if any("sandwich reuben panini blt sub hoagie club toastie gyro kebab") then
+	if any("pancake flapjack hotcake crepe blini") then
+		return "pancake"
+	elseif any("sandwich reuben panini blt sub hoagie club toastie gyro kebab") then
 		return "burger"
 	elseif any("croissant kouign danish pastry strudel turnover cruller") then
 		return "croissant"
@@ -105,6 +107,22 @@ return function(B: any, ctx: any)
 		if detail >= 2 then
 			B:limb({ 0, y + 0.35, 0 }, { 0.15, y + 0.85, 0.1 }, 0.08, { col = "leafDark", mat = "wood", pri = 3, role = "detail" }, 0.05)
 		end
+	elseif k == "pancake" then
+		-- a short stack of fluffy discs (each a little smaller and offset), melting butter pat, syrup drip
+		local n = if detail <= 1 then 2 else 3
+		local y = 0
+		for i = 1, n do
+			local d = 3.3 - (i - 1) * 0.22
+			local ox, oz = ((i % 2) - 0.5) * 0.14, ((i % 3) - 1) * 0.08
+			B:cyl(0.5, d, at(ox, y + 0.25, oz, 0, 0, rad(90)), { col = "primary", mat = "skin", pri = 1 + i * 0.1, role = "body", name = "Cake" .. i })
+			y += 0.44
+		end
+		B:ell(2.5, 0.16, 2.5, at(0, y + 0.07, 0), { col = "secondary", mat = "glass", pri = 1.5, role = "detail", name = "Syrup" })
+		B:block(0.7, 0.26, 0.7, at(0.1, y + 0.22, -0.05, 0, rad(20), 0), { col = "cream", mat = "skin", pri = 1.7, role = "detail", name = "Butter" })
+		if detail >= 2 then
+			B:ell(0.32, 0.7, 0.2, at(0.2, y - 0.3, -1.62), { col = "secondary", mat = "glass", pri = 1.9, role = "detail", name = "Drip" })
+		end
+		flatFace(B, ctx, at(0, 0.5, -1.66), 1.3)
 	elseif k == "pie" or k == "pizza" then
 		if k == "pizza" then
 			-- a slice standing up on its crust, tip up: one big wedge + crust log + toppings
