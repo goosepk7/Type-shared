@@ -129,8 +129,10 @@ end
 -- Cape: a slightly curved thin slab behind the shoulders, made of two panels at different tilts (never coplanar).
 function Props.cape(B: any, top: { number }, w: number, h: number, bone: string, col: string?)
 	local x, y, z = top[1], top[2], top[3]
-	B:block(w, h * 0.55, w * 0.06, at(x, y - h * 0.27, z + w * 0.08, rad(8), 0, 0), { col = col or "secondary", mat = "cloth", bone = bone, pri = 1.6, role = "cape", name = "Cape" })
-	B:block(w * 1.1, h * 0.5, w * 0.055, at(x, y - h * 0.72, z + w * 0.16, rad(14), 0, 0), { col = col or "secondary", mat = "cloth", bone = bone, pri = 1.9, role = "cape", name = "CapeLow", trail = true })
+	local upper = B:block(w, h * 0.55, w * 0.06, at(x, y - h * 0.27, z + w * 0.08, rad(8), 0, 0), { col = col or "secondary", mat = "cloth", bone = bone, pri = 1.6, role = "cape", name = "Cape", trail = true })
+	local lower = B:block(w * 1.1, h * 0.5, w * 0.055, at(x, y - h * 0.72, z + w * 0.16, rad(14), 0, 0), { col = col or "secondary", mat = "cloth", bone = bone, pri = 3.2, role = "cape", name = "CapeLow" })
+	-- sculpt: one hanging cloth with folds and a scalloped hem (s_cape); the two slabs are the primitive fallback
+	B:sculpt(upper, "s_cape", { lower })
 end
 
 return Props

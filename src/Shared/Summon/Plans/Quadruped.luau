@@ -261,8 +261,8 @@ return function(B: any, ctx: any)
 		local hk = if reptile then "swept" elseif idHas(id, "ram sheep mouflon") then "ram" elseif idHas(id, "goat ibex tahr serow") then "swept" else "curved"
 		Parts.horns(B, { bone = "Head", x = headS * (if P then 0.3 else 0.24), y = info.top[2] - headS * 0.1, z = info.top[3] + headS * 0.05, len = headS * (0.8 + t.power * 0.05), w = headS * 0.2, kind = hk, segs = if detail <= 1 then 2 else 3, pri = if P then 1.35 else 1.6 })
 	end
-	if t.mane then
-		-- mane: fluffy collar around the neck root and a ring framing the face
+	if t.mane and (arch ~= "equine" or antlers) then
+		-- mane: fluffy collar around the neck root and a ring framing the face (a maned horse gets the crest mane)
 		B:ell(W * 1.35, H * 1.05, L * 0.34, at(0, neckBase[2] + 0.2, neckBase[3] - 0.08, rad(-30), 0, 0), { col = "secondary", mat = "fur", bone = "Neck", pri = 1.4, role = "mane" })
 		B:ell(headS * 1.45, headS * 1.4, headS * 0.6, at(0, info.c[2] + headS * 0.02, info.c[3] + headS * 0.34), { col = "secondary", mat = "fur", bone = "Head", pri = 1.32, role = "mane" })
 	elseif arch == "equine" and not antlers and detail >= 1 then
@@ -407,7 +407,7 @@ return function(B: any, ctx: any)
 	B:setRig("gait", if heavy then "heavy" elseif reptile then "sprawl" else "trot")
 
 	-- wolf hero sculpt (catalogue/s_canine.py) for the wild, bushy-tailed canines: trunk with the breast ruff, maned
-	-- neck, legs with toed paws, brush. The head keeps s_head_canine. Needs the two-segment legs and tail of detail 2+.
+	-- neck, wolf head with cupped ears, legs with toed paws, brush. Needs the two-segment legs and tail of detail 2+.
 	if arch == "canine" and detail >= 2 and idHas(id, "wolf wolves coyote jackal dingo husky malamute warg fenrir werewolf hellhound dhole") then
 		local N, lead, named, on = MeshMap.sculptor(B, "wolf")
 		local tails = {}
@@ -429,8 +429,52 @@ return function(B: any, ctx: any)
 					lead(on("limb", "Knee" .. tag .. side)[1], "s_wolf_shin" .. suffix, on("foot", "Knee" .. tag .. side))
 				end
 			end
+			if N.Head and N.Snout then
+				local inHead = on("ear", N.Head.bone)
+				for _, e in inHead do
+					e.pri = 3.2
+				end
+				table.insert(inHead, N.Snout)
+				lead(N.Head, "s_wolf_head", inHead)
+			end
 			lead(tails[1], "s_wolf_tail1", nil, 1.4)
 			lead(tails[2], "s_wolf_tail2", nil, 1.4)
+		end
+	end
+
+	-- horse family hero sculpt (catalogue/s_horse.py): trunk, arched neck, mane of locks, legs with knee, hock and
+	-- fetlock, flowing tail; the unicorn adds its spiral horn and pastel locks. Head, ears and hooves keep their own
+	-- pieces. Needs the two-segment legs and tail of detail 2+.
+	if arch == "equine" and detail >= 2 and (t.unihorn or idHas(id, "horse horses pony foal mare stallion mustang zebra donkey mule unicorn pegasus thoroughbred appaloosa palomino clydesdale quagga nightmare kelpie sleipnir")) then
+		local N, lead, named, on = MeshMap.sculptor(B, "horse")
+		local tails, horns = {}, {}
+		for _, p in B.parts do
+			if p.role == "tail" then
+				table.insert(tails, p)
+			elseif p.role == "horn" then
+				table.insert(horns, p)
+			end
+		end
+		if N.Torso and N.Neck and #tails == 2 and on("limb", "KneeFR")[1] and on("limb", "KneeBR")[1] then
+			for _, m in named("Chest", "Haunch", "Belly") do
+				m.pri = 3.2
+			end
+			lead(N.Torso, "s_horse_body", named("Chest", "Haunch", "Belly"), 1.3)
+			lead(N.Neck, "s_horse_neck", nil, 1.5)
+			lead(N.Mane, "s_horse_mane")
+			for _, tag in { "F", "B" } do
+				local suffix = if tag == "F" then "_f" else "_h"
+				for _, side in { "R", "L" } do
+					lead(on("limb", "Hip" .. tag .. side)[1], "s_horse_thigh" .. suffix, nil, 1.3)
+					lead(on("limb", "Knee" .. tag .. side)[1], "s_horse_shin" .. suffix, nil, 1.3)
+				end
+			end
+			lead(tails[1], "s_horse_tail1", nil, 1.4)
+			lead(tails[2], "s_horse_tail2", nil, 1.4)
+			if t.unihorn and #horns == 2 then
+				horns[2].pri = math.max(horns[2].pri or 2, 3.2)
+				lead(horns[1], "s_unicorn_horn", { horns[2] })
+			end
 		end
 	end
 end

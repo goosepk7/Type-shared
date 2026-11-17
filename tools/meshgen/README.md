@@ -42,6 +42,12 @@ frame in studs, at the reference lead size, so its normals keep true proportions
 divided by `lead`. `catalogue/refs.py` (`Group.local`, `Group.region_local`) converts a model-space sculpt.
 Hero sets: `s_dragon.py` (full and compact dragon), `s_trex.py`, `s_canine.py` (wolf), `s_fx.py` (shark, tornado,
 asteroid, blaze, accretion disc, `s_noodle_wrap` material wrap).
+Round 4 sets: `s_knight.py` (also the shared helpers `_def`, `_ext`), `s_wizard.py`, `s_golem.py`, `s_robot.py`,
+`s_horse.py` (horse family, unicorn), `s_octo.py` (kraken, octopus; pieces authored in the lead's local frame),
+and the directly built hard-surface sets `s_castle.py` (helpers `cube`, `local`, `_unit`), `s_ship.py` (SDF hull,
+direct stern castle and sail sheets), `s_tank.py` (`prism`, `drum`), `s_wing.py` (feather leaves; ids listed in
+`catalogue.NO_AO` skip the ambient occlusion bake). `export_refs.luau` takes key arguments and writes only those
+reference blueprints (`"sig:kraken"`, `"eagle@1"`); a full re-export would move every existing sculpt.
 
 `upload.py --adopt <MeshAssets.json> ...` takes another repository's record (asset id, size, origin, tris, hash) for
 every piece id both manifests list, marks it `"source": "adopted"` and never uploads that id from the local build

@@ -198,7 +198,7 @@ function Parts.wings(B: any, o: any)
 		local col = if kind == "insect" then "wingGlass" elseif kind == "feather" then "primary" else "membrane"
 		B:mell(span * 0.95, span * 0.07, span * (if kind == "feather" then 0.4 else 0.5), at(x + span * 0.46, y + span * 0.08, z + span * 0.12, 0, rad(-14), rad(10)),
 			{ col = col, mat = if kind == "insect" then "glass" else "skin", tr = if kind == "insect" then 0.4 else nil, bone = "Wing#", pri = pri, role = "wing", trail = true,
-				mesh = if kind == "bat" then "s_wing_bat" else nil, name = if kind == "bat" then "Membrane" else nil })
+				mesh = if kind == "bat" then "s_wing_bat" elseif kind == "feather" and B.ctx.material == nil then "s_wing_full" else nil, name = if kind == "bat" then "Membrane" else nil })
 		return
 	end
 	if kind == "insect" then
@@ -210,16 +210,35 @@ function Parts.wings(B: any, o: any)
 	end
 	if kind == "feather" then
 		-- covert (arm) + 3 primaries fanned, each a flattened ellipsoid at a slightly different pitch
-		B:mell(span * 0.55, span * 0.12, span * 0.38, at(x + span * 0.26, y + span * 0.02, z + span * 0.04, 0, rad(-4), rad(6)),
+		local armR, armL = B:mell(span * 0.55, span * 0.12, span * 0.38, at(x + span * 0.26, y + span * 0.02, z + span * 0.04, 0, rad(-4), rad(6)),
 			{ col = "primary", mat = "fur", bone = "Wing#", pri = pri, role = "wing" })
 		local n = o.feathers or 3
+		local fr, fl = {}, {}
 		for i = 1, n do
 			local t = (i - 1) / math.max(1, n - 1)
 			local ang = rad(-12 + t * 34)
 			local cx = x + span * (0.55 + 0.1 * (1 - t))
 			local cz = z + span * (0.08 + t * 0.22)
-			B:mell(span * 0.62, span * (0.05 + i * 0.006), span * 0.16, at(cx, y + span * (0.01 + i * 0.012), cz, rad(i * 1.5), ang, rad(5 - i * 2)),
+			local r, l = B:mell(span * 0.62, span * (0.05 + i * 0.006), span * 0.16, at(cx, y + span * (0.01 + i * 0.012), cz, rad(i * 1.5), ang, rad(5 - i * 2)),
 				{ col = if i == n then "secondary" else "wingTip", mat = "fur", bone = "Wing#", pri = pri + 0.5 + i * 0.5, role = "wing", trail = i == 1 })
+			table.insert(fr, r)
+			table.insert(fl, l)
+		end
+		-- large sculpted wing (catalogue/s_wing.py): the covert ellipsoid leads the arm with its rows of coverts, the
+		-- first feather leads the whole fan of flight feathers (the other feather parts are inside it)
+		-- (a material build keeps the plain feather pieces: its construction reshapes the wing primitives, and the big
+		-- wing is modelled on their unshaped layout)
+		if n >= 1 and B.ctx.material == nil then
+			for _, side in { { armR, fr }, { armL, fl } } do
+				local arm, f = side[1], side[2]
+				local rest = {}
+				for i = 2, n do
+					f[i].pri = math.max(f[i].pri, 3.2)
+					table.insert(rest, f[i])
+				end
+				B:sculpt(arm, "s_wing_arm", {})
+				B:sculpt(f[1], "s_wing_flight", rest)
+			end
 		end
 		return
 	end

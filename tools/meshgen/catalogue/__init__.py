@@ -42,6 +42,11 @@ class Piece:
     lead: Optional[Tuple[float, float, float]] = None
 
 
+# Pieces whose surfaces lie on top of one another on purpose (layered feathers): baked ambient occlusion would only
+# darken them, so build.py skips the bake for these ids.
+NO_AO = set()
+
+
 def piece(id, region, tris=1200, fit=None, kind=None, note="", res=120, smooth=6, pivot="center", mirror=False, set=None, lead=None):
     """Same signature as the Type-defend copy plus three optional keywords: mirror, set, lead.
     lead (unit pieces): size in studs of the reference lead primitive. The sculpt is then authored in the lead's
@@ -79,7 +84,7 @@ def _flip_x(p):
 
 _CURRENT_SET = ["td"]
 # Modules ported unchanged from Type-defend (set "td", asset ids shared with that game) and the Summon set.
-_MODULES = [("td", ["body", "features", "face"]), ("summon", ["s_organic", "s_heads", "s_hard", "s_hero", "s_dragon", "s_trex", "s_canine", "s_fx"])]
+_MODULES = [("td", ["body", "features", "face"]), ("summon", ["s_organic", "s_heads", "s_hard", "s_hero", "s_dragon", "s_trex", "s_canine", "s_knight", "s_wizard", "s_golem", "s_robot", "s_horse", "s_octo", "s_castle", "s_ship", "s_tank", "s_wing", "s_fx"])]
 
 
 def load_all():

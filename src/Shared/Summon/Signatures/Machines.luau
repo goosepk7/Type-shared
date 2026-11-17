@@ -2,6 +2,7 @@
 -- Hand-built machine and building signatures: pirate ship, tank, castle, rocket, ufo, cannon.
 
 local Kit = require(script.Parent.Parent.SigKit)
+local MeshMap = require(script.Parent.Parent.MeshMap)
 
 local at, rad = Kit.at, Kit.rad
 local sin, cos = math.sin, math.cos
@@ -46,6 +47,37 @@ S["pirate ship"] = {
 			end
 		end
 		B:socket("muzzle", at(mx[1] + w * 0.25, mn[2] + h * 0.62, (mn[3] + mx[3]) / 2), hull.bone)
+		-- square rig: the boat kit's fore-and-aft mainsail becomes a square mainsail on a yard, with a topsail above
+		-- the crow's nest; the jib turns its luff to the mast
+		local sail, jib = Kit.find(B, "Sail"), Kit.find(B, "Jib")
+		if mast and sail then
+			local H = mast.size[1]
+			local base, mz = mast.cf[2] - H / 2, mast.cf[3] - w * 0.09
+			sail.shape, sail.size, sail.cf = "Block", { w * 1.3, H * 0.47, w * 0.04 }, at(0, base + H * 0.36, mz)
+			B:rod({ -w * 0.7, base + H * 0.6, mz + w * 0.03 }, { w * 0.7, base + H * 0.6, mz + w * 0.03 }, w * 0.06, { col = "darkWood", mat = "wood", bone = mast.bone, pri = 1.5, role = "mast", name = "Yard1", noCore = true })
+			if ctx.detail >= 2 then
+				B:block(w * 0.85, H * 0.2, w * 0.04, at(0, base + H * 0.82, mz), { col = sail.col, mat = sail.mat, bone = mast.bone, pri = 1.55, role = "sail", name = "TopSail" })
+				B:rod({ -w * 0.46, base + H * 0.925, mz + w * 0.03 }, { w * 0.46, base + H * 0.925, mz + w * 0.03 }, w * 0.05, { col = "darkWood", mat = "wood", bone = mast.bone, pri = 1.7, role = "mast", name = "Yard2", noCore = true, needs = "TopSail" })
+			end
+		end
+		if jib then
+			jib.cf = at(jib.cf[1], jib.cf[2], jib.cf[3])
+		end
+		-- hero sculpt (catalogue/s_ship.py): a planked hull with stem, keel, wales and bulwarks (it contains the bow
+		-- wedges and the gunwale), the stern castle with rail and lantern, billowing sails
+		local P, lead, named = MeshMap.sculptor(B, "ship")
+		if P.Hull and P.BowR and P.BowL then
+			for _, m in named("BowR", "BowL", "Gunwale") do
+				m.pri = math.max(m.pri or 2, 3.2)
+			end
+			lead(P.Hull, "s_ship_hull", named("BowR", "BowL", "Gunwale"), 1.2)
+			lead(P.SternCastle, "s_ship_stern")
+			if sail and sail.shape == "Block" then
+				lead(sail, "s_ship_sail")
+				lead(P.TopSail, "s_ship_sail")
+			end
+			lead(jib, "s_ship_jib")
+		end
 	end,
 }
 
@@ -110,6 +142,11 @@ S.tank = {
 			end
 		end
 		B:setRig("materialMotion", "clank")
+		-- hero sculpt (catalogue/s_tank.py, hard surface): hull and glacis in one armoured piece
+		local P, lead, named = MeshMap.sculptor(B, "tank")
+		if P.Hull and P.Glacis then
+			lead(P.Hull, "s_tank_hull", named("Glacis"), 1.0)
+		end
 	end,
 }
 
@@ -134,6 +171,28 @@ S.castle = {
 			B:block(d * 0.04, d * 0.34, d * 0.6, at(r.cf[1], top + d * 0.66, r.cf[3] + d * 0.31), { col = "secondary", mat = "cloth", bone = r.bone, pri = 1.7 + n * 0.05, role = "flag", name = "Banner" .. n, needs = "Pole" .. n, trail = n == 1 })
 		end
 		B:setRig("flags", true)
+		-- hero sculpt (catalogue/s_castle.py, hard surface): the keep carries its battlements and great tower, every
+		-- round tower its corbel ring and merlons; spire roofs and gate are sculpted too
+		local P, lead, named = MeshMap.sculptor(B, "castle")
+		if P.Keep and P.Tower1 and P.Tower1Roof then
+			local merlons = {}
+			for _, p in B.parts do
+				if p.role == "detail" and p.shape == "Block" and p.mat == "stone" and p.cf[2] > P.Keep.cf[2] then
+					p.pri = math.max(p.pri or 2, 3.4)
+					table.insert(merlons, p)
+				end
+			end
+			lead(P.Keep, "s_castle_keep", merlons, 1.0)
+			lead(P.Gate, "s_castle_gate")
+			for i = 1, 4 do
+				local name = "Tower" .. i
+				for _, m in named(name .. "Ring") do
+					m.pri = math.max(m.pri or 2, 3.3)
+				end
+				lead(P[name], "s_castle_tower", named(name .. "Ring"), 1.0)
+				lead(P[name .. "Roof"], "s_castle_roof")
+			end
+		end
 	end,
 }
 

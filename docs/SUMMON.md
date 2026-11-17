@@ -182,9 +182,9 @@ loaded and builds the primitive otherwise, so the primitive build is always the 
   are coplanar only where their primitives were; organic and unit sculpts have no planar box faces, they sit
   inside or bulge slightly past the primitive's curved surface, where surfaces intersect at an angle instead
   of lying coincident. A mesh next to a still-primitive neighbour is the same case.
-- **Budgets.** 144 summon pieces, 102.4k triangles in total (the 134 shared "td" pieces: 73.9k, Type to Defend's
+- **Budgets.** 232 summon pieces, 170.9k triangles in total (the 134 shared "td" pieces: 73.9k, Type to Defend's
   phone re-export, adopted with `upload.py --adopt`); worst-case summon: the Huge dragon, 20.0k triangles Solid,
-  23.2k Spectral (the aura shell repeats the body); t rex 14.1k, castle 16.0k, tank 10.4k, shark 8.3k; a generic piece costs 20-1500 triangles, a hero piece up to
+  23.2k Spectral (the aura shell repeats the body); t rex 14.1k, unicorn 12.8k, kraken 12.5k, knight 11.8k, tank 11.5k, golem 11.2k, castle 10.7k, robot 10.3k, octopus 10.2k, wizard 10.1k, shark 8.3k, pirate ship 7.9k, phoenix 7.4k; a generic piece costs 20-1500 triangles, a hero piece up to
   3200 (blocks about 300,
   limbs about 300, heads 600-1300, bodies up to 1500). The part budget already caps a summon's part count, and
   sculpt groups remove parts, so a 50-part hero stays under about 20k triangles.
@@ -218,6 +218,43 @@ loaded and builds the primitive otherwise, so the primitive build is always the 
     (wolf, coyote, jackal, dingo, husky, malamute, warg, fenrir, werewolf, hellhound, dhole) at detail 2+: trunk
     with a breast ruff and hackles, maned neck, two-piece legs with toed paws, a two-piece brush; the head keeps
     `s_head_canine`.
+  - *wolf head* (`s_wolf_head`, round 4): deep muzzle with a nasal bridge, brow ridges, lower jaw and lip line,
+    cheek ruffs, cupped triangular ears (lead Head; members Snout and the ear parts). The coat is laid in blunt
+    locks (`_lock`) instead of spines;
+  - *knight* (`s_knight.py`, 13 ids, 11.8k triangles in the summon): cuirass, fauld, cuisses, greaves with
+    sabatons, rerebraces, gauntlets, pauldrons, open-faced barbute, plume, `s_sword` (blade, guard and grip in
+    one), `s_knight_cross`, heater shield; the cape is `s_cape`, which `Props.cape` now gives every caped summon;
+  - *wizard* (`s_wizard.py`, 10.1k): floor-length robe (it contains pelvis, legs and feet), belted top, bell
+    sleeves and cuffs, one-piece hat, beard, staff with its claw;
+  - *golem* (`s_golem.py`, 11.2k): chiselled rock chunks (`rock`: an ellipsoid cut by facet planes): trunk, head
+    with a brow slab and tusked underbite, arms, block fists, thighs, slab feet, a tree trunk club;
+  - *robot* (`s_robot.py`, 10.3k): panelled chest with a bezel round the chest light, hips, piston limbs with ring
+    flanges, bell boots, clamp hands, bezelled head; lights, vents, antennas and ear discs stay parts;
+  - *horse family* (`s_horse.py`, unicorn 12.8k): assigned at the end of `Plans/Quadruped.luau` to horse, pony,
+    zebra, donkey, mule, unicorn, pegasus and the like at detail 2+: muscled trunk, arched neck, a mane of locks,
+    legs with knee, hock and fetlock, a two-piece flowing tail; head, ears and hooves keep their pieces. The
+    unicorn adds `s_unicorn_horn` (twisted) and `s_unicorn_lock`. A maned horse now gets the crest mane, not the
+    lion's collar;
+  - *kraken / octopus* (`s_octo.py`, 12.5k / 10.2k): wrinkled mantle, head with eye turrets and the crown of arm
+    roots, mantle fins, arms with two rows of suckers. `Plans/Fish` rolls every arm with `Geom.rollY` so its local
+    +Z is the under side (the kraken's rearing arms turn it to the viewer). The root segment is one piece, the rest
+    of the arm another led by the second segment, so a short part budget drops third segments without stumps;
+  - *castle* (`s_castle.py`, built directly with hard edges, 10.7k): keep with plinth, corbelled parapet, merlons,
+    buttresses, gate pilasters and a great tower (it contains the merlon parts); round towers with battered foot,
+    corbel ring and merlons; shingled spire roofs; banded plank gate;
+  - *pirate ship* (`s_ship.py`, 7.9k): carvel hull with raked stem, keel, wales, bulwarks round a sunken deck, gun
+    port frames, bowsprit and rudder; stern castle with rail, windows and lantern; the signature now square-rigs
+    the ship (mainsail and topsail blocks on yards, the jib's luff to the mast) and the sails are bellied sheets;
+  - *tank hull* (`s_tank.py`, direct, 11.5k with the round 3 pieces): hull and glacis in one armoured piece with
+    turret ring, driver's hatch, periscopes, engine grilles, exhausts, tow shackles, rear plate;
+  - *feathered wing* (`s_wing.py`, direct): every bird with flight feathers (eagle, phoenix, griffin...) gets a
+    large wing rising from the shoulder: `s_wing_arm` (arm and three rows of coverts, led by the covert ellipsoid)
+    and `s_wing_flight` (ten fanned primaries, secondaries, tertials, led by the first feather part); low detail
+    uses the one-piece `s_wing_full`. Material builds keep the plain `s_wing_feather` / `s_feather` pieces. Layered
+    feathers skip the ambient occlusion bake (`catalogue.NO_AO`).
+  `MeshMap.sculptor` details: `P[name]` is the FIRST part of a name (names are not unique until the final naming),
+  `named(...)` returns every part carrying one of the names. A lead without a `hull` value is `heroKeep`
+  (recoloured only by materials); give the main mass of a set a hull value or the material has no mass to work on.
   Hero leads are assigned through `MeshMap.sculptor(B, set)` (`lead(part, id, members, hull)`), which sets
   `heroSet`, `heroHull` and `heroKeep` (all cleared in `MeshMap.settle`).
 - **Materials on hero sculpts.** A material never takes a hero sculpt apart (`Materials.apply`): the sculpt is the

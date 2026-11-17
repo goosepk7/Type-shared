@@ -140,6 +140,22 @@ function Geom.between(ax: number, ay: number, az: number, bx: number, by: number
 	return f, len
 end
 
+-- Roll a frame about its own Y axis so that local +Z points as close to (tx, ty, tz) as it can. For a part that is
+-- round about Y (a limb ellipsoid with equal width and depth) the primitive looks the same; a sculpt on it gets a
+-- known "under side". Returns the frame unchanged when the target is parallel to Y.
+function Geom.rollY(f: Frame, tx: number, ty: number, tz: number): Frame
+	local fx, fy, fz = f[5], f[8], f[11]
+	local d = tx * fx + ty * fy + tz * fz
+	local vx, vy, vz = tx - d * fx, ty - d * fy, tz - d * fz
+	local l = sqrt(vx * vx + vy * vy + vz * vz)
+	if l < 1e-4 then
+		return f
+	end
+	vx, vy, vz = vx / l, vy / l, vz / l
+	local ux, uy, uz = cross(fx, fy, fz, vx, vy, vz)
+	return { f[1], f[2], f[3], ux, fx, vx, uy, fy, vy, uz, fz, vz }
+end
+
 -- Uniformly scale a frame's translation (rotation unchanged).
 function Geom.scaled(f: Frame, k: number): Frame
 	local c = table.clone(f)

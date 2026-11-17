@@ -53,7 +53,8 @@ local function octopus(B: any, ctx: any)
 	end
 	B:ell(hr[1] * 2, hr[2] * 2, hr[3] * 2, at(hc[1], hc[2], hc[3], rad(-12), 0, 0), { col = "primary", mat = "skin", pri = 1, role = "body", name = "Mantle" })
 	if squid and detail >= 2 then
-		B:mwedge(0.12, 1.1, 1.0, at(0.85, hc[2] + hr[2] * 0.6, hc[3] + 0.2, 0, 0, rad(-60)), { col = "secondary", mat = "skin", pri = 2.4, role = "fin" })
+		-- mantle fins: broad side to the viewer (thin axis front to back), sweeping out and up
+		B:mwedge(0.12, 1.1, 1.0, Geom.mul(at(0.85, hc[2] + hr[2] * 0.6, hc[3] + 0.2, 0, 0, rad(-60)), at(0, 0, 0, 0, rad(90), 0)), { col = "secondary", mat = "skin", pri = 2.4, role = "fin", name = "MantleFin#" })
 	end
 	-- face on the front-lower mantle
 	local fc = { 0, headY + 0.1, -0.15 }
@@ -76,7 +77,8 @@ local function octopus(B: any, ctx: any)
 			local ex = x + dx * reach * 0.75
 			local ez = z + dz * reach * 0.75
 			local ey = y - reach * (if sgi == 1 then 0.85 else 0.35) + (if sgi == segs then 0.35 else 0)
-			B:limb({ x, y, z }, { ex, ey, ez }, w, { col = if sgi == segs and detail >= 2 then "secondary" else "primary", mat = "skin", bone = bname, pri = 1.2 + sgi * 0.35 + i * 0.01, role = "tentacle", trail = sgi == segs }, 0.3)
+			local arm = B:limb({ x, y, z }, { ex, ey, ez }, w, { col = if sgi == segs and detail >= 2 then "secondary" else "primary", mat = "skin", bone = bname, pri = 1.2 + sgi * 0.35 + i * 0.01, role = "tentacle", trail = sgi == segs }, 0.3)
+			arm.cf = Geom.rollY(arm.cf, 0, -1, 0) -- local +Z is the under side: where the sculpted suckers are
 			B:addRig("tentacles", { bone = bname, index = i, seg = sgi })
 			x, y, z = ex, ey, ez
 			parent = bname

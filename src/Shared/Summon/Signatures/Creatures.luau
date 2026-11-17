@@ -204,6 +204,11 @@ S.unicorn = {
 		end
 		B:ell(s * 0.3, s * 0.36, s * 0.26, at(A.headC[1], A.top[2] - s * 0.08, A.headC[3] - s * 0.18, rad(30), 0, 0), { col = cols[2], mat = "fur", bone = A.headBone, pri = 2.0, role = "mane", name = "Forelock" })
 		B:emit("sparkle", nil, { socket = "core", rate = 12 })
+		-- the pastel locks are sculpted (catalogue/s_horse.py); the body is sculpted by the Quadruped plan
+		local _, lead, named = sculptor(B, "unicorn")
+		for _, m in named("Mane1", "Mane2", "Mane3", "Forelock") do
+			lead(m, "s_unicorn_lock")
+		end
 	end,
 }
 
@@ -255,6 +260,42 @@ S.shark = {
 	end,
 }
 
+-- octopus and kraken hero sculpt (catalogue/s_octo.py): wrinkled mantle, head with the arm crown, arms with two
+-- rows of suckers on the under side (Plans/Fish rolls every arm so its local +Z faces down) and tips that curl
+-- under. The root segment is one piece and the rest of the arm another (led by the second segment, so a short part
+-- budget can drop the third without leaving stumps); two-part arms end in the tip piece.
+local function octoSculpt(B: any, set: string)
+	local P, lead, _, on = sculptor(B, set)
+	if not (P.Mantle and P.Head and on("tentacle", "Arm1_2")[1]) then
+		return
+	end
+	lead(P.Mantle, "s_octo_mantle", nil, 1.1)
+	lead(P.Head, "s_octo_head")
+	lead(P.MantleFinR, "s_octo_fin")
+	lead(P.MantleFinL, "s_octo_fin")
+	local three = on("tentacle", "Arm1_3")[1] ~= nil
+	for _, p in B.parts do
+		if p.role == "tentacle" then
+			local arm, seg = string.match(p.bone, "^Arm(%d+)_(%d)$")
+			if seg == "1" then
+				lead(p, "s_octo_arm1", nil, 1.3)
+			elseif seg == "2" and three then
+				local tips = on("tentacle", "Arm" .. arm .. "_3")
+				for _, m in tips do
+					m.pri = math.max(m.pri or 2, 3.2)
+				end
+				lead(p, "s_octo_arm2", tips, 1.3)
+			elseif seg == "2" then
+				lead(p, "s_octo_arm3", nil, 1.3)
+			elseif p.name == "RearR" or p.name == "RearL" then
+				lead(p, "s_octo_rear", nil, 1.3)
+			elseif p.name == "RearTipR" or p.name == "RearTipL" then
+				lead(p, "s_octo_arm3", nil, 1.3)
+			end
+		end
+	end
+end
+
 S.octopus = {
 	plan = "Fish",
 	build = function(B: any, ctx: any)
@@ -269,6 +310,7 @@ S.octopus = {
 			end
 		end
 		B:emit("bubbles", nil, { socket = "core", rate = 8 })
+		octoSculpt(B, "octopus")
 	end,
 }
 
@@ -283,10 +325,14 @@ S.kraken = {
 			local base = { x, A.headMin[2] + s * 0.1, A.headC[3] - s * 0.1 }
 			local mid = { x + side * s * 0.6, A.top[2] + s * 0.2, A.headC[3] - s * 0.45 }
 			local tip = { x + side * s * 0.25, A.top[2] + s * 0.9, A.headC[3] - s * 0.95 }
-			B:limb(base, mid, s * 0.36, { col = "primary", mat = "skin", bone = A.headBone, pri = 1.3, role = "tentacle", name = "Rear" .. (if side > 0 then "R" else "L"), pair = "kraken" }, 0.2)
-			B:limb(mid, tip, s * 0.22, { col = "primary", mat = "skin", bone = A.headBone, pri = 1.4, role = "tentacle", name = "RearTip" .. (if side > 0 then "R" else "L"), pair = "krakenTip", trail = true }, 0.2)
+			local r1 = B:limb(base, mid, s * 0.36, { col = "primary", mat = "skin", bone = A.headBone, pri = 1.3, role = "tentacle", name = "Rear" .. (if side > 0 then "R" else "L"), pair = "kraken" }, 0.2)
+			local r2 = B:limb(mid, tip, s * 0.22, { col = "primary", mat = "skin", bone = A.headBone, pri = 1.4, role = "tentacle", name = "RearTip" .. (if side > 0 then "R" else "L"), pair = "krakenTip", trail = true }, 0.2)
+			-- suckers of the rearing arms face the viewer
+			r1.cf = Geom.rollY(r1.cf, 0, 0, -1)
+			r2.cf = Geom.rollY(r2.cf, 0, 0, -1)
 		end
 		B:setRig("menace", true)
+		octoSculpt(B, "kraken")
 	end,
 }
 
@@ -365,6 +411,32 @@ S.golem = {
 		end
 		B:emit("dust", nil, { socket = "core", rate = 6 })
 		B:setRig("gait", "stomp")
+		-- hero sculpt (catalogue/s_golem.py): chiselled rock chunks cut along the biped rig; the brute's ears, nose and
+		-- muzzle are absorbed into a stone head with a brow slab and an underbite
+		local P, lead, named, on = sculptor(B, "golem")
+		if P.Torso and P.Head and P.Muzzle and on("limb", "KneeR")[1] and on("limb", "ForeR")[1] then
+			local inHead = named("Muzzle", "Nose")
+			for _, e in on("ear", P.Head.bone) do
+				table.insert(inHead, e)
+			end
+			for _, m in inHead do
+				if m.name ~= "Muzzle" then
+					m.pri = math.max(m.pri or 2, 3.2)
+				end
+			end
+			for _, m in named("Belly") do
+				m.pri = math.max(m.pri or 2, 3.2)
+			end
+			lead(P.Torso, "s_golem_body", named("Belly"), 1.1)
+			lead(P.Head, "s_golem_head", inHead)
+			for _, side in { "R", "L" } do
+				lead(on("limb", "Arm" .. side)[1], "s_golem_arm", nil, 1.15)
+				lead(on("limb", "Fore" .. side)[1], "s_golem_fist", on("hand", "Fore" .. side))
+				lead(on("limb", "Hip" .. side)[1], "s_golem_thigh", nil, 1.15)
+				lead(on("limb", "Knee" .. side)[1], "s_golem_foot", on("foot", "Knee" .. side))
+			end
+			lead(P.Club, "s_golem_club")
+		end
 	end,
 }
 

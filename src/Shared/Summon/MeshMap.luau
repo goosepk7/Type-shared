@@ -27,6 +27,29 @@ MeshMap.Left = {
 	s_dragon_shin_h = true,
 	s_dragon_c_leg_f = true,
 	s_trex_thigh = true,
+	s_robot_thigh = true,
+	s_robot_shin = true,
+	s_robot_arm = true,
+	s_robot_fore = true,
+	s_horse_thigh_f = true,
+	s_horse_shin_f = true,
+	s_horse_thigh_h = true,
+	s_horse_shin_h = true,
+	s_octo_fin = true,
+	s_wing_arm = true,
+	s_wing_full = true,
+	s_wing_flight = true,
+	s_golem_arm = true,
+	s_golem_fist = true,
+	s_golem_thigh = true,
+	s_golem_foot = true,
+	s_wizard_sleeve = true,
+	s_wizard_cuff = true,
+	s_knight_cuisse = true,
+	s_knight_greave = true,
+	s_knight_rerebrace = true,
+	s_knight_gauntlet = true,
+	s_knight_pauldron = true,
 	s_wolf_thigh_f = true,
 	s_wolf_shin_f = true,
 	s_wolf_thigh_h = true,
@@ -412,9 +435,11 @@ end
 -- recolours this piece (heads, claws, horns stay as modelled). Members inside a sculpt are the first to go when the
 -- budget is short (their lead already shows them).
 function MeshMap.sculptor(B: any, set: string)
+	-- names are not unique yet at this stage (the "_2" suffixes come later): byName is the FIRST part of a name,
+	-- named(...) returns every part carrying one of the names
 	local byName: { [string]: any } = {}
 	for _, p in B.parts do
-		if p.name then
+		if p.name and byName[p.name] == nil then
 			byName[p.name] = p
 		end
 	end
@@ -424,7 +449,7 @@ function MeshMap.sculptor(B: any, set: string)
 		end
 		local list = {}
 		for _, m in members or {} do
-			if m ~= nil then
+			if m ~= nil and m ~= part then
 				m.mesh = nil
 				table.insert(list, m)
 			end
@@ -435,10 +460,13 @@ function MeshMap.sculptor(B: any, set: string)
 		part.heroKeep = hull == nil
 	end
 	local function named(...: string): { any }
-		local out = {}
+		local want, out = {}, {}
 		for _, n in { ... } do
-			if byName[n] then
-				table.insert(out, byName[n])
+			want[n] = true
+		end
+		for _, p in B.parts do
+			if p.name and want[p.name] then
+				table.insert(out, p)
 			end
 		end
 		return out

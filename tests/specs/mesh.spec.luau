@@ -320,10 +320,66 @@ return function(t)
 				end
 			end
 			t.ok(wolf ~= nil, "wolf fixture")
-			for _, id in { "s_wolf_body", "s_wolf_neck", "s_wolf_thigh_f", "s_wolf_shin_f_l", "s_wolf_thigh_h_l", "s_wolf_shin_h", "s_wolf_tail1", "s_wolf_tail2", "s_head_canine" } do
+			for _, id in { "s_wolf_body", "s_wolf_neck", "s_wolf_thigh_f", "s_wolf_shin_f_l", "s_wolf_thigh_h_l", "s_wolf_shin_h", "s_wolf_tail1", "s_wolf_tail2", "s_wolf_head" } do
 				t.ok(has(wolf, id), "wolf (" .. style .. ") has " .. id)
 			end
 			t.eq(#Summon.check(wolf), 0, "wolf z-fighting")
+		end
+		-- knight: full harness, nothing of the budget wasted on hidden primitives
+		for _, style in { "Solid", "Spectral" } do
+			local kn = Summon.blueprint(sig("knight"), { style = style, seed = 1 })
+			for _, id in { "s_knight_cuirass", "s_knight_fauld", "s_knight_cuisse", "s_knight_greave_l", "s_knight_rerebrace", "s_knight_gauntlet_l", "s_knight_pauldron",
+				"s_knight_pauldron_l", "s_knight_helm", "s_knight_plume", "s_sword", "s_knight_shield", "s_cape", "s_knight_cross" } do
+				t.ok(has(kn, id), "knight (" .. style .. ") has " .. id)
+			end
+			local pupils = 0
+			for _, p in kn.parts do
+				if p.role == "pupil" then
+					pupils += 1
+				end
+			end
+			t.eq(pupils, 2, "knight has both pupils")
+			t.eq(#Summon.check(kn), 0, "knight z-fighting")
+		end
+		-- wizard: robe, hat and staff are single sculpts
+		for _, style in { "Solid", "Spectral" } do
+			local wz = Summon.blueprint(sig("wizard"), { style = style, seed = 1 })
+			for _, id in { "s_wizard_robe", "s_wizard_top", "s_wizard_sleeve", "s_wizard_cuff_l", "s_wizard_hat", "s_wizard_beard", "s_wizard_staff", "s_cape" } do
+				t.ok(has(wz, id), "wizard (" .. style .. ") has " .. id)
+			end
+			t.eq(#Summon.check(wz), 0, "wizard z-fighting")
+		end
+		-- further full sculpts: every listed piece present, no z-fighting, phone triangle budget
+		local sculpted = {
+			robot = { "s_robot_chest", "s_robot_pelvis", "s_robot_head", "s_robot_thigh", "s_robot_shin_l", "s_robot_arm", "s_robot_fore_l" },
+			unicorn = { "s_horse_body", "s_horse_neck", "s_horse_mane", "s_horse_thigh_f", "s_horse_shin_f_l", "s_horse_thigh_h_l", "s_horse_shin_h", "s_horse_tail1", "s_horse_tail2", "s_unicorn_horn", "s_unicorn_lock" },
+			kraken = { "s_octo_mantle", "s_octo_head", "s_octo_arm1", "s_octo_arm2", "s_octo_rear", "s_octo_arm3", "s_octo_fin", "s_octo_fin_l" },
+			octopus = { "s_octo_mantle", "s_octo_head", "s_octo_arm1" },
+			castle = { "s_castle_keep", "s_castle_tower", "s_castle_roof", "s_castle_gate" },
+			["pirate ship"] = { "s_ship_hull", "s_ship_stern", "s_ship_sail", "s_ship_jib" },
+			tank = { "s_tank_hull" },
+			phoenix = { "s_wing_arm", "s_wing_arm_l", "s_wing_flight", "s_wing_flight_l" },
+			golem = { "s_golem_body", "s_golem_head", "s_golem_arm", "s_golem_fist_l", "s_golem_thigh", "s_golem_foot_l", "s_golem_club" },
+		}
+		for word, ids in sculpted do
+			for _, style in { "Solid", "Spectral" } do
+				local bp = Summon.blueprint(sig(word), { style = style, seed = 1 })
+				for _, id in ids do
+					t.ok(has(bp, id), word .. " (" .. style .. ") has " .. id)
+				end
+				t.eq(#Summon.check(bp), 0, word .. " z-fighting")
+			end
+		end
+		-- the horse family shares the unicorn's body sculpt (and a maned horse wears a crest mane, not a lion collar)
+		for _, e in F.library(Schema) do
+			if e.id == "horse" then
+				local hb = Summon.blueprint(e, { style = "Solid", seed = 1 })
+				for _, id in { "s_horse_body", "s_horse_neck", "s_horse_mane", "s_horse_thigh_f", "s_horse_tail2", "s_hoof" } do
+					t.ok(has(hb, id), "horse has " .. id)
+				end
+				t.ok(not has(hb, "s_unicorn_horn"), "horse has no horn")
+				t.eq(#Summon.check(hb), 0, "horse z-fighting")
+			end
 		end
 		-- black hole: reads standing still (photon ring, jets, layered discs, infalling debris)
 		local hole

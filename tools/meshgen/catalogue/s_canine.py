@@ -21,9 +21,15 @@ def _def(pid, G, tris, res, note, extra=(), mirror=False, pad=0.22):
     return deco
 
 
-def _tuft(s, base, tip, r, k=0.13):
+def _lock(base, tip, r, t=0.11):
+    """A soft lock of fur: 70% of the drawn length, blunt tip, so the coat reads as fur clumps and not as spines."""
+    a, b = np.asarray(base, float), np.asarray(tip, float)
+    return round_cone(tuple(a), tuple(a + (b - a) * 0.7), r, min(t, r * 0.6))
+
+
+def _tuft(s, base, tip, r, k=0.16):
     """A lock of fur: fat at the root, pointed at the tip."""
-    return s.su(round_cone(base, tip, r, 0.085), k)
+    return s.su(_lock(base, tip, r), k)
 
 
 GB = Group(W, "Torso", ["Chest", "Haunch", "Belly"])
@@ -41,14 +47,14 @@ def body():
     s = s.su(round_cone((0, 2.85, 1.7), (0, 2.9, 2.1), 0.42, 0.32), 0.25)            # tail root
     # breast ruff: overlapping locks hanging from the front of the chest
     for (x, y, z, dx, r) in [(0, 2.35, -2.2, 0, 0.34), (0.38, 2.5, -2.05, 0.1, 0.28), (0.2, 2.05, -2.0, 0.04, 0.26), (0.55, 2.2, -1.75, 0.12, 0.24)]:
-        t = round_cone((x, y, z), (x + dx, y - 0.55, z - 0.12), r, 0.09)
-        s = s.su(t.mirror_x() if x else t, 0.13)
+        t = _lock((x, y, z), (x + dx, y - 0.55, z - 0.12), r)
+        s = s.su(t.mirror_x() if x else t, 0.16)
     for i in range(7):  # hackles
         z = -1.6 + i * 0.52
         y = 3.5 - 0.06 * i - 0.02 * (i - 3) ** 2 + (0.1 if i < 2 else 0)
         s = _tuft(s, (0, y - 0.18, z - 0.1), (0, y + 0.16, z + 0.34), 0.2)
     for sx, y, z in [(0.62, 2.1, 0.9), (0.66, 2.0, -0.6)]:  # flank fur
-        s = s.su(round_cone((sx, y + 0.3, z - 0.2), (sx + 0.03, y - 0.1, z + 0.25), 0.2, 0.085).mirror_x(), 0.13)
+        s = s.su(_lock((sx, y + 0.3, z - 0.2), (sx + 0.03, y - 0.1, z + 0.25), 0.2).mirror_x(), 0.16)
     return s
 
 
@@ -68,7 +74,7 @@ def neck():
         x, y0 = 0.5 * np.sin(a), -0.5 * np.cos(a)
         base = (x, 3.55 + y0 * 0.7, -2.2 + 0.3 * np.cos(a))
         tip = (x * 1.5, base[1] - 0.5, base[2] + 0.4)
-        s = s.su(round_cone(base, tip, 0.27, 0.085).mirror_x(), 0.13)
+        s = s.su(_lock(base, tip, 0.27).mirror_x(), 0.16)
     s = _tuft(s, (0, 3.1, -2.3), (0, 2.55, -2.35), 0.3)  # throat lock
     return s
 
@@ -130,8 +136,8 @@ def tail1():
     s = round_cone(a, b, 0.3, 0.46).su(sphere(0.32, a), 0.05)
     for sx, u, r in [(0.22, 0.45, 0.2), (0.0, 0.7, 0.24)]:
         y, z = a[1] + (b[1] - a[1]) * u, a[2] + (b[2] - a[2]) * u
-        t = round_cone((sx, y + 0.22, z - 0.1), (sx * 1.3, y + 0.34, z + 0.45), r, 0.085)
-        s = s.su(t.mirror_x() if sx else t, 0.13)
+        t = _lock((sx, y + 0.22, z - 0.1), (sx * 1.3, y + 0.34, z + 0.45), r)
+        s = s.su(t.mirror_x() if sx else t, 0.16)
     return s
 
 
@@ -142,8 +148,37 @@ def tail2():
     s = round_cone(a, b, 0.46, 0.5).su(round_cone(b, c, 0.5, 0.1), 0.2)
     for i, (u, sx) in enumerate([(0.2, 0.3), (0.5, 0.0), (0.75, 0.28)]):
         y, z = a[1] + (c[1] - a[1]) * u, a[2] + (c[2] - a[2]) * u
-        t = round_cone((sx, y - 0.3, z - 0.1), (sx * 1.2, y - 0.62, z + 0.3), 0.2, 0.085)  # under locks
-        s = s.su(t.mirror_x() if sx else t, 0.13)
-        t2 = round_cone((sx * 0.6, y + 0.3, z - 0.1), (sx * 0.7, y + 0.42, z + 0.4), 0.2, 0.085)
-        s = s.su(t2.mirror_x() if sx else t2, 0.13)
+        t = _lock((sx, y - 0.3, z - 0.1), (sx * 1.2, y - 0.62, z + 0.3), 0.2)  # under locks
+        s = s.su(t.mirror_x() if sx else t, 0.16)
+        t2 = _lock((sx * 0.6, y + 0.3, z - 0.1), (sx * 0.7, y + 0.42, z + 0.4), 0.2)
+        s = s.su(t2.mirror_x() if sx else t2, 0.16)
     return s
+
+
+# ------------------------------------------------------------------------------------------------ head
+GH = Group(W, "Head", ["Snout", "ear27", "ear28", "ear29", "ear30"])
+
+
+@_def("s_wolf_head", GH, 2400, 180, "Wolf head (lead Head; members Snout, ears): long deep muzzle with a stop, brow ridges, lower jaw with a lip line, "
+      "cheek ruffs, tall cupped ears.", extra=[(1.5, 4.0, -2.8), (0, 6.15, -2.8), (0, 3.2, -3.8), (0, 4.0, -4.85), (0, 4.2, -1.75)])
+def head():
+    s = GH.blend(0.3, ["Head", "Snout"])
+    s = s.su(ellipsoid(0.44, 0.36, 0.8, (0, 3.92, -3.9)), 0.2)                           # deep muzzle
+    s = s.su(ellipsoid(0.26, 0.22, 0.62, (0, 4.22, -3.72)), 0.16)                        # nasal bridge up to the stop
+    s = s.su(capsule((0.16, 4.82, -3.52), (0.64, 4.72, -3.3), 0.13).mirror_x(), 0.12)    # brow ridges
+    s = s.su(ellipsoid(0.34, 0.15, 0.62, (0, 3.56, -3.82)), 0.07)                        # lower jaw
+    s = s.ss(capsule((0.14, 3.66, -4.6), (0.46, 3.72, -3.5), 0.035).mirror_x(), 0.04)    # lip line
+    s = s.su(ellipsoid(0.3, 0.3, 0.32, (0.56, 3.85, -3.25)).mirror_x(), 0.16)            # cheek / jaw muscle
+    for (y, z, dx, dy, dz, r) in [(4.05, -2.75, 0.5, -0.38, 0.3, 0.34), (3.75, -2.95, 0.36, -0.5, 0.28, 0.3), (4.4, -2.5, 0.48, -0.12, 0.42, 0.3)]:
+        s = s.su(_lock((0.78, y, z), (0.78 + dx, y + dy, z + dz), r).mirror_x(), 0.14)   # cheek ruff
+    s = s.su(_lock((0, 4.75, -2.15), (0, 4.6, -1.6), 0.4), 0.16)                         # scruff
+    # ears: tall triangles, thin front to back, cupped toward the front
+    base, tip = np.array((0.62, 4.8, -2.72)), np.array((0.98, 6.0, -2.86))
+    ear = round_cone(tuple(base), tuple(tip), 0.46, 0.05)
+    ax = (tip - base) / np.linalg.norm(tip - base)
+    mid = (base + tip) / 2
+    slab = SDF(lambda p: np.abs(0.82 * (p - mid)[:, 2] + 0.1 * (p - mid)[:, 1] + 0.56 * np.abs(p[:, 0]) - 0.56 * mid[0]) - 0.17)  # turned outward
+    ear = ear.si(slab, 0.06)
+    cup = round_cone(tuple(base + ax * 0.25 + np.array((-0.12, 0, -0.22))), tuple(tip - ax * 0.2 + np.array((-0.1, 0, -0.18))), 0.3, 0.03)
+    ear = ear.ss(cup, 0.05)
+    return s.su(ear.mirror_x(), 0.1)

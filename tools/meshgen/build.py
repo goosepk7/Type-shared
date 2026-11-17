@@ -24,7 +24,9 @@ def make(pid, ao=True):
     t = time.time()
     m = mesher.build(p.fn(), p.region, tris=p.tris, res=p.res, smooth=p.smooth, fit=p.fit)
     origin = [float(v) for v in m.origin]
-    aoc = mesher.bake_ao(m) if ao else None
+    import catalogue
+
+    aoc = mesher.bake_ao(m) if ao and pid not in catalogue.NO_AO else None
     mesher.export_glb(m, os.path.join(OUT, pid + ".glb"), pid, aoc)
     size = (m.bounds[1] - m.bounds[0]).tolist()
     if p.lead:

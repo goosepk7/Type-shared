@@ -47,6 +47,9 @@ end
 for _, plan in Schema.Enums.BodyPlan do
 	for v, var in F.Variants[plan] or {} do
 		add(var[1], F.synthetic(Schema, plan, "Large", v))
+		if var[1] == "eagle" then
+			add("eagle@1", F.synthetic(Schema, plan, "Large", v), 1) -- the one-part wing of low detail (s_wing_full)
+		end
 	end
 	if F.Special and F.Special[plan] then
 		add("special:" .. plan, F.special(Schema, plan, "Large"))
