@@ -353,7 +353,7 @@ return {
 	{"steampunk carriage","DKCKHL","KDkg",5,5,6,"B8860B","3E2723","brass carriage with pipes and gears","clank","Puffs, clanks, whirrs. Wins.","mechanical,vehicle,land,steampunk"},
 	{"steampunk inventor","LKCJNA","Eh",4,4,4,"B45309","FACC15","top hat with goggles, brass gadgets","tick","Everything runs on steam. Even this.","science,steampunk"},
 	{"steamroller","DEDKHF","kgO",6,2,10,"F2C200","333333","giant front drum roller, small cab","rumble","Turns enemies into very flat enemies.","heavy,silly"},
-	{"steamroller drop","DEENHI","EkO",9,3,5,"F2C200","333333","a steamroller drops on the spot from high above","rumble","Delivered flat. You're welcome.","anime,heavy,silly"},
+	{"steamroller drop","CEENHI","EkO",9,3,5,"F2C200","333333","a steamroller drops on the spot from high above","rumble","Delivered flat. You're welcome.","anime,heavy,silly"},
 	{"steamship","DBEKHC","DkgB",5,5,8,"212121","E53935","big hull with tall smoking funnels","horn","Full steam ahead!","vehicle,aquatic,ancient"},
 	{"steel","FKCCnI","Ga",4,2,9,"7D8790","CBD3DA","riveted steel panel wall","clank","Tough as nails. Made of nails.","heavy"},
 	{"steel bridge","EKECII","GS",3,1,10,"607D8B","C62828","criss-cross steel girders over water","thud","Rivets. So many rivets.","structure"},

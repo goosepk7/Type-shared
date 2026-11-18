@@ -100,7 +100,7 @@ return {
 	{"airedale","AMCJAA","DQf",4,7,4,"B8763A","1E1E1E","big wiry terrier, black saddle","bark","King of terriers.","mammal,pet"},
 	{"airplane","DFEKHB","DAkg",6,8,7,"F5F5F5","1565C0","long tube body, wide swept wings, tail fin","jet","Please fasten your seatbelts. Impact soon.","vehicle,air"},
 	{"airport","EMFCII","GSh",3,1,8,"B0BEC5","1E88E5","runways, control tower, terminal","thud","Now boarding: chaos.","structure,building"},
-	{"airstrike","DAFNgI","EAP",9,6,3,"5E6B78","FF8A1F","a jet screams over and bombs a long line","roar","Incoming! In a very straight line.","modern,explosive,air"},
+	{"airstrike","CAFNgI","EAP",9,6,3,"5E6B78","FF8A1F","a jet screams over and bombs a long line","roar","Incoming! In a very straight line.","modern,explosive,air"},
 	{"akaname","AJBJNA","dM",2,5,2,"DC2626","FDE68A","red imp with super long tongue","slurp","Licks dirty bathtubs. Clean yours.","yokai,silly"},
 	{"akara","IMAELB","eVP",2,7,1,"D9A04A","C8762B","fried bean cakes","pitter","Bean fritters, crispy and light.","edible"},
 	{"akita","AMCJAA","DQf",5,7,4,"C88A52","F2EAE0","big spitz dog, thick curled tail","bark","Loyal to the end. Stubborn also.","mammal,pet"},
