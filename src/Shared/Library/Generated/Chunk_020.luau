@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
+	{"popcorn machine","OACM1I","KdeP",2,5,4,"C0392B","D4A72C","glass cart full of popping corn","hum","Pop pop pop! Snack attack.","silly,party"},
+	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 	{"poplar","NGDCMI","GjWkS",3,1,6,"BDBDBD","8BC34A","tall narrow column of fluttery leaves","rustle","Fluffy seeds everywhere. Achoo.","plant,tree"},
 	{"poppy","NGBNMI","SNO",2,1,1,"E53935","212121","papery red petals, dark centre","rustle","Makes everyone very, very sleepy.","plant,flower"},
 	{"poppy field","NGENMI","SNO",3,1,3,"E53935","7CB342","red poppies as far as you see","rustle","Sleepy... so sleepy...","plant,crop"},
@@ -273,7 +276,6 @@ return {
 	{"race car driver","LACJNL","DE",4,10,4,"DC2626","F8FAFC","racing suit, helmet, checkered flag","vroom","Zero to sixty in a typo.","sport,vehicle"},
 	{"race track","MMENII","DS",3,1,6,"424242","E53935","looping asphalt with curbs and flags","engine","Everyone goes faster here.","place,sport"},
 	{"raclette","IMBLGI","cN",2,3,3,"F2C870","D9A04A","melted cheese scraped from wheel","gloop","Cheese that melts onto your plate.","edible,sticky"},
-	{"radar","OMCM1I","ce",1,2,5,"F2F2EE","8E9196","big rotating dish","hum","Ping. Ping. Found you.","defense"},
 	{"radar dome","EDCMII","GSeL",3,1,6,"F5F5F5","B0BEC5","white golf-ball dome or big bowl dish","ping","Ping. Ping. Gotcha.","structure,building"},
 	{"radiance","FHDNOI","KFS",6,5,3,"FFE58A","FFFFFF","blinding golden aura dome","hum","Glowing with confidence. And photons.","holy"},
 	{"radiant burst","FHDGKI","KEF",7,8,1,"FFF176","FFFFFF","blinding golden explosion of light","boom","Shine so hard it hurts.","holy,explosive"},
@@ -387,6 +389,7 @@ return {
 	{"receipt","BMBLCD","WHN",2,5,2,"FFFFFF","6B7280","absurdly long curling paper strip that keeps printing","whirr","Three miles long. For one pack of gum.","silly,meme"},
 	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
 	{"recipe","BLBO2J","WFh",3,3,2,"F5E6CC","DC2626","splattered recipe card with floating measuring spoons","rustle","Step one: preheat the battlefield.","kitchen,magic"},
+	{"recon drone","OFBOhE","AQe",3,7,5,"3A4148","FF3A3A","a quadcopter circles overhead pinging enemies red","buzz","UAV online. Everyone you can't see just got very visible.","gaming,robot,mechanical"},
 	{"recorder","BMAFJI","jd",1,6,1,"F2F2EE","F2F2EE","plastic school flute","woodwind","Every school's secret weapon.","music,school,silly"},
 	{"recover","KGBOKJ","F",1,4,3,"81C784","FFFFFF","gentle green breathing glow","chime","Shake it off. Back in it.","support"},
 	{"rectangle","KECCnI","GIa",3,2,7,"22C55E","FFFFFF","long green slab sliding sideways like a door","thunk","A square that got stretched. Still bitter.","school,shape"},
@@ -400,7 +403,4 @@ return {
 	{"red cabbage","IGBAKF","Fke",3,5,3,"6B2D6B","C8A8D8","purple layered round head","thud","A purple bowling ball.","edible,vegetable,healthy"},
 	{"red crab","ABBJRA","GfTPh",2,4,5,"E8301E","F2A07A","bright red land crab","clack","Marches in millions.","crustacean,aquatic,armored"},
 	{"red deer","AMCJAA","Dk",4,8,4,"A0582E","E2C49A","reddish deer, many-pointed antlers","bleat","Roars during autumn. Very dramatic.","mammal,wild"},
-	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
-	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
-	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 }

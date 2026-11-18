@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
+	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
+	{"pencil","BMAAJK","Te",1,8,1,"F1C40F","F06292","yellow hexagon pencil with eraser","tap","Sharpened for battle.","school"},
 	{"pencil sharpener","BMAL2K","V",1,1,3,"C9CED4","C0392B","small box with blade hole","tap","Grrrind.","office"},
 	{"pendulum hammer","BKDLtI","kO",6,3,7,"5B6168","8B5A2B","huge hammer swinging from above","snap","Tick. Tock. BONK.","trap,defense"},
 	{"penguin","ACBJDA","UDB",2,5,3,"1E1E24","F7F7F2","tuxedo body, flippers, waddle","squawk","Wears a tux to every occasion.","bird,arctic,cute"},
@@ -243,11 +246,11 @@ return {
 	{"plasma bolt","FDCAKB","KeL",6,9,1,"D500F9","18FFFF","glowing neon plasma dart","zing","Pew, but science.","electric"},
 	{"plasma cannon","CDDMxI","KEe",8,4,6,"2C3539","7DF9FF","large barrel with glowing core","zap","Melts problems at range.","scifi,ranged"},
 	{"plasma globe","ODBG1I","cL",2,3,3,"A66BDB","24262A","glass ball with purple tendrils","hum","Touch it. Feel science.","science,electric"},
-	{"plasma grenade","CDBGKF","KEQe",6,6,1,"7DF9FF","2F6FD1","glowing sticky orb grenade","boom","Glowy. Sticky. Unfortunate.","explosive,scifi,glowing"},
 	{"plasma mortar","CADMxI","KEe",7,3,6,"2C3539","7DF9FF","stubby launcher lobbing plasma","zap","Lob of glowing doom.","scifi,ranged"},
 	{"plasma orb","FDCGKE","KRL",6,5,2,"D500F9","84FFFF","swirling neon sphere with tendrils","buzz","The cool lamp from science class, angry.","electric"},
 	{"plasma rifle","CDCAwI","KeL",7,7,4,"2C3539","7DF9FF","rifle with glowing coolant tubes","zap","Hot plasma, hotter takes.","scifi,ranged"},
 	{"plasma shield","OACIyI","GK",5,4,7,"7DF9FF","2F6FD1","crackling plasma disc","hum","Blocks bolts. Burns fingers.","scifi"},
+	{"plasma sticky","CDBGKF","EQe",6,6,1,"5FE8FF","1E58D6","glowing spiked plasma orb that sticks and beeps","boom","Glowy. Sticky. Deeply unfortunate.","gaming,explosive,scifi,glowing"},
 	{"plasma storm","FDEEOJ","KLP",8,6,2,"AA00FF","00E5FF","purple sky raining cyan plasma blobs","crackle","Space weather, up close.","electric,space,storm"},
 	{"plasma sword","CACHrI","KfT",7,8,3,"A66BDB","F2F2EE","hilt projecting violet energy","zap","The other glowing sword.","scifi,sharp,glowing"},
 	{"plasma torch","OABBwI","Kf",5,6,3,"7DF9FF","C9CED4","handheld blue flame lance","hum","Cuts through steel like butter.","scifi"},
@@ -400,7 +403,4 @@ return {
 	{"popcorn bomb","BABGKK","dEP",3,6,1,"F1C40F","F2F2EE","bag that bursts into popcorn","thud","POP POP POP POP POP.","silly,explosive"},
 	{"popcorn cart","DMBKHL","dceg",2,3,3,"E53935","FFEB3B","striped cart with popping kettle","engine","Pop pop pop! Kernels everywhere.","mechanical,vehicle,land,silly"},
 	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
-	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
-	{"popcorn machine","OACM1I","KdeP",2,5,4,"C0392B","D4A72C","glass cart full of popping corn","hum","Pop pop pop! Snack attack.","silly,party"},
-	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 }

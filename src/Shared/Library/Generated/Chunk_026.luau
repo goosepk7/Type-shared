@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"teacup ride","DLBKHK","jkg",2,4,3,"F48FB1","FFFFFF","giant spinning teacup with seats","whoosh","Round and round until everyone is dizzy.","silly,cute"},
 	{"teak","NGECMI","GWkS",4,1,9,"5D4037","558B2F","tall straight dark hardwood tree","rustle","So hard you could build a ship.","plant,tree,heavy"},
 	{"teal","ABBJDC","AfB",2,5,2,"8A4A2A","3AA06A","small duck, green wing patch","quack","Small duck with a teal wing.","bird,aquatic"},
 	{"team","LMDJLA","DQFh",6,6,6,"DC2626","FFFFFF","huddle of players in red jerseys with a mascot","crowd","There is no I in team. There is a me, though.","sport,gaming"},
@@ -402,5 +403,4 @@ return {
 	{"treasure hunter captain","LMCJNA","cb",4,6,4,"A16207","FACC15","map, shovel, eyepatch","ding","X marks the spot. You're the spot.","explorer,pirate"},
 	{"treasure island","MEENII","Sch",4,1,8,"E6C27A","43A047","island with an X marked in sand","chime","X marks the spot. Dig!","place,mythical,pirate"},
 	{"treasure pile","BMDL2I","dc",3,1,6,"D4A72C","F1C40F","mountain of coins and goblets","chime","Dragons sleep on these. Enemies trip on these.","treasure,shiny"},
-	{"treasure room","MKDNII","dSc",3,1,8,"FFD54F","8D6E63","piles of gold coins and gems","rumble","Look at all this loot! Nobody touch it.","place,terrain"},
 }

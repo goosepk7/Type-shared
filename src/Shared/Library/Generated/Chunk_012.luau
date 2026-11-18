@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"guard rail","EKCCII","GSa",2,1,6,"B0BEC5","78909C","wavy steel strip on short posts","thud","Keeps everyone on the right track.","structure,defense"},
+	{"guardhouse","EECMII","GSeh",3,1,8,"9E9E9E","B71C1C","small stone building by the gate","thud","Guards on duty. Always.","structure,ancient,defense"},
+	{"guardian","LHDJYA","GQka",6,3,9,"D4AF37","3B6FB6","towering armoured figure with a glowing tower shield","clang","You shall not get past. Or even near.","defense,warrior"},
 	{"guardian angel","AHCJNB","GAQF",5,7,5,"F8FAFC","FACC15","soft glowing angel hovering behind you","chime","Always one step behind. Catching you.","holy,guardian"},
 	{"guava","IGBAKF","Fke",3,6,2,"9CC34A","F3818A","round green fruit, pink inside","splat","Smells like a vacation.","edible,fruit,sweet,tropical"},
 	{"guess","KLBG3K","jEY",3,6,1,"F472B6","22D3EE","three spinning mystery boxes with question marks","ding","Eeny, meeny, miny, YOU.","silly,luck"},
@@ -280,7 +283,6 @@ return {
 	{"high elf","ALCJNA","jFTe",6,7,4,"E5E7EB","FACC15","tall elegant elf, silver armor, staff","chime","Thinks very highly of high elves.","mythical,magic,royal"},
 	{"high five","KMBOKI","DF",1,8,2,"FFE082","FFFFFF","two glowing palms slapping with sparkles","clap","Up top!","cute"},
 	{"high heels","BMBONI","T",1,6,2,"C0392B","24262A","pointy tall-heeled shoes","swish","Fashion with a point.","clothing"},
-	{"high noon","GHDNOI","KO",6,7,2,"FFC107","FFF8E1","blazing overhead sun, short shadows","ding","It's high noon. Somebody's in trouble.","fire"},
 	{"highland cow","AMDJAA","DkO",6,4,7,"B05E2A","E2A060","shaggy ginger fringe over eyes, horns","moo","Excellent hair day, every day.","mammal,heavy,farm,cute"},
 	{"highlander","LECJNA","Dkf",6,6,6,"15803D","DC2626","kilt, claymore, wild hair","drone","Charges in with bagpipe backup.","warrior"},
 	{"highlands","MFFNII","SN",3,1,8,"7CB342","AB47BC","rolling hills of heather and mist","rumble","Misty, windy, and wild.","place,terrain"},
@@ -401,6 +403,4 @@ return {
 	{"hopscotch","KMBOKG","UD",1,6,2,"FF80AB","FFFFFF","chalk squares glowing under hops","boing","One, two, three, dodge!","silly"},
 	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},
 	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
-	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
-	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 }

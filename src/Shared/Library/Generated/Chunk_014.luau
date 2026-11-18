@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jicama","IEBAKK","keO",3,7,6,"A87A4A","F2F0E8","round brown root, white inside","bonk","A crunchy potato that tastes like apple.","edible,vegetable"},
+	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 	{"jigsaw tool","JKBHJK","fV",3,6,4,"2F6FD1","24262A","saw with up-down blade","whirr","Curves! Corners! Chaos!","tool"},
 	{"jinx","KLBAKB","jd",3,8,1,"AB47BC","FFEB3B","wobbly yellow-purple spark","cackle","Trips over nothing. Every time.","silly"},
 	{"jitte","CKBHtK","GfO",2,7,5,"8A929B","9E1B32","blunt rod with side hook","shing","Catches swords. Bonks owners.","ninja"},
@@ -264,7 +266,7 @@ return {
 	{"ladybug","AMAJFA","GAFf",1,3,4,"D8201E","1E1E1E","red dome shell, black spots","click","Spots count its age. (Not really.)","insect,armored,cute,garden"},
 	{"ladyfinger","IMBHJI","kf",2,5,4,"F2D88A","F7F2EC","long sugar-dusted sponge stick","bonk","A biscuit finger pointing at you.","edible,silly"},
 	{"lag monster","LLCJNA","jNY",3,2,4,"22C55E","F472B6","glitchy figure teleporting in jitters","zap","Rubber-bands into your face.","meme,gaming,silly"},
-	{"lag spike","KLCNOI","NO",4,1,3,"90A4AE","00E5FF","stuttering pixelated area","bzzt","Your ping is now 9000.","meme,silly"},
+	{"lag spike","KLCNOI","jNY",5,3,3,"3AF2FF","FF3AD0","a glitchy field of pixel static and colour split","bzzt","Your ping is now 9000. Enjoy last second, again.","gaming,meme,glitch"},
 	{"lahmacun","IMBAKK","Uke",3,7,2,"D9A04A","C8302B","thin flatbread with minced meat","whoosh","A crispy thin pizza from Turkey.","edible"},
 	{"lake","MBENII","SN",2,1,6,"1E88E5","7CB342","calm blue water with reeds","splash","Calm on top. Hmm, what is below?","place,terrain"},
 	{"lake effect snow","GCDEOJ","JSN",6,3,4,"ECEFF1","90CAF9","narrow band dumping heaps of snow","hush","Feet of snow. In one stripe.","frozen,storm"},
@@ -401,6 +403,4 @@ return {
 	{"learn","KHBOKJ","GWF",3,3,3,"3B82F6","FDE047","stack of books with a level-up arrow and a tired candle","ding","Knowledge is power. Naps are also power.","school,support"},
 	{"leash","BMBLKI","HN",1,5,2,"C0392B","C9CED4","strap with clip","squeak","Heel!","pet"},
 	{"leather","BMCIyE","Gka",3,4,8,"5B3A1E","2B1B12","creaky brown biker jacket with a popped collar and studs","creak","Creaks when it moves. Cooler than you.","clothing,cool,armor"},
-	{"leather armor","BMCONI","G",1,7,4,"6B4226","7A4E2D","stitched leather vest and pads","clank","Light, comfy, slightly squeaky.","armor,defense"},
-	{"leather jacket","BMCONI","Gd",1,5,4,"24262A","C9CED4","black leather biker jacket","swish","Instantly 40% cooler.","clothing"},
 }

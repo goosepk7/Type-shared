@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"yi qi","AMBJBB","DAQfT",2,9,3,"3A3A3A","8A6A4A","bat-winged small dino","screech","A dinosaur with bat wings.","dinosaur,extinct,reptile,predator"},
 	{"yo-yo","BMAAKK","UQfe",2,8,3,"C0392B","C9CED4","two discs on a string","squeak","Walks the dog. Bites the enemy.","toy"},
 	{"yo-yo master","LMCJNI","Ue",3,7,3,"DC2626","F8FAFC","spinning glowing yo-yo","whir","Walk the dog. Then the enemy.","silly"},
 	{"yodel","KFBFOB","jk",3,7,1,"81D4FA","FFFFFF","echoing mountain sound waves","yodel","Yodel-ay-hee-hoo! Avalanche risk.","music,loud,silly"},

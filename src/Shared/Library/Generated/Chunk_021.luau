@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
+	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
+	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 	{"red giant","MAFGKJ","KWkS",9,1,9,"E64A19","FFAB91","enormous swollen orange-red sphere","rumble","Big, red, and getting bigger.","space"},
 	{"red hot poker","NACNMI","KdFS",3,1,2,"FF5722","FFEB3B","flame-coloured torch spikes","rustle","Looks hot. Is just a flower.","plant,flower"},
 	{"red kangaroo","AMDJAG","UkfO",6,6,2,"B85A30","F2E2D0","huge red kangaroo boxing","chirp","Biggest boxer in the outback.","mammal,marsupial"},
@@ -222,7 +225,7 @@ return {
 	{"rocket engineer","LACJNA","Eeh",5,4,4,"F8FAFC","DC2626","lab coat, hard hat, rocket model","boom","It IS rocket science.","science,explosive"},
 	{"rocket factory","EAENII","ESh",6,1,8,"ECEFF1","E53935","hangar with half-built rockets","clank","Builds rockets. Launches rockets.","structure,mechanical,space"},
 	{"rocket fist","CKCAJI","Qke",6,8,6,"DDE3E8","C0392B","metal fist with thruster","zap","Punches from across the room.","scifi,robot"},
-	{"rocket jump","KACOKB","Ekl",5,9,2,"FF5722","FFE082","explosion launching caster upward","boom","Explode yourself upward. Fun!","explosive,speed"},
+	{"rocket jump","KACOkB","Ekl",5,9,2,"FF6A2A","FFD27A","a rocket at your feet blasts you skyward","boom","Fire the rocket at your feet. Trust the process.","gaming,explosive,speed"},
 	{"rocket launch pad","EAEMII","GKh",5,1,8,"B0BEC5","FF6F00","steel tower beside a scorched pad","thud","Ten. Nine. Eight. Uh oh.","structure,defense"},
 	{"rocket launcher","CKDAwI","Eke",8,5,4,"6B7B3A","24262A","shoulder tube with rocket","boom","Shoulder-mounted problem solver.","explosive,ranged"},
 	{"rocket launcher truck","DADMHL","EegP",8,4,8,"556B2F","E53935","truck with rack of rocket tubes","boom","Ripple fire! Everybody duck!","mechanical,vehicle,land,explosive"},
@@ -400,7 +403,4 @@ return {
 	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
 	{"salt mine","MEENII","SN",3,1,8,"F5F5F5","F8BBD0","glittering pink and white tunnels","rumble","Salty walls. Salty enemies.","place,terrain"},
 	{"salt shaker","BMADKK","jN",1,6,1,"BFE6F2","F2F2EE","small shaker with holes","clang","Salty. Very salty.","kitchen,household"},
-	{"saltasaurus","AMEJAA","GkIO",7,2,9,"8A6A4A","C8A07A","armored back sauropod","rumble","A sauropod wearing armor.","dinosaur,extinct,reptile,heavy"},
-	{"saltfish","IGBOKI","F",2,5,3,"F2E0A0","E8DCC0","salted fish with ackee","crunch","Jamaica's breakfast champion.","edible,healthy"},
-	{"saltwater crocodile","ABEJAC","fHOB",8,5,8,"5A5A3A","D8D0A0","gigantic croc, armored back","snap","Biggest reptile on Earth. Grumpy.","reptile,predator,aquatic"},
 }

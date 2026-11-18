@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nurse shark","ABCJEC","DfTHB",4,3,6,"A88E6A","E2D2B8","flat brown shark, whisker barbels","chomp","Lazy shark. Naps on the sea floor.","fish,aquatic,ocean,predator"},
+	{"nursery","MHDNlI","jdSh",4,1,4,"FDE047","F472B6","bright room of blocks, finger paints and tiny chairs","giggle","Twenty toddlers. One teacher. Pray for the teacher.","school,cute"},
 	{"nut","BKAA3K","UeO",2,7,5,"9CA3AF","D1D5DB","steel hex nut spinning like a tiny saw","clink","Could be hardware. Could be a snack. Bite to find out.","tool,mechanical"},
 	{"nut and bolt","BKAAJK","ke",1,8,3,"8A929B","8E9196","hex nut on a bolt","clink","Nuts! Bolts! Ouch!","hardware"},
 	{"nut cluster","IEAAKK","ceO",3,7,6,"5A2E16","C48A5A","chocolate covered nut lumps","bonk","Crunchy chocolate rocks.","edible"},
@@ -254,6 +256,7 @@ return {
 	{"pangolin","AMBJAF","GCf",3,5,7,"9A7A5A","5E4632","covered in overlapping scales, curls up","squeak","An artichoke with legs.","mammal,wild"},
 	{"pani puri","IMBGKF","jEP",4,6,1,"E8C07A","7DBE3A","hollow crispy balls with water","pop","Pop one whole. Splash!","edible,explosive"},
 	{"panic","KMCFOB","jd",3,8,1,"FFEB3B","FF5252","frantic zig-zag lines everywhere","aaa","AAAH! Everybody run around!","silly"},
+	{"panic build","EECClI","G",4,9,4,"C89058","6B4426","four plank walls and a ramp pop up around you","clatter","Cranked a 90 before you finished blinking.","gaming,building,wood"},
 	{"panic room","MKCIII","GS",2,1,10,"616161","E53935","steel room with a heavy door","thud","Nobody gets in. Nobody.","place,room"},
 	{"panini","IGBOKI","F",2,5,3,"D9963A","8A5A3A","pressed grill-striped sandwich","crunch","Pressed flat and proud of it.","edible,healthy"},
 	{"panko","IFBDOJ","jPO",2,5,1,"F2D08A","E8C07A","flaky golden crumbs","puff","Crispy coating, ready to fry.","edible"},
@@ -400,7 +403,4 @@ return {
 	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
 	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
 	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
-	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
-	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
-	{"pencil","BMAAJK","Te",1,8,1,"F1C40F","F06292","yellow hexagon pencil with eraser","tap","Sharpened for battle.","school"},
 }

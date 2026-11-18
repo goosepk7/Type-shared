@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"evocation","FLCAKB","Ee",5,8,1,"FF5722","7C4DFF","raw multicoloured energy bolt","whoom","Pure magical oomph.","magic"},
+	{"evolution","KGCOBA","WFfV",5,4,5,"22C55E","FDE047","line of shapes: fish, lizard, ape, human, robot, glowing","fanfare","Give it a few million years. Or one second.","science,gaming"},
+	{"ex","LICJNA","jiN",4,4,4,"4B5563","9CA3AF","person with a box of your stuff and folded arms","sigh","Still has your hoodie. Not giving it back.","silly"},
 	{"excavator","DEDKHL","Cklfg",6,3,9,"F5A623","2B2B2B","tracked base, long arm, toothed bucket","engine","Digs holes. Fills them with enemies.","mechanical,vehicle,land"},
 	{"excitement","KDCOKG","UD",3,9,2,"FF4081","FFEB3B","fizzing sparkle aura","yay","Can't sit still. Won't sit still.","silly,speed"},
 	{"executioner","LICJNA","kf",6,3,6,"111827","7F1D1D","black hood, huge axe","thud","Very serious job. Very serious hood.","villain"},
@@ -400,7 +403,4 @@ return {
 	{"focaccia","IMBAKK","Uke",3,7,2,"E0B05A","6B8E2B","dimpled flat bread, herbs, oil","whoosh","Bread with dimples and rosemary.","edible"},
 	{"focus","KLBOKI","T",2,4,3,"42A5F5","FFFFFF","narrow glowing aim rings","hum","Eye on the prize.","support"},
 	{"fog","GBDDOJ","jZS",2,2,3,"C9D3DA","EEF2F5","thick low grey blanket of fog","hush","Cannot see the enemy. They cannot see you.","spooky"},
-	{"fog cloud","FBDDOJ","jZS",1,3,3,"CFD8DC","FFFFFF","round thick fog ball expanding","hush","Now nobody can see anything. Great.","stealth"},
-	{"fog machine","OFCD1I","jZSP",1,3,4,"24262A","8E9196","box pumping thick fog","hiss","Spooky mood, instantly.","party,defense"},
-	{"foghorn","BMDFmI","IPO",4,2,6,"C0392B","4A4D52","huge horn on a post","horn","BWOOOOOOOOM.","music,loud,ocean"},
 }
