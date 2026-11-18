@@ -403,5 +403,4 @@ return {
 	{"salp","ABBJGJ","SVB",1,2,1,"E8F4F8","C8E8F0","clear barrel chain","squelch","See-through chain of jelly barrels.","aquatic,ocean,venomous"},
 	{"salsa","IABNGI","KjS",4,4,2,"D8302B","7DBE3A","bowl of chunky red sauce","sizzle","Chunky, spicy, dance-ready.","edible,spicy,sauce"},
 	{"salsify","IEBAJK","FTe",3,6,4,"5A4A3A","F2EEDF","long dark root","crunch","A root that tastes like oysters.","edible,vegetable,healthy"},
-	{"salt","FEAEOB","MN",2,6,1,"F7F7F2","D9D9CF","sprinkle of white crystal grains","tick","Slugs fear it. Ghosts too, maybe.","edible"},
 }

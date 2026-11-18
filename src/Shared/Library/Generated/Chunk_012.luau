@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"guandao","CKDHuK","kfP",7,4,5,"8A929B","9E1B32","heavy curved blade, dragon pole","shing","A general's favourite way to say no.","medieval,sharp"},
 	{"guanlong","AMCJBA","DkfT",4,6,7,"6A6A7A","E8701E","tall orange head crest","roar","Tiny tyrant with a crest.","dinosaur,extinct,reptile,predator"},
 	{"guard","KKCIKI","G",1,4,7,"78909C","ECEFF1","sturdy glowing guard stance aura","clank","On guard!","defence"},
 	{"guard post","EMBMII","GdSe",2,1,5,"B71C1C","1A1A1A","narrow striped hut with a barrier arm","thud","Halt! Who goes there?","structure,defense,tower"},
@@ -402,5 +403,4 @@ return {
 	{"hoopoe","AMAJDB","dA",1,7,1,"E8A06A","1E1E1E","punk crest, zebra wings","tweet","Has a mohawk. Sounds like oop-oop.","bird,cute"},
 	{"hop","KMAOKG","U",1,7,1,"F8BBD0","FFFFFF","tiny bouncy hop puffs","boing","Hippity hoppity.","cute,speed"},
 	{"hop vine","NGCNMI","WSN",2,1,3,"9CCC65","C5E1A5","climbing vine with papery green cones","rustle","Climbs everything in sight.","plant,crop"},
-	{"hope","KHCOKJ","GF",2,4,4,"FFF59D","B3E5FC","single bright light rising above caster","chime","A little light in the dark. Heals, too.","holy,support"},
 }

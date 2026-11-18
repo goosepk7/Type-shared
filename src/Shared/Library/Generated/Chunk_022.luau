@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"salt","FEAEOB","MN",2,6,1,"F7F7F2","D9D9CF","sprinkle of white crystal grains","tick","Slugs fear it. Ghosts too, maybe.","edible"},
 	{"salt and pepper","IFBDOJ","jPO",2,5,1,"F7F7F7","2A2A2A","twin shakers, white and black","puff","A legendary duo.","edible,spice"},
 	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
 	{"salt mine","MEENII","SN",3,1,8,"F5F5F5","F8BBD0","glittering pink and white tunnels","rumble","Salty walls. Salty enemies.","place,terrain"},
@@ -402,6 +403,4 @@ return {
 	{"shin pads","BMBOKF","G",1,6,3,"24262A","F2F2EE","curved foam shin shields","bonk","Kicks? Bring it.","sport"},
 	{"shine","FHBOKJ","da",2,6,2,"FFF6D1","FFFFFF","sparkle glints across surfaces","ding","So shiny it is distracting.","cute"},
 	{"ship","DBEKHC","DkgB",6,5,8,"6D4C41","F2E6C9","wooden hull, three masts, billowing sails","creak","Sails in. Rams out.","vehicle,aquatic,ancient"},
-	{"ship captain","LBCJNA","Gh",4,4,5,"1E3A8A","F8FAFC","peaked cap, pipe, white beard","horn","Goes down with the ship. Not today.","aquatic"},
-	{"ship lookout","LBCJNI","eO",3,5,3,"0369A1","FACC15","telescope, crow's nest","horn","LAND HO! Also, enemies ho.","pirate"},
 }

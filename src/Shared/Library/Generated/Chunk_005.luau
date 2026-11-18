@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cartoon box trap","BMCLII","cO",2,1,3,"C69C6D","8B5A2B","box propped on a stick with string","snap","Classic. Works on everyone.","trap,silly"},
 	{"cartoonist","LLCJNI","jh",3,4,3,"111827","FACC15","sketchbook, pen, ink splotches","scratch","Draws allies into existence.","art"},
 	{"cartwheel","KMBOKK","Dd",2,7,2,"F8BBD0","FFFFFF","cartwheeling motion arc","whee","Wheee! Totally on purpose.","silly,sport"},
 	{"cashew","IEAAKK","UeO",2,8,5,"EBD9A8","D8C08A","curved kidney-shaped nut","tok","A nut shaped like a comma.","edible,nut"},
@@ -402,5 +403,4 @@ return {
 	{"clockwork engine","OKCM1I","Sh",3,4,6,"B58A3A","B8693D","stack of turning brass gears","tick","Tick tick whirr.","steampunk"},
 	{"clockwork knight","OKCJNA","GDf",5,4,7,"B45309","F59E0B","brass knight with a wind-up key in back","tick","Fights until it runs down. Wind it again.","robot,steampunk"},
 	{"clockwork owl","AKAJDB","AZ",2,7,4,"B45309","22D3EE","brass owl with glass eyes","tick","Watches everything. Ticks quietly.","robot,bird,steampunk"},
-	{"clogs","BMBONI","k",1,4,3,"C49A6C","7A4E2D","carved wooden shoes","swish","Clomp clomp clomp.","clothing"},
 }

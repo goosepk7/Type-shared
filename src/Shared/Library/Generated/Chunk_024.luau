@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"solitaire","BMBELG","UjP",3,5,2,"15803D","F8FAFC","cascade of bouncing playing cards leaving trails","swish","You won. The cards are bouncing. Classic.","game,tech"},
+	{"solo","LICJNA","GDfT",6,7,5,"374151","FACC15","lone hooded figure against the wind, scarf trailing","whistle","No team. No heals. No problem.","gaming,warrior"},
 	{"solstice","GHENOI","KJF",6,3,5,"FFB300","B3E5FC","sun and frost glow in balance","chime","The longest day. Or night. Both?","holiday"},
 	{"solution","KHBOKB","GFX",3,5,3,"22D3EE","F8FAFC","jigsaw piece clicking into place with a sparkle","click","Have you tried duct tape? Try more duct tape.","support"},
 	{"som tam","IABAKK","KeP",3,7,2,"C8D88A","D8302B","shredded green papaya salad","sizzle","Crunchy, spicy, sour.","edible,spicy,flammable"},
@@ -401,5 +403,4 @@ return {
 	{"stinging nettle","NJBLMI","STM",3,1,3,"558B2F","33691E","hairy toothed leaves","rustle","Brush past it once. Never again.","plant"},
 	{"stingray","ABCJEC","STMB",4,5,3,"8A7A62","E8E0D2","flat diamond body, whip tail with barb","whoosh","Shuffle your feet. Seriously.","fish,aquatic,ocean"},
 	{"stink bomb","CJADKF","jSMe",2,7,1,"6B7B3A","8BC34A","small vial leaking green fumes","poof","Smells like victory. Mostly socks.","silly"},
-	{"stink bug","AJAJFA","jdAMP",1,6,1,"6A5A3A","C8A86A","shield-shaped flat bug","buzz","Smells awful when squished. Avoid.","insect"},
 }

@@ -403,5 +403,4 @@ return {
 	{"pop quiz","KLBAKB","jO",3,9,1,"FFFFFF","1565C0","floating paper with question marks","ding","Pencils out! Panic!","silly"},
 	{"pop rocks","IDBGKF","jELP",4,6,1,"F2A6C8","4FA3E8","crackling candy crystals","pop","Crackles. Snaps. Tiny fireworks.","edible,explosive,candy"},
 	{"pop tart","IMBAKK","Uke",3,7,2,"E8C88A","F2A6C8","frosted rectangle, sprinkles","whoosh","Breakfast in a rectangle.","edible"},
-	{"popcorn","IMBGKF","EeVP",4,6,1,"FFF4D6","F2C24A","fluffy white kernels, butter gold","pop","Explodes once. Then again in your mouth.","edible,explosive,snack"},
 }

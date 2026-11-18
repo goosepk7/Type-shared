@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"walrus","ACDJEC","UkfTB",6,5,7,"9A6E54","F2E6D2","huge blubbery body, long tusks, whiskers","bark","Uses its tusks as climbing hooks.","mammal,aquatic,arctic"},
+	{"wampus cat","AICJAA","jZf",5,8,4,"1C1917","FACC15","six-legged cat with glowing eyes","hiss","Two extra legs. Twice the zoomies.","cryptid,cat,spooky"},
 	{"wand","BLAAzI","eh",4,8,2,"5A3A1E","D4A72C","slim carved wand with sparkly tip","chime","Swish and flick.","magic,fantasy"},
 	{"wanderer","LFCJNA","ZY",4,6,4,"A16207","78716C","hooded traveling cloak, walking staff","whoosh","Arrives from nowhere. Leaves the same way.","explorer"},
 	{"war","KAENOI","KkP",7,5,5,"8D6E63","D32F2F","smoky battlefield haze with banners","horn","Banners up. Charge together.","rage"},
@@ -401,7 +403,4 @@ return {
 	{"year","KLDN5K","SXN",5,1,4,"16A34A","F59E0B","calendar ring of twelve months spinning with party hats","chime","Twelve months. Gone. Where did it go?","time"},
 	{"yeast","IMBOKI","WP",3,5,3,"E8D8A8","C8B88A","beige granules","chomp","Tiny helpers that make dough grow.","edible"},
 	{"yeehaw","KMCOKB","Dk",3,9,2,"A1887F","FFD54F","lasso swirl and dust kick","yeehaw","Yeehaw! Saddle up.","silly"},
-	{"yeet","KFCAKB","kle",5,10,1,"FFEB3B","FF4081","target spinning away in a huge arc","whoosh","YEET. Gone. Bye.","meme,silly"},
-	{"yellow squash","IMBHJI","kf",3,5,4,"F2D23A","5E7A2B","curved yellow squash","bonk","A sunny club.","edible,silly"},
-	{"yellowstone","MBFNII","KlS",6,1,9,"FFEB3B","4FC3F7","steaming pools, geysers, colourful springs","rumble","Geysers everywhere. Bubbling everywhere.","place,landmark"},
 }

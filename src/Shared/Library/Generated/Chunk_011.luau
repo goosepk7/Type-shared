@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant mallet","CMDHtK","kfXO",6,3,5,"C0392B","C49A6C","enormous cartoon wooden mallet","bonk","Flattens foes like pancakes.","silly,cartoon"},
 	{"giant marshmallow","IMDCII","GUN",4,2,6,"F7F4F0","E8C08A","huge soft white cylinder","thud","A pillow fort you can eat.","edible,giant,sweet"},
 	{"giant marshmallow man","IMFJNA","Ukf",8,2,8,"F7F4F0","4FA3E8","towering puffy white figure","thud","Puffy, sweet, and very stompy.","edible,giant,silly"},
 	{"giant meatball","IMDGKF","DkcI",6,5,6,"7A3A2A","B0202E","enormous meatball, sauce dripping","rumble","A meteor of meat.","edible,heavy"},
@@ -402,5 +403,4 @@ return {
 	{"gryphon chick","AFBJAB","AQf",2,6,2,"D97706","FEF3C7","fluffy beaked cub, tiny wings","chirp","All fluff, no flight skills yet.","mythical,cute"},
 	{"guacamole","IMBLGI","FcN",2,3,3,"568203","D3E28A","bowl of chunky green dip","gloop","Green, chunky, and loved by all.","edible,sticky,sauce"},
 	{"guanaco","AMCJAA","dfe",3,4,4,"B07A44","E8E0D8","wild llama, brown back, white belly","bleat","Llama's wild cousin. Same spit.","mammal,farm"},
-	{"guandao","CKDHuK","kfP",7,4,5,"8A929B","9E1B32","heavy curved blade, dragon pole","shing","A general's favourite way to say no.","medieval,sharp"},
 }

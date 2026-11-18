@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hope","KHCOKJ","GF",2,4,4,"FFF59D","B3E5FC","single bright light rising above caster","chime","A little light in the dark. Heals, too.","holy,support"},
 	{"hoplite shield","BKCIyI","Gk",3,4,7,"A86F32","9E1B32","large round bronze shield","clang","Bronze, big, and very Greek.","armor,defense,ancient"},
 	{"hopscotch","KMBOKG","UD",1,6,2,"FF80AB","FFFFFF","chalk squares glowing under hops","boing","One, two, three, dodge!","silly"},
 	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},

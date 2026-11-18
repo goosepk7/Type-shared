@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cruise ship","DBFKHC","DkghB",6,3,9,"F5F5F5","1565C0","massive white ship, stacked decks, funnels","horn","Fourteen decks and a buffet. Ramming speed!","vehicle,aquatic"},
 	{"cruller","IMBLKI","dSc",2,3,3,"E8B860","F7F0D8","twisted ridged ring","chomp","A donut that does yoga.","edible,sweet"},
 	{"crumb","IMAELJ","cNP",1,5,1,"D9B382","A16207","sprinkle of golden crumbs trailing off","pitter","In the bed. In the keyboard. Forever.","edible,silly"},
 	{"crumble","IGBOKI","F",2,5,3,"C89050","B0203E","fruit bake with crumbly topping","crunch","Crumbles beautifully under pressure.","edible,healthy"},
