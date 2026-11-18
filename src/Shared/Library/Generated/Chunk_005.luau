@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carousel","EMDNIK","jkS",3,1,6,"E53935","FFD54F","spinning canopy with painted horses","organ","Round and round and dizzy.","structure,building,silly"},
+	{"carp","ABBJEC","DfB",2,7,4,"B8984A","E8D8A8","golden scaly fish, whisker barbels","splash","Lives in ponds. Owns the pond.","fish,aquatic"},
 	{"carpenter","LGCJNA","Ge",3,4,5,"A16207","78350F","tool belt, pencil behind ear, hammer","thud","Measures twice. Bonks once.","tools"},
 	{"carpenter ant","AMAJLA","CfP",1,5,1,"1E1E1E","6A3A1E","large black ant","skitter","Remodels your house. Uninvited.","insect,swarm"},
 	{"carpenter bee","AJAJLB","CATMP",2,7,1,"1E1E24","F2D82A","big shiny black bee","buzz","Drills holes in your porch.","insect,swarm,venomous"},

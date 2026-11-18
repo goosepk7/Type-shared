@@ -210,6 +210,7 @@ return {
 	{"conveyor belt","OKDL1I","SI",2,3,7,"3C4048","F2A33A","a slatted belt that drags anyone on it sideways","hum","Please keep moving. You have no choice.","game,platformer,factory"},
 	{"convict cichlid","ABAJEC","dfB",1,6,1,"E8E8E8","1E1E1E","black-white striped cichlid","splash","Wears a prison stripes outfit.","fish,aquatic"},
 	{"convoy","DMFKHL","DkTgh",7,5,9,"556B2F","37474F","long line of trucks and escorts","engine","A whole road full of trucks.","vehicle,mechanical"},
+	{"cooked frag","CABG2F","Ee",5,7,1,"556B2F","FFB347","segmented frag with a ticking fuse ring","boom","Cooked to perfection. Medium rare.","gaming,shooter,military"},
 	{"cookie","IMBAKK","dce",3,7,2,"C8904A","4A2516","round chewy disc with chocolate chips","whoosh","Monsters can't resist them.","edible"},
 	{"cookie beast","AMCJNA","dc",3,5,4,"1D4ED8","92400E","shaggy blue monster with crumbs","chomp","Om nom nom. Always nom.","silly,cute"},
 	{"cookie cake","IMCAKK","Uke",4,7,2,"C8904A","F2A6C8","giant cookie with frosting edge","whoosh","A cookie that wanted to be a cake.","edible,dessert"},

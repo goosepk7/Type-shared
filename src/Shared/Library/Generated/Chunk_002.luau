@@ -185,6 +185,7 @@ return {
 	{"ballgown","BMCONI","dF",1,4,2,"C3A6E8","D4A72C","sweeping sparkly gown","swish","Twirl. Dazzle. Win.","clothing,fancy"},
 	{"ballista","CMDMxI","kTe",6,3,5,"8B5A2B","8A929B","giant crossbow on a wheeled frame","creak","A crossbow that skipped leg day never.","medieval,siege,heavy"},
 	{"ballista tower","EMDMII","GSTe",6,1,7,"6D4C41","9E9E9E","stone tower with a giant crossbow","twang","Fires spears the size of trees.","structure,defense,tower"},
+	{"ballistic shield","CKCO2A","Gk",3,4,3,"3E4752","9FD3FF","tall curved shield with a visor window","clank","Knock knock. Shield bash.","gaming,shooter,defence"},
 	{"balloon","BFBG3J","dAl",1,3,1,"C0392B","F2F2EE","round shiny balloon on a string","squeak","Floats up. Takes things with it.","party,toy"},
 	{"balloon animal","BMBJAG","Ud",1,4,1,"FF3EA5","C0392B","twisted balloon poodle","squeak","Squeak squeak. Pop.","party,silly"},
 	{"balloon artist","LMCJNA","Udh",3,5,2,"EF4444","60A5FA","twisting balloon animals","squeak","Makes balloon dogs. They bite.","silly,circus"},
@@ -402,5 +403,4 @@ return {
 	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
 	{"beep","KDAFOB","d",1,10,1,"00E676","FFFFFF","tiny sound blips","beep","Beep beep! Coming through.","silly"},
 	{"beet","IEBAJK","FSe",3,6,4,"8E1F3F","C22A5A","round dark red root, leaves","crunch","Stains everything bright purple.","edible,vegetable,healthy"},
-	{"beetle","AMAJFA","Gf",1,3,4,"2A4A2A","6AC84A","shiny round shell, six legs","click","Armored. Shiny. Unbothered.","insect,armored"},
 }

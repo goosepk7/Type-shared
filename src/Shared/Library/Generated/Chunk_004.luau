@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
 	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
@@ -150,6 +151,7 @@ return {
 	{"bunker","EEDCII","GCSe",4,1,10,"9E9E9E","556B2F","low concrete box half buried, slit window","thud","Nothing gets in. Not even sunlight.","structure,defense,heavy"},
 	{"bunny chow","IABNGI","KF",4,4,2,"D9A04A","E8762B","hollow bread loaf of curry","sizzle","A loaf of bread full of curry.","edible,spicy"},
 	{"bunny ear cactus","NEBLMI","GST",2,1,5,"9CCC65","FFF59D","paddles like rabbit ears","thud","Cute ears. Spiky fluff.","plant,desert,sharp,cute"},
+	{"bunny hop","KFBONG","D",2,10,1,"7ED957","F7FFF0","springy hops that speed up with every landing","boing","Gotta go fast. Hop hop hop.","gaming,shooter,movement"},
 	{"bunny warrior","AMBJAG","UDf",3,9,2,"F8FAFC","F472B6","bunny with headband and tiny sword","chitter","Hops in. Hits. Hops out.","warrior,cute"},
 	{"bunsen burner","BAAM1I","K",2,1,3,"C9CED4","2F6FD1","small gas burner with blue flame","bubble","Science-grade toasting.","science"},
 	{"bunting","AMAJDB","dA",1,7,1,"2A5AE8","3A3A8A","all-blue small bird","tweet","So blue it's basically paint.","bird,cute"},
@@ -401,6 +403,4 @@ return {
 	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
 	{"carnotaurus","AMDJBA","DkfT",7,8,7,"B8401E","3A2A1E","bull horns, tiny arms, fast","roar","A bull and a T rex had a sprinter.","dinosaur,extinct,reptile,predator"},
 	{"carolina reaper","IABAKK","KESP",8,7,2,"B0101E","6B0A0A","wrinkly red pod, scorpion tail","sizzle","The hottest pepper. A fire spirit in pod form.","edible,spicy,flammable,pepper"},
-	{"carousel","EMDNIK","jkS",3,1,6,"E53935","FFD54F","spinning canopy with painted horses","organ","Round and round and dizzy.","structure,building,silly"},
-	{"carp","ABBJEC","DfB",2,7,4,"B8984A","E8D8A8","golden scaly fish, whisker barbels","splash","Lives in ponds. Owns the pond.","fish,aquatic"},
 }

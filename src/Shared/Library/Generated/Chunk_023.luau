@@ -321,6 +321,7 @@ return {
 	{"slice","KKBHJB","fT",5,9,1,"CFD8DC","FFFFFF","clean bright arc of light","shing","Precision cutting. Like a chef.","sharp"},
 	{"slice of bread","IMBAKK","Uke",3,7,2,"E8C88A","F5EAD5","square slice with crust edge","whoosh","A slice, thrown with great purpose.","edible"},
 	{"slide","EMCLII","SI",2,1,4,"FFEB3B","E53935","ladder up, curvy chute down","thud","Wheeee! Right into the enemy.","structure,building,silly"},
+	{"slide kick","KFBONA","DkO",3,10,1,"2F80ED","E8F1FF","a low slide with a dust skid and a boot kick","whoosh","Watch your ankles.","gaming,shooter,sport"},
 	{"slide whistle","BMAFJI","jd",1,7,1,"C0392B","C9CED4","whistle with plunger","toot","Wheeeee-ooooo!","music,silly"},
 	{"sliders","IMAELB","Fce",2,7,1,"C8762B","6B3A1E","tiny burgers","pitter","Burgers for tiny hands.","edible,snack"},
 	{"sliding floor","BMDLII","jN",2,1,5,"C9CED4","8C8C88","tilting slick floor","snap","Wheeeee— back to the start.","trap,defense"},
