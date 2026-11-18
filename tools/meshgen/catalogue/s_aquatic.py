@@ -544,3 +544,192 @@ def s_aq_brain():
         return d + 0.035 * np.abs(g) - 0.02
 
     return SDF(f)
+
+
+# ------------------------------------------------------------------------------------------------ snakes
+SH_HEAD = (0.92, 0.69, 1.29)  # Plans/Serpent snakeHead r = (s*0.4, s*0.3, s*0.56), s = 1.15
+
+
+@piece("s_aq_snake_head", (0.55, 0.42, 1.2), tris=900, kind="unit", lead=SH_HEAD, set=S, smooth=3)
+def s_aq_snake_head():
+    """Snake head (lead Head, member Snout): a smooth oval skull running into a rounded snout, raised
+    supraocular plates over the eyes, nostrils near the tip, a lip line along each side."""
+    rx, ry, rz = SH_HEAD[0] / 2, SH_HEAD[1] / 2, SH_HEAD[2] / 2
+    s = ellipsoid(rx, ry, rz).su(ellipsoid(rx * 0.72, ry * 0.78, rz * 0.55, (0, -0.04, -rz * 0.72)), 0.12)
+    s = s.su(ellipsoid(rx * 0.32, 0.05, rz * 0.3, (rx * 0.42, ry * 0.86, -rz * 0.15)).mirror_x(), 0.05)
+    s = s.ss(sphere(0.035, (rx * 0.25, ry * 0.25, -rz * 1.22)).mirror_x(), 0.02)
+    s = groove(s, lambda p: (p[:, 1] + ry * 0.35 + 0.05 * (p[:, 2] / rz)) * (np.abs(p[:, 0]) > rx * 0.4) + (np.abs(p[:, 0]) <= rx * 0.4) * 9, 0.018, 0.02)
+    return s
+
+
+VH = (1.2, 0.69, 1.33)  # viper: r = (s*0.52, s*0.3, s*0.58)
+
+
+@piece("s_aq_viper_head", (0.75, 0.45, 1.05), tris=1000, kind="unit", lead=VH, set=S, smooth=3)
+def s_aq_viper_head():
+    """Viper head (lead Head, members Snout and the cheek bulges): the arrowhead triangle of the venom glands
+    behind the eyes, a flat crown, overhanging brow ridges, heat pits between eye and nostril, a narrow neck."""
+    rx, ry, rz = VH[0] / 2, VH[1] / 2, VH[2] / 2
+    s = ellipsoid(rx * 0.85, ry, rz)
+    s = s.su(ellipsoid(rx * 0.55, ry * 0.78, rz * 0.55, (0, -0.04, -rz * 0.72)), 0.1)
+    s = s.su(ellipsoid(rx * 0.45, ry * 0.65, rz * 0.4, (rx * 0.45, -0.03, rz * 0.35)).mirror_x(), 0.15)
+    s = s.si(plane((0, 1, 0), ry * 0.8), 0.06)  # flat crown
+    s = s.su(ellipsoid(rx * 0.3, 0.06, rz * 0.28, (rx * 0.38, ry * 0.75, -rz * 0.12)).mirror_x(), 0.04)
+    s = s.ss(sphere(0.045, (rx * 0.42, ry * 0.05, -rz * 0.62)).mirror_x(), 0.02)
+    s = s.ss(sphere(0.03, (rx * 0.2, ry * 0.2, -rz * 1.2)).mirror_x(), 0.02)
+    return s
+
+
+HD = (2.2, 2.0, 0.37)
+
+
+@piece("s_aq_hood", (1.25, 1.15, 0.45), tris=700, kind="unit", lead=HD, set=S, smooth=3)
+def s_aq_hood():
+    """Cobra hood (lead Hood, thin in z): a spread spoon of skin over the ribs, cupped forward round the head,
+    rib ridges fanning out, a thick neck column down the middle of the back."""
+    w, h = HD[0] / 2, HD[1] / 2
+    outline = []
+    for i in range(40):
+        a = 2 * np.pi * i / 40
+        r = 1.0 - 0.25 * np.clip(-np.sin(a), 0, 1) ** 2
+        outline.append((np.cos(a) * w * r, np.sin(a) * h * (0.9 if np.sin(a) > 0 else 1.0)))
+    plate = flat_fin(outline, "xy", t0=0.07, rim=0.35, rays=7, root=(0, -h * 1.3), ray_amp=0.35, tmin=0.3)
+    plate = plate.warp(lambda p: p + np.stack([np.zeros(len(p)), np.zeros(len(p)), 0.28 * (p[:, 0] / w) ** 2], 1))
+    neck = round_cone((0, -h * 0.9, 0.08), (0, h * 0.6, 0.08), 0.32, 0.26)
+    return plate.su(neck, 0.15)
+
+
+NH = (1.01, 0.52, 0.88)  # Plans/Serpent salamander head: (s*1.1, s*0.56, s*0.96), s = 0.92
+
+
+@piece("s_aq_newt_head", (0.62, 0.38, 0.55), tris=800, kind="unit", lead=NH, set=S, smooth=3)
+def s_aq_newt_head():
+    """Salamander head (lead Head): broad and flat with a rounded snout, the eyes' sockets bulging on top, a
+    wide lip line, a throat fold at the back."""
+    rx, ry, rz = NH[0] / 2, NH[1] / 2, NH[2] / 2
+    s = ellipsoid(rx, ry, rz).su(ellipsoid(rx * 0.85, ry * 0.85, rz * 0.6, (0, -ry * 0.1, rz * 0.45)), 0.12)
+    s = s.su(ellipsoid(rx * 0.22, ry * 0.4, rz * 0.25, (rx * 0.55, ry * 0.65, -rz * 0.2)).mirror_x(), 0.08)
+    s = groove(s, lambda p: (p[:, 1] + ry * 0.3) * (p[:, 2] < rz * 0.3), 0.018, 0.022)
+    s = groove(s, lambda p: (p[:, 2] - rz * 0.75) * (p[:, 1] < 0), 0.02, 0.03)
+    return s
+
+
+# ------------------------------------------------------------------------------------------------ worms
+WS = (0.62, 1.03, 0.65)  # Builder.limb segment: (w, len * 1.4, depth); local +Y along the body
+
+
+@piece("s_aq_worm_seg", (0.38, 0.58, 0.38), tris=600, kind="unit", lead=WS, set=S, smooth=2)
+def s_aq_worm_seg():
+    """Ringed body segment (any Builder.limb segment of a worm, caterpillar, centipede): the lead ellipsoid with
+    five annuli, the furrows between them sunk all the way round."""
+    rx, ry, rz = WS[0] / 2, WS[1] / 2, WS[2] / 2
+    base = ellipsoid(rx, ry, rz)
+
+    def f(p):
+        d = base(p)
+        u = p[:, 1] / ry
+        ring = np.cos(u * np.pi * 2.5) ** 2
+        return d + 0.03 * ring * np.clip(1 - np.abs(u), 0, 1) ** 0.3
+
+    return SDF(f)
+
+
+@piece("s_aq_worm_head", (0.55, 0.55, 0.55), tris=600, kind="unit", lead=(1.0, 0.94, 0.96), set=S, smooth=2)
+def s_aq_worm_head():
+    """Worm head (lead Head): a blunt rounded head with a small lip lobe over the mouth and two annuli at the
+    back."""
+    s = ellipsoid(0.5, 0.47, 0.48).su(ellipsoid(0.16, 0.1, 0.12, (0, 0.05, -0.47)), 0.06)
+    return groove(s, lambda p: np.minimum(np.abs(p[:, 2] - 0.18), np.abs(p[:, 2] - 0.32)), 0.03, 0.03)
+
+
+@piece("s_aq_worm_mouth", (0.32, 0.62, 0.62), tris=1100, kind="unit", lead=(0.3, 1.1, 1.1), set=S, smooth=2)
+def s_aq_worm_mouth():
+    """Round toothed maw / sucker (lead: a short cylinder along X pointing out of the head, +X forward): a fleshy
+    lip ring, three rings of hooked teeth pointing into a dark throat."""
+    R = 0.55
+    lip = torus(R * 0.82, 0.12, axis=0).at(0.05, 0, 0)
+    disc = cylinder(R * 0.85, 0.12, axis=0, rr=0.04)
+    s = lip.su(disc, 0.06)
+    s = s.ss(sphere(R * 0.4, (0.25, 0, 0)), 0.05)
+    for ring, (rr, n, ln) in enumerate([(0.62, 12, 0.16), (0.45, 9, 0.13), (0.3, 6, 0.1)]):
+        for i in range(n):
+            a = 2 * np.pi * (i + 0.5 * ring) / n
+            c, sn = np.cos(a), np.sin(a)
+            base = (0.1, c * R * rr, sn * R * rr)
+            tip = (0.17, c * R * (rr - 0.12), sn * R * (rr - 0.12))
+            s = s | round_cone(base, tip, 0.04 * (1 - ring * 0.2), 0.008)
+    return s
+
+
+@piece("s_aq_tube", (1.55, 0.36, 0.36), tris=600, kind="unit", lead=(3.0, 0.6, 0.6), set=S, smooth=2)
+def s_aq_tube():
+    """Tube worm tube (lead: a cylinder along X, +X up): a chitin tube with growth rings and a flared, ragged
+    lip at the open end."""
+    L = 1.5
+
+    def f(p):
+        x = p[:, 0]
+        u = np.clip((x + L) / (2 * L), 0, 1)
+        r = 0.27 + 0.03 * u + 0.015 * np.sin(x * 22) + 0.05 * np.clip((u - 0.92) / 0.08, 0, 1)
+        d = np.sqrt(p[:, 1] ** 2 + p[:, 2] ** 2) - r
+        return smax(d, np.abs(x) - L, 0.04)
+
+    s = SDF(f)
+    return s.ss(cylinder(0.22, 0.4, axis=0).at(L, 0, 0), 0.03)
+
+
+def _filaments(n, rings, up, spread, length, r0, seed=0):
+    rng = np.random.default_rng(seed)
+    parts = []
+    for ring in range(rings):
+        for i in range(n):
+            a = 2 * np.pi * (i + ring * 0.5) / n + rng.uniform(-0.1, 0.1)
+            tilt = spread * (1 - ring * 0.25)
+            base = np.array([np.cos(a) * r0, -up, np.sin(a) * r0])
+            d = np.array([np.cos(a) * np.sin(tilt), np.cos(tilt), np.sin(a) * np.sin(tilt)])
+            ln = length * (1 - ring * 0.12) * rng.uniform(0.9, 1.05)
+            mid = base + d * ln * 0.55 + np.array([0, 0.03, 0])
+            tip = base + d * ln
+            parts.append(tube([tuple(base), tuple(mid), tuple(tip)], [0.05, 0.045, 0.015]))
+    return union(*parts)
+
+
+@piece("s_aq_plume", (0.6, 0.85, 0.6), tris=1200, kind="unit", lead=(0.9, 1.4, 0.9), set=S, smooth=2)
+def s_aq_plume():
+    """Tube worm plume (lead Plume): a bundle of soft red gill filaments rising out of the tube and splaying."""
+    s = _filaments(10, 2, 0.65, 0.35, 1.25, 0.12, 4)
+    return s.su(ellipsoid(0.22, 0.25, 0.22, (0, -0.6, 0)), 0.08)
+
+
+@piece("s_aq_fan_plume", (1.1, 0.6, 1.1), tris=1300, kind="unit", lead=(2.0, 1.0, 2.0), set=S, smooth=2)
+def s_aq_fan_plume():
+    """Feather duster crown (lead Fan): a funnel of feathery radioles, each with a fringe of barbs."""
+    parts = []
+    n = 16
+    for i in range(n):
+        a = 2 * np.pi * i / n
+        base = np.array([np.cos(a) * 0.12, -0.45, np.sin(a) * 0.12])
+        d = np.array([np.cos(a) * 0.82, 0.57, np.sin(a) * 0.82])
+        tip = base + d * 1.05
+        parts.append(round_cone(tuple(base), tuple(tip), 0.035, 0.02))
+        for k in range(3):
+            q = base + d * (0.4 + k * 0.22)
+            side = np.array([-np.sin(a), 0, np.cos(a)])
+            parts.append(round_cone(tuple(q), tuple(q + side * 0.12 + d * 0.08), 0.02, 0.01))
+            parts.append(round_cone(tuple(q), tuple(q - side * 0.12 + d * 0.08), 0.02, 0.01))
+    return union(*parts).su(ellipsoid(0.18, 0.12, 0.18, (0, -0.45, 0)), 0.06)
+
+
+@piece("s_aq_spiral_plume", (0.45, 0.7, 0.45), tris=1100, kind="unit", lead=(0.75, 1.25, 0.75), set=S, smooth=2)
+def s_aq_spiral_plume():
+    """Christmas tree worm spiral (lead Spiral): a cone of whorls winding up a central stalk, fringed."""
+    pts, rad = [], []
+    turns = 4.0
+    for i in range(70):
+        u = i / 69
+        a = u * turns * 2 * np.pi
+        r = 0.36 * (1 - u * 0.85)
+        pts.append((np.cos(a) * r, -0.55 + u * 1.15, np.sin(a) * r))
+        rad.append(0.075 * (1 - u * 0.6))
+    s = tube(pts, rad)
+    return s.su(round_cone((0, -0.6, 0), (0, 0.62, 0), 0.07, 0.03), 0.05)

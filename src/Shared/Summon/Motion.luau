@@ -265,6 +265,10 @@ function Motion.pose(rig: any, clip: string, t: number, o: any?): { [string]: { 
 	for i, b in rig.spine or {} do
 		add(out, b, 0, 0, 0, 0, sin(ph - i * 0.7) * (g.sway or 0.1), 0)
 	end
+	-- looping crawlers (inchworms): the arch segments pitch in counter-phase so the loop opens and closes
+	for _, a in rig.arch or {} do
+		add(out, a.bone, 0, 0, 0, sin(ph) * (a.k or 0.2) * (0.35 + amp * 0.65), 0, 0)
+	end
 	for _, tt in rig.tentacles or {} do
 		local p = t * 1.2 * spd + (tt.index or 0) * 0.8 + (tt.seg or 1) * 0.5
 		add(out, tt.bone, 0, 0, 0, sin(p) * 0.22, 0, cos(p * 0.8) * 0.18)

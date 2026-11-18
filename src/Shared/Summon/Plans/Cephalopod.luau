@@ -139,7 +139,7 @@ local function octopus(B: any, ctx: any, has: any)
 	end
 	if dumbo and detail >= 1 then
 		-- ear fins: two paddles on top of the mantle
-		B:mell(1.05, 0.12, 0.7, at(mr[1] * 0.85, mc[2] + mr[2] * 0.35, mc[3], 0, rad(-10), rad(25)), { col = "secondary", mat = "skin", pri = 1.5, role = "fin", name = "EarFin#" })
+		B:mell(1.5, 0.14, 1.0, at(mr[1] * 0.95 + 0.35, mc[2] + mr[2] * 0.45, mc[3], 0, rad(-15), rad(30)), { col = "primary", mat = "skin", pri = 1.5, role = "fin", name = "EarFin#" })
 	end
 	if (dumbo or has("web", "cloak")) and detail >= 2 then
 		-- arm web: a skirt between the arm roots
@@ -181,12 +181,15 @@ local function squid(B: any, ctx: any, has: any)
 	local ml = if round then 1.5 else 3.4
 	local mw = if round then 1.4 else 1.05
 	local mc = { 0, y + 0.5 + ml * 0.42 * cos(tilt), 0.2 + ml * 0.42 * sin(tilt) }
-	B:ell(mw, ml, mw, at(mc[1], mc[2], mc[3], tilt, 0, 0), { col = "primary", mat = if glass then "glass" else "skin", tr = if glass then 0.35 else nil, pri = 1, role = "body", name = "Mantle",
+	local mantle = B:ell(mw, ml, mw, at(mc[1], mc[2], mc[3], tilt, 0, 0), { col = "primary", mat = if glass then "glass" else "skin", tr = if glass then 0.35 else nil, pri = 1, role = "body", name = "Mantle",
 		mesh = if round then "s_octo_mantle" else "s_aq_squid_mantle" })
 	-- arrowhead fins near the tip (the sculpt has them; the primitive build adds two fin ellipsoids)
 	if detail >= 1 and not round then
 		local fy, fz = mc[2] + ml * 0.33 * cos(tilt), mc[3] + ml * 0.33 * sin(tilt)
-		B:mell(if bigFin then 1.6 else 0.9, 0.1, if bigFin then 1.4 else 0.95, at(mw * 0.45 + (if bigFin then 0.55 else 0.3), fy, fz, tilt - rad(90), 0, rad(-10)), { col = "secondary", mat = "skin", pri = 1.5, role = "fin", name = "MantleFin#", mesh = false })
+		local fa, fb = B:mell(if bigFin then 1.6 else 0.9, 0.1, if bigFin then 1.4 else 0.95, at(mw * 0.45 + (if bigFin then 0.55 else 0.3), fy, fz, tilt - rad(90), 0, rad(-10)), { col = "primary", mat = "skin", pri = 1.5, role = "fin", name = "MantleFin#", mesh = false })
+		if not bigFin then
+			B:sculpt(mantle, "s_aq_squid_mantle", { fa, fb })
+		end
 	elseif detail >= 1 then
 		B:mell(0.8, 0.1, 0.6, at(mw * 0.6, mc[2] + 0.1, mc[3], 0, rad(-10), rad(20)), { col = "secondary", mat = "skin", pri = 1.5, role = "fin", name = "EarFin#" })
 	end
@@ -267,7 +270,7 @@ local function shelled(B: any, ctx: any, has: any)
 		sc = { 0, y + 0.3, -0.3 }
 	else
 		-- planispiral shell in the yz plane: the coil behind and above the head
-		local w = if argonaut then 1.5 else 1.8
+		local w = if argonaut then 1.0 else 1.2
 		sc = { 0, y + 0.9, 0.55 }
 		B:ell(w, 3.0, 3.0, at(sc[1], sc[2], sc[3]), { col = if argonaut then "secondary" else "primary", mat = "hard", pri = 1, role = "shell", name = "Shell", mesh = if argonaut then "s_aq_argonaut_shell" else "s_aq_nautilus_shell" })
 		if detail >= 2 and not argonaut and has("stripe", "nautilus") then

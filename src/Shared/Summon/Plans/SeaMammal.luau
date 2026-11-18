@@ -322,8 +322,15 @@ function SeaMammal.mer(B: any, ctx: any)
 		local parent = "Body"
 		local p = { 0, y + 0.6, 0.1 }
 		local w = 0.85
+		local snake = has("lamia", "naga", "melusine", "shahmaran", "mother of monsters", "lower half", "lower body", "serpent-tailed", "serpent lower")
 		local pts = { { 0, 0.55, 0.55 }, { 0, 0.25, 1.35 }, { 0, 0.35, 2.05 } }
 		local n = if detail <= 0 then 2 else 3
+		if snake then
+			-- a snake's body: down to the ground and coiling round behind
+			pts = { { 0, 0.5, 0.5 }, { 0.6, 0.35, 1.35 }, { 0.3, 0.3, 2.25 }, { -0.6, 0.28, 2.75 }, { -1.4, 0.22, 2.45 } }
+			n = if detail <= 0 then 2 elseif detail == 1 then 3 elseif detail == 2 then 4 else 5
+			w = 0.95
+		end
 		for i = 1, n do
 			local q = pts[i]
 			local bn = B:bone("Tail" .. i, parent, p[1], p[2], p[3])
@@ -331,9 +338,16 @@ function SeaMammal.mer(B: any, ctx: any)
 			B:limb(p, q, w, { col = "primary", mat = "scale", bone = bn, pri = 1.1 + i * 0.15, role = "body", name = "TailSeg", depth = w * 0.9 }, 0.35)
 			p = q
 			parent = bn
-			w *= 0.72
+			w *= if snake then 0.84 else 0.72
 		end
-		B:ell(1.5, 0.12, 0.7, at(0, p[2] + 0.12, p[3] + 0.3, rad(-15), 0, 0), { col = "secondary", mat = "skin", bone = parent, pri = 1.3, role = "fin", name = "Fluke", trail = true, mesh = "s_aq_fluke" })
+		if snake then
+			B:limb(p, { p[1] - 0.6, 0.12, p[3] - 0.5 }, w * 0.9, { col = "primary", mat = "scale", bone = parent, pri = 1.6, role = "tail", trail = true }, 0.3)
+			if has("cobra", "hood", "naga") and detail >= 1 then
+				B:ell(2.0, 1.9, 0.3, at(0, tc[2] + 1.35, 0.42, rad(-8), 0, 0), { col = "primary", mat = "scale", pri = 1.7, role = "hood", name = "Hood", mesh = "s_aq_hood" })
+			end
+		else
+			B:ell(1.5, 0.12, 0.7, at(0, p[2] + 0.12, p[3] + 0.3, rad(-15), 0, 0), { col = "secondary", mat = "skin", bone = parent, pri = 1.3, role = "fin", name = "Fluke", trail = true, mesh = "s_aq_fluke" })
+		end
 	end
 	-- arms and head
 	local hand = Parts.armPair(B, { x = 0.62, y = tc[2] + 0.55, z = 0, len = 1.3, w = 0.28, col = "skin", hand = "fist", pri = 1.5 })
