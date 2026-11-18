@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stew","IBBOGI","WF",3,4,3,"8A4A2A","ED9121","thick brown chunky bowl","slurp","Slow-cooked strength.","edible,warm,healthy"},
+	{"stick","KMBLII","NO",3,4,3,"FFE082","FFFFFF","gooey sticky patch","squelch","You are now stuck. Sorry.","silly"},
+	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
 	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
 	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
 	{"sticky bun","IMBLGI","SNP",2,3,3,"A85A1E","D99A4A","spiral bun, gooey glaze","gloop","Hands will never be clean again.","edible,sticky,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"tarantula hawk","AJBJLB","ATMPO",3,7,1,"1E2A4A","E8701E","blue-black wasp, orange wings","buzz","Hunts tarantulas. Second worst sting.","insect,swarm,venomous"},
 	{"tarasque","AAEJAA","GKDk",8,4,9,"365314","CA8A04","turtle shell, lion head, six bear legs","roar","A turtle that bench-pressed a castle.","mythical,boss"},
 	{"tarbosaurus","AMEJBA","DkfT",8,6,7,"5A4A2E","B89A6A","asian tyrannosaur","roar","T rex's Asian twin.","dinosaur,extinct,reptile,predator"},
-	{"taro","IEBAKK","keO",3,7,6,"8A6A5A","C8B8D8","hairy brown root, lilac flesh","bonk","Hairy outside, purple inside.","edible,vegetable"},
-	{"tarpon","ABDJEC","UDfB",5,7,4,"B8C8D0","E8F0F4","huge silver scales","splash","The silver king. Leaps high.","fish,aquatic"},
-	{"tarsier","AMAJBA","Udeb",1,7,2,"A88A6A","3A2C20","eyes bigger than its brain","chatter","Its eyes are bigger than its stomach.","mammal,primate,nocturnal"},
 }

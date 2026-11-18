@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"notebook","BMAAJK","e",1,7,1,"2F6FD1","F2F2EE","spiral-bound notebook","tap","Taking notes. Taking names.","school"},
+	{"nothingness","FICNOI","iZ",4,3,3,"0D0D12","3A3A4A","blank grey-black area, sound fades","hush","There is nothing here. Literally.","spooky,silly"},
 	{"nothosaurus","ABDJEC","DfHB",5,6,7,"5A6A5A","C8C8B0","seal-like early sea reptile","roar","Half seal, half lizard.","extinct,reptile,aquatic,ocean"},
 	{"nothronychus","AMDJBA","DkfT",6,6,7,"8A7A5A","D8C8A8","potbellied scythe-claw dino","roar","Potbelly. Giant claws. Eats salad.","dinosaur,extinct,reptile,predator"},
 	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
 	{"pebble","FEAAKB","Ude",1,8,2,"9E9A94","D6D2CC","small smooth river stone","tick","Skips on water. Bonks on heads.","silly"},
 	{"pebble beach","MBDNII","SN",2,1,6,"9E9E9E","4FC3F7","grey round pebbles and crashing waves","rumble","Crunchy underfoot. Painful to fall on.","place,terrain"},
-	{"pecan","IEAAKK","UeO",2,8,5,"7A3E1E","A86A3A","long glossy brown nut","tok","Southern charm in a shell.","edible,nut"},
-	{"pecan pie","IMBLGI","ScN",2,3,3,"7A3E1E","D9A04A","glossy nut-topped pie","gloop","Sticky, nutty, and dangerous.","edible,sticky"},
 }

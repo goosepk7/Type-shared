@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"xeno drone","AJCJFA","ZfTM",5,8,4,"1C1917","57534E","black elongated insect alien, tail spike","hiss","Hides in vents. Hisses in vents.","alien,spooky"},
+	{"xiezhi","AHCJAA","TO",5,5,6,"0F766E","F8FAFC","one-horned goat-lion of justice","chime","Knows who's lying. Rams them.","mythical"},
+	{"xiphactinus","ABDJEC","DfB",6,7,4,"7A8A9A","D8E0E8","giant bulldog fish","splash","Swallowed fish as big as people.","fish,aquatic,extinct"},
 	{"xiphos","CKBHrK","fT",4,7,4,"A86F32","6B4226","leaf-shaped short blade","shing","Hoplite-approved stabbing leaf.","medieval,sharp,ancient"},
 	{"xoloitzcuintli","AMCJAA","DQf",4,7,4,"3A3A3A","6A6A6A","hairless sleek dog","bark","Ancient, hairless and warm to hug.","mammal,pet"},
 	{"xp","KHBOKJ","DWF",3,6,2,"A855F7","FACC15","purple bar filling up and bursting into LEVEL UP!","fanfare","+50 XP. For typing. Nice.","gaming"},

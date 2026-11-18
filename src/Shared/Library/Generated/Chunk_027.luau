@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"trample","KEDFOF","kPO",6,6,4,"795548","BCAAA4","stampede dust wave with hoofprints","rumble","Run over, flat and dusty.","heavy"},
+	{"trampoline","BMDLII","Ukl",3,1,5,"24262A","2F6FD1","round springy mat on legs","bonk","Boing! Bye!","sport,defense"},
+	{"transform","KLCOKI","jW",4,5,3,"BA68C8","FFF59D","swirl of sparkles then a new silhouette","poof","New look, who dis?","magic"},
 	{"transforming robot","OKDKNL","DegY",7,8,7,"DC2626","1D4ED8","robot unfolding from a sports car","clank","More than meets the eye.","robot,vehicle"},
 	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
 	{"trap","KMCLII","O",4,4,4,"8D6E63","FFD54F","glowing jaw-shaped rune on ground","snap","Step right in. Wait, don't.","meme"},
@@ -400,7 +403,4 @@ return {
 	{"wahoo","ABCJEC","DfB",4,10,4,"3A5A8A","C8D0D8","striped speedy fish","splash","Fastest name. Yell it. Wahoo!","fish,aquatic"},
 	{"waist","BMCL5K","RHN",2,4,3,"E8B48A","FF6FB5","spinning waist twirling a pink hula hoop","whoosh","Hoops around you until you are dizzy.","body,silly"},
 	{"waiter","LMCJNA","de",3,7,3,"111827","F8FAFC","bow tie, towel over arm, plate tray","ding","Your order is... incoming. Very fast.","food"},
-	{"wake","KHBF6B","FIO",3,7,1,"FDE047","EF4444","ringing alarm clock shockwave with a bucket of water","ring","RISE AND SHINE. It is 6 a.m. on a Saturday.","silly"},
-	{"wake up","KHBOKI","DF",1,8,2,"FFE082","FFFFFF","alarm-clock ring burst","ring","Rise and shine!","support"},
-	{"wakizashi","CKBHrK","fT",4,8,3,"C9CED4","1F2F55","short curved blade, wrapped hilt","shing","Katana's little sibling. Just as sharp.","medieval,sharp"},
 }
