@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"net gun","OMCAwI","eNO",2,7,3,"6B7B3A","8E9196","wide-barreled launcher, net bundle","twang","Fwoomp. Caught.","ranged,trap"},
+	{"net launcher","OKCMxI","eNO",3,5,5,"6B7B3A","B89B6A","tube that fires weighted nets","clank","Fwoomp. Caught. Next.","defense,mechanical"},
+	{"net trap","BMCLII","lNO",2,1,3,"B89B6A","6B7B3A","hidden net that yanks upward","snap","Hammock, but involuntary.","trap,defense"},
 	{"netherland dwarf","AMAJAG","UCd",1,6,1,"E8D8C8","8A6A4A","tiny round rabbit, short ears","squeak","The tiniest bunny. Max cute.","mammal,cute"},
 	{"network","ODDNmI","jLPh",5,1,5,"0F172A","22D3EE","humming racks of blinking lights joined by glowing cables","hum","The server is down. Everyone panic.","tech"},
 	{"neutron","FMAAKB","ZTe",2,9,3,"9CA3AF","E5E7EB","tiny grey ball with a blank face, no charge","thud","For you? No charge.","science"},
@@ -400,7 +403,4 @@ return {
 	{"parfait","IGBOKI","F",2,5,3,"F7F4EC","D7263D","tall glass of layered yogurt, berries","crunch","Layers of fruit, yogurt, crunch.","edible,healthy,breakfast"},
 	{"park","MGENII","FS",2,1,6,"7CB342","F5E6CA","grass, trees, benches, a duck pond","rumble","Lovely spot for a picnic. And an ambush.","place,terrain"},
 	{"park ranger","LGCJNA","QFc",3,6,5,"365314","D6A35A","flat-brim hat, khaki uniform, binoculars","whistle","Only you can prevent forest fires.","outdoor"},
-	{"parka","BCCONI","GJ",1,4,3,"E67E22","1F2F55","puffy hooded winter coat","swish","Marshmallow armour.","clothing,winter"},
-	{"parking lot","MEDNII","SN",1,1,6,"424242","F5F5F5","flat grey lot, painted lines","rumble","Every space is taken. Forever.","place,terrain,silly"},
-	{"parking meter","OKBCmI","Gb",1,1,7,"8E9196","C9CED4","post with coin slot","clank","Time's up.","mechanical"},
 }

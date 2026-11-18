@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lung","BFCFGE","kHI",4,6,3,"F2A1A1","E57373","pair of pink lungs inflating like bellows","whoosh","Deep breath in. Everybody out.","body,science"},
+	{"lungfish","ABCJEC","DfB",4,7,4,"6A6250","A89A80","eel-like with lungs, leg fins","splash","Breathes air. Naps in mud for years.","fish,aquatic,ancient"},
+	{"lupin","NGBNMI","dFS",2,1,2,"7E57C2","F48FB1","tall spire of pea-like blooms","rustle","A rocket made of flowers.","plant,flower"},
 	{"lure spell","KLBLII","dc",1,3,2,"FFD54F","FFFFFF","glowing tempting sparkle on the ground","ding","Ooh, shiny. Come closer.","silly"},
 	{"lurker","LICJNI","jZ",3,5,3,"52525B","F8FAFC","eyes peeking from behind a wall","whisper","Was here the whole time.","meme,stealth"},
 	{"lute","BMBFJI","jF",2,5,2,"C49A6C","8B5A2B","pear-shaped stringed instrument","strum","The bard is here. Run.","music,medieval"},
@@ -400,7 +403,4 @@ return {
 	{"mind grip","KLCAKJ","leO",6,8,3,"C9A8FF","7A4FE0","a glowing psychic grip lifts the target and slams them down","hum","Hold still. Now fall.","hero,movie,psychic"},
 	{"mind spike","FLBAuB","TO",5,9,1,"E040FB","FFFFFF","pink crystal spike of thought","zing","Ouch. In the brain.","psychic"},
 	{"mine bot","OABJGF","DEk",4,7,1,"1F2937","EF4444","small rolling bomb robot with blinking light","beep","Beep. Beep. Beepbeepbeep. BOOM.","robot,explosive"},
-	{"mine cart","DEBKHL","UDkg",3,7,5,"6B4F3A","8C8C8C","iron tub on little rail wheels","engine","Hold on to your helmet!","mechanical,vehicle,land"},
-	{"mine roller tank","DKDMHL","GDkfg",6,3,9,"4B5320","6D4C41","tank with spinning chain flails in front","boom","Whips the ground. Pops the mines.","mechanical,vehicle,military"},
-	{"mine shaft","EEDCII","GCSh",3,1,7,"6D4C41","FFB300","timber-framed tunnel with rail tracks","thud","Dig deep. Find gold. Lose map.","structure"},
 }

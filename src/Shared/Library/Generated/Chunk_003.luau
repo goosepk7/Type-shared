@@ -403,5 +403,4 @@ return {
 	{"braid","BMBLCD","fHN",3,5,5,"E0B050","E63946","thick woven blond braid with a red bow, lasso loop","swish","Rapunzel called. She wants her rope back.","body"},
 	{"brain","BLBMGE","jleO",5,3,2,"F4A6B7","E57390","pink wrinkly brain floating, psychic rings","hum","Big brain time. Finally.","body,science,silly"},
 	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
-	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
 }
