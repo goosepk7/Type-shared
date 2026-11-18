@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
 	{"clockmaker","LKCJNI","NO",3,3,4,"CA8A04","78350F","monocle, gears, tweezers","tick","Stops time. Briefly.","tools"},
@@ -403,4 +402,5 @@ return {
 	{"crossing guard","LMCJNI","GO",3,4,5,"F97316","F8FAFC","hi-vis vest, giant stop sign","whistle","STOP. Everyone stops.","silly"},
 	{"crosswalk","MMCLnI","GNO",3,1,5,"FFFFFF","111827","white road stripes with a lollipop STOP sign held up","whistle","Look left. Look right. Look left again. Stay.","place,school"},
 	{"crossword","BLBLnI","jSN",3,1,3,"F8FAFC","111827","black-and-white word grid with a chewed pencil","scratch","Seven down: \"defeat\", six letters. Starts with Y.","game,school"},
+	{"crouton","IMAELB","eVP",2,7,1,"D9A04A","F2D08A","small golden cube","pitter","Tiny bread bricks. Crunch on impact.","edible"},
 }

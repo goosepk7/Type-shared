@@ -3,9 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"notebook","BMAAJK","e",1,7,1,"2F6FD1","F2F2EE","spiral-bound notebook","tap","Taking notes. Taking names.","school"},
-	{"nothingness","FICNOI","iZ",4,3,3,"0D0D12","3A3A4A","blank grey-black area, sound fades","hush","There is nothing here. Literally.","spooky,silly"},
-	{"nothosaurus","ABDJEC","DfHB",5,6,7,"5A6A5A","C8C8B0","seal-like early sea reptile","roar","Half seal, half lizard.","extinct,reptile,aquatic,ocean"},
 	{"nothronychus","AMDJBA","DkfT",6,6,7,"8A7A5A","D8C8A8","potbellied scythe-claw dino","roar","Potbelly. Giant claws. Eats salad.","dinosaur,extinct,reptile,predator"},
 	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
 	{"nova","FHDFOI","EkP",6,8,1,"FFFDE7","FF80AB","blinding ring of white light","boom","A mini star explosion. Mini.","space,explosive"},
@@ -404,4 +401,6 @@ return {
 	{"pebble beach","MBDNII","SN",2,1,6,"9E9E9E","4FC3F7","grey round pebbles and crashing waves","rumble","Crunchy underfoot. Painful to fall on.","place,terrain"},
 	{"pecan","IEAAKK","UeO",2,8,5,"7A3E1E","A86A3A","long glossy brown nut","tok","Southern charm in a shell.","edible,nut"},
 	{"pecan pie","IMBLGI","ScN",2,3,3,"7A3E1E","D9A04A","glossy nut-topped pie","gloop","Sticky, nutty, and dangerous.","edible,sticky"},
+	{"pecan sandies","IMBAKK","Uke",3,7,2,"E8C88A","7A3E1E","crumbly round nut cookies","whoosh","Sandy, buttery, and nutty.","edible,dessert"},
+	{"peccary","AMCJAA","dfM",3,4,4,"4E4642","E8E0D8","bristly pig-like, white collar","bleat","Smells funky. Travels in gangs.","mammal,farm,desert"},
 }

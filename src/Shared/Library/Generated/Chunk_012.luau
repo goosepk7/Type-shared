@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
-	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
 	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
 	{"growth potion","BLAO2I","W",3,5,1,"E67E22","BFE6F2","big bottle labelled EAT ME","bubble","Embiggen yourself.","magic,fantasy"},
 	{"growth ray","CLCBwI","jWe",4,7,3,"E67E22","7D3CB5","ray gun with big flared dish","zap","Embiggening in progress.","scifi,ranged"},
@@ -402,4 +400,7 @@ return {
 	{"hong kong milk tea","IBBOKI","F",2,6,2,"A8784A","F2E8D8","strong silky milk tea","slurp","Silk-smooth tea strength.","edible,drink"},
 	{"honk","KMBFOB","kO",2,9,1,"FFEB3B","FFFFFF","big comic horn sound ring","honk","HONK! Peace was never an option.","silly,meme,loud"},
 	{"honor","KHCOKJ","GD",3,5,5,"FFD54F","1565C0","proud golden aura","horn","A fair fight. A strong fight.","support"},
+	{"hood","BIBOVJ","GZN",2,5,3,"374151","111827","dark pulled-up hood with only two eyes visible","hush","Hood up. Mystery on.","clothing,stealth"},
+	{"hooded seal","ABCJEC","UdfB",3,5,4,"9A9AA0","3A3A3A","inflatable nose balloon","bark","Blows up a red nose balloon.","mammal,aquatic"},
+	{"hoodie","BMCONI","FZ",1,6,2,"8E9196","24262A","zip hoodie with hood up","swish","Hood up. Mode: stealth.","clothing"},
 }

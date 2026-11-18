@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"walker","DKEKFA","keg",6,3,8,"78909C","455A64","boxy cockpit on two tall jointed legs","stomp","It walks. Slowly. Menacingly.","mechanical,vehicle,land,robot"},
 	{"walkie talkie","BMAOKI","h",1,6,3,"24262A","F1C40F","chunky radio with antenna","thud","Over. Send backup. Over.","tech"},
 	{"walking house","DIDKBA","DgO",5,3,7,"6D4C41","FFB300","crooked hut on giant bird legs","whoosh","Knock knock. It walks away.","spooky,silly"},
 	{"wall","EEDCII","GS",3,1,8,"9E9E9E","757575","flat-topped wall of fitted blocks","thud","It is a wall. It does wall things. Well.","structure,defense"},
@@ -403,4 +402,5 @@ return {
 	{"xiezhi","AHCJAA","TO",5,5,6,"0F766E","F8FAFC","one-horned goat-lion of justice","chime","Knows who's lying. Rams them.","mythical"},
 	{"xiphactinus","ABDJEC","DfB",6,7,4,"7A8A9A","D8E0E8","giant bulldog fish","splash","Swallowed fish as big as people.","fish,aquatic,extinct"},
 	{"xiphos","CKBHrK","fT",4,7,4,"A86F32","6B4226","leaf-shaped short blade","shing","Hoplite-approved stabbing leaf.","medieval,sharp,ancient"},
+	{"xoloitzcuintli","AMCJAA","DQf",4,7,4,"3A3A3A","6A6A6A","hairless sleek dog","bark","Ancient, hairless and warm to hug.","mammal,pet"},
 }

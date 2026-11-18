@@ -402,4 +402,5 @@ return {
 	{"beetle knight","AKBJFA","GDk",3,4,7,"1E3A8A","15803D","armored beetle with horn lance","click","Built-in armor. Very shiny.","insect,warrior"},
 	{"beg","KMAOKI","c",1,3,1,"F8BBD0","FFFFFF","sparkly pleading hands","aww","Pleeeease? Pretty please?","cute,silly"},
 	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
+	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 }

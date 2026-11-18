@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"softball","BMAA3F","ke",2,8,4,"F1C40F","C0392B","big yellow stitched ball","bonk","Not actually soft.","sport"},
 	{"softshell turtle","AMBJUA","GNB",2,4,5,"8A8A6A","C8C8A8","flat pancake turtle with snorkel nose","hiss","A pancake with a snorkel.","reptile,armored"},
 	{"soil","FGBCnI","GW",3,2,5,"5C3E25","7E9C4A","mound of dark earth with sprouts","rustle","Good for gardens. Bad for intruders.","plant"},
 	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
@@ -31,7 +30,7 @@ return {
 	{"sonic beam","FFCBKI","TeO",5,10,1,"B39DDB","FFFFFF","ringed visible sound beam","eeee","Loud enough to see.","loud"},
 	{"sonic blaster","CFCFwI","kIeO",5,7,4,"7D3CB5","C9CED4","speaker-dish shaped gun","boom","BWAAAAMMMM.","scifi,ranged"},
 	{"sonic boom","FFDFOB","kO",7,10,1,"CFE3FF","FFFFFF","cone-shaped shockwave ring burst","boom","Faster than sound. Louder too.","loud"},
-	{"sonic grenade","CFBGKI","keO",4,7,1,"C9CED4","7D3CB5","ringing grenade","zap","EEEEEEEE.","scifi,ranged"},
+	{"sonic grenade","CFBGKI","kIe",4,7,1,"C8AAFF","585F6C","a disc mine thumping out pressure rings","zap","EEEEEEEE. Three times.","scifi,ranged"},
 	{"sonic scream","KFDN6I","jkI",5,9,2,"E8F4FF","8FB8E8","a cone of ring-shaped sound waves that blasts people back","boom","Use your inside voice. No.","hero,movie,loud"},
 	{"sonic wave","FFCFOB","kTO",5,10,1,"B388FF","E3F2FD","ripple rings of visible sound","boom","Turn it down. Way down.","loud"},
 	{"soot","FABDOJ","jN",2,4,1,"2E2E2E","6B6B6B","black powdery puff","puff","Everyone looks like a chimney sweep.","silly"},
@@ -403,4 +402,5 @@ return {
 	{"stick","KMBLII","NO",3,4,3,"FFE082","FFFFFF","gooey sticky patch","squelch","You are now stuck. Sorry.","silly"},
 	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
 	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
+	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
 }

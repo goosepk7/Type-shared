@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"crouton","IMAELB","eVP",2,7,1,"D9A04A","F2D08A","small golden cube","pitter","Tiny bread bricks. Crunch on impact.","edible"},
 	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
 	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
 	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
@@ -403,4 +402,5 @@ return {
 	{"doner kebab","IGBOKI","F",2,5,3,"C88A5A","F2E8D0","wrapped flatbread with sliced meat","crunch","A spinning tower of flavor.","edible,healthy"},
 	{"donkey","AMCKAA","GDkg",3,4,5,"8A8076","D8D0C4","long ears, grey coat, pale muzzle","bray","Stubborn. Loyal. Loud.","mammal,farm"},
 	{"donut","IMBLKI","UdSc",2,3,3,"F2A6C8","D9A04A","ring torus, pink glaze, sprinkles","chomp","A ring of power, but glazed.","edible,sweet"},
+	{"donut decoy","IMBLKI","jdc",2,3,3,"F2A6C8","D9A04A","tempting donut on a plate","chomp","Look over there! A donut!","edible,sweet"},
 }

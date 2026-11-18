@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
 	{"sticky bun","IMBLGI","SNP",2,3,3,"A85A1E","D99A4A","spiral bun, gooey glaze","gloop","Hands will never be clean again.","edible,sticky,sweet"},
 	{"sticky floor","BMCLII","NO",2,1,3,"F1C40F","D2B48C","tacky floor mat","snap","Every step is a struggle.","trap,sticky"},
 	{"sticky note","BMALJK","dN",1,8,1,"F1C40F","F1C40F","small square sticky paper","tap","Stuck to your forehead.","office,sticky"},
@@ -403,4 +402,5 @@ return {
 	{"tarpon","ABDJEC","UDfB",5,7,4,"B8C8D0","E8F0F4","huge silver scales","splash","The silver king. Leaps high.","fish,aquatic"},
 	{"tarsier","AMAJBA","Udeb",1,7,2,"A88A6A","3A2C20","eyes bigger than its brain","chatter","Its eyes are bigger than its stomach.","mammal,primate,nocturnal"},
 	{"tart","IMBAKK","Uke",3,7,2,"D9A04A","D23A5A","fluted crust, glossy fruit top","whoosh","A pie's elegant little sister.","edible"},
+	{"tartar sauce","IMBLGI","kSO",2,3,2,"F7F2DC","7DAE3A","white dip with pickle flecks","squeak","Fish sticks' best friend.","edible,slippery,silly,sauce"},
 }

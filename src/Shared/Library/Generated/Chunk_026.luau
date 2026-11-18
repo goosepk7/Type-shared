@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"tartar sauce","IMBLGI","kSO",2,3,2,"F7F2DC","7DAE3A","white dip with pickle flecks","squeak","Fish sticks' best friend.","edible,slippery,silly,sauce"},
 	{"tasmanian devil","AMBJAA","Ujf",4,6,2,"1E1A18","F2F2F0","black stocky, white chest band, big jaws","screech","Spins and screams. Mostly screams.","mammal,marsupial"},
 	{"tater tots","IMAELB","eVP",2,7,1,"D49A3A","F2CE7A","little golden cylinders","pitter","Tiny potato barrels. Fire at will.","edible,savory"},
 	{"tattletale","LMBJNA","jh",2,7,2,"FACC15","DC2626","pointing kid shouting","whistle","I'M TELLING. Teacher arrives.","silly,school"},
@@ -403,4 +402,5 @@ return {
 	{"trampoline","BMDLII","Ukl",3,1,5,"24262A","2F6FD1","round springy mat on legs","bonk","Boing! Bye!","sport,defense"},
 	{"transform","KLCOKI","jW",4,5,3,"BA68C8","FFF59D","swirl of sparkles then a new silhouette","poof","New look, who dis?","magic"},
 	{"transforming robot","OKDKNL","DegY",7,8,7,"DC2626","1D4ED8","robot unfolding from a sports car","clank","More than meets the eye.","robot,vehicle"},
+	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
 }
