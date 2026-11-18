@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"slapshot","BCBA3B","Uke",4,10,2,"20242B","7FD3F0","ice-blue puck skimming the ground, banking off walls","crack","Off the boards and right in.","sport,hockey,projectile"},
+	{"slapstick","CMCHJK","dkf",1,7,2,"C0392B","F1C40F","two clapping wooden slats","boing","Clack! Comedy!","silly"},
+	{"slash","KKCHJB","fT",5,9,1,"B0BEC5","FFFFFF","wide crescent slash streak","shing","Swish! Got it.","sharp"},
+	{"slate","BEBAJK","TeV",3,7,4,"4B5563","6B7280","thin dark grey stone tile spinning edge-first","clack","Wiped clean. With your face.","sharp"},
 	{"slay","KHCHrB","kfTO",6,8,2,"F0ABFC","FACC15","glittering pink sword slash with sparkles and a hair flip","shing","Slay. Both meanings. Simultaneously.","meme,warrior"},
 	{"sled","DCBKHF","DkgN",3,7,3,"C62828","8D6E63","curved wooden runners, slatted seat","whoosh","Downhill only. Uphill is your problem.","mechanical,vehicle,land"},
 	{"sledgehammer","JKDHtK","kfO",6,3,7,"5B6168","8B5A2B","heavy block head, long handle","bonk","Subtlety not included.","medieval,heavy"},
@@ -320,7 +324,7 @@ return {
 	{"speed blitz","KDCHNB","DT",5,10,2,"FFE04A","FF8A3A","three blurring dashes that leave afterimages","whoosh","Did you catch that? No? Exactly.","hero,movie,speed"},
 	{"speed potion","BDAO2I","D",3,7,1,"F1C40F","BFE6F2","fizzy yellow flask","bubble","Zoom zoom zoom.","magic,fantasy"},
 	{"speedboat","DBCKHC","DkIgB",5,9,4,"E53935","F5F5F5","sleek pointed hull, big twin motors","engine","Leaves a wake. And a lot of wet enemies.","vehicle,aquatic"},
-	{"speedrun","KFCOKB","DY",3,10,2,"FFEB3B","00E5FF","clock and speed lines around caster","zoom","Skip the cutscenes. Go go go.","meme,speed"},
+	{"speedrun dash","KHBOKB","DTY",4,10,1,"3BE07A","FFFFFF","a stopwatch pop and a blur through a checkered gate","whoosh","Any percent. All the percent. Through you.","meme,internet,mobility"},
 	{"speedrun ghost","LLCJNA","DZY",3,10,1,"A5F3FC","F8FAFC","translucent copy racing ahead","whoosh","Your best time. Mocking you.","meme,gaming,ghost"},
 	{"speedrunner","LMCJNA","DTY",4,10,3,"DC2626","FACC15","blurry figure with timer above head","whoosh","Clips through walls. Any% only.","meme,gaming"},
 	{"spell","FLBAKB","e",3,7,1,"9575FF","E9DCFF","small glowing glyph projectile","shimmer","The most basic magic. Still magic.","magic"},
@@ -399,8 +403,4 @@ return {
 	{"spittlebug","AMAJFG","dASP",1,6,1,"8A6A4A","F2F2EE","bug hiding in spit foam","buzz","Lives in a bubble bath.","insect"},
 	{"splash","FBBF6B","dI",2,7,1,"3FA9F5","E3F6FF","crown-shaped water burst","splash","Cannonball! Everyone is wet now.","aquatic,silly"},
 	{"splash zone","FBCNOI","dN",2,4,2,"4FC3F7","E1F5FE","area of constant bouncing splashes","splash","You will get wet. Accept it.","aquatic,silly"},
-	{"splat","KMBAKB","dN",2,8,1,"AED581","FFFFFF","messy paint-like splat burst","splat","Splat. Messy and proud.","silly"},
-	{"split","KLCOKI","V",4,6,2,"80DEEA","FFFFFF","caster dividing into two","pop","Now there are two of me. Uh oh.","magic"},
-	{"sploosh","KBCF6F","I",3,7,1,"29B6F6","FFFFFF","cartoony splash crown","splash","Kersploosh! So wet.","aquatic,silly"},
-	{"spoiled milk","IJBDOJ","jMP",3,3,2,"E8E8C8","C8C88A","bloated carton, wavy stink lines","whiff","Expired three weeks ago. Weaponized today.","edible,smelly,silly"},
 }

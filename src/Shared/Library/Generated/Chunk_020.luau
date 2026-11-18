@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"planetary alignment","HLFNOI","DWO",8,2,6,"311B92","FFD54F","row of glowing planets above the area","choir","Once every thousand years. Right now.","space,magic"},
+	{"plank","BMCCJK","Gk",2,4,4,"8B5A2B","D2B48C","long flat wooden board","clink","Swing it. Stack it. Walk it.","hardware"},
+	{"plankton","ABADLJ","dSPB",1,6,1,"8AD0A8","E8F8E8","swirling cloud of tiny drifters","splash","Small. Everywhere. Doesn't care.","fish,aquatic"},
 	{"plant","NGBNMI","FS",1,1,3,"43A047","2E7D32","sprouting leafy green plant","rustle","It is a plant. Water it.","plant,houseplant"},
 	{"plant mister","BBADJI","F",1,6,1,"2E8B57","BFE6F2","small spray bottle","thud","Psst psst, refreshed.","garden"},
 	{"plantain","IMBHJI","kf",3,5,4,"D6B85A","3B2A14","long thick banana, mottled skin","bonk","A banana that went to the gym.","edible,silly"},
@@ -400,7 +403,4 @@ return {
 	{"pyroclastic flow","HAFFOF","KkP",9,8,5,"5D4037","FF7043","rolling grey-black ash avalanche with fire glow","roar","An avalanche made of hot nope.","natural,fire,danger"},
 	{"pyromancer","LACJNA","KEe",6,5,4,"B91C1C","F59E0B","singed red robes, flaming hands","whoosh","Eyebrows grow back. Eventually.","magic,fire"},
 	{"pyroraptor","AACJBA","DQfT",5,9,3,"C8401E","F2A04A","feathered raptor, fiery colors","screech","Fire thief. Sounds cool.","dinosaur,extinct,reptile,predator"},
-	{"pyrosome","AHCJGJ","SOB",2,2,1,"E8D8F8","8AE8F0","glowing hollow tube colony","squelch","A glowing sea pickle. Yes really.","aquatic,ocean,venomous"},
-	{"python","AMDJCD","fHO",6,4,6,"6A5A3A","D8C08A","huge blotched coiled snake","hiss","Hugs too hard. Way too hard.","reptile"},
-	{"qianzhousaurus","AMDJBA","DkfT",7,6,7,"8A6A4A","D8B07A","long-snouted tyrannosaur","roar","Long nose. Tells no lies.","dinosaur,extinct,reptile,predator"},
 }

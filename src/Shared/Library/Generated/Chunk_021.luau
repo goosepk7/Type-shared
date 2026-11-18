@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pyrosome","AHCJGJ","SOB",2,2,1,"E8D8F8","8AE8F0","glowing hollow tube colony","squelch","A glowing sea pickle. Yes really.","aquatic,ocean,venomous"},
+	{"python","AMDJCD","fHO",6,4,6,"6A5A3A","D8C08A","huge blotched coiled snake","hiss","Hugs too hard. Way too hard.","reptile"},
+	{"qianzhousaurus","AMDJBA","DkfT",7,6,7,"8A6A4A","D8B07A","long-snouted tyrannosaur","roar","Long nose. Tells no lies.","dinosaur,extinct,reptile,predator"},
 	{"qilin","AHDKAA","KDFg",6,8,6,"0F766E","FCD34D","scaled deer, single horn, flame wisps","chime","Walks on grass without bending it. Show-off.","mythical,mount,holy,ancient"},
 	{"quagga","AMDJAA","Dk",5,8,5,"A8784A","F2E8D8","half-striped zebra","neigh","A zebra that ran out of stripes.","mammal,extinct"},
 	{"quail","AMAJDA","df",1,6,2,"8A6A4A","D8C4A8","tiny round bird, head plume","cluck","Round bird with a feather antenna.","bird,farm"},
@@ -400,7 +403,4 @@ return {
 	{"rock monster","AEDJGF","GDk",6,3,8,"78716C","A8A29E","lumpy boulder with stubby arms","rumble","Rocks and rolls.","heavy"},
 	{"rock rose","NGBNMI","dFS",1,1,3,"F48FB1","FFEB3B","papery pink blooms on scrubby bush","rustle","Blooms for one day only. Make it count.","plant,flower"},
 	{"rock shield","FECIKI","G",2,2,9,"8D6E63","BCAAA4","rocks orbiting into a dome","rumble","A shield made of floor.","heavy,defence"},
-	{"rock solid","KECOKI","G",1,2,9,"8D6E63","BCAAA4","stony grey glow","thunk","Unshakeable.","defence,heavy"},
-	{"rock star","LDCJNA","jkO",5,6,4,"111827","DC2626","leather jacket, electric guitar, wild hair","guitar","Smashes the guitar. And you.","music"},
-	{"rock throw","FECAKB","keO",5,6,6,"8D6E63","BCAAA4","chunk of earth torn up and hurled","thud","Yeet, but geology.","heavy"},
 }

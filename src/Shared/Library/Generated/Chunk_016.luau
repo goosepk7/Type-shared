@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"loser","LMBJNA","jdE",2,4,2,"9CA3AF","60A5FA","grumpy kid flipping a game board, pieces flying","groan","Best two out of three? Out of five? Seven?","silly,gaming"},
 	{"loss","KIBOKJ","jXN",2,3,1,"6B7280","EF4444","sad trombone over a red FAIL stamp","groan","Wah wah wahhh.","meme,gaming,silly"},
 	{"lost city","MEFNII","ZSh",4,1,9,"E6C27A","43A047","overgrown stone city with golden domes","rumble","Nobody has found it. Except you, now.","ancient,mythical"},
 	{"lotion","BBBL2I","UFN",2,2,2,"FDF2F8","F9A8D4","pump bottle squirting a slippery white puddle","squirt","Slippery hands. Dropped everything. Smells nice.","household,slippery"},
@@ -402,5 +403,4 @@ return {
 	{"microlight","DFBKHB","DAkg",3,6,2,"FFEB3B","1565C0","tiny wing over an open seat and prop","propeller","Basically a lawn chair with wings.","vehicle,air,silly"},
 	{"microphone","BDAFKI","jO",1,6,2,"C9CED4","24262A","round-head microphone on cable","feedback","Mic drop. Literally.","music,loud"},
 	{"microraptor","AMBJBB","DAQfT",3,9,3,"2A2A3A","6A8AE8","four-winged glider dinosaur","screech","Four wings. Shiny black feathers.","dinosaur,extinct,reptile,predator"},
-	{"microscope","BMBO1I","e",1,1,4,"F2F2EE","24262A","lab scope with eyepiece","bubble","Sees tiny weaknesses.","science"},
 }

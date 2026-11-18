@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravy boat","IMBNGI","SNP",2,4,1,"F7F4EC","8A5A2A","white boat-shaped jug","splat","A boat that only sails gravy.","edible,sauce"},
 	{"gravy flood","IMDFGI","INP",5,4,1,"8A5A2A","C8904A","wave of brown gravy","splat","A delicious disaster.","edible,sauce"},
 	{"gray fox","AMBJAA","jfb",3,7,2,"8C8C8E","C0602A","grey back, rusty sides, black-tipped tail","yip","The fox that climbs trees.","mammal,wild"},
 	{"gray squirrel","AMAJAA","Cdb",1,6,1,"8E8E8E","F2F2F0","grey bushy tail, chunky","squeak","Steals bird seed with zero shame.","mammal,cute"},
@@ -402,5 +403,4 @@ return {
 	{"highland cow","AMDJAA","DkO",6,4,7,"B05E2A","E2A060","shaggy ginger fringe over eyes, horns","moo","Excellent hair day, every day.","mammal,heavy,farm,cute"},
 	{"highlander","LECJNA","Dkf",6,6,6,"15803D","DC2626","kilt, claymore, wild hair","drone","Charges in with bagpipe backup.","warrior"},
 	{"highlands","MFFNII","SN",3,1,8,"7CB342","AB47BC","rolling hills of heather and mist","rumble","Misty, windy, and wild.","place,terrain"},
-	{"hiker","LGCJNA","QF",3,5,5,"15803D","F97316","big backpack, walking poles, map","whoosh","Walks forever. Never tired.","outdoor"},
 }

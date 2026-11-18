@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"narwhal","ACDJEC","UDTB",6,8,4,"8A9094","E2E6EA","spotted grey whale, long spiral tusk","click","Unicorn of the sea. Tusk is a tooth!","mammal,aquatic,ocean,arctic"},
 	{"narwhal unicorn","ABDJEC","DTB",5,7,5,"94A3B8","F0ABFC","whale with rainbow spiral horn","splash","A unicorn that took up swimming.","aquatic,silly"},
 	{"nasi goreng","IAAELB","KeP",2,6,1,"C8762B","F2D23A","fried rice with egg on top","pitter","Indonesian fried rice with a sunny egg.","edible,grain"},
 	{"nasi lemak","IGBOKI","F",2,5,3,"F7F4EC","D8302B","coconut rice, egg, sambal, peanuts","crunch","A whole breakfast on a leaf.","edible,healthy"},
@@ -142,6 +143,7 @@ return {
 	{"nova bomb","FHDGKI","KEk",8,6,1,"FFFDE7","FF80AB","white-pink sphere detonating into a nova ring","boom","A tiny supernova. Pocket edition.","space,explosive"},
 	{"nozzle","JBBBwB","kIe",4,8,3,"EAB308","9CA3AF","brass hose nozzle on full jet blast","squirt","Set to JET. Never set it to jet.","tool,household"},
 	{"npc","LMCJNA","jdQ",3,3,4,"A3A3A3","F5F5F4","blank face, exclamation mark over head","ding","Says the same line forever. Nice weather.","meme,gaming,silly"},
+	{"npc walk","LMCJNA","dZc",3,5,5,"C8CCD2","FFD54F","a blank grey villager striding stiffly, quest marker","footstep","Hello traveller. Nice weather. Hello traveller.","meme,internet,decoy"},
 	{"nuckelavee","AJDJAA","DfMP",7,6,6,"7F1D1D","365314","skinless horse-rider fused as one","roar","The worst horse in Scottish history.","mythical,spooky"},
 	{"nuclear blast","HAFGKI","KEkPO",10,6,2,"FFEB3B","FF5722","blinding flash, towering cartoon mushroom cloud","boom","Big. Bright. Bye.","explosive,danger"},
 	{"nuclear winter","HCFNOI","iJSM",9,2,6,"607D8B","C6FF00","grey frozen wasteland with faint green glow","hush","Cold, dark and glowy. Bad combo.","frozen,toxic,danger"},
@@ -401,6 +403,4 @@ return {
 	{"pancake","IMBAKK","Uke",3,7,2,"E8B860","C8762B","round fluffy disc, butter pat","whoosh","A fluffy frisbee with syrup.","edible,breakfast"},
 	{"pancake shield","IMCIII","Ga",3,3,6,"E8B860","C8762B","round fluffy pancake on arm","thud","Syrup-coated deflection.","edible"},
 	{"pancake tornado","IMDNOK","kleP",5,7,2,"E8B860","B5651D","spinning stack of flying pancakes","whoosh","Breakfast, but spinning.","edible,silly"},
-	{"pancake tortoise","AMBJUA","GN",2,2,5,"8A6A3A","C8A06A","flat flexible shell","hiss","Hides in cracks like a pancake.","reptile,armored"},
-	{"pancit","IMBLGI","HN",2,3,3,"E8C070","7DBE3A","stir-fried thin noodles","gloop","Long noodles for a long life.","edible,sticky"},
 }

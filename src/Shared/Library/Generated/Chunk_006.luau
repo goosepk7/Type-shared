@@ -368,6 +368,7 @@ return {
 	{"crab legs","IMBHJI","fT",3,5,4,"E8603A","F7F2EC","long red jointed legs","bonk","Crack them open. Or crack heads.","edible,silly"},
 	{"crab nebula","MLFDOJ","jZSP",6,2,6,"FF7043","4FC3F7","glowing cosmic cloud in a familiar shape","twinkle","A famous cloud of space glitter.","space,star"},
 	{"crab rangoon","IMBAKF","ke",3,6,2,"D9A04A","F7F2EC","crispy folded wonton star","splat","A crunchy star with cream inside.","edible"},
+	{"crab rave","ABBJRA","Qfh",4,7,4,"FF7A45","7FD8FF","three orange crabs shuffling sideways, claws up","click","Crab is gone. Crab is back. Crab brought friends.","meme,internet,crab,summon"},
 	{"crab spider","AJBJQA","ZfMN",2,6,2,"F2E8D8","E8A0C0","spider that changes color","skitter","Hides in flowers. Ambush.","arachnid,spooky,venomous"},
 	{"crab tank","DKDMFA","Gfeg",6,4,8,"E53935","FF9800","armoured tank walking sideways on legs","engine","Walks sideways. Pinches forward.","vehicle,robot"},
 	{"crabapple tree","NGCCMI","GWkSce",2,1,6,"5D4037","F48FB1","small tree with pink blossom and tiny apples","rustle","Throws tiny sour apples.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"cream puff","IMBLKI","dSc",2,3,3,"E8C88A","F7F2EC","round puff pastry, cream","chomp","A puff of cream in a pastry cloud.","edible,sweet"},
 	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
 	{"cream tea","IGBOKI","F",2,5,3,"F7F2EC","C8762B","tea with scones and jam","crunch","Very British. Very civilized.","edible,healthy,fancy"},
-	{"creamed corn","IMBLGI","SNP",2,3,3,"F2D06A","F2E8C8","creamy yellow mush","gloop","Corn that gave up.","edible,sticky"},
 }

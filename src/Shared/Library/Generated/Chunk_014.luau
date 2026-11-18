@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"internet","MDFN5I","jdPbh",7,9,4,"3B82F6","22D3EE","glowing globe-web of links, cat pictures and loading wheels","bzzt","Came for one thing. Left six hours later.","tech,meme"},
 	{"intersection","MMDNnI","jSNO",5,1,6,"4B5563","FACC15","crossed roads jammed with honking cars and a stuck light","horn","Nobody moves. Everybody honks.","place,vehicle"},
 	{"inugami","AICJAJ","Qf",4,7,3,"F8FAFC","DC2626","white spirit dog with red markings","bark","Loyal. Spooky loyal.","yokai,canine"},
 	{"invention","ODCL1I","jELh",5,2,3,"F59E0B","60A5FA","lightbulb wired to a toaster, an umbrella and a fan","ding","Patent pending. Explosion also pending.","science,silly"},
@@ -402,5 +403,4 @@ return {
 	{"lake effect snow","GCDEOJ","JSN",6,3,4,"ECEFF1","90CAF9","narrow band dumping heaps of snow","hush","Feet of snow. In one stripe.","frozen,storm"},
 	{"lake monster","ABEJCC","ZfB",7,4,7,"1E3A8A","4ADE80","long neck, humped back above still water","splash","Blurry in every single photo.","cryptid,aquatic"},
 	{"laksa","IABOGI","KF",3,4,3,"E8762B","F2E8D0","orange coconut noodle soup","slurp","Spicy coconut noodles in a bowl.","edible,warm,healthy"},
-	{"lamassu","AHDJAA","GAk",6,4,9,"C2A26B","1E3A8A","winged bull with bearded human head","stomp","A gatekeeper with excellent beard care.","mythical,guardian,ancient"},
 }
