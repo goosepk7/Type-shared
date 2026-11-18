@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poison breath","FJCFOB","MP",5,6,1,"76FF03","33691E","cone of green toxic mist","hiss","Worst breath imaginable.","toxic"},
 	{"poison bubble","FJBGKJ","UM",3,4,1,"76FF03","F8BBD0","green bubble that pops into fumes","pop","Don't pop it. Too late.","toxic,silly"},
 	{"poison cloud","FJDDOJ","SMNP",5,3,2,"76FF03","33691E","rolling bilious green cloud with bubbles","hiss","Smells as bad as it looks.","toxic"},
 	{"poison dart","FJBAJB","TMe",4,9,1,"64DD17","1B5E20","thin green-dripping needle","zip","Tiny pinch. Big problem.","toxic,sharp"},
@@ -214,7 +215,7 @@ return {
 	{"pronghorn","AMCJAA","Dk",4,10,4,"C08A50","FFFFFF","forked horns, white rump, sleek","bleat","Second fastest land animal. Petty.","mammal,wild"},
 	{"proof","KHBAJB","TaO",3,7,2,"FACC15","111827","evidence bag slammed on a desk with a spotlight","bang","Pics or it did not happen. Here are the pics.","meme"},
 	{"propane tank","CACL2I","KEk",7,1,3,"F2F2EE","C0392B","tall gas cylinder with valve","boom","Hissss... KABOOM.","explosive,flammable"},
-	{"propeller hat","BMBONI","dA",1,6,1,"C0392B","F1C40F","beanie with spinning propeller","swish","Hover-ish. Mostly silly.","clothing,silly"},
+	{"propeller cap","BFBONE","Al",1,6,1,"2FB3A3","F28C28","beanie with a spinning propeller for a slow hover","swish","Hover-ish. Mostly silly.","game,platformer,mobility"},
 	{"propeller plane","DFCKHB","DAkg",4,7,5,"F5F5F5","C62828","small single-wing plane, nose propeller","propeller","Bzzzzzzzzz... thunk.","vehicle,air"},
 	{"prosciutto","IMBAKK","Uke",3,7,2,"D8706A","F2E0D8","paper-thin pink slices","whoosh","Fancy ham, paper thin.","edible"},
 	{"protea","NGCNMI","dFS",2,1,3,"F48FB1","FFFFFF","giant spiky artichoke bloom","rustle","Looks like an alien. Is a flower.","plant,flower,silly"},
@@ -402,5 +403,4 @@ return {
 	{"rainbow grasshopper","AMAJFG","UdAP",1,6,1,"2AA06A","E8501E","grasshopper painted every color","buzz","Looks painted by a kid.","insect"},
 	{"rainbow lightning","FDDAKB","jeLV",7,10,1,"FF4081","40C4FF","bolt splitting into rainbow branches","crack","Every colour of zap.","electric,cute"},
 	{"rainbow lollipop","IMBHJI","jdf",3,5,4,"E8434F","4FA3E8","rainbow spiral disc on stick","bonk","Hypnotic swirls. Look closely.","edible,silly,candy"},
-	{"rainbow lorikeet","AMBJDB","jdA",2,6,2,"2A6AE8","E8501E","parrot in every rainbow color","squawk","A flying rainbow. Very loud.","bird,jungle,silly"},
 }

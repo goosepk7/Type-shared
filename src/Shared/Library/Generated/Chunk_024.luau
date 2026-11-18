@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snorkel","BBAOKF","B",1,5,2,"F1C40F","BFE6F2","tube with goggle mask","bonk","Breathe underwater-ish.","sport,ocean"},
 	{"snot","FJBLGI","SHNP",2,3,2,"A8D84E","7FB030","stretchy green goo blob with drippy strings","squelch","Pick a card. Wait, that is not a card.","silly,sticky,gross"},
 	{"snout","BMBMGG","cHe",3,3,4,"F4A6B7","E57390","pink pig snout, two round nostrils, snuffling","grunt","Sniffs out snacks at 500 paces.","body,farm,silly"},
 	{"snow","GCCEOJ","JSN",2,3,2,"FFFFFF","D6E6F2","soft falling flakes, white ground","hush","Pretty. Cold. Fun for exactly ten minutes.","frozen"},
@@ -239,6 +240,7 @@ return {
 	{"spider walker","DKDKFA","DfgN",6,5,7,"37474F","E53935","cockpit on eight jointed metal legs","clank","Crawls up walls. Ugh.","mechanical,vehicle,land,robot"},
 	{"spike","CKBLII","STO",4,1,7,"9CA3AF","4B5563","row of sharp steel cones popping up from a floor plate","shing","Every platformer's favourite surprise.","trap,sharp,gaming"},
 	{"spike bomb","CACGKF","ETV",7,4,2,"3A3F45","E67E22","bomb studded with spikes","boom","Explodes. Then pokes.","explosive"},
+	{"spike chain","EKCL3K","kSR",6,6,7,"3A3D45","C9CED6","spiked iron ball on a chain sweeping round a post","whoosh","Mind the swing.","game,platformer,hazard"},
 	{"spike corridor","MKCLII","STN",5,1,7,"616161","9E9E9E","stone hall with spikes in walls","echo","Run. Dodge. Run some more.","place,adventure,sharp"},
 	{"spike launcher","OKCMwI","TeV",5,6,5,"3A3F45","8A929B","turret spraying metal spikes","clank","A porcupine with a grudge.","defense,mechanical"},
 	{"spike pit","EECLII","ZSTO",5,1,6,"5D4037","9E9E9E","hidden hole lined with sharp stakes","thud","Mind the gap. Mind the pointy bits.","structure,defense,sharp"},
@@ -253,6 +255,7 @@ return {
 	{"spiked shield","BKCIyI","GkT",4,4,7,"3A3F45","8A929B","shield studded with spikes","clang","Defensive and offensive. Mostly offensive.","armor,defense"},
 	{"spin","KFCN5K","kf",4,8,2,"B3E5FC","FFFFFF","spinning ring of wind around caster","whirr","Dizzy for you, dizzier for them.","silly"},
 	{"spin cycle","KBCN5K","jl",4,7,2,"4FC3F7","FFFFFF","sudsy spinning water whirl","whirr","Wash, rinse, dizzy.","aquatic,silly"},
+	{"spin jump","KFBOKK","UDk",3,9,2,"7FD8FF","FFE45C","a high corkscrew jump that bonks a head and bounces","boing","Your head was a platform. Thanks.","game,platformer,mobility"},
 	{"spin the wheel","KLCN5K","jV",4,6,2,"FF4081","FFEB3B","giant colourful wheel spinning above","tick","Round and round. Where it lands...","luck,chaos"},
 	{"spinach","IGBOKI","WFk",4,5,3,"2E6B2A","4E8E3A","pile of dark round leaves","chomp","Instant muscles. Results may vary.","edible,vegetable,healthy"},
 	{"spinach dip","IMBOKI","WF",3,5,3,"3E7A2B","F2E8C8","creamy green dip","chomp","Creamy spinach strength.","edible"},
@@ -311,6 +314,7 @@ return {
 	{"spray paint","BMADJI","je",1,7,2,"24262A","FF3EA5","rattling aerosol can","splat","Tag! You're it.","art"},
 	{"spriggan","AGBJNA","GWf",3,6,4,"365314","A16207","wiry wooden guardian that swells to giant size","creak","Small until you annoy it.","fairy,plant,guardian"},
 	{"spring","BKALJK","Ukl",2,5,3,"C9CED4","C9CED4","tight metal coil","clink","Boing.","hardware,bouncy"},
+	{"spring board","BKCLII","UlS",2,1,5,"3FB8A8","F2C14E","bolted coil springboard that flings walkers skyward","boing","Step on. Fly off.","game,platformer,mobility"},
 	{"spring mattress","BMDL0K","Ul",2,1,5,"F2F2EE","C9CED4","bed of exposed springs","thud","Boing! Launch!","object"},
 	{"spring meadow","MGENII","FS",2,1,5,"9CCC65","F8BBD0","fresh grass and blossoms","rumble","Everything blooms. Everyone heals.","place,terrain"},
 	{"spring peeper","AMAJAG","Ue",1,5,1,"B89A6A","6A4A2A","tiny frog with an X on back","peep","Sings loud enough to hear a mile.","amphibian,wetland"},
@@ -319,7 +323,6 @@ return {
 	{"spring tree","NGDCMI","GWFkS",2,1,6,"6D4C41","F8BBD0","tree bursting with fresh blossoms","rustle","Spring has sprung. Everyone heals.","plant,tree"},
 	{"spring wall","OKCCnI","GUk",2,1,6,"C0392B","C9CED4","wall of coiled springs","clank","Boing! Back you go.","defense,mechanical"},
 	{"springald","CMDMxI","Te",5,4,5,"8B5A2B","B89B6A","boxy torsion bolt-thrower","creak","An old-timey spring-loaded spear launcher.","medieval,siege,heavy"},
-	{"springboard","BMCLII","Ukl",2,1,5,"F2F2EE","2F6FD1","bendy board on a coil","bonk","Launches anything that steps on it.","sport"},
 	{"springbok","AMCJAA","UDk",4,9,4,"D8A458","F7F4EE","white face, brown stripe, mid-pronk","bleat","Spring is in the name. Boing.","mammal,wild"},
 	{"springhare","AMAJAG","UCdb",1,6,1,"C8904A","F2E0C8","mini kangaroo rodent","squeak","Hops like a tiny kangaroo.","mammal,cute"},
 	{"springtime","GGDNOI","WF",3,4,3,"81C784","F8BBD0","blooming flowers and soft rain","chime","Everything is blooming. Achoo.","plant,cute"},
@@ -400,7 +403,4 @@ return {
 	{"star sheep","ALBJAJ","dO",2,4,2,"F8FAFC","C4B5FD","fluffy sheep with star-speckled wool","baa","Count it. Fall asleep. Lose.","cute"},
 	{"star shield","FHCIKI","Ga",3,4,6,"FFF59D","5C6BC0","dome of linked glowing stars","chime","Constellation armour.","space,defence"},
 	{"star shower","FHEEOB","KPO",7,6,2,"FFF9C4","B39DDB","many tiny shooting stars raining down","chime","Make all the wishes.","space,holy"},
-	{"star spirit","AHAJKJ","AFc",2,7,1,"FEF9C3","93C5FD","five-pointed glowing star with tiny face","chime","Wished upon itself. Worked.","cosmic,cute"},
-	{"star tortoise","AMBJUA","GN",2,2,8,"2A2A1E","F2D82A","shell with yellow star patterns","hiss","Stars on its shell.","reptile,armored"},
-	{"star-nosed mole","AMAJAA","Cjf",1,5,3,"2A2626","F28AA0","pink tentacled star nose","squeak","Has a pink star for a nose. Nightmare cute.","mammal,wild"},
 }

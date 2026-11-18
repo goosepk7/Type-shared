@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rubber snake","CMBLJK","jd",1,1,1,"2E8B57","F1C40F","wiggly rubber snake","boing","It's fake! ...Right?","prank,silly"},
 	{"rubber spider","CMALQI","jO",1,1,1,"24262A","7D3CB5","wiggly fake spider","thwip","EEK! Oh. It's rubber.","prank,silly"},
 	{"rubber stamp","BMAHJK","fO",1,5,3,"5A3A1E","C0392B","wooden handle stamper","tap","APPROVED. BONK.","office"},
 	{"rubber tree","NGDCMI","GUWkSN",3,1,6,"5D4037","2E7D32","glossy dark leaves, dripping sap","rustle","Sticky sap. Sticky situation.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"shadow mage","LICJNA","jiZ",6,5,4,"1E1B4B","7C3AED","black hood, purple glowing hands","whisper","Mostly whispers. Mostly scary.","magic,spooky"},
 	{"shadow magic","FICAKB","iZ",5,7,2,"1A0033","7C4DFF","smoky shadow sigil bolt","hiss","Spooky spells, extra spooky.","spooky,magic"},
 	{"shadow man","AICJNA","jZY",4,7,2,"0A0A0A","312E81","tall featureless shadow with hat","whisper","Seen out of the corner of your eye.","spooky"},
-	{"shadow meteor","HIDAKB","iEke",8,8,6,"1A0033","AA00FF","black flaming rock with violet trail","roar","A meteor that stayed up too late.","spooky,space,explosive"},
 }

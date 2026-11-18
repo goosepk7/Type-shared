@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star spirit","AHAJKJ","AFc",2,7,1,"FEF9C3","93C5FD","five-pointed glowing star with tiny face","chime","Wished upon itself. Worked.","cosmic,cute"},
+	{"star tortoise","AMBJUA","GN",2,2,8,"2A2A1E","F2D82A","shell with yellow star patterns","hiss","Stars on its shell.","reptile,armored"},
+	{"star-nosed mole","AMAJAA","Cjf",1,5,3,"2A2626","F28AA0","pink tentacled star nose","squeak","Has a pink star for a nose. Nightmare cute.","mammal,wild"},
 	{"stardust","FLBDOJ","jFS",3,4,1,"D8C3FF","FFF1B8","glittering cosmic dust cloud","tinkle","Everything you are, sprinkled.","space,cute"},
 	{"stare down","KIBAKB","O",3,4,1,"4A148C","FFFFFF","intense glowing eyes","hmm","Don't blink. Don't blink.","silly"},
 	{"starfall","HHEEOB","KePO",8,7,3,"FFF3B0","B39DDB","rain of glowing white-gold stars","chime","The sky is falling. Beautifully.","space,holy"},
@@ -400,7 +403,4 @@ return {
 	{"t-shirt cannon","CMCAxI","dke",2,5,3,"C0392B","F2F2EE","air cannon full of rolled shirts","thoomp","Free merch at terminal velocity.","sport,silly"},
 	{"tabasco","IABAKK","KP",5,7,2,"C8202B","F2E8D0","tiny bottle of fiery red sauce","sizzle","Tiny bottle, huge fire.","edible,spicy,flammable,sauce"},
 	{"tabaxi","AMCJNA","DZf",4,9,3,"F59E0B","1F2937","lithe cat-person with a hooded cape","meow","Curious about everything. Especially your stuff.","cat"},
-	{"tabbouleh","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","parsley salad with bulgur","crunch","More parsley than you thought possible.","edible,healthy"},
-	{"tabby cat","AMBJAA","dfT",2,7,2,"B07A3E","5A3A1E","striped orange-brown coat, M on forehead","meow","Has an M on its face. Stands for Mine.","mammal,pet,cute"},
-	{"table","BMDC0I","G",1,1,7,"8B5A2B","5A3A1E","long wooden table on four legs","thud","Flip it for instant cover.","furniture,household"},
 }

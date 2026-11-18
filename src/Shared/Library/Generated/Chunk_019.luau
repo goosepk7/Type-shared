@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pasteis de bacalhau","IMAELB","eVP",2,7,1,"D9A04A","F2E8D0","golden cod croquettes","pitter","Crispy cod cannonballs.","edible"},
 	{"pastelito","IMBLKI","dSc",2,3,3,"D9A04A","F2E8C8","flaky filled pastry","chomp","Flaky, sweet, Cuban.","edible,sweet"},
 	{"pastilla","IMBAKK","Uke",3,7,2,"D9A04A","F7F7F7","round pie with sugar crust","whoosh","Sweet and savory in one pie.","edible"},
 	{"pastrami","IGBOKI","F",2,5,3,"8A2E2E","3A1E1E","peppered dark meat slices","crunch","Peppery, smoky, stacked.","edible,healthy"},
@@ -402,5 +403,4 @@ return {
 	{"poison blast","FJCGKI","EMP",5,7,1,"76FF03","33691E","green cloud bursting outward","bubble","Pop. Cough. Run.","toxic,explosive"},
 	{"poison bomb","FJCGKI","ESM",5,6,1,"76FF03","33691E","green orb bursting into toxic cloud","bubble","Pop. Then stink. Then ouch.","toxic,explosive"},
 	{"poison bottle","BJAA2I","MeV",4,6,1,"8BC34A","24262A","skull-labelled bottle","bubble","Do not drink. Throw.","magic,fantasy"},
-	{"poison breath","FJCFOB","MP",5,6,1,"76FF03","33691E","cone of green toxic mist","hiss","Worst breath imaginable.","toxic"},
 }

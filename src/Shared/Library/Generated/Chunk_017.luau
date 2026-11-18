@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"miracle cure","KHDNOI","FP",3,5,4,"FFFFFF","FFD54F","golden beam and floating feathers over allies","choir","Against all odds, everyone's fine.","holy,support"},
 	{"miracle fruit","IGAELB","jeV",2,7,1,"D7263D","F7F2EC","small red berry","pitter","Makes sour taste sweet. Magic!","edible,fruit,sweet,magic"},
 	{"miragaia","AMDJAA","GkfT",6,3,9,"7A6A4A","E8803A","long-necked stegosaur","grunt","A stego with a giraffe neck.","dinosaur,extinct,reptile,armored"},
 	{"mirage","GHCJNJ","jdZ",2,4,1,"F5DEB3","B3E5FC","wavering see-through copy of the caster","shimmer","Was that you? Was that you?","desert"},
@@ -402,5 +403,4 @@ return {
 	{"night watchman","LHCJNA","GO",3,4,5,"1E3A8A","FACC15","lantern, bell, heavy coat","ding","Midnight and all's well. Until now.","guardian,historical"},
 	{"nightfall","FIDFOB","ZNP",5,5,3,"1A1840","6157A8","dark wave rolling across the sky","hush","The sun clocks out early.","spooky"},
 	{"nightingale","AMAJDB","dAF",1,7,1,"8A6A4A","D8C4B0","plain brown bird, singing at night","song","Plain look, legendary voice.","bird,cute"},
-	{"nightjar","AMAJDB","dAZ",1,7,1,"8A7A62","5A4A3A","camo bark-patterned bird, wide mouth","tweet","Invisible on the ground. Loud at night.","bird,cute,nocturnal"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow lorikeet","AMBJDB","jdA",2,6,2,"2A6AE8","E8501E","parrot in every rainbow color","squawk","A flying rainbow. Very loud.","bird,jungle,silly"},
 	{"rainbow road","FHDOKI","DF",3,9,3,"FF4081","69F0AE","bright rainbow path under the caster","chime","Zoom along the rainbow.","cute,speed"},
 	{"rainbow road ride","DHCKHB","DAFg",4,9,3,"FF5252","40C4FF","glowing rainbow ribbon you ride","whoosh","Slide along a rainbow. Obviously.","vehicle,magic,mythical"},
 	{"rainbow serpent","ABFJCD","FHB",8,5,8,"EF4444","3B82F6","vast serpent striped in rainbow colors","whoosh","Carved rivers. Painted the sky.","mythical,reptile,ancient"},
@@ -402,5 +403,4 @@ return {
 	{"rubber gloves","BMBONK","G",1,6,2,"F1C40F","F1C40F","bright rubber gloves","thud","Gross jobs? Ready.","household"},
 	{"rubber mat","BMBL0I","N",1,1,2,"47D7E8","F2F2EE","suction-cup mat","splash","The only non-slip thing here.","bathroom,household"},
 	{"rubber rocket","KMCAKI","kfe",6,10,2,"E53935","F7C59F","an arm stretches across the field and punches","boing","The arm comes back. Probably.","anime,silly"},
-	{"rubber snake","CMBLJK","jd",1,1,1,"2E8B57","F1C40F","wiggly rubber snake","boing","It's fake! ...Right?","prank,silly"},
 }

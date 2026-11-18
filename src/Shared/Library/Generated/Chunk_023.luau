@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow meteor","HIDAKB","iEke",8,8,6,"1A0033","AA00FF","black flaming rock with violet trail","roar","A meteor that stayed up too late.","spooky,space,explosive"},
 	{"shadow mist","FICDOJ","iZS",4,3,2,"1A0033","7C4DFF","drifting black mist with violet glints","hiss","Gloomy. Sneaky. Draining.","spooky"},
 	{"shadow nova","FIDFOI","ikP",7,7,1,"0D0221","AA00FF","black ring with violet edge bursting out","boom","Darkness, all at once, in every direction.","spooky"},
 	{"shadow oak","NIECMI","GiZS",5,1,8,"212121","4A148C","black oak oozing purple mist","chime","Darkness grows on it.","plant,magic,mythical,spooky"},
@@ -402,5 +403,4 @@ return {
 	{"sniper rifle","CKCBwI","Te",7,3,3,"5E6B3A","24262A","long rifle with big scope","bang","Somewhere very far away, someone is aiming.","modern,ranged"},
 	{"sniper tower","EMDMII","GZSTe",6,1,5,"556B2F","8D6E63","very tall thin tower, hidden perch","thud","One shot. One very long distance.","structure,defense,tower"},
 	{"snore","KMBFOB","jO",2,4,1,"B39DDB","FFFFFF","big Z letters rumbling outward","snore","ZZZZzzzz. Shockingly loud.","silly,loud"},
-	{"snorkel","BBAOKF","B",1,5,2,"F1C40F","BFE6F2","tube with goggle mask","bonk","Breathe underwater-ish.","sport,ocean"},
 }
