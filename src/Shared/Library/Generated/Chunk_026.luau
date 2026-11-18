@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sweet briar","NGBNMI","dFST",2,1,3,"F8BBD0","2E7D32","simple pink roses on arching thorny canes","rustle","Wild, prickly, and lovely.","plant,flower"},
 	{"sweet cherry","IGAELB","eVP",2,7,1,"7A0A1E","B0101E","dark red double cherry","pitter","Dark, sweet, and juicy.","edible,fruit,sweet"},
 	{"sweet chili sauce","IABAKK","KN",3,7,2,"E8402B","F2A62B","glossy red sauce with flakes","sizzle","Sweet first. Heat later.","edible,spicy,flammable,sauce"},
 	{"sweet dreams","KHCDOJ","FSO",2,3,2,"B39DDB","FFF8E1","soft lavender cloud with moons and stars","hush","Sleep tight. Heal up.","cute,support"},
@@ -402,5 +403,4 @@ return {
 	{"tokay gecko","AMBJAA","Cf",2,7,2,"6A8AA0","E8701E","blue-grey gecko with orange spots","tokay","Screams its own name. Bites.","reptile"},
 	{"token","BKAA3K","Uce",1,8,4,"D4AF37","B45309","brass coin stamped with a star and NO CASH VALUE","clink","No cash value. Much smack value.","gaming,shiny"},
 	{"token rush","BHBOKK","D",2,10,3,"FFC83D","B57CFF","spinning arcade tokens scattered round you","clink","Grab them all. Go go go.","game,arcade,mobility"},
-	{"tokoloshe","AIAJNA","jZb",2,7,2,"57534E","22C55E","tiny hairy mischief maker","cackle","Hides under beds. Why everyone uses bricks.","spooky"},
 }

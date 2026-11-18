@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tokoloshe","AIAJNA","jZb",2,7,2,"57534E","22C55E","tiny hairy mischief maker","cackle","Hides under beds. Why everyone uses bricks.","spooky"},
 	{"toll booth","EMBCII","GSN",1,1,6,"FFB300","1A1A1A","small booth with a barrier arm","thud","Pay up or turn around.","structure,building,silly"},
 	{"tom kha","IBBOGI","FS",3,4,3,"F2E8C8","E8A040","coconut soup with lime leaves","slurp","Creamy coconut soup, gently spicy.","edible,warm,healthy"},
 	{"tom yum","IABOGI","KF",3,4,3,"E8602B","C8302B","red spicy sour soup","slurp","Spicy, sour, and sinus-clearing.","edible,warm,healthy"},
@@ -402,5 +403,4 @@ return {
 	{"veiled lady","NJBLMI","ScM",2,1,2,"F5F5F5","FFF8E1","mushroom with a lacy white skirt","poof","Dressed up for the wedding. Smells awful.","plant,fungus"},
 	{"vein","BBBBCD","iTN",3,6,2,"3A6FD8","D7263D","branching blue and red tubes pulsing","squirt","The scenic route for blood.","body,science"},
 	{"velocipede","DMBKHL","Dkg",2,5,2,"6D4C41","9E9E9E","wooden bike with no pedals","clatter","Push with your feet. Look silly.","vehicle,ancient,silly"},
-	{"velociraptor","AMCJBA","DQfT",5,9,3,"8A6A3A","D8B07A","feathered body, sickle toe claw","screech","Turkey-sized. Smart. Opens doors.","dinosaur,extinct,reptile,predator"},
 }

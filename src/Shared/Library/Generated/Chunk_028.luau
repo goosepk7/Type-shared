@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"velociraptor","AMCJBA","DQfT",5,9,3,"8A6A3A","D8B07A","feathered body, sickle toe claw","screech","Turkey-sized. Smart. Opens doors.","dinosaur,extinct,reptile,predator"},
 	{"velocity","KFCO6B","DkT",5,10,1,"22D3EE","F8FAFC","arrow stretching longer and longer with a sonic cone","zoom","Speed, but it did the homework.","science,speed"},
 	{"velvet","BMBCnI","GcN",2,1,4,"7F1D4E","D4AF37","plush red rope on gold posts across the way","hush","Are you on the list? You are not on the list.","fancy,royal"},
 	{"velvet ant","AJAJLA","fTMP",2,7,1,"E8301E","1E1E1E","fuzzy red wingless wasp","buzz","Fuzzy and painful.","insect,swarm,venomous"},
@@ -402,5 +403,4 @@ return {
 	{"wind dash","KFCOKB","DI",4,10,2,"B3E5FC","FFFFFF","caster riding a gust","whoosh","Ride the wind.","air,speed"},
 	{"wind dragon","AFEKCB","Aklg",7,9,6,"E0F2FE","60A5FA","feathered sky serpent with cloud mane","howl","Flies so fast it makes weather.","mythical,reptile,wind"},
 	{"wind horse","AFDKAB","DAg",5,10,4,"E0F2FE","93C5FD","horse made of swirling air","neigh","Faster than the wind. It is the wind.","mount,wind"},
-	{"wind machine","OFDF1I","klI",5,5,6,"8E9196","F2F2EE","massive caged industrial fan","whoosh","Flings foes off their feet.","defense"},
 }

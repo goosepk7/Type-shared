@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"radicchio","IGBAKF","Fke",3,5,3,"8A1E3E","F7F2EC","round red-white leafy head","thud","A purple lettuce bomb.","edible,vegetable,healthy"},
 	{"radio","BDBFKI","jdO",2,3,4,"8E9196","C9CED4","chunky box with speakers and handle","blare","Turn it UP.","tech,music,loud"},
 	{"radio tower","EDDMII","GjSeL",4,1,5,"E53935","F5F5F5","tall lattice mast, red and white bands","static","Broadcasting static at your enemies.","structure,defense,tower"},
 	{"radish","IEBAJK","Ke",3,6,4,"D23A4A","F7F2F0","round red root, white tail","crunch","Small, red, and a little spicy.","edible,vegetable,healthy"},
@@ -402,5 +403,4 @@ return {
 	{"rosella","AMBJDB","jdA",2,6,2,"E8301E","2A6AE8","red-blue-yellow scalloped parrot","squawk","Dressed like a stained glass window.","bird,jungle,silly"},
 	{"rosemary","IGBOMI","WF",2,4,3,"4E6B4A","8A9A7A","needle-leaf sprigs","crunch","Smells like a roast and a forest.","edible,vegetable,healthy,herb"},
 	{"rosti","IMBAKK","Uke",3,7,2,"D9A04A","F2D07A","golden crispy potato cake","whoosh","A golden potato frisbee.","edible"},
-	{"rosy boa","AMBJCD","fHO",2,4,6,"E8A0A0","8A6A4A","pinkish small boa","hiss","Pink, calm, and squishy.","reptile"},
 }

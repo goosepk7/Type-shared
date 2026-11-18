@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sewer","MJENII","ZSM",3,1,8,"455A64","7CB342","round brick tunnel with green water","thud","Smells awful. Hides everything.","structure,building,silly"},
 	{"sewing machine","OMBMII","Te",2,1,5,"24262A","D4A72C","antique machine with needle arm","rattle","Rat-a-tat-stitch.","art"},
 	{"sewing needle","BKAAJI","Te",1,9,1,"C9CED4","C0392B","thin needle with red thread","splat","Tiny lance, tinier eye.","art"},
 	{"sextant","BMBOJI","e",1,4,3,"B58A3A","BFE6F2","curved arc instrument","clink","Navigate by the stars.","explorer"},
@@ -402,5 +403,4 @@ return {
 	{"smoke","FACDOJ","jZS",2,4,2,"5C5C5C","B0B0B0","thick grey billowing cloud","hiss","Smoke and mirrors, minus the mirrors.","fire"},
 	{"smoke detector","OKAF1I","O",1,1,3,"F2F2EE","C0392B","ceiling disc that beeps","beep","BEEP BEEP BEEP.","household,loud"},
 	{"smoke elemental","AACJOJ","jZM",4,6,3,"52525B","A8A29E","curling grey smoke with ember eyes","hiss","Cough cough. That's its war cry.","elemental"},
-	{"smoke grenade","CMCD2F","jZSe",2,7,2,"8E9196","F2F2EE","a hissing canister that fills the area with smoke","poof","Poof. Gone. Very ninja.","modern,stealth"},
 }

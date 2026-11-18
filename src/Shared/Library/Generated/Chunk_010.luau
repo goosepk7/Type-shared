@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
 	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
 	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},

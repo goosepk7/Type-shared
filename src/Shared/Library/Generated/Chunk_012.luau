@@ -403,5 +403,4 @@ return {
 	{"hodag","AECJAA","Dkf",5,6,6,"365314","F5F5F4","horned frog-faced lizard beast with spikes","roar","Smells like a barbecue that went wrong.","cryptid"},
 	{"hoe","JKCHJK","fH",2,5,4,"8A929B","8B5A2B","flat angled blade on pole","clank","Weeds have one natural enemy.","tool,garden"},
 	{"hoecake","IMBAKK","Uke",3,7,2,"E8B84A","F2D88A","thin cornmeal griddle cake","whoosh","A flat corn cake from the griddle.","edible"},
-	{"hog badger","AMBJAA","CfT",3,8,2,"C8B8A8","3A3A3A","badger with pig snout","chatter","Half badger, half piggy nose.","mammal,predator"},
 }

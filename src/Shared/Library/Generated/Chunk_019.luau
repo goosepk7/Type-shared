@@ -403,5 +403,4 @@ return {
 	{"plum tree","NGDCMI","GFSc",3,1,6,"6D4C41","8E24AA","small tree with purple fruit","rustle","Sweet fruit, sour attitude.","plant,tree"},
 	{"plumb bob","JKAAJK","ke",1,6,5,"B58A3A","B89B6A","pointed weight on string","clank","Points straight down. At you.","tool"},
 	{"plumbago","NGBNMI","dFSN",1,1,2,"90CAF9","2E7D32","clusters of pale blue phlox-like flowers","rustle","Sky blue and sticky seeds.","plant,flower"},
-	{"plumber","LBCJNA","UH",4,6,5,"DC2626","1E3A8A","overalls, cap, plunger, big moustache","splash","Unclogs pipes. Jumps on things.","silly"},
 }

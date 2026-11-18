@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cretoxyrhina","ABDJEC","DfTB",7,8,6,"6A7A8A","F2F4F6","big sleek ancient shark","chomp","Sliced through prey like a knife.","fish,aquatic,ocean,predator,extinct,ancient"},
 	{"crew","LBDJLA","Gfeh",5,5,5,"1E40AF","F8FAFC","sailors hauling a rope together, striped shirts","arr","All hands on deck! Some feet too.","team,pirate"},
 	{"crib","BMCL0I","GO",1,1,5,"F2F2EE","F06292","small barred baby bed","thud","A cage, but cute.","furniture,household"},
 	{"cricket","AMAJFG","UdAP",1,6,1,"4A3A2A","8A6A44","dark hopper rubbing legs","chirp","Chirps all night. Can't stop.","insect"},
@@ -402,5 +403,4 @@ return {
 	{"divinity","IHBLKI","dSc",2,3,3,"F7F7F2","F2E8D8","white fluffy nut candy","chomp","A heavenly fluffy candy.","edible,sweet,holy"},
 	{"dizzy","KLBFOB","j",2,6,1,"FFEB3B","7C4DFF","spinning stars and birdies ring","wub","Everything spins. Wheee.","silly"},
 	{"dizzy birds","AMAAKI","jO",2,7,1,"5AB0F0","FFB300","little cartoon birds that circle a dazed head","tweet","Tweet tweet. Where am I.","cartoon,silly,control"},
-	{"dj","LDCNNI","jdO",4,4,3,"7C3AED","22D3EE","headphones, turntables, glow sticks","beat","Drops the beat. The bass knocks you over.","music"},
 }

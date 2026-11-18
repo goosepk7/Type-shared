@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plumber","LBCJNA","UH",4,6,5,"DC2626","1E3A8A","overalls, cap, plunger, big moustache","splash","Unclogs pipes. Jumps on things.","silly"},
 	{"plumbing","EBCMII","IeN",4,1,5,"B87333","38BDF8","tangle of copper pipes with one joint spraying water","gurgle","The plumber said Tuesday. Which Tuesday? Unknown.","household"},
 	{"plumeria","NGBNMI","dFSc",2,1,2,"FFFFFF","FFEB3B","waxy five-petal tropical star","rustle","Smells like a beach holiday.","plant,flower"},
 	{"plunger","BMBHJK","fHO",1,6,3,"C0392B","7A4E2D","rubber cup on wooden stick","clank","Shloop. Stuck.","silly,bathroom"},
@@ -402,5 +403,4 @@ return {
 	{"radiated tortoise","AMBJUA","GN",2,2,8,"1E1E1E","F2D82A","star-rayed high shell","hiss","Starburst patterns on its shell.","reptile,armored"},
 	{"radiation","FJDNOI","iSM",6,4,3,"C3FF2E","1C2A08","pulsing green glow field, ticking motes","tick","Gives you a glow. Not the good kind.","toxic"},
 	{"radiation blob","AJCJGF","WSM",5,2,5,"84CC16","FDE047","glowing neon blob with smoke","bubble","Glows in the dark. Don't hug.","alien,toxic"},
-	{"radicchio","IGBAKF","Fke",3,5,3,"8A1E3E","F7F2EC","round red-white leafy head","thud","A purple lettuce bomb.","edible,vegetable,healthy"},
 }

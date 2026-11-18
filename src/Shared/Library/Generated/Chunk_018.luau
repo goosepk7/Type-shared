@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"netherland dwarf","AMAJAG","UCd",1,6,1,"E8D8C8","8A6A4A","tiny round rabbit, short ears","squeak","The tiniest bunny. Max cute.","mammal,cute"},
 	{"network","ODDNmI","jLPh",5,1,5,"0F172A","22D3EE","humming racks of blinking lights joined by glowing cables","hum","The server is down. Everyone panic.","tech"},
 	{"neutron","FMAAKB","ZTe",2,9,3,"9CA3AF","E5E7EB","tiny grey ball with a blank face, no charge","thud","For you? No charge.","science"},
 	{"neutron bomb","CDEGKI","iEP",9,2,2,"8E9196","3FC1D9","sleek silver bomb with glow","zap","Very quiet. Very bad.","scifi,explosive,danger"},

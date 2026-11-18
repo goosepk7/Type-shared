@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"care package","BMCN2J","ch",3,2,6,"6E7A3C","FF5A2A","military crate drifting down under a parachute","thud","Help from the sky. Finders keepers.","gaming,object,military"},
 	{"cargo","BKDL2I","GkO",6,2,8,"B45309","1E3A8A","big corrugated steel box lowered on four cables","clang","Contents: 40,000 rubber ducks. Really.","heavy,vehicle"},
 	{"cargo helicopter","DFEKHE","AlHg",5,5,7,"556B2F","37474F","long fuselage with two big rotors","chop","Picks up tanks. And you.","vehicle,air"},
 	{"cargo plane","DFFKHB","DAklgh",6,6,8,"607D8B","37474F","fat body, high wings, rear ramp","jet","Drops crates. Some of them land on you.","vehicle,air"},
@@ -402,5 +403,4 @@ return {
 	{"clean","KBCF6B","FIX",3,6,2,"7DD3FC","FFFFFF","sparkling wipe arc leaving a gleaming streak and bubbles","squeak","Squeaky clean. Hear that? That is the squeak.","household,support"},
 	{"cleaner shrimp","ABAJRA","GFfT",1,4,5,"E8301E","F2F2F2","red-white striped shrimp","clack","Runs a dental clinic for fish.","crustacean,aquatic,armored"},
 	{"cleaner wrasse","ABAJEC","dFB",1,6,1,"3A6AE8","1E1E1E","small striped cleaner fish","splash","Runs a spa for sharks.","fish,aquatic"},
-	{"cleaning robot","OKBJNF","dIN",2,4,4,"F8FAFC","0EA5E9","small robot with mop and bucket","whir","Wet floor. Your fault.","robot,silly"},
 }

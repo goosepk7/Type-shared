@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind machine","OFDF1I","klI",5,5,6,"8E9196","F2F2EE","massive caged industrial fan","whoosh","Flings foes off their feet.","defense"},
 	{"wind monk","LFCJNB","AlI",5,9,4,"FACC15","E0F2FE","monk gliding on a gust of wind","whoosh","Floats. Pushes. Smiles.","martial,wind"},
 	{"wind orb","FFCGKK","RI",4,6,2,"B3E5FC","FFFFFF","swirling ball of streaking air","whoosh","A breeze in a bubble.","air"},
 	{"wind prison","FFCL5K","lO",5,5,3,"B3E5FC","FFFFFF","spinning wind bubble holding target aloft","howl","Spin in place. Forever.","air"},

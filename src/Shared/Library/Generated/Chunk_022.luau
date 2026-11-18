@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rosy boa","AMBJCD","fHO",2,4,6,"E8A0A0","8A6A4A","pinkish small boa","hiss","Pink, calm, and squishy.","reptile"},
 	{"rosy maple moth","AMAJFB","jdA",1,5,1,"F2A0C0","F2E07A","pink and yellow fluffy moth","flutter","A strawberry lemonade moth.","insect,cute"},
 	{"rot","FJBNOI","iSM",3,2,3,"5E4A2C","9BA55A","mushy brown-green ground patch","squelch","Old fruit energy.","toxic"},
 	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"sesame seeds","IMAELB","eVP",2,7,1,"F2E8C8","D8C8A0","sprinkle of tiny teardrops","pitter","Open sesame.","edible"},
 	{"seven layer bar","IMBLKI","dSc",2,3,3,"8A5A2A","F2E8C8","layered dessert bar","chomp","Seven layers. Seven wonders.","edible,sweet,dessert"},
 	{"severing stare","KIBAKI","jie",6,10,2,"FF3B3B","1E1E26","red glowing eyes, wrapping cloth, silenced magic","hum","Don't blink. Neither will they.","anime,hero,silence"},
-	{"sewer","MJENII","ZSM",3,1,8,"455A64","7CB342","round brick tunnel with green water","thud","Smells awful. Hides everything.","structure,building,silly"},
 }
