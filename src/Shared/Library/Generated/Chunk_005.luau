@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carrion crawler","AJDJFA","MHO",5,4,5,"365314","F0ABFC","giant centipede-worm with face tentacles","skitter","Wiggly. Sticky. Not a friend.","dungeon"},
 	{"carrion flower","NJBDMI","jSM",3,1,2,"6A1B9A","8D6E63","hairy star bloom that smells awful","rustle","Stinks so bad enemies retreat.","plant,flower,silly"},
 	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
 	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
@@ -373,7 +374,7 @@ return {
 	{"classmate","LMBJNA","deb",2,6,3,"F87171","FDE68A","kid with a backpack flicking paper balls","giggle","Can I copy your homework? Thanks. Bye.","school"},
 	{"classroom","MMCNII","jSN",2,1,6,"43A047","F5E6CA","rows of desks and a chalkboard","thud","Pop quiz! Everyone is confused.","place,room,silly"},
 	{"claw crane","OKDL1I","lHO",5,3,7,"F1C40F","C9CED4","giant three-finger claw on cable","clank","Grab. Lift. Drop elsewhere.","mechanical"},
-	{"claw machine","OMCL1I","lcH",2,3,5,"FF3EA5","BFE6F2","glass cabinet with dangling claw","hum","It'll grab you. Probably not though.","silly,game"},
+	{"claw machine","OKCL1I","lH",4,7,2,"C9CED4","FF7AC8","arcade claw on a light rail","whirr","It'll grab you. Probably.","game,arcade,pull"},
 	{"claws","CKBHJK","fTV",4,9,3,"DDE3E8","24262A","three long blades over knuckles","shing","Snikt.","sharp"},
 	{"clay","FEBLII","GN",3,2,5,"B66A50","E0B49A","sticky reddish clay lumps","squelch","Squish. Mould. Trap. Repeat.","heavy"},
 	{"clay golem","AECJNA","GWf",5,3,6,"A16207","FDE68A","lumpy clay figure with finger marks","squelch","Sculpted by kids. Feels it.","construct"},
@@ -402,5 +403,4 @@ return {
 	{"climbing wall","EMCCII","GlS",2,1,6,"7E57C2","FFB300","wall dotted with colourful holds","thud","Up you go. Enemies can not.","structure,sport"},
 	{"cling wrap","BMBL2I","NO",1,4,1,"BFE6F2","F2F2EE","stretchy clear plastic sheet","clang","Wrapped up tight.","sticky"},
 	{"clipboard","BMBIyK","G",1,6,3,"C49A6C","C9CED4","board with metal clip","tap","Looks busy. Is busy.","office"},
-	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
 }

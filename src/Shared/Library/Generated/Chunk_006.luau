@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
 	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
@@ -110,6 +111,7 @@ return {
 	{"coil","BKBLCG","Ukl",3,5,4,"9CA3AF","22D3EE","tight metal spiral compressed then launching upward","boing","Compressed anger. With a boing.","mechanical,bouncy"},
 	{"coin","BMAAKJ","Uce",1,8,3,"D4A72C","F1C40F","shiny gold coin","chime","Flip it. Heads, you win.","treasure,shiny"},
 	{"coin flip","KKBAKB","ja",3,8,1,"FFC107","FFFFFF","spinning golden coin","ting","Heads you win. Tails you also win?","luck,chaos"},
+	{"coin shower","BHCNOJ","SP",3,6,3,"FFC83D","FFF4C2","ring of light raining gold coins","clink","Cha-ching! (Ouch.)","game,arcade,money"},
 	{"cola","IBBFKI","EkI",3,7,1,"3A1A0C","C8202B","dark fizzy drink in a glass","fizz","Dark, fizzy, and explosive.","edible,drink,fizzy"},
 	{"colander","BMBINK","G",1,6,2,"C9CED4","C0392B","bowl full of little holes","clang","Helmet with ventilation.","kitchen,household"},
 	{"colcannon","IMBLGI","FN",2,3,3,"F2E8C8","3E7A2B","mashed potato with kale","gloop","Mashed potato with greens.","edible,sticky"},
@@ -139,6 +141,7 @@ return {
 	{"combat drone","OKBJDE","AeL",4,9,3,"334155","EF4444","sleek flying drone with twin lasers","whir","Buzzes ominously. Shoots less ominously.","robot,flying"},
 	{"combine harvester","DGEKHL","DkfHg",6,3,9,"3E8E41","F2C200","huge machine, spinning reel blades front","engine","Harvests wheat and weak opponents.","mechanical,vehicle,land"},
 	{"combo","KMCAKB","kfV",5,9,1,"FF6D00","FFFFFF","rapid series of impact stars with counter","pow","C-C-C-COMBO!","meme"},
+	{"combo breaker","KMCHzI","kf",5,10,1,"FF5A5A","FFE14D","three fast staff hits with pixel hit counters","smack","1 HIT. 2 HIT. 3 HIT!","game,arcade,melee"},
 	{"combustion","FADGKI","KEk",7,6,2,"FF4500","FFE066","swelling fireball, sharp flash ring","boom","Things got heated. Then very heated.","fire,explosive"},
 	{"comeback","KHCOKJ","DWF",4,6,4,"FFD54F","43A047","rising golden glow","fanfare","Down, but not out.","support"},
 	{"comedian","LMCJNA","jdO",3,5,3,"7C3AED","FACC15","blazer, mic, rimshot","ding","Knocks them dead. Badum tss.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"crossbow tower","EMDMII","GSTe",5,1,7,"6D4C41","455A64","tower bristling with crossbows","twang","Click. Thwip. Click. Thwip.","structure,defense,tower"},
 	{"crossbowman","LKCJNA","Te",5,4,5,"57534E","7C2D12","padded jacket, big crossbow, pavise shield","twang","Slow reload. Big bolt.","warrior,archer"},
 	{"crosshair","KHBOKB","QTe",3,9,1,"EF4444","FFFFFF","red circle with a plus sign locking on, beeping","beep","Locked on. Do not move. You moved.","gaming,ranged"},
-	{"crossing guard","LMCJNI","GO",3,4,5,"F97316","F8FAFC","hi-vis vest, giant stop sign","whistle","STOP. Everyone stops.","silly"},
-	{"crosswalk","MMCLnI","GNO",3,1,5,"FFFFFF","111827","white road stripes with a lollipop STOP sign held up","whistle","Look left. Look right. Look left again. Stay.","place,school"},
-	{"crossword","BLBLnI","jSN",3,1,3,"F8FAFC","111827","black-and-white word grid with a chewed pencil","scratch","Seven down: \"defeat\", six letters. Starts with Y.","game,school"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doner kebab","IGBOKI","F",2,5,3,"C88A5A","F2E8D0","wrapped flatbread with sliced meat","crunch","A spinning tower of flavor.","edible,healthy"},
+	{"donkey","AMCKAA","GDkg",3,4,5,"8A8076","D8D0C4","long ears, grey coat, pale muzzle","bray","Stubborn. Loyal. Loud.","mammal,farm"},
+	{"donut","IMBLKI","UdSc",2,3,3,"F2A6C8","D9A04A","ring torus, pink glaze, sprinkles","chomp","A ring of power, but glazed.","edible,sweet"},
 	{"donut decoy","IMBLKI","jdc",2,3,3,"F2A6C8","D9A04A","tempting donut on a plate","chomp","Look over there! A donut!","edible,sweet"},
 	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
 	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
@@ -400,7 +403,4 @@ return {
 	{"eurypterid","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant aquatic scorpion","skitter","A scorpion the size of a person.","arachnid,spooky,venomous,extinct,ancient"},
 	{"evaporate","KACAKB","iX",5,6,1,"FFCC80","E1F5FE","target hissing into steam","hiss","Poof. Steam. Gone.","fire"},
 	{"evening","KICNOI","ZSN",3,2,2,"7C3AED","F97316","purple-orange sky with first stars and a porch light","chirp","Streetlights are on. Time to come in.","time"},
-	{"evening primrose","NHBNMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow blooms opening at dusk","rustle","Opens at night. Glows a little.","plant,flower"},
-	{"event horizon","FIFNOI","iHO",9,2,8,"000000","FF6E40","glowing ring around a perfect black circle","hum","The point of no return. Literally.","space,danger"},
-	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
 }

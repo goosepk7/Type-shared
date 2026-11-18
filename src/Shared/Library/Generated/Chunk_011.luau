@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant flytrap","NGELMI","kScfHO",7,3,7,"558B2F","B71C1C","huge snapping jaws on a thick stalk","chomp","Feed me. FEED ME.","plant,carnivorous,silly"},
+	{"giant forest hog","AMCJAA","Ddkf",5,4,4,"2A2420","6A5A4A","huge black hairy pig","bleat","Biggest wild pig. Grumpy.","mammal,farm,wild"},
+	{"giant ground sloth","AMEJAA","DkTO",7,1,8,"8A6A4A","C8A880","elephant-sized sloth standing up","roar","A sloth as big as an elephant. Slow.","mammal,extinct,ancient,heavy"},
 	{"giant gumball","IMEGIF","UkI",7,2,7,"E0102B","4FA3E8","boulder-sized glossy gumball","thud","Bounces over everything.","edible,giant,silly"},
 	{"giant gummy bear","IMEJBA","Udkf",7,2,7,"E0102B","F2A62B","towering translucent bear","thud","Wobbles menacingly. Very sweet.","edible,giant,silly,candy"},
 	{"giant hamster ball","DMCKHF","UDkg",2,7,4,"81D4FA","FFFFFF","giant clear ball with a rider inside","boing","Roll in. Bowl everyone over.","mechanical,vehicle,land,silly"},
@@ -400,7 +403,4 @@ return {
 	{"groundhog","AMBJAA","Cdb",2,6,1,"8A6640","C8A47A","chubby burrower, stubby tail","squeak","Predicts the weather. Badly.","mammal,cute"},
 	{"groundnut stew","IBBOGI","FS",3,4,3,"B5823A","D8402B","orange peanut stew","slurp","A nutty, hearty stew.","edible,warm,healthy"},
 	{"group","LMDJLA","GdQh",4,4,5,"38BDF8","F59E0B","cluster of people all talking at once with coffee cups","chatter","This could have been an email.","silly,team"},
-	{"grouper","ABDJEC","DfHB",5,7,4,"6A5A44","C8B48A","huge lips, chunky body","splash","Swallows fish whole. Big lips energy.","fish,aquatic"},
-	{"grouse","AMBJDA","dfO",2,4,2,"8A6A4A","F2F2F0","plump ground bird, feathered feet","cluck","Explodes out of bushes. Scares hikers.","bird,farm"},
-	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
 }

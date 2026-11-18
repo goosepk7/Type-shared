@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magnet ball","BKAG3I","H",2,5,3,"8E9196","C0392B","round magnet sphere","bubble","Clacks onto everything.","magnetic"},
+	{"magnet glove","BKBANK","lHe",4,7,3,"C0392B","C9CED4","glove with horseshoe magnet palm","thud","Yoink metal from afar.","magnetic"},
+	{"magnet pull","FKCBKI","lH",5,6,3,"D32F2F","1976D2","red-blue curved field lines dragging target","hum","Opposites attract. So do you.","magnetic"},
 	{"magnet robot","OKCJNA","lHL",4,4,6,"DC2626","94A3B8","robot with giant horseshoe magnet hands","hum","Your armor belongs to it now.","robot,magnetic"},
 	{"magnet turret","OKDMmI","lHN",5,4,7,"C0392B","C9CED4","giant horseshoe magnet on a post","clank","Yoinks metal foes right off their feet.","magnetic,defense"},
 	{"magnetar","MDDGKJ","lHLO",9,6,9,"651FFF","FF4081","star wrapped in twisted glowing field lines","rumble","The fridge magnet of the gods.","space,magnetic"},
@@ -400,7 +403,4 @@ return {
 	{"mocha","IABOKI","DF",3,9,2,"6B4026","F2E8D8","chocolate coffee with cream","fizz","Coffee and chocolate. Best friends.","edible,drink"},
 	{"mochi","IMBLGI","SNO",2,3,3,"F7F2EC","F2A6C8","soft round rice dough cake","gloop","Stretchy, chewy, sticks to all.","edible,sticky,sweet"},
 	{"mochi donut","IMBLKI","dSc",2,3,3,"F2A6C8","F7F2EC","ring of connected little balls","chomp","A donut made of bubbles.","edible,sweet,dessert"},
-	{"mochi ice cream","ICBAKJ","JeN",3,5,2,"F7D9E3","F7F2EC","soft rice dough ball, ice cream core","squish","Chewy outside, cold inside.","edible,frozen,sweet"},
-	{"mock orange","NGCNMI","jdFS",1,1,3,"FFFFFF","7CB342","shrub with orange-scented white blooms","rustle","Smells like oranges. Fooled you.","plant,flower"},
-	{"mockingbird","AMAJDB","jdA",1,7,1,"8A8C90","F2F2F0","grey bird, white wing patches","tweet","Copies car alarms. On purpose.","bird,cute"},
 }

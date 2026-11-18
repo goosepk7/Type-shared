@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"evening primrose","NHBNMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow blooms opening at dusk","rustle","Opens at night. Glows a little.","plant,flower"},
+	{"event horizon","FIFNOI","iHO",9,2,8,"000000","FF6E40","glowing ring around a perfect black circle","hum","The point of no return. Literally.","space,danger"},
+	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
 	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
 	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
 	{"everything bagel","IMBAKK","UeP",3,7,2,"C8904A","3A3A3A","bagel covered in seeds","whoosh","Covered in everything. Literally.","edible"},
@@ -400,7 +403,4 @@ return {
 	{"flying dragon lizard","AMBJAB","CAf",2,7,2,"8A7A5A","E8701E","lizard with rib wings","hiss","A lizard that flies. On ribs.","reptile"},
 	{"flying fish","ABAJEB","dAB",1,6,1,"4A6EA8","C8D8EC","long wing fins, gliding over waves","splash","A fish that said no to water.","fish,aquatic"},
 	{"flying frog","AMAJAB","UAe",1,5,1,"4AC84A","F2D82A","frog gliding on webbed feet","croak","Parachutes with its toes.","amphibian,wetland"},
-	{"flying lemur","AMBJAB","CAf",2,5,3,"8A8070","C8C0B0","big gliding membrane","squeak","Neither flies nor is a lemur.","mammal,wild"},
-	{"flying ship","DLEMHB","EAkeg",7,5,7,"6D4C41","FFD54F","wooden galleon held up by glowing balloons","cannon","Sails the clouds, cannons out.","vehicle,magic,mythical"},
-	{"flying snake","AMCJCB","AfMN",4,6,3,"2A2A1E","8AE04A","flattened gliding snake","hiss","A snake that flies. Why would you.","reptile,venomous"},
 }

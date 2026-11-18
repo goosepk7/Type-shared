@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sai","CKBHJK","GfT",3,8,4,"C9CED4","24262A","three-prong dagger","shing","Catches blades. Pokes faces.","ninja,sharp"},
+	{"saiga","AMCJAA","Dk",4,8,4,"D2BE9A","A89270","big floppy bulbous nose","bleat","Nose looks like a tiny trunk.","mammal,wild,silly"},
+	{"sail","BFCOiJ","DIg",3,7,3,"F8FAFC","1E3A8A","billowing white triangle on a mast, ropes snapping taut","whoosh","Wind in the sail. Sail in your face.","ocean,air"},
 	{"sailboat","DFCKHC","DkIgB",4,6,4,"F5F5F5","1E88E5","slim hull, single mast, triangle sail","splash","Powered by wind and good vibes.","vehicle,aquatic"},
 	{"sailfish","ABDJEC","DfTB",5,10,4,"2E4E8E","5A8AD0","giant blue sail fin, spear bill","splash","Fastest fish. Has a built-in sail.","fish,aquatic"},
 	{"sailor","LBCJNA","fHB",4,6,5,"F8FAFC","1E3A8A","white cap, striped shirt, anchor tattoo","splash","Knows 200 knots. Ties you in one.","aquatic"},
@@ -183,6 +186,7 @@ return {
 	{"scream","KFCFOB","jkO",5,10,1,"FFCDD2","FFFFFF","jagged sound ring burst","scream","AAAAAAAAAAAAAH!","loud"},
 	{"screech","KFCF6B","jIO",4,9,1,"F8FAFC","EF4444","jagged white sound spikes shattering nearby glass","screech","EEEEEEEEEEEEEEEEEEEEEEEEE.","loud"},
 	{"screech owl","AMAJDB","AZT",2,7,2,"8A8A80","D8D0C0","tiny eared owl, bark pattern","hoot","Doesn't screech. Trills.","bird,nocturnal,predator"},
+	{"screen wrap","KLBOKI","Y",2,10,1,"7DFFB2","B57CFF","pixel dissolve and reappear behind them","blip","Left edge, right edge, behind you.","game,arcade,mobility"},
 	{"screw","BKAAJK","Te",1,8,2,"8A929B","C9CED4","spiral threaded spike","clink","Righty tighty.","hardware"},
 	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
 	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},
@@ -399,8 +403,4 @@ return {
 	{"sheet","BFCLVJ","jAN",2,5,2,"FFFFFF","BFDBFE","white bedsheet billowing with two eye holes","whoosh","Either laundry or a ghost. Fifty-fifty.","household,spooky,silly"},
 	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
 	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
-	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
-	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
-	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
-	{"shepherd's pie","IGBOKI","F",2,5,3,"E8C070","7A3A2A","mashed potato topping, golden ridges","crunch","A potato blanket over a meaty bed.","edible,healthy"},
 }

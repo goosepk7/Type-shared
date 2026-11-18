@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"razor","BKAHJI","fT",2,8,1,"C9CED4","2F6FD1","small safety razor","splash","Smooth operator.","bathroom,household"},
+	{"rc car bomb","BABJHL","DEQ",6,9,3,"E53935","24262A","a zippy toy car carrying a very real bomb","squeak","Bzzzzzz. Wheeeee. BOOM.","toy,explosive,modern"},
+	{"reading","KHBOKJ","FcN",2,2,2,"92400E","FDE68A","open book with glowing words drifting upward","rustle","One more chapter. One more. One more.","school"},
 	{"reality","KLCFOB","aO",5,7,1,"ECEFF1","212121","harsh grey ripple stripping illusions","thunk","Reality check! Snap out of it.","magic"},
 	{"reaper chain","CKBAJI","HeN",4,9,4,"5B6168","C9A86A","a hooked blade on a long rattling chain","clang","Get over here. Politely.","anime,weapon"},
 	{"reappear","KLBOKI","Y",2,10,1,"E1BEE7","FFFFFF","sparkle burst with caster appearing","poof","Ta-da! Missed me?","magic"},
@@ -400,7 +403,4 @@ return {
 	{"sagittarius","MHCEKJ","Te",5,5,5,"FFFFFF","FF7043","star centaur drawing a bow","rumble","Fires star arrows. Never misses. Okay, rarely.","space,zodiac"},
 	{"saguaro","NEDCMI","GST",5,1,8,"388E3C","F5F5F5","tall cactus with upward bending arms","thud","Waves hello. Spikes goodbye.","plant,desert,sharp"},
 	{"sahara","MAFNII","KSN",6,1,9,"F2C27A","E6A04D","endless rolling golden dunes","rumble","Sand. Then more sand. Then a sandstorm.","place,landmark"},
-	{"sai","CKBHJK","GfT",3,8,4,"C9CED4","24262A","three-prong dagger","shing","Catches blades. Pokes faces.","ninja,sharp"},
-	{"saiga","AMCJAA","Dk",4,8,4,"D2BE9A","A89270","big floppy bulbous nose","bleat","Nose looks like a tiny trunk.","mammal,wild,silly"},
-	{"sail","BFCOiJ","DIg",3,7,3,"F8FAFC","1E3A8A","billowing white triangle on a mast, ropes snapping taut","whoosh","Wind in the sail. Sail in your face.","ocean,air"},
 }
