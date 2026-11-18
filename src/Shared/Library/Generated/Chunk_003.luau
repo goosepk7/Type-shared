@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
+	{"beignet","IMBDOJ","jcP",2,5,1,"F2E8D0","F7F7F2","square puff, sugar snow","puff","A pillow buried in powdered sugar.","edible"},
 	{"belgian fries","IMAELB","ceP",2,7,1,"F2C24A","F7F2DC","paper cone of thick fries","pitter","Fries with mayo, Belgian style.","edible"},
 	{"belgian waffle","IMCIII","GF",3,3,5,"E8B04A","F7F2EC","thick deep-grid waffle, cream","thud","The deep-pocketed waffle.","edible,breakfast"},
 	{"bell pepper","IGBAKF","Fke",3,5,3,"D72B2B","3E8E2B","blocky lobed pepper, green stem","thud","All the crunch. None of the burn.","edible,vegetable,healthy"},
@@ -147,6 +149,7 @@ return {
 	{"blade","CKBHrK","fTa",5,8,4,"D1D5DB","60A5FA","bare gleaming blade, no handle, light glint","shing","Careful. It is all edge.","sharp"},
 	{"blade of light","FHCHrB","KFf",6,7,3,"FFF9C4","FFFFFF","radiant white-gold blade","chime","A sword with a good heart.","holy,sharp"},
 	{"blade tornado","HKEN5K","klTH",8,6,6,"90A4AE","ECEFF1","whirling funnel of spinning blades","shing","A blender, but outdoors.","storm,sharp"},
+	{"blade waltz","KFDNKI","fPY",8,10,2,"CFE3F2","3D5A80","you blink between foes, cutting each one","slash","Eight cuts before the first one lands.","anime,sword,speed"},
 	{"bladed boomerang","CMBAJI","UQTe",5,8,3,"8A929B","24262A","metal-edged boomerang","thwip","Comes back. Sharper.","ranged,sharp"},
 	{"bladed fan","CKBAJK","UTe",4,8,3,"C9CED4","A66BDB","fan with razor ribs thrown spinning","shing","Fans out. Cuts down.","fantasy,sharp"},
 	{"blanket","BMCIyI","GF",1,3,2,"1F2F55","F3E6C8","folded cosy blanket","thud","Monsters can't get you under here.","furniture,household"},
@@ -400,7 +403,4 @@ return {
 	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
 	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
-	{"breakdancer","LFCJNK","jdk",4,8,3,"111827","FACC15","spinning on head, tracksuit","beat","Head spins. Kicks fly.","music"},
-	{"breakdancing","KMCN5K","dk",3,7,2,"FF4081","212121","spinning windmill motion trails","music","Headspin! Everyone stand back.","music,dance"},
-	{"breaker","FBDF6F","kO",6,7,2,"0288D1","FFFFFF","wave curling over and smashing down","crash","Crash! Foam everywhere.","aquatic"},
 }

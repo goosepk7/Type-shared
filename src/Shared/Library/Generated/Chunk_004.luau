@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"breakdancer","LFCJNK","jdk",4,8,3,"111827","FACC15","spinning on head, tracksuit","beat","Head spins. Kicks fly.","music"},
+	{"breakdancing","KMCN5K","dk",3,7,2,"FF4081","212121","spinning windmill motion trails","music","Headspin! Everyone stand back.","music,dance"},
+	{"breaker","FBDF6F","kO",6,7,2,"0288D1","FFFFFF","wave curling over and smashing down","crash","Crash! Foam everywhere.","aquatic"},
 	{"breakfast","IMCL2I","FcN",3,2,2,"FDE047","B45309","plate of eggs and bacon making a smiley face, toast, juice","sizzle","The most important summon of the day.","edible,breakfast"},
 	{"breakfast bowl","IGBOKI","F",2,5,3,"F2D23A","C8502B","bowl of eggs, potatoes, sausage","crunch","Breakfast, all in one bowl.","edible,healthy,breakfast"},
 	{"breakfast burrito","IMBGKF","Fk",3,5,6,"F2E2B8","F2D23A","tortilla log of eggs, potatoes","rumble","Breakfast in a sleeping bag.","edible,heavy,breakfast"},
@@ -359,6 +362,7 @@ return {
 	{"cardamom","IFBDOJ","jPO",2,5,1,"8DB86A","C8D88A","small green pods","puff","Fragrant green pods of mystery.","edible,spice"},
 	{"cardboard","BMCI2A","GUZ",2,3,3,"C8A165","A9824C","big brown box with eye holes sneaking along","thud","Not a box. A stealth vehicle.","household,stealth,silly"},
 	{"cardboard armor","BMCONI","Gd",1,5,2,"C69C6D","7A4E2D","taped box armour, pot helmet","clank","Tactical arts and crafts.","silly,toy"},
+	{"cardboard box","BMBO2I","Zc",2,5,4,"C69C6D","7A4E2D","a taped cardboard box with two eye holes","thud","Totally just a box. Move along.","silly,stealth,modern"},
 	{"cardboard box car","DMAKHL","Ddkg",1,3,1,"C8A27A","8D6E63","cardboard box with drawn-on wheels","engine","Vroom! (Noises made by mouth.)","vehicle,silly,cute"},
 	{"cardboard fort","EMCCII","GdS",1,1,2,"C8A27A","6D4C41","taped boxes with drawn-on windows","thud","Drawn-on cannons. Real enthusiasm.","silly,flammable"},
 	{"cardboard sword","BMCHrK","df",1,6,1,"C69C6D","7A4E2D","wobbly taped cardboard blade","shing","Handmade. Heartfelt. Floppy.","toy,silly"},
@@ -399,8 +403,4 @@ return {
 	{"cartoonist","LLCJNI","jh",3,4,3,"111827","FACC15","sketchbook, pen, ink splotches","scratch","Draws allies into existence.","art"},
 	{"cartwheel","KMBOKK","Dd",2,7,2,"F8BBD0","FFFFFF","cartwheeling motion arc","whee","Wheee! Totally on purpose.","silly,sport"},
 	{"cashew","IEAAKK","UeO",2,8,5,"EBD9A8","D8C08A","curved kidney-shaped nut","tok","A nut shaped like a comma.","edible,nut"},
-	{"cashier","LMCJNA","dO",3,5,3,"DC2626","F8FAFC","name tag, register, receipt roll","ding","Paper or plastic? Neither. Combat.","silly"},
-	{"cassata","IMBLKI","dSc",2,3,3,"F7F2EC","8DC63F","frosted cake with candied fruit","chomp","A Sicilian jewel box.","edible,sweet,dessert"},
-	{"cassava","IEBAKK","keO",3,7,6,"8A5A2A","F2EEDF","long bark-brown tuber","bonk","A potato that went to the tropics.","edible,vegetable"},
-	{"casserole","IGBOKI","F",2,5,3,"D9A04A","F2E8C8","baking dish of bubbling bake","crunch","The potluck champion.","edible,healthy"},
 }

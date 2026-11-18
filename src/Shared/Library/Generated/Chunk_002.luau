@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"assassin","LICJNA","ZTMY",6,9,3,"1F2937","7F1D1D","hood, hidden blade, leap of faith","whoosh","Silent. Sneaky. Allergic to hay bales.","stealth"},
 	{"assassin bug","AMAJFA","dATMP",1,6,1,"3A2A1A","D8401E","long beak, stalking","buzz","A tiny bug with a big name.","insect"},
 	{"assault rifle","CKCAwI","TeV",6,7,4,"24262A","6B7B3A","rifle with curved magazine","rattle","The standard-issue all-rounder.","modern,ranged"},
 	{"aster","NGBNMI","dFS",2,1,2,"7E57C2","FFEB3B","starry purple daisy","rustle","Star-shaped and proud of it.","plant,flower"},
@@ -299,6 +300,7 @@ return {
 	{"basketball player","LMCJNG","UDe",4,8,4,"F97316","111827","tall jersey, slam dunk pose","boing","Dunks on you. Literally.","sport"},
 	{"basking shark","ABEJEC","DfHB",6,3,6,"6E6A66","B8B2AC","huge gaping mouth","chomp","Swims with mouth wide open. Polite.","fish,aquatic,ocean,predator"},
 	{"bass","ABBJEC","DfB",3,7,4,"5E7A3A","D8D8A8","big-mouthed green fish","splash","Big mouth. Even bigger splash.","fish,aquatic"},
+	{"bass drop","BFCN1I","kcIO",6,7,4,"A855F7","22D3EE","a giant boombox thumping shockwaves","wub","WUB WUB WUB. Everyone out of the pool.","music,loud,modern"},
 	{"bass drum","BMCFJI","kO",4,3,5,"F2F2EE","C0392B","big round marching drum","boom","BOOM. BOOM. BOOM.","music,loud"},
 	{"bass guitar","BMCFJI","kI",4,4,4,"24262A","F2F2EE","long-neck four-string guitar","boom","All about that bass.","music"},
 	{"basset hound","AMCJAA","DQf",4,3,4,"9E6A3A","F2EAE0","long ears dragging, very short legs","bark","Ears so long it trips on them.","mammal,pet,silly"},
@@ -401,6 +403,4 @@ return {
 	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
 	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
-	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
-	{"beignet","IMBDOJ","jcP",2,5,1,"F2E8D0","F7F7F2","square puff, sugar snow","puff","A pillow buried in powdered sugar.","edible"},
 }
