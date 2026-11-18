@@ -155,7 +155,22 @@ local ARCH: { [string]: any } = {
 	bovine = { cran = { 0.46, 0.4, 0.42 }, muzzle = { -0.2, -0.42, 0.35, 0.26, 0.26 }, nose = { "nostrils", 0.09 }, ears = { "side", 0.5 }, eyes = { 0.26, 0.12, 0.22, 22 } },
 	porcine = { cran = { 0.47, 0.43, 0.46 }, nose = { "disc", 0.38 }, ears = { "flop", 0.46 }, eyes = { 0.2, 0.12, 0.2 } },
 	rodent = { cran = { 0.46, 0.42, 0.47 }, snout = { -0.1, -0.4, 0.2, 0.17, 0.28, 0 }, nose = { "ball", 0.11, "inner" }, ears = { "round", 0.5 }, eyes = { 0.23, 0.1, 0.27 }, teeth = true },
+	-- seals, sea lions, walruses (Plans/SeaMammal): round skull, whisker pads, no ear flaps
+	pinniped = { cran = { 0.46, 0.42, 0.48 }, cheeks = { -0.16, -0.36, 0.16, 0.13, 0.15 }, nose = { "ball", 0.13 }, eyes = { 0.22, 0.1, 0.32 } },
 }
+-- generic quadruped sub-kinds (Plans/Quadruped): mustelids, stocky badgers, ant-eaters, armoured / spiny mammals,
+-- pachyderms, camelids, hopping marsupials. ears "none" = the plan builds its own (elephant flaps).
+ARCH.mustelid = { cran = { 0.44, 0.36, 0.46 }, snout = { -0.12, -0.42, 0.2, 0.16, 0.25, 4 }, nose = { "ball", 0.13 }, ears = { "round", 0.3 }, eyes = { 0.2, 0.1, 0.23 } }
+ARCH.badger = { cran = { 0.47, 0.39, 0.46 }, snout = { -0.15, -0.46, 0.21, 0.17, 0.3, 8 }, nose = { "ball", 0.15 }, ears = { "round", 0.27 }, eyes = { 0.19, 0.08, 0.19 } }
+ARCH.anteater = { cran = { 0.34, 0.34, 0.44 }, snout = { -0.13, -0.92, 0.12, 0.12, 0.7, 6 }, nose = { "ball", 0.1 }, ears = { "round", 0.26 }, eyes = { 0.17, 0.12, 0.16 } }
+ARCH.aardvark = { cran = { 0.36, 0.36, 0.44 }, snout = { -0.14, -0.68, 0.16, 0.15, 0.48, 10 }, nose = { "ball", 0.14 }, ears = { "long", 0.6 }, eyes = { 0.19, 0.1, 0.18 } }
+ARCH.armadillo = { cran = { 0.34, 0.34, 0.44 }, snout = { -0.13, -0.6, 0.15, 0.13, 0.42, 10 }, nose = { "ball", 0.11 }, ears = { "pointy", 0.46 }, eyes = { 0.18, 0.1, 0.17 } }
+ARCH.spiny = { cran = { 0.42, 0.4, 0.46 }, snout = { -0.13, -0.48, 0.17, 0.14, 0.3, 6 }, nose = { "ball", 0.13 }, ears = { "round", 0.26 }, eyes = { 0.2, 0.08, 0.23 } }
+ARCH.pachyderm = { cran = { 0.52, 0.54, 0.47 }, nose = nil, ears = { "none", 1 }, eyes = { 0.3, 0.04, 0.17 } }
+ARCH.rhino = { cran = { 0.4, 0.38, 0.46 }, snout = { -0.24, -0.56, 0.28, 0.27, 0.46, 16 }, nose = { "nostrils", 0.08 }, ears = { "pointy", 0.42 }, eyes = { 0.3, 0.0, 0.15 } }
+ARCH.hippo = { cran = { 0.46, 0.4, 0.44 }, snout = { -0.2, -0.5, 0.44, 0.32, 0.36, 0 }, nose = { "nostrils", 0.09 }, ears = { "round", 0.18 }, eyes = { 0.22, 0.3, 0.22 } }
+ARCH.camelid = { cran = { 0.36, 0.36, 0.42 }, snout = { -0.2, -0.42, 0.2, 0.21, 0.32, 14 }, nose = { "nostrils", 0.07 }, ears = { "pointy", 0.5 }, eyes = { 0.25, 0.1, 0.25 } }
+ARCH.macropod = { cran = { 0.4, 0.38, 0.44 }, snout = { -0.12, -0.38, 0.2, 0.17, 0.28, 6 }, nose = { "ball", 0.12 }, ears = { "pointy", 0.78 }, eyes = { 0.21, 0.1, 0.25 } }
 Heads.Arch = ARCH
 
 -- o: p (pivot = neck top), s (size), bone, arch (ARCH key), ears (override kind), eyes (Face kind), noseCol
