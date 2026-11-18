@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sneak","KIBOKA","DZ",2,6,2,"455A64","90A4AE","tiptoeing shadowy outline","tiptoe","Tiptoe. Tiptoe. Gotcha.","stealth"},
+	{"sneakers","BMBONI","D",1,9,2,"F2F2EE","C0392B","chunky running sneakers","swish","Gotta go fast.","clothing"},
+	{"sneeze","KFBFOB","jk",3,10,1,"E1F5FE","C5E1A5","cone of droplets and wind from the caster","achoo","Bless you. And everyone in front.","silly,gross"},
+	{"snickerdoodle","IMBAKK","Uke",3,7,2,"E0C08A","C8803A","crackled cinnamon cookie","whoosh","Fun to say. Fun to throw.","edible"},
 	{"sniff","KMAOKI","a",1,5,1,"FFCC80","FFFFFF","swirly smell-line wisps","sniff","Smells like... trouble.","silly"},
 	{"snipe","AMCJDA","jAfT",3,5,2,"8A6A44","F2E8D0","streaky bird with long bill","squawk","Zig-zags when it flies.","bird,wetland"},
 	{"sniper","LMCJNI","ZTe",6,3,3,"4D7C0F","1F2937","ghillie suit made of leaves","bang","You'll never see the bush coming.","military,stealth"},
@@ -399,8 +403,4 @@ return {
 	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
 	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
 	{"star cactus","NEALMI","GST",2,1,5,"7CB342","FFFFFF","flat star-shaped spineless cactus","thud","Spineless. Still judgmental.","plant,desert,cute"},
-	{"star cluster","MHEELJ","TeVP",7,4,7,"E1F5FE","FFF59D","swarm of tiny glittering stars","rumble","A whole handful of stars, thrown at once.","space"},
-	{"star dragonfly","AHAJFB","Ae",2,10,1,"FDE047","67E8F9","dragonfly trailing stardust","buzz","Leaves sparkly streaks.","cosmic,insect"},
-	{"star eater","AIFJGJ","ikH",10,2,9,"0F0F23","F97316","planet-sized maw with orbiting debris","hum","Snacks on stars. Burps out comets.","alien,cosmic,boss,danger"},
-	{"star flower","NHBLMI","FSe",3,1,2,"FFF59D","3949AB","five-point glowing star petals","chime","Fell from the sky. Took root.","plant,magic,mythical"},
 }

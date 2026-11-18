@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"video","BHBCnE","jdc",2,3,3,"111827","EF4444","floating screen with a play triangle and a buffering ring","click","Buffering... buffering... buff... ering.","tech,internet"},
+	{"video camera","BHBBKI","c",1,5,3,"24262A","C0392B","handheld camera with red light","beep","Recording. Smile.","tech,electric"},
+	{"video game","BDCN1I","jShY",5,5,3,"4F46E5","22D3EE","glowing screen spilling blocky pixels and a health bar","beep","Just five more minutes. Said three hours ago.","gaming,tech"},
+	{"video game controller","BMAOJI","j",1,6,3,"24262A","8E9196","handheld game pad with buttons","clack","Press A to win.","game,tech"},
 	{"vigilante","LICJNA","ZfH",6,8,5,"111827","52525B","dark cowl, grapple hook, utility belt","whoosh","Patrols rooftops. Never uses doors.","hero"},
 	{"vigor","KGCOKJ","GF",2,5,6,"43A047","FFB74D","healthy green-orange glow","grunt","Full of beans. And health.","support"},
 	{"vigor bean","IGAO7I","F",3,6,1,"7CC24A","E8FFB0","little green bean flicked up, caught and crunched","crunch","Tastes like a full night's sleep.","anime,heal,food"},
@@ -399,8 +403,4 @@ return {
 	{"winter","GCDNOI","JSN",5,3,5,"D6EAF8","FFFFFF","snow-covered ground, frosted air","hush","Winter is here. Wear a hat.","frozen,holiday"},
 	{"winter forest","MCFNII","JZS",4,1,8,"FFFFFF","2E7D32","snow-laden pines, silent","rumble","Hushed. Cold. Ambush-ready.","place,terrain,frozen"},
 	{"winter tree","NCDCMI","GJWkSN",3,1,7,"4E342E","FFFFFF","dark branches heavy with snow","rustle","Shake it. Snow avalanche.","plant,tree,frozen"},
-	{"winter wolf","ACCJAA","DJf",5,8,4,"E0F2FE","60A5FA","white wolf exhaling frost","howl","Its howl freezes puddles.","canine,frozen"},
-	{"wire","BDALJK","LN",1,3,2,"B8693D","24262A","coiled copper wire","clink","Live wire!","hardware"},
-	{"wire cutters","JKAHJK","fV",2,6,4,"C0392B","C9CED4","small snipping pliers","clank","Snip. Disarmed.","tool"},
-	{"wisdom","KHCOKJ","Fa",3,3,4,"5C6BC0","FFD54F","glowing owl-like eyes and runes","hum","Think first. Zap second.","magic"},
 }

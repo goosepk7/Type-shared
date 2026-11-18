@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sydney opera house","EMFCII","GSO",5,1,9,"FFFFFF","E0E0E0","white sail-shaped shell roofs","song","Sings a very loud high note.","structure,landmark"},
+	{"symbol","KLBLKI","jSO",3,1,3,"A855F7","FACC15","floating glowing sign: @ # & % cycling quickly","chime","@#&%! Pardon its language.","magic"},
+	{"syrian hamster","AMAJAA","Cdb",1,6,1,"E8B060","F7F0E6","golden round hamster","squeak","Classic hamster. Cheeks of steel.","mammal,cute,pet"},
+	{"syringe","BMAAII","FTe",2,8,1,"BFE6F2","C9CED4","clear syringe with plunger","thud","Just a little pinch.","medical"},
 	{"syrup","IMBLGI","ScNP",2,3,3,"B5651D","D9A04A","glossy amber bottle and pour","gloop","Sticky trap for pancake lovers.","edible,sticky,sauce,sweet"},
 	{"syrup flood","IMDFGI","SINP",5,3,3,"B5651D","D9A04A","wave of amber syrup","gloop","Slow-motion disaster, sweetened.","edible,sticky"},
 	{"system","ODDNlI","jSLY",6,1,6,"0F172A","22C55E","wall of green wireframe panels with a blinking cursor","bzzt","System error. Please restart the universe.","tech,scifi"},
@@ -399,8 +403,4 @@ return {
 	{"torii gate","EHCCII","FSY",2,1,8,"C62828","263238","red post-and-beam gateway","thud","Step through to somewhere sacred.","structure,holy"},
 	{"tornado","HFEN5K","klSHP",8,6,5,"8A9BA8","DCE6EC","tall grey funnel, debris ring and flung rocks at base","howl","Picks things up. Puts them down far away.","storm,natural,air"},
 	{"tornado outbreak","HFFN5K","klSHP",9,6,6,"78909C","ECEFF1","several funnels touching down at once","howl","One tornado was not enough.","storm,natural,danger"},
-	{"tornado tower","EFDMII","GklSHe",6,1,6,"B0BEC5","80DEEA","tower spinning a small tornado on top","whoosh","Picks enemies up. Puts them down far away.","structure,defense,tower"},
-	{"torosaurus","AMEJAA","DkT",8,5,8,"6A5A3A","C8A87A","gigantic frill","bellow","Biggest head of any land animal.","dinosaur,extinct,reptile"},
-	{"torpedo","CBCAkC","EeB",7,7,3,"4A4D52","F1C40F","long finned underwater missile","boom","Fish-shaped delivery service.","explosive,ocean"},
-	{"torpedo boat","DBCMHC","EegB",6,9,5,"607D8B","37474F","fast low boat with torpedo tubes","splash","Fast, low, and full of torpedoes.","vehicle,aquatic"},
 }

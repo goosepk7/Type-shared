@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"point","KMBOuB","dQe",2,8,1,"F2D0B4","EF4444","giant gloved finger pointing with a red arrow","ding","Look over there! Ha. Made you look.","silly,trickster"},
+	{"pointer","AMCJAA","DQcf",4,7,4,"F2EEE6","8A4A22","sleek bird dog, one paw raised pointing","bark","It is literally pointing. At you.","mammal,pet"},
+	{"poison","FJCDOJ","SMP",4,4,2,"6BBF3A","2E5E1E","swirling sickly green fog, skull wisps","bubble","Do not lick.","toxic"},
 	{"poison aura","FJCOKJ","SM",4,4,3,"76FF03","33691E","green fumes swirling round caster","bubble","Personal space, enforced by stink.","toxic"},
 	{"poison beam","FJCBKI","TMe",5,7,1,"76FF03","33691E","bubbling green beam","hiss","Gross. Glowing. Green.","toxic"},
 	{"poison blast","FJCGKI","EMP",5,7,1,"76FF03","33691E","green cloud bursting outward","bubble","Pop. Cough. Run.","toxic,explosive"},
@@ -400,7 +403,4 @@ return {
 	{"rainbow boa","AMCJCD","fHaO",4,4,6,"C8603A","6AE8E0","iridescent orange snake","hiss","Shimmers like a rainbow.","reptile"},
 	{"rainbow bridge","EHECII","GFSY",4,1,6,"FF5252","40C4FF","shimmering arch of rainbow light","thud","Leads somewhere magical. Probably.","magic,mythical"},
 	{"rainbow cake","IMCLKI","dSc",2,3,3,"E8434F","4FA3E8","slice with rainbow layers","chomp","Every colour, layered.","edible,sweet"},
-	{"rainbow candy","IMAELB","jeP",2,7,1,"E8434F","4FA3E8","pile of colorful round candies","pitter","Taste every colour.","edible,sweet,candy"},
-	{"rainbow carrots","IEBAJK","FTe",3,6,4,"ED9121","5E1A4E","bundle of multicolor carrots","crunch","Carrots in every colour.","edible,vegetable,healthy"},
-	{"rainbow dragon","AHEKCB","jAeg",7,7,6,"EF4444","3B82F6","serpent dragon with rainbow-banded scales","chime","Breathes rainbows. Painfully.","mythical,reptile"},
 }

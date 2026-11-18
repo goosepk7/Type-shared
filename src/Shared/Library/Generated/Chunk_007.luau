@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
+	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
+	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
 	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 	{"croque monsieur","IGBOKI","F",2,5,3,"D9A04A","F2C870","grilled ham cheese sandwich","crunch","A sandwich with a fancy title.","edible,healthy"},
 	{"croquet mallet","BMCHtK","kf",2,5,4,"8B5A2B","C0392B","long mallet with barrel head","bonk","Wack. Through the hoop.","sport"},
@@ -400,7 +403,4 @@ return {
 	{"dodo","AMCJDA","dkf",2,2,5,"8A8A8E","F2E8C8","plump grey bird, hooked beak, tuft tail","boom","Extinct. Still waddling in our hearts.","bird,flightless,extinct,silly"},
 	{"doedicurus","AMDJAA","GDkO",7,4,10,"6A5A44","B8A07A","armored dome, spiked mace tail","roar","Armadillo with a medieval mace.","mammal,extinct,ancient,heavy"},
 	{"dog","AMCJAA","DQcf",4,7,4,"C08A52","F2E3CC","floppy ears, wagging tail, tongue out","bark","Best friend. Will eat your homework.","mammal,pet"},
-	{"dog bowl","BMALKI","c",1,1,2,"C9CED4","C0392B","steel bowl full of kibble","squeak","Dinner bell for monsters.","pet"},
-	{"dog groomer","LMCJNA","dF",3,5,4,"F472B6","F8FAFC","apron, blow dryer, brush","snip","Fluffs your dog. Fluffs your enemies.","silly,canine"},
-	{"dog knight","AKBJAA","GQf",3,7,4,"A16207","1D4ED8","loyal pup in shining armor","bark","Good boy. Great knight.","warrior,canine,cute"},
 }

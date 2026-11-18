@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tornado tower","EFDMII","GklSHe",6,1,6,"B0BEC5","80DEEA","tower spinning a small tornado on top","whoosh","Picks enemies up. Puts them down far away.","structure,defense,tower"},
+	{"torosaurus","AMEJAA","DkT",8,5,8,"6A5A3A","C8A87A","gigantic frill","bellow","Biggest head of any land animal.","dinosaur,extinct,reptile"},
+	{"torpedo","CBCAkC","EeB",7,7,3,"4A4D52","F1C40F","long finned underwater missile","boom","Fish-shaped delivery service.","explosive,ocean"},
+	{"torpedo boat","DBCMHC","EegB",6,9,5,"607D8B","37474F","fast low boat with torpedo tubes","splash","Fast, low, and full of torpedoes.","vehicle,aquatic"},
 	{"torque wrench","JKBHtK","kf",3,6,6,"DDE3E8","24262A","long ratchet wrench","clank","Click click click. Tight.","tool"},
 	{"torrent","FBDF6F","kIP",6,7,3,"155F99","7FC8F8","violent rushing water channel","roar","Water that is late for something.","aquatic"},
 	{"torrent serpent","FBEACD","QkeNB",7,4,4,"60BAEE","E2F4FF","a serpent of water rears up and dives on a target","splash","It rises. It looks at you. It falls on you.","anime,ninja,water"},
@@ -399,8 +403,4 @@ return {
 	{"victoria water lily","NBDLMJ","SN",2,1,5,"43A047","F8BBD0","huge round floating pad with a rim","rustle","Big enough to stand on. Try it.","plant,flower"},
 	{"victory","KHCOKJ","DF",4,6,4,"FFD54F","43A047","golden trophy-shaped glow","fanfare","Winner winner.","holy"},
 	{"vicuna","AMCJAA","df",3,4,4,"C8945A","F2EEE6","slim wild llama, golden coat","bleat","Fanciest wool on the mountain.","mammal,farm"},
-	{"video","BHBCnE","jdc",2,3,3,"111827","EF4444","floating screen with a play triangle and a buffering ring","click","Buffering... buffering... buff... ering.","tech,internet"},
-	{"video camera","BHBBKI","c",1,5,3,"24262A","C0392B","handheld camera with red light","beep","Recording. Smile.","tech,electric"},
-	{"video game","BDCN1I","jShY",5,5,3,"4F46E5","22D3EE","glowing screen spilling blocky pixels and a health bar","beep","Just five more minutes. Said three hours ago.","gaming,tech"},
-	{"video game controller","BMAOJI","j",1,6,3,"24262A","8E9196","handheld game pad with buttons","clack","Press A to win.","game,tech"},
 }

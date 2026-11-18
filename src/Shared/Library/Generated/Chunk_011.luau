@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost pepper","IABAKK","KjSP",7,7,2,"C8202B","8A1E1E","wrinkled red pod","sizzle","So hot it haunts you for days.","edible,spicy,flammable,pepper,spooky"},
+	{"ghost pipefish","ABAJEC","dZB",1,6,1,"E8D8C0","C8A07A","ornate seaweed-like","splash","Pretends to be seaweed.","fish,aquatic"},
+	{"ghost pirate captain","AIDJNJ","Afh",7,5,4,"94A3B8","22C55E","glowing spectral captain with hook","wail","Commands the dead crew.","ghost,pirate,boss"},
 	{"ghost ship","DIEKHJ","jAZegB",7,5,6,"455A64","80DEEA","tattered glowing galleon, ripped sails","moan","Crewed by nobody. Steered by spite.","spooky,undead"},
 	{"ghost ship crew","AICJNJ","Zfh",5,5,4,"94A3B8","22C55E","spectral sailors with tattered coats","wail","They still want their pay.","undead,ghost,pirate"},
 	{"ghost slime","AIBJGJ","UZ",2,5,2,"E5E7EB","A5B4FC","see-through floating jelly","squelch","Boo. Squish.","slime,ghost"},
@@ -400,7 +403,4 @@ return {
 	{"grenade","CABGKF","EkeV",5,6,2,"6B7B3A","4A4D52","pineapple-shaped grenade with pin","boom","Pull pin. Throw. Run.","explosive"},
 	{"grenade barrage","CADEJK","EP",7,5,1,"6B7B3A","4A4D52","shower of grenades","thud","Pins pulled. All of them.","explosive"},
 	{"grenade belt","BMBONI","E",4,5,3,"6B7B3A","7A4E2D","belt of grenades","thud","Fully loaded. Fully nervous.","explosive"},
-	{"grenadier","LACJNA","Eke",6,5,5,"DC2626","111827","tall hat, satchel of round bombs","boom","Throws bombs. Very far. Very fast.","warrior,explosive"},
-	{"grevy's zebra","AMDJAA","Dk",5,8,5,"F2F2F0","1A1A1A","thin stripes, big round ears","neigh","Thinner stripes. Bigger ears.","mammal"},
-	{"grey alien","ALCJNA","jlOY",5,5,3,"9CA3AF","0F172A","big head, huge black almond eyes, thin limbs","hum","Abducts cows. Returns them confused.","alien,space"},
 }

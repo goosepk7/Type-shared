@@ -403,6 +403,4 @@ return {
 	{"cleric","LHCJNA","GFe",4,4,5,"F8FAFC","FACC15","white robe, golden symbol, healing glow","chime","Bandages, blessings, and stern looks.","holy,healer"},
 	{"click beetle","AMAJFA","GUf",1,3,4,"3A2A1A","8A6A4A","slim beetle flipping into air","click","Flips itself with a click.","insect,armored"},
 	{"clickbait","KLBLnI","jcO",3,2,1,"EF4444","FACC15","thumbnail with a shocked face, red arrow and red circle","click","You will NOT believe what happens next. (Bonk.)","meme,internet"},
-	{"cliff","MEECII","GkS",4,1,10,"8D6E63","9E9E9E","sheer rock wall with a ledge","rumble","One step too far. Byeee.","place,terrain"},
-	{"cliffside","MEENII","kS",4,1,9,"8D6E63","7CB342","grassy edge above a sheer drop","rumble","One step back. No, the other way.","place,terrain"},
 }
