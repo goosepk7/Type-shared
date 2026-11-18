@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"softball","BMAA3F","ke",2,8,4,"F1C40F","C0392B","big yellow stitched ball","bonk","Not actually soft.","sport"},
+	{"softshell turtle","AMBJUA","GNB",2,4,5,"8A8A6A","C8C8A8","flat pancake turtle with snorkel nose","hiss","A pancake with a snorkel.","reptile,armored"},
+	{"soil","FGBCnI","GW",3,2,5,"5C3E25","7E9C4A","mound of dark earth with sprouts","rustle","Good for gardens. Bad for intruders.","plant"},
+	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
+	{"solar farm","EHEMII","GKSe",3,1,5,"1A237E","FFC107","rows of tilted dark glass panels","thud","Soaks up the sun. Zaps it back.","structure,building"},
 	{"solar flare","HAEBKI","KTeO",8,9,2,"FFB300","FFF9C4","giant looping arc of fire leaping off the sun","roar","The sun throwing a tantrum.","space,fire"},
 	{"solar lion","AADJAA","KDf",7,7,5,"F97316","FDE047","lion with a solar flare mane","roar","Mane hotter than the sun. Literally.","cosmic,fire"},
 	{"solar panel","OHCM1I","FS",2,1,5,"1F2F55","C9CED4","tilted grid of dark glass cells","hum","Sunlight in, power out.","mechanical"},
@@ -398,9 +403,4 @@ return {
 	{"stick","KMBLII","NO",3,4,3,"FFE082","FFFFFF","gooey sticky patch","squelch","You are now stuck. Sorry.","silly"},
 	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
 	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
-	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
-	{"sticky bun","IMBLGI","SNP",2,3,3,"A85A1E","D99A4A","spiral bun, gooey glaze","gloop","Hands will never be clean again.","edible,sticky,sweet"},
-	{"sticky floor","BMCLII","NO",2,1,3,"F1C40F","D2B48C","tacky floor mat","snap","Every step is a struggle.","trap,sticky"},
-	{"sticky note","BMALJK","dN",1,8,1,"F1C40F","F1C40F","small square sticky paper","tap","Stuck to your forehead.","office,sticky"},
-	{"sticky rice","IMBLGI","SNP",2,3,3,"F7F4EC","E8E0D0","clumpy white rice mound","gloop","Rice that refuses to let go.","edible,sticky"},
 }

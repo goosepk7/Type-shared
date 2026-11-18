@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tartar sauce","IMBLGI","kSO",2,3,2,"F7F2DC","7DAE3A","white dip with pickle flecks","squeak","Fish sticks' best friend.","edible,slippery,silly,sauce"},
+	{"tasmanian devil","AMBJAA","Ujf",4,6,2,"1E1A18","F2F2F0","black stocky, white chest band, big jaws","screech","Spins and screams. Mostly screams.","mammal,marsupial"},
+	{"tater tots","IMAELB","eVP",2,7,1,"D49A3A","F2CE7A","little golden cylinders","pitter","Tiny potato barrels. Fire at will.","edible,savory"},
+	{"tattletale","LMBJNA","jh",2,7,2,"FACC15","DC2626","pointing kid shouting","whistle","I'M TELLING. Teacher arrives.","silly,school"},
+	{"tattoo","BLBOPB","jQS",3,5,3,"1F3A5F","E63946","inky dragon drawing peeling off skin and flying","buzz","Says MOM in a heart. Bites anyway.","art,silly"},
 	{"tatzelwurm","AJBJCD","CfM",3,6,3,"57534E","D97706","cat-headed lizard worm","hiss","A cat-faced lizard that hisses at hikers.","cryptid,reptile"},
 	{"taunt","KMBFOB","dc",1,8,1,"FF5252","FFFFFF","tongue-out face ring","neener","Nyah nyah! Come get me.","silly"},
 	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
@@ -398,9 +403,4 @@ return {
 	{"trampoline","BMDLII","Ukl",3,1,5,"24262A","2F6FD1","round springy mat on legs","bonk","Boing! Bye!","sport,defense"},
 	{"transform","KLCOKI","jW",4,5,3,"BA68C8","FFF59D","swirl of sparkles then a new silhouette","poof","New look, who dis?","magic"},
 	{"transforming robot","OKDKNL","DegY",7,8,7,"DC2626","1D4ED8","robot unfolding from a sports car","clank","More than meets the eye.","robot,vehicle"},
-	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
-	{"trap","KMCLII","O",4,4,4,"8D6E63","FFD54F","glowing jaw-shaped rune on ground","snap","Step right in. Wait, don't.","meme"},
-	{"trap-jaw ant","AMAJLA","UCkfP",1,5,1,"8A4A1E","3A1E14","ant with spring-loaded jaws","skitter","Snaps so hard it launches itself.","insect,swarm"},
-	{"trapdoor","EEBLII","ZOY",3,1,4,"6D4C41","424242","hinged wooden hatch in the floor","creak","Click. Whoosh. Byeee.","structure,defense,silly"},
-	{"trapdoor spider","AJBLQA","CZfMN",2,6,2,"3A2A1E","6A5A44","spider under a hinged lid","skitter","Opens its door. Surprise!","arachnid,spooky,venomous"},
 }
