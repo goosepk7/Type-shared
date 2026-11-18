@@ -361,7 +361,7 @@ return {
 	{"cappuccino","IABOKI","DF",3,9,2,"A8784A","F2E8D8","cup with frothy foam crown","fizz","Foamy coffee with a fluffy hat.","edible,drink"},
 	{"capricorn","MHCEKJ","ke",5,5,5,"FFFFFF","26A69A","stars in a goat-fish shape","rumble","Half goat. Half fish. All stars.","space,zodiac"},
 	{"capture","KLCLII","GO",5,5,4,"7E57C2","E1BEE7","glowing bubble cage closing around target","whum","Caught you. Stay.","magic"},
-	{"capture orb","BLBA3K","ebO",5,9,2,"C9A24A","2EC4B6","brass and teal orb with a glowing band","pop","Wobble... wobble... wobble... click.","game,monster,capture"},
+	{"capture orb","BLBA3K","ebO",5,9,2,"C9A24A","2EC4B6","brass and teal orb with a glowing band","pop","Snap shut. Hum. Pop!","game,monster,capture"},
 	{"capuchin","AMBJBA","deb",2,7,2,"3A2A20","F2E6CC","cream face, dark cap","chatter","Washes food. Fancy little monkey.","mammal,primate"},
 	{"capybara","AMCJAA","dFB",3,6,1,"9A6E44","C8A07A","barrel rodent, square head, chill face","squeak","Everyone's friend. Even crocodiles'.","mammal,cute,meme"},
 	{"car","DMCKHL","Dkg",5,7,6,"C8102E","2B2D33","boxy body, four wheels, round headlights","engine","Beep beep. Get out of the lane.","mechanical,vehicle,land"},

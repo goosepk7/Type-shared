@@ -58,7 +58,7 @@ return {
 	{"big ben","ELFCII","GkSO",6,1,10,"C9A55A","37474F","tall gothic clock tower with four faces","bell","BONG. BONG. You are stunned.","structure,landmark"},
 	{"big crunch","HIFNOI","iHO",9,3,6,"1A0F2E","FF4081","universe-crumpling inward collapse","rumble","The universe folds itself like laundry.","space,danger"},
 	{"big dipper","MHEEKJ","keV",6,4,5,"FFFFFF","3949AB","seven stars in a ladle shape","rumble","A giant star spoon. Scoop.","space"},
-	{"big inhale","KFCN5K","kHe",5,7,2,"FF9EC8","FFE66D","roaring cone of wind into your mouth","whirr","Hhhhhhhhhh... PTOO!","game,wind,pull"},
+	{"big inhale","KFCN5K","kHe",5,7,2,"82E8F0","FF805C","aqua wind cone into your mouth, spat out as a coral star","whirr","Hhhhhhhhhh... PTOO!","game,wind,pull"},
 	{"bigfin squid","ABDJSC","jZHB",5,6,3,"E8E0D8","C8B8A8","huge fins and spider-thin arms","squelch","Arms that bend like elbows. Spooky.","aquatic,ocean,smart,deepsea,spooky"},
 	{"bigfoot","AGDJNA","DZkf",6,6,7,"78350F","A16207","tall hairy ape-man, huge flat feet","roar","Blurry in every photo. On purpose.","cryptid"},
 	{"bigfoot chief","AGEJNA","Zkh",8,5,8,"78350F","FACC15","enormous sasquatch with feathered crown","roar","Leader of the blurry photos.","cryptid,boss"},
