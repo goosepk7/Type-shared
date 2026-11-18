@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"violet","NGANMI","dFS",1,1,1,"7E57C2","FFEB3B","small velvety bloom with a face","rustle","Shy little flower with a big face.","plant,flower,cute"},
+	{"violet nullity","KLEGKB","ETe",10,2,2,"9B5CFF","FF3B5C","red and blue collide into a slow world-erasing sphere","hum","Red. Blue. Nothing.","anime,magic,ultimate"},
+	{"violin","BMBFJI","jN",2,6,2,"8B3A1A","24262A","small curvy string instrument with bow","strings","The world's tiniest sad song.","music"},
 	{"violin beetle","AMAJFA","Gf",1,3,4,"6A4A2A","C8A07A","flat violin-shaped beetle","click","Shaped like a violin. Can't play.","insect,armored,music"},
 	{"violinist","LLCJNA","jO",3,5,3,"7C2D12","FACC15","bow, violin, dramatic hair flip","violin","World's smallest violin, for you.","music"},
 	{"viper","AMCJCD","fTMN",4,6,3,"8A6A3A","3A2A1A","triangle head, zigzag pattern","hiss","Ambush expert. Folding fangs.","reptile,venomous"},
@@ -116,6 +119,7 @@ return {
 	{"warp","KLCOKB","DY",4,10,2,"6200EA","84FFFF","stretched streaky blur in motion","warp","Engage! Whoosh.","space,speed"},
 	{"warp pipe","EKCOII","Y",2,9,5,"2E9C95","D9A441","a pipe pops up under you and you come out of another one","warp","Down one pipe, up the other. Do not ask what is in between.","game,platformer,travel"},
 	{"warp ship","DLEKHB","DAgY",7,10,7,"ECEFF1","7C4DFF","sleek ship with glowing warp rings","warp","Here. There. Everywhere.","vehicle,space"},
+	{"warp slash","CLCHJI","fY",5,10,2,"BE8CFF","464856","a phase blade blinking through the target","slash","Through, not around.","scifi,melee"},
 	{"warrior","LECJNA","GDf",6,5,6,"991B1B","9CA3AF","sword and shield, chainmail, battle scars","clang","Hits things. Very good at it.","warrior"},
 	{"warrior princess","LHCJNA","GDf",6,6,6,"F472B6","94A3B8","tiara on a helmet, sword, cape","clang","Rescues the knight. Again.","royal,warrior"},
 	{"wart","BJALKI","SMP",2,1,3,"8A9A5B","5E6B3A","bumpy green lump with one hair","squelch","A gift from a toad. No returns.","body,gross,spooky"},
@@ -399,8 +403,4 @@ return {
 	{"wizard hut","ELBCII","jSY",3,1,5,"3949AB","FFD54F","crooked hut with a starry pointy roof","thud","Smoke of every colour from the chimney.","structure,ancient,magic"},
 	{"wizard kid","LLBJNA","je",3,6,2,"1E3A8A","FACC15","kid in robes waving a stick wand","zap","Spells? Mostly sparkles.","cute,magic"},
 	{"wizard king","LLCJNA","ehY",6,4,5,"4338CA","FACC15","crowned wizard with orb scepter","zap","Rules by magic. And snacks.","royal,magic"},
-	{"wizard school","MLFNII","ShY",5,1,9,"3949AB","FFD54F","castle with spires, owls, floating candles","chime","Class is in session. Lesson one: fireballs.","place,mythical,magic"},
-	{"wizard tower","ELDMII","GjSeY",6,1,7,"3949AB","FFD54F","crooked tall tower, star-spangled cone roof","zap","Leaning slightly from all the magic.","structure,defense,tower,magic"},
-	{"wizard's wrath","KLENOI","KEkL",8,5,3,"7C4DFF","FF6D00","starry hat-shaped burst raining spells","boom","Never annoy a wizard.","magic,explosive"},
-	{"wizardry","FLCGKE","eV",5,6,2,"3D5AFE","C5CAE9","starry blue orb with pointy-hat sparkles","shimmer","Pure, concentrated wizard.","magic"},
 }

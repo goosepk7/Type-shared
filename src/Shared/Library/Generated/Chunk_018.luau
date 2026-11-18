@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nilgai","AMDJAA","Dk",5,8,4,"6E727E","2A2A2E","bluish grey antelope, sloped back","bleat","A blue bull that's an antelope. Confusing.","mammal,wild"},
+	{"ninja","LICJNA","ZTeY",5,9,3,"111827","DC2626","black hood, red sash, throwing stars","whoosh","You didn't see it. That's the point.","stealth,martial"},
+	{"ninja clan","LIDJLA","ZePY",6,9,4,"111827","7F1D1D","group of black-clad leaping figures","whoosh","Many ninjas. Zero noise.","stealth,swarm"},
 	{"ninja grandma","LICJNA","jZT",5,8,3,"C084FC","111827","grandma in a ninja outfit with knitting needles","whoosh","Knitting needles. Throwing needles.","silly,stealth,family"},
 	{"ninja mask","BMBONI","Z",1,8,1,"24262A","24262A","black cloth face wrap","swish","Now you see... nothing.","clothing,ninja"},
 	{"ninja master","LICJNA","ZThY",6,9,4,"111827","7C3AED","grey-masked elder ninja with staff","whoosh","Taught every ninja. Trusts none.","stealth,martial"},
@@ -400,7 +403,4 @@ return {
 	{"patience","KEBOKI","GF",1,1,6,"8D6E63","FFF8E1","calm stone-like glow","tick","Good things come to those who wait.","support"},
 	{"patrol","LHCJNA","GQeO",4,5,5,"1E3A8A","FDE047","two guards walking a loop with lanterns and whistles","whistle","Round and round. Nothing to see. Oh wait.","defense,military"},
 	{"pattern","KLBF6B","jNP",2,5,2,"DC2626","15803D","rolling tartan grid that makes eyes go funny","hum","Stare long enough and a sailboat appears.","art"},
-	{"patupaiarehe","AFCJNJ","jZc",3,6,2,"E0F2FE","FDE68A","pale misty folk playing flutes","flute","Live in mist. Play spooky flutes.","fairy"},
-	{"pauldron","BKBONI","G",1,5,6,"8A929B","D4A72C","big curved shoulder plate","clank","Shoulder pads for battle.","armor,defense"},
-	{"pause","KLCNOI","O",5,5,3,"90A4AE","FFFFFF","pause-symbol bubble freezing area","click","Hold on. Literally.","time,silly"},
 }

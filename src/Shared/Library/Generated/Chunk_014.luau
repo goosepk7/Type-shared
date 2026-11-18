@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jalebi","IMBLGI","jN",2,3,3,"F2862B","F2C24A","orange spiral pretzel, syrup","gloop","A syrup spiral of sweet chaos.","edible,sticky,sweet"},
+	{"jam","IMBLGI","ScN",2,3,3,"B0203E","D7263D","jar of glossy red preserve","gloop","Sticky, sweet, and smearable.","edible,sticky,sauce,sweet"},
+	{"jam roly poly","IMBGKF","DkI",3,5,6,"F2D08A","B0203E","rolled pudding with jam spiral","rumble","A jammy log of pudding.","edible,heavy,sweet"},
 	{"jamaica","IBBOKI","F",2,6,2,"B0103E","E8434F","deep red flower drink","slurp","Ruby-red and tart.","edible,drink"},
 	{"jambalaya","IAAELB","KeP",2,6,1,"C8602B","7DBE3A","spicy rice with sausage, peppers","pitter","Spicy rice with a party inside.","edible,grain"},
 	{"janitor","LMCJNA","GIN",3,4,5,"1E40AF","FACC15","jumpsuit, mop, giant key ring","swish","Wet floor. Slippery enemies.","school,silly"},
@@ -400,7 +403,4 @@ return {
 	{"lava field","MAELII","KSN",7,1,7,"FF5722","212121","black crust cracking over glowing lava","bubble","The floor is lava. Literally.","place,terrain,flammable"},
 	{"lava flood","HAENOI","KSNP",8,3,5,"DD2C00","FFB300","glowing lava rising across the ground","bubble","Flood, but it's fire.","fire,natural"},
 	{"lava flow","HAEF6D","KNP",7,2,6,"FF3D00","FFA000","slow river of glowing orange rock","bubble","In no hurry. Still unstoppable.","natural,fire"},
-	{"lava fountain","HADLII","KlP",7,5,4,"FF3D00","FFD740","tall glowing jet of lava spraying droplets","whoosh","A fountain you do not throw coins in.","fire,natural"},
-	{"lava giant","AAEJNA","KkS",8,3,8,"450A0A","F97316","cracked black giant oozing lava","rumble","Every footprint is a fire hazard.","giant,fire"},
-	{"lava hammer","CADHtK","KkfO",8,3,7,"1B1A22","D9480F","glowing molten stone hammer","shing","Each hit leaves a puddle of fire.","fantasy,sharp"},
 }

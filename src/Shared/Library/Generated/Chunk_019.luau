@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"patupaiarehe","AFCJNJ","jZc",3,6,2,"E0F2FE","FDE68A","pale misty folk playing flutes","flute","Live in mist. Play spooky flutes.","fairy"},
+	{"pauldron","BKBONI","G",1,5,6,"8A929B","D4A72C","big curved shoulder plate","clank","Shoulder pads for battle.","armor,defense"},
+	{"pause","KLCNOI","O",5,5,3,"90A4AE","FFFFFF","pause-symbol bubble freezing area","click","Hold on. Literally.","time,silly"},
 	{"pav bhaji","IABNGI","KF",4,4,2,"C8402B","D9A04A","buttered buns with spicy mash","sizzle","Buttery buns, spicy veg mash.","edible,spicy"},
 	{"paver","DADKHL","KDkgN",5,2,9,"FFB300","424242","wide machine laying hot tarmac","engine","Lays a sticky hot road. Do not stand still.","mechanical,vehicle,land"},
 	{"pavise","BKDCII","G",2,1,8,"8B5A2B","1F2F55","tall standing wooden shield","clang","Plants itself. Refuses to move.","armor,defense"},
@@ -134,7 +137,7 @@ return {
 	{"photocopier","BMDMII","eVh",2,1,6,"8E9196","F2F2EE","big office copy machine","tap","Copies enemies. Badly.","office"},
 	{"photographer","LHCJNA","dO",3,5,3,"111827","F8FAFC","camera with big flash","click","Say cheese. FLASH. Stunned.","art"},
 	{"photon","FHAAKB","Te",2,10,1,"FFFFFF","FFF59D","tiny bright light speck streak","zing","Fastest thing around. Also tiniest.","space"},
-	{"photon torpedo","CHCAkI","EQe",8,8,2,"7DF9FF","F2F2EE","glowing energy torpedo","zap","Space boom, delivered.","scifi,space"},
+	{"photon torpedo","CHCAkI","EQe",6,3,2,"FF603C","5C606C","a slow amber-red torpedo core in an open rib casing","zap","Slow, polite, inevitable. Unless you dash.","scifi,space"},
 	{"photosynthesis","KGCOKJ","WF",1,3,4,"66BB6A","FFEB3B","green leafy glow drinking sunlight","chime","Eat sunshine. Heal up.","plant,support"},
 	{"physalis","IGAELB","eVP",2,7,1,"F2B33A","E8D8A8","orange berry in papery lantern","pitter","Comes gift-wrapped by nature.","edible,fruit,sweet"},
 	{"physicist","LDCJNA","EeY",4,4,4,"F8FAFC","7C3AED","lab coat, chalkboard of equations","zap","Did the math. You lose.","science"},
@@ -400,7 +403,4 @@ return {
 	{"poison ivy","NJBLMI","SMNP",4,1,3,"33691E","C62828","three shiny leaves, reddish stems","rustle","Leaves of three, let it be.","plant,silly"},
 	{"poison mage","LJCJNA","SMP",5,4,4,"365314","84CC16","green-stained robes, gas cloud","bubble","Smells bad. Fights worse.","magic,toxic"},
 	{"poison nova","FJDFOI","MP",6,7,1,"76FF03","C6FF00","bursting ring of green toxic spores","hiss","Personal space, but poisonous.","toxic"},
-	{"poison orb","FJCGKE","QSM",5,4,2,"8BC34A","1B5E20","bubbling green sphere trailing fumes","bubble","Follows you like a bad smell. Because it is.","toxic"},
-	{"poison rain","FJDEOJ","SMP",6,4,2,"76FF03","33691E","sickly green cloud dripping glowing drops","sizzle","Do not catch these on your tongue.","toxic,storm"},
-	{"poison ring","FJDNOI","GSM",5,3,4,"76FF03","33691E","circle of bubbling green fog","bubble","Don't cross the green line.","toxic"},
 }

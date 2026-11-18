@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flower pot","BEBA2K","eV",1,5,2,"B5653C","2E8B57","terracotta pot","clank","Falls off windowsills dramatically.","tool"},
+	{"flower shield","NGCIMI","GFSa",3,1,4,"F06292","FFEB3B","spinning dome of petals","rustle","Petals swirl. Arrows bounce.","plant,flower"},
+	{"flower shop","EMCNII","dFSc",2,1,4,"F06292","43A047","buckets of flowers out front","ding","Smells lovely. Heals a bit.","structure,building,shop,plant"},
 	{"flower tower","NGDMMI","GFSe",4,1,5,"F06292","43A047","spire of stacked blooms","rustle","Shoots petals from the top.","plant,flower"},
 	{"flowerhorn","ABAJEC","dB",1,6,1,"E8401E","3AA0E8","bright fish with giant head hump","splash","Giant forehead bump. Fancy.","fish,aquatic"},
 	{"flurry","GCBEOJ","N",2,5,1,"F5FAFD","CDE3F0","swirling light snow puff","hush","A little sneeze of snow.","frozen"},
@@ -400,7 +403,4 @@ return {
 	{"ghost veil","KLBOKI","Z",2,6,3,"CFE8F2","7A8FA6","caster fades to a faint shimmering outline","whoosh","Now you mostly don't see me.","magic"},
 	{"ghoul","AICJNA","ifM",4,6,4,"57534E","84CC16","hunched pale creature, long claws","growl","Lurks in graveyards eating snacks it shouldn't.","undead,spooky"},
 	{"ghoul king","AIDJNA","ifh",7,5,6,"365314","57534E","crowned ghoul, bone cape","growl","Leader of the graveyard snack club.","undead,royal,spooky"},
-	{"giant","AEEJNA","kfO",8,3,8,"A16207","FEF3C7","enormous human figure, belt and boots","stomp","Fee fi fo... you know the rest.","giant"},
-	{"giant african snail","AMBJGI","GSN",2,1,6,"7A4A2A","D8B080","huge striped conical shell","squelch","A snail the size of your hand.","mollusk,aquatic"},
-	{"giant ape","AEFJNA","DklO",9,5,9,"292524","78350F","skyscraper-sized gorilla pounding chest","roar","Climbs towers. Swats planes.","kaiju,giant,danger"},
 }

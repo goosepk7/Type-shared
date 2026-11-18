@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mirror spider","AJBJQA","fMaN",2,6,2,"E8E8F0","C8C8D8","silver mirror-plated abdomen","skitter","Covered in tiny mirrors. Disco.","arachnid,spooky,venomous"},
+	{"mirror wall","EHCCII","GjSa",3,1,4,"E0F7FA","B0BEC5","tall polished mirror panels","chime","Everything you throw comes right back.","structure,defense"},
+	{"mirror world","MLFNII","jSa",5,1,7,"E0F7FA","B0BEC5","everything reflected and backwards","chime","Left is right. Right is wrong.","place,mythical"},
 	{"misery","KBCDOJ","iSN",4,2,1,"475569","64748B","heavy grey drizzle cloud that follows one person only","sigh","Loves company. Brought a guest list.","mood"},
 	{"miso paste","IMBLGI","SNP",2,3,3,"C8A070","8A5A3A","brown fermented paste","gloop","Salty, savory paste.","edible,sticky"},
 	{"miso ramen","IABOGI","KF",3,4,3,"C8903A","F2E8C8","bowl with cloudy broth, corn","slurp","Rich, salty, warming.","edible,warm,healthy"},
@@ -400,7 +403,4 @@ return {
 	{"nile crocodile","ABDJAC","fHOB",8,5,8,"5A6A3A","C8C08A","huge croc with yellow belly","snap","Rules the Nile. Ambush pro.","reptile,predator,aquatic"},
 	{"nile monitor","AMCJAA","CfbB",4,7,2,"3A3A2A","E8D82A","spotted swimming monitor","hiss","Swims, climbs, steals eggs.","reptile"},
 	{"nile river","MBFNII","SIN",5,1,8,"1E88E5","E6C27A","long river through golden desert","rumble","Floods once a year. Right now, actually.","place,landmark"},
-	{"nilgai","AMDJAA","Dk",5,8,4,"6E727E","2A2A2E","bluish grey antelope, sloped back","bleat","A blue bull that's an antelope. Confusing.","mammal,wild"},
-	{"ninja","LICJNA","ZTeY",5,9,3,"111827","DC2626","black hood, red sash, throwing stars","whoosh","You didn't see it. That's the point.","stealth,martial"},
-	{"ninja clan","LIDJLA","ZePY",6,9,4,"111827","7F1D1D","group of black-clad leaping figures","whoosh","Many ninjas. Zero noise.","stealth,swarm"},
 }

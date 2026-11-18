@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poison orb","FJCGKE","QSM",5,4,2,"8BC34A","1B5E20","bubbling green sphere trailing fumes","bubble","Follows you like a bad smell. Because it is.","toxic"},
+	{"poison rain","FJDEOJ","SMP",6,4,2,"76FF03","33691E","sickly green cloud dripping glowing drops","sizzle","Do not catch these on your tongue.","toxic,storm"},
+	{"poison ring","FJDNOI","GSM",5,3,4,"76FF03","33691E","circle of bubbling green fog","bubble","Don't cross the green line.","toxic"},
 	{"poison shield","FJCIKI","GM",3,3,5,"76FF03","1B5E20","bubbling green dome","bubble","Touch it and regret it.","toxic,defence"},
 	{"poison slime","AJBJGG","UMV",3,4,3,"84CC16","4D7C0F","bubbling green jelly","squelch","Melts your shoes.","slime,toxic"},
 	{"poison spit","FJBAKB","Me",3,8,1,"AEEA00","33691E","glob of green spit arcing forward","ptoo","Rude and effective.","toxic,silly"},
@@ -400,7 +403,4 @@ return {
 	{"rainstorm","GBDEOJ","SIN",5,5,3,"456F8C","B4D6EA","dark heavy cloud dumping thick rain","patter","Nature's car wash.","storm,aquatic"},
 	{"rainy day","GBCEOJ","N",2,3,3,"78909C","B3E5FC","soft grey drizzle over the area","patter","Stay inside. Everyone. Now.","silly"},
 	{"raised bed","EGBNII","FS",1,1,4,"8D6E63","7CB342","wooden box full of veg","rustle","Grows snacks. Heals friends.","structure,plant"},
-	{"raisin","IMAELB","eVP",2,7,1,"4A2A1E","6E3A2A","tiny wrinkled dark nugget","pitter","A grape that sunbathed too long.","edible,sweet,fruit"},
-	{"raita","ICBAKJ","JFN",2,5,2,"F7F4EC","7DBE3A","white yogurt with cucumber","squish","Puts out curry fires.","edible,frozen"},
-	{"rajasaurus","AMDJBA","DkfT",6,6,7,"8A4A2A","E8A04A","short horn crown","roar","Royal lizard with a crown bump.","dinosaur,extinct,reptile,predator,royal"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy sword","CHCHrK","FfT",7,6,5,"D4A72C","F2F2EE","radiant blade, winged guard","shing","Glows when evil is near. So, often.","fantasy,holy"},
+	{"holy tornado","HHEN5K","KFlH",7,6,5,"FFF59D","FFFFFF","golden spinning column of light and feathers","choir","Lifts friends up. Literally.","storm,holy"},
+	{"holy unicorn","AHDKAB","AFTg",7,8,6,"F8FAFC","FDE047","radiant unicorn with feathered wings","chime","Heals with a touch. Pokes with a horn.","holy,mount"},
 	{"holy water","FHBEOJ","Fe",4,5,1,"BDE7FF","FFF6CC","glowing droplets with soft gold sparkle","chime","Splash of goodness. Undead hate it.","holy,aquatic"},
 	{"home fries","IMAELB","eVP",2,7,1,"D9A04A","E8C070","cubed crispy potatoes","pitter","Potatoes, crispy at home.","edible,breakfast"},
 	{"home run","KFCA3B","kle",6,9,2,"FFFFFF","DC2626","baseball with red stitching sailing over a fence into orbit","crack","Going, going, gone. So is the window.","sport"},
@@ -400,7 +403,4 @@ return {
 	{"jailer","LKCJNA","GHO",4,3,6,"111827","94A3B8","keys, baton, cap","clank","Locks you up. Throws away the key.","guardian"},
 	{"jalapeno","IABAKK","KeP",4,7,2,"3E8E2B","2A6B1E","stubby green pod, stem","sizzle","Green, glossy, and quietly furious.","edible,spicy,flammable,pepper"},
 	{"jalapeno poppers","IABAKK","KE",4,7,2,"3E8E2B","D9A04A","breaded stuffed peppers","sizzle","Crunchy, cheesy, hot.","edible,spicy,flammable,snack"},
-	{"jalebi","IMBLGI","jN",2,3,3,"F2862B","F2C24A","orange spiral pretzel, syrup","gloop","A syrup spiral of sweet chaos.","edible,sticky,sweet"},
-	{"jam","IMBLGI","ScN",2,3,3,"B0203E","D7263D","jar of glossy red preserve","gloop","Sticky, sweet, and smearable.","edible,sticky,sauce,sweet"},
-	{"jam roly poly","IMBGKF","DkI",3,5,6,"F2D08A","B0203E","rolled pudding with jam spiral","rumble","A jammy log of pudding.","edible,heavy,sweet"},
 }

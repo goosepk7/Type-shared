@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mage tower","ELDMII","GSTeL",6,1,7,"7E57C2","FFD54F","spiral purple tower, crystal orb on top","zap","The orb sees all. The orb zaps all.","structure,defense,tower,magic"},
+	{"maggot","AMAJTD","CWP",1,3,1,"F2EEE0","E8D8C0","squishy white larva","squelch","Grows up to be a fly. Dreams big.","bug,spooky"},
+	{"magic","FLCGKE","je",4,6,2,"8A5CF5","FFD1F7","swirling sparkle orb, star flecks","shimmer","Sparkles first. Questions later.","magic"},
 	{"magic 8 ball","BLAG3I","jY",1,4,4,"24262A","7D3CB5","black ball with answer window","squeak","Outlook: very bonk.","toy,magic"},
 	{"magic boat","DLCKHJ","DAg",4,6,4,"7E57C2","FFD54F","glowing swan-prow boat floating in air","whoosh","Sails on air. And glitter.","vehicle,magic,mythical"},
 	{"magic bombardment","KAEEOB","EkP",8,5,3,"5D4037","FF6D00","magic orbs raining and exploding","boom","Incoming! Everywhere!","explosive"},
@@ -400,7 +403,4 @@ return {
 	{"mirror ghost","AICJNJ","jaY",5,6,3,"E5E7EB","818CF8","figure trapped in a cracked mirror pane","whisper","Lives in the mirror. Mimics badly.","ghost,spooky"},
 	{"mirror knight","AHCJNA","Gfa",5,4,7,"E5E7EB","93C5FD","knight in polished mirror armor","clang","Your spell? Now it's mine.","warrior,holy"},
 	{"mirror shield","BHCIyI","Ga",3,4,6,"DDE3E8","C9CED4","polished mirror-faced shield","clang","Return to sender.","armor,defense"},
-	{"mirror spider","AJBJQA","fMaN",2,6,2,"E8E8F0","C8C8D8","silver mirror-plated abdomen","skitter","Covered in tiny mirrors. Disco.","arachnid,spooky,venomous"},
-	{"mirror wall","EHCCII","GjSa",3,1,4,"E0F7FA","B0BEC5","tall polished mirror panels","chime","Everything you throw comes right back.","structure,defense"},
-	{"mirror world","MLFNII","jSa",5,1,7,"E0F7FA","B0BEC5","everything reflected and backwards","chime","Left is right. Right is wrong.","place,mythical"},
 }

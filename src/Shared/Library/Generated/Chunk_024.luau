@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snow golem","ACCJNA","GJe",4,3,4,"F8FAFC","F97316","snowman with carrot nose throwing snowballs","crunch","Melts in summer. Fights in winter.","frozen,construct,holiday"},
+	{"snow goose","ACBJDC","AfB",2,5,2,"FFFFFF","1E1E1E","white goose with black wingtips","quack","Arrives in blizzards of geese.","bird,aquatic"},
+	{"snow leopard","ACDJAA","DfT",6,8,5,"D9D6CC","4A4A4A","pale grey coat, smoky rosettes, huge fluffy tail","roar","Hugs its own tail to stay warm. Relatable.","mammal,predator,wild,arctic"},
 	{"snow monkey","ACBJBA","deb",2,7,2,"B8AEA4","E86A6A","fluffy grey fur, red face, in hot spring","chatter","Hot tub enthusiast.","mammal,primate,arctic"},
 	{"snow peas","IGAELB","eVP",2,7,1,"8DC63F","5E9E3A","flat thin pea pods","pitter","Flat pods with a snap.","edible"},
 	{"snow queen","LCCJNJ","Jeh",6,5,5,"BAE6FD","F8FAFC","crystal crown, frost gown","crack","Turns summer into winter with a wave.","royal,frozen"},
@@ -400,7 +403,4 @@ return {
 	{"starship cruiser","DLFMHB","EAegh",9,4,9,"B0BEC5","FF1744","colossal wedge hull bristling with guns","hum","Blocks out the stars. Opens fire.","vehicle,air,space,danger"},
 	{"starting blocks","BMBOII","D",1,9,4,"2F6FD1","C9CED4","angled foot blocks on rail","bonk","Explosive starts.","sport"},
 	{"starting pistol","BMBFwF","O",1,9,2,"24262A","C9CED4","blank-firing pistol","bang","Ready, set, BANG.","sport"},
-	{"stasis","KLCLKI","GO",6,3,6,"FFC107","5E35B1","golden bubble with frozen target inside","hum","On hold. Please wait.","time"},
-	{"stasis field","OLCN1I","SNO",5,3,5,"3FC1D9","F2F2EE","cube projecting a freeze bubble","hum","Everything stops. Even time.","scifi"},
-	{"static","FDBLII","dL",2,6,1,"C6D8FF","FFF6A0","frizzy spark field, hair-raising arcs","crackle","Hair goes up. Dignity goes down.","electric,silly"},
 }

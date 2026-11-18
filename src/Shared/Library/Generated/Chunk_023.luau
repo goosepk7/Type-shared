@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow slash","FICHJB","ifT",6,9,1,"1A0033","AA00FF","smoky black crescent","shing","Cuts through the dark.","spooky,sharp"},
+	{"shadow spike","FICLII","iT",5,6,3,"1A0033","7C4DFF","black spikes stabbing from shadows","crack","Your shadow bites.","spooky,sharp"},
+	{"shadow spiral","FICN5K","iH",6,5,2,"1A0033","AA00FF","swirling black spiral on the ground","hiss","Down the dark drain.","spooky"},
 	{"shadow sprite","AIAJNB","jZ",1,9,1,"1E1B4B","7C3AED","wisp of shadow with glowing eyes","whisper","Hides in your shadow.","fairy,spooky"},
 	{"shadow steed","AIDKAA","DZg",6,9,5,"0F0F23","7C3AED","smoky black horse with violet eyes","neigh","Rides through shadows.","mount,spooky"},
 	{"shadow storm","FIEEOJ","iZP",8,5,3,"1A0033","B388FF","black swirling cloud raining shadow bolts","wail","Gloomy with a chance of doom.","spooky,storm"},
@@ -400,7 +403,4 @@ return {
 	{"snow fort","ECCCII","GSeN",3,1,4,"F5F5F5","90CAF9","low snow wall with a stack of snowballs","thud","Comes pre-loaded with snowballs.","silly,frozen"},
 	{"snow fortress","ECEMII","GJSe",4,1,6,"FFFFFF","B3E5FC","big fort of packed snow with towers","thud","Every tower full of snowballs.","structure,frozen"},
 	{"snow globe","BCBGKI","jJ",2,3,2,"BFE6F2","F2F2EE","glass dome with swirling snow","squeak","Shake it. Winter happens.","holiday"},
-	{"snow golem","ACCJNA","GJe",4,3,4,"F8FAFC","F97316","snowman with carrot nose throwing snowballs","crunch","Melts in summer. Fights in winter.","frozen,construct,holiday"},
-	{"snow goose","ACBJDC","AfB",2,5,2,"FFFFFF","1E1E1E","white goose with black wingtips","quack","Arrives in blizzards of geese.","bird,aquatic"},
-	{"snow leopard","ACDJAA","DfT",6,8,5,"D9D6CC","4A4A4A","pale grey coat, smoky rosettes, huge fluffy tail","roar","Hugs its own tail to stay warm. Relatable.","mammal,predator,wild,arctic"},
 }

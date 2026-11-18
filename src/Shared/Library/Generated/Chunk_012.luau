@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grilled cheese","IGBOKI","Fc",2,5,3,"E0A040","F2C24A","golden toasted sandwich, cheese ooze","crunch","Gooey cheese between crispy armour.","edible,healthy"},
+	{"grilled corn","IABAKF","Ke",3,6,2,"F2B82E","3A2A1E","charred cob with grill lines","splat","Sweet, smoky, golden.","edible"},
+	{"grilled salmon","IGBOKI","F",2,5,3,"E8763A","F2D8C8","pink fillet with grill lines","crunch","Pink, flaky, and healthy.","edible,healthy"},
 	{"grim reaper","AIDJNJ","ifY",7,6,7,"0A0A0A","E5E7EB","black hooded robe, skeletal hand, scythe","whoosh","Just here for the paperwork.","undead,spooky"},
 	{"grime","FEBNGI","SNP",2,2,2,"4A4035","7A6A55","greasy grey-brown smear with fingerprints in it","squelch","Under the fridge since the dawn of time.","gross,sticky"},
 	{"grinder","OKCL1I","HV",6,3,7,"E67E22","8E9196","hopper funnel over spinning teeth","hum","Goes in whole. Comes out mulch.","mechanical"},
@@ -400,7 +403,4 @@ return {
 	{"holy spike","FHCLII","KT",5,6,3,"FFF59D","FFFFFF","golden light spikes rising","chime","Sharp. Shiny. Righteous.","holy,sharp"},
 	{"holy staff","CHCAzK","Fe",5,5,5,"F2F2EE","D4A72C","staff with radiant sun disc","shing","Heals friends. Smites jerks.","fantasy,holy"},
 	{"holy storm","FHEEOJ","KFP",8,5,3,"FFF8E1","FFD54F","golden clouds raining spears of light","choir","Very holy weather.","holy,storm"},
-	{"holy sword","CHCHrK","FfT",7,6,5,"D4A72C","F2F2EE","radiant blade, winged guard","shing","Glows when evil is near. So, often.","fantasy,holy"},
-	{"holy tornado","HHEN5K","KFlH",7,6,5,"FFF59D","FFFFFF","golden spinning column of light and feathers","choir","Lifts friends up. Literally.","storm,holy"},
-	{"holy unicorn","AHDKAB","AFTg",7,8,6,"F8FAFC","FDE047","radiant unicorn with feathered wings","chime","Heals with a touch. Pokes with a horn.","holy,mount"},
 }

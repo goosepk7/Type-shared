@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lava fountain","HADLII","KlP",7,5,4,"FF3D00","FFD740","tall glowing jet of lava spraying droplets","whoosh","A fountain you do not throw coins in.","fire,natural"},
+	{"lava giant","AAEJNA","KkS",8,3,8,"450A0A","F97316","cracked black giant oozing lava","rumble","Every footprint is a fire hazard.","giant,fire"},
+	{"lava hammer","CADHtK","KkfO",8,3,7,"1B1A22","D9480F","glowing molten stone hammer","shing","Each hit leaves a puddle of fire.","fantasy,sharp"},
 	{"lava hound","AACJAA","KDS",5,7,4,"7F1D1D","F97316","rocky hound with molten drool","growl","Fetch? It melted the stick.","canine,fire"},
 	{"lava lamp","BHBG0I","jc",1,2,3,"FF3EA5","C9CED4","glass tube with blobby goo","thud","Groovy hypnosis.","furniture,household"},
 	{"lava moat","EADLII","GKS",6,1,8,"FF5722","3E2723","glowing lava channel in black rock","bubble","Like a moat, but worse in every way.","structure,defense,flammable"},
@@ -400,7 +403,4 @@ return {
 	{"mage armor","KLCOKI","G",2,4,7,"7C4DFF","E1BEE7","translucent violet plates over caster","hum","Armour, but you can't drop it.","magic,defence"},
 	{"mage hand","KLBJVJ","dlb",2,6,2,"B39DDB","FFFFFF","floating glowing hand","shimmer","A hand that helps. Or slaps.","magic"},
 	{"mage spire","ELDMII","GSeL",6,1,7,"7E57C2","40C4FF","tall twisting spire crowned with a crystal","chime","Zaps anything that moves.","structure,magic,mythical,tower"},
-	{"mage tower","ELDMII","GSTeL",6,1,7,"7E57C2","FFD54F","spiral purple tower, crystal orb on top","zap","The orb sees all. The orb zaps all.","structure,defense,tower,magic"},
-	{"maggot","AMAJTD","CWP",1,3,1,"F2EEE0","E8D8C0","squishy white larva","squelch","Grows up to be a fly. Dreams big.","bug,spooky"},
-	{"magic","FLCGKE","je",4,6,2,"8A5CF5","FFD1F7","swirling sparkle orb, star flecks","shimmer","Sparkles first. Questions later.","magic"},
 }

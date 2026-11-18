@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"estoc","CKCHJK","fT",5,7,4,"8A929B","24262A","long stiff thrusting blade","shing","Armour-piercing pointy stick.","fantasy,sharp"},
+	{"eternity","KLENOI","SO",7,1,9,"311B92","FFF8E1","frozen golden moment bubble","hush","Lasts a very, very long time.","time"},
+	{"ethiopian wolf","AMCJAA","DQfh",4,7,4,"C8601E","F2F2EE","slim red wolf","howl","Rarest wolf. Very red.","mammal,predator,wild"},
 	{"eton mess","IMBLGI","SNP",2,3,3,"F7F2EC","D7263D","smashed meringue, cream, berries","gloop","A dessert that already lost a fight.","edible,sticky,sweet"},
 	{"ettin brute","AEEJNA","kf",8,3,8,"78350F","A3A3A3","two-headed hulking giant","stomp","Two heads, zero agreements.","giant"},
 	{"eucalyptus","NGDCMI","GWFkS",3,1,7,"ECEFF1","80CBC4","peeling pale bark, silvery leaves","rustle","Koala snack. Smells like cough drops.","plant,tree"},
@@ -400,7 +403,4 @@ return {
 	{"flower crown","NGAOMI","F",1,1,1,"F8BBD0","FFEB3B","ring of woven blossoms","rustle","Instant festival vibes.","plant,flower,cute"},
 	{"flower fairy","AGAJNB","AFc",1,8,1,"F472B6","A3E635","tiny fairy with petal wings","chime","Heals with pollen. Sneezes too.","fairy,plant,cute"},
 	{"flower field","MGENII","dFS",2,1,4,"F06292","8BC34A","carpet of colourful blooms","rumble","Smells amazing. Sneezes guaranteed.","plant,cute"},
-	{"flower pot","BEBA2K","eV",1,5,2,"B5653C","2E8B57","terracotta pot","clank","Falls off windowsills dramatically.","tool"},
-	{"flower shield","NGCIMI","GFSa",3,1,4,"F06292","FFEB3B","spinning dome of petals","rustle","Petals swirl. Arrows bounce.","plant,flower"},
-	{"flower shop","EMCNII","dFSc",2,1,4,"F06292","43A047","buckets of flowers out front","ding","Smells lovely. Heals a bit.","structure,building,shop,plant"},
 }

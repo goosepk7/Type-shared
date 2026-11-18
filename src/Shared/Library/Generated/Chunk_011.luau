@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant","AEEJNA","kfO",8,3,8,"A16207","FEF3C7","enormous human figure, belt and boots","stomp","Fee fi fo... you know the rest.","giant"},
+	{"giant african snail","AMBJGI","GSN",2,1,6,"7A4A2A","D8B080","huge striped conical shell","squelch","A snail the size of your hand.","mollusk,aquatic"},
+	{"giant ape","AEFJNA","DklO",9,5,9,"292524","78350F","skyscraper-sized gorilla pounding chest","roar","Climbs towers. Swats planes.","kaiju,giant,danger"},
 	{"giant armadillo","AMCJAA","GCf",4,5,7,"8A7A6A","C8B8A0","huge armadillo with big claws","squeak","Giant digger with a giant claw.","mammal,wild"},
 	{"giant baguette","IMEHJI","kfT",7,2,7,"D49A4A","F2DDB0","baguette as long as a bridge","thud","A bread sword for a giant.","edible,giant,silly"},
 	{"giant banana","IMEJIF","UkO",7,2,7,"FFE135","5A3E1B","banana as big as a boat","thud","Peel it. Slide the whole army.","edible,giant,silly"},
@@ -400,7 +403,4 @@ return {
 	{"griffon vulture","AMCJDB","DiAfT",4,9,3,"C8A07A","F2E8D8","pale vulture with fluffy collar","screech","Fluffy scarf. Grim job.","bird,predator"},
 	{"grill","BACMII","KSc",3,1,6,"24262A","FF6A1A","round kettle grill on legs","clang","Sizzle. Smoke. Summer.","summer"},
 	{"grill master","LACJNA","Kce",4,4,5,"DC2626","111827","apron, tongs, smoking grill","sizzle","Smoke signals. Delicious ones.","food,fire"},
-	{"grilled cheese","IGBOKI","Fc",2,5,3,"E0A040","F2C24A","golden toasted sandwich, cheese ooze","crunch","Gooey cheese between crispy armour.","edible,healthy"},
-	{"grilled corn","IABAKF","Ke",3,6,2,"F2B82E","3A2A1E","charred cob with grill lines","splat","Sweet, smoky, golden.","edible"},
-	{"grilled salmon","IGBOKI","F",2,5,3,"E8763A","F2D8C8","pink fillet with grill lines","crunch","Pink, flaky, and healthy.","edible,healthy"},
 }

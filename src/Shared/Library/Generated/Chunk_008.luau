@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doldrums","FFDNOI","NO",3,1,4,"CFD8DC","ECEFF1","eerily still air, flat haze","hush","No wind. No hurry. No hope.","air"},
+	{"dollhouse","BMCClI","Gc",1,1,4,"F06292","F2F2EE","tiny furnished toy house","squeak","Tiny home. Tiny wall.","toy"},
 	{"dolma","IMAELB","Fe",2,7,1,"5E7A3A","8AA86A","rolled leaf parcels","pitter","Little leaf-wrapped surprises.","edible"},
 	{"dolmen","ELCCII","GS",3,1,10,"6D6D6D","7CB342","huge flat stone on upright stones","thud","A table for giants.","structure,ancient"},
 	{"dolphin","ABCJEC","UDFB",4,8,4,"7E94A8","D8E4EC","curved dorsal fin, smiling beak","click","Smiles at everyone. Plays with bubbles.","mammal,aquatic,ocean"},
@@ -335,8 +337,8 @@ return {
 	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
 	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
-	{"emp","CDCGKF","LPO",5,6,2,"3FC1D9","C9CED4","disc crackling with blue arcs","boom","Robots hate this one.","explosive,scifi,electric"},
 	{"emp blast","FDDFOB","PO",5,10,1,"00B0FF","E1F5FE","expanding blue ring of distortion","whum","Turns machines off. And on. And off.","electric"},
+	{"emp pulse","CDDNKI","LP",4,7,3,"78DCFF","966078","a coiled spike slammed down, a pulse ring rolling out","zap","Have you tried turning it off and on again?","scifi,electric"},
 	{"empanada","IMBAKF","Fe",3,6,2,"D9A04A","C8803A","crimped half-moon pastry","splat","A pastry with a crimped smile.","edible"},
 	{"emperor","LHCJNA","GOh",6,3,6,"7F1D1D","FACC15","laurel crown, purple robe, golden throne","horn","Thumbs down. You're out.","royal,ancient"},
 	{"emperor penguin","ACCJDA","UDB",3,5,3,"1E1E24","F2B02A","tall penguin, gold neck patch","squawk","Tallest penguin. Handles -60 degrees.","bird,arctic,cute,royal"},
@@ -366,6 +368,7 @@ return {
 	{"energy bomb","KHFAKB","EkO",9,3,3,"81D4FA","FFFFFF","enormous glowing blue sphere held above head","whoom","Everyone lend me a little energy.","magic,explosive,danger"},
 	{"energy core","ODCG4I","EFL",6,1,4,"7DF9FF","F2F2EE","glowing core in a cage","hum","Handle with care. Lots of care.","scifi"},
 	{"energy drink","IDBO7I","D",4,10,2,"1B1B1B","8DE82B","tall can with a lightning bolt, cracked open","fizz","Zoom. Zoom. Zoooom. Crash.","edible,drink,modern"},
+	{"energy net","CDCAJI","eLO",3,8,2,"6EE6FF","D7FAFF","a crackling cyan net that spins open and wraps the target","zap","Caught you. For a second.","scifi"},
 	{"energy wall","ELDCII","GSaL",4,1,6,"40C4FF","E1F5FE","shimmering glowing hex panels","hum","Hums ominously. Blocks everything.","future,magic"},
 	{"engine","OACM1I","KEkI",5,1,6,"4B5563","EF4444","chunky revving engine block, shaking, pipes blasting flame","rev","VROOM. Just the vroom. No car.","mechanical,loud"},
 	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
@@ -400,7 +403,4 @@ return {
 	{"esquites","IMAELB","eNP",2,6,1,"F2C24A","F7F2EC","cup of corn with toppings","pitter","Street corn in a cup.","edible,grain"},
 	{"essay","BMBCnI","GjN",2,1,4,"FFFFFF","1F2937","wall of dense typed text, word count at the bottom","tap","In conclusion: no.","school"},
 	{"essence","FLBOKJ","iF",3,4,2,"D4A5FF","FFFFFF","floating wisp of concentrated glow","hum","The pure good stuff.","magic"},
-	{"estoc","CKCHJK","fT",5,7,4,"8A929B","24262A","long stiff thrusting blade","shing","Armour-piercing pointy stick.","fantasy,sharp"},
-	{"eternity","KLENOI","SO",7,1,9,"311B92","FFF8E1","frozen golden moment bubble","hush","Lasts a very, very long time.","time"},
-	{"ethiopian wolf","AMCJAA","DQfh",4,7,4,"C8601E","F2F2EE","slim red wolf","howl","Rarest wolf. Very red.","mammal,predator,wild"},
 }

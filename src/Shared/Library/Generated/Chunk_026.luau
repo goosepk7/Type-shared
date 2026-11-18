@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tail","BMBHCK","Ukf",3,7,3,"B9773A","F5E0C3","fluffy wagging tail swishing side to side","swish","Wags when happy. Whacks when not.","body,cute"},
+	{"tailor","LMCJNA","HN",3,5,4,"7C3AED","FDE68A","measuring tape, pins, giant scissors","snip","Measures you for a straitjacket.","silly"},
+	{"tailwind","FFBOOB","D",2,9,1,"CDE6F0","FFFFFF","streamers pushing from behind","whoosh","The wind is on your side.","air,speed"},
 	{"taipan","AMCJCD","fMN",6,8,3,"A8784A","F2E0B8","sleek brown snake","hiss","Strongest venom of any land snake.","reptile,venomous"},
 	{"taiyaki","IMBAKF","ke",3,6,2,"C8803A","5A2A2A","fish-shaped golden waffle","splat","A fish that swims in red bean.","edible"},
 	{"taj mahal","EHFCII","GFSO",5,1,10,"FFFFFF","E1BEE7","white marble dome with four minarets","rumble","Stunningly beautiful. Stunning, literally.","structure,landmark"},
@@ -400,7 +403,4 @@ return {
 	{"tourist","LMCJNA","dO",3,4,3,"0EA5E9","FACC15","hawaiian shirt, camera, sunburn","click","Flash photography. Everywhere.","silly"},
 	{"tow truck","DMDKHL","DklHg",5,6,8,"F5A623","333333","truck with hook crane on the back","engine","Your car looked lonely.","mechanical,vehicle,land"},
 	{"towel","BMBHJI","fO",1,7,1,"F2F2EE","47D7E8","rolled fluffy towel","splash","Towel snap! Ow.","bathroom,household"},
-	{"tower","EMDMII","GSe",4,1,8,"9E9E9E","5D5D5D","tall round stone tower, conical roof","thud","Tall. Strong. Sees you coming.","structure,defense,tower"},
-	{"tower bridge","EBFCII","GklS",6,1,10,"90A4AE","1565C0","two gothic towers with a lifting road","rumble","The bridge opens. Enemies fall in.","structure,landmark"},
-	{"tower house","EMDMII","GSe",3,1,9,"9E9E9E","5D5D5D","tall square stone house with battlements","thud","A house that thinks it is a castle.","structure,building"},
 }
