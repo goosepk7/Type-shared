@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"eoraptor","AMBJBA","DQfT",3,9,3,"8A7A5A","D8C8A8","early small dinosaur","screech","Dawn thief. One of the first dinos.","dinosaur,extinct,reptile,predator,ancient"},
+	{"epaulette shark","ABBJEA","DfTB",2,8,6,"C8B08A","3A2A1E","small shark walking on fins","chomp","A shark that walks. On land. Briefly.","fish,aquatic,ocean,predator"},
+	{"epee","CKCHrK","fT",4,8,3,"C9CED4","24262A","stiff thin blade, bell guard","shing","Fencing with extra French.","medieval,sharp"},
+	{"epic","KHCOKJ","DW",5,6,4,"AB47BC","FFD54F","purple epic loot glow","fanfare","That was epic.","meme"},
 	{"equator","MAFBKI","GKSN",7,1,7,"EF4444","FDE047","red-hot line wrapped round a globe, palm trees wilting","sizzle","The world's belt. It is on the tightest notch.","place,space"},
 	{"equinox","GLDNOI","GF",4,3,5,"FFF59D","1A237E","half-day half-night sky split","chime","Perfect balance of day and night.","space"},
 	{"eradicate","KLDF6B","TIPO",8,6,1,"EF4444","F8FAFC","wide red scanning line sweeping and erasing what it crosses","whum","Target acquired. Target... where did it go?","scifi"},
@@ -399,8 +403,4 @@ return {
 	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
 	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
 	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
-	{"flip","KMBOKK","kY",2,8,2,"FFE082","FFFFFF","acrobatic flip arc trail","whoosh","Ten points for style.","sport"},
-	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
-	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
-	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
 }

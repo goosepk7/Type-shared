@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mini sun","FHCGKE","KFR",6,4,3,"FFB300","FFF8E1","tiny blazing sun floating overhead","hum","Your own personal sunshine.","holy,fire"},
+	{"mini tornado","HFBN5K","klH",4,7,2,"B0BEC5","ECEFF1","knee-high spinning funnel that zips around","whoosh","Small, angry and very spinny.","storm,cute"},
+	{"miniature schnauzer","AMBJAA","dQf",2,6,2,"8A8A8E","D8D8DA","small dog, bushy beard","yip","Grandpa mustache, puppy energy.","mammal,pet,cute"},
+	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
+	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 	{"minivan","DMCKHL","Dkg",4,6,6,"6E8FA6","D9DEE2","tall rounded van, sliding side door","engine","Soccer practice is cancelled. Battle is on.","mechanical,vehicle,land,silly"},
 	{"mink","AMBJAA","CfTB",3,8,2,"3A2618","5A3E2C","glossy dark brown slinky body","chatter","Shiny coat, sharp teeth.","mammal,predator"},
 	{"minke whale","ABEJEC","kIB",6,3,9,"3A4250","D8DEE4","small sleek whale, white flipper bands","whalesong","Smallest of the big guys.","mammal,aquatic,ocean,heavy"},
@@ -398,9 +403,4 @@ return {
 	{"new potatoes","IMAELB","eVP",2,7,1,"E8D0A0","F2E8C0","tiny round potatoes","pitter","Tiny round spuds.","edible"},
 	{"new year","KHDNII","EFPO",5,5,2,"FACC15","111827","glitter ball dropping, clock at midnight, fireworks","boom","Ten! Nine! Eight! Resolutions: broken by two.","holiday,party,explosive"},
 	{"newfoundland","AMDJAA","DQFfB",5,7,4,"1C1A18","3A3633","huge black shaggy dog, webbed feet","bark","Lifeguard dog. Drools as a hobby.","mammal,pet"},
-	{"news","KDCF6B","jdPO",3,8,1,"DC2626","F8FAFC","red BREAKING banner scrolling with a spinning globe","fanfare","This just in: you. Getting hit. More at ten.","meme"},
-	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
-	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
-	{"newt","AJAJCA","FMB",1,3,2,"E8701E","3A3A2A","small orange salamander","squelch","Bright orange. Bitter taste.","amphibian,wetland"},
-	{"niagara falls","MBFFII","kSIN",7,1,9,"4FC3F7","FFFFFF","wide thundering curtain of water","roar","Several million litres of nope.","place,landmark"},
 }

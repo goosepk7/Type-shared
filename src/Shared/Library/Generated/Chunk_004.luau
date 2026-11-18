@@ -3,10 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"brake","KKBF6B","INO",3,6,3,"DC2626","1F2937","red pedal stomp with screeching skid marks","screech","SCREEEECH. Everyone stops. Coffee spills.","vehicle"},
 	{"bramble","NGCLMI","WSTHN",3,1,4,"4E342E","7CB342","tangle of thorny arching canes","rustle","Prickly, sticky, grabby.","plant,sharp"},
 	{"bramble elemental","AGDJMA","THN",6,3,6,"365314","DC2626","tangle of thorny bramble shaped like a beast","rustle","Hugs hurt. A lot.","elemental,plant"},
 	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},
 	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
+	{"brass beast","AKCJAA","Dkf",6,5,6,"E2A93B","FFE08A","a squat walking brass horn creature honks shockwaves","honk","It only knows one note. It is very loud.","music,summon,brass"},
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
@@ -401,6 +403,4 @@ return {
 	{"care package","BMCN2J","ch",3,2,6,"6E7A3C","FF5A2A","military crate drifting down under a parachute","thud","Help from the sky. Finders keepers.","gaming,object,military"},
 	{"cargo","BKDL2I","GkO",6,2,8,"B45309","1E3A8A","big corrugated steel box lowered on four cables","clang","Contents: 40,000 rubber ducks. Really.","heavy,vehicle"},
 	{"cargo helicopter","DFEKHE","AlHg",5,5,7,"556B2F","37474F","long fuselage with two big rotors","chop","Picks up tanks. And you.","vehicle,air"},
-	{"cargo plane","DFFKHB","DAklgh",6,6,8,"607D8B","37474F","fat body, high wings, rear ramp","jet","Drops crates. Some of them land on you.","vehicle,air"},
-	{"cargo ship","DBFKHC","GDkgB",7,2,10,"C62828","1E88E5","long hull stacked with coloured crates","horn","Delivers twenty thousand crates of pain.","vehicle,aquatic"},
 }

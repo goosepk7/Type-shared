@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tonfa","CMBHJK","Gf",3,7,4,"24262A","8B5A2B","baton with side handle","bonk","Spin, block, poke. Repeat.","medieval,heavy"},
+	{"tongs","JKBHJK","fH",1,6,5,"5B6168","24262A","long pincer tongs","clank","Grabs hot things so you don't.","tool"},
+	{"tongue lash","KMBBKI","fHb",3,9,1,"F06292","FFCDD2","long stretchy pink tongue","thwip","Slurp. Grabbed.","silly,gross"},
+	{"tonic water","IBBFKI","EkI",3,7,1,"D8F0F8","F7F7F2","clear fizzy, lime wedge","fizz","Bitter bubbles.","edible,drink,fizzy"},
+	{"tonkotsu ramen","IABOGI","KF",3,4,3,"F2E8D0","C8502B","creamy white broth bowl","slurp","Creamy broth simmered for hours.","edible,warm,healthy"},
+	{"tool","JKBAtK","kfO",3,6,5,"EF4444","9CA3AF","combo tool: hammer one side, wrench the other","clank","If it does not fit, hit it harder.","tool"},
 	{"toolbox","BKBLJK","Gh",2,3,7,"C0392B","8A929B","red metal box with handle","clank","Everything you need, minus the one thing.","tool"},
 	{"tooth","BMBAKB","UfT",3,6,6,"FAFAF0","E8E0C8","shiny white molar with two roots, sparkle","clack","Brushed twice a day. Bites all day.","body,sharp"},
 	{"tooth collector","LHBJNB","Ab",2,8,2,"E0F2FE","FACC15","fairy with pliers","chime","Collects teeth. Pays in coins.","silly"},
@@ -235,7 +241,7 @@ return {
 	{"tuna salad","IGBOKI","F",2,5,3,"E8D8C0","F2E8C8","creamy tuna scoop","crunch","Tuna, creamy and spreadable.","edible,healthy"},
 	{"tuna sandwich","IGBOKI","F",2,5,3,"E8C88A","F2E8C8","sandwich with pale filling","crunch","Lunchbox staple.","edible,healthy"},
 	{"tundra","MCFNII","JSN",3,1,8,"ECEFF1","90A4AE","flat frozen ground, low shrubs","rumble","Cold. Flat. More cold.","place,terrain,frozen"},
-	{"tuning fork","BKAFJI","O",1,5,3,"C9CED4","C9CED4","two-prong metal fork","ting","Hmmmmmm. Perfect pitch. Rattled skull.","music"},
+	{"tuning fork","JLCL4I","kSN",5,4,7,"9FE8FF","B388FF","giant crystal tuning fork that rings when you near it","chime","Step closer. It wants to sing.","music,trap"},
 	{"tunnel","EEDCII","GCSY",2,1,9,"616161","FFB300","arched dark hole with lamp lights","thud","Goes under the problem.","structure"},
 	{"tuojiangosaurus","AMDJAA","GkfT",6,3,9,"7A6A4A","E8A03A","pointy plates stegosaur","grunt","Pointy-plated stego cousin.","dinosaur,extinct,reptile,armored"},
 	{"tupandactylus","AMDJDB","DdAT",6,8,4,"7A5A3A","E8401E","gigantic sail crest","screech","Its head crest is a giant sail.","pterosaur,extinct,reptile"},
@@ -397,10 +403,4 @@ return {
 	{"venom blade","FJCHrB","fTM",5,8,2,"76FF03","33691E","dripping green energy blade","hiss","One cut. Lingering regret.","toxic,sharp"},
 	{"venom bloom","NJBLMI","SMP",4,1,2,"76FF03","4A148C","neon green petals dripping toxin","chime","Pretty colours mean danger. Always.","plant,magic,mythical"},
 	{"venom bolt","FJBAKB","Me",4,8,1,"76FF03","1B5E20","dripping green dart with bubbles","hiss","Nasty, sticky and green.","toxic"},
-	{"venom dagger","CJBHrK","fTM",4,9,2,"8BC34A","3A3F45","green-dripping dagger","shing","One cut. Lots of regret.","fantasy,sharp"},
-	{"venom spike","FJCLII","TM",5,5,3,"76FF03","33691E","dripping green spikes from ground","crack","Pointy and poisonous. Double nope.","toxic,sharp"},
-	{"ventriloquist","LMCJNA","jd",3,4,3,"111827","FBCFE8","suit with a creepy talking dummy","giggle","The dummy does the talking. And fighting.","circus,spooky"},
-	{"ventriloquist dummy","BMBJNA","jd",2,4,2,"E8E2D4","9E1B32","wooden dummy with hinged jaw","squeak","Gottle of geer. Gottle of FEAR.","toy,spooky"},
-	{"venus","MAFGKJ","KkMe",8,3,9,"F4D03F","E59866","yellow sphere wrapped in thick clouds","rumble","Hot enough to melt lead. And you.","space"},
-	{"venus flytrap","NGCLMI","ScfO",5,3,5,"7CB342","C62828","toothed red jaws on a green stem","chomp","Snap! Lunch is served. You are lunch.","plant,carnivorous"},
 }

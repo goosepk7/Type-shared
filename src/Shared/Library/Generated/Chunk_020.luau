@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poblano","IABAKK","KeP",3,7,2,"1E4A1E","3E6B2A","wide dark green pod","sizzle","Mild, dark, and great stuffed.","edible,spicy,flammable,pepper"},
+	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
+	{"pocket dimension","MLFNII","jZSY",6,1,8,"7C4DFF","00E5FF","swirling folded space","chime","Step in, vanish completely.","place,mythical"},
+	{"pocket dragon","AAAJAB","KAQ",2,8,1,"DC2626","FACC15","palm-sized dragon on your shoulder","chirp","Lights your candles. And your sleeves.","cute,reptile"},
+	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
 	{"pocket knife","CKAHrK","fT",2,8,2,"C0392B","C9CED4","folding blade, red handle","shing","Has a blade, a saw, and a tiny toothpick.","medieval,sharp"},
 	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
 	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
@@ -173,6 +178,7 @@ return {
 	{"power bank","BDAO1I","F",1,5,3,"F2F2EE","8E9196","small battery brick","beep","Recharge. Keep going.","tech"},
 	{"power cape","KFCONJ","Ak",4,7,3,"D83A3A","F0C84A","a billowing cape floats you along, then snaps","whoosh","No capes? Hard disagree.","hero,movie,cape"},
 	{"power cell","ODBG1I","FL",3,4,4,"7DF9FF","8E9196","glowing capsule battery","hum","Fuel for every gadget.","scifi,electric"},
+	{"power chord","CDCAJI","eLV",6,8,6,"7C4DFF","64F0FF","a crystal storm lute; one strum fans three lightning bolts","zap","One strum. Three bolts. Encore pending.","music,rock,lightning"},
 	{"power fist","CKCHJK","kfO",7,4,7,"2C3539","E67E22","giant piston-powered fist","bonk","Pow. Pow. Kapow.","scifi,mechanical"},
 	{"power nap","KHBOKJ","F",1,2,3,"9FA8DA","FFFFFF","caster snoozing on a cloud pillow","snore","Five minutes. Fully recharged.","support,silly"},
 	{"power plant","EDECII","GSL",4,1,8,"B0BEC5","FFEB3B","big building, cooling towers, sparking wires","hum","Plugs into everything. Zaps everything.","structure,building,mechanical"},
@@ -397,10 +403,4 @@ return {
 	{"rage","KACOKI","KDk",6,7,3,"D50000","FF6D00","red steaming aura, cartoon anger vein","roar","Steam from the ears. Run.","rage"},
 	{"rage quitter","LACJNA","Ek",4,6,3,"DC2626","111827","furious figure throwing a controller","crash","Throws the controller. Through the screen.","meme,gaming,explosive"},
 	{"ragnarok","HDFNOI","EkLP",10,5,8,"3E2723","FFD740","stormy gold-black sky, giant lightning, falling fire","boom","The ultimate grand finale.","mythical,danger"},
-	{"raid","KADFLA","DPbh",7,7,4,"B91C1C","FACC15","charging mob of mixed heroes with a war horn and loot bags","horn","Forty people. One boss. Nobody read the guide.","gaming"},
-	{"raijin","ADDJNJ","AeLO",7,6,6,"1D4ED8","FACC15","oni drummer in a ring of thunder drums","thunder","Drums so hard the sky crackles.","yokai,storm"},
-	{"raiju","ADCJAB","DAL",5,9,4,"2563EB","FDE047","wolf of blue lightning, crackling tail","zap","Naps in belly buttons during storms.","yokai,storm"},
-	{"rail bird","AMBJDA","AfT",2,5,2,"8A6A4A","C8A07A","slim marsh bird","squawk","Thin as a rail. Literally.","bird,wetland"},
-	{"railgun","CDDBwI","DTe",8,10,4,"7FD8FF","3A3F48","twin rails glowing, then one straight blue-white line","zap","Magnets, but angry.","scifi,ranged"},
-	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
 }

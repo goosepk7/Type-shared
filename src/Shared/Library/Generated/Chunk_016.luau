@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lyre","BMBFJI","dF",2,5,2,"D4A72C","8B5A2B","small U-shaped harp","strum","Ancient bard's best friend.","music,ancient"},
+	{"lyrebird","AMBJDB","jdA",2,7,1,"8A6A4A","E8D8C0","lyre-shaped tail feathers","tweet","Mimics chainsaws perfectly. Showbiz.","bird,cute"},
+	{"lystrosaurus","AMCJAA","f",3,4,6,"8A7A5A","C8B08A","tusked pig-like reptile","growl","Survived the great dying. Tough.","extinct,ancient"},
+	{"maamoul","IMBAKK","Uke",3,7,2,"E8C88A","F7F2EC","patterned date-filled cookie","whoosh","A stamped cookie with a date inside.","edible"},
 	{"mac and cheese","IMBLGI","FcN",2,3,3,"F2B33A","F2D08A","creamy orange pasta pile","gloop","A cheesy hug in a bowl.","edible,sticky"},
 	{"macadamia","IEAAKK","UeO",2,8,8,"F2E8C8","8A5A3A","round cream nut, hard shell","tok","The toughest shell in the nut world.","edible,nut"},
 	{"macadamia cookie","IMBAKK","Uke",3,7,2,"E8C88A","F2E8C8","cookie with white chunks","whoosh","Nuts and white chocolate. Fancy.","edible"},
@@ -331,10 +335,11 @@ return {
 	{"meteor shower","HAEEOB","KEkeP",8,8,5,"6D4C41","FFB300","many fiery streaks raining from a dark sky","roar","Make a wish. Then dodge.","space,explosive"},
 	{"meteor strike","HADAKB","KEkO",8,8,6,"5D4037","FF7043","single blazing rock slamming into a target ring","boom","Marked target. Incoming rock.","space,explosive"},
 	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
-	{"metronome","BMAOII","N",1,3,3,"5A3A1E","D4A72C","pyramid box with swinging arm","hum","Tick. Tock. Stay on beat.","music"},
+	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
 	{"miasma","FJDDOJ","SMNP",5,3,3,"5D7A3A","A3B86C","thick yellow-green rotten haze","hiss","Smells like a dungeon basement.","toxic"},
+	{"mic drop","BDCHtK","klf",6,7,6,"C8CCD6","FF3D7F","giant stage mic swung on its cord, then dropped","thud","Swing. Drop. Walk away.","music,melee"},
 	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
 	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
 	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
@@ -398,9 +403,4 @@ return {
 	{"mini drones","OKBJLB","AQe",4,8,2,"4A4D52","C0392B","swarm of tiny buzzing quadcopters","hum","Bzzzzzzz. Pew pew.","scifi"},
 	{"mini marshmallows","IMAELB","UeP",2,7,1,"F7F4F0","F2A6C8","tiny white cylinders","pitter","A blizzard of fluffy.","edible,sweet,candy"},
 	{"mini submarine","DBCKHC","lfgB",4,4,8,"FF6F00","F5F5F5","round pod with lights and claw arms","sonar","Finds treasure. Pinches enemies.","vehicle,aquatic"},
-	{"mini sun","FHCGKE","KFR",6,4,3,"FFB300","FFF8E1","tiny blazing sun floating overhead","hum","Your own personal sunshine.","holy,fire"},
-	{"mini tornado","HFBN5K","klH",4,7,2,"B0BEC5","ECEFF1","knee-high spinning funnel that zips around","whoosh","Small, angry and very spinny.","storm,cute"},
-	{"miniature schnauzer","AMBJAA","dQf",2,6,2,"8A8A8E","D8D8DA","small dog, bushy beard","yip","Grandpa mustache, puppy energy.","mammal,pet,cute"},
-	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
-	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 }

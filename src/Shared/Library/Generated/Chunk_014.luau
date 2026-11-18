@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jabuticaba","NGCCMI","GWFkS",2,1,5,"6D4C41","4A148C","trunk covered in dark round fruit","rustle","Grows grapes on its trunk. Weird.","plant,tree,silly"},
+	{"jacamar","AMAJDB","dA",1,7,1,"2AA06A","C8601E","long needle beak","tweet","Catches butterflies mid-air.","bird,cute"},
+	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
+	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
 	{"jack frost","LCCJNB","AJN",5,8,3,"BAE6FD","F8FAFC","icy-haired sprite with frost staff","crack","Nips your nose. Freezes your window.","frozen,holiday"},
 	{"jack in box","BMBG2I","Uk",3,4,3,"3B6FD8","FFD93B","a toy crank box that pops out a star-headed spring","boing","Round and round it goes. Then it doesn't.","cartoon,silly,toy"},
 	{"jack o lantern","BABJKI","Kjc",2,3,3,"E67E22","FF6A1A","carved grinning pumpkin with candle","jingle","Grins in the dark. Grins at you.","holiday,spooky"},
@@ -399,8 +403,4 @@ return {
 	{"laser tag gun","CHBBwI","de",1,9,2,"39FF14","24262A","chunky light gun with sensor","thwip","Pew! You're tagged!","toy,silly"},
 	{"laser tower","EHDBII","GKTe",6,1,7,"ECEFF1","FF1744","sleek white spire with red lens","hum","Pew. Continuous pew.","structure,defense,tower,future"},
 	{"laser turret","OHDMwI","KTe",6,8,6,"F2F2EE","FF2D2D","swivel dome with red lens","hum","Tracks. Locks. Pew.","scifi,defense"},
-	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
-	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
-	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
-	{"lasso","CMCAJK","HeO",3,7,3,"C9A46A","8A6A3E","a twirled rope loop that ropes and yanks a foe","twang","Yee-haw, gotcha.","cartoon,cowboy"},
 }

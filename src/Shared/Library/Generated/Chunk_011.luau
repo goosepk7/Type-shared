@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost dog","AIBJAJ","QZ",2,7,1,"E5E7EB","93C5FD","translucent floppy-eared pup","bark","Still fetches. Ball goes through it.","ghost,cute"},
+	{"ghost flower","NIBLMI","iZS",3,1,2,"E1F5FE","7E57C2","translucent glowing white bloom","chime","Blooms only for the dead. Spooky.","plant,magic,mythical,spooky"},
+	{"ghost form","KIBOVJ","AZY",2,7,2,"E0F7FA","B39DDB","caster turning see-through and floaty","wail","Boo. Walk through walls.","spooky,stealth"},
+	{"ghost horse","AIDKAA","DZg",5,9,4,"CBD5E1","6366F1","translucent galloping horse","neigh","Gallops through walls.","ghost,mount"},
 	{"ghost horse rider","AIDKAA","DZg",6,9,4,"A5B4FC","1E1B4B","spectral rider on a glowing horse","neigh","Gallops across the sky at night.","ghost,mount"},
 	{"ghost hunter","LHCJNA","He",5,5,5,"F8FAFC","22C55E","jumpsuit, proton-style backpack vacuum","zap","Who you gonna call? This person.","spooky"},
 	{"ghost king","AIDJNJ","iAh",7,5,4,"A5B4FC","CA8A04","crowned translucent giant","wail","Rules a kingdom of sheets.","ghost,royal,boss"},
@@ -399,8 +403,4 @@ return {
 	{"green pepper","IGBAKF","Fke",3,5,3,"3E8E2B","5EAE3A","blocky green bell pepper","thud","A bell that never rings.","edible,vegetable,healthy"},
 	{"green smoothie","IGBOKI","WF",3,5,3,"7DBE3A","3E8E2B","tall green drink","chomp","Tastes like a salad. Feels like victory.","edible"},
 	{"green tea","IGBOKI","F",2,5,2,"7DAE3A","C8E08A","green cup of tea","slurp","Calm, green, and focused.","edible,drink,warm"},
-	{"green tomato","IGBAKK","keO",3,7,6,"8DB84A","C8E08A","hard unripe tomato","bonk","A tomato that isn't ready yet.","edible"},
-	{"greengage","IGAAKF","Fke",3,6,2,"A8C86B","E8F2B0","small round green plum","splat","A tiny green plum.","edible,fruit,sweet"},
-	{"greenhouse","EGCNII","WFS",2,1,3,"B2EBF2","66BB6A","glass building full of plants","thud","Grows things. Fast.","structure,building,plant"},
-	{"greenland shark","ACDJEC","DfTB",7,1,6,"5A5E64","9AA0A6","slow chunky grey shark","chomp","Lives 400 years. Never hurries.","fish,aquatic,ocean,predator,arctic"},
 }
