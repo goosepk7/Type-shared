@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"epee","CKCHrK","fT",4,8,3,"C9CED4","24262A","stiff thin blade, bell guard","shing","Fencing with extra French.","medieval,sharp"},
+	{"epic","KHCOKJ","DW",5,6,4,"AB47BC","FFD54F","purple epic loot glow","fanfare","That was epic.","meme"},
+	{"equator","MAFBKI","GKSN",7,1,7,"EF4444","FDE047","red-hot line wrapped round a globe, palm trees wilting","sizzle","The world's belt. It is on the tightest notch.","place,space"},
 	{"equinox","GLDNOI","GF",4,3,5,"FFF59D","1A237E","half-day half-night sky split","chime","Perfect balance of day and night.","space"},
 	{"eradicate","KLDF6B","TIPO",8,6,1,"EF4444","F8FAFC","wide red scanning line sweeping and erasing what it crosses","whum","Target acquired. Target... where did it go?","scifi"},
 	{"erase","KLCAKB","iZ",6,7,1,"ECEFF1","7C4DFF","giant pencil-eraser swipe","squeak","Ctrl-Alt-Gone.","silly,magic"},
@@ -150,6 +153,7 @@ return {
 	{"fatigue","KIBAKB","iN",3,6,1,"90A4AE","FFFFFF","heavy grey droopy glow on target","yawn","So tired. So very tired.","silly"},
 	{"fattoush","IGBOKI","F",2,5,3,"7DBE3A","D9A04A","salad with crispy pita chips","crunch","Salad with crunchy croutons.","edible,healthy,vegetable"},
 	{"faucet","BBBM1I","SIeN",3,2,5,"C0C7CE","60A5FA","chrome tap with a twisty handle gushing water","splash","Drip. Drip. Drip. All night. Drip.","household,kitchen"},
+	{"fault breaker","KEDF6I","kfNO",9,7,3,"D6ECFF","96CDFF","a pane of cracked air that shatters forward","rumble","The air broke first. You are next.","anime,pirate,quake"},
 	{"fault line","FEELII","TPO",7,5,5,"4E342E","FF8A65","long glowing crack racing across ground","crack","A crack that keeps going.","natural"},
 	{"fava beans","IEAELB","eNP",2,6,1,"8DC63F","C8D88A","big pale green beans","pitter","Big beans for big appetites.","edible,grain"},
 	{"fawn","AMBJAA","Dk",2,8,4,"C08A52","F7F2EA","spotted baby deer, wobbly legs","bleat","Spots fade. Cuteness remains.","mammal,wild,cute"},
@@ -399,8 +403,4 @@ return {
 	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
 	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
 	{"flip","KMBOKK","kY",2,8,2,"FFE082","FFFFFF","acrobatic flip arc trail","whoosh","Ten points for style.","sport"},
-	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
-	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
-	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
-	{"floating castle","EFFCIJ","GSeh",7,1,9,"ECEFF1","7E57C2","castle on a floating rock with waterfalls","chime","Floats above the fight. Drops surprises.","structure,magic,mythical"},
 }

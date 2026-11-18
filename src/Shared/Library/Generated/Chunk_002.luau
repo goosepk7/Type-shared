@@ -79,6 +79,7 @@ return {
 	{"aye-aye","AIBJBA","dTeb",2,7,2,"2A2420","E89A2A","huge eyes, bat ears, long bony finger","chatter","Taps trees with its spooky finger.","mammal,primate,spooky,nocturnal"},
 	{"azalea","NJCNMI","dFSM",2,1,3,"E91E63","2E7D32","bush smothered in pink blooms","rustle","A bush that is mostly flowers.","plant,flower"},
 	{"aztec warrior","LGCJNA","DZf",6,7,5,"F59E0B","15803D","jaguar pelt helm, obsidian club, feathered shield","roar","Fierce. Feathered. Fast.","warrior,ancient"},
+	{"azure collapse","KLCGKB","EHeN",8,4,3,"3F7BFF","0C1236","a dark point with a blue rim swallowing everything near it","hum","Come here. Everything. Now.","anime,magic,gravity"},
 	{"azure dragon","AFEKCB","Akeg",8,7,7,"1D4ED8","7DD3FC","long blue sky dragon, wind ribbons","roar","Guardian of the east. Always on time.","mythical,reptile,ancient"},
 	{"baba ganoush","IMBNGI","SNP",2,4,1,"C8B08A","5B2A5E","smoky eggplant dip","splat","Smoky, creamy, and fun to say.","edible,sauce"},
 	{"baba yaga","ALCJNB","jAMh",6,6,5,"57534E","DC2626","old witch flying in a mortar with a pestle","cackle","Lives in a chicken-legged house. Rent is weird.","witch,spooky"},
@@ -402,5 +403,4 @@ return {
 	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
 	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
-	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
 }

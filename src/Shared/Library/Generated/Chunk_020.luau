@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poached egg","IMBLGG","USN",2,3,3,"F7F2E8","F2B81A","soft white dome, runny yolk","wobble","Wobbly, delicate, delightful.","edible,wobbly,breakfast"},
+	{"poblano","IABAKK","KeP",3,7,2,"1E4A1E","3E6B2A","wide dark green pod","sizzle","Mild, dark, and great stuffed.","edible,spicy,flammable,pepper"},
+	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
+	{"pocket dimension","MLFNII","jZSY",6,1,8,"7C4DFF","00E5FF","swirling folded space","chime","Step in, vanish completely.","place,mythical"},
+	{"pocket dragon","AAAJAB","KAQ",2,8,1,"DC2626","FACC15","palm-sized dragon on your shoulder","chirp","Lights your candles. And your sleeves.","cute,reptile"},
+	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
+	{"pocket knife","CKAHrK","fT",2,8,2,"C0392B","C9CED4","folding blade, red handle","shing","Has a blade, a saw, and a tiny toothpick.","medieval,sharp"},
+	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
 	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
 	{"pocket size","OLBONI","WkX",5,9,3,"E04A3A","2B2D33","shrink tiny, then burst back to size with a punch","pop","Tiny hero. Big punch.","hero,movie,scifi"},
 	{"pocket watch","BLAOKI","N",2,5,3,"D4A72C","F3E6C8","hinged gold watch on chain","chime","Tick. Tock. Mesmerising.","time"},
@@ -395,12 +403,4 @@ return {
 	{"rage quitter","LACJNA","Ek",4,6,3,"DC2626","111827","furious figure throwing a controller","crash","Throws the controller. Through the screen.","meme,gaming,explosive"},
 	{"ragnarok","HDFNOI","EkLP",10,5,8,"3E2723","FFD740","stormy gold-black sky, giant lightning, falling fire","boom","The ultimate grand finale.","mythical,danger"},
 	{"raid","KADFLA","DPbh",7,7,4,"B91C1C","FACC15","charging mob of mixed heroes with a war horn and loot bags","horn","Forty people. One boss. Nobody read the guide.","gaming"},
-	{"raijin","ADDJNJ","AeLO",7,6,6,"1D4ED8","FACC15","oni drummer in a ring of thunder drums","thunder","Drums so hard the sky crackles.","yokai,storm"},
-	{"raiju","ADCJAB","DAL",5,9,4,"2563EB","FDE047","wolf of blue lightning, crackling tail","zap","Naps in belly buttons during storms.","yokai,storm"},
-	{"rail bird","AMBJDA","AfT",2,5,2,"8A6A4A","C8A07A","slim marsh bird","squawk","Thin as a rail. Literally.","bird,wetland"},
-	{"railgun","CKDBwI","kTe",8,10,4,"2C3539","3FC1D9","long twin-rail barrel","zap","Magnets, but angry.","scifi,ranged"},
-	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
-	{"railway bridge","EMECII","GSh",3,1,9,"6D4C41","9E9E9E","timber trestle carrying train tracks","thud","A train is coming. On top of you.","structure"},
-	{"rain","GBCEOJ","SN",2,4,2,"5D8AA8","C9E6F5","grey cloud with steady falling drops","patter","Forecast says: you, wet.","storm,aquatic"},
-	{"rain boots","BBBONI","G",1,5,3,"F1C40F","F1C40F","shiny tall rubber boots","swish","Splash with impunity.","clothing"},
 }

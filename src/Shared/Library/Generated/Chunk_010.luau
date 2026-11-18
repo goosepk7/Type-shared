@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
+	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
+	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
+	{"floating castle","EFFCIJ","GSeh",7,1,9,"ECEFF1","7E57C2","castle on a floating rock with waterfalls","chime","Floats above the fight. Drops surprises.","structure,magic,mythical"},
 	{"floating city","EFFNIJ","lSh",5,1,8,"ECEFF1","FFD54F","spires on a hovering platform","hum","No traffic. Just clouds.","structure,future"},
 	{"floating eye","ALDJKE","jAeO",7,3,6,"7C3AED","FDE68A","giant floating eyeball with eyestalks","zap","Sees all. Blinks rarely. Very dry.","dungeon"},
 	{"floating rocks","MLENIJ","lS",4,1,8,"8D6E63","7CB342","chunks of land drifting in the sky","rumble","Gravity takes a holiday here.","place,terrain,magic"},
@@ -275,6 +279,7 @@ return {
 	{"galaxy brain","KLCAKB","jO",5,7,1,"7C4DFF","FFD54F","glowing starry brain projectile","hum","Thought so hard it became space.","meme,psychic"},
 	{"gale","FFDFOB","kIN",6,8,3,"8FB3C6","E3EEF3","wide howling wind front","howl","Wind that took the stairs too fast.","air,storm"},
 	{"gale force","FFEFOB","kINP",7,8,3,"78909C","ECEFF1","thick wall of howling wind with debris","howl","Hold onto your hat. And your friends.","air,storm"},
+	{"gale pinwheel","KFDGKB","ETeN",9,5,2,"E6F6FF","5FB8FF","a screaming orb with four huge wind blades spinning round it","whoosh","It does not cut you once. It cuts you everywhere.","anime,ninja,wind"},
 	{"gale rend","KFDBKI","kTe",7,9,2,"7FE3B0","F2FFF8","a sideways cyclone of blades drilled along the aim","whoosh","The wind cuts before you see it.","anime,sword,wind,breathing"},
 	{"gale smash","KFDF6I","kfTI",8,10,2,"DFF3FF","4C7FB8","one punch, a hurricane tunnel tearing down the lane","boom","One punch. The weather changes.","anime,hero,punch"},
 	{"gale sword","CFCArK","TIe",6,9,3,"87CEEB","F2F2EE","almost invisible blade of wind","shing","Whoosh. Cut. Gone.","fantasy,sharp"},
@@ -398,9 +403,4 @@ return {
 	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
 	{"ghost costume kid","LIBJGA","jd",2,5,2,"F8FAFC","111827","kid in a bedsheet with eye holes","wail","Boo. Trips on the sheet.","cute,halloween,silly"},
 	{"ghost crab","ABBJRA","GZfT",2,8,5,"E8E0D0","C8C0B0","pale fast beach crab, stalk eyes","clack","Vanishes in the sand. Spooky.","crustacean,aquatic,armored"},
-	{"ghost dog","AIBJAJ","QZ",2,7,1,"E5E7EB","93C5FD","translucent floppy-eared pup","bark","Still fetches. Ball goes through it.","ghost,cute"},
-	{"ghost flower","NIBLMI","iZS",3,1,2,"E1F5FE","7E57C2","translucent glowing white bloom","chime","Blooms only for the dead. Spooky.","plant,magic,mythical,spooky"},
-	{"ghost form","KIBOVJ","AZY",2,7,2,"E0F7FA","B39DDB","caster turning see-through and floaty","wail","Boo. Walk through walls.","spooky,stealth"},
-	{"ghost horse","AIDKAA","DZg",5,9,4,"CBD5E1","6366F1","translucent galloping horse","neigh","Gallops through walls.","ghost,mount"},
-	{"ghost horse rider","AIDKAA","DZg",6,9,4,"A5B4FC","1E1B4B","spectral rider on a glowing horse","neigh","Gallops across the sky at night.","ghost,mount"},
 }

@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"new potatoes","IMAELB","eVP",2,7,1,"E8D0A0","F2E8C0","tiny round potatoes","pitter","Tiny round spuds.","edible"},
+	{"new year","KHDNII","EFPO",5,5,2,"FACC15","111827","glitter ball dropping, clock at midnight, fireworks","boom","Ten! Nine! Eight! Resolutions: broken by two.","holiday,party,explosive"},
+	{"newfoundland","AMDJAA","DQFfB",5,7,4,"1C1A18","3A3633","huge black shaggy dog, webbed feet","bark","Lifeguard dog. Drools as a hobby.","mammal,pet"},
+	{"news","KDCF6B","jdPO",3,8,1,"DC2626","F8FAFC","red BREAKING banner scrolling with a spinning globe","fanfare","This just in: you. Getting hit. More at ten.","meme"},
+	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
+	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
+	{"newt","AJAJCA","FMB",1,3,2,"E8701E","3A3A2A","small orange salamander","squelch","Bright orange. Bitter taste.","amphibian,wetland"},
+	{"niagara falls","MBFFII","kSIN",7,1,9,"4FC3F7","FFFFFF","wide thundering curtain of water","roar","Several million litres of nope.","place,landmark"},
 	{"nian","AADJAA","Dkf",6,6,7,"B91C1C","FACC15","maned lion beast, single horn","roar","Scared of firecrackers and the color red.","mythical,holiday"},
 	{"nibble","KMAAKB","if",1,8,1,"FFCC80","FFFFFF","tiny chomp marks","nom","Nom. Tiny but rude.","silly"},
 	{"nidhogg","AIEJCH","Cif",8,4,8,"292524","65A30D","black serpent dragon gnawing roots","roar","Chews on the roots of the world.","mythical,reptile,norse"},
@@ -395,12 +403,4 @@ return {
 	{"parmesan","IMBAKK","ceO",3,7,6,"F2E2B0","E8C88A","hard pale wedge, grainy","bonk","The king of cheeses. Hard as a rock.","edible,dairy,royal"},
 	{"parrot","AMBJDB","jdA",2,6,2,"2AB04A","E8301E","bright green-red bird, curved beak","squawk","Repeats everything you say. Everything.","bird,jungle,silly"},
 	{"parrotfish","ABBJEC","dPB",2,6,1,"3AB0A0","E86AA0","beaked colorful fish","splash","Poops sand. That's how beaches happen.","fish,aquatic"},
-	{"parsley","IGBOMI","WF",2,4,3,"3E8E2B","7DBE3A","frilly green sprig","crunch","The garnish nobody eats.","edible,vegetable,healthy,herb"},
-	{"parsnip","IEBAJK","FTe",3,6,4,"F2E8C8","C8B88A","pale tapered root","crunch","A ghost carrot.","edible,vegetable,healthy"},
-	{"part the sea","HBFCnI","GI",7,3,9,"0277BD","E1F5FE","two towering walls of water with a dry path","roar","Make way! Walk right through.","aquatic"},
-	{"parthenon","EHFCII","GFkS",5,1,10,"F5F5F5","E6D3A3","marble temple ringed by columns","rumble","Ancient Greek columns of justice.","structure,landmark,ancient"},
-	{"particle","FLAELJ","TPY",2,9,1,"A78BFA","22D3EE","shimmering cloud of tiny glowing dots blinking in and out","shimmer","Here. Not here. Here. Physics is weird.","science"},
-	{"particle accelerator","ODFN1I","EL",8,1,8,"C9CED4","3FC1D9","enormous ring of magnets","bubble","Smashes atoms. Smashes foes.","science"},
-	{"particle cannon","CDDMxI","KTe",8,5,6,"F2F2EE","3FC1D9","cannon with accelerator rings","zap","Science, but very loud.","scifi,ranged"},
-	{"partisan","CKDAuI","fT",5,5,5,"8A929B","8B5A2B","broad spearhead with side wings","whoosh","A spear with very wide shoulders.","medieval,sharp"},
 }

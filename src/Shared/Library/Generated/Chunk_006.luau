@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cleric","LHCJNA","GFe",4,4,5,"F8FAFC","FACC15","white robe, golden symbol, healing glow","chime","Bandages, blessings, and stern looks.","holy,healer"},
+	{"click beetle","AMAJFA","GUf",1,3,4,"3A2A1A","8A6A4A","slim beetle flipping into air","click","Flips itself with a click.","insect,armored"},
 	{"clickbait","KLBLnI","jcO",3,2,1,"EF4444","FACC15","thumbnail with a shocked face, red arrow and red circle","click","You will NOT believe what happens next. (Bonk.)","meme,internet"},
 	{"cliff","MEECII","GkS",4,1,10,"8D6E63","9E9E9E","sheer rock wall with a ledge","rumble","One step too far. Byeee.","place,terrain"},
 	{"cliffside","MEENII","kS",4,1,9,"8D6E63","7CB342","grassy edge above a sheer drop","rumble","One step back. No, the other way.","place,terrain"},
@@ -399,8 +401,6 @@ return {
 	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
 	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 	{"crimson cataclysm","KAFGKI","KEe",10,3,1,"D6162E","FFBA48","crimson circles stacked in the sky over a huge blast","explosion","One spell a day, and it is always this one.","anime,isekai,explosion,ultimate"},
+	{"crimson repulse","KLBAKB","EkIe",8,10,1,"FF2834","46060E","a red pinpoint that blasts everything away from itself","boom","Go away. Everything. Now.","anime,magic,force"},
 	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
-	{"cringe","KMBFOB","jO",2,7,1,"BDBDBD","FFAB91","shuddering wobble ring","eugh","Oof. Can't look.","meme,silly"},
-	{"critter","AGBJAA","UCb",2,7,2,"A0724A","F5E6CC","scruffy little furball with bright eyes and a twitchy nose","chitter","Lives in your walls. Pays no rent.","mammal,cute,wild"},
-	{"crocodile","ABDJAC","fHOB",7,5,8,"5A6A3A","C8C08A","long armored snout, teeth showing","snap","Smiles with all its teeth. Not friendly.","reptile,predator,aquatic"},
 }

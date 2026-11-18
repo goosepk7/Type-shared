@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hognose snake","AMBJCD","jfN",2,6,3,"B8986A","6A4A2A","upturned snout","hiss","Plays dead dramatically. Oscar worthy.","reptile,venomous,silly"},
+	{"hoisin","IMBLGI","SNP",2,3,3,"5A1E1E","8A3020","thick dark sweet sauce","gloop","Sweet, sticky, and dark.","edible,sticky,sauce"},
+	{"hole punch","BMALJK","T",1,4,4,"8E9196","24262A","two-hole office punch","tap","Ka-chunk. Holes.","office"},
+	{"hollandaise","IMBLGI","kSO",2,3,2,"F2D870","F2C24A","smooth yellow buttery sauce","squeak","Fancy butter sauce for fancy eggs.","edible,slippery,silly,sauce"},
+	{"hollow tree","NGDCMI","GZS",3,1,7,"6D4C41","43A047","wide trunk with a hidey-hole","rustle","Hide inside. Pop out. Surprise!","plant,tree"},
+	{"hollow visage","KICOKI","Dif",8,9,2,"F2EEE6","B3122E","a cracked white skull mask with red stripes","growl","Put on the face. Lose the manners.","anime,transform"},
 	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},
 	{"hollyhock","NGCNMI","dFS",2,1,2,"E91E63","F8BBD0","tall spire of big papery blooms","rustle","Taller than you. Prettier too.","plant,flower"},
 	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
@@ -377,6 +383,7 @@ return {
 	{"iron fence","EKCCII","GST",3,1,7,"263238","455A64","black bars with spear tips","thud","Fancy spikes for fancy defence.","structure,defense,sharp"},
 	{"iron gate","EKDCII","GS",3,1,9,"263238","607D8B","tall black bars and scrolled ironwork","clang","Clang! Firmly locked.","structure,defense"},
 	{"iron golem","AKDJNA","Gkf",7,2,10,"6B7280","EF4444","riveted iron giant, furnace chest","clank","A walking furnace with a firm handshake.","construct,metal,heavy"},
+	{"iron mammoth","KKDAtI","kf",9,4,7,"3A3A44","B4B4C8","a giant dark iron fist on a stretched arm","clank","Wind up. Then wind up some more.","anime,pirate,giant"},
 	{"iron rain","FKEEOB","kTP",8,5,5,"546E7A","B0BEC5","heavy iron spikes raining from grey cloud","clang","Heavy metal, the weather.","heavy,storm"},
 	{"iron sword","CKCHrK","fT",5,6,6,"8A929B","4A4D52","plain straight iron blade","shing","Reliable. Unremarkable. Effective.","sharp"},
 	{"iron will","KKCOKI","GF",2,3,8,"78909C","FFD54F","steel-grey determination glow","clang","Bend? No. Break? Never.","defence"},
@@ -396,11 +403,4 @@ return {
 	{"ivy","NGCLMI","GWSHN",2,1,4,"1B5E20","43A047","climbing glossy heart leaves","rustle","Climbs walls. Climbs enemies.","plant"},
 	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
 	{"jab","KMBAKB","DfO",3,10,1,"FCA5A5","FFFFFF","quick straight glove punch with a tiny impact star","pow","Quick. Rude. Repeatable.","melee,sport"},
-	{"jabiru","AMDJDA","AfT",4,5,2,"F2F2F2","E8301E","huge stork with red collar","squawk","Giant stork. Red scarf.","bird,wetland"},
-	{"jabuticaba","NGCCMI","GWFkS",2,1,5,"6D4C41","4A148C","trunk covered in dark round fruit","rustle","Grows grapes on its trunk. Weird.","plant,tree,silly"},
-	{"jacamar","AMAJDB","dA",1,7,1,"2AA06A","C8601E","long needle beak","tweet","Catches butterflies mid-air.","bird,cute"},
-	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
-	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
-	{"jack frost","LCCJNB","AJN",5,8,3,"BAE6FD","F8FAFC","icy-haired sprite with frost staff","crack","Nips your nose. Freezes your window.","frozen,holiday"},
-	{"jack in box","BMBG2I","Uk",3,4,3,"3B6FD8","FFD93B","a toy crank box that pops out a star-headed spring","boing","Round and round it goes. Then it doesn't.","cartoon,silly,toy"},
 }

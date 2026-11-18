@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bramble elemental","AGDJMA","THN",6,3,6,"365314","DC2626","tangle of thorny bramble shaped like a beast","rustle","Hugs hurt. A lot.","elemental,plant"},
 	{"bramble leash","NGCAMI","QHeN",5,8,3,"7A3DB8","C9A3F2","three thorny purple vines lash out and drag a foe in","whoosh","It is not a rope. Ropes do not have thorns.","anime,stand,vine"},
 	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},
 	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
@@ -251,6 +252,7 @@ return {
 	{"calamari","IMAELB","UeP",2,7,1,"E8C88A","F2E2C0","golden rings of squid","pitter","Crispy rings. Toss like quoits.","edible"},
 	{"calamity sphere","FIEAKB","Eke",9,3,4,"76229A","E2C8FF","a crushing black sphere gathered, crushed small and fired","boom","Gather the dark. Squeeze. Let go.","anime,ninja,shadow"},
 	{"calculator","BDAOKI","j",1,5,3,"8E9196","24262A","keypad with small screen","beep","80085. Heh.","office,school"},
+	{"caldera barrage","KADNOI","KEe",9,6,5,"FF6E1E","46221A","a rock vent hurling molten fists onto glowing spots","rumble","What goes up comes down. On you.","anime,pirate,volcano"},
 	{"calendar","BLBELB","jNP",3,5,2,"FFFFFF","DC2626","wall calendar ripping off pages that fly like blades","rustle","Is it Monday already? It is always Monday.","household,time,school"},
 	{"calf","AMBJAA","Dk",2,4,7,"C8B8A8","F7F4EE","wobbly baby cow, big eyes","moo","Baby cow. Professional napper.","mammal,heavy,farm,cute"},
 	{"calico cat","AMBJAA","dfT",2,7,2,"F2F2EE","E8803A","patches of orange, black, white","meow","A patchwork quilt that purrs.","mammal,pet,cute"},
@@ -401,6 +403,4 @@ return {
 	{"caribbean","MBFNII","FSh",4,1,8,"26C6DA","F4E4BC","clear turquoise water and palm islands","rumble","Pirates welcome. Obviously.","place,geography,pirate"},
 	{"carnation","NGBNMI","dFS",2,1,2,"F48FB1","43A047","frilly ruffled bloom","rustle","Fancy frills for fancy fights.","plant,flower"},
 	{"carne asada","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled sliced beef","thud","Grilled beef, ready for tacos.","edible,savory"},
-	{"carnitas","IMAELB","ce",2,7,1,"B0602B","F2C870","crispy shredded pork","pitter","Crispy, juicy shreds.","edible"},
-	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
 }

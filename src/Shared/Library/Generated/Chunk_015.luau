@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laser tower","EHDBII","GKTe",6,1,7,"ECEFF1","FF1744","sleek white spire with red lens","hum","Pew. Continuous pew.","structure,defense,tower,future"},
+	{"laser turret","OHDMwI","KTe",6,8,6,"F2F2EE","FF2D2D","swivel dome with red lens","hum","Tracks. Locks. Pew.","scifi,defense"},
+	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
+	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
+	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
+	{"lasso","CMCAJK","HeO",3,7,3,"C9A46A","8A6A3E","a twirled rope loop that ropes and yanks a foe","twang","Yee-haw, gotcha.","cartoon,cowboy"},
+	{"last echo","KLCOKI","FY",4,8,3,"7FB8E8","E9F3FA","blue ghost trail snapping back along your path","warp","Let's try that again.","time,anime,magic"},
+	{"last stand","KADOKI","GDk",7,5,6,"D32F2F","FFD54F","blazing red-gold aura at low health","horn","Not going down. Not like this.","rage"},
 	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
 	{"latke","IMBAKK","Uke",3,7,2,"C8803A","F2D07A","crispy shredded potato disc","whoosh","Crispy potato frisbees.","edible"},
 	{"latte","IABOKI","DF",3,9,2,"C8A070","F2E8D8","tall cup, foam art heart","fizz","Milk, coffee, and art.","edible,drink"},
@@ -395,12 +403,4 @@ return {
 	{"lure spell","KLBLII","dc",1,3,2,"FFD54F","FFFFFF","glowing tempting sparkle on the ground","ding","Ooh, shiny. Come closer.","silly"},
 	{"lurker","LICJNI","jZ",3,5,3,"52525B","F8FAFC","eyes peeking from behind a wall","whisper","Was here the whole time.","meme,stealth"},
 	{"lute","BMBFJI","jF",2,5,2,"C49A6C","8B5A2B","pear-shaped stringed instrument","strum","The bard is here. Run.","music,medieval"},
-	{"lutin","ALAJNA","jZb",1,8,1,"65A30D","FACC15","tiny prankster in pointed cap","giggle","Braids horse manes at night. Why? Nobody knows.","fairy,silly"},
-	{"luxury","KHCO0E","GFc",3,3,5,"D4AF37","7F1D4E","gold velvet chaise with grapes, a fan and a tiny dog","chime","Only the finest. Pinky out.","fancy,royal"},
-	{"lychee","IGAAKF","Fke",3,6,2,"D44A55","F7F2EA","small bumpy red shell, pearl inside","splat","Bumpy shell, pearl inside.","edible,fruit,sweet"},
-	{"lynx","ACCJAA","JZfT",4,7,3,"B39A7A","3A2E22","tufted ears, cheek ruff, stubby tail, big paws","hiss","Ear tufts are 90% of its personality.","mammal,predator,wild,arctic"},
-	{"lyre","BMBFJI","dF",2,5,2,"D4A72C","8B5A2B","small U-shaped harp","strum","Ancient bard's best friend.","music,ancient"},
-	{"lyrebird","AMBJDB","jdA",2,7,1,"8A6A4A","E8D8C0","lyre-shaped tail feathers","tweet","Mimics chainsaws perfectly. Showbiz.","bird,cute"},
-	{"lystrosaurus","AMCJAA","f",3,4,6,"8A7A5A","C8B08A","tusked pig-like reptile","growl","Survived the great dying. Tough.","extinct,ancient"},
-	{"maamoul","IMBAKK","Uke",3,7,2,"E8C88A","F7F2EC","patterned date-filled cookie","whoosh","A stamped cookie with a date inside.","edible"},
 }

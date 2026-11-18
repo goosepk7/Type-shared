@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lutin","ALAJNA","jZb",1,8,1,"65A30D","FACC15","tiny prankster in pointed cap","giggle","Braids horse manes at night. Why? Nobody knows.","fairy,silly"},
+	{"luxury","KHCO0E","GFc",3,3,5,"D4AF37","7F1D4E","gold velvet chaise with grapes, a fan and a tiny dog","chime","Only the finest. Pinky out.","fancy,royal"},
+	{"lychee","IGAAKF","Fke",3,6,2,"D44A55","F7F2EA","small bumpy red shell, pearl inside","splat","Bumpy shell, pearl inside.","edible,fruit,sweet"},
+	{"lynx","ACCJAA","JZfT",4,7,3,"B39A7A","3A2E22","tufted ears, cheek ruff, stubby tail, big paws","hiss","Ear tufts are 90% of its personality.","mammal,predator,wild,arctic"},
+	{"lyre","BMBFJI","dF",2,5,2,"D4A72C","8B5A2B","small U-shaped harp","strum","Ancient bard's best friend.","music,ancient"},
+	{"lyrebird","AMBJDB","jdA",2,7,1,"8A6A4A","E8D8C0","lyre-shaped tail feathers","tweet","Mimics chainsaws perfectly. Showbiz.","bird,cute"},
+	{"lystrosaurus","AMCJAA","f",3,4,6,"8A7A5A","C8B08A","tusked pig-like reptile","growl","Survived the great dying. Tough.","extinct,ancient"},
+	{"maamoul","IMBAKK","Uke",3,7,2,"E8C88A","F7F2EC","patterned date-filled cookie","whoosh","A stamped cookie with a date inside.","edible"},
 	{"mac and cheese","IMBLGI","FcN",2,3,3,"F2B33A","F2D08A","creamy orange pasta pile","gloop","A cheesy hug in a bowl.","edible,sticky"},
 	{"macadamia","IEAAKK","UeO",2,8,8,"F2E8C8","8A5A3A","round cream nut, hard shell","tok","The toughest shell in the nut world.","edible,nut"},
 	{"macadamia cookie","IMBAKK","Uke",3,7,2,"E8C88A","F2E8C8","cookie with white chunks","whoosh","Nuts and white chocolate. Fancy.","edible"},
@@ -395,12 +403,4 @@ return {
 	{"minestrone","IBBOGI","FS",3,4,3,"C8602B","7DBE3A","tomato soup with veg, pasta","slurp","Everything in the pantry, in soup.","edible,warm,healthy"},
 	{"minesweeper","DBDKHC","DkHgB",5,5,7,"607D8B","37474F","small grey warship with sweeping gear","splash","Clears the mines. And the enemies.","vehicle,aquatic"},
 	{"mini catapult","BMAMxI","ke",1,6,2,"C49A6C","C0392B","tiny stick catapult with spoon","thud","Small but mighty.","toy,siege"},
-	{"mini drones","OKBJLB","AQe",4,8,2,"4A4D52","C0392B","swarm of tiny buzzing quadcopters","hum","Bzzzzzzz. Pew pew.","scifi"},
-	{"mini marshmallows","IMAELB","UeP",2,7,1,"F7F4F0","F2A6C8","tiny white cylinders","pitter","A blizzard of fluffy.","edible,sweet,candy"},
-	{"mini submarine","DBCKHC","lfgB",4,4,8,"FF6F00","F5F5F5","round pod with lights and claw arms","sonar","Finds treasure. Pinches enemies.","vehicle,aquatic"},
-	{"mini sun","FHCGKE","KFR",6,4,3,"FFB300","FFF8E1","tiny blazing sun floating overhead","hum","Your own personal sunshine.","holy,fire"},
-	{"mini tornado","HFBN5K","klH",4,7,2,"B0BEC5","ECEFF1","knee-high spinning funnel that zips around","whoosh","Small, angry and very spinny.","storm,cute"},
-	{"miniature schnauzer","AMBJAA","dQf",2,6,2,"8A8A8E","D8D8DA","small dog, bushy beard","yip","Grandpa mustache, puppy energy.","mammal,pet,cute"},
-	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
-	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 }
