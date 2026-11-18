@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"venus flytrap","NGCLMI","ScfO",5,3,5,"7CB342","C62828","toothed red jaws on a green stem","chomp","Snap! Lunch is served. You are lunch.","plant,carnivorous"},
 	{"venus flytrap army","NGELMI","ScfO",6,1,6,"7CB342","C62828","dozens of snapping flytraps","chomp","A whole field of hungry mouths.","plant,carnivorous"},
 	{"verbena","NHBNMI","dFS",1,1,2,"9575CD","E1BEE7","clusters of tiny purple flowers","rustle","Keeps away witches. Supposedly.","plant,flower"},
 	{"verdant bastion","NGDCaI","GWkl",6,5,4,"966E4A","60AA46","a row of gnarled trees bursts up as a woven wall","creak","Plant a seal. Grow a fortress. Water occasionally.","anime,ninja,wood,wall"},
@@ -402,5 +403,4 @@ return {
 	{"wind wall","KFDCnI","GIa",3,5,5,"B2EBF2","FFFFFF","swirling vertical wall of streaking air","howl","Arrows go in. Arrows come out.","air,defence"},
 	{"wind wave","FFDFOB","kI",5,8,1,"B3E5FC","FFFFFF","wide crescent of rushing air","whoosh","The sky shrugged at you.","air"},
 	{"wind-up toy","BMAJBA","Dd",1,6,2,"C0392B","B58A3A","small toy with big key on back","squeak","Click click click—zoom!","toy"},
-	{"wind-up toy robot","OKAJNA","UDd",1,5,3,"DC2626","94A3B8","tin robot with a big wind-up key","tick","Walks into walls. Turns. Walks into walls.","robot,silly,cute"},
 }

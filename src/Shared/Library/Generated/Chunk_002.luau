@@ -345,6 +345,7 @@ return {
 	{"battlefield","MEFNII","SNh",5,1,8,"6D4C41","9E9E9E","cratered mud, smoke, broken fences","rumble","Already full of craters. Add more.","place,terrain"},
 	{"battlements","EEDCII","GSe",3,1,8,"9E9E9E","616161","wall top with notched merlons","thud","The classic castle haircut.","structure,defense,ancient"},
 	{"battleship","DBFMHC","EkegB",9,3,10,"607D8B","37474F","long grey hull, triple gun turrets","boom","Fourteen cannons say hello.","vehicle,aquatic,danger"},
+	{"bauble ward","BCCIKI","GE",4,4,7,"B8243A","F3D27A","sealed in a giant frosted glass ornament","jingle","Fragile. Festive. Surprisingly bulletproof.","holiday,winter,shield"},
 	{"bay","MBENII","SN",2,1,7,"4FC3F7","E6C27A","curved sheltered stretch of coast","rumble","Calm water, sneaky ambush.","place,terrain"},
 	{"bay leaf","IGBOMI","WF",2,4,3,"5E7A3A","8AA86A","single oval dried leaf","crunch","Nobody knows what it does. Mysterious.","edible,vegetable,healthy,herb"},
 	{"bayonet","CKBHuK","fT",3,7,3,"8A929B","2C3539","spike blade on a rifle tip","shing","Sword with a part-time job.","medieval,sharp"},
@@ -402,5 +403,4 @@ return {
 	{"beech tree","NGECMI","GWkS",4,1,8,"9E9E9E","7CB342","smooth grey trunk, wide crown","rustle","Smooth bark. Rough day for you.","plant,tree"},
 	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
-	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
 }

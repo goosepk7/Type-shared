@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"royal archer","LFCJNA","Te",5,6,4,"7C3AED","FACC15","royal tabard, golden longbow","twang","Never misses. By royal decree.","royal,archer"},
 	{"royal baby","LHAJNA","dcO",1,2,2,"FDE68A","F9A8D4","baby in tiny crown","giggle","Small crown. Big tantrum.","royal,cute"},
 	{"royal barge","DBDKHC","DkgB",4,3,6,"FFD54F","B71C1C","gilded barge with a canopy throne","splash","Arrives in style. Sinks in style.","vehicle,aquatic,royal"},
 	{"royal carriage","DMDKHL","Dkg",4,5,6,"FFD54F","B71C1C","gilded coach with crowns and plumes","clatter","Make way for royalty!","vehicle,ancient,royal"},
@@ -402,5 +403,4 @@ return {
 	{"shadow beam","FICBKI","iTe",6,8,1,"12001F","7C4DFF","inky black beam with purple edges","hiss","A beam of nope.","spooky"},
 	{"shadow beast","AIDJAA","iZf",6,7,5,"0F0F23","7C3AED","four-legged beast of living shadow","growl","Hides in shadows. Is shadows.","spooky"},
 	{"shadow blade","CICHrK","iZf",7,8,3,"1B1A22","7D3CB5","smoky black blade, wispy edge","shing","You don't see it coming. That's the point.","fantasy,spooky"},
-	{"shadow blast","FICGKI","iEk",6,7,1,"1A0033","AA00FF","bursting sphere of black smoke and violet sparks","whum","A burst of pure gloom.","spooky,explosive"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lasso","CMCAJK","HeO",3,7,3,"C9A46A","8A6A3E","a twirled rope loop that ropes and yanks a foe","twang","Yee-haw, gotcha.","cartoon,cowboy"},
 	{"last echo","KLCOKI","FY",4,8,3,"7FB8E8","E9F3FA","blue ghost trail snapping back along your path","warp","Let's try that again.","time,anime,magic"},
 	{"last stand","KADOKI","GDk",7,5,6,"D32F2F","FFD54F","blazing red-gold aura at low health","horn","Not going down. Not like this.","rage"},
 	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
@@ -402,5 +403,4 @@ return {
 	{"lyre","BMBFJI","dF",2,5,2,"D4A72C","8B5A2B","small U-shaped harp","strum","Ancient bard's best friend.","music,ancient"},
 	{"lyrebird","AMBJDB","jdA",2,7,1,"8A6A4A","E8D8C0","lyre-shaped tail feathers","tweet","Mimics chainsaws perfectly. Showbiz.","bird,cute"},
 	{"lystrosaurus","AMCJAA","f",3,4,6,"8A7A5A","C8B08A","tusked pig-like reptile","growl","Survived the great dying. Tough.","extinct,ancient"},
-	{"maamoul","IMBAKK","Uke",3,7,2,"E8C88A","F7F2EC","patterned date-filled cookie","whoosh","A stamped cookie with a date inside.","edible"},
 }

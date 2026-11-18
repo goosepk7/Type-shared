@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
 	{"floating castle","EFFCIJ","GSeh",7,1,9,"ECEFF1","7E57C2","castle on a floating rock with waterfalls","chime","Floats above the fight. Drops surprises.","structure,magic,mythical"},
 	{"floating city","EFFNIJ","lSh",5,1,8,"ECEFF1","FFD54F","spires on a hovering platform","hum","No traffic. Just clouds.","structure,future"},
 	{"floating eye","ALDJKE","jAeO",7,3,6,"7C3AED","FDE68A","giant floating eyeball with eyestalks","zap","Sees all. Blinks rarely. Very dry.","dungeon"},
@@ -103,7 +104,6 @@ return {
 	{"foul","KMBAJB","IXO",3,8,1,"DC2626","FACC15","referee hand holding up a bright red card, whistle blast","whistle","REF! Are you blind? Yes. Yes he is.","sport"},
 	{"fountain","EBCNII","FSI",2,1,6,"BDBDBD","4FC3F7","tiered stone basin spraying water","splash","Splash zone. Also healing zone.","structure,building"},
 	{"fountain of youth","EBCNII","FS",2,1,7,"F5F5F5","80DEEA","marble fountain with glowing water","thud","Sip once. Feel brand new.","magic,mythical"},
-	{"four leaf clover charm","BGAOJI","F",1,5,2,"2E8B57","D4A72C","clover pendant","chime","Luck: maxed.","magic,fantasy"},
 	{"four o clock flower","NGBNMI","dFS",1,1,1,"E91E63","FFEB3B","trumpet flowers that open at four","rustle","Very punctual flower.","plant,flower"},
 	{"four-armed alien","ALCJNA","lf",5,5,5,"DC2626","FACC15","red alien with four muscled arms","zap","Four arms. Excellent at hugs.","alien"},
 	{"fox","AMBJAA","jfb",3,7,2,"D8642A","FFFFFF","pointy snout, big bushy white-tipped tail","yip","What does it say? Nobody knows.","mammal,wild"},

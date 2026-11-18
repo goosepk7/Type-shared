@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"niagara falls","MBFFII","kSIN",7,1,9,"4FC3F7","FFFFFF","wide thundering curtain of water","roar","Several million litres of nope.","place,landmark"},
 	{"nian","AADJAA","Dkf",6,6,7,"B91C1C","FACC15","maned lion beast, single horn","roar","Scared of firecrackers and the color red.","mythical,holiday"},
 	{"nibble","KMAAKB","if",1,8,1,"FFCC80","FFFFFF","tiny chomp marks","nom","Nom. Tiny but rude.","silly"},
 	{"nidhogg","AIEJCH","Cif",8,4,8,"292524","65A30D","black serpent dragon gnawing roots","roar","Chews on the roots of the world.","mythical,reptile,norse"},
@@ -225,7 +226,6 @@ return {
 	{"origami","BMAJDB","dA",1,6,1,"F7F3E8","C0392B","folded paper bird","splat","Fold. Flap. Fly.","art"},
 	{"oriole","AMAJDB","dA",1,7,1,"E8701E","1E1E1E","bright orange-black bird","tweet","Weaves hanging bag nests.","bird,cute"},
 	{"orion","MHEEKJ","TeV",6,5,5,"FFFFFF","1565C0","stars in a hunter shape with a belt","rumble","The hunter takes aim from the sky.","space"},
-	{"ornament","BMAAKI","eV",1,7,1,"C0392B","D4A72C","shiny glass ball ornament","jingle","Fragile. Festive. Fling it.","holiday"},
 	{"ornithocheirus","AMDJDB","DAT",6,8,4,"7A6A5A","E8C08A","huge wingspan, beak crests","screech","Huge glider of the Cretaceous.","pterosaur,extinct,reptile"},
 	{"ornithomimus","AMCJBA","DQ",3,10,3,"9A8A6A","E8D8B8","toothless ostrich-dino","screech","Ostrich cosplay. 70 million years early.","dinosaur,extinct,reptile,predator"},
 	{"ornithopter","DFCKHB","DAkg",4,6,3,"8D6E63","FFD54F","wooden frame with flapping canvas wings","whoosh","Flaps like a bird. Mostly falls like a rock.","steampunk,silly"},

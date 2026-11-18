@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"epic","KHCOKJ","DW",5,6,4,"AB47BC","FFD54F","purple epic loot glow","fanfare","That was epic.","meme"},
 	{"equator","MAFBKI","GKSN",7,1,7,"EF4444","FDE047","red-hot line wrapped round a globe, palm trees wilting","sizzle","The world's belt. It is on the tightest notch.","place,space"},
 	{"equinox","GLDNOI","GF",4,3,5,"FFF59D","1A237E","half-day half-night sky split","chime","Perfect balance of day and night.","space"},
 	{"eradicate","KLDF6B","TIPO",8,6,1,"EF4444","F8FAFC","wide red scanning line sweeping and erasing what it crosses","whum","Target acquired. Target... where did it go?","scifi"},
@@ -185,6 +186,7 @@ return {
 	{"fertilizer","BGBNGI","WFSM",2,1,3,"5B3A1E","84CC16","steaming dark heap with a sprout bursting out the top","squelch","Smells awful. Plants love it. Plants are weird.","farm,gross,plant"},
 	{"festival","MHENlI","FScO",5,1,5,"A855F7","F59E0B","big stage, flags, muddy field and a thousand tiny tents","music","Lost your tent. Lost your friends. Best weekend.","party,music,place"},
 	{"festival dumpling","IMBHJI","kf",3,5,4,"E8B84A","F2D88A","sweet fried dough stick","bonk","Sweet fried party bread.","edible,silly"},
+	{"festival lion","AACJAG","DQf",5,7,4,"D7262E","FFC93A","prancing lion costume with a huge blinking head","drum","Two dancers, one lion, zero chill.","holiday,lunar new year,summon,festival"},
 	{"feta","IMBLKI","dSc",2,3,3,"F7F7F2","E8E8DF","crumbly white brine block","chomp","Crumbly, salty, Greek.","edible,sweet,dairy"},
 	{"fettuccine","IMBLGI","HN",2,3,3,"F2E2C2","F2D08A","flat ribbon noodles, white sauce","gloop","Ribbons of creamy pasta.","edible,sticky"},
 	{"fever","KABAKB","KN",3,6,1,"FF7043","FFFFFF","flushed red heat wobble","sizzle","Hot head. Wobbly legs.","silly"},
@@ -314,7 +316,6 @@ return {
 	{"firestorm","HAEEOJ","KkSP",8,6,4,"C62828","FF9800","swirling fire clouds raining burning embers","roar","Forecast: 100% chance of ouch.","storm,fire"},
 	{"fireweed","NABNMI","dFS",2,1,2,"E91E63","7CB342","tall pink spires after wildfires","rustle","First to grow back after a fire.","plant,flower"},
 	{"firework","CABAkB","dEeP",4,8,1,"C0392B","D4A72C","stick rocket with colourful tip","boom","Oooooh. Aaaaah. BOOM.","party,holiday,explosive"},
-	{"fireworks show","BADEJI","jEP",5,5,1,"D4A72C","FF3EA5","sky bursting with colourful fireworks","thud","Oooh! Aaah! Ouch!","party,explosive"},
 	{"first aid kit","BHBOII","F",1,3,3,"F2F2EE","C0392B","white box with red cross","thud","Patch up. Get back out there.","medical"},
 	{"first mate","LBBJNA","Qf",3,6,4,"0369A1","F8FAFC","striped shirt sailor with mop","arr","Mops the deck. Mops the enemies.","pirate"},
 	{"fish","ABAJEC","dB",1,6,1,"5E8EB8","E8F0F6","classic fish, tail fin, scales","splash","Swims. Blub. That's it.","fish,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"flip","KMBOKK","kY",2,8,2,"FFE082","FFFFFF","acrobatic flip arc trail","whoosh","Ten points for style.","sport"},
 	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
 	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
-	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 	{"snail mobile","DMBKHL","GgN",2,1,6,"FFB300","8D6E63","car under a big spiral shell","engine","The slowest ride ever. Very safe.","vehicle,silly"},
 	{"snake","AMCJCD","fMN",4,6,3,"4A7A3A","C8B860","long coiled body, forked tongue","hiss","Hugs without arms. Hisses hello.","reptile,venomous"},
 	{"snake charmer","LJCJNI","cOh",3,4,3,"F59E0B","15803D","flute and basket with a dancing snake","flute","Plays a tune. Snakes appear.","music"},
@@ -402,5 +403,4 @@ return {
 	{"staircase","EMCCII","GSN",1,1,7,"BCAAA4","8D6E63","steps rising in a spiral","thud","Climb. Climb. Keep climbing.","structure"},
 	{"stake","BMBAuK","Te",3,7,3,"8B5A2B","C49A6C","sharpened wooden post","thud","Vampires hate this one.","spooky,sharp"},
 	{"stalactite","FECAuB","TO",5,6,5,"7E6F60","BAA992","dripping stone spike falling from above","whistle","Pointy cave tooth, ceiling edition.","sharp"},
-	{"stalagmite","FECLII","GT",5,3,6,"8C7B6A","C2B39F","stone spike erupting from the floor","rumble","Pointy cave tooth, floor edition.","sharp"},
 }

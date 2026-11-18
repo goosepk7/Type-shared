@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cleave","KKDHJB","kfT",7,5,3,"90A4AE","ECEFF1","huge sweeping arc hitting many","shing","One swing. Many problems solved.","sharp,heavy"},
 	{"cleaver","CKBHrK","fV",4,6,4,"8A929B","24262A","rectangular heavy chopping blade","shing","Chop first, ask questions later.","medieval,sharp,kitchen"},
 	{"clematis","NGCLMI","WSHN",2,1,3,"7E57C2","FFFFFF","climbing vine with big starry blooms","rustle","Climbs anything. Smothers everything.","plant"},
 	{"clementine","IMBAKF","jke",3,6,2,"F59B26","2F6B2A","tiny bright orange, two leaves","squirt","Tiny, sweet, and full of squirt.","edible,fruit,sour"},
@@ -63,6 +64,7 @@ return {
 	{"clouded leopard","AMDJAA","DZfT",6,8,5,"A89878","3B3328","cloud-shaped dark blotches, long canines","roar","Climbs down trees head-first. Show-off.","mammal,predator,wild"},
 	{"clover","NGAOMI","FS",1,1,1,"43A047","FFFFFF","three or four heart leaves","rustle","Lucky! Probably.","plant,flower,lucky"},
 	{"clover field","NGENMI","FS",1,1,3,"43A047","FFFFFF","carpet of clover with white puffs","rustle","Somewhere here is a four-leaf one.","plant"},
+	{"clover streak","NGBOMK","Db",3,6,3,"2FB45A","FFD24A","gold-edged four-leaf clover spinning over your head","chime","Four leaves. Four lucky shots. Spend them well.","holiday,luck,buff"},
 	{"cloves","IFBDOJ","PO",2,5,1,"5A2A1E","8A4A2A","tiny nail-shaped buds","puff","Little spice nails. Numbs the mouth.","edible,spice"},
 	{"clown","LMCJNA","Ujdc",3,6,4,"DC2626","FACC15","red nose, rainbow wig, giant shoes","honk","Honk honk. You're distracted now.","circus,silly"},
 	{"clown car","DMBKHL","jdgh",2,4,4,"F44336","FFEB3B","tiny bubble car, polka dots, horn","honk","How many clowns? Yes.","mechanical,vehicle,land,silly"},
@@ -197,7 +199,6 @@ return {
 	{"cone snail","AJAJGI","GTMeN",3,1,6,"E8D8B0","8A5A2A","patterned cone shell, harpoon","squelch","Fires a tiny venom harpoon. Pretty and deadly.","mollusk,aquatic"},
 	{"coneflower","NGBNMI","dFS",2,1,2,"E91E63","FF9800","drooping pink petals around a spiky cone","rustle","Boosts everyone's health.","plant,flower"},
 	{"confetti","BMAEKI","jdP",1,6,1,"FF3EA5","D4A72C","shower of paper sparkles","poof","Celebration is mandatory.","party"},
-	{"confetti cannon","CMBFxI","jdeP",1,7,2,"FF3EA5","F1C40F","tube bursting with confetti","pop","Party mode: activated.","party,silly"},
 	{"confidence","KHBOKJ","GD",2,6,4,"FFB300","FFFFFF","bright steady glow","ding","Walk tall. Hit hard.","support"},
 	{"conflict","KACDOF","jfPO",5,5,2,"D6D3D1","EF4444","cartoon dust cloud with fists, stars and boots poking out","pow","Nobody remembers who started it. Everyone is in.","silly,melee"},
 	{"confusion","KLBFOB","j",3,7,1,"FFEB3B","7C4DFF","swirl of question marks and stars","boing","Which way is up again?","silly"},
@@ -402,5 +403,4 @@ return {
 	{"cricket","AMAJFG","UdAP",1,6,1,"4A3A2A","8A6A44","dark hopper rubbing legs","chirp","Chirps all night. Can't stop.","insect"},
 	{"cricket ball","BMAA3F","ke",2,9,5,"9E1B32","F2F2EE","hard red stitched ball","bonk","Very red. Very hard.","sport"},
 	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
-	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 }

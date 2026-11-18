@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind-up toy robot","OKAJNA","UDd",1,5,3,"DC2626","94A3B8","tin robot with a big wind-up key","tick","Walks into walls. Turns. Walks into walls.","robot,silly,cute"},
 	{"windbreaker","BFBIyE","GIa",2,5,4,"22C55E","A855F7","swishy neon jacket puffed up by the wind","swish","Swish swish swish. Stealth: zero.","clothing"},
 	{"windmill","EFDMIK","GkSI",4,1,7,"F5E6CA","8D6E63","tower with four giant turning sails","creak","The sails spin. Enemies get swatted.","structure,building"},
 	{"windmill arms","KMBN5K","jkf",2,7,1,"FFCC80","FFFFFF","windmilling arms with motion blur","whap","Arms everywhere. Some hit.","silly"},

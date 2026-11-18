@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
 	{"dodge","KFBOKB","ZY",2,10,2,"E1F5FE","FFFFFF","blurry afterimage sidestep","whoosh","Missed me!","speed"},
 	{"dodgeball","BMBG3F","UkeO",2,8,2,"C0392B","C0392B","rubbery red playground ball","bonk","If you can dodge a wrench...","sport"},
 	{"dodgeball kid","LMBJNA","dke",3,7,2,"DC2626","F8FAFC","tiny kid with a huge red ball","boing","Small arms. Huge throws.","school,silly,sport"},
@@ -249,7 +250,6 @@ return {
 	{"easel","BMCCII","G",1,1,3,"C49A6C","8B5A2B","wooden A-frame with canvas","splat","A masterpiece in progress.","art"},
 	{"east","KHCF6B","KIO",4,6,2,"FDBA74","FEF08A","compass needle on E with a rising sun flare","chime","Where the sun gets up. Earlier than you.","map"},
 	{"easter","KGCL2I","UEch",3,3,2,"FBCFE8","A7F3D0","pastel basket of painted eggs, one of them ticking","boing","One of these eggs is not chocolate.","holiday,cute"},
-	{"easter basket","BMBLKI","c",1,1,2,"C3A6E8","C49A6C","basket of pastel eggs and grass","jingle","Hoppy hunting.","holiday"},
 	{"easter bunny","LGBJAG","Uch",2,8,2,"F9A8D4","FDE68A","tall white bunny with egg basket","chime","Hides eggs. Hides from you.","holiday,cute"},
 	{"easter egg","BMAAKI","ceV",1,6,1,"C3A6E8","98E2C6","pastel painted egg","jingle","Hunt it. Throw it.","holiday"},
 	{"eat","KMCAKB","iFf",4,7,2,"FF8A65","FFFFFF","giant chomping glowing mouth","chomp","Om nom nom.","silly"},
@@ -280,6 +280,7 @@ return {
 	{"egg foo young","IGBOKI","F",2,5,3,"D9A04A","7DBE3A","fluffy omelet patties, gravy","crunch","Omelets in brown gravy.","edible,healthy"},
 	{"egg fried rice","IMAELB","FeP",2,6,1,"F2D23A","F7F4EC","golden rice with egg bits","pitter","Fried rice's golden cousin.","edible,grain"},
 	{"egg salad","IGBOKI","F",2,5,3,"F2E07A","F7F2E0","creamy yellow egg scoop","crunch","Eggs, mashed into happiness.","edible,healthy"},
+	{"egg stash","BGBL2I","EcN",3,4,4,"F6A6D2","8EE3C8","basket and painted eggs hidden in grass, pop in dye","pop","Finders keepers. Finders also get painted.","holiday,spring,trap"},
 	{"egg tart","IMBAKK","Uke",3,7,2,"F2C24A","D9A04A","small flaky tart, gold custard","whoosh","Wobbly, golden, and flaky.","edible"},
 	{"egg white","IMBLGI","kSO",2,3,2,"F7F7F2","E8F0F8","clear glossy liquid","squeak","Slippery and clear.","edible,slippery,silly"},
 	{"egg yolk","IMBLGG","USN",2,3,3,"F2B81A","F7D86A","golden round yolk","wobble","A golden orb of goo.","edible,wobbly"},
@@ -402,5 +403,4 @@ return {
 	{"eoraptor","AMBJBA","DQfT",3,9,3,"8A7A5A","D8C8A8","early small dinosaur","screech","Dawn thief. One of the first dinos.","dinosaur,extinct,reptile,predator,ancient"},
 	{"epaulette shark","ABBJEA","DfTB",2,8,6,"C8B08A","3A2A1E","small shark walking on fins","chomp","A shark that walks. On land. Briefly.","fish,aquatic,ocean,predator"},
 	{"epee","CKCHrK","fT",4,8,3,"C9CED4","24262A","stiff thin blade, bell guard","shing","Fencing with extra French.","medieval,sharp"},
-	{"epic","KHCOKJ","DW",5,6,4,"AB47BC","FFD54F","purple epic loot glow","fanfare","That was epic.","meme"},
 }

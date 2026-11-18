@@ -3,9 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
 	{"jack frost","LCCJNB","AJN",5,8,3,"BAE6FD","F8FAFC","icy-haired sprite with frost staff","crack","Nips your nose. Freezes your window.","frozen,holiday"},
 	{"jack in box","BMBG2I","Uk",3,4,3,"3B6FD8","FFD93B","a toy crank box that pops out a star-headed spring","boing","Round and round it goes. Then it doesn't.","cartoon,silly,toy"},
-	{"jack o lantern","BABJKI","Kjc",2,3,3,"E67E22","FF6A1A","carved grinning pumpkin with candle","jingle","Grins in the dark. Grins at you.","holiday,spooky"},
 	{"jack russell","AMBJAA","UdQf",2,8,2,"F2EEE6","8A5A2A","small white dog with tan patches, springy","yip","Bounces off walls. Literally.","mammal,pet,cute"},
 	{"jack the giant slayer","LMBJNA","cf",3,7,3,"15803D","78350F","kid with magic beans and a tiny sword","ding","Climbed the beanstalk. Regrets nothing.","folklore"},
 	{"jack-in-the-box monster","ALBLII","UEO",3,6,4,"DC2626","FACC15","spring-loaded clown head in a crank box","boing","Pop goes your sanity.","spooky,silly"},
@@ -79,6 +79,7 @@ return {
 	{"jicama","IEBAKK","keO",3,7,6,"A87A4A","F2F0E8","round brown root, white inside","bonk","A crunchy potato that tastes like apple.","edible,vegetable"},
 	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 	{"jigsaw tool","JKBHJK","fV",3,6,4,"2F6FD1","24262A","saw with up-down blade","whirr","Curves! Corners! Chaos!","tool"},
+	{"jingle flail","CKCHJI","kfN",5,6,3,"D9A23A","C2203A","strap of brass sleigh bells swung in sweeps and a slam","jingle","Dashing through the foes.","holiday,winter,melee"},
 	{"jinx","KLBAKB","jd",3,8,1,"AB47BC","FFEB3B","wobbly yellow-purple spark","cackle","Trips over nothing. Every time.","silly"},
 	{"jitte","CKBHtK","GfO",2,7,5,"8A929B","9E1B32","blunt rod with side hook","shing","Catches swords. Bonks owners.","ninja"},
 	{"jock","LMCJNA","Dk",4,7,5,"DC2626","F8FAFC","letterman jacket, football","thud","Dodgeball champion. Aims at faces.","school"},
@@ -402,5 +403,4 @@ return {
 	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
 	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
 	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
-	{"lasso","CMCAJK","HeO",3,7,3,"C9A46A","8A6A3E","a twirled rope loop that ropes and yanks a foe","twang","Yee-haw, gotcha.","cartoon,cowboy"},
 }

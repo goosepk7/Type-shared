@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow blast","FICGKI","iEk",6,7,1,"1A0033","AA00FF","bursting sphere of black smoke and violet sparks","whum","A burst of pure gloom.","spooky,explosive"},
 	{"shadow bolt","FICAKB","iTe",6,8,1,"311B47","9C4DFF","writhing black orb with purple wake","hiss","Darkness, but in a hurry.","spooky"},
 	{"shadow bomb","FICGKI","iEZ",6,6,1,"1A0033","AA00FF","black orb bursting into blinding dark","whum","Explodes into nothing. Scary nothing.","spooky,explosive"},
 	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
@@ -306,6 +307,7 @@ return {
 	{"sky strike","HHEBKI","KkO",9,6,2,"E1F5FE","FF5252","thin targeting line then huge pillar from sky","boom","Target locked from space.","space,danger"},
 	{"sky taxi","DFCKHE","DAkg",4,7,5,"FFEB3B","212121","yellow pod with four rotors","hum","Hail a cab. In the sky.","future,silly"},
 	{"sky temple","MFENII","FlS",5,1,8,"FFFFFF","90CAF9","columns on a floating cloud","echo","Up where the wind gods live.","place,adventure,holy"},
+	{"skyburst finale","BADNkB","EeP",7,5,3,"FFC84A","FF3E9A","five firework shells burst over the area in turn","boom","Ooh. Aah. Ow.","holiday,new year,fireworks,explosive"},
 	{"skydive","KFCAKB","kO",5,9,2,"81D4FA","FF5252","caster plunging from the sky onto target","whoosh","Arrives from above. Hard.","air,sport"},
 	{"skydiving grandpa","LFCJNB","DA",4,7,4,"78716C","DC2626","grandpa with goggles in freefall","whoosh","Still got it. Mostly.","silly,family"},
 	{"skyscraper","EMFCII","GkS",4,1,10,"90CAF9","37474F","very tall glass tower, antenna on top","thud","Scrapes the sky. Squashes the rest.","structure,building,heavy"},
@@ -333,7 +335,6 @@ return {
 	{"sleet","GCCEOJ","JN",3,5,2,"AFC6D4","E9F2F7","slushy icy pellets falling slant","patter","Not rain, not snow, just rude.","frozen,storm"},
 	{"sleeve","BMBLCD","jbh",2,5,2,"7C3AED","FACC15","long floppy purple sleeve with aces and scarves poking out","swish","Always something up it.","clothing,magic"},
 	{"sleigh","DCDKHB","DAgh",5,7,5,"C62828","FFD700","curled red sleigh, gold runners, bell harness","bells","Brings presents. And payback.","vehicle,magic,mythical,holiday"},
-	{"sleigh bell","BMAFKI","dF",1,5,2,"D4A72C","C0392B","round jingling bells on strap","jingle","Jingle all the way.","holiday"},
 	{"sleipnir","AFDKAA","Dkg",7,10,6,"6B7280","E5E7EB","grey stallion with eight legs","neigh","Eight legs. Zero traffic.","mythical,mount,norse"},
 	{"slice","KKBHJB","fT",5,9,1,"CFD8DC","FFFFFF","clean bright arc of light","shing","Precision cutting. Like a chef.","sharp"},
 	{"slice of bread","IMBAKK","Uke",3,7,2,"E8C88A","F5EAD5","square slice with crust edge","whoosh","A slice, thrown with great purpose.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"snack","IMAA7G","dFc",1,6,1,"F59E0B","FDE68A","little pile of crackers, cheese cubes and grapes","crunch","Not hungry. Just snacky.","edible,cute"},
 	{"snack table","IMCJII","Gdc",5,1,6,"D72B2B","F2C24A","folding table of snacks","thud","Everyone stops for snacks.","edible,giant,silly"},
 	{"snail","AMAJGI","GSN",1,1,6,"A86A3A","E8C8A0","spiral shell, slimy foot, eye stalks","squelch","Speed: yes. Very little of it.","mollusk,aquatic,garden"},
-	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 }

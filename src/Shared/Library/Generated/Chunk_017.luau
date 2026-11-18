@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 	{"minivan","DMCKHL","Dkg",4,6,6,"6E8FA6","D9DEE2","tall rounded van, sliding side door","engine","Soccer practice is cancelled. Battle is on.","mechanical,vehicle,land,silly"},
 	{"mink","AMBJAA","CfTB",3,8,2,"3A2618","5A3E2C","glossy dark brown slinky body","chatter","Shiny coat, sharp teeth.","mammal,predator"},
 	{"minke whale","ABEJEC","kIB",6,3,9,"3A4250","D8DEE4","small sleek whale, white flipper bands","whalesong","Smallest of the big guys.","mammal,aquatic,ocean,heavy"},
@@ -402,5 +403,4 @@ return {
 	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
 	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
 	{"newt","AJAJCA","FMB",1,3,2,"E8701E","3A3A2A","small orange salamander","squelch","Bright orange. Bitter taste.","amphibian,wetland"},
-	{"niagara falls","MBFFII","kSIN",7,1,9,"4FC3F7","FFFFFF","wide thundering curtain of water","roar","Several million litres of nope.","place,landmark"},
 }
