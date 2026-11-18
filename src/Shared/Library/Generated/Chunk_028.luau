@@ -125,6 +125,7 @@ return {
 	{"warp","KLCOKB","DY",4,10,2,"6200EA","84FFFF","stretched streaky blur in motion","warp","Engage! Whoosh.","space,speed"},
 	{"warp pipe","EKCOII","Y",2,9,5,"2E9C95","D9A441","a pipe pops up under you and you come out of another one","warp","Down one pipe, up the other. Do not ask what is in between.","game,platformer,travel"},
 	{"warp ship","DLEKHB","DAgY",7,10,7,"ECEFF1","7C4DFF","sleek ship with glowing warp rings","warp","Here. There. Everywhere.","vehicle,space"},
+	{"warp slash","CLCHJI","fY",5,10,2,"BE8CFF","464856","a phase blade blinking through the target","slash","Through, not around.","scifi,melee"},
 	{"warrior","LECJNA","GDf",6,5,6,"991B1B","9CA3AF","sword and shield, chainmail, battle scars","clang","Hits things. Very good at it.","warrior"},
 	{"warrior princess","LHCJNA","GDf",6,6,6,"F472B6","94A3B8","tiara on a helmet, sword, cape","clang","Rescues the knight. Again.","royal,warrior"},
 	{"wart","BJALKI","SMP",2,1,3,"8A9A5B","5E6B3A","bumpy green lump with one hair","squelch","A gift from a toad. No returns.","body,gross,spooky"},

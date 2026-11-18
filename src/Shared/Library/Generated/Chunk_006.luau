@@ -9,6 +9,7 @@ return {
 	{"cling wrap","BMBL2I","NO",1,4,1,"BFE6F2","F2F2EE","stretchy clear plastic sheet","clang","Wrapped up tight.","sticky"},
 	{"clipboard","BMBIyK","G",1,6,3,"C49A6C","C9CED4","board with metal clip","tap","Looks busy. Is busy.","office"},
 	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
+	{"cloaking field","OHBO1I","Z",2,6,3,"BEE1FF","6E7480","a wrist cuff folding light round you, leaving only a shimmer","hum","Now you see me. Mostly you don't.","scifi,stealth"},
 	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},

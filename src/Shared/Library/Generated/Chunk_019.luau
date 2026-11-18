@@ -141,7 +141,7 @@ return {
 	{"photocopier","BMDMII","eVh",2,1,6,"8E9196","F2F2EE","big office copy machine","tap","Copies enemies. Badly.","office"},
 	{"photographer","LHCJNA","dO",3,5,3,"111827","F8FAFC","camera with big flash","click","Say cheese. FLASH. Stunned.","art"},
 	{"photon","FHAAKB","Te",2,10,1,"FFFFFF","FFF59D","tiny bright light speck streak","zing","Fastest thing around. Also tiniest.","space"},
-	{"photon torpedo","CHCAkI","EQe",8,8,2,"7DF9FF","F2F2EE","glowing energy torpedo","zap","Space boom, delivered.","scifi,space"},
+	{"photon torpedo","CHCAkI","EQe",6,3,2,"FF603C","5C606C","a slow amber-red torpedo core in an open rib casing","zap","Slow, polite, inevitable. Unless you dash.","scifi,space"},
 	{"photosynthesis","KGCOKJ","WF",1,3,4,"66BB6A","FFEB3B","green leafy glow drinking sunlight","chime","Eat sunshine. Heal up.","plant,support"},
 	{"physalis","IGAELB","eVP",2,7,1,"F2B33A","E8D8A8","orange berry in papery lantern","pitter","Comes gift-wrapped by nature.","edible,fruit,sweet"},
 	{"physicist","LDCJNA","EeY",4,4,4,"F8FAFC","7C3AED","lab coat, chalkboard of equations","zap","Did the math. You lose.","science"},
