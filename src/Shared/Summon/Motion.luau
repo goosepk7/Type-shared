@@ -94,6 +94,7 @@ local GAIT: { [string]: any } = {
 	inch = { bob = 0.06, freq = 0.8, sway = 0.1 }, drive = { wheel = 1, bob = 0.01, freq = 2 }, fly = { flap = 0.7, flapFreq = 2.2, bob = 0.1, freq = 1, fly = true },
 	hover = { bob = 0.08, freq = 0.6, fly = true }, spin = { spin = 2, freq = 1 }, sway = { sway = 0.08, freq = 0.4 },
 	swarm = { jitter = 0.06, freq = 3 }, surge = { bob = 0.12, freq = 0.7 }, static = { freq = 0 }, roll = { roll2 = 1, freq = 1 },
+	crowd = { jitter = 0.012, bob = 0.01, freq = 1.6 }, -- a shuffling crowd on the ground (Swarm people, hands)
 }
 Motion.Gaits = GAIT
 
