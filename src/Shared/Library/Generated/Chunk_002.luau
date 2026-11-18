@@ -330,7 +330,6 @@ return {
 	{"bathtub car","DBBKHL","UDkg",2,5,3,"FFFFFF","4FC3F7","clawfoot bathtub on wheels","engine","Comes with bubbles. Bubble attacks.","mechanical,vehicle,land,silly"},
 	{"bathysphere","DBCKHC","GgB",3,2,8,"607D8B","FFEB3B","steel ball on a cable with portholes","splash","Down, down, down. Safe inside.","vehicle,aquatic"},
 	{"baton","CMBHJK","fO",2,7,4,"24262A","8E9196","short sturdy stick","bonk","Short stick, big authority.","medieval,heavy"},
-	{"baton conductor","BMAOzI","Fh",1,6,1,"F2F2EE","24262A","slim white wand","strum","Orchestra, ATTACK.","music"},
 	{"battenberg","IMBLKI","dSc",2,3,3,"F2A6C8","F2D870","pink-yellow checkered cake","chomp","A cake with a chessboard inside.","edible,sweet"},
 	{"batter","IMBLGI","SN",2,3,2,"F2D88A","F7EAC0","bowl of pale runny batter","squeak","Gooey, runny, and slippery.","edible,slippery,silly"},
 	{"battering ram","DEDKHL","DkgO",7,3,8,"6D4C41","7F8C8D","log on wheels, iron head, roof shelter","engine","Knocking politely is for losers.","ancient,heavy"},
@@ -403,4 +402,5 @@ return {
 	{"beech tree","NGECMI","GWkS",4,1,8,"9E9E9E","7CB342","smooth grey trunk, wide crown","rustle","Smooth bark. Rough day for you.","plant,tree"},
 	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
+	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
 }

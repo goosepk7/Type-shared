@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"smoke tree","NGCCMI","GWZkS",2,1,5,"6D4C41","B39DDB","fluffy purple plumes like smoke","rustle","Looks like it is on fire. It is not.","plant,tree"},
+	{"smoked salmon","IGBOKI","F",2,5,3,"E8603A","F2C8B8","thin glossy orange slices","crunch","Silky pink ribbons.","edible,healthy"},
+	{"smoked sausage","IMBHJI","cf",3,5,4,"8A3A1E","C8603A","curved smoky sausage","bonk","Smoky and snappy.","edible,silly"},
+	{"smokejumper","LBCJNB","AFI",5,7,5,"FACC15","DC2626","parachute, fire shovel, yellow shirt","whoosh","Jumps out of planes into fires. Daily.","rescue,flying"},
 	{"smolder","FABNOI","KSN",3,2,4,"5A2A1A","E0703A","low glowing coals, curls of thin smoke","hiss","Patient fire. It can wait.","fire"},
 	{"smoothie","IBBOKI","WF",2,6,2,"E8434F","F7F2EC","tall glass of blended fruit","slurp","Fruit in a blender storm.","edible,drink"},
 	{"smoothie bowl","IGBOKI","F",2,5,3,"7A3A6A","E8434F","bowl of purple puree, fruit","crunch","A smoothie that you eat with a spoon.","edible,healthy,breakfast"},
@@ -399,8 +403,4 @@ return {
 	{"stable","EMCCII","GSh",2,1,6,"6D4C41","F5E6CA","low wooden building with half doors","thud","Mounts ready. Saddles up.","structure,building"},
 	{"stable hand","LMCJNA","Fh",3,5,4,"78350F","FDE68A","pitchfork, hay, boots","neigh","Brings the horses. And smells like them.","silly,mount"},
 	{"stack of pancakes","IMCCII","GFc",4,2,5,"E8B860","B5651D","tall stack, butter, syrup flow","thud","A tower of fluff. Topple it on foes.","edible,giant,breakfast"},
-	{"stadium","MEFNII","dSh",3,1,9,"43A047","F5F5F5","oval stands around a bright pitch","crowd","The crowd goes wild. Literally.","place,terrain,sport"},
-	{"staff","BLCAzI","feh",5,5,4,"5A3A1E","8E5CC2","tall gnarled staff with glowing orb","chime","You shall not pass.","magic,fantasy"},
-	{"stag beetle","AMBJFA","Gkf",2,3,4,"3A1E14","8A4A2A","huge antler-like jaws","click","Wears antlers on its face.","insect,armored"},
-	{"stagger","KMCFOB","kO",4,8,1,"FFCC80","FFFFFF","wobbling impact ring","thud","Wobble. Wobble. Down.","melee"},
 }

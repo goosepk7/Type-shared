@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"part the sea","HBFCnI","GI",7,3,9,"0277BD","E1F5FE","two towering walls of water with a dry path","roar","Make way! Walk right through.","aquatic"},
+	{"parthenon","EHFCII","GFkS",5,1,10,"F5F5F5","E6D3A3","marble temple ringed by columns","rumble","Ancient Greek columns of justice.","structure,landmark,ancient"},
 	{"particle","FLAELJ","TPY",2,9,1,"A78BFA","22D3EE","shimmering cloud of tiny glowing dots blinking in and out","shimmer","Here. Not here. Here. Physics is weird.","science"},
 	{"particle accelerator","ODFN1I","EL",8,1,8,"C9CED4","3FC1D9","enormous ring of magnets","bubble","Smashes atoms. Smashes foes.","science"},
 	{"particle cannon","CDDMxI","KTe",8,5,6,"F2F2EE","3FC1D9","cannon with accelerator rings","zap","Science, but very loud.","scifi,ranged"},
@@ -178,6 +180,7 @@ return {
 	{"pianist","LLCJNI","jh",3,3,4,"111827","F8FAFC","tuxedo, grand piano","piano","Dramatic chord. Dramatic effect.","music"},
 	{"piano","BMDGKI","dkO",6,1,6,"24262A","F2F2EE","grand piano, lid propped up","thud","Plunk. Plonk. Crash.","music,heavy,cartoon"},
 	{"piano drop","BMDGKI","k",4,2,3,"5A3420","F5F1E6","an upright piano that crashes down from the sky","crash","Look out below. Way below.","cartoon,silly"},
+	{"piano keys","EMDCpI","Gkl",5,6,6,"F4F1E8","1C1C22","giant piano keys rise in a walkway that plays","music","Every step is a note.","music,structure,mobility"},
 	{"piano rain","BMDEJI","dkO",7,2,5,"24262A","F2F2EE","grand pianos plummeting","thud","Plink. Plonk. PLINK.","silly,cartoon"},
 	{"piasa bird","AADJDB","Akf",6,7,5,"7F1D1D","15803D","antlered dragon bird with fish tail","screech","Painted on cliffs. Not happy about it.","mythical"},
 	{"picarones","IMBLGI","SNP",2,3,3,"D9A04A","B5651D","pumpkin donut rings, syrup","gloop","Peruvian donuts with syrup.","edible,sticky,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"plunger","BMBHJK","fHO",1,6,3,"C0392B","7A4E2D","rubber cup on wooden stick","clank","Shloop. Stuck.","silly,bathroom"},
 	{"plunger arrow","CMAAJI","deO",1,8,2,"C0392B","24262A","arrow with a toilet plunger tip","twang","Thwock. Stuck.","medieval,ranged,silly"},
 	{"pluot","IGBAKF","Fke",3,6,2,"8A2A4E","E8762B","speckled plum-apricot","splat","Half plum, half apricot, all juice.","edible,fruit,sweet"},
-	{"plus","KHBOKJ","WFV",3,5,2,"22C55E","FFFFFF","chunky green plus sign with a +1 popping out","ding","One more. And one more. And one more.","school,support"},
-	{"pluto","MCDGKJ","Jke",5,4,7,"D7CCC8","A1887F","small icy sphere with a heart patch","rumble","Still a planet in our hearts.","space,cute"},
-	{"po boy","IMBHJI","Ff",3,5,4,"D9A04A","7DBE3A","crusty long sandwich","bonk","A long crusty sandwich from New Orleans.","edible,silly"},
 }

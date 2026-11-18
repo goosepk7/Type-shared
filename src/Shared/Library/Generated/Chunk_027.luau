@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tomato frog","AMAJAG","UMe",1,5,1,"E8401E","F2803A","round red frog","croak","Looks like a tomato. Tastes awful.","amphibian,wetland"},
+	{"tomato juice","IBBOKI","F",2,6,2,"C8202B","E8434F","glass of thick red juice","slurp","Thick and savory.","edible,drink"},
+	{"tomato plant","NGBMMI","dSe",2,1,2,"2E7D32","E53935","staked vine hung with red fruit","rustle","Throws tomatoes. Rotten ones.","plant,crop"},
+	{"tomato soup","IBBOGI","FS",3,4,3,"D8302B","F2E8C8","smooth red soup bowl","slurp","Red, warm, and perfect with grilled cheese.","edible,warm,healthy"},
 	{"tone","KFBF6B","dPO",2,8,1,"22D3EE","F8FAFC","pulsing rings from a buzzing phone at full volume","ring","It is not yours. Everyone checks anyway.","tech,music"},
 	{"tonfa","CMBHJK","Gf",3,7,4,"24262A","8B5A2B","baton with side handle","bonk","Spin, block, poke. Repeat.","medieval,heavy"},
 	{"tongs","JKBHJK","fH",1,6,5,"5B6168","24262A","long pincer tongs","clank","Grabs hot things so you don't.","tool"},
@@ -399,8 +403,4 @@ return {
 	{"velvet ant","AJAJLA","fTMP",2,7,1,"E8301E","1E1E1E","fuzzy red wingless wasp","buzz","Fuzzy and painful.","insect,swarm,venomous"},
 	{"velvet worm","AMAJTA","CeNP",1,3,1,"6A3A2A","A8705A","soft many-legged caterpillar","squelch","Shoots slime nets. Velvety menace.","bug"},
 	{"vending machine","OMDN1I","EFc",5,3,6,"2F6FD1","F2F2EE","a vending machine crashes down and drops sodas","thud","Free drinks. Heavy delivery.","silly,modern,heal"},
-	{"vengeance","KICIKI","ka",6,6,4,"B71C1C","311B92","red-black aura that strikes back","hiss","You hit me. I hit back. Harder.","rage"},
-	{"venom","FJBAKB","TMe",5,7,1,"8BD43A","3B1F4F","dripping green fang-shaped glob","hiss","Spit happens.","toxic"},
-	{"venom blade","FJCHrB","fTM",5,8,2,"76FF03","33691E","dripping green energy blade","hiss","One cut. Lingering regret.","toxic,sharp"},
-	{"venom bloom","NJBLMI","SMP",4,1,2,"76FF03","4A148C","neon green petals dripping toxin","chime","Pretty colours mean danger. Always.","plant,magic,mythical"},
 }

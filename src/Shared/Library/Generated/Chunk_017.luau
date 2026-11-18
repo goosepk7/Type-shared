@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mini submarine","DBCKHC","lfgB",4,4,8,"FF6F00","F5F5F5","round pod with lights and claw arms","sonar","Finds treasure. Pinches enemies.","vehicle,aquatic"},
 	{"mini sun","FHCGKE","KFR",6,4,3,"FFB300","FFF8E1","tiny blazing sun floating overhead","hum","Your own personal sunshine.","holy,fire"},
 	{"mini tornado","HFBN5K","klH",4,7,2,"B0BEC5","ECEFF1","knee-high spinning funnel that zips around","whoosh","Small, angry and very spinny.","storm,cute"},
 	{"miniature schnauzer","AMBJAA","dQf",2,6,2,"8A8A8E","D8D8DA","small dog, bushy beard","yip","Grandpa mustache, puppy energy.","mammal,pet,cute"},
@@ -185,7 +186,7 @@ return {
 	{"mortar and pestle","BEBHtK","kf",2,5,6,"8C8C88","8E9196","stone bowl with grinding club","clang","Grind. Grind. Bonk.","kitchen,household"},
 	{"mortar turret","OKDMxI","EeP",7,3,6,"6B7B3A","3A3F45","stubby upward tube on base","clank","Lobs explosive gifts over walls.","defense,explosive"},
 	{"mosasaurus","ABFJEC","DfHOB",9,6,8,"3A5A6A","C8D0D8","huge sea lizard, double-hinged jaws","roar","Ate sharks for breakfast.","extinct,reptile,aquatic,ocean,danger"},
-	{"mosh pit","KMCNOI","jk",4,7,2,"212121","FF5252","chaotic swirling bump zone","riff","Bump. Shove. Bounce. Repeat.","music,loud"},
+	{"mosh pit","KMDN5I","jkS",5,7,5,"212121","FF5252","a ring of stomping boots that shoves everyone inside","thud","Bump. Shove. Bounce. Repeat.","music,rock,zone"},
 	{"mosque","EHEClI","GFS",5,1,9,"F5F0E1","0E7490","white domed hall with slim towers and a crescent top","chime","Calm inside. Solid outside. Shoes off.","building,holy,structure"},
 	{"mosquito","AMAJFB","diATP",1,6,1,"3A3430","8A7A6A","thin legs, needle mouth, buzzing","buzz","Ruins every summer night.","insect"},
 	{"mosquitofish","ABAJEC","dB",1,6,1,"8A9A8A","D8E0D8","tiny pond fish","splash","Eats mosquitoes. A real hero.","fish,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"new kid","LMBJNA","dZ",2,6,3,"60A5FA","F8FAFC","backpack, nervous smile","ding","Nobody knows their powers. Yet.","school"},
 	{"new potatoes","IMAELB","eVP",2,7,1,"E8D0A0","F2E8C0","tiny round potatoes","pitter","Tiny round spuds.","edible"},
 	{"new year","KHDNII","EFPO",5,5,2,"FACC15","111827","glitter ball dropping, clock at midnight, fireworks","boom","Ten! Nine! Eight! Resolutions: broken by two.","holiday,party,explosive"},
-	{"newfoundland","AMDJAA","DQFfB",5,7,4,"1C1A18","3A3633","huge black shaggy dog, webbed feet","bark","Lifeguard dog. Drools as a hobby.","mammal,pet"},
 }

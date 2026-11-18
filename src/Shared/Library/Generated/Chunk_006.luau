@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"cleats","BMBONF","DT",1,8,2,"24262A","F2F2EE","studded sport shoes","bonk","Grip the turf. Grip the foe.","sport"},
 	{"cleave","KKDHJB","kfT",7,5,3,"90A4AE","ECEFF1","huge sweeping arc hitting many","shing","One swing. Many problems solved.","sharp,heavy"},
 	{"cleaver","CKBHrK","fV",4,6,4,"8A929B","24262A","rectangular heavy chopping blade","shing","Chop first, ask questions later.","medieval,sharp,kitchen"},
 	{"clematis","NGCLMI","WSHN",2,1,3,"7E57C2","FFFFFF","climbing vine with big starry blooms","rustle","Climbs anything. Smothers everything.","plant"},
@@ -195,6 +194,7 @@ return {
 	{"concrete wall","EEDCII","GS",3,1,9,"BDBDBD","9E9E9E","thick grey slab with rebar marks","thud","Ugly. Unbreakable. Perfect.","structure,defense,heavy"},
 	{"condor","AMDJDB","DAlfT",6,7,3,"1E1C1A","F2F2F0","huge wingspan, bald head, white ruff","screech","Wingspan of a small plane.","bird,predator"},
 	{"conductor","LLCJNA","jh",3,4,3,"111827","F8FAFC","tailcoat, baton, wild hair","violin","Waves a stick. Orchestra appears.","music"},
+	{"conductor baton","BLBJzE","Qeh",6,6,5,"F5F3EA","E0B44C","a floating baton with ghost gloves conducts note volleys","strum","From the top. And... strike.","music,summon"},
 	{"cone of cold","FCDFOB","JNP",6,7,1,"81D4FA","FFFFFF","widening cone of frost and snow","crackle","An ice-cream cone of pain.","frozen"},
 	{"cone snail","AJAJGI","GTMeN",3,1,6,"E8D8B0","8A5A2A","patterned cone shell, harpoon","squelch","Fires a tiny venom harpoon. Pretty and deadly.","mollusk,aquatic"},
 	{"coneflower","NGBNMI","dFS",2,1,2,"E91E63","FF9800","drooping pink petals around a spiky cone","rustle","Boosts everyone's health.","plant,flower"},

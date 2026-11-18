@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sweet potato","IEBAKK","keO",3,7,6,"C2622B","F2A35A","long tapered orange-skinned tuber","bonk","The potato that went sweet.","edible,vegetable"},
+	{"sweetgum","NGDCMI","GWkST",3,1,7,"6D4C41","E64A19","star leaves and spiky seed balls","rustle","Drops spiky gumballs. Ouch underfoot.","plant,tree"},
+	{"sweetheart","LHBJNA","jFc",2,5,3,"FB7185","FECDD3","blushing figure with heart eyes and a love letter","aww","Wrote your name in a heart. On everything.","cute,silly"},
+	{"swell shark","ABBJEC","DWfTB",3,8,6,"B8A07A","6A4A2A","shark that inflates","chomp","Gulps water to puff up.","fish,aquatic,ocean,predator"},
 	{"swift","AMAJDB","dA",1,10,1,"3A3430","6A6460","crescent wings","tweet","Sleeps while flying. Legend.","bird,cute"},
 	{"swift fox","AMBJAA","jfb",3,9,2,"C8A07A","F2E8D8","small fast fox","yip","Swift by name. Swift by nature.","mammal,wild"},
 	{"swim","KBBOKC","DB",2,6,2,"4FC3F7","E1F5FE","caster in a swirling water bubble","splash","Glub glub, coming through.","aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"tom yum","IABOGI","KF",3,4,3,"E8602B","C8302B","red spicy sour soup","slurp","Spicy, sour, and sinus-clearing.","edible,warm,healthy"},
 	{"tomahawk","CKBAsK","feV",4,8,3,"8A929B","8B5A2B","light throwing axe","chop","Thrown end over end.","medieval,sharp"},
 	{"tomato","IMBGKF","Eke",3,4,3,"E5302B","3E8E2B","round red globe, green star cap","splat","The classic heckling projectile.","edible,fruit"},
-	{"tomato frog","AMAJAG","UMe",1,5,1,"E8401E","F2803A","round red frog","croak","Looks like a tomato. Tastes awful.","amphibian,wetland"},
-	{"tomato juice","IBBOKI","F",2,6,2,"C8202B","E8434F","glass of thick red juice","slurp","Thick and savory.","edible,drink"},
-	{"tomato plant","NGBMMI","dSe",2,1,2,"2E7D32","E53935","staked vine hung with red fruit","rustle","Throws tomatoes. Rotten ones.","plant,crop"},
-	{"tomato soup","IBBOGI","FS",3,4,3,"D8302B","F2E8C8","smooth red soup bowl","slurp","Red, warm, and perfect with grilled cheese.","edible,warm,healthy"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
 	{"flip","KMBOKK","kY",2,8,2,"FFE082","FFFFFF","acrobatic flip arc trail","whoosh","Ten points for style.","sport"},
 	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
 	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
@@ -402,5 +403,4 @@ return {
 	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
 	{"ghost costume kid","LIBJGA","jd",2,5,2,"F8FAFC","111827","kid in a bedsheet with eye holes","wail","Boo. Trips on the sheet.","cute,halloween,silly"},
 	{"ghost crab","ABBJRA","GZfT",2,8,5,"E8E0D0","C8C0B0","pale fast beach crab, stalk eyes","clack","Vanishes in the sand. Spooky.","crustacean,aquatic,armored"},
-	{"ghost dog","AIBJAJ","QZ",2,7,1,"E5E7EB","93C5FD","translucent floppy-eared pup","bark","Still fetches. Ball goes through it.","ghost,cute"},
 }

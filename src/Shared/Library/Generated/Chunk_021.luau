@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ragdoll cat","AMBJAA","dfT",2,7,2,"F0EBE3","8C7A6B","floppy fluffy body, blue eyes, dark points","meow","Goes limp when held. Tactical flop.","mammal,pet,cute"},
+	{"rage","KACOKI","KDk",6,7,3,"D50000","FF6D00","red steaming aura, cartoon anger vein","roar","Steam from the ears. Run.","rage"},
+	{"rage quitter","LACJNA","Ek",4,6,3,"DC2626","111827","furious figure throwing a controller","crash","Throws the controller. Through the screen.","meme,gaming,explosive"},
 	{"ragnarok","HDFNOI","EkLP",10,5,8,"3E2723","FFD740","stormy gold-black sky, giant lightning, falling fire","boom","The ultimate grand finale.","mythical,danger"},
 	{"raid","KADFLA","DPbh",7,7,4,"B91C1C","FACC15","charging mob of mixed heroes with a war horn and loot bags","horn","Forty people. One boss. Nobody read the guide.","gaming"},
 	{"raijin","ADDJNJ","AeLO",7,6,6,"1D4ED8","FACC15","oni drummer in a ring of thunder drums","thunder","Drums so hard the sky crackles.","yokai,storm"},
@@ -102,6 +105,7 @@ return {
 	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
 	{"recipe","BLBO2J","WFh",3,3,2,"F5E6CC","DC2626","splattered recipe card with floating measuring spoons","rustle","Step one: preheat the battlefield.","kitchen,magic"},
 	{"recon drone","OFBOhE","AQe",3,7,5,"3A4148","FF3A3A","a quadcopter circles overhead pinging enemies red","buzz","UAV online. Everyone you can't see just got very visible.","gaming,robot,mechanical"},
+	{"record scratch","BFCH6K","kIN",5,9,5,"24262A","7CF7FF","a ghost turntable scratches a pushback wave","scratch","Back it up. Way back.","music,dj,push"},
 	{"recorder","BMAFJI","jd",1,6,1,"F2F2EE","F2F2EE","plastic school flute","woodwind","Every school's secret weapon.","music,school,silly"},
 	{"recover","KGBOKJ","F",1,4,3,"81C784","FFFFFF","gentle green breathing glow","chime","Shake it off. Back in it.","support"},
 	{"rectangle","KECCnI","GIa",3,2,7,"22C55E","FFFFFF","long green slab sliding sideways like a door","thunk","A square that got stretched. Still bitter.","school,shape"},
@@ -399,8 +403,4 @@ return {
 	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
 	{"rotisserie chicken","IGCOKK","F",2,5,3,"C8762B","F2C870","golden bird on spit","crunch","Spins until perfect.","edible,healthy"},
 	{"rotten egg","IJBDOJ","jSMP",3,3,2,"E8E0A0","8A9A3A","cracked grey egg, green fumes","whiff","Smell so bad it has its own weather.","edible,smelly,silly"},
-	{"rotten tomato","IJBDOJ","jMe",3,3,2,"8A3A2A","5E7A2B","squishy brown-red tomato, flies","whiff","For the worst performances only.","edible,smelly,silly"},
-	{"rottweiler","AMCJAA","GDQf",5,7,4,"1C1814","9A5A2A","muscular black dog, rust markings","bark","Big tough guardian. Secret cuddler.","mammal,pet"},
-	{"round","KMBF6B","FIO",3,6,1,"EF4444","F8FAFC","ring girl card reading ROUND 1 and a bell being struck","bell","Round one. FIGHT!","gaming,sport"},
-	{"round house","EECCII","GS",2,1,5,"C9A55A","8D6E63","round stone hut with a cone of thatch","thud","Round walls. No corners to hide in.","structure,defense,ancient"},
 }

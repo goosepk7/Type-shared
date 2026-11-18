@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jabuticaba","NGCCMI","GWFkS",2,1,5,"6D4C41","4A148C","trunk covered in dark round fruit","rustle","Grows grapes on its trunk. Weird.","plant,tree,silly"},
 	{"jacamar","AMAJDB","dA",1,7,1,"2AA06A","C8601E","long needle beak","tweet","Catches butterflies mid-air.","bird,cute"},
 	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
 	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
@@ -402,5 +403,4 @@ return {
 	{"laser sight","CHAOJI","e",1,1,1,"FF2D2D","24262A","tiny red dot emitter","zap","Never miss again.","scifi,ranged"},
 	{"laser tag gun","CHBBwI","de",1,9,2,"39FF14","24262A","chunky light gun with sensor","thwip","Pew! You're tagged!","toy,silly"},
 	{"laser tower","EHDBII","GKTe",6,1,7,"ECEFF1","FF1744","sleek white spire with red lens","hum","Pew. Continuous pew.","structure,defense,tower,future"},
-	{"laser turret","OHDMwI","KTe",6,8,6,"F2F2EE","FF2D2D","swivel dome with red lens","hum","Tracks. Locks. Pew.","scifi,defense"},
 }

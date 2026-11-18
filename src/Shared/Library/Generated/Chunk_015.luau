@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laser turret","OHDMwI","KTe",6,8,6,"F2F2EE","FF2D2D","swivel dome with red lens","hum","Tracks. Locks. Pew.","scifi,defense"},
 	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
 	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
 	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
@@ -373,7 +374,7 @@ return {
 	{"lucky coin","BHAOKJ","Fc",2,6,3,"D4A72C","B8693D","worn shiny coin","boing","Heads: you win. Tails: you also win.","treasure,shiny"},
 	{"lucky seven","KHCOKJ","Da",4,7,3,"FFD54F","D32F2F","three glowing sevens spinning","jingle","Jackpot energy.","luck"},
 	{"lucky streak","KHCOKJ","Da",3,7,3,"43A047","FFD54F","trail of clovers behind caster","ding","Can't stop winning.","luck"},
-	{"lullaby","KLCDOJ","SNO",3,3,2,"B39DDB","FFF8E1","soft notes and zzz drifting","hush","Hush now. Everybody sleep.","music,silly"},
+	{"lullaby","KLCDOJ","SNO",5,3,6,"B39DDB","FFF8E1","a drifting cloud of soft notes that puts lingerers to sleep","chime","Hush now. Everybody sleep.","music,control"},
 	{"lumberjack","LGCJNA","Dkf",6,5,6,"DC2626","111827","plaid shirt, beard, giant axe","thud","Yells TIMBER. Means it.","outdoor"},
 	{"lumberjack giant","AGEJNA","Dkf",7,4,8,"DC2626","111827","plaid giant with a tree-sized axe","stomp","Fells forests with one swing.","giant,outdoor"},
 	{"lumberjill","LGCJNA","kf",5,5,6,"DC2626","15803D","plaid shirt, braids, double-bit axe","thud","Chops trees. Chops records.","outdoor"},
@@ -402,5 +403,4 @@ return {
 	{"lutin","ALAJNA","jZb",1,8,1,"65A30D","FACC15","tiny prankster in pointed cap","giggle","Braids horse manes at night. Why? Nobody knows.","fairy,silly"},
 	{"luxury","KHCO0E","GFc",3,3,5,"D4AF37","7F1D4E","gold velvet chaise with grapes, a fan and a tiny dog","chime","Only the finest. Pinky out.","fancy,royal"},
 	{"lychee","IGAAKF","Fke",3,6,2,"D44A55","F7F2EA","small bumpy red shell, pearl inside","splat","Bumpy shell, pearl inside.","edible,fruit,sweet"},
-	{"lynx","ACCJAA","JZfT",4,7,3,"B39A7A","3A2E22","tufted ears, cheek ruff, stubby tail, big paws","hiss","Ear tufts are 90% of its personality.","mammal,predator,wild,arctic"},
 }

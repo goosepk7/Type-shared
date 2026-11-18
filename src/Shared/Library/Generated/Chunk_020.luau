@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plus","KHBOKJ","WFV",3,5,2,"22C55E","FFFFFF","chunky green plus sign with a +1 popping out","ding","One more. And one more. And one more.","school,support"},
+	{"pluto","MCDGKJ","Jke",5,4,7,"D7CCC8","A1887F","small icy sphere with a heart patch","rumble","Still a planet in our hearts.","space,cute"},
+	{"po boy","IMBHJI","Ff",3,5,4,"D9A04A","7DBE3A","crusty long sandwich","bonk","A long crusty sandwich from New Orleans.","edible,silly"},
 	{"poached egg","IMBLGG","USN",2,3,3,"F7F2E8","F2B81A","soft white dome, runny yolk","wobble","Wobbly, delicate, delightful.","edible,wobbly,breakfast"},
 	{"poblano","IABAKK","KeP",3,7,2,"1E4A1E","3E6B2A","wide dark green pod","sizzle","Mild, dark, and great stuffed.","edible,spicy,flammable,pepper"},
 	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
@@ -400,7 +403,4 @@ return {
 	{"radish","IEBAJK","Ke",3,6,4,"D23A4A","F7F2F0","round red root, white tail","crunch","Small, red, and a little spicy.","edible,vegetable,healthy"},
 	{"raft","DBBKHC","DkgB",2,4,4,"FFB300","8D6E63","logs lashed with rope, little sail","splash","Built from twelve logs and hope.","vehicle,aquatic,silly"},
 	{"rag doll","BMBJNA","jd",1,3,2,"F3E6C8","C0392B","floppy cloth doll, button eyes","squeak","Floppy, sweet, slightly unsettling.","toy"},
-	{"ragdoll cat","AMBJAA","dfT",2,7,2,"F0EBE3","8C7A6B","floppy fluffy body, blue eyes, dark points","meow","Goes limp when held. Tactical flop.","mammal,pet,cute"},
-	{"rage","KACOKI","KDk",6,7,3,"D50000","FF6D00","red steaming aura, cartoon anger vein","roar","Steam from the ears. Run.","rage"},
-	{"rage quitter","LACJNA","Ek",4,6,3,"DC2626","111827","furious figure throwing a controller","crash","Throws the controller. Through the screen.","meme,gaming,explosive"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shackles","BKBLKK","NO",1,1,6,"5B6168","9C4A1A","heavy iron cuffs on chain","thud","Clank. Going nowhere.","object"},
+	{"shad","ABAJEC","dPB",1,6,1,"B8C8D0","3A5A7A","silver herring-like","splash","Swims up rivers in spring.","fish,aquatic"},
+	{"shade","AIBJNJ","iZN",3,7,2,"1E1B4B","4338CA","flat inky silhouette","whisper","Your shadow's evil twin.","ghost,spooky"},
+	{"shade hounds","AICJAA","Dfh",7,8,3,"1A1626","8C7CFF","two wolves of living shadow, glowing eyes","howl","Your shadow has teeth. Two sets.","anime,shadow,summon"},
 	{"shadow","FICAKB","iZe",5,7,2,"2B1B3D","7A4FA8","inky smoky dart with violet edge","hiss","Follows you around. Now it bites.","spooky"},
 	{"shadow armor","KICOKI","GZ",2,4,7,"1A0033","7C4DFF","black smoky plating over caster","hiss","Armour made of night.","spooky,defence"},
 	{"shadow aura","FICOKJ","iZ",4,5,3,"1A0033","7C4DFF","smoky black glow round caster","hiss","Edgy. Very edgy.","spooky"},
@@ -399,8 +403,4 @@ return {
 	{"smoke ring","FABAKJ","jO",2,6,1,"9E9E9E","ECEFF1","floating ring of grey smoke","puff","Fancy smoke. Very confusing.","silly"},
 	{"smoke screen","FFCDOJ","jZS",1,5,2,"AEBBD0","E6EEF8","a thick pale grey-blue smoke dome that hides everyone inside","puff","Ninja exit, activated.","gaming,shooter,stealth"},
 	{"smoke screen generator","OFCD1I","jZS",2,1,4,"8E9196","F2F2EE","canister belching thick smoke","thud","Can't see a thing.","defense"},
-	{"smoke tree","NGCCMI","GWZkS",2,1,5,"6D4C41","B39DDB","fluffy purple plumes like smoke","rustle","Looks like it is on fire. It is not.","plant,tree"},
-	{"smoked salmon","IGBOKI","F",2,5,3,"E8603A","F2C8B8","thin glossy orange slices","crunch","Silky pink ribbons.","edible,healthy"},
-	{"smoked sausage","IMBHJI","cf",3,5,4,"8A3A1E","C8603A","curved smoky sausage","bonk","Smoky and snappy.","edible,silly"},
-	{"smokejumper","LBCJNB","AFI",5,7,5,"FACC15","DC2626","parachute, fire shovel, yellow shirt","whoosh","Jumps out of planes into fires. Daily.","rescue,flying"},
 }

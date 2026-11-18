@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green tomato","IGBAKK","keO",3,7,6,"8DB84A","C8E08A","hard unripe tomato","bonk","A tomato that isn't ready yet.","edible"},
 	{"greengage","IGAAKF","Fke",3,6,2,"A8C86B","E8F2B0","small round green plum","splat","A tiny green plum.","edible,fruit,sweet"},
 	{"greenhouse","EGCNII","WFS",2,1,3,"B2EBF2","66BB6A","glass building full of plants","thud","Grows things. Fast.","structure,building,plant"},
 	{"greenland shark","ACDJEC","DfTB",7,1,6,"5A5E64","9AA0A6","slow chunky grey shark","chomp","Lives 400 years. Never hurries.","fish,aquatic,ocean,predator,arctic"},
@@ -402,5 +403,4 @@ return {
 	{"hoglet","AMAJAA","CfT",1,5,3,"B8A08A","F2E6D8","tiny pale spiky ball","squeak","Soft spikes. Will harden.","mammal,wild"},
 	{"hognose snake","AMBJCD","jfN",2,6,3,"B8986A","6A4A2A","upturned snout","hiss","Plays dead dramatically. Oscar worthy.","reptile,venomous,silly"},
 	{"hoisin","IMBLGI","SNP",2,3,3,"5A1E1E","8A3020","thick dark sweet sauce","gloop","Sweet, sticky, and dark.","edible,sticky,sauce"},
-	{"hole punch","BMALJK","T",1,4,4,"8E9196","24262A","two-hole office punch","tap","Ka-chunk. Holes.","office"},
 }

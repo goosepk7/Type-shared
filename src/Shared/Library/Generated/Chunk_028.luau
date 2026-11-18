@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vengeance","KICIKI","ka",6,6,4,"B71C1C","311B92","red-black aura that strikes back","hiss","You hit me. I hit back. Harder.","rage"},
+	{"venom","FJBAKB","TMe",5,7,1,"8BD43A","3B1F4F","dripping green fang-shaped glob","hiss","Spit happens.","toxic"},
+	{"venom blade","FJCHrB","fTM",5,8,2,"76FF03","33691E","dripping green energy blade","hiss","One cut. Lingering regret.","toxic,sharp"},
+	{"venom bloom","NJBLMI","SMP",4,1,2,"76FF03","4A148C","neon green petals dripping toxin","chime","Pretty colours mean danger. Always.","plant,magic,mythical"},
 	{"venom bolt","FJBAKB","Me",4,8,1,"76FF03","1B5E20","dripping green dart with bubbles","hiss","Nasty, sticky and green.","toxic"},
 	{"venom dagger","CJBHrK","fTM",4,9,2,"8BC34A","3A3F45","green-dripping dagger","shing","One cut. Lots of regret.","fantasy,sharp"},
 	{"venom spike","FJCLII","TM",5,5,3,"76FF03","33691E","dripping green spikes from ground","crack","Pointy and poisonous. Double nope.","toxic,sharp"},
@@ -54,7 +58,7 @@ return {
 	{"vine whip","FGCHJB","fH",4,7,2,"388E3C","9CCC65","long green whipping vine","crack","Slapped by a plant. Embarrassing.","plant"},
 	{"vinegar","IJBAKF","jMe",3,6,2,"C8A070","F7F2E8","glass cruet of sour liquid","squirt","Sour enough to sting the eyes.","edible,fruit,sour,sauce"},
 	{"vineyard","MGENII","ScN",2,1,5,"6A1B9A","7CB342","rows of trellised grapevines on a slope","rumble","Grapes everywhere. Sticky feet.","place,terrain,plant"},
-	{"vinyl record","BMAAKK","UTe",1,8,1,"24262A","C0392B","spinning black disc","toot","Spin it. Throw it.","music"},
+	{"vinyl record","BMBAKK","UTe",5,8,5,"1E1B24","FF4F8B","a spinning record with a glowing saw rim flies out and back","whoosh","Spin it. Throw it. Catch it.","music,ranged,boomerang"},
 	{"violet","NGANMI","dFS",1,1,1,"7E57C2","FFEB3B","small velvety bloom with a face","rustle","Shy little flower with a big face.","plant,flower,cute"},
 	{"violet nullity","KLEGKB","ETe",10,2,2,"9B5CFF","FF3B5C","red and blue collide into a slow world-erasing sphere","hum","Red. Blue. Nothing.","anime,magic,ultimate"},
 	{"violin","BMBFJI","jN",2,6,2,"8B3A1A","24262A","small curvy string instrument with bow","strings","The world's tiniest sad song.","music"},
@@ -399,8 +403,4 @@ return {
 	{"wind prison","FFCL5K","lO",5,5,3,"B3E5FC","FFFFFF","spinning wind bubble holding target aloft","howl","Spin in place. Forever.","air"},
 	{"wind ring","FFDN5K","GSI",4,6,3,"B3E5FC","FFFFFF","spinning ring of wind around the area","howl","Nothing gets in. Nothing gets out.","air"},
 	{"wind shield","FFCIKK","GIa",3,6,4,"E1F5FE","FFFFFF","spinning dome of streaking wind","whoosh","Arrows go whoosh, then away.","air,defence"},
-	{"wind spear","FFCAuB","kTe",5,9,1,"B3E5FC","FFFFFF","nearly invisible spiralling air spear","whistle","You won't see it. You'll feel it.","air,sharp"},
-	{"wind spiral","FFCAKB","lTe",5,8,1,"B3E5FC","FFFFFF","drill-shaped spinning air bolt","whistle","Drills through. Spins you up.","air"},
-	{"wind sprite","AFAJNB","jAI",2,10,1,"E0F2FE","A5F3FC","nearly-invisible swirl with wings","whoosh","Steals hats. Steals breath.","fairy,wind"},
-	{"wind tower","EFDMII","GkSIeN",4,1,6,"ECEFF1","80DEEA","tower topped with a giant spinning fan","whoosh","Blows enemies back where they came from.","structure,defense,tower"},
 }

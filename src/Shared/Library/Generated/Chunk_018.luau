@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"newfoundland","AMDJAA","DQFfB",5,7,4,"1C1A18","3A3633","huge black shaggy dog, webbed feet","bark","Lifeguard dog. Drools as a hobby.","mammal,pet"},
 	{"news","KDCF6B","jdPO",3,8,1,"DC2626","F8FAFC","red BREAKING banner scrolling with a spinning globe","fanfare","This just in: you. Getting hit. More at ten.","meme"},
 	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
 	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
@@ -56,6 +57,7 @@ return {
 	{"nodachi","CKDHrK","fT",7,5,4,"C9CED4","24262A","very long field sword","shing","Reach for the sky. Then slice it.","sharp,ancient"},
 	{"nodosaurus","AMDJAA","Gkf",6,3,10,"6A5A3A","B89A6A","armored body, no club","grunt","All armor, no club. Pure defense.","dinosaur,extinct,reptile,armored"},
 	{"noise","KFCFOB","jO",3,9,1,"BDBDBD","FFFFFF","messy jagged sound rings","clang","Ears ringing. Head spinning.","loud"},
+	{"noise cancel","KLCIyI","Gka",5,6,5,"5E6AD2","E0F7FF","a ring bubble eats the next hit, then pops","hush","Shh. You never hit me.","music,shield"},
 	{"noni","IJBDOJ","jSM",3,3,2,"E8E8C8","A8B86A","bumpy pale fruit","whiff","Smells like old cheese.","edible,smelly,fruit"},
 	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
 	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
@@ -401,6 +403,4 @@ return {
 	{"parrotfish","ABBJEC","dPB",2,6,1,"3AB0A0","E86AA0","beaked colorful fish","splash","Poops sand. That's how beaches happen.","fish,aquatic"},
 	{"parsley","IGBOMI","WF",2,4,3,"3E8E2B","7DBE3A","frilly green sprig","crunch","The garnish nobody eats.","edible,vegetable,healthy,herb"},
 	{"parsnip","IEBAJK","FTe",3,6,4,"F2E8C8","C8B88A","pale tapered root","crunch","A ghost carrot.","edible,vegetable,healthy"},
-	{"part the sea","HBFCnI","GI",7,3,9,"0277BD","E1F5FE","two towering walls of water with a dry path","roar","Make way! Walk right through.","aquatic"},
-	{"parthenon","EHFCII","GFkS",5,1,10,"F5F5F5","E6D3A3","marble temple ringed by columns","rumble","Ancient Greek columns of justice.","structure,landmark,ancient"},
 }

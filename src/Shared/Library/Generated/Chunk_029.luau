@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind spear","FFCAuB","kTe",5,9,1,"B3E5FC","FFFFFF","nearly invisible spiralling air spear","whistle","You won't see it. You'll feel it.","air,sharp"},
+	{"wind spiral","FFCAKB","lTe",5,8,1,"B3E5FC","FFFFFF","drill-shaped spinning air bolt","whistle","Drills through. Spins you up.","air"},
+	{"wind sprite","AFAJNB","jAI",2,10,1,"E0F2FE","A5F3FC","nearly-invisible swirl with wings","whoosh","Steals hats. Steals breath.","fairy,wind"},
+	{"wind tower","EFDMII","GkSIeN",4,1,6,"ECEFF1","80DEEA","tower topped with a giant spinning fan","whoosh","Blows enemies back where they came from.","structure,defense,tower"},
 	{"wind tunnel","FFDNOI","DI",4,8,3,"B2EBF2","FFFFFF","long streaming air channel","howl","Fast lane. Pick a direction.","air,speed"},
 	{"wind turbine","EFDMIK","GkSL",4,1,6,"F5F5F5","B0BEC5","tall white pole, three slim blades","whoosh","Clean energy. Dirty slaps.","structure,building"},
 	{"wind up mice","BMAAKI","Qe",2,6,2,"9AA0AA","F2A7B8","three clockwork toy mice that scurry out and pop","pop","Wind them up. Let them go.","cartoon,silly,toy"},
