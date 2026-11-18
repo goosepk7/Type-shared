@@ -172,6 +172,8 @@ local function bounds(parts: { any }): ({ number }, { number })
 end
 Summon._bounds = bounds
 
+local VEHICLE_SCALE: { [string]: number } = { Tiny = 0.55, Small = 0.8, Medium = 1, Large = 1.1, Huge = 1.25, Colossal = 1.5 }
+
 local function scaleAll(bp: any, k: number)
 	for _, p in bp.parts do
 		p.cf = Geom.scaled(p.cf, k)
@@ -412,6 +414,13 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 	local extent = math.max(mx[2] - math.min(0, mn[2]), (mx[3] - mn[3]) * 0.8, (mx[1] - mn[1]) * 0.8)
 	local target = (cfg.Height[bp.size] or 5) * (tonumber(o.scale) or 1)
 	local k = target / math.max(extent, 1e-3)
+	-- sculpted vehicles are authored at their real size around a 5-stud rider (a rowboat seats one, a galleon is
+	-- a galleon): keep that size, nudged by the size class, never more than VehicleMaxClass x the class height
+	local hdef = bp.rig.hero and Heroes.get(bp.rig.hero)
+	if hdef and hdef.plan == "Vehicle" then
+		local f = (cfg.VehicleScale and cfg.VehicleScale[bp.size]) or VEHICLE_SCALE[bp.size] or 1
+		k = math.min(f * (tonumber(o.scale) or 1), (cfg.VehicleMaxClass or 2.5) * target / math.max(extent, 1e-3))
+	end
 	scaleAll(bp, k)
 	bp.scale = k
 	if bp.rig.clips then

@@ -53,6 +53,11 @@ if packsMod then
 end
 
 local disabled = false
+local requirePack = true
+-- Tooling: let heroes without an uploaded pack map too (previews of unuploaded work).
+function Heroes.setRequirePack(on: boolean)
+	requirePack = on
+end
 -- Tooling / A-B comparisons: Heroes.setEnabled(false) falls back to the generic plans everywhere.
 function Heroes.setEnabled(on: boolean)
 	disabled = not on
@@ -71,7 +76,9 @@ local function resolve(id: string?): (string?, any?)
 		return nil, nil
 	end
 	local d = defs[id]
-	if d then
+	-- a hero whose sculpted pieces were never uploaded would only show its primitive stand-ins: leave the word to
+	-- the generic plan until its pack exists (tooling with no Packs at all still sees every hero)
+	if d and (Packs[id] ~= nil or next(Packs) == nil or requirePack == false) then
 		return id, d
 	end
 	return nil, nil
