@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"popcorn bomb","BABGKK","dEP",3,6,1,"F1C40F","F2F2EE","bag that bursts into popcorn","thud","POP POP POP POP POP.","silly,explosive"},
+	{"popcorn cart","DMBKHL","dceg",2,3,3,"E53935","FFEB3B","striped cart with popping kettle","engine","Pop pop pop! Kernels everywhere.","mechanical,vehicle,land,silly"},
+	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
+	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
+	{"popcorn machine","OACM1I","KdeP",2,5,4,"C0392B","D4A72C","glass cart full of popping corn","hum","Pop pop pop! Snack attack.","silly,party"},
+	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 	{"poplar","NGDCMI","GjWkS",3,1,6,"BDBDBD","8BC34A","tall narrow column of fluttery leaves","rustle","Fluffy seeds everywhere. Achoo.","plant,tree"},
 	{"poppy","NGBNMI","SNO",2,1,1,"E53935","212121","papery red petals, dark centre","rustle","Makes everyone very, very sleepy.","plant,flower"},
 	{"poppy field","NGENMI","SNO",3,1,3,"E53935","7CB342","red poppies as far as you see","rustle","Sleepy... so sleepy...","plant,crop"},
@@ -110,6 +116,7 @@ return {
 	{"printer","BMCMII","je",2,1,5,"F2F2EE","8E9196","boxy printer spitting paper","tap","PC LOAD LETTER? What does that mean?","office"},
 	{"printing press","OKDL1I","kO",5,1,8,"5A3A1E","5B6168","wooden press with giant screw","clank","Flattens. Publishes. Both.","mechanical"},
 	{"prism","BHAB4I","ja",2,4,2,"BFE6F2","E84A5F","triangular glass block","bubble","Splits light into a rainbow beam.","science"},
+	{"prism star","KHCOKJ","GDk",6,9,8,"FFE15A","FF5FD2","a faceted rainbow star bursts into you and you shimmer","music","Touch them. They bounce. You don't.","game,platformer,power up"},
 	{"prismatic spray","FHDFOB","KjV",6,8,1,"FF5252","40C4FF","fan of seven coloured beams","chime","Taste the... light.","holy,cute"},
 	{"prison","EMELII","GSNO",4,1,10,"616161","263238","grey walls, barred windows, watchtower","clang","Lock them up. Throw away the key.","structure,building"},
 	{"prisoner","LMCJNA","DP",3,5,4,"F97316","F8FAFC","orange jumpsuit, ball and chain","clank","Swings the ball and chain. Freedom.","silly"},
@@ -396,11 +403,4 @@ return {
 	{"recycling truck","DMDKHL","DklHg",5,4,8,"43A047","F5F5F5","green truck with sorting bins","engine","Recycles enemies into something useful.","mechanical,vehicle,land"},
 	{"red admiral","AMAJFB","jdA",1,5,1,"1E1E1E","E8301E","black wings with red bands","flutter","Military-looking butterfly.","insect,cute"},
 	{"red apple","IGBAKF","Fke",3,6,2,"B3121D","F6E7C1","round, deep red, stem and leaf","splat","Polished to a shine. Thrown with love.","edible,fruit,sweet"},
-	{"red bean paste","IMBLGI","SNP",2,3,3,"5A2A2A","7A3A3A","smooth dark red paste","gloop","Sweet beans, smooth as velvet.","edible,sticky,dessert,sweet"},
-	{"red cabbage","IGBAKF","Fke",3,5,3,"6B2D6B","C8A8D8","purple layered round head","thud","A purple bowling ball.","edible,vegetable,healthy"},
-	{"red crab","ABBJRA","GfTPh",2,4,5,"E8301E","F2A07A","bright red land crab","clack","Marches in millions.","crustacean,aquatic,armored"},
-	{"red deer","AMCJAA","Dk",4,8,4,"A0582E","E2C49A","reddish deer, many-pointed antlers","bleat","Roars during autumn. Very dramatic.","mammal,wild"},
-	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
-	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
-	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 }

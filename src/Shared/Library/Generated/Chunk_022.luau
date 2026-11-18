@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"salt and pepper","IFBDOJ","jPO",2,5,1,"F7F7F7","2A2A2A","twin shakers, white and black","puff","A legendary duo.","edible,spice"},
+	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
+	{"salt mine","MEENII","SN",3,1,8,"F5F5F5","F8BBD0","glittering pink and white tunnels","rumble","Salty walls. Salty enemies.","place,terrain"},
+	{"salt shaker","BMADKK","jN",1,6,1,"BFE6F2","F2F2EE","small shaker with holes","clang","Salty. Very salty.","kitchen,household"},
+	{"saltasaurus","AMEJAA","GkIO",7,2,9,"8A6A4A","C8A07A","armored back sauropod","rumble","A sauropod wearing armor.","dinosaur,extinct,reptile,heavy"},
+	{"saltfish","IGBOKI","F",2,5,3,"F2E0A0","E8DCC0","salted fish with ackee","crunch","Jamaica's breakfast champion.","edible,healthy"},
+	{"saltwater crocodile","ABEJAC","fHOB",8,5,8,"5A5A3A","D8D0A0","gigantic croc, armored back","snap","Biggest reptile on Earth. Grumpy.","reptile,predator,aquatic"},
 	{"salty","KEBDOJ","iNP",3,4,2,"F8FAFC","93C5FD","grumpy salt shaker pouring a cloud of crystals","pitter","So salty the sea is jealous.","gaming,meme"},
 	{"saluki","AMCJAA","DQf",4,9,4,"D8B88A","F2E8D8","slim sighthound with feathery ears","bark","Desert racer with fancy ears.","mammal,pet,desert"},
 	{"salvia","NGBNMI","dFS",1,1,2,"3949AB","E53935","spikes of tubular blooms","rustle","Hummingbirds love it.","plant,flower"},
@@ -396,11 +403,4 @@ return {
 	{"ship","DBEKHC","DkgB",6,5,8,"6D4C41","F2E6C9","wooden hull, three masts, billowing sails","creak","Sails in. Rams out.","vehicle,aquatic,ancient"},
 	{"ship captain","LBCJNA","Gh",4,4,5,"1E3A8A","F8FAFC","peaked cap, pipe, white beard","horn","Goes down with the ship. Not today.","aquatic"},
 	{"ship lookout","LBCJNI","eO",3,5,3,"0369A1","FACC15","telescope, crow's nest","horn","LAND HO! Also, enemies ho.","pirate"},
-	{"ship of the line","DBFMHC","EkegB",8,4,9,"3E2723","FFD54F","three decks of cannons, huge sails","cannon","A floating castle. With a hundred cannons.","vehicle,aquatic"},
-	{"shipping container","BKECnI","GO",3,1,10,"C0392B","9C4A1A","giant ribbed metal box","thud","The brick of the seas.","container"},
-	{"shipworm","ABAJGI","GCN",1,1,6,"E8E0D0","C8B8A0","clam that bores into wood","squelch","A clam that eats boats.","mollusk,aquatic"},
-	{"shipwreck","MBENII","Sch",4,1,6,"6D4C41","26A69A","broken hull on the sea floor, coral","thud","Something guards the treasure inside.","spooky,pirate"},
-	{"shipyard","MBENII","Sh",3,1,7,"607D8B","1E88E5","ships on slipways, cranes","crowd","Launches a fresh ship. At you.","place"},
-	{"shiro","IBBOGI","FS",3,4,3,"C8762B","E8A040","chickpea stew","slurp","A spicy chickpea stew.","edible,warm,healthy"},
-	{"shirt","BMBIVB","GjA",2,5,2,"EF4444","FFFFFF","flapping red t-shirt with a pizza stain","flutter","Inside out and backwards. Like always.","clothing"},
 }

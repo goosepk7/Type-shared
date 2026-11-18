@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
 	{"breakdancer","LFCJNK","jdk",4,8,3,"111827","FACC15","spinning on head, tracksuit","beat","Head spins. Kicks fly.","music"},
 	{"breakdancing","KMCN5K","dk",3,7,2,"FF4081","212121","spinning windmill motion trails","music","Headspin! Everyone stand back.","music,dance"},
 	{"breaker","FBDF6F","kO",6,7,2,"0288D1","FFFFFF","wave curling over and smashing down","crash","Crash! Foam everywhere.","aquatic"},
@@ -176,6 +177,7 @@ return {
 	{"butler","LMCJNA","GdF",3,4,5,"111827","F8FAFC","tailcoat, white gloves, silver tray","ding","Your tea, sir. And your enemy, defeated.","royal"},
 	{"butt","BMCA3G","UDkO",4,6,6,"4F7CAC","F0C09A","round cartoon bottom in blue jeans, bounce lines","boing","Butt bump of destiny.","body,silly,meme"},
 	{"butt bump","KMBAKB","dk",2,7,2,"F8BBD0","FFFFFF","bouncy hip impact","boing","Bump! Out of my way.","silly"},
+	{"butt stomp","KECNKG","klf",6,7,3,"FFC94A","8D6E63","hop, flip, and slam down in a shockwave ring","boom","Physics. Applied directly.","game,platformer,heavy"},
 	{"butter","IMBLGI","kSNO",2,3,2,"F8E58C","F2D23A","golden rectangle stick","squeak","Slippery, golden, and everywhere.","edible,slippery,silly,dairy"},
 	{"butter chicken","IGBOKI","F",2,5,3,"E8862B","F2E2C8","creamy orange curry","crunch","Butter and chicken: a love story.","edible,healthy"},
 	{"butter knife","BMAHrK","df",1,6,2,"C9CED4","F2F2EE","blunt rounded table knife","shing","Fearsome against toast.","kitchen,silly"},
@@ -193,6 +195,7 @@ return {
 	{"button","BMAAJI","Ue",1,8,2,"C0392B","F2F2EE","round sewing button","splat","Cute as one.","art"},
 	{"button masher","LMCJNI","jfP",3,8,3,"DC2626","FACC15","figure hammering a controller","click","No strategy. Only buttons.","meme,gaming"},
 	{"buzz","FDANOI","dL",2,7,1,"FFEB3B","82B1FF","humming crackle field","bzz","Bzzzz. Tingly. Annoying.","electric,silly"},
+	{"buzz roll","KFCO3F","UDkf",6,10,2,"3FA9FF","E8F6FF","curl into a spiked energy ball and roll","whoosh","Rev. Roll. Rebound.","game,platformer,speed"},
 	{"buzzard","AMCJDB","DASfT",5,9,3,"6E5440","D8C8B0","broad wings, circling","screech","Circles slowly. Waits patiently.","bird,predator"},
 	{"bye bye","KLCAKB","kY",5,8,1,"7C4DFF","FFFFFF","waving glowing hand, target poofing away","poof","Bye bye! Don't come back.","magic,silly"},
 	{"bzzt","KDAAKB","L",2,10,1,"FFEB3B","82B1FF","tiny jagged spark","bzzt","Bzzt. Just a tickle.","electric,silly"},
@@ -400,7 +403,4 @@ return {
 	{"cartographer","LMCJNA","hY",3,4,3,"78350F","FDE68A","scrolls, compass, quill","swish","Draws the map. Draws you lost.","explorer"},
 	{"cartoon","ALCJBG","UjkY",4,7,5,"FACC15","EF4444","rubbery bouncy character with white gloves and pie-cut eyes","boing","Runs off the cliff. Only falls when it looks down.","silly,art"},
 	{"cartoon box trap","BMCLII","cO",2,1,3,"C69C6D","8B5A2B","box propped on a stick with string","snap","Classic. Works on everyone.","trap,silly"},
-	{"cartoonist","LLCJNI","jh",3,4,3,"111827","FACC15","sketchbook, pen, ink splotches","scratch","Draws allies into existence.","art"},
-	{"cartwheel","KMBOKK","Dd",2,7,2,"F8BBD0","FFFFFF","cartwheeling motion arc","whee","Wheee! Totally on purpose.","silly,sport"},
-	{"cashew","IEAAKK","UeO",2,8,5,"EBD9A8","D8C08A","curved kidney-shaped nut","tok","A nut shaped like a comma.","edible,nut"},
 }

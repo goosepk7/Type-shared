@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hoplite shield","BKCIyI","Gk",3,4,7,"A86F32","9E1B32","large round bronze shield","clang","Bronze, big, and very Greek.","armor,defense,ancient"},
+	{"hopscotch","KMBOKG","UD",1,6,2,"FF80AB","FFFFFF","chalk squares glowing under hops","boing","One, two, three, dodge!","silly"},
+	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},
+	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
+	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
+	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 	{"hornbeam","NGDCMI","GWkS",3,1,8,"9E9E9E","7CB342","grey fluted trunk, dense crown","rustle","Hard as horn.","plant,tree,heavy"},
 	{"hornbill","AMCJDB","jdAk",3,6,2,"1E1E1E","F2C02A","huge curved beak with casque helmet","squawk","Wears a helmet on its beak.","bird,jungle,silly"},
 	{"horned lizard","AMBJAA","CfTe",2,7,2,"C8A06A","6A4A2A","flat spiky desert lizard","hiss","Squirts blood from its eyes. Defense!","reptile,desert"},
@@ -397,10 +403,4 @@ return {
 	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
 	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},
 	{"jeweler","LHCJNI","ca",3,3,4,"FACC15","67E8F9","loupe, gem tray","ding","Every gem sparkles. Blindingly.","merchant,gem"},
-	{"jewelry","BHBL2I","dcaO",3,2,4,"FACC15","22D3EE","spilling heap of rings, chains and glittering gems","jingle","Ooh, shiny. That was the trap.","shiny,royal"},
-	{"jewelry box","BMBL2I","c",1,1,3,"5A3A1E","D4A72C","velvet-lined box with dancer","thud","Sparkles inside. Bait!","container,treasure"},
-	{"jian","CKCHrK","fT",5,8,4,"C9CED4","3E9E6E","straight slim blade, tassel on hilt","shing","Elegant, swift, comes with a tassel.","medieval,sharp"},
-	{"jiangshi","AICJNG","Uif",4,4,5,"1E3A8A","F1F5F9","stiff arms outstretched, robe, paper talisman","boing","Hops after you. Can't bend its knees.","undead,spooky,silly"},
-	{"jicama","IEBAKK","keO",3,7,6,"A87A4A","F2F0E8","round brown root, white inside","bonk","A crunchy potato that tastes like apple.","edible,vegetable"},
-	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 }
