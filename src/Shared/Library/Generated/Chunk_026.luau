@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tarantula hawk","AJBJLB","ATMPO",3,7,1,"1E2A4A","E8701E","blue-black wasp, orange wings","buzz","Hunts tarantulas. Second worst sting.","insect,swarm,venomous"},
+	{"tarasque","AAEJAA","GKDk",8,4,9,"365314","CA8A04","turtle shell, lion head, six bear legs","roar","A turtle that bench-pressed a castle.","mythical,boss"},
+	{"tarbosaurus","AMEJBA","DkfT",8,6,7,"5A4A2E","B89A6A","asian tyrannosaur","roar","T rex's Asian twin.","dinosaur,extinct,reptile,predator"},
 	{"taro","IEBAKK","keO",3,7,6,"8A6A5A","C8B8D8","hairy brown root, lilac flesh","bonk","Hairy outside, purple inside.","edible,vegetable"},
 	{"tarpon","ABDJEC","UDfB",5,7,4,"B8C8D0","E8F0F4","huge silver scales","splash","The silver king. Leaps high.","fish,aquatic"},
 	{"tarsier","AMAJBA","Udeb",1,7,2,"A88A6A","3A2C20","eyes bigger than its brain","chatter","Its eyes are bigger than its stomach.","mammal,primate,nocturnal"},
@@ -400,7 +403,4 @@ return {
 	{"train station","EMDCII","GSh",3,1,8,"B5523B","37474F","long platform, clock, arched roof","thud","All aboard the pain train.","structure,building"},
 	{"train yard","MMENII","kSh",3,1,7,"6D4C41","9E9E9E","tangle of tracks and parked wagons","crowd","Trains from every direction.","place"},
 	{"training dummy","BMCCNI","Gdc",1,1,5,"D2B48C","C0392B","straw dummy with target face","beep","Hit it. It forgives you.","training"},
-	{"training ground","MMENII","SNh",3,1,7,"8D6E63","556B2F","ropes, walls and climbing nets","crowd","Drop and give me twenty.","place,sport"},
-	{"traitor","LICJNA","jZb",4,6,4,"1F2937","7F1D1D","cloaked figure hiding a dagger behind back","whisper","Was on your team. Was.","villain"},
-	{"tram","DMDKHL","DkgL",5,5,8,"C83E2E","F2E6C9","long rail car, overhead pole, bell","bell","Ding ding. It does not stop for you.","mechanical,vehicle,land"},
 }

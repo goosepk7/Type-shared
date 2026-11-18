@@ -403,5 +403,4 @@ return {
 	{"groundnut stew","IBBOGI","FS",3,4,3,"B5823A","D8402B","orange peanut stew","slurp","A nutty, hearty stew.","edible,warm,healthy"},
 	{"group","LMDJLA","GdQh",4,4,5,"38BDF8","F59E0B","cluster of people all talking at once with coffee cups","chatter","This could have been an email.","silly,team"},
 	{"grouper","ABDJEC","DfHB",5,7,4,"6A5A44","C8B48A","huge lips, chunky body","splash","Swallows fish whole. Big lips energy.","fish,aquatic"},
-	{"grouse","AMBJDA","dfO",2,4,2,"8A6A4A","F2F2F0","plump ground bird, feathered feet","cluck","Explodes out of bushes. Scares hikers.","bird,farm"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"soda bread","IMCCII","Gk",4,2,6,"D9A04A","F2E2C2","round loaf with cross cut","thud","A quick bread with a cross on top.","edible,giant"},
+	{"soda can","IBBFKI","EkI",3,7,1,"C8202B","C8C8C8","aluminum can","fizz","Shake well. Open near enemy.","edible,drink,fizzy"},
+	{"soda fountain","OBCM1I","deN",2,2,5,"C0392B","C9CED4","nozzled fizzy drink dispenser","clang","Fizzy blast!","kitchen,household"},
 	{"soda geyser","IBDFKI","EklP",6,7,1,"3A1A0C","F7F7F2","erupting fountain of fizz","fizz","Shake well before using.","edible,drink,fizzy"},
 	{"soft coral","ABCCMI","GW",3,1,6,"E8A0C0","F2D0E0","swaying fleshy coral","crackle","Wiggly coral. Squishy.","aquatic,ocean,reef"},
 	{"soft serve","ICBAKJ","JeN",3,5,2,"F7F2E0","D9A04A","tall curly swirl on cone","squish","Curly, cold, and quick.","edible,frozen,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"step pyramid","EMFMII","GSeh",5,1,10,"9E9E9E","7CB342","stepped pyramid, steep stairs, temple top","thud","Climb it if you dare. Traps on every step.","structure,defense,tower,ancient"},
 	{"stepbrother","LMBJNA","Qfb",3,6,3,"8B5CF6","FBBF24","kid dividing a bedroom with a strip of tape","giggle","This side is mine. That side is also mine.","family,silly"},
 	{"stepmom","LMCJNA","GFO",4,4,5,"0D9488","F2D0B4","grown-up with a packed lunch and a minivan key","ding","Bonus parent. Extra snacks unlocked.","family"},
-	{"steppe","MFFNII","DS",3,1,7,"C0CA33","E6C27A","endless flat grass under huge sky","rumble","Flat as far as you can see. Great for charging.","place,terrain"},
-	{"stethacanthus","ABCJEC","DfTB",5,8,6,"6A6A72","C8C0B8","shark with anvil fin on back","chomp","Has an ironing board on its back.","fish,aquatic,ocean,predator,extinct,ancient,silly"},
-	{"stethoscope","BMAOII","F",1,5,2,"24262A","C9CED4","tube with listening disc","thud","Listens. Diagnoses. Heals.","medical"},
 }

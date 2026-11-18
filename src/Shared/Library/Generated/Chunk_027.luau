@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"training ground","MMENII","SNh",3,1,7,"8D6E63","556B2F","ropes, walls and climbing nets","crowd","Drop and give me twenty.","place,sport"},
+	{"traitor","LICJNA","jZb",4,6,4,"1F2937","7F1D1D","cloaked figure hiding a dagger behind back","whisper","Was on your team. Was.","villain"},
+	{"tram","DMDKHL","DkgL",5,5,8,"C83E2E","F2E6C9","long rail car, overhead pole, bell","bell","Ding ding. It does not stop for you.","mechanical,vehicle,land"},
 	{"trample","KEDFOF","kPO",6,6,4,"795548","BCAAA4","stampede dust wave with hoofprints","rumble","Run over, flat and dusty.","heavy"},
 	{"trampoline","BMDLII","Ukl",3,1,5,"24262A","2F6FD1","round springy mat on legs","bonk","Boing! Bye!","sport,defense"},
 	{"transform","KLCOKI","jW",4,5,3,"BA68C8","FFF59D","swirl of sparkles then a new silhouette","poof","New look, who dis?","magic"},
@@ -400,6 +403,4 @@ return {
 	{"wagon","DMBKHL","DQkg",2,4,3,"D32F2F","8D6E63","small red cart, long pull handle","engine","Pull it along. Fill it with chaos.","mechanical,vehicle,land,silly"},
 	{"wagtail","AMAJDB","dA",1,7,1,"3A3A3A","F2F2F2","tail wagging slim bird","tweet","Wags its tail like a dog.","bird,cute"},
 	{"wahoo","ABCJEC","DfB",4,10,4,"3A5A8A","C8D0D8","striped speedy fish","splash","Fastest name. Yell it. Wahoo!","fish,aquatic"},
-	{"waist","BMCL5K","RHN",2,4,3,"E8B48A","FF6FB5","spinning waist twirling a pink hula hoop","whoosh","Hoops around you until you are dizzy.","body,silly"},
-	{"waiter","LMCJNA","de",3,7,3,"111827","F8FAFC","bow tie, towel over arm, plate tray","ding","Your order is... incoming. Very fast.","food"},
 }
