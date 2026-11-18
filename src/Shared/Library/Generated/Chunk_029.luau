@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind dash","KFCOKB","DI",4,10,2,"B3E5FC","FFFFFF","caster riding a gust","whoosh","Ride the wind.","air,speed"},
+	{"wind dragon","AFEKCB","Aklg",7,9,6,"E0F2FE","60A5FA","feathered sky serpent with cloud mane","howl","Flies so fast it makes weather.","mythical,reptile,wind"},
+	{"wind horse","AFDKAB","DAg",5,10,4,"E0F2FE","93C5FD","horse made of swirling air","neigh","Faster than the wind. It is the wind.","mount,wind"},
+	{"wind machine","OFDF1I","klI",5,5,6,"8E9196","F2F2EE","massive caged industrial fan","whoosh","Flings foes off their feet.","defense"},
+	{"wind monk","LFCJNB","AlI",5,9,4,"FACC15","E0F2FE","monk gliding on a gust of wind","whoosh","Floats. Pushes. Smiles.","martial,wind"},
+	{"wind orb","FFCGKK","RI",4,6,2,"B3E5FC","FFFFFF","swirling ball of streaking air","whoosh","A breeze in a bubble.","air"},
+	{"wind prison","FFCL5K","lO",5,5,3,"B3E5FC","FFFFFF","spinning wind bubble holding target aloft","howl","Spin in place. Forever.","air"},
+	{"wind ring","FFDN5K","GSI",4,6,3,"B3E5FC","FFFFFF","spinning ring of wind around the area","howl","Nothing gets in. Nothing gets out.","air"},
 	{"wind shield","FFCIKK","GIa",3,6,4,"E1F5FE","FFFFFF","spinning dome of streaking wind","whoosh","Arrows go whoosh, then away.","air,defence"},
 	{"wind spear","FFCAuB","kTe",5,9,1,"B3E5FC","FFFFFF","nearly invisible spiralling air spear","whistle","You won't see it. You'll feel it.","air,sharp"},
 	{"wind spiral","FFCAKB","lTe",5,8,1,"B3E5FC","FFFFFF","drill-shaped spinning air bolt","whistle","Drills through. Spins you up.","air"},
@@ -130,6 +138,7 @@ return {
 	{"writer","LLCJNI","jh",3,3,3,"7C2D12","FDE68A","quill, inkpot, stacks of pages","scratch","Writes you out of the story.","art"},
 	{"writing","KMBBCB","jST",3,6,2,"1D4ED8","FFFFFF","looping blue ink scrawl chasing a pen tip","scratch","Even the doctor cannot read this.","school,art"},
 	{"wulver","AGCJNA","QFf",4,6,5,"57534E","D6D3D1","wolf-headed fisherman in a wool sweater","howl","A wolf man who leaves you fish. Wholesome.","mythical,canine,cute"},
+	{"wyrmheart","KADOKI","KDkf",9,6,4,"FF6A2A","FFC24A","a fire-dragon pillar, then horns and wings of fire","roar","The dragon was in there the whole time.","anime,dragon,fire,transformation"},
 	{"wyrmling swarm","AACJLB","KAP",5,8,3,"F97316","B91C1C","cloud of tiny buzzing dragons","chirp","Like bees, but on fire.","reptile,swarm,fire"},
 	{"wyvern","AJDKDB","AfTMg",7,7,6,"3F6212","BEF264","two legs, bat wings, barbed stinger tail","screech","Two legs, two wings, one very pointy tail.","mythical,reptile,flying"},
 	{"x-ray","FHCBKB","ZTe",4,10,1,"0F172A","A5F3FC","blue-black beam that shows the skeleton of what it hits","bzzt","Sees right through you. Nice ribs.","science,spooky"},

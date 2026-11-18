@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"entropy","FLCNOI","jiN",5,3,3,"6B5E7A","B8A8C8","crumbling, fading, glitching area","crackle","Everything falls apart eventually.","chaos"},
 	{"envelope","BMAAJK","Te",1,8,1,"F7F3E8","C0392B","sealed paper envelope","tap","Special delivery! Ouch.","office"},
 	{"envy","KJBAKB","ib",3,6,1,"76FF03","1B5E20","green-eyed wisp","hiss","I want that. Mine now.","silly"},
 	{"eoraptor","AMBJBA","DQfT",3,9,3,"8A7A5A","D8C8A8","early small dinosaur","screech","Dawn thief. One of the first dinos.","dinosaur,extinct,reptile,predator,ancient"},
@@ -402,5 +403,4 @@ return {
 	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
 	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
 	{"flight","KFCOKB","A",2,8,3,"B3E5FC","FFFFFF","caster lifting off with wind streaks","whoosh","Who needs stairs?","air"},
-	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 }

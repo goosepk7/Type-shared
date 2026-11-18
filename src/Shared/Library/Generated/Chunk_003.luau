@@ -296,6 +296,7 @@ return {
 	{"bombardier","LACJNA","Eke",6,4,4,"374151","F97316","goggled trooper with a sack of round cartoon bombs","boom","Counts to three. Sometimes two.","military,explosive"},
 	{"bombardier beetle","AAAJFA","GKEfe",2,3,4,"E8701E","1E2A4A","beetle with spray nozzle rear","click","Shoots boiling chemicals. Bang.","insect,armored"},
 	{"bonbon","IMALKI","dSc",2,3,3,"5A2E16","F2A6C8","small round filled chocolate","chomp","A tiny treasure box of sweet.","edible,sweet,candy"},
+	{"bond beast","AHDJAA","DWkh",8,7,5,"84C8F4","FF84B4","a little leaf-tailed kit that evolves into a horned beast","chirp","It was always going to grow up. Today, apparently.","anime,partner,summon,evolution"},
 	{"bone","BMBAJK","Ukce",3,7,5,"F4EFE1","CFC6B0","classic cartoon bone, knobbly ends, spinning","clack","Throw it. Every dog in range betrays its owner.","body,spooky,undead"},
 	{"bone castle","EIFCII","GSh",6,1,8,"EFEBE9","212121","castle built of giant bones and skulls","chime","Rattles in the wind. Spooky.","spooky,undead"},
 	{"bone club","CMCHtK","kf",3,5,4,"E3DAC9","7A4E2D","huge leg bone club","shing","Ancient bonk technology.","primitive"},
@@ -402,5 +403,4 @@ return {
 	{"brain","BLBMGE","jleO",5,3,2,"F4A6B7","E57390","pink wrinkly brain floating, psychic rings","hum","Big brain time. Finally.","body,science,silly"},
 	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
 	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
-	{"brain freeze","ICBAKJ","jJO",3,5,2,"A6D8F2","F7F7F2","frosty swirl around head","squish","Ow ow ow. Cold.","edible,frozen"},
 }

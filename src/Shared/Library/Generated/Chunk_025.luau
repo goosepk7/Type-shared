@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"squonk","ABBJAA","jX",2,3,1,"A3A3A3","7DD3FC","lumpy wart-covered forest creature in tears","sob","Cries so much it dissolves into a puddle.","cryptid,silly"},
+	{"sriracha","IABAKK","KeP",5,7,2,"D8202B","3E8E2B","red squeeze bottle, green cap","sizzle","The rooster sauce of fire.","edible,spicy,flammable,sauce"},
+	{"st elmo's fire","GDBNOI","ScL",3,4,2,"7C4DFF","00E5FF","eerie blue-violet glow on pointy tips","buzz","Glowing spooky sparks on everything pointy.","electric,spooky"},
+	{"stab","KKBAuB","DfT",4,9,1,"D1D5DB","60A5FA","single fast thrust line ending in a sharp point glint","shing","Stick them with the pointy end.","melee,sharp"},
+	{"stable","EMCCII","GSh",2,1,6,"6D4C41","F5E6CA","low wooden building with half doors","thud","Mounts ready. Saddles up.","structure,building"},
+	{"stable hand","LMCJNA","Fh",3,5,4,"78350F","FDE68A","pitchfork, hay, boots","neigh","Brings the horses. And smells like them.","silly,mount"},
 	{"stack of pancakes","IMCCII","GFc",4,2,5,"E8B860","B5651D","tall stack, butter, syrup flow","thud","A tower of fluff. Topple it on foes.","edible,giant,breakfast"},
 	{"stadium","MEFNII","dSh",3,1,9,"43A047","F5F5F5","oval stands around a bright pitch","crowd","The crowd goes wild. Literally.","place,terrain,sport"},
 	{"staff","BLCAzI","feh",5,5,4,"5A3A1E","8E5CC2","tall gnarled staff with glowing orb","chime","You shall not pass.","magic,fantasy"},
@@ -397,10 +403,4 @@ return {
 	{"sweatband","BMAONF","F",1,7,1,"F2F2EE","C0392B","stretchy terry band","bonk","Peak sport energy.","sport"},
 	{"sweater","BMCONI","JF",1,4,2,"2E8B57","C0392B","knitted reindeer sweater","swish","Festive and slightly itchy.","clothing,holiday"},
 	{"swedish meatballs","IMBGKF","DkI",3,5,6,"7A3A2A","C8102E","meatballs with cream sauce, lingonberry","rumble","Meatballs with a flat-pack vibe.","edible,heavy"},
-	{"sweep away","KFCFOB","kI",4,7,1,"E1F5FE","FFFFFF","low wide sweeping arc of wind","swish","Clean sweep. Everybody out.","air"},
-	{"sweet and sour chicken","IMBLGI","jN",2,3,3,"E8402B","F2A62B","glossy red-orange chicken chunks","gloop","Sweet. Sour. Can't decide. Doesn't need to.","edible,sticky"},
-	{"sweet briar","NGBNMI","dFST",2,1,3,"F8BBD0","2E7D32","simple pink roses on arching thorny canes","rustle","Wild, prickly, and lovely.","plant,flower"},
-	{"sweet cherry","IGAELB","eVP",2,7,1,"7A0A1E","B0101E","dark red double cherry","pitter","Dark, sweet, and juicy.","edible,fruit,sweet"},
-	{"sweet chili sauce","IABAKK","KN",3,7,2,"E8402B","F2A62B","glossy red sauce with flakes","sizzle","Sweet first. Heat later.","edible,spicy,flammable,sauce"},
-	{"sweet dreams","KHCDOJ","FSO",2,3,2,"B39DDB","FFF8E1","soft lavender cloud with moons and stars","hush","Sleep tight. Heal up.","cute,support"},
 }

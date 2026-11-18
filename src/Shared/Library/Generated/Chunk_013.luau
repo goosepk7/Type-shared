@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hockey player","LCCJNA","Dke",5,8,5,"111827","F8FAFC","helmet, skates, hockey stick","crack","Body check! Hockey puck incoming.","sport,frozen"},
+	{"hockey puck","BMAA3F","keO",2,9,6,"24262A","4A4D52","flat black rubber disc","bonk","Slaps across ice. Slaps across faces.","sport"},
+	{"hockey stick","BMCHJK","kfI",3,7,4,"24262A","F2F2EE","long stick with angled blade","bonk","Slapshot to the face-off.","sport"},
 	{"hocus pocus","KLCAKB","jX",4,7,1,"8E24AA","FFEB3B","wand sparkle swirl with stars","poof","Hocus pocus, everybody focus.","magic,silly"},
 	{"hodag","AECJAA","Dkf",5,6,6,"365314","F5F5F4","horned frog-faced lizard beast with spikes","roar","Smells like a barbecue that went wrong.","cryptid"},
 	{"hoe","JKCHJK","fH",2,5,4,"8A929B","8B5A2B","flat angled blade on pole","clank","Weeds have one natural enemy.","tool,garden"},
@@ -355,6 +358,7 @@ return {
 	{"ink strike","KIBOKI","Dk",8,9,1,"E8E2D6","B3172B","world flashes to black-and-red ink for one hit","thump","Next hit gets its own page.","anime,manga"},
 	{"inkanyamba","ADEJCC","kLB",8,5,7,"1E3A8A","FDE047","huge horse-headed eel of storms","thunder","When it's angry, storms happen.","mythical,storm"},
 	{"inkcap","NIBLMI","jSP",3,1,2,"ECEFF1","212121","tall shaggy cap melting into black ink","poof","Melts into ink. Gross. Effective.","plant,fungus"},
+	{"inkfold flock","AFBJLB","ARNVh",5,8,4,"F2EAD8","E24634","a flock of folded paper birds with vermilion ink seals","flutter","Eight slips, eight folds, eight very small grudges.","anime,paper,summon,swarm"},
 	{"innkeeper","LMCJNA","Fc",3,4,4,"78350F","FDE68A","apron, mug, rag","ding","Rooms available. Rumors free.","merchant"},
 	{"insect","AGAJFB","AQMP",2,7,1,"4E6B2A","C9A227","six-legged bug, antennae, shiny green shell","buzz","Six legs. Zero respect for picnics.","insect"},
 	{"inside","MMCIlI","GFS",2,1,7,"FDE68A","7C4A1E","cosy four walls with a lamp, sofa and closed curtains","hush","It is raining. We have snacks. We live here now.","household"},
@@ -399,8 +403,4 @@ return {
 	{"ironwood","NKECMI","GWkS",5,1,10,"455A64","689F38","dark metallic-looking trunk","rustle","Tougher than an axe.","plant,tree,heavy"},
 	{"irrigation canal","MBDLII","SIN",2,1,7,"4FC3F7","8D6E63","straight channel of water between banks","thud","Water where it is needed. Mostly on enemies.","structure,farm"},
 	{"island","MBENII","GFSN",3,1,8,"E6C27A","43A047","sandy island with palm trees","rumble","Surrounded by water. And sharks, probably.","place,terrain,aquatic"},
-	{"isopod","ABCJRA","GfT",3,4,7,"B8B0A0","E8E0D0","huge armored deep-sea pill bug","clack","A pill bug the size of a cat.","crustacean,aquatic,armored,deepsea"},
-	{"it","AICJGD","jQWZ",5,4,5,"374151","A3E635","shapeless something under a sheet, one tentacle poking out","gurgle","What is it? Nobody knows. It is coming.","spooky,silly"},
-	{"italian ice","ICBAKJ","JeN",3,5,2,"F2D23A","F7F7F2","cup of smooth fruity ice","squish","Ice that went to culinary school.","edible,frozen,sweet"},
-	{"itch","KJAAKB","jd",1,8,1,"C0CA33","FFFFFF","tiny wiggly itch lines","scritch","Can't stop scratching.","silly"},
 }

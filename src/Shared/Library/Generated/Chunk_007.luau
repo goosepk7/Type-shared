@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
 	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 	{"crimson cataclysm","KAFGKI","KEe",10,3,1,"D6162E","FFBA48","crimson circles stacked in the sky over a huge blast","explosion","One spell a day, and it is always this one.","anime,isekai,explosion,ultimate"},
 	{"crimson repulse","KLBAKB","EkIe",8,10,1,"FF2834","46060E","a red pinpoint that blasts everything away from itself","boom","Go away. Everything. Now.","anime,magic,force"},
@@ -402,5 +403,4 @@ return {
 	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},
 	{"djinn king","ALEJNJ","klhY",8,6,6,"1E3A8A","FACC15","towering genie with jeweled turban","whoosh","Wishes granted. With terms and conditions.","magic,royal,boss"},
 	{"dna","BGBOCK","jWFV",4,5,3,"3B82F6","EF4444","twisting blue and red ladder spiral, rungs glowing","hum","You have your mother's eyes. And her right hook.","science"},
-	{"doberman","AMCJAA","DQf",5,8,4,"1A1414","A0582A","sleek black-tan dog, pointy ears","bark","Built for speed and side-eye.","mammal,pet"},
 }

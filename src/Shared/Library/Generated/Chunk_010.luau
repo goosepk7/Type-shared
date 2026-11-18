@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
 	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
 	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
@@ -117,6 +118,7 @@ return {
 	{"fox kit","AMAJAA","jfb",1,7,2,"E07A3A","FFF4E6","fluffy orange baby fox","yip","Tiny. Fluffy. Already scheming.","mammal,wild,cute"},
 	{"fox ninja","AIBJAA","ZTY",3,9,2,"EA580C","111827","fox in a black ninja mask","whoosh","Sneaky fox. Sneakier ninja.","stealth"},
 	{"foxfire","FGBGKJ","jScR",3,5,2,"7DF9C3","E8FFF6","bobbing pale-green flame wisps","chime","Follow the pretty light. Do not.","fire,spooky"},
+	{"foxfire mantle","KADOKI","KDkf",8,9,3,"E2461A","FFB846","a blazing fox-spirit cloak with flame tails and chakra claws","roar","Borrowed fire. Very fluffy.","anime,ninja,fire,transformation"},
 	{"foxglove","NJBNMI","dFSM",3,1,2,"AB47BC","FCE4EC","tall spike of spotted bell blooms","rustle","Pretty. Also poisonous. Mostly poisonous.","plant,flower,spooky"},
 	{"foxtail","NGANMI","dFSN",1,1,1,"C0CA33","9E9D24","fuzzy grass heads like little tails","rustle","Sticks to socks. And enemies.","plant,flower"},
 	{"foxtail lily","NACNMI","dFS",2,1,2,"FF9800","FFE0B2","towering bottlebrush flower spike","rustle","A candle made of flowers.","plant,flower"},
@@ -401,6 +403,4 @@ return {
 	{"gharial","ABDJAC","fTHOB",7,5,8,"6A7A5A","C8C8A8","super thin long snout, bulb nose","snap","Its snout is basically chopsticks.","reptile,predator,aquatic"},
 	{"ghee","IMBLGI","kSO",2,3,2,"F2C24A","F8E58C","jar of golden liquid fat","squeak","Golden, glossy, and very slippery.","edible,slippery,silly,dairy"},
 	{"ghost","AICJGJ","jAZO",4,6,2,"E5E7EB","A5B4FC","floaty sheet shape, hollow eyes, wavy tail","wail","Goes BOO. Very proud of that.","undead,spooky,halloween,ghost"},
-	{"ghost bat","AIBJDB","jiA",2,7,1,"E8E0D8","C8B8A8","pale ghostly bat","screech","Pale, spooky, and hungry.","mammal,nocturnal,spooky"},
-	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
 }

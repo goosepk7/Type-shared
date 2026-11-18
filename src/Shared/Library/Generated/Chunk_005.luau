@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cargo ship","DBFKHC","GDkgB",7,2,10,"C62828","1E88E5","long hull stacked with coloured crates","horn","Delivers twenty thousand crates of pain.","vehicle,aquatic"},
 	{"caribbean","MBFNII","FSh",4,1,8,"26C6DA","F4E4BC","clear turquoise water and palm islands","rumble","Pirates welcome. Obviously.","place,geography,pirate"},
 	{"carnation","NGBNMI","dFS",2,1,2,"F48FB1","43A047","frilly ruffled bloom","rustle","Fancy frills for fancy fights.","plant,flower"},
 	{"carne asada","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled sliced beef","thud","Grilled beef, ready for tacos.","edible,savory"},
@@ -402,5 +403,4 @@ return {
 	{"clearing","MGDNII","FSc",4,1,5,"A3E635","FDE68A","sunlit grassy circle ringed by trees, butterflies","tweet","Suspiciously peaceful. Boss fight peaceful.","place,forest"},
 	{"cleats","BMBONF","DT",1,8,2,"24262A","F2F2EE","studded sport shoes","bonk","Grip the turf. Grip the foe.","sport"},
 	{"cleave","KKDHJB","kfT",7,5,3,"90A4AE","ECEFF1","huge sweeping arc hitting many","shing","One swing. Many problems solved.","sharp,heavy"},
-	{"cleaver","CKBHrK","fV",4,6,4,"8A929B","24262A","rectangular heavy chopping blade","shing","Chop first, ask questions later.","medieval,sharp,kitchen"},
 }

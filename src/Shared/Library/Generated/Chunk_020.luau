@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plum tomato","IMBGKF","EkeP",3,4,3,"D72B2B","3E7A2B","egg-shaped red tomato","splat","The tomato that went to cooking school.","edible"},
+	{"plum tree","NGDCMI","GFSc",3,1,6,"6D4C41","8E24AA","small tree with purple fruit","rustle","Sweet fruit, sour attitude.","plant,tree"},
+	{"plumb bob","JKAAJK","ke",1,6,5,"B58A3A","B89B6A","pointed weight on string","clank","Points straight down. At you.","tool"},
+	{"plumbago","NGBNMI","dFSN",1,1,2,"90CAF9","2E7D32","clusters of pale blue phlox-like flowers","rustle","Sky blue and sticky seeds.","plant,flower"},
 	{"plumber","LBCJNA","UH",4,6,5,"DC2626","1E3A8A","overalls, cap, plunger, big moustache","splash","Unclogs pipes. Jumps on things.","silly"},
 	{"plumbing","EBCMII","IeN",4,1,5,"B87333","38BDF8","tangle of copper pipes with one joint spraying water","gurgle","The plumber said Tuesday. Which Tuesday? Unknown.","household"},
 	{"plumeria","NGBNMI","dFSc",2,1,2,"FFFFFF","FFEB3B","waxy five-petal tropical star","rustle","Smells like a beach holiday.","plant,flower"},
@@ -399,8 +403,4 @@ return {
 	{"radiance","FHDNOI","KFS",6,5,3,"FFE58A","FFFFFF","blinding golden aura dome","hum","Glowing with confidence. And photons.","holy"},
 	{"radiant burst","FHDGKI","KEF",7,8,1,"FFF176","FFFFFF","blinding golden explosion of light","boom","Shine so hard it hurts.","holy,explosive"},
 	{"radiated tortoise","AMBJUA","GN",2,2,8,"1E1E1E","F2D82A","star-rayed high shell","hiss","Starburst patterns on its shell.","reptile,armored"},
-	{"radiation","FJDNOI","iSM",6,4,3,"C3FF2E","1C2A08","pulsing green glow field, ticking motes","tick","Gives you a glow. Not the good kind.","toxic"},
-	{"radiation blob","AJCJGF","WSM",5,2,5,"84CC16","FDE047","glowing neon blob with smoke","bubble","Glows in the dark. Don't hug.","alien,toxic"},
-	{"radicchio","IGBAKF","Fke",3,5,3,"8A1E3E","F7F2EC","round red-white leafy head","thud","A purple lettuce bomb.","edible,vegetable,healthy"},
-	{"radio","BDBFKI","jdO",2,3,4,"8E9196","C9CED4","chunky box with speakers and handle","blare","Turn it UP.","tech,music,loud"},
 }

@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rose","NGBNMI","dFST",3,1,3,"C62828","2E7D32","layered red bloom, thorny stem","rustle","Smells sweet. Stings worse.","plant,flower,sharp"},
+	{"rose hedge","NGCCMI","GST",3,1,6,"1B5E20","C62828","hedge spotted with red roses and thorns","rustle","Pretty from afar. Ouch up close.","plant"},
+	{"rosella","AMBJDB","jdA",2,6,2,"E8301E","2A6AE8","red-blue-yellow scalloped parrot","squawk","Dressed like a stained glass window.","bird,jungle,silly"},
+	{"rosemary","IGBOMI","WF",2,4,3,"4E6B4A","8A9A7A","needle-leaf sprigs","crunch","Smells like a roast and a forest.","edible,vegetable,healthy,herb"},
+	{"rosti","IMBAKK","Uke",3,7,2,"D9A04A","F2D07A","golden crispy potato cake","whoosh","A golden potato frisbee.","edible"},
+	{"rosy boa","AMBJCD","fHO",2,4,6,"E8A0A0","8A6A4A","pinkish small boa","hiss","Pink, calm, and squishy.","reptile"},
 	{"rosy maple moth","AMAJFB","jdA",1,5,1,"F2A0C0","F2E07A","pink and yellow fluffy moth","flutter","A strawberry lemonade moth.","insect,cute"},
 	{"rot","FJBNOI","iSM",3,2,3,"5E4A2C","9BA55A","mushy brown-green ground patch","squelch","Old fruit energy.","toxic"},
 	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
@@ -397,10 +403,4 @@ return {
 	{"seriema","AMCJDA","Dkf",4,8,5,"C8B08A","E8301E","long legs, feather tuft","boom","Smashes snakes on rocks.","bird,flightless"},
 	{"serow","AMCJAA","df",3,4,4,"3A3A3A","8A7A6A","goat-antelope with donkey ears","bleat","Goat, donkey, antelope. Pick one.","mammal,farm"},
 	{"serrano","IABAKK","KeP",5,7,2,"3E8E2B","C8202B","slender green pod","sizzle","Thin, green, and sneaky hot.","edible,spicy,flammable,pepper"},
-	{"serval","AMCJAA","UZfT",4,7,3,"D9B35A","1F1A12","tall legs, huge ears, spotted coat","hiss","Mostly ears and legs. And attitude.","mammal,predator,wild"},
-	{"servant","LMCJNA","GQF",2,5,3,"1F2937","F8FAFC","tidy helper with a silver tray and white gloves","ding","You rang? I brought snacks and a shield.","royal,support"},
-	{"service tree","NGCCMI","GWFkS",2,1,5,"5D4037","FFFFFF","slim tree with white spring blossom","rustle","Sweet berries in June.","plant,tree"},
-	{"sesame seeds","IMAELB","eVP",2,7,1,"F2E8C8","D8C8A0","sprinkle of tiny teardrops","pitter","Open sesame.","edible"},
-	{"seven layer bar","IMBLKI","dSc",2,3,3,"8A5A2A","F2E8C8","layered dessert bar","chomp","Seven layers. Seven wonders.","edible,sweet,dessert"},
-	{"severing stare","KIBAKI","jie",6,10,2,"FF3B3B","1E1E26","red glowing eyes, wrapping cloth, silenced magic","hum","Don't blink. Neither will they.","anime,hero,silence"},
 }

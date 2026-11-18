@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doberman","AMCJAA","DQf",5,8,4,"1A1414","A0582A","sleek black-tan dog, pointy ears","bark","Built for speed and side-eye.","mammal,pet"},
 	{"dobsonfly","AMBJFB","dAfP",2,6,1,"6A5A44","C8B88A","huge flying bug with giant mandibles","buzz","Big scary jaws. Mostly harmless.","insect"},
 	{"doctor","LMCJNA","GFe",3,4,5,"F8FAFC","0EA5E9","white coat, stethoscope, clipboard","beep","Says ahh. Gives a lollipop.","healer"},
 	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
@@ -402,5 +403,4 @@ return {
 	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
 	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
 	{"entelodont","AMDJAA","DkO",7,4,8,"6A4A3A","C89A7A","giant pig with huge jaws","roar","A pig the size of a cow. Grumpy.","mammal,extinct,ancient,heavy"},
-	{"entropy","FLCNOI","jiN",5,3,3,"6B5E7A","B8A8C8","crumbling, fading, glitching area","crackle","Everything falls apart eventually.","chaos"},
 }

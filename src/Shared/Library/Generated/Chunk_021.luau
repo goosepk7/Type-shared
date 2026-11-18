@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"radiation","FJDNOI","iSM",6,4,3,"C3FF2E","1C2A08","pulsing green glow field, ticking motes","tick","Gives you a glow. Not the good kind.","toxic"},
+	{"radiation blob","AJCJGF","WSM",5,2,5,"84CC16","FDE047","glowing neon blob with smoke","bubble","Glows in the dark. Don't hug.","alien,toxic"},
+	{"radicchio","IGBAKF","Fke",3,5,3,"8A1E3E","F7F2EC","round red-white leafy head","thud","A purple lettuce bomb.","edible,vegetable,healthy"},
+	{"radio","BDBFKI","jdO",2,3,4,"8E9196","C9CED4","chunky box with speakers and handle","blare","Turn it UP.","tech,music,loud"},
 	{"radio tower","EDDMII","GjSeL",4,1,5,"E53935","F5F5F5","tall lattice mast, red and white bands","static","Broadcasting static at your enemies.","structure,defense,tower"},
 	{"radish","IEBAJK","Ke",3,6,4,"D23A4A","F7F2F0","round red root, white tail","crunch","Small, red, and a little spicy.","edible,vegetable,healthy"},
 	{"raft","DBBKHC","DkgB",2,4,4,"FFB300","8D6E63","logs lashed with rope, little sail","splash","Built from twelve logs and hope.","vehicle,aquatic,silly"},
@@ -62,6 +66,7 @@ return {
 	{"rambutan","IGAAKF","Fke",3,6,2,"D4302B","7FAE3A","red ball covered in soft hairs","splat","A fruit having a bad hair day.","edible,fruit,sweet"},
 	{"ramen","IABOGI","KFS",3,4,3,"E8C070","C8502B","deep bowl, curly noodles, egg, chashu","slurp","A steaming bowl of soul fuel.","edible,warm,healthy"},
 	{"ramp","EMCLII","Ukl",3,1,6,"9CA3AF","F97316","wooden wedge ramp with an orange arrow up","whee","Anything is a jump if you believe.","sport,gaming"},
+	{"rampant frame","AKEJXA","Dkfh",8,7,5,"E2DCCC","46E6D2","a hunched bone-white war-frame with three-claw hands","roar","Do not ask who is piloting.","anime,mech,summon,berserk"},
 	{"rampart","EEECII","GSN",3,1,9,"7CB342","8D6E63","sloped grassy earth bank, stone top","thud","Built with lots of shovelling.","structure,defense"},
 	{"ranch dressing","IMBLGI","ScN",2,3,2,"F7F4EC","7DBE3A","white creamy dressing, herb flecks","squeak","Goes on everything. Everything.","edible,slippery,silly,sauce"},
 	{"randomize","KLCGKE","UjV",4,7,1,"FF4081","00E5FF","cube flickering through random colours","boing","Who knows! Not even this spell.","chaos,silly"},
@@ -230,6 +235,7 @@ return {
 	{"rifle","CKCAwI","Te",5,6,4,"2C3539","5A3A1E","long barrel, shoulder stock","bang","Long range, steady hands.","modern,ranged"},
 	{"rift","KLDNOI","jHY",6,4,5,"3D1A78","18FFFF","jagged tear in the air leaking starlight","warp","Reality has a rip in its jeans.","space,magic"},
 	{"rift eye","KICN5I","HeOY",7,5,2,"9660FF","18102F","a twisting whirl of space that swallows whoever is inside","hum","Where did they go? Somewhere quieter.","anime,ninja,space"},
+	{"rift fang","KFDF6I","DklT",8,10,3,"E8F4FF","E8C46A","a fang-blade cleave, three wind rifts tear the ground","boom","Find where the winds collide. Cut there.","anime,sword,wind"},
 	{"rigel","MHDAKJ","KTe",7,7,6,"90CAF9","FFFFFF","brilliant blue supergiant","twinkle","Blue. Bright. Brutal.","space,star"},
 	{"right","KMBF6B","kIO",3,7,1,"EF4444","FFFFFF","big red arrow pointing right, shoving sideways","whoosh","Always right. Even when left.","silly"},
 	{"right whale","ABFJEC","kIB",8,2,9,"1E2024","D8D2C8","bumpy callosities on head","whalesong","Gentle, slow, and very bumpy.","mammal,aquatic,ocean,heavy"},
@@ -397,10 +403,4 @@ return {
 	{"rope ladder","BMCCII","l",1,3,2,"B89B6A","8B5A2B","dangling ladder of rope","thud","Climb up. Climb away.","object"},
 	{"rope swing","EMBLII","kS",1,1,3,"8D6E63","212121","rope dangling from a branch with a tyre","thud","Swing out. Kick enemies.","structure,silly"},
 	{"roper","AECLII","cfH",5,1,8,"78716C","FBBF24","rock stalagmite with sticky tendrils","chomp","Pretends to be a rock. Very convincing.","dungeon"},
-	{"rose","NGBNMI","dFST",3,1,3,"C62828","2E7D32","layered red bloom, thorny stem","rustle","Smells sweet. Stings worse.","plant,flower,sharp"},
-	{"rose hedge","NGCCMI","GST",3,1,6,"1B5E20","C62828","hedge spotted with red roses and thorns","rustle","Pretty from afar. Ouch up close.","plant"},
-	{"rosella","AMBJDB","jdA",2,6,2,"E8301E","2A6AE8","red-blue-yellow scalloped parrot","squawk","Dressed like a stained glass window.","bird,jungle,silly"},
-	{"rosemary","IGBOMI","WF",2,4,3,"4E6B4A","8A9A7A","needle-leaf sprigs","crunch","Smells like a roast and a forest.","edible,vegetable,healthy,herb"},
-	{"rosti","IMBAKK","Uke",3,7,2,"D9A04A","F2D07A","golden crispy potato cake","whoosh","A golden potato frisbee.","edible"},
-	{"rosy boa","AMBJCD","fHO",2,4,6,"E8A0A0","8A6A4A","pinkish small boa","hiss","Pink, calm, and squishy.","reptile"},
 }

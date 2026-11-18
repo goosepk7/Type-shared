@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toilet paper launcher","CMCMxK","deN",1,6,3,"F2F2EE","8E9196","tube cannon of paper rolls","boing","Decorates trees. And enemies.","prank,silly"},
+	{"tokay gecko","AMBJAA","Cf",2,7,2,"6A8AA0","E8701E","blue-grey gecko with orange spots","tokay","Screams its own name. Bites.","reptile"},
+	{"token","BKAA3K","Uce",1,8,4,"D4AF37","B45309","brass coin stamped with a star and NO CASH VALUE","clink","No cash value. Much smack value.","gaming,shiny"},
+	{"tokoloshe","AIAJNA","jZb",2,7,2,"57534E","22C55E","tiny hairy mischief maker","cackle","Hides under beds. Why everyone uses bricks.","spooky"},
+	{"toll booth","EMBCII","GSN",1,1,6,"FFB300","1A1A1A","small booth with a barrier arm","thud","Pay up or turn around.","structure,building,silly"},
+	{"tom kha","IBBOGI","FS",3,4,3,"F2E8C8","E8A040","coconut soup with lime leaves","slurp","Creamy coconut soup, gently spicy.","edible,warm,healthy"},
 	{"tom yum","IABOGI","KF",3,4,3,"E8602B","C8302B","red spicy sour soup","slurp","Spicy, sour, and sinus-clearing.","edible,warm,healthy"},
 	{"tomahawk","CKBAsK","feV",4,8,3,"8A929B","8B5A2B","light throwing axe","chop","Thrown end over end.","medieval,sharp"},
 	{"tomato","IMBGKF","Eke",3,4,3,"E5302B","3E8E2B","round red globe, green star cap","splat","The classic heckling projectile.","edible,fruit"},
@@ -282,6 +288,7 @@ return {
 	{"twin swords","CKCHJK","fTV",6,8,4,"C9CED4","1F2F55","matched pair of curved swords","shing","Double the slash, double the flair.","fantasy,sharp"},
 	{"twinkle","FHAEOJ","dF",1,5,1,"FFF59D","FFFFFF","tiny twinkling star sparks","chime","Twinkle twinkle.","cute"},
 	{"twins","LMCJNA","jV",3,6,4,"F472B6","60A5FA","two identical kids","ding","Two of them. Twice the trouble.","family"},
+	{"twinstep fusion","KHCOKI","DWkf",8,7,4,"FFE7A0","5FE0D0","you and a light twin dance, then fold into one","warp","Two steps, one fighter. Mind the fingertips.","anime,dance,buff,transformation"},
 	{"two liter bottle","IBCFKI","EkI",4,7,1,"3A1A0C","3E8E2B","big plastic soda bottle","fizz","A pressurized fizz cannon.","edible,drink,fizzy"},
 	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
 	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
@@ -396,11 +403,4 @@ return {
 	{"vegetable tray","IGBOKI","F",2,5,3,"ED9121","7DBE3A","platter of cut vegetables","crunch","The healthy part of the party.","edible,healthy"},
 	{"veggie burger","IGBOKI","F",2,5,3,"7DBE3A","C8762B","bun with green-brown patty","crunch","A burger that loves vegetables.","edible,healthy"},
 	{"veggie chips","IMBAKK","Uke",3,7,2,"E8434F","ED9121","colorful crispy slices","whoosh","Healthy-ish chips.","edible,snack"},
-	{"vehicle","DMCKeL","Dkg",4,7,5,"F59E0B","1F2937","generic boxy buggy with mismatched wheels and one headlight","engine","It has wheels. Probably. Get in.","vehicle,mechanical"},
-	{"veil","BIBIVJ","GjZ",2,5,2,"F8FAFC","C4B5FD","drifting gauzy see-through curtain of lace","whisper","Now you see me. Now you kind of see me.","clothing,stealth"},
-	{"veiled lady","NJBLMI","ScM",2,1,2,"F5F5F5","FFF8E1","mushroom with a lacy white skirt","poof","Dressed up for the wedding. Smells awful.","plant,fungus"},
-	{"vein","BBBBCD","iTN",3,6,2,"3A6FD8","D7263D","branching blue and red tubes pulsing","squirt","The scenic route for blood.","body,science"},
-	{"velocipede","DMBKHL","Dkg",2,5,2,"6D4C41","9E9E9E","wooden bike with no pedals","clatter","Push with your feet. Look silly.","vehicle,ancient,silly"},
-	{"velociraptor","AMCJBA","DQfT",5,9,3,"8A6A3A","D8B07A","feathered body, sickle toe claw","screech","Turkey-sized. Smart. Opens doors.","dinosaur,extinct,reptile,predator"},
-	{"velocity","KFCO6B","DkT",5,10,1,"22D3EE","F8FAFC","arrow stretching longer and longer with a sonic cone","zoom","Speed, but it did the homework.","science,speed"},
 }
