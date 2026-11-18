@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rain tree","NBECMI","GWFkS",3,1,8,"6D4C41","43A047","huge umbrella canopy","rustle","Folds its leaves before rain. Clever.","plant,tree"},
+	{"rainbow","GHDBKI","jFe",5,6,3,"FF5252","40C4FF","bright seven-colour arc landing on target","chime","Pot of gold not included.","cute,holy"},
+	{"rainbow boa","AMCJCD","fHaO",4,4,6,"C8603A","6AE8E0","iridescent orange snake","hiss","Shimmers like a rainbow.","reptile"},
+	{"rainbow bridge","EHECII","GFSY",4,1,6,"FF5252","40C4FF","shimmering arch of rainbow light","thud","Leads somewhere magical. Probably.","magic,mythical"},
+	{"rainbow cake","IMCLKI","dSc",2,3,3,"E8434F","4FA3E8","slice with rainbow layers","chomp","Every colour, layered.","edible,sweet"},
+	{"rainbow candy","IMAELB","jeP",2,7,1,"E8434F","4FA3E8","pile of colorful round candies","pitter","Taste every colour.","edible,sweet,candy"},
+	{"rainbow carrots","IEBAJK","FTe",3,6,4,"ED9121","5E1A4E","bundle of multicolor carrots","crunch","Carrots in every colour.","edible,vegetable,healthy"},
 	{"rainbow dragon","AHEKCB","jAeg",7,7,6,"EF4444","3B82F6","serpent dragon with rainbow-banded scales","chime","Breathes rainbows. Painfully.","mythical,reptile"},
 	{"rainbow eucalyptus","NLDCMI","GjWkS",3,1,7,"7E57C2","43A047","trunk striped in every colour","rustle","A tree that forgot to stop painting.","plant,tree"},
 	{"rainbow fire","FACFOB","KjP",6,7,2,"FF4081","40C4FF","wave of multicoloured flames","whoosh","Fabulous and flammable.","fire,cute"},
@@ -396,11 +403,4 @@ return {
 	{"royal chef","LACJNA","KFe",3,5,4,"F8FAFC","DC2626","tall toque with crown emblem","sizzle","Feasts for kings. Leftovers for you.","royal,food"},
 	{"royal decree","KLCAKI","jIe",6,10,2,"E0283C","FFD7DC","meet their eyes, give an order, and they walk away","chime","You will walk away. Now.","anime,command,eyes"},
 	{"royal food taster","LMCJNA","dM",3,4,3,"7C3AED","F8FAFC","nervous figure holding a spoon","gulp","Tastes everything first. Brave job.","royal,silly"},
-	{"royal guard","LKCJNA","GfO",5,3,7,"DC2626","111827","tall bearskin hat, red coat, spear","clang","Never smiles. Never blinks. Never moves.","royal,warrior"},
-	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
-	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
-	{"rubber","BMBI3G","GUa",2,6,6,"1F2937","F472B6","stretchy black sheet snapping back like a trampoline","boing","I am rubber. You are glue.","toy,bouncy"},
-	{"rubber band","BMAAJK","eO",1,9,1,"D2B48C","D2B48C","stretchy loop","tap","Snap! Right on the wrist.","office"},
-	{"rubber band ball","BMBG3K","Ue",2,7,3,"D2B48C","C0392B","ball of a thousand bands","tap","Bounces like it's angry.","office"},
-	{"rubber band gun","CMBAwI","eO",1,9,2,"8B5A2B","D2B48C","wooden clothespin pistol","thwip","Snap! Right on the nose.","toy,silly"},
 }

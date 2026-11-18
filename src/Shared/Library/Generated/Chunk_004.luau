@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
@@ -81,6 +82,7 @@ return {
 	{"bubble breath","FBBFOB","Udl",2,5,1,"B3E5FC","F8BBD0","stream of floating bubbles","pop","Blowing bubbles. Aggressively.","silly,aquatic"},
 	{"bubble car","DMAKHL","Dkg",2,5,3,"7FC8A9","F5F5F5","egg-shaped one-seat car, front door","engine","Parks in a shoebox.","cute,silly"},
 	{"bubble coral","ABCCMI","GWTM",3,1,6,"E8E8D0","F2F2E8","bubbly grape coral","crackle","Covered in bubbles. Stingy.","aquatic,ocean,reef"},
+	{"bubble gum","IMCIGI","GN",3,3,3,"F48CBE","FFD1E6","a giant pink bubblegum bubble that pops into sticky strands","pop","Chew, blow, hide.","cartoon,silly,shield"},
 	{"bubble gun","CBBFwI","dAeN",1,6,1,"47D7E8","C3A6E8","toy gun with bubble wand nose","bloop","Weaponised whimsy.","toy,silly"},
 	{"bubble helmet","BBBONI","GB",1,5,2,"BFE6F2","47D7E8","glass bowl helmet full of water","thud","Breathe underwater. Look silly.","silly"},
 	{"bubble machine","OBCD1I","dAP",1,3,3,"47D7E8","F2F2EE","box blowing streams of bubbles","bloop","Party trick. Also distraction.","party,silly"},
@@ -151,6 +153,7 @@ return {
 	{"bunker","EEDCII","GCSe",4,1,10,"9E9E9E","556B2F","low concrete box half buried, slit window","thud","Nothing gets in. Not even sunlight.","structure,defense,heavy"},
 	{"bunny chow","IABNGI","KF",4,4,2,"D9A04A","E8762B","hollow bread loaf of curry","sizzle","A loaf of bread full of curry.","edible,spicy"},
 	{"bunny ear cactus","NEBLMI","GST",2,1,5,"9CCC65","FFF59D","paddles like rabbit ears","thud","Cute ears. Spiky fluff.","plant,desert,sharp,cute"},
+	{"bunny hop","KFBONG","D",2,10,1,"7ED957","F7FFF0","springy hops that speed up with every landing","boing","Gotta go fast. Hop hop hop.","gaming,shooter,movement"},
 	{"bunny warrior","AMBJAG","UDf",3,9,2,"F8FAFC","F472B6","bunny with headband and tiny sword","chitter","Hops in. Hits. Hops out.","warrior,cute"},
 	{"bunsen burner","BAAM1I","K",2,1,3,"C9CED4","2F6FD1","small gas burner with blue flame","bubble","Science-grade toasting.","science"},
 	{"bunting","AMAJDB","dA",1,7,1,"2A5AE8","3A3A8A","all-blue small bird","tweet","So blue it's basically paint.","bird,cute"},
@@ -400,7 +403,4 @@ return {
 	{"carne asada","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled sliced beef","thud","Grilled beef, ready for tacos.","edible,savory"},
 	{"carnitas","IMAELB","ce",2,7,1,"B0602B","F2C870","crispy shredded pork","pitter","Crispy, juicy shreds.","edible"},
 	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
-	{"carnotaurus","AMDJBA","DkfT",7,8,7,"B8401E","3A2A1E","bull horns, tiny arms, fast","roar","A bull and a T rex had a sprinter.","dinosaur,extinct,reptile,predator"},
-	{"carolina reaper","IABAKK","KESP",8,7,2,"B0101E","6B0A0A","wrinkly red pod, scorpion tail","sizzle","The hottest pepper. A fire spirit in pod form.","edible,spicy,flammable,pepper"},
-	{"carousel","EMDNIK","jkS",3,1,6,"E53935","FFD54F","spinning canopy with painted horses","organ","Round and round and dizzy.","structure,building,silly"},
 }

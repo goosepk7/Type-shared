@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
+	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
+	{"snapper","ABBJEC","dB",2,6,1,"D84A3A","F2D8D0","rosy red fish","splash","Snappy name. Chill fish.","fish,aquatic"},
+	{"snapping turtle","AMBJUA","GfNOB",4,2,8,"4A4A30","8A7A5A","spiky shell, huge beak","hiss","Snaps fingers. Not the cool way.","reptile,armored"},
+	{"snapvine","NGCLMI","SfHN",4,3,4,"33691E","E53935","coiled vine tipped with tiny jaws","chomp","Every vine has teeth. Every one.","plant,carnivorous"},
+	{"snare","BMBLII","lHO",2,1,3,"B89B6A","8B5A2B","hidden rope loop on bent sapling","snap","Upsy-daisy!","trap,defense"},
+	{"snatch","KMBBKI","Hb",3,9,1,"8D6E63","FFFFFF","glowing hand reaching and grabbing","swish","Gotcha!","silly"},
+	{"sneak","KIBOKA","DZ",2,6,2,"455A64","90A4AE","tiptoeing shadowy outline","tiptoe","Tiptoe. Tiptoe. Gotcha.","stealth"},
 	{"sneakers","BMBONI","D",1,9,2,"F2F2EE","C0392B","chunky running sneakers","swish","Gotta go fast.","clothing"},
 	{"sneeze","KFBFOB","jk",3,10,1,"E1F5FE","C5E1A5","cone of droplets and wind from the caster","achoo","Bless you. And everyone in front.","silly,gross"},
 	{"snickerdoodle","IMBAKK","Uke",3,7,2,"E0C08A","C8803A","crackled cinnamon cookie","whoosh","Fun to say. Fun to throw.","edible"},
@@ -395,12 +403,4 @@ return {
 	{"staple gun","JKAAwI","Te",2,8,3,"24262A","C9CED4","heavy-duty stapler with grip","thunk","Kachunk. Pinned.","modern,ranged"},
 	{"stapler","BMAAJK","Te",1,7,4,"C0392B","24262A","chunky office stapler","tap","Ka-chunk. Pinned.","office"},
 	{"staples","BKAAwB","TeN",2,9,2,"C0C7CE","EF4444","red stapler snapping out a stream of tiny silver staples","click","Ka-chunk. Ka-chunk. Attached.","school,sharp"},
-	{"star","MHCAKJ","TeVO",5,6,5,"FFF59D","FFFFFF","five-point glowing twinkle","twinkle","Twinkle twinkle, little projectile.","space"},
-	{"star anise","IMBAKK","Te",3,7,2,"6B3A1E","A86A3A","eight-pointed brown star pod","whoosh","A spice shaped like a throwing star.","edible,spice"},
-	{"star blade","FHCHrB","KfT",6,8,2,"FFF59D","5C6BC0","sword shimmering with tiny stars","chime","Forged in a star. Probably.","space,sharp"},
-	{"star bolt","FHBAKB","KTe",5,9,1,"FFF9C4","FFD54F","spinning golden star streak","zing","Twinkle, twinkle, bonk.","space"},
-	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
-	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
-	{"star cactus","NEALMI","GST",2,1,5,"7CB342","FFFFFF","flat star-shaped spineless cactus","thud","Spineless. Still judgmental.","plant,desert,cute"},
-	{"star cluster","MHEELJ","TeVP",7,4,7,"E1F5FE","FFF59D","swarm of tiny glittering stars","rumble","A whole handful of stars, thrown at once.","space"},
 }

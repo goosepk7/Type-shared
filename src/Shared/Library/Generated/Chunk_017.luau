@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"minotaur","AEDJNA","DkfO",7,6,7,"7C2D12","E7E5E4","bull head, giant arms, labyrinth axe","roar","Lost in a maze. Taking it out on you.","mythical"},
+	{"minotaur chief","AEEJNA","DkfO",8,6,8,"451A03","FACC15","giant bull warrior with gold nose ring","roar","Runs the maze. Owns the maze.","mythical,boss"},
+	{"minotaur gladiator","AEDJNA","Dkf",7,6,7,"7C2D12","CA8A04","minotaur in gladiator armor","roar","Undefeated. Unshaven.","mythical,warrior"},
+	{"mint chocolate chip","ICBAKJ","JeN",3,5,2,"B8E8D0","3A2416","mint green scoop, dark chips","squish","Toothpaste's tastier cousin.","edible,frozen,sweet"},
+	{"mint humbug","IMAELB","eVP",2,7,1,"3A2A1E","F7F7F2","striped pillow candy","pitter","Bah humbug. Very minty.","edible,sweet,candy"},
 	{"mint plant","NCANMI","JFS",1,1,2,"4CAF50","B9F6CA","fresh bright toothed leaves","rustle","Fresh breath. Fresh start.","plant,herb"},
 	{"mint sauce","IMBNGI","SNP",2,4,1,"5E9E3A","B8E8D0","green glossy sauce","splat","Cool green sauce.","edible,sauce"},
 	{"mint tea","IABOKI","KF",2,5,2,"7DBE3A","F2E8C8","glass of tea with mint","slurp","Cool and warm at once.","edible,drink,warm"},
@@ -398,9 +403,4 @@ return {
 	{"nidhogg","AIEJCH","Cif",8,4,8,"292524","65A30D","black serpent dragon gnawing roots","roar","Chews on the roots of the world.","mythical,reptile,norse"},
 	{"niece","LMBJNA","jde",2,7,3,"F472B6","F2D0B4","small girl covered in glitter with a marker pen","giggle","Drew on the walls. Calls it a gift.","family,cute"},
 	{"nigella","NGBNMI","jdFS",1,1,1,"64B5F6","7CB342","blue flower in a cage of fronds","rustle","Love in a mist. Confusing in a fight.","plant,flower"},
-	{"nigersaurus","AMEJAA","kHI",6,2,9,"8A7A6A","D8C8B0","vacuum-cleaner wide mouth","rumble","Has 500 teeth. Mouth like a vacuum.","dinosaur,extinct,reptile,heavy"},
-	{"night","FIDNOI","ZN",4,4,3,"141A3A","5E6AB8","starry dark-blue dome falling over area","hush","Bedtime. For everyone.","space,spooky"},
-	{"night blooming cereus","NHBNMI","FS",3,1,2,"FFFFFF","F5F5F5","huge white bloom open one night only","rustle","One night only. Do not miss it.","plant,flower"},
-	{"night heron","AMCJDA","AfT",3,5,2,"1E2A3A","F2F2EE","stocky heron, red eyes","squawk","Works the night shift.","bird,wetland,nocturnal"},
-	{"night light","BHAG1I","Fc",1,1,2,"F1C40F","F2F2EE","small glowing plug light","beep","Keeps monsters away. Mostly.","tech"},
 }

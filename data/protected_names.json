@@ -64,6 +64,8 @@
     {"n": ["tetris", "tetris block", "tetris blocks", "tetris piece"], "r": "block drop"},
     {"n": ["angry birds", "angry bird"], "r": "sling bird"},
     {"n": ["arkanoid", "atari breakout"], "r": "brick breaker"},
+    {"n": ["galaga", "galaxian"], "r": "pixel ship"},
+    {"n": ["frogger"], "r": "traffic lane"},
     {"n": ["peppa pig"], "r": "pink pig"},
     {"n": ["barney"], "r": "purple dinosaur"},
     {"n": ["teletubby", "teletubbies"], "r": "rainbow blob"},

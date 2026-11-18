@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star","MHCAKJ","TeVO",5,6,5,"FFF59D","FFFFFF","five-point glowing twinkle","twinkle","Twinkle twinkle, little projectile.","space"},
+	{"star anise","IMBAKK","Te",3,7,2,"6B3A1E","A86A3A","eight-pointed brown star pod","whoosh","A spice shaped like a throwing star.","edible,spice"},
+	{"star blade","FHCHrB","KfT",6,8,2,"FFF59D","5C6BC0","sword shimmering with tiny stars","chime","Forged in a star. Probably.","space,sharp"},
+	{"star bolt","FHBAKB","KTe",5,9,1,"FFF9C4","FFD54F","spinning golden star streak","zing","Twinkle, twinkle, bonk.","space"},
+	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
+	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
+	{"star cactus","NEALMI","GST",2,1,5,"7CB342","FFFFFF","flat star-shaped spineless cactus","thud","Spineless. Still judgmental.","plant,desert,cute"},
+	{"star cluster","MHEELJ","TeVP",7,4,7,"E1F5FE","FFF59D","swarm of tiny glittering stars","rumble","A whole handful of stars, thrown at once.","space"},
 	{"star dragonfly","AHAJFB","Ae",2,10,1,"FDE047","67E8F9","dragonfly trailing stardust","buzz","Leaves sparkly streaks.","cosmic,insect"},
 	{"star eater","AIFJGJ","ikH",10,2,9,"0F0F23","F97316","planet-sized maw with orbiting debris","hum","Snacks on stars. Burps out comets.","alien,cosmic,boss,danger"},
 	{"star flower","NHBLMI","FSe",3,1,2,"FFF59D","3949AB","five-point glowing star petals","chime","Fell from the sky. Took root.","plant,magic,mythical"},
@@ -395,12 +403,4 @@ return {
 	{"swirlie","KBBL5K","jHN",3,5,1,"E0F2FE","38BDF8","toilet bowl whirlpool with a flush handle","slosh","Flush. Hair by plumbing.","silly,gross"},
 	{"swiss cheese","IMBLKI","dSc",2,3,3,"F2D870","E8C04A","wedge riddled with holes","chomp","More holes than cheese.","edible,sweet,dairy"},
 	{"swiss roll","IMBGKF","DkI",3,5,6,"E8C88A","D23A5A","spiral rolled sponge","rumble","A cake that rolled itself up.","edible,heavy,sweet"},
-	{"switchblade","CKAHJK","ZfT",3,10,2,"C9CED4","24262A","folding blade, slim handle","shing","Click. Surprise.","medieval,sharp"},
-	{"sword","CKCHrK","kfT",5,6,5,"8A929B","6B4226","straight double-edged blade, cross guard","shing","The classic. Pointy end goes toward the problem.","medieval,sharp"},
-	{"sword cane","CKCHrK","fT",5,7,3,"24262A","C9CED4","walking cane hiding a blade","shing","Gentleman's surprise.","sharp"},
-	{"sword swallower","LKCJNA","dO",3,4,4,"111827","94A3B8","swallowing a long sword","gulp","Kids, don't try this at home.","circus,silly"},
-	{"swordfish","ABDJEC","DfTB",6,9,4,"3A4A6A","D8DCE2","long flat sword bill","splash","Brought a sword to the sea.","fish,aquatic"},
-	{"swordtail","ABAJEC","dTB",1,6,1,"E8501E","1E1E1E","orange fish with sword tail","splash","Has a tiny sword tail.","fish,aquatic"},
-	{"sycamore","NGECMI","GdWkSe",4,1,8,"D7CCC8","7CB342","patchy white bark, big leaves","rustle","Throws spinning helicopter seeds.","plant,tree"},
-	{"sydney opera house","EMFCII","GSO",5,1,9,"FFFFFF","E0E0E0","white sail-shaped shell roofs","song","Sings a very loud high note.","structure,landmark"},
 }
