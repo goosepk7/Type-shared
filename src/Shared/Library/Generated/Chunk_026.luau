@@ -189,6 +189,7 @@ return {
 	{"tennis court","MMCNII","Sa",2,1,6,"43A047","FFEB3B","net across painted lines","crowd","Back and forth. Back and forth.","place,sport"},
 	{"tennis player","LMCJNA","ea",4,7,3,"F8FAFC","FACC15","white outfit, racket, sweatband","pong","Returns every shot. Including yours.","sport"},
 	{"tennis racket","BMBHJK","kfa",2,7,4,"F2F2EE","8BC34A","oval stringed racket","bonk","Returns to sender, with topspin.","sport"},
+	{"tennis serve","BDBA3B","Uke",4,10,2,"C8F03A","F7F7F2","fuzzy lime ball that ricochets foe to foe","thwock","Fifteen love.","sport,tennis,projectile"},
 	{"tenontosaurus","AMDJAA","dk",5,5,6,"8A6A3A","D8B07A","very long tail plant eater","honk","Long tail. Raptors' favorite snack.","dinosaur,extinct,reptile"},
 	{"tenrec","AMBJAA","CfT",2,5,3,"1E1E1E","F2D82A","spiky black-yellow hedgehog thing","squeak","Spiky, stripy, and squeaky.","mammal,wild"},
 	{"tent","EMBCII","GFS",1,1,2,"FF7043","4CAF50","triangle nylon tent with poles","thud","Roughing it, cosily.","structure,building,silly"},

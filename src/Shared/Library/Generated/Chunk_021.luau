@@ -166,6 +166,7 @@ return {
 	{"regeneration","KGCOKJ","FS",1,4,4,"00E676","CCFF90","slow pulsing green aura","chime","Heals while you look cool.","support"},
 	{"reindeer","ACDJAA","DAkg",5,8,4,"8A7058","F2EEE6","big branching antlers, shaggy neck","bleat","Pulls sleighs. Has a red-nosed friend.","mammal,wild,arctic,holiday"},
 	{"rejuvenation","KGCOKJ","WF",1,5,3,"76FF03","F1F8E9","blooming leafy glow around caster","chime","Fresh as a daisy. A tough daisy.","support,plant"},
+	{"relay baton","BHBOJI","DQk",2,10,3,"F2B632","FFFFFF","glowing track baton and a burst of lane lines","whoosh","Don't drop it.","sport,track,buff"},
 	{"relic","BLBOKJ","Fh",4,3,5,"A86F32","3E9E6E","carved ancient idol","chime","It hums when you hold it.","treasure,ancient,magic"},
 	{"relish","IMBNGI","SNP",2,4,1,"7DAE3A","5E8A2B","green chunky sauce","splat","Chopped pickles, sweet and tangy.","edible,sauce"},
 	{"remora","ABAJEC","diQB",1,6,1,"6A6A6E","C8C8CC","flat suction disc on head","splash","Hitchhikes on sharks. Freeloader.","fish,aquatic"},

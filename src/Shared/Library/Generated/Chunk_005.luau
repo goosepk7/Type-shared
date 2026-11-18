@@ -192,7 +192,7 @@ return {
 	{"cheddar","IMBLKI","dSc",2,3,3,"F2A62B","F2C24A","orange block with crumbly edge","chomp","Sharp, orange, irresistible.","edible,sweet,dairy"},
 	{"cheek","BMBIGG","GUc",2,3,4,"F6B8A8","F28B82","two round rosy cheeks, pinch marks","squish","Pinched by aunts since forever.","body,cute,silly"},
 	{"cheer","KHBOKJ","DF",2,6,2,"FFEB3B","FF4081","pom-pom sparkle burst","yay","Go team! You can do it!","support"},
-	{"cheer squad","LMDJLG","FOh",5,6,4,"DC2626","F8FAFC","pyramid of cheerleaders","chime","Gimme a W-I-N!","sport,swarm"},
+	{"cheer squad","BHCJIE","GQh",3,6,4,"FF5A8A","FFD23F","stacked pyramid of fluffy pom-poms with a megaphone","cheer","Give me a W!","sport,cheer,summon"},
 	{"cheerleader","LMCJNG","FOh",3,7,3,"DC2626","F8FAFC","pom-poms, ponytail, megaphone","chime","Gives allies hype. So much hype.","sport"},
 	{"cheerleading","LHCJNA","UFOh",3,7,3,"DC2626","FACC15","pyramid of three with pom-poms and a megaphone","yay","Give me a W! Give me an I! Give me an N!","sport,support"},
 	{"cheese","IMBLKI","dSc",2,3,3,"F2C24A","E8A82B","wedge with holes","chomp","Mice, goblins, and gnomes all come running.","edible,sweet,dairy"},

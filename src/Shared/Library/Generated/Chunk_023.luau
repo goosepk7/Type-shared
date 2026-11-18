@@ -332,6 +332,7 @@ return {
 	{"slab","BECLnI","GkO",5,2,8,"9CA3AF","6B7280","thick flat grey stone rectangle dropping flat","thud","Flat. Heavy. Final.","heavy"},
 	{"slam","KEDNOI","kO",7,7,3,"6D4C41","FFCC80","big impact crater ring","boom","Slam dunk, but it is you.","heavy"},
 	{"slap","KMBAKB","kfO",3,10,1,"FFAB91","FFFFFF","red handprint flash","slap","Snap out of it!","silly"},
+	{"slapshot","BCBA3B","Uke",4,10,2,"20242B","7FD3F0","ice-blue puck skimming the ground, banking off walls","crack","Off the boards and right in.","sport,hockey,projectile"},
 	{"slapstick","CMCHJK","dkf",1,7,2,"C0392B","F1C40F","two clapping wooden slats","boing","Clack! Comedy!","silly"},
 	{"slash","KKCHJB","fT",5,9,1,"B0BEC5","FFFFFF","wide crescent slash streak","shing","Swish! Got it.","sharp"},
 	{"slate","BEBAJK","TeV",3,7,4,"4B5563","6B7280","thin dark grey stone tile spinning edge-first","clack","Wiped clean. With your face.","sharp"},
