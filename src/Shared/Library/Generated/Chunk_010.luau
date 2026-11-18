@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"floor is lava","KADNOI","KS",6,3,4,"FF3D00","FFB300","floor turning into glowing lava","bubble","It's not a game anymore.","fire,meme,silly"},
 	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
 	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"ghost orchid","NIBNMI","dZS",3,1,1,"F5F5F5","E1F5FE","leafless white bloom floating in air","rustle","Floats like a ghost. Very rare.","plant,flower,spooky"},
 	{"ghost pepper","IABAKK","KjSP",7,7,2,"C8202B","8A1E1E","wrinkled red pod","sizzle","So hot it haunts you for days.","edible,spicy,flammable,pepper,spooky"},
 	{"ghost pipefish","ABAJEC","dZB",1,6,1,"E8D8C0","C8A07A","ornate seaweed-like","splash","Pretends to be seaweed.","fish,aquatic"},
-	{"ghost pirate captain","AIDJNJ","Afh",7,5,4,"94A3B8","22C55E","glowing spectral captain with hook","wail","Commands the dead crew.","ghost,pirate,boss"},
 }

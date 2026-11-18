@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"passion fruit","IMBGKF","EeP",4,6,1,"5E2A4E","F3C54B","purple wrinkly sphere, gold pulp","pop","Wrinkly outside, fireworks inside.","edible,explosive,fruit,tropical"},
 	{"passport","BMAOyE","GjY",2,5,3,"1E3A8A","D4AF37","small navy booklet with a gold crest and a terrible photo","thunk","Worst photo of your life. Valid ten years.","travel"},
 	{"password","KDBIyI","Gja",3,1,7,"111827","22C55E","padlock screen with dots ******** and a red WRONG","buzz","Must contain a capital, a number and your soul.","tech,defense"},
 	{"past","KEDN5I","jNh",5,2,3,"B08D57","E7D8B1","sepia portal with a penny-farthing and dinosaurs behind it","tick","Was better. Allegedly. Had no wifi.","time,ancient"},
@@ -402,5 +403,4 @@ return {
 	{"poinsettia","NGBNMI","dFS",2,1,2,"C62828","1B5E20","red star bracts on green leaves","rustle","Holiday cheer with attitude.","plant,flower,holiday"},
 	{"point","KMBOuB","dQe",2,8,1,"F2D0B4","EF4444","giant gloved finger pointing with a red arrow","ding","Look over there! Ha. Made you look.","silly,trickster"},
 	{"pointer","AMCJAA","DQcf",4,7,4,"F2EEE6","8A4A22","sleek bird dog, one paw raised pointing","bark","It is literally pointing. At you.","mammal,pet"},
-	{"poison","FJCDOJ","SMP",4,4,2,"6BBF3A","2E5E1E","swirling sickly green fog, skull wisps","bubble","Do not lick.","toxic"},
 }

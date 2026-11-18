@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow dragon","AHEKCB","jAeg",7,7,6,"EF4444","3B82F6","serpent dragon with rainbow-banded scales","chime","Breathes rainbows. Painfully.","mythical,reptile"},
 	{"rainbow eucalyptus","NLDCMI","GjWkS",3,1,7,"7E57C2","43A047","trunk striped in every colour","rustle","A tree that forgot to stop painting.","plant,tree"},
 	{"rainbow fire","FACFOB","KjP",6,7,2,"FF4081","40C4FF","wave of multicoloured flames","whoosh","Fabulous and flammable.","fire,cute"},
 	{"rainbow flower","NHBNMI","jdF",3,1,2,"FF5252","40C4FF","petals in every colour","rustle","Every colour. All at once.","plant,flower,magic"},
@@ -247,6 +248,7 @@ return {
 	{"robe","BLCONI","F",1,5,2,"1F2F55","D4A72C","long star-patterned robe","swish","Comfy. Mystical. Pocketless.","clothing,magic"},
 	{"robin","AMAJDB","dA",1,7,1,"6E5A4A","E8601E","round grey-brown bird with red breast","tweet","Wears a red vest every day.","bird,cute"},
 	{"robin hood","LGCJNA","Zeb",5,8,4,"15803D","78350F","green hood, feathered cap, longbow","twang","Steals from the rich. Gives to you.","archer,folklore"},
+	{"robo hound","OKCJAA","Qfh",4,7,5,"C4CAD4","FF382C","a chrome robot dog with a red visor that runs and bites","growl","Good boy. Shiny boy. Bitey boy.","scifi,robot,pet"},
 	{"robot","OKCJNA","GfeL",5,4,7,"94A3B8","3B82F6","boxy metal body, antenna, glowing eye visor","beep","Beep boop. Translation: you're in trouble.","robot,mechanical"},
 	{"robot arm","OKCM1I","klf",5,5,7,"E67E22","8E9196","jointed arm with gripper claw","hum","Grab. Lift. Fling.","robot,mechanical"},
 	{"robot arm monster","OKCJFA","lH",4,4,6,"FACC15","1F2937","three-legged bot with giant grabber claw","whir","Claw machine, but it wins.","robot"},
@@ -401,6 +403,4 @@ return {
 	{"rubber band","BMAAJK","eO",1,9,1,"D2B48C","D2B48C","stretchy loop","tap","Snap! Right on the wrist.","office"},
 	{"rubber band ball","BMBG3K","Ue",2,7,3,"D2B48C","C0392B","ball of a thousand bands","tap","Bounces like it's angry.","office"},
 	{"rubber band gun","CMBAwI","eO",1,9,2,"8B5A2B","D2B48C","wooden clothespin pistol","thwip","Snap! Right on the nose.","toy,silly"},
-	{"rubber chicken","CMBHJK","jdf",1,7,2,"F1C40F","C0392B","floppy squawking rubber chicken","boing","BWAAACK. Comedy damage.","silly"},
-	{"rubber chicken monster","AMBJDA","Ud",2,5,2,"FACC15","F97316","giant rubber chicken with angry eyes","squeak","Squeaks loudly. Hits squeakily.","silly"},
 }

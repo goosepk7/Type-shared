@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"winter wolf","ACCJAA","DJf",5,8,4,"E0F2FE","60A5FA","white wolf exhaling frost","howl","Its howl freezes puddles.","canine,frozen"},
+	{"wire","BDALJK","LN",1,3,2,"B8693D","24262A","coiled copper wire","clink","Live wire!","hardware"},
+	{"wire cutters","JKAHJK","fV",2,6,4,"C0392B","C9CED4","small snipping pliers","clank","Snip. Disarmed.","tool"},
+	{"wisdom","KHCOKJ","Fa",3,3,4,"5C6BC0","FFD54F","glowing owl-like eyes and runes","hum","Think first. Zap second.","magic"},
 	{"wish","KHCOKJ","Fh",4,5,3,"FFF59D","B39DDB","shooting star sparkle over caster","chime","Be careful what you type.","magic,cute"},
 	{"wish serpent","ADFJPB","Ah",9,3,3,"3FBF7A","FFD45A","seven pearls rise; a vast jade dragon coils overhead","roar","State your wish. Choose wisely. It picks anyway.","anime,dragon,summon"},
 	{"wishbone","BMAOKJ","F",1,5,1,"E3DAC9","F3E6C8","forked little bone","boing","Make a wish. Snap!","silly,holiday"},

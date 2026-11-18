@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laundromat","MBDNlI","jSHN",4,1,5,"38BDF8","F8FAFC","row of spinning round-door washers overflowing with foam","slosh","Lost: one sock. Found: someone else's sock.","household,building"},
 	{"laundry","BJCLGI","WMN",3,1,4,"93C5FD","F87171","teetering mountain of socks, shirts and one sneaker","whiff","The pile grew again. It is breathing now.","household,silly,gross"},
 	{"laundry basket","BMBL2I","O",1,1,2,"F2F2EE","2F6FD1","plastic basket of laundry","thud","Smelly prison.","container"},
 	{"laundry detergent","BBBD2I","jN",1,5,2,"E67E22","F2F2EE","big jug of suds","thud","Bubbles. Everywhere.","household"},
@@ -402,5 +403,4 @@ return {
 	{"macaw","AMCJDB","jdA",3,6,2,"E8201E","2A6AD8","big red-blue-yellow parrot, long tail","squawk","Loud, proud and rainbow.","bird,jungle,silly"},
 	{"mace","CKCHtK","kfO",5,5,6,"5B6168","6B4226","flanged metal head on short handle","bonk","Like a hug, but metal.","medieval,heavy"},
 	{"mace of light","CHCHtK","Fkf",6,5,6,"D4A72C","F2F2EE","radiant flanged mace","shing","Bonk, but blessed.","fantasy,holy"},
-	{"machete","CKCHrK","fT",4,7,4,"8A929B","24262A","wide heavy jungle blade","shing","Clears jungles and schedules.","medieval,sharp"},
 }

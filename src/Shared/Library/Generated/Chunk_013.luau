@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy blast","FHCGKI","KEF",6,7,1,"FFF59D","FFFFFF","golden burst with feather sparks","choir","A blessing that hits hard.","holy,explosive"},
 	{"holy bolt","FHCAKB","KFe",5,9,1,"FFF59D","FFFFFF","radiant golden spear of light","chime","Good guys heal. Bad guys feel it.","holy"},
 	{"holy fire","FHCNOI","KFS",6,5,3,"FFD54F","FFFFFF","white-gold flames that do not smoke","chime","A campfire that only burns villains.","holy,fire"},
 	{"holy hand grenade","CHBGKF","Eke",7,5,1,"D4A72C","F2F2EE","jewelled orb with a tiny cross","boom","Count to three. Not five.","explosive,silly,holy"},
@@ -402,5 +403,4 @@ return {
 	{"jackal","AMCJAA","DQfbh",3,7,4,"C08A50","2E2A26","slender golden canine, dark saddle","howl","Scavenger extraordinaire.","mammal,predator,wild"},
 	{"jackalope warrior","AMBJAG","UDT",3,9,3,"A16207","94A3B8","antlered rabbit in tiny armor","chitter","Small, fluffy, extremely pointy.","cryptid,silly"},
 	{"jackdaw","AMAJDB","dAb",1,7,1,"2A2A30","C8C8CC","small crow with pale eyes","tweet","Steals shiny things. Pale eyes.","bird,cute"},
-	{"jacket","BMCONI","G",1,5,3,"3B5B8C","7A4E2D","zip-up jacket","swish","Weatherproof. Bonkproof-ish.","clothing"},
 }

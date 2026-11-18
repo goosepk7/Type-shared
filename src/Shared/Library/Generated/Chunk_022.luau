@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rubber chicken","CMBHJK","jdf",1,7,2,"F1C40F","C0392B","floppy squawking rubber chicken","boing","BWAAACK. Comedy damage.","silly"},
+	{"rubber chicken monster","AMBJDA","Ud",2,5,2,"FACC15","F97316","giant rubber chicken with angry eyes","squeak","Squeaks loudly. Hits squeakily.","silly"},
 	{"rubber duck","BMBJDJ","UdcB",2,5,3,"FFD23F","E67E22","yellow squeaky duck, orange beak","squeak","Squeak. The enemy is deeply confused.","toy,silly,bathroom,cute"},
 	{"rubber duck boat","DBDKHC","UDdkgB",2,3,4,"FFEB3B","FF9800","huge yellow rubber duck you can ride","quack","Quack. Squeak. Victory.","vehicle,aquatic,silly"},
 	{"rubber duck rain","BMDEDI","Ujd",2,4,2,"FFD23F","E67E22","squeaky ducks pouring from the sky","thud","SQUEAK SQUEAK SQUEAK SQUEAK.","silly,toy"},
@@ -356,6 +358,7 @@ return {
 	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},
 	{"sentence","KMCBCB","STN",3,6,2,"1F2937","FFFFFF","long line of words ending in a heavy full stop","tap","Ends with a period. So do you.","school"},
 	{"sentinel","LHDMYI","GQeO",6,2,8,"94A3B8","FCD34D","tall still guardian with a spear and one glowing eye slit","hum","Has not blinked since the last update.","defense,ancient"},
+	{"sentinel orb","OHBJKE","GRh",1,3,7,"46DCFF","B0BAC8","a ringed sentry orb circling you that zaps shots away","ping","Your personal bullet bouncer.","scifi,robot,defense"},
 	{"sentry","OKCMWI","GQe",5,1,6,"6B7280","EF4444","tripod gun post with a red scanning eye and beeping light","beep","Halt. Who goes there? Never mind. Pew.","defense,mechanical,robot"},
 	{"sentry tower","EEDMII","GSeO",4,1,7,"616161","FFB300","tall tower with a sweeping searchlight","thud","Spots you. Points. Shoots.","structure,defense,tower"},
 	{"seraph","AHDJDB","KAFO",7,6,6,"FDE047","FB923C","six blazing wings around a radiant core","chime","All wings. All light. All the time.","holy,fire"},
@@ -400,7 +403,4 @@ return {
 	{"shadow dragon","AIEKAB","iAZeg",8,7,7,"1E1B2E","7C3AED","smoky wings, violet eyes, wispy tail","roar","Blends into the night. Bumps into the moon.","mythical,reptile,spooky,flying"},
 	{"shadow elemental","AIDJNJ","jiZ",6,7,4,"1E1B4B","6D28D9","inky shape with purple eye slits","whisper","Only visible in the dark. Which is cheating.","elemental,spooky"},
 	{"shadow fairy","AIAJNB","jAZ",2,9,1,"1E1B4B","A78BFA","inky fairy with moth wings","whisper","Steals your shadow. Returns it later.","fairy,spooky"},
-	{"shadow form","KICOVJ","iZ",4,7,3,"1A0033","7C4DFF","caster becoming a flat moving shadow","hiss","Slip under doors. Spook everyone.","spooky,stealth"},
-	{"shadow giant","AIEJNA","iZk",8,3,7,"0F0F23","4338CA","towering shadow with starry eyes","whisper","You only see it when it's too late.","giant,spooky"},
-	{"shadow hand","FICLII","HO",5,5,3,"12001F","8E24AA","giant inky hand reaching from the ground","hiss","The floor has hands now.","spooky"},
 }

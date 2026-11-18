@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mint plant","NCANMI","JFS",1,1,2,"4CAF50","B9F6CA","fresh bright toothed leaves","rustle","Fresh breath. Fresh start.","plant,herb"},
 	{"mint sauce","IMBNGI","SNP",2,4,1,"5E9E3A","B8E8D0","green glossy sauce","splat","Cool green sauce.","edible,sauce"},
 	{"mint tea","IABOKI","KF",2,5,2,"7DBE3A","F2E8C8","glass of tea with mint","slurp","Cool and warm at once.","edible,drink,warm"},
 	{"minus","KIBAJB","iXN",3,7,1,"DC2626","FFFFFF","flat red minus bar thrown like a stick","buzz","Minus one. Minus one. Minus you.","school"},
@@ -402,5 +403,4 @@ return {
 	{"night blooming cereus","NHBNMI","FS",3,1,2,"FFFFFF","F5F5F5","huge white bloom open one night only","rustle","One night only. Do not miss it.","plant,flower"},
 	{"night heron","AMCJDA","AfT",3,5,2,"1E2A3A","F2F2EE","stocky heron, red eyes","squawk","Works the night shift.","bird,wetland,nocturnal"},
 	{"night light","BHAG1I","Fc",1,1,2,"F1C40F","F2F2EE","small glowing plug light","beep","Keeps monsters away. Mostly.","tech"},
-	{"night monkey","AMBJBA","deb",2,7,2,"8A7A6A","F2E8D8","huge round eyes","chatter","Only nocturnal monkey. Big eyes.","mammal,primate,nocturnal"},
 }

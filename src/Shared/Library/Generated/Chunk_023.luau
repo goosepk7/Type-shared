@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow form","KICOVJ","iZ",4,7,3,"1A0033","7C4DFF","caster becoming a flat moving shadow","hiss","Slip under doors. Spook everyone.","spooky,stealth"},
+	{"shadow giant","AIEJNA","iZk",8,3,7,"0F0F23","4338CA","towering shadow with starry eyes","whisper","You only see it when it's too late.","giant,spooky"},
+	{"shadow hand","FICLII","HO",5,5,3,"12001F","8E24AA","giant inky hand reaching from the ground","hiss","The floor has hands now.","spooky"},
 	{"shadow ice","FICLII","iJ",5,4,4,"1A237E","7C4DFF","black-violet ice spreading on ground","crackle","Cold and creepy.","frozen,spooky"},
 	{"shadow imp","AIAJNB","jZb",2,9,1,"312E81","A78BFA","inky imp with glowing eyes","cackle","You'll never catch it stealing your fries.","imp,spooky"},
 	{"shadow lance","FICAuB","iTe",6,8,1,"1A0033","AA00FF","long smoky black javelin","hiss","Darkness, thrown long distance.","spooky,sharp"},
@@ -400,7 +403,4 @@ return {
 	{"snare","BMBLII","lHO",2,1,3,"B89B6A","8B5A2B","hidden rope loop on bent sapling","snap","Upsy-daisy!","trap,defense"},
 	{"snatch","KMBBKI","Hb",3,9,1,"8D6E63","FFFFFF","glowing hand reaching and grabbing","swish","Gotcha!","silly"},
 	{"sneak","KIBOKA","DZ",2,6,2,"455A64","90A4AE","tiptoeing shadowy outline","tiptoe","Tiptoe. Tiptoe. Gotcha.","stealth"},
-	{"sneakers","BMBONI","D",1,9,2,"F2F2EE","C0392B","chunky running sneakers","swish","Gotta go fast.","clothing"},
-	{"sneeze","KFBFOB","jk",3,10,1,"E1F5FE","C5E1A5","cone of droplets and wind from the caster","achoo","Bless you. And everyone in front.","silly,gross"},
-	{"snickerdoodle","IMBAKK","Uke",3,7,2,"E0C08A","C8803A","crackled cinnamon cookie","whoosh","Fun to say. Fun to throw.","edible"},
 }

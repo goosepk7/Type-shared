@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"video camera","BHBBKI","c",1,5,3,"24262A","C0392B","handheld camera with red light","beep","Recording. Smile.","tech,electric"},
+	{"video game","BDCN1I","jShY",5,5,3,"4F46E5","22D3EE","glowing screen spilling blocky pixels and a health bar","beep","Just five more minutes. Said three hours ago.","gaming,tech"},
+	{"video game controller","BMAOJI","j",1,6,3,"24262A","8E9196","handheld game pad with buttons","clack","Press A to win.","game,tech"},
 	{"vigilante","LICJNA","ZfH",6,8,5,"111827","52525B","dark cowl, grapple hook, utility belt","whoosh","Patrols rooftops. Never uses doors.","hero"},
 	{"vigor","KGCOKJ","GF",2,5,6,"43A047","FFB74D","healthy green-orange glow","grunt","Full of beans. And health.","support"},
 	{"vigor bean","IGAO7I","F",3,6,1,"7CC24A","E8FFB0","little green bean flicked up, caught and crunched","crunch","Tastes like a full night's sleep.","anime,heal,food"},
@@ -98,6 +101,7 @@ return {
 	{"wakizashi","CKBHrK","fT",4,8,3,"C9CED4","1F2F55","short curved blade, wrapped hilt","shing","Katana's little sibling. Just as sharp.","medieval,sharp"},
 	{"walk","KMBOBA","GQN",2,3,3,"60A5FA","F8FAFC","pair of trainers plodding along with nobody in them","tap","Running is overrated. So is arriving on time.","silly"},
 	{"walker","DKEKFA","keg",6,3,8,"78909C","455A64","boxy cockpit on two tall jointed legs","stomp","It walks. Slowly. Menacingly.","mechanical,vehicle,land,robot"},
+	{"walker tank","OKCJWA","Eeh",5,3,5,"B6A478","FFDA96","a tan two-legged mini tank that marches forward shelling","clank","All the tank. Half the wheels. None, actually.","scifi,mech,vehicle"},
 	{"walkie talkie","BMAOKI","h",1,6,3,"24262A","F1C40F","chunky radio with antenna","thud","Over. Send backup. Over.","tech"},
 	{"walking house","DIDKBA","DgO",5,3,7,"6D4C41","FFB300","crooked hut on giant bird legs","whoosh","Knock knock. It walks away.","spooky,silly"},
 	{"wall","EEDCII","GS",3,1,8,"9E9E9E","757575","flat-topped wall of fitted blocks","thud","It is a wall. It does wall things. Well.","structure,defense"},
@@ -399,8 +403,4 @@ return {
 	{"winter","GCDNOI","JSN",5,3,5,"D6EAF8","FFFFFF","snow-covered ground, frosted air","hush","Winter is here. Wear a hat.","frozen,holiday"},
 	{"winter forest","MCFNII","JZS",4,1,8,"FFFFFF","2E7D32","snow-laden pines, silent","rumble","Hushed. Cold. Ambush-ready.","place,terrain,frozen"},
 	{"winter tree","NCDCMI","GJWkSN",3,1,7,"4E342E","FFFFFF","dark branches heavy with snow","rustle","Shake it. Snow avalanche.","plant,tree,frozen"},
-	{"winter wolf","ACCJAA","DJf",5,8,4,"E0F2FE","60A5FA","white wolf exhaling frost","howl","Its howl freezes puddles.","canine,frozen"},
-	{"wire","BDALJK","LN",1,3,2,"B8693D","24262A","coiled copper wire","clink","Live wire!","hardware"},
-	{"wire cutters","JKAHJK","fV",2,6,4,"C0392B","C9CED4","small snipping pliers","clank","Snip. Disarmed.","tool"},
-	{"wisdom","KHCOKJ","Fa",3,3,4,"5C6BC0","FFD54F","glowing owl-like eyes and runes","hum","Think first. Zap second.","magic"},
 }

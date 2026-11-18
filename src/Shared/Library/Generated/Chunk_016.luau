@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"machete","CKCHrK","fT",4,7,4,"8A929B","24262A","wide heavy jungle blade","shing","Clears jungles and schedules.","medieval,sharp"},
 	{"machine","OKDMWI","kIeh",6,2,7,"6B7280","F59E0B","clanking box of gears, pistons, funnels and a steam whistle","clank","Nobody knows what it makes. It makes it loudly.","mechanical"},
 	{"machine gun","CKDMwI","TeV",7,7,5,"2C3539","6B7B3A","belt-fed gun on a bipod","rattle","Brrrrrrrrt.","modern,ranged"},
 	{"machu picchu","EMFCII","GSN",5,1,10,"9E9E9E","43A047","stone terraces on a misty mountain ridge","rumble","Way up in the clouds. Good luck climbing.","structure,landmark,ancient"},
@@ -402,5 +403,4 @@ return {
 	{"minotaur gladiator","AEDJNA","Dkf",7,6,7,"7C2D12","CA8A04","minotaur in gladiator armor","roar","Undefeated. Unshaven.","mythical,warrior"},
 	{"mint chocolate chip","ICBAKJ","JeN",3,5,2,"B8E8D0","3A2416","mint green scoop, dark chips","squish","Toothpaste's tastier cousin.","edible,frozen,sweet"},
 	{"mint humbug","IMAELB","eVP",2,7,1,"3A2A1E","F7F7F2","striped pillow candy","pitter","Bah humbug. Very minty.","edible,sweet,candy"},
-	{"mint plant","NCANMI","JFS",1,1,2,"4CAF50","B9F6CA","fresh bright toothed leaves","rustle","Fresh breath. Fresh start.","plant,herb"},
 }

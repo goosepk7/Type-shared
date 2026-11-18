@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star dragonfly","AHAJFB","Ae",2,10,1,"FDE047","67E8F9","dragonfly trailing stardust","buzz","Leaves sparkly streaks.","cosmic,insect"},
+	{"star eater","AIFJGJ","ikH",10,2,9,"0F0F23","F97316","planet-sized maw with orbiting debris","hum","Snacks on stars. Burps out comets.","alien,cosmic,boss,danger"},
+	{"star flower","NHBLMI","FSe",3,1,2,"FFF59D","3949AB","five-point glowing star petals","chime","Fell from the sky. Took root.","plant,magic,mythical"},
 	{"star fort","EEFCII","GSe",6,1,10,"BCAAA4","7CB342","low star-shaped walls with a ditch","thud","Every angle covered. Literally.","structure,defense,ancient"},
 	{"star jelly swarm","ADCJLJ","ALP",4,4,2,"67E8F9","F0ABFC","cloud of tiny glowing jellyfish","zap","Zaps everything it drifts through.","alien,swarm"},
 	{"star knight alien","AHCJNA","Gfe",6,5,6,"FDE68A","312E81","armor made of starlight","clang","Guards the galaxy. Night shift.","cosmic,warrior"},
@@ -400,7 +403,4 @@ return {
 	{"swordtail","ABAJEC","dTB",1,6,1,"E8501E","1E1E1E","orange fish with sword tail","splash","Has a tiny sword tail.","fish,aquatic"},
 	{"sycamore","NGECMI","GdWkSe",4,1,8,"D7CCC8","7CB342","patchy white bark, big leaves","rustle","Throws spinning helicopter seeds.","plant,tree"},
 	{"sydney opera house","EMFCII","GSO",5,1,9,"FFFFFF","E0E0E0","white sail-shaped shell roofs","song","Sings a very loud high note.","structure,landmark"},
-	{"symbol","KLBLKI","jSO",3,1,3,"A855F7","FACC15","floating glowing sign: @ # & % cycling quickly","chime","@#&%! Pardon its language.","magic"},
-	{"syrian hamster","AMAJAA","Cdb",1,6,1,"E8B060","F7F0E6","golden round hamster","squeak","Classic hamster. Cheeks of steel.","mammal,cute,pet"},
-	{"syringe","BMAAII","FTe",2,8,1,"BFE6F2","C9CED4","clear syringe with plunger","thud","Just a little pinch.","medical"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"night monkey","AMBJBA","deb",2,7,2,"8A7A6A","F2E8D8","huge round eyes","chatter","Only nocturnal monkey. Big eyes.","mammal,primate,nocturnal"},
 	{"night sky","MLFEKJ","SeV",5,1,6,"1A237E","FFF59D","deep blue sky filled with stars","twinkle","A thousand tiny lights watching.","space,star"},
 	{"night vision goggles","CKBONI","Z",1,6,3,"6B7B3A","8BC34A","goggles with glowing green lenses","bang","See in the dark. Look very cool.","spy,tech"},
 	{"night watchman","LHCJNA","GO",3,4,5,"1E3A8A","FACC15","lantern, bell, heavy coat","ding","Midnight and all's well. Until now.","guardian,historical"},
@@ -402,5 +403,4 @@ return {
 	{"party popper","BMAFKI","deO",1,9,1,"D4A72C","FF3EA5","small cone with string pull","pop","POP! Streamers everywhere.","party"},
 	{"passenger pigeon","AMAJDB","dAP",1,7,1,"6A7A8A","D8705A","slim pigeon with rusty breast","tweet","Once darkened the skies.","bird,cute,extinct"},
 	{"passion flower","NGBNMI","dFS",2,1,2,"7E57C2","FFFFFF","intricate fringed blue bloom","rustle","Looks like a clock. Acts like a flower.","plant,flower"},
-	{"passion fruit","IMBGKF","EeP",4,6,1,"5E2A4E","F3C54B","purple wrinkly sphere, gold pulp","pop","Wrinkly outside, fireworks inside.","edible,explosive,fruit,tropical"},
 }
