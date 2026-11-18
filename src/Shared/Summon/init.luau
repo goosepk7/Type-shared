@@ -303,8 +303,12 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 		maxParts = math.floor(maxParts * (1 + cfg.SignatureBonus))
 	end
 	if heroDef then
-		-- a hero is one coherent model: its own part list is the budget (fine detail still drops first on Low)
-		maxParts = math.max(math.floor(maxParts * (1 + cfg.SignatureBonus)), #heroDef.parts + 4)
+		-- a hero is one coherent model: its own part list is the budget (fine detail still drops first on Low);
+		-- a formation of heroes keeps the class formation budget (six sculpted ants must not cost six full models)
+		maxParts = math.floor(maxParts * (1 + cfg.SignatureBonus))
+		if count == 1 then
+			maxParts = math.max(maxParts, #heroDef.parts + 4)
+		end
 	end
 	if count > 1 then
 		maxParts = math.max(cfg.FormationMinParts, math.floor(maxParts * cfg.FormationBudgetScale / count))
@@ -539,13 +543,19 @@ end
 function Summon.ensureMeshes(result: any): string?
 	local id = Heroes.find(result)
 	if id then
-		local asset = Heroes.pack(id)
-		if asset then
-			local ok, lib = pcall(function(): any
-				return require(script.Parent.Meshes.MeshLibrary) :: any
-			end)
-			if ok and lib and type(lib.loadPack) == "function" then
+		local ok, lib = pcall(function(): any
+			return require(script.Parent.Meshes.MeshLibrary) :: any
+		end)
+		if ok and lib and type(lib.loadPack) == "function" then
+			local asset = Heroes.pack(id)
+			if asset then
 				pcall(lib.loadPack, asset)
+			end
+			-- the element's dressing kit (Heroes.dressingFor) rides on the hero
+			local did = Heroes.dressingFor(result.element)
+			local dasset = did and Heroes.pack(did)
+			if dasset then
+				pcall(lib.loadPack, dasset)
 			end
 		end
 	end

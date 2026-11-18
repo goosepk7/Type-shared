@@ -326,8 +326,15 @@ elseif mode == "hero" then
 			end
 			return nil
 		end
+		-- "<word>@<Element>" (tiger@Ice) renders the word with that element (element dressing)
+		local el
+		s, el = string.match(s, "^([^@]+)@?(%a*)$")
 		local function result()
 			local r = base(s)
+			if r and el ~= "" then
+				r = table.clone(r)
+				r.element = el
+			end
 			if r == nil then
 				-- "<material> <word>" (glass shark, spaghetti dragon)
 				local mat, rest = string.match(s, "^(%S+)%s+(.+)$")
