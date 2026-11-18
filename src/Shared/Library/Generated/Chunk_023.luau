@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow ice","FICLII","iJ",5,4,4,"1A237E","7C4DFF","black-violet ice spreading on ground","crackle","Cold and creepy.","frozen,spooky"},
+	{"shadow imp","AIAJNB","jZb",2,9,1,"312E81","A78BFA","inky imp with glowing eyes","cackle","You'll never catch it stealing your fries.","imp,spooky"},
+	{"shadow lance","FICAuB","iTe",6,8,1,"1A0033","AA00FF","long smoky black javelin","hiss","Darkness, thrown long distance.","spooky,sharp"},
+	{"shadow mage","LICJNA","jiZ",6,5,4,"1E1B4B","7C3AED","black hood, purple glowing hands","whisper","Mostly whispers. Mostly scary.","magic,spooky"},
+	{"shadow magic","FICAKB","iZ",5,7,2,"1A0033","7C4DFF","smoky shadow sigil bolt","hiss","Spooky spells, extra spooky.","spooky,magic"},
 	{"shadow man","AICJNA","jZY",4,7,2,"0A0A0A","312E81","tall featureless shadow with hat","whisper","Seen out of the corner of your eye.","spooky"},
 	{"shadow meteor","HIDAKB","iEke",8,8,6,"1A0033","AA00FF","black flaming rock with violet trail","roar","A meteor that stayed up too late.","spooky,space,explosive"},
 	{"shadow mist","FICDOJ","iZS",4,3,2,"1A0033","7C4DFF","drifting black mist with violet glints","hiss","Gloomy. Sneaky. Draining.","spooky"},
@@ -398,9 +403,4 @@ return {
 	{"sneakers","BMBONI","D",1,9,2,"F2F2EE","C0392B","chunky running sneakers","swish","Gotta go fast.","clothing"},
 	{"sneeze","KFBFOB","jk",3,10,1,"E1F5FE","C5E1A5","cone of droplets and wind from the caster","achoo","Bless you. And everyone in front.","silly,gross"},
 	{"snickerdoodle","IMBAKK","Uke",3,7,2,"E0C08A","C8803A","crackled cinnamon cookie","whoosh","Fun to say. Fun to throw.","edible"},
-	{"sniff","KMAOKI","a",1,5,1,"FFCC80","FFFFFF","swirly smell-line wisps","sniff","Smells like... trouble.","silly"},
-	{"snipe","AMCJDA","jAfT",3,5,2,"8A6A44","F2E8D0","streaky bird with long bill","squawk","Zig-zags when it flies.","bird,wetland"},
-	{"sniper","LMCJNI","ZTe",6,3,3,"4D7C0F","1F2937","ghillie suit made of leaves","bang","You'll never see the bush coming.","military,stealth"},
-	{"sniper rifle","CKCBwI","Te",7,3,3,"5E6B3A","24262A","long rifle with big scope","bang","Somewhere very far away, someone is aiming.","modern,ranged"},
-	{"sniper tower","EMDMII","GZSTe",6,1,5,"556B2F","8D6E63","very tall thin tower, hidden perch","thud","One shot. One very long distance.","structure,defense,tower"},
 }

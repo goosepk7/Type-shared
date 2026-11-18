@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
+	{"dog walker","LMCJNA","Qh",3,6,4,"15803D","F59E0B","ten leashes, ten dogs","bark","Is walked by the dogs.","silly,canine"},
+	{"dogfish","ABBJEC","DfTB",3,8,6,"7A7468","D8D4CC","small slim shark, white spots","chomp","Small shark, fish name, dog vibe.","fish,aquatic,ocean,predator"},
 	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
 	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
 	{"dogwood","NGCCMI","GWFkS",3,1,5,"5D4037","FFFFFF","small tree with white cross blossoms","rustle","No dogs involved. Mostly.","plant,tree"},
@@ -400,7 +403,4 @@ return {
 	{"erosion","FECNOI","iN",4,2,3,"A1887F","D7CCC8","crumbling ground worn by wind and water","hiss","Slowly wears everything down.","natural"},
 	{"error","KLBAKB","jO",3,8,1,"D32F2F","FFFFFF","red X pop-up box","beep","Something went wrong. On purpose.","meme,silly"},
 	{"eruption","HAENOI","KEkl",8,5,4,"E64A19","FFAB40","ground bursts open, fountain of lava and rocks","boom","The ground sneezed lava.","natural,fire,explosive"},
-	{"erymanthian boar","AEDJAA","Dk",6,7,7,"44403C","D6D3D1","massive boar with frost-covered tusks","grunt","Charges first. Thinks never.","mythical"},
-	{"escalator","OKDL1I","IN",2,1,7,"C9CED4","24262A","moving metal staircase","clank","Up you go. Or down.","mechanical"},
-	{"escape artist","LMCJNA","ZY",3,8,3,"111827","FACC15","chains, padlock, smirk","whoosh","Tied up. Not anymore.","circus"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"climate","KFENOI","KJSP",6,1,5,"F97316","38BDF8","half scorching sun, half blizzard swirling together","howl","Hot. Cold. Hot. Make up your mind.","weather,science"},
 	{"climb","KMBOKG","l",2,5,3,"8D6E63","FFFFFF","grip marks up a surface","scrape","Up we go.","sport"},
 	{"climbing harness","BMBONF","l",1,5,3,"C0392B","24262A","webbing harness with buckles","bonk","Hang on tight.","sport"},
 	{"climbing rope","BMCLKF","lH",1,4,4,"E67E22","1F2F55","coiled bright climbing rope","bonk","Up we go.","sport"},
@@ -206,7 +207,7 @@ return {
 	{"control tower","EMDMII","GSeh",3,1,7,"F5F5F5","37474F","tall stalk with a glass top","thud","Calls in air support. Very politely.","structure,building"},
 	{"conure","AMBJDB","jdA",2,6,2,"F2A01E","F2D82A","bright orange-yellow small parrot","squawk","Screams in sunshine colors.","bird,jungle,silly"},
 	{"convertible","DMCKHL","Dkg",4,8,4,"D7263D","F2E8CF","open-top car, folded roof, chrome trim","engine","Wind in your hair, enemies under your tyres.","mechanical,vehicle,land"},
-	{"conveyor belt","OKDL1I","IN",2,3,7,"24262A","8A929B","rolling belt on metal frame","hum","Takes enemies right back where they came.","mechanical"},
+	{"conveyor belt","OKDL1I","SI",2,3,7,"3C4048","F2A33A","a slatted belt that drags anyone on it sideways","hum","Please keep moving. You have no choice.","game,platformer,factory"},
 	{"convict cichlid","ABAJEC","dfB",1,6,1,"E8E8E8","1E1E1E","black-white striped cichlid","splash","Wears a prison stripes outfit.","fish,aquatic"},
 	{"convoy","DMFKHL","DkTgh",7,5,9,"556B2F","37474F","long line of trucks and escorts","engine","A whole road full of trucks.","vehicle,mechanical"},
 	{"cookie","IMBAKK","dce",3,7,2,"C8904A","4A2516","round chewy disc with chocolate chips","whoosh","Monsters can't resist them.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
 	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
 	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
-	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 }

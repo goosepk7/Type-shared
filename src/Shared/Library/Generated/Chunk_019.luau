@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"passport","BMAOyE","GjY",2,5,3,"1E3A8A","D4AF37","small navy booklet with a gold crest and a terrible photo","thunk","Worst photo of your life. Valid ten years.","travel"},
+	{"password","KDBIyI","Gja",3,1,7,"111827","22C55E","padlock screen with dots ******** and a red WRONG","buzz","Must contain a capital, a number and your soul.","tech,defense"},
+	{"past","KEDN5I","jNh",5,2,3,"B08D57","E7D8B1","sepia portal with a penny-farthing and dinosaurs behind it","tick","Was better. Allegedly. Had no wifi.","time,ancient"},
+	{"pasta","IMAELB","eNP",2,6,1,"F2D08A","E8C070","assorted pasta shapes","pitter","Shapes for every situation.","edible,grain"},
 	{"paste","BMALGI","ScN",1,1,2,"F8FAFC","A855F7","white gloopy dollop with a purple glue-stick cap","squelch","Somebody in class eats this. You know who.","school,sticky,silly"},
 	{"pasteis de bacalhau","IMAELB","eVP",2,7,1,"D9A04A","F2E8D0","golden cod croquettes","pitter","Crispy cod cannonballs.","edible"},
 	{"pastelito","IMBLKI","dSc",2,3,3,"D9A04A","F2E8C8","flaky filled pastry","chomp","Flaky, sweet, Cuban.","edible,sweet"},
@@ -399,8 +403,4 @@ return {
 	{"point","KMBOuB","dQe",2,8,1,"F2D0B4","EF4444","giant gloved finger pointing with a red arrow","ding","Look over there! Ha. Made you look.","silly,trickster"},
 	{"pointer","AMCJAA","DQcf",4,7,4,"F2EEE6","8A4A22","sleek bird dog, one paw raised pointing","bark","It is literally pointing. At you.","mammal,pet"},
 	{"poison","FJCDOJ","SMP",4,4,2,"6BBF3A","2E5E1E","swirling sickly green fog, skull wisps","bubble","Do not lick.","toxic"},
-	{"poison aura","FJCOKJ","SM",4,4,3,"76FF03","33691E","green fumes swirling round caster","bubble","Personal space, enforced by stink.","toxic"},
-	{"poison beam","FJCBKI","TMe",5,7,1,"76FF03","33691E","bubbling green beam","hiss","Gross. Glowing. Green.","toxic"},
-	{"poison blast","FJCGKI","EMP",5,7,1,"76FF03","33691E","green cloud bursting outward","bubble","Pop. Cough. Run.","toxic,explosive"},
-	{"poison bomb","FJCGKI","ESM",5,6,1,"76FF03","33691E","green orb bursting into toxic cloud","bubble","Pop. Then stink. Then ouch.","toxic,explosive"},
 }

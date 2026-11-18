@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mint sauce","IMBNGI","SNP",2,4,1,"5E9E3A","B8E8D0","green glossy sauce","splat","Cool green sauce.","edible,sauce"},
+	{"mint tea","IABOKI","KF",2,5,2,"7DBE3A","F2E8C8","glass of tea with mint","slurp","Cool and warm at once.","edible,drink,warm"},
+	{"minus","KIBAJB","iXN",3,7,1,"DC2626","FFFFFF","flat red minus bar thrown like a stick","buzz","Minus one. Minus one. Minus you.","school"},
+	{"minute","KLBOKK","SNO",2,4,2,"F8FAFC","DC2626","clock face with a thin long hand sweeping","tick","One minute. In mum-on-the-phone time.","time"},
 	{"mirabelle","IGAAKF","Fke",3,6,2,"F2D23A","E8A040","tiny golden plum","splat","A golden marble of fruit.","edible,fruit,sweet"},
 	{"miracle cure","KHDNOI","FP",3,5,4,"FFFFFF","FFD54F","golden beam and floating feathers over allies","choir","Against all odds, everyone's fine.","holy,support"},
 	{"miracle fruit","IGAELB","jeV",2,7,1,"D7263D","F7F2EC","small red berry","pitter","Makes sour taste sweet. Magic!","edible,fruit,sweet,magic"},
@@ -399,8 +403,4 @@ return {
 	{"night heron","AMCJDA","AfT",3,5,2,"1E2A3A","F2F2EE","stocky heron, red eyes","squawk","Works the night shift.","bird,wetland,nocturnal"},
 	{"night light","BHAG1I","Fc",1,1,2,"F1C40F","F2F2EE","small glowing plug light","beep","Keeps monsters away. Mostly.","tech"},
 	{"night monkey","AMBJBA","deb",2,7,2,"8A7A6A","F2E8D8","huge round eyes","chatter","Only nocturnal monkey. Big eyes.","mammal,primate,nocturnal"},
-	{"night sky","MLFEKJ","SeV",5,1,6,"1A237E","FFF59D","deep blue sky filled with stars","twinkle","A thousand tiny lights watching.","space,star"},
-	{"night vision goggles","CKBONI","Z",1,6,3,"6B7B3A","8BC34A","goggles with glowing green lenses","bang","See in the dark. Look very cool.","spy,tech"},
-	{"night watchman","LHCJNA","GO",3,4,5,"1E3A8A","FACC15","lantern, bell, heavy coat","ding","Midnight and all's well. Until now.","guardian,historical"},
-	{"nightfall","FIDFOB","ZNP",5,5,3,"1A1840","6157A8","dark wave rolling across the sky","hush","The sun clocks out early.","spooky"},
 }

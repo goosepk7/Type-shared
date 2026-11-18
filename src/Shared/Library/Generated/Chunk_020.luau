@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poison aura","FJCOKJ","SM",4,4,3,"76FF03","33691E","green fumes swirling round caster","bubble","Personal space, enforced by stink.","toxic"},
+	{"poison beam","FJCBKI","TMe",5,7,1,"76FF03","33691E","bubbling green beam","hiss","Gross. Glowing. Green.","toxic"},
+	{"poison blast","FJCGKI","EMP",5,7,1,"76FF03","33691E","green cloud bursting outward","bubble","Pop. Cough. Run.","toxic,explosive"},
+	{"poison bomb","FJCGKI","ESM",5,6,1,"76FF03","33691E","green orb bursting into toxic cloud","bubble","Pop. Then stink. Then ouch.","toxic,explosive"},
 	{"poison bottle","BJAA2I","MeV",4,6,1,"8BC34A","24262A","skull-labelled bottle","bubble","Do not drink. Throw.","magic,fantasy"},
 	{"poison breath","FJCFOB","MP",5,6,1,"76FF03","33691E","cone of green toxic mist","hiss","Worst breath imaginable.","toxic"},
 	{"poison bubble","FJBGKJ","UM",3,4,1,"76FF03","F8BBD0","green bubble that pops into fumes","pop","Don't pop it. Too late.","toxic,silly"},
@@ -106,6 +110,7 @@ return {
 	{"portal device","OLDL1I","jHY",5,3,5,"3A3F45","A66BDB","ring frame with swirling portal","hum","Where does it go? Find out!","scifi"},
 	{"portal gate","ELDNII","ShY",4,1,8,"7E57C2","40C4FF","stone ring with a swirling glowing centre","warp","Step in here. Pop out over there.","structure,magic"},
 	{"portal gun","CLBAwI","jeY",3,8,3,"F2F2EE","E67E22","white handheld device, glowing orb","zap","Thinking with holes.","scifi,ranged"},
+	{"portal ring","KLCOoI","Y",3,9,2,"FFB040","FF6A20","a sparking ring portal pair hops you forward","warp","Shortcut. Mind the sparks.","hero,movie,magic"},
 	{"portal tower","ELDMII","GShY",6,1,7,"4A148C","00E5FF","tower with a swirling portal at the top","chime","Summons from another dimension.","structure,magic,mythical,tower"},
 	{"portcullis","EKDCII","GSTO",5,1,9,"455A64","263238","iron grid gate with spiked bottom edge","clang","Drops with style. And spikes.","ancient,sharp"},
 	{"portrait","BICMnI","jQO",3,1,4,"7C4A1E","D4AF37","gold-framed stern painting whose eyes follow you","creak","The eyes follow you. So does the frame, now.","art,spooky"},
@@ -216,7 +221,7 @@ return {
 	{"pronghorn","AMCJAA","Dk",4,10,4,"C08A50","FFFFFF","forked horns, white rump, sleek","bleat","Second fastest land animal. Petty.","mammal,wild"},
 	{"proof","KHBAJB","TaO",3,7,2,"FACC15","111827","evidence bag slammed on a desk with a spotlight","bang","Pics or it did not happen. Here are the pics.","meme"},
 	{"propane tank","CACL2I","KEk",7,1,3,"F2F2EE","C0392B","tall gas cylinder with valve","boom","Hissss... KABOOM.","explosive,flammable"},
-	{"propeller hat","BMBONI","dA",1,6,1,"C0392B","F1C40F","beanie with spinning propeller","swish","Hover-ish. Mostly silly.","clothing,silly"},
+	{"propeller cap","BFBONE","Al",1,6,1,"2FB3A3","F28C28","beanie with a spinning propeller for a slow hover","swish","Hover-ish. Mostly silly.","game,platformer,mobility"},
 	{"propeller plane","DFCKHB","DAkg",4,7,5,"F5F5F5","C62828","small single-wing plane, nose propeller","propeller","Bzzzzzzzzz... thunk.","vehicle,air"},
 	{"prosciutto","IMBAKK","Uke",3,7,2,"D8706A","F2E0D8","paper-thin pink slices","whoosh","Fancy ham, paper thin.","edible"},
 	{"protea","NGCNMI","dFS",2,1,3,"F48FB1","FFFFFF","giant spiky artichoke bloom","rustle","Looks like an alien. Is a flower.","plant,flower,silly"},
@@ -398,9 +403,4 @@ return {
 	{"rainbow candy","IMAELB","jeP",2,7,1,"E8434F","4FA3E8","pile of colorful round candies","pitter","Taste every colour.","edible,sweet,candy"},
 	{"rainbow carrots","IEBAJK","FTe",3,6,4,"ED9121","5E1A4E","bundle of multicolor carrots","crunch","Carrots in every colour.","edible,vegetable,healthy"},
 	{"rainbow dragon","AHEKCB","jAeg",7,7,6,"EF4444","3B82F6","serpent dragon with rainbow-banded scales","chime","Breathes rainbows. Painfully.","mythical,reptile"},
-	{"rainbow eucalyptus","NLDCMI","GjWkS",3,1,7,"7E57C2","43A047","trunk striped in every colour","rustle","A tree that forgot to stop painting.","plant,tree"},
-	{"rainbow fire","FACFOB","KjP",6,7,2,"FF4081","40C4FF","wave of multicoloured flames","whoosh","Fabulous and flammable.","fire,cute"},
-	{"rainbow flower","NHBNMI","jdF",3,1,2,"FF5252","40C4FF","petals in every colour","rustle","Every colour. All at once.","plant,flower,magic"},
-	{"rainbow grasshopper","AMAJFG","UdAP",1,6,1,"2AA06A","E8501E","grasshopper painted every color","buzz","Looks painted by a kid.","insect"},
-	{"rainbow lightning","FDDAKB","jeLV",7,10,1,"FF4081","40C4FF","bolt splitting into rainbow branches","crack","Every colour of zap.","electric,cute"},
 }
