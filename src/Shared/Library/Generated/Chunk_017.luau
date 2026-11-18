@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mind control ray","OLBBwI","je",5,6,3,"A66BDB","8BC34A","spiral-dish ray gun","hum","You are getting very... confused.","scifi"},
+	{"mind grip","KLCAKJ","leO",6,8,3,"C9A8FF","7A4FE0","a glowing psychic grip lifts the target and slams them down","hum","Hold still. Now fall.","hero,movie,psychic"},
+	{"mind spike","FLBAuB","TO",5,9,1,"E040FB","FFFFFF","pink crystal spike of thought","zing","Ouch. In the brain.","psychic"},
 	{"mine bot","OABJGF","DEk",4,7,1,"1F2937","EF4444","small rolling bomb robot with blinking light","beep","Beep. Beep. Beepbeepbeep. BOOM.","robot,explosive"},
 	{"mine cart","DEBKHL","UDkg",3,7,5,"6B4F3A","8C8C8C","iron tub on little rail wheels","engine","Hold on to your helmet!","mechanical,vehicle,land"},
 	{"mine roller tank","DKDMHL","GDkfg",6,3,9,"4B5320","6D4C41","tank with spinning chain flails in front","boom","Whips the ground. Pops the mines.","mechanical,vehicle,military"},
@@ -400,7 +403,4 @@ return {
 	{"neon sign","BHCB1I","cO",2,1,3,"FF3EA5","3FC1D9","glowing tube letters","beep","OPEN. For business. For battle.","tech"},
 	{"nephew","LMBJNA","UDd",2,7,3,"10B981","F2D0B4","small boy with a toy dinosaur and sticky hands","giggle","Why? Why? But why? Why though?","family,cute"},
 	{"neptune","MCFGKJ","JkIe",8,2,10,"1E5BB8","4FC3F7","deep blue sphere, white streaky clouds","rumble","Windiest planet. Breezy is an understatement.","space"},
-	{"nerd","LLCJNA","jeh",3,4,3,"0EA5E9","F8FAFC","thick glasses, pocket protector, calculator","ding","Calculated your weakness. In seconds.","school,meme"},
-	{"nerve","KDBBCB","LPO",4,9,1,"FFE45E","FFFFFF","jagged yellow nerve line crackling with sparks","zap","You are getting on it. The last one.","body,science,electric"},
-	{"nest","EGBMII","Geh",3,1,3,"8D6E4A","C9A66B","twig bowl with three speckled eggs and an angry beak","tweet","Mama bird is home. And furious.","bird,wild"},
 }

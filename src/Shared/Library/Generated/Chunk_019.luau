@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"parent","LMCJNA","GFO",4,4,6,"6C8EBF","F2D0B4","grown-up with crossed arms, car keys, raised eyebrow","sigh","Because I said so. That is why.","family"},
+	{"parfait","IGBOKI","F",2,5,3,"F7F4EC","D7263D","tall glass of layered yogurt, berries","crunch","Layers of fruit, yogurt, crunch.","edible,healthy,breakfast"},
+	{"park","MGENII","FS",2,1,6,"7CB342","F5E6CA","grass, trees, benches, a duck pond","rumble","Lovely spot for a picnic. And an ambush.","place,terrain"},
 	{"park ranger","LGCJNA","QFc",3,6,5,"365314","D6A35A","flat-brim hat, khaki uniform, binoculars","whistle","Only you can prevent forest fires.","outdoor"},
 	{"parka","BCCONI","GJ",1,4,3,"E67E22","1F2F55","puffy hooded winter coat","swish","Marshmallow armour.","clothing,winter"},
 	{"parking lot","MEDNII","SN",1,1,6,"424242","F5F5F5","flat grey lot, painted lines","rumble","Every space is taken. Forever.","place,terrain,silly"},
@@ -400,7 +403,4 @@ return {
 	{"plot hole","KLCLII","HY",5,5,3,"212121","7C4DFF","glowing hole in reality's story","whum","That makes no sense. Down you go.","silly,meme"},
 	{"plot twist","KLCNOI","jVY",5,6,2,"7C4DFF","FFD54F","swirling spotlight and question marks","dun","Nobody saw that coming.","chaos,meme"},
 	{"ploughman's lunch","IGBOKI","F",2,5,3,"F2C24A","C8904A","plate of bread, cheese, pickle","crunch","A farmer's lunch. Simple and strong.","edible,healthy"},
-	{"plover","AMBJDA","jAfT",3,5,2,"A8906A","F2F2F0","small bird with neck rings","squawk","Fakes a broken wing. Award winner.","bird,wetland"},
-	{"plow","JECFJF","CkI",5,4,6,"6B7280","8B5A2B","curved steel blade carving a furrow, dirt peeling aside","rumble","Turns fields over. Enemies too.","farm,tool"},
-	{"plug","BDBL1I","SLO",3,1,4,"F5F5F5","FACC15","three-prong plug and a wall socket with a surprised face","zap","Do not stick a fork in it. Seriously.","electric,household"},
 }

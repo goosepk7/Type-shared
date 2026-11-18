@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"island","MBENII","GFSN",3,1,8,"E6C27A","43A047","sandy island with palm trees","rumble","Surrounded by water. And sharks, probably.","place,terrain,aquatic"},
+	{"isopod","ABCJRA","GfT",3,4,7,"B8B0A0","E8E0D0","huge armored deep-sea pill bug","clack","A pill bug the size of a cat.","crustacean,aquatic,armored,deepsea"},
+	{"it","AICJGD","jQWZ",5,4,5,"374151","A3E635","shapeless something under a sheet, one tentacle poking out","gurgle","What is it? Nobody knows. It is coming.","spooky,silly"},
 	{"italian ice","ICBAKJ","JeN",3,5,2,"F2D23A","F7F7F2","cup of smooth fruity ice","squish","Ice that went to culinary school.","edible,frozen,sweet"},
 	{"itch","KJAAKB","jd",1,8,1,"C0CA33","FFFFFF","tiny wiggly itch lines","scritch","Can't stop scratching.","silly"},
 	{"itching powder","CMADOI","jd",1,6,1,"D2B48C","F2F2EE","puff of scratchy powder","thwip","Scratch. Scratch. SCRATCH.","prank,silly"},
@@ -400,7 +403,4 @@ return {
 	{"larb","IGBOKI","F",2,5,3,"C8A070","7DBE3A","minced meat herb salad","crunch","Zesty minced salad.","edible,healthy"},
 	{"larch","NGDCMI","GWkS",3,1,7,"795548","FFC107","conifer that turns gold and drops needles","rustle","A pine tree that changes its mind.","plant,tree"},
 	{"lark","AMAJDB","dA",1,7,1,"A88A6A","E8D8C0","streaky brown bird, crest","tweet","Sings while climbing to the sky.","bird,cute"},
-	{"larva","AMAJTD","CWP",1,3,1,"F2E8D0","C8B07A","soft squishy baby bug","squelch","Baby bug. Hungry bug.","bug"},
-	{"lasagna","IMCCII","GFc",3,2,6,"D8602B","F2D08A","layered slab, cheese, red sauce","thud","Layers upon layers of cozy defense.","edible,giant"},
-	{"laser","CHCBJI","KTe",6,10,3,"FF2D2D","F2F2EE","thin searing red beam","zap","Pew pew, but continuous.","scifi,ranged"},
 }

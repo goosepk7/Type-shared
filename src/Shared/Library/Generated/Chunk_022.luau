@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rope ladder","BMCCII","l",1,3,2,"B89B6A","8B5A2B","dangling ladder of rope","thud","Climb up. Climb away.","object"},
+	{"rope swing","EMBLII","kS",1,1,3,"8D6E63","212121","rope dangling from a branch with a tyre","thud","Swing out. Kick enemies.","structure,silly"},
+	{"roper","AECLII","cfH",5,1,8,"78716C","FBBF24","rock stalagmite with sticky tendrils","chomp","Pretends to be a rock. Very convincing.","dungeon"},
+	{"rose","NGBNMI","dFST",3,1,3,"C62828","2E7D32","layered red bloom, thorny stem","rustle","Smells sweet. Stings worse.","plant,flower,sharp"},
 	{"rose hedge","NGCCMI","GST",3,1,6,"1B5E20","C62828","hedge spotted with red roses and thorns","rustle","Pretty from afar. Ouch up close.","plant"},
 	{"rosella","AMBJDB","jdA",2,6,2,"E8301E","2A6AE8","red-blue-yellow scalloped parrot","squawk","Dressed like a stained glass window.","bird,jungle,silly"},
 	{"rosemary","IGBOMI","WF",2,4,3,"4E6B4A","8A9A7A","needle-leaf sprigs","crunch","Smells like a roast and a forest.","edible,vegetable,healthy,herb"},
@@ -399,8 +403,4 @@ return {
 	{"seraph knight","AHCJNB","AFf",6,6,7,"F8FAFC","FACC15","winged knight in gold armor","clang","Heaven's bodyguard.","holy,warrior"},
 	{"serendipity","KHBOKJ","Fa",2,6,2,"43A047","FFF59D","surprising sparkle of clovers","ding","Oops. That went perfectly.","luck"},
 	{"seriema","AMCJDA","Dkf",4,8,5,"C8B08A","E8301E","long legs, feather tuft","boom","Smashes snakes on rocks.","bird,flightless"},
-	{"serow","AMCJAA","df",3,4,4,"3A3A3A","8A7A6A","goat-antelope with donkey ears","bleat","Goat, donkey, antelope. Pick one.","mammal,farm"},
-	{"serrano","IABAKK","KeP",5,7,2,"3E8E2B","C8202B","slender green pod","sizzle","Thin, green, and sneaky hot.","edible,spicy,flammable,pepper"},
-	{"serval","AMCJAA","UZfT",4,7,3,"D9B35A","1F1A12","tall legs, huge ears, spotted coat","hiss","Mostly ears and legs. And attitude.","mammal,predator,wild"},
-	{"servant","LMCJNA","GQF",2,5,3,"1F2937","F8FAFC","tidy helper with a silver tray and white gloves","ding","You rang? I brought snacks and a shield.","royal,support"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clean","KBCF6B","FIX",3,6,2,"7DD3FC","FFFFFF","sparkling wipe arc leaving a gleaming streak and bubbles","squeak","Squeaky clean. Hear that? That is the squeak.","household,support"},
 	{"cleaner shrimp","ABAJRA","GFfT",1,4,5,"E8301E","F2F2F2","red-white striped shrimp","clack","Runs a dental clinic for fish.","crustacean,aquatic,armored"},
 	{"cleaner wrasse","ABAJEC","dFB",1,6,1,"3A6AE8","1E1E1E","small striped cleaner fish","splash","Runs a spa for sharks.","fish,aquatic"},
 	{"cleaning robot","OKBJNF","dIN",2,4,4,"F8FAFC","0EA5E9","small robot with mop and bucket","whir","Wet floor. Your fault.","robot,silly"},
@@ -402,5 +403,4 @@ return {
 	{"crescent diadem","BHCAJK","UTe",5,9,3,"F6C85C","FF96CE","a gold tiara spinning in a disc of moonlight","chime","In the name of the moon, it comes back.","anime,magical girl,boomerang"},
 	{"crescent moon","MHDHKK","fTe",5,6,5,"FFF59D","E0E0E0","thin glowing curved sliver","rumble","Sharp enough to slice the night.","space,magic"},
 	{"crescent slash","FHCHJB","Te",6,9,1,"E8EAF6","9FA8DA","flying silver crescent-moon blade","shing","A sliver of moon. Sharp side first.","space,sharp"},
-	{"crested gecko","AMBJAA","Cf",2,7,2,"E8A03A","F2D07A","eyelash crests, sticky toes","hiss","Has eyelashes. Licks its eyes.","reptile,pet"},
 }

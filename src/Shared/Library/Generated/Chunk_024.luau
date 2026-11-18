@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"smash","KECAKB","kfO",6,7,3,"8D6E63","FFE082","giant fist-shaped impact burst","crash","Big hands. Big crash. Big fun.","heavy"},
+	{"smell","FJCDOJ","jSIP",3,4,1,"A3B18A","D9E76C","wavy green stink lines rising from an old trainer","whiff","Whoever smelt it, dealt it.","gross,silly"},
+	{"smelt","ABAJEC","dB",1,6,1,"C8D8E0","8AA0B0","tiny smelly silver fish","splash","Smells like cucumber. Seriously.","fish,aquatic"},
+	{"smile","KHAOKJ","F",1,5,1,"FFEB3B","FFFFFF","bright sparkly smile glow","ding","Smile! Things just got better.","cute,support"},
+	{"smite","FHDAKB","KkO",7,9,1,"FFE57F","FFFFFF","golden lightning-like bolt of holy light from above","boom","Smitten. In the bad way.","holy"},
 	{"smog","FJCDOJ","jMN",3,3,3,"8A8270","C5BEA8","brownish yellow choking haze","cough","Bad air day.","toxic"},
 	{"smoke","FACDOJ","jZS",2,4,2,"5C5C5C","B0B0B0","thick grey billowing cloud","hiss","Smoke and mirrors, minus the mirrors.","fire"},
 	{"smoke detector","OKAF1I","O",1,1,3,"F2F2EE","C0392B","ceiling disc that beeps","beep","BEEP BEEP BEEP.","household,loud"},
@@ -398,9 +403,4 @@ return {
 	{"squeeze","KMCLII","O",4,5,3,"F48FB1","FFFFFF","giant glowing hand squeeze","squeak","A very firm hug.","silly"},
 	{"squid","ABCJSC","jZHeB",4,6,3,"E8B0A0","D8584A","long torpedo body, ten arms, fins","squelch","Squirts ink and leaves. Bye!","aquatic,ocean,smart"},
 	{"squid mage","ALCJNJ","jiO",6,5,4,"A855F7","F0ABFC","purple robed figure, tentacle face","hum","Reads your mind. Unimpressed.","dungeon,spooky"},
-	{"squire","LMBJNA","dQF",2,6,3,"78350F","94A3B8","oversized helmet, carries everything","clank","Carries the knight's bags. And the knight.","silly"},
-	{"squirrel","AMAJAA","Cdeb",1,6,1,"A8562A","F2D8B8","big bushy tail, nut in paws","squeak","Buries nuts. Forgets where. Always.","mammal,cute"},
-	{"squirrel monkey","AMAJBA","deb",1,8,2,"E0A84A","F2F2EE","tiny, white mask, yellow arms","chatter","Hyperactive mini monkey.","mammal,primate"},
-	{"squirrelfish","ABAJEC","dB",1,6,1,"E8301E","F2F2EE","big-eyed red reef fish","splash","Big eyes, red coat, night shift.","fish,aquatic,nocturnal"},
-	{"squirt","KBBAwB","jeN",2,8,1,"38BDF8","FFFFFF","spray bottle firing one sharp jet of water","squirt","Bad summon! Off the couch!","silly,pet"},
 }

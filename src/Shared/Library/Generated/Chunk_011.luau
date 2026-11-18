@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
 	{"ghost car","DICKHE","DjZg",5,7,3,"B3E5FC","5E35B1","see-through glowing car, no driver","engine","Nobody is driving. Nobody.","mechanical,vehicle,land,spooky"},
 	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
 	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
@@ -402,5 +403,4 @@ return {
 	{"green grape","IGAELB","eVP",2,7,1,"A8D16B","E6F2B5","pale green round orb","pitter","The grape that stayed calm.","edible,fruit,sweet"},
 	{"green lightning","FDDAKB","MeL",7,10,1,"00E676","B9F6CA","bright green forked bolt","crack","Zap, now in lime.","electric"},
 	{"green mamba","AMCJCD","fMN",4,8,3,"4AC84A","E8F07A","bright green slender tree snake","hiss","Neon green. Lives in trees.","reptile,venomous"},
-	{"green man","AGCJNA","WFN",5,3,6,"15803D","4D7C0F","face made of oak leaves with vine beard","rustle","The forest's face. Watching.","spirit,plant"},
 }

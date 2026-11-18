@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
 	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
 	{"flight","KFCOKB","A",2,8,3,"B3E5FC","FFFFFF","caster lifting off with wind streaks","whoosh","Who needs stairs?","air"},
 	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
@@ -402,5 +403,4 @@ return {
 	{"ghee","IMBLGI","kSO",2,3,2,"F2C24A","F8E58C","jar of golden liquid fat","squeak","Golden, glossy, and very slippery.","edible,slippery,silly,dairy"},
 	{"ghost","AICJGJ","jAZO",4,6,2,"E5E7EB","A5B4FC","floaty sheet shape, hollow eyes, wavy tail","wail","Goes BOO. Very proud of that.","undead,spooky,halloween,ghost"},
 	{"ghost bat","AIBJDB","jiA",2,7,1,"E8E0D8","C8B8A8","pale ghostly bat","screech","Pale, spooky, and hungry.","mammal,nocturnal,spooky"},
-	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
 }

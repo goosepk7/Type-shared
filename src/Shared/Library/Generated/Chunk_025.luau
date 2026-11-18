@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"squire","LMBJNA","dQF",2,6,3,"78350F","94A3B8","oversized helmet, carries everything","clank","Carries the knight's bags. And the knight.","silly"},
+	{"squirrel","AMAJAA","Cdeb",1,6,1,"A8562A","F2D8B8","big bushy tail, nut in paws","squeak","Buries nuts. Forgets where. Always.","mammal,cute"},
+	{"squirrel monkey","AMAJBA","deb",1,8,2,"E0A84A","F2F2EE","tiny, white mask, yellow arms","chatter","Hyperactive mini monkey.","mammal,primate"},
+	{"squirrelfish","ABAJEC","dB",1,6,1,"E8301E","F2F2EE","big-eyed red reef fish","splash","Big eyes, red coat, night shift.","fish,aquatic,nocturnal"},
+	{"squirt","KBBAwB","jeN",2,8,1,"38BDF8","FFFFFF","spray bottle firing one sharp jet of water","squirt","Bad summon! Off the couch!","silly,pet"},
 	{"squirt flower","CBAAJI","de",1,9,1,"F2F2EE","F1C40F","lapel flower that sprays","thwip","Smell the flower! SPLASH.","prank,silly"},
 	{"squish","KMCAKB","XO",4,6,2,"AED581","FFFFFF","giant cartoon palm squashing down","squish","Squish! Flat as paper.","silly"},
 	{"squishy","BMAAKI","Ude",1,6,1,"FFB38A","F2F2EE","soft slow-rising foam toy","squeak","Squish. It'll come back.","toy"},
@@ -315,6 +320,7 @@ return {
 	{"summon","KLCJNA","h",4,5,3,"7C4DFF","FFD54F","glowing summoning circle with a figure rising","warp","Who did you call? Something big.","magic"},
 	{"summoner","LLCJNA","ehY",5,4,3,"6D28D9","F0ABFC","robes with summoning circle sigils","zap","Doesn't fight. Has friends who do.","magic"},
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
+	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
@@ -397,10 +403,4 @@ return {
 	{"swamp cypress","NBDCMI","GWkSN",3,1,7,"795548","9E9D24","tree standing in water with knobby knees","rustle","Stands in the swamp. Kneels to nobody.","plant,tree"},
 	{"swamp gas","FJCDOJ","jSM",4,3,2,"9E9D24","C5E1A5","glowing greenish swamp fumes","bubble","Smells like a swamp burped.","toxic"},
 	{"swamp hag","AJCJNA","MNh",5,4,4,"365314","84CC16","witch in mossy rags with frog familiar","cackle","Brews soup. Nobody asks what's in it.","witch"},
-	{"swamp shack","EBBNII","GSN",3,1,4,"6D4C41","33691E","rickety hut on stilts over swamp","moan","Rickety. Rotten. Ready.","place,spooky"},
-	{"swan","ABCJDC","AkfB",3,5,2,"F7F7F4","F2701E","white swan, long curved neck","hiss","Graceful on top. Paddling chaos below.","bird,aquatic"},
-	{"swan goose","ABBJDC","AfOB",2,5,2,"C8A07A","1E1E1E","knobby goose","quack","Knob-nosed goose. Loud.","bird,aquatic"},
-	{"swarm","AGDDLB","jAQMP",6,8,2,"2B2B2B","F5C518","dense black-and-yellow buzzing cloud, shifting shape","buzz","Bzzzzzzzzzzzzzzzzzzzzzzzzzzzzz. Run.","insect,swarm"},
-	{"sweat bee","AJAJLB","iATMP",2,7,1,"2AC86A","F2D82A","tiny metallic bee","buzz","Drinks your sweat. Weird.","insect,swarm,venomous"},
-	{"sweatband","BMAONF","F",1,7,1,"F2F2EE","C0392B","stretchy terry band","bonk","Peak sport energy.","sport"},
 }

@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toffee","IMBLGI","SNO",2,3,3,"B5651D","D9A04A","shattered golden slab","gloop","Glues teeth together. Try it on enemies.","edible,sticky,candy,sweet"},
+	{"toffee bar","IMBLGI","SNP",2,3,3,"B5651D","5A2E16","hard toffee with chocolate top","gloop","Crunch then stick.","edible,sticky,candy"},
+	{"tofu","IMBLGG","USN",2,3,3,"F7F4EC","E8E0C8","white wobbly block","wobble","Wobbly, white, and takes any flavor.","edible,wobbly"},
+	{"toga","BMCONI","F",1,5,1,"F2F2EE","D4A72C","draped white sheet","swish","Very ancient. Very breezy.","clothing,ancient"},
+	{"toilet","BBCL0I","dHO",2,1,6,"F2F2EE","F2F2EE","porcelain toilet with lid up","splash","Flush them away.","bathroom,silly"},
+	{"toilet brush","BJBHrK","fM",1,6,2,"F2F2EE","8E9196","bristly brush on handle","thud","The grossest sword.","bathroom,silly"},
+	{"toilet paper","BBAAKF","deN",1,6,1,"F2F2EE","F2F2EE","roll of soft white paper","splash","Unroll. Tangle. Victory.","bathroom,silly"},
 	{"toilet paper launcher","CMCMxK","deN",1,6,3,"F2F2EE","8E9196","tube cannon of paper rolls","boing","Decorates trees. And enemies.","prank,silly"},
 	{"tokay gecko","AMBJAA","Cf",2,7,2,"6A8AA0","E8701E","blue-grey gecko with orange spots","tokay","Screams its own name. Bites.","reptile"},
 	{"token","BKAA3K","Uce",1,8,4,"D4AF37","B45309","brass coin stamped with a star and NO CASH VALUE","clink","No cash value. Much smack value.","gaming,shiny"},
@@ -396,11 +403,4 @@ return {
 	{"vardo wagon","DMCKHL","Dkg",3,4,5,"C62828","FFD54F","brightly painted curved-roof wagon","clatter","A home on wheels. Very colourful.","vehicle,ancient"},
 	{"vase","BMBAKK","eV",1,5,1,"2F6FD1","F2F2EE","tall painted porcelain vase","thud","Priceless. Throwable.","container"},
 	{"vega","MHDAKJ","KTe",6,7,6,"E3F2FD","90CAF9","bright blue-white spinning star","twinkle","Spins so fast it is squashed.","space,star"},
-	{"vegetable","IGBOKI","F",2,5,3,"5E9E3A","ED9121","bundle of mixed vegetables","crunch","Eat your vegetables. Throw your vegetables.","edible,healthy"},
-	{"vegetable soup","IBBOGI","FS",3,4,3,"C8762B","7DBE3A","chunky veg broth bowl","slurp","Every vegetable, taking a hot bath.","edible,warm,healthy"},
-	{"vegetable stew","IBBOGI","FS",3,4,3,"C8762B","7DBE3A","bowl of chunky veg stew","slurp","Vegetables, slowly united.","edible,warm,healthy"},
-	{"vegetable tray","IGBOKI","F",2,5,3,"ED9121","7DBE3A","platter of cut vegetables","crunch","The healthy part of the party.","edible,healthy"},
-	{"veggie burger","IGBOKI","F",2,5,3,"7DBE3A","C8762B","bun with green-brown patty","crunch","A burger that loves vegetables.","edible,healthy"},
-	{"veggie chips","IMBAKK","Uke",3,7,2,"E8434F","ED9121","colorful crispy slices","whoosh","Healthy-ish chips.","edible,snack"},
-	{"vehicle","DMCKeL","Dkg",4,7,5,"F59E0B","1F2937","generic boxy buggy with mismatched wheels and one headlight","engine","It has wheels. Probably. Get in.","vehicle,mechanical"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green man","AGCJNA","WFN",5,3,6,"15803D","4D7C0F","face made of oak leaves with vine beard","rustle","The forest's face. Watching.","spirit,plant"},
 	{"green mango","IMBAKF","jke",3,6,2,"8DB84A","F2E8C0","unripe green mango","squirt","So sour your ears twitch.","edible,fruit,sour"},
 	{"green onion","IMBHJI","kf",3,5,4,"5E9E3A","F2F2E0","long green stalk, white bulb","bonk","An onion that never grew up.","edible,silly,vegetable"},
 	{"green pepper","IGBAKF","Fke",3,5,3,"3E8E2B","5EAE3A","blocky green bell pepper","thud","A bell that never rings.","edible,vegetable,healthy"},
@@ -136,6 +137,7 @@ return {
 	{"hagfish","ABAJCC","dSNB",1,6,1,"D8A0A0","F2D0C8","pink eel blob","splash","Makes buckets of slime. On purpose.","fish,aquatic,silly"},
 	{"haggis","IMBGKF","DkI",3,5,6,"8A5A3A","5A3A2A","round stuffed sausage ball","rumble","Scotland's mysterious round dinner.","edible,heavy"},
 	{"hail","GCCEOB","keO",5,7,3,"DCEBF5","9CBBD0","bouncing ice balls from grey cloud","rattle","Ice cubes, delivered angrily.","frozen,storm"},
+	{"hail mary","BECN3K","Eke",6,5,2,"7A3E1E","F4F1EA","laced leather spiral lobbed half a field away","boom","Throw it up and pray.","sport,gridiron,artillery"},
 	{"hailstorm","GCDEOB","kNPO",7,6,4,"C3D8E6","7FA4BD","dark cloud pelting big ice chunks","rattle","Free ice. Applied at speed.","frozen,storm"},
 	{"hainanese chicken rice","IGBOKI","F",2,5,3,"F2E8C8","7DBE3A","poached chicken, fragrant rice","crunch","Simple, silky, perfect.","edible,healthy"},
 	{"hair","BMCLGD","WHN",3,3,3,"6B4423","A0723D","living mop of long brown hair, no face","swish","Bad hair day. For you.","body,silly"},
@@ -223,6 +225,7 @@ return {
 	{"hashtag","KDBAJK","TeP",3,8,2,"38BDF8","FFFFFF","big blue # spinning like a four-point throwing star","ding","#Blessed. #Hit. #Ouch.","meme,internet"},
 	{"haste","KFBOKB","D",2,10,2,"FFEB3B","FFFFFF","yellow speed lines around caster","zip","Gotta go fast.","speed"},
 	{"hat","BMBONI","d",1,6,1,"7A4E2D","24262A","simple brimmed hat","swish","Hat. Classic.","clothing"},
+	{"hat trick","BMBA3K","keV",5,8,2,"F2F2EE","3FA34D","three panelled balls kicked in a quick volley","thump","One. Two. Three. Hats off.","sport,soccer,projectile"},
 	{"hatchet","CKBHsK","fV",3,7,4,"8A929B","8B5A2B","small one-hand axe","chop","Little axe, big attitude.","medieval,sharp"},
 	{"hatchetfish","AHAJEC","dB",1,6,1,"B8C8D8","E8F0F8","silver hatchet-shaped glowing belly","splash","Shaped like a tiny axe. Glows.","fish,aquatic"},
 	{"hate","KICDOJ","jiNP",5,5,1,"7F1D1D","1F2937","seething dark red scribble cloud with angry eyebrows","growl","Haters gonna hate. This one floats, too.","mood,spooky"},
@@ -400,7 +403,4 @@ return {
 	{"hockey goalie pads","BMCIyF","G",1,3,5,"F2F2EE","C0392B","huge padded leg shields","bonk","The wall of the net.","sport"},
 	{"hockey mask","BKBONI","Gj",1,6,4,"F2F2EE","C0392B","white face guard with holes","clank","Spooky and safe.","armor,sport"},
 	{"hockey net","BMCLII","O",1,1,4,"C0392B","F2F2EE","red-framed small net","bonk","He shoots, he's trapped.","sport"},
-	{"hockey player","LCCJNA","Dke",5,8,5,"111827","F8FAFC","helmet, skates, hockey stick","crack","Body check! Hockey puck incoming.","sport,frozen"},
-	{"hockey puck","BMAA3F","keO",2,9,6,"24262A","4A4D52","flat black rubber disc","bonk","Slaps across ice. Slaps across faces.","sport"},
-	{"hockey stick","BMCHJK","kfI",3,7,4,"24262A","F2F2EE","long stick with angled blade","bonk","Slapshot to the face-off.","sport"},
 }
