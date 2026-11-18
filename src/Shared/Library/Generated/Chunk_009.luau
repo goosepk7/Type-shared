@@ -375,7 +375,6 @@ return {
 	{"floor is lava","KADNOI","KS",6,3,4,"FF3D00","FFB300","floor turning into glowing lava","bubble","It's not a game anymore.","fire,meme,silly"},
 	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
 	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
-	{"floss","KMBONA","Ujd",2,8,1,"A7F3D0","FFFFFF","figure swinging hips and arms opposite ways, minty string","swish","For your teeth. Or the dance floor. Both.","meme,dance"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
 	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},

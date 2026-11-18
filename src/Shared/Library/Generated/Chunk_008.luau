@@ -315,7 +315,6 @@ return {
 	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
 	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
 	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
-	{"emote","KMBONA","UdO",2,7,1,"F472B6","22D3EE","character doing a looping silly dance with music notes","music","Emoted on. The ultimate disrespect.","gaming,meme"},
 	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
 	{"emp","CDCGKF","LPO",5,6,2,"3FC1D9","C9CED4","disc crackling with blue arcs","boom","Robots hate this one.","explosive,scifi,electric"},

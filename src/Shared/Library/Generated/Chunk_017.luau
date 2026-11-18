@@ -393,6 +393,7 @@ return {
 	{"noni","IJBDOJ","jSM",3,3,2,"E8E8C8","A8B86A","bumpy pale fruit","whiff","Smells like old cheese.","edible,smelly,fruit"},
 	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
 	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
+	{"noob tube","CACAwI","UEeV",5,6,1,"5D6B3A","FFB13B","a chunky launcher lobs three bouncing grenades","thump","Skill issue? No, tube issue.","gaming,shooter,explosive"},
 	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
 	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
 	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},

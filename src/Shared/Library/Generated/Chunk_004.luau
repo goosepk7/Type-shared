@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
 	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},

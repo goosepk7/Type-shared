@@ -362,7 +362,6 @@ return {
 	{"grenade","CABGKF","EkeV",5,6,2,"6B7B3A","4A4D52","pineapple-shaped grenade with pin","boom","Pull pin. Throw. Run.","explosive"},
 	{"grenade barrage","CADEJK","EP",7,5,1,"6B7B3A","4A4D52","shower of grenades","thud","Pins pulled. All of them.","explosive"},
 	{"grenade belt","BMBONI","E",4,5,3,"6B7B3A","7A4E2D","belt of grenades","thud","Fully loaded. Fully nervous.","explosive"},
-	{"grenade launcher","CKCAwI","UEe",7,5,4,"6B7B3A","24262A","fat-barreled drum launcher","thoomp","Lobs bouncy little booms.","explosive,ranged"},
 	{"grenadier","LACJNA","Eke",6,5,5,"DC2626","111827","tall hat, satchel of round bombs","boom","Throws bombs. Very far. Very fast.","warrior,explosive"},
 	{"grevy's zebra","AMDJAA","Dk",5,8,5,"F2F2F0","1A1A1A","thin stripes, big round ears","neigh","Thinner stripes. Bigger ears.","mammal"},
 	{"grey alien","ALCJNA","jlOY",5,5,3,"9CA3AF","0F172A","big head, huge black almond eyes, thin limbs","hum","Abducts cows. Returns them confused.","alien,space"},

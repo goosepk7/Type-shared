@@ -283,6 +283,7 @@ return {
 	{"quiche","IMBAKK","Uke",3,7,2,"F2D08A","7DBE3A","fluted savory tart","whoosh","An egg pie with a fancy name.","edible"},
 	{"quicksand","FECLII","SHN",5,2,5,"C9A66B","E8D3A7","rippling sand pool, sinking swirl","squelch","Struggling makes it worse. Enjoy.","desert"},
 	{"quicksand pit","EECLII","SHN",3,1,6,"E6C27A","A1887F","rippling patch of wet golden sand","thud","Stop struggling. It only makes it worse.","structure,defense"},
+	{"quickscope","CHBBwK","Te",6,9,1,"3A4250","FFE35A","a full spin and a sniper round with a scope glint","zap","Get rekt, scrub. (Respectfully.)","gaming,shooter,meme"},
 	{"quill","BMAAJK","Te",1,8,1,"F2F2EE","24262A","long feather with ink nib","tap","Writes curses beautifully.","school,fantasy"},
 	{"quince","IGAAKK","keO",3,7,6,"E8D23A","A88A2A","lumpy yellow pear-apple","bonk","Hard as a rock until cooked.","edible,fruit"},
 	{"quit","KABO1B","EZY",3,9,1,"EF4444","111827","controller smashed on the floor, screen reading DISCONNECTED","crash","Alt. F4. Slam. Silence.","gaming,meme"},
