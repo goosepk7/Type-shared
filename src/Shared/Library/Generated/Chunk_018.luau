@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nigersaurus","AMEJAA","kHI",6,2,9,"8A7A6A","D8C8B0","vacuum-cleaner wide mouth","rumble","Has 500 teeth. Mouth like a vacuum.","dinosaur,extinct,reptile,heavy"},
 	{"night","FIDNOI","ZN",4,4,3,"141A3A","5E6AB8","starry dark-blue dome falling over area","hush","Bedtime. For everyone.","space,spooky"},
 	{"night blooming cereus","NHBNMI","FS",3,1,2,"FFFFFF","F5F5F5","huge white bloom open one night only","rustle","One night only. Do not miss it.","plant,flower"},
 	{"night heron","AMCJDA","AfT",3,5,2,"1E2A3A","F2F2EE","stocky heron, red eyes","squawk","Works the night shift.","bird,wetland,nocturnal"},
@@ -402,5 +403,4 @@ return {
 	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
 	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
 	{"party bus","DMDKHL","Ddkcg",4,5,7,"7E57C2","FF4081","bus with flashing lights and music","music","Nobody can resist the party.","mechanical,vehicle,land,silly"},
-	{"party hat","BMAONI","d",1,6,1,"FF3EA5","D4A72C","pointy striped cardboard cone hat","squeak","You can't be sad in this hat.","party,silly"},
 }

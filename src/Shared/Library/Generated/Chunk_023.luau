@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow dash","KICOKB","DZ",4,10,2,"1A0033","7C4DFF","black smoky streak","hiss","Was that a shadow? It was me.","spooky,speed"},
 	{"shadow dome","KIDIKI","GZ",3,3,7,"1A0033","7C4DFF","black smoky dome hiding allies","hiss","Can't hit what you can't see.","spooky,defence"},
 	{"shadow dragon","AIEKAB","iAZeg",8,7,7,"1E1B2E","7C3AED","smoky wings, violet eyes, wispy tail","roar","Blends into the night. Bumps into the moon.","mythical,reptile,spooky,flying"},
 	{"shadow elemental","AIDJNJ","jiZ",6,7,4,"1E1B4B","6D28D9","inky shape with purple eye slits","whisper","Only visible in the dark. Which is cheating.","elemental,spooky"},
@@ -167,6 +168,7 @@ return {
 	{"shrink spell","KLCBKI","eX",4,8,2,"FF4081","F8BBD0","pink zig-zag beam, target shrinking tiny","zwip","Pocket-sized problems.","silly"},
 	{"shrink storm","GDENOI","LXN",4,4,9,"FFE45C","4A3C78","storm cloudlets over every foe, bolts shrink them","thunder","Everyone gets a little smaller. Except you.","game,racing,lightning,ultimate"},
 	{"shrinking potion","BLAA2I","eX",3,6,1,"8BC34A","BFE6F2","tiny bottle labelled DRINK ME","bubble","Small but mighty.","magic,fantasy"},
+	{"shroom sprout","AGBJcA","DkNh",3,5,4,"7A4FC9","C8F25A","waddling toadstool critter with leaf arms that headbutts","boing","Small, stubborn, bouncy.","game,platformer,summon"},
 	{"shrug","KMBINI","Gja",2,4,4,"9CA3AF","FDE68A","figure with both palms up and shoulders at ear height","sigh","Not my problem. Might be yours.","meme,silly"},
 	{"shunosaurus","AMEJAA","kIO",7,2,9,"7A6A5A","B8A890","tail club sauropod","rumble","Long neck, club tail. Combo.","dinosaur,extinct,reptile,heavy"},
 	{"shuriken","CKAAJK","UTeV",3,10,1,"3A3F45","C9CED4","four-point spinning star","shing","Spins in, says hello, leaves.","medieval,sharp,ninja"},
@@ -401,6 +403,4 @@ return {
 	{"snakefly","AMAJFB","dAP",1,6,1,"1E1E1E","8A6A4A","long neck flying bug","buzz","Has a snake neck.","insect"},
 	{"snakehead","ABCJCC","DfB",4,7,4,"5A5A3A","C8B88A","long fish with snake-like head","splash","Walks between ponds. Rude.","fish,aquatic"},
 	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
-	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
-	{"snapper","ABBJEC","dB",2,6,1,"D84A3A","F2D8D0","rosy red fish","splash","Snappy name. Chill fish.","fish,aquatic"},
 }

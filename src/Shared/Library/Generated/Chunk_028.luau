@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vibe check","KHBFOB","jO",3,8,1,"CE93D8","FFF59D","pastel ring checking everyone","ding","Vibe check! You failed.","meme"},
+	{"vibration","FEBFOB","O",3,7,2,"9C8B7A","E0D4C4","trembling ground rings","buzz","Bzzzzzzzz.","silly"},
 	{"vibro blade","CKCHrK","fTO",6,8,4,"DDE3E8","3FC1D9","humming buzzing blade","shing","It hums. Then it cuts.","scifi,sharp"},
 	{"viburnum","NGCNMI","dFSe",1,1,4,"FFFFFF","2E7D32","round white snowball flower heads","rustle","Throws snowballs. Flower ones.","plant,flower"},
 	{"victim","LMBJNA","dEc",1,3,1,"E5E7EB","F87171","unlucky fellow under a tiny rain cloud with a target sign","oof","Wrong place. Wrong time. Every time.","silly"},
@@ -401,6 +403,4 @@ return {
 	{"windpump","EFDMIK","GSI",3,1,6,"B0BEC5","E53935","metal tower with a spinning fan wheel","creak","Pumps water. Spins menacingly.","structure,farm"},
 	{"windstorm","GFDFOB","kIP",6,7,3,"90A4AE","ECEFF1","long rushing gale with flying leaves","howl","Hold on to something. Anything.","storm,air"},
 	{"wing","BFCODB","AklI",3,8,3,"F5F5F5","CFE3F2","pair of white feathered wings flapping, no body","flutter","Just wings. Body sold separately.","flying,body"},
-	{"wing gust","KFDNDJ","AkI",3,8,2,"FFF4D0","E8B84A","feathered energy wings flap a wide gust","whoosh","Flap once. Float forever. Ish.","hero,movie,wings"},
-	{"winged helmet","BFBONI","DA",3,7,5,"C9CED4","D4A72C","helm with little wings","clank","Swift as a messenger.","armor,fantasy,ancient"},
 }

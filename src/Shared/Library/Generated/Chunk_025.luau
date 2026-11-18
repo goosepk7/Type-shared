@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star anise","IMBAKK","Te",3,7,2,"6B3A1E","A86A3A","eight-pointed brown star pod","whoosh","A spice shaped like a throwing star.","edible,spice"},
+	{"star blade","FHCHrB","KfT",6,8,2,"FFF59D","5C6BC0","sword shimmering with tiny stars","chime","Forged in a star. Probably.","space,sharp"},
 	{"star bolt","FHBAKB","KTe",5,9,1,"FFF9C4","FFD54F","spinning golden star streak","zing","Twinkle, twinkle, bonk.","space"},
 	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
 	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
@@ -401,6 +403,4 @@ return {
 	{"swiss cheese","IMBLKI","dSc",2,3,3,"F2D870","E8C04A","wedge riddled with holes","chomp","More holes than cheese.","edible,sweet,dairy"},
 	{"swiss roll","IMBGKF","DkI",3,5,6,"E8C88A","D23A5A","spiral rolled sponge","rumble","A cake that rolled itself up.","edible,heavy,sweet"},
 	{"switchblade","CKAHJK","ZfT",3,10,2,"C9CED4","24262A","folding blade, slim handle","shing","Click. Surprise.","medieval,sharp"},
-	{"sword","CKCHrK","kfT",5,6,5,"8A929B","6B4226","straight double-edged blade, cross guard","shing","The classic. Pointy end goes toward the problem.","medieval,sharp"},
-	{"sword cane","CKCHrK","fT",5,7,3,"24262A","C9CED4","walking cane hiding a blade","shing","Gentleman's surprise.","sharp"},
 }

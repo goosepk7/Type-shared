@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"macaroni","IMAELB","eVP",2,7,1,"F2D08A","E8C070","small curved tubes","pitter","Tiny curved tubes. Excellent ammo.","edible"},
 	{"macaroon","IMBLKI","dSc",2,3,3,"F7F4EC","D9A04A","toasted coconut mound","chomp","A shaggy coconut haystack.","edible,sweet,dessert"},
 	{"macaw","AMCJDB","jdA",3,6,2,"E8201E","2A6AD8","big red-blue-yellow parrot, long tail","squawk","Loud, proud and rainbow.","bird,jungle,silly"},
 	{"mace","CKCHtK","kfO",5,5,6,"5B6168","6B4226","flanged metal head on short handle","bonk","Like a hug, but metal.","medieval,heavy"},
@@ -402,5 +403,4 @@ return {
 	{"minke whale","ABEJEC","kIB",6,3,9,"3A4250","D8DEE4","small sleek whale, white flipper bands","whalesong","Smallest of the big guys.","mammal,aquatic,ocean,heavy"},
 	{"minmi","AMCJAA","Gkf",4,3,9,"8A7A5A","C8B88A","small armored dino","grunt","Small but fully armored.","dinosaur,extinct,reptile,armored"},
 	{"minnow","ABAJEC","dPB",1,6,1,"9AA8A0","D8E0D8","tiny silver river fish","splash","Small fry. Big dreams.","fish,aquatic"},
-	{"minotaur","AEDJNA","DkfO",7,6,7,"7C2D12","E7E5E4","bull head, giant arms, labyrinth axe","roar","Lost in a maze. Taking it out on you.","mythical"},
 }

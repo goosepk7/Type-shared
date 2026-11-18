@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wing gust","KFDNDJ","AkI",3,8,2,"FFF4D0","E8B84A","feathered energy wings flap a wide gust","whoosh","Flap once. Float forever. Ish.","hero,movie,wings"},
+	{"winged helmet","BFBONI","DA",3,7,5,"C9CED4","D4A72C","helm with little wings","clank","Swift as a messenger.","armor,fantasy,ancient"},
 	{"winged lion","AHDKAB","DAg",6,7,6,"CA8A04","FDE68A","golden lion with eagle wings","roar","Kings of the jungle AND the sky now.","mythical,mount"},
 	{"winged sandals","BFBONI","DA",4,9,2,"D4A72C","F2F2EE","sandals with little wings","swish","Faster than a messenger.","clothing,ancient,magic"},
 	{"wings of light","KHCOKB","AF",3,7,3,"FFFFFF","FFE57F","glowing feathered wings on the caster","whoosh","Flap flap. Very angelic.","holy"},
