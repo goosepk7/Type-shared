@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poached egg","IMBLGG","USN",2,3,3,"F7F2E8","F2B81A","soft white dome, runny yolk","wobble","Wobbly, delicate, delightful.","edible,wobbly,breakfast"},
 	{"poblano","IABAKK","KeP",3,7,2,"1E4A1E","3E6B2A","wide dark green pod","sizzle","Mild, dark, and great stuffed.","edible,spicy,flammable,pepper"},
 	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
 	{"pocket dimension","MLFNII","jZSY",6,1,8,"7C4DFF","00E5FF","swirling folded space","chime","Step in, vanish completely.","place,mythical"},
@@ -402,5 +403,4 @@ return {
 	{"ragdoll cat","AMBJAA","dfT",2,7,2,"F0EBE3","8C7A6B","floppy fluffy body, blue eyes, dark points","meow","Goes limp when held. Tactical flop.","mammal,pet,cute"},
 	{"rage","KACOKI","KDk",6,7,3,"D50000","FF6D00","red steaming aura, cartoon anger vein","roar","Steam from the ears. Run.","rage"},
 	{"rage quitter","LACJNA","Ek",4,6,3,"DC2626","111827","furious figure throwing a controller","crash","Throws the controller. Through the screen.","meme,gaming,explosive"},
-	{"ragnarok","HDFNOI","EkLP",10,5,8,"3E2723","FFD740","stormy gold-black sky, giant lightning, falling fire","boom","The ultimate grand finale.","mythical,danger"},
 }

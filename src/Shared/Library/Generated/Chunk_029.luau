@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind tunnel","FFDNOI","DI",4,8,3,"B2EBF2","FFFFFF","long streaming air channel","howl","Fast lane. Pick a direction.","air,speed"},
+	{"wind turbine","EFDMIK","GkSL",4,1,6,"F5F5F5","B0BEC5","tall white pole, three slim blades","whoosh","Clean energy. Dirty slaps.","structure,building"},
 	{"wind up mice","BMAAKI","Qe",2,6,2,"9AA0AA","F2A7B8","three clockwork toy mice that scurry out and pop","pop","Wind them up. Let them go.","cartoon,silly,toy"},
 	{"wind valley","MFENII","kSI",4,1,8,"B2EBF2","7CB342","narrow valley with howling gusts","rumble","Hold onto your hat. Hat gone.","place,terrain"},
 	{"wind wall","KFDCnI","GIa",3,5,5,"B2EBF2","FFFFFF","swirling vertical wall of streaking air","howl","Arrows go in. Arrows come out.","air,defence"},

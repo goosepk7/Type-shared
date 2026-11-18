@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"venom bolt","FJBAKB","Me",4,8,1,"76FF03","1B5E20","dripping green dart with bubbles","hiss","Nasty, sticky and green.","toxic"},
 	{"venom dagger","CJBHrK","fTM",4,9,2,"8BC34A","3A3F45","green-dripping dagger","shing","One cut. Lots of regret.","fantasy,sharp"},
 	{"venom spike","FJCLII","TM",5,5,3,"76FF03","33691E","dripping green spikes from ground","crack","Pointy and poisonous. Double nope.","toxic,sharp"},
 	{"ventriloquist","LMCJNA","jd",3,4,3,"111827","FBCFE8","suit with a creepy talking dummy","giggle","The dummy does the talking. And fighting.","circus,spooky"},
@@ -402,6 +403,4 @@ return {
 	{"wind spiral","FFCAKB","lTe",5,8,1,"B3E5FC","FFFFFF","drill-shaped spinning air bolt","whistle","Drills through. Spins you up.","air"},
 	{"wind sprite","AFAJNB","jAI",2,10,1,"E0F2FE","A5F3FC","nearly-invisible swirl with wings","whoosh","Steals hats. Steals breath.","fairy,wind"},
 	{"wind tower","EFDMII","GkSIeN",4,1,6,"ECEFF1","80DEEA","tower topped with a giant spinning fan","whoosh","Blows enemies back where they came from.","structure,defense,tower"},
-	{"wind tunnel","FFDNOI","DI",4,8,3,"B2EBF2","FFFFFF","long streaming air channel","howl","Fast lane. Pick a direction.","air,speed"},
-	{"wind turbine","EFDMIK","GkSL",4,1,6,"F5F5F5","B0BEC5","tall white pole, three slim blades","whoosh","Clean energy. Dirty slaps.","structure,building"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"round shield","BKCIyI","Gk",3,5,6,"8B5A2B","5B6168","painted wooden round shield","clang","Planks, paint, and pure stubbornness.","armor,defense"},
 	{"roundabout","EMDNII","jS",2,1,7,"424242","7CB342","circular road with a grassy middle","thud","Round and round. Which exit?","structure,silly"},
 	{"roundhouse kick","KMCN5K","kf",6,8,2,"FF8A65","FFFFFF","spinning leg arc ring","whoosh","Spin and kick. Like a pro.","melee"},
 	{"row","KBBOiC","DIB",3,6,3,"8B5A2B","38BDF8","two oars heaving in rhythm with splash arcs","splash","Merrily, merrily, merrily, merrily. Stroke!","sport,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"shad","ABAJEC","dPB",1,6,1,"B8C8D0","3A5A7A","silver herring-like","splash","Swims up rivers in spring.","fish,aquatic"},
 	{"shade","AIBJNJ","iZN",3,7,2,"1E1B4B","4338CA","flat inky silhouette","whisper","Your shadow's evil twin.","ghost,spooky"},
 	{"shade hounds","AICJAA","Dfh",7,8,3,"1A1626","8C7CFF","two wolves of living shadow, glowing eyes","howl","Your shadow has teeth. Two sets.","anime,shadow,summon"},
-	{"shadow","FICAKB","iZe",5,7,2,"2B1B3D","7A4FA8","inky smoky dart with violet edge","hiss","Follows you around. Now it bites.","spooky"},
 }

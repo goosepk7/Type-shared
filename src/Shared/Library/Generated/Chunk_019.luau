@@ -403,5 +403,4 @@ return {
 	{"plus","KHBOKJ","WFV",3,5,2,"22C55E","FFFFFF","chunky green plus sign with a +1 popping out","ding","One more. And one more. And one more.","school,support"},
 	{"pluto","MCDGKJ","Jke",5,4,7,"D7CCC8","A1887F","small icy sphere with a heart patch","rumble","Still a planet in our hearts.","space,cute"},
 	{"po boy","IMBHJI","Ff",3,5,4,"D9A04A","7DBE3A","crusty long sandwich","bonk","A long crusty sandwich from New Orleans.","edible,silly"},
-	{"poached egg","IMBLGG","USN",2,3,3,"F7F2E8","F2B81A","soft white dome, runny yolk","wobble","Wobbly, delicate, delightful.","edible,wobbly,breakfast"},
 }

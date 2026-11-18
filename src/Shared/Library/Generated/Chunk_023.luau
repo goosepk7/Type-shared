@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow","FICAKB","iZe",5,7,2,"2B1B3D","7A4FA8","inky smoky dart with violet edge","hiss","Follows you around. Now it bites.","spooky"},
 	{"shadow armor","KICOKI","GZ",2,4,7,"1A0033","7C4DFF","black smoky plating over caster","hiss","Armour made of night.","spooky,defence"},
 	{"shadow aura","FICOKJ","iZ",4,5,3,"1A0033","7C4DFF","smoky black glow round caster","hiss","Edgy. Very edgy.","spooky"},
 	{"shadow beam","FICBKI","iTe",6,8,1,"12001F","7C4DFF","inky black beam with purple edges","hiss","A beam of nope.","spooky"},
@@ -402,6 +403,4 @@ return {
 	{"smoked salmon","IGBOKI","F",2,5,3,"E8603A","F2C8B8","thin glossy orange slices","crunch","Silky pink ribbons.","edible,healthy"},
 	{"smoked sausage","IMBHJI","cf",3,5,4,"8A3A1E","C8603A","curved smoky sausage","bonk","Smoky and snappy.","edible,silly"},
 	{"smokejumper","LBCJNB","AFI",5,7,5,"FACC15","DC2626","parachute, fire shovel, yellow shirt","whoosh","Jumps out of planes into fires. Daily.","rescue,flying"},
-	{"smolder","FABNOI","KSN",3,2,4,"5A2A1A","E0703A","low glowing coals, curls of thin smoke","hiss","Patient fire. It can wait.","fire"},
-	{"smoothie","IBBOKI","WF",2,6,2,"E8434F","F7F2EC","tall glass of blended fruit","slurp","Fruit in a blender storm.","edible,drink"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tone","KFBF6B","dPO",2,8,1,"22D3EE","F8FAFC","pulsing rings from a buzzing phone at full volume","ring","It is not yours. Everyone checks anyway.","tech,music"},
 	{"tonfa","CMBHJK","Gf",3,7,4,"24262A","8B5A2B","baton with side handle","bonk","Spin, block, poke. Repeat.","medieval,heavy"},
 	{"tongs","JKBHJK","fH",1,6,5,"5B6168","24262A","long pincer tongs","clank","Grabs hot things so you don't.","tool"},
 	{"tongue lash","KMBBKI","fHb",3,9,1,"F06292","FFCDD2","long stretchy pink tongue","thwip","Slurp. Grabbed.","silly,gross"},
@@ -402,5 +403,4 @@ return {
 	{"venom","FJBAKB","TMe",5,7,1,"8BD43A","3B1F4F","dripping green fang-shaped glob","hiss","Spit happens.","toxic"},
 	{"venom blade","FJCHrB","fTM",5,8,2,"76FF03","33691E","dripping green energy blade","hiss","One cut. Lingering regret.","toxic,sharp"},
 	{"venom bloom","NJBLMI","SMP",4,1,2,"76FF03","4A148C","neon green petals dripping toxin","chime","Pretty colours mean danger. Always.","plant,magic,mythical"},
-	{"venom bolt","FJBAKB","Me",4,8,1,"76FF03","1B5E20","dripping green dart with bubbles","hiss","Nasty, sticky and green.","toxic"},
 }

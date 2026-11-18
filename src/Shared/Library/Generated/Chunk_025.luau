@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"staghorn coral","ABCCMI","GWT",3,1,6,"E8A07A","F2D8C0","branching antler coral","crackle","Antlers, but underwater and pointy.","aquatic,ocean,reef"},
+	{"staghorn fern","NGBNMI","ST",1,1,3,"7CB342","9CCC65","antler-shaped fronds on a tree","rustle","Antlers made of leaves.","plant"},
 	{"stain","KMBNGI","dSN",2,1,5,"B91C1C","8B5A2B","stubborn red-brown blot on a white shirt","splat","It will not come out. Ever. Wear it proudly.","household,silly"},
 	{"stained glass","BHCCnI","GEaO",4,1,3,"DC2626","2563EB","arched window of jewel-coloured panes casting rainbow light","chime","Pretty. Holy. Extremely breakable.","shiny,holy,fragile"},
 	{"staircase","EMCCII","GSN",1,1,7,"BCAAA4","8D6E63","steps rising in a spiral","thud","Climb. Climb. Keep climbing.","structure"},
@@ -401,5 +403,4 @@ return {
 	{"sweetgum","NGDCMI","GWkST",3,1,7,"6D4C41","E64A19","star leaves and spiky seed balls","rustle","Drops spiky gumballs. Ouch underfoot.","plant,tree"},
 	{"sweetheart","LHBJNA","jFc",2,5,3,"FB7185","FECDD3","blushing figure with heart eyes and a love letter","aww","Wrote your name in a heart. On everything.","cute,silly"},
 	{"swell shark","ABBJEC","DWfTB",3,8,6,"B8A07A","6A4A2A","shark that inflates","chomp","Gulps water to puff up.","fish,aquatic,ocean,predator"},
-	{"swift","AMAJDB","dA",1,10,1,"3A3430","6A6460","crescent wings","tweet","Sleeps while flying. Legend.","bird,cute"},
 }

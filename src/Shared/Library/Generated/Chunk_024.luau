@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"smolder","FABNOI","KSN",3,2,4,"5A2A1A","E0703A","low glowing coals, curls of thin smoke","hiss","Patient fire. It can wait.","fire"},
+	{"smoothie","IBBOKI","WF",2,6,2,"E8434F","F7F2EC","tall glass of blended fruit","slurp","Fruit in a blender storm.","edible,drink"},
 	{"smoothie bowl","IGBOKI","F",2,5,3,"7A3A6A","E8434F","bowl of purple puree, fruit","crunch","A smoothie that you eat with a spoon.","edible,healthy,breakfast"},
 	{"smorrebrod","IGBOKI","F",2,5,3,"5A3A2A","F2E8D0","dark rye with toppings","crunch","Open-faced, open-minded.","edible,healthy"},
 	{"snack","IMAA7G","dFc",1,6,1,"F59E0B","FDE68A","little pile of crackers, cheese cubes and grapes","crunch","Not hungry. Just snacky.","edible,cute"},
@@ -401,6 +403,4 @@ return {
 	{"staff","BLCAzI","feh",5,5,4,"5A3A1E","8E5CC2","tall gnarled staff with glowing orb","chime","You shall not pass.","magic,fantasy"},
 	{"stag beetle","AMBJFA","Gkf",2,3,4,"3A1E14","8A4A2A","huge antler-like jaws","click","Wears antlers on its face.","insect,armored"},
 	{"stagger","KMCFOB","kO",4,8,1,"FFCC80","FFFFFF","wobbling impact ring","thud","Wobble. Wobble. Down.","melee"},
-	{"staghorn coral","ABCCMI","GWT",3,1,6,"E8A07A","F2D8C0","branching antler coral","crackle","Antlers, but underwater and pointy.","aquatic,ocean,reef"},
-	{"staghorn fern","NGBNMI","ST",1,1,3,"7CB342","9CCC65","antler-shaped fronds on a tree","rustle","Antlers made of leaves.","plant"},
 }

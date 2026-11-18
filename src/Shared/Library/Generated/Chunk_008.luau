@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doberman","AMCJAA","DQf",5,8,4,"1A1414","A0582A","sleek black-tan dog, pointy ears","bark","Built for speed and side-eye.","mammal,pet"},
 	{"dobsonfly","AMBJFB","dAfP",2,6,1,"6A5A44","C8B88A","huge flying bug with giant mandibles","buzz","Big scary jaws. Mostly harmless.","insect"},
 	{"doctor","LMCJNA","GFe",3,4,5,"F8FAFC","0EA5E9","white coat, stethoscope, clipboard","beep","Says ahh. Gives a lollipop.","healer"},
 	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},

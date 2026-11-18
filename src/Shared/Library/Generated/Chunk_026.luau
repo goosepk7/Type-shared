@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swift","AMAJDB","dA",1,10,1,"3A3430","6A6460","crescent wings","tweet","Sleeps while flying. Legend.","bird,cute"},
 	{"swift fox","AMBJAA","jfb",3,9,2,"C8A07A","F2E8D8","small fast fox","yip","Swift by name. Swift by nature.","mammal,wild"},
 	{"swim","KBBOKC","DB",2,6,2,"4FC3F7","E1F5FE","caster in a swirling water bubble","splash","Glub glub, coming through.","aquatic"},
 	{"swim ring","BBCOKF","UB",1,4,2,"C0392B","F2F2EE","striped inflatable ring","bonk","Floats. Bonks. Floats again.","summer,toy"},
@@ -402,5 +403,4 @@ return {
 	{"tomato juice","IBBOKI","F",2,6,2,"C8202B","E8434F","glass of thick red juice","slurp","Thick and savory.","edible,drink"},
 	{"tomato plant","NGBMMI","dSe",2,1,2,"2E7D32","E53935","staked vine hung with red fruit","rustle","Throws tomatoes. Rotten ones.","plant,crop"},
 	{"tomato soup","IBBOGI","FS",3,4,3,"D8302B","F2E8C8","smooth red soup bowl","slurp","Red, warm, and perfect with grilled cheese.","edible,warm,healthy"},
-	{"tone","KFBF6B","dPO",2,8,1,"22D3EE","F8FAFC","pulsing rings from a buzzing phone at full volume","ring","It is not yours. Everyone checks anyway.","tech,music"},
 }
