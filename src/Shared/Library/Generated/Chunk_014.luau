@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jerry can","BABL2I","KE",3,1,4,"C0392B","C0392B","boxy fuel can with spout","thud","Do not light. We said DO NOT.","container,flammable"},
+	{"jersey","BMBOVB","GDh",2,6,3,"DC2626","FFFFFF","red team shirt with a big number 10 flying like a flag","crowd","Number 10. Automatically 30% better.","sport,clothing"},
+	{"jersey devil","AACJAB","DjA",5,8,4,"57534E","F97316","horse head, bat wings, hooves, forked tail","screech","Born in a pine barren. Never pays rent.","cryptid,spooky"},
 	{"jerusalem artichoke","IEBAKK","keO",3,7,6,"C8A070","F2E8D0","knobby tan tuber","bonk","Not from Jerusalem. Not an artichoke.","edible,vegetable"},
 	{"jerusalem cricket","AMAJFA","dfP",1,6,1,"E8A04A","3A2A1A","big-headed striped cricket","buzz","Big head. Many nicknames.","insect"},
 	{"jester","LLCJNA","Ujd",3,8,3,"DC2626","FACC15","three-pointed bell hat, diamond suit","jingle","Tells jokes. Dodges tomatoes.","royal,silly"},

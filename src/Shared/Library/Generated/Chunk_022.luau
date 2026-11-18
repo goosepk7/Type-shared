@@ -192,6 +192,7 @@ return {
 	{"scream","KFCFOB","jkO",5,10,1,"FFCDD2","FFFFFF","jagged sound ring burst","scream","AAAAAAAAAAAAAH!","loud"},
 	{"screech","KFCF6B","jIO",4,9,1,"F8FAFC","EF4444","jagged white sound spikes shattering nearby glass","screech","EEEEEEEEEEEEEEEEEEEEEEEEE.","loud"},
 	{"screech owl","AMAJDB","AZT",2,7,2,"8A8A80","D8D0C0","tiny eared owl, bark pattern","hoot","Doesn't screech. Trills.","bird,nocturnal,predator"},
+	{"screen wrap","KLBOKI","Y",2,10,1,"7DFFB2","B57CFF","pixel dissolve and reappear behind them","blip","Left edge, right edge, behind you.","game,arcade,mobility"},
 	{"screw","BKAAJK","Te",1,8,2,"8A929B","C9CED4","spiral threaded spike","clink","Righty tighty.","hardware"},
 	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
 	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},

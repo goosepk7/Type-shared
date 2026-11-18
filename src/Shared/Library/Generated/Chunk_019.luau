@@ -164,7 +164,7 @@ return {
 	{"pin","BKALuI","TPO",2,1,3,"C0C7CE","EF4444","scatter of sharp thumbtacks, points up","click","Left on the chair by an expert.","sharp,school,trap"},
 	{"pinata","BMCLAI","dcV",1,2,3,"FF3EA5","F1C40F","paper donkey covered in fringe","squeak","Whack it. Candy rains down.","party,silly"},
 	{"pinball bumper","OKCL1I","UkI",3,1,6,"FF3EA5","C9CED4","round bouncy post that zaps","clank","Ding! Boing! Bounced.","defense,game"},
-	{"pinball flipper","OKCL1I","Uk",3,8,5,"C0392B","C9CED4","paddle that slaps upward","clank","Flip! Off they go.","defense,game"},
+	{"pinball flipper","OKDN1I","kI",5,10,1,"E8EDF2","FF4F6E","two giant chrome flippers that slam shut","clank","Flip! Off they go.","game,arcade,knockback"},
 	{"pinball machine","BMCMII","Udk",3,4,5,"1F2F55","FF3EA5","flashing pinball cabinet","clack","Ding ding ding! Multiball!","game"},
 	{"pincer","BBBLRG","fHO",4,6,5,"E2552B","F7B59A","big red snapping crab claw, no crab","snap","Pinch, punch, first of the month.","sharp,aquatic"},
 	{"pinch","KMAAKB","fO",1,9,1,"FF8A80","FFFFFF","two-finger squeeze sparkle","pinch","Ow! Pinch!","silly"},

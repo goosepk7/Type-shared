@@ -369,7 +369,7 @@ return {
 	{"classmate","LMBJNA","deb",2,6,3,"F87171","FDE68A","kid with a backpack flicking paper balls","giggle","Can I copy your homework? Thanks. Bye.","school"},
 	{"classroom","MMCNII","jSN",2,1,6,"43A047","F5E6CA","rows of desks and a chalkboard","thud","Pop quiz! Everyone is confused.","place,room,silly"},
 	{"claw crane","OKDL1I","lHO",5,3,7,"F1C40F","C9CED4","giant three-finger claw on cable","clank","Grab. Lift. Drop elsewhere.","mechanical"},
-	{"claw machine","OMCL1I","lcH",2,3,5,"FF3EA5","BFE6F2","glass cabinet with dangling claw","hum","It'll grab you. Probably not though.","silly,game"},
+	{"claw machine","OKCL1I","lH",4,7,2,"C9CED4","FF7AC8","arcade claw on a light rail","whirr","It'll grab you. Probably.","game,arcade,pull"},
 	{"claws","CKBHJK","fTV",4,9,3,"DDE3E8","24262A","three long blades over knuckles","shing","Snikt.","sharp"},
 	{"clay","FEBLII","GN",3,2,5,"B66A50","E0B49A","sticky reddish clay lumps","squelch","Squish. Mould. Trap. Repeat.","heavy"},
 	{"clay golem","AECJNA","GWf",5,3,6,"A16207","FDE68A","lumpy clay figure with finger marks","squelch","Sculpted by kids. Feels it.","construct"},

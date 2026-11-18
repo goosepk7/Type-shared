@@ -63,6 +63,7 @@
     {"n": ["pokemon ball", "pokemon balls"], "r": "capture orb"},
     {"n": ["tetris", "tetris block", "tetris blocks", "tetris piece"], "r": "block drop"},
     {"n": ["angry birds", "angry bird"], "r": "sling bird"},
+    {"n": ["arkanoid", "atari breakout"], "r": "brick breaker"},
     {"n": ["peppa pig"], "r": "pink pig"},
     {"n": ["barney"], "r": "purple dinosaur"},
     {"n": ["teletubby", "teletubbies"], "r": "rainbow blob"},
