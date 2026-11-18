@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"trash can lid","BKBIyI","Gd",1,6,3,"8E9196","4A4D52","dented round metal lid","clang","Clang! Gross, but effective.","silly,defense"},
+	{"trash wall","EJCCII","GSM",2,1,5,"795548","9E9E9E","heap of bins and junk","thud","Smells like a defence.","structure,defense,silly"},
+	{"traveling merchant","LMCJNA","cbY",3,5,4,"92400E","7C3AED","giant backpack of wares","ding","What're ya buyin'?","merchant"},
+	{"traveller palm","NGDCMI","GWkS",3,1,6,"6D4C41","43A047","giant fan of paddle leaves","rustle","Points the way. Holds water.","plant,tree"},
+	{"tray","BMBIyK","Ga",1,6,3,"C9CED4","C9CED4","flat round serving tray","clang","Snacks? Defence? Yes.","kitchen,household"},
+	{"treacle sponge","IMBLGI","SNP",2,3,3,"E8A317","F2D88A","sponge pudding with syrup","gloop","A syrup-drenched sponge.","edible,sticky,sweet"},
+	{"treacle tart","IMBLGI","SNP",2,3,3,"E8A317","D9A04A","golden syrup tart","gloop","A golden sticky tart.","edible,sticky,sweet"},
+	{"treadmill","OMCL1I","IN",1,3,6,"24262A","8E9196","motor belt with handrails","hum","Run forever. Get nowhere.","sport,silly"},
 	{"treant","AGEJMA","GWFk",7,2,9,"78350F","4D7C0F","giant walking tree with bark face","creak","Takes three days to say good morning.","plant,giant"},
 	{"treant sapling","AGAJMA","WF",1,3,3,"65A30D","A3E635","little walking sapling with leaf hair","rustle","Grows a bit each round.","plant,cute"},
 	{"treasure chest","BMCLII","dch",3,1,7,"8B5A2B","D4A72C","iron-banded chest spilling gold","chime","X marked this spot.","treasure,pirate"},
@@ -395,12 +403,4 @@ return {
 	{"wall flamethrower","BACLwI","KP",5,1,6,"4A4D52","FF6A1A","nozzle in the wall belching flame","snap","Toasty corridor.","trap,defense"},
 	{"wall jump","KMBOKG","Dl",2,9,2,"FFCC80","FFFFFF","kick-off spark from a wall","boing","Bounce off walls. Like a pro.","speed,sport"},
 	{"wall of bread","IMDCII","GFk",4,2,8,"C8904A","F5E6C8","stacked loaves forming a wall","thud","Built from carbs. Unbreakable morale.","edible,giant,silly"},
-	{"wall run","KFBOKB","D",2,9,2,"B3E5FC","FFFFFF","caster sprinting sideways along a wall","tap","Gravity is a suggestion.","sport,speed"},
-	{"wall turret","EECMII","GSe",4,1,8,"9E9E9E","5D5D5D","small round tower jutting from a wall","thud","Watches the corner. Shoots the corner.","tower,ancient"},
-	{"wallaby","AMCJAG","Ukf",3,6,2,"8A7666","D8C4B0","small kangaroo, chunky tail","chirp","Kangaroo in fun size.","mammal,marsupial"},
-	{"wallet","BMALKK","c",1,5,2,"6B4226","7A4E2D","folded leather wallet","thud","Money talks. Enemies listen.","household"},
-	{"walleye","ABCJEC","DfB",4,7,4,"B8A04A","E8E0C0","golden fish with glassy eyes","splash","Eyes reflect light like a cat.","fish,aquatic"},
-	{"wallop","KMCAKB","k",5,7,3,"FFB74D","FFFFFF","big round impact puff","wham","A good old-fashioned wallop.","silly"},
-	{"walnut","IEAAKK","UeO",2,8,5,"8A5A2A","C8A07A","wrinkly shell, brain-like nut","tok","Looks like a tiny brain. Hits like a big one.","edible,nut"},
-	{"walnut tree","NGDCMI","GWkSe",4,1,8,"5D4037","7CB342","broad tree with round green nuts","rustle","Throws nuts. Hard ones.","plant,tree"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
+	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
+	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
 	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
 	{"breakdancer","LFCJNK","jdk",4,8,3,"111827","FACC15","spinning on head, tracksuit","beat","Head spins. Kicks fly.","music"},
 	{"breakdancing","KMCN5K","dk",3,7,2,"FF4081","212121","spinning windmill motion trails","music","Headspin! Everyone stand back.","music,dance"},
@@ -119,6 +122,7 @@ return {
 	{"bullet","CKAAkB","UTe",3,10,2,"D4AF37","8A6A14","snub-nosed cartoon bullet with angry eyebrows","zing","Has places to be. Mostly through things.","ranged"},
 	{"bullet ant","AMAJFA","CfMPO",3,5,1,"3A2414","8A5A2A","huge black ant","skitter","Sting feels like getting shot. Ouch.","insect,swarm"},
 	{"bullet blaster","EKDMII","EQSe",6,3,8,"22252B","E0463A","squat cannon tower firing slow homing shells","boom","It's slow. It's patient. It's still coming.","game,platformer,tower,explosive"},
+	{"bullet time","KLCOKI","aN",5,5,3,"9EFFB8","0F3D24","shots crawl through rippling air as you lean back","tick","Everything... is... so... slow.","scifi,movie,time"},
 	{"bullet train","DMEKHL","DkTg",7,10,8,"F5F5F5","1C4E9A","long pointed nose, sleek white carriages","engine","Gone before you finished reading this.","mechanical,vehicle,land"},
 	{"bulletproof vest","BMCONI","G",1,6,7,"1F2F55","24262A","padded vest with plates","clank","Pew-proof.","modern,defense"},
 	{"bullfinch","AMAJDB","dA",1,7,1,"E8501E","1E1E1E","chunky red-chested finch","tweet","Chunky and rosy.","bird,cute"},
@@ -377,6 +381,7 @@ return {
 	{"cardinal","AMAJDB","dA",1,7,1,"D8201E","1E1E1E","bright red bird, crest, black mask","tweet","So red it looks painted.","bird,cute"},
 	{"cardinalfish","ABAJEC","dB",1,6,1,"E8501E","F2E8D8","small red fish","splash","Dads carry eggs in their mouths.","fish,aquatic"},
 	{"cardon","NEFCMI","GST",5,1,9,"558B2F","F5F5F5","massive multi-armed cactus","thud","Biggest cactus around. Biggest hug.","plant,desert,sharp"},
+	{"care package","BMCN2J","ch",3,2,6,"6E7A3C","FF5A2A","military crate drifting down under a parachute","thud","Help from the sky. Finders keepers.","gaming,object,military"},
 	{"cargo","BKDL2I","GkO",6,2,8,"B45309","1E3A8A","big corrugated steel box lowered on four cables","clang","Contents: 40,000 rubber ducks. Really.","heavy,vehicle"},
 	{"cargo helicopter","DFEKHE","AlHg",5,5,7,"556B2F","37474F","long fuselage with two big rotors","chop","Picks up tanks. And you.","vehicle,air"},
 	{"cargo plane","DFFKHB","DAklgh",6,6,8,"607D8B","37474F","fat body, high wings, rear ramp","jet","Drops crates. Some of them land on you.","vehicle,air"},
@@ -398,9 +403,4 @@ return {
 	{"carrion crawler","AJDJFA","MHO",5,4,5,"365314","F0ABFC","giant centipede-worm with face tentacles","skitter","Wiggly. Sticky. Not a friend.","dungeon"},
 	{"carrion flower","NJBDMI","jSM",3,1,2,"6A1B9A","8D6E63","hairy star bloom that smells awful","rustle","Stinks so bad enemies retreat.","plant,flower,silly"},
 	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
-	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
-	{"carrot patch","NGBLMI","Sc",2,1,3,"7CB342","FF9800","feathery tops above orange roots","rustle","Pull one up. Use it as a sword.","plant,crop,silly"},
-	{"carry","LMCJNA","GFl",5,6,5,"FACC15","111827","player lifting teammates on shoulders","ding","Carrying the whole team. Back hurts.","meme,gaming"},
-	{"cart","DMBKHL","Dkg",2,3,4,"8D6E63","5D4037","wooden box on two big wheels","engine","Not fancy. Gets the job done.","mechanical,vehicle,land,ancient"},
-	{"cartographer","LMCJNA","hY",3,4,3,"78350F","FDE68A","scrolls, compass, quill","swish","Draws the map. Draws you lost.","explorer"},
 }
