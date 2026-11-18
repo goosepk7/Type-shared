@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
+	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
+	{"popcorn machine","OACM1I","KdeP",2,5,4,"C0392B","D4A72C","glass cart full of popping corn","hum","Pop pop pop! Snack attack.","silly,party"},
+	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 	{"poplar","NGDCMI","GjWkS",3,1,6,"BDBDBD","8BC34A","tall narrow column of fluttery leaves","rustle","Fluffy seeds everywhere. Achoo.","plant,tree"},
 	{"poppy","NGBNMI","SNO",2,1,1,"E53935","212121","papery red petals, dark centre","rustle","Makes everyone very, very sleepy.","plant,flower"},
 	{"poppy field","NGENMI","SNO",3,1,3,"E53935","7CB342","red poppies as far as you see","rustle","Sleepy... so sleepy...","plant,crop"},
@@ -399,8 +403,4 @@ return {
 	{"red bean paste","IMBLGI","SNP",2,3,3,"5A2A2A","7A3A3A","smooth dark red paste","gloop","Sweet beans, smooth as velvet.","edible,sticky,dessert,sweet"},
 	{"red cabbage","IGBAKF","Fke",3,5,3,"6B2D6B","C8A8D8","purple layered round head","thud","A purple bowling ball.","edible,vegetable,healthy"},
 	{"red crab","ABBJRA","GfTPh",2,4,5,"E8301E","F2A07A","bright red land crab","clack","Marches in millions.","crustacean,aquatic,armored"},
-	{"red deer","AMCJAA","Dk",4,8,4,"A0582E","E2C49A","reddish deer, many-pointed antlers","bleat","Roars during autumn. Very dramatic.","mammal,wild"},
-	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
-	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
-	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 }

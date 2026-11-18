@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},
+	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
+	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
+	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 	{"hornbeam","NGDCMI","GWkS",3,1,8,"9E9E9E","7CB342","grey fluted trunk, dense crown","rustle","Hard as horn.","plant,tree,heavy"},
 	{"hornbill","AMCJDB","jdAk",3,6,2,"1E1E1E","F2C02A","huge curved beak with casque helmet","squawk","Wears a helmet on its beak.","bird,jungle,silly"},
 	{"horned lizard","AMBJAA","CfTe",2,7,2,"C8A06A","6A4A2A","flat spiky desert lizard","hiss","Squirts blood from its eyes. Defense!","reptile,desert"},
@@ -265,7 +269,6 @@ return {
 	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
-	{"inhale","KFCN5K","H",4,6,2,"B0BEC5","FFFFFF","inward spiral of air to the caster","whirr","Vacuum mode activated.","air"},
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
 	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
 	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"jewelry","BHBL2I","dcaO",3,2,4,"FACC15","22D3EE","spilling heap of rings, chains and glittering gems","jingle","Ooh, shiny. That was the trap.","shiny,royal"},
 	{"jewelry box","BMBL2I","c",1,1,3,"5A3A1E","D4A72C","velvet-lined box with dancer","thud","Sparkles inside. Bait!","container,treasure"},
 	{"jian","CKCHrK","fT",5,8,4,"C9CED4","3E9E6E","straight slim blade, tassel on hilt","shing","Elegant, swift, comes with a tassel.","medieval,sharp"},
-	{"jiangshi","AICJNG","Uif",4,4,5,"1E3A8A","F1F5F9","stiff arms outstretched, robe, paper talisman","boing","Hops after you. Can't bend its knees.","undead,spooky,silly"},
-	{"jicama","IEBAKK","keO",3,7,6,"A87A4A","F2F0E8","round brown root, white inside","bonk","A crunchy potato that tastes like apple.","edible,vegetable"},
-	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 }

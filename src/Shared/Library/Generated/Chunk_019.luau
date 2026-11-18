@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
+	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
+	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
+	{"pencil","BMAAJK","Te",1,8,1,"F1C40F","F06292","yellow hexagon pencil with eraser","tap","Sharpened for battle.","school"},
 	{"pencil sharpener","BMAL2K","V",1,1,3,"C9CED4","C0392B","small box with blade hole","tap","Grrrind.","office"},
 	{"pendulum hammer","BKDLtI","kO",6,3,7,"5B6168","8B5A2B","huge hammer swinging from above","snap","Tick. Tock. BONK.","trap,defense"},
 	{"penguin","ACBJDA","UDB",2,5,3,"1E1E24","F7F7F2","tuxedo body, flippers, waddle","squawk","Wears a tux to every occasion.","bird,arctic,cute"},
@@ -399,8 +403,4 @@ return {
 	{"popcorn","IMBGKF","EeVP",4,6,1,"FFF4D6","F2C24A","fluffy white kernels, butter gold","pop","Explodes once. Then again in your mouth.","edible,explosive,snack"},
 	{"popcorn bomb","BABGKK","dEP",3,6,1,"F1C40F","F2F2EE","bag that bursts into popcorn","thud","POP POP POP POP POP.","silly,explosive"},
 	{"popcorn cart","DMBKHL","dceg",2,3,3,"E53935","FFEB3B","striped cart with popping kettle","engine","Pop pop pop! Kernels everywhere.","mechanical,vehicle,land,silly"},
-	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
-	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
-	{"popcorn machine","OACM1I","KdeP",2,5,4,"C0392B","D4A72C","glass cart full of popping corn","hum","Pop pop pop! Snack attack.","silly,party"},
-	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 }

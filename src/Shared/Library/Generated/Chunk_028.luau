@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wanderer","LFCJNA","ZY",4,6,4,"A16207","78716C","hooded traveling cloak, walking staff","whoosh","Arrives from nowhere. Leaves the same way.","explorer"},
+	{"war","KAENOI","KkP",7,5,5,"8D6E63","D32F2F","smoky battlefield haze with banners","horn","Banners up. Charge together.","rage"},
+	{"war canoe","DBCKHC","DkgB",4,7,4,"6D4C41","FFB300","long canoe with side float, carved prow","splash","Paddle together. Win together.","vehicle,aquatic"},
+	{"war chief","LECJNA","kfh",6,5,6,"7C2D12","CA8A04","fur cloak, bone necklace, big axe","roar","Leads the charge. Yells loudest.","warrior,royal"},
+	{"war club","CMCHtK","kfO",4,5,5,"8B5A2B","8C8C88","club with a stone ball head","shing","Bonk, the old-fashioned way.","sharp,ancient"},
 	{"war drum","BMDFJI","FkO",5,3,5,"6B4226","E3DAC9","giant hide drum with bone sticks","boom","Every beat makes the army braver.","music,loud"},
 	{"war drummer","LMCJNA","FO",3,5,4,"1E3A8A","F8FAFC","snare drum, military cap","drum","Boom boom. Everyone marches faster.","warrior,music"},
 	{"war fan","CFBIyK","GI",2,7,3,"9E1B32","24262A","giant folding paper fan","shing","Blocks blows. Blows winds.","ninja"},
@@ -398,9 +403,4 @@ return {
 	{"yellowstone","MBFNII","KlS",6,1,9,"FFEB3B","4FC3F7","steaming pools, geysers, colourful springs","rumble","Geysers everywhere. Bubbling everywhere.","place,landmark"},
 	{"yes","KHBOKJ","DWF",3,6,3,"22C55E","FFFFFF","big green YES with a thumbs up and sparkle","ding","Yes. Absolutely. What was the question?","support,meme"},
 	{"yeti","ACDJNA","DJkf",7,5,7,"F1F5F9","93C5FD","shaggy white ape, frosty breath","roar","Lives on a mountain. Hates sunscreen.","cryptid,frozen"},
-	{"yeti crab","ABBJRA","GfT",2,4,5,"F2F2EE","E8E0D0","hairy white deep-sea crab","clack","A crab in a fur coat.","crustacean,aquatic,armored,deepsea"},
-	{"yeti family","ACBJNA","dJ",2,5,3,"F1F5F9","93C5FD","fluffy white baby yeti","roar","Throws tiny snowballs. Adorably.","cryptid,cute,frozen"},
-	{"yeti king","ACEJNA","Jkh",8,4,8,"F1F5F9","1E3A8A","giant white yeti with icicle crown","roar","Rules the mountain. Hates sunscreen.","cryptid,frozen,boss"},
-	{"yew","NJDCMI","GWkSM",4,1,8,"4E342E","1B5E20","dark dense ancient tree, red berries","rustle","Old, dark, and quietly poisonous.","plant,tree,ancient"},
-	{"yi qi","AMBJBB","DAQfT",2,9,3,"3A3A3A","8A6A4A","bat-winged small dino","screech","A dinosaur with bat wings.","dinosaur,extinct,reptile,predator"},
 }

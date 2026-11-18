@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jiangshi","AICJNG","Uif",4,4,5,"1E3A8A","F1F5F9","stiff arms outstretched, robe, paper talisman","boing","Hops after you. Can't bend its knees.","undead,spooky,silly"},
+	{"jicama","IEBAKK","keO",3,7,6,"A87A4A","F2F0E8","round brown root, white inside","bonk","A crunchy potato that tastes like apple.","edible,vegetable"},
+	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 	{"jigsaw tool","JKBHJK","fV",3,6,4,"2F6FD1","24262A","saw with up-down blade","whirr","Curves! Corners! Chaos!","tool"},
 	{"jinx","KLBAKB","jd",3,8,1,"AB47BC","FFEB3B","wobbly yellow-purple spark","cackle","Trips over nothing. Every time.","silly"},
 	{"jitte","CKBHtK","GfO",2,7,5,"8A929B","9E1B32","blunt rod with side hook","shing","Catches swords. Bonks owners.","ninja"},
@@ -42,6 +45,7 @@ return {
 	{"jungle flower","NGBNMI","dFSc",2,1,2,"E91E63","FF9800","huge bright waxy bloom","rustle","Loud colours. Louder smell.","plant,flower"},
 	{"jungle ruins","MGENII","STh",4,1,8,"7CB342","9E9E9E","vine-covered stone steps and statues","echo","Darts shoot from the walls. Duck.","place,adventure,ancient"},
 	{"juniper","NGCCMI","GWFkS",3,1,6,"6D4C41","4DB6AC","twisted trunk, blue berries","rustle","Twisty and full of berries.","plant,tree"},
+	{"junk roller","BECA3F","Wk",5,7,2,"E85D9A","F2C14E","sticky ball covered in rolled-up junk","thud","Na naaa na na na na na naaa.","game,rolling,junk"},
 	{"junk ship","DFDKHC","DkgB",5,5,7,"B71C1C","6D4C41","ship with ribbed fan-shaped sails","splash","Not junk. Very sturdy, actually.","vehicle,aquatic,ancient"},
 	{"junkyard","MKENII","SNh",3,1,6,"795548","9E9E9E","piles of rusty cars and scrap","rumble","Trash? Treasure? Both.","place,terrain,silly"},
 	{"jupiter","MLFGKJ","kHeL",9,1,10,"D4A373","B5523B","huge banded sphere with a giant red spot","rumble","Biggest planet. Biggest bonk.","space"},
@@ -399,8 +403,4 @@ return {
 	{"leap","KMCOKG","Dl",3,8,2,"FFCC80","FFFFFF","long arcing jump trail","whoosh","One giant leap. Mostly sideways.","speed"},
 	{"leapfrog","KGBOBG","UDO",3,7,2,"22C55E","FDE047","line of kids vaulting over each other's backs","boing","Over you. Over you. Over you. Splat.","toy,sport"},
 	{"learn","KHBOKJ","GWF",3,3,3,"3B82F6","FDE047","stack of books with a level-up arrow and a tired candle","ding","Knowledge is power. Naps are also power.","school,support"},
-	{"leash","BMBLKI","HN",1,5,2,"C0392B","C9CED4","strap with clip","squeak","Heel!","pet"},
-	{"leather","BMCIyE","Gka",3,4,8,"5B3A1E","2B1B12","creaky brown biker jacket with a popped collar and studs","creak","Creaks when it moves. Cooler than you.","clothing,cool,armor"},
-	{"leather armor","BMCONI","G",1,7,4,"6B4226","7A4E2D","stitched leather vest and pads","clank","Light, comfy, slightly squeaky.","armor,defense"},
-	{"leather jacket","BMCONI","Gd",1,5,4,"24262A","C9CED4","black leather biker jacket","swish","Instantly 40% cooler.","clothing"},
 }

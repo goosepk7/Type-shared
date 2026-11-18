@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shipwreck","MBENII","Sch",4,1,6,"6D4C41","26A69A","broken hull on the sea floor, coral","thud","Something guards the treasure inside.","spooky,pirate"},
+	{"shipyard","MBENII","Sh",3,1,7,"607D8B","1E88E5","ships on slipways, cranes","crowd","Launches a fresh ship. At you.","place"},
+	{"shiro","IBBOGI","FS",3,4,3,"C8762B","E8A040","chickpea stew","slurp","A spicy chickpea stew.","edible,warm,healthy"},
+	{"shirt","BMBIVB","GjA",2,5,2,"EF4444","FFFFFF","flapping red t-shirt with a pizza stain","flutter","Inside out and backwards. Like always.","clothing"},
 	{"shisa","AECJAA","Gf",4,5,7,"DC2626","F59E0B","grinning orange lion-dog statue","roar","Grins at evil. Evil leaves.","yokai,guardian"},
 	{"shiver","KCAFOB","N",1,6,1,"B3E5FC","FFFFFF","shaking chattering lines","brr","Brr-brr-brr.","frozen,silly"},
 	{"shock grenade","CDBGKI","eLO",4,7,1,"F1C40F","1F2F55","crackling blue sphere","zap","Bzzzap! Everyone twitches.","scifi,ranged"},
@@ -227,6 +231,7 @@ return {
 	{"slime toy","BMBLGI","SNO",1,3,1,"8BC34A","2E8B57","gooey green blob","squeak","Splorch. It's in your hair now.","toy,sticky,silly"},
 	{"slime trail","KJBOKD","dN",2,5,2,"76FF03","C5E1A5","glossy green trail behind caster","squelch","Slimy. Slippery. Effective.","silly"},
 	{"sling","CMBAJI","Uke",2,8,2,"6B4226","C49A6C","Y-shaped stick with rubber band","twang","Small stone, giant problem.","ranged,toy"},
+	{"sling bird","AFCADB","Eke",5,8,2,"1F8A8A","F6E7C1","giant slingshot and a plump round bird","twang","Pull. Aim. Regret nothing.","game,bird,explosive"},
 	{"sling staff","CMCAzK","ke",3,6,3,"8B5A2B","6B4226","long staff with sling end","shing","Lobs stones over walls.","medieval,ranged"},
 	{"slingshot turret","OMDMxI","Uke",5,4,5,"8B5A2B","6B4226","huge Y-frame with rubber band","clank","Pull back. Let fly. Boing.","defense,mechanical"},
 	{"slingstone","CEAAKK","ke",1,9,3,"8C8C88","8E9196","smooth river stone","shing","Small rock. Big story.","fantasy,sharp"},
@@ -398,9 +403,4 @@ return {
 	{"solo","LICJNA","GDfT",6,7,5,"374151","FACC15","lone hooded figure against the wind, scarf trailing","whistle","No team. No heals. No problem.","gaming,warrior"},
 	{"solstice","GHENOI","KJF",6,3,5,"FFB300","B3E5FC","sun and frost glow in balance","chime","The longest day. Or night. Both?","holiday"},
 	{"solution","KHBOKB","GFX",3,5,3,"22D3EE","F8FAFC","jigsaw piece clicking into place with a sparkle","click","Have you tried duct tape? Try more duct tape.","support"},
-	{"som tam","IABAKK","KeP",3,7,2,"C8D88A","D8302B","shredded green papaya salad","sizzle","Crunchy, spicy, sour.","edible,spicy,flammable"},
-	{"sombrero","BMCINI","G",1,5,2,"D2B48C","C0392B","huge wide-brimmed hat","swish","Shade for everyone.","clothing"},
-	{"son","LMBJNA","UDf",3,7,3,"3B82F6","F2D0B4","boy with a backwards cap and scraped knees","yay","Was told not to run indoors. Is running.","family"},
-	{"song thrush","AMAJDB","dA",1,7,1,"8A6A4A","F2E8D0","spotted chest songbird","tweet","Smashes snails on rocks.","bird,cute"},
-	{"sonic beam","FFCBKI","TeO",5,10,1,"B39DDB","FFFFFF","ringed visible sound beam","eeee","Loud enough to see.","loud"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nurikabe","AEECII","GO",6,1,10,"78716C","A8A29E","enormous invisible-ish stone wall with eyes","rumble","A wall that appears out of nowhere.","yokai,guardian"},
+	{"nurse","LMCJNA","QF",3,6,4,"F8FAFC","F472B6","scrubs, cap, giant syringe","chime","Gentle hands. Giant cartoon needle.","healer"},
+	{"nurse shark","ABCJEC","DfTHB",4,3,6,"A88E6A","E2D2B8","flat brown shark, whisker barbels","chomp","Lazy shark. Naps on the sea floor.","fish,aquatic,ocean,predator"},
+	{"nursery","MHDNlI","jdSh",4,1,4,"FDE047","F472B6","bright room of blocks, finger paints and tiny chairs","giggle","Twenty toddlers. One teacher. Pray for the teacher.","school,cute"},
 	{"nut","BKAA3K","UeO",2,7,5,"9CA3AF","D1D5DB","steel hex nut spinning like a tiny saw","clink","Could be hardware. Could be a snack. Bite to find out.","tool,mechanical"},
 	{"nut and bolt","BKAAJK","ke",1,8,3,"8A929B","8E9196","hex nut on a bolt","clink","Nuts! Bolts! Ouch!","hardware"},
 	{"nut cluster","IEAAKK","ceO",3,7,6,"5A2E16","C48A5A","chocolate covered nut lumps","bonk","Crunchy chocolate rocks.","edible"},
@@ -351,7 +355,7 @@ return {
 	{"pea","IGAELB","UeP",2,7,1,"7DBE3A","4E8E2B","tiny green sphere","pitter","The original pea shooter ammo.","edible,vegetable"},
 	{"pea chick","AMAJDA","df",1,4,2,"B8A07A","E8D8B8","fluffy brown baby peafowl","cluck","Future show-off. Currently fluff.","bird,farm"},
 	{"pea plant","NGBMMI","SeV",3,1,3,"7CB342","C5E1A5","climbing vine with pods that pop","rustle","Pea pea pea pea. Rapid fire.","plant,silly"},
-	{"pea shooter","CMAAwI","eV",1,9,1,"2E8B57","8BC34A","thin green tube","thwip","Pft pft pft pft.","toy,silly"},
+	{"pea pod","NGBMMI","Se",3,8,4,"4CAF50","C5E86C","snappy pea pod plant that spits peas","thwip","Pft pft pft pft.","game,plant,turret"},
 	{"pea soup","IBBOGI","FN",3,4,3,"8DB84A","5E8A2B","thick green soup","slurp","Thick as fog. Green as goblins.","edible,warm,healthy"},
 	{"peace","KHCNOI","FO",2,3,4,"B2EBF2","FFFFFF","calm pale blue glow with doves","hush","Everyone just... chill.","support"},
 	{"peace lily","NHBOMI","FS",1,1,3,"1B5E20","FFFFFF","dark leaves with white sail flowers","rustle","Peace. Calm. Healing.","plant,houseplant"},
@@ -399,8 +403,4 @@ return {
 	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
 	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
 	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
-	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
-	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
-	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
-	{"pencil","BMAAJK","Te",1,8,1,"F1C40F","F06292","yellow hexagon pencil with eraser","tap","Sharpened for battle.","school"},
 }

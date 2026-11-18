@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"molten metal","FKCF6F","KN",7,4,5,"FF7A00","C0C0C0","glowing orange-silver liquid metal flow","bubble","Forge-fresh. Do not hug.","heavy,fire"},
+	{"molten rain","FAEEOJ","KNP",8,4,3,"DD2C00","FF9100","black cloud dripping glowing drops","sizzle","Umbrella melted. Bad day.","fire,storm"},
+	{"mom","LMCJNA","GFh",4,6,5,"F472B6","F8FAFC","apron, phone, minivan keys","ding","Uses your full name. Instant stun.","family"},
+	{"momentum","FMCOKJ","Dk",4,8,3,"FF8A4D","FFE0C2","forward-streaming motion lines","whoosh","Hard to stop. Harder to dodge.","speed"},
 	{"momo","IMAELB","Fe",2,7,1,"F2EAD5","C8302B","pleated round dumplings","pitter","Himalayan dumplings with spicy dip.","edible"},
 	{"monarch butterfly","AMAJFB","jdAM",1,5,1,"E8701E","1E1E1E","orange wings with black veins","flutter","Flies 3000 miles. Tastes bad on purpose.","insect,cute"},
 	{"monarch caterpillar","AMAJTA","jdM",1,5,1,"F2F2EE","F2D82A","yellow-black-white striped caterpillar","flutter","Eats milkweed. Tastes like it.","insect,cute"},
@@ -399,8 +403,4 @@ return {
 	{"number","KLBELG","UjV",3,5,3,"22D3EE","FACC15","bouncing chunky digits 0 to 9 with a floating +1","ding","Pick a number. Wrong. It was seven.","school"},
 	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
 	{"nunchucks","CMBHJK","jfO",3,9,3,"24262A","5A3A1E","two sticks joined by chain","bonk","Mostly hits the user. Sometimes the enemy.","ninja"},
-	{"nurikabe","AEECII","GO",6,1,10,"78716C","A8A29E","enormous invisible-ish stone wall with eyes","rumble","A wall that appears out of nowhere.","yokai,guardian"},
-	{"nurse","LMCJNA","QF",3,6,4,"F8FAFC","F472B6","scrubs, cap, giant syringe","chime","Gentle hands. Giant cartoon needle.","healer"},
-	{"nurse shark","ABCJEC","DfTHB",4,3,6,"A88E6A","E2D2B8","flat brown shark, whisker barbels","chomp","Lazy shark. Naps on the sea floor.","fish,aquatic,ocean,predator"},
-	{"nursery","MHDNlI","jdSh",4,1,4,"FDE047","F472B6","bright room of blocks, finger paints and tiny chairs","giggle","Twenty toddlers. One teacher. Pray for the teacher.","school,cute"},
 }
