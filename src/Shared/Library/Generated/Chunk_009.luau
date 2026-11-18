@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
 	{"entelodont","AMDJAA","DkO",7,4,8,"6A4A3A","C89A7A","giant pig with huge jaws","roar","A pig the size of a cow. Grumpy.","mammal,extinct,ancient,heavy"},
 	{"entropy","FLCNOI","jiN",5,3,3,"6B5E7A","B8A8C8","crumbling, fading, glitching area","crackle","Everything falls apart eventually.","chaos"},
 	{"envelope","BMAAJK","Te",1,8,1,"F7F3E8","C0392B","sealed paper envelope","tap","Special delivery! Ouch.","office"},
@@ -402,5 +403,4 @@ return {
 	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
 	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
 	{"flight","KFCOKB","A",2,8,3,"B3E5FC","FFFFFF","caster lifting off with wind streaks","whoosh","Who needs stairs?","air"},
-	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind chimes","BFBFJI","dF",1,2,2,"C9CED4","C49A6C","hanging tubes tinkling","chime","Tinkle tinkle. Calm.","music"},
+	{"wind dash","KFCOKB","DI",4,10,2,"B3E5FC","FFFFFF","caster riding a gust","whoosh","Ride the wind.","air,speed"},
+	{"wind dragon","AFEKCB","Aklg",7,9,6,"E0F2FE","60A5FA","feathered sky serpent with cloud mane","howl","Flies so fast it makes weather.","mythical,reptile,wind"},
+	{"wind horse","AFDKAB","DAg",5,10,4,"E0F2FE","93C5FD","horse made of swirling air","neigh","Faster than the wind. It is the wind.","mount,wind"},
+	{"wind machine","OFDF1I","klI",5,5,6,"8E9196","F2F2EE","massive caged industrial fan","whoosh","Flings foes off their feet.","defense"},
 	{"wind monk","LFCJNB","AlI",5,9,4,"FACC15","E0F2FE","monk gliding on a gust of wind","whoosh","Floats. Pushes. Smiles.","martial,wind"},
 	{"wind orb","FFCGKK","RI",4,6,2,"B3E5FC","FFFFFF","swirling ball of streaking air","whoosh","A breeze in a bubble.","air"},
 	{"wind prison","FFCL5K","lO",5,5,3,"B3E5FC","FFFFFF","spinning wind bubble holding target aloft","howl","Spin in place. Forever.","air"},

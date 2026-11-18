@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green pepper","IGBAKF","Fke",3,5,3,"3E8E2B","5EAE3A","blocky green bell pepper","thud","A bell that never rings.","edible,vegetable,healthy"},
 	{"green smoothie","IGBOKI","WF",3,5,3,"7DBE3A","3E8E2B","tall green drink","chomp","Tastes like a salad. Feels like victory.","edible"},
 	{"green tea","IGBOKI","F",2,5,2,"7DAE3A","C8E08A","green cup of tea","slurp","Calm, green, and focused.","edible,drink,warm"},
 	{"green tomato","IGBAKK","keO",3,7,6,"8DB84A","C8E08A","hard unripe tomato","bonk","A tomato that isn't ready yet.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"hodag","AECJAA","Dkf",5,6,6,"365314","F5F5F4","horned frog-faced lizard beast with spikes","roar","Smells like a barbecue that went wrong.","cryptid"},
 	{"hoe","JKCHJK","fH",2,5,4,"8A929B","8B5A2B","flat angled blade on pole","clank","Weeds have one natural enemy.","tool,garden"},
 	{"hoecake","IMBAKK","Uke",3,7,2,"E8B84A","F2D88A","thin cornmeal griddle cake","whoosh","A flat corn cake from the griddle.","edible"},
-	{"hog badger","AMBJAA","CfT",3,8,2,"C8B8A8","3A3A3A","badger with pig snout","chatter","Half badger, half piggy nose.","mammal,predator"},
 }

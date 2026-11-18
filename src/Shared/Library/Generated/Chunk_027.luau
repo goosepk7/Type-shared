@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toilet paper launcher","CMCMxK","deN",1,6,3,"F2F2EE","8E9196","tube cannon of paper rolls","boing","Decorates trees. And enemies.","prank,silly"},
+	{"tokay gecko","AMBJAA","Cf",2,7,2,"6A8AA0","E8701E","blue-grey gecko with orange spots","tokay","Screams its own name. Bites.","reptile"},
+	{"token","BKAA3K","Uce",1,8,4,"D4AF37","B45309","brass coin stamped with a star and NO CASH VALUE","clink","No cash value. Much smack value.","gaming,shiny"},
+	{"token rush","BHBOKK","D",2,10,3,"FFC83D","B57CFF","spinning arcade tokens scattered round you","clink","Grab them all. Go go go.","game,arcade,mobility"},
+	{"tokoloshe","AIAJNA","jZb",2,7,2,"57534E","22C55E","tiny hairy mischief maker","cackle","Hides under beds. Why everyone uses bricks.","spooky"},
 	{"toll booth","EMBCII","GSN",1,1,6,"FFB300","1A1A1A","small booth with a barrier arm","thud","Pay up or turn around.","structure,building,silly"},
 	{"tom kha","IBBOGI","FS",3,4,3,"F2E8C8","E8A040","coconut soup with lime leaves","slurp","Creamy coconut soup, gently spicy.","edible,warm,healthy"},
 	{"tom yum","IABOGI","KF",3,4,3,"E8602B","C8302B","red spicy sour soup","slurp","Spicy, sour, and sinus-clearing.","edible,warm,healthy"},
@@ -398,9 +403,4 @@ return {
 	{"veggie burger","IGBOKI","F",2,5,3,"7DBE3A","C8762B","bun with green-brown patty","crunch","A burger that loves vegetables.","edible,healthy"},
 	{"veggie chips","IMBAKK","Uke",3,7,2,"E8434F","ED9121","colorful crispy slices","whoosh","Healthy-ish chips.","edible,snack"},
 	{"vehicle","DMCKeL","Dkg",4,7,5,"F59E0B","1F2937","generic boxy buggy with mismatched wheels and one headlight","engine","It has wheels. Probably. Get in.","vehicle,mechanical"},
-	{"veil","BIBIVJ","GjZ",2,5,2,"F8FAFC","C4B5FD","drifting gauzy see-through curtain of lace","whisper","Now you see me. Now you kind of see me.","clothing,stealth"},
-	{"veiled lady","NJBLMI","ScM",2,1,2,"F5F5F5","FFF8E1","mushroom with a lacy white skirt","poof","Dressed up for the wedding. Smells awful.","plant,fungus"},
-	{"vein","BBBBCD","iTN",3,6,2,"3A6FD8","D7263D","branching blue and red tubes pulsing","squirt","The scenic route for blood.","body,science"},
-	{"velocipede","DMBKHL","Dkg",2,5,2,"6D4C41","9E9E9E","wooden bike with no pedals","clatter","Push with your feet. Look silly.","vehicle,ancient,silly"},
-	{"velociraptor","AMCJBA","DQfT",5,9,3,"8A6A3A","D8B07A","feathered body, sickle toe claw","screech","Turkey-sized. Smart. Opens doors.","dinosaur,extinct,reptile,predator"},
 }

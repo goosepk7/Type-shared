@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"radiated tortoise","AMBJUA","GN",2,2,8,"1E1E1E","F2D82A","star-rayed high shell","hiss","Starburst patterns on its shell.","reptile,armored"},
+	{"radiation","FJDNOI","iSM",6,4,3,"C3FF2E","1C2A08","pulsing green glow field, ticking motes","tick","Gives you a glow. Not the good kind.","toxic"},
+	{"radiation blob","AJCJGF","WSM",5,2,5,"84CC16","FDE047","glowing neon blob with smoke","bubble","Glows in the dark. Don't hug.","alien,toxic"},
+	{"radicchio","IGBAKF","Fke",3,5,3,"8A1E3E","F7F2EC","round red-white leafy head","thud","A purple lettuce bomb.","edible,vegetable,healthy"},
 	{"radio","BDBFKI","jdO",2,3,4,"8E9196","C9CED4","chunky box with speakers and handle","blare","Turn it UP.","tech,music,loud"},
 	{"radio tower","EDDMII","GjSeL",4,1,5,"E53935","F5F5F5","tall lattice mast, red and white bands","static","Broadcasting static at your enemies.","structure,defense,tower"},
 	{"radish","IEBAJK","Ke",3,6,4,"D23A4A","F7F2F0","round red root, white tail","crunch","Small, red, and a little spicy.","edible,vegetable,healthy"},
@@ -86,7 +90,7 @@ return {
 	{"ratatoskr","AGAJAG","jdQ",1,10,1,"C2410C","FDBA74","squirrel with message scrolls","chitter","Spreads gossip up and down the world tree.","mythical,silly,cute,norse"},
 	{"ratatouille","IGBOKI","F",2,5,3,"C8302B","5B2A5E","layered spiral of sliced veg","crunch","A rat made this famous.","edible,healthy,vegetable"},
 	{"ratfolk","AJBJNA","fPb",3,8,2,"57534E","F9A8D4","hunched rat warrior with rusty blade","squeak","Sneaky. Squeaky. Many.","goblin"},
-	{"ratio","KDBAKB","XbO",4,8,1,"38BDF8","F43F5E","tiny reply bubble with a thousand hearts over a big sad one","ding","Ratio. Plus you fell off. Plus no summons.","meme,internet"},
+	{"ratio mark","KDBAKB","Se",4,9,3,"38BDF8","FFFFFF","a reply bubble that tags a target and counts every hit","ding","Everyone piles on. The number goes up. Pop.","meme,internet,mark"},
 	{"rattan","NGCLMI","WSTHN",3,1,4,"C9A55A","7CB342","spiny climbing palm vines","rustle","Spiky ropes. Good for furniture. And traps.","plant"},
 	{"rattle","BMAFKI","jd",1,7,2,"F06292","F2F2EE","handle with ball full of beads","squeak","Shake shake shake.","toy,baby"},
 	{"rattlesnake","AMCJCD","fMNO",5,6,3,"B8986A","5A4A30","diamond pattern, rattle tail","rattle","Shakes a maraca before biting.","reptile,venomous,desert"},
@@ -186,6 +190,7 @@ return {
 	{"reservoir","MBENII","FSN",2,1,8,"1E88E5","9E9E9E","big lake held behind a dam wall","thud","A lake on standby.","structure,farm"},
 	{"resilience","KECOKI","GF",1,4,7,"8D6E63","69F0AE","sturdy glowing shell that heals","thunk","Knock me down. I get up.","defence"},
 	{"respawn","KHCOKI","FY",2,7,3,"00E676","FFFFFF","green glow column reforming caster","bling","Back again. Didn't miss me?","meme,support"},
+	{"respects slam","BMDNKI","Ek",6,4,1,"F2EEE4","FFD54F","a giant glowing F keycap pressed down from the sky","thud","Press F. Very, very hard.","meme,internet,keyboard,zone"},
 	{"rest","KGBOKI","F",1,1,3,"A5D6A7","FFF8E1","caster sitting with a cosy glow","sigh","A quick sit-down. Much better.","support"},
 	{"restaurant","EMCCII","FSc",2,1,5,"E57373","F5E6CA","shopfront with tables and awning","thud","Today's special: victory.","structure,building"},
 	{"restoration","KHCOKJ","F",1,5,4,"FFE57F","E8F5E9","golden swirl rebuilding cracks","chime","Good as new. Better, maybe.","support"},
@@ -398,9 +403,4 @@ return {
 	{"rope swing","EMBLII","kS",1,1,3,"8D6E63","212121","rope dangling from a branch with a tyre","thud","Swing out. Kick enemies.","structure,silly"},
 	{"roper","AECLII","cfH",5,1,8,"78716C","FBBF24","rock stalagmite with sticky tendrils","chomp","Pretends to be a rock. Very convincing.","dungeon"},
 	{"rose","NGBNMI","dFST",3,1,3,"C62828","2E7D32","layered red bloom, thorny stem","rustle","Smells sweet. Stings worse.","plant,flower,sharp"},
-	{"rose hedge","NGCCMI","GST",3,1,6,"1B5E20","C62828","hedge spotted with red roses and thorns","rustle","Pretty from afar. Ouch up close.","plant"},
-	{"rosella","AMBJDB","jdA",2,6,2,"E8301E","2A6AE8","red-blue-yellow scalloped parrot","squawk","Dressed like a stained glass window.","bird,jungle,silly"},
-	{"rosemary","IGBOMI","WF",2,4,3,"4E6B4A","8A9A7A","needle-leaf sprigs","crunch","Smells like a roast and a forest.","edible,vegetable,healthy,herb"},
-	{"rosti","IMBAKK","Uke",3,7,2,"D9A04A","F2D07A","golden crispy potato cake","whoosh","A golden potato frisbee.","edible"},
-	{"rosy boa","AMBJCD","fHO",2,4,6,"E8A0A0","8A6A4A","pinkish small boa","hiss","Pink, calm, and squishy.","reptile"},
 }

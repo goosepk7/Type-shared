@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dj","LDCNNI","jdO",4,4,3,"7C3AED","22D3EE","headphones, turntables, glow sticks","beat","Drops the beat. The bass knocks you over.","music"},
 	{"djembe","BMBFJI","O",2,5,3,"8B5A2B","D2B48C","goblet-shaped hand drum","boom","Pa-tum-pa-tum!","music"},
 	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},
 	{"djinn king","ALEJNJ","klhY",8,6,6,"1E3A8A","FACC15","towering genie with jeweled turban","whoosh","Wishes granted. With terms and conditions.","magic,royal,boss"},
@@ -402,5 +403,4 @@ return {
 	{"english muffin","IMBAKK","Uke",3,7,2,"E8D0A0","C89A5A","flat round with nooks","whoosh","Nooks, crannies, and butter traps.","edible"},
 	{"enlarge","KLCOKI","W",4,4,4,"66BB6A","C8E6C9","green upward arrows, caster swelling huge","stretch","Bigger. Much bigger.","silly"},
 	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
-	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
 }

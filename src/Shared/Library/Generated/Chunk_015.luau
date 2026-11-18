@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laser pistol","CHBBwI","KTe",5,9,3,"F2F2EE","FF2D2D","compact sleek beam pistol","zap","Short burst, long reach.","scifi,ranged"},
 	{"laser pointer","CHABJI","jdce",1,10,1,"FF2D2D","24262A","tiny pen with red dot","zap","Cats fear and love this.","silly"},
 	{"laser rifle","CHCBwI","KTe",6,9,4,"F2F2EE","FF2D2D","sleek white rifle, red lens","zap","Straight lines are its whole thing.","scifi,ranged"},
 	{"laser sight","CHAOJI","e",1,1,1,"FF2D2D","24262A","tiny red dot emitter","zap","Never miss again.","scifi,ranged"},
@@ -402,5 +403,4 @@ return {
 	{"lung","BFCFGE","kHI",4,6,3,"F2A1A1","E57373","pair of pink lungs inflating like bellows","whoosh","Deep breath in. Everybody out.","body,science"},
 	{"lungfish","ABCJEC","DfB",4,7,4,"6A6250","A89A80","eel-like with lungs, leg fins","splash","Breathes air. Naps in mud for years.","fish,aquatic,ancient"},
 	{"lupin","NGBNMI","dFS",2,1,2,"7E57C2","F48FB1","tall spire of pea-like blooms","rustle","A rocket made of flowers.","plant,flower"},
-	{"lure spell","KLBLII","dc",1,3,2,"FFD54F","FFFFFF","glowing tempting sparkle on the ground","ding","Ooh, shiny. Come closer.","silly"},
 }

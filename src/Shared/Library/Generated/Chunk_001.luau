@@ -22,6 +22,7 @@ return {
 	{"acacia","NGDCMI","GWkST",4,1,7,"6D4C41","9CCC65","flat umbrella crown, thorny branches","rustle","Shade below. Thorns everywhere.","plant,tree"},
 	{"acai berry","IGAELB","eVP",2,7,1,"3E1A3A","6B2D5E","tiny dark purple round berry","pitter","Small berry. Huge reputation.","edible,fruit,sweet"},
 	{"acaraje","IMBAKF","ke",3,6,2,"C8762B","E8402B","fried bean fritter, split, filled","splat","Fried bean fritter with shrimp.","edible"},
+	{"access granted","KDCNLB","Pb",4,8,1,"3BFF7A","0B1A10","green code rippling forward, enemy gadgets switching off","beep","I'm in. Your traps are not.","meme,internet,hacker,utility"},
 	{"accident","KMCLGI","jEkO",4,5,1,"F59E0B","EF4444","banana peel, spilled paint and a ladder mid-topple","crash","It was like that when you got here. Promise.","silly"},
 	{"accordion","BMCFJI","jI",2,4,3,"C0392B","F2EEE6","pleated bellows with keys","accordion","Squeeze. Wheeze. Polka.","music"},
 	{"achievement","KHBOyB","WFO",3,5,2,"22C55E","FACC15","pop-up banner with a trophy icon sliding in from the corner","ding","Achievement unlocked: read the flavour text.","gaming,meme"},
@@ -402,5 +403,4 @@ return {
 	{"ash storm","FADDOJ","KjNP",6,4,4,"5D4037","FF7043","grey ash blizzard lit by red sparks","rumble","Grey snow that stings.","fire,storm"},
 	{"ash tree","NHDCMI","GWkS",4,1,7,"8D8D8D","E53935","tall tree with orange-red berry clusters","rustle","Wards off witches. Allegedly.","plant,tree"},
 	{"ash wasteland","MAENII","KjS",4,1,6,"616161","FF7043","grey ash dunes, smouldering stumps","rumble","Everything here already burned. Twice.","place,terrain"},
-	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
 }

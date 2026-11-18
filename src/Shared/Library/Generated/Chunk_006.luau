@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cleaning robot","OKBJNF","dIN",2,4,4,"F8FAFC","0EA5E9","small robot with mop and bucket","whir","Wet floor. Your fault.","robot,silly"},
 	{"cleanse","KHBOKJ","F",1,6,2,"E0F7FA","FFFFFF","clean sparkly wave over ally","chime","Removes all the gross stuff.","support"},
 	{"clearing","MGDNII","FSc",4,1,5,"A3E635","FDE68A","sunlit grassy circle ringed by trees, butterflies","tweet","Suspiciously peaceful. Boss fight peaceful.","place,forest"},
 	{"cleats","BMBONF","DT",1,8,2,"24262A","F2F2EE","studded sport shoes","bonk","Grip the turf. Grip the foe.","sport"},
@@ -402,5 +403,4 @@ return {
 	{"crested gecko","AMBJAA","Cf",2,7,2,"E8A03A","F2D07A","eyelash crests, sticky toes","hiss","Has eyelashes. Licks its eyes.","reptile,pet"},
 	{"crested newt","AMAJCA","FMB",1,3,2,"3A3A2A","E8701E","newt with jagged crest","squelch","Wears a dragon crest in spring.","amphibian,wetland"},
 	{"crested porcupine","AMBJAA","GCdT",3,6,5,"2A2A2A","F2F2EE","long black-white quill crest","squeak","Rattles its quills like a maraca.","mammal,cute"},
-	{"cretoxyrhina","ABDJEC","DfTB",7,8,6,"6A7A8A","F2F4F6","big sleek ancient shark","chomp","Sliced through prey like a knife.","fish,aquatic,ocean,predator,extinct,ancient"},
 }

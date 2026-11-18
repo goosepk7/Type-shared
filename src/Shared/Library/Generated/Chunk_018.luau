@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"net trap","BMCLII","lNO",2,1,3,"B89B6A","6B7B3A","hidden net that yanks upward","snap","Hammock, but involuntary.","trap,defense"},
+	{"netherland dwarf","AMAJAG","UCd",1,6,1,"E8D8C8","8A6A4A","tiny round rabbit, short ears","squeak","The tiniest bunny. Max cute.","mammal,cute"},
 	{"network","ODDNmI","jLPh",5,1,5,"0F172A","22D3EE","humming racks of blinking lights joined by glowing cables","hum","The server is down. Everyone panic.","tech"},
 	{"neutron","FMAAKB","ZTe",2,9,3,"9CA3AF","E5E7EB","tiny grey ball with a blank face, no charge","thud","For you? No charge.","science"},
 	{"neutron bomb","CDEGKI","iEP",9,2,2,"8E9196","3FC1D9","sleek silver bomb with glow","zap","Very quiet. Very bad.","scifi,explosive,danger"},
@@ -80,6 +82,7 @@ return {
 	{"norwegian forest cat","ACCJAA","dfT",3,7,2,"B8A08A","F2E8D8","big fluffy forest cat","meow","Viking cat. Fluffy and fearless.","mammal,pet,cute"},
 	{"nose","BMBMGG","HeN",3,3,3,"E8B48A","D98880","big round nose, two nostrils, sniffing lines","whiff","Runs without legs. Smells without manners.","body,silly"},
 	{"nostalgia","KHBNOI","jFO",2,3,3,"FFCC80","F8BBD0","sepia-toned glow with floating old toys","music","Remember the good old days? Now you're stuck there.","silly"},
+	{"not found","KLBOKI","dZY",3,10,1,"FF3DF0","141414","a glitchy magenta-and-black error box where you stood","glitch","The wizard you are looking for could not be found.","meme,internet,glitch,mobility"},
 	{"note","KFAAKB","UeO",2,8,1,"111827","FACC15","black quaver note bouncing along five wavy lines","ding","Do re mi fa so la ti DOH.","music"},
 	{"notebook","BMAAJK","e",1,7,1,"2F6FD1","F2F2EE","spiral-bound notebook","tap","Taking notes. Taking names.","school"},
 	{"nothingness","FICNOI","iZ",4,3,3,"0D0D12","3A3A4A","blank grey-black area, sound fades","hush","There is nothing here. Literally.","spooky,silly"},
@@ -196,6 +199,7 @@ return {
 	{"opah","ABCJEC","DfB",4,7,4,"E8601E","C8D0E8","round red-silver warm fish","splash","The only warm-blooded fish.","fish,aquatic"},
 	{"opal","BLAA4J","je",2,7,5,"E8F4F8","E84A5F","milky gem flashing rainbows","chime","Every colour at once.","treasure,shiny"},
 	{"open","KHBOoI","IhY",2,6,1,"FDE68A","8B5A2B","door swinging wide with light pouring through","creak","Knock knock. Nobody. Knock harder.","household"},
+	{"open house","EMDCII","Gk",6,3,6,"F4B183","C0504D","a little cartoon cottage dropping out of the sky","thud","It's free. It just landed on someone first.","meme,internet,building,wall"},
 	{"open sesame","KLCOKI","Y",2,6,2,"FFC107","7C4DFF","glowing doorway swinging open","creak","The magic password.","magic"},
 	{"opera","LFDJNA","kIeO",5,2,6,"7F1D1D","FACC15","grand singer in a horned helmet shattering a glass","sing","It is not over until she sings. She is singing.","music,loud"},
 	{"opera singer","LLCJNI","jkO",5,3,4,"7F1D1D","FACC15","horned helmet, braids, huge lungs","sing","It's not over till she sings.","music"},
@@ -399,8 +403,4 @@ return {
 	{"parent","LMCJNA","GFO",4,4,6,"6C8EBF","F2D0B4","grown-up with crossed arms, car keys, raised eyebrow","sigh","Because I said so. That is why.","family"},
 	{"parfait","IGBOKI","F",2,5,3,"F7F4EC","D7263D","tall glass of layered yogurt, berries","crunch","Layers of fruit, yogurt, crunch.","edible,healthy,breakfast"},
 	{"park","MGENII","FS",2,1,6,"7CB342","F5E6CA","grass, trees, benches, a duck pond","rumble","Lovely spot for a picnic. And an ambush.","place,terrain"},
-	{"park ranger","LGCJNA","QFc",3,6,5,"365314","D6A35A","flat-brim hat, khaki uniform, binoculars","whistle","Only you can prevent forest fires.","outdoor"},
-	{"parka","BCCONI","GJ",1,4,3,"E67E22","1F2F55","puffy hooded winter coat","swish","Marshmallow armour.","clothing,winter"},
-	{"parking lot","MEDNII","SN",1,1,6,"424242","F5F5F5","flat grey lot, painted lines","rumble","Every space is taken. Forever.","place,terrain,silly"},
-	{"parking meter","OKBCmI","Gb",1,1,7,"8E9196","C9CED4","post with coin slot","clank","Time's up.","mechanical"},
 }

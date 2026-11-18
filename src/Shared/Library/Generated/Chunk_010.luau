@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
 	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
 	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
@@ -280,7 +281,7 @@ return {
 	{"galah","AMBJDB","jdA",2,6,2,"E87AA0","C8C8CC","pink and grey cockatoo","squawk","Pink, grey, and goofy.","bird,jungle,silly"},
 	{"galaxy","MLFNKK","jSRH",8,2,9,"4A148C","40C4FF","swirling spiral arms of glittering stars","rumble","Summons a galaxy. Spinning. At them.","space"},
 	{"galaxy beam","FLEBKI","KTP",8,7,1,"1A237E","F48FB1","beam full of swirling stars and nebula colour","hum","Billions of stars, one direction.","space,magic"},
-	{"galaxy brain","KLCAKB","jO",5,7,1,"7C4DFF","FFD54F","glowing starry brain projectile","hum","Thought so hard it became space.","meme,psychic"},
+	{"galaxy brain beam","KLCBKB","DWe",5,8,1,"8B5CFF","FFE27A","a starry glowing brain that fires a widening beam","hum","Thought so hard it became space. Then a laser.","meme,internet,psychic,beam"},
 	{"gale","FFDFOB","kIN",6,8,3,"8FB3C6","E3EEF3","wide howling wind front","howl","Wind that took the stairs too fast.","air,storm"},
 	{"gale force","FFEFOB","kINP",7,8,3,"78909C","ECEFF1","thick wall of howling wind with debris","howl","Hold onto your hat. And your friends.","air,storm"},
 	{"gale smash","KFDF6I","kfTI",8,10,2,"DFF3FF","4C7FB8","one punch, a hurricane tunnel tearing down the lane","boom","One punch. The weather changes.","anime,hero,punch"},
@@ -402,5 +403,4 @@ return {
 	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
 	{"ghost car","DICKHE","DjZg",5,7,3,"B3E5FC","5E35B1","see-through glowing car, no driver","engine","Nobody is driving. Nobody.","mechanical,vehicle,land,spooky"},
 	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
-	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
 }
