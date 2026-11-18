@@ -40,6 +40,7 @@ return {
 	{"atoll","MBENII","SN",2,1,7,"F4E4BC","26C6DA","ring of sand around a turquoise lagoon","rumble","A donut made of beach.","place,terrain"},
 	{"atom","FDAGKJ","ERLV",3,9,2,"3B82F6","EF4444","red-blue nucleus with three electrons whizzing on rings","hum","Never trust it. It makes up everything.","science,scifi"},
 	{"attack","KMCAKB","kf",4,8,2,"FF5252","FFFFFF","bold red impact flash","thwack","Plain and simple. Go get them.","melee"},
+	{"attack heli","OFCMHE","AQe",4,8,4,"5E6B52","9ED8F2","a small attack helicopter circling overhead","chop","Rotors spinning, rounds incoming.","gaming,shooter,vehicle,air,summon"},
 	{"attack helicopter","DFDMHE","EAeg",7,7,7,"37474F","4B5320","narrow two-seat body, stub wings, rockets","chop","Rotors spinning, rockets grinning.","vehicle,air"},
 	{"attic","MICNII","jSh",2,1,6,"8D6E63","BCAAA4","dusty slanted room full of boxes","rumble","Dusty, creaky, definitely haunted.","place,terrain,spooky"},
 	{"atv","DEBKHL","UDkg",4,8,4,"D62828","1F1F1F","four fat tyres, handlebars, chunky seat","engine","Mud: flung. Enemies: flung harder.","mechanical,vehicle,land"},
@@ -402,5 +403,4 @@ return {
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
 	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
 	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
-	{"beep","KDAFOB","d",1,10,1,"00E676","FFFFFF","tiny sound blips","beep","Beep beep! Coming through.","silly"},
 }

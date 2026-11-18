@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beep","KDAFOB","d",1,10,1,"00E676","FFFFFF","tiny sound blips","beep","Beep beep! Coming through.","silly"},
 	{"beet","IEBAJK","FSe",3,6,4,"8E1F3F","C22A5A","round dark red root, leaves","crunch","Stains everything bright purple.","edible,vegetable,healthy"},
 	{"beetle","AMAJFA","Gf",1,3,4,"2A4A2A","6AC84A","shiny round shell, six legs","click","Armored. Shiny. Unbothered.","insect,armored"},
 	{"beetle knight","AKBJFA","GDk",3,4,7,"1E3A8A","15803D","armored beetle with horn lance","click","Built-in armor. Very shiny.","insect,warrior"},

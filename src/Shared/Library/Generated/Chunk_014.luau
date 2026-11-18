@@ -120,6 +120,7 @@ return {
 	{"jupiter","MLFGKJ","kHeL",9,1,10,"D4A373","B5523B","huge banded sphere with a giant red spot","rumble","Biggest planet. Biggest bonk.","space"},
 	{"justice","KHDAKB","KO",7,8,2,"FFD54F","1565C0","golden scales symbol slamming down","gavel","Justice is served. Hot.","holy"},
 	{"k9 officer","LMCJNA","DQh",4,7,5,"1E3A8A","A16207","officer with a German-shepherd-style dog","bark","Sends the dog. Dog is fast.","rescue,canine"},
+	{"k9 unit","AECJAA","DQf",4,8,4,"C49660","4E5C46","an armoured patrol dog in a tactical vest","bark","Good dog. Bad day for them.","gaming,shooter,animal,summon"},
 	{"kaboom","KADGKI","Ek",7,8,1,"FF6D00","FFEB3B","comic-style starburst explosion","boom","The comic sound effect, but real.","explosive,silly"},
 	{"kagu","AMCJDA","AfT",3,5,2,"B8B8C0","E8301E","grey bird with crest","bark","Barks like a dog. Ghost bird.","bird,wetland"},
 	{"kaiju","AAFJBA","KDkeO",9,4,10,"1F2937","22D3EE","towering lizard with dorsal spikes, atomic glow","roar","Ruins skylines. Wonderful posture.","giant,kaiju,boss,danger"},
