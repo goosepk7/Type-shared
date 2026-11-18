@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nian","AADJAA","Dkf",6,6,7,"B91C1C","FACC15","maned lion beast, single horn","roar","Scared of firecrackers and the color red.","mythical,holiday"},
 	{"nibble","KMAAKB","if",1,8,1,"FFCC80","FFFFFF","tiny chomp marks","nom","Nom. Tiny but rude.","silly"},
 	{"nidhogg","AIEJCH","Cif",8,4,8,"292524","65A30D","black serpent dragon gnawing roots","roar","Chews on the roots of the world.","mythical,reptile,norse"},
 	{"niece","LMBJNA","jde",2,7,3,"F472B6","F2D0B4","small girl covered in glitter with a marker pen","giggle","Drew on the walls. Calls it a gift.","family,cute"},
@@ -402,5 +403,4 @@ return {
 	{"particle cannon","CDDMxI","KTe",8,5,6,"F2F2EE","3FC1D9","cannon with accelerator rings","zap","Science, but very loud.","scifi,ranged"},
 	{"partisan","CKDAuI","fT",5,5,5,"8A929B","8B5A2B","broad spearhead with side wings","whoosh","A spear with very wide shoulders.","medieval,sharp"},
 	{"partner","LMCJNA","GQFf",4,6,5,"F59E0B","78350F","buddy standing back to back with you, finger guns","yeehaw","Howdy, pardner. Dibs on the left ones.","support"},
-	{"partridge","AMBJDA","df",2,4,2,"8A7A6A","C8703A","round plump game bird","cluck","Sits in pear trees. Allegedly.","bird,farm,holiday"},
 }

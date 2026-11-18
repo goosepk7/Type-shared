@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swing","BFCLII","Uklg",4,6,5,"EF4444","6B7280","A-frame with a seat on chains at full arc","creak","Higher! Higher! Too high! TOO HIGH!","playground,toy"},
+	{"swing set","EMCCII","GkS",2,1,4,"1E88E5","FFB300","A-frame with dangling seats","thud","Swings back and hits you.","structure,building,silly"},
 	{"swinging axe","BKDLsI","kfV",6,4,6,"8A929B","5A3A1E","crescent blade swinging on pole","snap","Tick. Tock. Duck.","trap,defense"},
 	{"swinging log","BMDLII","kO",6,3,6,"8B5A2B","B89B6A","log hung on ropes swinging down","snap","Watch out for the— oof.","trap,defense"},
 	{"swirlie","KBBL5K","jHN",3,5,1,"E0F2FE","38BDF8","toilet bowl whirlpool with a flush handle","slosh","Flush. Hair by plumbing.","silly,gross"},
@@ -401,6 +403,4 @@ return {
 	{"tonic water","IBBFKI","EkI",3,7,1,"D8F0F8","F7F7F2","clear fizzy, lime wedge","fizz","Bitter bubbles.","edible,drink,fizzy"},
 	{"tonkotsu ramen","IABOGI","KF",3,4,3,"F2E8D0","C8502B","creamy white broth bowl","slurp","Creamy broth simmered for hours.","edible,warm,healthy"},
 	{"tool","JKBAtK","kfO",3,6,5,"EF4444","9CA3AF","combo tool: hammer one side, wrench the other","clank","If it does not fit, hit it harder.","tool"},
-	{"toolbox","BKBLJK","Gh",2,3,7,"C0392B","8A929B","red metal box with handle","clank","Everything you need, minus the one thing.","tool"},
-	{"tooth","BMBAKB","UfT",3,6,6,"FAFAF0","E8E0C8","shiny white molar with two roots, sparkle","clack","Brushed twice a day. Bites all day.","body,sharp"},
 }

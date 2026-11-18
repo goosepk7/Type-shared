@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"venus flytrap army","NGELMI","ScfO",6,1,6,"7CB342","C62828","dozens of snapping flytraps","chomp","A whole field of hungry mouths.","plant,carnivorous"},
+	{"verbena","NHBNMI","dFS",1,1,2,"9575CD","E1BEE7","clusters of tiny purple flowers","rustle","Keeps away witches. Supposedly.","plant,flower"},
 	{"verdant bastion","NGDCaI","GWkl",6,5,4,"966E4A","60AA46","a row of gnarled trees bursts up as a woven wall","creak","Plant a seal. Grow a fortress. Water occasionally.","anime,ninja,wood,wall"},
 	{"vermilion bird","AADJDB","KAFe",7,8,5,"DC2626","FB923C","crimson pheasant, flame tail ribbons","screech","Guardian of the south and of spicy weather.","mythical,bird,fire,ancient"},
 	{"vermin","AJBJLA","CPbh",2,7,2,"6B6257","B8AC9C","scurrying pack of scruffy grey nibblers","skitter","If you see one, there are forty.","swarm,wild"},
@@ -401,6 +403,4 @@ return {
 	{"wind wave","FFDFOB","kI",5,8,1,"B3E5FC","FFFFFF","wide crescent of rushing air","whoosh","The sky shrugged at you.","air"},
 	{"wind-up toy","BMAJBA","Dd",1,6,2,"C0392B","B58A3A","small toy with big key on back","squeak","Click click click—zoom!","toy"},
 	{"wind-up toy robot","OKAJNA","UDd",1,5,3,"DC2626","94A3B8","tin robot with a big wind-up key","tick","Walks into walls. Turns. Walks into walls.","robot,silly,cute"},
-	{"windbreaker","BFBIyE","GIa",2,5,4,"22C55E","A855F7","swishy neon jacket puffed up by the wind","swish","Swish swish swish. Stealth: zero.","clothing"},
-	{"windmill","EFDMIK","GkSI",4,1,7,"F5E6CA","8D6E63","tower with four giant turning sails","creak","The sails spin. Enemies get swatted.","structure,building"},
 }

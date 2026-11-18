@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stale bread","IEBAKK","keO",4,7,6,"C8A06A","A88050","hard grey-brown loaf","bonk","Hard enough to use as a brick.","edible,silly"},
+	{"stalk","KIBOMA","QZf",3,5,2,"1F2937","22C55E","pair of eyes peering from a walking bush","rustle","That bush was not there before.","stealth,silly"},
 	{"stamina","KGCOKJ","DF",2,6,4,"43A047","FFF59D","green breathing glow pulse","breath","Keep going. And going.","support"},
 	{"standard bearer","LMCJNA","FOh",3,4,5,"DC2626","FACC15","tall flag with crest","horn","Rally to the flag! Allies buffed.","warrior"},
 	{"staple gun","JKAAwI","Te",2,8,3,"24262A","C9CED4","heavy-duty stapler with grip","thunk","Kachunk. Pinned.","modern,ranged"},
@@ -401,6 +403,4 @@ return {
 	{"swimmer","LBCJNC","DB",3,8,3,"1D4ED8","F8FAFC","cap, goggles, mid-stroke","splash","Gold medal in splashing.","sport,aquatic"},
 	{"swimming pool","EBCLII","SN",2,1,5,"4FC3F7","F5F5F5","rectangular blue pool with ladders","splash","Everyone in! Nobody out!","structure,building"},
 	{"swimsuit","BBBOEC","UDB",2,7,2,"0EA5E9","FDE047","stripy swimsuit doing a perfect cannonball","splash","Last one in is a rotten egg.","clothing,aquatic"},
-	{"swing","BFCLII","Uklg",4,6,5,"EF4444","6B7280","A-frame with a seat on chains at full arc","creak","Higher! Higher! Too high! TOO HIGH!","playground,toy"},
-	{"swing set","EMCCII","GkS",2,1,4,"1E88E5","FFB300","A-frame with dangling seats","thud","Swings back and hits you.","structure,building,silly"},
 }

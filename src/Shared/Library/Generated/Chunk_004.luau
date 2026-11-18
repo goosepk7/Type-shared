@@ -403,5 +403,4 @@ return {
 	{"cargo helicopter","DFEKHE","AlHg",5,5,7,"556B2F","37474F","long fuselage with two big rotors","chop","Picks up tanks. And you.","vehicle,air"},
 	{"cargo plane","DFFKHB","DAklgh",6,6,8,"607D8B","37474F","fat body, high wings, rear ramp","jet","Drops crates. Some of them land on you.","vehicle,air"},
 	{"cargo ship","DBFKHC","GDkgB",7,2,10,"C62828","1E88E5","long hull stacked with coloured crates","horn","Delivers twenty thousand crates of pain.","vehicle,aquatic"},
-	{"caribbean","MBFNII","FSh",4,1,8,"26C6DA","F4E4BC","clear turquoise water and palm islands","rumble","Pirates welcome. Obviously.","place,geography,pirate"},
 }

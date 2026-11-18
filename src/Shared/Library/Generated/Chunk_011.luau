@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost horse rider","AIDKAA","DZg",6,9,4,"A5B4FC","1E1B4B","spectral rider on a glowing horse","neigh","Gallops across the sky at night.","ghost,mount"},
 	{"ghost hunter","LHCJNA","He",5,5,5,"F8FAFC","22C55E","jumpsuit, proton-style backpack vacuum","zap","Who you gonna call? This person.","spooky"},
 	{"ghost king","AIDJNJ","iAh",7,5,4,"A5B4FC","CA8A04","crowned translucent giant","wail","Rules a kingdom of sheets.","ghost,royal,boss"},
 	{"ghost lantern bearer","AICJNJ","Ac",3,4,2,"F8FAFC","FACC15","ghost carrying a glowing lantern","whisper","Lights the way. Somewhere strange.","ghost"},
@@ -402,5 +403,4 @@ return {
 	{"greengage","IGAAKF","Fke",3,6,2,"A8C86B","E8F2B0","small round green plum","splat","A tiny green plum.","edible,fruit,sweet"},
 	{"greenhouse","EGCNII","WFS",2,1,3,"B2EBF2","66BB6A","glass building full of plants","thud","Grows things. Fast.","structure,building,plant"},
 	{"greenland shark","ACDJEC","DfTB",7,1,6,"5A5E64","9AA0A6","slow chunky grey shark","chomp","Lives 400 years. Never hurries.","fish,aquatic,ocean,predator,arctic"},
-	{"gremlin","ADAJNA","jLb",2,8,2,"4D7C0F","94A3B8","tiny long-eared imp with a wrench","cackle","Breaks machines just to hear them beep.","goblin,mechanical,silly"},
 }
