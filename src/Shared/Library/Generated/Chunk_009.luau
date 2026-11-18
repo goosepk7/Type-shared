@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"evil stepmother","LICJNA","jh",4,4,4,"111827","7C3AED","tall collar, sharp nails, glare","cackle","Makes you do all the chores.","folklore,villain"},
+	{"evil tree","NIECMI","GSfH",6,2,8,"3E2723","B71C1C","tree with glowing eyes and a scowling mouth","rustle","Hates trespassers. Everyone is a trespasser.","plant,tree,spooky"},
 	{"evil twin","LICJNA","jZ",4,6,4,"1F2937","DC2626","identical person but with goatee","cackle","Same face. Worse manners.","villain,silly"},
 	{"evocation","FLCAKB","Ee",5,8,1,"FF5722","7C4DFF","raw multicoloured energy bolt","whoom","Pure magical oomph.","magic"},
 	{"evolution","KGCOBA","WFfV",5,4,5,"22C55E","FDE047","line of shapes: fish, lizard, ape, human, robot, glowing","fanfare","Give it a few million years. Or one second.","science,gaming"},
@@ -401,6 +403,4 @@ return {
 	{"foam finger","BMBONF","dF",1,5,1,"2F6FD1","F2F2EE","giant foam number-one hand","bonk","We're number one!","sport,silly"},
 	{"foam hammer","BMCHtK","Udf",1,7,2,"F1C40F","2F6FD1","huge squishy foam hammer","thud","Fwump.","toy,silly"},
 	{"foam machine","OMCD1I","jNP",1,2,4,"F2F2EE","47D7E8","cannon spewing foam bubbles","pop","Foam party! Nobody can move.","party"},
-	{"foam sword","BMCHrK","Udf",1,7,2,"2F6FD1","F1C40F","squishy foam blade","shing","Bonk. Bonk bonk. Victory.","toy,silly"},
-	{"focaccia","IMBAKK","Uke",3,7,2,"E0B05A","6B8E2B","dimpled flat bread, herbs, oil","whoosh","Bread with dimples and rosemary.","edible"},
 }

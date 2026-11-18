@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clockwork owl","AKAJDB","AZ",2,7,4,"B45309","22D3EE","brass owl with glass eyes","tick","Watches everything. Ticks quietly.","robot,bird,steampunk"},
+	{"clogs","BMBONI","k",1,4,3,"C49A6C","7A4E2D","carved wooden shoes","swish","Clomp clomp clomp.","clothing"},
 	{"clone","KLCJNA","dV",3,5,2,"80DEEA","FFFFFF","exact glowing copy of the caster","pop","Two of you. Twice the trouble.","magic"},
 	{"cloning gun","OLBBwI","eVh",4,6,3,"F2F2EE","8BC34A","ray gun with double barrel","hum","Two of them? Uh oh.","scifi"},
 	{"cloning lab","EJCNII","SVh",4,1,6,"76FF03","37474F","glass tubes with floating figures","hum","Two of you. Three. Ten.","structure,future"},
@@ -401,6 +403,4 @@ return {
 	{"crown jewels","BHBONI","Fc",3,4,5,"D4A72C","B0103A","cushion of gem crown and sceptre","swish","Shiny enough to distract a dragon.","royal,shiny,treasure"},
 	{"crown-of-thorns starfish","AJAJGA","GTMN",2,1,4,"8A3A6A","E8701E","spiky many-armed starfish","squelch","A starfish wearing a spiky crown.","aquatic,ocean"},
 	{"crowned crane","AMCJDA","dAfT",3,5,2,"6A6A6E","F2C02A","golden crown of feathers","squawk","Wears a golden crown.","bird,wetland,royal"},
-	{"cruise missile","CADAkB","EQke",8,8,3,"8E9196","F2F2EE","long winged missile","boom","Takes the scenic route to boom.","explosive"},
-	{"cruise ship","DBFKHC","DkghB",6,3,9,"F5F5F5","1565C0","massive white ship, stacked decks, funnels","horn","Fourteen decks and a buffet. Ramming speed!","vehicle,aquatic"},
 }

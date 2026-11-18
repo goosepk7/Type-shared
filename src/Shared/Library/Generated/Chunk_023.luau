@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ship captain","LBCJNA","Gh",4,4,5,"1E3A8A","F8FAFC","peaked cap, pipe, white beard","horn","Goes down with the ship. Not today.","aquatic"},
+	{"ship lookout","LBCJNI","eO",3,5,3,"0369A1","FACC15","telescope, crow's nest","horn","LAND HO! Also, enemies ho.","pirate"},
 	{"ship of the line","DBFMHC","EkegB",8,4,9,"3E2723","FFD54F","three decks of cannons, huge sails","cannon","A floating castle. With a hundred cannons.","vehicle,aquatic"},
 	{"shipping container","BKECnI","GO",3,1,10,"C0392B","9C4A1A","giant ribbed metal box","thud","The brick of the seas.","container"},
 	{"shipworm","ABAJGI","GCN",1,1,6,"E8E0D0","C8B8A0","clam that bores into wood","squelch","A clam that eats boats.","mollusk,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"soldier","LECJNA","GDe",5,6,6,"4D7C0F","57534E","camo helmet, backpack, boots","bang","Hup two three four.","military"},
 	{"solenodon","AMBJAA","CfM",2,5,3,"8A6A4A","E8B0A0","long snout shrew with venom","squeak","Venomous spit. Super rare.","mammal,wild"},
 	{"solid","FECCnI","Gka",4,1,9,"6B7280","9CA3AF","perfectly plain grey block, very hard, very square","thunk","Does not flow. Does not care.","science,defense"},
-	{"solitaire","BMBELG","UjP",3,5,2,"15803D","F8FAFC","cascade of bouncing playing cards leaving trails","swish","You won. The cards are bouncing. Classic.","game,tech"},
-	{"solo","LICJNA","GDfT",6,7,5,"374151","FACC15","lone hooded figure against the wind, scarf trailing","whistle","No team. No heals. No problem.","gaming,warrior"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"treant","AGEJMA","GWFk",7,2,9,"78350F","4D7C0F","giant walking tree with bark face","creak","Takes three days to say good morning.","plant,giant"},
+	{"treant sapling","AGAJMA","WF",1,3,3,"65A30D","A3E635","little walking sapling with leaf hair","rustle","Grows a bit each round.","plant,cute"},
 	{"treasure chest","BMCLII","dch",3,1,7,"8B5A2B","D4A72C","iron-banded chest spilling gold","chime","X marked this spot.","treasure,pirate"},
 	{"treasure galleon","DBEMHC","cegB",6,4,8,"6D4C41","FFD54F","galleon overflowing with gold","cannon","Everyone wants what is inside.","vehicle,aquatic,pirate"},
 	{"treasure hunter captain","LMCJNA","cb",4,6,4,"A16207","FACC15","map, shovel, eyepatch","ding","X marks the spot. You're the spot.","explorer,pirate"},
@@ -401,6 +403,4 @@ return {
 	{"wallop","KMCAKB","k",5,7,3,"FFB74D","FFFFFF","big round impact puff","wham","A good old-fashioned wallop.","silly"},
 	{"walnut","IEAAKK","UeO",2,8,5,"8A5A2A","C8A07A","wrinkly shell, brain-like nut","tok","Looks like a tiny brain. Hits like a big one.","edible,nut"},
 	{"walnut tree","NGDCMI","GWkSe",4,1,8,"5D4037","7CB342","broad tree with round green nuts","rustle","Throws nuts. Hard ones.","plant,tree"},
-	{"walrus","ACDJEC","UkfTB",6,5,7,"9A6E54","F2E6D2","huge blubbery body, long tusks, whiskers","bark","Uses its tusks as climbing hooks.","mammal,aquatic,arctic"},
-	{"wampus cat","AICJAA","jZf",5,8,4,"1C1917","FACC15","six-legged cat with glowing eyes","hiss","Two extra legs. Twice the zoomies.","cryptid,cat,spooky"},
 }

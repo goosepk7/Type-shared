@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tea party","IMCJII","dFc",5,1,6,"F7F2EC","F2A6C8","little table, teapot, cups","thud","Fancy cups, tiny cakes, polite chaos.","edible,giant,silly,fancy"},
+	{"tea plantation","NGENMI","F",2,1,6,"2E7D32","9CCC65","rows of bushes on misty hills","rustle","Calming. Steaming. Healing.","plant"},
 	{"tea rose","NGCNMI","dWFST",2,1,3,"FFCCBC","2E7D32","climbing canes loaded with roses","rustle","Climbs walls. Smells divine. Stabs a bit.","plant,flower"},
 	{"tea set","BBBELJ","KcP",2,4,1,"FBCFE8","FFFFFF","pink teapot and cups pouring in mid-air","clink","Pinkies up. Gloves off.","toy,cute"},
 	{"teach","KHBF6B","XNO",3,4,2,"15803D","FFFFFF","pointer stick tapping a chalkboard, chalk flying","tap","Class is in session. You are the lesson.","school"},
@@ -401,6 +403,4 @@ return {
 	{"treacle sponge","IMBLGI","SNP",2,3,3,"E8A317","F2D88A","sponge pudding with syrup","gloop","A syrup-drenched sponge.","edible,sticky,sweet"},
 	{"treacle tart","IMBLGI","SNP",2,3,3,"E8A317","D9A04A","golden syrup tart","gloop","A golden sticky tart.","edible,sticky,sweet"},
 	{"treadmill","OMCL1I","IN",1,3,6,"24262A","8E9196","motor belt with handrails","hum","Run forever. Get nowhere.","sport,silly"},
-	{"treant","AGEJMA","GWFk",7,2,9,"78350F","4D7C0F","giant walking tree with bark face","creak","Takes three days to say good morning.","plant,giant"},
-	{"treant sapling","AGAJMA","WF",1,3,3,"65A30D","A3E635","little walking sapling with leaf hair","rustle","Grows a bit each round.","plant,cute"},
 }

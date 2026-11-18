@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pop tart","IMBAKK","Uke",3,7,2,"E8C88A","F2A6C8","frosted rectangle, sprinkles","whoosh","Breakfast in a rectangle.","edible"},
+	{"popcorn","IMBGKF","EeVP",4,6,1,"FFF4D6","F2C24A","fluffy white kernels, butter gold","pop","Explodes once. Then again in your mouth.","edible,explosive,snack"},
 	{"popcorn bomb","BABGKK","dEP",3,6,1,"F1C40F","F2F2EE","bag that bursts into popcorn","thud","POP POP POP POP POP.","silly,explosive"},
 	{"popcorn cart","DMBKHL","dceg",2,3,3,"E53935","FFEB3B","striped cart with popping kettle","engine","Pop pop pop! Kernels everywhere.","mechanical,vehicle,land,silly"},
 	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
@@ -401,6 +403,4 @@ return {
 	{"recycling","BGCL2I","abh",3,2,5,"2563EB","22C55E","blue bin with three chasing arrows, cans leaping out","clatter","Your attack will return as a park bench.","household,eco"},
 	{"recycling bin","BMCLII","O",1,1,5,"2F6FD1","F2F2EE","blue bin with arrows logo","clang","Reduce. Reuse. Re-bonk.","kitchen,household"},
 	{"recycling truck","DMDKHL","DklHg",5,4,8,"43A047","F5F5F5","green truck with sorting bins","engine","Recycles enemies into something useful.","mechanical,vehicle,land"},
-	{"red admiral","AMAJFB","jdA",1,5,1,"1E1E1E","E8301E","black wings with red bands","flutter","Military-looking butterfly.","insect,cute"},
-	{"red apple","IGBAKF","Fke",3,6,2,"B3121D","F6E7C1","round, deep red, stem and leaf","splat","Polished to a shine. Thrown with love.","edible,fruit,sweet"},
 }

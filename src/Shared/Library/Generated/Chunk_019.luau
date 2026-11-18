@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pekingese","AMBJAA","dQf",2,6,2,"E8B87A","F2E0C0","flat face, lion mane fluff","yip","Tiny lion. Huge ego.","mammal,pet,cute"},
+	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
 	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
 	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
 	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
@@ -401,6 +403,4 @@ return {
 	{"pop gun","CMBAwI","keO",1,7,2,"C0392B","C49A6C","toy rifle with cork on string","thwip","POP! Boop.","toy,silly"},
 	{"pop quiz","KLBAKB","jO",3,9,1,"FFFFFF","1565C0","floating paper with question marks","ding","Pencils out! Panic!","silly"},
 	{"pop rocks","IDBGKF","jELP",4,6,1,"F2A6C8","4FA3E8","crackling candy crystals","pop","Crackles. Snaps. Tiny fireworks.","edible,explosive,candy"},
-	{"pop tart","IMBAKK","Uke",3,7,2,"E8C88A","F2A6C8","frosted rectangle, sprinkles","whoosh","Breakfast in a rectangle.","edible"},
-	{"popcorn","IMBGKF","EeVP",4,6,1,"FFF4D6","F2C24A","fluffy white kernels, butter gold","pop","Explodes once. Then again in your mouth.","edible,explosive,snack"},
 }

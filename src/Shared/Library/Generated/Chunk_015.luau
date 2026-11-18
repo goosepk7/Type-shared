@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"leaning tower of pisa","EMFCII","GkSO",6,1,8,"F5F5F5","BDBDBD","white tiered tower tilting heavily","rumble","Finally falls over. On purpose. Onto you.","structure,landmark,silly"},
+	{"leap","KMCOKG","Dl",3,8,2,"FFCC80","FFFFFF","long arcing jump trail","whoosh","One giant leap. Mostly sideways.","speed"},
 	{"leapfrog","KGBOBG","UDO",3,7,2,"22C55E","FDE047","line of kids vaulting over each other's backs","boing","Over you. Over you. Over you. Splat.","toy,sport"},
 	{"learn","KHBOKJ","GWF",3,3,3,"3B82F6","FDE047","stack of books with a level-up arrow and a tired candle","ding","Knowledge is power. Naps are also power.","school,support"},
 	{"leash","BMBLKI","HN",1,5,2,"C0392B","C9CED4","strap with clip","squeak","Heel!","pet"},
@@ -289,6 +291,7 @@ return {
 	{"lubber grasshopper","AMAJFA","dMP",1,6,1,"F2D82A","1E1E1E","big chunky colorful grasshopper","buzz","Too chunky to fly. Hisses.","insect"},
 	{"luck","KHBOKJ","Fa",2,6,3,"43A047","FFD54F","floating four-leaf clovers and gold sparkles","ding","Things just go your way. Weirdly.","luck"},
 	{"lucky bamboo","NGAOMI","F",1,1,3,"7CB342","C5E1A5","twisty bamboo stalks in a vase","rustle","Brings luck. Probably.","plant,lucky"},
+	{"lucky block","BLBO2J","Dh",4,6,4,"FFC93C","8A5CF6","glowing rune block spins and pops a random spell","rattle","Could be anything. Will be something.","game,platformer,luck,random"},
 	{"lucky coin","BHAOKJ","Fc",2,6,3,"D4A72C","B8693D","worn shiny coin","boing","Heads: you win. Tails: you also win.","treasure,shiny"},
 	{"lucky seven","KHCOKJ","Da",4,7,3,"FFD54F","D32F2F","three glowing sevens spinning","jingle","Jackpot energy.","luck"},
 	{"lucky streak","KHCOKJ","Da",3,7,3,"43A047","FFD54F","trail of clovers behind caster","ding","Can't stop winning.","luck"},
@@ -400,7 +403,4 @@ return {
 	{"magpie","AMBJDB","dAb",2,7,1,"1E1E24","F2F2F2","black and white bird, long blue-green tail","tweet","Steals shiny things. Very shiny.","bird,cute"},
 	{"mahi-mahi","ABCJEC","DfB",4,7,4,"4AB04A","F2D82A","blunt head, green-gold rainbow","splash","Shines like a glowing rainbow.","fish,aquatic"},
 	{"maiasaura","AMDJAA","dFk",5,5,6,"7A6A4A","D8C08A","duckbill mother with nest","honk","Good mother lizard. Literally.","dinosaur,extinct,reptile"},
-	{"maid","LMCJNA","FI",3,6,4,"111827","F8FAFC","apron, feather duster","swish","Dusts the enemies off the map.","silly"},
-	{"maidenhair fern","NGANMI","ZS",1,1,2,"7CB342","3E2723","delicate fan fronds on black stems","rustle","Dainty. Shy. Ancient.","plant,ancient"},
-	{"mail","BMBELB","dPO",3,6,2,"F5F5F0","DC2626","blizzard of envelopes, postcards and one heavy parcel","thud","You have got mail. All of it. At once.","household"},
 }

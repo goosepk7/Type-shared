@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stink bomb","CJADKF","jSMe",2,7,1,"6B7B3A","8BC34A","small vial leaking green fumes","poof","Smells like victory. Mostly socks.","silly"},
+	{"stink bug","AJAJFA","jdAMP",1,6,1,"6A5A3A","C8A86A","shield-shaped flat bug","buzz","Smells awful when squished. Avoid.","insect"},
 	{"stink cloud","FJBDOJ","jdN",2,5,1,"C0CA33","827717","yellow-green puff with wavy stink lines","pfft","Everyone leaves. Fast.","silly,toxic"},
 	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
 	{"stinky feet","KJBDOJ","jM",2,4,1,"C0CA33","FFF59D","green wavy stink lines from shoes","whiff","Take off your shoes. Everyone faints.","silly,gross"},
@@ -401,6 +403,4 @@ return {
 	{"tayra","AMCJAA","CfT",3,8,2,"2A1E14","E8C87A","dark long weasel, gold head","chatter","Hides unripe fruit to ripen later.","mammal,predator"},
 	{"tea","IABOKI","F",2,5,2,"C8762B","F2E2C8","steaming teacup and saucer","slurp","A cup of calm.","edible,drink,warm"},
 	{"tea bush","NGBNMI","FN",1,1,3,"2E7D32","9CCC65","neat rows of small glossy shrubs","rustle","Time for a calming cuppa.","plant,crop"},
-	{"tea party","IMCJII","dFc",5,1,6,"F7F2EC","F2A6C8","little table, teapot, cups","thud","Fancy cups, tiny cakes, polite chaos.","edible,giant,silly,fancy"},
-	{"tea plantation","NGENMI","F",2,1,6,"2E7D32","9CCC65","rows of bushes on misty hills","rustle","Calming. Steaming. Healing.","plant"},
 }

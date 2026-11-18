@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},
+	{"jeweler","LHCJNI","ca",3,3,4,"FACC15","67E8F9","loupe, gem tray","ding","Every gem sparkles. Blindingly.","merchant,gem"},
 	{"jewelry","BHBL2I","dcaO",3,2,4,"FACC15","22D3EE","spilling heap of rings, chains and glittering gems","jingle","Ooh, shiny. That was the trap.","shiny,royal"},
 	{"jewelry box","BMBL2I","c",1,1,3,"5A3A1E","D4A72C","velvet-lined box with dancer","thud","Sparkles inside. Bait!","container,treasure"},
 	{"jian","CKCHrK","fT",5,8,4,"C9CED4","3E9E6E","straight slim blade, tassel on hilt","shing","Elegant, swift, comes with a tassel.","medieval,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"leafy sea dragon","ABAJEC","dZB",1,6,1,"C8A84A","6AA060","leafy seahorse with frond fins","splash","Looks like a swimming salad.","fish,aquatic"},
 	{"leak","FBBNGI","WSN",2,2,1,"38BDF8","BAE6FD","ceiling drip into an overflowing bucket","pitter","Plink. Plink. Plink. Plink. Plonk.","household"},
 	{"leaning tower","EMDMII","GdkSe",4,1,6,"F5F5F5","BDBDBD","white round tower, tipping sideways","thud","Has been about to fall for centuries.","structure,defense,tower,silly"},
-	{"leaning tower of pisa","EMFCII","GkSO",6,1,8,"F5F5F5","BDBDBD","white tiered tower tilting heavily","rumble","Finally falls over. On purpose. Onto you.","structure,landmark,silly"},
-	{"leap","KMCOKG","Dl",3,8,2,"FFCC80","FFFFFF","long arcing jump trail","whoosh","One giant leap. Mostly sideways.","speed"},
 }
