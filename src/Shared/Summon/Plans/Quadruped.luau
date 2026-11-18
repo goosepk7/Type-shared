@@ -259,6 +259,11 @@ end
 
 return function(B: any, ctx: any)
 	local t = ctx.traits
+	-- turtles and tortoises have their own build (Plans/Chelonian: shells with scutes, column legs, flippers)
+	local Chelonian = require(script.Parent.Chelonian) :: any
+	if Chelonian.wants(ctx) then
+		return Chelonian.build(B, ctx)
+	end
 	local rng = B.rng
 	local id = string.lower(ctx.result.id or "")
 	local arch = archetype(ctx, t)
