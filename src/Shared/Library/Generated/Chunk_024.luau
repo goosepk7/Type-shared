@@ -3,10 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"song thrush","AMAJDB","dA",1,7,1,"8A6A4A","F2E8D0","spotted chest songbird","tweet","Smashes snails on rocks.","bird,cute"},
 	{"sonic beam","FFCBKI","TeO",5,10,1,"B39DDB","FFFFFF","ringed visible sound beam","eeee","Loud enough to see.","loud"},
 	{"sonic blaster","CFCFwI","kIeO",5,7,4,"7D3CB5","C9CED4","speaker-dish shaped gun","boom","BWAAAAMMMM.","scifi,ranged"},
 	{"sonic boom","FFDFOB","kO",7,10,1,"CFE3FF","FFFFFF","cone-shaped shockwave ring burst","boom","Faster than sound. Louder too.","loud"},
 	{"sonic grenade","CFBGKI","keO",4,7,1,"C9CED4","7D3CB5","ringing grenade","zap","EEEEEEEE.","scifi,ranged"},
+	{"sonic scream","KFDN6I","jkI",5,9,2,"E8F4FF","8FB8E8","a cone of ring-shaped sound waves that blasts people back","boom","Use your inside voice. No.","hero,movie,loud"},
 	{"sonic wave","FFCFOB","kTO",5,10,1,"B388FF","E3F2FD","ripple rings of visible sound","boom","Turn it down. Way down.","loud"},
 	{"soot","FABDOJ","jN",2,4,1,"2E2E2E","6B6B6B","black powdery puff","puff","Everyone looks like a chimney sweep.","silly"},
 	{"sopapilla","IMBLKI","dSc",2,3,3,"E8C07A","F2E8C8","puffy fried pillow, honey drizzle","chomp","A puffy pillow of fried dough.","edible,sweet,dessert"},
@@ -401,6 +403,4 @@ return {
 	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
 	{"stinky feet","KJBDOJ","jM",2,4,1,"C0CA33","FFF59D","green wavy stink lines from shoes","whiff","Take off your shoes. Everyone faints.","silly,gross"},
 	{"stinky tofu","IJBDOJ","jSMP",3,3,2,"8A6A3A","C8A070","fried tofu cubes, pungent","whiff","The stinkiest snack. Fans swear by it.","edible,smelly"},
-	{"stir","KFBN5K","jHN",3,6,1,"C4B5FD","F8FAFC","wooden spoon whirling everything into a swirl","swish","Stirring the pot. Literally and socially.","kitchen"},
-	{"stir fry","IABNGI","KFP",4,4,2,"E8762B","7DBE3A","wok of tossed vegetables","sizzle","A whirlwind in a wok.","edible,spicy"},
 }

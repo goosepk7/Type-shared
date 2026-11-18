@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"fog machine","OFCD1I","jZSP",1,3,4,"24262A","8E9196","box pumping thick fog","hiss","Spooky mood, instantly.","party,defense"},
 	{"foghorn","BMDFmI","IPO",4,2,6,"C0392B","4A4D52","huge horn on a post","horn","BWOOOOOOOOM.","music,loud,ocean"},
 	{"foil","CKCHrK","fT",3,9,2,"C9CED4","F2F2EE","thin flexible blade, bell guard","shing","Touché, and also touché again.","medieval,sharp"},
 	{"fold","KMBOnB","jXN",3,5,2,"FFFFFF","F87171","enemy outline creased in half like a paper sheet","rustle","Fold. Fold again. Now you are a swan.","art,silly"},
@@ -124,7 +123,7 @@ return {
 	{"frost","FCCFOB","JNP",4,6,2,"B9E6FA","FFFFFF","creeping white crystal fern pattern","crackle","Paints windows. And enemies.","frozen"},
 	{"frost aura","FCCOKJ","GJN",4,4,4,"B3E5FC","FFFFFF","swirling snowflakes around caster","crackle","Personal winter. Bring a scarf.","frozen"},
 	{"frost axe","CCCHsK","Jkf",7,5,5,"BFE8F5","C9CED4","frosted double-headed axe","shing","Chops and chills.","fantasy,sharp"},
-	{"frost breath","GCCFOB","JN",5,6,2,"BFE7F7","FFFFFF","cone of frosty mist","whoosh","Brr. Someone needs a mint.","frozen"},
+	{"frost breath","GCCNOB","JIN",4,7,2,"CFEFFF","6FC3F0","a long cone of freezing breath that frosts the ground","whoosh","Brr. Someone needs a mint.","hero,movie,frozen"},
 	{"frost burst","FCCGKI","EJk",6,7,1,"80D8FF","FFFFFF","ice crystal bursting into shards","boom","Kaboom, but chilly.","frozen,explosive"},
 	{"frost fairy","ACAJNB","AJ",2,8,1,"E0F2FE","60A5FA","fairy with snowflake wings","chime","Freezes your nose. Giggles.","fairy,frozen"},
 	{"frost fern","NCBLMI","JSN",3,1,3,"B3E5FC","FFFFFF","crystallised frosty fronds","chime","Feathers of frost.","plant,magic,mythical,frozen"},
@@ -403,4 +402,5 @@ return {
 	{"giant marshmallow","IMDCII","GUN",4,2,6,"F7F4F0","E8C08A","huge soft white cylinder","thud","A pillow fort you can eat.","edible,giant,sweet"},
 	{"giant marshmallow man","IMFJNA","Ukf",8,2,8,"F7F4F0","4FA3E8","towering puffy white figure","thud","Puffy, sweet, and very stompy.","edible,giant,silly"},
 	{"giant meatball","IMDGKF","DkcI",6,5,6,"7A3A2A","B0202E","enormous meatball, sauce dripping","rumble","A meteor of meat.","edible,heavy"},
+	{"giant moth monster","AHFJFB","jAkP",8,5,7,"F59E0B","1E3A8A","enormous moth with eye-pattern wings","whoosh","Big wings. Bigger lamp addiction.","kaiju,giant,insect"},
 }

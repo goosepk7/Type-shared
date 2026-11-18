@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"treasure room","MKDNII","dSc",3,1,8,"FFD54F","8D6E63","piles of gold coins and gems","rumble","Look at all this loot! Nobody touch it.","place,terrain"},
+	{"treasure sack","BMBL2I","cb",2,4,2,"D2B48C","D4A72C","bulging sack with dollar sign","thud","Loot acquired.","container,treasure"},
 	{"treat","IMAA7B","QFc",1,6,1,"D97706","FEF3C7","bone-shaped biscuit with a sparkle","crunch","Sit. Stay. Betray your master.","edible,pet,cute"},
 	{"trebuchet","CMEMxI","keO",8,2,6,"5A3A1E","8C8C88","tall swinging arm with counterweight","creak","The superior siege engine. Fight me.","medieval,siege,heavy"},
 	{"tree","NGDCMI","GWkS",4,1,8,"6D4C41","43A047","thick trunk, round leafy crown","rustle","Grows up fast. Falls down faster.","plant,tree"},
@@ -29,6 +31,7 @@ return {
 	{"triangle","BKAFJI","j",1,8,2,"C9CED4","C9CED4","tiny bent metal triangle","ting","Ting. Devastating.","music,silly"},
 	{"triceratops","AMEJAA","DkTO",8,5,8,"6A7A4A","D8B07A","three horns, big bony frill","bellow","Three horns. One bad mood.","dinosaur,extinct,reptile"},
 	{"trick","KLBL2I","jbY",3,6,2,"7C3AED","FACC15","upturned top hat, three cups and a vanishing coin","poof","Pick a cup. Wrong. Pick again. Wrong.","magic,trickster"},
+	{"trick arrow","CMBAvB","Eke",5,8,3,"3FCF8E","1F6F4A","an energy bow fires an arrow with a random trick head","twang","Archery, but make it a surprise.","hero,movie,ranged"},
 	{"trick candle","CAALJI","Kj",1,1,1,"F2F2EE","FF6A1A","candle that won't go out","thwip","Blow. Blow. BLOW. Nope.","prank,party"},
 	{"trick or treat","LIBJNA","jcbh",3,6,2,"F97316","7C3AED","kids in sheet-ghost and pumpkin costumes with candy bags","giggle","Smell my feet. Give me something good to eat.","holiday,spooky,cute"},
 	{"trick or treater","LMBJNA","dcb",2,7,2,"F97316","7C3AED","kid in a bedsheet ghost costume with candy bag","giggle","Trick or treat. Mostly trick.","halloween,silly"},
@@ -212,7 +215,6 @@ return {
 	{"vampire","AICJNA","iAZf",6,7,5,"7F1D1D","111827","tall caped figure, fangs, high collar","hiss","Hates garlic, sunlight, and early meetings.","undead,spooky,halloween"},
 	{"vampire bat","AIBJDB","jiAF",2,7,1,"3A2A28","B81E2A","small bat, fangs, leathery wings","screech","Sips. Never chugs.","mammal,nocturnal,spooky,halloween"},
 	{"vampire bat lord","AICJDB","iAh",5,8,3,"1C1917","7F1D1D","large bat with a cape and crown","screech","Summons all the bats.","undead,spooky,royal"},
-	{"vampire bat swarm","AICJLB","jiAP",4,9,2,"1C1917","7F1D1D","flapping cloud of tiny bats","screech","A vampire's version of a group chat.","spooky,swarm,flying"},
 	{"vampire bride","AICJNJ","iAc",5,7,4,"7F1D1D","F8FAFC","pale figure in a crimson gown with bat cape","hiss","Elegant. Fanged. Fashionably late.","undead,spooky"},
 	{"vampire castle","EIFCII","GiSh",6,1,9,"263238","B71C1C","spiky black castle on a cliff, bats","moan","Bats in the belfry. And the basement.","place,spooky,undead"},
 	{"vampire cat","AIAJAA","iA",2,8,1,"111827","DC2626","black kitten with tiny fangs and a cape","hiss","Bites ankles. Dramatically.","spooky,cute,cat"},
@@ -401,6 +403,4 @@ return {
 	{"war","KAENOI","KkP",7,5,5,"8D6E63","D32F2F","smoky battlefield haze with banners","horn","Banners up. Charge together.","rage"},
 	{"war canoe","DBCKHC","DkgB",4,7,4,"6D4C41","FFB300","long canoe with side float, carved prow","splash","Paddle together. Win together.","vehicle,aquatic"},
 	{"war chief","LECJNA","kfh",6,5,6,"7C2D12","CA8A04","fur cloak, bone necklace, big axe","roar","Leads the charge. Yells loudest.","warrior,royal"},
-	{"war club","CMCHtK","kfO",4,5,5,"8B5A2B","8C8C88","club with a stone ball head","shing","Bonk, the old-fashioned way.","sharp,ancient"},
-	{"war drum","BMDFJI","FkO",5,3,5,"6B4226","E3DAC9","giant hide drum with bone sticks","boom","Every beat makes the army braver.","music,loud"},
 }

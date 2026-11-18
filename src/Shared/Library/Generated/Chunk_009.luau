@@ -19,7 +19,6 @@ return {
 	{"exploding cherry","IMBGKF","KEe",4,6,1,"B0101E","3F7A2B","cherry with a sparking fuse stem","pop","A cherry with anger issues.","edible,explosive"},
 	{"exploding pen","CKAGKI","E",4,7,1,"24262A","D4A72C","fancy pen with hidden fuse","bang","Click. Click. Click. BOOM.","spy,explosive"},
 	{"explosive","CABL2I","KEk",5,1,1,"B91C1C","FACC15","bundle of red sticks with a ticking clock and wires","tick","Red wire or blue wire? Wrong.","explosive"},
-	{"explosive arrow","CMBAJI","Eke",4,8,1,"8B5A2B","C0392B","arrow with a little bomb tied on","twang","Archery, but louder.","medieval,ranged,explosive"},
 	{"extension cord","BDBLJK","LN",1,1,2,"E67E22","24262A","long orange cord with plugs","clink","Trip hazard, electrified.","hardware"},
 	{"exterminator","LJCJNA","MP",4,5,5,"111827","22C55E","gas mask, spray tank","hiss","Bugs? Gone. You? Next.","tools"},
 	{"extinguish","KBCF6F","FN",2,6,1,"29B6F6","FFFFFF","cooling water wave with steam","hiss","Fire's out. You're welcome.","aquatic,support"},
@@ -403,4 +402,5 @@ return {
 	{"focus","KLBOKI","T",2,4,3,"42A5F5","FFFFFF","narrow glowing aim rings","hum","Eye on the prize.","support"},
 	{"fog","GBDDOJ","jZS",2,2,3,"C9D3DA","EEF2F5","thick low grey blanket of fog","hush","Cannot see the enemy. They cannot see you.","spooky"},
 	{"fog cloud","FBDDOJ","jZS",1,3,3,"CFD8DC","FFFFFF","round thick fog ball expanding","hush","Now nobody can see anything. Great.","stealth"},
+	{"fog machine","OFCD1I","jZSP",1,3,4,"24262A","8E9196","box pumping thick fog","hiss","Spooky mood, instantly.","party,defense"},
 }

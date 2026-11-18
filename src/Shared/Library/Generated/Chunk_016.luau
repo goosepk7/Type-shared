@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"main street","MMENII","Sh",2,1,7,"B5523B","90CAF9","street lined with shops and lamps","crowd","Every shop is open. Every door a surprise.","place"},
 	{"maine coon","AMCJAA","dfT",3,7,2,"8A6A4A","D8C4A8","huge fluffy cat, lynx ear tips, big ruff","meow","A house cat that skipped leg day never.","mammal,pet,cute"},
 	{"major","LKCJNA","GeOh",5,5,6,"4D5D3A","C9A227","officer in a peaked cap with medals and a pointing stick","whistle","Atten-SHUN! That means you, typing fingers.","military"},
 	{"majungasaurus","AMDJBA","DkfT",6,6,7,"8A5A4A","D8A07A","short skull, single horn bump","roar","Madagascar's bumpy-headed boss.","dinosaur,extinct,reptile,predator"},
@@ -35,6 +34,7 @@ return {
 	{"mananangal","AICJNB","iAV",5,7,3,"7F1D1D","F5F5F4","winged upper torso, bat wings","screech","Splits in half to go out at night.","spooky"},
 	{"manatee","ABDJEC","GFfB",4,2,7,"8A8C8E","C8CAC8","chubby grey sausage, paddle tail","bark","Potato of the sea. Gentle. Slow.","mammal,aquatic"},
 	{"manchineel","NJCCMI","GScM",5,1,6,"6D4C41","9CCC65","beach tree with small green apples","rustle","Most dangerous tree on Earth. Do not touch.","plant,tree,spooky"},
+	{"mandala shield","KLCOyK","Ga",5,5,4,"FFC85A","E8892A","a spinning golden sigil disc that blocks shots","chime","Not today, projectiles.","hero,movie,magic"},
 	{"mandarin","IMBAKF","jke",3,6,2,"F49A2B","3F7A2A","small orange, easy peel","squirt","Peels in one spiral if you're lucky.","edible,fruit,sour"},
 	{"mandarin duck","ABBJDC","AfB",2,5,2,"E8701E","2A6AA8","ornate rainbow duck with sails","quack","The most overdressed duck.","bird,aquatic"},
 	{"mandarinfish","ABAJEC","dB",1,6,1,"E8701E","2A6AE8","psychedelic swirl patterns","splash","Looks like a fish painted by a toddler.","fish,aquatic"},
@@ -299,6 +299,7 @@ return {
 	{"mind control","KLCAKB","jb",5,6,1,"D500F9","F8BBD0","wavy pink strings linking to target","hum","You will now dance. Thank you.","psychic"},
 	{"mind control alien","ALCJNE","jlO",5,4,3,"A855F7","F0ABFC","alien with glowing forehead and spiral eyes","hum","Look into my eyes. You want to lose.","alien,magic"},
 	{"mind control ray","OLBBwI","je",5,6,3,"A66BDB","8BC34A","spiral-dish ray gun","hum","You are getting very... confused.","scifi"},
+	{"mind grip","KLCAKJ","leO",6,8,3,"C9A8FF","7A4FE0","a glowing psychic grip lifts the target and slams them down","hum","Hold still. Now fall.","hero,movie,psychic"},
 	{"mind spike","FLBAuB","TO",5,9,1,"E040FB","FFFFFF","pink crystal spike of thought","zing","Ouch. In the brain.","psychic"},
 	{"mine bot","OABJGF","DEk",4,7,1,"1F2937","EF4444","small rolling bomb robot with blinking light","beep","Beep. Beep. Beepbeepbeep. BOOM.","robot,explosive"},
 	{"mine cart","DEBKHL","UDkg",3,7,5,"6B4F3A","8C8C8C","iron tub on little rail wheels","engine","Hold on to your helmet!","mechanical,vehicle,land"},
@@ -402,5 +403,4 @@ return {
 	{"molly","ABAJEC","dB",1,6,1,"1E1E1E","F2D82A","black aquarium fish","splash","Chill aquarium buddy.","fish,aquatic"},
 	{"molten","FACF6F","KNP",6,3,4,"F2541B","FFB703","glowing orange flow, dark crust plates","bubble","Not solid. Not liquid. Not friendly.","fire,heavy"},
 	{"molten metal","FKCF6F","KN",7,4,5,"FF7A00","C0C0C0","glowing orange-silver liquid metal flow","bubble","Forge-fresh. Do not hug.","heavy,fire"},
-	{"molten rain","FAEEOJ","KNP",8,4,3,"DD2C00","FF9100","black cloud dripping glowing drops","sizzle","Umbrella melted. Bad day.","fire,storm"},
 }

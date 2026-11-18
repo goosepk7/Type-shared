@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"molten rain","FAEEOJ","KNP",8,4,3,"DD2C00","FF9100","black cloud dripping glowing drops","sizzle","Umbrella melted. Bad day.","fire,storm"},
 	{"mom","LMCJNA","GFh",4,6,5,"F472B6","F8FAFC","apron, phone, minivan keys","ding","Uses your full name. Instant stun.","family"},
 	{"momentum","FMCOKJ","Dk",4,8,3,"FF8A4D","FFE0C2","forward-streaming motion lines","whoosh","Hard to stop. Harder to dodge.","speed"},
 	{"momo","IMAELB","Fe",2,7,1,"F2EAD5","C8302B","pleated round dumplings","pitter","Himalayan dumplings with spicy dip.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
 	{"nunchucks","CMBHJK","jfO",3,9,3,"24262A","5A3A1E","two sticks joined by chain","bonk","Mostly hits the user. Sometimes the enemy.","ninja"},
 	{"nurikabe","AEECII","GO",6,1,10,"78716C","A8A29E","enormous invisible-ish stone wall with eyes","rumble","A wall that appears out of nowhere.","yokai,guardian"},
-	{"nurse","LMCJNA","QF",3,6,4,"F8FAFC","F472B6","scrubs, cap, giant syringe","chime","Gentle hands. Giant cartoon needle.","healer"},
 }

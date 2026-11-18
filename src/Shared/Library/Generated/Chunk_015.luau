@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"leather jacket","BMCONI","Gd",1,5,4,"24262A","C9CED4","black leather biker jacket","swish","Instantly 40% cooler.","clothing"},
 	{"leatherback turtle","ABDJUC","GNB",4,2,8,"2A2E34","8A9098","huge leathery ridged shell","hiss","Biggest turtle. Shell is leather.","reptile,armored"},
 	{"leberkase","IMBAKK","keO",3,7,6,"E8A0A0","C8603A","thick slab of meat loaf","bonk","A slab of meat cake.","edible"},
 	{"lebkuchen","IMBAKK","Uke",3,7,2,"8A4A1E","F2EEE8","iced spice cookie","whoosh","A gingerbread cookie with a German accent.","edible,holiday"},
@@ -403,4 +402,5 @@ return {
 	{"mail ninja","LICJNA","Ze",4,9,3,"111827","1E3A8A","ninja with a mailbag of throwing letters","whoosh","Delivers mail. Silently. Violently.","silly,stealth"},
 	{"mailbox","BMBC2I","G",1,1,6,"2F6FD1","C0392B","box on a post with flag","thud","Delivery! Of doom.","container"},
 	{"main character","LHCJNA","DFf",5,6,5,"FACC15","1D4ED8","spotlight following one figure","ding","Plot armor equipped.","meme"},
+	{"main street","MMENII","Sh",2,1,7,"B5523B","90CAF9","street lined with shops and lamps","crowd","Every shop is open. Every door a surprise.","place"},
 }

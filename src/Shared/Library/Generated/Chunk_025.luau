@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stir","KFBN5K","jHN",3,6,1,"C4B5FD","F8FAFC","wooden spoon whirling everything into a swirl","swish","Stirring the pot. Literally and socially.","kitchen"},
+	{"stir fry","IABNGI","KFP",4,4,2,"E8762B","7DBE3A","wok of tossed vegetables","sizzle","A whirlwind in a wok.","edible,spicy"},
 	{"stitch","KMBOCB","FHN",3,5,3,"EF4444","F8FAFC","needle looping red thread in a neat dotted line","click","A stitch in time saves nine hit points.","household,support"},
 	{"stoat","ACBJAA","CjfT",3,8,2,"F2F0EA","2A2420","white winter coat, black tail tip","chatter","Dances to hypnotise rabbits. True.","mammal,predator"},
 	{"stock car","DMCKHL","Dkg",5,9,5,"FFC107","1565C0","sedan covered in number decals","engine","Turns left. Wins.","mechanical,vehicle,land,sport"},
@@ -401,6 +403,4 @@ return {
 	{"tea set","BBBELJ","KcP",2,4,1,"FBCFE8","FFFFFF","pink teapot and cups pouring in mid-air","clink","Pinkies up. Gloves off.","toy,cute"},
 	{"teach","KHBF6B","XNO",3,4,2,"15803D","FFFFFF","pointer stick tapping a chalkboard, chalk flying","tap","Class is in session. You are the lesson.","school"},
 	{"teacher","LMCJNA","jOh",3,4,4,"7C2D12","F8FAFC","glasses, cardigan, chalk","ding","Pop quiz. Right now.","school"},
-	{"teachers pet","LHBJNA","dOh",2,5,2,"FDE047","EF4444","kid with hand rocketing up, shiny apple, perfect hair","ding","Teacher! Teacher! They are cheating!","school,silly"},
-	{"teacup ride","DLBKHK","jkg",2,4,3,"F48FB1","FFFFFF","giant spinning teacup with seats","whoosh","Round and round until everyone is dizzy.","silly,cute"},
 }

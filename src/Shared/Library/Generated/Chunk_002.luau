@@ -311,6 +311,7 @@ return {
 	{"bat cave","MIENII","jSh",4,1,8,"263238","6D4C41","dark cavern with hanging bats","echo","Disturb nothing. Too late.","place,adventure,spooky"},
 	{"bat flower","NIBLMI","jd",3,1,2,"212121","4A148C","black bloom with bat-wing bracts and whiskers","moan","Looks like a bat. Acts like a flower.","plant,spooky"},
 	{"bat ray","ABCJEC","STB",4,5,3,"3A3A3A","F2F2EE","dark ray with big wings","whoosh","A bat but wet.","fish,aquatic,ocean"},
+	{"bat swarm","AICNLB","jAR",4,9,3,"2A2433","B04A6A","a swarm of bats circling and pecking the target area","screech","A vampire's version of a group chat.","hero,movie,spooky,swarm"},
 	{"bat-eared fox","AMBJAA","jdfb",3,7,2,"A89070","3A2A1E","enormous ears, small fox","yip","Ears as big as satellite dishes.","mammal,wild"},
 	{"batfish","ABAJEC","dB",1,6,1,"8A7A6A","E8A0A0","flat fish with red lips","splash","Walks on fins, wears lipstick.","fish,aquatic,silly"},
 	{"bath bomb","BBAG3K","jeP",1,6,1,"C3A6E8","FF3EA5","fizzing pastel ball","thud","Fizzzzz. Relax. Or else.","bathroom,silly"},
@@ -402,5 +403,4 @@ return {
 	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
 	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
-	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 }

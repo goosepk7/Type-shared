@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"war club","CMCHtK","kfO",4,5,5,"8B5A2B","8C8C88","club with a stone ball head","shing","Bonk, the old-fashioned way.","sharp,ancient"},
+	{"war drum","BMDFJI","FkO",5,3,5,"6B4226","E3DAC9","giant hide drum with bone sticks","boom","Every beat makes the army braver.","music,loud"},
 	{"war drummer","LMCJNA","FO",3,5,4,"1E3A8A","F8FAFC","snare drum, military cap","drum","Boom boom. Everyone marches faster.","warrior,music"},
 	{"war fan","CFBIyK","GI",2,7,3,"9E1B32","24262A","giant folding paper fan","shing","Blocks blows. Blows winds.","ninja"},
 	{"war hammer","CKCHtK","kfO",6,4,6,"3A3F45","6B4226","square hammer head with spike","bonk","Knights hate this one weird trick.","medieval,heavy"},
@@ -401,6 +403,4 @@ return {
 	{"yeti crab","ABBJRA","GfT",2,4,5,"F2F2EE","E8E0D0","hairy white deep-sea crab","clack","A crab in a fur coat.","crustacean,aquatic,armored,deepsea"},
 	{"yeti family","ACBJNA","dJ",2,5,3,"F1F5F9","93C5FD","fluffy white baby yeti","roar","Throws tiny snowballs. Adorably.","cryptid,cute,frozen"},
 	{"yeti king","ACEJNA","Jkh",8,4,8,"F1F5F9","1E3A8A","giant white yeti with icicle crown","roar","Rules the mountain. Hates sunscreen.","cryptid,frozen,boss"},
-	{"yew","NJDCMI","GWkSM",4,1,8,"4E342E","1B5E20","dark dense ancient tree, red berries","rustle","Old, dark, and quietly poisonous.","plant,tree,ancient"},
-	{"yi qi","AMBJBB","DAQfT",2,9,3,"3A3A3A","8A6A4A","bat-winged small dino","screech","A dinosaur with bat wings.","dinosaur,extinct,reptile,predator"},
 }
