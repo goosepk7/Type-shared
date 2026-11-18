@@ -42,7 +42,7 @@ local function eightLegs(B: any, ctx: any, o: any)
 	local angles = o.angles or { 52, 18, -14, -46 }
 	local zs = o.zs or { -0.32, -0.12, 0.08, 0.28 }
 	local hx = o.hipR or 0.42
-	if detail <= 0 and not o.noComb then
+	if detail <= 1 and not o.noComb then
 		Kit.comb(B, { tag = "C", hip = { hx, o.y, zs[2] }, foot = { hx + o.R * math.cos(rad(30)), o.lift or 0.04, zs[2] - o.R * math.sin(rad(8)) }, thick = o.thick, col = o.col, mat = o.mat,
 			piece = o.comb or "s_arachnid_legs4", pri = 1.25 })
 		return
@@ -329,7 +329,7 @@ local function scorpion(B: any, ctx: any)
 	end
 	-- walking legs (sea scorpions: three pairs + the big swimming paddles)
 	local legY = y - 0.08
-	if detail <= 0 then
+	if detail <= 1 then
 		Kit.comb(B, { tag = "C", hip = { Bw * 0.35, legY, 0.1 }, foot = { Bw * 0.35 + 1.5, 0.04, 0.2 }, thick = 1.1, piece = "s_arachnid_legs4", pri = 1.28 })
 	else
 		local legs = {}

@@ -102,7 +102,7 @@ end
 local function crabLegs(B: any, ctx: any, o: any)
 	local detail = ctx.detail
 	local n = o.n or 4
-	if detail <= 0 and not o.noComb then
+	if detail <= 1 and not o.noComb then
 		local zm = (o.z0 + o.z1) / 2
 		Kit.comb(B, { tag = "C", hip = { o.hipX, o.y, zm }, foot = { o.hipX + o.R * 0.95, 0.04, zm }, thick = (o.thick or 1) * 1.1, col = o.col, mat = o.mat, piece = o.comb or "s_crab_legs4", pri = 1.25 })
 		return

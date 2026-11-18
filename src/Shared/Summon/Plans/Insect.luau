@@ -144,7 +144,7 @@ local function sixLegs(B: any, ctx: any, b: any, L: any)
 	local zs = L.z or { -b.T[3] * 0.28, 0, b.T[3] * 0.28 }
 	local feet = L.feet
 	local fy = L.footY or 0.04
-	if detail <= 0 and not L.noComb then
+	if detail <= 1 and not L.noComb then
 		-- one comb per side: the middle leg is the primitive, the sculpt carries all three
 		Kit.comb(B, { hip = { hx, hy, zs[2] }, foot = { feet[2][1], fy, feet[2][2] }, col = L.col, thick = L.thick, piece = L.comb or "s_bug_legs3", pri = 1.3 })
 		return
@@ -609,7 +609,7 @@ K.Mantis = function(B: any, ctx: any)
 		{ { 0.2, y - 0.12, 0.05 }, { 1.45, 0.04, -0.6 } },
 		{ { 0.22, y - 0.12, 0.3 }, { 1.55, 0.04, 1.6 } },
 	}
-	if detail <= 0 then
+	if detail <= 1 then
 		Kit.comb(B, { hip = legs[1][1], foot = { 1.55, 0.04, 0.5 }, piece = "s_bug_legs2", pri = 1.3, thick = 0.8 })
 	else
 		Kit.legSet(B, { tagBase = "L", segs = if detail >= 3 then 2 else 1, rise = 0.32, thick = 0.75, col = "primary", pri = 1.3 }, legs)
