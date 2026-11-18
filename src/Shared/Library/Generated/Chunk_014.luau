@@ -276,7 +276,7 @@ return {
 	{"ladybug","AMAJFA","GAFf",1,3,4,"D8201E","1E1E1E","red dome shell, black spots","click","Spots count its age. (Not really.)","insect,armored,cute,garden"},
 	{"ladyfinger","IMBHJI","kf",2,5,4,"F2D88A","F7F2EC","long sugar-dusted sponge stick","bonk","A biscuit finger pointing at you.","edible,silly"},
 	{"lag monster","LLCJNA","jNY",3,2,4,"22C55E","F472B6","glitchy figure teleporting in jitters","zap","Rubber-bands into your face.","meme,gaming,silly"},
-	{"lag spike","KLCNOI","NO",4,1,3,"90A4AE","00E5FF","stuttering pixelated area","bzzt","Your ping is now 9000.","meme,silly"},
+	{"lag spike","KLCNOI","jNY",5,3,3,"3AF2FF","FF3AD0","a glitchy field of pixel static and colour split","bzzt","Your ping is now 9000. Enjoy last second, again.","gaming,meme,glitch"},
 	{"lahmacun","IMBAKK","Uke",3,7,2,"D9A04A","C8302B","thin flatbread with minced meat","whoosh","A crispy thin pizza from Turkey.","edible"},
 	{"lake","MBENII","SN",2,1,6,"1E88E5","7CB342","calm blue water with reeds","splash","Calm on top. Hmm, what is below?","place,terrain"},
 	{"lake effect snow","GCDEOJ","JSN",6,3,4,"ECEFF1","90CAF9","narrow band dumping heaps of snow","hush","Feet of snow. In one stripe.","frozen,storm"},

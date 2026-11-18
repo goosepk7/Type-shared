@@ -392,7 +392,6 @@ return {
 	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
 	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
 	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
-	{"sticky bomb","CABGKF","EQe",5,6,2,"8BC34A","24262A","gooey bomb that sticks","boom","Sticks to things. Things regret it.","explosive"},
 	{"sticky bun","IMBLGI","SNP",2,3,3,"A85A1E","D99A4A","spiral bun, gooey glaze","gloop","Hands will never be clean again.","edible,sticky,sweet"},
 	{"sticky floor","BMCLII","NO",2,1,3,"F1C40F","D2B48C","tacky floor mat","snap","Every step is a struggle.","trap,sticky"},
 	{"sticky note","BMALJK","dN",1,8,1,"F1C40F","F1C40F","small square sticky paper","tap","Stuck to your forehead.","office,sticky"},

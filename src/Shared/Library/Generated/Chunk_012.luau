@@ -291,7 +291,6 @@ return {
 	{"high elf","ALCJNA","jFTe",6,7,4,"E5E7EB","FACC15","tall elegant elf, silver armor, staff","chime","Thinks very highly of high elves.","mythical,magic,royal"},
 	{"high five","KMBOKI","DF",1,8,2,"FFE082","FFFFFF","two glowing palms slapping with sparkles","clap","Up top!","cute"},
 	{"high heels","BMBONI","T",1,6,2,"C0392B","24262A","pointy tall-heeled shoes","swish","Fashion with a point.","clothing"},
-	{"high noon","GHDNOI","KO",6,7,2,"FFC107","FFF8E1","blazing overhead sun, short shadows","ding","It's high noon. Somebody's in trouble.","fire"},
 	{"highland cow","AMDJAA","DkO",6,4,7,"B05E2A","E2A060","shaggy ginger fringe over eyes, horns","moo","Excellent hair day, every day.","mammal,heavy,farm,cute"},
 	{"highlander","LECJNA","Dkf",6,6,6,"15803D","DC2626","kilt, claymore, wild hair","drone","Charges in with bagpipe backup.","warrior"},
 	{"highlands","MFFNII","SN",3,1,8,"7CB342","AB47BC","rolling hills of heather and mist","rumble","Misty, windy, and wild.","place,terrain"},

@@ -238,7 +238,7 @@ return {
 	{"rocket engineer","LACJNA","Eeh",5,4,4,"F8FAFC","DC2626","lab coat, hard hat, rocket model","boom","It IS rocket science.","science,explosive"},
 	{"rocket factory","EAENII","ESh",6,1,8,"ECEFF1","E53935","hangar with half-built rockets","clank","Builds rockets. Launches rockets.","structure,mechanical,space"},
 	{"rocket fist","CKCAJI","Qke",6,8,6,"DDE3E8","C0392B","metal fist with thruster","zap","Punches from across the room.","scifi,robot"},
-	{"rocket jump","KACOKB","Ekl",5,9,2,"FF5722","FFE082","explosion launching caster upward","boom","Explode yourself upward. Fun!","explosive,speed"},
+	{"rocket jump","KACOkB","Ekl",5,9,2,"FF6A2A","FFD27A","a rocket at your feet blasts you skyward","boom","Fire the rocket at your feet. Trust the process.","gaming,explosive,speed"},
 	{"rocket launch pad","EAEMII","GKh",5,1,8,"B0BEC5","FF6F00","steel tower beside a scorched pad","thud","Ten. Nine. Eight. Uh oh.","structure,defense"},
 	{"rocket launcher","CKDAwI","Eke",8,5,4,"6B7B3A","24262A","shoulder tube with rocket","boom","Shoulder-mounted problem solver.","explosive,ranged"},
 	{"rocket launcher truck","DADMHL","EegP",8,4,8,"556B2F","E53935","truck with rack of rocket tubes","boom","Ripple fire! Everybody duck!","mechanical,vehicle,land,explosive"},

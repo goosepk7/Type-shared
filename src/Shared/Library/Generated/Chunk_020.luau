@@ -289,7 +289,6 @@ return {
 	{"race car driver","LACJNL","DE",4,10,4,"DC2626","F8FAFC","racing suit, helmet, checkered flag","vroom","Zero to sixty in a typo.","sport,vehicle"},
 	{"race track","MMENII","DS",3,1,6,"424242","E53935","looping asphalt with curbs and flags","engine","Everyone goes faster here.","place,sport"},
 	{"raclette","IMBLGI","cN",2,3,3,"F2C870","D9A04A","melted cheese scraped from wheel","gloop","Cheese that melts onto your plate.","edible,sticky"},
-	{"radar","OMCM1I","ce",1,2,5,"F2F2EE","8E9196","big rotating dish","hum","Ping. Ping. Found you.","defense"},
 	{"radar dome","EDCMII","GSeL",3,1,6,"F5F5F5","B0BEC5","white golf-ball dome or big bowl dish","ping","Ping. Ping. Gotcha.","structure,building"},
 	{"radiance","FHDNOI","KFS",6,5,3,"FFE58A","FFFFFF","blinding golden aura dome","hum","Glowing with confidence. And photons.","holy"},
 	{"radiant burst","FHDGKI","KEF",7,8,1,"FFF176","FFFFFF","blinding golden explosion of light","boom","Shine so hard it hurts.","holy,explosive"},

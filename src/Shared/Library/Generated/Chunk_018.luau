@@ -268,6 +268,7 @@ return {
 	{"pangolin","AMBJAF","GCf",3,5,7,"9A7A5A","5E4632","covered in overlapping scales, curls up","squeak","An artichoke with legs.","mammal,wild"},
 	{"pani puri","IMBGKF","jEP",4,6,1,"E8C07A","7DBE3A","hollow crispy balls with water","pop","Pop one whole. Splash!","edible,explosive"},
 	{"panic","KMCFOB","jd",3,8,1,"FFEB3B","FF5252","frantic zig-zag lines everywhere","aaa","AAAH! Everybody run around!","silly"},
+	{"panic build","EECClI","G",4,9,4,"C89058","6B4426","four plank walls and a ramp pop up around you","clatter","Cranked a 90 before you finished blinking.","gaming,building,wood"},
 	{"panic room","MKCIII","GS",2,1,10,"616161","E53935","steel room with a heavy door","thud","Nobody gets in. Nobody.","place,room"},
 	{"panini","IGBOKI","F",2,5,3,"D9963A","8A5A3A","pressed grill-striped sandwich","crunch","Pressed flat and proud of it.","edible,healthy"},
 	{"panko","IFBDOJ","jPO",2,5,1,"F2D08A","E8C07A","flaky golden crumbs","puff","Crispy coating, ready to fry.","edible"},

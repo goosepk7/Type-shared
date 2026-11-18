@@ -237,7 +237,6 @@ return {
 	{"superstorm","GDFN5K","kSILP",9,5,7,"263238","FFD54F","enormous storm cell, lightning, rain sheets","boom","Every weather. All of it. Now.","storm,danger"},
 	{"supervillain","LICJNA","jeh",6,5,5,"4C1D95","84CC16","dramatic cape, lair-ready monologue pose","cackle","Has a plan. It's 40 steps long.","villain"},
 	{"supervolcano","HAFNOI","KEkP",10,3,9,"3E2723","FF3D00","massive ground-wide eruption with lava fountains","boom","A volcano's final form.","fire,natural,explosive,danger"},
-	{"supply crate","BMCO2J","Fh",2,1,6,"6B7B3A","F2F2EE","crate under a parachute","thud","Help from the sky.","object,defense"},
 	{"support main","LHCJNA","GF",3,5,4,"F8FAFC","22C55E","staff with healing glow","chime","Heals everyone. Thanked by nobody.","meme,gaming,healer"},
 	{"surf","KBCO6F","DI",3,8,2,"29B6F6","FFFFFF","caster riding a small wave","splash","Cowabunga.","aquatic,sport"},
 	{"surface","FECCnI","GUa",3,1,8,"F5F5F0","9CA3AF","spotless shiny slab you could see your face in","squeak","Wiped down. Slippery. Do not put that there.","household"},

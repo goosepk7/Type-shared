@@ -200,6 +200,7 @@ return {
 	{"day gecko","AMBJAA","Cf",2,7,2,"3AE04A","E8301E","neon green gecko with red spots","hiss","Neon green. Basks in daylight.","reptile"},
 	{"daze","KMBAKB","jO",3,8,1,"FFF59D","FFFFFF","circling birds and stars","wobble","Seeing birdies.","silly"},
 	{"dazzle","FHBFOB","jO",3,9,1,"FFFFFF","FFD54F","sparkling glittery flash wave","ting","Too sparkly to look at.","cute"},
+	{"dead eye","KHDBwI","Te",7,8,1,"FFB547","C2262E","skull reticles lock onto every foe at sunset","ding","It's high noon. Somebody's in trouble.","gaming,western,gun"},
 	{"dead sea","MBENII","lSN",4,1,8,"80DEEA","F5F5F5","flat turquoise lake with white salt edges","rumble","You cannot sink. You can float forever.","place,landmark"},
 	{"dead tree","NIDCMI","GSHN",4,1,5,"4E342E","263238","twisted leafless black branches","rustle","Branches reach for you. Literally.","plant,tree,spooky"},
 	{"deadwood","NMBCMI","GS",2,1,4,"BCAAA4","8D6E63","bleached twisted bare wood","moan","Bleached, twisted, and spooky.","plant,spooky"},
