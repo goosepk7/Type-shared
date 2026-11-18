@@ -3,12 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"lebkuchen","IMBAKK","Uke",3,7,2,"8A4A1E","F2EEE8","iced spice cookie","whoosh","A gingerbread cookie with a German accent.","edible,holiday"},
-	{"lechon","IMDJII","dFc",5,1,6,"C8602B","F2D88A","whole roasted crispy pig","thud","The centerpiece of every fiesta.","edible,giant,silly"},
-	{"ledge","EECLnI","klO",3,1,7,"9CA3AF","6B7280","narrow stone shelf with crumbling pebbles at the lip","crack","Do not look down. You looked down.","terrain"},
-	{"leech","ABAJTD","CiQP",1,3,1,"3A3A2A","8A6A4A","dark slimy flat worm with sucker","squelch","Sucks blood. Hates salt.","bug,spooky"},
-	{"leedsichthys","ABFJEC","DfB",8,3,8,"6A7A8A","C8D0D8","gigantic filter-feeding fish","splash","Biggest fish ever. Ate plankton.","fish,aquatic,extinct"},
-	{"leek","IMBHJI","kf",3,5,4,"5E8A3A","F0F2E0","long white stalk, fan of leaves","bonk","A green onion with a gym membership.","edible,silly,vegetable"},
 	{"lefse","IMBAKK","Uke",3,7,2,"F2EAD5","E8D8A8","thin soft potato flatbread","whoosh","A soft potato blanket.","edible"},
 	{"left","KMBF6B","jkI",3,7,1,"3B82F6","FFFFFF","big blue arrow pointing left, shoving sideways","whoosh","No, your OTHER left.","silly"},
 	{"leftovers","IGBOKI","F",2,5,3,"C8A070","7DBE3A","stacked plastic containers","crunch","Yesterday's dinner returns.","edible,healthy,silly"},
@@ -124,7 +118,6 @@ return {
 	{"lightning bolt","FDCAKB","TeLO",7,10,1,"FFE94D","82B1FF","crackling zigzag bolt from the caster's hand","crack","Point. Zap. Problem solved.","electric"},
 	{"lightning breath","FDCFOB","LO",6,8,1,"FFEB3B","3D5AFE","cone of crackling lightning from the mouth","crack","Burps with a power surge.","electric"},
 	{"lightning cage","FDCLII","GLO",6,5,5,"FFF176","304FFE","cage of vertical lightning bars","buzz","Jail, but with zaps.","electric"},
-	{"lightning dash","FDCOKB","DLY",5,10,2,"FFF59D","448AFF","caster becoming a streak of lightning","zap","Gone in a flash. Literally.","electric,speed"},
 	{"lightning elemental","ADDJNJ","eLOY",7,9,3,"FDE047","3B82F6","crackling figure of forked lightning","zap","Hair is always standing up.","elemental,storm"},
 	{"lightning form","KDCOKB","DLY",5,10,2,"FFEB3B","448AFF","caster crackling into living lightning","crack","Faster than thought. Zappier too.","electric,speed"},
 	{"lightning generator","ODDMmI","eLP",7,4,6,"1F2F55","F1C40F","twin spheres with arcing bolts","hum","Brews a storm in a box.","science,electric"},
@@ -403,4 +396,11 @@ return {
 	{"maine coon","AMCJAA","dfT",3,7,2,"8A6A4A","D8C4A8","huge fluffy cat, lynx ear tips, big ruff","meow","A house cat that skipped leg day never.","mammal,pet,cute"},
 	{"major","LKCJNA","GeOh",5,5,6,"4D5D3A","C9A227","officer in a peaked cap with medals and a pointing stick","whistle","Atten-SHUN! That means you, typing fingers.","military"},
 	{"majungasaurus","AMDJBA","DkfT",6,6,7,"8A5A4A","D8A07A","short skull, single horn bump","roar","Madagascar's bumpy-headed boss.","dinosaur,extinct,reptile,predator"},
+	{"makara","ABDJEC","DkB",6,6,6,"0E7490","FBBF24","crocodile jaws, elephant trunk, fish tail","roar","Part croc, part elephant, part confused.","mythical,aquatic"},
+	{"mako shark","ABDJEC","UDfTB",7,10,6,"3E5A8A","E8EEF4","slim metallic-blue shark, pointed snout","chomp","Fastest shark. Leaps out of the water.","fish,aquatic,ocean,predator"},
+	{"malamute","ACDJAA","DQf",5,7,4,"7E7A78","F0ECE6","massive fluffy sled dog, plumed tail","bark","Sled dog. Also a living blanket.","mammal,pet,arctic"},
+	{"mallet","JMBHtK","kfO",3,6,4,"C49A6C","7A4E2D","wooden barrel-head hammer","bonk","Bonk, but gentle. Ish.","medieval,heavy"},
+	{"maltese","AMBJAA","dQf",2,6,2,"FFFFFF","F2EAE0","tiny white floor-length silky coat","yip","A cotton ball that eats.","mammal,pet,cute"},
+	{"malva pudding","IMBLGI","SNP",2,3,3,"C8803A","F2E8C8","spongy caramel pudding","gloop","Warm, spongy, sticky.","edible,sticky,sweet"},
+	{"mamenchisaurus","AMFJAA","kIO",8,2,9,"6A7A5A","C8C0A0","longest neck of any animal","rumble","Half its body is neck.","dinosaur,extinct,reptile,heavy"},
 }

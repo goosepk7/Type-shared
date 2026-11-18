@@ -364,6 +364,7 @@ return {
 	{"armored van","DKCKHL","GDkg",4,6,9,"607D8B","37474F","squat steel van with tiny windows","engine","Moves money. Moves enemies.","mechanical,vehicle,land"},
 	{"armorer","LKCJNI","GF",3,3,6,"57534E","F97316","anvil, chainmail, rivets","clang","Your armor's fixed. Mostly.","tools"},
 	{"armory","EEDNII","GSh",4,1,8,"616161","B0BEC5","stone building with racks of weapons","thud","Grab a weapon. Any weapon.","structure,defense"},
+	{"armory gate","KKDArI","Teh",7,9,3,"E8C46A","6E7C8C","golden portals behind you fire swords forward","clang","Pick a sword. Any sword. All of them.","anime,weapon"},
 	{"armpit","BJBDOI","jSMI",3,3,2,"B5C689","E8B48A","raised arm with wavy green stink lines","whiff","Deodorant was optional. Regret is not.","body,silly,gross"},
 	{"army","LEEJLA","GDePh",8,4,8,"4D7C0F","78716C","rows of marching soldiers with flags and helmets","drum","Left. Left. Left right left. All of them.","military,swarm"},
 	{"army ant","AMAJLA","CDfPh",2,5,1,"6A3A1E","2A1E14","marching ant column, giant jaws","skitter","Marches. Eats everything. Keeps marching.","insect,swarm"},
@@ -402,5 +403,4 @@ return {
 	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
 	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
 	{"assassin","LICJNA","ZTMY",6,9,3,"1F2937","7F1D1D","hood, hidden blade, leap of faith","whoosh","Silent. Sneaky. Allergic to hay bales.","stealth"},
-	{"assassin bug","AMAJFA","dATMP",1,6,1,"3A2A1A","D8401E","long beak, stalking","buzz","A tiny bug with a big name.","insect"},
 }

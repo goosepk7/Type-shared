@@ -3,10 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"fomorian","ABEJNA","kfB",8,3,8,"134E4A","94A3B8","misshapen sea giant with barnacles","roar","Came from the sea. Grumpy about land.","mythical,giant,aquatic"},
-	{"fondant","IMBLGI","SNP",2,3,3,"F7F2EC","F2D9E3","smooth rolled sheet","gloop","Sugar play dough.","edible,sticky,sweet"},
-	{"fondue","IABLGI","KcN",2,3,3,"F2C24A","E8A040","bubbling pot of melted cheese","gloop","A pot of liquid cheese. Dip with care.","edible,sticky"},
-	{"foo dog","AECJAA","Gkf",5,4,8,"78716C","15803D","stone lion statue, curly mane, ball under paw","roar","A stone guard dog who never sleeps.","mythical,guardian"},
 	{"food","IMCELJ","dFcP",3,4,2,"F59E0B","EF4444","flying buffet: drumstick, pizza slice, apple, cheese wedge","chomp","Food fight! Nobody is clean. Nobody is sorry.","edible,silly"},
 	{"food cloche","BMBL2I","O",1,1,4,"C9CED4","C9CED4","polished silver dome lid","clang","Voila! You're trapped.","kitchen,household"},
 	{"food coloring","IMBNGI","jSP",2,4,1,"E8434F","4FA3E8","tiny bottles of bright dye","splat","Turns everything rainbow.","edible,sauce"},
@@ -355,6 +351,7 @@ return {
 	{"ghost swarm","AICJLJ","jAZP",5,7,2,"E5E7EB","A5B4FC","cloud of floating sheet ghosts","wail","Boo times fifty.","ghost,swarm,spooky"},
 	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
 	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
+	{"ghost veil","KLBOKI","Z",2,6,3,"CFE8F2","7A8FA6","caster fades to a faint shimmering outline","whoosh","Now you mostly don't see me.","magic"},
 	{"ghoul","AICJNA","ifM",4,6,4,"57534E","84CC16","hunched pale creature, long claws","growl","Lurks in graveyards eating snacks it shouldn't.","undead,spooky"},
 	{"ghoul king","AIDJNA","ifh",7,5,6,"365314","57534E","crowned ghoul, bone cape","growl","Leader of the graveyard snack club.","undead,royal,spooky"},
 	{"giant","AEEJNA","kfO",8,3,8,"A16207","FEF3C7","enormous human figure, belt and boots","stomp","Fee fi fo... you know the rest.","giant"},
@@ -378,7 +375,6 @@ return {
 	{"giant donut","IMEJIF","UkcI",7,2,7,"F2A6C8","D9A04A","enormous ring donut, sprinkles","thud","A donut the size of a tyre. Roll it.","edible,giant,silly"},
 	{"giant donut wheel","IMEJIF","DkI",7,2,7,"F2A6C8","D9A04A","monster donut rolling","thud","A runaway donut. Clear the road.","edible,giant,silly"},
 	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
-	{"giant fist","KEEAKB","kO",8,6,7,"FFAB91","BF360C","house-sized glowing fist slamming down","boom","Fist bump from the heavens.","heavy"},
 	{"giant flytrap","NGELMI","kScfHO",7,3,7,"558B2F","B71C1C","huge snapping jaws on a thick stalk","chomp","Feed me. FEED ME.","plant,carnivorous,silly"},
 	{"giant forest hog","AMCJAA","Ddkf",5,4,4,"2A2420","6A5A4A","huge black hairy pig","bleat","Biggest wild pig. Grumpy.","mammal,farm,wild"},
 	{"giant form","KEEOXA","Wk",6,3,8,"A1887F","FFD54F","caster towering skyscraper-tall","boom","Look down. Way down.","heavy"},
@@ -403,4 +399,8 @@ return {
 	{"giant mushroom","NJDLMI","GUlS",4,1,6,"C62828","F5F5F5","towering spotted cap like an umbrella","poof","Bounce on it. Very high.","plant,fungus,silly"},
 	{"giant oak","NGFCMI","GWkSO",6,1,10,"4E342E","33691E","enormous gnarled oak, wide crown","rustle","A thousand years of grumpiness.","ancient,heavy"},
 	{"giant onion","IJEDIF","jSMP",7,2,7,"E8D5A8","9A5A2A","onion as big as a hut","thud","Layers on layers. Tears on tears.","edible,giant,silly"},
+	{"giant otter","ABCJAA","fTB",5,8,2,"4A3020","E8D8B8","huge otter with throat patch","chatter","Otter the size of a person. Loud.","mammal,predator"},
+	{"giant pacific octopus","ABDJSC","jZHB",6,6,3,"B84A30","E89A7A","huge red octopus, long tentacles","squelch","Escapes aquariums for midnight snacks.","aquatic,ocean,smart"},
+	{"giant pancake","IMEJII","GkcN",7,2,7,"E8B860","C8762B","enormous fluffy disc","thud","A pancake that could blanket a castle.","edible,giant,silly"},
+	{"giant penguin cryptid","ACDJDA","dkN",5,3,6,"1F2937","F8FAFC","fifteen-foot penguin with big footprints","honk","Huge footprints on the beach. Suspicious.","cryptid,silly"},
 }
