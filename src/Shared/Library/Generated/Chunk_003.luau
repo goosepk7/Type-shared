@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
+	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
 	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
@@ -158,9 +160,11 @@ return {
 	{"blanket","BMCIyI","GF",1,3,2,"1F2F55","F3E6C8","folded cosy blanket","thud","Monsters can't get you under here.","furniture,household"},
 	{"blanket flower","NABNMI","dFS",1,1,2,"E53935","FFC107","red daisy with yellow tips","rustle","Looks like a little campfire.","plant,flower"},
 	{"blast","KLCFOB","Ek",5,9,1,"FF9100","FFFFFF","forward cone of bright force","boom","Point. Blast. Done.","explosive"},
+	{"blast decree","KICFOI","kP",7,10,2,"FF9A4A","16101E","a lip seal opens; the voice blasts everyone away","boom","Said politely. Heard from orbit.","anime,voice,curse"},
 	{"blaster","CDBAwI","Ke",5,8,3,"24262A","C9CED4","chunky sci-fi pistol","zap","Pew pew pew!","scifi,ranged"},
 	{"blaster rifle","CDCAwI","KeV",6,7,4,"24262A","C9CED4","long rifle with energy cell","zap","Pew-pew, extra pew.","scifi,ranged"},
 	{"blaze","FADNOI","KSP",6,6,3,"D9480F","FFB347","wide wall of tall flames, thick embers","roar","Not a campfire. Definitely not a campfire.","fire"},
+	{"blaze knuckle","KADAKB","KEke",8,8,2,"FF8A1E","7A1A08","a giant fist of flame roaring forward","whoosh","Knuckles, but a wildfire.","anime,pirate,fire,punch"},
 	{"bleeding heart","NGBNMI","dFS",2,1,2,"E91E63","FFFFFF","row of dangling heart blooms","rustle","Dramatic. Very dramatic.","plant,flower"},
 	{"bleeding tooth fungus","NJBLMI","SM",3,1,2,"F5F5F5","C62828","white cap oozing red drops","poof","Looks like it is bleeding. Yikes.","plant,fungus,spooky"},
 	{"blender","BMBLII","jV",3,3,4,"BFE6F2","24262A","jug with spinning blades on base","whirr","Whirrrr. Smoothie.","kitchen,household"},
@@ -342,6 +346,7 @@ return {
 	{"boulder field","MEENII","GkSN",4,1,8,"9E9E9E","6D6D6D","slope littered with tumbling boulders","rumble","Watch out for falling... oh.","place,terrain"},
 	{"boulder launcher","OEDMxI","keO",6,3,6,"8C8C88","8B5A2B","arm flinging huge rocks","clank","Rocks: delivered.","defense,mechanical"},
 	{"bounce","KMBOKG","Uk",2,7,3,"FF80AB","FFFFFF","rubbery squash-stretch bounce","boing","Boing boing boing!","silly"},
+	{"bounce brawler","KMDNXG","UWkf",8,7,5,"E8483C","2B1A14","puffed-up giant rubber fists, bouncing on the spot","boing","Boing. Boing. BOOM.","anime,pirate,rubber,transform"},
 	{"bounce shroom","NGDLMI","UlS",2,2,6,"E2455B","FFF4E0","giant springy mushroom that launches you skyward","boing","Boing! Up you go!","game,platformer,plant,mobility"},
 	{"bouncy ball","BMAG3F","Uke",1,9,2,"FF3EA5","8BC34A","small glossy bouncy ball","squeak","Never stops bouncing. Never.","toy"},
 	{"bouncy bomb","CACGKF","UEe",6,6,2,"24262A","F1C40F","rubbery bomb that bounces","boom","Boing. Boing. BOOM.","explosive,silly"},
@@ -398,9 +403,4 @@ return {
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
 	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
-	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
-	{"bread fortress","IMECII","GFk",5,2,9,"C8904A","F5E6C8","castle walls of loaves","thud","A carb castle.","edible,giant"},
-	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
-	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
-	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 }
