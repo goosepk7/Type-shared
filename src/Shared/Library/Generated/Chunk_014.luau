@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"itching powder","CMADOI","jd",1,6,1,"D2B48C","F2F2EE","puff of scratchy powder","thwip","Scratch. Scratch. SCRATCH.","prank,silly"},
+	{"ittan-momen","AFCJCB","AHN",3,8,2,"F8FAFC","E5E7EB","long strip of white cloth flying at night","whoosh","A scarf that wraps you up. Too tight.","yokai"},
 	{"ivory wyrm","KHEJPB","AQeN",9,7,6,"E9EEF6","5AA8FF","a pale armoured wyrm with swept wings and an azure throat","roar","Twelve seconds of being the coolest card in the deck.","anime,card game,dragon"},
 	{"ivy","NGCLMI","GWSHN",2,1,4,"1B5E20","43A047","climbing glossy heart leaves","rustle","Climbs walls. Climbs enemies.","plant"},
 	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
@@ -389,6 +391,7 @@ return {
 	{"lantern","BABGJK","Kc",1,3,3,"B58A3A","E67E22","caged glass with candle glow","flicker","Light in the dark. Bugs everywhere.","tool"},
 	{"lantern boat","DHCKHJ","DAFg",3,5,3,"FFB74D","1A237E","small boat glowing with paper lanterns","whoosh","Floats on rivers of light.","vehicle,magic,mythical"},
 	{"lantern dragon","AADJCA","Kdc",5,5,5,"DC2626","FACC15","paper lantern dragon carried by many legs","drum","Dances in. Explodes with confetti.","holiday"},
+	{"lantern float","BHCOKJ","QFS",4,2,5,"FFB648","FF5A3A","three paper sky lanterns rising and healing below","chime","Make a wish. Then make a heal.","holiday,lantern festival,heal"},
 	{"lantern shark","AHBJEC","DfTB",2,8,6,"3A3A44","8AE8F0","tiny glowing shark","chomp","A shark that glows in the dark.","fish,aquatic,ocean,predator,deepsea"},
 	{"lanternfish","AHAJEC","dcPB",1,6,1,"3A4250","6AE8F0","small dark fish dotted with lights","splash","Carries its own fairy lights.","fish,aquatic"},
 	{"lanternfly","AMAJFB","dAP",1,6,1,"E8301E","1E1E1E","spotted wings with red underwings","buzz","Pretty, but munches everything.","insect"},
@@ -400,7 +403,4 @@ return {
 	{"lasagna","IMCCII","GFc",3,2,6,"D8602B","F2D08A","layered slab, cheese, red sauce","thud","Layers upon layers of cozy defense.","edible,giant"},
 	{"laser","CHCBJI","KTe",6,10,3,"FF2D2D","F2F2EE","thin searing red beam","zap","Pew pew, but continuous.","scifi,ranged"},
 	{"laser cannon","CHDMxI","KTe",8,5,6,"3A3F45","FF2D2D","heavy twin-barrel beam cannon","zap","For lasers that need to be heard.","scifi,ranged"},
-	{"laser chainsaw","CACHJI","KfV",8,5,5,"E67E22","FF2D2D","chainsaw with glowing laser teeth","zap","Rrrrrzzzzzap.","scifi,sharp,loud"},
-	{"laser drill","OHCBwI","KCe",6,6,5,"E67E22","FF2D2D","bulky drill firing a laser","hum","Tunnels through anything.","scifi"},
-	{"laser grid","EDCCII","KST",5,2,4,"FF462E","40444E","two posts with three red laser beams between","hum","Mind the gap. All three of them.","scifi,modern,heist"},
 }

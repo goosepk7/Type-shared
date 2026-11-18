@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"smog","FJCDOJ","jMN",3,3,3,"8A8270","C5BEA8","brownish yellow choking haze","cough","Bad air day.","toxic"},
+	{"smoke","FACDOJ","jZS",2,4,2,"5C5C5C","B0B0B0","thick grey billowing cloud","hiss","Smoke and mirrors, minus the mirrors.","fire"},
+	{"smoke detector","OKAF1I","O",1,1,3,"F2F2EE","C0392B","ceiling disc that beeps","beep","BEEP BEEP BEEP.","household,loud"},
+	{"smoke elemental","AACJOJ","jZM",4,6,3,"52525B","A8A29E","curling grey smoke with ember eyes","hiss","Cough cough. That's its war cry.","elemental"},
 	{"smoke grenade","CMCD2F","jZSe",2,7,2,"8E9196","F2F2EE","a hissing canister that fills the area with smoke","poof","Poof. Gone. Very ninja.","modern,stealth"},
 	{"smoke launcher","OFCMxI","jZP",2,4,5,"8E9196","6B7B3A","stubby tube puffing smoke","clank","Now nobody can see. Hide!","defense,mechanical"},
 	{"smoke pellet","CMADJI","jZ",1,9,1,"8E9196","F2F2EE","tiny pellet bursting with smoke","bang","Bye!","spy,ninja"},
@@ -399,8 +403,4 @@ return {
 	{"squirrel monkey","AMAJBA","deb",1,8,2,"E0A84A","F2F2EE","tiny, white mask, yellow arms","chatter","Hyperactive mini monkey.","mammal,primate"},
 	{"squirrelfish","ABAJEC","dB",1,6,1,"E8301E","F2F2EE","big-eyed red reef fish","splash","Big eyes, red coat, night shift.","fish,aquatic,nocturnal"},
 	{"squirt","KBBAwB","jeN",2,8,1,"38BDF8","FFFFFF","spray bottle firing one sharp jet of water","squirt","Bad summon! Off the couch!","silly,pet"},
-	{"squirt flower","CBAAJI","de",1,9,1,"F2F2EE","F1C40F","lapel flower that sprays","thwip","Smell the flower! SPLASH.","prank,silly"},
-	{"squish","KMCAKB","XO",4,6,2,"AED581","FFFFFF","giant cartoon palm squashing down","squish","Squish! Flat as paper.","silly"},
-	{"squishy","BMAAKI","Ude",1,6,1,"FFB38A","F2F2EE","soft slow-rising foam toy","squeak","Squish. It'll come back.","toy"},
-	{"squonk","ABBJAA","jX",2,3,1,"A3A3A3","7DD3FC","lumpy wart-covered forest creature in tears","sob","Cries so much it dissolves into a puddle.","cryptid,silly"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
 	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
 	{"entelodont","AMDJAA","DkO",7,4,8,"6A4A3A","C89A7A","giant pig with huge jaws","roar","A pig the size of a cow. Grumpy.","mammal,extinct,ancient,heavy"},
 	{"entropy","FLCNOI","jiN",5,3,3,"6B5E7A","B8A8C8","crumbling, fading, glitching area","crackle","Everything falls apart eventually.","chaos"},
@@ -314,6 +315,7 @@ return {
 	{"firebird of the east","AACJDB","KAc",5,8,4,"F97316","FDE047","glowing peacock bird with ember tail","chime","One feather lights a whole room.","mythical,bird,fire"},
 	{"fireboat","DBDKHC","DkIegB",5,5,7,"E53935","F5F5F5","red boat with water cannons spraying","siren","Water cannons on all sides.","vehicle,aquatic"},
 	{"firecracker","CAAGKF","dEO",2,8,1,"C0392B","D4A72C","tiny red paper tube with fuse","boom","Pop pop pop!","party,holiday,explosive"},
+	{"firecracker chain","CACNKI","dEP",4,7,2,"D8262E","FFC93A","red firecracker string popping in a row along the ground","crackle","Loud enough to scare off anything. Including you.","holiday,lunar new year,explosive"},
 	{"firefighter","LBCJNA","GFkI",5,6,6,"DC2626","FACC15","helmet, yellow coat, fire hose","splash","Puts out fires. Including yours.","hero,rescue"},
 	{"firefighter robot","OBCJNA","FI",4,4,7,"DC2626","F8FAFC","red robot with hose arms","splash","Sprays foam everywhere.","robot,rescue"},
 	{"firefly","AHAJFB","dAcP",1,6,1,"F2E82A","3A2A1E","small beetle with glowing tail","buzz","Brings its own nightlight.","insect"},
@@ -401,6 +403,4 @@ return {
 	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
 	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
 	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
-	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
-	{"flight","KFCOKB","A",2,8,3,"B3E5FC","FFFFFF","caster lifting off with wind streaks","whoosh","Who needs stairs?","air"},
 }

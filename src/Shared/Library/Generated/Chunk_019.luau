@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"parka","BCCONI","GJ",1,4,3,"E67E22","1F2F55","puffy hooded winter coat","swish","Marshmallow armour.","clothing,winter"},
+	{"parking lot","MEDNII","SN",1,1,6,"424242","F5F5F5","flat grey lot, painted lines","rumble","Every space is taken. Forever.","place,terrain,silly"},
+	{"parking meter","OKBCmI","Gb",1,1,7,"8E9196","C9CED4","post with coin slot","clank","Time's up.","mechanical"},
 	{"parkour runner","LFCJNA","UDY",3,10,3,"111827","F97316","hoodie, mid-wall-flip","whoosh","Wall run, flip, gone.","sport"},
 	{"parmesan","IMBAKK","ceO",3,7,6,"F2E2B0","E8C88A","hard pale wedge, grainy","bonk","The king of cheeses. Hard as a rock.","edible,dairy,royal"},
 	{"parrot","AMBJDB","jdA",2,6,2,"2AB04A","E8301E","bright green-red bird, curved beak","squawk","Repeats everything you say. Everything.","bird,jungle,silly"},
@@ -242,6 +245,7 @@ return {
 	{"pilot whale","ABDJEC","UDQB",5,8,4,"2A2C30","6E7278","round bulbous head, black body","click","Follows the leader. Always.","mammal,aquatic,ocean"},
 	{"pin","BKALuI","TPO",2,1,3,"C0C7CE","EF4444","scatter of sharp thumbtacks, points up","click","Left on the chair by an expert.","sharp,school,trap"},
 	{"pinata","BMCLAI","dcV",1,2,3,"FF3EA5","F1C40F","paper donkey covered in fringe","squeak","Whack it. Candy rains down.","party,silly"},
+	{"pinata burst","BMCLAI","EcV",4,3,4,"FF4FA0","FFD24A","fringed paper burro on a post that bursts in candy","pop","Everyone wants to hit it. That's the plan.","holiday,party,trap"},
 	{"pinball bumper","OKCL1I","UkI",3,1,6,"FF3EA5","C9CED4","round bouncy post that zaps","clank","Ding! Boing! Bounced.","defense,game"},
 	{"pinball flipper","OKDN1I","kI",5,10,1,"E8EDF2","FF4F6E","two giant chrome flippers that slam shut","clank","Flip! Off they go.","game,arcade,knockback"},
 	{"pinball machine","BMCMII","Udk",3,4,5,"1F2F55","FF3EA5","flashing pinball cabinet","clack","Ding ding ding! Multiball!","game"},
@@ -399,8 +403,4 @@ return {
 	{"plow","JECFJF","CkI",5,4,6,"6B7280","8B5A2B","curved steel blade carving a furrow, dirt peeling aside","rumble","Turns fields over. Enemies too.","farm,tool"},
 	{"plug","BDBL1I","SLO",3,1,4,"F5F5F5","FACC15","three-prong plug and a wall socket with a surprised face","zap","Do not stick a fork in it. Seriously.","electric,household"},
 	{"plum","IGBAKF","Fke",3,6,2,"6B2D5C","3E7A3B","round purple, dusty bloom","splat","Purple, juicy, perfectly plummy.","edible,fruit,sweet"},
-	{"plum tomato","IMBGKF","EkeP",3,4,3,"D72B2B","3E7A2B","egg-shaped red tomato","splat","The tomato that went to cooking school.","edible"},
-	{"plum tree","NGDCMI","GFSc",3,1,6,"6D4C41","8E24AA","small tree with purple fruit","rustle","Sweet fruit, sour attitude.","plant,tree"},
-	{"plumb bob","JKAAJK","ke",1,6,5,"B58A3A","B89B6A","pointed weight on string","clank","Points straight down. At you.","tool"},
-	{"plumbago","NGBNMI","dFSN",1,1,2,"90CAF9","2E7D32","clusters of pale blue phlox-like flowers","rustle","Sky blue and sticky seeds.","plant,flower"},
 }

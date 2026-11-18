@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sweater","BMCONI","JF",1,4,2,"2E8B57","C0392B","knitted reindeer sweater","swish","Festive and slightly itchy.","clothing,holiday"},
+	{"swedish meatballs","IMBGKF","DkI",3,5,6,"7A3A2A","C8102E","meatballs with cream sauce, lingonberry","rumble","Meatballs with a flat-pack vibe.","edible,heavy"},
+	{"sweep away","KFCFOB","kI",4,7,1,"E1F5FE","FFFFFF","low wide sweeping arc of wind","swish","Clean sweep. Everybody out.","air"},
+	{"sweet and sour chicken","IMBLGI","jN",2,3,3,"E8402B","F2A62B","glossy red-orange chicken chunks","gloop","Sweet. Sour. Can't decide. Doesn't need to.","edible,sticky"},
 	{"sweet briar","NGBNMI","dFST",2,1,3,"F8BBD0","2E7D32","simple pink roses on arching thorny canes","rustle","Wild, prickly, and lovely.","plant,flower"},
 	{"sweet cherry","IGAELB","eVP",2,7,1,"7A0A1E","B0101E","dark red double cherry","pitter","Dark, sweet, and juicy.","edible,fruit,sweet"},
 	{"sweet chili sauce","IABAKK","KN",3,7,2,"E8402B","F2A62B","glossy red sauce with flakes","sizzle","Sweet first. Heat later.","edible,spicy,flammable,sauce"},
@@ -399,8 +403,4 @@ return {
 	{"toilet","BBCL0I","dHO",2,1,6,"F2F2EE","F2F2EE","porcelain toilet with lid up","splash","Flush them away.","bathroom,silly"},
 	{"toilet brush","BJBHrK","fM",1,6,2,"F2F2EE","8E9196","bristly brush on handle","thud","The grossest sword.","bathroom,silly"},
 	{"toilet paper","BBAAKF","deN",1,6,1,"F2F2EE","F2F2EE","roll of soft white paper","splash","Unroll. Tangle. Victory.","bathroom,silly"},
-	{"toilet paper launcher","CMCMxK","deN",1,6,3,"F2F2EE","8E9196","tube cannon of paper rolls","boing","Decorates trees. And enemies.","prank,silly"},
-	{"tokay gecko","AMBJAA","Cf",2,7,2,"6A8AA0","E8701E","blue-grey gecko with orange spots","tokay","Screams its own name. Bites.","reptile"},
-	{"token","BKAA3K","Uce",1,8,4,"D4AF37","B45309","brass coin stamped with a star and NO CASH VALUE","clink","No cash value. Much smack value.","gaming,shiny"},
-	{"token rush","BHBOKK","D",2,10,3,"FFC83D","B57CFF","spinning arcade tokens scattered round you","clink","Grab them all. Go go go.","game,arcade,mobility"},
 }
