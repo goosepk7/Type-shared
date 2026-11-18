@@ -334,7 +334,6 @@ return {
 	{"chocolate strawberry","IMBLKI","dSc",2,3,3,"D7263D","4A2516","strawberry half-dipped in chocolate","chomp","A strawberry in a tuxedo.","edible,sweet,fancy"},
 	{"chocolate truffle","IMALKI","dSc",2,3,3,"3A1A0C","7A4026","cocoa-dusted round bonbon","chomp","Small, round, and luxurious.","edible,sweet,candy"},
 	{"chocolate wall","EECCII","GdSc",2,1,3,"5D4037","8D6E63","glossy chocolate bar segments","thud","Enemies stop to take a bite.","silly,sweet,edible"},
-	{"choir","LLDJLI","FO",5,3,4,"7C2D12","F8FAFC","rows of robed singers","sing","Harmony so loud it shakes walls.","music,swarm"},
 	{"cholla","NECLMI","GQST",4,1,5,"C5E1A5","9E9D24","fuzzy-looking cactus with barbed segments","thud","Looks cuddly. Jumps onto you. Ouch.","plant,desert,sharp"},
 	{"chonchon","AIBJDB","jAO",2,7,2,"78716C","1F2937","flying head with huge flapping ears","screech","A head that flies with its ears. Wild.","mythical,spooky,silly"},
 	{"chop","KMBHJB","fO",4,8,2,"FFCC80","FFFFFF","glowing hand edge chop arc","hyah","Hi-yah!","silly,sharp"},

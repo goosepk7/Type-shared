@@ -211,6 +211,7 @@ return {
 	{"karaage","IMAELB","ce",2,7,1,"C8762B","F2C870","crispy fried chicken bites","pitter","Crunchy nuggets from Japan.","edible"},
 	{"karakasa","ALBJNG","Ujd",2,6,2,"9F1239","FDE68A","paper umbrella, one eye, long tongue, one leg","boing","An umbrella that hops and licks.","yokai,silly"},
 	{"karambit","CKAHrK","fT",3,9,2,"24262A","8A929B","curved claw knife with ring","shing","Claw of steel.","sharp,ancient"},
+	{"karaoke duel","KHCB6I","deN",5,5,5,"FF3EA5","FFE066","twin spotlights lock you and a rival in a sing-off","sing","Hold the note. Or get booed off.","music"},
 	{"karaoke machine","BMCNKI","jO",1,1,4,"24262A","FF3EA5","speaker box with microphone","blare","Feel the music. Feel the pain.","party,music,loud"},
 	{"karate","KMCOKI","Dkf",5,8,3,"FFFFFF","212121","white gi and flurry of strikes","hyah","Hi-yah! Chop! Kick! Bow.","melee"},
 	{"karate granny","LMCJNA","jkf",5,7,4,"C084FC","F8FAFC","grandma in karate gi with black belt","thud","Knits. Kicks. Wins.","silly,martial,family"},

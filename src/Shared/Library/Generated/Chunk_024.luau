@@ -397,6 +397,7 @@ return {
 	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 	{"spirit animal","AHCJAA","GQF",4,6,3,"A5F3FC","FDE68A","glowing translucent animal companion","chime","Your inner animal, on loan.","spirit"},
 	{"spirit bear","AHDJAA","Fkf",6,5,6,"F8FAFC","7DD3FC","glowing translucent bear","roar","A bear hug from the other side.","spirit"},
+	{"spirit choir","LHCJVJ","Qkh",5,4,5,"F6F0FF","FFD36E","three glowing robed spirits sing hymns that hurt foes","sing","Ahhhhh. (Ow.)","music,summon"},
 	{"spirit eagle","AFCJDB","ATe",5,9,3,"E0F2FE","FDE047","glowing eagle trailing feather light","screech","Sees everything. Judges most of it.","spirit,bird"},
 	{"spirit fox","AHBJAA","QFZ",3,8,2,"F8FAFC","67E8F9","translucent glowing fox","chime","Leads you somewhere. Usually somewhere good.","spirit,cute"},
 	{"spirit guard","KLDJVJ","DQf",6,8,4,"8E7CF0","F2D57A","spectral fighter floating behind your shoulder","whoosh","He punches. A lot.","anime,spirit"},

@@ -248,6 +248,7 @@ return {
 	{"shotel","CKCHrK","fTH",5,6,4,"8A929B","E3DAC9","sickle-curve sword","shing","Hooks around shields.","sharp,ancient"},
 	{"shotgun","CKCAwI","keV",6,4,4,"2C3539","5A3A1E","pump-action double tube","bang","Close range. Wide opinions.","modern,ranged"},
 	{"shoulder","BMCAKB","Dkf",4,6,6,"E8B48A","9AA5B1","padded shoulder barging forward, speed lines","thud","Excuse me. Pardon me. WHAM.","body,sport"},
+	{"shoulder boombox","OMBM1I","Qke",5,7,5,"2A2A33","FF8A3D","a stereo on your shoulder fires bass rings at foes","thud","Turn it up. Point it at them.","music,turret"},
 	{"shoulder pads","BMBONI","GD",1,6,4,"F2F2EE","1F2F55","huge football shoulder pads","clank","Built like a fridge.","armor,sport"},
 	{"shout","KFCFOB","kO",4,10,1,"FFE0B2","FFFFFF","big megaphone-shaped sound cone","shout","INSIDE VOICE, PLEASE.","loud"},
 	{"shovel","JKCHJK","Ckf",3,5,5,"8A929B","8B5A2B","flat blade on long handle","clank","Dig in!","tool"},
