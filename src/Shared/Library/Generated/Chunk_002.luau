@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
+	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
 	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
 	{"assassin","LICJNA","ZTMY",6,9,3,"1F2937","7F1D1D","hood, hidden blade, leap of faith","whoosh","Silent. Sneaky. Allergic to hay bales.","stealth"},
 	{"assassin bug","AMAJFA","dATMP",1,6,1,"3A2A1A","D8401E","long beak, stalking","buzz","A tiny bug with a big name.","insect"},
@@ -401,6 +403,4 @@ return {
 	{"beep","KDAFOB","d",1,10,1,"00E676","FFFFFF","tiny sound blips","beep","Beep beep! Coming through.","silly"},
 	{"beet","IEBAJK","FSe",3,6,4,"8E1F3F","C22A5A","round dark red root, leaves","crunch","Stains everything bright purple.","edible,vegetable,healthy"},
 	{"beetle","AMAJFA","Gf",1,3,4,"2A4A2A","6AC84A","shiny round shell, six legs","click","Armored. Shiny. Unbothered.","insect,armored"},
-	{"beetle knight","AKBJFA","GDk",3,4,7,"1E3A8A","15803D","armored beetle with horn lance","click","Built-in armor. Very shiny.","insect,warrior"},
-	{"beg","KMAOKI","c",1,3,1,"F8BBD0","FFFFFF","sparkly pleading hands","aww","Pleeeease? Pretty please?","cute,silly"},
 }
