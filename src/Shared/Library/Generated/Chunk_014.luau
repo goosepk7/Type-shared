@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jackfruit","IGCGKF","DkI",5,5,6,"A7B33A","E5C14B","giant bumpy green oblong","rumble","The biggest fruit on a tree. Ouch.","edible,heavy,fruit"},
+	{"jackhammer","OKCLJK","CkfO",6,3,7,"F1C40F","4A4D52","tall pounding drill with handles","rattle","Rattles the ground and your teeth.","tool,loud"},
+	{"jackpot","KKCEOB","dFc",4,6,2,"FFC107","43A047","explosion of coins and confetti","jingle","Ding ding ding! Winner!","luck,shiny"},
+	{"jade","BGBO4J","GFc",3,3,7,"00A86B","A7F3D0","smooth polished green stone carved like a little dragon","chime","Lucky. Smooth. Greener than envy.","shiny,royal"},
+	{"jade dragon","AGEKCB","AFeg",7,7,8,"059669","A7F3D0","carved green jade serpent dragon","roar","Polished, precious, and prickly.","mythical,reptile,gem"},
 	{"jade golem","AGDJNA","GFk",7,2,9,"059669","A7F3D0","polished green jade giant","chime","Precious. Unbreakable. Grumpy.","construct,gem"},
 	{"jade vine","NLCNMI","dFS",2,1,3,"1DE9B6","43A047","dangling claws of turquoise flowers","rustle","Glows a colour that should not exist.","plant,flower"},
 	{"jaekelopterus","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant sea scorpion","skitter","Biggest bug ever. Swam.","arachnid,spooky,venomous,extinct,ancient"},
@@ -398,9 +403,4 @@ return {
 	{"laughter","KHCF6B","jFPO",3,7,1,"FDE047","F97316","rolling wave of HA HA HA letters and tear-crying faces","giggle","Contagious. Milk out of the nose guaranteed.","silly,mood"},
 	{"launch","KACAKB","kl",5,9,2,"FF7043","FFE0B2","target shooting skyward with smoke trail","whoosh","To infinity! Not beyond. Just up.","silly"},
 	{"laundromat","MBDNlI","jSHN",4,1,5,"38BDF8","F8FAFC","row of spinning round-door washers overflowing with foam","slosh","Lost: one sock. Found: someone else's sock.","household,building"},
-	{"laundry","BJCLGI","WMN",3,1,4,"93C5FD","F87171","teetering mountain of socks, shirts and one sneaker","whiff","The pile grew again. It is breathing now.","household,silly,gross"},
-	{"laundry basket","BMBL2I","O",1,1,2,"F2F2EE","2F6FD1","plastic basket of laundry","thud","Smelly prison.","container"},
-	{"laundry detergent","BBBD2I","jN",1,5,2,"E67E22","F2F2EE","big jug of suds","thud","Bubbles. Everywhere.","household"},
-	{"laurel","NGCCMI","GWFkS",2,1,6,"4E342E","2E7D32","dense glossy aromatic shrub tree","rustle","Victory wreaths grow here.","plant,tree"},
-	{"lava","FACNOI","KSN",6,3,5,"FF4500","FFB703","molten orange pool, black crust cracks","bubble","The floor is lava. Not a game anymore.","fire"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"night vision goggles","CKBONI","Z",1,6,3,"6B7B3A","8BC34A","goggles with glowing green lenses","bang","See in the dark. Look very cool.","spy,tech"},
+	{"night watchman","LHCJNA","GO",3,4,5,"1E3A8A","FACC15","lantern, bell, heavy coat","ding","Midnight and all's well. Until now.","guardian,historical"},
+	{"nightfall","FIDFOB","ZNP",5,5,3,"1A1840","6157A8","dark wave rolling across the sky","hush","The sun clocks out early.","spooky"},
+	{"nightingale","AMAJDB","dAF",1,7,1,"8A6A4A","D8C4B0","plain brown bird, singing at night","song","Plain look, legendary voice.","bird,cute"},
+	{"nightjar","AMAJDB","dAZ",1,7,1,"8A7A62","5A4A3A","camo bark-patterned bird, wide mouth","tweet","Invisible on the ground. Loud at night.","bird,cute,nocturnal"},
 	{"nightmare","AADKAA","KDjg",7,8,6,"111827","F97316","black stallion with burning hooves and mane","neigh","The horse you see right before you wake up.","mythical,mount,spooky,fire"},
 	{"nightmare beast","AIDJAA","jiO",6,6,5,"1E1B4B","DB2777","beast of swirling purple smoke and eyes","growl","Made of bad dreams and worse eyes.","spooky"},
 	{"nightmare horse foal","AABJAA","KQ",2,7,2,"1F1F1F","F97316","small black foal with tiny flame mane","neigh","Cute but singes the carpet.","spooky,cute"},
@@ -398,9 +403,4 @@ return {
 	{"passion flower","NGBNMI","dFS",2,1,2,"7E57C2","FFFFFF","intricate fringed blue bloom","rustle","Looks like a clock. Acts like a flower.","plant,flower"},
 	{"passion fruit","IMBGKF","EeP",4,6,1,"5E2A4E","F3C54B","purple wrinkly sphere, gold pulp","pop","Wrinkly outside, fireworks inside.","edible,explosive,fruit,tropical"},
 	{"passport","BMAOyE","GjY",2,5,3,"1E3A8A","D4AF37","small navy booklet with a gold crest and a terrible photo","thunk","Worst photo of your life. Valid ten years.","travel"},
-	{"password","KDBIyI","Gja",3,1,7,"111827","22C55E","padlock screen with dots ******** and a red WRONG","buzz","Must contain a capital, a number and your soul.","tech,defense"},
-	{"past","KEDN5I","jNh",5,2,3,"B08D57","E7D8B1","sepia portal with a penny-farthing and dinosaurs behind it","tick","Was better. Allegedly. Had no wifi.","time,ancient"},
-	{"pasta","IMAELB","eNP",2,6,1,"F2D08A","E8C070","assorted pasta shapes","pitter","Shapes for every situation.","edible,grain"},
-	{"paste","BMALGI","ScN",1,1,2,"F8FAFC","A855F7","white gloopy dollop with a purple glue-stick cap","squelch","Somebody in class eats this. You know who.","school,sticky,silly"},
-	{"pasteis de bacalhau","IMAELB","eVP",2,7,1,"D9A04A","F2E8D0","golden cod croquettes","pitter","Crispy cod cannonballs.","edible"},
 }

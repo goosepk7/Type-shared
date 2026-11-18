@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dogfish","ABBJEC","DfTB",3,8,6,"7A7468","D8D4CC","small slim shark, white spots","chomp","Small shark, fish name, dog vibe.","fish,aquatic,ocean,predator"},
 	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
 	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
 	{"dogwood","NGCCMI","GWFkS",3,1,5,"5D4037","FFFFFF","small tree with white cross blossoms","rustle","No dogs involved. Mostly.","plant,tree"},
@@ -118,6 +119,7 @@ return {
 	{"dried cranberries","IMAELB","eVP",2,7,1,"A3101E","C8303A","wrinkly red bits","pitter","Sweet-tart red jewels.","edible,sweet"},
 	{"dried fruit","IMAELB","eVP",2,7,1,"A0522D","E8A43A","pile of wrinkly fruit bits","pitter","Fruit, concentrated for travel.","edible,sweet"},
 	{"drift spark","KDBOKF","DkL",4,10,2,"4FC3FF","FF9A2E","rune sled power-slides spraying blue-orange sparks","screech","Blue sparks. Orange sparks. Gone.","game,racing,speed"},
+	{"drifting haze","KFDDOI","ZSf",7,7,3,"C9CED8","8E86B8","a rolling fog bank where blades glint behind whoever stays","whoosh","You can't fight what you can't see.","anime,sword,mist,breathing"},
 	{"drill","JKBAJK","CfT",4,7,5,"F1C40F","24262A","pistol-grip drill with bit","whirr","Whirrrrr. Hole.","tool,mechanical"},
 	{"drill arm","CKCHJI","CfT",6,6,6,"2C3539","D4A72C","giant spinning drill arm","zap","Pierce the heavens!","scifi,mechanical"},
 	{"drill sergeant","LMCJNA","IOh",4,5,6,"4D7C0F","DC2626","campaign hat, megaphone","horn","DROP AND GIVE ME TWENTY.","military"},
@@ -335,6 +337,7 @@ return {
 	{"ember phoenix chick","AAAJDB","KAF",2,6,1,"F97316","FEF08A","fluffy fire chick with flame tuft","chirp","Reborn from a burnt toast.","fire,cute,bird"},
 	{"ember sprite","AAAJNB","KjA",2,9,1,"F97316","FDE047","tiny flame fairy","crackle","Small spark. Big trouble.","fairy,fire"},
 	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
+	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
 	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
 	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
@@ -400,7 +403,4 @@ return {
 	{"erosion","FECNOI","iN",4,2,3,"A1887F","D7CCC8","crumbling ground worn by wind and water","hiss","Slowly wears everything down.","natural"},
 	{"error","KLBAKB","jO",3,8,1,"D32F2F","FFFFFF","red X pop-up box","beep","Something went wrong. On purpose.","meme,silly"},
 	{"eruption","HAENOI","KEkl",8,5,4,"E64A19","FFAB40","ground bursts open, fountain of lava and rocks","boom","The ground sneezed lava.","natural,fire,explosive"},
-	{"erymanthian boar","AEDJAA","Dk",6,7,7,"44403C","D6D3D1","massive boar with frost-covered tusks","grunt","Charges first. Thinks never.","mythical"},
-	{"escalator","OKDL1I","IN",2,1,7,"C9CED4","24262A","moving metal staircase","clank","Up you go. Or down.","mechanical"},
-	{"escape artist","LMCJNA","ZY",3,8,3,"111827","FACC15","chains, padlock, smirk","whoosh","Tied up. Not anymore.","circus"},
 }

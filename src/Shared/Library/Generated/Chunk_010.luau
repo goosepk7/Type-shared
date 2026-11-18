@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
+	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
+	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
 	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
 	{"flower bed","NGCNMI","FSN",2,1,3,"F06292","6D4C41","rows of colourful blooms in soil","rustle","Keep off. The flowers fight back.","plant,flower"},
@@ -264,6 +267,7 @@ return {
 	{"galaxy brain","KLCAKB","jO",5,7,1,"7C4DFF","FFD54F","glowing starry brain projectile","hum","Thought so hard it became space.","meme,psychic"},
 	{"gale","FFDFOB","kIN",6,8,3,"8FB3C6","E3EEF3","wide howling wind front","howl","Wind that took the stairs too fast.","air,storm"},
 	{"gale force","FFEFOB","kINP",7,8,3,"78909C","ECEFF1","thick wall of howling wind with debris","howl","Hold onto your hat. And your friends.","air,storm"},
+	{"gale rend","KFDBKI","kTe",7,9,2,"7FE3B0","F2FFF8","a sideways cyclone of blades drilled along the aim","whoosh","The wind cuts before you see it.","anime,sword,wind,breathing"},
 	{"gale smash","KFDF6I","kfTI",8,10,2,"DFF3FF","4C7FB8","one punch, a hurricane tunnel tearing down the lane","boom","One punch. The weather changes.","anime,hero,punch"},
 	{"gale sword","CFCArK","TIe",6,9,3,"87CEEB","F2F2EE","almost invisible blade of wind","shing","Whoosh. Cut. Gone.","fantasy,sharp"},
 	{"gallimimus","AMCJBA","DQ",3,10,3,"8A8A6A","E8E0C0","ostrich-like dino, long neck","screech","Ran away from everything. Fast.","dinosaur,extinct,reptile,predator"},
@@ -399,8 +403,4 @@ return {
 	{"ghost pepper","IABAKK","KjSP",7,7,2,"C8202B","8A1E1E","wrinkled red pod","sizzle","So hot it haunts you for days.","edible,spicy,flammable,pepper,spooky"},
 	{"ghost pipefish","ABAJEC","dZB",1,6,1,"E8D8C0","C8A07A","ornate seaweed-like","splash","Pretends to be seaweed.","fish,aquatic"},
 	{"ghost pirate captain","AIDJNJ","Afh",7,5,4,"94A3B8","22C55E","glowing spectral captain with hook","wail","Commands the dead crew.","ghost,pirate,boss"},
-	{"ghost ship","DIEKHJ","jAZegB",7,5,6,"455A64","80DEEA","tattered glowing galleon, ripped sails","moan","Crewed by nobody. Steered by spite.","spooky,undead"},
-	{"ghost ship crew","AICJNJ","Zfh",5,5,4,"94A3B8","22C55E","spectral sailors with tattered coats","wail","They still want their pay.","undead,ghost,pirate"},
-	{"ghost slime","AIBJGJ","UZ",2,5,2,"E5E7EB","A5B4FC","see-through floating jelly","squelch","Boo. Squish.","slime,ghost"},
-	{"ghost stream","ODDBwI","eLNO",7,6,3,"FF8A3D","5AB8FF","a writhing stream from a backpack wand, then a trap","zap","Don't cross the streams. Probably.","scifi,movie,ghost"},
 }

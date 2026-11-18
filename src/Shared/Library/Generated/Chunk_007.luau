@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 	{"croque monsieur","IGBOKI","F",2,5,3,"D9A04A","F2C870","grilled ham cheese sandwich","crunch","A sandwich with a fancy title.","edible,healthy"},
 	{"croquet mallet","BMCHtK","kf",2,5,4,"8B5A2B","C0392B","long mallet with barrel head","bonk","Wack. Through the hoop.","sport"},
 	{"croquette","IMAELB","Ke",2,7,1,"D9A04A","F2E2C2","crumbed golden cylinder","pitter","Crispy outside, creamy surprise inside.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"dog knight","AKBJAA","GQf",3,7,4,"A16207","1D4ED8","loyal pup in shining armor","bark","Good boy. Great knight.","warrior,canine,cute"},
 	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
 	{"dog walker","LMCJNA","Qh",3,6,4,"15803D","F59E0B","ten leashes, ten dogs","bark","Is walked by the dogs.","silly,canine"},
-	{"dogfish","ABBJEC","DfTB",3,8,6,"7A7468","D8D4CC","small slim shark, white spots","chomp","Small shark, fish name, dog vibe.","fish,aquatic,ocean,predator"},
 }

@@ -116,6 +116,7 @@ return {
 	{"cog railway","DMDKHL","Dklg",4,3,7,"E53935","F5F5F5","stubby car climbing a toothed track","clank","Climbs straight up mountains. Slowly.","mechanical,vehicle,land"},
 	{"coif","BKAONI","G",1,6,4,"5B6168","8A929B","chainmail hood","clank","Clinky hoodie.","armor,defense"},
 	{"coil","BKBLCG","Ukl",3,5,4,"9CA3AF","22D3EE","tight metal spiral compressed then launching upward","boing","Compressed anger. With a boing.","mechanical,bouncy"},
+	{"coiling viper","KICAKD","eN",6,7,2,"7A3CFF","E7D6FF","a serpent of blade light slithers round cover to its target","slash","It always finds a way around.","anime,sword,snake,breathing"},
 	{"coin","BMAAKJ","Uce",1,8,3,"D4A72C","F1C40F","shiny gold coin","chime","Flip it. Heads, you win.","treasure,shiny"},
 	{"coin flip","KKBAKB","ja",3,8,1,"FFC107","FFFFFF","spinning golden coin","ting","Heads you win. Tails you also win?","luck,chaos"},
 	{"coin shower","BHCNOJ","SP",3,6,3,"FFC83D","FFF4C2","ring of light raining gold coins","clink","Cha-ching! (Ouch.)","game,arcade,money"},
@@ -402,5 +403,4 @@ return {
 	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
 	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
 	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
-	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 }
