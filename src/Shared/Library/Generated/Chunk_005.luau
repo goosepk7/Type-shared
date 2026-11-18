@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cartographer","LMCJNA","hY",3,4,3,"78350F","FDE68A","scrolls, compass, quill","swish","Draws the map. Draws you lost.","explorer"},
+	{"cartoon","ALCJBG","UjkY",4,7,5,"FACC15","EF4444","rubbery bouncy character with white gloves and pie-cut eyes","boing","Runs off the cliff. Only falls when it looks down.","silly,art"},
+	{"cartoon box trap","BMCLII","cO",2,1,3,"C69C6D","8B5A2B","box propped on a stick with string","snap","Classic. Works on everyone.","trap,silly"},
+	{"cartoonist","LLCJNI","jh",3,4,3,"111827","FACC15","sketchbook, pen, ink splotches","scratch","Draws allies into existence.","art"},
+	{"cartwheel","KMBOKK","Dd",2,7,2,"F8BBD0","FFFFFF","cartwheeling motion arc","whee","Wheee! Totally on purpose.","silly,sport"},
+	{"cashew","IEAAKK","UeO",2,8,5,"EBD9A8","D8C08A","curved kidney-shaped nut","tok","A nut shaped like a comma.","edible,nut"},
 	{"cashier","LMCJNA","dO",3,5,3,"DC2626","F8FAFC","name tag, register, receipt roll","ding","Paper or plastic? Neither. Combat.","silly"},
 	{"cassata","IMBLKI","dSc",2,3,3,"F7F2EC","8DC63F","frosted cake with candied fruit","chomp","A Sicilian jewel box.","edible,sweet,dessert"},
 	{"cassava","IEBAKK","keO",3,7,6,"8A5A2A","F2EEDF","long bark-brown tuber","bonk","A potato that went to the tropics.","edible,vegetable"},
@@ -98,6 +104,7 @@ return {
 	{"chad","LHDJXA","GkfO",7,5,8,"1F2937","F2D0B4","ultra-jawed black-and-white bodybuilder, tiny smile","grunt","Yes.","meme,silly"},
 	{"chaffinch","AMAJDB","dA",1,7,1,"E8A07A","6A7A9A","pink-chested finch","tweet","Pink chest, blue cap.","bird,cute"},
 	{"chain","BKCLJK","HNO",2,4,7,"5B6168","8A929B","heavy linked iron chain","clank","Clink. You're not going anywhere.","tool"},
+	{"chain biter","AKCJ3G","DQf",6,8,6,"2E3138","F2EFE6","iron ball of teeth staked on a chain","chomp","Good boy. Terrible boy. Mostly teeth.","game,platformer,creature"},
 	{"chain bomb","CACGKF","EeVP",7,5,2,"24262A","5B6168","bombs linked by chain","boom","One goes, all go.","explosive"},
 	{"chain flail","CKCHtK","kfO",5,4,5,"5B6168","8A929B","twin spiked balls on chains","shing","Double trouble, spinning.","sharp"},
 	{"chain lightning","FDDAKB","UeLV",7,10,1,"FFF176","448AFF","bolt leaping target to target in bright arcs","crack","Shares the shock with all your friends.","electric"},
@@ -396,11 +403,4 @@ return {
 	{"clockmaker","LKCJNI","NO",3,3,4,"CA8A04","78350F","monocle, gears, tweezers","tick","Stops time. Briefly.","tools"},
 	{"clockwork dragon","AKEKAB","GKAg",8,6,8,"B45309","FACC15","brass dragon with exposed gears and steam vents","tick","Wind it up. Watch it fly.","robot,reptile,steampunk"},
 	{"clockwork engine","OKCM1I","Sh",3,4,6,"B58A3A","B8693D","stack of turning brass gears","tick","Tick tick whirr.","steampunk"},
-	{"clockwork knight","OKCJNA","GDf",5,4,7,"B45309","F59E0B","brass knight with a wind-up key in back","tick","Fights until it runs down. Wind it again.","robot,steampunk"},
-	{"clockwork owl","AKAJDB","AZ",2,7,4,"B45309","22D3EE","brass owl with glass eyes","tick","Watches everything. Ticks quietly.","robot,bird,steampunk"},
-	{"clogs","BMBONI","k",1,4,3,"C49A6C","7A4E2D","carved wooden shoes","swish","Clomp clomp clomp.","clothing"},
-	{"clone","KLCJNA","dV",3,5,2,"80DEEA","FFFFFF","exact glowing copy of the caster","pop","Two of you. Twice the trouble.","magic"},
-	{"cloning gun","OLBBwI","eVh",4,6,3,"F2F2EE","8BC34A","ray gun with double barrel","hum","Two of them? Uh oh.","scifi"},
-	{"cloning lab","EJCNII","SVh",4,1,6,"76FF03","37474F","glass tubes with floating figures","hum","Two of you. Three. Ten.","structure,future"},
-	{"cloning machine","OLCM1I","Vh",5,2,5,"F2F2EE","3FC1D9","two pods joined by tubes","hum","Two of everything. Including you.","scifi"},
 }

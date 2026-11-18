@@ -352,6 +352,7 @@ return {
 	{"beak","BMBAuB","fTb",3,8,4,"F5B041","E67E22","sharp orange beak pecking forward rapidly","tok","Peck peck peck. Mind your fries.","body,bird,sharp"},
 	{"beaked whale","ABEJEC","kIB",6,3,9,"6A6A70","C8C8CC","long beak, deep diver","whalesong","Dives deeper than any mammal.","mammal,aquatic,ocean,heavy"},
 	{"beam","FHCBKB","KTIe",6,10,1,"7DD3FC","FFFFFF","thick straight bar of blue-white energy with a bright core","whum","Charging... charging... FWOOOM.","scifi,light"},
+	{"beam me up","KHCOKI","Y",5,10,2,"BFE9FF","3A6CFF","your body dissolves into sparkling columns of light","warp","Please keep your atoms inside the beam.","scifi,tv,teleport"},
 	{"bean","IEAELB","jeP",2,6,1,"8A3A2A","C26A4A","small kidney-shaped bean","pitter","Magic in fairy tales. Gas in real life.","edible,grain"},
 	{"bean bag","BMCCGI","GN",1,1,4,"C0392B","C0392B","squishy blob seat","thud","Sink in. Never get up.","furniture,household"},
 	{"bean bag gun","CMBAwI","keO",2,7,3,"24262A","E67E22","wide barrel firing bean bags","thwip","Thwump. Ow.","ranged"},
@@ -402,5 +403,4 @@ return {
 	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
 	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
-	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 }

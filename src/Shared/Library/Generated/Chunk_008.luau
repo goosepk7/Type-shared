@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doormat","BMBL0I","N",1,1,2,"D2B48C","7A4E2D","bristly mat saying welcome","thud","Welcome. Now trip.","furniture,household"},
+	{"doorstop","BMALKI","O",1,1,4,"8E9196","7A4E2D","rubber wedge","thud","You shall not pass. The door, anyway.","household"},
+	{"doorway","EMCCoI","GNY",3,1,6,"8B5A2B","FDE68A","empty door frame with a WELCOME mat and a low beam","bonk","Mind your head. Too late.","household,building"},
+	{"dorayaki","IMBAKK","Uke",3,7,2,"C8803A","5A2A2A","two pancakes, red bean middle","whoosh","A pancake sandwich with a sweet heart.","edible"},
+	{"dork","LMBJNA","jeO",2,5,2,"60A5FA","F8FAFC","taped glasses, pocket protector, armful of comics","squeak","Um, actually, that is a common misconception.","silly,school"},
+	{"dormouse","AMAJAA","CdNb",1,6,1,"D8A060","F2E6D2","round sleepy mouse, fluffy tail","squeak","Sleeps half the year. Goals.","mammal,cute"},
+	{"doro wat","IABNGI","KF",4,4,2,"7A2A1E","C8302B","deep red chicken stew","sizzle","Red, spicy, and soul-warming.","edible,spicy"},
+	{"dosa","IMBHJI","kf",3,5,4,"E8B860","F2E8D0","huge thin crisp rolled crepe","bonk","A crepe the length of your arm.","edible,silly"},
 	{"dot","KMAELG","UjP",1,6,1,"EF4444","FFFFFF","bouncing red polka dots of different sizes","pop","Connect them. Too slow.","school,shape"},
 	{"double agent","LICJNA","jZb",4,7,3,"1F2937","DC2626","trench coat with two badges","whisper","Works for both sides. Mostly for snacks.","stealth"},
 	{"double axe","CKDHsK","kfV",7,4,6,"8A929B","6B4226","two-sided axe head","chop","Twice the axe, twice the drama.","medieval,sharp"},
@@ -395,12 +403,4 @@ return {
 	{"evil","KICDOJ","jiPh",6,5,3,"4C1D95","111827","purple-black smoke with red eyes and a curly moustache twirl","cackle","Mwahaha. Sorry. Reflex.","villain,spooky"},
 	{"evil eye","KIBAKB","jO",4,9,1,"4A148C","FF1744","single glowing eye glyph fixing on target","hiss","One look. Instantly regret everything.","spooky"},
 	{"evil laugh","KICFOB","ji",4,6,1,"4A148C","76FF03","dark rings with lightning flicker","mwahaha","Mwahahaha! Ahem.","spooky,silly,meme"},
-	{"evil mastermind","LICJNA","jhY",5,3,4,"1F2937","7C3AED","swivel chair, fluffy cat, monocle","cackle","Pets the cat. Explains the plan.","villain"},
-	{"evil queen","LICJNA","jMh",5,4,4,"111827","7C3AED","tall collar, dark crown, magic mirror","cackle","Mirror mirror on the wall: rude.","villain,royal"},
-	{"evil stepmother","LICJNA","jh",4,4,4,"111827","7C3AED","tall collar, sharp nails, glare","cackle","Makes you do all the chores.","folklore,villain"},
-	{"evil tree","NIECMI","GSfH",6,2,8,"3E2723","B71C1C","tree with glowing eyes and a scowling mouth","rustle","Hates trespassers. Everyone is a trespasser.","plant,tree,spooky"},
-	{"evil twin","LICJNA","jZ",4,6,4,"1F2937","DC2626","identical person but with goatee","cackle","Same face. Worse manners.","villain,silly"},
-	{"evocation","FLCAKB","Ee",5,8,1,"FF5722","7C4DFF","raw multicoloured energy bolt","whoom","Pure magical oomph.","magic"},
-	{"evolution","KGCOBA","WFfV",5,4,5,"22C55E","FDE047","line of shapes: fish, lizard, ape, human, robot, glowing","fanfare","Give it a few million years. Or one second.","science,gaming"},
-	{"ex","LICJNA","jiN",4,4,4,"4B5563","9CA3AF","person with a box of your stuff and folded arms","sigh","Still has your hoodie. Not giving it back.","silly"},
 }
