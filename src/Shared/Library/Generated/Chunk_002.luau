@@ -347,6 +347,7 @@ return {
 	{"battlefield","MEFNII","SNh",5,1,8,"6D4C41","9E9E9E","cratered mud, smoke, broken fences","rumble","Already full of craters. Add more.","place,terrain"},
 	{"battlements","EEDCII","GSe",3,1,8,"9E9E9E","616161","wall top with notched merlons","thud","The classic castle haircut.","structure,defense,ancient"},
 	{"battleship","DBFMHC","EkegB",9,3,10,"607D8B","37474F","long grey hull, triple gun turrets","boom","Fourteen cannons say hello.","vehicle,aquatic,danger"},
+	{"bauble ward","BCCIKI","GE",4,4,7,"B8243A","F3D27A","sealed in a giant frosted glass ornament","jingle","Fragile. Festive. Surprisingly bulletproof.","holiday,winter,shield"},
 	{"bay","MBENII","SN",2,1,7,"4FC3F7","E6C27A","curved sheltered stretch of coast","rumble","Calm water, sneaky ambush.","place,terrain"},
 	{"bay leaf","IGBOMI","WF",2,4,3,"5E7A3A","8AA86A","single oval dried leaf","crunch","Nobody knows what it does. Mysterious.","edible,vegetable,healthy,herb"},
 	{"bayonet","CKBHuK","fT",3,7,3,"8A929B","2C3539","spike blade on a rifle tip","shing","Sword with a part-time job.","medieval,sharp"},

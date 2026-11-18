@@ -21,6 +21,7 @@ return {
 	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
 	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
 	{"party bus","DMDKHL","Ddkcg",4,5,7,"7E57C2","FF4081","bus with flashing lights and music","music","Nobody can resist the party.","mechanical,vehicle,land,silly"},
+	{"party cannon","CMCOxB","Ddk",4,8,3,"FF4FA0","3EC6F0","striped confetti cannon blasts you across the field","pop","You are the confetti.","holiday,party,movement"},
 	{"party hat","BMAONI","d",1,6,1,"FF3EA5","D4A72C","pointy striped cardboard cone hat","squeak","You can't be sad in this hat.","party,silly"},
 	{"party horn","BMAFKI","jd",1,9,1,"D4A72C","C0392B","curly paper horn","honk","Pweeeeeeep!","party,silly"},
 	{"party popper","BMAFKI","deO",1,9,1,"D4A72C","FF3EA5","small cone with string pull","pop","POP! Streamers everywhere.","party"},

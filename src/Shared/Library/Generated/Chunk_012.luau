@@ -34,6 +34,7 @@ return {
 	{"grilled salmon","IGBOKI","F",2,5,3,"E8763A","F2D8C8","pink fillet with grill lines","crunch","Pink, flaky, and healthy.","edible,healthy"},
 	{"grim reaper","AIDJNJ","ifY",7,6,7,"0A0A0A","E5E7EB","black hooded robe, skeletal hand, scythe","whoosh","Just here for the paperwork.","undead,spooky"},
 	{"grime","FEBNGI","SNP",2,2,2,"4A4035","7A6A55","greasy grey-brown smear with fingerprints in it","squelch","Under the fridge since the dawn of time.","gross,sticky"},
+	{"grin gourd","BABGKF","KEQ",5,6,3,"E8731E","FFC93A","carved lantern gourd that rolls after you, then bursts","cackle","It's grinning because it knows something you don't.","holiday,halloween,explosive"},
 	{"grinder","OKCL1I","HV",6,3,7,"E67E22","8E9196","hopper funnel over spinning teeth","hum","Goes in whole. Comes out mulch.","mechanical"},
 	{"grison","AMBJAA","CfT",3,8,2,"3A3A3A","E8E8E8","grey weasel with black face","chatter","Looks like a tiny honey badger.","mammal,predator"},
 	{"grit","KECOKI","GF",2,4,7,"8D6E63","FFB74D","dusty determined glow","grunt","Too stubborn to fall.","support"},
