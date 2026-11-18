@@ -24,7 +24,7 @@ return {
 	{"itch","KJAAKB","jd",1,8,1,"C0CA33","FFFFFF","tiny wiggly itch lines","scritch","Can't stop scratching.","silly"},
 	{"itching powder","CMADOI","jd",1,6,1,"D2B48C","F2F2EE","puff of scratchy powder","thwip","Scratch. Scratch. SCRATCH.","prank,silly"},
 	{"ittan-momen","AFCJCB","AHN",3,8,2,"F8FAFC","E5E7EB","long strip of white cloth flying at night","whoosh","A scarf that wraps you up. Too tight.","yokai"},
-	{"ivory wyrm","KHEJPB","AQeN",9,7,6,"E9EEF6","5AA8FF","a pale armoured wyrm with swept wings and an azure throat","roar","Twelve seconds of being the coolest card in the deck.","anime,card game,dragon"},
+	{"ivory wyrm","KHEJPB","AQeN",9,7,6,"E9EEF6","F0AA3C","a pale armoured wyrm with swept wings and a sunfire throat","roar","Twelve seconds of a sky that breathes gold.","anime,card game,dragon"},
 	{"ivy","NGCLMI","GWSHN",2,1,4,"1B5E20","43A047","climbing glossy heart leaves","rustle","Climbs walls. Climbs enemies.","plant"},
 	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
 	{"jab","KMBAKB","DfO",3,10,1,"FCA5A5","FFFFFF","quick straight glove punch with a tiny impact star","pow","Quick. Rude. Repeatable.","melee,sport"},

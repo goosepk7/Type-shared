@@ -130,7 +130,7 @@ return {
 	{"fox kit","AMAJAA","jfb",1,7,2,"E07A3A","FFF4E6","fluffy orange baby fox","yip","Tiny. Fluffy. Already scheming.","mammal,wild,cute"},
 	{"fox ninja","AIBJAA","ZTY",3,9,2,"EA580C","111827","fox in a black ninja mask","whoosh","Sneaky fox. Sneakier ninja.","stealth"},
 	{"foxfire","FGBGKJ","jScR",3,5,2,"7DF9C3","E8FFF6","bobbing pale-green flame wisps","chime","Follow the pretty light. Do not.","fire,spooky"},
-	{"foxfire mantle","KADOKI","KDkf",8,9,3,"E2461A","FFB846","a blazing fox-spirit cloak with flame tails and chakra claws","roar","Borrowed fire. Very fluffy.","anime,ninja,fire,transformation"},
+	{"foxfire mantle","KADOKI","KDkf",8,9,3,"469AFF","FFD278","an azure foxfire cloak with spirit tails and claws","roar","Borrowed fire. Very fluffy.","anime,ninja,fire,transformation"},
 	{"foxglove","NJBNMI","dFSM",3,1,2,"AB47BC","FCE4EC","tall spike of spotted bell blooms","rustle","Pretty. Also poisonous. Mostly poisonous.","plant,flower,spooky"},
 	{"foxtail","NGANMI","dFSN",1,1,1,"C0CA33","9E9D24","fuzzy grass heads like little tails","rustle","Sticks to socks. And enemies.","plant,flower"},
 	{"foxtail lily","NACNMI","dFS",2,1,2,"FF9800","FFE0B2","towering bottlebrush flower spike","rustle","A candle made of flowers.","plant,flower"},

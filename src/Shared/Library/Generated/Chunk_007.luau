@@ -339,7 +339,7 @@ return {
 	{"diabolo","BMAAKK","Ue",1,8,2,"C0392B","F2F2EE","spool spun on a string","bonk","Spin. Toss. Catch. Sometimes.","sport"},
 	{"diamond","BMAA4J","Tea",3,8,10,"F2F2EE","BFE6F2","brilliant cut clear diamond","chime","Hardest thing around. Throws hard too.","treasure,shiny"},
 	{"diamond dust","GCCDOJ","jJS",4,4,2,"E1F5FE","FFFFFF","glittering ice crystals hanging in the air","tinkle","Pretty sparkles. Very cold sparkles.","frozen,cute"},
-	{"diamond mend","KHCOVJ","F",4,6,2,"F07AB8","CDEBFF","a crystal spirit pieces you and your walls back together","chime","Broken things want to be whole. Including you.","anime,stand,heal"},
+	{"diamond mend","KHCOVJ","F",4,6,2,"6EE2FF","E2ECFA","a crystal spirit pieces you and your walls back together","chime","Broken things want to be whole. Including you.","anime,stand,heal"},
 	{"diamond sword","CMCHrK","kfT",8,6,9,"F2F2EE","3FC1D9","blocky gleaming crystal blade","shing","The ultimate crafted sword.","shiny,sharp"},
 	{"diamond wall","ELDCII","GSa",5,1,10,"E0F7FA","80DEEA","sparkling wall of cut diamonds","thud","Hardest wall money cannot buy.","structure,defense,heavy"},
 	{"diamondback rattlesnake","AMCJCD","fMNO",5,6,3,"B8986A","3A2A1A","big diamond-patterned rattler","rattle","Shakes its rattle. Means it.","reptile,venomous"},

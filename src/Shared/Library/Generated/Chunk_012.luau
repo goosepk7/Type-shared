@@ -77,7 +77,7 @@ return {
 	{"grouper","ABDJEC","DfHB",5,7,4,"6A5A44","C8B48A","huge lips, chunky body","splash","Swallows fish whole. Big lips energy.","fish,aquatic"},
 	{"grouse","AMBJDA","dfO",2,4,2,"8A6A4A","F2F2F0","plump ground bird, feathered feet","cluck","Explodes out of bushes. Scares hikers.","bird,farm"},
 	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
-	{"grove keeper","AGEJXA","klfIh",8,5,5,"808E7C","96C45A","a giant fluffy forest spirit under a leaf umbrella","roar","Waits at the bus stop. Roars at the rude.","anime,forest,summon,spirit"},
+	{"grove keeper","AGEJXA","klfIh",8,5,5,"684C36","FFB254","a hulking moss-and-bark warden with lantern antlers","roar","Sleeps as a stump. Wakes as a wall of roots.","anime,forest,summon,guardian"},
 	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
 	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
 	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},

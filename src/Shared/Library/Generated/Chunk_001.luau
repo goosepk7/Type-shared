@@ -355,7 +355,7 @@ return {
 	{"arena","MEENII","GSh",4,1,9,"C9A55A","8D6E63","sandy round pit ringed by walls","crowd","Two enter. One wins.","place,terrain"},
 	{"arepa","IMBAKK","Uke",3,7,2,"F2E2B0","C8A070","thick grilled corn cake, filled","whoosh","A corn pocket of delicious.","edible"},
 	{"ares","LAEJYA","KDkf",8,7,8,"991B1B","B45309","bronze-armoured giant, red crest helm, spear, round shield","roar","Started this fight. Starts all of them.","mythical,greek,warrior"},
-	{"argent fencer","CKCOYJ","fe",6,10,2,"C9D3E0","7FD8FF","a silver knight spirit sheds its armour and fences","slash","Lighter armour, faster blade. Simple maths.","anime,stand,sword"},
+	{"argent fencer","CKCOYJ","fe",6,10,2,"464884","FFBEA8","a plumed cavalier spirit bursts from a quill cocoon","slash","Feathers off, blade out. Simple maths.","anime,stand,sword"},
 	{"argentavis","AMDJDB","DAlfT",6,9,3,"3A2A1E","C8A07A","colossal ancient vulture bird","screech","Wings as wide as a small plane.","bird,predator,extinct"},
 	{"argentinosaurus","AMFJAA","kIO",9,2,10,"7A6A5A","B8A890","colossal long-necked titan","rumble","Heaviest land animal ever. Ground shakes.","dinosaur,extinct,reptile,heavy,danger"},
 	{"argonaut","ABBJSC","jZHB",2,6,3,"F7F2E8","C8B8A0","papery white shell","squelch","Builds its own shell boat.","aquatic,ocean,smart"},

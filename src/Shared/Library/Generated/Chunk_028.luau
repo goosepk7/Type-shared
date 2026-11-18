@@ -379,7 +379,7 @@ return {
 	{"whirlwind","FFCN5K","jlH",5,7,3,"9DBCCB","EAF2F6","spinning column of air and leaves","howl","Spin to win. Mostly to spin.","air"},
 	{"whisk","BMAHJK","jf",1,7,2,"8A929B","C9CED4","wire loops on a handle","clang","Whisks enemies into a froth.","kitchen,household"},
 	{"whisker","BMAOLB","QTe",1,8,1,"F5F5F5","D9D9D9","fan of long white twitching whiskers","twang","Senses danger. Is the danger.","body,cute,pet"},
-	{"whiskerway coach","AFEJXA","DAkT",7,10,2,"E2A24C","FFE08A","a twelve-legged tabby coach with lantern eyes","meow","Twelve legs, one bench, no timetable.","anime,cat,summon,ride"},
+	{"whiskerway coach","AFEJXA","DAkT",7,10,2,"5C6884","FFC46E","a long-legged lantern strider carrying a lacquered howdah","growl","One howdah, one lantern, no timetable.","anime,beast,summon,ride"},
 	{"whisper","KIAFOB","j",1,5,1,"B39DDB","FFFFFF","faint drifting ghostly words","psst","Psst. Your shoe's untied.","stealth,spooky"},
 	{"whispering willow","NGECMI","GjSN",4,1,8,"7E57C2","9CCC65","willow whose leaves murmur secrets","chime","It knows things. Too many things.","plant,magic,mythical"},
 	{"whistle","BFAFKF","jO",1,9,2,"C9CED4","24262A","small whistle on lanyard","whistle","FWEEEEET! Foul!","sport,loud"},
