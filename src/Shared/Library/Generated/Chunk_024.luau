@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sluagh","AIDJLB","iAP",6,8,3,"1F2937","94A3B8","flock of crow-like shadow spirits","screech","A flock of ghosts flying west.","ghost,spooky,swarm"},
+	{"sludge","FJCF6F","MN",4,3,4,"5C6B2E","98A65A","thick murky green-brown flow","squelch","Slow, gross and coming for you.","toxic,silly"},
+	{"slug","AMAJGI","SN",1,1,2,"8A7A4A","C8B87A","slimy shell-less snail, eye stalks","squelch","A snail that moved out.","mollusk,aquatic,garden"},
+	{"slurp","KBBB5B","iHN",3,6,1,"F4D58D","FFFFFF","noodle being sucked up at speed, broth droplets","slurp","Rude at dinner. Devastating in battle.","silly,edible"},
 	{"slurpee","ICBNGI","JN",3,3,2,"E8434F","4FA3E8","cup of colorful frozen slush","crackle","Brain freeze on demand.","edible,frozen,sweet"},
 	{"slushie machine","OCCM1I","JN",2,2,5,"47D7E8","C0392B","tank of spinning icy drink","clang","Brain freeze, weaponised.","kitchen,household"},
 	{"smack","KMBAKB","kf",3,9,1,"FF8A80","FFFFFF","giant cartoon hand swat","smack","Rude, but effective.","silly"},
@@ -399,8 +403,4 @@ return {
 	{"squall","FFCFOB","kIP",5,8,2,"6F8796","CBD8E0","sudden dark rain-wind burst","howl","Five seconds of pure chaos.","air,storm"},
 	{"square","KEBCnI","GkO",3,2,6,"EF4444","FFFFFF","flat red square stamping down, four sharp corners","thunk","Four sides. All of them against you.","school,shape"},
 	{"squash","IGBGKF","DkI",4,5,6,"E8A33A","5E7A2B","bulbous yellow neck squash","rumble","Its name is a battle plan.","edible,heavy"},
-	{"squash vine","NGCNMI","SN",2,1,4,"2E7D32","FFB300","sprawling vine with chunky gourds","rustle","Gourds everywhere. Trip hazard.","plant,crop,silly"},
-	{"squeaky mallet","CMCHtK","dfO",1,6,2,"C0392B","F2F2EE","huge squeaky rubber hammer","boing","SQUEAK. Ouch? Not really.","silly"},
-	{"squeaky toy","BMAHJK","jdf",1,7,2,"F1C40F","C0392B","rubber toy that squeaks","squeak","SQUEAK. SQUEAK. SQUEAK.","toy"},
-	{"squeal","KMAFOB","jO",2,9,1,"F8BBD0","FFFFFF","high-pitched pink ring","eee","EEEEE! Ears ringing.","silly,loud"},
 }

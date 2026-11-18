@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"raccoon","AMBJAA","dfb",2,5,3,"7A7670","1E1C1A","bandit mask, ringed tail, tiny hands","squeak","Trash panda. Night shift.","mammal,wild,nocturnal,silly"},
+	{"raccoon dog","AMBJAA","jfb",3,7,2,"6E5E4E","2A2420","round fluffy body, raccoon mask","yip","Not a raccoon. Not quite a dog.","mammal,wild"},
+	{"raccoon kit","AMAJAA","Cfb",1,5,3,"8A8680","2A2826","tiny masked fluffball","squeak","Already stealing. Just smaller things.","mammal,wild"},
+	{"race","KFCO6B","DkI",4,10,2,"111827","F8FAFC","chequered flag whipping and speed lines down a straight","vroom","Last one there is a rotten summon.","sport,speed"},
 	{"race car","DMCKHL","Dkg",5,10,4,"E10600","F5F5F5","low wedge body, rear wing, fat slick tyres","engine","Zero to rude in 2.4 seconds.","mechanical,vehicle,land,sport"},
 	{"race car driver","LACJNL","DE",4,10,4,"DC2626","F8FAFC","racing suit, helmet, checkered flag","vroom","Zero to sixty in a typo.","sport,vehicle"},
 	{"race track","MMENII","DS",3,1,6,"424242","E53935","looping asphalt with curbs and flags","engine","Everyone goes faster here.","place,sport"},
@@ -399,8 +403,4 @@ return {
 	{"rook","AIAJDB","dA",1,7,1,"1E1E24","C8C8CC","black crow with pale face","tweet","Builds rookery cities. Smart.","bird,cute,smart"},
 	{"room","MMDLlI","jSN",4,1,6,"93C5FD","F9A8D4","cutaway bedroom box: bed, posters, clothes mountain","thud","Clean it. No, really. There is a smell.","household,silly"},
 	{"roommate","LMCJNA","SNb",3,3,4,"84CC16","A3A3A3","person in pajamas eating your labelled leftovers","chomp","Ate your food. Left one bite. As a message.","silly"},
-	{"rooster","AMBJDA","dfO",2,4,2,"B8401E","1E3A2A","proud tail feathers, big red comb","crow","Alarm clock that cannot be snoozed.","bird,farm"},
-	{"root","FGCLMI","NO",4,3,5,"5D4037","81C784","thick roots coiling around feet","creak","You are not going anywhere.","plant"},
-	{"root beer","IBBFKI","EkI",3,7,1,"4A2416","F2E2C8","frothy brown mug","fizz","Frothy and foamy.","edible,drink,fizzy"},
-	{"root snare","NECLMI","CSHNO",4,2,5,"6D4C41","8D6E63","gnarled roots bursting from the ground","rustle","The ground grabs your ankles.","plant"},
 }

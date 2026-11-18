@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ironskin","KKCOKI","Ga",2,2,10,"90A4AE","ECEFF1","shiny metal sheen over the caster","clang","Clang clang. Ow, my fist.","heavy,defence"},
+	{"ironwood","NKECMI","GWkS",5,1,10,"455A64","689F38","dark metallic-looking trunk","rustle","Tougher than an axe.","plant,tree,heavy"},
 	{"irrigation canal","MBDLII","SIN",2,1,7,"4FC3F7","8D6E63","straight channel of water between banks","thud","Water where it is needed. Mostly on enemies.","structure,farm"},
 	{"island","MBENII","GFSN",3,1,8,"E6C27A","43A047","sandy island with palm trees","rumble","Surrounded by water. And sharks, probably.","place,terrain,aquatic"},
 	{"isopod","ABCJRA","GfT",3,4,7,"B8B0A0","E8E0D0","huge armored deep-sea pill bug","clack","A pill bug the size of a cat.","crustacean,aquatic,armored,deepsea"},
@@ -401,7 +403,4 @@ return {
 	{"lantern shark","AHBJEC","DfTB",2,8,6,"3A3A44","8AE8F0","tiny glowing shark","chomp","A shark that glows in the dark.","fish,aquatic,ocean,predator,deepsea"},
 	{"lanternfish","AHAJEC","dcPB",1,6,1,"3A4250","6AE8F0","small dark fish dotted with lights","splash","Carries its own fairy lights.","fish,aquatic"},
 	{"lanternfly","AMAJFB","dAP",1,6,1,"E8301E","1E1E1E","spotted wings with red underwings","buzz","Pretty, but munches everything.","insect"},
-	{"laptop","BDBIyI","Gd",1,4,3,"C9CED4","24262A","folding computer with screen","beep","Have you tried turning it off and on?","tech,office"},
-	{"larb","IGBOKI","F",2,5,3,"C8A070","7DBE3A","minced meat herb salad","crunch","Zesty minced salad.","edible,healthy"},
-	{"larch","NGDCMI","GWkS",3,1,7,"795548","FFC107","conifer that turns gold and drops needles","rustle","A pine tree that changes its mind.","plant,tree"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"suya","IABHJI","Kf",3,5,4,"8A3A1E","C8602B","spicy skewered beef","bonk","Spicy grilled sticks of beef.","edible,silly"},
+	{"swag","KHBONA","daO",3,5,3,"FACC15","111827","strutting figure in shades, gold chain, cap sideways","ding","Too cool to dodge. Does not need to.","meme,cool"},
+	{"swallow","AMAJDB","dA",1,9,1,"2A3A6A","E8A07A","forked tail, swept wings","tweet","Swoops like a fighter pilot.","bird,cute"},
+	{"swallowtail","AMAJFB","jdA",1,5,1,"F2D82A","1E1E1E","yellow wings with tail points","flutter","Has little tail streamers. Fancy.","insect,cute"},
 	{"swamp","MJENII","SMN",4,1,7,"556B2F","33691E","murky green water, reeds, gnarled trees","bubble","Squelch. Squelch. You are stuck now.","place,terrain"},
 	{"swamp cypress","NBDCMI","GWkSN",3,1,7,"795548","9E9D24","tree standing in water with knobby knees","rustle","Stands in the swamp. Kneels to nobody.","plant,tree"},
 	{"swamp gas","FJCDOJ","jSM",4,3,2,"9E9D24","C5E1A5","glowing greenish swamp fumes","bubble","Smells like a swamp burped.","toxic"},
@@ -399,8 +403,4 @@ return {
 	{"toadfish","ABAJEC","dB",1,6,1,"8A7A5A","C8B88A","warty fish that hums","hum","Hums so loud it keeps boats awake.","fish,aquatic"},
 	{"toast","IABAKK","UKe",3,7,2,"C8823A","F2D08A","golden square slice, browned edges","whoosh","Bread that has been through something.","edible"},
 	{"toast and jam","IMBLGI","FN",2,3,3,"C8823A","B0203E","toast with red jam spread","gloop","Jammy toast. Sticky fingers.","edible,sticky,breakfast"},
-	{"toast tower","IMDCII","Gk",4,2,6,"C8823A","F2D08A","tall stack of toast slices","thud","Stacked carbs for maximum defense.","edible,giant,silly"},
-	{"toasted marshmallow","IABLGG","UKN",2,3,3,"C8803A","F7F4F0","golden-brown puff on a stick","wobble","Crispy outside, molten inside.","edible,wobbly,sweet"},
-	{"toaster","BABMII","Kle",2,3,4,"DDE3E8","24262A","chrome box with two slots","clang","Pop! Toast at 100 miles per hour.","kitchen,household"},
-	{"toaster oven","BABMII","K",2,1,5,"C9CED4","24262A","small box oven with dial","clang","Toaster's bigger, braver cousin.","kitchen,household"},
 }

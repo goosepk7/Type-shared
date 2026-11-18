@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lunch","IMBL2I","dFc",2,1,2,"B45309","84CC16","brown paper bag with a sandwich, apple and juice box","crunch","Trade you my apple for your cookies.","edible,school"},
+	{"lunch lady","LMCJNA","ceN",3,4,5,"F8FAFC","FDE68A","hairnet, ladle, mystery stew","splat","Slops mystery meat. It moves.","food,silly"},
+	{"lunch money","BMAAJK","ce",1,7,1,"2E8B57","C9CED4","few coins and a note","tap","Tempting.","school"},
 	{"lunch pail","BKAIyI","G",1,6,3,"C9CED4","24262A","old tin lunch pail","thud","Classic grub armour.","container"},
 	{"lunch rush","IMAELB","DP",2,7,1,"D72B2B","F2C24A","stampede of trays","pitter","Everyone, everywhere, all at lunch.","edible,sweet"},
 	{"lunch thief","LIBJNA","Zb",2,9,2,"1F2937","FACC15","kid with stuffed cheeks and paper bag","whoosh","Your sandwich? Gone.","school,silly"},
@@ -400,7 +403,4 @@ return {
 	{"minaret","EMDMII","GSe",3,1,7,"F5F5F5","1E88E5","slim tower with balcony and onion top","thud","Tall and elegant. Great view.","structure,defense,tower"},
 	{"mince pie","IMBAKK","Uke",3,7,2,"D9A04A","6B3A1E","small star-topped pie","whoosh","A tiny festive pie.","edible,holiday"},
 	{"mind","KLCF6B","jlHO",5,6,2,"C084FC","F0ABFC","pink ripple rings spreading from a glowing third eye","hum","Mind over matter. Matter is not happy about it.","magic,psychic"},
-	{"mind beam","FLCBKI","jeO",5,8,1,"E040FB","F8BBD0","wavy pink brainwave beam","hum","Brain to brain. Hurts.","psychic"},
-	{"mind blast","FLCFOB","jkO",5,9,1,"E040FB","FFCCFF","pink rippling brainwave rings","hum","Thinks very hard. At you.","psychic"},
-	{"mind control","KLCAKB","jb",5,6,1,"D500F9","F8BBD0","wavy pink strings linking to target","hum","You will now dance. Thank you.","psychic"},
 }

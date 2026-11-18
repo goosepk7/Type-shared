@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mind beam","FLCBKI","jeO",5,8,1,"E040FB","F8BBD0","wavy pink brainwave beam","hum","Brain to brain. Hurts.","psychic"},
+	{"mind blast","FLCFOB","jkO",5,9,1,"E040FB","FFCCFF","pink rippling brainwave rings","hum","Thinks very hard. At you.","psychic"},
+	{"mind control","KLCAKB","jb",5,6,1,"D500F9","F8BBD0","wavy pink strings linking to target","hum","You will now dance. Thank you.","psychic"},
 	{"mind control alien","ALCJNE","jlO",5,4,3,"A855F7","F0ABFC","alien with glowing forehead and spiral eyes","hum","Look into my eyes. You want to lose.","alien,magic"},
 	{"mind control ray","OLBBwI","je",5,6,3,"A66BDB","8BC34A","spiral-dish ray gun","hum","You are getting very... confused.","scifi"},
 	{"mind grip","KLCAKJ","leO",6,8,3,"C9A8FF","7A4FE0","a glowing psychic grip lifts the target and slams them down","hum","Hold still. Now fall.","hero,movie,psychic"},
@@ -400,7 +403,4 @@ return {
 	{"nematode","AMAJTD","CP",1,3,1,"F2EEE0","C8C0B0","tiny clear wriggly worm","squelch","There are trillions of us. Hi.","bug"},
 	{"nemean lion","AEDJAA","GDkf",7,7,9,"CA8A04","FEF08A","massive lion, gleaming impervious hide","roar","Fur so tough swords just bounce.","mythical,heavy"},
 	{"nemesis","LICJNA","jQf",6,6,5,"111827","DC2626","dark mirror of you with a smirk","cackle","Always one step behind. Or ahead.","villain"},
-	{"neon","FDBNOI","jc",2,5,2,"FF4081","00E5FF","glowing pink-blue neon tubes on ground","buzz","Bright. Buzzy. Very arcade.","electric"},
-	{"neon sign","BHCB1I","cO",2,1,3,"FF3EA5","3FC1D9","glowing tube letters","beep","OPEN. For business. For battle.","tech"},
-	{"nephew","LMBJNA","UDd",2,7,3,"10B981","F2D0B4","small boy with a toy dinosaur and sticky hands","giggle","Why? Why? But why? Why though?","family,cute"},
 }

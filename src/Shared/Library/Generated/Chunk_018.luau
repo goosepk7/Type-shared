@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"neon","FDBNOI","jc",2,5,2,"FF4081","00E5FF","glowing pink-blue neon tubes on ground","buzz","Bright. Buzzy. Very arcade.","electric"},
+	{"neon sign","BHCB1I","cO",2,1,3,"FF3EA5","3FC1D9","glowing tube letters","beep","OPEN. For business. For battle.","tech"},
+	{"nephew","LMBJNA","UDd",2,7,3,"10B981","F2D0B4","small boy with a toy dinosaur and sticky hands","giggle","Why? Why? But why? Why though?","family,cute"},
 	{"neptune","MCFGKJ","JkIe",8,2,10,"1E5BB8","4FC3F7","deep blue sphere, white streaky clouds","rumble","Windiest planet. Breezy is an understatement.","space"},
 	{"nerd","LLCJNA","jeh",3,4,3,"0EA5E9","F8FAFC","thick glasses, pocket protector, calculator","ding","Calculated your weakness. In seconds.","school,meme"},
 	{"nerve","KDBBCB","LPO",4,9,1,"FFE45E","FFFFFF","jagged yellow nerve line crackling with sparks","zap","You are getting on it. The last one.","body,science,electric"},
@@ -400,7 +403,4 @@ return {
 	{"parang","CKCHrK","fV",4,7,4,"8A929B","8B5A2B","heavy chopping blade","shing","Jungle-ready.","sharp,ancient"},
 	{"parasaurolophus","AMDJAA","dkO",5,5,6,"6A8A4A","E8A03A","long tube head crest","honk","Has a trumpet on its head. Honk!","dinosaur,extinct,reptile"},
 	{"parasite","AJAJTD","iQZb",3,6,1,"B45309","FCA5A5","wriggly pale clingy worm with a sucker mouth","slurp","Moves in. Eats your snacks. Never leaves.","science,gross"},
-	{"parasol","BHCIyK","G",1,4,3,"FF3EA5","F2F2EE","wide striped sun canopy","clank","Shade, but tactical.","summer,defense"},
-	{"parasol mushroom","NGBLMI","GS",2,1,3,"F5E6CA","8D6E63","tall mushroom with a wide shaggy cap","poof","Carries its own umbrella.","plant,fungus"},
-	{"paratha","IMBAKK","Uke",3,7,2,"E0B070","B8803A","flaky layered flatbread","whoosh","Layers upon layers upon layers.","edible"},
 }

@@ -403,5 +403,4 @@ return {
 	{"energy net","CDCAJI","eLO",3,8,2,"6EE6FF","D7FAFF","a crackling cyan net that spins open and wraps the target","zap","Caught you. For a second.","scifi"},
 	{"energy wall","ELDCII","GSaL",4,1,6,"40C4FF","E1F5FE","shimmering glowing hex panels","hum","Hums ominously. Blocks everything.","future,magic"},
 	{"engine","OACM1I","KEkI",5,1,6,"4B5563","EF4444","chunky revving engine block, shaking, pipes blasting flame","rev","VROOM. Just the vroom. No car.","mechanical,loud"},
-	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
 }

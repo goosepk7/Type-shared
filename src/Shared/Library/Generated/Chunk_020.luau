@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plesiosaurus","ABDJEC","DfHB",6,6,7,"4A6A7A","D8E0E4","long neck, four flippers","roar","The original lake monster look.","extinct,reptile,aquatic,ocean"},
+	{"pliers","JKAHJK","fH",2,6,5,"C0392B","8A929B","two-handle pinching jaws","clank","Grabs things you can't.","tool"},
+	{"pliosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","A8B0B8","huge-headed short neck sea reptile","roar","All jaws. Little neck.","extinct,reptile,aquatic,ocean"},
+	{"plot armor","KHCOKI","G",2,5,9,"FFD54F","FFFFFF","sparkling golden script around caster","ding","The hero never goes down this early.","meme,defence"},
 	{"plot hole","KLCLII","HY",5,5,3,"212121","7C4DFF","glowing hole in reality's story","whum","That makes no sense. Down you go.","silly,meme"},
 	{"plot twist","KLCNOI","jVY",5,6,2,"7C4DFF","FFD54F","swirling spotlight and question marks","dun","Nobody saw that coming.","chaos,meme"},
 	{"ploughman's lunch","IGBOKI","F",2,5,3,"F2C24A","C8904A","plate of bread, cheese, pickle","crunch","A farmer's lunch. Simple and strong.","edible,healthy"},
@@ -399,8 +403,4 @@ return {
 	{"rabbit","AMBJAG","UCdV",2,6,1,"C8B8A8","F7F4EE","long ears, fluffy cotton tail, big feet","thump","Hops. Multiplies. Repeat.","mammal,cute"},
 	{"rabbit's foot","BMAOKJ","F",1,5,1,"F2F2EE","F06292","fluffy keychain charm","boing","Lucky for you.","silly"},
 	{"rabbitfish","ABAJEC","dMB",1,6,1,"E8C82A","3A6AE8","rabbit-faced reef fish","splash","Has a bunny face. And spines.","fish,aquatic"},
-	{"raccoon","AMBJAA","dfb",2,5,3,"7A7670","1E1C1A","bandit mask, ringed tail, tiny hands","squeak","Trash panda. Night shift.","mammal,wild,nocturnal,silly"},
-	{"raccoon dog","AMBJAA","jfb",3,7,2,"6E5E4E","2A2420","round fluffy body, raccoon mask","yip","Not a raccoon. Not quite a dog.","mammal,wild"},
-	{"raccoon kit","AMAJAA","Cfb",1,5,3,"8A8680","2A2826","tiny masked fluffball","squeak","Already stealing. Just smaller things.","mammal,wild"},
-	{"race","KFCO6B","DkI",4,10,2,"111827","F8FAFC","chequered flag whipping and speed lines down a straight","vroom","Last one there is a rotten summon.","sport,speed"},
 }

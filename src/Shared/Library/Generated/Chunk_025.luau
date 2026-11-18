@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"squash vine","NGCNMI","SN",2,1,4,"2E7D32","FFB300","sprawling vine with chunky gourds","rustle","Gourds everywhere. Trip hazard.","plant,crop,silly"},
+	{"squeaky mallet","CMCHtK","dfO",1,6,2,"C0392B","F2F2EE","huge squeaky rubber hammer","boing","SQUEAK. Ouch? Not really.","silly"},
+	{"squeaky toy","BMAHJK","jdf",1,7,2,"F1C40F","C0392B","rubber toy that squeaks","squeak","SQUEAK. SQUEAK. SQUEAK.","toy"},
+	{"squeal","KMAFOB","jO",2,9,1,"F8BBD0","FFFFFF","high-pitched pink ring","eee","EEEEE! Ears ringing.","silly,loud"},
 	{"squeegee","BMBHJK","fI",1,7,2,"24262A","F1C40F","rubber blade on handle","clank","Swoosh. Spotless.","cleaning"},
 	{"squeeze","KMCLII","O",4,5,3,"F48FB1","FFFFFF","giant glowing hand squeeze","squeak","A very firm hug.","silly"},
 	{"squid","ABCJSC","jZHeB",4,6,3,"E8B0A0","D8584A","long torpedo body, ten arms, fins","squelch","Squirts ink and leaves. Bye!","aquatic,ocean,smart"},
@@ -399,8 +403,4 @@ return {
 	{"suspenders","BMAANI","Ue",1,7,2,"C0392B","B58A3A","stretchy straps with clips","swish","Twang!","clothing"},
 	{"suspense","KLCNOI","NO",4,2,3,"311B92","FFFFFF","everything hanging in tense slow motion","dun","Wait for it... wait for it...","silly"},
 	{"suv","DMCKHL","Dkg",5,7,7,"37474F","B0BEC5","tall boxy car, roof rails","engine","Climbs kerbs. Climbs enemies.","mechanical,vehicle,land"},
-	{"suya","IABHJI","Kf",3,5,4,"8A3A1E","C8602B","spicy skewered beef","bonk","Spicy grilled sticks of beef.","edible,silly"},
-	{"swag","KHBONA","daO",3,5,3,"FACC15","111827","strutting figure in shades, gold chain, cap sideways","ding","Too cool to dodge. Does not need to.","meme,cool"},
-	{"swallow","AMAJDB","dA",1,9,1,"2A3A6A","E8A07A","forked tail, swept wings","tweet","Swoops like a fighter pilot.","bird,cute"},
-	{"swallowtail","AMAJFB","jdA",1,5,1,"F2D82A","1E1E1E","yellow wings with tail points","flutter","Has little tail streamers. Fancy.","insect,cute"},
 }

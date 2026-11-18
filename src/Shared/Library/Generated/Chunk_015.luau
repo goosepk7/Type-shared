@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laptop","BDBIyI","Gd",1,4,3,"C9CED4","24262A","folding computer with screen","beep","Have you tried turning it off and on?","tech,office"},
+	{"larb","IGBOKI","F",2,5,3,"C8A070","7DBE3A","minced meat herb salad","crunch","Zesty minced salad.","edible,healthy"},
+	{"larch","NGDCMI","GWkS",3,1,7,"795548","FFC107","conifer that turns gold and drops needles","rustle","A pine tree that changes its mind.","plant,tree"},
 	{"lark","AMAJDB","dA",1,7,1,"A88A6A","E8D8C0","streaky brown bird, crest","tweet","Sings while climbing to the sky.","bird,cute"},
 	{"larva","AMAJTD","CWP",1,3,1,"F2E8D0","C8B07A","soft squishy baby bug","squelch","Baby bug. Hungry bug.","bug"},
 	{"lasagna","IMCCII","GFc",3,2,6,"D8602B","F2D08A","layered slab, cheese, red sauce","thud","Layers upon layers of cozy defense.","edible,giant"},
@@ -400,7 +403,4 @@ return {
 	{"lunar rover","DMCKHL","UDkg",4,4,6,"D9D9D9","C9A227","open frame, mesh wheels, dish antenna","engine","One small drive for a player.","mechanical,vehicle,land,space"},
 	{"lunar strike","FHDBKI","KO",7,7,1,"E8EAF6","9FA8DA","pale silver pillar slamming down","chime","The moon has an opinion.","space"},
 	{"lunar wolf","AHCJAA","Dfh",5,8,4,"E5E7EB","818CF8","silver wolf glowing with moonlight","howl","Howls at itself.","cosmic,canine"},
-	{"lunch","IMBL2I","dFc",2,1,2,"B45309","84CC16","brown paper bag with a sandwich, apple and juice box","crunch","Trade you my apple for your cookies.","edible,school"},
-	{"lunch lady","LMCJNA","ceN",3,4,5,"F8FAFC","FDE68A","hairnet, ladle, mystery stew","splat","Slops mystery meat. It moves.","food,silly"},
-	{"lunch money","BMAAJK","ce",1,7,1,"2E8B57","C9CED4","few coins and a note","tap","Tempting.","school"},
 }

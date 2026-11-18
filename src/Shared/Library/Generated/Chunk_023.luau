@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sentinel","LHDMYI","GQeO",6,2,8,"94A3B8","FCD34D","tall still guardian with a spear and one glowing eye slit","hum","Has not blinked since the last update.","defense,ancient"},
+	{"sentinel orb","OHBJKE","GRh",1,3,7,"46DCFF","B0BAC8","a ringed sentry orb circling you that zaps shots away","ping","Your personal bullet bouncer.","scifi,robot,defense"},
+	{"sentry","OKCMWI","GQe",5,1,6,"6B7280","EF4444","tripod gun post with a red scanning eye and beeping light","beep","Halt. Who goes there? Never mind. Pew.","defense,mechanical,robot"},
+	{"sentry tower","EEDMII","GSeO",4,1,7,"616161","FFB300","tall tower with a sweeping searchlight","thud","Spots you. Points. Shoots.","structure,defense,tower"},
 	{"seraph","AHDJDB","KAFO",7,6,6,"FDE047","FB923C","six blazing wings around a radiant core","chime","All wings. All light. All the time.","holy,fire"},
 	{"seraph knight","AHCJNB","AFf",6,6,7,"F8FAFC","FACC15","winged knight in gold armor","clang","Heaven's bodyguard.","holy,warrior"},
 	{"serendipity","KHBOKJ","Fa",2,6,2,"43A047","FFF59D","surprising sparkle of clovers","ding","Oops. That went perfectly.","luck"},
@@ -399,8 +403,4 @@ return {
 	{"slow tower","ELDMII","GSeN",3,1,6,"7E57C2","B39DDB","tower dripping sticky purple goo","thud","Everything nearby goes very slow.","structure,defense,tower"},
 	{"slowpoke","LMBJNA","GSN",1,1,5,"A7F3D0","FCA5A5","dreamy kid shuffling along tying one shoelace forever","yawn","Will arrive by Thursday. Maybe.","silly"},
 	{"slowworm","AMBJCD","Cf",2,7,2,"B8904A","6A4A2A","shiny legless lizard","hiss","Not slow. Not a worm.","reptile"},
-	{"sluagh","AIDJLB","iAP",6,8,3,"1F2937","94A3B8","flock of crow-like shadow spirits","screech","A flock of ghosts flying west.","ghost,spooky,swarm"},
-	{"sludge","FJCF6F","MN",4,3,4,"5C6B2E","98A65A","thick murky green-brown flow","squelch","Slow, gross and coming for you.","toxic,silly"},
-	{"slug","AMAJGI","SN",1,1,2,"8A7A4A","C8B87A","slimy shell-less snail, eye stalks","squelch","A snail that moved out.","mollusk,aquatic,garden"},
-	{"slurp","KBBB5B","iHN",3,6,1,"F4D58D","FFFFFF","noodle being sucked up at speed, broth droplets","slurp","Rude at dinner. Devastating in battle.","silly,edible"},
 }

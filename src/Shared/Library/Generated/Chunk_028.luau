@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vanilla shake","ICBOKJ","JFc",3,5,2,"F7EBC8","F7F2EC","tall white shake","squish","Simple. Smooth. Cold.","edible,frozen,sweet"},
+	{"vanish","KLBOKI","ZY",2,10,1,"E1BEE7","FFFFFF","puff of sparkles and nothing","poof","Poof. Where did I go?","magic,stealth"},
+	{"vanquish","KHDAKB","EO",7,7,1,"FFD54F","D32F2F","golden heroic slam","boom","Victory, delivered hard.","holy"},
+	{"vapor","FBBDOJ","jZS",2,4,1,"D7E3EA","FFFFFF","thin wispy translucent cloud","hiss","Mostly air. A little drama.","aquatic"},
+	{"vaporize","KHDBKI","KT",8,9,1,"E1F5FE","FFFFFF","bright beam leaving puffs of vapour","zing","Poof. Just a little steam left.","explosive"},
 	{"vaquita","ABBJEC","UDB",2,8,4,"8A9098","1E2024","tiny porpoise, dark eye rings","click","World's smallest porpoise. Wears eyeliner.","mammal,aquatic,ocean"},
 	{"vardo wagon","DMCKHL","Dkg",3,4,5,"C62828","FFD54F","brightly painted curved-roof wagon","clatter","A home on wheels. Very colourful.","vehicle,ancient"},
 	{"vase","BMBAKK","eV",1,5,1,"2F6FD1","F2F2EE","tall painted porcelain vase","thud","Priceless. Throwable.","container"},
@@ -398,9 +403,4 @@ return {
 	{"wild donkey","AMCJAA","Dk",4,8,5,"C8A07A","F2E8D8","wild donkey","neigh","Wild donkey with a fast kick.","mammal"},
 	{"wild grass","NGBNMI","ZS",1,1,2,"9CCC65","C0CA33","soft tufts of feathery grass","rustle","Tickles. Hides small things.","plant"},
 	{"wild magic","FLCGKE","UjV",5,7,2,"FF4081","7C4DFF","flickering orb changing colour constantly","boing","Could be great. Could be a chicken.","chaos,magic,silly"},
-	{"wild strawberry","IGAELB","eVP",2,7,1,"D7263D","3E8E2B","tiny red berry","pitter","Tiny but intense.","edible,fruit,sweet"},
-	{"wild surge","KLCGKI","jEV",5,8,1,"FF4081","7C4DFF","flickering random-colour pulse","boing","Something happens. Nobody knows what.","chaos,magic"},
-	{"wild west","MEFNII","Sh",3,1,6,"D2691E","E6C27A","dusty main street, saloon, cactus","rumble","This town ain't big enough.","place,terrain"},
-	{"wildcat","AMCJAA","ZfT",4,7,3,"8C7A62","2E261C","tabby-striped, bushy ringed tail","hiss","Your house cat's tough cousin.","mammal,predator,wild"},
-	{"wilderness","MGFNII","ZSh",4,1,8,"33691E","8D6E63","untamed forest, rivers and rocks","crowd","No roads. No rules.","place"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"parasol","BHCIyK","G",1,4,3,"FF3EA5","F2F2EE","wide striped sun canopy","clank","Shade, but tactical.","summer,defense"},
+	{"parasol mushroom","NGBLMI","GS",2,1,3,"F5E6CA","8D6E63","tall mushroom with a wide shaggy cap","poof","Carries its own umbrella.","plant,fungus"},
+	{"paratha","IMBAKK","Uke",3,7,2,"E0B070","B8803A","flaky layered flatbread","whoosh","Layers upon layers upon layers.","edible"},
 	{"paratrooper","LFCJNB","DAe",5,7,4,"4D7C0F","F8FAFC","parachute, goggles, jump suit","whoosh","Arrives from the sky. On purpose.","military,flying"},
 	{"parchment","BLBIyE","Gjh",2,4,2,"E7D8B1","7C5C3A","curling yellowed sheet with burnt edges and faded ink","rustle","Ye olde paper. Smells of wizard.","ancient,magic"},
 	{"parent","LMCJNA","GFO",4,4,6,"6C8EBF","F2D0B4","grown-up with crossed arms, car keys, raised eyebrow","sigh","Because I said so. That is why.","family"},
@@ -400,8 +403,4 @@ return {
 	{"please","KHBOKJ","Fcb",2,5,1,"FBCFE8","FDE68A","huge sparkling puppy-dog eyes and clasped hands","aww","The magic word. Works 60% of the time.","cute,silly"},
 	{"pleasure","KHBOKJ","FcN",2,4,1,"F9A8D4","FDE68A","pink-gold glow with a blissful closed-eye smile","aww","Ahhh. Like socks from the dryer.","mood,support"},
 	{"pleco","ABAJEC","GdB",1,6,1,"5A4E40","A8946E","armored suckermouth catfish","splash","Vacuums your aquarium for free.","fish,aquatic"},
-	{"plesiosaurus","ABDJEC","DfHB",6,6,7,"4A6A7A","D8E0E4","long neck, four flippers","roar","The original lake monster look.","extinct,reptile,aquatic,ocean"},
-	{"pliers","JKAHJK","fH",2,6,5,"C0392B","8A929B","two-handle pinching jaws","clank","Grabs things you can't.","tool"},
-	{"pliosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","A8B0B8","huge-headed short neck sea reptile","roar","All jaws. Little neck.","extinct,reptile,aquatic,ocean"},
-	{"plot armor","KHCOKI","G",2,5,9,"FFD54F","FFFFFF","sparkling golden script around caster","ding","The hero never goes down this early.","meme,defence"},
 }

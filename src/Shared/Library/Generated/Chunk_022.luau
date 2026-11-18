@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rooster","AMBJDA","dfO",2,4,2,"B8401E","1E3A2A","proud tail feathers, big red comb","crow","Alarm clock that cannot be snoozed.","bird,farm"},
+	{"root","FGCLMI","NO",4,3,5,"5D4037","81C784","thick roots coiling around feet","creak","You are not going anywhere.","plant"},
+	{"root beer","IBBFKI","EkI",3,7,1,"4A2416","F2E2C8","frothy brown mug","fizz","Frothy and foamy.","edible,drink,fizzy"},
+	{"root snare","NECLMI","CSHNO",4,2,5,"6D4C41","8D6E63","gnarled roots bursting from the ground","rustle","The ground grabs your ankles.","plant"},
 	{"ropa vieja","IGBOKI","F",2,5,3,"B0402B","7DBE3A","shredded beef in red sauce","crunch","Old clothes. Delicious stew.","edible,healthy"},
 	{"rope","BMCLJK","HN",1,5,3,"B89B6A","D2B48C","coiled thick rope","clank","Ties up loose ends. And enemies.","tool"},
 	{"rope arrow","CMAAJI","He",2,8,2,"8B5A2B","B89B6A","arrow trailing a long rope","twang","For swinging in or dragging out.","medieval,ranged"},
@@ -399,8 +403,4 @@ return {
 	{"sense warp","KLBAKI","eY",5,10,2,"FFE7A0","8FDCFF","two fingers to the brow, then a flicker beside the foe","whum","Felt your energy from across the map.","anime,ki,speed"},
 	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},
 	{"sentence","KMCBCB","STN",3,6,2,"1F2937","FFFFFF","long line of words ending in a heavy full stop","tap","Ends with a period. So do you.","school"},
-	{"sentinel","LHDMYI","GQeO",6,2,8,"94A3B8","FCD34D","tall still guardian with a spear and one glowing eye slit","hum","Has not blinked since the last update.","defense,ancient"},
-	{"sentinel orb","OHBJKE","GRh",1,3,7,"46DCFF","B0BAC8","a ringed sentry orb circling you that zaps shots away","ping","Your personal bullet bouncer.","scifi,robot,defense"},
-	{"sentry","OKCMWI","GQe",5,1,6,"6B7280","EF4444","tripod gun post with a red scanning eye and beeping light","beep","Halt. Who goes there? Never mind. Pew.","defense,mechanical,robot"},
-	{"sentry tower","EEDMII","GSeO",4,1,7,"616161","FFB300","tall tower with a sweeping searchlight","thud","Spots you. Points. Shoots.","structure,defense,tower"},
 }

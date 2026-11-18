@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fleet","DBFELC","EehB",8,4,9,"607D8B","1E88E5","sea full of warships","engine","The whole navy arrives.","vehicle,mechanical"},
+	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
 	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
 	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
 	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
@@ -401,6 +403,4 @@ return {
 	{"geyser","FBCLII","Kkl",5,7,3,"7CC6E8","F4FBFF","ground vent firing tall water column","whoosh","Earth's surprise sprinkler.","aquatic"},
 	{"gg","KHBOKJ","F",1,5,2,"43A047","FFFFFF","confetti burst","ding","Good game. Sportsmanship heals.","meme"},
 	{"gharial","ABDJAC","fTHOB",7,5,8,"6A7A5A","C8C8A8","super thin long snout, bulb nose","snap","Its snout is basically chopsticks.","reptile,predator,aquatic"},
-	{"ghee","IMBLGI","kSO",2,3,2,"F2C24A","F8E58C","jar of golden liquid fat","squeak","Golden, glossy, and very slippery.","edible,slippery,silly,dairy"},
-	{"ghost","AICJGJ","jAZO",4,6,2,"E5E7EB","A5B4FC","floaty sheet shape, hollow eyes, wavy tail","wail","Goes BOO. Very proud of that.","undead,spooky,halloween,ghost"},
 }

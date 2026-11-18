@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green grape","IGAELB","eVP",2,7,1,"A8D16B","E6F2B5","pale green round orb","pitter","The grape that stayed calm.","edible,fruit,sweet"},
+	{"green lightning","FDDAKB","MeL",7,10,1,"00E676","B9F6CA","bright green forked bolt","crack","Zap, now in lime.","electric"},
 	{"green mamba","AMCJCD","fMN",4,8,3,"4AC84A","E8F07A","bright green slender tree snake","hiss","Neon green. Lives in trees.","reptile,venomous"},
 	{"green man","AGCJNA","WFN",5,3,6,"15803D","4D7C0F","face made of oak leaves with vine beard","rustle","The forest's face. Watching.","spirit,plant"},
 	{"green mango","IMBAKF","jke",3,6,2,"8DB84A","F2E8C0","unripe green mango","squirt","So sour your ears twitch.","edible,fruit,sour"},
@@ -401,6 +403,4 @@ return {
 	{"hobby","KMBOLJ","dFh",2,4,2,"22D3EE","F59E0B","model plane, stamp album, yarn ball and a half-done jigsaw","click","Started twelve. Finished none.","silly"},
 	{"hobgoblin","AECJNA","Dfb",4,6,5,"65A30D","7C2D12","bigger goblin, studded leather, wide grin","cackle","A goblin who went to the gym.","goblin"},
 	{"hockey","KCCAJB","DJkf",5,8,4,"111827","E0F2FE","stick slapping a black puck across ice, spray of shavings","thwack","Two minutes for roughing. Worth it.","sport,frozen"},
-	{"hockey goalie pads","BMCIyF","G",1,3,5,"F2F2EE","C0392B","huge padded leg shields","bonk","The wall of the net.","sport"},
-	{"hockey mask","BKBONI","Gj",1,6,4,"F2F2EE","C0392B","white face guard with holes","clank","Spooky and safe.","armor,sport"},
 }

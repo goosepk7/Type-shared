@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toast tower","IMDCII","Gk",4,2,6,"C8823A","F2D08A","tall stack of toast slices","thud","Stacked carbs for maximum defense.","edible,giant,silly"},
+	{"toasted marshmallow","IABLGG","UKN",2,3,3,"C8803A","F7F4F0","golden-brown puff on a stick","wobble","Crispy outside, molten inside.","edible,wobbly,sweet"},
+	{"toaster","BABMII","Kle",2,3,4,"DDE3E8","24262A","chrome box with two slots","clang","Pop! Toast at 100 miles per hour.","kitchen,household"},
+	{"toaster oven","BABMII","K",2,1,5,"C9CED4","24262A","small box oven with dial","clang","Toaster's bigger, braver cousin.","kitchen,household"},
 	{"toastie","IABOKI","KF",2,5,3,"D49040","F2C24A","triangle toasted sandwich","crunch","Hot, crispy, slightly dangerous inside.","edible,healthy"},
 	{"toddler","LMBJNA","Djd",2,6,3,"FDE68A","60A5FA","wobbly kid with sippy cup","giggle","Unstoppable. Sticky. Loud.","family,cute"},
 	{"toe","BMAAKG","UfO",2,5,2,"E8B48A","FF8A80","one red throbbing big toe, pain stars","squeak","This little piggy went to WAR.","body,silly"},
@@ -399,9 +403,4 @@ return {
 	{"vanilla extract","IMBLKI","dSc",2,3,3,"3A2416","E8D8B8","tiny brown bottle","chomp","Smells like heaven. Tastes bitter.","edible,sweet"},
 	{"vanilla ice cream","ICBAKJ","JeN",3,5,2,"F7EBC8","E8D8A8","pale scoop, flecks","squish","The classic. Cold and calm.","edible,frozen,sweet"},
 	{"vanilla orchid","NGBNMI","Sc",2,1,2,"F5F5F5","9CCC65","climbing orchid with long green pods","rustle","Smells exactly like ice cream.","plant,crop"},
-	{"vanilla shake","ICBOKJ","JFc",3,5,2,"F7EBC8","F7F2EC","tall white shake","squish","Simple. Smooth. Cold.","edible,frozen,sweet"},
-	{"vanish","KLBOKI","ZY",2,10,1,"E1BEE7","FFFFFF","puff of sparkles and nothing","poof","Poof. Where did I go?","magic,stealth"},
-	{"vanquish","KHDAKB","EO",7,7,1,"FFD54F","D32F2F","golden heroic slam","boom","Victory, delivered hard.","holy"},
-	{"vapor","FBBDOJ","jZS",2,4,1,"D7E3EA","FFFFFF","thin wispy translucent cloud","hiss","Mostly air. A little drama.","aquatic"},
-	{"vaporize","KHDBKI","KT",8,9,1,"E1F5FE","FFFFFF","bright beam leaving puffs of vapour","zing","Poof. Just a little steam left.","explosive"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hockey goalie pads","BMCIyF","G",1,3,5,"F2F2EE","C0392B","huge padded leg shields","bonk","The wall of the net.","sport"},
+	{"hockey mask","BKBONI","Gj",1,6,4,"F2F2EE","C0392B","white face guard with holes","clank","Spooky and safe.","armor,sport"},
 	{"hockey net","BMCLII","O",1,1,4,"C0392B","F2F2EE","red-framed small net","bonk","He shoots, he's trapped.","sport"},
 	{"hockey player","LCCJNA","Dke",5,8,5,"111827","F8FAFC","helmet, skates, hockey stick","crack","Body check! Hockey puck incoming.","sport,frozen"},
 	{"hockey puck","BMAA3F","keO",2,9,6,"24262A","4A4D52","flat black rubber disc","bonk","Slaps across ice. Slaps across faces.","sport"},
@@ -401,6 +403,4 @@ return {
 	{"iron will","KKCOKI","GF",2,3,8,"78909C","FFD54F","steel-grey determination glow","clang","Bend? No. Break? Never.","defence"},
 	{"ironclad","DKEMHC","GeagB",7,4,10,"37474F","616161","low iron hull with a round turret","splash","Clang. Cannonballs bounce off.","vehicle,aquatic"},
 	{"ironing board","BKCC0I","G",1,1,4,"C9CED4","2F6FD1","folding board on legs","thud","A fold-out shield for wrinkles.","furniture,household"},
-	{"ironskin","KKCOKI","Ga",2,2,10,"90A4AE","ECEFF1","shiny metal sheen over the caster","clang","Clang clang. Ow, my fist.","heavy,defence"},
-	{"ironwood","NKECMI","GWkS",5,1,10,"455A64","689F38","dark metallic-looking trunk","rustle","Tougher than an axe.","plant,tree,heavy"},
 }
