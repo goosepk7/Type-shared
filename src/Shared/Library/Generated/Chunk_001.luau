@@ -204,6 +204,7 @@ return {
 	{"ammonite","ABBJSC","GjZHB",3,6,3,"C8A07A","8A5A3A","coiled spiral shell with tentacles","squelch","Fossil swirl. Ancient squid in a shell.","aquatic,ocean,smart,extinct,ancient"},
 	{"amnesia","KLCAKB","jO",4,7,1,"E1BEE7","9E9E9E","swirl of fading question marks","whoosh","Who are you? Who am I?","silly"},
 	{"amp","ODCM1I","kIeO",5,1,5,"111827","F97316","black speaker cabinet with glowing valves, cone thumping","hum","This one goes to eleven.","music,loud"},
+	{"amp stack","EFDCnI","GkI",6,3,8,"2A2A33","FF5A3C","stacked amp cabinets slam up, then blast feedback","thud","It soaks your shots. Then it plays them back.","music,rock,shield"},
 	{"amphibian","ABBJAG","UMB",3,5,3,"4FA36B","F2E94E","slimy smooth-skinned hopper, half in a puddle","croak","Land AND water. Could not pick. Did both.","amphibian,science"},
 	{"amphibious car","DMCKHL","DkgB",4,6,6,"F2C200","2E86DE","car body with boat hull and propeller","engine","Drives into the lake on purpose.","mechanical,vehicle,land"},
 	{"amphibious tank","DBDMHL","EegB",6,5,8,"455A64","26C6DA","tank hull with propellers and skirts","engine","Land, sea, whatever.","mechanical,vehicle,land"},
@@ -402,5 +403,4 @@ return {
 	{"ash tree","NHDCMI","GWkS",4,1,7,"8D8D8D","E53935","tall tree with orange-red berry clusters","rustle","Wards off witches. Allegedly.","plant,tree"},
 	{"ash wasteland","MAENII","KjS",4,1,6,"616161","FF7043","grey ash dunes, smouldering stumps","rumble","Everything here already burned. Twice.","place,terrain"},
 	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
-	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
 }

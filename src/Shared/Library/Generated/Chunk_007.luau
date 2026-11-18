@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cricket ball","BMAA3F","ke",2,9,5,"9E1B32","F2F2EE","hard red stitched ball","bonk","Very red. Very hard.","sport"},
+	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
 	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
 	{"cringe","KMBFOB","jO",2,7,1,"BDBDBD","FFAB91","shuddering wobble ring","eugh","Oof. Can't look.","meme,silly"},
@@ -31,6 +33,7 @@ return {
 	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
 	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
 	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
+	{"crowd surf","KHDO6F","klI",5,9,4,"FFC94A","FF6FB5","a rolling wave of glowing raised hands carries you forward","whoosh","Trust the crowd. They'll carry you.","music,mobility,concert"},
 	{"crown","BHBONI","Fh",3,5,5,"D4A72C","B0103A","jewelled golden crown","swish","Heavy is the head. Shiny though.","royal,shiny"},
 	{"crown imperial","NGBNMI","dFS",2,1,2,"FF6F00","2E7D32","ring of hanging bells under a leaf crown","rustle","Royalty among bulbs.","plant,flower,royal"},
 	{"crown jewels","BHBONI","Fc",3,4,5,"D4A72C","B0103A","cushion of gem crown and sceptre","swish","Shiny enough to distract a dragon.","royal,shiny,treasure"},
@@ -131,6 +134,7 @@ return {
 	{"cursed sword","CICHrK","jif",7,6,4,"1B1A22","9E1B32","jagged black blade, red glow","shing","Whispers. Do not listen.","fantasy,spooky"},
 	{"curtain","BMCC0I","GZ",1,1,2,"6E1630","D4A72C","heavy hanging fabric panels","thud","Hide behind. Very dramatic.","furniture,household"},
 	{"curupira","AGBJNA","KjQ",3,8,3,"DC2626","15803D","red-haired forest kid with backwards feet","whistle","Footprints go the wrong way. On purpose.","mythical,forest"},
+	{"curveball","BFBA3B","ke",4,8,2,"F4EFE2","E2553A","stitched ball that swings wide and breaks back in","whoosh","It was going wide. Then it wasn't.","sport,baseball,projectile"},
 	{"cuscus","AMBJAA","Uf",2,6,2,"F2E8D8","C8A07A","fluffy possum with big eyes","chirp","A teddy bear with a curly tail.","mammal,marsupial"},
 	{"custard","IMBLGG","USN",2,3,3,"F7E08A","F7F2E0","wobbly yellow pudding","wobble","Yellow, wobbly, and warm.","edible,wobbly,sweet"},
 	{"custard cream","IMBAKK","Uke",3,7,2,"F2D870","F7F2EC","two pale biscuits, cream middle","whoosh","Dunked in tea. Thrown at foes.","edible,dairy"},
@@ -399,8 +403,4 @@ return {
 	{"djembe","BMBFJI","O",2,5,3,"8B5A2B","D2B48C","goblet-shaped hand drum","boom","Pa-tum-pa-tum!","music"},
 	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},
 	{"djinn king","ALEJNJ","klhY",8,6,6,"1E3A8A","FACC15","towering genie with jeweled turban","whoosh","Wishes granted. With terms and conditions.","magic,royal,boss"},
-	{"dna","BGBOCK","jWFV",4,5,3,"3B82F6","EF4444","twisting blue and red ladder spiral, rungs glowing","hum","You have your mother's eyes. And her right hook.","science"},
-	{"doberman","AMCJAA","DQf",5,8,4,"1A1414","A0582A","sleek black-tan dog, pointy ears","bark","Built for speed and side-eye.","mammal,pet"},
-	{"dobsonfly","AMBJFB","dAfP",2,6,1,"6A5A44","C8B88A","huge flying bug with giant mandibles","buzz","Big scary jaws. Mostly harmless.","insect"},
-	{"doctor","LMCJNA","GFe",3,4,5,"F8FAFC","0EA5E9","white coat, stethoscope, clipboard","beep","Says ahh. Gives a lollipop.","healer"},
 }

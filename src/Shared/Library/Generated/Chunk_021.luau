@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rage","KACOKI","KDk",6,7,3,"D50000","FF6D00","red steaming aura, cartoon anger vein","roar","Steam from the ears. Run.","rage"},
+	{"rage quitter","LACJNA","Ek",4,6,3,"DC2626","111827","furious figure throwing a controller","crash","Throws the controller. Through the screen.","meme,gaming,explosive"},
+	{"ragnarok","HDFNOI","EkLP",10,5,8,"3E2723","FFD740","stormy gold-black sky, giant lightning, falling fire","boom","The ultimate grand finale.","mythical,danger"},
+	{"raid","KADFLA","DPbh",7,7,4,"B91C1C","FACC15","charging mob of mixed heroes with a war horn and loot bags","horn","Forty people. One boss. Nobody read the guide.","gaming"},
+	{"raijin","ADDJNJ","AeLO",7,6,6,"1D4ED8","FACC15","oni drummer in a ring of thunder drums","thunder","Drums so hard the sky crackles.","yokai,storm"},
+	{"raiju","ADCJAB","DAL",5,9,4,"2563EB","FDE047","wolf of blue lightning, crackling tail","zap","Naps in belly buttons during storms.","yokai,storm"},
+	{"rail bird","AMBJDA","AfT",2,5,2,"8A6A4A","C8A07A","slim marsh bird","squawk","Thin as a rail. Literally.","bird,wetland"},
 	{"railgun","CDDBwI","DTe",8,10,4,"7FD8FF","3A3F48","twin rails glowing, then one straight blue-white line","zap","Magnets, but angry.","scifi,ranged"},
 	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
 	{"railway bridge","EMECII","GSh",3,1,9,"6D4C41","9E9E9E","timber trestle carrying train tracks","thud","A train is coming. On top of you.","structure"},
@@ -396,11 +403,4 @@ return {
 	{"rotten egg","IJBDOJ","jSMP",3,3,2,"E8E0A0","8A9A3A","cracked grey egg, green fumes","whiff","Smell so bad it has its own weather.","edible,smelly,silly"},
 	{"rotten tomato","IJBDOJ","jMe",3,3,2,"8A3A2A","5E7A2B","squishy brown-red tomato, flies","whiff","For the worst performances only.","edible,smelly,silly"},
 	{"rottweiler","AMCJAA","GDQf",5,7,4,"1C1814","9A5A2A","muscular black dog, rust markings","bark","Big tough guardian. Secret cuddler.","mammal,pet"},
-	{"round","KMBF6B","FIO",3,6,1,"EF4444","F8FAFC","ring girl card reading ROUND 1 and a bell being struck","bell","Round one. FIGHT!","gaming,sport"},
-	{"round house","EECCII","GS",2,1,5,"C9A55A","8D6E63","round stone hut with a cone of thatch","thud","Round walls. No corners to hide in.","structure,defense,ancient"},
-	{"round shield","BKCIyI","Gk",3,5,6,"8B5A2B","5B6168","painted wooden round shield","clang","Planks, paint, and pure stubbornness.","armor,defense"},
-	{"roundabout","EMDNII","jS",2,1,7,"424242","7CB342","circular road with a grassy middle","thud","Round and round. Which exit?","structure,silly"},
-	{"roundhouse kick","KMCN5K","kf",6,8,2,"FF8A65","FFFFFF","spinning leg arc ring","whoosh","Spin and kick. Like a pro.","melee"},
-	{"row","KBBOiC","DIB",3,6,3,"8B5A2B","38BDF8","two oars heaving in rhythm with splash arcs","splash","Merrily, merrily, merrily, merrily. Stroke!","sport,aquatic"},
-	{"row house","EMCCII","GSh",2,1,7,"B5523B","F5E6CA","narrow joined houses in a row","thud","Neighbours on both sides. All angry.","structure,building"},
 }

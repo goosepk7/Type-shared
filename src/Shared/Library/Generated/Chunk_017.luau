@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mini marshmallows","IMAELB","UeP",2,7,1,"F7F4F0","F2A6C8","tiny white cylinders","pitter","A blizzard of fluffy.","edible,sweet,candy"},
+	{"mini submarine","DBCKHC","lfgB",4,4,8,"FF6F00","F5F5F5","round pod with lights and claw arms","sonar","Finds treasure. Pinches enemies.","vehicle,aquatic"},
+	{"mini sun","FHCGKE","KFR",6,4,3,"FFB300","FFF8E1","tiny blazing sun floating overhead","hum","Your own personal sunshine.","holy,fire"},
+	{"mini tornado","HFBN5K","klH",4,7,2,"B0BEC5","ECEFF1","knee-high spinning funnel that zips around","whoosh","Small, angry and very spinny.","storm,cute"},
+	{"miniature schnauzer","AMBJAA","dQf",2,6,2,"8A8A8E","D8D8DA","small dog, bushy beard","yip","Grandpa mustache, puppy energy.","mammal,pet,cute"},
 	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
 	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 	{"minivan","DMCKHL","Dkg",4,6,6,"6E8FA6","D9DEE2","tall rounded van, sliding side door","engine","Soccer practice is cancelled. Battle is on.","mechanical,vehicle,land,silly"},
@@ -398,9 +403,4 @@ return {
 	{"neutron star","HHEGKK","HLO",8,5,9,"E3F2FD","40C4FF","tiny blinding spinning star with twin beams","hum","A spoon of it weighs a mountain.","space,heavy"},
 	{"new kid","LMBJNA","dZ",2,6,3,"60A5FA","F8FAFC","backpack, nervous smile","ding","Nobody knows their powers. Yet.","school"},
 	{"new potatoes","IMAELB","eVP",2,7,1,"E8D0A0","F2E8C0","tiny round potatoes","pitter","Tiny round spuds.","edible"},
-	{"new year","KHDNII","EFPO",5,5,2,"FACC15","111827","glitter ball dropping, clock at midnight, fireworks","boom","Ten! Nine! Eight! Resolutions: broken by two.","holiday,party,explosive"},
-	{"newfoundland","AMDJAA","DQFfB",5,7,4,"1C1A18","3A3633","huge black shaggy dog, webbed feet","bark","Lifeguard dog. Drools as a hobby.","mammal,pet"},
-	{"news","KDCF6B","jdPO",3,8,1,"DC2626","F8FAFC","red BREAKING banner scrolling with a spinning globe","fanfare","This just in: you. Getting hit. More at ten.","meme"},
-	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
-	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
 }

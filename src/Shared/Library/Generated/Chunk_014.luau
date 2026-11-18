@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jabuticaba","NGCCMI","GWFkS",2,1,5,"6D4C41","4A148C","trunk covered in dark round fruit","rustle","Grows grapes on its trunk. Weird.","plant,tree,silly"},
+	{"jacamar","AMAJDB","dA",1,7,1,"2AA06A","C8601E","long needle beak","tweet","Catches butterflies mid-air.","bird,cute"},
+	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
 	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
 	{"jack frost","LCCJNB","AJN",5,8,3,"BAE6FD","F8FAFC","icy-haired sprite with frost staff","crack","Nips your nose. Freezes your window.","frozen,holiday"},
 	{"jack in box","BMBG2I","Uk",3,4,3,"3B6FD8","FFD93B","a toy crank box that pops out a star-headed spring","boing","Round and round it goes. Then it doesn't.","cartoon,silly,toy"},
@@ -170,6 +173,7 @@ return {
 	{"kebab","IABHJI","KfT",3,5,4,"C8602B","7DBE3A","meat and peppers on a skewer","bonk","A spear of grilled meat and veg.","edible,silly"},
 	{"kedgeree","IMAELB","eNP",2,6,1,"F2D23A","F7F2E0","yellow rice, egg, fish","pitter","Breakfast rice with a twist.","edible,grain"},
 	{"keep","EEECII","GSe",5,1,10,"8D8D8D","5D5D5D","tall square stone tower, small windows","thud","The last place to run. And the safest.","structure,defense,ancient"},
+	{"keeper wall","KMCCnI","Gka",5,6,6,"38C7B4","F4F1E6","padded keeper gloves and a glowing goal net","thud","Nothing gets past. Then it goes back.","sport,shield,defense"},
 	{"kefir","IBBOKI","F",2,6,2,"F7F4EC","F2EAD5","bottle of fizzy yogurt drink","slurp","Yogurt that learned to fizz.","edible,drink,dairy"},
 	{"kek","KMBF6B","jPO",2,7,1,"84CC16","FDE047","wheezing laugh lines with a slapped knee","cackle","Kek. An ancient laugh from the old servers.","meme,internet"},
 	{"kelewele","IABAKK","KeP",3,7,2,"E8762B","D9A04A","spicy fried plantain cubes","sizzle","Fiery plantain bites.","edible,spicy,flammable"},
@@ -399,8 +403,4 @@ return {
 	{"laser sight","CHAOJI","e",1,1,1,"FF2D2D","24262A","tiny red dot emitter","zap","Never miss again.","scifi,ranged"},
 	{"laser tag gun","CHBBwI","de",1,9,2,"39FF14","24262A","chunky light gun with sensor","thwip","Pew! You're tagged!","toy,silly"},
 	{"laser tower","EHDBII","GKTe",6,1,7,"ECEFF1","FF1744","sleek white spire with red lens","hum","Pew. Continuous pew.","structure,defense,tower,future"},
-	{"laser turret","OHDMwI","KTe",6,8,6,"F2F2EE","FF2D2D","swivel dome with red lens","hum","Tracks. Locks. Pew.","scifi,defense"},
-	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
-	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
-	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
 }
