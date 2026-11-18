@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nightfall","FIDFOB","ZNP",5,5,3,"1A1840","6157A8","dark wave rolling across the sky","hush","The sun clocks out early.","spooky"},
+	{"nightingale","AMAJDB","dAF",1,7,1,"8A6A4A","D8C4B0","plain brown bird, singing at night","song","Plain look, legendary voice.","bird,cute"},
+	{"nightjar","AMAJDB","dAZ",1,7,1,"8A7A62","5A4A3A","camo bark-patterned bird, wide mouth","tweet","Invisible on the ground. Loud at night.","bird,cute,nocturnal"},
+	{"nightmare","AADKAA","KDjg",7,8,6,"111827","F97316","black stallion with burning hooves and mane","neigh","The horse you see right before you wake up.","mythical,mount,spooky,fire"},
+	{"nightmare beast","AIDJAA","jiO",6,6,5,"1E1B4B","DB2777","beast of swirling purple smoke and eyes","growl","Made of bad dreams and worse eyes.","spooky"},
+	{"nightmare horse foal","AABJAA","KQ",2,7,2,"1F1F1F","F97316","small black foal with tiny flame mane","neigh","Cute but singes the carpet.","spooky,cute"},
 	{"nightmare unicorn","AIDKAA","DiTg",7,8,6,"1F1F1F","9333EA","black unicorn with purple horn and flame mane","neigh","Glitter, but goth.","spooky"},
 	{"nightshade","NJBNMI","ScM",4,1,2,"4A148C","212121","dark purple bells and black berries","rustle","Do not eat the berries. Seriously.","plant,flower,spooky"},
 	{"nightstand","BMBC0I","G",1,1,5,"8B5A2B","B58A3A","small table with a drawer","thud","Holds your lamp. Holds the line.","furniture,household"},
@@ -397,10 +403,4 @@ return {
 	{"passport","BMAOyE","GjY",2,5,3,"1E3A8A","D4AF37","small navy booklet with a gold crest and a terrible photo","thunk","Worst photo of your life. Valid ten years.","travel"},
 	{"password","KDBIyI","Gja",3,1,7,"111827","22C55E","padlock screen with dots ******** and a red WRONG","buzz","Must contain a capital, a number and your soul.","tech,defense"},
 	{"past","KEDN5I","jNh",5,2,3,"B08D57","E7D8B1","sepia portal with a penny-farthing and dinosaurs behind it","tick","Was better. Allegedly. Had no wifi.","time,ancient"},
-	{"pasta","IMAELB","eNP",2,6,1,"F2D08A","E8C070","assorted pasta shapes","pitter","Shapes for every situation.","edible,grain"},
-	{"paste","BMALGI","ScN",1,1,2,"F8FAFC","A855F7","white gloopy dollop with a purple glue-stick cap","squelch","Somebody in class eats this. You know who.","school,sticky,silly"},
-	{"pasteis de bacalhau","IMAELB","eVP",2,7,1,"D9A04A","F2E8D0","golden cod croquettes","pitter","Crispy cod cannonballs.","edible"},
-	{"pastelito","IMBLKI","dSc",2,3,3,"D9A04A","F2E8C8","flaky filled pastry","chomp","Flaky, sweet, Cuban.","edible,sweet"},
-	{"pastilla","IMBAKK","Uke",3,7,2,"D9A04A","F7F7F7","round pie with sugar crust","whoosh","Sweet and savory in one pie.","edible"},
-	{"pastrami","IGBOKI","F",2,5,3,"8A2E2E","3A1E1E","peppered dark meat slices","crunch","Peppery, smoky, stacked.","edible,healthy"},
 }

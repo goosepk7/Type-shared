@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jackpot","KKCEOB","dFc",4,6,2,"FFC107","43A047","explosion of coins and confetti","jingle","Ding ding ding! Winner!","luck,shiny"},
+	{"jade","BGBO4J","GFc",3,3,7,"00A86B","A7F3D0","smooth polished green stone carved like a little dragon","chime","Lucky. Smooth. Greener than envy.","shiny,royal"},
+	{"jade dragon","AGEKCB","AFeg",7,7,8,"059669","A7F3D0","carved green jade serpent dragon","roar","Polished, precious, and prickly.","mythical,reptile,gem"},
+	{"jade golem","AGDJNA","GFk",7,2,9,"059669","A7F3D0","polished green jade giant","chime","Precious. Unbreakable. Grumpy.","construct,gem"},
+	{"jade vine","NLCNMI","dFS",2,1,3,"1DE9B6","43A047","dangling claws of turquoise flowers","rustle","Glows a colour that should not exist.","plant,flower"},
+	{"jaekelopterus","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant sea scorpion","skitter","Biggest bug ever. Swam.","arachnid,spooky,venomous,extinct,ancient"},
 	{"jaffa cake","IMBAKK","Uke",3,7,2,"E8762B","3A1A0C","orange jelly sponge disc","whoosh","Cake or biscuit? The war continues.","edible"},
 	{"jaguar","AMDJAA","DfTB",7,8,5,"D99A3C","2B1E10","stocky spotted body, massive jaw, rosettes","roar","Bites through turtle shells for fun.","mammal,predator,wild"},
 	{"jaguarundi","AMCJAA","ZfT",4,7,3,"6D5D52","9A8878","long weasel-like body, plain dark coat","hiss","A cat that forgot it was a cat.","mammal,predator,wild"},
@@ -397,10 +403,4 @@ return {
 	{"laundromat","MBDNlI","jSHN",4,1,5,"38BDF8","F8FAFC","row of spinning round-door washers overflowing with foam","slosh","Lost: one sock. Found: someone else's sock.","household,building"},
 	{"laundry","BJCLGI","WMN",3,1,4,"93C5FD","F87171","teetering mountain of socks, shirts and one sneaker","whiff","The pile grew again. It is breathing now.","household,silly,gross"},
 	{"laundry basket","BMBL2I","O",1,1,2,"F2F2EE","2F6FD1","plastic basket of laundry","thud","Smelly prison.","container"},
-	{"laundry detergent","BBBD2I","jN",1,5,2,"E67E22","F2F2EE","big jug of suds","thud","Bubbles. Everywhere.","household"},
-	{"laurel","NGCCMI","GWFkS",2,1,6,"4E342E","2E7D32","dense glossy aromatic shrub tree","rustle","Victory wreaths grow here.","plant,tree"},
-	{"lava","FACNOI","KSN",6,3,5,"FF4500","FFB703","molten orange pool, black crust cracks","bubble","The floor is lava. Not a game anymore.","fire"},
-	{"lava bomb","HACAKB","KEe",6,6,3,"3E2723","FF6D00","spinning glowing rock blob, smoke tail","whoosh","The volcano is throwing things now.","fire,explosive"},
-	{"lava burst","FADNOI","KEl",7,6,3,"E65100","FFD740","ground bursting with spurting lava","boom","Surprise! The ground was hot.","fire,explosive"},
-	{"lava cake","IABNGI","KSc",4,4,2,"3A1A10","E8761A","small dome oozing hot chocolate","sizzle","A tiny volcano made of chocolate.","edible,sweet"},
 }

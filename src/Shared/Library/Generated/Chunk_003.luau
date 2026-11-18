@@ -246,6 +246,7 @@ return {
 	{"boar spear","CKCAuI","GfT",5,5,5,"8A929B","8B5A2B","spear with crossbar under blade","whoosh","Stops things that charge.","medieval,sharp"},
 	{"board game","BMBNII","j",1,1,2,"2E8B57","C0392B","folded board with tokens","clack","Fun until someone flips it.","game"},
 	{"boarding axe","CKBHsI","fV",4,6,4,"8A929B","8B5A2B","short axe with spike","bang","Climb aboard. Chop.","pirate"},
+	{"boarding hook","OKBAJI","He",2,9,3,"5ADCFF","969CA8","a magnetic clamp on a glowing tether that reels you in","clang","All aboard. You, specifically.","scifi,mobility"},
 	{"boat","DBCKHC","DkgB",4,7,5,"F5F5F5","1E88E5","small hull, outboard motor, windshield","splash","Splash first. Ask later.","vehicle,aquatic"},
 	{"boat hook","JKCAuK","fH",2,5,4,"8B5A2B","B58A3A","pole with metal hook","clank","Snag and drag.","tool"},
 	{"boat-billed heron","AMCJDA","AfT",3,5,2,"6A6A6E","1E1E1E","huge scoop bill","squawk","Bill like a boat. Eyes like a frog.","bird,wetland,silly"},
@@ -402,5 +403,4 @@ return {
 	{"bramble elemental","AGDJMA","THN",6,3,6,"365314","DC2626","tangle of thorny bramble shaped like a beast","rustle","Hugs hurt. A lot.","elemental,plant"},
 	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},
 	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
-	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 }

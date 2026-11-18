@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pasta","IMAELB","eNP",2,6,1,"F2D08A","E8C070","assorted pasta shapes","pitter","Shapes for every situation.","edible,grain"},
+	{"paste","BMALGI","ScN",1,1,2,"F8FAFC","A855F7","white gloopy dollop with a purple glue-stick cap","squelch","Somebody in class eats this. You know who.","school,sticky,silly"},
+	{"pasteis de bacalhau","IMAELB","eVP",2,7,1,"D9A04A","F2E8D0","golden cod croquettes","pitter","Crispy cod cannonballs.","edible"},
+	{"pastelito","IMBLKI","dSc",2,3,3,"D9A04A","F2E8C8","flaky filled pastry","chomp","Flaky, sweet, Cuban.","edible,sweet"},
+	{"pastilla","IMBAKK","Uke",3,7,2,"D9A04A","F7F7F7","round pie with sugar crust","whoosh","Sweet and savory in one pie.","edible"},
+	{"pastrami","IGBOKI","F",2,5,3,"8A2E2E","3A1E1E","peppered dark meat slices","crunch","Peppery, smoky, stacked.","edible,healthy"},
 	{"pastry","IMBA7B","UFc",2,5,1,"E0A84A","F6D48A","flaky golden swirl with icing and a jam centre","crunch","Flaky. Like your teammate.","edible,sweet,breakfast"},
 	{"pasty","IMBAKF","Fe",3,6,2,"D9A04A","C8904A","crimped half-moon pie","splat","A miner's lunch with a crimped handle.","edible"},
 	{"pat","KHAOKJ","F",1,5,1,"FFF59D","FFFFFF","gentle hand with sparkles","pat","Good job. Here, a pat.","cute,support"},
@@ -144,7 +150,7 @@ return {
 	{"photocopier","BMDMII","eVh",2,1,6,"8E9196","F2F2EE","big office copy machine","tap","Copies enemies. Badly.","office"},
 	{"photographer","LHCJNA","dO",3,5,3,"111827","F8FAFC","camera with big flash","click","Say cheese. FLASH. Stunned.","art"},
 	{"photon","FHAAKB","Te",2,10,1,"FFFFFF","FFF59D","tiny bright light speck streak","zing","Fastest thing around. Also tiniest.","space"},
-	{"photon torpedo","CHCAkI","EQe",8,8,2,"7DF9FF","F2F2EE","glowing energy torpedo","zap","Space boom, delivered.","scifi,space"},
+	{"photon torpedo","CHCAkI","EQe",6,3,2,"FF603C","5C606C","a slow amber-red torpedo core in an open rib casing","zap","Slow, polite, inevitable. Unless you dash.","scifi,space"},
 	{"photosynthesis","KGCOKJ","WF",1,3,4,"66BB6A","FFEB3B","green leafy glow drinking sunlight","chime","Eat sunshine. Heal up.","plant,support"},
 	{"physalis","IGAELB","eVP",2,7,1,"F2B33A","E8D8A8","orange berry in papery lantern","pitter","Comes gift-wrapped by nature.","edible,fruit,sweet"},
 	{"physicist","LDCJNA","EeY",4,4,4,"F8FAFC","7C3AED","lab coat, chalkboard of equations","zap","Did the math. You lose.","science"},
@@ -397,10 +403,4 @@ return {
 	{"poison aura","FJCOKJ","SM",4,4,3,"76FF03","33691E","green fumes swirling round caster","bubble","Personal space, enforced by stink.","toxic"},
 	{"poison beam","FJCBKI","TMe",5,7,1,"76FF03","33691E","bubbling green beam","hiss","Gross. Glowing. Green.","toxic"},
 	{"poison blast","FJCGKI","EMP",5,7,1,"76FF03","33691E","green cloud bursting outward","bubble","Pop. Cough. Run.","toxic,explosive"},
-	{"poison bomb","FJCGKI","ESM",5,6,1,"76FF03","33691E","green orb bursting into toxic cloud","bubble","Pop. Then stink. Then ouch.","toxic,explosive"},
-	{"poison bottle","BJAA2I","MeV",4,6,1,"8BC34A","24262A","skull-labelled bottle","bubble","Do not drink. Throw.","magic,fantasy"},
-	{"poison breath","FJCFOB","MP",5,6,1,"76FF03","33691E","cone of green toxic mist","hiss","Worst breath imaginable.","toxic"},
-	{"poison bubble","FJBGKJ","UM",3,4,1,"76FF03","F8BBD0","green bubble that pops into fumes","pop","Don't pop it. Too late.","toxic,silly"},
-	{"poison cloud","FJDDOJ","SMNP",5,3,2,"76FF03","33691E","rolling bilious green cloud with bubbles","hiss","Smells as bad as it looks.","toxic"},
-	{"poison dart","FJBAJB","TMe",4,9,1,"64DD17","1B5E20","thin green-dripping needle","zip","Tiny pinch. Big problem.","toxic,sharp"},
 }

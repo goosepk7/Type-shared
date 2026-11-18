@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy hand grenade","CHBGKF","Eke",7,5,1,"D4A72C","F2F2EE","jewelled orb with a tiny cross","boom","Count to three. Not five.","explosive,silly,holy"},
+	{"holy light","FHDBKI","KFe",6,6,2,"FFF8C4","FFFFFF","wide golden shaft of light from the sky","chime","Heals the good. Stings the bad.","holy"},
+	{"holy meteor","HHDAKB","KEFe",8,8,5,"FFD54F","FFFFFF","glowing golden rock with angelic trail","choir","Heaven threw a rock.","holy,space,explosive"},
+	{"holy nova","FHDFOI","KFP",5,7,2,"FFF59D","FFFFFF","golden ring of light pulsing outward","chime","Hugs friends. Burns foes.","holy"},
+	{"holy prison","KHCLII","GO",6,4,6,"FFF59D","FFFFFF","cage of golden light bars","chime","Glowing time-out.","holy"},
 	{"holy shield","KHCIKI","GFa",3,4,8,"FFE082","FFFFFF","golden glowing dome, wing-shaped edges","chime","Protected by pure good vibes.","holy,defence"},
 	{"holy shrine","EHCNII","FSO",3,1,8,"FFF8E1","FFD54F","marble shrine glowing gold","thud","Heals the faithful. Blinds the wicked.","structure,holy"},
 	{"holy slash","FHCHJB","KfT",6,9,1,"FFF59D","FFFFFF","glowing golden arc","shing","A righteous swipe.","holy,sharp"},
@@ -387,6 +392,7 @@ return {
 	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
 	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
 	{"jack frost","LCCJNB","AJN",5,8,3,"BAE6FD","F8FAFC","icy-haired sprite with frost staff","crack","Nips your nose. Freezes your window.","frozen,holiday"},
+	{"jack in box","BMBG2I","Uk",3,4,3,"3B6FD8","FFD93B","a toy crank box that pops out a star-headed spring","boing","Round and round it goes. Then it doesn't.","cartoon,silly,toy"},
 	{"jack o lantern","BABJKI","Kjc",2,3,3,"E67E22","FF6A1A","carved grinning pumpkin with candle","jingle","Grins in the dark. Grins at you.","holiday,spooky"},
 	{"jack russell","AMBJAA","UdQf",2,8,2,"F2EEE6","8A5A2A","small white dog with tan patches, springy","yip","Bounces off walls. Literally.","mammal,pet,cute"},
 	{"jack the giant slayer","LMBJNA","cf",3,7,3,"15803D","78350F","kid with magic beans and a tiny sword","ding","Climbed the beanstalk. Regrets nothing.","folklore"},
@@ -397,10 +403,4 @@ return {
 	{"jacket","BMCONI","G",1,5,3,"3B5B8C","7A4E2D","zip-up jacket","swish","Weatherproof. Bonkproof-ish.","clothing"},
 	{"jackfruit","IGCGKF","DkI",5,5,6,"A7B33A","E5C14B","giant bumpy green oblong","rumble","The biggest fruit on a tree. Ouch.","edible,heavy,fruit"},
 	{"jackhammer","OKCLJK","CkfO",6,3,7,"F1C40F","4A4D52","tall pounding drill with handles","rattle","Rattles the ground and your teeth.","tool,loud"},
-	{"jackpot","KKCEOB","dFc",4,6,2,"FFC107","43A047","explosion of coins and confetti","jingle","Ding ding ding! Winner!","luck,shiny"},
-	{"jade","BGBO4J","GFc",3,3,7,"00A86B","A7F3D0","smooth polished green stone carved like a little dragon","chime","Lucky. Smooth. Greener than envy.","shiny,royal"},
-	{"jade dragon","AGEKCB","AFeg",7,7,8,"059669","A7F3D0","carved green jade serpent dragon","roar","Polished, precious, and prickly.","mythical,reptile,gem"},
-	{"jade golem","AGDJNA","GFk",7,2,9,"059669","A7F3D0","polished green jade giant","chime","Precious. Unbreakable. Grumpy.","construct,gem"},
-	{"jade vine","NLCNMI","dFS",2,1,3,"1DE9B6","43A047","dangling claws of turquoise flowers","rustle","Glows a colour that should not exist.","plant,flower"},
-	{"jaekelopterus","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant sea scorpion","skitter","Biggest bug ever. Swam.","arachnid,spooky,venomous,extinct,ancient"},
 }

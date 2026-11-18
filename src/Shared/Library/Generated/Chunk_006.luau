@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cliffside","MEENII","kS",4,1,9,"8D6E63","7CB342","grassy edge above a sheer drop","rumble","One step back. No, the other way.","place,terrain"},
 	{"climate","KFENOI","KJSP",6,1,5,"F97316","38BDF8","half scorching sun, half blizzard swirling together","howl","Hot. Cold. Hot. Make up your mind.","weather,science"},
 	{"climb","KMBOKG","l",2,5,3,"8D6E63","FFFFFF","grip marks up a surface","scrape","Up we go.","sport"},
 	{"climbing harness","BMBONF","l",1,5,3,"C0392B","24262A","webbing harness with buckles","bonk","Hang on tight.","sport"},
@@ -11,6 +12,7 @@ return {
 	{"cling wrap","BMBL2I","NO",1,4,1,"BFE6F2","F2F2EE","stretchy clear plastic sheet","clang","Wrapped up tight.","sticky"},
 	{"clipboard","BMBIyK","G",1,6,3,"C49A6C","C9CED4","board with metal clip","tap","Looks busy. Is busy.","office"},
 	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
+	{"cloaking field","OHBO1I","Z",2,6,3,"BEE1FF","6E7480","a wrist cuff folding light round you, leaving only a shimmer","hum","Now you see me. Mostly you don't.","scifi,stealth"},
 	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
@@ -401,6 +403,4 @@ return {
 	{"crocodile monitor","AMCJAA","Cf",5,7,2,"2A3A2A","E8D8A0","very long-tailed monitor","hiss","Longest lizard. Mostly tail.","reptile"},
 	{"crocus","NGANMI","dFS",1,1,1,"9575CD","FFC107","goblet bloom popping out of snow","rustle","First flower of spring. Very punctual.","plant,flower"},
 	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
-	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
-	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
 }

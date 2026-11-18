@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow magic","FICAKB","iZ",5,7,2,"1A0033","7C4DFF","smoky shadow sigil bolt","hiss","Spooky spells, extra spooky.","spooky,magic"},
+	{"shadow man","AICJNA","jZY",4,7,2,"0A0A0A","312E81","tall featureless shadow with hat","whisper","Seen out of the corner of your eye.","spooky"},
+	{"shadow meteor","HIDAKB","iEke",8,8,6,"1A0033","AA00FF","black flaming rock with violet trail","roar","A meteor that stayed up too late.","spooky,space,explosive"},
+	{"shadow mist","FICDOJ","iZS",4,3,2,"1A0033","7C4DFF","drifting black mist with violet glints","hiss","Gloomy. Sneaky. Draining.","spooky"},
+	{"shadow nova","FIDFOI","ikP",7,7,1,"0D0221","AA00FF","black ring with violet edge bursting out","boom","Darkness, all at once, in every direction.","spooky"},
+	{"shadow oak","NIECMI","GiZS",5,1,8,"212121","4A148C","black oak oozing purple mist","chime","Darkness grows on it.","plant,magic,mythical,spooky"},
+	{"shadow orb","FICGKE","iR",5,5,2,"1A0033","AA00FF","swirling black sphere with violet sparks","hiss","Hungry little ball of night.","spooky"},
+	{"shadow panther","AICJAA","DZf",5,9,3,"0F0F23","7C3AED","ink-black panther dissolving into mist","hiss","Here. Gone. Behind you.","cat,spooky"},
 	{"shadow pillar","FIDBKI","iO",7,6,1,"1A0033","AA00FF","black column with violet sparks","hum","Darkness, straight down.","spooky"},
 	{"shadow prison","KICLII","iO",6,4,5,"1A0033","7C4DFF","cage of writhing black smoke","hiss","Dark corner. Forever.","spooky"},
 	{"shadow punch","KICAKB","ikf",6,9,2,"1A0033","9C27B0","smoky black fist from nowhere","pow","Didn't see it. Felt it.","spooky,melee"},
@@ -395,12 +403,4 @@ return {
 	{"sniff","KMAOKI","a",1,5,1,"FFCC80","FFFFFF","swirly smell-line wisps","sniff","Smells like... trouble.","silly"},
 	{"snipe","AMCJDA","jAfT",3,5,2,"8A6A44","F2E8D0","streaky bird with long bill","squawk","Zig-zags when it flies.","bird,wetland"},
 	{"sniper","LMCJNI","ZTe",6,3,3,"4D7C0F","1F2937","ghillie suit made of leaves","bang","You'll never see the bush coming.","military,stealth"},
-	{"sniper rifle","CKCBwI","Te",7,3,3,"5E6B3A","24262A","long rifle with big scope","bang","Somewhere very far away, someone is aiming.","modern,ranged"},
-	{"sniper tower","EMDMII","GZSTe",6,1,5,"556B2F","8D6E63","very tall thin tower, hidden perch","thud","One shot. One very long distance.","structure,defense,tower"},
-	{"snore","KMBFOB","jO",2,4,1,"B39DDB","FFFFFF","big Z letters rumbling outward","snore","ZZZZzzzz. Shockingly loud.","silly,loud"},
-	{"snorkel","BBAOKF","B",1,5,2,"F1C40F","BFE6F2","tube with goggle mask","bonk","Breathe underwater-ish.","sport,ocean"},
-	{"snot","FJBLGI","SHNP",2,3,2,"A8D84E","7FB030","stretchy green goo blob with drippy strings","squelch","Pick a card. Wait, that is not a card.","silly,sticky,gross"},
-	{"snout","BMBMGG","cHe",3,3,4,"F4A6B7","E57390","pink pig snout, two round nostrils, snuffling","grunt","Sniffs out snacks at 500 paces.","body,farm,silly"},
-	{"snow","GCCEOJ","JSN",2,3,2,"FFFFFF","D6E6F2","soft falling flakes, white ground","hush","Pretty. Cold. Fun for exactly ten minutes.","frozen"},
-	{"snow angel","ACCJNB","AJFN",4,5,3,"F8FAFC","BAE6FD","angel-shaped snow outline rising up with powdery wings","chime","Lie down. Flap. Freeze. Art.","frozen,cute,holiday"},
 }

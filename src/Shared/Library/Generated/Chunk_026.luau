@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tabaxi","AMCJNA","DZf",4,9,3,"F59E0B","1F2937","lithe cat-person with a hooded cape","meow","Curious about everything. Especially your stuff.","cat"},
+	{"tabbouleh","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","parsley salad with bulgur","crunch","More parsley than you thought possible.","edible,healthy"},
+	{"tabby cat","AMBJAA","dfT",2,7,2,"B07A3E","5A3A1E","striped orange-brown coat, M on forehead","meow","Has an M on its face. Stands for Mine.","mammal,pet,cute"},
+	{"table","BMDC0I","G",1,1,7,"8B5A2B","5A3A1E","long wooden table on four legs","thud","Flip it for instant cover.","furniture,household"},
+	{"tablecloth","BMCL2I","jO",1,6,1,"C0392B","F2F2EE","checkered tablecloth","clang","Yank! Everything flies.","kitchen,household"},
+	{"tablet","BDBI1I","Gd",1,5,2,"24262A","BFE6F2","flat touchscreen slate","beep","Swipe left on enemies.","tech"},
+	{"tackle","KMCAKB","kfO",5,8,3,"8D6E63","FFFFFF","shoulder impact ring","thud","Touchdown! Ow.","sport"},
+	{"taco","IMBAKF","ceV",3,6,2,"E8B84A","7DBE3A","U-shell, lettuce, meat, cheese","splat","A crunchy shell of delicious chaos.","edible"},
 	{"taco bowl","IGBOKI","F",2,5,3,"E8B84A","8A5A3A","shell bowl of taco fillings","crunch","A taco you eat with a fork.","edible,healthy"},
 	{"taco salad","IGBOKI","F",2,5,3,"E8B84A","7DBE3A","salad in a crispy shell bowl","crunch","A salad with a crunchy bowl.","edible,healthy"},
 	{"tadpole","AMAJEC","eB",1,5,1,"3A3A2A","6A6A4A","round body, wiggly tail","croak","Future frog. Currently a comma.","amphibian,wetland,aquatic"},
@@ -395,12 +403,4 @@ return {
 	{"torta","IGBOKI","F",2,5,3,"D9A04A","7DBE3A","stuffed crusty sandwich","crunch","Mexico's mighty sandwich.","edible,healthy"},
 	{"tortellini","IMAELB","eP",2,7,1,"F2D08A","E8C070","ring-shaped stuffed pasta","pitter","Pasta shaped like belly buttons.","edible"},
 	{"tortilla","IMBAKK","Uke",3,7,2,"F2E2B8","C8A070","thin round flatbread, char spots","whoosh","A flat round frisbee of corn.","edible"},
-	{"tortilla chips","IMBAKK","TeV",3,7,2,"E8B84A","C8803A","golden triangle chip","whoosh","Triangle shuriken. Dip optional.","edible"},
-	{"tortilla espanola","IMBAKK","Uke",3,7,2,"F2D08A","C8A070","thick round potato omelet","whoosh","A potato cake pretending to be an omelet.","edible"},
-	{"tortoise","AMBJUA","GN",2,1,9,"8A6A3A","C8A86A","high domed shell, elephant legs","hiss","Slow and steady. Wins. Eventually.","reptile,armored"},
-	{"tortoise beetle","AMAJFA","Gfa",1,3,4,"F2C82A","E8D888","gold dome beetle","click","Changes from gold to red. Magic.","insect,armored"},
-	{"torvosaurus","AMEJBA","DkfT",8,6,7,"6A3A2A","C88A5A","huge jurassic predator","roar","Jurassic tough guy.","dinosaur,extinct,reptile,predator"},
-	{"tostada","IMBAKK","Uke",3,7,2,"E8B84A","8A5A3A","flat crisp tortilla, toppings","whoosh","A taco that lay down.","edible"},
-	{"tostones","IMBAKK","Uke",3,7,2,"E8C070","D9A04A","smashed fried plantain discs","whoosh","Crispy smashed plantain coins.","edible"},
-	{"totem pole","EGDMII","GFSe",3,1,7,"C62828","FFB300","stacked carved faces with wings","thud","Watches with all its faces.","structure,defense,tower,ancient"},
 }

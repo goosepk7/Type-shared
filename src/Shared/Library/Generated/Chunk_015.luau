@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laundry detergent","BBBD2I","jN",1,5,2,"E67E22","F2F2EE","big jug of suds","thud","Bubbles. Everywhere.","household"},
+	{"laurel","NGCCMI","GWFkS",2,1,6,"4E342E","2E7D32","dense glossy aromatic shrub tree","rustle","Victory wreaths grow here.","plant,tree"},
+	{"lava","FACNOI","KSN",6,3,5,"FF4500","FFB703","molten orange pool, black crust cracks","bubble","The floor is lava. Not a game anymore.","fire"},
+	{"lava bomb","HACAKB","KEe",6,6,3,"3E2723","FF6D00","spinning glowing rock blob, smoke tail","whoosh","The volcano is throwing things now.","fire,explosive"},
+	{"lava burst","FADNOI","KEl",7,6,3,"E65100","FFD740","ground bursting with spurting lava","boom","Surprise! The ground was hot.","fire,explosive"},
+	{"lava cake","IABNGI","KSc",4,4,2,"3A1A10","E8761A","small dome oozing hot chocolate","sizzle","A tiny volcano made of chocolate.","edible,sweet"},
 	{"lava cave","MAENII","KS",6,1,8,"3E2723","FF5722","dark tunnel with glowing lava streams","echo","Hot rocks. Hot floor. Hot everything.","place,adventure,flammable"},
 	{"lava dragon","AAEKAB","KASg",8,5,8,"450A0A","F97316","black rock dragon with glowing lava cracks","roar","Born in a volcano. Never left.","mythical,reptile,fire"},
 	{"lava elemental","AADJNA","KkS",7,3,7,"7F1D1D","F97316","molten rock body with glowing cracks","sizzle","Leaves very hot footprints.","elemental,fire"},
@@ -397,10 +403,4 @@ return {
 	{"machete","CKCHrK","fT",4,7,4,"8A929B","24262A","wide heavy jungle blade","shing","Clears jungles and schedules.","medieval,sharp"},
 	{"machine","OKDMWI","kIeh",6,2,7,"6B7280","F59E0B","clanking box of gears, pistons, funnels and a steam whistle","clank","Nobody knows what it makes. It makes it loudly.","mechanical"},
 	{"machine gun","CKDMwI","TeV",7,7,5,"2C3539","6B7B3A","belt-fed gun on a bipod","rattle","Brrrrrrrrt.","modern,ranged"},
-	{"machu picchu","EMFCII","GSN",5,1,10,"9E9E9E","43A047","stone terraces on a misty mountain ridge","rumble","Way up in the clouds. Good luck climbing.","structure,landmark,ancient"},
-	{"mackerel","ABAJEC","dB",1,8,1,"3A6A6A","C8D8D8","wavy stripes on green back","splash","Holy mackerel! It's shiny.","fish,aquatic"},
-	{"macrauchenia","AMDJAA","Dk",5,4,8,"9A7A5A","D8C8A8","camel body with short trunk","roar","A camel with a trunk. Why not.","mammal,extinct,ancient,heavy"},
-	{"macuahuitl","CECHJK","fV",5,6,4,"8B5A2B","1B1A22","wooden paddle edged with glass","shing","Paddle with teeth.","ancient,sharp"},
-	{"mad scientist","LDCJNA","jELh",5,4,4,"F8FAFC","84CC16","wild white hair, goggles, bubbling beaker","cackle","IT'S ALIVE. Mostly.","science,villain"},
-	{"madeleine","IMALKI","dSc",2,3,3,"F2C870","E8B050","shell-shaped little cake","chomp","Small cake shaped like a seashell.","edible,sweet"},
 }

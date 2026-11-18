@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sniper rifle","CKCBwI","Te",7,3,3,"5E6B3A","24262A","long rifle with big scope","bang","Somewhere very far away, someone is aiming.","modern,ranged"},
+	{"sniper tower","EMDMII","GZSTe",6,1,5,"556B2F","8D6E63","very tall thin tower, hidden perch","thud","One shot. One very long distance.","structure,defense,tower"},
+	{"snore","KMBFOB","jO",2,4,1,"B39DDB","FFFFFF","big Z letters rumbling outward","snore","ZZZZzzzz. Shockingly loud.","silly,loud"},
+	{"snorkel","BBAOKF","B",1,5,2,"F1C40F","BFE6F2","tube with goggle mask","bonk","Breathe underwater-ish.","sport,ocean"},
+	{"snot","FJBLGI","SHNP",2,3,2,"A8D84E","7FB030","stretchy green goo blob with drippy strings","squelch","Pick a card. Wait, that is not a card.","silly,sticky,gross"},
+	{"snout","BMBMGG","cHe",3,3,4,"F4A6B7","E57390","pink pig snout, two round nostrils, snuffling","grunt","Sniffs out snacks at 500 paces.","body,farm,silly"},
+	{"snow","GCCEOJ","JSN",2,3,2,"FFFFFF","D6E6F2","soft falling flakes, white ground","hush","Pretty. Cold. Fun for exactly ten minutes.","frozen"},
+	{"snow angel","ACCJNB","AJFN",4,5,3,"F8FAFC","BAE6FD","angel-shaped snow outline rising up with powdery wings","chime","Lie down. Flap. Freeze. Art.","frozen,cute,holiday"},
 	{"snow cannon","OCCExI","JNP",3,3,5,"F2F2EE","2F6FD1","cannon fan blasting snow","whoosh","Instant winter. No waiting.","frozen"},
 	{"snow cloud","FCCDOJ","QJN",4,4,3,"ECEFF1","B3E5FC","fluffy cloud snowing on target","hush","Your own little winter.","frozen"},
 	{"snow cone","ICBNGI","JNP",3,3,2,"4FA3E8","E8434F","paper cone of rainbow ice","crackle","A cone of syrupy snow.","edible,frozen,sweet"},
@@ -395,12 +403,4 @@ return {
 	{"star knight alien","AHCJNA","Gfe",6,5,6,"FDE68A","312E81","armor made of starlight","clang","Guards the galaxy. Night shift.","cosmic,warrior"},
 	{"star sheep","ALBJAJ","dO",2,4,2,"F8FAFC","C4B5FD","fluffy sheep with star-speckled wool","baa","Count it. Fall asleep. Lose.","cute"},
 	{"star shield","FHCIKI","Ga",3,4,6,"FFF59D","5C6BC0","dome of linked glowing stars","chime","Constellation armour.","space,defence"},
-	{"star shower","FHEEOB","KPO",7,6,2,"FFF9C4","B39DDB","many tiny shooting stars raining down","chime","Make all the wishes.","space,holy"},
-	{"star spirit","AHAJKJ","AFc",2,7,1,"FEF9C3","93C5FD","five-pointed glowing star with tiny face","chime","Wished upon itself. Worked.","cosmic,cute"},
-	{"star tortoise","AMBJUA","GN",2,2,8,"2A2A1E","F2D82A","shell with yellow star patterns","hiss","Stars on its shell.","reptile,armored"},
-	{"star-nosed mole","AMAJAA","Cjf",1,5,3,"2A2626","F28AA0","pink tentacled star nose","squeak","Has a pink star for a nose. Nightmare cute.","mammal,wild"},
-	{"stardust","FLBDOJ","jFS",3,4,1,"D8C3FF","FFF1B8","glittering cosmic dust cloud","tinkle","Everything you are, sprinkled.","space,cute"},
-	{"stare down","KIBAKB","O",3,4,1,"4A148C","FFFFFF","intense glowing eyes","hmm","Don't blink. Don't blink.","silly"},
-	{"starfall","HHEEOB","KePO",8,7,3,"FFF3B0","B39DDB","rain of glowing white-gold stars","chime","The sky is falling. Beautifully.","space,holy"},
-	{"starfighter","DDDAHB","ATeg",7,10,6,"ECEFF1","E53935","sharp nose, four angled wings, laser tips","pew","Pew pew. Pew pew pew.","vehicle,space"},
 }
