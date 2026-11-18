@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toastie","IABOKI","KF",2,5,3,"D49040","F2C24A","triangle toasted sandwich","crunch","Hot, crispy, slightly dangerous inside.","edible,healthy"},
+	{"toddler","LMBJNA","Djd",2,6,3,"FDE68A","60A5FA","wobbly kid with sippy cup","giggle","Unstoppable. Sticky. Loud.","family,cute"},
+	{"toe","BMAAKG","UfO",2,5,2,"E8B48A","FF8A80","one red throbbing big toe, pain stars","squeak","This little piggy went to WAR.","body,silly"},
+	{"toe jam","FJALGI","SMN",1,1,1,"7A6A55","A8A29E","grey-brown crumbly goo between cartoon toes","whiff","Not the kind you put on toast.","gross,silly"},
 	{"toffee","IMBLGI","SNO",2,3,3,"B5651D","D9A04A","shattered golden slab","gloop","Glues teeth together. Try it on enemies.","edible,sticky,candy,sweet"},
 	{"toffee bar","IMBLGI","SNP",2,3,3,"B5651D","5A2E16","hard toffee with chocolate top","gloop","Crunch then stick.","edible,sticky,candy"},
 	{"tofu","IMBLGG","USN",2,3,3,"F7F4EC","E8E0C8","white wobbly block","wobble","Wobbly, white, and takes any flavor.","edible,wobbly"},
@@ -399,8 +403,4 @@ return {
 	{"vanquish","KHDAKB","EO",7,7,1,"FFD54F","D32F2F","golden heroic slam","boom","Victory, delivered hard.","holy"},
 	{"vapor","FBBDOJ","jZS",2,4,1,"D7E3EA","FFFFFF","thin wispy translucent cloud","hiss","Mostly air. A little drama.","aquatic"},
 	{"vaporize","KHDBKI","KT",8,9,1,"E1F5FE","FFFFFF","bright beam leaving puffs of vapour","zing","Poof. Just a little steam left.","explosive"},
-	{"vaquita","ABBJEC","UDB",2,8,4,"8A9098","1E2024","tiny porpoise, dark eye rings","click","World's smallest porpoise. Wears eyeliner.","mammal,aquatic,ocean"},
-	{"vardo wagon","DMCKHL","Dkg",3,4,5,"C62828","FFD54F","brightly painted curved-roof wagon","clatter","A home on wheels. Very colourful.","vehicle,ancient"},
-	{"vase","BMBAKK","eV",1,5,1,"2F6FD1","F2F2EE","tall painted porcelain vase","thud","Priceless. Throwable.","container"},
-	{"vega","MHDAKJ","KTe",6,7,6,"E3F2FD","90CAF9","bright blue-white spinning star","twinkle","Spins so fast it is squashed.","space,star"},
 }

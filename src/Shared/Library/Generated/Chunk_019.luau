@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paratrooper","LFCJNB","DAe",5,7,4,"4D7C0F","F8FAFC","parachute, goggles, jump suit","whoosh","Arrives from the sky. On purpose.","military,flying"},
+	{"parchment","BLBIyE","Gjh",2,4,2,"E7D8B1","7C5C3A","curling yellowed sheet with burnt edges and faded ink","rustle","Ye olde paper. Smells of wizard.","ancient,magic"},
+	{"parent","LMCJNA","GFO",4,4,6,"6C8EBF","F2D0B4","grown-up with crossed arms, car keys, raised eyebrow","sigh","Because I said so. That is why.","family"},
+	{"parfait","IGBOKI","F",2,5,3,"F7F4EC","D7263D","tall glass of layered yogurt, berries","crunch","Layers of fruit, yogurt, crunch.","edible,healthy,breakfast"},
 	{"park","MGENII","FS",2,1,6,"7CB342","F5E6CA","grass, trees, benches, a duck pond","rumble","Lovely spot for a picnic. And an ambush.","place,terrain"},
 	{"park ranger","LGCJNA","QFc",3,6,5,"365314","D6A35A","flat-brim hat, khaki uniform, binoculars","whistle","Only you can prevent forest fires.","outdoor"},
 	{"parka","BCCONI","GJ",1,4,3,"E67E22","1F2F55","puffy hooded winter coat","swish","Marshmallow armour.","clothing,winter"},
@@ -399,9 +403,4 @@ return {
 	{"pliers","JKAHJK","fH",2,6,5,"C0392B","8A929B","two-handle pinching jaws","clank","Grabs things you can't.","tool"},
 	{"pliosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","A8B0B8","huge-headed short neck sea reptile","roar","All jaws. Little neck.","extinct,reptile,aquatic,ocean"},
 	{"plot armor","KHCOKI","G",2,5,9,"FFD54F","FFFFFF","sparkling golden script around caster","ding","The hero never goes down this early.","meme,defence"},
-	{"plot hole","KLCLII","HY",5,5,3,"212121","7C4DFF","glowing hole in reality's story","whum","That makes no sense. Down you go.","silly,meme"},
-	{"plot twist","KLCNOI","jVY",5,6,2,"7C4DFF","FFD54F","swirling spotlight and question marks","dun","Nobody saw that coming.","chaos,meme"},
-	{"ploughman's lunch","IGBOKI","F",2,5,3,"F2C24A","C8904A","plate of bread, cheese, pickle","crunch","A farmer's lunch. Simple and strong.","edible,healthy"},
-	{"plover","AMBJDA","jAfT",3,5,2,"A8906A","F2F2F0","small bird with neck rings","squawk","Fakes a broken wing. Award winner.","bird,wetland"},
-	{"plow","JECFJF","CkI",5,4,6,"6B7280","8B5A2B","curved steel blade carving a furrow, dirt peeling aside","rumble","Turns fields over. Enemies too.","farm,tool"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green mamba","AMCJCD","fMN",4,8,3,"4AC84A","E8F07A","bright green slender tree snake","hiss","Neon green. Lives in trees.","reptile,venomous"},
+	{"green man","AGCJNA","WFN",5,3,6,"15803D","4D7C0F","face made of oak leaves with vine beard","rustle","The forest's face. Watching.","spirit,plant"},
+	{"green mango","IMBAKF","jke",3,6,2,"8DB84A","F2E8C0","unripe green mango","squirt","So sour your ears twitch.","edible,fruit,sour"},
 	{"green onion","IMBHJI","kf",3,5,4,"5E9E3A","F2F2E0","long green stalk, white bulb","bonk","An onion that never grew up.","edible,silly,vegetable"},
 	{"green pepper","IGBAKF","Fke",3,5,3,"3E8E2B","5EAE3A","blocky green bell pepper","thud","A bell that never rings.","edible,vegetable,healthy"},
 	{"green smoothie","IGBOKI","WF",3,5,3,"7DBE3A","3E8E2B","tall green drink","chomp","Tastes like a salad. Feels like victory.","edible"},
@@ -400,8 +403,4 @@ return {
 	{"hockey","KCCAJB","DJkf",5,8,4,"111827","E0F2FE","stick slapping a black puck across ice, spray of shavings","thwack","Two minutes for roughing. Worth it.","sport,frozen"},
 	{"hockey goalie pads","BMCIyF","G",1,3,5,"F2F2EE","C0392B","huge padded leg shields","bonk","The wall of the net.","sport"},
 	{"hockey mask","BKBONI","Gj",1,6,4,"F2F2EE","C0392B","white face guard with holes","clank","Spooky and safe.","armor,sport"},
-	{"hockey net","BMCLII","O",1,1,4,"C0392B","F2F2EE","red-framed small net","bonk","He shoots, he's trapped.","sport"},
-	{"hockey player","LCCJNA","Dke",5,8,5,"111827","F8FAFC","helmet, skates, hockey stick","crack","Body check! Hockey puck incoming.","sport,frozen"},
-	{"hockey puck","BMAA3F","keO",2,9,6,"24262A","4A4D52","flat black rubber disc","bonk","Slaps across ice. Slaps across faces.","sport"},
-	{"hockey stick","BMCHJK","kfI",3,7,4,"24262A","F2F2EE","long stick with angled blade","bonk","Slapshot to the face-off.","sport"},
 }

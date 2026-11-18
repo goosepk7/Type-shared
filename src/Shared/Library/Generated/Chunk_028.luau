@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vaquita","ABBJEC","UDB",2,8,4,"8A9098","1E2024","tiny porpoise, dark eye rings","click","World's smallest porpoise. Wears eyeliner.","mammal,aquatic,ocean"},
+	{"vardo wagon","DMCKHL","Dkg",3,4,5,"C62828","FFD54F","brightly painted curved-roof wagon","clatter","A home on wheels. Very colourful.","vehicle,ancient"},
+	{"vase","BMBAKK","eV",1,5,1,"2F6FD1","F2F2EE","tall painted porcelain vase","thud","Priceless. Throwable.","container"},
+	{"vega","MHDAKJ","KTe",6,7,6,"E3F2FD","90CAF9","bright blue-white spinning star","twinkle","Spins so fast it is squashed.","space,star"},
 	{"vegetable","IGBOKI","F",2,5,3,"5E9E3A","ED9121","bundle of mixed vegetables","crunch","Eat your vegetables. Throw your vegetables.","edible,healthy"},
 	{"vegetable soup","IBBOGI","FS",3,4,3,"C8762B","7DBE3A","chunky veg broth bowl","slurp","Every vegetable, taking a hot bath.","edible,warm,healthy"},
 	{"vegetable stew","IBBOGI","FS",3,4,3,"C8762B","7DBE3A","bowl of chunky veg stew","slurp","Vegetables, slowly united.","edible,warm,healthy"},
@@ -399,7 +403,4 @@ return {
 	{"wild west","MEFNII","Sh",3,1,6,"D2691E","E6C27A","dusty main street, saloon, cactus","rumble","This town ain't big enough.","place,terrain"},
 	{"wildcat","AMCJAA","ZfT",4,7,3,"8C7A62","2E261C","tabby-striped, bushy ringed tail","hiss","Your house cat's tough cousin.","mammal,predator,wild"},
 	{"wilderness","MGFNII","ZSh",4,1,8,"33691E","8D6E63","untamed forest, rivers and rocks","crowd","No roads. No rules.","place"},
-	{"wildfire","HAENOI","KSP",8,6,4,"D84315","FFB74D","spreading line of tall flames, smoke wall","roar","Spreads faster than you can run.","natural,fire"},
-	{"wildflame","FADFOB","KkP",6,7,2,"E85D04","FAA307","ragged flame wave, uneven leaping tongues","roar","Fire that skipped obedience school.","fire"},
-	{"willow tree","NGECMI","GWkSHN",4,1,7,"6D4C41","9CCC65","drooping curtain of long thin branches","rustle","Sad tree. Sad for you.","plant,tree"},
 }

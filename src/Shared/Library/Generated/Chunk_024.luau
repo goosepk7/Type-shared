@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"slurpee","ICBNGI","JN",3,3,2,"E8434F","4FA3E8","cup of colorful frozen slush","crackle","Brain freeze on demand.","edible,frozen,sweet"},
+	{"slushie machine","OCCM1I","JN",2,2,5,"47D7E8","C0392B","tank of spinning icy drink","clang","Brain freeze, weaponised.","kitchen,household"},
+	{"smack","KMBAKB","kf",3,9,1,"FF8A80","FFFFFF","giant cartoon hand swat","smack","Rude, but effective.","silly"},
+	{"smartwatch","BDAO1I","c",1,6,2,"24262A","BFE6F2","wrist screen watch","beep","Notifications: you are winning.","tech"},
 	{"smash","KECAKB","kfO",6,7,3,"8D6E63","FFE082","giant fist-shaped impact burst","crash","Big hands. Big crash. Big fun.","heavy"},
 	{"smell","FJCDOJ","jSIP",3,4,1,"A3B18A","D9E76C","wavy green stink lines rising from an old trainer","whiff","Whoever smelt it, dealt it.","gross,silly"},
 	{"smelt","ABAJEC","dB",1,6,1,"C8D8E0","8AA0B0","tiny smelly silver fish","splash","Smells like cucumber. Seriously.","fish,aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"squeaky mallet","CMCHtK","dfO",1,6,2,"C0392B","F2F2EE","huge squeaky rubber hammer","boing","SQUEAK. Ouch? Not really.","silly"},
 	{"squeaky toy","BMAHJK","jdf",1,7,2,"F1C40F","C0392B","rubber toy that squeaks","squeak","SQUEAK. SQUEAK. SQUEAK.","toy"},
 	{"squeal","KMAFOB","jO",2,9,1,"F8BBD0","FFFFFF","high-pitched pink ring","eee","EEEEE! Ears ringing.","silly,loud"},
-	{"squeegee","BMBHJK","fI",1,7,2,"24262A","F1C40F","rubber blade on handle","clank","Swoosh. Spotless.","cleaning"},
-	{"squeeze","KMCLII","O",4,5,3,"F48FB1","FFFFFF","giant glowing hand squeeze","squeak","A very firm hug.","silly"},
-	{"squid","ABCJSC","jZHeB",4,6,3,"E8B0A0","D8584A","long torpedo body, ten arms, fins","squelch","Squirts ink and leaves. Bye!","aquatic,ocean,smart"},
-	{"squid mage","ALCJNJ","jiO",6,5,4,"A855F7","F0ABFC","purple robed figure, tentacle face","hum","Reads your mind. Unimpressed.","dungeon,spooky"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
 	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
 	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
@@ -402,5 +403,4 @@ return {
 	{"braid","BMBLCD","fHN",3,5,5,"E0B050","E63946","thick woven blond braid with a red bow, lasso loop","swish","Rapunzel called. She wants her rope back.","body"},
 	{"brain","BLBMGE","jleO",5,3,2,"F4A6B7","E57390","pink wrinkly brain floating, psychic rings","hum","Big brain time. Finally.","body,science,silly"},
 	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
-	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
 }

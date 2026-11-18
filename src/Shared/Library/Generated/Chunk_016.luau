@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lunch pail","BKAIyI","G",1,6,3,"C9CED4","24262A","old tin lunch pail","thud","Classic grub armour.","container"},
+	{"lunch rush","IMAELB","DP",2,7,1,"D72B2B","F2C24A","stampede of trays","pitter","Everyone, everywhere, all at lunch.","edible,sweet"},
+	{"lunch thief","LIBJNA","Zb",2,9,2,"1F2937","FACC15","kid with stuffed cheeks and paper bag","whoosh","Your sandwich? Gone.","school,silly"},
+	{"lunch tray","BMBIyK","G",1,6,2,"E67E22","8E9196","compartment plastic tray","tap","Sliding down hills since forever.","school"},
 	{"lunchbox","BMBIyK","G",1,6,4,"C0392B","C9CED4","metal box with handle","clang","Lunch. Armour. Lunch armour.","kitchen,household"},
 	{"lung","BFCFGE","kHI",4,6,3,"F2A1A1","E57373","pair of pink lungs inflating like bellows","whoosh","Deep breath in. Everybody out.","body,science"},
 	{"lungfish","ABCJEC","DfB",4,7,4,"6A6250","A89A80","eel-like with lungs, leg fins","splash","Breathes air. Naps in mud for years.","fish,aquatic,ancient"},
@@ -399,8 +403,4 @@ return {
 	{"mind beam","FLCBKI","jeO",5,8,1,"E040FB","F8BBD0","wavy pink brainwave beam","hum","Brain to brain. Hurts.","psychic"},
 	{"mind blast","FLCFOB","jkO",5,9,1,"E040FB","FFCCFF","pink rippling brainwave rings","hum","Thinks very hard. At you.","psychic"},
 	{"mind control","KLCAKB","jb",5,6,1,"D500F9","F8BBD0","wavy pink strings linking to target","hum","You will now dance. Thank you.","psychic"},
-	{"mind control alien","ALCJNE","jlO",5,4,3,"A855F7","F0ABFC","alien with glowing forehead and spiral eyes","hum","Look into my eyes. You want to lose.","alien,magic"},
-	{"mind control ray","OLBBwI","je",5,6,3,"A66BDB","8BC34A","spiral-dish ray gun","hum","You are getting very... confused.","scifi"},
-	{"mind grip","KLCAKJ","leO",6,8,3,"C9A8FF","7A4FE0","a glowing psychic grip lifts the target and slams them down","hum","Hold still. Now fall.","hero,movie,psychic"},
-	{"mind spike","FLBAuB","TO",5,9,1,"E040FB","FFFFFF","pink crystal spike of thought","zing","Ouch. In the brain.","psychic"},
 }

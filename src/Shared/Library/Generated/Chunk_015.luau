@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lark","AMAJDB","dA",1,7,1,"A88A6A","E8D8C0","streaky brown bird, crest","tweet","Sings while climbing to the sky.","bird,cute"},
+	{"larva","AMAJTD","CWP",1,3,1,"F2E8D0","C8B07A","soft squishy baby bug","squelch","Baby bug. Hungry bug.","bug"},
+	{"lasagna","IMCCII","GFc",3,2,6,"D8602B","F2D08A","layered slab, cheese, red sauce","thud","Layers upon layers of cozy defense.","edible,giant"},
+	{"laser","CHCBJI","KTe",6,10,3,"FF2D2D","F2F2EE","thin searing red beam","zap","Pew pew, but continuous.","scifi,ranged"},
 	{"laser cannon","CHDMxI","KTe",8,5,6,"3A3F45","FF2D2D","heavy twin-barrel beam cannon","zap","For lasers that need to be heard.","scifi,ranged"},
 	{"laser chainsaw","CACHJI","KfV",8,5,5,"E67E22","FF2D2D","chainsaw with glowing laser teeth","zap","Rrrrrzzzzzap.","scifi,sharp,loud"},
 	{"laser drill","OHCBwI","KCe",6,6,5,"E67E22","FF2D2D","bulky drill firing a laser","hum","Tunnels through anything.","scifi"},
@@ -399,8 +403,4 @@ return {
 	{"lunch","IMBL2I","dFc",2,1,2,"B45309","84CC16","brown paper bag with a sandwich, apple and juice box","crunch","Trade you my apple for your cookies.","edible,school"},
 	{"lunch lady","LMCJNA","ceN",3,4,5,"F8FAFC","FDE68A","hairnet, ladle, mystery stew","splat","Slops mystery meat. It moves.","food,silly"},
 	{"lunch money","BMAAJK","ce",1,7,1,"2E8B57","C9CED4","few coins and a note","tap","Tempting.","school"},
-	{"lunch pail","BKAIyI","G",1,6,3,"C9CED4","24262A","old tin lunch pail","thud","Classic grub armour.","container"},
-	{"lunch rush","IMAELB","DP",2,7,1,"D72B2B","F2C24A","stampede of trays","pitter","Everyone, everywhere, all at lunch.","edible,sweet"},
-	{"lunch thief","LIBJNA","Zb",2,9,2,"1F2937","FACC15","kid with stuffed cheeks and paper bag","whoosh","Your sandwich? Gone.","school,silly"},
-	{"lunch tray","BMBIyK","G",1,6,2,"E67E22","8E9196","compartment plastic tray","tap","Sliding down hills since forever.","school"},
 }

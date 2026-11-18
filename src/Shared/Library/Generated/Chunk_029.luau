@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wildfire","HAENOI","KSP",8,6,4,"D84315","FFB74D","spreading line of tall flames, smoke wall","roar","Spreads faster than you can run.","natural,fire"},
+	{"wildflame","FADFOB","KkP",6,7,2,"E85D04","FAA307","ragged flame wave, uneven leaping tongues","roar","Fire that skipped obedience school.","fire"},
+	{"willow tree","NGECMI","GWkSHN",4,1,7,"6D4C41","9CCC65","drooping curtain of long thin branches","rustle","Sad tree. Sad for you.","plant,tree"},
 	{"willpower","KHCOKI","GF",3,4,6,"FF7043","FFD54F","blazing orange inner glow","grunt","Not giving up. Not today.","support"},
 	{"wimp","LMBJNA","UdY",1,9,1,"FDE68A","93C5FD","trembling kid hiding behind own hands, knees knocking","squeak","Runs away so fast it counts as an attack.","silly"},
 	{"wind","FFCFOB","kI",4,8,2,"A8C8D8","F0F6FA","streaking pale air lines and leaves","whoosh","Invisible. Opinionated. Shove-y.","air"},

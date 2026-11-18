@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plot hole","KLCLII","HY",5,5,3,"212121","7C4DFF","glowing hole in reality's story","whum","That makes no sense. Down you go.","silly,meme"},
+	{"plot twist","KLCNOI","jVY",5,6,2,"7C4DFF","FFD54F","swirling spotlight and question marks","dun","Nobody saw that coming.","chaos,meme"},
+	{"ploughman's lunch","IGBOKI","F",2,5,3,"F2C24A","C8904A","plate of bread, cheese, pickle","crunch","A farmer's lunch. Simple and strong.","edible,healthy"},
+	{"plover","AMBJDA","jAfT",3,5,2,"A8906A","F2F2F0","small bird with neck rings","squawk","Fakes a broken wing. Award winner.","bird,wetland"},
+	{"plow","JECFJF","CkI",5,4,6,"6B7280","8B5A2B","curved steel blade carving a furrow, dirt peeling aside","rumble","Turns fields over. Enemies too.","farm,tool"},
 	{"plug","BDBL1I","SLO",3,1,4,"F5F5F5","FACC15","three-prong plug and a wall socket with a surprised face","zap","Do not stick a fork in it. Seriously.","electric,household"},
 	{"plum","IGBAKF","Fke",3,6,2,"6B2D5C","3E7A3B","round purple, dusty bloom","splat","Purple, juicy, perfectly plummy.","edible,fruit,sweet"},
 	{"plum tomato","IMBGKF","EkeP",3,4,3,"D72B2B","3E7A2B","egg-shaped red tomato","splat","The tomato that went to cooking school.","edible"},
@@ -398,8 +403,4 @@ return {
 	{"raccoon dog","AMBJAA","jfb",3,7,2,"6E5E4E","2A2420","round fluffy body, raccoon mask","yip","Not a raccoon. Not quite a dog.","mammal,wild"},
 	{"raccoon kit","AMAJAA","Cfb",1,5,3,"8A8680","2A2826","tiny masked fluffball","squeak","Already stealing. Just smaller things.","mammal,wild"},
 	{"race","KFCO6B","DkI",4,10,2,"111827","F8FAFC","chequered flag whipping and speed lines down a straight","vroom","Last one there is a rotten summon.","sport,speed"},
-	{"race car","DMCKHL","Dkg",5,10,4,"E10600","F5F5F5","low wedge body, rear wing, fat slick tyres","engine","Zero to rude in 2.4 seconds.","mechanical,vehicle,land,sport"},
-	{"race car driver","LACJNL","DE",4,10,4,"DC2626","F8FAFC","racing suit, helmet, checkered flag","vroom","Zero to sixty in a typo.","sport,vehicle"},
-	{"race track","MMENII","DS",3,1,6,"424242","E53935","looping asphalt with curbs and flags","engine","Everyone goes faster here.","place,sport"},
-	{"raclette","IMBLGI","cN",2,3,3,"F2C870","D9A04A","melted cheese scraped from wheel","gloop","Cheese that melts onto your plate.","edible,sticky"},
 }

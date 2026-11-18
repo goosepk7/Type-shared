@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swamp","MJENII","SMN",4,1,7,"556B2F","33691E","murky green water, reeds, gnarled trees","bubble","Squelch. Squelch. You are stuck now.","place,terrain"},
+	{"swamp cypress","NBDCMI","GWkSN",3,1,7,"795548","9E9D24","tree standing in water with knobby knees","rustle","Stands in the swamp. Kneels to nobody.","plant,tree"},
+	{"swamp gas","FJCDOJ","jSM",4,3,2,"9E9D24","C5E1A5","glowing greenish swamp fumes","bubble","Smells like a swamp burped.","toxic"},
+	{"swamp hag","AJCJNA","MNh",5,4,4,"365314","84CC16","witch in mossy rags with frog familiar","cackle","Brews soup. Nobody asks what's in it.","witch"},
 	{"swamp shack","EBBNII","GSN",3,1,4,"6D4C41","33691E","rickety hut on stilts over swamp","moan","Rickety. Rotten. Ready.","place,spooky"},
 	{"swan","ABCJDC","AkfB",3,5,2,"F7F7F4","F2701E","white swan, long curved neck","hiss","Graceful on top. Paddling chaos below.","bird,aquatic"},
 	{"swan goose","ABBJDC","AfOB",2,5,2,"C8A07A","1E1E1E","knobby goose","quack","Knob-nosed goose. Loud.","bird,aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"toasted marshmallow","IABLGG","UKN",2,3,3,"C8803A","F7F4F0","golden-brown puff on a stick","wobble","Crispy outside, molten inside.","edible,wobbly,sweet"},
 	{"toaster","BABMII","Kle",2,3,4,"DDE3E8","24262A","chrome box with two slots","clang","Pop! Toast at 100 miles per hour.","kitchen,household"},
 	{"toaster oven","BABMII","K",2,1,5,"C9CED4","24262A","small box oven with dial","clang","Toaster's bigger, braver cousin.","kitchen,household"},
-	{"toastie","IABOKI","KF",2,5,3,"D49040","F2C24A","triangle toasted sandwich","crunch","Hot, crispy, slightly dangerous inside.","edible,healthy"},
-	{"toddler","LMBJNA","Djd",2,6,3,"FDE68A","60A5FA","wobbly kid with sippy cup","giggle","Unstoppable. Sticky. Loud.","family,cute"},
-	{"toe","BMAAKG","UfO",2,5,2,"E8B48A","FF8A80","one red throbbing big toe, pain stars","squeak","This little piggy went to WAR.","body,silly"},
-	{"toe jam","FJALGI","SMN",1,1,1,"7A6A55","A8A29E","grey-brown crumbly goo between cartoon toes","whiff","Not the kind you put on toast.","gross,silly"},
 }

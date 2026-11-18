@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
+	{"english muffin","IMBAKK","Uke",3,7,2,"E8D0A0","C89A5A","flat round with nooks","whoosh","Nooks, crannies, and butter traps.","edible"},
 	{"enlarge","KLCOKI","W",4,4,4,"66BB6A","C8E6C9","green upward arrows, caster swelling huge","stretch","Bigger. Much bigger.","silly"},
 	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
 	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
@@ -401,6 +403,4 @@ return {
 	{"flee","KFBOKB","DZ",1,10,1,"E0E0E0","FFFFFF","caster zooming away with dust cloud","whoosh","Tactical retreat! Very tactical.","speed,silly"},
 	{"fleet","DBFELC","EehB",8,4,9,"607D8B","1E88E5","sea full of warships","engine","The whole navy arrives.","vehicle,mechanical"},
 	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
-	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
-	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
 }

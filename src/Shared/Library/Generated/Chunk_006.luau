@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cleaner shrimp","ABAJRA","GFfT",1,4,5,"E8301E","F2F2F2","red-white striped shrimp","clack","Runs a dental clinic for fish.","crustacean,aquatic,armored"},
+	{"cleaner wrasse","ABAJEC","dFB",1,6,1,"3A6AE8","1E1E1E","small striped cleaner fish","splash","Runs a spa for sharks.","fish,aquatic"},
 	{"cleaning robot","OKBJNF","dIN",2,4,4,"F8FAFC","0EA5E9","small robot with mop and bucket","whir","Wet floor. Your fault.","robot,silly"},
 	{"cleanse","KHBOKJ","F",1,6,2,"E0F7FA","FFFFFF","clean sparkly wave over ally","chime","Removes all the gross stuff.","support"},
 	{"clearing","MGDNII","FSc",4,1,5,"A3E635","FDE68A","sunlit grassy circle ringed by trees, butterflies","tweet","Suspiciously peaceful. Boss fight peaceful.","place,forest"},

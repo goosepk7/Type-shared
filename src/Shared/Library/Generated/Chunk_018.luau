@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"neptune","MCFGKJ","JkIe",8,2,10,"1E5BB8","4FC3F7","deep blue sphere, white streaky clouds","rumble","Windiest planet. Breezy is an understatement.","space"},
+	{"nerd","LLCJNA","jeh",3,4,3,"0EA5E9","F8FAFC","thick glasses, pocket protector, calculator","ding","Calculated your weakness. In seconds.","school,meme"},
+	{"nerve","KDBBCB","LPO",4,9,1,"FFE45E","FFFFFF","jagged yellow nerve line crackling with sparks","zap","You are getting on it. The last one.","body,science,electric"},
+	{"nest","EGBMII","Geh",3,1,3,"8D6E4A","C9A66B","twig bowl with three speckled eggs and an angry beak","tweet","Mama bird is home. And furious.","bird,wild"},
 	{"net","BMCLJK","NO",1,5,3,"B89B6A","6B7B3A","knotted rope mesh","clank","Catch of the day: you.","tool"},
 	{"net gun","OMCAwI","eNO",2,7,3,"6B7B3A","8E9196","wide-barreled launcher, net bundle","twang","Fwoomp. Caught.","ranged,trap"},
 	{"net launcher","OKCMxI","eNO",3,5,5,"6B7B3A","B89B6A","tube that fires weighted nets","clank","Fwoomp. Caught. Next.","defense,mechanical"},
@@ -399,8 +403,4 @@ return {
 	{"parasol","BHCIyK","G",1,4,3,"FF3EA5","F2F2EE","wide striped sun canopy","clank","Shade, but tactical.","summer,defense"},
 	{"parasol mushroom","NGBLMI","GS",2,1,3,"F5E6CA","8D6E63","tall mushroom with a wide shaggy cap","poof","Carries its own umbrella.","plant,fungus"},
 	{"paratha","IMBAKK","Uke",3,7,2,"E0B070","B8803A","flaky layered flatbread","whoosh","Layers upon layers upon layers.","edible"},
-	{"paratrooper","LFCJNB","DAe",5,7,4,"4D7C0F","F8FAFC","parachute, goggles, jump suit","whoosh","Arrives from the sky. On purpose.","military,flying"},
-	{"parchment","BLBIyE","Gjh",2,4,2,"E7D8B1","7C5C3A","curling yellowed sheet with burnt edges and faded ink","rustle","Ye olde paper. Smells of wizard.","ancient,magic"},
-	{"parent","LMCJNA","GFO",4,4,6,"6C8EBF","F2D0B4","grown-up with crossed arms, car keys, raised eyebrow","sigh","Because I said so. That is why.","family"},
-	{"parfait","IGBOKI","F",2,5,3,"F7F4EC","D7263D","tall glass of layered yogurt, berries","crunch","Layers of fruit, yogurt, crunch.","edible,healthy,breakfast"},
 }

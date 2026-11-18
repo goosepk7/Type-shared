@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"race car","DMCKHL","Dkg",5,10,4,"E10600","F5F5F5","low wedge body, rear wing, fat slick tyres","engine","Zero to rude in 2.4 seconds.","mechanical,vehicle,land,sport"},
+	{"race car driver","LACJNL","DE",4,10,4,"DC2626","F8FAFC","racing suit, helmet, checkered flag","vroom","Zero to sixty in a typo.","sport,vehicle"},
+	{"race track","MMENII","DS",3,1,6,"424242","E53935","looping asphalt with curbs and flags","engine","Everyone goes faster here.","place,sport"},
+	{"raclette","IMBLGI","cN",2,3,3,"F2C870","D9A04A","melted cheese scraped from wheel","gloop","Cheese that melts onto your plate.","edible,sticky"},
 	{"radar dome","EDCMII","GSeL",3,1,6,"F5F5F5","B0BEC5","white golf-ball dome or big bowl dish","ping","Ping. Ping. Gotcha.","structure,building"},
 	{"radiance","FHDNOI","KFS",6,5,3,"FFE58A","FFFFFF","blinding golden aura dome","hum","Glowing with confidence. And photons.","holy"},
 	{"radiant burst","FHDGKI","KEF",7,8,1,"FFF176","FFFFFF","blinding golden explosion of light","boom","Shine so hard it hurts.","holy,explosive"},
@@ -399,8 +403,4 @@ return {
 	{"root","FGCLMI","NO",4,3,5,"5D4037","81C784","thick roots coiling around feet","creak","You are not going anywhere.","plant"},
 	{"root beer","IBBFKI","EkI",3,7,1,"4A2416","F2E2C8","frothy brown mug","fizz","Frothy and foamy.","edible,drink,fizzy"},
 	{"root snare","NECLMI","CSHNO",4,2,5,"6D4C41","8D6E63","gnarled roots bursting from the ground","rustle","The ground grabs your ankles.","plant"},
-	{"ropa vieja","IGBOKI","F",2,5,3,"B0402B","7DBE3A","shredded beef in red sauce","crunch","Old clothes. Delicious stew.","edible,healthy"},
-	{"rope","BMCLJK","HN",1,5,3,"B89B6A","D2B48C","coiled thick rope","clank","Ties up loose ends. And enemies.","tool"},
-	{"rope arrow","CMAAJI","He",2,8,2,"8B5A2B","B89B6A","arrow trailing a long rope","twang","For swinging in or dragging out.","medieval,ranged"},
-	{"rope bridge","EMCLII","jSN",2,1,3,"A1887F","6D4C41","wooden planks hanging from ropes","thud","Do not look down. Do not cut the ropes.","structure,silly"},
 }

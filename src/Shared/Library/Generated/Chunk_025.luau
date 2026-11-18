@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"squeegee","BMBHJK","fI",1,7,2,"24262A","F1C40F","rubber blade on handle","clank","Swoosh. Spotless.","cleaning"},
+	{"squeeze","KMCLII","O",4,5,3,"F48FB1","FFFFFF","giant glowing hand squeeze","squeak","A very firm hug.","silly"},
+	{"squid","ABCJSC","jZHeB",4,6,3,"E8B0A0","D8584A","long torpedo body, ten arms, fins","squelch","Squirts ink and leaves. Bye!","aquatic,ocean,smart"},
+	{"squid mage","ALCJNJ","jiO",6,5,4,"A855F7","F0ABFC","purple robed figure, tentacle face","hum","Reads your mind. Unimpressed.","dungeon,spooky"},
 	{"squire","LMBJNA","dQF",2,6,3,"78350F","94A3B8","oversized helmet, carries everything","clank","Carries the knight's bags. And the knight.","silly"},
 	{"squirrel","AMAJAA","Cdeb",1,6,1,"A8562A","F2D8B8","big bushy tail, nut in paws","squeak","Buries nuts. Forgets where. Always.","mammal,cute"},
 	{"squirrel monkey","AMAJBA","deb",1,8,2,"E0A84A","F2F2EE","tiny, white mask, yellow arms","chatter","Hyperactive mini monkey.","mammal,primate"},
@@ -399,8 +403,4 @@ return {
 	{"swag","KHBONA","daO",3,5,3,"FACC15","111827","strutting figure in shades, gold chain, cap sideways","ding","Too cool to dodge. Does not need to.","meme,cool"},
 	{"swallow","AMAJDB","dA",1,9,1,"2A3A6A","E8A07A","forked tail, swept wings","tweet","Swoops like a fighter pilot.","bird,cute"},
 	{"swallowtail","AMAJFB","jdA",1,5,1,"F2D82A","1E1E1E","yellow wings with tail points","flutter","Has little tail streamers. Fancy.","insect,cute"},
-	{"swamp","MJENII","SMN",4,1,7,"556B2F","33691E","murky green water, reeds, gnarled trees","bubble","Squelch. Squelch. You are stuck now.","place,terrain"},
-	{"swamp cypress","NBDCMI","GWkSN",3,1,7,"795548","9E9D24","tree standing in water with knobby knees","rustle","Stands in the swamp. Kneels to nobody.","plant,tree"},
-	{"swamp gas","FJCDOJ","jSM",4,3,2,"9E9D24","C5E1A5","glowing greenish swamp fumes","bubble","Smells like a swamp burped.","toxic"},
-	{"swamp hag","AJCJNA","MNh",5,4,4,"365314","84CC16","witch in mossy rags with frog familiar","cackle","Brews soup. Nobody asks what's in it.","witch"},
 }

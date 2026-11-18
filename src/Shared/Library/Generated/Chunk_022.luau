@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ropa vieja","IGBOKI","F",2,5,3,"B0402B","7DBE3A","shredded beef in red sauce","crunch","Old clothes. Delicious stew.","edible,healthy"},
+	{"rope","BMCLJK","HN",1,5,3,"B89B6A","D2B48C","coiled thick rope","clank","Ties up loose ends. And enemies.","tool"},
+	{"rope arrow","CMAAJI","He",2,8,2,"8B5A2B","B89B6A","arrow trailing a long rope","twang","For swinging in or dragging out.","medieval,ranged"},
+	{"rope bridge","EMCLII","jSN",2,1,3,"A1887F","6D4C41","wooden planks hanging from ropes","thud","Do not look down. Do not cut the ropes.","structure,silly"},
 	{"rope ladder","BMCCII","l",1,3,2,"B89B6A","8B5A2B","dangling ladder of rope","thud","Climb up. Climb away.","object"},
 	{"rope swing","EMBLII","kS",1,1,3,"8D6E63","212121","rope dangling from a branch with a tyre","thud","Swing out. Kick enemies.","structure,silly"},
 	{"roper","AECLII","cfH",5,1,8,"78716C","FBBF24","rock stalagmite with sticky tendrils","chomp","Pretends to be a rock. Very convincing.","dungeon"},
@@ -399,8 +403,4 @@ return {
 	{"sentinel orb","OHBJKE","GRh",1,3,7,"46DCFF","B0BAC8","a ringed sentry orb circling you that zaps shots away","ping","Your personal bullet bouncer.","scifi,robot,defense"},
 	{"sentry","OKCMWI","GQe",5,1,6,"6B7280","EF4444","tripod gun post with a red scanning eye and beeping light","beep","Halt. Who goes there? Never mind. Pew.","defense,mechanical,robot"},
 	{"sentry tower","EEDMII","GSeO",4,1,7,"616161","FFB300","tall tower with a sweeping searchlight","thud","Spots you. Points. Shoots.","structure,defense,tower"},
-	{"seraph","AHDJDB","KAFO",7,6,6,"FDE047","FB923C","six blazing wings around a radiant core","chime","All wings. All light. All the time.","holy,fire"},
-	{"seraph knight","AHCJNB","AFf",6,6,7,"F8FAFC","FACC15","winged knight in gold armor","clang","Heaven's bodyguard.","holy,warrior"},
-	{"serendipity","KHBOKJ","Fa",2,6,2,"43A047","FFF59D","surprising sparkle of clovers","ding","Oops. That went perfectly.","luck"},
-	{"seriema","AMCJDA","Dkf",4,8,5,"C8B08A","E8301E","long legs, feather tuft","boom","Smashes snakes on rocks.","bird,flightless"},
 }

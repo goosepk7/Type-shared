@@ -403,6 +403,4 @@ return {
 	{"energy wall","ELDCII","GSaL",4,1,6,"40C4FF","E1F5FE","shimmering glowing hex panels","hum","Hums ominously. Blocks everything.","future,magic"},
 	{"engine","OACM1I","KEkI",5,1,6,"4B5563","EF4444","chunky revving engine block, shaking, pipes blasting flame","rev","VROOM. Just the vroom. No car.","mechanical,loud"},
 	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
-	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
-	{"english muffin","IMBAKK","Uke",3,7,2,"E8D0A0","C89A5A","flat round with nooks","whoosh","Nooks, crannies, and butter traps.","edible"},
 }

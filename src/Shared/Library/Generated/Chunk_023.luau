@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"seraph","AHDJDB","KAFO",7,6,6,"FDE047","FB923C","six blazing wings around a radiant core","chime","All wings. All light. All the time.","holy,fire"},
+	{"seraph knight","AHCJNB","AFf",6,6,7,"F8FAFC","FACC15","winged knight in gold armor","clang","Heaven's bodyguard.","holy,warrior"},
+	{"serendipity","KHBOKJ","Fa",2,6,2,"43A047","FFF59D","surprising sparkle of clovers","ding","Oops. That went perfectly.","luck"},
+	{"seriema","AMCJDA","Dkf",4,8,5,"C8B08A","E8301E","long legs, feather tuft","boom","Smashes snakes on rocks.","bird,flightless"},
 	{"serow","AMCJAA","df",3,4,4,"3A3A3A","8A7A6A","goat-antelope with donkey ears","bleat","Goat, donkey, antelope. Pick one.","mammal,farm"},
 	{"serrano","IABAKK","KeP",5,7,2,"3E8E2B","C8202B","slender green pod","sizzle","Thin, green, and sneaky hot.","edible,spicy,flammable,pepper"},
 	{"serval","AMCJAA","UZfT",4,7,3,"D9B35A","1F1A12","tall legs, huge ears, spotted coat","hiss","Mostly ears and legs. And attitude.","mammal,predator,wild"},
@@ -399,8 +403,4 @@ return {
 	{"sludge","FJCF6F","MN",4,3,4,"5C6B2E","98A65A","thick murky green-brown flow","squelch","Slow, gross and coming for you.","toxic,silly"},
 	{"slug","AMAJGI","SN",1,1,2,"8A7A4A","C8B87A","slimy shell-less snail, eye stalks","squelch","A snail that moved out.","mollusk,aquatic,garden"},
 	{"slurp","KBBB5B","iHN",3,6,1,"F4D58D","FFFFFF","noodle being sucked up at speed, broth droplets","slurp","Rude at dinner. Devastating in battle.","silly,edible"},
-	{"slurpee","ICBNGI","JN",3,3,2,"E8434F","4FA3E8","cup of colorful frozen slush","crackle","Brain freeze on demand.","edible,frozen,sweet"},
-	{"slushie machine","OCCM1I","JN",2,2,5,"47D7E8","C0392B","tank of spinning icy drink","clang","Brain freeze, weaponised.","kitchen,household"},
-	{"smack","KMBAKB","kf",3,9,1,"FF8A80","FFFFFF","giant cartoon hand swat","smack","Rude, but effective.","silly"},
-	{"smartwatch","BDAO1I","c",1,6,2,"24262A","BFE6F2","wrist screen watch","beep","Notifications: you are winning.","tech"},
 }
