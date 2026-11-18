@@ -339,6 +339,7 @@ return {
 	{"self balancing scooter","DMAKHF","Dkg",2,5,2,"2B2B2B","C0C0C0","two side wheels, tall handle post","engine","Leans forward. Achieves victory.","mechanical,vehicle,land,silly"},
 	{"selfie","KHBF6B","jdO",3,8,1,"FFFFFF","EC4899","phone on a stick with a blinding flash and a pout","click","But first, let me blind you.","meme,internet"},
 	{"selkie","ABCJAC","jFB",4,7,4,"64748B","E2E8F0","seal with a woman's face, silky coat","splash","A seal on weekdays, a person on weekends.","mythical,aquatic"},
+	{"seltzer spray","BBBHwI","kN",2,7,2,"7FD3F5","C9CDD6","a soda siphon that sprays a fizzy jet","fizz","Refreshing. Aggressively.","cartoon,silly,water"},
 	{"semifreddo","ICBAKJ","JeN",3,5,2,"F7E8C8","D7263D","half-frozen sliced dessert","squish","Half frozen, fully elegant.","edible,frozen,sweet,dessert"},
 	{"sense warp","KLBAKI","eY",5,10,2,"FFE7A0","8FDCFF","two fingers to the brow, then a flicker beside the foe","whum","Felt your energy from across the map.","anime,ki,speed"},
 	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},

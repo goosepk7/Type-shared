@@ -16,7 +16,7 @@ return {
 	{"raita","ICBAKJ","JFN",2,5,2,"F7F4EC","7DBE3A","white yogurt with cucumber","squish","Puts out curry fires.","edible,frozen"},
 	{"rajasaurus","AMDJBA","DkfT",6,6,7,"8A4A2A","E8A04A","short horn crown","roar","Royal lizard with a crown bump.","dinosaur,extinct,reptile,predator,royal"},
 	{"rake","JKCHJK","fH",2,5,4,"2E8B57","8B5A2B","row of tines on long handle","clank","Step on it. Learn something.","tool,garden"},
-	{"rake trap","BMBLII","kO",1,1,3,"2E8B57","8B5A2B","rake lying tines-up","snap","Thwack. Cartoon physics.","trap,silly"},
+	{"rake trap","BMBLII","SO",2,3,2,"8B5A2B","9AA0AA","a garden rake hidden in the grass, tines up","thwack","Thwack. Cartoon physics.","cartoon,silly,trap"},
 	{"rakshasa","AIDJNA","jZfY",7,6,6,"7C2D12","FACC15","tiger-headed illusionist in robes","growl","Master of illusions and backwards palms.","mythical"},
 	{"rally","KHCNOI","DF",3,5,3,"FFD54F","D32F2F","banner glow ring over allies","horn","Everybody, with me!","support"},
 	{"rally car","DECKHL","Dkg",5,9,5,"0D47A1","FFFFFF","hatchback with mud flaps and roof lights","engine","Sideways is the fastest way.","mechanical,vehicle,land"},

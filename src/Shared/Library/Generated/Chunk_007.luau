@@ -381,6 +381,7 @@ return {
 	{"diving suit","BBCONI","GB",2,2,8,"B58A3A","B8693D","brass bubble helmet, heavy boots","clank","Ocean floor fashion.","ocean"},
 	{"divinity","IHBLKI","dSc",2,3,3,"F7F7F2","F2E8D8","white fluffy nut candy","chomp","A heavenly fluffy candy.","edible,sweet,holy"},
 	{"dizzy","KLBFOB","j",2,6,1,"FFEB3B","7C4DFF","spinning stars and birdies ring","wub","Everything spins. Wheee.","silly"},
+	{"dizzy birds","AMAAKI","jO",2,7,1,"5AB0F0","FFB300","little cartoon birds that circle a dazed head","tweet","Tweet tweet. Where am I.","cartoon,silly,control"},
 	{"dj","LDCNNI","jdO",4,4,3,"7C3AED","22D3EE","headphones, turntables, glow sticks","beat","Drops the beat. The bass knocks you over.","music"},
 	{"djembe","BMBFJI","O",2,5,3,"8B5A2B","D2B48C","goblet-shaped hand drum","boom","Pa-tum-pa-tum!","music"},
 	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},

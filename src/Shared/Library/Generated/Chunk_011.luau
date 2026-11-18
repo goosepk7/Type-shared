@@ -29,6 +29,7 @@ return {
 	{"giant donut","IMEJIF","UkcI",7,2,7,"F2A6C8","D9A04A","enormous ring donut, sprinkles","thud","A donut the size of a tyre. Roll it.","edible,giant,silly"},
 	{"giant donut wheel","IMEJIF","DkI",7,2,7,"F2A6C8","D9A04A","monster donut rolling","thud","A runaway donut. Clear the road.","edible,giant,silly"},
 	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
+	{"giant eraser","BMDHJI","kf",3,5,2,"F48FB1","3F6FD8","a huge pink pencil eraser that rubs out a strip of the world","squeak","Mistakes were made. Then unmade.","cartoon,silly"},
 	{"giant flytrap","NGELMI","kScfHO",7,3,7,"558B2F","B71C1C","huge snapping jaws on a thick stalk","chomp","Feed me. FEED ME.","plant,carnivorous,silly"},
 	{"giant forest hog","AMCJAA","Ddkf",5,4,4,"2A2420","6A5A4A","huge black hairy pig","bleat","Biggest wild pig. Grumpy.","mammal,farm,wild"},
 	{"giant ground sloth","AMEJAA","DkTO",7,1,8,"8A6A4A","C8A880","elephant-sized sloth standing up","roar","A sloth as big as an elephant. Slow.","mammal,extinct,ancient,heavy"},

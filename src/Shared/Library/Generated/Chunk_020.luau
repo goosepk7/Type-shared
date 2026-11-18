@@ -142,6 +142,7 @@ return {
 	{"poutine","IMBLGI","FcN",2,3,3,"E8B860","6B3A1E","fries, cheese curds, brown gravy","gloop","A delicious edible swamp from Canada.","edible,sticky"},
 	{"poverty","KMBO2B","iXb",2,4,2,"A8A29E","78716C","open empty wallet with one moth flying out","flutter","Wallet contains: moth. One.","silly"},
 	{"pow","KMCAKB","kO",5,10,1,"FF1744","FFEB3B","comic red-yellow impact burst","pow","POW! Right in the comic book.","silly"},
+	{"pow bubble","KMCHKI","kf",3,8,2,"FFD93B","E53935","a jagged comic POW! burst bubble that slams forward","pow","Sound effects hurt now.","cartoon,silly,comic"},
 	{"powdered donut","IMBDOJ","jc",2,5,1,"F7F7F7","E8B860","sugar-coated round donut","puff","A donut in a snow coat.","edible"},
 	{"powdered sugar","IFBDOJ","jNP",2,5,1,"F7F7F7","F2F2F2","snowy white powder","puff","Sugar that's been to the gym. Ground fine.","edible"},
 	{"power","KLCOKJ","DW",4,6,4,"FF6D00","FFFFFF","crackling orange-white energy aura","hum","All the power. Terms and conditions apply.","magic"},
