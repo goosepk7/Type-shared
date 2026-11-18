@@ -16,3 +16,8 @@ MAP = [
     ("earthworm", "death worm, lava worm, ice worm, mongolian worm, sand worm hatchling, kaiju worm, space worm", NOTFOOD),
     ("slug", "lava slug, space slug, sea bunny", NOTFOOD),
 ]
+MAP += [
+    ("ice elemental", "snow elemental", NOTFOOD),
+    ("earth elemental", "sand elemental", NOTFOOD),
+    ("treant", "nature elemental, bramble elemental, vine horror", NOTFOOD),
+]
