@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ash fall","HADEOJ","jSN",4,3,3,"9E9E9E","5D4037","grey snowfall of volcanic ash","hush","Grey snow. Warm and gritty.","fire,natural"},
+	{"ash storm","FADDOJ","KjNP",6,4,4,"5D4037","FF7043","grey ash blizzard lit by red sparks","rumble","Grey snow that stings.","fire,storm"},
+	{"ash tree","NHDCMI","GWkS",4,1,7,"8D8D8D","E53935","tall tree with orange-red berry clusters","rustle","Wards off witches. Allegedly.","plant,tree"},
 	{"ash wasteland","MAENII","KjS",4,1,6,"616161","FF7043","grey ash dunes, smouldering stumps","rumble","Everything here already burned. Twice.","place,terrain"},
 	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
 	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
@@ -69,6 +72,7 @@ return {
 	{"autumn forest","MGFNII","dZS",3,1,8,"FF7043","6D4C41","forest of red and orange leaves","rumble","Leaves falling everywhere. Crunch.","place,terrain"},
 	{"autumn tree","NGDCMI","GdWkS",3,1,7,"6D4C41","FF7043","crown of fiery orange leaves","rustle","Drops a leaf storm.","plant,tree"},
 	{"avalanche","HCFF6F","JkPO",9,6,6,"EAF4FA","B6CFE0","massive tumbling snow wall, powder cloud","roar","Snow, but all of it, all at once.","natural,frozen,danger"},
+	{"avalanche charge","KCDHXA","DkN",5,8,3,"C4E4FF","5A96DC","a shaggy frost-spirit charging in a wave of snow","roar","It has never once been photographed in focus.","monster,folklore,snow,cryptid"},
 	{"avalon","MHFNII","FZS",5,1,8,"B39DDB","43A047","misty island with apple trees","chime","Shrouded in mist. Full of healing.","place,mythical"},
 	{"avatar","LLCJNA","UQfY",4,6,4,"3B82F6","FACC15","blocky default character, plain shirt, blank smile, T-pose","pop","Default skin. Default face. Maximum menace.","gaming,meme"},
 	{"avocado","IGBAKF","Fke",3,6,2,"568203","D3E28A","pear-shaped green, big pit","splat","The pit is half the fruit. Rude.","edible,fruit,sweet"},
@@ -335,7 +339,6 @@ return {
 	{"bathtub car","DBBKHL","UDkg",2,5,3,"FFFFFF","4FC3F7","clawfoot bathtub on wheels","engine","Comes with bubbles. Bubble attacks.","mechanical,vehicle,land,silly"},
 	{"bathysphere","DBCKHC","GgB",3,2,8,"607D8B","FFEB3B","steel ball on a cable with portholes","splash","Down, down, down. Safe inside.","vehicle,aquatic"},
 	{"baton","CMBHJK","fO",2,7,4,"24262A","8E9196","short sturdy stick","bonk","Short stick, big authority.","medieval,heavy"},
-	{"baton conductor","BMAOzI","Fh",1,6,1,"F2F2EE","24262A","slim white wand","strum","Orchestra, ATTACK.","music"},
 	{"battenberg","IMBLKI","dSc",2,3,3,"F2A6C8","F2D870","pink-yellow checkered cake","chomp","A cake with a chessboard inside.","edible,sweet"},
 	{"batter","IMBLGI","SN",2,3,2,"F2D88A","F7EAC0","bowl of pale runny batter","squeak","Gooey, runny, and slippery.","edible,slippery,silly"},
 	{"battering ram","DEDKHL","DkgO",7,3,8,"6D4C41","7F8C8D","log on wheels, iron head, roof shelter","engine","Knocking politely is for losers.","ancient,heavy"},
@@ -351,6 +354,7 @@ return {
 	{"battlefield","MEFNII","SNh",5,1,8,"6D4C41","9E9E9E","cratered mud, smoke, broken fences","rumble","Already full of craters. Add more.","place,terrain"},
 	{"battlements","EEDCII","GSe",3,1,8,"9E9E9E","616161","wall top with notched merlons","thud","The classic castle haircut.","structure,defense,ancient"},
 	{"battleship","DBFMHC","EkegB",9,3,10,"607D8B","37474F","long grey hull, triple gun turrets","boom","Fourteen cannons say hello.","vehicle,aquatic,danger"},
+	{"bauble ward","BCCIKI","GE",4,4,7,"B8243A","F3D27A","sealed in a giant frosted glass ornament","jingle","Fragile. Festive. Surprisingly bulletproof.","holiday,winter,shield"},
 	{"bay","MBENII","SN",2,1,7,"4FC3F7","E6C27A","curved sheltered stretch of coast","rumble","Calm water, sneaky ambush.","place,terrain"},
 	{"bay leaf","IGBOMI","WF",2,4,3,"5E7A3A","8AA86A","single oval dried leaf","crunch","Nobody knows what it does. Mysterious.","edible,vegetable,healthy,herb"},
 	{"bayonet","CKBHuK","fT",3,7,3,"8A929B","2C3539","spike blade on a rifle tip","shing","Sword with a part-time job.","medieval,sharp"},
@@ -399,8 +403,4 @@ return {
 	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
 	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
-	{"bedtime","KLCDOJ","SO",3,3,2,"3949AB","FFF8E1","cosy dark-blue cloud with stars and Zs","snore","Into bed. Now. Everyone.","silly"},
-	{"bee","AJAJLB","AFTMP",2,7,1,"F2C02A","2A1E14","fuzzy striped body, tiny wings, stinger","buzz","Makes honey. Dances directions. Stings once.","insect,swarm,venomous"},
-	{"bee balm","NGBNMI","dFSch",1,1,2,"E91E63","7CB342","spiky ragged pink pompoms","rustle","Bees cannot resist it.","plant,flower"},
-	{"bee fly","AMAJFB","jdAP",1,6,1,"C8A07A","F2E8D0","fluffy fly with long nose","buzz","A fuzzy pompom with a straw.","insect,cute"},
 }
