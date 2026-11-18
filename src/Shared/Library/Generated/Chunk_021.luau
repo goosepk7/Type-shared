@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"purple lightning","FDDAKB","jeL",7,10,1,"AA00FF","EA80FC","bright violet branching bolt","crack","Lightning, now in grape flavour.","electric,magic"},
+	{"purple potato","IEBAKK","keO",3,7,6,"5E2A5E","8A5A9A","small violet potato","bonk","A royal purple spud.","edible,vegetable"},
+	{"push","KFCFOB","kI",4,8,1,"B3E5FC","FFFFFF","invisible palm-shaped force ripple","whoosh","Personal space, enforced.","force"},
+	{"puss caterpillar","AMAJTA","jdM",1,5,1,"C8A07A","F2E8D8","fluffy toupee caterpillar","flutter","Looks like a wig. Stings badly.","insect,cute"},
 	{"pygmy hippo","ABCJAA","DkIOB",4,4,8,"5E4E56","C88E8E","small round hippo, shiny skin","trumpet","Small, round, and dramatically splashy.","mammal,heavy,wild,cute"},
 	{"pygmy owl","AMAJDB","jAZT",2,7,2,"8A6A4A","F2E8D8","tiny owl with fake eyes on back","hoot","Has fake eyes on the back of its head.","bird,nocturnal,predator"},
 	{"pylon","EDDMII","GSeL",4,1,7,"9E9E9E","616161","lattice steel tower with wire arms","hum","High voltage. Low tolerance.","structure,defense,tower"},
@@ -399,8 +403,4 @@ return {
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
 	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
 	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
-	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
-	{"robot wizard","OLCJNA","eLY",5,4,6,"6366F1","94A3B8","robot in a pointy hat with antenna wand","zap","Casts spells with a USB wand.","robot,magic,silly"},
-	{"robotics engineer","LKCJNA","Fh",4,4,4,"1E3A8A","94A3B8","goggles, soldering iron, robot arm","clank","Builds a robot friend in seconds.","tech,robot"},
-	{"roc","AFFJDB","Akl",8,6,7,"78350F","FDE68A","colossal eagle, huge talons","screech","Snacks on elephants. Probably exaggerating.","mythical,bird,flying"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ukulele","BMBFJI","dF",1,6,2,"C49A6C","7A4E2D","tiny four-string guitar","strum","Plinky plunk. Aloha.","music"},
+	{"ultimate","KLEOKI","DWk",7,6,6,"FFD54F","D500F9","screaming golden aura, flowing hair glow","choir","Glowing hair means it's serious.","meme"},
+	{"uluru","MEFCII","GS",6,1,10,"C1440E","E6A04D","huge rounded red rock in flat desert","rumble","One rock. Very large. Very red.","place,landmark"},
+	{"umbra","FICIKI","GiZ",4,4,4,"1B1426","5D3E87","deep core shadow cloak","hiss","The darkest part of the shadow.","spooky"},
 	{"umbral casket","KIDNII","STeO",8,4,3,"1A1420","9A5CFF","black stone walls box a foe in, then spears pierce it","rumble","Overflowing with darkness. And spears. Mostly spears.","anime,shadow,trap"},
 	{"umbrella","BMBIyK","GA",1,6,3,"1F2F55","24262A","open dome canopy, curved handle","clank","Keeps rain off. Keeps bolts off.","defense"},
 	{"umbrella hat","BMAINK","Gd",1,6,1,"E84A5F","F2F2EE","tiny umbrella on a headband","thud","Hands free, rain free.","silly"},
@@ -399,9 +403,4 @@ return {
 	{"welsh rarebit","IGBOKI","F",2,5,3,"E0A040","F2C24A","toast with bubbling cheese","crunch","No rabbits involved. Just cheese.","edible,healthy"},
 	{"welwitschia","NECNMI","dFS",2,1,8,"6D4C41","7CB342","two long tangled leaves on sand","rustle","Two leaves. Two thousand years.","plant,flower,ancient"},
 	{"wendigo","ACDJNA","DiJf",7,8,6,"E7E5E4","7DD3FC","gaunt antlered figure, frost breath","howl","Always cold. Always hungry. Never invited.","spooky,frozen,cryptid"},
-	{"werebear","AGDJNA","Wkf",7,5,7,"78350F","FDE68A","huge bear-man in torn flannel","roar","Hibernates through every meeting.","spooky"},
-	{"werecat","AICJNA","DZf",5,9,4,"1C1917","FACC15","cat-faced prowler with long claws","hiss","Nine lives, one bad attitude.","spooky"},
-	{"werefox","ALCJNA","jZY",4,9,3,"EA580C","F8FAFC","fox-eared trickster with fluffy tail","yip","Sly by nature. Fluffy by design.","trickster"},
-	{"wererat","AJBJNA","fPb",3,8,3,"57534E","F9A8D4","ratty hunched figure, long pink tail","squeak","Turns into a rat. Has a lot of cheese.","spooky"},
-	{"wereshark","ABDJNC","DfB",6,8,5,"64748B","F8FAFC","shark-headed muscle swimmer","chomp","Full moon. Fin up. Everyone out of the pool.","aquatic,silly"},
 }

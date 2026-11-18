@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"placoderm","ABCJEC","GDfB",4,7,4,"6A6A6A","B8B0A0","armored ancient fish","splash","Armored fish. Bony and proud.","fish,aquatic,extinct,ancient"},
+	{"placodus","ABDJEC","DfHB",5,6,7,"6A6A5A","C8C8B0","clam-crushing sea reptile","roar","Ate shellfish like candy.","extinct,reptile,aquatic,ocean"},
+	{"plague","FJDDOJ","SMP",6,4,3,"7A8A3A","2E2A1E","drifting murky cloud with fly specks","buzz","Spreads faster than gossip.","toxic,spooky"},
+	{"plague doctor","LJCJNA","FSM",4,4,5,"111827","D6D3D1","bird beak mask, black hat and coat","whisper","Bird mask. Smells like herbs.","spooky,historical,healer"},
 	{"plague swarm","FJEDOJ","QSMP",7,5,3,"827717","3E2723","dark buzzing cloud of glowing specks","buzz","An itchy cloud of bad news.","toxic,spooky"},
 	{"plain","MGEN6I","DSN",5,1,7,"9BC53D","D9E76C","wide flat sea of waving grass under a big sky","rustle","Miles of nothing. Then a bison.","terrain,place"},
 	{"plan","KLBOnE","jhY",4,5,3,"1E3A8A","FFFFFF","blueprint with arrows, X marks and a doodled explosion","rustle","Step 1: summon. Step 2: ??? Step 3: win.","meme,silly"},
@@ -399,8 +403,4 @@ return {
 	{"purple carrot","IEBAJK","FTe",3,6,4,"5E1A4E","ED9121","purple-skinned carrot","crunch","A carrot in royal colours.","edible,vegetable,healthy"},
 	{"purple fire","FACAKB","Kje",6,8,2,"AA00FF","EA80FC","violet flame ball with pink core","whoosh","Magic fire. Smells like grapes.","fire,magic"},
 	{"purple frog","AMAJAG","UCe",1,5,1,"6A4A8A","C8A0D8","purple blobby frog with pig nose","croak","A purple blob with a nose.","amphibian,wetland,silly"},
-	{"purple lightning","FDDAKB","jeL",7,10,1,"AA00FF","EA80FC","bright violet branching bolt","crack","Lightning, now in grape flavour.","electric,magic"},
-	{"purple potato","IEBAKK","keO",3,7,6,"5E2A5E","8A5A9A","small violet potato","bonk","A royal purple spud.","edible,vegetable"},
-	{"push","KFCFOB","kI",4,8,1,"B3E5FC","FFFFFF","invisible palm-shaped force ripple","whoosh","Personal space, enforced.","force"},
-	{"puss caterpillar","AMAJTA","jdM",1,5,1,"C8A07A","F2E8D8","fluffy toupee caterpillar","flutter","Looks like a wig. Stings badly.","insect,cute"},
 }

@@ -3,9 +3,11 @@
 -- (data/misspellings.jsonl + per-entry 'ms'), sorted.
 return {
 	keys = {
-		"zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander","zylophone","zylophone stairs",
+		"zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands",
+		"zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander",
+		"zylophone","zylophone stairs",
 	},
 	owners = {
-		11535,11541,11505,11543,11543,11507,11507,11548,11445,11445,
+		11514,11518,11518,11518,11519,11518,11520,11520,11519,11520,11521,11540,11525,11525,11525,11531,11531,11531,11531,11525,11525,11531,11546,11525,11540,11546,11510,11548,11548,11512,11512,11553,11450,11450,
 	},
 }

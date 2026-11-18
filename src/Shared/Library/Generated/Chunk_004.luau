@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
 	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
 	{"boysenberry","IGAELB","eVP",2,7,1,"5E1F3F","8A2B5A","plump dark maroon berry","pitter","A berry with a big name.","edible,fruit,sweet"},
 	{"bracelet","BMAOKJ","G",1,6,3,"C9CED4","3E9E6E","chunky bangle","chime","Wrist bling.","treasure,shiny"},
@@ -402,6 +403,4 @@ return {
 	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
 	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
 	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
-	{"carcharodontosaurus","AMEJBA","DkfT",8,6,7,"8A5A3A","D8A07A","huge skull, shark-like teeth","roar","Shark teeth on a giant dino.","dinosaur,extinct,reptile,predator"},
-	{"card storm","FLCELB","jdT",4,8,1,"D32F2F","FFFFFF","swirl of glowing playing cards","shff","52 card pick-up. Painful version.","magic,silly"},
 }

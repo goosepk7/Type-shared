@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nail clippers","BMAHrK","f",1,7,2,"C9CED4","C9CED4","tiny snipping clipper","thud","Click. Click.","bathroom"},
+	{"nail gun","JKBAwI","TeV",3,8,4,"F1C40F","24262A","pneumatic nail tool","thunk","Construction, but faster than intended.","modern,ranged"},
+	{"naked mole rat","AMAJAA","Cdb",1,6,1,"E8B8A8","F2D8C8","wrinkly pink hairless body, big teeth","squeak","Pink, wrinkly, and lives forever-ish.","mammal,cute,silly"},
+	{"namazu","AEFJEH","CkO",9,2,8,"57534E","A16207","colossal catfish thrashing underground","rumble","When it flips, the ground quakes.","yokai,giant,danger"},
 	{"name","KMBOyE","jdQ",2,5,2,"EF4444","FFFFFF","red HELLO MY NAME IS sticker, scribbled out twice","scratch","xX_Summon_Slayer_Xx was taken.","meme,gaming"},
 	{"name tag","BMAONI","d",1,6,1,"F2F2EE","C0392B","sticker reading HELLO","swish","Hello, my name is Victory.","clothing,silly"},
 	{"nanite cloud","OKCDOE","iSP",6,4,2,"C9CED4","4A4D52","shimmering metallic fog","hum","Eats everything. Politely.","scifi"},
@@ -399,8 +403,4 @@ return {
 	{"paladin","LHCJNA","GDFf",6,4,8,"E5E7EB","FACC15","shining plate armor, glowing warhammer","clang","Hits hard. Heals harder. Very polite.","holy,warrior"},
 	{"palak paneer","IMBOKI","WF",3,5,3,"3E7A2B","F7F2E0","green curry with cheese cubes","chomp","Spinach strength plus cheese.","edible"},
 	{"paleontologist","LECJNA","Ch",3,5,4,"78350F","FDE68A","dusty vest, chisel, dino bone","clank","Brought back a whole skeleton. Oops.","explorer,science"},
-	{"pallas cat","AMBJAA","ZfT",4,7,3,"A39A8E","6E655A","extremely fluffy, flat face, grumpy stare","hiss","Permanently unimpressed with you.","mammal,predator,wild,silly,cute"},
-	{"palm grove","NGECMI","GFSe",3,1,6,"8D6E63","43A047","cluster of swaying palm trees","rustle","Shade, coconuts, and a lot of bonking.","plant,tree"},
-	{"palm strike","KLCFOB","kI",5,9,1,"B3E5FC","FFFFFF","palm-shaped force wave","whum","Talk to the hand. It hits.","melee,magic"},
-	{"palm tree","NGDCMI","GkSe",4,1,6,"8D6E63","43A047","tall curved trunk, frond crown, coconuts","rustle","Bonk. Coconut. Bonk.","plant,tree"},
 }

@@ -403,5 +403,4 @@ return {
 	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
 	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
 	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
-	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
 }
