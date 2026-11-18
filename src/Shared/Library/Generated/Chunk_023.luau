@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shetland pony","AMCKAA","Dkg",3,5,5,"6A4A2E","2A1A12","tiny shaggy pony","neigh","Small pony. Very stubborn.","mammal"},
 	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
 	{"shiba inu","AMBJAA","DQf",4,7,4,"D98A3A","FFF2E0","fox-like, curled tail, smug face","bark","Much wow. Very shiba.","mammal,pet,meme"},
 	{"shield","BKCIyI","Gk",3,5,7,"8A929B","9E1B32","round shield with central boss","clang","Say no with your arm.","armor,defense"},
@@ -402,5 +403,4 @@ return {
 	{"soil","FGBCnI","GW",3,2,5,"5C3E25","7E9C4A","mound of dark earth with sprouts","rustle","Good for gardens. Bad for intruders.","plant"},
 	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
 	{"solar farm","EHEMII","GKSe",3,1,5,"1A237E","FFC107","rows of tilted dark glass panels","thud","Soaks up the sun. Zaps it back.","structure,building"},
-	{"solar flare","HAEBKI","KTeO",8,9,2,"FFB300","FFF9C4","giant looping arc of fire leaping off the sun","roar","The sun throwing a tantrum.","space,fire"},
 }

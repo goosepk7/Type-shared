@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
 	{"nova","FHDFOI","EkP",6,8,1,"FFFDE7","FF80AB","blinding ring of white light","boom","A mini star explosion. Mini.","space,explosive"},
 	{"nova bomb","FHDGKI","KEk",8,6,1,"FFFDE7","FF80AB","white-pink sphere detonating into a nova ring","boom","A tiny supernova. Pocket edition.","space,explosive"},
 	{"nozzle","JBBBwB","kIe",4,8,3,"EAB308","9CA3AF","brass hose nozzle on full jet blast","squirt","Set to JET. Never set it to jet.","tool,household"},
@@ -402,5 +403,4 @@ return {
 	{"peccary","AMCJAA","dfM",3,4,4,"4E4642","E8E0D8","bristly pig-like, white collar","bleat","Smells funky. Travels in gangs.","mammal,farm,desert"},
 	{"peck","KMAADB","fTO",2,10,1,"F5B041","FFFFFF","rapid-fire beak jabs like a tiny jackhammer","tok","Peckpeckpeckpeckpeckpeck.","bird,melee"},
 	{"pedal","KABOKB","DkI",3,9,2,"1F2937","F97316","foot flooring a pedal, flames from behind","vroom","Pedal to the metal. Metal to the wall.","vehicle,speed"},
-	{"pedal swan","DBBKHC","DkgB",2,2,3,"FFFFFF","FFB300","big white swan with seats inside","splash","The swan has seen things.","vehicle,aquatic,silly"},
 }

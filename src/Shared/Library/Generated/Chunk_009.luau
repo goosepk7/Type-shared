@@ -402,4 +402,5 @@ return {
 	{"flying ship","DLEMHB","EAkeg",7,5,7,"6D4C41","FFD54F","wooden galleon held up by glowing balloons","cannon","Sails the clouds, cannons out.","vehicle,magic,mythical"},
 	{"flying snake","AMCJCB","AfMN",4,6,3,"2A2A1E","8AE04A","flattened gliding snake","hiss","A snake that flies. Why would you.","reptile,venomous"},
 	{"flying squirrel","AMAJAB","CdAb",1,6,1,"9A8A7A","F2EEE6","skin flaps between legs, gliding","squeak","Built-in wingsuit.","mammal,cute"},
+	{"flypaper","BMBLII","cNO",1,1,1,"F1C40F","D2B48C","hanging sticky yellow strip","snap","Bzzz... stuck.","trap,sticky"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"yakitori","IABHJI","KfT",3,5,4,"C8602B","6B3A1E","grilled skewers of chicken","bonk","Grilled chicken on tiny swords.","edible,silly"},
+	{"yali","AEDJAA","GDf",6,7,6,"78716C","F59E0B","lion body, elephant trunk, horse legs","roar","Guarding temples since forever.","mythical,guardian"},
 	{"yam fries","IMAELB","eVP",2,7,1,"E8762B","F2A65A","orange sticks","pitter","Fries, but orange.","edible"},
 	{"yamata no orochi","ABFJCD","kfMV",9,4,9,"7F1D1D","15803D","eight-headed eight-tailed giant serpent","roar","Eight heads. Eight bad moods.","yokai,reptile,boss,danger"},
 	{"yari","CKCAuK","fT",5,6,4,"8A929B","24262A","straight-bladed spear","shing","Poke with honour.","sharp,ancient"},

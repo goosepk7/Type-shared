@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mohawk","BMBHJF","DfT",4,6,4,"39D353","FF2E93","tall spiky green hair fin with pink tips","shing","Hair so sharp it needs a licence.","body,punk,sharp"},
 	{"mohinga","IBBOGI","FS",3,4,3,"C8A040","F2E8C8","fish noodle soup","slurp","Burmese breakfast soup.","edible,warm,healthy"},
 	{"moi moi","IGBOKI","F",2,5,3,"E8762B","F2C870","steamed bean pudding","crunch","A steamed bean cake.","edible,healthy"},
 	{"mojave desert","MAFNII","KSN",5,1,9,"E6A04D","8D6E63","dusty desert with joshua trees","rumble","Hot days. Cold nights. Weird trees.","place,geography"},
@@ -402,5 +403,4 @@ return {
 	{"nothingness","FICNOI","iZ",4,3,3,"0D0D12","3A3A4A","blank grey-black area, sound fades","hush","There is nothing here. Literally.","spooky,silly"},
 	{"nothosaurus","ABDJEC","DfHB",5,6,7,"5A6A5A","C8C8B0","seal-like early sea reptile","roar","Half seal, half lizard.","extinct,reptile,aquatic,ocean"},
 	{"nothronychus","AMDJBA","DkfT",6,6,7,"8A7A5A","D8C8A8","potbellied scythe-claw dino","roar","Potbelly. Giant claws. Eats salad.","dinosaur,extinct,reptile,predator"},
-	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
 }
