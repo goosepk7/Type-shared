@@ -1,4 +1,10 @@
 {
+ "abalone": {
+  "assetId": 114747189912299,
+  "hash": "231493cdae01afa2",
+  "pieces": 9,
+  "tris": 5920
+ },
  "aircraft carrier": {
   "assetId": 84628273756599,
   "hash": "7da1f72b2314e958",
@@ -341,6 +347,12 @@
   "pieces": 12,
   "tris": 5136
  },
+ "blobfish": {
+  "assetId": 91327538972735,
+  "hash": "28b3973b4aabccdd",
+  "pieces": 5,
+  "tris": 3020
+ },
  "bloodhound": {
   "assetId": 122777764874615,
   "hash": "6cdfa8fd9dc756b6",
@@ -653,17 +665,35 @@
   "pieces": 24,
   "tris": 15000
  },
+ "chiton": {
+  "assetId": 140661332531220,
+  "hash": "9ec8ae2ec232a4ed",
+  "pieces": 16,
+  "tris": 5440
+ },
  "chopper motorcycle": {
   "assetId": 120065301779651,
   "hash": "884c9d7e4fd89fc0",
   "pieces": 15,
   "tris": 9286
  },
+ "christmas tree worm": {
+  "assetId": 112038510827542,
+  "hash": "35ae965519513898",
+  "pieces": 7,
+  "tris": 5400
+ },
  "cicada": {
   "assetId": 98534467232445,
   "hash": "fe3b7890d39384c1",
   "pieces": 31,
   "tris": 10700
+ },
+ "clam": {
+  "assetId": 91232664259233,
+  "hash": "c194cdb30a9a38d5",
+  "pieces": 6,
+  "tris": 4960
  },
  "clay golem": {
   "assetId": 81882032928477,
@@ -731,6 +761,12 @@
   "pieces": 22,
   "tris": 8750
  },
+ "conch": {
+  "assetId": 99855607682122,
+  "hash": "b78a4cda1e494736",
+  "pieces": 8,
+  "tris": 5720
+ },
  "condor": {
   "assetId": 91134343466310,
   "hash": "966363c73a911082",
@@ -766,6 +802,12 @@
   "hash": "96f617a17c513637",
   "pieces": 31,
   "tris": 18258
+ },
+ "cowrie": {
+  "assetId": 109714872906179,
+  "hash": "b6f1b0fbbe8231bd",
+  "pieces": 9,
+  "tris": 6020
  },
  "coyote": {
   "assetId": 88808704723674,
@@ -1133,6 +1175,12 @@
   "pieces": 28,
   "tris": 16466
  },
+ "feather duster worm": {
+  "assetId": 123465661510739,
+  "hash": "1412edc6a5a516bf",
+  "pieces": 9,
+  "tris": 6050
+ },
  "fennec fox": {
   "assetId": 96458165992274,
   "hash": "92f90ef205e5366f",
@@ -1301,6 +1349,12 @@
   "pieces": 24,
   "tris": 17580
  },
+ "geoduck": {
+  "assetId": 127947802758866,
+  "hash": "06c07d0240e0991e",
+  "pieces": 8,
+  "tris": 6960
+ },
  "german shepherd": {
   "assetId": 86468251053387,
   "hash": "1d28c300f22f158b",
@@ -1318,6 +1372,18 @@
   "hash": "41118e4d36748a3d",
   "pieces": 11,
   "tris": 9800
+ },
+ "giant clam": {
+  "assetId": 81187757752934,
+  "hash": "766dfc8dd4113adb",
+  "pieces": 4,
+  "tris": 5600
+ },
+ "giant tube worm": {
+  "assetId": 117110147385224,
+  "hash": "cc4ae2166004897d",
+  "pieces": 19,
+  "tris": 7700
  },
  "giraffe": {
   "assetId": 103989714933931,
@@ -1607,6 +1673,12 @@
   "pieces": 30,
   "tris": 20800
  },
+ "hydra polyp": {
+  "assetId": 138454614995636,
+  "hash": "329e8f4cf99ccf26",
+  "pieces": 11,
+  "tris": 4700
+ },
  "hyena": {
   "assetId": 118953494432865,
   "hash": "3c02651c174132b5",
@@ -1660,6 +1732,12 @@
   "hash": "67732028479623bf",
   "pieces": 16,
   "tris": 13900
+ },
+ "isopod": {
+  "assetId": 138952884801566,
+  "hash": "fdcafd4f31464d99",
+  "pieces": 26,
+  "tris": 7940
  },
  "jack o lantern": {
   "assetId": 77569419143953,
@@ -1822,6 +1900,12 @@
   "hash": "9611b8e3251b5c13",
   "pieces": 26,
   "tris": 14334
+ },
+ "limpet": {
+  "assetId": 126613207117315,
+  "hash": "faddd26955e5d907",
+  "pieces": 6,
+  "tris": 4120
  },
  "lindworm": {
   "assetId": 119598430227651,
@@ -2075,6 +2159,12 @@
   "pieces": 7,
   "tris": 4200
  },
+ "mussel": {
+  "assetId": 72516817862898,
+  "hash": "9e5b3f3d0d202a33",
+  "pieces": 5,
+  "tris": 4560
+ },
  "narwhal": {
   "assetId": 88150653994224,
   "hash": "30f404ba05738aad",
@@ -2123,6 +2213,12 @@
   "pieces": 28,
   "tris": 16882
  },
+ "opabinia": {
+  "assetId": 87136275810997,
+  "hash": "93e8cfd5e4c74b43",
+  "pieces": 21,
+  "tris": 7000
+ },
  "opossum": {
   "assetId": 122579208188439,
   "hash": "2d4aa7fc794fec07",
@@ -2170,6 +2266,12 @@
   "hash": "a251feb003429d88",
   "pieces": 32,
   "tris": 19590
+ },
+ "oyster": {
+  "assetId": 84400339385171,
+  "hash": "d738697b7a92e3cf",
+  "pieces": 6,
+  "tris": 6060
  },
  "pachycephalosaurus": {
   "assetId": 96447216878729,
@@ -2272,6 +2374,12 @@
   "hash": "ff992622b5adea1d",
   "pieces": 27,
   "tris": 17460
+ },
+ "pill bug": {
+  "assetId": 108047228286357,
+  "hash": "3facbae050a8d3d8",
+  "pieces": 25,
+  "tris": 7640
  },
  "piranha": {
   "assetId": 98858940372765,
@@ -2392,6 +2500,12 @@
   "hash": "251be7b49f9c20be",
   "pieces": 28,
   "tris": 19060
+ },
+ "pyrosome": {
+  "assetId": 123834547298157,
+  "hash": "c05f80fc5225a062",
+  "pieces": 6,
+  "tris": 5700
  },
  "python": {
   "assetId": 118757508122887,
@@ -2621,6 +2735,12 @@
   "pieces": 19,
   "tris": 16400
  },
+ "salp": {
+  "assetId": 91320523793417,
+  "hash": "e4ee06314531a719",
+  "pieces": 6,
+  "tris": 3000
+ },
  "samoyed": {
   "assetId": 74392471050766,
   "hash": "bc3a71dc1aa880d6",
@@ -2632,6 +2752,12 @@
   "hash": "a1351bf14e5defc9",
   "pieces": 25,
   "tris": 20000
+ },
+ "scallop": {
+  "assetId": 84309744067343,
+  "hash": "a0247dfab2bf29de",
+  "pieces": 5,
+  "tris": 5260
  },
  "scarab": {
   "assetId": 70713286501819,
@@ -2657,11 +2783,29 @@
   "pieces": 39,
   "tris": 13300
  },
+ "sea cucumber": {
+  "assetId": 105384121343687,
+  "hash": "3c7dbc7643e5df81",
+  "pieces": 5,
+  "tris": 4500
+ },
  "sea lion": {
   "assetId": 83625562530394,
   "hash": "ef982f5d6b959356",
   "pieces": 15,
   "tris": 14000
+ },
+ "sea mouse": {
+  "assetId": 89059968537832,
+  "hash": "afcf45f736bde50a",
+  "pieces": 12,
+  "tris": 7360
+ },
+ "sea pig": {
+  "assetId": 84526129356677,
+  "hash": "4f5555cccaeaab78",
+  "pieces": 11,
+  "tris": 6800
  },
  "sea serpent": {
   "assetId": 75427376743639,
@@ -2674,6 +2818,12 @@
   "hash": "db84261d0462b80c",
   "pieces": 15,
   "tris": 10944
+ },
+ "sea squirt": {
+  "assetId": 107493431390698,
+  "hash": "825c76d09b63ab63",
+  "pieces": 5,
+  "tris": 3000
  },
  "sea turtle": {
   "assetId": 120433502562111,
@@ -2741,6 +2891,12 @@
   "pieces": 20,
   "tris": 10381
  },
+ "shipworm": {
+  "assetId": 123441801189371,
+  "hash": "5398e5b3c4e2e359",
+  "pieces": 8,
+  "tris": 4700
+ },
  "shoe car": {
   "assetId": 118886882928282,
   "hash": "5665d9d06fd413c3",
@@ -2752,6 +2908,12 @@
   "hash": "0d8568794108a6e4",
   "pieces": 27,
   "tris": 13370
+ },
+ "siphonophore": {
+  "assetId": 120698174268951,
+  "hash": "72829d7289e9cecf",
+  "pieces": 16,
+  "tris": 6700
  },
  "skateboard": {
   "assetId": 126042926710369,
@@ -3053,6 +3215,12 @@
   "pieces": 17,
   "tris": 15500
  },
+ "tadpole": {
+  "assetId": 120357731726276,
+  "hash": "86668890ddbb2385",
+  "pieces": 7,
+  "tris": 3900
+ },
  "tandem bicycle": {
   "assetId": 92617801941064,
   "hash": "0d2429924db2c623",
@@ -3202,6 +3370,12 @@
   "hash": "d7ae5fe964f50678",
   "pieces": 11,
   "tris": 5548
+ },
+ "trilobite": {
+  "assetId": 127503404196391,
+  "hash": "51b5a3a73858351d",
+  "pieces": 23,
+  "tris": 7220
  },
  "troll": {
   "assetId": 74360622181554,
@@ -3400,6 +3574,12 @@
   "hash": "e45075e0c00398a5",
   "pieces": 24,
   "tris": 19400
+ },
+ "whelk": {
+  "assetId": 105488052062052,
+  "hash": "6469fa4080e69b9c",
+  "pieces": 8,
+  "tris": 5520
  },
  "wind-up toy": {
   "assetId": 104951204158862,
