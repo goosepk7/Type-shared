@@ -21,3 +21,4 @@ MAP += [
     ("earth elemental", "sand elemental", NOTFOOD),
     ("treant", "nature elemental, bramble elemental, vine horror", NOTFOOD),
 ]
+MAP += [("slime", "!balloon monster, !sock monster", NOTFOOD)]
