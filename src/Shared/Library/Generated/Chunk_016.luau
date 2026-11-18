@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"loom","OMCL1I","NO",2,1,5,"8B5A2B","D8CBB5","frame with criss-cross threads","clank","Weaves cloth. Weaves nets.","mechanical"},
-	{"loon","ABBJDC","AfB",2,5,2,"1E1E1E","F2F2F0","checkered black-white back, red eye","wail","Its call sounds like a ghost.","bird,aquatic,spooky"},
 	{"loop","KLBL5K","jNY",3,6,2,"22D3EE","F472B6","glowing figure-eight track sending things back to start","warp","See flavour text: loop.","gaming,magic"},
 	{"loop de loop","KFBOKB","D",2,8,2,"FFEB3B","81D4FA","looping motion trail ribbon","whee","Wheeeee! Around we go.","silly"},
 	{"loot","BHCELJ","dFcP",3,5,3,"FACC15","A855F7","shower of coins, gems, a glowing sword and a boot","jingle","Legendary drop! It is a boot. One boot.","gaming,shiny"},
@@ -403,4 +401,6 @@ return {
 	{"meteor punch","KADAKB","KEkf",8,8,3,"FF6D00","FFD54F","flaming fist plunging from above with crater","boom","A punch that came from space.","fire,melee,explosive"},
 	{"meteor shower","HAEEOB","KEkeP",8,8,5,"6D4C41","FFB300","many fiery streaks raining from a dark sky","roar","Make a wish. Then dodge.","space,explosive"},
 	{"meteor strike","HADAKB","KEkO",8,8,6,"5D4037","FF7043","single blazing rock slamming into a target ring","boom","Marked target. Incoming rock.","space,explosive"},
+	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
+	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 }

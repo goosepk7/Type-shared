@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"sky pirate","LFCJNB","Aeb",5,7,4,"7F1D1D","60A5FA","pirate with goggles on an airship","arr","Pirates, but higher.","pirate,flying"},
 	{"sky rift","KLEN5K","jhY",7,3,5,"311B92","FFD54F","glowing tear across the sky","warp","The sky is cracked. Something's peeking.","space,magic"},
 	{"sky serpent","AFEJCB","AkH",7,8,6,"E0F2FE","0EA5E9","feathered serpent coiling through clouds","howl","Wraps around storms.","wind,reptile"},
 	{"sky slam","FFDNOI","kO",6,9,2,"81D4FA","ECEFF1","column of wind smashing down from above","boom","The sky body-slams you.","air"},
@@ -363,6 +362,7 @@ return {
 	{"spicy noodles","IABAKK","KHN",5,7,2,"D8202B","F2C24A","red tangled noodles, steam","sizzle","The noodle challenge. Few survive.","edible,spicy,flammable"},
 	{"spider","AJBJQA","fMeN",2,6,2,"2A2420","8A6A4A","eight legs, round body, many eyes","skitter","Eight legs, eight eyes, zero chill.","arachnid,spooky,venomous"},
 	{"spider cave","MIENII","SMNh",5,1,7,"37474F","ECEFF1","cave draped in thick webs","echo","Sticky. Creepy. Many legs.","place,adventure,spooky"},
+	{"spider centaur","AJDJFA","MHe",6,6,6,"1C1917","7C3AED","elf torso on a giant spider body","skitter","Eight legs. Two bows.","spooky"},
 	{"spider crab","ABDJRA","GfT",5,4,5,"E87A3A","F2D8C0","extremely long spindly legs","clack","Legs longer than you.","crustacean,aquatic,armored"},
 	{"spider monkey","AMBJBA","dHeb",2,7,2,"2A2420","8E7460","very long limbs, grabbing tail","chatter","Five limbs. Uses all of them.","mammal,primate"},
 	{"spider plant","NGBOMI","FSh",1,1,3,"7CB342","F5F5F5","arching striped leaves with baby plantlets","rustle","Not a spider. Promise.","plant,houseplant,silly"},

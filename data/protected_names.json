@@ -1,6 +1,8 @@
 {
   "_doc": "Brand / franchise / copyrighted-character / real-person names -> the generic idea (DESIGN.md §5a). n = names (normalized lowercase, may be multi-word), r = generic replacement phrase built from modifiers + library words (tests check every replacement parses with no extras). strip = brand words removed when other words remain ('pokemon dragon' -> 'dragon'). Keep this list clean and kid-safe; it is shipped to clients.",
   "names": [
+    {"n": ["displacer beast", "displacer beasts", "displacer cat", "displacer"], "r": "phase panther"},
+    {"n": ["drider", "driders"], "r": "spider centaur"},
     {"n": ["pikachu", "pika chu", "raichu"], "r": "electric yellow mouse"},
     {"n": ["charizard", "charmander", "charmeleon"], "r": "orange fire dragon"},
     {"n": ["squirtle", "blastoise"], "r": "blue water turtle"},

@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"flame sword","CACHrK","KfP",7,6,4,"D9480F","FF6A1A","blade wreathed in flames","shing","Smells like toast. Hits like a dragon.","fantasy,flammable,glowing"},
-	{"flame tank","DADMHL","KegP",7,3,9,"4B5320","FF5722","tank with a nozzle spitting fire","fwoosh","Toasty treads.","mechanical,vehicle,land"},
 	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
 	{"flame turret","OACMwI","KeP",6,5,6,"4A4D52","D9480F","squat nozzle tower with fuel tank","hum","Toasty perimeter guaranteed.","defense,flammable"},
 	{"flamethrower","CACFwI","KSeP",7,5,4,"D9480F","6B7B3A","nozzle wand with fuel tanks","whoosh","For when you want it well done.","flammable,ranged"},
@@ -403,4 +401,6 @@ return {
 	{"gelada","AMCJBA","deb",3,7,2,"8A6A4A","D8302A","lion mane, red chest patch","chatter","Grass-eating lion monkey.","mammal,primate"},
 	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
 	{"gelatinous cube","AJDJGF","MHN",5,2,6,"86EFAC","F0FDF4","giant clear cube with stuff floating inside","squelch","A dungeon's cleaning crew.","slime,silly"},
+	{"gelato","ICBAKJ","JeN",3,5,2,"F7E0B0","9CBA6B","dense scoop in tiny cup","squish","Italian ice cream with a flair.","edible,frozen,sweet"},
+	{"gem","BMAA4J","cea",2,7,6,"1E9E5A","F2F2EE","faceted sparkling gemstone","chime","Shiny. Pointy. Priceless.","treasure,shiny"},
 }

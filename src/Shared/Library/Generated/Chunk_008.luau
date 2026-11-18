@@ -17,7 +17,6 @@ return {
 	{"disintegrate","FLDBKI","iTe",8,8,1,"76FF03","EEFF41","green beam that turns targets to sparkly dust","hum","Turns things into very small things.","magic"},
 	{"disintegrator","CJCBwI","iTe",8,6,3,"DDE3E8","8BC34A","green-glow ray with skeleton dial","zap","Turns foes into a fine dust.","scifi,ranged"},
 	{"dispel","KLCFOB","O",4,8,1,"B0BEC5","FFFFFF","grey ring erasing glowing effects","shimmer","No magic for you.","magic"},
-	{"displacer beast","ALDJAA","ZfY",6,8,5,"312E81","22D3EE","six-legged panther with tentacle whips","hiss","It's never quite where you see it.","dungeon,cat"},
 	{"distract","KLBAKB","jd",1,8,1,"FFEB3B","FF4081","sparkly firework-ish pop pointing away","whistle","Look! Over there! Gotcha.","silly"},
 	{"dive","KBCAKB","Dk",4,9,2,"4FC3F7","FFFFFF","diving streak ending in splash","splash","Dive! Dive! Dive!","aquatic"},
 	{"divination","KLBOKJ","a",1,5,2,"7E57C2","FFD54F","glowing crystal ball vision","chime","I foresee you losing.","magic,psychic"},
@@ -163,7 +162,6 @@ return {
 	{"drench","KBCEOJ","N",2,6,1,"29B6F6","E1F5FE","bucket-dump of water from above","splash","Soaked to the socks.","aquatic,silly"},
 	{"dresser","BMCC0I","G",1,1,7,"8B5A2B","B58A3A","low cabinet with drawers","thud","Socks: defended.","furniture,household"},
 	{"dribble","KMBO3G","UDj",3,9,2,"F97316","111827","basketball bouncing in a zigzag between falling defenders","squeak","Crossed up. Ankles: gone.","sport"},
-	{"drider","AJDJFA","MHe",6,6,6,"1C1917","7C3AED","elf torso on a giant spider body","skitter","Eight legs. Two bows.","spooky"},
 	{"dried apricot","IMBLGI","SNP",2,3,3,"E8862B","F2A65A","flat chewy orange disc","gloop","Chewy orange coins.","edible,sticky"},
 	{"dried cranberries","IMAELB","eVP",2,7,1,"A3101E","C8303A","wrinkly red bits","pitter","Sweet-tart red jewels.","edible,sweet"},
 	{"dried fruit","IMAELB","eVP",2,7,1,"A0522D","E8A43A","pile of wrinkly fruit bits","pitter","Fruit, concentrated for travel.","edible,sweet"},
@@ -403,4 +401,6 @@ return {
 	{"emperor penguin","ACCJDA","UDB",3,5,3,"1E1E24","F2B02A","tall penguin, gold neck patch","squawk","Tallest penguin. Handles -60 degrees.","bird,arctic,cute,royal"},
 	{"emperor scorpion","AJBJQA","fMN",3,6,2,"1E1E24","3A4A6A","huge glossy black scorpion","skitter","Big, black, and mostly gentle.","arachnid,spooky,venomous"},
 	{"empire state building","EMFCII","GkSO",7,1,10,"B0BEC5","37474F","art deco skyscraper with a spire","rumble","A whole skyscraper. Delivered.","structure,landmark"},
+	{"empower","KLCOKJ","DW",4,5,4,"FF6D00","FFE57F","glowing muscular outline aura","hum","Power! Unlimited... ish.","support"},
+	{"empress tree","NGDCMI","GWkS",3,1,6,"6D4C41","B39DDB","giant leaves and purple flower spikes","rustle","Grows insanely fast. Royal colours.","plant,tree,royal"},
 }

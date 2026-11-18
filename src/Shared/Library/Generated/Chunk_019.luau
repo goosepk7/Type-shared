@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"pallas cat","AMBJAA","ZfT",4,7,3,"A39A8E","6E655A","extremely fluffy, flat face, grumpy stare","hiss","Permanently unimpressed with you.","mammal,predator,wild,silly,cute"},
-	{"palm grove","NGECMI","GFSe",3,1,6,"8D6E63","43A047","cluster of swaying palm trees","rustle","Shade, coconuts, and a lot of bonking.","plant,tree"},
 	{"palm strike","KLCFOB","kI",5,9,1,"B3E5FC","FFFFFF","palm-shaped force wave","whum","Talk to the hand. It hits.","melee,magic"},
 	{"palm tree","NGDCMI","GkSe",4,1,6,"8D6E63","43A047","tall curved trunk, frond crown, coconuts","rustle","Bonk. Coconut. Bonk.","plant,tree"},
 	{"palmier","IMBAKK","Uke",3,7,2,"D9A04A","F2C870","heart-shaped flaky swirl","whoosh","A pastry shaped like a heart.","edible"},
@@ -228,6 +226,7 @@ return {
 	{"pharaoh mummy","AIDJNA","ieNh",7,3,7,"CA8A04","1E3A8A","golden death mask, striped headdress, bandages","groan","Woke up from a 3000-year nap. Still tired.","undead,royal,ancient,spooky"},
 	{"pharmacist","LJCJNA","FM",3,4,4,"F8FAFC","22C55E","lab coat, pill bottles","ding","Here's your potion. Twice daily.","healer"},
 	{"pharmacy","EMCNII","FS",2,1,6,"F5F5F5","43A047","white shopfront with a green cross","ding","Healing supplies in stock.","structure,building,shop"},
+	{"phase panther","ALDJAA","ZfY",6,8,5,"312E81","22D3EE","six-legged panther with tentacle whips","hiss","It's never quite where you see it.","dungeon,cat"},
 	{"phase shift","KLBONJ","GZ",3,9,2,"8FE8F0","C9A8F0","turn ghostly for a moment: hits pass right through","warp","Not quite here. Not quite gone.","hero,movie,magic"},
 	{"phase spider","ALCJFA","ZMY",4,7,3,"7C3AED","1F2937","translucent purple spider fading in and out","skitter","Now you see it. Now it's on you.","insect,magic"},
 	{"pheasant","AMBJDA","dAf",2,4,2,"B8541E","1E5A3A","long tail, coppery body, green head","cluck","Very fancy. Very bad at flying.","bird,farm"},
@@ -403,4 +402,5 @@ return {
 	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
 	{"pizza shield","IMCIII","Ga",3,3,6,"E8B04A","D72B2B","round pizza strapped to arm","thud","Cheese-forward defense.","edible"},
 	{"pizza slice","IMBAKK","cTe",3,7,2,"E8B04A","D72B2B","triangle slice, cheese stretch","whoosh","A triangle of hope.","edible"},
+	{"placoderm","ABCJEC","GDfB",4,7,4,"6A6A6A","B8B0A0","armored ancient fish","splash","Armored fish. Bony and proud.","fish,aquatic,extinct,ancient"},
 }
