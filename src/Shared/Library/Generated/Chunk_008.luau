@@ -94,6 +94,7 @@ return {
 	{"dried apricot","IMBLGI","SNP",2,3,3,"E8862B","F2A65A","flat chewy orange disc","gloop","Chewy orange coins.","edible,sticky"},
 	{"dried cranberries","IMAELB","eVP",2,7,1,"A3101E","C8303A","wrinkly red bits","pitter","Sweet-tart red jewels.","edible,sweet"},
 	{"dried fruit","IMAELB","eVP",2,7,1,"A0522D","E8A43A","pile of wrinkly fruit bits","pitter","Fruit, concentrated for travel.","edible,sweet"},
+	{"drift spark","KDBOKF","DkL",4,10,2,"4FC3FF","FF9A2E","rune sled power-slides spraying blue-orange sparks","screech","Blue sparks. Orange sparks. Gone.","game,racing,speed"},
 	{"drill","JKBAJK","CfT",4,7,5,"F1C40F","24262A","pistol-grip drill with bit","whirr","Whirrrrr. Hole.","tool,mechanical"},
 	{"drill arm","CKCHJI","CfT",6,6,6,"2C3539","D4A72C","giant spinning drill arm","zap","Pierce the heavens!","scifi,mechanical"},
 	{"drill sergeant","LMCJNA","IOh",4,5,6,"4D7C0F","DC2626","campaign hat, megaphone","horn","DROP AND GIVE ME TWENTY.","military"},

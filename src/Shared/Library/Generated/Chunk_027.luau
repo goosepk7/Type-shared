@@ -134,7 +134,6 @@ return {
 	{"tupandactylus","AMDJDB","DdAT",6,8,4,"7A5A3A","E8401E","gigantic sail crest","screech","Its head crest is a giant sail.","pterosaur,extinct,reptile"},
 	{"turaco","AMBJDB","jdA",2,6,2,"2AA04A","E8301E","green crested bird, red wings","squawk","Green bird. Red wings. Real pigment.","bird,jungle,silly"},
 	{"turbine","OFDM1K","kIP",4,4,6,"F2F2EE","8E9196","tall pole with three giant blades","whoosh","Spins wind into watts. And foes away.","mechanical"},
-	{"turbo","KACOKB","D",4,10,2,"FF5722","FFEB3B","flame exhaust trails off caster","vroom","Turbo button: pressed.","speed"},
 	{"turkey","AMCJDA","Ddf",3,4,2,"5E4232","C8301E","fanned tail, red wattle, puffed chest","gobble","Gobbles at everyone. Hides in November.","bird,farm,holiday"},
 	{"turkey leg","IMCHJI","Fkcf",4,5,4,"B0602B","F2EEE0","huge roasted leg, bone handle","bonk","Fair food. Also a weapon.","edible,silly"},
 	{"turkey vulture","AMCJDB","DASfT",4,9,3,"2A2420","D8303A","red bald head, dark wings","screech","Smells lunch from a mile up.","bird,predator"},

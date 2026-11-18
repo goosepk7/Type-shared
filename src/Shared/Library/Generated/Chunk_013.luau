@@ -104,6 +104,7 @@ return {
 	{"humpback whale","ABFJEC","UdkIB",8,3,9,"2E3A48","E8ECEE","long white flippers, knobby head, breaching","whalesong","Sings top hits across entire oceans.","mammal,aquatic,ocean,heavy"},
 	{"humphead wrasse","ABDJEC","DfB",5,7,4,"3AA0A0","6AC8E8","giant blue-green wrasse with forehead hump","splash","Big forehead. Kind eyes.","fish,aquatic"},
 	{"humpty dumpty","LMBJGG","UdV",2,3,1,"F8FAFC","DC2626","giant egg with face, bowtie, on a wall","crack","Had a great fall. Still smiling.","folklore,silly"},
+	{"hundred slap","KMBOKI","kf",3,9,1,"FFD0A8","FFFFFF","a blur of open-palm slaps with afterimage hands","slap","One hundred. Give or take.","game,fighting,melee"},
 	{"hunger","KMCO5J","ifH",4,5,2,"F59E0B","7C2D12","growling empty stomach with a fork and knife orbiting","growl","Not you when you are hungry. Worse.","mood,silly"},
 	{"hunt","KGCOvB","QTe",5,7,2,"4D7C0F","B45309","drawn bow and paw-print trail leading to the target","twang","Shh. Follow the paw prints.","wild,ranged"},
 	{"hunter","LGCJNA","cTe",5,6,4,"365314","78350F","fur cap, crossbow, trap belt","twang","Sets a trap. Steps in it. Starts over.","outdoor"},

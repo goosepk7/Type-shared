@@ -79,7 +79,7 @@ return {
 	{"oil drum","BKCC2I","GE",3,1,6,"2F6FD1","8E9196","steel barrel, ribbed sides","thud","Clang. Don't shoot it.","container"},
 	{"oil pump","OKDM1I","N",3,1,7,"4A4D52","24262A","nodding horse-head pump","clank","Nod. Nod. Slick.","mechanical"},
 	{"oil rig","EEECII","GKCS",4,1,8,"FFB300","37474F","steel platform on legs, tall drill tower","clank","Drills deep. Strikes trouble.","structure,building,mechanical"},
-	{"oil slick","BMCLII","jNO",2,1,2,"24262A","7D3CB5","shiny black puddle","snap","Wheee! Splat.","trap,silly"},
+	{"oil slick","BMCL2I","kSO",2,1,3,"1B1A22","6EE7D8","a tossed oil can spills a glossy rainbow-sheened puddle","splash","Wheee! Splat.","game,racing,trap"},
 	{"oil spiller","OKCM1I","jNP",2,3,5,"24262A","7D3CB5","tank that sprays slick oil","clank","Slip-n-slide of doom.","defense,mechanical"},
 	{"oilbird","AIBJDB","jA",2,7,1,"8A5A2A","F2E8D8","cave bird with echolocation","screech","A bird that echolocates. Basically a bat.","mammal,nocturnal,spooky"},
 	{"okapi","AMCJAA","Dk",4,8,4,"4A2A20","F2EEE6","dark body, zebra-striped legs, long neck","bleat","A giraffe in zebra leggings.","mammal,wild"},

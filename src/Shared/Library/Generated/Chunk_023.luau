@@ -85,6 +85,7 @@ return {
 	{"shrink machine","OLDM1I","eX",5,3,6,"7D3CB5","8BC34A","huge dish shrink cannon","hum","Big problems, small sizes.","scifi"},
 	{"shrink ray","CLCBwI","jeX",4,7,3,"8BC34A","7D3CB5","ray gun with tiny dish tip","zap","Makes big problems small.","scifi,ranged"},
 	{"shrink spell","KLCBKI","eX",4,8,2,"FF4081","F8BBD0","pink zig-zag beam, target shrinking tiny","zwip","Pocket-sized problems.","silly"},
+	{"shrink storm","GDENOI","LXN",4,4,9,"FFE45C","4A3C78","storm cloudlets over every foe, bolts shrink them","thunder","Everyone gets a little smaller. Except you.","game,racing,lightning,ultimate"},
 	{"shrinking potion","BLAA2I","eX",3,6,1,"8BC34A","BFE6F2","tiny bottle labelled DRINK ME","bubble","Small but mighty.","magic,fantasy"},
 	{"shrug","KMBINI","Gja",2,4,4,"9CA3AF","FDE68A","figure with both palms up and shoulders at ear height","sigh","Not my problem. Might be yours.","meme,silly"},
 	{"shunosaurus","AMEJAA","kIO",7,2,9,"7A6A5A","B8A890","tail club sauropod","rumble","Long neck, club tail. Combo.","dinosaur,extinct,reptile,heavy"},

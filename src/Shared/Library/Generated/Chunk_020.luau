@@ -100,7 +100,6 @@ return {
 	{"power nap","KHBOKJ","F",1,2,3,"9FA8DA","FFFFFF","caster snoozing on a cloud pillow","snore","Five minutes. Fully recharged.","support,silly"},
 	{"power plant","EDECII","GSL",4,1,8,"B0BEC5","FFEB3B","big building, cooling towers, sparking wires","hum","Plugs into everything. Zaps everything.","structure,building,mechanical"},
 	{"power saw","JKCL1I","V",5,1,6,"8E9196","F1C40F","saw blade sticking out of a table","whirr","Don't put your hands there.","tool"},
-	{"power slide","KMBOKB","Dk",3,9,2,"FFAB40","FFFFFF","sliding dust trail","screech","Slide in. Knock 'em over.","silly,speed"},
 	{"power surge","FDCFOB","LP",6,9,1,"33A1FD","FFE066","wave of electric arcs racing outward","buzz","All the power. All at once.","electric"},
 	{"pozole","IBBOGI","FS",3,4,3,"C8302B","F7F2EC","red stew with big hominy","slurp","Hominy swimming in red broth.","edible,warm,healthy"},
 	{"prairie chicken","AMBJDA","df",2,4,2,"B8904A","E8A02A","grouse with orange air sacs","boom","Booms like a drum.","bird,farm"},

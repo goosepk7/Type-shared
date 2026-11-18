@@ -377,6 +377,7 @@ return {
 	{"ninjato","CKCHrK","ZfT",5,8,3,"24262A","3A3F45","straight short ninja blade","shing","Silent. Sharp. Gone.","ninja,sharp"},
 	{"ninki nanka","ABEJCC","MHB",7,5,7,"365314","FACC15","swamp dragon with glittering crest","roar","One look and you get the shivers.","cryptid,reptile"},
 	{"nisse","AMAJNA","dZb",1,6,2,"DC2626","E5E7EB","tiny bearded house gnome, red hat","giggle","Wants porridge. Will prank you without it.","mythical,cute,christmas"},
+	{"nitro boost","OABOKJ","D",2,10,2,"3D7BFF","B8E2FF","twin nitro canisters on your back flare blue","vroom","Blue flame means go.","game,racing,speed"},
 	{"nits","AMADLG","iQP",1,6,1,"E5E7EB","6B7280","tiny hopping specks around a head and a fine-tooth comb","scratch","A letter is going home to all parents.","insect,gross,school"},
 	{"nixie","ABBJNC","cHB",3,7,2,"0891B2","A7F3D0","green-haired water sprite","sing","A water fairy with a splash of mischief.","fairy,aquatic"},
 	{"no","KICCnI","GIa",4,2,8,"DC2626","FFFFFF","huge red NO sign with a hand held up","buzz","No. Next question.","defense,meme"},
