@@ -733,3 +733,26 @@ def s_aq_spiral_plume():
         rad.append(0.075 * (1 - u * 0.6))
     s = tube(pts, rad)
     return s.su(round_cone((0, -0.6, 0), (0, 0.62, 0), 0.07, 0.03), 0.05)
+
+
+# ------------------------------------------------------------------------------------------------ seahorse
+SHT = (1.0, 1.9, 1.1)  # SeaFish.seahorse Trunk ellipsoid
+
+
+@piece("s_aq_seahorse", (0.5, 0.95, 0.55), tris=900, kind="unit", lead=SHT, set=S, smooth=2)
+def s_aq_seahorse():
+    """Seahorse trunk (lead Trunk): a keeled belly bulging forward (-Z), a narrower chest under the neck, and
+    the bony plates read as horizontal rings with a ridge down the back."""
+    rx, ry, rz = SHT[0] / 2, SHT[1] / 2, SHT[2] / 2
+    s = ellipsoid(rx * 0.86, ry * 0.98, rz * 0.8, (0, 0, rz * 0.1))
+    s = s.su(ellipsoid(rx * 0.9, ry * 0.55, rz * 0.85, (0, -ry * 0.2, -rz * 0.12)), 0.2)
+    s = s.su(ellipsoid(rx * 0.12, ry * 0.75, rz * 0.2, (0, ry * 0.05, rz * 0.78)), 0.08)
+    base = s
+
+    def f(p):
+        d = base(p)
+        u = p[:, 1] / ry
+        ring = np.cos(u * np.pi * 3.5) ** 8
+        return d + 0.022 * (1 - ring) * np.clip(1 - np.abs(u), 0, 1) ** 0.3
+
+    return SDF(f)
