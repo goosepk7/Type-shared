@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"general store","EMCNII","dSch",2,1,5,"8D6E63","FFB300","wooden store with barrels on the porch","ding","Got everything. Mostly beans.","structure,building,shop"},
+	{"general tso's chicken","IABAKK","Kc",5,7,2,"C8402B","F2A62B","glossy spicy chicken chunks","sizzle","Sweet, spicy, and decorated.","edible,spicy,flammable"},
+	{"generation ship","DLFKHJ","GAgh",7,3,10,"B0BEC5","43A047","colossal ship with gardens inside","roar","A whole world in a ship.","vehicle,space"},
+	{"generator","ODCM1I","FSL",3,2,7,"F1C40F","4A4D52","boxy engine with wires and dials","hum","Brrrrr. The lights stay on.","mechanical,electric"},
 	{"generosity","KHBOKJ","F",1,5,2,"FFD54F","FF80AB","golden sparkles passed to allies","chime","Here, have some health.","support"},
 	{"genet","AMBJAA","Cf",2,5,3,"D8CDB8","2A2420","slim spotted, very long ringed tail","squeak","Half cat, half tail.","mammal,wild"},
 	{"genie lamp spirit","ALBJNJ","AFY",3,6,2,"2563EB","FACC15","small blue genie popping from a lamp","whoosh","Grants tiny wishes. Snacks only.","magic,cute"},
@@ -328,6 +332,7 @@ return {
 	{"gopher","AMAJAA","Cdb",1,6,1,"9A7450","D8C0A0","buck teeth, cheek pouches","squeak","Ruins lawns. Proudly.","mammal,cute"},
 	{"gopher tortoise","AMBJUA","GCN",2,2,8,"8A6A44","C8A07A","burrowing tortoise","hiss","Digs houses for 300 other species.","reptile,armored"},
 	{"gordita","IMBAKF","ke",3,6,2,"E8C88A","8A5A3A","thick stuffed corn pocket","splat","A chubby pocket of goodness.","edible"},
+	{"gorgon gaze","KEDBCI","eNO",6,6,3,"E8E2D4","6EE6A0","a serene marble mask crowned with jade snakes, eyes flashing","hiss","Rule one: do not make eye contact. There is no rule two.","monster,folklore,myth,control"},
 	{"gorgonopsid","AMCJAA","DfT",5,4,4,"6A5A4A","C8A07A","saber teeth, reptile-dog body","growl","Saber teeth before cats did it.","extinct,ancient"},
 	{"gorgosaurus","AMDJBA","DkfT",7,6,7,"6A4A2A","C8A07A","slim tyrannosaur","roar","A mini rex. Still massive.","dinosaur,extinct,reptile,predator"},
 	{"gorilla","AMDJBA","DkfO",8,5,7,"2A2A2E","8E8E92","massive chest, knuckle walk, silver back","chestbeat","Chest drums at 200 beats per minute.","mammal,primate"},
@@ -398,9 +403,4 @@ return {
 	{"gravity snail","ALBJFA","HN",2,1,6,"7C3AED","FDE68A","snail with a swirling black-hole shell","squelch","Pulls you closer. Very, very slowly.","alien,silly"},
 	{"gravity storm","FLEN5K","lHPO",8,5,5,"311B92","B388FF","swirling purple storm flinging debris","whum","Up, down, sideways, all at once.","space,storm"},
 	{"gravity tower","ELDMII","GSHeO",5,1,7,"37474F","7C4DFF","tower with a floating orb that pulls","thud","Sucks enemies in. Then smashes.","structure,defense,tower,magnetic"},
-	{"gravity vortex","KLDN5K","SHN",6,4,5,"311B92","B388FF","swirling purple ground funnel","hum","Everyone slides to the middle.","space"},
-	{"gravity wall","FLCCnI","GHN",4,2,6,"4527A0","B388FF","warped purple ripple wall","whum","Walls that weigh you down.","space,defence"},
-	{"gravity wave","FLDFOB","kPO",7,7,1,"4527A0","B388FF","space-bending ripple ring","whum","Space wobbles. You fall over.","space"},
-	{"gravlax","IGBOKI","F",2,5,3,"E8603A","7DBE3A","cured salmon slices with dill","crunch","Salmon cured with salt and patience.","edible,healthy"},
-	{"gravy","IMBNGI","FSN",2,4,1,"8A5A2A","C8904A","glossy brown sauce boat","splat","A river of savory.","edible,sauce"},
 }

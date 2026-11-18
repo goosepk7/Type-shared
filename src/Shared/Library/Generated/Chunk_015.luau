@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ladyfinger","IMBHJI","kf",2,5,4,"F2D88A","F7F2EC","long sugar-dusted sponge stick","bonk","A biscuit finger pointing at you.","edible,silly"},
+	{"lag monster","LLCJNA","jNY",3,2,4,"22C55E","F472B6","glitchy figure teleporting in jitters","zap","Rubber-bands into your face.","meme,gaming,silly"},
+	{"lag spike","KLCNOI","jNY",5,3,3,"3AF2FF","FF3AD0","a glitchy field of pixel static and colour split","bzzt","Your ping is now 9000. Enjoy last second, again.","gaming,meme,glitch"},
+	{"lahmacun","IMBAKK","Uke",3,7,2,"D9A04A","C8302B","thin flatbread with minced meat","whoosh","A crispy thin pizza from Turkey.","edible"},
+	{"lake","MBENII","SN",2,1,6,"1E88E5","7CB342","calm blue water with reeds","splash","Calm on top. Hmm, what is below?","place,terrain"},
+	{"lake effect snow","GCDEOJ","JSN",6,3,4,"ECEFF1","90CAF9","narrow band dumping heaps of snow","hush","Feet of snow. In one stripe.","frozen,storm"},
+	{"lake monster","ABEJCC","ZfB",7,4,7,"1E3A8A","4ADE80","long neck, humped back above still water","splash","Blurry in every single photo.","cryptid,aquatic"},
+	{"laksa","IABOGI","KF",3,4,3,"E8762B","F2E8D0","orange coconut noodle soup","slurp","Spicy coconut noodles in a bowl.","edible,warm,healthy"},
 	{"lamassu","AHDJAA","GAk",6,4,9,"C2A26B","1E3A8A","winged bull with bearded human head","stomp","A gatekeeper with excellent beard care.","mythical,guardian,ancient"},
 	{"lamb","AMBJAA","df",1,4,4,"FFFDF8","E8DED0","tiny fluffy sheep, wobbly legs","bleat","Too soft to be real.","mammal,farm,cute"},
 	{"lamb chop","IMBHJI","cf",3,5,4,"C8604A","F2E8D8","chop with long bone","bonk","A meaty lollipop.","edible,silly"},
@@ -395,12 +403,4 @@ return {
 	{"loon","ABBJDC","AfB",2,5,2,"1E1E1E","F2F2F0","checkered black-white back, red eye","wail","Its call sounds like a ghost.","bird,aquatic,spooky"},
 	{"loop","KLBL5K","jNY",3,6,2,"22D3EE","F472B6","glowing figure-eight track sending things back to start","warp","See flavour text: loop.","gaming,magic"},
 	{"loop de loop","KFBOKB","D",2,8,2,"FFEB3B","81D4FA","looping motion trail ribbon","whee","Wheeeee! Around we go.","silly"},
-	{"loot","BHCELJ","dFcP",3,5,3,"FACC15","A855F7","shower of coins, gems, a glowing sword and a boot","jingle","Legendary drop! It is a boot. One boot.","gaming,shiny"},
-	{"loot goblin person","LEBJNA","bY",2,9,2,"65A30D","FACC15","gremlin-ish player with a sack of loot","cackle","Grabs every chest. Shares nothing.","meme,gaming,goblin"},
-	{"lop rabbit","AMBJAG","UCd",2,6,1,"D8B898","F7F0E6","droopy floppy ears","squeak","Ears are on strike.","mammal,cute"},
-	{"loppers","JKBHJK","fV",3,5,4,"2E8B57","C9CED4","long-handled branch cutters","clank","Chomp. Branch gone.","garden"},
-	{"loquat","IGAAKF","Fke",3,6,2,"F2A43A","F7D08A","small orange oval, big seeds","splat","A little orange cousin of the apple.","edible,fruit,sweet"},
-	{"lore master","LLCJNA","jh",3,3,3,"7C2D12","FDE68A","stacks of books, glowing scroll","whisper","Will explain the backstory. All of it.","meme,gaming,magic"},
-	{"loris","AMBJBA","dMeN",2,1,2,"B08E6A","4A3A2C","round huge eyes, slow movements","chatter","Moves slowly. Venomous elbows. Wild.","mammal,primate"},
-	{"lose","KIBAKB","XNO",3,6,1,"64748B","EF4444","grey YOU LOSE banner with a deflating balloon","groan","Better luck next respawn.","gaming,meme"},
 }

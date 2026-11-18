@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"loot","BHCELJ","dFcP",3,5,3,"FACC15","A855F7","shower of coins, gems, a glowing sword and a boot","jingle","Legendary drop! It is a boot. One boot.","gaming,shiny"},
+	{"loot goblin person","LEBJNA","bY",2,9,2,"65A30D","FACC15","gremlin-ish player with a sack of loot","cackle","Grabs every chest. Shares nothing.","meme,gaming,goblin"},
+	{"lop rabbit","AMBJAG","UCd",2,6,1,"D8B898","F7F0E6","droopy floppy ears","squeak","Ears are on strike.","mammal,cute"},
+	{"loppers","JKBHJK","fV",3,5,4,"2E8B57","C9CED4","long-handled branch cutters","clank","Chomp. Branch gone.","garden"},
+	{"loquat","IGAAKF","Fke",3,6,2,"F2A43A","F7D08A","small orange oval, big seeds","splat","A little orange cousin of the apple.","edible,fruit,sweet"},
+	{"lore master","LLCJNA","jh",3,3,3,"7C2D12","FDE68A","stacks of books, glowing scroll","whisper","Will explain the backstory. All of it.","meme,gaming,magic"},
+	{"loris","AMBJBA","dMeN",2,1,2,"B08E6A","4A3A2C","round huge eyes, slow movements","chatter","Moves slowly. Venomous elbows. Wild.","mammal,primate"},
+	{"lose","KIBAKB","XNO",3,6,1,"64748B","EF4444","grey YOU LOSE banner with a deflating balloon","groan","Better luck next respawn.","gaming,meme"},
 	{"loser","LMBJNA","jdE",2,4,2,"9CA3AF","60A5FA","grumpy kid flipping a game board, pieces flying","groan","Best two out of three? Out of five? Seven?","silly,gaming"},
 	{"loss","KIBOKJ","jXN",2,3,1,"6B7280","EF4444","sad trombone over a red FAIL stamp","groan","Wah wah wahhh.","meme,gaming,silly"},
 	{"lost city","MEFNII","ZSh",4,1,9,"E6C27A","43A047","overgrown stone city with golden domes","rumble","Nobody has found it. Except you, now.","ancient,mythical"},
@@ -395,12 +403,4 @@ return {
 	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
-	{"miasma","FJDDOJ","SMNP",5,3,3,"5D7A3A","A3B86C","thick yellow-green rotten haze","hiss","Smells like a dungeon basement.","toxic"},
-	{"mic drop","BDCHtK","klf",6,7,6,"C8CCD6","FF3D7F","giant stage mic swung on its cord, then dropped","thud","Swing. Drop. Walk away.","music,melee"},
-	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
-	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
-	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
-	{"microlight","DFBKHB","DAkg",3,6,2,"FFEB3B","1565C0","tiny wing over an open seat and prop","propeller","Basically a lawn chair with wings.","vehicle,air,silly"},
-	{"microphone","BDAFKI","jO",1,6,2,"C9CED4","24262A","round-head microphone on cable","feedback","Mic drop. Literally.","music,loud"},
-	{"microraptor","AMBJBB","DAQfT",3,9,3,"2A2A3A","6A8AE8","four-winged glider dinosaur","screech","Four wings. Shiny black feathers.","dinosaur,extinct,reptile,predator"},
 }

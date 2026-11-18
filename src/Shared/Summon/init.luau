@@ -291,7 +291,8 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 	-- hero models (Heroes/): a fully sculpted model with its own skeleton wins over signatures and plans
 	local heroId, heroDef = nil, nil
 	if o.heroes ~= false then
-		heroId, heroDef = Heroes.find(r)
+		heroId = Heroes.find(r)
+		heroDef = heroId and Heroes.get(heroId) -- the family module loads here on first use (Heroes: lazy families)
 	end
 	if heroDef then
 		sigId, sigFn = nil, nil
@@ -420,7 +421,7 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 	local k = target / math.max(extent, 1e-3)
 	-- sculpted vehicles are authored at their real size around a 5-stud rider (a rowboat seats one, a galleon is
 	-- a galleon): keep that size, nudged by the size class, never more than VehicleMaxClass x the class height
-	local hdef = bp.rig.hero and Heroes.get(bp.rig.hero)
+	local hdef = bp.rig.hero and Heroes.info(bp.rig.hero)
 	if hdef and hdef.plan == "Vehicle" then
 		local f = (cfg.VehicleScale and cfg.VehicleScale[bp.size]) or VEHICLE_SCALE[bp.size] or 1
 		k = math.min(f * (tonumber(o.scale) or 1), (cfg.VehicleMaxClass or 2.5) * target / math.max(extent, 1e-3))

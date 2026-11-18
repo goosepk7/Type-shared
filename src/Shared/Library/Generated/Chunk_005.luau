@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cardamom","IFBDOJ","jPO",2,5,1,"8DB86A","C8D88A","small green pods","puff","Fragrant green pods of mystery.","edible,spice"},
 	{"cardboard","BMCI2A","GUZ",2,3,3,"C8A165","A9824C","big brown box with eye holes sneaking along","thud","Not a box. A stealth vehicle.","household,stealth,silly"},
 	{"cardboard armor","BMCONI","Gd",1,5,2,"C69C6D","7A4E2D","taped box armour, pot helmet","clank","Tactical arts and crafts.","silly,toy"},
 	{"cardboard box","BMBO2I","Zc",2,5,4,"C69C6D","7A4E2D","a taped cardboard box with two eye holes","thud","Totally just a box. Move along.","silly,stealth,modern"},
@@ -333,7 +334,6 @@ return {
 	{"chocolate strawberry","IMBLKI","dSc",2,3,3,"D7263D","4A2516","strawberry half-dipped in chocolate","chomp","A strawberry in a tuxedo.","edible,sweet,fancy"},
 	{"chocolate truffle","IMALKI","dSc",2,3,3,"3A1A0C","7A4026","cocoa-dusted round bonbon","chomp","Small, round, and luxurious.","edible,sweet,candy"},
 	{"chocolate wall","EECCII","GdSc",2,1,3,"5D4037","8D6E63","glossy chocolate bar segments","thud","Enemies stop to take a bite.","silly,sweet,edible"},
-	{"choir","LLDJLI","FO",5,3,4,"7C2D12","F8FAFC","rows of robed singers","sing","Harmony so loud it shakes walls.","music,swarm"},
 	{"cholla","NECLMI","GQST",4,1,5,"C5E1A5","9E9D24","fuzzy-looking cactus with barbed segments","thud","Looks cuddly. Jumps onto you. Ouch.","plant,desert,sharp"},
 	{"chonchon","AIBJDB","jAO",2,7,2,"78716C","1F2937","flying head with huge flapping ears","screech","A head that flies with its ears. Wild.","mythical,spooky,silly"},
 	{"chop","KMBHJB","fO",4,8,2,"FFCC80","FFFFFF","glowing hand edge chop arc","hyah","Hi-yah!","silly,sharp"},
@@ -360,6 +360,7 @@ return {
 	{"chuckwalla","AMBJAA","CWf",2,7,2,"3A3A3A","C8701E","fat desert lizard","hiss","Wedges into rocks and puffs up.","reptile,desert"},
 	{"chunk","BEBA3B","kVO",3,5,5,"8B6B4A","B8A07A","rough lumpy grey-brown lump of something","thud","A chunk of what? Best not to ask.","silly"},
 	{"chupacabra","AJBJAA","Dif",3,8,3,"57534E","84CC16","spiny back, big eyes, leathery grey skin","hiss","Visits farms at night. Leaves no thank-you note.","cryptid,spooky"},
+	{"chupacabra pounce","KGCHAG","DfN",5,9,3,"B0CCB8","FFC446","a spine-backed cryptid spirit leaping, a ring of quills","hiss","Nobody has a clear photo. Nobody will.","monster,folklore,cryptid,melee"},
 	{"church bell","BKDGKI","kO",6,1,8,"A86F32","4A4D52","huge bronze bell","bong","BONG. Everyone stops.","music"},
 	{"churrasco","IABHJI","Kf",3,5,4,"8A2E2E","C8603A","grilled meat on long skewer","bonk","Meat on a sword. Grilled.","edible,silly"},
 	{"churro","IMBHJI","kcf",3,5,4,"C8803A","F2D08A","long ridged stick, sugar crust","bonk","A cinnamon sword from the fair.","edible,silly"},
@@ -402,5 +403,4 @@ return {
 	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
 	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
 	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
-	{"clash","KMCFOB","kO",5,8,2,"FFAB40","FFFFFF","two forces colliding in a spark ring","clang","Sparks fly. Everyone flinches.","melee"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flamethrower","CACFwI","KSeP",7,5,4,"D9480F","6B7B3A","nozzle wand with fuel tanks","whoosh","For when you want it well done.","flammable,ranged"},
+	{"flaming sphere","FACGKF","KQ",5,4,3,"FF6D00","FFE082","rolling ball of fire chasing targets","crackle","A fireball that walks you home.","fire"},
+	{"flamingo","AMCJDA","dAfT",3,5,2,"F28AA0","1E1E1E","pink bird on one leg, bent beak","squawk","Pink because of shrimp. Stands on one leg.","bird,wetland"},
+	{"flamingo chick","AMBJDA","AfT",1,5,2,"E8E0E0","C8C0C0","grey fluffy flamingo baby","squawk","Born grey. Turns pink later.","bird,wetland,cute"},
 	{"flan","IMBLGG","USN",2,3,3,"F2C24A","8A4A1E","wobbly custard, caramel top","wobble","Shakes like it's nervous.","edible,wobbly,sweet"},
 	{"flapjack bar","IMAAKK","keO",3,7,6,"C89050","E8A317","golden oat slab","bonk","A chewy golden oat brick.","edible"},
 	{"flare","FABAKB","KeO",4,8,1,"FF5E3A","FFF1B5","bright sputtering ball, smoke streamer","fizz","Look at the pretty light. Ow.","fire"},
@@ -399,8 +403,4 @@ return {
 	{"gem","BMAA4J","cea",2,7,6,"1E9E5A","F2F2EE","faceted sparkling gemstone","chime","Shiny. Pointy. Priceless.","treasure,shiny"},
 	{"gemini","MHCEKJ","eV",5,5,5,"FFFFFF","FFD54F","two linked star figures","rumble","Two stars for the price of one.","space,zodiac"},
 	{"general","LECJNA","GOh",5,4,6,"365314","CA8A04","medal-covered coat, peaked cap","horn","Has a lot of medals. Mentions all of them.","military"},
-	{"general store","EMCNII","dSch",2,1,5,"8D6E63","FFB300","wooden store with barrels on the porch","ding","Got everything. Mostly beans.","structure,building,shop"},
-	{"general tso's chicken","IABAKK","Kc",5,7,2,"C8402B","F2A62B","glossy spicy chicken chunks","sizzle","Sweet, spicy, and decorated.","edible,spicy,flammable"},
-	{"generation ship","DLFKHJ","GAgh",7,3,10,"B0BEC5","43A047","colossal ship with gardens inside","roar","A whole world in a ship.","vehicle,space"},
-	{"generator","ODCM1I","FSL",3,2,7,"F1C40F","4A4D52","boxy engine with wires and dials","hum","Brrrrr. The lights stay on.","mechanical,electric"},
 }

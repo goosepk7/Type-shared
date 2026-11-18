@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"emu","AMDJDA","Djkf",5,8,5,"6A5A4A","3AA0D8","shaggy brown feathers, blue neck","boom","Won a war against people. Really.","bird,flightless"},
+	{"emu chick","AMBJDA","Dkf",2,8,5,"6A5A4A","F2E8D0","striped fluffy baby emu","boom","Stripy, fast, and chaotic.","bird,flightless,cute"},
+	{"encantado","ABCJEC","jcB",4,8,3,"F9A8D4","0EA5E9","pink river dolphin in a straw hat","splash","Shows up at parties. Hides his blowhole.","mythical,aquatic"},
+	{"enceladus","MCDGKJ","Je",4,4,6,"FFFFFF","B3E5FC","bright white moon shooting ice jets","rumble","Sneezes ice into space.","space"},
 	{"enchanted forest","MLFNII","jFSNY",5,1,8,"7E57C2","66BB6A","glowing trees, floating sparkles, mushrooms","rumble","Pretty, sparkly, and very confusing.","place,terrain,magic"},
 	{"enchanted sled","DCCKHB","DAJg",4,8,4,"1565C0","FFD54F","glowing sled pulled through the sky","whoosh","Sledding season is forever.","vehicle,magic,mythical"},
 	{"enchanter","LLCJNA","GjF",4,4,4,"A855F7","FDE68A","robe with glowing rune scrolls","chime","Your sword now glows. Upcharge.","magic"},
@@ -399,8 +403,4 @@ return {
 	{"flame tank","DADMHL","KegP",7,3,9,"4B5320","FF5722","tank with a nozzle spitting fire","fwoosh","Toasty treads.","mechanical,vehicle,land"},
 	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
 	{"flame turret","OACMwI","KeP",6,5,6,"4A4D52","D9480F","squat nozzle tower with fuel tank","hum","Toasty perimeter guaranteed.","defense,flammable"},
-	{"flamethrower","CACFwI","KSeP",7,5,4,"D9480F","6B7B3A","nozzle wand with fuel tanks","whoosh","For when you want it well done.","flammable,ranged"},
-	{"flaming sphere","FACGKF","KQ",5,4,3,"FF6D00","FFE082","rolling ball of fire chasing targets","crackle","A fireball that walks you home.","fire"},
-	{"flamingo","AMCJDA","dAfT",3,5,2,"F28AA0","1E1E1E","pink bird on one leg, bent beak","squawk","Pink because of shrimp. Stands on one leg.","bird,wetland"},
-	{"flamingo chick","AMBJDA","AfT",1,5,2,"E8E0E0","C8C0C0","grey fluffy flamingo baby","squawk","Born grey. Turns pink later.","bird,wetland,cute"},
 }
