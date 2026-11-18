@@ -16,6 +16,7 @@ return {
 	{"absorb","KLCIKI","GiF",3,5,4,"7E57C2","E1BEE7","swirling dome drinking in attacks","hum","Thanks for the energy.","magic,defence"},
 	{"abyss","FIELII","iSH",7,2,6,"0A0612","3E2466","bottomless black pit with purple mist","echo","Do not stare into it. It stares back.","spooky"},
 	{"abyssal angler","AIEJEC","cfB",7,4,7,"0F172A","67E8F9","giant deep-sea fish with glowing lure","roar","Follow the light. Bad idea.","aquatic,spooky"},
+	{"abyssal ray","KIDBKI","DkTe",8,10,2,"D61A30","2A0610","a crimson sphere in an open palm fires a piercing beam","zap","Point. Charge. Erase everything in a straight line.","anime,beam,hollow"},
 	{"abyssinian","AMBJAA","dfT",2,8,2,"C8803A","E8B87A","ticked ginger coat, big ears","meow","Curious about EVERYTHING.","mammal,pet,cute"},
 	{"acacia","NGDCMI","GWkST",4,1,7,"6D4C41","9CCC65","flat umbrella crown, thorny branches","rustle","Shade below. Thorns everywhere.","plant,tree"},
 	{"acai berry","IGAELB","eVP",2,7,1,"3E1A3A","6B2D5E","tiny dark purple round berry","pitter","Small berry. Huge reputation.","edible,fruit,sweet"},
@@ -116,6 +117,7 @@ return {
 	{"albatross","ABCJDB","DASB",3,8,2,"F7F7F2","6E6E74","gigantic narrow wings, gliding","squawk","Sleeps while gliding. For years.","bird,ocean"},
 	{"albertosaurus","AMDJBA","DkfT",7,7,7,"6A5A3A","B89A6A","slender tyrannosaur","roar","T rex's lean, mean cousin.","dinosaur,extinct,reptile,predator"},
 	{"album","BMBIyE","GdO",2,3,4,"7C2D12","FDE68A","thick book of embarrassing photos falling open","thud","Baby photos. In front of your friends.","household"},
+	{"alchemic lances","KEDFII","klT",7,7,2,"8C847A","6EC4FF","a clap, a blue circle, a line of stone spikes","crack","Equal value, paid in spikes.","anime,earth,alchemy"},
 	{"alchemist","LJCJNA","EFMe",4,4,4,"7C2D12","22C55E","leather apron, bandolier of potions","bubble","Turned lead into gold. Once. Allegedly.","magic,science"},
 	{"alchemy","KLCAKB","jMb",4,6,1,"FFC107","76FF03","bubbling flask-shaped glowing bolt","bubble","Mixed something. It exploded.","magic"},
 	{"aldebaran","MADAKJ","KTeO",6,6,6,"FF7043","FFCC80","orange giant glaring like an eye","twinkle","The bull's eye. Glaring.","space,star"},
@@ -401,6 +403,4 @@ return {
 	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
-	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
-	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
 }
