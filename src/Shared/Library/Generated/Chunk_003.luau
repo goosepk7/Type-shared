@@ -51,6 +51,7 @@ return {
 	{"big ben","ELFCII","GkSO",6,1,10,"C9A55A","37474F","tall gothic clock tower with four faces","bell","BONG. BONG. You are stunned.","structure,landmark"},
 	{"big crunch","HIFNOI","iHO",9,3,6,"1A0F2E","FF4081","universe-crumpling inward collapse","rumble","The universe folds itself like laundry.","space,danger"},
 	{"big dipper","MHEEKJ","keV",6,4,5,"FFFFFF","3949AB","seven stars in a ladle shape","rumble","A giant star spoon. Scoop.","space"},
+	{"big inhale","KFCN5K","kHe",5,7,2,"FF9EC8","FFE66D","roaring cone of wind into your mouth","whirr","Hhhhhhhhhh... PTOO!","game,wind,pull"},
 	{"bigfin squid","ABDJSC","jZHB",5,6,3,"E8E0D8","C8B8A8","huge fins and spider-thin arms","squelch","Arms that bend like elbows. Spooky.","aquatic,ocean,smart,deepsea,spooky"},
 	{"bigfoot","AGDJNA","DZkf",6,6,7,"78350F","A16207","tall hairy ape-man, huge flat feet","roar","Blurry in every photo. On purpose.","cryptid"},
 	{"bigfoot chief","AGEJNA","Zkh",8,5,8,"78350F","FACC15","enormous sasquatch with feathered crown","roar","Leader of the blurry photos.","cryptid,boss"},
@@ -402,5 +403,4 @@ return {
 	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
 	{"bread fortress","IMECII","GFk",5,2,9,"C8904A","F5E6C8","castle walls of loaves","thud","A carb castle.","edible,giant"},
 	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
-	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
 }

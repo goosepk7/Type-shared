@@ -371,7 +371,7 @@ return {
 	{"pea","IGAELB","UeP",2,7,1,"7DBE3A","4E8E2B","tiny green sphere","pitter","The original pea shooter ammo.","edible,vegetable"},
 	{"pea chick","AMAJDA","df",1,4,2,"B8A07A","E8D8B8","fluffy brown baby peafowl","cluck","Future show-off. Currently fluff.","bird,farm"},
 	{"pea plant","NGBMMI","SeV",3,1,3,"7CB342","C5E1A5","climbing vine with pods that pop","rustle","Pea pea pea pea. Rapid fire.","plant,silly"},
-	{"pea shooter","CMAAwI","eV",1,9,1,"2E8B57","8BC34A","thin green tube","thwip","Pft pft pft pft.","toy,silly"},
+	{"pea pod","NGBMMI","Se",3,8,4,"4CAF50","C5E86C","snappy pea pod plant that spits peas","thwip","Pft pft pft pft.","game,plant,turret"},
 	{"pea soup","IBBOGI","FN",3,4,3,"8DB84A","5E8A2B","thick green soup","slurp","Thick as fog. Green as goblins.","edible,warm,healthy"},
 	{"peace","KHCNOI","FO",2,3,4,"B2EBF2","FFFFFF","calm pale blue glow with doves","hush","Everyone just... chill.","support"},
 	{"peace lily","NHBOMI","FS",1,1,3,"1B5E20","FFFFFF","dark leaves with white sail flowers","rustle","Peace. Calm. Healing.","plant,houseplant"},

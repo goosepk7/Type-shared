@@ -250,6 +250,7 @@ return {
 	{"slime toy","BMBLGI","SNO",1,3,1,"8BC34A","2E8B57","gooey green blob","squeak","Splorch. It's in your hair now.","toy,sticky,silly"},
 	{"slime trail","KJBOKD","dN",2,5,2,"76FF03","C5E1A5","glossy green trail behind caster","squelch","Slimy. Slippery. Effective.","silly"},
 	{"sling","CMBAJI","Uke",2,8,2,"6B4226","C49A6C","Y-shaped stick with rubber band","twang","Small stone, giant problem.","ranged,toy"},
+	{"sling bird","AFCADB","Eke",5,8,2,"1F8A8A","F6E7C1","giant slingshot and a plump round bird","twang","Pull. Aim. Regret nothing.","game,bird,explosive"},
 	{"sling staff","CMCAzK","ke",3,6,3,"8B5A2B","6B4226","long staff with sling end","shing","Lobs stones over walls.","medieval,ranged"},
 	{"slingshot turret","OMDMxI","Uke",5,4,5,"8B5A2B","6B4226","huge Y-frame with rubber band","clank","Pull back. Let fly. Boing.","defense,mechanical"},
 	{"slingstone","CEAAKK","ke",1,9,3,"8C8C88","8E9196","smooth river stone","shing","Small rock. Big story.","fantasy,sharp"},

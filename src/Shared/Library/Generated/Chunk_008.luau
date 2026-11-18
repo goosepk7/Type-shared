@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"donut decoy","IMBLKI","jdc",2,3,3,"F2A6C8","D9A04A","tempting donut on a plate","chomp","Look over there! A donut!","edible,sweet"},
+	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
 	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
 	{"doom","KIEGKI","iEO",8,4,4,"1A0033","FF1744","ominous black-red orb descending slowly","boom","You feel a sense of impending doom.","spooky"},
 	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
@@ -401,6 +403,4 @@ return {
 	{"evening primrose","NHBNMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow blooms opening at dusk","rustle","Opens at night. Glows a little.","plant,flower"},
 	{"event horizon","FIFNOI","iHO",9,2,8,"000000","FF6E40","glowing ring around a perfect black circle","hum","The point of no return. Literally.","space,danger"},
 	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
-	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
-	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
+	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
 	{"everything bagel","IMBAKK","UeP",3,7,2,"C8904A","3A3A3A","bagel covered in seeds","whoosh","Covered in everything. Literally.","edible"},
 	{"everywhere","KLENLJ","jSPY",6,5,3,"A855F7","22D3EE","hundreds of map pins raining down across the whole map","pitter","It is here. And there. And behind you.","magic"},
 	{"evil","KICDOJ","jiPh",6,5,3,"4C1D95","111827","purple-black smoke with red eyes and a curly moustache twirl","cackle","Mwahaha. Sorry. Reflex.","villain,spooky"},

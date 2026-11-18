@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
 	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
@@ -346,6 +347,7 @@ return {
 	{"cappuccino","IABOKI","DF",3,9,2,"A8784A","F2E8D8","cup with frothy foam crown","fizz","Foamy coffee with a fluffy hat.","edible,drink"},
 	{"capricorn","MHCEKJ","ke",5,5,5,"FFFFFF","26A69A","stars in a goat-fish shape","rumble","Half goat. Half fish. All stars.","space,zodiac"},
 	{"capture","KLCLII","GO",5,5,4,"7E57C2","E1BEE7","glowing bubble cage closing around target","whum","Caught you. Stay.","magic"},
+	{"capture orb","BLBA3K","ebO",5,9,2,"C9A24A","2EC4B6","brass and teal orb with a glowing band","pop","Wobble... wobble... wobble... click.","game,monster,capture"},
 	{"capuchin","AMBJBA","deb",2,7,2,"3A2A20","F2E6CC","cream face, dark cap","chatter","Washes food. Fancy little monkey.","mammal,primate"},
 	{"capybara","AMCJAA","dFB",3,6,1,"9A6E44","C8A07A","barrel rodent, square head, chill face","squeak","Everyone's friend. Even crocodiles'.","mammal,cute,meme"},
 	{"car","DMCKHL","Dkg",5,7,6,"C8102E","2B2D33","boxy body, four wheels, round headlights","engine","Beep beep. Get out of the lane.","mechanical,vehicle,land"},
@@ -401,6 +403,4 @@ return {
 	{"carriage pumpkin","DLDKHL","DkgY",4,5,5,"F57C00","E1F5FE","giant pumpkin coach on curly gold wheels","engine","Turns back at midnight. Hurry.","mythical,royal"},
 	{"carrion beetle","AMAJFA","GCf",1,3,4,"1E1E1E","E8701E","black-orange beetle","click","Nature's undertaker.","insect,armored"},
 	{"carrion crawler","AJDJFA","MHO",5,4,5,"365314","F0ABFC","giant centipede-worm with face tentacles","skitter","Wiggly. Sticky. Not a friend.","dungeon"},
-	{"carrion flower","NJBDMI","jSM",3,1,2,"6A1B9A","8D6E63","hairy star bloom that smells awful","rustle","Stinks so bad enemies retreat.","plant,flower,silly"},
-	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
 }

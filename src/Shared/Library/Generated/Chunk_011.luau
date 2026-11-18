@@ -149,6 +149,7 @@ return {
 	{"goat cheese","IMBLKI","dSc",2,3,3,"F7F7F2","E8E8DF","soft white log","chomp","Tangy, soft, and crumbly.","edible,sweet,dairy"},
 	{"goatherd","LGCJNA","Dh",3,5,4,"A16207","F8FAFC","staff, cloak, stampeding goats","baa","Brings the goats. Mostly they bring him.","outdoor"},
 	{"gobble","KMCLII","iH",5,6,3,"E64A19","FFE0B2","huge open mouth gulping target","gulp","Gulp. Burp.","silly"},
+	{"gobble mode","KLCO3F","Df",5,9,3,"7B3FE4","FFE14D","toothy violet chomping orb with eyes","chomp","Waka waka waka waka.","game,arcade,transform"},
 	{"gobi desert","MFFNII","SN",5,1,9,"C9A55A","A1887F","rocky windswept desert","rumble","Dinosaur bones and dust storms.","place,geography"},
 	{"goblin","AEBJNA","DfPb",3,8,2,"65A30D","92400E","small green pointy-eared raider, rusty dagger","cackle","Loves shiny things. Including yours.","goblin"},
 	{"goblin archer","AEBJNA","TeP",3,7,2,"65A30D","78350F","goblin with crooked bow","twang","Aims for your toes.","goblin,archer"},

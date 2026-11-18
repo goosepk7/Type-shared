@@ -314,6 +314,7 @@ return {
 	{"hippopotamus","ABDJAA","DkfOB",7,4,8,"7E6A72","D8A0A0","barrel body, huge mouth, tiny ears","trumpet","Looks chill. Is absolutely not chill.","mammal,heavy,wild"},
 	{"hipster","LMCJNA","jd",3,4,3,"78350F","F8FAFC","beanie, glasses, artisanal coffee","ding","Was into fighting before it was cool.","silly"},
 	{"hiss","KJBFOB","j",2,8,1,"8BC34A","FFFFFF","zigzag sharp sound lines","hiss","Ssssss. Spooky.","loud"},
+	{"hiss pod","AGBJMA","DEQ",6,5,3,"5E7F3A","D8F06A","mossy seed pod on stubby root legs","hiss","Ssssssss...","game,explosive,plant"},
 	{"hissing cockroach","AMAJFA","jdP",1,6,5,"4A2A14","B8702A","big shiny roach hissing","hiss","Hisses like a snake. Is a bug.","insect"},
 	{"historian","LMCJNA","jNh",3,3,3,"7C2D12","E7D8B1","tweed jacket, dusty scroll, pointing at a timeline","rustle","Actually, this battle already happened in 1066.","school,ancient"},
 	{"history","KECFOB","jNh",4,3,3,"C8B58A","7C5C3A","dusty scroll unrolling, tiny knights and pyramids on it","rustle","Doomed to repeat it. Again.","school,ancient"},

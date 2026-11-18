@@ -280,7 +280,6 @@ return {
 	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
-	{"inhale","KFCN5K","H",4,6,2,"B0BEC5","FFFFFF","inward spiral of air to the caster","whirr","Vacuum mode activated.","air"},
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
 	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
 	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
