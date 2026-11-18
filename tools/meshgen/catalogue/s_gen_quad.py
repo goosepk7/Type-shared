@@ -388,7 +388,7 @@ def s_trunk_seg():
         base = 0.245 - 0.06 * (t + 0.5)
         pts.append((t, base - (0.018 if i % 2 else 0)))
     pts.append((0.5, 0))
-    return direct.revolve(pts, segs=12, spline=2)
+    return direct.revolve(pts, segs=12, spline=1)
 
 
 @piece("s_ear_elephant", (0.12, 0.7, 0.62), tris=500, fit=(0.14, 1.15, 0.95), res=110)
@@ -437,7 +437,7 @@ def s_tail_banded():
         base = 0.24 - 0.1 * (t + 0.5)
         pts.append((t, base + (0.02 if i % 2 else 0)))
     pts.append((0.5, 0))
-    return direct.revolve(pts, segs=12, spline=2)
+    return direct.revolve(pts, segs=12, spline=1)
 
 
 @piece("s_leg_pillar", (0.3, 0.6, 0.3), tris=420, fit=(0.42, 1.0, 0.42), res=110)

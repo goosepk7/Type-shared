@@ -814,7 +814,7 @@ return function(B: any, ctx: any)
 			-- scorpion tail arching over the back, ending in the sting
 			o = { dir = { 0, 1.2, 0.55 }, len = L * 0.95, w = W * 0.18, kind = "stinger", taper = 0.85, curl = -0.55, segs = segsBy(3), col = "dark" }
 		elseif snakeTail then
-			o = { dir = { 0, 0.55, 1 }, len = L * 0.8, w = W * 0.15, kind = "plain", taper = 0.9, curl = 0.55, segs = segsBy(3), col = "secondary" }
+			o = { dir = { 0, 0.55, 1 }, len = L * 0.8, w = W * 0.26, kind = "plain", taper = 0.85, curl = 0.55, segs = segsBy(2), col = "secondary" }
 		elseif idHas(id, "qilin kirin xiezhi") then
 			o = { dir = { 0, -0.9, 0.5 }, len = L * 0.45, w = W * 0.07, kind = "tuft", taper = 1, segs = 1, tuftCol = "accent", tuftPri = 2.2 }
 		end
@@ -822,13 +822,16 @@ return function(B: any, ctx: any)
 			o.start = o.start or tailStart
 			-- where the tail names the animal (skunk plume, otter rudder, anteater flag) it outranks the ears
 			o.pri = if arch == "mustelid" or arch == "badger" or arch == "anteater" or manticore or snakeTail or idHas(id, "pangolin") then 0.78 else 0.95
+			if snakeTail then
+				o.pri = 0.55
+			end
 			local bones, tip = Parts.tail(B, o)
 			if snakeTail and detail >= 1 then
 				-- the serpent head at the tail tip, looking back over the body
-				local hs = W * 0.36
+				local hs = W * 0.55
 				local last = bones[#bones]
 				local hc = { tip[1], tip[2] + hs * 0.15, tip[3] + hs * 0.2 }
-				B:ell(hs * 0.8, hs * 0.62, hs * 1.15, at(hc[1], hc[2], hc[3], rad(-25), 0, 0), { col = "secondary", mat = "scale", bone = last, pri = 1.3, role = "head", name = "SnakeHead" })
+				B:ell(hs * 0.8, hs * 0.62, hs * 1.15, at(hc[1], hc[2], hc[3], rad(-25), 0, 0), { col = "secondary", mat = "scale", bone = last, pri = 0.6 + #bones * 0.4, role = "head", name = "SnakeHead" })
 				if detail >= 2 then
 					B:mball(hs * 0.22, at(hs * 0.3, hc[2] + hs * 0.2, hc[3] - hs * 0.05), { col = "eyeGlow", mat = "neon", glow = true, bone = last, pri = 2.6, role = "eye", noCore = true })
 				end
