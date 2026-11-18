@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow dash","KICOKB","DZ",4,10,2,"1A0033","7C4DFF","black smoky streak","hiss","Was that a shadow? It was me.","spooky,speed"},
+	{"shadow dome","KIDIKI","GZ",3,3,7,"1A0033","7C4DFF","black smoky dome hiding allies","hiss","Can't hit what you can't see.","spooky,defence"},
+	{"shadow dragon","AIEKAB","iAZeg",8,7,7,"1E1B2E","7C3AED","smoky wings, violet eyes, wispy tail","roar","Blends into the night. Bumps into the moon.","mythical,reptile,spooky,flying"},
+	{"shadow elemental","AIDJNJ","jiZ",6,7,4,"1E1B4B","6D28D9","inky shape with purple eye slits","whisper","Only visible in the dark. Which is cheating.","elemental,spooky"},
+	{"shadow fairy","AIAJNB","jAZ",2,9,1,"1E1B4B","A78BFA","inky fairy with moth wings","whisper","Steals your shadow. Returns it later.","fairy,spooky"},
+	{"shadow form","KICOVJ","iZ",4,7,3,"1A0033","7C4DFF","caster becoming a flat moving shadow","hiss","Slip under doors. Spook everyone.","spooky,stealth"},
+	{"shadow giant","AIEJNA","iZk",8,3,7,"0F0F23","4338CA","towering shadow with starry eyes","whisper","You only see it when it's too late.","giant,spooky"},
+	{"shadow hand","FICLII","HO",5,5,3,"12001F","8E24AA","giant inky hand reaching from the ground","hiss","The floor has hands now.","spooky"},
 	{"shadow ice","FICLII","iJ",5,4,4,"1A237E","7C4DFF","black-violet ice spreading on ground","crackle","Cold and creepy.","frozen,spooky"},
 	{"shadow imp","AIAJNB","jZb",2,9,1,"312E81","A78BFA","inky imp with glowing eyes","cackle","You'll never catch it stealing your fries.","imp,spooky"},
 	{"shadow lance","FICAuB","iTe",6,8,1,"1A0033","AA00FF","long smoky black javelin","hiss","Darkness, thrown long distance.","spooky,sharp"},
@@ -395,12 +403,4 @@ return {
 	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
 	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
 	{"snapper","ABBJEC","dB",2,6,1,"D84A3A","F2D8D0","rosy red fish","splash","Snappy name. Chill fish.","fish,aquatic"},
-	{"snapping turtle","AMBJUA","GfNOB",4,2,8,"4A4A30","8A7A5A","spiky shell, huge beak","hiss","Snaps fingers. Not the cool way.","reptile,armored"},
-	{"snapvine","NGCLMI","SfHN",4,3,4,"33691E","E53935","coiled vine tipped with tiny jaws","chomp","Every vine has teeth. Every one.","plant,carnivorous"},
-	{"snare","BMBLII","lHO",2,1,3,"B89B6A","8B5A2B","hidden rope loop on bent sapling","snap","Upsy-daisy!","trap,defense"},
-	{"snatch","KMBBKI","Hb",3,9,1,"8D6E63","FFFFFF","glowing hand reaching and grabbing","swish","Gotcha!","silly"},
-	{"sneak","KIBOKA","DZ",2,6,2,"455A64","90A4AE","tiptoeing shadowy outline","tiptoe","Tiptoe. Tiptoe. Gotcha.","stealth"},
-	{"sneakers","BMBONI","D",1,9,2,"F2F2EE","C0392B","chunky running sneakers","swish","Gotta go fast.","clothing"},
-	{"sneeze","KFBFOB","jk",3,10,1,"E1F5FE","C5E1A5","cone of droplets and wind from the caster","achoo","Bless you. And everyone in front.","silly,gross"},
-	{"snickerdoodle","IMBAKK","Uke",3,7,2,"E0C08A","C8803A","crackled cinnamon cookie","whoosh","Fun to say. Fun to throw.","edible"},
 }

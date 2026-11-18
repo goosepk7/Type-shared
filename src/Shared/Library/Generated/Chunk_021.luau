@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow bridge","EHECII","GFSY",4,1,6,"FF5252","40C4FF","shimmering arch of rainbow light","thud","Leads somewhere magical. Probably.","magic,mythical"},
+	{"rainbow cake","IMCLKI","dSc",2,3,3,"E8434F","4FA3E8","slice with rainbow layers","chomp","Every colour, layered.","edible,sweet"},
+	{"rainbow candy","IMAELB","jeP",2,7,1,"E8434F","4FA3E8","pile of colorful round candies","pitter","Taste every colour.","edible,sweet,candy"},
+	{"rainbow carrots","IEBAJK","FTe",3,6,4,"ED9121","5E1A4E","bundle of multicolor carrots","crunch","Carrots in every colour.","edible,vegetable,healthy"},
+	{"rainbow dragon","AHEKCB","jAeg",7,7,6,"EF4444","3B82F6","serpent dragon with rainbow-banded scales","chime","Breathes rainbows. Painfully.","mythical,reptile"},
+	{"rainbow eucalyptus","NLDCMI","GjWkS",3,1,7,"7E57C2","43A047","trunk striped in every colour","rustle","A tree that forgot to stop painting.","plant,tree"},
+	{"rainbow fire","FACFOB","KjP",6,7,2,"FF4081","40C4FF","wave of multicoloured flames","whoosh","Fabulous and flammable.","fire,cute"},
 	{"rainbow flower","NHBNMI","jdF",3,1,2,"FF5252","40C4FF","petals in every colour","rustle","Every colour. All at once.","plant,flower,magic"},
 	{"rainbow grasshopper","AMAJFG","UdAP",1,6,1,"2AA06A","E8501E","grasshopper painted every color","buzz","Looks painted by a kid.","insect"},
 	{"rainbow lightning","FDDAKB","jeLV",7,10,1,"FF4081","40C4FF","bolt splitting into rainbow branches","crack","Every colour of zap.","electric,cute"},
@@ -396,11 +403,4 @@ return {
 	{"royal food taster","LMCJNA","dM",3,4,3,"7C3AED","F8FAFC","nervous figure holding a spoon","gulp","Tastes everything first. Brave job.","royal,silly"},
 	{"royal guard","LKCJNA","GfO",5,3,7,"DC2626","111827","tall bearskin hat, red coat, spear","clang","Never smiles. Never blinks. Never moves.","royal,warrior"},
 	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
-	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
-	{"rubber","BMBI3G","GUa",2,6,6,"1F2937","F472B6","stretchy black sheet snapping back like a trampoline","boing","I am rubber. You are glue.","toy,bouncy"},
-	{"rubber band","BMAAJK","eO",1,9,1,"D2B48C","D2B48C","stretchy loop","tap","Snap! Right on the wrist.","office"},
-	{"rubber band ball","BMBG3K","Ue",2,7,3,"D2B48C","C0392B","ball of a thousand bands","tap","Bounces like it's angry.","office"},
-	{"rubber band gun","CMBAwI","eO",1,9,2,"8B5A2B","D2B48C","wooden clothespin pistol","thwip","Snap! Right on the nose.","toy,silly"},
-	{"rubber chicken","CMBHJK","jdf",1,7,2,"F1C40F","C0392B","floppy squawking rubber chicken","boing","BWAAACK. Comedy damage.","silly"},
-	{"rubber chicken monster","AMBJDA","Ud",2,5,2,"FACC15","F97316","giant rubber chicken with angry eyes","squeak","Squeaks loudly. Hits squeakily.","silly"},
 }

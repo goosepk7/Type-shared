@@ -300,6 +300,7 @@ return {
 	{"apple sauce","IGBOKI","F",2,5,3,"E8D08A","C8A060","bowl of smooth apple mash","crunch","Apples that gave up being crunchy.","edible,healthy,sauce"},
 	{"apple slice","IGBOKI","F",2,5,3,"F7EBC0","C8262B","crescent wedge, red skin edge","crunch","A healthy little crescent moon.","edible,healthy"},
 	{"apple tree","NGDCMI","GFSce",3,1,7,"6D4C41","E53935","round crown dotted with red apples","rustle","Drops apples on heads. Very scientific.","plant,tree"},
+	{"appraisal window","KHCOKI","je",3,9,2,"3CC8FF","BEF0FF","a glowing blue status window that reads your foes","chime","Everyone has numbers. Now you can see them.","anime,isekai,status"},
 	{"apricot","IGBAKF","Fke",3,6,2,"F7A54A","F3D18A","small orange round, crease","splat","A tiny peach on a budget.","edible,fruit,sweet"},
 	{"apron","BMBONI","G",1,5,2,"C0392B","F2F2EE","kitchen apron with pocket","swish","Splatter shield.","clothing,kitchen"},
 	{"aqua","FBBAKB","Ie",3,7,2,"29A8E0","C7F0FF","wobbling water sphere, droplet trail","splash","Fancy word for water. Still wet.","aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
 	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
 	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
-	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grenade belt","BMBONI","E",4,5,3,"6B7B3A","7A4E2D","belt of grenades","thud","Fully loaded. Fully nervous.","explosive"},
+	{"grenadier","LACJNA","Eke",6,5,5,"DC2626","111827","tall hat, satchel of round bombs","boom","Throws bombs. Very far. Very fast.","warrior,explosive"},
+	{"grevy's zebra","AMDJAA","Dk",5,8,5,"F2F2F0","1A1A1A","thin stripes, big round ears","neigh","Thinner stripes. Bigger ears.","mammal"},
 	{"grey alien","ALCJNA","jlOY",5,5,3,"9CA3AF","0F172A","big head, huge black almond eyes, thin limbs","hum","Abducts cows. Returns them confused.","alien,space"},
 	{"grey seal","ABCJEC","UfB",3,5,4,"7A7A80","C8C8CC","horse-headed seal","bark","Roman nose. Sings like a ghost.","mammal,aquatic"},
 	{"greyhound","AMCJAA","DQO",4,10,4,"9A9A9E","E8E6E2","lean racing dog, deep chest, thin waist","bark","Fastest couch potato on Earth.","mammal,pet"},
@@ -400,7 +403,4 @@ return {
 	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
 	{"holster","BMBO2E","DeO",3,9,3,"7C4A1E","D4AF37","leather hip holster, hand hovering, tumbleweed","click","Draw! No, not with crayons.","western"},
 	{"holy","FHDGKI","KEF",7,6,1,"FFFFFF","FFF59D","ring of white orbs bursting together","choir","The purest light. Blinding.","holy"},
-	{"holy aura","FHCOKJ","GF",3,4,5,"FFF59D","FFFFFF","golden halo glow round caster","choir","Glowing with goodness.","holy,support"},
-	{"holy beam","FHDBKI","KFe",7,7,1,"FFF59D","FFFFFF","wide radiant beam from above","choir","Good, delivered by laser.","holy"},
-	{"holy blast","FHCGKI","KEF",6,7,1,"FFF59D","FFFFFF","golden burst with feather sparks","choir","A blessing that hits hard.","holy,explosive"},
 }

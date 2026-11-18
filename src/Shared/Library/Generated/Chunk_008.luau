@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dog knight","AKBJAA","GQf",3,7,4,"A16207","1D4ED8","loyal pup in shining armor","bark","Good boy. Great knight.","warrior,canine,cute"},
+	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
+	{"dog walker","LMCJNA","Qh",3,6,4,"15803D","F59E0B","ten leashes, ten dogs","bark","Is walked by the dogs.","silly,canine"},
 	{"dogfish","ABBJEC","DfTB",3,8,6,"7A7468","D8D4CC","small slim shark, white spots","chomp","Small shark, fish name, dog vibe.","fish,aquatic,ocean,predator"},
 	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
 	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
@@ -400,7 +403,4 @@ return {
 	{"erase","KLCAKB","iZ",6,7,1,"ECEFF1","7C4DFF","giant pencil-eraser swipe","squeak","Ctrl-Alt-Gone.","silly,magic"},
 	{"eraser","BMAOJK","jF",1,5,2,"F06292","F2F2EE","pink rectangular rubber block","tap","Undo mistakes. Including you.","school"},
 	{"eris","MCDGKJ","jk",4,4,7,"ECEFF1","B0BEC5","bright icy dwarf world","rumble","Causes trouble wherever it orbits.","space"},
-	{"erosion","FECNOI","iN",4,2,3,"A1887F","D7CCC8","crumbling ground worn by wind and water","hiss","Slowly wears everything down.","natural"},
-	{"error","KLBAKB","jO",3,8,1,"D32F2F","FFFFFF","red X pop-up box","beep","Something went wrong. On purpose.","meme,silly"},
-	{"eruption","HAENOI","KEkl",8,5,4,"E64A19","FFAB40","ground bursts open, fountain of lava and rocks","boom","The ground sneezed lava.","natural,fire,explosive"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"macaroon","IMBLKI","dSc",2,3,3,"F7F4EC","D9A04A","toasted coconut mound","chomp","A shaggy coconut haystack.","edible,sweet,dessert"},
+	{"macaw","AMCJDB","jdA",3,6,2,"E8201E","2A6AD8","big red-blue-yellow parrot, long tail","squawk","Loud, proud and rainbow.","bird,jungle,silly"},
+	{"mace","CKCHtK","kfO",5,5,6,"5B6168","6B4226","flanged metal head on short handle","bonk","Like a hug, but metal.","medieval,heavy"},
+	{"mace of light","CHCHtK","Fkf",6,5,6,"D4A72C","F2F2EE","radiant flanged mace","shing","Bonk, but blessed.","fantasy,holy"},
+	{"machete","CKCHrK","fT",4,7,4,"8A929B","24262A","wide heavy jungle blade","shing","Clears jungles and schedules.","medieval,sharp"},
 	{"machine","OKDMWI","kIeh",6,2,7,"6B7280","F59E0B","clanking box of gears, pistons, funnels and a steam whistle","clank","Nobody knows what it makes. It makes it loudly.","mechanical"},
 	{"machine gun","CKDMwI","TeV",7,7,5,"2C3539","6B7B3A","belt-fed gun on a bipod","rattle","Brrrrrrrrt.","modern,ranged"},
 	{"machu picchu","EMFCII","GSN",5,1,10,"9E9E9E","43A047","stone terraces on a misty mountain ridge","rumble","Way up in the clouds. Good luck climbing.","structure,landmark,ancient"},
@@ -172,6 +177,7 @@ return {
 	{"marine iguana","ABCJAA","CfB",3,7,2,"3A3A3A","8A3A2A","black salt-spitting iguana","hiss","Sneezes salt. Swims. Very goth.","reptile"},
 	{"marionberry","IGAELB","eVP",2,7,1,"3A1530","6B2D4E","long dark berry","pitter","Oregon's favourite berry.","edible,fruit,sweet"},
 	{"marionette","BMBJNG","jd",2,4,2,"8B5A2B","9E1B32","wooden puppet on strings","squeak","Dances. Strings attached.","toy"},
+	{"marionette pins","CLAAJB","jTHe",4,9,2,"9646E6","D6AAFF","three nen pins that hang the victim on puppet strings","chime","Dance for me.","anime,nen,needle"},
 	{"marker","BMAAJK","je",1,7,1,"24262A","F1C40F","chunky capped marker","tap","Permanent. Like your defeat.","school,art"},
 	{"market","MEENII","dSc",2,1,5,"F06292","FFD54F","colourful stalls and awnings","crowd","Bargains! Distractions! Chaos!","place,terrain"},
 	{"markhor","AMCJAA","dfT",3,4,4,"A89270","4A3A2E","tall corkscrew twisted horns","bleat","Horns styled by a corkscrew.","mammal,farm"},
@@ -397,10 +403,4 @@ return {
 	{"minmi","AMCJAA","Gkf",4,3,9,"8A7A5A","C8B88A","small armored dino","grunt","Small but fully armored.","dinosaur,extinct,reptile,armored"},
 	{"minnow","ABAJEC","dPB",1,6,1,"9AA8A0","D8E0D8","tiny silver river fish","splash","Small fry. Big dreams.","fish,aquatic"},
 	{"minotaur","AEDJNA","DkfO",7,6,7,"7C2D12","E7E5E4","bull head, giant arms, labyrinth axe","roar","Lost in a maze. Taking it out on you.","mythical"},
-	{"minotaur chief","AEEJNA","DkfO",8,6,8,"451A03","FACC15","giant bull warrior with gold nose ring","roar","Runs the maze. Owns the maze.","mythical,boss"},
-	{"minotaur gladiator","AEDJNA","Dkf",7,6,7,"7C2D12","CA8A04","minotaur in gladiator armor","roar","Undefeated. Unshaven.","mythical,warrior"},
-	{"mint chocolate chip","ICBAKJ","JeN",3,5,2,"B8E8D0","3A2416","mint green scoop, dark chips","squish","Toothpaste's tastier cousin.","edible,frozen,sweet"},
-	{"mint humbug","IMAELB","eVP",2,7,1,"3A2A1E","F7F7F2","striped pillow candy","pitter","Bah humbug. Very minty.","edible,sweet,candy"},
-	{"mint plant","NCANMI","JFS",1,1,2,"4CAF50","B9F6CA","fresh bright toothed leaves","rustle","Fresh breath. Fresh start.","plant,herb"},
-	{"mint sauce","IMBNGI","SNP",2,4,1,"5E9E3A","B8E8D0","green glossy sauce","splat","Cool green sauce.","edible,sauce"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"erosion","FECNOI","iN",4,2,3,"A1887F","D7CCC8","crumbling ground worn by wind and water","hiss","Slowly wears everything down.","natural"},
+	{"error","KLBAKB","jO",3,8,1,"D32F2F","FFFFFF","red X pop-up box","beep","Something went wrong. On purpose.","meme,silly"},
+	{"eruption","HAENOI","KEkl",8,5,4,"E64A19","FFAB40","ground bursts open, fountain of lava and rocks","boom","The ground sneezed lava.","natural,fire,explosive"},
 	{"erymanthian boar","AEDJAA","Dk",6,7,7,"44403C","D6D3D1","massive boar with frost-covered tusks","grunt","Charges first. Thinks never.","mythical"},
 	{"escalator","OKDL1I","IN",2,1,7,"C9CED4","24262A","moving metal staircase","clank","Up you go. Or down.","mechanical"},
 	{"escape artist","LMCJNA","ZY",3,8,3,"111827","FACC15","chains, padlock, smirk","whoosh","Tied up. Not anymore.","circus"},
@@ -400,7 +403,4 @@ return {
 	{"floating rocks","MLENIJ","lS",4,1,8,"8D6E63","7CB342","chunks of land drifting in the sky","rumble","Gravity takes a holiday here.","place,terrain,magic"},
 	{"flock","AFDDLB","jAPb",5,7,3,"ECEFF1","607D8B","swirling V of small birds, feathers drifting","tweet","Birds of a feather attack together.","bird,swarm"},
 	{"flood","HBENOI","SINP",7,4,5,"2269A8","A9DBF5","rising murky water filling the area","splash","Everything is a swimming pool now.","natural,aquatic"},
-	{"floodlight","OHDBmI","cO",2,1,6,"8E9196","F2F2EE","bank of huge bright lamps","clank","Blinding stadium glare.","mechanical"},
-	{"floor","FEDNnI","kSN",4,1,9,"B5803C","8B5A2B","wide wooden floorboards tilting like a seesaw","creak","The floor is the floor. That is worse.","household,terrain"},
-	{"floor is lava","KADNOI","KS",6,3,4,"FF3D00","FFB300","floor turning into glowing lava","bubble","It's not a game anymore.","fire,meme,silly"},
 }

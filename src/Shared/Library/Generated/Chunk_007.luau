@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
+	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
 	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 	{"croque monsieur","IGBOKI","F",2,5,3,"D9A04A","F2C870","grilled ham cheese sandwich","crunch","A sandwich with a fancy title.","edible,healthy"},
 	{"croquet mallet","BMCHtK","kf",2,5,4,"8B5A2B","C0392B","long mallet with barrel head","bonk","Wack. Through the hoop.","sport"},
@@ -306,6 +308,7 @@ return {
 	{"deviled egg","IMBAKF","ke",3,6,2,"F7F2E8","E8862B","half egg, piped yolk, paprika","splat","Devilishly good, half an egg.","edible,breakfast"},
 	{"devils claw","NIBLMI","TN",3,1,3,"3E2723","7CB342","hooked black seed pods","moan","Hooks onto ankles. Ouch.","plant,spooky,sharp"},
 	{"devon rex","AMBJAA","dfT",2,7,2,"D8C0A8","8A6A4A","huge ears, wavy coat, elf face","meow","An elf disguised as a cat.","mammal,pet,cute"},
+	{"devouring ooze","ABCIGI","Geab",5,6,4,"46A8EC","AAE4FF","a blue jelly maw that swallows shots and spits one back","slurp","It eats what is thrown at it, and it is never full.","anime,isekai,slime"},
 	{"dew","FBAEOJ","F",1,3,1,"BFE8F7","F2FFF2","tiny glistening beads on grass","plip","Morning sparkle. Very refreshing.","aquatic,cute"},
 	{"dhole","AMCJAA","DQfh",5,7,4,"B8541E","F2E0C8","rusty red wild dog","whistle","Whistles to its pack.","mammal,predator,wild"},
 	{"dhow","DFCKHC","DkgB",3,6,4,"8D6E63","F5F5F5","wooden boat with a slanted triangle sail","splash","Glides with the trade winds.","vehicle,aquatic"},
@@ -400,7 +403,4 @@ return {
 	{"dog","AMCJAA","DQcf",4,7,4,"C08A52","F2E3CC","floppy ears, wagging tail, tongue out","bark","Best friend. Will eat your homework.","mammal,pet"},
 	{"dog bowl","BMALKI","c",1,1,2,"C9CED4","C0392B","steel bowl full of kibble","squeak","Dinner bell for monsters.","pet"},
 	{"dog groomer","LMCJNA","dF",3,5,4,"F472B6","F8FAFC","apron, blow dryer, brush","snip","Fluffs your dog. Fluffs your enemies.","silly,canine"},
-	{"dog knight","AKBJAA","GQf",3,7,4,"A16207","1D4ED8","loyal pup in shining armor","bark","Good boy. Great knight.","warrior,canine,cute"},
-	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
-	{"dog walker","LMCJNA","Qh",3,6,4,"15803D","F59E0B","ten leashes, ten dogs","bark","Is walked by the dogs.","silly,canine"},
 }

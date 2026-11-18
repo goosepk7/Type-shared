@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"night","FIDNOI","ZN",4,4,3,"141A3A","5E6AB8","starry dark-blue dome falling over area","hush","Bedtime. For everyone.","space,spooky"},
+	{"night blooming cereus","NHBNMI","FS",3,1,2,"FFFFFF","F5F5F5","huge white bloom open one night only","rustle","One night only. Do not miss it.","plant,flower"},
+	{"night heron","AMCJDA","AfT",3,5,2,"1E2A3A","F2F2EE","stocky heron, red eyes","squawk","Works the night shift.","bird,wetland,nocturnal"},
+	{"night light","BHAG1I","Fc",1,1,2,"F1C40F","F2F2EE","small glowing plug light","beep","Keeps monsters away. Mostly.","tech"},
+	{"night monkey","AMBJBA","deb",2,7,2,"8A7A6A","F2E8D8","huge round eyes","chatter","Only nocturnal monkey. Big eyes.","mammal,primate,nocturnal"},
+	{"night sky","MLFEKJ","SeV",5,1,6,"1A237E","FFF59D","deep blue sky filled with stars","twinkle","A thousand tiny lights watching.","space,star"},
 	{"night vision goggles","CKBONI","Z",1,6,3,"6B7B3A","8BC34A","goggles with glowing green lenses","bang","See in the dark. Look very cool.","spy,tech"},
 	{"night watchman","LHCJNA","GO",3,4,5,"1E3A8A","FACC15","lantern, bell, heavy coat","ding","Midnight and all's well. Until now.","guardian,historical"},
 	{"nightfall","FIDFOB","ZNP",5,5,3,"1A1840","6157A8","dark wave rolling across the sky","hush","The sun clocks out early.","spooky"},
@@ -226,6 +232,7 @@ return {
 	{"osprey","AMCJDB","DAlfTB",5,9,3,"5A4434","F7F7F2","white belly, dark eye stripe, fish in talons","screech","Catches fish feet-first. Splash.","bird,predator"},
 	{"ostrich","AMDKDA","DkfgO",5,9,5,"2A2420","F2F2F0","huge bird, long neck, long bare legs","boom","Fastest runner on two legs. Kicks hard.","bird,flightless"},
 	{"ostrich chick","AMBJDA","Dkf",2,8,5,"B8A07A","E8D8B8","spiky-feathered ostrich baby","boom","Runs 35 mph a month after hatching.","bird,flightless,cute"},
+	{"otherworld express","BLEFHL","kTe",8,10,2,"F0ECE0","5ABEFF","a cream delivery truck bursting out of a shimmering portal","honk","Look both ways. Especially in fantasy novels.","anime,isekai,truck"},
 	{"otter","ABBJAA","UCfB",3,8,2,"6A4A30","A8886A","sleek body, whiskers, floating on back","chatter","Holds hands while sleeping.","mammal,predator,cute,aquatic"},
 	{"ottoman","BMBC0I","G",1,1,4,"6E1630","D4A72C","padded square footrest","thud","Feet up. Defence up.","furniture,household"},
 	{"otyugh","AJDLGI","fMH",5,2,7,"57534E","84CC16","three-legged lump with tentacles in junk pile","chomp","Lives in trash. Loves it there.","dungeon,silly"},
@@ -396,11 +403,4 @@ return {
 	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
 	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
 	{"party bus","DMDKHL","Ddkcg",4,5,7,"7E57C2","FF4081","bus with flashing lights and music","music","Nobody can resist the party.","mechanical,vehicle,land,silly"},
-	{"party hat","BMAONI","d",1,6,1,"FF3EA5","D4A72C","pointy striped cardboard cone hat","squeak","You can't be sad in this hat.","party,silly"},
-	{"party horn","BMAFKI","jd",1,9,1,"D4A72C","C0392B","curly paper horn","honk","Pweeeeeeep!","party,silly"},
-	{"party popper","BMAFKI","deO",1,9,1,"D4A72C","FF3EA5","small cone with string pull","pop","POP! Streamers everywhere.","party"},
-	{"passenger pigeon","AMAJDB","dAP",1,7,1,"6A7A8A","D8705A","slim pigeon with rusty breast","tweet","Once darkened the skies.","bird,cute,extinct"},
-	{"passion flower","NGBNMI","dFS",2,1,2,"7E57C2","FFFFFF","intricate fringed blue bloom","rustle","Looks like a clock. Acts like a flower.","plant,flower"},
-	{"passion fruit","IMBGKF","EeP",4,6,1,"5E2A4E","F3C54B","purple wrinkly sphere, gold pulp","pop","Wrinkly outside, fireworks inside.","edible,explosive,fruit,tropical"},
-	{"passport","BMAOyE","GjY",2,5,3,"1E3A8A","D4AF37","small navy booklet with a gold crest and a terrible photo","thunk","Worst photo of your life. Valid ten years.","travel"},
 }

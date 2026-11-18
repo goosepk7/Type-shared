@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jackalope warrior","AMBJAG","UDT",3,9,3,"A16207","94A3B8","antlered rabbit in tiny armor","chitter","Small, fluffy, extremely pointy.","cryptid,silly"},
+	{"jackdaw","AMAJDB","dAb",1,7,1,"2A2A30","C8C8CC","small crow with pale eyes","tweet","Steals shiny things. Pale eyes.","bird,cute"},
+	{"jacket","BMCONI","G",1,5,3,"3B5B8C","7A4E2D","zip-up jacket","swish","Weatherproof. Bonkproof-ish.","clothing"},
 	{"jackfruit","IGCGKF","DkI",5,5,6,"A7B33A","E5C14B","giant bumpy green oblong","rumble","The biggest fruit on a tree. Ouch.","edible,heavy,fruit"},
 	{"jackhammer","OKCLJK","CkfO",6,3,7,"F1C40F","4A4D52","tall pounding drill with handles","rattle","Rattles the ground and your teeth.","tool,loud"},
 	{"jackpot","KKCEOB","dFc",4,6,2,"FFC107","43A047","explosion of coins and confetti","jingle","Ding ding ding! Winner!","luck,shiny"},
@@ -44,6 +47,7 @@ return {
 	{"jelly knight","AJCJGG","GUf",4,4,5,"4ADE80","94A3B8","slime wearing a tiny helmet","clang","Wobbly but brave.","slime,silly"},
 	{"jelly tsunami","IMEFOJ","UkIN",7,3,3,"E0102B","F35A6A","towering wave of wobbling jelly","wobble","A wobbly wave of doom.","edible,wobbly,sweet,silly"},
 	{"jelly wall","EECCII","GUSN",2,1,4,"E53935","FF8A80","wobbly translucent red slab","wobble","Wobbles. Bounces you right back.","silly,sweet"},
+	{"jellybud","AGBJGG","UQfNh",4,7,3,"76DEA8","C8FFDE","a squat mint jelly with a seedling on its head","boing","It eats anything that is not nailed down, and some things that are.","anime,isekai,slime,pet"},
 	{"jellyfish","ABBJGJ","SMOB",3,2,1,"E89AD0","F2D8F0","translucent bell, trailing tentacles","squelch","95% water, 5% ouch.","aquatic,ocean,venomous"},
 	{"jerboa","AMAJAG","UCdb",1,6,1,"E2C28A","F7F0E6","huge kangaroo legs, long tufted tail","squeak","A mouse on pogo sticks.","mammal,cute,desert"},
 	{"jerk chicken","IABAKK","Kc",5,7,2,"5A2A1E","D8402B","charred spiced chicken pieces","sizzle","Fiery, smoky, Caribbean heat.","edible,spicy,flammable"},
@@ -399,8 +403,4 @@ return {
 	{"latte","IABOKI","DF",3,9,2,"C8A070","F2E8D8","tall cup, foam art heart","fizz","Milk, coffee, and art.","edible,drink"},
 	{"laugh","KMBFOB","jd",2,7,1,"FFEB3B","FFFFFF","rippling HA HA HA letters","haha","Laughter is the best medicine.","silly"},
 	{"laughing flower","NLBLMI","jd",2,1,2,"FFEB3B","F06292","wobbling bloom that giggles","giggle","Hehehe. Hahaha. Confusion!","plant,magic,mythical,silly"},
-	{"laughing gas","FJCDOJ","jdO",2,3,2,"F48FB1","FFF59D","pink cloud with tiny laughing faces","giggle","Cannot fight while giggling.","silly"},
-	{"laughter","KHCF6B","jFPO",3,7,1,"FDE047","F97316","rolling wave of HA HA HA letters and tear-crying faces","giggle","Contagious. Milk out of the nose guaranteed.","silly,mood"},
-	{"launch","KACAKB","kl",5,9,2,"FF7043","FFE0B2","target shooting skyward with smoke trail","whoosh","To infinity! Not beyond. Just up.","silly"},
-	{"laundromat","MBDNlI","jSHN",4,1,5,"38BDF8","F8FAFC","row of spinning round-door washers overflowing with foam","slosh","Lost: one sock. Found: someone else's sock.","household,building"},
 }
