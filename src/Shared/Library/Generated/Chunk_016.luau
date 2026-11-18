@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"macrauchenia","AMDJAA","Dk",5,4,8,"9A7A5A","D8C8A8","camel body with short trunk","roar","A camel with a trunk. Why not.","mammal,extinct,ancient,heavy"},
 	{"macuahuitl","CECHJK","fV",5,6,4,"8B5A2B","1B1A22","wooden paddle edged with glass","shing","Paddle with teeth.","ancient,sharp"},
 	{"mad scientist","LDCJNA","jELh",5,4,4,"F8FAFC","84CC16","wild white hair, goggles, bubbling beaker","cackle","IT'S ALIVE. Mostly.","science,villain"},
 	{"madeleine","IMALKI","dSc",2,3,3,"F2C870","E8B050","shell-shaped little cake","chomp","Small cake shaped like a seashell.","edible,sweet"},
@@ -231,6 +232,7 @@ return {
 	{"meatloaf","IMBAKK","keO",4,7,6,"7A3A2A","C82B2B","brick loaf with ketchup glaze","bonk","A brick of meat. Literally.","edible"},
 	{"mech pilot suit","OKDJNA","klf",6,5,7,"334155","FACC15","open-frame power loader with big claws","clank","Lifts cars. Struggles with stairs.","robot,mechanical"},
 	{"mech suit","DKEKNA","Gkfeg",7,4,9,"607D8B","FFB300","giant robot legs, cockpit torso, arm cannons","stomp","Pilot not included. Wait, it is you.","mechanical,vehicle,land,robot"},
+	{"mech suit dash","OKDOIA","Dk",6,8,5,"646C78","FF9628","armoured exo-legs stomping three big steps forward","thud","Heavy steps. Heavier landings.","scifi,mobility"},
 	{"mech titan","OKFJNA","GEke",9,2,10,"334155","FDE047","skyscraper-tall mech with shoulder cannons","clank","Every step registers on seismographs.","robot,giant,boss,danger"},
 	{"mech warrior","OKEKNA","GEkeg",8,4,9,"475569","F97316","two-legged armored walker with missile pods","clank","Piloted by someone who failed parking class.","robot,mechanical"},
 	{"mecha dragon","OKEKAB","KAkeg",8,7,9,"475569","22D3EE","armored steel dragon with jet thrusters","roar","Breathes fire AND has rocket boosters.","robot,reptile"},
@@ -401,6 +403,4 @@ return {
 	{"mint tea","IABOKI","KF",2,5,2,"7DBE3A","F2E8C8","glass of tea with mint","slurp","Cool and warm at once.","edible,drink,warm"},
 	{"minus","KIBAJB","iXN",3,7,1,"DC2626","FFFFFF","flat red minus bar thrown like a stick","buzz","Minus one. Minus one. Minus you.","school"},
 	{"minute","KLBOKK","SNO",2,4,2,"F8FAFC","DC2626","clock face with a thin long hand sweeping","tick","One minute. In mum-on-the-phone time.","time"},
-	{"mirabelle","IGAAKF","Fke",3,6,2,"F2D23A","E8A040","tiny golden plum","splat","A golden marble of fruit.","edible,fruit,sweet"},
-	{"miracle cure","KHDNOI","FP",3,5,4,"FFFFFF","FFD54F","golden beam and floating feathers over allies","choir","Against all odds, everyone's fine.","holy,support"},
 }

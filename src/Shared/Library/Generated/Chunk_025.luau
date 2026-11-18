@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star tortoise","AMBJUA","GN",2,2,8,"2A2A1E","F2D82A","shell with yellow star patterns","hiss","Stars on its shell.","reptile,armored"},
+	{"star-nosed mole","AMAJAA","Cjf",1,5,3,"2A2626","F28AA0","pink tentacled star nose","squeak","Has a pink star for a nose. Nightmare cute.","mammal,wild"},
 	{"stardust","FLBDOJ","jFS",3,4,1,"D8C3FF","FFF1B8","glittering cosmic dust cloud","tinkle","Everything you are, sprinkled.","space,cute"},
 	{"stare down","KIBAKB","O",3,4,1,"4A148C","FFFFFF","intense glowing eyes","hmm","Don't blink. Don't blink.","silly"},
 	{"starfall","HHEEOB","KePO",8,7,3,"FFF3B0","B39DDB","rain of glowing white-gold stars","chime","The sky is falling. Beautifully.","space,holy"},
@@ -18,7 +20,7 @@ return {
 	{"starting blocks","BMBOII","D",1,9,4,"2F6FD1","C9CED4","angled foot blocks on rail","bonk","Explosive starts.","sport"},
 	{"starting pistol","BMBFwF","O",1,9,2,"24262A","C9CED4","blank-firing pistol","bang","Ready, set, BANG.","sport"},
 	{"stasis","KLCLKI","GO",6,3,6,"FFC107","5E35B1","golden bubble with frozen target inside","hum","On hold. Please wait.","time"},
-	{"stasis field","OLCN1I","SNO",5,3,5,"3FC1D9","F2F2EE","cube projecting a freeze bubble","hum","Everything stops. Even time.","scifi"},
+	{"stasis field","OLDNKI","SN",5,3,4,"8CE6FF","3C4654","a gyroscope core inside a pale blue bubble where shots crawl","hum","Everything slows down. Including your excuses.","scifi,time"},
 	{"static","FDBLII","dL",2,6,1,"C6D8FF","FFF6A0","frizzy spark field, hair-raising arcs","crackle","Hair goes up. Dignity goes down.","electric,silly"},
 	{"static cling","FDBLII","HN",2,5,1,"FFF59D","82B1FF","crackling sticky field","crackle","Socks stuck to everything.","electric,silly"},
 	{"static shock","FDBAKB","LO",3,10,1,"BFD7FF","FFF59D","tiny blue snap between fingertips","zap","Doorknob revenge.","electric,silly"},
@@ -401,6 +403,4 @@ return {
 	{"tabasco","IABAKK","KP",5,7,2,"C8202B","F2E8D0","tiny bottle of fiery red sauce","sizzle","Tiny bottle, huge fire.","edible,spicy,flammable,sauce"},
 	{"tabaxi","AMCJNA","DZf",4,9,3,"F59E0B","1F2937","lithe cat-person with a hooded cape","meow","Curious about everything. Especially your stuff.","cat"},
 	{"tabbouleh","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","parsley salad with bulgur","crunch","More parsley than you thought possible.","edible,healthy"},
-	{"tabby cat","AMBJAA","dfT",2,7,2,"B07A3E","5A3A1E","striped orange-brown coat, M on forehead","meow","Has an M on its face. Stands for Mine.","mammal,pet,cute"},
-	{"table","BMDC0I","G",1,1,7,"8B5A2B","5A3A1E","long wooden table on four legs","thud","Flip it for instant cover.","furniture,household"},
 }

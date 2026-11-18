@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tortoise","AMBJUA","GN",2,1,9,"8A6A3A","C8A86A","high domed shell, elephant legs","hiss","Slow and steady. Wins. Eventually.","reptile,armored"},
+	{"tortoise beetle","AMAJFA","Gfa",1,3,4,"F2C82A","E8D888","gold dome beetle","click","Changes from gold to red. Magic.","insect,armored"},
 	{"torvosaurus","AMEJBA","DkfT",8,6,7,"6A3A2A","C88A5A","huge jurassic predator","roar","Jurassic tough guy.","dinosaur,extinct,reptile,predator"},
 	{"tostada","IMBAKK","Uke",3,7,2,"E8B84A","8A5A3A","flat crisp tortilla, toppings","whoosh","A taco that lay down.","edible"},
 	{"tostones","IMBAKK","Uke",3,7,2,"E8C070","D9A04A","smashed fried plantain discs","whoosh","Crispy smashed plantain coins.","edible"},
@@ -401,6 +403,4 @@ return {
 	{"viking grandma","LMCJNA","Fkf",4,5,5,"C084FC","94A3B8","grandma in horned helmet with ladle","horn","Cooks. Raids. Naps.","silly,norse,family"},
 	{"viking helmet","BKBONI","GD",2,5,6,"5B6168","E3DAC9","round helm with two horns","clank","Historically inaccurate. Very fun.","armor,defense"},
 	{"viking longship","DBEKHC","GDkgB",6,7,7,"8D6E63","C62828","long wooden boat, dragon prow, round shields","horn","Rowing in with shields up and horns blaring.","vehicle,aquatic,ancient"},
-	{"viking queen","LECJNA","Gfh",6,5,6,"78350F","CA8A04","braided queen with winged helm and axe","horn","Raids first. Rules after.","warrior,norse,royal"},
-	{"vila","AFCJNB","jAc",4,8,3,"E0F2FE","FDE68A","cloud maiden with swan wings","sing","Dances on clouds. Bad at sharing them.","mythical,fairy"},
 }

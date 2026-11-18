@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"viking queen","LECJNA","Gfh",6,5,6,"78350F","CA8A04","braided queen with winged helm and axe","horn","Raids first. Rules after.","warrior,norse,royal"},
+	{"vila","AFCJNB","jAc",4,8,3,"E0F2FE","FDE68A","cloud maiden with swan wings","sing","Dances on clouds. Bad at sharing them.","mythical,fairy"},
 	{"village","MEENII","Sh",3,1,7,"F5E6CA","B5523B","cluster of cottages and a well","rumble","The villagers grab their pitchforks.","place,terrain"},
 	{"village green","MEENII","Sh",2,1,6,"7CB342","F5E6CA","open grassy square with a maypole","thud","Everyone gathers here. Including enemies.","structure,ancient"},
 	{"villain","LICJNA","jfh",5,5,5,"111827","DC2626","twirly moustache, black top hat, cape","cackle","Ties things to tracks. Classic.","villain"},
@@ -401,6 +403,4 @@ return {
 	{"wisteria","NGDNMI","dFSHN",3,1,4,"B39DDB","8D6E63","cascading purple flower curtains","rustle","A waterfall of flowers. Very grabby.","plant,flower"},
 	{"witch","LJCJNB","jAMh",5,6,4,"1F2937","7C3AED","pointy black hat, broomstick, bubbling cauldron","cackle","Flies a broom. Brews trouble.","magic,spooky,halloween"},
 	{"witch apprentice","LJBJNB","dAM",3,7,2,"7C3AED","F97316","kid on a wobbly broom with a cat","cackle","Still learning brakes.","magic,cute"},
-	{"witch bolt","FDCBKI","iL",5,8,1,"76FF03","AA00FF","green-violet crackling tether","crackle","Zap. And keep zapping.","electric,spooky"},
-	{"witch cauldron ride","DJBKHB","DASMg",4,6,4,"263238","76FF03","bubbling cauldron with tiny flames under","whoosh","Bubbles on the way. Burps on arrival.","vehicle,magic,mythical,spooky"},
 }

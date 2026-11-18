@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"witch bolt","FDCBKI","iL",5,8,1,"76FF03","AA00FF","green-violet crackling tether","crackle","Zap. And keep zapping.","electric,spooky"},
+	{"witch cauldron ride","DJBKHB","DASMg",4,6,4,"263238","76FF03","bubbling cauldron with tiny flames under","whoosh","Bubbles on the way. Burps on arrival.","vehicle,magic,mythical,spooky"},
 	{"witch hazel","NLCLMI","FS",2,1,4,"FFB300","6D4C41","bare branches with spidery yellow flowers","moan","Blooms in winter. Witchy.","plant,spooky,magic"},
 	{"witch hunter","LHCJNA","fTe",6,6,5,"1F2937","F59E0B","wide-brim hat, crossbow, silver stakes","clang","Hunts monsters. Charges extra for dragons.","warrior"},
 	{"witch hut","EJCNII","SMh",4,1,6,"33691E","7E57C2","crooked hut with bubbling cauldron","moan","Something is brewing. Something green.","place,spooky,magic"},

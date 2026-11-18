@@ -393,6 +393,7 @@ return {
 	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},
 	{"hollyhock","NGCNMI","dFS",2,1,2,"E91E63","F8BBD0","tall spire of big papery blooms","rustle","Taller than you. Prettier too.","plant,flower"},
 	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
+	{"hologram wall","EHDCnI","GS",4,2,7,"64DCFF","3C4250","a flickering blue scanline wall between two projector pylons","hum","You can walk through it. Your bullets can't.","scifi"},
 	{"holster","BMBO2E","DeO",3,9,3,"7C4A1E","D4AF37","leather hip holster, hand hovering, tumbleweed","click","Draw! No, not with crayons.","western"},
 	{"holy","FHDGKI","KEF",7,6,1,"FFFFFF","FFF59D","ring of white orbs bursting together","choir","The purest light. Blinding.","holy"},
 	{"holy aura","FHCOKJ","GF",3,4,5,"FFF59D","FFFFFF","golden halo glow round caster","choir","Glowing with goodness.","holy,support"},
@@ -402,5 +403,4 @@ return {
 	{"holy fire","FHCNOI","KFS",6,5,3,"FFD54F","FFFFFF","white-gold flames that do not smoke","chime","A campfire that only burns villains.","holy,fire"},
 	{"holy hand grenade","CHBGKF","Eke",7,5,1,"D4A72C","F2F2EE","jewelled orb with a tiny cross","boom","Count to three. Not five.","explosive,silly,holy"},
 	{"holy light","FHDBKI","KFe",6,6,2,"FFF8C4","FFFFFF","wide golden shaft of light from the sky","chime","Heals the good. Stings the bad.","holy"},
-	{"holy meteor","HHDAKB","KEFe",8,8,5,"FFD54F","FFFFFF","glowing golden rock with angelic trail","choir","Heaven threw a rock.","holy,space,explosive"},
 }
