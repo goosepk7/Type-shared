@@ -3,6 +3,15 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wyrmling swarm","AACJLB","KAP",5,8,3,"F97316","B91C1C","cloud of tiny buzzing dragons","chirp","Like bees, but on fire.","reptile,swarm,fire"},
+	{"wyvern","AJDKDB","AfTMg",7,7,6,"3F6212","BEF264","two legs, bat wings, barbed stinger tail","screech","Two legs, two wings, one very pointy tail.","mythical,reptile,flying"},
+	{"x-ray","FHCBKB","ZTe",4,10,1,"0F172A","A5F3FC","blue-black beam that shows the skeleton of what it hits","bzzt","Sees right through you. Nice ribs.","science,spooky"},
+	{"x-ray vision","KHBOKI","T",2,6,2,"80D8FF","212121","glowing blue eyes, skeleton outlines","hum","I can see your bones.","silly"},
+	{"xeno drone","AJCJFA","ZfTM",5,8,4,"1C1917","57534E","black elongated insect alien, tail spike","hiss","Hides in vents. Hisses in vents.","alien,spooky"},
+	{"xiezhi","AHCJAA","TO",5,5,6,"0F766E","F8FAFC","one-horned goat-lion of justice","chime","Knows who's lying. Rams them.","mythical"},
+	{"xiphactinus","ABDJEC","DfB",6,7,4,"7A8A9A","D8E0E8","giant bulldog fish","splash","Swallowed fish as big as people.","fish,aquatic,extinct"},
+	{"xiphos","CKBHrK","fT",4,7,4,"A86F32","6B4226","leaf-shaped short blade","shing","Hoplite-approved stabbing leaf.","medieval,sharp,ancient"},
+	{"xoloitzcuintli","AMCJAA","DQf",4,7,4,"3A3A3A","6A6A6A","hairless sleek dog","bark","Ancient, hairless and warm to hug.","mammal,pet"},
 	{"xp","KHBOKJ","DWF",3,6,2,"A855F7","FACC15","purple bar filling up and bursting into LEVEL UP!","fanfare","+50 XP. For typing. Nice.","gaming"},
 	{"xylophone","BMCFJI","dF",1,4,3,"E84A5F","C49A6C","rainbow wooden bars on frame","chime","Plink plonk plink.","music"},
 	{"yak","ACDJAA","DkgO",6,4,7,"2E2622","F2EEE6","long shaggy skirt fur, horns","moo","Wears a fur skirt in the mountains.","mammal,heavy,arctic"},

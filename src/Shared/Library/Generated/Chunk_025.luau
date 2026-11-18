@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
+	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
+	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
+	{"sticky bomb","CABGKF","EQe",5,6,2,"8BC34A","24262A","gooey bomb that sticks","boom","Sticks to things. Things regret it.","explosive"},
+	{"sticky bun","IMBLGI","SNP",2,3,3,"A85A1E","D99A4A","spiral bun, gooey glaze","gloop","Hands will never be clean again.","edible,sticky,sweet"},
+	{"sticky floor","BMCLII","NO",2,1,3,"F1C40F","D2B48C","tacky floor mat","snap","Every step is a struggle.","trap,sticky"},
 	{"sticky note","BMALJK","dN",1,8,1,"F1C40F","F1C40F","small square sticky paper","tap","Stuck to your forehead.","office,sticky"},
 	{"sticky rice","IMBLGI","SNP",2,3,3,"F7F4EC","E8E0D0","clumpy white rice mound","gloop","Rice that refuses to let go.","edible,sticky"},
 	{"sticky toffee pudding","IMBLGI","SNP",2,3,3,"7A3A1E","C8803A","dark sponge, toffee sauce","gloop","Sticky. Toffee. Pudding. All three.","edible,sticky,sweet"},
@@ -397,10 +403,4 @@ return {
 	{"tarantula hawk","AJBJLB","ATMPO",3,7,1,"1E2A4A","E8701E","blue-black wasp, orange wings","buzz","Hunts tarantulas. Second worst sting.","insect,swarm,venomous"},
 	{"tarasque","AAEJAA","GKDk",8,4,9,"365314","CA8A04","turtle shell, lion head, six bear legs","roar","A turtle that bench-pressed a castle.","mythical,boss"},
 	{"tarbosaurus","AMEJBA","DkfT",8,6,7,"5A4A2E","B89A6A","asian tyrannosaur","roar","T rex's Asian twin.","dinosaur,extinct,reptile,predator"},
-	{"taro","IEBAKK","keO",3,7,6,"8A6A5A","C8B8D8","hairy brown root, lilac flesh","bonk","Hairy outside, purple inside.","edible,vegetable"},
-	{"tarpon","ABDJEC","UDfB",5,7,4,"B8C8D0","E8F0F4","huge silver scales","splash","The silver king. Leaps high.","fish,aquatic"},
-	{"tarsier","AMAJBA","Udeb",1,7,2,"A88A6A","3A2C20","eyes bigger than its brain","chatter","Its eyes are bigger than its stomach.","mammal,primate,nocturnal"},
-	{"tart","IMBAKK","Uke",3,7,2,"D9A04A","D23A5A","fluted crust, glossy fruit top","whoosh","A pie's elegant little sister.","edible"},
-	{"tartar sauce","IMBLGI","kSO",2,3,2,"F7F2DC","7DAE3A","white dip with pickle flecks","squeak","Fish sticks' best friend.","edible,slippery,silly,sauce"},
-	{"tasmanian devil","AMBJAA","Ujf",4,6,2,"1E1A18","F2F2F0","black stocky, white chest band, big jaws","screech","Spins and screams. Mostly screams.","mammal,marsupial"},
 }

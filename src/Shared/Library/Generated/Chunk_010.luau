@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flying squirrel","AMAJAB","CdAb",1,6,1,"9A8A7A","F2EEE6","skin flaps between legs, gliding","squeak","Built-in wingsuit.","mammal,cute"},
+	{"flypaper","BMBLII","cNO",1,1,1,"F1C40F","D2B48C","hanging sticky yellow strip","snap","Bzzz... stuck.","trap,sticky"},
 	{"foal","AMCKAA","Dkg",2,8,5,"A06A3E","F0E0C8","wobbly long legs, short fluffy tail","neigh","All legs and zero coordination.","mammal,cute"},
 	{"foam","FBBDOJ","dSN",2,3,2,"E9F7FB","BFE6F2","piled frothy white suds","fizz","Fluffy. Fizzy. Slippery.","aquatic,silly"},
 	{"foam dart blaster","CMBAwI","Ude",1,8,2,"E67E22","2F6FD1","chunky plastic dart launcher","thwip","Foam darts. Real drama.","toy,silly"},
@@ -401,6 +403,4 @@ return {
 	{"giant donut","IMEJIF","UkcI",7,2,7,"F2A6C8","D9A04A","enormous ring donut, sprinkles","thud","A donut the size of a tyre. Roll it.","edible,giant,silly"},
 	{"giant donut wheel","IMEJIF","DkI",7,2,7,"F2A6C8","D9A04A","monster donut rolling","thud","A runaway donut. Clear the road.","edible,giant,silly"},
 	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
-	{"giant flytrap","NGELMI","kScfHO",7,3,7,"558B2F","B71C1C","huge snapping jaws on a thick stalk","chomp","Feed me. FEED ME.","plant,carnivorous,silly"},
-	{"giant forest hog","AMCJAA","Ddkf",5,4,4,"2A2420","6A5A4A","huge black hairy pig","bleat","Biggest wild pig. Grumpy.","mammal,farm,wild"},
 }

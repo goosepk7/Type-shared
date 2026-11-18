@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sail","BFCOiJ","DIg",3,7,3,"F8FAFC","1E3A8A","billowing white triangle on a mast, ropes snapping taut","whoosh","Wind in the sail. Sail in your face.","ocean,air"},
+	{"sailboat","DFCKHC","DkIgB",4,6,4,"F5F5F5","1E88E5","slim hull, single mast, triangle sail","splash","Powered by wind and good vibes.","vehicle,aquatic"},
+	{"sailfish","ABDJEC","DfTB",5,10,4,"2E4E8E","5A8AD0","giant blue sail fin, spear bill","splash","Fastest fish. Has a built-in sail.","fish,aquatic"},
+	{"sailor","LBCJNA","fHB",4,6,5,"F8FAFC","1E3A8A","white cap, striped shirt, anchor tattoo","splash","Knows 200 knots. Ties you in one.","aquatic"},
+	{"saint bernard","ACDJAA","QFf",5,7,4,"B05A2A","F7F2EA","massive fluffy rescue dog, barrel on collar","bark","Rescues you with a tiny snack barrel.","mammal,pet"},
 	{"saki","AMBJBA","deb",2,7,2,"3A3A3A","F2E8D8","fluffy monkey with white face","chatter","Wears a white face mask.","mammal,primate"},
 	{"sakura tempest","KGDN5K","SRP",7,8,3,"FFB7D0","FFF0F5","a whirlwind of pink petal blades around you","whoosh","Pretty. Pointy. Mostly pointy.","anime,flowers,sword"},
 	{"salad","IGBOKI","WF",2,5,3,"7DBE3A","D72B2B","bowl of leaves, tomatoes, croutons","crunch","A bowl of good decisions.","edible,healthy,vegetable"},
@@ -276,6 +281,7 @@ return {
 	{"selfie","KHBF6B","jdO",3,8,1,"FFFFFF","EC4899","phone on a stick with a blinding flash and a pout","click","But first, let me blind you.","meme,internet"},
 	{"selkie","ABCJAC","jFB",4,7,4,"64748B","E2E8F0","seal with a woman's face, silky coat","splash","A seal on weekdays, a person on weekends.","mythical,aquatic"},
 	{"semifreddo","ICBAKJ","JeN",3,5,2,"F7E8C8","D7263D","half-frozen sliced dessert","squish","Half frozen, fully elegant.","edible,frozen,sweet,dessert"},
+	{"sense warp","KLBAKI","eY",5,10,2,"FFE7A0","8FDCFF","two fingers to the brow, then a flicker beside the foe","whum","Felt your energy from across the map.","anime,ki,speed"},
 	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},
 	{"sentence","KMCBCB","STN",3,6,2,"1F2937","FFFFFF","long line of words ending in a heavy full stop","tap","Ends with a period. So do you.","school"},
 	{"sentinel","LHDMYI","GQeO",6,2,8,"94A3B8","FCD34D","tall still guardian with a spear and one glowing eye slit","hum","Has not blinked since the last update.","defense,ancient"},
@@ -397,10 +403,4 @@ return {
 	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
 	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
 	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
-	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
-	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
-	{"shepherd's pie","IGBOKI","F",2,5,3,"E8C070","7A3A2A","mashed potato topping, golden ridges","crunch","A potato blanket over a meaty bed.","edible,healthy"},
-	{"sherbet powder","IMBDOJ","jLP",2,5,1,"F2E23A","F2A6C8","fizzy sugar powder","puff","Fizzes on the tongue.","edible,candy"},
-	{"sheriff","LECJNA","GeO",5,6,5,"92400E","FACC15","star badge, wide hat, long coat","bang","This arena ain't big enough for both of us.","western"},
-	{"sheriff badge","BMAONI","h",2,5,4,"D4A72C","C9CED4","five-point star badge","swish","This town ain't big enough.","clothing,cowboy"},
 }

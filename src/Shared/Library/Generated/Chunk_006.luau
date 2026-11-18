@@ -146,6 +146,7 @@ return {
 	{"comet heel","KACHKI","DkO",7,8,3,"FF8A3C","FFE9C2","a blazing leap that ends in a cratering kick","thump","Feet first. Always feet first.","anime,hero"},
 	{"comet shower","HCEEOB","EJkP",8,7,4,"B3E5FC","4FC3F7","dozens of icy comets with blue tails","whoosh","Brain freeze for everyone.","space,frozen"},
 	{"comet strike","HCEAKB","EJkPO",8,8,6,"A8DBFF","FFFFFF","icy comet diving into a frosty crater burst","boom","Brain freeze, from orbit.","space,frozen"},
+	{"comet volley","KLCAKB","EeV",6,8,2,"FFD45A","FFF6CF","both palms hosing the target with golden ki blasts","zap","Did we get him? (We did not get him.)","anime,ki"},
 	{"comma","KMAAJK","NVO",1,7,1,"111827","FFFFFF","big black comma hooking like a tiny scythe","tap","Let's eat, grandma. Punctuation saves lives.","school"},
 	{"command tank","DKDMHL","Gkegh",7,3,10,"37474F","FFD54F","tank with antennas and a gold star","boom","Commands from the front. Very loudly.","mechanical,vehicle,military"},
 	{"commando","LECJNA","DEZe",6,7,5,"1F2937","4D7C0F","face paint, headband, bandolier","bang","Sneaks in. Explodes out.","military"},
@@ -402,5 +403,4 @@ return {
 	{"crouton","IMAELB","eVP",2,7,1,"D9A04A","F2D08A","small golden cube","pitter","Tiny bread bricks. Crunch on impact.","edible"},
 	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
 	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
-	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
 }

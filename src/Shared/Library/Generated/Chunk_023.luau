@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
+	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
+	{"shepherd's pie","IGBOKI","F",2,5,3,"E8C070","7A3A2A","mashed potato topping, golden ridges","crunch","A potato blanket over a meaty bed.","edible,healthy"},
+	{"sherbet powder","IMBDOJ","jLP",2,5,1,"F2E23A","F2A6C8","fizzy sugar powder","puff","Fizzes on the tongue.","edible,candy"},
+	{"sheriff","LECJNA","GeO",5,6,5,"92400E","FACC15","star badge, wide hat, long coat","bang","This arena ain't big enough for both of us.","western"},
+	{"sheriff badge","BMAONI","h",2,5,4,"D4A72C","C9CED4","five-point star badge","swish","This town ain't big enough.","clothing,cowboy"},
 	{"sheriff robot","OKCJNA","Ge",5,5,7,"94A3B8","FACC15","robot with cowboy hat and star badge","clank","This town ain't big enough for two robots.","robot,western"},
 	{"shetland pony","AMCKAA","Dkg",3,5,5,"6A4A2E","2A1A12","tiny shaggy pony","neigh","Small pony. Very stubborn.","mammal"},
 	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
@@ -397,10 +403,4 @@ return {
 	{"soda can","IBBFKI","EkI",3,7,1,"C8202B","C8C8C8","aluminum can","fizz","Shake well. Open near enemy.","edible,drink,fizzy"},
 	{"soda fountain","OBCM1I","deN",2,2,5,"C0392B","C9CED4","nozzled fizzy drink dispenser","clang","Fizzy blast!","kitchen,household"},
 	{"soda geyser","IBDFKI","EklP",6,7,1,"3A1A0C","F7F7F2","erupting fountain of fizz","fizz","Shake well before using.","edible,drink,fizzy"},
-	{"soft coral","ABCCMI","GW",3,1,6,"E8A0C0","F2D0E0","swaying fleshy coral","crackle","Wiggly coral. Squishy.","aquatic,ocean,reef"},
-	{"soft serve","ICBAKJ","JeN",3,5,2,"F7F2E0","D9A04A","tall curly swirl on cone","squish","Curly, cold, and quick.","edible,frozen,sweet"},
-	{"softball","BMAA3F","ke",2,8,4,"F1C40F","C0392B","big yellow stitched ball","bonk","Not actually soft.","sport"},
-	{"softshell turtle","AMBJUA","GNB",2,4,5,"8A8A6A","C8C8A8","flat pancake turtle with snorkel nose","hiss","A pancake with a snorkel.","reptile,armored"},
-	{"soil","FGBCnI","GW",3,2,5,"5C3E25","7E9C4A","mound of dark earth with sprouts","rustle","Good for gardens. Bad for intruders.","plant"},
-	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
 }

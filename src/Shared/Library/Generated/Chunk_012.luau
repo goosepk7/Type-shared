@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grouper","ABDJEC","DfHB",5,7,4,"6A5A44","C8B48A","huge lips, chunky body","splash","Swallows fish whole. Big lips energy.","fish,aquatic"},
+	{"grouse","AMBJDA","dfO",2,4,2,"8A6A4A","F2F2F0","plump ground bird, feathered feet","cluck","Explodes out of bushes. Scares hikers.","bird,farm"},
+	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
 	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
 	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
 	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
@@ -257,6 +260,7 @@ return {
 	{"helipad","EMCNII","Sh",2,1,7,"37474F","FFEB3B","flat circle with a big H","thud","Calls in air support. Landing now.","structure"},
 	{"helium","FFBAKJ","jl",2,5,1,"E1F5FE","FFF59D","target floating up with a squeaky voice","squeak","Up, up, and very squeaky.","silly"},
 	{"helium tank","BFCMKI","Al",2,1,4,"8E9196","F2F2EE","metal tank with balloon nozzle","squeak","Makes everyone float. Makes voices squeaky.","party"},
+	{"helix lance","KLDBKI","Te",8,10,1,"E9FF7A","B04CFF","needle beam wrapped in a crackling spiral coil","zap","Charged for a long, long time. Worth it.","anime,ki,beam"},
 	{"hell","MAFN5I","KSHPh",9,2,9,"7F1D1D","FF6B00","cracked glowing pit, flames, rising smoke and red rock","roar","Warm all year. Terrible reviews.","fire,spooky,place,danger"},
 	{"hellbat","AABJDB","KiA",3,9,2,"1C1917","F97316","bat with glowing ember wing veins","screech","Flaming bat. Not a snack.","fire,flying,spooky"},
 	{"hellcat","AABJAA","KZf",3,9,2,"1C1917","F59E0B","smoky black cat with ember eyes","hiss","Lands on its feet. Leaves scorch marks.","cat,fire,spooky"},
@@ -399,8 +403,4 @@ return {
 	{"honeydew slice","IGBOKI","F",2,5,3,"C9E3A6","E8F3D0","pale green wedge","crunch","A cool green crescent.","edible,healthy"},
 	{"honeyeater","AMAJDB","dA",1,7,1,"6A7A3A","F2C82A","slim nectar bird","tweet","Lives on sugar. Hyper.","bird,cute"},
 	{"honeypot ant","AMAJLA","CFfP",1,5,1,"E8A82A","6A3A1E","ant with a giant golden belly","skitter","A walking honey jar.","insect,swarm"},
-	{"honeysuckle","NGBNMI","dFSc",2,1,2,"FFF59D","FFB74D","tubular sweet blooms on vines","rustle","Sweet nectar. Sweet trap.","plant,flower"},
-	{"hong kong milk tea","IBBOKI","F",2,6,2,"A8784A","F2E8D8","strong silky milk tea","slurp","Silk-smooth tea strength.","edible,drink"},
-	{"honk","KMBFOB","kO",2,9,1,"FFEB3B","FFFFFF","big comic horn sound ring","honk","HONK! Peace was never an option.","silly,meme,loud"},
-	{"honor","KHCOKJ","GD",3,5,5,"FFD54F","1565C0","proud golden aura","horn","A fair fight. A strong fight.","support"},
 }

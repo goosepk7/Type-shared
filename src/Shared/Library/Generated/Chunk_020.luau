@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pomeranian","AMBJAA","dQf",2,6,2,"F2A04A","FFE3BC","tiny fluffball, fox face","yip","A dandelion that barks.","mammal,pet,cute"},
+	{"pommel horse","BMCCII","G",1,1,6,"7A4E2D","D2B48C","padded leather block on legs","bonk","A horse that never moves.","sport"},
+	{"pond scum","NJCLMI","SMNP",2,1,2,"9CCC65","C0CA33","green film covering water","splash","Gross. Slippery. Sticky.","plant,aquatic,silly"},
+	{"pontoon boat","DBCKHC","DkgB",3,4,5,"F5F5F5","9E9E9E","flat deck on twin floating tubes","splash","The party has arrived on the lake.","vehicle,aquatic,silly"},
 	{"pony","AMCKAA","Dkg",3,8,5,"B88A5A","F2E6D4","short round horse, thick mane","neigh","Small horse. Massive ego.","mammal"},
 	{"ponytail","BMBHCK","Ukf",3,8,3,"C68642","FF6FB5","long swishing ponytail with a pink scrunchie","swish","Head turn. Whip crack. Oops, sorry.","body,silly"},
 	{"poodle","AMBJAA","DjQf",3,7,4,"F2EDE6","D8CFC2","pom-pom tufts, curly coat, prancing pose","bark","Fancy haircut. Also secretly very smart.","mammal,pet"},
@@ -398,9 +402,5 @@ return {
 	{"ray of frost","FCCBKI","JTeN",5,8,2,"4FC3F7","E1F5FE","thin pale-blue beam crusting targets in ice","crackle","Chill out. That is an order.","frozen"},
 	{"ray of sickness","FJCBKI","jMe",4,7,1,"C0CA33","7CB342","sickly yellow-green ray","bleh","Seasick, on land.","toxic,silly"},
 	{"razor","BKAHJI","fT",2,8,1,"C9CED4","2F6FD1","small safety razor","splash","Smooth operator.","bathroom,household"},
-	{"rc car bomb","BABJHL","DEQ",6,9,3,"E53935","24262A","a zippy toy car carrying a very real bomb","squeak","Bzzzzzz. Wheeeee. BOOM.","toy,explosive,modern"},
-	{"reading","KHBOKJ","FcN",2,2,2,"92400E","FDE68A","open book with glowing words drifting upward","rustle","One more chapter. One more. One more.","school"},
-	{"reality","KLCFOB","aO",5,7,1,"ECEFF1","212121","harsh grey ripple stripping illusions","thunk","Reality check! Snap out of it.","magic"},
-	{"reaper chain","CKBAJI","HeN",4,9,4,"5B6168","C9A86A","a hooked blade on a long rattling chain","clang","Get over here. Politely.","anime,weapon"},
-	{"reappear","KLBOKI","Y",2,10,1,"E1BEE7","FFFFFF","sparkle burst with caster appearing","poof","Ta-da! Missed me?","magic"},
+	{"razor halo","KLCAKK","QTe",6,7,2,"FFE45C","FFF8D6","razor-thin spinning energy disc hurled in a curve","whistle","Hold it up high. Steer it true. Mind your fingers.","anime,ki,blade"},
 }

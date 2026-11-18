@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"taro","IEBAKK","keO",3,7,6,"8A6A5A","C8B8D8","hairy brown root, lilac flesh","bonk","Hairy outside, purple inside.","edible,vegetable"},
+	{"tarpon","ABDJEC","UDfB",5,7,4,"B8C8D0","E8F0F4","huge silver scales","splash","The silver king. Leaps high.","fish,aquatic"},
+	{"tarsier","AMAJBA","Udeb",1,7,2,"A88A6A","3A2C20","eyes bigger than its brain","chatter","Its eyes are bigger than its stomach.","mammal,primate,nocturnal"},
+	{"tart","IMBAKK","Uke",3,7,2,"D9A04A","D23A5A","fluted crust, glossy fruit top","whoosh","A pie's elegant little sister.","edible"},
+	{"tartar sauce","IMBLGI","kSO",2,3,2,"F7F2DC","7DAE3A","white dip with pickle flecks","squeak","Fish sticks' best friend.","edible,slippery,silly,sauce"},
+	{"tasmanian devil","AMBJAA","Ujf",4,6,2,"1E1A18","F2F2F0","black stocky, white chest band, big jaws","screech","Spins and screams. Mostly screams.","mammal,marsupial"},
 	{"tater tots","IMAELB","eVP",2,7,1,"D49A3A","F2CE7A","little golden cylinders","pitter","Tiny potato barrels. Fire at will.","edible,savory"},
 	{"tattletale","LMBJNA","jh",2,7,2,"FACC15","DC2626","pointing kid shouting","whistle","I'M TELLING. Teacher arrives.","silly,school"},
 	{"tattoo","BLBOPB","jQS",3,5,3,"1F3A5F","E63946","inky dragon drawing peeling off skin and flying","buzz","Says MOM in a heart. Bites anyway.","art,silly"},
@@ -397,10 +403,4 @@ return {
 	{"training ground","MMENII","SNh",3,1,7,"8D6E63","556B2F","ropes, walls and climbing nets","crowd","Drop and give me twenty.","place,sport"},
 	{"traitor","LICJNA","jZb",4,6,4,"1F2937","7F1D1D","cloaked figure hiding a dagger behind back","whisper","Was on your team. Was.","villain"},
 	{"tram","DMDKHL","DkgL",5,5,8,"C83E2E","F2E6C9","long rail car, overhead pole, bell","bell","Ding ding. It does not stop for you.","mechanical,vehicle,land"},
-	{"trample","KEDFOF","kPO",6,6,4,"795548","BCAAA4","stampede dust wave with hoofprints","rumble","Run over, flat and dusty.","heavy"},
-	{"trampoline","BMDLII","Ukl",3,1,5,"24262A","2F6FD1","round springy mat on legs","bonk","Boing! Bye!","sport,defense"},
-	{"transform","KLCOKI","jW",4,5,3,"BA68C8","FFF59D","swirl of sparkles then a new silhouette","poof","New look, who dis?","magic"},
-	{"transforming robot","OKDKNL","DegY",7,8,7,"DC2626","1D4ED8","robot unfolding from a sports car","clank","More than meets the eye.","robot,vehicle"},
-	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
-	{"trap","KMCLII","O",4,4,4,"8D6E63","FFD54F","glowing jaw-shaped rune on ground","snap","Step right in. Wait, don't.","meme"},
 }

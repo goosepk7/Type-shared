@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pecan sandies","IMBAKK","Uke",3,7,2,"E8C88A","7A3E1E","crumbly round nut cookies","whoosh","Sandy, buttery, and nutty.","edible,dessert"},
+	{"peccary","AMCJAA","dfM",3,4,4,"4E4642","E8E0D8","bristly pig-like, white collar","bleat","Smells funky. Travels in gangs.","mammal,farm,desert"},
+	{"peck","KMAADB","fTO",2,10,1,"F5B041","FFFFFF","rapid-fire beak jabs like a tiny jackhammer","tok","Peckpeckpeckpeckpeckpeck.","bird,melee"},
+	{"pedal","KABOKB","DkI",3,9,2,"1F2937","F97316","foot flooring a pedal, flames from behind","vroom","Pedal to the metal. Metal to the wall.","vehicle,speed"},
 	{"pedal swan","DBBKHC","DkgB",2,2,3,"FFFFFF","FFB300","big white swan with seats inside","splash","The swan has seen things.","vehicle,aquatic,silly"},
 	{"pee","FBBNGI","dSN",1,3,1,"F7E36B","FBF3B0","small yellow puddle with a wavy shine and a tiny sign","squirt","Should have gone before we left.","silly,gross"},
 	{"peekaboo","KLAOKI","ZO",1,8,1,"F8BBD0","FFFFFF","caster blinking in and out","boo","Peekaboo! I see you.","cute,silly"},
@@ -399,8 +403,4 @@ return {
 	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
 	{"pomegranate tree","NGCCMI","GWFkS",3,1,6,"6D4C41","C62828","small tree with red jewel fruit","rustle","Fruit full of tiny red gems.","plant,tree"},
 	{"pomelo","IMCAKF","jke",4,6,2,"DCE57A","F7D8C9","huge pale green citrus, thick rind","squirt","The grapefruit's big older cousin.","edible,fruit,sour"},
-	{"pomeranian","AMBJAA","dQf",2,6,2,"F2A04A","FFE3BC","tiny fluffball, fox face","yip","A dandelion that barks.","mammal,pet,cute"},
-	{"pommel horse","BMCCII","G",1,1,6,"7A4E2D","D2B48C","padded leather block on legs","bonk","A horse that never moves.","sport"},
-	{"pond scum","NJCLMI","SMNP",2,1,2,"9CCC65","C0CA33","green film covering water","splash","Gross. Slippery. Sticky.","plant,aquatic,silly"},
-	{"pontoon boat","DBCKHC","DkgB",3,4,5,"F5F5F5","9E9E9E","flat deck on twin floating tubes","splash","The party has arrived on the lake.","vehicle,aquatic,silly"},
 }
