@@ -60,7 +60,7 @@
     {"n": ["link zelda", "zelda"], "r": "brave elf"},
     {"n": ["master chief"], "r": "armored soldier"},
     {"n": ["pac man", "pacman", "pac-man"], "r": "hungry yellow ball"},
-    {"n": ["tetris"], "r": "block"},
+    {"n": ["tetris", "tetris block", "tetris blocks", "tetris piece"], "r": "block drop"},
     {"n": ["angry birds", "angry bird"], "r": "angry red bird"},
     {"n": ["peppa pig"], "r": "pink pig"},
     {"n": ["barney"], "r": "purple dinosaur"},
