@@ -81,7 +81,6 @@ return {
 	{"falling cage","BKCLII","GO",3,1,7,"5B6168","24262A","barred cage dropping from ceiling","snap","Clang. Gotcha.","trap,defense"},
 	{"falling citadel","EEFNqI","EkO",9,2,6,"E8DCC2","4A6FA5","a whole castle falls out of the clouds","rumble","Real estate, delivered. From orbit.","anime,castle,heavy"},
 	{"falling mountain","HEFAKB","EkO",10,2,10,"6D4C41","BCAAA4","upside-down mountain plunging from the clouds","rumble","Where did that mountain come from? Above.","heavy,danger"},
-	{"falling piano","BMDLII","dkO",6,1,5,"24262A","F2F2EE","grand piano dropping from above","snap","Plink. Plonk. SPLAT.","trap,silly,cartoon"},
 	{"falling sun","HAFAKB","KEkP",10,2,8,"FFB300","FF3D00","blinding miniature sun descending","roar","Too close. Way too close.","space,fire,explosive,danger"},
 	{"fallow deer","AMCJAA","Dk",4,8,4,"C8904A","F2F2EE","palm antlers, spotted","bleat","Palmate antlers. Spotty coat.","mammal,wild"},
 	{"false killer whale","ABDJEC","UDB",6,8,4,"2A2A30","6A6A70","sleek black dolphin","click","Not a killer whale. Still scary.","mammal,aquatic,ocean"},
@@ -403,4 +402,5 @@ return {
 	{"flying squirrel","AMAJAB","CdAb",1,6,1,"9A8A7A","F2EEE6","skin flaps between legs, gliding","squeak","Built-in wingsuit.","mammal,cute"},
 	{"flypaper","BMBLII","cNO",1,1,1,"F1C40F","D2B48C","hanging sticky yellow strip","snap","Bzzz... stuck.","trap,sticky"},
 	{"foal","AMCKAA","Dkg",2,8,5,"A06A3E","F0E0C8","wobbly long legs, short fluffy tail","neigh","All legs and zero coordination.","mammal,cute"},
+	{"foam","FBBDOJ","dSN",2,3,2,"E9F7FB","BFE6F2","piled frothy white suds","fizz","Fluffy. Fizzy. Slippery.","aquatic,silly"},
 }

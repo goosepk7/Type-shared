@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"foam","FBBDOJ","dSN",2,3,2,"E9F7FB","BFE6F2","piled frothy white suds","fizz","Fluffy. Fizzy. Slippery.","aquatic,silly"},
 	{"foam dart blaster","CMBAwI","Ude",1,8,2,"E67E22","2F6FD1","chunky plastic dart launcher","thwip","Foam darts. Real drama.","toy,silly"},
 	{"foam finger","BMBONF","dF",1,5,1,"2F6FD1","F2F2EE","giant foam number-one hand","bonk","We're number one!","sport,silly"},
 	{"foam hammer","BMCHtK","Udf",1,7,2,"F1C40F","2F6FD1","huge squishy foam hammer","thud","Fwump.","toy,silly"},

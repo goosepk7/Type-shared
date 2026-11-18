@@ -159,6 +159,7 @@ return {
 	{"scientist","LDCJNA","EMe",4,4,4,"F8FAFC","22D3EE","lab coat, goggles, test tubes","bubble","Science! Some explosions involved.","science"},
 	{"scimitar","CKCHrK","fTV",5,7,4,"C9CED4","D4A72C","sharply curved blade, flared tip","shing","Curvy, swishy, extremely sharp.","medieval,sharp"},
 	{"scissor lift","DMCKHL","Glg",3,2,7,"E65100","424242","platform on criss-cross metal arms","engine","Up! Down! Up again!","mechanical,vehicle,land"},
+	{"scissor punch","CMCHJI","kf",3,8,2,"D62F2F","B8BCC6","boxing glove on a scissor spring that shoots out","boing","Personal space, enforced.","cartoon,silly,melee"},
 	{"scissors","JKAHJK","fTV",2,8,3,"C9CED4","C0392B","two crossed blades, loop handles","clank","Snip. Beats paper.","tool"},
 	{"scooter","DMAKHL","Dkg",2,6,2,"4FC3F7","F5F5F5","slim deck, tall handlebar, two small wheels","engine","Kick, push, coast, bonk.","silly,sport"},
 	{"scope","BHBOKE","QTe",3,6,3,"1F2937","60A5FA","black tube lens with a blue glint, zooming in","click","Sees you from three maps away.","gaming,ranged"},
