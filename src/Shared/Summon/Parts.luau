@@ -309,7 +309,7 @@ function Parts.tail(B: any, o: any)
 		local ww = if kind == "bushy" then w * (1.2 + 0.25 * i) else w
 		B:limb({ x, y, z }, { ex, ey, ez }, ww, {
 			col = if (i % 2 == 0 and o.banded) then "secondary" else (o.col or "primary"), mat = if kind == "bushy" then "fur" else "skin",
-			bone = bname, pri = (o.pri or 1.1) + i * 0.4, role = "tail", trail = i == segs, depth = ww * (o.flat or 1),
+			bone = bname, pri = (o.pri or 1.1) + i * 0.4, role = "tail", trail = i == segs, depth = ww * (o.flat or 1), mesh = o.mesh,
 		}, if kind == "bushy" then 0.4 else 0.3)
 		if kind == "spiked" and i < segs then
 			B:wedge(ww * 0.25, ww * 0.9, ww * 0.9, at((x + ex) / 2, (y + ey) / 2 + ww * 0.55, (z + ez) / 2, 0, 0, 0),

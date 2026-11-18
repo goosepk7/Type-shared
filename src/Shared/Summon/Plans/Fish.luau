@@ -1,6 +1,12 @@
 --!strict
--- Fish & sea life: generic fish, shark, whale/dolphin (horizontal fluke), swordfish, pufferfish, jellyfish
--- (bell + tentacles) and octopus/squid (mantle + curling arms). Swimmers hover off the ground.
+-- Fish & sea life. Plans/Fish sorts a word into a sub-kind from its id and silhouette hint and hands it to a
+-- builder: finned fish (Plans/SeaFish: fusiform, compressed disc, long, round, deep-sea, catfish, billfish,
+-- tadpole; flatfish, rays, seahorses), sea mammals and reptiles (Plans/SeaMammal: whales and dolphins, seals and
+-- sea cows, plesiosaurs and mosasaurs, merfolk), cephalopods (Plans/Cephalopod, the Octopus route: squid,
+-- cuttlefish, nautilus, dumbo and vampire octopus), generic sharks on the shark signature, and jellyfish.
+--
+-- The legacy builds below (kind "shark" and kind "octopus") are the bases of the shark, octopus and kraken
+-- signatures (SigKit.base with a forced kind): they stay exactly as they were.
 
 local Geom = require(script.Parent.Parent.Geom)
 local Parts = require(script.Parent.Parent.Parts)
@@ -9,6 +15,10 @@ local Face = require(script.Parent.Parent.Face)
 local at = Geom.at
 local rad = math.rad
 local sin, cos = math.sin, math.cos
+
+local SeaFish = require(script.Parent.SeaFish)
+local SeaMammal = require(script.Parent.SeaMammal)
+local Cephalopod = require(script.Parent.Cephalopod)
 
 local function kindOf(ctx: any): string
 	if ctx.kind then
@@ -112,7 +122,7 @@ local function jelly(B: any, ctx: any)
 	B:setRig("gait", "float")
 end
 
-return function(B: any, ctx: any)
+local function legacy(B: any, ctx: any)
 	local kind = kindOf(ctx)
 	if kind == "octopus" then
 		return octopus(B, ctx)
@@ -173,4 +183,137 @@ return function(B: any, ctx: any)
 	B:socket("mouth", at(0, y - H * 0.15, -L * 0.55), "Body")
 	B:socket("core", at(0, y, -L * 0.1), "Body")
 	B:setRig("gait", "swim")
+end
+
+-- Sub-kind of a generic (non-signature) sea creature. Order matters: the first match wins.
+local KINDS: { { any } } = {
+	{ "mer", { "mermaid", "merman", "merrow", "iara", "amabie", "sea witch", "sharkataur", "mami wata", "siren queen" } },
+	{ "seal", { "seal", "sea lion", "walrus", "manatee", "dugong", "sea cow" } },
+	{ "reptile", { "plesiosaur", "elasmosaur", "pliosaur", "kronosaur", "liopleurodon", "nothosaur", "placodus", "mosasaur", "tylosaur", "prognathodon", "ambulocetus", "makara", "ketos" } },
+	{ "whale", { "whale", "dolphin", "porpoise", "beluga", "narwhal", "orca", "vaquita", "ichthyosaur", "shonisaurus", "temnodontosaurus", "livyatan", "encantado", "bakekujira" } },
+	{ "ray", { "stingray", " ray", "skate", "guitarfish", "sawfish", "manta" } },
+	{ "flat", { "halibut", "flounder", "plaice", "turbot", "sole fish", "both eyes on one side" } },
+	{ "seahorse", { "seahorse", "sea dragon", "pipefish", "shrimpfish", "hippocampus" } },
+	{ "shark", { "shark", "bonnethead", "dogfish", "wobbegong", "cretoxyrhina", "edestus", "helicoprion", "stethacanthus", "megalodon" } },
+	{ "billfish", { "swordfish", "marlin", "sailfish", "spear bill", "sword bill" } },
+	{ "deep", { "angler", "fangtooth", "viperfish", "barreleye", "dragonfish", "coffinfish", "gulper", "huge fangs" } },
+	{ "round", { "puffer", "blowfish", "porcupinefish", "boxfish", "lumpfish", "frogfish", "stonefish", "toadfish", "goldfish", "swell", "spiky round", "round lumpy", "cube" } },
+	{ "catfish", { "catfish", "namazu", "pleco", "wels", "suckermouth" } },
+	{ "tadpole", { "tadpole" } },
+	{ "long", { "barracuda", " gar", "needlefish", "halfbeak", "pike", "muskellunge", "arowana", "bichir", "bowfin", "burbot", "lungfish", "paddlefish", "sturgeon", "wahoo", "cobia", "wolf fish", "snakehead", "tiktaalik", "coelacanth", "trumpetfish", "black dragon", "eel-like", "long body", "long toothy", "elephantnose", "oarfish", "remora", "mudskipper" } },
+	{ "disc", { "angelfish", "discus", "butterflyfish", "tang", "surgeonfish", "moorish idol", "bluegill", "crappie", "opah", "sunfish", "batfish", "triggerfish", "filefish", "rabbitfish", "hatchetfish", "damselfish", "garibaldi", "spadefish", "sheepshead", "pompano", "piranha", "payara", "disc", "diamond fish", "oval fish", "tall" } },
+}
+
+local function classify(ctx: any): string
+	local id = " " .. string.lower(ctx.result.id)
+	local hint = string.lower((ctx.result.visual and ctx.result.visual.silhouetteHint) or "")
+	local t = ctx.traits
+	if t.jelly or string.find(id, "jelly", 1, true) or string.find(id, "medusa", 1, true) then
+		return "jelly"
+	end
+	if t.tentacles and not string.find(id, "mermaid", 1, true) and not string.find(id, "witch", 1, true) then
+		return "cephalopod"
+	end
+	for _, k in KINDS do
+		for _, w in k[2] do
+			if string.find(id, w, 1, true) then
+				return k[1]
+			end
+		end
+	end
+	-- second pass on the hint only (so "ray-like shark" in a hint never beats the id)
+	for _, k in KINDS do
+		for _, w in k[2] do
+			if #w > 4 and string.find(hint, w, 1, true) then
+				return k[1]
+			end
+		end
+	end
+	if t.whale or t.dolphin then
+		return "whale"
+	end
+	return "fish"
+end
+
+-- Generic sharks (bonnethead, dogfish, sawshark ...): the shark signature's body, recoloured, plus the trait that
+-- names the species.
+local plansMod: any = nil
+local function shark(B: any, ctx: any)
+	plansMod = plansMod or require(script.Parent) :: any
+	local sig = plansMod.signatureHook and plansMod.signatureHook("shark")
+	if sig == nil then
+		ctx.kind = "shark"
+		return legacy(B, ctx)
+	end
+	sig(B, ctx)
+	local has = SeaFish.reader(ctx)
+	local head
+	for _, p in B.parts do
+		if p.role == "body" and p.bone == "Body" and (head == nil or p.cf[3] < head.cf[3]) then
+			head = p
+		end
+	end
+	if head == nil then
+		return
+	end
+	local hx, hy, hz = head.cf[1], head.cf[2], head.cf[3]
+	local w, h, l = head.size[1], head.size[2], head.size[3]
+	if has("hammer", "shovel") then
+		-- cephalofoil: a flat wing of a head across the snout, eyes at its tips
+		local span = w * (if has("small", "shovel") then 1.5 else 2.3)
+		B:ell(span, h * 0.22, l * 0.3, at(hx, hy + h * 0.05, hz - l * 0.42), { col = "primary", mat = "skin", pri = 1.2, role = "head", name = "Hammer", mesh = false })
+		if ctx.detail >= 1 then
+			B:mball(h * 0.16, at(span * 0.47, hy + h * 0.08, hz - l * 0.44), { col = "pupil", mat = "glass", pri = 1.5, role = "eye", name = "HammerEye#", noCore = true })
+		end
+	end
+	if has("saw") then
+		B:ell(w * 0.22, h * 0.1, l * 0.7, at(hx, hy - h * 0.05, hz - l * 0.75), { col = "secondary", mat = "hard", pri = 1.3, role = "horn", name = "Saw", mesh = false })
+	end
+	if has("anvil") then
+		B:ell(w * 0.9, h * 0.3, l * 0.25, at(hx, hy + h * 0.95, hz + l * 0.35), { col = "dark", mat = "hard", pri = 1.6, role = "fin", name = "Anvil", mesh = false })
+	end
+	if has("buzzsaw", "spiral of teeth", "scissor") and ctx.detail >= 2 then
+		B:cyl(w * 0.18, h * 0.55, at(hx, hy - h * 0.38, hz - l * 0.25, 0, 0, 0), { col = "tooth", mat = "hard", pri = 2.2, role = "tooth", name = "Whorl" })
+	end
+	if has("beard", "tassel", "camo", "flat") and ctx.detail >= 2 then
+		B:ell(w * 0.9, h * 0.25, l * 0.25, at(hx, hy - h * 0.4, hz - l * 0.35), { col = "secondary", mat = "skin", pri = 2.8, role = "detail", name = "Tassels", mesh = false })
+	end
+end
+
+return function(B: any, ctx: any)
+	local forced = ctx.kind
+	if forced == "octopus" or forced == "shark" or forced == "jelly" then
+		return legacy(B, ctx) -- signature bases (SigKit.base) and the jellyfish build
+	end
+	if forced == "cephalopod" then
+		return Cephalopod.build(B, ctx)
+	end
+	local kind = forced or classify(ctx)
+	if kind == "jelly" then
+		ctx.kind = "jelly"
+		return legacy(B, ctx)
+	elseif kind == "cephalopod" then
+		return Cephalopod.build(B, ctx)
+	elseif kind == "mer" then
+		return SeaMammal.mer(B, ctx)
+	elseif kind == "seal" then
+		return SeaMammal.seal(B, ctx)
+	elseif kind == "reptile" then
+		return SeaMammal.reptile(B, ctx)
+	elseif kind == "whale" then
+		return SeaMammal.whale(B, ctx)
+	elseif kind == "ray" then
+		return SeaFish.ray(B, ctx)
+	elseif kind == "flat" then
+		return SeaFish.flatfish(B, ctx)
+	elseif kind == "seahorse" then
+		return SeaFish.seahorse(B, ctx)
+	elseif kind == "shark" then
+		return shark(B, ctx)
+	elseif kind == "sword" then
+		return SeaFish.finfish(B, ctx, "billfish")
+	elseif kind == "puffer" then
+		return SeaFish.finfish(B, ctx, "round")
+	end
+	return SeaFish.finfish(B, ctx, kind)
 end
