@@ -114,7 +114,6 @@ return {
 	{"foxtail","NGANMI","dFSN",1,1,1,"C0CA33","9E9D24","fuzzy grass heads like little tails","rustle","Sticks to socks. And enemies.","plant,flower"},
 	{"foxtail lily","NACNMI","dFS",2,1,2,"FF9800","FFE0B2","towering bottlebrush flower spike","rustle","A candle made of flowers.","plant,flower"},
 	{"francesinha","IMBLGI","FN",2,3,3,"E8762B","D9A04A","sandwich drowned in red sauce","gloop","A sandwich in a sauce bath.","edible,sticky"},
-	{"frankenstein's monster","ADDJNA","kfL",7,3,8,"65A30D","1F2937","flat-head giant, bolts in neck, stitches","groan","Powered by thunder. Afraid of fire.","spooky,halloween"},
 	{"frappe","ICBOKI","DJ",3,9,2,"C8A070","F7F2EC","blended coffee, whipped top","fizz","A coffee milkshake for heroes.","edible,drink"},
 	{"freckle","BHAELJ","jdP",1,5,1,"C68642","E8B48A","sprinkle of tiny brown dots raining down","pitter","Sun kisses. Now in bulk.","body,cute"},
 	{"free running","KFBOKG","UD",3,9,2,"FF7043","FFFFFF","flipping, vaulting motion trail","whoosh","Parkour! Over everything.","sport,speed"},
@@ -403,4 +402,5 @@ return {
 	{"ghost flower","NIBLMI","iZS",3,1,2,"E1F5FE","7E57C2","translucent glowing white bloom","chime","Blooms only for the dead. Spooky.","plant,magic,mythical,spooky"},
 	{"ghost form","KIBOVJ","AZY",2,7,2,"E0F7FA","B39DDB","caster turning see-through and floaty","wail","Boo. Walk through walls.","spooky,stealth"},
 	{"ghost horse","AIDKAA","DZg",5,9,4,"CBD5E1","6366F1","translucent galloping horse","neigh","Gallops through walls.","ghost,mount"},
+	{"ghost horse rider","AIDKAA","DZg",6,9,4,"A5B4FC","1E1B4B","spectral rider on a glowing horse","neigh","Gallops across the sky at night.","ghost,mount"},
 }

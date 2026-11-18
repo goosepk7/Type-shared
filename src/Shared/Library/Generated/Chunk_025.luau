@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stalactite","FECAuB","TO",5,6,5,"7E6F60","BAA992","dripping stone spike falling from above","whistle","Pointy cave tooth, ceiling edition.","sharp"},
+	{"stalagmite","FECLII","GT",5,3,6,"8C7B6A","C2B39F","stone spike erupting from the floor","rumble","Pointy cave tooth, floor edition.","sharp"},
 	{"stale bread","IEBAKK","keO",4,7,6,"C8A06A","A88050","hard grey-brown loaf","bonk","Hard enough to use as a brick.","edible,silly"},
 	{"stalk","KIBOMA","QZf",3,5,2,"1F2937","22C55E","pair of eyes peering from a walking bush","rustle","That bush was not there before.","stealth,silly"},
 	{"stamina","KGCOKJ","DF",2,6,4,"43A047","FFF59D","green breathing glow pulse","breath","Keep going. And going.","support"},
@@ -194,6 +196,7 @@ return {
 	{"storm tree","NDECMI","GSeL",6,1,8,"37474F","FFEB3B","dark tree crackling with lightning","chime","Lightning hits it every time. Then you.","plant,magic,mythical"},
 	{"storm ward","KDCLII","GL",5,3,5,"FFEB3B","448AFF","ring of crackling runes","buzz","Zappy doormat.","electric,defence"},
 	{"storm wings","KDCOKB","AL",5,9,3,"FFEB3B","448AFF","wings of crackling lightning","crack","Fly fast. Zap everything you pass.","electric"},
+	{"stormstitch brute","ADDJXA","kfL",6,4,7,"6D7F86","7FE3FF","quilted patchwork giant, brass rivets, copper coil rods","thunder","Assembled from spare parts. Unhappy about it.","monster,movie,summon,lightning"},
 	{"stormy night","GIDEOJ","jZL",6,5,3,"1A237E","FFEB3B","black rain with lightning flashes","boom","It was a dark and stormy night...","spooky,storm"},
 	{"story","KLCNOJ","jcNh",4,3,3,"7C3AED","FDE68A","open storybook with a pop-up castle and a tiny dragon","chime","Once upon a time, you lost. The end.","school,fantasy"},
 	{"storyteller","LLCJNI","jOh",3,3,3,"7C3AED","FDE68A","campfire, big book, dramatic hands","whisper","And then... everyone fell asleep.","art"},
@@ -400,7 +403,4 @@ return {
 	{"swift fox","AMBJAA","jfb",3,9,2,"C8A07A","F2E8D8","small fast fox","yip","Swift by name. Swift by nature.","mammal,wild"},
 	{"swim","KBBOKC","DB",2,6,2,"4FC3F7","E1F5FE","caster in a swirling water bubble","splash","Glub glub, coming through.","aquatic"},
 	{"swim ring","BBCOKF","UB",1,4,2,"C0392B","F2F2EE","striped inflatable ring","bonk","Floats. Bonks. Floats again.","summer,toy"},
-	{"swimmer","LBCJNC","DB",3,8,3,"1D4ED8","F8FAFC","cap, goggles, mid-stroke","splash","Gold medal in splashing.","sport,aquatic"},
-	{"swimming pool","EBCLII","SN",2,1,5,"4FC3F7","F5F5F5","rectangular blue pool with ladders","splash","Everyone in! Nobody out!","structure,building"},
-	{"swimsuit","BBBOEC","UDB",2,7,2,"0EA5E9","FDE047","stripy swimsuit doing a perfect cannonball","splash","Last one in is a rotten egg.","clothing,aquatic"},
 }

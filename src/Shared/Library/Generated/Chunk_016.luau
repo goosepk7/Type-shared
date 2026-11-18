@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"maamoul","IMBAKK","Uke",3,7,2,"E8C88A","F7F2EC","patterned date-filled cookie","whoosh","A stamped cookie with a date inside.","edible"},
 	{"mac and cheese","IMBLGI","FcN",2,3,3,"F2B33A","F2D08A","creamy orange pasta pile","gloop","A cheesy hug in a bowl.","edible,sticky"},
 	{"macadamia","IEAAKK","UeO",2,8,8,"F2E8C8","8A5A3A","round cream nut, hard shell","tok","The toughest shell in the nut world.","edible,nut"},
 	{"macadamia cookie","IMBAKK","Uke",3,7,2,"E8C88A","F2E8C8","cookie with white chunks","whoosh","Nuts and white chocolate. Fancy.","edible"},
@@ -348,6 +349,7 @@ return {
 	{"mid","KMBOKG","jXN",2,5,5,"9CA3AF","D1D5DB","beige shrugging blob with a 5/10 scorecard","sigh","Not bad. Not good. Just... mid.","meme,silly"},
 	{"middle","KLBL5I","SHO",3,3,4,"A855F7","FFFFFF","target rings pulling everything to the bullseye","hum","Piggy in the middle. You are the piggy.","silly"},
 	{"midnight","FICNOI","iZ",5,4,3,"0F1030","4A3C8C","clock-chime ripple, deep blue dark","chime","The witching hour strikes.","spooky"},
+	{"midnight bite","KICHLB","ifY",5,9,4,"7A1430","FF5A7A","crimson mist and tiny bats, a cape swirl and a bite","hiss","Technically a very fast, very rude hug.","monster,vampire,melee,folklore"},
 	{"midwife toad","AMAJAG","UFe",1,5,1,"8A8A6A","C8C0A0","toad carrying eggs on legs","croak","Dad carries the eggs. Hero.","amphibian,wetland"},
 	{"might","KECOKI","Wk",4,4,5,"BF360C","FFCC80","heavy red-gold aura","grunt","Might makes... a really big punch.","strength"},
 	{"milanesa","IMCIII","Ga",3,3,4,"D9A04A","F2D23A","thin breaded cutlet","thud","A golden thin cutlet.","edible"},
@@ -401,6 +403,4 @@ return {
 	{"mini sun","FHCGKE","KFR",6,4,3,"FFB300","FFF8E1","tiny blazing sun floating overhead","hum","Your own personal sunshine.","holy,fire"},
 	{"mini tornado","HFBN5K","klH",4,7,2,"B0BEC5","ECEFF1","knee-high spinning funnel that zips around","whoosh","Small, angry and very spinny.","storm,cute"},
 	{"miniature schnauzer","AMBJAA","dQf",2,6,2,"8A8A8E","D8D8DA","small dog, bushy beard","yip","Grandpa mustache, puppy energy.","mammal,pet,cute"},
-	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
-	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 }

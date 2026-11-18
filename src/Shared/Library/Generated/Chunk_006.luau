@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cleave","KKDHJB","kfT",7,5,3,"90A4AE","ECEFF1","huge sweeping arc hitting many","shing","One swing. Many problems solved.","sharp,heavy"},
 	{"cleaver","CKBHrK","fV",4,6,4,"8A929B","24262A","rectangular heavy chopping blade","shing","Chop first, ask questions later.","medieval,sharp,kitchen"},
 	{"clematis","NGCLMI","WSHN",2,1,3,"7E57C2","FFFFFF","climbing vine with big starry blooms","rustle","Climbs anything. Smothers everything.","plant"},
 	{"clementine","IMBAKF","jke",3,6,2,"F59B26","2F6B2A","tiny bright orange, two leaves","squirt","Tiny, sweet, and full of squirt.","edible,fruit,sour"},
@@ -402,5 +403,4 @@ return {
 	{"cricket","AMAJFG","UdAP",1,6,1,"4A3A2A","8A6A44","dark hopper rubbing legs","chirp","Chirps all night. Can't stop.","insect"},
 	{"cricket ball","BMAA3F","ke",2,9,5,"9E1B32","F2F2EE","hard red stitched ball","bonk","Very red. Very hard.","sport"},
 	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
-	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 }

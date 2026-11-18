@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pocket dragon","AAAJAB","KAQ",2,8,1,"DC2626","FACC15","palm-sized dragon on your shoulder","chirp","Lights your candles. And your sleeves.","cute,reptile"},
+	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
 	{"pocket knife","CKAHrK","fT",2,8,2,"C0392B","C9CED4","folding blade, red handle","shing","Has a blade, a saw, and a tiny toothpick.","medieval,sharp"},
 	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
 	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
@@ -401,6 +403,4 @@ return {
 	{"raijin","ADDJNJ","AeLO",7,6,6,"1D4ED8","FACC15","oni drummer in a ring of thunder drums","thunder","Drums so hard the sky crackles.","yokai,storm"},
 	{"raiju","ADCJAB","DAL",5,9,4,"2563EB","FDE047","wolf of blue lightning, crackling tail","zap","Naps in belly buttons during storms.","yokai,storm"},
 	{"rail bird","AMBJDA","AfT",2,5,2,"8A6A4A","C8A07A","slim marsh bird","squawk","Thin as a rail. Literally.","bird,wetland"},
-	{"railgun","CDDBwI","DTe",8,10,4,"7FD8FF","3A3F48","twin rails glowing, then one straight blue-white line","zap","Magnets, but angry.","scifi,ranged"},
-	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
 }

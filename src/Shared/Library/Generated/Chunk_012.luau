@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"gremlin","ADAJNA","jLb",2,8,2,"4D7C0F","94A3B8","tiny long-eared imp with a wrench","cackle","Breaks machines just to hear them beep.","goblin,mechanical,silly"},
 	{"gremlin gamer","LMBJNA","jdb",2,8,2,"65A30D","7C3AED","messy hair, snacks, wild grin","cackle","Pure chaos energy at 3 AM.","meme,silly"},
 	{"gremlin swarm","ADBJLA","LPb",4,8,2,"4D7C0F","FDE047","crowd of long-eared imps with tools","cackle","Every machine in range: broken.","goblin,swarm,silly"},
 	{"grenade","CABGKF","EkeV",5,6,2,"6B7B3A","4A4D52","pineapple-shaped grenade with pin","boom","Pull pin. Throw. Run.","explosive"},
@@ -252,6 +251,7 @@ return {
 	{"headless knight","AICJNA","Gjf",5,4,6,"57534E","22C55E","armored knight with no head, glowing collar","clang","Lost his head over a sword fight.","undead,warrior"},
 	{"headlight","BHBBKB","jeO",3,9,2,"FEF9C3","FFFFFF","pair of blinding round car lights, deer frozen in them","click","Deer in the headlights. You are the deer.","vehicle,light"},
 	{"headphones","BDAOKI","G",1,5,2,"24262A","C0392B","over-ear headphones","beep","Can't hear you. Busy winning.","tech,electric"},
+	{"headstone ward","EEDCnI","GS",5,2,7,"8A8F96","9AF0D6","three crooked mossy headstones rising in an arc","rumble","Here lies your opponent's fireball.","monster,graveyard,shield,spooky"},
 	{"headwind","FFCCOI","IN",3,6,3,"B7CFDB","F2F7FA","invisible air wall with streaks","howl","Walk forward. Go backward.","air"},
 	{"heal","KHCOKJ","F",1,6,3,"69F0AE","FFF59D","green-gold sparkles swirling up around ally","chime","Feels better already.","holy,support"},
 	{"healer bot","LHBJNA","QF",2,5,3,"F8FAFC","FACC15","small figure following with green glow","chime","Follows you around healing. Clingy.","meme,gaming,healer"},
@@ -401,6 +401,6 @@ return {
 	{"hoisin","IMBLGI","SNP",2,3,3,"5A1E1E","8A3020","thick dark sweet sauce","gloop","Sweet, sticky, and dark.","edible,sticky,sauce"},
 	{"hole punch","BMALJK","T",1,4,4,"8E9196","24262A","two-hole office punch","tap","Ka-chunk. Holes.","office"},
 	{"hollandaise","IMBLGI","kSO",2,3,2,"F2D870","F2C24A","smooth yellow buttery sauce","squeak","Fancy butter sauce for fancy eggs.","edible,slippery,silly,sauce"},
+	{"hollow lantern","BACG7F","KEe",5,6,4,"E8761A","7CFF6B","a carved gourd lantern with a green flame grin, lobbed","cackle","It is smiling because it knows something you don't.","monster,folklore,spooky,halloween"},
 	{"hollow tree","NGDCMI","GZS",3,1,7,"6D4C41","43A047","wide trunk with a hidey-hole","rustle","Hide inside. Pop out. Surprise!","plant,tree"},
-	{"hollow visage","KICOKI","Dif",8,9,2,"F2EEE6","B3122E","a cracked white skull mask with red stripes","growl","Put on the face. Lose the manners.","anime,transform"},
 }

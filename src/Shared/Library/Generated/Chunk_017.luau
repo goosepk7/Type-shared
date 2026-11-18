@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
+	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 	{"minivan","DMCKHL","Dkg",4,6,6,"6E8FA6","D9DEE2","tall rounded van, sliding side door","engine","Soccer practice is cancelled. Battle is on.","mechanical,vehicle,land,silly"},
 	{"mink","AMBJAA","CfTB",3,8,2,"3A2618","5A3E2C","glossy dark brown slinky body","chatter","Shiny coat, sharp teeth.","mammal,predator"},
 	{"minke whale","ABEJEC","kIB",6,3,9,"3A4250","D8DEE4","small sleek whale, white flipper bands","whalesong","Smallest of the big guys.","mammal,aquatic,ocean,heavy"},
@@ -141,7 +143,6 @@ return {
 	{"moon fang","KIDHKB","kTe",8,9,2,"120B14","FF2B4A","a black-red crescent of energy tears across the field","slash","Swing once. Moon does the rest.","anime,sword"},
 	{"moon goblin","AHBJNG","Ub",2,8,2,"E5E7EB","65A30D","pale goblin bouncing in low gravity","cackle","Steals moon rocks.","goblin,cosmic,silly"},
 	{"moon gravity","KLCNOI","lN",3,4,3,"CFD8DC","9FA8DA","floating dust motes, grey moon glow","hum","Boing. Boing. Boing.","space,silly"},
-	{"moon howl","FICFOB","Dj",4,7,1,"8B0000","FFAB91","red moon ring and howling wave","howl","Full moon. Feeling wild.","spooky"},
 	{"moon jelly giant","AHEJGJ","AFL",6,2,4,"E0F2FE","C4B5FD","enormous pale jellyfish glowing like a moon","hum","Floats past. Heals friends. Zaps foes.","alien,cosmic"},
 	{"moon jellyfish","ABBJGJ","SOB",2,2,1,"E8E8F8","C8B0E0","clear disc bell, four pink rings","squelch","A floating moon in the sea.","aquatic,ocean,venomous"},
 	{"moon lander","DACKHE","AkgO",4,4,5,"FFD54F","C0C0C0","gold foil body on four spidery legs","roar","The Eagle has stomped.","vehicle,space"},
@@ -160,6 +161,7 @@ return {
 	{"moonfall","HEFAKB","EkO",10,2,10,"CFD8DC","90A4AE","giant cratered moon descending slowly","rumble","The moon is coming closer. Uh oh.","space,heavy,silly,danger"},
 	{"moonfire","FLCBKI","Kie",5,6,2,"C9D6FF","7B6CF6","silver-violet pillar from above","chime","Cool to the touch. Still burns.","space"},
 	{"moonflower","NHBNMI","FS",3,1,2,"F5F5F5","B3E5FC","glowing white bloom that opens at night","rustle","Glows in the dark. Heals in the dark.","plant,flower,magic"},
+	{"moonhowl frenzy","KICOAA","DkI",5,8,4,"C9D3E6","FFB547","pale moon, a howl, a shaggy spectral wolf mantle","howl","Full moon, full speed, full of bad ideas.","monster,werewolf,buff,folklore"},
 	{"moonlight","FHCNOI","FZS",3,4,2,"D6E0FF","A3B5FF","silvery cone of soft light","chime","Romantic. Also slightly magical.","space"},
 	{"moonpetal","NHBNMI","FS",3,1,2,"E1F5FE","B39DDB","silver petals glowing in moonlight","chime","Blooms under the moon. Heals the brave.","plant,magic,mythical"},
 	{"moonquake","HEENOI","lO",7,3,5,"CFD8DC","90A4AE","low-gravity quake bouncing things up","rumble","The ground bounces. Slowly.","space,natural"},
@@ -401,6 +403,4 @@ return {
 	{"news","KDCF6B","jdPO",3,8,1,"DC2626","F8FAFC","red BREAKING banner scrolling with a spinning globe","fanfare","This just in: you. Getting hit. More at ten.","meme"},
 	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
 	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
-	{"newt","AJAJCA","FMB",1,3,2,"E8701E","3A3A2A","small orange salamander","squelch","Bright orange. Bitter taste.","amphibian,wetland"},
-	{"niagara falls","MBFFII","kSIN",7,1,9,"4FC3F7","FFFFFF","wide thundering curtain of water","roar","Several million litres of nope.","place,landmark"},
 }

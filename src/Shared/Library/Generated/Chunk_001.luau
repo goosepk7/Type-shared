@@ -16,6 +16,7 @@ return {
 	{"absorb","KLCIKI","GiF",3,5,4,"7E57C2","E1BEE7","swirling dome drinking in attacks","hum","Thanks for the energy.","magic,defence"},
 	{"abyss","FIELII","iSH",7,2,6,"0A0612","3E2466","bottomless black pit with purple mist","echo","Do not stare into it. It stares back.","spooky"},
 	{"abyssal angler","AIEJEC","cfB",7,4,7,"0F172A","67E8F9","giant deep-sea fish with glowing lure","roar","Follow the light. Bad idea.","aquatic,spooky"},
+	{"abyssal grasp","ABENSC","klH",7,4,7,"1E3A4C","46F0C8","black water ring, barnacled tentacles with teal suckers","splash","Something down there wants a hug. A big one.","monster,sea,kraken,folklore"},
 	{"abyssal ray","KIDBKI","DkTe",8,10,2,"D61A30","2A0610","a crimson sphere in an open palm fires a piercing beam","zap","Point. Charge. Erase everything in a straight line.","anime,beam,hollow"},
 	{"abyssinian","AMBJAA","dfT",2,8,2,"C8803A","E8B87A","ticked ginger coat, big ears","meow","Curious about EVERYTHING.","mammal,pet,cute"},
 	{"acacia","NGDCMI","GWkST",4,1,7,"6D4C41","9CCC65","flat umbrella crown, thorny branches","rustle","Shade below. Thorns everywhere.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"ash wasteland","MAENII","KjS",4,1,6,"616161","FF7043","grey ash dunes, smouldering stumps","rumble","Everything here already burned. Twice.","place,terrain"},
 	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
 	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
-	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"epic","KHCOKJ","DW",5,6,4,"AB47BC","FFD54F","purple epic loot glow","fanfare","That was epic.","meme"},
 	{"equator","MAFBKI","GKSN",7,1,7,"EF4444","FDE047","red-hot line wrapped round a globe, palm trees wilting","sizzle","The world's belt. It is on the tightest notch.","place,space"},
 	{"equinox","GLDNOI","GF",4,3,5,"FFF59D","1A237E","half-day half-night sky split","chime","Perfect balance of day and night.","space"},
 	{"eradicate","KLDF6B","TIPO",8,6,1,"EF4444","F8FAFC","wide red scanning line sweeping and erasing what it crosses","whum","Target acquired. Target... where did it go?","scifi"},
@@ -390,7 +391,6 @@ return {
 	{"flee","KFBOKB","DZ",1,10,1,"E0E0E0","FFFFFF","caster zooming away with dust cloud","whoosh","Tactical retreat! Very tactical.","speed,silly"},
 	{"fleet","DBFELC","EehB",8,4,9,"607D8B","1E88E5","sea full of warships","engine","The whole navy arrives.","vehicle,mechanical"},
 	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
-	{"flesh golem patchwork","ADDJNA","kL",6,3,7,"84CC16","57534E","stitched giant with lightning rods","groan","Sewn together. Charged up.","construct,spooky"},
 	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
 	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
 	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},

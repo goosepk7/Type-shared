@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow blade","CICHrK","iZf",7,8,3,"1B1A22","7D3CB5","smoky black blade, wispy edge","shing","You don't see it coming. That's the point.","fantasy,spooky"},
+	{"shadow blast","FICGKI","iEk",6,7,1,"1A0033","AA00FF","bursting sphere of black smoke and violet sparks","whum","A burst of pure gloom.","spooky,explosive"},
 	{"shadow bolt","FICAKB","iTe",6,8,1,"311B47","9C4DFF","writhing black orb with purple wake","hiss","Darkness, but in a hurry.","spooky"},
 	{"shadow bomb","FICGKI","iEZ",6,6,1,"1A0033","AA00FF","black orb bursting into blinding dark","whum","Explodes into nothing. Scary nothing.","spooky,explosive"},
 	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
@@ -401,6 +403,4 @@ return {
 	{"smorrebrod","IGBOKI","F",2,5,3,"5A3A2A","F2E8D0","dark rye with toppings","crunch","Open-faced, open-minded.","edible,healthy"},
 	{"snack","IMAA7G","dFc",1,6,1,"F59E0B","FDE68A","little pile of crackers, cheese cubes and grapes","crunch","Not hungry. Just snacky.","edible,cute"},
 	{"snack table","IMCJII","Gdc",5,1,6,"D72B2B","F2C24A","folding table of snacks","thud","Everyone stops for snacks.","edible,giant,silly"},
-	{"snail","AMAJGI","GSN",1,1,6,"A86A3A","E8C8A0","spiral shell, slimy foot, eye stalks","squelch","Speed: yes. Very little of it.","mollusk,aquatic,garden"},
-	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 }

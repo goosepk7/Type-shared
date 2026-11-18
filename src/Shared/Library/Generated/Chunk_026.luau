@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swimmer","LBCJNC","DB",3,8,3,"1D4ED8","F8FAFC","cap, goggles, mid-stroke","splash","Gold medal in splashing.","sport,aquatic"},
+	{"swimming pool","EBCLII","SN",2,1,5,"4FC3F7","F5F5F5","rectangular blue pool with ladders","splash","Everyone in! Nobody out!","structure,building"},
+	{"swimsuit","BBBOEC","UDB",2,7,2,"0EA5E9","FDE047","stripy swimsuit doing a perfect cannonball","splash","Last one in is a rotten egg.","clothing,aquatic"},
 	{"swing","BFCLII","Uklg",4,6,5,"EF4444","6B7280","A-frame with a seat on chains at full arc","creak","Higher! Higher! Too high! TOO HIGH!","playground,toy"},
 	{"swing set","EMCCII","GkS",2,1,4,"1E88E5","FFB300","A-frame with dangling seats","thud","Swings back and hits you.","structure,building,silly"},
 	{"swinging axe","BKDLsI","kfV",6,4,6,"8A929B","5A3A1E","crescent blade swinging on pole","snap","Tick. Tock. Duck.","trap,defense"},
@@ -396,11 +399,8 @@ return {
 	{"tomato juice","IBBOKI","F",2,6,2,"C8202B","E8434F","glass of thick red juice","slurp","Thick and savory.","edible,drink"},
 	{"tomato plant","NGBMMI","dSe",2,1,2,"2E7D32","E53935","staked vine hung with red fruit","rustle","Throws tomatoes. Rotten ones.","plant,crop"},
 	{"tomato soup","IBBOGI","FS",3,4,3,"D8302B","F2E8C8","smooth red soup bowl","slurp","Red, warm, and perfect with grilled cheese.","edible,warm,healthy"},
+	{"tomb wraps","BICACD","SeN",4,7,3,"E4D9BC","6EE0C4","a living strip of old linen slithering along the ground","rustle","Ancient, dusty and extremely clingy.","monster,mummy,spooky,folklore"},
 	{"tone","KFBF6B","dPO",2,8,1,"22D3EE","F8FAFC","pulsing rings from a buzzing phone at full volume","ring","It is not yours. Everyone checks anyway.","tech,music"},
 	{"tonfa","CMBHJK","Gf",3,7,4,"24262A","8B5A2B","baton with side handle","bonk","Spin, block, poke. Repeat.","medieval,heavy"},
 	{"tongs","JKBHJK","fH",1,6,5,"5B6168","24262A","long pincer tongs","clank","Grabs hot things so you don't.","tool"},
-	{"tongue lash","KMBBKI","fHb",3,9,1,"F06292","FFCDD2","long stretchy pink tongue","thwip","Slurp. Grabbed.","silly,gross"},
-	{"tonic water","IBBFKI","EkI",3,7,1,"D8F0F8","F7F7F2","clear fizzy, lime wedge","fizz","Bitter bubbles.","edible,drink,fizzy"},
-	{"tonkotsu ramen","IABOGI","KF",3,4,3,"F2E8D0","C8502B","creamy white broth bowl","slurp","Creamy broth simmered for hours.","edible,warm,healthy"},
-	{"tool","JKBAtK","kfO",3,6,5,"EF4444","9CA3AF","combo tool: hammer one side, wrench the other","clank","If it does not fit, hit it harder.","tool"},
 }
