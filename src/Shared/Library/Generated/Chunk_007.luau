@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crush","KEDNOI","kNO",7,4,5,"6D4C41","BCAAA4","heavy stone slab pressing down","crunch","Flat as a pancake.","heavy"},
+	{"crusher","OKDL1I","kO",7,2,9,"3A3F45","F1C40F","toothed rollers in steel jaws","hum","Chomp chomp. Gravel.","mechanical"},
+	{"crusher trap","BEDLII","kO",8,1,9,"8C8C88","3A3F45","spiked ceiling slab dropping","snap","The ceiling is lowering. Literally.","trap,defense"},
+	{"crushing sky","KLDNKI","HNO",7,4,4,"4C3B7A","B8A6FF","a violet pressure ring that slams everyone flat","thump","Floor's this way.","anime,magic"},
 	{"crust","IMBIyK","GUc",2,4,5,"D9A066","A16207","ring of golden pizza crust with a bite out","crunch","Cut the crusts off. Throw the crusts.","edible"},
 	{"crutch","BMCHJI","kf",1,4,3,"C9CED4","8E9196","metal crutch with arm cuff","thud","Leans on you. Swings at them.","container"},
 	{"cry","KBBEOJ","FN",1,4,1,"81D4FA","FFFFFF","little rain cloud above caster","sniff","A good cry. Splashes everyone.","silly"},
@@ -112,6 +116,7 @@ return {
 	{"cyclamen","NGANMI","dFS",1,1,1,"E91E63","2E7D32","swept-back petals like tiny flames","rustle","Flowers that look like flames. Not hot.","plant,flower"},
 	{"cycling","KFCFLA","DkP",5,9,3,"FDE047","111827","tight pack of helmeted riders in lycra leaning into a bend","whirr","On your left. On your left. ON YOUR LEFT.","sport,speed"},
 	{"cyclist","LMCJNL","Dk",3,9,3,"FACC15","111827","helmet, spandex, racing bike","whoosh","Pedals faster than your excuses.","sport"},
+	{"cyclone kick","KFCO5K","Dklf",6,9,2,"B0BEC5","FFFFFF","you spin forward like a propeller, kicking","whoosh","Spin so fast you make weather.","anime,melee,fighting"},
 	{"cyclone strike","FFDA5K","klHe",7,8,3,"90A4AE","ECEFF1","small fast twister racing along the ground","howl","A pocket tornado, on rails.","air,storm"},
 	{"cyclops","AEEJNA","kfeO",8,3,8,"A16207","FEF3C7","towering one-eyed giant, huge club","stomp","Great at aiming. One eye shut is cheating.","mythical,giant"},
 	{"cyclops alien","ALBJNA","je",3,6,3,"4ADE80","FDE68A","tiny alien with one huge eye","zap","Winks constantly. Blinks constantly.","alien,silly"},
@@ -182,6 +187,7 @@ return {
 	{"daughter","LMBJNA","Dje",3,7,3,"EC4899","F2D0B4","girl with pigtails, rain boots, a determined glare","yay","Asked nicely once. Just once.","family"},
 	{"dawn","FHCNOI","FO",4,5,2,"FFAE6B","FFE5C2","orange-pink sunrise glow sweeping over","chime","Rise and shine. Mostly shine.","holy"},
 	{"dawn redwood","NGECMI","GWkS",4,1,9,"A0522D","7CB342","feathery deciduous redwood","rustle","A living fossil. Grumpy about it.","plant,tree,ancient"},
+	{"dawn spiral","KADOKI","KDf",8,9,2,"FF8A1F","FFE07A","a spiralling dragon of sunfire around the blade","whoosh","First form. Last thing they see.","anime,sword,fire"},
 	{"day","KHENKI","KFSO",5,3,3,"7DD3FC","FDE047","bright blue sky dome with a grinning yellow sun","tweet","Rise and shine. No, really. Shine.","time,light"},
 	{"day gecko","AMBJAA","Cf",2,7,2,"3AE04A","E8301E","neon green gecko with red spots","hiss","Neon green. Basks in daylight.","reptile"},
 	{"daze","KMBAKB","jO",3,8,1,"FFF59D","FFFFFF","circling birds and stars","wobble","Seeing birdies.","silly"},
@@ -397,10 +403,4 @@ return {
 	{"dormouse","AMAJAA","CdNb",1,6,1,"D8A060","F2E6D2","round sleepy mouse, fluffy tail","squeak","Sleeps half the year. Goals.","mammal,cute"},
 	{"doro wat","IABNGI","KF",4,4,2,"7A2A1E","C8302B","deep red chicken stew","sizzle","Red, spicy, and soul-warming.","edible,spicy"},
 	{"dosa","IMBHJI","kf",3,5,4,"E8B860","F2E8D0","huge thin crisp rolled crepe","bonk","A crepe the length of your arm.","edible,silly"},
-	{"dot","KMAELG","UjP",1,6,1,"EF4444","FFFFFF","bouncing red polka dots of different sizes","pop","Connect them. Too slow.","school,shape"},
-	{"double agent","LICJNA","jZb",4,7,3,"1F2937","DC2626","trench coat with two badges","whisper","Works for both sides. Mostly for snacks.","stealth"},
-	{"double axe","CKDHsK","kfV",7,4,6,"8A929B","6B4226","two-sided axe head","chop","Twice the axe, twice the drama.","medieval,sharp"},
-	{"double barrel","CKCAwI","keV",6,3,4,"3A3F45","8B5A2B","two side-by-side barrels","bang","Two barrels, twice the thunder.","modern,ranged"},
-	{"double bass","BMDFJI","IN",3,2,5,"6E3418","24262A","huge standing string instrument","strings","Thum. Thum. Thum.","music"},
-	{"double burger","IGCOKI","Fkc",4,5,3,"C8762B","4A2416","two-patty stacked burger","crunch","Twice the patty. Twice the power.","edible,healthy"},
 }

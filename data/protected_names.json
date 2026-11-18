@@ -71,7 +71,9 @@
     {"n": ["taylor swift"], "r": "singing person"},
     {"n": ["skibidi toilet", "skibidi"], "r": "singing toilet"},
     {"n": ["shrek swamp"], "r": "swamp"},
-    {"n": ["lego", "legos", "lego brick", "lego bricks", "lego block"], "r": "toy brick"}
+    {"n": ["lego", "legos", "lego brick", "lego bricks", "lego block"], "r": "toy brick"},
+    {"n": ["red bull", "redbull", "monster energy", "monster energy drink", "prime energy", "bang energy"], "r": "energy drink"},
+    {"n": ["mario kart blue shell", "mario kart shell"], "r": "seeker shell"}
   ],
   "strip": ["pokemon", "pokémon", "disney", "pixar", "marvel", "dc comics", "nintendo", "minecraft", "fortnite", "roblox", "barbie", "hot wheels", "nerf", "star wars", "transformers", "playstation", "xbox"]
 }
