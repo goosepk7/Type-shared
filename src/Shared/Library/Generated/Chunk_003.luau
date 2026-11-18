@@ -159,6 +159,7 @@ return {
 	{"blaster","CDBAwI","Ke",5,8,3,"24262A","C9CED4","chunky sci-fi pistol","zap","Pew pew pew!","scifi,ranged"},
 	{"blaster rifle","CDCAwI","KeV",6,7,4,"24262A","C9CED4","long rifle with energy cell","zap","Pew-pew, extra pew.","scifi,ranged"},
 	{"blaze","FADNOI","KSP",6,6,3,"D9480F","FFB347","wide wall of tall flames, thick embers","roar","Not a campfire. Definitely not a campfire.","fire"},
+	{"blaze knuckle","KADAKB","KEke",8,8,2,"FF8A1E","7A1A08","a giant fist of flame roaring forward","whoosh","Knuckles, but a wildfire.","anime,pirate,fire,punch"},
 	{"bleeding heart","NGBNMI","dFS",2,1,2,"E91E63","FFFFFF","row of dangling heart blooms","rustle","Dramatic. Very dramatic.","plant,flower"},
 	{"bleeding tooth fungus","NJBLMI","SM",3,1,2,"F5F5F5","C62828","white cap oozing red drops","poof","Looks like it is bleeding. Yikes.","plant,fungus,spooky"},
 	{"blender","BMBLII","jV",3,3,4,"BFE6F2","24262A","jug with spinning blades on base","whirr","Whirrrr. Smoothie.","kitchen,household"},
@@ -340,6 +341,7 @@ return {
 	{"boulder field","MEENII","GkSN",4,1,8,"9E9E9E","6D6D6D","slope littered with tumbling boulders","rumble","Watch out for falling... oh.","place,terrain"},
 	{"boulder launcher","OEDMxI","keO",6,3,6,"8C8C88","8B5A2B","arm flinging huge rocks","clank","Rocks: delivered.","defense,mechanical"},
 	{"bounce","KMBOKG","Uk",2,7,3,"FF80AB","FFFFFF","rubbery squash-stretch bounce","boing","Boing boing boing!","silly"},
+	{"bounce brawler","KMDNXG","UWkf",8,7,5,"E8483C","2B1A14","puffed-up giant rubber fists, bouncing on the spot","boing","Boing. Boing. BOOM.","anime,pirate,rubber,transform"},
 	{"bouncy ball","BMAG3F","Uke",1,9,2,"FF3EA5","8BC34A","small glossy bouncy ball","squeak","Never stops bouncing. Never.","toy"},
 	{"bouncy bomb","CACGKF","UEe",6,6,2,"24262A","F1C40F","rubbery bomb that bounces","boom","Boing. Boing. BOOM.","explosive,silly"},
 	{"bouncy castle","EMDCII","GUkS",2,1,4,"E53935","FFEB3B","inflatable red-and-yellow turrets","boing","Boing! Boing! Out you go.","structure,silly"},
@@ -401,6 +403,4 @@ return {
 	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
 	{"bread fortress","IMECII","GFk",5,2,9,"C8904A","F5E6C8","castle walls of loaves","thud","A carb castle.","edible,giant"},
 	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
-	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
-	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 }

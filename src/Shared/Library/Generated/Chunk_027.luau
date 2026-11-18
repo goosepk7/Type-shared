@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"trap-jaw ant","AMAJLA","UCkfP",1,5,1,"8A4A1E","3A1E14","ant with spring-loaded jaws","skitter","Snaps so hard it launches itself.","insect,swarm"},
+	{"trapdoor","EEBLII","ZOY",3,1,4,"6D4C41","424242","hinged wooden hatch in the floor","creak","Click. Whoosh. Byeee.","structure,defense,silly"},
+	{"trapdoor spider","AJBLQA","CZfMN",2,6,2,"3A2A1E","6A5A44","spider under a hinged lid","skitter","Opens its door. Surprise!","arachnid,spooky,venomous"},
+	{"trapeze","BMCLJI","lH",1,4,3,"C0392B","D4A72C","swinging bar on ropes","pop","Swing in. Swoop out.","party"},
+	{"trash","BJCNGI","ScMN",3,1,4,"4B5563","84CC16","heap of black bags, banana peels, fish bones, flies","squelch","One person's trash is still trash.","gross,silly,household"},
+	{"trash can lid","BKBIyI","Gd",1,6,3,"8E9196","4A4D52","dented round metal lid","clang","Clang! Gross, but effective.","silly,defense"},
+	{"trash wall","EJCCII","GSM",2,1,5,"795548","9E9E9E","heap of bins and junk","thud","Smells like a defence.","structure,defense,silly"},
+	{"traveling merchant","LMCJNA","cbY",3,5,4,"92400E","7C3AED","giant backpack of wares","ding","What're ya buyin'?","merchant"},
 	{"traveller palm","NGDCMI","GWkS",3,1,6,"6D4C41","43A047","giant fan of paddle leaves","rustle","Points the way. Holds water.","plant,tree"},
 	{"tray","BMBIyK","Ga",1,6,3,"C9CED4","C9CED4","flat round serving tray","clang","Snacks? Defence? Yes.","kitchen,household"},
 	{"treacle sponge","IMBLGI","SNP",2,3,3,"E8A317","F2D88A","sponge pudding with syrup","gloop","A syrup-drenched sponge.","edible,sticky,sweet"},
@@ -395,12 +403,4 @@ return {
 	{"walk","KMBOBA","GQN",2,3,3,"60A5FA","F8FAFC","pair of trainers plodding along with nobody in them","tap","Running is overrated. So is arriving on time.","silly"},
 	{"walker","DKEKFA","keg",6,3,8,"78909C","455A64","boxy cockpit on two tall jointed legs","stomp","It walks. Slowly. Menacingly.","mechanical,vehicle,land,robot"},
 	{"walkie talkie","BMAOKI","h",1,6,3,"24262A","F1C40F","chunky radio with antenna","thud","Over. Send backup. Over.","tech"},
-	{"walking house","DIDKBA","DgO",5,3,7,"6D4C41","FFB300","crooked hut on giant bird legs","whoosh","Knock knock. It walks away.","spooky,silly"},
-	{"wall","EEDCII","GS",3,1,8,"9E9E9E","757575","flat-topped wall of fitted blocks","thud","It is a wall. It does wall things. Well.","structure,defense"},
-	{"wall flamethrower","BACLwI","KP",5,1,6,"4A4D52","FF6A1A","nozzle in the wall belching flame","snap","Toasty corridor.","trap,defense"},
-	{"wall jump","KMBOKG","Dl",2,9,2,"FFCC80","FFFFFF","kick-off spark from a wall","boing","Bounce off walls. Like a pro.","speed,sport"},
-	{"wall of bread","IMDCII","GFk",4,2,8,"C8904A","F5E6C8","stacked loaves forming a wall","thud","Built from carbs. Unbreakable morale.","edible,giant,silly"},
-	{"wall run","KFBOKB","D",2,9,2,"B3E5FC","FFFFFF","caster sprinting sideways along a wall","tap","Gravity is a suggestion.","sport,speed"},
-	{"wall turret","EECMII","GSe",4,1,8,"9E9E9E","5D5D5D","small round tower jutting from a wall","thud","Watches the corner. Shoots the corner.","tower,ancient"},
-	{"wallaby","AMCJAG","Ukf",3,6,2,"8A7666","D8C4B0","small kangaroo, chunky tail","chirp","Kangaroo in fun size.","mammal,marsupial"},
 }

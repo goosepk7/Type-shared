@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"saki","AMBJBA","deb",2,7,2,"3A3A3A","F2E8D8","fluffy monkey with white face","chatter","Wears a white face mask.","mammal,primate"},
+	{"sakura tempest","KGDN5K","SRP",7,8,3,"FFB7D0","FFF0F5","a whirlwind of pink petal blades around you","whoosh","Pretty. Pointy. Mostly pointy.","anime,flowers,sword"},
+	{"salad","IGBOKI","WF",2,5,3,"7DBE3A","D72B2B","bowl of leaves, tomatoes, croutons","crunch","A bowl of good decisions.","edible,healthy,vegetable"},
+	{"salad bowl","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","wooden bowl of greens","crunch","A whole garden in a bowl.","edible,healthy"},
+	{"salad dressing","IMBLGI","kSO",2,3,2,"E8C04A","7DBE3A","cruet bottle of dressing","squeak","Makes the salad worth eating.","edible,slippery,silly,sauce"},
+	{"salak","IGBAKF","Fke",3,6,2,"6B3A1E","F5F2E5","scaly brown teardrop","splat","Fruit wearing snakeskin. Fancy.","edible,fruit,sweet"},
 	{"salamander","AMAJCA","FB",1,3,2,"1E1E24","F2D82A","slick black body, yellow spots","squelch","Wet, spotty and chill.","amphibian,wetland"},
 	{"salami","IMBHJI","kf",3,5,4,"8A1E2E","F2E8D8","marbled red sausage log","bonk","A meat log. Heavy swing.","edible,silly"},
 	{"salchipapa","IMAELB","ce",2,7,1,"B0402B","F2C24A","fries with sausage slices","pitter","Fries and sausages, best friends.","edible"},
@@ -286,6 +292,7 @@ return {
 	{"service tree","NGCCMI","GWFkS",2,1,5,"5D4037","FFFFFF","slim tree with white spring blossom","rustle","Sweet berries in June.","plant,tree"},
 	{"sesame seeds","IMAELB","eVP",2,7,1,"F2E8C8","D8C8A0","sprinkle of tiny teardrops","pitter","Open sesame.","edible"},
 	{"seven layer bar","IMBLKI","dSc",2,3,3,"8A5A2A","F2E8C8","layered dessert bar","chomp","Seven layers. Seven wonders.","edible,sweet,dessert"},
+	{"severing stare","KIBAKI","jie",6,10,2,"FF3B3B","1E1E26","red glowing eyes, wrapping cloth, silenced magic","hum","Don't blink. Neither will they.","anime,hero,silence"},
 	{"sewer","MJENII","ZSM",3,1,8,"455A64","7CB342","round brick tunnel with green water","thud","Smells awful. Hides everything.","structure,building,silly"},
 	{"sewing machine","OMBMII","Te",2,1,5,"24262A","D4A72C","antique machine with needle arm","rattle","Rat-a-tat-stitch.","art"},
 	{"sewing needle","BKAAJI","Te",1,9,1,"C9CED4","C0392B","thin needle with red thread","splat","Tiny lance, tinier eye.","art"},
@@ -396,11 +403,4 @@ return {
 	{"sherbet powder","IMBDOJ","jLP",2,5,1,"F2E23A","F2A6C8","fizzy sugar powder","puff","Fizzes on the tongue.","edible,candy"},
 	{"sheriff","LECJNA","GeO",5,6,5,"92400E","FACC15","star badge, wide hat, long coat","bang","This arena ain't big enough for both of us.","western"},
 	{"sheriff badge","BMAONI","h",2,5,4,"D4A72C","C9CED4","five-point star badge","swish","This town ain't big enough.","clothing,cowboy"},
-	{"sheriff robot","OKCJNA","Ge",5,5,7,"94A3B8","FACC15","robot with cowboy hat and star badge","clank","This town ain't big enough for two robots.","robot,western"},
-	{"shetland pony","AMCKAA","Dkg",3,5,5,"6A4A2E","2A1A12","tiny shaggy pony","neigh","Small pony. Very stubborn.","mammal"},
-	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
-	{"shiba inu","AMBJAA","DQf",4,7,4,"D98A3A","FFF2E0","fox-like, curled tail, smug face","bark","Much wow. Very shiba.","mammal,pet,meme"},
-	{"shield","BKCIyI","Gk",3,5,7,"8A929B","9E1B32","round shield with central boss","clang","Say no with your arm.","armor,defense"},
-	{"shield tower","ELDIII","GSa",3,1,9,"90A4AE","40C4FF","tower projecting a glowing dome","thud","Protects everything around it.","structure,defense,tower"},
-	{"shield wall","EKDCII","GSIa",3,1,8,"B71C1C","D4AF37","overlapping round shields in a row","thud","Shields up. Way up.","structure,defense,ancient"},
 }

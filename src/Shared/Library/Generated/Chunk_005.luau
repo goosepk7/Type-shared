@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carry","LMCJNA","GFl",5,6,5,"FACC15","111827","player lifting teammates on shoulders","ding","Carrying the whole team. Back hurts.","meme,gaming"},
+	{"cart","DMBKHL","Dkg",2,3,4,"8D6E63","5D4037","wooden box on two big wheels","engine","Not fancy. Gets the job done.","mechanical,vehicle,land,ancient"},
 	{"cartographer","LMCJNA","hY",3,4,3,"78350F","FDE68A","scrolls, compass, quill","swish","Draws the map. Draws you lost.","explorer"},
 	{"cartoon","ALCJBG","UjkY",4,7,5,"FACC15","EF4444","rubbery bouncy character with white gloves and pie-cut eyes","boing","Runs off the cliff. Only falls when it looks down.","silly,art"},
 	{"cartoon box trap","BMCLII","cO",2,1,3,"C69C6D","8B5A2B","box propped on a stick with string","snap","Classic. Works on everyone.","trap,silly"},
@@ -401,6 +403,4 @@ return {
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
 	{"clockmaker","LKCJNI","NO",3,3,4,"CA8A04","78350F","monocle, gears, tweezers","tick","Stops time. Briefly.","tools"},
-	{"clockwork dragon","AKEKAB","GKAg",8,6,8,"B45309","FACC15","brass dragon with exposed gears and steam vents","tick","Wind it up. Watch it fly.","robot,reptile,steampunk"},
-	{"clockwork engine","OKCM1I","Sh",3,4,6,"B58A3A","B8693D","stack of turning brass gears","tick","Tick tick whirr.","steampunk"},
 }

@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sheriff robot","OKCJNA","Ge",5,5,7,"94A3B8","FACC15","robot with cowboy hat and star badge","clank","This town ain't big enough for two robots.","robot,western"},
+	{"shetland pony","AMCKAA","Dkg",3,5,5,"6A4A2E","2A1A12","tiny shaggy pony","neigh","Small pony. Very stubborn.","mammal"},
+	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
+	{"shiba inu","AMBJAA","DQf",4,7,4,"D98A3A","FFF2E0","fox-like, curled tail, smug face","bark","Much wow. Very shiba.","mammal,pet,meme"},
+	{"shield","BKCIyI","Gk",3,5,7,"8A929B","9E1B32","round shield with central boss","clang","Say no with your arm.","armor,defense"},
+	{"shield tower","ELDIII","GSa",3,1,9,"90A4AE","40C4FF","tower projecting a glowing dome","thud","Protects everything around it.","structure,defense,tower"},
+	{"shield wall","EKDCII","GSIa",3,1,8,"B71C1C","D4AF37","overlapping round shields in a row","thud","Shields up. Way up.","structure,defense,ancient"},
 	{"shieldmaiden","LKCJNA","GDf",6,5,7,"94A3B8","DC2626","braided warrior with painted round shield","clang","Shield up. Enemies down.","warrior,norse"},
 	{"shih tzu","AMBJAA","dQf",2,6,2,"F0E6D6","8A6E4A","long silky hair, tiny face peeking out","yip","A mop with a face.","mammal,pet,cute"},
 	{"shiitake","NGBLMI","FSc",2,1,3,"8D6E63","FFF8E1","brown cap mushroom cluster","poof","Mostly a snack. Partly a weapon.","plant,fungus,edible"},
@@ -396,11 +403,4 @@ return {
 	{"softshell turtle","AMBJUA","GNB",2,4,5,"8A8A6A","C8C8A8","flat pancake turtle with snorkel nose","hiss","A pancake with a snorkel.","reptile,armored"},
 	{"soil","FGBCnI","GW",3,2,5,"5C3E25","7E9C4A","mound of dark earth with sprouts","rustle","Good for gardens. Bad for intruders.","plant"},
 	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
-	{"solar farm","EHEMII","GKSe",3,1,5,"1A237E","FFC107","rows of tilted dark glass panels","thud","Soaks up the sun. Zaps it back.","structure,building"},
-	{"solar flare","HAEBKI","KTeO",8,9,2,"FFB300","FFF9C4","giant looping arc of fire leaping off the sun","roar","The sun throwing a tantrum.","space,fire"},
-	{"solar lion","AADJAA","KDf",7,7,5,"F97316","FDE047","lion with a solar flare mane","roar","Mane hotter than the sun. Literally.","cosmic,fire"},
-	{"solar panel","OHCM1I","FS",2,1,5,"1F2F55","C9CED4","tilted grid of dark glass cells","hum","Sunlight in, power out.","mechanical"},
-	{"solar power","KHCOKJ","DF",3,6,3,"FFC107","FFF8E1","golden panels of light absorbing sunbeams","hum","Charged by sunshine.","holy,support"},
-	{"solar sail","DHDKHJ","Aag",3,7,2,"FFD54F","90CAF9","huge shiny thin sail in space","roar","Surfs sunlight across the stars.","vehicle,space"},
-	{"solar storm","HDEEOJ","KLP",7,6,3,"FF7043","7E57C2","charged particle storm, auroral ripples","crackle","Space weather is the worst weather.","space,electric"},
 }

@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
+	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
+	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
+	{"growth potion","BLAO2I","W",3,5,1,"E67E22","BFE6F2","big bottle labelled EAT ME","bubble","Embiggen yourself.","magic,fantasy"},
+	{"growth ray","CLCBwI","jWe",4,7,3,"E67E22","7D3CB5","ray gun with big flared dish","zap","Embiggening in progress.","scifi,ranged"},
+	{"grub","AMAJTD","CWP",1,3,1,"F2E8D0","B8701E","curled white beetle larva","squelch","Lives underground. Waits. Grows.","bug"},
+	{"grump","LMCJNA","IN",3,3,5,"57534E","1E3A8A","crossed arms, frown, raincloud overhead","grunt","Hmph. Get off the map.","silly"},
 	{"grumpy slab","EEDNII","EkO",8,3,9,"8E8A84","3B3633","a scowling spiked stone slab glares down, then slams twice","rumble","It has one move and it is very good at it.","game,platformer,stone"},
 	{"grunt","LEBJNA","Dfh",3,5,3,"65743A","A8A29E","small helmeted trooper with an oversized pack","grunt","Does the work. Gets none of the medals.","military"},
 	{"gryphon chick","AFBJAB","AQf",2,6,2,"D97706","FEF3C7","fluffy beaked cub, tiny wings","chirp","All fluff, no flight skills yet.","mythical,cute"},
@@ -396,11 +403,4 @@ return {
 	{"hong kong milk tea","IBBOKI","F",2,6,2,"A8784A","F2E8D8","strong silky milk tea","slurp","Silk-smooth tea strength.","edible,drink"},
 	{"honk","KMBFOB","kO",2,9,1,"FFEB3B","FFFFFF","big comic horn sound ring","honk","HONK! Peace was never an option.","silly,meme,loud"},
 	{"honor","KHCOKJ","GD",3,5,5,"FFD54F","1565C0","proud golden aura","horn","A fair fight. A strong fight.","support"},
-	{"hood","BIBOVJ","GZN",2,5,3,"374151","111827","dark pulled-up hood with only two eyes visible","hush","Hood up. Mystery on.","clothing,stealth"},
-	{"hooded seal","ABCJEC","UdfB",3,5,4,"9A9AA0","3A3A3A","inflatable nose balloon","bark","Blows up a red nose balloon.","mammal,aquatic"},
-	{"hoodie","BMCONI","FZ",1,6,2,"8E9196","24262A","zip hoodie with hood up","swish","Hood up. Mode: stealth.","clothing"},
-	{"hoodoo","MEDCII","GS",3,1,9,"D7826A","F4E4BC","tall thin rock spires with cap stones","rumble","Rock towers balanced on nothing.","place,terrain"},
-	{"hoof","BEBAtB","DkO",4,7,6,"3B2F2F","8D6E63","dark horse hoof with a shiny horseshoe","clack","Clip. Clop. Clobber.","body,farm"},
-	{"hook hand","CKBHrI","fH",3,7,4,"C9CED4","5A3A1E","curved hook on a cuff","bang","Handy, minus the hand.","pirate,sharp"},
-	{"hook sword","CKCHrK","fTH",5,7,4,"8A929B","9E1B32","sword with hooked tip","shing","Hook. Pull. Slash.","fantasy,sharp"},
 }

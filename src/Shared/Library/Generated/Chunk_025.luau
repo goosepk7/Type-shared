@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sticky note","BMALJK","dN",1,8,1,"F1C40F","F1C40F","small square sticky paper","tap","Stuck to your forehead.","office,sticky"},
+	{"sticky rice","IMBLGI","SNP",2,3,3,"F7F4EC","E8E0D0","clumpy white rice mound","gloop","Rice that refuses to let go.","edible,sticky"},
+	{"sticky toffee pudding","IMBLGI","SNP",2,3,3,"7A3A1E","C8803A","dark sponge, toffee sauce","gloop","Sticky. Toffee. Pudding. All three.","edible,sticky,sweet"},
+	{"stiletto","CKAHrK","fT",3,10,2,"C9CED4","24262A","needle-thin spike blade","shing","Thin as a whisper, twice as rude.","medieval,sharp"},
+	{"still water","KBCIKI","kaY",6,9,2,"4FA3C7","E6F4FA","calm ring of water that flashes when struck","chime","Go on. Hit me.","anime,sword"},
+	{"stilt house","EMCCII","GS",2,1,5,"A1887F","1E88E5","wooden hut high on tall poles","thud","Floods? Not our problem.","structure,building"},
+	{"stilt walker","LMCJNA","dk",3,4,3,"7C3AED","F472B6","very tall figure on striped stilts","clack","Tallest in the room. Wobbly.","circus,silly"},
+	{"stilts","BMCOzI","D",1,4,3,"8B5A2B","C0392B","tall wooden poles with footrests","pop","Tall. Wobbly. Majestic.","party"},
 	{"sting","KJAAuB","TMO",3,9,1,"F5C518","2B2B2B","sharp yellow-black dart with a red throbbing ring","zing","Tiny jab. Huge fuss.","insect,venomous"},
 	{"stinger","BJAAuB","TMe",3,9,1,"2B2B2B","F5C518","tiny black barbed needle with a yellow base","zing","Small poke. Big regret.","sharp,insect,venomous"},
 	{"stinging nettle","NJBLMI","STM",3,1,3,"558B2F","33691E","hairy toothed leaves","rustle","Brush past it once. Never again.","plant"},
@@ -395,12 +403,4 @@ return {
 	{"tart","IMBAKK","Uke",3,7,2,"D9A04A","D23A5A","fluted crust, glossy fruit top","whoosh","A pie's elegant little sister.","edible"},
 	{"tartar sauce","IMBLGI","kSO",2,3,2,"F7F2DC","7DAE3A","white dip with pickle flecks","squeak","Fish sticks' best friend.","edible,slippery,silly,sauce"},
 	{"tasmanian devil","AMBJAA","Ujf",4,6,2,"1E1A18","F2F2F0","black stocky, white chest band, big jaws","screech","Spins and screams. Mostly screams.","mammal,marsupial"},
-	{"tater tots","IMAELB","eVP",2,7,1,"D49A3A","F2CE7A","little golden cylinders","pitter","Tiny potato barrels. Fire at will.","edible,savory"},
-	{"tattletale","LMBJNA","jh",2,7,2,"FACC15","DC2626","pointing kid shouting","whistle","I'M TELLING. Teacher arrives.","silly,school"},
-	{"tattoo","BLBOPB","jQS",3,5,3,"1F3A5F","E63946","inky dragon drawing peeling off skin and flying","buzz","Says MOM in a heart. Bites anyway.","art,silly"},
-	{"tatzelwurm","AJBJCD","CfM",3,6,3,"57534E","D97706","cat-headed lizard worm","hiss","A cat-faced lizard that hisses at hikers.","cryptid,reptile"},
-	{"taunt","KMBFOB","dc",1,8,1,"FF5252","FFFFFF","tongue-out face ring","neener","Nyah nyah! Come get me.","silly"},
-	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
-	{"tavern","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
-	{"tax","KMCONA","iQb",4,5,3,"374151","22C55E","grey suit with a calculator and a sack labelled YOURS","ding","Takes a third. Then a bit more. Then a form.","silly,job"},
 }

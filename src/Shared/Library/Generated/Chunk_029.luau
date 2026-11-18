@@ -3,6 +3,15 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"xp","KHBOKJ","DWF",3,6,2,"A855F7","FACC15","purple bar filling up and bursting into LEVEL UP!","fanfare","+50 XP. For typing. Nice.","gaming"},
+	{"xylophone","BMCFJI","dF",1,4,3,"E84A5F","C49A6C","rainbow wooden bars on frame","chime","Plink plonk plink.","music"},
+	{"yak","ACDJAA","DkgO",6,4,7,"2E2622","F2EEE6","long shaggy skirt fur, horns","moo","Wears a fur skirt in the mountains.","mammal,heavy,arctic"},
+	{"yakisoba","IMBLGI","HN",2,3,3,"8A4A1E","7DBE3A","stir-fried noodles, sauce","gloop","Fried noodles from the festival stall.","edible,sticky"},
+	{"yakitori","IABHJI","KfT",3,5,4,"C8602B","6B3A1E","grilled skewers of chicken","bonk","Grilled chicken on tiny swords.","edible,silly"},
+	{"yali","AEDJAA","GDf",6,7,6,"78716C","F59E0B","lion body, elephant trunk, horse legs","roar","Guarding temples since forever.","mythical,guardian"},
+	{"yam fries","IMAELB","eVP",2,7,1,"E8762B","F2A65A","orange sticks","pitter","Fries, but orange.","edible"},
+	{"yamata no orochi","ABFJCD","kfMV",9,4,9,"7F1D1D","15803D","eight-headed eight-tailed giant serpent","roar","Eight heads. Eight bad moods.","yokai,reptile,boss,danger"},
+	{"yari","CKCAuK","fT",5,6,4,"8A929B","24262A","straight-bladed spear","shing","Poke with honour.","sharp,ancient"},
 	{"yarn","BMALJI","cN",1,5,1,"D8CBB5","C0392B","fuzzy ball of wool","splat","Tangled up in a cosy mess.","art"},
 	{"yarrow","NGBNMI","dFS",1,1,2,"FFFFFF","F48FB1","flat clusters of tiny flowers","rustle","Old-time wound healer.","plant,flower"},
 	{"yawn","KMBFOB","NO",1,3,1,"B3E5FC","FFFFFF","stretchy sleepy ripple","yawn","Contagious. Look, you just did it.","silly"},
@@ -56,7 +65,6 @@ return {
 	{"zephyr","FFBOOB","DF",2,9,1,"D8F0E8","FFFFFF","gentle green-white air ribbon","chime","A friendly little breeze. Very fast.","air,speed"},
 	{"zeppole","IMAELB","eVP",2,7,1,"E8B860","F7F7F2","sugar-dusted fried balls","pitter","Italian doughnut puffs.","edible,sweet,dessert"},
 	{"zero","KIBG3F","iHX",3,5,3,"1F2937","E5E7EB","big hollow number 0 that things fall through","echo","Zero. Zip. Nada. The whole nothing.","school"},
-	{"zero gravity","FLCNOI","lN",4,3,3,"B5C8FF","F3F6FF","drifting objects, slow starry shimmer","hum","Float like an astronaut.","space,silly"},
 	{"zero hour","KLENKI","JO",8,1,5,"E8C46A","2B3440","golden clock dome where everything halts","tick","Everyone wait right there, please.","time,magic,anime"},
 	{"zeus","LDFJXJ","AkeLO",9,6,9,"F8FAFC","FDE047","white-bearded giant on a cloud throne hurling lightning","thunder","Throws lightning first. Asks questions never.","mythical,storm,greek,boss,danger"},
 	{"zhulong","AAFJCB","KAl",9,3,8,"DC2626","FDE047","red sun-eyed serpent with human face","roar","Opens eyes: day. Closes: night.","mythical,reptile,danger"},

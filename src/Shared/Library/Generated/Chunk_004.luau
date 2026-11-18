@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
+	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
 	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
@@ -401,6 +403,4 @@ return {
 	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
 	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
 	{"carrot patch","NGBLMI","Sc",2,1,3,"7CB342","FF9800","feathery tops above orange roots","rustle","Pull one up. Use it as a sword.","plant,crop,silly"},
-	{"carry","LMCJNA","GFl",5,6,5,"FACC15","111827","player lifting teammates on shoulders","ding","Carrying the whole team. Back hurts.","meme,gaming"},
-	{"cart","DMBKHL","Dkg",2,3,4,"8D6E63","5D4037","wooden box on two big wheels","engine","Not fancy. Gets the job done.","mechanical,vehicle,land,ancient"},
 }

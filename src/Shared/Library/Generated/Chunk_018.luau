@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nothronychus","AMDJBA","DkfT",6,6,7,"8A7A5A","D8C8A8","potbellied scythe-claw dino","roar","Potbelly. Giant claws. Eats salad.","dinosaur,extinct,reptile,predator"},
+	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
+	{"nova","FHDFOI","EkP",6,8,1,"FFFDE7","FF80AB","blinding ring of white light","boom","A mini star explosion. Mini.","space,explosive"},
+	{"nova bomb","FHDGKI","KEk",8,6,1,"FFFDE7","FF80AB","white-pink sphere detonating into a nova ring","boom","A tiny supernova. Pocket edition.","space,explosive"},
+	{"nozzle","JBBBwB","kIe",4,8,3,"EAB308","9CA3AF","brass hose nozzle on full jet blast","squirt","Set to JET. Never set it to jet.","tool,household"},
+	{"npc","LMCJNA","jdQ",3,3,4,"A3A3A3","F5F5F4","blank face, exclamation mark over head","ding","Says the same line forever. Nice weather.","meme,gaming,silly"},
 	{"nuckelavee","AJDJAA","DfMP",7,6,6,"7F1D1D","365314","skinless horse-rider fused as one","roar","The worst horse in Scottish history.","mythical,spooky"},
 	{"nuclear blast","HAFGKI","KEkPO",10,6,2,"FFEB3B","FF5722","blinding flash, towering cartoon mushroom cloud","boom","Big. Bright. Bye.","explosive,danger"},
 	{"nuclear winter","HCFNOI","iJSM",9,2,6,"607D8B","C6FF00","grey frozen wasteland with faint green glow","hush","Cold, dark and glowy. Bad combo.","frozen,toxic,danger"},
@@ -397,10 +403,4 @@ return {
 	{"peccary","AMCJAA","dfM",3,4,4,"4E4642","E8E0D8","bristly pig-like, white collar","bleat","Smells funky. Travels in gangs.","mammal,farm,desert"},
 	{"peck","KMAADB","fTO",2,10,1,"F5B041","FFFFFF","rapid-fire beak jabs like a tiny jackhammer","tok","Peckpeckpeckpeckpeckpeck.","bird,melee"},
 	{"pedal","KABOKB","DkI",3,9,2,"1F2937","F97316","foot flooring a pedal, flames from behind","vroom","Pedal to the metal. Metal to the wall.","vehicle,speed"},
-	{"pedal swan","DBBKHC","DkgB",2,2,3,"FFFFFF","FFB300","big white swan with seats inside","splash","The swan has seen things.","vehicle,aquatic,silly"},
-	{"pee","FBBNGI","dSN",1,3,1,"F7E36B","FBF3B0","small yellow puddle with a wavy shine and a tiny sign","squirt","Should have gone before we left.","silly,gross"},
-	{"peekaboo","KLAOKI","ZO",1,8,1,"F8BBD0","FFFFFF","caster blinking in and out","boo","Peekaboo! I see you.","cute,silly"},
-	{"peel","BGALGI","kNO",2,1,1,"FDE047","A16207","floppy yellow fruit skin lying in wait","whee","The oldest trap in the book.","trap,silly"},
-	{"peeler","BMAHJK","f",1,7,2,"8A929B","E67E22","little swivel blade on handle","clang","Peels potatoes. And armour.","kitchen,household"},
-	{"peepal tree","NHECMI","GWFkS",4,1,9,"8D6E63","43A047","wide tree with heart-shaped leaves","rustle","Sit beneath it. Get very wise.","plant,tree,holy"},
 }

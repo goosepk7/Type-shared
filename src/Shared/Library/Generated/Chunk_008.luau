@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
+	{"doorbell","BMALKI","dc",1,1,3,"B58A3A","F2F2EE","small round push button","ding","Ding dong! Who could it be?","household"},
+	{"doorknob","BKAA3B","UeO",2,7,5,"D4AF37","8A6A14","round brass knob with a keyhole","clink","Opens doors. Closes arguments.","household"},
 	{"doormat","BMBL0I","N",1,1,2,"D2B48C","7A4E2D","bristly mat saying welcome","thud","Welcome. Now trip.","furniture,household"},
 	{"doorstop","BMALKI","O",1,1,4,"8E9196","7A4E2D","rubber wedge","thud","You shall not pass. The door, anyway.","household"},
 	{"doorway","EMCCoI","GNY",3,1,6,"8B5A2B","FDE68A","empty door frame with a WELCOME mat and a low beam","bonk","Mind your head. Too late.","household,building"},
@@ -71,6 +74,7 @@ return {
 	{"dragons teeth","EEDLII","GSN",3,1,9,"BDBDBD","9E9E9E","rows of small concrete pyramids","thud","Not actual dragon teeth. Still bitey.","structure,defense"},
 	{"drain","KICBKI","iF",5,7,1,"7B1FA2","FF5252","red wisps flowing to caster","slurp","Your energy? Delicious.","spooky"},
 	{"drake","AADJAA","KDfe",6,6,6,"C2410C","FDBA74","wingless dragon, low body, ember back spikes","roar","All the dragon, none of the flight lessons.","mythical,reptile,fire"},
+	{"drakebane roar","KADFPI","KDIP",8,7,2,"FFB13B","B3261E","a roaring cone of fire with a dragon's maw","roar","Ate some fire. Returning it.","anime,guild,fire,dragon"},
 	{"drama","KHBOKI","dc",1,5,2,"D32F2F","FFD54F","spotlight and swooning sparkles","gasp","So dramatic. Everyone watches.","silly"},
 	{"draugr","AICJNA","ifN",5,3,6,"475569","67E8F9","armored undead viking, glowing blue eyes","groan","An undead viking guarding treasure. Forever.","undead,norse,spooky"},
 	{"draw","KLBONA","jSh",3,5,2,"111827","FACC15","wobbly stick figure climbing off a page, pencil behind it","scratch","Drew it badly. It came to life badly.","art,silly"},
@@ -399,8 +403,4 @@ return {
 	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
 	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
 	{"everything bagel","IMBAKK","UeP",3,7,2,"C8904A","3A3A3A","bagel covered in seeds","whoosh","Covered in everything. Literally.","edible"},
-	{"everywhere","KLENLJ","jSPY",6,5,3,"A855F7","22D3EE","hundreds of map pins raining down across the whole map","pitter","It is here. And there. And behind you.","magic"},
-	{"evil","KICDOJ","jiPh",6,5,3,"4C1D95","111827","purple-black smoke with red eyes and a curly moustache twirl","cackle","Mwahaha. Sorry. Reflex.","villain,spooky"},
-	{"evil eye","KIBAKB","jO",4,9,1,"4A148C","FF1744","single glowing eye glyph fixing on target","hiss","One look. Instantly regret everything.","spooky"},
-	{"evil laugh","KICFOB","ji",4,6,1,"4A148C","76FF03","dark rings with lightning flicker","mwahaha","Mwahahaha! Ahem.","spooky,silly,meme"},
 }
