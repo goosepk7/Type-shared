@@ -166,8 +166,8 @@ end
 
 -- Hero rigs: the authored loop (Idle / Move) underneath, an authored one-shot (Attack / Hit) on top when the hero has
 -- one, else the procedural one-shot layer; material motion and mood posture as for generated rigs.
-local function heroPose(rig: any, clip: string, t: number, oo: any): { [string]: { number } }
-	local out: { [string]: { number } } = {}
+local function heroPose(rig: any, clip: string, t: number, oo: any, into: any?): { [string]: { number } }
+	local out: { [string]: { number } } = into or {}
 	local spd = Motion.moodSpeed(oo.mood)
 	local clips = rig.clips
 	local looping = Motion.looping[clip] == true
@@ -218,12 +218,20 @@ end
 
 -- rig: blueprint rig; clip: Idle|Move|Attack|Hit|Die|Spawn; t: seconds into the clip.
 -- o: { height = studs, speed = multiplier, mood = string, seed = number }
-function Motion.pose(rig: any, clip: string, t: number, o: any?): { [string]: { number } }
+-- into (optional): a pose table from an earlier call to reuse (the Animator's per-rig buffer): every bone vector in
+-- it is zeroed and refilled, so a bone this pose does not drive reads { 0, 0, 0, 0, 0, 0 } (the identity) instead
+-- of nil, and no tables are allocated once the buffer has seen every bone.
+function Motion.pose(rig: any, clip: string, t: number, o: any?, into: { [string]: { number } }?): { [string]: { number } }
 	local oo = o or {}
-	if rig.clips then
-		return heroPose(rig, clip, t, oo)
+	if into then
+		for _, v in into do
+			v[1], v[2], v[3], v[4], v[5], v[6] = 0, 0, 0, 0, 0, 0
+		end
 	end
-	local out: { [string]: { number } } = {}
+	if rig.clips then
+		return heroPose(rig, clip, t, oo, into)
+	end
+	local out: { [string]: { number } } = into or {}
 	local g = GAIT[rig.gait or "static"] or GAIT.static
 	local h = oo.height or 5
 	local spd = (oo.speed or 1) * Motion.moodSpeed(oo.mood)

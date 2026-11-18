@@ -20,13 +20,20 @@ local active: { any } = {}
 local conn: any = nil
 local frame = 0
 
+-- the Config module is required once (it used to be a pcall(require) with a new closure every frame); its Visual
+-- table is still read every frame, so bands changed at runtime (VFX/SummonLOD) apply at once
+local configMod: any = nil
 local function cfgLod(): (number, number, number)
-	local ok, Config = pcall(function()
-		return require(script.Parent.Parent.Config) :: any
-	end)
-	local v = (ok and Config and Config.Visual) or {}
+	if configMod == nil then
+		local ok, Config = pcall(function()
+			return require(script.Parent.Parent.Config) :: any
+		end)
+		configMod = if ok and Config then Config else false
+	end
+	local v = (configMod and configMod.Visual) or {}
 	return v.SummonAnimLodNear or 120, v.SummonAnimLodFar or 260, v.SummonAnimCull or 600
 end
+local nextPhase = 0
 
 local function blueprintFor(model: any, result: any): any
 	local Instantiate = require(script.Parent.Instantiate) :: any
@@ -70,6 +77,16 @@ local function step(dt: number)
 	local near, far, cull = cfgLod()
 	local cam = workspace.CurrentCamera
 	local camPos = cam and cam.CFrame.Position
+	-- view frustum (padded): a rig off screen is posed at the far-band rate (its pose cannot be seen); the frame
+	-- it comes back on screen it is posed at its own band's rate again
+	local look, right, up, tanX, tanY
+	if cam then
+		local cf = cam.CFrame
+		look, right, up = cf.LookVector, cf.RightVector, cf.UpVector
+		tanY = math.tan(math.rad(cam.FieldOfView) / 2)
+		local vp = cam.ViewportSize
+		tanX = tanY * (if vp.Y > 1 then vp.X / vp.Y else 16 / 9)
+	end
 	for i = #active, 1, -1 do
 		local a = active[i]
 		if a.destroyed or a.model.Parent == nil then
@@ -80,7 +97,18 @@ local function step(dt: number)
 			local root = a.rigs[1] and a.rigs[1].root
 			local d = if camPos and root then (root.Position - camPos).Magnitude else 0
 			local every = if d < near then 1 elseif d < far then 2 elseif d < cull then 6 else 0
-			if every > 0 and frame % every == 0 then
+			if every > 0 and every < 6 and look and root and d > 30 then
+				local rel = root.Position - camPos
+				local pad = (a.height or 5) * 3 + 10
+				local z = rel:Dot(look)
+				local zz = math.max(z, 0)
+				if z < -pad or math.abs(rel:Dot(right)) > zz * tanX + pad or math.abs(rel:Dot(up)) > zz * tanY + pad then
+					every = 6
+				end
+			end
+			-- each animator has its own frame phase: the rigs of a band update spread over its frames instead of
+			-- all on frame % every == 0 (the same rate per rig, without the periodic spike)
+			if every > 0 and (frame + a.phase) % every == 0 then
 				a:_apply(a.acc)
 				a.acc = 0
 			end
@@ -120,7 +148,10 @@ function Animator.new(model: any, result: any?): any
 		destroyed = false,
 		finished = {},
 		seed = (bp and bp.seed or 0) % 97,
+		phase = nextPhase,
+		poseOpts = nil,
 	}, Animator)
+	nextPhase = (nextPhase + 1) % 60
 	table.insert(active, self)
 	ensureLoop()
 	return self
@@ -142,16 +173,35 @@ function Animator._apply(self: any, _dt: number)
 			clip = self.loop
 		end
 	end
-	local CF = CFrame
+	-- per rig: one reused pose buffer and options table (Motion.pose used to build a new table per bone per apply,
+	-- ~200 KB of garbage per frame for 40 bodies), and an unposed bone is written to identity once, not every apply
+	local fromEuler, identity = CFrame.fromEulerAnglesXYZ, CFrame.identity
+	local looping = Motion.looping[clip]
 	for _, r in self.rigs do
-		local t = if Motion.looping[clip] then self.time + r.offset else self.time
-		local pose = Motion.pose(self.rig, clip, t, { height = self.height, speed = 1, mood = self.mood, seed = self.seed + r.offset })
+		local t = if looping then self.time + r.offset else self.time
+		local opts = r.opts
+		if not opts then
+			opts = { height = self.height, speed = 1, mood = self.mood, seed = self.seed + r.offset }
+			r.opts = opts
+			r.pose = {}
+			r.still = {}
+		end
+		opts.height, opts.mood = self.height, self.mood
+		local pose = Motion.pose(self.rig, clip, t, opts, r.pose)
+		local still = r.still
 		for name, m in r.motors do
 			local p = pose[name]
-			if p then
-				m.Transform = CF.new(p[1], p[2], p[3]) * CF.Angles(p[4], p[5], p[6])
-			else
-				m.Transform = CF.identity
+			if p and (p[1] ~= 0 or p[2] ~= 0 or p[3] ~= 0 or p[4] ~= 0 or p[5] ~= 0 or p[6] ~= 0) then
+				-- == CFrame.new(x, y, z) * CFrame.Angles(rx, ry, rz)
+				local cf = fromEuler(p[4], p[5], p[6])
+				if p[1] ~= 0 or p[2] ~= 0 or p[3] ~= 0 then
+					cf += Vector3.new(p[1], p[2], p[3])
+				end
+				m.Transform = cf
+				still[name] = nil
+			elseif not still[name] then
+				m.Transform = identity
+				still[name] = true
 			end
 		end
 	end
