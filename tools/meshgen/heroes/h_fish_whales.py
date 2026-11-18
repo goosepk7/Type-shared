@@ -275,7 +275,7 @@ def walrus():
 
 MAP = [
     ("dolphin", "dolphin, dolphins, spinner dolphin, river dolphin, porpoise, vaquita, dall's porpoise, risso's dolphin, baby dolphin, "
-                "space dolphin, encantado, ichthyosaurus, shonisaurus, temnodontosaurus", NOTFOOD),
+                "space dolphin, encantado", NOTFOOD),
     ("killer whale", "killer whale, orca, orcas, false killer whale, pilot whale", NOTFOOD),
     ("whale", "whale, whales, blue whale, gray whale, grey whale, fin whale, minke whale, sei whale, bryde's whale, bowhead whale, right whale, "
               "baby whale, spirit whale, celestial whale, astro whale, beaked whale, bahamut, bakekujira, !killer whale, !whale shark, !sperm whale, !humpback", NOTFOOD),
