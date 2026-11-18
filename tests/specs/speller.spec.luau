@@ -144,7 +144,7 @@ return function(t)
 		local _, spell, needsAI = Resolver.resolveLocalDetailed("shark qwxzv plorf", 0.6)
 		t.ok(needsAI, "needs AI")
 		t.eq(spell.canonical, "shark")
-		local z = Speller.correct("asdfghjk")
+		local z = Speller.correct("zqxjvkwp") -- ("asdfghjk" is now a keycap barrage alias: keyboard smash meme)
 		t.eq(z.canonical, nil)
 	end)
 
