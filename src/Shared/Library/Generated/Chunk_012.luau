@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ground","FEDNnI","kNO",5,1,9,"8B6B4A","5B8C3A","chunk of grassy dirt heaving up like a rug pulled","rumble","It was under you a second ago.","terrain"},
 	{"ground beetle","AMAJFA","Gf",1,6,4,"1E1E24","6A3AA0","glossy running beetle","click","Fast night hunter.","insect,armored"},
 	{"ground cover","NGBNMI","SNP",1,1,2,"7CB342","B39DDB","low mat of tiny leaves","rustle","Covers the ground. Trips the enemy.","plant"},
 	{"ground slam","FEDFOI","kO",7,6,4,"6D4C41","D7CCC8","cracking ground ring around impact point","boom","Hit the floor. The floor hits back.","heavy"},
@@ -402,5 +403,4 @@ return {
 	{"honey flood","IMDFGI","ScIN",5,3,3,"E8A317","F7C948","slow golden wave","gloop","Sticky gold everywhere.","edible,sticky"},
 	{"honey fungus","NJCLMI","WSMP",3,1,5,"FFB300","6D4C41","golden clusters with stringy black roots","poof","Biggest living thing on Earth. Sneaky.","plant,fungus"},
 	{"honey lemon tea","IABOKI","KF",2,5,2,"E8B04A","F7E86A","steaming mug, lemon, honey","slurp","A sore throat's best friend.","edible,drink,warm"},
-	{"honey mustard","IMBNGI","SNP",2,4,1,"E8B02B","F2D870","golden creamy dip","splat","Sweet and zingy.","edible,sauce"},
 }

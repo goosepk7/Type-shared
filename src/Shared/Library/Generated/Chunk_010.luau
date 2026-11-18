@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flycatcher","AMAJDB","dA",1,7,1,"8A8A6A","F2E8C0","small bird catching bugs mid-air","tweet","Snaps bugs out of the air.","bird,cute"},
 	{"flying carpet","DLCKHB","DAgY",4,8,3,"7B1FA2","FFC107","tasselled rug rippling in the air","whoosh","A whole new world of bonking.","vehicle,magic,mythical"},
 	{"flying dragon lizard","AMBJAB","CAf",2,7,2,"8A7A5A","E8701E","lizard with rib wings","hiss","A lizard that flies. On ribs.","reptile"},
 	{"flying fish","ABAJEB","dAB",1,6,1,"4A6EA8","C8D8EC","long wing fins, gliding over waves","splash","A fish that said no to water.","fish,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"giant centipede","AJBJTA","CfMP",3,3,1,"8A1E14","F2C82A","huge red centipede","squelch","Eats bats. Out of the air.","bug"},
 	{"giant cheese wheel","IMEJIF","DkcI",7,2,7,"F2C24A","C89A3A","building-sized cheese drum","thud","The mice will be talking about this.","edible,giant,silly"},
 	{"giant chocolate bar","IMECII","Gdc",7,2,7,"5A2E16","C8A070","chocolate bar the size of a wall","thud","A wall of chocolate. Distracting.","edible,giant,silly"},
-	{"giant clam","ABCJGI","GHNO",3,1,8,"3AA0A8","8A5AC8","huge wavy shell, glowing blue lips","squelch","Big lips. Bigger clamp.","mollusk,aquatic"},
 }

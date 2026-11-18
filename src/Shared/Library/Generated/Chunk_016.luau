@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magic word","KLBAKB","jF",3,7,1,"7C4DFF","FFD54F","glowing floating letters","ding","You said please. Here's a spell.","magic,cute"},
+	{"magical girl","LHCJNB","AFe",5,7,4,"F472B6","FDE68A","frilly outfit, star wand, glowing transformation","chime","Transforms with a 30-second sparkle sequence.","magic,hero"},
 	{"magician performer","LLCJNA","jdhY",4,6,3,"111827","DC2626","top hat, cape, rabbit, wand","ding","Pulls a rabbit. Then a tiger.","circus,magic"},
 	{"magician's assistant","LMCJNA","dY",3,6,3,"111827","F472B6","sparkly outfit, box being sawed","ding","Gets sawed in half. Fine afterward.","circus,silly"},
 	{"magician's wand","BLAAzI","jh",2,6,2,"24262A","F2F2EE","black wand with white tips","pop","Abracadabra! Rabbit!","party,magic"},
@@ -401,6 +403,4 @@ return {
 	{"mixed nuts","IEAELB","ePO",2,7,1,"A86A3A","E8C88A","pile of assorted nuts","pitter","An entire nut family reunion.","edible,nut"},
 	{"mixer","BMBHJK","jf",1,6,3,"C0392B","C9CED4","bowl and whirling beaters","whirr","Whips up chaos.","kitchen,household"},
 	{"mixture","FLBG2B","jEFM",4,5,1,"8B5CF6","84CC16","bowl of swirling purple-green gloop with a spoon standing up","gloop","Every drink at the fountain. In one cup.","silly,magic"},
-	{"moa","AMEJDA","Dkf",6,8,5,"6A4A2E","C8A87A","giant flightless bird, very tall","boom","Twelve feet of bird. Extinct.","bird,flightless,extinct"},
-	{"moai","EMECII","GdkS",6,1,10,"6D6D6D","8D6E63","giant long-faced stone head and torso","rumble","Stares. Judges. Squashes.","structure,landmark,ancient"},
 }

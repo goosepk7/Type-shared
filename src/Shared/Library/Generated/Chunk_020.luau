@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"police officer","LMCJNA","GQO",5,6,6,"1E3A8A","FACC15","blue uniform, cap, badge, whistle","siren","Stop right there. Please and thank you.","rescue"},
+	{"police robot","OKCJNA","GeO",5,4,8,"1E3A8A","94A3B8","armored robot officer with visor","clank","Dead or alive... you're coming with me.","robot"},
+	{"police station","EMDCII","GSOh",3,1,8,"1565C0","F5F5F5","brick building with blue lamps","siren","Calling all units!","structure,building"},
+	{"police van","DKDKHL","DkgOh",5,6,9,"1B2A49","F5F5F5","armoured black van with roof lights","siren","Backup has arrived. Lots of it.","mechanical,vehicle,land"},
+	{"polish","KKAOKI","a",1,4,3,"ECEFF1","FFFFFF","sparkly gleam on armour","squeak","So shiny. Hits slide off.","shiny"},
 	{"politician","LMCJNA","jdc",3,4,4,"1E3A8A","DC2626","suit, sash, giant scissors","ding","Makes many promises. Keeps none.","silly"},
 	{"pollen","NGBDOI","jSPO",2,4,1,"FFEB3B","FFF59D","drifting golden dust cloud","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly"},
 	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
@@ -186,6 +191,7 @@ return {
 	{"przewalski's horse","AMDKAA","Dkg",5,8,5,"C8A06A","3A2A1E","stocky wild horse, mohawk mane","neigh","The last truly wild horse. Mohawk.","mammal"},
 	{"pseudoscorpion","AJAJQA","fN",1,6,2,"8A4A2A","C8A07A","tiny scorpion without tail","skitter","A scorpion that forgot its tail.","arachnid,spooky,venomous"},
 	{"psittacosaurus","AMCJAA","dk",3,5,6,"8A7A5A","D8C08A","parrot beak, tail bristles","honk","A parrot-faced dino. Rawr-squawk.","dinosaur,extinct,reptile"},
+	{"psyche overflow","KLENKJ","Ekl",8,4,5,"E6D8FF","7A4CFF","rocks lift around you, then everything blows outward","boom","Feelings: 100%. Ground: 0%.","anime,psychic,explosion"},
 	{"psychic scream","FLDFOB","jPO",7,9,1,"E040FB","F8BBD0","pink jagged brainwave ring","eeee","Screaming, but inside everyone's head.","psychic,loud"},
 	{"pteranodon","AMDJDB","DAlT",6,8,4,"8A7A6A","E8701E","long backswept crest, huge wings","screech","Swoops. Scoops. Fish lunch.","pterosaur,extinct,reptile"},
 	{"pterodactyl","AMDJDB","DAT",6,8,4,"7A6A5A","D8B88A","leathery wings, long crest, beak","screech","Not a dinosaur. Just very cool.","pterosaur,extinct,reptile"},
@@ -397,10 +403,4 @@ return {
 	{"rash","KJBDOJ","MNP",2,4,1,"F87171","FCA5A5","spreading red dots with frantic scratching hands","scratch","Do not scratch. You are scratching.","body,gross"},
 	{"raspberry","IGAELB","jeP",2,7,1,"E30B5C","8A0F3A","bumpy red cap, hollow center","pitter","Blows a rude noise when it hits.","edible,fruit,sweet"},
 	{"raspberry cane","NGBNMI","WFScT",2,1,3,"2E7D32","C2185B","prickly canes with red berries","rustle","Pick carefully. Ouch.","plant,crop"},
-	{"rat","AMAJAA","CdMPb",1,6,1,"7A7470","E8B0B0","pointy snout, bald tail","squeak","Clever, quick and always hungry.","mammal,cute"},
-	{"rat catcher","LMCJNA","cH",3,5,4,"57534E","A16207","cage, terrier, long pole","squeak","Catches rats. Sometimes enemies.","historical,silly"},
-	{"rat king","AJCJLA","MPh",5,5,4,"57534E","CA8A04","tangled swarm of rats wearing a crown","squeak","Many rats. One crown. Total chaos.","swarm,royal,spooky"},
-	{"rat snake","AMCJCD","fHO",4,4,6,"3A3A2A","8A8A6A","long dark climbing snake","hiss","Climbs walls. Eats rats.","reptile"},
-	{"ratatoskr","AGAJAG","jdQ",1,10,1,"C2410C","FDBA74","squirrel with message scrolls","chitter","Spreads gossip up and down the world tree.","mythical,silly,cute,norse"},
-	{"ratatouille","IGBOKI","F",2,5,3,"C8302B","5B2A5E","layered spiral of sliced veg","crunch","A rat made this famous.","edible,healthy,vegetable"},
 }

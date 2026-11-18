@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"honey mustard","IMBNGI","SNP",2,4,1,"E8B02B","F2D870","golden creamy dip","splat","Sweet and zingy.","edible,sauce"},
 	{"honey possum","AMAJAA","Uf",1,6,2,"8A6A4A","C8A07A","tiny striped nectar-eater","chirp","Long tongue. Lives on flowers.","mammal,marsupial"},
 	{"honey roasted peanuts","IMAELB","eVP",2,7,1,"C9A06A","E8A317","golden glazed nuts","pitter","Sweet, salty, sticky.","edible,sweet"},
 	{"honey trap","OGCL1I","cNO",2,1,3,"D4A72C","7A4E2D","puddle of sticky golden goo","clank","Sweet. Sticky. Stuck.","trap,sticky"},
@@ -402,5 +403,4 @@ return {
 	{"jaw","BMCLGG","fHO",5,4,6,"EFE6CF","BDB199","snapping lower jaw and upper teeth, no face","chomp","It talks with its mouth full. Of you.","body,sharp"},
 	{"jawbreaker","IEBAKK","keO",5,7,10,"E8434F","4FA3E8","hard layered rainbow sphere","bonk","Hard enough to break jaws. Or walls.","edible,candy"},
 	{"jawfish","ABAJEC","CdB",1,6,1,"F2D82A","E8F0F4","fish poking out of burrow","splash","Pops up from its sand burrow.","fish,aquatic"},
-	{"jay","AMAJDB","dA",1,7,1,"C8A08A","3A6AD8","pinkish bird with blue wing patch","tweet","Plants thousands of acorns.","bird,cute"},
 }

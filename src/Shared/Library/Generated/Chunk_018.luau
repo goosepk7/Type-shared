@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
+	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
 	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
 	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
 	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},
@@ -30,6 +32,7 @@ return {
 	{"nuclear winter","HCFNOI","iJSM",9,2,6,"607D8B","C6FF00","grey frozen wasteland with faint green glow","hush","Cold, dark and glowy. Bad combo.","frozen,toxic,danger"},
 	{"nugget","IMAELG","UFcP",2,5,2,"D9952B","F6D48A","golden crispy lumps raining with a dip tub","crunch","A ten piece. For ten problems.","edible,meme"},
 	{"nuke","CAFGKF","KEkSP",10,2,3,"6B7B3A","F1C40F","huge finned bomb, hazard stripes","boom","Big flash. Bigger mushroom.","explosive,danger"},
+	{"null hand","KICAVI","HeY",6,10,2,"1A1C26","9FE8FF","a spectral hand swipes and the space between you is gone","zap","Space? Never heard of it.","anime,stand,hand"},
 	{"numbat","AMBJAA","Uf",2,6,2,"B85A2E","F2F2EE","striped back, bushy tail","chirp","Eats termites. Wears stripes.","mammal,marsupial"},
 	{"number","KLBELG","UjV",3,5,3,"22D3EE","FACC15","bouncing chunky digits 0 to 9 with a floating +1","ding","Pick a number. Wrong. It was seven.","school"},
 	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
@@ -163,6 +166,7 @@ return {
 	{"orchid bee","AJAJLB","AcTP",2,7,1,"2AC86A","3AE0A0","metallic emerald bee","buzz","A flying emerald.","insect,swarm,venomous"},
 	{"orchid mantis","AMAJFB","dAZcfP",1,6,1,"F2C8E0","F7F2F0","pink flower-shaped mantis","buzz","Looks like a flower. Is not.","insect"},
 	{"order","KHCNOI","GO",4,3,5,"E3F2FD","FFD54F","neat golden grid lines over the area","chime","Everyone, in a straight line. Now.","holy"},
+	{"ordinary flurry","KFDN6I","kfIP",7,9,3,"FFF4DC","FFB13B","a wall of fists blasts forward and the air shatters","punch","Just normal punches. A lot of them.","anime,punch,hero"},
 	{"ore","BEBL4I","GcO",3,1,7,"6B7280","FACC15","grey boulder with glittering gold veins","clink","Mine it. Smelt it. Regret the inventory space.","gaming,heavy"},
 	{"oregano","IGBOMI","WF",2,4,3,"5E7A3A","8AA86A","small dried leaves","crunch","Smells like pizza.","edible,vegetable,healthy,herb"},
 	{"organ","BMEFII","PO",5,1,7,"5A3A1E","D4A72C","wall of giant golden pipes","organ","DUN DUN DUNNNN.","music,spooky,loud"},
@@ -399,8 +403,4 @@ return {
 	{"peanut","IEAAKK","UeO",2,8,5,"C9A06A","8A5A2A","ridged two-lump shell","tok","Not a nut. Don't tell it.","edible,nut"},
 	{"peanut brittle","IMAAKK","TeV",3,7,6,"C68E3A","D9A04A","shattered amber slab with peanuts","bonk","Sharp, sweet shards.","edible"},
 	{"peanut butter","IMBLGI","SNO",2,3,3,"B5823A","D9A85A","thick tan swirl in a jar","gloop","Glues your mouth shut. Also enemies.","edible,sticky"},
-	{"peanut butter and jelly","IMBLGI","FSN",2,3,3,"E8C88A","8E2B5E","sandwich with purple and tan layers","gloop","The lunchbox legend.","edible,sticky"},
-	{"peanut butter cups","IMBLKI","dSc",2,3,3,"5A2E16","B5823A","fluted chocolate cup, tan center","chomp","Chocolate and peanut butter, together forever.","edible,sweet,candy"},
-	{"peanut sauce","IMBLGI","SNP",2,3,3,"B5823A","D9A85A","thick tan sauce","gloop","Nutty and sticky.","edible,sticky,sauce"},
-	{"peanut worm","ABAJTD","CP",1,3,1,"E8C0A0","C88A6A","peanut-shaped worm","squelch","Looks like a peanut. Is a worm.","bug,silly"},
 }

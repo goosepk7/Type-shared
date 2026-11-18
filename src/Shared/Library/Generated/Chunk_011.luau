@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant clam","ABCJGI","GHNO",3,1,8,"3AA0A8","8A5AC8","huge wavy shell, glowing blue lips","squelch","Big lips. Bigger clamp.","mollusk,aquatic"},
 	{"giant cookie","IMEJIF","DkcI",7,2,7,"C8904A","4A2516","huge cookie like a wheel","thud","Rolls like a wheel. Lures like a cookie.","edible,giant,silly"},
 	{"giant crab monster","ABFJFA","Gkf",8,3,10,"B91C1C","FDBA74","towering crab with skyscraper claws","click","Pinches buildings. Walks sideways into history.","kaiju,aquatic"},
 	{"giant cupcake","IMEJIF","Gdc",7,2,7,"F2A6C8","D9A04A","house-sized frosted cupcake","thud","A cupcake with a zip code.","edible,giant,silly"},
@@ -402,5 +403,4 @@ return {
 	{"grootslang","AEFJCD","GfH",8,3,9,"1C1917","E7E5E4","elephant-headed serpent in a diamond cave","rumble","Elephant front, snake back, diamonds everywhere.","cryptid,giant"},
 	{"grosbeak","AMAJDB","dA",1,7,1,"E8301E","1E1E1E","big-beaked songbird","tweet","Beak like a nutcracker.","bird,cute"},
 	{"grotesque","AEBLNI","GdO",3,2,8,"78716C","D6D3D1","squat stone face on a ledge","crack","Makes faces at you. Literally made of faces.","guardian,silly"},
-	{"ground","FEDNnI","kNO",5,1,9,"8B6B4A","5B8C3A","chunk of grassy dirt heaving up like a rug pulled","rumble","It was under you a second ago.","terrain"},
 }

@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sack","BMBL2I","O",1,1,2,"D2B48C","7A4E2D","tied burlap sack","thud","Into the sack you go.","container"},
+	{"sacred ground","FHDNOI","GFS",4,2,5,"FFF8E1","FFE082","golden circle of protective light","chime","Good guys only, please.","holy,defence"},
+	{"sacred grove","MGENII","FS",4,1,8,"43A047","FFD54F","ring of ancient trees around a stone","echo","Peaceful. Powerful. Protected.","place,adventure,holy"},
+	{"sacred ibis","AMCJDA","AfT",3,5,2,"F2F2F2","1E1E1E","white ibis, black head","squawk","Ancient Egypt's favorite bird.","bird,wetland,ancient"},
+	{"sacrifice","KHDGKI","EF",7,5,1,"FFD54F","D32F2F","caster glowing white then bursting","boom","Took one for the team. Big time.","holy"},
+	{"saddle","BMCOJI","g",1,4,4,"6B4226","D2B48C","leather seat with stirrups","clink","Climb on. Ride out.","equipment"},
 	{"sadness","KBCDOJ","iN",3,3,2,"5C6BC0","B3E5FC","small blue rain cloud over target","sniff","Everyone needs a hug now.","silly"},
 	{"safe","BKCGKI","GkO",7,1,10,"4A4D52","B58A3A","heavy steel box with dial","thud","Falls from the sky. Very cartoon.","heavy,cartoon"},
 	{"safety","KHCIyI","GFS",2,2,8,"F97316","FDE047","orange cone, hard hat and hi-vis bubble dome","beep","Safety first. Fun a distant fourth.","defense,support"},
@@ -397,10 +403,4 @@ return {
 	{"shapeshift alien","ALCJGA","jZY",5,6,4,"84CC16","A855F7","alien blob mid-shift into you","squelch","Looks like you. Slimier.","alien,slime"},
 	{"shapeshifter","ALCJGA","jZY",5,7,4,"A855F7","22D3EE","half-formed blob mid-transformation","squelch","Could be anything. Currently: confused.","magic"},
 	{"shar pei","AMCJAA","DQf",4,7,4,"D8A06A","F2D8B0","extremely wrinkly face and body","bark","Wears way too much skin.","mammal,pet,silly"},
-	{"share","KHBOKB","F",1,6,2,"FF80AB","FFD54F","glowing gift passing to an ally","chime","Sharing is caring. And healing.","support,cute"},
-	{"shark","ABDJEC","DfTB",7,8,6,"6E7E8E","F2F4F6","torpedo body, tall dorsal fin, toothy grin","chomp","Has 300 teeth and zero chill.","fish,aquatic,ocean,predator"},
-	{"shark car","DBCKHL","DkfgB",5,7,5,"607D8B","F5F5F5","car with a shark fin and teeth","engine","Chomps on the way past.","vehicle,silly"},
-	{"shark rider","LBDKNC","fgB",6,8,5,"64748B","0EA5E9","rider in a wetsuit on a shark","chomp","Saddled a shark. Bold.","mount,aquatic,silly"},
-	{"sharkataur","ABDJEC","DfB",6,7,6,"64748B","F8FAFC","shark lower body, warrior upper body","chomp","Half shark. Half warrior. Full bite.","aquatic,silly"},
-	{"sharknado","HBEN5K","SfHP",8,4,6,"5B7A90","DCE8F0","a churning water tornado packed with circling, biting sharks","roar","The forecast calls for teeth.","cartoon,disaster,silly"},
 }

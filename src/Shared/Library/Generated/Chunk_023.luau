@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"share","KHBOKB","F",1,6,2,"FF80AB","FFD54F","glowing gift passing to an ally","chime","Sharing is caring. And healing.","support,cute"},
+	{"shark","ABDJEC","DfTB",7,8,6,"6E7E8E","F2F4F6","torpedo body, tall dorsal fin, toothy grin","chomp","Has 300 teeth and zero chill.","fish,aquatic,ocean,predator"},
+	{"shark car","DBCKHL","DkfgB",5,7,5,"607D8B","F5F5F5","car with a shark fin and teeth","engine","Chomps on the way past.","vehicle,silly"},
+	{"shark rider","LBDKNC","fgB",6,8,5,"64748B","0EA5E9","rider in a wetsuit on a shark","chomp","Saddled a shark. Bold.","mount,aquatic,silly"},
+	{"sharkataur","ABDJEC","DfB",6,7,6,"64748B","F8FAFC","shark lower body, warrior upper body","chomp","Half shark. Half warrior. Full bite.","aquatic,silly"},
+	{"sharknado","HBEN5K","SfHP",8,4,6,"5B7A90","DCE8F0","a churning water tornado packed with circling, biting sharks","roar","The forecast calls for teeth.","cartoon,disaster,silly"},
 	{"shatter","KCCA4B","TVO",6,8,1,"B3E5FC","FFFFFF","target cracking like glass into shards","crash","Crack. Tinkle. Gone.","sharp"},
 	{"shave","KKBHJB","fXN",3,7,1,"F8FAFC","60A5FA","razor swooping through a face-full of white foam","swish","A close shave. Literally.","household"},
 	{"shears","JKBHJK","fV",3,6,4,"8A929B","2E8B57","long two-blade clippers","clank","Snips hedges into dinosaurs.","tool"},
@@ -397,10 +403,4 @@ return {
 	{"snowy owl","ACBJDB","AZT",3,7,2,"F7F7F4","2A2A2A","white owl with black flecks, yellow eyes","hoot","A fluffy snowball with eyes.","bird,nocturnal,predator,arctic"},
 	{"snowy peak","MCFCII","GJS",5,1,9,"FFFFFF","90A4AE","jagged mountain top under deep snow","rumble","Cold. Steep. Avalanche-ready.","place,terrain,frozen"},
 	{"soap","BBALKI","jNO",1,6,1,"C3A6E8","F2F2EE","slippery pastel soap bar","splash","Slippy! Slippy! Splat.","bathroom,silly"},
-	{"soapbox car","DMBKHL","Dkg",2,6,2,"D9A441","C0392B","wooden crate on pram wheels","engine","Brakes? Never heard of them.","mechanical,vehicle,land,silly"},
-	{"soar","KFCOKB","DA",3,8,2,"81D4FA","FFFFFF","high swooping flight path","whoosh","To the clouds and beyond.","air"},
-	{"soba","IMBLGI","HN",2,3,3,"8A6A4A","C8A070","thin brown noodles on bamboo tray","gloop","Thin buckwheat noodles, cool and slurpy.","edible,sticky"},
-	{"soccer","KMCA3B","UDke",5,8,3,"FFFFFF","111827","black-and-white ball curling into a top corner, net bulging","crowd","GOOOOOOOOOOOOAL!","sport"},
-	{"soccer ball","BMBG3F","Uke",2,8,4,"F2F2EE","24262A","black and white patched ball","bonk","GOOOOOAL.","sport"},
-	{"soccer field","MMENII","kS",2,1,6,"43A047","F5F5F5","striped grass, goals and white lines","crowd","Goal! Enemies sent flying into the net.","place,sport"},
 }

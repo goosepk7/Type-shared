@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lava wave","FAEF6F","KkNP",8,4,6,"FF3D00","FFB300","towering wall of molten rock","roar","Do not surf this one.","fire,heavy"},
 	{"lava worm","AADJCH","KCH",6,5,6,"7F1D1D","F97316","glowing segmented worm from lava","sizzle","Swims in lava. Pops out in your face.","fire"},
 	{"lavender","NGBNMI","FSN",2,1,3,"9575CD","7CB342","spiky purple flower stalks","rustle","Calms you down. And them. Zzz.","plant,flower"},
 	{"lavender field","NGENMI","FSN",2,1,4,"9575CD","7CB342","purple rows rolling into distance","rustle","Everyone gets very, very relaxed.","plant,crop"},
@@ -235,6 +236,7 @@ return {
 	{"living statue","AEDJNA","GkO",6,2,9,"D6D3D1","78716C","marble warrior statue with cracks","crack","Don't blink. It moves.","construct,guardian"},
 	{"living stones","NEALMI","GZS",1,1,6,"BCAAA4","E6C27A","pair of plump pebble-like leaves","thud","Is it a rock? Is it a plant? Yes.","plant,desert,silly"},
 	{"living sword","AKBJJB","AfT",4,8,4,"94A3B8","7C3AED","floating blade with glowing eye","clang","A sword with a mind of its own.","construct,sharp"},
+	{"living ward","NGCIMI","Gah",6,8,3,"FFD86B","7DD957","a golden ward that turns shots into frogs and butterflies","chime","That fireball is a frog now. Be nice to it.","anime,stand,life"},
 	{"livyatan","ABEJEC","kfTIB",8,3,9,"3A3E46","9AA0A8","sperm whale with huge teeth","whalesong","A whale that hunted whales.","mammal,aquatic,ocean,heavy,extinct,ancient"},
 	{"lizard","AMBJAA","CfV",2,7,2,"6AA04A","E8E07A","four legs, long tail, scaly body","hiss","Drops its tail and runs. Smart.","reptile"},
 	{"lizard man of the swamp","ABCJNA","DfB",5,7,5,"365314","DC2626","green scaled swamp humanoid, red eyes","hiss","Chases cars. Never catches one.","cryptid,reptile"},
@@ -401,6 +403,4 @@ return {
 	{"magic shop","ELCNII","dScY",3,1,5,"4A148C","FFD54F","crooked shop with glowing windows","ding","No refunds on cursed items.","structure,building,shop,magic"},
 	{"magic slippers","BLBONI","Y",3,6,2,"B0103A","C9CED4","sparkly jewelled shoes","swish","Click three times. Go somewhere.","clothing,magic"},
 	{"magic trick","KLBOKI","db",2,7,1,"212121","D32F2F","card fan and puff of smoke","tada","Pick a card. Any card. Too late.","magic,silly"},
-	{"magic word","KLBAKB","jF",3,7,1,"7C4DFF","FFD54F","glowing floating letters","ding","You said please. Here's a spell.","magic,cute"},
-	{"magical girl","LHCJNB","AFe",5,7,4,"F472B6","FDE68A","frilly outfit, star wand, glowing transformation","chime","Transforms with a 30-second sparkle sequence.","magic,hero"},
 }

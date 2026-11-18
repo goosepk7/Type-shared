@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"world ender","HLFNOI","KEkPO",10,2,9,"1A0033","FF3D00","sky splitting, ground cracking, everything glowing","boom","Use responsibly. Or don't.","explosive,danger"},
+	{"world turtle","AEFJAA","GkN",9,1,10,"365314","1E3A8A","colossal turtle with a forest on its shell","rumble","Carries the world. Slowly.","mythical,giant,ancient,danger"},
+	{"worm dance","KMBOKD","Dd",1,6,1,"7CB342","FFFFFF","wave-like floor wiggle","music","Floor flop with style.","music,dance,silly"},
+	{"wormhole","HLEN5K","jHY",5,6,6,"4527A0","80DEEA","swirling tunnel ring of stars and light","warp","Shortcut through space. Mind your head.","space"},
+	{"worry","KIBDOJ","jiQN",3,5,1,"6B7280","A78BFA","grey scribble cloud over a head, biting fingernails","squeak","Did I leave the oven on? I do not have an oven.","mood"},
+	{"wound","KMBOKI","iSN",2,3,1,"E57373","FFE0B2","cartoon scrape with a crossed bandage on it","squeak","Needs a kiss better. And a plaster.","body,silly"},
+	{"wow","KHBF6B","dIO",3,7,1,"F59E0B","FFFFFF","starburst with WOW in comic letters and wide eyes","pop","Wow. Much summon. Very attack.","meme,silly"},
+	{"wraith","AICJNJ","iAZN",5,7,3,"1E1B4B","818CF8","hooded tattered shadow, glowing eyes","wail","A ghost in its edgy phase.","undead,spooky,ghost"},
 	{"wrap","IGBOKI","F",2,5,3,"F2E2B8","7DBE3A","rolled tortilla, filling peek","crunch","A sandwich in a sleeping bag.","edible,healthy"},
 	{"wrath","KADOKJ","KDk",7,6,4,"B71C1C","FF6F00","flaring red aura, cracked glowing ground","roar","You have angered the wizard.","rage"},
 	{"wrath of god","KHFNOI","KkPO",9,5,5,"FFD54F","FF6D00","golden beams and fire raining on a wide area","boom","Someone upstairs is upset.","holy,danger"},

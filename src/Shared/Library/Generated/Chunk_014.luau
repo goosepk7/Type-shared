@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jay","AMAJDB","dA",1,7,1,"C8A08A","3A6AD8","pinkish bird with blue wing patch","tweet","Plants thousands of acorns.","bird,cute"},
 	{"jazz","KFCF6J","UjcN",3,5,1,"1E3A8A","D4AF37","smooth gold saxophone notes in a smoky blue swirl","music","It is about the notes you do not play. Skiddly bop.","music,cool"},
 	{"jeans","BMCCBA","GaN",3,2,7,"3B5B8C","1E3A5F","stiff blue jeans standing up on their own, ripped knee","thud","So stiff they stand up alone.","clothing"},
 	{"jelly","IMBLGG","USaN",2,3,3,"E0102B","F35A6A","wobbly dome mold, glossy","wobble","The wobbliest trap on the battlefield.","edible,wobbly,sweet"},
@@ -402,5 +403,4 @@ return {
 	{"lava truck","DADKHL","KDkgP",6,4,8,"3E2723","FF5722","truck hauling a tub of lava","engine","Pours lava. On purpose.","mechanical,vehicle,land"},
 	{"lava tsunami","HAFF6F","KkNP",10,4,7,"DD2C00","FFB300","towering wall of glowing molten rock","roar","The volcano went surfing.","fire,natural,danger"},
 	{"lava wall","FADCnI","GKS",6,2,6,"BF360C","FF9100","rising wall of glowing molten rock","bubble","A wall that bites if you touch it.","fire,defence"},
-	{"lava wave","FAEF6F","KkNP",8,4,6,"FF3D00","FFB300","towering wall of molten rock","roar","Do not surf this one.","fire,heavy"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"moa","AMEJDA","Dkf",6,8,5,"6A4A2E","C8A87A","giant flightless bird, very tall","boom","Twelve feet of bird. Extinct.","bird,flightless,extinct"},
+	{"moai","EMECII","GdkS",6,1,10,"6D6D6D","8D6E63","giant long-faced stone head and torso","rumble","Stares. Judges. Squashes.","structure,landmark,ancient"},
 	{"moat","EBDLII","GSN",3,1,8,"1E88E5","9E9E9E","water channel ringed by stone edges","splash","Swimming lessons were optional. Oops.","structure,defense,ancient"},
 	{"moat tower","EBDMII","GSeN",4,1,9,"9E9E9E","1E88E5","round fort standing in the water","thud","Surrounded by water. Very hard to reach.","structure,defense,tower"},
 	{"mobile","BMBGKK","RN",1,3,1,"87CEEB","F1C40F","dangling stars spinning slowly","squeak","Spinny, sleepy, hypnotic.","baby"},
@@ -401,6 +403,4 @@ return {
 	{"nodosaurus","AMDJAA","Gkf",6,3,10,"6A5A3A","B89A6A","armored body, no club","grunt","All armor, no club. Pure defense.","dinosaur,extinct,reptile,armored"},
 	{"noise","KFCFOB","jO",3,9,1,"BDBDBD","FFFFFF","messy jagged sound rings","clang","Ears ringing. Head spinning.","loud"},
 	{"noni","IJBDOJ","jSM",3,3,2,"E8E8C8","A8B86A","bumpy pale fruit","whiff","Smells like old cheese.","edible,smelly,fruit"},
-	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
-	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
 }

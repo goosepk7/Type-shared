@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"volleyball","BMBG3F","Uke",2,7,3,"F2F2EE","2F6FD1","panelled white and blue ball","bonk","Bump, set, SPIKE.","sport"},
+	{"volleyball player","LMCJNG","Uke",4,7,4,"F8FAFC","FACC15","kneepads, spike pose","thud","Spikes the ball. Into your face.","sport"},
+	{"volt","FDBAKB","eL",3,9,1,"FFE81F","4DA3FF","bright yellow electric pip","zap","One unit of ouch.","electric"},
+	{"volt edge","KDBOKI","DfLO",8,10,2,"9FD8FF","FFFFFF","a screeching fist of lightning that charges through","zap","Sounds like a thousand birds. Hurts like more.","anime,ninja,lightning"},
+	{"volume","KFCF6B","jkIO",5,8,1,"EF4444","FACC15","speaker cone blasting bars that go into the red","boom","TURNED UP. WHAT? I SAID TURNED UP.","music,loud"},
+	{"vomit","FJBF6B","SMIN",3,5,1,"B5C24A","E8A33A","chunky green-orange cartoon splash arc with carrot bits","splat","There are always carrots. Nobody ate carrots.","silly,gross"},
+	{"voodoo doll","BIAONI","ji",3,4,2,"D2B48C","9E1B32","stitched burlap doll with pins","chime","Poke. Ouch. Somewhere.","magic,spooky"},
+	{"vortex","FFDN5K","lSH",6,6,4,"6E8FB2","D6E6F5","swirling spiral funnel, inward streaks","howl","Round and round you go.","air"},
 	{"vote","KMBL2I","jOh",3,1,3,"F8FAFC","DC2626","ballot box with paper slips flying in and a big tick","rustle","The votes are in. You came third. Out of one.","silly"},
 	{"vr headset","BDBONI","j",1,5,2,"F2F2EE","24262A","chunky goggle headset","beep","They see another world. Confused.","tech"},
 	{"vroom","KABOKB","D",3,10,2,"FF5252","212121","exhaust smoke and speed streaks","vroom","Vroom vroom! No car needed.","speed,silly"},
@@ -395,12 +403,4 @@ return {
 	{"work","KMCL0I","iSN",3,1,5,"64748B","FDE68A","grey desk buried in paper with a ticking clock at 4:59","tick","Hard work pays off later. Naps pay off now.","job,silly"},
 	{"worker","LECJNA","Gfh",4,4,5,"F97316","FACC15","hi-vis vest, hard hat, lunch box, shovel","clank","Clocked in. On a break. Clocked out.","job"},
 	{"world","MEFG3F","kHOh",9,2,10,"2563EB","22C55E","whole blue-green globe with clouds, rolling like a boulder","rumble","You wanted the world. Here it comes. All of it.","space,place,heavy,danger"},
-	{"world ender","HLFNOI","KEkPO",10,2,9,"1A0033","FF3D00","sky splitting, ground cracking, everything glowing","boom","Use responsibly. Or don't.","explosive,danger"},
-	{"world turtle","AEFJAA","GkN",9,1,10,"365314","1E3A8A","colossal turtle with a forest on its shell","rumble","Carries the world. Slowly.","mythical,giant,ancient,danger"},
-	{"worm dance","KMBOKD","Dd",1,6,1,"7CB342","FFFFFF","wave-like floor wiggle","music","Floor flop with style.","music,dance,silly"},
-	{"wormhole","HLEN5K","jHY",5,6,6,"4527A0","80DEEA","swirling tunnel ring of stars and light","warp","Shortcut through space. Mind your head.","space"},
-	{"worry","KIBDOJ","jiQN",3,5,1,"6B7280","A78BFA","grey scribble cloud over a head, biting fingernails","squeak","Did I leave the oven on? I do not have an oven.","mood"},
-	{"wound","KMBOKI","iSN",2,3,1,"E57373","FFE0B2","cartoon scrape with a crossed bandage on it","squeak","Needs a kiss better. And a plaster.","body,silly"},
-	{"wow","KHBF6B","dIO",3,7,1,"F59E0B","FFFFFF","starburst with WOW in comic letters and wide eyes","pop","Wow. Much summon. Very attack.","meme,silly"},
-	{"wraith","AICJNJ","iAZN",5,7,3,"1E1B4B","818CF8","hooded tattered shadow, glowing eyes","wail","A ghost in its edgy phase.","undead,spooky,ghost"},
 }

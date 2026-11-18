@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"peanut butter and jelly","IMBLGI","FSN",2,3,3,"E8C88A","8E2B5E","sandwich with purple and tan layers","gloop","The lunchbox legend.","edible,sticky"},
+	{"peanut butter cups","IMBLKI","dSc",2,3,3,"5A2E16","B5823A","fluted chocolate cup, tan center","chomp","Chocolate and peanut butter, together forever.","edible,sweet,candy"},
+	{"peanut sauce","IMBLGI","SNP",2,3,3,"B5823A","D9A85A","thick tan sauce","gloop","Nutty and sticky.","edible,sticky,sauce"},
+	{"peanut worm","ABAJTD","CP",1,3,1,"E8C0A0","C88A6A","peanut-shaped worm","squelch","Looks like a peanut. Is a worm.","bug,silly"},
 	{"pear","IGBAKF","Fke",3,6,2,"D1E231","A8B83A","bulbous teardrop, stem, leaf","splat","Shaped like a bowling pin. Rolls like one.","edible,fruit,sweet"},
 	{"pear tree","NGDCMI","GFSc",3,1,7,"6D4C41","C0CA33","crown hung with green pears","rustle","A partridge not included.","plant,tree"},
 	{"pearl","BBAAKJ","Uce",2,7,4,"F2EEE6","E88AA5","smooth white glossy sphere","chime","Ocean's shiny marble.","treasure,shiny"},
@@ -80,6 +84,7 @@ return {
 	{"petrify","KECAKB","eNO",6,6,2,"9E9E9E","E0E0E0","grey creeping stone wave over target","crackle","Hold still. Forever.","magic,heavy"},
 	{"petunia","NGBNMI","dFS",2,1,2,"AB47BC","FFFFFF","velvety trumpet blooms","rustle","Hangs in baskets, plotting.","plant,flower"},
 	{"phantom of the stage","AICJNA","jZc",5,6,4,"111827","F8FAFC","cape and half-mask","sing","Haunts theaters. Loves a dramatic chord.","ghost,music"},
+	{"phantom rush","KLCHVJ","kfN",7,9,2,"4FD8C4","F2C75C","a spectral fighter bursts out and unloads a storm of fists","punch","Fists. So many fists.","anime,stand,punch"},
 	{"pharaoh","LHCJNA","GOh",6,3,6,"1E3A8A","CA8A04","striped headdress, crook and flail","horn","Owns several pyramids. Humble about it.","royal,ancient"},
 	{"pharaoh mummy","AIDJNA","ieNh",7,3,7,"CA8A04","1E3A8A","golden death mask, striped headdress, bandages","groan","Woke up from a 3000-year nap. Still tired.","undead,royal,ancient,spooky"},
 	{"pharmacist","LJCJNA","FM",3,4,4,"F8FAFC","22C55E","lab coat, pill bottles","ding","Here's your potion. Twice daily.","healer"},
@@ -398,9 +403,4 @@ return {
 	{"police car","DMCKHL","DdkgO",5,8,6,"1B2A49","F5F5F5","sedan, roof light bar, push bumper","siren","Wee-woo means pull over, villain.","mechanical,vehicle,land,lights"},
 	{"police chief","LMCJNA","GOh",5,4,6,"1E3A8A","FACC15","gold badge, peaked cap","siren","Calls for backup. Backup arrives.","rescue"},
 	{"police helicopter","DFDKHE","AegO",5,7,6,"1565C0","F5F5F5","helicopter with a searchlight","chop","Spotlight on you! Nowhere to hide.","vehicle,air"},
-	{"police officer","LMCJNA","GQO",5,6,6,"1E3A8A","FACC15","blue uniform, cap, badge, whistle","siren","Stop right there. Please and thank you.","rescue"},
-	{"police robot","OKCJNA","GeO",5,4,8,"1E3A8A","94A3B8","armored robot officer with visor","clank","Dead or alive... you're coming with me.","robot"},
-	{"police station","EMDCII","GSOh",3,1,8,"1565C0","F5F5F5","brick building with blue lamps","siren","Calling all units!","structure,building"},
-	{"police van","DKDKHL","DkgOh",5,6,9,"1B2A49","F5F5F5","armoured black van with roof lights","siren","Backup has arrived. Lots of it.","mechanical,vehicle,land"},
-	{"polish","KKAOKI","a",1,4,3,"ECEFF1","FFFFFF","sparkly gleam on armour","squeak","So shiny. Hits slide off.","shiny"},
 }

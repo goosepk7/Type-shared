@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"evaporate","KACAKB","iX",5,6,1,"FFCC80","E1F5FE","target hissing into steam","hiss","Poof. Steam. Gone.","fire"},
 	{"evening","KICNOI","ZSN",3,2,2,"7C3AED","F97316","purple-orange sky with first stars and a porch light","chirp","Streetlights are on. Time to come in.","time"},
 	{"evening primrose","NHBNMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow blooms opening at dusk","rustle","Opens at night. Glows a little.","plant,flower"},
 	{"event horizon","FIFNOI","iHO",9,2,8,"000000","FF6E40","glowing ring around a perfect black circle","hum","The point of no return. Literally.","space,danger"},
@@ -402,5 +403,4 @@ return {
 	{"fly","AMAJFB","dASP",1,6,1,"3A3A3A","C82A2A","big red eyes, see-through wings","buzz","Lands on your food. Rubs its hands.","insect"},
 	{"fly agaric","NJBLMI","jSM",4,1,3,"E53935","FFFFFF","classic red cap with white dots","poof","Fairy-tale pretty. Fairy-tale poisonous.","plant,fungus"},
 	{"fly swatter","JMBHJK","fO",1,9,1,"C0392B","24262A","flat mesh paddle on wire","boing","SWAT.","silly"},
-	{"flycatcher","AMAJDB","dA",1,7,1,"8A8A6A","F2E8C0","small bird catching bugs mid-air","tweet","Snaps bugs out of the air.","bird,cute"},
 }

@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"steel fist","FKCAKB","kfO",6,6,8,"607D8B","CFD8DC","giant metal gauntlet punch","clang","Knock knock. It is iron.","heavy"},
+	{"steel mill","EAENII","KS",5,1,9,"616161","FF6F00","huge sheds with glowing furnaces","clank","Molten metal everywhere. Do not trip.","structure,mechanical"},
+	{"steel spike","FKCLII","GT",6,5,7,"78909C","CFD8DC","shiny metal spikes bursting from floor","clang","Floor teeth, stainless edition.","sharp,heavy"},
+	{"steel wall","EKDCII","GSa",4,1,10,"78909C","455A64","riveted steel plates, bolted seams","clang","Clang. Every arrow goes clang.","heavy,magnetic"},
+	{"steenbok","AMBJAA","Dk",2,8,4,"C8803A","F2F2EE","small red antelope","bleat","Tiny and red. Hides well.","mammal,wild"},
+	{"steering wheel","BKBOKK","j",1,6,3,"24262A","8E9196","round wheel with spokes","clang","Who's driving? Nobody!","urban"},
+	{"stegosaurus","AMDJAA","GkfT",6,3,9,"6A7A4A","D8701E","back plates, spiked tail","grunt","Brain the size of a walnut. Tail of doom.","dinosaur,extinct,reptile,armored"},
 	{"steller's jay","AMAJDB","jdA",1,7,1,"1E2A4A","3A5AA8","dark blue with black crest","tweet","Copies hawk calls. Trickster.","bird,cute"},
 	{"steller's sea cow","ABEJEC","FfB",6,2,4,"6A6A6E","B8B8BC","huge manatee","bark","Giant gentle sea cow. Gone too soon.","mammal,aquatic,extinct"},
 	{"stench","FJBDOJ","jdN",2,3,2,"9CA84A","D8E08A","wavy green stink lines","whiff","Smells like gym socks and regret.","silly,toxic"},
@@ -396,11 +403,4 @@ return {
 	{"tanker truck","DAEKHL","KDEkg",7,4,7,"ECEFF1","E53935","long cylinder tank on a truck","engine","Please drive very, very carefully.","mechanical,vehicle,land,explosive"},
 	{"tanto","CKAHrK","fT",3,9,3,"C9CED4","24262A","tiny curved knife, wrapped grip","shing","Small blade, big focus.","medieval,sharp"},
 	{"tantrum","KACNOI","jk",4,6,2,"D32F2F","FFEB3B","stomping red aura with flying toys","wah","WAAAH! Everyone back off.","rage,silly"},
-	{"tanuki spirit","AGBJAA","Ujd",3,5,4,"78350F","FDE68A","round bellied raccoon dog with straw hat","giggle","Shapeshifter. Mostly into being a teapot.","yokai,silly,cute"},
-	{"taotie","AIDJGA","iH",7,3,7,"7C2D12","CA8A04","huge mouth and horns, no body","chomp","All mouth. Eats everything.","mythical"},
-	{"tap dance","KMBNOI","dO",2,7,2,"212121","FFD54F","clattering spotlight floor","tap","Tappity tap. Everyone's stunned.","music,dance"},
-	{"tap shoes","BMBONI","dO",1,7,2,"24262A","C9CED4","shoes with metal taps","swish","Clickety-clack attack.","clothing"},
-	{"tapas","IMAELB","FeP",2,7,1,"C8302B","E8B860","many small plates","pitter","A dozen little plates of joy.","edible,sweet"},
-	{"tape dispenser","BMALJK","N",1,3,4,"24262A","BFE6F2","weighted tape holder","tap","Rrrrip.","office"},
-	{"tape gun","BMBLwK","NO",1,6,3,"C0392B","C9CED4","pistol grip tape dispenser","tap","Rrrrrip! Wrapped.","office,sticky"},
 }

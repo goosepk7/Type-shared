@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tanuki spirit","AGBJAA","Ujd",3,5,4,"78350F","FDE68A","round bellied raccoon dog with straw hat","giggle","Shapeshifter. Mostly into being a teapot.","yokai,silly,cute"},
+	{"taotie","AIDJGA","iH",7,3,7,"7C2D12","CA8A04","huge mouth and horns, no body","chomp","All mouth. Eats everything.","mythical"},
+	{"tap dance","KMBNOI","dO",2,7,2,"212121","FFD54F","clattering spotlight floor","tap","Tappity tap. Everyone's stunned.","music,dance"},
+	{"tap shoes","BMBONI","dO",1,7,2,"24262A","C9CED4","shoes with metal taps","swish","Clickety-clack attack.","clothing"},
+	{"tapas","IMAELB","FeP",2,7,1,"C8302B","E8B860","many small plates","pitter","A dozen little plates of joy.","edible,sweet"},
+	{"tape dispenser","BMALJK","N",1,3,4,"24262A","BFE6F2","weighted tape holder","tap","Rrrrip.","office"},
+	{"tape gun","BMBLwK","NO",1,6,3,"C0392B","C9CED4","pistol grip tape dispenser","tap","Rrrrrip! Wrapped.","office,sticky"},
 	{"tape measure","JKAAJK","He",1,7,3,"F1C40F","24262A","coil case with metal tape","clank","Shoots out. Snaps back. Ouch.","tool,silly"},
 	{"tapejara","AMCJDB","DdAT",4,8,4,"6A5A3A","E8401E","giant colorful head sail","screech","Wears a giant colorful sail hat.","pterosaur,extinct,reptile"},
 	{"tapeworm","AMAJTD","CiP",1,3,1,"F2EEE0","E8D8B0","long flat ribbon worm","squelch","Rude houseguest.","bug"},
@@ -396,11 +403,4 @@ return {
 	{"toymaker","LMCJNA","dh",3,4,4,"DC2626","15803D","apron, wooden toys, magnifier","tick","Builds toy soldiers. They march.","silly"},
 	{"toyol","AIAJNA","dZb",1,8,1,"65A30D","1F2937","tiny green imp child","giggle","Steals coins. Leaves candy wrappers.","mythical,spooky"},
 	{"track","MEDNnI","DSI",4,8,5,"C2410C","FFFFFF","red oval lanes with white lines and starting blocks","bang","On your marks. Get set. Trip.","sport,place"},
-	{"tracked carrier","DKDKHL","GDkgh",5,5,9,"556B2F","3B3B2F","boxy tracked hull, rear ramp, small turret","engine","Taxi for twelve very angry soldiers.","mechanical,vehicle,land"},
-	{"tracking device","CKAOJI","Q",1,8,1,"24262A","C0392B","tiny blinking chip","bang","Gotcha. Wherever you go.","spy,tech"},
-	{"tractor","DEDKHL","DkIg",5,4,8,"2E7D32","F2C200","big rear wheels, small front, tall exhaust","engine","Plows the field. And your army.","mechanical,vehicle,land"},
-	{"tractor beam","CLDBJI","lHe",4,5,5,"3FC1D9","F2F2EE","wide cone of pulling light","zap","Come here. No, really, come here.","scifi,space"},
-	{"tractor trailer","DMEKHL","DkTg",7,5,9,"1565C0","ECEFF1","cab towing a long boxy trailer","horn","Jackknifes on purpose.","mechanical,vehicle,land"},
-	{"trade","KMBOKB","jFb",3,6,2,"22C55E","F59E0B","two hands swapping a sandwich for a shiny card","ding","My sandwich for your dessert. Final offer.","gaming,school"},
-	{"trading card","BLAAJK","Teh",3,8,1,"FACC15","60A5FA","glinting foil card spinning like a blade","swish","Mint condition. Do NOT bend it.","game,shiny"},
 }

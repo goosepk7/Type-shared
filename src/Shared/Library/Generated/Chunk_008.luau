@@ -9,6 +9,7 @@ return {
 	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
 	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
 	{"doom","KIEGKI","iEO",8,4,4,"1A0033","FF1744","ominous black-red orb descending slowly","boom","You feel a sense of impending doom.","spooky"},
+	{"doom ledger","BICAKI","SeO",8,3,5,"1B1418","C2182B","a name in a black ledger and a countdown over their head","hum","Six seconds. Use them wisely.","anime,curse,book"},
 	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
 	{"doorbell","BMALKI","dc",1,1,3,"B58A3A","F2F2EE","small round push button","ding","Ding dong! Who could it be?","household"},
 	{"doorknob","BKAA3B","UeO",2,7,5,"D4AF37","8A6A14","round brass knob with a keyhole","clink","Opens doors. Closes arguments.","household"},
@@ -402,5 +403,4 @@ return {
 	{"europa","MCDGKJ","Je",5,4,7,"F5F5F5","C1A47A","white cracked icy moon","rumble","An ocean hides beneath the ice.","space"},
 	{"europasaurus","AMDJAA","kIO",5,2,9,"8A7A6A","C8C0A8","dwarf island sauropod","rumble","Island-sized mini sauropod.","dinosaur,extinct,reptile,heavy"},
 	{"eurypterid","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant aquatic scorpion","skitter","A scorpion the size of a person.","arachnid,spooky,venomous,extinct,ancient"},
-	{"evaporate","KACAKB","iX",5,6,1,"FFCC80","E1F5FE","target hissing into steam","hiss","Poof. Steam. Gone.","fire"},
 }

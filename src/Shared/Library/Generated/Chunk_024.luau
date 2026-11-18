@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"soapbox car","DMBKHL","Dkg",2,6,2,"D9A441","C0392B","wooden crate on pram wheels","engine","Brakes? Never heard of them.","mechanical,vehicle,land,silly"},
+	{"soar","KFCOKB","DA",3,8,2,"81D4FA","FFFFFF","high swooping flight path","whoosh","To the clouds and beyond.","air"},
+	{"soba","IMBLGI","HN",2,3,3,"8A6A4A","C8A070","thin brown noodles on bamboo tray","gloop","Thin buckwheat noodles, cool and slurpy.","edible,sticky"},
+	{"soccer","KMCA3B","UDke",5,8,3,"FFFFFF","111827","black-and-white ball curling into a top corner, net bulging","crowd","GOOOOOOOOOOOOAL!","sport"},
+	{"soccer ball","BMBG3F","Uke",2,8,4,"F2F2EE","24262A","black and white patched ball","bonk","GOOOOOAL.","sport"},
+	{"soccer field","MMENII","kS",2,1,6,"43A047","F5F5F5","striped grass, goals and white lines","crowd","Goal! Enemies sent flying into the net.","place,sport"},
 	{"soccer goal","BMDLII","NO",1,1,4,"F2F2EE","F2F2EE","rectangle frame with net","bonk","They shoot. They're stuck.","sport"},
 	{"soccer mom","LMCJNL","DFh",3,6,5,"F472B6","15803D","visor, minivan, orange slices","honk","Orange slices for everyone.","family,silly"},
 	{"soccer player","LMCJNA","Dke",4,8,4,"15803D","F8FAFC","jersey, shin guards, ball at feet","thud","Kicks the ball. And you. Gooool!","sport"},
@@ -27,6 +33,7 @@ return {
 	{"solar lion","AADJAA","KDf",7,7,5,"F97316","FDE047","lion with a solar flare mane","roar","Mane hotter than the sun. Literally.","cosmic,fire"},
 	{"solar panel","OHCM1I","FS",2,1,5,"1F2F55","C9CED4","tilted grid of dark glass cells","hum","Sunlight in, power out.","mechanical"},
 	{"solar power","KHCOKJ","DF",3,6,3,"FFC107","FFF8E1","golden panels of light absorbing sunbeams","hum","Charged by sunshine.","holy,support"},
+	{"solar ripple","FHCHKI","KDfP",7,10,2,"FFD54A","FF9A1F","one sunlit punch sends golden ripples through them","punch","Breathe in. Shine out.","anime,sun,punch"},
 	{"solar sail","DHDKHJ","Aag",3,7,2,"FFD54F","90CAF9","huge shiny thin sail in space","roar","Surfs sunlight across the stars.","vehicle,space"},
 	{"solar storm","HDEEOJ","KLP",7,6,3,"FF7043","7E57C2","charged particle storm, auroral ripples","crackle","Space weather is the worst weather.","space,electric"},
 	{"solar system","MLFNKK","kSRH",9,2,9,"FFC107","5C6BC0","sun with planets on circling orbits","rumble","Brings the whole family.","space"},
@@ -396,11 +403,4 @@ return {
 	{"steamship","DBEKHC","DkgB",5,5,8,"212121","E53935","big hull with tall smoking funnels","horn","Full steam ahead!","vehicle,aquatic,ancient"},
 	{"steel","FKCCnI","Ga",4,2,9,"7D8790","CBD3DA","riveted steel panel wall","clank","Tough as nails. Made of nails.","heavy"},
 	{"steel bridge","EKECII","GS",3,1,10,"607D8B","C62828","criss-cross steel girders over water","thud","Rivets. So many rivets.","structure"},
-	{"steel fist","FKCAKB","kfO",6,6,8,"607D8B","CFD8DC","giant metal gauntlet punch","clang","Knock knock. It is iron.","heavy"},
-	{"steel mill","EAENII","KS",5,1,9,"616161","FF6F00","huge sheds with glowing furnaces","clank","Molten metal everywhere. Do not trip.","structure,mechanical"},
-	{"steel spike","FKCLII","GT",6,5,7,"78909C","CFD8DC","shiny metal spikes bursting from floor","clang","Floor teeth, stainless edition.","sharp,heavy"},
-	{"steel wall","EKDCII","GSa",4,1,10,"78909C","455A64","riveted steel plates, bolted seams","clang","Clang. Every arrow goes clang.","heavy,magnetic"},
-	{"steenbok","AMBJAA","Dk",2,8,4,"C8803A","F2F2EE","small red antelope","bleat","Tiny and red. Hides well.","mammal,wild"},
-	{"steering wheel","BKBOKK","j",1,6,3,"24262A","8E9196","round wheel with spokes","clang","Who's driving? Nobody!","urban"},
-	{"stegosaurus","AMDJAA","GkfT",6,3,9,"6A7A4A","D8701E","back plates, spiked tail","grunt","Brain the size of a walnut. Tail of doom.","dinosaur,extinct,reptile,armored"},
 }
