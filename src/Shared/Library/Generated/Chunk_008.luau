@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dolma","IMAELB","Fe",2,7,1,"5E7A3A","8AA86A","rolled leaf parcels","pitter","Little leaf-wrapped surprises.","edible"},
+	{"dolmen","ELCCII","GS",3,1,10,"6D6D6D","7CB342","huge flat stone on upright stones","thud","A table for giants.","structure,ancient"},
+	{"dolphin","ABCJEC","UDFB",4,8,4,"7E94A8","D8E4EC","curved dorsal fin, smiling beak","click","Smiles at everyone. Plays with bubbles.","mammal,aquatic,ocean"},
+	{"dome","EMDIII","GS",3,1,9,"ECEFF1","90A4AE","half-sphere roof over a ring wall","thud","Round on top. Safe inside.","structure,defense"},
 	{"dome of light","KHDIKI","GF",2,3,8,"FFF59D","FFFFFF","great golden dome over allies","choir","Safe inside the glow.","holy,defence"},
 	{"domino","BMACII","GV",1,1,3,"24262A","F2F2EE","black tiles with white dots","clack","Tip one. Tip them all.","game"},
 	{"domino line","EMCLII","kSP",3,6,2,"212121","F5F5F5","long winding row of dominoes","clack","One push. Chain reaction.","structure,silly"},
@@ -106,6 +110,7 @@ return {
 	{"dried apricot","IMBLGI","SNP",2,3,3,"E8862B","F2A65A","flat chewy orange disc","gloop","Chewy orange coins.","edible,sticky"},
 	{"dried cranberries","IMAELB","eVP",2,7,1,"A3101E","C8303A","wrinkly red bits","pitter","Sweet-tart red jewels.","edible,sweet"},
 	{"dried fruit","IMAELB","eVP",2,7,1,"A0522D","E8A43A","pile of wrinkly fruit bits","pitter","Fruit, concentrated for travel.","edible,sweet"},
+	{"drift spark","KDBOKF","DkL",4,10,2,"4FC3FF","FF9A2E","rune sled power-slides spraying blue-orange sparks","screech","Blue sparks. Orange sparks. Gone.","game,racing,speed"},
 	{"drill","JKBAJK","CfT",4,7,5,"F1C40F","24262A","pistol-grip drill with bit","whirr","Whirrrrr. Hole.","tool,mechanical"},
 	{"drill arm","CKCHJI","CfT",6,6,6,"2C3539","D4A72C","giant spinning drill arm","zap","Pierce the heavens!","scifi,mechanical"},
 	{"drill sergeant","LMCJNA","IOh",4,5,6,"4D7C0F","DC2626","campaign hat, megaphone","horn","DROP AND GIVE ME TWENTY.","military"},
@@ -328,7 +333,6 @@ return {
 	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
 	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
 	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
-	{"emote","KMBONA","UdO",2,7,1,"F472B6","22D3EE","character doing a looping silly dance with music notes","music","Emoted on. The ultimate disrespect.","gaming,meme"},
 	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
 	{"emp","CDCGKF","LPO",5,6,2,"3FC1D9","C9CED4","disc crackling with blue arcs","boom","Robots hate this one.","explosive,scifi,electric"},
@@ -399,8 +403,4 @@ return {
 	{"estoc","CKCHJK","fT",5,7,4,"8A929B","24262A","long stiff thrusting blade","shing","Armour-piercing pointy stick.","fantasy,sharp"},
 	{"eternity","KLENOI","SO",7,1,9,"311B92","FFF8E1","frozen golden moment bubble","hush","Lasts a very, very long time.","time"},
 	{"ethiopian wolf","AMCJAA","DQfh",4,7,4,"C8601E","F2F2EE","slim red wolf","howl","Rarest wolf. Very red.","mammal,predator,wild"},
-	{"eton mess","IMBLGI","SNP",2,3,3,"F7F2EC","D7263D","smashed meringue, cream, berries","gloop","A dessert that already lost a fight.","edible,sticky,sweet"},
-	{"ettin brute","AEEJNA","kf",8,3,8,"78350F","A3A3A3","two-headed hulking giant","stomp","Two heads, zero agreements.","giant"},
-	{"eucalyptus","NGDCMI","GWFkS",3,1,7,"ECEFF1","80CBC4","peeling pale bark, silvery leaves","rustle","Koala snack. Smells like cough drops.","plant,tree"},
-	{"euoplocephalus","AMDJAA","GkfO",6,3,9,"7A6A4A","C8A87A","armored eyelids, club tail","grunt","Even its eyelids are armored.","dinosaur,extinct,reptile,armored"},
 }

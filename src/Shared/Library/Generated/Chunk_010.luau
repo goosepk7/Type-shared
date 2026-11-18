@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flower tower","NGDMMI","GFSe",4,1,5,"F06292","43A047","spire of stacked blooms","rustle","Shoots petals from the top.","plant,flower"},
+	{"flowerhorn","ABAJEC","dB",1,6,1,"E8401E","3AA0E8","bright fish with giant head hump","splash","Giant forehead bump. Fancy.","fish,aquatic"},
 	{"flurry","GCBEOJ","N",2,5,1,"F5FAFD","CDE3F0","swirling light snow puff","hush","A little sneeze of snow.","frozen"},
 	{"flute","BMBFJI","jdc",2,7,2,"C9CED4","C9CED4","thin silver tube with keys","woodwind","Lures snakes. And enemies.","music"},
 	{"fly","AMAJFB","dASP",1,6,1,"3A3A3A","C82A2A","big red eyes, see-through wings","buzz","Lands on your food. Rubs its hands.","insect"},
@@ -401,6 +403,4 @@ return {
 	{"giant","AEEJNA","kfO",8,3,8,"A16207","FEF3C7","enormous human figure, belt and boots","stomp","Fee fi fo... you know the rest.","giant"},
 	{"giant african snail","AMBJGI","GSN",2,1,6,"7A4A2A","D8B080","huge striped conical shell","squelch","A snail the size of your hand.","mollusk,aquatic"},
 	{"giant ape","AEFJNA","DklO",9,5,9,"292524","78350F","skyscraper-sized gorilla pounding chest","roar","Climbs towers. Swats planes.","kaiju,giant,danger"},
-	{"giant armadillo","AMCJAA","GCf",4,5,7,"8A7A6A","C8B8A0","huge armadillo with big claws","squeak","Giant digger with a giant claw.","mammal,wild"},
-	{"giant baguette","IMEHJI","kfT",7,2,7,"D49A4A","F2DDB0","baguette as long as a bridge","thud","A bread sword for a giant.","edible,giant,silly"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy water","FHBEOJ","Fe",4,5,1,"BDE7FF","FFF6CC","glowing droplets with soft gold sparkle","chime","Splash of goodness. Undead hate it.","holy,aquatic"},
+	{"home fries","IMAELB","eVP",2,7,1,"D9A04A","E8C070","cubed crispy potatoes","pitter","Potatoes, crispy at home.","edible,breakfast"},
 	{"home run","KFCA3B","kle",6,9,2,"FFFFFF","DC2626","baseball with red stitching sailing over a fence into orbit","crack","Going, going, gone. So is the window.","sport"},
 	{"homework","BMCLGI","iWSN",4,1,4,"FFFFFF","2563EB","towering paper stack with a red F and a chewed pencil","rustle","The dog refuses to eat this much.","school,silly"},
 	{"homing missile","CACAkB","EQe",7,8,3,"F2F2EE","E67E22","missile with glowing seeker eye","boom","It knows where you live.","explosive"},
@@ -130,6 +132,7 @@ return {
 	{"humpback whale","ABFJEC","UdkIB",8,3,9,"2E3A48","E8ECEE","long white flippers, knobby head, breaching","whalesong","Sings top hits across entire oceans.","mammal,aquatic,ocean,heavy"},
 	{"humphead wrasse","ABDJEC","DfB",5,7,4,"3AA0A0","6AC8E8","giant blue-green wrasse with forehead hump","splash","Big forehead. Kind eyes.","fish,aquatic"},
 	{"humpty dumpty","LMBJGG","UdV",2,3,1,"F8FAFC","DC2626","giant egg with face, bowtie, on a wall","crack","Had a great fall. Still smiling.","folklore,silly"},
+	{"hundred slap","KMBOKI","kf",3,9,1,"FFD0A8","FFFFFF","a blur of open-palm slaps with afterimage hands","slap","One hundred. Give or take.","game,fighting,melee"},
 	{"hunger","KMCO5J","ifH",4,5,2,"F59E0B","7C2D12","growling empty stomach with a fork and knife orbiting","growl","Not you when you are hungry. Worse.","mood,silly"},
 	{"hunt","KGCOvB","QTe",5,7,2,"4D7C0F","B45309","drawn bow and paw-print trail leading to the target","twang","Shh. Follow the paw prints.","wild,ranged"},
 	{"hunter","LGCJNA","cTe",5,6,4,"365314","78350F","fur cap, crossbow, trap belt","twang","Sets a trap. Steps in it. Starts over.","outdoor"},
@@ -336,7 +339,7 @@ return {
 	{"io","MADGKJ","KEe",6,4,7,"F4D03F","E64A19","yellow moon spotted with volcanoes","rumble","Pizza-coloured. Lava-filled.","space"},
 	{"io moth","AMAJFB","jdAO",1,5,1,"F2D82A","2A6AE8","yellow moth with big eyespots","flutter","Flashes giant eyes. Boo!","insect,cute"},
 	{"ion","FDAGKJ","RL",2,6,1,"8AE9FF","FFFFFF","tiny charged glowing particle","zap","Very small. Very charged.","electric"},
-	{"ion cannon","CDEMxI","EeLO",8,4,7,"F2F2EE","3FC1D9","giant orbital cannon dish","zap","Calls a beam down from the sky.","scifi,space,electric"},
+	{"ion cannon","CDFNmI","EL",9,3,5,"6EAAFF","FF3232","a red reticle lock, then a crackling ion column from orbit","zap","Target acquired. Briefly.","scifi,space,electric"},
 	{"ion saber","KLDHJI","DfT",7,10,2,"FF42A8","FFECF8","a white-cored magenta blade and a cut left in the air","slash","The pilot is optional. The blade is not.","anime,mecha,sword"},
 	{"ion storm","FDEDOJ","jSLP",7,5,3,"651FFF","00E5FF","violet cloud with flickering ion sparks","buzz","Your gadgets will hate this.","electric,space,storm"},
 	{"iris","NGBNMI","dFS",2,1,2,"5E35B1","FFEB3B","tall bloom with drooping purple falls","rustle","Keeps an eye on things.","plant,flower"},
@@ -400,7 +403,4 @@ return {
 	{"jalebi","IMBLGI","jN",2,3,3,"F2862B","F2C24A","orange spiral pretzel, syrup","gloop","A syrup spiral of sweet chaos.","edible,sticky,sweet"},
 	{"jam","IMBLGI","ScN",2,3,3,"B0203E","D7263D","jar of glossy red preserve","gloop","Sticky, sweet, and smearable.","edible,sticky,sauce,sweet"},
 	{"jam roly poly","IMBGKF","DkI",3,5,6,"F2D08A","B0203E","rolled pudding with jam spiral","rumble","A jammy log of pudding.","edible,heavy,sweet"},
-	{"jamaica","IBBOKI","F",2,6,2,"B0103E","E8434F","deep red flower drink","slurp","Ruby-red and tart.","edible,drink"},
-	{"jambalaya","IAAELB","KeP",2,6,1,"C8602B","7DBE3A","spicy rice with sausage, peppers","pitter","Spicy rice with a party inside.","edible,grain"},
-	{"janitor","LMCJNA","GIN",3,4,5,"1E40AF","FACC15","jumpsuit, mop, giant key ring","swish","Wet floor. Slippery enemies.","school,silly"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lava hound","AACJAA","KDS",5,7,4,"7F1D1D","F97316","rocky hound with molten drool","growl","Fetch? It melted the stick.","canine,fire"},
+	{"lava lamp","BHBG0I","jc",1,2,3,"FF3EA5","C9CED4","glass tube with blobby goo","thud","Groovy hypnosis.","furniture,household"},
+	{"lava moat","EADLII","GKS",6,1,8,"FF5722","3E2723","glowing lava channel in black rock","bubble","Like a moat, but worse in every way.","structure,defense,flammable"},
+	{"lava pizza","IABAKK","UKe",3,7,2,"D8302B","F2862B","pizza bubbling with molten cheese","whoosh","Too hot. Seriously too hot.","edible"},
 	{"lava pool","MACLII","KS",6,1,5,"FF5722","FFC107","bubbling pool of molten rock","thud","The floor is lava. This bit, anyway.","place,terrain,flammable"},
 	{"lava pup","AABJAA","KQf",3,7,3,"7F1D1D","F97316","rocky puppy with glowing cracks","bark","Warm paws. Hot fetch.","fire,cute,canine"},
 	{"lava quake","HAENOI","KPO",8,4,5,"BF360C","FF6E40","cracking ground leaking lava","rumble","The floor cracks. Lava says hi.","fire,natural"},
@@ -399,8 +403,4 @@ return {
 	{"mage tower","ELDMII","GSTeL",6,1,7,"7E57C2","FFD54F","spiral purple tower, crystal orb on top","zap","The orb sees all. The orb zaps all.","structure,defense,tower,magic"},
 	{"maggot","AMAJTD","CWP",1,3,1,"F2EEE0","E8D8C0","squishy white larva","squelch","Grows up to be a fly. Dreams big.","bug,spooky"},
 	{"magic","FLCGKE","je",4,6,2,"8A5CF5","FFD1F7","swirling sparkle orb, star flecks","shimmer","Sparkles first. Questions later.","magic"},
-	{"magic 8 ball","BLAG3I","jY",1,4,4,"24262A","7D3CB5","black ball with answer window","squeak","Outlook: very bonk.","toy,magic"},
-	{"magic boat","DLCKHJ","DAg",4,6,4,"7E57C2","FFD54F","glowing swan-prow boat floating in air","whoosh","Sails on air. And glitter.","vehicle,magic,mythical"},
-	{"magic bombardment","KAEEOB","EkP",8,5,3,"5D4037","FF6D00","magic orbs raining and exploding","boom","Incoming! Everywhere!","explosive"},
-	{"magic box","BLCL2I","jZY",3,1,4,"9E1B32","D4A72C","starry box on legs","pop","Step in. Vanish!","party,magic"},
 }

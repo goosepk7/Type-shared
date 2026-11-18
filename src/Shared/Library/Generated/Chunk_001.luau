@@ -57,6 +57,7 @@ return {
 	{"affogato","ICBAKJ","DJ",3,5,2,"F7EBC8","5A3220","scoop drowning in espresso","squish","Ice cream, ambushed by coffee.","edible,frozen,sweet"},
 	{"afghan hound","AMCJAA","DQf",4,8,4,"E3CBA0","B49464","long flowing silky hair, slim face","bark","Hair commercial on four legs.","mammal,pet"},
 	{"afk player","LMBLNI","Gd",2,1,5,"A3A3A3","F8FAFC","frozen avatar with ZZZ bubble","yawn","Brb. Forever.","meme,gaming,silly"},
+	{"afk statue","KEBONI","G",3,8,2,"9AA0A6","E8EDF2","you turn to grey stone with a floating zzz","thud","brb, mom called.","gaming,meme,defence"},
 	{"africa","MEFNII","Sh",6,1,10,"E6A04D","43A047","savanna, desert and jungle continent","rumble","Lions, deserts, and very big rivers.","place,geography"},
 	{"african clawed frog","AMAJAG","UeB",1,5,1,"8A8A6A","C8C8A8","flat frog with clawed feet","croak","No tongue. Shovels food in.","amphibian,wetland"},
 	{"african elephant","AMEJAA","DkIO",8,4,8,"8A847E","F2EEE6","giant ears shaped like africa, long tusks","trumpet","Biggest land animal. Gentle. Usually.","mammal,heavy,wild"},
@@ -402,5 +403,4 @@ return {
 	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
-	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
 }

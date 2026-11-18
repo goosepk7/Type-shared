@@ -114,6 +114,7 @@ return {
 	{"coil","BKBLCG","Ukl",3,5,4,"9CA3AF","22D3EE","tight metal spiral compressed then launching upward","boing","Compressed anger. With a boing.","mechanical,bouncy"},
 	{"coin","BMAAKJ","Uce",1,8,3,"D4A72C","F1C40F","shiny gold coin","chime","Flip it. Heads, you win.","treasure,shiny"},
 	{"coin flip","KKBAKB","ja",3,8,1,"FFC107","FFFFFF","spinning golden coin","ting","Heads you win. Tails you also win?","luck,chaos"},
+	{"coin shower","BHCNOJ","SP",3,6,3,"FFC83D","FFF4C2","ring of light raining gold coins","clink","Cha-ching! (Ouch.)","game,arcade,money"},
 	{"cola","IBBFKI","EkI",3,7,1,"3A1A0C","C8202B","dark fizzy drink in a glass","fizz","Dark, fizzy, and explosive.","edible,drink,fizzy"},
 	{"colander","BMBINK","G",1,6,2,"C9CED4","C0392B","bowl full of little holes","clang","Helmet with ventilation.","kitchen,household"},
 	{"colcannon","IMBLGI","FN",2,3,3,"F2E8C8","3E7A2B","mashed potato with kale","gloop","Mashed potato with greens.","edible,sticky"},
@@ -143,6 +144,7 @@ return {
 	{"combat drone","OKBJDE","AeL",4,9,3,"334155","EF4444","sleek flying drone with twin lasers","whir","Buzzes ominously. Shoots less ominously.","robot,flying"},
 	{"combine harvester","DGEKHL","DkfHg",6,3,9,"3E8E41","F2C200","huge machine, spinning reel blades front","engine","Harvests wheat and weak opponents.","mechanical,vehicle,land"},
 	{"combo","KMCAKB","kfV",5,9,1,"FF6D00","FFFFFF","rapid series of impact stars with counter","pow","C-C-C-COMBO!","meme"},
+	{"combo breaker","KMCHzI","kf",5,10,1,"FF5A5A","FFE14D","three fast staff hits with pixel hit counters","smack","1 HIT. 2 HIT. 3 HIT!","game,arcade,melee"},
 	{"combustion","FADGKI","KEk",7,6,2,"FF4500","FFE066","swelling fireball, sharp flash ring","boom","Things got heated. Then very heated.","fire,explosive"},
 	{"comeback","KHCOKJ","DWF",4,6,4,"FFD54F","43A047","rising golden glow","fanfare","Down, but not out.","support"},
 	{"comedian","LMCJNA","jdO",3,5,3,"7C3AED","FACC15","blazer, mic, rimshot","ding","Knocks them dead. Badum tss.","silly"},
@@ -401,6 +403,4 @@ return {
 	{"croquette","IMAELB","Ke",2,7,1,"D9A04A","F2E2C2","crumbed golden cylinder","pitter","Crispy outside, creamy surprise inside.","edible"},
 	{"cross","KMBAJK","GTO",3,7,3,"DC2626","FFFFFF","big red X spinning like a blade","buzz","X marks the spot. The spot is you.","shape,school"},
 	{"cross slash","FMCHJB","fTV",6,9,1,"ECEFF1","FF5252","two glowing slashes forming an X","shing","X marks the ouch.","sharp"},
-	{"crossbill","AMAJDB","dAT",1,7,1,"E8401E","6A4A2A","finch with crossed beak","tweet","Beak crossed like scissors.","bird,cute"},
-	{"crossbow","CMCAvI","kTe",5,5,4,"8B5A2B","8A929B","horizontal bow on wooden stock","twang","Point, click, thunk.","medieval,ranged"},
 }

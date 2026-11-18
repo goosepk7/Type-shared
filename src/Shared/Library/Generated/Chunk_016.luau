@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magic 8 ball","BLAG3I","jY",1,4,4,"24262A","7D3CB5","black ball with answer window","squeak","Outlook: very bonk.","toy,magic"},
+	{"magic boat","DLCKHJ","DAg",4,6,4,"7E57C2","FFD54F","glowing swan-prow boat floating in air","whoosh","Sails on air. And glitter.","vehicle,magic,mythical"},
+	{"magic bombardment","KAEEOB","EkP",8,5,3,"5D4037","FF6D00","magic orbs raining and exploding","boom","Incoming! Everywhere!","explosive"},
+	{"magic box","BLCL2I","jZY",3,1,4,"9E1B32","D4A72C","starry box on legs","pop","Step in. Vanish!","party,magic"},
 	{"magic bubble","DLCKHJ","UAgX",2,4,1,"B3E5FC","F48FB1","giant shimmering bubble","whoosh","Pop! There goes your ride.","cute,silly"},
 	{"magic carpet rug","BLCLJI","Al",3,5,3,"9E1B32","D4A72C","ornate rug fluttering off floor","chime","It's not for riding. It's for flinging.","magic,fantasy"},
 	{"magic dust","FLBDOJ","jF",2,5,1,"B388FF","FFE57F","violet-gold sparkly dust","tinkle","A pinch of wizard. Results vary.","magic,cute"},
@@ -301,6 +305,7 @@ return {
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
 	{"miasma","FJDDOJ","SMNP",5,3,3,"5D7A3A","A3B86C","thick yellow-green rotten haze","hiss","Smells like a dungeon basement.","toxic"},
+	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
 	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
 	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
 	{"microlight","DFBKHB","DAkg",3,6,2,"FFEB3B","1565C0","tiny wing over an open seat and prop","propeller","Basically a lawn chair with wings.","vehicle,air,silly"},
@@ -398,9 +403,4 @@ return {
 	{"mirror spider","AJBJQA","fMaN",2,6,2,"E8E8F0","C8C8D8","silver mirror-plated abdomen","skitter","Covered in tiny mirrors. Disco.","arachnid,spooky,venomous"},
 	{"mirror wall","EHCCII","GjSa",3,1,4,"E0F7FA","B0BEC5","tall polished mirror panels","chime","Everything you throw comes right back.","structure,defense"},
 	{"mirror world","MLFNII","jSa",5,1,7,"E0F7FA","B0BEC5","everything reflected and backwards","chime","Left is right. Right is wrong.","place,mythical"},
-	{"misery","KBCDOJ","iSN",4,2,1,"475569","64748B","heavy grey drizzle cloud that follows one person only","sigh","Loves company. Brought a guest list.","mood"},
-	{"miso paste","IMBLGI","SNP",2,3,3,"C8A070","8A5A3A","brown fermented paste","gloop","Salty, savory paste.","edible,sticky"},
-	{"miso ramen","IABOGI","KF",3,4,3,"C8903A","F2E8C8","bowl with cloudy broth, corn","slurp","Rich, salty, warming.","edible,warm,healthy"},
-	{"miso soup","IBBOGI","FS",3,4,3,"C8A070","3E8E2B","small bowl, tofu cubes, seaweed","slurp","Warm and wise.","edible,warm,healthy"},
-	{"missile","CACAkB","EQe",8,9,3,"F2F2EE","C0392B","finned rocket with pointed nose","boom","Locks on. Never lets go.","explosive"},
 }

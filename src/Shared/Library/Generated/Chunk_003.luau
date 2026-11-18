@@ -402,5 +402,5 @@ return {
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
-	{"brb","KMBONK","GZY",2,5,4,"94A3B8","FDE047","empty gaming chair still spinning, snack crumbs","ding","Mum is calling. Summon on autopilot.","gaming,meme,internet"},
+	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
 }

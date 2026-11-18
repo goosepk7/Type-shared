@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crossbill","AMAJDB","dAT",1,7,1,"E8401E","6A4A2A","finch with crossed beak","tweet","Beak crossed like scissors.","bird,cute"},
+	{"crossbow","CMCAvI","kTe",5,5,4,"8B5A2B","8A929B","horizontal bow on wooden stock","twang","Point, click, thunk.","medieval,ranged"},
 	{"crossbow tower","EMDMII","GSTe",5,1,7,"6D4C41","455A64","tower bristling with crossbows","twang","Click. Thwip. Click. Thwip.","structure,defense,tower"},
 	{"crossbowman","LKCJNA","Te",5,4,5,"57534E","7C2D12","padded jacket, big crossbow, pavise shield","twang","Slow reload. Big bolt.","warrior,archer"},
 	{"crosshair","KHBOKB","QTe",3,9,1,"EF4444","FFFFFF","red circle with a plus sign locking on, beeping","beep","Locked on. Do not move. You moved.","gaming,ranged"},
@@ -170,6 +172,7 @@ return {
 	{"damselfly","AMAJFB","dAP",1,7,1,"3A6AE8","1E1E1E","slender metallic blue flyer","buzz","Dragonfly's dainty cousin.","insect"},
 	{"damson","IGAAKF","Fke",3,6,2,"3E1A3E","5E2A5E","small dark plum","splat","Tart and deep purple.","edible,fruit,sweet"},
 	{"dance","KMCNOI","jdc",2,6,2,"E040FB","FFEB3B","disco floor tiles and spotlights","music","Nobody can resist the groove.","music,dance,silly"},
+	{"dance off","KHDNNK","dcO",5,7,2,"FF4FD8","3BE8FF","a disco ring lights up and everyone inside has to dance","ding","You can't not dance to this.","gaming,meme,dance"},
 	{"dancer","LFCJNA","jdY",3,8,3,"F9A8D4","F8FAFC","tutu, pointe shoes, mid-spin","swish","Pirouettes past your attacks.","music"},
 	{"dancing lady orchid","NGBNMI","jdFS",1,1,1,"FFEB3B","6D4C41","sprays of tiny yellow dancing flowers","rustle","Tiny dancers everywhere.","plant,flower"},
 	{"dandelion","NFADMI","jdP",1,2,1,"FFEB3B","FFFFFF","yellow pompom or white puffball","rustle","Make a wish. Spread chaos.","plant,flower"},
@@ -270,6 +273,7 @@ return {
 	{"dentist","LMCJNA","fO",3,4,4,"F8FAFC","22D3EE","mask, mirror, buzzing drill","whir","Open wide. This won't hurt. Much.","healer,silly"},
 	{"dentures","BMBJGG","UQf",3,7,3,"F9A8D4","FFFFFF","wind-up pink gums and white teeth hopping and chattering","chatter","Grandpa wants them back. They do not want to go.","silly,toy"},
 	{"deodorant","BFAD2K","Me",1,6,1,"F2F2EE","2F6FD1","stick or spray can","thud","Not today, stinky.","bathroom,silly"},
+	{"deploy cover","EKCCnI","GS",3,6,6,"7C8794","F2C230","a folding steel barricade unfolds in front of you","clang","Stay behind the yellow line.","gaming,shooter,defence"},
 	{"depth","MBEN5I","iZHN",6,1,7,"0B1E3A","1E3A8A","dark blue drop-off fading to black, one glowing lure","whalesong","No floaties allowed in the deep end.","ocean,spooky"},
 	{"depth charge","CBCGKF","EkB",7,4,3,"3A3F45","8E9196","barrel bomb that sinks","boom","Drops in. Shakes everything.","explosive,ocean"},
 	{"derecho","GFEFOB","kIP",8,8,3,"455A64","CFD8DC","long racing line of violent storm wind","howl","A storm that goes in a straight line. Fast.","storm,air"},
@@ -399,8 +403,4 @@ return {
 	{"dokkaebi","ALCJNA","jbh",4,6,4,"1E3A8A","FACC15","horned goblin with magic club","cackle","One bonk and treasure appears.","goblin,mythical"},
 	{"doldrums","FFDNOI","NO",3,1,4,"CFD8DC","ECEFF1","eerily still air, flat haze","hush","No wind. No hurry. No hope.","air"},
 	{"dollhouse","BMCClI","Gc",1,1,4,"F06292","F2F2EE","tiny furnished toy house","squeak","Tiny home. Tiny wall.","toy"},
-	{"dolma","IMAELB","Fe",2,7,1,"5E7A3A","8AA86A","rolled leaf parcels","pitter","Little leaf-wrapped surprises.","edible"},
-	{"dolmen","ELCCII","GS",3,1,10,"6D6D6D","7CB342","huge flat stone on upright stones","thud","A table for giants.","structure,ancient"},
-	{"dolphin","ABCJEC","UDFB",4,8,4,"7E94A8","D8E4EC","curved dorsal fin, smiling beak","click","Smiles at everyone. Plays with bubbles.","mammal,aquatic,ocean"},
-	{"dome","EMDIII","GS",3,1,9,"ECEFF1","90A4AE","half-sphere roof over a ring wall","thud","Round on top. Safe inside.","structure,defense"},
 }

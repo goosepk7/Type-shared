@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
 	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
 	{"bread fortress","IMECII","GFk",5,2,9,"C8904A","F5E6C8","castle walls of loaves","thud","A carb castle.","edible,giant"},
 	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
@@ -27,6 +26,7 @@ return {
 	{"breeze","FFBFOB","FI",2,6,1,"CFE6EE","FFFFFF","soft drifting air ribbons with petals","whoosh","Nice and cool. Mild shove.","air,cute"},
 	{"brew","KLBGKI","jFM",3,4,1,"76FF03","7C4DFF","bubbling cauldron burst","bubble","Mix, stir, kaboom.","magic"},
 	{"brick","BEBAKK","ke",3,5,7,"9C4A3A","D2B48C","rectangular red clay brick","clink","Throw it. Build with it. Both.","hardware"},
+	{"brick breaker","BHBA3K","Ue",4,9,2,"5EF2FF","FF4FA3","glowing ball served off a pixel paddle","boop","Don't let it touch the floor.","game,arcade,bounce"},
 	{"brick swap","ELCNII","DE",4,6,3,"8A5CF6","FFC93C","a giant rune switch; enemy walls burst into coins","thud","Walls are just coins that haven't met the switch.","game,platformer,utility"},
 	{"brick wall","EEDCII","GS",3,1,8,"B5523B","D7CCC8","red bricks with pale mortar lines","thud","Three little pigs approved.","structure,defense"},
 	{"bricklayer","LECJNA","Gh",4,4,6,"DC2626","78716C","trowel, brick stack, dusty overalls","clank","Builds a wall in five seconds flat.","tools"},

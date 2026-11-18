@@ -8,6 +8,8 @@ return {
 		["among us crewmate"] = "tiny astronaut",
 		["angry bird"] = "sling bird",
 		["angry birds"] = "sling bird",
+		["arkanoid"] = "brick breaker",
+		["atari breakout"] = "brick breaker",
 		["baby groot"] = "walking tree",
 		["baby yoda"] = "tiny green wizard",
 		["bacon hair"] = "confused person",

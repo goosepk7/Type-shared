@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jamaica","IBBOKI","F",2,6,2,"B0103E","E8434F","deep red flower drink","slurp","Ruby-red and tart.","edible,drink"},
+	{"jambalaya","IAAELB","KeP",2,6,1,"C8602B","7DBE3A","spicy rice with sausage, peppers","pitter","Spicy rice with a party inside.","edible,grain"},
+	{"janitor","LMCJNA","GIN",3,4,5,"1E40AF","FACC15","jumpsuit, mop, giant key ring","swish","Wet floor. Slippery enemies.","school,silly"},
 	{"japanese beetle","AMAJFA","GfP",1,3,4,"3AA06A","C8701E","metallic green-copper beetle","click","Eats your roses. Shiny though.","insect,armored"},
 	{"japchae","IMBLGI","HN",2,3,3,"8A5A3A","7DBE3A","glassy noodles, colorful veg","gloop","Glass noodles, rainbow veg.","edible,sticky"},
 	{"jar","BMALKK","O",1,4,2,"BFE6F2","C9CED4","glass jar with screw lid","clang","Capture. Lid. Done.","kitchen,household"},
@@ -39,6 +42,7 @@ return {
 	{"jet ski","DBBKHC","DkIgB",4,9,3,"FFEB3B","1565C0","small sit-on watercraft, handlebars, spray jet","engine","Sprays enemies with an angry rooster tail.","vehicle,aquatic"},
 	{"jet stream","FFDBOB","kIe",6,10,2,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air"},
 	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
+	{"jetpack hover","OABOkI","Al",3,6,3,"96C8FF","FF9646","a twin-tank jetpack holding you up on short blue flames","whoosh","Hovering, technically.","scifi,modern"},
 	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},
 	{"jeweler","LHCJNI","ca",3,3,4,"FACC15","67E8F9","loupe, gem tray","ding","Every gem sparkles. Blindingly.","merchant,gem"},
 	{"jewelry","BHBL2I","dcaO",3,2,4,"FACC15","22D3EE","spilling heap of rings, chains and glittering gems","jingle","Ooh, shiny. That was the trap.","shiny,royal"},
@@ -359,7 +363,7 @@ return {
 	{"laser cannon","CHDMxI","KTe",8,5,6,"3A3F45","FF2D2D","heavy twin-barrel beam cannon","zap","For lasers that need to be heard.","scifi,ranged"},
 	{"laser chainsaw","CACHJI","KfV",8,5,5,"E67E22","FF2D2D","chainsaw with glowing laser teeth","zap","Rrrrrzzzzzap.","scifi,sharp,loud"},
 	{"laser drill","OHCBwI","KCe",6,6,5,"E67E22","FF2D2D","bulky drill firing a laser","hum","Tunnels through anything.","scifi"},
-	{"laser fence","EDCCII","GKST",5,1,4,"FF1744","37474F","metal posts with red laser beams between","hum","Limbo champion required.","structure,defense,future"},
+	{"laser grid","EDCCII","KST",5,2,4,"FF462E","40444E","two posts with three red laser beams between","hum","Mind the gap. All three of them.","scifi,modern,heist"},
 	{"laser pistol","CHBBwI","KTe",5,9,3,"F2F2EE","FF2D2D","compact sleek beam pistol","zap","Short burst, long reach.","scifi,ranged"},
 	{"laser pointer","CHABJI","jdce",1,10,1,"FF2D2D","24262A","tiny pen with red dot","zap","Cats fear and love this.","silly"},
 	{"laser rifle","CHCBwI","KTe",6,9,4,"F2F2EE","FF2D2D","sleek white rifle, red lens","zap","Straight lines are its whole thing.","scifi,ranged"},
@@ -399,8 +403,4 @@ return {
 	{"lava fountain","HADLII","KlP",7,5,4,"FF3D00","FFD740","tall glowing jet of lava spraying droplets","whoosh","A fountain you do not throw coins in.","fire,natural"},
 	{"lava giant","AAEJNA","KkS",8,3,8,"450A0A","F97316","cracked black giant oozing lava","rumble","Every footprint is a fire hazard.","giant,fire"},
 	{"lava hammer","CADHtK","KkfO",8,3,7,"1B1A22","D9480F","glowing molten stone hammer","shing","Each hit leaves a puddle of fire.","fantasy,sharp"},
-	{"lava hound","AACJAA","KDS",5,7,4,"7F1D1D","F97316","rocky hound with molten drool","growl","Fetch? It melted the stick.","canine,fire"},
-	{"lava lamp","BHBG0I","jc",1,2,3,"FF3EA5","C9CED4","glass tube with blobby goo","thud","Groovy hypnosis.","furniture,household"},
-	{"lava moat","EADLII","GKS",6,1,8,"FF5722","3E2723","glowing lava channel in black rock","bubble","Like a moat, but worse in every way.","structure,defense,flammable"},
-	{"lava pizza","IABAKK","UKe",3,7,2,"D8302B","F2862B","pizza bubbling with molten cheese","whoosh","Too hot. Seriously too hot.","edible"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grim reaper","AIDJNJ","ifY",7,6,7,"0A0A0A","E5E7EB","black hooded robe, skeletal hand, scythe","whoosh","Just here for the paperwork.","undead,spooky"},
+	{"grime","FEBNGI","SNP",2,2,2,"4A4035","7A6A55","greasy grey-brown smear with fingerprints in it","squelch","Under the fridge since the dawn of time.","gross,sticky"},
 	{"grinder","OKCL1I","HV",6,3,7,"E67E22","8E9196","hopper funnel over spinning teeth","hum","Goes in whole. Comes out mulch.","mechanical"},
 	{"grison","AMBJAA","CfT",3,8,2,"3A3A3A","E8E8E8","grey weasel with black face","chatter","Looks like a tiny honey badger.","mammal,predator"},
 	{"grit","KECOKI","GF",2,4,7,"8D6E63","FFB74D","dusty determined glow","grunt","Too stubborn to fall.","support"},
@@ -401,6 +403,4 @@ return {
 	{"holy sword","CHCHrK","FfT",7,6,5,"D4A72C","F2F2EE","radiant blade, winged guard","shing","Glows when evil is near. So, often.","fantasy,holy"},
 	{"holy tornado","HHEN5K","KFlH",7,6,5,"FFF59D","FFFFFF","golden spinning column of light and feathers","choir","Lifts friends up. Literally.","storm,holy"},
 	{"holy unicorn","AHDKAB","AFTg",7,8,6,"F8FAFC","FDE047","radiant unicorn with feathered wings","chime","Heals with a touch. Pokes with a horn.","holy,mount"},
-	{"holy water","FHBEOJ","Fe",4,5,1,"BDE7FF","FFF6CC","glowing droplets with soft gold sparkle","chime","Splash of goodness. Undead hate it.","holy,aquatic"},
-	{"home fries","IMAELB","eVP",2,7,1,"D9A04A","E8C070","cubed crispy potatoes","pitter","Potatoes, crispy at home.","edible,breakfast"},
 }

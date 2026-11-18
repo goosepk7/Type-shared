@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"eton mess","IMBLGI","SNP",2,3,3,"F7F2EC","D7263D","smashed meringue, cream, berries","gloop","A dessert that already lost a fight.","edible,sticky,sweet"},
+	{"ettin brute","AEEJNA","kf",8,3,8,"78350F","A3A3A3","two-headed hulking giant","stomp","Two heads, zero agreements.","giant"},
+	{"eucalyptus","NGDCMI","GWFkS",3,1,7,"ECEFF1","80CBC4","peeling pale bark, silvery leaves","rustle","Koala snack. Smells like cough drops.","plant,tree"},
+	{"euoplocephalus","AMDJAA","GkfO",6,3,9,"7A6A4A","C8A87A","armored eyelids, club tail","grunt","Even its eyelids are armored.","dinosaur,extinct,reptile,armored"},
 	{"euphorbia","NJCLMI","GSTM",3,1,6,"558B2F","E53935","spiny stems with red flowers","thud","Spiky. Poisonous sap. Double trouble.","plant,desert,sharp"},
 	{"euphoria","KHCOKJ","DF",3,7,3,"FF80AB","FFEB3B","bursting rainbow joy aura","yay","Best. Day. Ever.","support"},
 	{"europa","MCDGKJ","Je",5,4,7,"F5F5F5","C1A47A","white cracked icy moon","rumble","An ocean hides beneath the ice.","space"},
@@ -94,7 +98,6 @@ return {
 	{"falling cage","BKCLII","GO",3,1,7,"5B6168","24262A","barred cage dropping from ceiling","snap","Clang. Gotcha.","trap,defense"},
 	{"falling citadel","EEFNqI","EkO",9,2,6,"E8DCC2","4A6FA5","a whole castle falls out of the clouds","rumble","Real estate, delivered. From orbit.","anime,castle,heavy"},
 	{"falling mountain","HEFAKB","EkO",10,2,10,"6D4C41","BCAAA4","upside-down mountain plunging from the clouds","rumble","Where did that mountain come from? Above.","heavy,danger"},
-	{"falling piano","BMDLII","dkO",6,1,5,"24262A","F2F2EE","grand piano dropping from above","snap","Plink. Plonk. SPLAT.","trap,silly,cartoon"},
 	{"falling sun","HAFAKB","KEkP",10,2,8,"FFB300","FF3D00","blinding miniature sun descending","roar","Too close. Way too close.","space,fire,explosive,danger"},
 	{"fallow deer","AMCJAA","Dk",4,8,4,"C8904A","F2F2EE","palm antlers, spotted","bleat","Palmate antlers. Spotty coat.","mammal,wild"},
 	{"false killer whale","ABDJEC","UDB",6,8,4,"2A2A30","6A6A70","sleek black dolphin","click","Not a killer whale. Still scary.","mammal,aquatic,ocean"},
@@ -390,7 +393,6 @@ return {
 	{"floor is lava","KADNOI","KS",6,3,4,"FF3D00","FFB300","floor turning into glowing lava","bubble","It's not a game anymore.","fire,meme,silly"},
 	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
 	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
-	{"floss","KMBONA","Ujd",2,8,1,"A7F3D0","FFFFFF","figure swinging hips and arms opposite ways, minty string","swish","For your teeth. Or the dance floor. Both.","meme,dance"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
 	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
@@ -401,6 +403,4 @@ return {
 	{"flower pot","BEBA2K","eV",1,5,2,"B5653C","2E8B57","terracotta pot","clank","Falls off windowsills dramatically.","tool"},
 	{"flower shield","NGCIMI","GFSa",3,1,4,"F06292","FFEB3B","spinning dome of petals","rustle","Petals swirl. Arrows bounce.","plant,flower"},
 	{"flower shop","EMCNII","dFSc",2,1,4,"F06292","43A047","buckets of flowers out front","ding","Smells lovely. Heals a bit.","structure,building,shop,plant"},
-	{"flower tower","NGDMMI","GFSe",4,1,5,"F06292","43A047","spire of stacked blooms","rustle","Shoots petals from the top.","plant,flower"},
-	{"flowerhorn","ABAJEC","dB",1,6,1,"E8401E","3AA0E8","bright fish with giant head hump","splash","Giant forehead bump. Fancy.","fish,aquatic"},
 }
