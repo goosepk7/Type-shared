@@ -333,15 +333,16 @@ local function unit(B: any, kind: string, i: number, p: { number }, s: number, d
 		-- quadcopter: a hub with four arms, rotor discs on the heroes
 		B:block(s * 0.62, s * 0.26, s * 0.62, flat, { col = "primary", mat = "plastic", bone = bone, pri = pri, role = "body", name = "Unit" .. i })
 		B:block(s * 1.5, s * 0.08, s * 0.12, Geom.mul(flat, at(0, s * 0.02, 0, 0, rad(45), 0)), { col = "dark", mat = "plastic", bone = bone, pri = pri + 0.05, role = "detail", name = "ArmA" .. i, needs = "Unit" .. i })
-		local used = 2
+		-- both arms on every unit: the X reads as a quadcopter even far back in the swarm
+		B:block(s * 1.5, s * 0.08, s * 0.12, Geom.mul(flat, at(0, s * 0.03, 0, 0, rad(-45), 0)), { col = "dark", mat = "plastic", bone = bone, pri = pri + 0.06, role = "detail", name = "ArmB" .. i, needs = "Unit" .. i })
+		local used = 3
 		if hero then
-			B:block(s * 1.5, s * 0.08, s * 0.12, Geom.mul(flat, at(0, s * 0.03, 0, 0, rad(-45), 0)), { col = "dark", mat = "plastic", bone = bone, pri = pri + 0.06, role = "detail", name = "ArmB" .. i, needs = "Unit" .. i })
 			for j = 1, 4 do
 				local a = rad(45 + j * 90)
 				B:cyl(s * 0.04, s * 0.55, Geom.mul(flat, at(sin(a) * s * 0.53, s * 0.13, cos(a) * s * 0.53, 0, 0, rad(90))), { col = "wingGlass", mat = "glass", tr = 0.4, bone = bone, pri = pri + 0.1 + j * 0.01, role = "wing", name = "Rotor" .. i .. "_" .. j, needs = "Unit" .. i })
 			end
 			B:ball(s * 0.16, Geom.mul(flat, at(0, -s * 0.02, -s * 0.33)), { col = "red", mat = "neon", glow = true, bone = bone, pri = pri + 0.2, role = "gem", name = "Led" .. i, noCore = true })
-			used += 6
+			used += 5
 		end
 		return used
 	end
@@ -542,7 +543,7 @@ end
 
 -- part cost of a hero / filler unit (plans the count so the budget is spent on units, not dropped)
 local COST: { [string]: { number } } = {
-	firefly = { 2, 1 }, spark = { 1, 1 }, fish = { 2, 1 }, bat = { 2, 2 }, bird = { 2, 2 }, drone = { 8, 2 }, ghost = { 4, 2 },
+	firefly = { 2, 1 }, spark = { 1, 1 }, fish = { 2, 1 }, bat = { 2, 2 }, bird = { 2, 2 }, drone = { 8, 3 }, ghost = { 4, 2 },
 	pixie = { 4, 2 }, wyrm = { 4, 2 }, jelly = { 4, 2 }, slime = { 3, 1 }, shrimp = { 4, 1 }, rat = { 5, 2 }, robot = { 5, 2 },
 	imp = { 7, 2 }, ant = { 8, 2 }, beetle = { 4, 2 }, hand = { 6, 2 }, bit = { 1, 1 }, person = { 6, 2 }, bug = { 2, 2 }, wasp = { 4, 2 },
 }
