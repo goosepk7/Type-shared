@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sun spirit","AHCJKJ","KFe",5,6,3,"FDE047","F97316","round smiling glowing sun face","chime","Gives warm hugs. Very warm.","cosmic,fire"},
+	{"sun strike","FHDBKI","KO",7,8,1,"FFAB00","FFF8E1","pillar of sunlight slamming down","boom","The sun has picked a target.","holy,fire"},
 	{"sun sword","CHCHrK","KFf",8,6,5,"D4A72C","F2F2EE","blinding golden blade","shing","Daylight with an edge.","fantasy,holy"},
 	{"sunbeam","FHCBKI","KTe",5,9,1,"FFC93C","FFF8E1","thick golden ray with dust motes","hum","A cat's favourite spot. Now a weapon.","holy"},
 	{"sunbird","AMAJDB","dA",1,7,1,"2AB06A","E8302A","tiny iridescent nectar bird","tweet","Old World hummingbird lookalike.","bird,cute"},
@@ -401,6 +403,4 @@ return {
 	{"tickle monster","AMCJNA","jO",3,6,3,"A855F7","FBCFE8","fuzzy purple monster with long fingers","giggle","Weakness: laughing too hard.","silly,cute"},
 	{"tickle storm","KMCEOJ","jdO",3,6,1,"FFF59D","F8BBD0","cloud raining glowing feathers","giggle","Nobody can fight while laughing.","silly,cute"},
 	{"tidal surge","FBEF6F","kINP",7,6,4,"01579B","81D4FA","wide rising tide rushing forward","roar","The ocean has made a decision.","aquatic"},
-	{"tidal wheel","KBDHKI","Dkf",7,9,2,"3FA9F5","E8F6FF","a somersault in a water wheel, then a sweeping wave","slash","Total concentration. Then the river moves.","anime,sword,water,breathing"},
-	{"tide","FBDF6F","HIN",5,4,4,"1C5D99","A2D7F2","wide slow wall of rising water","splash","Comes in. Goes out. Takes your sandcastle.","aquatic"},
 }

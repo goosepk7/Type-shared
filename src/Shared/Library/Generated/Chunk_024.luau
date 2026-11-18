@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skydive","KFCAKB","kO",5,9,2,"81D4FA","FF5252","caster plunging from the sky onto target","whoosh","Arrives from above. Hard.","air,sport"},
 	{"skydiving grandpa","LFCJNB","DA",4,7,4,"78716C","DC2626","grandpa with goggles in freefall","whoosh","Still got it. Mostly.","silly,family"},
 	{"skyscraper","EMFCII","GkS",4,1,10,"90CAF9","37474F","very tall glass tower, antenna on top","thud","Scrapes the sky. Squashes the rest.","structure,building,heavy"},
 	{"skywriter plane","DFCKHB","jdAg",3,7,4,"F5F5F5","E53935","stunt plane leaving smoke letters","whoosh","Writes rude words in the sky.","vehicle,air,silly"},
@@ -402,6 +403,4 @@ return {
 	{"spirit fox","AHBJAA","QFZ",3,8,2,"F8FAFC","67E8F9","translucent glowing fox","chime","Leads you somewhere. Usually somewhere good.","spirit,cute"},
 	{"spirit guard","KLDJVJ","DQf",6,8,4,"8E7CF0","F2D57A","spectral fighter floating behind your shoulder","whoosh","He punches. A lot.","anime,spirit"},
 	{"spirit lantern","AABJGG","Kjc",2,4,2,"F97316","FDE68A","paper lantern with a face and tongue","giggle","Lights the way. Licks the way too.","yokai,spooky,silly"},
-	{"spirit medium","LLCJNI","jh",4,4,3,"7C3AED","E0F2FE","candles, scarf, crystal pendant","whisper","Talks to ghosts. Ghosts talk back.","spooky,magic"},
-	{"spirit whale","ALFJEB","AFk",8,2,8,"1E3A8A","A5F3FC","translucent whale swimming through sky","whale","A whale that swims in the clouds.","spirit,giant,cosmic"},
 }

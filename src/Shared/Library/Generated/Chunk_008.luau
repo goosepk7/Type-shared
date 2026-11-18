@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"disco ghost","AICJGJ","jdO",3,6,2,"F472B6","22D3EE","ghost in a disco ball sheet","beat","Haunts dance floors. Groovy.","ghost,silly,music"},
 	{"disco wizard","LLCJNA","jdO",4,5,3,"F472B6","22D3EE","sequin robe with disco ball staff","beat","Casts groove. Everyone dances.","magic,silly,music"},
 	{"discus","BMBA3F","Uke",3,8,6,"C9CED4","24262A","flat heavy spinning disc","bonk","Ancient frisbee for serious people.","sport,ancient"},
 	{"discus fish","ABAJEC","UdB",1,6,1,"E87A2A","3AA0C8","flat round disc fish","splash","A frisbee that swims.","fish,aquatic"},
@@ -403,4 +402,5 @@ return {
 	{"empower","KLCOKJ","DW",4,5,4,"FF6D00","FFE57F","glowing muscular outline aura","hum","Power! Unlimited... ish.","support"},
 	{"empress tree","NGDCMI","GWkS",3,1,6,"6D4C41","B39DDB","giant leaves and purple flower spikes","rustle","Grows insanely fast. Royal colours.","plant,tree,royal"},
 	{"empusa","AACJNA","Kcf",4,6,4,"DC2626","F59E0B","fiery hair, one bronze leg","hiss","One bronze leg. Great at kicks.","mythical,spooky"},
+	{"emu","AMDJDA","Djkf",5,8,5,"6A5A4A","3AA0D8","shaggy brown feathers, blue neck","boom","Won a war against people. Really.","bird,flightless"},
 }

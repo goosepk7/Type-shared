@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spirit medium","LLCJNI","jh",4,4,3,"7C3AED","E0F2FE","candles, scarf, crystal pendant","whisper","Talks to ghosts. Ghosts talk back.","spooky,magic"},
+	{"spirit whale","ALFJEB","AFk",8,2,8,"1E3A8A","A5F3FC","translucent whale swimming through sky","whale","A whale that swims in the clouds.","spirit,giant,cosmic"},
 	{"spit","KBBAKB","de",1,9,1,"B3E5FC","FFFFFF","small glob arc","ptoo","Ptooey! Gross, but effective.","silly,gross"},
 	{"spitball","CMAAKK","je",1,9,1,"F2F2EE","F2F2EE","soggy paper wad","boing","Gross. Effective.","silly"},
 	{"spitting cobra","AMCJCD","jfMeN",4,6,3,"6A5440","E8C88A","hooded snake spitting venom","hiss","Aims for the eyes. Accurate too.","reptile,venomous"},
@@ -401,6 +403,4 @@ return {
 	{"sun pillar","GHCBKI","KF",5,6,1,"FFB300","FFF8E1","vertical golden light column from setting sun","hum","The sun stands up straight.","holy"},
 	{"sun shield","FHCIKI","GK",4,4,6,"FFB300","FFF8E1","blazing golden dome","hum","Too bright to hit.","holy,fire,defence"},
 	{"sun shower","GHBEOJ","dF",2,4,1,"FFE082","B3E5FC","sparkly rain falling in sunlight","patter","Rain and sun at once. Weird but nice.","cute"},
-	{"sun spirit","AHCJKJ","KFe",5,6,3,"FDE047","F97316","round smiling glowing sun face","chime","Gives warm hugs. Very warm.","cosmic,fire"},
-	{"sun strike","FHDBKI","KO",7,8,1,"FFAB00","FFF8E1","pillar of sunlight slamming down","boom","The sun has picked a target.","holy,fire"},
 }

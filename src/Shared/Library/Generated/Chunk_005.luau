@@ -402,4 +402,5 @@ return {
 	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
 	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
 	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
+	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
 }

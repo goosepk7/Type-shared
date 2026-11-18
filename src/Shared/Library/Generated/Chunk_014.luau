@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"insect","AGAJFB","AQMP",2,7,1,"4E6B2A","C9A227","six-legged bug, antennae, shiny green shell","buzz","Six legs. Zero respect for picnics.","insect"},
 	{"inside","MMCIlI","GFS",2,1,7,"FDE68A","7C4A1E","cosy four walls with a lamp, sofa and closed curtains","hush","It is raining. We have snacks. We live here now.","household"},
 	{"inspire","KHCOKJ","DF",3,5,3,"FFF59D","FFFFFF","bright glow of light above heads","chime","Believe! Then hit things.","support"},
 	{"instant noodles","IABOGI","FS",3,4,3,"E8C070","D72B2B","foam cup, curly noodles","slurp","Three minutes to victory.","edible,warm,healthy"},

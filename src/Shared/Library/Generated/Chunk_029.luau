@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"western omelette","IGBOKI","F",2,5,3,"F2D23A","D72B2B","omelet with ham and peppers","crunch","An omelet that rides horses.","edible,healthy,breakfast"},
+	{"westie","AMBJAA","dQf",2,6,2,"FFFFFF","F2EEE6","white fluffy terrier","yip","Small white dog. Big opinions.","mammal,pet,cute"},
 	{"weta","AMBJFA","dTP",2,6,1,"6A4A2A","C8A07A","huge spiky cricket","buzz","Giant cricket heavier than a mouse.","insect"},
 	{"wetsuit","BBCONI","B",1,7,3,"24262A","47D7E8","sleek neoprene suit","clank","Swim faster. Look sleeker.","armor,defense"},
 	{"whack","KMBAKB","kf",3,8,2,"FFAB91","FFFFFF","big comic swoosh and impact","whack","Whack-a-villain.","silly"},

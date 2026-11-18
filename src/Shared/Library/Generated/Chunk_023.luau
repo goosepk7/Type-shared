@@ -403,5 +403,4 @@ return {
 	{"sky taxi","DFCKHE","DAkg",4,7,5,"FFEB3B","212121","yellow pod with four rotors","hum","Hail a cab. In the sky.","future,silly"},
 	{"sky temple","MFENII","FlS",5,1,8,"FFFFFF","90CAF9","columns on a floating cloud","echo","Up where the wind gods live.","place,adventure,holy"},
 	{"skyburst finale","BADNkB","EeP",7,5,3,"FFC84A","FF3E9A","five firework shells burst over the area in turn","boom","Ooh. Aah. Ow.","holiday,new year,fireworks,explosive"},
-	{"skydive","KFCAKB","kO",5,9,2,"81D4FA","FF5252","caster plunging from the sky onto target","whoosh","Arrives from above. Hard.","air,sport"},
 }

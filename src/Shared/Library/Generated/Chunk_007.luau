@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
 	{"cream tea","IGBOKI","F",2,5,3,"F7F2EC","C8762B","tea with scones and jam","crunch","Very British. Very civilized.","edible,healthy,fancy"},
 	{"creamed corn","IMBLGI","SNP",2,3,3,"F2D06A","F2E8C8","creamy yellow mush","gloop","Corn that gave up.","edible,sticky"},
 	{"create","KLCOKJ","WFh",4,5,3,"22D3EE","F472B6","sparkling hands shaping a glowing blob into a little house","chime","Glue, glitter, and a dream.","magic,art"},
@@ -403,4 +402,5 @@ return {
 	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
 	{"disco ball","BHCG3K","jca",2,2,3,"C9CED4","A66BDB","spinning mirrored sphere","squeak","Dance fight!","party"},
 	{"disco floor","BHDNII","jd",2,1,5,"A66BDB","3FC1D9","flashing tile floor","beep","Can't stop dancing.","tech"},
+	{"disco ghost","AICJGJ","jdO",3,6,2,"F472B6","22D3EE","ghost in a disco ball sheet","beat","Haunts dance floors. Groovy.","ghost,silly,music"},
 }

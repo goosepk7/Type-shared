@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"umbrella turret","OMCIyK","GP",3,1,5,"1F2F55","F2F2EE","giant spinning umbrella on post","thud","Covers the whole lane.","defense"},
+	{"umibozu","ABFJGC","kHB",8,3,8,"0F172A","94A3B8","giant black head rising from the sea","rumble","Asks for a bucket. Do not give it a bucket.","yokai,aquatic,giant"},
 	{"unbound blade","CHDNrI","DkTP",9,9,3,"96CDFF","14141C","a pillar of spirit light, a huge black blade, crescent waves","shing","Its true name, said out loud, at full volume.","anime,sword,transformation"},
 	{"uncle","LMCJNA","dk",3,4,5,"15803D","F8FAFC","hawaiian shirt, sunglasses","ding","Pulls a coin from your ear.","family"},
 	{"undead","AIDJLA","iPh",6,3,6,"57534E","84CC16","shambling crowd of skeletons and zombies","groan","Won't stay down. Very rude.","undead,spooky,swarm"},
@@ -401,6 +403,4 @@ return {
 	{"werewolf hunter","LHCJNA","Te",6,6,5,"1F2937","E5E7EB","long coat, silver bullets, lantern","bang","Full moon? Full ammo.","warrior,spooky"},
 	{"werewolf pup","AIBJAA","df",2,7,2,"78716C","F5F5F4","fuzzy pup that howls at nightlights","yip","Full moon. Full zoomies.","spooky,cute,canine"},
 	{"west","KECF6B","kIN",4,6,2,"B45309","FDBA74","compass needle on W, tumbleweed and a setting sun","yeehaw","Go west, young summon. Mind the tumbleweed.","map,western"},
-	{"western omelette","IGBOKI","F",2,5,3,"F2D23A","D72B2B","omelet with ham and peppers","crunch","An omelet that rides horses.","edible,healthy,breakfast"},
-	{"westie","AMBJAA","dQf",2,6,2,"FFFFFF","F2EEE6","white fluffy terrier","yip","Small white dog. Big opinions.","mammal,pet,cute"},
 }

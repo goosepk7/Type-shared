@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"general store","EMCNII","dSch",2,1,5,"8D6E63","FFB300","wooden store with barrels on the porch","ding","Got everything. Mostly beans.","structure,building,shop"},
 	{"general tso's chicken","IABAKK","Kc",5,7,2,"C8402B","F2A62B","glossy spicy chicken chunks","sizzle","Sweet, spicy, and decorated.","edible,spicy,flammable"},
 	{"generation ship","DLFKHJ","GAgh",7,3,10,"B0BEC5","43A047","colossal ship with gardens inside","roar","A whole world in a ship.","vehicle,space"},
 	{"generator","ODCM1I","FSL",3,2,7,"F1C40F","4A4D52","boxy engine with wires and dials","hum","Brrrrr. The lights stay on.","mechanical,electric"},
@@ -403,4 +402,5 @@ return {
 	{"gravity snail","ALBJFA","HN",2,1,6,"7C3AED","FDE68A","snail with a swirling black-hole shell","squelch","Pulls you closer. Very, very slowly.","alien,silly"},
 	{"gravity storm","FLEN5K","lHPO",8,5,5,"311B92","B388FF","swirling purple storm flinging debris","whum","Up, down, sideways, all at once.","space,storm"},
 	{"gravity tower","ELDMII","GSHeO",5,1,7,"37474F","7C4DFF","tower with a floating orb that pulls","thud","Sucks enemies in. Then smashes.","structure,defense,tower,magnetic"},
+	{"gravity vortex","KLDN5K","SHN",6,4,5,"311B92","B388FF","swirling purple ground funnel","hum","Everyone slides to the middle.","space"},
 }

@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
 	{"clash","KMCFOB","kO",5,8,2,"FFAB40","FFFFFF","two forces colliding in a spark ring","clang","Sparks fly. Everyone flinches.","melee"},
 	{"class","MMDNlI","jSNh",4,1,5,"FDE68A","15803D","rows of desks, chalkboard, thirty raised hands","bell","Pop quiz. Sit down. Eyes forward.","school"},
 	{"class clown","LMCJNA","jd",3,6,3,"FACC15","DC2626","whoopee cushion, grin","honk","Got detention. Worth it.","school,silly"},
@@ -403,4 +402,5 @@ return {
 	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
 	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 	{"cream puff","IMBLKI","dSc",2,3,3,"E8C88A","F7F2EC","round puff pastry, cream","chomp","A puff of cream in a pastry cloud.","edible,sweet"},
+	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tidal wheel","KBDHKI","Dkf",7,9,2,"3FA9F5","E8F6FF","a somersault in a water wheel, then a sweeping wave","slash","Total concentration. Then the river moves.","anime,sword,water,breathing"},
+	{"tide","FBDF6F","HIN",5,4,4,"1C5D99","A2D7F2","wide slow wall of rising water","splash","Comes in. Goes out. Takes your sandcastle.","aquatic"},
 	{"tide elemental","ABDJOJ","kIB",7,5,5,"0369A1","E0F2FE","curling ocean wave with glowing eyes","splash","Crashes in. Recedes. Crashes again.","elemental,aquatic"},
 	{"tide pool","MBBNII","FSN",2,1,4,"26C6DA","8D6E63","small rocky pool with starfish","rumble","Tiny ocean. Tiny crabs. Big pinch.","place,terrain,cute"},
 	{"tie","BMAONI","d",1,6,1,"1F2F55","C0392B","neat silk necktie","swish","Dressed to defeat.","clothing"},
@@ -401,6 +403,4 @@ return {
 	{"umbrella hat","BMAINK","Gd",1,6,1,"E84A5F","F2F2EE","tiny umbrella on a headband","thud","Hands free, rain free.","silly"},
 	{"umbrella stand","BMBC2I","G",1,1,3,"B58A3A","24262A","tall bucket full of umbrellas","thud","An arsenal of brollies.","household"},
 	{"umbrella sword","CMCHrK","GfT",5,6,4,"24262A","C9CED4","umbrella hiding a slim blade","thud","Gentlemanly. Pointy.","household"},
-	{"umbrella turret","OMCIyK","GP",3,1,5,"1F2F55","F2F2EE","giant spinning umbrella on post","thud","Covers the whole lane.","defense"},
-	{"umibozu","ABFJGC","kHB",8,3,8,"0F172A","94A3B8","giant black head rising from the sea","rumble","Asks for a bucket. Do not give it a bucket.","yokai,aquatic,giant"},
 }
