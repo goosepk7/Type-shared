@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beech tree","NGECMI","GWkS",4,1,8,"9E9E9E","7CB342","smooth grey trunk, wide crown","rustle","Smooth bark. Rough day for you.","plant,tree"},
 	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
 	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
@@ -402,5 +403,4 @@ return {
 	{"bracket fungus","NJBLMI","GS",2,1,5,"A1887F","FFCC80","stacked fan shelves on a log","poof","Free shelving, grown on demand.","plant,fungus"},
 	{"braid","BMBLCD","fHN",3,5,5,"E0B050","E63946","thick woven blond braid with a red bow, lasso loop","swish","Rapunzel called. She wants her rope back.","body"},
 	{"brain","BLBMGE","jleO",5,3,2,"F4A6B7","E57390","pink wrinkly brain floating, psychic rings","hum","Big brain time. Finally.","body,science,silly"},
-	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
 }

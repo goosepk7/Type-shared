@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cardinal","AMAJDB","dA",1,7,1,"D8201E","1E1E1E","bright red bird, crest, black mask","tweet","So red it looks painted.","bird,cute"},
 	{"cardinalfish","ABAJEC","dB",1,6,1,"E8501E","F2E8D8","small red fish","splash","Dads carry eggs in their mouths.","fish,aquatic"},
 	{"cardon","NEFCMI","GST",5,1,9,"558B2F","F5F5F5","massive multi-armed cactus","thud","Biggest cactus around. Biggest hug.","plant,desert,sharp"},
 	{"care package","BMCN2J","ch",3,2,6,"6E7A3C","FF5A2A","military crate drifting down under a parachute","thud","Help from the sky. Finders keepers.","gaming,object,military"},
@@ -402,5 +403,4 @@ return {
 	{"clay","FEBLII","GN",3,2,5,"B66A50","E0B49A","sticky reddish clay lumps","squelch","Squish. Mould. Trap. Repeat.","heavy"},
 	{"clay golem","AECJNA","GWf",5,3,6,"A16207","FDE68A","lumpy clay figure with finger marks","squelch","Sculpted by kids. Feels it.","construct"},
 	{"claymore mine","BKBLII","ETP",6,1,3,"6B7B3A","24262A","curved box on little legs","snap","Front toward enemy.","trap,explosive"},
-	{"clean","KBCF6B","FIX",3,6,2,"7DD3FC","FFFFFF","sparkling wipe arc leaving a gleaming streak and bubbles","squeak","Squeaky clean. Hear that? That is the squeak.","household,support"},
 }

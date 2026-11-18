@@ -48,7 +48,7 @@ return {
 	{"vest","BMBONI","G",1,6,2,"1F2F55","D4A72C","buttoned waistcoat","swish","Dapper and ready.","clothing"},
 	{"veteran","LMCJNA","Ge",5,4,6,"4D7C0F","CA8A04","medals, eyepatch, grizzled beard","ding","Seen it all. Not impressed.","military"},
 	{"veterinarian","LGCJNA","Fh",3,5,4,"F8FAFC","22C55E","scrubs with paw prints, treat pouch","chime","Brings every animal friend in town.","healer"},
-	{"vibe check","KHBFOB","jO",3,8,1,"CE93D8","FFF59D","pastel ring checking everyone","ding","Vibe check! You failed.","meme"},
+	{"vibe check","KHCNOB","kI",4,8,1,"CE93D8","FFF59D","a pastel ring pulsing out from you","ding","Vibe check! Your friends passed. Your enemies did not.","meme,internet,support"},
 	{"vibration","FEBFOB","O",3,7,2,"9C8B7A","E0D4C4","trembling ground rings","buzz","Bzzzzzzzz.","silly"},
 	{"vibro blade","CKCHrK","fTO",6,8,4,"DDE3E8","3FC1D9","humming buzzing blade","shing","It hums. Then it cuts.","scifi,sharp"},
 	{"viburnum","NGCNMI","dFSe",1,1,4,"FFFFFF","2E7D32","round white snowball flower heads","rustle","Throws snowballs. Flower ones.","plant,flower"},

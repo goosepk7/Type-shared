@@ -291,6 +291,7 @@ return {
 	{"mega","KLDOKI","DW",6,5,6,"FF4081","FFD54F","giant glowing upgrade aura","boom","Everything, but MEGA.","meme"},
 	{"mega bomb","CAEGKF","EkP",9,2,3,"24262A","E67E22","gigantic round bomb, thick fuse","boom","THE bomb. Capital letters.","explosive,danger"},
 	{"mega centipede","AJCJFA","DfM",5,7,4,"7C2D12","F59E0B","long segmented body, hundred legs","skitter","So many legs. So much speed.","insect,spooky"},
+	{"mega flex","KHCOKI","GDk",5,4,5,"FFC24A","FFF6D6","two glowing arms of light flexing beside you, shine lines","ding","Not a fight. A pose. You lost to the pose.","meme,internet,buff"},
 	{"mega skyscraper","EMFCII","GkSO",8,1,10,"B0BEC5","90CAF9","needle-thin glass tower over the clouds","rumble","Taller than clouds. Falls further.","structure,landmark"},
 	{"megacerops","AMDJAA","DkO",7,4,8,"6A5A4A","B8A890","rhino-like with Y-shaped nose horn","roar","Has a slingshot on its nose.","mammal,extinct,ancient,heavy"},
 	{"megalania","AMEJAA","CfM",8,7,7,"6A5A3A","C8A87A","giant prehistoric monitor lizard","hiss","A komodo dragon, but huge.","reptile,extinct,ancient"},
