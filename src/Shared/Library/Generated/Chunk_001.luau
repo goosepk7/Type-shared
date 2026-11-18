@@ -403,5 +403,4 @@ return {
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
 	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
 	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
-	{"assassin","LICJNA","ZTMY",6,9,3,"1F2937","7F1D1D","hood, hidden blade, leap of faith","whoosh","Silent. Sneaky. Allergic to hay bales.","stealth"},
 }

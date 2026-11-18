@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"assassin","LICJNA","ZTMY",6,9,3,"1F2937","7F1D1D","hood, hidden blade, leap of faith","whoosh","Silent. Sneaky. Allergic to hay bales.","stealth"},
 	{"assassin bug","AMAJFA","dATMP",1,6,1,"3A2A1A","D8401E","long beak, stalking","buzz","A tiny bug with a big name.","insect"},
 	{"assault rifle","CKCAwI","TeV",6,7,4,"24262A","6B7B3A","rifle with curved magazine","rattle","The standard-issue all-rounder.","modern,ranged"},
 	{"aster","NGBNMI","dFS",2,1,2,"7E57C2","FFEB3B","starry purple daisy","rustle","Star-shaped and proud of it.","plant,flower"},

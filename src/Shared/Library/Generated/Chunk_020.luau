@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
 	{"pom pom crab","ABBJRA","GfTM",2,4,5,"F2D0B0","F2A0C0","crab holding anemone pompoms","clack","Cheerleader crab with stingy pompoms.","crustacean,aquatic,armored,cute"},
 	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},

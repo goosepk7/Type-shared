@@ -402,4 +402,5 @@ return {
 	{"flying snake","AMCJCB","AfMN",4,6,3,"2A2A1E","8AE04A","flattened gliding snake","hiss","A snake that flies. Why would you.","reptile,venomous"},
 	{"flying squirrel","AMAJAB","CdAb",1,6,1,"9A8A7A","F2EEE6","skin flaps between legs, gliding","squeak","Built-in wingsuit.","mammal,cute"},
 	{"flypaper","BMBLII","cNO",1,1,1,"F1C40F","D2B48C","hanging sticky yellow strip","snap","Bzzz... stuck.","trap,sticky"},
+	{"foal","AMCKAA","Dkg",2,8,5,"A06A3E","F0E0C8","wobbly long legs, short fluffy tail","neigh","All legs and zero coordination.","mammal,cute"},
 }

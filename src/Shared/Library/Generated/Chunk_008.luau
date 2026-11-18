@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
 	{"doom","KIEGKI","iEO",8,4,4,"1A0033","FF1744","ominous black-red orb descending slowly","boom","You feel a sense of impending doom.","spooky"},
 	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
 	{"doorbell","BMALKI","dc",1,1,3,"B58A3A","F2F2EE","small round push button","ding","Ding dong! Who could it be?","household"},
