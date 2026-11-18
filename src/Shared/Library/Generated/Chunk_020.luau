@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"planet","MLFGKJ","EkHe",8,2,10,"5C6BC0","81D4FA","huge sphere with swirling cloud bands","rumble","Summons an entire planet. Bit much, honestly.","space"},
+	{"planet buster","HEFAKB","EkPO",10,3,9,"5D4037","FF6D00","planet-sized glowing rock dropping in slow motion","boom","Overkill? Never heard of it.","space,explosive,heavy,danger"},
+	{"planet earth","MEFGKJ","EFkHe",8,2,10,"1E88E5","43A047","blue and green sphere with white swirls","rumble","Mostly harmless. Mostly.","space"},
 	{"planet eater","AIFJGJ","iH",9,1,10,"1E1B4B","DC2626","moon-sized creature with a gaping mouth","rumble","Hungry for worlds. Dessert: moons.","alien,cosmic,boss,danger"},
 	{"planet laser","OHFB1I","ETe",10,3,9,"8E9196","FF2D2D","colossal dish focusing green-red beam","hum","Overkill as a lifestyle.","scifi,space,danger"},
 	{"planetarium","ELDNII","jS",3,1,7,"1A237E","FFD54F","dome full of projected stars","thud","Turns out the lights. Confusing.","structure,building,space"},
@@ -400,7 +403,4 @@ return {
 	{"pygmy hippo","ABCJAA","DkIOB",4,4,8,"5E4E56","C88E8E","small round hippo, shiny skin","trumpet","Small, round, and dramatically splashy.","mammal,heavy,wild,cute"},
 	{"pygmy owl","AMAJDB","jAZT",2,7,2,"8A6A4A","F2E8D8","tiny owl with fake eyes on back","hoot","Has fake eyes on the back of its head.","bird,nocturnal,predator"},
 	{"pylon","EDDMII","GSeL",4,1,7,"9E9E9E","616161","lattice steel tower with wire arms","hum","High voltage. Low tolerance.","structure,defense,tower"},
-	{"pyramid","EMFCII","GSh",5,1,10,"E6C27A","C9A55A","giant four-sided stone triangle","thud","Built by thousands. Climbed by you.","structure,defense,tower,ancient"},
-	{"pyro","FACAKB","Ke",5,8,2,"FF5722","FFD180","flickering flame sigil bolt","whoosh","Fire, but the fancy word.","fire,magic"},
-	{"pyroblast","FADAKB","KEke",8,5,2,"FF3D00","FFEB3B","huge slow fireball charging then firing","roar","Charge it up. Watch it go.","fire,explosive"},
 }

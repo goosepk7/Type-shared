@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tide elemental","ABDJOJ","kIB",7,5,5,"0369A1","E0F2FE","curling ocean wave with glowing eyes","splash","Crashes in. Recedes. Crashes again.","elemental,aquatic"},
+	{"tide pool","MBBNII","FSN",2,1,4,"26C6DA","8D6E63","small rocky pool with starfish","rumble","Tiny ocean. Tiny crabs. Big pinch.","place,terrain,cute"},
+	{"tie","BMAONI","d",1,6,1,"1F2F55","C0392B","neat silk necktie","swish","Dressed to defeat.","clothing"},
+	{"tie up","KMCLII","NO",4,5,3,"A1887F","FFE0B2","glowing ropes wrapping around target","creak","All tied up with nowhere to go.","silly"},
+	{"tiger","AMDJAA","DfT",7,8,5,"E07A1F","1C1C1C","orange body, black stripes, white muzzle","roar","Stripes on the fur AND the skin. Committed.","mammal,predator,wild"},
 	{"tiger beetle","AMAJFA","GDf",1,9,4,"2A8A4A","F2E8C0","fast long-legged metallic beetle","click","So fast it goes blind while running.","insect,armored"},
 	{"tiger cub","AMBJAA","DfT",2,8,5,"E8902E","1C1C1C","fluffy striped baby tiger","roar","Big paws. Tiny roar.","mammal,predator,wild,cute"},
 	{"tiger fish","ABCJEC","DfTB",5,7,4,"C8C8C0","E8301E","silver fish with giant fangs","splash","A piranha that hit the gym.","fish,aquatic"},
@@ -398,9 +403,4 @@ return {
 	{"umbrella sword","CMCHrK","GfT",5,6,4,"24262A","C9CED4","umbrella hiding a slim blade","thud","Gentlemanly. Pointy.","household"},
 	{"umbrella turret","OMCIyK","GP",3,1,5,"1F2F55","F2F2EE","giant spinning umbrella on post","thud","Covers the whole lane.","defense"},
 	{"umibozu","ABFJGC","kHB",8,3,8,"0F172A","94A3B8","giant black head rising from the sea","rumble","Asks for a bucket. Do not give it a bucket.","yokai,aquatic,giant"},
-	{"unbound blade","CHDNrI","DkTP",9,9,3,"96CDFF","14141C","a pillar of spirit light, a huge black blade, crescent waves","shing","Its true name, said out loud, at full volume.","anime,sword,transformation"},
-	{"uncle","LMCJNA","dk",3,4,5,"15803D","F8FAFC","hawaiian shirt, sunglasses","ding","Pulls a coin from your ear.","family"},
-	{"undead","AIDJLA","iPh",6,3,6,"57534E","84CC16","shambling crowd of skeletons and zombies","groan","Won't stay down. Very rude.","undead,spooky,swarm"},
-	{"underdog","LHBJNA","WF",2,5,3,"60A5FA","FACC15","tiny scrappy fighter with a big heart","ding","Nobody believed. Grows anyway.","hero"},
-	{"underground lake","MBDNII","ZSN",3,1,6,"1A237E","4FC3F7","still black lake in a cavern","rumble","Something big swims down here.","place,terrain"},
 }

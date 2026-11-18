@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"unbound blade","CHDNrI","DkTP",9,9,3,"96CDFF","14141C","a pillar of spirit light, a huge black blade, crescent waves","shing","Its true name, said out loud, at full volume.","anime,sword,transformation"},
+	{"uncle","LMCJNA","dk",3,4,5,"15803D","F8FAFC","hawaiian shirt, sunglasses","ding","Pulls a coin from your ear.","family"},
+	{"undead","AIDJLA","iPh",6,3,6,"57534E","84CC16","shambling crowd of skeletons and zombies","groan","Won't stay down. Very rude.","undead,spooky,swarm"},
+	{"underdog","LHBJNA","WF",2,5,3,"60A5FA","FACC15","tiny scrappy fighter with a big heart","ding","Nobody believed. Grows anyway.","hero"},
+	{"underground lake","MBDNII","ZSN",3,1,6,"1A237E","4FC3F7","still black lake in a cavern","rumble","Something big swims down here.","place,terrain"},
 	{"underpants","BMAONI","jd",1,6,1,"F2F2EE","C0392B","spotty boxer shorts","swish","Over the trousers. Like a hero.","clothing,silly"},
 	{"undertaker","LICJNA","Gh",4,3,6,"111827","F8FAFC","tall black hat, long coat","ding","Measured you already. Just in case.","spooky"},
 	{"undertow","FBCLII","HN",5,5,3,"01579B","4FC3F7","hidden swirling pull under the surface","swoosh","Feels calm. Isn't.","aquatic"},
@@ -398,9 +403,4 @@ return {
 	{"west","KECF6B","kIN",4,6,2,"B45309","FDBA74","compass needle on W, tumbleweed and a setting sun","yeehaw","Go west, young summon. Mind the tumbleweed.","map,western"},
 	{"western omelette","IGBOKI","F",2,5,3,"F2D23A","D72B2B","omelet with ham and peppers","crunch","An omelet that rides horses.","edible,healthy,breakfast"},
 	{"westie","AMBJAA","dQf",2,6,2,"FFFFFF","F2EEE6","white fluffy terrier","yip","Small white dog. Big opinions.","mammal,pet,cute"},
-	{"weta","AMBJFA","dTP",2,6,1,"6A4A2A","C8A07A","huge spiky cricket","buzz","Giant cricket heavier than a mouse.","insect"},
-	{"wetsuit","BBCONI","B",1,7,3,"24262A","47D7E8","sleek neoprene suit","clank","Swim faster. Look sleeker.","armor,defense"},
-	{"whack","KMBAKB","kf",3,8,2,"FFAB91","FFFFFF","big comic swoosh and impact","whack","Whack-a-villain.","silly"},
-	{"whack a mole","AECLtG","Ck",4,7,4,"8B5A2B","FF4F6E","mole holes round you and a cartoon mallet","bonk","Bonk! Missed. Bonk!","game,arcade,area"},
-	{"whack-a-mole mallet","BMCHtI","kfO",3,7,3,"C0392B","F1C40F","padded arcade mallet","thud","Bonk! Bonk! Bonk!","game,silly"},
 }

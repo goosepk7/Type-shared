@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lag monster","LLCJNA","jNY",3,2,4,"22C55E","F472B6","glitchy figure teleporting in jitters","zap","Rubber-bands into your face.","meme,gaming,silly"},
+	{"lag spike","KLCNOI","jNY",5,3,3,"3AF2FF","FF3AD0","a glitchy field of pixel static and colour split","bzzt","Your ping is now 9000. Enjoy last second, again.","gaming,meme,glitch"},
+	{"lahmacun","IMBAKK","Uke",3,7,2,"D9A04A","C8302B","thin flatbread with minced meat","whoosh","A crispy thin pizza from Turkey.","edible"},
 	{"lake","MBENII","SN",2,1,6,"1E88E5","7CB342","calm blue water with reeds","splash","Calm on top. Hmm, what is below?","place,terrain"},
 	{"lake effect snow","GCDEOJ","JSN",6,3,4,"ECEFF1","90CAF9","narrow band dumping heaps of snow","hush","Feet of snow. In one stripe.","frozen,storm"},
 	{"lake monster","ABEJCC","ZfB",7,4,7,"1E3A8A","4ADE80","long neck, humped back above still water","splash","Blurry in every single photo.","cryptid,aquatic"},
@@ -400,7 +403,4 @@ return {
 	{"loop","KLBL5K","jNY",3,6,2,"22D3EE","F472B6","glowing figure-eight track sending things back to start","warp","See flavour text: loop.","gaming,magic"},
 	{"loop de loop","KFBOKB","D",2,8,2,"FFEB3B","81D4FA","looping motion trail ribbon","whee","Wheeeee! Around we go.","silly"},
 	{"loot","BHCELJ","dFcP",3,5,3,"FACC15","A855F7","shower of coins, gems, a glowing sword and a boot","jingle","Legendary drop! It is a boot. One boot.","gaming,shiny"},
-	{"loot goblin person","LEBJNA","bY",2,9,2,"65A30D","FACC15","gremlin-ish player with a sack of loot","cackle","Grabs every chest. Shares nothing.","meme,gaming,goblin"},
-	{"lop rabbit","AMBJAG","UCd",2,6,1,"D8B898","F7F0E6","droopy floppy ears","squeak","Ears are on strike.","mammal,cute"},
-	{"loppers","JKBHJK","fV",3,5,4,"2E8B57","C9CED4","long-handled branch cutters","clank","Chomp. Branch gone.","garden"},
 }

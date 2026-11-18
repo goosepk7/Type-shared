@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weta","AMBJFA","dTP",2,6,1,"6A4A2A","C8A07A","huge spiky cricket","buzz","Giant cricket heavier than a mouse.","insect"},
+	{"wetsuit","BBCONI","B",1,7,3,"24262A","47D7E8","sleek neoprene suit","clank","Swim faster. Look sleeker.","armor,defense"},
+	{"whack","KMBAKB","kf",3,8,2,"FFAB91","FFFFFF","big comic swoosh and impact","whack","Whack-a-villain.","silly"},
+	{"whack a mole","AECLtG","Ck",4,7,4,"8B5A2B","FF4F6E","mole holes round you and a cartoon mallet","bonk","Bonk! Missed. Bonk!","game,arcade,area"},
+	{"whack-a-mole mallet","BMCHtI","kfO",3,7,3,"C0392B","F1C40F","padded arcade mallet","thud","Bonk! Bonk! Bonk!","game,silly"},
 	{"whale","ABFJEC","kIB",8,3,9,"3E5A78","C8D6E2","enormous streamlined body, fluke tail, spout","whalesong","Burps rainbows from its blowhole. Allegedly.","mammal,aquatic,ocean,heavy"},
 	{"whale shark","ABFJEC","DHB",8,3,9,"3A5470","F2F2EE","colossal shark, white polka-dot back","chomp","Biggest fish. Eats only tiny stuff.","fish,aquatic,ocean,predator,gentle"},
 	{"wham","KMCAKB","k",5,9,1,"2979FF","FFEB3B","comic jagged impact bubble","wham","Wham! Comic book justice.","silly"},
@@ -53,6 +58,7 @@ return {
 	{"whole wheat bread","IMCCII","Gk",3,2,6,"A8723A","D8B08A","brown loaf, grain flecks","thud","Healthy bread for serious defenders.","edible,giant"},
 	{"whoopee bomb","CJADKK","jMO",2,6,1,"8BC34A","7A4E2D","squishy bag puffing green gas","fart","PFFFT. Evacuate.","silly,prank"},
 	{"whoopee cushion","BMALII","jd",1,1,1,"F06292","C0392B","flat rubber cushion","fart","Pffffbbbt.","trap,silly,prank"},
+	{"whoopee decoy","BMCLII","dEc",3,1,2,"FF6CAA","D63878","big pink prank cushion that bots attack instead of you","squeak","The oldest joke there is. Still works.","holiday,prank,decoy"},
 	{"whoopie pie","IMBLKI","dSc",2,3,3,"3A1A0C","F7F2EC","two dark cakes, cream filling","chomp","A pie that's actually a cake hug.","edible,sweet,dessert"},
 	{"whooping crane","AMCJDA","dAfT",3,5,2,"F2F2F2","E8301E","white crane with red cap","squawk","Whoops loudly. Dances well.","bird,wetland"},
 	{"whoosh","KFBFOB","DI",2,10,1,"E1F5FE","FFFFFF","swishy air streaks","whoosh","Whoooosh. Was that fast? Yes.","air,silly"},

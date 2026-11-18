@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"name tag","BMAONI","d",1,6,1,"F2F2EE","C0392B","sticker reading HELLO","swish","Hello, my name is Victory.","clothing,silly"},
+	{"nanite cloud","OKCDOE","iSP",6,4,2,"C9CED4","4A4D52","shimmering metallic fog","hum","Eats everything. Politely.","scifi"},
+	{"nano blade","CKCHrI","fT",7,9,3,"C9CED4","3FC1D9","impossibly thin shimmering blade","zap","Thinner than a thought.","scifi,sharp"},
 	{"nanobot swarm","OKBJLJ","iWFVP",4,8,2,"94A3B8","22D3EE","shimmering cloud of tiny silver specks","buzz","Millions of tiny robots. Zero personal space.","robot,swarm"},
 	{"nanotyrannus","AMDJBA","DkfT",6,6,7,"6A5A3A","C8A07A","slim teen tyrannosaur","roar","Maybe a teenage T rex. Debated.","dinosaur,extinct,reptile,predator"},
 	{"napalm","CADNOF","KSP",8,3,2,"FF6A1A","24262A","sticky burning gel","boom","Everything sticks. Everything burns.","explosive,flammable"},
@@ -400,7 +403,4 @@ return {
 	{"palm tree","NGDCMI","GkSe",4,1,6,"8D6E63","43A047","tall curved trunk, frond crown, coconuts","rustle","Bonk. Coconut. Bonk.","plant,tree"},
 	{"palmier","IMBAKK","Uke",3,7,2,"D9A04A","F2C870","heart-shaped flaky swirl","whoosh","A pastry shaped like a heart.","edible"},
 	{"palomino","AMDKAA","Dkg",5,8,5,"E8C07A","F7F2EA","golden horse, white mane","neigh","Golden coat, blond mane. Fabulous.","mammal"},
-	{"pan","AGCJNA","jcO",5,6,4,"92400E","84CC16","goat-legged piper, curling horns","flute","One tune and everyone panics.","mythical,music"},
-	{"pan de sal","IMBAKF","ke",3,6,2,"D9A04A","F2E2C2","small round crumb-dusted roll","splat","Morning rolls from the Philippines.","edible"},
-	{"pan flute","BGBFJI","dc",2,6,2,"C49A6C","B89B6A","row of bamboo tubes","woodwind","Breathy and mysterious.","music"},
 }

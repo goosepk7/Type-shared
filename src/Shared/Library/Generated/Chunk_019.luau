@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pan","AGCJNA","jcO",5,6,4,"92400E","84CC16","goat-legged piper, curling horns","flute","One tune and everyone panics.","mythical,music"},
+	{"pan de sal","IMBAKF","ke",3,6,2,"D9A04A","F2E2C2","small round crumb-dusted roll","splat","Morning rolls from the Philippines.","edible"},
+	{"pan flute","BGBFJI","dc",2,6,2,"C49A6C","B89B6A","row of bamboo tubes","woodwind","Breathy and mysterious.","music"},
 	{"panacea","KHCOKJ","F",1,5,4,"FFF59D","69F0AE","rainbow glowing healing sparkle","chime","Fixes everything. Everything.","support,holy"},
 	{"pancake","IMBAKK","Uke",3,7,2,"E8B860","C8762B","round fluffy disc, butter pat","whoosh","A fluffy frisbee with syrup.","edible,breakfast"},
 	{"pancake shield","IMCIII","Ga",3,3,6,"E8B860","C8762B","round fluffy pancake on arm","thud","Syrup-coated deflection.","edible"},
@@ -400,7 +403,4 @@ return {
 	{"plague swarm","FJEDOJ","QSMP",7,5,3,"827717","3E2723","dark buzzing cloud of glowing specks","buzz","An itchy cloud of bad news.","toxic,spooky"},
 	{"plain","MGEN6I","DSN",5,1,7,"9BC53D","D9E76C","wide flat sea of waving grass under a big sky","rustle","Miles of nothing. Then a bison.","terrain,place"},
 	{"plan","KLBOnE","jhY",4,5,3,"1E3A8A","FFFFFF","blueprint with arrows, X marks and a doodled explosion","rustle","Step 1: summon. Step 2: ??? Step 3: win.","meme,silly"},
-	{"planet","MLFGKJ","EkHe",8,2,10,"5C6BC0","81D4FA","huge sphere with swirling cloud bands","rumble","Summons an entire planet. Bit much, honestly.","space"},
-	{"planet buster","HEFAKB","EkPO",10,3,9,"5D4037","FF6D00","planet-sized glowing rock dropping in slow motion","boom","Overkill? Never heard of it.","space,explosive,heavy,danger"},
-	{"planet earth","MEFGKJ","EFkHe",8,2,10,"1E88E5","43A047","blue and green sphere with white swirls","rumble","Mostly harmless. Mostly.","space"},
 }

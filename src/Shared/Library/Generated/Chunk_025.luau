@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spit","KBBAKB","de",1,9,1,"B3E5FC","FFFFFF","small glob arc","ptoo","Ptooey! Gross, but effective.","silly,gross"},
+	{"spitball","CMAAKK","je",1,9,1,"F2F2EE","F2F2EE","soggy paper wad","boing","Gross. Effective.","silly"},
+	{"spitting cobra","AMCJCD","jfMeN",4,6,3,"6A5440","E8C88A","hooded snake spitting venom","hiss","Aims for the eyes. Accurate too.","reptile,venomous"},
+	{"spitting spider","AJBJQA","fMeN",2,6,2,"E8D0A0","1E1E1E","spotted spider spitting glue","skitter","Spits sticky glue.","arachnid,spooky,venomous"},
+	{"spittlebug","AMAJFG","dASP",1,6,1,"8A6A4A","F2F2EE","bug hiding in spit foam","buzz","Lives in a bubble bath.","insect"},
 	{"splash","FBBF6B","dI",2,7,1,"3FA9F5","E3F6FF","crown-shaped water burst","splash","Cannonball! Everyone is wet now.","aquatic,silly"},
 	{"splash zone","FBCNOI","dN",2,4,2,"4FC3F7","E1F5FE","area of constant bouncing splashes","splash","You will get wet. Accept it.","aquatic,silly"},
 	{"splat","KMBAKB","dN",2,8,1,"AED581","FFFFFF","messy paint-like splat burst","splat","Splat. Messy and proud.","silly"},
@@ -398,9 +403,4 @@ return {
 	{"sun shower","GHBEOJ","dF",2,4,1,"FFE082","B3E5FC","sparkly rain falling in sunlight","patter","Rain and sun at once. Weird but nice.","cute"},
 	{"sun spirit","AHCJKJ","KFe",5,6,3,"FDE047","F97316","round smiling glowing sun face","chime","Gives warm hugs. Very warm.","cosmic,fire"},
 	{"sun strike","FHDBKI","KO",7,8,1,"FFAB00","FFF8E1","pillar of sunlight slamming down","boom","The sun has picked a target.","holy,fire"},
-	{"sun sword","CHCHrK","KFf",8,6,5,"D4A72C","F2F2EE","blinding golden blade","shing","Daylight with an edge.","fantasy,holy"},
-	{"sunbeam","FHCBKI","KTe",5,9,1,"FFC93C","FFF8E1","thick golden ray with dust motes","hum","A cat's favourite spot. Now a weapon.","holy"},
-	{"sunbird","AMAJDB","dA",1,7,1,"2AB06A","E8302A","tiny iridescent nectar bird","tweet","Old World hummingbird lookalike.","bird,cute"},
-	{"sunbittern","AMCJDA","jAfT",3,5,2,"8A6A4A","E8901E","wings flash sunset eyes","squawk","Flashes two giant sunset eyes.","bird,wetland"},
-	{"sunburn","FABAKB","KN",2,6,1,"FF8A80","FFE0B2","pinkish glow on target","sizzle","Should've worn sunscreen.","fire,silly"},
 }

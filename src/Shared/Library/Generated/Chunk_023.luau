@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea serpent hatchling","ABAJCC","HB",1,6,1,"0F766E","99F6E4","tiny looping serpent","hiss","Practices being scary. Not yet.","aquatic,cute"},
+	{"sea slug","ABAJGI","MN",1,1,2,"8A3AD8","F2A02A","neon frilly slug","squelch","The ocean's most fashionable slug.","mollusk,aquatic"},
+	{"sea snake","ABCJCC","fMNB",4,6,3,"3A5A8A","F2F2F0","banded snake, paddle tail","hiss","Swims with a paddle tail.","reptile,venomous"},
+	{"sea spider","ABBJRA","GfT",2,4,5,"E8D8C0","C88A5A","spindly legs, tiny body","clack","All legs, almost no body.","crustacean,aquatic,armored"},
 	{"sea sponge","ABCLMI","GiWN",3,1,4,"E8C83A","D8A02A","porous tube sponge","crackle","Soaks up everything. Even drama.","aquatic,ocean,reef"},
 	{"sea spray","FBBDOJ","dN",2,6,1,"8FD6F2","FFFFFF","fine salty mist burst","splash","Salty mist to the face.","aquatic"},
 	{"sea squirt","ABAJGI","GeN",1,1,6,"E8A04A","F2D07A","squishy tube with two siphons","squelch","Squirts water at you. Rude.","mollusk,aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"sky temple","MFENII","FlS",5,1,8,"FFFFFF","90CAF9","columns on a floating cloud","echo","Up where the wind gods live.","place,adventure,holy"},
 	{"skyburst finale","BADNkB","EeP",7,5,3,"FFC84A","FF3E9A","five firework shells burst over the area in turn","boom","Ooh. Aah. Ow.","holiday,new year,fireworks,explosive"},
 	{"skydive","KFCAKB","kO",5,9,2,"81D4FA","FF5252","caster plunging from the sky onto target","whoosh","Arrives from above. Hard.","air,sport"},
-	{"skydiving grandpa","LFCJNB","DA",4,7,4,"78716C","DC2626","grandpa with goggles in freefall","whoosh","Still got it. Mostly.","silly,family"},
-	{"skyscraper","EMFCII","GkS",4,1,10,"90CAF9","37474F","very tall glass tower, antenna on top","thud","Scrapes the sky. Squashes the rest.","structure,building,heavy"},
-	{"skywriter plane","DFCKHB","jdAg",3,7,4,"F5F5F5","E53935","stunt plane leaving smoke letters","whoosh","Writes rude words in the sky.","vehicle,air,silly"},
-	{"slab","BECLnI","GkO",5,2,8,"9CA3AF","6B7280","thick flat grey stone rectangle dropping flat","thud","Flat. Heavy. Final.","heavy"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skydiving grandpa","LFCJNB","DA",4,7,4,"78716C","DC2626","grandpa with goggles in freefall","whoosh","Still got it. Mostly.","silly,family"},
+	{"skyscraper","EMFCII","GkS",4,1,10,"90CAF9","37474F","very tall glass tower, antenna on top","thud","Scrapes the sky. Squashes the rest.","structure,building,heavy"},
+	{"skywriter plane","DFCKHB","jdAg",3,7,4,"F5F5F5","E53935","stunt plane leaving smoke letters","whoosh","Writes rude words in the sky.","vehicle,air,silly"},
+	{"slab","BECLnI","GkO",5,2,8,"9CA3AF","6B7280","thick flat grey stone rectangle dropping flat","thud","Flat. Heavy. Final.","heavy"},
 	{"slam","KEDNOI","kO",7,7,3,"6D4C41","FFCC80","big impact crater ring","boom","Slam dunk, but it is you.","heavy"},
 	{"slap","KMBAKB","kfO",3,10,1,"FFAB91","FFFFFF","red handprint flash","slap","Snap out of it!","silly"},
 	{"slapshot","BCBA3B","Uke",4,10,2,"20242B","7FD3F0","ice-blue puck skimming the ground, banking off walls","crack","Off the boards and right in.","sport,hockey,projectile"},
@@ -134,6 +138,7 @@ return {
 	{"snow fort","ECCCII","GSeN",3,1,4,"F5F5F5","90CAF9","low snow wall with a stack of snowballs","thud","Comes pre-loaded with snowballs.","silly,frozen"},
 	{"snow fortress","ECEMII","GJSe",4,1,6,"FFFFFF","B3E5FC","big fort of packed snow with towers","thud","Every tower full of snowballs.","structure,frozen"},
 	{"snow globe","BCBGKI","jJ",2,3,2,"BFE6F2","F2F2EE","glass dome with swirling snow","squeak","Shake it. Winter happens.","holiday"},
+	{"snow globe snare","BCBLKI","JcN",4,2,4,"BEE1FF","F4FAFF","snow globe that drops a snowstorm dome on passers-by","chime","Shake well. Shake the enemy, mostly.","holiday,winter,trap"},
 	{"snow golem","ACCJNA","GJe",4,3,4,"F8FAFC","F97316","snowman with carrot nose throwing snowballs","crunch","Melts in summer. Fights in winter.","frozen,construct,holiday"},
 	{"snow goose","ACBJDC","AfB",2,5,2,"FFFFFF","1E1E1E","white goose with black wingtips","quack","Arrives in blizzards of geese.","bird,aquatic"},
 	{"snow leopard","ACDJAA","DfT",6,8,5,"D9D6CC","4A4A4A","pale grey coat, smoky rosettes, huge fluffy tail","roar","Hugs its own tail to stay warm. Relatable.","mammal,predator,wild,arctic"},
@@ -398,9 +403,4 @@ return {
 	{"spirit lantern","AABJGG","Kjc",2,4,2,"F97316","FDE68A","paper lantern with a face and tongue","giggle","Lights the way. Licks the way too.","yokai,spooky,silly"},
 	{"spirit medium","LLCJNI","jh",4,4,3,"7C3AED","E0F2FE","candles, scarf, crystal pendant","whisper","Talks to ghosts. Ghosts talk back.","spooky,magic"},
 	{"spirit whale","ALFJEB","AFk",8,2,8,"1E3A8A","A5F3FC","translucent whale swimming through sky","whale","A whale that swims in the clouds.","spirit,giant,cosmic"},
-	{"spit","KBBAKB","de",1,9,1,"B3E5FC","FFFFFF","small glob arc","ptoo","Ptooey! Gross, but effective.","silly,gross"},
-	{"spitball","CMAAKK","je",1,9,1,"F2F2EE","F2F2EE","soggy paper wad","boing","Gross. Effective.","silly"},
-	{"spitting cobra","AMCJCD","jfMeN",4,6,3,"6A5440","E8C88A","hooded snake spitting venom","hiss","Aims for the eyes. Accurate too.","reptile,venomous"},
-	{"spitting spider","AJBJQA","fMeN",2,6,2,"E8D0A0","1E1E1E","spotted spider spitting glue","skitter","Spits sticky glue.","arachnid,spooky,venomous"},
-	{"spittlebug","AMAJFG","dASP",1,6,1,"8A6A4A","F2F2EE","bug hiding in spit foam","buzz","Lives in a bubble bath.","insect"},
 }

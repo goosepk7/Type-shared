@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sun sword","CHCHrK","KFf",8,6,5,"D4A72C","F2F2EE","blinding golden blade","shing","Daylight with an edge.","fantasy,holy"},
+	{"sunbeam","FHCBKI","KTe",5,9,1,"FFC93C","FFF8E1","thick golden ray with dust motes","hum","A cat's favourite spot. Now a weapon.","holy"},
+	{"sunbird","AMAJDB","dA",1,7,1,"2AB06A","E8302A","tiny iridescent nectar bird","tweet","Old World hummingbird lookalike.","bird,cute"},
+	{"sunbittern","AMCJDA","jAfT",3,5,2,"8A6A4A","E8901E","wings flash sunset eyes","squawk","Flashes two giant sunset eyes.","bird,wetland"},
+	{"sunburn","FABAKB","KN",2,6,1,"FF8A80","FFE0B2","pinkish glow on target","sizzle","Should've worn sunscreen.","fire,silly"},
 	{"sunburst","FHDGKI","KEO",7,8,1,"FFC400","FFFFFF","golden starburst exploding outward","boom","A little piece of the sun, popped.","holy,fire,explosive"},
 	{"sunburst flower","NABNMI","KSO",4,1,2,"FFC107","FF5722","blazing gold flower like a little sun","chime","Blinding bloom. Look away.","plant,magic,mythical"},
 	{"sunday roast","IGCOKI","F",2,5,3,"C8762B","7DBE3A","plate of roast, potatoes, veg","crunch","The big weekly feast.","edible,healthy"},
@@ -398,9 +403,4 @@ return {
 	{"tidal surge","FBEF6F","kINP",7,6,4,"01579B","81D4FA","wide rising tide rushing forward","roar","The ocean has made a decision.","aquatic"},
 	{"tidal wheel","KBDHKI","Dkf",7,9,2,"3FA9F5","E8F6FF","a somersault in a water wheel, then a sweeping wave","slash","Total concentration. Then the river moves.","anime,sword,water,breathing"},
 	{"tide","FBDF6F","HIN",5,4,4,"1C5D99","A2D7F2","wide slow wall of rising water","splash","Comes in. Goes out. Takes your sandcastle.","aquatic"},
-	{"tide elemental","ABDJOJ","kIB",7,5,5,"0369A1","E0F2FE","curling ocean wave with glowing eyes","splash","Crashes in. Recedes. Crashes again.","elemental,aquatic"},
-	{"tide pool","MBBNII","FSN",2,1,4,"26C6DA","8D6E63","small rocky pool with starfish","rumble","Tiny ocean. Tiny crabs. Big pinch.","place,terrain,cute"},
-	{"tie","BMAONI","d",1,6,1,"1F2F55","C0392B","neat silk necktie","swish","Dressed to defeat.","clothing"},
-	{"tie up","KMCLII","NO",4,5,3,"A1887F","FFE0B2","glowing ropes wrapping around target","creak","All tied up with nowhere to go.","silly"},
-	{"tiger","AMDJAA","DfT",7,8,5,"E07A1F","1C1C1C","orange body, black stripes, white muzzle","roar","Stripes on the fur AND the skin. Committed.","mammal,predator,wild"},
 }

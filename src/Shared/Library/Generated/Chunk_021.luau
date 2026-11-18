@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pyramid","EMFCII","GSh",5,1,10,"E6C27A","C9A55A","giant four-sided stone triangle","thud","Built by thousands. Climbed by you.","structure,defense,tower,ancient"},
+	{"pyro","FACAKB","Ke",5,8,2,"FF5722","FFD180","flickering flame sigil bolt","whoosh","Fire, but the fancy word.","fire,magic"},
+	{"pyroblast","FADAKB","KEke",8,5,2,"FF3D00","FFEB3B","huge slow fireball charging then firing","roar","Charge it up. Watch it go.","fire,explosive"},
 	{"pyroclastic flow","HAFFOF","KkP",9,8,5,"5D4037","FF7043","rolling grey-black ash avalanche with fire glow","roar","An avalanche made of hot nope.","natural,fire,danger"},
 	{"pyromancer","LACJNA","KEe",6,5,4,"B91C1C","F59E0B","singed red robes, flaming hands","whoosh","Eyebrows grow back. Eventually.","magic,fire"},
 	{"pyroraptor","AACJBA","DQfT",5,9,3,"C8401E","F2A04A","feathered raptor, fiery colors","screech","Fire thief. Sounds cool.","dinosaur,extinct,reptile,predator"},
@@ -191,6 +194,7 @@ return {
 	{"red deer","AMCJAA","Dk",4,8,4,"A0582E","E2C49A","reddish deer, many-pointed antlers","bleat","Roars during autumn. Very dramatic.","mammal,wild"},
 	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
 	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
+	{"red envelope volley","BMAA2B","QeV",3,6,3,"D61E2C","FFC840","red envelopes that home in and burst in gold coins","chime","Lucky for you. Not for them.","holiday,new year,homing"},
 	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 	{"red giant","MAFGKJ","KWkS",9,1,9,"E64A19","FFAB91","enormous swollen orange-red sphere","rumble","Big, red, and getting bigger.","space"},
 	{"red hot poker","NACNMI","KdFS",3,1,2,"FF5722","FFEB3B","flame-coloured torch spikes","rustle","Looks hot. Is just a flower.","plant,flower"},
@@ -399,8 +403,4 @@ return {
 	{"roc chick","AFCJDA","AQf",4,5,4,"A16207","FEF3C7","chick the size of a car","chirp","Big baby. Bigger appetite.","mythical,bird,cute"},
 	{"rock","FEBAKB","ke",3,6,6,"7D7D7D","A8A29E","chunky grey stone, chipped faces","thud","Classic. Never goes out of style.","heavy"},
 	{"rock and roll","KEDF6F","kO",6,6,4,"6D4C41","FF1744","boulders rolling to a guitar riff","riff","Rocks. Rolling. Rocking.","music,heavy"},
-	{"rock blast","FECAKB","keV",6,6,5,"8D6E63","D7CCC8","cluster of rocks blasting forward","crash","Gravel, delivered at speed.","heavy"},
-	{"rock bottom","KECLII","HO",5,3,5,"4E342E","8D6E63","ground swallowing target downward","thud","Hit rock bottom. Literally.","heavy,silly"},
-	{"rock cake","IEAAKK","keO",3,7,6,"C8904A","3A1E1E","craggy rough bun","bonk","Named for its looks. Hits like one.","edible"},
-	{"rock candy","IEAAKK","TeO",3,7,6,"7AC8E8","F2F7FA","crystal cluster on a stick","bonk","A crystal you can lick.","edible,candy"},
 }

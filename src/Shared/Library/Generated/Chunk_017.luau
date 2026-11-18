@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mic drop","BDCHtK","klf",6,7,6,"C8CCD6","FF3D7F","giant stage mic swung on its cord, then dropped","thud","Swing. Drop. Walk away.","music,melee"},
+	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
+	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
 	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
 	{"microlight","DFBKHB","DAkg",3,6,2,"FFEB3B","1565C0","tiny wing over an open seat and prop","propeller","Basically a lawn chair with wings.","vehicle,air,silly"},
 	{"microphone","BDAFKI","jO",1,6,2,"C9CED4","24262A","round-head microphone on cable","feedback","Mic drop. Literally.","music,loud"},
@@ -400,7 +403,4 @@ return {
 	{"naked mole rat","AMAJAA","Cdb",1,6,1,"E8B8A8","F2D8C8","wrinkly pink hairless body, big teeth","squeak","Pink, wrinkly, and lives forever-ish.","mammal,cute,silly"},
 	{"namazu","AEFJEH","CkO",9,2,8,"57534E","A16207","colossal catfish thrashing underground","rumble","When it flips, the ground quakes.","yokai,giant,danger"},
 	{"name","KMBOyE","jdQ",2,5,2,"EF4444","FFFFFF","red HELLO MY NAME IS sticker, scribbled out twice","scratch","xX_Summon_Slayer_Xx was taken.","meme,gaming"},
-	{"name tag","BMAONI","d",1,6,1,"F2F2EE","C0392B","sticker reading HELLO","swish","Hello, my name is Victory.","clothing,silly"},
-	{"nanite cloud","OKCDOE","iSP",6,4,2,"C9CED4","4A4D52","shimmering metallic fog","hum","Eats everything. Politely.","scifi"},
-	{"nano blade","CKCHrI","fT",7,9,3,"C9CED4","3FC1D9","impossibly thin shimmering blade","zap","Thinner than a thought.","scifi,sharp"},
 }

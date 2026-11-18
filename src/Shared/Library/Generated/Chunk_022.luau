@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rock blast","FECAKB","keV",6,6,5,"8D6E63","D7CCC8","cluster of rocks blasting forward","crash","Gravel, delivered at speed.","heavy"},
+	{"rock bottom","KECLII","HO",5,3,5,"4E342E","8D6E63","ground swallowing target downward","thud","Hit rock bottom. Literally.","heavy,silly"},
+	{"rock cake","IEAAKK","keO",3,7,6,"C8904A","3A1E1E","craggy rough bun","bonk","Named for its looks. Hits like one.","edible"},
+	{"rock candy","IEAAKK","TeO",3,7,6,"7AC8E8","F2F7FA","crystal cluster on a stick","bonk","A crystal you can lick.","edible,candy"},
 	{"rock monster","AEDJGF","GDk",6,3,8,"78716C","A8A29E","lumpy boulder with stubby arms","rumble","Rocks and rolls.","heavy"},
 	{"rock rose","NGBNMI","dFS",1,1,3,"F48FB1","FFEB3B","papery pink blooms on scrubby bush","rustle","Blooms for one day only. Make it count.","plant,flower"},
 	{"rock shield","FECIKI","G",2,2,9,"8D6E63","BCAAA4","rocks orbiting into a dome","rumble","A shield made of floor.","heavy,defence"},
@@ -399,8 +403,4 @@ return {
 	{"sea pig","ABAJGA","GdTN",1,1,4,"F2B8C0","F7D8E0","pink translucent blob with leg tubes","squelch","A pink potato that walks the abyss.","aquatic,ocean,deepsea,silly"},
 	{"sea pink","NBANMI","dFS",1,1,3,"F48FB1","7CB342","pink pompoms on sea cliffs","rustle","Grows where the sea spray hits.","plant,flower"},
 	{"sea serpent","ABEJCC","fHB",7,7,7,"0F766E","99F6E4","looping serpent humps above waves","hiss","Sailors swear it was this long.","mythical,aquatic,reptile"},
-	{"sea serpent hatchling","ABAJCC","HB",1,6,1,"0F766E","99F6E4","tiny looping serpent","hiss","Practices being scary. Not yet.","aquatic,cute"},
-	{"sea slug","ABAJGI","MN",1,1,2,"8A3AD8","F2A02A","neon frilly slug","squelch","The ocean's most fashionable slug.","mollusk,aquatic"},
-	{"sea snake","ABCJCC","fMNB",4,6,3,"3A5A8A","F2F2F0","banded snake, paddle tail","hiss","Swims with a paddle tail.","reptile,venomous"},
-	{"sea spider","ABBJRA","GfT",2,4,5,"E8D8C0","C88A5A","spindly legs, tiny body","clack","All legs, almost no body.","crustacean,aquatic,armored"},
 }

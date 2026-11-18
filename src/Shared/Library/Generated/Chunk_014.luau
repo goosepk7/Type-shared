@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"insect","AGAJFB","AQMP",2,7,1,"4E6B2A","C9A227","six-legged bug, antennae, shiny green shell","buzz","Six legs. Zero respect for picnics.","insect"},
+	{"inside","MMCIlI","GFS",2,1,7,"FDE68A","7C4A1E","cosy four walls with a lamp, sofa and closed curtains","hush","It is raining. We have snacks. We live here now.","household"},
+	{"inspire","KHCOKJ","DF",3,5,3,"FFF59D","FFFFFF","bright glow of light above heads","chime","Believe! Then hit things.","support"},
 	{"instant noodles","IABOGI","FS",3,4,3,"E8C070","D72B2B","foam cup, curly noodles","slurp","Three minutes to victory.","edible,warm,healthy"},
 	{"instrument","BFCELB","jPO",3,5,3,"D4AF37","7C2D12","falling trumpet, drum, violin and a honking kazoo","music","The whole band. Dropped from a height.","music"},
 	{"insult","KABAKB","KXO",4,8,1,"F97316","FDE047","flaming speech bubble with symbols and a mic drop","sizzle","Oooooh. Somebody get the ice.","silly,meme"},
@@ -400,7 +403,4 @@ return {
 	{"lady slipper","NGBNMI","dFS",1,1,1,"FFEB3B","7E57C2","pouched bloom like a little shoe","rustle","Cinderella left her slipper.","plant,flower"},
 	{"ladybug","AMAJFA","GAFf",1,3,4,"D8201E","1E1E1E","red dome shell, black spots","click","Spots count its age. (Not really.)","insect,armored,cute,garden"},
 	{"ladyfinger","IMBHJI","kf",2,5,4,"F2D88A","F7F2EC","long sugar-dusted sponge stick","bonk","A biscuit finger pointing at you.","edible,silly"},
-	{"lag monster","LLCJNA","jNY",3,2,4,"22C55E","F472B6","glitchy figure teleporting in jitters","zap","Rubber-bands into your face.","meme,gaming,silly"},
-	{"lag spike","KLCNOI","jNY",5,3,3,"3AF2FF","FF3AD0","a glitchy field of pixel static and colour split","bzzt","Your ping is now 9000. Enjoy last second, again.","gaming,meme,glitch"},
-	{"lahmacun","IMBAKK","Uke",3,7,2,"D9A04A","C8302B","thin flatbread with minced meat","whoosh","A crispy thin pizza from Turkey.","edible"},
 }

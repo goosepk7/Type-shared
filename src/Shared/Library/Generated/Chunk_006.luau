@@ -302,6 +302,7 @@ return {
 	{"cornhole bag","BMAA3F","eO",1,6,2,"C0392B","D2B48C","square bean bag","bonk","Plop. Score!","sport"},
 	{"cornmeal","IFBDOJ","jPO",2,5,1,"F2C24A","E8B04A","coarse yellow powder","puff","Gritty golden dust.","edible"},
 	{"cornstarch","IMBLGG","GUN",2,3,3,"F7F7F2","E8E8DF","white squeaky powder","wobble","Mix with water for magic goo.","edible,wobbly"},
+	{"cornucopia bounty","IGCO2I","SV",3,2,3,"CE9C58","DE282C","wicker horn of plenty that tips fruit out round you","chime","Share. Or don't. It's your harvest.","holiday,harvest,support"},
 	{"corpse flower","NJDDMI","jdSM",3,1,4,"6A1B9A","33691E","giant tall spathe, awful stink","rustle","Smells like a thousand old socks.","plant,flower,silly"},
 	{"corral","EECLII","GSN",2,1,5,"8D6E63","7CB342","ring of wooden rail fences","thud","Rounds them up. Keeps them in.","structure,defense"},
 	{"corsac fox","AMBJAA","jfb",3,7,2,"C8B08A","F2E8D8","pale steppe fox","yip","Fluffy steppe fox.","mammal,wild"},
@@ -402,5 +403,4 @@ return {
 	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
 	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 	{"cream puff","IMBLKI","dSc",2,3,3,"E8C88A","F7F2EC","round puff pastry, cream","chomp","A puff of cream in a pastry cloud.","edible,sweet"},
-	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
 }

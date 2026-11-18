@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"high elf","ALCJNA","jFTe",6,7,4,"E5E7EB","FACC15","tall elegant elf, silver armor, staff","chime","Thinks very highly of high elves.","mythical,magic,royal"},
+	{"high five","KMBOKI","DF",1,8,2,"FFE082","FFFFFF","two glowing palms slapping with sparkles","clap","Up top!","cute"},
+	{"high heels","BMBONI","T",1,6,2,"C0392B","24262A","pointy tall-heeled shoes","swish","Fashion with a point.","clothing"},
 	{"highland cow","AMDJAA","DkO",6,4,7,"B05E2A","E2A060","shaggy ginger fringe over eyes, horns","moo","Excellent hair day, every day.","mammal,heavy,farm,cute"},
 	{"highlander","LECJNA","Dkf",6,6,6,"15803D","DC2626","kilt, claymore, wild hair","drone","Charges in with bagpipe backup.","warrior"},
 	{"highlands","MFFNII","SN",3,1,8,"7CB342","AB47BC","rolling hills of heather and mist","rumble","Misty, windy, and wild.","place,terrain"},
@@ -400,7 +403,4 @@ return {
 	{"inkcap","NIBLMI","jSP",3,1,2,"ECEFF1","212121","tall shaggy cap melting into black ink","poof","Melts into ink. Gross. Effective.","plant,fungus"},
 	{"inkfold flock","AFBJLB","ARNVh",5,8,4,"F2EAD8","E24634","a flock of folded paper birds with vermilion ink seals","flutter","Eight slips, eight folds, eight very small grudges.","anime,paper,summon,swarm"},
 	{"innkeeper","LMCJNA","Fc",3,4,4,"78350F","FDE68A","apron, mug, rag","ding","Rooms available. Rumors free.","merchant"},
-	{"insect","AGAJFB","AQMP",2,7,1,"4E6B2A","C9A227","six-legged bug, antennae, shiny green shell","buzz","Six legs. Zero respect for picnics.","insect"},
-	{"inside","MMCIlI","GFS",2,1,7,"FDE68A","7C4A1E","cosy four walls with a lamp, sofa and closed curtains","hush","It is raining. We have snacks. We live here now.","household"},
-	{"inspire","KHCOKJ","DF",3,5,3,"FFF59D","FFFFFF","bright glow of light above heads","chime","Believe! Then hit things.","support"},
 }

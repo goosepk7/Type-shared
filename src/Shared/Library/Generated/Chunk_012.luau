@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravity vortex","KLDN5K","SHN",6,4,5,"311B92","B388FF","swirling purple ground funnel","hum","Everyone slides to the middle.","space"},
+	{"gravity wall","FLCCnI","GHN",4,2,6,"4527A0","B388FF","warped purple ripple wall","whum","Walls that weigh you down.","space,defence"},
+	{"gravity wave","FLDFOB","kPO",7,7,1,"4527A0","B388FF","space-bending ripple ring","whum","Space wobbles. You fall over.","space"},
 	{"gravlax","IGBOKI","F",2,5,3,"E8603A","7DBE3A","cured salmon slices with dill","crunch","Salmon cured with salt and patience.","edible,healthy"},
 	{"gravy","IMBNGI","FSN",2,4,1,"8A5A2A","C8904A","glossy brown sauce boat","splat","A river of savory.","edible,sauce"},
 	{"gravy boat","IMBNGI","SNP",2,4,1,"F7F4EC","8A5A2A","white boat-shaped jug","splat","A boat that only sails gravy.","edible,sauce"},
@@ -400,7 +403,4 @@ return {
 	{"hide","KIBOKI","Z",1,5,3,"78909C","ECEFF1","caster blending into the background","hush","Shh. I am a bush.","stealth,silly"},
 	{"hide and seek","KIBOKI","ZY",1,6,2,"8D6E63","FFFFFF","caster vanishing behind sparkles","giggle","Ready or not, here I... where'd I go?","silly,stealth"},
 	{"high chair","BMCC0I","G",1,1,4,"F2F2EE","C49A6C","tall chair with tray","squeak","Dinner. Throne. Fortress.","baby"},
-	{"high elf","ALCJNA","jFTe",6,7,4,"E5E7EB","FACC15","tall elegant elf, silver armor, staff","chime","Thinks very highly of high elves.","mythical,magic,royal"},
-	{"high five","KMBOKI","DF",1,8,2,"FFE082","FFFFFF","two glowing palms slapping with sparkles","clap","Up top!","cute"},
-	{"high heels","BMBONI","T",1,6,2,"C0392B","24262A","pointy tall-heeled shoes","swish","Fashion with a point.","clothing"},
 }
