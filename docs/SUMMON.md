@@ -275,6 +275,14 @@ loaded and builds the primitive otherwise, so the primitive build is always the 
   the span), so skin and bone stay together; at detail 0-1 the single wing sail takes `s_wing_bat` as well.
 - **Scaled models.** `Instantiate.upgradeMeshes` multiplies a swapped-in sculpt's size and its offset from the
   primitive by `model:GetScale()`, so a model scaled with `Model:ScaleTo` after `Summon.build` upgrades correctly.
+- **Lazy hero families.** `Heroes/Data/<family>.luau` (~19 MB of source, ~73 MB of Lua heap all together) is not
+  required at boot: `Heroes/Index.luau` (hero id -> family + plan / gait / tags, ~66 KB) is, and a family module is
+  required the first time one of its heroes is built or `Heroes.get` reads it (`Heroes.find` returns the index view
+  and never loads data). `Heroes.warm(result | id)` / `Heroes.loadFamily(name)` load ahead of time (one family per
+  frame in a game's warm-up); `Heroes.loaded()` lists what is held. A new family is registered by building it:
+  `tools/meshgen/heroes/build.py` writes `Data/<family>.luau` and then runs `tools/meshgen/heroes/index.py`, which
+  regenerates `Index.luau` from the Data modules (`index.py --check` and `tests/specs/hero_index.spec.luau` fail when
+  it is stale; a Data module the index does not list is still loaded eagerly at boot, as before).
 - **Offline.** `lune run tools/render_blueprint hero <words> out.png` draws Solid primitives, Solid sculpt and
   Spectral sculpt next to a 5 stud figure (`docs/img/hero_*.png`; a word may carry a size or a material: `small dragon`, `glass shark`); `lune run tools/render_blueprint beforeafter out.png` ray-traces the same blueprints with and
   without the pieces (`docs/img/mesh_before_after.png`); `scale <style> <words> out.png` draws summons next to a
