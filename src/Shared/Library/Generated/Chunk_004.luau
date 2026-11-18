@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"breakfast","IMCL2I","FcN",3,2,2,"FDE047","B45309","plate of eggs and bacon making a smiley face, toast, juice","sizzle","The most important summon of the day.","edible,breakfast"},
+	{"breakfast bowl","IGBOKI","F",2,5,3,"F2D23A","C8502B","bowl of eggs, potatoes, sausage","crunch","Breakfast, all in one bowl.","edible,healthy,breakfast"},
 	{"breakfast burrito","IMBGKF","Fk",3,5,6,"F2E2B8","F2D23A","tortilla log of eggs, potatoes","rumble","Breakfast in a sleeping bag.","edible,heavy,breakfast"},
 	{"breakfast pizza","IMBAKK","Uke",3,7,2,"E8B04A","F2D23A","pizza with eggs on top","whoosh","Pizza that wakes up early.","edible,breakfast"},
 	{"breakfast sandwich","IGBOKI","F",2,5,3,"E8C07A","F2B81A","muffin, egg, cheese, bacon","crunch","A morning hero between buns.","edible,healthy,breakfast"},
@@ -401,6 +403,4 @@ return {
 	{"cassata","IMBLKI","dSc",2,3,3,"F7F2EC","8DC63F","frosted cake with candied fruit","chomp","A Sicilian jewel box.","edible,sweet,dessert"},
 	{"cassava","IEBAKK","keO",3,7,6,"8A5A2A","F2EEDF","long bark-brown tuber","bonk","A potato that went to the tropics.","edible,vegetable"},
 	{"casserole","IGBOKI","F",2,5,3,"D9A04A","F2E8C8","baking dish of bubbling bake","crunch","The potluck champion.","edible,healthy"},
-	{"cassette tape","BMAAKI","eN",1,7,1,"24262A","F2F2EE","small tape with two spools","toot","Tangle them in tape.","music"},
-	{"cassiopea","ABBJGJ","jSMOB",2,2,1,"8AB0A0","E8E0C8","jelly lying upside down on sand","squelch","Lies upside down. Sunbathes.","aquatic,ocean,venomous"},
 }

@@ -3,14 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"monarch butterfly","AMAJFB","jdAM",1,5,1,"E8701E","1E1E1E","orange wings with black veins","flutter","Flies 3000 miles. Tastes bad on purpose.","insect,cute"},
-	{"monarch caterpillar","AMAJTA","jdM",1,5,1,"F2F2EE","F2D82A","yellow-black-white striped caterpillar","flutter","Eats milkweed. Tastes like it.","insect,cute"},
-	{"monastery","EHECII","GFS",3,1,9,"E6D3A3","C62828","walled courtyard, bell tower, cloister","thud","Very quiet. Very strong.","structure,building,holy"},
-	{"monday","KICNOI","iN",3,2,3,"78909C","BDBDBD","grey dreary haze","groan","It's Monday. Everything is slower.","silly"},
-	{"money","BMBELJ","dcPb",3,5,1,"22C55E","15803D","fluttering green banknotes and a few bouncing coins","jingle","Make it rain. Mind the paper cuts.","shiny,meme"},
-	{"money plant tree","NGAOMI","Fc",1,1,4,"2E7D32","FFD54F","chubby jade leaves in a pot","rustle","Rich in leaves. Poor in fighting.","plant,lucky"},
-	{"money tower","EKDMII","GdSce",2,1,6,"FFD54F","43A047","tower piled with gold coins","thud","Makes money. Throws money.","structure,defense,tower"},
-	{"money tree","NKCCMI","dSc",3,1,6,"FFD54F","43A047","glittering tree with coin leaves","rustle","Money does grow on trees. Here.","silly,magic"},
 	{"mongol rider","LFCKNA","Deg",6,9,5,"7C2D12","F59E0B","fur hat, recurve bow, galloping horse","twang","Shoots backwards. While galloping.","warrior,mount"},
 	{"mongolian worm","AJCJCH","CML",5,6,4,"DC2626","FDBA74","fat red worm crackling with electricity","zap","Spits lightning. Lives in sand.","cryptid,desert"},
 	{"mongoose","AMBJAA","CDfT",3,8,2,"9E8E74","5A4E40","slender grey-brown, long tail","chatter","Not afraid of cobras. Kind of rude.","mammal,predator"},
@@ -403,4 +395,12 @@ return {
 	{"nursery","MHDNlI","jdSh",4,1,4,"FDE047","F472B6","bright room of blocks, finger paints and tiny chairs","giggle","Twenty toddlers. One teacher. Pray for the teacher.","school,cute"},
 	{"nut","BKAA3K","UeO",2,7,5,"9CA3AF","D1D5DB","steel hex nut spinning like a tiny saw","clink","Could be hardware. Could be a snack. Bite to find out.","tool,mechanical"},
 	{"nut and bolt","BKAAJK","ke",1,8,3,"8A929B","8E9196","hex nut on a bolt","clink","Nuts! Bolts! Ouch!","hardware"},
+	{"nut cluster","IEAAKK","ceO",3,7,6,"5A2E16","C48A5A","chocolate covered nut lumps","bonk","Crunchy chocolate rocks.","edible"},
+	{"nutcracker","BMBJNA","Gf",3,3,5,"9E1B32","D4A72C","wooden soldier with big jaw","squeak","Cracks nuts. Cracks jokes. Cracks foes.","toy,holiday"},
+	{"nuthatch","AMAJDB","dA",1,7,1,"6A7A9A","F2E8D8","walks headfirst down trees","tweet","Walks down trees upside down.","bird,cute"},
+	{"nutmeg","IFBDOJ","jPO",2,5,1,"8A5A3A","C8A070","brown oval seed, grater","puff","Grate it. Throw it. Done.","edible,spice"},
+	{"nutria","AMBJAA","CdbB",2,6,1,"6A4A2A","F28A2A","big water rat, orange teeth","squeak","Has orange teeth. Very orange.","mammal,cute"},
+	{"nyala","AMCJAA","Dk",4,8,4,"6A5A6A","E8A04A","shaggy grey with orange legs","bleat","Wears orange socks.","mammal,wild"},
+	{"nyama choma","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled meat chunks","thud","Kenyan grilled meat.","edible,savory"},
+	{"nyctosaurus","AMCJDB","DAT",4,8,4,"8A7A6A","E8C07A","antler-like head crest","screech","Wears antlers on its head.","pterosaur,extinct,reptile"},
 }

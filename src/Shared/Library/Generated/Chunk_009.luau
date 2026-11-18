@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"exorcism","KHCFOB","KI",5,7,1,"FFF9C4","B2EBF2","bright ring chasing out ghostly wisps","chime","Ghosts, please leave quietly.","holy,spooky"},
-	{"exorcist","LHCJNA","FIO",5,4,5,"111827","F8FAFC","long coat, holy water, glowing book","chime","The power compels you. Out.","holy,spooky"},
 	{"expand","KLCOKI","WI",4,4,4,"7E57C2","FFFFFF","swelling outline pushing outward","stretch","Taking up space. Literally.","magic"},
 	{"experiment","KLCL2I","jEWM",5,2,2,"A3E635","7C3AED","rack of smoking test tubes wired to a sparking battery","fizz","For science! And slightly for chaos.","science"},
 	{"explode","KADGKI","KEk",7,8,1,"FF6F00","FFE082","swelling orange fireball with debris ring","boom","Ka-BOOM. Ears ringing. Worth it.","explosive"},
@@ -18,7 +16,6 @@ return {
 	{"extinguish","KBCF6F","FN",2,6,1,"29B6F6","FFFFFF","cooling water wave with steam","hiss","Fire's out. You're welcome.","aquatic,support"},
 	{"extra life","KGBOKJ","F",1,6,3,"43A047","FFFFFF","green mushroom-ish sparkle pop","bling","Bonus try unlocked.","meme"},
 	{"eye","BMBMKE","QeO",3,5,2,"FFFFFF","2E86DE","floating eyeball, blue iris, red veins, trailing nerve","squish","Always watching. Never blinking. Slightly rude.","body,spooky,silly"},
-	{"eye beam","KACBKI","KTe",6,9,1,"FF1744","FFCDD2","twin red beams fired from glowing eyes","zzzap","Look. Then look harder.","silly"},
 	{"eye of the storm","GFDNOI","GF",3,2,5,"B3E5FC","FFFFFF","calm circle of blue sky inside swirling clouds","hush","Peace and quiet. For now.","storm"},
 	{"eyebrow","BMBATB","jeO",2,6,2,"3B2A1A","5B4636","one thick fuzzy eyebrow wiggling like a caterpillar","boing","Raised in suspicion. Launched in anger.","body,silly"},
 	{"eyelash","BMAELJ","jNP",1,5,1,"1E1E1E","4A3B33","flurry of tiny curved black lashes","flutter","Make a wish. Then duck.","body,silly"},
@@ -380,7 +377,6 @@ return {
 	{"flying dragon lizard","AMBJAB","CAf",2,7,2,"8A7A5A","E8701E","lizard with rib wings","hiss","A lizard that flies. On ribs.","reptile"},
 	{"flying fish","ABAJEB","dAB",1,6,1,"4A6EA8","C8D8EC","long wing fins, gliding over waves","splash","A fish that said no to water.","fish,aquatic"},
 	{"flying frog","AMAJAB","UAe",1,5,1,"4AC84A","F2D82A","frog gliding on webbed feet","croak","Parachutes with its toes.","amphibian,wetland"},
-	{"flying kick","KMCAKB","Dkf",6,9,2,"FFAB40","FFFFFF","airborne kick with speed trail","hyah","Feet first!","melee"},
 	{"flying lemur","AMBJAB","CAf",2,5,3,"8A8070","C8C0B0","big gliding membrane","squeak","Neither flies nor is a lemur.","mammal,wild"},
 	{"flying ship","DLEMHB","EAkeg",7,5,7,"6D4C41","FFD54F","wooden galleon held up by glowing balloons","cannon","Sails the clouds, cannons out.","vehicle,magic,mythical"},
 	{"flying snake","AMCJCB","AfMN",4,6,3,"2A2A1E","8AE04A","flattened gliding snake","hiss","A snake that flies. Why would you.","reptile,venomous"},
@@ -403,4 +399,8 @@ return {
 	{"fold","KMBOnB","jXN",3,5,2,"FFFFFF","F87171","enemy outline creased in half like a paper sheet","rustle","Fold. Fold again. Now you are a swan.","art,silly"},
 	{"folding chair","BKBAJK","keO",3,5,4,"8E9196","24262A","flat metal folding chair","thud","Wrestling's favourite prop.","silly"},
 	{"follow","KHBOLA","Qbh",2,7,2,"8B5CF6","FFFFFF","conga line of little avatar icons trailing behind","pop","Ten new followers. All of them bots.","meme,internet"},
+	{"fomorian","ABEJNA","kfB",8,3,8,"134E4A","94A3B8","misshapen sea giant with barnacles","roar","Came from the sea. Grumpy about land.","mythical,giant,aquatic"},
+	{"fondant","IMBLGI","SNP",2,3,3,"F7F2EC","F2D9E3","smooth rolled sheet","gloop","Sugar play dough.","edible,sticky,sweet"},
+	{"fondue","IABLGI","KcN",2,3,3,"F2C24A","E8A040","bubbling pot of melted cheese","gloop","A pot of liquid cheese. Dip with care.","edible,sticky"},
+	{"foo dog","AECJAA","Gkf",5,4,8,"78716C","15803D","stone lion statue, curly mane, ball under paw","roar","A stone guard dog who never sleeps.","mythical,guardian"},
 }

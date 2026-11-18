@@ -3,14 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"penguin chick","ACAJDA","UDB",1,5,3,"8A8A8E","F2F2F0","fluffy grey round chick","squawk","A fluffball that waddles.","bird,arctic,cute"},
-	{"penguin soldier","ACBJDA","dNP",2,5,3,"111827","F8FAFC","penguin in a tiny helmet","honk","Smile and wave. Then attack.","silly,frozen"},
-	{"peninsula","MEENII","SN",2,1,8,"7CB342","1E88E5","land jutting into the sea","rumble","Water on three sides. Trouble on the fourth.","place,terrain"},
-	{"pennant","BMBOJB","dQF",2,5,2,"EF4444","FACC15","string of little triangle flags fluttering","flutter","Go team! Whichever team. This is generic bunting.","party,sport"},
-	{"penne","IMAELB","Te",2,7,1,"F2D08A","E8C070","angled tube pasta","pitter","Pasta tubes cut on an angle.","edible"},
-	{"penny","BKAA3K","Uce",1,8,4,"B87333","E6A57E","single shiny copper coin flipping through the air","clink","A penny for your thoughts. In the forehead.","shiny"},
-	{"penny farthing","DMBKHL","Dkg",3,5,2,"3B2A20","C0A060","huge front wheel, tiny back wheel","engine","Ride it once, look fancy forever.","ancient,silly"},
-	{"penuche","IMBLGI","SNP",2,3,3,"C89050","E8C07A","brown sugar fudge","gloop","Brown sugar fudge, very rich.","edible,sticky"},
 	{"peony","NGBNMI","dFS",2,1,2,"F48FB1","FCE4EC","huge fluffy pink ball bloom","rustle","Big. Fluffy. Smells divine.","plant,flower"},
 	{"pepper shaker","BMADKK","jO",1,6,1,"24262A","8E9196","wooden grinder","clang","Achoo! Achoo!","kitchen,household"},
 	{"peppermint","ICBAKJ","JeP",3,5,2,"E0102B","F7F7F2","round red-white swirl disc","squish","Cool, swirly, and minty fresh.","edible,sweet,candy"},
@@ -403,4 +395,12 @@ return {
 	{"poplar","NGDCMI","GjWkS",3,1,6,"BDBDBD","8BC34A","tall narrow column of fluttery leaves","rustle","Fluffy seeds everywhere. Achoo.","plant,tree"},
 	{"poppy","NGBNMI","SNO",2,1,1,"E53935","212121","papery red petals, dark centre","rustle","Makes everyone very, very sleepy.","plant,flower"},
 	{"poppy field","NGENMI","SNO",3,1,3,"E53935","7CB342","red poppies as far as you see","rustle","Sleepy... so sleepy...","plant,crop"},
+	{"popsicle","ICBHJI","JfN",3,5,4,"E8434F","F7F2F0","frozen bar on a stick","bonk","A frozen sword. Melts quickly.","edible,silly,frozen"},
+	{"porcelain","BEBELB","EPO",3,5,1,"F8FAFC","3B82F6","flying blue-and-white teacups, plates and a vase","crash","Grandma's best set. She will know.","household,fragile"},
+	{"porcelain crab","ABBJRA","GfTV",2,4,5,"E8C8C8","C8A0A0","flat fan-feeding crab","clack","Breaks its own claws to escape.","crustacean,aquatic,armored"},
+	{"porch","EMCMII","GeN",3,1,6,"F5F5F0","22C55E","wooden steps, rocking chair and a swinging lantern","creak","Get off my lawn. From the comfort of my chair.","household,building"},
+	{"porcini","NGBLMI","FS",2,1,4,"8D6E63","F5E6CA","fat brown cap on a chunky stem","poof","Chunky. Tasty. Kingly.","plant,fungus,edible"},
+	{"porcupine","AMBJAA","GCTe",3,6,5,"5E5248","E8E0D4","covered in quills, raised spikes","squeak","Do not hug. Seriously.","mammal,cute"},
+	{"porcupinefish","ABBJEC","dWTB",3,6,1,"C8B88A","4A3A2A","spiky round puffed fish","splash","Pufferfish with extra spikes.","fish,aquatic"},
+	{"pork belly","IMBAKK","kce",3,5,3,"E8A0A0","C8603A","layered fat-lean slab","thud","Crispy skin, tender layers.","edible,savory"},
 }

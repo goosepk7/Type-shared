@@ -3,11 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"yumi","CMDAvK","Te",5,6,3,"24262A","C49A6C","very tall asymmetrical bow","shing","Elegance at range.","ranged,ancient"},
-	{"yurt","EMCCII","GFS",2,1,5,"F5F5F5","C62828","round felt tent with domed roof","thud","Round home, round warm.","structure,building"},
-	{"yutyrannus","ACEJBA","DkfT",7,6,7,"8A5A3A","E8C890","feathery tyrannosaur","roar","A fluffy giant T rex cousin.","dinosaur,extinct,reptile,predator"},
-	{"yuzu","IMBAKF","jke",3,6,2,"F3D23A","5A7D2B","bumpy yellow citrus","squirt","Smells amazing. Hits sour.","edible,fruit,sour"},
-	{"za'atar","IFBDOJ","jPO",2,5,1,"7A8A3A","C8B08A","herb and sesame blend","puff","Herbs, sesame, and tang.","edible,spice"},
 	{"zanbato","CKEHrK","kfV",8,2,6,"3A3F45","9E1B32","enormous long-handled blade","shing","Cuts horses. And mountains, probably.","sharp,ancient"},
 	{"zander","ABCJEC","DfB",4,7,4,"8A9A6A","D8D8B0","glassy-eyed predator fish","splash","Sees in the dark. Bites in the light.","fish,aquatic"},
 	{"zap","KDBAKB","eLO",4,10,1,"FFEB3B","82B1FF","quick crackling yellow bolt","zap","Zap! Hair now pointy.","electric"},
@@ -23,6 +18,7 @@ return {
 	{"zeppole","IMAELB","eVP",2,7,1,"E8B860","F7F7F2","sugar-dusted fried balls","pitter","Italian doughnut puffs.","edible,sweet,dessert"},
 	{"zero","KIBG3F","iHX",3,5,3,"1F2937","E5E7EB","big hollow number 0 that things fall through","echo","Zero. Zip. Nada. The whole nothing.","school"},
 	{"zero gravity","FLCNOI","lN",4,3,3,"B5C8FF","F3F6FF","drifting objects, slow starry shimmer","hum","Float like an astronaut.","space,silly"},
+	{"zero hour","KLENKI","JO",8,1,5,"E8C46A","2B3440","golden clock dome where everything halts","tick","Everyone wait right there, please.","time,magic,anime"},
 	{"zeus","LDFJXJ","AkeLO",9,6,9,"F8FAFC","FDE047","white-bearded giant on a cloud throne hurling lightning","thunder","Throws lightning first. Asks questions never.","mythical,storm,greek,boss,danger"},
 	{"zhulong","AAFJCB","KAl",9,3,8,"DC2626","FDE047","red sun-eyed serpent with human face","roar","Opens eyes: day. Closes: night.","mythical,reptile,danger"},
 	{"ziggurat","EMEMII","GSe",5,1,10,"C9A55A","A1887F","huge stepped mud-brick platform","thud","Steps all the way up to the gods.","structure,defense,tower,ancient"},

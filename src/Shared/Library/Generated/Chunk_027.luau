@@ -3,12 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"treehopper","AMAJFG","dAZP",1,6,1,"6AA04A","F2D82A","bug with weird helmet shapes","buzz","Wears a hat shaped like a thorn.","insect"},
-	{"treehouse","EGCMII","GSe",3,1,5,"8D6E63","43A047","wooden hut wedged in a big leafy tree","thud","Secret club. Password required.","structure,cute"},
-	{"trellis","EGCCII","GWS",1,1,4,"F5F5F5","43A047","lattice frame covered in climbing roses","rustle","Pretty arch. Grabby roses.","structure,plant"},
-	{"tremor","HECNOI","NO",4,4,3,"7D6247","B39A7C","shaking ground ripples, dust puffs","rumble","Just a little wobble. For now.","natural"},
-	{"trench","EECLII","GSN",2,1,6,"6D4C41","8D6E63","long dug channel with wooden planks","thud","Dig in. Duck down. Hold the line.","structure,defense"},
-	{"trench coat","BMCONI","Z",1,5,3,"A39B6A","7A4E2D","long belted coat","swish","Spy mode: engaged.","clothing,spy"},
 	{"trench shovel","JKCHsK","Ckf",3,5,5,"6B7B3A","8A929B","folding army shovel","shing","Digs. Bonks. Folds.","sharp"},
 	{"trend","KDCF6B","jQPh",3,9,1,"EC4899","22D3EE","rising arrow graph with hashtags and tiny dancing figures","ding","Everyone is doing it. Nobody knows why.","internet,meme"},
 	{"tres leches","IMBLKI","dSc",2,3,3,"F7F0DE","E8D8B8","soaked white cake, cream top","chomp","Three milks. One very soggy cake.","edible,sweet"},
@@ -320,6 +314,7 @@ return {
 	{"void dragon","AIFJAB","iAHY",9,6,8,"0F0F23","A78BFA","starless black dragon swallowing light","roar","A hole in the sky with wings.","mythical,reptile,cosmic,boss,danger"},
 	{"void orb","FICGKE","iH",7,4,3,"000000","7C4DFF","perfect black sphere with violet rim","hum","Stare too long and it stares back.","space,spooky"},
 	{"void rift","FIEN5K","iSH",8,3,5,"0A0414","7C4DFF","tear in space leaking violet void light","hum","A doorway to nothing. It wants you.","spooky,space"},
+	{"void sanctum","KIENKI","jSY",9,3,8,"1A1426","C9A8FF","black sphere that swallows foes into a void arena","hum","Welcome to my place. Wipe your feet.","anime,magic"},
 	{"void shield","FICIKI","Gi",4,3,6,"000000","651FFF","black dome that eats projectiles","hum","Attacks go in. Nothing comes out.","space,defence"},
 	{"void storm","FIFN5K","iSHP",9,4,5,"05010D","651FFF","swirling black storm with violet cracks","hum","The universe forgot to load this area.","spooky,space,storm,danger"},
 	{"void walker","AICJNA","iZY",6,7,3,"0F0F23","7C3AED","tall figure with a starless body","whisper","Steps out of nowhere. Steps back in.","cosmic,spooky"},
@@ -403,4 +398,9 @@ return {
 	{"warhead","CACGkB","KEk",7,6,2,"D1D5DB","DC2626","pointy silver nose cone with a red tip and hazard stripes","boom","The pointy bit is the important bit.","explosive,military"},
 	{"warm front","GADFOF","FN",3,4,3,"FFB74D","FFF8E1","gentle wall of warm golden air","whoosh","Suddenly it's t-shirt weather.","fire"},
 	{"warm milk","IABOKI","FN",2,5,2,"F7F7F2","F2EAD5","steaming mug of milk","slurp","Makes everyone sleepy.","edible,drink,warm,sleepy"},
+	{"warmth","KABOKJ","FSN",2,2,2,"FDBA74","FEF3C7","soft orange glow with a steaming mug and a blanket","hush","Like a hug from a radiator.","warm,support,cute"},
+	{"warp","KLCOKB","DY",4,10,2,"6200EA","84FFFF","stretched streaky blur in motion","warp","Engage! Whoosh.","space,speed"},
+	{"warp ship","DLEKHB","DAgY",7,10,7,"ECEFF1","7C4DFF","sleek ship with glowing warp rings","warp","Here. There. Everywhere.","vehicle,space"},
+	{"warrior","LECJNA","GDf",6,5,6,"991B1B","9CA3AF","sword and shield, chainmail, battle scars","clang","Hits things. Very good at it.","warrior"},
+	{"warrior princess","LHCJNA","GDf",6,6,6,"F472B6","94A3B8","tiara on a helmet, sword, cape","clang","Rescues the knight. Again.","royal,warrior"},
 }

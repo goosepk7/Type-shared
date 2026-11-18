@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crust","IMBIyK","GUc",2,4,5,"D9A066","A16207","ring of golden pizza crust with a bite out","crunch","Cut the crusts off. Throw the crusts.","edible"},
+	{"crutch","BMCHJI","kf",1,4,3,"C9CED4","8E9196","metal crutch with arm cuff","thud","Leans on you. Swings at them.","container"},
 	{"cry","KBBEOJ","FN",1,4,1,"81D4FA","FFFFFF","little rain cloud above caster","sniff","A good cry. Splashes everyone.","silly"},
 	{"cryo blast","FCCBKI","JeN",6,8,2,"00E5FF","E0F7FA","icy cyan beam with fog","hiss","Sci-fi freezing. Very cold. Very cool.","frozen"},
 	{"cryo chamber","ECCLII","JSO",4,1,7,"B3E5FC","607D8B","frosty glass capsule upright","hum","Puts enemies on ice. For a few centuries.","structure,future"},
@@ -214,7 +216,6 @@ return {
 	{"default avatar","LMCJNA","Ud",3,5,3,"FACC15","1D4ED8","blocky yellow-skinned starter avatar","oof","Fresh account. Fearless.","meme,gaming,silly"},
 	{"defibrillator","BDBBII","FL",3,5,3,"F1C40F","C0392B","two paddles on a box","thud","CLEAR! Bzzt.","medical,electric"},
 	{"deflate","KFBAKB","XN",3,6,1,"B0BEC5","FFFFFF","target wobbling and shrinking with a raspberry","pfffft","Pfffffft.","silly"},
-	{"deflect","KKBIKI","Ga",3,9,4,"B0BEC5","FFFFFF","quick glinting deflect flash","ting","Not today. Ting!","defence"},
 	{"deflector shield","BLDIyI","Ga",4,3,8,"3FC1D9","F2F2EE","curved glowing barrier panel","clang","Bounces bolts back home.","scifi,defense"},
 	{"degu","AMAJAA","Cdb",1,6,1,"8A7058","D8C8B0","brown rodent with tufted tail","squeak","Plays in sand baths.","mammal,cute,pet"},
 	{"deimos","MLCGKJ","kRe",4,6,6,"A1887F","8D6E63","tiny lumpy grey moon","rumble","Small. Lumpy. Dreadful.","space"},
@@ -391,7 +392,6 @@ return {
 	{"doormat","BMBL0I","N",1,1,2,"D2B48C","7A4E2D","bristly mat saying welcome","thud","Welcome. Now trip.","furniture,household"},
 	{"doorstop","BMALKI","O",1,1,4,"8E9196","7A4E2D","rubber wedge","thud","You shall not pass. The door, anyway.","household"},
 	{"doorway","EMCCoI","GNY",3,1,6,"8B5A2B","FDE68A","empty door frame with a WELCOME mat and a low beam","bonk","Mind your head. Too late.","household,building"},
-	{"doppelganger","AICJNA","jZY",5,7,4,"52525B","A78BFA","exact copy of you with eerie smile","whisper","Looks like you. Fights like you. Smells better.","spooky"},
 	{"dorayaki","IMBAKK","Uke",3,7,2,"C8803A","5A2A2A","two pancakes, red bean middle","whoosh","A pancake sandwich with a sweet heart.","edible"},
 	{"dork","LMBJNA","jeO",2,5,2,"60A5FA","F8FAFC","taped glasses, pocket protector, armful of comics","squeak","Um, actually, that is a common misconception.","silly,school"},
 	{"dormouse","AMAJAA","CdNb",1,6,1,"D8A060","F2E6D2","round sleepy mouse, fluffy tail","squeak","Sleeps half the year. Goals.","mammal,cute"},

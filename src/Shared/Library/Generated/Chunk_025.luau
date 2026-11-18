@@ -3,10 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"stone colossus","AEFJNA","Gklf",9,2,10,"78716C","22C55E","mountain-sized rock giant with moss","rumble","A mountain that got up and walked.","giant,boss,danger"},
-	{"stone dome","FECIKI","G",2,1,9,"8D6E63","BCAAA4","dome of rock slabs closing overhead","rumble","A cave. For you. Instantly.","heavy,defence"},
-	{"stone fence","EECCII","GS",2,1,6,"9E9E9E","7CB342","knee-high mossy stacked stones","thud","Sheep have been stopped here for centuries.","structure,defense"},
-	{"stone form","KECOXA","Gk",3,2,10,"8D6E63","BCAAA4","caster hardening into a living boulder","rumble","Rock solid. Literally.","heavy,defence"},
 	{"stone lantern","EHBCII","GFS",2,1,7,"9E9E9E","FFD54F","carved stone lantern with a glow","thud","Lights the path. Stays put.","structure"},
 	{"stone prison","FECLII","GO",6,3,8,"8D6E63","BCAAA4","stone slabs slamming up around target","rumble","Time out. Stone time out.","heavy"},
 	{"stone rain","FEDEOB","kPO",7,5,6,"8D6E63","D7CCC8","grey stones raining from a dusty cloud","rumble","Hard rain. Very hard.","heavy,storm"},
@@ -45,6 +41,7 @@ return {
 	{"storm pegasus","ADDKAB","AgL",7,9,5,"1E3A8A","FDE047","dark pegasus crackling with lightning","thunder","Thunder hooves in the sky.","mythical,mount,storm"},
 	{"storm rider","LDCKNB","AgL",6,9,4,"1E3A8A","FDE047","rider on a lightning bolt","thunder","Rides the storm. Literally.","storm,mount"},
 	{"storm shield","FDCIKK","GIL",4,5,5,"455A64","FFEB3B","swirling storm dome with lightning","howl","A tiny storm wearing you like a hat.","electric,defence"},
+	{"storm stride","KDCOKI","DLY",7,10,2,"F5D442","7DB7FF","yellow lightning streak through the enemy line","zap","Blink and you missed it. Everyone did.","anime,speed"},
 	{"storm surge","HBEF6F","kIP",8,6,5,"2A5C82","B0D8F0","long rising wall of stormy sea","roar","The ocean takes a step inland.","storm,aquatic"},
 	{"storm titan","ADFJNA","keLO",9,4,8,"1E3A8A","FDE047","cloud-bodied giant with lightning arms","thunder","The weather. But angry. And huge.","elemental,giant,boss,storm,danger"},
 	{"storm totem","KDCMmI","eL",5,3,4,"37474F","FFEB3B","metal-crowned pole shooting lightning","crack","Zaps whatever walks by.","electric"},
@@ -237,7 +234,6 @@ return {
 	{"swamp shack","EBBNII","GSN",3,1,4,"6D4C41","33691E","rickety hut on stilts over swamp","moan","Rickety. Rotten. Ready.","place,spooky"},
 	{"swan","ABCJDC","AkfB",3,5,2,"F7F7F4","F2701E","white swan, long curved neck","hiss","Graceful on top. Paddling chaos below.","bird,aquatic"},
 	{"swan goose","ABBJDC","AfOB",2,5,2,"C8A07A","1E1E1E","knobby goose","quack","Knob-nosed goose. Loud.","bird,aquatic"},
-	{"swap","KLBAKB","jY",3,9,1,"7C4DFF","18FFFF","two swirls trading positions","warp","Switcheroo! You're there, I'm here.","magic,silly"},
 	{"swarm","AGDDLB","jAQMP",6,8,2,"2B2B2B","F5C518","dense black-and-yellow buzzing cloud, shifting shape","buzz","Bzzzzzzzzzzzzzzzzzzzzzzzzzzzzz. Run.","insect,swarm"},
 	{"sweat bee","AJAJLB","iATMP",2,7,1,"2AC86A","F2D82A","tiny metallic bee","buzz","Drinks your sweat. Weird.","insect,swarm,venomous"},
 	{"sweatband","BMAONF","F",1,7,1,"F2F2EE","C0392B","stretchy terry band","bonk","Peak sport energy.","sport"},
@@ -403,4 +399,8 @@ return {
 	{"teething ring","BMAOKI","F",1,5,2,"47D7E8","F2F2EE","rubbery ring","squeak","Chomp. Soothed.","baby"},
 	{"tegu","AMCJAA","Cf",3,7,2,"1E1E1E","F2F2EE","big black-white lizard","hiss","Smart lizard. Potty trains.","reptile"},
 	{"tekko kagi","CKBHJK","fT",3,8,3,"3A3F45","6B4226","hand straps with metal hooks","shing","Climb walls. Scratch foes.","ninja,sharp"},
+	{"telegraph plant","NGANMI","jdS",1,1,2,"7CB342","B39DDB","leaves that wiggle on their own","rustle","Dances to music. Confuses everyone.","plant,flower,silly"},
+	{"telekinesis","KLCBKI","lHI",5,6,3,"F48FB1","E1BEE7","pink outlined objects lifting in the air","hum","Hands free. Mind full.","psychic"},
+	{"telepathy","KLBOKJ","ja",2,6,2,"E040FB","F8BBD0","pink brainwave rings from the head","hum","I know what you're about to type.","psychic"},
+	{"teleport","KLBOKI","Y",3,10,2,"7C4DFF","B9F6CA","flash of violet, rings collapsing then reappearing","warp","Here. Now there. Now here again.","magic"},
 }
