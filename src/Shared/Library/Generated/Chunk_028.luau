@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vine snake","AGCJCD","ZfMN",4,6,3,"6AC84A","C8E87A","thin vine-like green snake","hiss","Basically a stick of spaghetti.","reptile,venomous"},
+	{"vine tower","EGDMII","GSfHeN",5,1,7,"2E7D32","6D4C41","tower wrapped in lashing vines","thud","Vines whip out and grab.","structure,defense,tower,plant"},
+	{"vine wall","EGDCII","GWFSN",3,1,6,"2E7D32","66BB6A","dense vines woven into a wall","thud","Grows thicker every second.","structure,defense,plant"},
+	{"vine whip","FGCHJB","fH",4,7,2,"388E3C","9CCC65","long green whipping vine","crack","Slapped by a plant. Embarrassing.","plant"},
+	{"vinegar","IJBAKF","jMe",3,6,2,"C8A070","F7F2E8","glass cruet of sour liquid","squirt","Sour enough to sting the eyes.","edible,fruit,sour,sauce"},
 	{"vineyard","MGENII","ScN",2,1,5,"6A1B9A","7CB342","rows of trellised grapevines on a slope","rumble","Grapes everywhere. Sticky feet.","place,terrain,plant"},
 	{"vinyl record","BMAAKK","UTe",1,8,1,"24262A","C0392B","spinning black disc","toot","Spin it. Throw it.","music"},
 	{"violet","NGANMI","dFS",1,1,1,"7E57C2","FFEB3B","small velvety bloom with a face","rustle","Shy little flower with a big face.","plant,flower,cute"},
@@ -366,6 +371,7 @@ return {
 	{"windpump","EFDMIK","GSI",3,1,6,"B0BEC5","E53935","metal tower with a spinning fan wheel","creak","Pumps water. Spins menacingly.","structure,farm"},
 	{"windstorm","GFDFOB","kIP",6,7,3,"90A4AE","ECEFF1","long rushing gale with flying leaves","howl","Hold on to something. Anything.","storm,air"},
 	{"wing","BFCODB","AklI",3,8,3,"F5F5F5","CFE3F2","pair of white feathered wings flapping, no body","flutter","Just wings. Body sold separately.","flying,body"},
+	{"wing gust","KFDNDJ","AkI",3,8,2,"FFF4D0","E8B84A","feathered energy wings flap a wide gust","whoosh","Flap once. Float forever. Ish.","hero,movie,wings"},
 	{"winged helmet","BFBONI","DA",3,7,5,"C9CED4","D4A72C","helm with little wings","clank","Swift as a messenger.","armor,fantasy,ancient"},
 	{"winged lion","AHDKAB","DAg",6,7,6,"CA8A04","FDE68A","golden lion with eagle wings","roar","Kings of the jungle AND the sky now.","mythical,mount"},
 	{"winged sandals","BFBONI","DA",4,9,2,"D4A72C","F2F2EE","sandals with little wings","swish","Faster than a messenger.","clothing,ancient,magic"},
@@ -397,10 +403,4 @@ return {
 	{"witch on broom","LJCJNB","AMe",5,8,3,"1F2937","F97316","witch zooming on a broomstick","cackle","Speeding ticket pending.","witch,flying"},
 	{"witch queen","LJCJNB","AMh",6,5,4,"4C1D95","84CC16","crowned witch with raven staff","cackle","Rules the coven. Strictly.","royal,witch"},
 	{"witchcraft","FLCDOJ","jM",4,5,2,"4B2D7A","8FD14F","green-violet swirling cauldron smoke","cackle","Double, double, toil and bubble.","magic,spooky"},
-	{"wither","KJCFOB","iN",4,5,2,"6D4C41","9E9D24","brown wilting wave over ground","hiss","Droopy, dry and sad.","toxic"},
-	{"wizard","LLCJNA","eLhY",6,4,4,"4338CA","FACC15","pointy starry hat, long beard, glowing staff","zap","Says big words. Big things happen.","magic"},
-	{"wizard apprentice","LLBJNA","je",3,5,3,"60A5FA","FDE68A","oversized hat, wobbly wand","zap","Spells backfire 50% of the time.","magic,silly"},
-	{"wizard hat","BLBONI","Fh",2,5,2,"1F2F55","D4A72C","tall pointy starry hat","swish","Instant +5 to wizardliness.","clothing,magic"},
-	{"wizard hut","ELBCII","jSY",3,1,5,"3949AB","FFD54F","crooked hut with a starry pointy roof","thud","Smoke of every colour from the chimney.","structure,ancient,magic"},
-	{"wizard kid","LLBJNA","je",3,6,2,"1E3A8A","FACC15","kid in robes waving a stick wand","zap","Spells? Mostly sparkles.","cute,magic"},
 }

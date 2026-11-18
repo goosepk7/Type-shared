@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy spike","FHCLII","KT",5,6,3,"FFF59D","FFFFFF","golden light spikes rising","chime","Sharp. Shiny. Righteous.","holy,sharp"},
+	{"holy staff","CHCAzK","Fe",5,5,5,"F2F2EE","D4A72C","staff with radiant sun disc","shing","Heals friends. Smites jerks.","fantasy,holy"},
+	{"holy storm","FHEEOJ","KFP",8,5,3,"FFF8E1","FFD54F","golden clouds raining spears of light","choir","Very holy weather.","holy,storm"},
 	{"holy sword","CHCHrK","FfT",7,6,5,"D4A72C","F2F2EE","radiant blade, winged guard","shing","Glows when evil is near. So, often.","fantasy,holy"},
 	{"holy tornado","HHEN5K","KFlH",7,6,5,"FFF59D","FFFFFF","golden spinning column of light and feathers","choir","Lifts friends up. Literally.","storm,holy"},
 	{"holy unicorn","AHDKAB","AFTg",7,8,6,"F8FAFC","FDE047","radiant unicorn with feathered wings","chime","Heals with a touch. Pokes with a horn.","holy,mount"},
@@ -400,7 +403,4 @@ return {
 	{"jaffa cake","IMBAKK","Uke",3,7,2,"E8762B","3A1A0C","orange jelly sponge disc","whoosh","Cake or biscuit? The war continues.","edible"},
 	{"jaguar","AMDJAA","DfTB",7,8,5,"D99A3C","2B1E10","stocky spotted body, massive jaw, rosettes","roar","Bites through turtle shells for fun.","mammal,predator,wild"},
 	{"jaguarundi","AMCJAA","ZfT",4,7,3,"6D5D52","9A8878","long weasel-like body, plain dark coat","hiss","A cat that forgot it was a cat.","mammal,predator,wild"},
-	{"jailer","LKCJNA","GHO",4,3,6,"111827","94A3B8","keys, baton, cap","clank","Locks you up. Throws away the key.","guardian"},
-	{"jalapeno","IABAKK","KeP",4,7,2,"3E8E2B","2A6B1E","stubby green pod, stem","sizzle","Green, glossy, and quietly furious.","edible,spicy,flammable,pepper"},
-	{"jalapeno poppers","IABAKK","KE",4,7,2,"3E8E2B","D9A04A","breaded stuffed peppers","sizzle","Crunchy, cheesy, hot.","edible,spicy,flammable,snack"},
 }

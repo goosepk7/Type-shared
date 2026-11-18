@@ -141,6 +141,7 @@ return {
 	{"cyclist","LMCJNL","Dk",3,9,3,"FACC15","111827","helmet, spandex, racing bike","whoosh","Pedals faster than your excuses.","sport"},
 	{"cyclone kick","KFCO5K","Dklf",6,9,2,"B0BEC5","FFFFFF","you spin forward like a propeller, kicking","whoosh","Spin so fast you make weather.","anime,melee,fighting"},
 	{"cyclone mortar","KADN5K","KDEk",8,8,2,"FFB347","6B2A12","a spinning tornado of explosions diving onto the target","boom","Spin, ignite, descend, detonate.","anime,hero,explosion"},
+	{"cyclone sprint","KFCN5K","DlI",4,10,2,"E0F4FF","7AC0E8","run tight circles until a whirlwind lifts foes","whoosh","Dizzy? Me neither. Mostly.","hero,movie,speed"},
 	{"cyclone strike","FFDA5K","klHe",7,8,3,"90A4AE","ECEFF1","small fast twister racing along the ground","howl","A pocket tornado, on rails.","air,storm"},
 	{"cyclops","AEEJNA","kfeO",8,3,8,"A16207","FEF3C7","towering one-eyed giant, huge club","stomp","Great at aiming. One eye shut is cheating.","mythical,giant"},
 	{"cyclops alien","ALBJNA","je",3,6,3,"4ADE80","FDE68A","tiny alien with one huge eye","zap","Winks constantly. Blinks constantly.","alien,silly"},
@@ -248,6 +249,7 @@ return {
 	{"default avatar","LMCJNA","Ud",3,5,3,"FACC15","1D4ED8","blocky yellow-skinned starter avatar","oof","Fresh account. Fearless.","meme,gaming,silly"},
 	{"defibrillator","BDBBII","FL",3,5,3,"F1C40F","C0392B","two paddles on a box","thud","CLEAR! Bzzt.","medical,electric"},
 	{"deflate","KFBAKB","XN",3,6,1,"B0BEC5","FFFFFF","target wobbling and shrinking with a raspberry","pfffft","Pfffffft.","silly"},
+	{"deflect bracers","KKBIyI","Ga",3,10,1,"E0E4EA","D8A84A","crossed bracers bounce the next shot back","clang","Return to sender. Postage paid.","hero,movie,metal"},
 	{"deflector shield","BLDIyI","Ga",4,3,8,"3FC1D9","F2F2EE","curved glowing barrier panel","clang","Bounces bolts back home.","scifi,defense"},
 	{"degu","AMAJAA","Cdb",1,6,1,"8A7058","D8C8B0","brown rodent with tufted tail","squeak","Plays in sand baths.","mammal,cute,pet"},
 	{"deimos","MLCGKJ","kRe",4,6,6,"A1887F","8D6E63","tiny lumpy grey moon","rumble","Small. Lumpy. Dreadful.","space"},
@@ -401,6 +403,4 @@ return {
 	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
 	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
 	{"dogwood","NGCCMI","GWFkS",3,1,5,"5D4037","FFFFFF","small tree with white cross blossoms","rustle","No dogs involved. Mostly.","plant,tree"},
-	{"dojo","MMDNlI","SfOh",5,1,6,"E7D8B1","111827","paper-walled hall with mats, a gong and a row of belts","chop","Bow first. Then bonk.","sport,building"},
-	{"dokkaebi","ALCJNA","jbh",4,6,4,"1E3A8A","FACC15","horned goblin with magic club","cackle","One bonk and treasure appears.","goblin,mythical"},
 }

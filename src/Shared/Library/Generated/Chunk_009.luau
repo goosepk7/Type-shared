@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"essay","BMBCnI","GjN",2,1,4,"FFFFFF","1F2937","wall of dense typed text, word count at the bottom","tap","In conclusion: no.","school"},
+	{"essence","FLBOKJ","iF",3,4,2,"D4A5FF","FFFFFF","floating wisp of concentrated glow","hum","The pure good stuff.","magic"},
 	{"estoc","CKCHJK","fT",5,7,4,"8A929B","24262A","long stiff thrusting blade","shing","Armour-piercing pointy stick.","fantasy,sharp"},
 	{"eternity","KLENOI","SO",7,1,9,"311B92","FFF8E1","frozen golden moment bubble","hush","Lasts a very, very long time.","time"},
 	{"ethiopian wolf","AMCJAA","DQfh",4,7,4,"C8601E","F2F2EE","slim red wolf","howl","Rarest wolf. Very red.","mammal,predator,wild"},
@@ -401,6 +403,4 @@ return {
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
 	{"flower bed","NGCNMI","FSN",2,1,3,"F06292","6D4C41","rows of colourful blooms in soil","rustle","Keep off. The flowers fight back.","plant,flower"},
 	{"flower crown","NGAOMI","F",1,1,1,"F8BBD0","FFEB3B","ring of woven blossoms","rustle","Instant festival vibes.","plant,flower,cute"},
-	{"flower fairy","AGAJNB","AFc",1,8,1,"F472B6","A3E635","tiny fairy with petal wings","chime","Heals with pollen. Sneezes too.","fairy,plant,cute"},
-	{"flower field","MGENII","dFS",2,1,4,"F06292","8BC34A","carpet of colourful blooms","rumble","Smells amazing. Sneezes guaranteed.","plant,cute"},
 }

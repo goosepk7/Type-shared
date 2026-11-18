@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dojo","MMDNlI","SfOh",5,1,6,"E7D8B1","111827","paper-walled hall with mats, a gong and a row of belts","chop","Bow first. Then bonk.","sport,building"},
+	{"dokkaebi","ALCJNA","jbh",4,6,4,"1E3A8A","FACC15","horned goblin with magic club","cackle","One bonk and treasure appears.","goblin,mythical"},
 	{"doldrums","FFDNOI","NO",3,1,4,"CFD8DC","ECEFF1","eerily still air, flat haze","hush","No wind. No hurry. No hope.","air"},
 	{"dollhouse","BMCClI","Gc",1,1,4,"F06292","F2F2EE","tiny furnished toy house","squeak","Tiny home. Tiny wall.","toy"},
 	{"dolma","IMAELB","Fe",2,7,1,"5E7A3A","8AA86A","rolled leaf parcels","pitter","Little leaf-wrapped surprises.","edible"},
@@ -401,6 +403,4 @@ return {
 	{"esports player","LMCJNI","TeY",5,9,4,"7C3AED","22D3EE","team jersey, gaming chair, headset","click","240 actions per minute.","gaming,sport"},
 	{"espresso","IABOKI","DF",4,10,2,"2A160C","6B4026","tiny cup, rich crema","fizz","Tiny cup. Big zoom.","edible,drink"},
 	{"esquites","IMAELB","eNP",2,6,1,"F2C24A","F7F2EC","cup of corn with toppings","pitter","Street corn in a cup.","edible,grain"},
-	{"essay","BMBCnI","GjN",2,1,4,"FFFFFF","1F2937","wall of dense typed text, word count at the bottom","tap","In conclusion: no.","school"},
-	{"essence","FLBOKJ","iF",3,4,2,"D4A5FF","FFFFFF","floating wisp of concentrated glow","hum","The pure good stuff.","magic"},
 }

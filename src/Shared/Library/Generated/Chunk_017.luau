@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mirror cabinet","BHBIyI","Fa",1,1,4,"F2F2EE","DDE3E8","wall box with mirror door","thud","Reflects and restores.","furniture,household"},
+	{"mirror ghost","AICJNJ","jaY",5,6,3,"E5E7EB","818CF8","figure trapped in a cracked mirror pane","whisper","Lives in the mirror. Mimics badly.","ghost,spooky"},
+	{"mirror knight","AHCJNA","Gfa",5,4,7,"E5E7EB","93C5FD","knight in polished mirror armor","clang","Your spell? Now it's mine.","warrior,holy"},
 	{"mirror shield","BHCIyI","Ga",3,4,6,"DDE3E8","C9CED4","polished mirror-faced shield","clang","Return to sender.","armor,defense"},
 	{"mirror spider","AJBJQA","fMaN",2,6,2,"E8E8F0","C8C8D8","silver mirror-plated abdomen","skitter","Covered in tiny mirrors. Disco.","arachnid,spooky,venomous"},
 	{"mirror wall","EHCCII","GjSa",3,1,4,"E0F7FA","B0BEC5","tall polished mirror panels","chime","Everything you throw comes right back.","structure,defense"},
@@ -400,7 +403,4 @@ return {
 	{"nightmare unicorn","AIDKAA","DiTg",7,8,6,"1F1F1F","9333EA","black unicorn with purple horn and flame mane","neigh","Glitter, but goth.","spooky"},
 	{"nightshade","NJBNMI","ScM",4,1,2,"4A148C","212121","dark purple bells and black berries","rustle","Do not eat the berries. Seriously.","plant,flower,spooky"},
 	{"nightstand","BMBC0I","G",1,1,5,"8B5A2B","B58A3A","small table with a drawer","thud","Holds your lamp. Holds the line.","furniture,household"},
-	{"nigiri","IMAELB","ce",2,7,1,"F7F4EC","E8603A","oval rice with fish on top","pitter","A rice bed with a fishy blanket.","edible"},
-	{"nile crocodile","ABDJAC","fHOB",8,5,8,"5A6A3A","C8C08A","huge croc with yellow belly","snap","Rules the Nile. Ambush pro.","reptile,predator,aquatic"},
-	{"nile monitor","AMCJAA","CfbB",4,7,2,"3A3A2A","E8D82A","spotted swimming monitor","hiss","Swims, climbs, steals eggs.","reptile"},
 }

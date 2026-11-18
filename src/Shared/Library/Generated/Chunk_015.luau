@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lava field","MAELII","KSN",7,1,7,"FF5722","212121","black crust cracking over glowing lava","bubble","The floor is lava. Literally.","place,terrain,flammable"},
+	{"lava flood","HAENOI","KSNP",8,3,5,"DD2C00","FFB300","glowing lava rising across the ground","bubble","Flood, but it's fire.","fire,natural"},
+	{"lava flow","HAEF6D","KNP",7,2,6,"FF3D00","FFA000","slow river of glowing orange rock","bubble","In no hurry. Still unstoppable.","natural,fire"},
 	{"lava fountain","HADLII","KlP",7,5,4,"FF3D00","FFD740","tall glowing jet of lava spraying droplets","whoosh","A fountain you do not throw coins in.","fire,natural"},
 	{"lava giant","AAEJNA","KkS",8,3,8,"450A0A","F97316","cracked black giant oozing lava","rumble","Every footprint is a fire hazard.","giant,fire"},
 	{"lava hammer","CADHtK","KkfO",8,3,7,"1B1A22","D9480F","glowing molten stone hammer","shing","Each hit leaves a puddle of fire.","fantasy,sharp"},
@@ -400,7 +403,4 @@ return {
 	{"madness","KLCNOI","UjV",5,7,2,"E040FB","76FF03","swirling spirals and wobbly shapes","cackle","Everything is wobbly. Nothing is real.","chaos,silly"},
 	{"maduros","IMBLKI","dSc",2,3,3,"C8762B","8A4A1E","caramelized sweet plantains","chomp","Sweet golden plantains.","edible,sweet"},
 	{"maelstrom","FBEN5K","kSHO",8,5,5,"0B3A5E","5EB0E5","massive sea vortex, crashing white rim","roar","A whirlpool with a bad attitude.","aquatic"},
-	{"magazine","BMBAJK","deO",2,6,2,"F43F5E","FACC15","rolled-up glossy magazine swatting down","thwack","Rolled up. The ancient bug-swatting art.","household,silly"},
-	{"mage armor","KLCOKI","G",2,4,7,"7C4DFF","E1BEE7","translucent violet plates over caster","hum","Armour, but you can't drop it.","magic,defence"},
-	{"mage hand","KLBJVJ","dlb",2,6,2,"B39DDB","FFFFFF","floating glowing hand","shimmer","A hand that helps. Or slaps.","magic"},
 }

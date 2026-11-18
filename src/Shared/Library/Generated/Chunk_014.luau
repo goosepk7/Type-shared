@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jailer","LKCJNA","GHO",4,3,6,"111827","94A3B8","keys, baton, cap","clank","Locks you up. Throws away the key.","guardian"},
+	{"jalapeno","IABAKK","KeP",4,7,2,"3E8E2B","2A6B1E","stubby green pod, stem","sizzle","Green, glossy, and quietly furious.","edible,spicy,flammable,pepper"},
+	{"jalapeno poppers","IABAKK","KE",4,7,2,"3E8E2B","D9A04A","breaded stuffed peppers","sizzle","Crunchy, cheesy, hot.","edible,spicy,flammable,snack"},
 	{"jalebi","IMBLGI","jN",2,3,3,"F2862B","F2C24A","orange spiral pretzel, syrup","gloop","A syrup spiral of sweet chaos.","edible,sticky,sweet"},
 	{"jam","IMBLGI","ScN",2,3,3,"B0203E","D7263D","jar of glossy red preserve","gloop","Sticky, sweet, and smearable.","edible,sticky,sauce,sweet"},
 	{"jam roly poly","IMBGKF","DkI",3,5,6,"F2D08A","B0203E","rolled pudding with jam spiral","rumble","A jammy log of pudding.","edible,heavy,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"lava cave","MAENII","KS",6,1,8,"3E2723","FF5722","dark tunnel with glowing lava streams","echo","Hot rocks. Hot floor. Hot everything.","place,adventure,flammable"},
 	{"lava dragon","AAEKAB","KASg",8,5,8,"450A0A","F97316","black rock dragon with glowing lava cracks","roar","Born in a volcano. Never left.","mythical,reptile,fire"},
 	{"lava elemental","AADJNA","KkS",7,3,7,"7F1D1D","F97316","molten rock body with glowing cracks","sizzle","Leaves very hot footprints.","elemental,fire"},
-	{"lava field","MAELII","KSN",7,1,7,"FF5722","212121","black crust cracking over glowing lava","bubble","The floor is lava. Literally.","place,terrain,flammable"},
-	{"lava flood","HAENOI","KSNP",8,3,5,"DD2C00","FFB300","glowing lava rising across the ground","bubble","Flood, but it's fire.","fire,natural"},
-	{"lava flow","HAEF6D","KNP",7,2,6,"FF3D00","FFA000","slow river of glowing orange rock","bubble","In no hurry. Still unstoppable.","natural,fire"},
 }

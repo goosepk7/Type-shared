@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wither","KJCFOB","iN",4,5,2,"6D4C41","9E9D24","brown wilting wave over ground","hiss","Droopy, dry and sad.","toxic"},
+	{"wizard","LLCJNA","eLhY",6,4,4,"4338CA","FACC15","pointy starry hat, long beard, glowing staff","zap","Says big words. Big things happen.","magic"},
+	{"wizard apprentice","LLBJNA","je",3,5,3,"60A5FA","FDE68A","oversized hat, wobbly wand","zap","Spells backfire 50% of the time.","magic,silly"},
+	{"wizard hat","BLBONI","Fh",2,5,2,"1F2F55","D4A72C","tall pointy starry hat","swish","Instant +5 to wizardliness.","clothing,magic"},
+	{"wizard hut","ELBCII","jSY",3,1,5,"3949AB","FFD54F","crooked hut with a starry pointy roof","thud","Smoke of every colour from the chimney.","structure,ancient,magic"},
+	{"wizard kid","LLBJNA","je",3,6,2,"1E3A8A","FACC15","kid in robes waving a stick wand","zap","Spells? Mostly sparkles.","cute,magic"},
 	{"wizard king","LLCJNA","ehY",6,4,5,"4338CA","FACC15","crowned wizard with orb scepter","zap","Rules by magic. And snacks.","royal,magic"},
 	{"wizard school","MLFNII","ShY",5,1,9,"3949AB","FFD54F","castle with spires, owls, floating candles","chime","Class is in session. Lesson one: fireballs.","place,mythical,magic"},
 	{"wizard tower","ELDMII","GjSeY",6,1,7,"3949AB","FFD54F","crooked tall tower, star-spangled cone roof","zap","Leaning slightly from all the magic.","structure,defense,tower,magic"},

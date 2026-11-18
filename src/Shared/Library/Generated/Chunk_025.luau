@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"starlight","FHBEOJ","Fe",3,6,1,"FFF8D6","B9C8FF","falling tiny twinkling stars","chime","Light from very far away. Very late.","space,cute"},
+	{"starling","AMAJDB","jdAPh",1,7,1,"2A2A3A","8AE0A0","glossy speckled bird in swirling flocks","tweet","Flocks dance like smoke.","bird,cute"},
+	{"starquake","HHFFOB","kPO",9,8,2,"FFF59D","82B1FF","blinding ring of star-shock","boom","A star shook. Everything felt it.","space,danger"},
+	{"starship cruiser","DLFMHB","EAegh",9,4,9,"B0BEC5","FF1744","colossal wedge hull bristling with guns","hum","Blocks out the stars. Opens fire.","vehicle,air,space,danger"},
 	{"starting blocks","BMBOII","D",1,9,4,"2F6FD1","C9CED4","angled foot blocks on rail","bonk","Explosive starts.","sport"},
 	{"starting pistol","BMBFwF","O",1,9,2,"24262A","C9CED4","blank-firing pistol","bang","Ready, set, BANG.","sport"},
 	{"stasis","KLCLKI","GO",6,3,6,"FFC107","5E35B1","golden bubble with frozen target inside","hum","On hold. Please wait.","time"},
@@ -130,6 +134,7 @@ return {
 	{"storm aura","FDCOKJ","GL",4,6,4,"FFEB3B","37474F","crackling arcs circling caster","buzz","Hug me. Get zapped.","electric"},
 	{"storm call","FDEEOJ","ILP",7,5,4,"37474F","FFE57F","dark clouds swirling in overhead on command","boom","The sky answers. Loudly.","electric,storm"},
 	{"storm chaser","LFCJNL","Dl",4,8,4,"475569","FACC15","truck with radar dish, windbreaker","howl","Drives into tornadoes. On purpose.","storm,vehicle"},
+	{"storm clap","KDCNNI","kIL",4,10,2,"FFE27A","5A7AE8","two hands clap a crackling shockwave cone","boom","Round of applause. Mostly sparks.","hero,movie,loud"},
 	{"storm cloud spirit","ADCJOJ","AeL",4,5,2,"475569","FDE047","angry cloud with lightning arms","thunder","Has a personal raincloud. Is the raincloud.","storm,silly"},
 	{"storm crow","ADBJDB","jAL",3,9,2,"1F2937","FDE047","black crow crackling with sparks","caw","Caws thunder.","storm,bird"},
 	{"storm dome","KDDIKI","GL",4,4,6,"37474F","FFEB3B","crackling dome laced with lightning","crack","A force field with a temper.","electric,defence"},
@@ -398,9 +403,4 @@ return {
 	{"taco bowl","IGBOKI","F",2,5,3,"E8B84A","8A5A3A","shell bowl of taco fillings","crunch","A taco you eat with a fork.","edible,healthy"},
 	{"taco salad","IGBOKI","F",2,5,3,"E8B84A","7DBE3A","salad in a crispy shell bowl","crunch","A salad with a crunchy bowl.","edible,healthy"},
 	{"tadpole","AMAJEC","eB",1,5,1,"3A3A2A","6A6A4A","round body, wiggly tail","croak","Future frog. Currently a comma.","amphibian,wetland,aquatic"},
-	{"taekwondo fighter","LMCJNA","kf",5,8,4,"F8FAFC","DC2626","white dobok, flying kick","whoosh","Flying kick! Mid-air!","sport,martial"},
-	{"taffy","IMBLGI","SHN",2,3,3,"F2A6C8","F7F2E0","stretched wrapped candy","gloop","Stretchy, chewy, everlasting.","edible,sticky,candy,sweet"},
-	{"tag you're it","KMBAKB","dQc",1,9,1,"FF5252","FFFFFF","glowing handprint on the target","boop","Tag! You're it! Ha!","silly,sport"},
-	{"tagine","IABNGI","KF",4,4,2,"C8602B","E8A040","conical clay pot stew","sizzle","Slow-cooked under a pointy hat.","edible,spicy"},
-	{"tahini","IMBLGI","SNP",2,3,3,"D8C08A","C8A070","smooth sesame paste","gloop","Sesame, ground to silk.","edible,sticky"},
 }

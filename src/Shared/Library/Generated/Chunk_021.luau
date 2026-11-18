@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow unicorn","AHDKAA","DFeg",6,8,5,"F472B6","60A5FA","unicorn with rainbow trail","neigh","Leaves a rainbow everywhere it goes.","cute"},
+	{"raincoat","BBCONI","G",1,5,2,"F1C40F","F1C40F","bright yellow hooded raincoat","swish","Rain? Bring it.","clothing"},
+	{"rainier cherry","IGAELB","eVP",2,7,1,"F2C24A","E8434F","yellow-blushed cherry","pitter","A golden cherry with a pink blush.","edible,fruit,sweet"},
+	{"rainstorm","GBDEOJ","SIN",5,5,3,"456F8C","B4D6EA","dark heavy cloud dumping thick rain","patter","Nature's car wash.","storm,aquatic"},
 	{"rainy day","GBCEOJ","N",2,3,3,"78909C","B3E5FC","soft grey drizzle over the area","patter","Stay inside. Everyone. Now.","silly"},
 	{"raised bed","EGBNII","FS",1,1,4,"8D6E63","7CB342","wooden box full of veg","rustle","Grows snacks. Heals friends.","structure,plant"},
 	{"raisin","IMAELB","eVP",2,7,1,"4A2A1E","6E3A2A","tiny wrinkled dark nugget","pitter","A grape that sunbathed too long.","edible,sweet,fruit"},
@@ -399,8 +403,4 @@ return {
 	{"rubble","FECLII","GN",3,2,6,"8D6E63","BCAAA4","pile of broken rocks and dust","crunch","Watch your step. All the steps.","heavy"},
 	{"rubik's cube","BMALKI","jO",2,3,4,"C0392B","F1C40F","coloured cube of little squares","squeak","Solve me. You can't.","toy"},
 	{"ruby","BAAA4J","Kce",3,7,7,"B0103A","9E1B32","deep red cut gem","chime","Glows warm, hits hot.","treasure,shiny"},
-	{"rug","BMCLGI","NO",1,1,3,"9E1B32","D4A72C","patterned rectangular rug","thud","Pull it out from under them.","furniture,household"},
-	{"rugby","KEDFLA","DkfI",6,6,6,"15803D","FFFFFF","eight muddy players locked together shoving forward","grunt","No pads. No helmet. No worries.","sport"},
-	{"rugby ball","BMBA3F","Uke",2,8,4,"F2F2EE","7A4E2D","chunky oval ball","bonk","Tackle optional. Bonk mandatory.","sport"},
-	{"rugby player","LMCJNA","GDk",5,7,6,"15803D","F8FAFC","muddy jersey, scrum pose","thud","Tackles first. Asks never.","sport"},
 }
