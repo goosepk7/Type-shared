@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crowned crane","AMCJDA","dAfT",3,5,2,"6A6A6E","F2C02A","golden crown of feathers","squawk","Wears a golden crown.","bird,wetland,royal"},
+	{"cruise missile","CADAkB","EQke",8,8,3,"8E9196","F2F2EE","long winged missile","boom","Takes the scenic route to boom.","explosive"},
 	{"cruise ship","DBFKHC","DkghB",6,3,9,"F5F5F5","1565C0","massive white ship, stacked decks, funnels","horn","Fourteen decks and a buffet. Ramming speed!","vehicle,aquatic"},
 	{"cruller","IMBLKI","dSc",2,3,3,"E8B860","F7F0D8","twisted ridged ring","chomp","A donut that does yoga.","edible,sweet"},
 	{"crumb","IMAELJ","cNP",1,5,1,"D9B382","A16207","sprinkle of golden crumbs trailing off","pitter","In the bed. In the keyboard. Forever.","edible,silly"},
@@ -401,6 +403,4 @@ return {
 	{"doorknob","BKAA3B","UeO",2,7,5,"D4AF37","8A6A14","round brass knob with a keyhole","clink","Opens doors. Closes arguments.","household"},
 	{"doormat","BMBL0I","N",1,1,2,"D2B48C","7A4E2D","bristly mat saying welcome","thud","Welcome. Now trip.","furniture,household"},
 	{"doorstop","BMALKI","O",1,1,4,"8E9196","7A4E2D","rubber wedge","thud","You shall not pass. The door, anyway.","household"},
-	{"doorway","EMCCoI","GNY",3,1,6,"8B5A2B","FDE68A","empty door frame with a WELCOME mat and a low beam","bonk","Mind your head. Too late.","household,building"},
-	{"dorayaki","IMBAKK","Uke",3,7,2,"C8803A","5A2A2A","two pancakes, red bean middle","whoosh","A pancake sandwich with a sweet heart.","edible"},
 }

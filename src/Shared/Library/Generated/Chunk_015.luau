@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"leap","KMCOKG","Dl",3,8,2,"FFCC80","FFFFFF","long arcing jump trail","whoosh","One giant leap. Mostly sideways.","speed"},
 	{"leapfrog","KGBOBG","UDO",3,7,2,"22C55E","FDE047","line of kids vaulting over each other's backs","boing","Over you. Over you. Over you. Splat.","toy,sport"},
 	{"learn","KHBOKJ","GWF",3,3,3,"3B82F6","FDE047","stack of books with a level-up arrow and a tired candle","ding","Knowledge is power. Naps are also power.","school,support"},
 	{"leash","BMBLKI","HN",1,5,2,"C0392B","C9CED4","strap with clip","squeak","Heel!","pet"},
@@ -402,6 +403,4 @@ return {
 	{"mahi-mahi","ABCJEC","DfB",4,7,4,"4AB04A","F2D82A","blunt head, green-gold rainbow","splash","Shines like a glowing rainbow.","fish,aquatic"},
 	{"maiasaura","AMDJAA","dFk",5,5,6,"7A6A4A","D8C08A","duckbill mother with nest","honk","Good mother lizard. Literally.","dinosaur,extinct,reptile"},
 	{"maid","LMCJNA","FI",3,6,4,"111827","F8FAFC","apron, feather duster","swish","Dusts the enemies off the map.","silly"},
-	{"maidenhair fern","NGANMI","ZS",1,1,2,"7CB342","3E2723","delicate fan fronds on black stems","rustle","Dainty. Shy. Ancient.","plant,ancient"},
-	{"mail","BMBELB","dPO",3,6,2,"F5F5F0","DC2626","blizzard of envelopes, postcards and one heavy parcel","thud","You have got mail. All of it. At once.","household"},
 }

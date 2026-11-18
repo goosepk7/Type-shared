@@ -403,6 +403,4 @@ return {
 	{"crown imperial","NGBNMI","dFS",2,1,2,"FF6F00","2E7D32","ring of hanging bells under a leaf crown","rustle","Royalty among bulbs.","plant,flower,royal"},
 	{"crown jewels","BHBONI","Fc",3,4,5,"D4A72C","B0103A","cushion of gem crown and sceptre","swish","Shiny enough to distract a dragon.","royal,shiny,treasure"},
 	{"crown-of-thorns starfish","AJAJGA","GTMN",2,1,4,"8A3A6A","E8701E","spiky many-armed starfish","squelch","A starfish wearing a spiky crown.","aquatic,ocean"},
-	{"crowned crane","AMCJDA","dAfT",3,5,2,"6A6A6E","F2C02A","golden crown of feathers","squawk","Wears a golden crown.","bird,wetland,royal"},
-	{"cruise missile","CADAkB","EQke",8,8,3,"8E9196","F2F2EE","long winged missile","boom","Takes the scenic route to boom.","explosive"},
 }

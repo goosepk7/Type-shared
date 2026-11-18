@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"foam sword","BMCHrK","Udf",1,7,2,"2F6FD1","F1C40F","squishy foam blade","shing","Bonk. Bonk bonk. Victory.","toy,silly"},
+	{"focaccia","IMBAKK","Uke",3,7,2,"E0B05A","6B8E2B","dimpled flat bread, herbs, oil","whoosh","Bread with dimples and rosemary.","edible"},
 	{"focus","KLBOKI","T",2,4,3,"42A5F5","FFFFFF","narrow glowing aim rings","hum","Eye on the prize.","support"},
 	{"fog","GBDDOJ","jZS",2,2,3,"C9D3DA","EEF2F5","thick low grey blanket of fog","hush","Cannot see the enemy. They cannot see you.","spooky"},
 	{"fog cloud","FBDDOJ","jZS",1,3,3,"CFD8DC","FFFFFF","round thick fog ball expanding","hush","Now nobody can see anything. Great.","stealth"},
@@ -401,6 +403,4 @@ return {
 	{"giant jelly","IMEJGG","GUaN",7,2,7,"E0102B","F35A6A","house-sized wobbling dome","thud","A wobbling fortress. Bounces everything off.","edible,giant,silly"},
 	{"giant leaf boat","DGBKHC","gB",1,4,2,"7CB342","F8BBD0","huge leaf curled into a boat","whoosh","For very tiny adventurers.","vehicle,magic,mythical,cute"},
 	{"giant leech","ABCJCC","iNB",4,4,4,"1F2937","991B1B","slimy black worm with a round sucker","squelch","Sticks like a bad joke.","aquatic,spooky"},
-	{"giant lemon","IMEJIF","jEk",7,2,7,"FFF44F","7BA428","lemon the size of a boulder","thud","Life gave you a big lemon.","edible,giant,silly,sour"},
-	{"giant lollipop","IMDHJI","dkf",5,5,4,"E8434F","4FA3E8","huge rainbow swirl on a pole","bonk","Bigger than you. Sweeter too.","edible,silly,candy"},
 }

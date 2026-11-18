@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shin pads","BMBOKF","G",1,6,3,"24262A","F2F2EE","curved foam shin shields","bonk","Kicks? Bring it.","sport"},
+	{"shine","FHBOKJ","da",2,6,2,"FFF6D1","FFFFFF","sparkle glints across surfaces","ding","So shiny it is distracting.","cute"},
+	{"ship","DBEKHC","DkgB",6,5,8,"6D4C41","F2E6C9","wooden hull, three masts, billowing sails","creak","Sails in. Rams out.","vehicle,aquatic,ancient"},
 	{"ship captain","LBCJNA","Gh",4,4,5,"1E3A8A","F8FAFC","peaked cap, pipe, white beard","horn","Goes down with the ship. Not today.","aquatic"},
 	{"ship lookout","LBCJNI","eO",3,5,3,"0369A1","FACC15","telescope, crow's nest","horn","LAND HO! Also, enemies ho.","pirate"},
 	{"ship of the line","DBFMHC","EkegB",8,4,9,"3E2723","FFD54F","three decks of cannons, huge sails","cannon","A floating castle. With a hundred cannons.","vehicle,aquatic"},
@@ -400,5 +403,4 @@ return {
 	{"soldering iron","JAAAJK","Kf",2,6,3,"8E9196","C0392B","pen-shaped heated tip","clank","Tiny, toasty, precise.","tool"},
 	{"soldier","LECJNA","GDe",5,6,6,"4D7C0F","57534E","camo helmet, backpack, boots","bang","Hup two three four.","military"},
 	{"solenodon","AMBJAA","CfM",2,5,3,"8A6A4A","E8B0A0","long snout shrew with venom","squeak","Venomous spit. Super rare.","mammal,wild"},
-	{"solid","FECCnI","Gka",4,1,9,"6B7280","9CA3AF","perfectly plain grey block, very hard, very square","thunk","Does not flow. Does not care.","science,defense"},
 }

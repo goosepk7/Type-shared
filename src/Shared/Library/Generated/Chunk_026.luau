@@ -402,4 +402,5 @@ return {
 	{"treacle sponge","IMBLGI","SNP",2,3,3,"E8A317","F2D88A","sponge pudding with syrup","gloop","A syrup-drenched sponge.","edible,sticky,sweet"},
 	{"treacle tart","IMBLGI","SNP",2,3,3,"E8A317","D9A04A","golden syrup tart","gloop","A golden sticky tart.","edible,sticky,sweet"},
 	{"treadmill","OMCL1I","IN",1,3,6,"24262A","8E9196","motor belt with handrails","hum","Run forever. Get nowhere.","sport,silly"},
+	{"treant","AGEJMA","GWFk",7,2,9,"78350F","4D7C0F","giant walking tree with bark face","creak","Takes three days to say good morning.","plant,giant"},
 }

@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"walrus","ACDJEC","UkfTB",6,5,7,"9A6E54","F2E6D2","huge blubbery body, long tusks, whiskers","bark","Uses its tusks as climbing hooks.","mammal,aquatic,arctic"},
 	{"wampus cat","AICJAA","jZf",5,8,4,"1C1917","FACC15","six-legged cat with glowing eyes","hiss","Two extra legs. Twice the zoomies.","cryptid,cat,spooky"},
 	{"wand","BLAAzI","eh",4,8,2,"5A3A1E","D4A72C","slim carved wand with sparkly tip","chime","Swish and flick.","magic,fantasy"},
 	{"wanderer","LFCJNA","ZY",4,6,4,"A16207","78716C","hooded traveling cloak, walking staff","whoosh","Arrives from nowhere. Leaves the same way.","explorer"},

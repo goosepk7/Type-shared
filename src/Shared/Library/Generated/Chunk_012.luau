@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"guacamole","IMBLGI","FcN",2,3,3,"568203","D3E28A","bowl of chunky green dip","gloop","Green, chunky, and loved by all.","edible,sticky,sauce"},
+	{"guanaco","AMCJAA","dfe",3,4,4,"B07A44","E8E0D8","wild llama, brown back, white belly","bleat","Llama's wild cousin. Same spit.","mammal,farm"},
 	{"guandao","CKDHuK","kfP",7,4,5,"8A929B","9E1B32","heavy curved blade, dragon pole","shing","A general's favourite way to say no.","medieval,sharp"},
 	{"guanlong","AMCJBA","DkfT",4,6,7,"6A6A7A","E8701E","tall orange head crest","roar","Tiny tyrant with a crest.","dinosaur,extinct,reptile,predator"},
 	{"guard","KKCIKI","G",1,4,7,"78909C","ECEFF1","sturdy glowing guard stance aura","clank","On guard!","defence"},
@@ -401,5 +403,4 @@ return {
 	{"hoop snake","AJBJCF","UDM",3,9,2,"65A30D","FBBF24","snake biting tail rolling like a wheel","hiss","Rolls downhill faster than you run.","cryptid,silly"},
 	{"hoopoe","AMAJDB","dA",1,7,1,"E8A06A","1E1E1E","punk crest, zebra wings","tweet","Has a mohawk. Sounds like oop-oop.","bird,cute"},
 	{"hop","KMAOKG","U",1,7,1,"F8BBD0","FFFFFF","tiny bouncy hop puffs","boing","Hippity hoppity.","cute,speed"},
-	{"hop vine","NGCNMI","WSN",2,1,3,"9CCC65","C5E1A5","climbing vine with papery green cones","rustle","Climbs everything in sight.","plant,crop"},
 }

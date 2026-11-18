@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"numbat","AMBJAA","Uf",2,6,2,"B85A2E","F2F2EE","striped back, bushy tail","chirp","Eats termites. Wears stripes.","mammal,marsupial"},
+	{"number","KLBELG","UjV",3,5,3,"22D3EE","FACC15","bouncing chunky digits 0 to 9 with a floating +1","ding","Pick a number. Wrong. It was seven.","school"},
 	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
 	{"nunchucks","CMBHJK","jfO",3,9,3,"24262A","5A3A1E","two sticks joined by chain","bonk","Mostly hits the user. Sometimes the enemy.","ninja"},
 	{"nurikabe","AEECII","GO",6,1,10,"78716C","A8A29E","enormous invisible-ish stone wall with eyes","rumble","A wall that appears out of nowhere.","yokai,guardian"},
@@ -401,6 +403,4 @@ return {
 	{"pegasus foal","AFBKAB","AQg",2,7,2,"F8FAFC","FBCFE8","fluffy white foal, tiny wings","neigh","Wings too small. Tries anyway.","mythical,cute,flying"},
 	{"pegasus warhorse","AFDKAB","Akg",7,8,7,"F8FAFC","94A3B8","pegasus in steel barding","neigh","Heavy cavalry, light wings.","mount"},
 	{"peking duck","IGCOKI","F",2,5,3,"B0502B","E8A040","lacquered roasted duck","crunch","Crispy skin, royal history.","edible,healthy,royal"},
-	{"pekingese","AMBJAA","dQf",2,6,2,"E8B87A","F2E0C0","flat face, lion mane fluff","yip","Tiny lion. Huge ego.","mammal,pet,cute"},
-	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
 }

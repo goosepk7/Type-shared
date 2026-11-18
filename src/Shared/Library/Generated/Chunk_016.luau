@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"maidenhair fern","NGANMI","ZS",1,1,2,"7CB342","3E2723","delicate fan fronds on black stems","rustle","Dainty. Shy. Ancient.","plant,ancient"},
+	{"mail","BMBELB","dPO",3,6,2,"F5F5F0","DC2626","blizzard of envelopes, postcards and one heavy parcel","thud","You have got mail. All of it. At once.","household"},
 	{"mail carrier","LMCJNA","DQe",3,7,4,"1E3A8A","F8FAFC","blue uniform, mail bag, letters","whoosh","Throws letters. Hard.","silly"},
 	{"mail ninja","LICJNA","Ze",4,9,3,"111827","1E3A8A","ninja with a mailbag of throwing letters","whoosh","Delivers mail. Silently. Violently.","silly,stealth"},
 	{"mailbox","BMBC2I","G",1,1,6,"2F6FD1","C0392B","box on a post with flag","thud","Delivery! Of doom.","container"},
@@ -401,6 +403,4 @@ return {
 	{"mole cricket","AMAJFA","CdP",1,6,1,"8A6A3A","C8A07A","cricket with mole digging claws","buzz","Half cricket, half mole.","insect"},
 	{"mole machine","DEDKHL","CDTg",6,4,9,"795548","FFB300","cone drill nose on a tracked hull","drill","Pops up right under them. Surprise!","mechanical,vehicle,land,silly"},
 	{"mole person","AEBJNH","Cb",2,5,3,"78350F","F9A8D4","squinty underground dweller with shovel","chitter","Pops up from the floor. Rude.","silly"},
-	{"mole sauce","IABNGI","KSN",2,4,1,"4A2A1E","8A3A1E","dark rich chocolate-chili sauce","splat","Chocolate and chilies, dark and deep.","edible,sauce"},
-	{"molecule","FMAGKJ","URV",2,7,2,"EF4444","F8FAFC","ball-and-stick model: one red ball, two white, wobbling","boing","H2-Oh no.","science"},
 }

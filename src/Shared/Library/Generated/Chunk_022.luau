@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"salp","ABBJGJ","SVB",1,2,1,"E8F4F8","C8E8F0","clear barrel chain","squelch","See-through chain of jelly barrels.","aquatic,ocean,venomous"},
+	{"salsa","IABNGI","KjS",4,4,2,"D8302B","7DBE3A","bowl of chunky red sauce","sizzle","Chunky, spicy, dance-ready.","edible,spicy,sauce"},
+	{"salsify","IEBAJK","FTe",3,6,4,"5A4A3A","F2EEDF","long dark root","crunch","A root that tastes like oysters.","edible,vegetable,healthy"},
 	{"salt","FEAEOB","MN",2,6,1,"F7F7F2","D9D9CF","sprinkle of white crystal grains","tick","Slugs fear it. Ghosts too, maybe.","edible"},
 	{"salt and pepper","IFBDOJ","jPO",2,5,1,"F7F7F7","2A2A2A","twin shakers, white and black","puff","A legendary duo.","edible,spice"},
 	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
@@ -400,7 +403,4 @@ return {
 	{"shillelagh","CMCHtK","kf",3,6,4,"5A3A1E","7A4E2D","knobbly blackthorn stick","shing","Lucky bonk.","sharp,ancient"},
 	{"shimmer","FLBOKJ","Za",2,6,2,"E1BEE7","B2EBF2","wavy translucent sheen over caster","shimmer","Now you see me. Kinda.","magic"},
 	{"shin","BMBAJB","fNO",3,7,4,"E8B48A","4F7CAC","lower leg swinging at exactly table-corner height","thwack","Finds every coffee table in the dark.","body"},
-	{"shin pads","BMBOKF","G",1,6,3,"24262A","F2F2EE","curved foam shin shields","bonk","Kicks? Bring it.","sport"},
-	{"shine","FHBOKJ","da",2,6,2,"FFF6D1","FFFFFF","sparkle glints across surfaces","ding","So shiny it is distracting.","cute"},
-	{"ship","DBEKHC","DkgB",6,5,8,"6D4C41","F2E6C9","wooden hull, three masts, billowing sails","creak","Sails in. Rams out.","vehicle,aquatic,ancient"},
 }

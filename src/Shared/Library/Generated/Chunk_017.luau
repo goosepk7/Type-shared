@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mole sauce","IABNGI","KSN",2,4,1,"4A2A1E","8A3A1E","dark rich chocolate-chili sauce","splat","Chocolate and chilies, dark and deep.","edible,sauce"},
+	{"molecule","FMAGKJ","URV",2,7,2,"EF4444","F8FAFC","ball-and-stick model: one red ball, two white, wobbling","boing","H2-Oh no.","science"},
 	{"molly","ABAJEC","dB",1,6,1,"1E1E1E","F2D82A","black aquarium fish","splash","Chill aquarium buddy.","fish,aquatic"},
 	{"molten","FACF6F","KNP",6,3,4,"F2541B","FFB703","glowing orange flow, dark crust plates","bubble","Not solid. Not liquid. Not friendly.","fire,heavy"},
 	{"molten metal","FKCF6F","KN",7,4,5,"FF7A00","C0C0C0","glowing orange-silver liquid metal flow","bubble","Forge-fresh. Do not hug.","heavy,fire"},
@@ -401,6 +403,4 @@ return {
 	{"nue","ADCJAB","jAL",5,6,4,"78350F","1F2937","monkey face, tiger legs, snake tail","screech","Assembled from four different bad dreams.","yokai"},
 	{"nugget","IMAELG","UFcP",2,5,2,"D9952B","F6D48A","golden crispy lumps raining with a dip tub","crunch","A ten piece. For ten problems.","edible,meme"},
 	{"nuke","CAFGKF","KEkSP",10,2,3,"6B7B3A","F1C40F","huge finned bomb, hazard stripes","boom","Big flash. Bigger mushroom.","explosive,danger"},
-	{"numbat","AMBJAA","Uf",2,6,2,"B85A2E","F2F2EE","striped back, bushy tail","chirp","Eats termites. Wears stripes.","mammal,marsupial"},
-	{"number","KLBELG","UjV",3,5,3,"22D3EE","FACC15","bouncing chunky digits 0 to 9 with a floating +1","ding","Pick a number. Wrong. It was seven.","school"},
 }

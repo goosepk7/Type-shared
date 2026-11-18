@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doorway","EMCCoI","GNY",3,1,6,"8B5A2B","FDE68A","empty door frame with a WELCOME mat and a low beam","bonk","Mind your head. Too late.","household,building"},
+	{"dorayaki","IMBAKK","Uke",3,7,2,"C8803A","5A2A2A","two pancakes, red bean middle","whoosh","A pancake sandwich with a sweet heart.","edible"},
 	{"dork","LMBJNA","jeO",2,5,2,"60A5FA","F8FAFC","taped glasses, pocket protector, armful of comics","squeak","Um, actually, that is a common misconception.","silly,school"},
 	{"dormouse","AMAJAA","CdNb",1,6,1,"D8A060","F2E6D2","round sleepy mouse, fluffy tail","squeak","Sleeps half the year. Goals.","mammal,cute"},
 	{"doro wat","IABNGI","KF",4,4,2,"7A2A1E","C8302B","deep red chicken stew","sizzle","Red, spicy, and soul-warming.","edible,spicy"},
@@ -401,6 +403,4 @@ return {
 	{"evil laugh","KICFOB","ji",4,6,1,"4A148C","76FF03","dark rings with lightning flicker","mwahaha","Mwahahaha! Ahem.","spooky,silly,meme"},
 	{"evil mastermind","LICJNA","jhY",5,3,4,"1F2937","7C3AED","swivel chair, fluffy cat, monocle","cackle","Pets the cat. Explains the plan.","villain"},
 	{"evil queen","LICJNA","jMh",5,4,4,"111827","7C3AED","tall collar, dark crown, magic mirror","cackle","Mirror mirror on the wall: rude.","villain,royal"},
-	{"evil stepmother","LICJNA","jh",4,4,4,"111827","7C3AED","tall collar, sharp nails, glare","cackle","Makes you do all the chores.","folklore,villain"},
-	{"evil tree","NIECMI","GSfH",6,2,8,"3E2723","B71C1C","tree with glowing eyes and a scowling mouth","rustle","Hates trespassers. Everyone is a trespasser.","plant,tree,spooky"},
 }

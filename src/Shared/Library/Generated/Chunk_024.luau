@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"solid","FECCnI","Gka",4,1,9,"6B7280","9CA3AF","perfectly plain grey block, very hard, very square","thunk","Does not flow. Does not care.","science,defense"},
 	{"solitaire","BMBELG","UjP",3,5,2,"15803D","F8FAFC","cascade of bouncing playing cards leaving trails","swish","You won. The cards are bouncing. Classic.","game,tech"},
 	{"solo","LICJNA","GDfT",6,7,5,"374151","FACC15","lone hooded figure against the wind, scarf trailing","whistle","No team. No heals. No problem.","gaming,warrior"},
 	{"solstice","GHENOI","KJF",6,3,5,"FFB300","B3E5FC","sun and frost glow in balance","chime","The longest day. Or night. Both?","holiday"},

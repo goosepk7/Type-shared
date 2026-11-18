@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"recycling truck","DMDKHL","DklHg",5,4,8,"43A047","F5F5F5","green truck with sorting bins","engine","Recycles enemies into something useful.","mechanical,vehicle,land"},
+	{"red admiral","AMAJFB","jdA",1,5,1,"1E1E1E","E8301E","black wings with red bands","flutter","Military-looking butterfly.","insect,cute"},
+	{"red apple","IGBAKF","Fke",3,6,2,"B3121D","F6E7C1","round, deep red, stem and leaf","splat","Polished to a shine. Thrown with love.","edible,fruit,sweet"},
 	{"red bean paste","IMBLGI","SNP",2,3,3,"5A2A2A","7A3A3A","smooth dark red paste","gloop","Sweet beans, smooth as velvet.","edible,sticky,dessert,sweet"},
 	{"red cabbage","IGBAKF","Fke",3,5,3,"6B2D6B","C8A8D8","purple layered round head","thud","A purple bowling ball.","edible,vegetable,healthy"},
 	{"red crab","ABBJRA","GfTPh",2,4,5,"E8301E","F2A07A","bright red land crab","clack","Marches in millions.","crustacean,aquatic,armored"},
@@ -400,7 +403,4 @@ return {
 	{"salesman","LMCJNA","jcb",3,5,3,"B45309","FDE68A","fast talker with a suitcase of gadgets and a huge grin","ding","But wait, there is more! There is always more.","silly"},
 	{"salmon","ABCJEC","UDfB",4,7,4,"E8806A","8A9AA8","silver-pink fish leaping upstream","splash","Swims uphill for fun. Hardcore.","fish,aquatic"},
 	{"salmonberry","IGAELB","eVP",2,7,1,"F28C4A","E8604A","orange-pink berry","pitter","A berry the colour of salmon.","edible,fruit,sweet"},
-	{"salp","ABBJGJ","SVB",1,2,1,"E8F4F8","C8E8F0","clear barrel chain","squelch","See-through chain of jelly barrels.","aquatic,ocean,venomous"},
-	{"salsa","IABNGI","KjS",4,4,2,"D8302B","7DBE3A","bowl of chunky red sauce","sizzle","Chunky, spicy, dance-ready.","edible,spicy,sauce"},
-	{"salsify","IEBAJK","FTe",3,6,4,"5A4A3A","F2EEDF","long dark root","crunch","A root that tastes like oysters.","edible,vegetable,healthy"},
 }

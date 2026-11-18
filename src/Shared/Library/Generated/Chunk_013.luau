@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hop vine","NGCNMI","WSN",2,1,3,"9CCC65","C5E1A5","climbing vine with papery green cones","rustle","Climbs everything in sight.","plant,crop"},
 	{"hope","KHCOKJ","GF",2,4,4,"FFF59D","B3E5FC","single bright light rising above caster","chime","A little light in the dark. Heals, too.","holy,support"},
 	{"hoplite shield","BKCIyI","Gk",3,4,7,"A86F32","9E1B32","large round bronze shield","clang","Bronze, big, and very Greek.","armor,defense,ancient"},
 	{"hopscotch","KMBOKG","UD",1,6,2,"FF80AB","FFFFFF","chalk squares glowing under hops","boing","One, two, three, dodge!","silly"},
@@ -402,5 +403,4 @@ return {
 	{"jet stream","FFDBOB","kIe",6,10,2,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air"},
 	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
 	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},
-	{"jeweler","LHCJNI","ca",3,3,4,"FACC15","67E8F9","loupe, gem tray","ding","Every gem sparkles. Blindingly.","merchant,gem"},
 }
