@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
 	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
@@ -371,7 +372,6 @@ return {
 	{"boxfish","ABAJEC","GdMB",1,6,1,"F2D82A","1E1E1E","cube-shaped yellow fish","splash","A swimming box with polka dots.","fish,aquatic,silly"},
 	{"boxing","KMCONA","DkfO",5,8,4,"DC2626","F8FAFC","pair of red gloves throwing a one-two, bell ringing","bell","Ding ding. Gloves up. Chin down.","sport,melee"},
 	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
-	{"boxing glove arrow","CMAAJI","keO",2,8,2,"C0392B","8B5A2B","arrow capped with a boxing glove","twang","Comedy archery at its finest.","medieval,ranged,silly"},
 	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
 	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
 	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},

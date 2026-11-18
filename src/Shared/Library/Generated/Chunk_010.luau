@@ -136,7 +136,7 @@ return {
 	{"frost","FCCFOB","JNP",4,6,2,"B9E6FA","FFFFFF","creeping white crystal fern pattern","crackle","Paints windows. And enemies.","frozen"},
 	{"frost aura","FCCOKJ","GJN",4,4,4,"B3E5FC","FFFFFF","swirling snowflakes around caster","crackle","Personal winter. Bring a scarf.","frozen"},
 	{"frost axe","CCCHsK","Jkf",7,5,5,"BFE8F5","C9CED4","frosted double-headed axe","shing","Chops and chills.","fantasy,sharp"},
-	{"frost breath","GCCFOB","JN",5,6,2,"BFE7F7","FFFFFF","cone of frosty mist","whoosh","Brr. Someone needs a mint.","frozen"},
+	{"frost breath","GCCNOB","JIN",4,7,2,"CFEFFF","6FC3F0","a long cone of freezing breath that frosts the ground","whoosh","Brr. Someone needs a mint.","hero,movie,frozen"},
 	{"frost burst","FCCGKI","EJk",6,7,1,"80D8FF","FFFFFF","ice crystal bursting into shards","boom","Kaboom, but chilly.","frozen,explosive"},
 	{"frost fairy","ACAJNB","AJ",2,8,1,"E0F2FE","60A5FA","fairy with snowflake wings","chime","Freezes your nose. Giggles.","fairy,frozen"},
 	{"frost fern","NCBLMI","JSN",3,1,3,"B3E5FC","FFFFFF","crystallised frosty fronds","chime","Feathers of frost.","plant,magic,mythical,frozen"},
