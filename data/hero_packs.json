@@ -1,9 +1,507 @@
 {
+ "aircraft carrier": {
+  "assetId": 84628273756599,
+  "hash": "7da1f72b2314e958",
+  "pieces": 11,
+  "tris": 7593
+ },
+ "airplane": {
+  "assetId": 94249429402621,
+  "hash": "df231915f09b1131",
+  "pieces": 11,
+  "tris": 5848
+ },
+ "albatross": {
+  "assetId": 87103405705190,
+  "hash": "f301377cc0ca0604",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "alicorn": {
+  "assetId": 79779559360660,
+  "hash": "f2a833ade19688d9",
+  "pieces": 37,
+  "tris": 23244
+ },
+ "alien": {
+  "assetId": 113002929047931,
+  "hash": "11bf2ca87b98f808",
+  "pieces": 18,
+  "tris": 15800
+ },
+ "alligator": {
+  "assetId": 75749363601554,
+  "hash": "df76355135f184af",
+  "pieces": 26,
+  "tris": 19230
+ },
+ "allosaurus": {
+  "assetId": 140076574538181,
+  "hash": "879a55560676ad93",
+  "pieces": 25,
+  "tris": 18980
+ },
+ "alpaca": {
+  "assetId": 127090279422290,
+  "hash": "35e70366e10ed50b",
+  "pieces": 26,
+  "tris": 15930
+ },
+ "ambulance": {
+  "assetId": 92847864969450,
+  "hash": "eaf8cb852b5ff3f4",
+  "pieces": 32,
+  "tris": 16468
+ },
+ "amphiptere": {
+  "assetId": 122819653284059,
+  "hash": "419d138a76d467a1",
+  "pieces": 19,
+  "tris": 17160
+ },
+ "android": {
+  "assetId": 88056041726184,
+  "hash": "33ba46fefa004001",
+  "pieces": 27,
+  "tris": 15900
+ },
+ "angelfish": {
+  "assetId": 110446277390080,
+  "hash": "53bcfead40f3f452",
+  "pieces": 13,
+  "tris": 12300
+ },
+ "anglerfish": {
+  "assetId": 72503385892412,
+  "hash": "14b3d22a1b3b74de",
+  "pieces": 15,
+  "tris": 13148
+ },
+ "ankylosaurus": {
+  "assetId": 118009166640147,
+  "hash": "442d45955b65def6",
+  "pieces": 27,
+  "tris": 19140
+ },
+ "ant": {
+  "assetId": 131483049973210,
+  "hash": "6f1a39e2c0858e43",
+  "pieces": 25,
+  "tris": 9600
+ },
+ "anteater": {
+  "assetId": 105294044446277,
+  "hash": "61d1c7f5a9fecfd2",
+  "pieces": 23,
+  "tris": 15396
+ },
+ "antelope": {
+  "assetId": 111767701002289,
+  "hash": "b16e96d451e8be77",
+  "pieces": 31,
+  "tris": 18002
+ },
+ "arctic fox": {
+  "assetId": 93375729303646,
+  "hash": "f9aa08d58cd58d50",
+  "pieces": 24,
+  "tris": 16710
+ },
+ "armadillo": {
+  "assetId": 87422865602882,
+  "hash": "8db8f70807a0308b",
+  "pieces": 23,
+  "tris": 17000
+ },
+ "armored car": {
+  "assetId": 109331459189206,
+  "hash": "85ad7f6f0e7f3a59",
+  "pieces": 20,
+  "tris": 13370
+ },
+ "atv": {
+  "assetId": 114869007881240,
+  "hash": "34efd25b30792d89",
+  "pieces": 15,
+  "tris": 7454
+ },
+ "axolotl": {
+  "assetId": 126823265934573,
+  "hash": "44f3a5cf312bb3b6",
+  "pieces": 26,
+  "tris": 19380
+ },
+ "baby dragon": {
+  "assetId": 93862414726358,
+  "hash": "0aefe5be677a8df9",
+  "pieces": 28,
+  "tris": 22460
+ },
+ "baby elephant": {
+  "assetId": 124012896473901,
+  "hash": "e89f8ae55d97044b",
+  "pieces": 33,
+  "tris": 20026
+ },
+ "badger": {
+  "assetId": 138832965641806,
+  "hash": "066debd687f1f4a1",
+  "pieces": 22,
+  "tris": 14500
+ },
+ "banana car": {
+  "assetId": 128037970784837,
+  "hash": "583ee168189fa935",
+  "pieces": 15,
+  "tris": 8804
+ },
+ "banshee": {
+  "assetId": 92216843697977,
+  "hash": "76bce9e93c18c206",
+  "pieces": 15,
+  "tris": 12800
+ },
+ "barn owl": {
+  "assetId": 93030972439762,
+  "hash": "ced69fb6a97edb72",
+  "pieces": 28,
+  "tris": 18560
+ },
+ "barracuda": {
+  "assetId": 95442306455581,
+  "hash": "5920bc4c258030df",
+  "pieces": 16,
+  "tris": 13900
+ },
+ "basilisk": {
+  "assetId": 121359372681752,
+  "hash": "17b5c7f27cff0b17",
+  "pieces": 17,
+  "tris": 11800
+ },
+ "bass": {
+  "assetId": 79242274888212,
+  "hash": "0503edbcfcb07828",
+  "pieces": 19,
+  "tris": 16150
+ },
+ "basset hound": {
+  "assetId": 103540527921781,
+  "hash": "06d1256474c496e4",
+  "pieces": 29,
+  "tris": 19900
+ },
+ "bat": {
+  "assetId": 102790636894076,
+  "hash": "11c14d264a4b7a12",
+  "pieces": 25,
+  "tris": 12300
+ },
+ "bathtub car": {
+  "assetId": 128692874372211,
+  "hash": "c3951a3d2dec53e3",
+  "pieces": 17,
+  "tris": 10604
+ },
+ "battleship": {
+  "assetId": 127653775488713,
+  "hash": "f1a03c127e02c63a",
+  "pieces": 15,
+  "tris": 5977
+ },
+ "beagle": {
+  "assetId": 85866641880730,
+  "hash": "fb456d80b896f0b1",
+  "pieces": 29,
+  "tris": 19900
+ },
+ "bear": {
+  "assetId": 85452706815865,
+  "hash": "70af0e25efea1b8a",
+  "pieces": 26,
+  "tris": 18400
+ },
+ "bear warrior": {
+  "assetId": 110850693576219,
+  "hash": "a86574bf66c70c1b",
+  "pieces": 33,
+  "tris": 24000
+ },
+ "bearded dragon": {
+  "assetId": 83431768259442,
+  "hash": "83a44b67610b8272",
+  "pieces": 24,
+  "tris": 17580
+ },
+ "beaver": {
+  "assetId": 90283452675581,
+  "hash": "457f1b8087aa7020",
+  "pieces": 22,
+  "tris": 14000
+ },
+ "bee": {
+  "assetId": 107894672752774,
+  "hash": "43884ced74b005de",
+  "pieces": 34,
+  "tris": 12400
+ },
+ "beetle": {
+  "assetId": 95362500418817,
+  "hash": "0e112d179f95d0e2",
+  "pieces": 26,
+  "tris": 10840
+ },
+ "behemoth": {
+  "assetId": 103156831366546,
+  "hash": "aa340e4f841c58bf",
+  "pieces": 20,
+  "tris": 15830
+ },
+ "beluga": {
+  "assetId": 111297785256232,
+  "hash": "5401c5fa350df534",
+  "pieces": 9,
+  "tris": 10500
+ },
+ "betta fish": {
+  "assetId": 134307746794710,
+  "hash": "17c1d009ec79eefc",
+  "pieces": 13,
+  "tris": 12400
+ },
+ "bicycle": {
+  "assetId": 72871019096437,
+  "hash": "c5c749c33d7ce5dd",
+  "pieces": 11,
+  "tris": 6354
+ },
+ "bigfoot": {
+  "assetId": 86081630240409,
+  "hash": "24732e6ffec988c4",
+  "pieces": 21,
+  "tris": 17350
+ },
+ "biplane": {
+  "assetId": 124640284126913,
+  "hash": "a75499919dd3d62f",
+  "pieces": 12,
+  "tris": 4832
+ },
+ "bird": {
+  "assetId": 109154316634425,
+  "hash": "31bd583d4aa9b7e1",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "bison": {
+  "assetId": 118617453221592,
+  "hash": "63deefedcf365bdd",
+  "pieces": 32,
+  "tris": 20262
+ },
+ "black bear": {
+  "assetId": 104730931142403,
+  "hash": "1dc0b105b21a7a58",
+  "pieces": 27,
+  "tris": 19000
+ },
  "black panther": {
   "assetId": 126310371292462,
   "hash": "9591992a8aa33ed9",
   "pieces": 22,
   "tris": 17090
+ },
+ "black widow": {
+  "assetId": 103086718606237,
+  "hash": "7aa840ebf5fce627",
+  "pieces": 33,
+  "tris": 11880
+ },
+ "blimp": {
+  "assetId": 83453295715926,
+  "hash": "5ccc2fcbc9730347",
+  "pieces": 12,
+  "tris": 5136
+ },
+ "bloodhound": {
+  "assetId": 122777764874615,
+  "hash": "6cdfa8fd9dc756b6",
+  "pieces": 25,
+  "tris": 17850
+ },
+ "blue jay": {
+  "assetId": 107203976722371,
+  "hash": "404d220f473358c2",
+  "pieces": 28,
+  "tris": 17960
+ },
+ "blue tang": {
+  "assetId": 89224192796523,
+  "hash": "cd3222d419a83309",
+  "pieces": 13,
+  "tris": 12400
+ },
+ "bluebird": {
+  "assetId": 99331987298395,
+  "hash": "b0eaeef059465db2",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "bmx": {
+  "assetId": 95743369359999,
+  "hash": "c558cb74b3d66973",
+  "pieces": 10,
+  "tris": 5554
+ },
+ "boar": {
+  "assetId": 99768566896836,
+  "hash": "3583b4a36758c025",
+  "pieces": 32,
+  "tris": 19442
+ },
+ "border collie": {
+  "assetId": 82203986207297,
+  "hash": "3f77516ad4a481e5",
+  "pieces": 28,
+  "tris": 19110
+ },
+ "box jellyfish": {
+  "assetId": 98328637641840,
+  "hash": "7fef0a2e097fd23e",
+  "pieces": 25,
+  "tris": 13040
+ },
+ "brachiosaurus": {
+  "assetId": 126895644357654,
+  "hash": "66ec224027169ea5",
+  "pieces": 28,
+  "tris": 19490
+ },
+ "broomstick": {
+  "assetId": 97604074593324,
+  "hash": "2d96761c960f1eb8",
+  "pieces": 6,
+  "tris": 3420
+ },
+ "bubble car": {
+  "assetId": 84122933985536,
+  "hash": "2f315b17665d78a3",
+  "pieces": 14,
+  "tris": 6100
+ },
+ "bull": {
+  "assetId": 128854867351340,
+  "hash": "b5dc675dbeffb8e1",
+  "pieces": 32,
+  "tris": 18874
+ },
+ "bulldog": {
+  "assetId": 84579162004844,
+  "hash": "01e6b023944ac3f0",
+  "pieces": 26,
+  "tris": 17560
+ },
+ "bulldozer": {
+  "assetId": 73166647997386,
+  "hash": "135fb708841ed4e8",
+  "pieces": 28,
+  "tris": 10540
+ },
+ "bullet train": {
+  "assetId": 81182311817755,
+  "hash": "3ab6cfe07ddf9e6f",
+  "pieces": 17,
+  "tris": 7904
+ },
+ "bumblebee": {
+  "assetId": 70613908696426,
+  "hash": "ab456038b21d885b",
+  "pieces": 34,
+  "tris": 12398
+ },
+ "bumper car": {
+  "assetId": 130891169930489,
+  "hash": "4d563c84737927f2",
+  "pieces": 14,
+  "tris": 6712
+ },
+ "bus": {
+  "assetId": 80382417872687,
+  "hash": "2bbae5844de93af9",
+  "pieces": 23,
+  "tris": 13076
+ },
+ "butterfly": {
+  "assetId": 75109064138903,
+  "hash": "46af53472193d0cc",
+  "pieces": 32,
+  "tris": 12320
+ },
+ "calf": {
+  "assetId": 117335009320433,
+  "hash": "3fbb88d9f12948e4",
+  "pieces": 29,
+  "tris": 17210
+ },
+ "camel": {
+  "assetId": 129074425240568,
+  "hash": "8da98eceec56ab82",
+  "pieces": 30,
+  "tris": 19090
+ },
+ "canada goose": {
+  "assetId": 73989933783654,
+  "hash": "d546978360b9f581",
+  "pieces": 21,
+  "tris": 13410
+ },
+ "canoe": {
+  "assetId": 86403051821382,
+  "hash": "a2b9df827762bd32",
+  "pieces": 9,
+  "tris": 6184
+ },
+ "cape buffalo": {
+  "assetId": 71660186750613,
+  "hash": "24a42c1ad76242ee",
+  "pieces": 31,
+  "tris": 18890
+ },
+ "capybara": {
+  "assetId": 94694754140896,
+  "hash": "c82e4e7cf8338957",
+  "pieces": 20,
+  "tris": 12800
+ },
+ "car": {
+  "assetId": 114570796330647,
+  "hash": "9ba1c36b03964f53",
+  "pieces": 26,
+  "tris": 14510
+ },
+ "cardinal": {
+  "assetId": 131602234332997,
+  "hash": "f0775d124a45a4d1",
+  "pieces": 29,
+  "tris": 18360
+ },
+ "carnotaurus": {
+  "assetId": 98314112008692,
+  "hash": "53667454113fb5b1",
+  "pieces": 25,
+  "tris": 18980
+ },
+ "cart": {
+  "assetId": 103537404946850,
+  "hash": "755f0b5f1795b2ea",
+  "pieces": 8,
+  "tris": 4460
+ },
+ "cassowary": {
+  "assetId": 84290069719237,
+  "hash": "adbc11f546d9b3fd",
+  "pieces": 18,
+  "tris": 9760
  },
  "cat": {
   "assetId": 129285473183875,
@@ -11,17 +509,1247 @@
   "pieces": 22,
   "tris": 17090
  },
+ "caterpillar": {
+  "assetId": 76674715741476,
+  "hash": "66041e2916c1226e",
+  "pieces": 22,
+  "tris": 8020
+ },
+ "catfish": {
+  "assetId": 139637274097105,
+  "hash": "537be20940606b92",
+  "pieces": 19,
+  "tris": 16000
+ },
+ "cave bear": {
+  "assetId": 71746267317533,
+  "hash": "689268ca28eb0a6d",
+  "pieces": 26,
+  "tris": 18400
+ },
+ "cement mixer": {
+  "assetId": 110860831719833,
+  "hash": "4d70f33064da2e51",
+  "pieces": 32,
+  "tris": 23468
+ },
+ "centaur": {
+  "assetId": 112443454735432,
+  "hash": "fe4301151fa207de",
+  "pieces": 32,
+  "tris": 24200
+ },
+ "centipede": {
+  "assetId": 132420568974406,
+  "hash": "089c28c4d82708ea",
+  "pieces": 29,
+  "tris": 9380
+ },
+ "cerberus": {
+  "assetId": 105134903720475,
+  "hash": "b30d1ccc8003dd29",
+  "pieces": 34,
+  "tris": 23510
+ },
+ "chameleon": {
+  "assetId": 90600436194801,
+  "hash": "c354c573019dbfd7",
+  "pieces": 31,
+  "tris": 19340
+ },
+ "chariot": {
+  "assetId": 135391138592524,
+  "hash": "20f9c47d3b9d8659",
+  "pieces": 9,
+  "tris": 2636
+ },
+ "chariot of fire": {
+  "assetId": 131418105424757,
+  "hash": "7d641f38ab006988",
+  "pieces": 9,
+  "tris": 5144
+ },
  "cheetah": {
   "assetId": 95704860670776,
   "hash": "b5d2955c50e98465",
   "pieces": 22,
   "tris": 17090
  },
+ "chick": {
+  "assetId": 136371960651788,
+  "hash": "79cfbd5fd95263ed",
+  "pieces": 18,
+  "tris": 12060
+ },
+ "chicken": {
+  "assetId": 104509548122573,
+  "hash": "1a787bc497ad4ada",
+  "pieces": 21,
+  "tris": 13510
+ },
+ "chihuahua": {
+  "assetId": 71698293252018,
+  "hash": "c2fa4e1f24fb22f6",
+  "pieces": 24,
+  "tris": 16710
+ },
+ "chimera": {
+  "assetId": 130589736770896,
+  "hash": "ccd38fd66f89f1f3",
+  "pieces": 29,
+  "tris": 20450
+ },
+ "chimpanzee": {
+  "assetId": 71322449046902,
+  "hash": "94e2bda5b4d6ef8e",
+  "pieces": 18,
+  "tris": 15500
+ },
+ "chinese dragon": {
+  "assetId": 125034265137957,
+  "hash": "d6251b8c95dcd3a2",
+  "pieces": 28,
+  "tris": 18280
+ },
+ "chipmunk": {
+  "assetId": 120262435411103,
+  "hash": "5f780a6f8e35438f",
+  "pieces": 24,
+  "tris": 15000
+ },
+ "chopper motorcycle": {
+  "assetId": 120065301779651,
+  "hash": "884c9d7e4fd89fc0",
+  "pieces": 15,
+  "tris": 9286
+ },
+ "cicada": {
+  "assetId": 98534467232445,
+  "hash": "fe3b7890d39384c1",
+  "pieces": 31,
+  "tris": 10700
+ },
+ "clay golem": {
+  "assetId": 81882032928477,
+  "hash": "9aadd4ac08410b3e",
+  "pieces": 15,
+  "tris": 13500
+ },
+ "cloud surfboard": {
+  "assetId": 126386035064335,
+  "hash": "8895dca035b3d522",
+  "pieces": 5,
+  "tris": 4360
+ },
+ "clownfish": {
+  "assetId": 111043098692031,
+  "hash": "17eadc55de87904c",
+  "pieces": 18,
+  "tris": 15200
+ },
+ "clydesdale": {
+  "assetId": 107532543384856,
+  "hash": "6b938e923836e59d",
+  "pieces": 39,
+  "tris": 23764
+ },
+ "cobra": {
+  "assetId": 111014324640122,
+  "hash": "5dcee854fa060521",
+  "pieces": 18,
+  "tris": 11644
+ },
+ "cockatoo": {
+  "assetId": 137768189682526,
+  "hash": "34e29ae3af6269ef",
+  "pieces": 28,
+  "tris": 17960
+ },
+ "cockatrice": {
+  "assetId": 105772398487193,
+  "hash": "d61bd801e1e23932",
+  "pieces": 21,
+  "tris": 14868
+ },
+ "cockroach": {
+  "assetId": 110356742347490,
+  "hash": "7f12046297356929",
+  "pieces": 24,
+  "tris": 10520
+ },
+ "condor": {
+  "assetId": 91134343466310,
+  "hash": "966363c73a911082",
+  "pieces": 29,
+  "tris": 18610
+ },
+ "convertible": {
+  "assetId": 108487964255259,
+  "hash": "871d25e929a210b7",
+  "pieces": 27,
+  "tris": 19878
+ },
+ "corgi": {
+  "assetId": 92385035507044,
+  "hash": "61019c455fb06de1",
+  "pieces": 27,
+  "tris": 18810
+ },
+ "couch car": {
+  "assetId": 91905809359581,
+  "hash": "802fdf153f5bc229",
+  "pieces": 17,
+  "tris": 9700
+ },
+ "covered wagon": {
+  "assetId": 73876712655073,
+  "hash": "a2c60ac1b4b07b39",
+  "pieces": 12,
+  "tris": 6712
+ },
+ "cow": {
+  "assetId": 79304939452928,
+  "hash": "96f617a17c513637",
+  "pieces": 31,
+  "tris": 18258
+ },
+ "coyote": {
+  "assetId": 88808704723674,
+  "hash": "eba4dcef9ac20499",
+  "pieces": 27,
+  "tris": 18760
+ },
+ "crab": {
+  "assetId": 109008523013740,
+  "hash": "1bdfaa654530da04",
+  "pieces": 29,
+  "tris": 14780
+ },
+ "crane bird": {
+  "assetId": 108997950860425,
+  "hash": "54e95a68e10018c7",
+  "pieces": 22,
+  "tris": 13710
+ },
+ "cricket": {
+  "assetId": 101518611182773,
+  "hash": "c86b628de4591d5d",
+  "pieces": 27,
+  "tris": 10460
+ },
+ "crocodile": {
+  "assetId": 107640855337021,
+  "hash": "0388e6c90d433c17",
+  "pieces": 26,
+  "tris": 19230
+ },
+ "crow": {
+  "assetId": 134262595580797,
+  "hash": "0aeec123caa20fe1",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "cyclops": {
+  "assetId": 102476388765994,
+  "hash": "b83462f73f5255f9",
+  "pieces": 23,
+  "tris": 20310
+ },
+ "dachshund": {
+  "assetId": 120629793699662,
+  "hash": "d92ccb4e2969d92e",
+  "pieces": 25,
+  "tris": 17250
+ },
+ "dalmatian": {
+  "assetId": 84443166644382,
+  "hash": "2bd664bebb4bc33f",
+  "pieces": 25,
+  "tris": 17110
+ },
+ "deer": {
+  "assetId": 77072194546424,
+  "hash": "e5cb9ca959cac616",
+  "pieces": 30,
+  "tris": 19094
+ },
+ "delivery truck": {
+  "assetId": 138717248114768,
+  "hash": "b6a9bbb8a1cfc57d",
+  "pieces": 27,
+  "tris": 14400
+ },
+ "demon": {
+  "assetId": 103333676406441,
+  "hash": "272280d82a07d29a",
+  "pieces": 35,
+  "tris": 22790
+ },
+ "dilophosaurus": {
+  "assetId": 80907091059699,
+  "hash": "414ef3a0068b9e33",
+  "pieces": 25,
+  "tris": 18980
+ },
+ "dimetrodon": {
+  "assetId": 122222272266293,
+  "hash": "d9f8de59e972d43b",
+  "pieces": 27,
+  "tris": 20229
+ },
+ "diplodocus": {
+  "assetId": 72125279115045,
+  "hash": "73f25867f0368db8",
+  "pieces": 28,
+  "tris": 19490
+ },
+ "dire wolf": {
+  "assetId": 106556349614830,
+  "hash": "f0cb86550c896d3e",
+  "pieces": 26,
+  "tris": 18108
+ },
+ "dirt bike": {
+  "assetId": 110675556125377,
+  "hash": "bfaa032d928d09bd",
+  "pieces": 18,
+  "tris": 9444
+ },
+ "discus fish": {
+  "assetId": 113830659176709,
+  "hash": "4cb12838a3680def",
+  "pieces": 13,
+  "tris": 12400
+ },
+ "doberman": {
+  "assetId": 82100967071811,
+  "hash": "608dc7ec34da973c",
+  "pieces": 23,
+  "tris": 16510
+ },
+ "dodo": {
+  "assetId": 134182634955587,
+  "hash": "48fc265352d52eae",
+  "pieces": 18,
+  "tris": 12260
+ },
+ "dog": {
+  "assetId": 88024030636521,
+  "hash": "a0253697557df879",
+  "pieces": 29,
+  "tris": 19424
+ },
+ "dolphin": {
+  "assetId": 137852214077266,
+  "hash": "c879894719c950a4",
+  "pieces": 15,
+  "tris": 14250
+ },
+ "donkey": {
+  "assetId": 75937794863193,
+  "hash": "407bf17f27a34f88",
+  "pieces": 38,
+  "tris": 22230
+ },
+ "double decker bus": {
+  "assetId": 93744284769357,
+  "hash": "1494ec0797d335d8",
+  "pieces": 23,
+  "tris": 13824
+ },
+ "dove of peace": {
+  "assetId": 120978104830983,
+  "hash": "8c185af1d92f9528",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "dragon": {
+  "assetId": 124821482827683,
+  "hash": "d1b4343462cc2d53",
+  "pieces": 31,
+  "tris": 24340
+ },
+ "dragonfly": {
+  "assetId": 136277697756615,
+  "hash": "aba3fe89368c4ca2",
+  "pieces": 32,
+  "tris": 10300
+ },
+ "drake": {
+  "assetId": 102934222211136,
+  "hash": "b21ee5372974b7ea",
+  "pieces": 25,
+  "tris": 18040
+ },
+ "dressing_arcane": {
+  "assetId": 115168265656152,
+  "hash": "80af3f66633bea5e",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_earth": {
+  "assetId": 98162605093284,
+  "hash": "b774e6f36c2a5323",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_fire": {
+  "assetId": 140655184061020,
+  "hash": "88897c01aabbf58d",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_ice": {
+  "assetId": 136700618620537,
+  "hash": "d16f52b687eb633a",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_light": {
+  "assetId": 109125904912096,
+  "hash": "8b44fb57e5d30ebf",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_lightning": {
+  "assetId": 106005915554993,
+  "hash": "53726286f2dfe336",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_metal": {
+  "assetId": 91098023841815,
+  "hash": "84e869f243474e03",
+  "pieces": 6,
+  "tris": 7798
+ },
+ "dressing_nature": {
+  "assetId": 127651581876925,
+  "hash": "af1fba2e18ff84f5",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_poison": {
+  "assetId": 114739658464664,
+  "hash": "cb7a005515f9207b",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_shadow": {
+  "assetId": 92737699406820,
+  "hash": "c59f640dcfd94b8a",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_water": {
+  "assetId": 80854051997653,
+  "hash": "c956a666991d74fe",
+  "pieces": 6,
+  "tris": 7800
+ },
+ "dressing_wind": {
+  "assetId": 125962435251739,
+  "hash": "c39db6a453ddfe96",
+  "pieces": 6,
+  "tris": 7798
+ },
+ "dromedary": {
+  "assetId": 109062111482367,
+  "hash": "9947b2ce6902ec5d",
+  "pieces": 29,
+  "tris": 17494
+ },
+ "duck": {
+  "assetId": 99779782126384,
+  "hash": "fbf6718363728dd9",
+  "pieces": 19,
+  "tris": 12010
+ },
+ "duck car": {
+  "assetId": 137101189603281,
+  "hash": "14ee788ba662a7b6",
+  "pieces": 15,
+  "tris": 9104
+ },
+ "duckling": {
+  "assetId": 103329577041499,
+  "hash": "b63f13f316d77cf7",
+  "pieces": 18,
+  "tris": 12060
+ },
+ "dump truck": {
+  "assetId": 110813651760121,
+  "hash": "7ed984b56885fd63",
+  "pieces": 32,
+  "tris": 21778
+ },
+ "dune buggy": {
+  "assetId": 130790672350132,
+  "hash": "b210392b44a7fc97",
+  "pieces": 14,
+  "tris": 9222
+ },
+ "eagle": {
+  "assetId": 131247707697805,
+  "hash": "a0864118a8a78cd4",
+  "pieces": 28,
+  "tris": 17910
+ },
+ "earth elemental": {
+  "assetId": 84267969466316,
+  "hash": "3b1bdfd41514420f",
+  "pieces": 15,
+  "tris": 16100
+ },
+ "earthworm": {
+  "assetId": 128039192453101,
+  "hash": "c0db2e14f2238f26",
+  "pieces": 14,
+  "tris": 4460
+ },
+ "eel": {
+  "assetId": 88117154921854,
+  "hash": "08ed452bcdd0b3c8",
+  "pieces": 14,
+  "tris": 14138
+ },
+ "elder dragon": {
+  "assetId": 138899684346723,
+  "hash": "6d147cb8893e4911",
+  "pieces": 29,
+  "tris": 22840
+ },
+ "elephant": {
+  "assetId": 140729943981459,
+  "hash": "94b2ff2ccdeb1626",
+  "pieces": 35,
+  "tris": 20806
+ },
+ "elk": {
+  "assetId": 120972376570476,
+  "hash": "44ae41e2aba67c46",
+  "pieces": 31,
+  "tris": 21070
+ },
+ "emperor penguin": {
+  "assetId": 80009893181409,
+  "hash": "4668e3b859b444d0",
+  "pieces": 17,
+  "tris": 9810
+ },
+ "emperor scorpion": {
+  "assetId": 137906103559420,
+  "hash": "f5f380fcd1cd8a20",
+  "pieces": 39,
+  "tris": 13300
+ },
+ "emu": {
+  "assetId": 117913496660355,
+  "hash": "433e586e86776171",
+  "pieces": 16,
+  "tris": 8860
+ },
+ "excavator": {
+  "assetId": 72525229487648,
+  "hash": "bbb8b19f81b0c257",
+  "pieces": 27,
+  "tris": 9724
+ },
+ "fairy dragon": {
+  "assetId": 140667202171480,
+  "hash": "42ae9f5d8d6444cb",
+  "pieces": 28,
+  "tris": 21060
+ },
+ "falcon": {
+  "assetId": 98605221370182,
+  "hash": "70dda7e4a023c3fe",
+  "pieces": 29,
+  "tris": 18310
+ },
+ "fawn": {
+  "assetId": 83345204108074,
+  "hash": "c9bc1742b0e8014d",
+  "pieces": 28,
+  "tris": 16466
+ },
+ "fennec fox": {
+  "assetId": 96458165992274,
+  "hash": "92f90ef205e5366f",
+  "pieces": 27,
+  "tris": 18760
+ },
+ "ferret": {
+  "assetId": 98453813256229,
+  "hash": "e8b21e1a8d0190d4",
+  "pieces": 22,
+  "tris": 14500
+ },
+ "fiddler crab": {
+  "assetId": 75139461679448,
+  "hash": "78bb56857a6c06b8",
+  "pieces": 29,
+  "tris": 14780
+ },
+ "finch": {
+  "assetId": 97424712320264,
+  "hash": "ea07e096432166bb",
+  "pieces": 28,
+  "tris": 17860
+ },
+ "fire elemental": {
+  "assetId": 110392543108736,
+  "hash": "be0d563666087343",
+  "pieces": 15,
+  "tris": 15300
+ },
+ "fire truck": {
+  "assetId": 118172639985238,
+  "hash": "d9ce443767a4900d",
+  "pieces": 37,
+  "tris": 23224
+ },
+ "firefly": {
+  "assetId": 107443013840065,
+  "hash": "30b6626310594892",
+  "pieces": 25,
+  "tris": 10700
+ },
+ "fish": {
+  "assetId": 139239320362767,
+  "hash": "076bbccf0d6d0466",
+  "pieces": 19,
+  "tris": 16150
+ },
+ "fishing boat": {
+  "assetId": 71992688848318,
+  "hash": "389ecab275b33d7e",
+  "pieces": 15,
+  "tris": 6409
+ },
+ "fishman": {
+  "assetId": 71692096404200,
+  "hash": "2204a8ab1d415b7a",
+  "pieces": 27,
+  "tris": 17570
+ },
+ "flamingo": {
+  "assetId": 136445120590334,
+  "hash": "de82d52f276e95aa",
+  "pieces": 22,
+  "tris": 13660
+ },
+ "flea": {
+  "assetId": 72184825405019,
+  "hash": "7fbeb306de9cb447",
+  "pieces": 25,
+  "tris": 9540
+ },
+ "flounder": {
+  "assetId": 100207114688204,
+  "hash": "eabd7a2d3caccb29",
+  "pieces": 7,
+  "tris": 9600
+ },
+ "fly": {
+  "assetId": 140085125393093,
+  "hash": "a750275e12696d4c",
+  "pieces": 27,
+  "tris": 9320
+ },
+ "flying carpet": {
+  "assetId": 76253013499376,
+  "hash": "f66f583491092fc6",
+  "pieces": 10,
+  "tris": 4452
+ },
+ "foal": {
+  "assetId": 137707192782840,
+  "hash": "fd5441439dab7a21",
+  "pieces": 29,
+  "tris": 18418
+ },
+ "foo dog": {
+  "assetId": 86129066995816,
+  "hash": "6ed1d5e616e9f040",
+  "pieces": 22,
+  "tris": 16430
+ },
+ "food truck": {
+  "assetId": 101417881493026,
+  "hash": "e75c96579445ca8c",
+  "pieces": 32,
+  "tris": 15292
+ },
+ "forklift": {
+  "assetId": 134580908861598,
+  "hash": "d8dd55630551d8bb",
+  "pieces": 19,
+  "tris": 7650
+ },
+ "fox": {
+  "assetId": 135593061602182,
+  "hash": "3b2a9cac1138f023",
+  "pieces": 28,
+  "tris": 19160
+ },
+ "french bulldog": {
+  "assetId": 81452499652820,
+  "hash": "34a0099665df7ab7",
+  "pieces": 23,
+  "tris": 16510
+ },
+ "frilled lizard": {
+  "assetId": 134955788345114,
+  "hash": "20ca0adb62404962",
+  "pieces": 26,
+  "tris": 20180
+ },
+ "frog": {
+  "assetId": 79062182616495,
+  "hash": "5c841721dbc894a9",
+  "pieces": 20,
+  "tris": 11400
+ },
+ "fruit bat": {
+  "assetId": 94384303417936,
+  "hash": "a725e7d6a3f09fbb",
+  "pieces": 25,
+  "tris": 12300
+ },
+ "garbage truck": {
+  "assetId": 105856885666566,
+  "hash": "c914df5be723c98b",
+  "pieces": 31,
+  "tris": 20574
+ },
+ "gazelle": {
+  "assetId": 121931568259800,
+  "hash": "1c927c23adad337a",
+  "pieces": 30,
+  "tris": 17286
+ },
+ "gecko": {
+  "assetId": 91171632979830,
+  "hash": "0a05bd5df9c59efd",
+  "pieces": 24,
+  "tris": 17580
+ },
+ "german shepherd": {
+  "assetId": 86468251053387,
+  "hash": "1d28c300f22f158b",
+  "pieces": 26,
+  "tris": 18360
+ },
+ "gharial": {
+  "assetId": 137392392179739,
+  "hash": "f9b6bcce350cb692",
+  "pieces": 26,
+  "tris": 19230
+ },
+ "ghost": {
+  "assetId": 125155671226293,
+  "hash": "41118e4d36748a3d",
+  "pieces": 11,
+  "tris": 9800
+ },
+ "giraffe": {
+  "assetId": 103989714933931,
+  "hash": "cb44c23ebb072062",
+  "pieces": 31,
+  "tris": 17344
+ },
+ "glider": {
+  "assetId": 75862014226437,
+  "hash": "42911f7f78f9d09e",
+  "pieces": 8,
+  "tris": 3232
+ },
+ "go kart": {
+  "assetId": 87586542119728,
+  "hash": "18599ef9451b3b7f",
+  "pieces": 14,
+  "tris": 8120
+ },
+ "goat": {
+  "assetId": 95445667564946,
+  "hash": "06bd57d103719f47",
+  "pieces": 28,
+  "tris": 17456
+ },
+ "goblin": {
+  "assetId": 113100924582908,
+  "hash": "d11a8a6373dbce5b",
+  "pieces": 23,
+  "tris": 18410
+ },
+ "golden retriever": {
+  "assetId": 129973872876141,
+  "hash": "30df51eec392515d",
+  "pieces": 28,
+  "tris": 18742
+ },
+ "goldfish": {
+  "assetId": 114792333980782,
+  "hash": "df6f590f3de0ad3d",
+  "pieces": 17,
+  "tris": 14950
+ },
+ "golem": {
+  "assetId": 94369517964490,
+  "hash": "d5b0aa467abc9e4a",
+  "pieces": 17,
+  "tris": 15100
+ },
+ "golf cart": {
+  "assetId": 128193804184786,
+  "hash": "eb78d009db9a5a21",
+  "pieces": 19,
+  "tris": 8874
+ },
+ "gondola": {
+  "assetId": 92563263162969,
+  "hash": "f0b1c3232a7dc60e",
+  "pieces": 9,
+  "tris": 4770
+ },
+ "goose": {
+  "assetId": 104882735937208,
+  "hash": "e3e83decfe40ce9c",
+  "pieces": 20,
+  "tris": 13060
+ },
+ "gorilla": {
+  "assetId": 114505248669469,
+  "hash": "fcd7c6e76b464594",
+  "pieces": 19,
+  "tris": 16700
+ },
+ "grasshopper": {
+  "assetId": 72102634304783,
+  "hash": "68e050e0638124db",
+  "pieces": 27,
+  "tris": 10340
+ },
+ "great dane": {
+  "assetId": 116562155668961,
+  "hash": "9df1f4d4b37e5f02",
+  "pieces": 24,
+  "tris": 16710
+ },
+ "great white shark": {
+  "assetId": 102329961866693,
+  "hash": "f191fcda983f93e9",
+  "pieces": 21,
+  "tris": 17150
+ },
+ "greyhound": {
+  "assetId": 114340538209282,
+  "hash": "87d909451066feb9",
+  "pieces": 24,
+  "tris": 16710
+ },
+ "griffin": {
+  "assetId": 84854267335936,
+  "hash": "9030978c2b997ad4",
+  "pieces": 26,
+  "tris": 21430
+ },
+ "grim reaper": {
+  "assetId": 122229400813696,
+  "hash": "8eceb8e03ed025f5",
+  "pieces": 16,
+  "tris": 14400
+ },
+ "grizzly bear": {
+  "assetId": 126866548648767,
+  "hash": "bdd8c007cbf5701a",
+  "pieces": 26,
+  "tris": 18400
+ },
+ "groundhog": {
+  "assetId": 80909237941995,
+  "hash": "cf86973e1880e8ed",
+  "pieces": 24,
+  "tris": 14800
+ },
+ "guinea pig": {
+  "assetId": 96498369850651,
+  "hash": "41292234fe89ec50",
+  "pieces": 21,
+  "tris": 13300
+ },
+ "hammerhead shark": {
+  "assetId": 137655506318616,
+  "hash": "13aed9a3ddddeea0",
+  "pieces": 21,
+  "tris": 17150
+ },
+ "hamster": {
+  "assetId": 77426569618865,
+  "hash": "6c048ed655121cde",
+  "pieces": 25,
+  "tris": 15500
+ },
+ "handcar": {
+  "assetId": 95067932059799,
+  "hash": "858ebca1fa960144",
+  "pieces": 8,
+  "tris": 2872
+ },
+ "hawk": {
+  "assetId": 75077210938915,
+  "hash": "86c4abefe9773842",
+  "pieces": 28,
+  "tris": 17910
+ },
+ "hedgehog": {
+  "assetId": 102809852088206,
+  "hash": "b3dd67c207f59fa1",
+  "pieces": 23,
+  "tris": 18700
+ },
+ "helicopter": {
+  "assetId": 137961665922260,
+  "hash": "da2c1b2c5683901a",
+  "pieces": 10,
+  "tris": 3756
+ },
+ "hercules beetle": {
+  "assetId": 104888460016948,
+  "hash": "2d39f89b6e18bf31",
+  "pieces": 24,
+  "tris": 10400
+ },
+ "hermit crab": {
+  "assetId": 89637241799583,
+  "hash": "3fe4656b3df5f8af",
+  "pieces": 29,
+  "tris": 14580
+ },
+ "heron": {
+  "assetId": 112266009472614,
+  "hash": "0ab9f9276a780e8d",
+  "pieces": 23,
+  "tris": 14160
+ },
+ "hippogriff": {
+  "assetId": 71920860514219,
+  "hash": "cc2129aa47b4f65f",
+  "pieces": 25,
+  "tris": 19968
+ },
+ "hippopotamus": {
+  "assetId": 138189749956419,
+  "hash": "df77c93224b60f57",
+  "pieces": 28,
+  "tris": 17190
+ },
+ "hornbill": {
+  "assetId": 124019610582346,
+  "hash": "b458d57a11bc748b",
+  "pieces": 28,
+  "tris": 17860
+ },
+ "horned lizard": {
+  "assetId": 78745500020495,
+  "hash": "b0f0ad73ce75216f",
+  "pieces": 25,
+  "tris": 18280
+ },
+ "hornet": {
+  "assetId": 132068050731339,
+  "hash": "69c29ab5459f8cc1",
+  "pieces": 34,
+  "tris": 12400
+ },
+ "hornworm": {
+  "assetId": 107496986440745,
+  "hash": "ef658bb5ffc1266e",
+  "pieces": 14,
+  "tris": 5940
+ },
+ "horse": {
+  "assetId": 88107451820721,
+  "hash": "e926da612bb3b548",
+  "pieces": 39,
+  "tris": 23714
+ },
+ "horse carriage": {
+  "assetId": 113584356870940,
+  "hash": "c96b8d7dca025c2d",
+  "pieces": 14,
+  "tris": 7430
+ },
+ "horse sleigh": {
+  "assetId": 95520147031654,
+  "hash": "f3eeb5238d9a946b",
+  "pieces": 5,
+  "tris": 4596
+ },
+ "hot air balloon": {
+  "assetId": 132248653899673,
+  "hash": "7c5002e13830d38e",
+  "pieces": 7,
+  "tris": 3884
+ },
+ "hot dog car": {
+  "assetId": 85419559527147,
+  "hash": "69b284f5ee2b5a90",
+  "pieces": 16,
+  "tris": 10604
+ },
+ "hoverboard": {
+  "assetId": 98645739240547,
+  "hash": "22898af5180843bd",
+  "pieces": 5,
+  "tris": 1080
+ },
+ "hovercraft": {
+  "assetId": 136928466805596,
+  "hash": "f14a93b5dc0d9cb0",
+  "pieces": 10,
+  "tris": 4800
+ },
+ "hummingbird": {
+  "assetId": 126007462384132,
+  "hash": "1a1a99eaaee86430",
+  "pieces": 28,
+  "tris": 17860
+ },
+ "humpback whale": {
+  "assetId": 108290761698840,
+  "hash": "7ff7288f57ecfc0b",
+  "pieces": 12,
+  "tris": 12400
+ },
+ "husky": {
+  "assetId": 93716765611049,
+  "hash": "07507cda0042af38",
+  "pieces": 27,
+  "tris": 18760
+ },
+ "hydra": {
+  "assetId": 95735378460888,
+  "hash": "e1d65a358bb9005b",
+  "pieces": 30,
+  "tris": 20800
+ },
+ "hyena": {
+  "assetId": 118953494432865,
+  "hash": "3c02651c174132b5",
+  "pieces": 24,
+  "tris": 16710
+ },
+ "ibex": {
+  "assetId": 92677998237521,
+  "hash": "a3a07f7b1496be6e",
+  "pieces": 28,
+  "tris": 17938
+ },
+ "ice cream truck": {
+  "assetId": 73347268326969,
+  "hash": "59b5ef314fdfc666",
+  "pieces": 33,
+  "tris": 15634
+ },
+ "ice elemental": {
+  "assetId": 87649129099025,
+  "hash": "37cc34f044e59206",
+  "pieces": 12,
+  "tris": 9498
+ },
+ "iguana": {
+  "assetId": 129634067620905,
+  "hash": "77081e81677c6d3e",
+  "pieces": 24,
+  "tris": 17580
+ },
+ "iguanodon": {
+  "assetId": 133311461645128,
+  "hash": "709ec87e9ee3c223",
+  "pieces": 28,
+  "tris": 18840
+ },
+ "imp": {
+  "assetId": 107865065981710,
+  "hash": "31c55ea3cf32fa8e",
+  "pieces": 32,
+  "tris": 21710
+ },
+ "impala": {
+  "assetId": 126747831618550,
+  "hash": "c7d7b0fcc2c1853d",
+  "pieces": 30,
+  "tris": 17622
+ },
+ "iron golem": {
+  "assetId": 84242746363734,
+  "hash": "67732028479623bf",
+  "pieces": 16,
+  "tris": 13900
+ },
+ "jackal": {
+  "assetId": 103926622212425,
+  "hash": "016d72fe3ff7174a",
+  "pieces": 25,
+  "tris": 17710
+ },
+ "jellyfish": {
+  "assetId": 111719194807451,
+  "hash": "4f04b0d1348512cf",
+  "pieces": 33,
+  "tris": 13200
+ },
+ "jet": {
+  "assetId": 99883018406099,
+  "hash": "5aad259535bec0fc",
+  "pieces": 12,
+  "tris": 6440
+ },
+ "jet ski": {
+  "assetId": 77250102222811,
+  "hash": "8f33c9a9cdb5448d",
+  "pieces": 7,
+  "tris": 2878
+ },
+ "jumbo jet": {
+  "assetId": 104898529737280,
+  "hash": "6fcbacfd39cae47e",
+  "pieces": 13,
+  "tris": 8184
+ },
+ "jumping spider": {
+  "assetId": 84669987882518,
+  "hash": "f26d8da95dfcb0f6",
+  "pieces": 32,
+  "tris": 11580
+ },
+ "kangaroo": {
+  "assetId": 91950018739792,
+  "hash": "2c91529c7eaf9155",
+  "pieces": 22,
+  "tris": 13650
+ },
+ "killer whale": {
+  "assetId": 90097385351934,
+  "hash": "1db5b488943ef461",
+  "pieces": 18,
+  "tris": 15950
+ },
+ "king cobra": {
+  "assetId": 110460777830368,
+  "hash": "f2b13eeca496c6d9",
+  "pieces": 19,
+  "tris": 12104
+ },
+ "king crab": {
+  "assetId": 97318229928729,
+  "hash": "2c0746f48261b062",
+  "pieces": 29,
+  "tris": 14780
+ },
+ "kingfisher": {
+  "assetId": 80291054298129,
+  "hash": "935e79a43cc6f847",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "kitsune": {
+  "assetId": 111571700873195,
+  "hash": "9117c139a57b5a22",
+  "pieces": 27,
+  "tris": 15720
+ },
+ "kiwi": {
+  "assetId": 113771122427653,
+  "hash": "c76dc36f2488b618",
+  "pieces": 12,
+  "tris": 7260
+ },
+ "koala": {
+  "assetId": 106478980514800,
+  "hash": "be3bf4f6b6fa7bbf",
+  "pieces": 26,
+  "tris": 18400
+ },
+ "koi": {
+  "assetId": 130334921652758,
+  "hash": "da14cc5c4f06423e",
+  "pieces": 19,
+  "tris": 16150
+ },
+ "komodo dragon": {
+  "assetId": 114183194411204,
+  "hash": "78d71731dff947e1",
+  "pieces": 25,
+  "tris": 17880
+ },
+ "labrador": {
+  "assetId": 119884829002260,
+  "hash": "5484c8aa779bce9f",
+  "pieces": 26,
+  "tris": 17410
+ },
+ "ladybug": {
+  "assetId": 86815222642079,
+  "hash": "2c0cb613a731ad1f",
+  "pieces": 25,
+  "tris": 11300
+ },
+ "lamb": {
+  "assetId": 104781604213187,
+  "hash": "06cd7a9748809f05",
+  "pieces": 26,
+  "tris": 16138
+ },
+ "lava golem": {
+  "assetId": 81570576827012,
+  "hash": "c7d9599e292a3208",
+  "pieces": 26,
+  "tris": 17800
+ },
+ "lemur": {
+  "assetId": 89410448613323,
+  "hash": "320ed6dcbafcbc21",
+  "pieces": 21,
+  "tris": 17000
+ },
  "leopard": {
   "assetId": 96549450228431,
   "hash": "876397e5b3ace34f",
   "pieces": 22,
   "tris": 17090
+ },
+ "leviathan": {
+  "assetId": 140413999071036,
+  "hash": "5b71beea26f646bd",
+  "pieces": 18,
+  "tris": 12500
+ },
+ "lich": {
+  "assetId": 101011015930553,
+  "hash": "469ab1ae3ac26487",
+  "pieces": 19,
+  "tris": 17000
+ },
+ "lightning elemental": {
+  "assetId": 119368200961748,
+  "hash": "a76ba48c06ddafc7",
+  "pieces": 14,
+  "tris": 11500
+ },
+ "limousine": {
+  "assetId": 90569793740044,
+  "hash": "9611b8e3251b5c13",
+  "pieces": 26,
+  "tris": 14334
+ },
+ "lindworm": {
+  "assetId": 119598430227651,
+  "hash": "acd1591a6277561e",
+  "pieces": 19,
+  "tris": 13040
  },
  "lion": {
   "assetId": 70388572762098,
@@ -35,11 +1763,503 @@
   "pieces": 22,
   "tris": 17240
  },
+ "lizard": {
+  "assetId": 139891045625071,
+  "hash": "6f71741e85cf1581",
+  "pieces": 25,
+  "tris": 17880
+ },
+ "lizardman": {
+  "assetId": 80922827683788,
+  "hash": "39599ec065eccad6",
+  "pieces": 31,
+  "tris": 20370
+ },
+ "llama": {
+  "assetId": 125033302008810,
+  "hash": "14ba2ca77c294b90",
+  "pieces": 26,
+  "tris": 15914
+ },
+ "lobster": {
+  "assetId": 80134387090768,
+  "hash": "31412e991aca4bf3",
+  "pieces": 27,
+  "tris": 13370
+ },
+ "luna moth": {
+  "assetId": 80096433569727,
+  "hash": "031e281ff6f0de55",
+  "pieces": 32,
+  "tris": 12320
+ },
  "lynx": {
   "assetId": 102981765438099,
   "hash": "0067c49e96618de0",
   "pieces": 21,
   "tris": 16740
+ },
+ "macaw": {
+  "assetId": 121085145607729,
+  "hash": "69c67ff0ad43d012",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "magpie": {
+  "assetId": 110822801340761,
+  "hash": "f83bf6b2f1ae9c7b",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "manatee": {
+  "assetId": 98452592251631,
+  "hash": "a7f8ef0311106999",
+  "pieces": 10,
+  "tris": 11000
+ },
+ "manta ray": {
+  "assetId": 137586822640205,
+  "hash": "09cfdbcdb7e12672",
+  "pieces": 11,
+  "tris": 10700
+ },
+ "manticore": {
+  "assetId": 129780889110919,
+  "hash": "f602090ae26b31ac",
+  "pieces": 27,
+  "tris": 21430
+ },
+ "marlin": {
+  "assetId": 84681185290302,
+  "hash": "812de30928369387",
+  "pieces": 19,
+  "tris": 16400
+ },
+ "mech suit": {
+  "assetId": 71111734030600,
+  "hash": "cb402d82e5bc0027",
+  "pieces": 15,
+  "tris": 7382
+ },
+ "mermaid": {
+  "assetId": 99794002165487,
+  "hash": "cd88ffa15687e20a",
+  "pieces": 19,
+  "tris": 16700
+ },
+ "millipede": {
+  "assetId": 108535820401907,
+  "hash": "b295602b5f35bc82",
+  "pieces": 29,
+  "tris": 9080
+ },
+ "mine cart": {
+  "assetId": 107459423127542,
+  "hash": "4cac7a77ad3c4af1",
+  "pieces": 10,
+  "tris": 3750
+ },
+ "minotaur": {
+  "assetId": 93406634134403,
+  "hash": "3436366b9e82c492",
+  "pieces": 28,
+  "tris": 21370
+ },
+ "mongoose": {
+  "assetId": 80571962278581,
+  "hash": "a2b3b2ad46e77e8b",
+  "pieces": 21,
+  "tris": 14000
+ },
+ "monitor lizard": {
+  "assetId": 118251157146990,
+  "hash": "b1c7d05ed70f81ad",
+  "pieces": 25,
+  "tris": 17880
+ },
+ "monkey": {
+  "assetId": 78355463225180,
+  "hash": "298d756c7aa33f6a",
+  "pieces": 21,
+  "tris": 17000
+ },
+ "monster truck": {
+  "assetId": 135257224934133,
+  "hash": "e9fe0a2c76f21a07",
+  "pieces": 28,
+  "tris": 16066
+ },
+ "moon lander": {
+  "assetId": 86485191576787,
+  "hash": "a2383ae9785853be",
+  "pieces": 8,
+  "tris": 1768
+ },
+ "moose": {
+  "assetId": 116302530718775,
+  "hash": "08f9afed9d965752",
+  "pieces": 28,
+  "tris": 19130
+ },
+ "moped": {
+  "assetId": 107316302191667,
+  "hash": "516d6d381149d21f",
+  "pieces": 14,
+  "tris": 4044
+ },
+ "mosasaurus": {
+  "assetId": 100742207001607,
+  "hash": "52bccc59f67d54f1",
+  "pieces": 14,
+  "tris": 11600
+ },
+ "mosquito": {
+  "assetId": 124181617136056,
+  "hash": "2b74ec05c976f26e",
+  "pieces": 27,
+  "tris": 7540
+ },
+ "moth": {
+  "assetId": 86991464064895,
+  "hash": "cd8ef3785e30d7b8",
+  "pieces": 32,
+  "tris": 12320
+ },
+ "motorcycle": {
+  "assetId": 88447018849592,
+  "hash": "b4eca99b11cd3439",
+  "pieces": 18,
+  "tris": 6970
+ },
+ "mountain goat": {
+  "assetId": 113839261017770,
+  "hash": "03c02532e37fe456",
+  "pieces": 29,
+  "tris": 18574
+ },
+ "mouse": {
+  "assetId": 101054958303729,
+  "hash": "93b60261c0065a17",
+  "pieces": 24,
+  "tris": 15000
+ },
+ "mud monster": {
+  "assetId": 89726985085809,
+  "hash": "c4bb4174db7acdeb",
+  "pieces": 12,
+  "tris": 12800
+ },
+ "mule": {
+  "assetId": 81727444723205,
+  "hash": "8e3c9a757c84d6f5",
+  "pieces": 38,
+  "tris": 22702
+ },
+ "mummy": {
+  "assetId": 83964761373963,
+  "hash": "34cc61b8e4fd0dbb",
+  "pieces": 20,
+  "tris": 15000
+ },
+ "muscle car": {
+  "assetId": 108625338189354,
+  "hash": "b9f73f559ea5bc43",
+  "pieces": 28,
+  "tris": 17208
+ },
+ "narwhal": {
+  "assetId": 88150653994224,
+  "hash": "30f404ba05738aad",
+  "pieces": 14,
+  "tris": 14000
+ },
+ "nautilus": {
+  "assetId": 128636833280306,
+  "hash": "017574109f7edc6c",
+  "pieces": 9,
+  "tris": 8320
+ },
+ "newt": {
+  "assetId": 87284004843043,
+  "hash": "1311cc72f65d80f0",
+  "pieces": 24,
+  "tris": 17580
+ },
+ "nightmare": {
+  "assetId": 104909979866023,
+  "hash": "34b454201329024d",
+  "pieces": 29,
+  "tris": 19266
+ },
+ "octopus": {
+  "assetId": 105165854389861,
+  "hash": "2780254d6255f99c",
+  "pieces": 26,
+  "tris": 14840
+ },
+ "off roader": {
+  "assetId": 80032003590362,
+  "hash": "a6f5b61566988184",
+  "pieces": 28,
+  "tris": 16684
+ },
+ "ogre": {
+  "assetId": 133849033743717,
+  "hash": "66e33b83fe75b808",
+  "pieces": 22,
+  "tris": 17950
+ },
+ "okapi": {
+  "assetId": 116564924517812,
+  "hash": "dfb7e75d906921ed",
+  "pieces": 28,
+  "tris": 16882
+ },
+ "opossum": {
+  "assetId": 122579208188439,
+  "hash": "2d4aa7fc794fec07",
+  "pieces": 22,
+  "tris": 14500
+ },
+ "orangutan": {
+  "assetId": 99521254551521,
+  "hash": "f6bf98621f763b04",
+  "pieces": 18,
+  "tris": 15500
+ },
+ "orc": {
+  "assetId": 116242369668041,
+  "hash": "69fb7f7807b8b6d8",
+  "pieces": 25,
+  "tris": 19550
+ },
+ "osprey": {
+  "assetId": 122288323110933,
+  "hash": "ff1fd0244b441667",
+  "pieces": 29,
+  "tris": 18310
+ },
+ "ostrich": {
+  "assetId": 136078421250401,
+  "hash": "9cb2fafa5ea1812c",
+  "pieces": 23,
+  "tris": 13060
+ },
+ "otter": {
+  "assetId": 118706872769823,
+  "hash": "7e749a1466d48fa3",
+  "pieces": 23,
+  "tris": 15200
+ },
+ "owl": {
+  "assetId": 139359178057778,
+  "hash": "c4f4441fcc1d1fb9",
+  "pieces": 28,
+  "tris": 18560
+ },
+ "ox": {
+  "assetId": 98687492695677,
+  "hash": "a251feb003429d88",
+  "pieces": 32,
+  "tris": 19590
+ },
+ "pachycephalosaurus": {
+  "assetId": 96447216878729,
+  "hash": "87ede0a3e3e121b8",
+  "pieces": 25,
+  "tris": 18480
+ },
+ "paddle boat": {
+  "assetId": 89138114758571,
+  "hash": "e659b5109c4cf655",
+  "pieces": 8,
+  "tris": 6628
+ },
+ "paddle steamer": {
+  "assetId": 98866549559546,
+  "hash": "16e7269c43705d93",
+  "pieces": 14,
+  "tris": 11297
+ },
+ "panda": {
+  "assetId": 116744581342914,
+  "hash": "30ef1a48675685e4",
+  "pieces": 28,
+  "tris": 20100
+ },
+ "parasaurolophus": {
+  "assetId": 127509030886515,
+  "hash": "6cce377f41221974",
+  "pieces": 27,
+  "tris": 19140
+ },
+ "parrot": {
+  "assetId": 128079225546522,
+  "hash": "bff32afdb0ec8b87",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "peacock": {
+  "assetId": 75039388391304,
+  "hash": "50c338b1488913a8",
+  "pieces": 25,
+  "tris": 18610
+ },
+ "pegasus": {
+  "assetId": 84107187160898,
+  "hash": "ed1770978baeb6bc",
+  "pieces": 36,
+  "tris": 22524
+ },
+ "pelican": {
+  "assetId": 70732367617724,
+  "hash": "ad6dbd03de9bb157",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "penguin": {
+  "assetId": 78140065812714,
+  "hash": "06d90f6903bafb61",
+  "pieces": 16,
+  "tris": 9460
+ },
+ "penny farthing": {
+  "assetId": 100280680319369,
+  "hash": "7e4b9a2c64abf87f",
+  "pieces": 8,
+  "tris": 4184
+ },
+ "pheasant": {
+  "assetId": 100308324358017,
+  "hash": "68b6b5d06eedb054",
+  "pieces": 21,
+  "tris": 13360
+ },
+ "phoenix": {
+  "assetId": 96846883246323,
+  "hash": "ae380b8e10d71144",
+  "pieces": 19,
+  "tris": 18620
+ },
+ "pickup truck": {
+  "assetId": 125036161791852,
+  "hash": "ffe49393af525c63",
+  "pieces": 26,
+  "tris": 15346
+ },
+ "pig": {
+  "assetId": 108048761679345,
+  "hash": "20977dc8231d9b5d",
+  "pieces": 27,
+  "tris": 16838
+ },
+ "pigeon": {
+  "assetId": 75723310025020,
+  "hash": "ff992622b5adea1d",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "piranha": {
+  "assetId": 98858940372765,
+  "hash": "4c1f4dc3484eeaa7",
+  "pieces": 19,
+  "tris": 15750
+ },
+ "pirate ship": {
+  "assetId": 92426845083246,
+  "hash": "4a17c586fc9c7366",
+  "pieces": 22,
+  "tris": 12061
+ },
+ "plesiosaurus": {
+  "assetId": 136485110568466,
+  "hash": "a264cecf28f6eb00",
+  "pieces": 20,
+  "tris": 12900
+ },
+ "polar bear": {
+  "assetId": 103484540823963,
+  "hash": "d3a5dfc0b4fd4792",
+  "pieces": 26,
+  "tris": 18400
+ },
+ "police car": {
+  "assetId": 127383743490025,
+  "hash": "06b56ce50c5fce52",
+  "pieces": 31,
+  "tris": 16506
+ },
+ "pomeranian": {
+  "assetId": 105211317066652,
+  "hash": "dda84bcd5f9f8b92",
+  "pieces": 25,
+  "tris": 17010
+ },
+ "pony": {
+  "assetId": 136037108677631,
+  "hash": "249c01aa1c4f5c84",
+  "pieces": 39,
+  "tris": 23880
+ },
+ "poodle": {
+  "assetId": 118845681217082,
+  "hash": "88e8cbaaeeb95209",
+  "pieces": 25,
+  "tris": 17550
+ },
+ "porcupine": {
+  "assetId": 72714938303464,
+  "hash": "ce1fce908c32c56d",
+  "pieces": 24,
+  "tris": 16700
+ },
+ "praying mantis": {
+  "assetId": 109556117356609,
+  "hash": "84f10edce50944d4",
+  "pieces": 25,
+  "tris": 8240
+ },
+ "private jet": {
+  "assetId": 106672637011891,
+  "hash": "e9e78e6adcd252e8",
+  "pieces": 11,
+  "tris": 6856
+ },
+ "propeller plane": {
+  "assetId": 105695413332022,
+  "hash": "6b1f9f4e5f587f47",
+  "pieces": 13,
+  "tris": 5500
+ },
+ "pteranodon": {
+  "assetId": 137439654982695,
+  "hash": "01397db9ed338489",
+  "pieces": 13,
+  "tris": 9600
+ },
+ "pterodactyl": {
+  "assetId": 74877426481609,
+  "hash": "63f462274c6f42e0",
+  "pieces": 14,
+  "tris": 10600
+ },
+ "pufferfish": {
+  "assetId": 139353855363124,
+  "hash": "b65dfeec74da43b1",
+  "pieces": 15,
+  "tris": 14046
+ },
+ "puffin": {
+  "assetId": 81064699416599,
+  "hash": "762e77632956e1f8",
+  "pieces": 19,
+  "tris": 12410
+ },
+ "pug": {
+  "assetId": 111704052100622,
+  "hash": "2d5db42a8033182a",
+  "pieces": 26,
+  "tris": 17660
  },
  "puma": {
   "assetId": 85445241701832,
@@ -47,11 +2267,407 @@
   "pieces": 22,
   "tris": 17090
  },
+ "puppy": {
+  "assetId": 90775983485608,
+  "hash": "251be7b49f9c20be",
+  "pieces": 28,
+  "tris": 19060
+ },
+ "python": {
+  "assetId": 118757508122887,
+  "hash": "b313b6b3fd1045c1",
+  "pieces": 15,
+  "tris": 10944
+ },
+ "qilin": {
+  "assetId": 72079461973731,
+  "hash": "6ddbf65bd2d9ab37",
+  "pieces": 27,
+  "tris": 16880
+ },
+ "quail": {
+  "assetId": 84202608684405,
+  "hash": "12e146bdd8aa5971",
+  "pieces": 20,
+  "tris": 12910
+ },
+ "queen ant": {
+  "assetId": 74332841442448,
+  "hash": "a9caae204d316409",
+  "pieces": 29,
+  "tris": 10760
+ },
+ "rabbit": {
+  "assetId": 131100390062615,
+  "hash": "c2d332b08d866ab3",
+  "pieces": 21,
+  "tris": 12440
+ },
+ "raccoon": {
+  "assetId": 133320837702305,
+  "hash": "b513ac9a80e09247",
+  "pieces": 23,
+  "tris": 15000
+ },
+ "race car": {
+  "assetId": 77642161483439,
+  "hash": "338832ec50d5d64f",
+  "pieces": 18,
+  "tris": 12044
+ },
+ "raft": {
+  "assetId": 77396842556677,
+  "hash": "6bab2e0f4ec52ca2",
+  "pieces": 9,
+  "tris": 2760
+ },
+ "rally car": {
+  "assetId": 84422576758326,
+  "hash": "e1af3c80d2c8528a",
+  "pieces": 31,
+  "tris": 19116
+ },
+ "ram": {
+  "assetId": 95715297937754,
+  "hash": "ab4de5ad855c7933",
+  "pieces": 28,
+  "tris": 17586
+ },
+ "raptor": {
+  "assetId": 99631788579940,
+  "hash": "167351230046074e",
+  "pieces": 25,
+  "tris": 18980
+ },
+ "rat": {
+  "assetId": 100416901493885,
+  "hash": "e9db88157b660b56",
+  "pieces": 23,
+  "tris": 14300
+ },
+ "rattlesnake": {
+  "assetId": 87822664476639,
+  "hash": "4065a82fe8f11926",
+  "pieces": 18,
+  "tris": 11744
+ },
+ "raven": {
+  "assetId": 73407339286362,
+  "hash": "ac6a3538bde4d32e",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "red panda": {
+  "assetId": 115298945547342,
+  "hash": "1e1579115e8e126d",
+  "pieces": 22,
+  "tris": 14500
+ },
+ "reindeer": {
+  "assetId": 131785735013870,
+  "hash": "0173dfbfc6d4c7a2",
+  "pieces": 30,
+  "tris": 20666
+ },
+ "rhinoceros": {
+  "assetId": 140608467453676,
+  "hash": "7c87451fcb1152b6",
+  "pieces": 29,
+  "tris": 17782
+ },
+ "rhinoceros beetle": {
+  "assetId": 128734953204831,
+  "hash": "c2165f4fe5b8ba2a",
+  "pieces": 24,
+  "tris": 10400
+ },
+ "rickshaw": {
+  "assetId": 136188139917420,
+  "hash": "19e2c1538bc11a72",
+  "pieces": 13,
+  "tris": 7660
+ },
+ "robin": {
+  "assetId": 128519775103190,
+  "hash": "2aa568214dd0db48",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "robot": {
+  "assetId": 108204336121663,
+  "hash": "c28e49d6165e2229",
+  "pieces": 16,
+  "tris": 10800
+ },
+ "roc": {
+  "assetId": 78826310614710,
+  "hash": "11681eb9240d6d6d",
+  "pieces": 16,
+  "tris": 15420
+ },
+ "rocket": {
+  "assetId": 78988258465544,
+  "hash": "932b83d473740d0b",
+  "pieces": 9,
+  "tris": 4248
+ },
+ "rockhopper penguin": {
+  "assetId": 119247178717398,
+  "hash": "ba435c4be3a71189",
+  "pieces": 17,
+  "tris": 9960
+ },
+ "roller coaster car": {
+  "assetId": 78337713894473,
+  "hash": "b71f155a1c8c415a",
+  "pieces": 11,
+  "tris": 4262
+ },
+ "rooster": {
+  "assetId": 131895941928982,
+  "hash": "376bd4ec22a38a0b",
+  "pieces": 20,
+  "tris": 13610
+ },
+ "rottweiler": {
+  "assetId": 87374416809607,
+  "hash": "28c3119e457e72a5",
+  "pieces": 23,
+  "tris": 16510
+ },
+ "rowboat": {
+  "assetId": 113246094734450,
+  "hash": "a454186291b1915e",
+  "pieces": 15,
+  "tris": 5393
+ },
  "sabertooth": {
   "assetId": 119809230333447,
   "hash": "8dd014bbeb074cb5",
   "pieces": 21,
   "tris": 16740
+ },
+ "sailboat": {
+  "assetId": 73174199319638,
+  "hash": "3685b431682d2b8c",
+  "pieces": 16,
+  "tris": 6155
+ },
+ "saint bernard": {
+  "assetId": 91007156760427,
+  "hash": "152274b610d9685a",
+  "pieces": 29,
+  "tris": 19510
+ },
+ "salamander": {
+  "assetId": 108233889116897,
+  "hash": "119b07fc2c35f44b",
+  "pieces": 26,
+  "tris": 18380
+ },
+ "salmon": {
+  "assetId": 86036059408701,
+  "hash": "eb50cc47b05ae1fc",
+  "pieces": 19,
+  "tris": 16400
+ },
+ "samoyed": {
+  "assetId": 74392471050766,
+  "hash": "bc3a71dc1aa880d6",
+  "pieces": 25,
+  "tris": 17010
+ },
+ "satyr": {
+  "assetId": 116228848647179,
+  "hash": "a1351bf14e5defc9",
+  "pieces": 25,
+  "tris": 20000
+ },
+ "scarab": {
+  "assetId": 70713286501819,
+  "hash": "9f12e28ce4f2de7c",
+  "pieces": 24,
+  "tris": 10400
+ },
+ "school bus": {
+  "assetId": 91299850412166,
+  "hash": "a05644693b466242",
+  "pieces": 26,
+  "tris": 13512
+ },
+ "scooter": {
+  "assetId": 126335056630749,
+  "hash": "6263eb1714a79f4d",
+  "pieces": 9,
+  "tris": 3080
+ },
+ "scorpion": {
+  "assetId": 91011899673941,
+  "hash": "4c960b2e8b1f1215",
+  "pieces": 39,
+  "tris": 13300
+ },
+ "sea lion": {
+  "assetId": 83625562530394,
+  "hash": "ef982f5d6b959356",
+  "pieces": 15,
+  "tris": 14000
+ },
+ "sea serpent": {
+  "assetId": 75427376743639,
+  "hash": "e579979412a70e3d",
+  "pieces": 18,
+  "tris": 12500
+ },
+ "sea snake": {
+  "assetId": 124903164400155,
+  "hash": "db84261d0462b80c",
+  "pieces": 15,
+  "tris": 10944
+ },
+ "sea turtle": {
+  "assetId": 120433502562111,
+  "hash": "1df786f65a660439",
+  "pieces": 15,
+  "tris": 10800
+ },
+ "sea urchin": {
+  "assetId": 98887174318797,
+  "hash": "1168a2975d432b14",
+  "pieces": 9,
+  "tris": 12400
+ },
+ "seagull": {
+  "assetId": 82917701462126,
+  "hash": "36b0e2c4796b459c",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "seahorse": {
+  "assetId": 123313267012555,
+  "hash": "319a18065a538900",
+  "pieces": 9,
+  "tris": 7700
+ },
+ "seal": {
+  "assetId": 135263762131800,
+  "hash": "de41a6fa04ef1ba9",
+  "pieces": 15,
+  "tris": 14250
+ },
+ "seaplane": {
+  "assetId": 136614792552517,
+  "hash": "4b4d656214fb764b",
+  "pieces": 13,
+  "tris": 5440
+ },
+ "self balancing scooter": {
+  "assetId": 73223505104751,
+  "hash": "f995ce5537a5d587",
+  "pieces": 8,
+  "tris": 3636
+ },
+ "shark": {
+  "assetId": 91667876286332,
+  "hash": "7a816fcccf273661",
+  "pieces": 21,
+  "tris": 17150
+ },
+ "sheep": {
+  "assetId": 129449363298200,
+  "hash": "a0022d11fb683234",
+  "pieces": 26,
+  "tris": 16082
+ },
+ "shiba inu": {
+  "assetId": 78188480643094,
+  "hash": "324082042a7043ec",
+  "pieces": 27,
+  "tris": 18760
+ },
+ "ship": {
+  "assetId": 75057718367085,
+  "hash": "e4dda7a3bea44aef",
+  "pieces": 20,
+  "tris": 10381
+ },
+ "shoe car": {
+  "assetId": 118886882928282,
+  "hash": "5665d9d06fd413c3",
+  "pieces": 17,
+  "tris": 10904
+ },
+ "shrimp": {
+  "assetId": 114076834396046,
+  "hash": "0d8568794108a6e4",
+  "pieces": 27,
+  "tris": 13370
+ },
+ "skateboard": {
+  "assetId": 126042926710369,
+  "hash": "7f602eb79e777cc9",
+  "pieces": 8,
+  "tris": 1208
+ },
+ "skeleton": {
+  "assetId": 103842927186080,
+  "hash": "8948974cd9f056ec",
+  "pieces": 20,
+  "tris": 14100
+ },
+ "skunk": {
+  "assetId": 127048783420796,
+  "hash": "7fe0b0bb041e71a5",
+  "pieces": 23,
+  "tris": 15400
+ },
+ "sled": {
+  "assetId": 117554833098529,
+  "hash": "c264498b639da087",
+  "pieces": 4,
+  "tris": 4980
+ },
+ "sleigh": {
+  "assetId": 128279187395728,
+  "hash": "0bdc013801959874",
+  "pieces": 8,
+  "tris": 2748
+ },
+ "slime": {
+  "assetId": 110699838699170,
+  "hash": "7be8740927f1ee09",
+  "pieces": 6,
+  "tris": 4600
+ },
+ "sloth": {
+  "assetId": 112831937231810,
+  "hash": "42e4dffc3cfa5bbe",
+  "pieces": 21,
+  "tris": 14400
+ },
+ "slug": {
+  "assetId": 122509975105517,
+  "hash": "919356c64befb9dc",
+  "pieces": 8,
+  "tris": 4720
+ },
+ "snail": {
+  "assetId": 133661326674879,
+  "hash": "3e4208a69be574a6",
+  "pieces": 9,
+  "tris": 6720
+ },
+ "snake": {
+  "assetId": 85826724369609,
+  "hash": "1a30ad37c5c3fbc4",
+  "pieces": 15,
+  "tris": 10944
+ },
+ "snapping turtle": {
+  "assetId": 71218315102124,
+  "hash": "2e712e430f934270",
+  "pieces": 19,
+  "tris": 11200
  },
  "snow leopard": {
   "assetId": 133915486692694,
@@ -59,10 +2675,598 @@
   "pieces": 22,
   "tris": 17090
  },
+ "snowmobile": {
+  "assetId": 77884122751406,
+  "hash": "ed8a4ad6e2cccba8",
+  "pieces": 12,
+  "tris": 4364
+ },
+ "snowy owl": {
+  "assetId": 74476821248570,
+  "hash": "ffcf0c1a46fa9726",
+  "pieces": 28,
+  "tris": 18560
+ },
+ "space capsule": {
+  "assetId": 105378334455983,
+  "hash": "57cbb64c0e2c22ba",
+  "pieces": 8,
+  "tris": 2012
+ },
+ "space shuttle": {
+  "assetId": 118878510924040,
+  "hash": "2be4687cc257c775",
+  "pieces": 12,
+  "tris": 5548
+ },
+ "spaceship": {
+  "assetId": 137164265526539,
+  "hash": "21f1b5376b13c6cd",
+  "pieces": 10,
+  "tris": 3980
+ },
+ "sparrow": {
+  "assetId": 77312808174316,
+  "hash": "e8b5de010349e3f5",
+  "pieces": 28,
+  "tris": 17860
+ },
+ "speedboat": {
+  "assetId": 134321774374640,
+  "hash": "b756694bd582de9e",
+  "pieces": 13,
+  "tris": 6291
+ },
+ "sperm whale": {
+  "assetId": 125932816932566,
+  "hash": "23a9b5cf02b7291d",
+  "pieces": 12,
+  "tris": 12000
+ },
+ "sphinx": {
+  "assetId": 89507827836687,
+  "hash": "cdc1d3d11876798b",
+  "pieces": 25,
+  "tris": 20280
+ },
+ "spider": {
+  "assetId": 80863405149013,
+  "hash": "f875b2edcfed63b3",
+  "pieces": 32,
+  "tris": 11580
+ },
+ "spider walker": {
+  "assetId": 87994909956145,
+  "hash": "0d2103bf678a0cde",
+  "pieces": 21,
+  "tris": 9252
+ },
+ "spinosaurus": {
+  "assetId": 75506330828820,
+  "hash": "defa1bab432c0c8b",
+  "pieces": 26,
+  "tris": 20579
+ },
+ "sports car": {
+  "assetId": 113269201242404,
+  "hash": "80604256f590ca44",
+  "pieces": 26,
+  "tris": 15334
+ },
+ "squid": {
+  "assetId": 136849559043548,
+  "hash": "0d74b4febc70385d",
+  "pieces": 24,
+  "tris": 11640
+ },
+ "squirrel": {
+  "assetId": 90077223323890,
+  "hash": "9252d182887547e7",
+  "pieces": 24,
+  "tris": 15000
+ },
+ "stag beetle": {
+  "assetId": 122680569939554,
+  "hash": "085cf1315cf20b2c",
+  "pieces": 26,
+  "tris": 12000
+ },
+ "starfighter": {
+  "assetId": 136135606717369,
+  "hash": "0a46920654984025",
+  "pieces": 15,
+  "tris": 5612
+ },
+ "starfish": {
+  "assetId": 97127460707459,
+  "hash": "f7f692097d6ccee1",
+  "pieces": 11,
+  "tris": 9450
+ },
+ "station wagon": {
+  "assetId": 96882221350555,
+  "hash": "d0762bbeb97ed418",
+  "pieces": 28,
+  "tris": 14850
+ },
+ "steam train": {
+  "assetId": 129946392479013,
+  "hash": "522353456f6f27b8",
+  "pieces": 27,
+  "tris": 14062
+ },
+ "steamroller": {
+  "assetId": 87417135658935,
+  "hash": "64efb73fb0739086",
+  "pieces": 11,
+  "tris": 5440
+ },
+ "stegosaurus": {
+  "assetId": 115233783173035,
+  "hash": "33fb17d53eba7b49",
+  "pieces": 28,
+  "tris": 20740
+ },
+ "stick insect": {
+  "assetId": 97859322653198,
+  "hash": "ef7e3c3fe384a3a7",
+  "pieces": 23,
+  "tris": 6420
+ },
+ "stingray": {
+  "assetId": 134456031554600,
+  "hash": "22800e0d1b1065bb",
+  "pieces": 9,
+  "tris": 9700
+ },
+ "stork": {
+  "assetId": 83828193825769,
+  "hash": "fcf363f34fcaced2",
+  "pieces": 22,
+  "tris": 13660
+ },
+ "styracosaurus": {
+  "assetId": 106192460760733,
+  "hash": "1485224b74f4f12d",
+  "pieces": 28,
+  "tris": 20640
+ },
+ "submarine": {
+  "assetId": 127720120659675,
+  "hash": "618112266eb4a743",
+  "pieces": 9,
+  "tris": 5968
+ },
+ "sunfish": {
+  "assetId": 89959280757285,
+  "hash": "63b4c6ff9ea4ad7c",
+  "pieces": 11,
+  "tris": 11500
+ },
+ "super yacht": {
+  "assetId": 106338860427457,
+  "hash": "f5ec9fbb77122f07",
+  "pieces": 12,
+  "tris": 7009
+ },
+ "suv": {
+  "assetId": 76773753697798,
+  "hash": "e7aecce5f502d381",
+  "pieces": 28,
+  "tris": 16102
+ },
+ "swallow": {
+  "assetId": 123937094151078,
+  "hash": "b56b25c335b91528",
+  "pieces": 28,
+  "tris": 17860
+ },
+ "swan": {
+  "assetId": 102299612916173,
+  "hash": "d21ec4ce1332e3c6",
+  "pieces": 21,
+  "tris": 13260
+ },
+ "swordfish": {
+  "assetId": 96750047074198,
+  "hash": "e54c1ddf2c390162",
+  "pieces": 17,
+  "tris": 15500
+ },
+ "tandem bicycle": {
+  "assetId": 92617801941064,
+  "hash": "0d2429924db2c623",
+  "pieces": 12,
+  "tris": 6980
+ },
+ "tank": {
+  "assetId": 127868729503517,
+  "hash": "ecb461ed0af1db0e",
+  "pieces": 29,
+  "tris": 12528
+ },
+ "tanker truck": {
+  "assetId": 106030025106526,
+  "hash": "ae02d2ae4c1d7790",
+  "pieces": 35,
+  "tris": 25258
+ },
+ "tapir": {
+  "assetId": 109823463352138,
+  "hash": "358854232b38b04e",
+  "pieces": 26,
+  "tris": 16730
+ },
+ "tarantula": {
+  "assetId": 109539205730905,
+  "hash": "403b244b82aaf2bc",
+  "pieces": 33,
+  "tris": 13900
+ },
+ "taxi": {
+  "assetId": 101719530049084,
+  "hash": "dcf1afb9e67179a8",
+  "pieces": 28,
+  "tris": 15306
+ },
+ "termite": {
+  "assetId": 89877545926543,
+  "hash": "553c6a958eb91cfd",
+  "pieces": 25,
+  "tris": 9600
+ },
+ "terrier": {
+  "assetId": 110362981149602,
+  "hash": "02b694cefdddb3b6",
+  "pieces": 25,
+  "tris": 17710
+ },
+ "terror bird": {
+  "assetId": 74470512029669,
+  "hash": "a5c580aaa8da31e0",
+  "pieces": 20,
+  "tris": 12860
+ },
+ "thunderbird": {
+  "assetId": 135746294246066,
+  "hash": "1bc456a458662988",
+  "pieces": 17,
+  "tris": 16420
+ },
+ "tick": {
+  "assetId": 79293635190717,
+  "hash": "9dd14bcaf7439027",
+  "pieces": 28,
+  "tris": 10460
+ },
  "tiger": {
   "assetId": 105353594780669,
   "hash": "5d58947ba62507b3",
   "pieces": 22,
   "tris": 17090
+ },
+ "toad": {
+  "assetId": 132136999575361,
+  "hash": "17169e9a0bdf1db0",
+  "pieces": 20,
+  "tris": 11400
+ },
+ "tortoise": {
+  "assetId": 125302668654797,
+  "hash": "047898fa5853093a",
+  "pieces": 19,
+  "tris": 11200
+ },
+ "toucan": {
+  "assetId": 83177070884509,
+  "hash": "2aacf4aead58f6a9",
+  "pieces": 27,
+  "tris": 17460
+ },
+ "tractor": {
+  "assetId": 127782143694945,
+  "hash": "28374d7bb8d9b0c7",
+  "pieces": 19,
+  "tris": 8648
+ },
+ "train": {
+  "assetId": 91917638151969,
+  "hash": "0bcd3b9b51845560",
+  "pieces": 20,
+  "tris": 9944
+ },
+ "tram": {
+  "assetId": 125020811734348,
+  "hash": "7995a6be39cf58e1",
+  "pieces": 18,
+  "tris": 8062
+ },
+ "treant": {
+  "assetId": 74266320043708,
+  "hash": "6e8061aa23aadd76",
+  "pieces": 15,
+  "tris": 16600
+ },
+ "tree frog": {
+  "assetId": 130227859001735,
+  "hash": "a1d59abaeb61dd21",
+  "pieces": 20,
+  "tris": 11400
+ },
+ "triceratops": {
+  "assetId": 122785865506724,
+  "hash": "89fe569bef4501e2",
+  "pieces": 28,
+  "tris": 20640
+ },
+ "tricycle": {
+  "assetId": 71611447699242,
+  "hash": "d7ae5fe964f50678",
+  "pieces": 11,
+  "tris": 5548
+ },
+ "troll": {
+  "assetId": 74360622181554,
+  "hash": "6332937eea1208ac",
+  "pieces": 24,
+  "tris": 18470
+ },
+ "trout": {
+  "assetId": 89400404262745,
+  "hash": "efa8cc24dd6a8bf1",
+  "pieces": 19,
+  "tris": 16150
+ },
+ "truck": {
+  "assetId": 130532025295248,
+  "hash": "81fa5ac4d72b96ab",
+  "pieces": 31,
+  "tris": 21226
+ },
+ "tugboat": {
+  "assetId": 114683966784672,
+  "hash": "970989745f4651a3",
+  "pieces": 13,
+  "tris": 7893
+ },
+ "tuna": {
+  "assetId": 94394679751208,
+  "hash": "5783232ded72db35",
+  "pieces": 21,
+  "tris": 17200
+ },
+ "turkey": {
+  "assetId": 111745948406593,
+  "hash": "59aae4945d76cc07",
+  "pieces": 20,
+  "tris": 14010
+ },
+ "turtle": {
+  "assetId": 100855513104122,
+  "hash": "8fe73f60e41e4d4b",
+  "pieces": 19,
+  "tris": 11200
+ },
+ "tyrannosaurus rex": {
+  "assetId": 112909421200086,
+  "hash": "78f5b9128ee7c33b",
+  "pieces": 25,
+  "tris": 18980
+ },
+ "ufo": {
+  "assetId": 118235184968605,
+  "hash": "d73ffd305d6877e8",
+  "pieces": 8,
+  "tris": 3452
+ },
+ "unicorn": {
+  "assetId": 71232554310932,
+  "hash": "ecb928c6358de377",
+  "pieces": 31,
+  "tris": 20412
+ },
+ "unicycle": {
+  "assetId": 95509894511801,
+  "hash": "0ee6de9f864a9a50",
+  "pieces": 5,
+  "tris": 2256
+ },
+ "vampire bat": {
+  "assetId": 92961869547760,
+  "hash": "ae05c1577f6f749b",
+  "pieces": 24,
+  "tris": 11898
+ },
+ "van": {
+  "assetId": 139376212810510,
+  "hash": "2c1f50432948022d",
+  "pieces": 27,
+  "tris": 14398
+ },
+ "velociraptor": {
+  "assetId": 85835219365057,
+  "hash": "b1ebaa87410e59a1",
+  "pieces": 29,
+  "tris": 20980
+ },
+ "viking longship": {
+  "assetId": 79540981870567,
+  "hash": "4e4a2bab2e992f8c",
+  "pieces": 17,
+  "tris": 14038
+ },
+ "viper": {
+  "assetId": 104468406266902,
+  "hash": "af61231f5a8d0515",
+  "pieces": 16,
+  "tris": 10740
+ },
+ "vulture": {
+  "assetId": 136509449332193,
+  "hash": "23478cd5596f4074",
+  "pieces": 29,
+  "tris": 18610
+ },
+ "wagon": {
+  "assetId": 95770542890405,
+  "hash": "f7b9017278b81ed2",
+  "pieces": 12,
+  "tris": 4912
+ },
+ "walrus": {
+  "assetId": 116056729163234,
+  "hash": "77b264f1a6420bd0",
+  "pieces": 11,
+  "tris": 11500
+ },
+ "war elephant": {
+  "assetId": 89501953972023,
+  "hash": "ac8562bcc856262b",
+  "pieces": 39,
+  "tris": 24610
+ },
+ "warg": {
+  "assetId": 76582473396586,
+  "hash": "bd1605ccfb88cd1d",
+  "pieces": 27,
+  "tris": 19010
+ },
+ "warhorse": {
+  "assetId": 88465735525606,
+  "hash": "3e31d4b011aa552e",
+  "pieces": 40,
+  "tris": 24150
+ },
+ "warthog": {
+  "assetId": 121677485003205,
+  "hash": "8001a551319e5a44",
+  "pieces": 32,
+  "tris": 19658
+ },
+ "wasp": {
+  "assetId": 121259580943199,
+  "hash": "32ed287bcea486b9",
+  "pieces": 34,
+  "tris": 12400
+ },
+ "water buffalo": {
+  "assetId": 107990146114038,
+  "hash": "827a6c1cd96b50af",
+  "pieces": 31,
+  "tris": 18846
+ },
+ "water elemental": {
+  "assetId": 132306261990574,
+  "hash": "5555dcea8bf5fb47",
+  "pieces": 14,
+  "tris": 11200
+ },
+ "water strider": {
+  "assetId": 105474525936095,
+  "hash": "bfbe68c132789607",
+  "pieces": 23,
+  "tris": 6540
+ },
+ "weasel": {
+  "assetId": 117217235207915,
+  "hash": "03fe51d9475ad0d4",
+  "pieces": 23,
+  "tris": 15200
+ },
+ "weevil": {
+  "assetId": 107868788739938,
+  "hash": "35320effd4846362",
+  "pieces": 24,
+  "tris": 10400
+ },
+ "werewolf": {
+  "assetId": 140568933717570,
+  "hash": "6bd35f7eddce29b7",
+  "pieces": 27,
+  "tris": 20270
+ },
+ "whale": {
+  "assetId": 124911223161294,
+  "hash": "f6957d3c4c4b8f11",
+  "pieces": 12,
+  "tris": 12400
+ },
+ "whale shark": {
+  "assetId": 107500721015234,
+  "hash": "e45075e0c00398a5",
+  "pieces": 24,
+  "tris": 19400
+ },
+ "wisp": {
+  "assetId": 128241144500668,
+  "hash": "b704e773d440cbbb",
+  "pieces": 7,
+  "tris": 4050
+ },
+ "wolf": {
+  "assetId": 114734511609271,
+  "hash": "f9e683e768630fd2",
+  "pieces": 27,
+  "tris": 18760
+ },
+ "wolpertinger": {
+  "assetId": 75463830204269,
+  "hash": "0ecb4bfc444ab489",
+  "pieces": 23,
+  "tris": 12940
+ },
+ "wolverine": {
+  "assetId": 131766356649661,
+  "hash": "f15adee541c8c581",
+  "pieces": 23,
+  "tris": 15400
+ },
+ "woodpecker": {
+  "assetId": 139524110767357,
+  "hash": "8730c45fac786943",
+  "pieces": 28,
+  "tris": 17860
+ },
+ "woolly bear": {
+  "assetId": 106233566378536,
+  "hash": "580d376e82b915f6",
+  "pieces": 14,
+  "tris": 5940
+ },
+ "woolly mammoth": {
+  "assetId": 132004869225297,
+  "hash": "b76fbbebbf0e1f34",
+  "pieces": 36,
+  "tris": 22598
+ },
+ "wraith": {
+  "assetId": 118787074062099,
+  "hash": "26cd5a0dae2ff5a2",
+  "pieces": 15,
+  "tris": 13500
+ },
+ "wyvern": {
+  "assetId": 125873706200840,
+  "hash": "bae0c8c68f34ac81",
+  "pieces": 25,
+  "tris": 21200
+ },
+ "yak": {
+  "assetId": 139701887004817,
+  "hash": "5afd12e281a61580",
+  "pieces": 33,
+  "tris": 22842
+ },
+ "yeti": {
+  "assetId": 110586814250540,
+  "hash": "47539776d16556b6",
+  "pieces": 23,
+  "tris": 18150
+ },
+ "zebra": {
+  "assetId": 107322057754829,
+  "hash": "df2cc81cfa2c04b4",
+  "pieces": 29,
+  "tris": 17998
  }
 }

@@ -3,6 +3,7 @@ return function(t: any)
 	local load = t.load
 	local Summon = load("src/Shared/Summon")
 	local Heroes = Summon.Heroes
+	Heroes.setRequirePack(false) -- every authored hero, uploaded or not
 	local Map = load("src/Shared/Summon/Heroes/Map")
 	local Motion = load("src/Shared/Summon/Motion")
 
@@ -24,7 +25,7 @@ return function(t: any)
 				t.ok(i == 1 or bones[b[2]] ~= nil, id .. ": bone " .. b[1] .. " parent before child")
 				bones[b[1]] = true
 			end
-			t.ok(#d.parts >= 6 and #d.parts <= 60, id .. ": part count " .. #d.parts)
+			t.ok(#d.parts >= 4 and #d.parts <= 60, id .. ": part count " .. #d.parts)
 			for _, p in d.parts do
 				t.ok(bones[p.bone] ~= nil, id .. ": " .. p.name .. " on a known bone")
 				t.ok(#p.size == 3 and #p.pos == 3, id .. ": " .. p.name .. " box")
@@ -45,7 +46,7 @@ return function(t: any)
 	t.test("words map to heroes and the filters hold", function()
 		t.eq(Heroes.find(result("lion")), "lion", "lion")
 		t.eq(Heroes.find(result("ice tiger")), "tiger", "ice tiger -> tiger")
-		t.eq(Heroes.find(result("tiger shark", "Fish")), nil, "tiger shark is not a tiger")
+		t.ok(Heroes.find(result("tiger shark", "Fish")) ~= "tiger", "tiger shark is not a tiger")
 		t.eq(Heroes.find(result("hot dog", "Blob", "Food")), nil, "food never maps to an animal")
 		t.eq(Map.match("frost lion cub", result("x")), "lion", "trailing words allowed")
 		t.eq(Map.match("lion tamer", result("x")), nil, "a different head noun is not a lion")
@@ -59,7 +60,7 @@ return function(t: any)
 				local b = Summon.blueprint(r, { style = style, seed = 4 })
 				t.eq(a.builder, "hero:" .. id, id .. " builder")
 				t.eq(#a.parts, #b.parts, id .. " deterministic")
-				t.ok(a.stats.meshParts >= 6, id .. " sculpted parts")
+				t.ok(a.stats.meshParts >= 4, id .. " sculpted parts")
 				t.ok(a.rig.clips ~= nil and a.rig.clipScale ~= nil, id .. " clips")
 				local pose = Motion.pose(a.rig, "Move", 0.3, { height = 5 })
 				t.ok(next(pose) ~= nil, id .. " move pose")

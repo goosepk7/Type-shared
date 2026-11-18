@@ -8,7 +8,8 @@
 --   Motion.pose(rig, clip, t, o) -> { [bone] = {px,py,pz, rx,ry,rz} }   per-bone offsets (model-axis Euler)
 --
 -- Gaits (rig.gait): trot, heavy, sprawl, biped, stomp, hop, waddle, bird, buzz, scuttle, swim, float, slither,
--- inch, drive, fly, hover, spin, sway, swarm, surge, static, roll. Material motion (rig.materialMotion) layers on
+-- inch, drive, fly, hover, spin, sway, swarm, surge, static, roll, skitter, crawl, stalk, pounce, skate, sidestep, plod,
+-- paddle, flutter, glide. Material motion (rig.materialMotion) layers on
 -- top: wobble (jelly), flop (spaghetti/rope lag), clank (metal: stepped + impact shake), bob, jiggle, swarm,
 -- flicker. Mood tweaks speed and posture (Sleepy droops and slows, Hyper doubles, Scared trembles).
 
@@ -94,6 +95,20 @@ local GAIT: { [string]: any } = {
 	inch = { bob = 0.06, freq = 0.8, sway = 0.1 }, drive = { wheel = 1, bob = 0.01, freq = 2 }, fly = { flap = 0.7, flapFreq = 2.2, bob = 0.1, freq = 1, fly = true },
 	hover = { bob = 0.08, freq = 0.6, fly = true }, spin = { spin = 2, freq = 1 }, sway = { sway = 0.08, freq = 0.4 },
 	swarm = { jitter = 0.06, freq = 3 }, surge = { bob = 0.12, freq = 0.7 }, static = { freq = 0 }, roll = { roll2 = 1, freq = 1 },
+	crowd = { jitter = 0.012, bob = 0.01, freq = 1.6 }, -- a shuffling crowd on the ground (Swarm people, hands)
+	-- arthropods and shelled walkers (Plans/Insect, Arachnid, Crustacean, Chelonian): splayed legs swing forward and
+	-- back about the vertical and lift at the hip (skitter); crabs shuffle sideways; tortoises plod with a head bob;
+	-- sea turtles paddle and feather their flippers
+	skitter = { stride = 0.32, lift = 0.32, bob = 0.006, freq = 3.2, skitter = true },
+	crawl = { stride = 0.3, lift = 0.25, bob = 0.004, freq = 2.4, skitter = true, sway = 0.14 },
+	stalk = { stride = 0.22, lift = 0.25, bob = 0.01, freq = 1.0, skitter = true, rock = 0.05 },
+	pounce = { stride = 0.25, lift = 0.3, bob = 0.18, freq = 1.4, skitter = true, hop = true },
+	skate = { stride = 0.5, lift = 0.08, bob = 0, freq = 1.2, skitter = true },
+	sidestep = { stride = 0.18, lift = 0.38, bob = 0.008, freq = 2.6, skitter = true, sidestep = 0.05 },
+	plod = { stride = 0.3, lift = 0.22, bob = 0.02, freq = 0.6, roll = 0.04, plod = true },
+	paddle = { flap = 0.55, flapFreq = 0.75, bob = 0.04, freq = 0.75, fly = true, paddle = true },
+	flutter = { flap = 0.9, flapFreq = 4.5, bob = 0.1, freq = 1.1, fly = true },
+	glide = { bob = 0, freq = 0.5, glide = true },
 }
 Motion.Gaits = GAIT
 
@@ -237,9 +252,40 @@ function Motion.pose(rig: any, clip: string, t: number, o: any?): { [string]: { 
 	for _, l in rig.legs or {} do
 		local p = ph + (l.phase or 0) * TAU
 		local swing = sin(p) * (g.stride or 0.3) * amp
-		add(out, l.hip, 0, 0, 0, swing, 0, 0)
+		if g.skitter then
+			-- splayed leg: swing about the vertical, lift the foot (rotate about Z, outward side up) on the forward stroke
+			local side = l.side or 1
+			local lift = math.max(0, cos(p)) * (g.lift or 0.3) * amp
+			if g.sidestep then
+				add(out, l.hip, 0, 0, 0, 0, swing * side * 0.5, side * (lift + sin(p) * 0.12 * amp))
+			else
+				add(out, l.hip, 0, 0, 0, 0, swing * side, side * lift)
+			end
+		elseif g.plod then
+			add(out, l.hip, 0, 0, 0, swing, 0, (l.side or 1) * math.max(0, cos(p)) * (g.lift or 0.2) * amp)
+		else
+			add(out, l.hip, 0, 0, 0, swing, 0, 0)
+		end
 		if l.knee then
 			add(out, l.knee, 0, 0, 0, math.max(0, -cos(p)) * 0.5 * amp, 0, 0)
+		end
+	end
+	if g.sidestep then
+		-- crab shuffle: the body sways sideways over the stepping legs
+		add(out, "Body", sin(ph) * (g.sidestep or 0.05) * h * amp, 0, 0, 0, 0, sin(ph) * 0.04 * amp)
+	end
+	if g.plod and rig.head then
+		-- tortoise: the head pushes out with each step
+		add(out, rig.head, 0, 0, -abs(sin(ph)) * h * 0.02 * amp, sin(ph * 2) * 0.05 * amp, 0, 0)
+	end
+	if g.rock then
+		-- mantis: a slow leaf-in-the-wind rock
+		add(out, "Body", sin(t * 2.1 + seed) * h * 0.01, 0, 0, 0, 0, sin(t * 2.1 + seed) * g.rock)
+	end
+	if g.glide then
+		-- snail: a slow stretch forward of the head and eye stalks
+		if rig.head then
+			add(out, rig.head, 0, sin(t * 1.1) * h * 0.01, -(0.5 + 0.5 * sin(ph)) * h * 0.03, sin(t * 0.8) * 0.05, sin(t * 0.6) * 0.08, 0)
 		end
 	end
 	-- arms swing opposite to the legs
@@ -255,7 +301,11 @@ function Motion.pose(rig: any, clip: string, t: number, o: any?): { [string]: { 
 		local side = w.side or 1
 		local flapF = (g.flapFreq or 1.2) * spd
 		local flap = (g.flap or 0.25) * (if moving or g.fly then 1 else 0.25)
-		add(out, w.bone, 0, 0, 0, 0, 0, side * sin(t * flapF * TAU) * flap * (if w.flipper then 0.5 else 1))
+		add(out, w.bone, 0, 0, 0, 0, 0, side * sin(t * flapF * TAU) * flap * (if w.flipper then 0.5 elseif w.folded then 0.35 else 1))
+		if g.paddle and w.flipper then
+			-- feather the flipper: pitch it a quarter cycle ahead of the stroke
+			add(out, w.bone, 0, 0, 0, cos(t * flapF * TAU) * 0.3, 0, 0)
+		end
 	end
 	-- tail: lagged sway down the chain
 	for i, b in rig.tail or {} do
@@ -264,6 +314,10 @@ function Motion.pose(rig: any, clip: string, t: number, o: any?): { [string]: { 
 	end
 	for i, b in rig.spine or {} do
 		add(out, b, 0, 0, 0, 0, sin(ph - i * 0.7) * (g.sway or 0.1), 0)
+	end
+	-- looping crawlers (inchworms): the arch segments pitch in counter-phase so the loop opens and closes
+	for _, a in rig.arch or {} do
+		add(out, a.bone, 0, 0, 0, sin(ph) * (a.k or 0.2) * (0.35 + amp * 0.65), 0, 0)
 	end
 	for _, tt in rig.tentacles or {} do
 		local p = t * 1.2 * spd + (tt.index or 0) * 0.8 + (tt.seg or 1) * 0.5
