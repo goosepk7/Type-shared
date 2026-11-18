@@ -55,6 +55,14 @@ add("porcine", "peccary babirusa entelodont")
 -- mythic hybrids on a real body (their extra parts are added in the plan: MYTH below)
 add("feline", "pixiu haetae shisa barong nue ammit chimera manticore")
 add("bovine", "xiezhi lamassu")
+-- library words that only their last word or a breed name identifies
+add("mustelid", "kamaitachi")
+add("rodent", "dunnart cuscus glider hutia hyrax josephoartigasia phoberomys castoroides lemur cottontail flemish netherland wolpertinger")
+add("porcine", "baku")
+add("ursine", "diprotodon")
+add("feline", "thylacoleo nian abyssinian shorthair fold wildcat hellcat bakeneko familiar")
+add("equine", "chalicotherium eland nilgai pronghorn saiga springbok gerenuk dik muntjac bongo hind")
+add("bovine", "gaur longhorn zebu markhor chamois")
 
 local function words(id: string): { string }
 	local out = {}
@@ -84,6 +92,8 @@ local function archetype(ctx: any, t: any): string
 		return "badger" -- ringed tail, masked face
 	elseif string.find(lid, "jersey devil") then
 		return "equine"
+	elseif string.find(lid, "devon rex") or string.find(lid, "russian blue") then
+		return "feline"
 	elseif string.find(lid, "kangaroo rat") then
 		return "macropod"
 	elseif string.find(lid, "foo dog") then
@@ -266,10 +276,10 @@ return function(B: any, ctx: any)
 		t.noWings = nil
 		t.wingKind = if manticore then "bat" else "feather"
 	end
-	if idHas(id, "haetae xiezhi pixiu") then
+	if idHas(id, "haetae xiezhi pixiu nian") then
 		t.unihorn = true
 	end
-	if idHas(id, "haetae shisa barong foo pixiu chimera manticore") then
+	if idHas(id, "haetae shisa barong foo pixiu chimera manticore nian") then
 		t.mane = true
 	end
 	if idHas(id, "cub kit pup kitten") then
@@ -589,6 +599,10 @@ return function(B: any, ctx: any)
 				B:limb({ 0, topY + s * 0.02, sc[3] + s * 0.22 }, { 0, topY + s * 0.42, sc[3] + s * 0.3 }, s * 0.22, { col = "horn", mat = "hard", bone = "Head", pri = 1.9, role = "horn", name = "BackHorn", mesh = "s_rhino_horn" }, 0.1)
 			end
 		end
+	end
+	if arch == "bovine" and idHas(id, "zebu brahman gaur bison") then
+		-- shoulder hump of the zebu / bison
+		B:ell(W * 0.66, H * 0.66, L * 0.3, at(0, bodyY + H * 0.42, -L * 0.24, rad(-12), 0, 0), { col = "primary", mat = "fur", pri = 1.06, role = "body", name = "Hump1", mesh = "s_hump" })
 	end
 	if arch == "camelid" then
 		if camel then

@@ -83,7 +83,7 @@ def s_body_anteater():
     """Giant anteater trunk: deep narrow body, high withers and a coarse dorsal crest of long hair."""
     s = _base(0.12)
     s = s.su(ellipsoid(0.32, 0.3, 0.26, (0, 0.22, -0.3)), 0.12)  # withers
-    s = s.su(ellipsoid(0.07, 0.24, 0.46, (0, 0.46, 0.04)), 0.08)  # dorsal crest
+    s = s.su(ellipsoid(0.16, 0.14, 0.44, (0, 0.42, 0.04)), 0.1)  # dorsal crest
     s = s.su(_pair(lambda: ellipsoid(0.1, 0.12, 0.4, (0.4, -0.3, 0.0))), 0.08)  # belly fringe
     return _fur(s, 0.012, 12, 3)
 
