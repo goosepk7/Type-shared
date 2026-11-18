@@ -191,6 +191,7 @@ return {
 	{"bamboo fence","EGCCII","GS",2,1,4,"C0CA33","827717","bound bamboo poles in a row","thud","Grows back. Probably.","structure,defense"},
 	{"bamboo forest","MGENII","ZSN",3,1,7,"9CCC65","33691E","towering green bamboo stalks","rumble","Tall, green, and full of hiding pandas.","place,terrain,plant"},
 	{"ban","KDCLtI","kOY",7,6,3,"DC2626","111827","huge red-and-black hammer stamped BAN crashing down","thunk","You have been removed from the server.","gaming,meme,internet"},
+	{"ban hammer","CDENtI","EkO",8,4,3,"E8E2D4","C62E3A","a giant judge's gavel slams down from the sky","thunk","You have been removed from this lobby. Reason: skill issue.","gaming,meme,internet,hammer"},
 	{"banana","IGBAKF","UFke",3,6,2,"FFE135","5A3E1B","curved crescent, stem tip, ridged sides","splat","Curved, yellow, and ready to slip.","edible,fruit,sweet"},
 	{"banana boat","DBCKHC","UDjkgB",2,6,3,"FFEB3B","1E88E5","big yellow inflatable tube towed fast","splash","Everyone falls off. Everyone.","vehicle,aquatic,silly"},
 	{"banana bomb","CABGKF","UEeV",5,6,1,"F1C40F","7A4E2D","explosive banana with fuse","boom","Peel. Throw. Split. BOOM.","explosive,silly"},
@@ -402,5 +403,4 @@ return {
 	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
 	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
-	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 }

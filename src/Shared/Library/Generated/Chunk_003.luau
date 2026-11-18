@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
 	{"beignet","IMBDOJ","jcP",2,5,1,"F2E8D0","F7F7F2","square puff, sugar snow","puff","A pillow buried in powdered sugar.","edible"},
 	{"belgian fries","IMAELB","ceP",2,7,1,"F2C24A","F7F2DC","paper cone of thick fries","pitter","Fries with mayo, Belgian style.","edible"},
@@ -179,6 +180,7 @@ return {
 	{"blob alien","ALBJGG","UVY",3,5,3,"A855F7","F0ABFC","purple wobbling alien with antennae","squelch","Speaks in burps. Means well.","alien,cute,silly"},
 	{"blobfish","ABBJGC","UdB",1,6,1,"E8B0B0","F2D0D0","droopy pink jelly blob with big nose","splash","Looks sad. Is mostly fine.","fish,aquatic,deepsea,silly,meme"},
 	{"block","KMCIKI","G",1,6,6,"90CAF9","FFFFFF","translucent square guard in front","thunk","Blocked. Next.","defence"},
+	{"block drop","EEDCnI","GEk",7,5,7,"7D8A96","59E1FF","stone tetrominoes stack into a wall, then clear","thud","Clear the line. Clear the area.","game,puzzle,blocks"},
 	{"blockhouse","EECMII","GSe",4,1,8,"8D6E63","5D4037","square log hut, overhanging upper floor","thud","A log cabin that bites.","structure,defense"},
 	{"blondie","IMBLKI","dSc",2,3,3,"D9A04A","F2D08A","golden chewy square bar","chomp","A brownie that went blonde.","edible,sweet"},
 	{"blood","FBBNGI","SNP",2,3,1,"D7263D","FF6B6B","bright red cartoon splat with shiny highlights","splat","Relax. It is probably ketchup.","body,silly,sticky"},
@@ -292,6 +294,7 @@ return {
 	{"bongo","AMCJAA","Dk",4,8,4,"A0401E","F2F0EA","chestnut red, thin white stripes","bleat","Named after a drum. Plays no drums.","mammal,wild"},
 	{"bongo drums","BMBFJI","O",2,6,3,"8B5A2B","D2B48C","pair of small joined drums","strum","Bongo bongo bongo!","music"},
 	{"bonk","KMBAKB","fO",2,8,2,"FFD54F","FFFFFF","cartoon lump and spinning stars","bonk","Bonk. Straight to nap jail.","silly,meme"},
+	{"bonk mallet","CMDGtK","kfO",7,5,2,"E53935","FFD54F","a giant squeaky toy mallet that bonks from above","bonk","Squeak. Flat. Squeak.","cartoon,silly,toy"},
 	{"bonnet","BMBONI","F",1,5,1,"F3E6C8","E88AA5","frilly tied bonnet","swish","Old-timey cuteness.","clothing"},
 	{"bonnethead","ABCJEC","DfTB",4,8,6,"8A9098","E8ECEE","small shovel-headed hammerhead","chomp","Eats seagrass. Weird shark.","fish,aquatic,ocean,predator"},
 	{"bonobo","AMCJBA","dFkf",3,5,7,"1E1A18","C8A890","slender chimp, parted hair","roar","Solves arguments with hugs.","mammal,primate"},
@@ -400,7 +403,4 @@ return {
 	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
 	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
 	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
-	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
-	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
-	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
 }
