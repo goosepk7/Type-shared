@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
+	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
+	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
+	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
 	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
 	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
@@ -17,6 +21,7 @@ return {
 	{"asteroid shower","HEFEOB","KEke",9,6,7,"5B4F46","FF8A3D","dozens of burning rocks falling across the sky","rumble","Bring a very, very big umbrella.","space,explosive,danger"},
 	{"asteroid turtle","AEEJAJ","GA",6,2,9,"57534E","22D3EE","giant turtle with an asteroid shell","rumble","Carries a tiny planet on its back.","cosmic"},
 	{"astral","FLCBKI","eY",5,7,2,"5C6BFF","E8E2FF","starfield-filled beam, nebula swirls","chime","Cosmic vibes, directly to the face.","magic,space"},
+	{"astral bull","AHDJNA","Qkf",7,4,6,"283468","F0C868","horned bull-warrior of starlight with a great axe","roar","Turn the key. Mind the axe.","anime,guild magic,summon,star"},
 	{"astral projection","KLCOVJ","AZY",3,6,2,"B3E5FC","E1BEE7","glowing see-through copy floating out","hum","Leave your body. Come back soon.","magic,psychic"},
 	{"astro whale","ALDJEJ","AF",5,3,6,"312E81","67E8F9","small starry whale with glowing spots","whale","Sings tiny cosmic songs.","alien,cosmic,cute"},
 	{"astromancy","FHCEOB","Ke",5,6,2,"FFF59D","311B92","constellation lines raining starlight","chime","Read the stars. Throw the stars.","space,magic"},
@@ -76,6 +81,7 @@ return {
 	{"aye-aye","AIBJBA","dTeb",2,7,2,"2A2420","E89A2A","huge eyes, bat ears, long bony finger","chatter","Taps trees with its spooky finger.","mammal,primate,spooky,nocturnal"},
 	{"azalea","NJCNMI","dFSM",2,1,3,"E91E63","2E7D32","bush smothered in pink blooms","rustle","A bush that is mostly flowers.","plant,flower"},
 	{"aztec warrior","LGCJNA","DZf",6,7,5,"F59E0B","15803D","jaguar pelt helm, obsidian club, feathered shield","roar","Fierce. Feathered. Fast.","warrior,ancient"},
+	{"azure collapse","KLCGKB","EHeN",8,4,3,"3F7BFF","0C1236","a dark point with a blue rim swallowing everything near it","hum","Come here. Everything. Now.","anime,magic,gravity"},
 	{"azure dragon","AFEKCB","Akeg",8,7,7,"1D4ED8","7DD3FC","long blue sky dragon, wind ribbons","roar","Guardian of the east. Always on time.","mythical,reptile,ancient"},
 	{"baba ganoush","IMBNGI","SNP",2,4,1,"C8B08A","5B2A5E","smoky eggplant dip","splat","Smoky, creamy, and fun to say.","edible,sauce"},
 	{"baba yaga","ALCJNB","jAMh",6,6,5,"57534E","DC2626","old witch flying in a mortar with a pestle","cackle","Lives in a chicken-legged house. Rent is weird.","witch,spooky"},
@@ -397,10 +403,4 @@ return {
 	{"bee knight","AJAJFB","ATM",2,9,1,"FACC15","111827","bee in a tiny helmet with a stinger lance","buzz","Buzzes. Jousts. Stings.","insect,warrior"},
 	{"bee-eater","AMAJDB","dA",1,7,1,"2AB06A","F2C82A","rainbow bird, curved beak","tweet","Eats bees. Removes stingers first.","bird,cute"},
 	{"beech tree","NGECMI","GWkS",4,1,8,"9E9E9E","7CB342","smooth grey trunk, wide crown","rustle","Smooth bark. Rough day for you.","plant,tree"},
-	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
-	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
-	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
-	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
-	{"beep","KDAFOB","d",1,10,1,"00E676","FFFFFF","tiny sound blips","beep","Beep beep! Coming through.","silly"},
-	{"beet","IEBAJK","FSe",3,6,4,"8E1F3F","C22A5A","round dark red root, leaves","crunch","Stains everything bright purple.","edible,vegetable,healthy"},
 }
