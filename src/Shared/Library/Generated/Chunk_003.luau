@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beetle knight","AKBJFA","GDk",3,4,7,"1E3A8A","15803D","armored beetle with horn lance","click","Built-in armor. Very shiny.","insect,warrior"},
+	{"beg","KMAOKI","c",1,3,1,"F8BBD0","FFFFFF","sparkly pleading hands","aww","Pleeeease? Pretty please?","cute,silly"},
 	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
 	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
@@ -401,6 +403,4 @@ return {
 	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
-	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
-	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
 }

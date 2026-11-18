@@ -256,6 +256,7 @@ return {
 	{"heart","BHBOKJ","UQFc",3,5,3,"E63946","FF8FA3","plump red heart thumping, pulse rings","beat","Ba-dum. Ba-dum. Ba-DOOM.","body,cute,support"},
 	{"heart tree","NIDCMI","GjS",4,1,8,"FFFFFF","C62828","white tree with red leaves and a face","chime","It sees everything. It remembers.","plant,magic,mythical,spooky"},
 	{"heartbeat","KHBFOB","F",2,6,1,"E53935","FFCDD2","red pulsing heart rings","thump","Ba-dum. Ba-dum. Still alive.","support"},
+	{"heartbeat sensor","ODBO1I","de",2,8,1,"2B3440","5CFF8A","handheld scanner pulse that outlines enemies","beep","Two blips. Upstairs. Very sneaky. Not anymore.","gaming,shooter,tech"},
 	{"heat","FACNOI","KSN",4,5,3,"FF8A3D","FFE2B8","wobbling heat haze dome, orange tint","hum","Everyone suddenly wants shorts.","fire"},
 	{"heat blast","FACFOB","Kk",5,8,1,"FF7043","FFF3E0","wave of shimmering hot air","whoosh","Like opening a very angry oven.","fire"},
 	{"heat death","HIFNOI","iNO",9,1,6,"1A1A2E","4A4E69","dim cold fading everything to grey","hush","The universe, out of batteries.","space,danger"},

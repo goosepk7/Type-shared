@@ -217,6 +217,7 @@ return {
 	{"pineapple ring","IMBAKK","Uke",3,7,2,"F6D54A","FDEB8C","flat yellow ring, center hole","whoosh","A fruit that wants to be a frisbee.","edible,fruit"},
 	{"pinecone","NGAAMI","UTe",1,6,3,"8D6E63","5D4037","scaly brown cone","rustle","Spiky little missile.","plant,tree"},
 	{"ping","KDBAKB","NOY",3,9,1,"EF4444","22C55E","red signal icon reading 999 ms, rubber-banding","beep","999 ms. That hit landed last Tuesday.","gaming,tech"},
+	{"ping marker","KHAOKJ","de",1,10,1,"FF2E63","FFE66D","a bright floating diamond over a tagged enemy","ding","Enemy spotted! Everybody, that one.","gaming,shooter,support"},
 	{"ping pong","KMAA3B","Uje",2,10,1,"F97316","FFFFFF","tiny orange ball rallying back and forth at a blur","tok","Tik tok tik tok tik tok tik SMASH.","sport"},
 	{"ping pong ball","BMAA3F","Ude",1,9,1,"F2F2EE","E8E2D4","tiny light white ball","bonk","Bounces everywhere. Hits nothing.","sport"},
 	{"ping pong paddle","BMAHJK","fa",1,8,3,"C0392B","24262A","round rubber paddle","bonk","Ping. Pong. Ping. Pong.","sport"},

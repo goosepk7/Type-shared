@@ -148,7 +148,7 @@ return {
 	{"zigzag","KFBOKB","DY",2,9,2,"FFEB3B","FFFFFF","jagged lightning-shaped motion trail","zip","Can't hit a zigzag.","speed"},
 	{"zing","KDAAKB","Te",2,10,1,"FFF59D","FFFFFF","quick bright streak","zing","Zing! Fast and sassy.","silly"},
 	{"zinnia","NGBNMI","dFS",2,1,2,"E91E63","FF9800","layered bright pompom bloom","rustle","Bright enough to sting your eyes.","plant,flower"},
-	{"zip line","DFCKHB","DkgY",3,9,2,"455A64","FF7043","taut cable with a pulley handle","zip","Wheeeee! Into the battle!","mechanical,vehicle,land,sport"},
+	{"zipline","OFCOHB","Dg",2,10,1,"455A64","FF7043","fire a cable to a point and zip along it on a pulley","zip","Wheeeee! Into the battle!","gaming,shooter,mechanical,sport"},
 	{"zipper","BKBBCD","TNV",3,8,3,"C0C7CE","1F2937","line of metal teeth zipping the ground shut","zip","Zip it. Literally.","clothing,sharp"},
 	{"zit","BJALKI","dEN",2,1,1,"E57373","FFF3B0","red bump with a yellow top, ready to pop","pop","Do not pop it. DO NOT. Oh no.","body,silly,gross"},
 	{"ziz","AFFJDB","Akl",8,6,7,"1E40AF","E0F2FE","bird so large its wings block the sun","screech","Its wings cause eclipses.","mythical,bird"},

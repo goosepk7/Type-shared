@@ -352,7 +352,7 @@ return {
 	{"smoke launcher","OFCMxI","jZP",2,4,5,"8E9196","6B7B3A","stubby tube puffing smoke","clank","Now nobody can see. Hide!","defense,mechanical"},
 	{"smoke pellet","CMADJI","jZ",1,9,1,"8E9196","F2F2EE","tiny pellet bursting with smoke","bang","Bye!","spy,ninja"},
 	{"smoke ring","FABAKJ","jO",2,6,1,"9E9E9E","ECEFF1","floating ring of grey smoke","puff","Fancy smoke. Very confusing.","silly"},
-	{"smoke screen","FACDOJ","jZS",1,5,2,"757575","BDBDBD","thick grey wall of smoke","puff","Ninja exit, activated.","stealth"},
+	{"smoke screen","FFCDOJ","jZS",1,5,2,"AEBBD0","E6EEF8","a thick pale grey-blue smoke dome that hides everyone inside","puff","Ninja exit, activated.","gaming,shooter,stealth"},
 	{"smoke screen generator","OFCD1I","jZS",2,1,4,"8E9196","F2F2EE","canister belching thick smoke","thud","Can't see a thing.","defense"},
 	{"smoke tree","NGCCMI","GWZkS",2,1,5,"6D4C41","B39DDB","fluffy purple plumes like smoke","rustle","Looks like it is on fire. It is not.","plant,tree"},
 	{"smoked salmon","IGBOKI","F",2,5,3,"E8603A","F2C8B8","thin glossy orange slices","crunch","Silky pink ribbons.","edible,healthy"},

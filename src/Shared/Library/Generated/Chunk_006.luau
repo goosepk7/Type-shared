@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"climbing harness","BMBONF","l",1,5,3,"C0392B","24262A","webbing harness with buckles","bonk","Hang on tight.","sport"},
+	{"climbing rope","BMCLKF","lH",1,4,4,"E67E22","1F2F55","coiled bright climbing rope","bonk","Up we go.","sport"},
 	{"climbing wall","EMCCII","GlS",2,1,6,"7E57C2","FFB300","wall dotted with colourful holds","thud","Up you go. Enemies can not.","structure,sport"},
 	{"cling wrap","BMBL2I","NO",1,4,1,"BFE6F2","F2F2EE","stretchy clear plastic sheet","clang","Wrapped up tight.","sticky"},
 	{"clipboard","BMBIyK","G",1,6,3,"C49A6C","C9CED4","board with metal clip","tap","Looks busy. Is busy.","office"},
