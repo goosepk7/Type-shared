@@ -374,7 +374,7 @@ return {
 	{"skeleton ship","DIEMHC","eghB",7,5,6,"EFEBE9","263238","galleon built from giant ribs","rattle","Crewed entirely by bones. Rattles loudly.","spooky,undead"},
 	{"skeleton warrior","AICJNA","GfV",5,5,5,"F5F5F4","57534E","skeleton in rusty armor with shield","rattle","Reassembles after every hit.","undead"},
 	{"sketchbook","BLBOyE","Gjh",3,4,3,"111827","F5F5F0","spiral pad whose doodles peel off the page and walk","scratch","Page one: dragon. Page two: better dragon.","art,school"},
-	{"ski jump","MCENII","klS",3,1,6,"F5F5F5","1565C0","steep ramp curving up into the air","crowd","Launches you sky high.","place,sport"},
+	{"ski jump","BCCOIB","DlN",4,9,2,"F4F8FC","1E6FD0","snow ramp launching a skier into a powder landing","whoosh","Send it.","sport,ski,mobility,ice"},
 	{"ski lift","DCCKHJ","lg",2,3,4,"1565C0","B0BEC5","row of chairs hanging from a cable","engine","Up the mountain, legs dangling.","mechanical,vehicle,land"},
 	{"ski patrol","LCCJNL","DJF",3,8,5,"DC2626","F8FAFC","red jacket with cross, skis","whoosh","Zooms to the rescue downhill.","rescue,frozen"},
 	{"ski pole","BMBAJI","fT",1,7,3,"C9CED4","24262A","thin pole with little basket tip","bonk","Pokes snow. Pokes foes.","sport,winter"},

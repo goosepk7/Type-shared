@@ -158,6 +158,7 @@ return {
 	{"bulletproof vest","BMCONI","G",1,6,7,"1F2F55","24262A","padded vest with plates","clank","Pew-proof.","modern,defense"},
 	{"bullfinch","AMAJDB","dA",1,7,1,"E8501E","1E1E1E","chunky red-chested finch","tweet","Chunky and rosy.","bird,cute"},
 	{"bullfrog","AMBJAG","Ue",2,5,1,"4A6A2A","C8C07A","huge green frog, round eardrums","boom","Booms like a tiny bass drum.","amphibian,wetland"},
+	{"bullseye","BMBAvB","kTe",5,10,1,"F2C230","C0392B","recurve bow and a ringed target face on the foe","whoosh","Hold still. Thank you.","sport,archery,projectile"},
 	{"bully","LMCJNA","fI",3,5,4,"57534E","DC2626","beanie, ripped jeans, sneer","grunt","Takes lunch money. Gets karma.","school"},
 	{"bumblebee","AJAJLB","UATP",1,7,1,"F2C82A","1E1E1E","round fuzzy striped bee","buzz","Too round to fly. Flies anyway.","insect,swarm,venomous"},
 	{"bump","BEBLnI","klO",3,1,7,"FACC15","111827","yellow-and-black striped road hump","thud","Slow down. Too late. Coffee everywhere.","trap,vehicle"},

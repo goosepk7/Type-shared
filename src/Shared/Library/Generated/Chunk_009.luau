@@ -246,6 +246,7 @@ return {
 	{"fight cloud","KMCNOK","Dkf",4,6,2,"F3EBDD","FFD54F","a rolling dust ball of fists, boots and stars","bonk","Nobody knows who's winning.","cartoon,silly,melee"},
 	{"fighter squadron","DFFELB","EAeP",8,9,6,"607D8B","37474F","wing of jets in tight formation","jet","Here comes the whole squadron.","vehicle,air"},
 	{"figure skater","LCCJNK","jJY",3,8,3,"F9A8D4","BAE6FD","sparkly outfit, mid-spin on ice","whoosh","Spins so fast it freezes the air.","sport,frozen"},
+	{"figure spin","KCCN5K","kHI",4,7,2,"BFE8FF","FFFFFF","skater spinning on an ice disc in a whirl of frost","whoosh","Land the triple axel.","sport,skating,melee,ice"},
 	{"file","JKAHJK","fN",1,5,5,"8E9196","24262A","rough flat bar, ridged face","clank","Scritch scratch. Smooth.","tool"},
 	{"filefish","ABAJEC","dB",1,6,1,"8A9A6A","C8D0A0","flat leathery fish","splash","Looks like sandpaper.","fish,aquatic"},
 	{"filing cabinet","BKCCII","Gk",2,1,8,"8E9196","4A4D52","metal drawers on top of drawers","thud","Paperwork armour.","office"},

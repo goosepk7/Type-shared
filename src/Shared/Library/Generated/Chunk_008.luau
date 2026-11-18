@@ -38,6 +38,7 @@ return {
 	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
 	{"dodge","KFBOKB","ZY",2,10,2,"E1F5FE","FFFFFF","blurry afterimage sidestep","whoosh","Missed me!","speed"},
 	{"dodgeball","BMBG3F","UkeO",2,8,2,"C0392B","C0392B","rubbery red playground ball","bonk","If you can dodge a wrench...","sport"},
+	{"dodgeball barrage","BMBA3K","keV",5,9,1,"D93A2B","F2EEE6","fan of grippy red rubber balls thrown at once","boing","Everybody out!","sport,dodgeball,projectile"},
 	{"dodgeball kid","LMBJNA","dke",3,7,2,"DC2626","F8FAFC","tiny kid with a huge red ball","boing","Small arms. Huge throws.","school,silly,sport"},
 	{"dodo","AMCJDA","dkf",2,2,5,"8A8A8E","F2E8C8","plump grey bird, hooked beak, tuft tail","boom","Extinct. Still waddling in our hearts.","bird,flightless,extinct,silly"},
 	{"doedicurus","AMDJAA","GDkO",7,4,10,"6A5A44","B8A07A","armored dome, spiked mace tail","roar","Armadillo with a medieval mace.","mammal,extinct,ancient,heavy"},

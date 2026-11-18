@@ -202,6 +202,7 @@ return {
 	{"vole","AMAJAA","Cdb",1,6,1,"7A6250","C8B49E","stubby tail, round body","squeak","Mouse with a smaller tail.","mammal,cute"},
 	{"volleyball","BMBG3F","Uke",2,7,3,"F2F2EE","2F6FD1","panelled white and blue ball","bonk","Bump, set, SPIKE.","sport"},
 	{"volleyball player","LMCJNG","Uke",4,7,4,"F8FAFC","FACC15","kneepads, spike pose","thud","Spikes the ball. Into your face.","sport"},
+	{"volleyball spike","BMBA3K","Eke",5,10,1,"F8E9B0","1F5FBF","panelled ball set high and spiked down hard","thump","Set... and SPIKE.","sport,volleyball,projectile"},
 	{"volt","FDBAKB","eL",3,9,1,"FFE81F","4DA3FF","bright yellow electric pip","zap","One unit of ouch.","electric"},
 	{"volt edge","KDBOKI","DfLO",8,10,2,"9FD8FF","FFFFFF","a screeching fist of lightning that charges through","zap","Sounds like a thousand birds. Hurts like more.","anime,ninja,lightning"},
 	{"volume","KFCF6B","jkIO",5,8,1,"EF4444","FACC15","speaker cone blasting bars that go into the red","boom","TURNED UP. WHAT? I SAID TURNED UP.","music,loud"},

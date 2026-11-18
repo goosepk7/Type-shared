@@ -398,6 +398,7 @@ return {
 	{"boxer dog","AMCJAA","DQkf",4,7,4,"C27A3A","F2EEE6","square jaw, muscular, paws up pose","bark","Punches the air when happy.","mammal,pet"},
 	{"boxfish","ABAJEC","GdMB",1,6,1,"F2D82A","1E1E1E","cube-shaped yellow fish","splash","A swimming box with polka dots.","fish,aquatic,silly"},
 	{"boxing","KMCONA","DkfO",5,8,4,"DC2626","F8FAFC","pair of red gloves throwing a one-two, bell ringing","bell","Ding ding. Gloves up. Chin down.","sport,melee"},
+	{"boxing combo","BMBHJI","klf",4,9,1,"C62828","F5F5F0","pair of padded red gloves throwing a jab-cross-uppercut","thump","Jab, cross... uppercut.","sport,boxing,melee"},
 	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
 	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
 	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
