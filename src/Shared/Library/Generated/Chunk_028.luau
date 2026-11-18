@@ -248,6 +248,7 @@ return {
 	{"watermill","EBDCIK","GSI",3,1,7,"8D6E63","1E88E5","stone mill with a big turning wheel","splash","Splish, splash, grind.","structure,building"},
 	{"waterzooi","IBBOGI","FS",3,4,3,"F2E8C8","7DBE3A","creamy chicken stew","slurp","A creamy Belgian stew.","edible,warm,healthy"},
 	{"wave","FBDF6F","kI",5,6,3,"1E88E5","BBDEFB","curling blue wave with white crest","splash","Wave hello. Wave goodbye.","aquatic"},
+	{"wave rider","KBCO6C","DI",3,9,2,"2AA7D8","F4FBFF","you ride a curling wave forward on a board","splash","Paddle out. Drop in. Run them over.","sport,surf,mobility,water"},
 	{"wax","FABNGI","KSN",2,2,3,"FDE68A","F97316","dribbling warm yellow wax pooling and hardening","sizzle","Mind your own. Beeswax, that is.","household,sticky"},
 	{"waxwing","AMAJDB","dA",1,7,1,"C8A07A","F2D82A","sleek crest, black mask","tweet","Wears a mask and a crest. Cool.","bird,cute"},
 	{"waxy monkey frog","AMAJAA","Ue",1,5,1,"6AC84A","F2F2EE","walks instead of hops","croak","Rubs on wax sunscreen. Walks.","amphibian,wetland"},

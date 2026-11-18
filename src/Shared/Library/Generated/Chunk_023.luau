@@ -303,6 +303,7 @@ return {
 	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
 	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
 	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
+	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
 	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
 	{"sky island","MFENIJ","lS",4,1,7,"8BC34A","E3F2FD","grassy rock floating in the sky","rumble","No roads. Just a long way down.","place,terrain,magic"},
 	{"sky pirate","LFCJNB","Aeb",5,7,4,"7F1D1D","60A5FA","pirate with goggles on an airship","arr","Pirates, but higher.","pirate,flying"},

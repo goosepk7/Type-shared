@@ -34,7 +34,7 @@ return {
 	{"holy unicorn","AHDKAB","AFTg",7,8,6,"F8FAFC","FDE047","radiant unicorn with feathered wings","chime","Heals with a touch. Pokes with a horn.","holy,mount"},
 	{"holy water","FHBEOJ","Fe",4,5,1,"BDE7FF","FFF6CC","glowing droplets with soft gold sparkle","chime","Splash of goodness. Undead hate it.","holy,aquatic"},
 	{"home fries","IMAELB","eVP",2,7,1,"D9A04A","E8C070","cubed crispy potatoes","pitter","Potatoes, crispy at home.","edible,breakfast"},
-	{"home run","KFCA3B","kle",6,9,2,"FFFFFF","DC2626","baseball with red stitching sailing over a fence into orbit","crack","Going, going, gone. So is the window.","sport"},
+	{"home run swing","CFCHJK","kf",6,7,2,"E3B776","F7D06A","a glowing bat swung through a wide arc","crack","Going, going, gone.","sport,baseball,melee"},
 	{"homework","BMCLGI","iWSN",4,1,4,"FFFFFF","2563EB","towering paper stack with a red F and a chewed pencil","rustle","The dog refuses to eat this much.","school,silly"},
 	{"homing missile","CACAkB","EQe",7,8,3,"F2F2EE","E67E22","missile with glowing seeker eye","boom","It knows where you live.","explosive"},
 	{"homing pigeon","AMAJDB","dAQ",1,7,1,"8A8E98","6AB09A","pigeon with message tube","tweet","Delivers mail. No stamps.","bird,cute"},

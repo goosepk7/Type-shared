@@ -173,6 +173,7 @@ return {
 	{"kebab","IABHJI","KfT",3,5,4,"C8602B","7DBE3A","meat and peppers on a skewer","bonk","A spear of grilled meat and veg.","edible,silly"},
 	{"kedgeree","IMAELB","eNP",2,6,1,"F2D23A","F7F2E0","yellow rice, egg, fish","pitter","Breakfast rice with a twist.","edible,grain"},
 	{"keep","EEECII","GSe",5,1,10,"8D8D8D","5D5D5D","tall square stone tower, small windows","thud","The last place to run. And the safest.","structure,defense,ancient"},
+	{"keeper wall","KMCCnI","Gka",5,6,6,"38C7B4","F4F1E6","padded keeper gloves and a glowing goal net","thud","Nothing gets past. Then it goes back.","sport,shield,defense"},
 	{"kefir","IBBOKI","F",2,6,2,"F7F4EC","F2EAD5","bottle of fizzy yogurt drink","slurp","Yogurt that learned to fizz.","edible,drink,dairy"},
 	{"kek","KMBF6B","jPO",2,7,1,"84CC16","FDE047","wheezing laugh lines with a slapped knee","cackle","Kek. An ancient laugh from the old servers.","meme,internet"},
 	{"kelewele","IABAKK","KeP",3,7,2,"E8762B","D9A04A","spicy fried plantain cubes","sizzle","Fiery plantain bites.","edible,spicy,flammable"},

@@ -104,7 +104,6 @@ return {
 	{"fossa","AMCJAA","ZfT",4,7,3,"A06A3A","D8B48A","sleek cougar-like, long tail","hiss","Madagascar's top predator. Cat-ish.","mammal,predator,wild"},
 	{"fossegrim","ABCJNC","jcB",3,5,4,"1E40AF","FDE68A","fiddler sitting in a waterfall","violin","Plays violin in a waterfall. Never tunes.","mythical,music,aquatic"},
 	{"fossil","BEBCII","G",2,4,4,"C8B898","8A7A5A","rocky skeleton imprint","growl","Old bones with stories.","extinct,ancient"},
-	{"foul","KMBAJB","IXO",3,8,1,"DC2626","FACC15","referee hand holding up a bright red card, whistle blast","whistle","REF! Are you blind? Yes. Yes he is.","sport"},
 	{"fountain","EBCNII","FSI",2,1,6,"BDBDBD","4FC3F7","tiered stone basin spraying water","splash","Splash zone. Also healing zone.","structure,building"},
 	{"fountain of youth","EBCNII","FS",2,1,7,"F5F5F5","80DEEA","marble fountain with glowing water","thud","Sip once. Feel brand new.","magic,mythical"},
 	{"four leaf clover charm","BGAOJI","F",1,5,2,"2E8B57","D4A72C","clover pendant","chime","Luck: maxed.","magic,fantasy"},

@@ -190,7 +190,6 @@ return {
 	{"dung beetle","AMAJFA","GkfI",1,3,4,"1E1E24","3A3A8A","beetle rolling a ball","click","Navigates by the Milky Way. With poop.","insect,armored,ancient"},
 	{"dungeon","MIELII","GSNO",4,1,10,"424242","FF6F00","dark stone cells, chains, torches","clang","Welcome to your new room.","place,terrain,spooky"},
 	{"dungeon crawler","LMCJNA","cf",4,5,5,"57534E","F97316","torch, sword, backpack of loot","clang","Every room has loot. Or a trap.","explorer,gaming"},
-	{"dunk","KMCL3B","UkO",6,7,2,"F97316","FFFFFF","basketball slammed down through a hoop, backboard shaking","crowd","Posterised. Frame it.","sport"},
 	{"dunkleosteus","ABEJEC","DfTOB",8,8,8,"5A6A6A","C8C0A8","armored head, bone blade jaws","chomp","Armored fish with a guillotine mouth.","fish,aquatic,ocean,predator,extinct,ancient"},
 	{"dunnart","AMAJAA","Uf",1,6,2,"8A8A8E","C8C8C8","tiny mouse-like marsupial","chirp","Tiny but a fierce hunter.","mammal,marsupial"},
 	{"duo","LHCJNA","QFfh",5,6,5,"3B82F6","EF4444","two back-to-back heroes, one red one blue, fist bump","yay","Player two has entered the game.","gaming,team"},
