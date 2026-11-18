@@ -711,7 +711,8 @@ local function buildJelly(B: any, ctx: any, id: string, hint: string)
 	end
 	local bell
 	if box then
-		bell = B:block(2.6, 2.3, 2.6, at(c[1], c[2], c[3]), { col = "primary", mat = mat, tr = tr, pri = 1, role = "body", name = "Bell" })
+		bell = B:block(2.5, 2.6, 2.5, at(c[1], c[2] + 0.15, c[3]), { col = "primary", mat = mat, tr = 0.4, pri = 1, role = "body", name = "Bell" })
+		B:ell(1.5, 1.2, 1.5, at(0, H + 0.35, 0.2), { col = "secondary", mat = "skin", pri = 1.9, role = "detail", name = "Stomach", noCore = true })
 		r = { 1.3, 1.15, 1.3 }
 	elseif egg then
 		r = { 1.7, 0.6, 1.7 }
@@ -762,7 +763,7 @@ local function buildJelly(B: any, ctx: any, id: string, hint: string)
 	if lion then
 		n += 2
 	end
-	local segs = if detail >= 2 then 2 else 1
+	local segs = if detail >= 2 or (box and detail >= 1) then 2 else 1
 	if not cass then
 		local rimY = H - (if egg then 0.3 elseif box then 1.05 else 0.45)
 		for i = 1, n do
@@ -771,11 +772,12 @@ local function buildJelly(B: any, ctx: any, id: string, hint: string)
 			if box then
 				local corner = (i - 1) % 4
 				a = rad(45 + corner * 90) + (math.floor((i - 1) / 4) - 0.5) * 0.25
-				rr = 1.55
+				rr = 1.12
 			end
 			local p0 = { sin(a) * rr, rimY, -cos(a) * rr }
-			local p1 = { sin(a) * rr * 1.25, if egg then H - 1.8 else 0.15 + (i % 3) * 0.25, -cos(a) * rr * 1.25 + 0.4 }
-			tentacle(B, i, p0, p1, if lion then 0.32 else 0.15, segs, { col = if robot then "rubber" elseif lion then "secondary" else "primary", mat = if robot then "rubber" else "skin", tr = if robot then nil else 0.15, pri = 1.7 + i * 0.03, curl = 0.3 })
+			local spread = if box then 1.05 else 1.25
+			local p1 = { sin(a) * rr * spread, if egg then H - 1.8 else 0.15 + (i % 3) * 0.25, -cos(a) * rr * spread + (if box then 0.25 else 0.4) }
+			tentacle(B, i, p0, p1, if lion then 0.32 else 0.15, segs, { col = if robot then "rubber" elseif lion then "secondary" else "primary", mat = if robot then "rubber" else "skin", tr = if robot then nil else 0.15, pri = 1.7 + i * 0.03, curl = if box then 0.55 else 0.3 })
 		end
 	end
 	-- oral arms: ruffled ribbons from the centre (blooming upward on the cassiopea)
@@ -784,7 +786,11 @@ local function buildJelly(B: any, ctx: any, id: string, hint: string)
 		for i = 1, m do
 			local a = rad(45 + i * 360 / m)
 			if cass then
-				B:ell(0.9, 0.7, 0.9, at(sin(a) * 0.7, H + 0.62, -cos(a) * 0.7), { col = "secondary", mat = "leaf", pri = 1.4 + i * 0.1, role = "detail", name = "Bloom" .. i })
+				-- frilly feeding clumps: a lobed rosette per arm, in a seaweed tint
+				B:ell(0.75, 0.42, 0.75, at(sin(a) * 0.72, H + 0.5, -cos(a) * 0.72, 0, a, rad(12)), { col = { 0.42, 0.56, 0.42 }, mat = "leaf", pri = 1.4 + i * 0.1, role = "detail", name = "Bloom" .. i })
+				if detail >= 2 then
+					B:ell(0.5, 0.36, 0.5, at(sin(a + 0.6) * 0.95, H + 0.62, -cos(a + 0.6) * 0.95, rad(10), a, 0), { col = "secondary", mat = "leaf", pri = 2.4 + i * 0.1, role = "detail", name = "Frond" .. i })
+				end
 			else
 				local len = if egg then 1.6 else 2.3
 				B:limb({ sin(a) * 0.35, H - 0.4, -cos(a) * 0.35 + 0.1 }, { sin(a) * 0.65, H - 0.4 - len, -cos(a) * 0.65 + 0.3 }, 0.5, { col = if egg then "inner" else "secondary", mat = "skin", tr = 0.1, pri = 1.6 + i * 0.1, role = "tentacle", name = "OralArm" .. i, depth = 0.2 }, 0.15)
