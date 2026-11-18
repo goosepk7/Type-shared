@@ -227,7 +227,7 @@ return {
 	{"rocket launcher","CKDAwI","Eke",8,5,4,"6B7B3A","24262A","shoulder tube with rocket","boom","Shoulder-mounted problem solver.","explosive,ranged"},
 	{"rocket launcher truck","DADMHL","EegP",8,4,8,"556B2F","E53935","truck with rack of rocket tubes","boom","Ripple fire! Everybody duck!","mechanical,vehicle,land,explosive"},
 	{"rocket pack","DABKHB","KDAg",4,8,3,"9E9E9E","FF6F00","twin rocket tanks on a backpack","roar","Strap on. Blast off. Hope.","vehicle,air,future"},
-	{"rocket skates","DABOHF","KDk",5,10,2,"E53935","FF9F1C","roller skates with a rocket strapped to each heel","roar","Zero to way too much.","cartoon,silly,movement"},
+	{"rocket skates","BABOHF","KDk",5,10,2,"E53935","FF9F1C","roller skates with a rocket strapped to each heel","roar","Zero to way too much.","cartoon,silly,movement"},
 	{"rocket sled","DABKHL","KDkg",4,10,2,"E53935","FF6F00","small platform strapped to a rocket","roar","Zero to way too much.","vehicle,air,silly"},
 	{"rocket turret","OADMwI","EQe",7,5,6,"6B7B3A","F2F2EE","box launcher of rockets","hum","Fire and forget. Mostly fire.","defense,explosive"},
 	{"rockhopper penguin","ACBJDG","UDB",2,5,3,"1E1E24","F2D82A","yellow eyebrow plumes, hopping","squawk","Bad hair day every day. Hops anyway.","bird,arctic,cute"},
