@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nightmare unicorn","AIDKAA","DiTg",7,8,6,"1F1F1F","9333EA","black unicorn with purple horn and flame mane","neigh","Glitter, but goth.","spooky"},
+	{"nightshade","NJBNMI","ScM",4,1,2,"4A148C","212121","dark purple bells and black berries","rustle","Do not eat the berries. Seriously.","plant,flower,spooky"},
+	{"nightstand","BMBC0I","G",1,1,5,"8B5A2B","B58A3A","small table with a drawer","thud","Holds your lamp. Holds the line.","furniture,household"},
 	{"nigiri","IMAELB","ce",2,7,1,"F7F4EC","E8603A","oval rice with fish on top","pitter","A rice bed with a fishy blanket.","edible"},
 	{"nile crocodile","ABDJAC","fHOB",8,5,8,"5A6A3A","C8C08A","huge croc with yellow belly","snap","Rules the Nile. Ambush pro.","reptile,predator,aquatic"},
 	{"nile monitor","AMCJAA","CfbB",4,7,2,"3A3A2A","E8D82A","spotted swimming monitor","hiss","Swims, climbs, steals eggs.","reptile"},
@@ -400,7 +403,4 @@ return {
 	{"pastelito","IMBLKI","dSc",2,3,3,"D9A04A","F2E8C8","flaky filled pastry","chomp","Flaky, sweet, Cuban.","edible,sweet"},
 	{"pastilla","IMBAKK","Uke",3,7,2,"D9A04A","F7F7F7","round pie with sugar crust","whoosh","Sweet and savory in one pie.","edible"},
 	{"pastrami","IGBOKI","F",2,5,3,"8A2E2E","3A1E1E","peppered dark meat slices","crunch","Peppery, smoky, stacked.","edible,healthy"},
-	{"pastry","IMBA7B","UFc",2,5,1,"E0A84A","F6D48A","flaky golden swirl with icing and a jam centre","crunch","Flaky. Like your teammate.","edible,sweet,breakfast"},
-	{"pasty","IMBAKF","Fe",3,6,2,"D9A04A","C8904A","crimped half-moon pie","splat","A miner's lunch with a crimped handle.","edible"},
-	{"pat","KHAOKJ","F",1,5,1,"FFF59D","FFFFFF","gentle hand with sparkles","pat","Good job. Here, a pat.","cute,support"},
 }

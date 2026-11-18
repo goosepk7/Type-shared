@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"griffin egg","AFALGI","Gh",1,1,5,"D6A35A","F8FAFC","speckled golden egg in a nest","crack","Hatches a very loud baby.","mythical"},
+	{"griffin king","AFEKAB","Akgh",8,8,7,"78350F","FACC15","huge golden griffin with crowned crest","screech","Lord of the skies. Dramatic landings.","mythical,mount,royal"},
+	{"griffon vulture","AMCJDB","DiAfT",4,9,3,"C8A07A","F2E8D8","pale vulture with fluffy collar","screech","Fluffy scarf. Grim job.","bird,predator"},
 	{"grill","BACMII","KSc",3,1,6,"24262A","FF6A1A","round kettle grill on legs","clang","Sizzle. Smoke. Summer.","summer"},
 	{"grill master","LACJNA","Kce",4,4,5,"DC2626","111827","apron, tongs, smoking grill","sizzle","Smoke signals. Delicious ones.","food,fire"},
 	{"grilled cheese","IGBOKI","Fc",2,5,3,"E0A040","F2C24A","golden toasted sandwich, cheese ooze","crunch","Gooey cheese between crispy armour.","edible,healthy"},
@@ -400,7 +403,4 @@ return {
 	{"holy meteor","HHDAKB","KEFe",8,8,5,"FFD54F","FFFFFF","glowing golden rock with angelic trail","choir","Heaven threw a rock.","holy,space,explosive"},
 	{"holy nova","FHDFOI","KFP",5,7,2,"FFF59D","FFFFFF","golden ring of light pulsing outward","chime","Hugs friends. Burns foes.","holy"},
 	{"holy prison","KHCLII","GO",6,4,6,"FFF59D","FFFFFF","cage of golden light bars","chime","Glowing time-out.","holy"},
-	{"holy shield","KHCIKI","GFa",3,4,8,"FFE082","FFFFFF","golden glowing dome, wing-shaped edges","chime","Protected by pure good vibes.","holy,defence"},
-	{"holy shrine","EHCNII","FSO",3,1,8,"FFF8E1","FFD54F","marble shrine glowing gold","thud","Heals the faithful. Blinds the wicked.","structure,holy"},
-	{"holy slash","FHCHJB","KfT",6,9,1,"FFF59D","FFFFFF","glowing golden arc","shing","A righteous swipe.","holy,sharp"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carpenter","LGCJNA","Ge",3,4,5,"A16207","78350F","tool belt, pencil behind ear, hammer","thud","Measures twice. Bonks once.","tools"},
 	{"carpenter ant","AMAJLA","CfP",1,5,1,"1E1E1E","6A3A1E","large black ant","skitter","Remodels your house. Uninvited.","insect,swarm"},
 	{"carpenter bee","AJAJLB","CATMP",2,7,1,"1E1E24","F2D82A","big shiny black bee","buzz","Drills holes in your porch.","insect,swarm,venomous"},
 	{"carriage pumpkin","DLDKHL","DkgY",4,5,5,"F57C00","E1F5FE","giant pumpkin coach on curly gold wheels","engine","Turns back at midnight. Hurry.","mythical,royal"},
@@ -402,5 +403,4 @@ return {
 	{"cliff","MEECII","GkS",4,1,10,"8D6E63","9E9E9E","sheer rock wall with a ledge","rumble","One step too far. Byeee.","place,terrain"},
 	{"cliffside","MEENII","kS",4,1,9,"8D6E63","7CB342","grassy edge above a sheer drop","rumble","One step back. No, the other way.","place,terrain"},
 	{"climate","KFENOI","KJSP",6,1,5,"F97316","38BDF8","half scorching sun, half blizzard swirling together","howl","Hot. Cold. Hot. Make up your mind.","weather,science"},
-	{"climb","KMBOKG","l",2,5,3,"8D6E63","FFFFFF","grip marks up a surface","scrape","Up we go.","sport"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toucan","AMBJDB","jdAf",2,6,2,"1E1E1E","F2A01E","black bird, gigantic rainbow beak","squawk","Beak is 30% of its body.","bird,jungle,silly"},
+	{"touch grass","KGBOKJ","F",1,4,3,"66BB6A","FFF59D","grass sprouting under caster's feet","rustle","Fresh air. Feel better.","meme,plant,support"},
+	{"touch me not plant","NGANMI","ZS",1,1,2,"7CB342","F48FB1","feathery leaves that fold when touched","rustle","Touch it. It hides. Rude.","plant,flower,cute"},
 	{"touchdown","KECL3B","EkO",5,7,2,"92400E","FFFFFF","brown oval ball spiked into turf, arms raised","crowd","Spike it. Dance. Flag for excessive joy.","sport"},
 	{"tour bus","DMDKHL","Dkgh",4,5,7,"E53935","FFEB3B","open-top double decker for tourists","engine","And on your left: your defeat.","mechanical,vehicle,land"},
 	{"tour guide","LMCJNA","ch",3,5,4,"F97316","F8FAFC","tiny flag on a stick, megaphone","ding","Follow the flag. Everyone does.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"villain","LICJNA","jfh",5,5,5,"111827","DC2626","twirly moustache, black top hat, cape","cackle","Ties things to tracks. Classic.","villain"},
 	{"vindaloo","IABNGI","KSP",6,4,2,"B0302B","E8602B","deep red fiery curry","sizzle","Only the brave finish this.","edible,spicy"},
 	{"vine","NGCLMI","WSHN",3,2,4,"2E7D32","66BB6A","twisting green tendrils with leaves","rustle","Grabs ankles. Never apologises.","plant"},
-	{"vine horror","AGDJMA","MHN",6,4,6,"14532D","84CC16","walking tangle of thorned vines","creak","Gardening's revenge.","plant,spooky"},
-	{"vine serpent","AGCJCD","WMH",5,5,4,"15803D","84CC16","snake made of braided thorny vines","rustle","Grows longer every second.","plant,reptile"},
-	{"vine snake","AGCJCD","ZfMN",4,6,3,"6AC84A","C8E87A","thin vine-like green snake","hiss","Basically a stick of spaghetti.","reptile,venomous"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow pillar","FIDBKI","iO",7,6,1,"1A0033","AA00FF","black column with violet sparks","hum","Darkness, straight down.","spooky"},
+	{"shadow prison","KICLII","iO",6,4,5,"1A0033","7C4DFF","cage of writhing black smoke","hiss","Dark corner. Forever.","spooky"},
+	{"shadow punch","KICAKB","ikf",6,9,2,"1A0033","9C27B0","smoky black fist from nowhere","pow","Didn't see it. Felt it.","spooky,melee"},
 	{"shadow puppet","FIBJVA","jd",2,5,1,"212121","FFE082","shadow-animal shape on the ground that moves","hiss","A shadow dog. It barks. Kind of.","spooky,silly"},
 	{"shadow rain","GIDEOJ","iZP",6,5,2,"1A0033","7E57C2","black droplets that fade into smoke","hiss","The gloomiest weather possible.","spooky,storm"},
 	{"shadow raven","AIBJDB","jAZ",3,9,2,"0F0F23","A78BFA","inky raven with violet eyes","caw","Caws once. Lights go out.","spooky,bird"},
@@ -400,7 +403,4 @@ return {
 	{"snow","GCCEOJ","JSN",2,3,2,"FFFFFF","D6E6F2","soft falling flakes, white ground","hush","Pretty. Cold. Fun for exactly ten minutes.","frozen"},
 	{"snow angel","ACCJNB","AJFN",4,5,3,"F8FAFC","BAE6FD","angel-shaped snow outline rising up with powdery wings","chime","Lie down. Flap. Freeze. Art.","frozen,cute,holiday"},
 	{"snow cannon","OCCExI","JNP",3,3,5,"F2F2EE","2F6FD1","cannon fan blasting snow","whoosh","Instant winter. No waiting.","frozen"},
-	{"snow cloud","FCCDOJ","QJN",4,4,3,"ECEFF1","B3E5FC","fluffy cloud snowing on target","hush","Your own little winter.","frozen"},
-	{"snow cone","ICBNGI","JNP",3,3,2,"4FA3E8","E8434F","paper cone of rainbow ice","crackle","A cone of syrupy snow.","edible,frozen,sweet"},
-	{"snow dance","KCCEOJ","JN",3,4,2,"FFFFFF","B3E5FC","caster twirling as snow falls","music","Do the dance. Get a snow day.","music,frozen"},
 }

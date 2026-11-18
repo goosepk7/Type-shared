@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rubble","FECLII","GN",3,2,6,"8D6E63","BCAAA4","pile of broken rocks and dust","crunch","Watch your step. All the steps.","heavy"},
+	{"rubik's cube","BMALKI","jO",2,3,4,"C0392B","F1C40F","coloured cube of little squares","squeak","Solve me. You can't.","toy"},
+	{"ruby","BAAA4J","Kce",3,7,7,"B0103A","9E1B32","deep red cut gem","chime","Glows warm, hits hot.","treasure,shiny"},
 	{"rug","BMCLGI","NO",1,1,3,"9E1B32","D4A72C","patterned rectangular rug","thud","Pull it out from under them.","furniture,household"},
 	{"rugby","KEDFLA","DkfI",6,6,6,"15803D","FFFFFF","eight muddy players locked together shoving forward","grunt","No pads. No helmet. No worries.","sport"},
 	{"rugby ball","BMBA3F","Uke",2,8,4,"F2F2EE","7A4E2D","chunky oval ball","bonk","Tackle optional. Bonk mandatory.","sport"},
@@ -400,7 +403,4 @@ return {
 	{"shadow oak","NIECMI","GiZS",5,1,8,"212121","4A148C","black oak oozing purple mist","chime","Darkness grows on it.","plant,magic,mythical,spooky"},
 	{"shadow orb","FICGKE","iR",5,5,2,"1A0033","AA00FF","swirling black sphere with violet sparks","hiss","Hungry little ball of night.","spooky"},
 	{"shadow panther","AICJAA","DZf",5,9,3,"0F0F23","7C3AED","ink-black panther dissolving into mist","hiss","Here. Gone. Behind you.","cat,spooky"},
-	{"shadow pillar","FIDBKI","iO",7,6,1,"1A0033","AA00FF","black column with violet sparks","hum","Darkness, straight down.","spooky"},
-	{"shadow prison","KICLII","iO",6,4,5,"1A0033","7C4DFF","cage of writhing black smoke","hiss","Dark corner. Forever.","spooky"},
-	{"shadow punch","KICAKB","ikf",6,9,2,"1A0033","9C27B0","smoky black fist from nowhere","pow","Didn't see it. Felt it.","spooky,melee"},
 }

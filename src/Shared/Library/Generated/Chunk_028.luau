@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vine horror","AGDJMA","MHN",6,4,6,"14532D","84CC16","walking tangle of thorned vines","creak","Gardening's revenge.","plant,spooky"},
+	{"vine serpent","AGCJCD","WMH",5,5,4,"15803D","84CC16","snake made of braided thorny vines","rustle","Grows longer every second.","plant,reptile"},
+	{"vine snake","AGCJCD","ZfMN",4,6,3,"6AC84A","C8E87A","thin vine-like green snake","hiss","Basically a stick of spaghetti.","reptile,venomous"},
 	{"vine tower","EGDMII","GSfHeN",5,1,7,"2E7D32","6D4C41","tower wrapped in lashing vines","thud","Vines whip out and grab.","structure,defense,tower,plant"},
 	{"vine wall","EGDCII","GWFSN",3,1,6,"2E7D32","66BB6A","dense vines woven into a wall","thud","Grows thicker every second.","structure,defense,plant"},
 	{"vine whip","FGCHJB","fH",4,7,2,"388E3C","9CCC65","long green whipping vine","crack","Slapped by a plant. Embarrassing.","plant"},
@@ -400,8 +403,4 @@ return {
 	{"witch hut","EJCNII","SMh",4,1,6,"33691E","7E57C2","crooked hut with bubbling cauldron","moan","Something is brewing. Something green.","place,spooky,magic"},
 	{"witch kid","LJBJNA","jA",2,6,2,"7C3AED","F97316","kid in witch costume with candy bucket","cackle","Hex: candy for me.","cute,witch,halloween"},
 	{"witch on broom","LJCJNB","AMe",5,8,3,"1F2937","F97316","witch zooming on a broomstick","cackle","Speeding ticket pending.","witch,flying"},
-	{"witch queen","LJCJNB","AMh",6,5,4,"4C1D95","84CC16","crowned witch with raven staff","cackle","Rules the coven. Strictly.","royal,witch"},
-	{"witchcraft","FLCDOJ","jM",4,5,2,"4B2D7A","8FD14F","green-violet swirling cauldron smoke","cackle","Double, double, toil and bubble.","magic,spooky"},
-	{"wither","KJCFOB","iN",4,5,2,"6D4C41","9E9D24","brown wilting wave over ground","hiss","Droopy, dry and sad.","toxic"},
-	{"wizard","LLCJNA","eLhY",6,4,4,"4338CA","FACC15","pointy starry hat, long beard, glowing staff","zap","Says big words. Big things happen.","magic"},
 }

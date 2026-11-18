@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lava cave","MAENII","KS",6,1,8,"3E2723","FF5722","dark tunnel with glowing lava streams","echo","Hot rocks. Hot floor. Hot everything.","place,adventure,flammable"},
+	{"lava dragon","AAEKAB","KASg",8,5,8,"450A0A","F97316","black rock dragon with glowing lava cracks","roar","Born in a volcano. Never left.","mythical,reptile,fire"},
+	{"lava elemental","AADJNA","KkS",7,3,7,"7F1D1D","F97316","molten rock body with glowing cracks","sizzle","Leaves very hot footprints.","elemental,fire"},
 	{"lava field","MAELII","KSN",7,1,7,"FF5722","212121","black crust cracking over glowing lava","bubble","The floor is lava. Literally.","place,terrain,flammable"},
 	{"lava flood","HAENOI","KSNP",8,3,5,"DD2C00","FFB300","glowing lava rising across the ground","bubble","Flood, but it's fire.","fire,natural"},
 	{"lava flow","HAEF6D","KNP",7,2,6,"FF3D00","FFA000","slow river of glowing orange rock","bubble","In no hurry. Still unstoppable.","natural,fire"},
@@ -400,7 +403,4 @@ return {
 	{"macuahuitl","CECHJK","fV",5,6,4,"8B5A2B","1B1A22","wooden paddle edged with glass","shing","Paddle with teeth.","ancient,sharp"},
 	{"mad scientist","LDCJNA","jELh",5,4,4,"F8FAFC","84CC16","wild white hair, goggles, bubbling beaker","cackle","IT'S ALIVE. Mostly.","science,villain"},
 	{"madeleine","IMALKI","dSc",2,3,3,"F2C870","E8B050","shell-shaped little cake","chomp","Small cake shaped like a seashell.","edible,sweet"},
-	{"madness","KLCNOI","UjV",5,7,2,"E040FB","76FF03","swirling spirals and wobbly shapes","cackle","Everything is wobbly. Nothing is real.","chaos,silly"},
-	{"maduros","IMBLKI","dSc",2,3,3,"C8762B","8A4A1E","caramelized sweet plantains","chomp","Sweet golden plantains.","edible,sweet"},
-	{"maelstrom","FBEN5K","kSHO",8,5,5,"0B3A5E","5EB0E5","massive sea vortex, crashing white rim","roar","A whirlpool with a bad attitude.","aquatic"},
 }

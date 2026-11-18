@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"witch queen","LJCJNB","AMh",6,5,4,"4C1D95","84CC16","crowned witch with raven staff","cackle","Rules the coven. Strictly.","royal,witch"},
+	{"witchcraft","FLCDOJ","jM",4,5,2,"4B2D7A","8FD14F","green-violet swirling cauldron smoke","cackle","Double, double, toil and bubble.","magic,spooky"},
+	{"wither","KJCFOB","iN",4,5,2,"6D4C41","9E9D24","brown wilting wave over ground","hiss","Droopy, dry and sad.","toxic"},
+	{"wizard","LLCJNA","eLhY",6,4,4,"4338CA","FACC15","pointy starry hat, long beard, glowing staff","zap","Says big words. Big things happen.","magic"},
 	{"wizard apprentice","LLBJNA","je",3,5,3,"60A5FA","FDE68A","oversized hat, wobbly wand","zap","Spells backfire 50% of the time.","magic,silly"},
 	{"wizard hat","BLBONI","Fh",2,5,2,"1F2F55","D4A72C","tall pointy starry hat","swish","Instant +5 to wizardliness.","clothing,magic"},
 	{"wizard hut","ELBCII","jSY",3,1,5,"3949AB","FFD54F","crooked hut with a starry pointy roof","thud","Smoke of every colour from the chimney.","structure,ancient,magic"},

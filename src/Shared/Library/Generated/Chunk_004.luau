@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
 	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
 	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
@@ -402,5 +403,4 @@ return {
 	{"carolina reaper","IABAKK","KESP",8,7,2,"B0101E","6B0A0A","wrinkly red pod, scorpion tail","sizzle","The hottest pepper. A fire spirit in pod form.","edible,spicy,flammable,pepper"},
 	{"carousel","EMDNIK","jkS",3,1,6,"E53935","FFD54F","spinning canopy with painted horses","organ","Round and round and dizzy.","structure,building,silly"},
 	{"carp","ABBJEC","DfB",2,7,4,"B8984A","E8D8A8","golden scaly fish, whisker barbels","splash","Lives in ponds. Owns the pond.","fish,aquatic"},
-	{"carpenter","LGCJNA","Ge",3,4,5,"A16207","78350F","tool belt, pencil behind ear, hammer","thud","Measures twice. Bonks once.","tools"},
 }

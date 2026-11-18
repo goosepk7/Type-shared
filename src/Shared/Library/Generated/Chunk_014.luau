@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jaffa cake","IMBAKK","Uke",3,7,2,"E8762B","3A1A0C","orange jelly sponge disc","whoosh","Cake or biscuit? The war continues.","edible"},
+	{"jaguar","AMDJAA","DfTB",7,8,5,"D99A3C","2B1E10","stocky spotted body, massive jaw, rosettes","roar","Bites through turtle shells for fun.","mammal,predator,wild"},
+	{"jaguarundi","AMCJAA","ZfT",4,7,3,"6D5D52","9A8878","long weasel-like body, plain dark coat","hiss","A cat that forgot it was a cat.","mammal,predator,wild"},
 	{"jailer","LKCJNA","GHO",4,3,6,"111827","94A3B8","keys, baton, cap","clank","Locks you up. Throws away the key.","guardian"},
 	{"jalapeno","IABAKK","KeP",4,7,2,"3E8E2B","2A6B1E","stubby green pod, stem","sizzle","Green, glossy, and quietly furious.","edible,spicy,flammable,pepper"},
 	{"jalapeno poppers","IABAKK","KE",4,7,2,"3E8E2B","D9A04A","breaded stuffed peppers","sizzle","Crunchy, cheesy, hot.","edible,spicy,flammable,snack"},
@@ -400,7 +403,4 @@ return {
 	{"lava bomb","HACAKB","KEe",6,6,3,"3E2723","FF6D00","spinning glowing rock blob, smoke tail","whoosh","The volcano is throwing things now.","fire,explosive"},
 	{"lava burst","FADNOI","KEl",7,6,3,"E65100","FFD740","ground bursting with spurting lava","boom","Surprise! The ground was hot.","fire,explosive"},
 	{"lava cake","IABNGI","KSc",4,4,2,"3A1A10","E8761A","small dome oozing hot chocolate","sizzle","A tiny volcano made of chocolate.","edible,sweet"},
-	{"lava cave","MAENII","KS",6,1,8,"3E2723","FF5722","dark tunnel with glowing lava streams","echo","Hot rocks. Hot floor. Hot everything.","place,adventure,flammable"},
-	{"lava dragon","AAEKAB","KASg",8,5,8,"450A0A","F97316","black rock dragon with glowing lava cracks","roar","Born in a volcano. Never left.","mythical,reptile,fire"},
-	{"lava elemental","AADJNA","KkS",7,3,7,"7F1D1D","F97316","molten rock body with glowing cracks","sizzle","Leaves very hot footprints.","elemental,fire"},
 }

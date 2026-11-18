@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"taco salad","IGBOKI","F",2,5,3,"E8B84A","7DBE3A","salad in a crispy shell bowl","crunch","A salad with a crunchy bowl.","edible,healthy"},
+	{"tadpole","AMAJEC","eB",1,5,1,"3A3A2A","6A6A4A","round body, wiggly tail","croak","Future frog. Currently a comma.","amphibian,wetland,aquatic"},
+	{"taekwondo fighter","LMCJNA","kf",5,8,4,"F8FAFC","DC2626","white dobok, flying kick","whoosh","Flying kick! Mid-air!","sport,martial"},
 	{"taffy","IMBLGI","SHN",2,3,3,"F2A6C8","F7F2E0","stretched wrapped candy","gloop","Stretchy, chewy, everlasting.","edible,sticky,candy,sweet"},
 	{"tag you're it","KMBAKB","dQc",1,9,1,"FF5252","FFFFFF","glowing handprint on the target","boop","Tag! You're it! Ha!","silly,sport"},
 	{"tagine","IABNGI","KF",4,4,2,"C8602B","E8A040","conical clay pot stew","sizzle","Slow-cooked under a pointy hat.","edible,spicy"},
@@ -400,7 +403,4 @@ return {
 	{"tostones","IMBAKK","Uke",3,7,2,"E8C070","D9A04A","smashed fried plantain discs","whoosh","Crispy smashed plantain coins.","edible"},
 	{"totem pole","EGDMII","GFSe",3,1,7,"C62828","FFB300","stacked carved faces with wings","thud","Watches with all its faces.","structure,defense,tower,ancient"},
 	{"totem spirit","AGCMII","GFh",4,1,6,"78350F","15803D","carved totem pole with glowing eyes","drum","Stacked animals guarding the way.","spirit,guardian"},
-	{"toucan","AMBJDB","jdAf",2,6,2,"1E1E1E","F2A01E","black bird, gigantic rainbow beak","squawk","Beak is 30% of its body.","bird,jungle,silly"},
-	{"touch grass","KGBOKJ","F",1,4,3,"66BB6A","FFF59D","grass sprouting under caster's feet","rustle","Fresh air. Feel better.","meme,plant,support"},
-	{"touch me not plant","NGANMI","ZS",1,1,2,"7CB342","F48FB1","feathery leaves that fold when touched","rustle","Touch it. It hides. Rude.","plant,flower,cute"},
 }
