@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"reality","KLCFOB","aO",5,7,1,"ECEFF1","212121","harsh grey ripple stripping illusions","thunk","Reality check! Snap out of it.","magic"},
 	{"reaper chain","CKBAJI","HeN",4,9,4,"5B6168","C9A86A","a hooked blade on a long rattling chain","clang","Get over here. Politely.","anime,weapon"},
 	{"reappear","KLBOKI","Y",2,10,1,"E1BEE7","FFFFFF","sparkle burst with caster appearing","poof","Ta-da! Missed me?","magic"},
 	{"reason","KHBIyE","Gja",3,3,5,"93C5FD","1E3A8A","flowchart shield: IF, THEN, arrows, one bent","click","Because. That is the reason. Because.","school"},
@@ -402,5 +403,4 @@ return {
 	{"sai","CKBHJK","GfT",3,8,4,"C9CED4","24262A","three-prong dagger","shing","Catches blades. Pokes faces.","ninja,sharp"},
 	{"saiga","AMCJAA","Dk",4,8,4,"D2BE9A","A89270","big floppy bulbous nose","bleat","Nose looks like a tiny trunk.","mammal,wild,silly"},
 	{"sail","BFCOiJ","DIg",3,7,3,"F8FAFC","1E3A8A","billowing white triangle on a mast, ropes snapping taut","whoosh","Wind in the sail. Sail in your face.","ocean,air"},
-	{"sailboat","DFCKHC","DkIgB",4,6,4,"F5F5F5","1E88E5","slim hull, single mast, triangle sail","splash","Powered by wind and good vibes.","vehicle,aquatic"},
 }

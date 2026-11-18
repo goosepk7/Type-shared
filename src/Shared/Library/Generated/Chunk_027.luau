@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"transforming robot","OKDKNL","DegY",7,8,7,"DC2626","1D4ED8","robot unfolding from a sports car","clank","More than meets the eye.","robot,vehicle"},
+	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
 	{"trap","KMCLII","O",4,4,4,"8D6E63","FFD54F","glowing jaw-shaped rune on ground","snap","Step right in. Wait, don't.","meme"},
 	{"trap-jaw ant","AMAJLA","UCkfP",1,5,1,"8A4A1E","3A1E14","ant with spring-loaded jaws","skitter","Snaps so hard it launches itself.","insect,swarm"},
 	{"trapdoor","EEBLII","ZOY",3,1,4,"6D4C41","424242","hinged wooden hatch in the floor","creak","Click. Whoosh. Byeee.","structure,defense,silly"},
@@ -401,6 +403,4 @@ return {
 	{"wake","KHBF6B","FIO",3,7,1,"FDE047","EF4444","ringing alarm clock shockwave with a bucket of water","ring","RISE AND SHINE. It is 6 a.m. on a Saturday.","silly"},
 	{"wake up","KHBOKI","DF",1,8,2,"FFE082","FFFFFF","alarm-clock ring burst","ring","Rise and shine!","support"},
 	{"wakizashi","CKBHrK","fT",4,8,3,"C9CED4","1F2F55","short curved blade, wrapped hilt","shing","Katana's little sibling. Just as sharp.","medieval,sharp"},
-	{"walk","KMBOBA","GQN",2,3,3,"60A5FA","F8FAFC","pair of trainers plodding along with nobody in them","tap","Running is overrated. So is arriving on time.","silly"},
-	{"walker","DKEKFA","keg",6,3,8,"78909C","455A64","boxy cockpit on two tall jointed legs","stomp","It walks. Slowly. Menacingly.","mechanical,vehicle,land,robot"},
 }

@@ -401,4 +401,6 @@ return {
 	{"carrion beetle","AMAJFA","GCf",1,3,4,"1E1E1E","E8701E","black-orange beetle","click","Nature's undertaker.","insect,armored"},
 	{"carrion crawler","AJDJFA","MHO",5,4,5,"365314","F0ABFC","giant centipede-worm with face tentacles","skitter","Wiggly. Sticky. Not a friend.","dungeon"},
 	{"carrion flower","NJBDMI","jSM",3,1,2,"6A1B9A","8D6E63","hairy star bloom that smells awful","rustle","Stinks so bad enemies retreat.","plant,flower,silly"},
+	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
+	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
 }

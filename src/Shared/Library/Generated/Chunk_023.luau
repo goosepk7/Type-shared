@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sherbet powder","IMBDOJ","jLP",2,5,1,"F2E23A","F2A6C8","fizzy sugar powder","puff","Fizzes on the tongue.","edible,candy"},
 	{"sheriff","LECJNA","GeO",5,6,5,"92400E","FACC15","star badge, wide hat, long coat","bang","This arena ain't big enough for both of us.","western"},
 	{"sheriff badge","BMAONI","h",2,5,4,"D4A72C","C9CED4","five-point star badge","swish","This town ain't big enough.","clothing,cowboy"},
 	{"sheriff robot","OKCJNA","Ge",5,5,7,"94A3B8","FACC15","robot with cowboy hat and star badge","clank","This town ain't big enough for two robots.","robot,western"},
@@ -402,6 +403,4 @@ return {
 	{"soda fountain","OBCM1I","deN",2,2,5,"C0392B","C9CED4","nozzled fizzy drink dispenser","clang","Fizzy blast!","kitchen,household"},
 	{"soda geyser","IBDFKI","EklP",6,7,1,"3A1A0C","F7F7F2","erupting fountain of fizz","fizz","Shake well before using.","edible,drink,fizzy"},
 	{"soft coral","ABCCMI","GW",3,1,6,"E8A0C0","F2D0E0","swaying fleshy coral","crackle","Wiggly coral. Squishy.","aquatic,ocean,reef"},
-	{"soft serve","ICBAKJ","JeN",3,5,2,"F7F2E0","D9A04A","tall curly swirl on cone","squish","Curly, cold, and quick.","edible,frozen,sweet"},
-	{"softball","BMAA3F","ke",2,8,4,"F1C40F","C0392B","big yellow stitched ball","bonk","Not actually soft.","sport"},
 }

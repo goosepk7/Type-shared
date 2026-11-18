@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hoodie","BMCONI","FZ",1,6,2,"8E9196","24262A","zip hoodie with hood up","swish","Hood up. Mode: stealth.","clothing"},
 	{"hoodoo","MEDCII","GS",3,1,9,"D7826A","F4E4BC","tall thin rock spires with cap stones","rumble","Rock towers balanced on nothing.","place,terrain"},
 	{"hoof","BEBAtB","DkO",4,7,6,"3B2F2F","8D6E63","dark horse hoof with a shiny horseshoe","clack","Clip. Clop. Clobber.","body,farm"},
 	{"hook hand","CKBHrI","fH",3,7,4,"C9CED4","5A3A1E","curved hook on a cuff","bang","Handy, minus the hand.","pirate,sharp"},
@@ -402,5 +403,4 @@ return {
 	{"jersey devil","AACJAB","DjA",5,8,4,"57534E","F97316","horse head, bat wings, hooves, forked tail","screech","Born in a pine barren. Never pays rent.","cryptid,spooky"},
 	{"jerusalem artichoke","IEBAKK","keO",3,7,6,"C8A070","F2E8D0","knobby tan tuber","bonk","Not from Jerusalem. Not an artichoke.","edible,vegetable"},
 	{"jerusalem cricket","AMAJFA","dfP",1,6,1,"E8A04A","3A2A1A","big-headed striped cricket","buzz","Big head. Many nicknames.","insect"},
-	{"jester","LLCJNA","Ujd",3,8,3,"DC2626","FACC15","three-pointed bell hat, diamond suit","jingle","Tells jokes. Dodges tomatoes.","royal,silly"},
 }

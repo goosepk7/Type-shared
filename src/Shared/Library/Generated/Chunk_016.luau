@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magnetar","MDDGKJ","lHLO",9,6,9,"651FFF","FF4081","star wrapped in twisted glowing field lines","rumble","The fridge magnet of the gods.","space,magnetic"},
 	{"magnetic letters","BKAAKI","He",1,6,1,"C0392B","2F6FD1","colourful plastic letters","squeak","Spells B-O-N-K.","toy"},
 	{"magnetic pulse","FKCFOB","HO",5,8,1,"D32F2F","1976D2","red-blue ring tugging metal inward","whum","All your stuff flies toward me.","magnetic"},
 	{"magnetic storm","FKEN5K","lHLP",7,5,4,"C62828","1565C0","swirling metal debris in red-blue field","hum","All your metal flies away.","magnetic,storm"},
@@ -402,5 +403,4 @@ return {
 	{"mockingbird","AMAJDB","jdA",1,7,1,"8A8C90","F2F2F0","grey bird, white wing patches","tweet","Copies car alarms. On purpose.","bird,cute"},
 	{"model","LMCJNA","dc",3,5,3,"F472B6","F8FAFC","runway pose, sunglasses","click","Strikes a pose. Enemies stunned.","silly"},
 	{"model rocket","BMBAkB","Ake",2,8,1,"F2F2EE","C0392B","little finned rocket on a pad","squeak","3... 2... 1... Whoosh!","toy"},
-	{"moderator","LHCJNA","GOY",5,5,6,"DC2626","F8FAFC","badge, giant ban hammer","ding","Ban hammer has been swung.","gaming,meme"},
 }

@@ -403,5 +403,4 @@ return {
 	{"honor","KHCOKJ","GD",3,5,5,"FFD54F","1565C0","proud golden aura","horn","A fair fight. A strong fight.","support"},
 	{"hood","BIBOVJ","GZN",2,5,3,"374151","111827","dark pulled-up hood with only two eyes visible","hush","Hood up. Mystery on.","clothing,stealth"},
 	{"hooded seal","ABCJEC","UdfB",3,5,4,"9A9AA0","3A3A3A","inflatable nose balloon","bark","Blows up a red nose balloon.","mammal,aquatic"},
-	{"hoodie","BMCONI","FZ",1,6,2,"8E9196","24262A","zip hoodie with hood up","swish","Hood up. Mode: stealth.","clothing"},
 }
