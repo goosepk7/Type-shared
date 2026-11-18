@@ -3,6 +3,7 @@ return function(t: any)
 	local load = t.load
 	local Summon = load("src/Shared/Summon")
 	local Heroes = Summon.Heroes
+	Heroes.setRequirePack(false) -- every authored hero, uploaded or not
 	local Map = load("src/Shared/Summon/Heroes/Map")
 	local Motion = load("src/Shared/Summon/Motion")
 
