@@ -5,6 +5,12 @@
   "pieces": 9,
   "tris": 5920
  },
+ "afanc": {
+  "assetId": 109770538762168,
+  "hash": "72c3cb49b3206dd5",
+  "pieces": 20,
+  "tris": 14400
+ },
  "aircraft carrier": {
   "assetId": 84628273756599,
   "hash": "7da1f72b2314e958",
@@ -59,11 +65,23 @@
   "pieces": 26,
   "tris": 15930
  },
+ "amabie": {
+  "assetId": 136363659329661,
+  "hash": "e4845235764068fc",
+  "pieces": 18,
+  "tris": 17210
+ },
  "ambulance": {
   "assetId": 92847864969450,
   "hash": "eaf8cb852b5ff3f4",
   "pieces": 32,
   "tris": 16468
+ },
+ "ambulocetus": {
+  "assetId": 105957541825723,
+  "hash": "a6c55e87fa0af54d",
+  "pieces": 20,
+  "tris": 14500
  },
  "amphiptere": {
   "assetId": 122819653284059,
@@ -460,6 +478,12 @@
   "hash": "4d563c84737927f2",
   "pieces": 14,
   "tris": 6712
+ },
+ "bunyip": {
+  "assetId": 71007879676883,
+  "hash": "cde6158e58b8f085",
+  "pieces": 21,
+  "tris": 14900
  },
  "bus": {
   "assetId": 80382417872687,
@@ -970,6 +994,12 @@
   "hash": "d1b4343462cc2d53",
   "pieces": 31,
   "tris": 24340
+ },
+ "dragon turtle": {
+  "assetId": 84191820053388,
+  "hash": "87ee1b88aae9270e",
+  "pieces": 24,
+  "tris": 19100
  },
  "dragonfly": {
   "assetId": 136277697756615,
@@ -1565,6 +1595,12 @@
   "pieces": 23,
   "tris": 14160
  },
+ "hippocampus": {
+  "assetId": 83819418991176,
+  "hash": "3e20eff6c53a0f92",
+  "pieces": 25,
+  "tris": 17200
+ },
  "hippogriff": {
   "assetId": 71920860514219,
   "hash": "cc2129aa47b4f65f",
@@ -1685,6 +1721,12 @@
   "pieces": 24,
   "tris": 16710
  },
+ "iara": {
+  "assetId": 101976958739347,
+  "hash": "e32c57a7726806c2",
+  "pieces": 17,
+  "tris": 16410
+ },
  "ibex": {
   "assetId": 92677998237521,
   "hash": "a3a07f7b1496be6e",
@@ -1702,6 +1744,12 @@
   "hash": "37cc34f044e59206",
   "pieces": 12,
   "tris": 9498
+ },
+ "ichthyosaurus": {
+  "assetId": 74562428775365,
+  "hash": "647c4743f00fb248",
+  "pieces": 10,
+  "tris": 9000
  },
  "iguana": {
   "assetId": 129634067620905,
@@ -1738,6 +1786,12 @@
   "hash": "fdcafd4f31464d99",
   "pieces": 26,
   "tris": 7940
+ },
+ "ittan-momen": {
+  "assetId": 72029570196154,
+  "hash": "ca3a8905b933440f",
+  "pieces": 8,
+  "tris": 4800
  },
  "jack o lantern": {
   "assetId": 77569419143953,
@@ -1841,6 +1895,12 @@
   "pieces": 25,
   "tris": 17880
  },
+ "kraken": {
+  "assetId": 82336110153208,
+  "hash": "664e450b2131fa68",
+  "pieces": 26,
+  "tris": 19760
+ },
  "labrador": {
   "assetId": 119884829002260,
   "hash": "5484c8aa779bce9f",
@@ -1858,6 +1918,12 @@
   "hash": "06cd7a9748809f05",
   "pieces": 26,
   "tris": 16138
+ },
+ "lamia": {
+  "assetId": 100182380748407,
+  "hash": "b4ed0a5028bf8a41",
+  "pieces": 19,
+  "tris": 17040
  },
  "lava golem": {
   "assetId": 81570576827012,
@@ -1979,6 +2045,12 @@
   "pieces": 27,
   "tris": 17460
  },
+ "mami wata": {
+  "assetId": 120335343433348,
+  "hash": "45aba8ace3c840f6",
+  "pieces": 18,
+  "tris": 17210
+ },
  "manatee": {
   "assetId": 98452592251631,
   "hash": "a7f8ef0311106999",
@@ -2009,11 +2081,29 @@
   "pieces": 15,
   "tris": 7382
  },
+ "medusa": {
+  "assetId": 133316596208960,
+  "hash": "ba393d16339480ea",
+  "pieces": 18,
+  "tris": 16940
+ },
+ "melusine": {
+  "assetId": 108400494607385,
+  "hash": "1e6e901438f3980e",
+  "pieces": 21,
+  "tris": 19780
+ },
  "mermaid": {
   "assetId": 99794002165487,
   "hash": "cd88ffa15687e20a",
   "pieces": 19,
   "tris": 16700
+ },
+ "merrow": {
+  "assetId": 98970288429327,
+  "hash": "c65ccbeb9deb0b04",
+  "pieces": 17,
+  "tris": 16410
  },
  "millipede": {
   "assetId": 108535820401907,
@@ -2291,6 +2381,12 @@
   "pieces": 14,
   "tris": 11297
  },
+ "pakicetus": {
+  "assetId": 137964682139732,
+  "hash": "7aa7b4eaeb35425a",
+  "pieces": 20,
+  "tris": 14500
+ },
  "panda": {
   "assetId": 116744581342914,
   "hash": "30ef1a48675685e4",
@@ -2393,11 +2489,23 @@
   "pieces": 22,
   "tris": 12061
  },
+ "platypus": {
+  "assetId": 122512817475146,
+  "hash": "ed13e9ba3e75815a",
+  "pieces": 19,
+  "tris": 13500
+ },
  "plesiosaurus": {
   "assetId": 136485110568466,
   "hash": "a264cecf28f6eb00",
   "pieces": 20,
   "tris": 12900
+ },
+ "pliosaurus": {
+  "assetId": 72120895442097,
+  "hash": "6e9b19e9d6a44528",
+  "pieces": 16,
+  "tris": 13400
  },
  "polar bear": {
   "assetId": 103484540823963,
@@ -2747,6 +2855,12 @@
   "pieces": 25,
   "tris": 17010
  },
+ "sandworm": {
+  "assetId": 115281422428966,
+  "hash": "aa276f217c62054e",
+  "pieces": 11,
+  "tris": 12908
+ },
  "satyr": {
   "assetId": 116228848647179,
   "hash": "a1351bf14e5defc9",
@@ -2866,6 +2980,12 @@
   "hash": "f995ce5537a5d587",
   "pieces": 8,
   "tris": 3636
+ },
+ "shahmaran": {
+  "assetId": 130288005488236,
+  "hash": "817bd9cdae406395",
+  "pieces": 20,
+  "tris": 18380
  },
  "shark": {
   "assetId": 91667876286332,
@@ -3275,6 +3395,12 @@
   "pieces": 15,
   "tris": 7948
  },
+ "tentacle monster": {
+  "assetId": 118476123422799,
+  "hash": "e2ebf499ec6715af",
+  "pieces": 22,
+  "tris": 15500
+ },
  "termite": {
   "assetId": 89877545926543,
   "hash": "553c6a958eb91cfd",
@@ -3394,6 +3520,12 @@
   "hash": "81fa5ac4d72b96ab",
   "pieces": 31,
   "tris": 21226
+ },
+ "tsuchinoko": {
+  "assetId": 109274181610069,
+  "hash": "90f376ffc50413d1",
+  "pieces": 9,
+  "tris": 5950
  },
  "tsukumogami": {
   "assetId": 134889225310891,
