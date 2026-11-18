@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vibro blade","CKCHrK","fTO",6,8,4,"DDE3E8","3FC1D9","humming buzzing blade","shing","It hums. Then it cuts.","scifi,sharp"},
+	{"viburnum","NGCNMI","dFSe",1,1,4,"FFFFFF","2E7D32","round white snowball flower heads","rustle","Throws snowballs. Flower ones.","plant,flower"},
+	{"victim","LMBJNA","dEc",1,3,1,"E5E7EB","F87171","unlucky fellow under a tiny rain cloud with a target sign","oof","Wrong place. Wrong time. Every time.","silly"},
+	{"victoria sponge","IMBLKI","dSc",2,3,3,"F2D88A","D7263D","two sponges, jam and cream","chomp","Fit for a queen.","edible,sweet,royal"},
 	{"victoria water lily","NBDLMJ","SN",2,1,5,"43A047","F8BBD0","huge round floating pad with a rim","rustle","Big enough to stand on. Try it.","plant,flower"},
 	{"victory","KHCOKJ","DF",4,6,4,"FFD54F","43A047","golden trophy-shaped glow","fanfare","Winner winner.","holy"},
 	{"vicuna","AMCJAA","df",3,4,4,"C8945A","F2EEE6","slim wild llama, golden coat","bleat","Fanciest wool on the mountain.","mammal,farm"},
@@ -399,9 +403,4 @@ return {
 	{"wing","BFCODB","AklI",3,8,3,"F5F5F5","CFE3F2","pair of white feathered wings flapping, no body","flutter","Just wings. Body sold separately.","flying,body"},
 	{"wing gust","KFDNDJ","AkI",3,8,2,"FFF4D0","E8B84A","feathered energy wings flap a wide gust","whoosh","Flap once. Float forever. Ish.","hero,movie,wings"},
 	{"winged helmet","BFBONI","DA",3,7,5,"C9CED4","D4A72C","helm with little wings","clank","Swift as a messenger.","armor,fantasy,ancient"},
-	{"winged lion","AHDKAB","DAg",6,7,6,"CA8A04","FDE68A","golden lion with eagle wings","roar","Kings of the jungle AND the sky now.","mythical,mount"},
-	{"winged sandals","BFBONI","DA",4,9,2,"D4A72C","F2F2EE","sandals with little wings","swish","Faster than a messenger.","clothing,ancient,magic"},
-	{"wings of light","KHCOKB","AF",3,7,3,"FFFFFF","FFE57F","glowing feathered wings on the caster","whoosh","Flap flap. Very angelic.","holy"},
-	{"wingsuit","DFBKHB","DAg",3,9,2,"FF5722","212121","jumpsuit with fabric wings","whoosh","Jump. Spread arms. Scream.","vehicle,air,sport"},
-	{"wink","KMAAKB","jc",1,10,1,"FFEB3B","FFFFFF","sparkle star from an eye","ding","Smooth.","cute"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star bolt","FHBAKB","KTe",5,9,1,"FFF9C4","FFD54F","spinning golden star streak","zing","Twinkle, twinkle, bonk.","space"},
+	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
 	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
 	{"star cactus","NEALMI","GST",2,1,5,"7CB342","FFFFFF","flat star-shaped spineless cactus","thud","Spineless. Still judgmental.","plant,desert,cute"},
 	{"star cluster","MHEELJ","TeVP",7,4,7,"E1F5FE","FFF59D","swarm of tiny glittering stars","rumble","A whole handful of stars, thrown at once.","space"},
@@ -401,6 +403,4 @@ return {
 	{"switchblade","CKAHJK","ZfT",3,10,2,"C9CED4","24262A","folding blade, slim handle","shing","Click. Surprise.","medieval,sharp"},
 	{"sword","CKCHrK","kfT",5,6,5,"8A929B","6B4226","straight double-edged blade, cross guard","shing","The classic. Pointy end goes toward the problem.","medieval,sharp"},
 	{"sword cane","CKCHrK","fT",5,7,3,"24262A","C9CED4","walking cane hiding a blade","shing","Gentleman's surprise.","sharp"},
-	{"sword swallower","LKCJNA","dO",3,4,4,"111827","94A3B8","swallowing a long sword","gulp","Kids, don't try this at home.","circus,silly"},
-	{"swordfish","ABDJEC","DfTB",6,9,4,"3A4A6A","D8DCE2","long flat sword bill","splash","Brought a sword to the sea.","fish,aquatic"},
 }

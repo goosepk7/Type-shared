@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow","GHDBKI","jFe",5,6,3,"FF5252","40C4FF","bright seven-colour arc landing on target","chime","Pot of gold not included.","cute,holy"},
+	{"rainbow boa","AMCJCD","fHaO",4,4,6,"C8603A","6AE8E0","iridescent orange snake","hiss","Shimmers like a rainbow.","reptile"},
 	{"rainbow bridge","EHECII","GFSY",4,1,6,"FF5252","40C4FF","shimmering arch of rainbow light","thud","Leads somewhere magical. Probably.","magic,mythical"},
 	{"rainbow cake","IMCLKI","dSc",2,3,3,"E8434F","4FA3E8","slice with rainbow layers","chomp","Every colour, layered.","edible,sweet"},
 	{"rainbow candy","IMAELB","jeP",2,7,1,"E8434F","4FA3E8","pile of colorful round candies","pitter","Taste every colour.","edible,sweet,candy"},
@@ -401,6 +403,4 @@ return {
 	{"royal food taster","LMCJNA","dM",3,4,3,"7C3AED","F8FAFC","nervous figure holding a spoon","gulp","Tastes everything first. Brave job.","royal,silly"},
 	{"royal guard","LKCJNA","GfO",5,3,7,"DC2626","111827","tall bearskin hat, red coat, spear","clang","Never smiles. Never blinks. Never moves.","royal,warrior"},
 	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
-	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
-	{"rubber","BMBI3G","GUa",2,6,6,"1F2937","F472B6","stretchy black sheet snapping back like a trampoline","boing","I am rubber. You are glue.","toy,bouncy"},
 }

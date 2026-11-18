@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pog","KHBOKG","DFO",3,8,2,"A855F7","FACC15","wide-open amazed mouth face with sparkles and hype bars","yay","Poggers. That was actually poggers.","gaming,meme,internet"},
+	{"pogo spring boots","BMBONI","Uk",2,7,3,"C9CED4","E67E22","boots on curved springs","thud","Boing! Over the wall.","toy,silly"},
 	{"pogo stick","BMCOJG","UDk",2,6,4,"C0392B","C9CED4","spring pole with foot pegs","bonk","Boing boing boing boing.","toy"},
 	{"poinsettia","NGBNMI","dFS",2,1,2,"C62828","1B5E20","red star bracts on green leaves","rustle","Holiday cheer with attitude.","plant,flower,holiday"},
 	{"point","KMBOuB","dQe",2,8,1,"F2D0B4","EF4444","giant gloved finger pointing with a red arrow","ding","Look over there! Ha. Made you look.","silly,trickster"},
@@ -401,6 +403,4 @@ return {
 	{"rain frog","AMAJAG","Ue",1,5,1,"C8A87A","E8D8B8","round angry frog with tiny legs","croak","Squeaks like an angry toy.","amphibian,wetland,silly,meme"},
 	{"rain shower","GBBEOJ","FN",2,4,2,"7FA7C3","DCEDF7","light quick rain from small cloud","patter","Free bath. You are welcome.","aquatic"},
 	{"rain tree","NBECMI","GWFkS",3,1,8,"6D4C41","43A047","huge umbrella canopy","rustle","Folds its leaves before rain. Clever.","plant,tree"},
-	{"rainbow","GHDBKI","jFe",5,6,3,"FF5252","40C4FF","bright seven-colour arc landing on target","chime","Pot of gold not included.","cute,holy"},
-	{"rainbow boa","AMCJCD","fHaO",4,4,6,"C8603A","6AE8E0","iridescent orange snake","hiss","Shimmers like a rainbow.","reptile"},
 }

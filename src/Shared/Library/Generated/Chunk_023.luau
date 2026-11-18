@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow dome","KIDIKI","GZ",3,3,7,"1A0033","7C4DFF","black smoky dome hiding allies","hiss","Can't hit what you can't see.","spooky,defence"},
+	{"shadow dragon","AIEKAB","iAZeg",8,7,7,"1E1B2E","7C3AED","smoky wings, violet eyes, wispy tail","roar","Blends into the night. Bumps into the moon.","mythical,reptile,spooky,flying"},
 	{"shadow elemental","AIDJNJ","jiZ",6,7,4,"1E1B4B","6D28D9","inky shape with purple eye slits","whisper","Only visible in the dark. Which is cheating.","elemental,spooky"},
 	{"shadow fairy","AIAJNB","jAZ",2,9,1,"1E1B4B","A78BFA","inky fairy with moth wings","whisper","Steals your shadow. Returns it later.","fairy,spooky"},
 	{"shadow form","KICOVJ","iZ",4,7,3,"1A0033","7C4DFF","caster becoming a flat moving shadow","hiss","Slip under doors. Spook everyone.","spooky,stealth"},
@@ -401,6 +403,4 @@ return {
 	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
 	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
 	{"snapper","ABBJEC","dB",2,6,1,"D84A3A","F2D8D0","rosy red fish","splash","Snappy name. Chill fish.","fish,aquatic"},
-	{"snapping turtle","AMBJUA","GfNOB",4,2,8,"4A4A30","8A7A5A","spiky shell, huge beak","hiss","Snaps fingers. Not the cool way.","reptile,armored"},
-	{"snapvine","NGCLMI","SfHN",4,3,4,"33691E","E53935","coiled vine tipped with tiny jaws","chomp","Every vine has teeth. Every one.","plant,carnivorous"},
 }
