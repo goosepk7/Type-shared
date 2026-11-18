@@ -334,6 +334,7 @@ return {
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
 	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
 	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
+	{"ink blot","FIBAKI","je",2,6,2,"14141C","3B4CCA","a lobbed glob of ink that splats and smears the screen","splat","Can't see? That's the idea.","cartoon,silly"},
 	{"ink monster","AICJGA","jZN",4,5,3,"0A0A0A","312E81","dripping ink-blot creature","squelch","Stains everything. Including your record.","spooky"},
 	{"ink strike","KIBOKI","Dk",8,9,1,"E8E2D6","B3172B","world flashes to black-and-red ink for one hit","thump","Next hit gets its own page.","anime,manga"},
 	{"inkanyamba","ADEJCC","kLB",8,5,7,"1E3A8A","FDE047","huge horse-headed eel of storms","thunder","When it's angry, storms happen.","mythical,storm"},

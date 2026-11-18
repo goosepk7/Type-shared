@@ -81,6 +81,7 @@ return {
 	{"bubble breath","FBBFOB","Udl",2,5,1,"B3E5FC","F8BBD0","stream of floating bubbles","pop","Blowing bubbles. Aggressively.","silly,aquatic"},
 	{"bubble car","DMAKHL","Dkg",2,5,3,"7FC8A9","F5F5F5","egg-shaped one-seat car, front door","engine","Parks in a shoebox.","cute,silly"},
 	{"bubble coral","ABCCMI","GWTM",3,1,6,"E8E8D0","F2F2E8","bubbly grape coral","crackle","Covered in bubbles. Stingy.","aquatic,ocean,reef"},
+	{"bubble gum","IMCIGI","GN",3,3,3,"F48CBE","FFD1E6","a giant pink bubblegum bubble that pops into sticky strands","pop","Chew, blow, hide.","cartoon,silly,shield"},
 	{"bubble gun","CBBFwI","dAeN",1,6,1,"47D7E8","C3A6E8","toy gun with bubble wand nose","bloop","Weaponised whimsy.","toy,silly"},
 	{"bubble helmet","BBBONI","GB",1,5,2,"BFE6F2","47D7E8","glass bowl helmet full of water","thud","Breathe underwater. Look silly.","silly"},
 	{"bubble machine","OBCD1I","dAP",1,3,3,"47D7E8","F2F2EE","box blowing streams of bubbles","bloop","Party trick. Also distraction.","party,silly"},

@@ -98,7 +98,7 @@ return {
 	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
 	{"trap","KMCLII","O",4,4,4,"8D6E63","FFD54F","glowing jaw-shaped rune on ground","snap","Step right in. Wait, don't.","meme"},
 	{"trap-jaw ant","AMAJLA","UCkfP",1,5,1,"8A4A1E","3A1E14","ant with spring-loaded jaws","skitter","Snaps so hard it launches itself.","insect,swarm"},
-	{"trapdoor","EEBLII","ZOY",3,1,4,"6D4C41","424242","hinged wooden hatch in the floor","creak","Click. Whoosh. Byeee.","structure,defense,silly"},
+	{"trapdoor","EEBLII","SO",2,3,2,"8B5A2B","2A2420","a wooden trapdoor in the floor that drops you through","creak","Mind the gap. There is now a gap.","cartoon,silly,trap"},
 	{"trapdoor spider","AJBLQA","CZfMN",2,6,2,"3A2A1E","6A5A44","spider under a hinged lid","skitter","Opens its door. Surprise!","arachnid,spooky,venomous"},
 	{"trapeze","BMCLJI","lH",1,4,3,"C0392B","D4A72C","swinging bar on ropes","pop","Swing in. Swoop out.","party"},
 	{"trash","BJCNGI","ScMN",3,1,4,"4B5563","84CC16","heap of black bags, banana peels, fish bones, flies","squelch","One person's trash is still trash.","gross,silly,household"},

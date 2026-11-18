@@ -328,6 +328,7 @@ return {
 	{"tin foil hat","BMAONK","Gj",1,6,1,"C9CED4","DDE3E8","crinkly foil cone hat","clang","Blocks mind rays. Allegedly.","silly"},
 	{"tin snips","JKAHJK","fV",2,6,4,"F1C40F","C9CED4","heavy cutting shears","clank","Cuts sheet metal. And you.","tool"},
 	{"tinsel","BMBLKI","dN",1,3,1,"C9CED4","D4A72C","shiny strands of tinsel","jingle","Sparkles everywhere. Forever.","holiday"},
+	{"tiny cloud rain","GBBDOI","QN",2,4,2,"F2F5FA","6FB8F0","a tiny white raincloud that rains on one target","rain","Somewhere, it is always raining. On you.","cartoon,silly,weather"},
 	{"tip","KHAOKJ","QWF",2,6,1,"FDE047","3B82F6","small lightbulb with an exclamation mark","ding","Pro tip: do not stand in the fire.","gaming"},
 	{"tiramisu","IMBLKI","Ddc",2,3,3,"8A5A3A","F2E8D0","layered square, cocoa dusted","chomp","A pick-me-up in dessert form.","edible,sweet"},
 	{"tire","BMCAKF","Uke",3,6,6,"24262A","4A4D52","rubber tyre rolling on its own","clang","Rolls in. Bounces off.","urban"},
