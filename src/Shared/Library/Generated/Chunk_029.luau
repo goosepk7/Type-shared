@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"xylophone","BMCFJI","dF",1,4,3,"E84A5F","C49A6C","rainbow wooden bars on frame","chime","Plink plonk plink.","music"},
+	{"yak","ACDJAA","DkgO",6,4,7,"2E2622","F2EEE6","long shaggy skirt fur, horns","moo","Wears a fur skirt in the mountains.","mammal,heavy,arctic"},
+	{"yakisoba","IMBLGI","HN",2,3,3,"8A4A1E","7DBE3A","stir-fried noodles, sauce","gloop","Fried noodles from the festival stall.","edible,sticky"},
 	{"yakitori","IABHJI","KfT",3,5,4,"C8602B","6B3A1E","grilled skewers of chicken","bonk","Grilled chicken on tiny swords.","edible,silly"},
 	{"yali","AEDJAA","GDf",6,7,6,"78716C","F59E0B","lion body, elephant trunk, horse legs","roar","Guarding temples since forever.","mythical,guardian"},
 	{"yam fries","IMAELB","eVP",2,7,1,"E8762B","F2A65A","orange sticks","pitter","Fries, but orange.","edible"},

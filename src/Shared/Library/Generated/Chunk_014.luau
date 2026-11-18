@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jerusalem cricket","AMAJFA","dfP",1,6,1,"E8A04A","3A2A1A","big-headed striped cricket","buzz","Big head. Many nicknames.","insect"},
+	{"jester","LLCJNA","Ujd",3,8,3,"DC2626","FACC15","three-pointed bell hat, diamond suit","jingle","Tells jokes. Dodges tomatoes.","royal,silly"},
 	{"jester hat","BMBONI","jd",1,7,1,"9E1B32","D4A72C","floppy three-point hat with bells","swish","Jingle jingle, confusing.","clothing,silly"},
 	{"jet","DFDAHB","EATeg",7,10,6,"78909C","37474F","sharp delta wings, pointed nose, afterburner","jet","Sonic boom first, explanation never.","vehicle,air"},
 	{"jet boat","DBCKHC","DkIgB",5,10,4,"FF9800","212121","sleek boat blasting a water jet","engine","Spins on the spot. Sprays everyone.","vehicle,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"leaf blower","OFCFJK","kIe",3,7,4,"E67E22","24262A","handheld engine with long nozzle","whoosh","Moves leaves. Moves enemies.","tool,garden,loud"},
 	{"leaf insect","AMAJFA","dZP",1,6,1,"6AC84A","4A8A3A","flat leaf-shaped green body","buzz","A leaf that walks. Very rude to salads.","insect"},
 	{"leaf pile","NGBLMI","ZSN",1,1,2,"FF9800","C62828","crunchy heap of autumn leaves","rustle","Jump in! Something is hiding in there.","plant,silly"},
-	{"leaf rake","JKCHJK","fH",2,5,3,"2E8B57","C9CED4","fan of springy tines","clank","Gathers leaves. Gathers foes.","garden"},
-	{"leaf shield","FGCIKK","GF",2,4,4,"43A047","AED581","whirling leaves forming a dome","rustle","Nature has your back.","plant,defence"},
 }

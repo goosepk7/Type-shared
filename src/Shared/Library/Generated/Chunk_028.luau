@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"walking house","DIDKBA","DgO",5,3,7,"6D4C41","FFB300","crooked hut on giant bird legs","whoosh","Knock knock. It walks away.","spooky,silly"},
+	{"wall","EEDCII","GS",3,1,8,"9E9E9E","757575","flat-topped wall of fitted blocks","thud","It is a wall. It does wall things. Well.","structure,defense"},
+	{"wall flamethrower","BACLwI","KP",5,1,6,"4A4D52","FF6A1A","nozzle in the wall belching flame","snap","Toasty corridor.","trap,defense"},
 	{"wall jump","KMBOKG","Dl",2,9,2,"FFCC80","FFFFFF","kick-off spark from a wall","boing","Bounce off walls. Like a pro.","speed,sport"},
 	{"wall of bread","IMDCII","GFk",4,2,8,"C8904A","F5E6C8","stacked loaves forming a wall","thud","Built from carbs. Unbreakable morale.","edible,giant,silly"},
 	{"wall run","KFBOKB","D",2,9,2,"B3E5FC","FFFFFF","caster sprinting sideways along a wall","tap","Gravity is a suggestion.","sport,speed"},
@@ -400,7 +403,4 @@ return {
 	{"xiphos","CKBHrK","fT",4,7,4,"A86F32","6B4226","leaf-shaped short blade","shing","Hoplite-approved stabbing leaf.","medieval,sharp,ancient"},
 	{"xoloitzcuintli","AMCJAA","DQf",4,7,4,"3A3A3A","6A6A6A","hairless sleek dog","bark","Ancient, hairless and warm to hug.","mammal,pet"},
 	{"xp","KHBOKJ","DWF",3,6,2,"A855F7","FACC15","purple bar filling up and bursting into LEVEL UP!","fanfare","+50 XP. For typing. Nice.","gaming"},
-	{"xylophone","BMCFJI","dF",1,4,3,"E84A5F","C49A6C","rainbow wooden bars on frame","chime","Plink plonk plink.","music"},
-	{"yak","ACDJAA","DkgO",6,4,7,"2E2622","F2EEE6","long shaggy skirt fur, horns","moo","Wears a fur skirt in the mountains.","mammal,heavy,arctic"},
-	{"yakisoba","IMBLGI","HN",2,3,3,"8A4A1E","7DBE3A","stir-fried noodles, sauce","gloop","Fried noodles from the festival stall.","edible,sticky"},
 }

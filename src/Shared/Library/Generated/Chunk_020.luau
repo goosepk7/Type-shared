@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pond scum","NJCLMI","SMNP",2,1,2,"9CCC65","C0CA33","green film covering water","splash","Gross. Slippery. Sticky.","plant,aquatic,silly"},
+	{"pontoon boat","DBCKHC","DkgB",3,4,5,"F5F5F5","9E9E9E","flat deck on twin floating tubes","splash","The party has arrived on the lake.","vehicle,aquatic,silly"},
 	{"pony","AMCKAA","Dkg",3,8,5,"B88A5A","F2E6D4","short round horse, thick mane","neigh","Small horse. Massive ego.","mammal"},
 	{"ponytail","BMBHCK","Ukf",3,8,3,"C68642","FF6FB5","long swishing ponytail with a pink scrunchie","swish","Head turn. Whip crack. Oops, sorry.","body,silly"},
 	{"poodle","AMBJAA","DjQf",3,7,4,"F2EDE6","D8CFC2","pom-pom tufts, curly coat, prancing pose","bark","Fancy haircut. Also secretly very smart.","mammal,pet"},
@@ -401,6 +403,4 @@ return {
 	{"reading","KHBOKJ","FcN",2,2,2,"92400E","FDE68A","open book with glowing words drifting upward","rustle","One more chapter. One more. One more.","school"},
 	{"reality","KLCFOB","aO",5,7,1,"ECEFF1","212121","harsh grey ripple stripping illusions","thunk","Reality check! Snap out of it.","magic"},
 	{"reaper chain","CKBAJI","HeN",4,9,4,"5B6168","C9A86A","a hooked blade on a long rattling chain","clang","Get over here. Politely.","anime,weapon"},
-	{"reappear","KLBOKI","Y",2,10,1,"E1BEE7","FFFFFF","sparkle burst with caster appearing","poof","Ta-da! Missed me?","magic"},
-	{"reason","KHBIyE","Gja",3,3,5,"93C5FD","1E3A8A","flowchart shield: IF, THEN, arrows, one bent","click","Because. That is the reason. Because.","school"},
 }

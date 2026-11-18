@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
+	{"solar farm","EHEMII","GKSe",3,1,5,"1A237E","FFC107","rows of tilted dark glass panels","thud","Soaks up the sun. Zaps it back.","structure,building"},
 	{"solar flare","HAEBKI","KTeO",8,9,2,"FFB300","FFF9C4","giant looping arc of fire leaping off the sun","roar","The sun throwing a tantrum.","space,fire"},
 	{"solar lion","AADJAA","KDf",7,7,5,"F97316","FDE047","lion with a solar flare mane","roar","Mane hotter than the sun. Literally.","cosmic,fire"},
 	{"solar panel","OHCM1I","FS",2,1,5,"1F2F55","C9CED4","tilted grid of dark glass cells","hum","Sunlight in, power out.","mechanical"},
@@ -129,6 +131,7 @@ return {
 	{"speech","KFCF6B","FNO",3,4,1,"1E3A8A","F8FAFC","podium with a microphone and endless cue cards","chatter","And in conclusion. Furthermore. One last thing.","silly"},
 	{"speed","KFBOKB","D",2,10,2,"FFEB3B","FFFFFF","yellow speed lines streaming behind","zoom","Zoom. That's it. That's the spell.","speed"},
 	{"speed aura","KFCNOI","DS",1,9,3,"FFEB3B","FFFFFF","yellow streak ring around allies","zoom","Everyone nearby gets zoomies.","support,speed"},
+	{"speed blitz","KDCHNB","DT",5,10,2,"FFE04A","FF8A3A","three blurring dashes that leave afterimages","whoosh","Did you catch that? No? Exactly.","hero,movie,speed"},
 	{"speed potion","BDAO2I","D",3,7,1,"F1C40F","BFE6F2","fizzy yellow flask","bubble","Zoom zoom zoom.","magic,fantasy"},
 	{"speedboat","DBCKHC","DkIgB",5,9,4,"E53935","F5F5F5","sleek pointed hull, big twin motors","engine","Leaves a wake. And a lot of wet enemies.","vehicle,aquatic"},
 	{"speedrun","KFCOKB","DY",3,10,2,"FFEB3B","00E5FF","clock and speed lines around caster","zoom","Skip the cutscenes. Go go go.","meme,speed"},
@@ -400,7 +403,4 @@ return {
 	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
 	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
 	{"sticky bun","IMBLGI","SNP",2,3,3,"A85A1E","D99A4A","spiral bun, gooey glaze","gloop","Hands will never be clean again.","edible,sticky,sweet"},
-	{"sticky floor","BMCLII","NO",2,1,3,"F1C40F","D2B48C","tacky floor mat","snap","Every step is a struggle.","trap,sticky"},
-	{"sticky note","BMALJK","dN",1,8,1,"F1C40F","F1C40F","small square sticky paper","tap","Stuck to your forehead.","office,sticky"},
-	{"sticky rice","IMBLGI","SNP",2,3,3,"F7F4EC","E8E0D0","clumpy white rice mound","gloop","Rice that refuses to let go.","edible,sticky"},
 }

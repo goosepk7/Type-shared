@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nothosaurus","ABDJEC","DfHB",5,6,7,"5A6A5A","C8C8B0","seal-like early sea reptile","roar","Half seal, half lizard.","extinct,reptile,aquatic,ocean"},
+	{"nothronychus","AMDJBA","DkfT",6,6,7,"8A7A5A","D8C8A8","potbellied scythe-claw dino","roar","Potbelly. Giant claws. Eats salad.","dinosaur,extinct,reptile,predator"},
 	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
 	{"nova","FHDFOI","EkP",6,8,1,"FFFDE7","FF80AB","blinding ring of white light","boom","A mini star explosion. Mini.","space,explosive"},
 	{"nova bomb","FHDGKI","KEk",8,6,1,"FFFDE7","FF80AB","white-pink sphere detonating into a nova ring","boom","A tiny supernova. Pocket edition.","space,explosive"},
@@ -401,6 +403,4 @@ return {
 	{"pecan pie","IMBLGI","ScN",2,3,3,"7A3E1E","D9A04A","glossy nut-topped pie","gloop","Sticky, nutty, and dangerous.","edible,sticky"},
 	{"pecan sandies","IMBAKK","Uke",3,7,2,"E8C88A","7A3E1E","crumbly round nut cookies","whoosh","Sandy, buttery, and nutty.","edible,dessert"},
 	{"peccary","AMCJAA","dfM",3,4,4,"4E4642","E8E0D8","bristly pig-like, white collar","bleat","Smells funky. Travels in gangs.","mammal,farm,desert"},
-	{"peck","KMAADB","fTO",2,10,1,"F5B041","FFFFFF","rapid-fire beak jabs like a tiny jackhammer","tok","Peckpeckpeckpeckpeckpeck.","bird,melee"},
-	{"pedal","KABOKB","DkI",3,9,2,"1F2937","F97316","foot flooring a pedal, flames from behind","vroom","Pedal to the metal. Metal to the wall.","vehicle,speed"},
 }

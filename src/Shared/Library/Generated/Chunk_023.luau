@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sheriff badge","BMAONI","h",2,5,4,"D4A72C","C9CED4","five-point star badge","swish","This town ain't big enough.","clothing,cowboy"},
+	{"sheriff robot","OKCJNA","Ge",5,5,7,"94A3B8","FACC15","robot with cowboy hat and star badge","clank","This town ain't big enough for two robots.","robot,western"},
 	{"shetland pony","AMCKAA","Dkg",3,5,5,"6A4A2E","2A1A12","tiny shaggy pony","neigh","Small pony. Very stubborn.","mammal"},
 	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
 	{"shiba inu","AMBJAA","DQf",4,7,4,"D98A3A","FFF2E0","fox-like, curled tail, smug face","bark","Much wow. Very shiba.","mammal,pet,meme"},
@@ -401,6 +403,4 @@ return {
 	{"softball","BMAA3F","ke",2,8,4,"F1C40F","C0392B","big yellow stitched ball","bonk","Not actually soft.","sport"},
 	{"softshell turtle","AMBJUA","GNB",2,4,5,"8A8A6A","C8C8A8","flat pancake turtle with snorkel nose","hiss","A pancake with a snorkel.","reptile,armored"},
 	{"soil","FGBCnI","GW",3,2,5,"5C3E25","7E9C4A","mound of dark earth with sprouts","rustle","Good for gardens. Bad for intruders.","plant"},
-	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
-	{"solar farm","EHEMII","GKSe",3,1,5,"1A237E","FFC107","rows of tilted dark glass panels","thud","Soaks up the sun. Zaps it back.","structure,building"},
 }

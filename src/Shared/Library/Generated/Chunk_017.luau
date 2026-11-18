@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"moderator","LHCJNA","GOY",5,5,6,"DC2626","F8FAFC","badge, giant ban hammer","ding","Ban hammer has been swung.","gaming,meme"},
+	{"mofongo","IGBOKI","F",2,5,3,"D9A04A","8A5A3A","mashed plantain dome","crunch","A mound of garlicky plantain.","edible,healthy"},
 	{"mohawk","BMBHJF","DfT",4,6,4,"39D353","FF2E93","tall spiky green hair fin with pink tips","shing","Hair so sharp it needs a licence.","body,punk,sharp"},
 	{"mohinga","IBBOGI","FS",3,4,3,"C8A040","F2E8C8","fish noodle soup","slurp","Burmese breakfast soup.","edible,warm,healthy"},
 	{"moi moi","IGBOKI","F",2,5,3,"E8762B","F2C870","steamed bean pudding","crunch","A steamed bean cake.","edible,healthy"},
@@ -401,6 +403,4 @@ return {
 	{"note","KFAAKB","UeO",2,8,1,"111827","FACC15","black quaver note bouncing along five wavy lines","ding","Do re mi fa so la ti DOH.","music"},
 	{"notebook","BMAAJK","e",1,7,1,"2F6FD1","F2F2EE","spiral-bound notebook","tap","Taking notes. Taking names.","school"},
 	{"nothingness","FICNOI","iZ",4,3,3,"0D0D12","3A3A4A","blank grey-black area, sound fades","hush","There is nothing here. Literally.","spooky,silly"},
-	{"nothosaurus","ABDJEC","DfHB",5,6,7,"5A6A5A","C8C8B0","seal-like early sea reptile","roar","Half seal, half lizard.","extinct,reptile,aquatic,ocean"},
-	{"nothronychus","AMDJBA","DkfT",6,6,7,"8A7A5A","D8C8A8","potbellied scythe-claw dino","roar","Potbelly. Giant claws. Eats salad.","dinosaur,extinct,reptile,predator"},
 }

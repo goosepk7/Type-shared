@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"peck","KMAADB","fTO",2,10,1,"F5B041","FFFFFF","rapid-fire beak jabs like a tiny jackhammer","tok","Peckpeckpeckpeckpeckpeck.","bird,melee"},
+	{"pedal","KABOKB","DkI",3,9,2,"1F2937","F97316","foot flooring a pedal, flames from behind","vroom","Pedal to the metal. Metal to the wall.","vehicle,speed"},
 	{"pedal swan","DBBKHC","DkgB",2,2,3,"FFFFFF","FFB300","big white swan with seats inside","splash","The swan has seen things.","vehicle,aquatic,silly"},
 	{"pee","FBBNGI","dSN",1,3,1,"F7E36B","FBF3B0","small yellow puddle with a wavy shine and a tiny sign","squirt","Should have gone before we left.","silly,gross"},
 	{"peekaboo","KLAOKI","ZO",1,8,1,"F8BBD0","FFFFFF","caster blinking in and out","boo","Peekaboo! I see you.","cute,silly"},
@@ -68,7 +70,7 @@ return {
 	{"pharaoh mummy","AIDJNA","ieNh",7,3,7,"CA8A04","1E3A8A","golden death mask, striped headdress, bandages","groan","Woke up from a 3000-year nap. Still tired.","undead,royal,ancient,spooky"},
 	{"pharmacist","LJCJNA","FM",3,4,4,"F8FAFC","22C55E","lab coat, pill bottles","ding","Here's your potion. Twice daily.","healer"},
 	{"pharmacy","EMCNII","FS",2,1,6,"F5F5F5","43A047","white shopfront with a green cross","ding","Healing supplies in stock.","structure,building,shop"},
-	{"phase shift","KLBOKJ","ZY",3,8,2,"80DEEA","E1BEE7","caster turns translucent and ghostly","warp","Not quite here. Not quite gone.","magic"},
+	{"phase shift","KLBONJ","GZ",3,9,2,"8FE8F0","C9A8F0","turn ghostly for a moment: hits pass right through","warp","Not quite here. Not quite gone.","hero,movie,magic"},
 	{"phase spider","ALCJFA","ZMY",4,7,3,"7C3AED","1F2937","translucent purple spider fading in and out","skitter","Now you see it. Now it's on you.","insect,magic"},
 	{"pheasant","AMBJDA","dAf",2,4,2,"B8541E","1E5A3A","long tail, coppery body, green head","cluck","Very fancy. Very bad at flying.","bird,farm"},
 	{"philippine eagle","AMDJDB","DAfT",6,9,3,"6A4A2E","F2EEE6","shaggy crest, huge blue-grey beak","screech","Wears a lion mane on its head.","bird,predator"},
@@ -401,6 +403,4 @@ return {
 	{"pomelo","IMCAKF","jke",4,6,2,"DCE57A","F7D8C9","huge pale green citrus, thick rind","squirt","The grapefruit's big older cousin.","edible,fruit,sour"},
 	{"pomeranian","AMBJAA","dQf",2,6,2,"F2A04A","FFE3BC","tiny fluffball, fox face","yip","A dandelion that barks.","mammal,pet,cute"},
 	{"pommel horse","BMCCII","G",1,1,6,"7A4E2D","D2B48C","padded leather block on legs","bonk","A horse that never moves.","sport"},
-	{"pond scum","NJCLMI","SMNP",2,1,2,"9CCC65","C0CA33","green film covering water","splash","Gross. Slippery. Sticky.","plant,aquatic,silly"},
-	{"pontoon boat","DBCKHC","DkgB",3,4,5,"F5F5F5","9E9E9E","flat deck on twin floating tubes","splash","The party has arrived on the lake.","vehicle,aquatic,silly"},
 }

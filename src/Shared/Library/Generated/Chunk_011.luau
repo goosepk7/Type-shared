@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant gumball","IMEGIF","UkI",7,2,7,"E0102B","4FA3E8","boulder-sized glossy gumball","thud","Bounces over everything.","edible,giant,silly"},
+	{"giant gummy bear","IMEJBA","Udkf",7,2,7,"E0102B","F2A62B","towering translucent bear","thud","Wobbles menacingly. Very sweet.","edible,giant,silly,candy"},
 	{"giant hamster ball","DMCKHF","UDkg",2,7,4,"81D4FA","FFFFFF","giant clear ball with a rider inside","boing","Roll in. Bowl everyone over.","mechanical,vehicle,land,silly"},
 	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
 	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},
@@ -85,6 +87,7 @@ return {
 	{"gladiator helmet","BKBONI","GD",2,5,6,"A86F32","D4A72C","grilled visor helm with crest","clank","Are you not entertained?","armor,ancient"},
 	{"gladiolus","NGCNMI","dFST",3,1,2,"F44336","2E7D32","tall sword-like spike of blooms","rustle","Named after swords. Acts like it.","plant,flower"},
 	{"glaive","CKDHuK","kfT",6,5,5,"8A929B","5A3A1E","blade on long pole","shing","A sword on a stick. Reach for days.","medieval,sharp"},
+	{"glare sweep","KACBNB","KT",5,9,3,"FF5A3A","FFC24A","twin heat beams from the eyes, swept by turning","laser","Look at me when I'm scorching you.","hero,movie,fire"},
 	{"glass","BCCCnI","GETa",4,1,2,"CFEFFF","FFFFFF","clear shiny pane with glints, cracks spreading","crash","You walked into it. Everyone does.","household,sharp,fragile"},
 	{"glass bottom boat","DBCKHC","DkgB",3,4,5,"F5F5F5","26C6DA","boat with a big window in the floor","splash","Look down. Fish look up.","vehicle,aquatic,silly"},
 	{"glass frog","AMAJAG","UZe",1,5,1,"B8F0A8","E8F8E8","translucent green frog","croak","You can see its heart beating.","amphibian,wetland"},
@@ -400,7 +403,4 @@ return {
 	{"grouper","ABDJEC","DfHB",5,7,4,"6A5A44","C8B48A","huge lips, chunky body","splash","Swallows fish whole. Big lips energy.","fish,aquatic"},
 	{"grouse","AMBJDA","dfO",2,4,2,"8A6A4A","F2F2F0","plump ground bird, feathered feet","cluck","Explodes out of bushes. Scares hikers.","bird,farm"},
 	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
-	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
-	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
-	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
 }

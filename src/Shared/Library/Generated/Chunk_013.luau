@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hooded seal","ABCJEC","UdfB",3,5,4,"9A9AA0","3A3A3A","inflatable nose balloon","bark","Blows up a red nose balloon.","mammal,aquatic"},
+	{"hoodie","BMCONI","FZ",1,6,2,"8E9196","24262A","zip hoodie with hood up","swish","Hood up. Mode: stealth.","clothing"},
+	{"hoodoo","MEDCII","GS",3,1,9,"D7826A","F4E4BC","tall thin rock spires with cap stones","rumble","Rock towers balanced on nothing.","place,terrain"},
 	{"hoof","BEBAtB","DkO",4,7,6,"3B2F2F","8D6E63","dark horse hoof with a shiny horseshoe","clack","Clip. Clop. Clobber.","body,farm"},
 	{"hook hand","CKBHrI","fH",3,7,4,"C9CED4","5A3A1E","curved hook on a cuff","bang","Handy, minus the hand.","pirate,sharp"},
 	{"hook sword","CKCHrK","fTH",5,7,4,"8A929B","9E1B32","sword with hooked tip","shing","Hook. Pull. Slash.","fantasy,sharp"},
@@ -201,7 +204,6 @@ return {
 	{"ice pick","BCAAuK","fT",2,8,2,"C9CED4","8B5A2B","thin spike with handle","clang","Chips ice. Chips armour.","kitchen,household"},
 	{"ice pillar","FCCLII","GJl",5,5,6,"81D4FA","FFFFFF","tall ice column bursting up","crack","Frozen elevator. Going up.","frozen"},
 	{"ice plant","NCALMI","GST",1,1,3,"E91E63","9CCC65","sparkly succulent with bright daisies","thud","Glistens like it is frozen. Is not.","plant,desert"},
-	{"ice prison","FCCLII","GJO",6,4,6,"81D4FA","E1F5FE","thick ice block encasing the target","crackle","Chill out in here for a while.","frozen"},
 	{"ice punch","KCCAKB","Jkf",5,8,3,"81D4FA","FFFFFF","frosted crystal fist punch","pow","Cold-blooded knuckles.","frozen,melee"},
 	{"ice resurfacer","DCCKHL","JkgN",3,3,6,"F5F5F5","2E86DE","squat boxy machine, leaves glossy ice trail","engine","Makes the floor too slippery to fight on.","mechanical,vehicle,land,silly"},
 	{"ice scraper","JCAHJK","Jf",1,7,2,"2F6FD1","24262A","small scraper with brush","thud","Scrape scrape. Visibility: restored.","winter"},
@@ -401,6 +403,4 @@ return {
 	{"jersey","BMBOVB","GDh",2,6,3,"DC2626","FFFFFF","red team shirt with a big number 10 flying like a flag","crowd","Number 10. Automatically 30% better.","sport,clothing"},
 	{"jersey devil","AACJAB","DjA",5,8,4,"57534E","F97316","horse head, bat wings, hooves, forked tail","screech","Born in a pine barren. Never pays rent.","cryptid,spooky"},
 	{"jerusalem artichoke","IEBAKK","keO",3,7,6,"C8A070","F2E8D0","knobby tan tuber","bonk","Not from Jerusalem. Not an artichoke.","edible,vegetable"},
-	{"jerusalem cricket","AMAJFA","dfP",1,6,1,"E8A04A","3A2A1A","big-headed striped cricket","buzz","Big head. Many nicknames.","insect"},
-	{"jester","LLCJNA","Ujd",3,8,3,"DC2626","FACC15","three-pointed bell hat, diamond suit","jingle","Tells jokes. Dodges tomatoes.","royal,silly"},
 }
