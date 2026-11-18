@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravlax","IGBOKI","F",2,5,3,"E8603A","7DBE3A","cured salmon slices with dill","crunch","Salmon cured with salt and patience.","edible,healthy"},
+	{"gravy","IMBNGI","FSN",2,4,1,"8A5A2A","C8904A","glossy brown sauce boat","splat","A river of savory.","edible,sauce"},
+	{"gravy boat","IMBNGI","SNP",2,4,1,"F7F4EC","8A5A2A","white boat-shaped jug","splat","A boat that only sails gravy.","edible,sauce"},
 	{"gravy flood","IMDFGI","INP",5,4,1,"8A5A2A","C8904A","wave of brown gravy","splat","A delicious disaster.","edible,sauce"},
 	{"gray fox","AMBJAA","jfb",3,7,2,"8C8C8E","C0602A","grey back, rusty sides, black-tipped tail","yip","The fox that climbs trees.","mammal,wild"},
 	{"gray squirrel","AMAJAA","Cdb",1,6,1,"8E8E8E","F2F2F0","grey bushy tail, chunky","squeak","Steals bird seed with zero shame.","mammal,cute"},
@@ -244,6 +247,7 @@ return {
 	{"harpoon gun","CKCAwI","THe",5,5,4,"F1C40F","8A929B","tube launcher with barbed spear","bang","Fires a spear, reels in a friend.","ocean,ranged"},
 	{"harpy","AFCJDB","jAfb",4,8,4,"7C2D12","D6D3D1","feathered wings, taloned legs, wild hair","screech","Steals your lunch with a screech.","mythical,bird,flying"},
 	{"harpy archer","AFCJDB","Ae",4,8,3,"7C2D12","FDE68A","harpy with feather arrows","screech","Shoots from the clouds.","bird,archer"},
+	{"harpy dive","KFCHDB","AfN",6,8,2,"C4B0E2","78E6D6","great lilac feathered wings, a screech, a talon dive","screech","Loud, rude and extremely punctual.","monster,folklore,myth,mobility"},
 	{"harpy eagle","AMDJDB","DAlfT",7,9,3,"6E6E74","F2F2F2","grey crest, massive talons","screech","Talons as big as bear claws.","bird,predator"},
 	{"harpy queen","AFDJDB","Abh",6,7,5,"7C2D12","FACC15","large harpy with jeweled crown","screech","Leads the screaming section.","bird,royal"},
 	{"harrier","AMCJDB","DAfT",5,9,3,"8A9098","F2F2F0","owl-like face, low gliding","screech","Flies low and slow. Then pounces.","bird,predator"},
@@ -399,8 +403,4 @@ return {
 	{"high elf","ALCJNA","jFTe",6,7,4,"E5E7EB","FACC15","tall elegant elf, silver armor, staff","chime","Thinks very highly of high elves.","mythical,magic,royal"},
 	{"high five","KMBOKI","DF",1,8,2,"FFE082","FFFFFF","two glowing palms slapping with sparkles","clap","Up top!","cute"},
 	{"high heels","BMBONI","T",1,6,2,"C0392B","24262A","pointy tall-heeled shoes","swish","Fashion with a point.","clothing"},
-	{"highland cow","AMDJAA","DkO",6,4,7,"B05E2A","E2A060","shaggy ginger fringe over eyes, horns","moo","Excellent hair day, every day.","mammal,heavy,farm,cute"},
-	{"highlander","LECJNA","Dkf",6,6,6,"15803D","DC2626","kilt, claymore, wild hair","drone","Charges in with bagpipe backup.","warrior"},
-	{"highlands","MFFNII","SN",3,1,8,"7CB342","AB47BC","rolling hills of heather and mist","rumble","Misty, windy, and wild.","place,terrain"},
-	{"hiker","LGCJNA","QF",3,5,5,"15803D","F97316","big backpack, walking poles, map","whoosh","Walks forever. Never tired.","outdoor"},
 }

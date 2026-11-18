@@ -274,6 +274,7 @@ return {
 	{"body","BMCJNA","Ddf",3,5,5,"E8B48A","3B82F6","headless torso in a t-shirt, arms flailing","thud","Forgot its head at home. Still showed up.","silly,body"},
 	{"boerewors","IABAKK","Ke",3,7,2,"8A3A1E","C8603A","coiled spiral sausage","whoosh","A sausage spiral. Grilled.","edible"},
 	{"bog lurker","AJDLNC","SfH",5,3,6,"3E5A3A","E8B23A","a bubbling bog pool hiding a mossy reed-crowned lurker","bubble","The pond was not empty. Ponds never are.","monster,swamp,trap,spooky"},
+	{"bog witch hut","AGDJlA","Qkf",6,5,7,"A48460","96FF8C","a crooked log hut stalking on two scaly bird legs","creak","Knock before entering. It might knock back.","monster,folklore,witch,summon"},
 	{"bog wraith","AJCJOJ","ZMN",4,5,3,"365314","BEF264","misty green figure rising from bog","wail","Smells like swamp. Moans like ghost.","ghost"},
 	{"bogeyman","AICJNA","jZO",5,6,4,"1F2937","7C3AED","tall lanky shape in the closet","whisper","Scared of kids who aren't scared.","spooky"},
 	{"boggart","AIBJNA","jZb",3,6,3,"57534E","1F2937","lumpy shapeshifter in the cupboard","cackle","Lives in your closet. Rearranges your socks.","spooky,silly"},
@@ -402,5 +403,4 @@ return {
 	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
 	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
-	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
 }

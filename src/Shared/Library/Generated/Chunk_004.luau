@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
 	{"boysenberry","IGAELB","eVP",2,7,1,"5E1F3F","8A2B5A","plump dark maroon berry","pitter","A berry with a big name.","edible,fruit,sweet"},
 	{"bracelet","BMAOKJ","G",1,6,3,"C9CED4","3E9E6E","chunky bangle","chime","Wrist bling.","treasure,shiny"},
 	{"bracers","BKBONI","Ga",1,7,5,"6B4226","A86F32","armoured forearm guards","clank","Deflect with flair.","armor,defense"},
@@ -402,5 +403,4 @@ return {
 	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 	{"carcharodontosaurus","AMEJBA","DkfT",8,6,7,"8A5A3A","D8A07A","huge skull, shark-like teeth","roar","Shark teeth on a giant dino.","dinosaur,extinct,reptile,predator"},
 	{"card storm","FLCELB","jdT",4,8,1,"D32F2F","FFFFFF","swirl of glowing playing cards","shff","52 card pick-up. Painful version.","magic,silly"},
-	{"cardamom","IFBDOJ","jPO",2,5,1,"8DB86A","C8D88A","small green pods","puff","Fragrant green pods of mystery.","edible,spice"},
 }

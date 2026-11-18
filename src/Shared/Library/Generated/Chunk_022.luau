@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rock monster","AEDJGF","GDk",6,3,8,"78716C","A8A29E","lumpy boulder with stubby arms","rumble","Rocks and rolls.","heavy"},
+	{"rock rose","NGBNMI","dFS",1,1,3,"F48FB1","FFEB3B","papery pink blooms on scrubby bush","rustle","Blooms for one day only. Make it count.","plant,flower"},
+	{"rock shield","FECIKI","G",2,2,9,"8D6E63","BCAAA4","rocks orbiting into a dome","rumble","A shield made of floor.","heavy,defence"},
+	{"rock solid","KECOKI","G",1,2,9,"8D6E63","BCAAA4","stony grey glow","thunk","Unshakeable.","defence,heavy"},
+	{"rock star","LDCJNA","jkO",5,6,4,"111827","DC2626","leather jacket, electric guitar, wild hair","guitar","Smashes the guitar. And you.","music"},
+	{"rock throw","FECAKB","keO",5,6,6,"8D6E63","BCAAA4","chunk of earth torn up and hurled","thud","Yeet, but geology.","heavy"},
 	{"rock tornado","HEEN5K","klHO",8,5,6,"795548","BCAAA4","grey funnel full of whirling boulders","rumble","A tornado that brought its own rocks.","storm,heavy"},
 	{"rock wallaby","AMCJAG","Ukf",3,6,2,"8A7A6A","E8A04A","colorful cliff-hopping wallaby","chirp","Bounces on cliffs like springs.","mammal,marsupial"},
 	{"rocket","DAEKHB","KDEAkTg",8,9,6,"F5F5F5","E53935","tall cone body, fins, flame exhaust","roar","3, 2, 1... bonk.","vehicle,space"},
@@ -397,10 +403,4 @@ return {
 	{"sea slug","ABAJGI","MN",1,1,2,"8A3AD8","F2A02A","neon frilly slug","squelch","The ocean's most fashionable slug.","mollusk,aquatic"},
 	{"sea snake","ABCJCC","fMNB",4,6,3,"3A5A8A","F2F2F0","banded snake, paddle tail","hiss","Swims with a paddle tail.","reptile,venomous"},
 	{"sea spider","ABBJRA","GfT",2,4,5,"E8D8C0","C88A5A","spindly legs, tiny body","clack","All legs, almost no body.","crustacean,aquatic,armored"},
-	{"sea sponge","ABCLMI","GiWN",3,1,4,"E8C83A","D8A02A","porous tube sponge","crackle","Soaks up everything. Even drama.","aquatic,ocean,reef"},
-	{"sea spray","FBBDOJ","dN",2,6,1,"8FD6F2","FFFFFF","fine salty mist burst","splash","Salty mist to the face.","aquatic"},
-	{"sea squirt","ABAJGI","GeN",1,1,6,"E8A04A","F2D07A","squishy tube with two siphons","squelch","Squirts water at you. Rude.","mollusk,aquatic"},
-	{"sea storm","FBEEOJ","ILP",8,5,4,"263238","4FC3F7","dark waves and slanted rain with lightning","roar","Sailors hate this one.","aquatic,storm"},
-	{"sea turtle","ABCJUC","GFNB",3,5,8,"6A8A4A","D8C88A","flipper legs, flat shell","hiss","Rides currents like a surfer.","reptile,armored"},
-	{"sea urchin","ABAJGA","GTeN",1,1,4,"3A1E4A","8A5AA0","round ball of long spines","squelch","A pincushion that bites back.","aquatic,ocean"},
 }

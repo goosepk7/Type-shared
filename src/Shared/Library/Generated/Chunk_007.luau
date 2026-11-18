@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cream tea","IGBOKI","F",2,5,3,"F7F2EC","C8762B","tea with scones and jam","crunch","Very British. Very civilized.","edible,healthy,fancy"},
+	{"creamed corn","IMBLGI","SNP",2,3,3,"F2D06A","F2E8C8","creamy yellow mush","gloop","Corn that gave up.","edible,sticky"},
 	{"create","KLCOKJ","WFh",4,5,3,"22D3EE","F472B6","sparkling hands shaping a glowing blob into a little house","chime","Glue, glitter, and a dream.","magic,art"},
 	{"creature","AICJAA","jf",4,5,4,"365314","A855F7","odd unknown silhouette with many eyes","growl","Nobody knows what it is. Not even it.","monster"},
 	{"creep","KIBONA","QZN",2,3,2,"374151","9CA3AF","shadow on exaggerated tiptoes with a finger to its lips","hush","Tip. Toe. Tip. Toe. Creak. Freeze.","stealth"},
@@ -401,6 +403,4 @@ return {
 	{"disco ball","BHCG3K","jca",2,2,3,"C9CED4","A66BDB","spinning mirrored sphere","squeak","Dance fight!","party"},
 	{"disco floor","BHDNII","jd",2,1,5,"A66BDB","3FC1D9","flashing tile floor","beep","Can't stop dancing.","tech"},
 	{"disco ghost","AICJGJ","jdO",3,6,2,"F472B6","22D3EE","ghost in a disco ball sheet","beat","Haunts dance floors. Groovy.","ghost,silly,music"},
-	{"disco wizard","LLCJNA","jdO",4,5,3,"F472B6","22D3EE","sequin robe with disco ball staff","beat","Casts groove. Everyone dances.","magic,silly,music"},
-	{"discus","BMBA3F","Uke",3,8,6,"C9CED4","24262A","flat heavy spinning disc","bonk","Ancient frisbee for serious people.","sport,ancient"},
 }
