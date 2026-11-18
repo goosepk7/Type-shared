@@ -247,7 +247,7 @@ return {
 	{"skateboarder","LMCJNL","UDd",3,9,3,"DC2626","111827","helmet, skateboard, ollie pose","whoosh","Grinds on rails. And your nerves.","sport"},
 	{"skateboarding","KMBOHF","UDk",3,9,2,"111827","FACC15","board flipping under mid-air trainers, grind sparks","clack","Kickflip! Landed it. Nobody was filming.","sport,cool"},
 	{"skating","KCBONK","UDj",3,8,2,"F8FAFC","F472B6","figure in a spin on one blade, arms up, ice sparkles","swish","Triple axel. Double wobble. Single bruise.","sport,frozen"},
-	{"skee ball","BMAA3F","Ue",2,7,4,"7A4E2D","F2F2EE","wooden arcade ball","bonk","Up the ramp, into the face.","sport"},
+	{"skee ball","BMBA3F","Ue",4,7,2,"C8894B","3EC1D3","wooden arcade ball off a little ramp","bonk","Up the ramp, into the face.","game,arcade,lob"},
 	{"skeleton","AICJNA","feV",4,6,3,"F5F5F4","57534E","rattling bones, grinning skull","rattle","Has a funny bone. Uses all of them.","undead,spooky,halloween"},
 	{"skeleton archer","AICJNA","TeV",4,6,3,"E7E5E4","78350F","skeleton with a bow and quiver","rattle","Never misses. Never hits either.","undead,spooky,archer"},
 	{"skeleton army","AIDJLA","fVPh",6,5,5,"F5F5F4","1F2937","rows of rattling skeleton soldiers","rattle","Bones. So many bones.","undead,spooky,swarm"},

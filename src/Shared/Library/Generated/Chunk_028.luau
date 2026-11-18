@@ -284,6 +284,7 @@ return {
 	{"weta","AMBJFA","dTP",2,6,1,"6A4A2A","C8A07A","huge spiky cricket","buzz","Giant cricket heavier than a mouse.","insect"},
 	{"wetsuit","BBCONI","B",1,7,3,"24262A","47D7E8","sleek neoprene suit","clank","Swim faster. Look sleeker.","armor,defense"},
 	{"whack","KMBAKB","kf",3,8,2,"FFAB91","FFFFFF","big comic swoosh and impact","whack","Whack-a-villain.","silly"},
+	{"whack a mole","AECLtG","Ck",4,7,4,"8B5A2B","FF4F6E","mole holes round you and a cartoon mallet","bonk","Bonk! Missed. Bonk!","game,arcade,area"},
 	{"whack-a-mole mallet","BMCHtI","kfO",3,7,3,"C0392B","F1C40F","padded arcade mallet","thud","Bonk! Bonk! Bonk!","game,silly"},
 	{"whale","ABFJEC","kIB",8,3,9,"3E5A78","C8D6E2","enormous streamlined body, fluke tail, spout","whalesong","Burps rainbows from its blowhole. Allegedly.","mammal,aquatic,ocean,heavy"},
 	{"whale shark","ABFJEC","DHB",8,3,9,"3A5470","F2F2EE","colossal shark, white polka-dot back","chomp","Biggest fish. Eats only tiny stuff.","fish,aquatic,ocean,predator,gentle"},

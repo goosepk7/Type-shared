@@ -287,6 +287,8 @@ return {
 	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
 	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
 	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
+	{"pixel ship","OHAMgE","Ae",3,8,4,"E8EDF2","FF4F6E","tiny voxel starfighter over your shoulder","pew","Pew. Pew pew.","game,arcade,pet"},
+	{"pixel snake","AHCJCD","QS",4,7,3,"7CFF6B","1FA34A","glowing voxel snake with a stinging trail","blip","Don't touch the tail.","game,arcade,trail"},
 	{"pixie swarm","ALBJLB","jAP",3,9,1,"F0ABFC","FDE68A","cloud of glittering winged sprites","chime","Glitter everywhere. You'll find it for years.","fairy,swarm"},
 	{"pixiu","AHCJAA","GQb",4,6,6,"D97706","FDE68A","winged lion with antler horn","roar","Eats gold. Never shares.","mythical,lucky"},
 	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},

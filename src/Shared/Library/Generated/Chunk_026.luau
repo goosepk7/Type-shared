@@ -373,6 +373,7 @@ return {
 	{"toilet paper launcher","CMCMxK","deN",1,6,3,"F2F2EE","8E9196","tube cannon of paper rolls","boing","Decorates trees. And enemies.","prank,silly"},
 	{"tokay gecko","AMBJAA","Cf",2,7,2,"6A8AA0","E8701E","blue-grey gecko with orange spots","tokay","Screams its own name. Bites.","reptile"},
 	{"token","BKAA3K","Uce",1,8,4,"D4AF37","B45309","brass coin stamped with a star and NO CASH VALUE","clink","No cash value. Much smack value.","gaming,shiny"},
+	{"token rush","BHBOKK","D",2,10,3,"FFC83D","B57CFF","spinning arcade tokens scattered round you","clink","Grab them all. Go go go.","game,arcade,mobility"},
 	{"tokoloshe","AIAJNA","jZb",2,7,2,"57534E","22C55E","tiny hairy mischief maker","cackle","Hides under beds. Why everyone uses bricks.","spooky"},
 	{"toll booth","EMBCII","GSN",1,1,6,"FFB300","1A1A1A","small booth with a barrier arm","thud","Pay up or turn around.","structure,building,silly"},
 	{"tom kha","IBBOGI","FS",3,4,3,"F2E8C8","E8A040","coconut soup with lime leaves","slurp","Creamy coconut soup, gently spicy.","edible,warm,healthy"},

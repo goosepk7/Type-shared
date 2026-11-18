@@ -82,6 +82,7 @@ return {
 	{"tradition","KECOII","GSh",3,2,6,"7C2D12","D4AF37","maypole with ribbons and elders nodding sternly","bell","We have always done it this way. Nobody knows why.","ancient"},
 	{"traffic cone","BMBCII","Gd",1,1,3,"E67E22","F2F2EE","orange cone with white stripes","clink","Detour! This way to defeat.","hardware"},
 	{"traffic jam","EMENII","GSN",3,1,7,"E53935","FFC107","endless line of honking cars","horn","Nobody moves. Ever.","structure,silly"},
+	{"traffic lane","BMDNeL","Dk",5,9,1,"FFD23F","3A86FF","a toy road and two boxy toy cars","honk","Look both ways.","game,arcade,knockback"},
 	{"traffic light","OHCMmI","NO",2,1,6,"24262A","2E8B57","three-light signal on pole","clank","Red means STOP. Everyone.","mechanical"},
 	{"tragedy","KBCF6B","iNO",4,4,1,"1E3A8A","9CA3AF","weeping theatre mask and a single wilting rose","wail","Dropped the ice cream. Curtain. Weep.","art,mood"},
 	{"trail","MEDNnI","DQSN",4,2,6,"C2A878","6B8E23","winding dirt track with signposts pointing everywhere","crunch","Stay on it. It does not stay on you.","place,terrain"},
