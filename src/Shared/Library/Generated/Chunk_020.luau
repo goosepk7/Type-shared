@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
+	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
+	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},
 	{"polo mallet","BMCHtK","kf",2,6,3,"C49A6C","F2F2EE","long skinny mallet","bonk","Very fancy bonking.","sport"},
 	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
@@ -95,6 +98,7 @@ return {
 	{"poutine","IMBLGI","FcN",2,3,3,"E8B860","6B3A1E","fries, cheese curds, brown gravy","gloop","A delicious edible swamp from Canada.","edible,sticky"},
 	{"poverty","KMBO2B","iXb",2,4,2,"A8A29E","78716C","open empty wallet with one moth flying out","flutter","Wallet contains: moth. One.","silly"},
 	{"pow","KMCAKB","kO",5,10,1,"FF1744","FFEB3B","comic red-yellow impact burst","pow","POW! Right in the comic book.","silly"},
+	{"pow bubble","KMCHKI","kf",3,8,2,"FFD93B","E53935","a jagged comic POW! burst bubble that slams forward","pow","Sound effects hurt now.","cartoon,silly,comic"},
 	{"powdered donut","IMBDOJ","jc",2,5,1,"F7F7F7","E8B860","sugar-coated round donut","puff","A donut in a snow coat.","edible"},
 	{"powdered sugar","IFBDOJ","jNP",2,5,1,"F7F7F7","F2F2F2","snowy white powder","puff","Sugar that's been to the gym. Ground fine.","edible"},
 	{"power","KLCOKJ","DW",4,6,4,"FF6D00","FFFFFF","crackling orange-white energy aura","hum","All the power. Terms and conditions apply.","magic"},
@@ -366,7 +370,7 @@ return {
 	{"raita","ICBAKJ","JFN",2,5,2,"F7F4EC","7DBE3A","white yogurt with cucumber","squish","Puts out curry fires.","edible,frozen"},
 	{"rajasaurus","AMDJBA","DkfT",6,6,7,"8A4A2A","E8A04A","short horn crown","roar","Royal lizard with a crown bump.","dinosaur,extinct,reptile,predator,royal"},
 	{"rake","JKCHJK","fH",2,5,4,"2E8B57","8B5A2B","row of tines on long handle","clank","Step on it. Learn something.","tool,garden"},
-	{"rake trap","BMBLII","kO",1,1,3,"2E8B57","8B5A2B","rake lying tines-up","snap","Thwack. Cartoon physics.","trap,silly"},
+	{"rake trap","BMBLII","SO",2,3,2,"8B5A2B","9AA0AA","a garden rake hidden in the grass, tines up","thwack","Thwack. Cartoon physics.","cartoon,silly,trap"},
 	{"rakshasa","AIDJNA","jZfY",7,6,6,"7C2D12","FACC15","tiger-headed illusionist in robes","growl","Master of illusions and backwards palms.","mythical"},
 	{"rally","KHCNOI","DF",3,5,3,"FFD54F","D32F2F","banner glow ring over allies","horn","Everybody, with me!","support"},
 	{"rally car","DECKHL","Dkg",5,9,5,"0D47A1","FFFFFF","hatchback with mud flaps and roof lights","engine","Sideways is the fastest way.","mechanical,vehicle,land"},
@@ -399,8 +403,4 @@ return {
 	{"ratio","KDBAKB","XbO",4,8,1,"38BDF8","F43F5E","tiny reply bubble with a thousand hearts over a big sad one","ding","Ratio. Plus you fell off. Plus no summons.","meme,internet"},
 	{"rattan","NGCLMI","WSTHN",3,1,4,"C9A55A","7CB342","spiny climbing palm vines","rustle","Spiky ropes. Good for furniture. And traps.","plant"},
 	{"rattle","BMAFKI","jd",1,7,2,"F06292","F2F2EE","handle with ball full of beads","squeak","Shake shake shake.","toy,baby"},
-	{"rattlesnake","AMCJCD","fMNO",5,6,3,"B8986A","5A4A30","diamond pattern, rattle tail","rattle","Shakes a maraca before biting.","reptile,venomous,desert"},
-	{"raven","AIBJDB","jdAb",3,7,1,"1A1A20","3A3A50","big black shaggy-throat bird","tweet","Talks back. Literally talks.","bird,cute,spooky,smart"},
-	{"ravioli","IMAELB","ceP",2,7,1,"F2D08A","C8302B","square stuffed pasta pillows","pitter","Tiny pasta pillows.","edible"},
-	{"ray","FHCBKB","KTe",4,10,1,"FFE66D","FFFFFF","straight golden beam of light with sparkles","zing","A little ray of sunshine. In your eyes.","light"},
 }

@@ -362,6 +362,7 @@ return {
 	{"diving suit","BBCONI","GB",2,2,8,"B58A3A","B8693D","brass bubble helmet, heavy boots","clank","Ocean floor fashion.","ocean"},
 	{"divinity","IHBLKI","dSc",2,3,3,"F7F7F2","F2E8D8","white fluffy nut candy","chomp","A heavenly fluffy candy.","edible,sweet,holy"},
 	{"dizzy","KLBFOB","j",2,6,1,"FFEB3B","7C4DFF","spinning stars and birdies ring","wub","Everything spins. Wheee.","silly"},
+	{"dizzy birds","AMAAKI","jO",2,7,1,"5AB0F0","FFB300","little cartoon birds that circle a dazed head","tweet","Tweet tweet. Where am I.","cartoon,silly,control"},
 	{"dj","LDCNNI","jdO",4,4,3,"7C3AED","22D3EE","headphones, turntables, glow sticks","beat","Drops the beat. The bass knocks you over.","music"},
 	{"djembe","BMBFJI","O",2,5,3,"8B5A2B","D2B48C","goblet-shaped hand drum","boom","Pa-tum-pa-tum!","music"},
 	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},
@@ -402,5 +403,4 @@ return {
 	{"donkey","AMCKAA","GDkg",3,4,5,"8A8076","D8D0C4","long ears, grey coat, pale muzzle","bray","Stubborn. Loyal. Loud.","mammal,farm"},
 	{"donut","IMBLKI","UdSc",2,3,3,"F2A6C8","D9A04A","ring torus, pink glaze, sprinkles","chomp","A ring of power, but glazed.","edible,sweet"},
 	{"donut decoy","IMBLKI","jdc",2,3,3,"F2A6C8","D9A04A","tempting donut on a plate","chomp","Look over there! A donut!","edible,sweet"},
-	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
 }

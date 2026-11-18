@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tapir","AMCJAA","DkIB",4,4,8,"2A2624","E6E2DC","pig-like, short trunk, black-white saddle","trumpet","Looks like a pig wearing an oreo costume.","mammal,heavy,wild,silly"},
+	{"taquito","IMBHJI","fT",3,5,4,"D9A04A","F2E2B8","thin rolled crispy tube","bonk","A taco rolled into a spear.","edible,silly"},
+	{"tar","FEBLII","SN",3,2,4,"1E1B18","4A443D","glossy black sticky puddle","squelch","Sticky now. Sticky forever.","flammable"},
+	{"tar monster","AJCJGF","HN",4,2,5,"0A0A0A","52525B","glossy black sticky blob","squelch","Sticky. Everything sticks. Forever.","slime"},
+	{"tar pit","MICLII","KSHN",4,1,6,"212121","424242","bubbling black sticky pool","bubble","Very sticky. Very permanent.","place,terrain"},
 	{"tar pit trap","BECLII","SNO",4,1,4,"24262A","7A4E2D","bubbling black puddle","snap","Sticky, gloopy, inescapable.","trap,defense"},
 	{"tar sprayer","OECMxI","eNO",4,4,5,"24262A","7A4E2D","barrel of hot sticky tar","clank","Glop. Not going anywhere.","defense,mechanical"},
 	{"tarantula","AJBJQA","fN",3,6,2,"3A2A20","E8701E","big hairy spider, thick legs","skitter","Big, hairy, and secretly gentle.","arachnid,spooky,venomous"},
@@ -398,9 +403,4 @@ return {
 	{"traffic cone","BMBCII","Gd",1,1,3,"E67E22","F2F2EE","orange cone with white stripes","clink","Detour! This way to defeat.","hardware"},
 	{"traffic jam","EMENII","GSN",3,1,7,"E53935","FFC107","endless line of honking cars","horn","Nobody moves. Ever.","structure,silly"},
 	{"traffic light","OHCMmI","NO",2,1,6,"24262A","2E8B57","three-light signal on pole","clank","Red means STOP. Everyone.","mechanical"},
-	{"tragedy","KBCF6B","iNO",4,4,1,"1E3A8A","9CA3AF","weeping theatre mask and a single wilting rose","wail","Dropped the ice cream. Curtain. Weep.","art,mood"},
-	{"trail","MEDNnI","DQSN",4,2,6,"C2A878","6B8E23","winding dirt track with signposts pointing everywhere","crunch","Stay on it. It does not stay on you.","place,terrain"},
-	{"trail mix","IEAELB","FeP",2,7,1,"A86A3A","C2302B","nuts, raisins, candy bits","pitter","Adventurer fuel. Pick out the candy.","edible,sweet"},
-	{"train","DMEKHL","DkTg",7,7,9,"2D3A4A","C0392B","long engine with carriages, cowcatcher","horn","Runs on time. Runs over everything.","mechanical,vehicle,land"},
-	{"train conductor","LMCJNL","Dk",4,6,5,"1E3A8A","FACC15","striped cap, whistle, pocket watch","choo","All aboard! Choo choo.","vehicle"},
 }

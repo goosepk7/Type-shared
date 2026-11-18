@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"saffron","IHBDOJ","FP",2,5,1,"E8402B","F2A62B","red threads in a tiny jar","puff","Worth more than gold, thread for thread.","edible,spice,royal"},
+	{"sage","LLCJNA","jFe",4,3,4,"F8FAFC","0EA5E9","long robe, longer beard, scroll","chime","Says one wise thing. You lose anyway.","magic"},
+	{"sage grouse","AMBJDA","df",2,4,2,"8A7A6A","F2F2EE","fanned spiky tail, chest sacs","cluck","Puffs out two chest balloons.","bird,farm"},
+	{"sagebrush","NEBCMI","GS",2,1,4,"9E9E9E","7CB342","silvery scrubby desert bush","rustle","Smells like a desert rainstorm.","plant"},
 	{"sagittarius","MHCEKJ","Te",5,5,5,"FFFFFF","FF7043","star centaur drawing a bow","rumble","Fires star arrows. Never misses. Okay, rarely.","space,zodiac"},
 	{"saguaro","NEDCMI","GST",5,1,8,"388E3C","F5F5F5","tall cactus with upward bending arms","thud","Waves hello. Spikes goodbye.","plant,desert,sharp"},
 	{"sahara","MAFNII","KSN",6,1,9,"F2C27A","E6A04D","endless rolling golden dunes","rumble","Sand. Then more sand. Then a sandstorm.","place,landmark"},
@@ -286,6 +290,7 @@ return {
 	{"self balancing scooter","DMAKHF","Dkg",2,5,2,"2B2B2B","C0C0C0","two side wheels, tall handle post","engine","Leans forward. Achieves victory.","mechanical,vehicle,land,silly"},
 	{"selfie","KHBF6B","jdO",3,8,1,"FFFFFF","EC4899","phone on a stick with a blinding flash and a pout","click","But first, let me blind you.","meme,internet"},
 	{"selkie","ABCJAC","jFB",4,7,4,"64748B","E2E8F0","seal with a woman's face, silky coat","splash","A seal on weekdays, a person on weekends.","mythical,aquatic"},
+	{"seltzer spray","BBBHwI","kN",2,7,2,"7FD3F5","C9CDD6","a soda siphon that sprays a fizzy jet","fizz","Refreshing. Aggressively.","cartoon,silly,water"},
 	{"semifreddo","ICBAKJ","JeN",3,5,2,"F7E8C8","D7263D","half-frozen sliced dessert","squish","Half frozen, fully elegant.","edible,frozen,sweet,dessert"},
 	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},
 	{"sentence","KMCBCB","STN",3,6,2,"1F2937","FFFFFF","long line of words ending in a heavy full stop","tap","Ends with a period. So do you.","school"},
@@ -398,9 +403,4 @@ return {
 	{"shave","KKBHJB","fXN",3,7,1,"F8FAFC","60A5FA","razor swooping through a face-full of white foam","swish","A close shave. Literally.","household"},
 	{"shears","JKBHJK","fV",3,6,4,"8A929B","2E8B57","long two-blade clippers","clank","Snips hedges into dinosaurs.","tool"},
 	{"shearwater","ABBJDB","DAB",2,7,2,"3A3A40","F2F2F0","stiff-winged sea glider","squawk","Slices across waves.","bird,ocean"},
-	{"shed","EMBCII","GS",2,1,4,"6D4C41","A1887F","small wooden box, slanted roof","thud","Full of rakes. And spiders. Mostly spiders.","structure,building,silly"},
-	{"sheep","AMCJAA","dQf",3,4,4,"F2EEE6","2A2420","fluffy wool body, black face and legs","bleat","Fluffy. Follows the crowd.","mammal,farm"},
-	{"sheepdog","AMCJAA","DQfH",4,7,4,"D8D8D6","6E7278","shaggy hair covering eyes","bark","Cannot see. Doesn't care.","mammal,pet"},
-	{"sheepdog puppy","AMAJAA","dQf",1,6,2,"1E1E1E","F2F2F2","fluffy black and white pup","yip","Already herding its siblings.","mammal,pet,cute"},
-	{"sheepshead","ABCJEC","DfB",4,7,4,"8A8A8A","1E1E1E","striped fish with human teeth","splash","Has human-looking teeth. Eek.","fish,aquatic,spooky,silly"},
 }
