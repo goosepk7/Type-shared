@@ -116,6 +116,7 @@ return {
 	{"globe","BMBGKK","Ue",1,5,3,"2F6FD1","D2B48C","spinning world on a stand","tap","The whole world in your hands.","school"},
 	{"glockenspiel","BKBFJI","d",1,5,3,"C9CED4","1F2F55","row of metal bars","chime","Ding dang dong.","music"},
 	{"gloom","FICDOJ","jSN",3,3,3,"3A3446","7E7590","grey-purple drooping cloud","sigh","Mondays, but as a spell.","spooky,silly"},
+	{"gloom cloud","GBCDOJ","QLN",3,4,3,"6E7F92","BFD6E8","a small grumpy grey cloud that rains on one head","patter","Your own personal bad day.","cartoon,silly,storm"},
 	{"glory","KHCOKJ","DF",4,6,4,"FFD54F","FFFFFF","golden spotlight and trumpet sparkles","choir","Glory! Glory! Applause please.","holy"},
 	{"glove","BMAONI","G",1,6,2,"D8CBB5","C0392B","knitted wool mitten","swish","Warm hands. Brave hands.","clothing"},
 	{"glow","FHBOKJ","Fc",2,3,2,"FFF1B8","FFFFFF","soft warm halo around the caster","hum","Stay positive. Literally glowing.","cute"},

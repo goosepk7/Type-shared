@@ -110,6 +110,7 @@ return {
 	{"hammer-headed bat","AMBJDB","jiA",2,7,1,"6A4A2A","C8A07A","huge box-shaped head","honk","Honks like a goose. Head like a hammer.","mammal,nocturnal,spooky,silly"},
 	{"hammerhead shark","ABDJEC","DkfTB",7,8,6,"7C8C96","E8ECEE","wide hammer-shaped head","chomp","Built-in hammer. Uses it for science.","fish,aquatic,ocean,predator"},
 	{"hammerkop","AMCJDA","AfT",3,5,2,"8A6A44","C8A07A","head shaped like a hammer","squawk","Builds giant nests. Hammer head.","bird,wetland"},
+	{"hammerspace","KMDHJK","kf",4,6,2,"3A3A44","E8C25A","a random giant object yanked from behind the back","bonk","Where was he keeping that?","cartoon,silly,melee"},
 	{"hammock","BMCLII","FNO",1,1,3,"CDBF9E","B89B6A","woven net bed between posts","thud","Nap trap. Nobody escapes.","summer"},
 	{"hamster","AMAJAA","Cdb",1,6,1,"E2B87A","FFF8EE","round body, stuffed cheeks","squeak","Stores a whole meal in its face.","mammal,cute,pet"},
 	{"hamster knight","AMAJAF","UDd",2,8,2,"F59E0B","94A3B8","hamster in a ball-shaped armor","squeak","Rolls into battle. Literally.","silly,cute,warrior"},

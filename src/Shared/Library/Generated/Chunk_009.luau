@@ -166,6 +166,7 @@ return {
 	{"fig","IMBLKI","dSc",2,3,3,"5E2F4F","C77A6A","teardrop purple, pink inside","chomp","Soft, jammy, a bit fancy.","edible,sweet,fruit"},
 	{"fig tree","NGDCMI","GFS",3,1,7,"8D8D8D","689F38","twisted silver trunk, small leaves","rustle","Ancient, gnarled, generous.","plant,tree,ancient"},
 	{"fight","KMCNOI","kf",4,7,3,"FF7043","FFFFFF","cartoon dust-cloud fight ball","pow","Fists and dust everywhere.","melee,silly"},
+	{"fight cloud","KMCNOK","Dkf",4,6,2,"F3EBDD","FFD54F","a rolling dust ball of fists, boots and stars","bonk","Nobody knows who's winning.","cartoon,silly,melee"},
 	{"fighter squadron","DFFELB","EAeP",8,9,6,"607D8B","37474F","wing of jets in tight formation","jet","Here comes the whole squadron.","vehicle,air"},
 	{"figure skater","LCCJNK","jJY",3,8,3,"F9A8D4","BAE6FD","sparkly outfit, mid-spin on ice","whoosh","Spins so fast it freezes the air.","sport,frozen"},
 	{"file","JKAHJK","fN",1,5,5,"8E9196","24262A","rough flat bar, ridged face","clank","Scritch scratch. Smooth.","tool"},

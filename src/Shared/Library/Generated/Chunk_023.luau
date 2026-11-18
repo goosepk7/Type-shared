@@ -381,6 +381,7 @@ return {
 	{"snowy owl","ACBJDB","AZT",3,7,2,"F7F7F4","2A2A2A","white owl with black flecks, yellow eyes","hoot","A fluffy snowball with eyes.","bird,nocturnal,predator,arctic"},
 	{"snowy peak","MCFCII","GJS",5,1,9,"FFFFFF","90A4AE","jagged mountain top under deep snow","rumble","Cold. Steep. Avalanche-ready.","place,terrain,frozen"},
 	{"soap","BBALKI","jNO",1,6,1,"C3A6E8","F2F2EE","slippery pastel soap bar","splash","Slippy! Slippy! Splat.","bathroom,silly"},
+	{"soap bubble","BBCGKJ","leO",3,3,3,"CFE9F5","F2B8E0","a drifting soap bubble that floats a foe away","bloop","Pop in. Float away.","cartoon,silly"},
 	{"soapbox car","DMBKHL","Dkg",2,6,2,"D9A441","C0392B","wooden crate on pram wheels","engine","Brakes? Never heard of them.","mechanical,vehicle,land,silly"},
 	{"soar","KFCOKB","DA",3,8,2,"81D4FA","FFFFFF","high swooping flight path","whoosh","To the clouds and beyond.","air"},
 	{"soba","IMBLGI","HN",2,3,3,"8A6A4A","C8A070","thin brown noodles on bamboo tray","gloop","Thin buckwheat noodles, cool and slurpy.","edible,sticky"},

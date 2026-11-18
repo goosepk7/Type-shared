@@ -238,6 +238,7 @@ return {
 	{"paint splash","KMBFOB","jd",2,7,1,"FF4081","00E5FF","rainbow paint splatter wave","splat","Now everything's colourful.","silly"},
 	{"paint sprayer","JKBFwK","je",2,6,3,"8E9196","F2F2EE","pistol with paint cup","clank","Coats everything. Everything.","tool"},
 	{"paint thinner","BJADJK","M",2,5,1,"BFE6F2","F1C40F","tin with a skull warning","clink","Smells terrible. Is terrible.","hardware"},
+	{"paint tunnel","BMDCnI","GSO",3,1,4,"E8DCC0","2A2A36","a canvas wall with a painted tunnel mouth","splat","Looks like a way through. Isn't.","cartoon,silly,trap"},
 	{"paintball","CMBA3B","jeNP",3,9,2,"22C55E","F472B6","neon paint pellet bursting into a bright splat","splat","Stings a bit. Stains forever.","sport,ranged,silly"},
 	{"paintball gun","CMBAwI","jeN",2,8,3,"24262A","8BC34A","hopper-topped paint blaster","thwip","Splat. Now you're a painting.","sport,silly"},
 	{"paintbrush","BMAAJK","je",1,7,1,"8B5A2B","C0392B","wooden brush with painted tip","clank","Every stroke a masterpiece.","art"},

@@ -340,7 +340,7 @@ return {
 	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
 	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
 	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
-	{"lasso","CMCAJI","HeN",2,7,3,"B89B6A","D2B48C","looped rope spinning overhead","twang","Yee-haw, gotcha.","cowboy"},
+	{"lasso","CMCAJK","HeO",3,7,3,"C9A46A","8A6A3E","a twirled rope loop that ropes and yanks a foe","twang","Yee-haw, gotcha.","cartoon,cowboy"},
 	{"last echo","KLCOKI","FY",4,8,3,"7FB8E8","E9F3FA","blue ghost trail snapping back along your path","warp","Let's try that again.","time,anime,magic"},
 	{"last stand","KADOKI","GDk",7,5,6,"D32F2F","FFD54F","blazing red-gold aura at low health","horn","Not going down. Not like this.","rage"},
 	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
