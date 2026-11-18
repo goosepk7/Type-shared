@@ -189,7 +189,7 @@ local function buildSlime(B: any, ctx: any, id: string, hint: string)
 		nose = has(id, "blobfish") or has(hint, "big nose"),
 		cell = has(id, "cell"),
 		code = has(id, "virus") or has(hint, "code"),
-		bubbles = t.element == "Poison" or has(hint, "bubbling") or has(id, "radiation"),
+		bubbles = has(hint, "bubbl") or has(id, "radiation") or has(id, "poison"),
 		embers = t.element == "Fire" or has(id, "lava") or has(id, "fire"),
 		frost = t.element == "Ice",
 		rainbow = has(id, "rainbow"),
@@ -334,10 +334,14 @@ local function stalks(B: any, ctx: any, H: any, o: any)
 		local tip = { side * r[1] * (0.42 + (o.splay or 0.5)), base[2] + len, base[3] - len * (o.lean or 0.45) }
 		local bn = B:bone("Stalk" .. nm, "Body", base[1], base[2], base[3])
 		B:addRig("tentacles", { bone = bn, index = if side > 0 then 1 else 2, seg = 1 })
-		B:limb(base, tip, r[1] * (o.w or 0.3), { col = o.col or "primary", mat = o.mat or "skin", bone = bn, pri = 1.15, role = "antenna", name = "Stalk" .. nm, pair = "stalks", depth = r[1] * (o.depth or o.w or 0.3), mesh = o.mesh }, 0.12)
+		B:limb(base, tip, r[1] * (o.w or 0.3), { col = o.col or "primary", mat = o.mat or "skin", bone = bn, pri = 1.08, role = "antenna", name = "Stalk" .. nm, pair = "stalks", depth = r[1] * (o.depth or o.w or 0.3), mesh = o.mesh }, 0.12)
 		if o.eyes then
 			local d = r[1] * 0.46
-			local e = B:ball(d, at(tip[1], tip[2] + d * 0.15, tip[3] - d * 0.05), { col = "eyeWhite", mat = "skin", bone = bn, pri = 1.1, role = "eye", name = "Eye" .. nm, pair = "eyes", noCore = true })
+			local small = ctx.detail == 0
+			local e = B:ball(d, at(tip[1], tip[2] + d * 0.15, tip[3] - d * 0.05), { col = if small then "pupil" else "eyeWhite", mat = if small then "glass" else "skin", bone = bn, pri = 1.1, role = "eye", name = "Eye" .. nm, pair = "eyes", needs = "stalks", noCore = true })
+			if small then
+				continue
+			end
 			B:ell(d * 0.56, d * 0.6, d * 0.34, at(tip[1] + side * d * 0.04, tip[2] + d * 0.15, tip[3] - d * 0.43), { col = "pupil", mat = "glass", bone = bn, pri = 1.12, role = "pupil", name = "Pupil" .. nm, pair = "pupils", needs = e.pair, noCore = true })
 			if ctx.detail >= 3 then
 				B:ball(d * 0.18, at(tip[1] + side * d * 0.1 + d * 0.08, tip[2] + d * 0.3, tip[3] - d * 0.58), { col = "shine", mat = "neon", bone = bn, pri = 3.4, role = "shine", name = "Shine" .. nm, noCore = true, needs = "pupils" })
@@ -940,7 +944,7 @@ local function buildFuzz(B: any, ctx: any, id: string, hint: string)
 			local p = onSurf(c, r, a, 0.45 + i * 0.1, -0.05)
 			eyeball(B, 0.42 - i * 0.03, at(p[1], p[2], p[3], 0, a, 0), "Body", 2.4 + i * 0.1, "ExtraEye" .. i)
 		end
-		Parts.armPair(B, { x = R * 0.85, y = c[2] + 0.3, z = 0, len = 2.2, w = 0.42, detail = math.min(detail, 2), col = "primary", mat = "fur" })
+		Parts.armPair(B, { x = R * 0.85, y = c[2] + 0.3, z = 0, len = 2.2, w = 0.42, handCol = "primary", detail = math.min(detail, 2), col = "primary", mat = "fur" })
 	end
 	B:socket("core", at(c[1], c[2], c[3]), "Body")
 	B:setRig("gait", if closet then "waddle" else "hop")
@@ -1021,7 +1025,7 @@ local function buildHeap(B: any, ctx: any, id: string, hint: string)
 			tentacle(B, i, p0, p1, 0.55, if detail >= 2 then 2 else 1, { col = if void then "primary" else "secondary", pri = 1.4 + i * 0.05, curl = 0.5, name = "Tentacle" })
 		end
 	elseif not shifter and detail >= 1 then
-		Parts.armPair(B, { x = r[1] * 0.92, y = c[2] + 0.35, z = -0.3, len = 1.45, w = 0.5, out = 0.5, out2 = 0.25, fwd2 = 0.3, hand = "claw", detail = math.min(detail, 2), col = "secondary" })
+		Parts.armPair(B, { x = r[1] * 0.92, y = c[2] + 0.35, z = -0.3, len = 1.45, w = 0.5, out = 0.5, out2 = 0.25, fwd2 = 0.3, hand = "claw", handCol = "secondary", detail = math.min(detail, 2), col = "secondary" })
 		local p0 = onSurf(c, r, rad(-120), -0.2, -0.15)
 		tentacle(B, 1, p0, { p0[1] - 1.6, 0.2, p0[3] + 0.8 }, 0.5, if detail >= 2 then 2 else 1, { col = "primary", pri = 1.6, curl = 0.6, name = "Tentacle" })
 	elseif shifter and detail >= 1 then
@@ -1135,7 +1139,7 @@ local function buildElemental(B: any, ctx: any, id: string, hint: string)
 		B.boneIndex.Body.pos = { 0, 2.0, 0 }
 		B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "stone", pri = 1, role = "body", name = "Boulder" })
 		eface(B, ctx, c, r, { d = 0.55, spacing = 0.5, y = 0.35, fierce = true })
-		Parts.armPair(B, { x = r[1] * 0.95, y = c[2] + 0.3, z = 0, len = 1.6, w = 0.75, detail = math.min(detail, 2), col = "secondary", mat = "stone" })
+		Parts.armPair(B, { x = r[1] * 0.95, y = c[2] + 0.3, z = 0, len = 1.6, w = 0.75, handCol = "secondary", detail = math.min(detail, 2), col = "secondary", mat = "stone" })
 		Parts.legPair(B, { x = 0.75, y = 0.75, z = 0.1, w = 0.7, kind = "pillar", detail = math.min(detail, 1), col = "secondary", mat = "stone" })
 		if detail >= 2 then
 			for i = 1, 2 do
@@ -1156,7 +1160,7 @@ local function buildElemental(B: any, ctx: any, id: string, hint: string)
 	local hc, hr = { 0, 3.75, -0.2 }, { 0.82, 0.72, 0.75 }
 	B:ell(hr[1] * 2, hr[2] * 2, hr[3] * 2, at(hc[1], hc[2], hc[3]), { col = "primary", mat = mat, pri = 1.05, role = "head", name = "Head" })
 	eface(B, ctx, hc, hr, { d = 0.42, spacing = 0.3, y = 0.1, fierce = true })
-	Parts.armPair(B, { x = 1.25, y = 2.9, z = 0, len = 2.6, w = 0.62, detail = math.min(detail, 2), col = "primary", mat = mat })
+	Parts.armPair(B, { x = 1.25, y = 2.9, z = 0, len = 2.6, w = 0.62, handCol = "primary", detail = math.min(detail, 2), col = "primary", mat = mat })
 	if detail >= 1 then
 		for i = 1, (if detail >= 2 then 4 else 2) do
 			local a = rad(-50 + i * 75)
@@ -1278,11 +1282,12 @@ local function buildTube(B: any, ctx: any, id: string, hint: string)
 	if has(id, "squirt") then
 		local c, r = { 0, 1.35, 0 }, { 0.95, 1.3, 0.95 }
 		B:ell(r[1] * 2, r[2] * 2, r[3] * 2, at(c[1], c[2], c[3]), { col = "primary", mat = "glass", tr = 0.15, pri = 1, role = "body", name = "Body" })
-		B:limb({ 0, 2.3, 0.1 }, { 0, 3.1, -0.05 }, 0.6, { col = "primary", mat = "skin", pri = 1.2, role = "body", name = "Siphon1" }, 0.1)
-		B:limb({ 0.55, 2.0, 0.2 }, { 1.2, 2.5, 0.25 }, 0.5, { col = "primary", mat = "skin", pri = 1.3, role = "body", name = "Siphon2" }, 0.1)
+		B:limb({ 0, 2.2, 0.15 }, { 0, 3.55, 0.05 }, 0.62, { col = "primary", mat = "skin", pri = 1.2, role = "body", name = "Siphon1" }, 0.1)
+		B:limb({ 0.6, 1.9, 0.3 }, { 1.55, 2.75, 0.35 }, 0.52, { col = "primary", mat = "skin", pri = 1.3, role = "body", name = "Siphon2" }, 0.1)
+		B:ell(0.78, 0.24, 0.78, at(0, 3.68, 0.04), { col = "secondary", mat = "skin", pri = 1.35, role = "detail", name = "Rim1" })
+		B:ell(0.66, 0.66, 0.22, Geom.mul(at(1.63, 2.83, 0.35), at(0, 0, 0, 0, rad(90), rad(-48))), { col = "secondary", mat = "skin", pri = 1.4, role = "detail", name = "Rim2" })
 		if detail >= 1 then
-			B:ell(0.5, 0.18, 0.5, at(0, 3.2, -0.07), { col = "secondary", mat = "skin", pri = 2.0, role = "detail", name = "Rim1" })
-			B:ell(0.42, 0.42, 0.16, at(1.25, 2.55, 0.25, 0, rad(90), rad(40)), { col = "secondary", mat = "skin", pri = 2.1, role = "detail", name = "Rim2" })
+			B:ell(0.4, 0.14, 0.4, at(0, 3.74, 0.04), { col = "dark", mat = "skin", pri = 2.0, role = "detail", name = "Hole1", noCore = true })
 		end
 		eface(B, ctx, c, r, { d = 0.5, spacing = 0.34, y = 0.1, noBrows = true })
 		B:socket("core", at(c[1], c[2], c[3]), "Body")
@@ -1306,8 +1311,8 @@ local function buildTube(B: any, ctx: any, id: string, hint: string)
 	end
 	-- stalked polyps: hydra (tube + crown of tentacles), sea lily (segmented stalk + feathery arms)
 	local lily = has(id, "lily") or has(hint, "stalk")
-	B:cyl(0.3, 1.6, at(0, 0.15, 0, 0, 0, rad(90)), { col = "secondary", mat = "skin", pri = 1.3, role = "foot", name = "Foot" })
-	local segs = if detail >= 1 then 3 else 2
+	B:cyl(0.3, 1.6, at(0, 0.15, 0, 0, 0, rad(90)), { col = "secondary", mat = "skin", pri = 2.5, role = "foot", name = "Foot" })
+	local segs = if detail >= 1 then 3 else 1
 	local prev = { 0, 0.2, 0 }
 	local parent = "Body"
 	for i = 1, segs do
@@ -1325,7 +1330,7 @@ local function buildTube(B: any, ctx: any, id: string, hint: string)
 		local a = rad(i * 360 / n)
 		local p0 = { c[1] + sin(a) * 0.45, c[2] + 0.4, -cos(a) * 0.45 }
 		local p1 = { c[1] + sin(a) * 1.6, c[2] + (if lily then 1.6 else 0.9), -cos(a) * 1.6 + 0.3 }
-		local made = tentacle(B, i, p0, p1, if lily then 0.3 else 0.18, 1, { parent = parent, col = if lily then "secondary" else "primary", pri = 1.5 + i * 0.05, name = "Arm" })
+		local made = tentacle(B, i, p0, p1, if lily then 0.3 else 0.18, 1, { parent = parent, col = if lily then "secondary" else "primary", pri = 1.2 + i * 0.02, name = "Arm" })
 		if lily and detail >= 3 then
 			B:ell(0.7, 0.06, 0.25, Geom.mul(made[1].cf, at(0, 0.2, 0, 0, 0, rad(90))), { col = "secondary", mat = "leaf", bone = made[1].bone, pri = 3.5 + i * 0.05, role = "detail", name = "Pinnule" .. i })
 		end
