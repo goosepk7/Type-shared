@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"flapjack bar","IMAAKK","keO",3,7,6,"C89050","E8A317","golden oat slab","bonk","A chewy golden oat brick.","edible"},
 	{"flare","FABAKB","KeO",4,8,1,"FF5E3A","FFF1B5","bright sputtering ball, smoke streamer","fizz","Look at the pretty light. Ow.","fire"},
 	{"flare gun","CABAwI","Kce",3,5,2,"E67E22","C0392B","chunky orange pistol","bang","Pew! Look up! Pretty!","rescue,ranged"},
 	{"flash","FHBGKI","jO",3,10,1,"FFFFFF","FFF3B0","instant white burst with lens streaks","pop","Did anyone else see spots?","holy"},
@@ -403,4 +402,5 @@ return {
 	{"generation ship","DLFKHJ","GAgh",7,3,10,"B0BEC5","43A047","colossal ship with gardens inside","roar","A whole world in a ship.","vehicle,space"},
 	{"generator","ODCM1I","FSL",3,2,7,"F1C40F","4A4D52","boxy engine with wires and dials","hum","Brrrrr. The lights stay on.","mechanical,electric"},
 	{"generosity","KHBOKJ","F",1,5,2,"FFD54F","FF80AB","golden sparkles passed to allies","chime","Here, have some health.","support"},
+	{"genet","AMBJAA","Cf",2,5,3,"D8CDB8","2A2420","slim spotted, very long ringed tail","squeak","Half cat, half tail.","mammal,wild"},
 }

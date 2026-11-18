@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"genet","AMBJAA","Cf",2,5,3,"D8CDB8","2A2420","slim spotted, very long ringed tail","squeak","Half cat, half tail.","mammal,wild"},
 	{"genie lamp spirit","ALBJNJ","AFY",3,6,2,"2563EB","FACC15","small blue genie popping from a lamp","whoosh","Grants tiny wishes. Snacks only.","magic,cute"},
 	{"genius","LLCJNA","jeh",4,4,3,"7C3AED","FACC15","giant forehead, lab goggles","ding","Solved the game. Before it started.","science"},
 	{"genius loci","AGDNOI","GjF",5,1,6,"4D7C0F","FDE68A","faint face in a field of light","hum","The vibe of a place, but alive.","spirit"},
@@ -403,4 +402,5 @@ return {
 	{"gravlax","IGBOKI","F",2,5,3,"E8603A","7DBE3A","cured salmon slices with dill","crunch","Salmon cured with salt and patience.","edible,healthy"},
 	{"gravy","IMBNGI","FSN",2,4,1,"8A5A2A","C8904A","glossy brown sauce boat","splat","A river of savory.","edible,sauce"},
 	{"gravy boat","IMBNGI","SNP",2,4,1,"F7F4EC","8A5A2A","white boat-shaped jug","splat","A boat that only sails gravy.","edible,sauce"},
+	{"gravy flood","IMDFGI","INP",5,4,1,"8A5A2A","C8904A","wave of brown gravy","splat","A delicious disaster.","edible,sauce"},
 }

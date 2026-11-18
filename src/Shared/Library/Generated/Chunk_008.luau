@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"discus fish","ABAJEC","UdB",1,6,1,"E87A2A","3AA0C8","flat round disc fish","splash","A frisbee that swims.","fish,aquatic"},
 	{"disease","KJCDOJ","iMNP",4,4,1,"A3B18A","6B8E23","sickly green cloud with a thermometer and tissues","cough","Day off school. Worth it? No.","toxic,science"},
 	{"disguise","KLBOKI","jZ",2,4,2,"8D6E63","FFE0B2","fake mustache and hat poof","poof","Nobody will ever guess.","stealth,silly"},
 	{"dish","BMBA3K","UEe",3,7,1,"F8FAFC","60A5FA","spinning white plate with a blue rim","crash","It is your turn to do them. Throw instead.","household,kitchen"},
@@ -403,4 +402,5 @@ return {
 	{"encantado","ABCJEC","jcB",4,8,3,"F9A8D4","0EA5E9","pink river dolphin in a straw hat","splash","Shows up at parties. Hides his blowhole.","mythical,aquatic"},
 	{"enceladus","MCDGKJ","Je",4,4,6,"FFFFFF","B3E5FC","bright white moon shooting ice jets","rumble","Sneezes ice into space.","space"},
 	{"enchanted forest","MLFNII","jFSNY",5,1,8,"7E57C2","66BB6A","glowing trees, floating sparkles, mushrooms","rumble","Pretty, sparkly, and very confusing.","place,terrain,magic"},
+	{"enchanted sled","DCCKHB","DAJg",4,8,4,"1565C0","FFD54F","glowing sled pulled through the sky","whoosh","Sledding season is forever.","vehicle,magic,mythical"},
 }

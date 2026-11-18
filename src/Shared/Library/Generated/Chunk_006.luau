@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"class","MMDNlI","jSNh",4,1,5,"FDE68A","15803D","rows of desks, chalkboard, thirty raised hands","bell","Pop quiz. Sit down. Eyes forward.","school"},
 	{"class clown","LMCJNA","jd",3,6,3,"FACC15","DC2626","whoopee cushion, grin","honk","Got detention. Worth it.","school,silly"},
 	{"classmate","LMBJNA","deb",2,6,3,"F87171","FDE68A","kid with a backpack flicking paper balls","giggle","Can I copy your homework? Thanks. Bye.","school"},
 	{"classroom","MMCNII","jSN",2,1,6,"43A047","F5E6CA","rows of desks and a chalkboard","thud","Pop quiz! Everyone is confused.","place,room,silly"},
@@ -403,4 +402,5 @@ return {
 	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
 	{"cream tea","IGBOKI","F",2,5,3,"F7F2EC","C8762B","tea with scones and jam","crunch","Very British. Very civilized.","edible,healthy,fancy"},
 	{"creamed corn","IMBLGI","SNP",2,3,3,"F2D06A","F2E8C8","creamy yellow mush","gloop","Corn that gave up.","edible,sticky"},
+	{"create","KLCOKJ","WFh",4,5,3,"22D3EE","F472B6","sparkling hands shaping a glowing blob into a little house","chime","Glue, glitter, and a dream.","magic,art"},
 }

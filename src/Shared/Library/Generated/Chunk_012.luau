@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"gravy flood","IMDFGI","INP",5,4,1,"8A5A2A","C8904A","wave of brown gravy","splat","A delicious disaster.","edible,sauce"},
 	{"gray fox","AMBJAA","jfb",3,7,2,"8C8C8E","C0602A","grey back, rusty sides, black-tipped tail","yip","The fox that climbs trees.","mammal,wild"},
 	{"gray squirrel","AMAJAA","Cdb",1,6,1,"8E8E8E","F2F2F0","grey bushy tail, chunky","squeak","Steals bird seed with zero shame.","mammal,cute"},
 	{"gray whale","ABEJEC","kIB",7,3,9,"7E8288","D8DCDE","mottled grey, barnacle patches","whalesong","Covered in barnacles. Wears them well.","mammal,aquatic,ocean,heavy"},
@@ -238,8 +237,8 @@ return {
 	{"harlequin shrimp","ABAJRA","GfT",2,4,5,"F2F2F2","E8501E","spotted shrimp with flat claws","clack","Eats starfish. Dressed like a clown.","crustacean,aquatic,armored"},
 	{"harmonica","BMAFJI","j",1,6,2,"C9CED4","1F2F55","small metal mouth harp","woodwind","Wah-wah blues attack.","music"},
 	{"harmony","KHCNOI","F",2,3,4,"80CBC4","FFF59D","gentle flowing light ribbons","chime","Everything sings together.","support,music"},
-	{"harp","BHCFJI","dFN",3,3,4,"D4A72C","F3E6C8","tall triangle frame with strings","chime","Heavenly sounds. Heavenly heals.","music"},
 	{"harp seal","ACCJEC","UfB",3,5,4,"D8D8D8","1E1E1E","grey seal with harp mark","bark","Its pups are pure white fluff.","mammal,aquatic,arctic"},
+	{"harp strings","BHCLoI","SHN",5,4,7,"E8B84A","FFF3C4","two golden harp posts with a tripline of glowing strings","chime","Mind the strings. They mind you.","music,trap"},
 	{"harpoon","CKCAuI","THe",5,6,4,"8A929B","B89B6A","barbed spear tied to a rope","whoosh","Stab, then reel in.","ocean"},
 	{"harpoon gun","CKCAwI","THe",5,5,4,"F1C40F","8A929B","tube launcher with barbed spear","bang","Fires a spear, reels in a friend.","ocean,ranged"},
 	{"harpy","AFCJDB","jAfb",4,8,4,"7C2D12","D6D3D1","feathered wings, taloned legs, wild hair","screech","Steals your lunch with a screech.","mythical,bird,flying"},
@@ -403,4 +402,5 @@ return {
 	{"highlander","LECJNA","Dkf",6,6,6,"15803D","DC2626","kilt, claymore, wild hair","drone","Charges in with bagpipe backup.","warrior"},
 	{"highlands","MFFNII","SN",3,1,8,"7CB342","AB47BC","rolling hills of heather and mist","rumble","Misty, windy, and wild.","place,terrain"},
 	{"hiker","LGCJNA","QF",3,5,5,"15803D","F97316","big backpack, walking poles, map","whoosh","Walks forever. Never tired.","outdoor"},
+	{"hiking","KECONA","GQN",3,3,6,"65A30D","B45309","walker with huge rucksack, two poles, flask and a map","crunch","Are we lost? We are not lost. We are lost.","outdoor"},
 }

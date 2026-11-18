@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"enchanted sled","DCCKHB","DAJg",4,8,4,"1565C0","FFD54F","glowing sled pulled through the sky","whoosh","Sledding season is forever.","vehicle,magic,mythical"},
 	{"enchanter","LLCJNA","GjF",4,4,4,"A855F7","FDE68A","robe with glowing rune scrolls","chime","Your sword now glows. Upcharge.","magic"},
 	{"enchantment","FLBOKJ","Fa",3,5,3,"C77DFF","F7E1FF","glowing runes circling the caster","chime","Now with +1 sparkle.","magic"},
 	{"enchilada","IABAKK","Kc",3,7,2,"C8302B","F2E2B8","rolled tortillas under red sauce","sizzle","Rolled up and smothered in sauce.","edible,spicy,flammable"},
@@ -403,4 +402,5 @@ return {
 	{"flamingo","AMCJDA","dAfT",3,5,2,"F28AA0","1E1E1E","pink bird on one leg, bent beak","squawk","Pink because of shrimp. Stands on one leg.","bird,wetland"},
 	{"flamingo chick","AMBJDA","AfT",1,5,2,"E8E0E0","C8C0C0","grey fluffy flamingo baby","squawk","Born grey. Turns pink later.","bird,wetland,cute"},
 	{"flan","IMBLGG","USN",2,3,3,"F2C24A","8A4A1E","wobbly custard, caramel top","wobble","Shakes like it's nervous.","edible,wobbly,sweet"},
+	{"flapjack bar","IMAAKK","keO",3,7,6,"C89050","E8A317","golden oat slab","bonk","A chewy golden oat brick.","edible"},
 }

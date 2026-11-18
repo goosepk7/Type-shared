@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sundial","EHBCII","GSN",2,1,8,"BCAAA4","FFD54F","stone pillar with a bronze dial","thud","Tells time. Only when sunny.","structure,ancient"},
+	{"sundog","GHBGKE","VO",3,5,2,"FFF3C4","FF8A80","twin glowing spots beside the sun","chime","Two extra suns. Very confusing.","space"},
 	{"sunfire","FHDNOI","KFS",7,5,3,"FFB703","FFF3C4","golden sun circle on the ground, rays up","hum","Sunscreen strongly recommended.","fire,holy"},
 	{"sunfire bird","AACJDB","KAF",4,8,3,"FDE047","F97316","small radiant bird with sunray tail","chime","Brings the dawn. Every morning.","fire,bird"},
 	{"sunfish","ABDJEC","DfB",5,2,6,"9AA0A8","D8DCE0","huge round flat fish, no tail","splash","A giant swimming head. Tail sold separately.","fish,aquatic,silly"},
@@ -401,6 +403,4 @@ return {
 	{"tiger cub","AMBJAA","DfT",2,8,5,"E8902E","1C1C1C","fluffy striped baby tiger","roar","Big paws. Tiny roar.","mammal,predator,wild,cute"},
 	{"tiger fish","ABCJEC","DfTB",5,7,4,"C8C8C0","E8301E","silver fish with giant fangs","splash","A piranha that hit the gym.","fish,aquatic"},
 	{"tiger salamander","AMBJCA","FB",2,3,2,"2A2A1E","F2D82A","black with yellow blotches","squelch","Big, blotchy salamander.","amphibian,wetland"},
-	{"tiger shark","ABDJEC","DfTbB",7,8,6,"7A7E6E","D8D4C0","striped grey back, blunt snout","chomp","Eats license plates. Not picky.","fish,aquatic,ocean,predator"},
-	{"tightrope","BMDLJI","NO",1,1,2,"B89B6A","F2F2EE","rope stretched between posts","pop","Balance or bust.","party"},
 }

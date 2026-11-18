@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"hiking","KECONA","GQN",3,3,6,"65A30D","B45309","walker with huge rucksack, two poles, flask and a map","crunch","Are we lost? We are not lost. We are lost.","outdoor"},
 	{"hill","MEDCII","GlS",3,1,9,"7CB342","8D6E63","rounded grassy bump","rumble","High ground: secured.","place,terrain"},
 	{"hill giant","AEEJNA","Dkf",7,3,8,"A16207","78716C","hunched giant, boulder in hand","stomp","Not the brightest. Very much the biggest.","mythical,giant,silly"},
 	{"himalayas","MCFCII","GJS",7,1,10,"9E9E9E","FFFFFF","towering snowy mountain range","rumble","The roof of the world. Mind your head.","place,geography"},
@@ -403,4 +402,5 @@ return {
 	{"insult","KABAKB","KXO",4,8,1,"F97316","FDE047","flaming speech bubble with symbols and a mic drop","sizzle","Oooooh. Somebody get the ice.","silly,meme"},
 	{"intern","LMBJNA","dQF",2,7,2,"93C5FD","F8FAFC","nervous youngster carrying six coffees and a lanyard","squeak","Unpaid. Unstoppable. Slightly unsure.","job,silly"},
 	{"internet","MDFN5I","jdPbh",7,9,4,"3B82F6","22D3EE","glowing globe-web of links, cat pictures and loading wheels","bzzt","Came for one thing. Left six hours later.","tech,meme"},
+	{"intersection","MMDNnI","jSNO",5,1,6,"4B5563","FACC15","crossed roads jammed with honking cars and a stuck light","horn","Nobody moves. Everybody honks.","place,vehicle"},
 }

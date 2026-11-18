@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"create","KLCOKJ","WFh",4,5,3,"22D3EE","F472B6","sparkling hands shaping a glowing blob into a little house","chime","Glue, glitter, and a dream.","magic,art"},
 	{"creature","AICJAA","jf",4,5,4,"365314","A855F7","odd unknown silhouette with many eyes","growl","Nobody knows what it is. Not even it.","monster"},
 	{"creep","KIBONA","QZN",2,3,2,"374151","9CA3AF","shadow on exaggerated tiptoes with a finger to its lips","hush","Tip. Toe. Tip. Toe. Creak. Freeze.","stealth"},
 	{"creeping shadows","FIDNOI","iZNP",5,2,4,"1A0033","4A148C","shadows stretching and crawling across the floor","hiss","The dark is getting closer.","spooky"},
@@ -403,4 +402,5 @@ return {
 	{"disco ghost","AICJGJ","jdO",3,6,2,"F472B6","22D3EE","ghost in a disco ball sheet","beat","Haunts dance floors. Groovy.","ghost,silly,music"},
 	{"disco wizard","LLCJNA","jdO",4,5,3,"F472B6","22D3EE","sequin robe with disco ball staff","beat","Casts groove. Everyone dances.","magic,silly,music"},
 	{"discus","BMBA3F","Uke",3,8,6,"C9CED4","24262A","flat heavy spinning disc","bonk","Ancient frisbee for serious people.","sport,ancient"},
+	{"discus fish","ABAJEC","UdB",1,6,1,"E87A2A","3AA0C8","flat round disc fish","splash","A frisbee that swims.","fish,aquatic"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wheat","NGCNMI","ZSN",1,1,2,"E6C27A","FFD54F","golden swaying grain heads","rustle","Amber waves of distraction.","plant"},
+	{"wheel","BMBA3F","UDk",3,8,5,"1F2937","9CA3AF","runaway rubber wheel with a silver hubcap, rolling fast","rumble","Reinvented. Now with more rolling over you.","vehicle,mechanical"},
 	{"wheel of fire","FACAKF","UKk",6,8,2,"FF5722","FFD54F","rolling hoop of fire","whoosh","A flaming hoop on a mission.","fire"},
 	{"wheelbarrow","DMAKHL","Dkg",2,4,3,"2E7D32","8D6E63","single front wheel, metal tub, two handles","engine","Can carry exactly one tiny enemy.","mechanical,vehicle,land,silly"},
 	{"wheelchair","BMCJHF","Dk",2,6,5,"C9CED4","24262A","wheeled chair with push rims","thud","Fast, nimble, unstoppable.","container"},
@@ -228,7 +230,7 @@ return {
 	{"xiphos","CKBHrK","fT",4,7,4,"A86F32","6B4226","leaf-shaped short blade","shing","Hoplite-approved stabbing leaf.","medieval,sharp,ancient"},
 	{"xoloitzcuintli","AMCJAA","DQf",4,7,4,"3A3A3A","6A6A6A","hairless sleek dog","bark","Ancient, hairless and warm to hug.","mammal,pet"},
 	{"xp","KHBOKJ","DWF",3,6,2,"A855F7","FACC15","purple bar filling up and bursting into LEVEL UP!","fanfare","+50 XP. For typing. Nice.","gaming"},
-	{"xylophone","BMCFJI","dF",1,4,3,"E84A5F","C49A6C","rainbow wooden bars on frame","chime","Plink plonk plink.","music"},
+	{"xylophone stairs","EMDCpI","Gkl",5,7,5,"E84A5F","4FC3F7","rainbow bars spring up in a staircase, launching foes","chime","Plink. Plonk. Up you go.","music"},
 	{"yak","ACDJAA","DkgO",6,4,7,"2E2622","F2EEE6","long shaggy skirt fur, horns","moo","Wears a fur skirt in the mountains.","mammal,heavy,arctic"},
 	{"yakisoba","IMBLGI","HN",2,3,3,"8A4A1E","7DBE3A","stir-fried noodles, sauce","gloop","Fried noodles from the festival stall.","edible,sticky"},
 	{"yakitori","IABHJI","KfT",3,5,4,"C8602B","6B3A1E","grilled skewers of chicken","bonk","Grilled chicken on tiny swords.","edible,silly"},

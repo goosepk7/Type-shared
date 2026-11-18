@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"intersection","MMDNnI","jSNO",5,1,6,"4B5563","FACC15","crossed roads jammed with honking cars and a stuck light","horn","Nobody moves. Everybody honks.","place,vehicle"},
 	{"inugami","AICJAJ","Qf",4,7,3,"F8FAFC","DC2626","white spirit dog with red markings","bark","Loyal. Spooky loyal.","yokai,canine"},
 	{"invention","ODCL1I","jELh",5,2,3,"F59E0B","60A5FA","lightbulb wired to a toaster, an umbrella and a fan","ding","Patent pending. Explosion also pending.","science,silly"},
 	{"inventor","LKCJNA","Eeh",4,4,4,"92400E","FACC15","goggles, tool belt, gadget backpack","clank","Invented it 5 minutes ago. Untested.","science"},
@@ -203,6 +202,7 @@ return {
 	{"karaage","IMAELB","ce",2,7,1,"C8762B","F2C870","crispy fried chicken bites","pitter","Crunchy nuggets from Japan.","edible"},
 	{"karakasa","ALBJNG","Ujd",2,6,2,"9F1239","FDE68A","paper umbrella, one eye, long tongue, one leg","boing","An umbrella that hops and licks.","yokai,silly"},
 	{"karambit","CKAHrK","fT",3,9,2,"24262A","8A929B","curved claw knife with ring","shing","Claw of steel.","sharp,ancient"},
+	{"karaoke duel","KHCB6I","deN",5,5,5,"FF3EA5","FFE066","twin spotlights lock you and a rival in a sing-off","sing","Hold the note. Or get booed off.","music"},
 	{"karaoke machine","BMCNKI","jO",1,1,4,"24262A","FF3EA5","speaker box with microphone","blare","Feel the music. Feel the pain.","party,music,loud"},
 	{"karate","KMCOKI","Dkf",5,8,3,"FFFFFF","212121","white gi and flurry of strikes","hyah","Hi-yah! Chop! Kick! Bow.","melee"},
 	{"karate granny","LMCJNA","jkf",5,7,4,"C084FC","F8FAFC","grandma in karate gi with black belt","thud","Knits. Kicks. Wins.","silly,martial,family"},

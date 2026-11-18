@@ -169,7 +169,7 @@ return {
 	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
 	{"recipe","BLBO2J","WFh",3,3,2,"F5E6CC","DC2626","splattered recipe card with floating measuring spoons","rustle","Step one: preheat the battlefield.","kitchen,magic"},
 	{"recon drone","OFBOhE","AQe",3,7,5,"3A4148","FF3A3A","a quadcopter circles overhead pinging enemies red","buzz","UAV online. Everyone you can't see just got very visible.","gaming,robot,mechanical"},
-	{"record scratch","BFCH6K","kIN",5,9,5,"24262A","7CF7FF","a ghost turntable scratches a pushback wave","scratch","Back it up. Way back.","music,dj,push"},
+	{"record scratch","BFCF6K","kIN",5,9,5,"24262A","7CF7FF","a ghost turntable scratches a pushback wave","scratch","Back it up. Way back.","music,dj,push"},
 	{"recorder","BMAFJI","jd",1,6,1,"F2F2EE","F2F2EE","plastic school flute","woodwind","Every school's secret weapon.","music,school,silly"},
 	{"recover","KGBOKJ","F",1,4,3,"81C784","FFFFFF","gentle green breathing glow","chime","Shake it off. Back in it.","support"},
 	{"rectangle","KECCnI","GIa",3,2,7,"22C55E","FFFFFF","long green slab sliding sideways like a door","thunk","A square that got stretched. Still bitter.","school,shape"},

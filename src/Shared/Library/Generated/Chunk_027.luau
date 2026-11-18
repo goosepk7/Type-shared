@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tiger shark","ABDJEC","DfTbB",7,8,6,"7A7E6E","D8D4C0","striped grey back, blunt snout","chomp","Eats license plates. Not picky.","fish,aquatic,ocean,predator"},
+	{"tightrope","BMDLJI","NO",1,1,2,"B89B6A","F2F2EE","rope stretched between posts","pop","Balance or bust.","party"},
 	{"tightrope walker","LFCJNA","Ud",3,6,3,"F8FAFC","DC2626","balance pole, ballet slippers","whoosh","Never looks down. You should.","circus"},
 	{"tikbalang","AGDJNA","Djk",6,8,6,"292524","A16207","tall horse-headed figure, long limbs","neigh","Gets travelers lost. Laughs about it.","mythical,trickster"},
 	{"tikka","IABHJI","Kf",3,5,4,"D8402B","E8762B","charred skewered chunks","bonk","Smoky chunks from the clay oven.","edible,silly"},
@@ -401,6 +403,4 @@ return {
 	{"undertaker","LICJNA","Gh",4,3,6,"111827","F8FAFC","tall black hat, long coat","ding","Measured you already. Just in case.","spooky"},
 	{"undertow","FBCLII","HN",5,5,3,"01579B","4FC3F7","hidden swirling pull under the surface","swoosh","Feels calm. Isn't.","aquatic"},
 	{"underwater base","EBEIII","GSh",4,1,8,"26C6DA","37474F","glass domes on the sea floor","hum","Breathe easy. Surrounded by sharks.","structure,future,aquatic"},
-	{"underworld","MIFNII","KiSh",6,1,9,"212121","B71C1C","dark cavern realm, rivers of fire","rumble","Nobody visits on purpose.","spooky,mythical"},
-	{"undine","ABCJNC","FHB",5,6,4,"0EA5E9","A5F3FC","water spirit maiden with flowing body","splash","A splash with a personality.","elemental,aquatic"},
 }
