@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
 	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
 	{"doom","KIEGKI","iEO",8,4,4,"1A0033","FF1744","ominous black-red orb descending slowly","boom","You feel a sense of impending doom.","spooky"},
 	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
@@ -402,5 +403,4 @@ return {
 	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
 	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
 	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
-	{"everything bagel","IMBAKK","UeP",3,7,2,"C8904A","3A3A3A","bagel covered in seeds","whoosh","Covered in everything. Literally.","edible"},
 }

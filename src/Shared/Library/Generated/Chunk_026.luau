@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tar pit trap","BECLII","SNO",4,1,4,"24262A","7A4E2D","bubbling black puddle","snap","Sticky, gloopy, inescapable.","trap,defense"},
+	{"tar sprayer","OECMxI","eNO",4,4,5,"24262A","7A4E2D","barrel of hot sticky tar","clank","Glop. Not going anywhere.","defense,mechanical"},
+	{"tarantula","AJBJQA","fN",3,6,2,"3A2A20","E8701E","big hairy spider, thick legs","skitter","Big, hairy, and secretly gentle.","arachnid,spooky,venomous"},
 	{"tarantula hawk","AJBJLB","ATMPO",3,7,1,"1E2A4A","E8701E","blue-black wasp, orange wings","buzz","Hunts tarantulas. Second worst sting.","insect,swarm,venomous"},
 	{"tarasque","AAEJAA","GKDk",8,4,9,"365314","CA8A04","turtle shell, lion head, six bear legs","roar","A turtle that bench-pressed a castle.","mythical,boss"},
 	{"tarbosaurus","AMEJBA","DkfT",8,6,7,"5A4A2E","B89A6A","asian tyrannosaur","roar","T rex's Asian twin.","dinosaur,extinct,reptile,predator"},
@@ -400,7 +403,4 @@ return {
 	{"trail mix","IEAELB","FeP",2,7,1,"A86A3A","C2302B","nuts, raisins, candy bits","pitter","Adventurer fuel. Pick out the candy.","edible,sweet"},
 	{"train","DMEKHL","DkTg",7,7,9,"2D3A4A","C0392B","long engine with carriages, cowcatcher","horn","Runs on time. Runs over everything.","mechanical,vehicle,land"},
 	{"train conductor","LMCJNL","Dk",4,6,5,"1E3A8A","FACC15","striped cap, whistle, pocket watch","choo","All aboard! Choo choo.","vehicle"},
-	{"train station","EMDCII","GSh",3,1,8,"B5523B","37474F","long platform, clock, arched roof","thud","All aboard the pain train.","structure,building"},
-	{"train yard","MMENII","kSh",3,1,7,"6D4C41","9E9E9E","tangle of tracks and parked wagons","crowd","Trains from every direction.","place"},
-	{"training dummy","BMCCNI","Gdc",1,1,5,"D2B48C","C0392B","straw dummy with target face","beep","Hit it. It forgives you.","training"},
 }

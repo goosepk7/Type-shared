@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nose","BMBMGG","HeN",3,3,3,"E8B48A","D98880","big round nose, two nostrils, sniffing lines","whiff","Runs without legs. Smells without manners.","body,silly"},
 	{"nostalgia","KHBNOI","jFO",2,3,3,"FFCC80","F8BBD0","sepia-toned glow with floating old toys","music","Remember the good old days? Now you're stuck there.","silly"},
 	{"note","KFAAKB","UeO",2,8,1,"111827","FACC15","black quaver note bouncing along five wavy lines","ding","Do re mi fa so la ti DOH.","music"},
 	{"notebook","BMAAJK","e",1,7,1,"2F6FD1","F2F2EE","spiral-bound notebook","tap","Taking notes. Taking names.","school"},
@@ -402,5 +403,4 @@ return {
 	{"pearl dragon","ABEKCB","AFgB",7,6,7,"F8FAFC","BAE6FD","shimmering white dragon clutching a pearl","chime","Will not let go of that pearl.","mythical,reptile"},
 	{"pearl onions","IJAELB","je",2,7,1,"F7F2EC","E8E0D0","tiny white onions","pitter","Tiny tear bombs.","edible"},
 	{"peasant","LMCJNA","Ph",3,4,3,"A16207","78350F","burlap clothes, pitchfork","grunt","Angry mob in one person. Grab torches.","historical"},
-	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
 }

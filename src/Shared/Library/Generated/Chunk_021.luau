@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ray of frost","FCCBKI","JTeN",5,8,2,"4FC3F7","E1F5FE","thin pale-blue beam crusting targets in ice","crackle","Chill out. That is an order.","frozen"},
 	{"ray of sickness","FJCBKI","jMe",4,7,1,"C0CA33","7CB342","sickly yellow-green ray","bleh","Seasick, on land.","toxic,silly"},
 	{"razor","BKAHJI","fT",2,8,1,"C9CED4","2F6FD1","small safety razor","splash","Smooth operator.","bathroom,household"},
 	{"rc car bomb","BABJHL","DEQ",6,9,3,"E53935","24262A","a zippy toy car carrying a very real bomb","squeak","Bzzzzzz. Wheeeee. BOOM.","toy,explosive,modern"},
@@ -402,5 +403,4 @@ return {
 	{"sage grouse","AMBJDA","df",2,4,2,"8A7A6A","F2F2EE","fanned spiky tail, chest sacs","cluck","Puffs out two chest balloons.","bird,farm"},
 	{"sagebrush","NEBCMI","GS",2,1,4,"9E9E9E","7CB342","silvery scrubby desert bush","rustle","Smells like a desert rainstorm.","plant"},
 	{"sagittarius","MHCEKJ","Te",5,5,5,"FFFFFF","FF7043","star centaur drawing a bow","rumble","Fires star arrows. Never misses. Okay, rarely.","space,zodiac"},
-	{"saguaro","NEDCMI","GST",5,1,8,"388E3C","F5F5F5","tall cactus with upward bending arms","thud","Waves hello. Spikes goodbye.","plant,desert,sharp"},
 }

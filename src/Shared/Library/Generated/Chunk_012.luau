@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
 	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
 	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
 	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
@@ -402,5 +403,4 @@ return {
 	{"honeysuckle","NGBNMI","dFSc",2,1,2,"FFF59D","FFB74D","tubular sweet blooms on vines","rustle","Sweet nectar. Sweet trap.","plant,flower"},
 	{"hong kong milk tea","IBBOKI","F",2,6,2,"A8784A","F2E8D8","strong silky milk tea","slurp","Silk-smooth tea strength.","edible,drink"},
 	{"honk","KMBFOB","kO",2,9,1,"FFEB3B","FFFFFF","big comic horn sound ring","honk","HONK! Peace was never an option.","silly,meme,loud"},
-	{"honor","KHCOKJ","GD",3,5,5,"FFD54F","1565C0","proud golden aura","horn","A fair fight. A strong fight.","support"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"honor","KHCOKJ","GD",3,5,5,"FFD54F","1565C0","proud golden aura","horn","A fair fight. A strong fight.","support"},
 	{"hood","BIBOVJ","GZN",2,5,3,"374151","111827","dark pulled-up hood with only two eyes visible","hush","Hood up. Mystery on.","clothing,stealth"},
 	{"hooded seal","ABCJEC","UdfB",3,5,4,"9A9AA0","3A3A3A","inflatable nose balloon","bark","Blows up a red nose balloon.","mammal,aquatic"},
 	{"hoodie","BMCONI","FZ",1,6,2,"8E9196","24262A","zip hoodie with hood up","swish","Hood up. Mode: stealth.","clothing"},
@@ -402,5 +403,4 @@ return {
 	{"jerk chicken","IABAKK","Kc",5,7,2,"5A2A1E","D8402B","charred spiced chicken pieces","sizzle","Fiery, smoky, Caribbean heat.","edible,spicy,flammable"},
 	{"jerry can","BABL2I","KE",3,1,4,"C0392B","C0392B","boxy fuel can with spout","thud","Do not light. We said DO NOT.","container,flammable"},
 	{"jersey","BMBOVB","GDh",2,6,3,"DC2626","FFFFFF","red team shirt with a big number 10 flying like a flag","crowd","Number 10. Automatically 30% better.","sport,clothing"},
-	{"jersey devil","AACJAB","DjA",5,8,4,"57534E","F97316","horse head, bat wings, hooves, forked tail","screech","Born in a pine barren. Never pays rent.","cryptid,spooky"},
 }

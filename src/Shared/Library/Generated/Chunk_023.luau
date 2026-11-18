@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
 	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
 	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
 	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
@@ -402,5 +403,4 @@ return {
 	{"sock puppet","BMAJGG","jd",1,6,1,"F2F2EE","C0392B","sock with button eyes","squeak","Fierce. Floppy. Fluffy.","toy"},
 	{"socks","BJAANI","dMe",1,7,1,"F2F2EE","8E9196","crumpled smelly sock","swish","Smells like defeat.","clothing,silly"},
 	{"soda","IBBFKI","EkIP",3,7,1,"C8202B","F7F7F2","fizzy can, bubbles","fizz","Shake it. Point it. Pop it.","edible,drink,fizzy"},
-	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
 }

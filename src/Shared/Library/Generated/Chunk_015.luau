@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"leaf blower","OFCFJK","kIe",3,7,4,"E67E22","24262A","handheld engine with long nozzle","whoosh","Moves leaves. Moves enemies.","tool,garden,loud"},
 	{"leaf insect","AMAJFA","dZP",1,6,1,"6AC84A","4A8A3A","flat leaf-shaped green body","buzz","A leaf that walks. Very rude to salads.","insect"},
 	{"leaf pile","NGBLMI","ZSN",1,1,2,"FF9800","C62828","crunchy heap of autumn leaves","rustle","Jump in! Something is hiding in there.","plant,silly"},
 	{"leaf rake","JKCHJK","fH",2,5,3,"2E8B57","C9CED4","fan of springy tines","clank","Gathers leaves. Gathers foes.","garden"},
@@ -402,5 +403,4 @@ return {
 	{"magnet","BKBLJK","lHN",4,5,6,"C0392B","C9CED4","U-shaped red magnet, silver tips","clank","Attracts trouble. And bolts.","magnetic"},
 	{"magnet ball","BKAG3I","H",2,5,3,"8E9196","C0392B","round magnet sphere","bubble","Clacks onto everything.","magnetic"},
 	{"magnet glove","BKBANK","lHe",4,7,3,"C0392B","C9CED4","glove with horseshoe magnet palm","thud","Yoink metal from afar.","magnetic"},
-	{"magnet pull","FKCBKI","lH",5,6,3,"D32F2F","1976D2","red-blue curved field lines dragging target","hum","Opposites attract. So do you.","magnetic"},
 }

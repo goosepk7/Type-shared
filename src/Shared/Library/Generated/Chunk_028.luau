@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wagon","DMBKHL","DQkg",2,4,3,"D32F2F","8D6E63","small red cart, long pull handle","engine","Pull it along. Fill it with chaos.","mechanical,vehicle,land,silly"},
+	{"wagtail","AMAJDB","dA",1,7,1,"3A3A3A","F2F2F2","tail wagging slim bird","tweet","Wags its tail like a dog.","bird,cute"},
+	{"wahoo","ABCJEC","DfB",4,10,4,"3A5A8A","C8D0D8","striped speedy fish","splash","Fastest name. Yell it. Wahoo!","fish,aquatic"},
 	{"waist","BMCL5K","RHN",2,4,3,"E8B48A","FF6FB5","spinning waist twirling a pink hula hoop","whoosh","Hoops around you until you are dizzy.","body,silly"},
 	{"waiter","LMCJNA","de",3,7,3,"111827","F8FAFC","bow tie, towel over arm, plate tray","ding","Your order is... incoming. Very fast.","food"},
 	{"wake","KHBF6B","FIO",3,7,1,"FDE047","EF4444","ringing alarm clock shockwave with a bucket of water","ring","RISE AND SHINE. It is 6 a.m. on a Saturday.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"wrist","BMBOKK","Uje",2,7,3,"E8B48A","FFD166","snapping wrist with a gold bracelet flash","snap","It is all in the wrist. Everything is.","body,silly"},
 	{"writer","LLCJNI","jh",3,3,3,"7C2D12","FDE68A","quill, inkpot, stacks of pages","scratch","Writes you out of the story.","art"},
 	{"writing","KMBBCB","jST",3,6,2,"1D4ED8","FFFFFF","looping blue ink scrawl chasing a pen tip","scratch","Even the doctor cannot read this.","school,art"},
-	{"wulver","AGCJNA","QFf",4,6,5,"57534E","D6D3D1","wolf-headed fisherman in a wool sweater","howl","A wolf man who leaves you fish. Wholesome.","mythical,canine,cute"},
-	{"wyrmling swarm","AACJLB","KAP",5,8,3,"F97316","B91C1C","cloud of tiny buzzing dragons","chirp","Like bees, but on fire.","reptile,swarm,fire"},
-	{"wyvern","AJDKDB","AfTMg",7,7,6,"3F6212","BEF264","two legs, bat wings, barbed stinger tail","screech","Two legs, two wings, one very pointy tail.","mythical,reptile,flying"},
 }

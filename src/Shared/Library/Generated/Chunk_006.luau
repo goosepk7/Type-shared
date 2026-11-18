@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clockmaker","LKCJNI","NO",3,3,4,"CA8A04","78350F","monocle, gears, tweezers","tick","Stops time. Briefly.","tools"},
 	{"clockwork dragon","AKEKAB","GKAg",8,6,8,"B45309","FACC15","brass dragon with exposed gears and steam vents","tick","Wind it up. Watch it fly.","robot,reptile,steampunk"},
 	{"clockwork engine","OKCM1I","Sh",3,4,6,"B58A3A","B8693D","stack of turning brass gears","tick","Tick tick whirr.","steampunk"},
 	{"clockwork knight","OKCJNA","GDf",5,4,7,"B45309","F59E0B","brass knight with a wind-up key in back","tick","Fights until it runs down. Wind it again.","robot,steampunk"},
@@ -191,7 +192,7 @@ return {
 	{"control tower","EMDMII","GSeh",3,1,7,"F5F5F5","37474F","tall stalk with a glass top","thud","Calls in air support. Very politely.","structure,building"},
 	{"conure","AMBJDB","jdA",2,6,2,"F2A01E","F2D82A","bright orange-yellow small parrot","squawk","Screams in sunshine colors.","bird,jungle,silly"},
 	{"convertible","DMCKHL","Dkg",4,8,4,"D7263D","F2E8CF","open-top car, folded roof, chrome trim","engine","Wind in your hair, enemies under your tyres.","mechanical,vehicle,land"},
-	{"conveyor belt","OKDL1I","IN",2,3,7,"24262A","8A929B","rolling belt on metal frame","hum","Takes enemies right back where they came.","mechanical"},
+	{"conveyor belt","OKDL1I","SI",2,3,7,"3C4048","F2A33A","a slatted belt that drags anyone on it sideways","hum","Please keep moving. You have no choice.","game,platformer,factory"},
 	{"convict cichlid","ABAJEC","dfB",1,6,1,"E8E8E8","1E1E1E","black-white striped cichlid","splash","Wears a prison stripes outfit.","fish,aquatic"},
 	{"convoy","DMFKHL","DkTgh",7,5,9,"556B2F","37474F","long line of trucks and escorts","engine","A whole road full of trucks.","vehicle,mechanical"},
 	{"cookie","IMBAKK","dce",3,7,2,"C8904A","4A2516","round chewy disc with chocolate chips","whoosh","Monsters can't resist them.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"crouton","IMAELB","eVP",2,7,1,"D9A04A","F2D08A","small golden cube","pitter","Tiny bread bricks. Crunch on impact.","edible"},
 	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
 	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
-	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
 }

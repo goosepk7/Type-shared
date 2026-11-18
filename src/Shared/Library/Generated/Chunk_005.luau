@@ -164,6 +164,7 @@ return {
 	{"cheat","KDBOKJ","jWZY",5,8,1,"22C55E","A855F7","up-up-down-down arrows glowing over a controller","beep","Up up down down left right left right B A.","gaming,meme"},
 	{"checkers","BMBELG","UPO",3,5,3,"DC2626","111827","red and black discs hopping over each other","clack","King me. Then duck.","game"},
 	{"checkmate","KLCLII","GO",6,4,4,"212121","FFFFFF","giant chess pieces boxing target in","clack","No moves left.","silly"},
+	{"checkpoint flag","BLBOII","SY",1,8,4,"E8E2D0","3FA9F5","plant a banner flag, then warp back to it","warp","Progress saved.","game,platformer,mobility"},
 	{"cheddar","IMBLKI","dSc",2,3,3,"F2A62B","F2C24A","orange block with crumbly edge","chomp","Sharp, orange, irresistible.","edible,sweet,dairy"},
 	{"cheek","BMBIGG","GUc",2,3,4,"F6B8A8","F28B82","two round rosy cheeks, pinch marks","squish","Pinched by aunts since forever.","body,cute,silly"},
 	{"cheer","KHBOKJ","DF",2,6,2,"FFEB3B","FF4081","pom-pom sparkle burst","yay","Go team! You can do it!","support"},
@@ -402,5 +403,4 @@ return {
 	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
-	{"clockmaker","LKCJNI","NO",3,3,4,"CA8A04","78350F","monocle, gears, tweezers","tick","Stops time. Briefly.","tools"},
 }

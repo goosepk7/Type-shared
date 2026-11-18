@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
 	{"pom pom crab","ABBJRA","GfTM",2,4,5,"F2D0B0","F2A0C0","crab holding anemone pompoms","clack","Cheerleader crab with stingy pompoms.","crustacean,aquatic,armored,cute"},
 	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
@@ -159,7 +160,7 @@ return {
 	{"pronghorn","AMCJAA","Dk",4,10,4,"C08A50","FFFFFF","forked horns, white rump, sleek","bleat","Second fastest land animal. Petty.","mammal,wild"},
 	{"proof","KHBAJB","TaO",3,7,2,"FACC15","111827","evidence bag slammed on a desk with a spotlight","bang","Pics or it did not happen. Here are the pics.","meme"},
 	{"propane tank","CACL2I","KEk",7,1,3,"F2F2EE","C0392B","tall gas cylinder with valve","boom","Hissss... KABOOM.","explosive,flammable"},
-	{"propeller hat","BMBONI","dA",1,6,1,"C0392B","F1C40F","beanie with spinning propeller","swish","Hover-ish. Mostly silly.","clothing,silly"},
+	{"propeller cap","BFBONE","Al",1,6,1,"2FB3A3","F28C28","beanie with a spinning propeller for a slow hover","swish","Hover-ish. Mostly silly.","game,platformer,mobility"},
 	{"propeller plane","DFCKHB","DAkg",4,7,5,"F5F5F5","C62828","small single-wing plane, nose propeller","propeller","Bzzzzzzzzz... thunk.","vehicle,air"},
 	{"prosciutto","IMBAKK","Uke",3,7,2,"D8706A","F2E0D8","paper-thin pink slices","whoosh","Fancy ham, paper thin.","edible"},
 	{"protea","NGCNMI","dFS",2,1,3,"F48FB1","FFFFFF","giant spiky artichoke bloom","rustle","Looks like an alien. Is a flower.","plant,flower,silly"},
@@ -402,5 +403,4 @@ return {
 	{"ravioli","IMAELB","ceP",2,7,1,"F2D08A","C8302B","square stuffed pasta pillows","pitter","Tiny pasta pillows.","edible"},
 	{"ray","FHCBKB","KTe",4,10,1,"FFE66D","FFFFFF","straight golden beam of light with sparkles","zing","A little ray of sunshine. In your eyes.","light"},
 	{"ray gun","CDBBwI","eLO",5,8,3,"DDE3E8","C0392B","retro finned pistol with ring nozzle","zap","Zzzorp! Vintage future.","scifi,retro,ranged"},
-	{"ray of frost","FCCBKI","JTeN",5,8,2,"4FC3F7","E1F5FE","thin pale-blue beam crusting targets in ice","crackle","Chill out. That is an order.","frozen"},
 }
