@@ -130,6 +130,7 @@ return {
 	{"alien abductee","LLCJNJ","jl",3,4,3,"4ADE80","F8FAFC","startled figure floating up in a beam","hum","Probed once. Never the same.","alien,silly"},
 	{"alien ambassador","LLCJNA","jF",3,4,4,"A855F7","4ADE80","alien in fancy sash","hum","We come in peace. With paperwork.","space,alien"},
 	{"alien blob","AJCJGF","WHV",5,3,5,"84CC16","D9F99D","glowing green goo with floating eyes","squelch","Fell from a meteor. Eating your yard.","alien,slime"},
+	{"alien buddy","AHBJGJ","Qeh",2,6,3,"7AD2A0","FF78C8","a floating one-eyed mint alien that zaps from your shoulder","bzzt","Came in peace. Stays for the zapping.","scifi,alien,pet"},
 	{"alien bug","AJCJFA","fTP",4,7,4,"A16207","4D7C0F","four-legged armored alien insect","skitter","Comes in swarms. Doesn't wipe its feet.","alien,insect"},
 	{"alien cat","ALBJAA","jY",2,8,2,"7C3AED","22D3EE","cat with antenna and starry fur","meow","Knocks planets off tables.","alien,cat,cute"},
 	{"alien egg","AJBLGI","cOh",2,1,4,"57534E","84CC16","leathery egg pulsing with green light","squelch","Don't look inside. Seriously.","alien,spooky"},
@@ -402,5 +403,4 @@ return {
 	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
 	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
 	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
-	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 }

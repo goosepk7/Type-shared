@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"podcaster","LMCJNI","jd",3,4,3,"7C3AED","F8FAFC","big microphone, headphones","ding","Talks for three hours. Enemies fall asleep.","meme"},
 	{"poem","KFBF6J","jFO",2,5,1,"C4B5FD","F8FAFC","floating quill and curling lines of verse","whisper","Roses are red. Violets are blue. Bonk.","art,school"},
 	{"pog","KHBOKG","DFO",3,8,2,"A855F7","FACC15","wide-open amazed mouth face with sparkles and hype bars","yay","Poggers. That was actually poggers.","gaming,meme,internet"},
 	{"pogo spring boots","BMBONI","Uk",2,7,3,"C9CED4","E67E22","boots on curved springs","thud","Boing! Over the wall.","toy,silly"},
@@ -402,5 +403,4 @@ return {
 	{"rain boots","BBBONI","G",1,5,3,"F1C40F","F1C40F","shiny tall rubber boots","swish","Splash with impunity.","clothing"},
 	{"rain dance","KBCEOJ","FN",3,4,2,"4FC3F7","B3E5FC","caster dancing as clouds gather and rain","music","Dance. Rain. Repeat.","music,aquatic"},
 	{"rain frog","AMAJAG","Ue",1,5,1,"C8A87A","E8D8B8","round angry frog with tiny legs","croak","Squeaks like an angry toy.","amphibian,wetland,silly,meme"},
-	{"rain shower","GBBEOJ","FN",2,4,2,"7FA7C3","DCEDF7","light quick rain from small cloud","patter","Free bath. You are welcome.","aquatic"},
 }
