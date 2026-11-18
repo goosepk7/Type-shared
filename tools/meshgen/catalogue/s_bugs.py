@@ -136,15 +136,15 @@ _H, _F = (0.0, 1.0, 0.0), (1.85, 0.04, 0.0)
 leg_piece("s_arthro_leg", [(_H, _F)], (_H, _F), 1.0, 0.36,
           "Arthropod leg, whole (lead: the straight hip-foot ellipsoid, local +Z up): coxa, femur rising to a high knee, tibia, metatarsus and a clawed tip.")
 leg_piece("s_arthro_leg_hairy", [(_H, _F)], (_H, _F), 1.35, 0.3,
-          "Hairy arthropod leg (tarantula, wolf spider, jumping spider): stout segments with a bristly surface.", hair=0.012, tris=700, res=150)
+          "Hairy arthropod leg (tarantula, wolf spider, jumping spider): stout segments with a bristly surface.", hair=0.012, tris=480, res=150)
 leg_piece("s_arthro_leg_spiny", [(_H, _F)], (_H, _F), 1.0, 0.3,
           "Spiny insect leg (cockroach, water bug): tibia and tarsus lined with spines.", spines=6, tris=520, res=150)
 leg_piece("s_arthro_leg_long", [((0, 1, 0), (1.7, 0.0, 0))], ((0, 1, 0), (1.7, 0.0, 0)), 0.65, 0.62,
           "Stilt leg (harvestman, cellar spider, crane fly, stick insect): thin, the knee far above the body.", out=0.36, kick=0.06)
-leg_piece("s_crab_leg", [(_H, _F)], (_H, _F), 1.15, 0.36,
-          "Crab walking leg: flattened segments, a pointed dactyl.", flat=0.62, tris=420)
-leg_piece("s_crab_leg_hairy", [(_H, _F)], (_H, _F), 1.35, 0.34,
-          "Hairy crab leg (yeti crab): flattened segments in a shaggy coat.", flat=0.7, hair=0.02, tris=700, res=150)
+leg_piece("s_crab_leg", [(_H, _F)], (_H, _F), 1.15, 0.22,
+          "Crab walking leg: stout flattened segments, a pointed dactyl.", flat=0.62, tris=420, rscale=1.45)
+leg_piece("s_crab_leg_hairy", [(_H, _F)], (_H, _F), 1.35, 0.22,
+          "Hairy crab leg (yeti crab): flattened segments in a shaggy coat.", flat=0.7, hair=0.02, tris=480, res=150)
 leg_piece("s_finger_leg", [(_H, _F)], (_H, _F), 1.0, 0.3,
           "Bony finger-like leg (face grabber): knuckled segments.", tris=420)
 leg_piece("s_mech_leg", [(_H, _F)], (_H, _F), 1.6, 0.34,
@@ -174,9 +174,12 @@ _sl = _fan(0.418, 1.06, (-0.375, -0.125, 0.125, 0.375), (52, 18, -14, -46), 2.5)
 leg_piece("s_arachnid_legs4", _sl, ((0.418, 1.06, -0.125), (0.418 + 2.5 * np.cos(np.radians(30)), 0.04, -0.125 - 2.5 * np.sin(np.radians(8)))), 1.0, 0.42,
           "Spider legs, one side (detail 0; lead: a reference leg): four legs fanned from front to back, knees high above the body.",
           tris=1100, mirror=True)
+leg_piece("s_arachnid_legs4_hairy", _sl, ((0.418, 1.06, -0.125), (0.418 + 2.5 * np.cos(np.radians(30)), 0.04, -0.125 - 2.5 * np.sin(np.radians(8)))), 1.0, 0.36,
+          "Hairy spider legs, one side (tarantula / wolf spider, detail 0-1): four stout bristly legs fanned front to back.",
+          tris=1300, mirror=True, hair=0.012, rscale=1.6, res=150)
 _cl = _fan(0.9, 0.844, (-0.333, -0.012, 0.308, 0.629), (28, 8, -12, -32), 1.85)
-leg_piece("s_crab_legs4", _cl, ((0.9, 0.844, 0.148), (0.9 + 1.85 * 0.95, 0.04, 0.148)), 1.265, 0.38,
-          "Crab legs, one side (detail 0; lead: a reference leg): four flattened walking legs spread sideways.", tris=1100, mirror=True, flat=0.62)
+leg_piece("s_crab_legs4", _cl, ((0.9, 0.844, 0.148), (0.9 + 1.85 * 0.95, 0.04, 0.148)), 1.265, 0.24,
+          "Crab legs, one side (detail 0; lead: a reference leg): four stout flattened walking legs spread sideways.", tris=1100, mirror=True, flat=0.62, rscale=1.45)
 
 
 # ------------------------------------------------------------------------------------------------ segments
@@ -430,7 +433,7 @@ def _veins(s, lines, r=0.012):
     return s
 
 
-def _wing(Wx, Wz, outline, veins, thick=0.012, vr=0.014):
+def _wing(Wx, Wz, outline, veins, thick=0.022, vr=0.02):
     """A thin wing sheet in studs (span Wx along X with the root at -X, chord Wz along Z, front -Z): the outline is given
     in unit coordinates (x, z in -0.5..0.5)."""
     def f(p):
@@ -455,26 +458,46 @@ def s_wing_vein():
     return s.su(ellipsoid(0.12, 0.02, 0.04, (0.6, 0.0, -0.24)), 0.01)
 
 
+def _poly(x, z, pts, round_r=0.04):
+    """Signed distance (unit wing coordinates) to a polygon with rounded corners."""
+    P = np.asarray(pts, float)
+    n = len(P)
+    d = np.full(x.shape, 1e9)
+    sgn = np.ones(x.shape)
+    for i in range(n):
+        a, b = P[i], P[(i + 1) % n]
+        ex, ez = b[0] - a[0], b[1] - a[1]
+        wx, wz = x - a[0], z - a[1]
+        t = np.clip((wx * ex + wz * ez) / (ex * ex + ez * ez), 0, 1)
+        dx, dz = wx - ex * t, wz - ez * t
+        d = np.minimum(d, dx * dx + dz * dz)
+        c1 = z >= a[1]
+        c2 = z < b[1]
+        c3 = ex * wz > ez * wx
+        flip = (c1 & c2 & c3) | (~c1 & ~c2 & ~c3)
+        sgn = np.where(flip, -sgn, sgn)
+    return sgn * np.sqrt(d) - round_r
+
+
+_FORE = [(-0.5, -0.4), (0.15, -0.5), (0.4, -0.44), (0.47, -0.25), (0.38, 0.05), (0.18, 0.4), (-0.15, 0.32), (-0.5, -0.02)]
+_HIND = [(-0.5, -0.42), (0.1, -0.46), (0.38, -0.3), (0.46, 0.0), (0.35, 0.3), (0.05, 0.46), (-0.3, 0.4), (-0.5, 0.08)]
+
+
 def _bfly_fore(x, z):
     ang = np.arctan2(z, x + 0.5)
-    r = np.hypot(x + 0.5, z)
-    edge = 0.98 - 0.3 * np.clip((ang - 0.15) / 1.3, 0, 1) ** 1.4 + 0.015 * np.sin(ang * 22)
-    lead = -0.45 + 0.02 * (x + 0.5)
-    return np.maximum(np.maximum(r - edge, lead - z), z - 0.5) * 0.5
+    return (_poly(x, z, _FORE) + 0.006 * np.sin(ang * 26) * (x > 0.2)) * 0.6
 
 
-@piece("s_wing_bfly_f", (1.4, 0.07, 0.75), tris=500, kind="unit", lead=(2.65, 0.095, 1.4), mirror=True, res=160, smooth=2)
+@piece("s_wing_bfly_f", (1.4, 0.1, 0.8), tris=500, kind="unit", lead=(2.65, 0.095, 1.4), mirror=True, res=160, smooth=2)
 def s_wing_bfly_f():
     """Butterfly forewing (lead 2.65 x 0.1 x 1.4, root -X, front -Z; left twin mirrored): a broad triangle with a straight
     leading edge, a scalloped outer margin and raised veins."""
-    return _wing(2.65, 1.4, _bfly_fore, [((-0.48, -0.42), (0.45, -0.42)), ((-0.48, -0.3), (0.38, 0.0)), ((-0.45, -0.25), (0.15, 0.3)), ((-0.45, -0.2), (-0.1, 0.45))], 0.016, 0.02)
+    return _wing(2.65, 1.4, _bfly_fore, [((-0.48, -0.42), (0.45, -0.42)), ((-0.48, -0.3), (0.38, 0.0)), ((-0.45, -0.25), (0.15, 0.3)), ((-0.45, -0.2), (-0.1, 0.45))], 0.026, 0.024)
 
 
 def _bfly_hind(x, z, tail=False):
-    r = np.hypot((x + 0.45) / 0.92, (z + 0.02) / 0.5)
     ang = np.arctan2(z, x + 0.5)
-    d = (r - 1.0 + 0.03 * np.sin(ang * 16)) * 0.5
-    d = np.maximum(d, -(x + 0.5))
+    d = (_poly(x, z, _HIND, 0.05) + 0.008 * np.sin(ang * 20)) * 0.6
     if tail:
         t = (np.hypot((x - 0.32) / 0.07, (z - 0.42) / 0.2) - 1.0) * 0.07
         d = np.minimum(d, t)
@@ -484,13 +507,13 @@ def _bfly_hind(x, z, tail=False):
 @piece("s_wing_bfly_h", (1.05, 0.07, 0.72), tris=450, kind="unit", lead=(1.96, 0.095, 1.33), mirror=True, res=160, smooth=2)
 def s_wing_bfly_h():
     """Butterfly hindwing (lead 1.96 x 0.1 x 1.33, root -X; left twin mirrored): a rounded fan with a scalloped margin."""
-    return _wing(1.96, 1.33, _bfly_hind, [((-0.45, -0.1), (0.4, 0.0)), ((-0.45, -0.05), (0.2, 0.35)), ((-0.45, 0.0), (-0.05, 0.45))], 0.016, 0.02)
+    return _wing(1.96, 1.33, _bfly_hind, [((-0.45, -0.1), (0.4, 0.0)), ((-0.45, -0.05), (0.2, 0.35)), ((-0.45, 0.0), (-0.05, 0.45))], 0.026, 0.024)
 
 
 @piece("s_wing_bfly_tail", (1.05, 0.07, 0.95), tris=480, kind="unit", lead=(1.96, 0.095, 1.33), mirror=True, res=160, smooth=2)
 def s_wing_bfly_tail():
     """Swallowtail / luna hindwing (root -X; left twin mirrored): the rounded hindwing with a long tail streamer."""
-    return _wing(1.96, 1.33, lambda x, z: _bfly_hind(x, z * 1.2, tail=True), [((-0.45, -0.1), (0.4, 0.0)), ((-0.45, -0.05), (0.3, 0.4))], 0.016, 0.02)
+    return _wing(1.96, 1.33, lambda x, z: _bfly_hind(x, z * 1.2, tail=True), [((-0.45, -0.1), (0.4, 0.0)), ((-0.45, -0.05), (0.3, 0.4))], 0.026, 0.024)
 
 
 @piece("s_wing_dfly", (1.45, 0.06, 0.6), tris=600, kind="unit", lead=(2.7, 0.095, 1.1), mirror=True, res=160, smooth=2)
@@ -501,7 +524,7 @@ def s_wing_dfly():
         a = np.hypot(x / 0.5, (z + 0.22) / 0.2) - 1.0
         b = np.hypot(x / 0.48, (z - 0.2) / 0.24) - 1.0
         return np.minimum(a, b) * 0.2
-    return _wing(2.7, 1.1, outline, [((-0.48, -0.36), (0.45, -0.38)), ((-0.48, 0.04), (0.45, 0.06))], 0.012, 0.018)
+    return _wing(2.7, 1.1, outline, [((-0.48, -0.36), (0.45, -0.38)), ((-0.48, 0.04), (0.45, 0.06))], 0.024, 0.022)
 
 
 @piece("s_leaf_wing", (0.26, 0.08, 1.0), tris=450, kind="unit", lead=(0.42, 0.08, 1.85), mirror=True, res=140, smooth=2)

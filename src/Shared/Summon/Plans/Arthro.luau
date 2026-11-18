@@ -112,6 +112,8 @@ function Kit.legSet(B: any, o: any, legs: { any })
 	end
 end
 
+Kit.COMB_THICK = { s_bug_legs3 = 1.1, s_bug_legs2 = 0.8, s_arachnid_legs4 = 1.0, s_arachnid_legs4_hairy = 1.0, s_crab_legs4 = 1.265 }
+
 -- Leg comb (detail 0): one primitive per side, the middle leg, whose sculpt carries the whole side's legs.
 function Kit.comb(B: any, o: any)
 	local hip, foot = o.hip, o.foot
@@ -120,7 +122,9 @@ function Kit.comb(B: any, o: any)
 	B:addRig("legs", { hip = hr, side = 1, phase = 0, len = hip[2] })
 	B:addRig("legs", { hip = hl, side = -1, phase = 0.5, len = hip[2] })
 	local f, len = Kit.segFrame(hip, foot)
-	local w = o.w or len * Kit.LEG_RATIO * (o.thick or 1)
+	-- the comb sculpt spans all the legs, so its width must stay the one it was sculpted at (a thicker plan leg
+	-- would spread the whole fan sideways): the per-piece reference thickness wins over o.thick
+	local w = o.w or len * Kit.LEG_RATIO * (Kit.COMB_THICK[o.piece or "s_bug_legs3"] or o.thick or 1)
 	B:mirror({ shape = "Ellipsoid", size = { w, len * 1.06, w }, cf = f, seg = "Y", col = o.col or "dark", mat = o.mat or "hard", bone = bone, pri = o.pri or 1.3,
 		role = "limb", name = "Comb#", mesh = o.piece or "s_bug_legs3", meshL = (o.piece or "s_bug_legs3") .. "_l" })
 end

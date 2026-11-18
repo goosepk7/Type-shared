@@ -125,7 +125,8 @@ K.Crab = function(B: any, ctx: any)
 	local id, hint = Kit.text(ctx)
 	local mech = t.robot or t.mechanical
 	local tank = has(id, "tank")
-	local longLegs = has(id, "king spider") or string.find(hint, "spidery", 1, true) ~= nil or string.find(hint, "long", 1, true) ~= nil and string.find(hint, "legs", 1, true) ~= nil
+	local king = has(id, "king") and not has(id, "spider")
+	local longLegs = (has(id, "spider") or string.find(hint, "spidery", 1, true) ~= nil or string.find(hint, "long", 1, true) ~= nil and string.find(hint, "legs", 1, true) ~= nil) and not king
 	local hairy = has(id, "yeti") or string.find(hint, "hairy", 1, true) ~= nil
 	local fiddler = has(id, "fiddler") or string.find(hint, "one gigantic claw", 1, true) ~= nil or string.find(hint, "one giant", 1, true) ~= nil
 	local ghost = has(id, "ghost") or string.find(hint, "stalk eyes", 1, true) ~= nil
@@ -175,10 +176,18 @@ K.Crab = function(B: any, ctx: any)
 		local sh = { W * 0.36, y - 0.08, -L * 0.36 }
 		local el = { W * 0.36 + 0.55 * k, y + 0.12 * k, -L * 0.36 - 0.55 * k }
 		local tip = { el[1] - 0.3 * k, el[2] + 0.16 * k, el[3] - 1.15 * k }
-		cheliped(B, ctx, { side = side, shoulder = sh, elbow = el, tip = tip, size = 0.62 * k, col = clawCol, mat = mat, pri = if k < 0.7 then 1.4 else 1.12, piece = if spiky or hairy then "s_crab_claw_spiky" else "s_crab_claw" })
+		local sz = 0.62 * k
+		if fiddler and side > 0 then
+			-- the giant claw is held folded across the front of the body, not reached out: the elbow out to the side,
+			-- the hand swinging in across the face
+			el = { W * 0.5 + 0.35, y + 0.25, -L * 0.42 }
+			tip = { el[1] - 1.45, y + 0.5, -L * 0.42 - 1.3 }
+			sz = 0.62 * 1.9
+		end
+		cheliped(B, ctx, { side = side, shoulder = sh, elbow = el, tip = tip, size = sz, col = clawCol, mat = mat, pri = if k < 0.7 then 1.4 else 1.12, piece = if spiky or hairy then "s_crab_claw_spiky" else "s_crab_claw" })
 	end
 	-- walking legs
-	crabLegs(B, ctx, { n = if detail >= 1 then 4 else 4, hipX = W * 0.36, y = y - H * 0.12, z0 = -L * 0.18, z1 = L * 0.34, R = if longLegs then 3.3 else 1.85, thick = if longLegs then 0.85 elseif hairy then 1.35 else 1.15,
+	crabLegs(B, ctx, { n = if detail >= 1 then 4 else 4, hipX = W * 0.36, y = y - H * 0.12, z0 = -L * 0.18, z1 = L * 0.34, R = if longLegs then 3.3 elseif king then 2.5 else 1.85, thick = if longLegs then 0.85 elseif hairy then 1.35 else 1.15,
 		piece = if hairy then "s_crab_leg_hairy" elseif longLegs then "s_arthro_leg_long" else "s_crab_leg", col = "primary", mat = mat, rise = if longLegs then 0.5 else 0.38 })
 	-- dressing
 	if has(id, "decorator") and detail >= 1 then

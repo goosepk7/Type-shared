@@ -306,7 +306,7 @@ K.Beetle = function(B: any, ctx: any)
 	local H, hc = b.H, b.hc
 	if stag then
 		-- antler jaws: long, curved inward, as long as the pronotum is wide
-		mandibles(B, ctx, b, Pw * 0.95, { piece = "s_stag_jaw", spread = 0.38, up = 0.18, w = 0.28, x = 0.3, pri = 1.2, col = if has(id, "rainbow") then "secondary" else "darker" })
+		mandibles(B, ctx, b, Pw * 1.1, { piece = "s_stag_jaw", spread = 0.38, up = 0.18, w = 0.44, x = 0.3, pri = 1.2, col = if has(id, "rainbow") then "secondary" else "darker" })
 	elseif detail >= 1 then
 		mandibles(B, ctx, b, 0.36, { spread = 0.05, pri = 2.2 })
 	end
@@ -537,7 +537,7 @@ K.Dragonfly = function(B: any, ctx: any)
 	local damsel = has(id, "damselfly mayfly")
 	local y = 1.4
 	local b = tagmata(B, ctx, {
-		y = y, T = { 0.62, 0.7, 0.8 }, Tp = -10, H = if damsel then { 0.42, 0.28, 0.26 } else { 0.48, 0.42, 0.4 }, hy = 0.02, hz = 0.55, A = { 0.26, 0.26, 1.2 }, Ap = 2, gap = -0.02,
+		y = y, T = { 0.62, 0.7, 0.8 }, Tp = -10, H = if damsel then { 0.42, 0.28, 0.26 } else { 0.48, 0.42, 0.4 }, hy = 0.02, hz = 0.55, A = if detail <= 0 then { 0.26, 0.26, 3.4 } else { 0.26, 0.26, 1.2 }, Ap = 2, gap = -0.02,
 		mat = if mech then "metal" else "hard", thPiece = "s_fly_thorax", abPiece = "s_arthro_seg", headPiece = "s_fly_head",
 		eye = { d = if damsel then 0.75 else 1.25, spacing = if damsel then 0.95 else 0.5, y = 0.3 }, eyeKind = if mech then "glow" elseif t.cute then "cute" else "bug",
 	})

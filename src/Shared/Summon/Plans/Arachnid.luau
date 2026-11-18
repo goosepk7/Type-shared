@@ -44,7 +44,7 @@ local function eightLegs(B: any, ctx: any, o: any)
 	local hx = o.hipR or 0.42
 	if detail <= 1 and not o.noComb then
 		Kit.comb(B, { tag = "C", hip = { hx, o.y, zs[2] }, foot = { hx + o.R * math.cos(rad(30)), o.lift or 0.04, zs[2] - o.R * math.sin(rad(8)) }, thick = o.thick, col = o.col, mat = o.mat,
-			piece = o.comb or "s_arachnid_legs4", pri = 1.25 })
+			piece = o.comb or (if o.piece == "s_arthro_leg_hairy" then "s_arachnid_legs4_hairy" else "s_arachnid_legs4"), pri = 1.25 })
 		return
 	end
 	local legs = {}
