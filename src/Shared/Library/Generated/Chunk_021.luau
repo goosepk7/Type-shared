@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rasgulla","IMBLGG","USN",2,3,3,"F7F7F2","F2EAD5","spongy white syrup balls","wobble","Spongy white balls that squeak.","edible,wobbly,sweet,dessert"},
+	{"rash","KJBDOJ","MNP",2,4,1,"F87171","FCA5A5","spreading red dots with frantic scratching hands","scratch","Do not scratch. You are scratching.","body,gross"},
+	{"raspberry","IGAELB","jeP",2,7,1,"E30B5C","8A0F3A","bumpy red cap, hollow center","pitter","Blows a rude noise when it hits.","edible,fruit,sweet"},
+	{"raspberry cane","NGBNMI","WFScT",2,1,3,"2E7D32","C2185B","prickly canes with red berries","rustle","Pick carefully. Ouch.","plant,crop"},
 	{"rat","AMAJAA","CdMPb",1,6,1,"7A7470","E8B0B0","pointy snout, bald tail","squeak","Clever, quick and always hungry.","mammal,cute"},
 	{"rat catcher","LMCJNA","cH",3,5,4,"57534E","A16207","cage, terrier, long pole","squeak","Catches rats. Sometimes enemies.","historical,silly"},
 	{"rat king","AJCJLA","MPh",5,5,4,"57534E","CA8A04","tangled swarm of rats wearing a crown","squeak","Many rats. One crown. Total chaos.","swarm,royal,spooky"},
@@ -399,8 +403,4 @@ return {
 	{"saag","IMBOKI","WF",3,5,3,"3E7A2B","2E5A2E","green leafy curry","chomp","A green power curry.","edible"},
 	{"saber-toothed tiger","ACDJAA","DkfTO",7,6,8,"C8964A","F2E8D8","stocky cat with huge dagger fangs","roar","Two daggers for teeth. Zero dentists.","mammal,extinct,ancient,heavy"},
 	{"sable","AMBJAA","CfT",3,8,2,"3A2418","6A4A30","dark glossy weasel","chatter","Fanciest fur in the forest.","mammal,predator"},
-	{"sable antelope","AMDJAA","DkT",5,8,4,"2A1E14","F2F2EE","black antelope, huge curved horns","bleat","Huge scimitar horns. Elegant.","mammal,wild"},
-	{"sabre","CKCHrK","DfT",5,8,4,"C9CED4","B58A3A","curved slashing blade, knuckle bow","shing","For dashing charges and dashing hats.","medieval,sharp"},
-	{"sachertorte","IMBLKI","dSc",2,3,3,"3A1A0C","B0203E","glossy chocolate cake slice","chomp","Chocolate cake royalty.","edible,sweet,royal"},
-	{"saci","AFBJNG","jbY",2,9,2,"DC2626","7C2D12","one-legged kid in red cap riding whirlwinds","whoosh","Hops in tornadoes. Ties your hair.","trickster,wind"},
 }

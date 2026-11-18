@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fly agaric","NJBLMI","jSM",4,1,3,"E53935","FFFFFF","classic red cap with white dots","poof","Fairy-tale pretty. Fairy-tale poisonous.","plant,fungus"},
+	{"fly swatter","JMBHJK","fO",1,9,1,"C0392B","24262A","flat mesh paddle on wire","boing","SWAT.","silly"},
 	{"flycatcher","AMAJDB","dA",1,7,1,"8A8A6A","F2E8C0","small bird catching bugs mid-air","tweet","Snaps bugs out of the air.","bird,cute"},
 	{"flying carpet","DLCKHB","DAgY",4,8,3,"7B1FA2","FFC107","tasselled rug rippling in the air","whoosh","A whole new world of bonking.","vehicle,magic,mythical"},
 	{"flying dragon lizard","AMBJAB","CAf",2,7,2,"8A7A5A","E8701E","lizard with rib wings","hiss","A lizard that flies. On ribs.","reptile"},
@@ -231,6 +233,7 @@ return {
 	{"furniture","BMDELB","GkPO",5,3,6,"A9713B","6B4226","falling sofa, wardrobe, lamp and one leftover screw","crash","Self-assembly. Three screws left over. Hmm.","household,heavy"},
 	{"fury","AICJNB","jAQf",5,8,4,"1F2937","DC2626","winged avenger, snake hair, torch","screech","Holds grudges professionally.","mythical,flying"},
 	{"fuse bomb","BACG3F","KEN",7,4,3,"24242A","FF9F1C","a round black cartoon bomb with a sparking fuse","kaboom","Fsssssss... KABOOM.","cartoon,explosive,silly"},
+	{"fuse talisman","CABAJB","KEke",6,7,3,"ECE0C4","B0221C","a kunai with a burning paper seal that sticks and explodes","boom","Read the label. Then run.","anime,ninja,fire,trap"},
 	{"fuse trail","CACLKI","KEQ",5,1,1,"24262A","FF6A1A","fizzing trail of sparks","boom","Follow the sparkle to the boom.","explosive"},
 	{"fusion","FHEGKE","KE",9,4,3,"FFF4B0","FF6B1A","mini star core, swirling plasma rings","hum","How stars work. Pocket-sized.","space,explosive,danger"},
 	{"fusion reactor","OAEN1I","KEL",9,1,8,"F2F2EE","7DF9FF","domed reactor with glowing core","hum","Clean energy. Messy meltdowns.","scifi,danger"},
@@ -304,6 +307,7 @@ return {
 	{"gastonia","AMDJAA","GkfT",6,3,9,"7A6A4A","C8A07A","spiky shoulder armored","grunt","Spikes everywhere. Hugs: no.","dinosaur,extinct,reptile,armored"},
 	{"gastornis","AMDJDA","Dkf",6,8,5,"6A5A4A","C8A07A","huge flightless bird with massive beak","boom","A giant bird. Ate seeds, probably.","bird,flightless,extinct"},
 	{"gate","EEDCII","GS",3,1,8,"6D4C41","455A64","heavy double doors with iron bands","thud","Knock all you like.","structure,defense"},
+	{"gate surge","KHCNNI","DWkf",7,8,4,"46C8BA","DC322A","a body bursting with colour as inner gates open one by one","roar","Gate one: warm. Gate four: everyone else should leave.","anime,ninja,buff"},
 	{"gatehouse","EEEMII","Ge",4,1,10,"9E9E9E","5D4037","twin towers flanking an arched gate","thud","Two towers, one gate, zero chance.","structure,defense,ancient"},
 	{"gatekeeper","LKDCYI","GkO",5,1,8,"57534E","D4AF37","stout armoured guard with a giant key and a crossed halberd","clang","What is the password? Wrong. It is always wrong.","defense,medieval"},
 	{"gatling gun","CKDMwI","TeV",7,7,6,"A86F32","5A3A1E","rotating barrel cluster on wheels","rattle","Crank to shoot. Shoot to win.","medieval,siege,heavy"},
@@ -399,8 +403,4 @@ return {
 	{"giant burger","IMEJIF","GFkc",7,2,7,"C8762B","4A2416","towering ten-layer burger","thud","Requires unhinging your jaw.","edible,giant,silly"},
 	{"giant burrito","IMEJIF","DkI",7,2,7,"F2E2B8","8A5A3A","enormous tortilla log","thud","A burrito the size of a log. Rolls.","edible,giant,silly"},
 	{"giant cake","IMEJIF","Gdkc",7,2,7,"F7D9E3","E8434F","cake as tall as a house","thud","A cake so big it has weather.","edible,giant,silly,sweet"},
-	{"giant carrot","IEEAJK","kTe",7,2,7,"ED9121","3E8E2B","carrot as tall as a tree","thud","A carrot missile from the ground.","edible,giant,silly"},
-	{"giant centipede","AJBJTA","CfMP",3,3,1,"8A1E14","F2C82A","huge red centipede","squelch","Eats bats. Out of the air.","bug"},
-	{"giant cheese wheel","IMEJIF","DkcI",7,2,7,"F2C24A","C89A3A","building-sized cheese drum","thud","The mice will be talking about this.","edible,giant,silly"},
-	{"giant chocolate bar","IMECII","Gdc",7,2,7,"5A2E16","C8A070","chocolate bar the size of a wall","thud","A wall of chocolate. Distracting.","edible,giant,silly"},
 }

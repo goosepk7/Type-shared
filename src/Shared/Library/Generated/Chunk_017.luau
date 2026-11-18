@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mixed berries","IGAELB","eVP",2,7,1,"8A1A4E","3E3A8A","heap of assorted berries","pitter","Every berry at once. Chaos.","edible,sweet"},
+	{"mixed nuts","IEAELB","ePO",2,7,1,"A86A3A","E8C88A","pile of assorted nuts","pitter","An entire nut family reunion.","edible,nut"},
+	{"mixer","BMBHJK","jf",1,6,3,"C0392B","C9CED4","bowl and whirling beaters","whirr","Whips up chaos.","kitchen,household"},
+	{"mixture","FLBG2B","jEFM",4,5,1,"8B5CF6","84CC16","bowl of swirling purple-green gloop with a spoon standing up","gloop","Every drink at the fountain. In one cup.","silly,magic"},
 	{"moa","AMEJDA","Dkf",6,8,5,"6A4A2E","C8A87A","giant flightless bird, very tall","boom","Twelve feet of bird. Extinct.","bird,flightless,extinct"},
 	{"moai","EMECII","GdkS",6,1,10,"6D6D6D","8D6E63","giant long-faced stone head and torso","rumble","Stares. Judges. Squashes.","structure,landmark,ancient"},
 	{"moat","EBDLII","GSN",3,1,8,"1E88E5","9E9E9E","water channel ringed by stone edges","splash","Swimming lessons were optional. Oops.","structure,defense,ancient"},
@@ -399,8 +403,4 @@ return {
 	{"noahs ark","DBFKHC","GghB",5,2,10,"8D6E63","FFE082","enormous wooden boat with a house on top","splash","Two of every surprise inside.","vehicle,aquatic,ancient"},
 	{"nobody","LICJVJ","ZbY",3,6,2,"E5E7EB","9CA3AF","dotted outline of a person with nothing inside","hush","Nobody did it. Nobody is very busy.","silly,stealth"},
 	{"nod","KMAO3G","UFO",1,5,1,"FDE68A","60A5FA","bobblehead bouncing up and down in agreement","boing","Mm-hm. Mm-hm. Not listening. Mm-hm.","silly"},
-	{"nodachi","CKDHrK","fT",7,5,4,"C9CED4","24262A","very long field sword","shing","Reach for the sky. Then slice it.","sharp,ancient"},
-	{"nodosaurus","AMDJAA","Gkf",6,3,10,"6A5A3A","B89A6A","armored body, no club","grunt","All armor, no club. Pure defense.","dinosaur,extinct,reptile,armored"},
-	{"noise","KFCFOB","jO",3,9,1,"BDBDBD","FFFFFF","messy jagged sound rings","clang","Ears ringing. Head spinning.","loud"},
-	{"noni","IJBDOJ","jSM",3,3,2,"E8E8C8","A8B86A","bumpy pale fruit","whiff","Smells like old cheese.","edible,smelly,fruit"},
 }

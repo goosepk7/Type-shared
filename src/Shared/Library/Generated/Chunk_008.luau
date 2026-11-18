@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doner kebab","IGBOKI","F",2,5,3,"C88A5A","F2E8D0","wrapped flatbread with sliced meat","crunch","A spinning tower of flavor.","edible,healthy"},
 	{"donkey","AMCKAA","GDkg",3,4,5,"8A8076","D8D0C4","long ears, grey coat, pale muzzle","bray","Stubborn. Loyal. Loud.","mammal,farm"},
 	{"donut","IMBLKI","UdSc",2,3,3,"F2A6C8","D9A04A","ring torus, pink glaze, sprinkles","chomp","A ring of power, but glazed.","edible,sweet"},
 	{"donut decoy","IMBLKI","jdc",2,3,3,"F2A6C8","D9A04A","tempting donut on a plate","chomp","Look over there! A donut!","edible,sweet"},
@@ -154,6 +155,7 @@ return {
 	{"dunce cap","BMBONI","j",1,5,1,"F2F2EE","24262A","tall paper cone with a D","swish","Think about what you did.","clothing,silly"},
 	{"dune buggy","DECKHL","UDkg",4,9,4,"F28C28","2B2B2B","open tube frame, fat tyres, roll bar","engine","Sand in places you did not know existed.","mechanical,vehicle,land"},
 	{"dune grass","NGBNMI","SN",1,1,3,"C0CA33","F4E4BC","spiky grass tufts on sand dunes","rustle","Holds the beach together.","plant"},
+	{"dune sepulchre","FECNII","eNO",7,3,5,"D4B47A","A8885A","sand spirals up and seals a foe in a crushing coffin","rumble","Hold still. The desert is hugging you.","anime,ninja,sand"},
 	{"dung beetle","AMAJFA","GkfI",1,3,4,"1E1E24","3A3A8A","beetle rolling a ball","click","Navigates by the Milky Way. With poop.","insect,armored,ancient"},
 	{"dungeon","MIELII","GSNO",4,1,10,"424242","FF6F00","dark stone cells, chains, torches","clang","Welcome to your new room.","place,terrain,spooky"},
 	{"dungeon crawler","LMCJNA","cf",4,5,5,"57534E","F97316","torch, sword, backpack of loot","clang","Every room has loot. Or a trap.","explorer,gaming"},
@@ -401,6 +403,4 @@ return {
 	{"euphorbia","NJCLMI","GSTM",3,1,6,"558B2F","E53935","spiny stems with red flowers","thud","Spiky. Poisonous sap. Double trouble.","plant,desert,sharp"},
 	{"euphoria","KHCOKJ","DF",3,7,3,"FF80AB","FFEB3B","bursting rainbow joy aura","yay","Best. Day. Ever.","support"},
 	{"europa","MCDGKJ","Je",5,4,7,"F5F5F5","C1A47A","white cracked icy moon","rumble","An ocean hides beneath the ice.","space"},
-	{"europasaurus","AMDJAA","kIO",5,2,9,"8A7A6A","C8C0A8","dwarf island sauropod","rumble","Island-sized mini sauropod.","dinosaur,extinct,reptile,heavy"},
-	{"eurypterid","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant aquatic scorpion","skitter","A scorpion the size of a person.","arachnid,spooky,venomous,extinct,ancient"},
 }

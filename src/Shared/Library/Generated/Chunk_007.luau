@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crossing guard","LMCJNI","GO",3,4,5,"F97316","F8FAFC","hi-vis vest, giant stop sign","whistle","STOP. Everyone stops.","silly"},
 	{"crosswalk","MMCLnI","GNO",3,1,5,"FFFFFF","111827","white road stripes with a lollipop STOP sign held up","whistle","Look left. Look right. Look left again. Stay.","place,school"},
 	{"crossword","BLBLnI","jSN",3,1,3,"F8FAFC","111827","black-and-white word grid with a chewed pencil","scratch","Seven down: \"defeat\", six letters. Starts with Y.","game,school"},
 	{"crouton","IMAELB","eVP",2,7,1,"D9A04A","F2D08A","small golden cube","pitter","Tiny bread bricks. Crunch on impact.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"domino","BMACII","GV",1,1,3,"24262A","F2F2EE","black tiles with white dots","clack","Tip one. Tip them all.","game"},
 	{"domino line","EMCLII","kSP",3,6,2,"212121","F5F5F5","long winding row of dominoes","clack","One push. Chain reaction.","structure,silly"},
 	{"domovoi","AMAJNA","GdF",1,4,3,"78350F","F59E0B","small hairy grandpa spirit near the stove","giggle","Guards the house. Needs milk and cookies.","mythical,cute"},
-	{"doner kebab","IGBOKI","F",2,5,3,"C88A5A","F2E8D0","wrapped flatbread with sliced meat","crunch","A spinning tower of flavor.","edible,healthy"},
 }

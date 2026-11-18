@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"europasaurus","AMDJAA","kIO",5,2,9,"8A7A6A","C8C0A8","dwarf island sauropod","rumble","Island-sized mini sauropod.","dinosaur,extinct,reptile,heavy"},
+	{"eurypterid","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant aquatic scorpion","skitter","A scorpion the size of a person.","arachnid,spooky,venomous,extinct,ancient"},
 	{"evaporate","KACAKB","iX",5,6,1,"FFCC80","E1F5FE","target hissing into steam","hiss","Poof. Steam. Gone.","fire"},
 	{"evening","KICNOI","ZSN",3,2,2,"7C3AED","F97316","purple-orange sky with first stars and a porch light","chirp","Streetlights are on. Time to come in.","time"},
 	{"evening primrose","NHBNMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow blooms opening at dusk","rustle","Opens at night. Glows a little.","plant,flower"},
@@ -401,6 +403,4 @@ return {
 	{"flurry","GCBEOJ","N",2,5,1,"F5FAFD","CDE3F0","swirling light snow puff","hush","A little sneeze of snow.","frozen"},
 	{"flute","BMBFJI","jdc",2,7,2,"C9CED4","C9CED4","thin silver tube with keys","woodwind","Lures snakes. And enemies.","music"},
 	{"fly","AMAJFB","dASP",1,6,1,"3A3A3A","C82A2A","big red eyes, see-through wings","buzz","Lands on your food. Rubs its hands.","insect"},
-	{"fly agaric","NJBLMI","jSM",4,1,3,"E53935","FFFFFF","classic red cap with white dots","poof","Fairy-tale pretty. Fairy-tale poisonous.","plant,fungus"},
-	{"fly swatter","JMBHJK","fO",1,9,1,"C0392B","24262A","flat mesh paddle on wire","boing","SWAT.","silly"},
 }

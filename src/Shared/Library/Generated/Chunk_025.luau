@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"steamroller","DEDKHF","kgO",6,2,10,"F2C200","333333","giant front drum roller, small cab","rumble","Turns enemies into very flat enemies.","heavy,silly"},
+	{"steamroller drop","CEENHI","EkO",9,3,5,"F2C200","333333","a steamroller drops on the spot from high above","rumble","Delivered flat. You're welcome.","anime,heavy,silly"},
+	{"steamship","DBEKHC","DkgB",5,5,8,"212121","E53935","big hull with tall smoking funnels","horn","Full steam ahead!","vehicle,aquatic,ancient"},
+	{"steel","FKCCnI","Ga",4,2,9,"7D8790","CBD3DA","riveted steel panel wall","clank","Tough as nails. Made of nails.","heavy"},
+	{"steel bridge","EKECII","GS",3,1,10,"607D8B","C62828","criss-cross steel girders over water","thud","Rivets. So many rivets.","structure"},
 	{"steel fist","FKCAKB","kfO",6,6,8,"607D8B","CFD8DC","giant metal gauntlet punch","clang","Knock knock. It is iron.","heavy"},
 	{"steel mill","EAENII","KS",5,1,9,"616161","FF6F00","huge sheds with glowing furnaces","clank","Molten metal everywhere. Do not trip.","structure,mechanical"},
 	{"steel spike","FKCLII","GT",6,5,7,"78909C","CFD8DC","shiny metal spikes bursting from floor","clang","Floor teeth, stainless edition.","sharp,heavy"},
@@ -398,9 +403,4 @@ return {
 	{"tank","DKDMHL","GEkeg",7,3,10,"4B5320","2F3320","tracked hull, rotating turret, long cannon","boom","Knock knock. It's a tank.","mechanical,vehicle,land"},
 	{"tank commander","LKCJNI","GEe",6,3,7,"4D7C0F","1F2937","head poking out of hatch, goggles","boom","Brought a tank to a word fight.","military"},
 	{"tank destroyer","DKDMHL","EkTeg",8,3,9,"4B5320","2A2A2A","low hull, giant fixed long cannon","boom","Aims once. That is enough.","mechanical,vehicle,land"},
-	{"tank main","LKDJNA","Gkc",5,3,9,"57534E","1D4ED8","huge shield, heavy armor","clang","Absorbs every hit. Smiles.","meme,gaming,heavy"},
-	{"tank trap","EKCLII","GSTN",3,1,8,"455A64","8D6E63","crossed steel girders in a star","thud","Tanks hate this one weird trick.","structure,defense,sharp"},
-	{"tanker truck","DAEKHL","KDEkg",7,4,7,"ECEFF1","E53935","long cylinder tank on a truck","engine","Please drive very, very carefully.","mechanical,vehicle,land,explosive"},
-	{"tanto","CKAHrK","fT",3,9,3,"C9CED4","24262A","tiny curved knife, wrapped grip","shing","Small blade, big focus.","medieval,sharp"},
-	{"tantrum","KACNOI","jk",4,6,2,"D32F2F","FFEB3B","stomping red aura with flying toys","wah","WAAAH! Everyone back off.","rage,silly"},
 }

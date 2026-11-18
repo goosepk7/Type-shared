@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shantungosaurus","AMEJAA","dk",7,5,6,"7A6A5A","C8B8A0","biggest duckbill","honk","Largest duck-billed dino. Huge.","dinosaur,extinct,reptile"},
+	{"shape","KLBELB","UjTP",3,6,3,"EF4444","3B82F6","tumbling red triangle, blue square, yellow circle, star","clack","Wrong hole. Wrong hole. Wrong hole. There.","school,toy"},
+	{"shapeshift alien","ALCJGA","jZY",5,6,4,"84CC16","A855F7","alien blob mid-shift into you","squelch","Looks like you. Slimier.","alien,slime"},
+	{"shapeshifter","ALCJGA","jZY",5,7,4,"A855F7","22D3EE","half-formed blob mid-transformation","squelch","Could be anything. Currently: confused.","magic"},
+	{"shar pei","AMCJAA","DQf",4,7,4,"D8A06A","F2D8B0","extremely wrinkly face and body","bark","Wears way too much skin.","mammal,pet,silly"},
 	{"share","KHBOKB","F",1,6,2,"FF80AB","FFD54F","glowing gift passing to an ally","chime","Sharing is caring. And healing.","support,cute"},
 	{"shark","ABDJEC","DfTB",7,8,6,"6E7E8E","F2F4F6","torpedo body, tall dorsal fin, toothy grin","chomp","Has 300 teeth and zero chill.","fish,aquatic,ocean,predator"},
 	{"shark car","DBCKHL","DkfgB",5,7,5,"607D8B","F5F5F5","car with a shark fin and teeth","engine","Chomps on the way past.","vehicle,silly"},
@@ -398,9 +403,4 @@ return {
 	{"snowplow driver","LCCJNL","JkI",5,4,6,"F97316","F8FAFC","giant plow blade truck","rumble","Pushes snow. And enemies.","vehicle,frozen"},
 	{"snowshoe hare","ACBJAG","UCd",2,6,1,"F7F7F4","D8D4CC","white winter coat, huge furry feet","squeak","Built-in snowshoes.","mammal,cute"},
 	{"snowshoes","BCBONF","N",1,4,3,"8B5A2B","B89B6A","racquet-shaped shoe frames","bonk","Walk on snow. Waddle on land.","sport"},
-	{"snowstorm","GCEEOJ","jJNP",7,5,4,"E3EEF5","90AFC5","thick swirling snow from dark cloud","howl","Snow day! Forever!","frozen,storm"},
-	{"snowsuit","BCCIGA","GUN",2,2,7,"EC4899","7DD3FC","puffy round snowsuit, arms stuck straight out","puff","Cannot put arms down. Cannot be hurt either.","clothing,frozen,silly"},
-	{"snowy owl","ACBJDB","AZT",3,7,2,"F7F7F4","2A2A2A","white owl with black flecks, yellow eyes","hoot","A fluffy snowball with eyes.","bird,nocturnal,predator,arctic"},
-	{"snowy peak","MCFCII","GJS",5,1,9,"FFFFFF","90A4AE","jagged mountain top under deep snow","rumble","Cold. Steep. Avalanche-ready.","place,terrain,frozen"},
-	{"soap","BBALKI","jNO",1,6,1,"C3A6E8","F2F2EE","slippery pastel soap bar","splash","Slippy! Slippy! Splat.","bathroom,silly"},
 }

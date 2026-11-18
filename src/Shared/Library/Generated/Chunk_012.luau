@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grocery","MMDLlI","cNh",4,1,5,"22C55E","F97316","small shop with striped awning and crates of fruit outside","ding","Went in for milk. Came out with nine things. No milk.","building,edible"},
+	{"grootslang","AEFJCD","GfH",8,3,9,"1C1917","E7E5E4","elephant-headed serpent in a diamond cave","rumble","Elephant front, snake back, diamonds everywhere.","cryptid,giant"},
+	{"grosbeak","AMAJDB","dA",1,7,1,"E8301E","1E1E1E","big-beaked songbird","tweet","Beak like a nutcracker.","bird,cute"},
+	{"grotesque","AEBLNI","GdO",3,2,8,"78716C","D6D3D1","squat stone face on a ledge","crack","Makes faces at you. Literally made of faces.","guardian,silly"},
 	{"ground","FEDNnI","kNO",5,1,9,"8B6B4A","5B8C3A","chunk of grassy dirt heaving up like a rug pulled","rumble","It was under you a second ago.","terrain"},
 	{"ground beetle","AMAJFA","Gf",1,6,4,"1E1E24","6A3AA0","glossy running beetle","click","Fast night hunter.","insect,armored"},
 	{"ground cover","NGBNMI","SNP",1,1,2,"7CB342","B39DDB","low mat of tiny leaves","rustle","Covers the ground. Trips the enemy.","plant"},
@@ -399,8 +403,4 @@ return {
 	{"honduran white bat","AMAJDB","jiA",1,7,1,"F2F2EE","F2D82A","fluffy white bat, yellow nose","screech","A cotton ball with ears.","mammal,nocturnal,spooky,cute"},
 	{"honesty plant","NGBNMI","dFSc",1,1,2,"E1BEE7","ECEFF1","papery silver coin seed pods","rustle","Grows silver coins. Fake ones.","plant,flower"},
 	{"honey","IMBLGI","FScN",2,3,3,"E8A317","F7C948","golden drip, honeycomb jar","gloop","Sweet, sticky, and very hard to escape.","edible,sticky,sauce,sweet"},
-	{"honey badger","AMBJAA","CDfTO",5,8,6,"2A2622","D8D6D0","low stocky body, silver-white back stripe","chatter","Fears nothing. Bee stings? Shrugs.","mammal,predator"},
-	{"honey flood","IMDFGI","ScIN",5,3,3,"E8A317","F7C948","slow golden wave","gloop","Sticky gold everywhere.","edible,sticky"},
-	{"honey fungus","NJCLMI","WSMP",3,1,5,"FFB300","6D4C41","golden clusters with stringy black roots","poof","Biggest living thing on Earth. Sneaky.","plant,fungus"},
-	{"honey lemon tea","IABOKI","KF",2,5,2,"E8B04A","F7E86A","steaming mug, lemon, honey","slurp","A sore throat's best friend.","edible,drink,warm"},
 }

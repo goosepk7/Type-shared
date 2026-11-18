@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"javelin thrower","LMCJNA","Te",5,6,4,"1E3A8A","FACC15","track uniform, long javelin","whoosh","Throws spears. Legally.","sport"},
+	{"jaw","BMCLGG","fHO",5,4,6,"EFE6CF","BDB199","snapping lower jaw and upper teeth, no face","chomp","It talks with its mouth full. Of you.","body,sharp"},
+	{"jawbreaker","IEBAKK","keO",5,7,10,"E8434F","4FA3E8","hard layered rainbow sphere","bonk","Hard enough to break jaws. Or walls.","edible,candy"},
+	{"jawfish","ABAJEC","CdB",1,6,1,"F2D82A","E8F0F4","fish poking out of burrow","splash","Pops up from its sand burrow.","fish,aquatic"},
 	{"jay","AMAJDB","dA",1,7,1,"C8A08A","3A6AD8","pinkish bird with blue wing patch","tweet","Plants thousands of acorns.","bird,cute"},
 	{"jazz","KFCF6J","UjcN",3,5,1,"1E3A8A","D4AF37","smooth gold saxophone notes in a smoky blue swirl","music","It is about the notes you do not play. Skiddly bop.","music,cool"},
 	{"jeans","BMCCBA","GaN",3,2,7,"3B5B8C","1E3A5F","stiff blue jeans standing up on their own, ripped knee","thud","So stiff they stand up alone.","clothing"},
@@ -399,8 +403,4 @@ return {
 	{"lava serpent","AAEJCH","KCH",7,6,6,"7F1D1D","FB923C","giant serpent of cracked glowing rock","hiss","Swims through lava like it's a pool.","reptile,fire"},
 	{"lava slug","AABJCD","KSN",3,1,4,"7F1D1D","F97316","glowing slug leaving burning trail","sizzle","Slow. Hot. Leaves scorch marks.","fire"},
 	{"lava sprite","AAAJGG","UK",2,7,2,"F97316","7F1D1D","blob of lava with a happy face","sizzle","Bouncy. Molten. Friendly-ish.","fire,cute"},
-	{"lava tornado","HAEN5K","KklSHP",9,5,6,"BF360C","FFB300","spinning funnel of molten rock and fire","roar","Twisty. Melty. Absolutely not.","storm,fire,danger"},
-	{"lava truck","DADKHL","KDkgP",6,4,8,"3E2723","FF5722","truck hauling a tub of lava","engine","Pours lava. On purpose.","mechanical,vehicle,land"},
-	{"lava tsunami","HAFF6F","KkNP",10,4,7,"DD2C00","FFB300","towering wall of glowing molten rock","roar","The volcano went surfing.","fire,natural,danger"},
-	{"lava wall","FADCnI","GKS",6,2,6,"BF360C","FF9100","rising wall of glowing molten rock","bubble","A wall that bites if you touch it.","fire,defence"},
 }

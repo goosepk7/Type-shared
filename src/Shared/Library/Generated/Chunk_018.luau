@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nodachi","CKDHrK","fT",7,5,4,"C9CED4","24262A","very long field sword","shing","Reach for the sky. Then slice it.","sharp,ancient"},
+	{"nodosaurus","AMDJAA","Gkf",6,3,10,"6A5A3A","B89A6A","armored body, no club","grunt","All armor, no club. Pure defense.","dinosaur,extinct,reptile,armored"},
+	{"noise","KFCFOB","jO",3,9,1,"BDBDBD","FFFFFF","messy jagged sound rings","clang","Ears ringing. Head spinning.","loud"},
+	{"noni","IJBDOJ","jSM",3,3,2,"E8E8C8","A8B86A","bumpy pale fruit","whiff","Smells like old cheese.","edible,smelly,fruit"},
 	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
 	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
 	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
@@ -399,8 +403,4 @@ return {
 	{"peach slices","IMBLGI","kSO",2,3,2,"F7B05A","F2D08A","glossy golden wedges in syrup","squeak","Slippery golden crescents.","edible,slippery,silly"},
 	{"peacock","AMCJDA","jdf",3,4,2,"1E5EA0","2E8E5A","giant fanned tail with eye spots","scream","Has 200 eyes on its tail. Shows off.","bird,farm"},
 	{"peacock mantis shrimp","ADBJRA","GkfTO",5,10,5,"2AB070","E8302A","rainbow shrimp with clubs","clack","A rainbow that punches.","crustacean,aquatic,armored"},
-	{"peacock spider","AJAJQA","dfN",1,6,2,"2A6AE8","E8501E","tiny spider with rainbow fan","skitter","Dances with a rainbow butt flag.","arachnid,spooky,venomous,cute"},
-	{"peanut","IEAAKK","UeO",2,8,5,"C9A06A","8A5A2A","ridged two-lump shell","tok","Not a nut. Don't tell it.","edible,nut"},
-	{"peanut brittle","IMAAKK","TeV",3,7,6,"C68E3A","D9A04A","shattered amber slab with peanuts","bonk","Sharp, sweet shards.","edible"},
-	{"peanut butter","IMBLGI","SNO",2,3,3,"B5823A","D9A85A","thick tan swirl in a jar","gloop","Glues your mouth shut. Also enemies.","edible,sticky"},
 }

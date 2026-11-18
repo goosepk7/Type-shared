@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magic shield","KLCIKI","Ga",2,5,7,"64B5F6","E3F2FD","translucent glowing hex dome around caster","hum","Nope. Not today. Bounce.","magic,defence"},
+	{"magic shop","ELCNII","dScY",3,1,5,"4A148C","FFD54F","crooked shop with glowing windows","ding","No refunds on cursed items.","structure,building,shop,magic"},
+	{"magic slippers","BLBONI","Y",3,6,2,"B0103A","C9CED4","sparkly jewelled shoes","swish","Click three times. Go somewhere.","clothing,magic"},
+	{"magic trick","KLBOKI","db",2,7,1,"212121","D32F2F","card fan and puff of smoke","tada","Pick a card. Any card. Too late.","magic,silly"},
 	{"magic word","KLBAKB","jF",3,7,1,"7C4DFF","FFD54F","glowing floating letters","ding","You said please. Here's a spell.","magic,cute"},
 	{"magical girl","LHCJNB","AFe",5,7,4,"F472B6","FDE68A","frilly outfit, star wand, glowing transformation","chime","Transforms with a 30-second sparkle sequence.","magic,hero"},
 	{"magician performer","LLCJNA","jdhY",4,6,3,"111827","DC2626","top hat, cape, rabbit, wand","ding","Pulls a rabbit. Then a tiger.","circus,magic"},
@@ -399,8 +403,4 @@ return {
 	{"mistletoe","NGANMI","jdS",1,1,2,"7CB342","FFFFFF","sprig of leaves with white berries","rustle","Stand under it. Awkward silence follows.","holiday,silly"},
 	{"misty step","KBBOKI","ZY",2,10,1,"CFD8DC","FFFFFF","puff of mist, caster reappears nearby","hush","Step into the mist. Step out over there.","magic,stealth"},
 	{"mite","AJAJQA","fMNP",1,6,2,"C8A88A","E8D8C0","microscopic eight-legged blob","skitter","Too small to see. Everywhere.","arachnid,spooky,venomous"},
-	{"mixed berries","IGAELB","eVP",2,7,1,"8A1A4E","3E3A8A","heap of assorted berries","pitter","Every berry at once. Chaos.","edible,sweet"},
-	{"mixed nuts","IEAELB","ePO",2,7,1,"A86A3A","E8C88A","pile of assorted nuts","pitter","An entire nut family reunion.","edible,nut"},
-	{"mixer","BMBHJK","jf",1,6,3,"C0392B","C9CED4","bowl and whirling beaters","whirr","Whips up chaos.","kitchen,household"},
-	{"mixture","FLBG2B","jEFM",4,5,1,"8B5CF6","84CC16","bowl of swirling purple-green gloop with a spoon standing up","gloop","Every drink at the fountain. In one cup.","silly,magic"},
 }

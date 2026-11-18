@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"peacock spider","AJAJQA","dfN",1,6,2,"2A6AE8","E8501E","tiny spider with rainbow fan","skitter","Dances with a rainbow butt flag.","arachnid,spooky,venomous,cute"},
+	{"peanut","IEAAKK","UeO",2,8,5,"C9A06A","8A5A2A","ridged two-lump shell","tok","Not a nut. Don't tell it.","edible,nut"},
+	{"peanut brittle","IMAAKK","TeV",3,7,6,"C68E3A","D9A04A","shattered amber slab with peanuts","bonk","Sharp, sweet shards.","edible"},
+	{"peanut butter","IMBLGI","SNO",2,3,3,"B5823A","D9A85A","thick tan swirl in a jar","gloop","Glues your mouth shut. Also enemies.","edible,sticky"},
 	{"peanut butter and jelly","IMBLGI","FSN",2,3,3,"E8C88A","8E2B5E","sandwich with purple and tan layers","gloop","The lunchbox legend.","edible,sticky"},
 	{"peanut butter cups","IMBLKI","dSc",2,3,3,"5A2E16","B5823A","fluted chocolate cup, tan center","chomp","Chocolate and peanut butter, together forever.","edible,sweet,candy"},
 	{"peanut sauce","IMBLGI","SNP",2,3,3,"B5823A","D9A85A","thick tan sauce","gloop","Nutty and sticky.","edible,sticky,sauce"},
@@ -399,8 +403,4 @@ return {
 	{"polenta","IMBLGI","SNP",2,3,3,"F2C24A","E8B04A","golden cornmeal mush","gloop","Golden, smooth, and filling.","edible,sticky"},
 	{"polevik","AGCJNA","jN",4,6,3,"FACC15","15803D","tall grassy figure with scythe","rustle","Haunts fields at noon. Take a nap.","spirit,plant"},
 	{"police","LHDJLA","GDOh",6,6,6,"1D4ED8","F8FAFC","three officers, flashing lights, whistles, a donut box","siren","Wee-woo wee-woo. You are under a-typed.","defense,law"},
-	{"police boat","DBCKHC","DkgOB",5,8,6,"1565C0","F5F5F5","fast boat with lights and siren","siren","Pull over. In the water.","vehicle,aquatic"},
-	{"police car","DMCKHL","DdkgO",5,8,6,"1B2A49","F5F5F5","sedan, roof light bar, push bumper","siren","Wee-woo means pull over, villain.","mechanical,vehicle,land,lights"},
-	{"police chief","LMCJNA","GOh",5,4,6,"1E3A8A","FACC15","gold badge, peaked cap","siren","Calls for backup. Backup arrives.","rescue"},
-	{"police helicopter","DFDKHE","AegO",5,7,6,"1565C0","F5F5F5","helicopter with a searchlight","chop","Spotlight on you! Nowhere to hide.","vehicle,air"},
 }

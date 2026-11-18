@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"honey badger","AMBJAA","CDfTO",5,8,6,"2A2622","D8D6D0","low stocky body, silver-white back stripe","chatter","Fears nothing. Bee stings? Shrugs.","mammal,predator"},
+	{"honey flood","IMDFGI","ScIN",5,3,3,"E8A317","F7C948","slow golden wave","gloop","Sticky gold everywhere.","edible,sticky"},
+	{"honey fungus","NJCLMI","WSMP",3,1,5,"FFB300","6D4C41","golden clusters with stringy black roots","poof","Biggest living thing on Earth. Sneaky.","plant,fungus"},
+	{"honey lemon tea","IABOKI","KF",2,5,2,"E8B04A","F7E86A","steaming mug, lemon, honey","slurp","A sore throat's best friend.","edible,drink,warm"},
 	{"honey mustard","IMBNGI","SNP",2,4,1,"E8B02B","F2D870","golden creamy dip","splat","Sweet and zingy.","edible,sauce"},
 	{"honey possum","AMAJAA","Uf",1,6,2,"8A6A4A","C8A07A","tiny striped nectar-eater","chirp","Long tongue. Lives on flowers.","mammal,marsupial"},
 	{"honey roasted peanuts","IMAELB","eVP",2,7,1,"C9A06A","E8A317","golden glazed nuts","pitter","Sweet, salty, sticky.","edible,sweet"},
@@ -399,8 +403,4 @@ return {
 	{"jasmine","NGBNMI","dFSc",2,1,2,"FFFFFF","2E7D32","small white starry blooms","rustle","Smells like a summer night.","plant,flower"},
 	{"java sparrow","AMAJDB","dA",1,7,1,"8A8A9A","E8301E","grey bird, big pink beak","tweet","Wears a pink beak and white cheeks.","bird,cute"},
 	{"javelin","CKCAuI","Te",5,7,3,"8A929B","C49A6C","thin light throwing spear","whoosh","Olympic sport, ancient threat.","medieval,sharp"},
-	{"javelin thrower","LMCJNA","Te",5,6,4,"1E3A8A","FACC15","track uniform, long javelin","whoosh","Throws spears. Legally.","sport"},
-	{"jaw","BMCLGG","fHO",5,4,6,"EFE6CF","BDB199","snapping lower jaw and upper teeth, no face","chomp","It talks with its mouth full. Of you.","body,sharp"},
-	{"jawbreaker","IEBAKK","keO",5,7,10,"E8434F","4FA3E8","hard layered rainbow sphere","bonk","Hard enough to break jaws. Or walls.","edible,candy"},
-	{"jawfish","ABAJEC","CdB",1,6,1,"F2D82A","E8F0F4","fish poking out of burrow","splash","Pops up from its sand burrow.","fish,aquatic"},
 }

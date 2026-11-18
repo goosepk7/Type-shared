@@ -3,6 +3,16 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"woodpecker","AMBJDB","dATO",2,7,1,"1E1E1E","D8201E","black and white bird, red cap, chisel beak","knock","Headbangs trees all day. No headache.","bird,cute"},
+	{"wool","BMBLOG","GUN",2,3,4,"F5F0E6","D9D2C3","springy cream fluff bundle with one sheep ear sticking out","bleat","Itchy. Warm. Baa-rely a threat.","farm,soft"},
+	{"woolly bear","AMAJCA","Gjd",1,5,1,"1E1E1E","C8701E","fuzzy black-orange caterpillar","flutter","Predicts winter. Probably wrong.","insect,cute"},
+	{"woolly mammoth","ACEJAA","DkIO",8,4,8,"6A4A2E","C8A87A","shaggy brown fur, huge curved tusks, domed head","trumpet","An elephant in a winter coat.","mammal,extinct,ancient,heavy,arctic"},
+	{"woolly rhinoceros","ACDJAA","DkTO",7,4,8,"7A5A3A","C8A880","shaggy rhino with long front horn","roar","A rhino ready for the ice age.","mammal,extinct,ancient,heavy,arctic"},
+	{"worcestershire sauce","IMBNGI","SNP",2,4,1,"3A1A0C","5A2A1E","thin dark sauce","splat","Nobody can say it. Everyone loves it.","edible,sauce"},
+	{"word","KLBAKB","Teh",3,7,2,"FFFFFF","7C3AED","glowing speech bubble with WORD written inside","pop","You typed word. Bold. Very meta.","meme,school"},
+	{"work","KMCL0I","iSN",3,1,5,"64748B","FDE68A","grey desk buried in paper with a ticking clock at 4:59","tick","Hard work pays off later. Naps pay off now.","job,silly"},
+	{"worker","LECJNA","Gfh",4,4,5,"F97316","FACC15","hi-vis vest, hard hat, lunch box, shovel","clank","Clocked in. On a break. Clocked out.","job"},
+	{"world","MEFG3F","kHOh",9,2,10,"2563EB","22C55E","whole blue-green globe with clouds, rolling like a boulder","rumble","You wanted the world. Here it comes. All of it.","space,place,heavy,danger"},
 	{"world ender","HLFNOI","KEkPO",10,2,9,"1A0033","FF3D00","sky splitting, ground cracking, everything glowing","boom","Use responsibly. Or don't.","explosive,danger"},
 	{"world turtle","AEFJAA","GkN",9,1,10,"365314","1E3A8A","colossal turtle with a forest on its shell","rumble","Carries the world. Slowly.","mythical,giant,ancient,danger"},
 	{"worm dance","KMBOKD","Dd",1,6,1,"7CB342","FFFFFF","wave-like floor wiggle","music","Floor flop with style.","music,dance,silly"},

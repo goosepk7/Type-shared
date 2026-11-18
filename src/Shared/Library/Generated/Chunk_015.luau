@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lava tornado","HAEN5K","KklSHP",9,5,6,"BF360C","FFB300","spinning funnel of molten rock and fire","roar","Twisty. Melty. Absolutely not.","storm,fire,danger"},
+	{"lava truck","DADKHL","KDkgP",6,4,8,"3E2723","FF5722","truck hauling a tub of lava","engine","Pours lava. On purpose.","mechanical,vehicle,land"},
+	{"lava tsunami","HAFF6F","KkNP",10,4,7,"DD2C00","FFB300","towering wall of glowing molten rock","roar","The volcano went surfing.","fire,natural,danger"},
+	{"lava wall","FADCnI","GKS",6,2,6,"BF360C","FF9100","rising wall of glowing molten rock","bubble","A wall that bites if you touch it.","fire,defence"},
 	{"lava wave","FAEF6F","KkNP",8,4,6,"FF3D00","FFB300","towering wall of molten rock","roar","Do not surf this one.","fire,heavy"},
 	{"lava worm","AADJCH","KCH",6,5,6,"7F1D1D","F97316","glowing segmented worm from lava","sizzle","Swims in lava. Pops out in your face.","fire"},
 	{"lavender","NGBNMI","FSN",2,1,3,"9575CD","7CB342","spiky purple flower stalks","rustle","Calms you down. And them. Zzz.","plant,flower"},
@@ -399,8 +403,4 @@ return {
 	{"magic mirror","BLCIII","aY",4,3,3,"C9CED4","A66BDB","ornate oval mirror with gold frame","chime","Mirror mirror, bonk them all.","magic,fantasy"},
 	{"magic missile","FLBAKB","QeV",4,9,1,"9C6BFF","F3E5FF","three glowing violet darts curving to target","zing","It never misses. It is rude like that.","magic"},
 	{"magic ring","BLAOKJ","FZ",5,5,4,"D4A72C","A66BDB","glowing runed gold band","chime","Precious. Very precious.","magic,treasure"},
-	{"magic shield","KLCIKI","Ga",2,5,7,"64B5F6","E3F2FD","translucent glowing hex dome around caster","hum","Nope. Not today. Bounce.","magic,defence"},
-	{"magic shop","ELCNII","dScY",3,1,5,"4A148C","FFD54F","crooked shop with glowing windows","ding","No refunds on cursed items.","structure,building,shop,magic"},
-	{"magic slippers","BLBONI","Y",3,6,2,"B0103A","C9CED4","sparkly jewelled shoes","swish","Click three times. Go somewhere.","clothing,magic"},
-	{"magic trick","KLBOKI","db",2,7,1,"212121","D32F2F","card fan and puff of smoke","tada","Pick a card. Any card. Too late.","magic,silly"},
 }

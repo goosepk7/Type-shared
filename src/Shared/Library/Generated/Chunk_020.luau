@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"police boat","DBCKHC","DkgOB",5,8,6,"1565C0","F5F5F5","fast boat with lights and siren","siren","Pull over. In the water.","vehicle,aquatic"},
+	{"police car","DMCKHL","DdkgO",5,8,6,"1B2A49","F5F5F5","sedan, roof light bar, push bumper","siren","Wee-woo means pull over, villain.","mechanical,vehicle,land,lights"},
+	{"police chief","LMCJNA","GOh",5,4,6,"1E3A8A","FACC15","gold badge, peaked cap","siren","Calls for backup. Backup arrives.","rescue"},
+	{"police helicopter","DFDKHE","AegO",5,7,6,"1565C0","F5F5F5","helicopter with a searchlight","chop","Spotlight on you! Nowhere to hide.","vehicle,air"},
 	{"police officer","LMCJNA","GQO",5,6,6,"1E3A8A","FACC15","blue uniform, cap, badge, whistle","siren","Stop right there. Please and thank you.","rescue"},
 	{"police robot","OKCJNA","GeO",5,4,8,"1E3A8A","94A3B8","armored robot officer with visor","clank","Dead or alive... you're coming with me.","robot"},
 	{"police station","EMDCII","GSOh",3,1,8,"1565C0","F5F5F5","brick building with blue lamps","siren","Calling all units!","structure,building"},
@@ -399,8 +403,4 @@ return {
 	{"rapper","LMCJNA","jO",4,7,3,"111827","FACC15","cap, chains, mic","beat","Drops bars. Bars drop on you.","music"},
 	{"raptor","AGCJBA","DQfT",6,9,4,"6B8E23","D2B48C","feathered dino, sickle toe claw, long stiff tail","screech","Tested the fences. Found your keyboard.","dinosaur,extinct,predator"},
 	{"raptor punch","KACODI","KDkf",8,6,2,"FF5A1F","FFE07A","a huge flaming bird bursts out of one punch","roar","Wind up. Wiiiind up. PUNCH.","fighting,melee,fire"},
-	{"rasgulla","IMBLGG","USN",2,3,3,"F7F7F2","F2EAD5","spongy white syrup balls","wobble","Spongy white balls that squeak.","edible,wobbly,sweet,dessert"},
-	{"rash","KJBDOJ","MNP",2,4,1,"F87171","FCA5A5","spreading red dots with frantic scratching hands","scratch","Do not scratch. You are scratching.","body,gross"},
-	{"raspberry","IGAELB","jeP",2,7,1,"E30B5C","8A0F3A","bumpy red cap, hollow center","pitter","Blows a rude noise when it hits.","edible,fruit,sweet"},
-	{"raspberry cane","NGBNMI","WFScT",2,1,3,"2E7D32","C2185B","prickly canes with red berries","rustle","Pick carefully. Ouch.","plant,crop"},
 }

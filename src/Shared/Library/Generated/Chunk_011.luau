@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant carrot","IEEAJK","kTe",7,2,7,"ED9121","3E8E2B","carrot as tall as a tree","thud","A carrot missile from the ground.","edible,giant,silly"},
+	{"giant centipede","AJBJTA","CfMP",3,3,1,"8A1E14","F2C82A","huge red centipede","squelch","Eats bats. Out of the air.","bug"},
+	{"giant cheese wheel","IMEJIF","DkcI",7,2,7,"F2C24A","C89A3A","building-sized cheese drum","thud","The mice will be talking about this.","edible,giant,silly"},
+	{"giant chocolate bar","IMECII","Gdc",7,2,7,"5A2E16","C8A070","chocolate bar the size of a wall","thud","A wall of chocolate. Distracting.","edible,giant,silly"},
 	{"giant clam","ABCJGI","GHNO",3,1,8,"3AA0A8","8A5AC8","huge wavy shell, glowing blue lips","squelch","Big lips. Bigger clamp.","mollusk,aquatic"},
 	{"giant cookie","IMEJIF","DkcI",7,2,7,"C8904A","4A2516","huge cookie like a wheel","thud","Rolls like a wheel. Lures like a cookie.","edible,giant,silly"},
 	{"giant crab monster","ABFJFA","Gkf",8,3,10,"B91C1C","FDBA74","towering crab with skyscraper claws","click","Pinches buildings. Walks sideways into history.","kaiju,aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"grizzly cub","AMBJAA","Dkf",2,5,7,"8A6A44","C8A07A","fluffy brown cub","roar","Tiny claws. Big plans.","mammal,predator,wild,cute"},
 	{"groan","KMAFOB","N",1,4,1,"BDBDBD","FFFFFF","droopy grey sound ring","ugh","Uggghhh. Everyone feels it.","silly"},
 	{"grocer","LGCJNA","ce",3,4,4,"15803D","DC2626","apron, crate of fruit","ding","Throws tomatoes. Accurately.","merchant"},
-	{"grocery","MMDLlI","cNh",4,1,5,"22C55E","F97316","small shop with striped awning and crates of fruit outside","ding","Went in for milk. Came out with nine things. No milk.","building,edible"},
-	{"grootslang","AEFJCD","GfH",8,3,9,"1C1917","E7E5E4","elephant-headed serpent in a diamond cave","rumble","Elephant front, snake back, diamonds everywhere.","cryptid,giant"},
-	{"grosbeak","AMAJDB","dA",1,7,1,"E8301E","1E1E1E","big-beaked songbird","tweet","Beak like a nutcracker.","bird,cute"},
-	{"grotesque","AEBLNI","GdO",3,2,8,"78716C","D6D3D1","squat stone face on a ledge","crack","Makes faces at you. Literally made of faces.","guardian,silly"},
 }

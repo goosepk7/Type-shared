@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
 	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
@@ -402,5 +403,4 @@ return {
 	{"crossbow tower","EMDMII","GSTe",5,1,7,"6D4C41","455A64","tower bristling with crossbows","twang","Click. Thwip. Click. Thwip.","structure,defense,tower"},
 	{"crossbowman","LKCJNA","Te",5,4,5,"57534E","7C2D12","padded jacket, big crossbow, pavise shield","twang","Slow reload. Big bolt.","warrior,archer"},
 	{"crosshair","KHBOKB","QTe",3,9,1,"EF4444","FFFFFF","red circle with a plus sign locking on, beeping","beep","Locked on. Do not move. You moved.","gaming,ranged"},
-	{"crossing guard","LMCJNI","GO",3,4,5,"F97316","F8FAFC","hi-vis vest, giant stop sign","whistle","STOP. Everyone stops.","silly"},
 }

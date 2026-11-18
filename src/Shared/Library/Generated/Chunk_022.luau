@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sable antelope","AMDJAA","DkT",5,8,4,"2A1E14","F2F2EE","black antelope, huge curved horns","bleat","Huge scimitar horns. Elegant.","mammal,wild"},
+	{"sabre","CKCHrK","DfT",5,8,4,"C9CED4","B58A3A","curved slashing blade, knuckle bow","shing","For dashing charges and dashing hats.","medieval,sharp"},
+	{"sachertorte","IMBLKI","dSc",2,3,3,"3A1A0C","B0203E","glossy chocolate cake slice","chomp","Chocolate cake royalty.","edible,sweet,royal"},
+	{"saci","AFBJNG","jbY",2,9,2,"DC2626","7C2D12","one-legged kid in red cap riding whirlwinds","whoosh","Hops in tornadoes. Ties your hair.","trickster,wind"},
 	{"sack","BMBL2I","O",1,1,2,"D2B48C","7A4E2D","tied burlap sack","thud","Into the sack you go.","container"},
 	{"sacred ground","FHDNOI","GFS",4,2,5,"FFF8E1","FFE082","golden circle of protective light","chime","Good guys only, please.","holy,defence"},
 	{"sacred grove","MGENII","FS",4,1,8,"43A047","FFD54F","ring of ancient trees around a stone","echo","Peaceful. Powerful. Protected.","place,adventure,holy"},
@@ -266,6 +270,7 @@ return {
 	{"seal pup","ACBJEC","UfB",1,5,4,"F4F4F2","D8DCE0","white fluffy seal pup, huge dark eyes","bark","Most adorable marshmallow alive.","mammal,aquatic,cute,arctic"},
 	{"seaplane","DFCKHB","DAkgB",5,7,5,"FFC107","1565C0","plane with two big floats under it","propeller","Lands on water. Splashes enemies.","vehicle,air"},
 	{"search and rescue","LMCJNA","QFH",3,6,5,"F97316","F8FAFC","orange jacket, rope, flashlight","whistle","Always finds you.","rescue"},
+	{"searing exhale","FADAKB","KEWke",7,4,3,"FF7A1A","FFD27A","a huge fireball exhaled after hand seals","roar","Seals, breath, and a sun rolls off your tongue.","anime,ninja,fire"},
 	{"searing gaze","KACBKI","KTe",6,9,2,"FF5A3C","FFE2B8","twin red-hot beams from the eyes","zap","Don't blink. Seriously.","anime,hero"},
 	{"seashell","BBBIyK","GcO",2,4,5,"FBCFE8","FEF3C7","pink spiral conch with a pearly opening","whoosh","Hold it to your ear. Hear your doom. And the sea.","ocean,cute"},
 	{"season","KGDN5K","KJWN",5,2,4,"22C55E","F97316","wheel of four quarters: blossom, sun, red leaf, snowflake","chime","All four at once. Pack a coat and shorts.","weather,time"},
@@ -398,9 +403,4 @@ return {
 	{"shampoo","BBBL2I","UjNP",2,3,2,"7DD3FC","F0ABFC","squeezy bottle spurting bubbly foam","squirt","Lather. Rinse. Repeat. Forever. Help.","household,slippery"},
 	{"shamshir","CKCHrK","fT",5,7,4,"C9CED4","D4A72C","deeply curved desert sabre","shing","Curvy, swift, and stylish.","sharp,ancient"},
 	{"shangri la","MHFNII","FS",4,1,8,"43A047","FFD54F","hidden green valley with golden temples","chime","Nobody ages here. Nobody loses here.","place,mythical"},
-	{"shantungosaurus","AMEJAA","dk",7,5,6,"7A6A5A","C8B8A0","biggest duckbill","honk","Largest duck-billed dino. Huge.","dinosaur,extinct,reptile"},
-	{"shape","KLBELB","UjTP",3,6,3,"EF4444","3B82F6","tumbling red triangle, blue square, yellow circle, star","clack","Wrong hole. Wrong hole. Wrong hole. There.","school,toy"},
-	{"shapeshift alien","ALCJGA","jZY",5,6,4,"84CC16","A855F7","alien blob mid-shift into you","squelch","Looks like you. Slimier.","alien,slime"},
-	{"shapeshifter","ALCJGA","jZY",5,7,4,"A855F7","22D3EE","half-formed blob mid-transformation","squelch","Could be anything. Currently: confused.","magic"},
-	{"shar pei","AMCJAA","DQf",4,7,4,"D8A06A","F2D8B0","extremely wrinkly face and body","bark","Wears way too much skin.","mammal,pet,silly"},
 }
