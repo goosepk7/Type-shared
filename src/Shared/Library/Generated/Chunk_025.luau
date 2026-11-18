@@ -240,6 +240,7 @@ return {
 	{"surfer","LBCJNC","DkB",3,8,3,"0EA5E9","FDE68A","board shorts, surfboard, sun bleached hair","splash","Rides waves. Rides your wave too.","sport,aquatic"},
 	{"surgeonfish","ABBJEC","dTB",2,6,1,"3A5AA8","F2C020","oval fish with tail scalpel","splash","Brings its own scalpel.","fish,aquatic"},
 	{"surinam toad","AMAJAG","Ueh",1,5,1,"8A7A5A","B8A88A","flat square toad, babies in back","croak","Babies pop out of its back.","amphibian,wetland,spooky"},
+	{"surprise glove","BMBL2I","dkc",5,9,4,"E53935","FFD54F","a gift box that bursts open with a boxing glove on a spring","boing","Open it. Go on. Open it.","cartoon,silly,trap,prank"},
 	{"survey","BMBLnI","jSN",2,1,2,"F8FAFC","22C55E","clipboard with five empty stars and fifty questions","scratch","Only takes two minutes. Question 1 of 94.","silly"},
 	{"survivalist","LGCJNA","FZc",4,5,5,"4D7C0F","78350F","camo, knife, fire starter","ding","Eats bugs. Builds shelter. Wins.","outdoor"},
 	{"survivor","LGCJNA","GFZf",5,5,8,"57534E","84CC16","ragged tough figure with a pan, backpack and a bandaged arm","grunt","Eaten worse. Fought worse. Slept in worse.","warrior"},

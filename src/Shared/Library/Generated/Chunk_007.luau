@@ -99,7 +99,6 @@ return {
 	{"cuscus","AMBJAA","Uf",2,6,2,"F2E8D8","C8A07A","fluffy possum with big eyes","chirp","A teddy bear with a curly tail.","mammal,marsupial"},
 	{"custard","IMBLGG","USN",2,3,3,"F7E08A","F7F2E0","wobbly yellow pudding","wobble","Yellow, wobbly, and warm.","edible,wobbly,sweet"},
 	{"custard cream","IMBAKK","Uke",3,7,2,"F2D870","F7F2EC","two pale biscuits, cream middle","whoosh","Dunked in tea. Thrown at foes.","edible,dairy"},
-	{"custard pie","IMBAKK","jkeO",3,7,2,"F7E8B0","F7F2EC","pie heaped with white cream","whoosh","The clown's weapon of choice.","edible,silly"},
 	{"cut","KKBHrB","fTV",4,8,1,"E5E7EB","EF4444","thin silver slash line that parts things in two","shing","Measure twice. Cut everything.","sharp"},
 	{"cutlass","CKCHrK","fT",5,7,4,"8A929B","B58A3A","short curved blade, cup guard","shing","Standard issue pirate attitude.","medieval,sharp,pirate"},
 	{"cutlery","BKBELB","TeP",4,7,4,"D1D5DB","9CA3AF","shower of forks, knives and one bent spoon","clatter","Elbows off the table. Forks in the air.","kitchen,sharp"},

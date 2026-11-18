@@ -293,6 +293,7 @@ return {
 	{"bongo","AMCJAA","Dk",4,8,4,"A0401E","F2F0EA","chestnut red, thin white stripes","bleat","Named after a drum. Plays no drums.","mammal,wild"},
 	{"bongo drums","BMBFJI","O",2,6,3,"8B5A2B","D2B48C","pair of small joined drums","strum","Bongo bongo bongo!","music"},
 	{"bonk","KMBAKB","fO",2,8,2,"FFD54F","FFFFFF","cartoon lump and spinning stars","bonk","Bonk. Straight to nap jail.","silly,meme"},
+	{"bonk mallet","CMDGtK","kfO",7,5,2,"E53935","FFD54F","a giant squeaky toy mallet that bonks from above","bonk","Squeak. Flat. Squeak.","cartoon,silly,toy"},
 	{"bonnet","BMBONI","F",1,5,1,"F3E6C8","E88AA5","frilly tied bonnet","swish","Old-timey cuteness.","clothing"},
 	{"bonnethead","ABCJEC","DfTB",4,8,6,"8A9098","E8ECEE","small shovel-headed hammerhead","chomp","Eats seagrass. Weird shark.","fish,aquatic,ocean,predator"},
 	{"bonobo","AMCJBA","dFkf",3,5,7,"1E1A18","C8A890","slender chimp, parted hair","roar","Solves arguments with hugs.","mammal,primate"},

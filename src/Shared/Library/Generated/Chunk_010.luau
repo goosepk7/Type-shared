@@ -210,6 +210,7 @@ return {
 	{"furnace","EADMII","KESe",6,1,8,"374151","F97316","iron box with a glowing grate, pipes and a roaring door","roar","The basement monster. It heats the house.","fire,household"},
 	{"furniture","BMDELB","GkPO",5,3,6,"A9713B","6B4226","falling sofa, wardrobe, lamp and one leftover screw","crash","Self-assembly. Three screws left over. Hmm.","household,heavy"},
 	{"fury","AICJNB","jAQf",5,8,4,"1F2937","DC2626","winged avenger, snake hair, torch","screech","Holds grudges professionally.","mythical,flying"},
+	{"fuse bomb","BACG3F","KEN",7,4,3,"24242A","FF9F1C","a round black cartoon bomb with a sparking fuse","kaboom","Fsssssss... KABOOM.","cartoon,explosive,silly"},
 	{"fuse trail","CACLKI","KEQ",5,1,1,"24262A","FF6A1A","fizzing trail of sparks","boom","Follow the sparkle to the boom.","explosive"},
 	{"fusion","FHEGKE","KE",9,4,3,"FFF4B0","FF6B1A","mini star core, swirling plasma rings","hum","How stars work. Pocket-sized.","space,explosive,danger"},
 	{"fusion reactor","OAEN1I","KEL",9,1,8,"F2F2EE","7DF9FF","domed reactor with glowing core","hum","Clean energy. Messy meltdowns.","scifi,danger"},

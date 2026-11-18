@@ -23,7 +23,6 @@ return {
 	{"pork chop","IMBAKK","kce",3,5,3,"D88A6A","F2E8D8","thick chop with bone edge","thud","A meaty chunk with a bone grip.","edible,savory"},
 	{"pork rinds","IMAELB","eVP",2,7,1,"E8C88A","C8904A","puffy golden curl","pitter","Crunchy clouds of savory.","edible"},
 	{"porpoise","ABBJEC","UDB",3,8,4,"4A5664","C8D0D8","small round dolphin, blunt face","click","Dolphin, but rounder and shyer.","mammal,aquatic,ocean"},
-	{"portable hole","BIBLKJ","OY",4,1,1,"24262A","1B1A22","flat black disc on the floor","boing","Drop it. Step in. Gone.","magic,silly"},
 	{"portal","KLDLII","hY",4,4,6,"00B8D4","7C4DFF","swirling blue-violet ring standing upright","warp","Step through. Hope for the best.","magic,space"},
 	{"portal device","OLDL1I","jHY",5,3,5,"3A3F45","A66BDB","ring frame with swirling portal","hum","Where does it go? Find out!","scifi"},
 	{"portal gate","ELDNII","ShY",4,1,8,"7E57C2","40C4FF","stone ring with a swirling glowing centre","warp","Step in here. Pop out over there.","structure,magic"},

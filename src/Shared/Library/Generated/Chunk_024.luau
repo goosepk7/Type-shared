@@ -219,7 +219,6 @@ return {
 	{"spray paint","BMADJI","je",1,7,2,"24262A","FF3EA5","rattling aerosol can","splat","Tag! You're it.","art"},
 	{"spriggan","AGBJNA","GWf",3,6,4,"365314","A16207","wiry wooden guardian that swells to giant size","creak","Small until you annoy it.","fairy,plant,guardian"},
 	{"spring","BKALJK","Ukl",2,5,3,"C9CED4","C9CED4","tight metal coil","clink","Boing.","hardware,bouncy"},
-	{"spring glove","CMBAJK","Uke",2,8,3,"C0392B","C9CED4","boxing glove on a long spring","bonk","Boing! Right in the face.","silly,toy"},
 	{"spring mattress","BMDL0K","Ul",2,1,5,"F2F2EE","C9CED4","bed of exposed springs","thud","Boing! Launch!","object"},
 	{"spring meadow","MGENII","FS",2,1,5,"9CCC65","F8BBD0","fresh grass and blossoms","rumble","Everything blooms. Everyone heals.","place,terrain"},
 	{"spring peeper","AMAJAG","Ue",1,5,1,"B89A6A","6A4A2A","tiny frog with an X on back","peep","Sings loud enough to hear a mile.","amphibian,wetland"},
