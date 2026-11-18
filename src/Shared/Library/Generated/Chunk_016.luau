@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lurker","LICJNI","jZ",3,5,3,"52525B","F8FAFC","eyes peeking from behind a wall","whisper","Was here the whole time.","meme,stealth"},
 	{"lute","BMBFJI","jF",2,5,2,"C49A6C","8B5A2B","pear-shaped stringed instrument","strum","The bard is here. Run.","music,medieval"},
 	{"lutin","ALAJNA","jZb",1,8,1,"65A30D","FACC15","tiny prankster in pointed cap","giggle","Braids horse manes at night. Why? Nobody knows.","fairy,silly"},
 	{"luxury","KHCO0E","GFc",3,3,5,"D4AF37","7F1D4E","gold velvet chaise with grapes, a fan and a tiny dog","chime","Only the finest. Pinky out.","fancy,royal"},
@@ -402,6 +403,4 @@ return {
 	{"mine roller tank","DKDMHL","GDkfg",6,3,9,"4B5320","6D4C41","tank with spinning chain flails in front","boom","Whips the ground. Pops the mines.","mechanical,vehicle,military"},
 	{"mine shaft","EEDCII","GCSh",3,1,7,"6D4C41","FFB300","timber-framed tunnel with rail tracks","thud","Dig deep. Find gold. Lose map.","structure"},
 	{"minefield","CADLKI","EkP",7,1,3,"6B7B3A","7A4E2D","patch of buried mines","boom","Don't. Walk. Here.","explosive"},
-	{"miner","LECJNA","Ckf",5,4,6,"57534E","FACC15","headlamp helmet, pickaxe, dusty face","clank","Diggy diggy hole.","tools"},
-	{"mineral","BEBA4B","Tea",3,6,6,"34D399","A78BFA","chunky rock studded with green and purple crystals","clink","They are minerals. Not rocks. Minerals.","shiny,science"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rosy maple moth","AMAJFB","jdA",1,5,1,"F2A0C0","F2E07A","pink and yellow fluffy moth","flutter","A strawberry lemonade moth.","insect,cute"},
+	{"rot","FJBNOI","iSM",3,2,3,"5E4A2C","9BA55A","mushy brown-green ground patch","squelch","Old fruit energy.","toxic"},
 	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
 	{"rotisserie chicken","IGCOKK","F",2,5,3,"C8762B","F2C870","golden bird on spit","crunch","Spins until perfect.","edible,healthy"},
 	{"rotten egg","IJBDOJ","jSMP",3,3,2,"E8E0A0","8A9A3A","cracked grey egg, green fumes","whiff","Smell so bad it has its own weather.","edible,smelly,silly"},
@@ -401,6 +403,4 @@ return {
 	{"seven layer bar","IMBLKI","dSc",2,3,3,"8A5A2A","F2E8C8","layered dessert bar","chomp","Seven layers. Seven wonders.","edible,sweet,dessert"},
 	{"severing stare","KIBAKI","jie",6,10,2,"FF3B3B","1E1E26","red glowing eyes, wrapping cloth, silenced magic","hum","Don't blink. Neither will they.","anime,hero,silence"},
 	{"sewer","MJENII","ZSM",3,1,8,"455A64","7CB342","round brick tunnel with green water","thud","Smells awful. Hides everything.","structure,building,silly"},
-	{"sewing machine","OMBMII","Te",2,1,5,"24262A","D4A72C","antique machine with needle arm","rattle","Rat-a-tat-stitch.","art"},
-	{"sewing needle","BKAAJI","Te",1,9,1,"C9CED4","C0392B","thin needle with red thread","splat","Tiny lance, tinier eye.","art"},
 }

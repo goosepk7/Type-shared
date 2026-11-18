@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"st elmo's fire","GDBNOI","ScL",3,4,2,"7C4DFF","00E5FF","eerie blue-violet glow on pointy tips","buzz","Glowing spooky sparks on everything pointy.","electric,spooky"},
+	{"stab","KKBAuB","DfT",4,9,1,"D1D5DB","60A5FA","single fast thrust line ending in a sharp point glint","shing","Stick them with the pointy end.","melee,sharp"},
 	{"stable","EMCCII","GSh",2,1,6,"6D4C41","F5E6CA","low wooden building with half doors","thud","Mounts ready. Saddles up.","structure,building"},
 	{"stable hand","LMCJNA","Fh",3,5,4,"78350F","FDE68A","pitchfork, hay, boots","neigh","Brings the horses. And smells like them.","silly,mount"},
 	{"stack of pancakes","IMCCII","GFc",4,2,5,"E8B860","B5651D","tall stack, butter, syrup flow","thud","A tower of fluff. Topple it on foes.","edible,giant,breakfast"},
@@ -401,7 +403,4 @@ return {
 	{"sweep away","KFCFOB","kI",4,7,1,"E1F5FE","FFFFFF","low wide sweeping arc of wind","swish","Clean sweep. Everybody out.","air"},
 	{"sweet and sour chicken","IMBLGI","jN",2,3,3,"E8402B","F2A62B","glossy red-orange chicken chunks","gloop","Sweet. Sour. Can't decide. Doesn't need to.","edible,sticky"},
 	{"sweet briar","NGBNMI","dFST",2,1,3,"F8BBD0","2E7D32","simple pink roses on arching thorny canes","rustle","Wild, prickly, and lovely.","plant,flower"},
-	{"sweet cherry","IGAELB","eVP",2,7,1,"7A0A1E","B0101E","dark red double cherry","pitter","Dark, sweet, and juicy.","edible,fruit,sweet"},
-	{"sweet chili sauce","IABAKK","KN",3,7,2,"E8402B","F2A62B","glossy red sauce with flakes","sizzle","Sweet first. Heat later.","edible,spicy,flammable,sauce"},
-	{"sweet dreams","KHCDOJ","FSO",2,3,2,"B39DDB","FFF8E1","soft lavender cloud with moons and stars","hush","Sleep tight. Heal up.","cute,support"},
 }

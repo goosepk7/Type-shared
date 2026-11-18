@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ivy","NGCLMI","GWSHN",2,1,4,"1B5E20","43A047","climbing glossy heart leaves","rustle","Climbs walls. Climbs enemies.","plant"},
 	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
 	{"jab","KMBAKB","DfO",3,10,1,"FCA5A5","FFFFFF","quick straight glove punch with a tiny impact star","pow","Quick. Rude. Repeatable.","melee,sport"},
 	{"jabiru","AMDJDA","AfT",4,5,2,"F2F2F2","E8301E","huge stork with red collar","squawk","Giant stork. Red scarf.","bird,wetland"},
@@ -402,5 +403,4 @@ return {
 	{"laser drill","OHCBwI","KCe",6,6,5,"E67E22","FF2D2D","bulky drill firing a laser","hum","Tunnels through anything.","scifi"},
 	{"laser grid","EDCCII","KST",5,2,4,"FF462E","40444E","two posts with three red laser beams between","hum","Mind the gap. All three of them.","scifi,modern,heist"},
 	{"laser pistol","CHBBwI","KTe",5,9,3,"F2F2EE","FF2D2D","compact sleek beam pistol","zap","Short burst, long reach.","scifi,ranged"},
-	{"laser pointer","CHABJI","jdce",1,10,1,"FF2D2D","24262A","tiny pen with red dot","zap","Cats fear and love this.","silly"},
 }

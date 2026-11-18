@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind monk","LFCJNB","AlI",5,9,4,"FACC15","E0F2FE","monk gliding on a gust of wind","whoosh","Floats. Pushes. Smiles.","martial,wind"},
+	{"wind orb","FFCGKK","RI",4,6,2,"B3E5FC","FFFFFF","swirling ball of streaking air","whoosh","A breeze in a bubble.","air"},
+	{"wind prison","FFCL5K","lO",5,5,3,"B3E5FC","FFFFFF","spinning wind bubble holding target aloft","howl","Spin in place. Forever.","air"},
+	{"wind ring","FFDN5K","GSI",4,6,3,"B3E5FC","FFFFFF","spinning ring of wind around the area","howl","Nothing gets in. Nothing gets out.","air"},
 	{"wind shield","FFCIKK","GIa",3,6,4,"E1F5FE","FFFFFF","spinning dome of streaking wind","whoosh","Arrows go whoosh, then away.","air,defence"},
 	{"wind spear","FFCAuB","kTe",5,9,1,"B3E5FC","FFFFFF","nearly invisible spiralling air spear","whistle","You won't see it. You'll feel it.","air,sharp"},
 	{"wind spiral","FFCAKB","lTe",5,8,1,"B3E5FC","FFFFFF","drill-shaped spinning air bolt","whistle","Drills through. Spins you up.","air"},

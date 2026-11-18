@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plumbing","EBCMII","IeN",4,1,5,"B87333","38BDF8","tangle of copper pipes with one joint spraying water","gurgle","The plumber said Tuesday. Which Tuesday? Unknown.","household"},
+	{"plumeria","NGBNMI","dFSc",2,1,2,"FFFFFF","FFEB3B","waxy five-petal tropical star","rustle","Smells like a beach holiday.","plant,flower"},
 	{"plunger","BMBHJK","fHO",1,6,3,"C0392B","7A4E2D","rubber cup on wooden stick","clank","Shloop. Stuck.","silly,bathroom"},
 	{"plunger arrow","CMAAJI","deO",1,8,2,"C0392B","24262A","arrow with a toilet plunger tip","twang","Thwock. Stuck.","medieval,ranged,silly"},
 	{"pluot","IGBAKF","Fke",3,6,2,"8A2A4E","E8762B","speckled plum-apricot","splat","Half plum, half apricot, all juice.","edible,fruit,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"radiation","FJDNOI","iSM",6,4,3,"C3FF2E","1C2A08","pulsing green glow field, ticking motes","tick","Gives you a glow. Not the good kind.","toxic"},
 	{"radiation blob","AJCJGF","WSM",5,2,5,"84CC16","FDE047","glowing neon blob with smoke","bubble","Glows in the dark. Don't hug.","alien,toxic"},
 	{"radicchio","IGBAKF","Fke",3,5,3,"8A1E3E","F7F2EC","round red-white leafy head","thud","A purple lettuce bomb.","edible,vegetable,healthy"},
-	{"radio","BDBFKI","jdO",2,3,4,"8E9196","C9CED4","chunky box with speakers and handle","blare","Turn it UP.","tech,music,loud"},
-	{"radio tower","EDDMII","GjSeL",4,1,5,"E53935","F5F5F5","tall lattice mast, red and white bands","static","Broadcasting static at your enemies.","structure,defense,tower"},
 }

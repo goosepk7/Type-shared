@@ -403,5 +403,4 @@ return {
 	{"itching powder","CMADOI","jd",1,6,1,"D2B48C","F2F2EE","puff of scratchy powder","thwip","Scratch. Scratch. SCRATCH.","prank,silly"},
 	{"ittan-momen","AFCJCB","AHN",3,8,2,"F8FAFC","E5E7EB","long strip of white cloth flying at night","whoosh","A scarf that wraps you up. Too tight.","yokai"},
 	{"ivory wyrm","KHEJPB","AQeN",9,7,6,"E9EEF6","5AA8FF","a pale armoured wyrm with swept wings and an azure throat","roar","Twelve seconds of being the coolest card in the deck.","anime,card game,dragon"},
-	{"ivy","NGCLMI","GWSHN",2,1,4,"1B5E20","43A047","climbing glossy heart leaves","rustle","Climbs walls. Climbs enemies.","plant"},
 }

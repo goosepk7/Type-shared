@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"network","ODDNmI","jLPh",5,1,5,"0F172A","22D3EE","humming racks of blinking lights joined by glowing cables","hum","The server is down. Everyone panic.","tech"},
+	{"neutron","FMAAKB","ZTe",2,9,3,"9CA3AF","E5E7EB","tiny grey ball with a blank face, no charge","thud","For you? No charge.","science"},
 	{"neutron bomb","CDEGKI","iEP",9,2,2,"8E9196","3FC1D9","sleek silver bomb with glow","zap","Very quiet. Very bad.","scifi,explosive,danger"},
 	{"neutron star","HHEGKK","HLO",8,5,9,"E3F2FD","40C4FF","tiny blinding spinning star with twin beams","hum","A spoon of it weighs a mountain.","space,heavy"},
 	{"new kid","LMBJNA","dZ",2,6,3,"60A5FA","F8FAFC","backpack, nervous smile","ding","Nobody knows their powers. Yet.","school"},
@@ -401,6 +403,4 @@ return {
 	{"parka","BCCONI","GJ",1,4,3,"E67E22","1F2F55","puffy hooded winter coat","swish","Marshmallow armour.","clothing,winter"},
 	{"parking lot","MEDNII","SN",1,1,6,"424242","F5F5F5","flat grey lot, painted lines","rumble","Every space is taken. Forever.","place,terrain,silly"},
 	{"parking meter","OKBCmI","Gb",1,1,7,"8E9196","C9CED4","post with coin slot","clank","Time's up.","mechanical"},
-	{"parkour runner","LFCJNA","UDY",3,10,3,"111827","F97316","hoodie, mid-wall-flip","whoosh","Wall run, flip, gone.","sport"},
-	{"parmesan","IMBAKK","ceO",3,7,6,"F2E2B0","E8C88A","hard pale wedge, grainy","bonk","The king of cheeses. Hard as a rock.","edible,dairy,royal"},
 }

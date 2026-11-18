@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sewing machine","OMBMII","Te",2,1,5,"24262A","D4A72C","antique machine with needle arm","rattle","Rat-a-tat-stitch.","art"},
+	{"sewing needle","BKAAJI","Te",1,9,1,"C9CED4","C0392B","thin needle with red thread","splat","Tiny lance, tinier eye.","art"},
 	{"sextant","BMBOJI","e",1,4,3,"B58A3A","BFE6F2","curved arc instrument","clink","Navigate by the stars.","explorer"},
 	{"sfogliatella","IMBLKI","dSc",2,3,3,"E8B860","F7F2EC","shell-shaped flaky pastry","chomp","Shell-shaped layers of crunch.","edible,sweet,dessert"},
 	{"shabu shabu","IBBOGI","FS",3,4,3,"F2E8C8","C8604A","pot of broth with thin slices","slurp","Swish swish. Dinner done.","edible,warm,healthy"},
@@ -401,6 +403,4 @@ return {
 	{"smoke detector","OKAF1I","O",1,1,3,"F2F2EE","C0392B","ceiling disc that beeps","beep","BEEP BEEP BEEP.","household,loud"},
 	{"smoke elemental","AACJOJ","jZM",4,6,3,"52525B","A8A29E","curling grey smoke with ember eyes","hiss","Cough cough. That's its war cry.","elemental"},
 	{"smoke grenade","CMCD2F","jZSe",2,7,2,"8E9196","F2F2EE","a hissing canister that fills the area with smoke","poof","Poof. Gone. Very ninja.","modern,stealth"},
-	{"smoke launcher","OFCMxI","jZP",2,4,5,"8E9196","6B7B3A","stubby tube puffing smoke","clank","Now nobody can see. Hide!","defense,mechanical"},
-	{"smoke pellet","CMADJI","jZ",1,9,1,"8E9196","F2F2EE","tiny pellet bursting with smoke","bang","Bye!","spy,ninja"},
 }

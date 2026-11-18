@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"miner","LECJNA","Ckf",5,4,6,"57534E","FACC15","headlamp helmet, pickaxe, dusty face","clank","Diggy diggy hole.","tools"},
+	{"mineral","BEBA4B","Tea",3,6,6,"34D399","A78BFA","chunky rock studded with green and purple crystals","clink","They are minerals. Not rocks. Minerals.","shiny,science"},
 	{"minestrone","IBBOGI","FS",3,4,3,"C8602B","7DBE3A","tomato soup with veg, pasta","slurp","Everything in the pantry, in soup.","edible,warm,healthy"},
 	{"minesweeper","DBDKHC","DkHgB",5,5,7,"607D8B","37474F","small grey warship with sweeping gear","splash","Clears the mines. And the enemies.","vehicle,aquatic"},
 	{"mini catapult","BMAMxI","ke",1,6,2,"C49A6C","C0392B","tiny stick catapult with spoon","thud","Small but mighty.","toy,siege"},
@@ -401,6 +403,4 @@ return {
 	{"net launcher","OKCMxI","eNO",3,5,5,"6B7B3A","B89B6A","tube that fires weighted nets","clank","Fwoomp. Caught. Next.","defense,mechanical"},
 	{"net trap","BMCLII","lNO",2,1,3,"B89B6A","6B7B3A","hidden net that yanks upward","snap","Hammock, but involuntary.","trap,defense"},
 	{"netherland dwarf","AMAJAG","UCd",1,6,1,"E8D8C8","8A6A4A","tiny round rabbit, short ears","squeak","The tiniest bunny. Max cute.","mammal,cute"},
-	{"network","ODDNmI","jLPh",5,1,5,"0F172A","22D3EE","humming racks of blinking lights joined by glowing cables","hum","The server is down. Everyone panic.","tech"},
-	{"neutron","FMAAKB","ZTe",2,9,3,"9CA3AF","E5E7EB","tiny grey ball with a blank face, no charge","thud","For you? No charge.","science"},
 }

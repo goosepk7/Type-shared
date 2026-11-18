@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"parkour runner","LFCJNA","UDY",3,10,3,"111827","F97316","hoodie, mid-wall-flip","whoosh","Wall run, flip, gone.","sport"},
+	{"parmesan","IMBAKK","ceO",3,7,6,"F2E2B0","E8C88A","hard pale wedge, grainy","bonk","The king of cheeses. Hard as a rock.","edible,dairy,royal"},
 	{"parrot","AMBJDB","jdA",2,6,2,"2AB04A","E8301E","bright green-red bird, curved beak","squawk","Repeats everything you say. Everything.","bird,jungle,silly"},
 	{"parrotfish","ABBJEC","dPB",2,6,1,"3AB0A0","E86AA0","beaked colorful fish","splash","Poops sand. That's how beaches happen.","fish,aquatic"},
 	{"parsley","IGBOMI","WF",2,4,3,"3E8E2B","7DBE3A","frilly green sprig","crunch","The garnish nobody eats.","edible,vegetable,healthy,herb"},
@@ -401,6 +403,4 @@ return {
 	{"plumb bob","JKAAJK","ke",1,6,5,"B58A3A","B89B6A","pointed weight on string","clank","Points straight down. At you.","tool"},
 	{"plumbago","NGBNMI","dFSN",1,1,2,"90CAF9","2E7D32","clusters of pale blue phlox-like flowers","rustle","Sky blue and sticky seeds.","plant,flower"},
 	{"plumber","LBCJNA","UH",4,6,5,"DC2626","1E3A8A","overalls, cap, plunger, big moustache","splash","Unclogs pipes. Jumps on things.","silly"},
-	{"plumbing","EBCMII","IeN",4,1,5,"B87333","38BDF8","tangle of copper pipes with one joint spraying water","gurgle","The plumber said Tuesday. Which Tuesday? Unknown.","household"},
-	{"plumeria","NGBNMI","dFSc",2,1,2,"FFFFFF","FFEB3B","waxy five-petal tropical star","rustle","Smells like a beach holiday.","plant,flower"},
 }

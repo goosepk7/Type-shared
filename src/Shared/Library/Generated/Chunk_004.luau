@@ -403,5 +403,4 @@ return {
 	{"cardinalfish","ABAJEC","dB",1,6,1,"E8501E","F2E8D8","small red fish","splash","Dads carry eggs in their mouths.","fish,aquatic"},
 	{"cardon","NEFCMI","GST",5,1,9,"558B2F","F5F5F5","massive multi-armed cactus","thud","Biggest cactus around. Biggest hug.","plant,desert,sharp"},
 	{"care package","BMCN2J","ch",3,2,6,"6E7A3C","FF5A2A","military crate drifting down under a parachute","thud","Help from the sky. Finders keepers.","gaming,object,military"},
-	{"cargo","BKDL2I","GkO",6,2,8,"B45309","1E3A8A","big corrugated steel box lowered on four cables","clang","Contents: 40,000 rubber ducks. Really.","heavy,vehicle"},
 }

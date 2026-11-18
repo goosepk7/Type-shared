@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"green pepper","IGBAKF","Fke",3,5,3,"3E8E2B","5EAE3A","blocky green bell pepper","thud","A bell that never rings.","edible,vegetable,healthy"},
 	{"green smoothie","IGBOKI","WF",3,5,3,"7DBE3A","3E8E2B","tall green drink","chomp","Tastes like a salad. Feels like victory.","edible"},
 	{"green tea","IGBOKI","F",2,5,2,"7DAE3A","C8E08A","green cup of tea","slurp","Calm, green, and focused.","edible,drink,warm"},
 	{"green tomato","IGBAKK","keO",3,7,6,"8DB84A","C8E08A","hard unripe tomato","bonk","A tomato that isn't ready yet.","edible"},

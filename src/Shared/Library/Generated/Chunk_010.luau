@@ -402,4 +402,5 @@ return {
 	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
 	{"ghost car","DICKHE","DjZg",5,7,3,"B3E5FC","5E35B1","see-through glowing car, no driver","engine","Nobody is driving. Nobody.","mechanical,vehicle,land,spooky"},
 	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
+	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
 }

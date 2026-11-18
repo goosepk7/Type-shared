@@ -3,12 +3,16 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toll booth","EMBCII","GSN",1,1,6,"FFB300","1A1A1A","small booth with a barrier arm","thud","Pay up or turn around.","structure,building,silly"},
+	{"tom kha","IBBOGI","FS",3,4,3,"F2E8C8","E8A040","coconut soup with lime leaves","slurp","Creamy coconut soup, gently spicy.","edible,warm,healthy"},
+	{"tom yum","IABOGI","KF",3,4,3,"E8602B","C8302B","red spicy sour soup","slurp","Spicy, sour, and sinus-clearing.","edible,warm,healthy"},
 	{"tomahawk","CKBAsK","feV",4,8,3,"8A929B","8B5A2B","light throwing axe","chop","Thrown end over end.","medieval,sharp"},
 	{"tomato","IMBGKF","Eke",3,4,3,"E5302B","3E8E2B","round red globe, green star cap","splat","The classic heckling projectile.","edible,fruit"},
 	{"tomato frog","AMAJAG","UMe",1,5,1,"E8401E","F2803A","round red frog","croak","Looks like a tomato. Tastes awful.","amphibian,wetland"},
 	{"tomato juice","IBBOKI","F",2,6,2,"C8202B","E8434F","glass of thick red juice","slurp","Thick and savory.","edible,drink"},
 	{"tomato plant","NGBMMI","dSe",2,1,2,"2E7D32","E53935","staked vine hung with red fruit","rustle","Throws tomatoes. Rotten ones.","plant,crop"},
 	{"tomato soup","IBBOGI","FS",3,4,3,"D8302B","F2E8C8","smooth red soup bowl","slurp","Red, warm, and perfect with grilled cheese.","edible,warm,healthy"},
+	{"tomb wraps","BICACD","SeN",4,7,3,"E4D9BC","6EE0C4","a living strip of old linen slithering along the ground","rustle","Ancient, dusty and extremely clingy.","monster,mummy,spooky,folklore"},
 	{"tone","KFBF6B","dPO",2,8,1,"22D3EE","F8FAFC","pulsing rings from a buzzing phone at full volume","ring","It is not yours. Everyone checks anyway.","tech,music"},
 	{"tonfa","CMBHJK","Gf",3,7,4,"24262A","8B5A2B","baton with side handle","bonk","Spin, block, poke. Repeat.","medieval,heavy"},
 	{"tongs","JKBHJK","fH",1,6,5,"5B6168","24262A","long pincer tongs","clank","Grabs hot things so you don't.","tool"},
@@ -399,8 +403,4 @@ return {
 	{"vein","BBBBCD","iTN",3,6,2,"3A6FD8","D7263D","branching blue and red tubes pulsing","squirt","The scenic route for blood.","body,science"},
 	{"velocipede","DMBKHL","Dkg",2,5,2,"6D4C41","9E9E9E","wooden bike with no pedals","clatter","Push with your feet. Look silly.","vehicle,ancient,silly"},
 	{"velociraptor","AMCJBA","DQfT",5,9,3,"8A6A3A","D8B07A","feathered body, sickle toe claw","screech","Turkey-sized. Smart. Opens doors.","dinosaur,extinct,reptile,predator"},
-	{"velocity","KFCO6B","DkT",5,10,1,"22D3EE","F8FAFC","arrow stretching longer and longer with a sonic cone","zoom","Speed, but it did the homework.","science,speed"},
-	{"velvet","BMBCnI","GcN",2,1,4,"7F1D4E","D4AF37","plush red rope on gold posts across the way","hush","Are you on the list? You are not on the list.","fancy,royal"},
-	{"velvet ant","AJAJLA","fTMP",2,7,1,"E8301E","1E1E1E","fuzzy red wingless wasp","buzz","Fuzzy and painful.","insect,swarm,venomous"},
-	{"velvet worm","AMAJTA","CeNP",1,3,1,"6A3A2A","A8705A","soft many-legged caterpillar","squelch","Shoots slime nets. Velvety menace.","bug"},
 }

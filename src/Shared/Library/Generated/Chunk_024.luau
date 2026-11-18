@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"smoke launcher","OFCMxI","jZP",2,4,5,"8E9196","6B7B3A","stubby tube puffing smoke","clank","Now nobody can see. Hide!","defense,mechanical"},
+	{"smoke pellet","CMADJI","jZ",1,9,1,"8E9196","F2F2EE","tiny pellet bursting with smoke","bang","Bye!","spy,ninja"},
 	{"smoke ring","FABAKJ","jO",2,6,1,"9E9E9E","ECEFF1","floating ring of grey smoke","puff","Fancy smoke. Very confusing.","silly"},
 	{"smoke screen","FFCDOJ","jZS",1,5,2,"AEBBD0","E6EEF8","a thick pale grey-blue smoke dome that hides everyone inside","puff","Ninja exit, activated.","gaming,shooter,stealth"},
 	{"smoke screen generator","OFCD1I","jZS",2,1,4,"8E9196","F2F2EE","canister belching thick smoke","thud","Can't see a thing.","defense"},
@@ -401,6 +403,4 @@ return {
 	{"squishy","BMAAKI","Ude",1,6,1,"FFB38A","F2F2EE","soft slow-rising foam toy","squeak","Squish. It'll come back.","toy"},
 	{"squonk","ABBJAA","jX",2,3,1,"A3A3A3","7DD3FC","lumpy wart-covered forest creature in tears","sob","Cries so much it dissolves into a puddle.","cryptid,silly"},
 	{"sriracha","IABAKK","KeP",5,7,2,"D8202B","3E8E2B","red squeeze bottle, green cap","sizzle","The rooster sauce of fire.","edible,spicy,flammable,sauce"},
-	{"st elmo's fire","GDBNOI","ScL",3,4,2,"7C4DFF","00E5FF","eerie blue-violet glow on pointy tips","buzz","Glowing spooky sparks on everything pointy.","electric,spooky"},
-	{"stab","KKBAuB","DfT",4,9,1,"D1D5DB","60A5FA","single fast thrust line ending in a sharp point glint","shing","Stick them with the pointy end.","melee,sharp"},
 }

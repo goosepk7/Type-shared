@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"entelodont","AMDJAA","DkO",7,4,8,"6A4A3A","C89A7A","giant pig with huge jaws","roar","A pig the size of a cow. Grumpy.","mammal,extinct,ancient,heavy"},
 	{"entropy","FLCNOI","jiN",5,3,3,"6B5E7A","B8A8C8","crumbling, fading, glitching area","crackle","Everything falls apart eventually.","chaos"},
 	{"envelope","BMAAJK","Te",1,8,1,"F7F3E8","C0392B","sealed paper envelope","tap","Special delivery! Ouch.","office"},
 	{"envy","KJBAKB","ib",3,6,1,"76FF03","1B5E20","green-eyed wisp","hiss","I want that. Mine now.","silly"},

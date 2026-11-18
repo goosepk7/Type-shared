@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"radio","BDBFKI","jdO",2,3,4,"8E9196","C9CED4","chunky box with speakers and handle","blare","Turn it UP.","tech,music,loud"},
+	{"radio tower","EDDMII","GjSeL",4,1,5,"E53935","F5F5F5","tall lattice mast, red and white bands","static","Broadcasting static at your enemies.","structure,defense,tower"},
 	{"radish","IEBAJK","Ke",3,6,4,"D23A4A","F7F2F0","round red root, white tail","crunch","Small, red, and a little spicy.","edible,vegetable,healthy"},
 	{"raft","DBBKHC","DkgB",2,4,4,"FFB300","8D6E63","logs lashed with rope, little sail","splash","Built from twelve logs and hope.","vehicle,aquatic,silly"},
 	{"rag doll","BMBJNA","jd",1,3,2,"F3E6C8","C0392B","floppy cloth doll, button eyes","squeak","Floppy, sweet, slightly unsettling.","toy"},
@@ -401,6 +403,4 @@ return {
 	{"rosemary","IGBOMI","WF",2,4,3,"4E6B4A","8A9A7A","needle-leaf sprigs","crunch","Smells like a roast and a forest.","edible,vegetable,healthy,herb"},
 	{"rosti","IMBAKK","Uke",3,7,2,"D9A04A","F2D07A","golden crispy potato cake","whoosh","A golden potato frisbee.","edible"},
 	{"rosy boa","AMBJCD","fHO",2,4,6,"E8A0A0","8A6A4A","pinkish small boa","hiss","Pink, calm, and squishy.","reptile"},
-	{"rosy maple moth","AMAJFB","jdA",1,5,1,"F2A0C0","F2E07A","pink and yellow fluffy moth","flutter","A strawberry lemonade moth.","insect,cute"},
-	{"rot","FJBNOI","iSM",3,2,3,"5E4A2C","9BA55A","mushy brown-green ground patch","squelch","Old fruit energy.","toxic"},
 }
