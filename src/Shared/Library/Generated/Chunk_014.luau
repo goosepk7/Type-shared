@@ -3,13 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"jinx","KLBAKB","jd",3,8,1,"AB47BC","FFEB3B","wobbly yellow-purple spark","cackle","Trips over nothing. Every time.","silly"},
-	{"jitte","CKBHtK","GfO",2,7,5,"8A929B","9E1B32","blunt rod with side hook","shing","Catches swords. Bonks owners.","ninja"},
-	{"jock","LMCJNA","Dk",4,7,5,"DC2626","F8FAFC","letterman jacket, football","thud","Dodgeball champion. Aims at faces.","school"},
-	{"jockey","LMBKNA","Dg",3,9,3,"7C3AED","FACC15","tiny rider, silks, whip","neigh","Small rider. Fast horse.","sport,mount"},
-	{"joey","AMAJAG","Uf",1,6,2,"C8946A","F2DCC4","tiny kangaroo peeking from a pouch","chirp","Lives in mom's pocket. Rent free.","mammal,marsupial,cute"},
-	{"joke","KMBAKB","jdO",3,7,1,"FACC15","EF4444","speech bubble with a rubber chicken and a ba-dum-tss drum","drum","Why did the chicken cross the lane? To bonk you.","silly,meme"},
-	{"jollof rice","IAAELB","KFeP",2,6,1,"E8402B","F2A62B","red-orange spiced rice","pitter","West Africa's party rice. The best.","edible,grain"},
 	{"jolt","FDBAKB","LO",3,10,1,"FFF176","82B1FF","quick sharp spark","zap","Jolt! Wide awake now.","electric"},
 	{"jormungandr","AJFJCC","kMHB",9,4,10,"14532D","84CC16","endless sea serpent biting own tail","roar","Wrapped around the world. Still hungry.","mythical,reptile,norse,boss,danger"},
 	{"jorogumo","AJDJFA","MHN",6,5,5,"1C1917","BE185D","giant spider with silk kimono","skitter","Spins webs. Plays the lute. Multitasker.","yokai,spooky"},
@@ -324,6 +317,7 @@ return {
 	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
 	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
 	{"lasso","CMCAJI","HeN",2,7,3,"B89B6A","D2B48C","looped rope spinning overhead","twang","Yee-haw, gotcha.","cowboy"},
+	{"last echo","KLCOKI","FY",4,8,3,"7FB8E8","E9F3FA","blue ghost trail snapping back along your path","warp","Let's try that again.","time,anime,magic"},
 	{"last stand","KADOKI","GDk",7,5,6,"D32F2F","FFD54F","blazing red-gold aura at low health","horn","Not going down. Not like this.","rage"},
 	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
 	{"latke","IMBAKK","Uke",3,7,2,"C8803A","F2D07A","crispy shredded potato disc","whoosh","Crispy potato frisbees.","edible"},
@@ -403,4 +397,10 @@ return {
 	{"leather jacket","BMCONI","Gd",1,5,4,"24262A","C9CED4","black leather biker jacket","swish","Instantly 40% cooler.","clothing"},
 	{"leatherback turtle","ABDJUC","GNB",4,2,8,"2A2E34","8A9098","huge leathery ridged shell","hiss","Biggest turtle. Shell is leather.","reptile,armored"},
 	{"leberkase","IMBAKK","keO",3,7,6,"E8A0A0","C8603A","thick slab of meat loaf","bonk","A slab of meat cake.","edible"},
+	{"lebkuchen","IMBAKK","Uke",3,7,2,"8A4A1E","F2EEE8","iced spice cookie","whoosh","A gingerbread cookie with a German accent.","edible,holiday"},
+	{"lechon","IMDJII","dFc",5,1,6,"C8602B","F2D88A","whole roasted crispy pig","thud","The centerpiece of every fiesta.","edible,giant,silly"},
+	{"ledge","EECLnI","klO",3,1,7,"9CA3AF","6B7280","narrow stone shelf with crumbling pebbles at the lip","crack","Do not look down. You looked down.","terrain"},
+	{"leech","ABAJTD","CiQP",1,3,1,"3A3A2A","8A6A4A","dark slimy flat worm with sucker","squelch","Sucks blood. Hates salt.","bug,spooky"},
+	{"leedsichthys","ABFJEC","DfB",8,3,8,"6A7A8A","C8D0D8","gigantic filter-feeding fish","splash","Biggest fish ever. Ate plankton.","fish,aquatic,extinct"},
+	{"leek","IMBHJI","kf",3,5,4,"5E8A3A","F0F2E0","long white stalk, fan of leaves","bonk","A green onion with a gym membership.","edible,silly,vegetable"},
 }

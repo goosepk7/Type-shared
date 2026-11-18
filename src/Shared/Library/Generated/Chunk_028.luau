@@ -3,11 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"warmth","KABOKJ","FSN",2,2,2,"FDBA74","FEF3C7","soft orange glow with a steaming mug and a blanket","hush","Like a hug from a radiator.","warm,support,cute"},
-	{"warp","KLCOKB","DY",4,10,2,"6200EA","84FFFF","stretched streaky blur in motion","warp","Engage! Whoosh.","space,speed"},
-	{"warp ship","DLEKHB","DAgY",7,10,7,"ECEFF1","7C4DFF","sleek ship with glowing warp rings","warp","Here. There. Everywhere.","vehicle,space"},
-	{"warrior","LECJNA","GDf",6,5,6,"991B1B","9CA3AF","sword and shield, chainmail, battle scars","clang","Hits things. Very good at it.","warrior"},
-	{"warrior princess","LHCJNA","GDf",6,6,6,"F472B6","94A3B8","tiara on a helmet, sword, cape","clang","Rescues the knight. Again.","royal,warrior"},
 	{"wart","BJALKI","SMP",2,1,3,"8A9A5B","5E6B3A","bumpy green lump with one hair","squelch","A gift from a toad. No returns.","body,gross,spooky"},
 	{"warthog","AMCJAA","DdfT",4,4,4,"7A6A5E","3A2E26","warty face, curved tusks, tail up","grunt","Runs with tail held like an antenna.","mammal,farm,wild"},
 	{"wasabi","IABAKK","KjO",5,7,2,"8DB84A","C8E08A","blob of bright green paste","sizzle","Clears sinuses. And arenas.","edible,spicy,flammable"},
@@ -403,4 +398,9 @@ return {
 	{"yucca","NECLMI","GST",3,1,6,"7CB342","F5F5F5","spiky blade leaves, white bell spike","thud","Basically a bouquet of swords.","plant,desert,sharp"},
 	{"yuki onna","ACCJNJ","AJZN",5,6,4,"E0F2FE","93C5FD","pale ghost in white kimono, snowy breath","howl","Very pretty. Very cold. Bring a jacket.","yokai,frozen,spooky"},
 	{"yum","KMBOKJ","iFc",2,5,1,"F472B6","FDE68A","licking-lips face with a fork, knife and a bib","slurp","Compliments to the chef. Seconds, please.","edible,silly"},
+	{"yumi","CMDAvK","Te",5,6,3,"24262A","C49A6C","very tall asymmetrical bow","shing","Elegance at range.","ranged,ancient"},
+	{"yurt","EMCCII","GFS",2,1,5,"F5F5F5","C62828","round felt tent with domed roof","thud","Round home, round warm.","structure,building"},
+	{"yutyrannus","ACEJBA","DkfT",7,6,7,"8A5A3A","E8C890","feathery tyrannosaur","roar","A fluffy giant T rex cousin.","dinosaur,extinct,reptile,predator"},
+	{"yuzu","IMBAKF","jke",3,6,2,"F3D23A","5A7D2B","bumpy yellow citrus","squirt","Smells amazing. Hits sour.","edible,fruit,sour"},
+	{"za'atar","IFBDOJ","jPO",2,5,1,"7A8A3A","C8B08A","herb and sesame blend","puff","Herbs, sesame, and tang.","edible,spice"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clothes dryer","OACL1I","Kj",3,1,7,"F2F2EE","8E9196","round-door tumble dryer","thud","Tumble. Tumble. Dizzy.","household"},
 	{"clothes hanger","BMAHJK","fH",1,7,2,"8B5A2B","C9CED4","wooden hanger with hook","thud","Hook. Hang. Done.","household"},
 	{"clothes iron","BABHtK","Kkf",3,5,5,"87CEEB","C9CED4","pointy steam iron","thud","Pressing matters. Hot ones.","household"},
 	{"clothes moth","AMAJFB","jdiA",1,5,1,"D8C8A8","B8A88A","small tan moth","flutter","Eats your sweaters.","insect,cute"},
@@ -129,6 +130,7 @@ return {
 	{"comet beast","ACEJAB","DEAJ",8,9,6,"BAE6FD","F8FAFC","icy beast with a blazing comet tail","whoosh","Shows up every 76 years. Angry.","alien,cosmic"},
 	{"comet dash","KCCOKB","DJk",6,10,2,"B3E5FC","FFFFFF","caster wrapped in icy glow with long tail","whoosh","Zoom like a comet.","space,speed"},
 	{"comet dragon","ALFKCB","EAkeg",9,8,8,"1E1B4B","F0ABFC","star-speckled serpent dragon with comet tail","roar","Swims through space. Eats stardust.","mythical,cosmic,reptile,danger"},
+	{"comet heel","KACHKI","DkO",7,8,3,"FF8A3C","FFE9C2","a blazing leap that ends in a cratering kick","thump","Feet first. Always feet first.","anime,hero"},
 	{"comet shower","HCEEOB","EJkP",8,7,4,"B3E5FC","4FC3F7","dozens of icy comets with blue tails","whoosh","Brain freeze for everyone.","space,frozen"},
 	{"comet strike","HCEAKB","EJkPO",8,8,6,"A8DBFF","FFFFFF","icy comet diving into a frosty crater burst","boom","Brain freeze, from orbit.","space,frozen"},
 	{"comma","KMAAJK","NVO",1,7,1,"111827","FFFFFF","big black comma hooking like a tiny scythe","tap","Let's eat, grandma. Punctuation saves lives.","school"},
@@ -272,7 +274,6 @@ return {
 	{"cough","KMBFOB","jN",2,7,1,"CFD8DC","FFFFFF","small puff cone","cough","Cover your mouth next time.","silly,gross"},
 	{"count","LICJNA","ih",4,4,4,"111827","7F1D1D","high collar cape, slicked hair","hiss","Counts things. Mostly coins. Ah ah ah.","royal,spooky"},
 	{"countdown","KACLII","EO",7,3,2,"FF1744","FFFFFF","glowing number counting 3, 2, 1","tick","Three. Two. One. Uh oh.","explosive,time"},
-	{"counter","KMCIKI","ka",4,8,3,"FFD54F","FFFFFF","flash ring that hits back","ting","Return to sender, with interest.","defence"},
 	{"countryside","MGFNII","FS",2,1,7,"7CB342","F5E6CA","rolling green fields and hedges","crowd","Peaceful. Moo. Battle.","place"},
 	{"coupon","BMAOJB","cXb",2,6,1,"EF4444","FFFFFF","dashed-edge paper slip reading 50% OFF with scissors","snap","50% off your health bar. Today only.","silly"},
 	{"courage","KHCOKJ","GD",3,6,5,"FFB300","D32F2F","golden lion-shaped aura","horn","Scared? Do it anyway.","support"},
@@ -360,8 +361,8 @@ return {
 	{"cricket ball","BMAA3F","ke",2,9,5,"9E1B32","F2F2EE","hard red stitched ball","bonk","Very red. Very hard.","sport"},
 	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
 	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
+	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
 	{"cringe","KMBFOB","jO",2,7,1,"BDBDBD","FFAB91","shuddering wobble ring","eugh","Oof. Can't look.","meme,silly"},
-	{"critical hit","KMCAKB","TO",7,9,1,"FF1744","FFEB3B","red star burst with big numbers","bang","Hit the weak spot. Big numbers.","meme"},
 	{"critter","AGBJAA","UCb",2,7,2,"A0724A","F5E6CC","scruffy little furball with bright eyes and a twitchy nose","chitter","Lives in your walls. Pays no rent.","mammal,cute,wild"},
 	{"crocodile","ABDJAC","fHOB",7,5,8,"5A6A3A","C8C08A","long armored snout, teeth showing","snap","Smiles with all its teeth. Not friendly.","reptile,predator,aquatic"},
 	{"crocodile monitor","AMCJAA","Cf",5,7,2,"2A3A2A","E8D8A0","very long-tailed monitor","hiss","Longest lizard. Mostly tail.","reptile"},
@@ -401,6 +402,5 @@ return {
 	{"crush","KEDNOI","kNO",7,4,5,"6D4C41","BCAAA4","heavy stone slab pressing down","crunch","Flat as a pancake.","heavy"},
 	{"crusher","OKDL1I","kO",7,2,9,"3A3F45","F1C40F","toothed rollers in steel jaws","hum","Chomp chomp. Gravel.","mechanical"},
 	{"crusher trap","BEDLII","kO",8,1,9,"8C8C88","3A3F45","spiked ceiling slab dropping","snap","The ceiling is lowering. Literally.","trap,defense"},
-	{"crust","IMBIyK","GUc",2,4,5,"D9A066","A16207","ring of golden pizza crust with a bite out","crunch","Cut the crusts off. Throw the crusts.","edible"},
-	{"crutch","BMCHJI","kf",1,4,3,"C9CED4","8E9196","metal crutch with arm cuff","thud","Leans on you. Swings at them.","container"},
+	{"crushing sky","KLDNKI","HNO",7,4,4,"4C3B7A","B8A6FF","a violet pressure ring that slams everyone flat","thump","Floor's this way.","anime,magic"},
 }

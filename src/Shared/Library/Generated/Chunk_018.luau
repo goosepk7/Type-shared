@@ -3,14 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"nut cluster","IEAAKK","ceO",3,7,6,"5A2E16","C48A5A","chocolate covered nut lumps","bonk","Crunchy chocolate rocks.","edible"},
-	{"nutcracker","BMBJNA","Gf",3,3,5,"9E1B32","D4A72C","wooden soldier with big jaw","squeak","Cracks nuts. Cracks jokes. Cracks foes.","toy,holiday"},
-	{"nuthatch","AMAJDB","dA",1,7,1,"6A7A9A","F2E8D8","walks headfirst down trees","tweet","Walks down trees upside down.","bird,cute"},
-	{"nutmeg","IFBDOJ","jPO",2,5,1,"8A5A3A","C8A070","brown oval seed, grater","puff","Grate it. Throw it. Done.","edible,spice"},
-	{"nutria","AMBJAA","CdbB",2,6,1,"6A4A2A","F28A2A","big water rat, orange teeth","squeak","Has orange teeth. Very orange.","mammal,cute"},
-	{"nyala","AMCJAA","Dk",4,8,4,"6A5A6A","E8A04A","shaggy grey with orange legs","bleat","Wears orange socks.","mammal,wild"},
-	{"nyama choma","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled meat chunks","thud","Kenyan grilled meat.","edible,savory"},
-	{"nyctosaurus","AMCJDB","DAT",4,8,4,"8A7A6A","E8C07A","antler-like head crest","screech","Wears antlers on its head.","pterosaur,extinct,reptile"},
 	{"nymph","ABCJNJ","FcB",3,6,3,"38BDF8","A7F3D0","glowing water spirit maiden","chime","Lives in a pond. Very territorial about it.","mythical,aquatic,fairy"},
 	{"oak grove","NGECMI","GWkS",4,1,9,"5D4037","388E3C","cluster of mighty oaks","rustle","Mighty oaks. Mighty wall.","plant,tree"},
 	{"oak tree","NGECMI","GWkS",5,1,9,"5D4037","388E3C","wide gnarled trunk, broad lobed crown","rustle","Mighty oaks from little acorns... smash.","plant,tree"},
@@ -403,4 +395,12 @@ return {
 	{"pencil sharpener","BMAL2K","V",1,1,3,"C9CED4","C0392B","small box with blade hole","tap","Grrrind.","office"},
 	{"pendulum hammer","BKDLtI","kO",6,3,7,"5B6168","8B5A2B","huge hammer swinging from above","snap","Tick. Tock. BONK.","trap,defense"},
 	{"penguin","ACBJDA","UDB",2,5,3,"1E1E24","F7F7F2","tuxedo body, flippers, waddle","squawk","Wears a tux to every occasion.","bird,arctic,cute"},
+	{"penguin chick","ACAJDA","UDB",1,5,3,"8A8A8E","F2F2F0","fluffy grey round chick","squawk","A fluffball that waddles.","bird,arctic,cute"},
+	{"penguin soldier","ACBJDA","dNP",2,5,3,"111827","F8FAFC","penguin in a tiny helmet","honk","Smile and wave. Then attack.","silly,frozen"},
+	{"peninsula","MEENII","SN",2,1,8,"7CB342","1E88E5","land jutting into the sea","rumble","Water on three sides. Trouble on the fourth.","place,terrain"},
+	{"pennant","BMBOJB","dQF",2,5,2,"EF4444","FACC15","string of little triangle flags fluttering","flutter","Go team! Whichever team. This is generic bunting.","party,sport"},
+	{"penne","IMAELB","Te",2,7,1,"F2D08A","E8C070","angled tube pasta","pitter","Pasta tubes cut on an angle.","edible"},
+	{"penny","BKAA3K","Uce",1,8,4,"B87333","E6A57E","single shiny copper coin flipping through the air","clink","A penny for your thoughts. In the forehead.","shiny"},
+	{"penny farthing","DMBKHL","Dkg",3,5,2,"3B2A20","C0A060","huge front wheel, tiny back wheel","engine","Ride it once, look fancy forever.","ancient,silly"},
+	{"penuche","IMBLGI","SNP",2,3,3,"C89050","E8C07A","brown sugar fudge","gloop","Brown sugar fudge, very rich.","edible,sticky"},
 }

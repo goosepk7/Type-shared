@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"belgian fries","IMAELB","ceP",2,7,1,"F2C24A","F7F2DC","paper cone of thick fries","pitter","Fries with mayo, Belgian style.","edible"},
 	{"belgian waffle","IMCIII","GF",3,3,5,"E8B04A","F7F2EC","thick deep-grid waffle, cream","thud","The deep-pocketed waffle.","edible,breakfast"},
 	{"bell pepper","IGBAKF","Fke",3,5,3,"D72B2B","3E8E2B","blocky lobed pepper, green stem","thud","All the crunch. None of the burn.","edible,vegetable,healthy"},
 	{"bell tower","EMDMII","GkSeO",3,1,7,"BCAAA4","FFB300","tall tower with a huge bronze bell","bell","DONG. Enemies stunned. Ears ringing.","structure,defense,tower"},
@@ -27,7 +28,6 @@ return {
 	{"bernese mountain dog","AMDJAA","DQf",5,7,4,"1A1A1A","B8642A","tricolor giant fluffy dog","bark","A teddy bear the size of a sofa.","mammal,pet"},
 	{"berry","IGAELB","eVP",2,7,1,"B0203E","3E4A8A","small round glossy berry","pitter","A small, juicy projectile.","edible,fruit,sweet"},
 	{"berry bush","NGBNMI","FSc",2,1,3,"2E7D32","3949AB","leafy bush dotted with berries","rustle","Snacks for allies, bait for foes.","plant"},
-	{"berserk","KADOKI","Dkf",7,8,2,"B71C1C","FFEB3B","wild red aura with glowing eyes","roar","No thoughts. Only smash.","rage"},
 	{"best friend","LMCJNA","GQF",3,6,4,"F472B6","FACC15","matching friendship bracelet","ding","Always has your back.","cute"},
 	{"bet","KLBG3K","jEF",4,6,1,"22C55E","111827","two dice and a handshake over a stack of chips","rattle","Bet. No, really. Bet.","meme,luck"},
 	{"beta tester","LMCJNI","jd",3,5,3,"22D3EE","F8FAFC","lanyard, notepad, bug net","click","Found 200 bugs. All on you.","meme,gaming"},
@@ -127,6 +127,7 @@ return {
 	{"black rhino","AMDJAA","DkTIO",7,4,8,"6E6A66","4A4642","hooked lip, two horns, grumpy stance","trumpet","Charges first. Asks questions never.","mammal,heavy,wild"},
 	{"black rose","NIBNMI","iST",4,1,3,"212121","6A1B9A","inky black bloom, purple sheen","rustle","Gothic gardening at its finest.","plant,flower,spooky"},
 	{"black sand beach","MADNII","KSN",3,1,6,"212121","4FC3F7","glittering black sand and surf","rumble","Hot sand. Very hot sand.","place,terrain"},
+	{"black sun","KIENKI","jZS",6,4,5,"121018","F2B35E","a black sun rises and the light around you goes out","hum","Lights out for them. Not for you.","anime,magic"},
 	{"black swan","AICJDC","AfB",3,5,2,"1E1E24","D8201E","black swan, red beak","quack","Rare, black, and fabulous.","bird,aquatic"},
 	{"black tortoise","ABDJAA","GMB",6,2,9,"1F2937","0F766E","black tortoise with a snake coiled around","hiss","Two creatures, one shell, constant debates.","mythical,ancient,guardian"},
 	{"black widow","AJBJQA","fMN",3,6,2,"1E1E1E","D8201E","glossy black spider, red hourglass","skitter","Shiny black, red hourglass, bad news.","arachnid,spooky,venomous"},
@@ -183,6 +184,7 @@ return {
 	{"blood orange","IMBAKF","jke",3,6,2,"C9302C","F28C28","orange with crimson flesh","squirt","Looks fierce. Tastes like berries.","edible,fruit,sour"},
 	{"blood peach","IGBAKF","Fke",3,6,2,"B0302B","F2A07A","dark red peach","splat","A peach with a dramatic side.","edible,fruit,sweet"},
 	{"blood rose","NIBLMI","iST",4,1,3,"8B0000","1B1B1B","dark crimson rose that drinks","chime","Sips life from anyone nearby.","plant,magic,mythical,spooky"},
+	{"blood rush","KACOKI","Dk",8,9,2,"C9302C","FFB547","roaring red aura, faster and meaner, then tired","growl","Full power. Then a nap.","anime"},
 	{"bloodhound","AMCJAA","DQcf",4,7,4,"9A5230","6A3418","droopy wrinkly face, very long ears","bark","Can sniff out snacks from a mile away.","mammal,pet"},
 	{"bloom of life","FGCNOI","WFS",2,3,3,"81C784","F8BBD0","flowers sprouting around allies","chime","Flowers make everything better.","plant,support"},
 	{"blossom storm","FGDN5K","jdF",4,6,2,"F48FB1","FFF8E1","swirl of pink petals","chime","Pretty. Distracting. Somehow sharp.","plant,cute"},
@@ -401,6 +403,4 @@ return {
 	{"breakdancer","LFCJNK","jdk",4,8,3,"111827","FACC15","spinning on head, tracksuit","beat","Head spins. Kicks fly.","music"},
 	{"breakdancing","KMCN5K","dk",3,7,2,"FF4081","212121","spinning windmill motion trails","music","Headspin! Everyone stand back.","music,dance"},
 	{"breaker","FBDF6F","kO",6,7,2,"0288D1","FFFFFF","wave curling over and smashing down","crash","Crash! Foam everywhere.","aquatic"},
-	{"breakfast","IMCL2I","FcN",3,2,2,"FDE047","B45309","plate of eggs and bacon making a smiley face, toast, juice","sizzle","The most important summon of the day.","edible,breakfast"},
-	{"breakfast bowl","IGBOKI","F",2,5,3,"F2D23A","C8502B","bowl of eggs, potatoes, sausage","crunch","Breakfast, all in one bowl.","edible,healthy,breakfast"},
 }

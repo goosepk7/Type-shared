@@ -3,10 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"giant otter","ABCJAA","fTB",5,8,2,"4A3020","E8D8B8","huge otter with throat patch","chatter","Otter the size of a person. Loud.","mammal,predator"},
-	{"giant pacific octopus","ABDJSC","jZHB",6,6,3,"B84A30","E89A7A","huge red octopus, long tentacles","squelch","Escapes aquariums for midnight snacks.","aquatic,ocean,smart"},
-	{"giant pancake","IMEJII","GkcN",7,2,7,"E8B860","C8762B","enormous fluffy disc","thud","A pancake that could blanket a castle.","edible,giant,silly"},
-	{"giant penguin cryptid","ACDJDA","dkN",5,3,6,"1F2937","F8FAFC","fifteen-foot penguin with big footprints","honk","Huge footprints on the beach. Suspicious.","cryptid,silly"},
 	{"giant pickle","IMEJIF","Djk",7,2,7,"5E7A2B","A8B85A","pickle the size of a submarine","thud","A briny battering ram.","edible,giant,silly"},
 	{"giant pie","IMEJIF","jkO",7,2,7,"D9A04A","B0203E","pie as big as a pond","thud","The biggest pie to the face ever.","edible,giant,silly"},
 	{"giant pizza","IMEJIK","UkcI",7,2,7,"E8B04A","D72B2B","huge pizza the size of a table","thud","A pizza you could ride on.","edible,giant,silly"},
@@ -277,7 +273,6 @@ return {
 	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
 	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
 	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
-	{"gravity crush","KLDNOI","kNO",7,4,4,"4527A0","9FA8DA","purple pressure dome flattening ground","rumble","Heavy feelings. Literally.","space,heavy"},
 	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
 	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
 	{"gravity grenade","CLBGKI","lHe",5,7,1,"7D3CB5","C9CED4","grenade warping the air","zap","Everything floats. Then falls.","scifi,ranged"},
@@ -291,7 +286,6 @@ return {
 	{"gravity vortex","KLDN5K","SHN",6,4,5,"311B92","B388FF","swirling purple ground funnel","hum","Everyone slides to the middle.","space"},
 	{"gravity wall","FLCCnI","GHN",4,2,6,"4527A0","B388FF","warped purple ripple wall","whum","Walls that weigh you down.","space,defence"},
 	{"gravity wave","FLDFOB","kPO",7,7,1,"4527A0","B388FF","space-bending ripple ring","whum","Space wobbles. You fall over.","space"},
-	{"gravity well","OICN1I","SHN",6,1,5,"1B1A22","A66BDB","swirling dark disc on the ground","hum","Everything slides toward the middle.","scifi"},
 	{"gravlax","IGBOKI","F",2,5,3,"E8603A","7DBE3A","cured salmon slices with dill","crunch","Salmon cured with salt and patience.","edible,healthy"},
 	{"gravy","IMBNGI","FSN",2,4,1,"8A5A2A","C8904A","glossy brown sauce boat","splat","A river of savory.","edible,sauce"},
 	{"gravy boat","IMBNGI","SNP",2,4,1,"F7F4EC","8A5A2A","white boat-shaped jug","splat","A boat that only sails gravy.","edible,sauce"},
@@ -403,4 +397,10 @@ return {
 	{"guardhouse","EECMII","GSeh",3,1,8,"9E9E9E","B71C1C","small stone building by the gate","thud","Guards on duty. Always.","structure,ancient,defense"},
 	{"guardian","LHDJYA","GQka",6,3,9,"D4AF37","3B6FB6","towering armoured figure with a glowing tower shield","clang","You shall not get past. Or even near.","defense,warrior"},
 	{"guardian angel","AHCJNB","GAQF",5,7,5,"F8FAFC","FACC15","soft glowing angel hovering behind you","chime","Always one step behind. Catching you.","holy,guardian"},
+	{"guava","IGBAKF","Fke",3,6,2,"9CC34A","F3818A","round green fruit, pink inside","splat","Smells like a vacation.","edible,fruit,sweet,tropical"},
+	{"guess","KLBG3K","jEY",3,6,1,"F472B6","22D3EE","three spinning mystery boxes with question marks","ding","Eeny, meeny, miny, YOU.","silly,luck"},
+	{"guiding bolt","FHCAKB","KQe",6,8,1,"FFF59D","FFFFFF","homing star of light","chime","It knows where you are.","holy"},
+	{"guild","LLDJLA","Ffeh",6,5,6,"7E22CE","FACC15","knight, mage, archer and healer under a guild banner","fanfare","Looking for group. Must have own sword.","gaming,fantasy,team"},
+	{"guillemot","ABBJDB","DAB",2,7,2,"2A2A2A","F2F2F2","black-white cliff seabird","squawk","Lives on cliffs shoulder to shoulder.","bird,ocean"},
+	{"guinea fowl","AMBJDA","df",2,4,2,"3A3A44","F2F2F2","round dark body with white polka dots","chatter","Polka dots and noise. Lots of noise.","bird,farm"},
 }

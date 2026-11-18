@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cassette tape","BMAAKI","eN",1,7,1,"24262A","F2F2EE","small tape with two spools","toot","Tangle them in tape.","music"},
+	{"cassiopea","ABBJGJ","jSMOB",2,2,1,"8AB0A0","E8E0C8","jelly lying upside down on sand","squelch","Lies upside down. Sunbathes.","aquatic,ocean,venomous"},
 	{"cassiopeia","MHEEKJ","eV",5,4,5,"FFFFFF","7E57C2","five stars in a zigzag W","rumble","A W in the sky. W for win.","space"},
 	{"cassoulet","IBBOGI","FS",3,4,3,"C8762B","8A4A2A","clay pot of beans and meat","slurp","French beans, slow-cooked.","edible,warm,healthy"},
 	{"cassowary","AMDJDA","DkfTO",6,8,5,"1E1E24","2A6AE8","black feathers, blue neck, helmet casque","boom","A dinosaur in disguise. Do not approach.","bird,flightless"},
@@ -345,6 +347,7 @@ return {
 	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
 	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
 	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
+	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
 	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
 	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
 	{"clash","KMCFOB","kO",5,8,2,"FFAB40","FFFFFF","two forces colliding in a spark ring","clang","Sparks fly. Everyone flinches.","melee"},
@@ -383,8 +386,6 @@ return {
 	{"cling wrap","BMBL2I","NO",1,4,1,"BFE6F2","F2F2EE","stretchy clear plastic sheet","clang","Wrapped up tight.","sticky"},
 	{"clipboard","BMBIyK","G",1,6,3,"C49A6C","C9CED4","board with metal clip","tap","Looks busy. Is busy.","office"},
 	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
-	{"cloak","BMCONI","Z",1,6,2,"4A4D52","24262A","long hooded traveller's cloak","swish","Mysterious. Possibly rogue.","clothing"},
-	{"cloaking device","ODBOKI","Z",3,6,3,"4A4D52","3FC1D9","wrist gadget with shimmer field","beep","Bzzzt. Gone.","scifi"},
 	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
@@ -402,5 +403,4 @@ return {
 	{"closet monster","AICJGA","jZc",4,5,4,"4C1D95","FDE047","furry shape with many eyes behind doors","growl","Lives with your shoes.","spooky,silly,cute"},
 	{"cloth weaver","LMCJNI","HN",3,4,4,"7C3AED","FDE68A","loom, spindle, threads everywhere","whir","Weaves a net. You're in it.","historical"},
 	{"clothes","BMCLNA","GjN",2,4,3,"3B82F6","EF4444","empty outfit walking by itself: shirt, jeans, sneakers","rustle","Nobody inside. Still better dressed than you.","clothing,silly"},
-	{"clothes dryer","OACL1I","Kj",3,1,7,"F2F2EE","8E9196","round-door tumble dryer","thud","Tumble. Tumble. Dizzy.","household"},
 }

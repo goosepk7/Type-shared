@@ -3,13 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"guardian spirit","AHCJNJ","GQF",4,6,5,"FDE68A","F8FAFC","glowing figure with shield of light","chime","Always has your back. Literally.","spirit,holy,guardian"},
-	{"guava","IGBAKF","Fke",3,6,2,"9CC34A","F3818A","round green fruit, pink inside","splat","Smells like a vacation.","edible,fruit,sweet,tropical"},
-	{"guess","KLBG3K","jEY",3,6,1,"F472B6","22D3EE","three spinning mystery boxes with question marks","ding","Eeny, meeny, miny, YOU.","silly,luck"},
-	{"guiding bolt","FHCAKB","KQe",6,8,1,"FFF59D","FFFFFF","homing star of light","chime","It knows where you are.","holy"},
-	{"guild","LLDJLA","Ffeh",6,5,6,"7E22CE","FACC15","knight, mage, archer and healer under a guild banner","fanfare","Looking for group. Must have own sword.","gaming,fantasy,team"},
-	{"guillemot","ABBJDB","DAB",2,7,2,"2A2A2A","F2F2F2","black-white cliff seabird","squawk","Lives on cliffs shoulder to shoulder.","bird,ocean"},
-	{"guinea fowl","AMBJDA","df",2,4,2,"3A3A44","F2F2F2","round dark body with white polka dots","chatter","Polka dots and noise. Lots of noise.","bird,farm"},
 	{"guinea pig","AMAJAA","Cdb",1,6,1,"D8924A","F7F2EA","potato-shaped, no tail, tiny ears","wheek","Wheeks for vegetables. A potato with legs.","mammal,cute,pet"},
 	{"guitar","BMCFJI","jdO",3,5,4,"8B5A2B","F3E6C8","curvy wooden body, long neck","strum","Strum. Swing. Encore.","music"},
 	{"guitarfish","ABBJEC","STB",2,5,3,"B0A080","E8E0D0","guitar-shaped flat body","whoosh","Shaped like a guitar. Can't play.","fish,aquatic,ocean,music,silly"},
@@ -220,6 +213,7 @@ return {
 	{"heather","NGBNMI","dFS",1,1,3,"AB47BC","6D4C41","low purple shrub carpet","rustle","Covers whole hillsides. Lovely. Tough.","plant,flower"},
 	{"heatwave","GAENOI","KSN",6,4,4,"FF7043","FFE0B2","wavy shimmering orange air, cracked ground","hum","Too hot. Way too hot.","fire"},
 	{"heaven","MHFNII","FlS",6,1,9,"FFFFFF","FFD54F","glowing gates on endless clouds","chime","Bright, fluffy, and very healing.","place,mythical,holy"},
+	{"heaven fist","KHENKI","kO",9,3,5,"F2D9A6","FFF7E6","a colossal glowing fist punches down from clouds","thump","Heaven has a mean right hook.","anime,hero"},
 	{"hecatoncheires","AEFJNA","kle",9,3,9,"78716C","F59E0B","giant with fifty heads and a hundred arms","stomp","Throws a hundred rocks at once.","mythical,giant,ancient,danger"},
 	{"hedge","NGCCMI","GZS",2,1,6,"2E7D32","1B5E20","tidy rectangular green bush","rustle","Neat, tidy, perfectly in the way.","plant"},
 	{"hedge fortress","NGECMI","GWFS",4,1,7,"2E7D32","1B5E20","castle shaped from clipped hedges","rustle","A castle you water.","plant"},
@@ -403,4 +397,10 @@ return {
 	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 	{"hornbeam","NGDCMI","GWkS",3,1,8,"9E9E9E","7CB342","grey fluted trunk, dense crown","rustle","Hard as horn.","plant,tree,heavy"},
 	{"hornbill","AMCJDB","jdAk",3,6,2,"1E1E1E","F2C02A","huge curved beak with casque helmet","squawk","Wears a helmet on its beak.","bird,jungle,silly"},
+	{"horned lizard","AMBJAA","CfTe",2,7,2,"C8A06A","6A4A2A","flat spiky desert lizard","hiss","Squirts blood from its eyes. Defense!","reptile,desert"},
+	{"horned serpent","ABEJCC","HLB",7,5,7,"0E7490","FDE047","giant serpent with antlers and a shining crest","hiss","Antlers on a snake. Instant legend.","mythical,reptile"},
+	{"horned viper","AMCJCD","CZfMN",4,6,3,"E8D0A0","B8986A","viper with eye horns","hiss","Has tiny horns. Hides in sand.","reptile,venomous,desert"},
+	{"hornet","AJBJLB","AfTMP",3,7,1,"B8702A","1E1E1E","giant wasp, orange head","buzz","Bigger wasp. Worse attitude.","insect,swarm,venomous"},
+	{"hornworm","AMAJTA","jdW",1,5,1,"6AC84A","F2F2EE","fat green caterpillar with horn","flutter","Has a horn. Eats your tomatoes.","insect,cute"},
+	{"horror","KICFOB","jiI",5,7,1,"1A0033","FF1744","jagged dark ring with glowing eyes","scream","Nope. Nope. Nope.","spooky"},
 }

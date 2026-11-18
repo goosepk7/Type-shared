@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"assassin bug","AMAJFA","dATMP",1,6,1,"3A2A1A","D8401E","long beak, stalking","buzz","A tiny bug with a big name.","insect"},
 	{"assault rifle","CKCAwI","TeV",6,7,4,"24262A","6B7B3A","rifle with curved magazine","rattle","The standard-issue all-rounder.","modern,ranged"},
 	{"aster","NGBNMI","dFS",2,1,2,"7E57C2","FFEB3B","starry purple daisy","rustle","Star-shaped and proud of it.","plant,flower"},
 	{"asteroid","HEFAKB","KEkePO",9,6,9,"4A403A","FF6F00","colossal cratered rock, blazing entry flames, sky-wide trail","roar","Look up. Further. Now run.","space,explosive,heavy,danger"},
@@ -402,5 +403,4 @@ return {
 	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
 	{"beignet","IMBDOJ","jcP",2,5,1,"F2E8D0","F7F7F2","square puff, sugar snow","puff","A pillow buried in powdered sugar.","edible"},
-	{"belgian fries","IMAELB","ceP",2,7,1,"F2C24A","F7F2DC","paper cone of thick fries","pitter","Fries with mayo, Belgian style.","edible"},
 }
