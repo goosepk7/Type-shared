@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"enlarge","KLCOKI","W",4,4,4,"66BB6A","C8E6C9","green upward arrows, caster swelling huge","stretch","Bigger. Much bigger.","silly"},
 	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
 	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
 	{"entelodont","AMDJAA","DkO",7,4,8,"6A4A3A","C89A7A","giant pig with huge jaws","roar","A pig the size of a cow. Grumpy.","mammal,extinct,ancient,heavy"},
@@ -402,5 +403,4 @@ return {
 	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
 	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
 	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
-	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"radar dome","EDCMII","GSeL",3,1,6,"F5F5F5","B0BEC5","white golf-ball dome or big bowl dish","ping","Ping. Ping. Gotcha.","structure,building"},
+	{"radiance","FHDNOI","KFS",6,5,3,"FFE58A","FFFFFF","blinding golden aura dome","hum","Glowing with confidence. And photons.","holy"},
+	{"radiant burst","FHDGKI","KEF",7,8,1,"FFF176","FFFFFF","blinding golden explosion of light","boom","Shine so hard it hurts.","holy,explosive"},
 	{"radiated tortoise","AMBJUA","GN",2,2,8,"1E1E1E","F2D82A","star-rayed high shell","hiss","Starburst patterns on its shell.","reptile,armored"},
 	{"radiation","FJDNOI","iSM",6,4,3,"C3FF2E","1C2A08","pulsing green glow field, ticking motes","tick","Gives you a glow. Not the good kind.","toxic"},
 	{"radiation blob","AJCJGF","WSM",5,2,5,"84CC16","FDE047","glowing neon blob with smoke","bubble","Glows in the dark. Don't hug.","alien,toxic"},
@@ -400,8 +403,4 @@ return {
 	{"rope","BMCLJK","HN",1,5,3,"B89B6A","D2B48C","coiled thick rope","clank","Ties up loose ends. And enemies.","tool"},
 	{"rope arrow","CMAAJI","He",2,8,2,"8B5A2B","B89B6A","arrow trailing a long rope","twang","For swinging in or dragging out.","medieval,ranged"},
 	{"rope bridge","EMCLII","jSN",2,1,3,"A1887F","6D4C41","wooden planks hanging from ropes","thud","Do not look down. Do not cut the ropes.","structure,silly"},
-	{"rope ladder","BMCCII","l",1,3,2,"B89B6A","8B5A2B","dangling ladder of rope","thud","Climb up. Climb away.","object"},
-	{"rope swing","EMBLII","kS",1,1,3,"8D6E63","212121","rope dangling from a branch with a tyre","thud","Swing out. Kick enemies.","structure,silly"},
-	{"roper","AECLII","cfH",5,1,8,"78716C","FBBF24","rock stalagmite with sticky tendrils","chomp","Pretends to be a rock. Very convincing.","dungeon"},
-	{"rose","NGBNMI","dFST",3,1,3,"C62828","2E7D32","layered red bloom, thorny stem","rustle","Smells sweet. Stings worse.","plant,flower,sharp"},
 }

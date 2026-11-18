@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
 	{"brain freeze","ICBAKJ","jJO",3,5,2,"A6D8F2","F7F7F2","frosty swirl around head","squish","Ow ow ow. Cold.","edible,frozen"},
 	{"brainstorm","KDCDOJ","jL",5,6,2,"E040FB","FFEB3B","little cloud raining lightbulbs and sparks","crack","A storm of ideas. Some hurt.","psychic,electric,silly"},
 	{"brake","KKBF6B","INO",3,6,3,"DC2626","1F2937","red pedal stomp with screeching skid marks","screech","SCREEEECH. Everyone stops. Coffee spills.","vehicle"},
@@ -403,4 +402,5 @@ return {
 	{"cardigan","BMBIyE","GFN",2,2,4,"B5651D","FDE68A","chunky knit cardigan with big wooden buttons","rustle","Smells like biscuits. Blocks like a wall.","clothing,warm"},
 	{"cardinal","AMAJDB","dA",1,7,1,"D8201E","1E1E1E","bright red bird, crest, black mask","tweet","So red it looks painted.","bird,cute"},
 	{"cardinalfish","ABAJEC","dB",1,6,1,"E8501E","F2E8D8","small red fish","splash","Dads carry eggs in their mouths.","fish,aquatic"},
+	{"cardon","NEFCMI","GST",5,1,9,"558B2F","F5F5F5","massive multi-armed cactus","thud","Biggest cactus around. Biggest hug.","plant,desert,sharp"},
 }

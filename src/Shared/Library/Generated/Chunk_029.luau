@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"willpower","KHCOKI","GF",3,4,6,"FF7043","FFD54F","blazing orange inner glow","grunt","Not giving up. Not today.","support"},
+	{"wimp","LMBJNA","UdY",1,9,1,"FDE68A","93C5FD","trembling kid hiding behind own hands, knees knocking","squeak","Runs away so fast it counts as an attack.","silly"},
+	{"wind","FFCFOB","kI",4,8,2,"A8C8D8","F0F6FA","streaking pale air lines and leaves","whoosh","Invisible. Opinionated. Shove-y.","air"},
+	{"wind and rain","GBDEOJ","INP",5,6,3,"546E7A","B3E5FC","slanting heavy rain pushed by wind","howl","Sideways rain. The worst kind.","storm"},
 	{"wind blade","FFCHrB","kTe",5,9,1,"B2EBF2","FFFFFF","crescent of slicing pale air","whistle","Sharp wind. Very sharp wind.","air,sharp"},
 	{"wind bolt","FFBAKB","ke",4,10,1,"B3E5FC","FFFFFF","swirling clear air dart","whistle","A tiny tornado, fired fast.","air"},
 	{"wind chill","GCCFOB","JIN",4,7,2,"B9D6E6","F7FBFD","biting icy gusts with flakes","howl","Feels colder than it is. Rude.","frozen,air"},

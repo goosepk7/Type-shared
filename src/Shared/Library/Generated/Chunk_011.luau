@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
 	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
 	{"ghost costume kid","LIBJGA","jd",2,5,2,"F8FAFC","111827","kid in a bedsheet with eye holes","wail","Boo. Trips on the sheet.","cute,halloween,silly"},
 	{"ghost crab","ABBJRA","GZfT",2,8,5,"E8E0D0","C8C0B0","pale fast beach crab, stalk eyes","clack","Vanishes in the sand. Spooky.","crustacean,aquatic,armored"},
@@ -402,5 +403,4 @@ return {
 	{"green mamba","AMCJCD","fMN",4,8,3,"4AC84A","E8F07A","bright green slender tree snake","hiss","Neon green. Lives in trees.","reptile,venomous"},
 	{"green man","AGCJNA","WFN",5,3,6,"15803D","4D7C0F","face made of oak leaves with vine beard","rustle","The forest's face. Watching.","spirit,plant"},
 	{"green mango","IMBAKF","jke",3,6,2,"8DB84A","F2E8C0","unripe green mango","squirt","So sour your ears twitch.","edible,fruit,sour"},
-	{"green onion","IMBHJI","kf",3,5,4,"5E9E3A","F2F2E0","long green stalk, white bulb","bonk","An onion that never grew up.","edible,silly,vegetable"},
 }

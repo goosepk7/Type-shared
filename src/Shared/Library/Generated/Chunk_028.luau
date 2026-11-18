@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vegetable","IGBOKI","F",2,5,3,"5E9E3A","ED9121","bundle of mixed vegetables","crunch","Eat your vegetables. Throw your vegetables.","edible,healthy"},
+	{"vegetable soup","IBBOGI","FS",3,4,3,"C8762B","7DBE3A","chunky veg broth bowl","slurp","Every vegetable, taking a hot bath.","edible,warm,healthy"},
+	{"vegetable stew","IBBOGI","FS",3,4,3,"C8762B","7DBE3A","bowl of chunky veg stew","slurp","Vegetables, slowly united.","edible,warm,healthy"},
+	{"vegetable tray","IGBOKI","F",2,5,3,"ED9121","7DBE3A","platter of cut vegetables","crunch","The healthy part of the party.","edible,healthy"},
 	{"veggie burger","IGBOKI","F",2,5,3,"7DBE3A","C8762B","bun with green-brown patty","crunch","A burger that loves vegetables.","edible,healthy"},
 	{"veggie chips","IMBAKK","Uke",3,7,2,"E8434F","ED9121","colorful crispy slices","whoosh","Healthy-ish chips.","edible,snack"},
 	{"vehicle","DMCKeL","Dkg",4,7,5,"F59E0B","1F2937","generic boxy buggy with mismatched wheels and one headlight","engine","It has wheels. Probably. Get in.","vehicle,mechanical"},
@@ -399,8 +403,4 @@ return {
 	{"wildflame","FADFOB","KkP",6,7,2,"E85D04","FAA307","ragged flame wave, uneven leaping tongues","roar","Fire that skipped obedience school.","fire"},
 	{"will-o-the-wisp","ALAJKJ","jAZc",2,7,1,"67E8F9","A5F3FC","floating blue flame orb","chime","Follow the light. Bad idea. Fun idea.","spooky,magic"},
 	{"willow tree","NGECMI","GWkSHN",4,1,7,"6D4C41","9CCC65","drooping curtain of long thin branches","rustle","Sad tree. Sad for you.","plant,tree"},
-	{"willpower","KHCOKI","GF",3,4,6,"FF7043","FFD54F","blazing orange inner glow","grunt","Not giving up. Not today.","support"},
-	{"wimp","LMBJNA","UdY",1,9,1,"FDE68A","93C5FD","trembling kid hiding behind own hands, knees knocking","squeak","Runs away so fast it counts as an attack.","silly"},
-	{"wind","FFCFOB","kI",4,8,2,"A8C8D8","F0F6FA","streaking pale air lines and leaves","whoosh","Invisible. Opinionated. Shove-y.","air"},
-	{"wind and rain","GBDEOJ","INP",5,6,3,"546E7A","B3E5FC","slanting heavy rain pushed by wind","howl","Sideways rain. The worst kind.","storm"},
 }

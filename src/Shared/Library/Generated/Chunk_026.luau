@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swamp shack","EBBNII","GSN",3,1,4,"6D4C41","33691E","rickety hut on stilts over swamp","moan","Rickety. Rotten. Ready.","place,spooky"},
+	{"swan","ABCJDC","AkfB",3,5,2,"F7F7F4","F2701E","white swan, long curved neck","hiss","Graceful on top. Paddling chaos below.","bird,aquatic"},
+	{"swan goose","ABBJDC","AfOB",2,5,2,"C8A07A","1E1E1E","knobby goose","quack","Knob-nosed goose. Loud.","bird,aquatic"},
+	{"swarm","AGDDLB","jAQMP",6,8,2,"2B2B2B","F5C518","dense black-and-yellow buzzing cloud, shifting shape","buzz","Bzzzzzzzzzzzzzzzzzzzzzzzzzzzzz. Run.","insect,swarm"},
 	{"sweat bee","AJAJLB","iATMP",2,7,1,"2AC86A","F2D82A","tiny metallic bee","buzz","Drinks your sweat. Weird.","insect,swarm,venomous"},
 	{"sweatband","BMAONF","F",1,7,1,"F2F2EE","C0392B","stretchy terry band","bonk","Peak sport energy.","sport"},
 	{"sweater","BMCONI","JF",1,4,2,"2E8B57","C0392B","knitted reindeer sweater","swish","Festive and slightly itchy.","clothing,holiday"},
@@ -399,8 +403,4 @@ return {
 	{"toddler","LMBJNA","Djd",2,6,3,"FDE68A","60A5FA","wobbly kid with sippy cup","giggle","Unstoppable. Sticky. Loud.","family,cute"},
 	{"toe","BMAAKG","UfO",2,5,2,"E8B48A","FF8A80","one red throbbing big toe, pain stars","squeak","This little piggy went to WAR.","body,silly"},
 	{"toe jam","FJALGI","SMN",1,1,1,"7A6A55","A8A29E","grey-brown crumbly goo between cartoon toes","whiff","Not the kind you put on toast.","gross,silly"},
-	{"toffee","IMBLGI","SNO",2,3,3,"B5651D","D9A04A","shattered golden slab","gloop","Glues teeth together. Try it on enemies.","edible,sticky,candy,sweet"},
-	{"toffee bar","IMBLGI","SNP",2,3,3,"B5651D","5A2E16","hard toffee with chocolate top","gloop","Crunch then stick.","edible,sticky,candy"},
-	{"tofu","IMBLGG","USN",2,3,3,"F7F4EC","E8E0C8","white wobbly block","wobble","Wobbly, white, and takes any flavor.","edible,wobbly"},
-	{"toga","BMCONI","F",1,5,1,"F2F2EE","D4A72C","draped white sheet","swish","Very ancient. Very breezy.","clothing,ancient"},
 }

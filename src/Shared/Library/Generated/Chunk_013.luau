@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hocus pocus","KLCAKB","jX",4,7,1,"8E24AA","FFEB3B","wand sparkle swirl with stars","poof","Hocus pocus, everybody focus.","magic,silly"},
 	{"hodag","AECJAA","Dkf",5,6,6,"365314","F5F5F4","horned frog-faced lizard beast with spikes","roar","Smells like a barbecue that went wrong.","cryptid"},
 	{"hoe","JKCHJK","fH",2,5,4,"8A929B","8B5A2B","flat angled blade on pole","clank","Weeds have one natural enemy.","tool,garden"},
 	{"hoecake","IMBAKK","Uke",3,7,2,"E8B84A","F2D88A","thin cornmeal griddle cake","whoosh","A flat corn cake from the griddle.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"island","MBENII","GFSN",3,1,8,"E6C27A","43A047","sandy island with palm trees","rumble","Surrounded by water. And sharks, probably.","place,terrain,aquatic"},
 	{"isopod","ABCJRA","GfT",3,4,7,"B8B0A0","E8E0D0","huge armored deep-sea pill bug","clack","A pill bug the size of a cat.","crustacean,aquatic,armored,deepsea"},
 	{"it","AICJGD","jQWZ",5,4,5,"374151","A3E635","shapeless something under a sheet, one tentacle poking out","gurgle","What is it? Nobody knows. It is coming.","spooky,silly"},
-	{"italian ice","ICBAKJ","JeN",3,5,2,"F2D23A","F7F7F2","cup of smooth fruity ice","squish","Ice that went to culinary school.","edible,frozen,sweet"},
 }

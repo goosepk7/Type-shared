@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
 	{"flight","KFCOKB","A",2,8,3,"B3E5FC","FFFFFF","caster lifting off with wind streaks","whoosh","Who needs stairs?","air"},
 	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
@@ -402,5 +403,4 @@ return {
 	{"ghost bat","AIBJDB","jiA",2,7,1,"E8E0D8","C8B8A8","pale ghostly bat","screech","Pale, spooky, and hungry.","mammal,nocturnal,spooky"},
 	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
 	{"ghost car","DICKHE","DjZg",5,7,3,"B3E5FC","5E35B1","see-through glowing car, no driver","engine","Nobody is driving. Nobody.","mechanical,vehicle,land,spooky"},
-	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
 }

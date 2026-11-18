@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"serow","AMCJAA","df",3,4,4,"3A3A3A","8A7A6A","goat-antelope with donkey ears","bleat","Goat, donkey, antelope. Pick one.","mammal,farm"},
+	{"serrano","IABAKK","KeP",5,7,2,"3E8E2B","C8202B","slender green pod","sizzle","Thin, green, and sneaky hot.","edible,spicy,flammable,pepper"},
+	{"serval","AMCJAA","UZfT",4,7,3,"D9B35A","1F1A12","tall legs, huge ears, spotted coat","hiss","Mostly ears and legs. And attitude.","mammal,predator,wild"},
+	{"servant","LMCJNA","GQF",2,5,3,"1F2937","F8FAFC","tidy helper with a silver tray and white gloves","ding","You rang? I brought snacks and a shield.","royal,support"},
 	{"service tree","NGCCMI","GWFkS",2,1,5,"5D4037","FFFFFF","slim tree with white spring blossom","rustle","Sweet berries in June.","plant,tree"},
 	{"sesame seeds","IMAELB","eVP",2,7,1,"F2E8C8","D8C8A0","sprinkle of tiny teardrops","pitter","Open sesame.","edible"},
 	{"seven layer bar","IMBLKI","dSc",2,3,3,"8A5A2A","F2E8C8","layered dessert bar","chomp","Seven layers. Seven wonders.","edible,sweet,dessert"},
@@ -399,8 +403,4 @@ return {
 	{"slushie machine","OCCM1I","JN",2,2,5,"47D7E8","C0392B","tank of spinning icy drink","clang","Brain freeze, weaponised.","kitchen,household"},
 	{"smack","KMBAKB","kf",3,9,1,"FF8A80","FFFFFF","giant cartoon hand swat","smack","Rude, but effective.","silly"},
 	{"smartwatch","BDAO1I","c",1,6,2,"24262A","BFE6F2","wrist screen watch","beep","Notifications: you are winning.","tech"},
-	{"smash","KECAKB","kfO",6,7,3,"8D6E63","FFE082","giant fist-shaped impact burst","crash","Big hands. Big crash. Big fun.","heavy"},
-	{"smell","FJCDOJ","jSIP",3,4,1,"A3B18A","D9E76C","wavy green stink lines rising from an old trainer","whiff","Whoever smelt it, dealt it.","gross,silly"},
-	{"smelt","ABAJEC","dB",1,6,1,"C8D8E0","8AA0B0","tiny smelly silver fish","splash","Smells like cucumber. Seriously.","fish,aquatic"},
-	{"smile","KHAOKJ","F",1,5,1,"FFEB3B","FFFFFF","bright sparkly smile glow","ding","Smile! Things just got better.","cute,support"},
 }

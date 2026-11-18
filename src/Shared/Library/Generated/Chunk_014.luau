@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"italian ice","ICBAKJ","JeN",3,5,2,"F2D23A","F7F7F2","cup of smooth fruity ice","squish","Ice that went to culinary school.","edible,frozen,sweet"},
 	{"itch","KJAAKB","jd",1,8,1,"C0CA33","FFFFFF","tiny wiggly itch lines","scritch","Can't stop scratching.","silly"},
 	{"itching powder","CMADOI","jd",1,6,1,"D2B48C","F2F2EE","puff of scratchy powder","thwip","Scratch. Scratch. SCRATCH.","prank,silly"},
 	{"ittan-momen","AFCJCB","AHN",3,8,2,"F8FAFC","E5E7EB","long strip of white cloth flying at night","whoosh","A scarf that wraps you up. Too tight.","yokai"},
@@ -402,5 +403,4 @@ return {
 	{"larva","AMAJTD","CWP",1,3,1,"F2E8D0","C8B07A","soft squishy baby bug","squelch","Baby bug. Hungry bug.","bug"},
 	{"lasagna","IMCCII","GFc",3,2,6,"D8602B","F2D08A","layered slab, cheese, red sauce","thud","Layers upon layers of cozy defense.","edible,giant"},
 	{"laser","CHCBJI","KTe",6,10,3,"FF2D2D","F2F2EE","thin searing red beam","zap","Pew pew, but continuous.","scifi,ranged"},
-	{"laser cannon","CHDMxI","KTe",8,5,6,"3A3F45","FF2D2D","heavy twin-barrel beam cannon","zap","For lasers that need to be heard.","scifi,ranged"},
 }

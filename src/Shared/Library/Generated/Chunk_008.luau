@@ -403,5 +403,4 @@ return {
 	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
 	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
 	{"english muffin","IMBAKK","Uke",3,7,2,"E8D0A0","C89A5A","flat round with nooks","whoosh","Nooks, crannies, and butter traps.","edible"},
-	{"enlarge","KLCOKI","W",4,4,4,"66BB6A","C8E6C9","green upward arrows, caster swelling huge","stretch","Bigger. Much bigger.","silly"},
 }
