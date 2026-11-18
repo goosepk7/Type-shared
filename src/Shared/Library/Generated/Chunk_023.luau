@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
+	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
+	{"shepherd's pie","IGBOKI","F",2,5,3,"E8C070","7A3A2A","mashed potato topping, golden ridges","crunch","A potato blanket over a meaty bed.","edible,healthy"},
 	{"sherbet powder","IMBDOJ","jLP",2,5,1,"F2E23A","F2A6C8","fizzy sugar powder","puff","Fizzes on the tongue.","edible,candy"},
 	{"sheriff","LECJNA","GeO",5,6,5,"92400E","FACC15","star badge, wide hat, long coat","bang","This arena ain't big enough for both of us.","western"},
 	{"sheriff badge","BMAONI","h",2,5,4,"D4A72C","C9CED4","five-point star badge","swish","This town ain't big enough.","clothing,cowboy"},
@@ -400,7 +403,4 @@ return {
 	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
 	{"soda bread","IMCCII","Gk",4,2,6,"D9A04A","F2E2C2","round loaf with cross cut","thud","A quick bread with a cross on top.","edible,giant"},
 	{"soda can","IBBFKI","EkI",3,7,1,"C8202B","C8C8C8","aluminum can","fizz","Shake well. Open near enemy.","edible,drink,fizzy"},
-	{"soda fountain","OBCM1I","deN",2,2,5,"C0392B","C9CED4","nozzled fizzy drink dispenser","clang","Fizzy blast!","kitchen,household"},
-	{"soda geyser","IBDFKI","EklP",6,7,1,"3A1A0C","F7F7F2","erupting fountain of fizz","fizz","Shake well before using.","edible,drink,fizzy"},
-	{"soft coral","ABCCMI","GW",3,1,6,"E8A0C0","F2D0E0","swaying fleshy coral","crackle","Wiggly coral. Squishy.","aquatic,ocean,reef"},
 }

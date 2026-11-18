@@ -11,6 +11,7 @@ return {
 	{"pee","FBBNGI","dSN",1,3,1,"F7E36B","FBF3B0","small yellow puddle with a wavy shine and a tiny sign","squirt","Should have gone before we left.","silly,gross"},
 	{"peekaboo","KLAOKI","ZO",1,8,1,"F8BBD0","FFFFFF","caster blinking in and out","boo","Peekaboo! I see you.","cute,silly"},
 	{"peel","BGALGI","kNO",2,1,1,"FDE047","A16207","floppy yellow fruit skin lying in wait","whee","The oldest trap in the book.","trap,silly"},
+	{"peel slip","IMBL7I","SO",2,3,2,"F7D83C","6B4E16","a floppy cartoon banana peel that spins you out","squeak","Watch your step.","cartoon,silly,trap"},
 	{"peeler","BMAHJK","f",1,7,2,"8A929B","E67E22","little swivel blade on handle","clang","Peels potatoes. And armour.","kitchen,household"},
 	{"peepal tree","NHECMI","GWFkS",4,1,9,"8D6E63","43A047","wide tree with heart-shaped leaves","rustle","Sit beneath it. Get very wise.","plant,tree,holy"},
 	{"peg leg","CMBHtI","kf",2,4,4,"8B5A2B","5A3A1E","wooden stump leg","bang","Kicks with a thunk.","pirate,silly"},
@@ -100,6 +101,7 @@ return {
 	{"physics","KLCF5B","klHI",6,5,3,"6366F1","FDE047","swirl of arrows, an apple, a pendulum and E=mc2","whum","Every action. Equal. Opposite. Ouch.","science,school"},
 	{"pianist","LLCJNI","jh",3,3,4,"111827","F8FAFC","tuxedo, grand piano","piano","Dramatic chord. Dramatic effect.","music"},
 	{"piano","BMDGKI","dkO",6,1,6,"24262A","F2F2EE","grand piano, lid propped up","thud","Plunk. Plonk. Crash.","music,heavy,cartoon"},
+	{"piano drop","BMDGKI","k",4,2,3,"5A3420","F5F1E6","an upright piano that crashes down from the sky","crash","Look out below. Way below.","cartoon,silly"},
 	{"piano rain","BMDEJI","dkO",7,2,5,"24262A","F2F2EE","grand pianos plummeting","thud","Plink. Plonk. PLINK.","silly,cartoon"},
 	{"piasa bird","AADJDB","Akf",6,7,5,"7F1D1D","15803D","antlered dragon bird with fish tail","screech","Painted on cliffs. Not happy about it.","mythical"},
 	{"picarones","IMBLGI","SNP",2,3,3,"D9A04A","B5651D","pumpkin donut rings, syrup","gloop","Peruvian donuts with syrup.","edible,sticky,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
 	{"pom pom crab","ABBJRA","GfTM",2,4,5,"F2D0B0","F2A0C0","crab holding anemone pompoms","clack","Cheerleader crab with stingy pompoms.","crustacean,aquatic,armored,cute"},
-	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
-	{"pomegranate tree","NGCCMI","GWFkS",3,1,6,"6D4C41","C62828","small tree with red jewel fruit","rustle","Fruit full of tiny red gems.","plant,tree"},
 }

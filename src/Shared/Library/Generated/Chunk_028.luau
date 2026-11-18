@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wake","KHBF6B","FIO",3,7,1,"FDE047","EF4444","ringing alarm clock shockwave with a bucket of water","ring","RISE AND SHINE. It is 6 a.m. on a Saturday.","silly"},
+	{"wake up","KHBOKI","DF",1,8,2,"FFE082","FFFFFF","alarm-clock ring burst","ring","Rise and shine!","support"},
+	{"wakizashi","CKBHrK","fT",4,8,3,"C9CED4","1F2F55","short curved blade, wrapped hilt","shing","Katana's little sibling. Just as sharp.","medieval,sharp"},
 	{"walk","KMBOBA","GQN",2,3,3,"60A5FA","F8FAFC","pair of trainers plodding along with nobody in them","tap","Running is overrated. So is arriving on time.","silly"},
 	{"walker","DKEKFA","keg",6,3,8,"78909C","455A64","boxy cockpit on two tall jointed legs","stomp","It walks. Slowly. Menacingly.","mechanical,vehicle,land,robot"},
 	{"walkie talkie","BMAOKI","h",1,6,3,"24262A","F1C40F","chunky radio with antenna","thud","Over. Send backup. Over.","tech"},
@@ -278,6 +281,7 @@ return {
 	{"wind tower","EFDMII","GkSIeN",4,1,6,"ECEFF1","80DEEA","tower topped with a giant spinning fan","whoosh","Blows enemies back where they came from.","structure,defense,tower"},
 	{"wind tunnel","FFDNOI","DI",4,8,3,"B2EBF2","FFFFFF","long streaming air channel","howl","Fast lane. Pick a direction.","air,speed"},
 	{"wind turbine","EFDMIK","GkSL",4,1,6,"F5F5F5","B0BEC5","tall white pole, three slim blades","whoosh","Clean energy. Dirty slaps.","structure,building"},
+	{"wind up mice","BMAAKI","Qe",2,6,2,"9AA0AA","F2A7B8","three clockwork toy mice that scurry out and pop","pop","Wind them up. Let them go.","cartoon,silly,toy"},
 	{"wind valley","MFENII","kSI",4,1,8,"B2EBF2","7CB342","narrow valley with howling gusts","rumble","Hold onto your hat. Hat gone.","place,terrain"},
 	{"wind wall","KFDCnI","GIa",3,5,5,"B2EBF2","FFFFFF","swirling vertical wall of streaking air","howl","Arrows go in. Arrows come out.","air,defence"},
 	{"wind wave","FFDFOB","kI",5,8,1,"B3E5FC","FFFFFF","wide crescent of rushing air","whoosh","The sky shrugged at you.","air"},
@@ -399,8 +403,4 @@ return {
 	{"wyrmling swarm","AACJLB","KAP",5,8,3,"F97316","B91C1C","cloud of tiny buzzing dragons","chirp","Like bees, but on fire.","reptile,swarm,fire"},
 	{"wyvern","AJDKDB","AfTMg",7,7,6,"3F6212","BEF264","two legs, bat wings, barbed stinger tail","screech","Two legs, two wings, one very pointy tail.","mythical,reptile,flying"},
 	{"x-ray","FHCBKB","ZTe",4,10,1,"0F172A","A5F3FC","blue-black beam that shows the skeleton of what it hits","bzzt","Sees right through you. Nice ribs.","science,spooky"},
-	{"x-ray vision","KHBOKI","T",2,6,2,"80D8FF","212121","glowing blue eyes, skeleton outlines","hum","I can see your bones.","silly"},
-	{"xeno drone","AJCJFA","ZfTM",5,8,4,"1C1917","57534E","black elongated insect alien, tail spike","hiss","Hides in vents. Hisses in vents.","alien,spooky"},
-	{"xiezhi","AHCJAA","TO",5,5,6,"0F766E","F8FAFC","one-horned goat-lion of justice","chime","Knows who's lying. Rams them.","mythical"},
-	{"xiphactinus","ABDJEC","DfB",6,7,4,"7A8A9A","D8E0E8","giant bulldog fish","splash","Swallowed fish as big as people.","fish,aquatic,extinct"},
 }

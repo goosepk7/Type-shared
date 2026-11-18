@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
 	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},
 	{"giant ice cream sundae","ICEJIF","JkcN",7,2,7,"F7E7CE","B0101E","mountain of scoops and sauce","thud","An avalanche of dessert.","edible,giant,silly"},
 	{"giant jelly","IMEJGG","GUaN",7,2,7,"E0102B","F35A6A","house-sized wobbling dome","thud","A wobbling fortress. Bounces everything off.","edible,giant,silly"},
@@ -11,6 +10,7 @@ return {
 	{"giant leech","ABCJCC","iNB",4,4,4,"1F2937","991B1B","slimy black worm with a round sucker","squelch","Sticks like a bad joke.","aquatic,spooky"},
 	{"giant lemon","IMEJIF","jEk",7,2,7,"FFF44F","7BA428","lemon the size of a boulder","thud","Life gave you a big lemon.","edible,giant,silly,sour"},
 	{"giant lollipop","IMDHJI","dkf",5,5,4,"E8434F","4FA3E8","huge rainbow swirl on a pole","bonk","Bigger than you. Sweeter too.","edible,silly,candy"},
+	{"giant magnet","BMDFKI","H",2,5,2,"D62F2F","C9CDD6","a huge red horseshoe magnet that drags foes in","hum","Opposites attract. Everyone attracts.","cartoon,silly"},
 	{"giant mallet","CMDHtK","kfXO",6,3,5,"C0392B","C49A6C","enormous cartoon wooden mallet","bonk","Flattens foes like pancakes.","silly,cartoon"},
 	{"giant marshmallow","IMDCII","GUN",4,2,6,"F7F4F0","E8C08A","huge soft white cylinder","thud","A pillow fort you can eat.","edible,giant,sweet"},
 	{"giant marshmallow man","IMFJNA","Ukf",8,2,8,"F7F4F0","4FA3E8","towering puffy white figure","thud","Puffy, sweet, and very stompy.","edible,giant,silly"},

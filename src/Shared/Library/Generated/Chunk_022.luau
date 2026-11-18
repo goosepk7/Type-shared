@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"saiga","AMCJAA","Dk",4,8,4,"D2BE9A","A89270","big floppy bulbous nose","bleat","Nose looks like a tiny trunk.","mammal,wild,silly"},
+	{"sail","BFCOiJ","DIg",3,7,3,"F8FAFC","1E3A8A","billowing white triangle on a mast, ropes snapping taut","whoosh","Wind in the sail. Sail in your face.","ocean,air"},
 	{"sailboat","DFCKHC","DkIgB",4,6,4,"F5F5F5","1E88E5","slim hull, single mast, triangle sail","splash","Powered by wind and good vibes.","vehicle,aquatic"},
 	{"sailfish","ABDJEC","DfTB",5,10,4,"2E4E8E","5A8AD0","giant blue sail fin, spear bill","splash","Fastest fish. Has a built-in sail.","fish,aquatic"},
 	{"sailor","LBCJNA","fHB",4,6,5,"F8FAFC","1E3A8A","white cap, striped shirt, anchor tattoo","splash","Knows 200 knots. Ties you in one.","aquatic"},
@@ -155,6 +157,7 @@ return {
 	{"scientist","LDCJNA","EMe",4,4,4,"F8FAFC","22D3EE","lab coat, goggles, test tubes","bubble","Science! Some explosions involved.","science"},
 	{"scimitar","CKCHrK","fTV",5,7,4,"C9CED4","D4A72C","sharply curved blade, flared tip","shing","Curvy, swishy, extremely sharp.","medieval,sharp"},
 	{"scissor lift","DMCKHL","Glg",3,2,7,"E65100","424242","platform on criss-cross metal arms","engine","Up! Down! Up again!","mechanical,vehicle,land"},
+	{"scissor punch","CMCHJI","kf",3,8,2,"D62F2F","B8BCC6","boxing glove on a scissor spring that shoots out","boing","Personal space, enforced.","cartoon,silly,melee"},
 	{"scissors","JKAHJK","fTV",2,8,3,"C9CED4","C0392B","two crossed blades, loop handles","clank","Snip. Beats paper.","tool"},
 	{"scooter","DMAKHL","Dkg",2,6,2,"4FC3F7","F5F5F5","slim deck, tall handlebar, two small wheels","engine","Kick, push, coast, bonk.","silly,sport"},
 	{"scope","BHBOKE","QTe",3,6,3,"1F2937","60A5FA","black tube lens with a blue glint, zooming in","click","Sees you from three maps away.","gaming,ranged"},
@@ -400,7 +403,4 @@ return {
 	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
 	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
 	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
-	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
-	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
-	{"shepherd's pie","IGBOKI","F",2,5,3,"E8C070","7A3A2A","mashed potato topping, golden ridges","crunch","A potato blanket over a meaty bed.","edible,healthy"},
 }
