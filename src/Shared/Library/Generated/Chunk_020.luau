@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"polo mallet","BMCHtK","kf",2,6,3,"C49A6C","F2F2EE","long skinny mallet","bonk","Very fancy bonking.","sport"},
+	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
+	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
+	{"pom pom crab","ABBJRA","GfTM",2,4,5,"F2D0B0","F2A0C0","crab holding anemone pompoms","clack","Cheerleader crab with stingy pompoms.","crustacean,aquatic,armored,cute"},
 	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
 	{"pomegranate tree","NGCCMI","GWFkS",3,1,6,"6D4C41","C62828","small tree with red jewel fruit","rustle","Fruit full of tiny red gems.","plant,tree"},
 	{"pomelo","IMCAKF","jke",4,6,2,"DCE57A","F7D8C9","huge pale green citrus, thick rind","squirt","The grapefruit's big older cousin.","edible,fruit,sour"},
@@ -95,6 +99,7 @@ return {
 	{"powdered sugar","IFBDOJ","jNP",2,5,1,"F7F7F7","F2F2F2","snowy white powder","puff","Sugar that's been to the gym. Ground fine.","edible"},
 	{"power","KLCOKJ","DW",4,6,4,"FF6D00","FFFFFF","crackling orange-white energy aura","hum","All the power. Terms and conditions apply.","magic"},
 	{"power bank","BDAO1I","F",1,5,3,"F2F2EE","8E9196","small battery brick","beep","Recharge. Keep going.","tech"},
+	{"power cape","KFCONJ","Ak",4,7,3,"D83A3A","F0C84A","a billowing cape floats you along, then snaps","whoosh","No capes? Hard disagree.","hero,movie,cape"},
 	{"power cell","ODBG1I","FL",3,4,4,"7DF9FF","8E9196","glowing capsule battery","hum","Fuel for every gadget.","scifi,electric"},
 	{"power fist","CKCHJK","kfO",7,4,7,"2C3539","E67E22","giant piston-powered fist","bonk","Pow. Pow. Kapow.","scifi,mechanical"},
 	{"power nap","KHBOKJ","F",1,2,3,"9FA8DA","FFFFFF","caster snoozing on a cloud pillow","snore","Five minutes. Fully recharged.","support,silly"},
@@ -398,9 +403,4 @@ return {
 	{"rattlesnake","AMCJCD","fMNO",5,6,3,"B8986A","5A4A30","diamond pattern, rattle tail","rattle","Shakes a maraca before biting.","reptile,venomous,desert"},
 	{"raven","AIBJDB","jdAb",3,7,1,"1A1A20","3A3A50","big black shaggy-throat bird","tweet","Talks back. Literally talks.","bird,cute,spooky,smart"},
 	{"ravioli","IMAELB","ceP",2,7,1,"F2D08A","C8302B","square stuffed pasta pillows","pitter","Tiny pasta pillows.","edible"},
-	{"ray","FHCBKB","KTe",4,10,1,"FFE66D","FFFFFF","straight golden beam of light with sparkles","zing","A little ray of sunshine. In your eyes.","light"},
-	{"ray gun","CDBBwI","eLO",5,8,3,"DDE3E8","C0392B","retro finned pistol with ring nozzle","zap","Zzzorp! Vintage future.","scifi,retro,ranged"},
-	{"ray of frost","FCCBKI","JTeN",5,8,2,"4FC3F7","E1F5FE","thin pale-blue beam crusting targets in ice","crackle","Chill out. That is an order.","frozen"},
-	{"ray of sickness","FJCBKI","jMe",4,7,1,"C0CA33","7CB342","sickly yellow-green ray","bleh","Seasick, on land.","toxic,silly"},
-	{"razor","BKAHJI","fT",2,8,1,"C9CED4","2F6FD1","small safety razor","splash","Smooth operator.","bathroom,household"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mochi donut","IMBLKI","dSc",2,3,3,"F2A6C8","F7F2EC","ring of connected little balls","chomp","A donut made of bubbles.","edible,sweet,dessert"},
+	{"mochi ice cream","ICBAKJ","JeN",3,5,2,"F7D9E3","F7F2EC","soft rice dough ball, ice cream core","squish","Chewy outside, cold inside.","edible,frozen,sweet"},
+	{"mock orange","NGCNMI","jdFS",1,1,3,"FFFFFF","7CB342","shrub with orange-scented white blooms","rustle","Smells like oranges. Fooled you.","plant,flower"},
+	{"mockingbird","AMAJDB","jdA",1,7,1,"8A8C90","F2F2F0","grey bird, white wing patches","tweet","Copies car alarms. On purpose.","bird,cute"},
 	{"model","LMCJNA","dc",3,5,3,"F472B6","F8FAFC","runway pose, sunglasses","click","Strikes a pose. Enemies stunned.","silly"},
 	{"model rocket","BMBAkB","Ake",2,8,1,"F2F2EE","C0392B","little finned rocket on a pad","squeak","3... 2... 1... Whoosh!","toy"},
 	{"moderator","LHCJNA","GOY",5,5,6,"DC2626","F8FAFC","badge, giant ban hammer","ding","Ban hammer has been swung.","gaming,meme"},
@@ -399,8 +403,4 @@ return {
 	{"north star","MHCAKJ","QTe",5,6,5,"FFFFFF","90CAF9","bright steady star with long rays","rumble","Always points the way. To victory.","space"},
 	{"northern goshawk","AMCJDB","DAfT",5,9,3,"6A7480","F2F2F0","grey hawk with white eyebrow","screech","Forest ninja. Weaves through trees.","bird,predator"},
 	{"northern pike","ABCJEC","DfTB",4,7,4,"6A7A4A","D8D8A0","long toothy predator, spotted green","splash","A crocodile pretending to be a fish.","fish,aquatic"},
-	{"norwegian forest cat","ACCJAA","dfT",3,7,2,"B8A08A","F2E8D8","big fluffy forest cat","meow","Viking cat. Fluffy and fearless.","mammal,pet,cute"},
-	{"nose","BMBMGG","HeN",3,3,3,"E8B48A","D98880","big round nose, two nostrils, sniffing lines","whiff","Runs without legs. Smells without manners.","body,silly"},
-	{"nostalgia","KHBNOI","jFO",2,3,3,"FFCC80","F8BBD0","sepia-toned glow with floating old toys","music","Remember the good old days? Now you're stuck there.","silly"},
-	{"note","KFAAKB","UeO",2,8,1,"111827","FACC15","black quaver note bouncing along five wavy lines","ding","Do re mi fa so la ti DOH.","music"},
 }

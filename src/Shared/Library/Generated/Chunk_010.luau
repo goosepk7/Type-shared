@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flying squirrel","AMAJAB","CdAb",1,6,1,"9A8A7A","F2EEE6","skin flaps between legs, gliding","squeak","Built-in wingsuit.","mammal,cute"},
+	{"flypaper","BMBLII","cNO",1,1,1,"F1C40F","D2B48C","hanging sticky yellow strip","snap","Bzzz... stuck.","trap,sticky"},
+	{"foal","AMCKAA","Dkg",2,8,5,"A06A3E","F0E0C8","wobbly long legs, short fluffy tail","neigh","All legs and zero coordination.","mammal,cute"},
 	{"foam","FBBDOJ","dSN",2,3,2,"E9F7FB","BFE6F2","piled frothy white suds","fizz","Fluffy. Fizzy. Slippery.","aquatic,silly"},
 	{"foam dart blaster","CMBAwI","Ude",1,8,2,"E67E22","2F6FD1","chunky plastic dart launcher","thwip","Foam darts. Real drama.","toy,silly"},
 	{"foam finger","BMBONF","dF",1,5,1,"2F6FD1","F2F2EE","giant foam number-one hand","bonk","We're number one!","sport,silly"},
@@ -400,7 +403,4 @@ return {
 	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
 	{"giant flytrap","NGELMI","kScfHO",7,3,7,"558B2F","B71C1C","huge snapping jaws on a thick stalk","chomp","Feed me. FEED ME.","plant,carnivorous,silly"},
 	{"giant forest hog","AMCJAA","Ddkf",5,4,4,"2A2420","6A5A4A","huge black hairy pig","bleat","Biggest wild pig. Grumpy.","mammal,farm,wild"},
-	{"giant ground sloth","AMEJAA","DkTO",7,1,8,"8A6A4A","C8A880","elephant-sized sloth standing up","roar","A sloth as big as an elephant. Slow.","mammal,extinct,ancient,heavy"},
-	{"giant growth","KEEONI","Wk",5,4,3,"E8A23A","5A3A2A","grow half again as big, with a longer reach","rumble","Mind your head.","hero,movie,giant"},
-	{"giant gumball","IMEGIF","UkI",7,2,7,"E0102B","4FA3E8","boulder-sized glossy gumball","thud","Bounces over everything.","edible,giant,silly"},
 }

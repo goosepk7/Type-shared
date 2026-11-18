@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wulver","AGCJNA","QFf",4,6,5,"57534E","D6D3D1","wolf-headed fisherman in a wool sweater","howl","A wolf man who leaves you fish. Wholesome.","mythical,canine,cute"},
+	{"wyrmling swarm","AACJLB","KAP",5,8,3,"F97316","B91C1C","cloud of tiny buzzing dragons","chirp","Like bees, but on fire.","reptile,swarm,fire"},
+	{"wyvern","AJDKDB","AfTMg",7,7,6,"3F6212","BEF264","two legs, bat wings, barbed stinger tail","screech","Two legs, two wings, one very pointy tail.","mythical,reptile,flying"},
+	{"x-ray","FHCBKB","ZTe",4,10,1,"0F172A","A5F3FC","blue-black beam that shows the skeleton of what it hits","bzzt","Sees right through you. Nice ribs.","science,spooky"},
+	{"x-ray vision","KHBOKI","T",2,6,2,"80D8FF","212121","glowing blue eyes, skeleton outlines","hum","I can see your bones.","silly"},
 	{"xeno drone","AJCJFA","ZfTM",5,8,4,"1C1917","57534E","black elongated insect alien, tail spike","hiss","Hides in vents. Hisses in vents.","alien,spooky"},
 	{"xiezhi","AHCJAA","TO",5,5,6,"0F766E","F8FAFC","one-horned goat-lion of justice","chime","Knows who's lying. Rams them.","mythical"},
 	{"xiphactinus","ABDJEC","DfB",6,7,4,"7A8A9A","D8E0E8","giant bulldog fish","splash","Swallowed fish as big as people.","fish,aquatic,extinct"},

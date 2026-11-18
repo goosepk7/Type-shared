@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stepbrother","LMBJNA","Qfb",3,6,3,"8B5CF6","FBBF24","kid dividing a bedroom with a strip of tape","giggle","This side is mine. That side is also mine.","family,silly"},
+	{"stepmom","LMCJNA","GFO",4,4,5,"0D9488","F2D0B4","grown-up with a packed lunch and a minivan key","ding","Bonus parent. Extra snacks unlocked.","family"},
+	{"steppe","MFFNII","DS",3,1,7,"C0CA33","E6C27A","endless flat grass under huge sky","rumble","Flat as far as you can see. Great for charging.","place,terrain"},
+	{"stethacanthus","ABCJEC","DfTB",5,8,6,"6A6A72","C8C0B8","shark with anvil fin on back","chomp","Has an ironing board on its back.","fish,aquatic,ocean,predator,extinct,ancient,silly"},
+	{"stethoscope","BMAOII","F",1,5,2,"24262A","C9CED4","tube with listening disc","thud","Listens. Diagnoses. Heals.","medical"},
 	{"stew","IBBOGI","WF",3,4,3,"8A4A2A","ED9121","thick brown chunky bowl","slurp","Slow-cooked strength.","edible,warm,healthy"},
 	{"stick","KMBLII","NO",3,4,3,"FFE082","FFFFFF","gooey sticky patch","squelch","You are now stuck. Sorry.","silly"},
 	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
@@ -398,9 +403,4 @@ return {
 	{"tar monster","AJCJGF","HN",4,2,5,"0A0A0A","52525B","glossy black sticky blob","squelch","Sticky. Everything sticks. Forever.","slime"},
 	{"tar pit","MICLII","KSHN",4,1,6,"212121","424242","bubbling black sticky pool","bubble","Very sticky. Very permanent.","place,terrain"},
 	{"tar pit trap","BECLII","SNO",4,1,4,"24262A","7A4E2D","bubbling black puddle","snap","Sticky, gloopy, inescapable.","trap,defense"},
-	{"tar sprayer","OECMxI","eNO",4,4,5,"24262A","7A4E2D","barrel of hot sticky tar","clank","Glop. Not going anywhere.","defense,mechanical"},
-	{"tarantula","AJBJQA","fN",3,6,2,"3A2A20","E8701E","big hairy spider, thick legs","skitter","Big, hairy, and secretly gentle.","arachnid,spooky,venomous"},
-	{"tarantula hawk","AJBJLB","ATMPO",3,7,1,"1E2A4A","E8701E","blue-black wasp, orange wings","buzz","Hunts tarantulas. Second worst sting.","insect,swarm,venomous"},
-	{"tarasque","AAEJAA","GKDk",8,4,9,"365314","CA8A04","turtle shell, lion head, six bear legs","roar","A turtle that bench-pressed a castle.","mythical,boss"},
-	{"tarbosaurus","AMEJBA","DkfT",8,6,7,"5A4A2E","B89A6A","asian tyrannosaur","roar","T rex's Asian twin.","dinosaur,extinct,reptile,predator"},
 }

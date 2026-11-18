@@ -344,6 +344,7 @@ return {
 	{"crate barricade","EECCII","GdS",2,1,4,"A1887F","6D4C41","stacked wooden crates","thud","Mystery boxes. Mystery defence.","structure,defense,flammable"},
 	{"crate of tnt","BACL2I","EkP",8,1,2,"C0392B","8B5A2B","wooden crate stencilled TNT","thud","Do. Not. Drop.","container,explosive"},
 	{"crater","MEELII","SHN",4,1,8,"5D5D5D","8D6E63","round dented bowl with a rocky rim","rumble","Something big landed here once.","place,terrain"},
+	{"crater landing","KEDNNB","Dk",5,7,3,"D9A25A","6A4A30","leap up and slam down in a three-point landing","slam","Nailed the landing. And the floor.","hero,movie,impact"},
 	{"crawl","KMAOKD","ZN",1,2,2,"A1887F","FFFFFF","low shuffling outline","shuffle","Army crawl. Very sneaky.","stealth,silly"},
 	{"crayfish","ABAJRA","GfT",2,4,5,"A8402A","E89070","tiny lobster with pincers","clack","Tiny freshwater lobster. Feisty.","crustacean,aquatic,armored"},
 	{"crayon","BMAAJK","je",1,7,1,"C0392B","F28C28","waxy coloured stick","tap","Art attack!","school,art,toy"},
@@ -402,5 +403,4 @@ return {
 	{"crossword","BLBLnI","jSN",3,1,3,"F8FAFC","111827","black-and-white word grid with a chewed pencil","scratch","Seven down: \"defeat\", six letters. Starts with Y.","game,school"},
 	{"crouton","IMAELB","eVP",2,7,1,"D9A04A","F2D08A","small golden cube","pitter","Tiny bread bricks. Crunch on impact.","edible"},
 	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
-	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
 }

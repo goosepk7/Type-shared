@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"soda","IBBFKI","EkIP",3,7,1,"C8202B","F7F7F2","fizzy can, bubbles","fizz","Shake it. Point it. Pop it.","edible,drink,fizzy"},
+	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
+	{"soda bread","IMCCII","Gk",4,2,6,"D9A04A","F2E2C2","round loaf with cross cut","thud","A quick bread with a cross on top.","edible,giant"},
+	{"soda can","IBBFKI","EkI",3,7,1,"C8202B","C8C8C8","aluminum can","fizz","Shake well. Open near enemy.","edible,drink,fizzy"},
+	{"soda fountain","OBCM1I","deN",2,2,5,"C0392B","C9CED4","nozzled fizzy drink dispenser","clang","Fizzy blast!","kitchen,household"},
 	{"soda geyser","IBDFKI","EklP",6,7,1,"3A1A0C","F7F7F2","erupting fountain of fizz","fizz","Shake well before using.","edible,drink,fizzy"},
 	{"soft coral","ABCCMI","GW",3,1,6,"E8A0C0","F2D0E0","swaying fleshy coral","crackle","Wiggly coral. Squishy.","aquatic,ocean,reef"},
 	{"soft serve","ICBAKJ","JeN",3,5,2,"F7F2E0","D9A04A","tall curly swirl on cone","squish","Curly, cold, and quick.","edible,frozen,sweet"},
@@ -319,6 +324,7 @@ return {
 	{"star blade","FHCHrB","KfT",6,8,2,"FFF59D","5C6BC0","sword shimmering with tiny stars","chime","Forged in a star. Probably.","space,sharp"},
 	{"star bolt","FHBAKB","KTe",5,9,1,"FFF9C4","FFD54F","spinning golden star streak","zing","Twinkle, twinkle, bonk.","space"},
 	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
+	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
 	{"star cactus","NEALMI","GST",2,1,5,"7CB342","FFFFFF","flat star-shaped spineless cactus","thud","Spineless. Still judgmental.","plant,desert,cute"},
 	{"star cluster","MHEELJ","TeVP",7,4,7,"E1F5FE","FFF59D","swarm of tiny glittering stars","rumble","A whole handful of stars, thrown at once.","space"},
 	{"star dragonfly","AHAJFB","Ae",2,10,1,"FDE047","67E8F9","dragonfly trailing stardust","buzz","Leaves sparkly streaks.","cosmic,insect"},
@@ -333,7 +339,6 @@ return {
 	{"star spirit","AHAJKJ","AFc",2,7,1,"FEF9C3","93C5FD","five-pointed glowing star with tiny face","chime","Wished upon itself. Worked.","cosmic,cute"},
 	{"star tortoise","AMBJUA","GN",2,2,8,"2A2A1E","F2D82A","shell with yellow star patterns","hiss","Stars on its shell.","reptile,armored"},
 	{"star-nosed mole","AMAJAA","Cjf",1,5,3,"2A2626","F28AA0","pink tentacled star nose","squeak","Has a pink star for a nose. Nightmare cute.","mammal,wild"},
-	{"starburst","FHDGKI","KEO",7,8,1,"FFF59D","B388FF","star-shaped burst of white light","boom","A star sneezes.","space,explosive"},
 	{"stardust","FLBDOJ","jFS",3,4,1,"D8C3FF","FFF1B8","glittering cosmic dust cloud","tinkle","Everything you are, sprinkled.","space,cute"},
 	{"stare down","KIBAKB","O",3,4,1,"4A148C","FFFFFF","intense glowing eyes","hmm","Don't blink. Don't blink.","silly"},
 	{"starfall","HHEEOB","KePO",8,7,3,"FFF3B0","B39DDB","rain of glowing white-gold stars","chime","The sky is falling. Beautifully.","space,holy"},
@@ -398,9 +403,4 @@ return {
 	{"stencil","BMAIyI","G",1,6,1,"F2F2EE","24262A","cut-out pattern sheet","splat","Neat lines, sharp edges.","art"},
 	{"step ladder","BKBCII","G",1,3,4,"C9CED4","8E9196","folding A-frame ladder","clank","For reaching the cookies.","tool"},
 	{"step pyramid","EMFMII","GSeh",5,1,10,"9E9E9E","7CB342","stepped pyramid, steep stairs, temple top","thud","Climb it if you dare. Traps on every step.","structure,defense,tower,ancient"},
-	{"stepbrother","LMBJNA","Qfb",3,6,3,"8B5CF6","FBBF24","kid dividing a bedroom with a strip of tape","giggle","This side is mine. That side is also mine.","family,silly"},
-	{"stepmom","LMCJNA","GFO",4,4,5,"0D9488","F2D0B4","grown-up with a packed lunch and a minivan key","ding","Bonus parent. Extra snacks unlocked.","family"},
-	{"steppe","MFFNII","DS",3,1,7,"C0CA33","E6C27A","endless flat grass under huge sky","rumble","Flat as far as you can see. Great for charging.","place,terrain"},
-	{"stethacanthus","ABCJEC","DfTB",5,8,6,"6A6A72","C8C0B8","shark with anvil fin on back","chomp","Has an ironing board on its back.","fish,aquatic,ocean,predator,extinct,ancient,silly"},
-	{"stethoscope","BMAOII","F",1,5,2,"24262A","C9CED4","tube with listening disc","thud","Listens. Diagnoses. Heals.","medical"},
 }
