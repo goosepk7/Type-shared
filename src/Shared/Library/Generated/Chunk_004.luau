@@ -35,6 +35,7 @@ return {
 	{"brew","KLBGKI","jFM",3,4,1,"76FF03","7C4DFF","bubbling cauldron burst","bubble","Mix, stir, kaboom.","magic"},
 	{"brick","BEBAKK","ke",3,5,7,"9C4A3A","D2B48C","rectangular red clay brick","clink","Throw it. Build with it. Both.","hardware"},
 	{"brick breaker","BHBA3K","Ue",4,9,2,"5EF2FF","FF4FA3","glowing ball served off a pixel paddle","boop","Don't let it touch the floor.","game,arcade,bounce"},
+	{"brick golem","AECJXA","kfNh",6,3,7,"D2553A","FFC93C","small golem of stacked coloured bricks with glowing seams","thud","Built to stomp.","game,platformer,summon"},
 	{"brick swap","ELCNII","DE",4,6,3,"8A5CF6","FFC93C","a giant rune switch; enemy walls burst into coins","thud","Walls are just coins that haven't met the switch.","game,platformer,utility"},
 	{"brick wall","EEDCII","GS",3,1,8,"B5523B","D7CCC8","red bricks with pale mortar lines","thud","Three little pigs approved.","structure,defense"},
 	{"bricklayer","LECJNA","Gh",4,4,6,"DC2626","78716C","trowel, brick stack, dusty overalls","clank","Builds a wall in five seconds flat.","tools"},
