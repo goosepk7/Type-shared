@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sniper","LMCJNI","ZTe",6,3,3,"4D7C0F","1F2937","ghillie suit made of leaves","bang","You'll never see the bush coming.","military,stealth"},
+	{"sniper rifle","CKCBwI","Te",7,3,3,"5E6B3A","24262A","long rifle with big scope","bang","Somewhere very far away, someone is aiming.","modern,ranged"},
+	{"sniper tower","EMDMII","GZSTe",6,1,5,"556B2F","8D6E63","very tall thin tower, hidden perch","thud","One shot. One very long distance.","structure,defense,tower"},
+	{"snore","KMBFOB","jO",2,4,1,"B39DDB","FFFFFF","big Z letters rumbling outward","snore","ZZZZzzzz. Shockingly loud.","silly,loud"},
 	{"snorkel","BBAOKF","B",1,5,2,"F1C40F","BFE6F2","tube with goggle mask","bonk","Breathe underwater-ish.","sport,ocean"},
 	{"snot","FJBLGI","SHNP",2,3,2,"A8D84E","7FB030","stretchy green goo blob with drippy strings","squelch","Pick a card. Wait, that is not a card.","silly,sticky,gross"},
 	{"snout","BMBMGG","cHe",3,3,4,"F4A6B7","E57390","pink pig snout, two round nostrils, snuffling","grunt","Sniffs out snacks at 500 paces.","body,farm,silly"},
@@ -399,8 +403,4 @@ return {
 	{"star flower","NHBLMI","FSe",3,1,2,"FFF59D","3949AB","five-point glowing star petals","chime","Fell from the sky. Took root.","plant,magic,mythical"},
 	{"star fort","EEFCII","GSe",6,1,10,"BCAAA4","7CB342","low star-shaped walls with a ditch","thud","Every angle covered. Literally.","structure,defense,ancient"},
 	{"star jelly swarm","ADCJLJ","ALP",4,4,2,"67E8F9","F0ABFC","cloud of tiny glowing jellyfish","zap","Zaps everything it drifts through.","alien,swarm"},
-	{"star knight alien","AHCJNA","Gfe",6,5,6,"FDE68A","312E81","armor made of starlight","clang","Guards the galaxy. Night shift.","cosmic,warrior"},
-	{"star sheep","ALBJAJ","dO",2,4,2,"F8FAFC","C4B5FD","fluffy sheep with star-speckled wool","baa","Count it. Fall asleep. Lose.","cute"},
-	{"star shield","FHCIKI","Ga",3,4,6,"FFF59D","5C6BC0","dome of linked glowing stars","chime","Constellation armour.","space,defence"},
-	{"star shower","FHEEOB","KPO",7,6,2,"FFF9C4","B39DDB","many tiny shooting stars raining down","chime","Make all the wishes.","space,holy"},
 }

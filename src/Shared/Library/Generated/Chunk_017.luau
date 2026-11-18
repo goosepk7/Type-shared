@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"minus","KIBAJB","iXN",3,7,1,"DC2626","FFFFFF","flat red minus bar thrown like a stick","buzz","Minus one. Minus one. Minus you.","school"},
+	{"minute","KLBOKK","SNO",2,4,2,"F8FAFC","DC2626","clock face with a thin long hand sweeping","tick","One minute. In mum-on-the-phone time.","time"},
+	{"mirabelle","IGAAKF","Fke",3,6,2,"F2D23A","E8A040","tiny golden plum","splat","A golden marble of fruit.","edible,fruit,sweet"},
 	{"miracle cure","KHDNOI","FP",3,5,4,"FFFFFF","FFD54F","golden beam and floating feathers over allies","choir","Against all odds, everyone's fine.","holy,support"},
 	{"miracle fruit","IGAELB","jeV",2,7,1,"D7263D","F7F2EC","small red berry","pitter","Makes sour taste sweet. Magic!","edible,fruit,sweet,magic"},
 	{"miragaia","AMDJAA","GkfT",6,3,9,"7A6A4A","E8803A","long-necked stegosaur","grunt","A stego with a giraffe neck.","dinosaur,extinct,reptile,armored"},
@@ -400,7 +403,4 @@ return {
 	{"night monkey","AMBJBA","deb",2,7,2,"8A7A6A","F2E8D8","huge round eyes","chatter","Only nocturnal monkey. Big eyes.","mammal,primate,nocturnal"},
 	{"night sky","MLFEKJ","SeV",5,1,6,"1A237E","FFF59D","deep blue sky filled with stars","twinkle","A thousand tiny lights watching.","space,star"},
 	{"night vision goggles","CKBONI","Z",1,6,3,"6B7B3A","8BC34A","goggles with glowing green lenses","bang","See in the dark. Look very cool.","spy,tech"},
-	{"night watchman","LHCJNA","GO",3,4,5,"1E3A8A","FACC15","lantern, bell, heavy coat","ding","Midnight and all's well. Until now.","guardian,historical"},
-	{"nightfall","FIDFOB","ZNP",5,5,3,"1A1840","6157A8","dark wave rolling across the sky","hush","The sun clocks out early.","spooky"},
-	{"nightingale","AMAJDB","dAF",1,7,1,"8A6A4A","D8C4B0","plain brown bird, singing at night","song","Plain look, legendary voice.","bird,cute"},
 }

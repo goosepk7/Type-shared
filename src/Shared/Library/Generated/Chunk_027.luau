@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"torrent serpent","FBEACD","QkeNB",7,4,4,"60BAEE","E2F4FF","a serpent of water rears up and dives on a target","splash","It rises. It looks at you. It falls on you.","anime,ninja,water"},
+	{"torta","IGBOKI","F",2,5,3,"D9A04A","7DBE3A","stuffed crusty sandwich","crunch","Mexico's mighty sandwich.","edible,healthy"},
+	{"tortellini","IMAELB","eP",2,7,1,"F2D08A","E8C070","ring-shaped stuffed pasta","pitter","Pasta shaped like belly buttons.","edible"},
+	{"tortilla","IMBAKK","Uke",3,7,2,"F2E2B8","C8A070","thin round flatbread, char spots","whoosh","A flat round frisbee of corn.","edible"},
+	{"tortilla chips","IMBAKK","TeV",3,7,2,"E8B84A","C8803A","golden triangle chip","whoosh","Triangle shuriken. Dip optional.","edible"},
 	{"tortilla espanola","IMBAKK","Uke",3,7,2,"F2D08A","C8A070","thick round potato omelet","whoosh","A potato cake pretending to be an omelet.","edible"},
 	{"tortoise","AMBJUA","GN",2,1,9,"8A6A3A","C8A86A","high domed shell, elephant legs","hiss","Slow and steady. Wins. Eventually.","reptile,armored"},
 	{"tortoise beetle","AMAJFA","Gfa",1,3,4,"F2C82A","E8D888","gold dome beetle","click","Changes from gold to red. Magic.","insect,armored"},
@@ -398,9 +403,4 @@ return {
 	{"video game controller","BMAOJI","j",1,6,3,"24262A","8E9196","handheld game pad with buttons","clack","Press A to win.","game,tech"},
 	{"vigilante","LICJNA","ZfH",6,8,5,"111827","52525B","dark cowl, grapple hook, utility belt","whoosh","Patrols rooftops. Never uses doors.","hero"},
 	{"vigor","KGCOKJ","GF",2,5,6,"43A047","FFB74D","healthy green-orange glow","grunt","Full of beans. And health.","support"},
-	{"vigor bean","IGAO7I","F",3,6,1,"7CC24A","E8FFB0","little green bean flicked up, caught and crunched","crunch","Tastes like a full night's sleep.","anime,heal,food"},
-	{"viking","LECJNA","Dkf",6,6,6,"78350F","94A3B8","horned helm, beard braids, round shield, axe","roar","Arrives by boat. Leaves with your stuff.","warrior,norse"},
-	{"viking axe","CKCHsK","kfH",6,5,5,"8A929B","5A3A1E","long bearded blade, rune-carved haft","chop","Hooks shields. Hooks hearts.","medieval,sharp"},
-	{"viking grandma","LMCJNA","Fkf",4,5,5,"C084FC","94A3B8","grandma in horned helmet with ladle","horn","Cooks. Raids. Naps.","silly,norse,family"},
-	{"viking helmet","BKBONI","GD",2,5,6,"5B6168","E3DAC9","round helm with two horns","clank","Historically inaccurate. Very fun.","armor,defense"},
 }

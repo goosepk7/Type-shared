@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star knight alien","AHCJNA","Gfe",6,5,6,"FDE68A","312E81","armor made of starlight","clang","Guards the galaxy. Night shift.","cosmic,warrior"},
+	{"star sheep","ALBJAJ","dO",2,4,2,"F8FAFC","C4B5FD","fluffy sheep with star-speckled wool","baa","Count it. Fall asleep. Lose.","cute"},
+	{"star shield","FHCIKI","Ga",3,4,6,"FFF59D","5C6BC0","dome of linked glowing stars","chime","Constellation armour.","space,defence"},
+	{"star shower","FHEEOB","KPO",7,6,2,"FFF9C4","B39DDB","many tiny shooting stars raining down","chime","Make all the wishes.","space,holy"},
 	{"star spirit","AHAJKJ","AFc",2,7,1,"FEF9C3","93C5FD","five-pointed glowing star with tiny face","chime","Wished upon itself. Worked.","cosmic,cute"},
 	{"star tortoise","AMBJUA","GN",2,2,8,"2A2A1E","F2D82A","shell with yellow star patterns","hiss","Stars on its shell.","reptile,armored"},
 	{"star-nosed mole","AMAJAA","Cjf",1,5,3,"2A2626","F28AA0","pink tentacled star nose","squeak","Has a pink star for a nose. Nightmare cute.","mammal,wild"},
@@ -399,9 +403,4 @@ return {
 	{"syringe","BMAAII","FTe",2,8,1,"BFE6F2","C9CED4","clear syringe with plunger","thud","Just a little pinch.","medical"},
 	{"syrup","IMBLGI","ScNP",2,3,3,"B5651D","D9A04A","glossy amber bottle and pour","gloop","Sticky trap for pancake lovers.","edible,sticky,sauce,sweet"},
 	{"syrup flood","IMDFGI","SINP",5,3,3,"B5651D","D9A04A","wave of amber syrup","gloop","Slow-motion disaster, sweetened.","edible,sticky"},
-	{"system","ODDNlI","jSLY",6,1,6,"0F172A","22C55E","wall of green wireframe panels with a blinking cursor","bzzt","System error. Please restart the universe.","tech,scifi"},
-	{"t-bone steak","IMBAKK","kce",3,5,3,"8A2E2E","F7F2E8","steak with T-shaped bone","thud","A steak with built-in handle.","edible,savory"},
-	{"t-shirt cannon","CMCAxI","dke",2,5,3,"C0392B","F2F2EE","air cannon full of rolled shirts","thoomp","Free merch at terminal velocity.","sport,silly"},
-	{"tabasco","IABAKK","KP",5,7,2,"C8202B","F2E8D0","tiny bottle of fiery red sauce","sizzle","Tiny bottle, huge fire.","edible,spicy,flammable,sauce"},
-	{"tabaxi","AMCJNA","DZf",4,9,3,"F59E0B","1F2937","lithe cat-person with a hooded cape","meow","Curious about everything. Especially your stuff.","cat"},
 }

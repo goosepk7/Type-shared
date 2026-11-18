@@ -403,6 +403,4 @@ return {
 	{"dog bowl","BMALKI","c",1,1,2,"C9CED4","C0392B","steel bowl full of kibble","squeak","Dinner bell for monsters.","pet"},
 	{"dog groomer","LMCJNA","dF",3,5,4,"F472B6","F8FAFC","apron, blow dryer, brush","snip","Fluffs your dog. Fluffs your enemies.","silly,canine"},
 	{"dog knight","AKBJAA","GQf",3,7,4,"A16207","1D4ED8","loyal pup in shining armor","bark","Good boy. Great knight.","warrior,canine,cute"},
-	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
-	{"dog walker","LMCJNA","Qh",3,6,4,"15803D","F59E0B","ten leashes, ten dogs","bark","Is walked by the dogs.","silly,canine"},
 }
