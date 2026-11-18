@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tabby cat","AMBJAA","dfT",2,7,2,"B07A3E","5A3A1E","striped orange-brown coat, M on forehead","meow","Has an M on its face. Stands for Mine.","mammal,pet,cute"},
+	{"table","BMDC0I","G",1,1,7,"8B5A2B","5A3A1E","long wooden table on four legs","thud","Flip it for instant cover.","furniture,household"},
 	{"tablecloth","BMCL2I","jO",1,6,1,"C0392B","F2F2EE","checkered tablecloth","clang","Yank! Everything flies.","kitchen,household"},
 	{"tablet","BDBI1I","Gd",1,5,2,"24262A","BFE6F2","flat touchscreen slate","beep","Swipe left on enemies.","tech"},
 	{"tackle","KMCAKB","kfO",5,8,3,"8D6E63","FFFFFF","shoulder impact ring","thud","Touchdown! Ow.","sport"},
@@ -314,6 +316,7 @@ return {
 	{"tin foil hat","BMAONK","Gj",1,6,1,"C9CED4","DDE3E8","crinkly foil cone hat","clang","Blocks mind rays. Allegedly.","silly"},
 	{"tin snips","JKAHJK","fV",2,6,4,"F1C40F","C9CED4","heavy cutting shears","clank","Cuts sheet metal. And you.","tool"},
 	{"tinsel","BMBLKI","dN",1,3,1,"C9CED4","D4A72C","shiny strands of tinsel","jingle","Sparkles everywhere. Forever.","holiday"},
+	{"tiny cloud rain","GBBDOI","QN",2,4,2,"F2F5FA","6FB8F0","a tiny white raincloud that rains on one target","rain","Somewhere, it is always raining. On you.","cartoon,silly,weather"},
 	{"tip","KHAOKJ","QWF",2,6,1,"FDE047","3B82F6","small lightbulb with an exclamation mark","ding","Pro tip: do not stand in the fire.","gaming"},
 	{"tiramisu","IMBLKI","Ddc",2,3,3,"8A5A3A","F2E8D0","layered square, cocoa dusted","chomp","A pick-me-up in dessert form.","edible,sweet"},
 	{"tire","BMCAKF","Uke",3,6,6,"24262A","4A4D52","rubber tyre rolling on its own","clang","Rolls in. Bounces off.","urban"},
@@ -400,7 +403,4 @@ return {
 	{"tortellini","IMAELB","eP",2,7,1,"F2D08A","E8C070","ring-shaped stuffed pasta","pitter","Pasta shaped like belly buttons.","edible"},
 	{"tortilla","IMBAKK","Uke",3,7,2,"F2E2B8","C8A070","thin round flatbread, char spots","whoosh","A flat round frisbee of corn.","edible"},
 	{"tortilla chips","IMBAKK","TeV",3,7,2,"E8B84A","C8803A","golden triangle chip","whoosh","Triangle shuriken. Dip optional.","edible"},
-	{"tortilla espanola","IMBAKK","Uke",3,7,2,"F2D08A","C8A070","thick round potato omelet","whoosh","A potato cake pretending to be an omelet.","edible"},
-	{"tortoise","AMBJUA","GN",2,1,9,"8A6A3A","C8A86A","high domed shell, elephant legs","hiss","Slow and steady. Wins. Eventually.","reptile,armored"},
-	{"tortoise beetle","AMAJFA","Gfa",1,3,4,"F2C82A","E8D888","gold dome beetle","click","Changes from gold to red. Magic.","insect,armored"},
 }

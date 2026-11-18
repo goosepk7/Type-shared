@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost stream","ODDBwI","eLNO",7,6,3,"FF8A3D","5AB8FF","a writhing stream from a backpack wand, then a trap","zap","Don't cross the streams. Probably.","scifi,movie,ghost"},
 	{"ghost swarm","AICJLJ","jAZP",5,7,2,"E5E7EB","A5B4FC","cloud of floating sheet ghosts","wail","Boo times fifty.","ghost,swarm,spooky"},
 	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
 	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
@@ -402,5 +403,4 @@ return {
 	{"grey seal","ABCJEC","UfB",3,5,4,"7A7A80","C8C8CC","horse-headed seal","bark","Roman nose. Sings like a ghost.","mammal,aquatic"},
 	{"greyhound","AMCJAA","DQO",4,10,4,"9A9A9E","E8E6E2","lean racing dog, deep chest, thin waist","bark","Fastest couch potato on Earth.","mammal,pet"},
 	{"grid","BDCCnI","GLN",3,1,5,"22D3EE","0F172A","glowing cyan wireframe squares stretching out","hum","Stay inside the lines. Or get zapped.","tech,defense"},
-	{"grief","KBCEOJ","iSN",3,2,1,"64748B","94A3B8","small grey cloud raining on one wilted flower","sigh","Good grief.","mood"},
 }

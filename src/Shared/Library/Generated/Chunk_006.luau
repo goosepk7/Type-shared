@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"climate","KFENOI","KJSP",6,1,5,"F97316","38BDF8","half scorching sun, half blizzard swirling together","howl","Hot. Cold. Hot. Make up your mind.","weather,science"},
 	{"climb","KMBOKG","l",2,5,3,"8D6E63","FFFFFF","grip marks up a surface","scrape","Up we go.","sport"},
 	{"climbing harness","BMBONF","l",1,5,3,"C0392B","24262A","webbing harness with buckles","bonk","Hang on tight.","sport"},
 	{"climbing rope","BMCLKF","lH",1,4,4,"E67E22","1F2F55","coiled bright climbing rope","bonk","Up we go.","sport"},
@@ -402,5 +403,4 @@ return {
 	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
 	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
 	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
-	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 }

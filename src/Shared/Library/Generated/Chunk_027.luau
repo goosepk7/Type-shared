@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tortilla espanola","IMBAKK","Uke",3,7,2,"F2D08A","C8A070","thick round potato omelet","whoosh","A potato cake pretending to be an omelet.","edible"},
+	{"tortoise","AMBJUA","GN",2,1,9,"8A6A3A","C8A86A","high domed shell, elephant legs","hiss","Slow and steady. Wins. Eventually.","reptile,armored"},
+	{"tortoise beetle","AMAJFA","Gfa",1,3,4,"F2C82A","E8D888","gold dome beetle","click","Changes from gold to red. Magic.","insect,armored"},
 	{"torvosaurus","AMEJBA","DkfT",8,6,7,"6A3A2A","C88A5A","huge jurassic predator","roar","Jurassic tough guy.","dinosaur,extinct,reptile,predator"},
 	{"tostada","IMBAKK","Uke",3,7,2,"E8B84A","8A5A3A","flat crisp tortilla, toppings","whoosh","A taco that lay down.","edible"},
 	{"tostones","IMBAKK","Uke",3,7,2,"E8C070","D9A04A","smashed fried plantain discs","whoosh","Crispy smashed plantain coins.","edible"},
@@ -84,7 +87,7 @@ return {
 	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
 	{"trap","KMCLII","O",4,4,4,"8D6E63","FFD54F","glowing jaw-shaped rune on ground","snap","Step right in. Wait, don't.","meme"},
 	{"trap-jaw ant","AMAJLA","UCkfP",1,5,1,"8A4A1E","3A1E14","ant with spring-loaded jaws","skitter","Snaps so hard it launches itself.","insect,swarm"},
-	{"trapdoor","EEBLII","ZOY",3,1,4,"6D4C41","424242","hinged wooden hatch in the floor","creak","Click. Whoosh. Byeee.","structure,defense,silly"},
+	{"trapdoor","EEBLII","SO",2,3,2,"8B5A2B","2A2420","a wooden trapdoor in the floor that drops you through","creak","Mind the gap. There is now a gap.","cartoon,silly,trap"},
 	{"trapdoor spider","AJBLQA","CZfMN",2,6,2,"3A2A1E","6A5A44","spider under a hinged lid","skitter","Opens its door. Surprise!","arachnid,spooky,venomous"},
 	{"trapeze","BMCLJI","lH",1,4,3,"C0392B","D4A72C","swinging bar on ropes","pop","Swing in. Swoop out.","party"},
 	{"trash","BJCNGI","ScMN",3,1,4,"4B5563","84CC16","heap of black bags, banana peels, fish bones, flies","squelch","One person's trash is still trash.","gross,silly,household"},
@@ -400,7 +403,4 @@ return {
 	{"viking axe","CKCHsK","kfH",6,5,5,"8A929B","5A3A1E","long bearded blade, rune-carved haft","chop","Hooks shields. Hooks hearts.","medieval,sharp"},
 	{"viking grandma","LMCJNA","Fkf",4,5,5,"C084FC","94A3B8","grandma in horned helmet with ladle","horn","Cooks. Raids. Naps.","silly,norse,family"},
 	{"viking helmet","BKBONI","GD",2,5,6,"5B6168","E3DAC9","round helm with two horns","clank","Historically inaccurate. Very fun.","armor,defense"},
-	{"viking longship","DBEKHC","GDkgB",6,7,7,"8D6E63","C62828","long wooden boat, dragon prow, round shields","horn","Rowing in with shields up and horns blaring.","vehicle,aquatic,ancient"},
-	{"viking queen","LECJNA","Gfh",6,5,6,"78350F","CA8A04","braided queen with winged helm and axe","horn","Raids first. Rules after.","warrior,norse,royal"},
-	{"vila","AFCJNB","jAc",4,8,3,"E0F2FE","FDE68A","cloud maiden with swan wings","sing","Dances on clouds. Bad at sharing them.","mythical,fairy"},
 }

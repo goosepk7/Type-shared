@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mackerel","ABAJEC","dB",1,8,1,"3A6A6A","C8D8D8","wavy stripes on green back","splash","Holy mackerel! It's shiny.","fish,aquatic"},
+	{"macrauchenia","AMDJAA","Dk",5,4,8,"9A7A5A","D8C8A8","camel body with short trunk","roar","A camel with a trunk. Why not.","mammal,extinct,ancient,heavy"},
 	{"macuahuitl","CECHJK","fV",5,6,4,"8B5A2B","1B1A22","wooden paddle edged with glass","shing","Paddle with teeth.","ancient,sharp"},
 	{"mad scientist","LDCJNA","jELh",5,4,4,"F8FAFC","84CC16","wild white hair, goggles, bubbling beaker","cackle","IT'S ALIVE. Mostly.","science,villain"},
 	{"madeleine","IMALKI","dSc",2,3,3,"F2C870","E8B050","shell-shaped little cake","chomp","Small cake shaped like a seashell.","edible,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"mint tea","IABOKI","KF",2,5,2,"7DBE3A","F2E8C8","glass of tea with mint","slurp","Cool and warm at once.","edible,drink,warm"},
 	{"minus","KIBAJB","iXN",3,7,1,"DC2626","FFFFFF","flat red minus bar thrown like a stick","buzz","Minus one. Minus one. Minus you.","school"},
 	{"minute","KLBOKK","SNO",2,4,2,"F8FAFC","DC2626","clock face with a thin long hand sweeping","tick","One minute. In mum-on-the-phone time.","time"},
-	{"mirabelle","IGAAKF","Fke",3,6,2,"F2D23A","E8A040","tiny golden plum","splat","A golden marble of fruit.","edible,fruit,sweet"},
-	{"miracle cure","KHDNOI","FP",3,5,4,"FFFFFF","FFD54F","golden beam and floating feathers over allies","choir","Against all odds, everyone's fine.","holy,support"},
 }

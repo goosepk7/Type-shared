@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poison bottle","BJAA2I","MeV",4,6,1,"8BC34A","24262A","skull-labelled bottle","bubble","Do not drink. Throw.","magic,fantasy"},
+	{"poison breath","FJCFOB","MP",5,6,1,"76FF03","33691E","cone of green toxic mist","hiss","Worst breath imaginable.","toxic"},
 	{"poison bubble","FJBGKJ","UM",3,4,1,"76FF03","F8BBD0","green bubble that pops into fumes","pop","Don't pop it. Too late.","toxic,silly"},
 	{"poison cloud","FJDDOJ","SMNP",5,3,2,"76FF03","33691E","rolling bilious green cloud with bubbles","hiss","Smells as bad as it looks.","toxic"},
 	{"poison dart","FJBAJB","TMe",4,9,1,"64DD17","1B5E20","thin green-dripping needle","zip","Tiny pinch. Big problem.","toxic,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"rainbow flower","NHBNMI","jdF",3,1,2,"FF5252","40C4FF","petals in every colour","rustle","Every colour. All at once.","plant,flower,magic"},
 	{"rainbow grasshopper","AMAJFG","UdAP",1,6,1,"2AA06A","E8501E","grasshopper painted every color","buzz","Looks painted by a kid.","insect"},
 	{"rainbow lightning","FDDAKB","jeLV",7,10,1,"FF4081","40C4FF","bolt splitting into rainbow branches","crack","Every colour of zap.","electric,cute"},
-	{"rainbow lollipop","IMBHJI","jdf",3,5,4,"E8434F","4FA3E8","rainbow spiral disc on stick","bonk","Hypnotic swirls. Look closely.","edible,silly,candy"},
-	{"rainbow lorikeet","AMBJDB","jdA",2,6,2,"2A6AE8","E8501E","parrot in every rainbow color","squawk","A flying rainbow. Very loud.","bird,jungle,silly"},
 }
