@@ -125,7 +125,7 @@ return {
 	{"chad","LHDJXA","GkfO",7,5,8,"1F2937","F2D0B4","ultra-jawed black-and-white bodybuilder, tiny smile","grunt","Yes.","meme,silly"},
 	{"chaffinch","AMAJDB","dA",1,7,1,"E8A07A","6A7A9A","pink-chested finch","tweet","Pink chest, blue cap.","bird,cute"},
 	{"chain","BKCLJK","HNO",2,4,7,"5B6168","8A929B","heavy linked iron chain","clank","Clink. You're not going anywhere.","tool"},
-	{"chain biter","AKCJ3G","DQf",6,8,6,"2E3138","F2EFE6","iron ball of teeth staked on a chain","chomp","Good boy. Terrible boy. Mostly teeth.","game,platformer,creature"},
+	{"chain biter","AKCJ3G","DQf",6,8,6,"B06C3C","46E8C8","a ribbed bronze trap-clam on a chain that lunges and bites","chomp","Good boy. Terrible boy. Mostly teeth.","game,platformer,creature"},
 	{"chain bomb","CACGKF","EeVP",7,5,2,"24262A","5B6168","bombs linked by chain","boom","One goes, all go.","explosive"},
 	{"chain flail","CKCHtK","kfO",5,4,5,"5B6168","8A929B","twin spiked balls on chains","shing","Double trouble, spinning.","sharp"},
 	{"chain lightning","FDDAKB","UeLV",7,10,1,"FFF176","448AFF","bolt leaping target to target in bright arcs","crack","Shares the shock with all your friends.","electric"},

@@ -215,7 +215,7 @@ return {
 	{"printing press","OKDL1I","kO",5,1,8,"5A3A1E","5B6168","wooden press with giant screw","clank","Flattens. Publishes. Both.","mechanical"},
 	{"prism","BHAB4I","ja",2,4,2,"BFE6F2","E84A5F","triangular glass block","bubble","Splits light into a rainbow beam.","science"},
 	{"prism reversal","KLCIII","Ga",6,7,5,"3A225C","C4B0FF","a face-down card that flips into a crystal prism","chime","You activated my trap. Technically you did.","anime,card game,trap"},
-	{"prism star","KHCOKJ","GDk",6,9,8,"FFE15A","FF5FD2","a faceted rainbow star bursts into you and you shimmer","music","Touch them. They bounce. You don't.","game,platformer,power up"},
+	{"prism star","KHCOKJ","GDk",6,9,8,"9BE8F0","B58CFF","a sharp crystal star bursts into you; you shimmer","music","Touch them. They bounce. You don't.","game,platformer,power up"},
 	{"prismatic spray","FHDFOB","KjV",6,8,1,"FF5252","40C4FF","fan of seven coloured beams","chime","Taste the... light.","holy,cute"},
 	{"prison","EMELII","GSNO",4,1,10,"616161","263238","grey walls, barred windows, watchtower","clang","Lock them up. Throw away the key.","structure,building"},
 	{"prisoner","LMCJNA","DP",3,5,4,"F97316","F8FAFC","orange jumpsuit, ball and chain","clank","Swings the ball and chain. Freedom.","silly"},

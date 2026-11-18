@@ -58,7 +58,7 @@ return {
 	{"growth ray","CLCBwI","jWe",4,7,3,"E67E22","7D3CB5","ray gun with big flared dish","zap","Embiggening in progress.","scifi,ranged"},
 	{"grub","AMAJTD","CWP",1,3,1,"F2E8D0","B8701E","curled white beetle larva","squelch","Lives underground. Waits. Grows.","bug"},
 	{"grump","LMCJNA","IN",3,3,5,"57534E","1E3A8A","crossed arms, frown, raincloud overhead","grunt","Hmph. Get off the map.","silly"},
-	{"grumpy slab","EEDNII","EkO",8,3,9,"8E8A84","3B3633","a scowling spiked stone slab glares down, then slams twice","rumble","It has one move and it is very good at it.","game,platformer,stone"},
+	{"grumpy slab","EEDNII","EkO",8,3,9,"C49E6C","3CECCE","a one-eyed sandstone rune monolith glares down and slams","rumble","It has one move and it is very good at it.","game,platformer,stone"},
 	{"grunt","LEBJNA","Dfh",3,5,3,"65743A","A8A29E","small helmeted trooper with an oversized pack","grunt","Does the work. Gets none of the medals.","military"},
 	{"gryphon chick","AFBJAB","AQf",2,6,2,"D97706","FEF3C7","fluffy beaked cub, tiny wings","chirp","All fluff, no flight skills yet.","mythical,cute"},
 	{"guacamole","IMBLGI","FcN",2,3,3,"568203","D3E28A","bowl of chunky green dip","gloop","Green, chunky, and loved by all.","edible,sticky,sauce"},
