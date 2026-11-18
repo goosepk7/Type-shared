@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant growth","KEEONI","Wk",5,4,3,"E8A23A","5A3A2A","grow half again as big, with a longer reach","rumble","Mind your head.","hero,movie,giant"},
+	{"giant gumball","IMEGIF","UkI",7,2,7,"E0102B","4FA3E8","boulder-sized glossy gumball","thud","Bounces over everything.","edible,giant,silly"},
+	{"giant gummy bear","IMEJBA","Udkf",7,2,7,"E0102B","F2A62B","towering translucent bear","thud","Wobbles menacingly. Very sweet.","edible,giant,silly,candy"},
 	{"giant hamster ball","DMCKHF","UDkg",2,7,4,"81D4FA","FFFFFF","giant clear ball with a rider inside","boing","Roll in. Bowl everyone over.","mechanical,vehicle,land,silly"},
 	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
 	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},

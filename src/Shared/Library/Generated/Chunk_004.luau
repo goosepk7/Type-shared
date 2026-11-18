@@ -403,5 +403,4 @@ return {
 	{"carrion flower","NJBDMI","jSM",3,1,2,"6A1B9A","8D6E63","hairy star bloom that smells awful","rustle","Stinks so bad enemies retreat.","plant,flower,silly"},
 	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
 	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
-	{"carrot patch","NGBLMI","Sc",2,1,3,"7CB342","FF9800","feathery tops above orange roots","rustle","Pull one up. Use it as a sword.","plant,crop,silly"},
 }

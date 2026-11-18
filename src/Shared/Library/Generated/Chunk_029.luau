@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wren","AMAJDB","dA",1,7,1,"8A6440","C8A880","tiny round bird, tail cocked up","tweet","Tiny bird, enormous song.","bird,cute"},
+	{"wrench","JKBHtK","kf",3,6,7,"8A929B","C0392B","adjustable jaw wrench","bonk","Fixes machines. Unfixes robots.","medieval,heavy"},
+	{"wrestle","KMCAKB","kfO",5,6,3,"D32F2F","FFD54F","grab-and-throw arc with ring dust","thud","Into the ropes! Down!","melee,sport"},
+	{"wrestler","LECJNA","DklO",6,6,6,"DC2626","FACC15","masked wrestler, tights, championship belt","thud","Off the top rope!","sport,martial"},
 	{"wrestling champion","LEDJNA","klO",7,5,7,"DC2626","FACC15","huge wrestler with a golden belt","thud","And his name is... loud.","sport,heavy"},
 	{"wrinkle","KMBF6B","jXN",2,3,2,"D7B899","A68A6D","wavy fold lines rippling across everything","rustle","Adds eighty years in one second.","body,silly"},
 	{"wrist","BMBOKK","Uje",2,7,3,"E8B48A","FFD166","snapping wrist with a gold bracelet flash","snap","It is all in the wrist. Everything is.","body,silly"},

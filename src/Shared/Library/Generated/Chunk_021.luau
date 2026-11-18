@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rattle","BMAFKI","jd",1,7,2,"F06292","F2F2EE","handle with ball full of beads","squeak","Shake shake shake.","toy,baby"},
+	{"rattlesnake","AMCJCD","fMNO",5,6,3,"B8986A","5A4A30","diamond pattern, rattle tail","rattle","Shakes a maraca before biting.","reptile,venomous,desert"},
+	{"raven","AIBJDB","jdAb",3,7,1,"1A1A20","3A3A50","big black shaggy-throat bird","tweet","Talks back. Literally talks.","bird,cute,spooky,smart"},
 	{"ravioli","IMAELB","ceP",2,7,1,"F2D08A","C8302B","square stuffed pasta pillows","pitter","Tiny pasta pillows.","edible"},
 	{"ray","FHCBKB","KTe",4,10,1,"FFE66D","FFFFFF","straight golden beam of light with sparkles","zing","A little ray of sunshine. In your eyes.","light"},
 	{"ray gun","CDBBwI","eLO",5,8,3,"DDE3E8","C0392B","retro finned pistol with ring nozzle","zap","Zzzorp! Vintage future.","scifi,retro,ranged"},
@@ -400,7 +403,4 @@ return {
 	{"sadness","KBCDOJ","iN",3,3,2,"5C6BC0","B3E5FC","small blue rain cloud over target","sniff","Everyone needs a hug now.","silly"},
 	{"safe","BKCGKI","GkO",7,1,10,"4A4D52","B58A3A","heavy steel box with dial","thud","Falls from the sky. Very cartoon.","heavy,cartoon"},
 	{"safety","KHCIyI","GFS",2,2,8,"F97316","FDE047","orange cone, hard hat and hi-vis bubble dome","beep","Safety first. Fun a distant fourth.","defense,support"},
-	{"safety pin","BKAAJI","Te",1,8,1,"C9CED4","C9CED4","bent pin with clasp","splat","Safety not guaranteed.","art"},
-	{"saffron","IHBDOJ","FP",2,5,1,"E8402B","F2A62B","red threads in a tiny jar","puff","Worth more than gold, thread for thread.","edible,spice,royal"},
-	{"sage","LLCJNA","jFe",4,3,4,"F8FAFC","0EA5E9","long robe, longer beard, scroll","chime","Says one wise thing. You lose anyway.","magic"},
 }

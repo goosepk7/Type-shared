@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tapejara","AMCJDB","DdAT",4,8,4,"6A5A3A","E8401E","giant colorful head sail","screech","Wears a giant colorful sail hat.","pterosaur,extinct,reptile"},
+	{"tapeworm","AMAJTD","CiP",1,3,1,"F2EEE0","E8D8B0","long flat ribbon worm","squelch","Rude houseguest.","bug"},
+	{"tapir","AMCJAA","DkIB",4,4,8,"2A2624","E6E2DC","pig-like, short trunk, black-white saddle","trumpet","Looks like a pig wearing an oreo costume.","mammal,heavy,wild,silly"},
+	{"taquito","IMBHJI","fT",3,5,4,"D9A04A","F2E2B8","thin rolled crispy tube","bonk","A taco rolled into a spear.","edible,silly"},
 	{"tar","FEBLII","SN",3,2,4,"1E1B18","4A443D","glossy black sticky puddle","squelch","Sticky now. Sticky forever.","flammable"},
 	{"tar monster","AJCJGF","HN",4,2,5,"0A0A0A","52525B","glossy black sticky blob","squelch","Sticky. Everything sticks. Forever.","slime"},
 	{"tar pit","MICLII","KSHN",4,1,6,"212121","424242","bubbling black sticky pool","bubble","Very sticky. Very permanent.","place,terrain"},
@@ -399,8 +403,4 @@ return {
 	{"trade","KMBOKB","jFb",3,6,2,"22C55E","F59E0B","two hands swapping a sandwich for a shiny card","ding","My sandwich for your dessert. Final offer.","gaming,school"},
 	{"trading card","BLAAJK","Teh",3,8,1,"FACC15","60A5FA","glinting foil card spinning like a blade","swish","Mint condition. Do NOT bend it.","game,shiny"},
 	{"tradition","KECOII","GSh",3,2,6,"7C2D12","D4AF37","maypole with ribbons and elders nodding sternly","bell","We have always done it this way. Nobody knows why.","ancient"},
-	{"traffic cone","BMBCII","Gd",1,1,3,"E67E22","F2F2EE","orange cone with white stripes","clink","Detour! This way to defeat.","hardware"},
-	{"traffic jam","EMENII","GSN",3,1,7,"E53935","FFC107","endless line of honking cars","horn","Nobody moves. Ever.","structure,silly"},
-	{"traffic light","OHCMmI","NO",2,1,6,"24262A","2E8B57","three-light signal on pole","clank","Red means STOP. Everyone.","mechanical"},
-	{"tragedy","KBCF6B","iNO",4,4,1,"1E3A8A","9CA3AF","weeping theatre mask and a single wilting rose","wail","Dropped the ice cream. Curtain. Weep.","art,mood"},
 }

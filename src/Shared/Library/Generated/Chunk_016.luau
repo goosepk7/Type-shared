@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magnet","BKBLJK","lHN",4,5,6,"C0392B","C9CED4","U-shaped red magnet, silver tips","clank","Attracts trouble. And bolts.","magnetic"},
+	{"magnet ball","BKAG3I","H",2,5,3,"8E9196","C0392B","round magnet sphere","bubble","Clacks onto everything.","magnetic"},
+	{"magnet glove","BKBANK","lHe",4,7,3,"C0392B","C9CED4","glove with horseshoe magnet palm","thud","Yoink metal from afar.","magnetic"},
 	{"magnet pull","FKCBKI","lH",5,6,3,"D32F2F","1976D2","red-blue curved field lines dragging target","hum","Opposites attract. So do you.","magnetic"},
 	{"magnet robot","OKCJNA","lHL",4,4,6,"DC2626","94A3B8","robot with giant horseshoe magnet hands","hum","Your armor belongs to it now.","robot,magnetic"},
 	{"magnet storm","FKDN5K","GHL",5,6,3,"D8443A","3A6FD8","a crackling field that yanks shots out of the air","hum","All your metal flies away.","hero,movie,magnetic"},
@@ -400,7 +403,4 @@ return {
 	{"mobile library","DMDKHL","Djkg",3,4,6,"1565C0","FFC107","bus filled with bookshelves","engine","Overdue books. Overdue punishment.","mechanical,vehicle,land,silly"},
 	{"mobula ray","ABCJEC","UASTB",4,5,3,"1E2430","F2F2F2","small manta leaping out of water","whoosh","Leaps and flips out of the sea.","fish,aquatic,ocean"},
 	{"mocha","IABOKI","DF",3,9,2,"6B4026","F2E8D8","chocolate coffee with cream","fizz","Coffee and chocolate. Best friends.","edible,drink"},
-	{"mochi","IMBLGI","SNO",2,3,3,"F7F2EC","F2A6C8","soft round rice dough cake","gloop","Stretchy, chewy, sticks to all.","edible,sticky,sweet"},
-	{"mochi donut","IMBLKI","dSc",2,3,3,"F2A6C8","F7F2EC","ring of connected little balls","chomp","A donut made of bubbles.","edible,sweet,dessert"},
-	{"mochi ice cream","ICBAKJ","JeN",3,5,2,"F7D9E3","F7F2EC","soft rice dough ball, ice cream core","squish","Chewy outside, cold inside.","edible,frozen,sweet"},
 }

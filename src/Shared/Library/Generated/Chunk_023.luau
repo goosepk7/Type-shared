@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shearwater","ABBJDB","DAB",2,7,2,"3A3A40","F2F2F0","stiff-winged sea glider","squawk","Slices across waves.","bird,ocean"},
+	{"shed","EMBCII","GS",2,1,4,"6D4C41","A1887F","small wooden box, slanted roof","thud","Full of rakes. And spiders. Mostly spiders.","structure,building,silly"},
+	{"sheep","AMCJAA","dQf",3,4,4,"F2EEE6","2A2420","fluffy wool body, black face and legs","bleat","Fluffy. Follows the crowd.","mammal,farm"},
+	{"sheepdog","AMCJAA","DQfH",4,7,4,"D8D8D6","6E7278","shaggy hair covering eyes","bark","Cannot see. Doesn't care.","mammal,pet"},
 	{"sheepdog puppy","AMAJAA","dQf",1,6,2,"1E1E1E","F2F2F2","fluffy black and white pup","yip","Already herding its siblings.","mammal,pet,cute"},
 	{"sheepshead","ABCJEC","DfB",4,7,4,"8A8A8A","1E1E1E","striped fish with human teeth","splash","Has human-looking teeth. Eek.","fish,aquatic,spooky,silly"},
 	{"sheet","BFCLVJ","jAN",2,5,2,"FFFFFF","BFDBFE","white bedsheet billowing with two eye holes","whoosh","Either laundry or a ghost. Fifty-fifty.","household,spooky,silly"},
@@ -399,8 +403,4 @@ return {
 	{"soba","IMBLGI","HN",2,3,3,"8A6A4A","C8A070","thin brown noodles on bamboo tray","gloop","Thin buckwheat noodles, cool and slurpy.","edible,sticky"},
 	{"soccer","KMCA3B","UDke",5,8,3,"FFFFFF","111827","black-and-white ball curling into a top corner, net bulging","crowd","GOOOOOOOOOOOOAL!","sport"},
 	{"soccer ball","BMBG3F","Uke",2,8,4,"F2F2EE","24262A","black and white patched ball","bonk","GOOOOOAL.","sport"},
-	{"soccer field","MMENII","kS",2,1,6,"43A047","F5F5F5","striped grass, goals and white lines","crowd","Goal! Enemies sent flying into the net.","place,sport"},
-	{"soccer goal","BMDLII","NO",1,1,4,"F2F2EE","F2F2EE","rectangle frame with net","bonk","They shoot. They're stuck.","sport"},
-	{"soccer mom","LMCJNL","DFh",3,6,5,"F472B6","15803D","visor, minivan, orange slices","honk","Orange slices for everyone.","family,silly"},
-	{"soccer player","LMCJNA","Dke",4,8,4,"15803D","F8FAFC","jersey, shin guards, ball at feet","thud","Kicks the ball. And you. Gooool!","sport"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"traffic cone","BMBCII","Gd",1,1,3,"E67E22","F2F2EE","orange cone with white stripes","clink","Detour! This way to defeat.","hardware"},
+	{"traffic jam","EMENII","GSN",3,1,7,"E53935","FFC107","endless line of honking cars","horn","Nobody moves. Ever.","structure,silly"},
+	{"traffic light","OHCMmI","NO",2,1,6,"24262A","2E8B57","three-light signal on pole","clank","Red means STOP. Everyone.","mechanical"},
+	{"tragedy","KBCF6B","iNO",4,4,1,"1E3A8A","9CA3AF","weeping theatre mask and a single wilting rose","wail","Dropped the ice cream. Curtain. Weep.","art,mood"},
 	{"trail","MEDNnI","DQSN",4,2,6,"C2A878","6B8E23","winding dirt track with signposts pointing everywhere","crunch","Stay on it. It does not stay on you.","place,terrain"},
 	{"trail mix","IEAELB","FeP",2,7,1,"A86A3A","C2302B","nuts, raisins, candy bits","pitter","Adventurer fuel. Pick out the candy.","edible,sweet"},
 	{"train","DMEKHL","DkTg",7,7,9,"2D3A4A","C0392B","long engine with carriages, cowcatcher","horn","Runs on time. Runs over everything.","mechanical,vehicle,land"},
@@ -399,8 +403,4 @@ return {
 	{"vulture","AMCJDB","DiASfT",4,9,3,"2A2420","E8A0A0","bald pink head, ruff collar, hunched","screech","Cleans up the savanna. Free service.","bird,predator,spooky"},
 	{"vuvuzela","BMBFJI","jO",2,5,2,"F1C40F","F1C40F","long plastic stadium horn","horn","BZZZZZZZZZZZZZ.","music,sport,loud,silly"},
 	{"w","KHBOKJ","WFk",4,7,3,"22C55E","FACC15","giant glowing green letter W with a crown on it","fanfare","Common W. Take it. Frame it.","meme,gaming"},
-	{"waakye","IMAELB","eNP",2,6,1,"7A2A2A","F7F4EC","rice and beans, deep red","pitter","Rice and beans with a twist.","edible,grain"},
-	{"wafer","IMBAKK","Uke",3,7,2,"F2D08A","E8C07A","crisp waffled rectangle","whoosh","Crispy layers of almost nothing.","edible"},
-	{"waffle","IMCIII","GF",3,3,4,"E8B04A","C8803A","square grid cake","thud","A grid of pockets for syrup.","edible,breakfast"},
-	{"waffle cone","ICBAuB","JTe",3,7,2,"D9A066","F9A8D4","pointy crisp cone, pink scoop sliding off","crunch","Pointy end out. Sprinkles optional.","edible,sweet,frozen"},
 }

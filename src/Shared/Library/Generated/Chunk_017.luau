@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mochi","IMBLGI","SNO",2,3,3,"F7F2EC","F2A6C8","soft round rice dough cake","gloop","Stretchy, chewy, sticks to all.","edible,sticky,sweet"},
+	{"mochi donut","IMBLKI","dSc",2,3,3,"F2A6C8","F7F2EC","ring of connected little balls","chomp","A donut made of bubbles.","edible,sweet,dessert"},
+	{"mochi ice cream","ICBAKJ","JeN",3,5,2,"F7D9E3","F7F2EC","soft rice dough ball, ice cream core","squish","Chewy outside, cold inside.","edible,frozen,sweet"},
 	{"mock orange","NGCNMI","jdFS",1,1,3,"FFFFFF","7CB342","shrub with orange-scented white blooms","rustle","Smells like oranges. Fooled you.","plant,flower"},
 	{"mockingbird","AMAJDB","jdA",1,7,1,"8A8C90","F2F2F0","grey bird, white wing patches","tweet","Copies car alarms. On purpose.","bird,cute"},
 	{"model","LMCJNA","dc",3,5,3,"F472B6","F8FAFC","runway pose, sunglasses","click","Strikes a pose. Enemies stunned.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"nor'easter","GCEEOJ","JIP",7,5,5,"546E7A","ECEFF1","heavy slanting snow and wind from the sea","howl","Coastal winter, maximum grump.","storm,frozen"},
 	{"north","KCCF6B","JIN",4,6,2,"E0F2FE","1E3A8A","compass needle snapping to N with a blast of frost","howl","Never Eat Soggy Waffles. Starts here.","map,frozen"},
 	{"north pole","MCFNII","JSN",4,1,9,"F5F5F5","4FC3F7","endless snow and ice, aurora sky","rumble","Brrrr. Bring a coat. Bring three.","frozen,holiday"},
-	{"north star","MHCAKJ","QTe",5,6,5,"FFFFFF","90CAF9","bright steady star with long rays","rumble","Always points the way. To victory.","space"},
-	{"northern goshawk","AMCJDB","DAfT",5,9,3,"6A7480","F2F2F0","grey hawk with white eyebrow","screech","Forest ninja. Weaves through trees.","bird,predator"},
-	{"northern pike","ABCJEC","DfTB",4,7,4,"6A7A4A","D8D8A0","long toothy predator, spotted green","splash","A crocodile pretending to be a fish.","fish,aquatic"},
 }

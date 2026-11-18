@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"waakye","IMAELB","eNP",2,6,1,"7A2A2A","F7F4EC","rice and beans, deep red","pitter","Rice and beans with a twist.","edible,grain"},
+	{"wafer","IMBAKK","Uke",3,7,2,"F2D08A","E8C07A","crisp waffled rectangle","whoosh","Crispy layers of almost nothing.","edible"},
+	{"waffle","IMCIII","GF",3,3,4,"E8B04A","C8803A","square grid cake","thud","A grid of pockets for syrup.","edible,breakfast"},
+	{"waffle cone","ICBAuB","JTe",3,7,2,"D9A066","F9A8D4","pointy crisp cone, pink scoop sliding off","crunch","Pointy end out. Sprinkles optional.","edible,sweet,frozen"},
 	{"waffle fries","IMBAKK","Uke",3,7,2,"E8B04A","F2D08A","lattice-cut golden fries","whoosh","Fries with a waffle pattern.","edible,breakfast"},
 	{"waffle iron","BABLII","KO",3,1,5,"24262A","DDE3E8","hinged grid griddle","clang","Chomp. Now you're a waffle.","kitchen,silly"},
 	{"waffle wall","IMDCII","Gc",4,2,7,"E8B04A","C8803A","giant grid waffle barricade","thud","A barricade with syrup pockets.","edible,giant"},
@@ -399,8 +403,4 @@ return {
 	{"wrecking ball","OKEG3K","DkO",8,4,9,"3A3F45","5B6168","giant iron ball on a chain","clank","Swings in like a... well.","mechanical,heavy"},
 	{"wrecking ball truck","DKEKHL","kIgO",8,2,9,"FFB300","424242","crane swinging a huge iron ball","clang","Swings once. Demolishes everything.","mechanical,vehicle,land,heavy"},
 	{"wrecking bar","JKCHJK","kf",4,5,7,"5B6168","24262A","long hooked steel bar","clank","Crowbar's bigger, louder cousin.","tool"},
-	{"wren","AMAJDB","dA",1,7,1,"8A6440","C8A880","tiny round bird, tail cocked up","tweet","Tiny bird, enormous song.","bird,cute"},
-	{"wrench","JKBHtK","kf",3,6,7,"8A929B","C0392B","adjustable jaw wrench","bonk","Fixes machines. Unfixes robots.","medieval,heavy"},
-	{"wrestle","KMCAKB","kfO",5,6,3,"D32F2F","FFD54F","grab-and-throw arc with ring dust","thud","Into the ropes! Down!","melee,sport"},
-	{"wrestler","LECJNA","DklO",6,6,6,"DC2626","FACC15","masked wrestler, tights, championship belt","thud","Off the top rope!","sport,martial"},
 }

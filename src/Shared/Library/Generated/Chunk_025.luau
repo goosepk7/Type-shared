@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"steering wheel","BKBOKK","j",1,6,3,"24262A","8E9196","round wheel with spokes","clang","Who's driving? Nobody!","urban"},
+	{"stegosaurus","AMDJAA","GkfT",6,3,9,"6A7A4A","D8701E","back plates, spiked tail","grunt","Brain the size of a walnut. Tail of doom.","dinosaur,extinct,reptile,armored"},
+	{"steller's jay","AMAJDB","jdA",1,7,1,"1E2A4A","3A5AA8","dark blue with black crest","tweet","Copies hawk calls. Trickster.","bird,cute"},
+	{"steller's sea cow","ABEJEC","FfB",6,2,4,"6A6A6E","B8B8BC","huge manatee","bark","Giant gentle sea cow. Gone too soon.","mammal,aquatic,extinct"},
 	{"stench","FJBDOJ","jdN",2,3,2,"9CA84A","D8E08A","wavy green stink lines","whiff","Smells like gym socks and regret.","silly,toxic"},
 	{"stencil","BMAIyI","G",1,6,1,"F2F2EE","24262A","cut-out pattern sheet","splat","Neat lines, sharp edges.","art"},
 	{"step ladder","BKBCII","G",1,3,4,"C9CED4","8E9196","folding A-frame ladder","clank","For reaching the cookies.","tool"},
@@ -399,8 +403,4 @@ return {
 	{"tape dispenser","BMALJK","N",1,3,4,"24262A","BFE6F2","weighted tape holder","tap","Rrrrip.","office"},
 	{"tape gun","BMBLwK","NO",1,6,3,"C0392B","C9CED4","pistol grip tape dispenser","tap","Rrrrrip! Wrapped.","office,sticky"},
 	{"tape measure","JKAAJK","He",1,7,3,"F1C40F","24262A","coil case with metal tape","clank","Shoots out. Snaps back. Ouch.","tool,silly"},
-	{"tapejara","AMCJDB","DdAT",4,8,4,"6A5A3A","E8401E","giant colorful head sail","screech","Wears a giant colorful sail hat.","pterosaur,extinct,reptile"},
-	{"tapeworm","AMAJTD","CiP",1,3,1,"F2EEE0","E8D8B0","long flat ribbon worm","squelch","Rude houseguest.","bug"},
-	{"tapir","AMCJAA","DkIB",4,4,8,"2A2624","E6E2DC","pig-like, short trunk, black-white saddle","trumpet","Looks like a pig wearing an oreo costume.","mammal,heavy,wild,silly"},
-	{"taquito","IMBHJI","fT",3,5,4,"D9A04A","F2E2B8","thin rolled crispy tube","bonk","A taco rolled into a spear.","edible,silly"},
 }

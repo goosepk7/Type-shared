@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"leader","LHCJNA","GQfh",5,5,6,"B45309","FDE047","commander pointing forward, cape, feathered hat","fanfare","Follow me! Wait, which way were we going?","warrior,royal"},
+	{"leaellynasaura","ACCJAA","dk",3,5,6,"8A7A6A","D8C8B0","small big-eyed polar dino","honk","Big eyes for long polar nights.","dinosaur,extinct,reptile"},
+	{"leaf","NGAELJ","dSP",1,6,1,"7CB342","FF9800","single flat leaf with veins","rustle","Floats down gently. Distracts briefly.","plant"},
 	{"leaf blower","OFCFJK","kIe",3,7,4,"E67E22","24262A","handheld engine with long nozzle","whoosh","Moves leaves. Moves enemies.","tool,garden,loud"},
 	{"leaf insect","AMAJFA","dZP",1,6,1,"6AC84A","4A8A3A","flat leaf-shaped green body","buzz","A leaf that walks. Very rude to salads.","insect"},
 	{"leaf pile","NGBLMI","ZSN",1,1,2,"FF9800","C62828","crunchy heap of autumn leaves","rustle","Jump in! Something is hiding in there.","plant,silly"},
@@ -400,7 +403,4 @@ return {
 	{"magma spike","FACLII","KlT",6,5,5,"D84315","FFAB40","glowing rock spike erupting from ground","crack","Hot and pointy. Worst combo.","fire,sharp"},
 	{"magma storm","FAEEOJ","KkP",8,5,5,"BF360C","5D4037","storm of molten rocks and ash","rumble","Two elements, one bad day.","fire,heavy,storm"},
 	{"magma titan","AAFJNA","KEkS",9,2,9,"450A0A","F97316","volcano-shouldered giant dripping lava","rumble","A walking volcano with no off switch.","elemental,giant,boss,fire,danger"},
-	{"magnet","BKBLJK","lHN",4,5,6,"C0392B","C9CED4","U-shaped red magnet, silver tips","clank","Attracts trouble. And bolts.","magnetic"},
-	{"magnet ball","BKAG3I","H",2,5,3,"8E9196","C0392B","round magnet sphere","bubble","Clacks onto everything.","magnetic"},
-	{"magnet glove","BKBANK","lHe",4,7,3,"C0392B","C9CED4","glove with horseshoe magnet palm","thud","Yoink metal from afar.","magnetic"},
 }

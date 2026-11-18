@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"safety pin","BKAAJI","Te",1,8,1,"C9CED4","C9CED4","bent pin with clasp","splat","Safety not guaranteed.","art"},
+	{"saffron","IHBDOJ","FP",2,5,1,"E8402B","F2A62B","red threads in a tiny jar","puff","Worth more than gold, thread for thread.","edible,spice,royal"},
+	{"sage","LLCJNA","jFe",4,3,4,"F8FAFC","0EA5E9","long robe, longer beard, scroll","chime","Says one wise thing. You lose anyway.","magic"},
 	{"sage grouse","AMBJDA","df",2,4,2,"8A7A6A","F2F2EE","fanned spiky tail, chest sacs","cluck","Puffs out two chest balloons.","bird,farm"},
 	{"sagebrush","NEBCMI","GS",2,1,4,"9E9E9E","7CB342","silvery scrubby desert bush","rustle","Smells like a desert rainstorm.","plant"},
 	{"sagittarius","MHCEKJ","Te",5,5,5,"FFFFFF","FF7043","star centaur drawing a bow","rumble","Fires star arrows. Never misses. Okay, rarely.","space,zodiac"},
@@ -400,8 +403,4 @@ return {
 	{"shatter","KCCA4B","TVO",6,8,1,"B3E5FC","FFFFFF","target cracking like glass into shards","crash","Crack. Tinkle. Gone.","sharp"},
 	{"shave","KKBHJB","fXN",3,7,1,"F8FAFC","60A5FA","razor swooping through a face-full of white foam","swish","A close shave. Literally.","household"},
 	{"shears","JKBHJK","fV",3,6,4,"8A929B","2E8B57","long two-blade clippers","clank","Snips hedges into dinosaurs.","tool"},
-	{"shearwater","ABBJDB","DAB",2,7,2,"3A3A40","F2F2F0","stiff-winged sea glider","squawk","Slices across waves.","bird,ocean"},
-	{"shed","EMBCII","GS",2,1,4,"6D4C41","A1887F","small wooden box, slanted roof","thud","Full of rakes. And spiders. Mostly spiders.","structure,building,silly"},
-	{"sheep","AMCJAA","dQf",3,4,4,"F2EEE6","2A2420","fluffy wool body, black face and legs","bleat","Fluffy. Follows the crowd.","mammal,farm"},
-	{"sheepdog","AMCJAA","DQfH",4,7,4,"D8D8D6","6E7278","shaggy hair covering eyes","bark","Cannot see. Doesn't care.","mammal,pet"},
 }

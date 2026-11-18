@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pearl","BBAAKJ","Uce",2,7,4,"F2EEE6","E88AA5","smooth white glossy sphere","chime","Ocean's shiny marble.","treasure,shiny"},
+	{"pearl dragon","ABEKCB","AFgB",7,6,7,"F8FAFC","BAE6FD","shimmering white dragon clutching a pearl","chime","Will not let go of that pearl.","mythical,reptile"},
+	{"pearl onions","IJAELB","je",2,7,1,"F7F2EC","E8E0D0","tiny white onions","pitter","Tiny tear bombs.","edible"},
 	{"peasant","LMCJNA","Ph",3,4,3,"A16207","78350F","burlap clothes, pitchfork","grunt","Angry mob in one person. Grab torches.","historical"},
 	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
 	{"pebble","FEAAKB","Ude",1,8,2,"9E9A94","D6D2CC","small smooth river stone","tick","Skips on water. Bonks on heads.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"police station","EMDCII","GSOh",3,1,8,"1565C0","F5F5F5","brick building with blue lamps","siren","Calling all units!","structure,building"},
 	{"police van","DKDKHL","DkgOh",5,6,9,"1B2A49","F5F5F5","armoured black van with roof lights","siren","Backup has arrived. Lots of it.","mechanical,vehicle,land"},
 	{"polish","KKAOKI","a",1,4,3,"ECEFF1","FFFFFF","sparkly gleam on armour","squeak","So shiny. Hits slide off.","shiny"},
-	{"politician","LMCJNA","jdc",3,4,4,"1E3A8A","DC2626","suit, sash, giant scissors","ding","Makes many promises. Keeps none.","silly"},
-	{"pollen","NGBDOI","jSPO",2,4,1,"FFEB3B","FFF59D","drifting golden dust cloud","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly"},
-	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
 }

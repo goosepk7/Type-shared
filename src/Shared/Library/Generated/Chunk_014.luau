@@ -403,7 +403,4 @@ return {
 	{"layer cake","IMCLKI","dSc",2,3,3,"F7E0C0","7A4026","tall many-layered slice","chomp","Layers of joy, stacked high.","edible,sweet"},
 	{"laziness","KMBNOI","NO",2,1,3,"BCAAA4","FFE0B2","droopy sleepy area with pillows","yawn","Nobody feels like doing anything.","silly"},
 	{"lead pipe","JKCHJK","kf",3,6,6,"4A4D52","8E9196","short heavy metal pipe","bonk","Plumbing, weaponised.","medieval,heavy"},
-	{"leader","LHCJNA","GQfh",5,5,6,"B45309","FDE047","commander pointing forward, cape, feathered hat","fanfare","Follow me! Wait, which way were we going?","warrior,royal"},
-	{"leaellynasaura","ACCJAA","dk",3,5,6,"8A7A6A","D8C8B0","small big-eyed polar dino","honk","Big eyes for long polar nights.","dinosaur,extinct,reptile"},
-	{"leaf","NGAELJ","dSP",1,6,1,"7CB342","FF9800","single flat leaf with veins","rustle","Floats down gently. Distracts briefly.","plant"},
 }

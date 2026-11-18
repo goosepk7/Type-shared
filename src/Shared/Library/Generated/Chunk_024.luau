@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"soccer field","MMENII","kS",2,1,6,"43A047","F5F5F5","striped grass, goals and white lines","crowd","Goal! Enemies sent flying into the net.","place,sport"},
+	{"soccer goal","BMDLII","NO",1,1,4,"F2F2EE","F2F2EE","rectangle frame with net","bonk","They shoot. They're stuck.","sport"},
+	{"soccer mom","LMCJNL","DFh",3,6,5,"F472B6","15803D","visor, minivan, orange slices","honk","Orange slices for everyone.","family,silly"},
+	{"soccer player","LMCJNA","Dke",4,8,4,"15803D","F8FAFC","jersey, shin guards, ball at feet","thud","Kicks the ball. And you. Gooool!","sport"},
 	{"sock monster","AMAJGG","Zb",1,7,1,"EF4444","F8FAFC","striped sock with button eyes","giggle","Where all your missing socks went.","silly"},
 	{"sock nunchucks","CJBHJK","jfM",1,8,1,"F2F2EE","8E9196","two smelly socks tied together","boing","Stinky martial arts.","silly"},
 	{"sock puppet","BMAJGG","jd",1,6,1,"F2F2EE","C0392B","sock with button eyes","squeak","Fierce. Floppy. Fluffy.","toy"},
@@ -399,8 +403,4 @@ return {
 	{"steel spike","FKCLII","GT",6,5,7,"78909C","CFD8DC","shiny metal spikes bursting from floor","clang","Floor teeth, stainless edition.","sharp,heavy"},
 	{"steel wall","EKDCII","GSa",4,1,10,"78909C","455A64","riveted steel plates, bolted seams","clang","Clang. Every arrow goes clang.","heavy,magnetic"},
 	{"steenbok","AMBJAA","Dk",2,8,4,"C8803A","F2F2EE","small red antelope","bleat","Tiny and red. Hides well.","mammal,wild"},
-	{"steering wheel","BKBOKK","j",1,6,3,"24262A","8E9196","round wheel with spokes","clang","Who's driving? Nobody!","urban"},
-	{"stegosaurus","AMDJAA","GkfT",6,3,9,"6A7A4A","D8701E","back plates, spiked tail","grunt","Brain the size of a walnut. Tail of doom.","dinosaur,extinct,reptile,armored"},
-	{"steller's jay","AMAJDB","jdA",1,7,1,"1E2A4A","3A5AA8","dark blue with black crest","tweet","Copies hawk calls. Trickster.","bird,cute"},
-	{"steller's sea cow","ABEJEC","FfB",6,2,4,"6A6A6E","B8B8BC","huge manatee","bark","Giant gentle sea cow. Gone too soon.","mammal,aquatic,extinct"},
 }
