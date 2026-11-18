@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},
 	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
@@ -402,5 +403,4 @@ return {
 	{"carnation","NGBNMI","dFS",2,1,2,"F48FB1","43A047","frilly ruffled bloom","rustle","Fancy frills for fancy fights.","plant,flower"},
 	{"carne asada","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled sliced beef","thud","Grilled beef, ready for tacos.","edible,savory"},
 	{"carnitas","IMAELB","ce",2,7,1,"B0602B","F2C870","crispy shredded pork","pitter","Crispy, juicy shreds.","edible"},
-	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
 }

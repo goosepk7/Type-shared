@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"royal decree","KLCAKI","jIe",6,10,2,"E0283C","FFD7DC","meet their eyes, give an order, and they walk away","chime","You will walk away. Now.","anime,command,eyes"},
+	{"royal food taster","LMCJNA","dM",3,4,3,"7C3AED","F8FAFC","nervous figure holding a spoon","gulp","Tastes everything first. Brave job.","royal,silly"},
 	{"royal guard","LKCJNA","GfO",5,3,7,"DC2626","111827","tall bearskin hat, red coat, spear","clang","Never smiles. Never blinks. Never moves.","royal,warrior"},
 	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
 	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"shadow bomb","FICGKI","iEZ",6,6,1,"1A0033","AA00FF","black orb bursting into blinding dark","whum","Explodes into nothing. Scary nothing.","spooky,explosive"},
 	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
 	{"shadow breath","FICFOB","iZ",5,6,1,"1A0033","7C4DFF","cone of black smoke","hiss","Exhale the night.","spooky"},
-	{"shadow cat","AIBJAA","jZY",2,9,2,"0F0F23","A78BFA","black cat with starry inside","meow","Stares at empty corners. Knows things.","spooky,cute"},
-	{"shadow chains","FICLII","HO",5,5,4,"1A0033","7C4DFF","smoky black chains wrapping target","clank","Bound by darkness. Very dramatic.","spooky"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
 	{"carnotaurus","AMDJBA","DkfT",7,8,7,"B8401E","3A2A1E","bull horns, tiny arms, fast","roar","A bull and a T rex had a sprinter.","dinosaur,extinct,reptile,predator"},
 	{"carolina reaper","IABAKK","KESP",8,7,2,"B0101E","6B0A0A","wrinkly red pod, scorpion tail","sizzle","The hottest pepper. A fire spirit in pod form.","edible,spicy,flammable,pepper"},
 	{"carousel","EMDNIK","jkS",3,1,6,"E53935","FFD54F","spinning canopy with painted horses","organ","Round and round and dizzy.","structure,building,silly"},
@@ -402,5 +403,4 @@ return {
 	{"clematis","NGCLMI","WSHN",2,1,3,"7E57C2","FFFFFF","climbing vine with big starry blooms","rustle","Climbs anything. Smothers everything.","plant"},
 	{"clementine","IMBAKF","jke",3,6,2,"F59B26","2F6B2A","tiny bright orange, two leaves","squirt","Tiny, sweet, and full of squirt.","edible,fruit,sour"},
 	{"cleome","NGCNMI","dFS",1,1,2,"F48FB1","FFFFFF","spidery pink blooms with long whiskers","rustle","Looks like a spider. Is a flower. Phew.","plant,flower,silly"},
-	{"cleric","LHCJNA","GFe",4,4,5,"F8FAFC","FACC15","white robe, golden symbol, healing glow","chime","Bandages, blessings, and stern looks.","holy,healer"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"floating rocks","MLENIJ","lS",4,1,8,"8D6E63","7CB342","chunks of land drifting in the sky","rumble","Gravity takes a holiday here.","place,terrain,magic"},
 	{"flock","AFDDLB","jAPb",5,7,3,"ECEFF1","607D8B","swirling V of small birds, feathers drifting","tweet","Birds of a feather attack together.","bird,swarm"},
 	{"flood","HBENOI","SINP",7,4,5,"2269A8","A9DBF5","rising murky water filling the area","splash","Everything is a swimming pool now.","natural,aquatic"},
 	{"floodlight","OHDBmI","cO",2,1,6,"8E9196","F2F2EE","bank of huge bright lamps","clank","Blinding stadium glare.","mechanical"},
@@ -402,5 +403,4 @@ return {
 	{"ghost horse rider","AIDKAA","DZg",6,9,4,"A5B4FC","1E1B4B","spectral rider on a glowing horse","neigh","Gallops across the sky at night.","ghost,mount"},
 	{"ghost hunter","LHCJNA","He",5,5,5,"F8FAFC","22C55E","jumpsuit, proton-style backpack vacuum","zap","Who you gonna call? This person.","spooky"},
 	{"ghost king","AIDJNJ","iAh",7,5,4,"A5B4FC","CA8A04","crowned translucent giant","wail","Rules a kingdom of sheets.","ghost,royal,boss"},
-	{"ghost lantern bearer","AICJNJ","Ac",3,4,2,"F8FAFC","FACC15","ghost carrying a glowing lantern","whisper","Lights the way. Somewhere strange.","ghost"},
 }

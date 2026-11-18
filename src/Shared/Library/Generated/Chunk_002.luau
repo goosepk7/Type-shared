@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
 	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
 	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
 	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
-	{"beep","KDAFOB","d",1,10,1,"00E676","FFFFFF","tiny sound blips","beep","Beep beep! Coming through.","silly"},
 }
