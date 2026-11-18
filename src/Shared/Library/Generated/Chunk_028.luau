@@ -216,7 +216,7 @@ return {
 	{"warm milk","IABOKI","FN",2,5,2,"F7F7F2","F2EAD5","steaming mug of milk","slurp","Makes everyone sleepy.","edible,drink,warm,sleepy"},
 	{"warmth","KABOKJ","FSN",2,2,2,"FDBA74","FEF3C7","soft orange glow with a steaming mug and a blanket","hush","Like a hug from a radiator.","warm,support,cute"},
 	{"warp","KLCOKB","DY",4,10,2,"6200EA","84FFFF","stretched streaky blur in motion","warp","Engage! Whoosh.","space,speed"},
-	{"warp pipe","EKCOII","Y",2,9,5,"2E9C95","D9A441","a pipe pops up under you and you come out of another one","warp","Down one pipe, up the other. Do not ask what is in between.","game,platformer,travel"},
+	{"warp pipe","EKCOII","Y",2,9,5,"968A7A","AC6C3A","a stone pipe pops up; you drop in and pop out of another","warp","Down one pipe, up the other. Do not ask what is in between.","game,platformer,travel"},
 	{"warp ship","DLEKHB","DAgY",7,10,7,"ECEFF1","7C4DFF","sleek ship with glowing warp rings","warp","Here. There. Everywhere.","vehicle,space"},
 	{"warp slash","CLCHJI","fY",5,10,2,"BE8CFF","464856","a phase blade blinking through the target","slash","Through, not around.","scifi,melee"},
 	{"warrior","LECJNA","GDf",6,5,6,"991B1B","9CA3AF","sword and shield, chainmail, battle scars","clang","Hits things. Very good at it.","warrior"},

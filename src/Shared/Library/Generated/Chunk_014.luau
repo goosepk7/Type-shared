@@ -149,7 +149,7 @@ return {
 	{"jungle flower","NGBNMI","dFSc",2,1,2,"E91E63","FF9800","huge bright waxy bloom","rustle","Loud colours. Louder smell.","plant,flower"},
 	{"jungle ruins","MGENII","STh",4,1,8,"7CB342","9E9E9E","vine-covered stone steps and statues","echo","Darts shoot from the walls. Duck.","place,adventure,ancient"},
 	{"juniper","NGCCMI","GWFkS",3,1,6,"6D4C41","4DB6AC","twisted trunk, blue berries","rustle","Twisty and full of berries.","plant,tree"},
-	{"junk roller","BECA3F","Wk",5,7,2,"E85D9A","F2C14E","sticky ball covered in rolled-up junk","thud","Na naaa na na na na na naaa.","game,rolling,junk"},
+	{"junk roller","BECA3F","Wk",5,7,2,"E85D9A","F2C14E","sticky ball covered in rolled-up junk","thud","It only gets bigger from here.","game,rolling,junk"},
 	{"junk ship","DFDKHC","DkgB",5,5,7,"B71C1C","6D4C41","ship with ribbed fan-shaped sails","splash","Not junk. Very sturdy, actually.","vehicle,aquatic,ancient"},
 	{"junkyard","MKENII","SNh",3,1,6,"795548","9E9E9E","piles of rusty cars and scrap","rumble","Trash? Treasure? Both.","place,terrain,silly"},
 	{"jupiter","MLFGKJ","kHeL",9,1,10,"D4A373","B5523B","huge banded sphere with a giant red spot","rumble","Biggest planet. Biggest bonk.","space"},
