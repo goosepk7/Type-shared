@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"nozzle","JBBBwB","kIe",4,8,3,"EAB308","9CA3AF","brass hose nozzle on full jet blast","squirt","Set to JET. Never set it to jet.","tool,household"},
 	{"npc","LMCJNA","jdQ",3,3,4,"A3A3A3","F5F5F4","blank face, exclamation mark over head","ding","Says the same line forever. Nice weather.","meme,gaming,silly"},
 	{"nuckelavee","AJDJAA","DfMP",7,6,6,"7F1D1D","365314","skinless horse-rider fused as one","roar","The worst horse in Scottish history.","mythical,spooky"},
 	{"nuclear blast","HAFGKI","KEkPO",10,6,2,"FFEB3B","FF5722","blinding flash, towering cartoon mushroom cloud","boom","Big. Bright. Bye.","explosive,danger"},
@@ -403,4 +402,5 @@ return {
 	{"pedal swan","DBBKHC","DkgB",2,2,3,"FFFFFF","FFB300","big white swan with seats inside","splash","The swan has seen things.","vehicle,aquatic,silly"},
 	{"pee","FBBNGI","dSN",1,3,1,"F7E36B","FBF3B0","small yellow puddle with a wavy shine and a tiny sign","squirt","Should have gone before we left.","silly,gross"},
 	{"peekaboo","KLAOKI","ZO",1,8,1,"F8BBD0","FFFFFF","caster blinking in and out","boo","Peekaboo! I see you.","cute,silly"},
+	{"peel","BGALGI","kNO",2,1,1,"FDE047","A16207","floppy yellow fruit skin lying in wait","whee","The oldest trap in the book.","trap,silly"},
 }

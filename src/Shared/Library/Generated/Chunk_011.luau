@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
 	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},
 	{"giant ice cream sundae","ICEJIF","JkcN",7,2,7,"F7E7CE","B0101E","mountain of scoops and sauce","thud","An avalanche of dessert.","edible,giant,silly"},
 	{"giant jelly","IMEJGG","GUaN",7,2,7,"E0102B","F35A6A","house-sized wobbling dome","thud","A wobbling fortress. Bounces everything off.","edible,giant,silly"},
@@ -356,7 +355,6 @@ return {
 	{"grenade","CABGKF","EkeV",5,6,2,"6B7B3A","4A4D52","pineapple-shaped grenade with pin","boom","Pull pin. Throw. Run.","explosive"},
 	{"grenade barrage","CADEJK","EP",7,5,1,"6B7B3A","4A4D52","shower of grenades","thud","Pins pulled. All of them.","explosive"},
 	{"grenade belt","BMBONI","E",4,5,3,"6B7B3A","7A4E2D","belt of grenades","thud","Fully loaded. Fully nervous.","explosive"},
-	{"grenade launcher","CKCAwI","UEe",7,5,4,"6B7B3A","24262A","fat-barreled drum launcher","thoomp","Lobs bouncy little booms.","explosive,ranged"},
 	{"grenadier","LACJNA","Eke",6,5,5,"DC2626","111827","tall hat, satchel of round bombs","boom","Throws bombs. Very far. Very fast.","warrior,explosive"},
 	{"grevy's zebra","AMDJAA","Dk",5,8,5,"F2F2F0","1A1A1A","thin stripes, big round ears","neigh","Thinner stripes. Bigger ears.","mammal"},
 	{"grey alien","ALCJNA","jlOY",5,5,3,"9CA3AF","0F172A","big head, huge black almond eyes, thin limbs","hum","Abducts cows. Returns them confused.","alien,space"},
@@ -403,4 +401,6 @@ return {
 	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
 	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
 	{"growth potion","BLAO2I","W",3,5,1,"E67E22","BFE6F2","big bottle labelled EAT ME","bubble","Embiggen yourself.","magic,fantasy"},
+	{"growth ray","CLCBwI","jWe",4,7,3,"E67E22","7D3CB5","ray gun with big flared dish","zap","Embiggening in progress.","scifi,ranged"},
+	{"grub","AMAJTD","CWP",1,3,1,"F2E8D0","B8701E","curled white beetle larva","squelch","Lives underground. Waits. Grows.","bug"},
 }

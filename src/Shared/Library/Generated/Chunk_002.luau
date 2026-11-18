@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
 	{"assassin","LICJNA","ZTMY",6,9,3,"1F2937","7F1D1D","hood, hidden blade, leap of faith","whoosh","Silent. Sneaky. Allergic to hay bales.","stealth"},
 	{"assassin bug","AMAJFA","dATMP",1,6,1,"3A2A1A","D8401E","long beak, stalking","buzz","A tiny bug with a big name.","insect"},
 	{"assault rifle","CKCAwI","TeV",6,7,4,"24262A","6B7B3A","rifle with curved magazine","rattle","The standard-issue all-rounder.","modern,ranged"},
@@ -272,7 +273,6 @@ return {
 	{"barrel cactus","NEBLMI","GUST",3,1,7,"7CB342","FFB300","round ribbed ball with long hooks","thud","A spiky beach ball. Do not kick.","plant,desert,sharp"},
 	{"barrel roll","KFBOKK","aY",2,9,2,"B3E5FC","FFFFFF","spiralling roll dodge","whoosh","Do a barrel roll! Dodged.","meme,speed"},
 	{"barreleye","ABAJEC","dZB",1,6,1,"3A3A44","8AE8E0","transparent head with tube eyes","splash","Clear head. You can see its brain.","fish,aquatic,deepsea"},
-	{"barricade","EECCII","GS",3,1,6,"8D6E63","FBC02D","piled crates, planks and a striped barrier","thud","Built from anything not nailed down.","structure,defense"},
 	{"barrier","KLDCnI","G",2,3,8,"80CBC4","E0F2F1","glowing translucent wall panel","hum","Nobody gets through. Nobody.","magic,defence"},
 	{"bartlett pear","IGBAKF","Fke",3,6,2,"E8D84A","C8B83A","classic green-yellow pear","splat","The pear in every painting.","edible,fruit,sweet"},
 	{"baryonyx","AMDJBA","DkfTB",6,6,7,"6A6A4A","C8B07A","croc snout, giant thumb claw","roar","Fishes with a giant thumb claw.","dinosaur,extinct,reptile,predator"},

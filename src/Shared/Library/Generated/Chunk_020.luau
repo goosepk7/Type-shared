@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"poodle moth","AMAJFB","jdA",1,5,1,"F2F2EE","E8E0D8","super fluffy white moth","flutter","A moth that looks like a poodle.","insect,cute"},
 	{"poof","KLBDOJ","jZY",1,10,1,"E1BEE7","FFFFFF","puffy cloud with sparkles","poof","Poof! Now you see me...","magic,silly"},
 	{"pooka","AICJAA","jgY",4,8,4,"111827","FACC15","black shaggy horse with gold eyes","neigh","Gives wild rides. No refunds.","mythical,spooky"},
 	{"pool cue","BMCHzK","kfT",2,7,3,"C49A6C","24262A","long tapered stick","bonk","Bank shot. Off their head.","sport"},
@@ -271,6 +270,7 @@ return {
 	{"quiche","IMBAKK","Uke",3,7,2,"F2D08A","7DBE3A","fluted savory tart","whoosh","An egg pie with a fancy name.","edible"},
 	{"quicksand","FECLII","SHN",5,2,5,"C9A66B","E8D3A7","rippling sand pool, sinking swirl","squelch","Struggling makes it worse. Enjoy.","desert"},
 	{"quicksand pit","EECLII","SHN",3,1,6,"E6C27A","A1887F","rippling patch of wet golden sand","thud","Stop struggling. It only makes it worse.","structure,defense"},
+	{"quickscope","CHBBwK","Te",6,9,1,"3A4250","FFE35A","a full spin and a sniper round with a scope glint","zap","Get rekt, scrub. (Respectfully.)","gaming,shooter,meme"},
 	{"quill","BMAAJK","Te",1,8,1,"F2F2EE","24262A","long feather with ink nib","tap","Writes curses beautifully.","school,fantasy"},
 	{"quince","IGAAKK","keO",3,7,6,"E8D23A","A88A2A","lumpy yellow pear-apple","bonk","Hard as a rock until cooked.","edible,fruit"},
 	{"quit","KABO1B","EZY",3,9,1,"EF4444","111827","controller smashed on the floor, screen reading DISCONNECTED","crash","Alt. F4. Slam. Silence.","gaming,meme"},

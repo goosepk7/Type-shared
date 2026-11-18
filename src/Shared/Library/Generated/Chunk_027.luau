@@ -57,7 +57,7 @@ return {
 	{"trip","KMBLII","O",2,7,1,"A1887F","FFFFFF","invisible tripwire glint","thud","Whoops. Face, meet floor.","silly"},
 	{"tripod","BMBCKI","G",1,1,3,"24262A","C9CED4","three-legged stand","thud","Steady as she goes.","camping,outdoor"},
 	{"tripod fish","ABAJEC","dB",1,6,1,"6A6A6E","C8C8CC","fish standing on three fin stilts","splash","Stands on stilts on the sea floor.","fish,aquatic,deepsea,silly"},
-	{"tripwire","BKALII","Oh",1,1,1,"C9CED4","8E9196","thin taut wire near the floor","snap","Trip. Click. Uh oh.","trap,defense"},
+	{"tripwire","CABLII","EkS",5,2,7,"4A5A3A","FF2A3A","two posts joined by a red laser that blasts whoever crosses","click","Front toward enemy.","gaming,shooter,trap"},
 	{"tripwire bell","BMBLJI","ch",1,1,2,"B58A3A","B89B6A","string of bells across a path","thud","Jingle! Intruder!","trap,defense"},
 	{"trireme","DBEKHC","DkTgB",6,6,7,"8D6E63","B71C1C","long oared warship with a bronze ram","drum","Row! Row! RAM!","vehicle,aquatic,ancient"},
 	{"triton moon","MCDGKJ","Jke",5,4,7,"F8BBD0","ECEFF1","pinkish icy moon with geysers","twinkle","Orbits backwards. Rebel moon.","space,star"},

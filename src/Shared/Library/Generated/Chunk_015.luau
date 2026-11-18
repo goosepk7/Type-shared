@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"leafcutter ant","AMAJLA","CdlfP",1,5,1,"B85A2A","6AC84A","ants carrying leaf pieces","skitter","Farmers with leaf umbrellas.","insect,swarm"},
-	{"leafcutter bee","AJAJLB","ATP",2,7,1,"3A3A3A","C8A07A","bee cutting leaf circles","buzz","Cuts perfect leaf circles.","insect,swarm,venomous"},
 	{"leafhopper","AMAJFG","UdAP",1,6,1,"6AC84A","E8301E","tiny wedge-shaped hopper","buzz","Pops off leaves like popcorn.","insect"},
 	{"leafy sea dragon","ABAJEC","dZB",1,6,1,"C8A84A","6AA060","leafy seahorse with frond fins","splash","Looks like a swimming salad.","fish,aquatic"},
 	{"leak","FBBNGI","WSN",2,2,1,"38BDF8","BAE6FD","ceiling drip into an overflowing bucket","pitter","Plink. Plink. Plink. Plink. Plonk.","household"},
@@ -403,4 +401,6 @@ return {
 	{"magnetic letters","BKAAKI","He",1,6,1,"C0392B","2F6FD1","colourful plastic letters","squeak","Spells B-O-N-K.","toy"},
 	{"magnetic pulse","FKCFOB","HO",5,8,1,"D32F2F","1976D2","red-blue ring tugging metal inward","whum","All your stuff flies toward me.","magnetic"},
 	{"magnetic storm","FKEN5K","lHLP",7,5,4,"C62828","1565C0","swirling metal debris in red-blue field","hum","All your metal flies away.","magnetic,storm"},
+	{"magnetism","FKCNOI","lH",5,5,4,"C4302B","3E64D6","red-blue field lines curving outward","hum","Opposites attract. So does armour.","magnetic"},
+	{"magnetize","KKCAKB","lH",4,7,1,"D32F2F","1976D2","red-blue glowing field on target","hum","Everything metal sticks to you now.","magnetic"},
 }

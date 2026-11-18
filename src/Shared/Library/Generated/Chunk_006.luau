@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"clockwork dragon","AKEKAB","GKAg",8,6,8,"B45309","FACC15","brass dragon with exposed gears and steam vents","tick","Wind it up. Watch it fly.","robot,reptile,steampunk"},
 	{"clockwork engine","OKCM1I","Sh",3,4,6,"B58A3A","B8693D","stack of turning brass gears","tick","Tick tick whirr.","steampunk"},
 	{"clockwork knight","OKCJNA","GDf",5,4,7,"B45309","F59E0B","brass knight with a wind-up key in back","tick","Fights until it runs down. Wind it again.","robot,steampunk"},
 	{"clockwork owl","AKAJDB","AZ",2,7,4,"B45309","22D3EE","brass owl with glass eyes","tick","Watches everything. Ticks quietly.","robot,bird,steampunk"},
@@ -403,4 +402,5 @@ return {
 	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
 	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
 	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
+	{"crown","BHBONI","Fh",3,5,5,"D4A72C","B0103A","jewelled golden crown","swish","Heavy is the head. Shiny though.","royal,shiny"},
 }

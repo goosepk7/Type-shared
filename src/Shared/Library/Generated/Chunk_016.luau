@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"magnetism","FKCNOI","lH",5,5,4,"C4302B","3E64D6","red-blue field lines curving outward","hum","Opposites attract. So does armour.","magnetic"},
-	{"magnetize","KKCAKB","lH",4,7,1,"D32F2F","1976D2","red-blue glowing field on target","hum","Everything metal sticks to you now.","magnetic"},
 	{"magnifying glass","BHABJK","Ke",2,6,2,"B58A3A","BFE6F2","round lens with handle","clank","Concentrated sunshine, bug's nemesis.","science,detective"},
 	{"magnolia","NGDCMI","GdWFkS",3,1,6,"6D4C41","F8BBD0","big waxy pink-white blossoms","rustle","Flowers the size of plates.","plant,tree,flower"},
 	{"magpie","AMBJDB","dAb",2,7,1,"1E1E24","F2F2F2","black and white bird, long blue-green tail","tweet","Steals shiny things. Very shiny.","bird,cute"},
@@ -403,4 +401,6 @@ return {
 	{"mohinga","IBBOGI","FS",3,4,3,"C8A040","F2E8C8","fish noodle soup","slurp","Burmese breakfast soup.","edible,warm,healthy"},
 	{"moi moi","IGBOKI","F",2,5,3,"E8762B","F2C870","steamed bean pudding","crunch","A steamed bean cake.","edible,healthy"},
 	{"mojave desert","MAFNII","KSN",5,1,9,"E6A04D","8D6E63","dusty desert with joshua trees","rumble","Hot days. Cold nights. Weird trees.","place,geography"},
+	{"mokele-mbembe","ABEJAC","GkB",7,3,8,"57534E","166534","long-necked swamp beast","stomp","A dinosaur that forgot to go extinct.","cryptid,aquatic"},
+	{"molasses","IMBLGI","SNO",2,3,3,"3A1A0C","6B3A1E","thick black-brown sauce","gloop","Slower than molasses. Literally.","edible,sticky,sauce,sweet"},
 }

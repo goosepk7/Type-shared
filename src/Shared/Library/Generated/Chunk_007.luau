@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"crown","BHBONI","Fh",3,5,5,"D4A72C","B0103A","jewelled golden crown","swish","Heavy is the head. Shiny though.","royal,shiny"},
 	{"crown imperial","NGBNMI","dFS",2,1,2,"FF6F00","2E7D32","ring of hanging bells under a leaf crown","rustle","Royalty among bulbs.","plant,flower,royal"},
 	{"crown jewels","BHBONI","Fc",3,4,5,"D4A72C","B0103A","cushion of gem crown and sceptre","swish","Shiny enough to distract a dragon.","royal,shiny,treasure"},
 	{"crown-of-thorns starfish","AJAJGA","GTMN",2,1,4,"8A3A6A","E8701E","spiky many-armed starfish","squelch","A starfish wearing a spiky crown.","aquatic,ocean"},
@@ -159,6 +158,7 @@ return {
 	{"damselfly","AMAJFB","dAP",1,7,1,"3A6AE8","1E1E1E","slender metallic blue flyer","buzz","Dragonfly's dainty cousin.","insect"},
 	{"damson","IGAAKF","Fke",3,6,2,"3E1A3E","5E2A5E","small dark plum","splat","Tart and deep purple.","edible,fruit,sweet"},
 	{"dance","KMCNOI","jdc",2,6,2,"E040FB","FFEB3B","disco floor tiles and spotlights","music","Nobody can resist the groove.","music,dance,silly"},
+	{"dance off","KHDNNK","dcO",5,7,2,"FF4FD8","3BE8FF","a disco ring lights up and everyone inside has to dance","ding","You can't not dance to this.","gaming,meme,dance"},
 	{"dancer","LFCJNA","jdY",3,8,3,"F9A8D4","F8FAFC","tutu, pointe shoes, mid-spin","swish","Pirouettes past your attacks.","music"},
 	{"dancing lady orchid","NGBNMI","jdFS",1,1,1,"FFEB3B","6D4C41","sprays of tiny yellow dancing flowers","rustle","Tiny dancers everywhere.","plant,flower"},
 	{"dandelion","NFADMI","jdP",1,2,1,"FFEB3B","FFFFFF","yellow pompom or white puffball","rustle","Make a wish. Spread chaos.","plant,flower"},
@@ -259,6 +259,7 @@ return {
 	{"dentist","LMCJNA","fO",3,4,4,"F8FAFC","22D3EE","mask, mirror, buzzing drill","whir","Open wide. This won't hurt. Much.","healer,silly"},
 	{"dentures","BMBJGG","UQf",3,7,3,"F9A8D4","FFFFFF","wind-up pink gums and white teeth hopping and chattering","chatter","Grandpa wants them back. They do not want to go.","silly,toy"},
 	{"deodorant","BFAD2K","Me",1,6,1,"F2F2EE","2F6FD1","stick or spray can","thud","Not today, stinky.","bathroom,silly"},
+	{"deploy cover","EKCCnI","GS",3,6,6,"7C8794","F2C230","a folding steel barricade unfolds in front of you","clang","Stay behind the yellow line.","gaming,shooter,defence"},
 	{"depth","MBEN5I","iZHN",6,1,7,"0B1E3A","1E3A8A","dark blue drop-off fading to black, one glowing lure","whalesong","No floaties allowed in the deep end.","ocean,spooky"},
 	{"depth charge","CBCGKF","EkB",7,4,3,"3A3F45","8E9196","barrel bomb that sinks","boom","Drops in. Shakes everything.","explosive,ocean"},
 	{"derecho","GFEFOB","kIP",8,8,3,"455A64","CFD8DC","long racing line of violent storm wind","howl","A storm that goes in a straight line. Fast.","storm,air"},
@@ -402,5 +403,4 @@ return {
 	{"donut decoy","IMBLKI","jdc",2,3,3,"F2A6C8","D9A04A","tempting donut on a plate","chomp","Look over there! A donut!","edible,sweet"},
 	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
 	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
-	{"doom","KIEGKI","iEO",8,4,4,"1A0033","FF1744","ominous black-red orb descending slowly","boom","You feel a sense of impending doom.","spooky"},
 }
