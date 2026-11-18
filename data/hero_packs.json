@@ -437,6 +437,12 @@
   "pieces": 32,
   "tris": 12320
  },
+ "cactus creature": {
+  "assetId": 109723762245113,
+  "hash": "098879dd0154b386",
+  "pieces": 9,
+  "tris": 7000
+ },
  "calf": {
   "assetId": 117335009320433,
   "hash": "3fbb88d9f12948e4",
@@ -635,6 +641,12 @@
   "pieces": 15,
   "tris": 13500
  },
+ "cloud spirit": {
+  "assetId": 118078880199715,
+  "hash": "11acd5d74ebc0221",
+  "pieces": 12,
+  "tris": 7500
+ },
  "cloud surfboard": {
   "assetId": 126386035064335,
   "hash": "8895dca035b3d522",
@@ -676,6 +688,12 @@
   "hash": "7f12046297356929",
   "pieces": 24,
   "tris": 10520
+ },
+ "comet beast": {
+  "assetId": 79713440176384,
+  "hash": "fd8eef7c16dd4e42",
+  "pieces": 22,
+  "tris": 8750
  },
  "condor": {
   "assetId": 91134343466310,
@@ -1589,6 +1607,12 @@
   "pieces": 16,
   "tris": 13900
  },
+ "jack o lantern": {
+  "assetId": 77569419143953,
+  "hash": "639b5b51a3d92393",
+  "pieces": 5,
+  "tris": 4550
+ },
  "jackal": {
   "assetId": 103926622212425,
   "hash": "016d72fe3ff7174a",
@@ -1889,6 +1913,12 @@
   "pieces": 28,
   "tris": 16066
  },
+ "moon beast": {
+  "assetId": 93314232535941,
+  "hash": "72f6548cc25bdb3d",
+  "pieces": 16,
+  "tris": 8200
+ },
  "moon lander": {
   "assetId": 86485191576787,
   "hash": "a2383ae9785853be",
@@ -1966,6 +1996,18 @@
   "hash": "b9f73f559ea5bc43",
   "pieces": 28,
   "tris": 17208
+ },
+ "mushroom king": {
+  "assetId": 92511623707093,
+  "hash": "edbbd61e43e5b297",
+  "pieces": 17,
+  "tris": 8450
+ },
+ "mushroom sprite": {
+  "assetId": 109263031876921,
+  "hash": "0e733f2d908bcd7e",
+  "pieces": 7,
+  "tris": 4200
  },
  "narwhal": {
   "assetId": 88150653994224,
@@ -2266,6 +2308,12 @@
   "hash": "ebcb8f600efae73c",
   "pieces": 22,
   "tris": 17090
+ },
+ "pumpkin head": {
+  "assetId": 79487688797973,
+  "hash": "6e0cfaa3e34f4d60",
+  "pieces": 19,
+  "tris": 8350
  },
  "puppy": {
   "assetId": 90775983485608,
@@ -2651,6 +2699,12 @@
   "pieces": 8,
   "tris": 4720
  },
+ "smoke wraith": {
+  "assetId": 120431466360845,
+  "hash": "e6d030c172a18826",
+  "pieces": 12,
+  "tris": 8650
+ },
  "snail": {
   "assetId": 133661326674879,
   "hash": "3e4208a69be574a6",
@@ -2771,6 +2825,12 @@
   "pieces": 26,
   "tris": 12000
  },
+ "star spirit": {
+  "assetId": 89951153112225,
+  "hash": "483a2b5c79213b69",
+  "pieces": 6,
+  "tris": 3400
+ },
  "starfighter": {
   "assetId": 136135606717369,
   "hash": "0a46920654984025",
@@ -2836,6 +2896,12 @@
   "hash": "618112266eb4a743",
   "pieces": 9,
   "tris": 5968
+ },
+ "sun spirit": {
+  "assetId": 71557901325948,
+  "hash": "2d98303023e95b0c",
+  "pieces": 4,
+  "tris": 4500
  },
  "sunfish": {
   "assetId": 89959280757285,
