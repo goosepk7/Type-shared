@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stench","FJBDOJ","jdN",2,3,2,"9CA84A","D8E08A","wavy green stink lines","whiff","Smells like gym socks and regret.","silly,toxic"},
+	{"stencil","BMAIyI","G",1,6,1,"F2F2EE","24262A","cut-out pattern sheet","splat","Neat lines, sharp edges.","art"},
+	{"step ladder","BKBCII","G",1,3,4,"C9CED4","8E9196","folding A-frame ladder","clank","For reaching the cookies.","tool"},
 	{"step pyramid","EMFMII","GSeh",5,1,10,"9E9E9E","7CB342","stepped pyramid, steep stairs, temple top","thud","Climb it if you dare. Traps on every step.","structure,defense,tower,ancient"},
 	{"stepbrother","LMBJNA","Qfb",3,6,3,"8B5CF6","FBBF24","kid dividing a bedroom with a strip of tape","giggle","This side is mine. That side is also mine.","family,silly"},
 	{"stepmom","LMCJNA","GFO",4,4,5,"0D9488","F2D0B4","grown-up with a packed lunch and a minivan key","ding","Bonus parent. Extra snacks unlocked.","family"},
@@ -400,7 +403,4 @@ return {
 	{"tapeworm","AMAJTD","CiP",1,3,1,"F2EEE0","E8D8B0","long flat ribbon worm","squelch","Rude houseguest.","bug"},
 	{"tapir","AMCJAA","DkIB",4,4,8,"2A2624","E6E2DC","pig-like, short trunk, black-white saddle","trumpet","Looks like a pig wearing an oreo costume.","mammal,heavy,wild,silly"},
 	{"taquito","IMBHJI","fT",3,5,4,"D9A04A","F2E2B8","thin rolled crispy tube","bonk","A taco rolled into a spear.","edible,silly"},
-	{"tar","FEBLII","SN",3,2,4,"1E1B18","4A443D","glossy black sticky puddle","squelch","Sticky now. Sticky forever.","flammable"},
-	{"tar monster","AJCJGF","HN",4,2,5,"0A0A0A","52525B","glossy black sticky blob","squelch","Sticky. Everything sticks. Forever.","slime"},
-	{"tar pit","MICLII","KSHN",4,1,6,"212121","424242","bubbling black sticky pool","bubble","Very sticky. Very permanent.","place,terrain"},
 }

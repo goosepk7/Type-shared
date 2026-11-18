@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sheepdog puppy","AMAJAA","dQf",1,6,2,"1E1E1E","F2F2F2","fluffy black and white pup","yip","Already herding its siblings.","mammal,pet,cute"},
+	{"sheepshead","ABCJEC","DfB",4,7,4,"8A8A8A","1E1E1E","striped fish with human teeth","splash","Has human-looking teeth. Eek.","fish,aquatic,spooky,silly"},
 	{"sheet","BFCLVJ","jAN",2,5,2,"FFFFFF","BFDBFE","white bedsheet billowing with two eye holes","whoosh","Either laundry or a ghost. Fifty-fifty.","household,spooky,silly"},
 	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
 	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
@@ -401,7 +403,4 @@ return {
 	{"soccer goal","BMDLII","NO",1,1,4,"F2F2EE","F2F2EE","rectangle frame with net","bonk","They shoot. They're stuck.","sport"},
 	{"soccer mom","LMCJNL","DFh",3,6,5,"F472B6","15803D","visor, minivan, orange slices","honk","Orange slices for everyone.","family,silly"},
 	{"soccer player","LMCJNA","Dke",4,8,4,"15803D","F8FAFC","jersey, shin guards, ball at feet","thud","Kicks the ball. And you. Gooool!","sport"},
-	{"sock monster","AMAJGG","Zb",1,7,1,"EF4444","F8FAFC","striped sock with button eyes","giggle","Where all your missing socks went.","silly"},
-	{"sock nunchucks","CJBHJK","jfM",1,8,1,"F2F2EE","8E9196","two smelly socks tied together","boing","Stinky martial arts.","silly"},
-	{"sock puppet","BMAJGG","jd",1,6,1,"F2F2EE","C0392B","sock with button eyes","squeak","Fierce. Floppy. Fluffy.","toy"},
 }

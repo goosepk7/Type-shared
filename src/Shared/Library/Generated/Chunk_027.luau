@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"trail","MEDNnI","DQSN",4,2,6,"C2A878","6B8E23","winding dirt track with signposts pointing everywhere","crunch","Stay on it. It does not stay on you.","place,terrain"},
+	{"trail mix","IEAELB","FeP",2,7,1,"A86A3A","C2302B","nuts, raisins, candy bits","pitter","Adventurer fuel. Pick out the candy.","edible,sweet"},
+	{"train","DMEKHL","DkTg",7,7,9,"2D3A4A","C0392B","long engine with carriages, cowcatcher","horn","Runs on time. Runs over everything.","mechanical,vehicle,land"},
+	{"train conductor","LMCJNL","Dk",4,6,5,"1E3A8A","FACC15","striped cap, whistle, pocket watch","choo","All aboard! Choo choo.","vehicle"},
 	{"train station","EMDCII","GSh",3,1,8,"B5523B","37474F","long platform, clock, arched roof","thud","All aboard the pain train.","structure,building"},
 	{"train yard","MMENII","kSh",3,1,7,"6D4C41","9E9E9E","tangle of tracks and parked wagons","crowd","Trains from every direction.","place"},
 	{"training dummy","BMCCNI","Gdc",1,1,5,"D2B48C","C0392B","straw dummy with target face","beep","Hit it. It forgives you.","training"},
@@ -399,8 +403,4 @@ return {
 	{"wafer","IMBAKK","Uke",3,7,2,"F2D08A","E8C07A","crisp waffled rectangle","whoosh","Crispy layers of almost nothing.","edible"},
 	{"waffle","IMCIII","GF",3,3,4,"E8B04A","C8803A","square grid cake","thud","A grid of pockets for syrup.","edible,breakfast"},
 	{"waffle cone","ICBAuB","JTe",3,7,2,"D9A066","F9A8D4","pointy crisp cone, pink scoop sliding off","crunch","Pointy end out. Sprinkles optional.","edible,sweet,frozen"},
-	{"waffle fries","IMBAKK","Uke",3,7,2,"E8B04A","F2D08A","lattice-cut golden fries","whoosh","Fries with a waffle pattern.","edible,breakfast"},
-	{"waffle iron","BABLII","KO",3,1,5,"24262A","DDE3E8","hinged grid griddle","clang","Chomp. Now you're a waffle.","kitchen,silly"},
-	{"waffle wall","IMDCII","Gc",4,2,7,"E8B04A","C8803A","giant grid waffle barricade","thud","A barricade with syrup pockets.","edible,giant"},
-	{"wage","BMBO2J","Fcb",2,5,2,"22C55E","F8FAFC","pay envelope with three coins and a long list of deductions","jingle","Payday! And it is gone.","job,silly"},
 }

@@ -403,5 +403,4 @@ return {
 	{"leader","LHCJNA","GQfh",5,5,6,"B45309","FDE047","commander pointing forward, cape, feathered hat","fanfare","Follow me! Wait, which way were we going?","warrior,royal"},
 	{"leaellynasaura","ACCJAA","dk",3,5,6,"8A7A6A","D8C8B0","small big-eyed polar dino","honk","Big eyes for long polar nights.","dinosaur,extinct,reptile"},
 	{"leaf","NGAELJ","dSP",1,6,1,"7CB342","FF9800","single flat leaf with veins","rustle","Floats down gently. Distracts briefly.","plant"},
-	{"leaf blower","OFCFJK","kIe",3,7,4,"E67E22","24262A","handheld engine with long nozzle","whoosh","Moves leaves. Moves enemies.","tool,garden,loud"},
 }

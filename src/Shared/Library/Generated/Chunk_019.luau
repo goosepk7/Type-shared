@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"peasant","LMCJNA","Ph",3,4,3,"A16207","78350F","burlap clothes, pitchfork","grunt","Angry mob in one person. Grab torches.","historical"},
+	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
 	{"pebble","FEAAKB","Ude",1,8,2,"9E9A94","D6D2CC","small smooth river stone","tick","Skips on water. Bonks on heads.","silly"},
 	{"pebble beach","MBDNII","SN",2,1,6,"9E9E9E","4FC3F7","grey round pebbles and crashing waves","rumble","Crunchy underfoot. Painful to fall on.","place,terrain"},
 	{"pecan","IEAAKK","UeO",2,8,5,"7A3E1E","A86A3A","long glossy brown nut","tok","Southern charm in a shell.","edible,nut"},
@@ -401,6 +403,4 @@ return {
 	{"politician","LMCJNA","jdc",3,4,4,"1E3A8A","DC2626","suit, sash, giant scissors","ding","Makes many promises. Keeps none.","silly"},
 	{"pollen","NGBDOI","jSPO",2,4,1,"FFEB3B","FFF59D","drifting golden dust cloud","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly"},
 	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
-	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
-	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},
 }

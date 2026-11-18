@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ravioli","IMAELB","ceP",2,7,1,"F2D08A","C8302B","square stuffed pasta pillows","pitter","Tiny pasta pillows.","edible"},
+	{"ray","FHCBKB","KTe",4,10,1,"FFE66D","FFFFFF","straight golden beam of light with sparkles","zing","A little ray of sunshine. In your eyes.","light"},
 	{"ray gun","CDBBwI","eLO",5,8,3,"DDE3E8","C0392B","retro finned pistol with ring nozzle","zap","Zzzorp! Vintage future.","scifi,retro,ranged"},
 	{"ray of frost","FCCBKI","JTeN",5,8,2,"4FC3F7","E1F5FE","thin pale-blue beam crusting targets in ice","crackle","Chill out. That is an order.","frozen"},
 	{"ray of sickness","FJCBKI","jMe",4,7,1,"C0CA33","7CB342","sickly yellow-green ray","bleh","Seasick, on land.","toxic,silly"},
@@ -401,6 +403,4 @@ return {
 	{"safety pin","BKAAJI","Te",1,8,1,"C9CED4","C9CED4","bent pin with clasp","splat","Safety not guaranteed.","art"},
 	{"saffron","IHBDOJ","FP",2,5,1,"E8402B","F2A62B","red threads in a tiny jar","puff","Worth more than gold, thread for thread.","edible,spice,royal"},
 	{"sage","LLCJNA","jFe",4,3,4,"F8FAFC","0EA5E9","long robe, longer beard, scroll","chime","Says one wise thing. You lose anyway.","magic"},
-	{"sage grouse","AMBJDA","df",2,4,2,"8A7A6A","F2F2EE","fanned spiky tail, chest sacs","cluck","Puffs out two chest balloons.","bird,farm"},
-	{"sagebrush","NEBCMI","GS",2,1,4,"9E9E9E","7CB342","silvery scrubby desert bush","rustle","Smells like a desert rainstorm.","plant"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sock monster","AMAJGG","Zb",1,7,1,"EF4444","F8FAFC","striped sock with button eyes","giggle","Where all your missing socks went.","silly"},
+	{"sock nunchucks","CJBHJK","jfM",1,8,1,"F2F2EE","8E9196","two smelly socks tied together","boing","Stinky martial arts.","silly"},
+	{"sock puppet","BMAJGG","jd",1,6,1,"F2F2EE","C0392B","sock with button eyes","squeak","Fierce. Floppy. Fluffy.","toy"},
 	{"socks","BJAANI","dMe",1,7,1,"F2F2EE","8E9196","crumpled smelly sock","swish","Smells like defeat.","clothing,silly"},
 	{"soda","IBBFKI","EkIP",3,7,1,"C8202B","F7F7F2","fizzy can, bubbles","fizz","Shake it. Point it. Pop it.","edible,drink,fizzy"},
 	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
@@ -400,7 +403,4 @@ return {
 	{"stegosaurus","AMDJAA","GkfT",6,3,9,"6A7A4A","D8701E","back plates, spiked tail","grunt","Brain the size of a walnut. Tail of doom.","dinosaur,extinct,reptile,armored"},
 	{"steller's jay","AMAJDB","jdA",1,7,1,"1E2A4A","3A5AA8","dark blue with black crest","tweet","Copies hawk calls. Trickster.","bird,cute"},
 	{"steller's sea cow","ABEJEC","FfB",6,2,4,"6A6A6E","B8B8BC","huge manatee","bark","Giant gentle sea cow. Gone too soon.","mammal,aquatic,extinct"},
-	{"stench","FJBDOJ","jdN",2,3,2,"9CA84A","D8E08A","wavy green stink lines","whiff","Smells like gym socks and regret.","silly,toxic"},
-	{"stencil","BMAIyI","G",1,6,1,"F2F2EE","24262A","cut-out pattern sheet","splat","Neat lines, sharp edges.","art"},
-	{"step ladder","BKBCII","G",1,3,4,"C9CED4","8E9196","folding A-frame ladder","clank","For reaching the cookies.","tool"},
 }
