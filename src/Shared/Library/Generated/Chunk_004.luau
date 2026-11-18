@@ -114,6 +114,7 @@ return {
 	{"budgie","AMAJDB","jdA",1,6,2,"6AD84A","F2E82A","small green-yellow wavy-striped parrot","squawk","Talks to its mirror. Wins.","bird,jungle,silly,pet"},
 	{"buffalo chicken","IABAKK","Kc",5,7,2,"D8402B","F7F2EC","orange-red saucy chicken","sizzle","Tangy, spicy, sauced.","edible,spicy,flammable"},
 	{"buffalo sauce","IABAKK","KP",5,7,2,"E8502B","F2862B","orange-red tangy sauce","sizzle","Tangy orange heat.","edible,spicy,flammable,sauce"},
+	{"buffering wheel","KLCLKK","SO",4,2,5,"7FD8FF","F4F7FF","a ring of glowing dots spinning on the ground","tick","Step in. Please wait. Please wait. Please wait.","meme,internet,trap,glitch"},
 	{"buffet","IMEJII","GdFc",6,1,6,"D9A04A","D7263D","long table piled with dishes","thud","An all-you-can-eat distraction.","edible,giant,silly"},
 	{"bug net","BMBLKI","O",1,6,1,"F2F2EE","C49A6C","fine net on a long pole","thud","Catch 'em all. Gently.","camping,outdoor"},
 	{"bug spray","BJADKI","MI",1,7,1,"2E8B57","F1C40F","aerosol can with green mist","thud","Shoo! Shoo!","camping,outdoor"},
@@ -402,5 +403,4 @@ return {
 	{"cargo","BKDL2I","GkO",6,2,8,"B45309","1E3A8A","big corrugated steel box lowered on four cables","clang","Contents: 40,000 rubber ducks. Really.","heavy,vehicle"},
 	{"cargo helicopter","DFEKHE","AlHg",5,5,7,"556B2F","37474F","long fuselage with two big rotors","chop","Picks up tanks. And you.","vehicle,air"},
 	{"cargo plane","DFFKHB","DAklgh",6,6,8,"607D8B","37474F","fat body, high wings, rear ramp","jet","Drops crates. Some of them land on you.","vehicle,air"},
-	{"cargo ship","DBFKHC","GDkgB",7,2,10,"C62828","1E88E5","long hull stacked with coloured crates","horn","Delivers twenty thousand crates of pain.","vehicle,aquatic"},
 }

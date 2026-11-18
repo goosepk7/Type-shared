@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hole punch","BMALJK","T",1,4,4,"8E9196","24262A","two-hole office punch","tap","Ka-chunk. Holes.","office"},
+	{"hollandaise","IMBLGI","kSO",2,3,2,"F2D870","F2C24A","smooth yellow buttery sauce","squeak","Fancy butter sauce for fancy eggs.","edible,slippery,silly,sauce"},
+	{"hollow tree","NGDCMI","GZS",3,1,7,"6D4C41","43A047","wide trunk with a hidey-hole","rustle","Hide inside. Pop out. Surprise!","plant,tree"},
+	{"hollow visage","KICOKI","Dif",8,9,2,"F2EEE6","B3122E","a cracked white skull mask with red stripes","growl","Put on the face. Lose the manners.","anime,transform"},
 	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},
 	{"hollyhock","NGCNMI","dFS",2,1,2,"E91E63","F8BBD0","tall spire of big papery blooms","rustle","Taller than you. Prettier too.","plant,flower"},
 	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
@@ -399,8 +403,4 @@ return {
 	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
 	{"jab","KMBAKB","DfO",3,10,1,"FCA5A5","FFFFFF","quick straight glove punch with a tiny impact star","pow","Quick. Rude. Repeatable.","melee,sport"},
 	{"jabiru","AMDJDA","AfT",4,5,2,"F2F2F2","E8301E","huge stork with red collar","squawk","Giant stork. Red scarf.","bird,wetland"},
-	{"jabuticaba","NGCCMI","GWFkS",2,1,5,"6D4C41","4A148C","trunk covered in dark round fruit","rustle","Grows grapes on its trunk. Weird.","plant,tree,silly"},
-	{"jacamar","AMAJDB","dA",1,7,1,"2AA06A","C8601E","long needle beak","tweet","Catches butterflies mid-air.","bird,cute"},
-	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
-	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
 }

@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"parthenon","EHFCII","GFkS",5,1,10,"F5F5F5","E6D3A3","marble temple ringed by columns","rumble","Ancient Greek columns of justice.","structure,landmark,ancient"},
+	{"particle","FLAELJ","TPY",2,9,1,"A78BFA","22D3EE","shimmering cloud of tiny glowing dots blinking in and out","shimmer","Here. Not here. Here. Physics is weird.","science"},
+	{"particle accelerator","ODFN1I","EL",8,1,8,"C9CED4","3FC1D9","enormous ring of magnets","bubble","Smashes atoms. Smashes foes.","science"},
+	{"particle cannon","CDDMxI","KTe",8,5,6,"F2F2EE","3FC1D9","cannon with accelerator rings","zap","Science, but very loud.","scifi,ranged"},
+	{"partisan","CKDAuI","fT",5,5,5,"8A929B","8B5A2B","broad spearhead with side wings","whoosh","A spear with very wide shoulders.","medieval,sharp"},
+	{"partner","LMCJNA","GQFf",4,6,5,"F59E0B","78350F","buddy standing back to back with you, finger guns","yeehaw","Howdy, pardner. Dibs on the left ones.","support"},
 	{"partridge","AMBJDA","df",2,4,2,"8A7A6A","C8703A","round plump game bird","cluck","Sits in pear trees. Allegedly.","bird,farm,holiday"},
 	{"party","KMCNOI","jdc",2,5,2,"FF4081","FFEB3B","confetti, streamers and disco lights","music","Nobody fights at a party.","silly"},
 	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
@@ -397,10 +403,4 @@ return {
 	{"plus","KHBOKJ","WFV",3,5,2,"22C55E","FFFFFF","chunky green plus sign with a +1 popping out","ding","One more. And one more. And one more.","school,support"},
 	{"pluto","MCDGKJ","Jke",5,4,7,"D7CCC8","A1887F","small icy sphere with a heart patch","rumble","Still a planet in our hearts.","space,cute"},
 	{"po boy","IMBHJI","Ff",3,5,4,"D9A04A","7DBE3A","crusty long sandwich","bonk","A long crusty sandwich from New Orleans.","edible,silly"},
-	{"poached egg","IMBLGG","USN",2,3,3,"F7F2E8","F2B81A","soft white dome, runny yolk","wobble","Wobbly, delicate, delightful.","edible,wobbly,breakfast"},
-	{"poblano","IABAKK","KeP",3,7,2,"1E4A1E","3E6B2A","wide dark green pod","sizzle","Mild, dark, and great stuffed.","edible,spicy,flammable,pepper"},
-	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
-	{"pocket dimension","MLFNII","jZSY",6,1,8,"7C4DFF","00E5FF","swirling folded space","chime","Step in, vanish completely.","place,mythical"},
-	{"pocket dragon","AAAJAB","KAQ",2,8,1,"DC2626","FACC15","palm-sized dragon on your shoulder","chirp","Lights your candles. And your sleeves.","cute,reptile"},
-	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
 }

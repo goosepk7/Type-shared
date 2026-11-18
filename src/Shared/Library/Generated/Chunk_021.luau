@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"raid","KADFLA","DPbh",7,7,4,"B91C1C","FACC15","charging mob of mixed heroes with a war horn and loot bags","horn","Forty people. One boss. Nobody read the guide.","gaming"},
+	{"raijin","ADDJNJ","AeLO",7,6,6,"1D4ED8","FACC15","oni drummer in a ring of thunder drums","thunder","Drums so hard the sky crackles.","yokai,storm"},
+	{"raiju","ADCJAB","DAL",5,9,4,"2563EB","FDE047","wolf of blue lightning, crackling tail","zap","Naps in belly buttons during storms.","yokai,storm"},
+	{"rail bird","AMBJDA","AfT",2,5,2,"8A6A4A","C8A07A","slim marsh bird","squawk","Thin as a rail. Literally.","bird,wetland"},
+	{"railgun","CDDBwI","DTe",8,10,4,"7FD8FF","3A3F48","twin rails glowing, then one straight blue-white line","zap","Magnets, but angry.","scifi,ranged"},
+	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
 	{"railway bridge","EMECII","GSh",3,1,9,"6D4C41","9E9E9E","timber trestle carrying train tracks","thud","A train is coming. On top of you.","structure"},
 	{"rain","GBCEOJ","SN",2,4,2,"5D8AA8","C9E6F5","grey cloud with steady falling drops","patter","Forecast says: you, wet.","storm,aquatic"},
 	{"rain boots","BBBONI","G",1,5,3,"F1C40F","F1C40F","shiny tall rubber boots","swish","Splash with impunity.","clothing"},
@@ -233,6 +239,7 @@ return {
 	{"riptide","FBCF6C","HN",5,7,3,"11577F","9ED9F2","sneaky outward water drag lines","swoosh","Looks calm. Drags you out to sea.","aquatic"},
 	{"rising dragon","KACOKI","Kklf",7,9,2,"FF6A2A","FFD38A","a flaming uppercut that rides a dragon of fire","whoosh","Up you go! And I go too!","fighting,melee,fire"},
 	{"rising earth","FECLII","Gl",4,4,6,"8D6E63","C5E1A5","chunk of ground lifting into a platform","rumble","Instant high ground.","heavy"},
+	{"rising ticker","KHCOKJ","DW",5,7,4,"3BE07A","1C2B4A","a green zigzag ticker arrow climbing behind you","ding","Line goes up. Every hit, line goes up more. Until it doesn't.","meme,internet,buff"},
 	{"risk","KLBG3K","jEF",5,6,1,"DC2626","111827","tumbling red dice over a cliff edge","rattle","Could go great. Could go boom. Roll.","gaming,luck"},
 	{"risotto","IMBLGI","FN",2,3,3,"F2E8C8","E8C070","creamy rice in a shallow bowl","gloop","Stirred for ages. Worth every minute.","edible,sticky"},
 	{"risso's dolphin","ABCJEC","UDB",4,8,4,"9A9AA0","F2F2F2","scarred grey blunt dolphin","click","Covered in scratches. Tough life.","mammal,aquatic,ocean"},
@@ -396,11 +403,4 @@ return {
 	{"rottweiler","AMCJAA","GDQf",5,7,4,"1C1814","9A5A2A","muscular black dog, rust markings","bark","Big tough guardian. Secret cuddler.","mammal,pet"},
 	{"round","KMBF6B","FIO",3,6,1,"EF4444","F8FAFC","ring girl card reading ROUND 1 and a bell being struck","bell","Round one. FIGHT!","gaming,sport"},
 	{"round house","EECCII","GS",2,1,5,"C9A55A","8D6E63","round stone hut with a cone of thatch","thud","Round walls. No corners to hide in.","structure,defense,ancient"},
-	{"round shield","BKCIyI","Gk",3,5,6,"8B5A2B","5B6168","painted wooden round shield","clang","Planks, paint, and pure stubbornness.","armor,defense"},
-	{"roundabout","EMDNII","jS",2,1,7,"424242","7CB342","circular road with a grassy middle","thud","Round and round. Which exit?","structure,silly"},
-	{"roundhouse kick","KMCN5K","kf",6,8,2,"FF8A65","FFFFFF","spinning leg arc ring","whoosh","Spin and kick. Like a pro.","melee"},
-	{"row","KBBOiC","DIB",3,6,3,"8B5A2B","38BDF8","two oars heaving in rhythm with splash arcs","splash","Merrily, merrily, merrily, merrily. Stroke!","sport,aquatic"},
-	{"row house","EMCCII","GSh",2,1,7,"B5523B","F5E6CA","narrow joined houses in a row","thud","Neighbours on both sides. All angry.","structure,building"},
-	{"rowboat","DBBKHC","DkgB",2,4,3,"8D6E63","F2E6C9","small wooden boat, two oars","splash","Row, row, row your boat... into them.","vehicle,aquatic,silly"},
-	{"royal archer","LFCJNA","Te",5,6,4,"7C3AED","FACC15","royal tabard, golden longbow","twang","Never misses. By royal decree.","royal,archer"},
 }

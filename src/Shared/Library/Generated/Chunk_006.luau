@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cleave","KKDHJB","kfT",7,5,3,"90A4AE","ECEFF1","huge sweeping arc hitting many","shing","One swing. Many problems solved.","sharp,heavy"},
 	{"cleaver","CKBHrK","fV",4,6,4,"8A929B","24262A","rectangular heavy chopping blade","shing","Chop first, ask questions later.","medieval,sharp,kitchen"},
 	{"clematis","NGCLMI","WSHN",2,1,3,"7E57C2","FFFFFF","climbing vine with big starry blooms","rustle","Climbs anything. Smothers everything.","plant"},
 	{"clementine","IMBAKF","jke",3,6,2,"F59B26","2F6B2A","tiny bright orange, two leaves","squirt","Tiny, sweet, and full of squirt.","edible,fruit,sour"},
@@ -167,6 +168,7 @@ return {
 	{"comet dash","KCCOKB","DJk",6,10,2,"B3E5FC","FFFFFF","caster wrapped in icy glow with long tail","whoosh","Zoom like a comet.","space,speed"},
 	{"comet dragon","ALFKCB","EAkeg",9,8,8,"1E1B4B","F0ABFC","star-speckled serpent dragon with comet tail","roar","Swims through space. Eats stardust.","mythical,cosmic,reptile,danger"},
 	{"comet heel","KACHKI","DkO",7,8,3,"FF8A3C","FFE9C2","a blazing leap that ends in a cratering kick","thump","Feet first. Always feet first.","anime,hero"},
+	{"comet kitty","AHBOAB","DAN",4,10,2,"FFB3D9","8EE6FF","a round star-tailed cat comet with a rainbow ribbon","whoosh","Purr at the speed of light. Leave a rainbow.","meme,internet,cat,mobility"},
 	{"comet shower","HCEEOB","EJkP",8,7,4,"B3E5FC","4FC3F7","dozens of icy comets with blue tails","whoosh","Brain freeze for everyone.","space,frozen"},
 	{"comet strike","HCEAKB","EJkPO",8,8,6,"A8DBFF","FFFFFF","icy comet diving into a frosty crater burst","boom","Brain freeze, from orbit.","space,frozen"},
 	{"comet volley","KLCAKB","EeV",6,8,2,"FFD45A","FFF6CF","both palms hosing the target with golden ki blasts","zap","Did we get him? (We did not get him.)","anime,ki"},
@@ -340,6 +342,7 @@ return {
 	{"cowshed","EMCCII","GSh",2,1,6,"F5F5F5","3E2723","long shed with stalls and hay","thud","Moo-ve aside.","structure,farm,silly"},
 	{"coxinha","IMBAKF","ke",3,6,2,"D9A04A","F2E8C8","teardrop croquette","splat","A crispy teardrop of chicken.","edible"},
 	{"coyote","AMCJAA","DjQfh",4,7,4,"B08E64","E8D8C0","lanky tan canine, big ears","howl","Yips at the moon. Beep beeps optional.","mammal,predator,wild,desert"},
+	{"cozy inferno","MADNlI","GKS",6,3,7,"FF7A2E","FFE2A8","a cosy room corner, mug steaming, flames everywhere","crackle","You sip your tea. The room is on fire. You are unbothered.","meme,internet,fire,cozy"},
 	{"crab","ABBJRA","GfT",2,4,5,"D8401E","F2C8A0","wide shell, two big pincers, sideways walk","clack","Walks sideways to avoid conversations.","crustacean,aquatic,armored"},
 	{"crab apple","IMAAKF","jke",3,6,2,"C8202B","F2D08A","tiny sour red apple","squirt","Tiny, sour, and fierce.","edible,fruit,sour"},
 	{"crab cake","IMBAKK","Uke",3,7,2,"D9A04A","E8604A","golden fried patty","whoosh","A patty made of the sea.","edible"},
@@ -400,7 +403,4 @@ return {
 	{"crew","LBDJLA","Gfeh",5,5,5,"1E40AF","F8FAFC","sailors hauling a rope together, striped shirts","arr","All hands on deck! Some feet too.","team,pirate"},
 	{"crib","BMCL0I","GO",1,1,5,"F2F2EE","F06292","small barred baby bed","thud","A cage, but cute.","furniture,household"},
 	{"cricket","AMAJFG","UdAP",1,6,1,"4A3A2A","8A6A44","dark hopper rubbing legs","chirp","Chirps all night. Can't stop.","insect"},
-	{"cricket ball","BMAA3F","ke",2,9,5,"9E1B32","F2F2EE","hard red stitched ball","bonk","Very red. Very hard.","sport"},
-	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
-	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 }

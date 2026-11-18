@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"round shield","BKCIyI","Gk",3,5,6,"8B5A2B","5B6168","painted wooden round shield","clang","Planks, paint, and pure stubbornness.","armor,defense"},
+	{"roundabout","EMDNII","jS",2,1,7,"424242","7CB342","circular road with a grassy middle","thud","Round and round. Which exit?","structure,silly"},
+	{"roundhouse kick","KMCN5K","kf",6,8,2,"FF8A65","FFFFFF","spinning leg arc ring","whoosh","Spin and kick. Like a pro.","melee"},
+	{"row","KBBOiC","DIB",3,6,3,"8B5A2B","38BDF8","two oars heaving in rhythm with splash arcs","splash","Merrily, merrily, merrily, merrily. Stroke!","sport,aquatic"},
+	{"row house","EMCCII","GSh",2,1,7,"B5523B","F5E6CA","narrow joined houses in a row","thud","Neighbours on both sides. All angry.","structure,building"},
+	{"rowboat","DBBKHC","DkgB",2,4,3,"8D6E63","F2E6C9","small wooden boat, two oars","splash","Row, row, row your boat... into them.","vehicle,aquatic,silly"},
+	{"royal archer","LFCJNA","Te",5,6,4,"7C3AED","FACC15","royal tabard, golden longbow","twang","Never misses. By royal decree.","royal,archer"},
 	{"royal baby","LHAJNA","dcO",1,2,2,"FDE68A","F9A8D4","baby in tiny crown","giggle","Small crown. Big tantrum.","royal,cute"},
 	{"royal barge","DBDKHC","DkgB",4,3,6,"FFD54F","B71C1C","gilded barge with a canopy throne","splash","Arrives in style. Sinks in style.","vehicle,aquatic,royal"},
 	{"royal carriage","DMDKHL","Dkg",4,5,6,"FFD54F","B71C1C","gilded coach with crowns and plumes","clatter","Make way for royalty!","vehicle,ancient,royal"},
@@ -396,11 +403,4 @@ return {
 	{"shad","ABAJEC","dPB",1,6,1,"B8C8D0","3A5A7A","silver herring-like","splash","Swims up rivers in spring.","fish,aquatic"},
 	{"shade","AIBJNJ","iZN",3,7,2,"1E1B4B","4338CA","flat inky silhouette","whisper","Your shadow's evil twin.","ghost,spooky"},
 	{"shade hounds","AICJAA","Dfh",7,8,3,"1A1626","8C7CFF","two wolves of living shadow, glowing eyes","howl","Your shadow has teeth. Two sets.","anime,shadow,summon"},
-	{"shadow","FICAKB","iZe",5,7,2,"2B1B3D","7A4FA8","inky smoky dart with violet edge","hiss","Follows you around. Now it bites.","spooky"},
-	{"shadow armor","KICOKI","GZ",2,4,7,"1A0033","7C4DFF","black smoky plating over caster","hiss","Armour made of night.","spooky,defence"},
-	{"shadow aura","FICOKJ","iZ",4,5,3,"1A0033","7C4DFF","smoky black glow round caster","hiss","Edgy. Very edgy.","spooky"},
-	{"shadow beam","FICBKI","iTe",6,8,1,"12001F","7C4DFF","inky black beam with purple edges","hiss","A beam of nope.","spooky"},
-	{"shadow beast","AIDJAA","iZf",6,7,5,"0F0F23","7C3AED","four-legged beast of living shadow","growl","Hides in shadows. Is shadows.","spooky"},
-	{"shadow blade","CICHrK","iZf",7,8,3,"1B1A22","7D3CB5","smoky black blade, wispy edge","shing","You don't see it coming. That's the point.","fantasy,spooky"},
-	{"shadow blast","FICGKI","iEk",6,7,1,"1A0033","AA00FF","bursting sphere of black smoke and violet sparks","whum","A burst of pure gloom.","spooky,explosive"},
 }

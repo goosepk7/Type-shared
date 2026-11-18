@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"staghorn fern","NGBNMI","ST",1,1,3,"7CB342","9CCC65","antler-shaped fronds on a tree","rustle","Antlers made of leaves.","plant"},
+	{"stain","KMBNGI","dSN",2,1,5,"B91C1C","8B5A2B","stubborn red-brown blot on a white shirt","splat","It will not come out. Ever. Wear it proudly.","household,silly"},
+	{"stained glass","BHCCnI","GEaO",4,1,3,"DC2626","2563EB","arched window of jewel-coloured panes casting rainbow light","chime","Pretty. Holy. Extremely breakable.","shiny,holy,fragile"},
+	{"staircase","EMCCII","GSN",1,1,7,"BCAAA4","8D6E63","steps rising in a spiral","thud","Climb. Climb. Keep climbing.","structure"},
+	{"stake","BMBAuK","Te",3,7,3,"8B5A2B","C49A6C","sharpened wooden post","thud","Vampires hate this one.","spooky,sharp"},
+	{"stalactite","FECAuB","TO",5,6,5,"7E6F60","BAA992","dripping stone spike falling from above","whistle","Pointy cave tooth, ceiling edition.","sharp"},
+	{"stalagmite","FECLII","GT",5,3,6,"8C7B6A","C2B39F","stone spike erupting from the floor","rumble","Pointy cave tooth, floor edition.","sharp"},
 	{"stale bread","IEBAKK","keO",4,7,6,"C8A06A","A88050","hard grey-brown loaf","bonk","Hard enough to use as a brick.","edible,silly"},
 	{"stalk","KIBOMA","QZf",3,5,2,"1F2937","22C55E","pair of eyes peering from a walking bush","rustle","That bush was not there before.","stealth,silly"},
 	{"stamina","KGCOKJ","DF",2,6,4,"43A047","FFF59D","green breathing glow pulse","breath","Keep going. And going.","support"},
@@ -157,7 +164,6 @@ return {
 	{"stonefly","AMAJFB","dAP",1,6,1,"6A5A44","B8A07A","flat aquatic fly","buzz","Lives under river rocks.","insect"},
 	{"stonehenge","ELFCII","GkSY",6,1,10,"9E9E9E","7CB342","huge stone ring with lintels","rumble","Ancient magic stones say hello.","structure,landmark,ancient"},
 	{"stoneskin","KECOKI","G",2,2,9,"9E9E9E","D7CCC8","grey rocky plating over the caster","rumble","Skin like rock. Feel like rock.","heavy,defence"},
-	{"stonks","KHCONI","EWl",4,7,2,"22C55E","1E3A8A","blank-faced suit man beside a green arrow shooting up","ding","Line goes up. Nobody knows why. Stonks.","meme,internet"},
 	{"stool","BMBAJK","ke",2,4,4,"8B5A2B","24262A","round seat on three legs","thud","Short, stout, throwable.","furniture,household"},
 	{"stop","KLCAKB","O",5,9,1,"FF1744","FFFFFF","red stop-sign glyph locking target","tick","STOP. Right there.","time"},
 	{"stop sign","BKCHtK","kfO",4,5,5,"C0392B","F2F2EE","red octagon sign on a pole","clang","STOP. Bonk.","urban"},
@@ -397,10 +403,4 @@ return {
 	{"sweetheart","LHBJNA","jFc",2,5,3,"FB7185","FECDD3","blushing figure with heart eyes and a love letter","aww","Wrote your name in a heart. On everything.","cute,silly"},
 	{"swell shark","ABBJEC","DWfTB",3,8,6,"B8A07A","6A4A2A","shark that inflates","chomp","Gulps water to puff up.","fish,aquatic,ocean,predator"},
 	{"swift","AMAJDB","dA",1,10,1,"3A3430","6A6460","crescent wings","tweet","Sleeps while flying. Legend.","bird,cute"},
-	{"swift fox","AMBJAA","jfb",3,9,2,"C8A07A","F2E8D8","small fast fox","yip","Swift by name. Swift by nature.","mammal,wild"},
-	{"swim","KBBOKC","DB",2,6,2,"4FC3F7","E1F5FE","caster in a swirling water bubble","splash","Glub glub, coming through.","aquatic"},
-	{"swim ring","BBCOKF","UB",1,4,2,"C0392B","F2F2EE","striped inflatable ring","bonk","Floats. Bonks. Floats again.","summer,toy"},
-	{"swimmer","LBCJNC","DB",3,8,3,"1D4ED8","F8FAFC","cap, goggles, mid-stroke","splash","Gold medal in splashing.","sport,aquatic"},
-	{"swimming pool","EBCLII","SN",2,1,5,"4FC3F7","F5F5F5","rectangular blue pool with ladders","splash","Everyone in! Nobody out!","structure,building"},
-	{"swimsuit","BBBOEC","UDB",2,7,2,"0EA5E9","FDE047","stripy swimsuit doing a perfect cannonball","splash","Last one in is a rotten egg.","clothing,aquatic"},
 }

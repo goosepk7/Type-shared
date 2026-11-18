@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
+	{"flip out","BMCH0K","kfY",5,8,3,"B9773F","FF5A4A","a wooden table flipped end over end, you hop back","crash","Not angry. Just leaving. With the table.","meme,internet,melee,mobility"},
+	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
+	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
 	{"floating castle","EFFCIJ","GSeh",7,1,9,"ECEFF1","7E57C2","castle on a floating rock with waterfalls","chime","Floats above the fight. Drops surprises.","structure,magic,mythical"},
 	{"floating city","EFFNIJ","lSh",5,1,8,"ECEFF1","FFD54F","spires on a hovering platform","hum","No traffic. Just clouds.","structure,future"},
 	{"floating eye","ALDJKE","jAeO",7,3,6,"7C3AED","FDE68A","giant floating eyeball with eyestalks","zap","Sees all. Blinks rarely. Very dry.","dungeon"},
@@ -399,8 +403,4 @@ return {
 	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
 	{"ghost costume kid","LIBJGA","jd",2,5,2,"F8FAFC","111827","kid in a bedsheet with eye holes","wail","Boo. Trips on the sheet.","cute,halloween,silly"},
 	{"ghost crab","ABBJRA","GZfT",2,8,5,"E8E0D0","C8C0B0","pale fast beach crab, stalk eyes","clack","Vanishes in the sand. Spooky.","crustacean,aquatic,armored"},
-	{"ghost dog","AIBJAJ","QZ",2,7,1,"E5E7EB","93C5FD","translucent floppy-eared pup","bark","Still fetches. Ball goes through it.","ghost,cute"},
-	{"ghost flower","NIBLMI","iZS",3,1,2,"E1F5FE","7E57C2","translucent glowing white bloom","chime","Blooms only for the dead. Spooky.","plant,magic,mythical,spooky"},
-	{"ghost form","KIBOVJ","AZY",2,7,2,"E0F7FA","B39DDB","caster turning see-through and floaty","wail","Boo. Walk through walls.","spooky,stealth"},
-	{"ghost horse","AIDKAA","DZg",5,9,4,"CBD5E1","6366F1","translucent galloping horse","neigh","Gallops through walls.","ghost,mount"},
 }

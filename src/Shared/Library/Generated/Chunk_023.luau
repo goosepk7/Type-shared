@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow","FICAKB","iZe",5,7,2,"2B1B3D","7A4FA8","inky smoky dart with violet edge","hiss","Follows you around. Now it bites.","spooky"},
+	{"shadow armor","KICOKI","GZ",2,4,7,"1A0033","7C4DFF","black smoky plating over caster","hiss","Armour made of night.","spooky,defence"},
+	{"shadow aura","FICOKJ","iZ",4,5,3,"1A0033","7C4DFF","smoky black glow round caster","hiss","Edgy. Very edgy.","spooky"},
+	{"shadow beam","FICBKI","iTe",6,8,1,"12001F","7C4DFF","inky black beam with purple edges","hiss","A beam of nope.","spooky"},
+	{"shadow beast","AIDJAA","iZf",6,7,5,"0F0F23","7C3AED","four-legged beast of living shadow","growl","Hides in shadows. Is shadows.","spooky"},
+	{"shadow blade","CICHrK","iZf",7,8,3,"1B1A22","7D3CB5","smoky black blade, wispy edge","shing","You don't see it coming. That's the point.","fantasy,spooky"},
+	{"shadow blast","FICGKI","iEk",6,7,1,"1A0033","AA00FF","bursting sphere of black smoke and violet sparks","whum","A burst of pure gloom.","spooky,explosive"},
 	{"shadow bolt","FICAKB","iTe",6,8,1,"311B47","9C4DFF","writhing black orb with purple wake","hiss","Darkness, but in a hurry.","spooky"},
 	{"shadow bomb","FICGKI","iEZ",6,6,1,"1A0033","AA00FF","black orb bursting into blinding dark","whum","Explodes into nothing. Scary nothing.","spooky,explosive"},
 	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
@@ -396,11 +403,4 @@ return {
 	{"smoked sausage","IMBHJI","cf",3,5,4,"8A3A1E","C8603A","curved smoky sausage","bonk","Smoky and snappy.","edible,silly"},
 	{"smokejumper","LBCJNB","AFI",5,7,5,"FACC15","DC2626","parachute, fire shovel, yellow shirt","whoosh","Jumps out of planes into fires. Daily.","rescue,flying"},
 	{"smolder","FABNOI","KSN",3,2,4,"5A2A1A","E0703A","low glowing coals, curls of thin smoke","hiss","Patient fire. It can wait.","fire"},
-	{"smoothie","IBBOKI","WF",2,6,2,"E8434F","F7F2EC","tall glass of blended fruit","slurp","Fruit in a blender storm.","edible,drink"},
-	{"smoothie bowl","IGBOKI","F",2,5,3,"7A3A6A","E8434F","bowl of purple puree, fruit","crunch","A smoothie that you eat with a spoon.","edible,healthy,breakfast"},
-	{"smorrebrod","IGBOKI","F",2,5,3,"5A3A2A","F2E8D0","dark rye with toppings","crunch","Open-faced, open-minded.","edible,healthy"},
-	{"snack","IMAA7G","dFc",1,6,1,"F59E0B","FDE68A","little pile of crackers, cheese cubes and grapes","crunch","Not hungry. Just snacky.","edible,cute"},
-	{"snack table","IMCJII","Gdc",5,1,6,"D72B2B","F2C24A","folding table of snacks","thud","Everyone stops for snacks.","edible,giant,silly"},
-	{"snail","AMAJGI","GSN",1,1,6,"A86A3A","E8C8A0","spiral shell, slimy foot, eye stalks","squelch","Speed: yes. Very little of it.","mollusk,aquatic,garden"},
-	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 }

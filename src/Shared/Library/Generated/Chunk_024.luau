@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"smoothie","IBBOKI","WF",2,6,2,"E8434F","F7F2EC","tall glass of blended fruit","slurp","Fruit in a blender storm.","edible,drink"},
+	{"smoothie bowl","IGBOKI","F",2,5,3,"7A3A6A","E8434F","bowl of purple puree, fruit","crunch","A smoothie that you eat with a spoon.","edible,healthy,breakfast"},
+	{"smorrebrod","IGBOKI","F",2,5,3,"5A3A2A","F2E8D0","dark rye with toppings","crunch","Open-faced, open-minded.","edible,healthy"},
+	{"snack","IMAA7G","dFc",1,6,1,"F59E0B","FDE68A","little pile of crackers, cheese cubes and grapes","crunch","Not hungry. Just snacky.","edible,cute"},
+	{"snack table","IMCJII","Gdc",5,1,6,"D72B2B","F2C24A","folding table of snacks","thud","Everyone stops for snacks.","edible,giant,silly"},
+	{"snail","AMAJGI","GSN",1,1,6,"A86A3A","E8C8A0","spiral shell, slimy foot, eye stalks","squelch","Speed: yes. Very little of it.","mollusk,aquatic,garden"},
+	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 	{"snail mobile","DMBKHL","GgN",2,1,6,"FFB300","8D6E63","car under a big spiral shell","engine","The slowest ride ever. Very safe.","vehicle,silly"},
 	{"snake","AMCJCD","fMN",4,6,3,"4A7A3A","C8B860","long coiled body, forked tongue","hiss","Hugs without arms. Hisses hello.","reptile,venomous"},
 	{"snake charmer","LJCJNI","cOh",3,4,3,"F59E0B","15803D","flute and basket with a dancing snake","flute","Plays a tune. Snakes appear.","music"},
@@ -396,11 +403,4 @@ return {
 	{"stag beetle","AMBJFA","Gkf",2,3,4,"3A1E14","8A4A2A","huge antler-like jaws","click","Wears antlers on its face.","insect,armored"},
 	{"stagger","KMCFOB","kO",4,8,1,"FFCC80","FFFFFF","wobbling impact ring","thud","Wobble. Wobble. Down.","melee"},
 	{"staghorn coral","ABCCMI","GWT",3,1,6,"E8A07A","F2D8C0","branching antler coral","crackle","Antlers, but underwater and pointy.","aquatic,ocean,reef"},
-	{"staghorn fern","NGBNMI","ST",1,1,3,"7CB342","9CCC65","antler-shaped fronds on a tree","rustle","Antlers made of leaves.","plant"},
-	{"stain","KMBNGI","dSN",2,1,5,"B91C1C","8B5A2B","stubborn red-brown blot on a white shirt","splat","It will not come out. Ever. Wear it proudly.","household,silly"},
-	{"stained glass","BHCCnI","GEaO",4,1,3,"DC2626","2563EB","arched window of jewel-coloured panes casting rainbow light","chime","Pretty. Holy. Extremely breakable.","shiny,holy,fragile"},
-	{"staircase","EMCCII","GSN",1,1,7,"BCAAA4","8D6E63","steps rising in a spiral","thud","Climb. Climb. Keep climbing.","structure"},
-	{"stake","BMBAuK","Te",3,7,3,"8B5A2B","C49A6C","sharpened wooden post","thud","Vampires hate this one.","spooky,sharp"},
-	{"stalactite","FECAuB","TO",5,6,5,"7E6F60","BAA992","dripping stone spike falling from above","whistle","Pointy cave tooth, ceiling edition.","sharp"},
-	{"stalagmite","FECLII","GT",5,3,6,"8C7B6A","C2B39F","stone spike erupting from the floor","rumble","Pointy cave tooth, floor edition.","sharp"},
 }

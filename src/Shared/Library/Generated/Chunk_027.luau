@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tonfa","CMBHJK","Gf",3,7,4,"24262A","8B5A2B","baton with side handle","bonk","Spin, block, poke. Repeat.","medieval,heavy"},
+	{"tongs","JKBHJK","fH",1,6,5,"5B6168","24262A","long pincer tongs","clank","Grabs hot things so you don't.","tool"},
+	{"tongue lash","KMBBKI","fHb",3,9,1,"F06292","FFCDD2","long stretchy pink tongue","thwip","Slurp. Grabbed.","silly,gross"},
+	{"tonic water","IBBFKI","EkI",3,7,1,"D8F0F8","F7F7F2","clear fizzy, lime wedge","fizz","Bitter bubbles.","edible,drink,fizzy"},
+	{"tonkotsu ramen","IABOGI","KF",3,4,3,"F2E8D0","C8502B","creamy white broth bowl","slurp","Creamy broth simmered for hours.","edible,warm,healthy"},
+	{"tool","JKBAtK","kfO",3,6,5,"EF4444","9CA3AF","combo tool: hammer one side, wrench the other","clank","If it does not fit, hit it harder.","tool"},
 	{"toolbox","BKBLJK","Gh",2,3,7,"C0392B","8A929B","red metal box with handle","clank","Everything you need, minus the one thing.","tool"},
 	{"tooth","BMBAKB","UfT",3,6,6,"FAFAF0","E8E0C8","shiny white molar with two roots, sparkle","clack","Brushed twice a day. Bites all day.","body,sharp"},
 	{"tooth collector","LHBJNB","Ab",2,8,2,"E0F2FE","FACC15","fairy with pliers","chime","Collects teeth. Pays in coins.","silly"},
@@ -39,7 +45,6 @@ return {
 	{"totem pole","EGDMII","GFSe",3,1,7,"C62828","FFB300","stacked carved faces with wings","thud","Watches with all its faces.","structure,defense,tower,ancient"},
 	{"totem spirit","AGCMII","GFh",4,1,6,"78350F","15803D","carved totem pole with glowing eyes","drum","Stacked animals guarding the way.","spirit,guardian"},
 	{"toucan","AMBJDB","jdAf",2,6,2,"1E1E1E","F2A01E","black bird, gigantic rainbow beak","squawk","Beak is 30% of its body.","bird,jungle,silly"},
-	{"touch grass","KGBOKJ","F",1,4,3,"66BB6A","FFF59D","grass sprouting under caster's feet","rustle","Fresh air. Feel better.","meme,plant,support"},
 	{"touch me not plant","NGANMI","ZS",1,1,2,"7CB342","F48FB1","feathery leaves that fold when touched","rustle","Touch it. It hides. Rude.","plant,flower,cute"},
 	{"touchdown","KECL3B","EkO",5,7,2,"92400E","FFFFFF","brown oval ball spiked into turf, arms raised","crowd","Spike it. Dance. Flag for excessive joy.","sport"},
 	{"tour bus","DMDKHL","Dkgh",4,5,7,"E53935","FFEB3B","open-top double decker for tourists","engine","And on your left: your defeat.","mechanical,vehicle,land"},
@@ -398,9 +403,4 @@ return {
 	{"venom bloom","NJBLMI","SMP",4,1,2,"76FF03","4A148C","neon green petals dripping toxin","chime","Pretty colours mean danger. Always.","plant,magic,mythical"},
 	{"venom bolt","FJBAKB","Me",4,8,1,"76FF03","1B5E20","dripping green dart with bubbles","hiss","Nasty, sticky and green.","toxic"},
 	{"venom dagger","CJBHrK","fTM",4,9,2,"8BC34A","3A3F45","green-dripping dagger","shing","One cut. Lots of regret.","fantasy,sharp"},
-	{"venom spike","FJCLII","TM",5,5,3,"76FF03","33691E","dripping green spikes from ground","crack","Pointy and poisonous. Double nope.","toxic,sharp"},
-	{"ventriloquist","LMCJNA","jd",3,4,3,"111827","FBCFE8","suit with a creepy talking dummy","giggle","The dummy does the talking. And fighting.","circus,spooky"},
-	{"ventriloquist dummy","BMBJNA","jd",2,4,2,"E8E2D4","9E1B32","wooden dummy with hinged jaw","squeak","Gottle of geer. Gottle of FEAR.","toy,spooky"},
-	{"venus","MAFGKJ","KkMe",8,3,9,"F4D03F","E59866","yellow sphere wrapped in thick clouds","rumble","Hot enough to melt lead. And you.","space"},
-	{"venus flytrap","NGCLMI","ScfO",5,3,5,"7CB342","C62828","toothed red jaws on a green stem","chomp","Snap! Lunch is served. You are lunch.","plant,carnivorous"},
 }
