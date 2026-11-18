@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow blast","FICGKI","iEk",6,7,1,"1A0033","AA00FF","bursting sphere of black smoke and violet sparks","whum","A burst of pure gloom.","spooky,explosive"},
 	{"shadow bolt","FICAKB","iTe",6,8,1,"311B47","9C4DFF","writhing black orb with purple wake","hiss","Darkness, but in a hurry.","spooky"},
 	{"shadow bomb","FICGKI","iEZ",6,6,1,"1A0033","AA00FF","black orb bursting into blinding dark","whum","Explodes into nothing. Scary nothing.","spooky,explosive"},
 	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
@@ -297,6 +298,7 @@ return {
 	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
 	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
 	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
+	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
 	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
 	{"sky island","MFENIJ","lS",4,1,7,"8BC34A","E3F2FD","grassy rock floating in the sky","rumble","No roads. Just a long way down.","place,terrain,magic"},
 	{"sky pirate","LFCJNB","Aeb",5,7,4,"7F1D1D","60A5FA","pirate with goggles on an airship","arr","Pirates, but higher.","pirate,flying"},
@@ -401,6 +403,4 @@ return {
 	{"smorrebrod","IGBOKI","F",2,5,3,"5A3A2A","F2E8D0","dark rye with toppings","crunch","Open-faced, open-minded.","edible,healthy"},
 	{"snack","IMAA7G","dFc",1,6,1,"F59E0B","FDE68A","little pile of crackers, cheese cubes and grapes","crunch","Not hungry. Just snacky.","edible,cute"},
 	{"snack table","IMCJII","Gdc",5,1,6,"D72B2B","F2C24A","folding table of snacks","thud","Everyone stops for snacks.","edible,giant,silly"},
-	{"snail","AMAJGI","GSN",1,1,6,"A86A3A","E8C8A0","spiral shell, slimy foot, eye stalks","squelch","Speed: yes. Very little of it.","mollusk,aquatic,garden"},
-	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 }

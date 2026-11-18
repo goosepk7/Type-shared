@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
 	{"railway bridge","EMECII","GSh",3,1,9,"6D4C41","9E9E9E","timber trestle carrying train tracks","thud","A train is coming. On top of you.","structure"},
 	{"rain","GBCEOJ","SN",2,4,2,"5D8AA8","C9E6F5","grey cloud with steady falling drops","patter","Forecast says: you, wet.","storm,aquatic"},
 	{"rain boots","BBBONI","G",1,5,3,"F1C40F","F1C40F","shiny tall rubber boots","swish","Splash with impunity.","clothing"},
@@ -402,5 +403,4 @@ return {
 	{"row","KBBOiC","DIB",3,6,3,"8B5A2B","38BDF8","two oars heaving in rhythm with splash arcs","splash","Merrily, merrily, merrily, merrily. Stroke!","sport,aquatic"},
 	{"row house","EMCCII","GSh",2,1,7,"B5523B","F5E6CA","narrow joined houses in a row","thud","Neighbours on both sides. All angry.","structure,building"},
 	{"rowboat","DBBKHC","DkgB",2,4,3,"8D6E63","F2E6C9","small wooden boat, two oars","splash","Row, row, row your boat... into them.","vehicle,aquatic,silly"},
-	{"royal archer","LFCJNA","Te",5,6,4,"7C3AED","FACC15","royal tabard, golden longbow","twang","Never misses. By royal decree.","royal,archer"},
 }

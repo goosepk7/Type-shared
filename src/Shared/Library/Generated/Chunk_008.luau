@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
 	{"dodge","KFBOKB","ZY",2,10,2,"E1F5FE","FFFFFF","blurry afterimage sidestep","whoosh","Missed me!","speed"},
 	{"dodgeball","BMBG3F","UkeO",2,8,2,"C0392B","C0392B","rubbery red playground ball","bonk","If you can dodge a wrench...","sport"},
 	{"dodgeball kid","LMBJNA","dke",3,7,2,"DC2626","F8FAFC","tiny kid with a huge red ball","boing","Small arms. Huge throws.","school,silly,sport"},
@@ -187,7 +188,6 @@ return {
 	{"dung beetle","AMAJFA","GkfI",1,3,4,"1E1E24","3A3A8A","beetle rolling a ball","click","Navigates by the Milky Way. With poop.","insect,armored,ancient"},
 	{"dungeon","MIELII","GSNO",4,1,10,"424242","FF6F00","dark stone cells, chains, torches","clang","Welcome to your new room.","place,terrain,spooky"},
 	{"dungeon crawler","LMCJNA","cf",4,5,5,"57534E","F97316","torch, sword, backpack of loot","clang","Every room has loot. Or a trap.","explorer,gaming"},
-	{"dunk","KMCL3B","UkO",6,7,2,"F97316","FFFFFF","basketball slammed down through a hoop, backboard shaking","crowd","Posterised. Frame it.","sport"},
 	{"dunkleosteus","ABEJEC","DfTOB",8,8,8,"5A6A6A","C8C0A8","armored head, bone blade jaws","chomp","Armored fish with a guillotine mouth.","fish,aquatic,ocean,predator,extinct,ancient"},
 	{"dunnart","AMAJAA","Uf",1,6,2,"8A8A8E","C8C8C8","tiny mouse-like marsupial","chirp","Tiny but a fierce hunter.","mammal,marsupial"},
 	{"duo","LHCJNA","QFfh",5,6,5,"3B82F6","EF4444","two back-to-back heroes, one red one blue, fist bump","yay","Player two has entered the game.","gaming,team"},

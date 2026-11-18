@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swimsuit","BBBOEC","UDB",2,7,2,"0EA5E9","FDE047","stripy swimsuit doing a perfect cannonball","splash","Last one in is a rotten egg.","clothing,aquatic"},
 	{"swing","BFCLII","Uklg",4,6,5,"EF4444","6B7280","A-frame with a seat on chains at full arc","creak","Higher! Higher! Too high! TOO HIGH!","playground,toy"},
 	{"swing set","EMCCII","GkS",2,1,4,"1E88E5","FFB300","A-frame with dangling seats","thud","Swings back and hits you.","structure,building,silly"},
 	{"swinging axe","BKDLsI","kfV",6,4,6,"8A929B","5A3A1E","crescent blade swinging on pole","snap","Tick. Tock. Duck.","trap,defense"},
@@ -139,6 +140,7 @@ return {
 	{"tectonic slam","FEFNOI","kPO",9,2,7,"5D4037","FF7043","ground plates grinding and tilting","rumble","Continents, rearranged.","heavy,natural,danger"},
 	{"teddy bear","BMBJBA","dFc",1,3,3,"D2B48C","7A4E2D","plush bear with button eyes","squeak","Hugs heal. Mostly.","toy,cute"},
 	{"teddy bear monster","AIBJAA","jcf",3,5,3,"A16207","DC2626","stitched teddy with button eyes and fangs","growl","Bedtime buddy. Not tonight.","spooky,silly"},
+	{"tee off","BMBL3I","kSe",4,8,2,"F7F7F2","4FA34A","golf ball on a tee; a phantom club drives it","thwack","Fore means duck.","sport,golf,trap"},
 	{"teenager","LMCJNA","jd",3,6,3,"111827","A855F7","hoodie, headphones, phone","sigh","Ugh. Fine. Whatever. Attacks.","family"},
 	{"teepee","EMCCII","GFS",2,1,4,"F5E6CA","B5523B","tall cone tent of hides and poles","thud","Pointy home, cosy fire inside.","structure,building"},
 	{"teething ring","BMAOKI","F",1,5,2,"47D7E8","F2F2EE","rubbery ring","squeak","Chomp. Soothed.","baby"},
@@ -168,7 +170,6 @@ return {
 	{"tengu","AFCJNB","AkfY",5,8,4,"DC2626","1F2937","long red nose, black wings, fan in hand","whoosh","Master swordsman. Mostly a nose.","yokai,flying"},
 	{"tennis","KMBA3B","Uea",3,9,2,"D4F23A","FFFFFF","fuzzy yellow ball smashed by a racket, chalk dust puff","pop","Fifteen-love. Thirty-love. Ouch-love.","sport"},
 	{"tennis ball","BMAA3F","Ue",1,8,3,"8BC34A","F2F2EE","fuzzy neon yellow ball","bonk","Fuzzy. Fast. Dogs love it.","sport,silly"},
-	{"tennis ball launcher","OMCMwI","Uke",2,7,5,"8BC34A","8E9196","boxy cart firing tennis balls","hum","Lobs fuzzy yellow trouble.","sport,defense"},
 	{"tennis court","MMCNII","Sa",2,1,6,"43A047","FFEB3B","net across painted lines","crowd","Back and forth. Back and forth.","place,sport"},
 	{"tennis player","LMCJNA","ea",4,7,3,"F8FAFC","FACC15","white outfit, racket, sweatband","pong","Returns every shot. Including yours.","sport"},
 	{"tennis racket","BMBHJK","kfa",2,7,4,"F2F2EE","8BC34A","oval stringed racket","bonk","Returns to sender, with topspin.","sport"},
@@ -402,5 +403,4 @@ return {
 	{"tongue lash","KMBBKI","fHb",3,9,1,"F06292","FFCDD2","long stretchy pink tongue","thwip","Slurp. Grabbed.","silly,gross"},
 	{"tonic water","IBBFKI","EkI",3,7,1,"D8F0F8","F7F7F2","clear fizzy, lime wedge","fizz","Bitter bubbles.","edible,drink,fizzy"},
 	{"tonkotsu ramen","IABOGI","KF",3,4,3,"F2E8D0","C8502B","creamy white broth bowl","slurp","Creamy broth simmered for hours.","edible,warm,healthy"},
-	{"tool","JKBAtK","kfO",3,6,5,"EF4444","9CA3AF","combo tool: hammer one side, wrench the other","clank","If it does not fit, hit it harder.","tool"},
 }

@@ -100,7 +100,6 @@ return {
 	{"fossa","AMCJAA","ZfT",4,7,3,"A06A3A","D8B48A","sleek cougar-like, long tail","hiss","Madagascar's top predator. Cat-ish.","mammal,predator,wild"},
 	{"fossegrim","ABCJNC","jcB",3,5,4,"1E40AF","FDE68A","fiddler sitting in a waterfall","violin","Plays violin in a waterfall. Never tunes.","mythical,music,aquatic"},
 	{"fossil","BEBCII","G",2,4,4,"C8B898","8A7A5A","rocky skeleton imprint","growl","Old bones with stories.","extinct,ancient"},
-	{"foul","KMBAJB","IXO",3,8,1,"DC2626","FACC15","referee hand holding up a bright red card, whistle blast","whistle","REF! Are you blind? Yes. Yes he is.","sport"},
 	{"fountain","EBCNII","FSI",2,1,6,"BDBDBD","4FC3F7","tiered stone basin spraying water","splash","Splash zone. Also healing zone.","structure,building"},
 	{"fountain of youth","EBCNII","FS",2,1,7,"F5F5F5","80DEEA","marble fountain with glowing water","thud","Sip once. Feel brand new.","magic,mythical"},
 	{"four leaf clover charm","BGAOJI","F",1,5,2,"2E8B57","D4A72C","clover pendant","chime","Luck: maxed.","magic,fantasy"},
@@ -403,4 +402,5 @@ return {
 	{"ghost flower","NIBLMI","iZS",3,1,2,"E1F5FE","7E57C2","translucent glowing white bloom","chime","Blooms only for the dead. Spooky.","plant,magic,mythical,spooky"},
 	{"ghost form","KIBOVJ","AZY",2,7,2,"E0F7FA","B39DDB","caster turning see-through and floaty","wail","Boo. Walk through walls.","spooky,stealth"},
 	{"ghost horse","AIDKAA","DZg",5,9,4,"CBD5E1","6366F1","translucent galloping horse","neigh","Gallops through walls.","ghost,mount"},
+	{"ghost horse rider","AIDKAA","DZg",6,9,4,"A5B4FC","1E1B4B","spectral rider on a glowing horse","neigh","Gallops across the sky at night.","ghost,mount"},
 }

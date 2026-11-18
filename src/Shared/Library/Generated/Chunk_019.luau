@@ -95,6 +95,7 @@ return {
 	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
 	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
 	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
+	{"penalty card","BMBAKB","eO",3,9,1,"F2C230","D2342E","a whistle blast and a spinning referee card","whistle","Two of those and you're watching from the bench.","sport,referee,debuff"},
 	{"pencil","BMAAJK","Te",1,8,1,"F1C40F","F06292","yellow hexagon pencil with eraser","tap","Sharpened for battle.","school"},
 	{"pencil sharpener","BMAL2K","V",1,1,3,"C9CED4","C0392B","small box with blade hole","tap","Grrrind.","office"},
 	{"pendulum hammer","BKDLtI","kO",6,3,7,"5B6168","8B5A2B","huge hammer swinging from above","snap","Tick. Tock. BONK.","trap,defense"},
@@ -289,7 +290,7 @@ return {
 	{"pitch black","FIDNOI","jZ",4,5,3,"000000","212121","absolute black dome","hush","Can't see your own hand.","spooky,stealth"},
 	{"pitcher plant","NJCLMI","ScMH",4,1,4,"9CCC65","B71C1C","tall slippery tube with a lid","chomp","Slide in. Do not slide out.","plant,carnivorous"},
 	{"pitchfork","CKCAuI","lfT",3,5,4,"8A929B","8B5A2B","three long tines on a pole","whoosh","Angry mob not included.","farm"},
-	{"pitching machine","OMCM1I","keO",3,7,5,"2E8B57","F2F2EE","wheeled launcher with two spinning wheels","hum","Fastball after fastball.","sport,defense"},
+	{"pitching machine","OMCMwI","keh",3,7,5,"2F7D6B","F2EBDD","tripod ball launcher with a hopper and twin wheels","hum","Strike one. Strike two. Duck.","sport,baseball,turret"},
 	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
 	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
 	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
@@ -402,5 +403,4 @@ return {
 	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
 	{"pocket dimension","MLFNII","jZSY",6,1,8,"7C4DFF","00E5FF","swirling folded space","chime","Step in, vanish completely.","place,mythical"},
 	{"pocket dragon","AAAJAB","KAQ",2,8,1,"DC2626","FACC15","palm-sized dragon on your shoulder","chirp","Lights your candles. And your sleeves.","cute,reptile"},
-	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
 }

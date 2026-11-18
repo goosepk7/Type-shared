@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"gremlin","ADAJNA","jLb",2,8,2,"4D7C0F","94A3B8","tiny long-eared imp with a wrench","cackle","Breaks machines just to hear them beep.","goblin,mechanical,silly"},
 	{"gremlin gamer","LMBJNA","jdb",2,8,2,"65A30D","7C3AED","messy hair, snacks, wild grin","cackle","Pure chaos energy at 3 AM.","meme,silly"},
 	{"gremlin swarm","ADBJLA","LPb",4,8,2,"4D7C0F","FDE047","crowd of long-eared imps with tools","cackle","Every machine in range: broken.","goblin,swarm,silly"},
 	{"grenade","CABGKF","EkeV",5,6,2,"6B7B3A","4A4D52","pineapple-shaped grenade with pin","boom","Pull pin. Throw. Run.","explosive"},
@@ -403,4 +402,5 @@ return {
 	{"hollandaise","IMBLGI","kSO",2,3,2,"F2D870","F2C24A","smooth yellow buttery sauce","squeak","Fancy butter sauce for fancy eggs.","edible,slippery,silly,sauce"},
 	{"hollow tree","NGDCMI","GZS",3,1,7,"6D4C41","43A047","wide trunk with a hidey-hole","rustle","Hide inside. Pop out. Surprise!","plant,tree"},
 	{"hollow visage","KICOKI","Dif",8,9,2,"F2EEE6","B3122E","a cracked white skull mask with red stripes","growl","Put on the face. Lose the manners.","anime,transform"},
+	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},
 }

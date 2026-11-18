@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stalactite","FECAuB","TO",5,6,5,"7E6F60","BAA992","dripping stone spike falling from above","whistle","Pointy cave tooth, ceiling edition.","sharp"},
+	{"stalagmite","FECLII","GT",5,3,6,"8C7B6A","C2B39F","stone spike erupting from the floor","rumble","Pointy cave tooth, floor edition.","sharp"},
 	{"stale bread","IEBAKK","keO",4,7,6,"C8A06A","A88050","hard grey-brown loaf","bonk","Hard enough to use as a brick.","edible,silly"},
 	{"stalk","KIBOMA","QZf",3,5,2,"1F2937","22C55E","pair of eyes peering from a walking bush","rustle","That bush was not there before.","stealth,silly"},
 	{"stamina","KGCOKJ","DF",2,6,4,"43A047","FFF59D","green breathing glow pulse","breath","Keep going. And going.","support"},
@@ -351,7 +353,6 @@ return {
 	{"supervillain","LICJNA","jeh",6,5,5,"4C1D95","84CC16","dramatic cape, lair-ready monologue pose","cackle","Has a plan. It's 40 steps long.","villain"},
 	{"supervolcano","HAFNOI","KEkP",10,3,9,"3E2723","FF3D00","massive ground-wide eruption with lava fountains","boom","A volcano's final form.","fire,natural,explosive,danger"},
 	{"support main","LHCJNA","GF",3,5,4,"F8FAFC","22C55E","staff with healing glow","chime","Heals everyone. Thanked by nobody.","meme,gaming,healer"},
-	{"surf","KBCO6F","DI",3,8,2,"29B6F6","FFFFFF","caster riding a small wave","splash","Cowabunga.","aquatic,sport"},
 	{"surface","FECCnI","GUa",3,1,8,"F5F5F0","9CA3AF","spotless shiny slab you could see your face in","squeak","Wiped down. Slippery. Do not put that there.","household"},
 	{"surfboard","DBAKHC","UDkgB",2,8,2,"4FC3F7","FF7043","long rounded board, fin underneath","splash","Catch the wave. Ride it into battle.","vehicle,aquatic,sport"},
 	{"surfboard fin","BMAHKF","fT",1,6,3,"F2F2EE","47D7E8","small curved fin","bonk","The pointy end of surfing.","sport"},
@@ -402,5 +403,4 @@ return {
 	{"swim ring","BBCOKF","UB",1,4,2,"C0392B","F2F2EE","striped inflatable ring","bonk","Floats. Bonks. Floats again.","summer,toy"},
 	{"swimmer","LBCJNC","DB",3,8,3,"1D4ED8","F8FAFC","cap, goggles, mid-stroke","splash","Gold medal in splashing.","sport,aquatic"},
 	{"swimming pool","EBCLII","SN",2,1,5,"4FC3F7","F5F5F5","rectangular blue pool with ladders","splash","Everyone in! Nobody out!","structure,building"},
-	{"swimsuit","BBBOEC","UDB",2,7,2,"0EA5E9","FDE047","stripy swimsuit doing a perfect cannonball","splash","Last one in is a rotten egg.","clothing,aquatic"},
 }

@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"jack frost","LCCJNB","AJN",5,8,3,"BAE6FD","F8FAFC","icy-haired sprite with frost staff","crack","Nips your nose. Freezes your window.","frozen,holiday"},
 	{"jack in box","BMBG2I","Uk",3,4,3,"3B6FD8","FFD93B","a toy crank box that pops out a star-headed spring","boing","Round and round it goes. Then it doesn't.","cartoon,silly,toy"},
 	{"jack o lantern","BABJKI","Kjc",2,3,3,"E67E22","FF6A1A","carved grinning pumpkin with candle","jingle","Grins in the dark. Grins at you.","holiday,spooky"},
 	{"jack russell","AMBJAA","UdQf",2,8,2,"F2EEE6","8A5A2A","small white dog with tan patches, springy","yip","Bounces off walls. Literally.","mammal,pet,cute"},
@@ -169,6 +168,7 @@ return {
 	{"kebab","IABHJI","KfT",3,5,4,"C8602B","7DBE3A","meat and peppers on a skewer","bonk","A spear of grilled meat and veg.","edible,silly"},
 	{"kedgeree","IMAELB","eNP",2,6,1,"F2D23A","F7F2E0","yellow rice, egg, fish","pitter","Breakfast rice with a twist.","edible,grain"},
 	{"keep","EEECII","GSe",5,1,10,"8D8D8D","5D5D5D","tall square stone tower, small windows","thud","The last place to run. And the safest.","structure,defense,ancient"},
+	{"keeper wall","KMCCnI","Gka",5,6,6,"38C7B4","F4F1E6","padded keeper gloves and a glowing goal net","thud","Nothing gets past. Then it goes back.","sport,shield,defense"},
 	{"kefir","IBBOKI","F",2,6,2,"F7F4EC","F2EAD5","bottle of fizzy yogurt drink","slurp","Yogurt that learned to fizz.","edible,drink,dairy"},
 	{"kek","KMBF6B","jPO",2,7,1,"84CC16","FDE047","wheezing laugh lines with a slapped knee","cackle","Kek. An ancient laugh from the old servers.","meme,internet"},
 	{"kelewele","IABAKK","KeP",3,7,2,"E8762B","D9A04A","spicy fried plantain cubes","sizzle","Fiery plantain bites.","edible,spicy,flammable"},

@@ -130,6 +130,7 @@ return {
 	{"cursed sword","CICHrK","jif",7,6,4,"1B1A22","9E1B32","jagged black blade, red glow","shing","Whispers. Do not listen.","fantasy,spooky"},
 	{"curtain","BMCC0I","GZ",1,1,2,"6E1630","D4A72C","heavy hanging fabric panels","thud","Hide behind. Very dramatic.","furniture,household"},
 	{"curupira","AGBJNA","KjQ",3,8,3,"DC2626","15803D","red-haired forest kid with backwards feet","whistle","Footprints go the wrong way. On purpose.","mythical,forest"},
+	{"curveball","BFBA3B","ke",4,8,2,"F4EFE2","E2553A","stitched ball that swings wide and breaks back in","whoosh","It was going wide. Then it wasn't.","sport,baseball,projectile"},
 	{"cuscus","AMBJAA","Uf",2,6,2,"F2E8D8","C8A07A","fluffy possum with big eyes","chirp","A teddy bear with a curly tail.","mammal,marsupial"},
 	{"custard","IMBLGG","USN",2,3,3,"F7E08A","F7F2E0","wobbly yellow pudding","wobble","Yellow, wobbly, and warm.","edible,wobbly,sweet"},
 	{"custard cream","IMBAKK","Uke",3,7,2,"F2D870","F7F2EC","two pale biscuits, cream middle","whoosh","Dunked in tea. Thrown at foes.","edible,dairy"},
@@ -402,5 +403,4 @@ return {
 	{"doberman","AMCJAA","DQf",5,8,4,"1A1414","A0582A","sleek black-tan dog, pointy ears","bark","Built for speed and side-eye.","mammal,pet"},
 	{"dobsonfly","AMBJFB","dAfP",2,6,1,"6A5A44","C8B88A","huge flying bug with giant mandibles","buzz","Big scary jaws. Mostly harmless.","insect"},
 	{"doctor","LMCJNA","GFe",3,4,5,"F8FAFC","0EA5E9","white coat, stethoscope, clipboard","beep","Says ahh. Gives a lollipop.","healer"},
-	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
 }

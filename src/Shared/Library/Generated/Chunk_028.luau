@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"venus flytrap","NGCLMI","ScfO",5,3,5,"7CB342","C62828","toothed red jaws on a green stem","chomp","Snap! Lunch is served. You are lunch.","plant,carnivorous"},
 	{"venus flytrap army","NGELMI","ScfO",6,1,6,"7CB342","C62828","dozens of snapping flytraps","chomp","A whole field of hungry mouths.","plant,carnivorous"},
 	{"verbena","NHBNMI","dFS",1,1,2,"9575CD","E1BEE7","clusters of tiny purple flowers","rustle","Keeps away witches. Supposedly.","plant,flower"},
 	{"verdant bastion","NGDCaI","GWkl",6,5,4,"966E4A","60AA46","a row of gnarled trees bursts up as a woven wall","creak","Plant a seal. Grow a fortress. Water occasionally.","anime,ninja,wood,wall"},
@@ -242,6 +243,7 @@ return {
 	{"watermill","EBDCIK","GSI",3,1,7,"8D6E63","1E88E5","stone mill with a big turning wheel","splash","Splish, splash, grind.","structure,building"},
 	{"waterzooi","IBBOGI","FS",3,4,3,"F2E8C8","7DBE3A","creamy chicken stew","slurp","A creamy Belgian stew.","edible,warm,healthy"},
 	{"wave","FBDF6F","kI",5,6,3,"1E88E5","BBDEFB","curling blue wave with white crest","splash","Wave hello. Wave goodbye.","aquatic"},
+	{"wave rider","KBCO6C","DI",3,9,2,"2AA7D8","F4FBFF","you ride a curling wave forward on a board","splash","Paddle out. Drop in. Run them over.","sport,surf,mobility,water"},
 	{"wax","FABNGI","KSN",2,2,3,"FDE68A","F97316","dribbling warm yellow wax pooling and hardening","sizzle","Mind your own. Beeswax, that is.","household,sticky"},
 	{"waxwing","AMAJDB","dA",1,7,1,"C8A07A","F2D82A","sleek crest, black mask","tweet","Wears a mask and a crest. Cool.","bird,cute"},
 	{"waxy monkey frog","AMAJAA","Ue",1,5,1,"6AC84A","F2F2EE","walks instead of hops","croak","Rubs on wax sunscreen. Walks.","amphibian,wetland"},
@@ -401,6 +403,4 @@ return {
 	{"wind valley","MFENII","kSI",4,1,8,"B2EBF2","7CB342","narrow valley with howling gusts","rumble","Hold onto your hat. Hat gone.","place,terrain"},
 	{"wind wall","KFDCnI","GIa",3,5,5,"B2EBF2","FFFFFF","swirling vertical wall of streaking air","howl","Arrows go in. Arrows come out.","air,defence"},
 	{"wind wave","FFDFOB","kI",5,8,1,"B3E5FC","FFFFFF","wide crescent of rushing air","whoosh","The sky shrugged at you.","air"},
-	{"wind-up toy","BMAJBA","Dd",1,6,2,"C0392B","B58A3A","small toy with big key on back","squeak","Click click click—zoom!","toy"},
-	{"wind-up toy robot","OKAJNA","UDd",1,5,3,"DC2626","94A3B8","tin robot with a big wind-up key","tick","Walks into walls. Turns. Walks into walls.","robot,silly,cute"},
 }

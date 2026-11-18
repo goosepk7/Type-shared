@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tool","JKBAtK","kfO",3,6,5,"EF4444","9CA3AF","combo tool: hammer one side, wrench the other","clank","If it does not fit, hit it harder.","tool"},
 	{"toolbox","BKBLJK","Gh",2,3,7,"C0392B","8A929B","red metal box with handle","clank","Everything you need, minus the one thing.","tool"},
 	{"tooth","BMBAKB","UfT",3,6,6,"FAFAF0","E8E0C8","shiny white molar with two roots, sparkle","clack","Brushed twice a day. Bites all day.","body,sharp"},
 	{"tooth collector","LHBJNB","Ab",2,8,2,"E0F2FE","FACC15","fairy with pliers","chime","Collects teeth. Pays in coins.","silly"},
@@ -402,5 +403,4 @@ return {
 	{"ventriloquist","LMCJNA","jd",3,4,3,"111827","FBCFE8","suit with a creepy talking dummy","giggle","The dummy does the talking. And fighting.","circus,spooky"},
 	{"ventriloquist dummy","BMBJNA","jd",2,4,2,"E8E2D4","9E1B32","wooden dummy with hinged jaw","squeak","Gottle of geer. Gottle of FEAR.","toy,spooky"},
 	{"venus","MAFGKJ","KkMe",8,3,9,"F4D03F","E59866","yellow sphere wrapped in thick clouds","rumble","Hot enough to melt lead. And you.","space"},
-	{"venus flytrap","NGCLMI","ScfO",5,3,5,"7CB342","C62828","toothed red jaws on a green stem","chomp","Snap! Lunch is served. You are lunch.","plant,carnivorous"},
 }
