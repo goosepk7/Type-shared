@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lung","BFCFGE","kHI",4,6,3,"F2A1A1","E57373","pair of pink lungs inflating like bellows","whoosh","Deep breath in. Everybody out.","body,science"},
+	{"lungfish","ABCJEC","DfB",4,7,4,"6A6250","A89A80","eel-like with lungs, leg fins","splash","Breathes air. Naps in mud for years.","fish,aquatic,ancient"},
+	{"lupin","NGBNMI","dFS",2,1,2,"7E57C2","F48FB1","tall spire of pea-like blooms","rustle","A rocket made of flowers.","plant,flower"},
+	{"lure spell","KLBLII","dc",1,3,2,"FFD54F","FFFFFF","glowing tempting sparkle on the ground","ding","Ooh, shiny. Come closer.","silly"},
+	{"lurker","LICJNI","jZ",3,5,3,"52525B","F8FAFC","eyes peeking from behind a wall","whisper","Was here the whole time.","meme,stealth"},
+	{"lute","BMBFJI","jF",2,5,2,"C49A6C","8B5A2B","pear-shaped stringed instrument","strum","The bard is here. Run.","music,medieval"},
 	{"lutin","ALAJNA","jZb",1,8,1,"65A30D","FACC15","tiny prankster in pointed cap","giggle","Braids horse manes at night. Why? Nobody knows.","fairy,silly"},
 	{"luxury","KHCO0E","GFc",3,3,5,"D4AF37","7F1D4E","gold velvet chaise with grapes, a fan and a tiny dog","chime","Only the finest. Pinky out.","fancy,royal"},
 	{"lychee","IGAAKF","Fke",3,6,2,"D44A55","F7F2EA","small bumpy red shell, pearl inside","splat","Bumpy shell, pearl inside.","edible,fruit,sweet"},
@@ -397,10 +403,4 @@ return {
 	{"mine cart","DEBKHL","UDkg",3,7,5,"6B4F3A","8C8C8C","iron tub on little rail wheels","engine","Hold on to your helmet!","mechanical,vehicle,land"},
 	{"mine roller tank","DKDMHL","GDkfg",6,3,9,"4B5320","6D4C41","tank with spinning chain flails in front","boom","Whips the ground. Pops the mines.","mechanical,vehicle,military"},
 	{"mine shaft","EEDCII","GCSh",3,1,7,"6D4C41","FFB300","timber-framed tunnel with rail tracks","thud","Dig deep. Find gold. Lose map.","structure"},
-	{"minefield","CADLKI","EkP",7,1,3,"6B7B3A","7A4E2D","patch of buried mines","boom","Don't. Walk. Here.","explosive"},
-	{"miner","LECJNA","Ckf",5,4,6,"57534E","FACC15","headlamp helmet, pickaxe, dusty face","clank","Diggy diggy hole.","tools"},
-	{"mineral","BEBA4B","Tea",3,6,6,"34D399","A78BFA","chunky rock studded with green and purple crystals","clink","They are minerals. Not rocks. Minerals.","shiny,science"},
-	{"minestrone","IBBOGI","FS",3,4,3,"C8602B","7DBE3A","tomato soup with veg, pasta","slurp","Everything in the pantry, in soup.","edible,warm,healthy"},
-	{"minesweeper","DBDKHC","DkHgB",5,5,7,"607D8B","37474F","small grey warship with sweeping gear","splash","Clears the mines. And the enemies.","vehicle,aquatic"},
-	{"mini catapult","BMAMxI","ke",1,6,2,"C49A6C","C0392B","tiny stick catapult with spoon","thud","Small but mighty.","toy,siege"},
 }

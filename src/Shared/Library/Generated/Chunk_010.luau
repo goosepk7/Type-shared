@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
+	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
+	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
+	{"flip","KMBOKK","kY",2,8,2,"FFE082","FFFFFF","acrobatic flip arc trail","whoosh","Ten points for style.","sport"},
 	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
 	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
 	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
@@ -181,6 +185,7 @@ return {
 	{"frost dominion","KCEF6I","JSNP",8,6,3,"CFF4FF","3E86B8","the ground freezes over in a racing white lane","crackle","Everything stops. Even the puddles.","anime,pirate,ice"},
 	{"frost fairy","ACAJNB","AJ",2,8,1,"E0F2FE","60A5FA","fairy with snowflake wings","chime","Freezes your nose. Giggles.","fairy,frozen"},
 	{"frost fern","NCBLMI","JSN",3,1,3,"B3E5FC","FFFFFF","crystallised frosty fronds","chime","Feathers of frost.","plant,magic,mythical,frozen"},
+	{"frost forge","FCDIyI","GTeN",6,5,5,"B0E2FF","60A8E4","six-point crystal ice shield with lances above it","crack","Forged cold, fired colder.","anime,guild magic,ice,shield"},
 	{"frost fox","ACBJAA","JZf",3,8,2,"E0F2FE","60A5FA","white fox trailing snowflakes","yip","Pounces into snow. Freezes everything.","frozen,cute"},
 	{"frost giant","ACEJNA","JkfN",8,3,8,"BAE6FD","64748B","towering blue giant, icicle beard","stomp","Brings winter wherever he stomps.","mythical,giant,frozen,norse"},
 	{"frost lightning","FDDAKB","JeL",7,9,1,"E1F5FE","FFF59D","pale icy bolt leaving frost trails","crack","Zap, then brr.","electric,frozen"},
@@ -398,9 +403,4 @@ return {
 	{"ghost","AICJGJ","jAZO",4,6,2,"E5E7EB","A5B4FC","floaty sheet shape, hollow eyes, wavy tail","wail","Goes BOO. Very proud of that.","undead,spooky,halloween,ghost"},
 	{"ghost bat","AIBJDB","jiA",2,7,1,"E8E0D8","C8B8A8","pale ghostly bat","screech","Pale, spooky, and hungry.","mammal,nocturnal,spooky"},
 	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
-	{"ghost car","DICKHE","DjZg",5,7,3,"B3E5FC","5E35B1","see-through glowing car, no driver","engine","Nobody is driving. Nobody.","mechanical,vehicle,land,spooky"},
-	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
-	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
-	{"ghost costume kid","LIBJGA","jd",2,5,2,"F8FAFC","111827","kid in a bedsheet with eye holes","wail","Boo. Trips on the sheet.","cute,halloween,silly"},
-	{"ghost crab","ABBJRA","GZfT",2,8,5,"E8E0D0","C8C0B0","pale fast beach crab, stalk eyes","clack","Vanishes in the sand. Spooky.","crustacean,aquatic,armored"},
 }

@@ -391,6 +391,7 @@ return {
 	{"artichoke","IGCIII","Ga",3,3,6,"6B8E4A","9E7A8A","layered spiky globe, scale leaves","thud","An armoured vegetable. Eat its armour.","edible,vegetable"},
 	{"artichoke plant","NGBNMI","WFST",2,1,4,"7CB342","7E57C2","spiky silver plant with thistle bloom","rustle","A thistle you can eat. Carefully.","plant,crop"},
 	{"artillery truck","DKDMHL","GEkeg",8,3,8,"556B2F","37474F","truck with a long tilted big gun","boom","Lobs shells over hills.","mechanical,vehicle,military"},
+	{"artisan cannon","OLDMxI","Eke",7,2,6,"B07A42","FF84C4","bronze cannon drawn glowing out of your forearm","boom","Made to order. Three shots, then it is a wall.","anime,quirk,machine,summon"},
 	{"artist","LLCJNA","jde",3,4,3,"7C3AED","FACC15","beret, palette, paint-splattered smock","swish","Paints you into a corner. Literally.","art"},
 	{"arugula","IGBOMI","KF",2,4,3,"3E7A2B","6B9E4A","jagged peppery leaves","crunch","Lettuce with an attitude.","edible,vegetable,healthy"},
 	{"asado","IABNGI","KSc",4,4,2,"8A2E2E","C8603A","meats roasting over open flame","sizzle","A whole afternoon of grilling.","edible,spicy"},
@@ -402,5 +403,4 @@ return {
 	{"ash tree","NHDCMI","GWkS",4,1,7,"8D8D8D","E53935","tall tree with orange-red berry clusters","rustle","Wards off witches. Allegedly.","plant,tree"},
 	{"ash wasteland","MAENII","KjS",4,1,6,"616161","FF7043","grey ash dunes, smouldering stumps","rumble","Everything here already burned. Twice.","place,terrain"},
 	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
-	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
 }

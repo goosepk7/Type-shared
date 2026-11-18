@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clematis","NGCLMI","WSHN",2,1,3,"7E57C2","FFFFFF","climbing vine with big starry blooms","rustle","Climbs anything. Smothers everything.","plant"},
+	{"clementine","IMBAKF","jke",3,6,2,"F59B26","2F6B2A","tiny bright orange, two leaves","squirt","Tiny, sweet, and full of squirt.","edible,fruit,sour"},
+	{"cleome","NGCNMI","dFS",1,1,2,"F48FB1","FFFFFF","spidery pink blooms with long whiskers","rustle","Looks like a spider. Is a flower. Phew.","plant,flower,silly"},
 	{"cleric","LHCJNA","GFe",4,4,5,"F8FAFC","FACC15","white robe, golden symbol, healing glow","chime","Bandages, blessings, and stern looks.","holy,healer"},
 	{"click beetle","AMAJFA","GUf",1,3,4,"3A2A1A","8A6A4A","slim beetle flipping into air","click","Flips itself with a click.","insect,armored"},
 	{"clickbait","KLBLnI","jcO",3,2,1,"EF4444","FACC15","thumbnail with a shocked face, red arrow and red circle","click","You will NOT believe what happens next. (Bonk.)","meme,internet"},
@@ -349,6 +352,7 @@ return {
 	{"crack","KECBCB","TNV",5,9,1,"1F2937","F8FAFC","jagged black crack racing across the ground","crack","Step on one. See what happens to mum's back.","terrain"},
 	{"crackers","IMBAKK","Uke",3,7,2,"E8C07A","C8904A","square crisp with holes","whoosh","Crispy squares. Snap on impact.","edible"},
 	{"cradle","BMBL0I","FNO",2,2,4,"BFDBFE","FDE68A","wooden rocking cradle with a mobile of stars","hush","Rock-a-bye, enemy. Down will come everything.","household,cute"},
+	{"crag hide","KECOKI","GDk",5,4,5,"46403E","FF8C32","jagged basalt plates slam onto the body","crunch","Hit me. Go on. Hit me again.","anime,quirk,earth"},
 	{"cranachan","IGBOKI","F",2,5,3,"F7F2EC","D7263D","cream, oats, raspberries in a glass","crunch","Scottish dessert, layered.","edible,healthy"},
 	{"cranberry","IGAELB","UeV",2,7,1,"A3101E","D8434F","small hard red berry","pitter","Bounces. Literally. Tested in bogs.","edible,fruit,sweet"},
 	{"cranberry juice","IBBOKI","F",2,6,2,"A3101E","D8434F","glass of red juice","slurp","Tart red juice.","edible,drink"},
@@ -399,8 +403,4 @@ return {
 	{"cricket","AMAJFG","UdAP",1,6,1,"4A3A2A","8A6A44","dark hopper rubbing legs","chirp","Chirps all night. Can't stop.","insect"},
 	{"cricket ball","BMAA3F","ke",2,9,5,"9E1B32","F2F2EE","hard red stitched ball","bonk","Very red. Very hard.","sport"},
 	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
-	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
-	{"crimson cataclysm","KAFGKI","KEe",10,3,1,"D6162E","FFBA48","crimson circles stacked in the sky over a huge blast","explosion","One spell a day, and it is always this one.","anime,isekai,explosion,ultimate"},
-	{"crimson repulse","KLBAKB","EkIe",8,10,1,"FF2834","46060E","a red pinpoint that blasts everything away from itself","boom","Go away. Everything. Now.","anime,magic,force"},
-	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
 }

@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green mamba","AMCJCD","fMN",4,8,3,"4AC84A","E8F07A","bright green slender tree snake","hiss","Neon green. Lives in trees.","reptile,venomous"},
+	{"green man","AGCJNA","WFN",5,3,6,"15803D","4D7C0F","face made of oak leaves with vine beard","rustle","The forest's face. Watching.","spirit,plant"},
+	{"green mango","IMBAKF","jke",3,6,2,"8DB84A","F2E8C0","unripe green mango","squirt","So sour your ears twitch.","edible,fruit,sour"},
+	{"green onion","IMBHJI","kf",3,5,4,"5E9E3A","F2F2E0","long green stalk, white bulb","bonk","An onion that never grew up.","edible,silly,vegetable"},
+	{"green pepper","IGBAKF","Fke",3,5,3,"3E8E2B","5EAE3A","blocky green bell pepper","thud","A bell that never rings.","edible,vegetable,healthy"},
+	{"green smoothie","IGBOKI","WF",3,5,3,"7DBE3A","3E8E2B","tall green drink","chomp","Tastes like a salad. Feels like victory.","edible"},
 	{"green tea","IGBOKI","F",2,5,2,"7DAE3A","C8E08A","green cup of tea","slurp","Calm, green, and focused.","edible,drink,warm"},
 	{"green tomato","IGBAKK","keO",3,7,6,"8DB84A","C8E08A","hard unripe tomato","bonk","A tomato that isn't ready yet.","edible"},
 	{"greengage","IGAAKF","Fke",3,6,2,"A8C86B","E8F2B0","small round green plum","splat","A tiny green plum.","edible,fruit,sweet"},
@@ -397,10 +403,4 @@ return {
 	{"hockey player","LCCJNA","Dke",5,8,5,"111827","F8FAFC","helmet, skates, hockey stick","crack","Body check! Hockey puck incoming.","sport,frozen"},
 	{"hockey puck","BMAA3F","keO",2,9,6,"24262A","4A4D52","flat black rubber disc","bonk","Slaps across ice. Slaps across faces.","sport"},
 	{"hockey stick","BMCHJK","kfI",3,7,4,"24262A","F2F2EE","long stick with angled blade","bonk","Slapshot to the face-off.","sport"},
-	{"hocus pocus","KLCAKB","jX",4,7,1,"8E24AA","FFEB3B","wand sparkle swirl with stars","poof","Hocus pocus, everybody focus.","magic,silly"},
-	{"hodag","AECJAA","Dkf",5,6,6,"365314","F5F5F4","horned frog-faced lizard beast with spikes","roar","Smells like a barbecue that went wrong.","cryptid"},
-	{"hoe","JKCHJK","fH",2,5,4,"8A929B","8B5A2B","flat angled blade on pole","clank","Weeds have one natural enemy.","tool,garden"},
-	{"hoecake","IMBAKK","Uke",3,7,2,"E8B84A","F2D88A","thin cornmeal griddle cake","whoosh","A flat corn cake from the griddle.","edible"},
-	{"hog badger","AMBJAA","CfT",3,8,2,"C8B8A8","3A3A3A","badger with pig snout","chatter","Half badger, half piggy nose.","mammal,predator"},
-	{"hoglet","AMAJAA","CfT",1,5,3,"B8A08A","F2E6D8","tiny pale spiky ball","squeak","Soft spikes. Will harden.","mammal,wild"},
 }

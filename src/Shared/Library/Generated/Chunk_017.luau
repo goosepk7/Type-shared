@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"minefield","CADLKI","EkP",7,1,3,"6B7B3A","7A4E2D","patch of buried mines","boom","Don't. Walk. Here.","explosive"},
+	{"miner","LECJNA","Ckf",5,4,6,"57534E","FACC15","headlamp helmet, pickaxe, dusty face","clank","Diggy diggy hole.","tools"},
+	{"mineral","BEBA4B","Tea",3,6,6,"34D399","A78BFA","chunky rock studded with green and purple crystals","clink","They are minerals. Not rocks. Minerals.","shiny,science"},
+	{"minestrone","IBBOGI","FS",3,4,3,"C8602B","7DBE3A","tomato soup with veg, pasta","slurp","Everything in the pantry, in soup.","edible,warm,healthy"},
+	{"minesweeper","DBDKHC","DkHgB",5,5,7,"607D8B","37474F","small grey warship with sweeping gear","splash","Clears the mines. And the enemies.","vehicle,aquatic"},
+	{"mini catapult","BMAMxI","ke",1,6,2,"C49A6C","C0392B","tiny stick catapult with spoon","thud","Small but mighty.","toy,siege"},
 	{"mini drones","OKBJLB","AQe",4,8,2,"4A4D52","C0392B","swarm of tiny buzzing quadcopters","hum","Bzzzzzzz. Pew pew.","scifi"},
 	{"mini marshmallows","IMAELB","UeP",2,7,1,"F7F4F0","F2A6C8","tiny white cylinders","pitter","A blizzard of fluffy.","edible,sweet,candy"},
 	{"mini submarine","DBCKHC","lfgB",4,4,8,"FF6F00","F5F5F5","round pod with lights and claw arms","sonar","Finds treasure. Pinches enemies.","vehicle,aquatic"},
@@ -278,6 +284,7 @@ return {
 	{"murder holes","EACLII","KSN",5,1,7,"9E9E9E","212121","gatehouse ceiling with holes above","thud","Something hot is coming down.","structure,defense,ancient"},
 	{"murder hornet","AJBJLB","AfTMP",4,7,1,"E8A02A","2A1E14","huge orange-headed hornet","buzz","Ruins entire bee hives. Villain.","insect,swarm,venomous"},
 	{"murk","FICDOJ","jN",3,3,3,"2F3B33","5F6B5A","muddy dark green fog","bubble","Cannot see. Do not want to see.","spooky"},
+	{"murk familiar","AICJBJ","Wf",6,6,6,"26213A","FFBA3C","horned shadow beast hovering at your shoulder","growl","It likes the dark. It gets bigger there.","anime,quirk,shadow,summon"},
 	{"muscle","KMCOXI","Wklf",5,4,6,"D98E5F","FFD166","huge flexing arm, bulging bicep, sweat sparkle","grunt","Do you even type, bro?","body,sport,silly"},
 	{"muscle car","DMCKHL","Dkg",6,8,6,"1F3A93","F2F2F2","long hood, racing stripes, chunky rear tyres","engine","All engine, no brakes, zero regrets.","mechanical,vehicle,land"},
 	{"muscovy duck","ABBJDC","dAfB",2,5,2,"1E1E1E","E8301E","warty red face duck","quack","Duck with a warty mask.","bird,aquatic"},
@@ -396,11 +403,4 @@ return {
 	{"net","BMCLJK","NO",1,5,3,"B89B6A","6B7B3A","knotted rope mesh","clank","Catch of the day: you.","tool"},
 	{"net gun","OMCAwI","eNO",2,7,3,"6B7B3A","8E9196","wide-barreled launcher, net bundle","twang","Fwoomp. Caught.","ranged,trap"},
 	{"net launcher","OKCMxI","eNO",3,5,5,"6B7B3A","B89B6A","tube that fires weighted nets","clank","Fwoomp. Caught. Next.","defense,mechanical"},
-	{"net trap","BMCLII","lNO",2,1,3,"B89B6A","6B7B3A","hidden net that yanks upward","snap","Hammock, but involuntary.","trap,defense"},
-	{"netherland dwarf","AMAJAG","UCd",1,6,1,"E8D8C8","8A6A4A","tiny round rabbit, short ears","squeak","The tiniest bunny. Max cute.","mammal,cute"},
-	{"network","ODDNmI","jLPh",5,1,5,"0F172A","22D3EE","humming racks of blinking lights joined by glowing cables","hum","The server is down. Everyone panic.","tech"},
-	{"neutron","FMAAKB","ZTe",2,9,3,"9CA3AF","E5E7EB","tiny grey ball with a blank face, no charge","thud","For you? No charge.","science"},
-	{"neutron bomb","CDEGKI","iEP",9,2,2,"8E9196","3FC1D9","sleek silver bomb with glow","zap","Very quiet. Very bad.","scifi,explosive,danger"},
-	{"neutron star","HHEGKK","HLO",8,5,9,"E3F2FD","40C4FF","tiny blinding spinning star with twin beams","hum","A spoon of it weighs a mountain.","space,heavy"},
-	{"new kid","LMBJNA","dZ",2,6,3,"60A5FA","F8FAFC","backpack, nervous smile","ding","Nobody knows their powers. Yet.","school"},
 }

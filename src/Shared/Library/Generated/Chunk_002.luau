@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
 	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
 	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
@@ -20,6 +21,7 @@ return {
 	{"asteroid shower","HEFEOB","KEke",9,6,7,"5B4F46","FF8A3D","dozens of burning rocks falling across the sky","rumble","Bring a very, very big umbrella.","space,explosive,danger"},
 	{"asteroid turtle","AEEJAJ","GA",6,2,9,"57534E","22D3EE","giant turtle with an asteroid shell","rumble","Carries a tiny planet on its back.","cosmic"},
 	{"astral","FLCBKI","eY",5,7,2,"5C6BFF","E8E2FF","starfield-filled beam, nebula swirls","chime","Cosmic vibes, directly to the face.","magic,space"},
+	{"astral bull","AHDJNA","Qkf",7,4,6,"283468","F0C868","horned bull-warrior of starlight with a great axe","roar","Turn the key. Mind the axe.","anime,guild magic,summon,star"},
 	{"astral projection","KLCOVJ","AZY",3,6,2,"B3E5FC","E1BEE7","glowing see-through copy floating out","hum","Leave your body. Come back soon.","magic,psychic"},
 	{"astro whale","ALDJEJ","AF",5,3,6,"312E81","67E8F9","small starry whale with glowing spots","whale","Sings tiny cosmic songs.","alien,cosmic,cute"},
 	{"astromancy","FHCEOB","Ke",5,6,2,"FFF59D","311B92","constellation lines raining starlight","chime","Read the stars. Throw the stars.","space,magic"},
@@ -401,6 +403,4 @@ return {
 	{"bee-eater","AMAJDB","dA",1,7,1,"2AB06A","F2C82A","rainbow bird, curved beak","tweet","Eats bees. Removes stingers first.","bird,cute"},
 	{"beech tree","NGECMI","GWkS",4,1,8,"9E9E9E","7CB342","smooth grey trunk, wide crown","rustle","Smooth bark. Rough day for you.","plant,tree"},
 	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
-	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
-	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
 }

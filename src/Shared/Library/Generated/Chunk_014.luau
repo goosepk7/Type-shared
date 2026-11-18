@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"itching powder","CMADOI","jd",1,6,1,"D2B48C","F2F2EE","puff of scratchy powder","thwip","Scratch. Scratch. SCRATCH.","prank,silly"},
+	{"ittan-momen","AFCJCB","AHN",3,8,2,"F8FAFC","E5E7EB","long strip of white cloth flying at night","whoosh","A scarf that wraps you up. Too tight.","yokai"},
+	{"ivory wyrm","KHEJPB","AQeN",9,7,6,"E9EEF6","5AA8FF","a pale armoured wyrm with swept wings and an azure throat","roar","Twelve seconds of being the coolest card in the deck.","anime,card game,dragon"},
+	{"ivy","NGCLMI","GWSHN",2,1,4,"1B5E20","43A047","climbing glossy heart leaves","rustle","Climbs walls. Climbs enemies.","plant"},
+	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
+	{"jab","KMBAKB","DfO",3,10,1,"FCA5A5","FFFFFF","quick straight glove punch with a tiny impact star","pow","Quick. Rude. Repeatable.","melee,sport"},
 	{"jabiru","AMDJDA","AfT",4,5,2,"F2F2F2","E8301E","huge stork with red collar","squawk","Giant stork. Red scarf.","bird,wetland"},
 	{"jabuticaba","NGCCMI","GWFkS",2,1,5,"6D4C41","4A148C","trunk covered in dark round fruit","rustle","Grows grapes on its trunk. Weird.","plant,tree,silly"},
 	{"jacamar","AMAJDB","dA",1,7,1,"2AA06A","C8601E","long needle beak","tweet","Catches butterflies mid-air.","bird,cute"},
@@ -397,10 +403,4 @@ return {
 	{"laser cannon","CHDMxI","KTe",8,5,6,"3A3F45","FF2D2D","heavy twin-barrel beam cannon","zap","For lasers that need to be heard.","scifi,ranged"},
 	{"laser chainsaw","CACHJI","KfV",8,5,5,"E67E22","FF2D2D","chainsaw with glowing laser teeth","zap","Rrrrrzzzzzap.","scifi,sharp,loud"},
 	{"laser drill","OHCBwI","KCe",6,6,5,"E67E22","FF2D2D","bulky drill firing a laser","hum","Tunnels through anything.","scifi"},
-	{"laser grid","EDCCII","KST",5,2,4,"FF462E","40444E","two posts with three red laser beams between","hum","Mind the gap. All three of them.","scifi,modern,heist"},
-	{"laser pistol","CHBBwI","KTe",5,9,3,"F2F2EE","FF2D2D","compact sleek beam pistol","zap","Short burst, long reach.","scifi,ranged"},
-	{"laser pointer","CHABJI","jdce",1,10,1,"FF2D2D","24262A","tiny pen with red dot","zap","Cats fear and love this.","silly"},
-	{"laser rifle","CHCBwI","KTe",6,9,4,"F2F2EE","FF2D2D","sleek white rifle, red lens","zap","Straight lines are its whole thing.","scifi,ranged"},
-	{"laser sight","CHAOJI","e",1,1,1,"FF2D2D","24262A","tiny red dot emitter","zap","Never miss again.","scifi,ranged"},
-	{"laser tag gun","CHBBwI","de",1,9,2,"39FF14","24262A","chunky light gun with sensor","thwip","Pew! You're tagged!","toy,silly"},
 }

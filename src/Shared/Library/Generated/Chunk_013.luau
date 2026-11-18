@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hocus pocus","KLCAKB","jX",4,7,1,"8E24AA","FFEB3B","wand sparkle swirl with stars","poof","Hocus pocus, everybody focus.","magic,silly"},
+	{"hodag","AECJAA","Dkf",5,6,6,"365314","F5F5F4","horned frog-faced lizard beast with spikes","roar","Smells like a barbecue that went wrong.","cryptid"},
+	{"hoe","JKCHJK","fH",2,5,4,"8A929B","8B5A2B","flat angled blade on pole","clank","Weeds have one natural enemy.","tool,garden"},
+	{"hoecake","IMBAKK","Uke",3,7,2,"E8B84A","F2D88A","thin cornmeal griddle cake","whoosh","A flat corn cake from the griddle.","edible"},
+	{"hog badger","AMBJAA","CfT",3,8,2,"C8B8A8","3A3A3A","badger with pig snout","chatter","Half badger, half piggy nose.","mammal,predator"},
+	{"hoglet","AMAJAA","CfT",1,5,3,"B8A08A","F2E6D8","tiny pale spiky ball","squeak","Soft spikes. Will harden.","mammal,wild"},
 	{"hognose snake","AMBJCD","jfN",2,6,3,"B8986A","6A4A2A","upturned snout","hiss","Plays dead dramatically. Oscar worthy.","reptile,venomous,silly"},
 	{"hoisin","IMBLGI","SNP",2,3,3,"5A1E1E","8A3020","thick dark sweet sauce","gloop","Sweet, sticky, and dark.","edible,sticky,sauce"},
 	{"hole punch","BMALJK","T",1,4,4,"8E9196","24262A","two-hole office punch","tap","Ka-chunk. Holes.","office"},
@@ -397,10 +403,4 @@ return {
 	{"it","AICJGD","jQWZ",5,4,5,"374151","A3E635","shapeless something under a sheet, one tentacle poking out","gurgle","What is it? Nobody knows. It is coming.","spooky,silly"},
 	{"italian ice","ICBAKJ","JeN",3,5,2,"F2D23A","F7F7F2","cup of smooth fruity ice","squish","Ice that went to culinary school.","edible,frozen,sweet"},
 	{"itch","KJAAKB","jd",1,8,1,"C0CA33","FFFFFF","tiny wiggly itch lines","scritch","Can't stop scratching.","silly"},
-	{"itching powder","CMADOI","jd",1,6,1,"D2B48C","F2F2EE","puff of scratchy powder","thwip","Scratch. Scratch. SCRATCH.","prank,silly"},
-	{"ittan-momen","AFCJCB","AHN",3,8,2,"F8FAFC","E5E7EB","long strip of white cloth flying at night","whoosh","A scarf that wraps you up. Too tight.","yokai"},
-	{"ivory wyrm","KHEJPB","AQeN",9,7,6,"E9EEF6","5AA8FF","a pale armoured wyrm with swept wings and an azure throat","roar","Twelve seconds of being the coolest card in the deck.","anime,card game,dragon"},
-	{"ivy","NGCLMI","GWSHN",2,1,4,"1B5E20","43A047","climbing glossy heart leaves","rustle","Climbs walls. Climbs enemies.","plant"},
-	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
-	{"jab","KMBAKB","DfO",3,10,1,"FCA5A5","FFFFFF","quick straight glove punch with a tiny impact star","pow","Quick. Rude. Repeatable.","melee,sport"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
+	{"crimson cataclysm","KAFGKI","KEe",10,3,1,"D6162E","FFBA48","crimson circles stacked in the sky over a huge blast","explosion","One spell a day, and it is always this one.","anime,isekai,explosion,ultimate"},
+	{"crimson repulse","KLBAKB","EkIe",8,10,1,"FF2834","46060E","a red pinpoint that blasts everything away from itself","boom","Go away. Everything. Now.","anime,magic,force"},
+	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
 	{"cringe","KMBFOB","jO",2,7,1,"BDBDBD","FFAB91","shuddering wobble ring","eugh","Oof. Can't look.","meme,silly"},
 	{"critter","AGBJAA","UCb",2,7,2,"A0724A","F5E6CC","scruffy little furball with bright eyes and a twitchy nose","chitter","Lives in your walls. Pays no rent.","mammal,cute,wild"},
 	{"crocodile","ABDJAC","fHOB",7,5,8,"5A6A3A","C8C08A","long armored snout, teeth showing","snap","Smiles with all its teeth. Not friendly.","reptile,predator,aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"djinn king","ALEJNJ","klhY",8,6,6,"1E3A8A","FACC15","towering genie with jeweled turban","whoosh","Wishes granted. With terms and conditions.","magic,royal,boss"},
 	{"dna","BGBOCK","jWFV",4,5,3,"3B82F6","EF4444","twisting blue and red ladder spiral, rungs glowing","hum","You have your mother's eyes. And her right hook.","science"},
 	{"doberman","AMCJAA","DQf",5,8,4,"1A1414","A0582A","sleek black-tan dog, pointy ears","bark","Built for speed and side-eye.","mammal,pet"},
-	{"dobsonfly","AMBJFB","dAfP",2,6,1,"6A5A44","C8B88A","huge flying bug with giant mandibles","buzz","Big scary jaws. Mostly harmless.","insect"},
-	{"doctor","LMCJNA","GFe",3,4,5,"F8FAFC","0EA5E9","white coat, stethoscope, clipboard","beep","Says ahh. Gives a lollipop.","healer"},
-	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
-	{"dodge","KFBOKB","ZY",2,10,2,"E1F5FE","FFFFFF","blurry afterimage sidestep","whoosh","Missed me!","speed"},
 }
