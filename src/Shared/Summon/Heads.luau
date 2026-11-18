@@ -155,6 +155,8 @@ local ARCH: { [string]: any } = {
 	bovine = { cran = { 0.46, 0.4, 0.42 }, muzzle = { -0.2, -0.42, 0.35, 0.26, 0.26 }, nose = { "nostrils", 0.09 }, ears = { "side", 0.5 }, eyes = { 0.26, 0.12, 0.22, 22 } },
 	porcine = { cran = { 0.47, 0.43, 0.46 }, nose = { "disc", 0.38 }, ears = { "flop", 0.46 }, eyes = { 0.2, 0.12, 0.2 } },
 	rodent = { cran = { 0.46, 0.42, 0.47 }, snout = { -0.1, -0.4, 0.2, 0.17, 0.28, 0 }, nose = { "ball", 0.11, "inner" }, ears = { "round", 0.5 }, eyes = { 0.23, 0.1, 0.27 }, teeth = true },
+	-- seals, sea lions, walruses (Plans/SeaMammal): round skull, whisker pads, no ear flaps
+	pinniped = { cran = { 0.46, 0.42, 0.48 }, cheeks = { -0.16, -0.36, 0.16, 0.13, 0.15 }, nose = { "ball", 0.13 }, eyes = { 0.22, 0.1, 0.32 } },
 }
 -- generic quadruped sub-kinds (Plans/Quadruped): mustelids, stocky badgers, ant-eaters, armoured / spiny mammals,
 -- pachyderms, camelids, hopping marsupials. ears "none" = the plan builds its own (elephant flaps).
