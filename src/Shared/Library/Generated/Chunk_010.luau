@@ -402,4 +402,5 @@ return {
 	{"giant ground sloth","AMEJAA","DkTO",7,1,8,"8A6A4A","C8A880","elephant-sized sloth standing up","roar","A sloth as big as an elephant. Slow.","mammal,extinct,ancient,heavy"},
 	{"giant growth","KEEONI","Wk",5,4,3,"E8A23A","5A3A2A","grow half again as big, with a longer reach","rumble","Mind your head.","hero,movie,giant"},
 	{"giant gumball","IMEGIF","UkI",7,2,7,"E0102B","4FA3E8","boulder-sized glossy gumball","thud","Bounces over everything.","edible,giant,silly"},
+	{"giant gummy bear","IMEJBA","Udkf",7,2,7,"E0102B","F2A62B","towering translucent bear","thud","Wobbles menacingly. Very sweet.","edible,giant,silly,candy"},
 }

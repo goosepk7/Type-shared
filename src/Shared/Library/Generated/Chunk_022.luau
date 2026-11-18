@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sagittarius","MHCEKJ","Te",5,5,5,"FFFFFF","FF7043","star centaur drawing a bow","rumble","Fires star arrows. Never misses. Okay, rarely.","space,zodiac"},
+	{"saguaro","NEDCMI","GST",5,1,8,"388E3C","F5F5F5","tall cactus with upward bending arms","thud","Waves hello. Spikes goodbye.","plant,desert,sharp"},
 	{"sahara","MAFNII","KSN",6,1,9,"F2C27A","E6A04D","endless rolling golden dunes","rumble","Sand. Then more sand. Then a sandstorm.","place,landmark"},
 	{"sai","CKBHJK","GfT",3,8,4,"C9CED4","24262A","three-prong dagger","shing","Catches blades. Pokes faces.","ninja,sharp"},
 	{"saiga","AMCJAA","Dk",4,8,4,"D2BE9A","A89270","big floppy bulbous nose","bleat","Nose looks like a tiny trunk.","mammal,wild,silly"},
@@ -401,7 +403,4 @@ return {
 	{"sheepdog","AMCJAA","DQfH",4,7,4,"D8D8D6","6E7278","shaggy hair covering eyes","bark","Cannot see. Doesn't care.","mammal,pet"},
 	{"sheepdog puppy","AMAJAA","dQf",1,6,2,"1E1E1E","F2F2F2","fluffy black and white pup","yip","Already herding its siblings.","mammal,pet,cute"},
 	{"sheepshead","ABCJEC","DfB",4,7,4,"8A8A8A","1E1E1E","striped fish with human teeth","splash","Has human-looking teeth. Eek.","fish,aquatic,spooky,silly"},
-	{"sheet","BFCLVJ","jAN",2,5,2,"FFFFFF","BFDBFE","white bedsheet billowing with two eye holes","whoosh","Either laundry or a ghost. Fifty-fifty.","household,spooky,silly"},
-	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
-	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
 }

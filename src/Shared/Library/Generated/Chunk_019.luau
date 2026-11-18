@@ -403,6 +403,4 @@ return {
 	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
 	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
 	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},
-	{"polo mallet","BMCHtK","kf",2,6,3,"C49A6C","F2F2EE","long skinny mallet","bonk","Very fancy bonking.","sport"},
-	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 }
