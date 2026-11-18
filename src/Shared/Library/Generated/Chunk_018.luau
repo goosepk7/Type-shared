@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"niece","LMBJNA","jde",2,7,3,"F472B6","F2D0B4","small girl covered in glitter with a marker pen","giggle","Drew on the walls. Calls it a gift.","family,cute"},
 	{"nigella","NGBNMI","jdFS",1,1,1,"64B5F6","7CB342","blue flower in a cage of fronds","rustle","Love in a mist. Confusing in a fight.","plant,flower"},
 	{"nigersaurus","AMEJAA","kHI",6,2,9,"8A7A6A","D8C8B0","vacuum-cleaner wide mouth","rumble","Has 500 teeth. Mouth like a vacuum.","dinosaur,extinct,reptile,heavy"},
 	{"night","FIDNOI","ZN",4,4,3,"141A3A","5E6AB8","starry dark-blue dome falling over area","hush","Bedtime. For everyone.","space,spooky"},
@@ -402,5 +403,4 @@ return {
 	{"partridge","AMBJDA","df",2,4,2,"8A7A6A","C8703A","round plump game bird","cluck","Sits in pear trees. Allegedly.","bird,farm,holiday"},
 	{"party","KMCNOI","jdc",2,5,2,"FF4081","FFEB3B","confetti, streamers and disco lights","music","Nobody fights at a party.","silly"},
 	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
-	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow cat","AIBJAA","jZY",2,9,2,"0F0F23","A78BFA","black cat with starry inside","meow","Stares at empty corners. Knows things.","spooky,cute"},
+	{"shadow chains","FICLII","HO",5,5,4,"1A0033","7C4DFF","smoky black chains wrapping target","clank","Bound by darkness. Very dramatic.","spooky"},
+	{"shadow claw","FICHJB","ifT",5,9,1,"1A0033","AA00FF","three glowing violet claw slashes","shrk","Scratch scratch scratch.","spooky,sharp"},
 	{"shadow cloak","KIBOKJ","GZ",2,6,3,"1A1027","5E35B1","swirling smoky shadow around caster","hush","Fashionably invisible.","spooky,stealth"},
 	{"shadow dash","KICOKB","DZ",4,10,2,"1A0033","7C4DFF","black smoky streak","hiss","Was that a shadow? It was me.","spooky,speed"},
 	{"shadow dome","KIDIKI","GZ",3,3,7,"1A0033","7C4DFF","black smoky dome hiding allies","hiss","Can't hit what you can't see.","spooky,defence"},
@@ -400,7 +403,4 @@ return {
 	{"snake charmer","LJCJNI","cOh",3,4,3,"F59E0B","15803D","flute and basket with a dancing snake","flute","Plays a tune. Snakes appear.","music"},
 	{"snake in a can","CMALJK","jO",1,1,2,"2E8B57","C0392B","can with springing fabric snakes","boing","BOING! Ahhh!","prank,silly"},
 	{"snake plant","NGBOMI","FST",2,1,5,"2E7D32","FFEB3B","upright sword-like striped leaves","rustle","Pointy leaves. Unkillable.","plant,houseplant"},
-	{"snakefly","AMAJFB","dAP",1,6,1,"1E1E1E","8A6A4A","long neck flying bug","buzz","Has a snake neck.","insect"},
-	{"snakehead","ABCJCC","DfB",4,7,4,"5A5A3A","C8B88A","long fish with snake-like head","splash","Walks between ponds. Rude.","fish,aquatic"},
-	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
 }

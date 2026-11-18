@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"macaque","AMBJBA","deb",2,7,2,"9A8A72","E8A090","pink face, short tail","chatter","Steals your sunglasses. Wears them.","mammal,primate"},
 	{"macaron","IMALKI","dSc",2,3,3,"F2A6C8","B8E0C8","two pastel shells, cream middle","chomp","Pastel, delicate, very fancy.","edible,sweet,fancy"},
 	{"macaroni","IMAELB","eVP",2,7,1,"F2D08A","E8C070","small curved tubes","pitter","Tiny curved tubes. Excellent ammo.","edible"},
 	{"macaroon","IMBLKI","dSc",2,3,3,"F7F4EC","D9A04A","toasted coconut mound","chomp","A shaggy coconut haystack.","edible,sweet,dessert"},
@@ -402,5 +403,4 @@ return {
 	{"minivan","DMCKHL","Dkg",4,6,6,"6E8FA6","D9DEE2","tall rounded van, sliding side door","engine","Soccer practice is cancelled. Battle is on.","mechanical,vehicle,land,silly"},
 	{"mink","AMBJAA","CfTB",3,8,2,"3A2618","5A3E2C","glossy dark brown slinky body","chatter","Shiny coat, sharp teeth.","mammal,predator"},
 	{"minke whale","ABEJEC","kIB",6,3,9,"3A4250","D8DEE4","small sleek whale, white flipper bands","whalesong","Smallest of the big guys.","mammal,aquatic,ocean,heavy"},
-	{"minmi","AMCJAA","Gkf",4,3,9,"8A7A5A","C8B88A","small armored dino","grunt","Small but fully armored.","dinosaur,extinct,reptile,armored"},
 }

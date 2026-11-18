@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"window washer","LBCJNA","IN",3,4,3,"0EA5E9","F8FAFC","squeegee, bucket, harness","squeak","Squeaky clean. Squeaky slippery.","silly"},
+	{"windpump","EFDMIK","GSI",3,1,6,"B0BEC5","E53935","metal tower with a spinning fan wheel","creak","Pumps water. Spins menacingly.","structure,farm"},
+	{"windstorm","GFDFOB","kIP",6,7,3,"90A4AE","ECEFF1","long rushing gale with flying leaves","howl","Hold on to something. Anything.","storm,air"},
+	{"wing","BFCODB","AklI",3,8,3,"F5F5F5","CFE3F2","pair of white feathered wings flapping, no body","flutter","Just wings. Body sold separately.","flying,body"},
 	{"wing gust","KFDNDJ","AkI",3,8,2,"FFF4D0","E8B84A","feathered energy wings flap a wide gust","whoosh","Flap once. Float forever. Ish.","hero,movie,wings"},
 	{"winged helmet","BFBONI","DA",3,7,5,"C9CED4","D4A72C","helm with little wings","clank","Swift as a messenger.","armor,fantasy,ancient"},
 	{"winged lion","AHDKAB","DAg",6,7,6,"CA8A04","FDE68A","golden lion with eagle wings","roar","Kings of the jungle AND the sky now.","mythical,mount"},
