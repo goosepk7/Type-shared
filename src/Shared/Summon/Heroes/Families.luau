@@ -24,6 +24,7 @@ return {
 	"rail",
 	"reptiles",
 	"rides",
+	"shellfish",
 	"smallmammals",
 	"spacecraft",
 	"spirits",
