@@ -309,7 +309,7 @@ return {
 	{"egusi soup","IBBOGI","FS",3,4,3,"C8A02B","3E7A2B","thick melon seed stew","slurp","Thick, nutty, and leafy.","edible,warm,healthy"},
 	{"eider","ACBJDC","AfB",2,5,2,"F2F2F0","1E1E1E","chunky sea duck","quack","Fluffiest down feathers ever.","bird,aquatic"},
 	{"eiffel tower","EKFCII","GkSO",7,1,10,"6D5D4B","8D7B6A","tall iron lattice tower tapering to a point","rumble","Drops a whole iron tower on them. Ooh la la.","structure,landmark"},
-	{"eightfold sentinel","AHEJNA","kfh",10,5,4,"E8E4D8","2A2630","a towering robed spirit with an eight-spoked wheel","gong","The wheel turns. Whatever you did, do something else.","anime,summon,giant"},
+	{"eightfold sentinel","AHEJNA","kfh",10,5,4,"5C6276","56B29C","a towering robed spirit under a halo of rune tiles","gong","The halo turns. Whatever you did, do something else.","anime,summon,giant"},
 	{"einherjar","AHDJLA","DfP",6,6,6,"CA8A04","E0F2FE","glowing army of spectral vikings","horn","Fight all day. Feast all night.","norse,ghost,swarm"},
 	{"einiosaurus","AMDJAA","DkT",7,5,8,"8A6A4A","D8B07A","bottle-opener down-curved horn","bellow","Its nose horn curves like an opener.","dinosaur,extinct,reptile"},
 	{"el dorado","MKFNII","dSc",5,1,9,"FFD54F","FFB300","city of shining golden towers","chime","Every brick is gold. Every enemy is distracted.","place,mythical"},
