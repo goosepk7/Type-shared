@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
 	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},

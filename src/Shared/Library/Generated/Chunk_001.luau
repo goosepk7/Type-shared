@@ -315,6 +315,7 @@ return {
 	{"arc","FDBBKI","TeL",4,9,1,"9BD1FF","FFFFFF","wavering bright arc between two points","crackle","Electricity taking the scenic route.","electric"},
 	{"arcade","EMCCII","jdS",2,1,5,"7E57C2","00E5FF","room full of glowing game cabinets","thud","Insert coin. Lose friends.","structure,building,silly"},
 	{"arcade machine","OMCC1I","Gdc",1,1,7,"1F2F55","39FF14","tall glowing game cabinet","hum","Insert coin to continue.","game"},
+	{"arcade ufo","ODBJgE","AQeh",3,7,3,"78E8C4","FF6EDC","a little mint saucer with a claw that zaps from above","bzzt","Insert coin. Receive zap.","game,arcade,pet"},
 	{"arcane","FLCAKB","Te",5,8,2,"7B4FE0","E0C3FF","violet rune-ringed energy dart","shimmer","Wizard stuff. Do not ask.","magic"},
 	{"arcane barrage","FLDAKB","QeV",7,9,1,"7C4DFF","FF80AB","swarm of glowing missiles arcing in","zing","All the magic missiles. All of them.","magic"},
 	{"arcane barrier","KLDCnI","Ga",2,3,8,"7C4DFF","E1BEE7","translucent violet rune wall","hum","Magic says no.","magic,defence"},
@@ -402,5 +403,4 @@ return {
 	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
 	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
 	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
-	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 }
