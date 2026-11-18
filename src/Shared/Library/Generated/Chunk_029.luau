@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wizard king","LLCJNA","ehY",6,4,5,"4338CA","FACC15","crowned wizard with orb scepter","zap","Rules by magic. And snacks.","royal,magic"},
+	{"wizard school","MLFNII","ShY",5,1,9,"3949AB","FFD54F","castle with spires, owls, floating candles","chime","Class is in session. Lesson one: fireballs.","place,mythical,magic"},
+	{"wizard tower","ELDMII","GjSeY",6,1,7,"3949AB","FFD54F","crooked tall tower, star-spangled cone roof","zap","Leaning slightly from all the magic.","structure,defense,tower,magic"},
+	{"wizard's wrath","KLENOI","KEkL",8,5,3,"7C4DFF","FF6D00","starry hat-shaped burst raining spells","boom","Never annoy a wizard.","magic,explosive"},
+	{"wizardry","FLCGKE","eV",5,6,2,"3D5AFE","C5CAE9","starry blue orb with pointy-hat sparkles","shimmer","Pure, concentrated wizard.","magic"},
 	{"wobbegong","ABCJEC","DZfTB",4,8,6,"A88A5A","5A4630","flat camo shark, beard tassels","chomp","A shark disguised as a rug.","fish,aquatic,ocean,predator"},
 	{"wobble","KMBFOB","j",2,5,1,"CE93D8","FFFFFF","jelly-like wobble ripple","wub","Everything goes jelly.","silly"},
 	{"wok","BMBHJK","GKf",3,6,5,"24262A","3A3F45","round deep flared pan","clang","Stir fry. Stir fight.","kitchen,household"},

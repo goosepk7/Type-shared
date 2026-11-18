@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ruler","BMBHJK","kf",1,7,3,"C49A6C","24262A","flat measured wooden stick","tap","Rules are rules. Thwack.","school"},
+	{"rumble","FECNOI","NO",4,4,3,"795548","D7CCC8","ground shivering with dust","rumble","Something big is coming. Probably.","heavy"},
 	{"rune","FLBLII","EO",4,3,4,"5E3ACF","B79BFF","glowing carved symbol on the ground","hum","Step on it. See what happens.","magic,ancient"},
 	{"rune circle","FLDNOI","GSh",5,2,5,"7C4DFF","FFD54F","giant glowing circle of runes on ground","hum","The wizard's welcome mat.","magic"},
 	{"rune knight","LLCJNA","Gfe",6,4,7,"1E3A8A","67E8F9","armor etched with glowing runes","clang","Armor that casts spells.","magic,warrior"},
@@ -401,6 +403,4 @@ return {
 	{"shadow ring","FIDNOI","iZS",5,3,4,"1A0033","7C4DFF","circle of black smoke flames","hiss","A ring nobody wants.","spooky"},
 	{"shadow shield","FICIKI","GiZ",4,4,5,"1A0033","7C4DFF","smoky black dome with violet edges","hiss","Hits get swallowed by shadow.","spooky,defence"},
 	{"shadow slash","FICHJB","ifT",6,9,1,"1A0033","AA00FF","smoky black crescent","shing","Cuts through the dark.","spooky,sharp"},
-	{"shadow spike","FICLII","iT",5,6,3,"1A0033","7C4DFF","black spikes stabbing from shadows","crack","Your shadow bites.","spooky,sharp"},
-	{"shadow spiral","FICN5K","iH",6,5,2,"1A0033","AA00FF","swirling black spiral on the ground","hiss","Down the dark drain.","spooky"},
 }

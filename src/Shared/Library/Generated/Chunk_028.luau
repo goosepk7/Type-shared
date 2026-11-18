@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vinyl record","BMAAKK","UTe",1,8,1,"24262A","C0392B","spinning black disc","toot","Spin it. Throw it.","music"},
+	{"violet","NGANMI","dFS",1,1,1,"7E57C2","FFEB3B","small velvety bloom with a face","rustle","Shy little flower with a big face.","plant,flower,cute"},
+	{"violet nullity","KLEGKB","ETe",10,2,2,"9B5CFF","FF3B5C","red and blue collide into a slow world-erasing sphere","hum","Red. Blue. Nothing.","anime,magic,ultimate"},
+	{"violin","BMBFJI","jN",2,6,2,"8B3A1A","24262A","small curvy string instrument with bow","strings","The world's tiniest sad song.","music"},
 	{"violin beetle","AMAJFA","Gf",1,3,4,"6A4A2A","C8A07A","flat violin-shaped beetle","click","Shaped like a violin. Can't play.","insect,armored,music"},
 	{"violinist","LLCJNA","jO",3,5,3,"7C2D12","FACC15","bow, violin, dramatic hair flip","violin","World's smallest violin, for you.","music"},
 	{"viper","AMCJCD","fTMN",4,6,3,"8A6A3A","3A2A1A","triangle head, zigzag pattern","hiss","Ambush expert. Folding fangs.","reptile,venomous"},
@@ -249,6 +253,7 @@ return {
 	{"weta","AMBJFA","dTP",2,6,1,"6A4A2A","C8A07A","huge spiky cricket","buzz","Giant cricket heavier than a mouse.","insect"},
 	{"wetsuit","BBCONI","B",1,7,3,"24262A","47D7E8","sleek neoprene suit","clank","Swim faster. Look sleeker.","armor,defense"},
 	{"whack","KMBAKB","kf",3,8,2,"FFAB91","FFFFFF","big comic swoosh and impact","whack","Whack-a-villain.","silly"},
+	{"whack a mole","AECLtG","Ck",4,7,4,"8B5A2B","FF4F6E","mole holes round you and a cartoon mallet","bonk","Bonk! Missed. Bonk!","game,arcade,area"},
 	{"whack-a-mole mallet","BMCHtI","kfO",3,7,3,"C0392B","F1C40F","padded arcade mallet","thud","Bonk! Bonk! Bonk!","game,silly"},
 	{"whale","ABFJEC","kIB",8,3,9,"3E5A78","C8D6E2","enormous streamlined body, fluke tail, spout","whalesong","Burps rainbows from its blowhole. Allegedly.","mammal,aquatic,ocean,heavy"},
 	{"whale shark","ABFJEC","DHB",8,3,9,"3A5470","F2F2EE","colossal shark, white polka-dot back","chomp","Biggest fish. Eats only tiny stuff.","fish,aquatic,ocean,predator,gentle"},
@@ -398,9 +403,4 @@ return {
 	{"wizard hat","BLBONI","Fh",2,5,2,"1F2F55","D4A72C","tall pointy starry hat","swish","Instant +5 to wizardliness.","clothing,magic"},
 	{"wizard hut","ELBCII","jSY",3,1,5,"3949AB","FFD54F","crooked hut with a starry pointy roof","thud","Smoke of every colour from the chimney.","structure,ancient,magic"},
 	{"wizard kid","LLBJNA","je",3,6,2,"1E3A8A","FACC15","kid in robes waving a stick wand","zap","Spells? Mostly sparkles.","cute,magic"},
-	{"wizard king","LLCJNA","ehY",6,4,5,"4338CA","FACC15","crowned wizard with orb scepter","zap","Rules by magic. And snacks.","royal,magic"},
-	{"wizard school","MLFNII","ShY",5,1,9,"3949AB","FFD54F","castle with spires, owls, floating candles","chime","Class is in session. Lesson one: fireballs.","place,mythical,magic"},
-	{"wizard tower","ELDMII","GjSeY",6,1,7,"3949AB","FFD54F","crooked tall tower, star-spangled cone roof","zap","Leaning slightly from all the magic.","structure,defense,tower,magic"},
-	{"wizard's wrath","KLENOI","KEkL",8,5,3,"7C4DFF","FF6D00","starry hat-shaped burst raining spells","boom","Never annoy a wizard.","magic,explosive"},
-	{"wizardry","FLCGKE","eV",5,6,2,"3D5AFE","C5CAE9","starry blue orb with pointy-hat sparkles","shimmer","Pure, concentrated wizard.","magic"},
 }

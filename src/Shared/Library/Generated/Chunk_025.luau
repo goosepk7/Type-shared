@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stasis field","OLCN1I","SNO",5,3,5,"3FC1D9","F2F2EE","cube projecting a freeze bubble","hum","Everything stops. Even time.","scifi"},
+	{"static","FDBLII","dL",2,6,1,"C6D8FF","FFF6A0","frizzy spark field, hair-raising arcs","crackle","Hair goes up. Dignity goes down.","electric,silly"},
 	{"static cling","FDBLII","HN",2,5,1,"FFF59D","82B1FF","crackling sticky field","crackle","Socks stuck to everything.","electric,silly"},
 	{"static shock","FDBAKB","LO",3,10,1,"BFD7FF","FFF59D","tiny blue snap between fingertips","zap","Doorknob revenge.","electric,silly"},
 	{"statice","NGBNMI","dFS",1,1,2,"7E57C2","FFFFFF","papery clusters of tiny blooms","rustle","Never wilts. Never quits.","plant,flower"},
@@ -401,6 +403,4 @@ return {
 	{"tahr","AMCJAA","df",3,4,4,"8A6A44","C8A87A","shaggy mountain goat","bleat","Wears a fur cape. Climbs cliffs.","mammal,farm"},
 	{"taiko drum","BMDFJI","kO",5,3,6,"5A3A1E","9E1B32","huge barrel drum with thick sticks","boom","DON. DON. DON.","music,loud"},
 	{"tail","BMBHCK","Ukf",3,7,3,"B9773A","F5E0C3","fluffy wagging tail swishing side to side","swish","Wags when happy. Whacks when not.","body,cute"},
-	{"tailor","LMCJNA","HN",3,5,4,"7C3AED","FDE68A","measuring tape, pins, giant scissors","snip","Measures you for a straitjacket.","silly"},
-	{"tailwind","FFBOOB","D",2,9,1,"CDE6F0","FFFFFF","streamers pushing from behind","whoosh","The wind is on your side.","air,speed"},
 }

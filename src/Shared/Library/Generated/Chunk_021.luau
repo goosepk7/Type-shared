@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"raita","ICBAKJ","JFN",2,5,2,"F7F4EC","7DBE3A","white yogurt with cucumber","squish","Puts out curry fires.","edible,frozen"},
+	{"rajasaurus","AMDJBA","DkfT",6,6,7,"8A4A2A","E8A04A","short horn crown","roar","Royal lizard with a crown bump.","dinosaur,extinct,reptile,predator,royal"},
 	{"rake","JKCHJK","fH",2,5,4,"2E8B57","8B5A2B","row of tines on long handle","clank","Step on it. Learn something.","tool,garden"},
 	{"rake trap","BMBLII","kO",1,1,3,"2E8B57","8B5A2B","rake lying tines-up","snap","Thwack. Cartoon physics.","trap,silly"},
 	{"rakshasa","AIDJNA","jZfY",7,6,6,"7C2D12","FACC15","tiger-headed illusionist in robes","growl","Master of illusions and backwards palms.","mythical"},
@@ -401,6 +403,4 @@ return {
 	{"rugelach","IMBLKI","dSc",2,3,3,"D9A04A","5A2E16","crescent rolled pastry","chomp","Crescent swirls of sweet.","edible,sweet"},
 	{"rugops","AMDJBA","DkfT",6,6,7,"8A6A4A","D8A07A","wrinkly-faced theropod","roar","Wrinkly face. Scavenger vibes.","dinosaur,extinct,reptile,predator"},
 	{"rule","KHBCnI","GNO",3,1,6,"1E3A8A","FFFFFF","long scroll of numbered rules with a wagging finger","whistle","Rule one: no fun. Rule two: see rule one.","school"},
-	{"ruler","BMBHJK","kf",1,7,3,"C49A6C","24262A","flat measured wooden stick","tap","Rules are rules. Thwack.","school"},
-	{"rumble","FECNOI","NO",4,4,3,"795548","D7CCC8","ground shivering with dust","rumble","Something big is coming. Probably.","heavy"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tailor","LMCJNA","HN",3,5,4,"7C3AED","FDE68A","measuring tape, pins, giant scissors","snip","Measures you for a straitjacket.","silly"},
+	{"tailwind","FFBOOB","D",2,9,1,"CDE6F0","FFFFFF","streamers pushing from behind","whoosh","The wind is on your side.","air,speed"},
 	{"taipan","AMCJCD","fMN",6,8,3,"A8784A","F2E0B8","sleek brown snake","hiss","Strongest venom of any land snake.","reptile,venomous"},
 	{"taiyaki","IMBAKF","ke",3,6,2,"C8803A","5A2A2A","fish-shaped golden waffle","splat","A fish that swims in red bean.","edible"},
 	{"taj mahal","EHFCII","GFSO",5,1,10,"FFFFFF","E1BEE7","white marble dome with four minarets","rumble","Stunningly beautiful. Stunning, literally.","structure,landmark"},
@@ -339,6 +341,7 @@ return {
 	{"toilet paper launcher","CMCMxK","deN",1,6,3,"F2F2EE","8E9196","tube cannon of paper rolls","boing","Decorates trees. And enemies.","prank,silly"},
 	{"tokay gecko","AMBJAA","Cf",2,7,2,"6A8AA0","E8701E","blue-grey gecko with orange spots","tokay","Screams its own name. Bites.","reptile"},
 	{"token","BKAA3K","Uce",1,8,4,"D4AF37","B45309","brass coin stamped with a star and NO CASH VALUE","clink","No cash value. Much smack value.","gaming,shiny"},
+	{"token rush","BHBOKK","D",2,10,3,"FFC83D","B57CFF","spinning arcade tokens scattered round you","clink","Grab them all. Go go go.","game,arcade,mobility"},
 	{"tokoloshe","AIAJNA","jZb",2,7,2,"57534E","22C55E","tiny hairy mischief maker","cackle","Hides under beds. Why everyone uses bricks.","spooky"},
 	{"toll booth","EMBCII","GSN",1,1,6,"FFB300","1A1A1A","small booth with a barrier arm","thud","Pay up or turn around.","structure,building,silly"},
 	{"tom kha","IBBOGI","FS",3,4,3,"F2E8C8","E8A040","coconut soup with lime leaves","slurp","Creamy coconut soup, gently spicy.","edible,warm,healthy"},
@@ -400,7 +403,4 @@ return {
 	{"tourist","LMCJNA","dO",3,4,3,"0EA5E9","FACC15","hawaiian shirt, camera, sunburn","click","Flash photography. Everywhere.","silly"},
 	{"tow truck","DMDKHL","DklHg",5,6,8,"F5A623","333333","truck with hook crane on the back","engine","Your car looked lonely.","mechanical,vehicle,land"},
 	{"towel","BMBHJI","fO",1,7,1,"F2F2EE","47D7E8","rolled fluffy towel","splash","Towel snap! Ow.","bathroom,household"},
-	{"tower","EMDMII","GSe",4,1,8,"9E9E9E","5D5D5D","tall round stone tower, conical roof","thud","Tall. Strong. Sees you coming.","structure,defense,tower"},
-	{"tower bridge","EBFCII","GklS",6,1,10,"90A4AE","1565C0","two gothic towers with a lifting road","rumble","The bridge opens. Enemies fall in.","structure,landmark"},
-	{"tower house","EMDMII","GSe",3,1,9,"9E9E9E","5D5D5D","tall square stone house with battlements","thud","A house that thinks it is a castle.","structure,building"},
 }

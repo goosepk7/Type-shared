@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow spike","FICLII","iT",5,6,3,"1A0033","7C4DFF","black spikes stabbing from shadows","crack","Your shadow bites.","spooky,sharp"},
+	{"shadow spiral","FICN5K","iH",6,5,2,"1A0033","AA00FF","swirling black spiral on the ground","hiss","Down the dark drain.","spooky"},
 	{"shadow sprite","AIAJNB","jZ",1,9,1,"1E1B4B","7C3AED","wisp of shadow with glowing eyes","whisper","Hides in your shadow.","fairy,spooky"},
 	{"shadow steed","AIDKAA","DZg",6,9,5,"0F0F23","7C3AED","smoky black horse with violet eyes","neigh","Rides through shadows.","mount,spooky"},
 	{"shadow storm","FIEEOJ","iZP",8,5,3,"1A0033","B388FF","black swirling cloud raining shadow bolts","wail","Gloomy with a chance of doom.","spooky,storm"},
@@ -218,7 +220,7 @@ return {
 	{"skateboarder","LMCJNL","UDd",3,9,3,"DC2626","111827","helmet, skateboard, ollie pose","whoosh","Grinds on rails. And your nerves.","sport"},
 	{"skateboarding","KMBOHF","UDk",3,9,2,"111827","FACC15","board flipping under mid-air trainers, grind sparks","clack","Kickflip! Landed it. Nobody was filming.","sport,cool"},
 	{"skating","KCBONK","UDj",3,8,2,"F8FAFC","F472B6","figure in a spin on one blade, arms up, ice sparkles","swish","Triple axel. Double wobble. Single bruise.","sport,frozen"},
-	{"skee ball","BMAA3F","Ue",2,7,4,"7A4E2D","F2F2EE","wooden arcade ball","bonk","Up the ramp, into the face.","sport"},
+	{"skee ball","BMBA3F","Ue",4,7,2,"C8894B","3EC1D3","wooden arcade ball off a little ramp","bonk","Up the ramp, into the face.","game,arcade,lob"},
 	{"skeleton","AICJNA","feV",4,6,3,"F5F5F4","57534E","rattling bones, grinning skull","rattle","Has a funny bone. Uses all of them.","undead,spooky,halloween"},
 	{"skeleton archer","AICJNA","TeV",4,6,3,"E7E5E4","78350F","skeleton with a bow and quiver","rattle","Never misses. Never hits either.","undead,spooky,archer"},
 	{"skeleton army","AIDJLA","fVPh",6,5,5,"F5F5F4","1F2937","rows of rattling skeleton soldiers","rattle","Bones. So many bones.","undead,spooky,swarm"},
@@ -401,6 +403,4 @@ return {
 	{"snow fortress","ECEMII","GJSe",4,1,6,"FFFFFF","B3E5FC","big fort of packed snow with towers","thud","Every tower full of snowballs.","structure,frozen"},
 	{"snow globe","BCBGKI","jJ",2,3,2,"BFE6F2","F2F2EE","glass dome with swirling snow","squeak","Shake it. Winter happens.","holiday"},
 	{"snow golem","ACCJNA","GJe",4,3,4,"F8FAFC","F97316","snowman with carrot nose throwing snowballs","crunch","Melts in summer. Fights in winter.","frozen,construct,holiday"},
-	{"snow goose","ACBJDC","AfB",2,5,2,"FFFFFF","1E1E1E","white goose with black wingtips","quack","Arrives in blizzards of geese.","bird,aquatic"},
-	{"snow leopard","ACDJAA","DfT",6,8,5,"D9D6CC","4A4A4A","pale grey coat, smoky rosettes, huge fluffy tail","roar","Hugs its own tail to stay warm. Relatable.","mammal,predator,wild,arctic"},
 }

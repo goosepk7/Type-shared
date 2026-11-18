@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tower","EMDMII","GSe",4,1,8,"9E9E9E","5D5D5D","tall round stone tower, conical roof","thud","Tall. Strong. Sees you coming.","structure,defense,tower"},
+	{"tower bridge","EBFCII","GklS",6,1,10,"90A4AE","1565C0","two gothic towers with a lifting road","rumble","The bridge opens. Enemies fall in.","structure,landmark"},
+	{"tower house","EMDMII","GSe",3,1,9,"9E9E9E","5D5D5D","tall square stone house with battlements","thud","A house that thinks it is a castle.","structure,building"},
 	{"tower of babel","EMFCII","GjS",5,1,9,"C9A55A","A1887F","spiralling ziggurat into the sky","rumble","Everyone speaks a different language now.","structure,landmark,ancient"},
 	{"tower of cards","EMCCII","GjdS",1,1,1,"F5F5F5","E53935","wobbly tower of playing cards","thud","One breath and it is over.","structure,silly"},
 	{"tower of skulls","EICCII","GdSh",4,1,7,"EFEBE9","212121","stacked grinning skulls","thud","Grins at everyone. Spooky.","spooky,undead"},
@@ -48,6 +51,7 @@ return {
 	{"tradition","KECOII","GSh",3,2,6,"7C2D12","D4AF37","maypole with ribbons and elders nodding sternly","bell","We have always done it this way. Nobody knows why.","ancient"},
 	{"traffic cone","BMBCII","Gd",1,1,3,"E67E22","F2F2EE","orange cone with white stripes","clink","Detour! This way to defeat.","hardware"},
 	{"traffic jam","EMENII","GSN",3,1,7,"E53935","FFC107","endless line of honking cars","horn","Nobody moves. Ever.","structure,silly"},
+	{"traffic lane","BMDNeL","Dk",5,9,1,"FFD23F","3A86FF","a toy road and two boxy toy cars","honk","Look both ways.","game,arcade,knockback"},
 	{"traffic light","OHCMmI","NO",2,1,6,"24262A","2E8B57","three-light signal on pole","clank","Red means STOP. Everyone.","mechanical"},
 	{"tragedy","KBCF6B","iNO",4,4,1,"1E3A8A","9CA3AF","weeping theatre mask and a single wilting rose","wail","Dropped the ice cream. Curtain. Weep.","art,mood"},
 	{"trail","MEDNnI","DQSN",4,2,6,"C2A878","6B8E23","winding dirt track with signposts pointing everywhere","crunch","Stay on it. It does not stay on you.","place,terrain"},
@@ -399,8 +403,4 @@ return {
 	{"vine whip","FGCHJB","fH",4,7,2,"388E3C","9CCC65","long green whipping vine","crack","Slapped by a plant. Embarrassing.","plant"},
 	{"vinegar","IJBAKF","jMe",3,6,2,"C8A070","F7F2E8","glass cruet of sour liquid","squirt","Sour enough to sting the eyes.","edible,fruit,sour,sauce"},
 	{"vineyard","MGENII","ScN",2,1,5,"6A1B9A","7CB342","rows of trellised grapevines on a slope","rumble","Grapes everywhere. Sticky feet.","place,terrain,plant"},
-	{"vinyl record","BMAAKK","UTe",1,8,1,"24262A","C0392B","spinning black disc","toot","Spin it. Throw it.","music"},
-	{"violet","NGANMI","dFS",1,1,1,"7E57C2","FFEB3B","small velvety bloom with a face","rustle","Shy little flower with a big face.","plant,flower,cute"},
-	{"violet nullity","KLEGKB","ETe",10,2,2,"9B5CFF","FF3B5C","red and blue collide into a slow world-erasing sphere","hum","Red. Blue. Nothing.","anime,magic,ultimate"},
-	{"violin","BMBFJI","jN",2,6,2,"8B3A1A","24262A","small curvy string instrument with bow","strings","The world's tiniest sad song.","music"},
 }
