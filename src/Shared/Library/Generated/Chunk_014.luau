@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jack-in-the-box monster","ALBLII","UEO",3,6,4,"DC2626","FACC15","spring-loaded clown head in a crank box","boing","Pop goes your sanity.","spooky,silly"},
+	{"jackal","AMCJAA","DQfbh",3,7,4,"C08A50","2E2A26","slender golden canine, dark saddle","howl","Scavenger extraordinaire.","mammal,predator,wild"},
+	{"jackalope warrior","AMBJAG","UDT",3,9,3,"A16207","94A3B8","antlered rabbit in tiny armor","chitter","Small, fluffy, extremely pointy.","cryptid,silly"},
+	{"jackdaw","AMAJDB","dAb",1,7,1,"2A2A30","C8C8CC","small crow with pale eyes","tweet","Steals shiny things. Pale eyes.","bird,cute"},
+	{"jacket","BMCONI","G",1,5,3,"3B5B8C","7A4E2D","zip-up jacket","swish","Weatherproof. Bonkproof-ish.","clothing"},
+	{"jackfruit","IGCGKF","DkI",5,5,6,"A7B33A","E5C14B","giant bumpy green oblong","rumble","The biggest fruit on a tree. Ouch.","edible,heavy,fruit"},
 	{"jackhammer","OKCLJK","CkfO",6,3,7,"F1C40F","4A4D52","tall pounding drill with handles","rattle","Rattles the ground and your teeth.","tool,loud"},
 	{"jackpot","KKCEOB","dFc",4,6,2,"FFC107","43A047","explosion of coins and confetti","jingle","Ding ding ding! Winner!","luck,shiny"},
 	{"jade","BGBO4J","GFc",3,3,7,"00A86B","A7F3D0","smooth polished green stone carved like a little dragon","chime","Lucky. Smooth. Greener than envy.","shiny,royal"},
@@ -397,10 +403,4 @@ return {
 	{"latke","IMBAKK","Uke",3,7,2,"C8803A","F2D07A","crispy shredded potato disc","whoosh","Crispy potato frisbees.","edible"},
 	{"latte","IABOKI","DF",3,9,2,"C8A070","F2E8D8","tall cup, foam art heart","fizz","Milk, coffee, and art.","edible,drink"},
 	{"laugh","KMBFOB","jd",2,7,1,"FFEB3B","FFFFFF","rippling HA HA HA letters","haha","Laughter is the best medicine.","silly"},
-	{"laughing flower","NLBLMI","jd",2,1,2,"FFEB3B","F06292","wobbling bloom that giggles","giggle","Hehehe. Hahaha. Confusion!","plant,magic,mythical,silly"},
-	{"laughing gas","FJCDOJ","jdO",2,3,2,"F48FB1","FFF59D","pink cloud with tiny laughing faces","giggle","Cannot fight while giggling.","silly"},
-	{"laughter","KHCF6B","jFPO",3,7,1,"FDE047","F97316","rolling wave of HA HA HA letters and tear-crying faces","giggle","Contagious. Milk out of the nose guaranteed.","silly,mood"},
-	{"launch","KACAKB","kl",5,9,2,"FF7043","FFE0B2","target shooting skyward with smoke trail","whoosh","To infinity! Not beyond. Just up.","silly"},
-	{"laundromat","MBDNlI","jSHN",4,1,5,"38BDF8","F8FAFC","row of spinning round-door washers overflowing with foam","slosh","Lost: one sock. Found: someone else's sock.","household,building"},
-	{"laundry","BJCLGI","WMN",3,1,4,"93C5FD","F87171","teetering mountain of socks, shirts and one sneaker","whiff","The pile grew again. It is breathing now.","household,silly,gross"},
 }

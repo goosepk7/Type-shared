@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laughing flower","NLBLMI","jd",2,1,2,"FFEB3B","F06292","wobbling bloom that giggles","giggle","Hehehe. Hahaha. Confusion!","plant,magic,mythical,silly"},
+	{"laughing gas","FJCDOJ","jdO",2,3,2,"F48FB1","FFF59D","pink cloud with tiny laughing faces","giggle","Cannot fight while giggling.","silly"},
+	{"laughter","KHCF6B","jFPO",3,7,1,"FDE047","F97316","rolling wave of HA HA HA letters and tear-crying faces","giggle","Contagious. Milk out of the nose guaranteed.","silly,mood"},
+	{"launch","KACAKB","kl",5,9,2,"FF7043","FFE0B2","target shooting skyward with smoke trail","whoosh","To infinity! Not beyond. Just up.","silly"},
+	{"laundromat","MBDNlI","jSHN",4,1,5,"38BDF8","F8FAFC","row of spinning round-door washers overflowing with foam","slosh","Lost: one sock. Found: someone else's sock.","household,building"},
+	{"laundry","BJCLGI","WMN",3,1,4,"93C5FD","F87171","teetering mountain of socks, shirts and one sneaker","whiff","The pile grew again. It is breathing now.","household,silly,gross"},
 	{"laundry basket","BMBL2I","O",1,1,2,"F2F2EE","2F6FD1","plastic basket of laundry","thud","Smelly prison.","container"},
 	{"laundry detergent","BBBD2I","jN",1,5,2,"E67E22","F2F2EE","big jug of suds","thud","Bubbles. Everywhere.","household"},
 	{"laurel","NGCCMI","GWFkS",2,1,6,"4E342E","2E7D32","dense glossy aromatic shrub tree","rustle","Victory wreaths grow here.","plant,tree"},
@@ -397,10 +403,4 @@ return {
 	{"macaque","AMBJBA","deb",2,7,2,"9A8A72","E8A090","pink face, short tail","chatter","Steals your sunglasses. Wears them.","mammal,primate"},
 	{"macaron","IMALKI","dSc",2,3,3,"F2A6C8","B8E0C8","two pastel shells, cream middle","chomp","Pastel, delicate, very fancy.","edible,sweet,fancy"},
 	{"macaroni","IMAELB","eVP",2,7,1,"F2D08A","E8C070","small curved tubes","pitter","Tiny curved tubes. Excellent ammo.","edible"},
-	{"macaroon","IMBLKI","dSc",2,3,3,"F7F4EC","D9A04A","toasted coconut mound","chomp","A shaggy coconut haystack.","edible,sweet,dessert"},
-	{"macaw","AMCJDB","jdA",3,6,2,"E8201E","2A6AD8","big red-blue-yellow parrot, long tail","squawk","Loud, proud and rainbow.","bird,jungle,silly"},
-	{"mace","CKCHtK","kfO",5,5,6,"5B6168","6B4226","flanged metal head on short handle","bonk","Like a hug, but metal.","medieval,heavy"},
-	{"mace of light","CHCHtK","Fkf",6,5,6,"D4A72C","F2F2EE","radiant flanged mace","shing","Bonk, but blessed.","fantasy,holy"},
-	{"machete","CKCHrK","fT",4,7,4,"8A929B","24262A","wide heavy jungle blade","shing","Clears jungles and schedules.","medieval,sharp"},
-	{"machine","OKDMWI","kIeh",6,2,7,"6B7280","F59E0B","clanking box of gears, pistons, funnels and a steam whistle","clank","Nobody knows what it makes. It makes it loudly.","mechanical"},
 }

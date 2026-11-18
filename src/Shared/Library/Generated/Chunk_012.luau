@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grenade belt","BMBONI","E",4,5,3,"6B7B3A","7A4E2D","belt of grenades","thud","Fully loaded. Fully nervous.","explosive"},
+	{"grenadier","LACJNA","Eke",6,5,5,"DC2626","111827","tall hat, satchel of round bombs","boom","Throws bombs. Very far. Very fast.","warrior,explosive"},
+	{"grevy's zebra","AMDJAA","Dk",5,8,5,"F2F2F0","1A1A1A","thin stripes, big round ears","neigh","Thinner stripes. Bigger ears.","mammal"},
+	{"grey alien","ALCJNA","jlOY",5,5,3,"9CA3AF","0F172A","big head, huge black almond eyes, thin limbs","hum","Abducts cows. Returns them confused.","alien,space"},
 	{"grey seal","ABCJEC","UfB",3,5,4,"7A7A80","C8C8CC","horse-headed seal","bark","Roman nose. Sings like a ghost.","mammal,aquatic"},
 	{"greyhound","AMCJAA","DQO",4,10,4,"9A9A9E","E8E6E2","lean racing dog, deep chest, thin waist","bark","Fastest couch potato on Earth.","mammal,pet"},
 	{"grid","BDCCnI","GLN",3,1,5,"22D3EE","0F172A","glowing cyan wireframe squares stretching out","hum","Stay inside the lines. Or get zapped.","tech,defense"},
@@ -397,10 +401,6 @@ return {
 	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},
 	{"hollyhock","NGCNMI","dFS",2,1,2,"E91E63","F8BBD0","tall spire of big papery blooms","rustle","Taller than you. Prettier too.","plant,flower"},
 	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
+	{"hologram wall","EHDCnI","GS",4,2,7,"64DCFF","3C4250","a flickering blue scanline wall between two projector pylons","hum","You can walk through it. Your bullets can't.","scifi"},
 	{"holster","BMBO2E","DeO",3,9,3,"7C4A1E","D4AF37","leather hip holster, hand hovering, tumbleweed","click","Draw! No, not with crayons.","western"},
-	{"holy","FHDGKI","KEF",7,6,1,"FFFFFF","FFF59D","ring of white orbs bursting together","choir","The purest light. Blinding.","holy"},
-	{"holy aura","FHCOKJ","GF",3,4,5,"FFF59D","FFFFFF","golden halo glow round caster","choir","Glowing with goodness.","holy,support"},
-	{"holy beam","FHDBKI","KFe",7,7,1,"FFF59D","FFFFFF","wide radiant beam from above","choir","Good, delivered by laser.","holy"},
-	{"holy blast","FHCGKI","KEF",6,7,1,"FFF59D","FFFFFF","golden burst with feather sparks","choir","A blessing that hits hard.","holy,explosive"},
-	{"holy bolt","FHCAKB","KFe",5,9,1,"FFF59D","FFFFFF","radiant golden spear of light","chime","Good guys heal. Bad guys feel it.","holy"},
 }
