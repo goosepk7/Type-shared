@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wind dash","KFCOKB","DI",4,10,2,"B3E5FC","FFFFFF","caster riding a gust","whoosh","Ride the wind.","air,speed"},
+	{"wind dragon","AFEKCB","Aklg",7,9,6,"E0F2FE","60A5FA","feathered sky serpent with cloud mane","howl","Flies so fast it makes weather.","mythical,reptile,wind"},
+	{"wind horse","AFDKAB","DAg",5,10,4,"E0F2FE","93C5FD","horse made of swirling air","neigh","Faster than the wind. It is the wind.","mount,wind"},
 	{"wind machine","OFDF1I","klI",5,5,6,"8E9196","F2F2EE","massive caged industrial fan","whoosh","Flings foes off their feet.","defense"},
 	{"wind monk","LFCJNB","AlI",5,9,4,"FACC15","E0F2FE","monk gliding on a gust of wind","whoosh","Floats. Pushes. Smiles.","martial,wind"},
 	{"wind orb","FFCGKK","RI",4,6,2,"B3E5FC","FFFFFF","swirling ball of streaking air","whoosh","A breeze in a bubble.","air"},
@@ -50,6 +53,7 @@ return {
 	{"wishbone","BMAOKJ","F",1,5,1,"E3DAC9","F3E6C8","forked little bone","boing","Make a wish. Snap!","silly,holiday"},
 	{"wishing flower","NLAOMI","FY",2,1,1,"FFF59D","E1BEE7","glittering puffball","chime","Blow on it and make a wish.","plant,magic,mythical"},
 	{"wishing well","ELBNII","FSc",2,1,6,"9E9E9E","6D4C41","round stone well with bucket and roof","thud","Make a wish. Watch it come true.","structure,building,magic"},
+	{"wisp lure","FHBGKJ","cRN",4,7,6,"D2FFF0","6EE6DC","three pale marsh-lights circling, darting at foes","chime","Do not follow the pretty lights. Ever.","monster,folklore,spooky,marsh"},
 	{"wisp swarm","ALBJLJ","jAcP",2,7,1,"67E8F9","FDE68A","cloud of floating blue lights","chime","A glowing crowd with no plan.","spirit,swarm"},
 	{"wisteria","NGDNMI","dFSHN",3,1,4,"B39DDB","8D6E63","cascading purple flower curtains","rustle","A waterfall of flowers. Very grabby.","plant,flower"},
 	{"witch","LJCJNB","jAMh",5,6,4,"1F2937","7C3AED","pointy black hat, broomstick, bubbling cauldron","cackle","Flies a broom. Brews trouble.","magic,spooky,halloween"},
@@ -227,6 +231,7 @@ return {
 	{"zombie dog","AJBJAA","DfM",3,7,3,"65A30D","78716C","scrappy undead hound, one floppy ear","growl","Still a good boy. Mostly.","undead,spooky,canine"},
 	{"zombie fungus","NJBLMI","jSP",5,1,2,"FF7043","4E342E","thin orange stalk sprouting from a bug","poof","Takes over minds. Charming.","plant,fungus,spooky"},
 	{"zombie giant","AJEJNA","DkM",8,3,8,"4D7C0F","78716C","hulking zombie with huge fists","groan","Slow. Big. Bigger.","undead,giant"},
+	{"zombie hands","AEDNNH","SfN",5,4,5,"809874","5C4836","grey-green hands clawing up out of cracked earth","moan","They just want a hand up.","monster,folklore,spooky,graveyard"},
 	{"zombie horde","AJDJLA","fNPh",6,2,6,"4D7C0F","57534E","dozens of shambling silhouettes","groan","Slow, but there are SO many.","undead,spooky,swarm"},
 	{"zombie hunter","LMCJNA","Gfe",6,6,6,"57534E","84CC16","bandana, crossbow, backpack","bang","Has a plan for the zombie apocalypse.","warrior"},
 	{"zombie king","AJDJNA","MNh",7,3,7,"4D7C0F","CA8A04","bloated crowned zombie on a bone throne","groan","Rules the undead. Smells regal.","undead,royal,boss"},

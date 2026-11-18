@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plum","IGBAKF","Fke",3,6,2,"6B2D5C","3E7A3B","round purple, dusty bloom","splat","Purple, juicy, perfectly plummy.","edible,fruit,sweet"},
+	{"plum tomato","IMBGKF","EkeP",3,4,3,"D72B2B","3E7A2B","egg-shaped red tomato","splat","The tomato that went to cooking school.","edible"},
+	{"plum tree","NGDCMI","GFSc",3,1,6,"6D4C41","8E24AA","small tree with purple fruit","rustle","Sweet fruit, sour attitude.","plant,tree"},
+	{"plumb bob","JKAAJK","ke",1,6,5,"B58A3A","B89B6A","pointed weight on string","clank","Points straight down. At you.","tool"},
+	{"plumbago","NGBNMI","dFSN",1,1,2,"90CAF9","2E7D32","clusters of pale blue phlox-like flowers","rustle","Sky blue and sticky seeds.","plant,flower"},
 	{"plumber","LBCJNA","UH",4,6,5,"DC2626","1E3A8A","overalls, cap, plunger, big moustache","splash","Unclogs pipes. Jumps on things.","silly"},
 	{"plumbing","EBCMII","IeN",4,1,5,"B87333","38BDF8","tangle of copper pipes with one joint spraying water","gurgle","The plumber said Tuesday. Which Tuesday? Unknown.","household"},
 	{"plumeria","NGBNMI","dFSc",2,1,2,"FFFFFF","FFEB3B","waxy five-petal tropical star","rustle","Smells like a beach holiday.","plant,flower"},
@@ -89,7 +94,7 @@ return {
 	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
 	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},
 	{"polo mallet","BMCHtK","kf",2,6,3,"C49A6C","F2F2EE","long skinny mallet","bonk","Very fancy bonking.","sport"},
-	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
+	{"poltergeist toss","KLCA0J","kle",5,7,3,"7A5438","A878FF","a chair, a tome and a candelabra hurled by a ghost","creak","Nobody touched the chair. Nobody.","monster,folklore,spooky,ghost"},
 	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
 	{"pom pom crab","ABBJRA","GfTM",2,4,5,"F2D0B0","F2A0C0","crab holding anemone pompoms","clack","Cheerleader crab with stingy pompoms.","crustacean,aquatic,armored,cute"},
 	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
@@ -146,7 +151,6 @@ return {
 	{"portuguese man o war","ABBJGJ","SMPOB",4,2,1,"5A6AE8","C8A8F0","blue float sail, long tentacles","squelch","A jelly with a sail. Floats into trouble.","aquatic,ocean,venomous"},
 	{"pose","KMBOKI","Gd",1,4,3,"FFD54F","FFFFFF","sparkly heroic pose with shine","ding","Admire the muscles.","silly"},
 	{"poseidon","LBFJXC","kTIhB",9,6,9,"0E7490","34D399","sea-green bearded giant, seaweed crown, golden trident, wave","splash","Rules the sea. Bad at sharing it.","mythical,ocean,greek,boss,danger"},
-	{"possess","KICAKB","jb",5,6,1,"80CBC4","311B92","ghost wisp diving into target","wail","Who is driving? Not you.","spooky"},
 	{"possum","AMBJAA","UjZf",2,6,2,"B0AAA4","F2EEE8","pointy pink nose, bald tail, playing dead","chirp","Plays dead. Wins an Oscar.","mammal,marsupial"},
 	{"post hole digger","JKCHJK","Cf",2,4,4,"8A929B","8B5A2B","twin-scoop digger","clank","Holes. Lots of holes.","tool"},
 	{"post office","EMCCII","GS",2,1,7,"B71C1C","1565C0","small brick building with a postbox","thud","Your parcel is here. It ticks.","structure,building,silly"},
@@ -399,8 +403,4 @@ return {
 	{"raclette","IMBLGI","cN",2,3,3,"F2C870","D9A04A","melted cheese scraped from wheel","gloop","Cheese that melts onto your plate.","edible,sticky"},
 	{"radar dome","EDCMII","GSeL",3,1,6,"F5F5F5","B0BEC5","white golf-ball dome or big bowl dish","ping","Ping. Ping. Gotcha.","structure,building"},
 	{"radiance","FHDNOI","KFS",6,5,3,"FFE58A","FFFFFF","blinding golden aura dome","hum","Glowing with confidence. And photons.","holy"},
-	{"radiant burst","FHDGKI","KEF",7,8,1,"FFF176","FFFFFF","blinding golden explosion of light","boom","Shine so hard it hurts.","holy,explosive"},
-	{"radiated tortoise","AMBJUA","GN",2,2,8,"1E1E1E","F2D82A","star-rayed high shell","hiss","Starburst patterns on its shell.","reptile,armored"},
-	{"radiation","FJDNOI","iSM",6,4,3,"C3FF2E","1C2A08","pulsing green glow field, ticking motes","tick","Gives you a glow. Not the good kind.","toxic"},
-	{"radiation blob","AJCJGF","WSM",5,2,5,"84CC16","FDE047","glowing neon blob with smoke","bubble","Glows in the dark. Don't hug.","alien,toxic"},
 }

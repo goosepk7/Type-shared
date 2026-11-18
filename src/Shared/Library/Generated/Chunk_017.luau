@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mine bot","OABJGF","DEk",4,7,1,"1F2937","EF4444","small rolling bomb robot with blinking light","beep","Beep. Beep. Beepbeepbeep. BOOM.","robot,explosive"},
+	{"mine cart","DEBKHL","UDkg",3,7,5,"6B4F3A","8C8C8C","iron tub on little rail wheels","engine","Hold on to your helmet!","mechanical,vehicle,land"},
+	{"mine roller tank","DKDMHL","GDkfg",6,3,9,"4B5320","6D4C41","tank with spinning chain flails in front","boom","Whips the ground. Pops the mines.","mechanical,vehicle,military"},
+	{"mine shaft","EEDCII","GCSh",3,1,7,"6D4C41","FFB300","timber-framed tunnel with rail tracks","thud","Dig deep. Find gold. Lose map.","structure"},
 	{"minefield","CADLKI","EkP",7,1,3,"6B7B3A","7A4E2D","patch of buried mines","boom","Don't. Walk. Here.","explosive"},
 	{"miner","LECJNA","Ckf",5,4,6,"57534E","FACC15","headlamp helmet, pickaxe, dusty face","clank","Diggy diggy hole.","tools"},
 	{"mineral","BEBA4B","Tea",3,6,6,"34D399","A78BFA","chunky rock studded with green and purple crystals","clink","They are minerals. Not rocks. Minerals.","shiny,science"},
@@ -399,8 +403,4 @@ return {
 	{"nerd","LLCJNA","jeh",3,4,3,"0EA5E9","F8FAFC","thick glasses, pocket protector, calculator","ding","Calculated your weakness. In seconds.","school,meme"},
 	{"nerve","KDBBCB","LPO",4,9,1,"FFE45E","FFFFFF","jagged yellow nerve line crackling with sparks","zap","You are getting on it. The last one.","body,science,electric"},
 	{"nest","EGBMII","Geh",3,1,3,"8D6E4A","C9A66B","twig bowl with three speckled eggs and an angry beak","tweet","Mama bird is home. And furious.","bird,wild"},
-	{"net","BMCLJK","NO",1,5,3,"B89B6A","6B7B3A","knotted rope mesh","clank","Catch of the day: you.","tool"},
-	{"net gun","OMCAwI","eNO",2,7,3,"6B7B3A","8E9196","wide-barreled launcher, net bundle","twang","Fwoomp. Caught.","ranged,trap"},
-	{"net launcher","OKCMxI","eNO",3,5,5,"6B7B3A","B89B6A","tube that fires weighted nets","clank","Fwoomp. Caught. Next.","defense,mechanical"},
-	{"net trap","BMCLII","lNO",2,1,3,"B89B6A","6B7B3A","hidden net that yanks upward","snap","Hammock, but involuntary.","trap,defense"},
 }

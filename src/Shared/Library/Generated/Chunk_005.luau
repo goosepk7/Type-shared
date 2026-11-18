@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cardinalfish","ABAJEC","dB",1,6,1,"E8501E","F2E8D8","small red fish","splash","Dads carry eggs in their mouths.","fish,aquatic"},
+	{"cardon","NEFCMI","GST",5,1,9,"558B2F","F5F5F5","massive multi-armed cactus","thud","Biggest cactus around. Biggest hug.","plant,desert,sharp"},
 	{"care package","BMCN2J","ch",3,2,6,"6E7A3C","FF5A2A","military crate drifting down under a parachute","thud","Help from the sky. Finders keepers.","gaming,object,military"},
 	{"cargo","BKDL2I","GkO",6,2,8,"B45309","1E3A8A","big corrugated steel box lowered on four cables","clang","Contents: 40,000 rubber ducks. Really.","heavy,vehicle"},
 	{"cargo helicopter","DFEKHE","AlHg",5,5,7,"556B2F","37474F","long fuselage with two big rotors","chop","Picks up tanks. And you.","vehicle,air"},
@@ -401,6 +403,4 @@ return {
 	{"clay golem","AECJNA","GWf",5,3,6,"A16207","FDE68A","lumpy clay figure with finger marks","squelch","Sculpted by kids. Feels it.","construct"},
 	{"claymore mine","BKBLII","ETP",6,1,3,"6B7B3A","24262A","curved box on little legs","snap","Front toward enemy.","trap,explosive"},
 	{"clean","KBCF6B","FIX",3,6,2,"7DD3FC","FFFFFF","sparkling wipe arc leaving a gleaming streak and bubbles","squeak","Squeaky clean. Hear that? That is the squeak.","household,support"},
-	{"cleaner shrimp","ABAJRA","GFfT",1,4,5,"E8301E","F2F2F2","red-white striped shrimp","clack","Runs a dental clinic for fish.","crustacean,aquatic,armored"},
-	{"cleaner wrasse","ABAJEC","dFB",1,6,1,"3A6AE8","1E1E1E","small striped cleaner fish","splash","Runs a spa for sharks.","fish,aquatic"},
 }

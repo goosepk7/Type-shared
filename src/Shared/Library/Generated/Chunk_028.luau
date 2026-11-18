@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"veil","BIBIVJ","GjZ",2,5,2,"F8FAFC","C4B5FD","drifting gauzy see-through curtain of lace","whisper","Now you see me. Now you kind of see me.","clothing,stealth"},
+	{"veiled lady","NJBLMI","ScM",2,1,2,"F5F5F5","FFF8E1","mushroom with a lacy white skirt","poof","Dressed up for the wedding. Smells awful.","plant,fungus"},
+	{"vein","BBBBCD","iTN",3,6,2,"3A6FD8","D7263D","branching blue and red tubes pulsing","squirt","The scenic route for blood.","body,science"},
+	{"velocipede","DMBKHL","Dkg",2,5,2,"6D4C41","9E9E9E","wooden bike with no pedals","clatter","Push with your feet. Look silly.","vehicle,ancient,silly"},
 	{"velociraptor","AMCJBA","DQfT",5,9,3,"8A6A3A","D8B07A","feathered body, sickle toe claw","screech","Turkey-sized. Smart. Opens doors.","dinosaur,extinct,reptile,predator"},
 	{"velocity","KFCO6B","DkT",5,10,1,"22D3EE","F8FAFC","arrow stretching longer and longer with a sonic cone","zoom","Speed, but it did the homework.","science,speed"},
 	{"velvet","BMBCnI","GcN",2,1,4,"7F1D4E","D4AF37","plush red rope on gold posts across the way","hush","Are you on the list? You are not on the list.","fancy,royal"},
@@ -390,7 +394,6 @@ return {
 	{"wilderness","MGFNII","ZSh",4,1,8,"33691E","8D6E63","untamed forest, rivers and rocks","crowd","No roads. No rules.","place"},
 	{"wildfire","HAENOI","KSP",8,6,4,"D84315","FFB74D","spreading line of tall flames, smoke wall","roar","Spreads faster than you can run.","natural,fire"},
 	{"wildflame","FADFOB","KkP",6,7,2,"E85D04","FAA307","ragged flame wave, uneven leaping tongues","roar","Fire that skipped obedience school.","fire"},
-	{"will-o-the-wisp","ALAJKJ","jAZc",2,7,1,"67E8F9","A5F3FC","floating blue flame orb","chime","Follow the light. Bad idea. Fun idea.","spooky,magic"},
 	{"willow tree","NGECMI","GWkSHN",4,1,7,"6D4C41","9CCC65","drooping curtain of long thin branches","rustle","Sad tree. Sad for you.","plant,tree"},
 	{"willpower","KHCOKI","GF",3,4,6,"FF7043","FFD54F","blazing orange inner glow","grunt","Not giving up. Not today.","support"},
 	{"wimp","LMBJNA","UdY",1,9,1,"FDE68A","93C5FD","trembling kid hiding behind own hands, knees knocking","squeak","Runs away so fast it counts as an attack.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"wind bolt","FFBAKB","ke",4,10,1,"B3E5FC","FFFFFF","swirling clear air dart","whistle","A tiny tornado, fired fast.","air"},
 	{"wind chill","GCCFOB","JIN",4,7,2,"B9D6E6","F7FBFD","biting icy gusts with flakes","howl","Feels colder than it is. Rude.","frozen,air"},
 	{"wind chimes","BFBFJI","dF",1,2,2,"C9CED4","C49A6C","hanging tubes tinkling","chime","Tinkle tinkle. Calm.","music"},
-	{"wind dash","KFCOKB","DI",4,10,2,"B3E5FC","FFFFFF","caster riding a gust","whoosh","Ride the wind.","air,speed"},
-	{"wind dragon","AFEKCB","Aklg",7,9,6,"E0F2FE","60A5FA","feathered sky serpent with cloud mane","howl","Flies so fast it makes weather.","mythical,reptile,wind"},
-	{"wind horse","AFDKAB","DAg",5,10,4,"E0F2FE","93C5FD","horse made of swirling air","neigh","Faster than the wind. It is the wind.","mount,wind"},
 }

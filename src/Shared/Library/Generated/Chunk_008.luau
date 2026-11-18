@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dizzy","KLBFOB","j",2,6,1,"FFEB3B","7C4DFF","spinning stars and birdies ring","wub","Everything spins. Wheee.","silly"},
+	{"dizzy birds","AMAAKI","jO",2,7,1,"5AB0F0","FFB300","little cartoon birds that circle a dazed head","tweet","Tweet tweet. Where am I.","cartoon,silly,control"},
 	{"dj","LDCNNI","jdO",4,4,3,"7C3AED","22D3EE","headphones, turntables, glow sticks","beat","Drops the beat. The bass knocks you over.","music"},
 	{"djembe","BMBFJI","O",2,5,3,"8B5A2B","D2B48C","goblet-shaped hand drum","boom","Pa-tum-pa-tum!","music"},
 	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},
@@ -401,6 +403,4 @@ return {
 	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
 	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
 	{"english muffin","IMBAKK","Uke",3,7,2,"E8D0A0","C89A5A","flat round with nooks","whoosh","Nooks, crannies, and butter traps.","edible"},
-	{"enlarge","KLCOKI","W",4,4,4,"66BB6A","C8E6C9","green upward arrows, caster swelling huge","stretch","Bigger. Much bigger.","silly"},
-	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"service tree","NGCCMI","GWFkS",2,1,5,"5D4037","FFFFFF","slim tree with white spring blossom","rustle","Sweet berries in June.","plant,tree"},
+	{"sesame seeds","IMAELB","eVP",2,7,1,"F2E8C8","D8C8A0","sprinkle of tiny teardrops","pitter","Open sesame.","edible"},
+	{"seven layer bar","IMBLKI","dSc",2,3,3,"8A5A2A","F2E8C8","layered dessert bar","chomp","Seven layers. Seven wonders.","edible,sweet,dessert"},
+	{"severing stare","KIBAKI","jie",6,10,2,"FF3B3B","1E1E26","red glowing eyes, wrapping cloth, silenced magic","hum","Don't blink. Neither will they.","anime,hero,silence"},
 	{"sewer","MJENII","ZSM",3,1,8,"455A64","7CB342","round brick tunnel with green water","thud","Smells awful. Hides everything.","structure,building,silly"},
 	{"sewing machine","OMBMII","Te",2,1,5,"24262A","D4A72C","antique machine with needle arm","rattle","Rat-a-tat-stitch.","art"},
 	{"sewing needle","BKAAJI","Te",1,9,1,"C9CED4","C0392B","thin needle with red thread","splat","Tiny lance, tinier eye.","art"},
@@ -399,8 +403,4 @@ return {
 	{"smelt","ABAJEC","dB",1,6,1,"C8D8E0","8AA0B0","tiny smelly silver fish","splash","Smells like cucumber. Seriously.","fish,aquatic"},
 	{"smile","KHAOKJ","F",1,5,1,"FFEB3B","FFFFFF","bright sparkly smile glow","ding","Smile! Things just got better.","cute,support"},
 	{"smite","FHDAKB","KkO",7,9,1,"FFE57F","FFFFFF","golden lightning-like bolt of holy light from above","boom","Smitten. In the bad way.","holy"},
-	{"smog","FJCDOJ","jMN",3,3,3,"8A8270","C5BEA8","brownish yellow choking haze","cough","Bad air day.","toxic"},
-	{"smoke","FACDOJ","jZS",2,4,2,"5C5C5C","B0B0B0","thick grey billowing cloud","hiss","Smoke and mirrors, minus the mirrors.","fire"},
-	{"smoke detector","OKAF1I","O",1,1,3,"F2F2EE","C0392B","ceiling disc that beeps","beep","BEEP BEEP BEEP.","household,loud"},
-	{"smoke elemental","AACJOJ","jZM",4,6,3,"52525B","A8A29E","curling grey smoke with ember eyes","hiss","Cough cough. That's its war cry.","elemental"},
 }

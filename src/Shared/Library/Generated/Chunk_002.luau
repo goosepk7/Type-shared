@@ -66,6 +66,7 @@ return {
 	{"autumn forest","MGFNII","dZS",3,1,8,"FF7043","6D4C41","forest of red and orange leaves","rumble","Leaves falling everywhere. Crunch.","place,terrain"},
 	{"autumn tree","NGDCMI","GdWkS",3,1,7,"6D4C41","FF7043","crown of fiery orange leaves","rustle","Drops a leaf storm.","plant,tree"},
 	{"avalanche","HCFF6F","JkPO",9,6,6,"EAF4FA","B6CFE0","massive tumbling snow wall, powder cloud","roar","Snow, but all of it, all at once.","natural,frozen,danger"},
+	{"avalanche charge","KCDHXA","DkN",5,8,3,"C4E4FF","5A96DC","a shaggy frost-spirit charging in a wave of snow","roar","It has never once been photographed in focus.","monster,folklore,snow,cryptid"},
 	{"avalon","MHFNII","FZS",5,1,8,"B39DDB","43A047","misty island with apple trees","chime","Shrouded in mist. Full of healing.","place,mythical"},
 	{"avatar","LLCJNA","UQfY",4,6,4,"3B82F6","FACC15","blocky default character, plain shirt, blank smile, T-pose","pop","Default skin. Default face. Maximum menace.","gaming,meme"},
 	{"avocado","IGBAKF","Fke",3,6,2,"568203","D3E28A","pear-shaped green, big pit","splat","The pit is half the fruit. Rude.","edible,fruit,sweet"},
@@ -402,5 +403,4 @@ return {
 	{"bee fly","AMAJFB","jdAP",1,6,1,"C8A07A","F2E8D0","fluffy fly with long nose","buzz","A fuzzy pompom with a straw.","insect,cute"},
 	{"bee knight","AJAJFB","ATM",2,9,1,"FACC15","111827","bee in a tiny helmet with a stinger lance","buzz","Buzzes. Jousts. Stings.","insect,warrior"},
 	{"bee-eater","AMAJDB","dA",1,7,1,"2AB06A","F2C82A","rainbow bird, curved beak","tweet","Eats bees. Removes stingers first.","bird,cute"},
-	{"beech tree","NGECMI","GWkS",4,1,8,"9E9E9E","7CB342","smooth grey trunk, wide crown","rustle","Smooth bark. Rough day for you.","plant,tree"},
 }
