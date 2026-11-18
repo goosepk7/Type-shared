@@ -3,6 +3,17 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wire","BDALJK","LN",1,3,2,"B8693D","24262A","coiled copper wire","clink","Live wire!","hardware"},
+	{"wire cutters","JKAHJK","fV",2,6,4,"C0392B","C9CED4","small snipping pliers","clank","Snip. Disarmed.","tool"},
+	{"wisdom","KHCOKJ","Fa",3,3,4,"5C6BC0","FFD54F","glowing owl-like eyes and runes","hum","Think first. Zap second.","magic"},
+	{"wish","KHCOKJ","Fh",4,5,3,"FFF59D","B39DDB","shooting star sparkle over caster","chime","Be careful what you type.","magic,cute"},
+	{"wish serpent","ADFJPB","Ah",9,3,3,"3FBF7A","FFD45A","seven pearls rise; a vast jade dragon coils overhead","roar","State your wish. Choose wisely. It picks anyway.","anime,dragon,summon"},
+	{"wishbone","BMAOKJ","F",1,5,1,"E3DAC9","F3E6C8","forked little bone","boing","Make a wish. Snap!","silly,holiday"},
+	{"wishing flower","NLAOMI","FY",2,1,1,"FFF59D","E1BEE7","glittering puffball","chime","Blow on it and make a wish.","plant,magic,mythical"},
+	{"wishing well","ELBNII","FSc",2,1,6,"9E9E9E","6D4C41","round stone well with bucket and roof","thud","Make a wish. Watch it come true.","structure,building,magic"},
+	{"wisp swarm","ALBJLJ","jAcP",2,7,1,"67E8F9","FDE68A","cloud of floating blue lights","chime","A glowing crowd with no plan.","spirit,swarm"},
+	{"wisteria","NGDNMI","dFSHN",3,1,4,"B39DDB","8D6E63","cascading purple flower curtains","rustle","A waterfall of flowers. Very grabby.","plant,flower"},
+	{"witch","LJCJNB","jAMh",5,6,4,"1F2937","7C3AED","pointy black hat, broomstick, bubbling cauldron","cackle","Flies a broom. Brews trouble.","magic,spooky,halloween"},
 	{"witch apprentice","LJBJNB","dAM",3,7,2,"7C3AED","F97316","kid on a wobbly broom with a cat","cackle","Still learning brakes.","magic,cute"},
 	{"witch bolt","FDCBKI","iL",5,8,1,"76FF03","AA00FF","green-violet crackling tether","crackle","Zap. And keep zapping.","electric,spooky"},
 	{"witch cauldron ride","DJBKHB","DASMg",4,6,4,"263238","76FF03","bubbling cauldron with tiny flames under","whoosh","Bubbles on the way. Burps on arrival.","vehicle,magic,mythical,spooky"},

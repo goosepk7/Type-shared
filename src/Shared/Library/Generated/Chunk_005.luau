@@ -175,6 +175,7 @@ return {
 	{"cheat","KDBOKJ","jWZY",5,8,1,"22C55E","A855F7","up-up-down-down arrows glowing over a controller","beep","Up up down down left right left right B A.","gaming,meme"},
 	{"checkers","BMBELG","UPO",3,5,3,"DC2626","111827","red and black discs hopping over each other","clack","King me. Then duck.","game"},
 	{"checkmate","KLCLII","GO",6,4,4,"212121","FFFFFF","giant chess pieces boxing target in","clack","No moves left.","silly"},
+	{"checkpoint flag","BLBOII","SY",1,8,4,"E8E2D0","3FA9F5","plant a banner flag, then warp back to it","warp","Progress saved.","game,platformer,mobility"},
 	{"cheddar","IMBLKI","dSc",2,3,3,"F2A62B","F2C24A","orange block with crumbly edge","chomp","Sharp, orange, irresistible.","edible,sweet,dairy"},
 	{"cheek","BMBIGG","GUc",2,3,4,"F6B8A8","F28B82","two round rosy cheeks, pinch marks","squish","Pinched by aunts since forever.","body,cute,silly"},
 	{"cheer","KHBOKJ","DF",2,6,2,"FFEB3B","FF4081","pom-pom sparkle burst","yay","Go team! You can do it!","support"},
@@ -402,5 +403,4 @@ return {
 	{"click beetle","AMAJFA","GUf",1,3,4,"3A2A1A","8A6A4A","slim beetle flipping into air","click","Flips itself with a click.","insect,armored"},
 	{"clickbait","KLBLnI","jcO",3,2,1,"EF4444","FACC15","thumbnail with a shocked face, red arrow and red circle","click","You will NOT believe what happens next. (Bonk.)","meme,internet"},
 	{"cliff","MEECII","GkS",4,1,10,"8D6E63","9E9E9E","sheer rock wall with a ledge","rumble","One step too far. Byeee.","place,terrain"},
-	{"cliffside","MEENII","kS",4,1,9,"8D6E63","7CB342","grassy edge above a sheer drop","rumble","One step back. No, the other way.","place,terrain"},
 }

@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rubber chicken","CMBHJK","jdf",1,7,2,"F1C40F","C0392B","floppy squawking rubber chicken","boing","BWAAACK. Comedy damage.","silly"},
+	{"rubber chicken monster","AMBJDA","Ud",2,5,2,"FACC15","F97316","giant rubber chicken with angry eyes","squeak","Squeaks loudly. Hits squeakily.","silly"},
+	{"rubber duck","BMBJDJ","UdcB",2,5,3,"FFD23F","E67E22","yellow squeaky duck, orange beak","squeak","Squeak. The enemy is deeply confused.","toy,silly,bathroom,cute"},
+	{"rubber duck boat","DBDKHC","UDdkgB",2,3,4,"FFEB3B","FF9800","huge yellow rubber duck you can ride","quack","Quack. Squeak. Victory.","vehicle,aquatic,silly"},
+	{"rubber duck rain","BMDEDI","Ujd",2,4,2,"FFD23F","E67E22","squeaky ducks pouring from the sky","thud","SQUEAK SQUEAK SQUEAK SQUEAK.","silly,toy"},
+	{"rubber gloves","BMBONK","G",1,6,2,"F1C40F","F1C40F","bright rubber gloves","thud","Gross jobs? Ready.","household"},
+	{"rubber mat","BMBL0I","N",1,1,2,"47D7E8","F2F2EE","suction-cup mat","splash","The only non-slip thing here.","bathroom,household"},
 	{"rubber rocket","KMCAKI","kfe",6,10,2,"E53935","F7C59F","an arm stretches across the field and punches","boing","The arm comes back. Probably.","anime,silly"},
 	{"rubber snake","CMBLJK","jd",1,1,1,"2E8B57","F1C40F","wiggly rubber snake","boing","It's fake! ...Right?","prank,silly"},
 	{"rubber spider","CMALQI","jO",1,1,1,"24262A","7D3CB5","wiggly fake spider","thwip","EEK! Oh. It's rubber.","prank,silly"},
@@ -396,11 +403,4 @@ return {
 	{"shadow elemental","AIDJNJ","jiZ",6,7,4,"1E1B4B","6D28D9","inky shape with purple eye slits","whisper","Only visible in the dark. Which is cheating.","elemental,spooky"},
 	{"shadow fairy","AIAJNB","jAZ",2,9,1,"1E1B4B","A78BFA","inky fairy with moth wings","whisper","Steals your shadow. Returns it later.","fairy,spooky"},
 	{"shadow form","KICOVJ","iZ",4,7,3,"1A0033","7C4DFF","caster becoming a flat moving shadow","hiss","Slip under doors. Spook everyone.","spooky,stealth"},
-	{"shadow giant","AIEJNA","iZk",8,3,7,"0F0F23","4338CA","towering shadow with starry eyes","whisper","You only see it when it's too late.","giant,spooky"},
-	{"shadow hand","FICLII","HO",5,5,3,"12001F","8E24AA","giant inky hand reaching from the ground","hiss","The floor has hands now.","spooky"},
-	{"shadow ice","FICLII","iJ",5,4,4,"1A237E","7C4DFF","black-violet ice spreading on ground","crackle","Cold and creepy.","frozen,spooky"},
-	{"shadow imp","AIAJNB","jZb",2,9,1,"312E81","A78BFA","inky imp with glowing eyes","cackle","You'll never catch it stealing your fries.","imp,spooky"},
-	{"shadow lance","FICAuB","iTe",6,8,1,"1A0033","AA00FF","long smoky black javelin","hiss","Darkness, thrown long distance.","spooky,sharp"},
-	{"shadow mage","LICJNA","jiZ",6,5,4,"1E1B4B","7C3AED","black hood, purple glowing hands","whisper","Mostly whispers. Mostly scary.","magic,spooky"},
-	{"shadow magic","FICAKB","iZ",5,7,2,"1A0033","7C4DFF","smoky shadow sigil bolt","hiss","Spooky spells, extra spooky.","spooky,magic"},
 }

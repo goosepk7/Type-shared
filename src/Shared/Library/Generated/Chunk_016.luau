@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mace of light","CHCHtK","Fkf",6,5,6,"D4A72C","F2F2EE","radiant flanged mace","shing","Bonk, but blessed.","fantasy,holy"},
+	{"machete","CKCHrK","fT",4,7,4,"8A929B","24262A","wide heavy jungle blade","shing","Clears jungles and schedules.","medieval,sharp"},
+	{"machine","OKDMWI","kIeh",6,2,7,"6B7280","F59E0B","clanking box of gears, pistons, funnels and a steam whistle","clank","Nobody knows what it makes. It makes it loudly.","mechanical"},
+	{"machine gun","CKDMwI","TeV",7,7,5,"2C3539","6B7B3A","belt-fed gun on a bipod","rattle","Brrrrrrrrt.","modern,ranged"},
+	{"machu picchu","EMFCII","GSN",5,1,10,"9E9E9E","43A047","stone terraces on a misty mountain ridge","rumble","Way up in the clouds. Good luck climbing.","structure,landmark,ancient"},
 	{"mackerel","ABAJEC","dB",1,8,1,"3A6A6A","C8D8D8","wavy stripes on green back","splash","Holy mackerel! It's shiny.","fish,aquatic"},
 	{"macrauchenia","AMDJAA","Dk",5,4,8,"9A7A5A","D8C8A8","camel body with short trunk","roar","A camel with a trunk. Why not.","mammal,extinct,ancient,heavy"},
 	{"macuahuitl","CECHJK","fV",5,6,4,"8B5A2B","1B1A22","wooden paddle edged with glass","shing","Paddle with teeth.","ancient,sharp"},
@@ -233,6 +238,7 @@ return {
 	{"meatloaf","IMBAKK","keO",4,7,6,"7A3A2A","C82B2B","brick loaf with ketchup glaze","bonk","A brick of meat. Literally.","edible"},
 	{"mech pilot suit","OKDJNA","klf",6,5,7,"334155","FACC15","open-frame power loader with big claws","clank","Lifts cars. Struggles with stairs.","robot,mechanical"},
 	{"mech suit","DKEKNA","Gkfeg",7,4,9,"607D8B","FFB300","giant robot legs, cockpit torso, arm cannons","stomp","Pilot not included. Wait, it is you.","mechanical,vehicle,land,robot"},
+	{"mech suit dash","OKDOIA","Dk",6,8,5,"646C78","FF9628","armoured exo-legs stomping three big steps forward","thud","Heavy steps. Heavier landings.","scifi,mobility"},
 	{"mech titan","OKFJNA","GEke",9,2,10,"334155","FDE047","skyscraper-tall mech with shoulder cannons","clank","Every step registers on seismographs.","robot,giant,boss,danger"},
 	{"mech warrior","OKEKNA","GEkeg",8,4,9,"475569","F97316","two-legged armored walker with missile pods","clank","Piloted by someone who failed parking class.","robot,mechanical"},
 	{"mecha dragon","OKEKAB","KAkeg",8,7,9,"475569","22D3EE","armored steel dragon with jet thrusters","roar","Breathes fire AND has rocket boosters.","robot,reptile"},
@@ -397,10 +403,4 @@ return {
 	{"minotaur chief","AEEJNA","DkfO",8,6,8,"451A03","FACC15","giant bull warrior with gold nose ring","roar","Runs the maze. Owns the maze.","mythical,boss"},
 	{"minotaur gladiator","AEDJNA","Dkf",7,6,7,"7C2D12","CA8A04","minotaur in gladiator armor","roar","Undefeated. Unshaven.","mythical,warrior"},
 	{"mint chocolate chip","ICBAKJ","JeN",3,5,2,"B8E8D0","3A2416","mint green scoop, dark chips","squish","Toothpaste's tastier cousin.","edible,frozen,sweet"},
-	{"mint humbug","IMAELB","eVP",2,7,1,"3A2A1E","F7F7F2","striped pillow candy","pitter","Bah humbug. Very minty.","edible,sweet,candy"},
-	{"mint plant","NCANMI","JFS",1,1,2,"4CAF50","B9F6CA","fresh bright toothed leaves","rustle","Fresh breath. Fresh start.","plant,herb"},
-	{"mint sauce","IMBNGI","SNP",2,4,1,"5E9E3A","B8E8D0","green glossy sauce","splat","Cool green sauce.","edible,sauce"},
-	{"mint tea","IABOKI","KF",2,5,2,"7DBE3A","F2E8C8","glass of tea with mint","slurp","Cool and warm at once.","edible,drink,warm"},
-	{"minus","KIBAJB","iXN",3,7,1,"DC2626","FFFFFF","flat red minus bar thrown like a stick","buzz","Minus one. Minus one. Minus you.","school"},
-	{"minute","KLBOKK","SNO",2,4,2,"F8FAFC","DC2626","clock face with a thin long hand sweeping","tick","One minute. In mum-on-the-phone time.","time"},
 }
