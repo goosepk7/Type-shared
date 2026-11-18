@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
 	{"flower bed","NGCNMI","FSN",2,1,3,"F06292","6D4C41","rows of colourful blooms in soil","rustle","Keep off. The flowers fight back.","plant,flower"},
 	{"flower crown","NGAOMI","F",1,1,1,"F8BBD0","FFEB3B","ring of woven blossoms","rustle","Instant festival vibes.","plant,flower,cute"},
@@ -402,5 +403,4 @@ return {
 	{"ghost ship crew","AICJNJ","Zfh",5,5,4,"94A3B8","22C55E","spectral sailors with tattered coats","wail","They still want their pay.","undead,ghost,pirate"},
 	{"ghost slime","AIBJGJ","UZ",2,5,2,"E5E7EB","A5B4FC","see-through floating jelly","squelch","Boo. Squish.","slime,ghost"},
 	{"ghost stream","ODDBwI","eLNO",7,6,3,"FF8A3D","5AB8FF","a writhing stream from a backpack wand, then a trap","zap","Don't cross the streams. Probably.","scifi,movie,ghost"},
-	{"ghost swarm","AICJLJ","jAZP",5,7,2,"E5E7EB","A5B4FC","cloud of floating sheet ghosts","wail","Boo times fifty.","ghost,swarm,spooky"},
 }

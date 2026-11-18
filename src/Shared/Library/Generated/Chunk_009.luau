@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"escargot","IMBLGI","SNO",2,3,2,"5A4A2A","7DBE3A","snail shells in garlic butter","squeak","Fancy snails. Very slow food.","edible,slippery,silly,fancy"},
 	{"esports player","LMCJNI","TeY",5,9,4,"7C3AED","22D3EE","team jersey, gaming chair, headset","click","240 actions per minute.","gaming,sport"},
 	{"espresso","IABOKI","DF",4,10,2,"2A160C","6B4026","tiny cup, rich crema","fizz","Tiny cup. Big zoom.","edible,drink"},
 	{"esquites","IMAELB","eNP",2,6,1,"F2C24A","F7F2EC","cup of corn with toppings","pitter","Street corn in a cup.","edible,grain"},
@@ -402,5 +403,4 @@ return {
 	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
 	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
-	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
 }

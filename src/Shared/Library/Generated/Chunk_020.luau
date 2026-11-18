@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poison bubble","FJBGKJ","UM",3,4,1,"76FF03","F8BBD0","green bubble that pops into fumes","pop","Don't pop it. Too late.","toxic,silly"},
+	{"poison cloud","FJDDOJ","SMNP",5,3,2,"76FF03","33691E","rolling bilious green cloud with bubbles","hiss","Smells as bad as it looks.","toxic"},
+	{"poison dart","FJBAJB","TMe",4,9,1,"64DD17","1B5E20","thin green-dripping needle","zip","Tiny pinch. Big problem.","toxic,sharp"},
 	{"poison dart frog","AJAJAG","UMe",3,5,1,"2A6AE8","1E1E1E","tiny bright blue frog, black spots","croak","Pretty enough to look at. Never lick.","amphibian,wetland"},
 	{"poison dart trap","BJBLII","Me",4,1,5,"8C8C88","2E8B57","wall holes shooting darts","snap","Fwip fwip fwip.","trap,defense"},
 	{"poison dragon","AJEKAB","AMeg",8,6,7,"4D7C0F","D9F99D","sickly green dragon dripping acid","roar","Its breath melts armor. And snacks.","mythical,reptile,toxic"},
@@ -400,8 +403,4 @@ return {
 	{"rainbow lightning","FDDAKB","jeLV",7,10,1,"FF4081","40C4FF","bolt splitting into rainbow branches","crack","Every colour of zap.","electric,cute"},
 	{"rainbow lollipop","IMBHJI","jdf",3,5,4,"E8434F","4FA3E8","rainbow spiral disc on stick","bonk","Hypnotic swirls. Look closely.","edible,silly,candy"},
 	{"rainbow lorikeet","AMBJDB","jdA",2,6,2,"2A6AE8","E8501E","parrot in every rainbow color","squawk","A flying rainbow. Very loud.","bird,jungle,silly"},
-	{"rainbow road","FHDOKI","DF",3,9,3,"FF4081","69F0AE","bright rainbow path under the caster","chime","Zoom along the rainbow.","cute,speed"},
-	{"rainbow road ride","DHCKHB","DAFg",4,9,3,"FF5252","40C4FF","glowing rainbow ribbon you ride","whoosh","Slide along a rainbow. Obviously.","vehicle,magic,mythical"},
-	{"rainbow serpent","ABFJCD","FHB",8,5,8,"EF4444","3B82F6","vast serpent striped in rainbow colors","whoosh","Carved rivers. Painted the sky.","mythical,reptile,ancient"},
-	{"rainbow sherbet","ICBAKJ","JeN",3,5,2,"F28C9A","8DC63F","tri-color fruity scoop","squish","A rainbow you can eat.","edible,frozen,sweet"},
 }

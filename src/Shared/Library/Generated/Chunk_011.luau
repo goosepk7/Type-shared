@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost swarm","AICJLJ","jAZP",5,7,2,"E5E7EB","A5B4FC","cloud of floating sheet ghosts","wail","Boo times fifty.","ghost,swarm,spooky"},
 	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
 	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
 	{"ghost veil","KLBOKI","Z",2,6,3,"CFE8F2","7A8FA6","caster fades to a faint shimmering outline","whoosh","Now you mostly don't see me.","magic"},
@@ -402,6 +403,4 @@ return {
 	{"greyhound","AMCJAA","DQO",4,10,4,"9A9A9E","E8E6E2","lean racing dog, deep chest, thin waist","bark","Fastest couch potato on Earth.","mammal,pet"},
 	{"grid","BDCCnI","GLN",3,1,5,"22D3EE","0F172A","glowing cyan wireframe squares stretching out","hum","Stay inside the lines. Or get zapped.","tech,defense"},
 	{"grief","KBCEOJ","iSN",3,2,1,"64748B","94A3B8","small grey cloud raining on one wilted flower","sigh","Good grief.","mood"},
-	{"griefer","LACJNA","jEb",4,7,3,"111827","F97316","figure holding a lit fuse, grin","cackle","Blew up your house. Says sorry. Doesn't mean it.","meme,gaming,villain"},
-	{"griffin","AFDKAB","DAkfg",7,8,6,"B45309","F5F5F4","lion body, eagle head and wings","screech","Half lion, half eagle, fully in charge.","mythical,flying,mount"},
 }

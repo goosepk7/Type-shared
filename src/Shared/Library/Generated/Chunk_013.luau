@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy nova","FHDFOI","KFP",5,7,2,"FFF59D","FFFFFF","golden ring of light pulsing outward","chime","Hugs friends. Burns foes.","holy"},
+	{"holy prison","KHCLII","GO",6,4,6,"FFF59D","FFFFFF","cage of golden light bars","chime","Glowing time-out.","holy"},
 	{"holy shield","KHCIKI","GFa",3,4,8,"FFE082","FFFFFF","golden glowing dome, wing-shaped edges","chime","Protected by pure good vibes.","holy,defence"},
 	{"holy shrine","EHCNII","FSO",3,1,8,"FFF8E1","FFD54F","marble shrine glowing gold","thud","Heals the faithful. Blinds the wicked.","structure,holy"},
 	{"holy slash","FHCHJB","KfT",6,9,1,"FFF59D","FFFFFF","glowing golden arc","shing","A righteous swipe.","holy,sharp"},
@@ -401,7 +403,4 @@ return {
 	{"jackpot","KKCEOB","dFc",4,6,2,"FFC107","43A047","explosion of coins and confetti","jingle","Ding ding ding! Winner!","luck,shiny"},
 	{"jade","BGBO4J","GFc",3,3,7,"00A86B","A7F3D0","smooth polished green stone carved like a little dragon","chime","Lucky. Smooth. Greener than envy.","shiny,royal"},
 	{"jade dragon","AGEKCB","AFeg",7,7,8,"059669","A7F3D0","carved green jade serpent dragon","roar","Polished, precious, and prickly.","mythical,reptile,gem"},
-	{"jade golem","AGDJNA","GFk",7,2,9,"059669","A7F3D0","polished green jade giant","chime","Precious. Unbreakable. Grumpy.","construct,gem"},
-	{"jade vine","NLCNMI","dFS",2,1,3,"1DE9B6","43A047","dangling claws of turquoise flowers","rustle","Glows a colour that should not exist.","plant,flower"},
-	{"jaekelopterus","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant sea scorpion","skitter","Biggest bug ever. Swam.","arachnid,spooky,venomous,extinct,ancient"},
 }

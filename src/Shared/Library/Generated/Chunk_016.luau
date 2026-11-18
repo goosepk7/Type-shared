@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"macuahuitl","CECHJK","fV",5,6,4,"8B5A2B","1B1A22","wooden paddle edged with glass","shing","Paddle with teeth.","ancient,sharp"},
+	{"mad scientist","LDCJNA","jELh",5,4,4,"F8FAFC","84CC16","wild white hair, goggles, bubbling beaker","cackle","IT'S ALIVE. Mostly.","science,villain"},
+	{"madeleine","IMALKI","dSc",2,3,3,"F2C870","E8B050","shell-shaped little cake","chomp","Small cake shaped like a seashell.","edible,sweet"},
 	{"madness","KLCNOI","UjV",5,7,2,"E040FB","76FF03","swirling spirals and wobbly shapes","cackle","Everything is wobbly. Nothing is real.","chaos,silly"},
 	{"maduros","IMBLKI","dSc",2,3,3,"C8762B","8A4A1E","caramelized sweet plantains","chomp","Sweet golden plantains.","edible,sweet"},
 	{"maelstrom","FBEN5K","kSHO",8,5,5,"0B3A5E","5EB0E5","massive sea vortex, crashing white rim","roar","A whirlpool with a bad attitude.","aquatic"},
@@ -400,7 +403,4 @@ return {
 	{"minute","KLBOKK","SNO",2,4,2,"F8FAFC","DC2626","clock face with a thin long hand sweeping","tick","One minute. In mum-on-the-phone time.","time"},
 	{"mirabelle","IGAAKF","Fke",3,6,2,"F2D23A","E8A040","tiny golden plum","splat","A golden marble of fruit.","edible,fruit,sweet"},
 	{"miracle cure","KHDNOI","FP",3,5,4,"FFFFFF","FFD54F","golden beam and floating feathers over allies","choir","Against all odds, everyone's fine.","holy,support"},
-	{"miracle fruit","IGAELB","jeV",2,7,1,"D7263D","F7F2EC","small red berry","pitter","Makes sour taste sweet. Magic!","edible,fruit,sweet,magic"},
-	{"miragaia","AMDJAA","GkfT",6,3,9,"7A6A4A","E8803A","long-necked stegosaur","grunt","A stego with a giraffe neck.","dinosaur,extinct,reptile,armored"},
-	{"mirage","GHCJNJ","jdZ",2,4,1,"F5DEB3","B3E5FC","wavering see-through copy of the caster","shimmer","Was that you? Was that you?","desert"},
 }

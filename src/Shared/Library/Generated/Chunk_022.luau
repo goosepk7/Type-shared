@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rubber spider","CMALQI","jO",1,1,1,"24262A","7D3CB5","wiggly fake spider","thwip","EEK! Oh. It's rubber.","prank,silly"},
+	{"rubber stamp","BMAHJK","fO",1,5,3,"5A3A1E","C0392B","wooden handle stamper","tap","APPROVED. BONK.","office"},
+	{"rubber tree","NGDCMI","GUWkSN",3,1,6,"5D4037","2E7D32","glossy dark leaves, dripping sap","rustle","Sticky sap. Sticky situation.","plant,tree"},
+	{"rubber wall","BMDCnK","GUa",2,1,7,"FF8C42","24262A","thick rubbery barrier","thud","Boing. Bounces everything back.","defense"},
 	{"rubble","FECLII","GN",3,2,6,"8D6E63","BCAAA4","pile of broken rocks and dust","crunch","Watch your step. All the steps.","heavy"},
 	{"rubik's cube","BMALKI","jO",2,3,4,"C0392B","F1C40F","coloured cube of little squares","squeak","Solve me. You can't.","toy"},
 	{"ruby","BAAA4J","Kce",3,7,7,"B0103A","9E1B32","deep red cut gem","chime","Glows warm, hits hot.","treasure,shiny"},
@@ -399,9 +403,4 @@ return {
 	{"shadow magic","FICAKB","iZ",5,7,2,"1A0033","7C4DFF","smoky shadow sigil bolt","hiss","Spooky spells, extra spooky.","spooky,magic"},
 	{"shadow man","AICJNA","jZY",4,7,2,"0A0A0A","312E81","tall featureless shadow with hat","whisper","Seen out of the corner of your eye.","spooky"},
 	{"shadow meteor","HIDAKB","iEke",8,8,6,"1A0033","AA00FF","black flaming rock with violet trail","roar","A meteor that stayed up too late.","spooky,space,explosive"},
-	{"shadow mist","FICDOJ","iZS",4,3,2,"1A0033","7C4DFF","drifting black mist with violet glints","hiss","Gloomy. Sneaky. Draining.","spooky"},
-	{"shadow nova","FIDFOI","ikP",7,7,1,"0D0221","AA00FF","black ring with violet edge bursting out","boom","Darkness, all at once, in every direction.","spooky"},
-	{"shadow oak","NIECMI","GiZS",5,1,8,"212121","4A148C","black oak oozing purple mist","chime","Darkness grows on it.","plant,magic,mythical,spooky"},
-	{"shadow orb","FICGKE","iR",5,5,2,"1A0033","AA00FF","swirling black sphere with violet sparks","hiss","Hungry little ball of night.","spooky"},
-	{"shadow panther","AICJAA","DZf",5,9,3,"0F0F23","7C3AED","ink-black panther dissolving into mist","hiss","Here. Gone. Behind you.","cat,spooky"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"witch hazel","NLCLMI","FS",2,1,4,"FFB300","6D4C41","bare branches with spidery yellow flowers","moan","Blooms in winter. Witchy.","plant,spooky,magic"},
+	{"witch hunter","LHCJNA","fTe",6,6,5,"1F2937","F59E0B","wide-brim hat, crossbow, silver stakes","clang","Hunts monsters. Charges extra for dragons.","warrior"},
+	{"witch hut","EJCNII","SMh",4,1,6,"33691E","7E57C2","crooked hut with bubbling cauldron","moan","Something is brewing. Something green.","place,spooky,magic"},
+	{"witch kid","LJBJNA","jA",2,6,2,"7C3AED","F97316","kid in witch costume with candy bucket","cackle","Hex: candy for me.","cute,witch,halloween"},
+	{"witch on broom","LJCJNB","AMe",5,8,3,"1F2937","F97316","witch zooming on a broomstick","cackle","Speeding ticket pending.","witch,flying"},
 	{"witch queen","LJCJNB","AMh",6,5,4,"4C1D95","84CC16","crowned witch with raven staff","cackle","Rules the coven. Strictly.","royal,witch"},
 	{"witchcraft","FLCDOJ","jM",4,5,2,"4B2D7A","8FD14F","green-violet swirling cauldron smoke","cackle","Double, double, toil and bubble.","magic,spooky"},
 	{"wither","KJCFOB","iN",4,5,2,"6D4C41","9E9D24","brown wilting wave over ground","hiss","Droopy, dry and sad.","toxic"},

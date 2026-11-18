@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"miracle fruit","IGAELB","jeV",2,7,1,"D7263D","F7F2EC","small red berry","pitter","Makes sour taste sweet. Magic!","edible,fruit,sweet,magic"},
+	{"miragaia","AMDJAA","GkfT",6,3,9,"7A6A4A","E8803A","long-necked stegosaur","grunt","A stego with a giraffe neck.","dinosaur,extinct,reptile,armored"},
+	{"mirage","GHCJNJ","jdZ",2,4,1,"F5DEB3","B3E5FC","wavering see-through copy of the caster","shimmer","Was that you? Was that you?","desert"},
 	{"mirage legion","KICJNA","deV",4,7,2,"5A5F78","C3C8E8","shadowy copies of you that dart around and shoot","whoosh","Which one is real? Not that one.","anime,ninja"},
 	{"miranda","MECGKJ","ke",4,4,7,"BDBDBD","9E9E9E","patchwork moon with giant cliffs","twinkle","Looks stitched together. Still dangerous.","space,star"},
 	{"mirror array","OHDMmI","Kea",5,2,5,"C9CED4","D4A72C","cluster of angled mirrors","clank","Focuses sunlight into a beam.","defense,mechanical"},
@@ -400,7 +403,4 @@ return {
 	{"nightfall","FIDFOB","ZNP",5,5,3,"1A1840","6157A8","dark wave rolling across the sky","hush","The sun clocks out early.","spooky"},
 	{"nightingale","AMAJDB","dAF",1,7,1,"8A6A4A","D8C4B0","plain brown bird, singing at night","song","Plain look, legendary voice.","bird,cute"},
 	{"nightjar","AMAJDB","dAZ",1,7,1,"8A7A62","5A4A3A","camo bark-patterned bird, wide mouth","tweet","Invisible on the ground. Loud at night.","bird,cute,nocturnal"},
-	{"nightmare","AADKAA","KDjg",7,8,6,"111827","F97316","black stallion with burning hooves and mane","neigh","The horse you see right before you wake up.","mythical,mount,spooky,fire"},
-	{"nightmare beast","AIDJAA","jiO",6,6,5,"1E1B4B","DB2777","beast of swirling purple smoke and eyes","growl","Made of bad dreams and worse eyes.","spooky"},
-	{"nightmare horse foal","AABJAA","KQ",2,7,2,"1F1F1F","F97316","small black foal with tiny flame mane","neigh","Cute but singes the carpet.","spooky,cute"},
 }

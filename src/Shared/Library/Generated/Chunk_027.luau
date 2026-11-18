@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"torvosaurus","AMEJBA","DkfT",8,6,7,"6A3A2A","C88A5A","huge jurassic predator","roar","Jurassic tough guy.","dinosaur,extinct,reptile,predator"},
+	{"tostada","IMBAKK","Uke",3,7,2,"E8B84A","8A5A3A","flat crisp tortilla, toppings","whoosh","A taco that lay down.","edible"},
+	{"tostones","IMBAKK","Uke",3,7,2,"E8C070","D9A04A","smashed fried plantain discs","whoosh","Crispy smashed plantain coins.","edible"},
+	{"totem pole","EGDMII","GFSe",3,1,7,"C62828","FFB300","stacked carved faces with wings","thud","Watches with all its faces.","structure,defense,tower,ancient"},
+	{"totem spirit","AGCMII","GFh",4,1,6,"78350F","15803D","carved totem pole with glowing eyes","drum","Stacked animals guarding the way.","spirit,guardian"},
 	{"toucan","AMBJDB","jdAf",2,6,2,"1E1E1E","F2A01E","black bird, gigantic rainbow beak","squawk","Beak is 30% of its body.","bird,jungle,silly"},
 	{"touch grass","KGBOKJ","F",1,4,3,"66BB6A","FFF59D","grass sprouting under caster's feet","rustle","Fresh air. Feel better.","meme,plant,support"},
 	{"touch me not plant","NGANMI","ZS",1,1,2,"7CB342","F48FB1","feathery leaves that fold when touched","rustle","Touch it. It hides. Rude.","plant,flower,cute"},
@@ -398,9 +403,4 @@ return {
 	{"viking longship","DBEKHC","GDkgB",6,7,7,"8D6E63","C62828","long wooden boat, dragon prow, round shields","horn","Rowing in with shields up and horns blaring.","vehicle,aquatic,ancient"},
 	{"viking queen","LECJNA","Gfh",6,5,6,"78350F","CA8A04","braided queen with winged helm and axe","horn","Raids first. Rules after.","warrior,norse,royal"},
 	{"vila","AFCJNB","jAc",4,8,3,"E0F2FE","FDE68A","cloud maiden with swan wings","sing","Dances on clouds. Bad at sharing them.","mythical,fairy"},
-	{"village","MEENII","Sh",3,1,7,"F5E6CA","B5523B","cluster of cottages and a well","rumble","The villagers grab their pitchforks.","place,terrain"},
-	{"village green","MEENII","Sh",2,1,6,"7CB342","F5E6CA","open grassy square with a maypole","thud","Everyone gathers here. Including enemies.","structure,ancient"},
-	{"villain","LICJNA","jfh",5,5,5,"111827","DC2626","twirly moustache, black top hat, cape","cackle","Ties things to tracks. Classic.","villain"},
-	{"vindaloo","IABNGI","KSP",6,4,2,"B0302B","E8602B","deep red fiery curry","sizzle","Only the brave finish this.","edible,spicy"},
-	{"vine","NGCLMI","WSHN",3,2,4,"2E7D32","66BB6A","twisting green tendrils with leaves","rustle","Grabs ankles. Never apologises.","plant"},
 }

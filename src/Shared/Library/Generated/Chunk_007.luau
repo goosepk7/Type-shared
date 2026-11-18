@@ -403,5 +403,4 @@ return {
 	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
 	{"dog walker","LMCJNA","Qh",3,6,4,"15803D","F59E0B","ten leashes, ten dogs","bark","Is walked by the dogs.","silly,canine"},
 	{"dogfish","ABBJEC","DfTB",3,8,6,"7A7468","D8D4CC","small slim shark, white spots","chomp","Small shark, fish name, dog vibe.","fish,aquatic,ocean,predator"},
-	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
 }

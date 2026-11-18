@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
 	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
 	{"dogwood","NGCCMI","GWFkS",3,1,5,"5D4037","FFFFFF","small tree with white cross blossoms","rustle","No dogs involved. Mostly.","plant,tree"},
 	{"dojo","MMDNlI","SfOh",5,1,6,"E7D8B1","111827","paper-walled hall with mats, a gong and a row of belts","chop","Bow first. Then bonk.","sport,building"},
@@ -402,5 +403,4 @@ return {
 	{"erymanthian boar","AEDJAA","Dk",6,7,7,"44403C","D6D3D1","massive boar with frost-covered tusks","grunt","Charges first. Thinks never.","mythical"},
 	{"escalator","OKDL1I","IN",2,1,7,"C9CED4","24262A","moving metal staircase","clank","Up you go. Or down.","mechanical"},
 	{"escape artist","LMCJNA","ZY",3,8,3,"111827","FACC15","chains, padlock, smirk","whoosh","Tied up. Not anymore.","circus"},
-	{"escargot","IMBLGI","SNO",2,3,2,"5A4A2A","7DBE3A","snail shells in garlic butter","squeak","Fancy snails. Very slow food.","edible,slippery,silly,fancy"},
 }

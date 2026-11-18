@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow road","FHDOKI","DF",3,9,3,"FF4081","69F0AE","bright rainbow path under the caster","chime","Zoom along the rainbow.","cute,speed"},
+	{"rainbow road ride","DHCKHB","DAFg",4,9,3,"FF5252","40C4FF","glowing rainbow ribbon you ride","whoosh","Slide along a rainbow. Obviously.","vehicle,magic,mythical"},
+	{"rainbow serpent","ABFJCD","FHB",8,5,8,"EF4444","3B82F6","vast serpent striped in rainbow colors","whoosh","Carved rivers. Painted the sky.","mythical,reptile,ancient"},
+	{"rainbow sherbet","ICBAKJ","JeN",3,5,2,"F28C9A","8DC63F","tri-color fruity scoop","squish","A rainbow you can eat.","edible,frozen,sweet"},
 	{"rainbow slime","AHBJGG","UFV",2,5,3,"F472B6","60A5FA","wobbly jelly shifting through colors","squelch","Tastes like rainbows. Don't taste it.","slime,cute"},
 	{"rainbow stag beetle","AMBJFA","Gkf",2,3,4,"3AE0A0","E8501E","shimmering rainbow stag beetle","click","A rainbow with jaws.","insect,armored"},
 	{"rainbow trail","KHBOKB","DF",2,9,2,"FF4081","40C4FF","rainbow stripe trailing behind","chime","Leave a rainbow wherever you go.","cute,speed"},
@@ -399,8 +403,4 @@ return {
 	{"rubber mat","BMBL0I","N",1,1,2,"47D7E8","F2F2EE","suction-cup mat","splash","The only non-slip thing here.","bathroom,household"},
 	{"rubber rocket","KMCAKI","kfe",6,10,2,"E53935","F7C59F","an arm stretches across the field and punches","boing","The arm comes back. Probably.","anime,silly"},
 	{"rubber snake","CMBLJK","jd",1,1,1,"2E8B57","F1C40F","wiggly rubber snake","boing","It's fake! ...Right?","prank,silly"},
-	{"rubber spider","CMALQI","jO",1,1,1,"24262A","7D3CB5","wiggly fake spider","thwip","EEK! Oh. It's rubber.","prank,silly"},
-	{"rubber stamp","BMAHJK","fO",1,5,3,"5A3A1E","C0392B","wooden handle stamper","tap","APPROVED. BONK.","office"},
-	{"rubber tree","NGDCMI","GUWkSN",3,1,6,"5D4037","2E7D32","glossy dark leaves, dripping sap","rustle","Sticky sap. Sticky situation.","plant,tree"},
-	{"rubber wall","BMDCnK","GUa",2,1,7,"FF8C42","24262A","thick rubbery barrier","thud","Boing. Bounces everything back.","defense"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"village","MEENII","Sh",3,1,7,"F5E6CA","B5523B","cluster of cottages and a well","rumble","The villagers grab their pitchforks.","place,terrain"},
+	{"village green","MEENII","Sh",2,1,6,"7CB342","F5E6CA","open grassy square with a maypole","thud","Everyone gathers here. Including enemies.","structure,ancient"},
+	{"villain","LICJNA","jfh",5,5,5,"111827","DC2626","twirly moustache, black top hat, cape","cackle","Ties things to tracks. Classic.","villain"},
+	{"vindaloo","IABNGI","KSP",6,4,2,"B0302B","E8602B","deep red fiery curry","sizzle","Only the brave finish this.","edible,spicy"},
+	{"vine","NGCLMI","WSHN",3,2,4,"2E7D32","66BB6A","twisting green tendrils with leaves","rustle","Grabs ankles. Never apologises.","plant"},
 	{"vine horror","AGDJMA","MHN",6,4,6,"14532D","84CC16","walking tangle of thorned vines","creak","Gardening's revenge.","plant,spooky"},
 	{"vine serpent","AGCJCD","WMH",5,5,4,"15803D","84CC16","snake made of braided thorny vines","rustle","Grows longer every second.","plant,reptile"},
 	{"vine snake","AGCJCD","ZfMN",4,6,3,"6AC84A","C8E87A","thin vine-like green snake","hiss","Basically a stick of spaghetti.","reptile,venomous"},
@@ -398,9 +403,4 @@ return {
 	{"witch apprentice","LJBJNB","dAM",3,7,2,"7C3AED","F97316","kid on a wobbly broom with a cat","cackle","Still learning brakes.","magic,cute"},
 	{"witch bolt","FDCBKI","iL",5,8,1,"76FF03","AA00FF","green-violet crackling tether","crackle","Zap. And keep zapping.","electric,spooky"},
 	{"witch cauldron ride","DJBKHB","DASMg",4,6,4,"263238","76FF03","bubbling cauldron with tiny flames under","whoosh","Bubbles on the way. Burps on arrival.","vehicle,magic,mythical,spooky"},
-	{"witch hazel","NLCLMI","FS",2,1,4,"FFB300","6D4C41","bare branches with spidery yellow flowers","moan","Blooms in winter. Witchy.","plant,spooky,magic"},
-	{"witch hunter","LHCJNA","fTe",6,6,5,"1F2937","F59E0B","wide-brim hat, crossbow, silver stakes","clang","Hunts monsters. Charges extra for dragons.","warrior"},
-	{"witch hut","EJCNII","SMh",4,1,6,"33691E","7E57C2","crooked hut with bubbling cauldron","moan","Something is brewing. Something green.","place,spooky,magic"},
-	{"witch kid","LJBJNA","jA",2,6,2,"7C3AED","F97316","kid in witch costume with candy bucket","cackle","Hex: candy for me.","cute,witch,halloween"},
-	{"witch on broom","LJCJNB","AMe",5,8,3,"1F2937","F97316","witch zooming on a broomstick","cackle","Speeding ticket pending.","witch,flying"},
 }

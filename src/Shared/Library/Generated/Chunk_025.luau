@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stardust","FLBDOJ","jFS",3,4,1,"D8C3FF","FFF1B8","glittering cosmic dust cloud","tinkle","Everything you are, sprinkled.","space,cute"},
+	{"stare down","KIBAKB","O",3,4,1,"4A148C","FFFFFF","intense glowing eyes","hmm","Don't blink. Don't blink.","silly"},
+	{"starfall","HHEEOB","KePO",8,7,3,"FFF3B0","B39DDB","rain of glowing white-gold stars","chime","The sky is falling. Beautifully.","space,holy"},
+	{"starfighter","DDDAHB","ATeg",7,10,6,"ECEFF1","E53935","sharp nose, four angled wings, laser tips","pew","Pew pew. Pew pew pew.","vehicle,space"},
+	{"starfire","FHDBKI","KTe",7,8,2,"FFF2B0","FF9E3D","white-gold beam with star sparkles","hum","Borrowed from a star. Not returning it.","fire,space"},
 	{"starfish","ABAJGA","GFNV",1,1,4,"E8701E","F2B07A","five-armed star, textured top","squelch","Regrows its arms. No big deal.","aquatic,ocean"},
 	{"starfruit","IGBAKK","TeV",3,7,2,"F2D33F","BDD34B","five-ridged star cross-section","whoosh","Fruit shaped like a ninja star.","edible,fruit"},
 	{"stargazer fish","ADAJEC","dZLB",1,6,1,"8A7A6A","F2F2EE","buried fish with eyes on top","splash","Buried, staring, electric.","fish,aquatic"},
@@ -398,9 +403,4 @@ return {
 	{"tabbouleh","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","parsley salad with bulgur","crunch","More parsley than you thought possible.","edible,healthy"},
 	{"tabby cat","AMBJAA","dfT",2,7,2,"B07A3E","5A3A1E","striped orange-brown coat, M on forehead","meow","Has an M on its face. Stands for Mine.","mammal,pet,cute"},
 	{"table","BMDC0I","G",1,1,7,"8B5A2B","5A3A1E","long wooden table on four legs","thud","Flip it for instant cover.","furniture,household"},
-	{"tablecloth","BMCL2I","jO",1,6,1,"C0392B","F2F2EE","checkered tablecloth","clang","Yank! Everything flies.","kitchen,household"},
-	{"tablet","BDBI1I","Gd",1,5,2,"24262A","BFE6F2","flat touchscreen slate","beep","Swipe left on enemies.","tech"},
-	{"tackle","KMCAKB","kfO",5,8,3,"8D6E63","FFFFFF","shoulder impact ring","thud","Touchdown! Ow.","sport"},
-	{"taco","IMBAKF","ceV",3,6,2,"E8B84A","7DBE3A","U-shell, lettuce, meat, cheese","splat","A crunchy shell of delicious chaos.","edible"},
-	{"taco bowl","IGBOKI","F",2,5,3,"E8B84A","8A5A3A","shell bowl of taco fillings","crunch","A taco you eat with a fork.","edible,healthy"},
 }
