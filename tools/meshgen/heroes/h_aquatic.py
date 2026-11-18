@@ -844,7 +844,7 @@ MAP = [
     ("octopus", "octopus, octopi, octopuses, giant pacific octopus, blue-ringed octopus, blue ringed octopus, mimic octopus, dumbo octopus, "
                 "baby octopus, coconut octopus, wonderpus, robot octopus, space octopus, sea witch octopus", CRE),
     ("squid", "squid, giant squid, colossal squid, vampire squid, firefly squid, humboldt squid, glass squid, bobtail squid, bigfin squid, "
-              "cuttlefish, cameroceras, kraken spawn, baby kraken pet", CRE),
+              "cuttlefish, cameroceras", CRE),
     ("nautilus", "nautilus, chambered nautilus, ammonite, argonaut", CRE),
     ("jellyfish", "jellyfish, jelly fish, moon jellyfish, lion's mane jellyfish, comb jelly, immortal jellyfish, cassiopea, fried egg jellyfish, "
                   "sea gooseberry, space jellyfish, moon jelly giant, robot jellyfish, portuguese man o war, man o war", CRE),
