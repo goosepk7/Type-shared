@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wake up","KHBOKI","DF",1,8,2,"FFE082","FFFFFF","alarm-clock ring burst","ring","Rise and shine!","support"},
+	{"wakizashi","CKBHrK","fT",4,8,3,"C9CED4","1F2F55","short curved blade, wrapped hilt","shing","Katana's little sibling. Just as sharp.","medieval,sharp"},
+	{"walk","KMBOBA","GQN",2,3,3,"60A5FA","F8FAFC","pair of trainers plodding along with nobody in them","tap","Running is overrated. So is arriving on time.","silly"},
+	{"walker","DKEKFA","keg",6,3,8,"78909C","455A64","boxy cockpit on two tall jointed legs","stomp","It walks. Slowly. Menacingly.","mechanical,vehicle,land,robot"},
 	{"walkie talkie","BMAOKI","h",1,6,3,"24262A","F1C40F","chunky radio with antenna","thud","Over. Send backup. Over.","tech"},
 	{"walking house","DIDKBA","DgO",5,3,7,"6D4C41","FFB300","crooked hut on giant bird legs","whoosh","Knock knock. It walks away.","spooky,silly"},
 	{"wall","EEDCII","GS",3,1,8,"9E9E9E","757575","flat-topped wall of fitted blocks","thud","It is a wall. It does wall things. Well.","structure,defense"},
@@ -399,8 +403,4 @@ return {
 	{"x-ray","FHCBKB","ZTe",4,10,1,"0F172A","A5F3FC","blue-black beam that shows the skeleton of what it hits","bzzt","Sees right through you. Nice ribs.","science,spooky"},
 	{"x-ray vision","KHBOKI","T",2,6,2,"80D8FF","212121","glowing blue eyes, skeleton outlines","hum","I can see your bones.","silly"},
 	{"xeno drone","AJCJFA","ZfTM",5,8,4,"1C1917","57534E","black elongated insect alien, tail spike","hiss","Hides in vents. Hisses in vents.","alien,spooky"},
-	{"xiezhi","AHCJAA","TO",5,5,6,"0F766E","F8FAFC","one-horned goat-lion of justice","chime","Knows who's lying. Rams them.","mythical"},
-	{"xiphactinus","ABDJEC","DfB",6,7,4,"7A8A9A","D8E0E8","giant bulldog fish","splash","Swallowed fish as big as people.","fish,aquatic,extinct"},
-	{"xiphos","CKBHrK","fT",4,7,4,"A86F32","6B4226","leaf-shaped short blade","shing","Hoplite-approved stabbing leaf.","medieval,sharp,ancient"},
-	{"xoloitzcuintli","AMCJAA","DQf",4,7,4,"3A3A3A","6A6A6A","hairless sleek dog","bark","Ancient, hairless and warm to hug.","mammal,pet"},
 }

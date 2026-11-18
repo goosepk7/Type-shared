@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sail","BFCOiJ","DIg",3,7,3,"F8FAFC","1E3A8A","billowing white triangle on a mast, ropes snapping taut","whoosh","Wind in the sail. Sail in your face.","ocean,air"},
+	{"sailboat","DFCKHC","DkIgB",4,6,4,"F5F5F5","1E88E5","slim hull, single mast, triangle sail","splash","Powered by wind and good vibes.","vehicle,aquatic"},
 	{"sailfish","ABDJEC","DfTB",5,10,4,"2E4E8E","5A8AD0","giant blue sail fin, spear bill","splash","Fastest fish. Has a built-in sail.","fish,aquatic"},
 	{"sailor","LBCJNA","fHB",4,6,5,"F8FAFC","1E3A8A","white cap, striped shirt, anchor tattoo","splash","Knows 200 knots. Ties you in one.","aquatic"},
 	{"saint bernard","ACDJAA","QFf",5,7,4,"B05A2A","F7F2EA","massive fluffy rescue dog, barrel on collar","bark","Rescues you with a tiny snack barrel.","mammal,pet"},
@@ -401,6 +403,4 @@ return {
 	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
 	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
 	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
-	{"shepherd's pie","IGBOKI","F",2,5,3,"E8C070","7A3A2A","mashed potato topping, golden ridges","crunch","A potato blanket over a meaty bed.","edible,healthy"},
-	{"sherbet powder","IMBDOJ","jLP",2,5,1,"F2E23A","F2A6C8","fizzy sugar powder","puff","Fizzes on the tongue.","edible,candy"},
 }

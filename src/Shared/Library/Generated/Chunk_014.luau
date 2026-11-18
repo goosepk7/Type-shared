@@ -9,6 +9,7 @@ return {
 	{"jet ski","DBBKHC","DkIgB",4,9,3,"FFEB3B","1565C0","small sit-on watercraft, handlebars, spray jet","engine","Sprays enemies with an angry rooster tail.","vehicle,aquatic"},
 	{"jet stream","FFDBOB","kIe",6,10,2,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air"},
 	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
+	{"jetpack hover","OABOkI","Al",3,6,3,"96C8FF","FF9646","a twin-tank jetpack holding you up on short blue flames","whoosh","Hovering, technically.","scifi,modern"},
 	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},
 	{"jeweler","LHCJNI","ca",3,3,4,"FACC15","67E8F9","loupe, gem tray","ding","Every gem sparkles. Blindingly.","merchant,gem"},
 	{"jewelry","BHBL2I","dcaO",3,2,4,"FACC15","22D3EE","spilling heap of rings, chains and glittering gems","jingle","Ooh, shiny. That was the trap.","shiny,royal"},
@@ -329,7 +330,7 @@ return {
 	{"laser cannon","CHDMxI","KTe",8,5,6,"3A3F45","FF2D2D","heavy twin-barrel beam cannon","zap","For lasers that need to be heard.","scifi,ranged"},
 	{"laser chainsaw","CACHJI","KfV",8,5,5,"E67E22","FF2D2D","chainsaw with glowing laser teeth","zap","Rrrrrzzzzzap.","scifi,sharp,loud"},
 	{"laser drill","OHCBwI","KCe",6,6,5,"E67E22","FF2D2D","bulky drill firing a laser","hum","Tunnels through anything.","scifi"},
-	{"laser fence","EDCCII","GKST",5,1,4,"FF1744","37474F","metal posts with red laser beams between","hum","Limbo champion required.","structure,defense,future"},
+	{"laser grid","EDCCII","KST",5,2,4,"FF462E","40444E","two posts with three red laser beams between","hum","Mind the gap. All three of them.","scifi,modern,heist"},
 	{"laser pistol","CHBBwI","KTe",5,9,3,"F2F2EE","FF2D2D","compact sleek beam pistol","zap","Short burst, long reach.","scifi,ranged"},
 	{"laser pointer","CHABJI","jdce",1,10,1,"FF2D2D","24262A","tiny pen with red dot","zap","Cats fear and love this.","silly"},
 	{"laser rifle","CHCBwI","KTe",6,9,4,"F2F2EE","FF2D2D","sleek white rifle, red lens","zap","Straight lines are its whole thing.","scifi,ranged"},
@@ -402,5 +403,4 @@ return {
 	{"leaf blower","OFCFJK","kIe",3,7,4,"E67E22","24262A","handheld engine with long nozzle","whoosh","Moves leaves. Moves enemies.","tool,garden,loud"},
 	{"leaf insect","AMAJFA","dZP",1,6,1,"6AC84A","4A8A3A","flat leaf-shaped green body","buzz","A leaf that walks. Very rude to salads.","insect"},
 	{"leaf pile","NGBLMI","ZSN",1,1,2,"FF9800","C62828","crunchy heap of autumn leaves","rustle","Jump in! Something is hiding in there.","plant,silly"},
-	{"leaf rake","JKCHJK","fH",2,5,3,"2E8B57","C9CED4","fan of springy tines","clank","Gathers leaves. Gathers foes.","garden"},
 }

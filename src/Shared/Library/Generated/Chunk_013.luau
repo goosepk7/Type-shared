@@ -308,7 +308,7 @@ return {
 	{"io","MADGKJ","KEe",6,4,7,"F4D03F","E64A19","yellow moon spotted with volcanoes","rumble","Pizza-coloured. Lava-filled.","space"},
 	{"io moth","AMAJFB","jdAO",1,5,1,"F2D82A","2A6AE8","yellow moth with big eyespots","flutter","Flashes giant eyes. Boo!","insect,cute"},
 	{"ion","FDAGKJ","RL",2,6,1,"8AE9FF","FFFFFF","tiny charged glowing particle","zap","Very small. Very charged.","electric"},
-	{"ion cannon","CDEMxI","EeLO",8,4,7,"F2F2EE","3FC1D9","giant orbital cannon dish","zap","Calls a beam down from the sky.","scifi,space,electric"},
+	{"ion cannon","CDFNmI","EL",9,3,5,"6EAAFF","FF3232","a red reticle lock, then a crackling ion column from orbit","zap","Target acquired. Briefly.","scifi,space,electric"},
 	{"ion storm","FDEDOJ","jSLP",7,5,3,"651FFF","00E5FF","violet cloud with flickering ion sparks","buzz","Your gadgets will hate this.","electric,space,storm"},
 	{"iris","NGBNMI","dFS",2,1,2,"5E35B1","FFEB3B","tall bloom with drooping purple falls","rustle","Keeps an eye on things.","plant,flower"},
 	{"irish elk","AMDJAA","DkO",6,4,8,"8A5A3A","D8B07A","gigantic antlers 12 feet across","roar","Antlers as wide as a car.","mammal,extinct,ancient,heavy"},

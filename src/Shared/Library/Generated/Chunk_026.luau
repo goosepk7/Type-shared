@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tarsier","AMAJBA","Udeb",1,7,2,"A88A6A","3A2C20","eyes bigger than its brain","chatter","Its eyes are bigger than its stomach.","mammal,primate,nocturnal"},
+	{"tart","IMBAKK","Uke",3,7,2,"D9A04A","D23A5A","fluted crust, glossy fruit top","whoosh","A pie's elegant little sister.","edible"},
+	{"tartar sauce","IMBLGI","kSO",2,3,2,"F7F2DC","7DAE3A","white dip with pickle flecks","squeak","Fish sticks' best friend.","edible,slippery,silly,sauce"},
 	{"tasmanian devil","AMBJAA","Ujf",4,6,2,"1E1A18","F2F2F0","black stocky, white chest band, big jaws","screech","Spins and screams. Mostly screams.","mammal,marsupial"},
 	{"tater tots","IMAELB","eVP",2,7,1,"D49A3A","F2CE7A","little golden cylinders","pitter","Tiny potato barrels. Fire at will.","edible,savory"},
 	{"tattletale","LMBJNA","jh",2,7,2,"FACC15","DC2626","pointing kid shouting","whistle","I'M TELLING. Teacher arrives.","silly,school"},
@@ -43,6 +46,7 @@ return {
 	{"tekko kagi","CKBHJK","fT",3,8,3,"3A3F45","6B4226","hand straps with metal hooks","shing","Climb walls. Scratch foes.","ninja,sharp"},
 	{"telegraph plant","NGANMI","jdS",1,1,2,"7CB342","B39DDB","leaves that wiggle on their own","rustle","Dances to music. Confuses everyone.","plant,flower,silly"},
 	{"telekinesis","KLCBKI","lHI",5,6,3,"F48FB1","E1BEE7","pink outlined objects lifting in the air","hum","Hands free. Mind full.","psychic"},
+	{"telepads","OLCL1I","SY",3,4,4,"B078FF","787C88","two linked violet hex pads with light columns","hum","Step on. Step off. Elsewhere.","scifi,game"},
 	{"telepathy","KLBOKJ","ja",2,6,2,"E040FB","F8BBD0","pink brainwave rings from the head","hum","I know what you're about to type.","psychic"},
 	{"teleport","KLBOKI","Y",3,10,2,"7C4DFF","B9F6CA","flash of violet, rings collapsing then reappearing","warp","Here. Now there. Now here again.","magic"},
 	{"teleport grenade","CLBGKI","jeY",3,7,1,"A66BDB","F2F2EE","pulsing violet sphere","zap","Pop! They're somewhere else.","scifi,ranged"},
@@ -399,8 +403,4 @@ return {
 	{"traitor","LICJNA","jZb",4,6,4,"1F2937","7F1D1D","cloaked figure hiding a dagger behind back","whisper","Was on your team. Was.","villain"},
 	{"tram","DMDKHL","DkgL",5,5,8,"C83E2E","F2E6C9","long rail car, overhead pole, bell","bell","Ding ding. It does not stop for you.","mechanical,vehicle,land"},
 	{"trample","KEDFOF","kPO",6,6,4,"795548","BCAAA4","stampede dust wave with hoofprints","rumble","Run over, flat and dusty.","heavy"},
-	{"trampoline","BMDLII","Ukl",3,1,5,"24262A","2F6FD1","round springy mat on legs","bonk","Boing! Bye!","sport,defense"},
-	{"transform","KLCOKI","jW",4,5,3,"BA68C8","FFF59D","swirl of sparkles then a new silhouette","poof","New look, who dis?","magic"},
-	{"transforming robot","OKDKNL","DegY",7,8,7,"DC2626","1D4ED8","robot unfolding from a sports car","clank","More than meets the eye.","robot,vehicle"},
-	{"transmute","KLCAKB","jb",4,6,2,"FFC400","9575CD","gold-violet swirl turning things to gold","shimmer","Lead into gold. Enemy into statue.","magic"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magnetar","MDDGKJ","lHLO",9,6,9,"651FFF","FF4081","star wrapped in twisted glowing field lines","rumble","The fridge magnet of the gods.","space,magnetic"},
 	{"magnetic letters","BKAAKI","He",1,6,1,"C0392B","2F6FD1","colourful plastic letters","squeak","Spells B-O-N-K.","toy"},
 	{"magnetic pulse","FKCFOB","HO",5,8,1,"D32F2F","1976D2","red-blue ring tugging metal inward","whum","All your stuff flies toward me.","magnetic"},
 	{"magnetic storm","FKEN5K","lHLP",7,5,4,"C62828","1565C0","swirling metal debris in red-blue field","hum","All your metal flies away.","magnetic,storm"},
@@ -270,6 +271,7 @@ return {
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
 	{"miasma","FJDDOJ","SMNP",5,3,3,"5D7A3A","A3B86C","thick yellow-green rotten haze","hiss","Smells like a dungeon basement.","toxic"},
+	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
 	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
 	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
 	{"microlight","DFBKHB","DAkg",3,6,2,"FFEB3B","1565C0","tiny wing over an open seat and prop","propeller","Basically a lawn chair with wings.","vehicle,air,silly"},
@@ -401,6 +403,4 @@ return {
 	{"mock orange","NGCNMI","jdFS",1,1,3,"FFFFFF","7CB342","shrub with orange-scented white blooms","rustle","Smells like oranges. Fooled you.","plant,flower"},
 	{"mockingbird","AMAJDB","jdA",1,7,1,"8A8C90","F2F2F0","grey bird, white wing patches","tweet","Copies car alarms. On purpose.","bird,cute"},
 	{"model","LMCJNA","dc",3,5,3,"F472B6","F8FAFC","runway pose, sunglasses","click","Strikes a pose. Enemies stunned.","silly"},
-	{"model rocket","BMBAkB","Ake",2,8,1,"F2F2EE","C0392B","little finned rocket on a pad","squeak","3... 2... 1... Whoosh!","toy"},
-	{"moderator","LHCJNA","GOY",5,5,6,"DC2626","F8FAFC","badge, giant ban hammer","ding","Ban hammer has been swung.","gaming,meme"},
 }

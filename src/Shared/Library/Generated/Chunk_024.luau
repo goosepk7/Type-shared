@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"soft coral","ABCCMI","GW",3,1,6,"E8A0C0","F2D0E0","swaying fleshy coral","crackle","Wiggly coral. Squishy.","aquatic,ocean,reef"},
+	{"soft serve","ICBAKJ","JeN",3,5,2,"F7F2E0","D9A04A","tall curly swirl on cone","squish","Curly, cold, and quick.","edible,frozen,sweet"},
+	{"softball","BMAA3F","ke",2,8,4,"F1C40F","C0392B","big yellow stitched ball","bonk","Not actually soft.","sport"},
 	{"softshell turtle","AMBJUA","GNB",2,4,5,"8A8A6A","C8C8A8","flat pancake turtle with snorkel nose","hiss","A pancake with a snorkel.","reptile,armored"},
 	{"soil","FGBCnI","GW",3,2,5,"5C3E25","7E9C4A","mound of dark earth with sprouts","rustle","Good for gardens. Bad for intruders.","plant"},
 	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
@@ -400,7 +403,4 @@ return {
 	{"stethoscope","BMAOII","F",1,5,2,"24262A","C9CED4","tube with listening disc","thud","Listens. Diagnoses. Heals.","medical"},
 	{"stew","IBBOGI","WF",3,4,3,"8A4A2A","ED9121","thick brown chunky bowl","slurp","Slow-cooked strength.","edible,warm,healthy"},
 	{"stick","KMBLII","NO",3,4,3,"FFE082","FFFFFF","gooey sticky patch","squelch","You are now stuck. Sorry.","silly"},
-	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
-	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
-	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
 }
