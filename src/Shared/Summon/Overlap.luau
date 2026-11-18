@@ -253,35 +253,58 @@ for i = 0, 5 do
 	end
 end
 
+local NEED_HITS = #SAMPLES * 0.25
+local MAX_MISSES = #SAMPLES - math.ceil(NEED_HITS) -- one more miss and NEED_HITS can no longer be reached
+
+-- (perf: locals hoisted and an exact early exit either way; the same arithmetic in the same order, so the
+-- same answer as the plain 48-sample count)
 local function quadricCoincide(qa: any, qb: any, tol: number): boolean
-	local hits = 0
+	local ca, cb = qa.center, qb.center
+	local a1, a2, a3 = qa.axes[1], qa.axes[2], qa.axes[3]
+	local ra1, ra2, ra3 = qa.radii[1], qa.radii[2], qa.radii[3]
+	local b1, b2, b3 = qb.axes[1], qb.axes[2], qb.axes[3]
+	local rb1, rb2, rb3 = qb.radii[1], qb.radii[2], qb.radii[3]
+	local minR = math.min(math.huge, rb1, rb2, rb3)
+	local cax, cay, caz = ca[1], ca[2], ca[3]
+	local cbx, cby, cbz = cb[1], cb[2], cb[3]
+	local hits, misses = 0, 0
 	for _, s in SAMPLES do
-		local px = qa.center[1]
-		local py = qa.center[2]
-		local pz = qa.center[3]
-		for k = 1, 3 do
-			local ax = qa.axes[k]
-			local r = qa.radii[k] * s[k]
-			px += ax[1] * r
-			py += ax[2] * r
-			pz += ax[3] * r
-		end
+		local px, py, pz = cax, cay, caz
+		local r = ra1 * s[1]
+		px += a1[1] * r
+		py += a1[2] * r
+		pz += a1[3] * r
+		r = ra2 * s[2]
+		px += a2[1] * r
+		py += a2[2] * r
+		pz += a2[3] * r
+		r = ra3 * s[3]
+		px += a3[1] * r
+		py += a3[2] * r
+		pz += a3[3] * r
 		-- into B's local frame
-		local dx, dy, dz = px - qb.center[1], py - qb.center[2], pz - qb.center[3]
+		local dx, dy, dz = px - cbx, py - cby, pz - cbz
 		local sum = 0
-		local minR = math.huge
-		for k = 1, 3 do
-			local ax = qb.axes[k]
-			local l = (dx * ax[1] + dy * ax[2] + dz * ax[3]) / qb.radii[k]
-			sum += l * l
-			minR = math.min(minR, qb.radii[k])
-		end
+		local l = (dx * b1[1] + dy * b1[2] + dz * b1[3]) / rb1
+		sum += l * l
+		l = (dx * b2[1] + dy * b2[2] + dz * b2[3]) / rb2
+		sum += l * l
+		l = (dx * b3[1] + dy * b3[2] + dz * b3[3]) / rb3
+		sum += l * l
 		local f = sqrt(sum) - 1
 		if abs(f) * minR <= tol then
 			hits += 1
+			if hits >= NEED_HITS then
+				return true
+			end
+		else
+			misses += 1
+			if misses > MAX_MISSES then
+				return false
+			end
 		end
 	end
-	return hits >= #SAMPLES * 0.25
+	return hits >= NEED_HITS
 end
 
 local function cylinderCoincide(ca: any, cb: any, tol: number): boolean
@@ -313,6 +336,30 @@ local function aabbTouch(a: Prepared, b: Prepared, pad: number): boolean
 		and a.min[3] - pad <= b.max[3] and b.min[3] - pad <= a.max[3]
 end
 
+-- The violation between parts i < j (or nil), from their prepared data.
+local function checkPair(i: number, j: number, a: Prepared, b: Prepared, t: number): Violation?
+	if not aabbTouch(a, b, t * 2) then
+		return nil
+	end
+	for fi, fa in a.faces do
+		for fj, fb in b.faces do
+			local ar = coplanarArea(fa, fb, t)
+			if ar > Overlap.MinArea then
+				return { a = i, b = j, kind = "coplanar", area = ar, nx = fb.nx, ny = fb.ny, nz = fb.nz, fa = fi, fb = fj }
+			end
+		end
+	end
+	if a.quadric and b.quadric then
+		if quadricCoincide(a.quadric, b.quadric, t) or quadricCoincide(b.quadric, a.quadric, t) then
+			return { a = i, b = j, kind = "quadric", area = 0, nx = 0, ny = 1, nz = 0 }
+		end
+	end
+	if a.cylinder and b.cylinder and cylinderCoincide(a.cylinder, b.cylinder, t) then
+		return { a = i, b = j, kind = "cylinder", area = 0, nx = 0, ny = 1, nz = 0 }
+	end
+	return nil
+end
+
 -- Returns every violation in a part list (blueprint.parts).
 function Overlap.check(parts: { any }, tol: number?): { Violation }
 	local t = tol or Overlap.Tolerance
@@ -327,29 +374,10 @@ function Overlap.check(parts: { any }, tol: number?): { Violation }
 		if a then
 			for j = i + 1, n do
 				local b = prepped[j]
-				if b and aabbTouch(a, b, t * 2) then
-					local found = false
-					for fi, fa in a.faces do
-						for fj, fb in b.faces do
-							local ar = coplanarArea(fa, fb, t)
-							if ar > Overlap.MinArea then
-								table.insert(out, { a = i, b = j, kind = "coplanar", area = ar, nx = fb.nx, ny = fb.ny, nz = fb.nz, fa = fi, fb = fj })
-								found = true
-								break
-							end
-						end
-						if found then
-							break
-						end
-					end
-					if not found and a.quadric and b.quadric then
-						if quadricCoincide(a.quadric, b.quadric, t) or quadricCoincide(b.quadric, a.quadric, t) then
-							table.insert(out, { a = i, b = j, kind = "quadric", area = 0, nx = 0, ny = 1, nz = 0 })
-							found = true
-						end
-					end
-					if not found and a.cylinder and b.cylinder and cylinderCoincide(a.cylinder, b.cylinder, t) then
-						table.insert(out, { a = i, b = j, kind = "cylinder", area = 0, nx = 0, ny = 1, nz = 0 })
+				if b then
+					local v = checkPair(i, j, a, b, t)
+					if v then
+						table.insert(out, v)
 					end
 				end
 			end
@@ -361,10 +389,45 @@ end
 -- Resolve violations in place by nudging the less important part (higher pri, then smaller volume):
 -- coplanar faces -> translate along that part's face normal by `inset` (it protrudes / embeds slightly);
 -- coincident curved shells -> grow the less important part by 2 * inset. Returns number of fixes applied.
+-- (perf: a pair's violation depends only on its two parts, so after the first pass only the pairs of a part that
+-- moved are checked again; the list is rebuilt in the same (i, j) order, so the fixes are the ones a full
+-- Overlap.check per pass gives. Hero bodies of 30-45 overlapping ellipsoids took 10-25 ms here, 3-5 passes.)
 function Overlap.fix(parts: { any }, inset: number, maxPasses: number?): number
 	local fixes = 0
+	local t = Overlap.Tolerance
+	local n = #parts
+	local prepped: { Prepared | false } = table.create(n, false)
+	for i, p in parts do
+		prepped[i] = prepare(p) or false
+	end
+	-- pair results: res[i][j] = Violation | false, for i < j with both parts prepared
+	local res: { { [number]: Violation | false } } = table.create(n)
+	local dirty: { [number]: boolean }? = nil -- nil = every pair
 	for pass = 1, maxPasses or 10 do
-		local vs = Overlap.check(parts)
+		local vs: { Violation } = {}
+		for i = 1, n do
+			local a = prepped[i]
+			local row = res[i]
+			if not row then
+				row = {}
+				res[i] = row
+			end
+			if a then
+				for j = i + 1, n do
+					local b = prepped[j]
+					if b then
+						local v = row[j]
+						if v == nil or dirty == nil or dirty[i] or dirty[j] then
+							v = checkPair(i, j, a, b, t) or false
+							row[j] = v
+						end
+						if v then
+							table.insert(vs, v)
+						end
+					end
+				end
+			end
+		end
 		-- vary the step per pass so a nudge never lands exactly on a neighbouring plane (chains of thin plates)
 		local step = inset * (1 + ((pass - 1) * 0.618) % 1)
 		if #vs == 0 then
@@ -387,7 +450,7 @@ function Overlap.fix(parts: { any }, inset: number, maxPasses: number?): number
 				fixes += 1
 				if v.kind == "coplanar" then
 					-- normal of the victim's own face
-					local prep = prepare(p)
+					local prep = prepped[victimIdx]
 					local fi = if victimIdx == v.a then v.fa else v.fb
 					local face = prep and fi and prep.faces[fi]
 					local nx, ny, nz = v.nx, v.ny, v.nz
@@ -405,6 +468,10 @@ function Overlap.fix(parts: { any }, inset: number, maxPasses: number?): number
 				end
 			end
 		end
+		for i in moved do
+			prepped[i] = prepare(parts[i]) or false
+		end
+		dirty = moved
 	end
 	return fixes
 end

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ash fall","HADEOJ","jSN",4,3,3,"9E9E9E","5D4037","grey snowfall of volcanic ash","hush","Grey snow. Warm and gritty.","fire,natural"},
+	{"ash storm","FADDOJ","KjNP",6,4,4,"5D4037","FF7043","grey ash blizzard lit by red sparks","rumble","Grey snow that stings.","fire,storm"},
+	{"ash tree","NHDCMI","GWkS",4,1,7,"8D8D8D","E53935","tall tree with orange-red berry clusters","rustle","Wards off witches. Allegedly.","plant,tree"},
+	{"ash wasteland","MAENII","KjS",4,1,6,"616161","FF7043","grey ash dunes, smouldering stumps","rumble","Everything here already burned. Twice.","place,terrain"},
 	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
 	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
 	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
@@ -22,6 +26,7 @@ return {
 	{"asteroid shower","HEFEOB","KEke",9,6,7,"5B4F46","FF8A3D","dozens of burning rocks falling across the sky","rumble","Bring a very, very big umbrella.","space,explosive,danger"},
 	{"asteroid turtle","AEEJAJ","GA",6,2,9,"57534E","22D3EE","giant turtle with an asteroid shell","rumble","Carries a tiny planet on its back.","cosmic"},
 	{"astral","FLCBKI","eY",5,7,2,"5C6BFF","E8E2FF","starfield-filled beam, nebula swirls","chime","Cosmic vibes, directly to the face.","magic,space"},
+	{"astral bull","AHDJNA","Qkf",7,4,6,"283468","F0C868","horned bull-warrior of starlight with a great axe","roar","Turn the key. Mind the axe.","anime,guild magic,summon,star"},
 	{"astral projection","KLCOVJ","AZY",3,6,2,"B3E5FC","E1BEE7","glowing see-through copy floating out","hum","Leave your body. Come back soon.","magic,psychic"},
 	{"astro whale","ALDJEJ","AF",5,3,6,"312E81","67E8F9","small starry whale with glowing spots","whale","Sings tiny cosmic songs.","alien,cosmic,cute"},
 	{"astromancy","FHCEOB","Ke",5,6,2,"FFF59D","311B92","constellation lines raining starlight","chime","Read the stars. Throw the stars.","space,magic"},
@@ -83,6 +88,7 @@ return {
 	{"aye-aye","AIBJBA","dTeb",2,7,2,"2A2420","E89A2A","huge eyes, bat ears, long bony finger","chatter","Taps trees with its spooky finger.","mammal,primate,spooky,nocturnal"},
 	{"azalea","NJCNMI","dFSM",2,1,3,"E91E63","2E7D32","bush smothered in pink blooms","rustle","A bush that is mostly flowers.","plant,flower"},
 	{"aztec warrior","LGCJNA","DZf",6,7,5,"F59E0B","15803D","jaguar pelt helm, obsidian club, feathered shield","roar","Fierce. Feathered. Fast.","warrior,ancient"},
+	{"azure collapse","KLCGKB","EHeN",8,4,3,"3F7BFF","0C1236","a dark point with a blue rim swallowing everything near it","hum","Come here. Everything. Now.","anime,magic,gravity"},
 	{"azure dragon","AFEKCB","Akeg",8,7,7,"1D4ED8","7DD3FC","long blue sky dragon, wind ribbons","roar","Guardian of the east. Always on time.","mythical,reptile,ancient"},
 	{"baba ganoush","IMBNGI","SNP",2,4,1,"C8B08A","5B2A5E","smoky eggplant dip","splat","Smoky, creamy, and fun to say.","edible,sauce"},
 	{"baba yaga","ALCJNB","jAMh",6,6,5,"57534E","DC2626","old witch flying in a mortar with a pestle","cackle","Lives in a chicken-legged house. Rent is weird.","witch,spooky"},
@@ -397,10 +403,4 @@ return {
 	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
 	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
-	{"bedtime","KLCDOJ","SO",3,3,2,"3949AB","FFF8E1","cosy dark-blue cloud with stars and Zs","snore","Into bed. Now. Everyone.","silly"},
-	{"bee","AJAJLB","AFTMP",2,7,1,"F2C02A","2A1E14","fuzzy striped body, tiny wings, stinger","buzz","Makes honey. Dances directions. Stings once.","insect,swarm,venomous"},
-	{"bee balm","NGBNMI","dFSch",1,1,2,"E91E63","7CB342","spiky ragged pink pompoms","rustle","Bees cannot resist it.","plant,flower"},
-	{"bee fly","AMAJFB","jdAP",1,6,1,"C8A07A","F2E8D0","fluffy fly with long nose","buzz","A fuzzy pompom with a straw.","insect,cute"},
-	{"bee knight","AJAJFB","ATM",2,9,1,"FACC15","111827","bee in a tiny helmet with a stinger lance","buzz","Buzzes. Jousts. Stings.","insect,warrior"},
-	{"bee-eater","AMAJDB","dA",1,7,1,"2AB06A","F2C82A","rainbow bird, curved beak","tweet","Eats bees. Removes stingers first.","bird,cute"},
 }
