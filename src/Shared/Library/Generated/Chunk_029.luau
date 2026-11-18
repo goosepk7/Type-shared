@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"winter","GCDNOI","JSN",5,3,5,"D6EAF8","FFFFFF","snow-covered ground, frosted air","hush","Winter is here. Wear a hat.","frozen,holiday"},
+	{"winter forest","MCFNII","JZS",4,1,8,"FFFFFF","2E7D32","snow-laden pines, silent","rumble","Hushed. Cold. Ambush-ready.","place,terrain,frozen"},
+	{"winter tree","NCDCMI","GJWkSN",3,1,7,"4E342E","FFFFFF","dark branches heavy with snow","rustle","Shake it. Snow avalanche.","plant,tree,frozen"},
 	{"winter wolf","ACCJAA","DJf",5,8,4,"E0F2FE","60A5FA","white wolf exhaling frost","howl","Its howl freezes puddles.","canine,frozen"},
 	{"wire","BDALJK","LN",1,3,2,"B8693D","24262A","coiled copper wire","clink","Live wire!","hardware"},
 	{"wire cutters","JKAHJK","fV",2,6,4,"C0392B","C9CED4","small snipping pliers","clank","Snip. Disarmed.","tool"},

@@ -403,5 +403,4 @@ return {
 	{"carnitas","IMAELB","ce",2,7,1,"B0602B","F2C870","crispy shredded pork","pitter","Crispy, juicy shreds.","edible"},
 	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
 	{"carnotaurus","AMDJBA","DkfT",7,8,7,"B8401E","3A2A1E","bull horns, tiny arms, fast","roar","A bull and a T rex had a sprinter.","dinosaur,extinct,reptile,predator"},
-	{"carolina reaper","IABAKK","KESP",8,7,2,"B0101E","6B0A0A","wrinkly red pod, scorpion tail","sizzle","The hottest pepper. A fire spirit in pod form.","edible,spicy,flammable,pepper"},
 }

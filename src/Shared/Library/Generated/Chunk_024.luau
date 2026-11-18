@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snare","BMBLII","lHO",2,1,3,"B89B6A","8B5A2B","hidden rope loop on bent sapling","snap","Upsy-daisy!","trap,defense"},
+	{"snatch","KMBBKI","Hb",3,9,1,"8D6E63","FFFFFF","glowing hand reaching and grabbing","swish","Gotcha!","silly"},
 	{"sneak","KIBOKA","DZ",2,6,2,"455A64","90A4AE","tiptoeing shadowy outline","tiptoe","Tiptoe. Tiptoe. Gotcha.","stealth"},
 	{"sneakers","BMBONI","D",1,9,2,"F2F2EE","C0392B","chunky running sneakers","swish","Gotta go fast.","clothing"},
 	{"sneeze","KFBFOB","jk",3,10,1,"E1F5FE","C5E1A5","cone of droplets and wind from the caster","achoo","Bless you. And everyone in front.","silly,gross"},
@@ -401,6 +403,4 @@ return {
 	{"star blade","FHCHrB","KfT",6,8,2,"FFF59D","5C6BC0","sword shimmering with tiny stars","chime","Forged in a star. Probably.","space,sharp"},
 	{"star bolt","FHBAKB","KTe",5,9,1,"FFF9C4","FFD54F","spinning golden star streak","zing","Twinkle, twinkle, bonk.","space"},
 	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
-	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
-	{"star cactus","NEALMI","GST",2,1,5,"7CB342","FFFFFF","flat star-shaped spineless cactus","thud","Spineless. Still judgmental.","plant,desert,cute"},
 }

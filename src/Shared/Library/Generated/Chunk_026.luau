@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swordtail","ABAJEC","dTB",1,6,1,"E8501E","1E1E1E","orange fish with sword tail","splash","Has a tiny sword tail.","fish,aquatic"},
+	{"sycamore","NGECMI","GdWkSe",4,1,8,"D7CCC8","7CB342","patchy white bark, big leaves","rustle","Throws spinning helicopter seeds.","plant,tree"},
 	{"sydney opera house","EMFCII","GSO",5,1,9,"FFFFFF","E0E0E0","white sail-shaped shell roofs","song","Sings a very loud high note.","structure,landmark"},
 	{"symbol","KLBLKI","jSO",3,1,3,"A855F7","FACC15","floating glowing sign: @ # & % cycling quickly","chime","@#&%! Pardon its language.","magic"},
 	{"syrian hamster","AMAJAA","Cdb",1,6,1,"E8B060","F7F0E6","golden round hamster","squeak","Classic hamster. Cheeks of steel.","mammal,cute,pet"},
@@ -401,7 +403,4 @@ return {
 	{"topiary","NGCCMI","GdS",2,1,5,"43A047","1B5E20","bush trimmed into a cute animal shape","rustle","Shaped like a rabbit. Fights like a hedge.","silly,cute"},
 	{"topic","KMBOKB","jdY",2,5,2,"F59E0B","FFFFFF","speech bubble with an arrow swerving off sideways","pop","Anyway. Moving on. Completely different thing.","school,silly"},
 	{"torch","BABHJK","Kcf",2,5,2,"8B5A2B","FF6A1A","wooden stick with flaming tip","flicker","Bring one to every cave.","flammable"},
-	{"torii gate","EHCCII","FSY",2,1,8,"C62828","263238","red post-and-beam gateway","thud","Step through to somewhere sacred.","structure,holy"},
-	{"tornado","HFEN5K","klSHP",8,6,5,"8A9BA8","DCE6EC","tall grey funnel, debris ring and flung rocks at base","howl","Picks things up. Puts them down far away.","storm,natural,air"},
-	{"tornado outbreak","HFFN5K","klSHP",9,6,6,"78909C","ECEFF1","several funnels touching down at once","howl","One tornado was not enough.","storm,natural,danger"},
 }

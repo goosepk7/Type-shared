@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"torii gate","EHCCII","FSY",2,1,8,"C62828","263238","red post-and-beam gateway","thud","Step through to somewhere sacred.","structure,holy"},
+	{"tornado","HFEN5K","klSHP",8,6,5,"8A9BA8","DCE6EC","tall grey funnel, debris ring and flung rocks at base","howl","Picks things up. Puts them down far away.","storm,natural,air"},
+	{"tornado outbreak","HFFN5K","klSHP",9,6,6,"78909C","ECEFF1","several funnels touching down at once","howl","One tornado was not enough.","storm,natural,danger"},
 	{"tornado tower","EFDMII","GklSHe",6,1,6,"B0BEC5","80DEEA","tower spinning a small tornado on top","whoosh","Picks enemies up. Puts them down far away.","structure,defense,tower"},
 	{"torosaurus","AMEJAA","DkT",8,5,8,"6A5A3A","C8A87A","gigantic frill","bellow","Biggest head of any land animal.","dinosaur,extinct,reptile"},
 	{"torpedo","CBCAkC","EeB",7,7,3,"4A4D52","F1C40F","long finned underwater missile","boom","Fish-shaped delivery service.","explosive,ocean"},
@@ -400,7 +403,4 @@ return {
 	{"viburnum","NGCNMI","dFSe",1,1,4,"FFFFFF","2E7D32","round white snowball flower heads","rustle","Throws snowballs. Flower ones.","plant,flower"},
 	{"victim","LMBJNA","dEc",1,3,1,"E5E7EB","F87171","unlucky fellow under a tiny rain cloud with a target sign","oof","Wrong place. Wrong time. Every time.","silly"},
 	{"victoria sponge","IMBLKI","dSc",2,3,3,"F2D88A","D7263D","two sponges, jam and cream","chomp","Fit for a queen.","edible,sweet,royal"},
-	{"victoria water lily","NBDLMJ","SN",2,1,5,"43A047","F8BBD0","huge round floating pad with a rim","rustle","Big enough to stand on. Try it.","plant,flower"},
-	{"victory","KHCOKJ","DF",4,6,4,"FFD54F","43A047","golden trophy-shaped glow","fanfare","Winner winner.","holy"},
-	{"vicuna","AMCJAA","df",3,4,4,"C8945A","F2EEE6","slim wild llama, golden coat","bleat","Fanciest wool on the mountain.","mammal,farm"},
 }

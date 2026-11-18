@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"party horn","BMAFKI","jd",1,9,1,"D4A72C","C0392B","curly paper horn","honk","Pweeeeeeep!","party,silly"},
+	{"party popper","BMAFKI","deO",1,9,1,"D4A72C","FF3EA5","small cone with string pull","pop","POP! Streamers everywhere.","party"},
 	{"passenger pigeon","AMAJDB","dAP",1,7,1,"6A7A8A","D8705A","slim pigeon with rusty breast","tweet","Once darkened the skies.","bird,cute,extinct"},
 	{"passion flower","NGBNMI","dFS",2,1,2,"7E57C2","FFFFFF","intricate fringed blue bloom","rustle","Looks like a clock. Acts like a flower.","plant,flower"},
 	{"passion fruit","IMBGKF","EeP",4,6,1,"5E2A4E","F3C54B","purple wrinkly sphere, gold pulp","pop","Wrinkly outside, fireworks inside.","edible,explosive,fruit,tropical"},
@@ -401,6 +403,4 @@ return {
 	{"poem","KFBF6J","jFO",2,5,1,"C4B5FD","F8FAFC","floating quill and curling lines of verse","whisper","Roses are red. Violets are blue. Bonk.","art,school"},
 	{"pog","KHBOKG","DFO",3,8,2,"A855F7","FACC15","wide-open amazed mouth face with sparkles and hype bars","yay","Poggers. That was actually poggers.","gaming,meme,internet"},
 	{"pogo spring boots","BMBONI","Uk",2,7,3,"C9CED4","E67E22","boots on curved springs","thud","Boing! Over the wall.","toy,silly"},
-	{"pogo stick","BMCOJG","UDk",2,6,4,"C0392B","C9CED4","spring pole with foot pegs","bonk","Boing boing boing boing.","toy"},
-	{"poinsettia","NGBNMI","dFS",2,1,2,"C62828","1B5E20","red star bracts on green leaves","rustle","Holiday cheer with attitude.","plant,flower,holiday"},
 }

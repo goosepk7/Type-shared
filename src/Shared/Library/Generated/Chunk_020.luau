@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pogo stick","BMCOJG","UDk",2,6,4,"C0392B","C9CED4","spring pole with foot pegs","bonk","Boing boing boing boing.","toy"},
+	{"poinsettia","NGBNMI","dFS",2,1,2,"C62828","1B5E20","red star bracts on green leaves","rustle","Holiday cheer with attitude.","plant,flower,holiday"},
 	{"point","KMBOuB","dQe",2,8,1,"F2D0B4","EF4444","giant gloved finger pointing with a red arrow","ding","Look over there! Ha. Made you look.","silly,trickster"},
 	{"pointer","AMCJAA","DQcf",4,7,4,"F2EEE6","8A4A22","sleek bird dog, one paw raised pointing","bark","It is literally pointing. At you.","mammal,pet"},
 	{"poison","FJCDOJ","SMP",4,4,2,"6BBF3A","2E5E1E","swirling sickly green fog, skull wisps","bubble","Do not lick.","toxic"},
@@ -401,6 +403,4 @@ return {
 	{"rain tree","NBECMI","GWFkS",3,1,8,"6D4C41","43A047","huge umbrella canopy","rustle","Folds its leaves before rain. Clever.","plant,tree"},
 	{"rainbow","GHDBKI","jFe",5,6,3,"FF5252","40C4FF","bright seven-colour arc landing on target","chime","Pot of gold not included.","cute,holy"},
 	{"rainbow boa","AMCJCD","fHaO",4,4,6,"C8603A","6AE8E0","iridescent orange snake","hiss","Shimmers like a rainbow.","reptile"},
-	{"rainbow bridge","EHECII","GFSY",4,1,6,"FF5252","40C4FF","shimmering arch of rainbow light","thud","Leads somewhere magical. Probably.","magic,mythical"},
-	{"rainbow cake","IMCLKI","dSc",2,3,3,"E8434F","4FA3E8","slice with rainbow layers","chomp","Every colour, layered.","edible,sweet"},
 }

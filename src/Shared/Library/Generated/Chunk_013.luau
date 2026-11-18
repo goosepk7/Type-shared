@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy","FHDGKI","KEF",7,6,1,"FFFFFF","FFF59D","ring of white orbs bursting together","choir","The purest light. Blinding.","holy"},
 	{"holy aura","FHCOKJ","GF",3,4,5,"FFF59D","FFFFFF","golden halo glow round caster","choir","Glowing with goodness.","holy,support"},
 	{"holy beam","FHDBKI","KFe",7,7,1,"FFF59D","FFFFFF","wide radiant beam from above","choir","Good, delivered by laser.","holy"},
 	{"holy blast","FHCGKI","KEF",6,7,1,"FFF59D","FFFFFF","golden burst with feather sparks","choir","A blessing that hits hard.","holy,explosive"},
@@ -402,6 +403,4 @@ return {
 	{"jack o lantern","BABJKI","Kjc",2,3,3,"E67E22","FF6A1A","carved grinning pumpkin with candle","jingle","Grins in the dark. Grins at you.","holiday,spooky"},
 	{"jack russell","AMBJAA","UdQf",2,8,2,"F2EEE6","8A5A2A","small white dog with tan patches, springy","yip","Bounces off walls. Literally.","mammal,pet,cute"},
 	{"jack the giant slayer","LMBJNA","cf",3,7,3,"15803D","78350F","kid with magic beans and a tiny sword","ding","Climbed the beanstalk. Regrets nothing.","folklore"},
-	{"jack-in-the-box monster","ALBLII","UEO",3,6,4,"DC2626","FACC15","spring-loaded clown head in a crank box","boing","Pop goes your sanity.","spooky,silly"},
-	{"jackal","AMCJAA","DQfbh",3,7,4,"C08A50","2E2A26","slender golden canine, dark saddle","howl","Scavenger extraordinaire.","mammal,predator,wild"},
 }

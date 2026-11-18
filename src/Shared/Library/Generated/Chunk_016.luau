@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"macaroon","IMBLKI","dSc",2,3,3,"F7F4EC","D9A04A","toasted coconut mound","chomp","A shaggy coconut haystack.","edible,sweet,dessert"},
+	{"macaw","AMCJDB","jdA",3,6,2,"E8201E","2A6AD8","big red-blue-yellow parrot, long tail","squawk","Loud, proud and rainbow.","bird,jungle,silly"},
 	{"mace","CKCHtK","kfO",5,5,6,"5B6168","6B4226","flanged metal head on short handle","bonk","Like a hug, but metal.","medieval,heavy"},
 	{"mace of light","CHCHtK","Fkf",6,5,6,"D4A72C","F2F2EE","radiant flanged mace","shing","Bonk, but blessed.","fantasy,holy"},
 	{"machete","CKCHrK","fT",4,7,4,"8A929B","24262A","wide heavy jungle blade","shing","Clears jungles and schedules.","medieval,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"minmi","AMCJAA","Gkf",4,3,9,"8A7A5A","C8B88A","small armored dino","grunt","Small but fully armored.","dinosaur,extinct,reptile,armored"},
 	{"minnow","ABAJEC","dPB",1,6,1,"9AA8A0","D8E0D8","tiny silver river fish","splash","Small fry. Big dreams.","fish,aquatic"},
 	{"minotaur","AEDJNA","DkfO",7,6,7,"7C2D12","E7E5E4","bull head, giant arms, labyrinth axe","roar","Lost in a maze. Taking it out on you.","mythical"},
-	{"minotaur chief","AEEJNA","DkfO",8,6,8,"451A03","FACC15","giant bull warrior with gold nose ring","roar","Runs the maze. Owns the maze.","mythical,boss"},
-	{"minotaur gladiator","AEDJNA","Dkf",7,6,7,"7C2D12","CA8A04","minotaur in gladiator armor","roar","Undefeated. Unshaven.","mythical,warrior"},
 }

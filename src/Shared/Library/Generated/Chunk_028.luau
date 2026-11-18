@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"victoria water lily","NBDLMJ","SN",2,1,5,"43A047","F8BBD0","huge round floating pad with a rim","rustle","Big enough to stand on. Try it.","plant,flower"},
+	{"victory","KHCOKJ","DF",4,6,4,"FFD54F","43A047","golden trophy-shaped glow","fanfare","Winner winner.","holy"},
+	{"vicuna","AMCJAA","df",3,4,4,"C8945A","F2EEE6","slim wild llama, golden coat","bleat","Fanciest wool on the mountain.","mammal,farm"},
 	{"video","BHBCnE","jdc",2,3,3,"111827","EF4444","floating screen with a play triangle and a buffering ring","click","Buffering... buffering... buff... ering.","tech,internet"},
 	{"video camera","BHBBKI","c",1,5,3,"24262A","C0392B","handheld camera with red light","beep","Recording. Smile.","tech,electric"},
 	{"video game","BDCN1I","jShY",5,5,3,"4F46E5","22D3EE","glowing screen spilling blocky pixels and a health bar","beep","Just five more minutes. Said three hours ago.","gaming,tech"},
@@ -400,7 +403,4 @@ return {
 	{"wings of light","KHCOKB","AF",3,7,3,"FFFFFF","FFE57F","glowing feathered wings on the caster","whoosh","Flap flap. Very angelic.","holy"},
 	{"wingsuit","DFBKHB","DAg",3,9,2,"FF5722","212121","jumpsuit with fabric wings","whoosh","Jump. Spread arms. Scream.","vehicle,air,sport"},
 	{"wink","KMAAKB","jc",1,10,1,"FFEB3B","FFFFFF","sparkle star from an eye","ding","Smooth.","cute"},
-	{"winter","GCDNOI","JSN",5,3,5,"D6EAF8","FFFFFF","snow-covered ground, frosted air","hush","Winter is here. Wear a hat.","frozen,holiday"},
-	{"winter forest","MCFNII","JZS",4,1,8,"FFFFFF","2E7D32","snow-laden pines, silent","rumble","Hushed. Cold. Ambush-ready.","place,terrain,frozen"},
-	{"winter tree","NCDCMI","GJWkSN",3,1,7,"4E342E","FFFFFF","dark branches heavy with snow","rustle","Shake it. Snow avalanche.","plant,tree,frozen"},
 }

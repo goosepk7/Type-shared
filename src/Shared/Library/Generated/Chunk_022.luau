@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rubber band","BMAAJK","eO",1,9,1,"D2B48C","D2B48C","stretchy loop","tap","Snap! Right on the wrist.","office"},
+	{"rubber band ball","BMBG3K","Ue",2,7,3,"D2B48C","C0392B","ball of a thousand bands","tap","Bounces like it's angry.","office"},
 	{"rubber band gun","CMBAwI","eO",1,9,2,"8B5A2B","D2B48C","wooden clothespin pistol","thwip","Snap! Right on the nose.","toy,silly"},
 	{"rubber chicken","CMBHJK","jdf",1,7,2,"F1C40F","C0392B","floppy squawking rubber chicken","boing","BWAAACK. Comedy damage.","silly"},
 	{"rubber chicken monster","AMBJDA","Ud",2,5,2,"FACC15","F97316","giant rubber chicken with angry eyes","squeak","Squeaks loudly. Hits squeakily.","silly"},
@@ -401,6 +403,4 @@ return {
 	{"shadow dash","KICOKB","DZ",4,10,2,"1A0033","7C4DFF","black smoky streak","hiss","Was that a shadow? It was me.","spooky,speed"},
 	{"shadow dome","KIDIKI","GZ",3,3,7,"1A0033","7C4DFF","black smoky dome hiding allies","hiss","Can't hit what you can't see.","spooky,defence"},
 	{"shadow dragon","AIEKAB","iAZeg",8,7,7,"1E1B2E","7C3AED","smoky wings, violet eyes, wispy tail","roar","Blends into the night. Bumps into the moon.","mythical,reptile,spooky,flying"},
-	{"shadow elemental","AIDJNJ","jiZ",6,7,4,"1E1B4B","6D28D9","inky shape with purple eye slits","whisper","Only visible in the dark. Which is cheating.","elemental,spooky"},
-	{"shadow fairy","AIAJNB","jAZ",2,9,1,"1E1B4B","A78BFA","inky fairy with moth wings","whisper","Steals your shadow. Returns it later.","fairy,spooky"},
 }

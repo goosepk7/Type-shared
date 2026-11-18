@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flood","HBENOI","SINP",7,4,5,"2269A8","A9DBF5","rising murky water filling the area","splash","Everything is a swimming pool now.","natural,aquatic"},
 	{"floodlight","OHDBmI","cO",2,1,6,"8E9196","F2F2EE","bank of huge bright lamps","clank","Blinding stadium glare.","mechanical"},
 	{"floor","FEDNnI","kSN",4,1,9,"B5803C","8B5A2B","wide wooden floorboards tilting like a seesaw","creak","The floor is the floor. That is worse.","household,terrain"},
 	{"floor is lava","KADNOI","KS",6,3,4,"FF3D00","FFB300","floor turning into glowing lava","bubble","It's not a game anymore.","fire,meme,silly"},
@@ -402,5 +403,4 @@ return {
 	{"ghost king","AIDJNJ","iAh",7,5,4,"A5B4FC","CA8A04","crowned translucent giant","wail","Rules a kingdom of sheets.","ghost,royal,boss"},
 	{"ghost lantern bearer","AICJNJ","Ac",3,4,2,"F8FAFC","FACC15","ghost carrying a glowing lantern","whisper","Lights the way. Somewhere strange.","ghost"},
 	{"ghost locomotive","DIEKHL","DZkTg",7,7,5,"80DEEA","263238","glowing see-through steam engine","whistle","A train that crashed a century ago. Still running late.","spooky,undead"},
-	{"ghost orchid","NIBNMI","dZS",3,1,1,"F5F5F5","E1F5FE","leafless white bloom floating in air","rustle","Floats like a ghost. Very rare.","plant,flower,spooky"},
 }

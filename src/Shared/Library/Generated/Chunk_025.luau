@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"star burst","KHDNKI","Kk",5,8,3,"FFE680","FFB040","a radiant star nova bursts out and dazzles","chime","Twinkle twinkle, you're toast.","hero,movie,light"},
+	{"star cactus","NEALMI","GST",2,1,5,"7CB342","FFFFFF","flat star-shaped spineless cactus","thud","Spineless. Still judgmental.","plant,desert,cute"},
 	{"star cluster","MHEELJ","TeVP",7,4,7,"E1F5FE","FFF59D","swarm of tiny glittering stars","rumble","A whole handful of stars, thrown at once.","space"},
 	{"star dragonfly","AHAJFB","Ae",2,10,1,"FDE047","67E8F9","dragonfly trailing stardust","buzz","Leaves sparkly streaks.","cosmic,insect"},
 	{"star eater","AIFJGJ","ikH",10,2,9,"0F0F23","F97316","planet-sized maw with orbiting debris","hum","Snacks on stars. Burps out comets.","alien,cosmic,boss,danger"},
@@ -401,6 +403,4 @@ return {
 	{"sword cane","CKCHrK","fT",5,7,3,"24262A","C9CED4","walking cane hiding a blade","shing","Gentleman's surprise.","sharp"},
 	{"sword swallower","LKCJNA","dO",3,4,4,"111827","94A3B8","swallowing a long sword","gulp","Kids, don't try this at home.","circus,silly"},
 	{"swordfish","ABDJEC","DfTB",6,9,4,"3A4A6A","D8DCE2","long flat sword bill","splash","Brought a sword to the sea.","fish,aquatic"},
-	{"swordtail","ABAJEC","dTB",1,6,1,"E8501E","1E1E1E","orange fish with sword tail","splash","Has a tiny sword tail.","fish,aquatic"},
-	{"sycamore","NGECMI","GdWkSe",4,1,8,"D7CCC8","7CB342","patchy white bark, big leaves","rustle","Throws spinning helicopter seeds.","plant,tree"},
 }
