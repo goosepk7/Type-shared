@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"royal barge","DBDKHC","DkgB",4,3,6,"FFD54F","B71C1C","gilded barge with a canopy throne","splash","Arrives in style. Sinks in style.","vehicle,aquatic,royal"},
+	{"royal carriage","DMDKHL","Dkg",4,5,6,"FFD54F","B71C1C","gilded coach with crowns and plumes","clatter","Make way for royalty!","vehicle,ancient,royal"},
 	{"royal chef","LACJNA","KFe",3,5,4,"F8FAFC","DC2626","tall toque with crown emblem","sizzle","Feasts for kings. Leftovers for you.","royal,food"},
 	{"royal decree","KLCAKI","jIe",6,10,2,"E0283C","FFD7DC","meet their eyes, give an order, and they walk away","chime","You will walk away. Now.","anime,command,eyes"},
 	{"royal food taster","LMCJNA","dM",3,4,3,"7C3AED","F8FAFC","nervous figure holding a spoon","gulp","Tastes everything first. Brave job.","royal,silly"},
@@ -401,6 +403,4 @@ return {
 	{"shadow blade","CICHrK","iZf",7,8,3,"1B1A22","7D3CB5","smoky black blade, wispy edge","shing","You don't see it coming. That's the point.","fantasy,spooky"},
 	{"shadow blast","FICGKI","iEk",6,7,1,"1A0033","AA00FF","bursting sphere of black smoke and violet sparks","whum","A burst of pure gloom.","spooky,explosive"},
 	{"shadow bolt","FICAKB","iTe",6,8,1,"311B47","9C4DFF","writhing black orb with purple wake","hiss","Darkness, but in a hurry.","spooky"},
-	{"shadow bomb","FICGKI","iEZ",6,6,1,"1A0033","AA00FF","black orb bursting into blinding dark","whum","Explodes into nothing. Scary nothing.","spooky,explosive"},
-	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
 }

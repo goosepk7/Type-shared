@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"macadamia","IEAAKK","UeO",2,8,8,"F2E8C8","8A5A3A","round cream nut, hard shell","tok","The toughest shell in the nut world.","edible,nut"},
 	{"macadamia cookie","IMBAKK","Uke",3,7,2,"E8C88A","F2E8C8","cookie with white chunks","whoosh","Nuts and white chocolate. Fancy.","edible"},
 	{"macaque","AMBJBA","deb",2,7,2,"9A8A72","E8A090","pink face, short tail","chatter","Steals your sunglasses. Wears them.","mammal,primate"},
 	{"macaron","IMALKI","dSc",2,3,3,"F2A6C8","B8E0C8","two pastel shells, cream middle","chomp","Pastel, delicate, very fancy.","edible,sweet,fancy"},
@@ -402,5 +403,4 @@ return {
 	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
 	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},
 	{"minivan","DMCKHL","Dkg",4,6,6,"6E8FA6","D9DEE2","tall rounded van, sliding side door","engine","Soccer practice is cancelled. Battle is on.","mechanical,vehicle,land,silly"},
-	{"mink","AMBJAA","CfTB",3,8,2,"3A2618","5A3E2C","glossy dark brown slinky body","chatter","Shiny coat, sharp teeth.","mammal,predator"},
 }

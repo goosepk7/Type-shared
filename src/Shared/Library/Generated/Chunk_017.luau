@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mink","AMBJAA","CfTB",3,8,2,"3A2618","5A3E2C","glossy dark brown slinky body","chatter","Shiny coat, sharp teeth.","mammal,predator"},
 	{"minke whale","ABEJEC","kIB",6,3,9,"3A4250","D8DEE4","small sleek whale, white flipper bands","whalesong","Smallest of the big guys.","mammal,aquatic,ocean,heavy"},
 	{"minmi","AMCJAA","Gkf",4,3,9,"8A7A5A","C8B88A","small armored dino","grunt","Small but fully armored.","dinosaur,extinct,reptile,armored"},
 	{"minnow","ABAJEC","dPB",1,6,1,"9AA8A0","D8E0D8","tiny silver river fish","splash","Small fry. Big dreams.","fish,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"newt","AJAJCA","FMB",1,3,2,"E8701E","3A3A2A","small orange salamander","squelch","Bright orange. Bitter taste.","amphibian,wetland"},
 	{"niagara falls","MBFFII","kSIN",7,1,9,"4FC3F7","FFFFFF","wide thundering curtain of water","roar","Several million litres of nope.","place,landmark"},
 	{"nian","AADJAA","Dkf",6,6,7,"B91C1C","FACC15","maned lion beast, single horn","roar","Scared of firecrackers and the color red.","mythical,holiday"},
-	{"nibble","KMAAKB","if",1,8,1,"FFCC80","FFFFFF","tiny chomp marks","nom","Nom. Tiny but rude.","silly"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stamina","KGCOKJ","DF",2,6,4,"43A047","FFF59D","green breathing glow pulse","breath","Keep going. And going.","support"},
+	{"standard bearer","LMCJNA","FOh",3,4,5,"DC2626","FACC15","tall flag with crest","horn","Rally to the flag! Allies buffed.","warrior"},
 	{"staple gun","JKAAwI","Te",2,8,3,"24262A","C9CED4","heavy-duty stapler with grip","thunk","Kachunk. Pinned.","modern,ranged"},
 	{"stapler","BMAAJK","Te",1,7,4,"C0392B","24262A","chunky office stapler","tap","Ka-chunk. Pinned.","office"},
 	{"staples","BKAAwB","TeN",2,9,2,"C0C7CE","EF4444","red stapler snapping out a stream of tiny silver staples","click","Ka-chunk. Ka-chunk. Attached.","school,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"swimsuit","BBBOEC","UDB",2,7,2,"0EA5E9","FDE047","stripy swimsuit doing a perfect cannonball","splash","Last one in is a rotten egg.","clothing,aquatic"},
 	{"swing","BFCLII","Uklg",4,6,5,"EF4444","6B7280","A-frame with a seat on chains at full arc","creak","Higher! Higher! Too high! TOO HIGH!","playground,toy"},
 	{"swing set","EMCCII","GkS",2,1,4,"1E88E5","FFB300","A-frame with dangling seats","thud","Swings back and hits you.","structure,building,silly"},
-	{"swinging axe","BKDLsI","kfV",6,4,6,"8A929B","5A3A1E","crescent blade swinging on pole","snap","Tick. Tock. Duck.","trap,defense"},
-	{"swinging log","BMDLII","kO",6,3,6,"8B5A2B","B89B6A","log hung on ropes swinging down","snap","Watch out for the— oof.","trap,defense"},
 }

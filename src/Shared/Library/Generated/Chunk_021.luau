@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rain","GBCEOJ","SN",2,4,2,"5D8AA8","C9E6F5","grey cloud with steady falling drops","patter","Forecast says: you, wet.","storm,aquatic"},
+	{"rain boots","BBBONI","G",1,5,3,"F1C40F","F1C40F","shiny tall rubber boots","swish","Splash with impunity.","clothing"},
 	{"rain dance","KBCEOJ","FN",3,4,2,"4FC3F7","B3E5FC","caster dancing as clouds gather and rain","music","Dance. Rain. Repeat.","music,aquatic"},
 	{"rain frog","AMAJAG","Ue",1,5,1,"C8A87A","E8D8B8","round angry frog with tiny legs","croak","Squeaks like an angry toy.","amphibian,wetland,silly,meme"},
 	{"rain shower","GBBEOJ","FN",2,4,2,"7FA7C3","DCEDF7","light quick rain from small cloud","patter","Free bath. You are welcome.","aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"rowboat","DBBKHC","DkgB",2,4,3,"8D6E63","F2E6C9","small wooden boat, two oars","splash","Row, row, row your boat... into them.","vehicle,aquatic,silly"},
 	{"royal archer","LFCJNA","Te",5,6,4,"7C3AED","FACC15","royal tabard, golden longbow","twang","Never misses. By royal decree.","royal,archer"},
 	{"royal baby","LHAJNA","dcO",1,2,2,"FDE68A","F9A8D4","baby in tiny crown","giggle","Small crown. Big tantrum.","royal,cute"},
-	{"royal barge","DBDKHC","DkgB",4,3,6,"FFD54F","B71C1C","gilded barge with a canopy throne","splash","Arrives in style. Sinks in style.","vehicle,aquatic,royal"},
-	{"royal carriage","DMDKHL","Dkg",4,5,6,"FFD54F","B71C1C","gilded coach with crowns and plumes","clatter","Make way for royalty!","vehicle,ancient,royal"},
 }

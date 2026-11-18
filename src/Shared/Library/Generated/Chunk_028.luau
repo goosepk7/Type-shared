@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"verdant bastion","NGDCaI","GWkl",6,5,4,"966E4A","60AA46","a row of gnarled trees bursts up as a woven wall","creak","Plant a seal. Grow a fortress. Water occasionally.","anime,ninja,wood,wall"},
+	{"vermilion bird","AADJDB","KAFe",7,8,5,"DC2626","FB923C","crimson pheasant, flame tail ribbons","screech","Guardian of the south and of spicy weather.","mythical,bird,fire,ancient"},
 	{"vermin","AJBJLA","CPbh",2,7,2,"6B6257","B8AC9C","scurrying pack of scruffy grey nibblers","skitter","If you see one, there are forty.","swarm,wild"},
 	{"vest","BMBONI","G",1,6,2,"1F2F55","D4A72C","buttoned waistcoat","swish","Dapper and ready.","clothing"},
 	{"veteran","LMCJNA","Ge",5,4,6,"4D7C0F","CA8A04","medals, eyepatch, grizzled beard","ding","Seen it all. Not impressed.","military"},
@@ -401,6 +403,4 @@ return {
 	{"wind-up toy robot","OKAJNA","UDd",1,5,3,"DC2626","94A3B8","tin robot with a big wind-up key","tick","Walks into walls. Turns. Walks into walls.","robot,silly,cute"},
 	{"windbreaker","BFBIyE","GIa",2,5,4,"22C55E","A855F7","swishy neon jacket puffed up by the wind","swish","Swish swish swish. Stealth: zero.","clothing"},
 	{"windmill","EFDMIK","GkSI",4,1,7,"F5E6CA","8D6E63","tower with four giant turning sails","creak","The sails spin. Enemies get swatted.","structure,building"},
-	{"windmill arms","KMBN5K","jkf",2,7,1,"FFCC80","FFFFFF","windmilling arms with motion blur","whap","Arms everywhere. Some hit.","silly"},
-	{"window","BMCCnI","Ga",1,1,2,"BFE6F2","8B5A2B","framed glass window","thud","See-through, shatter-prone.","household"},
 }

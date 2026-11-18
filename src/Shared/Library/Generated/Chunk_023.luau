@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow bomb","FICGKI","iEZ",6,6,1,"1A0033","AA00FF","black orb bursting into blinding dark","whum","Explodes into nothing. Scary nothing.","spooky,explosive"},
+	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
 	{"shadow breath","FICFOB","iZ",5,6,1,"1A0033","7C4DFF","cone of black smoke","hiss","Exhale the night.","spooky"},
 	{"shadow cat","AIBJAA","jZY",2,9,2,"0F0F23","A78BFA","black cat with starry inside","meow","Stares at empty corners. Knows things.","spooky,cute"},
 	{"shadow chains","FICLII","HO",5,5,4,"1A0033","7C4DFF","smoky black chains wrapping target","clank","Bound by darkness. Very dramatic.","spooky"},
@@ -401,6 +403,4 @@ return {
 	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 	{"snail mobile","DMBKHL","GgN",2,1,6,"FFB300","8D6E63","car under a big spiral shell","engine","The slowest ride ever. Very safe.","vehicle,silly"},
 	{"snake","AMCJCD","fMN",4,6,3,"4A7A3A","C8B860","long coiled body, forked tongue","hiss","Hugs without arms. Hisses hello.","reptile,venomous"},
-	{"snake charmer","LJCJNI","cOh",3,4,3,"F59E0B","15803D","flute and basket with a dancing snake","flute","Plays a tune. Snakes appear.","music"},
-	{"snake in a can","CMALJK","jO",1,1,2,"2E8B57","C0392B","can with springing fabric snakes","boing","BOING! Ahhh!","prank,silly"},
 }

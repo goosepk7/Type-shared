@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
+	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
 	{"pocket size","OLBONI","WkX",5,9,3,"E04A3A","2B2D33","shrink tiny, then burst back to size with a punch","pop","Tiny hero. Big punch.","hero,movie,scifi"},
 	{"pocket watch","BLAOKI","N",2,5,3,"D4A72C","F3E6C8","hinged gold watch on chain","chime","Tick. Tock. Mesmerising.","time"},
 	{"podcaster","LMCJNI","jd",3,4,3,"7C3AED","F8FAFC","big microphone, headphones","ding","Talks for three hours. Enemies fall asleep.","meme"},
@@ -401,6 +403,4 @@ return {
 	{"railgun","CDDBwI","DTe",8,10,4,"7FD8FF","3A3F48","twin rails glowing, then one straight blue-white line","zap","Magnets, but angry.","scifi,ranged"},
 	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
 	{"railway bridge","EMECII","GSh",3,1,9,"6D4C41","9E9E9E","timber trestle carrying train tracks","thud","A train is coming. On top of you.","structure"},
-	{"rain","GBCEOJ","SN",2,4,2,"5D8AA8","C9E6F5","grey cloud with steady falling drops","patter","Forecast says: you, wet.","storm,aquatic"},
-	{"rain boots","BBBONI","G",1,5,3,"F1C40F","F1C40F","shiny tall rubber boots","swish","Splash with impunity.","clothing"},
 }

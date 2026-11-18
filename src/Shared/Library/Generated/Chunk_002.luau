@@ -403,5 +403,4 @@ return {
 	{"beef jerky","IMBAKK","Fce",3,5,3,"7A2E1E","A84A2A","dried twisted meat strip","thud","Chewy enough to last a whole quest.","edible,savory"},
 	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
 	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
-	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
 }

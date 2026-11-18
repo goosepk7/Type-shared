@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nibble","KMAAKB","if",1,8,1,"FFCC80","FFFFFF","tiny chomp marks","nom","Nom. Tiny but rude.","silly"},
 	{"nidhogg","AIEJCH","Cif",8,4,8,"292524","65A30D","black serpent dragon gnawing roots","roar","Chews on the roots of the world.","mythical,reptile,norse"},
 	{"niece","LMBJNA","jde",2,7,3,"F472B6","F2D0B4","small girl covered in glitter with a marker pen","giggle","Drew on the walls. Calls it a gift.","family,cute"},
 	{"nigella","NGBNMI","jdFS",1,1,1,"64B5F6","7CB342","blue flower in a cage of fronds","rustle","Love in a mist. Confusing in a fight.","plant,flower"},
@@ -402,5 +403,4 @@ return {
 	{"partisan","CKDAuI","fT",5,5,5,"8A929B","8B5A2B","broad spearhead with side wings","whoosh","A spear with very wide shoulders.","medieval,sharp"},
 	{"partner","LMCJNA","GQFf",4,6,5,"F59E0B","78350F","buddy standing back to back with you, finger guns","yeehaw","Howdy, pardner. Dibs on the left ones.","support"},
 	{"partridge","AMBJDA","df",2,4,2,"8A7A6A","C8703A","round plump game bird","cluck","Sits in pear trees. Allegedly.","bird,farm,holiday"},
-	{"party","KMCNOI","jdc",2,5,2,"FF4081","FFEB3B","confetti, streamers and disco lights","music","Nobody fights at a party.","silly"},
 }

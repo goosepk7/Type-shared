@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"party","KMCNOI","jdc",2,5,2,"FF4081","FFEB3B","confetti, streamers and disco lights","music","Nobody fights at a party.","silly"},
 	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
 	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
 	{"party bus","DMDKHL","Ddkcg",4,5,7,"7E57C2","FF4081","bus with flashing lights and music","music","Nobody can resist the party.","mechanical,vehicle,land,silly"},
@@ -402,6 +403,4 @@ return {
 	{"pocket dragon","AAAJAB","KAQ",2,8,1,"DC2626","FACC15","palm-sized dragon on your shoulder","chirp","Lights your candles. And your sleeves.","cute,reptile"},
 	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
 	{"pocket knife","CKAHrK","fT",2,8,2,"C0392B","C9CED4","folding blade, red handle","shing","Has a blade, a saw, and a tiny toothpick.","medieval,sharp"},
-	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
-	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
 }

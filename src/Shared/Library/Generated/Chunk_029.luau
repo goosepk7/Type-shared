@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"windmill arms","KMBN5K","jkf",2,7,1,"FFCC80","FFFFFF","windmilling arms with motion blur","whap","Arms everywhere. Some hit.","silly"},
+	{"window","BMCCnI","Ga",1,1,2,"BFE6F2","8B5A2B","framed glass window","thud","See-through, shatter-prone.","household"},
 	{"window box","NGBOMI","FS",1,1,3,"D84315","F06292","wooden box spilling with flowers","rustle","Defends windows. Prettily.","plant,houseplant"},
 	{"window washer","LBCJNA","IN",3,4,3,"0EA5E9","F8FAFC","squeegee, bucket, harness","squeak","Squeaky clean. Squeaky slippery.","silly"},
 	{"windpump","EFDMIK","GSI",3,1,6,"B0BEC5","E53935","metal tower with a spinning fan wheel","creak","Pumps water. Spins menacingly.","structure,farm"},

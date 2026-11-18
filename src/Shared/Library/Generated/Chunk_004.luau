@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bramble","NGCLMI","WSTHN",3,1,4,"4E342E","7CB342","tangle of thorny arching canes","rustle","Prickly, sticky, grabby.","plant,sharp"},
 	{"bramble elemental","AGDJMA","THN",6,3,6,"365314","DC2626","tangle of thorny bramble shaped like a beast","rustle","Hugs hurt. A lot.","elemental,plant"},
 	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},
 	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
@@ -402,5 +403,4 @@ return {
 	{"cargo plane","DFFKHB","DAklgh",6,6,8,"607D8B","37474F","fat body, high wings, rear ramp","jet","Drops crates. Some of them land on you.","vehicle,air"},
 	{"cargo ship","DBFKHC","GDkgB",7,2,10,"C62828","1E88E5","long hull stacked with coloured crates","horn","Delivers twenty thousand crates of pain.","vehicle,aquatic"},
 	{"caribbean","MBFNII","FSh",4,1,8,"26C6DA","F4E4BC","clear turquoise water and palm islands","rumble","Pirates welcome. Obviously.","place,geography,pirate"},
-	{"carnation","NGBNMI","dFS",2,1,2,"F48FB1","43A047","frilly ruffled bloom","rustle","Fancy frills for fancy fights.","plant,flower"},
 }

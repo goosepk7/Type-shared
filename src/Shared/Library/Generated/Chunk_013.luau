@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hollyhock","NGCNMI","dFS",2,1,2,"E91E63","F8BBD0","tall spire of big papery blooms","rustle","Taller than you. Prettier too.","plant,flower"},
 	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
 	{"hologram wall","EHDCnI","GS",4,2,7,"64DCFF","3C4250","a flickering blue scanline wall between two projector pylons","hum","You can walk through it. Your bullets can't.","scifi"},
 	{"holster","BMBO2E","DeO",3,9,3,"7C4A1E","D4AF37","leather hip holster, hand hovering, tumbleweed","click","Draw! No, not with crayons.","western"},
@@ -402,5 +403,4 @@ return {
 	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
 	{"jack","OKBLJK","l",2,3,7,"C0392B","8A929B","scissor lift jack","clank","Lifts cars. Lifts enemies.","tool"},
 	{"jack frost","LCCJNB","AJN",5,8,3,"BAE6FD","F8FAFC","icy-haired sprite with frost staff","crack","Nips your nose. Freezes your window.","frozen,holiday"},
-	{"jack in box","BMBG2I","Uk",3,4,3,"3B6FD8","FFD93B","a toy crank box that pops out a star-headed spring","boing","Round and round it goes. Then it doesn't.","cartoon,silly,toy"},
 }
