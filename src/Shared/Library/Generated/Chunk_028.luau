@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wall run","KFBOKB","D",2,9,2,"B3E5FC","FFFFFF","caster sprinting sideways along a wall","tap","Gravity is a suggestion.","sport,speed"},
+	{"wall turret","EECMII","GSe",4,1,8,"9E9E9E","5D5D5D","small round tower jutting from a wall","thud","Watches the corner. Shoots the corner.","tower,ancient"},
 	{"wallaby","AMCJAG","Ukf",3,6,2,"8A7666","D8C4B0","small kangaroo, chunky tail","chirp","Kangaroo in fun size.","mammal,marsupial"},
 	{"wallet","BMALKK","c",1,5,2,"6B4226","7A4E2D","folded leather wallet","thud","Money talks. Enemies listen.","household"},
 	{"walleye","ABCJEC","DfB",4,7,4,"B8A04A","E8E0C0","golden fish with glassy eyes","splash","Eyes reflect light like a cat.","fish,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"yakisoba","IMBLGI","HN",2,3,3,"8A4A1E","7DBE3A","stir-fried noodles, sauce","gloop","Fried noodles from the festival stall.","edible,sticky"},
 	{"yakitori","IABHJI","KfT",3,5,4,"C8602B","6B3A1E","grilled skewers of chicken","bonk","Grilled chicken on tiny swords.","edible,silly"},
 	{"yali","AEDJAA","GDf",6,7,6,"78716C","F59E0B","lion body, elephant trunk, horse legs","roar","Guarding temples since forever.","mythical,guardian"},
-	{"yam fries","IMAELB","eVP",2,7,1,"E8762B","F2A65A","orange sticks","pitter","Fries, but orange.","edible"},
-	{"yamata no orochi","ABFJCD","kfMV",9,4,9,"7F1D1D","15803D","eight-headed eight-tailed giant serpent","roar","Eight heads. Eight bad moods.","yokai,reptile,boss,danger"},
 }

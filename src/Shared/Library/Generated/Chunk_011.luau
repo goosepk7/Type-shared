@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant gummy bear","IMEJBA","Udkf",7,2,7,"E0102B","F2A62B","towering translucent bear","thud","Wobbles menacingly. Very sweet.","edible,giant,silly,candy"},
+	{"giant hamster ball","DMCKHF","UDkg",2,7,4,"81D4FA","FFFFFF","giant clear ball with a rider inside","boing","Roll in. Bowl everyone over.","mechanical,vehicle,land,silly"},
 	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
 	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},
 	{"giant ice cream sundae","ICEJIF","JkcN",7,2,7,"F7E7CE","B0101E","mountain of scoops and sauce","thud","An avalanche of dessert.","edible,giant,silly"},
@@ -401,6 +403,4 @@ return {
 	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
 	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
 	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
-	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
-	{"growth potion","BLAO2I","W",3,5,1,"E67E22","BFE6F2","big bottle labelled EAT ME","bubble","Embiggen yourself.","magic,fantasy"},
 }

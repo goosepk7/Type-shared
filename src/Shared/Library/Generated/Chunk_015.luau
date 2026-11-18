@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"leaf shield","FGCIKK","GF",2,4,4,"43A047","AED581","whirling leaves forming a dome","rustle","Nature has your back.","plant,defence"},
+	{"leaf storm","FGDN5K","jlT",6,6,2,"7CB342","FFB300","whirlwind of sharp green and gold leaves","rustle","Autumn, but violent.","plant,storm"},
 	{"leafcutter ant","AMAJLA","CdlfP",1,5,1,"B85A2A","6AC84A","ants carrying leaf pieces","skitter","Farmers with leaf umbrellas.","insect,swarm"},
 	{"leafcutter bee","AJAJLB","ATP",2,7,1,"3A3A3A","C8A07A","bee cutting leaf circles","buzz","Cuts perfect leaf circles.","insect,swarm,venomous"},
 	{"leafhopper","AMAJFG","UdAP",1,6,1,"6AC84A","E8301E","tiny wedge-shaped hopper","buzz","Pops off leaves like popcorn.","insect"},
@@ -299,6 +301,7 @@ return {
 	{"lubber grasshopper","AMAJFA","dMP",1,6,1,"F2D82A","1E1E1E","big chunky colorful grasshopper","buzz","Too chunky to fly. Hisses.","insect"},
 	{"luck","KHBOKJ","Fa",2,6,3,"43A047","FFD54F","floating four-leaf clovers and gold sparkles","ding","Things just go your way. Weirdly.","luck"},
 	{"lucky bamboo","NGAOMI","F",1,1,3,"7CB342","C5E1A5","twisty bamboo stalks in a vase","rustle","Brings luck. Probably.","plant,lucky"},
+	{"lucky block","BLBO2J","Dh",4,6,4,"FFC93C","8A5CF6","glowing rune block spins and pops a random spell","rattle","Could be anything. Will be something.","game,platformer,luck,random"},
 	{"lucky coin","BHAOKJ","Fc",2,6,3,"D4A72C","B8693D","worn shiny coin","boing","Heads: you win. Tails: you also win.","treasure,shiny"},
 	{"lucky seven","KHCOKJ","Da",4,7,3,"FFD54F","D32F2F","three glowing sevens spinning","jingle","Jackpot energy.","luck"},
 	{"lucky streak","KHCOKJ","Da",3,7,3,"43A047","FFD54F","trail of clovers behind caster","ding","Can't stop winning.","luck"},
@@ -400,7 +403,4 @@ return {
 	{"magnet robot","OKCJNA","lHL",4,4,6,"DC2626","94A3B8","robot with giant horseshoe magnet hands","hum","Your armor belongs to it now.","robot,magnetic"},
 	{"magnet turret","OKDMmI","lHN",5,4,7,"C0392B","C9CED4","giant horseshoe magnet on a post","clank","Yoinks metal foes right off their feet.","magnetic,defense"},
 	{"magnetar","MDDGKJ","lHLO",9,6,9,"651FFF","FF4081","star wrapped in twisted glowing field lines","rumble","The fridge magnet of the gods.","space,magnetic"},
-	{"magnetic letters","BKAAKI","He",1,6,1,"C0392B","2F6FD1","colourful plastic letters","squeak","Spells B-O-N-K.","toy"},
-	{"magnetic pulse","FKCFOB","HO",5,8,1,"D32F2F","1976D2","red-blue ring tugging metal inward","whum","All your stuff flies toward me.","magnetic"},
-	{"magnetic storm","FKEN5K","lHLP",7,5,4,"C62828","1565C0","swirling metal debris in red-blue field","hum","All your metal flies away.","magnetic,storm"},
 }

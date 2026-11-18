@@ -270,7 +270,7 @@ return {
 	{"barred owl","AMBJDB","AZT",3,7,2,"8A6A4A","F2E8D8","dark eyes, striped chest","hoot","Asks who cooks for you? Every night.","bird,nocturnal,predator"},
 	{"barrel","BMCAKF","Dke",3,5,5,"8B5A2B","5B6168","banded wooden barrel","thud","Roll out the barrel! At them.","container"},
 	{"barrel cactus","NEBLMI","GUST",3,1,7,"7CB342","FFB300","round ribbed ball with long hooks","thud","A spiky beach ball. Do not kick.","plant,desert,sharp"},
-	{"barrel roll","KFBOKK","aY",2,9,2,"B3E5FC","FFFFFF","spiralling roll dodge","whoosh","Do a barrel roll! Dodged.","meme,speed"},
+	{"barrel roll","KFBOKK","aY",2,10,2,"B3E5FC","FFFFFF","spiralling corkscrew roll that bats shots away","whoosh","Do a barrel roll! Dodged.","game,meme,speed,dodge"},
 	{"barreleye","ABAJEC","dZB",1,6,1,"3A3A44","8AE8E0","transparent head with tube eyes","splash","Clear head. You can see its brain.","fish,aquatic,deepsea"},
 	{"barricade","EECCII","GS",3,1,6,"8D6E63","FBC02D","piled crates, planks and a striped barrier","thud","Built from anything not nailed down.","structure,defense"},
 	{"barrier","KLDCnI","G",2,3,8,"80CBC4","E0F2F1","glowing translucent wall panel","hum","Nobody gets through. Nobody.","magic,defence"},

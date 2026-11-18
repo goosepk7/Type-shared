@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rebirth","KADOKJ","WF",3,5,5,"FF6D00","FFD54F","phoenix-like flame wings rising","whoosh","From the ashes, I rise.","fire,holy"},
+	{"receipt","BMBLCD","WHN",2,5,2,"FFFFFF","6B7280","absurdly long curling paper strip that keeps printing","whirr","Three miles long. For one pack of gum.","silly,meme"},
 	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
 	{"recipe","BLBO2J","WFh",3,3,2,"F5E6CC","DC2626","splattered recipe card with floating measuring spoons","rustle","Step one: preheat the battlefield.","kitchen,magic"},
 	{"recon drone","OFBOhE","AQe",3,7,5,"3A4148","FF3A3A","a quadcopter circles overhead pinging enemies red","buzz","UAV online. Everyone you can't see just got very visible.","gaming,robot,mechanical"},
@@ -401,6 +403,4 @@ return {
 	{"sailor","LBCJNA","fHB",4,6,5,"F8FAFC","1E3A8A","white cap, striped shirt, anchor tattoo","splash","Knows 200 knots. Ties you in one.","aquatic"},
 	{"saint bernard","ACDJAA","QFf",5,7,4,"B05A2A","F7F2EA","massive fluffy rescue dog, barrel on collar","bark","Rescues you with a tiny snack barrel.","mammal,pet"},
 	{"saki","AMBJBA","deb",2,7,2,"3A3A3A","F2E8D8","fluffy monkey with white face","chatter","Wears a white face mask.","mammal,primate"},
-	{"sakura tempest","KGDN5K","SRP",7,8,3,"FFB7D0","FFF0F5","a whirlwind of pink petal blades around you","whoosh","Pretty. Pointy. Mostly pointy.","anime,flowers,sword"},
-	{"salad","IGBOKI","WF",2,5,3,"7DBE3A","D72B2B","bowl of leaves, tomatoes, croutons","crunch","A bowl of good decisions.","edible,healthy,vegetable"},
 }

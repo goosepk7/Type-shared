@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sakura tempest","KGDN5K","SRP",7,8,3,"FFB7D0","FFF0F5","a whirlwind of pink petal blades around you","whoosh","Pretty. Pointy. Mostly pointy.","anime,flowers,sword"},
+	{"salad","IGBOKI","WF",2,5,3,"7DBE3A","D72B2B","bowl of leaves, tomatoes, croutons","crunch","A bowl of good decisions.","edible,healthy,vegetable"},
 	{"salad bowl","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","wooden bowl of greens","crunch","A whole garden in a bowl.","edible,healthy"},
 	{"salad dressing","IMBLGI","kSO",2,3,2,"E8C04A","7DBE3A","cruet bottle of dressing","squeak","Makes the salad worth eating.","edible,slippery,silly,sauce"},
 	{"salak","IGBAKF","Fke",3,6,2,"6B3A1E","F5F2E5","scaly brown teardrop","splat","Fruit wearing snakeskin. Fancy.","edible,fruit,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"sheriff badge","BMAONI","h",2,5,4,"D4A72C","C9CED4","five-point star badge","swish","This town ain't big enough.","clothing,cowboy"},
 	{"sheriff robot","OKCJNA","Ge",5,5,7,"94A3B8","FACC15","robot with cowboy hat and star badge","clank","This town ain't big enough for two robots.","robot,western"},
 	{"shetland pony","AMCKAA","Dkg",3,5,5,"6A4A2E","2A1A12","tiny shaggy pony","neigh","Small pony. Very stubborn.","mammal"},
-	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
-	{"shiba inu","AMBJAA","DQf",4,7,4,"D98A3A","FFF2E0","fox-like, curled tail, smug face","bark","Much wow. Very shiba.","mammal,pet,meme"},
 }

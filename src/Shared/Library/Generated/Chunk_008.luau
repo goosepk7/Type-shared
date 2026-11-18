@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
+	{"doom","KIEGKI","iEO",8,4,4,"1A0033","FF1744","ominous black-red orb descending slowly","boom","You feel a sense of impending doom.","spooky"},
 	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
 	{"doorbell","BMALKI","dc",1,1,3,"B58A3A","F2F2EE","small round push button","ding","Ding dong! Who could it be?","household"},
 	{"doorknob","BKAA3B","UeO",2,7,5,"D4AF37","8A6A14","round brass knob with a keyhole","clink","Opens doors. Closes arguments.","household"},
@@ -401,6 +403,4 @@ return {
 	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
 	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
 	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
-	{"everything bagel","IMBAKK","UeP",3,7,2,"C8904A","3A3A3A","bagel covered in seeds","whoosh","Covered in everything. Literally.","edible"},
-	{"everywhere","KLENLJ","jSPY",6,5,3,"A855F7","22D3EE","hundreds of map pins raining down across the whole map","pitter","It is here. And there. And behind you.","magic"},
 }

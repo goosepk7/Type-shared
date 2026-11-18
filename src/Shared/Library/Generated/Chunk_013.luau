@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hoodoo","MEDCII","GS",3,1,9,"D7826A","F4E4BC","tall thin rock spires with cap stones","rumble","Rock towers balanced on nothing.","place,terrain"},
+	{"hoof","BEBAtB","DkO",4,7,6,"3B2F2F","8D6E63","dark horse hoof with a shiny horseshoe","clack","Clip. Clop. Clobber.","body,farm"},
 	{"hook hand","CKBHrI","fH",3,7,4,"C9CED4","5A3A1E","curved hook on a cuff","bang","Handy, minus the hand.","pirate,sharp"},
 	{"hook sword","CKCHrK","fTH",5,7,4,"8A929B","9E1B32","sword with hooked tip","shing","Hook. Pull. Slash.","fantasy,sharp"},
 	{"hoop snake","AJBJCF","UDM",3,9,2,"65A30D","FBBF24","snake biting tail rolling like a wheel","hiss","Rolls downhill faster than you run.","cryptid,silly"},
@@ -401,6 +403,4 @@ return {
 	{"jersey devil","AACJAB","DjA",5,8,4,"57534E","F97316","horse head, bat wings, hooves, forked tail","screech","Born in a pine barren. Never pays rent.","cryptid,spooky"},
 	{"jerusalem artichoke","IEBAKK","keO",3,7,6,"C8A070","F2E8D0","knobby tan tuber","bonk","Not from Jerusalem. Not an artichoke.","edible,vegetable"},
 	{"jerusalem cricket","AMAJFA","dfP",1,6,1,"E8A04A","3A2A1A","big-headed striped cricket","buzz","Big head. Many nicknames.","insect"},
-	{"jester","LLCJNA","Ujd",3,8,3,"DC2626","FACC15","three-pointed bell hat, diamond suit","jingle","Tells jokes. Dodges tomatoes.","royal,silly"},
-	{"jester hat","BMBONI","jd",1,7,1,"9E1B32","D4A72C","floppy three-point hat with bells","swish","Jingle jingle, confusing.","clothing,silly"},
 }

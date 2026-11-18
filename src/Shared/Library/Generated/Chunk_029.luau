@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"yam fries","IMAELB","eVP",2,7,1,"E8762B","F2A65A","orange sticks","pitter","Fries, but orange.","edible"},
+	{"yamata no orochi","ABFJCD","kfMV",9,4,9,"7F1D1D","15803D","eight-headed eight-tailed giant serpent","roar","Eight heads. Eight bad moods.","yokai,reptile,boss,danger"},
 	{"yari","CKCAuK","fT",5,6,4,"8A929B","24262A","straight-bladed spear","shing","Poke with honour.","sharp,ancient"},
 	{"yarn","BMALJI","cN",1,5,1,"D8CBB5","C0392B","fuzzy ball of wool","splat","Tangled up in a cosy mess.","art"},
 	{"yarrow","NGBNMI","dFS",1,1,2,"FFFFFF","F48FB1","flat clusters of tiny flowers","rustle","Old-time wound healer.","plant,flower"},

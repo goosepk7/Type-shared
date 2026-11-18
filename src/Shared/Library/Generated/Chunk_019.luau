@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pee","FBBNGI","dSN",1,3,1,"F7E36B","FBF3B0","small yellow puddle with a wavy shine and a tiny sign","squirt","Should have gone before we left.","silly,gross"},
+	{"peekaboo","KLAOKI","ZO",1,8,1,"F8BBD0","FFFFFF","caster blinking in and out","boo","Peekaboo! I see you.","cute,silly"},
 	{"peel","BGALGI","kNO",2,1,1,"FDE047","A16207","floppy yellow fruit skin lying in wait","whee","The oldest trap in the book.","trap,silly"},
 	{"peeler","BMAHJK","f",1,7,2,"8A929B","E67E22","little swivel blade on handle","clang","Peels potatoes. And armour.","kitchen,household"},
 	{"peepal tree","NHECMI","GWFkS",4,1,9,"8D6E63","43A047","wide tree with heart-shaped leaves","rustle","Sit beneath it. Get very wise.","plant,tree,holy"},
@@ -401,6 +403,4 @@ return {
 	{"pond scum","NJCLMI","SMNP",2,1,2,"9CCC65","C0CA33","green film covering water","splash","Gross. Slippery. Sticky.","plant,aquatic,silly"},
 	{"pontoon boat","DBCKHC","DkgB",3,4,5,"F5F5F5","9E9E9E","flat deck on twin floating tubes","splash","The party has arrived on the lake.","vehicle,aquatic,silly"},
 	{"pony","AMCKAA","Dkg",3,8,5,"B88A5A","F2E6D4","short round horse, thick mane","neigh","Small horse. Massive ego.","mammal"},
-	{"ponytail","BMBHCK","Ukf",3,8,3,"C68642","FF6FB5","long swishing ponytail with a pink scrunchie","swish","Head turn. Whip crack. Oops, sorry.","body,silly"},
-	{"poodle","AMBJAA","DjQf",3,7,4,"F2EDE6","D8CFC2","pom-pom tufts, curly coat, prancing pose","bark","Fancy haircut. Also secretly very smart.","mammal,pet"},
 }

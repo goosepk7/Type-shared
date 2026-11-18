@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mohinga","IBBOGI","FS",3,4,3,"C8A040","F2E8C8","fish noodle soup","slurp","Burmese breakfast soup.","edible,warm,healthy"},
+	{"moi moi","IGBOKI","F",2,5,3,"E8762B","F2C870","steamed bean pudding","crunch","A steamed bean cake.","edible,healthy"},
+	{"mojave desert","MAFNII","KSN",5,1,9,"E6A04D","8D6E63","dusty desert with joshua trees","rumble","Hot days. Cold nights. Weird trees.","place,geography"},
 	{"mokele-mbembe","ABEJAC","GkB",7,3,8,"57534E","166534","long-necked swamp beast","stomp","A dinosaur that forgot to go extinct.","cryptid,aquatic"},
 	{"molasses","IMBLGI","SNO",2,3,3,"3A1A0C","6B3A1E","thick black-brown sauce","gloop","Slower than molasses. Literally.","edible,sticky,sauce,sweet"},
 	{"mold","NJBLMI","SMNP",3,1,2,"7CB342","C5E1A5","fuzzy green patch spreading out","poof","Spreads on everything. Everything.","plant,fungus,silly"},
@@ -242,7 +245,6 @@ return {
 	{"myconid","AGBJNA","jMP",3,3,4,"DC2626","F5F5F4","walking red-capped mushroom person","puff","Talks in spores. Says hello a lot.","plant,cute"},
 	{"mynah","AMAJDB","jdA",1,7,1,"1E1E1E","F2C82A","black bird, yellow face patch","tweet","Talks more than a parrot.","bird,cute"},
 	{"myrtle","NGCCMI","GWkS",2,1,5,"8D6E63","E91E63","smooth bark, frilly pink flowers","rustle","Frilly. Fierce.","plant,tree"},
-	{"mystery box","BLBL2I","jEFh",4,1,3,"7C3AED","FACC15","purple crate with gold question marks, lid rattling","rattle","Could be legendary. Will be socks.","gaming,luck"},
 	{"mystery meat","IJBDOJ","jM",3,3,2,"8A6A6A","C8A0A0","grey-pink slab, questionable","whiff","Nobody knows. Nobody asks.","edible,smelly,silly"},
 	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
 	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
@@ -401,6 +403,4 @@ return {
 	{"nothosaurus","ABDJEC","DfHB",5,6,7,"5A6A5A","C8C8B0","seal-like early sea reptile","roar","Half seal, half lizard.","extinct,reptile,aquatic,ocean"},
 	{"nothronychus","AMDJBA","DkfT",6,6,7,"8A7A5A","D8C8A8","potbellied scythe-claw dino","roar","Potbelly. Giant claws. Eats salad.","dinosaur,extinct,reptile,predator"},
 	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
-	{"nova","FHDFOI","EkP",6,8,1,"FFFDE7","FF80AB","blinding ring of white light","boom","A mini star explosion. Mini.","space,explosive"},
-	{"nova bomb","FHDGKI","KEk",8,6,1,"FFFDE7","FF80AB","white-pink sphere detonating into a nova ring","boom","A tiny supernova. Pocket edition.","space,explosive"},
 }

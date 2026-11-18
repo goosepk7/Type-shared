@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
+	{"shiba inu","AMBJAA","DQf",4,7,4,"D98A3A","FFF2E0","fox-like, curled tail, smug face","bark","Much wow. Very shiba.","mammal,pet,meme"},
 	{"shield","BKCIyI","Gk",3,5,7,"8A929B","9E1B32","round shield with central boss","clang","Say no with your arm.","armor,defense"},
 	{"shield tower","ELDIII","GSa",3,1,9,"90A4AE","40C4FF","tower projecting a glowing dome","thud","Protects everything around it.","structure,defense,tower"},
 	{"shield wall","EKDCII","GSIa",3,1,8,"B71C1C","D4AF37","overlapping round shields in a row","thud","Shields up. Way up.","structure,defense,ancient"},
@@ -401,6 +403,4 @@ return {
 	{"solar beam","FHDBKI","KTe",7,6,2,"FFD600","FFFDE7","wide charged golden beam from above","hum","Charge up. Aim at sun. Aim at you.","fire,holy"},
 	{"solar farm","EHEMII","GKSe",3,1,5,"1A237E","FFC107","rows of tilted dark glass panels","thud","Soaks up the sun. Zaps it back.","structure,building"},
 	{"solar flare","HAEBKI","KTeO",8,9,2,"FFB300","FFF9C4","giant looping arc of fire leaping off the sun","roar","The sun throwing a tantrum.","space,fire"},
-	{"solar lion","AADJAA","KDf",7,7,5,"F97316","FDE047","lion with a solar flare mane","roar","Mane hotter than the sun. Literally.","cosmic,fire"},
-	{"solar panel","OHCM1I","FS",2,1,5,"1F2F55","C9CED4","tilted grid of dark glass cells","hum","Sunlight in, power out.","mechanical"},
 }

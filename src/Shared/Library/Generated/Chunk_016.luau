@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magnetic letters","BKAAKI","He",1,6,1,"C0392B","2F6FD1","colourful plastic letters","squeak","Spells B-O-N-K.","toy"},
+	{"magnetic pulse","FKCFOB","HO",5,8,1,"D32F2F","1976D2","red-blue ring tugging metal inward","whum","All your stuff flies toward me.","magnetic"},
+	{"magnetic storm","FKEN5K","lHLP",7,5,4,"C62828","1565C0","swirling metal debris in red-blue field","hum","All your metal flies away.","magnetic,storm"},
 	{"magnetism","FKCNOI","lH",5,5,4,"C4302B","3E64D6","red-blue field lines curving outward","hum","Opposites attract. So does armour.","magnetic"},
 	{"magnetize","KKCAKB","lH",4,7,1,"D32F2F","1976D2","red-blue glowing field on target","hum","Everything metal sticks to you now.","magnetic"},
 	{"magnifying glass","BHABJK","Ke",2,6,2,"B58A3A","BFE6F2","round lens with handle","clank","Concentrated sunshine, bug's nemesis.","science,detective"},
@@ -400,7 +403,4 @@ return {
 	{"moderator","LHCJNA","GOY",5,5,6,"DC2626","F8FAFC","badge, giant ban hammer","ding","Ban hammer has been swung.","gaming,meme"},
 	{"mofongo","IGBOKI","F",2,5,3,"D9A04A","8A5A3A","mashed plantain dome","crunch","A mound of garlicky plantain.","edible,healthy"},
 	{"mohawk","BMBHJF","DfT",4,6,4,"39D353","FF2E93","tall spiky green hair fin with pink tips","shing","Hair so sharp it needs a licence.","body,punk,sharp"},
-	{"mohinga","IBBOGI","FS",3,4,3,"C8A040","F2E8C8","fish noodle soup","slurp","Burmese breakfast soup.","edible,warm,healthy"},
-	{"moi moi","IGBOKI","F",2,5,3,"E8762B","F2C870","steamed bean pudding","crunch","A steamed bean cake.","edible,healthy"},
-	{"mojave desert","MAFNII","KSN",5,1,9,"E6A04D","8D6E63","dusty desert with joshua trees","rumble","Hot days. Cold nights. Weird trees.","place,geography"},
 }

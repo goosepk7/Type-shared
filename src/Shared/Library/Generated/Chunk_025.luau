@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"still water","KBCIKI","kaY",6,9,2,"4FA3C7","E6F4FA","calm ring of water that flashes when struck","chime","Go on. Hit me.","anime,sword"},
+	{"stilt house","EMCCII","GS",2,1,5,"A1887F","1E88E5","wooden hut high on tall poles","thud","Floods? Not our problem.","structure,building"},
 	{"stilt walker","LMCJNA","dk",3,4,3,"7C3AED","F472B6","very tall figure on striped stilts","clack","Tallest in the room. Wobbly.","circus,silly"},
 	{"stilts","BMCOzI","D",1,4,3,"8B5A2B","C0392B","tall wooden poles with footrests","pop","Tall. Wobbly. Majestic.","party"},
 	{"sting","KJAAuB","TMO",3,9,1,"F5C518","2B2B2B","sharp yellow-black dart with a red throbbing ring","zing","Tiny jab. Huge fuss.","insect,venomous"},
@@ -401,6 +403,4 @@ return {
 	{"tattoo","BLBOPB","jQS",3,5,3,"1F3A5F","E63946","inky dragon drawing peeling off skin and flying","buzz","Says MOM in a heart. Bites anyway.","art,silly"},
 	{"tatzelwurm","AJBJCD","CfM",3,6,3,"57534E","D97706","cat-headed lizard worm","hiss","A cat-faced lizard that hisses at hikers.","cryptid,reptile"},
 	{"taunt","KMBFOB","dc",1,8,1,"FF5252","FFFFFF","tongue-out face ring","neener","Nyah nyah! Come get me.","silly"},
-	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
-	{"tavern","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
+	{"tavern","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
 	{"tax","KMCONA","iQb",4,5,3,"374151","22C55E","grey suit with a calculator and a sack labelled YOURS","ding","Takes a third. Then a bit more. Then a form.","silly,job"},
 	{"taxi","DMCKHL","Dkg",4,7,5,"F7C600","1A1A1A","yellow sedan, roof sign, checker stripe","engine","Meter is running. So are the enemies.","mechanical,vehicle,land"},
 	{"taxi driver","LMCJNL","Dd",3,8,4,"FACC15","111827","cap, checkered cab, honking","honk","Takes the long way. On purpose.","vehicle,silly"},
@@ -401,6 +403,4 @@ return {
 	{"trapdoor spider","AJBLQA","CZfMN",2,6,2,"3A2A1E","6A5A44","spider under a hinged lid","skitter","Opens its door. Surprise!","arachnid,spooky,venomous"},
 	{"trapeze","BMCLJI","lH",1,4,3,"C0392B","D4A72C","swinging bar on ropes","pop","Swing in. Swoop out.","party"},
 	{"trash","BJCNGI","ScMN",3,1,4,"4B5563","84CC16","heap of black bags, banana peels, fish bones, flies","squelch","One person's trash is still trash.","gross,silly,household"},
-	{"trash can lid","BKBIyI","Gd",1,6,3,"8E9196","4A4D52","dented round metal lid","clang","Clang! Gross, but effective.","silly,defense"},
-	{"trash wall","EJCCII","GSM",2,1,5,"795548","9E9E9E","heap of bins and junk","thud","Smells like a defence.","structure,defense,silly"},
 }
