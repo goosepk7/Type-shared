@@ -145,6 +145,7 @@ return {
 	{"frost nova","FCDFOI","JPO",6,7,2,"81D4FA","FFFFFF","ring of ice spikes bursting outward, frozen ground","crackle","Everybody freeze! Literally.","frozen"},
 	{"frost owl","ACBJDB","AJZ",3,7,2,"F8FAFC","93C5FD","white owl leaving frosty feathers","hoot","Hoots. Everything freezes.","frozen,bird"},
 	{"frost pine","NCDCMI","GJST",4,1,7,"B3E5FC","FFFFFF","pine with glassy ice needles","chime","Ice needles. Very pointy.","plant,magic,mythical,frozen"},
+	{"frost prison","FCCA4I","JO",5,7,3,"BFEFFF","5FB8E8","a thin ice shell snaps shut around the target","crackle","Chill out in here for a second.","hero,movie,frozen"},
 	{"frost ring","FCDNOI","JSO",5,4,3,"B3E5FC","FFFFFF","circle of frost that freezes anything crossing","crackle","Cross the line. Become ice.","frozen"},
 	{"frost rune","FCBLII","JO",5,4,3,"80DEEA","FFFFFF","pale-blue rune that snaps into ice","crackle","Click. Frozen. Oops.","frozen"},
 	{"frost sword","CCCHrK","JfN",7,6,4,"BFE8F5","F2F2EE","blade of glittering ice","shing","Chilling in every sense.","fantasy,frozen"},

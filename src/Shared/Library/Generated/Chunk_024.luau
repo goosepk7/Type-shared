@@ -135,6 +135,7 @@ return {
 	{"speech","KFCF6B","FNO",3,4,1,"1E3A8A","F8FAFC","podium with a microphone and endless cue cards","chatter","And in conclusion. Furthermore. One last thing.","silly"},
 	{"speed","KFBOKB","D",2,10,2,"FFEB3B","FFFFFF","yellow speed lines streaming behind","zoom","Zoom. That's it. That's the spell.","speed"},
 	{"speed aura","KFCNOI","DS",1,9,3,"FFEB3B","FFFFFF","yellow streak ring around allies","zoom","Everyone nearby gets zoomies.","support,speed"},
+	{"speed blitz","KDCHNB","DT",5,10,2,"FFE04A","FF8A3A","three blurring dashes that leave afterimages","whoosh","Did you catch that? No? Exactly.","hero,movie,speed"},
 	{"speed potion","BDAO2I","D",3,7,1,"F1C40F","BFE6F2","fizzy yellow flask","bubble","Zoom zoom zoom.","magic,fantasy"},
 	{"speedboat","DBCKHC","DkIgB",5,9,4,"E53935","F5F5F5","sleek pointed hull, big twin motors","engine","Leaves a wake. And a lot of wet enemies.","vehicle,aquatic"},
 	{"speedrun","KFCOKB","DY",3,10,2,"FFEB3B","00E5FF","clock and speed lines around caster","zoom","Skip the cutscenes. Go go go.","meme,speed"},

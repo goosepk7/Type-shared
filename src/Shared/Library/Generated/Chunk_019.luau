@@ -72,7 +72,7 @@ return {
 	{"pharaoh mummy","AIDJNA","ieNh",7,3,7,"CA8A04","1E3A8A","golden death mask, striped headdress, bandages","groan","Woke up from a 3000-year nap. Still tired.","undead,royal,ancient,spooky"},
 	{"pharmacist","LJCJNA","FM",3,4,4,"F8FAFC","22C55E","lab coat, pill bottles","ding","Here's your potion. Twice daily.","healer"},
 	{"pharmacy","EMCNII","FS",2,1,6,"F5F5F5","43A047","white shopfront with a green cross","ding","Healing supplies in stock.","structure,building,shop"},
-	{"phase shift","KLBOKJ","ZY",3,8,2,"80DEEA","E1BEE7","caster turns translucent and ghostly","warp","Not quite here. Not quite gone.","magic"},
+	{"phase shift","KLBONJ","GZ",3,9,2,"8FE8F0","C9A8F0","turn ghostly for a moment: hits pass right through","warp","Not quite here. Not quite gone.","hero,movie,magic"},
 	{"phase spider","ALCJFA","ZMY",4,7,3,"7C3AED","1F2937","translucent purple spider fading in and out","skitter","Now you see it. Now it's on you.","insect,magic"},
 	{"pheasant","AMBJDA","dAf",2,4,2,"B8541E","1E5A3A","long tail, coppery body, green head","cluck","Very fancy. Very bad at flying.","bird,farm"},
 	{"philippine eagle","AMDJDB","DAfT",6,9,3,"6A4A2E","F2EEE6","shaggy crest, huge blue-grey beak","screech","Wears a lion mane on its head.","bird,predator"},

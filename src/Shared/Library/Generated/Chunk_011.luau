@@ -84,6 +84,7 @@ return {
 	{"gladiator helmet","BKBONI","GD",2,5,6,"A86F32","D4A72C","grilled visor helm with crest","clank","Are you not entertained?","armor,ancient"},
 	{"gladiolus","NGCNMI","dFST",3,1,2,"F44336","2E7D32","tall sword-like spike of blooms","rustle","Named after swords. Acts like it.","plant,flower"},
 	{"glaive","CKDHuK","kfT",6,5,5,"8A929B","5A3A1E","blade on long pole","shing","A sword on a stick. Reach for days.","medieval,sharp"},
+	{"glare sweep","KACBNB","KT",5,9,3,"FF5A3A","FFC24A","twin heat beams from the eyes, swept by turning","laser","Look at me when I'm scorching you.","hero,movie,fire"},
 	{"glass","BCCCnI","GETa",4,1,2,"CFEFFF","FFFFFF","clear shiny pane with glints, cracks spreading","crash","You walked into it. Everyone does.","household,sharp,fragile"},
 	{"glass bottom boat","DBCKHC","DkgB",3,4,5,"F5F5F5","26C6DA","boat with a big window in the floor","splash","Look down. Fish look up.","vehicle,aquatic,silly"},
 	{"glass frog","AMAJAG","UZe",1,5,1,"B8F0A8","E8F8E8","translucent green frog","croak","You can see its heart beating.","amphibian,wetland"},

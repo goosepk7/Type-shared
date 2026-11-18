@@ -203,7 +203,6 @@ return {
 	{"ice pick","BCAAuK","fT",2,8,2,"C9CED4","8B5A2B","thin spike with handle","clang","Chips ice. Chips armour.","kitchen,household"},
 	{"ice pillar","FCCLII","GJl",5,5,6,"81D4FA","FFFFFF","tall ice column bursting up","crack","Frozen elevator. Going up.","frozen"},
 	{"ice plant","NCALMI","GST",1,1,3,"E91E63","9CCC65","sparkly succulent with bright daisies","thud","Glistens like it is frozen. Is not.","plant,desert"},
-	{"ice prison","FCCLII","GJO",6,4,6,"81D4FA","E1F5FE","thick ice block encasing the target","crackle","Chill out in here for a while.","frozen"},
 	{"ice punch","KCCAKB","Jkf",5,8,3,"81D4FA","FFFFFF","frosted crystal fist punch","pow","Cold-blooded knuckles.","frozen,melee"},
 	{"ice resurfacer","DCCKHL","JkgN",3,3,6,"F5F5F5","2E86DE","squat boxy machine, leaves glossy ice trail","engine","Makes the floor too slippery to fight on.","mechanical,vehicle,land,silly"},
 	{"ice scraper","JCAHJK","Jf",1,7,2,"2F6FD1","24262A","small scraper with brush","thud","Scrape scrape. Visibility: restored.","winter"},
