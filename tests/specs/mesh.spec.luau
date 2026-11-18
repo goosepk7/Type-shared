@@ -153,7 +153,7 @@ return function(t)
 
 	t.test("Spectral keeps a solid silhouette (dragon body, neck, limbs, wings)", function()
 		for seed = 1, 4 do
-			local bp = Summon.blueprint(sig("dragon"), { style = "Spectral", seed = seed })
+			local bp = Summon.blueprint(sig("dragon"), { style = "Spectral", seed = seed, heroes = false })
 			local solid, masses, membranes = 0, 0, 0
 			for _, p in bp.parts do
 				if p.role == "body" or p.role == "head" or p.role == "torso" then
@@ -223,6 +223,8 @@ return function(t)
 	end)
 
 	t.test("hero sculpts: dragon and shark are cut along the rig and fall back as a whole", function()
+		-- this test covers the procedural sculpts; hero packs are checked by hero.spec
+		local Summon = setmetatable({ blueprint = function(b, o) o = table.clone(o or {}); if o.heroes == nil then o.heroes = false end; return Summon.blueprint(b, o) end }, { __index = Summon })
 		local function leads(bp: any, prefix: string): (number, { [string]: boolean })
 			local n, bones = 0, {}
 			for _, p in bp.parts do
@@ -250,7 +252,7 @@ return function(t)
 					end
 				end
 				t.ok(tris < 30000, "dragon triangle total " .. tris)
-				local sb = Summon.blueprint(sig("shark"), { style = style, seed = seed })
+				local sb = Summon.blueprint(sig("shark"), { style = style, seed = seed, heroes = false })
 				local ns = leads(sb, "s_shark_")
 				t.ok(ns == 4 or (style == "Spectral" and ns == 5), style .. " shark hero pieces (Spectral adds the aura shell), got " .. ns)
 			end
@@ -269,7 +271,7 @@ return function(t)
 			for _, style in { "Solid", "Spectral" } do
 				local r = sig("dragon")
 				r.material = mat
-				local bp = Summon.blueprint(r, { style = style, seed = 1 })
+				local bp = Summon.blueprint(r, { style = style, seed = 1, heroes = false })
 				for _, id in { "s_dragon_body", "s_dragon_neck", "s_dragon_head", "s_dragon_horns", "s_dragon_shin_f", "s_dragon_shin_h_l", "s_dragon_tail1", "s_wing_bat" } do
 					t.ok(has(bp, id), mat .. " dragon (" .. style .. ") keeps " .. id)
 				end
@@ -279,19 +281,19 @@ return function(t)
 				end
 				local g = sig("shark")
 				g.material = mat
-				local gb = Summon.blueprint(g, { style = style, seed = 1 })
+				local gb = Summon.blueprint(g, { style = style, seed = 1, heroes = false })
 				t.ok(leads(gb, "s_shark_") >= 4, mat .. " shark (" .. style .. ") keeps the sculpt")
 				t.eq(#Summon.check(gb), 0, mat .. " shark z-fighting")
 			end
 		end
 		-- small and medium dragons: the compact set on the low-detail layout, never the generic blocks
 		for _, style in { "Solid", "Spectral" } do
-			local small = Summon.blueprint(sig("dragon", "Small"), { style = style, seed = 1 })
+			local small = Summon.blueprint(sig("dragon", "Small"), { style = style, seed = 1, heroes = false })
 			for _, id in { "s_dragon_c_body", "s_dragon_c_leg_f", "s_dragon_c_leg_h_l", "s_dragon_head", "s_dragon_c_horns", "s_dragon_c_tail", "s_wing_bat", "s_wing_bat_l" } do
 				t.ok(has(small, id), "small dragon (" .. style .. ") has " .. id)
 			end
 			t.eq(#Summon.check(small), 0, "small dragon z-fighting")
-			local medium = Summon.blueprint(sig("dragon", "Medium"), { style = style, seed = 1 })
+			local medium = Summon.blueprint(sig("dragon", "Medium"), { style = style, seed = 1, heroes = false })
 			local pupils = 0
 			for _, p in medium.parts do
 				if p.role == "pupil" then
@@ -303,11 +305,11 @@ return function(t)
 		end
 		local tiny = sig("dragon", "Small")
 		tiny.material = "spaghetti"
-		local tb = Summon.blueprint(tiny, { style = "Solid", seed = 1 })
+		local tb = Summon.blueprint(tiny, { style = "Solid", seed = 1, heroes = false })
 		t.ok(has(tb, "s_dragon_c_body") and (has(tb, "s_dragon_c_legs_f") or has(tb, "s_dragon_c_leg_f")), "small spaghetti dragon keeps the compact sculpt")
 		-- t rex (signature) and wolf (canine archetype of the Quadruped plan)
 		for _, style in { "Solid", "Spectral" } do
-			local rex = Summon.blueprint(sig("t rex"), { style = style, seed = 1 })
+			local rex = Summon.blueprint(sig("t rex"), { style = style, seed = 1, heroes = false })
 			for _, id in { "s_trex_body", "s_trex_neck", "s_trex_head", "s_trex_jaw", "s_trex_thigh", "s_trex_shin_l", "s_trex_arm", "s_trex_tail1", "s_trex_tail3" } do
 				t.ok(has(rex, id), "t rex (" .. style .. ") has " .. id)
 			end
@@ -319,7 +321,7 @@ return function(t)
 			local wolf
 			for v, var in F.Variants.Quadruped do
 				if var[1] == "wolf" then
-					wolf = Summon.blueprint(F.synthetic(Schema, "Quadruped", "Large", v), { style = style, seed = 1 })
+					wolf = Summon.blueprint(F.synthetic(Schema, "Quadruped", "Large", v), { style = style, seed = 1, heroes = false })
 				end
 			end
 			t.ok(wolf ~= nil, "wolf fixture")
@@ -330,7 +332,7 @@ return function(t)
 		end
 		-- knight: full harness, nothing of the budget wasted on hidden primitives
 		for _, style in { "Solid", "Spectral" } do
-			local kn = Summon.blueprint(sig("knight"), { style = style, seed = 1 })
+			local kn = Summon.blueprint(sig("knight"), { style = style, seed = 1, heroes = false })
 			for _, id in { "s_knight_cuirass", "s_knight_fauld", "s_knight_cuisse", "s_knight_greave_l", "s_knight_rerebrace", "s_knight_gauntlet_l", "s_knight_pauldron",
 				"s_knight_pauldron_l", "s_knight_helm", "s_knight_plume", "s_sword", "s_knight_shield", "s_cape", "s_knight_cross" } do
 				t.ok(has(kn, id), "knight (" .. style .. ") has " .. id)
@@ -346,7 +348,7 @@ return function(t)
 		end
 		-- wizard: robe, hat and staff are single sculpts
 		for _, style in { "Solid", "Spectral" } do
-			local wz = Summon.blueprint(sig("wizard"), { style = style, seed = 1 })
+			local wz = Summon.blueprint(sig("wizard"), { style = style, seed = 1, heroes = false })
 			for _, id in { "s_wizard_robe", "s_wizard_top", "s_wizard_sleeve", "s_wizard_cuff_l", "s_wizard_hat", "s_wizard_beard", "s_wizard_staff", "s_cape" } do
 				t.ok(has(wz, id), "wizard (" .. style .. ") has " .. id)
 			end
@@ -366,7 +368,7 @@ return function(t)
 		}
 		for word, ids in sculpted do
 			for _, style in { "Solid", "Spectral" } do
-				local bp = Summon.blueprint(sig(word), { style = style, seed = 1 })
+				local bp = Summon.blueprint(sig(word), { style = style, seed = 1, heroes = false })
 				for _, id in ids do
 					t.ok(has(bp, id), word .. " (" .. style .. ") has " .. id)
 				end
