@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow flower","NHBNMI","jdF",3,1,2,"FF5252","40C4FF","petals in every colour","rustle","Every colour. All at once.","plant,flower,magic"},
+	{"rainbow grasshopper","AMAJFG","UdAP",1,6,1,"2AA06A","E8501E","grasshopper painted every color","buzz","Looks painted by a kid.","insect"},
+	{"rainbow lightning","FDDAKB","jeLV",7,10,1,"FF4081","40C4FF","bolt splitting into rainbow branches","crack","Every colour of zap.","electric,cute"},
+	{"rainbow lollipop","IMBHJI","jdf",3,5,4,"E8434F","4FA3E8","rainbow spiral disc on stick","bonk","Hypnotic swirls. Look closely.","edible,silly,candy"},
 	{"rainbow lorikeet","AMBJDB","jdA",2,6,2,"2A6AE8","E8501E","parrot in every rainbow color","squawk","A flying rainbow. Very loud.","bird,jungle,silly"},
 	{"rainbow road","FHDOKI","DF",3,9,3,"FF4081","69F0AE","bright rainbow path under the caster","chime","Zoom along the rainbow.","cute,speed"},
 	{"rainbow road ride","DHCKHB","DAFg",4,9,3,"FF5252","40C4FF","glowing rainbow ribbon you ride","whoosh","Slide along a rainbow. Obviously.","vehicle,magic,mythical"},
@@ -399,8 +403,4 @@ return {
 	{"rubber chicken monster","AMBJDA","Ud",2,5,2,"FACC15","F97316","giant rubber chicken with angry eyes","squeak","Squeaks loudly. Hits squeakily.","silly"},
 	{"rubber duck","BMBJDJ","UdcB",2,5,3,"FFD23F","E67E22","yellow squeaky duck, orange beak","squeak","Squeak. The enemy is deeply confused.","toy,silly,bathroom,cute"},
 	{"rubber duck boat","DBDKHC","UDdkgB",2,3,4,"FFEB3B","FF9800","huge yellow rubber duck you can ride","quack","Quack. Squeak. Victory.","vehicle,aquatic,silly"},
-	{"rubber duck rain","BMDEDI","Ujd",2,4,2,"FFD23F","E67E22","squeaky ducks pouring from the sky","thud","SQUEAK SQUEAK SQUEAK SQUEAK.","silly,toy"},
-	{"rubber gloves","BMBONK","G",1,6,2,"F1C40F","F1C40F","bright rubber gloves","thud","Gross jobs? Ready.","household"},
-	{"rubber mat","BMBL0I","N",1,1,2,"47D7E8","F2F2EE","suction-cup mat","splash","The only non-slip thing here.","bathroom,household"},
-	{"rubber rocket","KMCAKI","kfe",6,10,2,"E53935","F7C59F","an arm stretches across the field and punches","boing","The arm comes back. Probably.","anime,silly"},
 }

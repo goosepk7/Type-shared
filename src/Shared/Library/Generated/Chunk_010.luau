@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
+	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
 	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
@@ -177,6 +179,7 @@ return {
 	{"frost prison","FCCA4I","JO",5,7,3,"BFEFFF","5FB8E8","a thin ice shell snaps shut around the target","crackle","Chill out in here for a second.","hero,movie,frozen"},
 	{"frost ring","FCDNOI","JSO",5,4,3,"B3E5FC","FFFFFF","circle of frost that freezes anything crossing","crackle","Cross the line. Become ice.","frozen"},
 	{"frost rune","FCBLII","JO",5,4,3,"80DEEA","FFFFFF","pale-blue rune that snaps into ice","crackle","Click. Frozen. Oops.","frozen"},
+	{"frost slide","KCDCpL","DgN",3,9,3,"BFEAFF","5AA8E0","a curving ice ramp you surf along at speed","whee","Built the road. Still sliding.","hero,movie,ice"},
 	{"frost sword","CCCHrK","JfN",7,6,4,"BFE8F5","F2F2EE","blade of glittering ice","shing","Chilling in every sense.","fantasy,frozen"},
 	{"frost titan","ACFJNA","JkN",9,2,9,"BAE6FD","1E3A8A","glacier-bodied giant with icicle crown","crack","Turns summer into winter.","elemental,giant,boss,frozen,danger"},
 	{"frost totem","KCCMmI","JeN",4,3,4,"4FC3F7","FFFFFF","ice-carved pole breathing frost","crackle","Cold pole. Bad vibes.","frozen"},
@@ -400,7 +403,4 @@ return {
 	{"ghost pepper","IABAKK","KjSP",7,7,2,"C8202B","8A1E1E","wrinkled red pod","sizzle","So hot it haunts you for days.","edible,spicy,flammable,pepper,spooky"},
 	{"ghost pipefish","ABAJEC","dZB",1,6,1,"E8D8C0","C8A07A","ornate seaweed-like","splash","Pretends to be seaweed.","fish,aquatic"},
 	{"ghost pirate captain","AIDJNJ","Afh",7,5,4,"94A3B8","22C55E","glowing spectral captain with hook","wail","Commands the dead crew.","ghost,pirate,boss"},
-	{"ghost ship","DIEKHJ","jAZegB",7,5,6,"455A64","80DEEA","tattered glowing galleon, ripped sails","moan","Crewed by nobody. Steered by spite.","spooky,undead"},
-	{"ghost ship crew","AICJNJ","Zfh",5,5,4,"94A3B8","22C55E","spectral sailors with tattered coats","wail","They still want their pay.","undead,ghost,pirate"},
-	{"ghost slime","AIBJGJ","UZ",2,5,2,"E5E7EB","A5B4FC","see-through floating jelly","squelch","Boo. Squish.","slime,ghost"},
 }
