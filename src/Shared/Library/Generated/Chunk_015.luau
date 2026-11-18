@@ -136,6 +136,7 @@ return {
 	{"lightning form","KDCOKB","DLY",5,10,2,"FFEB3B","448AFF","caster crackling into living lightning","crack","Faster than thought. Zappier too.","electric,speed"},
 	{"lightning generator","ODDMmI","eLP",7,4,6,"1F2F55","F1C40F","twin spheres with arcing bolts","hum","Brews a storm in a box.","science,electric"},
 	{"lightning gun","CDCBwI","eLP",6,8,3,"F1C40F","2F6FD1","coil-wrapped pistol, crackling tip","zap","Arcs jump from foe to foe.","scifi,electric,ranged"},
+	{"lightning lap","KDDN5B","DlHL",7,10,3,"FFD84A","FF6A3D","lightning laps whip up a vortex that lifts foes","zap","Already finished. Want another lap?","hero,movie,speed"},
 	{"lightning meteor","HDDAKB","EkeL",8,9,5,"FFEB3B","304FFE","crackling rock wrapped in lightning","crack","Zap and boom. Two for one.","electric,space,explosive"},
 	{"lightning nova","FDDFOI","LPO",7,8,1,"FFEB3B","3D5AFE","ring of lightning arcs bursting out","crack","Everybody get zapped. Equally.","electric"},
 	{"lightning orb","FDCGKE","RLP",5,6,2,"FFEA00","2962FF","crackling orb shooting small arcs","buzz","Zaps anything that gets close.","electric"},

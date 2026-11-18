@@ -97,7 +97,6 @@ return {
 	{"hamburger steak","IGBOKI","F",2,5,3,"6B3A1E","8A5A2A","patty with gravy","crunch","A burger without a bun.","edible,healthy"},
 	{"hamburger tower","IMDCII","Gkc",4,2,6,"C8762B","6B3A1E","stacked burgers in a tower","thud","A burger skyscraper.","edible,giant"},
 	{"hammer","JKBHtK","kfO",4,6,6,"8A929B","8B5A2B","claw hammer, wooden handle","bonk","When all you have is one, it's perfect.","medieval,heavy"},
-	{"hammer throw","BKBAtF","Qke",4,6,8,"8A929B","8E9196","iron ball on a wire with handle","bonk","Spin spin spin RELEASE.","sport"},
 	{"hammer-headed bat","AMBJDB","jiA",2,7,1,"6A4A2A","C8A07A","huge box-shaped head","honk","Honks like a goose. Head like a hammer.","mammal,nocturnal,spooky,silly"},
 	{"hammerhead shark","ABDJEC","DkfTB",7,8,6,"7C8C96","E8ECEE","wide hammer-shaped head","chomp","Built-in hammer. Uses it for science.","fish,aquatic,ocean,predator"},
 	{"hammerkop","AMCJDA","AfT",3,5,2,"8A6A44","C8A07A","head shaped like a hammer","squawk","Builds giant nests. Hammer head.","bird,wetland"},

@@ -123,6 +123,7 @@ return {
 	{"weather vane","EFBCII","GdS",1,1,4,"37474F","FFB300","metal rooster on a spinning arrow","thud","Points where the wind blows.","structure"},
 	{"weaver bird","AMAJDB","GdA",1,7,1,"F2D02A","2A2A1E","yellow bird hanging from woven nest","tweet","Knits its own house.","bird,cute"},
 	{"web","BGCLII","SHN",3,2,3,"F2F2F2","BFC9D1","big silver spiral spiderweb with dew drops","thwip","Sticky situation. Literally.","sticky,trap,spooky"},
+	{"web snare","BGBA3B","SeN",3,10,2,"F4F4F0","AEB8C2","a sticky web ball that pins the target where it stands","thwip","Hang around a while.","hero,movie,sticky"},
 	{"website","MDCLnI","jNY",3,1,3,"F8FAFC","3B82F6","browser window with a spinning wheel and ERROR 404","bzzt","404: enemy not found.","tech,internet"},
 	{"weddell seal","ACCJEC","UfB",3,5,4,"4A4A50","B8B8C0","spotted dark seal","bark","Sings underwater in Antarctica.","mammal,aquatic"},
 	{"wedding","KHDNII","FcPO",4,2,3,"FFFFFF","F9A8D4","flower arch, bells, flying rice and a towering cake","bell","Speak now or forever hold your pieces.","party"},

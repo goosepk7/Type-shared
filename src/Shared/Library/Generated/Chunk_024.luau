@@ -121,7 +121,6 @@ return {
 	{"speedrun","KFCOKB","DY",3,10,2,"FFEB3B","00E5FF","clock and speed lines around caster","zoom","Skip the cutscenes. Go go go.","meme,speed"},
 	{"speedrun ghost","LLCJNA","DZY",3,10,1,"A5F3FC","F8FAFC","translucent copy racing ahead","whoosh","Your best time. Mocking you.","meme,gaming,ghost"},
 	{"speedrunner","LMCJNA","DTY",4,10,3,"DC2626","FACC15","blurry figure with timer above head","whoosh","Clips through walls. Any% only.","meme,gaming"},
-	{"speedster","LDCJNA","DLY",5,10,3,"DC2626","FACC15","red suit with lightning bolt","zap","Already finished. Want another lap?","hero,storm"},
 	{"spell","FLBAKB","e",3,7,1,"9575FF","E9DCFF","small glowing glyph projectile","shimmer","The most basic magic. Still magic.","magic"},
 	{"spell echo","KLCOKJ","V",4,7,2,"B39DDB","FFFFFF","faint copy of the last spell repeating","echo","Cast once. Hit twice.","magic"},
 	{"spellblade","LLCJNA","feY",6,6,6,"4338CA","94A3B8","armor with rune-glowing sword","zap","Can't decide between swords and magic. Chose both.","magic,warrior"},
