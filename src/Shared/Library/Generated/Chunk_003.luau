@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beetle knight","AKBJFA","GDk",3,4,7,"1E3A8A","15803D","armored beetle with horn lance","click","Built-in armor. Very shiny.","insect,warrior"},
+	{"beg","KMAOKI","c",1,3,1,"F8BBD0","FFFFFF","sparkly pleading hands","aww","Pleeeease? Pretty please?","cute,silly"},
 	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
 	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
@@ -243,6 +245,7 @@ return {
 	{"boar spear","CKCAuI","GfT",5,5,5,"8A929B","8B5A2B","spear with crossbar under blade","whoosh","Stops things that charge.","medieval,sharp"},
 	{"board game","BMBNII","j",1,1,2,"2E8B57","C0392B","folded board with tokens","clack","Fun until someone flips it.","game"},
 	{"boarding axe","CKBHsI","fV",4,6,4,"8A929B","8B5A2B","short axe with spike","bang","Climb aboard. Chop.","pirate"},
+	{"boarding hook","OKBAJI","He",2,9,3,"5ADCFF","969CA8","a magnetic clamp on a glowing tether that reels you in","clang","All aboard. You, specifically.","scifi,mobility"},
 	{"boat","DBCKHC","DkgB",4,7,5,"F5F5F5","1E88E5","small hull, outboard motor, windshield","splash","Splash first. Ask later.","vehicle,aquatic"},
 	{"boat hook","JKCAuK","fH",2,5,4,"8B5A2B","B58A3A","pole with metal hook","clank","Snag and drag.","tool"},
 	{"boat-billed heron","AMCJDA","AfT",3,5,2,"6A6A6E","1E1E1E","huge scoop bill","squawk","Bill like a boat. Eyes like a frog.","bird,wetland,silly"},
@@ -400,7 +403,4 @@ return {
 	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},
 	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
-	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
-	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
-	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
 }
