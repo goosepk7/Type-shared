@@ -318,6 +318,7 @@ return {
 	{"firebird of the east","AACJDB","KAc",5,8,4,"F97316","FDE047","glowing peacock bird with ember tail","chime","One feather lights a whole room.","mythical,bird,fire"},
 	{"fireboat","DBDKHC","DkIegB",5,5,7,"E53935","F5F5F5","red boat with water cannons spraying","siren","Water cannons on all sides.","vehicle,aquatic"},
 	{"firecracker","CAAGKF","dEO",2,8,1,"C0392B","D4A72C","tiny red paper tube with fuse","boom","Pop pop pop!","party,holiday,explosive"},
+	{"firecracker chain","CACNKI","dEP",4,7,2,"D8262E","FFC93A","red firecracker string popping in a row along the ground","crackle","Loud enough to scare off anything. Including you.","holiday,lunar new year,explosive"},
 	{"firefighter","LBCJNA","GFkI",5,6,6,"DC2626","FACC15","helmet, yellow coat, fire hose","splash","Puts out fires. Including yours.","hero,rescue"},
 	{"firefighter robot","OBCJNA","FI",4,4,7,"DC2626","F8FAFC","red robot with hose arms","splash","Sprays foam everywhere.","robot,rescue"},
 	{"firefly","AHAJFB","dAcP",1,6,1,"F2E82A","3A2A1E","small beetle with glowing tail","buzz","Brings its own nightlight.","insect"},

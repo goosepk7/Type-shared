@@ -275,6 +275,7 @@ return {
 	{"turbine","OFDM1K","kIP",4,4,6,"F2F2EE","8E9196","tall pole with three giant blades","whoosh","Spins wind into watts. And foes away.","mechanical"},
 	{"turkey","AMCJDA","Ddf",3,4,2,"5E4232","C8301E","fanned tail, red wattle, puffed chest","gobble","Gobbles at everyone. Hides in November.","bird,farm,holiday"},
 	{"turkey leg","IMCHJI","Fkcf",4,5,4,"B0602B","F2EEE0","huge roasted leg, bone handle","bonk","Fair food. Also a weapon.","edible,silly"},
+	{"turkey stampede","AGCADA","DkP",5,7,2,"7A4A2A","D84A2A","three plump turkeys charging in a fan of lanes","gobble","They heard it was almost the holidays.","holiday,harvest,thanksgiving,charge"},
 	{"turkey vulture","AMCJDB","DASfT",4,9,3,"2A2420","D8303A","red bald head, dark wings","screech","Smells lunch from a mile up.","bird,predator"},
 	{"turkish coffee","IABOKI","DF",3,9,2,"2A160C","6B4026","tiny cup, thick foam","fizz","Thick enough to read fortunes in.","edible,drink"},
 	{"turkish delight","IMBLGG","dcN",2,3,3,"F2A6C8","F7F7F7","powdered pink jelly cubes","wobble","Sweet cubes in a sugar dust.","edible,wobbly,sweet"},

@@ -245,7 +245,7 @@ return {
 	{"mausoleum","EIDCII","GSh",4,1,9,"9E9E9E","263238","marble box with heavy door and statues","thud","Out of order. Please use other crypt.","spooky,undead"},
 	{"mayfly","AMAJFB","dAP",1,6,1,"E8D8A8","B8A07A","delicate long-tailed flyer","buzz","Lives one day. Makes it count.","insect"},
 	{"mayonnaise","IMBLGI","SNO",2,3,2,"F7F2DC","F2EAC8","white squeeze jar","squeak","Slippery, creamy, and everywhere.","edible,slippery,silly,sauce"},
-	{"maypole","EECCII","jdS",2,1,4,"F5F5F5","E91E63","tall pole with coloured ribbons","thud","Dance around it. Get tangled.","structure,ancient,silly"},
+	{"maypole twirl","EGCNIK","jSN",5,3,4,"F5F5F5","E91E63","ribboned pole whose ribbons tangle everyone around it","whoosh","Dance around it, or get danced around.","holiday,spring,zone"},
 	{"maze","MEENII","GjSN",3,1,9,"9E9E9E","5D5D5D","winding walled corridors, dead ends","rumble","Every way is the wrong way.","place,terrain"},
 	{"mcintosh apple","IGBAKF","Fke",3,6,2,"B0202E","7DAE3A","red-green round apple","splat","Soft, tangy, classic.","edible,fruit,sweet"},
 	{"me","LHCJNA","GQFf",5,6,5,"3B82F6","FACC15","your own double in a mirror frame, pointing thumbs at itself","ding","The best summon. Modest, too.","meme,silly"},

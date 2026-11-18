@@ -90,6 +90,7 @@ return {
 	{"dragon","AAEKAB","KAkeg",8,6,8,"B3261E","F2A43A","winged reptile, horns, long spiked tail","roar","Breathes fire. Hoards loot. Judges you.","mythical,reptile,flying,fire"},
 	{"dragon armor","BADONI","GK",5,3,9,"9E1B32","D4A72C","crimson scaled plate with horns","clank","Fireproof. Fearsome. Fabulous.","armor,fantasy"},
 	{"dragon boat","DBDKHC","DkgB",5,7,5,"D32F2F","FFC107","long canoe with dragon head and tail, drum","drum","Row to the beat of the war drum.","vehicle,aquatic,mythical"},
+	{"dragon boat dash","BBDOHL","Dkg",5,9,1,"D32F2F","FFC107","dragon-prowed racing boat surging forward on a wave","drum","The drummer sets the pace. The pace is 'through you'.","holiday,dragon boat festival,movement"},
 	{"dragon bone bow","CACAvK","KTe",7,6,4,"E3DAC9","9E1B32","bow carved from a dragon rib","shing","Every arrow comes out warm.","fantasy,ranged"},
 	{"dragon chariot","DAEKHB","KDAkg",7,8,7,"B71C1C","FFD54F","golden chariot pulled by a small dragon","whoosh","Fire in front. Wheels behind.","vehicle,magic,mythical"},
 	{"dragon claw","AADLJI","kfH",6,6,6,"7F1D1D","F59E0B","huge scaled claw sweeping from a portal","roar","A dragon reaches in. Grabby.","reptile"},

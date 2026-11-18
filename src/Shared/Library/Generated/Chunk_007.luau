@@ -118,7 +118,7 @@ return {
 	{"cupcake car","DMBKHL","Dkcg",2,6,3,"F48FB1","FFF8E1","car shaped like a frosted cupcake","engine","Sprinkles everywhere. Sticky tyres.","vehicle,silly,sweet"},
 	{"cupcake tower","IMCJII","Gdc",5,1,6,"F2A6C8","D9A04A","tiered stand of cupcakes","thud","A tower of sweet bait.","edible,giant,silly,dessert"},
 	{"cupid archer","LHBJNB","jAe",3,7,2,"F472B6","FDE68A","winged archer with heart arrows","twang","Shoots hearts. Enemies fall in love.","holiday,cute"},
-	{"cupid's bow","BMBAvI","jce",3,8,2,"FF3EA5","D4A72C","tiny golden bow with heart arrows","jingle","Struck! Smitten! Confused!","holiday,magic"},
+	{"cupid charm arrow","CHBAJB","jeN",4,9,2,"FF5C9A","FFD4E5","heart-tipped arrow that leaves the target smitten","twang","It never misses. Well, it misses a lot, actually.","holiday,valentine,ranged"},
 	{"cupuacu","IGBAKF","Fke",3,6,2,"7A4A2A","F7F2E0","brown oval pod","splat","A cousin of chocolate.","edible,fruit,sweet"},
 	{"cure","KHBOKJ","F",1,6,2,"A5D6A7","FFFFFF","soft green plus-sign sparkles","chime","Fixes what ails you.","support"},
 	{"curfew","KICF6B","INO",4,5,2,"1E1B4B","FDE047","sweeping dark blanket with a clock striking nine","yawn","It is past your bedtime. All of you. Bed.","household,silly"},

@@ -397,6 +397,7 @@ return {
 	{"lantern","BABGJK","Kc",1,3,3,"B58A3A","E67E22","caged glass with candle glow","flicker","Light in the dark. Bugs everywhere.","tool"},
 	{"lantern boat","DHCKHJ","DAFg",3,5,3,"FFB74D","1A237E","small boat glowing with paper lanterns","whoosh","Floats on rivers of light.","vehicle,magic,mythical"},
 	{"lantern dragon","AADJCA","Kdc",5,5,5,"DC2626","FACC15","paper lantern dragon carried by many legs","drum","Dances in. Explodes with confetti.","holiday"},
+	{"lantern float","BHCOKJ","QFS",4,2,5,"FFB648","FF5A3A","three paper sky lanterns rising and healing below","chime","Make a wish. Then make a heal.","holiday,lantern festival,heal"},
 	{"lantern shark","AHBJEC","DfTB",2,8,6,"3A3A44","8AE8F0","tiny glowing shark","chomp","A shark that glows in the dark.","fish,aquatic,ocean,predator,deepsea"},
 	{"lanternfish","AHAJEC","dcPB",1,6,1,"3A4250","6AE8F0","small dark fish dotted with lights","splash","Carries its own fairy lights.","fish,aquatic"},
 	{"lanternfly","AMAJFB","dAP",1,6,1,"E8301E","1E1E1E","spotted wings with red underwings","buzz","Pretty, but munches everything.","insect"},

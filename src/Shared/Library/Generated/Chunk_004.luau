@@ -316,7 +316,7 @@ return {
 	{"candy cane","IMBHJI","kfH",3,5,4,"E0102B","F7F7F2","hooked stick, red-white stripes","bonk","Hooks enemies. Tastes like mint.","edible,silly,candy,holiday"},
 	{"candy cane fence","EMCCII","GScT",2,1,3,"F5F5F5","E53935","striped candy canes in a row","chime","Sweet. Pointy. Festive.","holiday,sweet,silly"},
 	{"candy castle","EMECII","GdSc",3,1,5,"F48FB1","80DEEA","castle of lollipops, gumdrops and icing","chime","Edible walls. Enemies keep stopping to snack.","sweet,silly"},
-	{"candy corn","IMAELB","eVP",2,7,1,"F2C24A","F28C28","tri-color striped triangle","pitter","You either love it or you throw it.","edible,sweet,candy,holiday"},
+	{"candy corn volley","IMAALB","eVP",3,8,1,"F2C24A","F28C28","fan of striped candy-corn kernels","pop","Nobody admits to liking it. Everybody gets hit by it.","holiday,halloween,ranged"},
 	{"candy dragon","AMCJAB","dAc",3,6,3,"F472B6","93C5FD","pastel dragon with candy scales","chirp","Breathes cotton candy.","silly,sweet"},
 	{"candy factory","EMENII","ScN",3,1,6,"6D4C41","F48FB1","factory with lollipop chimneys","clank","Rivers of chocolate. Do not fall in.","sweet,silly"},
 	{"candy floss cloud","IMDDOJ","jSNP",3,3,3,"F2A6C8","A6D8F2","big pink cloud","wobble","A sugar cloud that floats overhead.","edible,wobbly,sweet,candy"},
