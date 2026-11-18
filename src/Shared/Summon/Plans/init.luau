@@ -19,7 +19,7 @@ local ROUTES: { [string]: { any } } = {
 	Turtle = { "Quadruped", nil, { shell = true, stubby = true, scaly = true } },
 	Spider = { "Insect", "Spider", { insect = true } },
 	Crab = { "Insect", "Crab", { pincers = true } },
-	Octopus = { "Fish", "octopus", { tentacles = true } },
+	Octopus = { "Fish", "cephalopod", { tentacles = true } },
 	Worm = { "Serpent", "Worm", {} },
 	Ghost = { "Cloud", "Ghost", { ghost = true } },
 	Robot = { "Humanoid", "robot", { robot = true, mechanical = true } },

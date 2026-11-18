@@ -61,7 +61,7 @@
     {"n": ["master chief"], "r": "armored soldier"},
     {"n": ["pac man", "pacman", "pac-man"], "r": "gobble mode"},
     {"n": ["pokemon ball", "pokemon balls"], "r": "capture orb"},
-    {"n": ["tetris"], "r": "block"},
+    {"n": ["tetris", "tetris block", "tetris blocks", "tetris piece"], "r": "block drop"},
     {"n": ["angry birds", "angry bird"], "r": "sling bird"},
     {"n": ["peppa pig"], "r": "pink pig"},
     {"n": ["barney"], "r": "purple dinosaur"},
