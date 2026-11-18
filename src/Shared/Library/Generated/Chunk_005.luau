@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"card storm","FLCELB","jdT",4,8,1,"D32F2F","FFFFFF","swirl of glowing playing cards","shff","52 card pick-up. Painful version.","magic,silly"},
+	{"cardamom","IFBDOJ","jPO",2,5,1,"8DB86A","C8D88A","small green pods","puff","Fragrant green pods of mystery.","edible,spice"},
 	{"cardboard","BMCI2A","GUZ",2,3,3,"C8A165","A9824C","big brown box with eye holes sneaking along","thud","Not a box. A stealth vehicle.","household,stealth,silly"},
 	{"cardboard armor","BMCONI","Gd",1,5,2,"C69C6D","7A4E2D","taped box armour, pot helmet","clank","Tactical arts and crafts.","silly,toy"},
 	{"cardboard box","BMBO2I","Zc",2,5,4,"C69C6D","7A4E2D","a taped cardboard box with two eye holes","thud","Totally just a box. Move along.","silly,stealth,modern"},
@@ -401,6 +403,4 @@ return {
 	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
 	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
 	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
-	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
-	{"clash","KMCFOB","kO",5,8,2,"FFAB40","FFFFFF","two forces colliding in a spark ring","clang","Sparks fly. Everyone flinches.","melee"},
 }

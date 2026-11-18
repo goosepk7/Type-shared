@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
 	{"boysenberry","IGAELB","eVP",2,7,1,"5E1F3F","8A2B5A","plump dark maroon berry","pitter","A berry with a big name.","edible,fruit,sweet"},
 	{"bracelet","BMAOKJ","G",1,6,3,"C9CED4","3E9E6E","chunky bangle","chime","Wrist bling.","treasure,shiny"},
 	{"bracers","BKBONI","Ga",1,7,5,"6B4226","A86F32","armoured forearm guards","clank","Deflect with flair.","armor,defense"},
@@ -157,6 +158,7 @@ return {
 	{"bulletproof vest","BMCONI","G",1,6,7,"1F2F55","24262A","padded vest with plates","clank","Pew-proof.","modern,defense"},
 	{"bullfinch","AMAJDB","dA",1,7,1,"E8501E","1E1E1E","chunky red-chested finch","tweet","Chunky and rosy.","bird,cute"},
 	{"bullfrog","AMBJAG","Ue",2,5,1,"4A6A2A","C8C07A","huge green frog, round eardrums","boom","Booms like a tiny bass drum.","amphibian,wetland"},
+	{"bullseye","BMBAvB","kTe",5,10,1,"F2C230","C0392B","recurve bow and a ringed target face on the foe","whoosh","Hold still. Thank you.","sport,archery,projectile"},
 	{"bully","LMCJNA","fI",3,5,4,"57534E","DC2626","beanie, ripped jeans, sneer","grunt","Takes lunch money. Gets karma.","school"},
 	{"bumblebee","AJAJLB","UATP",1,7,1,"F2C82A","1E1E1E","round fuzzy striped bee","buzz","Too round to fly. Flies anyway.","insect,swarm,venomous"},
 	{"bump","BEBLnI","klO",3,1,7,"FACC15","111827","yellow-and-black striped road hump","thud","Slow down. Too late. Coffee everywhere.","trap,vehicle"},
@@ -401,6 +403,4 @@ return {
 	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
 	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 	{"carcharodontosaurus","AMEJBA","DkfT",8,6,7,"8A5A3A","D8A07A","huge skull, shark-like teeth","roar","Shark teeth on a giant dino.","dinosaur,extinct,reptile,predator"},
-	{"card storm","FLCELB","jdT",4,8,1,"D32F2F","FFFFFF","swirl of glowing playing cards","shff","52 card pick-up. Painful version.","magic,silly"},
-	{"cardamom","IFBDOJ","jPO",2,5,1,"8DB86A","C8D88A","small green pods","puff","Fragrant green pods of mystery.","edible,spice"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lore master","LLCJNA","jh",3,3,3,"7C2D12","FDE68A","stacks of books, glowing scroll","whisper","Will explain the backstory. All of it.","meme,gaming,magic"},
+	{"loris","AMBJBA","dMeN",2,1,2,"B08E6A","4A3A2C","round huge eyes, slow movements","chatter","Moves slowly. Venomous elbows. Wild.","mammal,primate"},
+	{"lose","KIBAKB","XNO",3,6,1,"64748B","EF4444","grey YOU LOSE banner with a deflating balloon","groan","Better luck next respawn.","gaming,meme"},
+	{"loser","LMBJNA","jdE",2,4,2,"9CA3AF","60A5FA","grumpy kid flipping a game board, pieces flying","groan","Best two out of three? Out of five? Seven?","silly,gaming"},
 	{"loss","KIBOKJ","jXN",2,3,1,"6B7280","EF4444","sad trombone over a red FAIL stamp","groan","Wah wah wahhh.","meme,gaming,silly"},
 	{"lost city","MEFNII","ZSh",4,1,9,"E6C27A","43A047","overgrown stone city with golden domes","rumble","Nobody has found it. Except you, now.","ancient,mythical"},
 	{"lotion","BBBL2I","UFN",2,2,2,"FDF2F8","F9A8D4","pump bottle squirting a slippery white puddle","squirt","Slippery hands. Dropped everything. Smells nice.","household,slippery"},
@@ -399,8 +403,4 @@ return {
 	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
 	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
 	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
-	{"microlight","DFBKHB","DAkg",3,6,2,"FFEB3B","1565C0","tiny wing over an open seat and prop","propeller","Basically a lawn chair with wings.","vehicle,air,silly"},
-	{"microphone","BDAFKI","jO",1,6,2,"C9CED4","24262A","round-head microphone on cable","feedback","Mic drop. Literally.","music,loud"},
-	{"microraptor","AMBJBB","DAQfT",3,9,3,"2A2A3A","6A8AE8","four-winged glider dinosaur","screech","Four wings. Shiny black feathers.","dinosaur,extinct,reptile,predator"},
-	{"microscope","BMBO1I","e",1,1,4,"F2F2EE","24262A","lab scope with eyepiece","bubble","Sees tiny weaknesses.","science"},
 }

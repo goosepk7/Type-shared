@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"disco wizard","LLCJNA","jdO",4,5,3,"F472B6","22D3EE","sequin robe with disco ball staff","beat","Casts groove. Everyone dances.","magic,silly,music"},
+	{"discus","BMBA3F","Uke",3,8,6,"C9CED4","24262A","flat heavy spinning disc","bonk","Ancient frisbee for serious people.","sport,ancient"},
 	{"discus fish","ABAJEC","UdB",1,6,1,"E87A2A","3AA0C8","flat round disc fish","splash","A frisbee that swims.","fish,aquatic"},
 	{"disease","KJCDOJ","iMNP",4,4,1,"A3B18A","6B8E23","sickly green cloud with a thermometer and tissues","cough","Day off school. Worth it? No.","toxic,science"},
 	{"disguise","KLBOKI","jZ",2,4,2,"8D6E63","FFE0B2","fake mustache and hat poof","poof","Nobody will ever guess.","stealth,silly"},
@@ -34,6 +36,7 @@ return {
 	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
 	{"dodge","KFBOKB","ZY",2,10,2,"E1F5FE","FFFFFF","blurry afterimage sidestep","whoosh","Missed me!","speed"},
 	{"dodgeball","BMBG3F","UkeO",2,8,2,"C0392B","C0392B","rubbery red playground ball","bonk","If you can dodge a wrench...","sport"},
+	{"dodgeball barrage","BMBA3K","keV",5,9,1,"D93A2B","F2EEE6","fan of grippy red rubber balls thrown at once","boing","If you can dodge a ball...","sport,dodgeball,projectile"},
 	{"dodgeball kid","LMBJNA","dke",3,7,2,"DC2626","F8FAFC","tiny kid with a huge red ball","boing","Small arms. Huge throws.","school,silly,sport"},
 	{"dodo","AMCJDA","dkf",2,2,5,"8A8A8E","F2E8C8","plump grey bird, hooked beak, tuft tail","boom","Extinct. Still waddling in our hearts.","bird,flightless,extinct,silly"},
 	{"doedicurus","AMDJAA","GDkO",7,4,10,"6A5A44","B8A07A","armored dome, spiked mace tail","roar","Armadillo with a medieval mace.","mammal,extinct,ancient,heavy"},
@@ -400,7 +403,4 @@ return {
 	{"empusa","AACJNA","Kcf",4,6,4,"DC2626","F59E0B","fiery hair, one bronze leg","hiss","One bronze leg. Great at kicks.","mythical,spooky"},
 	{"emu","AMDJDA","Djkf",5,8,5,"6A5A4A","3AA0D8","shaggy brown feathers, blue neck","boom","Won a war against people. Really.","bird,flightless"},
 	{"emu chick","AMBJDA","Dkf",2,8,5,"6A5A4A","F2E8D0","striped fluffy baby emu","boom","Stripy, fast, and chaotic.","bird,flightless,cute"},
-	{"encantado","ABCJEC","jcB",4,8,3,"F9A8D4","0EA5E9","pink river dolphin in a straw hat","splash","Shows up at parties. Hides his blowhole.","mythical,aquatic"},
-	{"enceladus","MCDGKJ","Je",4,4,6,"FFFFFF","B3E5FC","bright white moon shooting ice jets","rumble","Sneezes ice into space.","space"},
-	{"enchanted forest","MLFNII","jFSNY",5,1,8,"7E57C2","66BB6A","glowing trees, floating sparkles, mushrooms","rumble","Pretty, sparkly, and very confusing.","place,terrain,magic"},
 }

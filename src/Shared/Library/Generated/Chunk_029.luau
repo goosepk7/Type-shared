@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"whale shark","ABFJEC","DHB",8,3,9,"3A5470","F2F2EE","colossal shark, white polka-dot back","chomp","Biggest fish. Eats only tiny stuff.","fish,aquatic,ocean,predator,gentle"},
+	{"wham","KMCAKB","k",5,9,1,"2979FF","FFEB3B","comic jagged impact bubble","wham","Wham! Comic book justice.","silly"},
+	{"what","KLBF6B","jIO",2,6,1,"FACC15","111827","shock ring of interrobangs and tilted heads","boing","WHAT? WHAT? ...what?","silly,meme"},
+	{"wheat","NGCNMI","ZSN",1,1,2,"E6C27A","FFD54F","golden swaying grain heads","rustle","Amber waves of distraction.","plant"},
+	{"wheel","BMBA3F","UDk",3,8,5,"1F2937","9CA3AF","runaway rubber wheel with a silver hubcap, rolling fast","rumble","Reinvented. Now with more rolling over you.","vehicle,mechanical"},
 	{"wheel of fire","FACAKF","UKk",6,8,2,"FF5722","FFD54F","rolling hoop of fire","whoosh","A flaming hoop on a mission.","fire"},
 	{"wheelbarrow","DMAKHL","Dkg",2,4,3,"2E7D32","8D6E63","single front wheel, metal tub, two handles","engine","Can carry exactly one tiny enemy.","mechanical,vehicle,land,silly"},
 	{"wheelchair","BMCJHF","Dk",2,6,5,"C9CED4","24262A","wheeled chair with push rims","thud","Fast, nimble, unstoppable.","container"},

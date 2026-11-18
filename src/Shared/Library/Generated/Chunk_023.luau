@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea squirt","ABAJGI","GeN",1,1,6,"E8A04A","F2D07A","squishy tube with two siphons","squelch","Squirts water at you. Rude.","mollusk,aquatic"},
+	{"sea storm","FBEEOJ","ILP",8,5,4,"263238","4FC3F7","dark waves and slanted rain with lightning","roar","Sailors hate this one.","aquatic,storm"},
+	{"sea turtle","ABCJUC","GFNB",3,5,8,"6A8A4A","D8C88A","flipper legs, flat shell","hiss","Rides currents like a surfer.","reptile,armored"},
+	{"sea urchin","ABAJGA","GTeN",1,1,4,"3A1E4A","8A5AA0","round ball of long spines","squelch","A pincushion that bites back.","aquatic,ocean"},
 	{"sea wall","EBECII","GSIa",3,1,10,"90A4AE","607D8B","curved concrete wall facing the waves","thud","Turns back the tide. And the tide of enemies.","structure,defense"},
 	{"sea witch caster","LBCJNC","MHh",5,5,4,"0F766E","7C3AED","kelp-draped sorceress with shell staff","cackle","Rents out spells for a voice.","magic,aquatic"},
 	{"sea witch mermaid","ABCJEC","MHB",5,5,5,"7C3AED","0F766E","octopus-tentacled sorceress","cackle","Eight arms. All of them spellcasting.","aquatic,witch"},
@@ -360,7 +364,7 @@ return {
 	{"skeleton ship","DIEMHC","eghB",7,5,6,"EFEBE9","263238","galleon built from giant ribs","rattle","Crewed entirely by bones. Rattles loudly.","spooky,undead"},
 	{"skeleton warrior","AICJNA","GfV",5,5,5,"F5F5F4","57534E","skeleton in rusty armor with shield","rattle","Reassembles after every hit.","undead"},
 	{"sketchbook","BLBOyE","Gjh",3,4,3,"111827","F5F5F0","spiral pad whose doodles peel off the page and walk","scratch","Page one: dragon. Page two: better dragon.","art,school"},
-	{"ski jump","MCENII","klS",3,1,6,"F5F5F5","1565C0","steep ramp curving up into the air","crowd","Launches you sky high.","place,sport"},
+	{"ski jump","BCCOIB","DlN",4,9,2,"F4F8FC","1E6FD0","snow ramp launching a skier into a powder landing","whoosh","Send it.","sport,ski,mobility,ice"},
 	{"ski lift","DCCKHJ","lg",2,3,4,"1565C0","B0BEC5","row of chairs hanging from a cable","engine","Up the mountain, legs dangling.","mechanical,vehicle,land"},
 	{"ski patrol","LCCJNL","DJF",3,8,5,"DC2626","F8FAFC","red jacket with cross, skis","whoosh","Zooms to the rescue downhill.","rescue,frozen"},
 	{"ski pole","BMBAJI","fT",1,7,3,"C9CED4","24262A","thin pole with little basket tip","bonk","Pokes snow. Pokes foes.","sport,winter"},
@@ -399,8 +403,4 @@ return {
 	{"slab","BECLnI","GkO",5,2,8,"9CA3AF","6B7280","thick flat grey stone rectangle dropping flat","thud","Flat. Heavy. Final.","heavy"},
 	{"slam","KEDNOI","kO",7,7,3,"6D4C41","FFCC80","big impact crater ring","boom","Slam dunk, but it is you.","heavy"},
 	{"slap","KMBAKB","kfO",3,10,1,"FFAB91","FFFFFF","red handprint flash","slap","Snap out of it!","silly"},
-	{"slapshot","BCBA3B","Uke",4,10,2,"20242B","7FD3F0","ice-blue puck skimming the ground, banking off walls","crack","Off the boards and right in.","sport,hockey,projectile"},
-	{"slapstick","CMCHJK","dkf",1,7,2,"C0392B","F1C40F","two clapping wooden slats","boing","Clack! Comedy!","silly"},
-	{"slash","KKCHJB","fT",5,9,1,"B0BEC5","FFFFFF","wide crescent slash streak","shing","Swish! Got it.","sharp"},
-	{"slate","BEBAJK","TeV",3,7,4,"4B5563","6B7280","thin dark grey stone tile spinning edge-first","clack","Wiped clean. With your face.","sharp"},
 }

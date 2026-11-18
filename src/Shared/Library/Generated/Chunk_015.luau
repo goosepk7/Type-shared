@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lake effect snow","GCDEOJ","JSN",6,3,4,"ECEFF1","90CAF9","narrow band dumping heaps of snow","hush","Feet of snow. In one stripe.","frozen,storm"},
+	{"lake monster","ABEJCC","ZfB",7,4,7,"1E3A8A","4ADE80","long neck, humped back above still water","splash","Blurry in every single photo.","cryptid,aquatic"},
+	{"laksa","IABOGI","KF",3,4,3,"E8762B","F2E8D0","orange coconut noodle soup","slurp","Spicy coconut noodles in a bowl.","edible,warm,healthy"},
+	{"lamassu","AHDJAA","GAk",6,4,9,"C2A26B","1E3A8A","winged bull with bearded human head","stomp","A gatekeeper with excellent beard care.","mythical,guardian,ancient"},
 	{"lamb","AMBJAA","df",1,4,4,"FFFDF8","E8DED0","tiny fluffy sheep, wobbly legs","bleat","Too soft to be real.","mammal,farm,cute"},
 	{"lamb chop","IMBHJI","cf",3,5,4,"C8604A","F2E8D8","chop with long bone","bonk","A meaty lollipop.","edible,silly"},
 	{"lamb's ear","NGANMI","dFS",1,1,3,"B0BEC5","E1BEE7","fuzzy silver velvet leaves","rustle","Softest plant ever. Pat it.","plant,flower,cute"},
@@ -399,8 +403,4 @@ return {
 	{"lop rabbit","AMBJAG","UCd",2,6,1,"D8B898","F7F0E6","droopy floppy ears","squeak","Ears are on strike.","mammal,cute"},
 	{"loppers","JKBHJK","fV",3,5,4,"2E8B57","C9CED4","long-handled branch cutters","clank","Chomp. Branch gone.","garden"},
 	{"loquat","IGAAKF","Fke",3,6,2,"F2A43A","F7D08A","small orange oval, big seeds","splat","A little orange cousin of the apple.","edible,fruit,sweet"},
-	{"lore master","LLCJNA","jh",3,3,3,"7C2D12","FDE68A","stacks of books, glowing scroll","whisper","Will explain the backstory. All of it.","meme,gaming,magic"},
-	{"loris","AMBJBA","dMeN",2,1,2,"B08E6A","4A3A2C","round huge eyes, slow movements","chatter","Moves slowly. Venomous elbows. Wild.","mammal,primate"},
-	{"lose","KIBAKB","XNO",3,6,1,"64748B","EF4444","grey YOU LOSE banner with a deflating balloon","groan","Better luck next respawn.","gaming,meme"},
-	{"loser","LMBJNA","jdE",2,4,2,"9CA3AF","60A5FA","grumpy kid flipping a game board, pieces flying","groan","Best two out of three? Out of five? Seven?","silly,gaming"},
 }

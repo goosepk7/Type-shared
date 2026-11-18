@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"undertow","FBCLII","HN",5,5,3,"01579B","4FC3F7","hidden swirling pull under the surface","swoosh","Feels calm. Isn't.","aquatic"},
+	{"underwater base","EBEIII","GSh",4,1,8,"26C6DA","37474F","glass domes on the sea floor","hum","Breathe easy. Surrounded by sharks.","structure,future,aquatic"},
+	{"underworld","MIFNII","KiSh",6,1,9,"212121","B71C1C","dark cavern realm, rivers of fire","rumble","Nobody visits on purpose.","spooky,mythical"},
+	{"undine","ABCJNC","FHB",5,6,4,"0EA5E9","A5F3FC","water spirit maiden with flowing body","splash","A splash with a personality.","elemental,aquatic"},
 	{"unenlagia","AMCJBA","DQfT",5,9,3,"8A7A5A","D8C8A8","flapping-arm raptor","screech","Flaps arms. Can't fly. Tries.","dinosaur,extinct,reptile,predator"},
 	{"unicorn","AHDKAA","DFTg",6,8,6,"FDF4FF","F0ABFC","white horse, spiral horn, rainbow mane","neigh","Pointy, sparkly, emotionally unavailable.","mythical,mount,holy,cute"},
 	{"unicorn cake","ILCLKI","dSc",2,3,3,"F7F4F0","F2A6C8","white cake with gold horn","chomp","A cake with a horn. Magical.","edible,sweet,mythical"},
@@ -184,6 +188,7 @@ return {
 	{"vole","AMAJAA","Cdb",1,6,1,"7A6250","C8B49E","stubby tail, round body","squeak","Mouse with a smaller tail.","mammal,cute"},
 	{"volleyball","BMBG3F","Uke",2,7,3,"F2F2EE","2F6FD1","panelled white and blue ball","bonk","Bump, set, SPIKE.","sport"},
 	{"volleyball player","LMCJNG","Uke",4,7,4,"F8FAFC","FACC15","kneepads, spike pose","thud","Spikes the ball. Into your face.","sport"},
+	{"volleyball spike","BMBA3K","Eke",5,10,1,"F8E9B0","1F5FBF","panelled ball set high and spiked down hard","thump","Set... and SPIKE.","sport,volleyball,projectile"},
 	{"volt","FDBAKB","eL",3,9,1,"FFE81F","4DA3FF","bright yellow electric pip","zap","One unit of ouch.","electric"},
 	{"volt edge","KDBOKI","DfLO",8,10,2,"9FD8FF","FFFFFF","a screeching fist of lightning that charges through","zap","Sounds like a thousand birds. Hurts like more.","anime,ninja,lightning"},
 	{"volume","KFCF6B","jkIO",5,8,1,"EF4444","FACC15","speaker cone blasting bars that go into the red","boom","TURNED UP. WHAT? I SAID TURNED UP.","music,loud"},
@@ -398,9 +403,4 @@ return {
 	{"whack a mole","AECLtG","Ck",4,7,4,"8B5A2B","FF4F6E","mole holes round you and a cartoon mallet","bonk","Bonk! Missed. Bonk!","game,arcade,area"},
 	{"whack-a-mole mallet","BMCHtI","kfO",3,7,3,"C0392B","F1C40F","padded arcade mallet","thud","Bonk! Bonk! Bonk!","game,silly"},
 	{"whale","ABFJEC","kIB",8,3,9,"3E5A78","C8D6E2","enormous streamlined body, fluke tail, spout","whalesong","Burps rainbows from its blowhole. Allegedly.","mammal,aquatic,ocean,heavy"},
-	{"whale shark","ABFJEC","DHB",8,3,9,"3A5470","F2F2EE","colossal shark, white polka-dot back","chomp","Biggest fish. Eats only tiny stuff.","fish,aquatic,ocean,predator,gentle"},
-	{"wham","KMCAKB","k",5,9,1,"2979FF","FFEB3B","comic jagged impact bubble","wham","Wham! Comic book justice.","silly"},
-	{"what","KLBF6B","jIO",2,6,1,"FACC15","111827","shock ring of interrobangs and tilted heads","boing","WHAT? WHAT? ...what?","silly,meme"},
-	{"wheat","NGCNMI","ZSN",1,1,2,"E6C27A","FFD54F","golden swaying grain heads","rustle","Amber waves of distraction.","plant"},
-	{"wheel","BMBA3F","UDk",3,8,5,"1F2937","9CA3AF","runaway rubber wheel with a silver hubcap, rolling fast","rumble","Reinvented. Now with more rolling over you.","vehicle,mechanical"},
 }

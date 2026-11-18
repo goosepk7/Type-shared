@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"encantado","ABCJEC","jcB",4,8,3,"F9A8D4","0EA5E9","pink river dolphin in a straw hat","splash","Shows up at parties. Hides his blowhole.","mythical,aquatic"},
+	{"enceladus","MCDGKJ","Je",4,4,6,"FFFFFF","B3E5FC","bright white moon shooting ice jets","rumble","Sneezes ice into space.","space"},
+	{"enchanted forest","MLFNII","jFSNY",5,1,8,"7E57C2","66BB6A","glowing trees, floating sparkles, mushrooms","rumble","Pretty, sparkly, and very confusing.","place,terrain,magic"},
 	{"enchanted sled","DCCKHB","DAJg",4,8,4,"1565C0","FFD54F","glowing sled pulled through the sky","whoosh","Sledding season is forever.","vehicle,magic,mythical"},
 	{"enchanter","LLCJNA","GjF",4,4,4,"A855F7","FDE68A","robe with glowing rune scrolls","chime","Your sword now glows. Upcharge.","magic"},
 	{"enchantment","FLBOKJ","Fa",3,5,3,"C77DFF","F7E1FF","glowing runes circling the caster","chime","Now with +1 sparkle.","magic"},
@@ -241,6 +244,7 @@ return {
 	{"fight cloud","KMCNOK","Dkf",4,6,2,"F3EBDD","FFD54F","a rolling dust ball of fists, boots and stars","bonk","Nobody knows who's winning.","cartoon,silly,melee"},
 	{"fighter squadron","DFFELB","EAeP",8,9,6,"607D8B","37474F","wing of jets in tight formation","jet","Here comes the whole squadron.","vehicle,air"},
 	{"figure skater","LCCJNK","jJY",3,8,3,"F9A8D4","BAE6FD","sparkly outfit, mid-spin on ice","whoosh","Spins so fast it freezes the air.","sport,frozen"},
+	{"figure spin","KCCN5K","kHI",4,7,2,"BFE8FF","FFFFFF","skater spinning on an ice disc in a whirl of frost","whoosh","Land the triple axel.","sport,skating,melee,ice"},
 	{"file","JKAHJK","fN",1,5,5,"8E9196","24262A","rough flat bar, ridged face","clank","Scritch scratch. Smooth.","tool"},
 	{"filefish","ABAJEC","dB",1,6,1,"8A9A6A","C8D0A0","flat leathery fish","splash","Looks like sandpaper.","fish,aquatic"},
 	{"filing cabinet","BKCCII","Gk",2,1,8,"8E9196","4A4D52","metal drawers on top of drawers","thud","Paperwork armour.","office"},
@@ -399,8 +403,4 @@ return {
 	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
 	{"flame turret","OACMwI","KeP",6,5,6,"4A4D52","D9480F","squat nozzle tower with fuel tank","hum","Toasty perimeter guaranteed.","defense,flammable"},
 	{"flamethrower","CACFwI","KSeP",7,5,4,"D9480F","6B7B3A","nozzle wand with fuel tanks","whoosh","For when you want it well done.","flammable,ranged"},
-	{"flaming sphere","FACGKF","KQ",5,4,3,"FF6D00","FFE082","rolling ball of fire chasing targets","crackle","A fireball that walks you home.","fire"},
-	{"flamingo","AMCJDA","dAfT",3,5,2,"F28AA0","1E1E1E","pink bird on one leg, bent beak","squawk","Pink because of shrimp. Stands on one leg.","bird,wetland"},
-	{"flamingo chick","AMBJDA","AfT",1,5,2,"E8E0E0","C8C0C0","grey fluffy flamingo baby","squawk","Born grey. Turns pink later.","bird,wetland,cute"},
-	{"flan","IMBLGG","USN",2,3,3,"F2C24A","8A4A1E","wobbly custard, caramel top","wobble","Shakes like it's nervous.","edible,wobbly,sweet"},
 }
