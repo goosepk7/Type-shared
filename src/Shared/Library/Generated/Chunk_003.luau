@@ -355,6 +355,7 @@ return {
 	{"bouncy ball","BMAG3F","Uke",1,9,2,"FF3EA5","8BC34A","small glossy bouncy ball","squeak","Never stops bouncing. Never.","toy"},
 	{"bouncy bomb","CACGKF","UEe",6,6,2,"24262A","F1C40F","rubbery bomb that bounces","boom","Boing. Boing. BOOM.","explosive,silly"},
 	{"bouncy castle","EMDCII","GUkS",2,1,4,"E53935","FFEB3B","inflatable red-and-yellow turrets","boing","Boing! Boing! Out you go.","structure,silly"},
+	{"bouncy pal","BMCJ3G","Uh",2,6,3,"F2483A","FFD640","a big squishy rubber ball buddy with dot eyes","boing","Best friends bounce together.","cartoon,toy,summon,cute"},
 	{"bounty hunter","LKCJNA","QHe",6,7,6,"57534E","0EA5E9","helmet visor, jetpack, grapple cable","bang","Always gets the target. Eventually.","warrior,space"},
 	{"bouquet","NGBAMI","dFe",2,1,2,"F48FB1","FFEB3B","wrapped bundle of mixed blooms","rustle","For you. Thrown at you.","plant,flower"},
 	{"bow","CMCAvI","Te",4,7,3,"8B5A2B","B89B6A","curved wooden bow, taut string","twang","Pull back. Let go. Hope.","medieval,ranged"},
@@ -402,5 +403,4 @@ return {
 	{"bramble","NGCLMI","WSTHN",3,1,4,"4E342E","7CB342","tangle of thorny arching canes","rustle","Prickly, sticky, grabby.","plant,sharp"},
 	{"bramble elemental","AGDJMA","THN",6,3,6,"365314","DC2626","tangle of thorny bramble shaped like a beast","rustle","Hugs hurt. A lot.","elemental,plant"},
 	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},
-	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
 }

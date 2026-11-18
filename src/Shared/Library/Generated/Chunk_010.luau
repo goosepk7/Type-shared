@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flock","AFDDLB","jAPb",5,7,3,"ECEFF1","607D8B","swirling V of small birds, feathers drifting","tweet","Birds of a feather attack together.","bird,swarm"},
 	{"flood","HBENOI","SINP",7,4,5,"2269A8","A9DBF5","rising murky water filling the area","splash","Everything is a swimming pool now.","natural,aquatic"},
 	{"floodlight","OHDBmI","cO",2,1,6,"8E9196","F2F2EE","bank of huge bright lamps","clank","Blinding stadium glare.","mechanical"},
 	{"floor","FEDNnI","kSN",4,1,9,"B5803C","8B5A2B","wide wooden floorboards tilting like a seesaw","creak","The floor is the floor. That is worse.","household,terrain"},
@@ -402,5 +403,4 @@ return {
 	{"ghost hunter","LHCJNA","He",5,5,5,"F8FAFC","22C55E","jumpsuit, proton-style backpack vacuum","zap","Who you gonna call? This person.","spooky"},
 	{"ghost king","AIDJNJ","iAh",7,5,4,"A5B4FC","CA8A04","crowned translucent giant","wail","Rules a kingdom of sheets.","ghost,royal,boss"},
 	{"ghost lantern bearer","AICJNJ","Ac",3,4,2,"F8FAFC","FACC15","ghost carrying a glowing lantern","whisper","Lights the way. Somewhere strange.","ghost"},
-	{"ghost locomotive","DIEKHL","DZkTg",7,7,5,"80DEEA","263238","glowing see-through steam engine","whistle","A train that crashed a century ago. Still running late.","spooky,undead"},
 }

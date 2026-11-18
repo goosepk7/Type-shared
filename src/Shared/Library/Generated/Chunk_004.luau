@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
@@ -385,6 +386,7 @@ return {
 	{"cardboard box","BMBO2I","Zc",2,5,4,"C69C6D","7A4E2D","a taped cardboard box with two eye holes","thud","Totally just a box. Move along.","silly,stealth,modern"},
 	{"cardboard box car","DMAKHL","Ddkg",1,3,1,"C8A27A","8D6E63","cardboard box with drawn-on wheels","engine","Vroom! (Noises made by mouth.)","vehicle,silly,cute"},
 	{"cardboard fort","EMCCII","GdS",1,1,2,"C8A27A","6D4C41","taped boxes with drawn-on windows","thud","Drawn-on cannons. Real enthusiasm.","silly,flammable"},
+	{"cardboard mech","OECJNA","kfh",3,3,4,"C4945C","E62834","a kid in a crayon-drawn cardboard-box robot costume","stomp","Beep boop. Mom, look!","cartoon,toy,summon,silly"},
 	{"cardboard sword","BMCHrK","df",1,6,1,"C69C6D","7A4E2D","wobbly taped cardboard blade","shing","Handmade. Heartfelt. Floppy.","toy,silly"},
 	{"cardboard tube sword","BMCHrK","df",1,7,1,"C69C6D","C0392B","long cardboard tube","thud","Bonk-a-bonk.","toy,silly"},
 	{"cardboard wall","EEBCII","GdS",1,1,1,"C8A27A","8D6E63","stacked cardboard boxes, tape","thud","Structural integrity: hopeful.","silly,flammable"},
@@ -401,6 +403,4 @@ return {
 	{"carnation","NGBNMI","dFS",2,1,2,"F48FB1","43A047","frilly ruffled bloom","rustle","Fancy frills for fancy fights.","plant,flower"},
 	{"carne asada","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled sliced beef","thud","Grilled beef, ready for tacos.","edible,savory"},
 	{"carnitas","IMAELB","ce",2,7,1,"B0602B","F2C870","crispy shredded pork","pitter","Crispy, juicy shreds.","edible"},
-	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
-	{"carnotaurus","AMDJBA","DkfT",7,8,7,"B8401E","3A2A1E","bull horns, tiny arms, fast","roar","A bull and a T rex had a sprinter.","dinosaur,extinct,reptile,predator"},
 }
