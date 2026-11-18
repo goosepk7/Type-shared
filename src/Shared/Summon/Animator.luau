@@ -128,7 +128,8 @@ end
 
 function Animator._apply(self: any, _dt: number)
 	local clip = self.clip
-	local len = Motion.clipLength[clip] or 1
+	local authored = self.rig.clips and self.rig.clips[clip]
+	local len = if authored and not authored.loop then authored.len else Motion.clipLength[clip] or 1
 	if not Motion.looping[clip] and self.time >= len then
 		if clip == "Die" then
 			self.time = len

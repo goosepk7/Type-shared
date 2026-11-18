@@ -114,10 +114,100 @@ local function add(out: any, bone: string?, px: number, py: number, pz: number, 
 	o[6] += rz
 end
 
+-- Keyframed clips of hero models (Heroes/, authored in tools/meshgen/heroes/motion.py): c = { len, loop, keys,
+-- tracks = { [bone] = { 6 numbers per key } } }. Catmull-Rom between keys, cyclic for loops.
+function Motion.sampleClip(c: any, t: number, out: { [string]: { number } }, w: number?, ps: number?)
+	local n, L = c.keys, c.len
+	local weight = w or 1
+	local pscale = ps or 1
+	local i0, f
+	local i1, i2, i3, im
+	if c.loop then
+		local u = ((t % L) / L) * n
+		i0 = math.floor(u)
+		f = u - i0
+		i0 %= n
+		im, i1, i2, i3 = (i0 - 1) % n, i0, (i0 + 1) % n, (i0 + 2) % n
+	else
+		local u = math.clamp(t / L, 0, 1) * (n - 1)
+		i0 = math.min(math.floor(u), n - 2)
+		f = u - i0
+		im, i1, i2, i3 = math.max(i0 - 1, 0), i0, i0 + 1, math.min(i0 + 2, n - 1)
+	end
+	local f2, f3 = f * f, f * f * f
+	for bone, tr in c.tracks do
+		local o = out[bone]
+		if o == nil then
+			o = { 0, 0, 0, 0, 0, 0 }
+			out[bone] = o
+		end
+		local a, b, cc, d = im * 6, i1 * 6, i2 * 6, i3 * 6
+		for k = 1, 6 do
+			local p0, p1, p2, p3 = tr[a + k], tr[b + k], tr[cc + k], tr[d + k]
+			o[k] += (if k <= 3 then weight * pscale else weight) * 0.5 * ((2 * p1) + (-p0 + p2) * f + (2 * p0 - 5 * p1 + 4 * p2 - p3) * f2 + (-p0 + 3 * p1 - 3 * p2 + p3) * f3)
+		end
+	end
+end
+
+-- Hero rigs: the authored loop (Idle / Move) underneath, an authored one-shot (Attack / Hit) on top when the hero has
+-- one, else the procedural one-shot layer; material motion and mood posture as for generated rigs.
+local function heroPose(rig: any, clip: string, t: number, oo: any): { [string]: { number } }
+	local out: { [string]: { number } } = {}
+	local spd = Motion.moodSpeed(oo.mood)
+	local clips = rig.clips
+	local looping = Motion.looping[clip] == true
+	if looping then
+		local c = clips[clip] or clips.Idle
+		if c then
+			Motion.sampleClip(c, t * spd, out, 1, rig.clipScale)
+		end
+	else
+		local c = clips[clip]
+		if c then
+			Motion.sampleClip(c, t, out, 1, rig.clipScale)
+		else
+			if clips.Idle then
+				Motion.sampleClip(clips.Idle, t, out, 1, rig.clipScale)
+			end
+			local proc = Motion.pose({ gait = "static", head = rig.head, legs = rig.legs, arms = rig.arms, jaw = rig.jaw }, clip, t, oo)
+			for bone, v in proc do
+				local o = out[bone]
+				if o == nil then
+					out[bone] = v
+				else
+					for k = 1, 6 do
+						o[k] += v[k]
+					end
+				end
+			end
+		end
+	end
+	if rig.materialMotion then
+		local proc = Motion.pose({ gait = "static", materialMotion = rig.materialMotion }, "Idle", t, { height = oo.height, seed = oo.seed })
+		local body = proc.Body
+		if body then
+			local o = out.Body or { 0, 0, 0, 0, 0, 0 }
+			out.Body = o
+			for k = 1, 6 do
+				o[k] += body[k]
+			end
+		end
+	end
+	if (oo.mood == "Sleepy" or oo.mood == "Sad" or oo.mood == "Lazy") and rig.head then
+		local o = out[rig.head] or { 0, 0, 0, 0, 0, 0 }
+		out[rig.head] = o
+		o[4] -= 0.22
+	end
+	return out
+end
+
 -- rig: blueprint rig; clip: Idle|Move|Attack|Hit|Die|Spawn; t: seconds into the clip.
 -- o: { height = studs, speed = multiplier, mood = string, seed = number }
 function Motion.pose(rig: any, clip: string, t: number, o: any?): { [string]: { number } }
 	local oo = o or {}
+	if rig.clips then
+		return heroPose(rig, clip, t, oo)
+	end
 	local out: { [string]: { number } } = {}
 	local g = GAIT[rig.gait or "static"] or GAIT.static
 	local h = oo.height or 5

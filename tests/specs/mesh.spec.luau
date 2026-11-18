@@ -66,6 +66,9 @@ return function(t)
 
 	local function usable(id: string): boolean
 		local rec = Assets[id]
+		if string.sub(id, 1, 2) == "h_" then
+			return true -- hero pieces ship in per-hero packs (Heroes/Packs.luau); hero.spec checks them
+		end
 		return rec ~= nil and (rec.set == "summon" or MeshMap.Shared[id] == true)
 	end
 

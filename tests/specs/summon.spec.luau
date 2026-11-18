@@ -62,6 +62,9 @@ return function(t)
 					local bp = Summon.blueprint(r, { style = style, seed = 3 })
 					t.ok(bp.stats.parts <= bp.stats.budget, r.id .. " " .. size .. " over budget")
 					local cap = cfg.PartBudget[size] * (if string.sub(bp.builder, 1, 10) == "signature:" then 1 + cfg.SignatureBonus else 1)
+					if string.sub(bp.builder, 1, 5) == "hero:" then
+						cap = math.max(cap * (1 + cfg.SignatureBonus), #Summon.Heroes.get(string.sub(bp.builder, 6)).parts + 4)
+					end
 					t.ok(bp.stats.parts <= math.floor(cap), r.id .. " exceeds size budget")
 					maxSeen = math.max(maxSeen, bp.stats.parts)
 				end
@@ -71,7 +74,11 @@ return function(t)
 		for _, s in F.SignatureWords do
 			local r = F.signatureResult(Schema, s)
 			local bp = Summon.blueprint(r, { style = "Spectral" })
-			t.ok(bp.stats.parts <= math.floor(cfg.PartBudget[r.size] * (1 + cfg.SignatureBonus)), s[1] .. " signature budget")
+			local cap = math.floor(cfg.PartBudget[r.size] * (1 + cfg.SignatureBonus))
+			if string.sub(bp.builder, 1, 5) == "hero:" then
+				cap = math.max(cap, #Summon.Heroes.get(string.sub(bp.builder, 6)).parts + 4)
+			end
+			t.ok(bp.stats.parts <= cap, s[1] .. " signature budget")
 		end
 	end)
 
@@ -113,7 +120,7 @@ return function(t)
 	t.test("20+ signatures are registered and each fixture uses its signature", function()
 		local n = 0
 		for _, s in F.SignatureWords do
-			local bp = Summon.blueprint(F.signatureResult(Schema, s), { style = "Solid" })
+			local bp = Summon.blueprint(F.signatureResult(Schema, s), { style = "Solid", heroes = false })
 			t.eq(bp.builder, "signature:" .. s[1], "builder for " .. s[1])
 			n += 1
 		end

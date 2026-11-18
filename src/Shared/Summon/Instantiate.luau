@@ -631,8 +631,29 @@ function Instantiate.build(bp: any, result: any?, opts: any?): any
 	if bp.meshAsset and o.loadMesh ~= false then
 		Instantiate.attachMesh(top, bp, bp.meshAsset)
 	end
+	-- hero models: their pack loads on demand (Summon.ensureMeshes); upgrade the moment every piece is in
+	local heroWait = false
+	if o.meshes ~= false and type(bp.builder) == "string" and string.sub(bp.builder, 1, 5) == "hero:" then
+		local lib = meshLib()
+		if lib and type(lib.onPieces) == "function" and type(lib.live) == "function" and lib.live() then
+			local ids = {}
+			for _, p in bp.parts do
+				if type(p.mesh) == "string" then
+					table.insert(ids, p.mesh)
+				end
+			end
+			if top:GetAttribute("MeshPending") then
+				heroWait = true
+				lib.onPieces(ids, function()
+					if top.Parent ~= nil or o.parent == nil then
+						pcall(Instantiate.upgradeMeshes, top, bp, o)
+					end
+				end)
+			end
+		end
+	end
 	-- sculpted pieces still loading: start the loader if nobody did, and upgrade this model when they arrive
-	if o.meshes ~= false and (bp.stats and (bp.stats.meshParts or 0) > 0) then
+	if not heroWait and o.meshes ~= false and (bp.stats and (bp.stats.meshParts or 0) > 0) then
 		local lib = meshLib()
 		if lib and type(lib.ready) == "function" and type(lib.live) == "function" and lib.live() then
 			local okReady, ready = pcall(lib.ready)

@@ -129,6 +129,52 @@ function MeshLibrary.register(pieceId: string, template: BasePart, info: { size:
 	local origin = if info and info.origin then v3(info.origin) else (attr("Origin") or (if rec then v3(rec.origin) else v3(nil)))
 	local kind = (info and info.kind) or attr("Kind") or (rec and rec.kind) or "box"
 	infos[pieceId] = { size = size, origin = origin, kind = kind }
+	MeshLibrary._notify()
+end
+
+-- Callbacks waiting for a set of pieces (hero packs arrive after the global ready flag): fn runs once every id is
+-- registered (at once when they already are). Returns a cancel function.
+local pieceWaiters: { { ids: { string }, fn: () -> () } } = {}
+function MeshLibrary._notify()
+	if #pieceWaiters == 0 then
+		return
+	end
+	for i = #pieceWaiters, 1, -1 do
+		local w = pieceWaiters[i]
+		local all = true
+		for _, id in w.ids do
+			if templates[id] == nil then
+				all = false
+				break
+			end
+		end
+		if all then
+			table.remove(pieceWaiters, i)
+			task.spawn(w.fn)
+		end
+	end
+end
+
+function MeshLibrary.onPieces(ids: { string }, fn: () -> ()): () -> ()
+	local all = true
+	for _, id in ids do
+		if not MeshLibrary.has(id) then
+			all = false
+			break
+		end
+	end
+	if all then
+		task.spawn(fn)
+		return function() end
+	end
+	local w = { ids = ids, fn = fn }
+	table.insert(pieceWaiters, w)
+	return function()
+		local i = table.find(pieceWaiters, w)
+		if i then
+			table.remove(pieceWaiters, i)
+		end
+	end
 end
 
 -- Forget everything (tests / the offline renderer's "before" pass).
@@ -453,6 +499,68 @@ function MeshLibrary.start(filter: ((string, any) -> boolean)?, opts: StartOptio
 		table.insert(queue, id)
 	end
 	pump()
+end
+
+-- SERVER ONLY: load a PACK (one Model asset holding many MeshParts, each named by its piece id; hero models) into
+-- the replicated folder. Idempotent per asset id; returns at once. Pieces register as "box" pieces at their native
+-- size (the blueprint part already carries the box).
+local packsRequested: { [number]: boolean } = {}
+function MeshLibrary.loadPack(assetId: number)
+	if not isLive() or not isServer() or packsRequested[assetId] then
+		if isLive() and not isServer() then
+			hookFolder()
+		end
+		return
+	end
+	packsRequested[assetId] = true
+	if loadFolder == nil then
+		local RS = gameAny():GetService("ReplicatedStorage")
+		local folder = RS:FindFirstChild(MeshLibrary.FolderName) or Instance.new("Folder")
+		folder.Name = MeshLibrary.FolderName
+		folder.Parent = RS
+		loadFolder = folder
+		folderHooked = true
+		if pending <= 0 then
+			folder:SetAttribute("Ready", true)
+		end
+	end
+	task.spawn(function()
+		local InsertService = gameAny():GetService("InsertService")
+		for attempt = 1, 4 do
+			local ok, model = pcall(function(): Instance?
+				return InsertService:LoadAsset(assetId)
+			end)
+			if ok and model then
+				local parts = {}
+				for _, d in model:GetDescendants() do
+					if d:IsA("MeshPart") then
+						table.insert(parts, d)
+					end
+				end
+				for _, d in parts do
+					local m = d :: BasePart
+					if templates[m.Name] == nil then
+						m.Parent = nil
+						m.Anchored = true
+						m.CanCollide = false
+						m.CanQuery = false
+						m.CanTouch = false
+						m.CastShadow = true
+						m:SetAttribute("NativeSize", m.Size)
+						m:SetAttribute("Origin", Vector3.zero)
+						m:SetAttribute("Kind", "box")
+						MeshLibrary.register(m.Name, m, { size = m.Size, origin = Vector3.zero, kind = "box" })
+						m.Parent = loadFolder
+					end
+				end
+				model:Destroy()
+				return
+			end
+			task.wait(0.5 * 2 ^ attempt)
+		end
+		packsRequested[assetId] = nil
+		warn("[MeshLibrary] pack " .. tostring(assetId) .. " failed to load (parts fallback)")
+	end)
 end
 
 -- Same as start (kept for callers that used the old non-yielding entry point). Safe on a client: no-op there

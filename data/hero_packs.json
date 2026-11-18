@@ -1,0 +1,68 @@
+{
+ "black panther": {
+  "assetId": 126310371292462,
+  "hash": "9591992a8aa33ed9",
+  "pieces": 22,
+  "tris": 17090
+ },
+ "cat": {
+  "assetId": 129285473183875,
+  "hash": "55bca214e7a2d544",
+  "pieces": 22,
+  "tris": 17090
+ },
+ "cheetah": {
+  "assetId": 95704860670776,
+  "hash": "b5d2955c50e98465",
+  "pieces": 22,
+  "tris": 17090
+ },
+ "leopard": {
+  "assetId": 96549450228431,
+  "hash": "876397e5b3ace34f",
+  "pieces": 22,
+  "tris": 17090
+ },
+ "lion": {
+  "assetId": 70388572762098,
+  "hash": "c3e7a70e8dc2d9a5",
+  "pieces": 23,
+  "tris": 19640
+ },
+ "lioness": {
+  "assetId": 138296476375551,
+  "hash": "937317c94f43bc1b",
+  "pieces": 22,
+  "tris": 17240
+ },
+ "lynx": {
+  "assetId": 102981765438099,
+  "hash": "0067c49e96618de0",
+  "pieces": 21,
+  "tris": 16740
+ },
+ "puma": {
+  "assetId": 85445241701832,
+  "hash": "ebcb8f600efae73c",
+  "pieces": 22,
+  "tris": 17090
+ },
+ "sabertooth": {
+  "assetId": 119809230333447,
+  "hash": "8dd014bbeb074cb5",
+  "pieces": 21,
+  "tris": 16740
+ },
+ "snow leopard": {
+  "assetId": 133915486692694,
+  "hash": "8679acc872db03f6",
+  "pieces": 22,
+  "tris": 17090
+ },
+ "tiger": {
+  "assetId": 105353594780669,
+  "hash": "5d58947ba62507b3",
+  "pieces": 22,
+  "tris": 17090
+ }
+}

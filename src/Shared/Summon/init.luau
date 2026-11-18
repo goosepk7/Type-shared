@@ -24,6 +24,7 @@ local Signatures = require(script.Signatures)
 local Materials = require(script.Materials)
 local Accents = require(script.Accents)
 local MeshMap = require(script.MeshMap)
+local Heroes = require(script.Heroes)
 
 local Summon = {}
 
@@ -34,6 +35,7 @@ Summon.Plans = Plans
 Summon.Materials = Materials
 Summon.Accents = Accents
 Summon.MeshMap = MeshMap
+Summon.Heroes = Heroes
 
 -- Material records come from Library.material when present; a provider can supply them otherwise.
 function Summon.setMaterialProvider(fn: ((string) -> any)?)
@@ -284,11 +286,23 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 	local rng = Rng.new(bit32.bxor(Rng.hash(id .. "|" .. style), math.floor(seed) % 4294967296))
 	local t = Traits.read(r)
 	local sigId, sigFn = Signatures.find(r)
+	-- hero models (Heroes/): a fully sculpted model with its own skeleton wins over signatures and plans
+	local heroId, heroDef = nil, nil
+	if o.heroes ~= false then
+		heroId, heroDef = Heroes.find(r)
+	end
+	if heroDef then
+		sigId, sigFn = nil, nil
+	end
 	-- Budget first, so generators pick a matching level of detail instead of building parts that get dropped.
 	local count = math.clamp(math.floor(tonumber(r.count) or 1), 1, 12)
 	local maxParts = (cfg.PartBudget[r.size or "Medium"] or 20)
 	if sigFn then
 		maxParts = math.floor(maxParts * (1 + cfg.SignatureBonus))
+	end
+	if heroDef then
+		-- a hero is one coherent model: its own part list is the budget (fine detail still drops first on Low)
+		maxParts = math.max(math.floor(maxParts * (1 + cfg.SignatureBonus)), #heroDef.parts + 4)
 	end
 	if count > 1 then
 		maxParts = math.max(cfg.FormationMinParts, math.floor(maxParts * cfg.FormationBudgetScale / count))
@@ -318,7 +332,10 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 
 	local builderName
 	local plan = (r.visual and r.visual.bodyPlan) or "Blob"
-	if sigFn then
+	if heroDef and heroId then
+		Heroes.build(B, ctx, heroId, heroDef)
+		builderName = "hero:" .. heroId
+	elseif sigFn then
 		sigFn(B, ctx)
 		builderName = "signature:" .. sigId
 	else
@@ -397,6 +414,9 @@ function Summon.blueprint(result: any, opts: any?): Blueprint
 	local k = target / math.max(extent, 1e-3)
 	scaleAll(bp, k)
 	bp.scale = k
+	if bp.rig.clips then
+		bp.rig.clipScale = k -- authored clip translations are in model studs
+	end
 	local fixes = Overlap.fix(bp.parts, cfg.Inset)
 
 	-- unique, stable part names
@@ -502,6 +522,25 @@ end
 function Summon.preloadMeshes()
 	local Instantiate = require(script.Instantiate) :: any
 	Instantiate.preloadMeshes()
+end
+
+-- SERVER: start loading the sculpted pieces of the hero model `result` builds as (one pack asset per hero; no-op for
+-- words without a hero, or offline). Call it when a summon / mount is cast, before clients build the body: they
+-- upgrade from the primitive fallback the moment the pieces replicate. Returns the hero id (or nil).
+function Summon.ensureMeshes(result: any): string?
+	local id = Heroes.find(result)
+	if id then
+		local asset = Heroes.pack(id)
+		if asset then
+			local ok, lib = pcall(function(): any
+				return require(script.Parent.Meshes.MeshLibrary) :: any
+			end)
+			if ok and lib and type(lib.loadPack) == "function" then
+				pcall(lib.loadPack, asset)
+			end
+		end
+	end
+	return id
 end
 
 -- Use a game's own MeshLibrary-compatible module (same get/place/fit/has/info/preload API) for summon pieces.

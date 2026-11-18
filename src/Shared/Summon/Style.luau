@@ -75,6 +75,12 @@ local function solidColours(r: any, t: any): { [string]: RGB }
 		mouth = Palette.hex("#3B1820"),
 		tongue = Palette.hex("#E8607A"),
 		blush = Palette.hex("#FF8FA3"),
+		nose = Palette.hex("#3A2A28"),
+		leather = Palette.hex("#6B4423"),
+		rubber = Palette.hex("#2A2C31"),
+		chrome = Palette.hex("#D5DCE3"),
+		paint = pc,
+		trim = sc,
 	}
 	return c
 end

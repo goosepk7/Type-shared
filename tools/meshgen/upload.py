@@ -173,6 +173,8 @@ def main():
         if only and pid not in only:
             continue
         info = man[pid]
+        if info.get("set") == "hero":
+            continue  # hero pieces ship packed, one asset per hero (tools/meshgen/heroes/upload.py)
         path = os.path.join(OUT, pid + ".glb")
         h = glb_hash(pid)
         prev = assets.get(pid)
