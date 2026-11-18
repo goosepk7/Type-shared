@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lunar wolf","AHCJAA","Dfh",5,8,4,"E5E7EB","818CF8","silver wolf glowing with moonlight","howl","Howls at itself.","cosmic,canine"},
 	{"lunch","IMBL2I","dFc",2,1,2,"B45309","84CC16","brown paper bag with a sandwich, apple and juice box","crunch","Trade you my apple for your cookies.","edible,school"},
 	{"lunch lady","LMCJNA","ceN",3,4,5,"F8FAFC","FDE68A","hairnet, ladle, mystery stew","splat","Slops mystery meat. It moves.","food,silly"},
 	{"lunch money","BMAAJK","ce",1,7,1,"2E8B57","C9CED4","few coins and a note","tap","Tempting.","school"},
@@ -402,6 +403,4 @@ return {
 	{"mimic octopus","ABCJSC","jZHBY",4,6,3,"B89A7A","3A2A20","striped octopus shape-shifting","squelch","Impersonates other animals. Badly. Hilariously.","aquatic,ocean,smart"},
 	{"mimic plant","NLBLMI","Zcf",3,2,3,"7CB342","C62828","flower that looks like whatever is near","chime","Is that a flower? It bites.","plant,magic,mythical"},
 	{"minaret","EMDMII","GSe",3,1,7,"F5F5F5","1E88E5","slim tower with balcony and onion top","thud","Tall and elegant. Great view.","structure,defense,tower"},
-	{"mince pie","IMBAKK","Uke",3,7,2,"D9A04A","6B3A1E","small star-topped pie","whoosh","A tiny festive pie.","edible,holiday"},
-	{"mind","KLCF6B","jlHO",5,6,2,"C084FC","F0ABFC","pink ripple rings spreading from a glowing third eye","hum","Mind over matter. Matter is not happy about it.","magic,psychic"},
 }

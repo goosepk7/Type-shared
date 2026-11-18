@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spy plane","DFDKHB","AZeg",5,10,5,"212121","455A64","long black plane, very thin wings","jet","Sees everything. Says nothing.","vehicle,air"},
+	{"squad","LEDJLA","GQeh",6,6,6,"57534E","A3E635","five soldiers in a wedge formation, one with a radio","whistle","Squad up. Somebody brought snacks, right?","military,gaming"},
+	{"squall","FFCFOB","kIP",5,8,2,"6F8796","CBD8E0","sudden dark rain-wind burst","howl","Five seconds of pure chaos.","air,storm"},
+	{"square","KEBCnI","GkO",3,2,6,"EF4444","FFFFFF","flat red square stamping down, four sharp corners","thunk","Four sides. All of them against you.","school,shape"},
+	{"squash","IGBGKF","DkI",4,5,6,"E8A33A","5E7A2B","bulbous yellow neck squash","rumble","Its name is a battle plan.","edible,heavy"},
 	{"squash vine","NGCNMI","SN",2,1,4,"2E7D32","FFB300","sprawling vine with chunky gourds","rustle","Gourds everywhere. Trip hazard.","plant,crop,silly"},
 	{"squeaky mallet","CMCHtK","dfO",1,6,2,"C0392B","F2F2EE","huge squeaky rubber hammer","boing","SQUEAK. Ouch? Not really.","silly"},
 	{"squeaky toy","BMAHJK","jdf",1,7,2,"F1C40F","C0392B","rubber toy that squeaks","squeak","SQUEAK. SQUEAK. SQUEAK.","toy"},
@@ -398,9 +403,4 @@ return {
 	{"survivalist","LGCJNA","FZc",4,5,5,"4D7C0F","78350F","camo, knife, fire starter","ding","Eats bugs. Builds shelter. Wins.","outdoor"},
 	{"survivor","LGCJNA","GFZf",5,5,8,"57534E","84CC16","ragged tough figure with a pan, backpack and a bandaged arm","grunt","Eaten worse. Fought worse. Slept in worse.","warrior"},
 	{"sushi","IMAELB","ceP",2,7,1,"F7F4EC","E8603A","rice block, salmon slice, nori band","pitter","Tiny rice pillows with fish hats.","edible"},
-	{"sushi chef","LMCJNA","Te",4,7,3,"F8FAFC","DC2626","white headband, sharp knife","swish","Precise slicing. Precise everything.","food"},
-	{"sushi roll","IMAELB","ceP",2,7,1,"2A3A2A","F7F4EC","seaweed-wrapped rice cylinder slices","pitter","Rolled, sliced, and ready to launch.","edible"},
-	{"suspenders","BMAANI","Ue",1,7,2,"C0392B","B58A3A","stretchy straps with clips","swish","Twang!","clothing"},
-	{"suspense","KLCNOI","NO",4,2,3,"311B92","FFFFFF","everything hanging in tense slow motion","dun","Wait for it... wait for it...","silly"},
-	{"suv","DMCKHL","Dkg",5,7,7,"37474F","B0BEC5","tall boxy car, roof rails","engine","Climbs kerbs. Climbs enemies.","mechanical,vehicle,land"},
 }

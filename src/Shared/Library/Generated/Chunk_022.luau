@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rooftop","MECCII","GS",2,1,7,"616161","90CAF9","flat roof with vents and antennas","rumble","High ground in the city.","place,terrain"},
+	{"rooibos","IABOKI","KF",2,5,2,"C8402B","F2E2C8","red tea in a cup","slurp","Red bush tea, sweet and calm.","edible,drink,warm"},
+	{"rook","AIAJDB","dA",1,7,1,"1E1E24","C8C8CC","black crow with pale face","tweet","Builds rookery cities. Smart.","bird,cute,smart"},
+	{"room","MMDLlI","jSN",4,1,6,"93C5FD","F9A8D4","cutaway bedroom box: bed, posters, clothes mountain","thud","Clean it. No, really. There is a smell.","household,silly"},
+	{"roommate","LMCJNA","SNb",3,3,4,"84CC16","A3A3A3","person in pajamas eating your labelled leftovers","chomp","Ate your food. Left one bite. As a message.","silly"},
 	{"rooster","AMBJDA","dfO",2,4,2,"B8401E","1E3A2A","proud tail feathers, big red comb","crow","Alarm clock that cannot be snoozed.","bird,farm"},
 	{"root","FGCLMI","NO",4,3,5,"5D4037","81C784","thick roots coiling around feet","creak","You are not going anywhere.","plant"},
 	{"root beer","IBBFKI","EkI",3,7,1,"4A2416","F2E2C8","frothy brown mug","fizz","Frothy and foamy.","edible,drink,fizzy"},
@@ -398,9 +403,4 @@ return {
 	{"self balancing scooter","DMAKHF","Dkg",2,5,2,"2B2B2B","C0C0C0","two side wheels, tall handle post","engine","Leans forward. Achieves victory.","mechanical,vehicle,land,silly"},
 	{"selfie","KHBF6B","jdO",3,8,1,"FFFFFF","EC4899","phone on a stick with a blinding flash and a pout","click","But first, let me blind you.","meme,internet"},
 	{"selkie","ABCJAC","jFB",4,7,4,"64748B","E2E8F0","seal with a woman's face, silky coat","splash","A seal on weekdays, a person on weekends.","mythical,aquatic"},
-	{"seltzer spray","BBBHwI","kN",2,7,2,"7FD3F5","C9CDD6","a soda siphon that sprays a fizzy jet","fizz","Refreshing. Aggressively.","cartoon,silly,water"},
-	{"semifreddo","ICBAKJ","JeN",3,5,2,"F7E8C8","D7263D","half-frozen sliced dessert","squish","Half frozen, fully elegant.","edible,frozen,sweet,dessert"},
-	{"sense warp","KLBAKI","eY",5,10,2,"FFE7A0","8FDCFF","two fingers to the brow, then a flicker beside the foe","whum","Felt your energy from across the map.","anime,ki,speed"},
-	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},
-	{"sentence","KMCBCB","STN",3,6,2,"1F2937","FFFFFF","long line of words ending in a heavy full stop","tap","Ends with a period. So do you.","school"},
 }

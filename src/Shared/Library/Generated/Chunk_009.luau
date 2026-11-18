@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"engine","OACM1I","KEkI",5,1,6,"4B5563","EF4444","chunky revving engine block, shaking, pipes blasting flame","rev","VROOM. Just the vroom. No car.","mechanical,loud"},
 	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
 	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
 	{"english muffin","IMBAKK","Uke",3,7,2,"E8D0A0","C89A5A","flat round with nooks","whoosh","Nooks, crannies, and butter traps.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"flavor","KMBDOJ","jFc",2,5,1,"F97316","A3E635","swirl of colours with a licking tongue and sparkles","slurp","Mystery flavour. It is always blue raspberry.","edible"},
 	{"flawless","KHCOKJ","GF",3,6,5,"FFFFFF","FFD54F","perfect white shine","ding","Not a scratch.","meme"},
 	{"flea","AMAJFG","UdiP",1,6,1,"6A4A2A","3A2A1A","tiny jumper","buzz","Jumps 100 times its height.","insect"},
-	{"flee","KFBOKB","DZ",1,10,1,"E0E0E0","FFFFFF","caster zooming away with dust cloud","whoosh","Tactical retreat! Very tactical.","speed,silly"},
 }

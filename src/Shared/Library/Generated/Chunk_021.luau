@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ra","LAFJNJ","KAeO",9,6,9,"F59E0B","DC2626","falcon-headed god with a blazing red sun disc on his head","screech","Two letters. One sun. No mercy.","mythical,egyptian,boss,fire,danger"},
+	{"rabbit","AMBJAG","UCdV",2,6,1,"C8B8A8","F7F4EE","long ears, fluffy cotton tail, big feet","thump","Hops. Multiplies. Repeat.","mammal,cute"},
+	{"rabbit's foot","BMAOKJ","F",1,5,1,"F2F2EE","F06292","fluffy keychain charm","boing","Lucky for you.","silly"},
+	{"rabbitfish","ABAJEC","dMB",1,6,1,"E8C82A","3A6AE8","rabbit-faced reef fish","splash","Has a bunny face. And spines.","fish,aquatic"},
 	{"raccoon","AMBJAA","dfb",2,5,3,"7A7670","1E1C1A","bandit mask, ringed tail, tiny hands","squeak","Trash panda. Night shift.","mammal,wild,nocturnal,silly"},
 	{"raccoon dog","AMBJAA","jfb",3,7,2,"6E5E4E","2A2420","round fluffy body, raccoon mask","yip","Not a raccoon. Not quite a dog.","mammal,wild"},
 	{"raccoon kit","AMAJAA","Cfb",1,5,3,"8A8680","2A2826","tiny masked fluffball","squeak","Already stealing. Just smaller things.","mammal,wild"},
@@ -399,9 +403,4 @@ return {
 	{"roman candle","CABAJF","KeV",3,6,1,"2F6FD1","D4A72C","long tube shooting coloured balls","boom","Pew pew pew, but sparkly.","party,explosive"},
 	{"roman soldier","LKCJNA","GDf",5,5,7,"991B1B","CA8A04","red tunic, square shield, plumed helmet","clang","Marches in a turtle. A very spiky turtle.","warrior,ancient"},
 	{"roofer","LMCJNA","Ge",3,5,4,"78716C","F97316","knee pads, nail gun, shingles","thud","Throws shingles like frisbees.","tools"},
-	{"rooftop","MECCII","GS",2,1,7,"616161","90CAF9","flat roof with vents and antennas","rumble","High ground in the city.","place,terrain"},
-	{"rooibos","IABOKI","KF",2,5,2,"C8402B","F2E2C8","red tea in a cup","slurp","Red bush tea, sweet and calm.","edible,drink,warm"},
-	{"rook","AIAJDB","dA",1,7,1,"1E1E24","C8C8CC","black crow with pale face","tweet","Builds rookery cities. Smart.","bird,cute,smart"},
-	{"room","MMDLlI","jSN",4,1,6,"93C5FD","F9A8D4","cutaway bedroom box: bed, posters, clothes mountain","thud","Clean it. No, really. There is a smell.","household,silly"},
-	{"roommate","LMCJNA","SNb",3,3,4,"84CC16","A3A3A3","person in pajamas eating your labelled leftovers","chomp","Ate your food. Left one bite. As a message.","silly"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nemean lion","AEDJAA","GDkf",7,7,9,"CA8A04","FEF08A","massive lion, gleaming impervious hide","roar","Fur so tough swords just bounce.","mythical,heavy"},
+	{"nemesis","LICJNA","jQf",6,6,5,"111827","DC2626","dark mirror of you with a smirk","cackle","Always one step behind. Or ahead.","villain"},
 	{"neon","FDBNOI","jc",2,5,2,"FF4081","00E5FF","glowing pink-blue neon tubes on ground","buzz","Bright. Buzzy. Very arcade.","electric"},
 	{"neon sign","BHCB1I","cO",2,1,3,"FF3EA5","3FC1D9","glowing tube letters","beep","OPEN. For business. For battle.","tech"},
 	{"nephew","LMBJNA","UDd",2,7,3,"10B981","F2D0B4","small boy with a toy dinosaur and sticky hands","giggle","Why? Why? But why? Why though?","family,cute"},
@@ -401,8 +403,4 @@ return {
 	{"paradoxical frog","AMAJAG","UeX",1,5,1,"6AA03A","C8D88A","huge tadpole, small frog","croak","Tadpole bigger than the frog.","amphibian,wetland"},
 	{"paraglider","DFBKHJ","ASg",2,4,2,"FF4081","FFEB3B","long curved canopy, dangling harness","whoosh","Floats down. Lands on heads.","vehicle,air,sport"},
 	{"paralyze","KDCAKB","eO",5,7,1,"FFF59D","7C4DFF","crackling yellow ring locking target in place","zzt","Can't move. Can't even blink.","magic"},
-	{"paramedic","LMCJNA","DQF",3,7,5,"F8FAFC","DC2626","reflective uniform, medical bag","siren","Arrives fast. Fixes things faster.","healer,rescue"},
-	{"parang","CKCHrK","fV",4,7,4,"8A929B","8B5A2B","heavy chopping blade","shing","Jungle-ready.","sharp,ancient"},
-	{"parasaurolophus","AMDJAA","dkO",5,5,6,"6A8A4A","E8A03A","long tube head crest","honk","Has a trumpet on its head. Honk!","dinosaur,extinct,reptile"},
-	{"parasite","AJAJTD","iQZb",3,6,1,"B45309","FCA5A5","wriggly pale clingy worm with a sucker mouth","slurp","Moves in. Eats your snacks. Never leaves.","science,gross"},
 }

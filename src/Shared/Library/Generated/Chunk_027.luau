@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toad","AJAJAG","UMe",1,5,1,"8A7A4A","C8B07A","warty lumpy brown body","croak","Warts and all. Mostly warts.","amphibian,wetland"},
+	{"toad in the hole","IGBOKI","F",2,5,3,"D9A04A","B0402B","sausages in puffy batter","crunch","No toads were harmed.","edible,healthy,silly"},
+	{"toadfish","ABAJEC","dB",1,6,1,"8A7A5A","C8B88A","warty fish that hums","hum","Hums so loud it keeps boats awake.","fish,aquatic"},
+	{"toast","IABAKK","UKe",3,7,2,"C8823A","F2D08A","golden square slice, browned edges","whoosh","Bread that has been through something.","edible"},
+	{"toast and jam","IMBLGI","FN",2,3,3,"C8823A","B0203E","toast with red jam spread","gloop","Jammy toast. Sticky fingers.","edible,sticky,breakfast"},
 	{"toast tower","IMDCII","Gk",4,2,6,"C8823A","F2D08A","tall stack of toast slices","thud","Stacked carbs for maximum defense.","edible,giant,silly"},
 	{"toasted marshmallow","IABLGG","UKN",2,3,3,"C8803A","F7F4F0","golden-brown puff on a stick","wobble","Crispy outside, molten inside.","edible,wobbly,sweet"},
 	{"toaster","BABMII","Kle",2,3,4,"DDE3E8","24262A","chrome box with two slots","clang","Pop! Toast at 100 miles per hour.","kitchen,household"},
@@ -398,9 +403,4 @@ return {
 	{"van de graaff generator","ODCMmI","LO",4,3,5,"C9CED4","24262A","metal dome on column","hum","Hair-raising science.","science,electric"},
 	{"vanara","AFCJNA","Dlf",5,9,4,"B45309","DC2626","nimble monkey warrior with mace","chitter","Jumps over oceans. Literally.","mythical,warrior"},
 	{"vanguard","LKDCYA","GDI",6,4,8,"475569","EF4444","front rank of heavy shields advancing with a red banner","clang","First in. Loudest. Shiniest.","military,defense"},
-	{"vanilla bean","IMALKI","dSc",2,3,3,"3A2416","F2E8C8","long dark pod","chomp","A sweet-smelling magic wand.","edible,sweet,spice"},
-	{"vanilla cola","IBBFKI","EkI",3,7,1,"5A3220","F2E8C8","dark fizzy drink","fizz","Vanilla meets cola.","edible,drink,fizzy"},
-	{"vanilla extract","IMBLKI","dSc",2,3,3,"3A2416","E8D8B8","tiny brown bottle","chomp","Smells like heaven. Tastes bitter.","edible,sweet"},
-	{"vanilla ice cream","ICBAKJ","JeN",3,5,2,"F7EBC8","E8D8A8","pale scoop, flecks","squish","The classic. Cold and calm.","edible,frozen,sweet"},
-	{"vanilla orchid","NGBNMI","Sc",2,1,2,"F5F5F5","9CCC65","climbing orchid with long green pods","rustle","Smells exactly like ice cream.","plant,crop"},
 }

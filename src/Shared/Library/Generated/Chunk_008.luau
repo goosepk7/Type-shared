@@ -403,5 +403,4 @@ return {
 	{"energy drink","IDBO7I","D",4,10,2,"1B1B1B","8DE82B","tall can with a lightning bolt, cracked open","fizz","Zoom. Zoom. Zoooom. Crash.","edible,drink,modern"},
 	{"energy net","CDCAJI","eLO",3,8,2,"6EE6FF","D7FAFF","a crackling cyan net that spins open and wraps the target","zap","Caught you. For a second.","scifi"},
 	{"energy wall","ELDCII","GSaL",4,1,6,"40C4FF","E1F5FE","shimmering glowing hex panels","hum","Hums ominously. Blocks everything.","future,magic"},
-	{"engine","OACM1I","KEkI",5,1,6,"4B5563","EF4444","chunky revving engine block, shaking, pipes blasting flame","rev","VROOM. Just the vroom. No car.","mechanical,loud"},
 }

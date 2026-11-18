@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wight","ACCJNA","iJf",5,5,5,"94A3B8","67E8F9","frost-pale undead with icy eyes","groan","Cold touch. Colder stare.","undead,frozen"},
+	{"wild card","KLCAKB","jV",5,7,1,"7C4DFF","FFD54F","spinning glowing playing card","shff","Could be anything. Probably good.","luck,chaos"},
+	{"wild donkey","AMCJAA","Dk",4,8,5,"C8A07A","F2E8D8","wild donkey","neigh","Wild donkey with a fast kick.","mammal"},
+	{"wild grass","NGBNMI","ZS",1,1,2,"9CCC65","C0CA33","soft tufts of feathery grass","rustle","Tickles. Hides small things.","plant"},
+	{"wild magic","FLCGKE","UjV",5,7,2,"FF4081","7C4DFF","flickering orb changing colour constantly","boing","Could be great. Could be a chicken.","chaos,magic,silly"},
 	{"wild strawberry","IGAELB","eVP",2,7,1,"D7263D","3E8E2B","tiny red berry","pitter","Tiny but intense.","edible,fruit,sweet"},
 	{"wild surge","KLCGKI","jEV",5,8,1,"FF4081","7C4DFF","flickering random-colour pulse","boing","Something happens. Nobody knows what.","chaos,magic"},
 	{"wild west","MEFNII","Sh",3,1,6,"D2691E","E6C27A","dusty main street, saloon, cactus","rumble","This town ain't big enough.","place,terrain"},

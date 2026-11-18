@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vanilla bean","IMALKI","dSc",2,3,3,"3A2416","F2E8C8","long dark pod","chomp","A sweet-smelling magic wand.","edible,sweet,spice"},
+	{"vanilla cola","IBBFKI","EkI",3,7,1,"5A3220","F2E8C8","dark fizzy drink","fizz","Vanilla meets cola.","edible,drink,fizzy"},
+	{"vanilla extract","IMBLKI","dSc",2,3,3,"3A2416","E8D8B8","tiny brown bottle","chomp","Smells like heaven. Tastes bitter.","edible,sweet"},
+	{"vanilla ice cream","ICBAKJ","JeN",3,5,2,"F7EBC8","E8D8A8","pale scoop, flecks","squish","The classic. Cold and calm.","edible,frozen,sweet"},
+	{"vanilla orchid","NGBNMI","Sc",2,1,2,"F5F5F5","9CCC65","climbing orchid with long green pods","rustle","Smells exactly like ice cream.","plant,crop"},
 	{"vanilla shake","ICBOKJ","JFc",3,5,2,"F7EBC8","F7F2EC","tall white shake","squish","Simple. Smooth. Cold.","edible,frozen,sweet"},
 	{"vanish","KLBOKI","ZY",2,10,1,"E1BEE7","FFFFFF","puff of sparkles and nothing","poof","Poof. Where did I go?","magic,stealth"},
 	{"vanquish","KHDAKB","EO",7,7,1,"FFD54F","D32F2F","golden heroic slam","boom","Victory, delivered hard.","holy"},
@@ -398,9 +403,4 @@ return {
 	{"wifi","FDCF6J","jLNP",3,9,1,"38BDF8","FFFFFF","three curved signal bars radiating from a dot","bzzt","One bar. In the one corner. If you stand on a chair.","tech,meme"},
 	{"wig","BMBONI","jZ",1,6,1,"E84A5F","E67E22","big curly fake hair","pop","Who's that? Nobody knows.","party,silly,disguise"},
 	{"wiggle","KMAOKG","Ud",1,6,1,"F48FB1","FFFFFF","wobbly wiggle lines","boing","Wiggle wiggle. Distracting.","silly,cute"},
-	{"wight","ACCJNA","iJf",5,5,5,"94A3B8","67E8F9","frost-pale undead with icy eyes","groan","Cold touch. Colder stare.","undead,frozen"},
-	{"wild card","KLCAKB","jV",5,7,1,"7C4DFF","FFD54F","spinning glowing playing card","shff","Could be anything. Probably good.","luck,chaos"},
-	{"wild donkey","AMCJAA","Dk",4,8,5,"C8A07A","F2E8D8","wild donkey","neigh","Wild donkey with a fast kick.","mammal"},
-	{"wild grass","NGBNMI","ZS",1,1,2,"9CCC65","C0CA33","soft tufts of feathery grass","rustle","Tickles. Hides small things.","plant"},
-	{"wild magic","FLCGKE","UjV",5,7,2,"FF4081","7C4DFF","flickering orb changing colour constantly","boing","Could be great. Could be a chicken.","chaos,magic,silly"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sushi chef","LMCJNA","Te",4,7,3,"F8FAFC","DC2626","white headband, sharp knife","swish","Precise slicing. Precise everything.","food"},
+	{"sushi roll","IMAELB","ceP",2,7,1,"2A3A2A","F7F4EC","seaweed-wrapped rice cylinder slices","pitter","Rolled, sliced, and ready to launch.","edible"},
+	{"suspenders","BMAANI","Ue",1,7,2,"C0392B","B58A3A","stretchy straps with clips","swish","Twang!","clothing"},
+	{"suspense","KLCNOI","NO",4,2,3,"311B92","FFFFFF","everything hanging in tense slow motion","dun","Wait for it... wait for it...","silly"},
+	{"suv","DMCKHL","Dkg",5,7,7,"37474F","B0BEC5","tall boxy car, roof rails","engine","Climbs kerbs. Climbs enemies.","mechanical,vehicle,land"},
 	{"suya","IABHJI","Kf",3,5,4,"8A3A1E","C8602B","spicy skewered beef","bonk","Spicy grilled sticks of beef.","edible,silly"},
 	{"swag","KHBONA","daO",3,5,3,"FACC15","111827","strutting figure in shades, gold chain, cap sideways","ding","Too cool to dodge. Does not need to.","meme,cool"},
 	{"swallow","AMAJDB","dA",1,9,1,"2A3A6A","E8A07A","forked tail, swept wings","tweet","Swoops like a fighter pilot.","bird,cute"},
@@ -398,9 +403,4 @@ return {
 	{"title","KHCCnI","GdO",3,3,5,"FACC15","111827","huge shiny 3D letters with a lens flare and PRESS START","fanfare","PRESS START. No, the other button.","gaming,movie"},
 	{"tlayuda","IMCAKK","Uke",3,7,2,"E8C88A","2A1E1E","huge crisp tortilla with beans","whoosh","Oaxacan pizza. Crunchy giant.","edible"},
 	{"tnt barrel","CACLII","EkP",7,1,2,"C0392B","5A3A1E","wooden barrel stencilled TNT","boom","Do not shoot the red barrel. Shoot the red barrel.","explosive"},
-	{"toad","AJAJAG","UMe",1,5,1,"8A7A4A","C8B07A","warty lumpy brown body","croak","Warts and all. Mostly warts.","amphibian,wetland"},
-	{"toad in the hole","IGBOKI","F",2,5,3,"D9A04A","B0402B","sausages in puffy batter","crunch","No toads were harmed.","edible,healthy,silly"},
-	{"toadfish","ABAJEC","dB",1,6,1,"8A7A5A","C8B88A","warty fish that hums","hum","Hums so loud it keeps boats awake.","fish,aquatic"},
-	{"toast","IABAKK","UKe",3,7,2,"C8823A","F2D08A","golden square slice, browned edges","whoosh","Bread that has been through something.","edible"},
-	{"toast and jam","IMBLGI","FN",2,3,3,"C8823A","B0203E","toast with red jam spread","gloop","Jammy toast. Sticky fingers.","edible,sticky,breakfast"},
 }

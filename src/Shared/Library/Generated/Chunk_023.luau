@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"seltzer spray","BBBHwI","kN",2,7,2,"7FD3F5","C9CDD6","a soda siphon that sprays a fizzy jet","fizz","Refreshing. Aggressively.","cartoon,silly,water"},
+	{"semifreddo","ICBAKJ","JeN",3,5,2,"F7E8C8","D7263D","half-frozen sliced dessert","squish","Half frozen, fully elegant.","edible,frozen,sweet,dessert"},
+	{"sense warp","KLBAKI","eY",5,10,2,"FFE7A0","8FDCFF","two fingers to the brow, then a flicker beside the foe","whum","Felt your energy from across the map.","anime,ki,speed"},
+	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},
+	{"sentence","KMCBCB","STN",3,6,2,"1F2937","FFFFFF","long line of words ending in a heavy full stop","tap","Ends with a period. So do you.","school"},
 	{"sentinel","LHDMYI","GQeO",6,2,8,"94A3B8","FCD34D","tall still guardian with a spear and one glowing eye slit","hum","Has not blinked since the last update.","defense,ancient"},
 	{"sentinel orb","OHBJKE","GRh",1,3,7,"46DCFF","B0BAC8","a ringed sentry orb circling you that zaps shots away","ping","Your personal bullet bouncer.","scifi,robot,defense"},
 	{"sentry","OKCMWI","GQe",5,1,6,"6B7280","EF4444","tripod gun post with a red scanning eye and beeping light","beep","Halt. Who goes there? Never mind. Pew.","defense,mechanical,robot"},
@@ -398,9 +403,4 @@ return {
 	{"sloth","AMCJAA","fN",2,1,3,"9A8A6E","D8C8A8","long claws, hanging upside down","squeak","Takes a month to digest a leaf.","mammal,wild,silly"},
 	{"sloth bear","AMDJAA","Dkf",6,5,7,"2A2420","E6DED2","shaggy black bear, pale snout","roar","Vacuums up termites. Messy eater.","mammal,predator,wild"},
 	{"slow","KLBAKB","eN",3,7,1,"90CAF9","E1F5FE","wobbly blue ripple on target","wub","Hurry up. Oh wait, you cannot.","time"},
-	{"slow and steady","KEBOKA","GF",1,1,7,"8D6E63","A5D6A7","calm green shell glow","plod","Wins the race. Eventually.","silly"},
-	{"slow field","KLDNOI","SN",4,2,4,"90CAF9","E1F5FE","blue dome where everything drags","wub","Molasses mode, engaged.","time"},
-	{"slow tower","ELDMII","GSeN",3,1,6,"7E57C2","B39DDB","tower dripping sticky purple goo","thud","Everything nearby goes very slow.","structure,defense,tower"},
-	{"slowpoke","LMBJNA","GSN",1,1,5,"A7F3D0","FCA5A5","dreamy kid shuffling along tying one shoelace forever","yawn","Will arrive by Thursday. Maybe.","silly"},
-	{"slowworm","AMBJCD","Cf",2,7,2,"B8904A","6A4A2A","shiny legless lizard","hiss","Not slow. Not a worm.","reptile"},
 }

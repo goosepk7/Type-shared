@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"slow and steady","KEBOKA","GF",1,1,7,"8D6E63","A5D6A7","calm green shell glow","plod","Wins the race. Eventually.","silly"},
+	{"slow field","KLDNOI","SN",4,2,4,"90CAF9","E1F5FE","blue dome where everything drags","wub","Molasses mode, engaged.","time"},
+	{"slow tower","ELDMII","GSeN",3,1,6,"7E57C2","B39DDB","tower dripping sticky purple goo","thud","Everything nearby goes very slow.","structure,defense,tower"},
+	{"slowpoke","LMBJNA","GSN",1,1,5,"A7F3D0","FCA5A5","dreamy kid shuffling along tying one shoelace forever","yawn","Will arrive by Thursday. Maybe.","silly"},
+	{"slowworm","AMBJCD","Cf",2,7,2,"B8904A","6A4A2A","shiny legless lizard","hiss","Not slow. Not a worm.","reptile"},
 	{"sluagh","AIDJLB","iAP",6,8,3,"1F2937","94A3B8","flock of crow-like shadow spirits","screech","A flock of ghosts flying west.","ghost,spooky,swarm"},
 	{"sludge","FJCF6F","MN",4,3,4,"5C6B2E","98A65A","thick murky green-brown flow","squelch","Slow, gross and coming for you.","toxic,silly"},
 	{"slug","AMAJGI","SN",1,1,2,"8A7A4A","C8B87A","slimy shell-less snail, eye stalks","squelch","A snail that moved out.","mollusk,aquatic,garden"},
@@ -398,9 +403,4 @@ return {
 	{"spurs","CKAHJI","fT",1,7,3,"C9CED4","6B4226","spiky wheel on boot strap","bang","Jingle. Jab.","cowboy"},
 	{"spy","LICJNA","jZY",4,7,3,"111827","F8FAFC","tuxedo, sunglasses, gadget watch","whoosh","Shaken, not stirred. Also sneaky.","stealth"},
 	{"spy gadget","CKAOJI","jZ",3,7,3,"24262A","C9CED4","small clicky device","bang","Does something cool. Probably.","spy,tech"},
-	{"spy plane","DFDKHB","AZeg",5,10,5,"212121","455A64","long black plane, very thin wings","jet","Sees everything. Says nothing.","vehicle,air"},
-	{"squad","LEDJLA","GQeh",6,6,6,"57534E","A3E635","five soldiers in a wedge formation, one with a radio","whistle","Squad up. Somebody brought snacks, right?","military,gaming"},
-	{"squall","FFCFOB","kIP",5,8,2,"6F8796","CBD8E0","sudden dark rain-wind burst","howl","Five seconds of pure chaos.","air,storm"},
-	{"square","KEBCnI","GkO",3,2,6,"EF4444","FFFFFF","flat red square stamping down, four sharp corners","thunk","Four sides. All of them against you.","school,shape"},
-	{"squash","IGBGKF","DkI",4,5,6,"E8A33A","5E7A2B","bulbous yellow neck squash","rumble","Its name is a battle plan.","edible,heavy"},
 }

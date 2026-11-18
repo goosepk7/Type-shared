@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"playpen","EMCLII","GUN",2,1,6,"22C55E","FACC15","mesh-sided square pen full of bright plastic balls","squeak","Baby jail. The inmates are giggling.","cute,trap"},
+	{"please","KHBOKJ","Fcb",2,5,1,"FBCFE8","FDE68A","huge sparkling puppy-dog eyes and clasped hands","aww","The magic word. Works 60% of the time.","cute,silly"},
+	{"pleasure","KHBOKJ","FcN",2,4,1,"F9A8D4","FDE68A","pink-gold glow with a blissful closed-eye smile","aww","Ahhh. Like socks from the dryer.","mood,support"},
+	{"pleco","ABAJEC","GdB",1,6,1,"5A4E40","A8946E","armored suckermouth catfish","splash","Vacuums your aquarium for free.","fish,aquatic"},
 	{"plesiosaurus","ABDJEC","DfHB",6,6,7,"4A6A7A","D8E0E4","long neck, four flippers","roar","The original lake monster look.","extinct,reptile,aquatic,ocean"},
 	{"pliers","JKAHJK","fH",2,6,5,"C0392B","8A929B","two-handle pinching jaws","clank","Grabs things you can't.","tool"},
 	{"pliosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","A8B0B8","huge-headed short neck sea reptile","roar","All jaws. Little neck.","extinct,reptile,aquatic,ocean"},
@@ -399,8 +403,4 @@ return {
 	{"quokka joey","AMAJAG","Uf",1,6,2,"B09070","E0D0B8","tiny smiling quokka","chirp","Born smiling. Never stopped.","mammal,marsupial,cute"},
 	{"quoll","AMBJAA","Uf",2,6,2,"8A5A30","F2F2EE","brown with white polka dots","chirp","Spotted like a cookie. Hunts like a cat.","mammal,marsupial"},
 	{"quote","KMBAJB","jeO",2,6,1,"F5F5F0","7C3AED","giant pair of floating quotation marks clapping shut","clack","\"Live. Laugh. Launch.\" - A summon, probably.","meme,school"},
-	{"ra","LAFJNJ","KAeO",9,6,9,"F59E0B","DC2626","falcon-headed god with a blazing red sun disc on his head","screech","Two letters. One sun. No mercy.","mythical,egyptian,boss,fire,danger"},
-	{"rabbit","AMBJAG","UCdV",2,6,1,"C8B8A8","F7F4EE","long ears, fluffy cotton tail, big feet","thump","Hops. Multiplies. Repeat.","mammal,cute"},
-	{"rabbit's foot","BMAOKJ","F",1,5,1,"F2F2EE","F06292","fluffy keychain charm","boing","Lucky for you.","silly"},
-	{"rabbitfish","ABAJEC","dMB",1,6,1,"E8C82A","3A6AE8","rabbit-faced reef fish","splash","Has a bunny face. And spines.","fish,aquatic"},
 }

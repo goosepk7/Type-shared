@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ironing board","BKCC0I","G",1,1,4,"C9CED4","2F6FD1","folding board on legs","thud","A fold-out shield for wrinkles.","furniture,household"},
 	{"ironskin","KKCOKI","Ga",2,2,10,"90A4AE","ECEFF1","shiny metal sheen over the caster","clang","Clang clang. Ow, my fist.","heavy,defence"},
 	{"ironwood","NKECMI","GWkS",5,1,10,"455A64","689F38","dark metallic-looking trunk","rustle","Tougher than an axe.","plant,tree,heavy"},
 	{"irrigation canal","MBDLII","SIN",2,1,7,"4FC3F7","8D6E63","straight channel of water between banks","thud","Water where it is needed. Mostly on enemies.","structure,farm"},
@@ -402,5 +403,4 @@ return {
 	{"lantern float","BHCOKJ","QFS",4,2,5,"FFB648","FF5A3A","three paper sky lanterns rising and healing below","chime","Make a wish. Then make a heal.","holiday,lantern festival,heal"},
 	{"lantern shark","AHBJEC","DfTB",2,8,6,"3A3A44","8AE8F0","tiny glowing shark","chomp","A shark that glows in the dark.","fish,aquatic,ocean,predator,deepsea"},
 	{"lanternfish","AHAJEC","dcPB",1,6,1,"3A4250","6AE8F0","small dark fish dotted with lights","splash","Carries its own fairy lights.","fish,aquatic"},
-	{"lanternfly","AMAJFB","dAP",1,6,1,"E8301E","1E1E1E","spotted wings with red underwings","buzz","Pretty, but munches everything.","insect"},
 }

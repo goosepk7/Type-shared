@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lanternfly","AMAJFB","dAP",1,6,1,"E8301E","1E1E1E","spotted wings with red underwings","buzz","Pretty, but munches everything.","insect"},
 	{"laptop","BDBIyI","Gd",1,4,3,"C9CED4","24262A","folding computer with screen","beep","Have you tried turning it off and on?","tech,office"},
 	{"larb","IGBOKI","F",2,5,3,"C8A070","7DBE3A","minced meat herb salad","crunch","Zesty minced salad.","edible,healthy"},
 	{"larch","NGDCMI","GWkS",3,1,7,"795548","FFC107","conifer that turns gold and drops needles","rustle","A pine tree that changes its mind.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"lunar power","KHCOKJ","FZ",3,5,3,"E8EAF6","9FA8DA","silver crescent glow","chime","Powered by moonlight.","space"},
 	{"lunar rover","DMCKHL","UDkg",4,4,6,"D9D9D9","C9A227","open frame, mesh wheels, dish antenna","engine","One small drive for a player.","mechanical,vehicle,land,space"},
 	{"lunar strike","FHDBKI","KO",7,7,1,"E8EAF6","9FA8DA","pale silver pillar slamming down","chime","The moon has an opinion.","space"},
-	{"lunar wolf","AHCJAA","Dfh",5,8,4,"E5E7EB","818CF8","silver wolf glowing with moonlight","howl","Howls at itself.","cosmic,canine"},
 }

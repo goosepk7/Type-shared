@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green fire","FACNOI","KMP",5,6,3,"2BC94A","B6FF9E","emerald flames, eerie low glow","crackle","Burns weird. Smells like limes.","fire,spooky"},
 	{"green grape","IGAELB","eVP",2,7,1,"A8D16B","E6F2B5","pale green round orb","pitter","The grape that stayed calm.","edible,fruit,sweet"},
 	{"green lightning","FDDAKB","MeL",7,10,1,"00E676","B9F6CA","bright green forked bolt","crack","Zap, now in lime.","electric"},
 	{"green mamba","AMCJCD","fMN",4,8,3,"4AC84A","E8F07A","bright green slender tree snake","hiss","Neon green. Lives in trees.","reptile,venomous"},
@@ -402,5 +403,4 @@ return {
 	{"hobbit","AGBJNA","dZb",2,6,3,"78350F","65A30D","barefoot small adventurer, curly hair","giggle","Seven meals a day. One adventure a year.","mythical"},
 	{"hobby","KMBOLJ","dFh",2,4,2,"22D3EE","F59E0B","model plane, stamp album, yarn ball and a half-done jigsaw","click","Started twelve. Finished none.","silly"},
 	{"hobgoblin","AECJNA","Dfb",4,6,5,"65A30D","7C2D12","bigger goblin, studded leather, wide grin","cackle","A goblin who went to the gym.","goblin"},
-	{"hockey","KCCAJB","DJkf",5,8,4,"111827","E0F2FE","stick slapping a black puck across ice, spray of shavings","thwack","Two minutes for roughing. Worth it.","sport,frozen"},
 }

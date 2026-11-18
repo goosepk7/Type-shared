@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mince pie","IMBAKK","Uke",3,7,2,"D9A04A","6B3A1E","small star-topped pie","whoosh","A tiny festive pie.","edible,holiday"},
+	{"mind","KLCF6B","jlHO",5,6,2,"C084FC","F0ABFC","pink ripple rings spreading from a glowing third eye","hum","Mind over matter. Matter is not happy about it.","magic,psychic"},
 	{"mind beam","FLCBKI","jeO",5,8,1,"E040FB","F8BBD0","wavy pink brainwave beam","hum","Brain to brain. Hurts.","psychic"},
 	{"mind blast","FLCFOB","jkO",5,9,1,"E040FB","FFCCFF","pink rippling brainwave rings","hum","Thinks very hard. At you.","psychic"},
 	{"mind control","KLCAKB","jb",5,6,1,"D500F9","F8BBD0","wavy pink strings linking to target","hum","You will now dance. Thank you.","psychic"},
@@ -401,6 +403,4 @@ return {
 	{"neem tree","NGDCMI","GWFkS",3,1,7,"6D4C41","43A047","spreading tree with feathery leaves","rustle","Bugs hate it. Healers love it.","plant,tree"},
 	{"neighbor","LMCJNA","dc",3,4,4,"65A30D","F8FAFC","bathrobe, newspaper, leafblower","ding","Borrowed your rake in 2019.","silly"},
 	{"nematode","AMAJTD","CP",1,3,1,"F2EEE0","C8C0B0","tiny clear wriggly worm","squelch","There are trillions of us. Hi.","bug"},
-	{"nemean lion","AEDJAA","GDkf",7,7,9,"CA8A04","FEF08A","massive lion, gleaming impervious hide","roar","Fur so tough swords just bounce.","mythical,heavy"},
-	{"nemesis","LICJNA","jQf",6,6,5,"111827","DC2626","dark mirror of you with a smirk","cackle","Always one step behind. Or ahead.","villain"},
 }

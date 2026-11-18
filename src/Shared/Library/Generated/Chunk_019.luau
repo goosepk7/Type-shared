@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paramedic","LMCJNA","DQF",3,7,5,"F8FAFC","DC2626","reflective uniform, medical bag","siren","Arrives fast. Fixes things faster.","healer,rescue"},
+	{"parang","CKCHrK","fV",4,7,4,"8A929B","8B5A2B","heavy chopping blade","shing","Jungle-ready.","sharp,ancient"},
+	{"parasaurolophus","AMDJAA","dkO",5,5,6,"6A8A4A","E8A03A","long tube head crest","honk","Has a trumpet on its head. Honk!","dinosaur,extinct,reptile"},
+	{"parasite","AJAJTD","iQZb",3,6,1,"B45309","FCA5A5","wriggly pale clingy worm with a sucker mouth","slurp","Moves in. Eats your snacks. Never leaves.","science,gross"},
 	{"parasol","BHCIyK","G",1,4,3,"FF3EA5","F2F2EE","wide striped sun canopy","clank","Shade, but tactical.","summer,defense"},
 	{"parasol mushroom","NGBLMI","GS",2,1,3,"F5E6CA","8D6E63","tall mushroom with a wide shaggy cap","poof","Carries its own umbrella.","plant,fungus"},
 	{"paratha","IMBAKK","Uke",3,7,2,"E0B070","B8803A","flaky layered flatbread","whoosh","Layers upon layers upon layers.","edible"},
@@ -399,8 +403,4 @@ return {
 	{"player","LDCJNA","UeY",4,7,4,"22C55E","111827","kid with a headset and controller, floating P1 arrow","beep","Press start. Regret nothing.","gaming"},
 	{"playground","EMCNII","UdS",2,1,5,"E53935","1E88E5","slides, swings and climbing bars","thud","Recess is over. Battle is on.","structure,building,silly"},
 	{"playing cards","BMAAJK","TeV",1,9,1,"F2F2EE","C0392B","fanned stack of playing cards","clack","Pick a card. Any card. Ouch.","game"},
-	{"playpen","EMCLII","GUN",2,1,6,"22C55E","FACC15","mesh-sided square pen full of bright plastic balls","squeak","Baby jail. The inmates are giggling.","cute,trap"},
-	{"please","KHBOKJ","Fcb",2,5,1,"FBCFE8","FDE68A","huge sparkling puppy-dog eyes and clasped hands","aww","The magic word. Works 60% of the time.","cute,silly"},
-	{"pleasure","KHBOKJ","FcN",2,4,1,"F9A8D4","FDE68A","pink-gold glow with a blissful closed-eye smile","aww","Ahhh. Like socks from the dryer.","mood,support"},
-	{"pleco","ABAJEC","GdB",1,6,1,"5A4E40","A8946E","armored suckermouth catfish","splash","Vacuums your aquarium for free.","fish,aquatic"},
 }

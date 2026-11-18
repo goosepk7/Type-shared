@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gharial","ABDJAC","fTHOB",7,5,8,"6A7A5A","C8C8A8","super thin long snout, bulb nose","snap","Its snout is basically chopsticks.","reptile,predator,aquatic"},
 	{"ghee","IMBLGI","kSO",2,3,2,"F2C24A","F8E58C","jar of golden liquid fat","squeak","Golden, glossy, and very slippery.","edible,slippery,silly,dairy"},
 	{"ghost","AICJGJ","jAZO",4,6,2,"E5E7EB","A5B4FC","floaty sheet shape, hollow eyes, wavy tail","wail","Goes BOO. Very proud of that.","undead,spooky,halloween,ghost"},
 	{"ghost bat","AIBJDB","jiA",2,7,1,"E8E0D8","C8B8A8","pale ghostly bat","screech","Pale, spooky, and hungry.","mammal,nocturnal,spooky"},
@@ -402,5 +403,4 @@ return {
 	{"green bean","IEBAJK","FTe",3,6,4,"4E8E2B","7DBE3A","long thin green pod","crunch","Straight, snappy, and green.","edible,vegetable,healthy"},
 	{"green chili","IABAKK","KeP",4,7,2,"3E8E2B","5EAE3A","long green chili","sizzle","Roasted, smoky, and hot.","edible,spicy,flammable"},
 	{"green curry","IABNGI","KFS",4,4,2,"7DBE3A","F2EAD5","green coconut curry bowl","sizzle","Green, creamy, and secretly fiery.","edible,spicy"},
-	{"green fire","FACNOI","KMP",5,6,3,"2BC94A","B6FF9E","emerald flames, eerie low glow","crackle","Burns weird. Smells like limes.","fire,spooky"},
 }
