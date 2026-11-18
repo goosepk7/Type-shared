@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grey seal","ABCJEC","UfB",3,5,4,"7A7A80","C8C8CC","horse-headed seal","bark","Roman nose. Sings like a ghost.","mammal,aquatic"},
+	{"greyhound","AMCJAA","DQO",4,10,4,"9A9A9E","E8E6E2","lean racing dog, deep chest, thin waist","bark","Fastest couch potato on Earth.","mammal,pet"},
+	{"grid","BDCCnI","GLN",3,1,5,"22D3EE","0F172A","glowing cyan wireframe squares stretching out","hum","Stay inside the lines. Or get zapped.","tech,defense"},
+	{"grief","KBCEOJ","iSN",3,2,1,"64748B","94A3B8","small grey cloud raining on one wilted flower","sigh","Good grief.","mood"},
 	{"griefer","LACJNA","jEb",4,7,3,"111827","F97316","figure holding a lit fuse, grin","cackle","Blew up your house. Says sorry. Doesn't mean it.","meme,gaming,villain"},
 	{"griffin","AFDKAB","DAkfg",7,8,6,"B45309","F5F5F4","lion body, eagle head and wings","screech","Half lion, half eagle, fully in charge.","mythical,flying,mount"},
 	{"griffin egg","AFALGI","Gh",1,1,5,"D6A35A","F8FAFC","speckled golden egg in a nest","crack","Hatches a very loud baby.","mythical"},
@@ -399,8 +403,4 @@ return {
 	{"holy beam","FHDBKI","KFe",7,7,1,"FFF59D","FFFFFF","wide radiant beam from above","choir","Good, delivered by laser.","holy"},
 	{"holy blast","FHCGKI","KEF",6,7,1,"FFF59D","FFFFFF","golden burst with feather sparks","choir","A blessing that hits hard.","holy,explosive"},
 	{"holy bolt","FHCAKB","KFe",5,9,1,"FFF59D","FFFFFF","radiant golden spear of light","chime","Good guys heal. Bad guys feel it.","holy"},
-	{"holy fire","FHCNOI","KFS",6,5,3,"FFD54F","FFFFFF","white-gold flames that do not smoke","chime","A campfire that only burns villains.","holy,fire"},
-	{"holy hand grenade","CHBGKF","Eke",7,5,1,"D4A72C","F2F2EE","jewelled orb with a tiny cross","boom","Count to three. Not five.","explosive,silly,holy"},
-	{"holy light","FHDBKI","KFe",6,6,2,"FFF8C4","FFFFFF","wide golden shaft of light from the sky","chime","Heals the good. Stings the bad.","holy"},
-	{"holy meteor","HHDAKB","KEFe",8,8,5,"FFD54F","FFFFFF","glowing golden rock with angelic trail","choir","Heaven threw a rock.","holy,space,explosive"},
 }

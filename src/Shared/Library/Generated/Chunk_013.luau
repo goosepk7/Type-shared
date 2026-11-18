@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy fire","FHCNOI","KFS",6,5,3,"FFD54F","FFFFFF","white-gold flames that do not smoke","chime","A campfire that only burns villains.","holy,fire"},
+	{"holy hand grenade","CHBGKF","Eke",7,5,1,"D4A72C","F2F2EE","jewelled orb with a tiny cross","boom","Count to three. Not five.","explosive,silly,holy"},
+	{"holy light","FHDBKI","KFe",6,6,2,"FFF8C4","FFFFFF","wide golden shaft of light from the sky","chime","Heals the good. Stings the bad.","holy"},
+	{"holy meteor","HHDAKB","KEFe",8,8,5,"FFD54F","FFFFFF","glowing golden rock with angelic trail","choir","Heaven threw a rock.","holy,space,explosive"},
 	{"holy nova","FHDFOI","KFP",5,7,2,"FFF59D","FFFFFF","golden ring of light pulsing outward","chime","Hugs friends. Burns foes.","holy"},
 	{"holy prison","KHCLII","GO",6,4,6,"FFF59D","FFFFFF","cage of golden light bars","chime","Glowing time-out.","holy"},
 	{"holy shield","KHCIKI","GFa",3,4,8,"FFE082","FFFFFF","golden glowing dome, wing-shaped edges","chime","Protected by pure good vibes.","holy,defence"},
@@ -399,8 +403,4 @@ return {
 	{"jackdaw","AMAJDB","dAb",1,7,1,"2A2A30","C8C8CC","small crow with pale eyes","tweet","Steals shiny things. Pale eyes.","bird,cute"},
 	{"jacket","BMCONI","G",1,5,3,"3B5B8C","7A4E2D","zip-up jacket","swish","Weatherproof. Bonkproof-ish.","clothing"},
 	{"jackfruit","IGCGKF","DkI",5,5,6,"A7B33A","E5C14B","giant bumpy green oblong","rumble","The biggest fruit on a tree. Ouch.","edible,heavy,fruit"},
-	{"jackhammer","OKCLJK","CkfO",6,3,7,"F1C40F","4A4D52","tall pounding drill with handles","rattle","Rattles the ground and your teeth.","tool,loud"},
-	{"jackpot","KKCEOB","dFc",4,6,2,"FFC107","43A047","explosion of coins and confetti","jingle","Ding ding ding! Winner!","luck,shiny"},
-	{"jade","BGBO4J","GFc",3,3,7,"00A86B","A7F3D0","smooth polished green stone carved like a little dragon","chime","Lucky. Smooth. Greener than envy.","shiny,royal"},
-	{"jade dragon","AGEKCB","AFeg",7,7,8,"059669","A7F3D0","carved green jade serpent dragon","roar","Polished, precious, and prickly.","mythical,reptile,gem"},
 }

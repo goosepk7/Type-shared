@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"past","KEDN5I","jNh",5,2,3,"B08D57","E7D8B1","sepia portal with a penny-farthing and dinosaurs behind it","tick","Was better. Allegedly. Had no wifi.","time,ancient"},
+	{"pasta","IMAELB","eNP",2,6,1,"F2D08A","E8C070","assorted pasta shapes","pitter","Shapes for every situation.","edible,grain"},
+	{"paste","BMALGI","ScN",1,1,2,"F8FAFC","A855F7","white gloopy dollop with a purple glue-stick cap","squelch","Somebody in class eats this. You know who.","school,sticky,silly"},
+	{"pasteis de bacalhau","IMAELB","eVP",2,7,1,"D9A04A","F2E8D0","golden cod croquettes","pitter","Crispy cod cannonballs.","edible"},
 	{"pastelito","IMBLKI","dSc",2,3,3,"D9A04A","F2E8C8","flaky filled pastry","chomp","Flaky, sweet, Cuban.","edible,sweet"},
 	{"pastilla","IMBAKK","Uke",3,7,2,"D9A04A","F7F7F7","round pie with sugar crust","whoosh","Sweet and savory in one pie.","edible"},
 	{"pastrami","IGBOKI","F",2,5,3,"8A2E2E","3A1E1E","peppered dark meat slices","crunch","Peppery, smoky, stacked.","edible,healthy"},
@@ -399,8 +403,4 @@ return {
 	{"poison","FJCDOJ","SMP",4,4,2,"6BBF3A","2E5E1E","swirling sickly green fog, skull wisps","bubble","Do not lick.","toxic"},
 	{"poison aura","FJCOKJ","SM",4,4,3,"76FF03","33691E","green fumes swirling round caster","bubble","Personal space, enforced by stink.","toxic"},
 	{"poison beam","FJCBKI","TMe",5,7,1,"76FF03","33691E","bubbling green beam","hiss","Gross. Glowing. Green.","toxic"},
-	{"poison blast","FJCGKI","EMP",5,7,1,"76FF03","33691E","green cloud bursting outward","bubble","Pop. Cough. Run.","toxic,explosive"},
-	{"poison bomb","FJCGKI","ESM",5,6,1,"76FF03","33691E","green orb bursting into toxic cloud","bubble","Pop. Then stink. Then ouch.","toxic,explosive"},
-	{"poison bottle","BJAA2I","MeV",4,6,1,"8BC34A","24262A","skull-labelled bottle","bubble","Do not drink. Throw.","magic,fantasy"},
-	{"poison breath","FJCFOB","MP",5,6,1,"76FF03","33691E","cone of green toxic mist","hiss","Worst breath imaginable.","toxic"},
 }
