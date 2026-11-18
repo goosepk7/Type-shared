@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fog machine","OFCD1I","jZSP",1,3,4,"24262A","8E9196","box pumping thick fog","hiss","Spooky mood, instantly.","party,defense"},
+	{"foghorn","BMDFmI","IPO",4,2,6,"C0392B","4A4D52","huge horn on a post","horn","BWOOOOOOOOM.","music,loud,ocean"},
 	{"foil","CKCHrK","fT",3,9,2,"C9CED4","F2F2EE","thin flexible blade, bell guard","shing","Touché, and also touché again.","medieval,sharp"},
 	{"fold","KMBOnB","jXN",3,5,2,"FFFFFF","F87171","enemy outline creased in half like a paper sheet","rustle","Fold. Fold again. Now you are a swan.","art,silly"},
 	{"folding chair","BKBAJK","keO",3,5,4,"8E9196","24262A","flat metal folding chair","thud","Wrestling's favourite prop.","silly"},
@@ -356,6 +358,7 @@ return {
 	{"ghost ship","DIEKHJ","jAZegB",7,5,6,"455A64","80DEEA","tattered glowing galleon, ripped sails","moan","Crewed by nobody. Steered by spite.","spooky,undead"},
 	{"ghost ship crew","AICJNJ","Zfh",5,5,4,"94A3B8","22C55E","spectral sailors with tattered coats","wail","They still want their pay.","undead,ghost,pirate"},
 	{"ghost slime","AIBJGJ","UZ",2,5,2,"E5E7EB","A5B4FC","see-through floating jelly","squelch","Boo. Squish.","slime,ghost"},
+	{"ghost stream","ODDBwI","eLNO",7,6,3,"FF8A3D","5AB8FF","a writhing stream from a backpack wand, then a trap","zap","Don't cross the streams. Probably.","scifi,movie,ghost"},
 	{"ghost swarm","AICJLJ","jAZP",5,7,2,"E5E7EB","A5B4FC","cloud of floating sheet ghosts","wail","Boo times fifty.","ghost,swarm,spooky"},
 	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
 	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
@@ -400,7 +403,4 @@ return {
 	{"giant mallet","CMDHtK","kfXO",6,3,5,"C0392B","C49A6C","enormous cartoon wooden mallet","bonk","Flattens foes like pancakes.","silly,cartoon"},
 	{"giant marshmallow","IMDCII","GUN",4,2,6,"F7F4F0","E8C08A","huge soft white cylinder","thud","A pillow fort you can eat.","edible,giant,sweet"},
 	{"giant marshmallow man","IMFJNA","Ukf",8,2,8,"F7F4F0","4FA3E8","towering puffy white figure","thud","Puffy, sweet, and very stompy.","edible,giant,silly"},
-	{"giant meatball","IMDGKF","DkcI",6,5,6,"7A3A2A","B0202E","enormous meatball, sauce dripping","rumble","A meteor of meat.","edible,heavy"},
-	{"giant moth monster","AHFJFB","jAkP",8,5,7,"F59E0B","1E3A8A","enormous moth with eye-pattern wings","whoosh","Big wings. Bigger lamp addiction.","kaiju,giant,insect"},
-	{"giant mousetrap","BMDLII","kcO",5,1,4,"C49A6C","8A929B","enormous spring trap, huge cheese","snap","Same idea. Bigger snap.","trap,silly"},
 }

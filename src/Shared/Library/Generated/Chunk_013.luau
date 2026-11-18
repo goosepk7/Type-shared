@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
+	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
+	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 	{"hornbeam","NGDCMI","GWkS",3,1,8,"9E9E9E","7CB342","grey fluted trunk, dense crown","rustle","Hard as horn.","plant,tree,heavy"},
 	{"hornbill","AMCJDB","jdAk",3,6,2,"1E1E1E","F2C02A","huge curved beak with casque helmet","squawk","Wears a helmet on its beak.","bird,jungle,silly"},
 	{"horned lizard","AMBJAA","CfTe",2,7,2,"C8A06A","6A4A2A","flat spiky desert lizard","hiss","Squirts blood from its eyes. Defense!","reptile,desert"},
@@ -88,6 +91,7 @@ return {
 	{"hunger","KMCO5J","ifH",4,5,2,"F59E0B","7C2D12","growling empty stomach with a fork and knife orbiting","growl","Not you when you are hungry. Worse.","mood,silly"},
 	{"hunt","KGCOvB","QTe",5,7,2,"4D7C0F","B45309","drawn bow and paw-print trail leading to the target","twang","Shh. Follow the paw prints.","wild,ranged"},
 	{"hunter","LGCJNA","cTe",5,6,4,"365314","78350F","fur cap, crossbow, trap belt","twang","Sets a trap. Steps in it. Starts over.","outdoor"},
+	{"hunter cannon","CACAxI","Ee",7,9,3,"FF3B2E","3B2A1E","a shoulder cannon paints you with three red dots","blast","Three dots. Start running.","scifi,movie,weapon"},
 	{"huntress","LGCJNA","QTe",5,8,4,"365314","F8FAFC","silver bow, moon circlet, white wolf","twang","Never loses a trail.","archer"},
 	{"huntsman spider","AJBJQA","fMN",2,9,2,"8A7A5A","C8B89A","huge flat crab-like legs","skitter","Hand-sized and fast. Hi!","arachnid,spooky,venomous"},
 	{"hurdle","BMBCII","GN",1,1,3,"F2F2EE","24262A","striped bar on two legs","bonk","Jump it or trip it.","sport"},
@@ -118,8 +122,8 @@ return {
 	{"hyena","AMCJAA","DjQfh",5,7,4,"A88E66","3A2E22","sloping back, spotted coat, big jaws","laugh","Laughs at its own jokes.","mammal,predator,wild"},
 	{"hypacrosaurus","AMDJAA","dk",5,5,6,"7A6A4A","D8B07A","tall helmet crest","honk","Tall crest, tall back spines.","dinosaur,extinct,reptile"},
 	{"hyper","KDCOKG","UD",3,10,2,"FFEB3B","FF4081","jittery zigzag sparkle outline","bzzt","Too much energy. Way too much.","speed,silly"},
+	{"hyper jump","KHCOKB","DY",5,10,2,"E1F5FE","5B6CFF","star streaks stretch around you as you blink forward","zoom","Punch it.","scifi,space,speed"},
 	{"hypersonic jet","DFDAHB","AkTg",7,10,5,"212121","455A64","long black arrow-shaped jet","jet","Mach five. Cannot even see it.","vehicle,air"},
-	{"hyperspace","KLCOKB","DY",4,10,2,"E1F5FE","7C4DFF","star streaks stretching into lines","zoom","See you in a lightyear.","space,speed"},
 	{"hypno disc","OLBGKK","jO",3,4,2,"24262A","F2F2EE","spinning black and white spiral","hum","Look into the spiral...","scifi"},
 	{"hypnosis","KLBFOB","jO",4,5,1,"AA00FF","F8BBD0","spinning purple spiral rings","hum","You are getting very sleepy.","psychic,silly"},
 	{"hypsilophodon","AMCJAA","dk",3,9,6,"7A8A5A","D8D0A8","small runner dino","honk","Sprinter of the early Cretaceous.","dinosaur,extinct,reptile"},
@@ -399,8 +403,4 @@ return {
 	{"jeweler","LHCJNI","ca",3,3,4,"FACC15","67E8F9","loupe, gem tray","ding","Every gem sparkles. Blindingly.","merchant,gem"},
 	{"jewelry","BHBL2I","dcaO",3,2,4,"FACC15","22D3EE","spilling heap of rings, chains and glittering gems","jingle","Ooh, shiny. That was the trap.","shiny,royal"},
 	{"jewelry box","BMBL2I","c",1,1,3,"5A3A1E","D4A72C","velvet-lined box with dancer","thud","Sparkles inside. Bait!","container,treasure"},
-	{"jian","CKCHrK","fT",5,8,4,"C9CED4","3E9E6E","straight slim blade, tassel on hilt","shing","Elegant, swift, comes with a tassel.","medieval,sharp"},
-	{"jiangshi","AICJNG","Uif",4,4,5,"1E3A8A","F1F5F9","stiff arms outstretched, robe, paper talisman","boing","Hops after you. Can't bend its knees.","undead,spooky,silly"},
-	{"jicama","IEBAKK","keO",3,7,6,"A87A4A","F2F0E8","round brown root, white inside","bonk","A crunchy potato that tastes like apple.","edible,vegetable"},
-	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 }

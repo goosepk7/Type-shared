@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"red cabbage","IGBAKF","Fke",3,5,3,"6B2D6B","C8A8D8","purple layered round head","thud","A purple bowling ball.","edible,vegetable,healthy"},
+	{"red crab","ABBJRA","GfTPh",2,4,5,"E8301E","F2A07A","bright red land crab","clack","Marches in millions.","crustacean,aquatic,armored"},
+	{"red deer","AMCJAA","Dk",4,8,4,"A0582E","E2C49A","reddish deer, many-pointed antlers","bleat","Roars during autumn. Very dramatic.","mammal,wild"},
+	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
+	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
+	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 	{"red giant","MAFGKJ","KWkS",9,1,9,"E64A19","FFAB91","enormous swollen orange-red sphere","rumble","Big, red, and getting bigger.","space"},
 	{"red hot poker","NACNMI","KdFS",3,1,2,"FF5722","FFEB3B","flame-coloured torch spikes","rustle","Looks hot. Is just a flower.","plant,flower"},
 	{"red kangaroo","AMDJAG","UkfO",6,6,2,"B85A30","F2E2D0","huge red kangaroo boxing","chirp","Biggest boxer in the outback.","mammal,marsupial"},
@@ -397,10 +403,4 @@ return {
 	{"salsify","IEBAJK","FTe",3,6,4,"5A4A3A","F2EEDF","long dark root","crunch","A root that tastes like oysters.","edible,vegetable,healthy"},
 	{"salt","FEAEOB","MN",2,6,1,"F7F7F2","D9D9CF","sprinkle of white crystal grains","tick","Slugs fear it. Ghosts too, maybe.","edible"},
 	{"salt and pepper","IFBDOJ","jPO",2,5,1,"F7F7F7","2A2A2A","twin shakers, white and black","puff","A legendary duo.","edible,spice"},
-	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
-	{"salt mine","MEENII","SN",3,1,8,"F5F5F5","F8BBD0","glittering pink and white tunnels","rumble","Salty walls. Salty enemies.","place,terrain"},
-	{"salt shaker","BMADKK","jN",1,6,1,"BFE6F2","F2F2EE","small shaker with holes","clang","Salty. Very salty.","kitchen,household"},
-	{"saltasaurus","AMEJAA","GkIO",7,2,9,"8A6A4A","C8A07A","armored back sauropod","rumble","A sauropod wearing armor.","dinosaur,extinct,reptile,heavy"},
-	{"saltfish","IGBOKI","F",2,5,3,"F2E0A0","E8DCC0","salted fish with ackee","crunch","Jamaica's breakfast champion.","edible,healthy"},
-	{"saltwater crocodile","ABEJAC","fHOB",8,5,8,"5A5A3A","D8D0A0","gigantic croc, armored back","snap","Biggest reptile on Earth. Grumpy.","reptile,predator,aquatic"},
 }

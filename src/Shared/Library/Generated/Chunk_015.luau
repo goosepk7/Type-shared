@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"learn","KHBOKJ","GWF",3,3,3,"3B82F6","FDE047","stack of books with a level-up arrow and a tired candle","ding","Knowledge is power. Naps are also power.","school,support"},
+	{"leash","BMBLKI","HN",1,5,2,"C0392B","C9CED4","strap with clip","squeak","Heel!","pet"},
+	{"leather","BMCIyE","Gka",3,4,8,"5B3A1E","2B1B12","creaky brown biker jacket with a popped collar and studs","creak","Creaks when it moves. Cooler than you.","clothing,cool,armor"},
+	{"leather armor","BMCONI","G",1,7,4,"6B4226","7A4E2D","stitched leather vest and pads","clank","Light, comfy, slightly squeaky.","armor,defense"},
+	{"leather jacket","BMCONI","Gd",1,5,4,"24262A","C9CED4","black leather biker jacket","swish","Instantly 40% cooler.","clothing"},
 	{"leatherback turtle","ABDJUC","GNB",4,2,8,"2A2E34","8A9098","huge leathery ridged shell","hiss","Biggest turtle. Shell is leather.","reptile,armored"},
 	{"leberkase","IMBAKK","keO",3,7,6,"E8A0A0","C8603A","thick slab of meat loaf","bonk","A slab of meat cake.","edible"},
 	{"lebkuchen","IMBAKK","Uke",3,7,2,"8A4A1E","F2EEE8","iced spice cookie","whoosh","A gingerbread cookie with a German accent.","edible,holiday"},
@@ -103,6 +108,7 @@ return {
 	{"light orb","FHBGKE","QFc",3,5,2,"FFF8E1","FFE57F","soft glowing ball that follows you","chime","A nightlight that likes you.","holy,cute"},
 	{"light pillar","FHDBKI","KFO",6,6,2,"FFFDE7","FFE082","tall glowing column from the sky","choir","A spotlight from above. Not a nice one.","holy"},
 	{"light rain","FHDEOJ","KFP",5,5,2,"FFF59D","FFFFFF","golden glowing droplets falling softly","chime","Sunshine, in drops.","holy"},
+	{"light runner","KHDOKI","GD",6,10,3,"2EE6FF","0B1A2A","a sleek bike made of light, trailing a glowing wall","zoom","End of line.","scifi,movie,vehicle"},
 	{"light shield","FHCIKI","GFa",3,4,6,"FFF59D","FFFFFF","radiant golden hex dome","chime","A hug made of sunshine.","holy,defence"},
 	{"light show","KHCNOI","jd",3,6,2,"E040FB","00E5FF","sweeping colourful beams and flashes","music","Too dazzling to fight.","music,silly"},
 	{"light spear","FHCAuB","KTe",6,9,1,"FFF9C4","FFFFFF","long golden javelin of light","zing","Thrown by someone very holy.","holy,sharp"},
@@ -397,10 +403,4 @@ return {
 	{"maid","LMCJNA","FI",3,6,4,"111827","F8FAFC","apron, feather duster","swish","Dusts the enemies off the map.","silly"},
 	{"maidenhair fern","NGANMI","ZS",1,1,2,"7CB342","3E2723","delicate fan fronds on black stems","rustle","Dainty. Shy. Ancient.","plant,ancient"},
 	{"mail","BMBELB","dPO",3,6,2,"F5F5F0","DC2626","blizzard of envelopes, postcards and one heavy parcel","thud","You have got mail. All of it. At once.","household"},
-	{"mail carrier","LMCJNA","DQe",3,7,4,"1E3A8A","F8FAFC","blue uniform, mail bag, letters","whoosh","Throws letters. Hard.","silly"},
-	{"mail ninja","LICJNA","Ze",4,9,3,"111827","1E3A8A","ninja with a mailbag of throwing letters","whoosh","Delivers mail. Silently. Violently.","silly,stealth"},
-	{"mailbox","BMBC2I","G",1,1,6,"2F6FD1","C0392B","box on a post with flag","thud","Delivery! Of doom.","container"},
-	{"main character","LHCJNA","DFf",5,6,5,"FACC15","1D4ED8","spotlight following one figure","ding","Plot armor equipped.","meme"},
-	{"main street","MMENII","Sh",2,1,7,"B5523B","90CAF9","street lined with shops and lamps","crowd","Every shop is open. Every door a surprise.","place"},
-	{"maine coon","AMCJAA","dfT",3,7,2,"8A6A4A","D8C4A8","huge fluffy cat, lynx ear tips, big ruff","meow","A house cat that skipped leg day never.","mammal,pet,cute"},
 }

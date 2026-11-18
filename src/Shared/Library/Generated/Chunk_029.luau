@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"yeti","ACDJNA","DJkf",7,5,7,"F1F5F9","93C5FD","shaggy white ape, frosty breath","roar","Lives on a mountain. Hates sunscreen.","cryptid,frozen"},
+	{"yeti crab","ABBJRA","GfT",2,4,5,"F2F2EE","E8E0D0","hairy white deep-sea crab","clack","A crab in a fur coat.","crustacean,aquatic,armored,deepsea"},
+	{"yeti family","ACBJNA","dJ",2,5,3,"F1F5F9","93C5FD","fluffy white baby yeti","roar","Throws tiny snowballs. Adorably.","cryptid,cute,frozen"},
+	{"yeti king","ACEJNA","Jkh",8,4,8,"F1F5F9","1E3A8A","giant white yeti with icicle crown","roar","Rules the mountain. Hates sunscreen.","cryptid,frozen,boss"},
+	{"yew","NJDCMI","GWkSM",4,1,8,"4E342E","1B5E20","dark dense ancient tree, red berries","rustle","Old, dark, and quietly poisonous.","plant,tree,ancient"},
+	{"yi qi","AMBJBB","DAQfT",2,9,3,"3A3A3A","8A6A4A","bat-winged small dino","screech","A dinosaur with bat wings.","dinosaur,extinct,reptile,predator"},
 	{"yo-yo","BMAAKK","UQfe",2,8,3,"C0392B","C9CED4","two discs on a string","squeak","Walks the dog. Bites the enemy.","toy"},
 	{"yo-yo master","LMCJNI","Ue",3,7,3,"DC2626","F8FAFC","spinning glowing yo-yo","whir","Walk the dog. Then the enemy.","silly"},
 	{"yodel","KFBFOB","jk",3,7,1,"81D4FA","FFFFFF","echoing mountain sound waves","yodel","Yodel-ay-hee-hoo! Avalanche risk.","music,loud,silly"},

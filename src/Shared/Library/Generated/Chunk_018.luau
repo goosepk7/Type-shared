@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
+	{"nunchucks","CMBHJK","jfO",3,9,3,"24262A","5A3A1E","two sticks joined by chain","bonk","Mostly hits the user. Sometimes the enemy.","ninja"},
+	{"nurikabe","AEECII","GO",6,1,10,"78716C","A8A29E","enormous invisible-ish stone wall with eyes","rumble","A wall that appears out of nowhere.","yokai,guardian"},
+	{"nurse","LMCJNA","QF",3,6,4,"F8FAFC","F472B6","scrubs, cap, giant syringe","chime","Gentle hands. Giant cartoon needle.","healer"},
+	{"nurse shark","ABCJEC","DfTHB",4,3,6,"A88E6A","E2D2B8","flat brown shark, whisker barbels","chomp","Lazy shark. Naps on the sea floor.","fish,aquatic,ocean,predator"},
+	{"nursery","MHDNlI","jdSh",4,1,4,"FDE047","F472B6","bright room of blocks, finger paints and tiny chairs","giggle","Twenty toddlers. One teacher. Pray for the teacher.","school,cute"},
 	{"nut","BKAA3K","UeO",2,7,5,"9CA3AF","D1D5DB","steel hex nut spinning like a tiny saw","clink","Could be hardware. Could be a snack. Bite to find out.","tool,mechanical"},
 	{"nut and bolt","BKAAJK","ke",1,8,3,"8A929B","8E9196","hex nut on a bolt","clink","Nuts! Bolts! Ouch!","hardware"},
 	{"nut cluster","IEAAKK","ceO",3,7,6,"5A2E16","C48A5A","chocolate covered nut lumps","bonk","Crunchy chocolate rocks.","edible"},
@@ -397,10 +403,4 @@ return {
 	{"peking duck","IGCOKI","F",2,5,3,"B0502B","E8A040","lacquered roasted duck","crunch","Crispy skin, royal history.","edible,healthy,royal"},
 	{"pekingese","AMBJAA","dQf",2,6,2,"E8B87A","F2E0C0","flat face, lion mane fluff","yip","Tiny lion. Huge ego.","mammal,pet,cute"},
 	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
-	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
-	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
-	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
-	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
-	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
-	{"pencil","BMAAJK","Te",1,8,1,"F1C40F","F06292","yellow hexagon pencil with eraser","tap","Sharpened for battle.","school"},
 }

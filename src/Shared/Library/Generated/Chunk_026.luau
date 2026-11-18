@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tea set","BBBELJ","KcP",2,4,1,"FBCFE8","FFFFFF","pink teapot and cups pouring in mid-air","clink","Pinkies up. Gloves off.","toy,cute"},
+	{"teach","KHBF6B","XNO",3,4,2,"15803D","FFFFFF","pointer stick tapping a chalkboard, chalk flying","tap","Class is in session. You are the lesson.","school"},
+	{"teacher","LMCJNA","jOh",3,4,4,"7C2D12","F8FAFC","glasses, cardigan, chalk","ding","Pop quiz. Right now.","school"},
+	{"teachers pet","LHBJNA","dOh",2,5,2,"FDE047","EF4444","kid with hand rocketing up, shiny apple, perfect hair","ding","Teacher! Teacher! They are cheating!","school,silly"},
+	{"teacup ride","DLBKHK","jkg",2,4,3,"F48FB1","FFFFFF","giant spinning teacup with seats","whoosh","Round and round until everyone is dizzy.","silly,cute"},
 	{"teak","NGECMI","GWkS",4,1,9,"5D4037","558B2F","tall straight dark hardwood tree","rustle","So hard you could build a ship.","plant,tree,heavy"},
 	{"teal","ABBJDC","AfB",2,5,2,"8A4A2A","3AA06A","small duck, green wing patch","quack","Small duck with a teal wing.","bird,aquatic"},
 	{"team","LMDJLA","DQFh",6,6,6,"DC2626","FFFFFF","huddle of players in red jerseys with a mascot","crowd","There is no I in team. There is a me, though.","sport,gaming"},
@@ -224,6 +229,7 @@ return {
 	{"tissue","BMAIVJ","GAF",1,5,1,"FFFFFF","BFDBFE","soft white tissue floating up out of a box, then another","puff","Bless you. Have one. Have the whole box.","household"},
 	{"titan","AEFJNA","klfO",9,3,10,"57534E","F59E0B","towering ancient giant, stone muscles","stomp","Older than gods. Bigger than buildings.","mythical,giant,ancient,boss,danger"},
 	{"titan beetle","AMBJFA","Gf",3,3,6,"6A3A1E","C8A07A","huge beetle with giant jaws","click","Snaps pencils in half.","insect,armored"},
+	{"titan drop","OKEMWI","Eeh",9,3,5,"C9D2DA","FF8A1E","a beacon, then a mech slams down from orbit and opens fire","crash","Standby for a very large delivery.","scifi,game,mech"},
 	{"titan moon","MJDGKJ","kMe",5,4,8,"FFB300","D7CCC8","hazy orange moon with methane lakes","twinkle","Smoggy, orange, and very cold.","space,star"},
 	{"titan shift","KEFOXA","DWk",8,4,8,"C58B5A","FFDD99","you grow to twice your size with steam pouring off","boom","Look down. Way down.","anime,heavy,transform"},
 	{"titanis","AMDJDA","DkfT",7,8,5,"6A4A2E","D8A04A","terror bird with huge beak","boom","Terror bird of the Americas.","bird,flightless,extinct,predator"},
@@ -397,10 +403,4 @@ return {
 	{"treadmill","OMCL1I","IN",1,3,6,"24262A","8E9196","motor belt with handrails","hum","Run forever. Get nowhere.","sport,silly"},
 	{"treant","AGEJMA","GWFk",7,2,9,"78350F","4D7C0F","giant walking tree with bark face","creak","Takes three days to say good morning.","plant,giant"},
 	{"treant sapling","AGAJMA","WF",1,3,3,"65A30D","A3E635","little walking sapling with leaf hair","rustle","Grows a bit each round.","plant,cute"},
-	{"treasure chest","BMCLII","dch",3,1,7,"8B5A2B","D4A72C","iron-banded chest spilling gold","chime","X marked this spot.","treasure,pirate"},
-	{"treasure galleon","DBEMHC","cegB",6,4,8,"6D4C41","FFD54F","galleon overflowing with gold","cannon","Everyone wants what is inside.","vehicle,aquatic,pirate"},
-	{"treasure hunter captain","LMCJNA","cb",4,6,4,"A16207","FACC15","map, shovel, eyepatch","ding","X marks the spot. You're the spot.","explorer,pirate"},
-	{"treasure island","MEENII","Sch",4,1,8,"E6C27A","43A047","island with an X marked in sand","chime","X marks the spot. Dig!","place,mythical,pirate"},
-	{"treasure pile","BMDL2I","dc",3,1,6,"D4A72C","F1C40F","mountain of coins and goblets","chime","Dragons sleep on these. Enemies trip on these.","treasure,shiny"},
-	{"treasure room","MKDNII","dSc",3,1,8,"FFD54F","8D6E63","piles of gold coins and gems","rumble","Look at all this loot! Nobody touch it.","place,terrain"},
 }
