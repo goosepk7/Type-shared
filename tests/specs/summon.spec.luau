@@ -160,7 +160,7 @@ return function(t)
 			t.ok(roleCount(dragon, "strand") >= 4, "spaghetti dragon is woven from strands (" .. style .. ")")
 			t.ok(roleCount(dragon, "sauce") + roleCount(dragon, "drip") >= 1, "sauce drips")
 			t.eq(dragon.material.construction, "Strands", "construction")
-			local tank = Summon.blueprint(withMaterial(sig("tank"), "cheese"), { style = style })
+			local tank = Summon.blueprint(withMaterial(sig("tank"), "cheese"), { style = style, heroes = false }) -- the signature tank (the sculpted tank hero keeps its silhouette)
 			t.ok(roleCount(tank, "hole") >= 2, "cheese tank has holes")
 			local wall = Summon.blueprint(withMaterial(F.special(Schema, "Wall", "Large"), "bees"), { style = style })
 			t.ok(roleCount(wall, "unit") >= 6, "bee wall is made of bees")
@@ -227,7 +227,7 @@ return function(t)
 		for _, mood in Schema.Enums.Mood do
 			local r = F.synthetic(Schema, "Quadruped", "Large", 6)
 			r.mood = mood
-			local bp = Summon.blueprint(r, { style = "Solid" })
+			local bp = Summon.blueprint(r, { style = "Solid", heroes = false }) -- plan faces (heroes carry sculpted heads)
 			t.ok(roleCount(bp, "eye") >= 1, "eyes for " .. mood)
 			local sig = {}
 			for _, p in bp.parts do
