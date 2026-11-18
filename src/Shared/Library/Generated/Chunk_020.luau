@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poodle moth","AMAJFB","jdA",1,5,1,"F2F2EE","E8E0D8","super fluffy white moth","flutter","A moth that looks like a poodle.","insect,cute"},
+	{"poof","KLBDOJ","jZY",1,10,1,"E1BEE7","FFFFFF","puffy cloud with sparkles","poof","Poof! Now you see me...","magic,silly"},
+	{"pooka","AICJAA","jgY",4,8,4,"111827","FACC15","black shaggy horse with gold eyes","neigh","Gives wild rides. No refunds.","mythical,spooky"},
 	{"pool cue","BMCHzK","kfT",2,7,3,"C49A6C","24262A","long tapered stick","bonk","Bank shot. Off their head.","sport"},
 	{"pool noodle","BBCHJK","Udf",1,7,1,"8BC34A","FF3EA5","long bendy foam tube","bonk","Thwap. Thwap. Undefeated.","summer,toy,silly"},
 	{"pool noodle lance","CBDAuK","Dkf",1,6,1,"8BC34A","E67E22","foam noodle jousting lance","boing","Joust of the summer.","summer,silly"},
@@ -400,6 +403,4 @@ return {
 	{"rebel","LACJNA","DZeh",5,7,4,"B91C1C","1F2937","bandana, patched jacket, raised fist, makeshift banner","yay","Refuses to follow the tutorial.","warrior"},
 	{"rebirth","KADOKJ","WF",3,5,5,"FF6D00","FFD54F","phoenix-like flame wings rising","whoosh","From the ashes, I rise.","fire,holy"},
 	{"receipt","BMBLCD","WHN",2,5,2,"FFFFFF","6B7280","absurdly long curling paper strip that keeps printing","whirr","Three miles long. For one pack of gum.","silly,meme"},
-	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
-	{"recipe","BLBO2J","WFh",3,3,2,"F5E6CC","DC2626","splattered recipe card with floating measuring spoons","rustle","Step one: preheat the battlefield.","kitchen,magic"},
 }

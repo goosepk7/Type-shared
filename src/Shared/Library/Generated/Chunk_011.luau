@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
+	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},
+	{"giant ice cream sundae","ICEJIF","JkcN",7,2,7,"F7E7CE","B0101E","mountain of scoops and sauce","thud","An avalanche of dessert.","edible,giant,silly"},
 	{"giant jelly","IMEJGG","GUaN",7,2,7,"E0102B","F35A6A","house-sized wobbling dome","thud","A wobbling fortress. Bounces everything off.","edible,giant,silly"},
 	{"giant leaf boat","DGBKHC","gB",1,4,2,"7CB342","F8BBD0","huge leaf curled into a boat","whoosh","For very tiny adventurers.","vehicle,magic,mythical,cute"},
 	{"giant leech","ABCJCC","iNB",4,4,4,"1F2937","991B1B","slimy black worm with a round sucker","squelch","Sticks like a bad joke.","aquatic,spooky"},
@@ -400,7 +403,4 @@ return {
 	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
 	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
 	{"growth potion","BLAO2I","W",3,5,1,"E67E22","BFE6F2","big bottle labelled EAT ME","bubble","Embiggen yourself.","magic,fantasy"},
-	{"growth ray","CLCBwI","jWe",4,7,3,"E67E22","7D3CB5","ray gun with big flared dish","zap","Embiggening in progress.","scifi,ranged"},
-	{"grub","AMAJTD","CWP",1,3,1,"F2E8D0","B8701E","curled white beetle larva","squelch","Lives underground. Waits. Grows.","bug"},
-	{"grump","LMCJNA","IN",3,3,5,"57534E","1E3A8A","crossed arms, frown, raincloud overhead","grunt","Hmph. Get off the map.","silly"},
 }

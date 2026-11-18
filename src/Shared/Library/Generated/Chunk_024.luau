@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"solar power","KHCOKJ","DF",3,6,3,"FFC107","FFF8E1","golden panels of light absorbing sunbeams","hum","Charged by sunshine.","holy,support"},
+	{"solar sail","DHDKHJ","Aag",3,7,2,"FFD54F","90CAF9","huge shiny thin sail in space","roar","Surfs sunlight across the stars.","vehicle,space"},
+	{"solar storm","HDEEOJ","KLP",7,6,3,"FF7043","7E57C2","charged particle storm, auroral ripples","crackle","Space weather is the worst weather.","space,electric"},
 	{"solar system","MLFNKK","kSRH",9,2,9,"FFC107","5C6BC0","sun with planets on circling orbits","rumble","Brings the whole family.","space"},
 	{"solar wind","MFEFKJ","KkI",6,8,4,"FFD54F","FFF8E1","streams of glowing golden particles","rumble","Space breeze, slightly radioactive.","space"},
 	{"soldering iron","JAAAJK","Kf",2,6,3,"8E9196","C0392B","pen-shaped heated tip","clank","Tiny, toasty, precise.","tool"},
@@ -400,6 +403,4 @@ return {
 	{"stiletto","CKAHrK","fT",3,10,2,"C9CED4","24262A","needle-thin spike blade","shing","Thin as a whisper, twice as rude.","medieval,sharp"},
 	{"still water","KBCIKI","kaY",6,9,2,"4FA3C7","E6F4FA","calm ring of water that flashes when struck","chime","Go on. Hit me.","anime,sword"},
 	{"stilt house","EMCCII","GS",2,1,5,"A1887F","1E88E5","wooden hut high on tall poles","thud","Floods? Not our problem.","structure,building"},
-	{"stilt walker","LMCJNA","dk",3,4,3,"7C3AED","F472B6","very tall figure on striped stilts","clack","Tallest in the room. Wobbly.","circus,silly"},
-	{"stilts","BMCOzI","D",1,4,3,"8B5A2B","C0392B","tall wooden poles with footrests","pop","Tall. Wobbly. Majestic.","party"},
 }

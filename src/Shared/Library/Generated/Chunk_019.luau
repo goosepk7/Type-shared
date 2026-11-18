@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"peel","BGALGI","kNO",2,1,1,"FDE047","A16207","floppy yellow fruit skin lying in wait","whee","The oldest trap in the book.","trap,silly"},
+	{"peeler","BMAHJK","f",1,7,2,"8A929B","E67E22","little swivel blade on handle","clang","Peels potatoes. And armour.","kitchen,household"},
+	{"peepal tree","NHECMI","GWFkS",4,1,9,"8D6E63","43A047","wide tree with heart-shaped leaves","rustle","Sit beneath it. Get very wise.","plant,tree,holy"},
 	{"peg leg","CMBHtI","kf",2,4,4,"8B5A2B","5A3A1E","wooden stump leg","bang","Kicks with a thunk.","pirate,silly"},
 	{"pegacorn","ALDKAB","ATg",7,8,6,"F9A8D4","F8FAFC","winged horned horse with pastel mane","neigh","Wings and a horn. The full set.","mythical,mount,cute"},
 	{"pegasus","AFDKAB","DAFg",6,9,5,"F8FAFC","93C5FD","white horse, feathered wings","neigh","A horse that skipped the road entirely.","mythical,flying,mount,holy"},
@@ -400,7 +403,4 @@ return {
 	{"pony","AMCKAA","Dkg",3,8,5,"B88A5A","F2E6D4","short round horse, thick mane","neigh","Small horse. Massive ego.","mammal"},
 	{"ponytail","BMBHCK","Ukf",3,8,3,"C68642","FF6FB5","long swishing ponytail with a pink scrunchie","swish","Head turn. Whip crack. Oops, sorry.","body,silly"},
 	{"poodle","AMBJAA","DjQf",3,7,4,"F2EDE6","D8CFC2","pom-pom tufts, curly coat, prancing pose","bark","Fancy haircut. Also secretly very smart.","mammal,pet"},
-	{"poodle moth","AMAJFB","jdA",1,5,1,"F2F2EE","E8E0D8","super fluffy white moth","flutter","A moth that looks like a poodle.","insect,cute"},
-	{"poof","KLBDOJ","jZY",1,10,1,"E1BEE7","FFFFFF","puffy cloud with sparkles","poof","Poof! Now you see me...","magic,silly"},
-	{"pooka","AICJAA","jgY",4,8,4,"111827","FACC15","black shaggy horse with gold eyes","neigh","Gives wild rides. No refunds.","mythical,spooky"},
 }

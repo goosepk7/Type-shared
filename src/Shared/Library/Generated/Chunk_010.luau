@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"foam","FBBDOJ","dSN",2,3,2,"E9F7FB","BFE6F2","piled frothy white suds","fizz","Fluffy. Fizzy. Slippery.","aquatic,silly"},
+	{"foam dart blaster","CMBAwI","Ude",1,8,2,"E67E22","2F6FD1","chunky plastic dart launcher","thwip","Foam darts. Real drama.","toy,silly"},
+	{"foam finger","BMBONF","dF",1,5,1,"2F6FD1","F2F2EE","giant foam number-one hand","bonk","We're number one!","sport,silly"},
 	{"foam hammer","BMCHtK","Udf",1,7,2,"F1C40F","2F6FD1","huge squishy foam hammer","thud","Fwump.","toy,silly"},
 	{"foam machine","OMCD1I","jNP",1,2,4,"F2F2EE","47D7E8","cannon spewing foam bubbles","pop","Foam party! Nobody can move.","party"},
 	{"foam sword","BMCHrK","Udf",1,7,2,"2F6FD1","F1C40F","squishy foam blade","shing","Bonk. Bonk bonk. Victory.","toy,silly"},
@@ -400,7 +403,4 @@ return {
 	{"giant gumball","IMEGIF","UkI",7,2,7,"E0102B","4FA3E8","boulder-sized glossy gumball","thud","Bounces over everything.","edible,giant,silly"},
 	{"giant gummy bear","IMEJBA","Udkf",7,2,7,"E0102B","F2A62B","towering translucent bear","thud","Wobbles menacingly. Very sweet.","edible,giant,silly,candy"},
 	{"giant hamster ball","DMCKHF","UDkg",2,7,4,"81D4FA","FFFFFF","giant clear ball with a rider inside","boing","Roll in. Bowl everyone over.","mechanical,vehicle,land,silly"},
-	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
-	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},
-	{"giant ice cream sundae","ICEJIF","JkcN",7,2,7,"F7E7CE","B0101E","mountain of scoops and sauce","thud","An avalanche of dessert.","edible,giant,silly"},
 }

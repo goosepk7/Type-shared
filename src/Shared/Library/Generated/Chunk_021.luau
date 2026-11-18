@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
+	{"recipe","BLBO2J","WFh",3,3,2,"F5E6CC","DC2626","splattered recipe card with floating measuring spoons","rustle","Step one: preheat the battlefield.","kitchen,magic"},
+	{"recon drone","OFBOhE","AQe",3,7,5,"3A4148","FF3A3A","a quadcopter circles overhead pinging enemies red","buzz","UAV online. Everyone you can't see just got very visible.","gaming,robot,mechanical"},
 	{"recorder","BMAFJI","jd",1,6,1,"F2F2EE","F2F2EE","plastic school flute","woodwind","Every school's secret weapon.","music,school,silly"},
 	{"recover","KGBOKJ","F",1,4,3,"81C784","FFFFFF","gentle green breathing glow","chime","Shake it off. Back in it.","support"},
 	{"rectangle","KECCnI","GIa",3,2,7,"22C55E","FFFFFF","long green slab sliding sideways like a door","thunk","A square that got stretched. Still bitter.","school,shape"},
@@ -400,7 +403,4 @@ return {
 	{"saki","AMBJBA","deb",2,7,2,"3A3A3A","F2E8D8","fluffy monkey with white face","chatter","Wears a white face mask.","mammal,primate"},
 	{"sakura tempest","KGDN5K","SRP",7,8,3,"FFB7D0","FFF0F5","a whirlwind of pink petal blades around you","whoosh","Pretty. Pointy. Mostly pointy.","anime,flowers,sword"},
 	{"salad","IGBOKI","WF",2,5,3,"7DBE3A","D72B2B","bowl of leaves, tomatoes, croutons","crunch","A bowl of good decisions.","edible,healthy,vegetable"},
-	{"salad bowl","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","wooden bowl of greens","crunch","A whole garden in a bowl.","edible,healthy"},
-	{"salad dressing","IMBLGI","kSO",2,3,2,"E8C04A","7DBE3A","cruet bottle of dressing","squeak","Makes the salad worth eating.","edible,slippery,silly,sauce"},
-	{"salak","IGBAKF","Fke",3,6,2,"6B3A1E","F5F2E5","scaly brown teardrop","splat","Fruit wearing snakeskin. Fancy.","edible,fruit,sweet"},
 }

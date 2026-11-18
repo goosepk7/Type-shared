@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"yari","CKCAuK","fT",5,6,4,"8A929B","24262A","straight-bladed spear","shing","Poke with honour.","sharp,ancient"},
 	{"yarn","BMALJI","cN",1,5,1,"D8CBB5","C0392B","fuzzy ball of wool","splat","Tangled up in a cosy mess.","art"},
 	{"yarrow","NGBNMI","dFS",1,1,2,"FFFFFF","F48FB1","flat clusters of tiny flowers","rustle","Old-time wound healer.","plant,flower"},
 	{"yawn","KMBFOB","NO",1,3,1,"B3E5FC","FFFFFF","stretchy sleepy ripple","yawn","Contagious. Look, you just did it.","silly"},

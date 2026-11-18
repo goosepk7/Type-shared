@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"salad bowl","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","wooden bowl of greens","crunch","A whole garden in a bowl.","edible,healthy"},
+	{"salad dressing","IMBLGI","kSO",2,3,2,"E8C04A","7DBE3A","cruet bottle of dressing","squeak","Makes the salad worth eating.","edible,slippery,silly,sauce"},
+	{"salak","IGBAKF","Fke",3,6,2,"6B3A1E","F5F2E5","scaly brown teardrop","splat","Fruit wearing snakeskin. Fancy.","edible,fruit,sweet"},
 	{"salamander","AMAJCA","FB",1,3,2,"1E1E24","F2D82A","slick black body, yellow spots","squelch","Wet, spotty and chill.","amphibian,wetland"},
 	{"salami","IMBHJI","kf",3,5,4,"8A1E2E","F2E8D8","marbled red sausage log","bonk","A meat log. Heavy swing.","edible,silly"},
 	{"salchipapa","IMAELB","ce",2,7,1,"B0402B","F2C24A","fries with sausage slices","pitter","Fries and sausages, best friends.","edible"},
@@ -400,7 +403,4 @@ return {
 	{"shetland pony","AMCKAA","Dkg",3,5,5,"6A4A2E","2A1A12","tiny shaggy pony","neigh","Small pony. Very stubborn.","mammal"},
 	{"shetland sheepdog","AMBJAA","DQfH",3,7,4,"C8843A","F2F2EE","mini collie","bark","A collie, travel size.","mammal,pet"},
 	{"shiba inu","AMBJAA","DQf",4,7,4,"D98A3A","FFF2E0","fox-like, curled tail, smug face","bark","Much wow. Very shiba.","mammal,pet,meme"},
-	{"shield","BKCIyI","Gk",3,5,7,"8A929B","9E1B32","round shield with central boss","clang","Say no with your arm.","armor,defense"},
-	{"shield tower","ELDIII","GSa",3,1,9,"90A4AE","40C4FF","tower projecting a glowing dome","thud","Protects everything around it.","structure,defense,tower"},
-	{"shield wall","EKDCII","GSIa",3,1,8,"B71C1C","D4AF37","overlapping round shields in a row","thud","Shields up. Way up.","structure,defense,ancient"},
 }

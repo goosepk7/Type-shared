@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"traveling merchant","LMCJNA","cbY",3,5,4,"92400E","7C3AED","giant backpack of wares","ding","What're ya buyin'?","merchant"},
 	{"traveller palm","NGDCMI","GWkS",3,1,6,"6D4C41","43A047","giant fan of paddle leaves","rustle","Points the way. Holds water.","plant,tree"},
 	{"tray","BMBIyK","Ga",1,6,3,"C9CED4","C9CED4","flat round serving tray","clang","Snacks? Defence? Yes.","kitchen,household"},
 	{"treacle sponge","IMBLGI","SNP",2,3,3,"E8A317","F2D88A","sponge pudding with syrup","gloop","A syrup-drenched sponge.","edible,sticky,sweet"},
@@ -402,5 +403,4 @@ return {
 	{"wall of bread","IMDCII","GFk",4,2,8,"C8904A","F5E6C8","stacked loaves forming a wall","thud","Built from carbs. Unbreakable morale.","edible,giant,silly"},
 	{"wall run","KFBOKB","D",2,9,2,"B3E5FC","FFFFFF","caster sprinting sideways along a wall","tap","Gravity is a suggestion.","sport,speed"},
 	{"wall turret","EECMII","GSe",4,1,8,"9E9E9E","5D5D5D","small round tower jutting from a wall","thud","Watches the corner. Shoots the corner.","tower,ancient"},
-	{"wallaby","AMCJAG","Ukf",3,6,2,"8A7666","D8C4B0","small kangaroo, chunky tail","chirp","Kangaroo in fun size.","mammal,marsupial"},
 }

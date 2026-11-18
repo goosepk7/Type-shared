@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jet","DFDAHB","EATeg",7,10,6,"78909C","37474F","sharp delta wings, pointed nose, afterburner","jet","Sonic boom first, explanation never.","vehicle,air"},
+	{"jet boat","DBCKHC","DkIgB",5,10,4,"FF9800","212121","sleek boat blasting a water jet","engine","Spins on the spot. Sprays everyone.","vehicle,aquatic"},
 	{"jet ski","DBBKHC","DkIgB",4,9,3,"FFEB3B","1565C0","small sit-on watercraft, handlebars, spray jet","engine","Sprays enemies with an angry rooster tail.","vehicle,aquatic"},
 	{"jet stream","FFDBOB","kIe",6,10,2,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air"},
 	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
@@ -401,6 +403,4 @@ return {
 	{"leaf rake","JKCHJK","fH",2,5,3,"2E8B57","C9CED4","fan of springy tines","clank","Gathers leaves. Gathers foes.","garden"},
 	{"leaf shield","FGCIKK","GF",2,4,4,"43A047","AED581","whirling leaves forming a dome","rustle","Nature has your back.","plant,defence"},
 	{"leaf storm","FGDN5K","jlT",6,6,2,"7CB342","FFB300","whirlwind of sharp green and gold leaves","rustle","Autumn, but violent.","plant,storm"},
-	{"leafcutter ant","AMAJLA","CdlfP",1,5,1,"B85A2A","6AC84A","ants carrying leaf pieces","skitter","Farmers with leaf umbrellas.","insect,swarm"},
-	{"leafcutter bee","AJAJLB","ATP",2,7,1,"3A3A3A","C8A07A","bee cutting leaf circles","buzz","Cuts perfect leaf circles.","insect,swarm,venomous"},
 }

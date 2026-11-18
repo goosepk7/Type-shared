@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mokele-mbembe","ABEJAC","GkB",7,3,8,"57534E","166534","long-necked swamp beast","stomp","A dinosaur that forgot to go extinct.","cryptid,aquatic"},
+	{"molasses","IMBLGI","SNO",2,3,3,"3A1A0C","6B3A1E","thick black-brown sauce","gloop","Slower than molasses. Literally.","edible,sticky,sauce,sweet"},
 	{"mold","NJBLMI","SMNP",3,1,2,"7CB342","C5E1A5","fuzzy green patch spreading out","poof","Spreads on everything. Everything.","plant,fungus,silly"},
 	{"moldy cheese","IJBDOJ","ScM",3,3,2,"C8C86A","6B8A4A","cheese wedge with fuzzy green spots","whiff","A science project gone wrong.","edible,smelly,silly"},
 	{"mole","AMAJAA","Cf",1,5,3,"2E2A2A","E8A0A0","velvet black body, big shovel paws","squeak","Digs tunnels. Can't see. Doesn't need to.","mammal,wild"},
@@ -401,6 +403,4 @@ return {
 	{"nougat","IMBLGI","SNP",2,3,3,"F2E8D8","C8A070","white chewy block, nut bits","gloop","Chewy, nutty, and sticky.","edible,sticky,candy,sweet"},
 	{"nova","FHDFOI","EkP",6,8,1,"FFFDE7","FF80AB","blinding ring of white light","boom","A mini star explosion. Mini.","space,explosive"},
 	{"nova bomb","FHDGKI","KEk",8,6,1,"FFFDE7","FF80AB","white-pink sphere detonating into a nova ring","boom","A tiny supernova. Pocket edition.","space,explosive"},
-	{"nozzle","JBBBwB","kIe",4,8,3,"EAB308","9CA3AF","brass hose nozzle on full jet blast","squirt","Set to JET. Never set it to jet.","tool,household"},
-	{"npc","LMCJNA","jdQ",3,3,4,"A3A3A3","F5F5F4","blank face, exclamation mark over head","ding","Says the same line forever. Nice weather.","meme,gaming,silly"},
 }

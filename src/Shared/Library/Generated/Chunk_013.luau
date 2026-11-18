@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hook hand","CKBHrI","fH",3,7,4,"C9CED4","5A3A1E","curved hook on a cuff","bang","Handy, minus the hand.","pirate,sharp"},
+	{"hook sword","CKCHrK","fTH",5,7,4,"8A929B","9E1B32","sword with hooked tip","shing","Hook. Pull. Slash.","fantasy,sharp"},
 	{"hoop snake","AJBJCF","UDM",3,9,2,"65A30D","FBBF24","snake biting tail rolling like a wheel","hiss","Rolls downhill faster than you run.","cryptid,silly"},
 	{"hoopoe","AMAJDB","dA",1,7,1,"E8A06A","1E1E1E","punk crest, zebra wings","tweet","Has a mohawk. Sounds like oop-oop.","bird,cute"},
 	{"hop","KMAOKG","U",1,7,1,"F8BBD0","FFFFFF","tiny bouncy hop puffs","boing","Hippity hoppity.","cute,speed"},
@@ -401,6 +403,4 @@ return {
 	{"jerusalem cricket","AMAJFA","dfP",1,6,1,"E8A04A","3A2A1A","big-headed striped cricket","buzz","Big head. Many nicknames.","insect"},
 	{"jester","LLCJNA","Ujd",3,8,3,"DC2626","FACC15","three-pointed bell hat, diamond suit","jingle","Tells jokes. Dodges tomatoes.","royal,silly"},
 	{"jester hat","BMBONI","jd",1,7,1,"9E1B32","D4A72C","floppy three-point hat with bells","swish","Jingle jingle, confusing.","clothing,silly"},
-	{"jet","DFDAHB","EATeg",7,10,6,"78909C","37474F","sharp delta wings, pointed nose, afterburner","jet","Sonic boom first, explanation never.","vehicle,air"},
-	{"jet boat","DBCKHC","DkIgB",5,10,4,"FF9800","212121","sleek boat blasting a water jet","engine","Spins on the spot. Sprays everyone.","vehicle,aquatic"},
 }
