@@ -121,7 +121,6 @@ return {
 	{"foxtail","NGANMI","dFSN",1,1,1,"C0CA33","9E9D24","fuzzy grass heads like little tails","rustle","Sticks to socks. And enemies.","plant,flower"},
 	{"foxtail lily","NACNMI","dFS",2,1,2,"FF9800","FFE0B2","towering bottlebrush flower spike","rustle","A candle made of flowers.","plant,flower"},
 	{"francesinha","IMBLGI","FN",2,3,3,"E8762B","D9A04A","sandwich drowned in red sauce","gloop","A sandwich in a sauce bath.","edible,sticky"},
-	{"frankenstein's monster","ADDJNA","kfL",7,3,8,"65A30D","1F2937","flat-head giant, bolts in neck, stitches","groan","Powered by thunder. Afraid of fire.","spooky,halloween"},
 	{"frappe","ICBOKI","DJ",3,9,2,"C8A070","F7F2EC","blended coffee, whipped top","fizz","A coffee milkshake for heroes.","edible,drink"},
 	{"freckle","BHAELJ","jdP",1,5,1,"C68642","E8B48A","sprinkle of tiny brown dots raining down","pitter","Sun kisses. Now in bulk.","body,cute"},
 	{"free running","KFBOKG","UD",3,9,2,"FF7043","FFFFFF","flipping, vaulting motion trail","whoosh","Parkour! Over everything.","sport,speed"},

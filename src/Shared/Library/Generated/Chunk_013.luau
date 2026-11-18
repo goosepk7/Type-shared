@@ -8,6 +8,7 @@ return {
 	{"hoisin","IMBLGI","SNP",2,3,3,"5A1E1E","8A3020","thick dark sweet sauce","gloop","Sweet, sticky, and dark.","edible,sticky,sauce"},
 	{"hole punch","BMALJK","T",1,4,4,"8E9196","24262A","two-hole office punch","tap","Ka-chunk. Holes.","office"},
 	{"hollandaise","IMBLGI","kSO",2,3,2,"F2D870","F2C24A","smooth yellow buttery sauce","squeak","Fancy butter sauce for fancy eggs.","edible,slippery,silly,sauce"},
+	{"hollow lantern","BACG7F","KEe",5,6,4,"E8761A","7CFF6B","a carved gourd lantern with a green flame grin, lobbed","cackle","It is smiling because it knows something you don't.","monster,folklore,spooky,halloween"},
 	{"hollow tree","NGDCMI","GZS",3,1,7,"6D4C41","43A047","wide trunk with a hidey-hole","rustle","Hide inside. Pop out. Surprise!","plant,tree"},
 	{"hollow visage","KICOKI","Dif",8,9,2,"F2EEE6","B3122E","a cracked white skull mask with red stripes","growl","Put on the face. Lose the manners.","anime,transform"},
 	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},

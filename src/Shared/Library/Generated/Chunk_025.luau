@@ -208,6 +208,7 @@ return {
 	{"storm tree","NDECMI","GSeL",6,1,8,"37474F","FFEB3B","dark tree crackling with lightning","chime","Lightning hits it every time. Then you.","plant,magic,mythical"},
 	{"storm ward","KDCLII","GL",5,3,5,"FFEB3B","448AFF","ring of crackling runes","buzz","Zappy doormat.","electric,defence"},
 	{"storm wings","KDCOKB","AL",5,9,3,"FFEB3B","448AFF","wings of crackling lightning","crack","Fly fast. Zap everything you pass.","electric"},
+	{"stormstitch brute","ADDJXA","kfL",6,4,7,"6D7F86","7FE3FF","quilted patchwork giant, brass rivets, copper coil rods","thunder","Assembled from spare parts. Unhappy about it.","monster,movie,summon,lightning"},
 	{"stormy night","GIDEOJ","jZL",6,5,3,"1A237E","FFEB3B","black rain with lightning flashes","boom","It was a dark and stormy night...","spooky,storm"},
 	{"story","KLCNOJ","jcNh",4,3,3,"7C3AED","FDE68A","open storybook with a pop-up castle and a tiny dragon","chime","Once upon a time, you lost. The end.","school,fantasy"},
 	{"storyteller","LLCJNI","jOh",3,3,3,"7C3AED","FDE68A","campfire, big book, dramatic hands","whisper","And then... everyone fell asleep.","art"},

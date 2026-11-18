@@ -359,6 +359,7 @@ return {
 	{"mid","KMBOKG","jXN",2,5,5,"9CA3AF","D1D5DB","beige shrugging blob with a 5/10 scorecard","sigh","Not bad. Not good. Just... mid.","meme,silly"},
 	{"middle","KLBL5I","SHO",3,3,4,"A855F7","FFFFFF","target rings pulling everything to the bullseye","hum","Piggy in the middle. You are the piggy.","silly"},
 	{"midnight","FICNOI","iZ",5,4,3,"0F1030","4A3C8C","clock-chime ripple, deep blue dark","chime","The witching hour strikes.","spooky"},
+	{"midnight bite","KICHLB","ifY",5,9,4,"7A1430","FF5A7A","crimson mist and tiny bats, a cape swirl and a bite","hiss","Technically a very fast, very rude hug.","monster,vampire,melee,folklore"},
 	{"midwife toad","AMAJAG","UFe",1,5,1,"8A8A6A","C8C0A0","toad carrying eggs on legs","croak","Dad carries the eggs. Hero.","amphibian,wetland"},
 	{"might","KECOKI","Wk",4,4,5,"BF360C","FFCC80","heavy red-gold aura","grunt","Might makes... a really big punch.","strength"},
 	{"milanesa","IMCIII","Ga",3,3,4,"D9A04A","F2D23A","thin breaded cutlet","thud","A golden thin cutlet.","edible"},

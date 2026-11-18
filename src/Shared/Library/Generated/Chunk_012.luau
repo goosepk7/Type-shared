@@ -259,6 +259,7 @@ return {
 	{"headless knight","AICJNA","Gjf",5,4,6,"57534E","22C55E","armored knight with no head, glowing collar","clang","Lost his head over a sword fight.","undead,warrior"},
 	{"headlight","BHBBKB","jeO",3,9,2,"FEF9C3","FFFFFF","pair of blinding round car lights, deer frozen in them","click","Deer in the headlights. You are the deer.","vehicle,light"},
 	{"headphones","BDAOKI","G",1,5,2,"24262A","C0392B","over-ear headphones","beep","Can't hear you. Busy winning.","tech,electric"},
+	{"headstone ward","EEDCnI","GS",5,2,7,"8A8F96","9AF0D6","three crooked mossy headstones rising in an arc","rumble","Here lies your opponent's fireball.","monster,graveyard,shield,spooky"},
 	{"headwind","FFCCOI","IN",3,6,3,"B7CFDB","F2F7FA","invisible air wall with streaks","howl","Walk forward. Go backward.","air"},
 	{"heal","KHCOKJ","F",1,6,3,"69F0AE","FFF59D","green-gold sparkles swirling up around ally","chime","Feels better already.","holy,support"},
 	{"healer bot","LHBJNA","QF",2,5,3,"F8FAFC","FACC15","small figure following with green glow","chime","Follows you around healing. Clingy.","meme,gaming,healer"},

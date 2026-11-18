@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beef patty","IMBAKF","Ke",3,6,2,"F2C24A","C8603A","yellow crimped half-moon pastry","splat","A golden pocket of spice.","edible"},
 	{"beef wellington","IMCHJI","Fkf",4,5,4,"D9A04A","8A2E2E","pastry-wrapped beef log","bonk","Beef wearing a pastry coat.","edible,silly"},
 	{"beekeeper","LGCJNA","MPh",3,4,5,"F8FAFC","FACC15","white suit, mesh veil, honey smoker","buzz","Brings 10,000 friends.","outdoor,insect"},
 	{"beep","KDAFOB","d",1,10,1,"00E676","FFFFFF","tiny sound blips","beep","Beep beep! Coming through.","silly"},
@@ -263,7 +264,7 @@ return {
 	{"bocce ball","BMAA3F","ke",2,6,6,"C0392B","C9CED4","heavy polished ball","bonk","Roll it close. Or at them.","sport"},
 	{"body","BMCJNA","Ddf",3,5,5,"E8B48A","3B82F6","headless torso in a t-shirt, arms flailing","thud","Forgot its head at home. Still showed up.","silly,body"},
 	{"boerewors","IABAKK","Ke",3,7,2,"8A3A1E","C8603A","coiled spiral sausage","whoosh","A sausage spiral. Grilled.","edible"},
-	{"bog monster","AGDJNA","MHN",6,3,7,"365314","84CC16","hulking mass of moss and mud","squelch","Lives in mud. Loves it there.","plant,spooky"},
+	{"bog lurker","AJDLNC","SfH",5,3,6,"3E5A3A","E8B23A","a bubbling bog pool hiding a mossy reed-crowned lurker","bubble","The pond was not empty. Ponds never are.","monster,swamp,trap,spooky"},
 	{"bog wraith","AJCJOJ","ZMN",4,5,3,"365314","BEF264","misty green figure rising from bog","wail","Smells like swamp. Moans like ghost.","ghost"},
 	{"bogeyman","AICJNA","jZO",5,6,4,"1F2937","7C3AED","tall lanky shape in the closet","whisper","Scared of kids who aren't scared.","spooky"},
 	{"boggart","AIBJNA","jZb",3,6,3,"57534E","1F2937","lumpy shapeshifter in the cupboard","cackle","Lives in your closet. Rearranges your socks.","spooky,silly"},
@@ -402,5 +403,4 @@ return {
 	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
 	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
 	{"brain freeze","ICBAKJ","jJO",3,5,2,"A6D8F2","F7F7F2","frosty swirl around head","squish","Ow ow ow. Cold.","edible,frozen"},
-	{"brainstorm","KDCDOJ","jL",5,6,2,"E040FB","FFEB3B","little cloud raining lightbulbs and sparks","crack","A storm of ideas. Some hurt.","psychic,electric,silly"},
 }

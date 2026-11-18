@@ -397,7 +397,6 @@ return {
 	{"flee","KFBOKB","DZ",1,10,1,"E0E0E0","FFFFFF","caster zooming away with dust cloud","whoosh","Tactical retreat! Very tactical.","speed,silly"},
 	{"fleet","DBFELC","EehB",8,4,9,"607D8B","1E88E5","sea full of warships","engine","The whole navy arrives.","vehicle,mechanical"},
 	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
-	{"flesh golem patchwork","ADDJNA","kL",6,3,7,"84CC16","57534E","stitched giant with lightning rods","groan","Sewn together. Charged up.","construct,spooky"},
 	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
 	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
 	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
