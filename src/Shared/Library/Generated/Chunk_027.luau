@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"treasure sack","BMBL2I","cb",2,4,2,"D2B48C","D4A72C","bulging sack with dollar sign","thud","Loot acquired.","container,treasure"},
 	{"treat","IMAA7B","QFc",1,6,1,"D97706","FEF3C7","bone-shaped biscuit with a sparkle","crunch","Sit. Stay. Betray your master.","edible,pet,cute"},
 	{"trebuchet","CMEMxI","keO",8,2,6,"5A3A1E","8C8C88","tall swinging arm with counterweight","creak","The superior siege engine. Fight me.","medieval,siege,heavy"},
 	{"tree","NGDCMI","GWkS",4,1,8,"6D4C41","43A047","thick trunk, round leafy crown","rustle","Grows up fast. Falls down faster.","plant,tree"},
@@ -403,4 +402,5 @@ return {
 	{"war canoe","DBCKHC","DkgB",4,7,4,"6D4C41","FFB300","long canoe with side float, carved prow","splash","Paddle together. Win together.","vehicle,aquatic"},
 	{"war chief","LECJNA","kfh",6,5,6,"7C2D12","CA8A04","fur cloak, bone necklace, big axe","roar","Leads the charge. Yells loudest.","warrior,royal"},
 	{"war club","CMCHtK","kfO",4,5,5,"8B5A2B","8C8C88","club with a stone ball head","shing","Bonk, the old-fashioned way.","sharp,ancient"},
+	{"war drum","BMDFJI","FkO",5,3,5,"6B4226","E3DAC9","giant hide drum with bone sticks","boom","Every beat makes the army braver.","music,loud"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crumble","IGBOKI","F",2,5,3,"C89050","B0203E","fruit bake with crumbly topping","crunch","Crumbles beautifully under pressure.","edible,healthy"},
+	{"crumpet","IMBAKK","Uke",3,7,2,"E8C07A","C89050","round griddle cake, holes","whoosh","A spongy disc with built-in butter holes.","edible"},
 	{"crush","KEDNOI","kNO",7,4,5,"6D4C41","BCAAA4","heavy stone slab pressing down","crunch","Flat as a pancake.","heavy"},
 	{"crusher","OKDL1I","kO",7,2,9,"3A3F45","F1C40F","toothed rollers in steel jaws","hum","Chomp chomp. Gravel.","mechanical"},
 	{"crusher trap","BEDLII","kO",8,1,9,"8C8C88","3A3F45","spiked ceiling slab dropping","snap","The ceiling is lowering. Literally.","trap,defense"},
@@ -401,6 +403,4 @@ return {
 	{"dorayaki","IMBAKK","Uke",3,7,2,"C8803A","5A2A2A","two pancakes, red bean middle","whoosh","A pancake sandwich with a sweet heart.","edible"},
 	{"dork","LMBJNA","jeO",2,5,2,"60A5FA","F8FAFC","taped glasses, pocket protector, armful of comics","squeak","Um, actually, that is a common misconception.","silly,school"},
 	{"dormouse","AMAJAA","CdNb",1,6,1,"D8A060","F2E6D2","round sleepy mouse, fluffy tail","squeak","Sleeps half the year. Goals.","mammal,cute"},
-	{"doro wat","IABNGI","KF",4,4,2,"7A2A1E","C8302B","deep red chicken stew","sizzle","Red, spicy, and soul-warming.","edible,spicy"},
-	{"dosa","IMBHJI","kf",3,5,4,"E8B860","F2E8D0","huge thin crisp rolled crepe","bonk","A crepe the length of your arm.","edible,silly"},
 }

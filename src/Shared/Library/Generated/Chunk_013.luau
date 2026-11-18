@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 	{"hornbeam","NGDCMI","GWkS",3,1,8,"9E9E9E","7CB342","grey fluted trunk, dense crown","rustle","Hard as horn.","plant,tree,heavy"},
 	{"hornbill","AMCJDB","jdAk",3,6,2,"1E1E1E","F2C02A","huge curved beak with casque helmet","squawk","Wears a helmet on its beak.","bird,jungle,silly"},
 	{"horned lizard","AMBJAA","CfTe",2,7,2,"C8A06A","6A4A2A","flat spiky desert lizard","hiss","Squirts blood from its eyes. Defense!","reptile,desert"},
@@ -402,5 +403,4 @@ return {
 	{"jian","CKCHrK","fT",5,8,4,"C9CED4","3E9E6E","straight slim blade, tassel on hilt","shing","Elegant, swift, comes with a tassel.","medieval,sharp"},
 	{"jiangshi","AICJNG","Uif",4,4,5,"1E3A8A","F1F5F9","stiff arms outstretched, robe, paper talisman","boing","Hops after you. Can't bend its knees.","undead,spooky,silly"},
 	{"jicama","IEBAKK","keO",3,7,6,"A87A4A","F2F0E8","round brown root, white inside","bonk","A crunchy potato that tastes like apple.","edible,vegetable"},
-	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 }

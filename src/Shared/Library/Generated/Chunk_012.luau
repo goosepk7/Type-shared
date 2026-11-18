@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"guardhouse","EECMII","GSeh",3,1,8,"9E9E9E","B71C1C","small stone building by the gate","thud","Guards on duty. Always.","structure,ancient,defense"},
+	{"guardian","LHDJYA","GQka",6,3,9,"D4AF37","3B6FB6","towering armoured figure with a glowing tower shield","clang","You shall not get past. Or even near.","defense,warrior"},
 	{"guardian angel","AHCJNB","GAQF",5,7,5,"F8FAFC","FACC15","soft glowing angel hovering behind you","chime","Always one step behind. Catching you.","holy,guardian"},
 	{"guava","IGBAKF","Fke",3,6,2,"9CC34A","F3818A","round green fruit, pink inside","splat","Smells like a vacation.","edible,fruit,sweet,tropical"},
 	{"guess","KLBG3K","jEY",3,6,1,"F472B6","22D3EE","three spinning mystery boxes with question marks","ding","Eeny, meeny, miny, YOU.","silly,luck"},
@@ -90,7 +92,6 @@ return {
 	{"hamburger steak","IGBOKI","F",2,5,3,"6B3A1E","8A5A2A","patty with gravy","crunch","A burger without a bun.","edible,healthy"},
 	{"hamburger tower","IMDCII","Gkc",4,2,6,"C8762B","6B3A1E","stacked burgers in a tower","thud","A burger skyscraper.","edible,giant"},
 	{"hammer","JKBHtK","kfO",4,6,6,"8A929B","8B5A2B","claw hammer, wooden handle","bonk","When all you have is one, it's perfect.","medieval,heavy"},
-	{"hammer throw","BKBAtF","Qke",4,6,8,"8A929B","8E9196","iron ball on a wire with handle","bonk","Spin spin spin RELEASE.","sport"},
 	{"hammer-headed bat","AMBJDB","jiA",2,7,1,"6A4A2A","C8A07A","huge box-shaped head","honk","Honks like a goose. Head like a hammer.","mammal,nocturnal,spooky,silly"},
 	{"hammerhead shark","ABDJEC","DkfTB",7,8,6,"7C8C96","E8ECEE","wide hammer-shaped head","chomp","Built-in hammer. Uses it for science.","fish,aquatic,ocean,predator"},
 	{"hammerkop","AMCJDA","AfT",3,5,2,"8A6A44","C8A07A","head shaped like a hammer","squawk","Builds giant nests. Hammer head.","bird,wetland"},
@@ -402,5 +403,4 @@ return {
 	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},
 	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
 	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
-	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 }

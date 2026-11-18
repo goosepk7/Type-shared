@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
+	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
+	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 	{"red giant","MAFGKJ","KWkS",9,1,9,"E64A19","FFAB91","enormous swollen orange-red sphere","rumble","Big, red, and getting bigger.","space"},
 	{"red hot poker","NACNMI","KdFS",3,1,2,"FF5722","FFEB3B","flame-coloured torch spikes","rustle","Looks hot. Is just a flower.","plant,flower"},
 	{"red kangaroo","AMDJAG","UkfO",6,6,2,"B85A30","F2E2D0","huge red kangaroo boxing","chirp","Biggest boxer in the outback.","mammal,marsupial"},
@@ -56,7 +59,6 @@ return {
 	{"report","BMBAJB","jeO",2,5,2,"FFFFFF","22C55E","stapled pages in a plastic folder, pie chart on front","rustle","Double-spaced. Due yesterday.","school"},
 	{"report card","BMAOJK","j",1,6,1,"F2F2EE","C0392B","folded card with grades","tap","Oh no. Oh no no no.","school,silly"},
 	{"reptile","AECJAA","GfM",4,4,5,"5B8C3A","C9D46B","scaly green sunbather with a flicking tongue","hiss","Cold-blooded. Warm rock. Do not disturb.","reptile,science"},
-	{"repulsor","OLCFwI","kIe",5,7,4,"3FC1D9","F2F2EE","palm emitter with glowing ring","hum","Fwoom! Out of my space.","scifi"},
 	{"rescue","KHCOKB","FY",2,8,3,"FFD54F","FFFFFF","golden lifeline pulling ally to safety","chime","Saved! Just in time.","support"},
 	{"rescue helicopter","DFDKHE","AFlg",4,7,6,"F44336","F5F5F5","big chopper, winch hook, red cross","chop","Picks up friends. Leaves foes.","vehicle,air"},
 	{"rescue truck","DMDKHL","DFkHg",4,6,8,"FF6F00","F5F5F5","big orange truck with a winch","siren","Pulls friends out of trouble.","mechanical,vehicle,land"},
@@ -102,6 +104,7 @@ return {
 	{"rice plant","NGBNMI","FS",1,1,2,"9CCC65","E6C27A","grassy stalks with drooping grain","rustle","Feeds billions. Fights a little.","plant"},
 	{"rice pudding","IGBOKI","FN",2,5,3,"F7F2E0","C8904A","creamy rice, cinnamon dust","crunch","Rice in a cozy blanket.","edible,healthy"},
 	{"rickshaw","DMBKHL","Dkg",3,6,3,"F2C200","2E7D32","three wheels, canopy, bench seat","engine","Beep beep, shortcut through the market!","mechanical,vehicle,land,silly"},
+	{"ricochet shield","CKCAyK","UQke",6,9,3,"C88A3A","F6D27A","round sunburst shield bouncing foe to foe","clang","Bank shot. Four of them.","hero,movie"},
 	{"ricotta","IMBLGI","SNP",2,3,3,"F7F7F2","F2EAD5","fluffy white curds","gloop","Fluffy cheese clouds.","edible,sticky,dairy"},
 	{"riddle","KLBAKB","jO",3,6,1,"7C4DFF","FFD54F","glowing floating question mark","hmm","What has keys but can't open locks?","silly,magic"},
 	{"ridge","MEECII","GS",3,1,9,"8D8D8D","7CB342","sharp rocky spine of a hill","rumble","Walk the ridge. Do not wobble.","place,terrain"},
@@ -400,7 +403,4 @@ return {
 	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
 	{"salt mine","MEENII","SN",3,1,8,"F5F5F5","F8BBD0","glittering pink and white tunnels","rumble","Salty walls. Salty enemies.","place,terrain"},
 	{"salt shaker","BMADKK","jN",1,6,1,"BFE6F2","F2F2EE","small shaker with holes","clang","Salty. Very salty.","kitchen,household"},
-	{"saltasaurus","AMEJAA","GkIO",7,2,9,"8A6A4A","C8A07A","armored back sauropod","rumble","A sauropod wearing armor.","dinosaur,extinct,reptile,heavy"},
-	{"saltfish","IGBOKI","F",2,5,3,"F2E0A0","E8DCC0","salted fish with ackee","crunch","Jamaica's breakfast champion.","edible,healthy"},
-	{"saltwater crocodile","ABEJAC","fHOB",8,5,8,"5A5A3A","D8D0A0","gigantic croc, armored back","snap","Biggest reptile on Earth. Grumpy.","reptile,predator,aquatic"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doro wat","IABNGI","KF",4,4,2,"7A2A1E","C8302B","deep red chicken stew","sizzle","Red, spicy, and soul-warming.","edible,spicy"},
+	{"dosa","IMBHJI","kf",3,5,4,"E8B860","F2E8D0","huge thin crisp rolled crepe","bonk","A crepe the length of your arm.","edible,silly"},
 	{"dot","KMAELG","UjP",1,6,1,"EF4444","FFFFFF","bouncing red polka dots of different sizes","pop","Connect them. Too slow.","school,shape"},
 	{"double agent","LICJNA","jZb",4,7,3,"1F2937","DC2626","trench coat with two badges","whisper","Works for both sides. Mostly for snacks.","stealth"},
 	{"double axe","CKDHsK","kfV",7,4,6,"8A929B","6B4226","two-sided axe head","chop","Twice the axe, twice the drama.","medieval,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"evil tree","NIECMI","GSfH",6,2,8,"3E2723","B71C1C","tree with glowing eyes and a scowling mouth","rustle","Hates trespassers. Everyone is a trespasser.","plant,tree,spooky"},
 	{"evil twin","LICJNA","jZ",4,6,4,"1F2937","DC2626","identical person but with goatee","cackle","Same face. Worse manners.","villain,silly"},
 	{"evocation","FLCAKB","Ee",5,8,1,"FF5722","7C4DFF","raw multicoloured energy bolt","whoom","Pure magical oomph.","magic"},
-	{"evolution","KGCOBA","WFfV",5,4,5,"22C55E","FDE047","line of shapes: fish, lizard, ape, human, robot, glowing","fanfare","Give it a few million years. Or one second.","science,gaming"},
-	{"ex","LICJNA","jiN",4,4,4,"4B5563","9CA3AF","person with a box of your stuff and folded arms","sigh","Still has your hoodie. Not giving it back.","silly"},
 }

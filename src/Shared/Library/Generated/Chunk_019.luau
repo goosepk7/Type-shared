@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
+	{"pencil","BMAAJK","Te",1,8,1,"F1C40F","F06292","yellow hexagon pencil with eraser","tap","Sharpened for battle.","school"},
 	{"pencil sharpener","BMAL2K","V",1,1,3,"C9CED4","C0392B","small box with blade hole","tap","Grrrind.","office"},
 	{"pendulum hammer","BKDLtI","kO",6,3,7,"5B6168","8B5A2B","huge hammer swinging from above","snap","Tick. Tock. BONK.","trap,defense"},
 	{"penguin","ACBJDA","UDB",2,5,3,"1E1E24","F7F7F2","tuxedo body, flippers, waddle","squawk","Wears a tux to every occasion.","bird,arctic,cute"},
@@ -304,6 +306,7 @@ return {
 	{"pocket knife","CKAHrK","fT",2,8,2,"C0392B","C9CED4","folding blade, red handle","shing","Has a blade, a saw, and a tiny toothpick.","medieval,sharp"},
 	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
 	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
+	{"pocket size","OLBONI","WkX",5,9,3,"E04A3A","2B2D33","shrink tiny, then burst back to size with a punch","pop","Tiny hero. Big punch.","hero,movie,scifi"},
 	{"pocket watch","BLAOKI","N",2,5,3,"D4A72C","F3E6C8","hinged gold watch on chain","chime","Tick. Tock. Mesmerising.","time"},
 	{"podcaster","LMCJNI","jd",3,4,3,"7C3AED","F8FAFC","big microphone, headphones","ding","Talks for three hours. Enemies fall asleep.","meme"},
 	{"poem","KFBF6J","jFO",2,5,1,"C4B5FD","F8FAFC","floating quill and curling lines of verse","whisper","Roses are red. Violets are blue. Bonk.","art,school"},
@@ -400,7 +403,4 @@ return {
 	{"popcorn bomb","BABGKK","dEP",3,6,1,"F1C40F","F2F2EE","bag that bursts into popcorn","thud","POP POP POP POP POP.","silly,explosive"},
 	{"popcorn cart","DMBKHL","dceg",2,3,3,"E53935","FFEB3B","striped cart with popping kettle","engine","Pop pop pop! Kernels everywhere.","mechanical,vehicle,land,silly"},
 	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
-	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
-	{"popcorn machine","OACM1I","KdeP",2,5,4,"C0392B","D4A72C","glass cart full of popping corn","hum","Pop pop pop! Snack attack.","silly,party"},
-	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 }

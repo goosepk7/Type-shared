@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shipyard","MBENII","Sh",3,1,7,"607D8B","1E88E5","ships on slipways, cranes","crowd","Launches a fresh ship. At you.","place"},
+	{"shiro","IBBOGI","FS",3,4,3,"C8762B","E8A040","chickpea stew","slurp","A spicy chickpea stew.","edible,warm,healthy"},
+	{"shirt","BMBIVB","GjA",2,5,2,"EF4444","FFFFFF","flapping red t-shirt with a pizza stain","flutter","Inside out and backwards. Like always.","clothing"},
 	{"shisa","AECJAA","Gf",4,5,7,"DC2626","F59E0B","grinning orange lion-dog statue","roar","Grins at evil. Evil leaves.","yokai,guardian"},
 	{"shiver","KCAFOB","N",1,6,1,"B3E5FC","FFFFFF","shaking chattering lines","brr","Brr-brr-brr.","frozen,silly"},
 	{"shock grenade","CDBGKI","eLO",4,7,1,"F1C40F","1F2F55","crackling blue sphere","zap","Bzzzap! Everyone twitches.","scifi,ranged"},
@@ -55,7 +58,6 @@ return {
 	{"shrink machine","OLDM1I","eX",5,3,6,"7D3CB5","8BC34A","huge dish shrink cannon","hum","Big problems, small sizes.","scifi"},
 	{"shrink ray","CLCBwI","jeX",4,7,3,"8BC34A","7D3CB5","ray gun with tiny dish tip","zap","Makes big problems small.","scifi,ranged"},
 	{"shrink spell","KLCBKI","eX",4,8,2,"FF4081","F8BBD0","pink zig-zag beam, target shrinking tiny","zwip","Pocket-sized problems.","silly"},
-	{"shrink suit","OLCONI","ZX",4,8,3,"C0392B","24262A","sleek suit with dial on belt","hum","Tiny hero. Big punch.","scifi"},
 	{"shrinking potion","BLAA2I","eX",3,6,1,"8BC34A","BFE6F2","tiny bottle labelled DRINK ME","bubble","Small but mighty.","magic,fantasy"},
 	{"shrug","KMBINI","Gja",2,4,4,"9CA3AF","FDE68A","figure with both palms up and shoulders at ear height","sigh","Not my problem. Might be yours.","meme,silly"},
 	{"shunosaurus","AMEJAA","kIO",7,2,9,"7A6A5A","B8A890","tail club sauropod","rumble","Long neck, club tail. Combo.","dinosaur,extinct,reptile,heavy"},
@@ -290,7 +292,6 @@ return {
 	{"snakefly","AMAJFB","dAP",1,6,1,"1E1E1E","8A6A4A","long neck flying bug","buzz","Has a snake neck.","insect"},
 	{"snakehead","ABCJCC","DfB",4,7,4,"5A5A3A","C8B88A","long fish with snake-like head","splash","Walks between ponds. Rude.","fish,aquatic"},
 	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
-	{"snap","KLCFOI","EO",5,10,1,"FFD54F","7E57C2","glinting finger snap with ring","snap","Snap. Problem solved.","magic,meme"},
 	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
 	{"snapper","ABBJEC","dB",2,6,1,"D84A3A","F2D8D0","rosy red fish","splash","Snappy name. Chill fish.","fish,aquatic"},
 	{"snapping turtle","AMBJUA","GfNOB",4,2,8,"4A4A30","8A7A5A","spiky shell, huge beak","hiss","Snaps fingers. Not the cool way.","reptile,armored"},
@@ -402,5 +403,4 @@ return {
 	{"sombrero","BMCINI","G",1,5,2,"D2B48C","C0392B","huge wide-brimmed hat","swish","Shade for everyone.","clothing"},
 	{"son","LMBJNA","UDf",3,7,3,"3B82F6","F2D0B4","boy with a backwards cap and scraped knees","yay","Was told not to run indoors. Is running.","family"},
 	{"song thrush","AMAJDB","dA",1,7,1,"8A6A4A","F2E8D0","spotted chest songbird","tweet","Smashes snails on rocks.","bird,cute"},
-	{"sonic beam","FFCBKI","TeO",5,10,1,"B39DDB","FFFFFF","ringed visible sound beam","eeee","Loud enough to see.","loud"},
 }

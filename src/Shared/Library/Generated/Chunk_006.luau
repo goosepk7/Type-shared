@@ -214,6 +214,7 @@ return {
 	{"coral golem","ABDJNC","GFB",6,2,7,"F472B6","F97316","giant of branching pink coral","rumble","Protects the reef. Pinches tourists.","construct,aquatic"},
 	{"coral snake","AMCJCD","fMN",4,6,3,"D8201E","F2D82A","red yellow black rings","hiss","Red touches yellow? Back away.","reptile,venomous"},
 	{"coral wall","EBDCII","GST",3,1,7,"FF7043","26C6DA","jagged colourful coral barrier","thud","Pretty, pointy, and alive.","structure,defense,aquatic"},
+	{"core beam","OHDBwI","kTe",7,5,5,"A8F4FF","2F8FD8","a glowing chest core charges up and fires a thick beam","hum","Fwoom! Out of my space.","hero,movie,scifi"},
 	{"corgi","AMBJAA","DdQf",2,6,2,"D98A3A","FFF4E6","long body, stubby legs, fox face, loaf butt","yip","Legs: optional. Confidence: maximum.","mammal,pet,cute"},
 	{"coriander","IFBDOJ","jPO",2,5,1,"C8A070","E8D8A8","round tan seeds","puff","Citrusy little seeds.","edible,spice"},
 	{"cork","BMAA3B","UeO",2,9,2,"C9A66B","A67C52","small brown cork popping at high speed","pop","POP! Right in the eye. Every time.","party"},
@@ -254,6 +255,7 @@ return {
 	{"cosmic owl","ALCJDB","jAZ",4,7,3,"1E1B4B","FDE68A","owl with constellation feathers","hoot","Wise. Starry. Silent.","cosmic,bird"},
 	{"cosmic ray","HLCBKI","Te",5,10,1,"B388FF","E1F5FE","thin violet-white streak from space","zing","Mystery beam from deep space.","space"},
 	{"cosmic serpent","ALEJCB","AHe",8,6,7,"312E81","FDE047","serpent of stars coiling around planets","hiss","Hugs planets too hard.","cosmic,reptile"},
+	{"cosmic snap","KLEN4I","iP",10,1,8,"E9C46A","9B5DE5","jewelled gauntlet snap, foes drift away as dust","snap","Perfectly balanced. Mostly.","hero,movie,meme"},
 	{"cosmic tornado","HLEN5K","jlSH",8,5,5,"1A237E","F48FB1","funnel of swirling stars and nebula","hum","A galaxy, twisting in your backyard.","storm,space"},
 	{"cosmos flower","NGBNMI","dFS",2,1,2,"F48FB1","FFEB3B","airy pink daisy on thin stems","rustle","Not the universe. Just pretty.","plant,flower"},
 	{"costume","BLCONA","jdZ",3,5,3,"F97316","7C3AED","half dinosaur, half astronaut suit with a wonky zip","poof","Who are you supposed to be? Exactly.","clothing,party,holiday"},
@@ -401,6 +403,4 @@ return {
 	{"cruise ship","DBFKHC","DkghB",6,3,9,"F5F5F5","1565C0","massive white ship, stacked decks, funnels","horn","Fourteen decks and a buffet. Ramming speed!","vehicle,aquatic"},
 	{"cruller","IMBLKI","dSc",2,3,3,"E8B860","F7F0D8","twisted ridged ring","chomp","A donut that does yoga.","edible,sweet"},
 	{"crumb","IMAELJ","cNP",1,5,1,"D9B382","A16207","sprinkle of golden crumbs trailing off","pitter","In the bed. In the keyboard. Forever.","edible,silly"},
-	{"crumble","IGBOKI","F",2,5,3,"C89050","B0203E","fruit bake with crumbly topping","crunch","Crumbles beautifully under pressure.","edible,healthy"},
-	{"crumpet","IMBAKK","Uke",3,7,2,"E8C07A","C89050","round griddle cake, holes","whoosh","A spongy disc with built-in butter holes.","edible"},
 }
