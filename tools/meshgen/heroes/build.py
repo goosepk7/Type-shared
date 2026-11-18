@@ -210,6 +210,10 @@ def write_index():
     L.append("}")
     with open(os.path.join(os.path.dirname(DATA), "Families.luau"), "w") as fh:
         fh.write("\n".join(L).replace("local Data = script.Parent\n", "") + "\n")
+    # the always-loaded id -> family index (Heroes/Index.luau): families load on demand at runtime
+    import index as hero_index
+    n, f = hero_index.write()
+    print(f"wrote Index.luau ({n} heroes, {f} families)")
 
 
 def main():
