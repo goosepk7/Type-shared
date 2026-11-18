@@ -67,7 +67,7 @@ local PROFILE: { [string]: any } = {
 	corvid = { body = { 2.3, 1.4, 1.3 }, head = 0.9, beak = "dagger", bl = 0.62, beakCol = C.black, tl = 1.25, legCol = C.black, leg = 0.65 },
 	pigeon = { body = { 2.1, 1.55, 1.45 }, head = 0.72, beak = "thin", bl = 0.8, beakCol = C.slate, legCol = C.pinkLeg, pitch = 12 },
 	parrot = { body = { 1.8, 1.55, 1.35 }, pitch = 52, leg = 0.42, legW = 0.16, head = 1.12, beak = "parrot", beakCol = C.ivory, tail = "long", tl = 1.6,
-		legCol = C.greyLeg, wings = "folded", eyeSp = 0.3 },
+		legCol = C.greyLeg, wings = "folded", eyeSp = 0.3, breastCol = "light", wingCol = "secondary" },
 	raptor = { body = { 2.3, 1.6, 1.5 }, pitch = 38, leg = 0.8, legW = 0.21, head = 0.92, beak = "hook", beakCol = C.slate, feet = "talon", legCol = "beak",
 		headMesh = "s_head_raptor", span = 1.7, tl = 1.15, trousers = true, eyeSp = 0.25 },
 	vulture = { body = { 2.4, 1.6, 1.55 }, pitch = 22, leg = 0.75, legW = 0.21, neck = 0.85, neckUp = 55, neckW = 0.8, head = 0.72, beak = "hook", bl = 1.15,
@@ -486,6 +486,11 @@ local function legs(B: any, P: any, hip: { number }, detail: number, col: any)
 	local foot = { x * 1.05, 0, z - h * 0.02 }
 	local thighW = w * (if P.drumstick then 2.6 elseif P.trousers then 2.3 else 1.7)
 	local thighTop = { x, h + w * 0.6, z - h * 0.04 }
+	if detail <= 1 then
+		-- one tapered leg per side on small budgets
+		B:mlimb({ x, h + w * 0.3, z }, { foot[1], w * 0.4, foot[3] - w * 0.5 }, w * 1.5, { col = legCol, mat = "hard", bone = "Hip#", pri = 1.3, role = "limb", name = "Leg#" }, 0.15)
+		return
+	end
 	B:mlimb(thighTop, heel, thighW, { col = if P.drumstick then legCol else col, mat = if P.drumstick then "skin" else "fur", bone = "Hip#", pri = 1.3, role = "limb", name = "Thigh#" }, 0.18)
 	B:mlimb(heel, { foot[1], w * 0.5, foot[3] }, w, { col = legCol, mat = "hard", bone = "Knee#", pri = 1.36, role = "limb", name = "Shank#" }, 0.12)
 	if detail <= 1 then
@@ -706,11 +711,11 @@ local function tail(B: any, P: any, base: { number }, bodyL: number, pitch: numb
 	if kind == "train" then
 		-- upright fan (peacock, turkey, lyrebird): a wide disc of feathers standing behind the body
 		local W = tl * 2.4
-		local cf = at(base[1], base[2] + W * 0.32, base[3] + tl * 0.18, rad(-62), 0, 0)
-		B:ell(W, tl * 0.14, W * 0.62, Geom.offset(cf, 0, 0, W * 0.2), { col = "secondary", mat = "fur", bone = "Tail1", pri = 1.5, role = "tail", name = "Train", mesh = "s_bird_train" })
+		local cf = at(base[1], base[2], base[3], rad(-62), 0, 0)
+		B:ell(W, tl * 0.14, W * 0.62, Geom.offset(cf, 0, 0, W * 0.26), { col = "secondary", mat = "fur", bone = "Tail1", pri = 1.5, role = "tail", name = "Train", mesh = "s_bird_train" })
 		if detail >= 3 then
 			for i = -1, 1 do
-				local ex, ey, ez = Geom.point(cf, i * W * 0.28, -tl * 0.09, W * 0.38 - math.abs(i) * W * 0.06)
+				local ex, ey, ez = Geom.point(cf, i * W * 0.28, -tl * 0.09, W * 0.44 - math.abs(i) * W * 0.06)
 				B:ell(W * 0.11, W * 0.11, tl * 0.06, at(ex, ey, ez, rad(-62), 0, 0), { col = "accent", mat = "fur", bone = "Tail1", pri = 3.4, role = "detail", name = "EyeSpot" })
 			end
 		end
@@ -747,7 +752,7 @@ local function tail(B: any, P: any, base: { number }, bodyL: number, pitch: numb
 			local yaw = (i - (n + 1) / 2) * 0.18
 			local a = { base[1] + yaw * 0.3, base[2] + tl * 0.05, base[3] }
 			local m = { a[1] + yaw * tl * 0.3, a[2] + tl * (0.95 - i * 0.1), a[3] + tl * 0.45 }
-			B:limb(a, m, tl * 0.22, { col = if i == 1 then "secondary" else "dark", mat = "fur", bone = "Tail1", pri = 1.6 + i * 0.3, role = "tail", name = "Sickle", depth = tl * 0.07, mesh = "s_crest_feather" }, 0.06)
+			B:limb(a, m, tl * 0.22, { col = if i == 1 then "secondary" else "dark", mat = "fur", bone = "Tail1", pri = 1.35 + i * 0.3, role = "tail", name = "Sickle", depth = tl * 0.07, mesh = "s_crest_feather" }, 0.06)
 			if detail >= 2 then
 				B:limb(m, { m[1] + yaw * tl * 0.2, m[2] - tl * 0.55, m[3] + tl * 0.62 }, tl * 0.2, { col = if i == 1 then "secondary" else "dark", mat = "fur", bone = "Tail1", pri = 2.0 + i * 0.3, role = "tail", trail = i == 1, name = "SickleTip", depth = tl * 0.06, mesh = "s_crest_feather" }, 0.06)
 			end
@@ -758,6 +763,16 @@ local function tail(B: any, P: any, base: { number }, bodyL: number, pitch: numb
 	local len = tl * (if kind == "long" then 1.3 else 1)
 	local wid = tl * (if kind == "long" then 0.42 else (if kind == "fork" then 0.62 else 0.7))
 	local tilt = if kind == "cocked" then rad(-60) elseif kind == "long" then droop + rad(4) else droop
+	-- long tails on upright birds (macaw): flatten the droop, then shorten, so the tip never sinks into the ground
+	if tilt > 0 then
+		local room = math.max(base[2] - 0.12, 0.2)
+		if math.sin(tilt) * len * 0.94 > room then
+			tilt = math.max(math.min(tilt, math.asin(math.min(room / (len * 0.94), 1))), rad(12))
+			local short = math.min(len, room / math.max(math.sin(tilt) * 0.94, 0.05))
+			wid *= math.max(short / len, 0.6)
+			len = short
+		end
+	end
 	local cf = Geom.mul(at(base[1], base[2], base[3], tilt, 0, 0), at(0, 0, len * 0.44))
 	local mesh = if kind == "fork" then "s_bird_tail_fork" else "s_bird_tail"
 	local lead = B:ell(wid, tl * 0.1, len, cf, { col = P.tailCol or "wingTip", mat = "fur", bone = "Tail1", pri = 1.7, role = "tail", name = "Tail", trail = true })
@@ -812,7 +827,7 @@ return function(B: any, ctx: any)
 	if detail >= 1 and not P.bat and P.breastCol ~= false then
 		-- breast / belly patch (pale front), set into the body's lower front
 		local bc = Geom.offset(BF, 0, -H * 0.17, -L * 0.16)
-		B:ell(W * 0.84, H * 0.74, L * 0.78, bc, { col = P.breastCol or "belly", mat = mat, pri = if P.pitch > 50 then 1.5 else 2.0, role = "detail", name = "Breast", mesh = "s_bird_breast" })
+		B:ell(W * 0.84, H * 0.74, L * 0.78, bc, { col = P.breastCol or "belly", mat = mat, pri = if P.pitch > 50 then 1.5 else 2.4, role = "detail", name = "Breast", mesh = "s_bird_breast" })
 	end
 	local _ = body
 
@@ -885,7 +900,7 @@ return function(B: any, ctx: any)
 			local n = if detail >= 3 then 3 else 1
 			for i = 1, n do
 				local z = c[3] - r[3] * 0.4 + (i - 1) * r[3] * 0.38
-				B:ell(s * 0.14, s * (0.42 - math.abs(i - 2) * 0.08), s * 0.3, at(0, c[2] + r[2] * 0.95, z, rad(-10 + i * 12), 0, 0), { col = C.red, mat = "skin", bone = "Head", pri = 1.7 + i * 0.2, role = "crest", name = "Comb" })
+				B:ell(s * 0.14, s * (0.42 - math.abs(i - 2) * 0.08), s * 0.3, at(0, c[2] + r[2] * 0.95, z, rad(-10 + i * 12), 0, 0), { col = C.red, mat = "skin", bone = "Head", pri = 1.3 + i * 0.2, role = "crest", name = "Comb" })
 			end
 		end
 		if P.wattle and detail >= 2 then
@@ -939,7 +954,7 @@ return function(B: any, ctx: any)
 		B:addRig("wings", { bone = "WingR", side = 1, folded = true })
 		B:addRig("wings", { bone = "WingL", side = -1, folded = true })
 		B:mell(W * 0.2, H * (if stub then 0.4 else 0.62), wl, at(cen[1], cen[2], cen[3], pitch - rad(if stub then 0 else 8), rad(-5), 0),
-			{ col = if stub then "light" else "wingTip", mat = mat, bone = "Wing#", pri = 1.5, role = "wing", name = "Wing#", mesh = if stub then "s_bird_fluff" else "s_wing_folded", meshL = if stub then nil else "s_wing_folded_l" })
+			{ col = if stub then "light" else (P.wingCol or "wingTip"), mat = mat, bone = "Wing#", pri = 1.5, role = "wing", name = "Wing#", mesh = if stub then "s_bird_fluff" else "s_wing_folded", meshL = if stub then nil else "s_wing_folded_l" })
 	elseif wk == "flipper" then
 		local sh = bp(W * 0.42, H * 0.25, -L * 0.05)
 		B:mirrorBone("Wing#", "Body", sh[1], sh[2], sh[3])

@@ -626,13 +626,53 @@ local function primate(B: any, ctx: any, kind: string, id: string)
 	B:setRig("gait", if P.arms == 0 then "heavy" elseif kind == "prosimian" then "hop" else "biped")
 end
 
+-- The t rex signature's base (SigKit.base kind "dino"): the original dino layout its hero sculpt (s_trex.py) was cut
+-- on, kept as is so the hero pieces fit.
+local function legacyDino(B: any, ctx: any)
+	local t = ctx.traits
+	local detail = ctx.detail
+	local rng = B.rng
+	local bulk = (0.9 + t.durability * 0.04) * rng:jitter(1, 0.05)
+	local legLen = 1.5 * bulk
+	local hipY = legLen + 0.25
+	local L = 2.6 * bulk
+	local H = 1.35 * bulk
+	B.boneIndex.Body.pos = { 0, hipY, 0 }
+	-- torso pitched up toward the chest
+	B:ell(H * 0.95, H, L, at(0, hipY + 0.15, -L * 0.12, rad(-14), 0, 0), { col = "primary", mat = "scale", pri = 1, role = "body", name = "Torso" })
+	if detail >= 2 then
+		B:ell(H * 0.7, H * 0.6, L * 0.75, at(0, hipY - H * 0.22, -L * 0.2, rad(-14), 0, 0), { col = "belly", mat = "scale", pri = 2.2, role = "detail", name = "Belly" })
+	end
+	Parts.legPair(B, { tag = "", x = H * 0.42, y = hipY, z = 0.15, w = 0.42 * bulk, kind = "claw", thigh = 1.7, claws = true, phase = 0 })
+	-- neck + big head
+	local neckBase = { 0, hipY + H * 0.45, -L * 0.48 }
+	local headP = { 0, neckBase[2] + 0.45, neckBase[3] - 0.45 }
+	B:bone("Neck", "Body", neckBase[1], neckBase[2], neckBase[3])
+	B:setRig("neck", "Neck")
+	if detail >= 2 then
+		B:limb(neckBase, headP, H * 0.62, { col = "primary", mat = "scale", bone = "Neck", pri = 1.25, role = "body", name = "Neck" }, 0.35)
+	end
+	B:bone("Head", "Neck", headP[1], headP[2], headP[3])
+	B:setRig("head", "Head")
+	local headS = 1.35 * bulk * (if t.bigJaw then 1.15 else 1)
+	Heads.reptile(B, { p = headP, s = headS }, t)
+	-- tiny arms (t rex charm) or raptor claws
+	Parts.armPair(B, { x = H * 0.38, y = hipY + H * 0.05, z = -L * 0.42, len = if t.bigJaw then 0.55 else 0.85, w = 0.16 * bulk, hand = "claw", out = 0.1, fwd = 0.35, fwd2 = 0.3, pri = 2.0 })
+	Parts.tail(B, { start = { 0, hipY + 0.25, L * 0.32 }, dir = { 0, -0.1, 1 }, len = L * 1.1, w = H * 0.7, segs = if detail <= 1 then 1 else 3, droop = -0.15, kind = if t.spikes then "spiked" else "plain", taper = 0.62 })
+	if detail >= 2 and (t.spikes or t.mythical) then
+		Parts.spikeRow(B, { points = { { 0, hipY + H * 0.55, -L * 0.25, 1 }, { 0, hipY + H * 0.5, 0, 1.1 }, { 0, hipY + H * 0.4, L * 0.25, 0.9 } }, h = H * 0.38, pri = 2.8 })
+	end
+	B:socket("core", at(0, hipY, -L * 0.1), "Body")
+	B:setRig("gait", "heavy")
+end
+
 return function(B: any, ctx: any)
 	local t = ctx.traits
 	local detail = ctx.detail
 	local kind = kindOf(ctx)
 	local id = string.lower(ctx.result.id)
 	if kind == "dino" then
-		kind = "carnosaur"
+		return legacyDino(B, ctx)
 	end
 	if DINO[kind] then
 		return theropod(B, ctx, kind, id)
