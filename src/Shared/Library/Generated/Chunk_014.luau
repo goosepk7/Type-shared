@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jet ski","DBBKHC","DkIgB",4,9,3,"FFEB3B","1565C0","small sit-on watercraft, handlebars, spray jet","engine","Sprays enemies with an angry rooster tail.","vehicle,aquatic"},
+	{"jet stream","FFDBOB","kIe",6,10,2,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air"},
+	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
+	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},
 	{"jeweler","LHCJNI","ca",3,3,4,"FACC15","67E8F9","loupe, gem tray","ding","Every gem sparkles. Blindingly.","merchant,gem"},
 	{"jewelry","BHBL2I","dcaO",3,2,4,"FACC15","22D3EE","spilling heap of rings, chains and glittering gems","jingle","Ooh, shiny. That was the trap.","shiny,royal"},
 	{"jewelry box","BMBL2I","c",1,1,3,"5A3A1E","D4A72C","velvet-lined box with dancer","thud","Sparkles inside. Bait!","container,treasure"},
@@ -399,9 +403,4 @@ return {
 	{"leaf storm","FGDN5K","jlT",6,6,2,"7CB342","FFB300","whirlwind of sharp green and gold leaves","rustle","Autumn, but violent.","plant,storm"},
 	{"leafcutter ant","AMAJLA","CdlfP",1,5,1,"B85A2A","6AC84A","ants carrying leaf pieces","skitter","Farmers with leaf umbrellas.","insect,swarm"},
 	{"leafcutter bee","AJAJLB","ATP",2,7,1,"3A3A3A","C8A07A","bee cutting leaf circles","buzz","Cuts perfect leaf circles.","insect,swarm,venomous"},
-	{"leafhopper","AMAJFG","UdAP",1,6,1,"6AC84A","E8301E","tiny wedge-shaped hopper","buzz","Pops off leaves like popcorn.","insect"},
-	{"leafy sea dragon","ABAJEC","dZB",1,6,1,"C8A84A","6AA060","leafy seahorse with frond fins","splash","Looks like a swimming salad.","fish,aquatic"},
-	{"leak","FBBNGI","WSN",2,2,1,"38BDF8","BAE6FD","ceiling drip into an overflowing bucket","pitter","Plink. Plink. Plink. Plink. Plonk.","household"},
-	{"leaning tower","EMDMII","GdkSe",4,1,6,"F5F5F5","BDBDBD","white round tower, tipping sideways","thud","Has been about to fall for centuries.","structure,defense,tower,silly"},
-	{"leaning tower of pisa","EMFCII","GkSO",6,1,8,"F5F5F5","BDBDBD","white tiered tower tilting heavily","rumble","Finally falls over. On purpose. Onto you.","structure,landmark,silly"},
 }

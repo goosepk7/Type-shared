@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doormat","BMBL0I","N",1,1,2,"D2B48C","7A4E2D","bristly mat saying welcome","thud","Welcome. Now trip.","furniture,household"},
+	{"doorstop","BMALKI","O",1,1,4,"8E9196","7A4E2D","rubber wedge","thud","You shall not pass. The door, anyway.","household"},
 	{"doorway","EMCCoI","GNY",3,1,6,"8B5A2B","FDE68A","empty door frame with a WELCOME mat and a low beam","bonk","Mind your head. Too late.","household,building"},
 	{"dorayaki","IMBAKK","Uke",3,7,2,"C8803A","5A2A2A","two pancakes, red bean middle","whoosh","A pancake sandwich with a sweet heart.","edible"},
 	{"dork","LMBJNA","jeO",2,5,2,"60A5FA","F8FAFC","taped glasses, pocket protector, armful of comics","squeak","Um, actually, that is a common misconception.","silly,school"},
@@ -401,6 +403,4 @@ return {
 	{"evil","KICDOJ","jiPh",6,5,3,"4C1D95","111827","purple-black smoke with red eyes and a curly moustache twirl","cackle","Mwahaha. Sorry. Reflex.","villain,spooky"},
 	{"evil eye","KIBAKB","jO",4,9,1,"4A148C","FF1744","single glowing eye glyph fixing on target","hiss","One look. Instantly regret everything.","spooky"},
 	{"evil laugh","KICFOB","ji",4,6,1,"4A148C","76FF03","dark rings with lightning flicker","mwahaha","Mwahahaha! Ahem.","spooky,silly,meme"},
-	{"evil mastermind","LICJNA","jhY",5,3,4,"1F2937","7C3AED","swivel chair, fluffy cat, monocle","cackle","Pets the cat. Explains the plan.","villain"},
-	{"evil queen","LICJNA","jMh",5,4,4,"111827","7C3AED","tall collar, dark crown, magic mirror","cackle","Mirror mirror on the wall: rude.","villain,royal"},
 }

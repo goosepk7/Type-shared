@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grumpy slab","EEDNII","EkO",8,3,9,"8E8A84","3B3633","a scowling spiked stone slab glares down, then slams twice","rumble","It has one move and it is very good at it.","game,platformer,stone"},
+	{"grunt","LEBJNA","Dfh",3,5,3,"65743A","A8A29E","small helmeted trooper with an oversized pack","grunt","Does the work. Gets none of the medals.","military"},
+	{"gryphon chick","AFBJAB","AQf",2,6,2,"D97706","FEF3C7","fluffy beaked cub, tiny wings","chirp","All fluff, no flight skills yet.","mythical,cute"},
 	{"guacamole","IMBLGI","FcN",2,3,3,"568203","D3E28A","bowl of chunky green dip","gloop","Green, chunky, and loved by all.","edible,sticky,sauce"},
 	{"guanaco","AMCJAA","dfe",3,4,4,"B07A44","E8E0D8","wild llama, brown back, white belly","bleat","Llama's wild cousin. Same spit.","mammal,farm"},
 	{"guandao","CKDHuK","kfP",7,4,5,"8A929B","9E1B32","heavy curved blade, dragon pole","shing","A general's favourite way to say no.","medieval,sharp"},
@@ -400,7 +403,4 @@ return {
 	{"hoof","BEBAtB","DkO",4,7,6,"3B2F2F","8D6E63","dark horse hoof with a shiny horseshoe","clack","Clip. Clop. Clobber.","body,farm"},
 	{"hook hand","CKBHrI","fH",3,7,4,"C9CED4","5A3A1E","curved hook on a cuff","bang","Handy, minus the hand.","pirate,sharp"},
 	{"hook sword","CKCHrK","fTH",5,7,4,"8A929B","9E1B32","sword with hooked tip","shing","Hook. Pull. Slash.","fantasy,sharp"},
-	{"hoop snake","AJBJCF","UDM",3,9,2,"65A30D","FBBF24","snake biting tail rolling like a wheel","hiss","Rolls downhill faster than you run.","cryptid,silly"},
-	{"hoopoe","AMAJDB","dA",1,7,1,"E8A06A","1E1E1E","punk crest, zebra wings","tweet","Has a mohawk. Sounds like oop-oop.","bird,cute"},
-	{"hop","KMAOKG","U",1,7,1,"F8BBD0","FFFFFF","tiny bouncy hop puffs","boing","Hippity hoppity.","cute,speed"},
 }

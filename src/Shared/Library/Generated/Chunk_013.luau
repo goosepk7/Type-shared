@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hoop snake","AJBJCF","UDM",3,9,2,"65A30D","FBBF24","snake biting tail rolling like a wheel","hiss","Rolls downhill faster than you run.","cryptid,silly"},
+	{"hoopoe","AMAJDB","dA",1,7,1,"E8A06A","1E1E1E","punk crest, zebra wings","tweet","Has a mohawk. Sounds like oop-oop.","bird,cute"},
+	{"hop","KMAOKG","U",1,7,1,"F8BBD0","FFFFFF","tiny bouncy hop puffs","boing","Hippity hoppity.","cute,speed"},
 	{"hop vine","NGCNMI","WSN",2,1,3,"9CCC65","C5E1A5","climbing vine with papery green cones","rustle","Climbs everything in sight.","plant,crop"},
 	{"hope","KHCOKJ","GF",2,4,4,"FFF59D","B3E5FC","single bright light rising above caster","chime","A little light in the dark. Heals, too.","holy,support"},
 	{"hoplite shield","BKCIyI","Gk",3,4,7,"A86F32","9E1B32","large round bronze shield","clang","Bronze, big, and very Greek.","armor,defense,ancient"},
@@ -400,8 +403,4 @@ return {
 	{"jester hat","BMBONI","jd",1,7,1,"9E1B32","D4A72C","floppy three-point hat with bells","swish","Jingle jingle, confusing.","clothing,silly"},
 	{"jet","DFDAHB","EATeg",7,10,6,"78909C","37474F","sharp delta wings, pointed nose, afterburner","jet","Sonic boom first, explanation never.","vehicle,air"},
 	{"jet boat","DBCKHC","DkIgB",5,10,4,"FF9800","212121","sleek boat blasting a water jet","engine","Spins on the spot. Sprays everyone.","vehicle,aquatic"},
-	{"jet ski","DBBKHC","DkIgB",4,9,3,"FFEB3B","1565C0","small sit-on watercraft, handlebars, spray jet","engine","Sprays enemies with an angry rooster tail.","vehicle,aquatic"},
-	{"jet stream","FFDBOB","kIe",6,10,2,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air"},
-	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
-	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},
 }

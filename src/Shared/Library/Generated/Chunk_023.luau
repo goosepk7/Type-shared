@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shieldmaiden","LKCJNA","GDf",6,5,7,"94A3B8","DC2626","braided warrior with painted round shield","clang","Shield up. Enemies down.","warrior,norse"},
+	{"shih tzu","AMBJAA","dQf",2,6,2,"F0E6D6","8A6E4A","long silky hair, tiny face peeking out","yip","A mop with a face.","mammal,pet,cute"},
+	{"shiitake","NGBLMI","FSc",2,1,3,"8D6E63","FFF8E1","brown cap mushroom cluster","poof","Mostly a snack. Partly a weapon.","plant,fungus,edible"},
+	{"shillelagh","CMCHtK","kf",3,6,4,"5A3A1E","7A4E2D","knobbly blackthorn stick","shing","Lucky bonk.","sharp,ancient"},
+	{"shimmer","FLBOKJ","Za",2,6,2,"E1BEE7","B2EBF2","wavy translucent sheen over caster","shimmer","Now you see me. Kinda.","magic"},
+	{"shin","BMBAJB","fNO",3,7,4,"E8B48A","4F7CAC","lower leg swinging at exactly table-corner height","thwack","Finds every coffee table in the dark.","body"},
 	{"shin pads","BMBOKF","G",1,6,3,"24262A","F2F2EE","curved foam shin shields","bonk","Kicks? Bring it.","sport"},
 	{"shine","FHBOKJ","da",2,6,2,"FFF6D1","FFFFFF","sparkle glints across surfaces","ding","So shiny it is distracting.","cute"},
 	{"ship","DBEKHC","DkgB",6,5,8,"6D4C41","F2E6C9","wooden hull, three masts, billowing sails","creak","Sails in. Rams out.","vehicle,aquatic,ancient"},
@@ -397,9 +403,4 @@ return {
 	{"solar power","KHCOKJ","DF",3,6,3,"FFC107","FFF8E1","golden panels of light absorbing sunbeams","hum","Charged by sunshine.","holy,support"},
 	{"solar sail","DHDKHJ","Aag",3,7,2,"FFD54F","90CAF9","huge shiny thin sail in space","roar","Surfs sunlight across the stars.","vehicle,space"},
 	{"solar storm","HDEEOJ","KLP",7,6,3,"FF7043","7E57C2","charged particle storm, auroral ripples","crackle","Space weather is the worst weather.","space,electric"},
-	{"solar system","MLFNKK","kSRH",9,2,9,"FFC107","5C6BC0","sun with planets on circling orbits","rumble","Brings the whole family.","space"},
-	{"solar wind","MFEFKJ","KkI",6,8,4,"FFD54F","FFF8E1","streams of glowing golden particles","rumble","Space breeze, slightly radioactive.","space"},
-	{"soldering iron","JAAAJK","Kf",2,6,3,"8E9196","C0392B","pen-shaped heated tip","clank","Tiny, toasty, precise.","tool"},
-	{"soldier","LECJNA","GDe",5,6,6,"4D7C0F","57534E","camo helmet, backpack, boots","bang","Hup two three four.","military"},
-	{"solenodon","AMBJAA","CfM",2,5,3,"8A6A4A","E8B0A0","long snout shrew with venom","squeak","Venomous spit. Super rare.","mammal,wild"},
 }

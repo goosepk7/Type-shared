@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mold","NJBLMI","SMNP",3,1,2,"7CB342","C5E1A5","fuzzy green patch spreading out","poof","Spreads on everything. Everything.","plant,fungus,silly"},
+	{"moldy cheese","IJBDOJ","ScM",3,3,2,"C8C86A","6B8A4A","cheese wedge with fuzzy green spots","whiff","A science project gone wrong.","edible,smelly,silly"},
+	{"mole","AMAJAA","Cf",1,5,3,"2E2A2A","E8A0A0","velvet black body, big shovel paws","squeak","Digs tunnels. Can't see. Doesn't need to.","mammal,wild"},
+	{"mole cricket","AMAJFA","CdP",1,6,1,"8A6A3A","C8A07A","cricket with mole digging claws","buzz","Half cricket, half mole.","insect"},
+	{"mole machine","DEDKHL","CDTg",6,4,9,"795548","FFB300","cone drill nose on a tracked hull","drill","Pops up right under them. Surprise!","mechanical,vehicle,land,silly"},
+	{"mole person","AEBJNH","Cb",2,5,3,"78350F","F9A8D4","squinty underground dweller with shovel","chitter","Pops up from the floor. Rude.","silly"},
 	{"mole sauce","IABNGI","KSN",2,4,1,"4A2A1E","8A3A1E","dark rich chocolate-chili sauce","splat","Chocolate and chilies, dark and deep.","edible,sauce"},
 	{"molecule","FMAGKJ","URV",2,7,2,"EF4444","F8FAFC","ball-and-stick model: one red ball, two white, wobbling","boing","H2-Oh no.","science"},
 	{"molly","ABAJEC","dB",1,6,1,"1E1E1E","F2D82A","black aquarium fish","splash","Chill aquarium buddy.","fish,aquatic"},
@@ -397,10 +403,4 @@ return {
 	{"nova bomb","FHDGKI","KEk",8,6,1,"FFFDE7","FF80AB","white-pink sphere detonating into a nova ring","boom","A tiny supernova. Pocket edition.","space,explosive"},
 	{"nozzle","JBBBwB","kIe",4,8,3,"EAB308","9CA3AF","brass hose nozzle on full jet blast","squirt","Set to JET. Never set it to jet.","tool,household"},
 	{"npc","LMCJNA","jdQ",3,3,4,"A3A3A3","F5F5F4","blank face, exclamation mark over head","ding","Says the same line forever. Nice weather.","meme,gaming,silly"},
-	{"nuckelavee","AJDJAA","DfMP",7,6,6,"7F1D1D","365314","skinless horse-rider fused as one","roar","The worst horse in Scottish history.","mythical,spooky"},
-	{"nuclear blast","HAFGKI","KEkPO",10,6,2,"FFEB3B","FF5722","blinding flash, towering cartoon mushroom cloud","boom","Big. Bright. Bye.","explosive,danger"},
-	{"nuclear winter","HCFNOI","iJSM",9,2,6,"607D8B","C6FF00","grey frozen wasteland with faint green glow","hush","Cold, dark and glowy. Bad combo.","frozen,toxic,danger"},
-	{"nue","ADCJAB","jAL",5,6,4,"78350F","1F2937","monkey face, tiger legs, snake tail","screech","Assembled from four different bad dreams.","yokai"},
-	{"nugget","IMAELG","UFcP",2,5,2,"D9952B","F6D48A","golden crispy lumps raining with a dip tub","crunch","A ten piece. For ten problems.","edible,meme"},
-	{"nuke","CAFGKF","KEkSP",10,2,3,"6B7B3A","F1C40F","huge finned bomb, hazard stripes","boom","Big flash. Bigger mushroom.","explosive,danger"},
 }

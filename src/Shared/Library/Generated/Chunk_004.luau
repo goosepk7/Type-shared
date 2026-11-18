@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
 	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
 	{"breakdancer","LFCJNK","jdk",4,8,3,"111827","FACC15","spinning on head, tracksuit","beat","Head spins. Kicks fly.","music"},
@@ -402,6 +403,4 @@ return {
 	{"carrot patch","NGBLMI","Sc",2,1,3,"7CB342","FF9800","feathery tops above orange roots","rustle","Pull one up. Use it as a sword.","plant,crop,silly"},
 	{"carry","LMCJNA","GFl",5,6,5,"FACC15","111827","player lifting teammates on shoulders","ding","Carrying the whole team. Back hurts.","meme,gaming"},
 	{"cart","DMBKHL","Dkg",2,3,4,"8D6E63","5D4037","wooden box on two big wheels","engine","Not fancy. Gets the job done.","mechanical,vehicle,land,ancient"},
-	{"cartographer","LMCJNA","hY",3,4,3,"78350F","FDE68A","scrolls, compass, quill","swish","Draws the map. Draws you lost.","explorer"},
-	{"cartoon","ALCJBG","UjkY",4,7,5,"FACC15","EF4444","rubbery bouncy character with white gloves and pie-cut eyes","boing","Runs off the cliff. Only falls when it looks down.","silly,art"},
 }

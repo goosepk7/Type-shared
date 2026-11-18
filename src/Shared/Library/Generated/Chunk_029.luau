@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"yarn","BMALJI","cN",1,5,1,"D8CBB5","C0392B","fuzzy ball of wool","splat","Tangled up in a cosy mess.","art"},
+	{"yarrow","NGBNMI","dFS",1,1,2,"FFFFFF","F48FB1","flat clusters of tiny flowers","rustle","Old-time wound healer.","plant,flower"},
+	{"yawn","KMBFOB","NO",1,3,1,"B3E5FC","FFFFFF","stretchy sleepy ripple","yawn","Contagious. Look, you just did it.","silly"},
+	{"year","KLDN5K","SXN",5,1,4,"16A34A","F59E0B","calendar ring of twelve months spinning with party hats","chime","Twelve months. Gone. Where did it go?","time"},
+	{"yeast","IMBOKI","WP",3,5,3,"E8D8A8","C8B88A","beige granules","chomp","Tiny helpers that make dough grow.","edible"},
+	{"yeehaw","KMCOKB","Dk",3,9,2,"A1887F","FFD54F","lasso swirl and dust kick","yeehaw","Yeehaw! Saddle up.","silly"},
 	{"yeet","KFCAKB","kle",5,10,1,"FFEB3B","FF4081","target spinning away in a huge arc","whoosh","YEET. Gone. Bye.","meme,silly"},
 	{"yellow squash","IMBHJI","kf",3,5,4,"F2D23A","5E7A2B","curved yellow squash","bonk","A sunny club.","edible,silly"},
 	{"yellowstone","MBFNII","KlS",6,1,9,"FFEB3B","4FC3F7","steaming pools, geysers, colourful springs","rumble","Geysers everywhere. Bubbling everywhere.","place,landmark"},

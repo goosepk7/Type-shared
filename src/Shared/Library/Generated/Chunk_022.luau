@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"salamander","AMAJCA","FB",1,3,2,"1E1E24","F2D82A","slick black body, yellow spots","squelch","Wet, spotty and chill.","amphibian,wetland"},
+	{"salami","IMBHJI","kf",3,5,4,"8A1E2E","F2E8D8","marbled red sausage log","bonk","A meat log. Heavy swing.","edible,silly"},
+	{"salchipapa","IMAELB","ce",2,7,1,"B0402B","F2C24A","fries with sausage slices","pitter","Fries and sausages, best friends.","edible"},
+	{"salesman","LMCJNA","jcb",3,5,3,"B45309","FDE68A","fast talker with a suitcase of gadgets and a huge grin","ding","But wait, there is more! There is always more.","silly"},
+	{"salmon","ABCJEC","UDfB",4,7,4,"E8806A","8A9AA8","silver-pink fish leaping upstream","splash","Swims uphill for fun. Hardcore.","fish,aquatic"},
+	{"salmonberry","IGAELB","eVP",2,7,1,"F28C4A","E8604A","orange-pink berry","pitter","A berry the colour of salmon.","edible,fruit,sweet"},
 	{"salp","ABBJGJ","SVB",1,2,1,"E8F4F8","C8E8F0","clear barrel chain","squelch","See-through chain of jelly barrels.","aquatic,ocean,venomous"},
 	{"salsa","IABNGI","KjS",4,4,2,"D8302B","7DBE3A","bowl of chunky red sauce","sizzle","Chunky, spicy, dance-ready.","edible,spicy,sauce"},
 	{"salsify","IEBAJK","FTe",3,6,4,"5A4A3A","F2EEDF","long dark root","crunch","A root that tastes like oysters.","edible,vegetable,healthy"},
@@ -397,10 +403,4 @@ return {
 	{"shield","BKCIyI","Gk",3,5,7,"8A929B","9E1B32","round shield with central boss","clang","Say no with your arm.","armor,defense"},
 	{"shield tower","ELDIII","GSa",3,1,9,"90A4AE","40C4FF","tower projecting a glowing dome","thud","Protects everything around it.","structure,defense,tower"},
 	{"shield wall","EKDCII","GSIa",3,1,8,"B71C1C","D4AF37","overlapping round shields in a row","thud","Shields up. Way up.","structure,defense,ancient"},
-	{"shieldmaiden","LKCJNA","GDf",6,5,7,"94A3B8","DC2626","braided warrior with painted round shield","clang","Shield up. Enemies down.","warrior,norse"},
-	{"shih tzu","AMBJAA","dQf",2,6,2,"F0E6D6","8A6E4A","long silky hair, tiny face peeking out","yip","A mop with a face.","mammal,pet,cute"},
-	{"shiitake","NGBLMI","FSc",2,1,3,"8D6E63","FFF8E1","brown cap mushroom cluster","poof","Mostly a snack. Partly a weapon.","plant,fungus,edible"},
-	{"shillelagh","CMCHtK","kf",3,6,4,"5A3A1E","7A4E2D","knobbly blackthorn stick","shing","Lucky bonk.","sharp,ancient"},
-	{"shimmer","FLBOKJ","Za",2,6,2,"E1BEE7","B2EBF2","wavy translucent sheen over caster","shimmer","Now you see me. Kinda.","magic"},
-	{"shin","BMBAJB","fNO",3,7,4,"E8B48A","4F7CAC","lower leg swinging at exactly table-corner height","thwack","Finds every coffee table in the dark.","body"},
 }

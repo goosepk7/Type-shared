@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magnifying glass","BHABJK","Ke",2,6,2,"B58A3A","BFE6F2","round lens with handle","clank","Concentrated sunshine, bug's nemesis.","science,detective"},
+	{"magnolia","NGDCMI","GdWFkS",3,1,6,"6D4C41","F8BBD0","big waxy pink-white blossoms","rustle","Flowers the size of plates.","plant,tree,flower"},
+	{"magpie","AMBJDB","dAb",2,7,1,"1E1E24","F2F2F2","black and white bird, long blue-green tail","tweet","Steals shiny things. Very shiny.","bird,cute"},
+	{"mahi-mahi","ABCJEC","DfB",4,7,4,"4AB04A","F2D82A","blunt head, green-gold rainbow","splash","Shines like a glowing rainbow.","fish,aquatic"},
+	{"maiasaura","AMDJAA","dFk",5,5,6,"7A6A4A","D8C08A","duckbill mother with nest","honk","Good mother lizard. Literally.","dinosaur,extinct,reptile"},
+	{"maid","LMCJNA","FI",3,6,4,"111827","F8FAFC","apron, feather duster","swish","Dusts the enemies off the map.","silly"},
 	{"maidenhair fern","NGANMI","ZS",1,1,2,"7CB342","3E2723","delicate fan fronds on black stems","rustle","Dainty. Shy. Ancient.","plant,ancient"},
 	{"mail","BMBELB","dPO",3,6,2,"F5F5F0","DC2626","blizzard of envelopes, postcards and one heavy parcel","thud","You have got mail. All of it. At once.","household"},
 	{"mail carrier","LMCJNA","DQe",3,7,4,"1E3A8A","F8FAFC","blue uniform, mail bag, letters","whoosh","Throws letters. Hard.","silly"},
@@ -397,10 +403,4 @@ return {
 	{"mojave desert","MAFNII","KSN",5,1,9,"E6A04D","8D6E63","dusty desert with joshua trees","rumble","Hot days. Cold nights. Weird trees.","place,geography"},
 	{"mokele-mbembe","ABEJAC","GkB",7,3,8,"57534E","166534","long-necked swamp beast","stomp","A dinosaur that forgot to go extinct.","cryptid,aquatic"},
 	{"molasses","IMBLGI","SNO",2,3,3,"3A1A0C","6B3A1E","thick black-brown sauce","gloop","Slower than molasses. Literally.","edible,sticky,sauce,sweet"},
-	{"mold","NJBLMI","SMNP",3,1,2,"7CB342","C5E1A5","fuzzy green patch spreading out","poof","Spreads on everything. Everything.","plant,fungus,silly"},
-	{"moldy cheese","IJBDOJ","ScM",3,3,2,"C8C86A","6B8A4A","cheese wedge with fuzzy green spots","whiff","A science project gone wrong.","edible,smelly,silly"},
-	{"mole","AMAJAA","Cf",1,5,3,"2E2A2A","E8A0A0","velvet black body, big shovel paws","squeak","Digs tunnels. Can't see. Doesn't need to.","mammal,wild"},
-	{"mole cricket","AMAJFA","CdP",1,6,1,"8A6A3A","C8A07A","cricket with mole digging claws","buzz","Half cricket, half mole.","insect"},
-	{"mole machine","DEDKHL","CDTg",6,4,9,"795548","FFB300","cone drill nose on a tracked hull","drill","Pops up right under them. Surprise!","mechanical,vehicle,land,silly"},
-	{"mole person","AEBJNH","Cb",2,5,3,"78350F","F9A8D4","squinty underground dweller with shovel","chitter","Pops up from the floor. Rude.","silly"},
 }

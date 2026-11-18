@@ -403,5 +403,4 @@ return {
 	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
 	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
 	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
-	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 }

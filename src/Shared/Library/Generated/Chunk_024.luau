@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"solar system","MLFNKK","kSRH",9,2,9,"FFC107","5C6BC0","sun with planets on circling orbits","rumble","Brings the whole family.","space"},
+	{"solar wind","MFEFKJ","KkI",6,8,4,"FFD54F","FFF8E1","streams of glowing golden particles","rumble","Space breeze, slightly radioactive.","space"},
+	{"soldering iron","JAAAJK","Kf",2,6,3,"8E9196","C0392B","pen-shaped heated tip","clank","Tiny, toasty, precise.","tool"},
+	{"soldier","LECJNA","GDe",5,6,6,"4D7C0F","57534E","camo helmet, backpack, boots","bang","Hup two three four.","military"},
+	{"solenodon","AMBJAA","CfM",2,5,3,"8A6A4A","E8B0A0","long snout shrew with venom","squeak","Venomous spit. Super rare.","mammal,wild"},
 	{"solid","FECCnI","Gka",4,1,9,"6B7280","9CA3AF","perfectly plain grey block, very hard, very square","thunk","Does not flow. Does not care.","science,defense"},
 	{"solitaire","BMBELG","UjP",3,5,2,"15803D","F8FAFC","cascade of bouncing playing cards leaving trails","swish","You won. The cards are bouncing. Classic.","game,tech"},
 	{"solo","LICJNA","GDfT",6,7,5,"374151","FACC15","lone hooded figure against the wind, scarf trailing","whistle","No team. No heals. No problem.","gaming,warrior"},
@@ -398,9 +403,4 @@ return {
 	{"stilt house","EMCCII","GS",2,1,5,"A1887F","1E88E5","wooden hut high on tall poles","thud","Floods? Not our problem.","structure,building"},
 	{"stilt walker","LMCJNA","dk",3,4,3,"7C3AED","F472B6","very tall figure on striped stilts","clack","Tallest in the room. Wobbly.","circus,silly"},
 	{"stilts","BMCOzI","D",1,4,3,"8B5A2B","C0392B","tall wooden poles with footrests","pop","Tall. Wobbly. Majestic.","party"},
-	{"sting","KJAAuB","TMO",3,9,1,"F5C518","2B2B2B","sharp yellow-black dart with a red throbbing ring","zing","Tiny jab. Huge fuss.","insect,venomous"},
-	{"stinger","BJAAuB","TMe",3,9,1,"2B2B2B","F5C518","tiny black barbed needle with a yellow base","zing","Small poke. Big regret.","sharp,insect,venomous"},
-	{"stinging nettle","NJBLMI","STM",3,1,3,"558B2F","33691E","hairy toothed leaves","rustle","Brush past it once. Never again.","plant"},
-	{"stingray","ABCJEC","STMB",4,5,3,"8A7A62","E8E0D2","flat diamond body, whip tail with barb","whoosh","Shuffle your feet. Seriously.","fish,aquatic,ocean"},
-	{"stink bomb","CJADKF","jSMe",2,7,1,"6B7B3A","8BC34A","small vial leaking green fumes","poof","Smells like victory. Mostly socks.","silly"},
 }

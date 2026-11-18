@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"leafhopper","AMAJFG","UdAP",1,6,1,"6AC84A","E8301E","tiny wedge-shaped hopper","buzz","Pops off leaves like popcorn.","insect"},
+	{"leafy sea dragon","ABAJEC","dZB",1,6,1,"C8A84A","6AA060","leafy seahorse with frond fins","splash","Looks like a swimming salad.","fish,aquatic"},
+	{"leak","FBBNGI","WSN",2,2,1,"38BDF8","BAE6FD","ceiling drip into an overflowing bucket","pitter","Plink. Plink. Plink. Plink. Plonk.","household"},
+	{"leaning tower","EMDMII","GdkSe",4,1,6,"F5F5F5","BDBDBD","white round tower, tipping sideways","thud","Has been about to fall for centuries.","structure,defense,tower,silly"},
+	{"leaning tower of pisa","EMFCII","GkSO",6,1,8,"F5F5F5","BDBDBD","white tiered tower tilting heavily","rumble","Finally falls over. On purpose. Onto you.","structure,landmark,silly"},
 	{"leap","KMCOKG","Dl",3,8,2,"FFCC80","FFFFFF","long arcing jump trail","whoosh","One giant leap. Mostly sideways.","speed"},
 	{"leapfrog","KGBOBG","UDO",3,7,2,"22C55E","FDE047","line of kids vaulting over each other's backs","boing","Over you. Over you. Over you. Splat.","toy,sport"},
 	{"learn","KHBOKJ","GWF",3,3,3,"3B82F6","FDE047","stack of books with a level-up arrow and a tired candle","ding","Knowledge is power. Naps are also power.","school,support"},
@@ -398,10 +403,4 @@ return {
 	{"magnetic storm","FKEN5K","lHLP",7,5,4,"C62828","1565C0","swirling metal debris in red-blue field","hum","All your metal flies away.","magnetic,storm"},
 	{"magnetism","FKCNOI","lH",5,5,4,"C4302B","3E64D6","red-blue field lines curving outward","hum","Opposites attract. So does armour.","magnetic"},
 	{"magnetize","KKCAKB","lH",4,7,1,"D32F2F","1976D2","red-blue glowing field on target","hum","Everything metal sticks to you now.","magnetic"},
-	{"magnifying glass","BHABJK","Ke",2,6,2,"B58A3A","BFE6F2","round lens with handle","clank","Concentrated sunshine, bug's nemesis.","science,detective"},
-	{"magnolia","NGDCMI","GdWFkS",3,1,6,"6D4C41","F8BBD0","big waxy pink-white blossoms","rustle","Flowers the size of plates.","plant,tree,flower"},
-	{"magpie","AMBJDB","dAb",2,7,1,"1E1E24","F2F2F2","black and white bird, long blue-green tail","tweet","Steals shiny things. Very shiny.","bird,cute"},
-	{"mahi-mahi","ABCJEC","DfB",4,7,4,"4AB04A","F2D82A","blunt head, green-gold rainbow","splash","Shines like a glowing rainbow.","fish,aquatic"},
-	{"maiasaura","AMDJAA","dFk",5,5,6,"7A6A4A","D8C08A","duckbill mother with nest","honk","Good mother lizard. Literally.","dinosaur,extinct,reptile"},
-	{"maid","LMCJNA","FI",3,6,4,"111827","F8FAFC","apron, feather duster","swish","Dusts the enemies off the map.","silly"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clockwork knight","OKCJNA","GDf",5,4,7,"B45309","F59E0B","brass knight with a wind-up key in back","tick","Fights until it runs down. Wind it again.","robot,steampunk"},
+	{"clockwork owl","AKAJDB","AZ",2,7,4,"B45309","22D3EE","brass owl with glass eyes","tick","Watches everything. Ticks quietly.","robot,bird,steampunk"},
 	{"clogs","BMBONI","k",1,4,3,"C49A6C","7A4E2D","carved wooden shoes","swish","Clomp clomp clomp.","clothing"},
 	{"clone","KLCJNA","dV",3,5,2,"80DEEA","FFFFFF","exact glowing copy of the caster","pop","Two of you. Twice the trouble.","magic"},
 	{"cloning gun","OLBBwI","eVh",4,6,3,"F2F2EE","8BC34A","ray gun with double barrel","hum","Two of them? Uh oh.","scifi"},
@@ -401,6 +403,4 @@ return {
 	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
 	{"crown","BHBONI","Fh",3,5,5,"D4A72C","B0103A","jewelled golden crown","swish","Heavy is the head. Shiny though.","royal,shiny"},
 	{"crown imperial","NGBNMI","dFS",2,1,2,"FF6F00","2E7D32","ring of hanging bells under a leaf crown","rustle","Royalty among bulbs.","plant,flower,royal"},
-	{"crown jewels","BHBONI","Fc",3,4,5,"D4A72C","B0103A","cushion of gem crown and sceptre","swish","Shiny enough to distract a dragon.","royal,shiny,treasure"},
-	{"crown-of-thorns starfish","AJAJGA","GTMN",2,1,4,"8A3A6A","E8701E","spiky many-armed starfish","squelch","A starfish wearing a spiky crown.","aquatic,ocean"},
 }

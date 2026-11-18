@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wallet","BMALKK","c",1,5,2,"6B4226","7A4E2D","folded leather wallet","thud","Money talks. Enemies listen.","household"},
+	{"walleye","ABCJEC","DfB",4,7,4,"B8A04A","E8E0C0","golden fish with glassy eyes","splash","Eyes reflect light like a cat.","fish,aquatic"},
+	{"wallop","KMCAKB","k",5,7,3,"FFB74D","FFFFFF","big round impact puff","wham","A good old-fashioned wallop.","silly"},
+	{"walnut","IEAAKK","UeO",2,8,5,"8A5A2A","C8A07A","wrinkly shell, brain-like nut","tok","Looks like a tiny brain. Hits like a big one.","edible,nut"},
+	{"walnut tree","NGDCMI","GWkSe",4,1,8,"5D4037","7CB342","broad tree with round green nuts","rustle","Throws nuts. Hard ones.","plant,tree"},
+	{"walrus","ACDJEC","UkfTB",6,5,7,"9A6E54","F2E6D2","huge blubbery body, long tusks, whiskers","bark","Uses its tusks as climbing hooks.","mammal,aquatic,arctic"},
 	{"wampus cat","AICJAA","jZf",5,8,4,"1C1917","FACC15","six-legged cat with glowing eyes","hiss","Two extra legs. Twice the zoomies.","cryptid,cat,spooky"},
 	{"wand","BLAAzI","eh",4,8,2,"5A3A1E","D4A72C","slim carved wand with sparkly tip","chime","Swish and flick.","magic,fantasy"},
 	{"wanderer","LFCJNA","ZY",4,6,4,"A16207","78716C","hooded traveling cloak, walking staff","whoosh","Arrives from nowhere. Leaves the same way.","explorer"},
@@ -397,10 +403,4 @@ return {
 	{"yam fries","IMAELB","eVP",2,7,1,"E8762B","F2A65A","orange sticks","pitter","Fries, but orange.","edible"},
 	{"yamata no orochi","ABFJCD","kfMV",9,4,9,"7F1D1D","15803D","eight-headed eight-tailed giant serpent","roar","Eight heads. Eight bad moods.","yokai,reptile,boss,danger"},
 	{"yari","CKCAuK","fT",5,6,4,"8A929B","24262A","straight-bladed spear","shing","Poke with honour.","sharp,ancient"},
-	{"yarn","BMALJI","cN",1,5,1,"D8CBB5","C0392B","fuzzy ball of wool","splat","Tangled up in a cosy mess.","art"},
-	{"yarrow","NGBNMI","dFS",1,1,2,"FFFFFF","F48FB1","flat clusters of tiny flowers","rustle","Old-time wound healer.","plant,flower"},
-	{"yawn","KMBFOB","NO",1,3,1,"B3E5FC","FFFFFF","stretchy sleepy ripple","yawn","Contagious. Look, you just did it.","silly"},
-	{"year","KLDN5K","SXN",5,1,4,"16A34A","F59E0B","calendar ring of twelve months spinning with party hats","chime","Twelve months. Gone. Where did it go?","time"},
-	{"yeast","IMBOKI","WP",3,5,3,"E8D8A8","C8B88A","beige granules","chomp","Tiny helpers that make dough grow.","edible"},
-	{"yeehaw","KMCOKB","Dk",3,9,2,"A1887F","FFD54F","lasso swirl and dust kick","yeehaw","Yeehaw! Saddle up.","silly"},
 }

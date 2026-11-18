@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant jelly","IMEJGG","GUaN",7,2,7,"E0102B","F35A6A","house-sized wobbling dome","thud","A wobbling fortress. Bounces everything off.","edible,giant,silly"},
+	{"giant leaf boat","DGBKHC","gB",1,4,2,"7CB342","F8BBD0","huge leaf curled into a boat","whoosh","For very tiny adventurers.","vehicle,magic,mythical,cute"},
+	{"giant leech","ABCJCC","iNB",4,4,4,"1F2937","991B1B","slimy black worm with a round sucker","squelch","Sticks like a bad joke.","aquatic,spooky"},
 	{"giant lemon","IMEJIF","jEk",7,2,7,"FFF44F","7BA428","lemon the size of a boulder","thud","Life gave you a big lemon.","edible,giant,silly,sour"},
 	{"giant lollipop","IMDHJI","dkf",5,5,4,"E8434F","4FA3E8","huge rainbow swirl on a pole","bonk","Bigger than you. Sweeter too.","edible,silly,candy"},
 	{"giant mallet","CMDHtK","kfXO",6,3,5,"C0392B","C49A6C","enormous cartoon wooden mallet","bonk","Flattens foes like pancakes.","silly,cartoon"},
@@ -400,7 +403,4 @@ return {
 	{"growth ray","CLCBwI","jWe",4,7,3,"E67E22","7D3CB5","ray gun with big flared dish","zap","Embiggening in progress.","scifi,ranged"},
 	{"grub","AMAJTD","CWP",1,3,1,"F2E8D0","B8701E","curled white beetle larva","squelch","Lives underground. Waits. Grows.","bug"},
 	{"grump","LMCJNA","IN",3,3,5,"57534E","1E3A8A","crossed arms, frown, raincloud overhead","grunt","Hmph. Get off the map.","silly"},
-	{"grumpy slab","EEDNII","EkO",8,3,9,"8E8A84","3B3633","a scowling spiked stone slab glares down, then slams twice","rumble","It has one move and it is very good at it.","game,platformer,stone"},
-	{"grunt","LEBJNA","Dfh",3,5,3,"65743A","A8A29E","small helmeted trooper with an oversized pack","grunt","Does the work. Gets none of the medals.","military"},
-	{"gryphon chick","AFBJAB","AQf",2,6,2,"D97706","FEF3C7","fluffy beaked cub, tiny wings","chirp","All fluff, no flight skills yet.","mythical,cute"},
 }

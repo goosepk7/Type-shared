@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nuckelavee","AJDJAA","DfMP",7,6,6,"7F1D1D","365314","skinless horse-rider fused as one","roar","The worst horse in Scottish history.","mythical,spooky"},
+	{"nuclear blast","HAFGKI","KEkPO",10,6,2,"FFEB3B","FF5722","blinding flash, towering cartoon mushroom cloud","boom","Big. Bright. Bye.","explosive,danger"},
+	{"nuclear winter","HCFNOI","iJSM",9,2,6,"607D8B","C6FF00","grey frozen wasteland with faint green glow","hush","Cold, dark and glowy. Bad combo.","frozen,toxic,danger"},
+	{"nue","ADCJAB","jAL",5,6,4,"78350F","1F2937","monkey face, tiger legs, snake tail","screech","Assembled from four different bad dreams.","yokai"},
+	{"nugget","IMAELG","UFcP",2,5,2,"D9952B","F6D48A","golden crispy lumps raining with a dip tub","crunch","A ten piece. For ten problems.","edible,meme"},
+	{"nuke","CAFGKF","KEkSP",10,2,3,"6B7B3A","F1C40F","huge finned bomb, hazard stripes","boom","Big flash. Bigger mushroom.","explosive,danger"},
 	{"numbat","AMBJAA","Uf",2,6,2,"B85A2E","F2F2EE","striped back, bushy tail","chirp","Eats termites. Wears stripes.","mammal,marsupial"},
 	{"number","KLBELG","UjV",3,5,3,"22D3EE","FACC15","bouncing chunky digits 0 to 9 with a floating +1","ding","Pick a number. Wrong. It was seven.","school"},
 	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
@@ -397,10 +403,4 @@ return {
 	{"peel","BGALGI","kNO",2,1,1,"FDE047","A16207","floppy yellow fruit skin lying in wait","whee","The oldest trap in the book.","trap,silly"},
 	{"peeler","BMAHJK","f",1,7,2,"8A929B","E67E22","little swivel blade on handle","clang","Peels potatoes. And armour.","kitchen,household"},
 	{"peepal tree","NHECMI","GWFkS",4,1,9,"8D6E63","43A047","wide tree with heart-shaped leaves","rustle","Sit beneath it. Get very wise.","plant,tree,holy"},
-	{"peg leg","CMBHtI","kf",2,4,4,"8B5A2B","5A3A1E","wooden stump leg","bang","Kicks with a thunk.","pirate,silly"},
-	{"pegacorn","ALDKAB","ATg",7,8,6,"F9A8D4","F8FAFC","winged horned horse with pastel mane","neigh","Wings and a horn. The full set.","mythical,mount,cute"},
-	{"pegasus","AFDKAB","DAFg",6,9,5,"F8FAFC","93C5FD","white horse, feathered wings","neigh","A horse that skipped the road entirely.","mythical,flying,mount,holy"},
-	{"pegasus foal","AFBKAB","AQg",2,7,2,"F8FAFC","FBCFE8","fluffy white foal, tiny wings","neigh","Wings too small. Tries anyway.","mythical,cute,flying"},
-	{"pegasus warhorse","AFDKAB","Akg",7,8,7,"F8FAFC","94A3B8","pegasus in steel barding","neigh","Heavy cavalry, light wings.","mount"},
-	{"peking duck","IGCOKI","F",2,5,3,"B0502B","E8A040","lacquered roasted duck","crunch","Crispy skin, royal history.","edible,healthy,royal"},
 }

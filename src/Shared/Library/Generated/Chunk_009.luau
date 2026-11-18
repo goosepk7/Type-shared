@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"evil mastermind","LICJNA","jhY",5,3,4,"1F2937","7C3AED","swivel chair, fluffy cat, monocle","cackle","Pets the cat. Explains the plan.","villain"},
+	{"evil queen","LICJNA","jMh",5,4,4,"111827","7C3AED","tall collar, dark crown, magic mirror","cackle","Mirror mirror on the wall: rude.","villain,royal"},
 	{"evil stepmother","LICJNA","jh",4,4,4,"111827","7C3AED","tall collar, sharp nails, glare","cackle","Makes you do all the chores.","folklore,villain"},
 	{"evil tree","NIECMI","GSfH",6,2,8,"3E2723","B71C1C","tree with glowing eyes and a scowling mouth","rustle","Hates trespassers. Everyone is a trespasser.","plant,tree,spooky"},
 	{"evil twin","LICJNA","jZ",4,6,4,"1F2937","DC2626","identical person but with goatee","cackle","Same face. Worse manners.","villain,silly"},
@@ -401,6 +403,4 @@ return {
 	{"foam","FBBDOJ","dSN",2,3,2,"E9F7FB","BFE6F2","piled frothy white suds","fizz","Fluffy. Fizzy. Slippery.","aquatic,silly"},
 	{"foam dart blaster","CMBAwI","Ude",1,8,2,"E67E22","2F6FD1","chunky plastic dart launcher","thwip","Foam darts. Real drama.","toy,silly"},
 	{"foam finger","BMBONF","dF",1,5,1,"2F6FD1","F2F2EE","giant foam number-one hand","bonk","We're number one!","sport,silly"},
-	{"foam hammer","BMCHtK","Udf",1,7,2,"F1C40F","2F6FD1","huge squishy foam hammer","thud","Fwump.","toy,silly"},
-	{"foam machine","OMCD1I","jNP",1,2,4,"F2F2EE","47D7E8","cannon spewing foam bubbles","pop","Foam party! Nobody can move.","party"},
 }

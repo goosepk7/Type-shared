@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pool cue","BMCHzK","kfT",2,7,3,"C49A6C","24262A","long tapered stick","bonk","Bank shot. Off their head.","sport"},
+	{"pool noodle","BBCHJK","Udf",1,7,1,"8BC34A","FF3EA5","long bendy foam tube","bonk","Thwap. Thwap. Undefeated.","summer,toy,silly"},
+	{"pool noodle lance","CBDAuK","Dkf",1,6,1,"8BC34A","E67E22","foam noodle jousting lance","boing","Joust of the summer.","summer,silly"},
+	{"pool of darkness","FICLII","iHN",5,2,4,"0D0221","7C4DFF","inky black pool on the ground","gloop","Step in. Sink down.","spooky"},
+	{"poop","BJBLGI","dSMN",2,1,2,"7A4A21","A0723D","classic brown swirl with stink lines, two flies, big smile","squelch","Everybody does it. Nobody steps in it twice.","silly,gross,meme"},
+	{"pop gun","CMBAwI","keO",1,7,2,"C0392B","C49A6C","toy rifle with cork on string","thwip","POP! Boop.","toy,silly"},
 	{"pop quiz","KLBAKB","jO",3,9,1,"FFFFFF","1565C0","floating paper with question marks","ding","Pencils out! Panic!","silly"},
 	{"pop rocks","IDBGKF","jELP",4,6,1,"F2A6C8","4FA3E8","crackling candy crystals","pop","Crackles. Snaps. Tiny fireworks.","edible,explosive,candy"},
 	{"pop tart","IMBAKK","Uke",3,7,2,"E8C88A","F2A6C8","frosted rectangle, sprinkles","whoosh","Breakfast in a rectangle.","edible"},
@@ -397,10 +403,4 @@ return {
 	{"receipt","BMBLCD","WHN",2,5,2,"FFFFFF","6B7280","absurdly long curling paper strip that keeps printing","whirr","Three miles long. For one pack of gum.","silly,meme"},
 	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
 	{"recipe","BLBO2J","WFh",3,3,2,"F5E6CC","DC2626","splattered recipe card with floating measuring spoons","rustle","Step one: preheat the battlefield.","kitchen,magic"},
-	{"recorder","BMAFJI","jd",1,6,1,"F2F2EE","F2F2EE","plastic school flute","woodwind","Every school's secret weapon.","music,school,silly"},
-	{"recover","KGBOKJ","F",1,4,3,"81C784","FFFFFF","gentle green breathing glow","chime","Shake it off. Back in it.","support"},
-	{"rectangle","KECCnI","GIa",3,2,7,"22C55E","FFFFFF","long green slab sliding sideways like a door","thunk","A square that got stretched. Still bitter.","school,shape"},
-	{"recurve bow","CMCAvI","Te",5,8,3,"24262A","8B5A2B","bow with tips curling forward","twang","Curvy bow, straight shots.","medieval,ranged"},
-	{"recycling","BGCL2I","abh",3,2,5,"2563EB","22C55E","blue bin with three chasing arrows, cans leaping out","clatter","Your attack will return as a park bench.","household,eco"},
-	{"recycling bin","BMCLII","O",1,1,5,"2F6FD1","F2F2EE","blue bin with arrows logo","clang","Reduce. Reuse. Re-bonk.","kitchen,household"},
 }

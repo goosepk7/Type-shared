@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"taxi","DMCKHL","Dkg",4,7,5,"F7C600","1A1A1A","yellow sedan, roof sign, checker stripe","engine","Meter is running. So are the enemies.","mechanical,vehicle,land"},
+	{"taxi driver","LMCJNL","Dd",3,8,4,"FACC15","111827","cap, checkered cab, honking","honk","Takes the long way. On purpose.","vehicle,silly"},
+	{"tayra","AMCJAA","CfT",3,8,2,"2A1E14","E8C87A","dark long weasel, gold head","chatter","Hides unripe fruit to ripen later.","mammal,predator"},
+	{"tea","IABOKI","F",2,5,2,"C8762B","F2E2C8","steaming teacup and saucer","slurp","A cup of calm.","edible,drink,warm"},
+	{"tea bush","NGBNMI","FN",1,1,3,"2E7D32","9CCC65","neat rows of small glossy shrubs","rustle","Time for a calming cuppa.","plant,crop"},
 	{"tea party","IMCJII","dFc",5,1,6,"F7F2EC","F2A6C8","little table, teapot, cups","thud","Fancy cups, tiny cakes, polite chaos.","edible,giant,silly,fancy"},
 	{"tea plantation","NGENMI","F",2,1,6,"2E7D32","9CCC65","rows of bushes on misty hills","rustle","Calming. Steaming. Healing.","plant"},
 	{"tea rose","NGCNMI","dWFST",2,1,3,"FFCCBC","2E7D32","climbing canes loaded with roses","rustle","Climbs walls. Smells divine. Stabs a bit.","plant,flower"},
@@ -231,6 +236,7 @@ return {
 	{"titan","AEFJNA","klfO",9,3,10,"57534E","F59E0B","towering ancient giant, stone muscles","stomp","Older than gods. Bigger than buildings.","mythical,giant,ancient,boss,danger"},
 	{"titan beetle","AMBJFA","Gf",3,3,6,"6A3A1E","C8A07A","huge beetle with giant jaws","click","Snaps pencils in half.","insect,armored"},
 	{"titan clap","KFDNOI","GkI",6,10,2,"E8F0D8","7FCF5A","two giant palms clap and blast a shockwave cone","boom","The sky claps its hands. Ow.","hero,movie,loud"},
+	{"titan drop","OKEMWI","Eeh",9,3,5,"C9D2DA","FF8A1E","a beacon, then a mech slams down from orbit and opens fire","crash","Standby for a very large delivery.","scifi,game,mech"},
 	{"titan moon","MJDGKJ","kMe",5,4,8,"FFB300","D7CCC8","hazy orange moon with methane lakes","twinkle","Smoggy, orange, and very cold.","space,star"},
 	{"titan shift","KEFOXA","DWk",8,4,8,"C58B5A","FFDD99","you grow to twice your size with steam pouring off","boom","Look down. Way down.","anime,heavy,transform"},
 	{"titanis","AMDJDA","DkfT",7,8,5,"6A4A2E","D8A04A","terror bird with huge beak","boom","Terror bird of the Americas.","bird,flightless,extinct,predator"},
@@ -397,10 +403,4 @@ return {
 	{"trash can lid","BKBIyI","Gd",1,6,3,"8E9196","4A4D52","dented round metal lid","clang","Clang! Gross, but effective.","silly,defense"},
 	{"trash wall","EJCCII","GSM",2,1,5,"795548","9E9E9E","heap of bins and junk","thud","Smells like a defence.","structure,defense,silly"},
 	{"traveling merchant","LMCJNA","cbY",3,5,4,"92400E","7C3AED","giant backpack of wares","ding","What're ya buyin'?","merchant"},
-	{"traveller palm","NGDCMI","GWkS",3,1,6,"6D4C41","43A047","giant fan of paddle leaves","rustle","Points the way. Holds water.","plant,tree"},
-	{"tray","BMBIyK","Ga",1,6,3,"C9CED4","C9CED4","flat round serving tray","clang","Snacks? Defence? Yes.","kitchen,household"},
-	{"treacle sponge","IMBLGI","SNP",2,3,3,"E8A317","F2D88A","sponge pudding with syrup","gloop","A syrup-drenched sponge.","edible,sticky,sweet"},
-	{"treacle tart","IMBLGI","SNP",2,3,3,"E8A317","D9A04A","golden syrup tart","gloop","A golden sticky tart.","edible,sticky,sweet"},
-	{"treadmill","OMCL1I","IN",1,3,6,"24262A","8E9196","motor belt with handrails","hum","Run forever. Get nowhere.","sport,silly"},
-	{"treant","AGEJMA","GWFk",7,2,9,"78350F","4D7C0F","giant walking tree with bark face","creak","Takes three days to say good morning.","plant,giant"},
 }

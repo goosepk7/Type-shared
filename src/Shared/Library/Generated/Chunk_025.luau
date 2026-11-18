@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sting","KJAAuB","TMO",3,9,1,"F5C518","2B2B2B","sharp yellow-black dart with a red throbbing ring","zing","Tiny jab. Huge fuss.","insect,venomous"},
+	{"stinger","BJAAuB","TMe",3,9,1,"2B2B2B","F5C518","tiny black barbed needle with a yellow base","zing","Small poke. Big regret.","sharp,insect,venomous"},
+	{"stinging nettle","NJBLMI","STM",3,1,3,"558B2F","33691E","hairy toothed leaves","rustle","Brush past it once. Never again.","plant"},
+	{"stingray","ABCJEC","STMB",4,5,3,"8A7A62","E8E0D2","flat diamond body, whip tail with barb","whoosh","Shuffle your feet. Seriously.","fish,aquatic,ocean"},
+	{"stink bomb","CJADKF","jSMe",2,7,1,"6B7B3A","8BC34A","small vial leaking green fumes","poof","Smells like victory. Mostly socks.","silly"},
 	{"stink bug","AJAJFA","jdAMP",1,6,1,"6A5A3A","C8A86A","shield-shaped flat bug","buzz","Smells awful when squished. Avoid.","insect"},
 	{"stink cloud","FJBDOJ","jdN",2,5,1,"C0CA33","827717","yellow-green puff with wavy stink lines","pfft","Everyone leaves. Fast.","silly,toxic"},
 	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
@@ -398,9 +403,4 @@ return {
 	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
 	{"tavern","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
 	{"tax","KMCONA","iQb",4,5,3,"374151","22C55E","grey suit with a calculator and a sack labelled YOURS","ding","Takes a third. Then a bit more. Then a form.","silly,job"},
-	{"taxi","DMCKHL","Dkg",4,7,5,"F7C600","1A1A1A","yellow sedan, roof sign, checker stripe","engine","Meter is running. So are the enemies.","mechanical,vehicle,land"},
-	{"taxi driver","LMCJNL","Dd",3,8,4,"FACC15","111827","cap, checkered cab, honking","honk","Takes the long way. On purpose.","vehicle,silly"},
-	{"tayra","AMCJAA","CfT",3,8,2,"2A1E14","E8C87A","dark long weasel, gold head","chatter","Hides unripe fruit to ripen later.","mammal,predator"},
-	{"tea","IABOKI","F",2,5,2,"C8762B","F2E2C8","steaming teacup and saucer","slurp","A cup of calm.","edible,drink,warm"},
-	{"tea bush","NGBNMI","FN",1,1,3,"2E7D32","9CCC65","neat rows of small glossy shrubs","rustle","Time for a calming cuppa.","plant,crop"},
 }

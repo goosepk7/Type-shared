@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crown jewels","BHBONI","Fc",3,4,5,"D4A72C","B0103A","cushion of gem crown and sceptre","swish","Shiny enough to distract a dragon.","royal,shiny,treasure"},
+	{"crown-of-thorns starfish","AJAJGA","GTMN",2,1,4,"8A3A6A","E8701E","spiky many-armed starfish","squelch","A starfish wearing a spiky crown.","aquatic,ocean"},
 	{"crowned crane","AMCJDA","dAfT",3,5,2,"6A6A6E","F2C02A","golden crown of feathers","squawk","Wears a golden crown.","bird,wetland,royal"},
 	{"cruise missile","CADAkB","EQke",8,8,3,"8E9196","F2F2EE","long winged missile","boom","Takes the scenic route to boom.","explosive"},
 	{"cruise ship","DBFKHC","DkghB",6,3,9,"F5F5F5","1565C0","massive white ship, stacked decks, funnels","horn","Fourteen decks and a buffet. Ramming speed!","vehicle,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
 	{"doorbell","BMALKI","dc",1,1,3,"B58A3A","F2F2EE","small round push button","ding","Ding dong! Who could it be?","household"},
 	{"doorknob","BKAA3B","UeO",2,7,5,"D4AF37","8A6A14","round brass knob with a keyhole","clink","Opens doors. Closes arguments.","household"},
-	{"doormat","BMBL0I","N",1,1,2,"D2B48C","7A4E2D","bristly mat saying welcome","thud","Welcome. Now trip.","furniture,household"},
-	{"doorstop","BMALKI","O",1,1,4,"8E9196","7A4E2D","rubber wedge","thud","You shall not pass. The door, anyway.","household"},
 }

@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"recorder","BMAFJI","jd",1,6,1,"F2F2EE","F2F2EE","plastic school flute","woodwind","Every school's secret weapon.","music,school,silly"},
+	{"recover","KGBOKJ","F",1,4,3,"81C784","FFFFFF","gentle green breathing glow","chime","Shake it off. Back in it.","support"},
+	{"rectangle","KECCnI","GIa",3,2,7,"22C55E","FFFFFF","long green slab sliding sideways like a door","thunk","A square that got stretched. Still bitter.","school,shape"},
+	{"recurve bow","CMCAvI","Te",5,8,3,"24262A","8B5A2B","bow with tips curling forward","twang","Curvy bow, straight shots.","medieval,ranged"},
+	{"recycling","BGCL2I","abh",3,2,5,"2563EB","22C55E","blue bin with three chasing arrows, cans leaping out","clatter","Your attack will return as a park bench.","household,eco"},
+	{"recycling bin","BMCLII","O",1,1,5,"2F6FD1","F2F2EE","blue bin with arrows logo","clang","Reduce. Reuse. Re-bonk.","kitchen,household"},
 	{"recycling truck","DMDKHL","DklHg",5,4,8,"43A047","F5F5F5","green truck with sorting bins","engine","Recycles enemies into something useful.","mechanical,vehicle,land"},
 	{"red admiral","AMAJFB","jdA",1,5,1,"1E1E1E","E8301E","black wings with red bands","flutter","Military-looking butterfly.","insect,cute"},
 	{"red apple","IGBAKF","Fke",3,6,2,"B3121D","F6E7C1","round, deep red, stem and leaf","splat","Polished to a shine. Thrown with love.","edible,fruit,sweet"},
@@ -397,10 +403,4 @@ return {
 	{"salad bowl","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","wooden bowl of greens","crunch","A whole garden in a bowl.","edible,healthy"},
 	{"salad dressing","IMBLGI","kSO",2,3,2,"E8C04A","7DBE3A","cruet bottle of dressing","squeak","Makes the salad worth eating.","edible,slippery,silly,sauce"},
 	{"salak","IGBAKF","Fke",3,6,2,"6B3A1E","F5F2E5","scaly brown teardrop","splat","Fruit wearing snakeskin. Fancy.","edible,fruit,sweet"},
-	{"salamander","AMAJCA","FB",1,3,2,"1E1E24","F2D82A","slick black body, yellow spots","squelch","Wet, spotty and chill.","amphibian,wetland"},
-	{"salami","IMBHJI","kf",3,5,4,"8A1E2E","F2E8D8","marbled red sausage log","bonk","A meat log. Heavy swing.","edible,silly"},
-	{"salchipapa","IMAELB","ce",2,7,1,"B0402B","F2C24A","fries with sausage slices","pitter","Fries and sausages, best friends.","edible"},
-	{"salesman","LMCJNA","jcb",3,5,3,"B45309","FDE68A","fast talker with a suitcase of gadgets and a huge grin","ding","But wait, there is more! There is always more.","silly"},
-	{"salmon","ABCJEC","UDfB",4,7,4,"E8806A","8A9AA8","silver-pink fish leaping upstream","splash","Swims uphill for fun. Hardcore.","fish,aquatic"},
-	{"salmonberry","IGAELB","eVP",2,7,1,"F28C4A","E8604A","orange-pink berry","pitter","A berry the colour of salmon.","edible,fruit,sweet"},
 }

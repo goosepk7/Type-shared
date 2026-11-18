@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"peg leg","CMBHtI","kf",2,4,4,"8B5A2B","5A3A1E","wooden stump leg","bang","Kicks with a thunk.","pirate,silly"},
+	{"pegacorn","ALDKAB","ATg",7,8,6,"F9A8D4","F8FAFC","winged horned horse with pastel mane","neigh","Wings and a horn. The full set.","mythical,mount,cute"},
+	{"pegasus","AFDKAB","DAFg",6,9,5,"F8FAFC","93C5FD","white horse, feathered wings","neigh","A horse that skipped the road entirely.","mythical,flying,mount,holy"},
+	{"pegasus foal","AFBKAB","AQg",2,7,2,"F8FAFC","FBCFE8","fluffy white foal, tiny wings","neigh","Wings too small. Tries anyway.","mythical,cute,flying"},
+	{"pegasus warhorse","AFDKAB","Akg",7,8,7,"F8FAFC","94A3B8","pegasus in steel barding","neigh","Heavy cavalry, light wings.","mount"},
+	{"peking duck","IGCOKI","F",2,5,3,"B0502B","E8A040","lacquered roasted duck","crunch","Crispy skin, royal history.","edible,healthy,royal"},
 	{"pekingese","AMBJAA","dQf",2,6,2,"E8B87A","F2E0C0","flat face, lion mane fluff","yip","Tiny lion. Huge ego.","mammal,pet,cute"},
 	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
 	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
@@ -397,10 +403,4 @@ return {
 	{"poodle moth","AMAJFB","jdA",1,5,1,"F2F2EE","E8E0D8","super fluffy white moth","flutter","A moth that looks like a poodle.","insect,cute"},
 	{"poof","KLBDOJ","jZY",1,10,1,"E1BEE7","FFFFFF","puffy cloud with sparkles","poof","Poof! Now you see me...","magic,silly"},
 	{"pooka","AICJAA","jgY",4,8,4,"111827","FACC15","black shaggy horse with gold eyes","neigh","Gives wild rides. No refunds.","mythical,spooky"},
-	{"pool cue","BMCHzK","kfT",2,7,3,"C49A6C","24262A","long tapered stick","bonk","Bank shot. Off their head.","sport"},
-	{"pool noodle","BBCHJK","Udf",1,7,1,"8BC34A","FF3EA5","long bendy foam tube","bonk","Thwap. Thwap. Undefeated.","summer,toy,silly"},
-	{"pool noodle lance","CBDAuK","Dkf",1,6,1,"8BC34A","E67E22","foam noodle jousting lance","boing","Joust of the summer.","summer,silly"},
-	{"pool of darkness","FICLII","iHN",5,2,4,"0D0221","7C4DFF","inky black pool on the ground","gloop","Step in. Sink down.","spooky"},
-	{"poop","BJBLGI","dSMN",2,1,2,"7A4A21","A0723D","classic brown swirl with stink lines, two flies, big smile","squelch","Everybody does it. Nobody steps in it twice.","silly,gross,meme"},
-	{"pop gun","CMBAwI","keO",1,7,2,"C0392B","C49A6C","toy rifle with cork on string","thwip","POP! Boop.","toy,silly"},
 }
