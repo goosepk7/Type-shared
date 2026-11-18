@@ -118,6 +118,7 @@ return {
 	{"bulldozer blade","OKDCnI","GkI",5,2,8,"F1C40F","4A4D52","huge curved steel blade","clank","Push. Push. Push.","mechanical"},
 	{"bullet","CKAAkB","UTe",3,10,2,"D4AF37","8A6A14","snub-nosed cartoon bullet with angry eyebrows","zing","Has places to be. Mostly through things.","ranged"},
 	{"bullet ant","AMAJFA","CfMPO",3,5,1,"3A2414","8A5A2A","huge black ant","skitter","Sting feels like getting shot. Ouch.","insect,swarm"},
+	{"bullet time","KLCOKI","aN",5,5,3,"9EFFB8","0F3D24","shots crawl through rippling air as you lean back","tick","Everything... is... so... slow.","scifi,movie,time"},
 	{"bullet train","DMEKHL","DkTg",7,10,8,"F5F5F5","1C4E9A","long pointed nose, sleek white carriages","engine","Gone before you finished reading this.","mechanical,vehicle,land"},
 	{"bulletproof vest","BMCONI","G",1,6,7,"1F2F55","24262A","padded vest with plates","clank","Pew-proof.","modern,defense"},
 	{"bullfinch","AMAJDB","dA",1,7,1,"E8501E","1E1E1E","chunky red-chested finch","tweet","Chunky and rosy.","bird,cute"},

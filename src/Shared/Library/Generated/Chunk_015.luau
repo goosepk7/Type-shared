@@ -110,6 +110,7 @@ return {
 	{"light orb","FHBGKE","QFc",3,5,2,"FFF8E1","FFE57F","soft glowing ball that follows you","chime","A nightlight that likes you.","holy,cute"},
 	{"light pillar","FHDBKI","KFO",6,6,2,"FFFDE7","FFE082","tall glowing column from the sky","choir","A spotlight from above. Not a nice one.","holy"},
 	{"light rain","FHDEOJ","KFP",5,5,2,"FFF59D","FFFFFF","golden glowing droplets falling softly","chime","Sunshine, in drops.","holy"},
+	{"light runner","KHDOKI","GD",6,10,3,"2EE6FF","0B1A2A","a sleek bike made of light, trailing a glowing wall","zoom","End of line.","scifi,movie,vehicle"},
 	{"light shield","FHCIKI","GFa",3,4,6,"FFF59D","FFFFFF","radiant golden hex dome","chime","A hug made of sunshine.","holy,defence"},
 	{"light show","KHCNOI","jd",3,6,2,"E040FB","00E5FF","sweeping colourful beams and flashes","music","Too dazzling to fight.","music,silly"},
 	{"light spear","FHCAuB","KTe",6,9,1,"FFF9C4","FFFFFF","long golden javelin of light","zing","Thrown by someone very holy.","holy,sharp"},

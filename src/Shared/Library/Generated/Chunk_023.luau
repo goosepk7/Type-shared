@@ -254,7 +254,6 @@ return {
 	{"slow","KLBAKB","eN",3,7,1,"90CAF9","E1F5FE","wobbly blue ripple on target","wub","Hurry up. Oh wait, you cannot.","time"},
 	{"slow and steady","KEBOKA","GF",1,1,7,"8D6E63","A5D6A7","calm green shell glow","plod","Wins the race. Eventually.","silly"},
 	{"slow field","KLDNOI","SN",4,2,4,"90CAF9","E1F5FE","blue dome where everything drags","wub","Molasses mode, engaged.","time"},
-	{"slow motion","KLCNOI","N",4,2,3,"B0BEC5","E3F2FD","stretchy blurred dome with drifting particles","tick","Everything... is... so... slow.","time,silly"},
 	{"slow tower","ELDMII","GSeN",3,1,6,"7E57C2","B39DDB","tower dripping sticky purple goo","thud","Everything nearby goes very slow.","structure,defense,tower"},
 	{"slowpoke","LMBJNA","GSN",1,1,5,"A7F3D0","FCA5A5","dreamy kid shuffling along tying one shoelace forever","yawn","Will arrive by Thursday. Maybe.","silly"},
 	{"slowworm","AMBJCD","Cf",2,7,2,"B8904A","6A4A2A","shiny legless lizard","hiss","Not slow. Not a worm.","reptile"},

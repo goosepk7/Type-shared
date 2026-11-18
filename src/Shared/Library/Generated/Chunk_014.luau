@@ -58,6 +58,7 @@ return {
 	{"kagu","AMCJDA","AfT",3,5,2,"B8B8C0","E8301E","grey bird with crest","bark","Barks like a dog. Ghost bird.","bird,wetland"},
 	{"kaiju","AAFJBA","KDkeO",9,4,10,"1F2937","22D3EE","towering lizard with dorsal spikes, atomic glow","roar","Ruins skylines. Wonderful posture.","giant,kaiju,boss,danger"},
 	{"kaiju bird","AFFJDB","Akl",8,9,7,"7F1D1D","F97316","huge crested winged reptile","screech","Sonic boom on every flap.","kaiju,giant,flying"},
+	{"kaiju breath","AAFBPI","KkT",9,4,5,"7FE8FF","2B3A4A","a giant reptile head rises and sweeps a breath beam","roar","It was just a regular lizard. Once.","scifi,movie,monster"},
 	{"kaiju slime","AJFJGF","WHV",8,2,9,"DB2777","F9A8D4","slime the size of a stadium","squelch","Swallows a city block. Burps.","kaiju,slime,giant"},
 	{"kaiju spider","AJFJFA","kMH",8,5,8,"1C1917","DC2626","skyscraper-high spider","skitter","Webs between buildings.","kaiju,giant,spooky"},
 	{"kaiju turtle","AAFJAB","GKAk",9,4,10,"365314","F97316","colossal turtle spinning with jet flames","roar","Spins like a flaming frisbee.","kaiju,giant,danger"},
