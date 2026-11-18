@@ -145,6 +145,7 @@ return {
 	{"storm aura","FDCOKJ","GL",4,6,4,"FFEB3B","37474F","crackling arcs circling caster","buzz","Hug me. Get zapped.","electric"},
 	{"storm call","FDEEOJ","ILP",7,5,4,"37474F","FFE57F","dark clouds swirling in overhead on command","boom","The sky answers. Loudly.","electric,storm"},
 	{"storm chaser","LFCJNL","Dl",4,8,4,"475569","FACC15","truck with radar dish, windbreaker","howl","Drives into tornadoes. On purpose.","storm,vehicle"},
+	{"storm clap","KDCNNI","kIL",4,10,2,"FFE27A","5A7AE8","two hands clap a crackling shockwave cone","boom","Round of applause. Mostly sparks.","hero,movie,loud"},
 	{"storm cloud spirit","ADCJOJ","AeL",4,5,2,"475569","FDE047","angry cloud with lightning arms","thunder","Has a personal raincloud. Is the raincloud.","storm,silly"},
 	{"storm crow","ADBJDB","jAL",3,9,2,"1F2937","FDE047","black crow crackling with sparks","caw","Caws thunder.","storm,bird"},
 	{"storm dome","KDDIKI","GL",4,4,6,"37474F","FFEB3B","crackling dome laced with lightning","crack","A force field with a temper.","electric,defence"},

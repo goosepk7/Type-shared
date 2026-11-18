@@ -177,6 +177,7 @@ return {
 	{"frost prison","FCCA4I","JO",5,7,3,"BFEFFF","5FB8E8","a thin ice shell snaps shut around the target","crackle","Chill out in here for a second.","hero,movie,frozen"},
 	{"frost ring","FCDNOI","JSO",5,4,3,"B3E5FC","FFFFFF","circle of frost that freezes anything crossing","crackle","Cross the line. Become ice.","frozen"},
 	{"frost rune","FCBLII","JO",5,4,3,"80DEEA","FFFFFF","pale-blue rune that snaps into ice","crackle","Click. Frozen. Oops.","frozen"},
+	{"frost slide","KCDCpL","DgN",3,9,3,"BFEAFF","5AA8E0","a curving ice ramp you surf along at speed","whee","Built the road. Still sliding.","hero,movie,ice"},
 	{"frost sword","CCCHrK","JfN",7,6,4,"BFE8F5","F2F2EE","blade of glittering ice","shing","Chilling in every sense.","fantasy,frozen"},
 	{"frost titan","ACFJNA","JkN",9,2,9,"BAE6FD","1E3A8A","glacier-bodied giant with icicle crown","crack","Turns summer into winter.","elemental,giant,boss,frozen,danger"},
 	{"frost totem","KCCMmI","JeN",4,3,4,"4FC3F7","FFFFFF","ice-carved pole breathing frost","crackle","Cold pole. Bad vibes.","frozen"},

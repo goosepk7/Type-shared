@@ -105,6 +105,7 @@ return {
 	{"portal device","OLDL1I","jHY",5,3,5,"3A3F45","A66BDB","ring frame with swirling portal","hum","Where does it go? Find out!","scifi"},
 	{"portal gate","ELDNII","ShY",4,1,8,"7E57C2","40C4FF","stone ring with a swirling glowing centre","warp","Step in here. Pop out over there.","structure,magic"},
 	{"portal gun","CLBAwI","jeY",3,8,3,"F2F2EE","E67E22","white handheld device, glowing orb","zap","Thinking with holes.","scifi,ranged"},
+	{"portal ring","KLCOoI","Y",3,9,2,"FFB040","FF6A20","a sparking ring portal pair hops you forward","warp","Shortcut. Mind the sparks.","hero,movie,magic"},
 	{"portal tower","ELDMII","GShY",6,1,7,"4A148C","00E5FF","tower with a swirling portal at the top","chime","Summons from another dimension.","structure,magic,mythical,tower"},
 	{"portcullis","EKDCII","GSTO",5,1,9,"455A64","263238","iron grid gate with spiked bottom edge","clang","Drops with style. And spikes.","ancient,sharp"},
 	{"portrait","BICMnI","jQO",3,1,4,"7C4A1E","D4AF37","gold-framed stern painting whose eyes follow you","creak","The eyes follow you. So does the frame, now.","art,spooky"},
