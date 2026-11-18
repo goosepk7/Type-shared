@@ -401,6 +401,4 @@ return {
 	{"crescent diadem","BHCAJK","UTe",5,9,3,"F6C85C","FF96CE","a gold tiara spinning in a disc of moonlight","chime","In the name of the moon, it comes back.","anime,magical girl,boomerang"},
 	{"crescent moon","MHDHKK","fTe",5,6,5,"FFF59D","E0E0E0","thin glowing curved sliver","rumble","Sharp enough to slice the night.","space,magic"},
 	{"crescent slash","FHCHJB","Te",6,9,1,"E8EAF6","9FA8DA","flying silver crescent-moon blade","shing","A sliver of moon. Sharp side first.","space,sharp"},
-	{"crested gecko","AMBJAA","Cf",2,7,2,"E8A03A","F2D07A","eyelash crests, sticky toes","hiss","Has eyelashes. Licks its eyes.","reptile,pet"},
-	{"crested newt","AMAJCA","FMB",1,3,2,"3A3A2A","E8701E","newt with jagged crest","squelch","Wears a dragon crest in spring.","amphibian,wetland"},
 }

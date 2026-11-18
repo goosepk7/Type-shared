@@ -158,6 +158,7 @@ return {
 	{"petrify","KECAKB","eNO",6,6,2,"9E9E9E","E0E0E0","grey creeping stone wave over target","crackle","Hold still. Forever.","magic,heavy"},
 	{"petunia","NGBNMI","dFS",2,1,2,"AB47BC","FFFFFF","velvety trumpet blooms","rustle","Hangs in baskets, plotting.","plant,flower"},
 	{"phantom of the stage","AICJNA","jZc",5,6,4,"111827","F8FAFC","cape and half-mask","sing","Haunts theaters. Loves a dramatic chord.","ghost,music"},
+	{"phantom possession","KICAVJ","jeN",5,7,3,"D6DEFF","AA82FF","a hooded phantom that dives into a foe and jerks them","moan","For a moment, everyone was a little less themselves.","monster,folklore,spooky,ghost"},
 	{"phantom rush","KLCHVJ","kfN",7,9,2,"4FD8C4","F2C75C","a spectral fighter bursts out and unloads a storm of fists","punch","Fists. So many fists.","anime,stand,punch"},
 	{"pharaoh","LHCJNA","GOh",6,3,6,"1E3A8A","CA8A04","striped headdress, crook and flail","horn","Owns several pyramids. Humble about it.","royal,ancient"},
 	{"pharaoh mummy","AIDJNA","ieNh",7,3,7,"CA8A04","1E3A8A","golden death mask, striped headdress, bandages","groan","Woke up from a 3000-year nap. Still tired.","undead,royal,ancient,spooky"},

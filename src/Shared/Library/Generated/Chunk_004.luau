@@ -67,6 +67,7 @@ return {
 	{"brontosaurus","AMFJAA","kIO",8,2,9,"8A7A6A","C8B8A0","huge long neck and whip tail","rumble","Back from scientific retirement.","dinosaur,extinct,reptile,heavy"},
 	{"bronze","FKBIKI","G",3,3,7,"A86E35","D9A36A","round bronze disc barrier","clang","Third place, first in defence.","ancient"},
 	{"brooch","BMAOKJ","G",1,5,3,"C9CED4","1F4FB5","ornate jewelled pin","chime","Fancy pin, fancy protection.","treasure,shiny"},
+	{"broom dash","KFCHHB","DAl",4,9,2,"6A4E34","78FF82","a gnarled broom swooping low in green sparks","whoosh","No license required. Probably.","monster,folklore,witch,mobility"},
 	{"broomstick","DLBKHB","DdAg",4,8,2,"8D6E63","FFB300","long handle, straw bristles, sparkles","whoosh","Sweeps the floor. And the competition.","vehicle,magic,mythical"},
 	{"broth","IBBOGI","FS",3,4,3,"D9A04A","F2D08A","steaming cup of golden broth","slurp","Liquid comfort.","edible,warm,healthy"},
 	{"brother","LMCJNA","Df",3,6,4,"1D4ED8","F97316","backwards cap, skateboard","ding","Noogies on sight.","family"},

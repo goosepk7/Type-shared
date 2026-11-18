@@ -320,6 +320,7 @@ return {
 	{"gargoyle","AECJNB","GAfO",5,6,8,"57534E","9CA3AF","stone winged statue, horns, crouched","crack","Stone by day, party by night.","mythical,guardian"},
 	{"gargoyle lord","AEDJNB","GAh",7,5,8,"44403C","22D3EE","large horned stone gargoyle with glowing runes","crack","Commands every rooftop in town.","guardian,boss"},
 	{"gargoyle pup","AEAJNB","GA",2,6,5,"78716C","A8A29E","tiny stone gargoyle","crack","Heavy for its size.","guardian,cute"},
+	{"gargoyle sentry","AEDJII","GAf",6,5,7,"807E7A","FFAA3C","a stone gargoyle on a pillar that swoops at foes","screech","It has been watching you since before you arrived.","monster,folklore,stone,sentry"},
 	{"garibaldi","ABAJEC","dB",1,6,1,"E8701E","F2B02A","bright orange damselfish","splash","So orange it glows.","fish,aquatic"},
 	{"garland","BGBLCB","FcN",2,4,2,"F472B6","22C55E","loop of bright flowers flung like a lasso","flutter","Aloha. You are now decorated. And stuck.","flower,party"},
 	{"garlic","IJBDOJ","jSMI",3,3,2,"F2EEE0","C8B8A0","plump bulb, pointed top, papery","whiff","Vampires hate this one simple trick.","edible,smelly,anti-undead,vegetable"},

@@ -401,6 +401,5 @@ return {
 	{"wilderness","MGFNII","ZSh",4,1,8,"33691E","8D6E63","untamed forest, rivers and rocks","crowd","No roads. No rules.","place"},
 	{"wildfire","HAENOI","KSP",8,6,4,"D84315","FFB74D","spreading line of tall flames, smoke wall","roar","Spreads faster than you can run.","natural,fire"},
 	{"wildflame","FADFOB","KkP",6,7,2,"E85D04","FAA307","ragged flame wave, uneven leaping tongues","roar","Fire that skipped obedience school.","fire"},
-	{"will-o-the-wisp","ALAJKJ","jAZc",2,7,1,"67E8F9","A5F3FC","floating blue flame orb","chime","Follow the light. Bad idea. Fun idea.","spooky,magic"},
 	{"willow tree","NGECMI","GWkSHN",4,1,7,"6D4C41","9CCC65","drooping curtain of long thin branches","rustle","Sad tree. Sad for you.","plant,tree"},
 }
