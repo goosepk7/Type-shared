@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"laser tag gun","CHBBwI","de",1,9,2,"39FF14","24262A","chunky light gun with sensor","thwip","Pew! You're tagged!","toy,silly"},
+	{"laser tower","EHDBII","GKTe",6,1,7,"ECEFF1","FF1744","sleek white spire with red lens","hum","Pew. Continuous pew.","structure,defense,tower,future"},
+	{"laser turret","OHDMwI","KTe",6,8,6,"F2F2EE","FF2D2D","swivel dome with red lens","hum","Tracks. Locks. Pew.","scifi,defense"},
 	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
 	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
 	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
@@ -400,7 +403,4 @@ return {
 	{"lurker","LICJNI","jZ",3,5,3,"52525B","F8FAFC","eyes peeking from behind a wall","whisper","Was here the whole time.","meme,stealth"},
 	{"lute","BMBFJI","jF",2,5,2,"C49A6C","8B5A2B","pear-shaped stringed instrument","strum","The bard is here. Run.","music,medieval"},
 	{"lutin","ALAJNA","jZb",1,8,1,"65A30D","FACC15","tiny prankster in pointed cap","giggle","Braids horse manes at night. Why? Nobody knows.","fairy,silly"},
-	{"luxury","KHCO0E","GFc",3,3,5,"D4AF37","7F1D4E","gold velvet chaise with grapes, a fan and a tiny dog","chime","Only the finest. Pinky out.","fancy,royal"},
-	{"lychee","IGAAKF","Fke",3,6,2,"D44A55","F7F2EA","small bumpy red shell, pearl inside","splat","Bumpy shell, pearl inside.","edible,fruit,sweet"},
-	{"lynx","ACCJAA","JZfT",4,7,3,"B39A7A","3A2E22","tufted ears, cheek ruff, stubby tail, big paws","hiss","Ear tufts are 90% of its personality.","mammal,predator,wild,arctic"},
 }

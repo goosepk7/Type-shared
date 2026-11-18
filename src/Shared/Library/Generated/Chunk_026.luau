@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sweet onion","IJBDOJ","jS",2,5,1,"F2E8C8","C8A070","flat golden onion","puff","Sweet onion, still makes you cry.","edible,vegetable"},
+	{"sweet pea","NGBNMI","dFSc",2,1,2,"F48FB1","B39DDB","frilly blooms on curly tendrils","rustle","Sweet name. Sweeter smell.","plant,flower"},
+	{"sweet potato","IEBAKK","keO",3,7,6,"C2622B","F2A35A","long tapered orange-skinned tuber","bonk","The potato that went sweet.","edible,vegetable"},
+	{"sweetgum","NGDCMI","GWkST",3,1,7,"6D4C41","E64A19","star leaves and spiky seed balls","rustle","Drops spiky gumballs. Ouch underfoot.","plant,tree"},
+	{"sweetheart","LHBJNA","jFc",2,5,3,"FB7185","FECDD3","blushing figure with heart eyes and a love letter","aww","Wrote your name in a heart. On everything.","cute,silly"},
+	{"swell shark","ABBJEC","DWfTB",3,8,6,"B8A07A","6A4A2A","shark that inflates","chomp","Gulps water to puff up.","fish,aquatic,ocean,predator"},
 	{"swift","AMAJDB","dA",1,10,1,"3A3430","6A6460","crescent wings","tweet","Sleeps while flying. Legend.","bird,cute"},
 	{"swift fox","AMBJAA","jfb",3,9,2,"C8A07A","F2E8D8","small fast fox","yip","Swift by name. Swift by nature.","mammal,wild"},
 	{"swim","KBBOKC","DB",2,6,2,"4FC3F7","E1F5FE","caster in a swirling water bubble","splash","Glub glub, coming through.","aquatic"},
@@ -179,6 +185,7 @@ return {
 	{"tennis court","MMCNII","Sa",2,1,6,"43A047","FFEB3B","net across painted lines","crowd","Back and forth. Back and forth.","place,sport"},
 	{"tennis player","LMCJNA","ea",4,7,3,"F8FAFC","FACC15","white outfit, racket, sweatband","pong","Returns every shot. Including yours.","sport"},
 	{"tennis racket","BMBHJK","kfa",2,7,4,"F2F2EE","8BC34A","oval stringed racket","bonk","Returns to sender, with topspin.","sport"},
+	{"tennis serve","BDBA3B","Uke",4,10,2,"C8F03A","F7F7F2","fuzzy lime ball that ricochets foe to foe","thwock","Fifteen love.","sport,tennis,projectile"},
 	{"tenontosaurus","AMDJAA","dk",5,5,6,"8A6A3A","D8B07A","very long tail plant eater","honk","Long tail. Raptors' favorite snack.","dinosaur,extinct,reptile"},
 	{"tenrec","AMBJAA","CfT",2,5,3,"1E1E1E","F2D82A","spiky black-yellow hedgehog thing","squeak","Spiky, stripy, and squeaky.","mammal,wild"},
 	{"tent","EMBCII","GFS",1,1,2,"FF7043","4CAF50","triangle nylon tent with poles","thud","Roughing it, cosily.","structure,building,silly"},
@@ -396,11 +403,4 @@ return {
 	{"tokoloshe","AIAJNA","jZb",2,7,2,"57534E","22C55E","tiny hairy mischief maker","cackle","Hides under beds. Why everyone uses bricks.","spooky"},
 	{"toll booth","EMBCII","GSN",1,1,6,"FFB300","1A1A1A","small booth with a barrier arm","thud","Pay up or turn around.","structure,building,silly"},
 	{"tom kha","IBBOGI","FS",3,4,3,"F2E8C8","E8A040","coconut soup with lime leaves","slurp","Creamy coconut soup, gently spicy.","edible,warm,healthy"},
-	{"tom yum","IABOGI","KF",3,4,3,"E8602B","C8302B","red spicy sour soup","slurp","Spicy, sour, and sinus-clearing.","edible,warm,healthy"},
-	{"tomahawk","CKBAsK","feV",4,8,3,"8A929B","8B5A2B","light throwing axe","chop","Thrown end over end.","medieval,sharp"},
-	{"tomato","IMBGKF","Eke",3,4,3,"E5302B","3E8E2B","round red globe, green star cap","splat","The classic heckling projectile.","edible,fruit"},
-	{"tomato frog","AMAJAG","UMe",1,5,1,"E8401E","F2803A","round red frog","croak","Looks like a tomato. Tastes awful.","amphibian,wetland"},
-	{"tomato juice","IBBOKI","F",2,6,2,"C8202B","E8434F","glass of thick red juice","slurp","Thick and savory.","edible,drink"},
-	{"tomato plant","NGBMMI","dSe",2,1,2,"2E7D32","E53935","staked vine hung with red fruit","rustle","Throws tomatoes. Rotten ones.","plant,crop"},
-	{"tomato soup","IBBOGI","FS",3,4,3,"D8302B","F2E8C8","smooth red soup bowl","slurp","Red, warm, and perfect with grilled cheese.","edible,warm,healthy"},
 }

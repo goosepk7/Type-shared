@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"green tomato","IGBAKK","keO",3,7,6,"8DB84A","C8E08A","hard unripe tomato","bonk","A tomato that isn't ready yet.","edible"},
 	{"greengage","IGAAKF","Fke",3,6,2,"A8C86B","E8F2B0","small round green plum","splat","A tiny green plum.","edible,fruit,sweet"},
 	{"greenhouse","EGCNII","WFS",2,1,3,"B2EBF2","66BB6A","glass building full of plants","thud","Grows things. Fast.","structure,building,plant"},
 	{"greenland shark","ACDJEC","DfTB",7,1,6,"5A5E64","9AA0A6","slow chunky grey shark","chomp","Lives 400 years. Never hurries.","fish,aquatic,ocean,predator,arctic"},
@@ -129,6 +130,7 @@ return {
 	{"hagfish","ABAJCC","dSNB",1,6,1,"D8A0A0","F2D0C8","pink eel blob","splash","Makes buckets of slime. On purpose.","fish,aquatic,silly"},
 	{"haggis","IMBGKF","DkI",3,5,6,"8A5A3A","5A3A2A","round stuffed sausage ball","rumble","Scotland's mysterious round dinner.","edible,heavy"},
 	{"hail","GCCEOB","keO",5,7,3,"DCEBF5","9CBBD0","bouncing ice balls from grey cloud","rattle","Ice cubes, delivered angrily.","frozen,storm"},
+	{"hail mary","BECN3K","Eke",6,5,2,"7A3E1E","F4F1EA","laced leather spiral lobbed half a field away","boom","Throw it up and pray.","sport,gridiron,artillery"},
 	{"hailstorm","GCDEOB","kNPO",7,6,4,"C3D8E6","7FA4BD","dark cloud pelting big ice chunks","rattle","Free ice. Applied at speed.","frozen,storm"},
 	{"hainanese chicken rice","IGBOKI","F",2,5,3,"F2E8C8","7DBE3A","poached chicken, fragrant rice","crunch","Simple, silky, perfect.","edible,healthy"},
 	{"hair","BMCLGD","WHN",3,3,3,"6B4423","A0723D","living mop of long brown hair, no face","swish","Bad hair day. For you.","body,silly"},
@@ -216,6 +218,7 @@ return {
 	{"hashtag","KDBAJK","TeP",3,8,2,"38BDF8","FFFFFF","big blue # spinning like a four-point throwing star","ding","#Blessed. #Hit. #Ouch.","meme,internet"},
 	{"haste","KFBOKB","D",2,10,2,"FFEB3B","FFFFFF","yellow speed lines around caster","zip","Gotta go fast.","speed"},
 	{"hat","BMBONI","d",1,6,1,"7A4E2D","24262A","simple brimmed hat","swish","Hat. Classic.","clothing"},
+	{"hat trick","BMBA3K","keV",5,8,2,"F2F2EE","3FA34D","three panelled balls kicked in a quick volley","thump","One. Two. Three. Hats off.","sport,soccer,projectile"},
 	{"hatchet","CKBHsK","fV",3,7,4,"8A929B","8B5A2B","small one-hand axe","chop","Little axe, big attitude.","medieval,sharp"},
 	{"hatchetfish","AHAJEC","dB",1,6,1,"B8C8D8","E8F0F8","silver hatchet-shaped glowing belly","splash","Shaped like a tiny axe. Glows.","fish,aquatic"},
 	{"hate","KICDOJ","jiNP",5,5,1,"7F1D1D","1F2937","seething dark red scribble cloud with angry eyebrows","growl","Haters gonna hate. This one floats, too.","mood,spooky"},
@@ -400,7 +403,4 @@ return {
 	{"hoecake","IMBAKK","Uke",3,7,2,"E8B84A","F2D88A","thin cornmeal griddle cake","whoosh","A flat corn cake from the griddle.","edible"},
 	{"hog badger","AMBJAA","CfT",3,8,2,"C8B8A8","3A3A3A","badger with pig snout","chatter","Half badger, half piggy nose.","mammal,predator"},
 	{"hoglet","AMAJAA","CfT",1,5,3,"B8A08A","F2E6D8","tiny pale spiky ball","squeak","Soft spikes. Will harden.","mammal,wild"},
-	{"hognose snake","AMBJCD","jfN",2,6,3,"B8986A","6A4A2A","upturned snout","hiss","Plays dead dramatically. Oscar worthy.","reptile,venomous,silly"},
-	{"hoisin","IMBLGI","SNP",2,3,3,"5A1E1E","8A3020","thick dark sweet sauce","gloop","Sweet, sticky, and dark.","edible,sticky,sauce"},
-	{"hole punch","BMALJK","T",1,4,4,"8E9196","24262A","two-hole office punch","tap","Ka-chunk. Holes.","office"},
 }

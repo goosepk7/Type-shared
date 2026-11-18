@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"velvet ant","AJAJLA","fTMP",2,7,1,"E8301E","1E1E1E","fuzzy red wingless wasp","buzz","Fuzzy and painful.","insect,swarm,venomous"},
+	{"velvet worm","AMAJTA","CeNP",1,3,1,"6A3A2A","A8705A","soft many-legged caterpillar","squelch","Shoots slime nets. Velvety menace.","bug"},
+	{"vending machine","OMDN1I","EFc",5,3,6,"2F6FD1","F2F2EE","a vending machine crashes down and drops sodas","thud","Free drinks. Heavy delivery.","silly,modern,heal"},
+	{"vengeance","KICIKI","ka",6,6,4,"B71C1C","311B92","red-black aura that strikes back","hiss","You hit me. I hit back. Harder.","rage"},
+	{"venom","FJBAKB","TMe",5,7,1,"8BD43A","3B1F4F","dripping green fang-shaped glob","hiss","Spit happens.","toxic"},
+	{"venom blade","FJCHrB","fTM",5,8,2,"76FF03","33691E","dripping green energy blade","hiss","One cut. Lingering regret.","toxic,sharp"},
+	{"venom bloom","NJBLMI","SMP",4,1,2,"76FF03","4A148C","neon green petals dripping toxin","chime","Pretty colours mean danger. Always.","plant,magic,mythical"},
 	{"venom bolt","FJBAKB","Me",4,8,1,"76FF03","1B5E20","dripping green dart with bubbles","hiss","Nasty, sticky and green.","toxic"},
 	{"venom dagger","CJBHrK","fTM",4,9,2,"8BC34A","3A3F45","green-dripping dagger","shing","One cut. Lots of regret.","fantasy,sharp"},
 	{"venom spike","FJCLII","TM",5,5,3,"76FF03","33691E","dripping green spikes from ground","crack","Pointy and poisonous. Double nope.","toxic,sharp"},
@@ -396,11 +403,4 @@ return {
 	{"wind machine","OFDF1I","klI",5,5,6,"8E9196","F2F2EE","massive caged industrial fan","whoosh","Flings foes off their feet.","defense"},
 	{"wind monk","LFCJNB","AlI",5,9,4,"FACC15","E0F2FE","monk gliding on a gust of wind","whoosh","Floats. Pushes. Smiles.","martial,wind"},
 	{"wind orb","FFCGKK","RI",4,6,2,"B3E5FC","FFFFFF","swirling ball of streaking air","whoosh","A breeze in a bubble.","air"},
-	{"wind prison","FFCL5K","lO",5,5,3,"B3E5FC","FFFFFF","spinning wind bubble holding target aloft","howl","Spin in place. Forever.","air"},
-	{"wind ring","FFDN5K","GSI",4,6,3,"B3E5FC","FFFFFF","spinning ring of wind around the area","howl","Nothing gets in. Nothing gets out.","air"},
-	{"wind shield","FFCIKK","GIa",3,6,4,"E1F5FE","FFFFFF","spinning dome of streaking wind","whoosh","Arrows go whoosh, then away.","air,defence"},
-	{"wind spear","FFCAuB","kTe",5,9,1,"B3E5FC","FFFFFF","nearly invisible spiralling air spear","whistle","You won't see it. You'll feel it.","air,sharp"},
-	{"wind spiral","FFCAKB","lTe",5,8,1,"B3E5FC","FFFFFF","drill-shaped spinning air bolt","whistle","Drills through. Spins you up.","air"},
-	{"wind sprite","AFAJNB","jAI",2,10,1,"E0F2FE","A5F3FC","nearly-invisible swirl with wings","whoosh","Steals hats. Steals breath.","fairy,wind"},
-	{"wind tower","EFDMII","GkSIeN",4,1,6,"ECEFF1","80DEEA","tower topped with a giant spinning fan","whoosh","Blows enemies back where they came from.","structure,defense,tower"},
 }

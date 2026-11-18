@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cricket ball","BMAA3F","ke",2,9,5,"9E1B32","F2F2EE","hard red stitched ball","bonk","Very red. Very hard.","sport"},
 	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
 	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
@@ -402,5 +403,4 @@ return {
 	{"djembe","BMBFJI","O",2,5,3,"8B5A2B","D2B48C","goblet-shaped hand drum","boom","Pa-tum-pa-tum!","music"},
 	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},
 	{"djinn king","ALEJNJ","klhY",8,6,6,"1E3A8A","FACC15","towering genie with jeweled turban","whoosh","Wishes granted. With terms and conditions.","magic,royal,boss"},
-	{"dna","BGBOCK","jWFV",4,5,3,"3B82F6","EF4444","twisting blue and red ladder spiral, rungs glowing","hum","You have your mother's eyes. And her right hook.","science"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cargo helicopter","DFEKHE","AlHg",5,5,7,"556B2F","37474F","long fuselage with two big rotors","chop","Picks up tanks. And you.","vehicle,air"},
 	{"cargo plane","DFFKHB","DAklgh",6,6,8,"607D8B","37474F","fat body, high wings, rear ramp","jet","Drops crates. Some of them land on you.","vehicle,air"},
 	{"cargo ship","DBFKHC","GDkgB",7,2,10,"C62828","1E88E5","long hull stacked with coloured crates","horn","Delivers twenty thousand crates of pain.","vehicle,aquatic"},
 	{"caribbean","MBFNII","FSh",4,1,8,"26C6DA","F4E4BC","clear turquoise water and palm islands","rumble","Pirates welcome. Obviously.","place,geography,pirate"},
@@ -189,7 +190,7 @@ return {
 	{"cheddar","IMBLKI","dSc",2,3,3,"F2A62B","F2C24A","orange block with crumbly edge","chomp","Sharp, orange, irresistible.","edible,sweet,dairy"},
 	{"cheek","BMBIGG","GUc",2,3,4,"F6B8A8","F28B82","two round rosy cheeks, pinch marks","squish","Pinched by aunts since forever.","body,cute,silly"},
 	{"cheer","KHBOKJ","DF",2,6,2,"FFEB3B","FF4081","pom-pom sparkle burst","yay","Go team! You can do it!","support"},
-	{"cheer squad","LMDJLG","FOh",5,6,4,"DC2626","F8FAFC","pyramid of cheerleaders","chime","Gimme a W-I-N!","sport,swarm"},
+	{"cheer squad","BHCJIE","GQh",3,6,4,"FF5A8A","FFD23F","stacked pyramid of fluffy pom-poms with a megaphone","cheer","Give me a W!","sport,cheer,summon"},
 	{"cheerleader","LMCJNG","FOh",3,7,3,"DC2626","F8FAFC","pom-poms, ponytail, megaphone","chime","Gives allies hype. So much hype.","sport"},
 	{"cheerleading","LHCJNA","UFOh",3,7,3,"DC2626","FACC15","pyramid of three with pom-poms and a megaphone","yay","Give me a W! Give me an I! Give me an N!","sport,support"},
 	{"cheese","IMBLKI","dSc",2,3,3,"F2C24A","E8A82B","wedge with holes","chomp","Mice, goblins, and gnomes all come running.","edible,sweet,dairy"},
@@ -402,5 +403,4 @@ return {
 	{"cleaner wrasse","ABAJEC","dFB",1,6,1,"3A6AE8","1E1E1E","small striped cleaner fish","splash","Runs a spa for sharks.","fish,aquatic"},
 	{"cleaning robot","OKBJNF","dIN",2,4,4,"F8FAFC","0EA5E9","small robot with mop and bucket","whir","Wet floor. Your fault.","robot,silly"},
 	{"cleanse","KHBOKJ","F",1,6,2,"E0F7FA","FFFFFF","clean sparkly wave over ally","chime","Removes all the gross stuff.","support"},
-	{"clearing","MGDNII","FSc",4,1,5,"A3E635","FDE68A","sunlit grassy circle ringed by trees, butterflies","tweet","Suspiciously peaceful. Boss fight peaceful.","place,forest"},
 }

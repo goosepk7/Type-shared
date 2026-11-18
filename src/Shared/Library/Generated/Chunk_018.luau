@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"new potatoes","IMAELB","eVP",2,7,1,"E8D0A0","F2E8C0","tiny round potatoes","pitter","Tiny round spuds.","edible"},
+	{"new year","KHDNII","EFPO",5,5,2,"FACC15","111827","glitter ball dropping, clock at midnight, fireworks","boom","Ten! Nine! Eight! Resolutions: broken by two.","holiday,party,explosive"},
+	{"newfoundland","AMDJAA","DQFfB",5,7,4,"1C1A18","3A3633","huge black shaggy dog, webbed feet","bark","Lifeguard dog. Drools as a hobby.","mammal,pet"},
 	{"news","KDCF6B","jdPO",3,8,1,"DC2626","F8FAFC","red BREAKING banner scrolling with a spinning globe","fanfare","This just in: you. Getting hit. More at ten.","meme"},
 	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
 	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
@@ -400,7 +403,4 @@ return {
 	{"parrot","AMBJDB","jdA",2,6,2,"2AB04A","E8301E","bright green-red bird, curved beak","squawk","Repeats everything you say. Everything.","bird,jungle,silly"},
 	{"parrotfish","ABBJEC","dPB",2,6,1,"3AB0A0","E86AA0","beaked colorful fish","splash","Poops sand. That's how beaches happen.","fish,aquatic"},
 	{"parsley","IGBOMI","WF",2,4,3,"3E8E2B","7DBE3A","frilly green sprig","crunch","The garnish nobody eats.","edible,vegetable,healthy,herb"},
-	{"parsnip","IEBAJK","FTe",3,6,4,"F2E8C8","C8B88A","pale tapered root","crunch","A ghost carrot.","edible,vegetable,healthy"},
-	{"part the sea","HBFCnI","GI",7,3,9,"0277BD","E1F5FE","two towering walls of water with a dry path","roar","Make way! Walk right through.","aquatic"},
-	{"parthenon","EHFCII","GFkS",5,1,10,"F5F5F5","E6D3A3","marble temple ringed by columns","rumble","Ancient Greek columns of justice.","structure,landmark,ancient"},
 }

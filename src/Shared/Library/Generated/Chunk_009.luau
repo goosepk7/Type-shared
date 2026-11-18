@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"envy","KJBAKB","ib",3,6,1,"76FF03","1B5E20","green-eyed wisp","hiss","I want that. Mine now.","silly"},
 	{"eoraptor","AMBJBA","DQfT",3,9,3,"8A7A5A","D8C8A8","early small dinosaur","screech","Dawn thief. One of the first dinos.","dinosaur,extinct,reptile,predator,ancient"},
 	{"epaulette shark","ABBJEA","DfTB",2,8,6,"C8B08A","3A2A1E","small shark walking on fins","chomp","A shark that walks. On land. Briefly.","fish,aquatic,ocean,predator"},
 	{"epee","CKCHrK","fT",4,8,3,"C9CED4","24262A","stiff thin blade, bell guard","shing","Fencing with extra French.","medieval,sharp"},
@@ -402,5 +403,4 @@ return {
 	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
 	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
-	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
 }

@@ -377,6 +377,7 @@ return {
 	{"bowling alley trap","OKCMxI","keO",5,4,6,"1F2F55","8B5A2B","ramp that rolls bowling balls","clank","STRIKE!","defense,silly,sport"},
 	{"bowling ball","BMCG3F","DkeO",5,6,8,"1F2F55","7D3CB5","heavy glossy ball with three holes","bonk","Strike! Everyone down.","sport"},
 	{"bowling pin","BMBAJK","keV",2,6,4,"F2F2EE","C0392B","white bottle-shaped pin, red stripes","bonk","Ten of them. All nervous.","sport"},
+	{"bowling strike","BECA3F","EkT",6,6,3,"2A1F5C","F4F1EA","heavy marbled ball rolling into a rack of pins","rumble","Ten down. Nobody standing.","sport,bowling,projectile"},
 	{"box","BMBL2I","ZO",1,1,2,"C69C6D","7A4E2D","taped cardboard box","thud","Hide inside. Totally invisible.","container"},
 	{"box jellyfish","ABBJGJ","ZSMOB",5,2,1,"B8E0F0","E8F8FF","transparent cube bell, long tentacles","squelch","Clear, square, extremely stingy.","aquatic,ocean,venomous"},
 	{"box of donuts","IMCJII","Gdc",5,1,6,"F2A6C8","D9A04A","box with twelve donuts","thud","The best box in any office.","edible,giant,silly"},
@@ -402,5 +403,4 @@ return {
 	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
 	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
 	{"brain freeze","ICBAKJ","jJO",3,5,2,"A6D8F2","F7F7F2","frosty swirl around head","squish","Ow ow ow. Cold.","edible,frozen"},
-	{"brainstorm","KDCDOJ","jL",5,6,2,"E040FB","FFEB3B","little cloud raining lightbulbs and sparks","crack","A storm of ideas. Some hurt.","psychic,electric,silly"},
 }

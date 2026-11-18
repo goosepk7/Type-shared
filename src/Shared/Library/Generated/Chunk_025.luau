@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stack of pancakes","IMCCII","GFc",4,2,5,"E8B860","B5651D","tall stack, butter, syrup flow","thud","A tower of fluff. Topple it on foes.","edible,giant,breakfast"},
+	{"stadium","MEFNII","dSh",3,1,9,"43A047","F5F5F5","oval stands around a bright pitch","crowd","The crowd goes wild. Literally.","place,terrain,sport"},
+	{"staff","BLCAzI","feh",5,5,4,"5A3A1E","8E5CC2","tall gnarled staff with glowing orb","chime","You shall not pass.","magic,fantasy"},
+	{"stag beetle","AMBJFA","Gkf",2,3,4,"3A1E14","8A4A2A","huge antler-like jaws","click","Wears antlers on its face.","insect,armored"},
+	{"stagger","KMCFOB","kO",4,8,1,"FFCC80","FFFFFF","wobbling impact ring","thud","Wobble. Wobble. Down.","melee"},
 	{"staghorn coral","ABCCMI","GWT",3,1,6,"E8A07A","F2D8C0","branching antler coral","crackle","Antlers, but underwater and pointy.","aquatic,ocean,reef"},
 	{"staghorn fern","NGBNMI","ST",1,1,3,"7CB342","9CCC65","antler-shaped fronds on a tree","rustle","Antlers made of leaves.","plant"},
 	{"stain","KMBNGI","dSN",2,1,5,"B91C1C","8B5A2B","stubborn red-brown blot on a white shirt","splat","It will not come out. Ever. Wear it proudly.","household,silly"},
@@ -301,6 +306,7 @@ return {
 	{"summon","KLCJNA","h",4,5,3,"7C4DFF","FFD54F","glowing summoning circle with a figure rising","warp","Who did you call? Something big.","magic"},
 	{"summoner","LLCJNA","ehY",5,4,3,"6D28D9","F0ABFC","robes with summoning circle sigils","zap","Doesn't fight. Has friends who do.","magic"},
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
+	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
@@ -397,10 +403,4 @@ return {
 	{"sweet cherry","IGAELB","eVP",2,7,1,"7A0A1E","B0101E","dark red double cherry","pitter","Dark, sweet, and juicy.","edible,fruit,sweet"},
 	{"sweet chili sauce","IABAKK","KN",3,7,2,"E8402B","F2A62B","glossy red sauce with flakes","sizzle","Sweet first. Heat later.","edible,spicy,flammable,sauce"},
 	{"sweet dreams","KHCDOJ","FSO",2,3,2,"B39DDB","FFF8E1","soft lavender cloud with moons and stars","hush","Sleep tight. Heal up.","cute,support"},
-	{"sweet onion","IJBDOJ","jS",2,5,1,"F2E8C8","C8A070","flat golden onion","puff","Sweet onion, still makes you cry.","edible,vegetable"},
-	{"sweet pea","NGBNMI","dFSc",2,1,2,"F48FB1","B39DDB","frilly blooms on curly tendrils","rustle","Sweet name. Sweeter smell.","plant,flower"},
-	{"sweet potato","IEBAKK","keO",3,7,6,"C2622B","F2A35A","long tapered orange-skinned tuber","bonk","The potato that went sweet.","edible,vegetable"},
-	{"sweetgum","NGDCMI","GWkST",3,1,7,"6D4C41","E64A19","star leaves and spiky seed balls","rustle","Drops spiky gumballs. Ouch underfoot.","plant,tree"},
-	{"sweetheart","LHBJNA","jFc",2,5,3,"FB7185","FECDD3","blushing figure with heart eyes and a love letter","aww","Wrote your name in a heart. On everything.","cute,silly"},
-	{"swell shark","ABBJEC","DWfTB",3,8,6,"B8A07A","6A4A2A","shark that inflates","chomp","Gulps water to puff up.","fish,aquatic,ocean,predator"},
 }
