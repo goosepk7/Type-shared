@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snow day","GCCNOI","dFN",2,3,3,"FFFFFF","B3E5FC","snowy playground glow","yay","No school. Snowball time.","frozen,silly"},
+	{"snow devil","GCCN5K","jJl",5,6,2,"FFFFFF","B3E5FC","small spinning snow funnel","whoosh","Frosty the twister.","frozen,storm"},
+	{"snow elemental","ACDJOK","JNP",6,5,5,"F8FAFC","BAE6FD","whirling snow storm with icy eyes","howl","A snow day that fights back.","elemental,frozen"},
+	{"snow fort","ECCCII","GSeN",3,1,4,"F5F5F5","90CAF9","low snow wall with a stack of snowballs","thud","Comes pre-loaded with snowballs.","silly,frozen"},
 	{"snow fortress","ECEMII","GJSe",4,1,6,"FFFFFF","B3E5FC","big fort of packed snow with towers","thud","Every tower full of snowballs.","structure,frozen"},
 	{"snow globe","BCBGKI","jJ",2,3,2,"BFE6F2","F2F2EE","glass dome with swirling snow","squeak","Shake it. Winter happens.","holiday"},
 	{"snow golem","ACCJNA","GJe",4,3,4,"F8FAFC","F97316","snowman with carrot nose throwing snowballs","crunch","Melts in summer. Fights in winter.","frozen,construct,holiday"},
@@ -399,8 +403,4 @@ return {
 	{"starfish","ABAJGA","GFNV",1,1,4,"E8701E","F2B07A","five-armed star, textured top","squelch","Regrows its arms. No big deal.","aquatic,ocean"},
 	{"starfruit","IGBAKK","TeV",3,7,2,"F2D33F","BDD34B","five-ridged star cross-section","whoosh","Fruit shaped like a ninja star.","edible,fruit"},
 	{"stargazer fish","ADAJEC","dZLB",1,6,1,"8A7A6A","F2F2EE","buried fish with eyes on top","splash","Buried, staring, electric.","fish,aquatic"},
-	{"starlight","FHBEOJ","Fe",3,6,1,"FFF8D6","B9C8FF","falling tiny twinkling stars","chime","Light from very far away. Very late.","space,cute"},
-	{"starling","AMAJDB","jdAPh",1,7,1,"2A2A3A","8AE0A0","glossy speckled bird in swirling flocks","tweet","Flocks dance like smoke.","bird,cute"},
-	{"starquake","HHFFOB","kPO",9,8,2,"FFF59D","82B1FF","blinding ring of star-shock","boom","A star shook. Everything felt it.","space,danger"},
-	{"starship cruiser","DLFMHB","EAegh",9,4,9,"B0BEC5","FF1744","colossal wedge hull bristling with guns","hum","Blocks out the stars. Opens fire.","vehicle,air,space,danger"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"touchdown","KECL3B","EkO",5,7,2,"92400E","FFFFFF","brown oval ball spiked into turf, arms raised","crowd","Spike it. Dance. Flag for excessive joy.","sport"},
+	{"tour bus","DMDKHL","Dkgh",4,5,7,"E53935","FFEB3B","open-top double decker for tourists","engine","And on your left: your defeat.","mechanical,vehicle,land"},
+	{"tour guide","LMCJNA","ch",3,5,4,"F97316","F8FAFC","tiny flag on a stick, megaphone","ding","Follow the flag. Everyone does.","silly"},
+	{"tourist","LMCJNA","dO",3,4,3,"0EA5E9","FACC15","hawaiian shirt, camera, sunburn","click","Flash photography. Everywhere.","silly"},
 	{"tow truck","DMDKHL","DklHg",5,6,8,"F5A623","333333","truck with hook crane on the back","engine","Your car looked lonely.","mechanical,vehicle,land"},
 	{"towel","BMBHJI","fO",1,7,1,"F2F2EE","47D7E8","rolled fluffy towel","splash","Towel snap! Ow.","bathroom,household"},
 	{"tower","EMDMII","GSe",4,1,8,"9E9E9E","5D5D5D","tall round stone tower, conical roof","thud","Tall. Strong. Sees you coming.","structure,defense,tower"},
@@ -399,8 +403,4 @@ return {
 	{"vine horror","AGDJMA","MHN",6,4,6,"14532D","84CC16","walking tangle of thorned vines","creak","Gardening's revenge.","plant,spooky"},
 	{"vine serpent","AGCJCD","WMH",5,5,4,"15803D","84CC16","snake made of braided thorny vines","rustle","Grows longer every second.","plant,reptile"},
 	{"vine snake","AGCJCD","ZfMN",4,6,3,"6AC84A","C8E87A","thin vine-like green snake","hiss","Basically a stick of spaghetti.","reptile,venomous"},
-	{"vine tower","EGDMII","GSfHeN",5,1,7,"2E7D32","6D4C41","tower wrapped in lashing vines","thud","Vines whip out and grab.","structure,defense,tower,plant"},
-	{"vine wall","EGDCII","GWFSN",3,1,6,"2E7D32","66BB6A","dense vines woven into a wall","thud","Grows thicker every second.","structure,defense,plant"},
-	{"vine whip","FGCHJB","fH",4,7,2,"388E3C","9CCC65","long green whipping vine","crack","Slapped by a plant. Embarrassing.","plant"},
-	{"vinegar","IJBAKF","jMe",3,6,2,"C8A070","F7F2E8","glass cruet of sour liquid","squirt","Sour enough to sting the eyes.","edible,fruit,sour,sauce"},
 }

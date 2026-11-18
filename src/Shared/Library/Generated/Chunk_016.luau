@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magazine","BMBAJK","deO",2,6,2,"F43F5E","FACC15","rolled-up glossy magazine swatting down","thwack","Rolled up. The ancient bug-swatting art.","household,silly"},
+	{"mage armor","KLCOKI","G",2,4,7,"7C4DFF","E1BEE7","translucent violet plates over caster","hum","Armour, but you can't drop it.","magic,defence"},
+	{"mage hand","KLBJVJ","dlb",2,6,2,"B39DDB","FFFFFF","floating glowing hand","shimmer","A hand that helps. Or slaps.","magic"},
 	{"mage spire","ELDMII","GSeL",6,1,7,"7E57C2","40C4FF","tall twisting spire crowned with a crystal","chime","Zaps anything that moves.","structure,magic,mythical,tower"},
 	{"mage tower","ELDMII","GSTeL",6,1,7,"7E57C2","FFD54F","spiral purple tower, crystal orb on top","zap","The orb sees all. The orb zaps all.","structure,defense,tower,magic"},
 	{"maggot","AMAJTD","CWP",1,3,1,"F2EEE0","E8D8C0","squishy white larva","squelch","Grows up to be a fly. Dreams big.","bug,spooky"},
@@ -400,7 +403,4 @@ return {
 	{"mirage legion","KICJNA","deV",4,7,2,"5A5F78","C3C8E8","shadowy copies of you that dart around and shoot","whoosh","Which one is real? Not that one.","anime,ninja"},
 	{"miranda","MECGKJ","ke",4,4,7,"BDBDBD","9E9E9E","patchwork moon with giant cliffs","twinkle","Looks stitched together. Still dangerous.","space,star"},
 	{"mirror array","OHDMmI","Kea",5,2,5,"C9CED4","D4A72C","cluster of angled mirrors","clank","Focuses sunlight into a beam.","defense,mechanical"},
-	{"mirror cabinet","BHBIyI","Fa",1,1,4,"F2F2EE","DDE3E8","wall box with mirror door","thud","Reflects and restores.","furniture,household"},
-	{"mirror ghost","AICJNJ","jaY",5,6,3,"E5E7EB","818CF8","figure trapped in a cracked mirror pane","whisper","Lives in the mirror. Mimics badly.","ghost,spooky"},
-	{"mirror knight","AHCJNA","Gfa",5,4,7,"E5E7EB","93C5FD","knight in polished mirror armor","clang","Your spell? Now it's mine.","warrior,holy"},
 }

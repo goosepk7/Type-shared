@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flower fairy","AGAJNB","AFc",1,8,1,"F472B6","A3E635","tiny fairy with petal wings","chime","Heals with pollen. Sneezes too.","fairy,plant,cute"},
+	{"flower field","MGENII","dFS",2,1,4,"F06292","8BC34A","carpet of colourful blooms","rumble","Smells amazing. Sneezes guaranteed.","plant,cute"},
 	{"flower pot","BEBA2K","eV",1,5,2,"B5653C","2E8B57","terracotta pot","clank","Falls off windowsills dramatically.","tool"},
 	{"flower shield","NGCIMI","GFSa",3,1,4,"F06292","FFEB3B","spinning dome of petals","rustle","Petals swirl. Arrows bounce.","plant,flower"},
 	{"flower shop","EMCNII","dFSc",2,1,4,"F06292","43A047","buckets of flowers out front","ding","Smells lovely. Heals a bit.","structure,building,shop,plant"},
@@ -401,6 +403,4 @@ return {
 	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
 	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
 	{"ghost veil","KLBOKI","Z",2,6,3,"CFE8F2","7A8FA6","caster fades to a faint shimmering outline","whoosh","Now you mostly don't see me.","magic"},
-	{"ghoul","AICJNA","ifM",4,6,4,"57534E","84CC16","hunched pale creature, long claws","growl","Lurks in graveyards eating snacks it shouldn't.","undead,spooky"},
-	{"ghoul king","AIDJNA","ifh",7,5,6,"365314","57534E","crowned ghoul, bone cape","growl","Leader of the graveyard snack club.","undead,royal,spooky"},
 }

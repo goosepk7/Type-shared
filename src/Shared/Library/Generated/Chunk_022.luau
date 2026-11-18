@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rug","BMCLGI","NO",1,1,3,"9E1B32","D4A72C","patterned rectangular rug","thud","Pull it out from under them.","furniture,household"},
+	{"rugby","KEDFLA","DkfI",6,6,6,"15803D","FFFFFF","eight muddy players locked together shoving forward","grunt","No pads. No helmet. No worries.","sport"},
+	{"rugby ball","BMBA3F","Uke",2,8,4,"F2F2EE","7A4E2D","chunky oval ball","bonk","Tackle optional. Bonk mandatory.","sport"},
+	{"rugby player","LMCJNA","GDk",5,7,6,"15803D","F8FAFC","muddy jersey, scrum pose","thud","Tackles first. Asks never.","sport"},
 	{"rugelach","IMBLKI","dSc",2,3,3,"D9A04A","5A2E16","crescent rolled pastry","chomp","Crescent swirls of sweet.","edible,sweet"},
 	{"rugops","AMDJBA","DkfT",6,6,7,"8A6A4A","D8A07A","wrinkly-faced theropod","roar","Wrinkly face. Scavenger vibes.","dinosaur,extinct,reptile,predator"},
 	{"rule","KHBCnI","GNO",3,1,6,"1E3A8A","FFFFFF","long scroll of numbered rules with a wagging finger","whistle","Rule one: no fun. Rule two: see rule one.","school"},
@@ -399,8 +403,4 @@ return {
 	{"shadow pillar","FIDBKI","iO",7,6,1,"1A0033","AA00FF","black column with violet sparks","hum","Darkness, straight down.","spooky"},
 	{"shadow prison","KICLII","iO",6,4,5,"1A0033","7C4DFF","cage of writhing black smoke","hiss","Dark corner. Forever.","spooky"},
 	{"shadow punch","KICAKB","ikf",6,9,2,"1A0033","9C27B0","smoky black fist from nowhere","pow","Didn't see it. Felt it.","spooky,melee"},
-	{"shadow puppet","FIBJVA","jd",2,5,1,"212121","FFE082","shadow-animal shape on the ground that moves","hiss","A shadow dog. It barks. Kind of.","spooky,silly"},
-	{"shadow rain","GIDEOJ","iZP",6,5,2,"1A0033","7E57C2","black droplets that fade into smoke","hiss","The gloomiest weather possible.","spooky,storm"},
-	{"shadow raven","AIBJDB","jAZ",3,9,2,"0F0F23","A78BFA","inky raven with violet eyes","caw","Caws once. Lights go out.","spooky,bird"},
-	{"shadow realm","MIFNII","jiZS",7,1,9,"212121","7E57C2","inky void with floating dark rocks","chime","Everything is dark. Everything is watching.","place,mythical,spooky"},
 }

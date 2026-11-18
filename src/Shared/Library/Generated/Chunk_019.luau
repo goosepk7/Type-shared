@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"patagotitan","AMFJAA","kIO",9,2,10,"8A7A6A","C8B8A8","gigantic armored-back sauropod","rumble","Titanic. Literally.","dinosaur,extinct,reptile,heavy,danger"},
+	{"patience","KEBOKI","GF",1,1,6,"8D6E63","FFF8E1","calm stone-like glow","tick","Good things come to those who wait.","support"},
+	{"patrol","LHCJNA","GQeO",4,5,5,"1E3A8A","FDE047","two guards walking a loop with lanterns and whistles","whistle","Round and round. Nothing to see. Oh wait.","defense,military"},
 	{"pattern","KLBF6B","jNP",2,5,2,"DC2626","15803D","rolling tartan grid that makes eyes go funny","hum","Stare long enough and a sailboat appears.","art"},
 	{"patupaiarehe","AFCJNJ","jZc",3,6,2,"E0F2FE","FDE68A","pale misty folk playing flutes","flute","Live in mist. Play spooky flutes.","fairy"},
 	{"pauldron","BKBONI","G",1,5,6,"8A929B","D4A72C","big curved shoulder plate","clank","Shoulder pads for battle.","armor,defense"},
@@ -400,8 +403,4 @@ return {
 	{"poison dart frog","AJAJAG","UMe",3,5,1,"2A6AE8","1E1E1E","tiny bright blue frog, black spots","croak","Pretty enough to look at. Never lick.","amphibian,wetland"},
 	{"poison dart trap","BJBLII","Me",4,1,5,"8C8C88","2E8B57","wall holes shooting darts","snap","Fwip fwip fwip.","trap,defense"},
 	{"poison dragon","AJEKAB","AMeg",8,6,7,"4D7C0F","D9F99D","sickly green dragon dripping acid","roar","Its breath melts armor. And snacks.","mythical,reptile,toxic"},
-	{"poison elemental","AJDJGJ","SMP",6,4,5,"65A30D","D9F99D","bubbling green sludge humanoid","bubble","Do not drink. Do not touch. Do not hug.","elemental,toxic"},
-	{"poison fog","FJDDOJ","ZSMP",5,3,2,"9CCC65","33691E","low green fog creeping along ground","hiss","Cannot see. Should not breathe.","toxic"},
-	{"poison ivy","NJBLMI","SMNP",4,1,3,"33691E","C62828","three shiny leaves, reddish stems","rustle","Leaves of three, let it be.","plant,silly"},
-	{"poison mage","LJCJNA","SMP",5,4,4,"365314","84CC16","green-stained robes, gas cloud","bubble","Smells bad. Fights worse.","magic,toxic"},
 }

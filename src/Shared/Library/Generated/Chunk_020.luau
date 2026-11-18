@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poison elemental","AJDJGJ","SMP",6,4,5,"65A30D","D9F99D","bubbling green sludge humanoid","bubble","Do not drink. Do not touch. Do not hug.","elemental,toxic"},
+	{"poison fog","FJDDOJ","ZSMP",5,3,2,"9CCC65","33691E","low green fog creeping along ground","hiss","Cannot see. Should not breathe.","toxic"},
+	{"poison ivy","NJBLMI","SMNP",4,1,3,"33691E","C62828","three shiny leaves, reddish stems","rustle","Leaves of three, let it be.","plant,silly"},
+	{"poison mage","LJCJNA","SMP",5,4,4,"365314","84CC16","green-stained robes, gas cloud","bubble","Smells bad. Fights worse.","magic,toxic"},
 	{"poison nova","FJDFOI","MP",6,7,1,"76FF03","C6FF00","bursting ring of green toxic spores","hiss","Personal space, but poisonous.","toxic"},
 	{"poison orb","FJCGKE","QSM",5,4,2,"8BC34A","1B5E20","bubbling green sphere trailing fumes","bubble","Follows you like a bad smell. Because it is.","toxic"},
 	{"poison rain","FJDEOJ","SMP",6,4,2,"76FF03","33691E","sickly green cloud dripping glowing drops","sizzle","Do not catch these on your tongue.","toxic,storm"},
@@ -399,8 +403,4 @@ return {
 	{"rainbow slime","AHBJGG","UFV",2,5,3,"F472B6","60A5FA","wobbly jelly shifting through colors","squelch","Tastes like rainbows. Don't taste it.","slime,cute"},
 	{"rainbow stag beetle","AMBJFA","Gkf",2,3,4,"3AE0A0","E8501E","shimmering rainbow stag beetle","click","A rainbow with jaws.","insect,armored"},
 	{"rainbow trail","KHBOKB","DF",2,9,2,"FF4081","40C4FF","rainbow stripe trailing behind","chime","Leave a rainbow wherever you go.","cute,speed"},
-	{"rainbow unicorn","AHDKAA","DFeg",6,8,5,"F472B6","60A5FA","unicorn with rainbow trail","neigh","Leaves a rainbow everywhere it goes.","cute"},
-	{"raincoat","BBCONI","G",1,5,2,"F1C40F","F1C40F","bright yellow hooded raincoat","swish","Rain? Bring it.","clothing"},
-	{"rainier cherry","IGAELB","eVP",2,7,1,"F2C24A","E8434F","yellow-blushed cherry","pitter","A golden cherry with a pink blush.","edible,fruit,sweet"},
-	{"rainstorm","GBDEOJ","SIN",5,5,3,"456F8C","B4D6EA","dark heavy cloud dumping thick rain","patter","Nature's car wash.","storm,aquatic"},
 }

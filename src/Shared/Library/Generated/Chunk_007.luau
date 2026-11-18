@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"croquette","IMAELB","Ke",2,7,1,"D9A04A","F2E2C2","crumbed golden cylinder","pitter","Crispy outside, creamy surprise inside.","edible"},
+	{"cross","KMBAJK","GTO",3,7,3,"DC2626","FFFFFF","big red X spinning like a blade","buzz","X marks the spot. The spot is you.","shape,school"},
 	{"cross slash","FMCHJB","fTV",6,9,1,"ECEFF1","FF5252","two glowing slashes forming an X","shing","X marks the ouch.","sharp"},
 	{"crossbill","AMAJDB","dAT",1,7,1,"E8401E","6A4A2A","finch with crossed beak","tweet","Beak crossed like scissors.","bird,cute"},
 	{"crossbow","CMCAvI","kTe",5,5,4,"8B5A2B","8A929B","horizontal bow on wooden stock","twang","Point, click, thunk.","medieval,ranged"},
@@ -401,6 +403,4 @@ return {
 	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
 	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
 	{"dogwood","NGCCMI","GWFkS",3,1,5,"5D4037","FFFFFF","small tree with white cross blossoms","rustle","No dogs involved. Mostly.","plant,tree"},
-	{"dojo","MMDNlI","SfOh",5,1,6,"E7D8B1","111827","paper-walled hall with mats, a gong and a row of belts","chop","Bow first. Then bonk.","sport,building"},
-	{"dokkaebi","ALCJNA","jbh",4,6,4,"1E3A8A","FACC15","horned goblin with magic club","cackle","One bonk and treasure appears.","goblin,mythical"},
 }

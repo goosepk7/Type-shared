@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grill","BACMII","KSc",3,1,6,"24262A","FF6A1A","round kettle grill on legs","clang","Sizzle. Smoke. Summer.","summer"},
+	{"grill master","LACJNA","Kce",4,4,5,"DC2626","111827","apron, tongs, smoking grill","sizzle","Smoke signals. Delicious ones.","food,fire"},
 	{"grilled cheese","IGBOKI","Fc",2,5,3,"E0A040","F2C24A","golden toasted sandwich, cheese ooze","crunch","Gooey cheese between crispy armour.","edible,healthy"},
 	{"grilled corn","IABAKF","Ke",3,6,2,"F2B82E","3A2A1E","charred cob with grill lines","splat","Sweet, smoky, golden.","edible"},
 	{"grilled salmon","IGBOKI","F",2,5,3,"E8763A","F2D8C8","pink fillet with grill lines","crunch","Pink, flaky, and healthy.","edible,healthy"},
@@ -401,7 +403,4 @@ return {
 	{"holy shield","KHCIKI","GFa",3,4,8,"FFE082","FFFFFF","golden glowing dome, wing-shaped edges","chime","Protected by pure good vibes.","holy,defence"},
 	{"holy shrine","EHCNII","FSO",3,1,8,"FFF8E1","FFD54F","marble shrine glowing gold","thud","Heals the faithful. Blinds the wicked.","structure,holy"},
 	{"holy slash","FHCHJB","KfT",6,9,1,"FFF59D","FFFFFF","glowing golden arc","shing","A righteous swipe.","holy,sharp"},
-	{"holy spike","FHCLII","KT",5,6,3,"FFF59D","FFFFFF","golden light spikes rising","chime","Sharp. Shiny. Righteous.","holy,sharp"},
-	{"holy staff","CHCAzK","Fe",5,5,5,"F2F2EE","D4A72C","staff with radiant sun disc","shing","Heals friends. Smites jerks.","fantasy,holy"},
-	{"holy storm","FHEEOJ","KFP",8,5,3,"FFF8E1","FFD54F","golden clouds raining spears of light","choir","Very holy weather.","holy,storm"},
 }

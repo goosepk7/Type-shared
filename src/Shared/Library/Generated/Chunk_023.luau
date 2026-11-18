@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shadow puppet","FIBJVA","jd",2,5,1,"212121","FFE082","shadow-animal shape on the ground that moves","hiss","A shadow dog. It barks. Kind of.","spooky,silly"},
+	{"shadow rain","GIDEOJ","iZP",6,5,2,"1A0033","7E57C2","black droplets that fade into smoke","hiss","The gloomiest weather possible.","spooky,storm"},
+	{"shadow raven","AIBJDB","jAZ",3,9,2,"0F0F23","A78BFA","inky raven with violet eyes","caw","Caws once. Lights go out.","spooky,bird"},
+	{"shadow realm","MIFNII","jiZS",7,1,9,"212121","7E57C2","inky void with floating dark rocks","chime","Everything is dark. Everything is watching.","place,mythical,spooky"},
 	{"shadow ring","FIDNOI","iZS",5,3,4,"1A0033","7C4DFF","circle of black smoke flames","hiss","A ring nobody wants.","spooky"},
 	{"shadow shield","FICIKI","GiZ",4,4,5,"1A0033","7C4DFF","smoky black dome with violet edges","hiss","Hits get swallowed by shadow.","spooky,defence"},
 	{"shadow slash","FICHJB","ifT",6,9,1,"1A0033","AA00FF","smoky black crescent","shing","Cuts through the dark.","spooky,sharp"},
@@ -399,8 +403,4 @@ return {
 	{"snow cloud","FCCDOJ","QJN",4,4,3,"ECEFF1","B3E5FC","fluffy cloud snowing on target","hush","Your own little winter.","frozen"},
 	{"snow cone","ICBNGI","JNP",3,3,2,"4FA3E8","E8434F","paper cone of rainbow ice","crackle","A cone of syrupy snow.","edible,frozen,sweet"},
 	{"snow dance","KCCEOJ","JN",3,4,2,"FFFFFF","B3E5FC","caster twirling as snow falls","music","Do the dance. Get a snow day.","music,frozen"},
-	{"snow day","GCCNOI","dFN",2,3,3,"FFFFFF","B3E5FC","snowy playground glow","yay","No school. Snowball time.","frozen,silly"},
-	{"snow devil","GCCN5K","jJl",5,6,2,"FFFFFF","B3E5FC","small spinning snow funnel","whoosh","Frosty the twister.","frozen,storm"},
-	{"snow elemental","ACDJOK","JNP",6,5,5,"F8FAFC","BAE6FD","whirling snow storm with icy eyes","howl","A snow day that fights back.","elemental,frozen"},
-	{"snow fort","ECCCII","GSeN",3,1,4,"F5F5F5","90CAF9","low snow wall with a stack of snowballs","thud","Comes pre-loaded with snowballs.","silly,frozen"},
 }

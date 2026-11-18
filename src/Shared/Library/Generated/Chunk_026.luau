@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"taffy","IMBLGI","SHN",2,3,3,"F2A6C8","F7F2E0","stretched wrapped candy","gloop","Stretchy, chewy, everlasting.","edible,sticky,candy,sweet"},
+	{"tag you're it","KMBAKB","dQc",1,9,1,"FF5252","FFFFFF","glowing handprint on the target","boop","Tag! You're it! Ha!","silly,sport"},
+	{"tagine","IABNGI","KF",4,4,2,"C8602B","E8A040","conical clay pot stew","sizzle","Slow-cooked under a pointy hat.","edible,spicy"},
+	{"tahini","IMBLGI","SNP",2,3,3,"D8C08A","C8A070","smooth sesame paste","gloop","Sesame, ground to silk.","edible,sticky"},
 	{"tahr","AMCJAA","df",3,4,4,"8A6A44","C8A87A","shaggy mountain goat","bleat","Wears a fur cape. Climbs cliffs.","mammal,farm"},
 	{"taiko drum","BMDFJI","kO",5,3,6,"5A3A1E","9E1B32","huge barrel drum with thick sticks","boom","DON. DON. DON.","music,loud"},
 	{"tail","BMBHCK","Ukf",3,7,3,"B9773A","F5E0C3","fluffy wagging tail swishing side to side","swish","Wags when happy. Whacks when not.","body,cute"},
@@ -399,8 +403,4 @@ return {
 	{"toucan","AMBJDB","jdAf",2,6,2,"1E1E1E","F2A01E","black bird, gigantic rainbow beak","squawk","Beak is 30% of its body.","bird,jungle,silly"},
 	{"touch grass","KGBOKJ","F",1,4,3,"66BB6A","FFF59D","grass sprouting under caster's feet","rustle","Fresh air. Feel better.","meme,plant,support"},
 	{"touch me not plant","NGANMI","ZS",1,1,2,"7CB342","F48FB1","feathery leaves that fold when touched","rustle","Touch it. It hides. Rude.","plant,flower,cute"},
-	{"touchdown","KECL3B","EkO",5,7,2,"92400E","FFFFFF","brown oval ball spiked into turf, arms raised","crowd","Spike it. Dance. Flag for excessive joy.","sport"},
-	{"tour bus","DMDKHL","Dkgh",4,5,7,"E53935","FFEB3B","open-top double decker for tourists","engine","And on your left: your defeat.","mechanical,vehicle,land"},
-	{"tour guide","LMCJNA","ch",3,5,4,"F97316","F8FAFC","tiny flag on a stick, megaphone","ding","Follow the flag. Everyone does.","silly"},
-	{"tourist","LMCJNA","dO",3,4,3,"0EA5E9","FACC15","hawaiian shirt, camera, sunburn","click","Flash photography. Everywhere.","silly"},
 }

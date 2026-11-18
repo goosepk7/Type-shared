@@ -403,6 +403,4 @@ return {
 	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 	{"croque monsieur","IGBOKI","F",2,5,3,"D9A04A","F2C870","grilled ham cheese sandwich","crunch","A sandwich with a fancy title.","edible,healthy"},
 	{"croquet mallet","BMCHtK","kf",2,5,4,"8B5A2B","C0392B","long mallet with barrel head","bonk","Wack. Through the hoop.","sport"},
-	{"croquette","IMAELB","Ke",2,7,1,"D9A04A","F2E2C2","crumbed golden cylinder","pitter","Crispy outside, creamy surprise inside.","edible"},
-	{"cross","KMBAJK","GTO",3,7,3,"DC2626","FFFFFF","big red X spinning like a blade","buzz","X marks the spot. The spot is you.","shape,school"},
 }
