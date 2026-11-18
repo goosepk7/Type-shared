@@ -242,6 +242,7 @@ return {
 	{"animal tamer","LGCJNA","Oh",4,5,4,"DC2626","FACC15","ringmaster coat, whip, chair","crack","Tames anything. Mostly cats.","circus"},
 	{"animated broom","ALBJJG","dIV",2,7,2,"A16207","7C2D12","broom with stick arms carrying buckets","swish","Cleans the room. Then floods it.","construct,silly"},
 	{"anime hero","LHCJNA","DWf",6,8,5,"F97316","1D4ED8","spiky hair, headband, powering-up aura","zap","Powers up for three episodes.","hero"},
+	{"ankh pyre","FADAKB","KEeV",7,8,2,"E8461E","FFC14A","a burning ankh bursts into a hurricane of small ankhs","fire","Life, death, and a lot of fire in between.","anime,stand,fire"},
 	{"ankle","AMAJGG","QfN",2,7,2,"F28B82","FFFFFF","tiny snappy thing nipping at sock height","yip","Small. Angry. Sock-level.","body,silly"},
 	{"ankylosaurus","AMDJAA","GkfO",7,3,10,"7A6A4A","C8A06A","armored tank body, club tail","grunt","A tank with a wrecking ball tail.","dinosaur,extinct,reptile,armored"},
 	{"annihilate","KIEGKI","iE",9,5,1,"0D0D0D","FF1744","black sphere with red cracks bursting","boom","A very fancy way to say gone.","explosive,danger"},
@@ -352,6 +353,7 @@ return {
 	{"arena","MEENII","GSh",4,1,9,"C9A55A","8D6E63","sandy round pit ringed by walls","crowd","Two enter. One wins.","place,terrain"},
 	{"arepa","IMBAKK","Uke",3,7,2,"F2E2B0","C8A070","thick grilled corn cake, filled","whoosh","A corn pocket of delicious.","edible"},
 	{"ares","LAEJYA","KDkf",8,7,8,"991B1B","B45309","bronze-armoured giant, red crest helm, spear, round shield","roar","Started this fight. Starts all of them.","mythical,greek,warrior"},
+	{"argent fencer","CKCOYJ","fe",6,10,2,"C9D3E0","7FD8FF","a silver knight spirit sheds its armour and fences","slash","Lighter armour, faster blade. Simple maths.","anime,stand,sword"},
 	{"argentavis","AMDJDB","DAlfT",6,9,3,"3A2A1E","C8A07A","colossal ancient vulture bird","screech","Wings as wide as a small plane.","bird,predator,extinct"},
 	{"argentinosaurus","AMFJAA","kIO",9,2,10,"7A6A5A","B8A890","colossal long-necked titan","rumble","Heaviest land animal ever. Ground shakes.","dinosaur,extinct,reptile,heavy,danger"},
 	{"argonaut","ABBJSC","jZHB",2,6,3,"F7F2E8","C8B8A0","papery white shell","squelch","Builds its own shell boat.","aquatic,ocean,smart"},
@@ -401,6 +403,4 @@ return {
 	{"ash wasteland","MAENII","KjS",4,1,6,"616161","FF7043","grey ash dunes, smouldering stumps","rumble","Everything here already burned. Twice.","place,terrain"},
 	{"asian elephant","AMEKAA","DkIgO",7,4,8,"7E7A78","E6D8C8","smaller round ears, domed head","trumpet","Can paint. Better than you.","mammal,heavy,wild"},
 	{"asian golden cat","AMCJAA","ZfT",4,7,3,"C8903A","F2E8D8","golden plain coat","hiss","Golden, shy, mysterious.","mammal,predator,wild"},
-	{"asian pear","IGBAKF","Fke",3,6,2,"E8D48A","C8A85A","round golden pear","splat","A pear that thinks it's an apple.","edible,fruit,sweet"},
-	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 }

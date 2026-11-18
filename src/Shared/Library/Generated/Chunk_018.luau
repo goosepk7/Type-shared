@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nian","AADJAA","Dkf",6,6,7,"B91C1C","FACC15","maned lion beast, single horn","roar","Scared of firecrackers and the color red.","mythical,holiday"},
+	{"nibble","KMAAKB","if",1,8,1,"FFCC80","FFFFFF","tiny chomp marks","nom","Nom. Tiny but rude.","silly"},
+	{"nidhogg","AIEJCH","Cif",8,4,8,"292524","65A30D","black serpent dragon gnawing roots","roar","Chews on the roots of the world.","mythical,reptile,norse"},
+	{"niece","LMBJNA","jde",2,7,3,"F472B6","F2D0B4","small girl covered in glitter with a marker pen","giggle","Drew on the walls. Calls it a gift.","family,cute"},
+	{"nigella","NGBNMI","jdFS",1,1,1,"64B5F6","7CB342","blue flower in a cage of fronds","rustle","Love in a mist. Confusing in a fight.","plant,flower"},
+	{"nigersaurus","AMEJAA","kHI",6,2,9,"8A7A6A","D8C8B0","vacuum-cleaner wide mouth","rumble","Has 500 teeth. Mouth like a vacuum.","dinosaur,extinct,reptile,heavy"},
 	{"night","FIDNOI","ZN",4,4,3,"141A3A","5E6AB8","starry dark-blue dome falling over area","hush","Bedtime. For everyone.","space,spooky"},
 	{"night blooming cereus","NHBNMI","FS",3,1,2,"FFFFFF","F5F5F5","huge white bloom open one night only","rustle","One night only. Do not miss it.","plant,flower"},
 	{"night heron","AMCJDA","AfT",3,5,2,"1E2A3A","F2F2EE","stocky heron, red eyes","squawk","Works the night shift.","bird,wetland,nocturnal"},
@@ -397,10 +403,4 @@ return {
 	{"particle accelerator","ODFN1I","EL",8,1,8,"C9CED4","3FC1D9","enormous ring of magnets","bubble","Smashes atoms. Smashes foes.","science"},
 	{"particle cannon","CDDMxI","KTe",8,5,6,"F2F2EE","3FC1D9","cannon with accelerator rings","zap","Science, but very loud.","scifi,ranged"},
 	{"partisan","CKDAuI","fT",5,5,5,"8A929B","8B5A2B","broad spearhead with side wings","whoosh","A spear with very wide shoulders.","medieval,sharp"},
-	{"partner","LMCJNA","GQFf",4,6,5,"F59E0B","78350F","buddy standing back to back with you, finger guns","yeehaw","Howdy, pardner. Dibs on the left ones.","support"},
-	{"partridge","AMBJDA","df",2,4,2,"8A7A6A","C8703A","round plump game bird","cluck","Sits in pear trees. Allegedly.","bird,farm,holiday"},
-	{"party","KMCNOI","jdc",2,5,2,"FF4081","FFEB3B","confetti, streamers and disco lights","music","Nobody fights at a party.","silly"},
-	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
-	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
-	{"party bus","DMDKHL","Ddkcg",4,5,7,"7E57C2","FF4081","bus with flashing lights and music","music","Nobody can resist the party.","mechanical,vehicle,land,silly"},
 }

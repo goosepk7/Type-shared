@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"minivan","DMCKHL","Dkg",4,6,6,"6E8FA6","D9DEE2","tall rounded van, sliding side door","engine","Soccer practice is cancelled. Battle is on.","mechanical,vehicle,land,silly"},
+	{"mink","AMBJAA","CfTB",3,8,2,"3A2618","5A3E2C","glossy dark brown slinky body","chatter","Shiny coat, sharp teeth.","mammal,predator"},
+	{"minke whale","ABEJEC","kIB",6,3,9,"3A4250","D8DEE4","small sleek whale, white flipper bands","whalesong","Smallest of the big guys.","mammal,aquatic,ocean,heavy"},
+	{"minmi","AMCJAA","Gkf",4,3,9,"8A7A5A","C8B88A","small armored dino","grunt","Small but fully armored.","dinosaur,extinct,reptile,armored"},
+	{"minnow","ABAJEC","dPB",1,6,1,"9AA8A0","D8E0D8","tiny silver river fish","splash","Small fry. Big dreams.","fish,aquatic"},
+	{"minotaur","AEDJNA","DkfO",7,6,7,"7C2D12","E7E5E4","bull head, giant arms, labyrinth axe","roar","Lost in a maze. Taking it out on you.","mythical"},
 	{"minotaur chief","AEEJNA","DkfO",8,6,8,"451A03","FACC15","giant bull warrior with gold nose ring","roar","Runs the maze. Owns the maze.","mythical,boss"},
 	{"minotaur gladiator","AEDJNA","Dkf",7,6,7,"7C2D12","CA8A04","minotaur in gladiator armor","roar","Undefeated. Unshaven.","mythical,warrior"},
 	{"mint chocolate chip","ICBAKJ","JeN",3,5,2,"B8E8D0","3A2416","mint green scoop, dark chips","squish","Toothpaste's tastier cousin.","edible,frozen,sweet"},
@@ -397,10 +403,4 @@ return {
 	{"newspaper","BMBAJK","deO",2,6,2,"F5F5F0","111827","rolled newspaper thwacking down, headline: SUMMON WINS","thwack","Extra! Extra! Read all about your defeat!","household"},
 	{"newt","AJAJCA","FMB",1,3,2,"E8701E","3A3A2A","small orange salamander","squelch","Bright orange. Bitter taste.","amphibian,wetland"},
 	{"niagara falls","MBFFII","kSIN",7,1,9,"4FC3F7","FFFFFF","wide thundering curtain of water","roar","Several million litres of nope.","place,landmark"},
-	{"nian","AADJAA","Dkf",6,6,7,"B91C1C","FACC15","maned lion beast, single horn","roar","Scared of firecrackers and the color red.","mythical,holiday"},
-	{"nibble","KMAAKB","if",1,8,1,"FFCC80","FFFFFF","tiny chomp marks","nom","Nom. Tiny but rude.","silly"},
-	{"nidhogg","AIEJCH","Cif",8,4,8,"292524","65A30D","black serpent dragon gnawing roots","roar","Chews on the roots of the world.","mythical,reptile,norse"},
-	{"niece","LMBJNA","jde",2,7,3,"F472B6","F2D0B4","small girl covered in glitter with a marker pen","giggle","Drew on the walls. Calls it a gift.","family,cute"},
-	{"nigella","NGBNMI","jdFS",1,1,1,"64B5F6","7CB342","blue flower in a cage of fronds","rustle","Love in a mist. Confusing in a fight.","plant,flower"},
-	{"nigersaurus","AMEJAA","kHI",6,2,9,"8A7A6A","D8C8B0","vacuum-cleaner wide mouth","rumble","Has 500 teeth. Mouth like a vacuum.","dinosaur,extinct,reptile,heavy"},
 }

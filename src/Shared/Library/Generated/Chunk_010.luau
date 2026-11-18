@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"floating city","EFFNIJ","lSh",5,1,8,"ECEFF1","FFD54F","spires on a hovering platform","hum","No traffic. Just clouds.","structure,future"},
+	{"floating eye","ALDJKE","jAeO",7,3,6,"7C3AED","FDE68A","giant floating eyeball with eyestalks","zap","Sees all. Blinks rarely. Very dry.","dungeon"},
+	{"floating rocks","MLENIJ","lS",4,1,8,"8D6E63","7CB342","chunks of land drifting in the sky","rumble","Gravity takes a holiday here.","place,terrain,magic"},
+	{"flock","AFDDLB","jAPb",5,7,3,"ECEFF1","607D8B","swirling V of small birds, feathers drifting","tweet","Birds of a feather attack together.","bird,swarm"},
+	{"flood","HBENOI","SINP",7,4,5,"2269A8","A9DBF5","rising murky water filling the area","splash","Everything is a swimming pool now.","natural,aquatic"},
 	{"floodlight","OHDBmI","cO",2,1,6,"8E9196","F2F2EE","bank of huge bright lamps","clank","Blinding stadium glare.","mechanical"},
 	{"floor","FEDNnI","kSN",4,1,9,"B5803C","8B5A2B","wide wooden floorboards tilting like a seesaw","creak","The floor is the floor. That is worse.","household,terrain"},
 	{"floor is lava","KADNOI","KS",6,3,4,"FF3D00","FFB300","floor turning into glowing lava","bubble","It's not a game anymore.","fire,meme,silly"},
@@ -398,9 +403,4 @@ return {
 	{"ghost form","KIBOVJ","AZY",2,7,2,"E0F7FA","B39DDB","caster turning see-through and floaty","wail","Boo. Walk through walls.","spooky,stealth"},
 	{"ghost horse","AIDKAA","DZg",5,9,4,"CBD5E1","6366F1","translucent galloping horse","neigh","Gallops through walls.","ghost,mount"},
 	{"ghost horse rider","AIDKAA","DZg",6,9,4,"A5B4FC","1E1B4B","spectral rider on a glowing horse","neigh","Gallops across the sky at night.","ghost,mount"},
-	{"ghost hunter","LHCJNA","He",5,5,5,"F8FAFC","22C55E","jumpsuit, proton-style backpack vacuum","zap","Who you gonna call? This person.","spooky"},
-	{"ghost king","AIDJNJ","iAh",7,5,4,"A5B4FC","CA8A04","crowned translucent giant","wail","Rules a kingdom of sheets.","ghost,royal,boss"},
-	{"ghost lantern bearer","AICJNJ","Ac",3,4,2,"F8FAFC","FACC15","ghost carrying a glowing lantern","whisper","Lights the way. Somewhere strange.","ghost"},
-	{"ghost locomotive","DIEKHL","DZkTg",7,7,5,"80DEEA","263238","glowing see-through steam engine","whistle","A train that crashed a century ago. Still running late.","spooky,undead"},
-	{"ghost orchid","NIBNMI","dZS",3,1,1,"F5F5F5","E1F5FE","leafless white bloom floating in air","rustle","Floats like a ghost. Very rare.","plant,flower,spooky"},
 }

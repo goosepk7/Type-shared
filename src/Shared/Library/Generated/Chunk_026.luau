@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"switchblade","CKAHJK","ZfT",3,10,2,"C9CED4","24262A","folding blade, slim handle","shing","Click. Surprise.","medieval,sharp"},
+	{"sword","CKCHrK","kfT",5,6,5,"8A929B","6B4226","straight double-edged blade, cross guard","shing","The classic. Pointy end goes toward the problem.","medieval,sharp"},
+	{"sword cane","CKCHrK","fT",5,7,3,"24262A","C9CED4","walking cane hiding a blade","shing","Gentleman's surprise.","sharp"},
+	{"sword swallower","LKCJNA","dO",3,4,4,"111827","94A3B8","swallowing a long sword","gulp","Kids, don't try this at home.","circus,silly"},
+	{"swordfish","ABDJEC","DfTB",6,9,4,"3A4A6A","D8DCE2","long flat sword bill","splash","Brought a sword to the sea.","fish,aquatic"},
+	{"swordtail","ABAJEC","dTB",1,6,1,"E8501E","1E1E1E","orange fish with sword tail","splash","Has a tiny sword tail.","fish,aquatic"},
 	{"sycamore","NGECMI","GdWkSe",4,1,8,"D7CCC8","7CB342","patchy white bark, big leaves","rustle","Throws spinning helicopter seeds.","plant,tree"},
 	{"sydney opera house","EMFCII","GSO",5,1,9,"FFFFFF","E0E0E0","white sail-shaped shell roofs","song","Sings a very loud high note.","structure,landmark"},
 	{"symbol","KLBLKI","jSO",3,1,3,"A855F7","FACC15","floating glowing sign: @ # & % cycling quickly","chime","@#&%! Pardon its language.","magic"},
@@ -225,6 +231,7 @@ return {
 	{"thorny devil","AMBJAA","CfT",2,7,2,"C8783A","F2C88A","spiky desert lizard","hiss","Drinks through its skin.","reptile"},
 	{"thoroughbred","AMDKAA","Dkg",5,10,5,"6A3A1E","2A1A12","sleek racing horse","neigh","Born to race. Lives to race.","mammal"},
 	{"thousand island","IMBLGI","kSO",2,3,2,"F2A07A","D72B2B","pink creamy dressing","squeak","A thousand islands. Zero maps.","edible,slippery,silly,sauce"},
+	{"thread snare","BLCLQB","SeNO",5,8,4,"3C6FD6","B5F0FF","a glowing net of thread strung across the lane","whoosh","Pull one thread and the whole net comes with it.","anime,stand,trap"},
 	{"threat","KIBF6B","IXO",4,6,1,"7F1D1D","111827","looming shadow cracking its knuckles","growl","Nice health bar. Shame if something happened.","villain"},
 	{"three wheeler","DMBKHL","Djkg",3,6,3,"1565C0","F5F5F5","tiny car with one front wheel","engine","Tips over in corners. Every corner.","mechanical,vehicle,land,silly"},
 	{"three-banded armadillo","AMBJAF","GUCf",2,5,6,"B8A08E","8A7462","armadillo rolled into a perfect ball","squeak","Rolls into a perfect ball.","mammal,wild"},
@@ -396,11 +403,4 @@ return {
 	{"tooth fairy","AHAJNB","AFb",1,8,1,"E0F2FE","FBCFE8","tiny fairy with a giant tooth bag","chime","Pays cash for teeth. No questions.","fairy,cute,silly"},
 	{"toothbrush","BMAHJI","Ff",1,8,1,"47D7E8","F2F2EE","small brush on a long handle","splash","Twice a day keeps foes away.","bathroom,household"},
 	{"toothpaste","BMALKI","FN",1,6,1,"F2F2EE","98E2C6","squeezed tube of minty paste","splash","Minty fresh. Very slippery.","bathroom,sticky"},
-	{"toothpick","BMAAuK","Te",1,9,1,"C49A6C","D2B48C","tiny wooden spike","thud","The world's smallest spear.","household"},
-	{"top hat","BLBONI","dh",2,5,2,"24262A","9E1B32","tall cylinder hat with band","swish","Something's in there. Usually a rabbit.","clothing,magic,fancy"},
-	{"topaz","BHAA4J","ce",2,7,6,"E67E22","D4A72C","golden orange gem","chime","Sunset in a stone.","treasure,shiny"},
-	{"topi","AMCJAA","Dk",4,8,4,"8A4A2A","3A3A6A","reddish antelope with purple patches","bleat","Stands on termite mounds to look cool.","mammal,wild"},
-	{"topiary","NGCCMI","GdS",2,1,5,"43A047","1B5E20","bush trimmed into a cute animal shape","rustle","Shaped like a rabbit. Fights like a hedge.","silly,cute"},
-	{"topic","KMBOKB","jdY",2,5,2,"F59E0B","FFFFFF","speech bubble with an arrow swerving off sideways","pop","Anyway. Moving on. Completely different thing.","school,silly"},
-	{"torch","BABHJK","Kcf",2,5,2,"8B5A2B","FF6A1A","wooden stick with flaming tip","flicker","Bring one to every cave.","flammable"},
 }

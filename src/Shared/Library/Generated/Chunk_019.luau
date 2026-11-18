@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"partner","LMCJNA","GQFf",4,6,5,"F59E0B","78350F","buddy standing back to back with you, finger guns","yeehaw","Howdy, pardner. Dibs on the left ones.","support"},
+	{"partridge","AMBJDA","df",2,4,2,"8A7A6A","C8703A","round plump game bird","cluck","Sits in pear trees. Allegedly.","bird,farm,holiday"},
+	{"party","KMCNOI","jdc",2,5,2,"FF4081","FFEB3B","confetti, streamers and disco lights","music","Nobody fights at a party.","silly"},
+	{"party animal","LMCJNA","jdO",3,6,3,"F472B6","FACC15","party hat, confetti, noisemaker","beat","Throws a party in the middle of the fight.","silly"},
+	{"party bunting","BMCLKI","dN",1,1,1,"C0392B","2F6FD1","string of tiny triangle flags","pop","Festive tangle.","party"},
+	{"party bus","DMDKHL","Ddkcg",4,5,7,"7E57C2","FF4081","bus with flashing lights and music","music","Nobody can resist the party.","mechanical,vehicle,land,silly"},
 	{"party hat","BMAONI","d",1,6,1,"FF3EA5","D4A72C","pointy striped cardboard cone hat","squeak","You can't be sad in this hat.","party,silly"},
 	{"party horn","BMAFKI","jd",1,9,1,"D4A72C","C0392B","curly paper horn","honk","Pweeeeeeep!","party,silly"},
 	{"party popper","BMAFKI","deO",1,9,1,"D4A72C","FF3EA5","small cone with string pull","pop","POP! Streamers everywhere.","party"},
@@ -397,10 +403,4 @@ return {
 	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
 	{"pocket knife","CKAHrK","fT",2,8,2,"C0392B","C9CED4","folding blade, red handle","shing","Has a blade, a saw, and a tiny toothpick.","medieval,sharp"},
 	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
-	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
-	{"pocket size","OLBONI","WkX",5,9,3,"E04A3A","2B2D33","shrink tiny, then burst back to size with a punch","pop","Tiny hero. Big punch.","hero,movie,scifi"},
-	{"pocket watch","BLAOKI","N",2,5,3,"D4A72C","F3E6C8","hinged gold watch on chain","chime","Tick. Tock. Mesmerising.","time"},
-	{"podcaster","LMCJNI","jd",3,4,3,"7C3AED","F8FAFC","big microphone, headphones","ding","Talks for three hours. Enemies fall asleep.","meme"},
-	{"poem","KFBF6J","jFO",2,5,1,"C4B5FD","F8FAFC","floating quill and curling lines of verse","whisper","Roses are red. Violets are blue. Bonk.","art,school"},
-	{"pog","KHBOKG","DFO",3,8,2,"A855F7","FACC15","wide-open amazed mouth face with sparkles and hype bars","yay","Poggers. That was actually poggers.","gaming,meme,internet"},
 }

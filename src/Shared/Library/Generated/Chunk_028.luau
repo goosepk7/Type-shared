@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vest","BMBONI","G",1,6,2,"1F2F55","D4A72C","buttoned waistcoat","swish","Dapper and ready.","clothing"},
+	{"veteran","LMCJNA","Ge",5,4,6,"4D7C0F","CA8A04","medals, eyepatch, grizzled beard","ding","Seen it all. Not impressed.","military"},
+	{"veterinarian","LGCJNA","Fh",3,5,4,"F8FAFC","22C55E","scrubs with paw prints, treat pouch","chime","Brings every animal friend in town.","healer"},
+	{"vibe check","KHBFOB","jO",3,8,1,"CE93D8","FFF59D","pastel ring checking everyone","ding","Vibe check! You failed.","meme"},
+	{"vibration","FEBFOB","O",3,7,2,"9C8B7A","E0D4C4","trembling ground rings","buzz","Bzzzzzzzz.","silly"},
+	{"vibro blade","CKCHrK","fTO",6,8,4,"DDE3E8","3FC1D9","humming buzzing blade","shing","It hums. Then it cuts.","scifi,sharp"},
+	{"viburnum","NGCNMI","dFSe",1,1,4,"FFFFFF","2E7D32","round white snowball flower heads","rustle","Throws snowballs. Flower ones.","plant,flower"},
 	{"victim","LMBJNA","dEc",1,3,1,"E5E7EB","F87171","unlucky fellow under a tiny rain cloud with a target sign","oof","Wrong place. Wrong time. Every time.","silly"},
 	{"victoria sponge","IMBLKI","dSc",2,3,3,"F2D88A","D7263D","two sponges, jam and cream","chomp","Fit for a queen.","edible,sweet,royal"},
 	{"victoria water lily","NBDLMJ","SN",2,1,5,"43A047","F8BBD0","huge round floating pad with a rim","rustle","Big enough to stand on. Try it.","plant,flower"},
@@ -396,11 +403,4 @@ return {
 	{"window box","NGBOMI","FS",1,1,3,"D84315","F06292","wooden box spilling with flowers","rustle","Defends windows. Prettily.","plant,houseplant"},
 	{"window washer","LBCJNA","IN",3,4,3,"0EA5E9","F8FAFC","squeegee, bucket, harness","squeak","Squeaky clean. Squeaky slippery.","silly"},
 	{"windpump","EFDMIK","GSI",3,1,6,"B0BEC5","E53935","metal tower with a spinning fan wheel","creak","Pumps water. Spins menacingly.","structure,farm"},
-	{"windstorm","GFDFOB","kIP",6,7,3,"90A4AE","ECEFF1","long rushing gale with flying leaves","howl","Hold on to something. Anything.","storm,air"},
-	{"wing","BFCODB","AklI",3,8,3,"F5F5F5","CFE3F2","pair of white feathered wings flapping, no body","flutter","Just wings. Body sold separately.","flying,body"},
-	{"winged helmet","BFBONI","DA",3,7,5,"C9CED4","D4A72C","helm with little wings","clank","Swift as a messenger.","armor,fantasy,ancient"},
-	{"winged lion","AHDKAB","DAg",6,7,6,"CA8A04","FDE68A","golden lion with eagle wings","roar","Kings of the jungle AND the sky now.","mythical,mount"},
-	{"winged sandals","BFBONI","DA",4,9,2,"D4A72C","F2F2EE","sandals with little wings","swish","Faster than a messenger.","clothing,ancient,magic"},
-	{"wings of light","KHCOKB","AF",3,7,3,"FFFFFF","FFE57F","glowing feathered wings on the caster","whoosh","Flap flap. Very angelic.","holy"},
-	{"wingsuit","DFBKHB","DAg",3,9,2,"FF5722","212121","jumpsuit with fabric wings","whoosh","Jump. Spread arms. Scream.","vehicle,air,sport"},
 }

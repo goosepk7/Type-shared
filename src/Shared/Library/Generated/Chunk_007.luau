@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crocodile monitor","AMCJAA","Cf",5,7,2,"2A3A2A","E8D8A0","very long-tailed monitor","hiss","Longest lizard. Mostly tail.","reptile"},
+	{"crocus","NGANMI","dFS",1,1,1,"9575CD","FFC107","goblet bloom popping out of snow","rustle","First flower of spring. Very punctual.","plant,flower"},
+	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
 	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
 	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
 	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
@@ -316,6 +319,7 @@ return {
 	{"diabolo","BMAAKK","Ue",1,8,2,"C0392B","F2F2EE","spool spun on a string","bonk","Spin. Toss. Catch. Sometimes.","sport"},
 	{"diamond","BMAA4J","Tea",3,8,10,"F2F2EE","BFE6F2","brilliant cut clear diamond","chime","Hardest thing around. Throws hard too.","treasure,shiny"},
 	{"diamond dust","GCCDOJ","jJS",4,4,2,"E1F5FE","FFFFFF","glittering ice crystals hanging in the air","tinkle","Pretty sparkles. Very cold sparkles.","frozen,cute"},
+	{"diamond mend","KHCOVJ","F",4,6,2,"F07AB8","CDEBFF","a crystal spirit pieces you and your walls back together","chime","Broken things want to be whole. Including you.","anime,stand,heal"},
 	{"diamond sword","CMCHrK","kfT",8,6,9,"F2F2EE","3FC1D9","blocky gleaming crystal blade","shing","The ultimate crafted sword.","shiny,sharp"},
 	{"diamond wall","ELDCII","GSa",5,1,10,"E0F7FA","80DEEA","sparkling wall of cut diamonds","thud","Hardest wall money cannot buy.","structure,defense,heavy"},
 	{"diamondback rattlesnake","AMCJCD","fMNO",5,6,3,"B8986A","3A2A1A","big diamond-patterned rattler","rattle","Shakes its rattle. Means it.","reptile,venomous"},
@@ -399,8 +403,4 @@ return {
 	{"dodgeball","BMBG3F","UkeO",2,8,2,"C0392B","C0392B","rubbery red playground ball","bonk","If you can dodge a wrench...","sport"},
 	{"dodgeball kid","LMBJNA","dke",3,7,2,"DC2626","F8FAFC","tiny kid with a huge red ball","boing","Small arms. Huge throws.","school,silly,sport"},
 	{"dodo","AMCJDA","dkf",2,2,5,"8A8A8E","F2E8C8","plump grey bird, hooked beak, tuft tail","boom","Extinct. Still waddling in our hearts.","bird,flightless,extinct,silly"},
-	{"doedicurus","AMDJAA","GDkO",7,4,10,"6A5A44","B8A07A","armored dome, spiked mace tail","roar","Armadillo with a medieval mace.","mammal,extinct,ancient,heavy"},
-	{"dog","AMCJAA","DQcf",4,7,4,"C08A52","F2E3CC","floppy ears, wagging tail, tongue out","bark","Best friend. Will eat your homework.","mammal,pet"},
-	{"dog bowl","BMALKI","c",1,1,2,"C9CED4","C0392B","steel bowl full of kibble","squeak","Dinner bell for monsters.","pet"},
-	{"dog groomer","LMCJNA","dF",3,5,4,"F472B6","F8FAFC","apron, blow dryer, brush","snip","Fluffs your dog. Fluffs your enemies.","silly,canine"},
 }

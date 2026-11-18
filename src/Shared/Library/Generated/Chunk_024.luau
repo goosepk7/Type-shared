@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snake plant","NGBOMI","FST",2,1,5,"2E7D32","FFEB3B","upright sword-like striped leaves","rustle","Pointy leaves. Unkillable.","plant,houseplant"},
+	{"snakefly","AMAJFB","dAP",1,6,1,"1E1E1E","8A6A4A","long neck flying bug","buzz","Has a snake neck.","insect"},
+	{"snakehead","ABCJCC","DfB",4,7,4,"5A5A3A","C8B88A","long fish with snake-like head","splash","Walks between ponds. Rude.","fish,aquatic"},
+	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
+	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
+	{"snapper","ABBJEC","dB",2,6,1,"D84A3A","F2D8D0","rosy red fish","splash","Snappy name. Chill fish.","fish,aquatic"},
 	{"snapping turtle","AMBJUA","GfNOB",4,2,8,"4A4A30","8A7A5A","spiky shell, huge beak","hiss","Snaps fingers. Not the cool way.","reptile,armored"},
 	{"snapvine","NGCLMI","SfHN",4,3,4,"33691E","E53935","coiled vine tipped with tiny jaws","chomp","Every vine has teeth. Every one.","plant,carnivorous"},
 	{"snare","BMBLII","lHO",2,1,3,"B89B6A","8B5A2B","hidden rope loop on bent sapling","snap","Upsy-daisy!","trap,defense"},
@@ -397,10 +403,4 @@ return {
 	{"standard bearer","LMCJNA","FOh",3,4,5,"DC2626","FACC15","tall flag with crest","horn","Rally to the flag! Allies buffed.","warrior"},
 	{"staple gun","JKAAwI","Te",2,8,3,"24262A","C9CED4","heavy-duty stapler with grip","thunk","Kachunk. Pinned.","modern,ranged"},
 	{"stapler","BMAAJK","Te",1,7,4,"C0392B","24262A","chunky office stapler","tap","Ka-chunk. Pinned.","office"},
-	{"staples","BKAAwB","TeN",2,9,2,"C0C7CE","EF4444","red stapler snapping out a stream of tiny silver staples","click","Ka-chunk. Ka-chunk. Attached.","school,sharp"},
-	{"star","MHCAKJ","TeVO",5,6,5,"FFF59D","FFFFFF","five-point glowing twinkle","twinkle","Twinkle twinkle, little projectile.","space"},
-	{"star anise","IMBAKK","Te",3,7,2,"6B3A1E","A86A3A","eight-pointed brown star pod","whoosh","A spice shaped like a throwing star.","edible,spice"},
-	{"star blade","FHCHrB","KfT",6,8,2,"FFF59D","5C6BC0","sword shimmering with tiny stars","chime","Forged in a star. Probably.","space,sharp"},
-	{"star bolt","FHBAKB","KTe",5,9,1,"FFF9C4","FFD54F","spinning golden star streak","zing","Twinkle, twinkle, bonk.","space"},
-	{"star bomb","FHCGKI","KEV",6,7,1,"FFF59D","B39DDB","star-shaped orb popping into smaller stars","chime","Twinkle twinkle, kaboom.","space,explosive"},
 }

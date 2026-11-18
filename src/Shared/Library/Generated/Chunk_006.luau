@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clickbait","KLBLnI","jcO",3,2,1,"EF4444","FACC15","thumbnail with a shocked face, red arrow and red circle","click","You will NOT believe what happens next. (Bonk.)","meme,internet"},
+	{"cliff","MEECII","GkS",4,1,10,"8D6E63","9E9E9E","sheer rock wall with a ledge","rumble","One step too far. Byeee.","place,terrain"},
+	{"cliffside","MEENII","kS",4,1,9,"8D6E63","7CB342","grassy edge above a sheer drop","rumble","One step back. No, the other way.","place,terrain"},
 	{"climate","KFENOI","KJSP",6,1,5,"F97316","38BDF8","half scorching sun, half blizzard swirling together","howl","Hot. Cold. Hot. Make up your mind.","weather,science"},
 	{"climb","KMBOKG","l",2,5,3,"8D6E63","FFFFFF","grip marks up a surface","scrape","Up we go.","sport"},
 	{"climbing harness","BMBONF","l",1,5,3,"C0392B","24262A","webbing harness with buckles","bonk","Hang on tight.","sport"},
@@ -400,7 +403,4 @@ return {
 	{"cringe","KMBFOB","jO",2,7,1,"BDBDBD","FFAB91","shuddering wobble ring","eugh","Oof. Can't look.","meme,silly"},
 	{"critter","AGBJAA","UCb",2,7,2,"A0724A","F5E6CC","scruffy little furball with bright eyes and a twitchy nose","chitter","Lives in your walls. Pays no rent.","mammal,cute,wild"},
 	{"crocodile","ABDJAC","fHOB",7,5,8,"5A6A3A","C8C08A","long armored snout, teeth showing","snap","Smiles with all its teeth. Not friendly.","reptile,predator,aquatic"},
-	{"crocodile monitor","AMCJAA","Cf",5,7,2,"2A3A2A","E8D8A0","very long-tailed monitor","hiss","Longest lizard. Mostly tail.","reptile"},
-	{"crocus","NGANMI","dFS",1,1,1,"9575CD","FFC107","goblet bloom popping out of snow","rustle","First flower of spring. Very punctual.","plant,flower"},
-	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
 }

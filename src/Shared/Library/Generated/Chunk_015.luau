@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
+	{"latke","IMBAKK","Uke",3,7,2,"C8803A","F2D07A","crispy shredded potato disc","whoosh","Crispy potato frisbees.","edible"},
+	{"latte","IABOKI","DF",3,9,2,"C8A070","F2E8D8","tall cup, foam art heart","fizz","Milk, coffee, and art.","edible,drink"},
+	{"laugh","KMBFOB","jd",2,7,1,"FFEB3B","FFFFFF","rippling HA HA HA letters","haha","Laughter is the best medicine.","silly"},
+	{"laughing flower","NLBLMI","jd",2,1,2,"FFEB3B","F06292","wobbling bloom that giggles","giggle","Hehehe. Hahaha. Confusion!","plant,magic,mythical,silly"},
 	{"laughing gas","FJCDOJ","jdO",2,3,2,"F48FB1","FFF59D","pink cloud with tiny laughing faces","giggle","Cannot fight while giggling.","silly"},
 	{"laughter","KHCF6B","jFPO",3,7,1,"FDE047","F97316","rolling wave of HA HA HA letters and tear-crying faces","giggle","Contagious. Milk out of the nose guaranteed.","silly,mood"},
 	{"launch","KACAKB","kl",5,9,2,"FF7043","FFE0B2","target shooting skyward with smoke trail","whoosh","To infinity! Not beyond. Just up.","silly"},
@@ -51,6 +56,7 @@ return {
 	{"layer cake","IMCLKI","dSc",2,3,3,"F7E0C0","7A4026","tall many-layered slice","chomp","Layers of joy, stacked high.","edible,sweet"},
 	{"laziness","KMBNOI","NO",2,1,3,"BCAAA4","FFE0B2","droopy sleepy area with pillows","yawn","Nobody feels like doing anything.","silly"},
 	{"lead pipe","JKCHJK","kf",3,6,6,"4A4D52","8E9196","short heavy metal pipe","bonk","Plumbing, weaponised.","medieval,heavy"},
+	{"leaden echo","KLBAVE","eN",5,8,4,"3D8C5A","F2D04A","a small spirit stamps a heavy sigil; the foe sinks","thud","Freeze! Not cold. Heavy.","anime,stand,gravity"},
 	{"leader","LHCJNA","GQfh",5,5,6,"B45309","FDE047","commander pointing forward, cape, feathered hat","fanfare","Follow me! Wait, which way were we going?","warrior,royal"},
 	{"leaellynasaura","ACCJAA","dk",3,5,6,"8A7A6A","D8C8B0","small big-eyed polar dino","honk","Big eyes for long polar nights.","dinosaur,extinct,reptile"},
 	{"leaf","NGAELJ","dSP",1,6,1,"7CB342","FF9800","single flat leaf with veins","rustle","Floats down gently. Distracts briefly.","plant"},
@@ -397,10 +403,4 @@ return {
 	{"lyrebird","AMBJDB","jdA",2,7,1,"8A6A4A","E8D8C0","lyre-shaped tail feathers","tweet","Mimics chainsaws perfectly. Showbiz.","bird,cute"},
 	{"lystrosaurus","AMCJAA","f",3,4,6,"8A7A5A","C8B08A","tusked pig-like reptile","growl","Survived the great dying. Tough.","extinct,ancient"},
 	{"maamoul","IMBAKK","Uke",3,7,2,"E8C88A","F7F2EC","patterned date-filled cookie","whoosh","A stamped cookie with a date inside.","edible"},
-	{"mac and cheese","IMBLGI","FcN",2,3,3,"F2B33A","F2D08A","creamy orange pasta pile","gloop","A cheesy hug in a bowl.","edible,sticky"},
-	{"macadamia","IEAAKK","UeO",2,8,8,"F2E8C8","8A5A3A","round cream nut, hard shell","tok","The toughest shell in the nut world.","edible,nut"},
-	{"macadamia cookie","IMBAKK","Uke",3,7,2,"E8C88A","F2E8C8","cookie with white chunks","whoosh","Nuts and white chocolate. Fancy.","edible"},
-	{"macaque","AMBJBA","deb",2,7,2,"9A8A72","E8A090","pink face, short tail","chatter","Steals your sunglasses. Wears them.","mammal,primate"},
-	{"macaron","IMALKI","dSc",2,3,3,"F2A6C8","B8E0C8","two pastel shells, cream middle","chomp","Pastel, delicate, very fancy.","edible,sweet,fancy"},
-	{"macaroni","IMAELB","eVP",2,7,1,"F2D08A","E8C070","small curved tubes","pitter","Tiny curved tubes. Excellent ammo.","edible"},
 }

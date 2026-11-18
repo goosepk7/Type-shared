@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"equinox","GLDNOI","GF",4,3,5,"FFF59D","1A237E","half-day half-night sky split","chime","Perfect balance of day and night.","space"},
+	{"eradicate","KLDF6B","TIPO",8,6,1,"EF4444","F8FAFC","wide red scanning line sweeping and erasing what it crosses","whum","Target acquired. Target... where did it go?","scifi"},
+	{"erase","KLCAKB","iZ",6,7,1,"ECEFF1","7C4DFF","giant pencil-eraser swipe","squeak","Ctrl-Alt-Gone.","silly,magic"},
+	{"eraser","BMAOJK","jF",1,5,2,"F06292","F2F2EE","pink rectangular rubber block","tap","Undo mistakes. Including you.","school"},
+	{"eris","MCDGKJ","jk",4,4,7,"ECEFF1","B0BEC5","bright icy dwarf world","rumble","Causes trouble wherever it orbits.","space"},
 	{"erosion","FECNOI","iN",4,2,3,"A1887F","D7CCC8","crumbling ground worn by wind and water","hiss","Slowly wears everything down.","natural"},
 	{"error","KLBAKB","jO",3,8,1,"D32F2F","FFFFFF","red X pop-up box","beep","Something went wrong. On purpose.","meme,silly"},
 	{"eruption","HAENOI","KEkl",8,5,4,"E64A19","FFAB40","ground bursts open, fountain of lava and rocks","boom","The ground sneezed lava.","natural,fire,explosive"},
@@ -398,9 +403,4 @@ return {
 	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
 	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
 	{"floating castle","EFFCIJ","GSeh",7,1,9,"ECEFF1","7E57C2","castle on a floating rock with waterfalls","chime","Floats above the fight. Drops surprises.","structure,magic,mythical"},
-	{"floating city","EFFNIJ","lSh",5,1,8,"ECEFF1","FFD54F","spires on a hovering platform","hum","No traffic. Just clouds.","structure,future"},
-	{"floating eye","ALDJKE","jAeO",7,3,6,"7C3AED","FDE68A","giant floating eyeball with eyestalks","zap","Sees all. Blinks rarely. Very dry.","dungeon"},
-	{"floating rocks","MLENIJ","lS",4,1,8,"8D6E63","7CB342","chunks of land drifting in the sky","rumble","Gravity takes a holiday here.","place,terrain,magic"},
-	{"flock","AFDDLB","jAPb",5,7,3,"ECEFF1","607D8B","swirling V of small birds, feathers drifting","tweet","Birds of a feather attack together.","bird,swarm"},
-	{"flood","HBENOI","SINP",7,4,5,"2269A8","A9DBF5","rising murky water filling the area","splash","Everything is a swimming pool now.","natural,aquatic"},
 }

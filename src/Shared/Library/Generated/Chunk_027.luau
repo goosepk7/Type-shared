@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toothpick","BMAAuK","Te",1,9,1,"C49A6C","D2B48C","tiny wooden spike","thud","The world's smallest spear.","household"},
+	{"top hat","BLBONI","dh",2,5,2,"24262A","9E1B32","tall cylinder hat with band","swish","Something's in there. Usually a rabbit.","clothing,magic,fancy"},
+	{"topaz","BHAA4J","ce",2,7,6,"E67E22","D4A72C","golden orange gem","chime","Sunset in a stone.","treasure,shiny"},
+	{"topi","AMCJAA","Dk",4,8,4,"8A4A2A","3A3A6A","reddish antelope with purple patches","bleat","Stands on termite mounds to look cool.","mammal,wild"},
+	{"topiary","NGCCMI","GdS",2,1,5,"43A047","1B5E20","bush trimmed into a cute animal shape","rustle","Shaped like a rabbit. Fights like a hedge.","silly,cute"},
+	{"topic","KMBOKB","jdY",2,5,2,"F59E0B","FFFFFF","speech bubble with an arrow swerving off sideways","pop","Anyway. Moving on. Completely different thing.","school,silly"},
+	{"torch","BABHJK","Kcf",2,5,2,"8B5A2B","FF6A1A","wooden stick with flaming tip","flicker","Bring one to every cave.","flammable"},
 	{"torii gate","EHCCII","FSY",2,1,8,"C62828","263238","red post-and-beam gateway","thud","Step through to somewhere sacred.","structure,holy"},
 	{"tornado","HFEN5K","klSHP",8,6,5,"8A9BA8","DCE6EC","tall grey funnel, debris ring and flung rocks at base","howl","Picks things up. Puts them down far away.","storm,natural,air"},
 	{"tornado outbreak","HFFN5K","klSHP",9,6,6,"78909C","ECEFF1","several funnels touching down at once","howl","One tornado was not enough.","storm,natural,danger"},
@@ -396,11 +403,4 @@ return {
 	{"verdant bastion","NGDCaI","GWkl",6,5,4,"966E4A","60AA46","a row of gnarled trees bursts up as a woven wall","creak","Plant a seal. Grow a fortress. Water occasionally.","anime,ninja,wood,wall"},
 	{"vermilion bird","AADJDB","KAFe",7,8,5,"DC2626","FB923C","crimson pheasant, flame tail ribbons","screech","Guardian of the south and of spicy weather.","mythical,bird,fire,ancient"},
 	{"vermin","AJBJLA","CPbh",2,7,2,"6B6257","B8AC9C","scurrying pack of scruffy grey nibblers","skitter","If you see one, there are forty.","swarm,wild"},
-	{"vest","BMBONI","G",1,6,2,"1F2F55","D4A72C","buttoned waistcoat","swish","Dapper and ready.","clothing"},
-	{"veteran","LMCJNA","Ge",5,4,6,"4D7C0F","CA8A04","medals, eyepatch, grizzled beard","ding","Seen it all. Not impressed.","military"},
-	{"veterinarian","LGCJNA","Fh",3,5,4,"F8FAFC","22C55E","scrubs with paw prints, treat pouch","chime","Brings every animal friend in town.","healer"},
-	{"vibe check","KHBFOB","jO",3,8,1,"CE93D8","FFF59D","pastel ring checking everyone","ding","Vibe check! You failed.","meme"},
-	{"vibration","FEBFOB","O",3,7,2,"9C8B7A","E0D4C4","trembling ground rings","buzz","Bzzzzzzzz.","silly"},
-	{"vibro blade","CKCHrK","fTO",6,8,4,"DDE3E8","3FC1D9","humming buzzing blade","shing","It hums. Then it cuts.","scifi,sharp"},
-	{"viburnum","NGCNMI","dFSe",1,1,4,"FFFFFF","2E7D32","round white snowball flower heads","rustle","Throws snowballs. Flower ones.","plant,flower"},
 }
