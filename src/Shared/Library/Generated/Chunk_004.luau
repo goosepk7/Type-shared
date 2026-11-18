@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
+	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
+	{"bread fortress","IMECII","GFk",5,2,9,"C8904A","F5E6C8","castle walls of loaves","thud","A carb castle.","edible,giant"},
+	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
+	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
 	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
@@ -237,6 +242,7 @@ return {
 	{"cake wall","EMCCII","GdSc",2,1,3,"F8BBD0","FFF8E1","layered cake slab with sprinkles","thud","Everyone stops to eat it.","sweet,silly,edible"},
 	{"caladrius","AHBJDB","AQF",2,7,3,"F8FAFC","FDE68A","snow white bird, glowing gaze","chime","Looks at you. Your cold is gone.","mythical,bird,holy,cute"},
 	{"calamari","IMAELB","UeP",2,7,1,"E8C88A","F2E2C0","golden rings of squid","pitter","Crispy rings. Toss like quoits.","edible"},
+	{"calamity sphere","FIEAKB","Eke",9,3,4,"76229A","E2C8FF","a crushing black sphere gathered, crushed small and fired","boom","Gather the dark. Squeeze. Let go.","anime,ninja,shadow"},
 	{"calculator","BDAOKI","j",1,5,3,"8E9196","24262A","keypad with small screen","beep","80085. Heh.","office,school"},
 	{"calendar","BLBELB","jNP",3,5,2,"FFFFFF","DC2626","wall calendar ripping off pages that fly like blades","rustle","Is it Monday already? It is always Monday.","household,time,school"},
 	{"calf","AMBJAA","Dk",2,4,7,"C8B8A8","F7F4EE","wobbly baby cow, big eyes","moo","Baby cow. Professional napper.","mammal,heavy,farm,cute"},
@@ -397,10 +403,4 @@ return {
 	{"carpenter","LGCJNA","Ge",3,4,5,"A16207","78350F","tool belt, pencil behind ear, hammer","thud","Measures twice. Bonks once.","tools"},
 	{"carpenter ant","AMAJLA","CfP",1,5,1,"1E1E1E","6A3A1E","large black ant","skitter","Remodels your house. Uninvited.","insect,swarm"},
 	{"carpenter bee","AJAJLB","CATMP",2,7,1,"1E1E24","F2D82A","big shiny black bee","buzz","Drills holes in your porch.","insect,swarm,venomous"},
-	{"carriage pumpkin","DLDKHL","DkgY",4,5,5,"F57C00","E1F5FE","giant pumpkin coach on curly gold wheels","engine","Turns back at midnight. Hurry.","mythical,royal"},
-	{"carrion beetle","AMAJFA","GCf",1,3,4,"1E1E1E","E8701E","black-orange beetle","click","Nature's undertaker.","insect,armored"},
-	{"carrion crawler","AJDJFA","MHO",5,4,5,"365314","F0ABFC","giant centipede-worm with face tentacles","skitter","Wiggly. Sticky. Not a friend.","dungeon"},
-	{"carrion flower","NJBDMI","jSM",3,1,2,"6A1B9A","8D6E63","hairy star bloom that smells awful","rustle","Stinks so bad enemies retreat.","plant,flower,silly"},
-	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
-	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
 }
