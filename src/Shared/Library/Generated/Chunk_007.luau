@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
+	{"croque monsieur","IGBOKI","F",2,5,3,"D9A04A","F2C870","grilled ham cheese sandwich","crunch","A sandwich with a fancy title.","edible,healthy"},
+	{"croquet mallet","BMCHtK","kf",2,5,4,"8B5A2B","C0392B","long mallet with barrel head","bonk","Wack. Through the hoop.","sport"},
 	{"croquette","IMAELB","Ke",2,7,1,"D9A04A","F2E2C2","crumbed golden cylinder","pitter","Crispy outside, creamy surprise inside.","edible"},
 	{"cross","KMBAJK","GTO",3,7,3,"DC2626","FFFFFF","big red X spinning like a blade","buzz","X marks the spot. The spot is you.","shape,school"},
 	{"cross slash","FMCHJB","fTV",6,9,1,"ECEFF1","FF5252","two glowing slashes forming an X","shing","X marks the ouch.","sharp"},
@@ -400,7 +403,4 @@ return {
 	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
 	{"dog walker","LMCJNA","Qh",3,6,4,"15803D","F59E0B","ten leashes, ten dogs","bark","Is walked by the dogs.","silly,canine"},
 	{"dogfish","ABBJEC","DfTB",3,8,6,"7A7468","D8D4CC","small slim shark, white spots","chomp","Small shark, fish name, dog vibe.","fish,aquatic,ocean,predator"},
-	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
-	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
-	{"dogwood","NGCCMI","GWFkS",3,1,5,"5D4037","FFFFFF","small tree with white cross blossoms","rustle","No dogs involved. Mostly.","plant,tree"},
 }

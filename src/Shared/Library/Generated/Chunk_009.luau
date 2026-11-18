@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"esports player","LMCJNI","TeY",5,9,4,"7C3AED","22D3EE","team jersey, gaming chair, headset","click","240 actions per minute.","gaming,sport"},
+	{"espresso","IABOKI","DF",4,10,2,"2A160C","6B4026","tiny cup, rich crema","fizz","Tiny cup. Big zoom.","edible,drink"},
+	{"esquites","IMAELB","eNP",2,6,1,"F2C24A","F7F2EC","cup of corn with toppings","pitter","Street corn in a cup.","edible,grain"},
 	{"essay","BMBCnI","GjN",2,1,4,"FFFFFF","1F2937","wall of dense typed text, word count at the bottom","tap","In conclusion: no.","school"},
 	{"essence","FLBOKJ","iF",3,4,2,"D4A5FF","FFFFFF","floating wisp of concentrated glow","hum","The pure good stuff.","magic"},
 	{"estoc","CKCHJK","fT",5,7,4,"8A929B","24262A","long stiff thrusting blade","shing","Armour-piercing pointy stick.","fantasy,sharp"},
@@ -400,7 +403,4 @@ return {
 	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
 	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
-	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
-	{"flower bed","NGCNMI","FSN",2,1,3,"F06292","6D4C41","rows of colourful blooms in soil","rustle","Keep off. The flowers fight back.","plant,flower"},
-	{"flower crown","NGAOMI","F",1,1,1,"F8BBD0","FFEB3B","ring of woven blossoms","rustle","Instant festival vibes.","plant,flower,cute"},
 }

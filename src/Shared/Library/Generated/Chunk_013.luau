@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"holy shield","KHCIKI","GFa",3,4,8,"FFE082","FFFFFF","golden glowing dome, wing-shaped edges","chime","Protected by pure good vibes.","holy,defence"},
+	{"holy shrine","EHCNII","FSO",3,1,8,"FFF8E1","FFD54F","marble shrine glowing gold","thud","Heals the faithful. Blinds the wicked.","structure,holy"},
+	{"holy slash","FHCHJB","KfT",6,9,1,"FFF59D","FFFFFF","glowing golden arc","shing","A righteous swipe.","holy,sharp"},
 	{"holy spike","FHCLII","KT",5,6,3,"FFF59D","FFFFFF","golden light spikes rising","chime","Sharp. Shiny. Righteous.","holy,sharp"},
 	{"holy staff","CHCAzK","Fe",5,5,5,"F2F2EE","D4A72C","staff with radiant sun disc","shing","Heals friends. Smites jerks.","fantasy,holy"},
 	{"holy storm","FHEEOJ","KFP",8,5,3,"FFF8E1","FFD54F","golden clouds raining spears of light","choir","Very holy weather.","holy,storm"},
@@ -400,7 +403,4 @@ return {
 	{"jade golem","AGDJNA","GFk",7,2,9,"059669","A7F3D0","polished green jade giant","chime","Precious. Unbreakable. Grumpy.","construct,gem"},
 	{"jade vine","NLCNMI","dFS",2,1,3,"1DE9B6","43A047","dangling claws of turquoise flowers","rustle","Glows a colour that should not exist.","plant,flower"},
 	{"jaekelopterus","ABDJQA","fMNB",6,6,2,"6A5A44","C8A07A","giant sea scorpion","skitter","Biggest bug ever. Swam.","arachnid,spooky,venomous,extinct,ancient"},
-	{"jaffa cake","IMBAKK","Uke",3,7,2,"E8762B","3A1A0C","orange jelly sponge disc","whoosh","Cake or biscuit? The war continues.","edible"},
-	{"jaguar","AMDJAA","DfTB",7,8,5,"D99A3C","2B1E10","stocky spotted body, massive jaw, rosettes","roar","Bites through turtle shells for fun.","mammal,predator,wild"},
-	{"jaguarundi","AMCJAA","ZfT",4,7,3,"6D5D52","9A8878","long weasel-like body, plain dark coat","hiss","A cat that forgot it was a cat.","mammal,predator,wild"},
 }

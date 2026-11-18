@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
+	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
+	{"ghost veil","KLBOKI","Z",2,6,3,"CFE8F2","7A8FA6","caster fades to a faint shimmering outline","whoosh","Now you mostly don't see me.","magic"},
 	{"ghoul","AICJNA","ifM",4,6,4,"57534E","84CC16","hunched pale creature, long claws","growl","Lurks in graveyards eating snacks it shouldn't.","undead,spooky"},
 	{"ghoul king","AIDJNA","ifh",7,5,6,"365314","57534E","crowned ghoul, bone cape","growl","Leader of the graveyard snack club.","undead,royal,spooky"},
 	{"giant","AEEJNA","kfO",8,3,8,"A16207","FEF3C7","enormous human figure, belt and boots","stomp","Fee fi fo... you know the rest.","giant"},
@@ -400,7 +403,4 @@ return {
 	{"grief","KBCEOJ","iSN",3,2,1,"64748B","94A3B8","small grey cloud raining on one wilted flower","sigh","Good grief.","mood"},
 	{"griefer","LACJNA","jEb",4,7,3,"111827","F97316","figure holding a lit fuse, grin","cackle","Blew up your house. Says sorry. Doesn't mean it.","meme,gaming,villain"},
 	{"griffin","AFDKAB","DAkfg",7,8,6,"B45309","F5F5F4","lion body, eagle head and wings","screech","Half lion, half eagle, fully in charge.","mythical,flying,mount"},
-	{"griffin egg","AFALGI","Gh",1,1,5,"D6A35A","F8FAFC","speckled golden egg in a nest","crack","Hatches a very loud baby.","mythical"},
-	{"griffin king","AFEKAB","Akgh",8,8,7,"78350F","FACC15","huge golden griffin with crowned crest","screech","Lord of the skies. Dramatic landings.","mythical,mount,royal"},
-	{"griffon vulture","AMCJDB","DiAfT",4,9,3,"C8A07A","F2E8D8","pale vulture with fluffy collar","screech","Fluffy scarf. Grim job.","bird,predator"},
 }

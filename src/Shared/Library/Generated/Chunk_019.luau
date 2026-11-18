@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pastry","IMBA7B","UFc",2,5,1,"E0A84A","F6D48A","flaky golden swirl with icing and a jam centre","crunch","Flaky. Like your teammate.","edible,sweet,breakfast"},
+	{"pasty","IMBAKF","Fe",3,6,2,"D9A04A","C8904A","crimped half-moon pie","splat","A miner's lunch with a crimped handle.","edible"},
+	{"pat","KHAOKJ","F",1,5,1,"FFF59D","FFFFFF","gentle hand with sparkles","pat","Good job. Here, a pat.","cute,support"},
 	{"patagotitan","AMFJAA","kIO",9,2,10,"8A7A6A","C8B8A8","gigantic armored-back sauropod","rumble","Titanic. Literally.","dinosaur,extinct,reptile,heavy,danger"},
 	{"patience","KEBOKI","GF",1,1,6,"8D6E63","FFF8E1","calm stone-like glow","tick","Good things come to those who wait.","support"},
 	{"patrol","LHCJNA","GQeO",4,5,5,"1E3A8A","FDE047","two guards walking a loop with lanterns and whistles","whistle","Round and round. Nothing to see. Oh wait.","defense,military"},
@@ -400,7 +403,4 @@ return {
 	{"poison bubble","FJBGKJ","UM",3,4,1,"76FF03","F8BBD0","green bubble that pops into fumes","pop","Don't pop it. Too late.","toxic,silly"},
 	{"poison cloud","FJDDOJ","SMNP",5,3,2,"76FF03","33691E","rolling bilious green cloud with bubbles","hiss","Smells as bad as it looks.","toxic"},
 	{"poison dart","FJBAJB","TMe",4,9,1,"64DD17","1B5E20","thin green-dripping needle","zip","Tiny pinch. Big problem.","toxic,sharp"},
-	{"poison dart frog","AJAJAG","UMe",3,5,1,"2A6AE8","1E1E1E","tiny bright blue frog, black spots","croak","Pretty enough to look at. Never lick.","amphibian,wetland"},
-	{"poison dart trap","BJBLII","Me",4,1,5,"8C8C88","2E8B57","wall holes shooting darts","snap","Fwip fwip fwip.","trap,defense"},
-	{"poison dragon","AJEKAB","AMeg",8,6,7,"4D7C0F","D9F99D","sickly green dragon dripping acid","roar","Its breath melts armor. And snacks.","mythical,reptile,toxic"},
 }

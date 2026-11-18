@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"poison dart frog","AJAJAG","UMe",3,5,1,"2A6AE8","1E1E1E","tiny bright blue frog, black spots","croak","Pretty enough to look at. Never lick.","amphibian,wetland"},
+	{"poison dart trap","BJBLII","Me",4,1,5,"8C8C88","2E8B57","wall holes shooting darts","snap","Fwip fwip fwip.","trap,defense"},
+	{"poison dragon","AJEKAB","AMeg",8,6,7,"4D7C0F","D9F99D","sickly green dragon dripping acid","roar","Its breath melts armor. And snacks.","mythical,reptile,toxic"},
 	{"poison elemental","AJDJGJ","SMP",6,4,5,"65A30D","D9F99D","bubbling green sludge humanoid","bubble","Do not drink. Do not touch. Do not hug.","elemental,toxic"},
 	{"poison fog","FJDDOJ","ZSMP",5,3,2,"9CCC65","33691E","low green fog creeping along ground","hiss","Cannot see. Should not breathe.","toxic"},
 	{"poison ivy","NJBLMI","SMNP",4,1,3,"33691E","C62828","three shiny leaves, reddish stems","rustle","Leaves of three, let it be.","plant,silly"},
@@ -400,7 +403,4 @@ return {
 	{"rainbow road ride","DHCKHB","DAFg",4,9,3,"FF5252","40C4FF","glowing rainbow ribbon you ride","whoosh","Slide along a rainbow. Obviously.","vehicle,magic,mythical"},
 	{"rainbow serpent","ABFJCD","FHB",8,5,8,"EF4444","3B82F6","vast serpent striped in rainbow colors","whoosh","Carved rivers. Painted the sky.","mythical,reptile,ancient"},
 	{"rainbow sherbet","ICBAKJ","JeN",3,5,2,"F28C9A","8DC63F","tri-color fruity scoop","squish","A rainbow you can eat.","edible,frozen,sweet"},
-	{"rainbow slime","AHBJGG","UFV",2,5,3,"F472B6","60A5FA","wobbly jelly shifting through colors","squelch","Tastes like rainbows. Don't taste it.","slime,cute"},
-	{"rainbow stag beetle","AMBJFA","Gkf",2,3,4,"3AE0A0","E8501E","shimmering rainbow stag beetle","click","A rainbow with jaws.","insect,armored"},
-	{"rainbow trail","KHBOKB","DF",2,9,2,"FF4081","40C4FF","rainbow stripe trailing behind","chime","Leave a rainbow wherever you go.","cute,speed"},
 }

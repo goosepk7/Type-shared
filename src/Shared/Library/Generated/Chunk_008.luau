@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"doghouse","EMBCII","GSh",1,1,4,"B71C1C","F5E6CA","tiny house with an arched door","thud","You are in the doghouse now.","silly,cute"},
+	{"dogue de bordeaux","AMDJAA","DQf",5,7,4,"B8603A","E8A07A","huge wrinkly head, red coat","bark","Big head. Bigger drool.","mammal,pet"},
+	{"dogwood","NGCCMI","GWFkS",3,1,5,"5D4037","FFFFFF","small tree with white cross blossoms","rustle","No dogs involved. Mostly.","plant,tree"},
 	{"dojo","MMDNlI","SfOh",5,1,6,"E7D8B1","111827","paper-walled hall with mats, a gong and a row of belts","chop","Bow first. Then bonk.","sport,building"},
 	{"dokkaebi","ALCJNA","jbh",4,6,4,"1E3A8A","FACC15","horned goblin with magic club","cackle","One bonk and treasure appears.","goblin,mythical"},
 	{"doldrums","FFDNOI","NO",3,1,4,"CFD8DC","ECEFF1","eerily still air, flat haze","hush","No wind. No hurry. No hope.","air"},
@@ -400,7 +403,4 @@ return {
 	{"escalator","OKDL1I","IN",2,1,7,"C9CED4","24262A","moving metal staircase","clank","Up you go. Or down.","mechanical"},
 	{"escape artist","LMCJNA","ZY",3,8,3,"111827","FACC15","chains, padlock, smirk","whoosh","Tied up. Not anymore.","circus"},
 	{"escargot","IMBLGI","SNO",2,3,2,"5A4A2A","7DBE3A","snail shells in garlic butter","squeak","Fancy snails. Very slow food.","edible,slippery,silly,fancy"},
-	{"esports player","LMCJNI","TeY",5,9,4,"7C3AED","22D3EE","team jersey, gaming chair, headset","click","240 actions per minute.","gaming,sport"},
-	{"espresso","IABOKI","DF",4,10,2,"2A160C","6B4026","tiny cup, rich crema","fizz","Tiny cup. Big zoom.","edible,drink"},
-	{"esquites","IMAELB","eNP",2,6,1,"F2C24A","F7F2EC","cup of corn with toppings","pitter","Street corn in a cup.","edible,grain"},
 }

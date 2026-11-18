@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"climate","KFENOI","KJSP",6,1,5,"F97316","38BDF8","half scorching sun, half blizzard swirling together","howl","Hot. Cold. Hot. Make up your mind.","weather,science"},
+	{"climb","KMBOKG","l",2,5,3,"8D6E63","FFFFFF","grip marks up a surface","scrape","Up we go.","sport"},
 	{"climbing harness","BMBONF","l",1,5,3,"C0392B","24262A","webbing harness with buckles","bonk","Hang on tight.","sport"},
 	{"climbing rope","BMCLKF","lH",1,4,4,"E67E22","1F2F55","coiled bright climbing rope","bonk","Up we go.","sport"},
 	{"climbing wall","EMCCII","GlS",2,1,6,"7E57C2","FFB300","wall dotted with colourful holds","thud","Up you go. Enemies can not.","structure,sport"},
@@ -207,6 +209,7 @@ return {
 	{"conveyor belt","OKDL1I","IN",2,3,7,"24262A","8A929B","rolling belt on metal frame","hum","Takes enemies right back where they came.","mechanical"},
 	{"convict cichlid","ABAJEC","dfB",1,6,1,"E8E8E8","1E1E1E","black-white striped cichlid","splash","Wears a prison stripes outfit.","fish,aquatic"},
 	{"convoy","DMFKHL","DkTgh",7,5,9,"556B2F","37474F","long line of trucks and escorts","engine","A whole road full of trucks.","vehicle,mechanical"},
+	{"cooked frag","CABG2F","Ee",5,7,1,"556B2F","FFB347","segmented frag with a ticking fuse ring","boom","Cooked to perfection. Medium rare.","gaming,shooter,military"},
 	{"cookie","IMBAKK","dce",3,7,2,"C8904A","4A2516","round chewy disc with chocolate chips","whoosh","Monsters can't resist them.","edible"},
 	{"cookie beast","AMCJNA","dc",3,5,4,"1D4ED8","92400E","shaggy blue monster with crumbs","chomp","Om nom nom. Always nom.","silly,cute"},
 	{"cookie cake","IMCAKK","Uke",4,7,2,"C8904A","F2A6C8","giant cookie with frosting edge","whoosh","A cookie that wanted to be a cake.","edible,dessert"},
@@ -400,7 +403,4 @@ return {
 	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
 	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
 	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
-	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
-	{"croque monsieur","IGBOKI","F",2,5,3,"D9A04A","F2C870","grilled ham cheese sandwich","crunch","A sandwich with a fancy title.","edible,healthy"},
-	{"croquet mallet","BMCHtK","kf",2,5,4,"8B5A2B","C0392B","long mallet with barrel head","bonk","Wack. Through the hoop.","sport"},
 }

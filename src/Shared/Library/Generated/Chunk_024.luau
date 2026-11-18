@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snow cannon","OCCExI","JNP",3,3,5,"F2F2EE","2F6FD1","cannon fan blasting snow","whoosh","Instant winter. No waiting.","frozen"},
+	{"snow cloud","FCCDOJ","QJN",4,4,3,"ECEFF1","B3E5FC","fluffy cloud snowing on target","hush","Your own little winter.","frozen"},
+	{"snow cone","ICBNGI","JNP",3,3,2,"4FA3E8","E8434F","paper cone of rainbow ice","crackle","A cone of syrupy snow.","edible,frozen,sweet"},
+	{"snow dance","KCCEOJ","JN",3,4,2,"FFFFFF","B3E5FC","caster twirling as snow falls","music","Do the dance. Get a snow day.","music,frozen"},
 	{"snow day","GCCNOI","dFN",2,3,3,"FFFFFF","B3E5FC","snowy playground glow","yay","No school. Snowball time.","frozen,silly"},
 	{"snow devil","GCCN5K","jJl",5,6,2,"FFFFFF","B3E5FC","small spinning snow funnel","whoosh","Frosty the twister.","frozen,storm"},
 	{"snow elemental","ACDJOK","JNP",6,5,5,"F8FAFC","BAE6FD","whirling snow storm with icy eyes","howl","A snow day that fights back.","elemental,frozen"},
@@ -399,8 +403,4 @@ return {
 	{"stare down","KIBAKB","O",3,4,1,"4A148C","FFFFFF","intense glowing eyes","hmm","Don't blink. Don't blink.","silly"},
 	{"starfall","HHEEOB","KePO",8,7,3,"FFF3B0","B39DDB","rain of glowing white-gold stars","chime","The sky is falling. Beautifully.","space,holy"},
 	{"starfighter","DDDAHB","ATeg",7,10,6,"ECEFF1","E53935","sharp nose, four angled wings, laser tips","pew","Pew pew. Pew pew pew.","vehicle,space"},
-	{"starfire","FHDBKI","KTe",7,8,2,"FFF2B0","FF9E3D","white-gold beam with star sparkles","hum","Borrowed from a star. Not returning it.","fire,space"},
-	{"starfish","ABAJGA","GFNV",1,1,4,"E8701E","F2B07A","five-armed star, textured top","squelch","Regrows its arms. No big deal.","aquatic,ocean"},
-	{"starfruit","IGBAKK","TeV",3,7,2,"F2D33F","BDD34B","five-ridged star cross-section","whoosh","Fruit shaped like a ninja star.","edible,fruit"},
-	{"stargazer fish","ADAJEC","dZLB",1,6,1,"8A7A6A","F2F2EE","buried fish with eyes on top","splash","Buried, staring, electric.","fish,aquatic"},
 }

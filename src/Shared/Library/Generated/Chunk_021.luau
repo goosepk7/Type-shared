@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rainbow slime","AHBJGG","UFV",2,5,3,"F472B6","60A5FA","wobbly jelly shifting through colors","squelch","Tastes like rainbows. Don't taste it.","slime,cute"},
+	{"rainbow stag beetle","AMBJFA","Gkf",2,3,4,"3AE0A0","E8501E","shimmering rainbow stag beetle","click","A rainbow with jaws.","insect,armored"},
+	{"rainbow trail","KHBOKB","DF",2,9,2,"FF4081","40C4FF","rainbow stripe trailing behind","chime","Leave a rainbow wherever you go.","cute,speed"},
 	{"rainbow unicorn","AHDKAA","DFeg",6,8,5,"F472B6","60A5FA","unicorn with rainbow trail","neigh","Leaves a rainbow everywhere it goes.","cute"},
 	{"raincoat","BBCONI","G",1,5,2,"F1C40F","F1C40F","bright yellow hooded raincoat","swish","Rain? Bring it.","clothing"},
 	{"rainier cherry","IGAELB","eVP",2,7,1,"F2C24A","E8434F","yellow-blushed cherry","pitter","A golden cherry with a pink blush.","edible,fruit,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"rubber stamp","BMAHJK","fO",1,5,3,"5A3A1E","C0392B","wooden handle stamper","tap","APPROVED. BONK.","office"},
 	{"rubber tree","NGDCMI","GUWkSN",3,1,6,"5D4037","2E7D32","glossy dark leaves, dripping sap","rustle","Sticky sap. Sticky situation.","plant,tree"},
 	{"rubber wall","BMDCnK","GUa",2,1,7,"FF8C42","24262A","thick rubbery barrier","thud","Boing. Bounces everything back.","defense"},
-	{"rubble","FECLII","GN",3,2,6,"8D6E63","BCAAA4","pile of broken rocks and dust","crunch","Watch your step. All the steps.","heavy"},
-	{"rubik's cube","BMALKI","jO",2,3,4,"C0392B","F1C40F","coloured cube of little squares","squeak","Solve me. You can't.","toy"},
-	{"ruby","BAAA4J","Kce",3,7,7,"B0103A","9E1B32","deep red cut gem","chime","Glows warm, hits hot.","treasure,shiny"},
 }

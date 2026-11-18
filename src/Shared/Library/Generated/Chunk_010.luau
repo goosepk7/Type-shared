@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
+	{"flower bed","NGCNMI","FSN",2,1,3,"F06292","6D4C41","rows of colourful blooms in soil","rustle","Keep off. The flowers fight back.","plant,flower"},
+	{"flower crown","NGAOMI","F",1,1,1,"F8BBD0","FFEB3B","ring of woven blossoms","rustle","Instant festival vibes.","plant,flower,cute"},
 	{"flower fairy","AGAJNB","AFc",1,8,1,"F472B6","A3E635","tiny fairy with petal wings","chime","Heals with pollen. Sneezes too.","fairy,plant,cute"},
 	{"flower field","MGENII","dFS",2,1,4,"F06292","8BC34A","carpet of colourful blooms","rumble","Smells amazing. Sneezes guaranteed.","plant,cute"},
 	{"flower pot","BEBA2K","eV",1,5,2,"B5653C","2E8B57","terracotta pot","clank","Falls off windowsills dramatically.","tool"},
@@ -400,7 +403,4 @@ return {
 	{"ghost slime","AIBJGJ","UZ",2,5,2,"E5E7EB","A5B4FC","see-through floating jelly","squelch","Boo. Squish.","slime,ghost"},
 	{"ghost stream","ODDBwI","eLNO",7,6,3,"FF8A3D","5AB8FF","a writhing stream from a backpack wand, then a trap","zap","Don't cross the streams. Probably.","scifi,movie,ghost"},
 	{"ghost swarm","AICJLJ","jAZP",5,7,2,"E5E7EB","A5B4FC","cloud of floating sheet ghosts","wail","Boo times fifty.","ghost,swarm,spooky"},
-	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
-	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
-	{"ghost veil","KLBOKI","Z",2,6,3,"CFE8F2","7A8FA6","caster fades to a faint shimmering outline","whoosh","Now you mostly don't see me.","magic"},
 }
