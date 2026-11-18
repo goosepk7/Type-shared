@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
+	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
+	{"english muffin","IMBAKK","Uke",3,7,2,"E8D0A0","C89A5A","flat round with nooks","whoosh","Nooks, crannies, and butter traps.","edible"},
+	{"enlarge","KLCOKI","W",4,4,4,"66BB6A","C8E6C9","green upward arrows, caster swelling huge","stretch","Bigger. Much bigger.","silly"},
+	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
 	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
 	{"entelodont","AMDJAA","DkO",7,4,8,"6A4A3A","C89A7A","giant pig with huge jaws","roar","A pig the size of a cow. Grumpy.","mammal,extinct,ancient,heavy"},
 	{"entropy","FLCNOI","jiN",5,3,3,"6B5E7A","B8A8C8","crumbling, fading, glitching area","crackle","Everything falls apart eventually.","chaos"},
@@ -194,6 +199,7 @@ return {
 	{"fertilizer","BGBNGI","WFSM",2,1,3,"5B3A1E","84CC16","steaming dark heap with a sprout bursting out the top","squelch","Smells awful. Plants love it. Plants are weird.","farm,gross,plant"},
 	{"festival","MHENlI","FScO",5,1,5,"A855F7","F59E0B","big stage, flags, muddy field and a thousand tiny tents","music","Lost your tent. Lost your friends. Best weekend.","party,music,place"},
 	{"festival dumpling","IMBHJI","kf",3,5,4,"E8B84A","F2D88A","sweet fried dough stick","bonk","Sweet fried party bread.","edible,silly"},
+	{"festival lion","AACJAG","DQf",5,7,4,"D7262E","FFC93A","prancing lion costume with a huge blinking head","drum","Two dancers, one lion, zero chill.","holiday,lunar new year,summon,festival"},
 	{"feta","IMBLKI","dSc",2,3,3,"F7F7F2","E8E8DF","crumbly white brine block","chomp","Crumbly, salty, Greek.","edible,sweet,dairy"},
 	{"fettuccine","IMBLGI","HN",2,3,3,"F2E2C2","F2D08A","flat ribbon noodles, white sauce","gloop","Ribbons of creamy pasta.","edible,sticky"},
 	{"fever","KABAKB","KN",3,6,1,"FF7043","FFFFFF","flushed red heat wobble","sizzle","Hot head. Wobbly legs.","silly"},
@@ -323,7 +329,6 @@ return {
 	{"firestorm","HAEEOJ","KkSP",8,6,4,"C62828","FF9800","swirling fire clouds raining burning embers","roar","Forecast: 100% chance of ouch.","storm,fire"},
 	{"fireweed","NABNMI","dFS",2,1,2,"E91E63","7CB342","tall pink spires after wildfires","rustle","First to grow back after a fire.","plant,flower"},
 	{"firework","CABAkB","dEeP",4,8,1,"C0392B","D4A72C","stick rocket with colourful tip","boom","Oooooh. Aaaaah. BOOM.","party,holiday,explosive"},
-	{"fireworks show","BADEJI","jEP",5,5,1,"D4A72C","FF3EA5","sky bursting with colourful fireworks","thud","Oooh! Aaah! Ouch!","party,explosive"},
 	{"first aid kit","BHBOII","F",1,3,3,"F2F2EE","C0392B","white box with red cross","thud","Patch up. Get back out there.","medical"},
 	{"first mate","LBBJNA","Qf",3,6,4,"0369A1","F8FAFC","striped shirt sailor with mop","arr","Mops the deck. Mops the enemies.","pirate"},
 	{"fish","ABAJEC","dB",1,6,1,"5E8EB8","E8F0F6","classic fish, tail fin, scales","splash","Swims. Blub. That's it.","fish,aquatic"},
@@ -398,9 +403,4 @@ return {
 	{"flea","AMAJFG","UdiP",1,6,1,"6A4A2A","3A2A1A","tiny jumper","buzz","Jumps 100 times its height.","insect"},
 	{"flee","KFBOKB","DZ",1,10,1,"E0E0E0","FFFFFF","caster zooming away with dust cloud","whoosh","Tactical retreat! Very tactical.","speed,silly"},
 	{"fleet","DBFELC","EehB",8,4,9,"607D8B","1E88E5","sea full of warships","engine","The whole navy arrives.","vehicle,mechanical"},
-	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
-	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
-	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
-	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
-	{"flight","KFCOKB","A",2,8,3,"B3E5FC","FFFFFF","caster lifting off with wind streaks","whoosh","Who needs stairs?","air"},
 }

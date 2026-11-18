@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flemish giant","AMCJAG","UCdk",3,6,1,"8A8A8E","C8C8C8","huge dog-sized rabbit","squeak","A rabbit the size of a dog.","mammal,cute"},
+	{"flick","KMAAKB","k",2,10,1,"FFCCBC","FFFFFF","finger flick ripple","flick","Flicked away like a crumb.","silly"},
+	{"flicker","FAAGKJ","dc",1,6,1,"FFB74D","FFF8E1","tiny dancing flame","crackle","Small flame. Big distraction.","fire,cute"},
+	{"flicker image","KLBOKI","dY",4,10,2,"BFE6FF","FFFFFF","you blur away, leaving a flickering afterimage","whoosh","That was an afterimage. So is this.","anime,ki,speed"},
+	{"flight","KFCOKB","A",2,8,3,"B3E5FC","FFFFFF","caster lifting off with wind streaks","whoosh","Who needs stairs?","air"},
 	{"flight attendant","LFCJNA","dF",3,6,4,"1E3A8A","DC2626","neat uniform, drink cart","ding","Fasten your seatbelts. Turbulence ahead.","flying"},
 	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
 	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
@@ -111,7 +116,6 @@ return {
 	{"fossil","BEBCII","G",2,4,4,"C8B898","8A7A5A","rocky skeleton imprint","growl","Old bones with stories.","extinct,ancient"},
 	{"fountain","EBCNII","FSI",2,1,6,"BDBDBD","4FC3F7","tiered stone basin spraying water","splash","Splash zone. Also healing zone.","structure,building"},
 	{"fountain of youth","EBCNII","FS",2,1,7,"F5F5F5","80DEEA","marble fountain with glowing water","thud","Sip once. Feel brand new.","magic,mythical"},
-	{"four leaf clover charm","BGAOJI","F",1,5,2,"2E8B57","D4A72C","clover pendant","chime","Luck: maxed.","magic,fantasy"},
 	{"four o clock flower","NGBNMI","dFS",1,1,1,"E91E63","FFEB3B","trumpet flowers that open at four","rustle","Very punctual flower.","plant,flower"},
 	{"four-armed alien","ALCJNA","lf",5,5,5,"DC2626","FACC15","red alien with four muscled arms","zap","Four arms. Excellent at hugs.","alien"},
 	{"fox","AMBJAA","jfb",3,7,2,"D8642A","FFFFFF","pointy snout, big bushy white-tipped tail","yip","What does it say? Nobody knows.","mammal,wild"},
@@ -319,6 +323,7 @@ return {
 	{"gargoyle","AECJNB","GAfO",5,6,8,"57534E","9CA3AF","stone winged statue, horns, crouched","crack","Stone by day, party by night.","mythical,guardian"},
 	{"gargoyle lord","AEDJNB","GAh",7,5,8,"44403C","22D3EE","large horned stone gargoyle with glowing runes","crack","Commands every rooftop in town.","guardian,boss"},
 	{"gargoyle pup","AEAJNB","GA",2,6,5,"78716C","A8A29E","tiny stone gargoyle","crack","Heavy for its size.","guardian,cute"},
+	{"gargoyle sentry","AEDJII","GAf",6,5,7,"807E7A","FFAA3C","a stone gargoyle on a pillar that swoops at foes","screech","It has been watching you since before you arrived.","monster,folklore,stone,sentry"},
 	{"garibaldi","ABAJEC","dB",1,6,1,"E8701E","F2B02A","bright orange damselfish","splash","So orange it glows.","fish,aquatic"},
 	{"garland","BGBLCB","FcN",2,4,2,"F472B6","22C55E","loop of bright flowers flung like a lasso","flutter","Aloha. You are now decorated. And stuck.","flower,party"},
 	{"garlic","IJBDOJ","jSMI",3,3,2,"F2EEE0","C8B8A0","plump bulb, pointed top, papery","whiff","Vampires hate this one simple trick.","edible,smelly,anti-undead,vegetable"},
@@ -398,9 +403,4 @@ return {
 	{"gg","KHBOKJ","F",1,5,2,"43A047","FFFFFF","confetti burst","ding","Good game. Sportsmanship heals.","meme"},
 	{"gharial","ABDJAC","fTHOB",7,5,8,"6A7A5A","C8C8A8","super thin long snout, bulb nose","snap","Its snout is basically chopsticks.","reptile,predator,aquatic"},
 	{"ghee","IMBLGI","kSO",2,3,2,"F2C24A","F8E58C","jar of golden liquid fat","squeak","Golden, glossy, and very slippery.","edible,slippery,silly,dairy"},
-	{"ghost","AICJGJ","jAZO",4,6,2,"E5E7EB","A5B4FC","floaty sheet shape, hollow eyes, wavy tail","wail","Goes BOO. Very proud of that.","undead,spooky,halloween,ghost"},
-	{"ghost bat","AIBJDB","jiA",2,7,1,"E8E0D8","C8B8A8","pale ghostly bat","screech","Pale, spooky, and hungry.","mammal,nocturnal,spooky"},
-	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
-	{"ghost car","DICKHE","DjZg",5,7,3,"B3E5FC","5E35B1","see-through glowing car, no driver","engine","Nobody is driving. Nobody.","mechanical,vehicle,land,spooky"},
-	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
 }

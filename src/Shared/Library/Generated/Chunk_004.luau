@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
+	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
 	{"brain freeze","ICBAKJ","jJO",3,5,2,"A6D8F2","F7F7F2","frosty swirl around head","squish","Ow ow ow. Cold.","edible,frozen"},
 	{"brainstorm","KDCDOJ","jL",5,6,2,"E040FB","FFEB3B","little cloud raining lightbulbs and sparks","crack","A storm of ideas. Some hurt.","psychic,electric,silly"},
 	{"brake","KKBF6B","INO",3,6,3,"DC2626","1F2937","red pedal stomp with screeching skid marks","screech","SCREEEECH. Everyone stops. Coffee spills.","vehicle"},
@@ -67,6 +69,7 @@ return {
 	{"brontosaurus","AMFJAA","kIO",8,2,9,"8A7A6A","C8B8A0","huge long neck and whip tail","rumble","Back from scientific retirement.","dinosaur,extinct,reptile,heavy"},
 	{"bronze","FKBIKI","G",3,3,7,"A86E35","D9A36A","round bronze disc barrier","clang","Third place, first in defence.","ancient"},
 	{"brooch","BMAOKJ","G",1,5,3,"C9CED4","1F4FB5","ornate jewelled pin","chime","Fancy pin, fancy protection.","treasure,shiny"},
+	{"broom dash","KFCHHB","DAl",4,9,2,"6A4E34","78FF82","a gnarled broom swooping low in green sparks","whoosh","No license required. Probably.","monster,folklore,witch,mobility"},
 	{"broomstick","DLBKHB","DdAg",4,8,2,"8D6E63","FFB300","long handle, straw bristles, sparkles","whoosh","Sweeps the floor. And the competition.","vehicle,magic,mythical"},
 	{"broth","IBBOGI","FS",3,4,3,"D9A04A","F2D08A","steaming cup of golden broth","slurp","Liquid comfort.","edible,warm,healthy"},
 	{"brother","LMCJNA","Df",3,6,4,"1D4ED8","F97316","backwards cap, skateboard","ding","Noogies on sight.","family"},
@@ -400,7 +403,4 @@ return {
 	{"cardboard tube sword","BMCHrK","df",1,7,1,"C69C6D","C0392B","long cardboard tube","thud","Bonk-a-bonk.","toy,silly"},
 	{"cardboard wall","EEBCII","GdS",1,1,1,"C8A27A","8D6E63","stacked cardboard boxes, tape","thud","Structural integrity: hopeful.","silly,flammable"},
 	{"cardigan","BMBIyE","GFN",2,2,4,"B5651D","FDE68A","chunky knit cardigan with big wooden buttons","rustle","Smells like biscuits. Blocks like a wall.","clothing,warm"},
-	{"cardinal","AMAJDB","dA",1,7,1,"D8201E","1E1E1E","bright red bird, crest, black mask","tweet","So red it looks painted.","bird,cute"},
-	{"cardinalfish","ABAJEC","dB",1,6,1,"E8501E","F2E8D8","small red fish","splash","Dads carry eggs in their mouths.","fish,aquatic"},
-	{"cardon","NEFCMI","GST",5,1,9,"558B2F","F5F5F5","massive multi-armed cactus","thud","Biggest cactus around. Biggest hug.","plant,desert,sharp"},
 }

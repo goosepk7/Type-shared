@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crescent slash","FHCHJB","Te",6,9,1,"E8EAF6","9FA8DA","flying silver crescent-moon blade","shing","A sliver of moon. Sharp side first.","space,sharp"},
+	{"crested gecko","AMBJAA","Cf",2,7,2,"E8A03A","F2D07A","eyelash crests, sticky toes","hiss","Has eyelashes. Licks its eyes.","reptile,pet"},
+	{"crested newt","AMAJCA","FMB",1,3,2,"3A3A2A","E8701E","newt with jagged crest","squelch","Wears a dragon crest in spring.","amphibian,wetland"},
+	{"crested porcupine","AMBJAA","GCdT",3,6,5,"2A2A2A","F2F2EE","long black-white quill crest","squeak","Rattles its quills like a maraca.","mammal,cute"},
 	{"cretoxyrhina","ABDJEC","DfTB",7,8,6,"6A7A8A","F2F4F6","big sleek ancient shark","chomp","Sliced through prey like a knife.","fish,aquatic,ocean,predator,extinct,ancient"},
 	{"crew","LBDJLA","Gfeh",5,5,5,"1E40AF","F8FAFC","sailors hauling a rope together, striped shirts","arr","All hands on deck! Some feet too.","team,pirate"},
 	{"crib","BMCL0I","GO",1,1,5,"F2F2EE","F06292","small barred baby bed","thud","A cage, but cute.","furniture,household"},
@@ -399,8 +403,4 @@ return {
 	{"divine intervention","KHENOI","GFO",7,4,6,"FFF8E1","FFD54F","huge beam from the heavens, feathers falling","choir","Someone up there likes you.","holy"},
 	{"diving beetle","ABAJFA","GfB",1,3,4,"2A3A2A","8A7A3A","oval swimming beetle","click","Carries an air bubble like a scuba tank.","insect,armored"},
 	{"diving bell spider","AJBJQA","fMNB",2,6,2,"6A6A6E","B8C8D8","spider in an air bubble","skitter","Lives underwater in a bubble house.","arachnid,spooky,venomous"},
-	{"diving suit","BBCONI","GB",2,2,8,"B58A3A","B8693D","brass bubble helmet, heavy boots","clank","Ocean floor fashion.","ocean"},
-	{"divinity","IHBLKI","dSc",2,3,3,"F7F7F2","F2E8D8","white fluffy nut candy","chomp","A heavenly fluffy candy.","edible,sweet,holy"},
-	{"dizzy","KLBFOB","j",2,6,1,"FFEB3B","7C4DFF","spinning stars and birdies ring","wub","Everything spins. Wheee.","silly"},
-	{"dizzy birds","AMAAKI","jO",2,7,1,"5AB0F0","FFB300","little cartoon birds that circle a dazed head","tweet","Tweet tweet. Where am I.","cartoon,silly,control"},
 }
