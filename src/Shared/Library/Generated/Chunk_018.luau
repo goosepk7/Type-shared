@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"northern pike","ABCJEC","DfTB",4,7,4,"6A7A4A","D8D8A0","long toothy predator, spotted green","splash","A crocodile pretending to be a fish.","fish,aquatic"},
+	{"norwegian forest cat","ACCJAA","dfT",3,7,2,"B8A08A","F2E8D8","big fluffy forest cat","meow","Viking cat. Fluffy and fearless.","mammal,pet,cute"},
+	{"nose","BMBMGG","HeN",3,3,3,"E8B48A","D98880","big round nose, two nostrils, sniffing lines","whiff","Runs without legs. Smells without manners.","body,silly"},
 	{"nostalgia","KHBNOI","jFO",2,3,3,"FFCC80","F8BBD0","sepia-toned glow with floating old toys","music","Remember the good old days? Now you're stuck there.","silly"},
 	{"note","KFAAKB","UeO",2,8,1,"111827","FACC15","black quaver note bouncing along five wavy lines","ding","Do re mi fa so la ti DOH.","music"},
 	{"notebook","BMAAJK","e",1,7,1,"2F6FD1","F2F2EE","spiral-bound notebook","tap","Taking notes. Taking names.","school"},
@@ -400,7 +403,4 @@ return {
 	{"pear tree","NGDCMI","GFSc",3,1,7,"6D4C41","C0CA33","crown hung with green pears","rustle","A partridge not included.","plant,tree"},
 	{"pearl","BBAAKJ","Uce",2,7,4,"F2EEE6","E88AA5","smooth white glossy sphere","chime","Ocean's shiny marble.","treasure,shiny"},
 	{"pearl dragon","ABEKCB","AFgB",7,6,7,"F8FAFC","BAE6FD","shimmering white dragon clutching a pearl","chime","Will not let go of that pearl.","mythical,reptile"},
-	{"pearl onions","IJAELB","je",2,7,1,"F7F2EC","E8E0D0","tiny white onions","pitter","Tiny tear bombs.","edible"},
-	{"peasant","LMCJNA","Ph",3,4,3,"A16207","78350F","burlap clothes, pitchfork","grunt","Angry mob in one person. Grab torches.","historical"},
-	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
 }

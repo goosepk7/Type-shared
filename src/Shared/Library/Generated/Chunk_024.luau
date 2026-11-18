@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sock puppet","BMAJGG","jd",1,6,1,"F2F2EE","C0392B","sock with button eyes","squeak","Fierce. Floppy. Fluffy.","toy"},
+	{"socks","BJAANI","dMe",1,7,1,"F2F2EE","8E9196","crumpled smelly sock","swish","Smells like defeat.","clothing,silly"},
+	{"soda","IBBFKI","EkIP",3,7,1,"C8202B","F7F7F2","fizzy can, bubbles","fizz","Shake it. Point it. Pop it.","edible,drink,fizzy"},
+	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
 	{"soda bread","IMCCII","Gk",4,2,6,"D9A04A","F2E2C2","round loaf with cross cut","thud","A quick bread with a cross on top.","edible,giant"},
 	{"soda can","IBBFKI","EkI",3,7,1,"C8202B","C8C8C8","aluminum can","fizz","Shake well. Open near enemy.","edible,drink,fizzy"},
 	{"soda fountain","OBCM1I","deN",2,2,5,"C0392B","C9CED4","nozzled fizzy drink dispenser","clang","Fizzy blast!","kitchen,household"},
@@ -399,8 +403,4 @@ return {
 	{"steller's sea cow","ABEJEC","FfB",6,2,4,"6A6A6E","B8B8BC","huge manatee","bark","Giant gentle sea cow. Gone too soon.","mammal,aquatic,extinct"},
 	{"stench","FJBDOJ","jdN",2,3,2,"9CA84A","D8E08A","wavy green stink lines","whiff","Smells like gym socks and regret.","silly,toxic"},
 	{"stencil","BMAIyI","G",1,6,1,"F2F2EE","24262A","cut-out pattern sheet","splat","Neat lines, sharp edges.","art"},
-	{"step ladder","BKBCII","G",1,3,4,"C9CED4","8E9196","folding A-frame ladder","clank","For reaching the cookies.","tool"},
-	{"step pyramid","EMFMII","GSeh",5,1,10,"9E9E9E","7CB342","stepped pyramid, steep stairs, temple top","thud","Climb it if you dare. Traps on every step.","structure,defense,tower,ancient"},
-	{"stepbrother","LMBJNA","Qfb",3,6,3,"8B5CF6","FBBF24","kid dividing a bedroom with a strip of tape","giggle","This side is mine. That side is also mine.","family,silly"},
-	{"stepmom","LMCJNA","GFO",4,4,5,"0D9488","F2D0B4","grown-up with a packed lunch and a minivan key","ding","Bonus parent. Extra snacks unlocked.","family"},
 }

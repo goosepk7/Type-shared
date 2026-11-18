@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beggar king","LMCJNA","bh",3,4,4,"78716C","FACC15","patched robes, bottlecap crown","ding","King of the alley. Very proud.","silly,royal"},
+	{"beginner's luck","KHBOKJ","a",2,5,2,"AED581","FFF59D","clumsy-looking golden shimmer","ding","No idea what I'm doing. It's working!","luck,silly"},
 	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
 	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
@@ -401,6 +403,4 @@ return {
 	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
 	{"bread fortress","IMECII","GFk",5,2,9,"C8904A","F5E6C8","castle walls of loaves","thud","A carb castle.","edible,giant"},
 	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
-	{"bread pudding","IGBOKI","F",2,5,3,"D9A04A","F7E8C0","baked custard bread squares","crunch","Leftover bread's glorious second life.","edible,healthy"},
-	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 }

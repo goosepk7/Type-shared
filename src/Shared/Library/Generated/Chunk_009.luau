@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
+	{"everything bagel","IMBAKK","UeP",3,7,2,"C8904A","3A3A3A","bagel covered in seeds","whoosh","Covered in everything. Literally.","edible"},
 	{"everywhere","KLENLJ","jSPY",6,5,3,"A855F7","22D3EE","hundreds of map pins raining down across the whole map","pitter","It is here. And there. And behind you.","magic"},
 	{"evil","KICDOJ","jiPh",6,5,3,"4C1D95","111827","purple-black smoke with red eyes and a curly moustache twirl","cackle","Mwahaha. Sorry. Reflex.","villain,spooky"},
 	{"evil eye","KIBAKB","jO",4,9,1,"4A148C","FF1744","single glowing eye glyph fixing on target","hiss","One look. Instantly regret everything.","spooky"},
@@ -401,6 +403,4 @@ return {
 	{"flying ship","DLEMHB","EAkeg",7,5,7,"6D4C41","FFD54F","wooden galleon held up by glowing balloons","cannon","Sails the clouds, cannons out.","vehicle,magic,mythical"},
 	{"flying snake","AMCJCB","AfMN",4,6,3,"2A2A1E","8AE04A","flattened gliding snake","hiss","A snake that flies. Why would you.","reptile,venomous"},
 	{"flying squirrel","AMAJAB","CdAb",1,6,1,"9A8A7A","F2EEE6","skin flaps between legs, gliding","squeak","Built-in wingsuit.","mammal,cute"},
-	{"flypaper","BMBLII","cNO",1,1,1,"F1C40F","D2B48C","hanging sticky yellow strip","snap","Bzzz... stuck.","trap,sticky"},
-	{"foal","AMCKAA","Dkg",2,8,5,"A06A3E","F0E0C8","wobbly long legs, short fluffy tail","neigh","All legs and zero coordination.","mammal,cute"},
 }

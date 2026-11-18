@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sheepshead","ABCJEC","DfB",4,7,4,"8A8A8A","1E1E1E","striped fish with human teeth","splash","Has human-looking teeth. Eek.","fish,aquatic,spooky,silly"},
+	{"sheet","BFCLVJ","jAN",2,5,2,"FFFFFF","BFDBFE","white bedsheet billowing with two eye holes","whoosh","Either laundry or a ghost. Fifty-fifty.","household,spooky,silly"},
+	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
+	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
 	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
 	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
 	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
@@ -300,7 +304,7 @@ return {
 	{"smoke launcher","OFCMxI","jZP",2,4,5,"8E9196","6B7B3A","stubby tube puffing smoke","clank","Now nobody can see. Hide!","defense,mechanical"},
 	{"smoke pellet","CMADJI","jZ",1,9,1,"8E9196","F2F2EE","tiny pellet bursting with smoke","bang","Bye!","spy,ninja"},
 	{"smoke ring","FABAKJ","jO",2,6,1,"9E9E9E","ECEFF1","floating ring of grey smoke","puff","Fancy smoke. Very confusing.","silly"},
-	{"smoke screen","FACDOJ","jZS",1,5,2,"757575","BDBDBD","thick grey wall of smoke","puff","Ninja exit, activated.","stealth"},
+	{"smoke screen","FFCDOJ","jZS",1,5,2,"AEBBD0","E6EEF8","a thick pale grey-blue smoke dome that hides everyone inside","puff","Ninja exit, activated.","gaming,shooter,stealth"},
 	{"smoke screen generator","OFCD1I","jZS",2,1,4,"8E9196","F2F2EE","canister belching thick smoke","thud","Can't see a thing.","defense"},
 	{"smoke tree","NGCCMI","GWZkS",2,1,5,"6D4C41","B39DDB","fluffy purple plumes like smoke","rustle","Looks like it is on fire. It is not.","plant,tree"},
 	{"smoked salmon","IGBOKI","F",2,5,3,"E8603A","F2C8B8","thin glossy orange slices","crunch","Silky pink ribbons.","edible,healthy"},
@@ -399,8 +403,4 @@ return {
 	{"soccer player","LMCJNA","Dke",4,8,4,"15803D","F8FAFC","jersey, shin guards, ball at feet","thud","Kicks the ball. And you. Gooool!","sport"},
 	{"sock monster","AMAJGG","Zb",1,7,1,"EF4444","F8FAFC","striped sock with button eyes","giggle","Where all your missing socks went.","silly"},
 	{"sock nunchucks","CJBHJK","jfM",1,8,1,"F2F2EE","8E9196","two smelly socks tied together","boing","Stinky martial arts.","silly"},
-	{"sock puppet","BMAJGG","jd",1,6,1,"F2F2EE","C0392B","sock with button eyes","squeak","Fierce. Floppy. Fluffy.","toy"},
-	{"socks","BJAANI","dMe",1,7,1,"F2F2EE","8E9196","crumpled smelly sock","swish","Smells like defeat.","clothing,silly"},
-	{"soda","IBBFKI","EkIP",3,7,1,"C8202B","F7F7F2","fizzy can, bubbles","fizz","Shake it. Point it. Pop it.","edible,drink,fizzy"},
-	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
 }

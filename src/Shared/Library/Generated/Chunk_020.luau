@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
+	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},
+	{"polo mallet","BMCHtK","kf",2,6,3,"C49A6C","F2F2EE","long skinny mallet","bonk","Very fancy bonking.","sport"},
+	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
 	{"pom pom crab","ABBJRA","GfTM",2,4,5,"F2D0B0","F2A0C0","crab holding anemone pompoms","clack","Cheerleader crab with stingy pompoms.","crustacean,aquatic,armored,cute"},
 	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
@@ -399,8 +403,4 @@ return {
 	{"rattle","BMAFKI","jd",1,7,2,"F06292","F2F2EE","handle with ball full of beads","squeak","Shake shake shake.","toy,baby"},
 	{"rattlesnake","AMCJCD","fMNO",5,6,3,"B8986A","5A4A30","diamond pattern, rattle tail","rattle","Shakes a maraca before biting.","reptile,venomous,desert"},
 	{"raven","AIBJDB","jdAb",3,7,1,"1A1A20","3A3A50","big black shaggy-throat bird","tweet","Talks back. Literally talks.","bird,cute,spooky,smart"},
-	{"ravioli","IMAELB","ceP",2,7,1,"F2D08A","C8302B","square stuffed pasta pillows","pitter","Tiny pasta pillows.","edible"},
-	{"ray","FHCBKB","KTe",4,10,1,"FFE66D","FFFFFF","straight golden beam of light with sparkles","zing","A little ray of sunshine. In your eyes.","light"},
-	{"ray gun","CDBBwI","eLO",5,8,3,"DDE3E8","C0392B","retro finned pistol with ring nozzle","zap","Zzzorp! Vintage future.","scifi,retro,ranged"},
-	{"ray of frost","FCCBKI","JTeN",5,8,2,"4FC3F7","E1F5FE","thin pale-blue beam crusting targets in ice","crackle","Chill out. That is an order.","frozen"},
 }

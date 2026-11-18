@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"writing","KMBBCB","jST",3,6,2,"1D4ED8","FFFFFF","looping blue ink scrawl chasing a pen tip","scratch","Even the doctor cannot read this.","school,art"},
+	{"wulver","AGCJNA","QFf",4,6,5,"57534E","D6D3D1","wolf-headed fisherman in a wool sweater","howl","A wolf man who leaves you fish. Wholesome.","mythical,canine,cute"},
+	{"wyrmling swarm","AACJLB","KAP",5,8,3,"F97316","B91C1C","cloud of tiny buzzing dragons","chirp","Like bees, but on fire.","reptile,swarm,fire"},
+	{"wyvern","AJDKDB","AfTMg",7,7,6,"3F6212","BEF264","two legs, bat wings, barbed stinger tail","screech","Two legs, two wings, one very pointy tail.","mythical,reptile,flying"},
 	{"x-ray","FHCBKB","ZTe",4,10,1,"0F172A","A5F3FC","blue-black beam that shows the skeleton of what it hits","bzzt","Sees right through you. Nice ribs.","science,spooky"},
 	{"x-ray vision","KHBOKI","T",2,6,2,"80D8FF","212121","glowing blue eyes, skeleton outlines","hum","I can see your bones.","silly"},
 	{"xeno drone","AJCJFA","ZfTM",5,8,4,"1C1917","57534E","black elongated insect alien, tail spike","hiss","Hides in vents. Hisses in vents.","alien,spooky"},
@@ -79,7 +83,7 @@ return {
 	{"zigzag","KFBOKB","DY",2,9,2,"FFEB3B","FFFFFF","jagged lightning-shaped motion trail","zip","Can't hit a zigzag.","speed"},
 	{"zing","KDAAKB","Te",2,10,1,"FFF59D","FFFFFF","quick bright streak","zing","Zing! Fast and sassy.","silly"},
 	{"zinnia","NGBNMI","dFS",2,1,2,"E91E63","FF9800","layered bright pompom bloom","rustle","Bright enough to sting your eyes.","plant,flower"},
-	{"zip line","DFCKHB","DkgY",3,9,2,"455A64","FF7043","taut cable with a pulley handle","zip","Wheeeee! Into the battle!","mechanical,vehicle,land,sport"},
+	{"zipline","OFCOHB","Dg",2,10,1,"455A64","FF7043","fire a cable to a point and zip along it on a pulley","zip","Wheeeee! Into the battle!","gaming,shooter,mechanical,sport"},
 	{"zipper","BKBBCD","TNV",3,8,3,"C0C7CE","1F2937","line of metal teeth zipping the ground shut","zip","Zip it. Literally.","clothing,sharp"},
 	{"zit","BJALKI","dEN",2,1,1,"E57373","FFF3B0","red bump with a yellow top, ready to pop","pop","Do not pop it. DO NOT. Oh no.","body,silly,gross"},
 	{"ziz","AFFJDB","Akl",8,6,7,"1E40AF","E0F2FE","bird so large its wings block the sun","screech","Its wings cause eclipses.","mythical,bird"},

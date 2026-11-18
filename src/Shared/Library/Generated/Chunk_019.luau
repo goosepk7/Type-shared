@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pearl onions","IJAELB","je",2,7,1,"F7F2EC","E8E0D0","tiny white onions","pitter","Tiny tear bombs.","edible"},
+	{"peasant","LMCJNA","Ph",3,4,3,"A16207","78350F","burlap clothes, pitchfork","grunt","Angry mob in one person. Grab torches.","historical"},
+	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
 	{"pebble","FEAAKB","Ude",1,8,2,"9E9A94","D6D2CC","small smooth river stone","tick","Skips on water. Bonks on heads.","silly"},
 	{"pebble beach","MBDNII","SN",2,1,6,"9E9E9E","4FC3F7","grey round pebbles and crashing waves","rumble","Crunchy underfoot. Painful to fall on.","place,terrain"},
 	{"pecan","IEAAKK","UeO",2,8,5,"7A3E1E","A86A3A","long glossy brown nut","tok","Southern charm in a shell.","edible,nut"},
@@ -175,6 +178,7 @@ return {
 	{"pineapple ring","IMBAKK","Uke",3,7,2,"F6D54A","FDEB8C","flat yellow ring, center hole","whoosh","A fruit that wants to be a frisbee.","edible,fruit"},
 	{"pinecone","NGAAMI","UTe",1,6,3,"8D6E63","5D4037","scaly brown cone","rustle","Spiky little missile.","plant,tree"},
 	{"ping","KDBAKB","NOY",3,9,1,"EF4444","22C55E","red signal icon reading 999 ms, rubber-banding","beep","999 ms. That hit landed last Tuesday.","gaming,tech"},
+	{"ping marker","KHAOKJ","de",1,10,1,"FF2E63","FFE66D","a bright floating diamond over a tagged enemy","ding","Enemy spotted! Everybody, that one.","gaming,shooter,support"},
 	{"ping pong","KMAA3B","Uje",2,10,1,"F97316","FFFFFF","tiny orange ball rallying back and forth at a blur","tok","Tik tok tik tok tik tok tik SMASH.","sport"},
 	{"ping pong ball","BMAA3F","Ude",1,9,1,"F2F2EE","E8E2D4","tiny light white ball","bonk","Bounces everywhere. Hits nothing.","sport"},
 	{"ping pong paddle","BMAHJK","fa",1,8,3,"C0392B","24262A","round rubber paddle","bonk","Ping. Pong. Ping. Pong.","sport"},
@@ -399,8 +403,4 @@ return {
 	{"politician","LMCJNA","jdc",3,4,4,"1E3A8A","DC2626","suit, sash, giant scissors","ding","Makes many promises. Keeps none.","silly"},
 	{"pollen","NGBDOI","jSPO",2,4,1,"FFEB3B","FFF59D","drifting golden dust cloud","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly"},
 	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
-	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
-	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},
-	{"polo mallet","BMCHtK","kf",2,6,3,"C49A6C","F2F2EE","long skinny mallet","bonk","Very fancy bonking.","sport"},
-	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 }

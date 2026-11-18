@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grouse","AMBJDA","dfO",2,4,2,"8A6A4A","F2F2F0","plump ground bird, feathered feet","cluck","Explodes out of bushes. Scares hikers.","bird,farm"},
+	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
 	{"grow","KGCOKI","W",4,4,4,"66BB6A","FFF59D","caster stretching up giant-sized","stretch","Eat your vegetables. Look at you now.","magic"},
 	{"growl","KMBFOB","jO",3,7,1,"6D4C41","FFFFFF","low rumbling dark ripple","growl","Grrrr. Back off.","loud"},
 	{"growth","FGBOKJ","WF",3,3,4,"5CB85C","D8F5A2","unfurling vine swirls","rustle","Bigger, greener, better.","plant"},
@@ -228,6 +230,7 @@ return {
 	{"heart","BHBOKJ","UQFc",3,5,3,"E63946","FF8FA3","plump red heart thumping, pulse rings","beat","Ba-dum. Ba-dum. Ba-DOOM.","body,cute,support"},
 	{"heart tree","NIDCMI","GjS",4,1,8,"FFFFFF","C62828","white tree with red leaves and a face","chime","It sees everything. It remembers.","plant,magic,mythical,spooky"},
 	{"heartbeat","KHBFOB","F",2,6,1,"E53935","FFCDD2","red pulsing heart rings","thump","Ba-dum. Ba-dum. Still alive.","support"},
+	{"heartbeat sensor","ODBO1I","de",2,8,1,"2B3440","5CFF8A","handheld scanner pulse that outlines enemies","beep","Two blips. Upstairs. Very sneaky. Not anymore.","gaming,shooter,tech"},
 	{"heat","FACNOI","KSN",4,5,3,"FF8A3D","FFE2B8","wobbling heat haze dome, orange tint","hum","Everyone suddenly wants shorts.","fire"},
 	{"heat blast","FACFOB","Kk",5,8,1,"FF7043","FFF3E0","wave of shimmering hot air","whoosh","Like opening a very angry oven.","fire"},
 	{"heat death","HIFNOI","iNO",9,1,6,"1A1A2E","4A4E69","dim cold fading everything to grey","hush","The universe, out of batteries.","space,danger"},
@@ -400,7 +403,4 @@ return {
 	{"honeyeater","AMAJDB","dA",1,7,1,"6A7A3A","F2C82A","slim nectar bird","tweet","Lives on sugar. Hyper.","bird,cute"},
 	{"honeypot ant","AMAJLA","CFfP",1,5,1,"E8A82A","6A3A1E","ant with a giant golden belly","skitter","A walking honey jar.","insect,swarm"},
 	{"honeysuckle","NGBNMI","dFSc",2,1,2,"FFF59D","FFB74D","tubular sweet blooms on vines","rustle","Sweet nectar. Sweet trap.","plant,flower"},
-	{"hong kong milk tea","IBBOKI","F",2,6,2,"A8784A","F2E8D8","strong silky milk tea","slurp","Silk-smooth tea strength.","edible,drink"},
-	{"honk","KMBFOB","kO",2,9,1,"FFEB3B","FFFFFF","big comic horn sound ring","honk","HONK! Peace was never an option.","silly,meme,loud"},
-	{"honor","KHCOKJ","GD",3,5,5,"FFD54F","1565C0","proud golden aura","horn","A fair fight. A strong fight.","support"},
 }
