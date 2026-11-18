@@ -32,7 +32,7 @@ return {
 	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
 	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
 	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
-	{"crowd surf","KHDF6F","klI",5,9,4,"FFC94A","FF6FB5","a rolling wave of glowing raised hands carries you forward","whoosh","Trust the crowd. They'll carry you.","music,mobility,concert"},
+	{"crowd surf","KHDO6F","klI",5,9,4,"FFC94A","FF6FB5","a rolling wave of glowing raised hands carries you forward","whoosh","Trust the crowd. They'll carry you.","music,mobility,concert"},
 	{"crown","BHBONI","Fh",3,5,5,"D4A72C","B0103A","jewelled golden crown","swish","Heavy is the head. Shiny though.","royal,shiny"},
 	{"crown imperial","NGBNMI","dFS",2,1,2,"FF6F00","2E7D32","ring of hanging bells under a leaf crown","rustle","Royalty among bulbs.","plant,flower,royal"},
 	{"crown jewels","BHBONI","Fc",3,4,5,"D4A72C","B0103A","cushion of gem crown and sceptre","swish","Shiny enough to distract a dragon.","royal,shiny,treasure"},
