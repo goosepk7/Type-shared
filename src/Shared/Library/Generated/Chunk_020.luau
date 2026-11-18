@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 	{"poplar","NGDCMI","GjWkS",3,1,6,"BDBDBD","8BC34A","tall narrow column of fluttery leaves","rustle","Fluffy seeds everywhere. Achoo.","plant,tree"},
 	{"poppy","NGBNMI","SNO",2,1,1,"E53935","212121","papery red petals, dark centre","rustle","Makes everyone very, very sleepy.","plant,flower"},
 	{"poppy field","NGENMI","SNO",3,1,3,"E53935","7CB342","red poppies as far as you see","rustle","Sleepy... so sleepy...","plant,crop"},
@@ -17,7 +18,6 @@ return {
 	{"pork chop","IMBAKK","kce",3,5,3,"D88A6A","F2E8D8","thick chop with bone edge","thud","A meaty chunk with a bone grip.","edible,savory"},
 	{"pork rinds","IMAELB","eVP",2,7,1,"E8C88A","C8904A","puffy golden curl","pitter","Crunchy clouds of savory.","edible"},
 	{"porpoise","ABBJEC","UDB",3,8,4,"4A5664","C8D0D8","small round dolphin, blunt face","click","Dolphin, but rounder and shyer.","mammal,aquatic,ocean"},
-	{"portable hole","BIBLKJ","OY",4,1,1,"24262A","1B1A22","flat black disc on the floor","boing","Drop it. Step in. Gone.","magic,silly"},
 	{"portal","KLDLII","hY",4,4,6,"00B8D4","7C4DFF","swirling blue-violet ring standing upright","warp","Step through. Hope for the best.","magic,space"},
 	{"portal device","OLDL1I","jHY",5,3,5,"3A3F45","A66BDB","ring frame with swirling portal","hum","Where does it go? Find out!","scifi"},
 	{"portal gate","ELDNII","ShY",4,1,8,"7E57C2","40C4FF","stone ring with a swirling glowing centre","warp","Step in here. Pop out over there.","structure,magic"},

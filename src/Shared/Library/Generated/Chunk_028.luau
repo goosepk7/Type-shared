@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"war chief","LECJNA","kfh",6,5,6,"7C2D12","CA8A04","fur cloak, bone necklace, big axe","roar","Leads the charge. Yells loudest.","warrior,royal"},
+	{"war club","CMCHtK","kfO",4,5,5,"8B5A2B","8C8C88","club with a stone ball head","shing","Bonk, the old-fashioned way.","sharp,ancient"},
 	{"war drum","BMDFJI","FkO",5,3,5,"6B4226","E3DAC9","giant hide drum with bone sticks","boom","Every beat makes the army braver.","music,loud"},
 	{"war drummer","LMCJNA","FO",3,5,4,"1E3A8A","F8FAFC","snare drum, military cap","drum","Boom boom. Everyone marches faster.","warrior,music"},
 	{"war fan","CFBIyK","GI",2,7,3,"9E1B32","24262A","giant folding paper fan","shing","Blocks blows. Blows winds.","ninja"},
@@ -175,6 +177,7 @@ return {
 	{"whipped butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","fluffy butter swirl","squeak","Butter, but cloudy.","edible,slippery,silly,dairy"},
 	{"whipped cream","IMBLGI","jSN",2,3,3,"F7F7F2","F2E8D8","tall swirl of white cream","gloop","A cloud you can spray.","edible,sticky"},
 	{"whippet","AMCJAA","DQ",4,10,4,"C8B8A8","F2F2EE","slim mini greyhound","bark","Mini greyhound. Maxi zoomies.","mammal,pet"},
+	{"whirl frenzy","KFCO5K","Dkf",5,9,3,"C8A878","8A6A4A","you spin into a cartoon dust tornado","whoosh","Brrrrrrrrrrrrrr.","cartoon,silly,melee"},
 	{"whirligig beetle","AMAJFK","GjfB",1,3,4,"1E1E24","6A6AA0","spinning water beetle","click","Spins in circles on ponds.","insect,armored"},
 	{"whirlpool","FBDN5K","SHNO",6,5,4,"0E4C7A","7CC6F0","spiralling water funnel, foam rim","gurgle","Round and round and round and down.","aquatic"},
 	{"whirlwind","FFCN5K","jlH",5,7,3,"9DBCCB","EAF2F6","spinning column of air and leaves","howl","Spin to win. Mostly to spin.","air"},
@@ -400,7 +403,4 @@ return {
 	{"yeti","ACDJNA","DJkf",7,5,7,"F1F5F9","93C5FD","shaggy white ape, frosty breath","roar","Lives on a mountain. Hates sunscreen.","cryptid,frozen"},
 	{"yeti crab","ABBJRA","GfT",2,4,5,"F2F2EE","E8E0D0","hairy white deep-sea crab","clack","A crab in a fur coat.","crustacean,aquatic,armored,deepsea"},
 	{"yeti family","ACBJNA","dJ",2,5,3,"F1F5F9","93C5FD","fluffy white baby yeti","roar","Throws tiny snowballs. Adorably.","cryptid,cute,frozen"},
-	{"yeti king","ACEJNA","Jkh",8,4,8,"F1F5F9","1E3A8A","giant white yeti with icicle crown","roar","Rules the mountain. Hates sunscreen.","cryptid,frozen,boss"},
-	{"yew","NJDCMI","GWkSM",4,1,8,"4E342E","1B5E20","dark dense ancient tree, red berries","rustle","Old, dark, and quietly poisonous.","plant,tree,ancient"},
-	{"yi qi","AMBJBB","DAQfT",2,9,3,"3A3A3A","8A6A4A","bat-winged small dino","screech","A dinosaur with bat wings.","dinosaur,extinct,reptile,predator"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"saltwater crocodile","ABEJAC","fHOB",8,5,8,"5A5A3A","D8D0A0","gigantic croc, armored back","snap","Biggest reptile on Earth. Grumpy.","reptile,predator,aquatic"},
 	{"salty","KEBDOJ","iNP",3,4,2,"F8FAFC","93C5FD","grumpy salt shaker pouring a cloud of crystals","pitter","So salty the sea is jealous.","gaming,meme"},
 	{"saluki","AMCJAA","DQf",4,9,4,"D8B88A","F2E8D8","slim sighthound with feathery ears","bark","Desert racer with fancy ears.","mammal,pet,desert"},
 	{"salvia","NGBNMI","dFS",1,1,2,"3949AB","E53935","spikes of tubular blooms","rustle","Hummingbirds love it.","plant,flower"},
@@ -359,6 +360,7 @@ return {
 	{"shark car","DBCKHL","DkfgB",5,7,5,"607D8B","F5F5F5","car with a shark fin and teeth","engine","Chomps on the way past.","vehicle,silly"},
 	{"shark rider","LBDKNC","fgB",6,8,5,"64748B","0EA5E9","rider in a wetsuit on a shark","chomp","Saddled a shark. Bold.","mount,aquatic,silly"},
 	{"sharkataur","ABDJEC","DfB",6,7,6,"64748B","F8FAFC","shark lower body, warrior upper body","chomp","Half shark. Half warrior. Full bite.","aquatic,silly"},
+	{"sharknado","HBEN5K","SfHP",8,4,6,"5B7A90","DCE8F0","a churning water tornado packed with circling, biting sharks","roar","The forecast calls for teeth.","cartoon,disaster,silly"},
 	{"shatter","KCCA4B","TVO",6,8,1,"B3E5FC","FFFFFF","target cracking like glass into shards","crash","Crack. Tinkle. Gone.","sharp"},
 	{"shave","KKBHJB","fXN",3,7,1,"F8FAFC","60A5FA","razor swooping through a face-full of white foam","swish","A close shave. Literally.","household"},
 	{"shears","JKBHJK","fV",3,6,4,"8A929B","2E8B57","long two-blade clippers","clank","Snips hedges into dinosaurs.","tool"},
@@ -401,6 +403,4 @@ return {
 	{"shipworm","ABAJGI","GCN",1,1,6,"E8E0D0","C8B8A0","clam that bores into wood","squelch","A clam that eats boats.","mollusk,aquatic"},
 	{"shipwreck","MBENII","Sch",4,1,6,"6D4C41","26A69A","broken hull on the sea floor, coral","thud","Something guards the treasure inside.","spooky,pirate"},
 	{"shipyard","MBENII","Sh",3,1,7,"607D8B","1E88E5","ships on slipways, cranes","crowd","Launches a fresh ship. At you.","place"},
-	{"shiro","IBBOGI","FS",3,4,3,"C8762B","E8A040","chickpea stew","slurp","A spicy chickpea stew.","edible,warm,healthy"},
-	{"shirt","BMBIVB","GjA",2,5,2,"EF4444","FFFFFF","flapping red t-shirt with a pizza stain","flutter","Inside out and backwards. Like always.","clothing"},
 }

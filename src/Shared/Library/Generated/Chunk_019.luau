@@ -98,7 +98,7 @@ return {
 	{"picture","BHBIyE","daO",2,4,3,"8B5A2B","FDE68A","framed photo with a blinding flash, awkward smiles","click","Say cheese. Everyone blinked.","household,art"},
 	{"picture frame","BMBIyK","G",1,5,2,"D4A72C","8B5A2B","ornate gilded frame","thud","Frame them. Literally.","household"},
 	{"pie","IMBAKK","jke",3,7,2,"D9A04A","B0203E","round crust, lattice top","whoosh","A pie to the face. A classic.","edible"},
-	{"pie to the face","IMBAKK","jkeO",3,7,2,"F7F2EC","D9A04A","cream pie mid-flight","whoosh","Comedy's finest projectile.","edible,silly"},
+	{"pie face","IMBA7K","jeN",3,7,2,"FFF8EC","D9A04A","a heaped cream pie that splats across the victim's face","splat","Comedy's finest projectile.","cartoon,silly,edible"},
 	{"pied piper","LLCJNA","jch",4,5,3,"DC2626","FACC15","half-red half-yellow coat, flute","flute","Plays a tune. Everyone follows.","music,magic"},
 	{"pier","EBDCII","GS",2,1,6,"A1887F","1E88E5","long wooden deck on posts over water","thud","Walk the plank. The really long plank.","structure,building"},
 	{"pierogi","IMBAKF","Fce",3,6,2,"F2E2B0","C8803A","half-moon dumpling, crimped edge","splat","Pillowy dumplings with fried onions.","edible"},
@@ -301,6 +301,7 @@ return {
 	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
 	{"pocket dimension","MLFNII","jZSY",6,1,8,"7C4DFF","00E5FF","swirling folded space","chime","Step in, vanish completely.","place,mythical"},
 	{"pocket dragon","AAAJAB","KAQ",2,8,1,"DC2626","FACC15","palm-sized dragon on your shoulder","chirp","Lights your candles. And your sleeves.","cute,reptile"},
+	{"pocket hole","BIBLKI","SOY",4,3,5,"16161C","3A3A48","a flat black cartoon hole that unrolls across the floor","boing","Step in. Fall out. Of the sky.","cartoon,silly,trap"},
 	{"pocket knife","CKAHrK","fT",2,8,2,"C0392B","C9CED4","folding blade, red handle","shing","Has a blade, a saw, and a tiny toothpick.","medieval,sharp"},
 	{"pocket mirror","BHABKI","aO",1,8,1,"C9CED4","C9CED4","small round compact mirror","thud","Flash! Right in the eyes.","camping,outdoor"},
 	{"pocket multitool","BKAHJI","fT",2,7,3,"C0392B","C9CED4","folding tool with many blades","thud","There's a tool for that.","camping,outdoor"},
@@ -402,5 +403,4 @@ return {
 	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
 	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
 	{"popcorn machine","OACM1I","KdeP",2,5,4,"C0392B","D4A72C","glass cart full of popping corn","hum","Pop pop pop! Snack attack.","silly,party"},
-	{"popcorn storm","IMDEOJ","EeVP",5,6,1,"FFF4D6","F2C24A","cloud bursting with popcorn","pop","Popping from the sky.","edible,explosive"},
 }

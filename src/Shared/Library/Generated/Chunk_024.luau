@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"song thrush","AMAJDB","dA",1,7,1,"8A6A4A","F2E8D0","spotted chest songbird","tweet","Smashes snails on rocks.","bird,cute"},
+	{"sonic beam","FFCBKI","TeO",5,10,1,"B39DDB","FFFFFF","ringed visible sound beam","eeee","Loud enough to see.","loud"},
 	{"sonic blaster","CFCFwI","kIeO",5,7,4,"7D3CB5","C9CED4","speaker-dish shaped gun","boom","BWAAAAMMMM.","scifi,ranged"},
 	{"sonic boom","FFDFOB","kO",7,10,1,"CFE3FF","FFFFFF","cone-shaped shockwave ring burst","boom","Faster than sound. Louder too.","loud"},
 	{"sonic grenade","CFBGKI","keO",4,7,1,"C9CED4","7D3CB5","ringing grenade","zap","EEEEEEEE.","scifi,ranged"},
@@ -212,7 +214,6 @@ return {
 	{"spray paint","BMADJI","je",1,7,2,"24262A","FF3EA5","rattling aerosol can","splat","Tag! You're it.","art"},
 	{"spriggan","AGBJNA","GWf",3,6,4,"365314","A16207","wiry wooden guardian that swells to giant size","creak","Small until you annoy it.","fairy,plant,guardian"},
 	{"spring","BKALJK","Ukl",2,5,3,"C9CED4","C9CED4","tight metal coil","clink","Boing.","hardware,bouncy"},
-	{"spring glove","CMBAJK","Uke",2,8,3,"C0392B","C9CED4","boxing glove on a long spring","bonk","Boing! Right in the face.","silly,toy"},
 	{"spring mattress","BMDL0K","Ul",2,1,5,"F2F2EE","C9CED4","bed of exposed springs","thud","Boing! Launch!","object"},
 	{"spring meadow","MGENII","FS",2,1,5,"9CCC65","F8BBD0","fresh grass and blossoms","rumble","Everything blooms. Everyone heals.","place,terrain"},
 	{"spring peeper","AMAJAG","Ue",1,5,1,"B89A6A","6A4A2A","tiny frog with an X on back","peep","Sings loud enough to hear a mile.","amphibian,wetland"},
@@ -402,5 +403,4 @@ return {
 	{"stinky feet","KJBDOJ","jM",2,4,1,"C0CA33","FFF59D","green wavy stink lines from shoes","whiff","Take off your shoes. Everyone faints.","silly,gross"},
 	{"stinky tofu","IJBDOJ","jSMP",3,3,2,"8A6A3A","C8A070","fried tofu cubes, pungent","whiff","The stinkiest snack. Fans swear by it.","edible,smelly"},
 	{"stir","KFBN5K","jHN",3,6,1,"C4B5FD","F8FAFC","wooden spoon whirling everything into a swirl","swish","Stirring the pot. Literally and socially.","kitchen"},
-	{"stir fry","IABNGI","KFP",4,4,2,"E8762B","7DBE3A","wok of tossed vegetables","sizzle","A whirlwind in a wok.","edible,spicy"},
 }

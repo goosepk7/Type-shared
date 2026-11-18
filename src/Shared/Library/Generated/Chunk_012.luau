@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"guardian","LHDJYA","GQka",6,3,9,"D4AF37","3B6FB6","towering armoured figure with a glowing tower shield","clang","You shall not get past. Or even near.","defense,warrior"},
 	{"guardian angel","AHCJNB","GAQF",5,7,5,"F8FAFC","FACC15","soft glowing angel hovering behind you","chime","Always one step behind. Catching you.","holy,guardian"},
 	{"guava","IGBAKF","Fke",3,6,2,"9CC34A","F3818A","round green fruit, pink inside","splat","Smells like a vacation.","edible,fruit,sweet,tropical"},
 	{"guess","KLBG3K","jEY",3,6,1,"F472B6","22D3EE","three spinning mystery boxes with question marks","ding","Eeny, meeny, miny, YOU.","silly,luck"},
@@ -402,5 +403,4 @@ return {
 	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},
 	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
 	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
-	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 }

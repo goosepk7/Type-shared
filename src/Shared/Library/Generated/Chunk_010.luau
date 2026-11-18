@@ -205,6 +205,7 @@ return {
 	{"furnace","EADMII","KESe",6,1,8,"374151","F97316","iron box with a glowing grate, pipes and a roaring door","roar","The basement monster. It heats the house.","fire,household"},
 	{"furniture","BMDELB","GkPO",5,3,6,"A9713B","6B4226","falling sofa, wardrobe, lamp and one leftover screw","crash","Self-assembly. Three screws left over. Hmm.","household,heavy"},
 	{"fury","AICJNB","jAQf",5,8,4,"1F2937","DC2626","winged avenger, snake hair, torch","screech","Holds grudges professionally.","mythical,flying"},
+	{"fuse bomb","BACG3F","KEN",7,4,3,"24242A","FF9F1C","a round black cartoon bomb with a sparking fuse","kaboom","Fsssssss... KABOOM.","cartoon,explosive,silly"},
 	{"fuse trail","CACLKI","KEQ",5,1,1,"24262A","FF6A1A","fizzing trail of sparks","boom","Follow the sparkle to the boom.","explosive"},
 	{"fusion","FHEGKE","KE",9,4,3,"FFF4B0","FF6B1A","mini star core, swirling plasma rings","hum","How stars work. Pocket-sized.","space,explosive,danger"},
 	{"fusion reactor","OAEN1I","KEL",9,1,8,"F2F2EE","7DF9FF","domed reactor with glowing core","hum","Clean energy. Messy meltdowns.","scifi,danger"},
@@ -402,5 +403,4 @@ return {
 	{"giant marshmallow man","IMFJNA","Ukf",8,2,8,"F7F4F0","4FA3E8","towering puffy white figure","thud","Puffy, sweet, and very stompy.","edible,giant,silly"},
 	{"giant meatball","IMDGKF","DkcI",6,5,6,"7A3A2A","B0202E","enormous meatball, sauce dripping","rumble","A meteor of meat.","edible,heavy"},
 	{"giant moth monster","AHFJFB","jAkP",8,5,7,"F59E0B","1E3A8A","enormous moth with eye-pattern wings","whoosh","Big wings. Bigger lamp addiction.","kaiju,giant,insect"},
-	{"giant mousetrap","BMDLII","kcO",5,1,4,"C49A6C","8A929B","enormous spring trap, huge cheese","snap","Same idea. Bigger snap.","trap,silly"},
 }

@@ -292,6 +292,7 @@ return {
 	{"bongo","AMCJAA","Dk",4,8,4,"A0401E","F2F0EA","chestnut red, thin white stripes","bleat","Named after a drum. Plays no drums.","mammal,wild"},
 	{"bongo drums","BMBFJI","O",2,6,3,"8B5A2B","D2B48C","pair of small joined drums","strum","Bongo bongo bongo!","music"},
 	{"bonk","KMBAKB","fO",2,8,2,"FFD54F","FFFFFF","cartoon lump and spinning stars","bonk","Bonk. Straight to nap jail.","silly,meme"},
+	{"bonk mallet","CMDGtK","kfO",7,5,2,"E53935","FFD54F","a giant squeaky toy mallet that bonks from above","bonk","Squeak. Flat. Squeak.","cartoon,silly,toy"},
 	{"bonnet","BMBONI","F",1,5,1,"F3E6C8","E88AA5","frilly tied bonnet","swish","Old-timey cuteness.","clothing"},
 	{"bonnethead","ABCJEC","DfTB",4,8,6,"8A9098","E8ECEE","small shovel-headed hammerhead","chomp","Eats seagrass. Weird shark.","fish,aquatic,ocean,predator"},
 	{"bonobo","AMCJBA","dFkf",3,5,7,"1E1A18","C8A890","slender chimp, parted hair","roar","Solves arguments with hugs.","mammal,primate"},
@@ -402,5 +403,4 @@ return {
 	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
-	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
 }
