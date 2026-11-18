@@ -273,6 +273,7 @@ return {
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
 	{"miasma","FJDDOJ","SMNP",5,3,3,"5D7A3A","A3B86C","thick yellow-green rotten haze","hiss","Smells like a dungeon basement.","toxic"},
+	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
 	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
 	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
 	{"microlight","DFBKHB","DAkg",3,6,2,"FFEB3B","1565C0","tiny wing over an open seat and prop","propeller","Basically a lawn chair with wings.","vehicle,air,silly"},

@@ -87,6 +87,7 @@ return {
 	{"shrimpfish","ABAJEC","jdB",1,6,1,"B8C0C8","3A3A3A","swims head-down","splash","Swims upside down. Always.","fish,aquatic"},
 	{"shrine","EHBNII","FS",2,1,5,"C62828","263238","tiny wooden altar with a gate frame","thud","Leave an offering. Get a blessing.","structure,building,holy"},
 	{"shrink","KLCAKB","eX",4,8,1,"F48FB1","FFFFFF","pink sparkle bolt making target tiny","zwip","Fun size!","magic,silly"},
+	{"shrink beam","CLCBwI","eX",4,8,3,"50E6C8","FF78BE","a ringed teal beam that squeezes the target small","zap","Fun size.","scifi,modern"},
 	{"shrink machine","OLDM1I","eX",5,3,6,"7D3CB5","8BC34A","huge dish shrink cannon","hum","Big problems, small sizes.","scifi"},
 	{"shrink ray","CLCBwI","jeX",4,7,3,"8BC34A","7D3CB5","ray gun with tiny dish tip","zap","Makes big problems small.","scifi,ranged"},
 	{"shrink spell","KLCBKI","eX",4,8,2,"FF4081","F8BBD0","pink zig-zag beam, target shrinking tiny","zwip","Pocket-sized problems.","silly"},

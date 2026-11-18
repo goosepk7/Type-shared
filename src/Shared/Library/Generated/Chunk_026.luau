@@ -54,6 +54,7 @@ return {
 	{"tekko kagi","CKBHJK","fT",3,8,3,"3A3F45","6B4226","hand straps with metal hooks","shing","Climb walls. Scratch foes.","ninja,sharp"},
 	{"telegraph plant","NGANMI","jdS",1,1,2,"7CB342","B39DDB","leaves that wiggle on their own","rustle","Dances to music. Confuses everyone.","plant,flower,silly"},
 	{"telekinesis","KLCBKI","lHI",5,6,3,"F48FB1","E1BEE7","pink outlined objects lifting in the air","hum","Hands free. Mind full.","psychic"},
+	{"telepads","OLCL1I","SY",3,4,4,"B078FF","787C88","two linked violet hex pads with light columns","hum","Step on. Step off. Elsewhere.","scifi,game"},
 	{"telepathy","KLBOKJ","ja",2,6,2,"E040FB","F8BBD0","pink brainwave rings from the head","hum","I know what you're about to type.","psychic"},
 	{"teleport","KLBOKI","Y",3,10,2,"7C4DFF","B9F6CA","flash of violet, rings collapsing then reappearing","warp","Here. Now there. Now here again.","magic"},
 	{"teleport grenade","CLBGKI","jeY",3,7,1,"A66BDB","F2F2EE","pulsing violet sphere","zap","Pop! They're somewhere else.","scifi,ranged"},
