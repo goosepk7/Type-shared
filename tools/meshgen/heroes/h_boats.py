@@ -1278,7 +1278,7 @@ def aircraft_carrier():
 B = VEH_ = {"cat": ["Vehicle", "Machine", "Object"]}
 MAP = [
     ("rowboat", "rowboat, row boat, rowing boat, dinghy, skiff, lifeboat, coracle, row, inflatable boat, rubber boat, banana boat, glass bottom boat, toy boat, boat, lantern boat, magic boat, giant leaf boat, log flume, bathtub boat", B),
-    ("canoe", "canoe, kayak, dugout, war canoe, outrigger, paddleboard, surfboard, punt, dragon boat", B),
+    ("canoe", "canoe, kayak, dugout, war canoe, outrigger, punt, dragon boat", B),
     ("speedboat", "speedboat, speed boat, powerboat, motorboat, jet boat, police boat, fireboat, hydroplane, hydrofoil, torpedo boat, airboat, water skis", B),
     ("sailboat", "sailboat, sail boat, yacht, catamaran, dhow, ice yacht, sail, junk ship, junk", B),
     ("super yacht", "super yacht, superyacht, mega yacht, luxury yacht, cruise ship, ferry, research vessel, royal barge, pontoon boat, houseboat", B),

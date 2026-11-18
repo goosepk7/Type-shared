@@ -1086,7 +1086,8 @@ MAP = [
     ("unicycle", "unicycle", L),
     ("penny farthing", "penny farthing, velocipede, high wheeler", L),
     ("skateboard", "skateboard, longboard, roller skates, ice skates, skate board", L),
-    ("hoverboard", "hoverboard, hover board", L),
+    # you stand on a surfboard: the hover deck (no wheels), not the canoe it used to map to
+    ("hoverboard", "hoverboard, hover board, surfboard, surf board, bodyboard, boogie board, paddleboard, wakeboard", L),
     ("self balancing scooter", "self balancing scooter, segway", L),
     ("atv", "atv, quad bike, quad, four wheeler", L),
     ("snowmobile", "snowmobile, snow mobile, skidoo", L),
