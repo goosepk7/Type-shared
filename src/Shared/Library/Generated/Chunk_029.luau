@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"yeti family","ACBJNA","dJ",2,5,3,"F1F5F9","93C5FD","fluffy white baby yeti","roar","Throws tiny snowballs. Adorably.","cryptid,cute,frozen"},
 	{"yeti king","ACEJNA","Jkh",8,4,8,"F1F5F9","1E3A8A","giant white yeti with icicle crown","roar","Rules the mountain. Hates sunscreen.","cryptid,frozen,boss"},
 	{"yew","NJDCMI","GWkSM",4,1,8,"4E342E","1B5E20","dark dense ancient tree, red berries","rustle","Old, dark, and quietly poisonous.","plant,tree,ancient"},
 	{"yi qi","AMBJBB","DAQfT",2,9,3,"3A3A3A","8A6A4A","bat-winged small dino","screech","A dinosaur with bat wings.","dinosaur,extinct,reptile,predator"},

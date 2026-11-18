@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shipyard","MBENII","Sh",3,1,7,"607D8B","1E88E5","ships on slipways, cranes","crowd","Launches a fresh ship. At you.","place"},
 	{"shiro","IBBOGI","FS",3,4,3,"C8762B","E8A040","chickpea stew","slurp","A spicy chickpea stew.","edible,warm,healthy"},
 	{"shirt","BMBIVB","GjA",2,5,2,"EF4444","FFFFFF","flapping red t-shirt with a pizza stain","flutter","Inside out and backwards. Like always.","clothing"},
 	{"shisa","AECJAA","Gf",4,5,7,"DC2626","F59E0B","grinning orange lion-dog statue","roar","Grins at evil. Evil leaves.","yokai,guardian"},
@@ -358,6 +359,7 @@ return {
 	{"snowy owl","ACBJDB","AZT",3,7,2,"F7F7F4","2A2A2A","white owl with black flecks, yellow eyes","hoot","A fluffy snowball with eyes.","bird,nocturnal,predator,arctic"},
 	{"snowy peak","MCFCII","GJS",5,1,9,"FFFFFF","90A4AE","jagged mountain top under deep snow","rumble","Cold. Steep. Avalanche-ready.","place,terrain,frozen"},
 	{"soap","BBALKI","jNO",1,6,1,"C3A6E8","F2F2EE","slippery pastel soap bar","splash","Slippy! Slippy! Splat.","bathroom,silly"},
+	{"soap bubble","BBCGKJ","leO",3,3,3,"CFE9F5","F2B8E0","a drifting soap bubble that floats a foe away","bloop","Pop in. Float away.","cartoon,silly"},
 	{"soapbox car","DMBKHL","Dkg",2,6,2,"D9A441","C0392B","wooden crate on pram wheels","engine","Brakes? Never heard of them.","mechanical,vehicle,land,silly"},
 	{"soar","KFCOKB","DA",3,8,2,"81D4FA","FFFFFF","high swooping flight path","whoosh","To the clouds and beyond.","air"},
 	{"soba","IMBLGI","HN",2,3,3,"8A6A4A","C8A070","thin brown noodles on bamboo tray","gloop","Thin buckwheat noodles, cool and slurpy.","edible,sticky"},
@@ -401,6 +403,4 @@ return {
 	{"solstice","GHENOI","KJF",6,3,5,"FFB300","B3E5FC","sun and frost glow in balance","chime","The longest day. Or night. Both?","holiday"},
 	{"solution","KHBOKB","GFX",3,5,3,"22D3EE","F8FAFC","jigsaw piece clicking into place with a sparkle","click","Have you tried duct tape? Try more duct tape.","support"},
 	{"som tam","IABAKK","KeP",3,7,2,"C8D88A","D8302B","shredded green papaya salad","sizzle","Crunchy, spicy, sour.","edible,spicy,flammable"},
-	{"sombrero","BMCINI","G",1,5,2,"D2B48C","C0392B","huge wide-brimmed hat","swish","Shade for everyone.","clothing"},
-	{"son","LMBJNA","UDf",3,7,3,"3B82F6","F2D0B4","boy with a backwards cap and scraped knees","yay","Was told not to run indoors. Is running.","family"},
 }

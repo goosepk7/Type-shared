@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"giant mousetrap","BMDLII","kcO",5,1,4,"C49A6C","8A929B","enormous spring trap, huge cheese","snap","Same idea. Bigger snap.","trap,silly"},
 	{"giant mushroom","NJDLMI","GUlS",4,1,6,"C62828","F5F5F5","towering spotted cap like an umbrella","poof","Bounce on it. Very high.","plant,fungus,silly"},
 	{"giant oak","NGFCMI","GWkSO",6,1,10,"4E342E","33691E","enormous gnarled oak, wide crown","rustle","A thousand years of grumpiness.","ancient,heavy"},
 	{"giant onion","IJEDIF","jSMP",7,2,7,"E8D5A8","9A5A2A","onion as big as a hut","thud","Layers on layers. Tears on tears.","edible,giant,silly"},
@@ -102,6 +101,7 @@ return {
 	{"globe","BMBGKK","Ue",1,5,3,"2F6FD1","D2B48C","spinning world on a stand","tap","The whole world in your hands.","school"},
 	{"glockenspiel","BKBFJI","d",1,5,3,"C9CED4","1F2F55","row of metal bars","chime","Ding dang dong.","music"},
 	{"gloom","FICDOJ","jSN",3,3,3,"3A3446","7E7590","grey-purple drooping cloud","sigh","Mondays, but as a spell.","spooky,silly"},
+	{"gloom cloud","GBCDOJ","QLN",3,4,3,"6E7F92","BFD6E8","a small grumpy grey cloud that rains on one head","patter","Your own personal bad day.","cartoon,silly,storm"},
 	{"glory","KHCOKJ","DF",4,6,4,"FFD54F","FFFFFF","golden spotlight and trumpet sparkles","choir","Glory! Glory! Applause please.","holy"},
 	{"glove","BMAONI","G",1,6,2,"D8CBB5","C0392B","knitted wool mitten","swish","Warm hands. Brave hands.","clothing"},
 	{"glow","FHBOKJ","Fc",2,3,2,"FFF1B8","FFFFFF","soft warm halo around the caster","hum","Stay positive. Literally glowing.","cute"},

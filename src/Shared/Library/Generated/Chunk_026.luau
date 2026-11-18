@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"teach","KHBF6B","XNO",3,4,2,"15803D","FFFFFF","pointer stick tapping a chalkboard, chalk flying","tap","Class is in session. You are the lesson.","school"},
+	{"teacher","LMCJNA","jOh",3,4,4,"7C2D12","F8FAFC","glasses, cardigan, chalk","ding","Pop quiz. Right now.","school"},
 	{"teachers pet","LHBJNA","dOh",2,5,2,"FDE047","EF4444","kid with hand rocketing up, shiny apple, perfect hair","ding","Teacher! Teacher! They are cheating!","school,silly"},
 	{"teacup ride","DLBKHK","jkg",2,4,3,"F48FB1","FFFFFF","giant spinning teacup with seats","whoosh","Round and round until everyone is dizzy.","silly,cute"},
 	{"teak","NGECMI","GWkS",4,1,9,"5D4037","558B2F","tall straight dark hardwood tree","rustle","So hard you could build a ship.","plant,tree,heavy"},
@@ -401,6 +403,4 @@ return {
 	{"treant sapling","AGAJMA","WF",1,3,3,"65A30D","A3E635","little walking sapling with leaf hair","rustle","Grows a bit each round.","plant,cute"},
 	{"treasure chest","BMCLII","dch",3,1,7,"8B5A2B","D4A72C","iron-banded chest spilling gold","chime","X marked this spot.","treasure,pirate"},
 	{"treasure galleon","DBEMHC","cegB",6,4,8,"6D4C41","FFD54F","galleon overflowing with gold","cannon","Everyone wants what is inside.","vehicle,aquatic,pirate"},
-	{"treasure hunter captain","LMCJNA","cb",4,6,4,"A16207","FACC15","map, shovel, eyepatch","ding","X marks the spot. You're the spot.","explorer,pirate"},
-	{"treasure island","MEENII","Sch",4,1,8,"E6C27A","43A047","island with an X marked in sand","chime","X marks the spot. Dig!","place,mythical,pirate"},
 }

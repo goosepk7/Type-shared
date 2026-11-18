@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"cloning machine","OLCM1I","Vh",5,2,5,"F2F2EE","3FC1D9","two pods joined by tubes","hum","Two of everything. Including you.","scifi"},
-	{"close","KECCoI","GkO",4,6,7,"8B5A2B","D4AF37","heavy door slamming shut, dust puff, picture falling off","bang","And STAY out.","household,defense"},
 	{"closet monster","AICJGA","jZc",4,5,4,"4C1D95","FDE047","furry shape with many eyes behind doors","growl","Lives with your shoes.","spooky,silly,cute"},
 	{"cloth weaver","LMCJNI","HN",3,4,4,"7C3AED","FDE68A","loom, spindle, threads everywhere","whir","Weaves a net. You're in it.","historical"},
 	{"clothes","BMCLNA","GjN",2,4,3,"3B82F6","EF4444","empty outfit walking by itself: shirt, jeans, sneakers","rustle","Nobody inside. Still better dressed than you.","clothing,silly"},
@@ -403,4 +401,6 @@ return {
 	{"cruller","IMBLKI","dSc",2,3,3,"E8B860","F7F0D8","twisted ridged ring","chomp","A donut that does yoga.","edible,sweet"},
 	{"crumb","IMAELJ","cNP",1,5,1,"D9B382","A16207","sprinkle of golden crumbs trailing off","pitter","In the bed. In the keyboard. Forever.","edible,silly"},
 	{"crumble","IGBOKI","F",2,5,3,"C89050","B0203E","fruit bake with crumbly topping","crunch","Crumbles beautifully under pressure.","edible,healthy"},
+	{"crumpet","IMBAKK","Uke",3,7,2,"E8C07A","C89050","round griddle cake, holes","whoosh","A spongy disc with built-in butter holes.","edible"},
+	{"crush","KEDNOI","kNO",7,4,5,"6D4C41","BCAAA4","heavy stone slab pressing down","crunch","Flat as a pancake.","heavy"},
 }

@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"dot","KMAELG","UjP",1,6,1,"EF4444","FFFFFF","bouncing red polka dots of different sizes","pop","Connect them. Too slow.","school,shape"},
-	{"double agent","LICJNA","jZb",4,7,3,"1F2937","DC2626","trench coat with two badges","whisper","Works for both sides. Mostly for snacks.","stealth"},
 	{"double axe","CKDHsK","kfV",7,4,6,"8A929B","6B4226","two-sided axe head","chop","Twice the axe, twice the drama.","medieval,sharp"},
 	{"double barrel","CKCAwI","keV",6,3,4,"3A3F45","8B5A2B","two side-by-side barrels","bang","Two barrels, twice the thunder.","modern,ranged"},
 	{"double bass","BMDFJI","IN",3,2,5,"6E3418","24262A","huge standing string instrument","strings","Thum. Thum. Thum.","music"},
@@ -403,4 +401,6 @@ return {
 	{"evocation","FLCAKB","Ee",5,8,1,"FF5722","7C4DFF","raw multicoloured energy bolt","whoom","Pure magical oomph.","magic"},
 	{"evolution","KGCOBA","WFfV",5,4,5,"22C55E","FDE047","line of shapes: fish, lizard, ape, human, robot, glowing","fanfare","Give it a few million years. Or one second.","science,gaming"},
 	{"ex","LICJNA","jiN",4,4,4,"4B5563","9CA3AF","person with a box of your stuff and folded arms","sigh","Still has your hoodie. Not giving it back.","silly"},
+	{"excavator","DEDKHL","Cklfg",6,3,9,"F5A623","2B2B2B","tracked base, long arm, toothed bucket","engine","Digs holes. Fills them with enemies.","mechanical,vehicle,land"},
+	{"excitement","KDCOKG","UD",3,9,2,"FF4081","FFEB3B","fizzing sparkle aura","yay","Can't sit still. Won't sit still.","silly,speed"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"treasure hunter captain","LMCJNA","cb",4,6,4,"A16207","FACC15","map, shovel, eyepatch","ding","X marks the spot. You're the spot.","explorer,pirate"},
+	{"treasure island","MEENII","Sch",4,1,8,"E6C27A","43A047","island with an X marked in sand","chime","X marks the spot. Dig!","place,mythical,pirate"},
 	{"treasure pile","BMDL2I","dc",3,1,6,"D4A72C","F1C40F","mountain of coins and goblets","chime","Dragons sleep on these. Enemies trip on these.","treasure,shiny"},
 	{"treasure room","MKDNII","dSc",3,1,8,"FFD54F","8D6E63","piles of gold coins and gems","rumble","Look at all this loot! Nobody touch it.","place,terrain"},
 	{"treasure sack","BMBL2I","cb",2,4,2,"D2B48C","D4A72C","bulging sack with dollar sign","thud","Loot acquired.","container,treasure"},
@@ -401,6 +403,4 @@ return {
 	{"wampus cat","AICJAA","jZf",5,8,4,"1C1917","FACC15","six-legged cat with glowing eyes","hiss","Two extra legs. Twice the zoomies.","cryptid,cat,spooky"},
 	{"wand","BLAAzI","eh",4,8,2,"5A3A1E","D4A72C","slim carved wand with sparkly tip","chime","Swish and flick.","magic,fantasy"},
 	{"wanderer","LFCJNA","ZY",4,6,4,"A16207","78716C","hooded traveling cloak, walking staff","whoosh","Arrives from nowhere. Leaves the same way.","explorer"},
-	{"war","KAENOI","KkP",7,5,5,"8D6E63","D32F2F","smoky battlefield haze with banners","horn","Banners up. Charge together.","rage"},
-	{"war canoe","DBCKHC","DkgB",4,7,4,"6D4C41","FFB300","long canoe with side float, carved prow","splash","Paddle together. Win together.","vehicle,aquatic"},
 }

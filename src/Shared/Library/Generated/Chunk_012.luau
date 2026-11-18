@@ -95,6 +95,7 @@ return {
 	{"hammer-headed bat","AMBJDB","jiA",2,7,1,"6A4A2A","C8A07A","huge box-shaped head","honk","Honks like a goose. Head like a hammer.","mammal,nocturnal,spooky,silly"},
 	{"hammerhead shark","ABDJEC","DkfTB",7,8,6,"7C8C96","E8ECEE","wide hammer-shaped head","chomp","Built-in hammer. Uses it for science.","fish,aquatic,ocean,predator"},
 	{"hammerkop","AMCJDA","AfT",3,5,2,"8A6A44","C8A07A","head shaped like a hammer","squawk","Builds giant nests. Hammer head.","bird,wetland"},
+	{"hammerspace","KMDHJK","kf",4,6,2,"3A3A44","E8C25A","a random giant object yanked from behind the back","bonk","Where was he keeping that?","cartoon,silly,melee"},
 	{"hammock","BMCLII","FNO",1,1,3,"CDBF9E","B89B6A","woven net bed between posts","thud","Nap trap. Nobody escapes.","summer"},
 	{"hamster","AMAJAA","Cdb",1,6,1,"E2B87A","FFF8EE","round body, stuffed cheeks","squeak","Stores a whole meal in its face.","mammal,cute,pet"},
 	{"hamster knight","AMAJAF","UDd",2,8,2,"F59E0B","94A3B8","hamster in a ball-shaped armor","squeak","Rolls into battle. Literally.","silly,cute,warrior"},
@@ -402,5 +403,4 @@ return {
 	{"hopscotch","KMBOKG","UD",1,6,2,"FF80AB","FFFFFF","chalk squares glowing under hops","boing","One, two, three, dodge!","silly"},
 	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},
 	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
-	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
 }

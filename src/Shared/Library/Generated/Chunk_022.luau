@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"saltfish","IGBOKI","F",2,5,3,"F2E0A0","E8DCC0","salted fish with ackee","crunch","Jamaica's breakfast champion.","edible,healthy"},
 	{"saltwater crocodile","ABEJAC","fHOB",8,5,8,"5A5A3A","D8D0A0","gigantic croc, armored back","snap","Biggest reptile on Earth. Grumpy.","reptile,predator,aquatic"},
 	{"salty","KEBDOJ","iNP",3,4,2,"F8FAFC","93C5FD","grumpy salt shaker pouring a cloud of crystals","pitter","So salty the sea is jealous.","gaming,meme"},
 	{"saluki","AMCJAA","DQf",4,9,4,"D8B88A","F2E8D8","slim sighthound with feathery ears","bark","Desert racer with fancy ears.","mammal,pet,desert"},
@@ -402,5 +403,4 @@ return {
 	{"shipping container","BKECnI","GO",3,1,10,"C0392B","9C4A1A","giant ribbed metal box","thud","The brick of the seas.","container"},
 	{"shipworm","ABAJGI","GCN",1,1,6,"E8E0D0","C8B8A0","clam that bores into wood","squelch","A clam that eats boats.","mollusk,aquatic"},
 	{"shipwreck","MBENII","Sch",4,1,6,"6D4C41","26A69A","broken hull on the sea floor, coral","thud","Something guards the treasure inside.","spooky,pirate"},
-	{"shipyard","MBENII","Sh",3,1,7,"607D8B","1E88E5","ships on slipways, cranes","crowd","Launches a fresh ship. At you.","place"},
 }

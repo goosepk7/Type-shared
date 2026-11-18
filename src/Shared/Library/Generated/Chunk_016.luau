@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"maine coon","AMCJAA","dfT",3,7,2,"8A6A4A","D8C4A8","huge fluffy cat, lynx ear tips, big ruff","meow","A house cat that skipped leg day never.","mammal,pet,cute"},
 	{"major","LKCJNA","GeOh",5,5,6,"4D5D3A","C9A227","officer in a peaked cap with medals and a pointing stick","whistle","Atten-SHUN! That means you, typing fingers.","military"},
 	{"majungasaurus","AMDJBA","DkfT",6,6,7,"8A5A4A","D8A07A","short skull, single horn bump","roar","Madagascar's bumpy-headed boss.","dinosaur,extinct,reptile,predator"},
 	{"makara","ABDJEC","DkB",6,6,6,"0E7490","FBBF24","crocodile jaws, elephant trunk, fish tail","roar","Part croc, part elephant, part confused.","mythical,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"molten metal","FKCF6F","KN",7,4,5,"FF7A00","C0C0C0","glowing orange-silver liquid metal flow","bubble","Forge-fresh. Do not hug.","heavy,fire"},
 	{"molten rain","FAEEOJ","KNP",8,4,3,"DD2C00","FF9100","black cloud dripping glowing drops","sizzle","Umbrella melted. Bad day.","fire,storm"},
 	{"mom","LMCJNA","GFh",4,6,5,"F472B6","F8FAFC","apron, phone, minivan keys","ding","Uses your full name. Instant stun.","family"},
-	{"momentum","FMCOKJ","Dk",4,8,3,"FF8A4D","FFE0C2","forward-streaming motion lines","whoosh","Hard to stop. Harder to dodge.","speed"},
 }

@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"excavator","DEDKHL","Cklfg",6,3,9,"F5A623","2B2B2B","tracked base, long arm, toothed bucket","engine","Digs holes. Fills them with enemies.","mechanical,vehicle,land"},
-	{"excitement","KDCOKG","UD",3,9,2,"FF4081","FFEB3B","fizzing sparkle aura","yay","Can't sit still. Won't sit still.","silly,speed"},
 	{"executioner","LICJNA","kf",6,3,6,"111827","7F1D1D","black hood, huge axe","thud","Very serious job. Very serious hood.","villain"},
 	{"exercise","KMCONG","UDWf",4,7,4,"22C55E","F97316","sweatband figure doing star jumps beside a dumbbell","grunt","One more rep. That was a lie. Ten more.","sport"},
 	{"exit","EHCLoI","HIY",3,1,4,"22C55E","FFFFFF","glowing green EXIT sign over a push-bar door","click","This way out. No re-entry.","building"},
@@ -154,6 +152,7 @@ return {
 	{"fig","IMBLKI","dSc",2,3,3,"5E2F4F","C77A6A","teardrop purple, pink inside","chomp","Soft, jammy, a bit fancy.","edible,sweet,fruit"},
 	{"fig tree","NGDCMI","GFS",3,1,7,"8D8D8D","689F38","twisted silver trunk, small leaves","rustle","Ancient, gnarled, generous.","plant,tree,ancient"},
 	{"fight","KMCNOI","kf",4,7,3,"FF7043","FFFFFF","cartoon dust-cloud fight ball","pow","Fists and dust everywhere.","melee,silly"},
+	{"fight cloud","KMCNOK","Dkf",4,6,2,"F3EBDD","FFD54F","a rolling dust ball of fists, boots and stars","bonk","Nobody knows who's winning.","cartoon,silly,melee"},
 	{"fighter squadron","DFFELB","EAeP",8,9,6,"607D8B","37474F","wing of jets in tight formation","jet","Here comes the whole squadron.","vehicle,air"},
 	{"figure skater","LCCJNK","jJY",3,8,3,"F9A8D4","BAE6FD","sparkly outfit, mid-spin on ice","whoosh","Spins so fast it freezes the air.","sport,frozen"},
 	{"file","JKAHJK","fN",1,5,5,"8E9196","24262A","rough flat bar, ridged face","clank","Scritch scratch. Smooth.","tool"},
@@ -403,4 +402,5 @@ return {
 	{"fog cloud","FBDDOJ","jZS",1,3,3,"CFD8DC","FFFFFF","round thick fog ball expanding","hush","Now nobody can see anything. Great.","stealth"},
 	{"fog machine","OFCD1I","jZSP",1,3,4,"24262A","8E9196","box pumping thick fog","hiss","Spooky mood, instantly.","party,defense"},
 	{"foghorn","BMDFmI","IPO",4,2,6,"C0392B","4A4D52","huge horn on a post","horn","BWOOOOOOOOM.","music,loud,ocean"},
+	{"foil","CKCHrK","fT",3,9,2,"C9CED4","F2F2EE","thin flexible blade, bell guard","shing","Touché, and also touché again.","medieval,sharp"},
 }

@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"foil","CKCHrK","fT",3,9,2,"C9CED4","F2F2EE","thin flexible blade, bell guard","shing","Touché, and also touché again.","medieval,sharp"},
 	{"fold","KMBOnB","jXN",3,5,2,"FFFFFF","F87171","enemy outline creased in half like a paper sheet","rustle","Fold. Fold again. Now you are a swan.","art,silly"},
 	{"folding chair","BKBAJK","keO",3,5,4,"8E9196","24262A","flat metal folding chair","thud","Wrestling's favourite prop.","silly"},
 	{"follow","KHBOLA","Qbh",2,7,2,"8B5CF6","FFFFFF","conga line of little avatar icons trailing behind","pop","Ten new followers. All of them bots.","meme,internet"},
@@ -403,4 +402,5 @@ return {
 	{"giant marshmallow man","IMFJNA","Ukf",8,2,8,"F7F4F0","4FA3E8","towering puffy white figure","thud","Puffy, sweet, and very stompy.","edible,giant,silly"},
 	{"giant meatball","IMDGKF","DkcI",6,5,6,"7A3A2A","B0202E","enormous meatball, sauce dripping","rumble","A meteor of meat.","edible,heavy"},
 	{"giant moth monster","AHFJFB","jAkP",8,5,7,"F59E0B","1E3A8A","enormous moth with eye-pattern wings","whoosh","Big wings. Bigger lamp addiction.","kaiju,giant,insect"},
+	{"giant mousetrap","BMDLII","kcO",5,1,4,"C49A6C","8A929B","enormous spring trap, huge cheese","snap","Same idea. Bigger snap.","trap,silly"},
 }

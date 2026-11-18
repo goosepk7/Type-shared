@@ -78,10 +78,8 @@ return {
 	{"bubble tea","IBBOKI","FeV",2,6,2,"C8A070","2A1610","tall cup, wide straw, dark pearls","slurp","Drink it. Chew it. Shoot the pearls.","edible,drink"},
 	{"bubble tornado","HBDN5K","Ujl",4,5,2,"B3E5FC","F8BBD0","spinning column of soap bubbles","pop","Pop pop pop. Wheeeee.","storm,silly"},
 	{"bubble tower","EBDMII","GUlSeN",3,1,5,"B3E5FC","F48FB1","tower blowing huge bubbles","thud","Traps enemies in bubbles. Pop!","structure,defense,tower,silly"},
-	{"bubble trap","OBCL1I","AlO",3,1,2,"47D7E8","F2F2EE","giant floating soap bubble","clank","Pop in. Float away.","defense,mechanical"},
 	{"bubble waffle","IMCIII","Ga",3,3,3,"E8B860","F7F2EC","waffle covered in bubbles","thud","A waffle with pop-able bubbles.","edible,dessert"},
 	{"bubble wall","EBCCII","GUS",1,1,2,"B3E5FC","F8BBD0","wobbly wall of shiny bubbles","thud","Pop! Pop! Still standing. Mostly.","silly,cute"},
-	{"bubble wand","CBAFzI","dAe",1,5,1,"F06292","47D7E8","plastic wand with a loop","bloop","Blow gently. Win slowly.","toy,silly"},
 	{"bubble wave","FBCF6F","UI",3,6,1,"B3E5FC","F8BBD0","rolling surge of bubbles","pop","Boing boing pop.","silly,aquatic"},
 	{"bubble wizard","LBCJNA","Ujl",3,5,3,"BAE6FD","F0ABFC","robe with bubble wand staff","bubble","Traps foes in bubbles. They float away.","magic,silly"},
 	{"bubble wrap","BMCONI","Gd",1,5,2,"BFE6F2","F2F2EE","wrapped in popping plastic","clank","Pop pop pop pop pop.","silly"},
@@ -403,4 +401,6 @@ return {
 	{"cartoon box trap","BMCLII","cO",2,1,3,"C69C6D","8B5A2B","box propped on a stick with string","snap","Classic. Works on everyone.","trap,silly"},
 	{"cartoonist","LLCJNI","jh",3,4,3,"111827","FACC15","sketchbook, pen, ink splotches","scratch","Draws allies into existence.","art"},
 	{"cartwheel","KMBOKK","Dd",2,7,2,"F8BBD0","FFFFFF","cartwheeling motion arc","whee","Wheee! Totally on purpose.","silly,sport"},
+	{"cashew","IEAAKK","UeO",2,8,5,"EBD9A8","D8C08A","curved kidney-shaped nut","tok","A nut shaped like a comma.","edible,nut"},
+	{"cashier","LMCJNA","dO",3,5,3,"DC2626","F8FAFC","name tag, register, receipt roll","ding","Paper or plastic? Neither. Combat.","silly"},
 }

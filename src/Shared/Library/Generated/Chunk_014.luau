@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jigsaw puzzle","BMBLKI","jO",1,2,2,"2F6FD1","2E8B57","interlocking cardboard pieces","squeak","One piece is always missing.","toy"},
 	{"jigsaw tool","JKBHJK","fV",3,6,4,"2F6FD1","24262A","saw with up-down blade","whirr","Curves! Corners! Chaos!","tool"},
 	{"jinx","KLBAKB","jd",3,8,1,"AB47BC","FFEB3B","wobbly yellow-purple spark","cackle","Trips over nothing. Every time.","silly"},
 	{"jitte","CKBHtK","GfO",2,7,5,"8A929B","9E1B32","blunt rod with side hook","shing","Catches swords. Bonks owners.","ninja"},
@@ -324,7 +325,7 @@ return {
 	{"laser turret bot","OKCMII","TeL",5,1,6,"E5E7EB","EF4444","tripod turret with red laser lens","beep","Are you still there?","robot"},
 	{"laser watch","CHABJI","Ke",3,9,2,"C9CED4","FF2D2D","wristwatch firing a thin beam","bang","It's always time for lasers.","spy,scifi"},
 	{"lassi","IBBOKI","JF",2,6,2,"F2B33A","F7F2E0","tall glass of yogurt drink","slurp","Cool, creamy, sweet.","edible,drink"},
-	{"lasso","CMCAJI","HeN",2,7,3,"B89B6A","D2B48C","looped rope spinning overhead","twang","Yee-haw, gotcha.","cowboy"},
+	{"lasso","CMCAJK","HeO",3,7,3,"C9A46A","8A6A3E","a twirled rope loop that ropes and yanks a foe","twang","Yee-haw, gotcha.","cartoon,cowboy"},
 	{"last echo","KLCOKI","FY",4,8,3,"7FB8E8","E9F3FA","blue ghost trail snapping back along your path","warp","Let's try that again.","time,anime,magic"},
 	{"last stand","KADOKI","GDk",7,5,6,"D32F2F","FFD54F","blazing red-gold aura at low health","horn","Not going down. Not like this.","rage"},
 	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
@@ -402,5 +403,4 @@ return {
 	{"leash","BMBLKI","HN",1,5,2,"C0392B","C9CED4","strap with clip","squeak","Heel!","pet"},
 	{"leather","BMCIyE","Gka",3,4,8,"5B3A1E","2B1B12","creaky brown biker jacket with a popped collar and studs","creak","Creaks when it moves. Cooler than you.","clothing,cool,armor"},
 	{"leather armor","BMCONI","G",1,7,4,"6B4226","7A4E2D","stitched leather vest and pads","clank","Light, comfy, slightly squeaky.","armor,defense"},
-	{"leather jacket","BMCONI","Gd",1,5,4,"24262A","C9CED4","black leather biker jacket","swish","Instantly 40% cooler.","clothing"},
 }

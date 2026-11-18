@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"war","KAENOI","KkP",7,5,5,"8D6E63","D32F2F","smoky battlefield haze with banners","horn","Banners up. Charge together.","rage"},
+	{"war canoe","DBCKHC","DkgB",4,7,4,"6D4C41","FFB300","long canoe with side float, carved prow","splash","Paddle together. Win together.","vehicle,aquatic"},
 	{"war chief","LECJNA","kfh",6,5,6,"7C2D12","CA8A04","fur cloak, bone necklace, big axe","roar","Leads the charge. Yells loudest.","warrior,royal"},
 	{"war club","CMCHtK","kfO",4,5,5,"8B5A2B","8C8C88","club with a stone ball head","shing","Bonk, the old-fashioned way.","sharp,ancient"},
 	{"war drum","BMDFJI","FkO",5,3,5,"6B4226","E3DAC9","giant hide drum with bone sticks","boom","Every beat makes the army braver.","music,loud"},
@@ -395,12 +397,10 @@ return {
 	{"yawn","KMBFOB","NO",1,3,1,"B3E5FC","FFFFFF","stretchy sleepy ripple","yawn","Contagious. Look, you just did it.","silly"},
 	{"year","KLDN5K","SXN",5,1,4,"16A34A","F59E0B","calendar ring of twelve months spinning with party hats","chime","Twelve months. Gone. Where did it go?","time"},
 	{"yeast","IMBOKI","WP",3,5,3,"E8D8A8","C8B88A","beige granules","chomp","Tiny helpers that make dough grow.","edible"},
-	{"yeehaw","KMCOKB","Dk",3,9,2,"A1887F","FFD54F","lasso swirl and dust kick","yeehaw","Yeehaw! Saddle up.","silly"},
 	{"yeet","KFCAKB","kle",5,10,1,"FFEB3B","FF4081","target spinning away in a huge arc","whoosh","YEET. Gone. Bye.","meme,silly"},
 	{"yellow squash","IMBHJI","kf",3,5,4,"F2D23A","5E7A2B","curved yellow squash","bonk","A sunny club.","edible,silly"},
 	{"yellowstone","MBFNII","KlS",6,1,9,"FFEB3B","4FC3F7","steaming pools, geysers, colourful springs","rumble","Geysers everywhere. Bubbling everywhere.","place,landmark"},
 	{"yes","KHBOKJ","DWF",3,6,3,"22C55E","FFFFFF","big green YES with a thumbs up and sparkle","ding","Yes. Absolutely. What was the question?","support,meme"},
 	{"yeti","ACDJNA","DJkf",7,5,7,"F1F5F9","93C5FD","shaggy white ape, frosty breath","roar","Lives on a mountain. Hates sunscreen.","cryptid,frozen"},
 	{"yeti crab","ABBJRA","GfT",2,4,5,"F2F2EE","E8E0D0","hairy white deep-sea crab","clack","A crab in a fur coat.","crustacean,aquatic,armored,deepsea"},
-	{"yeti family","ACBJNA","dJ",2,5,3,"F1F5F9","93C5FD","fluffy white baby yeti","roar","Throws tiny snowballs. Adorably.","cryptid,cute,frozen"},
 }
