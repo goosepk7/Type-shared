@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bedtime","KLCDOJ","SO",3,3,2,"3949AB","FFF8E1","cosy dark-blue cloud with stars and Zs","snore","Into bed. Now. Everyone.","silly"},
+	{"bee","AJAJLB","AFTMP",2,7,1,"F2C02A","2A1E14","fuzzy striped body, tiny wings, stinger","buzz","Makes honey. Dances directions. Stings once.","insect,swarm,venomous"},
+	{"bee balm","NGBNMI","dFSch",1,1,2,"E91E63","7CB342","spiky ragged pink pompoms","rustle","Bees cannot resist it.","plant,flower"},
+	{"bee fly","AMAJFB","jdAP",1,6,1,"C8A07A","F2E8D0","fluffy fly with long nose","buzz","A fuzzy pompom with a straw.","insect,cute"},
 	{"bee knight","AJAJFB","ATM",2,9,1,"FACC15","111827","bee in a tiny helmet with a stinger lance","buzz","Buzzes. Jousts. Stings.","insect,warrior"},
 	{"bee-eater","AMAJDB","dA",1,7,1,"2AB06A","F2C82A","rainbow bird, curved beak","tweet","Eats bees. Removes stingers first.","bird,cute"},
 	{"beech tree","NGECMI","GWkS",4,1,8,"9E9E9E","7CB342","smooth grey trunk, wide crown","rustle","Smooth bark. Rough day for you.","plant,tree"},
@@ -269,7 +273,7 @@ return {
 	{"bocce ball","BMAA3F","ke",2,6,6,"C0392B","C9CED4","heavy polished ball","bonk","Roll it close. Or at them.","sport"},
 	{"body","BMCJNA","Ddf",3,5,5,"E8B48A","3B82F6","headless torso in a t-shirt, arms flailing","thud","Forgot its head at home. Still showed up.","silly,body"},
 	{"boerewors","IABAKK","Ke",3,7,2,"8A3A1E","C8603A","coiled spiral sausage","whoosh","A sausage spiral. Grilled.","edible"},
-	{"bog monster","AGDJNA","MHN",6,3,7,"365314","84CC16","hulking mass of moss and mud","squelch","Lives in mud. Loves it there.","plant,spooky"},
+	{"bog lurker","AJDLNC","SfH",5,3,6,"3E5A3A","E8B23A","a bubbling bog pool hiding a mossy reed-crowned lurker","bubble","The pond was not empty. Ponds never are.","monster,swamp,trap,spooky"},
 	{"bog wraith","AJCJOJ","ZMN",4,5,3,"365314","BEF264","misty green figure rising from bog","wail","Smells like swamp. Moans like ghost.","ghost"},
 	{"bogeyman","AICJNA","jZO",5,6,4,"1F2937","7C3AED","tall lanky shape in the closet","whisper","Scared of kids who aren't scared.","spooky"},
 	{"boggart","AIBJNA","jZb",3,6,3,"57534E","1F2937","lumpy shapeshifter in the cupboard","cackle","Lives in your closet. Rearranges your socks.","spooky,silly"},
@@ -384,6 +388,7 @@ return {
 	{"bowling alley trap","OKCMxI","keO",5,4,6,"1F2F55","8B5A2B","ramp that rolls bowling balls","clank","STRIKE!","defense,silly,sport"},
 	{"bowling ball","BMCG3F","DkeO",5,6,8,"1F2F55","7D3CB5","heavy glossy ball with three holes","bonk","Strike! Everyone down.","sport"},
 	{"bowling pin","BMBAJK","keV",2,6,4,"F2F2EE","C0392B","white bottle-shaped pin, red stripes","bonk","Ten of them. All nervous.","sport"},
+	{"bowling strike","BECA3F","EkT",6,6,3,"2A1F5C","F4F1EA","heavy marbled ball rolling into a rack of pins","rumble","Ten down. Nobody standing.","sport,bowling,projectile"},
 	{"box","BMBL2I","ZO",1,1,2,"C69C6D","7A4E2D","taped cardboard box","thud","Hide inside. Totally invisible.","container"},
 	{"box jellyfish","ABBJGJ","ZSMOB",5,2,1,"B8E0F0","E8F8FF","transparent cube bell, long tentacles","squelch","Clear, square, extremely stingy.","aquatic,ocean,venomous"},
 	{"box of donuts","IMCJII","Gdc",5,1,6,"F2A6C8","D9A04A","box with twelve donuts","thud","The best box in any office.","edible,giant,silly"},
@@ -398,9 +403,4 @@ return {
 	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
 	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
-	{"boysenberry","IGAELB","eVP",2,7,1,"5E1F3F","8A2B5A","plump dark maroon berry","pitter","A berry with a big name.","edible,fruit,sweet"},
-	{"bracelet","BMAOKJ","G",1,6,3,"C9CED4","3E9E6E","chunky bangle","chime","Wrist bling.","treasure,shiny"},
-	{"bracers","BKBONI","Ga",1,7,5,"6B4226","A86F32","armoured forearm guards","clank","Deflect with flair.","armor,defense"},
-	{"brachiosaurus","AMFJAA","kIO",8,2,9,"6A8AA0","C8D8E0","giraffe-like neck, tall front legs","rumble","Head as high as a four-story building.","dinosaur,extinct,reptile,heavy"},
-	{"brachytrachelopan","AMDJAA","kIO",6,2,9,"8A7A5A","C8B88A","short-necked sauropod","rumble","A sauropod that skipped neck day.","dinosaur,extinct,reptile,heavy,silly"},
 }
