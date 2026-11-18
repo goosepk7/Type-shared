@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wrestler","LECJNA","DklO",6,6,6,"DC2626","FACC15","masked wrestler, tights, championship belt","thud","Off the top rope!","sport,martial"},
+	{"wrestling champion","LEDJNA","klO",7,5,7,"DC2626","FACC15","huge wrestler with a golden belt","thud","And his name is... loud.","sport,heavy"},
+	{"wrinkle","KMBF6B","jXN",2,3,2,"D7B899","A68A6D","wavy fold lines rippling across everything","rustle","Adds eighty years in one second.","body,silly"},
+	{"wrist","BMBOKK","Uje",2,7,3,"E8B48A","FFD166","snapping wrist with a gold bracelet flash","snap","It is all in the wrist. Everything is.","body,silly"},
+	{"writer","LLCJNI","jh",3,3,3,"7C2D12","FDE68A","quill, inkpot, stacks of pages","scratch","Writes you out of the story.","art"},
+	{"writing","KMBBCB","jST",3,6,2,"1D4ED8","FFFFFF","looping blue ink scrawl chasing a pen tip","scratch","Even the doctor cannot read this.","school,art"},
+	{"wulver","AGCJNA","QFf",4,6,5,"57534E","D6D3D1","wolf-headed fisherman in a wool sweater","howl","A wolf man who leaves you fish. Wholesome.","mythical,canine,cute"},
 	{"wyrmling swarm","AACJLB","KAP",5,8,3,"F97316","B91C1C","cloud of tiny buzzing dragons","chirp","Like bees, but on fire.","reptile,swarm,fire"},
 	{"wyvern","AJDKDB","AfTMg",7,7,6,"3F6212","BEF264","two legs, bat wings, barbed stinger tail","screech","Two legs, two wings, one very pointy tail.","mythical,reptile,flying"},
 	{"x-ray","FHCBKB","ZTe",4,10,1,"0F172A","A5F3FC","blue-black beam that shows the skeleton of what it hits","bzzt","Sees right through you. Nice ribs.","science,spooky"},

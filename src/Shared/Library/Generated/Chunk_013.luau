@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"honeydew","IMCGKF","EkeP",4,4,3,"C9E3A6","E8F3D0","smooth pale green melon","splat","Smooth, pale, and surprisingly heavy.","edible"},
+	{"honeydew slice","IGBOKI","F",2,5,3,"C9E3A6","E8F3D0","pale green wedge","crunch","A cool green crescent.","edible,healthy"},
+	{"honeyeater","AMAJDB","dA",1,7,1,"6A7A3A","F2C82A","slim nectar bird","tweet","Lives on sugar. Hyper.","bird,cute"},
+	{"honeypot ant","AMAJLA","CFfP",1,5,1,"E8A82A","6A3A1E","ant with a giant golden belly","skitter","A walking honey jar.","insect,swarm"},
 	{"honeysuckle","NGBNMI","dFSc",2,1,2,"FFF59D","FFB74D","tubular sweet blooms on vines","rustle","Sweet nectar. Sweet trap.","plant,flower"},
 	{"hong kong milk tea","IBBOKI","F",2,6,2,"A8784A","F2E8D8","strong silky milk tea","slurp","Silk-smooth tea strength.","edible,drink"},
 	{"honk","KMBFOB","kO",2,9,1,"FFEB3B","FFFFFF","big comic horn sound ring","honk","HONK! Peace was never an option.","silly,meme,loud"},
@@ -399,8 +403,4 @@ return {
 	{"jelly donut","IMBLKI","Ec",2,3,3,"E8B060","B0203E","round filled donut, sugar dust","chomp","Squeeze for a surprise blast.","edible,sweet"},
 	{"jelly fungus","NJBLMI","USN",2,1,3,"FFB300","FF7043","wobbly orange jelly blobs on wood","poof","Wobbly. Slippery. Gross.","plant,fungus,silly"},
 	{"jelly knight","AJCJGG","GUf",4,4,5,"4ADE80","94A3B8","slime wearing a tiny helmet","clang","Wobbly but brave.","slime,silly"},
-	{"jelly tsunami","IMEFOJ","UkIN",7,3,3,"E0102B","F35A6A","towering wave of wobbling jelly","wobble","A wobbly wave of doom.","edible,wobbly,sweet,silly"},
-	{"jelly wall","EECCII","GUSN",2,1,4,"E53935","FF8A80","wobbly translucent red slab","wobble","Wobbles. Bounces you right back.","silly,sweet"},
-	{"jellyfish","ABBJGJ","SMOB",3,2,1,"E89AD0","F2D8F0","translucent bell, trailing tentacles","squelch","95% water, 5% ouch.","aquatic,ocean,venomous"},
-	{"jerboa","AMAJAG","UCdb",1,6,1,"E2C28A","F7F0E6","huge kangaroo legs, long tufted tail","squeak","A mouse on pogo sticks.","mammal,cute,desert"},
 }

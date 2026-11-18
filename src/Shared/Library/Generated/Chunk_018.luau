@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"northern pike","ABCJEC","DfTB",4,7,4,"6A7A4A","D8D8A0","long toothy predator, spotted green","splash","A crocodile pretending to be a fish.","fish,aquatic"},
+	{"norwegian forest cat","ACCJAA","dfT",3,7,2,"B8A08A","F2E8D8","big fluffy forest cat","meow","Viking cat. Fluffy and fearless.","mammal,pet,cute"},
+	{"nose","BMBMGG","HeN",3,3,3,"E8B48A","D98880","big round nose, two nostrils, sniffing lines","whiff","Runs without legs. Smells without manners.","body,silly"},
+	{"nostalgia","KHBNOI","jFO",2,3,3,"FFCC80","F8BBD0","sepia-toned glow with floating old toys","music","Remember the good old days? Now you're stuck there.","silly"},
 	{"note","KFAAKB","UeO",2,8,1,"111827","FACC15","black quaver note bouncing along five wavy lines","ding","Do re mi fa so la ti DOH.","music"},
 	{"notebook","BMAAJK","e",1,7,1,"2F6FD1","F2F2EE","spiral-bound notebook","tap","Taking notes. Taking names.","school"},
 	{"nothingness","FICNOI","iZ",4,3,3,"0D0D12","3A3A4A","blank grey-black area, sound fades","hush","There is nothing here. Literally.","spooky,silly"},
@@ -16,7 +20,6 @@ return {
 	{"nuckelavee","AJDJAA","DfMP",7,6,6,"7F1D1D","365314","skinless horse-rider fused as one","roar","The worst horse in Scottish history.","mythical,spooky"},
 	{"nuclear blast","HAFGKI","KEkPO",10,6,2,"FFEB3B","FF5722","blinding flash, towering cartoon mushroom cloud","boom","Big. Bright. Bye.","explosive,danger"},
 	{"nuclear winter","HCFNOI","iJSM",9,2,6,"607D8B","C6FF00","grey frozen wasteland with faint green glow","hush","Cold, dark and glowy. Bad combo.","frozen,toxic,danger"},
-	{"nue","ADCJAB","jAL",5,6,4,"78350F","1F2937","monkey face, tiger legs, snake tail","screech","Assembled from four different bad dreams.","yokai"},
 	{"nugget","IMAELG","UFcP",2,5,2,"D9952B","F6D48A","golden crispy lumps raining with a dip tub","crunch","A ten piece. For ten problems.","edible,meme"},
 	{"nuke","CAFGKF","KEkSP",10,2,3,"6B7B3A","F1C40F","huge finned bomb, hazard stripes","boom","Big flash. Bigger mushroom.","explosive,danger"},
 	{"numbat","AMBJAA","Uf",2,6,2,"B85A2E","F2F2EE","striped back, bushy tail","chirp","Eats termites. Wears stripes.","mammal,marsupial"},
@@ -400,7 +403,4 @@ return {
 	{"peasant","LMCJNA","Ph",3,4,3,"A16207","78350F","burlap clothes, pitchfork","grunt","Angry mob in one person. Grab torches.","historical"},
 	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
 	{"pebble","FEAAKB","Ude",1,8,2,"9E9A94","D6D2CC","small smooth river stone","tick","Skips on water. Bonks on heads.","silly"},
-	{"pebble beach","MBDNII","SN",2,1,6,"9E9E9E","4FC3F7","grey round pebbles and crashing waves","rumble","Crunchy underfoot. Painful to fall on.","place,terrain"},
-	{"pecan","IEAAKK","UeO",2,8,5,"7A3E1E","A86A3A","long glossy brown nut","tok","Southern charm in a shell.","edible,nut"},
-	{"pecan pie","IMBLGI","ScN",2,3,3,"7A3E1E","D9A04A","glossy nut-topped pie","gloop","Sticky, nutty, and dangerous.","edible,sticky"},
 }

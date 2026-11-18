@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"waffle fries","IMBAKK","Uke",3,7,2,"E8B04A","F2D08A","lattice-cut golden fries","whoosh","Fries with a waffle pattern.","edible,breakfast"},
+	{"waffle iron","BABLII","KO",3,1,5,"24262A","DDE3E8","hinged grid griddle","clang","Chomp. Now you're a waffle.","kitchen,silly"},
+	{"waffle wall","IMDCII","Gc",4,2,7,"E8B04A","C8803A","giant grid waffle barricade","thud","A barricade with syrup pockets.","edible,giant"},
+	{"wage","BMBO2J","Fcb",2,5,2,"22C55E","F8FAFC","pay envelope with three coins and a long list of deductions","jingle","Payday! And it is gone.","job,silly"},
+	{"wagon","DMBKHL","DQkg",2,4,3,"D32F2F","8D6E63","small red cart, long pull handle","engine","Pull it along. Fill it with chaos.","mechanical,vehicle,land,silly"},
+	{"wagtail","AMAJDB","dA",1,7,1,"3A3A3A","F2F2F2","tail wagging slim bird","tweet","Wags its tail like a dog.","bird,cute"},
+	{"wahoo","ABCJEC","DfB",4,10,4,"3A5A8A","C8D0D8","striped speedy fish","splash","Fastest name. Yell it. Wahoo!","fish,aquatic"},
 	{"waist","BMCL5K","RHN",2,4,3,"E8B48A","FF6FB5","spinning waist twirling a pink hula hoop","whoosh","Hoops around you until you are dizzy.","body,silly"},
 	{"waiter","LMCJNA","de",3,7,3,"111827","F8FAFC","bow tie, towel over arm, plate tray","ding","Your order is... incoming. Very fast.","food"},
 	{"wake","KHBF6B","FIO",3,7,1,"FDE047","EF4444","ringing alarm clock shockwave with a bucket of water","ring","RISE AND SHINE. It is 6 a.m. on a Saturday.","silly"},
@@ -396,11 +403,4 @@ return {
 	{"wren","AMAJDB","dA",1,7,1,"8A6440","C8A880","tiny round bird, tail cocked up","tweet","Tiny bird, enormous song.","bird,cute"},
 	{"wrench","JKBHtK","kf",3,6,7,"8A929B","C0392B","adjustable jaw wrench","bonk","Fixes machines. Unfixes robots.","medieval,heavy"},
 	{"wrestle","KMCAKB","kfO",5,6,3,"D32F2F","FFD54F","grab-and-throw arc with ring dust","thud","Into the ropes! Down!","melee,sport"},
-	{"wrestler","LECJNA","DklO",6,6,6,"DC2626","FACC15","masked wrestler, tights, championship belt","thud","Off the top rope!","sport,martial"},
-	{"wrestling champion","LEDJNA","klO",7,5,7,"DC2626","FACC15","huge wrestler with a golden belt","thud","And his name is... loud.","sport,heavy"},
-	{"wrinkle","KMBF6B","jXN",2,3,2,"D7B899","A68A6D","wavy fold lines rippling across everything","rustle","Adds eighty years in one second.","body,silly"},
-	{"wrist","BMBOKK","Uje",2,7,3,"E8B48A","FFD166","snapping wrist with a gold bracelet flash","snap","It is all in the wrist. Everything is.","body,silly"},
-	{"writer","LLCJNI","jh",3,3,3,"7C2D12","FDE68A","quill, inkpot, stacks of pages","scratch","Writes you out of the story.","art"},
-	{"writing","KMBBCB","jST",3,6,2,"1D4ED8","FFFFFF","looping blue ink scrawl chasing a pen tip","scratch","Even the doctor cannot read this.","school,art"},
-	{"wulver","AGCJNA","QFf",4,6,5,"57534E","D6D3D1","wolf-headed fisherman in a wool sweater","howl","A wolf man who leaves you fish. Wholesome.","mythical,canine,cute"},
 }

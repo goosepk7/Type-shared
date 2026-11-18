@@ -16,6 +16,7 @@ return {
 	{"absorb","KLCIKI","GiF",3,5,4,"7E57C2","E1BEE7","swirling dome drinking in attacks","hum","Thanks for the energy.","magic,defence"},
 	{"abyss","FIELII","iSH",7,2,6,"0A0612","3E2466","bottomless black pit with purple mist","echo","Do not stare into it. It stares back.","spooky"},
 	{"abyssal angler","AIEJEC","cfB",7,4,7,"0F172A","67E8F9","giant deep-sea fish with glowing lure","roar","Follow the light. Bad idea.","aquatic,spooky"},
+	{"abyssal ray","KIDBKI","DkTe",8,10,2,"D61A30","2A0610","a crimson sphere in an open palm fires a piercing beam","zap","Point. Charge. Erase everything in a straight line.","anime,beam,hollow"},
 	{"abyssinian","AMBJAA","dfT",2,8,2,"C8803A","E8B87A","ticked ginger coat, big ears","meow","Curious about EVERYTHING.","mammal,pet,cute"},
 	{"acacia","NGDCMI","GWkST",4,1,7,"6D4C41","9CCC65","flat umbrella crown, thorny branches","rustle","Shade below. Thorns everywhere.","plant,tree"},
 	{"acai berry","IGAELB","eVP",2,7,1,"3E1A3A","6B2D5E","tiny dark purple round berry","pitter","Small berry. Huge reputation.","edible,fruit,sweet"},
@@ -402,5 +403,4 @@ return {
 	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
 	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
-	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
 }

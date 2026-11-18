@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"beginning","KHCOKB","DFh",3,8,2,"22C55E","FDE047","green GO light and a starting pistol puff, fresh sunrise","bang","Three. Two. One. Wait, I was not ready.","gaming,sport"},
 	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
 	{"beignet","IMBDOJ","jcP",2,5,1,"F2E8D0","F7F7F2","square puff, sugar snow","puff","A pillow buried in powdered sugar.","edible"},
@@ -156,6 +157,7 @@ return {
 	{"blanket","BMCIyI","GF",1,3,2,"1F2F55","F3E6C8","folded cosy blanket","thud","Monsters can't get you under here.","furniture,household"},
 	{"blanket flower","NABNMI","dFS",1,1,2,"E53935","FFC107","red daisy with yellow tips","rustle","Looks like a little campfire.","plant,flower"},
 	{"blast","KLCFOB","Ek",5,9,1,"FF9100","FFFFFF","forward cone of bright force","boom","Point. Blast. Done.","explosive"},
+	{"blast decree","KICFOI","kP",7,10,2,"FF9A4A","16101E","a lip seal opens; the voice blasts everyone away","boom","Said politely. Heard from orbit.","anime,voice,curse"},
 	{"blaster","CDBAwI","Ke",5,8,3,"24262A","C9CED4","chunky sci-fi pistol","zap","Pew pew pew!","scifi,ranged"},
 	{"blaster rifle","CDCAwI","KeV",6,7,4,"24262A","C9CED4","long rifle with energy cell","zap","Pew-pew, extra pew.","scifi,ranged"},
 	{"blaze","FADNOI","KSP",6,6,3,"D9480F","FFB347","wide wall of tall flames, thick embers","roar","Not a campfire. Definitely not a campfire.","fire"},
@@ -401,6 +403,4 @@ return {
 	{"brb","KMBONK","GZY",2,5,4,"94A3B8","FDE047","empty gaming chair still spinning, snack crumbs","ding","Mum is calling. Summon on autopilot.","gaming,meme,internet"},
 	{"bread","IMCCII","GF",3,2,6,"D2A060","F5E6C8","domed loaf, scored crust","thud","The staff of life. Also a decent shield.","edible,giant"},
 	{"bread bowl","IBBOGI","FS",3,4,3,"C8904A","F2E2C2","hollow loaf filled with soup","slurp","A bowl you can eat afterward.","edible,warm,healthy"},
-	{"bread fortress","IMECII","GFk",5,2,9,"C8904A","F5E6C8","castle walls of loaves","thud","A carb castle.","edible,giant"},
-	{"bread knife","BMBHrK","fV",2,7,2,"8A929B","24262A","long serrated knife","clang","Saws through loaves and foes.","kitchen,household"},
 }

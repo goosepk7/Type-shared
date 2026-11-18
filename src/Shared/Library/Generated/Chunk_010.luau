@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flying lemur","AMBJAB","CAf",2,5,3,"8A8070","C8C0B0","big gliding membrane","squeak","Neither flies nor is a lemur.","mammal,wild"},
+	{"flying ship","DLEMHB","EAkeg",7,5,7,"6D4C41","FFD54F","wooden galleon held up by glowing balloons","cannon","Sails the clouds, cannons out.","vehicle,magic,mythical"},
+	{"flying snake","AMCJCB","AfMN",4,6,3,"2A2A1E","8AE04A","flattened gliding snake","hiss","A snake that flies. Why would you.","reptile,venomous"},
 	{"flying squirrel","AMAJAB","CdAb",1,6,1,"9A8A7A","F2EEE6","skin flaps between legs, gliding","squeak","Built-in wingsuit.","mammal,cute"},
 	{"flypaper","BMBLII","cNO",1,1,1,"F1C40F","D2B48C","hanging sticky yellow strip","snap","Bzzz... stuck.","trap,sticky"},
 	{"foal","AMCKAA","Dkg",2,8,5,"A06A3E","F0E0C8","wobbly long legs, short fluffy tail","neigh","All legs and zero coordination.","mammal,cute"},
@@ -400,7 +403,4 @@ return {
 	{"giant crab monster","ABFJFA","Gkf",8,3,10,"B91C1C","FDBA74","towering crab with skyscraper claws","click","Pinches buildings. Walks sideways into history.","kaiju,aquatic"},
 	{"giant cupcake","IMEJIF","Gdc",7,2,7,"F2A6C8","D9A04A","house-sized frosted cupcake","thud","A cupcake with a zip code.","edible,giant,silly"},
 	{"giant daisy","NGDCMI","GFS",3,1,4,"FFFFFF","FFEB3B","daisy taller than you","rustle","A daisy that skipped leg day? No. Arm day.","plant,flower,cute"},
-	{"giant donut","IMEJIF","UkcI",7,2,7,"F2A6C8","D9A04A","enormous ring donut, sprinkles","thud","A donut the size of a tyre. Roll it.","edible,giant,silly"},
-	{"giant donut wheel","IMEJIF","DkI",7,2,7,"F2A6C8","D9A04A","monster donut rolling","thud","A runaway donut. Clear the road.","edible,giant,silly"},
-	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
 }

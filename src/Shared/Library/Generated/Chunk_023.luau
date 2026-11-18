@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
+	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
+	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
 	{"shelter","EECIII","GFS",3,1,7,"6B8E23","8B6B4A","lean-to of branches and tarp with a tiny fire inside","pitter","Four sticks and a tarp. Home.","defense,outdoor"},
 	{"shepherd","LGCJNA","Qch",3,5,4,"D6D3D1","78350F","crook staff, wool cloak","baa","Brings a flock. Of sheep. Fluffy army.","outdoor"},
 	{"shepherd's pie","IGBOKI","F",2,5,3,"E8C070","7A3A2A","mashed potato topping, golden ridges","crunch","A potato blanket over a meaty bed.","edible,healthy"},
@@ -400,7 +403,4 @@ return {
 	{"soda","IBBFKI","EkIP",3,7,1,"C8202B","F7F7F2","fizzy can, bubbles","fizz","Shake it. Point it. Pop it.","edible,drink,fizzy"},
 	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
 	{"soda bread","IMCCII","Gk",4,2,6,"D9A04A","F2E2C2","round loaf with cross cut","thud","A quick bread with a cross on top.","edible,giant"},
-	{"soda can","IBBFKI","EkI",3,7,1,"C8202B","C8C8C8","aluminum can","fizz","Shake well. Open near enemy.","edible,drink,fizzy"},
-	{"soda fountain","OBCM1I","deN",2,2,5,"C0392B","C9CED4","nozzled fizzy drink dispenser","clang","Fizzy blast!","kitchen,household"},
-	{"soda geyser","IBDFKI","EklP",6,7,1,"3A1A0C","F7F7F2","erupting fountain of fizz","fizz","Shake well before using.","edible,drink,fizzy"},
 }

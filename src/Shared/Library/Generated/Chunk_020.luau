@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
+	{"pomegranate tree","NGCCMI","GWFkS",3,1,6,"6D4C41","C62828","small tree with red jewel fruit","rustle","Fruit full of tiny red gems.","plant,tree"},
+	{"pomelo","IMCAKF","jke",4,6,2,"DCE57A","F7D8C9","huge pale green citrus, thick rind","squirt","The grapefruit's big older cousin.","edible,fruit,sour"},
 	{"pomeranian","AMBJAA","dQf",2,6,2,"F2A04A","FFE3BC","tiny fluffball, fox face","yip","A dandelion that barks.","mammal,pet,cute"},
 	{"pommel horse","BMCCII","G",1,1,6,"7A4E2D","D2B48C","padded leather block on legs","bonk","A horse that never moves.","sport"},
 	{"pond scum","NJCLMI","SMNP",2,1,2,"9CCC65","C0CA33","green film covering water","splash","Gross. Slippery. Sticky.","plant,aquatic,silly"},
@@ -400,7 +403,4 @@ return {
 	{"ray","FHCBKB","KTe",4,10,1,"FFE66D","FFFFFF","straight golden beam of light with sparkles","zing","A little ray of sunshine. In your eyes.","light"},
 	{"ray gun","CDBBwI","eLO",5,8,3,"DDE3E8","C0392B","retro finned pistol with ring nozzle","zap","Zzzorp! Vintage future.","scifi,retro,ranged"},
 	{"ray of frost","FCCBKI","JTeN",5,8,2,"4FC3F7","E1F5FE","thin pale-blue beam crusting targets in ice","crackle","Chill out. That is an order.","frozen"},
-	{"ray of sickness","FJCBKI","jMe",4,7,1,"C0CA33","7CB342","sickly yellow-green ray","bleh","Seasick, on land.","toxic,silly"},
-	{"razor","BKAHJI","fT",2,8,1,"C9CED4","2F6FD1","small safety razor","splash","Smooth operator.","bathroom,household"},
-	{"razor halo","KLCAKK","QTe",6,7,2,"FFE45C","FFF8D6","razor-thin spinning energy disc hurled in a curve","whistle","Hold it up high. Steer it true. Mind your fingers.","anime,ki,blade"},
 }

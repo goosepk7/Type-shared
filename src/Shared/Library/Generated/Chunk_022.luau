@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sahara","MAFNII","KSN",6,1,9,"F2C27A","E6A04D","endless rolling golden dunes","rumble","Sand. Then more sand. Then a sandstorm.","place,landmark"},
+	{"sai","CKBHJK","GfT",3,8,4,"C9CED4","24262A","three-prong dagger","shing","Catches blades. Pokes faces.","ninja,sharp"},
+	{"saiga","AMCJAA","Dk",4,8,4,"D2BE9A","A89270","big floppy bulbous nose","bleat","Nose looks like a tiny trunk.","mammal,wild,silly"},
 	{"sail","BFCOiJ","DIg",3,7,3,"F8FAFC","1E3A8A","billowing white triangle on a mast, ropes snapping taut","whoosh","Wind in the sail. Sail in your face.","ocean,air"},
 	{"sailboat","DFCKHC","DkIgB",4,6,4,"F5F5F5","1E88E5","slim hull, single mast, triangle sail","splash","Powered by wind and good vibes.","vehicle,aquatic"},
 	{"sailfish","ABDJEC","DfTB",5,10,4,"2E4E8E","5A8AD0","giant blue sail fin, spear bill","splash","Fastest fish. Has a built-in sail.","fish,aquatic"},
@@ -308,6 +311,7 @@ return {
 	{"shackles","BKBLKK","NO",1,1,6,"5B6168","9C4A1A","heavy iron cuffs on chain","thud","Clank. Going nowhere.","object"},
 	{"shad","ABAJEC","dPB",1,6,1,"B8C8D0","3A5A7A","silver herring-like","splash","Swims up rivers in spring.","fish,aquatic"},
 	{"shade","AIBJNJ","iZN",3,7,2,"1E1B4B","4338CA","flat inky silhouette","whisper","Your shadow's evil twin.","ghost,spooky"},
+	{"shade hounds","AICJAA","Dfh",7,8,3,"1A1626","8C7CFF","two wolves of living shadow, glowing eyes","howl","Your shadow has teeth. Two sets.","anime,shadow,summon"},
 	{"shadow","FICAKB","iZe",5,7,2,"2B1B3D","7A4FA8","inky smoky dart with violet edge","hiss","Follows you around. Now it bites.","spooky"},
 	{"shadow armor","KICOKI","GZ",2,4,7,"1A0033","7C4DFF","black smoky plating over caster","hiss","Armour made of night.","spooky,defence"},
 	{"shadow aura","FICOKJ","iZ",4,5,3,"1A0033","7C4DFF","smoky black glow round caster","hiss","Edgy. Very edgy.","spooky"},
@@ -369,7 +373,6 @@ return {
 	{"shadow wave","FIDFOF","iNP",6,6,2,"12001F","7E57C2","rolling black wave with violet foam","hiss","A wave of bad vibes.","spooky"},
 	{"shadow wind","FICFOB","ZI",4,8,1,"263238","7C4DFF","smoky dark gust","wail","A cold wind from nowhere.","spooky,air"},
 	{"shadow wings","KICOKB","AZ",4,8,3,"1A0033","7C4DFF","smoky black feathered wings","hiss","Fly silently through the night.","spooky"},
-	{"shadow wolf","AICJAA","DZfh",5,8,4,"1E1B4B","818CF8","smoky translucent wolf, violet eyes","howl","Hunts in packs. Packs of shadows.","canine,spooky"},
 	{"shahmaran","AJCJCD","FMh",5,5,4,"15803D","FACC15","serpent lower body with crowned head","hiss","Queen of the snakes. Very wise.","mythical,reptile,royal"},
 	{"shake","KECNOI","jO",4,5,2,"A1887F","FFFFFF","everything rattling in place","rumble","Shake it off. Shake everyone.","silly"},
 	{"shakshuka","IABNGI","KF",4,4,2,"C8302B","F2D23A","skillet of red sauce with eggs","sizzle","Eggs poached in a spicy red sea.","edible,spicy"},
@@ -400,7 +403,4 @@ return {
 	{"sheepdog puppy","AMAJAA","dQf",1,6,2,"1E1E1E","F2F2F2","fluffy black and white pup","yip","Already herding its siblings.","mammal,pet,cute"},
 	{"sheepshead","ABCJEC","DfB",4,7,4,"8A8A8A","1E1E1E","striped fish with human teeth","splash","Has human-looking teeth. Eek.","fish,aquatic,spooky,silly"},
 	{"sheet","BFCLVJ","jAN",2,5,2,"FFFFFF","BFDBFE","white bedsheet billowing with two eye holes","whoosh","Either laundry or a ghost. Fifty-fifty.","household,spooky,silly"},
-	{"shelduck","ABBJDC","AfB",2,5,2,"F2F2F2","E8301E","white duck with chestnut band","quack","Colorful duck. Bold stripe.","bird,aquatic"},
-	{"shelf","BMCC0I","Gk",1,1,4,"8B5A2B","F2F2EE","shelf piled with stuff","thud","Things fall off. On enemies.","furniture,household"},
-	{"shell","KLCIKI","Ga",2,3,6,"81D4FA","FFFFFF","clear blue bubble shell","hum","Magic bounces off.","defence"},
 }

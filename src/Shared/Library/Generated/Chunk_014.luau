@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jelly tsunami","IMEFOJ","UkIN",7,3,3,"E0102B","F35A6A","towering wave of wobbling jelly","wobble","A wobbly wave of doom.","edible,wobbly,sweet,silly"},
+	{"jelly wall","EECCII","GUSN",2,1,4,"E53935","FF8A80","wobbly translucent red slab","wobble","Wobbles. Bounces you right back.","silly,sweet"},
+	{"jellyfish","ABBJGJ","SMOB",3,2,1,"E89AD0","F2D8F0","translucent bell, trailing tentacles","squelch","95% water, 5% ouch.","aquatic,ocean,venomous"},
+	{"jerboa","AMAJAG","UCdb",1,6,1,"E2C28A","F7F0E6","huge kangaroo legs, long tufted tail","squeak","A mouse on pogo sticks.","mammal,cute,desert"},
 	{"jerk chicken","IABAKK","Kc",5,7,2,"5A2A1E","D8402B","charred spiced chicken pieces","sizzle","Fiery, smoky, Caribbean heat.","edible,spicy,flammable"},
 	{"jerry can","BABL2I","KE",3,1,4,"C0392B","C0392B","boxy fuel can with spout","thud","Do not light. We said DO NOT.","container,flammable"},
 	{"jersey","BMBOVB","GDh",2,6,3,"DC2626","FFFFFF","red team shirt with a big number 10 flying like a flag","crowd","Number 10. Automatically 30% better.","sport,clothing"},
@@ -399,8 +403,4 @@ return {
 	{"lawn mower","DGBKHL","DkfTg",4,4,5,"2E8B57","F2C14E","small tractor body, spinning blade deck","engine","Gives enemies a short back and sides.","mechanical,vehicle,land"},
 	{"lawyer","LMCJNA","jO",3,3,4,"111827","F8FAFC","robe, gavel, briefcase","ding","Objection! Sustained. Bonk.","silly"},
 	{"layer","KEBIyE","GSV",3,2,7,"A855F7","F9A8D4","stacked shells peeling away one at a time","pop","Like an onion. Or a cake. Everybody likes cake.","defense"},
-	{"layer cake","IMCLKI","dSc",2,3,3,"F7E0C0","7A4026","tall many-layered slice","chomp","Layers of joy, stacked high.","edible,sweet"},
-	{"laziness","KMBNOI","NO",2,1,3,"BCAAA4","FFE0B2","droopy sleepy area with pillows","yawn","Nobody feels like doing anything.","silly"},
-	{"lead pipe","JKCHJK","kf",3,6,6,"4A4D52","8E9196","short heavy metal pipe","bonk","Plumbing, weaponised.","medieval,heavy"},
-	{"leader","LHCJNA","GQfh",5,5,6,"B45309","FDE047","commander pointing forward, cape, feathered hat","fanfare","Follow me! Wait, which way were we going?","warrior,royal"},
 }

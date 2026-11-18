@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"groundhog","AMBJAA","Cdb",2,6,1,"8A6640","C8A47A","chubby burrower, stubby tail","squeak","Predicts the weather. Badly.","mammal,cute"},
+	{"groundnut stew","IBBOGI","FS",3,4,3,"B5823A","D8402B","orange peanut stew","slurp","A nutty, hearty stew.","edible,warm,healthy"},
+	{"group","LMDJLA","GdQh",4,4,5,"38BDF8","F59E0B","cluster of people all talking at once with coffee cups","chatter","This could have been an email.","silly,team"},
 	{"grouper","ABDJEC","DfHB",5,7,4,"6A5A44","C8B48A","huge lips, chunky body","splash","Swallows fish whole. Big lips energy.","fish,aquatic"},
 	{"grouse","AMBJDA","dfO",2,4,2,"8A6A4A","F2F2F0","plump ground bird, feathered feet","cluck","Explodes out of bushes. Scares hikers.","bird,farm"},
 	{"grove","NGECMI","GWFkS",3,1,8,"6D4C41","43A047","small cluster of trees","rustle","A little wood. A big wall.","plant,tree"},
@@ -290,6 +293,7 @@ return {
 	{"herring","ABAJEC","dPhB",1,6,1,"B8C4D0","4A6A8A","small silver fish, shoals","splash","Travels in million-fish crowds.","fish,aquatic"},
 	{"heterodontosaurus","AMBJAA","dkT",3,5,6,"8A6A4A","D8B88A","tiny dino with fangs","honk","Plant eater with fangs. Confusing.","dinosaur,extinct,reptile"},
 	{"hex","KIBAKB","jiN",4,7,1,"6A1B9A","B2FF59","spinning purple hexagon glyph","cackle","Bad luck delivered by express mail.","spooky,magic"},
+	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
 	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
 	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
 	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
@@ -399,8 +403,4 @@ return {
 	{"honey tree","NGCCMI","ScN",2,1,5,"FFB300","8D6E63","tree dripping golden honey","chime","Sticky sweet. Everyone gets stuck.","plant,magic,mythical,sweet"},
 	{"honeycomb","IMBLGI","ScN",2,3,3,"E8A317","F7D88A","hexagon grid of golden wax","gloop","Hexagons full of sticky gold.","edible,sticky,sauce,sweet"},
 	{"honeycrisp","IGBAKF","Fke",3,6,2,"D8303A","F2C870","big red-gold streaked apple","splat","So crunchy it echoes.","edible,fruit,sweet"},
-	{"honeydew","IMCGKF","EkeP",4,4,3,"C9E3A6","E8F3D0","smooth pale green melon","splat","Smooth, pale, and surprisingly heavy.","edible"},
-	{"honeydew slice","IGBOKI","F",2,5,3,"C9E3A6","E8F3D0","pale green wedge","crunch","A cool green crescent.","edible,healthy"},
-	{"honeyeater","AMAJDB","dA",1,7,1,"6A7A3A","F2C82A","slim nectar bird","tweet","Lives on sugar. Hyper.","bird,cute"},
-	{"honeypot ant","AMAJLA","CFfP",1,5,1,"E8A82A","6A3A1E","ant with a giant golden belly","skitter","A walking honey jar.","insect,swarm"},
 }

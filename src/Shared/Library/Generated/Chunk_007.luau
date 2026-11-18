@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crow","AIBJDB","dAb",2,7,1,"1E1E24","3A3A48","sleek black bird, big beak","tweet","Remembers faces. Holds grudges.","bird,cute,smart,spooky"},
+	{"crowbar","JKCHtK","kf",4,6,7,"C0392B","5B6168","bent iron bar with hooked end","bonk","Opens crates and plot holes.","medieval,heavy"},
 	{"crowd","LMDFLA","jkIP",6,4,6,"F59E0B","3B82F6","dense pack of cheering people with signs and foam fingers","crowd","Excuse me. Sorry. Coming through. All of us.","silly,loud"},
 	{"crown","BHBONI","Fh",3,5,5,"D4A72C","B0103A","jewelled golden crown","swish","Heavy is the head. Shiny though.","royal,shiny"},
 	{"crown imperial","NGBNMI","dFS",2,1,2,"FF6F00","2E7D32","ring of hanging bells under a leaf crown","rustle","Royalty among bulbs.","plant,flower,royal"},
@@ -401,6 +403,4 @@ return {
 	{"donkey","AMCKAA","GDkg",3,4,5,"8A8076","D8D0C4","long ears, grey coat, pale muzzle","bray","Stubborn. Loyal. Loud.","mammal,farm"},
 	{"donut","IMBLKI","UdSc",2,3,3,"F2A6C8","D9A04A","ring torus, pink glaze, sprinkles","chomp","A ring of power, but glazed.","edible,sweet"},
 	{"donut decoy","IMBLKI","jdc",2,3,3,"F2A6C8","D9A04A","tempting donut on a plate","chomp","Look over there! A donut!","edible,sweet"},
-	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
-	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
 }

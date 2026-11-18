@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tarantula","AJBJQA","fN",3,6,2,"3A2A20","E8701E","big hairy spider, thick legs","skitter","Big, hairy, and secretly gentle.","arachnid,spooky,venomous"},
+	{"tarantula hawk","AJBJLB","ATMPO",3,7,1,"1E2A4A","E8701E","blue-black wasp, orange wings","buzz","Hunts tarantulas. Second worst sting.","insect,swarm,venomous"},
+	{"tarasque","AAEJAA","GKDk",8,4,9,"365314","CA8A04","turtle shell, lion head, six bear legs","roar","A turtle that bench-pressed a castle.","mythical,boss"},
+	{"tarbosaurus","AMEJBA","DkfT",8,6,7,"5A4A2E","B89A6A","asian tyrannosaur","roar","T rex's Asian twin.","dinosaur,extinct,reptile,predator"},
 	{"taro","IEBAKK","keO",3,7,6,"8A6A5A","C8B8D8","hairy brown root, lilac flesh","bonk","Hairy outside, purple inside.","edible,vegetable"},
 	{"tarpon","ABDJEC","UDfB",5,7,4,"B8C8D0","E8F0F4","huge silver scales","splash","The silver king. Leaps high.","fish,aquatic"},
 	{"tarsier","AMAJBA","Udeb",1,7,2,"A88A6A","3A2C20","eyes bigger than its brain","chatter","Its eyes are bigger than its stomach.","mammal,primate,nocturnal"},
@@ -170,6 +174,7 @@ return {
 	{"thunder horse","ADDKAA","DgL",6,9,5,"FDE047","1E40AF","stallion of storm clouds with lightning hooves","thunder","Gallops so fast it rumbles.","mythical,mount,storm"},
 	{"thunder kick","KDCAKB","kfL",6,9,2,"FFEB3B","448AFF","kick arc with lightning trail","crack","Zappy footwork.","electric,melee"},
 	{"thunder lizard","ADEJAA","DkL",7,5,7,"1E40AF","FDE047","giant lizard crackling with storms","thunder","Every step is a thunderclap.","storm,reptile"},
+	{"thunder owl","ADCJDB","ALh",7,8,3,"7FD8FF","1C2030","a great horned owl crackling with lightning","screech","Who? You. With lightning.","anime,lightning,summon"},
 	{"thunder punch","FDCAKB","kfL",6,8,2,"FFEB3B","2962FF","glowing fist crackling with arcs","crack","A punch with a power bill.","electric"},
 	{"thunder roar","FDCFOB","kO",5,9,1,"7986CB","FFF9C4","crackling sound wave from the caster","roar","Shouting, but with weather.","electric,loud"},
 	{"thunder slash","FDCHJB","fTL",6,10,1,"FFEB3B","448AFF","zigzag slash of lightning","crack","Fast as lightning. Because it is.","electric,sharp"},
@@ -398,9 +403,4 @@ return {
 	{"train","DMEKHL","DkTg",7,7,9,"2D3A4A","C0392B","long engine with carriages, cowcatcher","horn","Runs on time. Runs over everything.","mechanical,vehicle,land"},
 	{"train conductor","LMCJNL","Dk",4,6,5,"1E3A8A","FACC15","striped cap, whistle, pocket watch","choo","All aboard! Choo choo.","vehicle"},
 	{"train station","EMDCII","GSh",3,1,8,"B5523B","37474F","long platform, clock, arched roof","thud","All aboard the pain train.","structure,building"},
-	{"train yard","MMENII","kSh",3,1,7,"6D4C41","9E9E9E","tangle of tracks and parked wagons","crowd","Trains from every direction.","place"},
-	{"training dummy","BMCCNI","Gdc",1,1,5,"D2B48C","C0392B","straw dummy with target face","beep","Hit it. It forgives you.","training"},
-	{"training ground","MMENII","SNh",3,1,7,"8D6E63","556B2F","ropes, walls and climbing nets","crowd","Drop and give me twenty.","place,sport"},
-	{"traitor","LICJNA","jZb",4,6,4,"1F2937","7F1D1D","cloaked figure hiding a dagger behind back","whisper","Was on your team. Was.","villain"},
-	{"tram","DMDKHL","DkgL",5,5,8,"C83E2E","F2E6C9","long rail car, overhead pole, bell","bell","Ding ding. It does not stop for you.","mechanical,vehicle,land"},
 }

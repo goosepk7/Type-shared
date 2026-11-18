@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pebble beach","MBDNII","SN",2,1,6,"9E9E9E","4FC3F7","grey round pebbles and crashing waves","rumble","Crunchy underfoot. Painful to fall on.","place,terrain"},
+	{"pecan","IEAAKK","UeO",2,8,5,"7A3E1E","A86A3A","long glossy brown nut","tok","Southern charm in a shell.","edible,nut"},
+	{"pecan pie","IMBLGI","ScN",2,3,3,"7A3E1E","D9A04A","glossy nut-topped pie","gloop","Sticky, nutty, and dangerous.","edible,sticky"},
 	{"pecan sandies","IMBAKK","Uke",3,7,2,"E8C88A","7A3E1E","crumbly round nut cookies","whoosh","Sandy, buttery, and nutty.","edible,dessert"},
 	{"peccary","AMCJAA","dfM",3,4,4,"4E4642","E8E0D8","bristly pig-like, white collar","bleat","Smells funky. Travels in gangs.","mammal,farm,desert"},
 	{"peck","KMAADB","fTO",2,10,1,"F5B041","FFFFFF","rapid-fire beak jabs like a tiny jackhammer","tok","Peckpeckpeckpeckpeckpeck.","bird,melee"},
@@ -400,7 +403,4 @@ return {
 	{"poltergeist","AIBJGJ","jZkl",4,7,2,"C7D2FE","6366F1","swirl of floating furniture and plates","crash","Throws your stuff. Loudly.","ghost,spooky"},
 	{"polymorph","KLCAKB","jeXO",5,8,1,"E040FB","FFFFFF","pink sparkle bolt, target puffs into a chicken","poof","Congratulations. You are a chicken now.","magic,silly"},
 	{"pom pom crab","ABBJRA","GfTM",2,4,5,"F2D0B0","F2A0C0","crab holding anemone pompoms","clack","Cheerleader crab with stingy pompoms.","crustacean,aquatic,armored,cute"},
-	{"pomegranate","IMBGKF","EeVP",4,6,1,"B0202E","E8434F","crowned red orb, ruby seeds","pop","A fruit grenade full of ruby shrapnel.","edible,explosive,fruit"},
-	{"pomegranate tree","NGCCMI","GWFkS",3,1,6,"6D4C41","C62828","small tree with red jewel fruit","rustle","Fruit full of tiny red gems.","plant,tree"},
-	{"pomelo","IMCAKF","jke",4,6,2,"DCE57A","F7D8C9","huge pale green citrus, thick rind","squirt","The grapefruit's big older cousin.","edible,fruit,sour"},
 }

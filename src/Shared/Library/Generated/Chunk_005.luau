@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
+	{"carrot patch","NGBLMI","Sc",2,1,3,"7CB342","FF9800","feathery tops above orange roots","rustle","Pull one up. Use it as a sword.","plant,crop,silly"},
 	{"carry","LMCJNA","GFl",5,6,5,"FACC15","111827","player lifting teammates on shoulders","ding","Carrying the whole team. Back hurts.","meme,gaming"},
 	{"cart","DMBKHL","Dkg",2,3,4,"8D6E63","5D4037","wooden box on two big wheels","engine","Not fancy. Gets the job done.","mechanical,vehicle,land,ancient"},
 	{"cartographer","LMCJNA","hY",3,4,3,"78350F","FDE68A","scrolls, compass, quill","swish","Draws the map. Draws you lost.","explorer"},
@@ -401,6 +403,4 @@ return {
 	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
 	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
 	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
-	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
-	{"clockmaker","LKCJNI","NO",3,3,4,"CA8A04","78350F","monocle, gears, tweezers","tick","Stops time. Briefly.","tools"},
 }

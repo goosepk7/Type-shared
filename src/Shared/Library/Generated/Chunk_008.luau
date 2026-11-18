@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"donut holes","IMAELB","eVP",2,7,1,"E8B060","F7E8C0","tiny round sugared balls","pitter","The middles of donuts. Finally free.","edible,sweet"},
+	{"donut shop","EMCNII","dkSc",2,1,4,"F48FB1","8D6E63","shop with a giant donut on the roof","ding","Giant donut on top. Rolls off. Watch out.","sweet,silly"},
 	{"doom","KIEGKI","iEO",8,4,4,"1A0033","FF1744","ominous black-red orb descending slowly","boom","You feel a sense of impending doom.","spooky"},
 	{"door","BMCCoI","G",1,1,6,"8B5A2B","B58A3A","panelled wooden door","thud","Shut. Locked. Done.","household"},
 	{"doorbell","BMALKI","dc",1,1,3,"B58A3A","F2F2EE","small round push button","ding","Ding dong! Who could it be?","household"},
@@ -255,6 +257,7 @@ return {
 	{"egusi soup","IBBOGI","FS",3,4,3,"C8A02B","3E7A2B","thick melon seed stew","slurp","Thick, nutty, and leafy.","edible,warm,healthy"},
 	{"eider","ACBJDC","AfB",2,5,2,"F2F2F0","1E1E1E","chunky sea duck","quack","Fluffiest down feathers ever.","bird,aquatic"},
 	{"eiffel tower","EKFCII","GkSO",7,1,10,"6D5D4B","8D7B6A","tall iron lattice tower tapering to a point","rumble","Drops a whole iron tower on them. Ooh la la.","structure,landmark"},
+	{"eightfold sentinel","AHEJNA","kfh",10,5,4,"E8E4D8","2A2630","a towering robed spirit with an eight-spoked wheel","gong","The wheel turns. Whatever you did, do something else.","anime,summon,giant"},
 	{"einherjar","AHDJLA","DfP",6,6,6,"CA8A04","E0F2FE","glowing army of spectral vikings","horn","Fight all day. Feast all night.","norse,ghost,swarm"},
 	{"einiosaurus","AMDJAA","DkT",7,5,8,"8A6A4A","D8B07A","bottle-opener down-curved horn","bellow","Its nose horn curves like an opener.","dinosaur,extinct,reptile"},
 	{"el dorado","MKFNII","dSc",5,1,9,"FFD54F","FFB300","city of shining golden towers","chime","Every brick is gold. Every enemy is distracted.","place,mythical"},
@@ -400,7 +403,4 @@ return {
 	{"evening","KICNOI","ZSN",3,2,2,"7C3AED","F97316","purple-orange sky with first stars and a porch light","chirp","Streetlights are on. Time to come in.","time"},
 	{"evening primrose","NHBNMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow blooms opening at dusk","rustle","Opens at night. Glows a little.","plant,flower"},
 	{"event horizon","FIFNOI","iHO",9,2,8,"000000","FF6E40","glowing ring around a perfect black circle","hum","The point of no return. Literally.","space,danger"},
-	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
-	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
-	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
 }

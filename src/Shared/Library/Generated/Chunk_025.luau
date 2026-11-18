@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stethoscope","BMAOII","F",1,5,2,"24262A","C9CED4","tube with listening disc","thud","Listens. Diagnoses. Heals.","medical"},
+	{"stew","IBBOGI","WF",3,4,3,"8A4A2A","ED9121","thick brown chunky bowl","slurp","Slow-cooked strength.","edible,warm,healthy"},
+	{"stick","KMBLII","NO",3,4,3,"FFE082","FFFFFF","gooey sticky patch","squelch","You are now stuck. Sorry.","silly"},
 	{"stick insect","AMAJFA","dZP",1,6,1,"8A6A3A","C8A86A","long thin twig-shaped body","buzz","Professional stick impersonator.","insect"},
 	{"stick of butter","IMBLGI","kSO",2,3,2,"F8E58C","F7F2EC","half-unwrapped golden stick","squeak","A golden bar of slippage.","edible,slippery,silly,dairy"},
 	{"sticker","BMAAJI","de",1,8,1,"F1C40F","FF3EA5","shiny star sticker","splat","Gold star for effort.","art"},
@@ -13,6 +16,7 @@ return {
 	{"sticky rice","IMBLGI","SNP",2,3,3,"F7F4EC","E8E0D0","clumpy white rice mound","gloop","Rice that refuses to let go.","edible,sticky"},
 	{"sticky toffee pudding","IMBLGI","SNP",2,3,3,"7A3A1E","C8803A","dark sponge, toffee sauce","gloop","Sticky. Toffee. Pudding. All three.","edible,sticky,sweet"},
 	{"stiletto","CKAHrK","fT",3,10,2,"C9CED4","24262A","needle-thin spike blade","shing","Thin as a whisper, twice as rude.","medieval,sharp"},
+	{"still decree","KICFOI","PO",7,10,2,"B496FF","16101E","a lip seal opens; the voice locks everyone in place","hum","Two words. Everyone listened.","anime,voice,curse"},
 	{"still water","KBCIKI","kaY",6,9,2,"4FA3C7","E6F4FA","calm ring of water that flashes when struck","chime","Go on. Hit me.","anime,sword"},
 	{"stilt house","EMCCII","GS",2,1,5,"A1887F","1E88E5","wooden hut high on tall poles","thud","Floods? Not our problem.","structure,building"},
 	{"stilt walker","LMCJNA","dk",3,4,3,"7C3AED","F472B6","very tall figure on striped stilts","clack","Tallest in the room. Wobbly.","circus,silly"},
@@ -399,8 +403,4 @@ return {
 	{"tar pit","MICLII","KSHN",4,1,6,"212121","424242","bubbling black sticky pool","bubble","Very sticky. Very permanent.","place,terrain"},
 	{"tar pit trap","BECLII","SNO",4,1,4,"24262A","7A4E2D","bubbling black puddle","snap","Sticky, gloopy, inescapable.","trap,defense"},
 	{"tar sprayer","OECMxI","eNO",4,4,5,"24262A","7A4E2D","barrel of hot sticky tar","clank","Glop. Not going anywhere.","defense,mechanical"},
-	{"tarantula","AJBJQA","fN",3,6,2,"3A2A20","E8701E","big hairy spider, thick legs","skitter","Big, hairy, and secretly gentle.","arachnid,spooky,venomous"},
-	{"tarantula hawk","AJBJLB","ATMPO",3,7,1,"1E2A4A","E8701E","blue-black wasp, orange wings","buzz","Hunts tarantulas. Second worst sting.","insect,swarm,venomous"},
-	{"tarasque","AAEJAA","GKDk",8,4,9,"365314","CA8A04","turtle shell, lion head, six bear legs","roar","A turtle that bench-pressed a castle.","mythical,boss"},
-	{"tarbosaurus","AMEJBA","DkfT",8,6,7,"5A4A2E","B89A6A","asian tyrannosaur","roar","T rex's Asian twin.","dinosaur,extinct,reptile,predator"},
 }

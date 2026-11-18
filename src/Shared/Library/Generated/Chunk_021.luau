@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ray of sickness","FJCBKI","jMe",4,7,1,"C0CA33","7CB342","sickly yellow-green ray","bleh","Seasick, on land.","toxic,silly"},
+	{"razor","BKAHJI","fT",2,8,1,"C9CED4","2F6FD1","small safety razor","splash","Smooth operator.","bathroom,household"},
+	{"razor halo","KLCAKK","QTe",6,7,2,"FFE45C","FFF8D6","razor-thin spinning energy disc hurled in a curve","whistle","Hold it up high. Steer it true. Mind your fingers.","anime,ki,blade"},
 	{"rc car bomb","BABJHL","DEQ",6,9,3,"E53935","24262A","a zippy toy car carrying a very real bomb","squeak","Bzzzzzz. Wheeeee. BOOM.","toy,explosive,modern"},
 	{"reading","KHBOKJ","FcN",2,2,2,"92400E","FDE68A","open book with glowing words drifting upward","rustle","One more chapter. One more. One more.","school"},
 	{"reality","KLCFOB","aO",5,7,1,"ECEFF1","212121","harsh grey ripple stripping illusions","thunk","Reality check! Snap out of it.","magic"},
@@ -89,7 +92,6 @@ return {
 	{"research vessel","DBEKHC","DklgB",4,5,7,"F5F5F5","E53935","white ship with cranes and labs","splash","Studies the ocean. Studies you.","vehicle,aquatic"},
 	{"reservoir","MBENII","FSN",2,1,8,"1E88E5","9E9E9E","big lake held behind a dam wall","thud","A lake on standby.","structure,farm"},
 	{"resilience","KECOKI","GF",1,4,7,"8D6E63","69F0AE","sturdy glowing shell that heals","thunk","Knock me down. I get up.","defence"},
-	{"resonance","FLCFOB","VO",5,7,2,"A08CFF","FFFFFF","harmonic glowing ring pulses","hum","Hits the exact note that breaks things.","loud"},
 	{"respawn","KHCOKI","FY",2,7,3,"00E676","FFFFFF","green glow column reforming caster","bling","Back again. Didn't miss me?","meme,support"},
 	{"rest","KGBOKI","F",1,1,3,"A5D6A7","FFF8E1","caster sitting with a cosy glow","sigh","A quick sit-down. Much better.","support"},
 	{"restaurant","EMCCII","FSc",2,1,5,"E57373","F5E6CA","shopfront with tables and awning","thud","Today's special: victory.","structure,building"},
@@ -148,6 +150,7 @@ return {
 	{"riot","KADFLA","jkIP",6,6,3,"F97316","374151","wave of shaking fists, flying shoes and a flipped table","crowd","It started over the last slice of pizza.","loud"},
 	{"riot shield wall","BKDCyI","GI",3,4,8,"BFE6F2","24262A","a row of clear riot shields slams into the ground","clang","See-through, push-through.","modern,defense"},
 	{"rip","KMBHJB","fT",4,8,2,"B0BEC5","FFFFFF","torn-air slash line","rrrip","Riiiip.","sharp"},
+	{"ripper form","CKCNJI","SP",8,9,3,"FF7A1A","2A2A30","chainsaws burst out of both forearms","buzz","Pull the cord. Everything else is a suggestion.","anime,transformation,melee"},
 	{"ripple","FBBF6F","IN",2,6,1,"6EC1EA","F0FAFF","expanding concentric water rings","plip","Started small. Kept going.","aquatic"},
 	{"riptide","FBCF6C","HN",5,7,3,"11577F","9ED9F2","sneaky outward water drag lines","swoosh","Looks calm. Drags you out to sea.","aquatic"},
 	{"rising dragon","KACOKI","Kklf",7,9,2,"FF6A2A","FFD38A","a flaming uppercut that rides a dragon of fire","whoosh","Up you go! And I go too!","fighting,melee,fire"},
@@ -400,7 +403,4 @@ return {
 	{"sagebrush","NEBCMI","GS",2,1,4,"9E9E9E","7CB342","silvery scrubby desert bush","rustle","Smells like a desert rainstorm.","plant"},
 	{"sagittarius","MHCEKJ","Te",5,5,5,"FFFFFF","FF7043","star centaur drawing a bow","rumble","Fires star arrows. Never misses. Okay, rarely.","space,zodiac"},
 	{"saguaro","NEDCMI","GST",5,1,8,"388E3C","F5F5F5","tall cactus with upward bending arms","thud","Waves hello. Spikes goodbye.","plant,desert,sharp"},
-	{"sahara","MAFNII","KSN",6,1,9,"F2C27A","E6A04D","endless rolling golden dunes","rumble","Sand. Then more sand. Then a sandstorm.","place,landmark"},
-	{"sai","CKBHJK","GfT",3,8,4,"C9CED4","24262A","three-prong dagger","shing","Catches blades. Pokes faces.","ninja,sharp"},
-	{"saiga","AMCJAA","Dk",4,8,4,"D2BE9A","A89270","big floppy bulbous nose","bleat","Nose looks like a tiny trunk.","mammal,wild,silly"},
 }

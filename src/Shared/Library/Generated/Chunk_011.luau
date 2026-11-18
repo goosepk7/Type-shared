@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant donut","IMEJIF","UkcI",7,2,7,"F2A6C8","D9A04A","enormous ring donut, sprinkles","thud","A donut the size of a tyre. Roll it.","edible,giant,silly"},
+	{"giant donut wheel","IMEJIF","DkI",7,2,7,"F2A6C8","D9A04A","monster donut rolling","thud","A runaway donut. Clear the road.","edible,giant,silly"},
+	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
 	{"giant flytrap","NGELMI","kScfHO",7,3,7,"558B2F","B71C1C","huge snapping jaws on a thick stalk","chomp","Feed me. FEED ME.","plant,carnivorous,silly"},
 	{"giant forest hog","AMCJAA","Ddkf",5,4,4,"2A2420","6A5A4A","huge black hairy pig","bleat","Biggest wild pig. Grumpy.","mammal,farm,wild"},
 	{"giant ground sloth","AMEJAA","DkTO",7,1,8,"8A6A4A","C8A880","elephant-sized sloth standing up","roar","A sloth as big as an elephant. Slow.","mammal,extinct,ancient,heavy"},
@@ -400,7 +403,4 @@ return {
 	{"ground cover","NGBNMI","SNP",1,1,2,"7CB342","B39DDB","low mat of tiny leaves","rustle","Covers the ground. Trips the enemy.","plant"},
 	{"ground slam","FEDFOI","kO",7,6,4,"6D4C41","D7CCC8","cracking ground ring around impact point","boom","Hit the floor. The floor hits back.","heavy"},
 	{"grounded","KECAKB","HO",4,7,1,"8D6E63","FF5252","heavy stone glyph pinning target down","thud","No flying. No fun. Grounded.","silly,heavy"},
-	{"groundhog","AMBJAA","Cdb",2,6,1,"8A6640","C8A47A","chubby burrower, stubby tail","squeak","Predicts the weather. Badly.","mammal,cute"},
-	{"groundnut stew","IBBOGI","FS",3,4,3,"B5823A","D8402B","orange peanut stew","slurp","A nutty, hearty stew.","edible,warm,healthy"},
-	{"group","LMDJLA","GdQh",4,4,5,"38BDF8","F59E0B","cluster of people all talking at once with coffee cups","chatter","This could have been an email.","silly,team"},
 }
