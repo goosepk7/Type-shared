@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jack the giant slayer","LMBJNA","cf",3,7,3,"15803D","78350F","kid with magic beans and a tiny sword","ding","Climbed the beanstalk. Regrets nothing.","folklore"},
 	{"jack-in-the-box monster","ALBLII","UEO",3,6,4,"DC2626","FACC15","spring-loaded clown head in a crank box","boing","Pop goes your sanity.","spooky,silly"},
 	{"jackal","AMCJAA","DQfbh",3,7,4,"C08A50","2E2A26","slender golden canine, dark saddle","howl","Scavenger extraordinaire.","mammal,predator,wild"},
 	{"jackalope warrior","AMBJAG","UDT",3,9,3,"A16207","94A3B8","antlered rabbit in tiny armor","chitter","Small, fluffy, extremely pointy.","cryptid,silly"},
@@ -118,6 +119,7 @@ return {
 	{"jupiter","MLFGKJ","kHeL",9,1,10,"D4A373","B5523B","huge banded sphere with a giant red spot","rumble","Biggest planet. Biggest bonk.","space"},
 	{"justice","KHDAKB","KO",7,8,2,"FFD54F","1565C0","golden scales symbol slamming down","gavel","Justice is served. Hot.","holy"},
 	{"k9 officer","LMCJNA","DQh",4,7,5,"1E3A8A","A16207","officer with a German-shepherd-style dog","bark","Sends the dog. Dog is fast.","rescue,canine"},
+	{"k9 unit","AECJAA","DQf",4,8,4,"C49660","4E5C46","an armoured patrol dog in a tactical vest","bark","Good dog. Bad day for them.","gaming,shooter,animal,summon"},
 	{"kaboom","KADGKI","Ek",7,8,1,"FF6D00","FFEB3B","comic-style starburst explosion","boom","The comic sound effect, but real.","explosive,silly"},
 	{"kagu","AMCJDA","AfT",3,5,2,"B8B8C0","E8301E","grey bird with crest","bark","Barks like a dog. Ghost bird.","bird,wetland"},
 	{"kaiju","AAFJBA","KDkeO",9,4,10,"1F2937","22D3EE","towering lizard with dorsal spikes, atomic glow","roar","Ruins skylines. Wonderful posture.","giant,kaiju,boss,danger"},
@@ -401,6 +403,4 @@ return {
 	{"last stand","KADOKI","GDk",7,5,6,"D32F2F","FFD54F","blazing red-gold aura at low health","horn","Not going down. Not like this.","rage"},
 	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
 	{"latke","IMBAKK","Uke",3,7,2,"C8803A","F2D07A","crispy shredded potato disc","whoosh","Crispy potato frisbees.","edible"},
-	{"latte","IABOKI","DF",3,9,2,"C8A070","F2E8D8","tall cup, foam art heart","fizz","Milk, coffee, and art.","edible,drink"},
-	{"laugh","KMBFOB","jd",2,7,1,"FFEB3B","FFFFFF","rippling HA HA HA letters","haha","Laughter is the best medicine.","silly"},
 }

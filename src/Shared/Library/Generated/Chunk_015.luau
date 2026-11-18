@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"latte","IABOKI","DF",3,9,2,"C8A070","F2E8D8","tall cup, foam art heart","fizz","Milk, coffee, and art.","edible,drink"},
+	{"laugh","KMBFOB","jd",2,7,1,"FFEB3B","FFFFFF","rippling HA HA HA letters","haha","Laughter is the best medicine.","silly"},
 	{"laughing flower","NLBLMI","jd",2,1,2,"FFEB3B","F06292","wobbling bloom that giggles","giggle","Hehehe. Hahaha. Confusion!","plant,magic,mythical,silly"},
 	{"laughing gas","FJCDOJ","jdO",2,3,2,"F48FB1","FFF59D","pink cloud with tiny laughing faces","giggle","Cannot fight while giggling.","silly"},
 	{"laughter","KHCF6B","jFPO",3,7,1,"FDE047","F97316","rolling wave of HA HA HA letters and tear-crying faces","giggle","Contagious. Milk out of the nose guaranteed.","silly,mood"},
@@ -401,6 +403,4 @@ return {
 	{"macadamia","IEAAKK","UeO",2,8,8,"F2E8C8","8A5A3A","round cream nut, hard shell","tok","The toughest shell in the nut world.","edible,nut"},
 	{"macadamia cookie","IMBAKK","Uke",3,7,2,"E8C88A","F2E8C8","cookie with white chunks","whoosh","Nuts and white chocolate. Fancy.","edible"},
 	{"macaque","AMBJBA","deb",2,7,2,"9A8A72","E8A090","pink face, short tail","chatter","Steals your sunglasses. Wears them.","mammal,primate"},
-	{"macaron","IMALKI","dSc",2,3,3,"F2A6C8","B8E0C8","two pastel shells, cream middle","chomp","Pastel, delicate, very fancy.","edible,sweet,fancy"},
-	{"macaroni","IMAELB","eVP",2,7,1,"F2D08A","E8C070","small curved tubes","pitter","Tiny curved tubes. Excellent ammo.","edible"},
 }

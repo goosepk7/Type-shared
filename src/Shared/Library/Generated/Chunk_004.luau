@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"brass","BKCF6B","kIO",4,6,6,"D4AF37","B5892E","blast of sound from shiny golden horns and a tuba","trumpet","Bold as it. Loud as it.","music,shiny,loud"},
 	{"brass knuckles","CKAHJK","kf",3,8,4,"B58A3A","D4A72C","metal ring grip over fist","bonk","Punches with extra punch.","medieval,heavy"},
 	{"bratwurst","IMBHJI","cf",3,5,4,"C87A4A","7A3A1E","long grilled sausage, char lines","bonk","A grilled sausage with good manners.","edible,silly"},
 	{"brazil nut","IEAAKK","UeO",2,8,5,"6B4A2A","E8D8C0","long triangular nut","tok","Always ends up on top of the jar.","edible,nut"},
@@ -402,5 +403,4 @@ return {
 	{"carne asada","IABAKK","Kc",3,5,3,"8A2E2E","C8603A","grilled sliced beef","thud","Grilled beef, ready for tacos.","edible,savory"},
 	{"carnitas","IMAELB","ce",2,7,1,"B0602B","F2C870","crispy shredded pork","pitter","Crispy, juicy shreds.","edible"},
 	{"carnival hammer","BMDHtI","kfO",6,3,5,"C0392B","8B5A2B","giant mallet and bell tower","thud","Ring the bell. Ring their bell.","party,silly"},
-	{"carnotaurus","AMDJBA","DkfT",7,8,7,"B8401E","3A2A1E","bull horns, tiny arms, fast","roar","A bull and a T rex had a sprinter.","dinosaur,extinct,reptile,predator"},
 }

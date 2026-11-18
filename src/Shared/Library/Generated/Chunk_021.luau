@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rain shower","GBBEOJ","FN",2,4,2,"7FA7C3","DCEDF7","light quick rain from small cloud","patter","Free bath. You are welcome.","aquatic"},
+	{"rain tree","NBECMI","GWFkS",3,1,8,"6D4C41","43A047","huge umbrella canopy","rustle","Folds its leaves before rain. Clever.","plant,tree"},
 	{"rainbow","GHDBKI","jFe",5,6,3,"FF5252","40C4FF","bright seven-colour arc landing on target","chime","Pot of gold not included.","cute,holy"},
 	{"rainbow boa","AMCJCD","fHaO",4,4,6,"C8603A","6AE8E0","iridescent orange snake","hiss","Shimmers like a rainbow.","reptile"},
 	{"rainbow bridge","EHECII","GFSY",4,1,6,"FF5252","40C4FF","shimmering arch of rainbow light","thud","Leads somewhere magical. Probably.","magic,mythical"},
@@ -401,6 +403,4 @@ return {
 	{"royal chef","LACJNA","KFe",3,5,4,"F8FAFC","DC2626","tall toque with crown emblem","sizzle","Feasts for kings. Leftovers for you.","royal,food"},
 	{"royal decree","KLCAKI","jIe",6,10,2,"E0283C","FFD7DC","meet their eyes, give an order, and they walk away","chime","You will walk away. Now.","anime,command,eyes"},
 	{"royal food taster","LMCJNA","dM",3,4,3,"7C3AED","F8FAFC","nervous figure holding a spoon","gulp","Tastes everything first. Brave job.","royal,silly"},
-	{"royal guard","LKCJNA","GfO",5,3,7,"DC2626","111827","tall bearskin hat, red coat, spear","clang","Never smiles. Never blinks. Never moves.","royal,warrior"},
-	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
 }

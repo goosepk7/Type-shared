@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"royal guard","LKCJNA","GfO",5,3,7,"DC2626","111827","tall bearskin hat, red coat, spear","clang","Never smiles. Never blinks. Never moves.","royal,warrior"},
+	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
 	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
 	{"rubber","BMBI3G","GUa",2,6,6,"1F2937","F472B6","stretchy black sheet snapping back like a trampoline","boing","I am rubber. You are glue.","toy,bouncy"},
 	{"rubber band","BMAAJK","eO",1,9,1,"D2B48C","D2B48C","stretchy loop","tap","Snap! Right on the wrist.","office"},
@@ -401,6 +403,4 @@ return {
 	{"shadow cat","AIBJAA","jZY",2,9,2,"0F0F23","A78BFA","black cat with starry inside","meow","Stares at empty corners. Knows things.","spooky,cute"},
 	{"shadow chains","FICLII","HO",5,5,4,"1A0033","7C4DFF","smoky black chains wrapping target","clank","Bound by darkness. Very dramatic.","spooky"},
 	{"shadow claw","FICHJB","ifT",5,9,1,"1A0033","AA00FF","three glowing violet claw slashes","shrk","Scratch scratch scratch.","spooky,sharp"},
-	{"shadow cloak","KIBOKJ","GZ",2,6,3,"1A1027","5E35B1","swirling smoky shadow around caster","hush","Fashionably invisible.","spooky,stealth"},
-	{"shadow dash","KICOKB","DZ",4,10,2,"1A0033","7C4DFF","black smoky streak","hiss","Was that a shadow? It was me.","spooky,speed"},
 }

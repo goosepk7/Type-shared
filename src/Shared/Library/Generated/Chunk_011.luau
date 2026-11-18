@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost locomotive","DIEKHL","DZkTg",7,7,5,"80DEEA","263238","glowing see-through steam engine","whistle","A train that crashed a century ago. Still running late.","spooky,undead"},
 	{"ghost orchid","NIBNMI","dZS",3,1,1,"F5F5F5","E1F5FE","leafless white bloom floating in air","rustle","Floats like a ghost. Very rare.","plant,flower,spooky"},
 	{"ghost pepper","IABAKK","KjSP",7,7,2,"C8202B","8A1E1E","wrinkled red pod","sizzle","So hot it haunts you for days.","edible,spicy,flammable,pepper,spooky"},
 	{"ghost pipefish","ABAJEC","dZB",1,6,1,"E8D8C0","C8A07A","ornate seaweed-like","splash","Pretends to be seaweed.","fish,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"gremlin gamer","LMBJNA","jdb",2,8,2,"65A30D","7C3AED","messy hair, snacks, wild grin","cackle","Pure chaos energy at 3 AM.","meme,silly"},
 	{"gremlin swarm","ADBJLA","LPb",4,8,2,"4D7C0F","FDE047","crowd of long-eared imps with tools","cackle","Every machine in range: broken.","goblin,swarm,silly"},
 	{"grenade","CABGKF","EkeV",5,6,2,"6B7B3A","4A4D52","pineapple-shaped grenade with pin","boom","Pull pin. Throw. Run.","explosive"},
-	{"grenade barrage","CADEJK","EP",7,5,1,"6B7B3A","4A4D52","shower of grenades","thud","Pins pulled. All of them.","explosive"},
 }
