@@ -3,6 +3,16 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wrap","IGBOKI","F",2,5,3,"F2E2B8","7DBE3A","rolled tortilla, filling peek","crunch","A sandwich in a sleeping bag.","edible,healthy"},
+	{"wrath","KADOKJ","KDk",7,6,4,"B71C1C","FF6F00","flaring red aura, cracked glowing ground","roar","You have angered the wizard.","rage"},
+	{"wrath of god","KHFNOI","KkPO",9,5,5,"FFD54F","FF6D00","golden beams and fire raining on a wide area","boom","Someone upstairs is upset.","holy,danger"},
+	{"wreath","BGBLKI","N",1,1,2,"2E8B57","C0392B","round ring of holly","jingle","Festive ring of entanglement.","holiday"},
+	{"wrecking ball","OKEG3K","DkO",8,4,9,"3A3F45","5B6168","giant iron ball on a chain","clank","Swings in like a... well.","mechanical,heavy"},
+	{"wrecking ball truck","DKEKHL","kIgO",8,2,9,"FFB300","424242","crane swinging a huge iron ball","clang","Swings once. Demolishes everything.","mechanical,vehicle,land,heavy"},
+	{"wrecking bar","JKCHJK","kf",4,5,7,"5B6168","24262A","long hooked steel bar","clank","Crowbar's bigger, louder cousin.","tool"},
+	{"wren","AMAJDB","dA",1,7,1,"8A6440","C8A880","tiny round bird, tail cocked up","tweet","Tiny bird, enormous song.","bird,cute"},
+	{"wrench","JKBHtK","kf",3,6,7,"8A929B","C0392B","adjustable jaw wrench","bonk","Fixes machines. Unfixes robots.","medieval,heavy"},
+	{"wrestle","KMCAKB","kfO",5,6,3,"D32F2F","FFD54F","grab-and-throw arc with ring dust","thud","Into the ropes! Down!","melee,sport"},
 	{"wrestler","LECJNA","DklO",6,6,6,"DC2626","FACC15","masked wrestler, tights, championship belt","thud","Off the top rope!","sport,martial"},
 	{"wrestling champion","LEDJNA","klO",7,5,7,"DC2626","FACC15","huge wrestler with a golden belt","thud","And his name is... loud.","sport,heavy"},
 	{"wrinkle","KMBF6B","jXN",2,3,2,"D7B899","A68A6D","wavy fold lines rippling across everything","rustle","Adds eighty years in one second.","body,silly"},

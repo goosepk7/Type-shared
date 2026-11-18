@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
+	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
+	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},
+	{"nor'easter","GCEEOJ","JIP",7,5,5,"546E7A","ECEFF1","heavy slanting snow and wind from the sea","howl","Coastal winter, maximum grump.","storm,frozen"},
+	{"north","KCCF6B","JIN",4,6,2,"E0F2FE","1E3A8A","compass needle snapping to N with a blast of frost","howl","Never Eat Soggy Waffles. Starts here.","map,frozen"},
+	{"north pole","MCFNII","JSN",4,1,9,"F5F5F5","4FC3F7","endless snow and ice, aurora sky","rumble","Brrrr. Bring a coat. Bring three.","frozen,holiday"},
+	{"north star","MHCAKJ","QTe",5,6,5,"FFFFFF","90CAF9","bright steady star with long rays","rumble","Always points the way. To victory.","space"},
+	{"northern goshawk","AMCJDB","DAfT",5,9,3,"6A7480","F2F2F0","grey hawk with white eyebrow","screech","Forest ninja. Weaves through trees.","bird,predator"},
 	{"northern pike","ABCJEC","DfTB",4,7,4,"6A7A4A","D8D8A0","long toothy predator, spotted green","splash","A crocodile pretending to be a fish.","fish,aquatic"},
 	{"norwegian forest cat","ACCJAA","dfT",3,7,2,"B8A08A","F2E8D8","big fluffy forest cat","meow","Viking cat. Fluffy and fearless.","mammal,pet,cute"},
 	{"nose","BMBMGG","HeN",3,3,3,"E8B48A","D98880","big round nose, two nostrils, sniffing lines","whiff","Runs without legs. Smells without manners.","body,silly"},
@@ -395,12 +403,4 @@ return {
 	{"peanut butter cups","IMBLKI","dSc",2,3,3,"5A2E16","B5823A","fluted chocolate cup, tan center","chomp","Chocolate and peanut butter, together forever.","edible,sweet,candy"},
 	{"peanut sauce","IMBLGI","SNP",2,3,3,"B5823A","D9A85A","thick tan sauce","gloop","Nutty and sticky.","edible,sticky,sauce"},
 	{"peanut worm","ABAJTD","CP",1,3,1,"E8C0A0","C88A6A","peanut-shaped worm","squelch","Looks like a peanut. Is a worm.","bug,silly"},
-	{"pear","IGBAKF","Fke",3,6,2,"D1E231","A8B83A","bulbous teardrop, stem, leaf","splat","Shaped like a bowling pin. Rolls like one.","edible,fruit,sweet"},
-	{"pear tree","NGDCMI","GFSc",3,1,7,"6D4C41","C0CA33","crown hung with green pears","rustle","A partridge not included.","plant,tree"},
-	{"pearl","BBAAKJ","Uce",2,7,4,"F2EEE6","E88AA5","smooth white glossy sphere","chime","Ocean's shiny marble.","treasure,shiny"},
-	{"pearl dragon","ABEKCB","AFgB",7,6,7,"F8FAFC","BAE6FD","shimmering white dragon clutching a pearl","chime","Will not let go of that pearl.","mythical,reptile"},
-	{"pearl onions","IJAELB","je",2,7,1,"F7F2EC","E8E0D0","tiny white onions","pitter","Tiny tear bombs.","edible"},
-	{"peasant","LMCJNA","Ph",3,4,3,"A16207","78350F","burlap clothes, pitchfork","grunt","Angry mob in one person. Grab torches.","historical"},
-	{"peat bog","MBENMI","SN",3,1,6,"5D4037","7CB342","squelchy brown moss land","poof","Preserves things. For centuries.","plant,fungus,spooky"},
-	{"pebble","FEAAKB","Ude",1,8,2,"9E9A94","D6D2CC","small smooth river stone","tick","Skips on water. Bonks on heads.","silly"},
 }

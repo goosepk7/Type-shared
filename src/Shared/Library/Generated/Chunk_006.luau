@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
+	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 	{"clock tower","ELDMII","GSeNO",4,1,8,"8D6E63","FFF8E1","tall tower with a big clock face","bell","Time is up. For them.","structure,defense,tower"},
 	{"clockmaker","LKCJNI","NO",3,3,4,"CA8A04","78350F","monocle, gears, tweezers","tick","Stops time. Briefly.","tools"},
 	{"clockwork dragon","AKEKAB","GKAg",8,6,8,"B45309","FACC15","brass dragon with exposed gears and steam vents","tick","Wind it up. Watch it fly.","robot,reptile,steampunk"},
@@ -367,6 +369,7 @@ return {
 	{"creosote bush","NEBCMI","GS",2,1,5,"7CB342","FFEB3B","spindly desert bush, tiny yellow flowers","rustle","Thousands of years old. Smells like rain.","plant"},
 	{"crepe","IMBAKK","Uke",3,7,2,"F2D88A","F7F2EC","thin folded pancake triangle","whoosh","A pancake that got very thin.","edible"},
 	{"crepe suzette","IABNGI","Kc",4,4,2,"E8A040","F28C28","folded crepes in orange flame sauce","sizzle","Crepes set on fire. Fancy fire.","edible,spicy,breakfast"},
+	{"crescent diadem","BHCAJK","UTe",5,9,3,"F6C85C","FF96CE","a gold tiara spinning in a disc of moonlight","chime","In the name of the moon, it comes back.","anime,magical girl,boomerang"},
 	{"crescent moon","MHDHKK","fTe",5,6,5,"FFF59D","E0E0E0","thin glowing curved sliver","rumble","Sharp enough to slice the night.","space,magic"},
 	{"crescent slash","FHCHJB","Te",6,9,1,"E8EAF6","9FA8DA","flying silver crescent-moon blade","shing","A sliver of moon. Sharp side first.","space,sharp"},
 	{"crested gecko","AMBJAA","Cf",2,7,2,"E8A03A","F2D07A","eyelash crests, sticky toes","hiss","Has eyelashes. Licks its eyes.","reptile,pet"},
@@ -400,7 +403,4 @@ return {
 	{"crossbowman","LKCJNA","Te",5,4,5,"57534E","7C2D12","padded jacket, big crossbow, pavise shield","twang","Slow reload. Big bolt.","warrior,archer"},
 	{"crosshair","KHBOKB","QTe",3,9,1,"EF4444","FFFFFF","red circle with a plus sign locking on, beeping","beep","Locked on. Do not move. You moved.","gaming,ranged"},
 	{"crossing guard","LMCJNI","GO",3,4,5,"F97316","F8FAFC","hi-vis vest, giant stop sign","whistle","STOP. Everyone stops.","silly"},
-	{"crosswalk","MMCLnI","GNO",3,1,5,"FFFFFF","111827","white road stripes with a lollipop STOP sign held up","whistle","Look left. Look right. Look left again. Stay.","place,school"},
-	{"crossword","BLBLnI","jSN",3,1,3,"F8FAFC","111827","black-and-white word grid with a chewed pencil","scratch","Seven down: \"defeat\", six letters. Starts with Y.","game,school"},
-	{"crouton","IMAELB","eVP",2,7,1,"D9A04A","F2D08A","small golden cube","pitter","Tiny bread bricks. Crunch on impact.","edible"},
 }

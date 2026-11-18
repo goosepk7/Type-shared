@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carrot","IEBAJK","FTe",3,6,4,"ED9121","3E8E2B","long orange cone, leafy top","crunch","Heals a little. Improves aim a lot.","edible,vegetable,healthy"},
 	{"carrot cake","IMBLKI","dFc",2,3,3,"D9883A","F2EEE0","spiced layer cake, cream frosting","chomp","Technically a vegetable. Technically.","edible,sweet"},
 	{"carrot patch","NGBLMI","Sc",2,1,3,"7CB342","FF9800","feathery tops above orange roots","rustle","Pull one up. Use it as a sword.","plant,crop,silly"},
 	{"carry","LMCJNA","GFl",5,6,5,"FACC15","111827","player lifting teammates on shoulders","ding","Carrying the whole team. Back hurts.","meme,gaming"},
@@ -338,6 +339,7 @@ return {
 	{"cinchona","NGCCMI","GWFkS",2,1,6,"6D4C41","E91E63","tree with pink flower clusters","rustle","Its bark cured fevers. Hero tree.","plant,tree"},
 	{"cinder","FAAEOJ","KeP",2,6,1,"8A2C0E","FF8C42","drifting glowing flakes, grey edges","crackle","Like snow, but rude.","fire"},
 	{"cinder block","BECAKK","ke",4,3,8,"8E9196","4A4D52","grey block with two holes","clink","Heavy-duty brick.","hardware"},
+	{"cinder snap","KADAKI","KEe",7,10,1,"FF8424","FFD678","a finger snap, a spark fuse, then the air explodes","snap","Useless when wet. Lethal when dry.","anime,fire,alchemy"},
 	{"cinnamon","IABDOJ","KjPO",2,5,1,"A0522D","C8803A","rolled bark quill, brown dust","puff","Warm, sweet, and choke-inducing.","edible,spice"},
 	{"cinnamon oatmeal","IMBLGI","FN",2,3,3,"D8C08A","A0522D","oats with cinnamon swirl","gloop","Cozy oats with spice.","edible,sticky,breakfast"},
 	{"cinnamon roll","IMBLKI","dSc",2,3,3,"C8803A","F7F2E8","spiral roll, white icing","chomp","A swirl of sweet doom.","edible,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"cling wrap","BMBL2I","NO",1,4,1,"BFE6F2","F2F2EE","stretchy clear plastic sheet","clang","Wrapped up tight.","sticky"},
 	{"clipboard","BMBIyK","G",1,6,3,"C49A6C","C9CED4","board with metal clip","tap","Looks busy. Is busy.","office"},
 	{"clipper ship","DFEKHC","DkgB",6,8,7,"3E2723","F5F5F5","sleek hull with towers of white sails","splash","Fastest sails on the sea.","vehicle,aquatic"},
-	{"clobber","KMCAKB","kO",5,7,3,"A1887F","FFCC80","chunky cartoon wallop","bonk","Thoroughly clobbered.","silly"},
-	{"clock","BMBOII","N",1,3,4,"F2F2EE","24262A","round wall clock","thud","Tick tock.","time"},
 }

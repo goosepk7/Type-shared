@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"moat","EBDLII","GSN",3,1,8,"1E88E5","9E9E9E","water channel ringed by stone edges","splash","Swimming lessons were optional. Oops.","structure,defense,ancient"},
+	{"moat tower","EBDMII","GSeN",4,1,9,"9E9E9E","1E88E5","round fort standing in the water","thud","Surrounded by water. Very hard to reach.","structure,defense,tower"},
+	{"mobile","BMBGKK","RN",1,3,1,"87CEEB","F1C40F","dangling stars spinning slowly","squeak","Spinny, sleepy, hypnotic.","baby"},
+	{"mobile home","EMCCII","GS",2,1,5,"F5F5F5","90A4AE","long boxy home on blocks","thud","Mobile in theory.","structure,building,silly"},
+	{"mobile library","DMDKHL","Djkg",3,4,6,"1565C0","FFC107","bus filled with bookshelves","engine","Overdue books. Overdue punishment.","mechanical,vehicle,land,silly"},
+	{"mobula ray","ABCJEC","UASTB",4,5,3,"1E2430","F2F2F2","small manta leaping out of water","whoosh","Leaps and flips out of the sea.","fish,aquatic,ocean"},
+	{"mocha","IABOKI","DF",3,9,2,"6B4026","F2E8D8","chocolate coffee with cream","fizz","Coffee and chocolate. Best friends.","edible,drink"},
+	{"mochi","IMBLGI","SNO",2,3,3,"F7F2EC","F2A6C8","soft round rice dough cake","gloop","Stretchy, chewy, sticks to all.","edible,sticky,sweet"},
 	{"mochi donut","IMBLKI","dSc",2,3,3,"F2A6C8","F7F2EC","ring of connected little balls","chomp","A donut made of bubbles.","edible,sweet,dessert"},
 	{"mochi ice cream","ICBAKJ","JeN",3,5,2,"F7D9E3","F7F2EC","soft rice dough ball, ice cream core","squish","Chewy outside, cold inside.","edible,frozen,sweet"},
 	{"mock orange","NGCNMI","jdFS",1,1,3,"FFFFFF","7CB342","shrub with orange-scented white blooms","rustle","Smells like oranges. Fooled you.","plant,flower"},
@@ -395,12 +403,4 @@ return {
 	{"noni","IJBDOJ","jSM",3,3,2,"E8E8C8","A8B86A","bumpy pale fruit","whiff","Smells like old cheese.","edible,smelly,fruit"},
 	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
 	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
-	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
-	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
-	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},
-	{"nor'easter","GCEEOJ","JIP",7,5,5,"546E7A","ECEFF1","heavy slanting snow and wind from the sea","howl","Coastal winter, maximum grump.","storm,frozen"},
-	{"north","KCCF6B","JIN",4,6,2,"E0F2FE","1E3A8A","compass needle snapping to N with a blast of frost","howl","Never Eat Soggy Waffles. Starts here.","map,frozen"},
-	{"north pole","MCFNII","JSN",4,1,9,"F5F5F5","4FC3F7","endless snow and ice, aurora sky","rumble","Brrrr. Bring a coat. Bring three.","frozen,holiday"},
-	{"north star","MHCAKJ","QTe",5,6,5,"FFFFFF","90CAF9","bright steady star with long rays","rumble","Always points the way. To victory.","space"},
-	{"northern goshawk","AMCJDB","DAfT",5,9,3,"6A7480","F2F2F0","grey hawk with white eyebrow","screech","Forest ninja. Weaves through trees.","bird,predator"},
 }

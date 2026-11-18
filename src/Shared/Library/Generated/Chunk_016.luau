@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"magician performer","LLCJNA","jdhY",4,6,3,"111827","DC2626","top hat, cape, rabbit, wand","ding","Pulls a rabbit. Then a tiger.","circus,magic"},
+	{"magician's assistant","LMCJNA","dY",3,6,3,"111827","F472B6","sparkly outfit, box being sawed","ding","Gets sawed in half. Fine afterward.","circus,silly"},
+	{"magician's wand","BLAAzI","jh",2,6,2,"24262A","F2F2EE","black wand with white tips","pop","Abracadabra! Rabbit!","party,magic"},
+	{"magma","FADF6F","KNP",7,4,5,"E03B12","FFB000","glowing orange rock flow, black crust","bubble","Lava with an inside voice.","fire,heavy"},
+	{"magma ball","FACAKB","KEeN",6,6,4,"DD2C00","FFA000","glowing orange blob with black crust","bubble","Hot potato. Rocky hot potato.","fire,heavy"},
+	{"magma bomb","FACGKI","KEP",7,5,1,"DD2C00","FFAB00","glowing molten blob bursting into fire splashes","boom","Melty kaboom.","fire,explosive"},
+	{"magma crab","AABJFA","GKf",3,3,6,"7F1D1D","F97316","crab with a volcanic rock shell","click","Pinches. Burns. Repeat.","fire"},
+	{"magma spike","FACLII","KlT",6,5,5,"D84315","FFAB40","glowing rock spike erupting from ground","crack","Hot and pointy. Worst combo.","fire,sharp"},
 	{"magma storm","FAEEOJ","KkP",8,5,5,"BF360C","5D4037","storm of molten rocks and ash","rumble","Two elements, one bad day.","fire,heavy,storm"},
 	{"magma titan","AAFJNA","KEkS",9,2,9,"450A0A","F97316","volcano-shouldered giant dripping lava","rumble","A walking volcano with no off switch.","elemental,giant,boss,fire,danger"},
 	{"magnet","BKBLJK","lHN",4,5,6,"C0392B","C9CED4","U-shaped red magnet, silver tips","clank","Attracts trouble. And bolts.","magnetic"},
@@ -395,12 +403,4 @@ return {
 	{"mixture","FLBG2B","jEFM",4,5,1,"8B5CF6","84CC16","bowl of swirling purple-green gloop with a spoon standing up","gloop","Every drink at the fountain. In one cup.","silly,magic"},
 	{"moa","AMEJDA","Dkf",6,8,5,"6A4A2E","C8A87A","giant flightless bird, very tall","boom","Twelve feet of bird. Extinct.","bird,flightless,extinct"},
 	{"moai","EMECII","GdkS",6,1,10,"6D6D6D","8D6E63","giant long-faced stone head and torso","rumble","Stares. Judges. Squashes.","structure,landmark,ancient"},
-	{"moat","EBDLII","GSN",3,1,8,"1E88E5","9E9E9E","water channel ringed by stone edges","splash","Swimming lessons were optional. Oops.","structure,defense,ancient"},
-	{"moat tower","EBDMII","GSeN",4,1,9,"9E9E9E","1E88E5","round fort standing in the water","thud","Surrounded by water. Very hard to reach.","structure,defense,tower"},
-	{"mobile","BMBGKK","RN",1,3,1,"87CEEB","F1C40F","dangling stars spinning slowly","squeak","Spinny, sleepy, hypnotic.","baby"},
-	{"mobile home","EMCCII","GS",2,1,5,"F5F5F5","90A4AE","long boxy home on blocks","thud","Mobile in theory.","structure,building,silly"},
-	{"mobile library","DMDKHL","Djkg",3,4,6,"1565C0","FFC107","bus filled with bookshelves","engine","Overdue books. Overdue punishment.","mechanical,vehicle,land,silly"},
-	{"mobula ray","ABCJEC","UASTB",4,5,3,"1E2430","F2F2F2","small manta leaping out of water","whoosh","Leaps and flips out of the sea.","fish,aquatic,ocean"},
-	{"mocha","IABOKI","DF",3,9,2,"6B4026","F2E8D8","chocolate coffee with cream","fizz","Coffee and chocolate. Best friends.","edible,drink"},
-	{"mochi","IMBLGI","SNO",2,3,3,"F7F2EC","F2A6C8","soft round rice dough cake","gloop","Stretchy, chewy, sticks to all.","edible,sticky,sweet"},
 }

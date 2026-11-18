@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"giant cookie","IMEJIF","DkcI",7,2,7,"C8904A","4A2516","huge cookie like a wheel","thud","Rolls like a wheel. Lures like a cookie.","edible,giant,silly"},
+	{"giant crab monster","ABFJFA","Gkf",8,3,10,"B91C1C","FDBA74","towering crab with skyscraper claws","click","Pinches buildings. Walks sideways into history.","kaiju,aquatic"},
+	{"giant cupcake","IMEJIF","Gdc",7,2,7,"F2A6C8","D9A04A","house-sized frosted cupcake","thud","A cupcake with a zip code.","edible,giant,silly"},
+	{"giant daisy","NGDCMI","GFS",3,1,4,"FFFFFF","FFEB3B","daisy taller than you","rustle","A daisy that skipped leg day? No. Arm day.","plant,flower,cute"},
 	{"giant donut","IMEJIF","UkcI",7,2,7,"F2A6C8","D9A04A","enormous ring donut, sprinkles","thud","A donut the size of a tyre. Roll it.","edible,giant,silly"},
 	{"giant donut wheel","IMEJIF","DkI",7,2,7,"F2A6C8","D9A04A","monster donut rolling","thud","A runaway donut. Clear the road.","edible,giant,silly"},
 	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
@@ -399,8 +403,4 @@ return {
 	{"grosbeak","AMAJDB","dA",1,7,1,"E8301E","1E1E1E","big-beaked songbird","tweet","Beak like a nutcracker.","bird,cute"},
 	{"grotesque","AEBLNI","GdO",3,2,8,"78716C","D6D3D1","squat stone face on a ledge","crack","Makes faces at you. Literally made of faces.","guardian,silly"},
 	{"ground","FEDNnI","kNO",5,1,9,"8B6B4A","5B8C3A","chunk of grassy dirt heaving up like a rug pulled","rumble","It was under you a second ago.","terrain"},
-	{"ground beetle","AMAJFA","Gf",1,6,4,"1E1E24","6A3AA0","glossy running beetle","click","Fast night hunter.","insect,armored"},
-	{"ground cover","NGBNMI","SNP",1,1,2,"7CB342","B39DDB","low mat of tiny leaves","rustle","Covers the ground. Trips the enemy.","plant"},
-	{"ground slam","FEDFOI","kO",7,6,4,"6D4C41","D7CCC8","cracking ground ring around impact point","boom","Hit the floor. The floor hits back.","heavy"},
-	{"grounded","KECAKB","HO",4,7,1,"8D6E63","FF5252","heavy stone glyph pinning target down","thud","No flying. No fun. Grounded.","silly,heavy"},
 }

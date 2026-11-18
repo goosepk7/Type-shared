@@ -116,6 +116,7 @@ return {
 	{"albatross","ABCJDB","DASB",3,8,2,"F7F7F2","6E6E74","gigantic narrow wings, gliding","squawk","Sleeps while gliding. For years.","bird,ocean"},
 	{"albertosaurus","AMDJBA","DkfT",7,7,7,"6A5A3A","B89A6A","slender tyrannosaur","roar","T rex's lean, mean cousin.","dinosaur,extinct,reptile,predator"},
 	{"album","BMBIyE","GdO",2,3,4,"7C2D12","FDE68A","thick book of embarrassing photos falling open","thud","Baby photos. In front of your friends.","household"},
+	{"alchemic lances","KEDFII","klT",7,7,2,"8C847A","6EC4FF","a clap, a blue circle, a line of stone spikes","crack","Equal value, paid in spikes.","anime,earth,alchemy"},
 	{"alchemist","LJCJNA","EFMe",4,4,4,"7C2D12","22C55E","leather apron, bandolier of potions","bubble","Turned lead into gold. Once. Allegedly.","magic,science"},
 	{"alchemy","KLCAKB","jMb",4,6,1,"FFC107","76FF03","bubbling flask-shaped glowing bolt","bubble","Mixed something. It exploded.","magic"},
 	{"aldebaran","MADAKJ","KTeO",6,6,6,"FF7043","FFCC80","orange giant glaring like an eye","twinkle","The bull's eye. Glaring.","space,star"},
@@ -402,5 +403,4 @@ return {
 	{"asiatic black bear","AMDJAA","Dkf",7,5,7,"1E1A18","F2F2EE","black bear, white V on chest","roar","Has a crescent moon on its chest.","mammal,predator,wild"},
 	{"ask","KMAAKB","jbO",1,6,1,"A855F7","FFFFFF","small raised hand with a polite question mark","ding","Can I? Can I? Can I? Pleeease?","silly"},
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
-	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
 }

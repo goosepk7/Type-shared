@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flying carpet","DLCKHB","DAgY",4,8,3,"7B1FA2","FFC107","tasselled rug rippling in the air","whoosh","A whole new world of bonking.","vehicle,magic,mythical"},
+	{"flying dragon lizard","AMBJAB","CAf",2,7,2,"8A7A5A","E8701E","lizard with rib wings","hiss","A lizard that flies. On ribs.","reptile"},
+	{"flying fish","ABAJEB","dAB",1,6,1,"4A6EA8","C8D8EC","long wing fins, gliding over waves","splash","A fish that said no to water.","fish,aquatic"},
+	{"flying frog","AMAJAB","UAe",1,5,1,"4AC84A","F2D82A","frog gliding on webbed feet","croak","Parachutes with its toes.","amphibian,wetland"},
 	{"flying lemur","AMBJAB","CAf",2,5,3,"8A8070","C8C0B0","big gliding membrane","squeak","Neither flies nor is a lemur.","mammal,wild"},
 	{"flying ship","DLEMHB","EAkeg",7,5,7,"6D4C41","FFD54F","wooden galleon held up by glowing balloons","cannon","Sails the clouds, cannons out.","vehicle,magic,mythical"},
 	{"flying snake","AMCJCB","AfMN",4,6,3,"2A2A1E","8AE04A","flattened gliding snake","hiss","A snake that flies. Why would you.","reptile,venomous"},
@@ -399,8 +403,4 @@ return {
 	{"giant cheese wheel","IMEJIF","DkcI",7,2,7,"F2C24A","C89A3A","building-sized cheese drum","thud","The mice will be talking about this.","edible,giant,silly"},
 	{"giant chocolate bar","IMECII","Gdc",7,2,7,"5A2E16","C8A070","chocolate bar the size of a wall","thud","A wall of chocolate. Distracting.","edible,giant,silly"},
 	{"giant clam","ABCJGI","GHNO",3,1,8,"3AA0A8","8A5AC8","huge wavy shell, glowing blue lips","squelch","Big lips. Bigger clamp.","mollusk,aquatic"},
-	{"giant cookie","IMEJIF","DkcI",7,2,7,"C8904A","4A2516","huge cookie like a wheel","thud","Rolls like a wheel. Lures like a cookie.","edible,giant,silly"},
-	{"giant crab monster","ABFJFA","Gkf",8,3,10,"B91C1C","FDBA74","towering crab with skyscraper claws","click","Pinches buildings. Walks sideways into history.","kaiju,aquatic"},
-	{"giant cupcake","IMEJIF","Gdc",7,2,7,"F2A6C8","D9A04A","house-sized frosted cupcake","thud","A cupcake with a zip code.","edible,giant,silly"},
-	{"giant daisy","NGDCMI","GFS",3,1,4,"FFFFFF","FFEB3B","daisy taller than you","rustle","A daisy that skipped leg day? No. Arm day.","plant,flower,cute"},
 }

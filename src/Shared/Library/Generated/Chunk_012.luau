@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ground beetle","AMAJFA","Gf",1,6,4,"1E1E24","6A3AA0","glossy running beetle","click","Fast night hunter.","insect,armored"},
+	{"ground cover","NGBNMI","SNP",1,1,2,"7CB342","B39DDB","low mat of tiny leaves","rustle","Covers the ground. Trips the enemy.","plant"},
+	{"ground slam","FEDFOI","kO",7,6,4,"6D4C41","D7CCC8","cracking ground ring around impact point","boom","Hit the floor. The floor hits back.","heavy"},
+	{"grounded","KECAKB","HO",4,7,1,"8D6E63","FF5252","heavy stone glyph pinning target down","thud","No flying. No fun. Grounded.","silly,heavy"},
 	{"groundhog","AMBJAA","Cdb",2,6,1,"8A6640","C8A47A","chubby burrower, stubby tail","squeak","Predicts the weather. Badly.","mammal,cute"},
 	{"groundnut stew","IBBOGI","FS",3,4,3,"B5823A","D8402B","orange peanut stew","slurp","A nutty, hearty stew.","edible,warm,healthy"},
 	{"group","LMDJLA","GdQh",4,4,5,"38BDF8","F59E0B","cluster of people all talking at once with coffee cups","chatter","This could have been an email.","silly,team"},
@@ -263,6 +267,7 @@ return {
 	{"helipad","EMCNII","Sh",2,1,7,"37474F","FFEB3B","flat circle with a big H","thud","Calls in air support. Landing now.","structure"},
 	{"helium","FFBAKJ","jl",2,5,1,"E1F5FE","FFF59D","target floating up with a squeaky voice","squeak","Up, up, and very squeaky.","silly"},
 	{"helium tank","BFCMKI","Al",2,1,4,"8E9196","F2F2EE","metal tank with balloon nozzle","squeak","Makes everyone float. Makes voices squeaky.","party"},
+	{"helix breaker","KKEHJK","DkfT",8,9,3,"787E8A","14A88C","a giant stepped spiral drill wrapped in teal light","drill","Who do you think it is?","anime,mecha,drill"},
 	{"helix lance","KLDBKI","Te",8,10,1,"E9FF7A","B04CFF","needle beam wrapped in a crackling spiral coil","zap","Charged for a long, long time. Worth it.","anime,ki,beam"},
 	{"hell","MAFN5I","KSHPh",9,2,9,"7F1D1D","FF6B00","cracked glowing pit, flames, rising smoke and red rock","roar","Warm all year. Terrible reviews.","fire,spooky,place,danger"},
 	{"hellbat","AABJDB","KiA",3,9,2,"1C1917","F97316","bat with glowing ember wing veins","screech","Flaming bat. Not a snack.","fire,flying,spooky"},
@@ -293,6 +298,7 @@ return {
 	{"herring","ABAJEC","dPhB",1,6,1,"B8C4D0","4A6A8A","small silver fish, shoals","splash","Travels in million-fish crowds.","fish,aquatic"},
 	{"heterodontosaurus","AMBJAA","dkT",3,5,6,"8A6A4A","D8B88A","tiny dino with fangs","honk","Plant eater with fangs. Confusing.","dinosaur,extinct,reptile"},
 	{"hex","KIBAKB","jiN",4,7,1,"6A1B9A","B2FF59","spinning purple hexagon glyph","cackle","Bad luck delivered by express mail.","spooky,magic"},
+	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
 	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
 	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
 	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
@@ -397,10 +403,4 @@ return {
 	{"honey fungus","NJCLMI","WSMP",3,1,5,"FFB300","6D4C41","golden clusters with stringy black roots","poof","Biggest living thing on Earth. Sneaky.","plant,fungus"},
 	{"honey lemon tea","IABOKI","KF",2,5,2,"E8B04A","F7E86A","steaming mug, lemon, honey","slurp","A sore throat's best friend.","edible,drink,warm"},
 	{"honey mustard","IMBNGI","SNP",2,4,1,"E8B02B","F2D870","golden creamy dip","splat","Sweet and zingy.","edible,sauce"},
-	{"honey possum","AMAJAA","Uf",1,6,2,"8A6A4A","C8A07A","tiny striped nectar-eater","chirp","Long tongue. Lives on flowers.","mammal,marsupial"},
-	{"honey roasted peanuts","IMAELB","eVP",2,7,1,"C9A06A","E8A317","golden glazed nuts","pitter","Sweet, salty, sticky.","edible,sweet"},
-	{"honey trap","OGCL1I","cNO",2,1,3,"D4A72C","7A4E2D","puddle of sticky golden goo","clank","Sweet. Sticky. Stuck.","trap,sticky"},
-	{"honey tree","NGCCMI","ScN",2,1,5,"FFB300","8D6E63","tree dripping golden honey","chime","Sticky sweet. Everyone gets stuck.","plant,magic,mythical,sweet"},
-	{"honeycomb","IMBLGI","ScN",2,3,3,"E8A317","F7D88A","hexagon grid of golden wax","gloop","Hexagons full of sticky gold.","edible,sticky,sauce,sweet"},
-	{"honeycrisp","IGBAKF","Fke",3,6,2,"D8303A","F2C870","big red-gold streaked apple","splat","So crunchy it echoes.","edible,fruit,sweet"},
 }

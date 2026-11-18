@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jazz","KFCF6J","UjcN",3,5,1,"1E3A8A","D4AF37","smooth gold saxophone notes in a smoky blue swirl","music","It is about the notes you do not play. Skiddly bop.","music,cool"},
+	{"jeans","BMCCBA","GaN",3,2,7,"3B5B8C","1E3A5F","stiff blue jeans standing up on their own, ripped knee","thud","So stiff they stand up alone.","clothing"},
+	{"jelly","IMBLGG","USaN",2,3,3,"E0102B","F35A6A","wobbly dome mold, glossy","wobble","The wobbliest trap on the battlefield.","edible,wobbly,sweet"},
+	{"jelly baby","IMBJBA","UQf",2,6,2,"F2A62B","E0102B","small chubby gummy figure","squeak","Small, chewy, and brave.","edible,silly,cute,candy"},
+	{"jelly bean","IMAELB","eVP",2,7,1,"E0102B","8DC63F","small glossy bean candy","pitter","Every flavor. Even the weird ones.","edible,sweet"},
+	{"jelly donut","IMBLKI","Ec",2,3,3,"E8B060","B0203E","round filled donut, sugar dust","chomp","Squeeze for a surprise blast.","edible,sweet"},
+	{"jelly fungus","NJBLMI","USN",2,1,3,"FFB300","FF7043","wobbly orange jelly blobs on wood","poof","Wobbly. Slippery. Gross.","plant,fungus,silly"},
+	{"jelly knight","AJCJGG","GUf",4,4,5,"4ADE80","94A3B8","slime wearing a tiny helmet","clang","Wobbly but brave.","slime,silly"},
 	{"jelly tsunami","IMEFOJ","UkIN",7,3,3,"E0102B","F35A6A","towering wave of wobbling jelly","wobble","A wobbly wave of doom.","edible,wobbly,sweet,silly"},
 	{"jelly wall","EECCII","GUSN",2,1,4,"E53935","FF8A80","wobbly translucent red slab","wobble","Wobbles. Bounces you right back.","silly,sweet"},
 	{"jellyfish","ABBJGJ","SMOB",3,2,1,"E89AD0","F2D8F0","translucent bell, trailing tentacles","squelch","95% water, 5% ouch.","aquatic,ocean,venomous"},
@@ -395,12 +403,4 @@ return {
 	{"lava tsunami","HAFF6F","KkNP",10,4,7,"DD2C00","FFB300","towering wall of glowing molten rock","roar","The volcano went surfing.","fire,natural,danger"},
 	{"lava wall","FADCnI","GKS",6,2,6,"BF360C","FF9100","rising wall of glowing molten rock","bubble","A wall that bites if you touch it.","fire,defence"},
 	{"lava wave","FAEF6F","KkNP",8,4,6,"FF3D00","FFB300","towering wall of molten rock","roar","Do not surf this one.","fire,heavy"},
-	{"lava worm","AADJCH","KCH",6,5,6,"7F1D1D","F97316","glowing segmented worm from lava","sizzle","Swims in lava. Pops out in your face.","fire"},
-	{"lavender","NGBNMI","FSN",2,1,3,"9575CD","7CB342","spiky purple flower stalks","rustle","Calms you down. And them. Zzz.","plant,flower"},
-	{"lavender field","NGENMI","FSN",2,1,4,"9575CD","7CB342","purple rows rolling into distance","rustle","Everyone gets very, very relaxed.","plant,crop"},
-	{"lawn chair balloon","DFBKHJ","Alg",2,2,1,"43A047","E53935","garden chair lifted by party balloons","engine","Up, up, and uh oh.","vehicle,silly"},
-	{"lawn flamingo","BMBJDI","jd",1,1,2,"FF3EA5","24262A","plastic flamingo on wire legs","thud","Fabulous lawn sentinel.","garden"},
-	{"lawn mower","DGBKHL","DkfTg",4,4,5,"2E8B57","F2C14E","small tractor body, spinning blade deck","engine","Gives enemies a short back and sides.","mechanical,vehicle,land"},
-	{"lawyer","LMCJNA","jO",3,3,4,"111827","F8FAFC","robe, gavel, briefcase","ding","Objection! Sustained. Bonk.","silly"},
-	{"layer","KEBIyE","GSV",3,2,7,"A855F7","F9A8D4","stacked shells peeling away one at a time","pop","Like an onion. Or a cake. Everybody likes cake.","defense"},
 }

@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lava worm","AADJCH","KCH",6,5,6,"7F1D1D","F97316","glowing segmented worm from lava","sizzle","Swims in lava. Pops out in your face.","fire"},
+	{"lavender","NGBNMI","FSN",2,1,3,"9575CD","7CB342","spiky purple flower stalks","rustle","Calms you down. And them. Zzz.","plant,flower"},
+	{"lavender field","NGENMI","FSN",2,1,4,"9575CD","7CB342","purple rows rolling into distance","rustle","Everyone gets very, very relaxed.","plant,crop"},
+	{"lawn chair balloon","DFBKHJ","Alg",2,2,1,"43A047","E53935","garden chair lifted by party balloons","engine","Up, up, and uh oh.","vehicle,silly"},
+	{"lawn flamingo","BMBJDI","jd",1,1,2,"FF3EA5","24262A","plastic flamingo on wire legs","thud","Fabulous lawn sentinel.","garden"},
+	{"lawn mower","DGBKHL","DkfTg",4,4,5,"2E8B57","F2C14E","small tractor body, spinning blade deck","engine","Gives enemies a short back and sides.","mechanical,vehicle,land"},
+	{"lawyer","LMCJNA","jO",3,3,4,"111827","F8FAFC","robe, gavel, briefcase","ding","Objection! Sustained. Bonk.","silly"},
+	{"layer","KEBIyE","GSV",3,2,7,"A855F7","F9A8D4","stacked shells peeling away one at a time","pop","Like an onion. Or a cake. Everybody likes cake.","defense"},
 	{"layer cake","IMCLKI","dSc",2,3,3,"F7E0C0","7A4026","tall many-layered slice","chomp","Layers of joy, stacked high.","edible,sweet"},
 	{"laziness","KMBNOI","NO",2,1,3,"BCAAA4","FFE0B2","droopy sleepy area with pillows","yawn","Nobody feels like doing anything.","silly"},
 	{"lead pipe","JKCHJK","kf",3,6,6,"4A4D52","8E9196","short heavy metal pipe","bonk","Plumbing, weaponised.","medieval,heavy"},
@@ -395,12 +403,4 @@ return {
 	{"magic trick","KLBOKI","db",2,7,1,"212121","D32F2F","card fan and puff of smoke","tada","Pick a card. Any card. Too late.","magic,silly"},
 	{"magic word","KLBAKB","jF",3,7,1,"7C4DFF","FFD54F","glowing floating letters","ding","You said please. Here's a spell.","magic,cute"},
 	{"magical girl","LHCJNB","AFe",5,7,4,"F472B6","FDE68A","frilly outfit, star wand, glowing transformation","chime","Transforms with a 30-second sparkle sequence.","magic,hero"},
-	{"magician performer","LLCJNA","jdhY",4,6,3,"111827","DC2626","top hat, cape, rabbit, wand","ding","Pulls a rabbit. Then a tiger.","circus,magic"},
-	{"magician's assistant","LMCJNA","dY",3,6,3,"111827","F472B6","sparkly outfit, box being sawed","ding","Gets sawed in half. Fine afterward.","circus,silly"},
-	{"magician's wand","BLAAzI","jh",2,6,2,"24262A","F2F2EE","black wand with white tips","pop","Abracadabra! Rabbit!","party,magic"},
-	{"magma","FADF6F","KNP",7,4,5,"E03B12","FFB000","glowing orange rock flow, black crust","bubble","Lava with an inside voice.","fire,heavy"},
-	{"magma ball","FACAKB","KEeN",6,6,4,"DD2C00","FFA000","glowing orange blob with black crust","bubble","Hot potato. Rocky hot potato.","fire,heavy"},
-	{"magma bomb","FACGKI","KEP",7,5,1,"DD2C00","FFAB00","glowing molten blob bursting into fire splashes","boom","Melty kaboom.","fire,explosive"},
-	{"magma crab","AABJFA","GKf",3,3,6,"7F1D1D","F97316","crab with a volcanic rock shell","click","Pinches. Burns. Repeat.","fire"},
-	{"magma spike","FACLII","KlT",6,5,5,"D84315","FFAB40","glowing rock spike erupting from ground","crack","Hot and pointy. Worst combo.","fire,sharp"},
 }

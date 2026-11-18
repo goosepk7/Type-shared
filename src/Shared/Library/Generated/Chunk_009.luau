@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"evening","KICNOI","ZSN",3,2,2,"7C3AED","F97316","purple-orange sky with first stars and a porch light","chirp","Streetlights are on. Time to come in.","time"},
+	{"evening primrose","NHBNMI","dFS",1,1,1,"FFF59D","FFEB3B","pale yellow blooms opening at dusk","rustle","Opens at night. Glows a little.","plant,flower"},
+	{"event horizon","FIFNOI","iHO",9,2,8,"000000","FF6E40","glowing ring around a perfect black circle","hum","The point of no return. Literally.","space,danger"},
 	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
 	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
 	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
@@ -177,6 +180,7 @@ return {
 	{"filing cabinet","BKCCII","Gk",2,1,8,"8E9196","4A4D52","metal drawers on top of drawers","thud","Paperwork armour.","office"},
 	{"filter","BHBIyE","GjX",2,4,4,"93C5FD","F9A8D4","sparkly screen that adds dog ears to anything behind it","chime","Dog ears and sparkles. Nobody is safe.","tech,meme"},
 	{"fin","BBBHJC","QfTB",4,8,3,"5D6D7E","2E86C1","grey triangle fin slicing through a water ripple","splash","Dun dun. Dun dun. DUN DUN.","aquatic,sharp,spooky"},
+	{"fin array","KKDAJB","Te",6,8,3,"383E50","E6961E","four fin-shaped pods firing amber beams from every side","laser","Surrounded by four very polite lasers.","anime,mecha,drones"},
 	{"fin whale","ABFJEC","kIB",8,7,9,"5A6470","E8EAEC","long slender whale, ridge behind fin","whalesong","Greyhound of the sea. Very fast.","mammal,aquatic,ocean,heavy"},
 	{"final boss","LIEJNA","keOh",9,4,9,"0A0A0A","DC2626","huge armored figure with health bar overhead","roar","Has three phases. You have one life.","meme,gaming,boss"},
 	{"finch","AMAJDB","dA",1,7,1,"F2C82A","1E1E1E","tiny yellow-black seed eater","tweet","Beak shape: perfect for seeds.","bird,cute"},
@@ -399,8 +403,4 @@ return {
 	{"fly agaric","NJBLMI","jSM",4,1,3,"E53935","FFFFFF","classic red cap with white dots","poof","Fairy-tale pretty. Fairy-tale poisonous.","plant,fungus"},
 	{"fly swatter","JMBHJK","fO",1,9,1,"C0392B","24262A","flat mesh paddle on wire","boing","SWAT.","silly"},
 	{"flycatcher","AMAJDB","dA",1,7,1,"8A8A6A","F2E8C0","small bird catching bugs mid-air","tweet","Snaps bugs out of the air.","bird,cute"},
-	{"flying carpet","DLCKHB","DAgY",4,8,3,"7B1FA2","FFC107","tasselled rug rippling in the air","whoosh","A whole new world of bonking.","vehicle,magic,mythical"},
-	{"flying dragon lizard","AMBJAB","CAf",2,7,2,"8A7A5A","E8701E","lizard with rib wings","hiss","A lizard that flies. On ribs.","reptile"},
-	{"flying fish","ABAJEB","dAB",1,6,1,"4A6EA8","C8D8EC","long wing fins, gliding over waves","splash","A fish that said no to water.","fish,aquatic"},
-	{"flying frog","AMAJAB","UAe",1,5,1,"4AC84A","F2D82A","frog gliding on webbed feet","croak","Parachutes with its toes.","amphibian,wetland"},
 }
