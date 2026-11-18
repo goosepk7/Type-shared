@@ -20,6 +20,7 @@ return {
 	"equines",
 	"felines",
 	"flora",
+	"landmyth",
 	"monsters",
 	"mythic",
 	"objects",
