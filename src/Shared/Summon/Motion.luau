@@ -256,7 +256,7 @@ function Motion.pose(rig: any, clip: string, t: number, o: any?): { [string]: { 
 		local side = w.side or 1
 		local flapF = (g.flapFreq or 1.2) * spd
 		local flap = (g.flap or 0.25) * (if moving or g.fly then 1 else 0.25)
-		add(out, w.bone, 0, 0, 0, 0, 0, side * sin(t * flapF * TAU) * flap * (if w.flipper then 0.5 else 1))
+		add(out, w.bone, 0, 0, 0, 0, 0, side * sin(t * flapF * TAU) * flap * (if w.flipper then 0.5 elseif w.folded then 0.35 else 1))
 	end
 	-- tail: lagged sway down the chain
 	for i, b in rig.tail or {} do
