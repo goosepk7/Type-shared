@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fling","KFCAKB","kl",5,9,1,"B3E5FC","FFFFFF","target cartwheeling through the air","whoosh","Wheeeee! Thud.","silly"},
+	{"flint","BAAA4B","KTe",3,7,5,"374151","F97316","sharp dark stone striking steel with a spray of sparks","click","One spark. That is all it takes. Twelve tries.","ancient,sharp"},
+	{"flintlock","CKBAwI","kTe",4,3,3,"5A3A1E","B58A3A","old flared pistol with flint hammer","bang","One shot. Lots of smoke. Pirate approved.","pirate,ranged"},
+	{"flip","KMBOKK","kY",2,8,2,"FFE082","FFFFFF","acrobatic flip arc trail","whoosh","Ten points for style.","sport"},
 	{"flip flops","BMAAJK","ke",1,7,1,"2F6FD1","F2F2EE","rubber sole with Y strap","swish","Thwack!","clothing"},
 	{"flip out","BMCH0K","kfY",5,8,3,"B9773F","FF5A4A","a wooden table flipped end over end, you hop back","crash","Not angry. Just leaving. With the table.","meme,internet,melee,mobility"},
 	{"flippers","BBBOKF","B",1,6,3,"F1C40F","24262A","long rubber duck-foot fins","bonk","Swim fast. Walk funny.","sport,ocean"},
@@ -104,7 +108,6 @@ return {
 	{"fossa","AMCJAA","ZfT",4,7,3,"A06A3A","D8B48A","sleek cougar-like, long tail","hiss","Madagascar's top predator. Cat-ish.","mammal,predator,wild"},
 	{"fossegrim","ABCJNC","jcB",3,5,4,"1E40AF","FDE68A","fiddler sitting in a waterfall","violin","Plays violin in a waterfall. Never tunes.","mythical,music,aquatic"},
 	{"fossil","BEBCII","G",2,4,4,"C8B898","8A7A5A","rocky skeleton imprint","growl","Old bones with stories.","extinct,ancient"},
-	{"foul","KMBAJB","IXO",3,8,1,"DC2626","FACC15","referee hand holding up a bright red card, whistle blast","whistle","REF! Are you blind? Yes. Yes he is.","sport"},
 	{"fountain","EBCNII","FSI",2,1,6,"BDBDBD","4FC3F7","tiered stone basin spraying water","splash","Splash zone. Also healing zone.","structure,building"},
 	{"fountain of youth","EBCNII","FS",2,1,7,"F5F5F5","80DEEA","marble fountain with glowing water","thud","Sip once. Feel brand new.","magic,mythical"},
 	{"four leaf clover charm","BGAOJI","F",1,5,2,"2E8B57","D4A72C","clover pendant","chime","Luck: maxed.","magic,fantasy"},
@@ -400,7 +403,4 @@ return {
 	{"ghost bride","AICJNJ","jAZ",4,5,2,"F8FAFC","A5B4FC","floating veiled figure in white","wail","Wanders halls. Hums softly.","ghost,spooky"},
 	{"ghost car","DICKHE","DjZg",5,7,3,"B3E5FC","5E35B1","see-through glowing car, no driver","engine","Nobody is driving. Nobody.","mechanical,vehicle,land,spooky"},
 	{"ghost cat","AIAJAJ","dAZ",1,7,1,"E5E7EB","A5B4FC","see-through floating kitty","meow","Still knocks things off the table.","ghost,cute,spooky"},
-	{"ghost child","AIBJNJ","jdZ",2,6,1,"F8FAFC","C7D2FE","tiny translucent kid with a ball","giggle","Wants to play. Forever.","ghost,spooky"},
-	{"ghost costume kid","LIBJGA","jd",2,5,2,"F8FAFC","111827","kid in a bedsheet with eye holes","wail","Boo. Trips on the sheet.","cute,halloween,silly"},
-	{"ghost crab","ABBJRA","GZfT",2,8,5,"E8E0D0","C8C0B0","pale fast beach crab, stalk eyes","clack","Vanishes in the sand. Spooky.","crustacean,aquatic,armored"},
 }

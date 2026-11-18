@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lute","BMBFJI","jF",2,5,2,"C49A6C","8B5A2B","pear-shaped stringed instrument","strum","The bard is here. Run.","music,medieval"},
+	{"lutin","ALAJNA","jZb",1,8,1,"65A30D","FACC15","tiny prankster in pointed cap","giggle","Braids horse manes at night. Why? Nobody knows.","fairy,silly"},
+	{"luxury","KHCO0E","GFc",3,3,5,"D4AF37","7F1D4E","gold velvet chaise with grapes, a fan and a tiny dog","chime","Only the finest. Pinky out.","fancy,royal"},
+	{"lychee","IGAAKF","Fke",3,6,2,"D44A55","F7F2EA","small bumpy red shell, pearl inside","splat","Bumpy shell, pearl inside.","edible,fruit,sweet"},
 	{"lynx","ACCJAA","JZfT",4,7,3,"B39A7A","3A2E22","tufted ears, cheek ruff, stubby tail, big paws","hiss","Ear tufts are 90% of its personality.","mammal,predator,wild,arctic"},
 	{"lyre","BMBFJI","dF",2,5,2,"D4A72C","8B5A2B","small U-shaped harp","strum","Ancient bard's best friend.","music,ancient"},
 	{"lyrebird","AMBJDB","jdA",2,7,1,"8A6A4A","E8D8C0","lyre-shaped tail feathers","tweet","Mimics chainsaws perfectly. Showbiz.","bird,cute"},
@@ -337,10 +341,11 @@ return {
 	{"meteor shower","HAEEOB","KEkeP",8,8,5,"6D4C41","FFB300","many fiery streaks raining from a dark sky","roar","Make a wish. Then dodge.","space,explosive"},
 	{"meteor strike","HADAKB","KEkO",8,8,6,"5D4037","FF7043","single blazing rock slamming into a target ring","boom","Marked target. Incoming rock.","space,explosive"},
 	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
-	{"metronome","BMAOII","N",1,3,3,"5A3A1E","D4A72C","pyramid box with swinging arm","hum","Tick. Tock. Stay on beat.","music"},
+	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
 	{"miasma","FJDDOJ","SMNP",5,3,3,"5D7A3A","A3B86C","thick yellow-green rotten haze","hiss","Smells like a dungeon basement.","toxic"},
+	{"mic drop","BDCHtK","klf",6,7,6,"C8CCD6","FF3D7F","giant stage mic swung on its cord, then dropped","thud","Swing. Drop. Walk away.","music,melee"},
 	{"microbot swarm","OKBJFI","iQP",4,8,3,"CED4DE","969EAA","a cloud of silver six-legged micro-bots clinging to a target","buzz","Thousands of tiny legs. Shudder.","scifi,modern"},
 	{"microburst","GFDNOI","kIO",7,9,1,"78909C","B3E5FC","column of air and rain slamming down and spreading","boom","The sky stomps.","storm,air"},
 	{"microgreens","IGBOMI","WF",2,4,3,"7DBE3A","9ECE6A","tiny sprouted leaves","crunch","Tiny greens with big nutrition.","edible,vegetable,healthy"},
@@ -398,9 +403,4 @@ return {
 	{"minefield","CADLKI","EkP",7,1,3,"6B7B3A","7A4E2D","patch of buried mines","boom","Don't. Walk. Here.","explosive"},
 	{"miner","LECJNA","Ckf",5,4,6,"57534E","FACC15","headlamp helmet, pickaxe, dusty face","clank","Diggy diggy hole.","tools"},
 	{"mineral","BEBA4B","Tea",3,6,6,"34D399","A78BFA","chunky rock studded with green and purple crystals","clink","They are minerals. Not rocks. Minerals.","shiny,science"},
-	{"minestrone","IBBOGI","FS",3,4,3,"C8602B","7DBE3A","tomato soup with veg, pasta","slurp","Everything in the pantry, in soup.","edible,warm,healthy"},
-	{"minesweeper","DBDKHC","DkHgB",5,5,7,"607D8B","37474F","small grey warship with sweeping gear","splash","Clears the mines. And the enemies.","vehicle,aquatic"},
-	{"mini catapult","BMAMxI","ke",1,6,2,"C49A6C","C0392B","tiny stick catapult with spoon","thud","Small but mighty.","toy,siege"},
-	{"mini drones","OKBJLB","AQe",4,8,2,"4A4D52","C0392B","swarm of tiny buzzing quadcopters","hum","Bzzzzzzz. Pew pew.","scifi"},
-	{"mini marshmallows","IMAELB","UeP",2,7,1,"F7F4F0","F2A6C8","tiny white cylinders","pitter","A blizzard of fluffy.","edible,sweet,candy"},
 }

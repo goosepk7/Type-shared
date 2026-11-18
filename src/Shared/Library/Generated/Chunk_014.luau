@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ivy wall","EGDCMI","GWS",3,1,7,"1B5E20","9E9E9E","old stone wall smothered in ivy","rustle","Old wall. New leaves. Twice as tough.","plant"},
+	{"jab","KMBAKB","DfO",3,10,1,"FCA5A5","FFFFFF","quick straight glove punch with a tiny impact star","pow","Quick. Rude. Repeatable.","melee,sport"},
+	{"jabiru","AMDJDA","AfT",4,5,2,"F2F2F2","E8301E","huge stork with red collar","squawk","Giant stork. Red scarf.","bird,wetland"},
 	{"jabuticaba","NGCCMI","GWFkS",2,1,5,"6D4C41","4A148C","trunk covered in dark round fruit","rustle","Grows grapes on its trunk. Weird.","plant,tree,silly"},
 	{"jacamar","AMAJDB","dA",1,7,1,"2AA06A","C8601E","long needle beak","tweet","Catches butterflies mid-air.","bird,cute"},
 	{"jacaranda","NGDCMI","GdWkS",3,1,6,"6D4C41","9575CD","tree draped in purple blossom","rustle","Rains purple petals everywhere.","plant,tree"},
@@ -173,6 +176,7 @@ return {
 	{"kebab","IABHJI","KfT",3,5,4,"C8602B","7DBE3A","meat and peppers on a skewer","bonk","A spear of grilled meat and veg.","edible,silly"},
 	{"kedgeree","IMAELB","eNP",2,6,1,"F2D23A","F7F2E0","yellow rice, egg, fish","pitter","Breakfast rice with a twist.","edible,grain"},
 	{"keep","EEECII","GSe",5,1,10,"8D8D8D","5D5D5D","tall square stone tower, small windows","thud","The last place to run. And the safest.","structure,defense,ancient"},
+	{"keeper wall","KMCCnI","Gka",5,6,6,"38C7B4","F4F1E6","padded keeper gloves and a glowing goal net","thud","Nothing gets past. Then it goes back.","sport,shield,defense"},
 	{"kefir","IBBOKI","F",2,6,2,"F7F4EC","F2EAD5","bottle of fizzy yogurt drink","slurp","Yogurt that learned to fizz.","edible,drink,dairy"},
 	{"kek","KMBF6B","jPO",2,7,1,"84CC16","FDE047","wheezing laugh lines with a slapped knee","cackle","Kek. An ancient laugh from the old servers.","meme,internet"},
 	{"kelewele","IABAKK","KeP",3,7,2,"E8762B","D9A04A","spicy fried plantain cubes","sizzle","Fiery plantain bites.","edible,spicy,flammable"},
@@ -399,8 +403,4 @@ return {
 	{"laser grid","EDCCII","KST",5,2,4,"FF462E","40444E","two posts with three red laser beams between","hum","Mind the gap. All three of them.","scifi,modern,heist"},
 	{"laser pistol","CHBBwI","KTe",5,9,3,"F2F2EE","FF2D2D","compact sleek beam pistol","zap","Short burst, long reach.","scifi,ranged"},
 	{"laser pointer","CHABJI","jdce",1,10,1,"FF2D2D","24262A","tiny pen with red dot","zap","Cats fear and love this.","silly"},
-	{"laser rifle","CHCBwI","KTe",6,9,4,"F2F2EE","FF2D2D","sleek white rifle, red lens","zap","Straight lines are its whole thing.","scifi,ranged"},
-	{"laser sight","CHAOJI","e",1,1,1,"FF2D2D","24262A","tiny red dot emitter","zap","Never miss again.","scifi,ranged"},
-	{"laser tag gun","CHBBwI","de",1,9,2,"39FF14","24262A","chunky light gun with sensor","thwip","Pew! You're tagged!","toy,silly"},
-	{"laser tower","EHDBII","GKTe",6,1,7,"ECEFF1","FF1744","sleek white spire with red lens","hum","Pew. Continuous pew.","structure,defense,tower,future"},
 }

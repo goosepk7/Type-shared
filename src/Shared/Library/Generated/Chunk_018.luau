@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"neutron bomb","CDEGKI","iEP",9,2,2,"8E9196","3FC1D9","sleek silver bomb with glow","zap","Very quiet. Very bad.","scifi,explosive,danger"},
+	{"neutron star","HHEGKK","HLO",8,5,9,"E3F2FD","40C4FF","tiny blinding spinning star with twin beams","hum","A spoon of it weighs a mountain.","space,heavy"},
+	{"new kid","LMBJNA","dZ",2,6,3,"60A5FA","F8FAFC","backpack, nervous smile","ding","Nobody knows their powers. Yet.","school"},
+	{"new potatoes","IMAELB","eVP",2,7,1,"E8D0A0","F2E8C0","tiny round potatoes","pitter","Tiny round spuds.","edible"},
+	{"new year","KHDNII","EFPO",5,5,2,"FACC15","111827","glitter ball dropping, clock at midnight, fireworks","boom","Ten! Nine! Eight! Resolutions: broken by two.","holiday,party,explosive"},
 	{"newfoundland","AMDJAA","DQFfB",5,7,4,"1C1A18","3A3633","huge black shaggy dog, webbed feet","bark","Lifeguard dog. Drools as a hobby.","mammal,pet"},
 	{"news","KDCF6B","jdPO",3,8,1,"DC2626","F8FAFC","red BREAKING banner scrolling with a spinning globe","fanfare","This just in: you. Getting hit. More at ten.","meme"},
 	{"news reporter","LMCJNA","jd",3,6,3,"1E3A8A","F8FAFC","microphone, camera crew, smile","ding","Breaking news: it's you.","silly"},
@@ -398,9 +403,4 @@ return {
 	{"parking meter","OKBCmI","Gb",1,1,7,"8E9196","C9CED4","post with coin slot","clank","Time's up.","mechanical"},
 	{"parkour runner","LFCJNA","UDY",3,10,3,"111827","F97316","hoodie, mid-wall-flip","whoosh","Wall run, flip, gone.","sport"},
 	{"parmesan","IMBAKK","ceO",3,7,6,"F2E2B0","E8C88A","hard pale wedge, grainy","bonk","The king of cheeses. Hard as a rock.","edible,dairy,royal"},
-	{"parrot","AMBJDB","jdA",2,6,2,"2AB04A","E8301E","bright green-red bird, curved beak","squawk","Repeats everything you say. Everything.","bird,jungle,silly"},
-	{"parrotfish","ABBJEC","dPB",2,6,1,"3AB0A0","E86AA0","beaked colorful fish","splash","Poops sand. That's how beaches happen.","fish,aquatic"},
-	{"parsley","IGBOMI","WF",2,4,3,"3E8E2B","7DBE3A","frilly green sprig","crunch","The garnish nobody eats.","edible,vegetable,healthy,herb"},
-	{"parsnip","IEBAJK","FTe",3,6,4,"F2E8C8","C8B88A","pale tapered root","crunch","A ghost carrot.","edible,vegetable,healthy"},
-	{"part the sea","HBFCnI","GI",7,3,9,"0277BD","E1F5FE","two towering walls of water with a dry path","roar","Make way! Walk right through.","aquatic"},
 }

@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
+	{"rotisserie chicken","IGCOKK","F",2,5,3,"C8762B","F2C870","golden bird on spit","crunch","Spins until perfect.","edible,healthy"},
+	{"rotten egg","IJBDOJ","jSMP",3,3,2,"E8E0A0","8A9A3A","cracked grey egg, green fumes","whiff","Smell so bad it has its own weather.","edible,smelly,silly"},
+	{"rotten tomato","IJBDOJ","jMe",3,3,2,"8A3A2A","5E7A2B","squishy brown-red tomato, flies","whiff","For the worst performances only.","edible,smelly,silly"},
+	{"rottweiler","AMCJAA","GDQf",5,7,4,"1C1814","9A5A2A","muscular black dog, rust markings","bark","Big tough guardian. Secret cuddler.","mammal,pet"},
+	{"round","KMBF6B","FIO",3,6,1,"EF4444","F8FAFC","ring girl card reading ROUND 1 and a bell being struck","bell","Round one. FIGHT!","gaming,sport"},
+	{"round house","EECCII","GS",2,1,5,"C9A55A","8D6E63","round stone hut with a cone of thatch","thud","Round walls. No corners to hide in.","structure,defense,ancient"},
 	{"round shield","BKCIyI","Gk",3,5,6,"8B5A2B","5B6168","painted wooden round shield","clang","Planks, paint, and pure stubbornness.","armor,defense"},
 	{"roundabout","EMDNII","jS",2,1,7,"424242","7CB342","circular road with a grassy middle","thud","Round and round. Which exit?","structure,silly"},
 	{"roundhouse kick","KMCN5K","kf",6,8,2,"FF8A65","FFFFFF","spinning leg arc ring","whoosh","Spin and kick. Like a pro.","melee"},
@@ -396,11 +403,4 @@ return {
 	{"sewer","MJENII","ZSM",3,1,8,"455A64","7CB342","round brick tunnel with green water","thud","Smells awful. Hides everything.","structure,building,silly"},
 	{"sewing machine","OMBMII","Te",2,1,5,"24262A","D4A72C","antique machine with needle arm","rattle","Rat-a-tat-stitch.","art"},
 	{"sewing needle","BKAAJI","Te",1,9,1,"C9CED4","C0392B","thin needle with red thread","splat","Tiny lance, tinier eye.","art"},
-	{"sextant","BMBOJI","e",1,4,3,"B58A3A","BFE6F2","curved arc instrument","clink","Navigate by the stars.","explorer"},
-	{"sfogliatella","IMBLKI","dSc",2,3,3,"E8B860","F7F2EC","shell-shaped flaky pastry","chomp","Shell-shaped layers of crunch.","edible,sweet,dessert"},
-	{"shabu shabu","IBBOGI","FS",3,4,3,"F2E8C8","C8604A","pot of broth with thin slices","slurp","Swish swish. Dinner done.","edible,warm,healthy"},
-	{"shackles","BKBLKK","NO",1,1,6,"5B6168","9C4A1A","heavy iron cuffs on chain","thud","Clank. Going nowhere.","object"},
-	{"shad","ABAJEC","dPB",1,6,1,"B8C8D0","3A5A7A","silver herring-like","splash","Swims up rivers in spring.","fish,aquatic"},
-	{"shade","AIBJNJ","iZN",3,7,2,"1E1B4B","4338CA","flat inky silhouette","whisper","Your shadow's evil twin.","ghost,spooky"},
-	{"shade hounds","AICJAA","Dfh",7,8,3,"1A1626","8C7CFF","two wolves of living shadow, glowing eyes","howl","Your shadow has teeth. Two sets.","anime,shadow,summon"},
 }

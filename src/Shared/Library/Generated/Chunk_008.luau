@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"djinn","ALDJNJ","jAlhY",7,7,5,"2563EB","FDE047","smoke tail rising from a lamp, gold cuffs","whoosh","Grants three wishes. Reads the fine print.","mythical,magic"},
+	{"djinn king","ALEJNJ","klhY",8,6,6,"1E3A8A","FACC15","towering genie with jeweled turban","whoosh","Wishes granted. With terms and conditions.","magic,royal,boss"},
+	{"dna","BGBOCK","jWFV",4,5,3,"3B82F6","EF4444","twisting blue and red ladder spiral, rungs glowing","hum","You have your mother's eyes. And her right hook.","science"},
+	{"doberman","AMCJAA","DQf",5,8,4,"1A1414","A0582A","sleek black-tan dog, pointy ears","bark","Built for speed and side-eye.","mammal,pet"},
 	{"dobsonfly","AMBJFB","dAfP",2,6,1,"6A5A44","C8B88A","huge flying bug with giant mandibles","buzz","Big scary jaws. Mostly harmless.","insect"},
 	{"doctor","LMCJNA","GFe",3,4,5,"F8FAFC","0EA5E9","white coat, stethoscope, clipboard","beep","Says ahh. Gives a lollipop.","healer"},
 	{"dodder","NGBLMI","iWSHN",3,1,2,"FF9800","FFCC80","tangle of orange spaghetti strands","rustle","Orange noodles that steal your energy.","plant"},
@@ -190,7 +194,6 @@ return {
 	{"dung beetle","AMAJFA","GkfI",1,3,4,"1E1E24","3A3A8A","beetle rolling a ball","click","Navigates by the Milky Way. With poop.","insect,armored,ancient"},
 	{"dungeon","MIELII","GSNO",4,1,10,"424242","FF6F00","dark stone cells, chains, torches","clang","Welcome to your new room.","place,terrain,spooky"},
 	{"dungeon crawler","LMCJNA","cf",4,5,5,"57534E","F97316","torch, sword, backpack of loot","clang","Every room has loot. Or a trap.","explorer,gaming"},
-	{"dunk","KMCL3B","UkO",6,7,2,"F97316","FFFFFF","basketball slammed down through a hoop, backboard shaking","crowd","Posterised. Frame it.","sport"},
 	{"dunkleosteus","ABEJEC","DfTOB",8,8,8,"5A6A6A","C8C0A8","armored head, bone blade jaws","chomp","Armored fish with a guillotine mouth.","fish,aquatic,ocean,predator,extinct,ancient"},
 	{"dunnart","AMAJAA","Uf",1,6,2,"8A8A8E","C8C8C8","tiny mouse-like marsupial","chirp","Tiny but a fierce hunter.","mammal,marsupial"},
 	{"duo","LHCJNA","QFfh",5,6,5,"3B82F6","EF4444","two back-to-back heroes, one red one blue, fist bump","yay","Player two has entered the game.","gaming,team"},
@@ -377,6 +380,7 @@ return {
 	{"enchanter","LLCJNA","GjF",4,4,4,"A855F7","FDE68A","robe with glowing rune scrolls","chime","Your sword now glows. Upcharge.","magic"},
 	{"enchantment","FLBOKJ","Fa",3,5,3,"C77DFF","F7E1FF","glowing runes circling the caster","chime","Now with +1 sparkle.","magic"},
 	{"enchilada","IABAKK","Kc",3,7,2,"C8302B","F2E2B8","rolled tortillas under red sauce","sizzle","Rolled up and smothered in sauce.","edible,spicy,flammable"},
+	{"encore","KHCOKJ","QS",6,6,5,"FFD54F","E040FB","a spotlight lands on you; your hits play back as echo notes","music","Every hit gets a second performance.","music,buff"},
 	{"encyclopedia","BMCAJK","keO",3,4,5,"1F2F55","D4A72C","huge leather-bound book","tap","The heaviest of facts.","school"},
 	{"end","KIDFnI","iSIO",7,4,3,"0F172A","F8FAFC","black curtain dropping with white THE END letters","bell","Roll credits.","meme,gaming"},
 	{"end of the rainbow","MHCNII","dSc",3,1,6,"FFD54F","FF5252","cauldron of gold at a rainbow's end","rumble","Finally found it. So did the enemies.","place,terrain"},
@@ -399,8 +403,4 @@ return {
 	{"enoki","NGALMI","SV",1,1,2,"FFF8E1","F5F5F5","bunch of tiny long white mushrooms","poof","A tiny noodle army.","plant,fungus"},
 	{"entangle","FGCLMI","HNO",4,4,4,"388E3C","A5D6A7","vines bursting up and wrapping legs","rustle","Plants grab you. Rude plants.","plant"},
 	{"entelodont","AMDJAA","DkO",7,4,8,"6A4A3A","C89A7A","giant pig with huge jaws","roar","A pig the size of a cow. Grumpy.","mammal,extinct,ancient,heavy"},
-	{"entropy","FLCNOI","jiN",5,3,3,"6B5E7A","B8A8C8","crumbling, fading, glitching area","crackle","Everything falls apart eventually.","chaos"},
-	{"envelope","BMAAJK","Te",1,8,1,"F7F3E8","C0392B","sealed paper envelope","tap","Special delivery! Ouch.","office"},
-	{"envy","KJBAKB","ib",3,6,1,"76FF03","1B5E20","green-eyed wisp","hiss","I want that. Mine now.","silly"},
-	{"eoraptor","AMBJBA","DQfT",3,9,3,"8A7A5A","D8C8A8","early small dinosaur","screech","Dawn thief. One of the first dinos.","dinosaur,extinct,reptile,predator,ancient"},
 }

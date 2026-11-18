@@ -1011,6 +1011,6 @@ MAP = [
                    "brachytrachelopan, thunder lizard", DN),
     ("pteranodon", "pteranodon, pteranodons, quetzalcoatlus, hatzegopteryx, ornithocheirus, anhanguera, tupandactylus, tapejara, nyctosaurus", DN),
     ("pterodactyl", "pterodactyl, pterodactyls, pterodactyl hatchling, pterosaur, pterosaurs, rhamphorhynchus, dimorphodon, pterodaustro", DN),
-    ("plesiosaurus", "plesiosaurus, plesiosaur, elasmosaurus, nothosaurus, kronosaurus, liopleurodon, pliosaurus, placodus, nessie, loch ness", DN),
-    ("mosasaurus", "mosasaurus, mosasaur, tylosaurus, prognathodon, ichthyosaurus, ichthyosaur, shonisaurus, temnodontosaurus", DN),
+    ("plesiosaurus", "plesiosaurus, plesiosaur, elasmosaurus, nothosaurus, placodus, nessie, loch ness", DN),
+    ("mosasaurus", "mosasaurus, mosasaur, tylosaurus, prognathodon", DN),
 ]

@@ -13,7 +13,7 @@ MAP = [
     ("rhinoceros", "uintatherium, megacerops", NOTFOOD),
     ("diplodocus", "mokele-mbembe, mokele mbembe", NOTFOOD),
     ("frog", "frog prince, frog knight", NOTFOOD),
-    ("earthworm", "death worm, lava worm, ice worm, mongolian worm, sand worm hatchling, kaiju worm, space worm", NOTFOOD),
+    ("earthworm", "lava worm, ice worm", NOTFOOD),
     ("slug", "lava slug, space slug, sea bunny", NOTFOOD),
 ]
 MAP += [
@@ -21,3 +21,4 @@ MAP += [
     ("earth elemental", "sand elemental", NOTFOOD),
     ("treant", "nature elemental, bramble elemental, vine horror", NOTFOOD),
 ]
+MAP += [("slime", "!balloon monster, !sock monster", NOTFOOD)]

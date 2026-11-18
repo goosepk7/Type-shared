@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"plunger","BMBHJK","fHO",1,6,3,"C0392B","7A4E2D","rubber cup on wooden stick","clank","Shloop. Stuck.","silly,bathroom"},
+	{"plunger arrow","CMAAJI","deO",1,8,2,"C0392B","24262A","arrow with a toilet plunger tip","twang","Thwock. Stuck.","medieval,ranged,silly"},
+	{"pluot","IGBAKF","Fke",3,6,2,"8A2A4E","E8762B","speckled plum-apricot","splat","Half plum, half apricot, all juice.","edible,fruit,sweet"},
+	{"plus","KHBOKJ","WFV",3,5,2,"22C55E","FFFFFF","chunky green plus sign with a +1 popping out","ding","One more. And one more. And one more.","school,support"},
+	{"pluto","MCDGKJ","Jke",5,4,7,"D7CCC8","A1887F","small icy sphere with a heart patch","rumble","Still a planet in our hearts.","space,cute"},
+	{"po boy","IMBHJI","Ff",3,5,4,"D9A04A","7DBE3A","crusty long sandwich","bonk","A long crusty sandwich from New Orleans.","edible,silly"},
 	{"poached egg","IMBLGG","USN",2,3,3,"F7F2E8","F2B81A","soft white dome, runny yolk","wobble","Wobbly, delicate, delightful.","edible,wobbly,breakfast"},
 	{"poblano","IABAKK","KeP",3,7,2,"1E4A1E","3E6B2A","wide dark green pod","sizzle","Mild, dark, and great stuffed.","edible,spicy,flammable,pepper"},
 	{"pocket","BMAL2I","bhY",2,2,3,"3B5B8C","F5E6CC","denim pocket spilling lint, coins, a frog and a key","jingle","Contains lint, a frog and your lunch money.","clothing,silly"},
@@ -179,6 +185,7 @@ return {
 	{"power bank","BDAO1I","F",1,5,3,"F2F2EE","8E9196","small battery brick","beep","Recharge. Keep going.","tech"},
 	{"power cape","KFCONJ","Ak",4,7,3,"D83A3A","F0C84A","a billowing cape floats you along, then snaps","whoosh","No capes? Hard disagree.","hero,movie,cape"},
 	{"power cell","ODBG1I","FL",3,4,4,"7DF9FF","8E9196","glowing capsule battery","hum","Fuel for every gadget.","scifi,electric"},
+	{"power chord","CDCAJI","eLV",6,8,6,"7C4DFF","64F0FF","a crystal storm lute; one strum fans three lightning bolts","zap","One strum. Three bolts. Encore pending.","music,rock,lightning"},
 	{"power fist","CKCHJK","kfO",7,4,7,"2C3539","E67E22","giant piston-powered fist","bonk","Pow. Pow. Kapow.","scifi,mechanical"},
 	{"power nap","KHBOKJ","F",1,2,3,"9FA8DA","FFFFFF","caster snoozing on a cloud pillow","snore","Five minutes. Fully recharged.","support,silly"},
 	{"power plant","EDECII","GSL",4,1,8,"B0BEC5","FFEB3B","big building, cooling towers, sparking wires","hum","Plugs into everything. Zaps everything.","structure,building,mechanical"},
@@ -396,11 +403,4 @@ return {
 	{"radicchio","IGBAKF","Fke",3,5,3,"8A1E3E","F7F2EC","round red-white leafy head","thud","A purple lettuce bomb.","edible,vegetable,healthy"},
 	{"radio","BDBFKI","jdO",2,3,4,"8E9196","C9CED4","chunky box with speakers and handle","blare","Turn it UP.","tech,music,loud"},
 	{"radio tower","EDDMII","GjSeL",4,1,5,"E53935","F5F5F5","tall lattice mast, red and white bands","static","Broadcasting static at your enemies.","structure,defense,tower"},
-	{"radish","IEBAJK","Ke",3,6,4,"D23A4A","F7F2F0","round red root, white tail","crunch","Small, red, and a little spicy.","edible,vegetable,healthy"},
-	{"raft","DBBKHC","DkgB",2,4,4,"FFB300","8D6E63","logs lashed with rope, little sail","splash","Built from twelve logs and hope.","vehicle,aquatic,silly"},
-	{"rag doll","BMBJNA","jd",1,3,2,"F3E6C8","C0392B","floppy cloth doll, button eyes","squeak","Floppy, sweet, slightly unsettling.","toy"},
-	{"ragdoll cat","AMBJAA","dfT",2,7,2,"F0EBE3","8C7A6B","floppy fluffy body, blue eyes, dark points","meow","Goes limp when held. Tactical flop.","mammal,pet,cute"},
-	{"rage","KACOKI","KDk",6,7,3,"D50000","FF6D00","red steaming aura, cartoon anger vein","roar","Steam from the ears. Run.","rage"},
-	{"rage quitter","LACJNA","Ek",4,6,3,"DC2626","111827","furious figure throwing a controller","crash","Throws the controller. Through the screen.","meme,gaming,explosive"},
-	{"ragnarok","HDFNOI","EkLP",10,5,8,"3E2723","FFD740","stormy gold-black sky, giant lightning, falling fire","boom","The ultimate grand finale.","mythical,danger"},
 }
