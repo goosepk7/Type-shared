@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"jack russell","AMBJAA","UdQf",2,8,2,"F2EEE6","8A5A2A","small white dog with tan patches, springy","yip","Bounces off walls. Literally.","mammal,pet,cute"},
 	{"jack the giant slayer","LMBJNA","cf",3,7,3,"15803D","78350F","kid with magic beans and a tiny sword","ding","Climbed the beanstalk. Regrets nothing.","folklore"},
 	{"jack-in-the-box monster","ALBLII","UEO",3,6,4,"DC2626","FACC15","spring-loaded clown head in a crank box","boing","Pop goes your sanity.","spooky,silly"},
 	{"jackal","AMCJAA","DQfbh",3,7,4,"C08A50","2E2A26","slender golden canine, dark saddle","howl","Scavenger extraordinaire.","mammal,predator,wild"},
@@ -402,5 +403,4 @@ return {
 	{"last stand","KADOKI","GDk",7,5,6,"D32F2F","FFD54F","blazing red-gold aura at low health","horn","Not going down. Not like this.","rage"},
 	{"lathe","JKCL1I","jV",4,1,6,"2E8B57","8E9196","spinning workshop machine","clank","Round and round it shapes.","tool"},
 	{"latke","IMBAKK","Uke",3,7,2,"C8803A","F2D07A","crispy shredded potato disc","whoosh","Crispy potato frisbees.","edible"},
-	{"latte","IABOKI","DF",3,9,2,"C8A070","F2E8D8","tall cup, foam art heart","fizz","Milk, coffee, and art.","edible,drink"},
 }

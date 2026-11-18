@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"royal food taster","LMCJNA","dM",3,4,3,"7C3AED","F8FAFC","nervous figure holding a spoon","gulp","Tastes everything first. Brave job.","royal,silly"},
+	{"royal guard","LKCJNA","GfO",5,3,7,"DC2626","111827","tall bearskin hat, red coat, spear","clang","Never smiles. Never blinks. Never moves.","royal,warrior"},
 	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
 	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
 	{"rubber","BMBI3G","GUa",2,6,6,"1F2937","F472B6","stretchy black sheet snapping back like a trampoline","boing","I am rubber. You are glue.","toy,bouncy"},
@@ -364,6 +366,7 @@ return {
 	{"sensei","LFCJNA","Fkf",6,6,5,"111827","DC2626","grey beard, black gi, calm stance","whoosh","Wax on. Defeat off.","martial"},
 	{"sentence","KMCBCB","STN",3,6,2,"1F2937","FFFFFF","long line of words ending in a heavy full stop","tap","Ends with a period. So do you.","school"},
 	{"sentinel","LHDMYI","GQeO",6,2,8,"94A3B8","FCD34D","tall still guardian with a spear and one glowing eye slit","hum","Has not blinked since the last update.","defense,ancient"},
+	{"sentinel orb","OHBJKE","GRh",1,3,7,"46DCFF","B0BAC8","a ringed sentry orb circling you that zaps shots away","ping","Your personal bullet bouncer.","scifi,robot,defense"},
 	{"sentry","OKCMWI","GQe",5,1,6,"6B7280","EF4444","tripod gun post with a red scanning eye and beeping light","beep","Halt. Who goes there? Never mind. Pew.","defense,mechanical,robot"},
 	{"sentry tower","EEDMII","GSeO",4,1,7,"616161","FFB300","tall tower with a sweeping searchlight","thud","Spots you. Points. Shoots.","structure,defense,tower"},
 	{"seraph","AHDJDB","KAFO",7,6,6,"FDE047","FB923C","six blazing wings around a radiant core","chime","All wings. All light. All the time.","holy,fire"},
@@ -400,7 +403,4 @@ return {
 	{"shadow boxing","KIBJVA","df",3,8,2,"1A0033","FF5252","shadow fighter punching on its own","pow","Your shadow fights for you.","spooky,melee"},
 	{"shadow breath","FICFOB","iZ",5,6,1,"1A0033","7C4DFF","cone of black smoke","hiss","Exhale the night.","spooky"},
 	{"shadow cat","AIBJAA","jZY",2,9,2,"0F0F23","A78BFA","black cat with starry inside","meow","Stares at empty corners. Knows things.","spooky,cute"},
-	{"shadow chains","FICLII","HO",5,5,4,"1A0033","7C4DFF","smoky black chains wrapping target","clank","Bound by darkness. Very dramatic.","spooky"},
-	{"shadow claw","FICHJB","ifT",5,9,1,"1A0033","AA00FF","three glowing violet claw slashes","shrk","Scratch scratch scratch.","spooky,sharp"},
-	{"shadow cloak","KIBOKJ","GZ",2,6,3,"1A1027","5E35B1","swirling smoky shadow around caster","hush","Fashionably invisible.","spooky,stealth"},
 }

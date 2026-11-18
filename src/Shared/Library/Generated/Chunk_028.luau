@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vest","BMBONI","G",1,6,2,"1F2F55","D4A72C","buttoned waistcoat","swish","Dapper and ready.","clothing"},
+	{"veteran","LMCJNA","Ge",5,4,6,"4D7C0F","CA8A04","medals, eyepatch, grizzled beard","ding","Seen it all. Not impressed.","military"},
+	{"veterinarian","LGCJNA","Fh",3,5,4,"F8FAFC","22C55E","scrubs with paw prints, treat pouch","chime","Brings every animal friend in town.","healer"},
 	{"vibe check","KHBFOB","jO",3,8,1,"CE93D8","FFF59D","pastel ring checking everyone","ding","Vibe check! You failed.","meme"},
 	{"vibration","FEBFOB","O",3,7,2,"9C8B7A","E0D4C4","trembling ground rings","buzz","Bzzzzzzzz.","silly"},
 	{"vibro blade","CKCHrK","fTO",6,8,4,"DDE3E8","3FC1D9","humming buzzing blade","shing","It hums. Then it cuts.","scifi,sharp"},
@@ -111,6 +114,7 @@ return {
 	{"wakizashi","CKBHrK","fT",4,8,3,"C9CED4","1F2F55","short curved blade, wrapped hilt","shing","Katana's little sibling. Just as sharp.","medieval,sharp"},
 	{"walk","KMBOBA","GQN",2,3,3,"60A5FA","F8FAFC","pair of trainers plodding along with nobody in them","tap","Running is overrated. So is arriving on time.","silly"},
 	{"walker","DKEKFA","keg",6,3,8,"78909C","455A64","boxy cockpit on two tall jointed legs","stomp","It walks. Slowly. Menacingly.","mechanical,vehicle,land,robot"},
+	{"walker tank","OKCJWA","Eeh",5,3,5,"B6A478","FFDA96","a tan two-legged mini tank that marches forward shelling","clank","All the tank. Half the wheels. None, actually.","scifi,mech,vehicle"},
 	{"walkie talkie","BMAOKI","h",1,6,3,"24262A","F1C40F","chunky radio with antenna","thud","Over. Send backup. Over.","tech"},
 	{"walking house","DIDKBA","DgO",5,3,7,"6D4C41","FFB300","crooked hut on giant bird legs","whoosh","Knock knock. It walks away.","spooky,silly"},
 	{"wall","EEDCII","GS",3,1,8,"9E9E9E","757575","flat-topped wall of fitted blocks","thud","It is a wall. It does wall things. Well.","structure,defense"},
@@ -399,8 +403,4 @@ return {
 	{"windmill arms","KMBN5K","jkf",2,7,1,"FFCC80","FFFFFF","windmilling arms with motion blur","whap","Arms everywhere. Some hit.","silly"},
 	{"window","BMCCnI","Ga",1,1,2,"BFE6F2","8B5A2B","framed glass window","thud","See-through, shatter-prone.","household"},
 	{"window box","NGBOMI","FS",1,1,3,"D84315","F06292","wooden box spilling with flowers","rustle","Defends windows. Prettily.","plant,houseplant"},
-	{"window washer","LBCJNA","IN",3,4,3,"0EA5E9","F8FAFC","squeegee, bucket, harness","squeak","Squeaky clean. Squeaky slippery.","silly"},
-	{"windpump","EFDMIK","GSI",3,1,6,"B0BEC5","E53935","metal tower with a spinning fan wheel","creak","Pumps water. Spins menacingly.","structure,farm"},
-	{"windstorm","GFDFOB","kIP",6,7,3,"90A4AE","ECEFF1","long rushing gale with flying leaves","howl","Hold on to something. Anything.","storm,air"},
-	{"wing","BFCODB","AklI",3,8,3,"F5F5F5","CFE3F2","pair of white feathered wings flapping, no body","flutter","Just wings. Body sold separately.","flying,body"},
 }
