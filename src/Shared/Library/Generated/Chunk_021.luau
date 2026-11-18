@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pyrosome","AHCJGJ","SOB",2,2,1,"E8D8F8","8AE8F0","glowing hollow tube colony","squelch","A glowing sea pickle. Yes really.","aquatic,ocean,venomous"},
+	{"python","AMDJCD","fHO",6,4,6,"6A5A3A","D8C08A","huge blotched coiled snake","hiss","Hugs too hard. Way too hard.","reptile"},
+	{"qianzhousaurus","AMDJBA","DkfT",7,6,7,"8A6A4A","D8B07A","long-snouted tyrannosaur","roar","Long nose. Tells no lies.","dinosaur,extinct,reptile,predator"},
 	{"qilin","AHDKAA","KDFg",6,8,6,"0F766E","FCD34D","scaled deer, single horn, flame wisps","chime","Walks on grass without bending it. Show-off.","mythical,mount,holy,ancient"},
 	{"quagga","AMDJAA","Dk",5,8,5,"A8784A","F2E8D8","half-striped zebra","neigh","A zebra that ran out of stripes.","mammal,extinct"},
 	{"quail","AMAJDA","df",1,6,2,"8A6A4A","D8C4A8","tiny round bird, head plume","cluck","Round bird with a feather antenna.","bird,farm"},
@@ -185,6 +188,7 @@ return {
 	{"red deer","AMCJAA","Dk",4,8,4,"A0582E","E2C49A","reddish deer, many-pointed antlers","bleat","Roars during autumn. Very dramatic.","mammal,wild"},
 	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
 	{"red dwarf","MACGKJ","Ke",5,4,7,"E53935","FFAB91","small glowing red star","rumble","Tiny star, big temper.","space"},
+	{"red envelope volley","BMAA2B","QeV",3,6,3,"D61E2C","FFC840","red envelopes that home in and burst in gold coins","chime","Lucky for you. Not for them.","holiday,new year,homing"},
 	{"red fox","AMBJAA","jfb",3,7,2,"D2611E","F2F0EC","orange fox, white chest, black socks","yip","Sly, quick, and very orange.","mammal,wild"},
 	{"red giant","MAFGKJ","KWkS",9,1,9,"E64A19","FFAB91","enormous swollen orange-red sphere","rumble","Big, red, and getting bigger.","space"},
 	{"red hot poker","NACNMI","KdFS",3,1,2,"FF5722","FFEB3B","flame-coloured torch spikes","rustle","Looks hot. Is just a flower.","plant,flower"},
@@ -399,8 +403,4 @@ return {
 	{"rock candy","IEAAKK","TeO",3,7,6,"7AC8E8","F2F7FA","crystal cluster on a stick","bonk","A crystal you can lick.","edible,candy"},
 	{"rock monster","AEDJGF","GDk",6,3,8,"78716C","A8A29E","lumpy boulder with stubby arms","rumble","Rocks and rolls.","heavy"},
 	{"rock rose","NGBNMI","dFS",1,1,3,"F48FB1","FFEB3B","papery pink blooms on scrubby bush","rustle","Blooms for one day only. Make it count.","plant,flower"},
-	{"rock shield","FECIKI","G",2,2,9,"8D6E63","BCAAA4","rocks orbiting into a dome","rumble","A shield made of floor.","heavy,defence"},
-	{"rock solid","KECOKI","G",1,2,9,"8D6E63","BCAAA4","stony grey glow","thunk","Unshakeable.","defence,heavy"},
-	{"rock star","LDCJNA","jkO",5,6,4,"111827","DC2626","leather jacket, electric guitar, wild hair","guitar","Smashes the guitar. And you.","music"},
-	{"rock throw","FECAKB","keO",5,6,6,"8D6E63","BCAAA4","chunk of earth torn up and hurled","thud","Yeet, but geology.","heavy"},
 }

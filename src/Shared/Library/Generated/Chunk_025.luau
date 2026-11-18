@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"splash zone","FBCNOI","dN",2,4,2,"4FC3F7","E1F5FE","area of constant bouncing splashes","splash","You will get wet. Accept it.","aquatic,silly"},
+	{"splat","KMBAKB","dN",2,8,1,"AED581","FFFFFF","messy paint-like splat burst","splat","Splat. Messy and proud.","silly"},
+	{"split","KLCOKI","V",4,6,2,"80DEEA","FFFFFF","caster dividing into two","pop","Now there are two of me. Uh oh.","magic"},
+	{"sploosh","KBCF6F","I",3,7,1,"29B6F6","FFFFFF","cartoony splash crown","splash","Kersploosh! So wet.","aquatic,silly"},
+	{"spoiled milk","IJBDOJ","jMP",3,3,2,"E8E8C8","C8C88A","bloated carton, wavy stink lines","whiff","Expired three weeks ago. Weaponized today.","edible,smelly,silly"},
 	{"sponge","BBALKI","iN",1,4,1,"F1C40F","2E8B57","soft yellow block with green scrub","splash","Soaks up everything. Even magic.","bathroom,household"},
 	{"sponge cake","IMBLGG","USN",2,3,3,"F2D88A","F7EAC0","airy yellow layered cake","wobble","Soaks up everything. Including hits.","edible,sweet"},
 	{"spoon","BMAHJK","df",1,7,2,"C9CED4","C49A6C","round shallow spoon","clang","Fear the spoon.","kitchen,household"},
@@ -398,9 +403,4 @@ return {
 	{"sunbittern","AMCJDA","jAfT",3,5,2,"8A6A4A","E8901E","wings flash sunset eyes","squawk","Flashes two giant sunset eyes.","bird,wetland"},
 	{"sunburn","FABAKB","KN",2,6,1,"FF8A80","FFE0B2","pinkish glow on target","sizzle","Should've worn sunscreen.","fire,silly"},
 	{"sunburst","FHDGKI","KEO",7,8,1,"FFC400","FFFFFF","golden starburst exploding outward","boom","A little piece of the sun, popped.","holy,fire,explosive"},
-	{"sunburst flower","NABNMI","KSO",4,1,2,"FFC107","FF5722","blazing gold flower like a little sun","chime","Blinding bloom. Look away.","plant,magic,mythical"},
-	{"sunday roast","IGCOKI","F",2,5,3,"C8762B","7DBE3A","plate of roast, potatoes, veg","crunch","The big weekly feast.","edible,healthy"},
-	{"sundew","NGBLMI","ScMN",3,1,3,"F44336","AED581","sticky tentacles with dew droplets","chomp","Sparkles. Sticks. Never lets go.","plant,carnivorous"},
-	{"sundial","EHBCII","GSN",2,1,8,"BCAAA4","FFD54F","stone pillar with a bronze dial","thud","Tells time. Only when sunny.","structure,ancient"},
-	{"sundog","GHBGKE","VO",3,5,2,"FFF3C4","FF8A80","twin glowing spots beside the sun","chime","Two extra suns. Very confusing.","space"},
 }

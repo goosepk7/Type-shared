@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"napkin","BMAIDB","GjA",1,5,1,"FFFFFF","F87171","folded white napkin flapping like a swan","flutter","Folded into a swan. The swan is angry.","household,kitchen"},
+	{"napoleon","IMCIII","Ga",3,3,6,"F2E8D8","D9A04A","stacked pastry layers, icing","thud","A thousand layers of crunch.","edible"},
+	{"narwhal","ACDJEC","UDTB",6,8,4,"8A9094","E2E6EA","spotted grey whale, long spiral tusk","click","Unicorn of the sea. Tusk is a tooth!","mammal,aquatic,ocean,arctic"},
 	{"narwhal unicorn","ABDJEC","DTB",5,7,5,"94A3B8","F0ABFC","whale with rainbow spiral horn","splash","A unicorn that took up swimming.","aquatic,silly"},
 	{"nasi goreng","IAAELB","KeP",2,6,1,"C8762B","F2D23A","fried rice with egg on top","pitter","Indonesian fried rice with a sunny egg.","edible,grain"},
 	{"nasi lemak","IGBOKI","F",2,5,3,"F7F4EC","D8302B","coconut rice, egg, sambal, peanuts","crunch","A whole breakfast on a leaf.","edible,healthy"},
@@ -400,7 +403,4 @@ return {
 	{"panacea","KHCOKJ","F",1,5,4,"FFF59D","69F0AE","rainbow glowing healing sparkle","chime","Fixes everything. Everything.","support,holy"},
 	{"pancake","IMBAKK","Uke",3,7,2,"E8B860","C8762B","round fluffy disc, butter pat","whoosh","A fluffy frisbee with syrup.","edible,breakfast"},
 	{"pancake shield","IMCIII","Ga",3,3,6,"E8B860","C8762B","round fluffy pancake on arm","thud","Syrup-coated deflection.","edible"},
-	{"pancake tornado","IMDNOK","kleP",5,7,2,"E8B860","B5651D","spinning stack of flying pancakes","whoosh","Breakfast, but spinning.","edible,silly"},
-	{"pancake tortoise","AMBJUA","GN",2,2,5,"8A6A3A","C8A06A","flat flexible shell","hiss","Hides in cracks like a pancake.","reptile,armored"},
-	{"pancit","IMBLGI","HN",2,3,3,"E8C070","7DBE3A","stir-fried thin noodles","gloop","Long noodles for a long life.","edible,sticky"},
 }

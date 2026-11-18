@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"microphone","BDAFKI","jO",1,6,2,"C9CED4","24262A","round-head microphone on cable","feedback","Mic drop. Literally.","music,loud"},
+	{"microraptor","AMBJBB","DAQfT",3,9,3,"2A2A3A","6A8AE8","four-winged glider dinosaur","screech","Four wings. Shiny black feathers.","dinosaur,extinct,reptile,predator"},
+	{"microscope","BMBO1I","e",1,1,4,"F2F2EE","24262A","lab scope with eyepiece","bubble","Sees tiny weaknesses.","science"},
 	{"microwave","BACMII","KO",3,1,5,"F2F2EE","24262A","box with spinning plate inside","clang","Ding! Your enemy is ready.","kitchen,household"},
 	{"microwave emitter","OACB1I","Ke",5,6,5,"8E9196","F2F2EE","dish projector, warning stripes","hum","Ding! Enemy's done.","scifi"},
 	{"microwave popcorn","IMBGKF","EVP",4,6,1,"F7F2EC","FFF4D6","puffed paper bag","pop","Pop pop pop pop pop.","edible,explosive,snack"},
@@ -400,7 +403,4 @@ return {
 	{"nanobot swarm","OKBJLJ","iWFVP",4,8,2,"94A3B8","22D3EE","shimmering cloud of tiny silver specks","buzz","Millions of tiny robots. Zero personal space.","robot,swarm"},
 	{"nanotyrannus","AMDJBA","DkfT",6,6,7,"6A5A3A","C8A07A","slim teen tyrannosaur","roar","Maybe a teenage T rex. Debated.","dinosaur,extinct,reptile,predator"},
 	{"napalm","CADNOF","KSP",8,3,2,"FF6A1A","24262A","sticky burning gel","boom","Everything sticks. Everything burns.","explosive,flammable"},
-	{"napkin","BMAIDB","GjA",1,5,1,"FFFFFF","F87171","folded white napkin flapping like a swan","flutter","Folded into a swan. The swan is angry.","household,kitchen"},
-	{"napoleon","IMCIII","Ga",3,3,6,"F2E8D8","D9A04A","stacked pastry layers, icing","thud","A thousand layers of crunch.","edible"},
-	{"narwhal","ACDJEC","UDTB",6,8,4,"8A9094","E2E6EA","spotted grey whale, long spiral tusk","click","Unicorn of the sea. Tusk is a tooth!","mammal,aquatic,ocean,arctic"},
 }

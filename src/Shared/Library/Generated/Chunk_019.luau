@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pancake tornado","IMDNOK","kleP",5,7,2,"E8B860","B5651D","spinning stack of flying pancakes","whoosh","Breakfast, but spinning.","edible,silly"},
+	{"pancake tortoise","AMBJUA","GN",2,2,5,"8A6A3A","C8A06A","flat flexible shell","hiss","Hides in cracks like a pancake.","reptile,armored"},
+	{"pancit","IMBLGI","HN",2,3,3,"E8C070","7DBE3A","stir-fried thin noodles","gloop","Long noodles for a long life.","edible,sticky"},
 	{"panda","AMDJAA","Udkf",7,5,7,"F7F7F5","1A1A1A","round black and white bear, eye patches","roar","Eats bamboo. Rolls downhill. Wins.","mammal,predator,wild,cute"},
 	{"panda cub","AMBJAA","dkf",1,5,7,"F7F7F5","1A1A1A","tiny round panda, clumsy pose","roar","Sneezes. Internet melts.","mammal,predator,wild,cute"},
 	{"panda monk","AMCJAA","Gkf",5,4,7,"F8FAFC","111827","round panda in monk robes","thud","Belly bounces your attacks.","martial,cute"},
@@ -400,7 +403,4 @@ return {
 	{"planet eater","AIFJGJ","iH",9,1,10,"1E1B4B","DC2626","moon-sized creature with a gaping mouth","rumble","Hungry for worlds. Dessert: moons.","alien,cosmic,boss,danger"},
 	{"planet laser","OHFB1I","ETe",10,3,9,"8E9196","FF2D2D","colossal dish focusing green-red beam","hum","Overkill as a lifestyle.","scifi,space,danger"},
 	{"planetarium","ELDNII","jS",3,1,7,"1A237E","FFD54F","dome full of projected stars","thud","Turns out the lights. Confusing.","structure,building,space"},
-	{"planetary alignment","HLFNOI","DWO",8,2,6,"311B92","FFD54F","row of glowing planets above the area","choir","Once every thousand years. Right now.","space,magic"},
-	{"plank","BMCCJK","Gk",2,4,4,"8B5A2B","D2B48C","long flat wooden board","clink","Swing it. Stack it. Walk it.","hardware"},
-	{"plankton","ABADLJ","dSPB",1,6,1,"8AD0A8","E8F8E8","swirling cloud of tiny drifters","splash","Small. Everywhere. Doesn't care.","fish,aquatic"},
 }

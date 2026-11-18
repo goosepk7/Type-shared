@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"undertaker","LICJNA","Gh",4,3,6,"111827","F8FAFC","tall black hat, long coat","ding","Measured you already. Just in case.","spooky"},
+	{"undertow","FBCLII","HN",5,5,3,"01579B","4FC3F7","hidden swirling pull under the surface","swoosh","Feels calm. Isn't.","aquatic"},
+	{"underwater base","EBEIII","GSh",4,1,8,"26C6DA","37474F","glass domes on the sea floor","hum","Breathe easy. Surrounded by sharks.","structure,future,aquatic"},
+	{"underworld","MIFNII","KiSh",6,1,9,"212121","B71C1C","dark cavern realm, rivers of fire","rumble","Nobody visits on purpose.","spooky,mythical"},
+	{"undine","ABCJNC","FHB",5,6,4,"0EA5E9","A5F3FC","water spirit maiden with flowing body","splash","A splash with a personality.","elemental,aquatic"},
 	{"unenlagia","AMCJBA","DQfT",5,9,3,"8A7A5A","D8C8A8","flapping-arm raptor","screech","Flaps arms. Can't fly. Tries.","dinosaur,extinct,reptile,predator"},
 	{"unicorn","AHDKAA","DFTg",6,8,6,"FDF4FF","F0ABFC","white horse, spiral horn, rainbow mane","neigh","Pointy, sparkly, emotionally unavailable.","mythical,mount,holy,cute"},
 	{"unicorn cake","ILCLKI","dSc",2,3,3,"F7F4F0","F2A6C8","white cake with gold horn","chomp","A cake with a horn. Magical.","edible,sweet,mythical"},
@@ -398,9 +403,4 @@ return {
 	{"whack a mole","AECLtG","Ck",4,7,4,"8B5A2B","FF4F6E","mole holes round you and a cartoon mallet","bonk","Bonk! Missed. Bonk!","game,arcade,area"},
 	{"whack-a-mole mallet","BMCHtI","kfO",3,7,3,"C0392B","F1C40F","padded arcade mallet","thud","Bonk! Bonk! Bonk!","game,silly"},
 	{"whale","ABFJEC","kIB",8,3,9,"3E5A78","C8D6E2","enormous streamlined body, fluke tail, spout","whalesong","Burps rainbows from its blowhole. Allegedly.","mammal,aquatic,ocean,heavy"},
-	{"whale shark","ABFJEC","DHB",8,3,9,"3A5470","F2F2EE","colossal shark, white polka-dot back","chomp","Biggest fish. Eats only tiny stuff.","fish,aquatic,ocean,predator,gentle"},
-	{"wham","KMCAKB","k",5,9,1,"2979FF","FFEB3B","comic jagged impact bubble","wham","Wham! Comic book justice.","silly"},
-	{"what","KLBF6B","jIO",2,6,1,"FACC15","111827","shock ring of interrobangs and tilted heads","boing","WHAT? WHAT? ...what?","silly,meme"},
-	{"wheat","NGCNMI","ZSN",1,1,2,"E6C27A","FFD54F","golden swaying grain heads","rustle","Amber waves of distraction.","plant"},
-	{"wheel","BMBA3F","UDk",3,8,5,"1F2937","9CA3AF","runaway rubber wheel with a silver hubcap, rolling fast","rumble","Reinvented. Now with more rolling over you.","vehicle,mechanical"},
 }

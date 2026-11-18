@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"discus","BMBA3F","Uke",3,8,6,"C9CED4","24262A","flat heavy spinning disc","bonk","Ancient frisbee for serious people.","sport,ancient"},
 	{"discus fish","ABAJEC","UdB",1,6,1,"E87A2A","3AA0C8","flat round disc fish","splash","A frisbee that swims.","fish,aquatic"},
 	{"disease","KJCDOJ","iMNP",4,4,1,"A3B18A","6B8E23","sickly green cloud with a thermometer and tissues","cough","Day off school. Worth it? No.","toxic,science"},
 	{"disguise","KLBOKI","jZ",2,4,2,"8D6E63","FFE0B2","fake mustache and hat poof","poof","Nobody will ever guess.","stealth,silly"},
@@ -21,6 +22,7 @@ return {
 	{"diving bell spider","AJBJQA","fMNB",2,6,2,"6A6A6E","B8C8D8","spider in an air bubble","skitter","Lives underwater in a bubble house.","arachnid,spooky,venomous"},
 	{"diving suit","BBCONI","GB",2,2,8,"B58A3A","B8693D","brass bubble helmet, heavy boots","clank","Ocean floor fashion.","ocean"},
 	{"divinity","IHBLKI","dSc",2,3,3,"F7F7F2","F2E8D8","white fluffy nut candy","chomp","A heavenly fluffy candy.","edible,sweet,holy"},
+	{"diya ward","BHCN2I","GS",4,2,4,"C66636","FFC440","ring of little clay oil lamps glowing round you","chime","Light wins. Especially eight of them.","holiday,light,ward"},
 	{"dizzy","KLBFOB","j",2,6,1,"FFEB3B","7C4DFF","spinning stars and birdies ring","wub","Everything spins. Wheee.","silly"},
 	{"dizzy birds","AMAAKI","jO",2,7,1,"5AB0F0","FFB300","little cartoon birds that circle a dazed head","tweet","Tweet tweet. Where am I.","cartoon,silly,control"},
 	{"dj","LDCNNI","jdO",4,4,3,"7C3AED","22D3EE","headphones, turntables, glow sticks","beat","Drops the beat. The bass knocks you over.","music"},
@@ -152,6 +154,7 @@ return {
 	{"dream world","MLFNII","jFSY",4,1,6,"B39DDB","F8BBD0","floating pastel islands and moons","chime","Nothing makes sense. Enjoy.","place,mythical,silly"},
 	{"dreamcatcher","BHBLII","FN",1,1,2,"8B5A2B","F2F2EE","hoop web with feathers","chime","Catches bad dreams. And bad guys.","magic,fantasy"},
 	{"dreidel","BMAGKK","Uj",1,7,3,"2F6FD1","F2F2EE","four-sided spinning top","jingle","Spin it. Gimel wins.","holiday"},
+	{"dreidel whirl","BMCGKK","Ukf",4,5,3,"3A6EE1","FFCC48","big four-sided toy top that spins along the ground","whoosh","It always lands on 'you lose'.","holiday,winter,toy"},
 	{"drench","KBCEOJ","N",2,6,1,"29B6F6","E1F5FE","bucket-dump of water from above","splash","Soaked to the socks.","aquatic,silly"},
 	{"dresser","BMCC0I","G",1,1,7,"8B5A2B","B58A3A","low cabinet with drawers","thud","Socks: defended.","furniture,household"},
 	{"dribble","KMBO3G","UDj",3,9,2,"F97316","111827","basketball bouncing in a zigzag between falling defenders","squeak","Crossed up. Ankles: gone.","sport"},
@@ -400,7 +403,4 @@ return {
 	{"empusa","AACJNA","Kcf",4,6,4,"DC2626","F59E0B","fiery hair, one bronze leg","hiss","One bronze leg. Great at kicks.","mythical,spooky"},
 	{"emu","AMDJDA","Djkf",5,8,5,"6A5A4A","3AA0D8","shaggy brown feathers, blue neck","boom","Won a war against people. Really.","bird,flightless"},
 	{"emu chick","AMBJDA","Dkf",2,8,5,"6A5A4A","F2E8D0","striped fluffy baby emu","boom","Stripy, fast, and chaotic.","bird,flightless,cute"},
-	{"encantado","ABCJEC","jcB",4,8,3,"F9A8D4","0EA5E9","pink river dolphin in a straw hat","splash","Shows up at parties. Hides his blowhole.","mythical,aquatic"},
-	{"enceladus","MCDGKJ","Je",4,4,6,"FFFFFF","B3E5FC","bright white moon shooting ice jets","rumble","Sneezes ice into space.","space"},
-	{"enchanted forest","MLFNII","jFSNY",5,1,8,"7E57C2","66BB6A","glowing trees, floating sparkles, mushrooms","rumble","Pretty, sparkly, and very confusing.","place,terrain,magic"},
 }

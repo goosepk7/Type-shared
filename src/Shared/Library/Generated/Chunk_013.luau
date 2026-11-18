@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"highlander","LECJNA","Dkf",6,6,6,"15803D","DC2626","kilt, claymore, wild hair","drone","Charges in with bagpipe backup.","warrior"},
+	{"highlands","MFFNII","SN",3,1,8,"7CB342","AB47BC","rolling hills of heather and mist","rumble","Misty, windy, and wild.","place,terrain"},
+	{"hiker","LGCJNA","QF",3,5,5,"15803D","F97316","big backpack, walking poles, map","whoosh","Walks forever. Never tired.","outdoor"},
 	{"hiking","KECONA","GQN",3,3,6,"65A30D","B45309","walker with huge rucksack, two poles, flask and a map","crunch","Are we lost? We are not lost. We are lost.","outdoor"},
 	{"hill","MEDCII","GlS",3,1,9,"7CB342","8D6E63","rounded grassy bump","rumble","High ground: secured.","place,terrain"},
 	{"hill giant","AEEJNA","Dkf",7,3,8,"A16207","78716C","hunched giant, boulder in hand","stomp","Not the brightest. Very much the biggest.","mythical,giant,silly"},
@@ -400,7 +403,4 @@ return {
 	{"inspire","KHCOKJ","DF",3,5,3,"FFF59D","FFFFFF","bright glow of light above heads","chime","Believe! Then hit things.","support"},
 	{"instant noodles","IABOGI","FS",3,4,3,"E8C070","D72B2B","foam cup, curly noodles","slurp","Three minutes to victory.","edible,warm,healthy"},
 	{"instrument","BFCELB","jPO",3,5,3,"D4AF37","7C2D12","falling trumpet, drum, violin and a honking kazoo","music","The whole band. Dropped from a height.","music"},
-	{"insult","KABAKB","KXO",4,8,1,"F97316","FDE047","flaming speech bubble with symbols and a mic drop","sizzle","Oooooh. Somebody get the ice.","silly,meme"},
-	{"intern","LMBJNA","dQF",2,7,2,"93C5FD","F8FAFC","nervous youngster carrying six coffees and a lanyard","squeak","Unpaid. Unstoppable. Slightly unsure.","job,silly"},
-	{"internet","MDFN5I","jdPbh",7,9,4,"3B82F6","22D3EE","glowing globe-web of links, cat pictures and loading wheels","bzzt","Came for one thing. Left six hours later.","tech,meme"},
 }

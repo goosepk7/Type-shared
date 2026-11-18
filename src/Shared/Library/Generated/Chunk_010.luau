@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flamingo","AMCJDA","dAfT",3,5,2,"F28AA0","1E1E1E","pink bird on one leg, bent beak","squawk","Pink because of shrimp. Stands on one leg.","bird,wetland"},
+	{"flamingo chick","AMBJDA","AfT",1,5,2,"E8E0E0","C8C0C0","grey fluffy flamingo baby","squawk","Born grey. Turns pink later.","bird,wetland,cute"},
+	{"flan","IMBLGG","USN",2,3,3,"F2C24A","8A4A1E","wobbly custard, caramel top","wobble","Shakes like it's nervous.","edible,wobbly,sweet"},
 	{"flapjack bar","IMAAKK","keO",3,7,6,"C89050","E8A317","golden oat slab","bonk","A chewy golden oat brick.","edible"},
 	{"flare","FABAKB","KeO",4,8,1,"FF5E3A","FFF1B5","bright sputtering ball, smoke streamer","fizz","Look at the pretty light. Ow.","fire"},
 	{"flare gun","CABAwI","Kce",3,5,2,"E67E22","C0392B","chunky orange pistol","bang","Pew! Look up! Pretty!","rescue,ranged"},
@@ -400,7 +403,4 @@ return {
 	{"general","LECJNA","GOh",5,4,6,"365314","CA8A04","medal-covered coat, peaked cap","horn","Has a lot of medals. Mentions all of them.","military"},
 	{"general store","EMCNII","dSch",2,1,5,"8D6E63","FFB300","wooden store with barrels on the porch","ding","Got everything. Mostly beans.","structure,building,shop"},
 	{"general tso's chicken","IABAKK","Kc",5,7,2,"C8402B","F2A62B","glossy spicy chicken chunks","sizzle","Sweet, spicy, and decorated.","edible,spicy,flammable"},
-	{"generation ship","DLFKHJ","GAgh",7,3,10,"B0BEC5","43A047","colossal ship with gardens inside","roar","A whole world in a ship.","vehicle,space"},
-	{"generator","ODCM1I","FSL",3,2,7,"F1C40F","4A4D52","boxy engine with wires and dials","hum","Brrrrr. The lights stay on.","mechanical,electric"},
-	{"generosity","KHBOKJ","F",1,5,2,"FFD54F","FF80AB","golden sparkles passed to allies","chime","Here, have some health.","support"},
 }
