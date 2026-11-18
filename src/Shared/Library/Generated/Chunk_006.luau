@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"cloning lab","EJCNII","SVh",4,1,6,"76FF03","37474F","glass tubes with floating figures","hum","Two of you. Three. Ten.","structure,future"},
 	{"cloning machine","OLCM1I","Vh",5,2,5,"F2F2EE","3FC1D9","two pods joined by tubes","hum","Two of everything. Including you.","scifi"},
 	{"close","KECCoI","GkO",4,6,7,"8B5A2B","D4AF37","heavy door slamming shut, dust puff, picture falling off","bang","And STAY out.","household,defense"},
 	{"closet monster","AICJGA","jZc",4,5,4,"4C1D95","FDE047","furry shape with many eyes behind doors","growl","Lives with your shoes.","spooky,silly,cute"},
@@ -403,4 +402,5 @@ return {
 	{"cruise ship","DBFKHC","DkghB",6,3,9,"F5F5F5","1565C0","massive white ship, stacked decks, funnels","horn","Fourteen decks and a buffet. Ramming speed!","vehicle,aquatic"},
 	{"cruller","IMBLKI","dSc",2,3,3,"E8B860","F7F0D8","twisted ridged ring","chomp","A donut that does yoga.","edible,sweet"},
 	{"crumb","IMAELJ","cNP",1,5,1,"D9B382","A16207","sprinkle of golden crumbs trailing off","pitter","In the bed. In the keyboard. Forever.","edible,silly"},
+	{"crumble","IGBOKI","F",2,5,3,"C89050","B0203E","fruit bake with crumbly topping","crunch","Crumbles beautifully under pressure.","edible,healthy"},
 }

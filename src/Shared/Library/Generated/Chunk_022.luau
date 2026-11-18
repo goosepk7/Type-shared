@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
 	{"salt mine","MEENII","SN",3,1,8,"F5F5F5","F8BBD0","glittering pink and white tunnels","rumble","Salty walls. Salty enemies.","place,terrain"},
 	{"salt shaker","BMADKK","jN",1,6,1,"BFE6F2","F2F2EE","small shaker with holes","clang","Salty. Very salty.","kitchen,household"},
 	{"saltasaurus","AMEJAA","GkIO",7,2,9,"8A6A4A","C8A07A","armored back sauropod","rumble","A sauropod wearing armor.","dinosaur,extinct,reptile,heavy"},
@@ -403,4 +402,5 @@ return {
 	{"ship captain","LBCJNA","Gh",4,4,5,"1E3A8A","F8FAFC","peaked cap, pipe, white beard","horn","Goes down with the ship. Not today.","aquatic"},
 	{"ship lookout","LBCJNI","eO",3,5,3,"0369A1","FACC15","telescope, crow's nest","horn","LAND HO! Also, enemies ho.","pirate"},
 	{"ship of the line","DBFMHC","EkegB",8,4,9,"3E2723","FFD54F","three decks of cannons, huge sails","cannon","A floating castle. With a hundred cannons.","vehicle,aquatic"},
+	{"shipping container","BKECnI","GO",3,1,10,"C0392B","9C4A1A","giant ribbed metal box","thud","The brick of the seas.","container"},
 }

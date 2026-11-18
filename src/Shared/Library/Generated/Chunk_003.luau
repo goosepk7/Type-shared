@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"begonia","NGBNMI","dFS",2,1,2,"E53935","FFCDD2","waxy leaves and frilly blooms","rustle","Shade-loving and sneaky.","plant,flower"},
 	{"behemoth","AEFJAA","GDkO",9,3,10,"57534E","92400E","gigantic armored beast, tree-sized legs","stomp","When it walks, the map vibrates.","mythical,giant,boss,danger"},
 	{"beignet","IMBDOJ","jcP",2,5,1,"F2E8D0","F7F7F2","square puff, sugar snow","puff","A pillow buried in powdered sugar.","edible"},
 	{"belgian fries","IMAELB","ceP",2,7,1,"F2C24A","F7F2DC","paper cone of thick fries","pitter","Fries with mayo, Belgian style.","edible"},
@@ -403,4 +402,5 @@ return {
 	{"breadcrumbs","IMBLKI","ScP",2,3,3,"E0B070","C8904A","sprinkle of golden crumbs","chomp","Leaves a trail. Lures the lost.","edible"},
 	{"breadfruit","IGCGKF","DkI",5,5,6,"8AAE3A","F2EAC0","big green bumpy ball","rumble","Fruit that cooks like bread. Confusing.","edible,heavy,fruit"},
 	{"breadstick","IMBHJI","fT",2,5,4,"E8C07A","F5E2B8","long thin crunchy stick","bonk","A wand made of bread.","edible,silly"},
+	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
 }

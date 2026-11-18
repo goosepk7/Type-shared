@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"doro wat","IABNGI","KF",4,4,2,"7A2A1E","C8302B","deep red chicken stew","sizzle","Red, spicy, and soul-warming.","edible,spicy"},
 	{"dosa","IMBHJI","kf",3,5,4,"E8B860","F2E8D0","huge thin crisp rolled crepe","bonk","A crepe the length of your arm.","edible,silly"},
 	{"dot","KMAELG","UjP",1,6,1,"EF4444","FFFFFF","bouncing red polka dots of different sizes","pop","Connect them. Too slow.","school,shape"},
 	{"double agent","LICJNA","jZb",4,7,3,"1F2937","DC2626","trench coat with two badges","whisper","Works for both sides. Mostly for snacks.","stealth"},
@@ -339,7 +338,6 @@ return {
 	{"energy core","ODCG4I","EFL",6,1,4,"7DF9FF","F2F2EE","glowing core in a cage","hum","Handle with care. Lots of care.","scifi"},
 	{"energy drink","IDBO7I","D",4,10,2,"1B1B1B","8DE82B","tall can with a lightning bolt, cracked open","fizz","Zoom. Zoom. Zoooom. Crash.","edible,drink,modern"},
 	{"energy wall","ELDCII","GSaL",4,1,6,"40C4FF","E1F5FE","shimmering glowing hex panels","hum","Hums ominously. Blocks everything.","future,magic"},
-	{"energy whip","CHCHJI","KfH",5,9,2,"7DF9FF","F2F2EE","crackling whip of light","zap","Snap! Sizzle!","scifi,glowing"},
 	{"engine","OACM1I","KEkI",5,1,6,"4B5563","EF4444","chunky revving engine block, shaking, pipes blasting flame","rev","VROOM. Just the vroom. No car.","mechanical,loud"},
 	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
 	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
@@ -403,4 +401,6 @@ return {
 	{"evil tree","NIECMI","GSfH",6,2,8,"3E2723","B71C1C","tree with glowing eyes and a scowling mouth","rustle","Hates trespassers. Everyone is a trespasser.","plant,tree,spooky"},
 	{"evil twin","LICJNA","jZ",4,6,4,"1F2937","DC2626","identical person but with goatee","cackle","Same face. Worse manners.","villain,silly"},
 	{"evocation","FLCAKB","Ee",5,8,1,"FF5722","7C4DFF","raw multicoloured energy bolt","whoom","Pure magical oomph.","magic"},
+	{"evolution","KGCOBA","WFfV",5,4,5,"22C55E","FDE047","line of shapes: fish, lizard, ape, human, robot, glowing","fanfare","Give it a few million years. Or one second.","science,gaming"},
+	{"ex","LICJNA","jiN",4,4,4,"4B5563","9CA3AF","person with a box of your stuff and folded arms","sigh","Still has your hoodie. Not giving it back.","silly"},
 }

@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"wand","BLAAzI","eh",4,8,2,"5A3A1E","D4A72C","slim carved wand with sparkly tip","chime","Swish and flick.","magic,fantasy"},
 	{"wanderer","LFCJNA","ZY",4,6,4,"A16207","78716C","hooded traveling cloak, walking staff","whoosh","Arrives from nowhere. Leaves the same way.","explorer"},
 	{"war","KAENOI","KkP",7,5,5,"8D6E63","D32F2F","smoky battlefield haze with banners","horn","Banners up. Charge together.","rage"},
 	{"war canoe","DBCKHC","DkgB",4,7,4,"6D4C41","FFB300","long canoe with side float, carved prow","splash","Paddle together. Win together.","vehicle,aquatic"},
@@ -403,4 +402,5 @@ return {
 	{"yellow squash","IMBHJI","kf",3,5,4,"F2D23A","5E7A2B","curved yellow squash","bonk","A sunny club.","edible,silly"},
 	{"yellowstone","MBFNII","KlS",6,1,9,"FFEB3B","4FC3F7","steaming pools, geysers, colourful springs","rumble","Geysers everywhere. Bubbling everywhere.","place,landmark"},
 	{"yes","KHBOKJ","DWF",3,6,3,"22C55E","FFFFFF","big green YES with a thumbs up and sparkle","ding","Yes. Absolutely. What was the question?","support,meme"},
+	{"yeti","ACDJNA","DJkf",7,5,7,"F1F5F9","93C5FD","shaggy white ape, frosty breath","roar","Lives on a mountain. Hates sunscreen.","cryptid,frozen"},
 }

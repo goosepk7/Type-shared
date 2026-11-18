@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"shipping container","BKECnI","GO",3,1,10,"C0392B","9C4A1A","giant ribbed metal box","thud","The brick of the seas.","container"},
 	{"shipworm","ABAJGI","GCN",1,1,6,"E8E0D0","C8B8A0","clam that bores into wood","squelch","A clam that eats boats.","mollusk,aquatic"},
 	{"shipwreck","MBENII","Sch",4,1,6,"6D4C41","26A69A","broken hull on the sea floor, coral","thud","Something guards the treasure inside.","spooky,pirate"},
 	{"shipyard","MBENII","Sh",3,1,7,"607D8B","1E88E5","ships on slipways, cranes","crowd","Launches a fresh ship. At you.","place"},
@@ -403,4 +402,5 @@ return {
 	{"solo","LICJNA","GDfT",6,7,5,"374151","FACC15","lone hooded figure against the wind, scarf trailing","whistle","No team. No heals. No problem.","gaming,warrior"},
 	{"solstice","GHENOI","KJF",6,3,5,"FFB300","B3E5FC","sun and frost glow in balance","chime","The longest day. Or night. Both?","holiday"},
 	{"solution","KHBOKB","GFX",3,5,3,"22D3EE","F8FAFC","jigsaw piece clicking into place with a sparkle","click","Have you tried duct tape? Try more duct tape.","support"},
+	{"som tam","IABAKK","KeP",3,7,2,"C8D88A","D8302B","shredded green papaya salad","sizzle","Crunchy, spicy, sour.","edible,spicy,flammable"},
 }

@@ -3,9 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
-	{"nunchucks","CMBHJK","jfO",3,9,3,"24262A","5A3A1E","two sticks joined by chain","bonk","Mostly hits the user. Sometimes the enemy.","ninja"},
-	{"nurikabe","AEECII","GO",6,1,10,"78716C","A8A29E","enormous invisible-ish stone wall with eyes","rumble","A wall that appears out of nowhere.","yokai,guardian"},
 	{"nurse","LMCJNA","QF",3,6,4,"F8FAFC","F472B6","scrubs, cap, giant syringe","chime","Gentle hands. Giant cartoon needle.","healer"},
 	{"nurse shark","ABCJEC","DfTHB",4,3,6,"A88E6A","E2D2B8","flat brown shark, whisker barbels","chomp","Lazy shark. Naps on the sea floor.","fish,aquatic,ocean,predator"},
 	{"nursery","MHDNlI","jdSh",4,1,4,"FDE047","F472B6","bright room of blocks, finger paints and tiny chairs","giggle","Twenty toddlers. One teacher. Pray for the teacher.","school,cute"},
@@ -120,6 +117,7 @@ return {
 	{"orb spirit","ALAGKJ","AcR",1,6,1,"A5F3FC","FDE68A","floating glowing ball","chime","Shows up in photos. Never in person.","spirit"},
 	{"orb weaver","AJBLQA","SfMN",2,6,2,"E8C82A","1E1E1E","yellow spider in a round web","skitter","Builds a new web every night.","arachnid,spooky,venomous"},
 	{"orbit","KLCGKK","kR",4,6,3,"7C4DFF","FFFFFF","glowing balls circling the caster","hum","Round and round. Bonk.","space"},
+	{"orbital drop pod","OKDNkI","GEe",6,5,4,"B0B4BA","78BEFF","a pod slamming down that opens a shield dome","boom","Reinforcements, sort of.","scifi,game"},
 	{"orbital ring","ELFNII","GSR",7,1,9,"B0BEC5","40C4FF","vast ring structure circling a planet","hum","A city shaped like a hula hoop.","structure,future,space"},
 	{"orbital strike","CHFNmI","KET",9,3,5,"F2F2EE","FF2D2D","a red laser dot, then a beam from orbit","zap","Called in from space. Very rude.","scifi,space,modern"},
 	{"orc","AECJNA","Dkf",5,5,6,"4D7C0F","57534E","big tusked green warrior, crude armor","roar","Strong, loud, and great at yelling WAAGH.","goblin,warrior"},
@@ -403,4 +401,6 @@ return {
 	{"peking duck","IGCOKI","F",2,5,3,"B0502B","E8A040","lacquered roasted duck","crunch","Crispy skin, royal history.","edible,healthy,royal"},
 	{"pekingese","AMBJAA","dQf",2,6,2,"E8B87A","F2E0C0","flat face, lion mane fluff","yip","Tiny lion. Huge ego.","mammal,pet,cute"},
 	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
+	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
+	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
 }

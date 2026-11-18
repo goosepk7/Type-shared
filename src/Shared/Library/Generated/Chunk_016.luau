@@ -3,9 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"mail carrier","LMCJNA","DQe",3,7,4,"1E3A8A","F8FAFC","blue uniform, mail bag, letters","whoosh","Throws letters. Hard.","silly"},
-	{"mail ninja","LICJNA","Ze",4,9,3,"111827","1E3A8A","ninja with a mailbag of throwing letters","whoosh","Delivers mail. Silently. Violently.","silly,stealth"},
-	{"mailbox","BMBC2I","G",1,1,6,"2F6FD1","C0392B","box on a post with flag","thud","Delivery! Of doom.","container"},
 	{"main character","LHCJNA","DFf",5,6,5,"FACC15","1D4ED8","spotlight following one figure","ding","Plot armor equipped.","meme"},
 	{"main street","MMENII","Sh",2,1,7,"B5523B","90CAF9","street lined with shops and lamps","crowd","Every shop is open. Every door a surprise.","place"},
 	{"maine coon","AMCJAA","dfT",3,7,2,"8A6A4A","D8C4A8","huge fluffy cat, lynx ear tips, big ruff","meow","A house cat that skipped leg day never.","mammal,pet,cute"},
@@ -403,4 +400,7 @@ return {
 	{"mole person","AEBJNH","Cb",2,5,3,"78350F","F9A8D4","squinty underground dweller with shovel","chitter","Pops up from the floor. Rude.","silly"},
 	{"mole sauce","IABNGI","KSN",2,4,1,"4A2A1E","8A3A1E","dark rich chocolate-chili sauce","splat","Chocolate and chilies, dark and deep.","edible,sauce"},
 	{"molecule","FMAGKJ","URV",2,7,2,"EF4444","F8FAFC","ball-and-stick model: one red ball, two white, wobbling","boing","H2-Oh no.","science"},
+	{"molly","ABAJEC","dB",1,6,1,"1E1E1E","F2D82A","black aquarium fish","splash","Chill aquarium buddy.","fish,aquatic"},
+	{"molten","FACF6F","KNP",6,3,4,"F2541B","FFB703","glowing orange flow, dark crust plates","bubble","Not solid. Not liquid. Not friendly.","fire,heavy"},
+	{"molten metal","FKCF6F","KN",7,4,5,"FF7A00","C0C0C0","glowing orange-silver liquid metal flow","bubble","Forge-fresh. Do not hug.","heavy,fire"},
 }

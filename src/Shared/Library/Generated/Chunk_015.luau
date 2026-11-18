@@ -3,9 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"learn","KHBOKJ","GWF",3,3,3,"3B82F6","FDE047","stack of books with a level-up arrow and a tired candle","ding","Knowledge is power. Naps are also power.","school,support"},
-	{"leash","BMBLKI","HN",1,5,2,"C0392B","C9CED4","strap with clip","squeak","Heel!","pet"},
-	{"leather","BMCIyE","Gka",3,4,8,"5B3A1E","2B1B12","creaky brown biker jacket with a popped collar and studs","creak","Creaks when it moves. Cooler than you.","clothing,cool,armor"},
 	{"leather armor","BMCONI","G",1,7,4,"6B4226","7A4E2D","stitched leather vest and pads","clank","Light, comfy, slightly squeaky.","armor,defense"},
 	{"leather jacket","BMCONI","Gd",1,5,4,"24262A","C9CED4","black leather biker jacket","swish","Instantly 40% cooler.","clothing"},
 	{"leatherback turtle","ABDJUC","GNB",4,2,8,"2A2E34","8A9098","huge leathery ridged shell","hiss","Biggest turtle. Shell is leather.","reptile,armored"},
@@ -403,4 +400,7 @@ return {
 	{"maid","LMCJNA","FI",3,6,4,"111827","F8FAFC","apron, feather duster","swish","Dusts the enemies off the map.","silly"},
 	{"maidenhair fern","NGANMI","ZS",1,1,2,"7CB342","3E2723","delicate fan fronds on black stems","rustle","Dainty. Shy. Ancient.","plant,ancient"},
 	{"mail","BMBELB","dPO",3,6,2,"F5F5F0","DC2626","blizzard of envelopes, postcards and one heavy parcel","thud","You have got mail. All of it. At once.","household"},
+	{"mail carrier","LMCJNA","DQe",3,7,4,"1E3A8A","F8FAFC","blue uniform, mail bag, letters","whoosh","Throws letters. Hard.","silly"},
+	{"mail ninja","LICJNA","Ze",4,9,3,"111827","1E3A8A","ninja with a mailbag of throwing letters","whoosh","Delivers mail. Silently. Violently.","silly,stealth"},
+	{"mailbox","BMBC2I","G",1,1,6,"2F6FD1","C0392B","box on a post with flag","thud","Delivery! Of doom.","container"},
 }

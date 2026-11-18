@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"break","KMCAKB","TO",5,7,2,"A1887F","FFFFFF","cracking line spreading through target","crack","Some things are meant to break.","sharp"},
 	{"breakdancer","LFCJNK","jdk",4,8,3,"111827","FACC15","spinning on head, tracksuit","beat","Head spins. Kicks fly.","music"},
 	{"breakdancing","KMCN5K","dk",3,7,2,"FF4081","212121","spinning windmill motion trails","music","Headspin! Everyone stand back.","music,dance"},
 	{"breaker","FBDF6F","kO",6,7,2,"0288D1","FFFFFF","wave curling over and smashing down","crash","Crash! Foam everywhere.","aquatic"},
@@ -403,4 +402,5 @@ return {
 	{"cartoon","ALCJBG","UjkY",4,7,5,"FACC15","EF4444","rubbery bouncy character with white gloves and pie-cut eyes","boing","Runs off the cliff. Only falls when it looks down.","silly,art"},
 	{"cartoon box trap","BMCLII","cO",2,1,3,"C69C6D","8B5A2B","box propped on a stick with string","snap","Classic. Works on everyone.","trap,silly"},
 	{"cartoonist","LLCJNI","jh",3,4,3,"111827","FACC15","sketchbook, pen, ink splotches","scratch","Draws allies into existence.","art"},
+	{"cartwheel","KMBOKK","Dd",2,7,2,"F8BBD0","FFFFFF","cartwheeling motion arc","whee","Wheee! Totally on purpose.","silly,sport"},
 }

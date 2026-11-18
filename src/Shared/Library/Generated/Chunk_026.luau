@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"tea set","BBBELJ","KcP",2,4,1,"FBCFE8","FFFFFF","pink teapot and cups pouring in mid-air","clink","Pinkies up. Gloves off.","toy,cute"},
 	{"teach","KHBF6B","XNO",3,4,2,"15803D","FFFFFF","pointer stick tapping a chalkboard, chalk flying","tap","Class is in session. You are the lesson.","school"},
 	{"teacher","LMCJNA","jOh",3,4,4,"7C2D12","F8FAFC","glasses, cardigan, chalk","ding","Pop quiz. Right now.","school"},
 	{"teachers pet","LHBJNA","dOh",2,5,2,"FDE047","EF4444","kid with hand rocketing up, shiny apple, perfect hair","ding","Teacher! Teacher! They are cheating!","school,silly"},
@@ -363,7 +362,7 @@ return {
 	{"tracked carrier","DKDKHL","GDkgh",5,5,9,"556B2F","3B3B2F","boxy tracked hull, rear ramp, small turret","engine","Taxi for twelve very angry soldiers.","mechanical,vehicle,land"},
 	{"tracking device","CKAOJI","Q",1,8,1,"24262A","C0392B","tiny blinking chip","bang","Gotcha. Wherever you go.","spy,tech"},
 	{"tractor","DEDKHL","DkIg",5,4,8,"2E7D32","F2C200","big rear wheels, small front, tall exhaust","engine","Plows the field. And your army.","mechanical,vehicle,land"},
-	{"tractor beam","CLDBJI","lHe",4,5,5,"3FC1D9","F2F2EE","wide cone of pulling light","zap","Come here. No, really, come here.","scifi,space"},
+	{"tractor lift","OLCBgE","leO",5,6,2,"7CF0BE","9CA4B0","a little grey saucer lifting its target in a green beam","zap","Please keep your arms inside the beam.","scifi,movie,alien"},
 	{"tractor trailer","DMEKHL","DkTg",7,5,9,"1565C0","ECEFF1","cab towing a long boxy trailer","horn","Jackknifes on purpose.","mechanical,vehicle,land"},
 	{"trade","KMBOKB","jFb",3,6,2,"22C55E","F59E0B","two hands swapping a sandwich for a shiny card","ding","My sandwich for your dessert. Final offer.","gaming,school"},
 	{"trading card","BLAAJK","Teh",3,8,1,"FACC15","60A5FA","glinting foil card spinning like a blade","swish","Mint condition. Do NOT bend it.","game,shiny"},
@@ -403,4 +402,5 @@ return {
 	{"treadmill","OMCL1I","IN",1,3,6,"24262A","8E9196","motor belt with handrails","hum","Run forever. Get nowhere.","sport,silly"},
 	{"treant","AGEJMA","GWFk",7,2,9,"78350F","4D7C0F","giant walking tree with bark face","creak","Takes three days to say good morning.","plant,giant"},
 	{"treant sapling","AGAJMA","WF",1,3,3,"65A30D","A3E635","little walking sapling with leaf hair","rustle","Grows a bit each round.","plant,cute"},
+	{"treasure chest","BMCLII","dch",3,1,7,"8B5A2B","D4A72C","iron-banded chest spilling gold","chime","X marked this spot.","treasure,pirate"},
 }

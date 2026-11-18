@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"red cabbage","IGBAKF","Fke",3,5,3,"6B2D6B","C8A8D8","purple layered round head","thud","A purple bowling ball.","edible,vegetable,healthy"},
 	{"red crab","ABBJRA","GfTPh",2,4,5,"E8301E","F2A07A","bright red land crab","clack","Marches in millions.","crustacean,aquatic,armored"},
 	{"red deer","AMCJAA","Dk",4,8,4,"A0582E","E2C49A","reddish deer, many-pointed antlers","bleat","Roars during autumn. Very dramatic.","mammal,wild"},
 	{"red delicious","IGBAKF","Fke",3,6,2,"8A0F1E","C8202B","tall dark red apple","splat","Looks like a cartoon apple.","edible,fruit,sweet"},
@@ -403,4 +402,5 @@ return {
 	{"salsify","IEBAJK","FTe",3,6,4,"5A4A3A","F2EEDF","long dark root","crunch","A root that tastes like oysters.","edible,vegetable,healthy"},
 	{"salt","FEAEOB","MN",2,6,1,"F7F7F2","D9D9CF","sprinkle of white crystal grains","tick","Slugs fear it. Ghosts too, maybe.","edible"},
 	{"salt and pepper","IFBDOJ","jPO",2,5,1,"F7F7F7","2A2A2A","twin shakers, white and black","puff","A legendary duo.","edible,spice"},
+	{"salt flats","MEFNII","SN",2,1,8,"F5F5F5","B0BEC5","blinding white cracked flat ground","rumble","So flat you can see tomorrow.","place,terrain"},
 }

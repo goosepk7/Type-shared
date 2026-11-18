@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"popcorn bomb","BABGKK","dEP",3,6,1,"F1C40F","F2F2EE","bag that bursts into popcorn","thud","POP POP POP POP POP.","silly,explosive"},
 	{"popcorn cart","DMBKHL","dceg",2,3,3,"E53935","FFEB3B","striped cart with popping kettle","engine","Pop pop pop! Kernels everywhere.","mechanical,vehicle,land,silly"},
 	{"popcorn chicken","IMAELB","eVP",2,7,1,"D9A04A","F2C870","small golden nuggets","pitter","Crispy chicken popcorn. Explodes with flavor.","edible"},
 	{"popcorn kernel","IMAGKF","UE",2,6,1,"F2C24A","D88A2A","tiny yellow kernel","pop","A tiny bomb waiting for heat.","edible,explosive"},
@@ -403,4 +402,5 @@ return {
 	{"red admiral","AMAJFB","jdA",1,5,1,"1E1E1E","E8301E","black wings with red bands","flutter","Military-looking butterfly.","insect,cute"},
 	{"red apple","IGBAKF","Fke",3,6,2,"B3121D","F6E7C1","round, deep red, stem and leaf","splat","Polished to a shine. Thrown with love.","edible,fruit,sweet"},
 	{"red bean paste","IMBLGI","SNP",2,3,3,"5A2A2A","7A3A3A","smooth dark red paste","gloop","Sweet beans, smooth as velvet.","edible,sticky,dessert,sweet"},
+	{"red cabbage","IGBAKF","Fke",3,5,3,"6B2D6B","C8A8D8","purple layered round head","thud","A purple bowling ball.","edible,vegetable,healthy"},
 }

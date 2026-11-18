@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
 	{"stinky feet","KJBDOJ","jM",2,4,1,"C0CA33","FFF59D","green wavy stink lines from shoes","whiff","Take off your shoes. Everyone faints.","silly,gross"},
 	{"stinky tofu","IJBDOJ","jSMP",3,3,2,"8A6A3A","C8A070","fried tofu cubes, pungent","whiff","The stinkiest snack. Fans swear by it.","edible,smelly"},
 	{"stir","KFBN5K","jHN",3,6,1,"C4B5FD","F8FAFC","wooden spoon whirling everything into a swirl","swish","Stirring the pot. Literally and socially.","kitchen"},
@@ -403,4 +402,5 @@ return {
 	{"tea party","IMCJII","dFc",5,1,6,"F7F2EC","F2A6C8","little table, teapot, cups","thud","Fancy cups, tiny cakes, polite chaos.","edible,giant,silly,fancy"},
 	{"tea plantation","NGENMI","F",2,1,6,"2E7D32","9CCC65","rows of bushes on misty hills","rustle","Calming. Steaming. Healing.","plant"},
 	{"tea rose","NGCNMI","dWFST",2,1,3,"FFCCBC","2E7D32","climbing canes loaded with roses","rustle","Climbs walls. Smells divine. Stabs a bit.","plant,flower"},
+	{"tea set","BBBELJ","KcP",2,4,1,"FBCFE8","FFFFFF","pink teapot and cups pouring in mid-air","clink","Pinkies up. Gloves off.","toy,cute"},
 }

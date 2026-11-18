@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"giant meatball","IMDGKF","DkcI",6,5,6,"7A3A2A","B0202E","enormous meatball, sauce dripping","rumble","A meteor of meat.","edible,heavy"},
-	{"giant moth monster","AHFJFB","jAkP",8,5,7,"F59E0B","1E3A8A","enormous moth with eye-pattern wings","whoosh","Big wings. Bigger lamp addiction.","kaiju,giant,insect"},
 	{"giant mousetrap","BMDLII","kcO",5,1,4,"C49A6C","8A929B","enormous spring trap, huge cheese","snap","Same idea. Bigger snap.","trap,silly"},
 	{"giant mushroom","NJDLMI","GUlS",4,1,6,"C62828","F5F5F5","towering spotted cap like an umbrella","poof","Bounce on it. Very high.","plant,fungus,silly"},
 	{"giant oak","NGFCMI","GWkSO",6,1,10,"4E342E","33691E","enormous gnarled oak, wide crown","rustle","A thousand years of grumpiness.","ancient,heavy"},
@@ -285,7 +283,7 @@ return {
 	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
 	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
 	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
-	{"gravity grenade","CLBGKI","lHe",5,7,1,"7D3CB5","C9CED4","grenade warping the air","zap","Everything floats. Then falls.","scifi,ranged"},
+	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
 	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
 	{"gravity lily","NFBLMJ","lS",2,1,2,"B388FF","E1F5FE","lily floating upside down","chime","Lifts everything nearby. Wheee.","plant,magic,mythical"},
 	{"gravity mage","LLCJNJ","lHN",6,4,4,"312E81","A855F7","floating rocks orbiting a robed mage","hum","What goes up stays up.","magic"},
@@ -403,4 +401,6 @@ return {
 	{"guanlong","AMCJBA","DkfT",4,6,7,"6A6A7A","E8701E","tall orange head crest","roar","Tiny tyrant with a crest.","dinosaur,extinct,reptile,predator"},
 	{"guard","KKCIKI","G",1,4,7,"78909C","ECEFF1","sturdy glowing guard stance aura","clank","On guard!","defence"},
 	{"guard post","EMBMII","GdSe",2,1,5,"B71C1C","1A1A1A","narrow striped hut with a barrier arm","thud","Halt! Who goes there?","structure,defense,tower"},
+	{"guard rail","EKCCII","GSa",2,1,6,"B0BEC5","78909C","wavy steel strip on short posts","thud","Keeps everyone on the right track.","structure,defense"},
+	{"guardhouse","EECMII","GSeh",3,1,8,"9E9E9E","B71C1C","small stone building by the gate","thud","Guards on duty. Always.","structure,ancient,defense"},
 }

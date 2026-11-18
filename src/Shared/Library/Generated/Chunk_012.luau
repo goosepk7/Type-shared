@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"guard rail","EKCCII","GSa",2,1,6,"B0BEC5","78909C","wavy steel strip on short posts","thud","Keeps everyone on the right track.","structure,defense"},
-	{"guardhouse","EECMII","GSeh",3,1,8,"9E9E9E","B71C1C","small stone building by the gate","thud","Guards on duty. Always.","structure,ancient,defense"},
 	{"guardian","LHDJYA","GQka",6,3,9,"D4AF37","3B6FB6","towering armoured figure with a glowing tower shield","clang","You shall not get past. Or even near.","defense,warrior"},
 	{"guardian angel","AHCJNB","GAQF",5,7,5,"F8FAFC","FACC15","soft glowing angel hovering behind you","chime","Always one step behind. Catching you.","holy,guardian"},
 	{"guava","IGBAKF","Fke",3,6,2,"9CC34A","F3818A","round green fruit, pink inside","splat","Smells like a vacation.","edible,fruit,sweet,tropical"},
@@ -336,8 +334,7 @@ return {
 	{"hollow visage","KICOKI","Dif",8,9,2,"F2EEE6","B3122E","a cracked white skull mask with red stripes","growl","Put on the face. Lose the manners.","anime,transform"},
 	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},
 	{"hollyhock","NGCNMI","dFS",2,1,2,"E91E63","F8BBD0","tall spire of big papery blooms","rustle","Taller than you. Prettier too.","plant,flower"},
-	{"holo decoy","OHBJNE","dc",1,5,1,"3FC1D9","F2F2EE","flickering fake copy of you","hum","Shoot me! (Not me.)","scifi"},
-	{"hologram","OHBJNE","jdc",1,6,1,"3FC1D9","F2F2EE","flickering blue-ish projection","beep","Is it real? No. Did you fall for it? Yes.","scifi"},
+	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
 	{"holster","BMBO2E","DeO",3,9,3,"7C4A1E","D4AF37","leather hip holster, hand hovering, tumbleweed","click","Draw! No, not with crayons.","western"},
 	{"holy","FHDGKI","KEF",7,6,1,"FFFFFF","FFF59D","ring of white orbs bursting together","choir","The purest light. Blinding.","holy"},
 	{"holy aura","FHCOKJ","GF",3,4,5,"FFF59D","FFFFFF","golden halo glow round caster","choir","Glowing with goodness.","holy,support"},
@@ -403,4 +400,7 @@ return {
 	{"hoplite shield","BKCIyI","Gk",3,4,7,"A86F32","9E1B32","large round bronze shield","clang","Bronze, big, and very Greek.","armor,defense,ancient"},
 	{"hopscotch","KMBOKG","UD",1,6,2,"FF80AB","FFFFFF","chalk squares glowing under hops","boing","One, two, three, dodge!","silly"},
 	{"horchata","IBBOKI","F",2,6,2,"F7F0E0","C8A070","glass of creamy rice drink","slurp","Creamy, cinnamon-kissed rice milk.","edible,drink"},
+	{"horde","AEDJLA","DPh",6,5,5,"57534E","DC2626","charging mass of assorted monsters","roar","Too many monsters to count.","monster,swarm"},
+	{"horizon","MHFC6I","SIN",7,1,9,"F97316","1E3A8A","endless glowing line where orange sky meets dark sea","hush","Walk toward it forever. It keeps the distance.","place"},
+	{"horn shark","ABBJEC","DfTB",3,8,6,"B8A07A","3A2A1E","blunt head, horned fins","chomp","Spiral eggs. Pig-like face.","fish,aquatic,ocean,predator"},
 }

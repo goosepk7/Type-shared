@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
-	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
 	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
 	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
 	{"penalty","KMCA3B","keO",5,8,1,"FFFFFF","22C55E","ball on a white spot, keeper diving the wrong way","whistle","He goes left. The ball goes right. Scenes.","sport"},
@@ -259,6 +257,7 @@ return {
 	{"plasma torch","OABBwI","Kf",5,6,3,"7DF9FF","C9CED4","handheld blue flame lance","hum","Cuts through steel like butter.","scifi"},
 	{"plasma tornado","HDEN5K","KlHL",8,6,5,"D500F9","18FFFF","magenta-cyan crackling energy funnel","buzz","Tornado, now with neon lighting.","storm,electric"},
 	{"plasma wave","FDDFOB","KLP",7,7,1,"D500F9","18FFFF","magenta-cyan crackling wave","buzz","Glowing hot neon tide.","electric"},
+	{"plasma whip","CDCHJI","fHL",5,9,2,"5AE1FF","C8F5FF","a crackling energy whip lashing a wide arc","zap","Snap! Sizzle! Snap!","scifi,melee"},
 	{"plastic","BMBELJ","USP",2,6,4,"EF4444","22D3EE","shower of bright bottles, tubs and one lonely fork","clatter","Will outlive us all. Especially you.","household,toy"},
 	{"plastic skeleton","BMCJNI","jd",1,3,2,"E3DAC9","24262A","dangly plastic skeleton","jingle","Rattle rattle. Boo!","holiday,spooky"},
 	{"plate","BMAAKK","UeV",1,8,1,"F2F2EE","2F6FD1","round dinner plate","clang","Smash! Opa!","kitchen,household"},
@@ -403,4 +402,5 @@ return {
 	{"pop rocks","IDBGKF","jELP",4,6,1,"F2A6C8","4FA3E8","crackling candy crystals","pop","Crackles. Snaps. Tiny fireworks.","edible,explosive,candy"},
 	{"pop tart","IMBAKK","Uke",3,7,2,"E8C88A","F2A6C8","frosted rectangle, sprinkles","whoosh","Breakfast in a rectangle.","edible"},
 	{"popcorn","IMBGKF","EeVP",4,6,1,"FFF4D6","F2C24A","fluffy white kernels, butter gold","pop","Explodes once. Then again in your mouth.","edible,explosive,snack"},
+	{"popcorn bomb","BABGKK","dEP",3,6,1,"F1C40F","F2F2EE","bag that bursts into popcorn","thud","POP POP POP POP POP.","silly,explosive"},
 }

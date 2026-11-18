@@ -3,9 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"molly","ABAJEC","dB",1,6,1,"1E1E1E","F2D82A","black aquarium fish","splash","Chill aquarium buddy.","fish,aquatic"},
-	{"molten","FACF6F","KNP",6,3,4,"F2541B","FFB703","glowing orange flow, dark crust plates","bubble","Not solid. Not liquid. Not friendly.","fire,heavy"},
-	{"molten metal","FKCF6F","KN",7,4,5,"FF7A00","C0C0C0","glowing orange-silver liquid metal flow","bubble","Forge-fresh. Do not hug.","heavy,fire"},
 	{"molten rain","FAEEOJ","KNP",8,4,3,"DD2C00","FF9100","black cloud dripping glowing drops","sizzle","Umbrella melted. Bad day.","fire,storm"},
 	{"mom","LMCJNA","GFh",4,6,5,"F472B6","F8FAFC","apron, phone, minivan keys","ding","Uses your full name. Instant stun.","family"},
 	{"momentum","FMCOKJ","Dk",4,8,3,"FF8A4D","FFE0C2","forward-streaming motion lines","whoosh","Hard to stop. Harder to dodge.","speed"},
@@ -403,4 +400,7 @@ return {
 	{"nuke","CAFGKF","KEkSP",10,2,3,"6B7B3A","F1C40F","huge finned bomb, hazard stripes","boom","Big flash. Bigger mushroom.","explosive,danger"},
 	{"numbat","AMBJAA","Uf",2,6,2,"B85A2E","F2F2EE","striped back, bushy tail","chirp","Eats termites. Wears stripes.","mammal,marsupial"},
 	{"number","KLBELG","UjV",3,5,3,"22D3EE","FACC15","bouncing chunky digits 0 to 9 with a floating +1","ding","Pick a number. Wrong. It was seven.","school"},
+	{"nun","LHCJNA","GFO",3,4,4,"111827","F8FAFC","black and white habit, rosary","chime","Ruler slaps at lightspeed.","holy"},
+	{"nunchucks","CMBHJK","jfO",3,9,3,"24262A","5A3A1E","two sticks joined by chain","bonk","Mostly hits the user. Sometimes the enemy.","ninja"},
+	{"nurikabe","AEECII","GO",6,1,10,"78716C","A8A29E","enormous invisible-ish stone wall with eyes","rumble","A wall that appears out of nowhere.","yokai,guardian"},
 }

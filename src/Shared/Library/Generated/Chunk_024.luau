@@ -3,14 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"som tam","IABAKK","KeP",3,7,2,"C8D88A","D8302B","shredded green papaya salad","sizzle","Crunchy, spicy, sour.","edible,spicy,flammable"},
 	{"sombrero","BMCINI","G",1,5,2,"D2B48C","C0392B","huge wide-brimmed hat","swish","Shade for everyone.","clothing"},
 	{"son","LMBJNA","UDf",3,7,3,"3B82F6","F2D0B4","boy with a backwards cap and scraped knees","yay","Was told not to run indoors. Is running.","family"},
 	{"song thrush","AMAJDB","dA",1,7,1,"8A6A4A","F2E8D0","spotted chest songbird","tweet","Smashes snails on rocks.","bird,cute"},
 	{"sonic beam","FFCBKI","TeO",5,10,1,"B39DDB","FFFFFF","ringed visible sound beam","eeee","Loud enough to see.","loud"},
 	{"sonic blaster","CFCFwI","kIeO",5,7,4,"7D3CB5","C9CED4","speaker-dish shaped gun","boom","BWAAAAMMMM.","scifi,ranged"},
 	{"sonic boom","FFDFOB","kO",7,10,1,"CFE3FF","FFFFFF","cone-shaped shockwave ring burst","boom","Faster than sound. Louder too.","loud"},
-	{"sonic grenade","CFBGKI","keO",4,7,1,"C9CED4","7D3CB5","ringing grenade","zap","EEEEEEEE.","scifi,ranged"},
+	{"sonic grenade","CFBGKI","kIe",4,7,1,"C8AAFF","585F6C","a disc mine thumping out pressure rings","zap","EEEEEEEE. Three times.","scifi,ranged"},
 	{"sonic wave","FFCFOB","kTO",5,10,1,"B388FF","E3F2FD","ripple rings of visible sound","boom","Turn it down. Way down.","loud"},
 	{"soot","FABDOJ","jN",2,4,1,"2E2E2E","6B6B6B","black powdery puff","puff","Everyone looks like a chimney sweep.","silly"},
 	{"sopapilla","IMBLKI","dSc",2,3,3,"E8C07A","F2E8C8","puffy fried pillow, honey drizzle","chomp","A puffy pillow of fried dough.","edible,sweet,dessert"},
@@ -403,4 +402,5 @@ return {
 	{"stink bomb","CJADKF","jSMe",2,7,1,"6B7B3A","8BC34A","small vial leaking green fumes","poof","Smells like victory. Mostly socks.","silly"},
 	{"stink bug","AJAJFA","jdAMP",1,6,1,"6A5A3A","C8A86A","shield-shaped flat bug","buzz","Smells awful when squished. Avoid.","insect"},
 	{"stink cloud","FJBDOJ","jdN",2,5,1,"C0CA33","827717","yellow-green puff with wavy stink lines","pfft","Everyone leaves. Fast.","silly,toxic"},
+	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
 }

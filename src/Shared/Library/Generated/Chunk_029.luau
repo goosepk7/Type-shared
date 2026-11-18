@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"yeti","ACDJNA","DJkf",7,5,7,"F1F5F9","93C5FD","shaggy white ape, frosty breath","roar","Lives on a mountain. Hates sunscreen.","cryptid,frozen"},
 	{"yeti crab","ABBJRA","GfT",2,4,5,"F2F2EE","E8E0D0","hairy white deep-sea crab","clack","A crab in a fur coat.","crustacean,aquatic,armored,deepsea"},
 	{"yeti family","ACBJNA","dJ",2,5,3,"F1F5F9","93C5FD","fluffy white baby yeti","roar","Throws tiny snowballs. Adorably.","cryptid,cute,frozen"},
 	{"yeti king","ACEJNA","Jkh",8,4,8,"F1F5F9","1E3A8A","giant white yeti with icicle crown","roar","Rules the mountain. Hates sunscreen.","cryptid,frozen,boss"},

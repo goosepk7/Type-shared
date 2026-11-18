@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"cartwheel","KMBOKK","Dd",2,7,2,"F8BBD0","FFFFFF","cartwheeling motion arc","whee","Wheee! Totally on purpose.","silly,sport"},
 	{"cashew","IEAAKK","UeO",2,8,5,"EBD9A8","D8C08A","curved kidney-shaped nut","tok","A nut shaped like a comma.","edible,nut"},
 	{"cashier","LMCJNA","dO",3,5,3,"DC2626","F8FAFC","name tag, register, receipt roll","ding","Paper or plastic? Neither. Combat.","silly"},
 	{"cassata","IMBLKI","dSc",2,3,3,"F7F2EC","8DC63F","frosted cake with candied fruit","chomp","A Sicilian jewel box.","edible,sweet,dessert"},
@@ -403,4 +402,5 @@ return {
 	{"clogs","BMBONI","k",1,4,3,"C49A6C","7A4E2D","carved wooden shoes","swish","Clomp clomp clomp.","clothing"},
 	{"clone","KLCJNA","dV",3,5,2,"80DEEA","FFFFFF","exact glowing copy of the caster","pop","Two of you. Twice the trouble.","magic"},
 	{"cloning gun","OLBBwI","eVh",4,6,3,"F2F2EE","8BC34A","ray gun with double barrel","hum","Two of them? Uh oh.","scifi"},
+	{"cloning lab","EJCNII","SVh",4,1,6,"76FF03","37474F","glass tubes with floating figures","hum","Two of you. Three. Ten.","structure,future"},
 }
