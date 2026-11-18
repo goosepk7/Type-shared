@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"window box","NGBOMI","FS",1,1,3,"D84315","F06292","wooden box spilling with flowers","rustle","Defends windows. Prettily.","plant,houseplant"},
+	{"window washer","LBCJNA","IN",3,4,3,"0EA5E9","F8FAFC","squeegee, bucket, harness","squeak","Squeaky clean. Squeaky slippery.","silly"},
 	{"windpump","EFDMIK","GSI",3,1,6,"B0BEC5","E53935","metal tower with a spinning fan wheel","creak","Pumps water. Spins menacingly.","structure,farm"},
 	{"windstorm","GFDFOB","kIP",6,7,3,"90A4AE","ECEFF1","long rushing gale with flying leaves","howl","Hold on to something. Anything.","storm,air"},
 	{"windup knight","OKCJNA","Dfh",3,4,4,"D0D8E4","DE2E34","a clockwork tin toy knight with a lance and a wind-up key","tick","Fights until it runs down. Wind it again.","cartoon,toy,summon"},

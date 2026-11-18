@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gremlin swarm","ADBJLA","LPb",4,8,2,"4D7C0F","FDE047","crowd of long-eared imps with tools","cackle","Every machine in range: broken.","goblin,swarm,silly"},
 	{"grenade","CABGKF","EkeV",5,6,2,"6B7B3A","4A4D52","pineapple-shaped grenade with pin","boom","Pull pin. Throw. Run.","explosive"},
 	{"grenade barrage","CADEJK","EP",7,5,1,"6B7B3A","4A4D52","shower of grenades","thud","Pins pulled. All of them.","explosive"},
 	{"grenade belt","BMBONI","E",4,5,3,"6B7B3A","7A4E2D","belt of grenades","thud","Fully loaded. Fully nervous.","explosive"},
@@ -402,5 +403,4 @@ return {
 	{"hollow visage","KICOKI","Dif",8,9,2,"F2EEE6","B3122E","a cracked white skull mask with red stripes","growl","Put on the face. Lose the manners.","anime,transform"},
 	{"holly","NGCCMI","GWkST",3,1,6,"1B5E20","C62828","spiky glossy leaves, red berries","rustle","Deck the halls with pointy leaves.","holiday,sharp"},
 	{"hollyhock","NGCNMI","dFS",2,1,2,"E91E63","F8BBD0","tall spire of big papery blooms","rustle","Taller than you. Prettier too.","plant,flower"},
-	{"holo decoy","KHCONI","dZc",2,6,1,"6EDCFF","3C8CC8","a flickering cyan copy of you sprinting off","beep","Is it real? No. Did they shoot it? Yes.","scifi,movie"},
 }

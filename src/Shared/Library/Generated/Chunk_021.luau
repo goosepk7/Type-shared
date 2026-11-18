@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rain dance","KBCEOJ","FN",3,4,2,"4FC3F7","B3E5FC","caster dancing as clouds gather and rain","music","Dance. Rain. Repeat.","music,aquatic"},
+	{"rain frog","AMAJAG","Ue",1,5,1,"C8A87A","E8D8B8","round angry frog with tiny legs","croak","Squeaks like an angry toy.","amphibian,wetland,silly,meme"},
 	{"rain shower","GBBEOJ","FN",2,4,2,"7FA7C3","DCEDF7","light quick rain from small cloud","patter","Free bath. You are welcome.","aquatic"},
 	{"rain tree","NBECMI","GWFkS",3,1,8,"6D4C41","43A047","huge umbrella canopy","rustle","Folds its leaves before rain. Clever.","plant,tree"},
 	{"rainbow","GHDBKI","jFe",5,6,3,"FF5252","40C4FF","bright seven-colour arc landing on target","chime","Pot of gold not included.","cute,holy"},
@@ -401,6 +403,4 @@ return {
 	{"royal baby","LHAJNA","dcO",1,2,2,"FDE68A","F9A8D4","baby in tiny crown","giggle","Small crown. Big tantrum.","royal,cute"},
 	{"royal barge","DBDKHC","DkgB",4,3,6,"FFD54F","B71C1C","gilded barge with a canopy throne","splash","Arrives in style. Sinks in style.","vehicle,aquatic,royal"},
 	{"royal carriage","DMDKHL","Dkg",4,5,6,"FFD54F","B71C1C","gilded coach with crowns and plumes","clatter","Make way for royalty!","vehicle,ancient,royal"},
-	{"royal chef","LACJNA","KFe",3,5,4,"F8FAFC","DC2626","tall toque with crown emblem","sizzle","Feasts for kings. Leftovers for you.","royal,food"},
-	{"royal decree","KLCAKI","jIe",6,10,2,"E0283C","FFD7DC","meet their eyes, give an order, and they walk away","chime","You will walk away. Now.","anime,command,eyes"},
 }

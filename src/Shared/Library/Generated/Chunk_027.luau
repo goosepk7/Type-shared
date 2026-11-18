@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"toothbrush","BMAHJI","Ff",1,8,1,"47D7E8","F2F2EE","small brush on a long handle","splash","Twice a day keeps foes away.","bathroom,household"},
+	{"toothpaste","BMALKI","FN",1,6,1,"F2F2EE","98E2C6","squeezed tube of minty paste","splash","Minty fresh. Very slippery.","bathroom,sticky"},
 	{"toothpick","BMAAuK","Te",1,9,1,"C49A6C","D2B48C","tiny wooden spike","thud","The world's smallest spear.","household"},
 	{"top hat","BLBONI","dh",2,5,2,"24262A","9E1B32","tall cylinder hat with band","swish","Something's in there. Usually a rabbit.","clothing,magic,fancy"},
 	{"topaz","BHAA4J","ce",2,7,6,"E67E22","D4A72C","golden orange gem","chime","Sunset in a stone.","treasure,shiny"},
@@ -401,6 +403,4 @@ return {
 	{"verbena","NHBNMI","dFS",1,1,2,"9575CD","E1BEE7","clusters of tiny purple flowers","rustle","Keeps away witches. Supposedly.","plant,flower"},
 	{"verdant bastion","NGDCaI","GWkl",6,5,4,"966E4A","60AA46","a row of gnarled trees bursts up as a woven wall","creak","Plant a seal. Grow a fortress. Water occasionally.","anime,ninja,wood,wall"},
 	{"vermilion bird","AADJDB","KAFe",7,8,5,"DC2626","FB923C","crimson pheasant, flame tail ribbons","screech","Guardian of the south and of spicy weather.","mythical,bird,fire,ancient"},
-	{"vermin","AJBJLA","CPbh",2,7,2,"6B6257","B8AC9C","scurrying pack of scruffy grey nibblers","skitter","If you see one, there are forty.","swarm,wild"},
-	{"vest","BMBONI","G",1,6,2,"1F2F55","D4A72C","buttoned waistcoat","swish","Dapper and ready.","clothing"},
 }

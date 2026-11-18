@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pocket size","OLBONI","WkX",5,9,3,"E04A3A","2B2D33","shrink tiny, then burst back to size with a punch","pop","Tiny hero. Big punch.","hero,movie,scifi"},
+	{"pocket watch","BLAOKI","N",2,5,3,"D4A72C","F3E6C8","hinged gold watch on chain","chime","Tick. Tock. Mesmerising.","time"},
 	{"podcaster","LMCJNI","jd",3,4,3,"7C3AED","F8FAFC","big microphone, headphones","ding","Talks for three hours. Enemies fall asleep.","meme"},
 	{"poem","KFBF6J","jFO",2,5,1,"C4B5FD","F8FAFC","floating quill and curling lines of verse","whisper","Roses are red. Violets are blue. Bonk.","art,school"},
 	{"pog","KHBOKG","DFO",3,8,2,"A855F7","FACC15","wide-open amazed mouth face with sparkles and hype bars","yay","Poggers. That was actually poggers.","gaming,meme,internet"},
@@ -401,6 +403,4 @@ return {
 	{"railway bridge","EMECII","GSh",3,1,9,"6D4C41","9E9E9E","timber trestle carrying train tracks","thud","A train is coming. On top of you.","structure"},
 	{"rain","GBCEOJ","SN",2,4,2,"5D8AA8","C9E6F5","grey cloud with steady falling drops","patter","Forecast says: you, wet.","storm,aquatic"},
 	{"rain boots","BBBONI","G",1,5,3,"F1C40F","F1C40F","shiny tall rubber boots","swish","Splash with impunity.","clothing"},
-	{"rain dance","KBCEOJ","FN",3,4,2,"4FC3F7","B3E5FC","caster dancing as clouds gather and rain","music","Dance. Rain. Repeat.","music,aquatic"},
-	{"rain frog","AMAJAG","Ue",1,5,1,"C8A87A","E8D8B8","round angry frog with tiny legs","croak","Squeaks like an angry toy.","amphibian,wetland,silly,meme"},
 }

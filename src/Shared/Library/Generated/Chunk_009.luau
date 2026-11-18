@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"eradicate","KLDF6B","TIPO",8,6,1,"EF4444","F8FAFC","wide red scanning line sweeping and erasing what it crosses","whum","Target acquired. Target... where did it go?","scifi"},
 	{"erase","KLCAKB","iZ",6,7,1,"ECEFF1","7C4DFF","giant pencil-eraser swipe","squeak","Ctrl-Alt-Gone.","silly,magic"},
 	{"eraser","BMAOJK","jF",1,5,2,"F06292","F2F2EE","pink rectangular rubber block","tap","Undo mistakes. Including you.","school"},
 	{"eris","MCDGKJ","jk",4,4,7,"ECEFF1","B0BEC5","bright icy dwarf world","rumble","Causes trouble wherever it orbits.","space"},
@@ -402,5 +403,4 @@ return {
 	{"float","KLBOKJ","A",1,3,2,"E1BEE7","FFFFFF","soft drifting caster with glow","hum","Weightless and worry-free.","magic"},
 	{"floating castle","EFFCIJ","GSeh",7,1,9,"ECEFF1","7E57C2","castle on a floating rock with waterfalls","chime","Floats above the fight. Drops surprises.","structure,magic,mythical"},
 	{"floating city","EFFNIJ","lSh",5,1,8,"ECEFF1","FFD54F","spires on a hovering platform","hum","No traffic. Just clouds.","structure,future"},
-	{"floating eye","ALDJKE","jAeO",7,3,6,"7C3AED","FDE68A","giant floating eyeball with eyestalks","zap","Sees all. Blinks rarely. Very dry.","dungeon"},
 }

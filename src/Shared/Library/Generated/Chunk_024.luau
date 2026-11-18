@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"snake plant","NGBOMI","FST",2,1,5,"2E7D32","FFEB3B","upright sword-like striped leaves","rustle","Pointy leaves. Unkillable.","plant,houseplant"},
+	{"snakefly","AMAJFB","dAP",1,6,1,"1E1E1E","8A6A4A","long neck flying bug","buzz","Has a snake neck.","insect"},
 	{"snakehead","ABCJCC","DfB",4,7,4,"5A5A3A","C8B88A","long fish with snake-like head","splash","Walks between ponds. Rude.","fish,aquatic"},
 	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
 	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
@@ -401,6 +403,4 @@ return {
 	{"stalk","KIBOMA","QZf",3,5,2,"1F2937","22C55E","pair of eyes peering from a walking bush","rustle","That bush was not there before.","stealth,silly"},
 	{"stamina","KGCOKJ","DF",2,6,4,"43A047","FFF59D","green breathing glow pulse","breath","Keep going. And going.","support"},
 	{"standard bearer","LMCJNA","FOh",3,4,5,"DC2626","FACC15","tall flag with crest","horn","Rally to the flag! Allies buffed.","warrior"},
-	{"staple gun","JKAAwI","Te",2,8,3,"24262A","C9CED4","heavy-duty stapler with grip","thunk","Kachunk. Pinned.","modern,ranged"},
-	{"stapler","BMAAJK","Te",1,7,4,"C0392B","24262A","chunky office stapler","tap","Ka-chunk. Pinned.","office"},
 }

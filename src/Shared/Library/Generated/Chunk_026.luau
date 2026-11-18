@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"swirlie","KBBL5K","jHN",3,5,1,"E0F2FE","38BDF8","toilet bowl whirlpool with a flush handle","slosh","Flush. Hair by plumbing.","silly,gross"},
+	{"swiss cheese","IMBLKI","dSc",2,3,3,"F2D870","E8C04A","wedge riddled with holes","chomp","More holes than cheese.","edible,sweet,dairy"},
 	{"swiss roll","IMBGKF","DkI",3,5,6,"E8C88A","D23A5A","spiral rolled sponge","rumble","A cake that rolled itself up.","edible,heavy,sweet"},
 	{"switchblade","CKAHJK","ZfT",3,10,2,"C9CED4","24262A","folding blade, slim handle","shing","Click. Surprise.","medieval,sharp"},
 	{"sword","CKCHrK","kfT",5,6,5,"8A929B","6B4226","straight double-edged blade, cross guard","shing","The classic. Pointy end goes toward the problem.","medieval,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"tooth","BMBAKB","UfT",3,6,6,"FAFAF0","E8E0C8","shiny white molar with two roots, sparkle","clack","Brushed twice a day. Bites all day.","body,sharp"},
 	{"tooth collector","LHBJNB","Ab",2,8,2,"E0F2FE","FACC15","fairy with pliers","chime","Collects teeth. Pays in coins.","silly"},
 	{"tooth fairy","AHAJNB","AFb",1,8,1,"E0F2FE","FBCFE8","tiny fairy with a giant tooth bag","chime","Pays cash for teeth. No questions.","fairy,cute,silly"},
-	{"toothbrush","BMAHJI","Ff",1,8,1,"47D7E8","F2F2EE","small brush on a long handle","splash","Twice a day keeps foes away.","bathroom,household"},
-	{"toothpaste","BMALKI","FN",1,6,1,"F2F2EE","98E2C6","squeezed tube of minty paste","splash","Minty fresh. Very slippery.","bathroom,sticky"},
 }

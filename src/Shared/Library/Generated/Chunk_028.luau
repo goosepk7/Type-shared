@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"vermin","AJBJLA","CPbh",2,7,2,"6B6257","B8AC9C","scurrying pack of scruffy grey nibblers","skitter","If you see one, there are forty.","swarm,wild"},
+	{"vest","BMBONI","G",1,6,2,"1F2F55","D4A72C","buttoned waistcoat","swish","Dapper and ready.","clothing"},
 	{"veteran","LMCJNA","Ge",5,4,6,"4D7C0F","CA8A04","medals, eyepatch, grizzled beard","ding","Seen it all. Not impressed.","military"},
 	{"veterinarian","LGCJNA","Fh",3,5,4,"F8FAFC","22C55E","scrubs with paw prints, treat pouch","chime","Brings every animal friend in town.","healer"},
 	{"vibe check","KHBFOB","jO",3,8,1,"CE93D8","FFF59D","pastel ring checking everyone","ding","Vibe check! You failed.","meme"},
@@ -401,6 +403,4 @@ return {
 	{"windmill","EFDMIK","GkSI",4,1,7,"F5E6CA","8D6E63","tower with four giant turning sails","creak","The sails spin. Enemies get swatted.","structure,building"},
 	{"windmill arms","KMBN5K","jkf",2,7,1,"FFCC80","FFFFFF","windmilling arms with motion blur","whap","Arms everywhere. Some hit.","silly"},
 	{"window","BMCCnI","Ga",1,1,2,"BFE6F2","8B5A2B","framed glass window","thud","See-through, shatter-prone.","household"},
-	{"window box","NGBOMI","FS",1,1,3,"D84315","F06292","wooden box spilling with flowers","rustle","Defends windows. Prettily.","plant,houseplant"},
-	{"window washer","LBCJNA","IN",3,4,3,"0EA5E9","F8FAFC","squeegee, bucket, harness","squeak","Squeaky clean. Squeaky slippery.","silly"},
 }
