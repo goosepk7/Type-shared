@@ -124,7 +124,6 @@ return {
 	{"alicorn","ALDKAB","AFTg",7,8,6,"E9D5FF","FDE68A","horned winged horse, starry mane","neigh","Both the horn and the wings. Showing off.","mythical,flying,mount,cute"},
 	{"alien","ALCJNA","jleY",5,6,4,"4ADE80","1F2937","big black eyes, green skin, antenna","zap","Came in peace. Brought a ray gun just in case.","alien,space"},
 	{"alien abductee","LLCJNJ","jl",3,4,3,"4ADE80","F8FAFC","startled figure floating up in a beam","hum","Probed once. Never the same.","alien,silly"},
-	{"alien abduction","ALDNOE","lOY",6,4,3,"4ADE80","F8FAFC","green column of light sucking upward","hum","Beam up. Bring snacks.","alien,space"},
 	{"alien ambassador","LLCJNA","jF",3,4,4,"A855F7","4ADE80","alien in fancy sash","hum","We come in peace. With paperwork.","space,alien"},
 	{"alien blob","AJCJGF","WHV",5,3,5,"84CC16","D9F99D","glowing green goo with floating eyes","squelch","Fell from a meteor. Eating your yard.","alien,slime"},
 	{"alien bug","AJCJFA","fTP",4,7,4,"A16207","4D7C0F","four-legged armored alien insect","skitter","Comes in swarms. Doesn't wipe its feet.","alien,insect"},
@@ -403,4 +402,5 @@ return {
 	{"asparagus","IGBAJK","TeV",3,6,4,"6B9E3A","8A5A7A","thin spear stalks, pointy tips","crunch","A bundle of green arrows.","edible,vegetable,healthy"},
 	{"aspen","NGDCMI","GWkS",3,1,6,"ECEFF1","FFD54F","pale trunks, trembling golden leaves","rustle","Shakes in the wind. Never backs down.","plant,tree"},
 	{"asphalt","FEDNnI","KSN",4,1,8,"2B2B2B","4B5563","steaming black road sheet being unrolled like carpet","sizzle","Hot. Sticky. Smells like summer roadworks.","terrain,sticky"},
+	{"assassin","LICJNA","ZTMY",6,9,3,"1F2937","7F1D1D","hood, hidden blade, leap of faith","whoosh","Silent. Sneaky. Allergic to hay bales.","stealth"},
 }

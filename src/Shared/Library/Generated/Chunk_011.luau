@@ -300,7 +300,7 @@ return {
 	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
 	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
 	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
-	{"gravity grenade","CLBGKI","lHe",5,7,1,"7D3CB5","C9CED4","grenade warping the air","zap","Everything floats. Then falls.","scifi,ranged"},
+	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
 	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
 	{"gravity lily","NFBLMJ","lS",2,1,2,"B388FF","E1F5FE","lily floating upside down","chime","Lifts everything nearby. Wheee.","plant,magic,mythical"},
 	{"gravity mage","LLCJNJ","lHN",6,4,4,"312E81","A855F7","floating rocks orbiting a robed mage","hum","What goes up stays up.","magic"},

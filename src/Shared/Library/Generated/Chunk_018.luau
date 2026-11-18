@@ -137,6 +137,7 @@ return {
 	{"orb spirit","ALAGKJ","AcR",1,6,1,"A5F3FC","FDE68A","floating glowing ball","chime","Shows up in photos. Never in person.","spirit"},
 	{"orb weaver","AJBLQA","SfMN",2,6,2,"E8C82A","1E1E1E","yellow spider in a round web","skitter","Builds a new web every night.","arachnid,spooky,venomous"},
 	{"orbit","KLCGKK","kR",4,6,3,"7C4DFF","FFFFFF","glowing balls circling the caster","hum","Round and round. Bonk.","space"},
+	{"orbital drop pod","OKDNkI","GEe",6,5,4,"B0B4BA","78BEFF","a pod slamming down that opens a shield dome","boom","Reinforcements, sort of.","scifi,game"},
 	{"orbital ring","ELFNII","GSR",7,1,9,"B0BEC5","40C4FF","vast ring structure circling a planet","hum","A city shaped like a hula hoop.","structure,future,space"},
 	{"orbital strike","CHFNmI","KET",9,3,5,"F2F2EE","FF2D2D","a red laser dot, then a beam from orbit","zap","Called in from space. Very rude.","scifi,space,modern"},
 	{"orc","AECJNA","Dkf",5,5,6,"4D7C0F","57534E","big tusked green warrior, crude armor","roar","Strong, loud, and great at yelling WAAGH.","goblin,warrior"},

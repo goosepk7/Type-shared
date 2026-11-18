@@ -277,6 +277,7 @@ return {
 	{"plasma torch","OABBwI","Kf",5,6,3,"7DF9FF","C9CED4","handheld blue flame lance","hum","Cuts through steel like butter.","scifi"},
 	{"plasma tornado","HDEN5K","KlHL",8,6,5,"D500F9","18FFFF","magenta-cyan crackling energy funnel","buzz","Tornado, now with neon lighting.","storm,electric"},
 	{"plasma wave","FDDFOB","KLP",7,7,1,"D500F9","18FFFF","magenta-cyan crackling wave","buzz","Glowing hot neon tide.","electric"},
+	{"plasma whip","CDCHJI","fHL",5,9,2,"5AE1FF","C8F5FF","a crackling energy whip lashing a wide arc","zap","Snap! Sizzle! Snap!","scifi,melee"},
 	{"plastic","BMBELJ","USP",2,6,4,"EF4444","22D3EE","shower of bright bottles, tubs and one lonely fork","clatter","Will outlive us all. Especially you.","household,toy"},
 	{"plastic skeleton","BMCJNI","jd",1,3,2,"E3DAC9","24262A","dangly plastic skeleton","jingle","Rattle rattle. Boo!","holiday,spooky"},
 	{"plate","BMAAKK","UeV",1,8,1,"F2F2EE","2F6FD1","round dinner plate","clang","Smash! Opa!","kitchen,household"},

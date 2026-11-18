@@ -352,7 +352,6 @@ return {
 	{"energy core","ODCG4I","EFL",6,1,4,"7DF9FF","F2F2EE","glowing core in a cage","hum","Handle with care. Lots of care.","scifi"},
 	{"energy drink","IDBO7I","D",4,10,2,"1B1B1B","8DE82B","tall can with a lightning bolt, cracked open","fizz","Zoom. Zoom. Zoooom. Crash.","edible,drink,modern"},
 	{"energy wall","ELDCII","GSaL",4,1,6,"40C4FF","E1F5FE","shimmering glowing hex panels","hum","Hums ominously. Blocks everything.","future,magic"},
-	{"energy whip","CHCHJI","KfH",5,9,2,"7DF9FF","F2F2EE","crackling whip of light","zap","Snap! Sizzle!","scifi,glowing"},
 	{"engine","OACM1I","KEkI",5,1,6,"4B5563","EF4444","chunky revving engine block, shaking, pipes blasting flame","rev","VROOM. Just the vroom. No car.","mechanical,loud"},
 	{"engineer","LKCJNA","GFh",4,4,5,"1E3A8A","F97316","goggles, blueprint, wrench","clank","Builds a turret. Then a better one.","tools,science"},
 	{"english","KMBAJB","TeO",3,6,2,"DC2626","FFFFFF","giant red pen, flying commas and apostrophes","scratch","Its \"you're\", not \"your\". Take that.","school"},
