@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ghost ship crew","AICJNJ","Zfh",5,5,4,"94A3B8","22C55E","spectral sailors with tattered coats","wail","They still want their pay.","undead,ghost,pirate"},
+	{"ghost slime","AIBJGJ","UZ",2,5,2,"E5E7EB","A5B4FC","see-through floating jelly","squelch","Boo. Squish.","slime,ghost"},
+	{"ghost stream","ODDBwI","eLNO",7,6,3,"FF8A3D","5AB8FF","a writhing stream from a backpack wand, then a trap","zap","Don't cross the streams. Probably.","scifi,movie,ghost"},
+	{"ghost swarm","AICJLJ","jAZP",5,7,2,"E5E7EB","A5B4FC","cloud of floating sheet ghosts","wail","Boo times fifty.","ghost,swarm,spooky"},
+	{"ghost town","MIENII","jS",4,1,6,"A1887F","E6C27A","empty wooden buildings, tumbleweeds","rumble","Nobody here. Just you and the tumbleweed.","place,terrain,spooky"},
+	{"ghost train","DICKHL","DjgO",4,5,5,"263238","76FF03","creaky cart into a skull tunnel","moan","Boo! Shriek! Boo again!","place,spooky,silly"},
 	{"ghost veil","KLBOKI","Z",2,6,3,"CFE8F2","7A8FA6","caster fades to a faint shimmering outline","whoosh","Now you mostly don't see me.","magic"},
 	{"ghoul","AICJNA","ifM",4,6,4,"57534E","84CC16","hunched pale creature, long claws","growl","Lurks in graveyards eating snacks it shouldn't.","undead,spooky"},
 	{"ghoul king","AIDJNA","ifh",7,5,6,"365314","57534E","crowned ghoul, bone cape","growl","Leader of the graveyard snack club.","undead,royal,spooky"},
@@ -27,6 +33,7 @@ return {
 	{"giant donut","IMEJIF","UkcI",7,2,7,"F2A6C8","D9A04A","enormous ring donut, sprinkles","thud","A donut the size of a tyre. Roll it.","edible,giant,silly"},
 	{"giant donut wheel","IMEJIF","DkI",7,2,7,"F2A6C8","D9A04A","monster donut rolling","thud","A runaway donut. Clear the road.","edible,giant,silly"},
 	{"giant egg","IMEJIF","EkO",7,2,7,"F7F2E8","F2D23A","egg the size of a boulder","thud","What hatches from this? Breakfast.","edible,giant,silly"},
+	{"giant eraser","BMDHJI","kf",3,5,2,"F48FB1","3F6FD8","a huge pink pencil eraser that rubs out a strip of the world","squeak","Mistakes were made. Then unmade.","cartoon,silly"},
 	{"giant flytrap","NGELMI","kScfHO",7,3,7,"558B2F","B71C1C","huge snapping jaws on a thick stalk","chomp","Feed me. FEED ME.","plant,carnivorous,silly"},
 	{"giant forest hog","AMCJAA","Ddkf",5,4,4,"2A2420","6A5A4A","huge black hairy pig","bleat","Biggest wild pig. Grumpy.","mammal,farm,wild"},
 	{"giant ground sloth","AMEJAA","DkTO",7,1,8,"8A6A4A","C8A880","elephant-sized sloth standing up","roar","A sloth as big as an elephant. Slow.","mammal,extinct,ancient,heavy"},
@@ -396,11 +403,4 @@ return {
 	{"grevy's zebra","AMDJAA","Dk",5,8,5,"F2F2F0","1A1A1A","thin stripes, big round ears","neigh","Thinner stripes. Bigger ears.","mammal"},
 	{"grey alien","ALCJNA","jlOY",5,5,3,"9CA3AF","0F172A","big head, huge black almond eyes, thin limbs","hum","Abducts cows. Returns them confused.","alien,space"},
 	{"grey seal","ABCJEC","UfB",3,5,4,"7A7A80","C8C8CC","horse-headed seal","bark","Roman nose. Sings like a ghost.","mammal,aquatic"},
-	{"greyhound","AMCJAA","DQO",4,10,4,"9A9A9E","E8E6E2","lean racing dog, deep chest, thin waist","bark","Fastest couch potato on Earth.","mammal,pet"},
-	{"grid","BDCCnI","GLN",3,1,5,"22D3EE","0F172A","glowing cyan wireframe squares stretching out","hum","Stay inside the lines. Or get zapped.","tech,defense"},
-	{"grief","KBCEOJ","iSN",3,2,1,"64748B","94A3B8","small grey cloud raining on one wilted flower","sigh","Good grief.","mood"},
-	{"griefer","LACJNA","jEb",4,7,3,"111827","F97316","figure holding a lit fuse, grin","cackle","Blew up your house. Says sorry. Doesn't mean it.","meme,gaming,villain"},
-	{"griffin","AFDKAB","DAkfg",7,8,6,"B45309","F5F5F4","lion body, eagle head and wings","screech","Half lion, half eagle, fully in charge.","mythical,flying,mount"},
-	{"griffin egg","AFALGI","Gh",1,1,5,"D6A35A","F8FAFC","speckled golden egg in a nest","crack","Hatches a very loud baby.","mythical"},
-	{"griffin king","AFEKAB","Akgh",8,8,7,"78350F","FACC15","huge golden griffin with crowned crest","screech","Lord of the skies. Dramatic landings.","mythical,mount,royal"},
 }
