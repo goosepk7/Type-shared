@@ -71,7 +71,7 @@ return {
 	{"vine whip","FGCHJB","fH",4,7,2,"388E3C","9CCC65","long green whipping vine","crack","Slapped by a plant. Embarrassing.","plant"},
 	{"vinegar","IJBAKF","jMe",3,6,2,"C8A070","F7F2E8","glass cruet of sour liquid","squirt","Sour enough to sting the eyes.","edible,fruit,sour,sauce"},
 	{"vineyard","MGENII","ScN",2,1,5,"6A1B9A","7CB342","rows of trellised grapevines on a slope","rumble","Grapes everywhere. Sticky feet.","place,terrain,plant"},
-	{"vinyl record","BMAAKK","UTe",1,8,1,"24262A","C0392B","spinning black disc","toot","Spin it. Throw it.","music"},
+	{"vinyl record","BMBAKK","UTe",5,8,5,"1E1B24","FF4F8B","a spinning record with a glowing saw rim flies out and back","whoosh","Spin it. Throw it. Catch it.","music,ranged,boomerang"},
 	{"violet","NGANMI","dFS",1,1,1,"7E57C2","FFEB3B","small velvety bloom with a face","rustle","Shy little flower with a big face.","plant,flower,cute"},
 	{"violet nullity","KLEGKB","ETe",10,2,2,"9B5CFF","FF3B5C","red and blue collide into a slow world-erasing sphere","hum","Red. Blue. Nothing.","anime,magic,ultimate"},
 	{"violin","BMBFJI","jN",2,6,2,"8B3A1A","24262A","small curvy string instrument with bow","strings","The world's tiniest sad song.","music"},

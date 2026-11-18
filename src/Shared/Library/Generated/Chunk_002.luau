@@ -331,7 +331,6 @@ return {
 	{"bathtub car","DBBKHL","UDkg",2,5,3,"FFFFFF","4FC3F7","clawfoot bathtub on wheels","engine","Comes with bubbles. Bubble attacks.","mechanical,vehicle,land,silly"},
 	{"bathysphere","DBCKHC","GgB",3,2,8,"607D8B","FFEB3B","steel ball on a cable with portholes","splash","Down, down, down. Safe inside.","vehicle,aquatic"},
 	{"baton","CMBHJK","fO",2,7,4,"24262A","8E9196","short sturdy stick","bonk","Short stick, big authority.","medieval,heavy"},
-	{"baton conductor","BMAOzI","Fh",1,6,1,"F2F2EE","24262A","slim white wand","strum","Orchestra, ATTACK.","music"},
 	{"battenberg","IMBLKI","dSc",2,3,3,"F2A6C8","F2D870","pink-yellow checkered cake","chomp","A cake with a chessboard inside.","edible,sweet"},
 	{"batter","IMBLGI","SN",2,3,2,"F2D88A","F7EAC0","bowl of pale runny batter","squeak","Gooey, runny, and slippery.","edible,slippery,silly"},
 	{"battering ram","DEDKHL","DkgO",7,3,8,"6D4C41","7F8C8D","log on wheels, iron head, roof shelter","engine","Knocking politely is for losers.","ancient,heavy"},

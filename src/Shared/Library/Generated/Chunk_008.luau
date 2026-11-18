@@ -166,6 +166,7 @@ return {
 	{"drum","BMBFJI","kO",3,5,4,"C0392B","F2F2EE","cylinder drum with sticks","boom","Ba-dum tss.","music"},
 	{"drum kit","BMDFJI","kPO",4,3,5,"24262A","C9CED4","drums and cymbals cluster","boom","Rock solid rhythm.","music,loud"},
 	{"drum roll","KMBOKI","D",2,6,2,"D32F2F","FFD54F","rumbling drum glow","drumroll","Something big is coming...","music"},
+	{"drum solo","BMCA2I","keV",6,9,6,"D93A3A","FFD54F","a floating drum kit; each beat shocks the nearest foe","boom","Eight beats. Then the cymbal.","music,rock,ranged"},
 	{"drummer","LECJNI","kO",4,5,4,"111827","FACC15","drum kit, sticks, headband","drum","Every hit is a shockwave.","music"},
 	{"drumstick","IMBHJI","Fkcf",3,5,4,"C8762B","F2E8D8","meaty club, bone handle","bonk","A club made of dinner.","edible,silly"},
 	{"drumsticks","BMAAJI","Te",1,8,2,"C49A6C","F2F2EE","pair of wooden sticks","strum","Tap tap tap. Throw.","music"},

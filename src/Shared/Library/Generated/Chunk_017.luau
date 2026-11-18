@@ -197,7 +197,7 @@ return {
 	{"mortar and pestle","BEBHtK","kf",2,5,6,"8C8C88","8E9196","stone bowl with grinding club","clang","Grind. Grind. Bonk.","kitchen,household"},
 	{"mortar turret","OKDMxI","EeP",7,3,6,"6B7B3A","3A3F45","stubby upward tube on base","clank","Lobs explosive gifts over walls.","defense,explosive"},
 	{"mosasaurus","ABFJEC","DfHOB",9,6,8,"3A5A6A","C8D0D8","huge sea lizard, double-hinged jaws","roar","Ate sharks for breakfast.","extinct,reptile,aquatic,ocean,danger"},
-	{"mosh pit","KMCNOI","jk",4,7,2,"212121","FF5252","chaotic swirling bump zone","riff","Bump. Shove. Bounce. Repeat.","music,loud"},
+	{"mosh pit","KMDN5I","jkS",5,7,5,"212121","FF5252","a ring of stomping boots that shoves everyone inside","thud","Bump. Shove. Bounce. Repeat.","music,rock,zone"},
 	{"mosque","EHEClI","GFS",5,1,9,"F5F0E1","0E7490","white domed hall with slim towers and a crescent top","chime","Calm inside. Solid outside. Shoes off.","building,holy,structure"},
 	{"mosquito","AMAJFB","diATP",1,6,1,"3A3430","8A7A6A","thin legs, needle mouth, buzzing","buzz","Ruins every summer night.","insect"},
 	{"mosquitofish","ABAJEC","dB",1,6,1,"8A9A8A","D8E0D8","tiny pond fish","splash","Eats mosquitoes. A real hero.","fish,aquatic"},

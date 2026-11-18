@@ -190,6 +190,7 @@ return {
 	{"pianist","LLCJNI","jh",3,3,4,"111827","F8FAFC","tuxedo, grand piano","piano","Dramatic chord. Dramatic effect.","music"},
 	{"piano","BMDGKI","dkO",6,1,6,"24262A","F2F2EE","grand piano, lid propped up","thud","Plunk. Plonk. Crash.","music,heavy,cartoon"},
 	{"piano drop","BMDGKI","k",4,2,3,"5A3420","F5F1E6","an upright piano that crashes down from the sky","crash","Look out below. Way below.","cartoon,silly"},
+	{"piano keys","EMDCpI","Gkl",5,6,6,"F4F1E8","1C1C22","giant piano keys rise in a walkway that plays","music","Every step is a note.","music,structure,mobility"},
 	{"piano rain","BMDEJI","dkO",7,2,5,"24262A","F2F2EE","grand pianos plummeting","thud","Plink. Plonk. PLINK.","silly,cartoon"},
 	{"piasa bird","AADJDB","Akf",6,7,5,"7F1D1D","15803D","antlered dragon bird with fish tail","screech","Painted on cliffs. Not happy about it.","mythical"},
 	{"picarones","IMBLGI","SNP",2,3,3,"D9A04A","B5651D","pumpkin donut rings, syrup","gloop","Peruvian donuts with syrup.","edible,sticky,sweet"},
