@@ -18,6 +18,7 @@ return {
 	"dressing",
 	"equines",
 	"felines",
+	"flora",
 	"monsters",
 	"mythic",
 	"pachyderms",
