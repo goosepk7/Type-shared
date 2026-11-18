@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sticky rice","IMBLGI","SNP",2,3,3,"F7F4EC","E8E0D0","clumpy white rice mound","gloop","Rice that refuses to let go.","edible,sticky"},
+	{"sticky toffee pudding","IMBLGI","SNP",2,3,3,"7A3A1E","C8803A","dark sponge, toffee sauce","gloop","Sticky. Toffee. Pudding. All three.","edible,sticky,sweet"},
+	{"stiletto","CKAHrK","fT",3,10,2,"C9CED4","24262A","needle-thin spike blade","shing","Thin as a whisper, twice as rude.","medieval,sharp"},
 	{"still water","KBCIKI","kaY",6,9,2,"4FA3C7","E6F4FA","calm ring of water that flashes when struck","chime","Go on. Hit me.","anime,sword"},
 	{"stilt house","EMCCII","GS",2,1,5,"A1887F","1E88E5","wooden hut high on tall poles","thud","Floods? Not our problem.","structure,building"},
 	{"stilt walker","LMCJNA","dk",3,4,3,"7C3AED","F472B6","very tall figure on striped stilts","clack","Tallest in the room. Wobbly.","circus,silly"},
@@ -400,7 +403,4 @@ return {
 	{"tasmanian devil","AMBJAA","Ujf",4,6,2,"1E1A18","F2F2F0","black stocky, white chest band, big jaws","screech","Spins and screams. Mostly screams.","mammal,marsupial"},
 	{"tater tots","IMAELB","eVP",2,7,1,"D49A3A","F2CE7A","little golden cylinders","pitter","Tiny potato barrels. Fire at will.","edible,savory"},
 	{"tattletale","LMBJNA","jh",2,7,2,"FACC15","DC2626","pointing kid shouting","whistle","I'M TELLING. Teacher arrives.","silly,school"},
-	{"tattoo","BLBOPB","jQS",3,5,3,"1F3A5F","E63946","inky dragon drawing peeling off skin and flying","buzz","Says MOM in a heart. Bites anyway.","art,silly"},
-	{"tatzelwurm","AJBJCD","CfM",3,6,3,"57534E","D97706","cat-headed lizard worm","hiss","A cat-faced lizard that hisses at hikers.","cryptid,reptile"},
-	{"taunt","KMBFOB","dc",1,8,1,"FF5252","FFFFFF","tongue-out face ring","neener","Nyah nyah! Come get me.","silly"},
 }

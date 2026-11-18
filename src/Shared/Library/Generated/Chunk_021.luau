@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"reason","KHBIyE","Gja",3,3,5,"93C5FD","1E3A8A","flowchart shield: IF, THEN, arrows, one bent","click","Because. That is the reason. Because.","school"},
+	{"rebel","LACJNA","DZeh",5,7,4,"B91C1C","1F2937","bandana, patched jacket, raised fist, makeshift banner","yay","Refuses to follow the tutorial.","warrior"},
 	{"rebirth","KADOKJ","WF",3,5,5,"FF6D00","FFD54F","phoenix-like flame wings rising","whoosh","From the ashes, I rise.","fire,holy"},
 	{"receipt","BMBLCD","WHN",2,5,2,"FFFFFF","6B7280","absurdly long curling paper strip that keeps printing","whirr","Three miles long. For one pack of gum.","silly,meme"},
 	{"recess","KHCNOI","DF",2,7,3,"43A047","FFEB3B","playground glow with bouncing balls","yay","Run around. Feel great.","silly,support"},
@@ -401,6 +403,4 @@ return {
 	{"sailboat","DFCKHC","DkIgB",4,6,4,"F5F5F5","1E88E5","slim hull, single mast, triangle sail","splash","Powered by wind and good vibes.","vehicle,aquatic"},
 	{"sailfish","ABDJEC","DfTB",5,10,4,"2E4E8E","5A8AD0","giant blue sail fin, spear bill","splash","Fastest fish. Has a built-in sail.","fish,aquatic"},
 	{"sailor","LBCJNA","fHB",4,6,5,"F8FAFC","1E3A8A","white cap, striped shirt, anchor tattoo","splash","Knows 200 knots. Ties you in one.","aquatic"},
-	{"saint bernard","ACDJAA","QFf",5,7,4,"B05A2A","F7F2EA","massive fluffy rescue dog, barrel on collar","bark","Rescues you with a tiny snack barrel.","mammal,pet"},
-	{"saki","AMBJBA","deb",2,7,2,"3A3A3A","F2E8D8","fluffy monkey with white face","chatter","Wears a white face mask.","mammal,primate"},
 }

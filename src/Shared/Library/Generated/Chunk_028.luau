@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wall jump","KMBOKG","Dl",2,9,2,"FFCC80","FFFFFF","kick-off spark from a wall","boing","Bounce off walls. Like a pro.","speed,sport"},
+	{"wall of bread","IMDCII","GFk",4,2,8,"C8904A","F5E6C8","stacked loaves forming a wall","thud","Built from carbs. Unbreakable morale.","edible,giant,silly"},
 	{"wall run","KFBOKB","D",2,9,2,"B3E5FC","FFFFFF","caster sprinting sideways along a wall","tap","Gravity is a suggestion.","sport,speed"},
 	{"wall turret","EECMII","GSe",4,1,8,"9E9E9E","5D5D5D","small round tower jutting from a wall","thud","Watches the corner. Shoots the corner.","tower,ancient"},
 	{"wallaby","AMCJAG","Ukf",3,6,2,"8A7666","D8C4B0","small kangaroo, chunky tail","chirp","Kangaroo in fun size.","mammal,marsupial"},
@@ -401,6 +403,4 @@ return {
 	{"xylophone","BMCFJI","dF",1,4,3,"E84A5F","C49A6C","rainbow wooden bars on frame","chime","Plink plonk plink.","music"},
 	{"yak","ACDJAA","DkgO",6,4,7,"2E2622","F2EEE6","long shaggy skirt fur, horns","moo","Wears a fur skirt in the mountains.","mammal,heavy,arctic"},
 	{"yakisoba","IMBLGI","HN",2,3,3,"8A4A1E","7DBE3A","stir-fried noodles, sauce","gloop","Fried noodles from the festival stall.","edible,sticky"},
-	{"yakitori","IABHJI","KfT",3,5,4,"C8602B","6B3A1E","grilled skewers of chicken","bonk","Grilled chicken on tiny swords.","edible,silly"},
-	{"yali","AEDJAA","GDf",6,7,6,"78716C","F59E0B","lion body, elephant trunk, horse legs","roar","Guarding temples since forever.","mythical,guardian"},
 }

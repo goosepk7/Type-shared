@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hoodie","BMCONI","FZ",1,6,2,"8E9196","24262A","zip hoodie with hood up","swish","Hood up. Mode: stealth.","clothing"},
 	{"hoodoo","MEDCII","GS",3,1,9,"D7826A","F4E4BC","tall thin rock spires with cap stones","rumble","Rock towers balanced on nothing.","place,terrain"},
 	{"hoof","BEBAtB","DkO",4,7,6,"3B2F2F","8D6E63","dark horse hoof with a shiny horseshoe","clack","Clip. Clop. Clobber.","body,farm"},
 	{"hook hand","CKBHrI","fH",3,7,4,"C9CED4","5A3A1E","curved hook on a cuff","bang","Handy, minus the hand.","pirate,sharp"},
@@ -100,6 +101,7 @@ return {
 	{"humpback whale","ABFJEC","UdkIB",8,3,9,"2E3A48","E8ECEE","long white flippers, knobby head, breaching","whalesong","Sings top hits across entire oceans.","mammal,aquatic,ocean,heavy"},
 	{"humphead wrasse","ABDJEC","DfB",5,7,4,"3AA0A0","6AC8E8","giant blue-green wrasse with forehead hump","splash","Big forehead. Kind eyes.","fish,aquatic"},
 	{"humpty dumpty","LMBJGG","UdV",2,3,1,"F8FAFC","DC2626","giant egg with face, bowtie, on a wall","crack","Had a great fall. Still smiling.","folklore,silly"},
+	{"hundred slap","KMBOKI","kf",3,9,1,"FFD0A8","FFFFFF","a blur of open-palm slaps with afterimage hands","slap","One hundred. Give or take.","game,fighting,melee"},
 	{"hunger","KMCO5J","ifH",4,5,2,"F59E0B","7C2D12","growling empty stomach with a fork and knife orbiting","growl","Not you when you are hungry. Worse.","mood,silly"},
 	{"hunt","KGCOvB","QTe",5,7,2,"4D7C0F","B45309","drawn bow and paw-print trail leading to the target","twang","Shh. Follow the paw prints.","wild,ranged"},
 	{"hunter","LGCJNA","cTe",5,6,4,"365314","78350F","fur cap, crossbow, trap belt","twang","Sets a trap. Steps in it. Starts over.","outdoor"},
@@ -401,6 +403,4 @@ return {
 	{"jerry can","BABL2I","KE",3,1,4,"C0392B","C0392B","boxy fuel can with spout","thud","Do not light. We said DO NOT.","container,flammable"},
 	{"jersey","BMBOVB","GDh",2,6,3,"DC2626","FFFFFF","red team shirt with a big number 10 flying like a flag","crowd","Number 10. Automatically 30% better.","sport,clothing"},
 	{"jersey devil","AACJAB","DjA",5,8,4,"57534E","F97316","horse head, bat wings, hooves, forked tail","screech","Born in a pine barren. Never pays rent.","cryptid,spooky"},
-	{"jerusalem artichoke","IEBAKK","keO",3,7,6,"C8A070","F2E8D0","knobby tan tuber","bonk","Not from Jerusalem. Not an artichoke.","edible,vegetable"},
-	{"jerusalem cricket","AMAJFA","dfP",1,6,1,"E8A04A","3A2A1A","big-headed striped cricket","buzz","Big head. Many nicknames.","insect"},
 }

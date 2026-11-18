@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pond scum","NJCLMI","SMNP",2,1,2,"9CCC65","C0CA33","green film covering water","splash","Gross. Slippery. Sticky.","plant,aquatic,silly"},
+	{"pontoon boat","DBCKHC","DkgB",3,4,5,"F5F5F5","9E9E9E","flat deck on twin floating tubes","splash","The party has arrived on the lake.","vehicle,aquatic,silly"},
+	{"pony","AMCKAA","Dkg",3,8,5,"B88A5A","F2E6D4","short round horse, thick mane","neigh","Small horse. Massive ego.","mammal"},
 	{"ponytail","BMBHCK","Ukf",3,8,3,"C68642","FF6FB5","long swishing ponytail with a pink scrunchie","swish","Head turn. Whip crack. Oops, sorry.","body,silly"},
 	{"poodle","AMBJAA","DjQf",3,7,4,"F2EDE6","D8CFC2","pom-pom tufts, curly coat, prancing pose","bark","Fancy haircut. Also secretly very smart.","mammal,pet"},
 	{"poodle moth","AMAJFB","jdA",1,5,1,"F2F2EE","E8E0D8","super fluffy white moth","flutter","A moth that looks like a poodle.","insect,cute"},
@@ -92,7 +95,6 @@ return {
 	{"power nap","KHBOKJ","F",1,2,3,"9FA8DA","FFFFFF","caster snoozing on a cloud pillow","snore","Five minutes. Fully recharged.","support,silly"},
 	{"power plant","EDECII","GSL",4,1,8,"B0BEC5","FFEB3B","big building, cooling towers, sparking wires","hum","Plugs into everything. Zaps everything.","structure,building,mechanical"},
 	{"power saw","JKCL1I","V",5,1,6,"8E9196","F1C40F","saw blade sticking out of a table","whirr","Don't put your hands there.","tool"},
-	{"power slide","KMBOKB","Dk",3,9,2,"FFAB40","FFFFFF","sliding dust trail","screech","Slide in. Knock 'em over.","silly,speed"},
 	{"power surge","FDCFOB","LP",6,9,1,"33A1FD","FFE066","wave of electric arcs racing outward","buzz","All the power. All at once.","electric"},
 	{"pozole","IBBOGI","FS",3,4,3,"C8302B","F7F2EC","red stew with big hominy","slurp","Hominy swimming in red broth.","edible,warm,healthy"},
 	{"prairie chicken","AMBJDA","df",2,4,2,"B8904A","E8A02A","grouse with orange air sacs","boom","Booms like a drum.","bird,farm"},
@@ -401,6 +403,4 @@ return {
 	{"reality","KLCFOB","aO",5,7,1,"ECEFF1","212121","harsh grey ripple stripping illusions","thunk","Reality check! Snap out of it.","magic"},
 	{"reaper chain","CKBAJI","HeN",4,9,4,"5B6168","C9A86A","a hooked blade on a long rattling chain","clang","Get over here. Politely.","anime,weapon"},
 	{"reappear","KLBOKI","Y",2,10,1,"E1BEE7","FFFFFF","sparkle burst with caster appearing","poof","Ta-da! Missed me?","magic"},
-	{"reason","KHBIyE","Gja",3,3,5,"93C5FD","1E3A8A","flowchart shield: IF, THEN, arrows, one bent","click","Because. That is the reason. Because.","school"},
-	{"rebel","LACJNA","DZeh",5,7,4,"B91C1C","1F2937","bandana, patched jacket, raised fist, makeshift banner","yay","Refuses to follow the tutorial.","warrior"},
 }

@@ -95,6 +95,7 @@ return {
 	{"dried apricot","IMBLGI","SNP",2,3,3,"E8862B","F2A65A","flat chewy orange disc","gloop","Chewy orange coins.","edible,sticky"},
 	{"dried cranberries","IMAELB","eVP",2,7,1,"A3101E","C8303A","wrinkly red bits","pitter","Sweet-tart red jewels.","edible,sweet"},
 	{"dried fruit","IMAELB","eVP",2,7,1,"A0522D","E8A43A","pile of wrinkly fruit bits","pitter","Fruit, concentrated for travel.","edible,sweet"},
+	{"drift spark","KDBOKF","DkL",4,10,2,"4FC3FF","FF9A2E","rune sled power-slides spraying blue-orange sparks","screech","Blue sparks. Orange sparks. Gone.","game,racing,speed"},
 	{"drill","JKBAJK","CfT",4,7,5,"F1C40F","24262A","pistol-grip drill with bit","whirr","Whirrrrr. Hole.","tool,mechanical"},
 	{"drill arm","CKCHJI","CfT",6,6,6,"2C3539","D4A72C","giant spinning drill arm","zap","Pierce the heavens!","scifi,mechanical"},
 	{"drill sergeant","LMCJNA","IOh",4,5,6,"4D7C0F","DC2626","campaign hat, megaphone","horn","DROP AND GIVE ME TWENTY.","military"},
@@ -402,5 +403,4 @@ return {
 	{"event horizon","FIFNOI","iHO",9,2,8,"000000","FF6E40","glowing ring around a perfect black circle","hum","The point of no return. Literally.","space,danger"},
 	{"everfrost","FCENOI","JSN",7,2,8,"E1F5FE","4FC3F7","frost that never melts, glittering forever","crackle","Never thaws. Ever.","frozen"},
 	{"everlasting flower","NGBNMI","dFS",1,1,3,"FFB300","E53935","papery crisp petals that never fade","rustle","Never wilts. Never dies. Nice.","plant,flower"},
-	{"everything","KLFNOI","KJLP",9,5,5,"FF4081","40C4FF","all elements swirling at once","boom","Everything. All at once. Sorry.","chaos,danger"},
 }
