@@ -885,3 +885,202 @@ def tracks(H, parent, x, z0, z1, width, r_end=0.55, y_bottom=0.0, n_road=5, r_ro
 
 # word filters for the land-vehicle MAP rules: Vehicle words, plus toy / robot vehicles from Machine / Object
 LAND = {"cat": ["Vehicle", "Machine", "Object"], "bp": ["Vehicle", "CarWheeled", "Tracked", "Insect", "Humanoid", "Biped"]}
+
+
+# ================================================================================================ real-scale cabins
+# Mount overhaul (2026-11): vehicles are authored at their in-game size in studs around a seated R15 rider.
+# Rider (blocky preview avatar): hip point = bottom of the pelvis on the cushion; seated head top ~3.3-3.4 above it,
+# shoulders 2.1 above it, thighs forward 1.3, shins straight down 1.2 (feet on the floor), arms forward at the
+# shoulders out to x = +-2.0. Encased cabins keep the roof underside >= hip + 3.6.
+RIDER_HEAD = 3.4
+ROOF_CLEAR = 3.62
+SHIN = 1.2
+
+
+def ride(H, seat, enter, bone="Chassis", seat_part="Seat", seat_size=(1.5, 0.2, 1.3), length=None, stand=False, hidden=False, **extra):
+    """Mount data for a real-scale vehicle: seat socket = the rider's HIP point (rider faces -Z), enter socket on the
+    ground beside the door. length defaults to the model's Z extent (all direct pieces, BoundLo/BoundHi)."""
+    if length is None:
+        lo, hi = H.bpos("BoundLo"), H.bpos("BoundHi")
+        length = hi[2] - lo[2]
+    H.mount = {"length": round(float(length), 2), "seat": seat_part,
+               "saddle": {"pos": tuple(round(float(v), 3) for v in seat), "size": tuple(float(v) for v in seat_size)}}
+    if stand:
+        H.mount["stand"] = True
+    if hidden:
+        H.mount["hidden"] = True
+    H.mount.update(extra)
+    H.socket("seat", seat, bone)
+    H.socket("enter", (float(enter[0]), 0.0, float(enter[2])), "Body")
+
+
+def bucket_seat(hip, w=1.5, d=1.35, back=2.35, cush=0.4, recline=10.0, floor=None, headrest=True, bolster=True):
+    """Real-scale seat for a rider whose hip point is `hip` (x, y, z): cushion top at hip.y - 0.1, cushion running
+    forward under the thighs, backrest face just behind the pelvis, headrest behind the head, optional pedestal down
+    to `floor`. Faces -Z."""
+    x, y, z = hip
+    ct = y - 0.1
+    parts = [box((w, cush, d), (x, ct - cush / 2, z + 0.5 - d / 2), r=min(0.14, cush * 0.4), seg=1)]
+    bk = [box((w * 0.94, back, 0.36), (0, back / 2, 0.18), r=0.13, seg=1)]
+    if headrest:
+        bk.append(box((w * 0.5, 0.5, 0.3), (0, back + 0.22, 0.2), r=0.12, seg=0))
+        for s in (-1, 1):
+            bk.append(rod((s * w * 0.14, back - 0.1, 0.2), (s * w * 0.14, back + 0.05, 0.2), 0.035, segs=6))
+    if bolster:
+        for s in (-1, 1):
+            bk.append(box((0.2, back * 0.7, 0.42), (s * (w * 0.47 - 0.06), back * 0.42, 0.12), r=0.08, seg=0))
+            parts.append(box((0.22, 0.2, d * 0.85), (x + s * (w / 2 - 0.1), ct + 0.04, z + 0.5 - d / 2), r=0.08, seg=0))
+    parts.append(xf(merge(*bk), (x, ct - cush * 0.5, z + 0.5), r=(recline, 0, 0)))
+    if floor is not None and ct - cush - floor > 0.08:
+        hgt = ct - cush - floor + 0.05
+        parts.append(box((w * 0.55, hgt, d * 0.55), (x, floor + hgt / 2 - 0.03, z + 0.5 - d / 2), r=0.04, seg=0))
+    return merge(*parts)
+
+
+def band(a, b, thick, inward=(0.0, 0.0)):
+    """Thin (z, y) quad band from point a to b, `thick` toward the side of `inward` (a (z, y) direction)."""
+    a, b = np.asarray(a, float), np.asarray(b, float)
+    d = b - a
+    n = np.array([d[1], -d[0]]) / np.linalg.norm(d)
+    if n @ np.asarray(inward, float) < 0:
+        n = -n
+    return np.array([a, b, b + n * thick, a + n * thick])
+
+
+def tumble_warp(xg, tum, y0, y1, crown=0.0):
+    """Greenhouse warp: x scaled from 1 at y0 to (1 - tum) at y1 (x measured as a fraction of xg), crown lifts the
+    centre near the top."""
+    def f(V):
+        x, y, z = V[:, 0], V[:, 1], V[:, 2]
+        t = np.clip((y - y0) / (y1 - y0), 0, 1)
+        return np.column_stack([x * (1 - tum * t), y + crown * np.clip(1 - (x / xg) ** 2, 0, 1) * t ** 3, z])
+    return f
+
+
+def greenhouse_real(H, bone, ws, belt, roof0, roof1, back, roof_in, xg, tum=0.12, roof_t=0.22, crown=0.08, bpillars=(), pw=0.3,
+                    roof_col="primary", glass_tr=0.45, rear_pw=None, quarter=None, roof_pri=0.7, pillar_col=None, open_=False, frame_col=None):
+    """Real cabin greenhouse: THIN glass panes (windshield, side windows, rear window) in one Glass piece, a roof
+    skin whose underside sits at roof_in, and A / B / C pillars standing proud of the glass. Side profile: windshield
+    (ws, belt) -> (roof0, roof_in), roof to roof1, rear window down to (back, belt).
+    open_: convertible / jeep: windshield frame + glass only (header at roof0, no roof). Returns the roof x half width."""
+    y1 = roof_in
+    tw = tumble_warp(xg, tum, belt, y1)
+    xt = xg * (1 - tum)
+    g = []
+    gth = 0.07
+    if open_:
+        wa, wb_ = (ws, belt - 0.06), (roof0, y1)
+        g.append(warp(extrude(band(wa, wb_, gth, (1, -1)), 2 * xg - 0.2, bevel=0.02, seg=1), tw))
+        piece(H, "Glass", bone, merge(*g), col="glass", mat="glass", role="window", pri=0.8, tr=glass_tr, ao=False)
+        fr = []
+        for s in (-1, 1):
+            fr.append(bar((s * (xg - 0.08), belt - 0.05, ws + 0.02), (s * (xt - 0.08), y1 + 0.05, roof0 + 0.02), pw * 0.8, pw * 0.7, r=0.05))
+        fr.append(bar((-(xt - 0.1), y1 + 0.06, roof0 + 0.03), ((xt - 0.1), y1 + 0.06, roof0 + 0.03), pw * 0.7, pw * 0.8, r=0.05, ext=0.08))
+        piece(H, "Roof", bone, merge(*fr), col=frame_col or roof_col, mat="metal", role="body", pri=roof_pri)
+        return xt
+    # side panes (right, mirrored): the window outline inset a little under the pillars / roof
+    sp = np.array([(ws + 0.05, belt - 0.06), (roof0 + 0.02, y1 + 0.06), (roof1 - 0.02, y1 + 0.06), (back - 0.05, belt - 0.06)])
+    side = warp(xf(extrude(sp, gth, bevel=0.02, seg=1), (xg - gth / 2, 0, 0)), tw)
+    g += [side, mirror(side)]
+    g.append(warp(extrude(band((ws, belt - 0.06), (roof0, y1 + 0.06), gth, (1, -1)), 2 * xg - 0.04, bevel=0.02, seg=1), tw))
+    g.append(warp(extrude(band((back, belt - 0.06), (roof1, y1 + 0.06), gth, (-1, -1)), 2 * xg - 0.04, bevel=0.02, seg=1), tw))
+    piece(H, "Glass", bone, merge(*g), col="glass", mat="glass", role="window", pri=0.8, tr=glass_tr, ao=False)
+    # roof skin
+    rp = round_poly(np.array([(roof0 - 0.16, y1 - 0.03), (roof0 + 0.22, y1 + roof_t), (roof1 - 0.22, y1 + roof_t), (roof1 + 0.16, y1 - 0.03)]), 0.1, 2)
+    roof = warp(extrude(rp, 2 * xt + 0.24, bevel=0.1, seg=2),
+                lambda V: np.column_stack([V[:, 0], V[:, 1] + crown * np.clip(1 - (V[:, 0] / (xt + 0.12)) ** 2, 0, 1) * (V[:, 1] > y1 + 0.02), V[:, 2]]))
+    pil = []
+    rpw = rear_pw or pw * 1.5
+    for s in (-1, 1):
+        pil.append(bar((s * (xg + 0.03), belt - 0.03, ws + 0.12), (s * (xt + 0.04), y1 + 0.02, roof0 + 0.1), pw, pw * 0.75, r=0.06))
+        for zb in bpillars:
+            pil.append(bar((s * (xg + 0.04), belt - 0.03, zb), (s * (xt + 0.05), y1 + 0.02, zb), pw * 1.15, pw * 0.75, r=0.06))
+        pil.append(bar((s * (xg + 0.03), belt - 0.03, back - 0.1), (s * (xt + 0.04), y1 + 0.02, roof1 - 0.08), rpw, pw * 0.75, r=0.06))
+        if quarter is not None:
+            pil.append(bar((s * (xg + 0.04), belt - 0.03, quarter), (s * (xt + 0.05), y1 + 0.02, quarter), pw * 0.9, pw * 0.75, r=0.06))
+        # drip rail along the roof edge
+        pil.append(bar((s * (xt + 0.06), y1 + 0.03, roof0 + 0.15), (s * (xt + 0.06), y1 + 0.03, roof1 - 0.15), 0.12, 0.12, r=0.04))
+    if pillar_col and pillar_col != roof_col:
+        piece(H, "Roof", bone, roof, col=roof_col, mat="metal", role="body", pri=roof_pri)
+        piece(H, "Pillars", bone, merge(*pil), col=pillar_col, mat="metal", role="body", pri=roof_pri + 0.2)
+    else:
+        piece(H, "Roof", bone, merge(roof, *pil), col=roof_col, mat="metal", role="body", pri=roof_pri)
+    return xt
+
+
+def door_walls(H, bone, hw, t, z0, z1, floor, belt, splits=(), warp_fn=None, col="primary", name="Doors", pri=0.6, cut=None):
+    """Side walls of an open-topped cabin tub (the doors): a slab per door between z0 and z1 from the floor to the
+    beltline, `t` thick with the outer face at the body side (x = +-hw before warp_fn). The bevelled ends of each slab
+    read as the door shut lines. cut: optional callable poly -> poly (e.g. a wheel arch)."""
+    zs = [z0] + sorted(splits) + [z1]
+    out = []
+    for a, b in zip(zs[:-1], zs[1:]):
+        poly = np.array([(a, floor), (b, floor), (b, belt), (a, belt)])
+        if cut is not None:
+            poly = cut(poly)
+        sl = extrude(round_poly(poly, [0.04, 0.04, 0.1, 0.1] if len(poly) == 4 else 0.04, 2), t, bevel=min(0.1, t * 0.35), seg=2)
+        sl = xf(sl, (hw - t / 2, 0, 0))
+        out += [sl, mirror(sl)]
+    m = merge(*out)
+    if warp_fn is not None:
+        m = warp(m, warp_fn)
+    piece(H, name, bone, m, col=col, mat="metal", role="body", pri=pri)
+    return m
+
+
+def door_cards(hw, t, spans, floor, belt, warp_fn=None):
+    """Interior door trim for each (z0, z1) span: a panel on the inner wall face with an armrest and a pull handle."""
+    out = []
+    xi = hw - t
+    for a, b in spans:
+        a, b = a + 0.12, b - 0.12
+        h0, h1 = floor + 0.3, belt - 0.08
+        out.append(box((0.1, h1 - h0, b - a), (xi - 0.03, (h0 + h1) / 2, (a + b) / 2), r=0.04, seg=0))
+        out.append(box((0.22, 0.14, (b - a) * 0.55), (xi - 0.12, floor + 1.25, (a + b) / 2 + (b - a) * 0.12), r=0.05, seg=0))
+        out.append(cbox((0.08, 0.1, 0.4), (xi - 0.1, belt - 0.45, a + 0.45), c=0.03))
+    m = merge(*out)
+    m = merge(m, mirror(m))
+    if warp_fn is not None:
+        m = warp(m, warp_fn)
+    return m
+
+
+def dash_mesh(ws, fw, floor, belt, half_w, depth=0.6):
+    """Dashboard: a side-profile slab from the cowl back over the footwell (top under the windshield)."""
+    poly = np.array([(fw + depth, floor + 1.15), (fw + depth, belt + 0.12), (fw + depth - 0.18, belt + 0.3), (ws + 0.42, belt + 0.12),
+                     (ws + 0.3, belt - 0.12), (fw - 0.1, floor + 1.0)])
+    return extrude(round_poly(poly, [0.05, 0.08, 0.12, 0.06, 0.03, 0.03], 2), 2 * half_w, bevel=0.06, seg=1)
+
+
+def instruments(H, bone, x, y, z, w=1.0, col="darker", pri=1.6):
+    """Driver's binnacle (hood + glowing gauge faces) centred at (x, y, z) facing +Z (the driver)."""
+    hood = merge(box((w, 0.3, 0.5), (x, y + 0.16, z - 0.05), r=0.1, seg=1))
+    faces = merge(*(lamp((x + dx, y - 0.02, z + 0.2), 0.16, 0.05, axis="+z") for dx in (-w * 0.22, w * 0.22)))
+    piece(H, "Gauges", bone, faces, col=[0.55, 0.85, 1.0], mat="glass", role="light", pri=pri + 0.6, ao=False, glow=True)
+    return hood
+
+
+def arch_liner(z, wr, ra, x_half, t=0.12, a0=12.0, a1=168.0, n=14):
+    """Dark wheel-arch liner: a band just inside the arch cut (both sides of the body in one slab)."""
+    pts = [(z + (ra + 0.03) * math.cos(math.radians(a)), wr + (ra + 0.03) * math.sin(math.radians(a))) for a in np.linspace(a0, a1, n)]
+    pts += [(z + (ra - t) * math.cos(math.radians(a)), wr + (ra - t) * math.sin(math.radians(a))) for a in np.linspace(a1, a0, n)]
+    return extrude(np.array(pts), 2 * x_half, bevel=0.03, seg=1)
+
+
+def hollow_profile(front, back_pts, fw, bulk, floor, belt, cowl_r=0.0):
+    """Join a body side profile with a cabin notch: `front` ends at the cowl, the notch runs down the firewall (fw)
+    along the cabin floor and up the rear bulkhead (bulk) to the belt, then `back_pts` continue to the tail. Each
+    point is ((z, y), radius)."""
+    notch = [((fw, belt), cowl_r), ((fw, floor), 0.0), ((bulk, floor), 0.0), ((bulk, belt), 0.0)]
+    pts = list(front) + notch + list(back_pts)
+    return np.array([p for p, _ in pts]), [r for _, r in pts]
+
+
+def car_arch(zc, wr, ra, ybot, n=15):
+    """Wheel arch points (z, y) from the rear side over the top to the front side, for a profile running tail ->
+    nose along the bottom."""
+    dy = wr - ybot
+    dz = math.sqrt(max(ra * ra - dy * dy, 0.01))
+    a0 = math.atan2(-dy, dz)
+    a1 = math.pi - a0
+    return [((zc + ra * math.cos(a0 + (a1 - a0) * k / (n - 1)), wr + ra * math.sin(a0 + (a1 - a0) * k / (n - 1))), 0.0) for k in range(n)]

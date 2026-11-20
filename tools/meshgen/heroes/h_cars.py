@@ -22,42 +22,52 @@ BLUE_L = [0.15, 0.35, 0.95]
 LENS = [0.95, 0.96, 0.92]
 
 BASE = dict(
-    L=9.0,            # bumper to bumper
-    W=3.7,            # body width
-    wr=0.68,          # wheel radius
-    ww=0.62,          # tyre width
-    wr_rear=None,     # bigger rear wheels (muscle / dragster)
+    # real game scale (studs) around a seated R15 rider: hip point (seat_x, hip, hip_z), rider faces -Z
+    L=14.0,           # bumper to bumper
+    W=6.8,            # body width
+    wr=1.2,           # wheel radius
+    ww=0.95,          # tyre width
+    wr_rear=None,     # bigger rear wheels (muscle / sports)
     ww_rear=None,
-    track_in=0.12,    # wheel inset from the body side
-    wb=5.6,           # wheelbase
-    axle_off=0.15,    # wheelbase centre offset (+ = rearward)
+    track_in=0.1,     # wheel inset from the body side
+    wb=8.75,          # wheelbase
+    axle_off=-0.08,   # wheelbase centre offset (+ = rearward)
     sill=0.5,         # body bottom between the arches
-    belt=2.05,        # beltline (window sill)
-    hood=1.68,        # hood height at the front edge
-    nose=1.25,        # height of the nose face top (above it the hood edge rounds)
-    deck=2.0,         # trunk lid height
-    ws=-1.2,          # windshield base z
-    roof0=-0.15,      # roof front z
-    roof1=1.6,        # roof rear z
-    back=2.55,        # rear window base z
-    roofy=3.05,       # roof height
-    cabin="sedan",    # sedan | open | none | fastback | wagon | van
-    tumble=0.2,       # greenhouse tumblehome
-    gw=0.86,          # greenhouse width factor
+    floor=0.8,        # cabin floor top
+    hip=2.0,          # rider hip y (cushion top = hip - 0.1); hip - floor = shin length unless the footwell is sunk
+    hip_z=-0.7,       # driver hip z
+    seat_x=1.05,      # driver at -seat_x (left-hand drive), passenger at +seat_x
+    rear_hip_z=1.6,   # rear bench (None = two-seater)
+    belt=3.25,        # beltline (window sill / door top)
+    hood=2.75,        # hood height at the front edge
+    nose=2.3,         # height of the nose face top
+    deck=3.3,         # trunk lid height
+    ws=-3.55,         # windshield base z (cowl)
+    fw=-2.95,         # firewall z (front of the cabin tub)
+    bulk=2.75,        # rear bulkhead z (back of the cabin tub)
+    roof0=-1.55,      # roof front z
+    roof1=2.1,        # roof rear z
+    back=4.5,         # rear window base z
+    roof_in=None,     # roof underside (default hip + ROOF_CLEAR)
+    cabin="sedan",    # sedan | fastback | wagon | open
+    doors=4,
+    tumble=0.12,      # greenhouse tumblehome
     nose_taper=0.1,
-    crown=0.08,
+    crown=0.1,
+    bpillar=0.35,
+    quarter=None,     # extra quarter-window pillar z (wagons)
     rim="alloy",
     spokes=5,
     rim_col="metal",
     knobby=0.0,
-    lamps="rect",     # rect | round | pop
+    lamps="rect",     # rect | round
     grille="wide",    # wide | split | none | jeep
-    bumper="body",    # body | chrome | black | bull
+    bumper="body",    # body | chrome | black
+    bull=False,       # push bar
     exhaust=1,        # 0, 1, 2 (twin)
     spoiler=False,
     scoop=False,
     stripes=False,
-    seats=2,          # front seats (rear bench added for sedans)
     lightbar=False,
     taxi=False,
     doors_col=None,   # police: doors in secondary
@@ -71,53 +81,13 @@ BASE = dict(
     roof_lights=False,
     mudflaps=False,
     seat_col="darker",
+    trim_col="darker",
+    header=None,      # open cabins: windshield header height above the belt
+    attack="ram",
+    arch_gap=0.2,
+    haunch=False,
     preview={},
 )
-
-
-def _profile(P):
-    """Side profile (z, y) of the lower body with the wheel arches cut in."""
-    L, wr, sill = P["L"], P["wr"], P["sill"]
-    zn, zt = -L / 2, L / 2
-    zc = P["axle_off"]
-    zf, zr = zc - P["wb"] / 2, zc + P["wb"] / 2
-    wrr = P["wr_rear"] or wr
-    belt, hood, nose, deck = P["belt"], P["hood"], P["nose"], P["deck"]
-    ybf = sill + 0.1
-    pts = []
-    radii = []
-
-    def add(p, r=0.0):
-        pts.append(p)
-        radii.append(r)
-
-    add((zn + 0.35, ybf), 0.25)
-    add((zn, ybf + 0.35), 0.15)
-    add((zn - 0.05, nose), 0.25)
-    add((zn + 0.35, hood), 0.3)
-    add((P["ws"], belt), 0.25)
-    if P["cabin"] in ("sedan", "open", "none", "fastback"):
-        add((P["back"], belt - 0.02), 0.2)
-        add((zt - 0.35, deck), 0.3)
-    else:
-        add((zt - 0.5, belt - 0.02), 0.3)
-        add((zt - 0.05, deck), 0.2)
-    add((zt, sill + 0.65), 0.2)
-    add((zt - 0.25, sill + 0.05), 0.15)
-
-    def arch(zc_, rr, ra):
-        yw = rr
-        dy = yw - sill
-        dz = math.sqrt(max(ra * ra - dy * dy, 0.01))
-        a0 = math.atan2(-dy, dz)
-        a1 = math.pi - a0
-        for k in range(15):
-            a = a0 + (a1 - a0) * k / 14
-            add((zc_ + ra * math.cos(a), yw + ra * math.sin(a)), 0.0)
-
-    arch(zr, wrr, wrr + 0.14)
-    arch(zf, wr, wr + 0.14)
-    return np.array(pts), radii
 
 
 def _car(hid, **kw):
@@ -131,13 +101,18 @@ def _car(hid, **kw):
     wrr, wwr = P["wr_rear"] or wr, P["ww_rear"] or ww
     zn, zt = -L / 2, L / 2
     zf, zr = P["axle_off"] - P["wb"] / 2, P["axle_off"] + P["wb"] / 2
-    belt, roofy = P["belt"], P["roofy"]
+    sill, floor, hip, hip_z, belt = P["sill"], P["floor"], P["hip"], P["hip_z"], P["belt"]
+    ws, fw, bulk, back = P["ws"], P["fw"], P["bulk"], P["back"]
+    cab = P["cabin"]
+    roof_in = P["roof_in"] or hip + K.ROOF_CLEAR
     hw = W / 2
+    t = 0.3
+    sx = P["seat_x"]
 
     # ------------------------------------------------------------------ skeleton
     H.bone("Chassis", "Body", (0, wr + 0.1, (zf + zr) / 2))
-    xw = hw - P["track_in"] - ww / 2 + 0.05
-    xwr = hw - P["track_in"] - wwr / 2 + 0.05
+    xw = hw - P["track_in"] - ww / 2
+    xwr = hw - P["track_in"] - wwr / 2
     H.bone("SteerFR", "Body", (xw, wr, zf))
     H.bone("SteerFL", "Body", (-xw, wr, zf))
     H.bone("WheelFR", "SteerFR", (xw, wr, zf))
@@ -145,326 +120,335 @@ def _car(hid, **kw):
     H.bone("WheelBR", "Body", (xwr, wrr, zr))
     H.bone("WheelBL", "Body", (-xwr, wrr, zr))
 
-    # ------------------------------------------------------------------ body warp
-    tz0, tz1 = zn + 1.3, zt - 1.0
+    # ------------------------------------------------------------------ body warp (plan taper, tumblehome, crown)
+    tz0, tz1 = zn + 1.8, zt - 1.4
+    hood_y = P["hood"]
 
-    def bodywarp(V, crown=P["crown"], tum=0.05, top=belt):
+    def bodywarp(V):
         x, y, z = V[:, 0], V[:, 1], V[:, 2]
-        sz = 1 - P["nose_taper"] * np.clip((tz0 - z) / 1.3, 0, 1) ** 2 - 0.06 * np.clip((z - tz1) / 1.0, 0, 1) ** 2
-        sy = 1 - tum * np.clip((y - (top - 0.7)) / 0.7, 0, 1) - 0.05 * np.clip((P["sill"] + 0.3 - y) / 0.3, 0, 1)
+        sz = 1 - P["nose_taper"] * np.clip((tz0 - z) / 1.8, 0, 1) ** 2 - 0.06 * np.clip((z - tz1) / 1.4, 0, 1) ** 2
+        sy = 1 - 0.05 * np.clip((y - (belt - 0.8)) / 0.8, 0, 1) - 0.05 * np.clip((sill + 0.45 - y) / 0.45, 0, 1)
         x2 = x * sz * sy
-        cr = crown * np.clip(1 - (x / hw) ** 2, 0, 1) * np.clip((y - (top - 0.45)) / 0.45, 0, 1)
+        cr = P["crown"] * np.clip(1 - (x / hw) ** 2, 0, 1) * np.clip((y - (hood_y - 0.4)) / 0.4, 0, 1)
         return np.column_stack([x2, y + cr, z])
 
     def surf_x(y, z, off=0.0):
         """x of the body side surface (right) at (y, z) plus an outward offset."""
-        v = bodywarp(np.array([[hw, y, z]], float))
-        return float(v[0, 0]) + off
+        return float(bodywarp(np.array([[hw, y, z]], float))[0, 0]) + off
 
-    prof, radii = _profile(P)
-    prof = round_poly(prof, radii, seg=3)
-    body = warp(extrude(prof, W, bevel=0.14, seg=3), bodywarp)
+    # ------------------------------------------------------------------ lower body: side profile with the cabin notch
+    front = [((zn + 0.75, sill), 0.4), ((zn + 0.02, sill + 0.7), 0.35), ((zn - 0.06, P["nose"]), 0.55), ((zn + 0.85, hood_y), 0.75),
+             ((ws, belt), 0.35)]
+    if cab == "wagon":
+        tail = [((back, belt), 0.25), ((zt - 0.12, P["deck"]), 0.3), ((zt + 0.02, P["deck"] - 0.7), 0.3)]
+    else:
+        tail = [((back, belt), 0.3), ((zt - 0.8, P["deck"]), 0.7), ((zt + 0.04, P["deck"] - 0.65), 0.4)]
+    tail += [((zt, sill + 0.75), 0.35), ((zt - 0.6, sill), 0.35)]
+    ag = P["arch_gap"]
+    # split at the cabin: front section (nose -> firewall), rear section (bulkhead -> tail), thin floor pan between
+    fpts = front + [((fw, belt), 0.0), ((fw, sill), 0.0)] + K.car_arch(zf, wr, wr + ag, sill)
+    rpts = [((bulk, sill), 0.0), ((bulk, belt), 0.0)] + tail + K.car_arch(zr, wrr, wrr + ag, sill)
+    profs = [round_poly(np.array([p for p, _ in q]), [r for _, r in q], seg=3) for q in (fpts, rpts)]
+    pan = np.array([(fw - 0.02, sill), (bulk + 0.02, sill), (bulk + 0.02, floor), (fw - 0.02, floor)])
+    body = warp(merge(*(extrude(q, W, bevel=0.3, seg=3) for q in profs), extrude(pan, W - 0.02, bevel=0.1, seg=1)), bodywarp)
     piece(H, "Chassis", "Chassis", body, col="primary", mat="metal", role="body", pri=0.5)
+    # doors: the cabin tub's side walls (shut lines between the slabs)
+    splits = ((P["bpillar"],) + tuple(P["extra_b"])) if P["doors"] == 4 else ()
+    K.door_walls(H, "Chassis", hw, t, fw, bulk, floor, belt, splits=splits, warp_fn=bodywarp, col=P["doors_col"] or "primary")
+    liners = merge(K.arch_liner(zf, wr, wr + ag, hw - 0.35), K.arch_liner(zr, wrr, wrr + ag, hw - 0.35))
+    piece(H, "Liners", "Chassis", liners, col="black", mat="plastic", role="detail", pri=1.4)
 
-    # skin panels (doors in a second colour, stripes) follow the body: same profile region, slightly wider, same warp
-    if P["doors_col"]:
-        dz0, dz1 = P["ws"] + 0.1, P["back"] - 0.45
-        door = np.array([(dz0, P["sill"] + 0.32), (dz1, P["sill"] + 0.32), (dz1, belt - 0.12), (dz0, belt - 0.12)])
-        dm_ = warp(extrude(round_poly(door, 0.12, 2), W + 0.05, bevel=0.03, seg=1), bodywarp)
-        piece(H, "Doors", "Chassis", dm_, col=P["doors_col"], mat="metal", role="detail", pri=1.6)
     if P["stripes"]:
-        top = []
-        for k in range(30):
-            z = zn + 0.3 + (L - 0.6) * k / 29
-            top.append(z)
-        # stripe band hugging the hood -> roof -> deck: sample the body top by casting down the profile
         def top_y(z):
             ys = []
-            for i in range(len(prof)):
-                a, b = prof[i], prof[(i + 1) % len(prof)]
-                if (a[0] - z) * (b[0] - z) <= 0 and abs(b[0] - a[0]) > 1e-9:
-                    ys.append(a[1] + (b[1] - a[1]) * (z - a[0]) / (b[0] - a[0]))
+            for prof in profs:
+                for i in range(len(prof)):
+                    a, b = prof[i], prof[(i + 1) % len(prof)]
+                    if (a[0] - z) * (b[0] - z) <= 0 and abs(b[0] - a[0]) > 1e-9:
+                        ys.append(a[1] + (b[1] - a[1]) * (z - a[0]) / (b[0] - a[0]))
             return max(ys) if ys else belt
-
-        upper = [(z, top_y(z) + 0.035) for z in top]
-        lower = [(z, top_y(z) - 0.12) for z in top[::-1]]
-        poly = np.array(upper + lower)
-        s = merge(*(xf(extrude(poly, 0.32, bevel=0.02, seg=1), (sx, 0, 0)) for sx in (-0.3, 0.3)))
-        s = warp(s, bodywarp)
+        segs_ = []
+        for z0_, z1_ in ((zn + 0.25, ws - 0.15), (back + 0.15, zt - 0.2)):
+            zz = np.linspace(z0_, z1_, 16)
+            upper = [(z, top_y(z) + 0.05) for z in zz]
+            lower = [(z, top_y(z) - 0.2) for z in zz[::-1]]
+            poly = np.array(upper + lower)
+            segs_ += [xf(extrude(poly, 0.5, bevel=0.02, seg=1), (sx_, 0, 0)) for sx_ in (-0.45, 0.45)]
+        s = warp(merge(*segs_), bodywarp)
         piece(H, "Stripes", "Chassis", s, col="secondary", mat="metal", role="detail", pri=1.7)
 
-    # ------------------------------------------------------------------ greenhouse: glass + roof + pillars
-    xg = hw * P["gw"]
-    cab = P["cabin"]
-    seat_y = belt - 0.25
-    if cab in ("sedan", "fastback", "wagon", "van"):
-        r0, r1 = P["roof0"], P["roof1"]
-        gpoly = np.array([(P["ws"] - 0.05, belt - 0.08), (r0, roofy), (r1, roofy), (P["back"] + 0.05, belt - 0.08)])
-        gpoly = round_poly(gpoly, [0.0, 0.2, 0.2, 0.0], 3)
-        tum = P["tumble"]
-
-        def gwarp(V):
-            x, y, z = V[:, 0], V[:, 1], V[:, 2]
-            t = np.clip((y - belt) / (roofy - belt), 0, 1)
-            return np.column_stack([x * (1 - tum * t), y + 0.05 * np.clip(1 - (x / xg) ** 2, 0, 1) * t ** 4, z])
-
-        glass = warp(extrude(gpoly, 2 * xg, bevel=0.1, seg=2), gwarp)
-        piece(H, "Glass", "Chassis", glass, col="glass", mat="glass", role="window", pri=0.8, tr=0.22, ao=False)
-        xt = xg * (1 - tum)
-        # roof skin (proud) + pillars
-        rpoly = np.array([(r0 - 0.06, roofy - 0.12), (r0 + 0.12, roofy + 0.07), (r1 - 0.12, roofy + 0.07), (r1 + 0.06, roofy - 0.12)])
-        roof = warp(extrude(round_poly(rpoly, 0.05, 2), 2 * xt + 0.12, bevel=0.06, seg=2),
-                    lambda V: np.column_stack([V[:, 0], V[:, 1] + 0.05 * np.clip(1 - (V[:, 0] / (xt + 0.06)) ** 2, 0, 1), V[:, 2]]))
-        pil = []
-        pw = 0.16
-        for s in (-1, 1):
-            a0 = np.array([s * (xg + 0.02), belt - 0.02, P["ws"] + 0.08])
-            a1 = np.array([s * (xt + 0.03), roofy - 0.02, r0 + 0.06])
-            pil.append(bar(a0, a1, pw, pw * 0.8, r=0.04))
-            zb = (P["ws"] + P["back"]) / 2 + 0.25 if cab != "van" else r0 + 1.0
-            b0 = np.array([s * (xg + 0.03), belt - 0.02, zb])
-            b1 = np.array([s * (xt + 0.035), roofy - 0.03, zb])
-            pil.append(bar(b0, b1, pw * 1.3, pw * 0.8, r=0.04))
-            for zb2 in P["extra_b"]:
-                pil.append(bar((s * (xg + 0.03), belt - 0.02, zb2), (s * (xt + 0.035), roofy - 0.03, zb2), pw * 1.3, pw * 0.8, r=0.04))
-            c0 = np.array([s * (xg + 0.02), belt - 0.02, P["back"] - 0.02])
-            c1 = np.array([s * (xt + 0.03), roofy - 0.02, r1 - 0.04])
-            pil.append(bar(c0, c1, pw * (2.2 if cab == "fastback" else 1.6), pw * 0.8, r=0.04))
-        frame = merge(roof, *pil)
-        piece(H, "Roof", "Chassis", frame, col="primary", mat="metal", role="body", pri=0.9)
-        # belt trim (chrome window sill)
-        trim = merge(*(bar((s * (xg + 0.035), belt + 0.0, P["ws"] + 0.1), (s * (xg + 0.035), belt + 0.0, P["back"] - 0.05), 0.06, 0.05, r=0.02)
+    # ------------------------------------------------------------------ greenhouse
+    xg = (hw - t) * 0.95 + 0.04
+    tum = P["tumble"]
+    if cab == "open":
+        hdr = belt + (P["header"] or 1.55)
+        xt = K.greenhouse_real(H, "Chassis", ws, belt, ws + (hdr - belt) * 0.62, None, None, hdr, xg, tum=0.04, open_=True,
+                               roof_col="primary", frame_col="metal" if P["bumper"] == "chrome" else P["trim_col"], pw=0.3)
+        roofy = hdr + 0.2
+    else:
+        xt = K.greenhouse_real(H, "Chassis", ws, belt, P["roof0"], P["roof1"], back, roof_in, xg, tum=tum, crown=P["crown"],
+                               bpillars=tuple(([P["bpillar"]] if P["doors"] == 4 or cab != "wagon" else [])) + tuple(P["extra_b"]),
+                               quarter=P["quarter"], rear_pw=0.55 if cab == "fastback" else 0.42)
+        roofy = roof_in + 0.22 + P["crown"]
+        trim = merge(*(bar((s * (surf_x(belt, 0) + 0.0), belt + 0.01, fw + 0.1), (s * (surf_x(belt, 0) + 0.0), belt + 0.01, back - 0.15), 0.1, 0.08, r=0.03)
                        for s in (-1, 1)))
-        piece(H, "BeltTrim", "Chassis", trim, col="metal", mat="metal", role="detail", pri=2.2)
-    elif cab == "open":
-        # windshield frame + glass only
-        a = np.array([0, belt - 0.05, P["ws"] + 0.05])
-        top = np.array([0, belt + 0.85, P["ws"] + 0.45])
-        wsg = bar(a + (0, 0.42, 0.2), a + (0, 0.42, 0.2) + (0, 0, 0.001), 2 * xg - 0.25, 0.85, r=0.03)
-        d = top - a
-        ang = math.degrees(math.atan2(d[2], d[1]))
-        wsg = box((2 * xg - 0.25, 0.9, 0.05), (0, 0, 0), r=0.02)
-        wsg = xf(xf(wsg, (0, 0.45, 0)), a, r=(ang, 0, 0))
-        piece(H, "Glass", "Chassis", wsg, col="glass", mat="glass", role="window", pri=0.8, tr=0.22, ao=False)
-        fr = []
-        for s in (-1, 1):
-            fr.append(bar(a + (s * (xg - 0.1), 0, 0), top + (s * (xg - 0.1), 0, 0), 0.1, 0.1, r=0.03))
-        fr.append(bar(top + (-(xg - 0.1), 0, 0), top + ((xg - 0.1), 0, 0), 0.1, 0.1, r=0.03))
-        frm = merge(*fr)
-        if P["rollbar"]:
-            zb = P["back"] - 0.6
-            rb = [rod((s * (xg - 0.15), belt - 0.1, zb), (s * (xg - 0.25), belt + 1.1, zb - 0.1), 0.08) for s in (-1, 1)]
-            rb.append(rod((-(xg - 0.25), belt + 1.1, zb - 0.1), ((xg - 0.25), belt + 1.1, zb - 0.1), 0.08))
-            rb += [rod((s * (xg - 0.25), belt + 1.1, zb - 0.1), (s * (xg - 0.2), belt - 0.05, zb + 1.1), 0.07) for s in (-1, 1)]
-            frm = merge(frm, *rb)
-        piece(H, "Roof", "Chassis", frm, col="metal" if not P["rollbar"] else "dark", mat="metal", role="detail", pri=0.9)
-        # cockpit tub (dark interior) sunk into the top so the open cabin reads
-        tub = box((2 * xg - 0.1, 0.12, P["back"] - P["ws"] - 0.3), (0, belt + 0.0, (P["ws"] + P["back"]) / 2 + 0.05), r=0.05)
-        piece(H, "Cockpit", "Chassis", tub, col="darker", mat="cloth", role="detail", pri=1.3)
-        seat_y = belt + 0.05
+        piece(H, "BeltTrim", "Chassis", trim, col="metal" if P["bumper"] == "chrome" else "black", mat="metal", role="detail", pri=2.2)
 
     # ------------------------------------------------------------------ interior
-    zs = P["ws"] + 1.35 if cab != "van" else P["ws"] + 1.2
-    sx = xg * 0.47
-    seats = [K.seat_mesh((-sx, seat_y, zs), w=0.85, d=0.8, back=1.0 if cab != "open" else 0.85), K.seat_mesh((sx, seat_y, zs), w=0.85, d=0.8, back=1.0 if cab != "open" else 0.85)]
-    piece(H, "Seat", "Chassis", seats[0], col=P["seat_col"], mat="cloth", role="seat", pri=1.1)
-    piece(H, "Seat2", "Chassis", seats[1], col=P["seat_col"], mat="cloth", role="seat", pri=1.8)
-    dash = box((2 * xg - 0.3, 0.3, 0.45), (0, belt + 0.05, P["ws"] + 0.45), r=0.08)
-    sw = K.steering_mesh((-sx, belt + 0.35, P["ws"] + 0.75), r=0.26, tilt=62, col_len=0.4)
-    piece(H, "Dash", "Chassis", merge(dash, sw), col="darker", mat="plastic", role="detail", pri=1.5)
+    xi = hw - t
+    zs_ = [fw] + list(splits) + [bulk]
+    spans = list(zip(zs_[:-1], zs_[1:]))
+    inter = [box((2 * xi - 0.06, 0.12, bulk - fw - 0.06), (0, floor + 0.02, (fw + bulk) / 2), r=0.04, seg=0)]
+    piece(H, "DoorCards", "Chassis", K.door_cards(hw, t, spans, floor, belt, bodywarp), col=P["trim_col"], mat="cloth", role="detail", pri=1.6)
+    con_z0, con_z1 = fw + 0.65, hip_z + 0.45
+    inter.append(box((0.5, hip - floor + 0.1, con_z1 - con_z0), (0, floor + (hip - floor + 0.1) / 2, (con_z0 + con_z1) / 2), r=0.08, seg=0))
+    inter.append(rod((0, hip + 0.05, hip_z - 0.9), (0, hip + 0.45, hip_z - 1.0), 0.04, segs=6))
+    inter.append(K.cbox((0.16, 0.2, 0.16), (0, hip + 0.5, hip_z - 1.0), c=0.05))
+    if cab != "open":
+        inter.append(box((2 * xt - 0.1, 0.07, P["roof1"] - P["roof0"] - 0.1), (0, roof_in - 0.015, (P["roof0"] + P["roof1"]) / 2), r=0.03, seg=0))
+        if back - bulk > 0.4:
+            inter.append(box((2 * xg - 0.4, 0.07, back - bulk - 0.25), (0, belt + 0.02, (bulk + back - 0.1) / 2), r=0.03, seg=0))
+    piece(H, "Interior", "Chassis", merge(*inter), col=P["trim_col"], mat="cloth", role="detail", pri=1.3)
+    dash = K.dash_mesh(ws, fw, floor, belt, xi * 0.93 - 0.02)
+    hoodb = K.instruments(H, "Chassis", -sx, belt + 0.12, fw + 0.55, w=1.0)
+    swc = (-sx, hip + 1.45, hip_z - 1.45)
+    sw = K.steering_mesh(swc, r=0.5, tilt=62, col_len=0.0)
+    col_ = rod(swc, (-sx, belt + 0.0, fw + 0.5), 0.07, segs=8)
+    piece(H, "Dash", "Chassis", merge(dash, hoodb, sw, col_), col="black", mat="plastic", role="detail", pri=1.2)
+    seat = K.bucket_seat((-sx, hip, hip_z), floor=floor)
+    piece(H, "Seat", "Chassis", seat, col=P["seat_col"], mat="cloth", role="seat", pri=1.0)
+    piece(H, "Seat2", "Chassis", K.bucket_seat((sx, hip, hip_z), floor=floor), col=P["seat_col"], mat="cloth", role="seat", pri=1.5)
+    if P["rear_hip_z"] is not None:
+        bench = K.bucket_seat((0, hip + 0.05, P["rear_hip_z"]), w=2 * xi - 0.5, bolster=False, headrest=False, floor=floor, back=2.2)
+        piece(H, "RearSeat", "Chassis", bench, col=P["seat_col"], mat="cloth", role="seat", pri=1.7)
 
     # ------------------------------------------------------------------ front: lamps, grille, bumper
-    ylamp = P["nose"] - 0.16
-    xl = hw - 0.55
+    chrome, dark = [], []
+    ylamp = P["nose"] - 0.3
+    xl = hw * 0.6
     if P["lamps"] == "round":
-        hl = lamp((xl, ylamp, zn - 0.08), 0.24, 0.16)
-        bz = bezel((xl, ylamp, zn - 0.06), 0.24, 0.12)
+        hl = lamp((xl, ylamp, zn - 0.12), 0.36, 0.22)
+        chrome += [K.bezel((xl, ylamp, zn - 0.1), 0.36, 0.16), K.bezel((-xl, ylamp, zn - 0.1), 0.36, 0.16)]
     else:
-        hl = K.lamp((xl - 0.05, ylamp, zn - 0.06), 0, 0.2, shape="rect", w=0.75, h=0.26)
-        hl = warp(hl, lambda V: np.column_stack([V[:, 0], V[:, 1], V[:, 2] + 0.12 * ((V[:, 0] - (xl - 0.45)) / 0.75) ** 2]))
-        bz = None
-    mpiece(H, "Headlight#", "Chassis", hl, col=LENS, mat="glass", role="light", pri=1.4, ao=False)
-    chrome = []
-    if bz is not None:
-        chrome.append(bz)
-        chrome.append(mirror(bz))
-    gw = (xl - 0.45) * 2 if P["lamps"] != "round" else (xl - 0.38) * 2
+        hl = K.lamp((xl, ylamp, zn - 0.06), 0, 0.26, shape="rect", w=1.5, h=0.52)
+        hl = warp(hl, lambda V: np.column_stack([V[:, 0], V[:, 1], V[:, 2] + 0.3 * np.clip((V[:, 0] - (xl - 0.4)) / 1.1, 0, 1) ** 2]))
+    mpiece(H, "Headlight#", "Chassis", hl, col=LENS, mat="glass", role="light", pri=1.3, ao=False)
+    ind = K.lamp((xl + 0.5, ylamp - 0.45, zn + 0.05), 0, 0.12, shape="rect", w=0.42, h=0.16)
+    mpiece(H, "Indicator#", "Chassis", ind, col=AMBER, mat="glass", role="light", pri=2.2, ao=False)
+    gw = 2 * (xl - (0.72 if P["lamps"] != "round" else 0.5))
     if P["grille"] != "none":
-        gh = 0.42 if P["grille"] != "jeep" else 0.75
-        gy = ylamp - 0.05 if P["grille"] != "jeep" else ylamp + 0.0
-        g = box((gw, gh, 0.1), (0, gy, zn - 0.0), r=0.06)
-        piece(H, "Grille", "Chassis", g, col="darker", mat="metal", role="detail", pri=1.6)
+        gh = 0.72 if P["grille"] != "jeep" else 1.1
+        gy = ylamp - 0.05
+        gm = [box((gw, gh, 0.14), (0, gy, zn - 0.03), r=0.08)]
         if P["grille"] == "jeep":
             for k in range(7):
                 gx = -gw / 2 + gw * (k + 0.5) / 7
-                chrome.append(K.cbox((0.07, gh * 0.85, 0.06), (gx, gy, zn - 0.06), c=0.02))
-        else:
-            for k in range(3):
-                chrome.append(K.cbox((gw * 0.94, 0.045, 0.05), (0, gy - gh * 0.3 + gh * 0.3 * k, zn - 0.06), c=0.015))
-            chrome.append(box((gw + 0.08, gh + 0.08, 0.04), (0, gy, zn + 0.02), r=0.05))
-    by = P["sill"] + 0.3
+                gm.append(K.cbox((0.12, gh * 0.82, 0.06), (gx, gy, zn - 0.1), c=0.03))
+        piece(H, "Grille", "Chassis", merge(*gm), col="black", mat="metal", role="detail", pri=1.5)
+        if P["grille"] != "jeep":
+            for k in range(4):
+                chrome.append(K.cbox((gw * 0.92, 0.05, 0.05), (0, gy - gh * 0.33 + gh * 0.22 * k, zn - 0.11), c=0.015))
+            chrome.append(box((gw + 0.14, 0.08, 0.08), (0, gy + gh / 2 + 0.02, zn - 0.08), r=0.03))
+    by = sill + 0.55
     if P["bumper"] == "body":
-        fb = box((W * 0.96, 0.34, 0.4), (0, by, zn + 0.12), r=0.15, seg=2)
-        rb = box((W * 0.96, 0.34, 0.4), (0, by, zt - 0.12), r=0.15, seg=2)
+        fb = box((W * 0.9, 0.55, 0.5), (0, by, zn + 0.12), r=0.24, seg=2)
+        rb = box((W * 0.9, 0.55, 0.5), (0, by, zt - 0.12), r=0.24, seg=2)
         bcol, bmat = "primary", "metal"
-        lower = box((W * 0.8, 0.12, 0.3), (0, by - 0.22, zn + 0.2), r=0.04)
-        chrome_b = None
+        dark.append(box((W * 0.5, 0.3, 0.12), (0, by - 0.05, zn - 0.14), r=0.06))  # lower intake
+        for s_ in (-1, 1):
+            dark.append(box((0.62, 0.34, 0.12), (s_ * W * 0.36, by - 0.05, zn - 0.08), r=0.08))
+        fog = lamp((W * 0.36, by - 0.05, zn - 0.16), 0.13, 0.08)
+        mpiece(H, "Fog#", "Chassis", fog, col=LENS, mat="glass", role="light", pri=2.3, ao=False)
+        dark.append(box((W * 0.7, 0.14, 0.4), (0, sill + 0.05, zt - 0.1), r=0.05))  # rear diffuser lip
     else:
-        fb = box((W * 0.98, 0.3, 0.32), (0, by, zn - 0.08), r=0.1, seg=2)
-        rb = box((W * 0.98, 0.3, 0.32), (0, by, zt + 0.08), r=0.1, seg=2)
-        bcol, bmat = ("metal", "metal") if P["bumper"] == "chrome" else ("dark", "plastic")
-        lower = None
-    piece(H, "Bumpers", "Chassis", merge(fb, rb), col=bcol, mat=bmat, role="detail", pri=1.2)
-    if P["bumper"] == "bull":
+        fb = box((W * 0.96, 0.46, 0.42), (0, by, zn - 0.12), r=0.16, seg=2)
+        rb = box((W * 0.96, 0.46, 0.42), (0, by, zt + 0.12), r=0.16, seg=2)
+        bcol, bmat = ("metal", "metal") if P["bumper"] == "chrome" else ("black", "plastic")
+    piece(H, "Bumpers", "Chassis", merge(fb, rb), col=bcol, mat=bmat, role="detail", pri=1.1)
+    if P["bull"]:
         bb = []
         for s in (-1, 1):
-            bb.append(rod((s * 0.7, by - 0.1, zn - 0.2), (s * 0.7, P["nose"] + 0.15, zn - 0.35), 0.07))
-        bb.append(rod((-0.7, P["nose"] + 0.15, zn - 0.35), (0.7, P["nose"] + 0.15, zn - 0.35), 0.07, ext=0.07))
-        bb.append(rod((-0.75, by + 0.25, zn - 0.3), (0.75, by + 0.25, zn - 0.3), 0.06))
-        bb.append(box((1.7, 0.26, 0.18), (0, by, zn - 0.25), r=0.06))
-        piece(H, "PushBar", "Chassis", merge(*bb), col="darker", mat="metal", role="detail", pri=1.5)
+            bb.append(rod((s * 1.1, by - 0.1, zn - 0.3), (s * 1.1, P["nose"] + 0.2, zn - 0.5), 0.1, segs=10))
+        bb.append(rod((-1.1, P["nose"] + 0.2, zn - 0.5), (1.1, P["nose"] + 0.2, zn - 0.5), 0.1, ext=0.1, segs=10))
+        bb.append(rod((-1.15, by + 0.4, zn - 0.45), (1.15, by + 0.4, zn - 0.45), 0.09, segs=10))
+        bb.append(box((2.6, 0.38, 0.26), (0, by, zn - 0.4), r=0.08))
+        piece(H, "PushBar", "Chassis", merge(*bb), col="black", mat="metal", role="detail", pri=1.5)
 
     # ------------------------------------------------------------------ rear lamps, plate, exhaust
-    yt = P["deck"] - 0.28
-    tl = K.lamp((hw - 0.5, yt, zt - 0.02), 0, 0.14, axis="+z", shape="rect", w=0.65, h=0.24)
-    mpiece(H, "Taillight#", "Chassis", tl, col=RED_L, mat="glass", role="light", pri=1.5, ao=False)
-    plates = merge(box((0.8, 0.28, 0.05), (0, by + 0.0, zt + 0.06 + (0.12 if P["bumper"] != "body" else 0.0)), r=0.03),
-                   box((0.8, 0.22, 0.05), (0, by + 0.0, zn - 0.06 - (0.12 if P["bumper"] != "body" else 0.0)), r=0.03))
+    yt = P["deck"] - 0.45
+    tl = K.lamp((hw * 0.6, yt, zt - 0.02), 0, 0.2, axis="+z", shape="rect", w=1.5, h=0.5)
+    tl = warp(tl, lambda V: np.column_stack([V[:, 0], V[:, 1], V[:, 2] - 0.25 * np.clip((V[:, 0] - hw * 0.45) / 1.0, 0, 1) ** 2]))
+    mpiece(H, "Taillight#", "Chassis", tl, col=RED_L, mat="glass", role="light", pri=1.4, ao=False)
+    pz = 0.16 if P["bumper"] == "body" else 0.36
+    plates = merge(box((1.25, 0.42, 0.06), (0, by + 0.42 if P["bumper"] == "body" else by, zt + pz), r=0.04),
+                   box((1.25, 0.34, 0.06), (0, by, zn - pz - (0.0 if P["bumper"] == "body" else 0.0)), r=0.04))
     piece(H, "Plates", "Chassis", plates, col="white", mat="plastic", role="detail", pri=2.4)
-    dark = []
     for k in range(P["exhaust"]):
-        ex = hw - 0.7 - 0.3 * k
-        chrome.append(K.tube_ring(0.1, 0.07, 0.4, axis="z", pos=(ex, P["sill"] + 0.05, zt + 0.0)))
+        ex = hw - 1.1 - 0.4 * k
+        chrome.append(K.tube_ring(0.15, 0.1, 0.5, axis="z", pos=(ex, sill + 0.08, zt + 0.0)))
         if P["exhaust"] == 2:
-            chrome.append(K.tube_ring(0.1, 0.07, 0.4, axis="z", pos=(-ex, P["sill"] + 0.05, zt + 0.0)))
-    if P["exhaust"] == 2:
-        pass
-    # mirrors
-    mz = P["ws"] + 0.25
+            chrome.append(K.tube_ring(0.15, 0.1, 0.5, axis="z", pos=(-ex, sill + 0.08, zt + 0.0)))
+    # mirrors on the doors at the A pillar
+    mz = fw + 0.35
     mx = surf_x(belt - 0.1, mz)
-    mir = merge(bar((mx - 0.05, belt - 0.05, mz), (mx + 0.25, belt + 0.05, mz + 0.05), 0.08, 0.06, r=0.02),
-                box((0.22, 0.24, 0.32), (mx + 0.3, belt + 0.12, mz + 0.06), r=0.08, seg=2))
-    mpiece(H, "Mirror#", "Chassis", mir, col="primary", mat="metal", role="detail", pri=2.0)
-    # door seams + handles (stand proud of the skin)
-    if cab in ("sedan", "fastback", "wagon", "van", "open"):
-        zs_list = [P["ws"] + 0.15, (P["ws"] + P["back"]) / 2 + 0.25] + ([P["back"] - 0.3] if cab in ("sedan", "wagon") else [])
-        off = 0.035 if not P["doors_col"] else 0.06
-        for s in (1, -1):
-            for z in zs_list:
-                yb, yt_ = P["sill"] + 0.18, belt - 0.12
-                dark.append(bar((s * surf_x(yb, z, off), yb, z), (s * surf_x(yt_, z, off), yt_, z), 0.03, 0.04, r=0.01))
-            for z in zs_list[:-1]:
-                hz = z + 0.55
-                hy = belt - 0.3
-                chrome.append(K.cbox((0.05, 0.07, 0.3), (s * surf_x(hy, hz, off + 0.01), hy, hz), c=0.02))
+    mir = merge(bar((mx - 0.08, belt - 0.05, mz), (mx + 0.4, belt + 0.12, mz + 0.05), 0.12, 0.09, r=0.03),
+                box((0.3, 0.38, 0.5), (mx + 0.46, belt + 0.22, mz + 0.08), r=0.12, seg=2))
+    mpiece(H, "Mirror#", "Chassis", mir, col="primary" if not P["doors_col"] else P["doors_col"], mat="metal", role="detail", pri=1.9)
+    # door handles + fuel flap + rocker seam (proud of the skin)
+    for s in (1, -1):
+        for a, b in spans:
+            hz, hy = b - 0.55, belt - 0.4
+            chrome.append(K.cbox((0.07, 0.11, 0.48), (s * surf_x(hy, hz, 0.04), hy, hz), c=0.03))
+    # side character line (body colour, proud) above the arches, black rocker strip below the doors
+    ytop_arch = max(2 * wr, 2 * wrr) + ag + 0.18
+    cy_ = max(belt - 0.62, ytop_arch)
+    if cy_ < belt - 0.3:
+        cl = extrude(np.array([(zn + 1.7, cy_), (zt - 1.1, cy_), (zt - 1.1, cy_ + 0.08), (zn + 1.7, cy_ + 0.08)]), 0.16, bevel=0.03, seg=1)
+        cl = warp(xf(cl, (hw - 0.03, 0, 0)), bodywarp)
+        piece(H, "SideLine", "Chassis", merge(cl, mirror(cl)), col=P["doors_col"] or "primary", mat="metal", role="detail", pri=2.3)
+    for s_ in (-1, 1):
+        dark.append(bar((s_ * surf_x(sill + 0.22, 0, 0.03), sill + 0.22, zf + wr + ag + 0.15), (s_ * surf_x(sill + 0.22, 0, 0.03), sill + 0.22, zr - wrr - ag - 0.15), 0.12, 0.2, r=0.04))
+    fz = (zr + back) / 2 + 0.2
+    dark.append(K.cbox((0.06, 0.45, 0.45), (surf_x(belt - 0.5, fz, 0.02), belt - 0.5, fz), c=0.08))
     if P["sidepipes"]:
         for s in (-1, 1):
-            chrome.append(rod((s * (hw + 0.08), P["sill"] + 0.1, zf + 1.0), (s * (hw + 0.08), P["sill"] + 0.1, zr - 1.0), 0.09, ext=0.0))
-    if dark:
-        piece(H, "Seams", "Chassis", merge(*dark), col="darker", mat="plastic", role="detail", pri=2.6)
+            chrome.append(rod((s * (hw + 0.12), sill + 0.15, zf + 1.6), (s * (hw + 0.12), sill + 0.15, zr - 1.6), 0.14, ext=0.0))
+    piece(H, "Trim", "Chassis", merge(*dark), col="black", mat="plastic", role="detail", pri=2.1)
 
     # ------------------------------------------------------------------ extras
     if P["spoiler"]:
-        sy = P["deck"] + 0.45
-        sp = merge(box((W * 0.92, 0.07, 0.55), (0, sy, zt - 0.35), r=0.03, rot_=(-8, 0, 0)),
-                   box((0.08, 0.5, 0.4), (W * 0.32, sy - 0.25, zt - 0.38), r=0.03), box((0.08, 0.5, 0.4), (-W * 0.32, sy - 0.25, zt - 0.38), r=0.03),
-                   box((0.06, 0.25, 0.6), (W * 0.46, sy + 0.05, zt - 0.35), r=0.02), box((0.06, 0.25, 0.6), (-W * 0.46, sy + 0.05, zt - 0.35), r=0.02))
+        sy_ = P["deck"] + 0.7
+        sp = merge(box((W * 0.9, 0.1, 0.85), (0, sy_, zt - 0.5), r=0.04, rot_=(-8, 0, 0)),
+                   box((0.12, 0.75, 0.55), (W * 0.3, sy_ - 0.38, zt - 0.55), r=0.04), box((0.12, 0.75, 0.55), (-W * 0.3, sy_ - 0.38, zt - 0.55), r=0.04),
+                   box((0.08, 0.4, 0.9), (W * 0.45, sy_ + 0.08, zt - 0.5), r=0.03), box((0.08, 0.4, 0.9), (-W * 0.45, sy_ + 0.08, zt - 0.5), r=0.03))
         piece(H, "Spoiler", "Chassis", sp, col="secondary", mat="metal", role="detail", pri=1.3)
     if P["scoop"]:
-        sc = K.box((0.9, 0.3, 1.2), (0, P["hood"] + 0.2, (zn + P["ws"]) / 2 + 0.3), r=0.08, seg=2)
-        sc = merge(sc, box((0.7, 0.18, 0.06), (0, P["hood"] + 0.22, (zn + P["ws"]) / 2 - 0.3), r=0.03))
-        piece(H, "Scoop", "Chassis", sc, col="darker", mat="metal", role="detail", pri=1.4)
+        hz = (zn + ws) / 2 + 0.2
+        sc = box((1.4, 0.45, 1.8), (0, hood_y + 0.38, hz), r=0.14, seg=2)
+        sc = merge(sc, box((1.1, 0.26, 0.08), (0, hood_y + 0.4, hz - 0.9), r=0.04))
+        piece(H, "Scoop", "Chassis", sc, col="black", mat="metal", role="detail", pri=1.4)
     if P["lightbar"]:
-        ly = roofy + 0.15
-        base = box((2.0, 0.12, 0.42), (0, ly, (P["roof0"] + P["roof1"]) / 2 - 0.2), r=0.04)
-        piece(H, "LightBar", "Chassis", base, col="darker", mat="plastic", role="detail", pri=1.3)
-        lr = box((0.85, 0.22, 0.34), (0.48, ly + 0.15, (P["roof0"] + P["roof1"]) / 2 - 0.2), r=0.08, seg=2)
+        ly = roofy + 0.05
+        zc_ = (P["roof0"] + P["roof1"]) / 2 - 0.3
+        base = box((3.4, 0.16, 0.62), (0, ly + 0.05, zc_), r=0.05)
+        for s in (-1, 1):
+            base = merge(base, box((0.3, 0.2, 0.3), (s * 1.4, ly - 0.05, zc_), r=0.04))
+        piece(H, "LightBar", "Chassis", base, col="black", mat="plastic", role="detail", pri=1.3)
+        lr = box((1.45, 0.34, 0.52), (0.8, ly + 0.28, zc_), r=0.12, seg=2)
         piece(H, "SirenRed", "Chassis", lr, col=RED_L, mat="glass", role="light", pri=1.4, ao=False)
         piece(H, "SirenBlue", "Chassis", mirror(lr), col=BLUE_L, mat="glass", role="light", pri=1.4, ao=False)
+        lr2 = box((0.5, 0.3, 0.5), (0, ly + 0.26, zc_), r=0.1, seg=1)
+        piece(H, "SirenWhite", "Chassis", lr2, col=LENS, mat="glass", role="light", pri=1.9, ao=False)
     if P["taxi"]:
-        ty = roofy + 0.1
-        zc = (P["roof0"] + P["roof1"]) / 2
-        sign = extrude(round_poly(np.array([(-0.75, 0), (-0.55, 0.42), (0.55, 0.42), (0.75, 0)]), [0, 0.1, 0.1, 0], 2), 0.32, bevel=0.04, axis="z")
-        sign = xf(sign, (0, ty, zc), r=(0, 90, 0))
+        ty = roofy - 0.02
+        zc_ = (P["roof0"] + P["roof1"]) / 2
+        sign = extrude(round_poly(np.array([(-1.15, 0), (-0.85, 0.62), (0.85, 0.62), (1.15, 0)]), [0, 0.14, 0.14, 0], 2), 0.5, bevel=0.06, axis="z")
+        sign = xf(sign, (0, ty, zc_), r=(0, 90, 0))
         piece(H, "TaxiSign", "Chassis", sign, col="white", mat="plastic", role="detail", pri=1.3)
-        # checker band along both sides
         chk = []
         for s in (1, -1):
-            for k in range(12):
-                z = P["ws"] + 0.1 + k * 0.31
+            for k in range(14):
+                z = fw + 0.25 + k * 0.4
+                if z > bulk - 0.2:
+                    break
                 for row in (0, 1):
                     if (k + row) % 2:
                         continue
-                    y = belt - 0.45 - row * 0.2
-                    chk.append(K.cbox((0.04, 0.19, 0.3), (s * surf_x(y, z + 0.15, 0.03), y, z + 0.15), c=0.01))
+                    y = belt - 0.85 - row * 0.3
+                    chk.append(K.cbox((0.05, 0.29, 0.39), (s * surf_x(y, z + 0.2, 0.05), y, z + 0.2), c=0.012))
         piece(H, "Checker", "Chassis", merge(*chk), col="secondary", mat="plastic", role="detail", pri=1.9)
     if P["spare"]:
-        sw_ = K.tyre(0.62, 0.42, ri=0.36, segs=24, knobby=P["knobby"])
-        sw_ = merge(sw_, K.rim(0.36, 0.42, "steel", segs=18))
-        sw_ = xf(sw_, (0, P["deck"] - 0.25, zt + 0.25), r=(0, 90, 0))
+        sw_ = K.tyre(1.0, 0.7, ri=0.6, segs=24, knobby=P["knobby"])
+        sw_ = merge(sw_, K.rim(0.6, 0.7, "steel", segs=18))
+        sw_ = xf(sw_, (0, P["deck"] - 0.4, zt + 0.4), r=(0, 90, 0))
         piece(H, "Spare", "Chassis", sw_, col="tyre", mat="rubber", role="detail", pri=1.6)
     if P["flares"]:
         fl = []
         for z, rr in ((zf, wr), (zr, wrr)):
             arc = []
-            ra = rr + 0.22
+            ra = rr + 0.38
             for k in range(13):
-                a = math.radians(10 + 160 * k / 12)
+                a = math.radians(8 + 164 * k / 12)
                 arc.append((z + ra * math.cos(a), rr + ra * math.sin(a)))
             for k in range(12, -1, -1):
-                a = math.radians(10 + 160 * k / 12)
-                arc.append((z + (ra - 0.2) * math.cos(a), rr + (ra - 0.2) * math.sin(a)))
+                a = math.radians(8 + 164 * k / 12)
+                arc.append((z + (ra - 0.3) * math.cos(a), rr + (ra - 0.3) * math.sin(a)))
             for s in (-1, 1):
-                fl.append(xf(extrude(np.array(arc), 0.35, bevel=0.05, seg=1), (s * (hw - 0.05), 0, 0)))
-        piece(H, "Flares", "Chassis", merge(*fl), col="darker", mat="plastic", role="detail", pri=1.5)
+                fl.append(xf(extrude(np.array(arc), 0.5, bevel=0.07, seg=1), (s * (hw - 0.05), 0, 0)))
+        piece(H, "Flares", "Chassis", merge(*fl), col="black", mat="plastic", role="detail", pri=1.5)
     if P["roofrack"]:
         rr_ = []
+        rx = xt - 0.25
         for s in (-1, 1):
-            rr_.append(rod((s * (xg * (1 - P["tumble"]) - 0.15), roofy + 0.2, P["roof0"] + 0.2), (s * (xg * (1 - P["tumble"]) - 0.15), roofy + 0.2, P["roof1"] - 0.2), 0.05))
-        for z in np.linspace(P["roof0"] + 0.4, P["roof1"] - 0.4, 3):
-            rr_.append(rod((-(xg * (1 - P["tumble"]) - 0.15), roofy + 0.2, z), ((xg * (1 - P["tumble"]) - 0.15), roofy + 0.2, z), 0.04))
-        piece(H, "RoofRack", "Chassis", merge(*rr_), col="darker", mat="metal", role="detail", pri=1.8)
+            rr_.append(rod((s * rx, roofy + 0.25, P["roof0"] + 0.4), (s * rx, roofy + 0.25, P["roof1"] - 0.3), 0.07, segs=8))
+            for z in (P["roof0"] + 0.5, P["roof1"] - 0.4):
+                rr_.append(K.cbox((0.16, 0.3, 0.3), (s * rx, roofy + 0.1, z), c=0.04))
+        for z in np.linspace(P["roof0"] + 0.9, P["roof1"] - 0.8, 3):
+            rr_.append(rod((-rx, roofy + 0.25, z), (rx, roofy + 0.25, z), 0.06, segs=8))
+        piece(H, "RoofRack", "Chassis", merge(*rr_), col="black", mat="metal", role="detail", pri=1.8)
+    if P["rollbar"]:
+        zb = bulk - 0.25
+        rb_ = [rod((s * (xi - 0.15), belt - 0.1, zb), (s * (xi - 0.35), hip + 3.75, zb - 0.1), 0.13, segs=10) for s in (-1, 1)]
+        rb_.append(rod((-(xi - 0.35), hip + 3.75, zb - 0.1), ((xi - 0.35), hip + 3.75, zb - 0.1), 0.13, ext=0.1, segs=10))
+        rb_ += [rod((s * (xi - 0.35), hip + 3.75, zb - 0.1), (s * (xi - 0.2), belt - 0.05, zb + 1.7), 0.11, segs=10) for s in (-1, 1)]
+        piece(H, "RollBar", "Chassis", merge(*rb_), col="black", mat="metal", role="detail", pri=1.2)
+        roofy = max(roofy, hip + 3.9)
     if P["boot"]:
-        bt = box((2 * xg - 0.2, 0.42, 0.9), (0, belt + 0.12, P["back"] - 0.2), r=0.18, seg=2)
+        bt = box((2 * xg - 0.5, 0.55, 1.3), (0, belt + 0.18, back - 0.3), r=0.25, seg=2)
         piece(H, "SoftTop", "Chassis", bt, col="secondary", mat="cloth", role="detail", pri=1.4)
     if P["roof_lights"]:
-        rl = [box((2 * xg * (1 - P["tumble"]) - 0.2, 0.1, 0.12), (0, roofy + 0.12, P["roof0"] + 0.15), r=0.03)]
+        rl = [box((2.6, 0.14, 0.18), (0, roofy + 0.1, P["roof0"] + 0.3), r=0.04)]
         lens = []
         for k in range(4):
-            x = -0.75 + 0.5 * k
-            rl.append(box((0.36, 0.34, 0.16), (x, roofy + 0.3, P["roof0"] + 0.05), r=0.06))
-            lens.append(K.lamp((x, roofy + 0.3, P["roof0"] - 0.04), 0.13, 0.06))
-        piece(H, "RoofLamps", "Chassis", merge(*rl), col="darker", mat="plastic", role="detail", pri=1.6)
+            x = -1.1 + 0.73 * k
+            rl.append(box((0.55, 0.5, 0.26), (x, roofy + 0.38, P["roof0"] + 0.2), r=0.08))
+            lens.append(K.lamp((x, roofy + 0.38, P["roof0"] + 0.05), 0.2, 0.08))
+        piece(H, "RoofLamps", "Chassis", merge(*rl), col="black", mat="plastic", role="detail", pri=1.6)
         piece(H, "RoofLens", "Chassis", merge(*lens), col=LENS, mat="glass", role="light", pri=1.9, ao=False)
+    if P["haunch"]:
+        # sculpted body-colour fender bulges over the wheels (wide-body sports look) + side intakes + hood vents
+        hs = []
+        for z, rr, ww_ in ((zf, wr, ww), (zr, wrr, wwr)):
+            ra = rr + ag
+            arc = [(z + (ra + 0.42) * math.cos(math.radians(a)), rr + (ra + 0.42) * math.sin(math.radians(a))) for a in np.linspace(-8, 188, 15)]
+            arc += [(z + (ra + 0.0) * math.cos(math.radians(a)), rr + (ra + 0.0) * math.sin(math.radians(a))) for a in np.linspace(188, -8, 15)]
+            f_ = extrude(np.array(arc), 0.6, bevel=0.2, seg=2)
+            f_ = warp(xf(f_, (hw - 0.12, 0, 0)), lambda V: np.column_stack([V[:, 0] + 0.12 * np.clip(1 - ((V[:, 1] - rr) / (ra + 0.4)) ** 2, 0, 1), V[:, 1], V[:, 2]]))
+            hs += [f_, mirror(f_)]
+        piece(H, "Haunches", "Chassis", warp(merge(*hs), bodywarp), col="primary", mat="metal", role="body", pri=0.9)
+        for s_ in (-1, 1):
+            iz = bulk + 0.6
+            dark.append(K.cbox((0.12, 0.7, 1.1), (s_ * surf_x(belt - 0.85, iz, 0.03), belt - 0.85, iz), c=0.12))
+        for s_ in (-1, 1):
+            for k in range(3):
+                dark.append(K.cbox((0.5, 0.06, 0.1), (s_ * 1.3, hood_y + 0.28 + 0.06 * k, zn + 2.3 + 0.28 * k), c=0.02))
     if P["mudflaps"]:
         mf = []
         for s_ in (-1, 1):
-            for z in (zf + wr + 0.25, zr + wrr + 0.25):
-                mf.append(box((0.55, 0.6, 0.05), (s_ * xw, 0.42, z), r=0.03))
-        piece(H, "Mudflaps", "Chassis", merge(*mf), col="darker", mat="rubber", role="detail", pri=2.2)
+            for z, rr in ((zf, wr), (zr, wrr)):
+                mf.append(box((0.8, 0.8, 0.07), (s_ * xw, 0.55, z + rr + 0.3), r=0.04))
+        piece(H, "Mudflaps", "Chassis", merge(*mf), col="black", mat="rubber", role="detail", pri=2.2)
     if chrome:
         piece(H, "Chrome", "Chassis", merge(*chrome), col="metal", mat="metal", role="detail", pri=2.0)
 
     # ------------------------------------------------------------------ wheels
-    for nm, bone, pos, rr, w_, side in (("WheelFR", "WheelFR", (xw, wr, zf), wr, ww, 1), ("WheelFL", "WheelFL", (-xw, wr, zf), wr, ww, -1),
-                                        ("WheelBR", "WheelBR", (xwr, wrr, zr), wrr, wwr, 1), ("WheelBL", "WheelBL", (-xwr, wrr, zr), wrr, wwr, -1)):
-        K.wheel_pieces(H, nm, bone, pos, rr, w_, style=P["rim"], spokes=P["spokes"], knobby=P["knobby"], side=side, rim_col=P["rim_col"])
+    for nm, pos, rr, w_, side in (("WheelFR", (xw, wr, zf), wr, ww, 1), ("WheelFL", (-xw, wr, zf), wr, ww, -1),
+                                  ("WheelBR", (xwr, wrr, zr), wrr, wwr, 1), ("WheelBL", (-xwr, wrr, zr), wrr, wwr, -1)):
+        K.wheel_pieces(H, nm, nm, pos, rr, w_, style=P["rim"], spokes=P["spokes"], knobby=P["knobby"], side=side, rim_col=P["rim_col"], segs=30)
 
     # ------------------------------------------------------------------ rig
-    seat_pos = (-sx, seat_y + 0.1, zs)
-    K.mount(H, "Seat", seat_pos, (0.85, 0.2, 0.8), "Chassis")
+    K.ride(H, (-sx, hip, hip_z), (-(hw + 1.6), 0, hip_z - 0.6), seat_size=(1.5, 0.2, 1.3))
     H.socket("head", (0, roofy + 0.3, 0), "Chassis")
-    H.socket("mouth", (0, P["nose"], zn - 0.3), "Chassis")
-    H.socket("exhaust", (hw - 0.7, P["sill"] + 0.05, zt + 0.3), "Chassis")
+    H.socket("mouth", (0, P["nose"], zn - 0.4), "Chassis")
+    H.socket("exhaust", (hw - 1.1, sill + 0.08, zt + 0.4), "Chassis")
     H.rig.update({"head": "Chassis"})
     K.vehicle_clips(H, [("WheelFR", wr), ("WheelFL", wr), ("WheelBR", wrr), ("WheelBL", wrr)], susp="Chassis", height=roofy, length=L,
-                    sym=P["spokes"] if P["rim"] in ("alloy", "mag") else 8, steer=("SteerFR", "SteerFL"),
-                    attack=P.get("attack", "ram"))
+                    sym=P["spokes"] if P["rim"] in ("alloy", "mag") else 8, steer=("SteerFR", "SteerFL"), attack=P["attack"])
     return H
 
 
 def pv(p, s, **kw):
-    d = {"primary": p, "secondary": s, "glass": "#33414F", "darker": "#24262B"}
+    d = {"primary": p, "secondary": s, "darker": "#2A2C31", "black": "#16171A"}
     d.update(kw)
     return d
 
@@ -481,62 +465,67 @@ def taxi():
 
 @hero("police car", FAM)
 def police_car():
-    return _car("police car", lightbar=True, doors_col="secondary", bumper="bull", rim="steel", preview=pv("#1B2A49", "#F5F5F5"))
+    return _car("police car", lightbar=True, doors_col="secondary", bull=True, bumper="black", rim="steel",
+                preview=pv("#1B2A49", "#F5F5F5"))
 
 
 @hero("sports car", FAM)
 def sports_car():
-    return _car("sports car", L=9.2, W=3.95, wr=0.72, ww=0.7, wr_rear=0.74, ww_rear=0.82, wb=5.5, axle_off=0.2, sill=0.4, belt=1.55, hood=1.2,
-                nose=0.9, deck=1.55, ws=-0.75, roof0=0.35, roof1=1.25, back=3.15, roofy=2.3, cabin="fastback", gw=0.8, tumble=0.26,
-                nose_taper=0.16, spoiler=True, exhaust=2, grille="none", bumper="body", spokes=5, rim_col="darker",
-                preview=pv("#FFC300", "#1A1A1A"))
+    # low two-seater: the footwell is sunk (legs reach under the dash), wide fastback greenhouse, mid-engine deck
+    return _car("sports car", L=14.5, W=7.3, haunch=True, wr=1.05, ww=1.0, wr_rear=1.1, ww_rear=1.25, wb=8.9, axle_off=0.1, sill=0.32, floor=0.4,
+                hip=1.45, hip_z=-0.3, seat_x=1.1, rear_hip_z=None, seat_col=[0.11, 0.11, 0.12], belt=2.6, hood=2.05, nose=1.6, deck=2.75, arch_gap=0.12, ws=-3.9, fw=-2.6, bulk=1.15,
+                roof0=-1.05, roof1=0.85, back=5.0, cabin="fastback", doors=2, tumble=0.2, nose_taper=0.16, crown=0.12, spoiler=True,
+                exhaust=2, grille="none", bumper="body", spokes=5, rim_col="black", preview=pv("#FFC300", "#1A1A1A"))
 
 
 @hero("muscle car", FAM)
 def muscle_car():
-    return _car("muscle car", L=9.6, W=3.9, wr=0.7, ww=0.64, wr_rear=0.8, ww_rear=0.86, wb=5.9, axle_off=0.15, sill=0.48, belt=1.8, hood=1.62,
-                nose=1.25, deck=1.78, ws=-0.55, roof0=0.45, roof1=1.55, back=2.85, roofy=2.7, cabin="fastback", gw=0.82, tumble=0.22,
-                nose_taper=0.04, scoop=True, stripes=True, exhaust=2, lamps="round", grille="wide", bumper="chrome", rim="mag", spokes=6,
-                preview=pv("#1F3A93", "#F2F2F2"))
+    return _car("muscle car", L=15.0, W=7.0, wr=1.15, ww=1.0, wr_rear=1.2, ww_rear=1.25, wb=9.0, axle_off=0.15, sill=0.45, floor=0.65,
+                hip=1.8, hip_z=-0.2, rear_hip_z=None, belt=2.95, hood=2.6, nose=2.15, deck=2.85, ws=-3.0, fw=-2.45, bulk=1.4,
+                roof0=-0.95, roof1=1.0, back=4.6, cabin="fastback", doors=2, tumble=0.16, nose_taper=0.04, scoop=True, stripes=True,
+                exhaust=2, lamps="round", grille="wide", bumper="chrome", rim="mag", spokes=6, preview=pv("#1F3A93", "#F2F2F2"))
 
 
 @hero("convertible", FAM)
 def convertible():
-    return _car("convertible", cabin="open", boot=True, L=9.2, belt=1.85, hood=1.6, deck=1.8, ws=-0.9, back=2.6, bumper="chrome", lamps="round",
-                rim="wire", spokes=24, seat_col=[0.82, 0.72, 0.55], preview=pv("#D7263D", "#F2E8CF"))
+    return _car("convertible", cabin="open", boot=True, L=14.5, doors=2, rear_hip_z=None, bulk=1.5, back=3.4, hip_z=-0.3, fw=-2.55,
+                ws=-3.2, bumper="chrome", lamps="round", rim="wire", spokes=24, header=1.5, seat_col=[0.82, 0.72, 0.55],
+                preview=pv("#D7263D", "#F2E8CF"))
 
 
 @hero("limousine", FAM)
 def limousine():
-    return _car("limousine", L=14.0, wb=10.2, axle_off=0.2, ws=-3.4, roof0=-2.4, roof1=4.2, back=5.0, extra_b=(-0.2, 2.0), bumper="chrome",
-                tumble=0.16, rim="steel", preview=pv("#151515", "#C0C0C0", glass="#151A20"))
+    return _car("limousine", L=24.0, wb=18.0, axle_off=0.3, ws=-7.8, fw=-7.2, hip_z=-4.95, bulk=7.6, rear_hip_z=6.45, roof0=-5.8,
+                roof1=6.6, back=8.8, bpillar=-3.9, extra_b=(-0.5, 3.0), bumper="chrome", tumble=0.1, rim="steel",
+                preview=pv("#151515", "#C0C0C0", glass="#151A20"))
 
 
 @hero("station wagon", FAM)
 def station_wagon():
-    return _car("station wagon", cabin="wagon", L=9.4, ws=-1.3, roof0=-0.3, roof1=3.65, back=4.1, deck=2.0, roofrack=True, doors_col="secondary",
-                bumper="chrome", rim="steel", preview=pv("#8A6E4B", "#E8DCC2"))
+    return _car("station wagon", cabin="wagon", L=14.8, roof1=6.4, back=6.85, bulk=2.75, deck=3.3, quarter=4.6, roofrack=True,
+                doors_col="secondary", bumper="chrome", rim="steel", preview=pv("#8A6E4B", "#E8DCC2"))
 
 
 @hero("rally car", FAM)
 def rally_car():
-    return _car("rally car", cabin="wagon", L=8.4, wb=5.2, wr=0.72, ww=0.68, sill=0.62, belt=2.0, hood=1.7, nose=1.3, deck=2.1, ws=-1.2,
-                roof0=-0.25, roof1=3.0, back=3.55, knobby=0.03, roof_lights=True, mudflaps=True, spoiler=True, stripes=True, rim="alloy",
-                spokes=6, rim_col="white", bumper="black", preview=pv("#1E5BC6", "#F5F5F5"))
+    return _car("rally car", cabin="wagon", L=13.4, wb=8.2, wr=1.2, ww=1.0, sill=0.62, floor=0.9, hip=2.1, belt=3.3, hood=2.85, nose=2.4,
+                deck=3.4, fw=-2.75, ws=-3.35, hip_z=-0.5, roof0=-1.35, bulk=2.5, rear_hip_z=1.4, roof1=4.6, back=5.9, doors=4, knobby=0.04, roof_lights=True, mudflaps=True, spoiler=True, stripes=True,
+                rim="alloy", spokes=6, rim_col="white", bumper="black", preview=pv("#1E5BC6", "#F5F5F5"))
 
 
 @hero("off roader", FAM)
 def off_roader():
-    return _car("off roader", cabin="open", rollbar=True, L=8.2, W=3.8, wb=5.0, axle_off=0.1, wr=0.9, ww=0.75, track_in=-0.05, sill=0.95,
-                belt=2.35, hood=2.2, nose=1.95, deck=2.3, ws=-0.95, back=3.1, nose_taper=0.02, crown=0.03, lamps="round", grille="jeep",
-                bumper="black", flares=True, spare=True, knobby=0.07, rim="steel", exhaust=1, preview=pv("#4B5D3A", "#2A2A2A"))
+    return _car("off roader", cabin="open", rollbar=True, L=13.6, W=7.0, wb=8.3, axle_off=0.1, wr=1.45, ww=1.15, track_in=-0.25, sill=1.25,
+                floor=1.45, hip=2.65, hip_z=0.15, rear_hip_z=None, belt=3.75, hood=3.65, nose=3.2, deck=3.7, ws=-2.9, fw=-2.2, bulk=2.4,
+                back=4.4, doors=2, nose_taper=0.02, crown=0.04, lamps="round", grille="jeep", bumper="black", flares=True, spare=True,
+                knobby=0.08, rim="steel", exhaust=1, header=1.6, preview=pv("#4B5D3A", "#2A2A2A"))
 
 
 @hero("suv", FAM)
 def suv():
-    return _car("suv", cabin="wagon", L=9.4, W=3.9, wr=0.82, ww=0.7, wb=5.8, sill=0.75, belt=2.35, hood=2.1, nose=1.7, deck=2.4, ws=-1.2,
-                roof0=-0.25, roof1=3.7, back=4.15, roofy=3.45, roofrack=True, bumper="black", flares=True, rim="alloy", spokes=6,
-                preview=pv("#2E3B4E", "#9AA3AD"))
+    return _car("suv", cabin="wagon", L=16.0, W=7.0, wr=1.35, ww=1.05, wb=9.6, axle_off=0.0, sill=0.95, floor=1.25, hip=2.45, hip_z=-0.5, belt=3.75,
+                hood=3.45, nose=2.95, deck=3.8, ws=-3.8, fw=-3.1, bulk=2.9, rear_hip_z=1.75, roof0=-1.6, roof1=6.5, back=7.15, quarter=5.0,
+                roofrack=True, bumper="black", flares=True, rim="alloy", spokes=6, preview=pv("#2E3B4E", "#9AA3AD"))
 
 
 # ==================================================================================================== special cars
