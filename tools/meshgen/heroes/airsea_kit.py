@@ -456,13 +456,20 @@ class Fus:
     """Lofted body through stations (z, half_width, half_height, y_centre[, squareness]): superellipse sections
     interpolated smoothly (fuselages, nacelles, blimp gondolas, floats). Query the surface with x_at / y_top."""
 
-    def __init__(self, stations, n=20, p=2.0):
+    def __init__(self, stations, n=20, p=2.0, smooth=False):
         S_ = np.array([list(s) + [p] * (5 - len(s)) for s in stations], float)
         self.S = S_[np.argsort(S_[:, 0])]
         self.n = n
+        self._pch = None
+        if smooth:
+            from scipy.interpolate import PchipInterpolator
+            self._pch = [PchipInterpolator(self.S[:, 0], self.S[:, k]) for k in range(1, 5)]
 
     def at(self, z):
         S_ = self.S
+        if self._pch is not None:
+            zc = min(max(float(z), S_[0, 0]), S_[-1, 0])
+            return [float(f(zc)) for f in self._pch]
         return [float(np.interp(z, S_[:, 0], S_[:, k])) for k in range(1, 5)]
 
     def ring(self, z, n=None):
@@ -922,7 +929,9 @@ def Hero_bounds(H):
 PREVIEW_DEFAULTS = {"chrome": "#D5DCE3", "rubber": "#2A2C31", "flame": "#FF8A1F", "flameCore": "#FFE7A3", "paint": None, "trim": None, "bark": "#6B4A2E"}
 
 
-def mount(H, seat_part, pos, size, bone="Body"):
+def mount(H, seat_part, pos, size, bone="Body", length=None, enter=None, stand=False):
+    """Seat socket (the rider's HIP point, rider faces -Z) + H.mount. length: the model's Z length in studs at its
+    authored (real game) size ("auto" measures the rest-pose parts); enter: (x, z) ground point to climb in from."""
     fix_bounds(H)
     pv = getattr(H, "preview", None) or {}
     for k, v in PREVIEW_DEFAULTS.items():
@@ -931,3 +940,378 @@ def mount(H, seat_part, pos, size, bone="Body"):
     H.preview = pv
     H.socket("seat", pos, bone)
     H.mount = {"seat": seat_part, "saddle": {"pos": tuple(float(v) for v in pos), "size": tuple(float(v) for v in size)}}
+    if length is not None:
+        H.mount["length"] = round(float(model_length(H) if length == "auto" else length), 2)
+    if stand:
+        H.mount["stand"] = True
+    if enter is not None:
+        H.socket("enter", (float(enter[0]), 0.0, float(enter[1])), "Body")
+
+
+def model_bounds(H):
+    """Rest-pose model-space bounds of the pieces (direct meshes exactly, sculpts sampled) and prims."""
+    lo, hi = np.full(3, 1e9), np.full(3, -1e9)
+    blo, bhi = None, None
+    for p in H.parts:
+        if p["kind"] == "piece" and isinstance(p["sdf"], D):
+            b = p["sdf"].mesh.bounds
+            lo, hi = np.minimum(lo, b[0]), np.maximum(hi, b[1])
+        elif p["kind"] == "piece":  # sculpt: coarse sample of its field over the search region
+            if blo is None:
+                blo, bhi = H.bounds_hint()
+            vol, step = mesher.sample(p["sdf"], blo, bhi, 72)
+            inside = np.argwhere(vol < 0)
+            if len(inside):
+                lo, hi = np.minimum(lo, blo + inside.min(0) * step), np.maximum(hi, blo + inside.max(0) * step)
+        elif p["kind"] == "prim":
+            c, s = np.array(p["pos"]), np.array(p["size"]) / 2
+            lo, hi = np.minimum(lo, c - s), np.maximum(hi, c + s)
+    return lo, hi
+
+
+def model_length(H):
+    lo, hi = model_bounds(H)
+    return float(hi[2] - lo[2])
+
+
+# ================================================================================================ real-scale craft
+def fus_angle(fus, z, y):
+    """Angle (radians, right side, 0 = +X) where the Fus section at z reaches height y."""
+    w, h, yc, p = fus.at(z)
+    s = min(max((y - yc) / max(h, 1e-6), -1.0), 1.0)
+    return math.asin(math.copysign(abs(s) ** (p / 2), s))
+
+
+def fus_point(fus, z, a, inset=0.0):
+    w, h, yc, p = fus.at(z)
+    c, s = math.cos(a), math.sin(a)
+    w2, h2 = max(w - inset, 1e-4), max(h - inset, 1e-4)
+    return np.array([w2 * math.copysign(abs(c) ** (2 / p), c), yc + h2 * math.copysign(abs(s) ** (2 / p), s), z])
+
+
+def band(fus, zs, ylo=None, yhi=None, th=0.15, n=32, side=False, crease=60, out=0.0):
+    """Thick shell over the part of a Fus surface between heights ylo and yhi at every station z (ylo / yhi: float,
+    fn(z) or None). ylo None: the bottom tub (right edge at yhi, down round the keel, up to the left edge); yhi None:
+    the top cap (canopies, roofs); side=True: only the right-hand strip between ylo and yhi (mirror it yourself).
+    The inner skin is the section shrunk by th, edges are closed: an open cockpit tub, a glass bubble, a roof."""
+    def val(v, z, d):
+        if v is None:
+            return d
+        return float(v(z)) if callable(v) else float(v)
+
+    rings = []
+    for z in zs:
+        if side:
+            a0, a1 = fus_angle(fus, z, val(ylo, z, -1e9)), fus_angle(fus, z, val(yhi, z, 1e9))
+        elif ylo is None:
+            a0 = fus_angle(fus, z, val(yhi, z, 1e9))
+            a1 = -math.pi - a0
+        else:
+            a0 = fus_angle(fus, z, val(ylo, z, -1e9))
+            a1 = math.pi - a0
+        A_ = np.linspace(a0, a1, n)
+        o = np.array([fus_point(fus, z, a, -out) for a in A_])
+        i = np.array([fus_point(fus, z, a, th - out) for a in A_])
+        rings.append(np.vstack([o, i[::-1]]))
+    return loft(rings, "strip", "strip", crease=crease)
+
+
+def surface_line(fus, zs, y, r=0.06, out=0.0, segs=6, both=True, yfn=None):
+    """Tube hugging a Fus side at height y (or yfn(z)): trims, beltlines, stripes, door seams along z."""
+    pts = []
+    for z in zs:
+        yy = yfn(z) if yfn else y
+        a = fus_angle(fus, z, yy)
+        p = fus_point(fus, z, a, -out)
+        pts.append(p)
+    m = tube(pts, r, segs)
+    return merge(m, mirror(m)) if both else m
+
+
+def ring_line(fus, z, r=0.05, ylo=None, yhi=None, out=0.0, n=24):
+    """Tube round a Fus section at z (between heights, or the whole ring): panel seams, frames, pillars."""
+    if ylo is None and yhi is None:
+        A_ = np.linspace(0, TAU, n + 1)
+    elif ylo is None:
+        a0 = fus_angle(fus, z, yhi)
+        A_ = np.linspace(a0, -math.pi - a0, n)
+    else:
+        a0 = fus_angle(fus, z, ylo)
+        a1 = math.pi - a0 if yhi is None else fus_angle(fus, z, yhi)
+        A_ = np.linspace(a0, a1, n)
+    pts = [fus_point(fus, z, a, -out) for a in A_]
+    return tube(pts, r, 6)
+
+
+def pilot_seat(hip, w=1.7, back_h=2.9, rake=8, depth=1.5, floor_y=None):
+    """Bucket seat for a seated R15 rider whose HIP point is `hip` (cushion top 0.25 below it, under the thighs, backrest behind the
+    torso, headrest), on a pedestal down to floor_y. Returns a direct mesh."""
+    x, y, z = hip
+    cz = z - depth / 2 + 0.45
+    ms = [box((w, 0.42, depth), (x, y - 0.46, cz), r=0.14, seg=1),
+          box((0.24, 0.3, depth * 0.85), (x + w / 2 - 0.06, y - 0.2, cz + 0.05), r=0.1),
+          box((0.24, 0.3, depth * 0.85), (x - w / 2 + 0.06, y - 0.2, cz + 0.05), r=0.1),
+          xform(box((w, back_h, 0.4), (0, back_h / 2, 0), r=0.15, seg=1), (x, y - 0.3, z + 0.78), (rake, 0, 0)),
+          xform(box((w * 0.62, 0.75, 0.32), (0, back_h + 0.42, -0.04), r=0.13, seg=1), (x, y - 0.3, z + 0.78), (rake, 0, 0))]
+    if floor_y is not None and y - 0.67 - floor_y > 0.05:
+        hgt = y - 0.67 - floor_y
+        ms.append(box((w * 0.6, hgt + 0.05, depth * 0.6), (x, floor_y + hgt / 2, cz), r=0.05))
+    return merge(*ms)
+
+
+def yoke(hip, span=3.0, col=None):
+    """Control yoke where a seated R15 rider's hands are (hip + (+-1.5, 1.3, -1.6)): horns, hub, column forward."""
+    x, y, z = hip
+    hy, hz = y + 1.3, z - 1.65
+    horns = merge(tube([[x - span / 2, hy + 0.35, hz], [x - span / 2, hy - 0.15, hz], [x - span / 2 + 0.5, hy - 0.4, hz], [x + span / 2 - 0.5, hy - 0.4, hz],
+                        [x + span / 2, hy - 0.15, hz], [x + span / 2, hy + 0.35, hz]], 0.1, 8),
+                  box((0.7, 0.4, 0.25), (x, hy - 0.35, hz), r=0.08))
+    col_ = cyl(0.11, 1.4, (x, hy - 0.35, hz - 0.75), axis=2, segs=10)
+    return horns, col_
+
+
+def stick(hip, floor_y, dz=-1.7, dx=0.0, h=1.1):
+    """Centre control stick rising from the floor to hip + (0, h, dz) (fighter / glider / helicopter cyclic)."""
+    x, y, z = hip
+    top = np.array([x + dx, y + h, z + dz])
+    boot = rev([(floor_y, 0), (floor_y + 0.02, 0.32), (floor_y + 0.25, 0.22), (floor_y + 0.4, 0.0)], axis=1, segs=12, pos=(top[0], 0, top[2] - 0.35))
+    shaft = tube([[top[0], floor_y + 0.2, top[2] - 0.35], [top[0], (floor_y + top[1]) / 2, top[2] - 0.15], top - np.array([0, 0.3, 0])], 0.07, 8)
+    grip = xform(rev([(-0.3, 0), (-0.28, 0.13), (0.1, 0.15), (0.3, 0.12), (0.34, 0)], axis=1, segs=10), tuple(top), (-12, 0, 0))
+    return merge(boot, shaft, grip)
+
+
+def craft_clips(H, L, hover=False, attack="dive", bank=0.3, extra=None, keys=24):
+    """Clips for a real-scale rideable craft (the game spins rotors / props / wheels and folds gear itself, so
+    clips never turn them). Idle: engine shudder (+ a gentle hover bob for hovering craft). Move: subtle airframe
+    buzz + slow rock. Attack / Hit: one-shots scaled to the craft length L (summons)."""
+    s = L / 10.0
+
+    def idle(t):
+        u = t / 2.4
+        pose = {}
+        b = 0.06 * s * math.sin(TAU * u) if hover else 0.0
+        _add(pose, "Body", (0, b + 0.012 * math.sin(TAU * u * 8), 0, 0.004 * math.sin(TAU * u * 6 + 0.5), 0, 0.006 * math.sin(TAU * u * 5 + 1.1)))
+        if extra:
+            extra("Idle", u, pose)
+        return pose
+
+    def move(t):
+        u = t / 1.6
+        pose = {}
+        _add(pose, "Body", (0, 0.03 * s * math.sin(TAU * u) + 0.01 * math.sin(TAU * u * 7), 0, (-0.05 if hover else 0.0) + 0.012 * math.sin(TAU * u + 0.3),
+                            0, 0.025 * bank * math.sin(TAU * u) * 2 + 0.004 * math.sin(TAU * u * 6)))
+        if extra:
+            extra("Move", u, pose)
+        return pose
+
+    def attack_fn(t):
+        u = t / 0.9
+        pose = {}
+        if attack == "roll":
+            _add(pose, "Body", (0, 0.3 * s * pulse(u, 0, 1), -0.8 * s * pulse(u, 0, 1), 0.08 * pulse(u, 0, 0.5), 0, TAU * ease(u)))
+        elif attack == "ram":
+            k = ease(u / 0.4) * (1 - ease((u - 0.5) / 0.5))
+            _add(pose, "Body", (0, -0.08 * s * k, -1.2 * s * k, -0.15 * k, 0, 0))
+        else:
+            k1, k2 = pulse(u, 0.0, 0.6), pulse(u, 0.45, 1.0)
+            _add(pose, "Body", (0, -0.6 * s * k1 + 0.15 * s * k2, -1.0 * s * pulse(u, 0.1, 0.9), -0.35 * k1 + 0.25 * k2, 0, 0.08 * k1))
+        if extra:
+            extra("Attack", u, pose)
+        return pose
+
+    def hit(t):
+        u = t / 0.45
+        pose = {}
+        k = math.sin(math.pi * u) * (1 - u)
+        _add(pose, "Body", (0.1 * s * k, -0.12 * s * k, 0.15 * s * k, 0.06 * k, 0.04 * k, 0.18 * math.sin(TAU * u * 1.5) * (1 - u)))
+        if extra:
+            extra("Hit", u, pose)
+        return pose
+
+    fix_bounds(H)
+    H.clip("Idle", 2.4, idle, keys=keys)
+    H.clip("Move", 1.6, move, keys=keys)
+    H.clip("Attack", 0.9, attack_fn, keys=16, loop=False)
+    H.clip("Hit", 0.45, hit, keys=10, loop=False)
+
+
+class SplitFus:
+    """A fuselage as two half-shells meeting at the sill line y = yc(z): a lower half (h_lo, squareness p_lo) and an
+    upper half (h_up, p_up) with the same half width. The upper half can rise into a canopy hump over the cockpit,
+    so the glass is simply the upper band over the cockpit's z range and the decks in front / behind are the same
+    surface in paint. stations: (z, w, h_lo, h_up, yc)."""
+
+    def __init__(self, stations, n=32, p_lo=2.4, p_up=2.2):
+        self.lo = Fus([(z, w, hl, yc, p_lo) for z, w, hl, hu, yc in stations], n=n, smooth=True)
+        self.up = Fus([(z, w, hu, yc, p_up) for z, w, hl, hu, yc in stations], n=n, smooth=True)
+        self.z0, self.z1 = float(self.lo.S[0, 0]), float(self.lo.S[-1, 0])
+
+    def yc(self, z):
+        return self.lo.at(z)[2]
+
+    def top(self, z):
+        w, h, yc, p = self.up.at(z)
+        return yc + h
+
+    def bottom(self, z):
+        w, h, yc, p = self.lo.at(z)
+        return yc - h
+
+    def half(self, y, z):
+        return self.up if y >= self.yc(z) else self.lo
+
+    def x_at(self, z, y):
+        return self.half(y, z).x_at(z, y)
+
+    def lower(self, zs, th=0.15, n=24, **kw):
+        return band(self.lo, zs, yhi=self.yc, th=th, n=n, **kw)
+
+    def upper(self, zs, th=0.15, n=24, **kw):
+        return band(self.up, zs, ylo=self.yc, th=th, n=n, **kw)
+
+    def shell(self, zs, th=0.15, n=24):
+        return merge(self.lower(zs, th, n), self.upper(zs, th, n))
+
+    def point(self, z, y, out=0.0, side=1):
+        f = self.half(y, z)
+        p = fus_point(f, z, fus_angle(f, z, y), -out)
+        p[0] *= side
+        return p
+
+    def line(self, zs, y=None, yfn=None, r=0.06, out=0.0, both=True, segs=6):
+        """Tube along the side at height y (or yfn(z)); y=None + yfn=None runs along the top centre."""
+        pts = []
+        for z in zs:
+            if y is None and yfn is None:
+                pts.append(np.array([0.0, self.top(z) + out, z]))
+            else:
+                pts.append(self.point(z, yfn(z) if yfn else y, out))
+        m = tube(pts, r, segs)
+        return m if (not both or (y is None and yfn is None)) else merge(m, mirror(m))
+
+    def ring(self, z, r=0.06, out=0.0, ylo=None, n=28):
+        """Frame hoop over the top half at z (from the sill, or from height ylo on both sides), or round the whole
+        section when ylo == "full"."""
+        if ylo == "full":
+            pts = [fus_point(self.up, z, a, -out) for a in np.linspace(0, math.pi, n // 2 + 1)] + \
+                  [fus_point(self.lo, z, a, -out) for a in np.linspace(-math.pi, 0, n // 2 + 1)[1:]]
+            return tube(pts, r, 6)
+        if ylo is None or ylo >= self.yc(z):
+            a0 = 0.0 if ylo is None else fus_angle(self.up, z, ylo)
+            pts = [fus_point(self.up, z, a, -out) for a in np.linspace(a0, math.pi - a0, n)]
+        else:
+            a0 = fus_angle(self.lo, z, ylo)
+            pts = [fus_point(self.lo, z, a, -out) for a in np.linspace(a0, 0, n // 4, endpoint=False)] + \
+                  [fus_point(self.up, z, a, -out) for a in np.linspace(0, math.pi, n // 2)] + \
+                  [fus_point(self.lo, z, a, -out) for a in np.linspace(-math.pi, -math.pi - a0, n // 4 + 1)[1:]]
+        return tube(pts, r, 6)
+
+    def floor(self, z0, z1, y, inset=0.25, th=0.14, nz=10):
+        rings = []
+        for z in np.linspace(z0, z1, nz):
+            hw = max(self.x_at(z, y) - inset, 0.05)
+            rings.append(np.array([[-hw, y - th, z], [hw, y - th, z], [hw, y, z], [-hw, y, z]]))
+        return loft(rings, "fan", "fan", crease=30)
+
+
+def zrange(z0, z1, step=0.6, extra=()):
+    n = max(int(math.ceil((z1 - z0) / step)), 1)
+    zs = sorted(set([round(float(z), 4) for z in np.linspace(z0, z1, n + 1)] + [round(float(e), 4) for e in extra if z0 < e < z1]))
+    return zs
+
+
+def gear_leg(top, axle, wheel_r, wheel_w, pant=True, fork=False, segs=18):
+    """Landing gear unit: strut from `top` (pivot) to the axle, tyre + hub, optional wheel pant (fairing).
+    Returns (metal, tyre, pant) meshes."""
+    top, axle = np.asarray(top, float), np.asarray(axle, float)
+    ax = axle.copy()
+    strut = merge(tube([top, (top + ax) / 2 + np.array([0, 0, 0.0]), ax + np.array([0, wheel_r * 0.55, 0])], 0.16, 8),
+                  cyl(0.22, 0.6, tuple(top + (ax - top) * 0.3), axis=1, segs=10))
+    tyre = merge(wheel(wheel_r, wheel_w, tuple(ax), axis=0, segs=segs),
+                 cyl(wheel_r * 0.55, wheel_w + 0.08, tuple(ax), axis=0, segs=14, bevel=0.05))
+    pm = None
+    if pant:
+        L = wheel_r * 2.9
+        pm = rev([(-L * 0.42, 0.0), (-L * 0.36, wheel_r * 0.55), (-L * 0.1, wheel_r * 0.82), (L * 0.2, wheel_r * 0.78), (L * 0.5, wheel_r * 0.35), (L * 0.58, 0.0)],
+                 axis=2, segs=16, pos=(ax[0], ax[1] + wheel_r * 0.25, ax[2]), scale=((wheel_w * 0.5 + 0.18) / (wheel_r * 0.82), 1.0, 1.0))
+    return strut, tyre, pm
+
+
+# ================================================================================================ rideable craft helpers
+GLASS = [0.62, 0.8, 0.92]
+SCREEN = [0.35, 0.75, 1.0]
+
+
+
+def ride(H, hip, enter, nose_z, tail_z, top_y, seat_size=(1.8, 0.15, 1.5), muzzle=None, exhaust=None, length="auto"):
+    """Real-scale rideable craft: seat socket at the rider's hip, enter socket on the ground, measured length."""
+    mount(H, "Seat", hip, seat_size, length=length, enter=enter)
+    H.socket("head", (hip[0], top_y, hip[2]), "Body")
+    H.socket("mouth", (0, hip[1] - 0.3, nose_z), "Body")
+    H.socket("exhaust", exhaust or (0, hip[1] - 0.5, tail_z), "Body")
+    if muzzle is not None:
+        H.socket("muzzle", muzzle, "Body")
+
+
+def bulkhead(fus, z, th=0.12, inset=0.1, ylo=None):
+    r = fus.ring(z, 32)
+    w, h, yc, p = fus.at(z)
+    r[:, 0] *= (w - inset) / w
+    r[:, 1] = yc + (r[:, 1] - yc) * (h - inset) / h
+    if ylo is not None:
+        r[:, 1] = np.maximum(r[:, 1], ylo)
+    a, b = r.copy(), r.copy()
+    a[:, 2] = z - th / 2
+    b[:, 2] = z + th / 2
+    return loft([a, b], "fan", "fan", crease=40)
+
+
+def cockpit(H, F, hip, floor_y, panel_z, panel_w, panel_top, ctrl="stick", seat_w=1.9, screens=2, col="darker", side_console=True):
+    """Floor, pilot seat, instrument panel (glare shield + glowing screens), control stick / yoke, rudder pedals
+    and a throttle for a single pilot whose HIP point is `hip`."""
+    x, y, z = hip
+    dpiece(H, "Seat", "Body", pilot_seat(hip, w=seat_w, floor_y=floor_y), col="dark", mat="cloth", role="detail", pri=1.2)
+    pz0 = panel_z - 0.75
+    pb = floor_y + 0.6
+    panel = merge(xform(box((panel_w, panel_top - pb, 0.75), (0, 0, 0), r=0.15, seg=1), (x, (panel_top + pb) / 2, panel_z - 0.37), (-8, 0, 0)),
+                  xform(box((panel_w * 0.96, 0.16, 1.15), (0, 0, 0), r=0.07), (x, panel_top + 0.08, panel_z - 0.45), (-5, 0, 0)))
+    dpiece(H, "Panel", "Body", panel, col=col, role="detail", pri=1.3)
+    xs = [x] if screens == 1 else list(np.linspace(x - panel_w * 0.24, x + panel_w * 0.24, screens))
+    for i, sx in enumerate(xs):
+        H.prim(f"Screen{i + 1}", "Body", "Block", (min(1.0, panel_w / (screens + 1.2)), 0.62, 0.06), (sx, panel_top - 0.55, panel_z + 0.035),
+               rot=(math.radians(-8), 0, 0), col=SCREEN, glow=True, role="light", pri=2.0)
+    ms = []
+    if ctrl == "stick":
+        ms.append(stick(hip, floor_y, dz=-1.85, h=1.05))
+    else:
+        hn, cl = yoke(hip)
+        ms += [hn, cl]
+    for sx in (x - 0.5, x + 0.5):
+        ms.append(xform(box((0.42, 0.62, 0.12), (0, 0, 0), r=0.04), (sx, floor_y + 0.42, z - 2.0), (-38, 0, 0)))
+    if side_console:
+        ms.append(box((0.35, 0.5, 1.2), (x - seat_w / 2 - 0.3, y + 0.25, z - 0.9), r=0.08))
+        ms.append(tube([[x - seat_w / 2 - 0.3, y + 0.45, z - 0.9], [x - seat_w / 2 - 0.3, y + 0.95, z - 1.15]], 0.06, 6))
+        ms.append(sphere(0.13, (x - seat_w / 2 - 0.3, y + 1.0, z - 1.17), segs=8))
+    dpiece(H, "Controls", "Body", merge(*ms), col="gunmetal", mat="metal", role="detail", pri=1.6)
+    dpiece(H, "Floor", "Body", F.floor(z - 2.6, z + 1.1, floor_y), col="darker", role="detail", pri=1.6)
+
+
+def rescale(H, k):
+    """Scale a finished hero's geometry by k about the origin (bones, direct meshes, SDF sculpts, patterns, prims,
+    sockets): lifts a model authored at summon scale to real game scale before its sockets / clips are set."""
+    H.bones = [(n, p, tuple(float(v) * k for v in pos)) for n, p, pos in H.bones]
+    for p in H.parts:
+        if p["kind"] == "piece":
+            s = p["sdf"]
+            if isinstance(s, D):
+                p["sdf"] = D(direct.moved(s.mesh, (0, 0, 0), None, (k, k, k)))
+            else:
+                p["sdf"] = S.SDF(lambda q, _s=s: _s(q / k) * k)
+            if p.get("pattern") is not None:
+                p["pattern"] = (lambda P_, _f=p["pattern"]: _f(P_ / k))
+        else:
+            p["pos"] = tuple(v * k for v in p["pos"])
+            p["size"] = tuple(v * k for v in p["size"])
+    H.sockets = {n: (tuple(v * k for v in pos), b) for n, (pos, b) in H.sockets.items()}
+    H.__dict__.pop("bounds_hint", None)
+    fix_bounds(H)
