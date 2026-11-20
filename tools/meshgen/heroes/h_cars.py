@@ -529,13 +529,16 @@ def suv():
 
 
 # ==================================================================================================== special cars
-def _rig_common(H, wheels, steer, height, length, seat_part, seat_pos, seat_size, nose, tail, sym=5, attack="ram", **kw):
+def _rig_common(H, wheels, steer, height, length, seat_part, seat_pos, seat_size, nose, tail, sym=5, attack="ram", scale=1.0, **kw):
+    """Rig in the authoring units, then K.finish_scaled brings the whole model to real game scale (x scale) and
+    writes the ride data (seat = rider hip, enter on the left flank, mount length)."""
     K.mount(H, seat_part, seat_pos, seat_size, "Chassis")
     H.socket("head", (0, height + 0.3, 0), "Chassis")
     H.socket("mouth", nose, "Chassis")
     H.socket("exhaust", tail, "Chassis")
     H.rig.update({"head": "Chassis"})
     K.vehicle_clips(H, wheels, susp="Chassis", height=height, length=length, sym=sym, steer=steer, attack=attack, **kw)
+    K.finish_scaled(H, scale)
 
 
 def _new(hid, tags=("vehicle", "car"), preview=None):
@@ -598,7 +601,7 @@ def race_car():
     piece(H, "Livery", "Chassis", num, col="white", mat="plastic", role="detail", pri=2.2)
     tl = K.lamp((0, 0.75, 3.62), 0, 0.08, axis="+z", shape="rect", w=0.3, h=0.18)
     piece(H, "RainLight", "Chassis", tl, col=RED_L, mat="glass", role="light", pri=2.3, ao=False)
-    _rig_common(H, wheels, steer, 2.0, 9.0, "Seat", (0, 1.1, -0.35), (0.7, 0.2, 0.7), (0, 0.5, -5.2), (0, 0.8, 3.7), sym=10)
+    _rig_common(H, wheels, steer, 2.0, 9.0, "Seat", (0, 1.1, -0.35), (0.7, 0.2, 0.7), (0, 0.5, -5.2), (0, 0.8, 3.7), sym=10, scale=1.75)
     return H
 
 
@@ -626,17 +629,18 @@ def go_kart():
         sp = round_poly(np.array([(-0.9, 0.25), (-0.9, 0.55), (0.9, 0.6), (1.0, 0.25)]), 0.12, 2)
         pods.append(xf(extrude(sp, 0.4, bevel=0.1, seg=2), (s * 1.0, 0, 0)))
     piece(H, "Chassis", "Chassis", merge(nb, *pods), col="primary", mat="plastic", pri=0.6)
-    seat = K.seat_mesh((0, 0.55, 0.45), w=0.8, d=0.7, back=0.95, recline=18)
+    # seat raised on a frame so the (upright) rider's feet reach the floor tray
+    seat = merge(K.seat_mesh((0, 1.0, 0.45), w=0.8, d=0.7, back=0.95, recline=18), box((0.5, 0.65, 0.5), (0, 0.6, 0.45), r=0.05, seg=0))
     piece(H, "Seat", "Chassis", seat, col="secondary", mat="plastic", role="seat", pri=0.9)
-    sw = K.steering_mesh((0, 1.05, -0.55), r=0.24, tilt=55, col_len=0.0)
-    col = rod((0, 1.0, -0.6), (0, 0.32, -1.35), 0.04, segs=8)
+    sw = K.steering_mesh((0, 2.05, -0.62), r=0.3, tilt=55, col_len=0.0)
+    col = rod((0, 2.0, -0.66), (0, 0.32, -1.35), 0.05, segs=8)
     piece(H, "Steering", "Chassis", merge(sw, col), col="darker", mat="plastic", role="detail", pri=1.3)
     eng = merge(K.box((0.55, 0.5, 0.55), (0.55, 0.65, 1.55), r=0.06), cyl(0.5, 0.18, (0.55, 1.0, 1.55), "y", segs=12),
                 K.tube_ring(0.07, 0.05, 0.6, axis="z", pos=(0.85, 0.65, 2.05)))
     piece(H, "Engine", "Chassis", eng, col="metal", mat="metal", role="detail", pri=1.4)
     num = K.lamp((0, 0.6, -2.5), 0, 0.05, shape="rect", w=0.5, h=0.32)
     piece(H, "NumberPlate", "Chassis", num, col="white", mat="plastic", role="detail", pri=2.0)
-    _rig_common(H, wheels, steer, 1.6, 5.0, "Seat", (0, 0.65, 0.45), (0.8, 0.2, 0.7), (0, 0.5, -2.7), (0.85, 0.65, 2.4), sym=6)
+    _rig_common(H, wheels, steer, 1.6, 5.0, "Seat", (0, 1.08, 0.45), (0.8, 0.2, 0.7), (0, 0.5, -2.7), (0.85, 0.65, 2.4), sym=6, scale=1.2)
     return H
 
 
@@ -654,12 +658,12 @@ def golf_cart():
     piece(H, "Seat", "Chassis", bench, col="secondary", mat="cloth", role="seat", pri=0.9)
     posts = []
     for s in (-1, 1):
-        posts.append(rod((s * 1.15, 1.45, -1.55), (s * 1.12, 3.15, -1.15), 0.06, segs=8))
-        posts.append(rod((s * 1.15, 0.8, 1.0), (s * 1.12, 3.15, 1.05), 0.06, segs=8))
-    ws = box((2.2, 1.05, 0.05), (0, 2.2, -1.42), r=0.03, rot_=(-14, 0, 0))
+        posts.append(rod((s * 1.15, 1.45, -1.55), (s * 1.12, 3.6, -1.05), 0.06, segs=8))
+        posts.append(rod((s * 1.15, 0.8, 1.0), (s * 1.12, 3.6, 1.05), 0.06, segs=8))
+    ws = box((2.2, 1.6, 0.05), (0, 2.45, -1.36), r=0.03, rot_=(-13, 0, 0))
     piece(H, "Posts", "Chassis", merge(*posts), col="darker", mat="metal", role="detail", pri=1.2)
     piece(H, "Glass", "Chassis", ws, col="glass", mat="glass", role="window", pri=1.6, tr=0.3, ao=False)
-    roof = K.box((2.75, 0.14, 3.1), (0, 3.2, -0.1), r=0.07, seg=1)
+    roof = K.box((2.75, 0.14, 3.1), (0, 3.66, -0.1), r=0.07, seg=1)
     piece(H, "Roof", "Chassis", roof, col="primary", mat="plastic", pri=0.8)
     sw = K.steering_mesh((-0.55, 1.75, -1.1), r=0.25, tilt=40, col_len=0.4)
     piece(H, "Steering", "Chassis", sw, col="darker", mat="plastic", role="detail", pri=1.3)
@@ -672,7 +676,7 @@ def golf_cart():
     mpiece(H, "Headlight#", "Chassis", hl, col=LENS, mat="glass", role="light", pri=1.6, ao=False)
     bump = merge(K.box((2.6, 0.22, 0.25), (0, 0.55, -2.95), r=0.08), K.box((2.6, 0.22, 0.25), (0, 0.55, 2.85), r=0.08))
     piece(H, "Bumpers", "Chassis", bump, col="darker", mat="rubber", role="detail", pri=1.5)
-    _rig_common(H, wheels, steer, 3.2, 5.6, "Seat", (-0.55, 1.3, 0.3), (0.9, 0.2, 0.8), (0, 0.8, -3.0), (0, 0.5, 2.9), sym=8)
+    _rig_common(H, wheels, steer, 3.2, 5.6, "Seat", (-0.55, 1.3, 0.3), (0.9, 0.2, 0.8), (0, 0.8, -3.0), (0, 0.5, 2.9), sym=8, scale=1.6)
     return H
 
 
@@ -688,13 +692,13 @@ def dune_buggy():
     piece(H, "Chassis", "Chassis", tub, col="primary", mat="plastic", pri=0.5)
     cage = []
     for s in (-1, 1):
-        cage.append(rod((s * 1.05, 1.2, -1.45), (s * 0.85, 2.85, -0.4), 0.07, segs=8))
-        cage.append(rod((s * 0.85, 2.85, -0.4), (s * 0.85, 2.85, 0.75), 0.07, segs=8))
-        cage.append(rod((s * 0.85, 2.85, 0.75), (s * 1.05, 1.25, 1.2), 0.07, segs=8))
-        cage.append(rod((s * 0.85, 2.85, 0.75), (s * 0.6, 1.5, 2.4), 0.06, segs=8))
-    cage.append(rod((-0.85, 2.85, -0.4), (0.85, 2.85, -0.4), 0.07, segs=8))
-    cage.append(rod((-0.85, 2.85, 0.75), (0.85, 2.85, 0.75), 0.07, segs=8))
-    cage.append(rod((-0.85, 2.85, 0.75), (0.85, 2.85, -0.4), 0.06, segs=8))
+        cage.append(rod((s * 1.05, 1.2, -1.45), (s * 0.85, 3.5, -0.4), 0.07, segs=8))
+        cage.append(rod((s * 0.85, 3.5, -0.4), (s * 0.85, 3.5, 0.75), 0.07, segs=8))
+        cage.append(rod((s * 0.85, 3.5, 0.75), (s * 1.05, 1.25, 1.2), 0.07, segs=8))
+        cage.append(rod((s * 0.85, 3.5, 0.75), (s * 0.6, 1.5, 2.4), 0.06, segs=8))
+    cage.append(rod((-0.85, 3.5, -0.4), (0.85, 3.5, -0.4), 0.07, segs=8))
+    cage.append(rod((-0.85, 3.5, 0.75), (0.85, 3.5, 0.75), 0.07, segs=8))
+    cage.append(rod((-0.85, 3.5, 0.75), (0.85, 3.5, -0.4), 0.06, segs=8))
     piece(H, "Cage", "Chassis", merge(*cage), col="darker", mat="metal", role="detail", pri=0.9)
     seats = merge(K.seat_mesh((-0.5, 1.35, 0.25), w=0.75, d=0.7, back=1.0), K.seat_mesh((0.5, 1.35, 0.25), w=0.75, d=0.7, back=1.0))
     piece(H, "Seat", "Chassis", seats, col="secondary", mat="cloth", role="seat", pri=0.9)
@@ -702,12 +706,12 @@ def dune_buggy():
     for s in (-1, 1):
         eng = merge(eng, K.tube_ring(0.09, 0.065, 0.9, axis="z", pos=(s * 0.45, 1.0, 2.9)))
     piece(H, "Engine", "Chassis", eng, col="metal", mat="metal", role="detail", pri=1.2)
-    sw = K.steering_mesh((-0.5, 1.95, -0.75), r=0.24, tilt=60, col_len=0.5)
-    lights = merge(*(K.lamp((s * 0.55, 3.05, -0.45), 0.15, 0.12) for s in (-1, 1)))
-    lb = merge(*(K.cbox((0.38, 0.32, 0.22), (s * 0.55, 3.05, -0.33), c=0.04) for s in (-1, 1)))
+    sw = K.steering_mesh((-0.5, 2.25, -0.6), r=0.24, tilt=60, col_len=0.5)
+    lights = merge(*(K.lamp((s * 0.55, 3.7, -0.45), 0.15, 0.12) for s in (-1, 1)))
+    lb = merge(*(K.cbox((0.38, 0.32, 0.22), (s * 0.55, 3.7, -0.33), c=0.04) for s in (-1, 1)))
     piece(H, "Steering", "Chassis", merge(sw, lb), col="darker", mat="plastic", role="detail", pri=1.4)
     piece(H, "Lamps", "Chassis", lights, col=LENS, mat="glass", role="light", pri=1.7, ao=False)
-    _rig_common(H, wheels, steer, 2.9, 6.6, "Seat", (-0.5, 1.45, 0.25), (0.75, 0.2, 0.7), (0, 1.2, -3.3), (0.45, 1.0, 3.3), sym=8)
+    _rig_common(H, wheels, steer, 2.9, 6.6, "Seat", (-0.5, 1.45, 0.25), (0.75, 0.2, 0.7), (0, 1.2, -3.3), (0.45, 1.0, 3.3), sym=8, scale=1.8)
     return H
 
 
@@ -735,7 +739,7 @@ def bumper_car():
     piece(H, "Pole", "Chassis", pole, col="metal", mat="metal", role="detail", pri=1.4)
     flag = K.lamp((0, 1.3, -2.12), 0, 0.06, shape="rect", w=1.0, h=0.45)
     piece(H, "Badge", "Chassis", flag, col="secondary", mat="plastic", role="detail", pri=2.0)
-    _rig_common(H, wheels, steer, 2.0, 4.5, "Seat", (0, 1.4, 0.45), (1.2, 0.2, 0.8), (0, 0.6, -2.4), (0, 0.6, 2.2), sym=8, attack="honk")
+    _rig_common(H, wheels, steer, 2.0, 4.5, "Seat", (0, 1.4, 0.45), (1.2, 0.2, 0.8), (0, 0.6, -2.4), (0, 0.6, 2.2), sym=8, attack="honk", scale=1.55)
     return H
 
 
@@ -766,7 +770,7 @@ def bubble_car():
     bump = K.torus(1.0, 0.07, axis="y", segs=24, rsegs=5)
     bump = warp(bump, lambda V: np.column_stack([V[:, 0] * 1.5, V[:, 1] + 0.75, V[:, 2] * 1.95]))
     piece(H, "Bumper", "Chassis", bump, col="metal", mat="metal", role="detail", pri=1.5)
-    _rig_common(H, wheels, steer, 2.6, 4.0, "Seat", (0, 1.1, 0.35), (1.0, 0.2, 0.7), (0, 1.0, -2.1), (0.4, 0.6, 2.0), sym=8, attack="honk")
+    _rig_common(H, wheels, steer, 2.6, 4.0, "Seat", (0, 1.1, 0.35), (1.0, 0.2, 0.7), (0, 1.0, -2.1), (0.4, 0.6, 2.0), sym=8, attack="honk", scale=2.3)
     return H
 
 
@@ -854,7 +858,7 @@ def _novelty(hid, theme, preview):
     sw = K.steering_mesh((0, sw_y, sw_z), r=0.28, tilt=55, col_len=0.4)
     piece(H, "Steering", "Chassis", sw, col="darker", mat="plastic", role="detail", pri=1.3)
     K.lamp_pair(H, "Headlight", "Chassis", (0.9, 0.85, -2.85), r=0.15, depth=0.1)
-    _rig_common(H, wheels, steer, 3.0, 6.5, "Seat", (0, seat_y + 0.1, seat_z), (0.9, 0.2, 0.8), (0, 1.5, -3.6), (0, 0.8, 3.0), sym=5, attack="honk")
+    _rig_common(H, wheels, steer, 3.0, 6.5, "Seat", (0, seat_y + 0.1, seat_z), (0.9, 0.2, 0.8), (0, 1.5, -3.6), (0, 0.8, 3.0), sym=5, attack="honk", scale=1.85)
     return H
 
 

@@ -856,7 +856,7 @@ def sprocket(r, w, pos, teeth=10, side=1):
 
 
 def tracks(H, parent, x, z0, z1, width, r_end=0.55, y_bottom=0.0, n_road=5, r_road=0.42, col="darker", wheel_col="steel", pri=0.9, cleats=26,
-           sprocket_back=True):
+           sprocket_back=True, wheel_names=False):
     """A pair of tracks (both sides) with spinning sprocket, idler and road wheels. Returns wheel list for clips."""
     belt = track_loop(z0, z1, y_bottom, r_end, r_end, width, cleats=cleats)
     piece(H, "TrackR", parent, xf(belt, (x, 0, 0)), col="tyre", mat="rubber", role="wheel", pri=pri)
@@ -876,8 +876,9 @@ def tracks(H, parent, x, z0, z1, width, r_end=0.55, y_bottom=0.0, n_road=5, r_ro
     for i in range(n_road):
         z = z0 + r_end * 0.6 + (z1 - z0 - r_end * 1.2) * (i + 0.5) / n_road
         for side, tag in ((1, "R"), (-1, "L")):
-            b = H.bone(f"Road{i}{tag}", parent, (side * x, y_bottom + r_road + 0.12, z))
-            piece(H, f"Road{i}{tag}", b, road_wheel(r_road, width * 0.6, (side * x, y_bottom + r_road + 0.12, z), side=side), col=wheel_col,
+            nm = f"Wheel{i}{tag}" if wheel_names else f"Road{i}{tag}"
+            b = H.bone(nm, parent, (side * x, y_bottom + r_road + 0.12, z))
+            piece(H, nm, b, road_wheel(r_road, width * 0.6, (side * x, y_bottom + r_road + 0.12, z), side=side), col=wheel_col,
                   mat="metal", role="wheel", pri=pri + 1.0)
             wheels.append((b, r_road))
     return wheels
@@ -902,7 +903,17 @@ def ride(H, seat, enter, bone="Chassis", seat_part="Seat", seat_size=(1.5, 0.2, 
     ground beside the door. length defaults to the model's Z extent (all direct pieces, BoundLo/BoundHi)."""
     if length is None:
         lo, hi = H.bpos("BoundLo"), H.bpos("BoundHi")
-        length = hi[2] - lo[2]
+        zlo, zhi = lo[2], hi[2]
+        sdfs = [p["sdf"] for p in H.parts if p["kind"] == "piece" and not isinstance(p["sdf"], DMesh)]
+        if sdfs:  # sculpted (SDF) pieces: probe their Z extent on a coarse grid
+            blo, bhi = H.bounds_hint()
+            g = [np.linspace(blo[i], bhi[i], 44) for i in range(3)]
+            P = np.stack(np.meshgrid(*g, indexing="ij"), -1).reshape(-1, 3)
+            for f in sdfs:
+                inside = P[f(P) < 0]
+                if len(inside):
+                    zlo, zhi = min(zlo, inside[:, 2].min()), max(zhi, inside[:, 2].max())
+        length = zhi - zlo
     H.mount = {"length": round(float(length), 2), "seat": seat_part,
                "saddle": {"pos": tuple(round(float(v), 3) for v in seat), "size": tuple(float(v) for v in seat_size)}}
     if stand:
@@ -1084,3 +1095,49 @@ def car_arch(zc, wr, ra, ybot, n=15):
     a0 = math.atan2(-dy, dz)
     a1 = math.pi - a0
     return [((zc + ra * math.cos(a0 + (a1 - a0) * k / (n - 1)), wr + ra * math.sin(a0 + (a1 - a0) * k / (n - 1))), 0.0) for k in range(n)]
+
+
+def scale_hero(H, f):
+    """Uniformly rescale a finished hero (bones, direct + SDF pieces, prims, sockets, clip translations, rig, mount):
+    the bridge that brings an older rider-agnostic build to real game scale before its seat is fitted."""
+    f = float(f)
+    H.bones = [(n, p, tuple(v * f for v in pos)) for n, p, pos in H.bones]
+    for p in H.parts:
+        if p["kind"] == "piece":
+            sh = p["sdf"]
+            if isinstance(sh, DMesh):
+                o = DMesh(np.asarray(sh.vertices, float) * f, np.asarray(sh.faces, int), process=False)
+                o.direct_normals = np.asarray(sh.direct_normals, float)
+                p["sdf"] = o
+            else:
+                p["sdf"] = S.SDF(lambda q, b=sh: b(q / f) * f)
+                if p.get("pattern") is not None:
+                    p["pattern"] = (lambda Q, pf=p["pattern"]: pf(Q / f))
+        else:
+            p["size"] = tuple(v * f for v in p["size"])
+            p["pos"] = tuple(v * f for v in p["pos"])
+    H.sockets = {k: (tuple(v * f for v in pos), b) for k, (pos, b) in H.sockets.items()}
+    for c in H.clips.values():
+        for b, vals in c["tracks"].items():
+            c["tracks"][b] = [tuple(v[i] * f if i < 3 else v[i] for i in range(6)) for v in vals]
+    if "wheels" in H.rig:
+        H.rig["wheels"] = [{"bone": w["bone"], "r": round(w["r"] * f, 3)} for w in H.rig["wheels"]]
+    if "height" in H.rig:
+        H.rig["height"] = H.rig["height"] * f
+    if H.mount.get("saddle"):
+        sd = H.mount["saddle"]
+        H.mount["saddle"] = {"pos": tuple(v * f for v in sd["pos"]), "size": tuple(v * f for v in sd["size"])}
+
+
+def finish_scaled(H, f, enter=None, hidden=False, seat=None, **extra):
+    """scale_hero + ride(): the seat socket already placed (old units) is scaled with the model; `seat` overrides it
+    (real units, e.g. to lift the hip so the shins clear the floor). Enter defaults to the left flank at the seat."""
+    scale_hero(H, f)
+    (pos, bone) = H.sockets["seat"]
+    if seat is not None:
+        pos = seat
+    if enter is None:
+        lo = H.bpos("BoundLo")
+        enter = (float(lo[0]) - 1.6, 0.0, pos[2])
+    ride(H, pos, enter, bone=bone, seat_part=H.mount.get("seat", "Seat"), seat_size=tuple(H.mount.get("saddle", {}).get("size", (1.5, 0.2, 1.3))),
+         hidden=hidden, **extra)

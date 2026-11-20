@@ -696,13 +696,20 @@ def _clips_tracked(H, wheels, height, length, extra_attack=None, extra_idle=None
                     extra_attack=extra_attack, extra_idle=extra_idle, extra_move=extra_move, turns=1.0)
 
 
-def _cab_box(H, bone, x0, x1, y0, y1, z0, z1, col="primary", post=0.14, glass_tr=0.22, name="Cab"):
-    """Boxy machine cab: translucent glass block + corner posts + roof slab (seat inside shows)."""
-    g = box((x1 - x0 - 0.1, y1 - y0 - 0.05, z1 - z0 - 0.1), ((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2), r=0.05)
-    piece(H, name + "Glass", bone, g, col="glass", mat="glass", role="window", pri=0.9, tr=glass_tr, ao=False)
-    posts = [cbox((post, y1 - y0, post), (x, (y0 + y1) / 2, z), c=0.03) for x in (x0 + post / 2 - 0.02, x1 - post / 2 + 0.02) for z in (z0 + post / 2 - 0.02, z1 - post / 2 + 0.02)]
-    roof = box((x1 - x0 + 0.2, 0.16, z1 - z0 + 0.25), ((x0 + x1) / 2, y1 + 0.06, (z0 + z1) / 2), r=0.06)
-    piece(H, name, bone, merge(roof, *posts), col=col, mat="metal", role="body", pri=0.8)
+def _cab_box(H, bone, x0, x1, y0, y1, z0, z1, col="primary", post=0.14, glass_tr=0.45, name="Cab"):
+    """Boxy machine cab: thin glass panes on all four sides (the seated rider shows through), corner posts, roof slab
+    with a sun visor and a beacon base."""
+    th = 0.035
+    xc, yc, zc = (x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2
+    h = y1 - y0 - 0.02
+    g = [cbox((th, h, z1 - z0 - post), (x, yc, zc), c=0.01) for x in (x0 + post / 2, x1 - post / 2)]
+    g += [cbox((x1 - x0 - post, h, th), (xc, yc, z), c=0.01) for z in (z0 + post / 2, z1 - post / 2)]
+    piece(H, name + "Glass", bone, merge(*g), col="glass", mat="glass", role="window", pri=0.9, tr=glass_tr, ao=False)
+    posts = [cbox((post, y1 - y0, post), (x, yc, z), c=0.03) for x in (x0 + post / 2 - 0.02, x1 - post / 2 + 0.02) for z in (z0 + post / 2 - 0.02, z1 - post / 2 + 0.02)]
+    rails = [cbox((post * 0.8, post * 0.8, z1 - z0), (x, y0 + (y1 - y0) * 0.45, zc), c=0.02) for x in (x0 + post / 2 - 0.02, x1 - post / 2 + 0.02)]
+    roof = box((x1 - x0 + 0.2, 0.16, z1 - z0 + 0.25), (xc, y1 + 0.06, zc), r=0.06)
+    visor = cbox((x1 - x0, 0.05, 0.25), (xc, y1 - 0.05, z0 - 0.12), c=0.02)
+    piece(H, name, bone, merge(roof, visor, *posts, *rails), col=col, mat="metal", role="body", pri=0.8)
 
 
 @hero("bulldozer", FAM)
@@ -750,6 +757,7 @@ def bulldozer():
         K.add(pose, "Blade", (0, 0.04 * math.sin(TAU * u * 2), 0, 0, 0, 0))
 
     _clips_tracked(H, wheels, 4.7, 7.5, extra_attack=atk, extra_move=mv)
+    K.finish_scaled(H, 2.35)  # real scale: hull ~18 studs, rider seated in the glazed cab
     return H
 
 
@@ -807,6 +815,7 @@ def excavator():
         K.add(pose, "Stick", (0, 0, 0, 0.05 * math.sin(TAU * u * 2), 0, 0))
 
     _clips_tracked(H, wheels, 5.0, 7.0, extra_attack=atk, extra_idle=idl, extra_move=mv)
+    K.finish_scaled(H, 2.35)
     return H
 
 
@@ -816,7 +825,7 @@ def tank():
     fume-extracted gun (recoils), commander's cupola with an open hatch and seat, MG, smoke launchers, tow hooks."""
     H = _new("tank", pv("#5B6B3A", "#3A4428"), ("vehicle", "military"))
     H.bone("Chassis", "Body", (0, 1.3, 0))
-    wheels = K.tracks(H, "Body", 1.75, -3.0, 3.0, 1.05, r_end=0.62, n_road=6, r_road=0.42, wheel_col="secondary", cleats=30)
+    wheels = K.tracks(H, "Body", 1.75, -3.0, 3.0, 1.05, r_end=0.62, n_road=6, r_road=0.42, wheel_col="secondary", cleats=30, wheel_names=True)
     hp = round_poly(np.array([(-4.0, 1.25), (-3.6, 0.6), (3.6, 0.6), (3.95, 1.0), (3.9, 2.0), (1.8, 2.15), (-2.3, 2.15)]), [0.05, 0.1, 0.1, 0.1, 0.08, 0.05, 0.08], 2)
     hull = extrude(hp, 3.2, bevel=0.1, seg=2)
     fend = merge(*[xf(extrude(round_poly(np.array([(-4.1, 1.7), (-3.4, 1.98), (3.85, 1.98), (4.0, 1.75), (3.85, 1.6), (-3.4, 1.6)]), 0.05, 1), 1.25, bevel=0.04), (s * 1.9, 0, 0)) for s in (-1, 1)])
@@ -832,14 +841,14 @@ def tank():
     tp = round_poly(np.array([(-2.0, 2.15), (-2.1, 2.55), (-1.6, 3.15), (1.4, 3.2), (2.6, 3.0), (2.7, 2.15)]), [0.05, 0.15, 0.2, 0.15, 0.2, 0.05], 2)
     tur = warp(extrude(tp, 2.9, bevel=0.15, seg=2), lambda V: np.column_stack([V[:, 0] * np.interp(V[:, 2], [-2.1, -1.4, 2.7], [0.7, 1.0, 0.92]), V[:, 1], V[:, 2]]))
     piece(H, "TurretP", "Turret", tur, col="primary", mat="metal", role="body", pri=0.6)
-    H.bone("Gun", "Turret", (0, 2.7, -2.0))
+    H.bone("Barrel", "Turret", (0, 2.7, -2.0))
     mant = box((1.1, 0.75, 0.5), (0, 2.7, -2.15), r=0.12, seg=1)
     gun = merge(K.lathe_profile([(-2.2, 0), (-2.2, 0.17), (-5.0, 0.15), (-6.4, 0.13), (-6.4, 0.0)], 14, "z"),
                 K.lathe_profile([(-4.6, 0), (-4.6, 0.18), (-4.5, 0.24), (-3.9, 0.24), (-3.8, 0.17), (-3.8, 0)], 14, "z"),
                 K.tube_ring(0.18, 0.09, 0.4, axis="z", pos=(0, 0, -6.25)))
     gun = xf(gun, (0, 2.7, 0))
-    piece(H, "Mantlet", "Gun", mant, col="secondary", mat="metal", role="detail", pri=0.9)
-    piece(H, "Barrel", "Gun", gun, col="primary", mat="metal", role="detail", pri=0.7)
+    piece(H, "Mantlet", "Barrel", mant, col="secondary", mat="metal", role="detail", pri=0.9)
+    piece(H, "Gun", "Barrel", gun, col="primary", mat="metal", role="detail", pri=0.7)
     cup = merge(cyl(0.35, 0.5, (0.75, 3.35, 0.7), "y", segs=16), *[cbox((0.18, 0.12, 0.1), (0.75 + 0.45 * math.cos(a), 3.4, 0.7 + 0.45 * math.sin(a)), c=0.02) for a in np.linspace(0, TAU, 6, endpoint=False)])
     hatch = cyl(0.08, 0.48, (0.75, 3.95, 1.25), "z", segs=16, r=(75, 0, 0))
     mg = merge(rod((-0.7, 3.45, 0.6), (-0.7, 3.45, -0.6), 0.05, segs=6), cbox((0.18, 0.25, 0.5), (-0.7, 3.42, 0.7), c=0.03), rod((-0.7, 3.2, 0.7), (-0.7, 3.4, 0.7), 0.05, segs=6))
@@ -847,16 +856,19 @@ def tank():
     bustle = box((2.4, 0.08, 0.5), (0, 3.15, 2.55), r=0.02)
     piece(H, "Cupola", "Turret", merge(cup, hatch, bustle), col="secondary", mat="metal", role="detail", pri=1.1)
     piece(H, "TurretGear", "Turret", merge(mg, smoke), col="darker", mat="metal", role="detail", pri=1.6)
-    seat = K.seat_mesh((0.75, 3.45, 0.75), w=0.55, d=0.45, back=0.4, bucket=False)
-    piece(H, "Seat", "Turret", seat, col="darker", mat="cloth", role="seat", pri=1.3)
+    # crew seat inside the turret basket (the rider rides hidden inside; seat stays out of sight)
+    seat = K.seat_mesh((0.0, 1.72, 0.35), w=0.6, d=0.5, back=0.5, bucket=False)
+    piece(H, "Seat", "Turret", seat, col="darker", mat="cloth", role="seat", pri=2.6)
+    dh = merge(cyl(0.06, 0.32, (-0.9, 2.18, -2.75), "y", segs=14), *[cbox((0.16, 0.12, 0.1), (-0.9 + dx, 2.24, -3.02), c=0.02) for dx in (-0.2, 0.0, 0.2)])
+    piece(H, "DriverHatch", "Chassis", dh, col="secondary", mat="metal", role="detail", pri=1.5)
     ant = rod((-1.0, 3.1, 2.3), (-1.05, 5.2, 2.5), 0.02, segs=4)
     piece(H, "Antenna", "Turret", ant, col="darker", mat="metal", role="detail", pri=2.4)
     star = K.lathe_profile([(-0.02, 0), (-0.02, 0.32), (0.02, 0.32), (0.02, 0)], 5, "x")
     piece(H, "Star", "Turret", xf(star, (1.38, 2.7, 0.6), r=(0, 0, 0)), col="white", mat="plastic", role="detail", pri=2.0)
-    K.mount(H, "Seat", (0.75, 3.55, 0.75), (0.55, 0.2, 0.45), "Turret")
+    K.mount(H, "Seat", (0.0, 1.77, 0.35), (0.6, 0.2, 0.5), "Turret")
     H.socket("head", (0, 3.6, 0.3), "Turret")
-    H.socket("mouth", (0, 2.7, -6.5), "Gun")
-    H.socket("muzzle", (0, 2.7, -6.5), "Gun")
+    H.socket("mouth", (0, 2.7, -6.5), "Barrel")
+    H.socket("muzzle", (0, 2.7, -6.5), "Barrel")
     H.socket("exhaust", (0, 2.0, 4.0), "Chassis")
     H.rig.update({"head": "Turret"})
 
@@ -864,13 +876,15 @@ def tank():
         aim = K._ease(s / 0.3) if s < 0.3 else 1.0
         rec = K._bump(s, 0.35, 0.7)
         back = 1 - K._ease((s - 0.75) / 0.25) if s > 0.75 else 1.0
-        K.add(pose, "Gun", (0, 0, 0.7 * rec, 0.06 * aim * back, 0, 0))
+        K.add(pose, "Barrel", (0, 0, 0.7 * rec, 0.06 * aim * back, 0, 0))
         K.add(pose, "Chassis", (0, 0, 0.15 * rec, 0.05 * rec, 0, 0))
 
     def idl(pose, u):
         K.add(pose, "Turret", (0, 0, 0, 0, 0.25 * math.sin(TAU * u), 0))
 
     _clips_tracked(H, wheels, 3.4, 8.0, extra_attack=atk, extra_idle=idl)
+    # real scale: hull ~21 studs; the rider is hidden inside the turret (head below the roof, enters by the left track)
+    K.finish_scaled(H, 2.6, hidden=True, enter=(-7.6, 0, 0.0))
     return H
 
 
@@ -880,8 +894,9 @@ def armored_car():
     W, wr = 3.9, 0.9
     H.bone("Chassis", "Body", (0, wr + 0.3, 0))
     specs = []
-    for i, z in enumerate((-2.6, 0.0, 2.6)):
-        specs += [dict(name=f"W{i}R", pos=(1.6, wr, z), r=wr, w=0.75, side=1, steer=(i == 0)), dict(name=f"W{i}L", pos=(-1.6, wr, z), r=wr, w=0.75, side=-1, steer=(i == 0))]
+    for tag, z in zip(("F", "M", "B"), (-2.6, 0.0, 2.6)):
+        specs += [dict(name=f"Wheel{tag}R", pos=(1.6, wr, z), r=wr, w=0.75, side=1, steer=(tag == "F")),
+                  dict(name=f"Wheel{tag}L", pos=(-1.6, wr, z), r=wr, w=0.75, side=-1, steer=(tag == "F"))]
     wheels, steer = K.add_wheels(H, specs, rim="truck", knobby=0.06, rim_col="secondary")
     hp = round_poly(np.array([(-4.0, 1.1), (-4.2, 1.7), (-2.6, 2.6), (-1.4, 3.4), (2.6, 3.4), (3.8, 2.9), (3.9, 1.1), (3.4, 0.8), (-3.4, 0.8)]),
                     [0.05, 0.08, 0.05, 0.1, 0.1, 0.08, 0.05, 0.08, 0.08], 2)
@@ -893,26 +908,43 @@ def armored_car():
     H.bone("Turret", "Chassis", (0, 3.4, 0.4))
     tur = merge(cyl(0.8, 0.85, (0, 3.75, 0.4), "y", segs=18), cyl(0.1, 0.95, (0, 3.42, 0.4), "y", segs=18))
     piece(H, "TurretP", "Turret", tur, col="secondary", mat="metal", role="body", pri=0.8)
-    H.bone("Gun", "Turret", (0, 3.85, -0.4))
+    H.bone("Barrel", "Turret", (0, 3.85, -0.4))
     gun = merge(K.lathe_profile([(-0.3, 0), (-0.3, 0.12), (-2.4, 0.08), (-2.4, 0)], 10, "z"), box((0.5, 0.4, 0.4), (0, 0, -0.2), r=0.06))
-    piece(H, "Barrel", "Gun", xf(gun, (0, 3.85, 0)), col="darker", mat="metal", role="detail", pri=0.9)
-    # open roof hatch with seat behind the turret
-    seat = K.seat_mesh((0, 3.45, 1.7), w=0.7, d=0.6, back=0.6, bucket=False)
+    piece(H, "Gun", "Barrel", xf(gun, (0, 3.85, 0)), col="darker", mat="metal", role="detail", pri=0.9)
+    # roof hatch behind the turret; the crew seat sits inside under the turret (rider hidden)
+    seat = K.seat_mesh((0, 1.95, 0.4), w=0.6, d=0.5, back=0.5, bucket=False)
     hatch = merge(K.torus(0.42, 0.06, "y", 16, 4, pos=(0, 3.42, 1.7)), cyl(0.08, 0.42, (0, 3.85, 2.2), "z", segs=14, r=(70, 0, 0)))
-    piece(H, "Seat", "Chassis", seat, col="darker", mat="cloth", role="seat", pri=1.2)
+    piece(H, "Seat", "Turret", seat, col="darker", mat="cloth", role="seat", pri=2.6)
     piece(H, "Hatch", "Chassis", hatch, col="secondary", mat="metal", role="detail", pri=1.4)
     gear = merge(*[box((0.8, 0.2, 0.25), (0, 1.1, z), r=0.05) for z in (-4.2, 3.95)], *[cyl(0.3, 0.17, (s * 1.0, 1.7, -4.12), "z", segs=10) for s in (-1, 1)],
                  cbox((0.25, 1.4, 0.25), (1.5, 1.3, 3.7), c=0.04))
     piece(H, "Bumpers", "Chassis", gear, col="darker", mat="metal", role="detail", pri=1.4)
     lens = merge(*[K.lamp((s * 1.0, 1.7, -4.28), 0.13, 0.06) for s in (-1, 1)])
     piece(H, "Lamps", "Chassis", lens, col=LENS, mat="glass", role="light", pri=1.8, ao=False)
-    _finish(H, wheels, steer, 4.2, 8.2, (0, 3.55, 1.7), (0, 3.85, -2.6), (1.5, 2.0, 3.9))
-    H.socket("muzzle", (0, 3.85, -2.5), "Gun")
+    # hull detail: side + rear doors, stowage bins, rivet rows, grab rails, periscopes, exhaust; turret smoke dischargers
+    det, tdet = [], []
+    for s_ in (-1, 1):
+        det.append(cbox((0.06, 0.95, 0.85), (s_ * 1.72, 1.95, 1.35), c=0.03))
+        det.append(cbox((0.08, 0.08, 0.3), (s_ * 1.77, 2.0, 1.6), c=0.02))
+        det.append(box((0.35, 0.45, 1.3), (s_ * 1.75, 1.45, -1.3), r=0.05, seg=0))
+        det += [cbox((0.05, 0.07, 0.07), (s_ * 1.75 - s_ * 0.0, 2.45, z), c=0.015) for z in np.linspace(-2.0, 3.0, 9)]
+        det.append(rod((s_ * 1.4, 3.42, -0.8), (s_ * 1.4, 3.42, 2.4), 0.035, segs=6))
+        det += [cbox((0.2, 0.14, 0.12), (s_ * 0.45, 3.0, -1.65), c=0.03)]
+        tdet += [xf(cyl(0.3, 0.07, (0, 0, 0), "z", segs=8), (s_ * (0.55 + 0.14 * k), 4.0, -0.15), r=(25, s_ * 15, 0)) for k in range(3)]
+    det.append(cbox((1.6, 1.3, 0.06), (0, 2.0, 3.92), c=0.03))
+    det.append(K.tube_ring(0.14, 0.1, 0.6, axis="y", pos=(1.2, 3.2, 3.2)))
+    tdet.append(box((0.65, 0.5, 0.6), (0, 3.85, -0.45), r=0.08, seg=0))
+    piece(H, "Details", "Chassis", merge(*det), col="secondary", mat="metal", role="detail", pri=1.5)
+    piece(H, "Mantlet", "Turret", merge(*tdet), col="secondary", mat="metal", role="detail", pri=1.2)
 
     def atk(pose, s):
-        K.add(pose, "Gun", (0, 0, 0.3 * K._bump(s, 0.3, 0.55) + 0.3 * K._bump(s, 0.55, 0.8), 0, 0, 0))
-    K.vehicle_clips(H, wheels, susp="Chassis", height=4.2, length=8.2, sym=8, steer=steer, extra_attack=atk,
-                    extra_idle=lambda p, u: K.add(p, "Turret", (0, 0, 0, 0, 0.3 * math.sin(TAU * u), 0)))
+        K.add(pose, "Barrel", (0, 0, 0.3 * K._bump(s, 0.3, 0.55) + 0.3 * K._bump(s, 0.55, 0.8), 0, 0, 0))
+
+    _finish(H, wheels, steer, 4.2, 8.2, (0, 2.0, 0.4), (0, 3.85, -2.6), (1.5, 2.0, 3.9), bone="Turret", seat_size=(0.6, 0.2, 0.5), extra_attack=atk,
+            extra_idle=lambda p, u: K.add(p, "Turret", (0, 0, 0, 0, 0.3 * math.sin(TAU * u), 0)))
+    H.socket("muzzle", (0, 3.85, -2.5), "Barrel")
+    # real scale (~19 studs): six-wheeled armoured car, rider hidden under the turret
+    K.finish_scaled(H, 2.25, hidden=True, enter=(-6.0, 0, -1.0))
     return H
 
 
@@ -955,6 +987,7 @@ def forklift():
         K.add(pose, "Forks", (0, 0.03 * math.sin(TAU * u * 2), 0, 0, 0, 0))
 
     _finish(H, wheels, steer, 3.7, 5.0, (0, 2.1, 0.85), (0, 0.5, -3.9), (0.8, 2.0, 2.5), extra_attack=atk, extra_move=mv)
+    K.finish_scaled(H, 2.4)
     return H
 
 
@@ -993,6 +1026,7 @@ def tractor():
     weights = merge(*[cbox((1.3, 0.22, 0.4), (0, 0.95 + 0.25 * k, -3.6), c=0.04) for k in range(3)])
     piece(H, "Hitch", "Chassis", merge(hitch, weights), col="darker", mat="metal", role="detail", pri=1.5)
     _finish(H, wheels, steer, 4.6, 6.5, (0, 2.7, 1.05), (0, 1.5, -3.8), (0.45, 4.2, -1.2), attack="honk")
+    K.finish_scaled(H, 1.9)
     return H
 
 
@@ -1020,6 +1054,7 @@ def steamroller():
     piece(H, "Stack", "Chassis", st, col="darker", mat="metal", role="detail", pri=1.3)
     wheels = [("Drum", 1.05)] + wheels
     _finish(H, wheels, steer, 4.7, 6.0, (0, 3.05, 1.7), (0, 1.0, -3.8), (0, 4.8, -1.6), attack="ram")
+    K.finish_scaled(H, 2.2)
     return H
 
 
