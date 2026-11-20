@@ -949,12 +949,20 @@ def mount(H, seat_part, pos, size, bone="Body", length=None, enter=None, stand=F
 
 
 def model_bounds(H):
-    """Rest-pose model-space bounds of the direct-mesh pieces and prims (SDF pieces are left out)."""
+    """Rest-pose model-space bounds of the pieces (direct meshes exactly, sculpts sampled) and prims."""
     lo, hi = np.full(3, 1e9), np.full(3, -1e9)
+    blo, bhi = None, None
     for p in H.parts:
         if p["kind"] == "piece" and isinstance(p["sdf"], D):
             b = p["sdf"].mesh.bounds
             lo, hi = np.minimum(lo, b[0]), np.maximum(hi, b[1])
+        elif p["kind"] == "piece":  # sculpt: coarse sample of its field over the search region
+            if blo is None:
+                blo, bhi = H.bounds_hint()
+            vol, step = mesher.sample(p["sdf"], blo, bhi, 72)
+            inside = np.argwhere(vol < 0)
+            if len(inside):
+                lo, hi = np.minimum(lo, blo + inside.min(0) * step), np.maximum(hi, blo + inside.max(0) * step)
         elif p["kind"] == "prim":
             c, s = np.array(p["pos"]), np.array(p["size"]) / 2
             lo, hi = np.minimum(lo, c - s), np.maximum(hi, c + s)
@@ -1286,3 +1294,24 @@ def cockpit(H, F, hip, floor_y, panel_z, panel_w, panel_top, ctrl="stick", seat_
         ms.append(sphere(0.13, (x - seat_w / 2 - 0.3, y + 1.0, z - 1.17), segs=8))
     dpiece(H, "Controls", "Body", merge(*ms), col="gunmetal", mat="metal", role="detail", pri=1.6)
     dpiece(H, "Floor", "Body", F.floor(z - 2.6, z + 1.1, floor_y), col="darker", role="detail", pri=1.6)
+
+
+def rescale(H, k):
+    """Scale a finished hero's geometry by k about the origin (bones, direct meshes, SDF sculpts, patterns, prims,
+    sockets): lifts a model authored at summon scale to real game scale before its sockets / clips are set."""
+    H.bones = [(n, p, tuple(float(v) * k for v in pos)) for n, p, pos in H.bones]
+    for p in H.parts:
+        if p["kind"] == "piece":
+            s = p["sdf"]
+            if isinstance(s, D):
+                p["sdf"] = D(direct.moved(s.mesh, (0, 0, 0), None, (k, k, k)))
+            else:
+                p["sdf"] = S.SDF(lambda q, _s=s: _s(q / k) * k)
+            if p.get("pattern") is not None:
+                p["pattern"] = (lambda P_, _f=p["pattern"]: _f(P_ / k))
+        else:
+            p["pos"] = tuple(v * k for v in p["pos"])
+            p["size"] = tuple(v * k for v in p["size"])
+    H.sockets = {n: (tuple(v * k for v in pos), b) for n, (pos, b) in H.sockets.items()}
+    H.__dict__.pop("bounds_hint", None)
+    fix_bounds(H)

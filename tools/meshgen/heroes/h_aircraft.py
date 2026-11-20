@@ -998,10 +998,19 @@ def flying_carpet():
         dpiece(H, name, b, rug, col="primary", mat="cloth", role="body" if i == 1 else "tail", fallback="Block",
                pattern=lambda Q: 0.82 + 0.18 * np.cos((np.abs(Q[:, 0]) + np.abs(Q[:, 2] % 1.5 - 0.75)) * 9.0))
         dpiece(H, f"Pattern{i + 1}", b, merge(*deco), col="secondary", mat="cloth", role="detail")
-    dpiece(H, "Seat", "Seg3", merge(box((1.3, 0.4, 1.1), (0, y0 + 0.25, 0.6), r=0.18), sphere(0.12, (0.6, y0 + 0.42, 0.1), segs=8), sphere(0.12, (-0.6, y0 + 0.42, 0.1), segs=8)),
-           col=[0.75, 0.12, 0.2], mat="cloth", role="detail")
     dpiece(H, "Pillow", "Seg4", rev([(-0.6, 0), (-0.5, 0.25), (0.5, 0.25), (0.6, 0)], axis=0, segs=10, pos=(0, y0 + 0.3, 1.9), scale=(1, 1, 1.3)), col="secondary", mat="cloth", role="detail")
-    common(H, (0, y0 + 0.5, 0.6), (1.3, 0.15, 1.1), -L / 2 - 0.5, L / 2 + 0.5, y0 + 2.5)
+    k = 1.7  # real game scale: a 10 stud rug
+    A.rescale(H, k)
+    top = y0 * k + 0.08
+    hip = (0.0, top + 1.3, 1.1)
+    pouf = merge(rev([(-1.2, 0.0), (-1.15, 0.7), (-0.6, 1.02), (0.6, 1.02), (1.15, 0.7), (1.2, 0.0)], axis=1, segs=20, pos=(0, top + 0.6, 1.0), scale=(1.0, 1.0, 1.0)),
+                 *[sphere(0.16, (1.02 * math.cos(a), top + 0.95, 1.0 + 1.02 * math.sin(a)), segs=8) for a in np.linspace(0, TAU, 8, endpoint=False)])
+    pouf = A.direct.moved(pouf, (0, 0, 0))
+    dpiece(H, "Seat", "Seg3", pouf, col=[0.75, 0.12, 0.2], mat="cloth", role="detail", pri=1.0)
+    A.mount(H, "Seat", hip, (2.2, 0.15, 2.2), bone="Seg3", length="auto", enter=(-3.2, 1.1))
+    H.socket("head", (0, hip[1] + 3.4, hip[2]), "Body")
+    H.socket("mouth", (0, top, -L * k / 2 - 0.5), "Body")
+    H.socket("exhaust", (0, top, L * k / 2 + 0.5), "Body")
     segs = [f"Seg{i + 1}" for i in range(n)]
     H.rig["tail"] = segs[2:]
 
@@ -1012,7 +1021,7 @@ def flying_carpet():
                 continue
             A._add(pose, b, (0, 0, 0, amp * math.sin(TAU * (u * (2 if name == "Move" else 1) - i * 0.22)), 0, 0))
 
-    A.air_clips(H, size=0.8, extra=extra, attack="ram", bank=0.3)
+    A.craft_clips(H, L * k, hover=True, extra=extra, attack="ram", bank=0.3)
     return H
 
 
@@ -1042,16 +1051,25 @@ def broomstick():
             pattern=lambda Q: 0.8 + 0.2 * np.cos(np.arctan2(Q[:, 1] - y0, Q[:, 0]) * 23.0))
     dpiece(H, "Binding", "Body", merge(A.lathe([(1.15, 0.0), (1.15, 0.27), (1.45, 0.3), (1.45, 0.0)], axis=2, segs=14, pos=(0, y0, 0)),
                                        A.lathe([(1.55, 0.31), (1.68, 0.33), (1.68, 0.25), (1.55, 0.23)], axis=2, segs=14, pos=(0, y0, 0), closed=True)), col="secondary", mat="cloth", role="detail")
-    # rider's saddle, foot pegs, a hanging lantern
-    dpiece(H, "Seat", "Body", merge(rev([(-0.55, 0), (-0.45, 0.2), (0.3, 0.24), (0.55, 0)], axis=2, segs=10, pos=(0, y0 + 0.14, -0.1), scale=(1.2, 0.6, 1))),
-           col="leather", mat="cloth", role="detail")
-    dpiece(H, "Pegs", "Body", merge(tube([[-0.45, y0 - 0.35, 0.6], [0, y0 - 0.02, 0.55], [0.45, y0 - 0.35, 0.6]], 0.04, 6), box((0.2, 0.05, 0.2), (0.48, y0 - 0.37, 0.6), r=0.02), box((0.2, 0.05, 0.2), (-0.48, y0 - 0.37, 0.6), r=0.02)),
-           col="metal", mat="metal", role="detail")
+    # a hanging lantern (saddle + pegs are added at real scale below)
     H.bone("Lantern", "Body", (0, y0 + 0.2, -2.6))
     dpiece(H, "LanternP", "Lantern", merge(tube([[0, y0 + 0.2, -2.6], [0, y0 - 0.25, -2.6]], 0.02, 4), A.lathe([(y0 - 0.3, 0.0), (y0 - 0.3, 0.16), (y0 - 0.65, 0.16), (y0 - 0.7, 0.0)], axis=1, segs=6, pos=(0, 0, -2.6))),
            col="dark", mat="metal", role="detail")
     H.prim("LanternGlow", "Lantern", "Ball", (0.2, 0.25, 0.2), (0, y0 - 0.48, -2.6), col="glow", glow=True, role="light", pri=2.4)
-    common(H, (0, y0 + 0.35, -0.1), (0.5, 0.15, 0.9), -3.6, 3.5, y0 + 2.5)
+    k = 2.0  # real game scale: a 14 stud broom ridden 3.3 studs up
+    A.rescale(H, k)
+    yh = y0 * k
+    hip = (0.0, yh + 0.62, -0.4)
+    saddle = merge(rev([(-1.0, 0), (-0.85, 0.36), (0.45, 0.46), (0.95, 0.0)], axis=2, segs=14, pos=(0, yh + 0.2, -0.3), scale=(1.15, 0.75, 1)),
+                   xform(box((0.9, 0.5, 0.22), (0, 0, 0), r=0.1), (0, yh + 0.52, 0.55), (-15, 0, 0)))
+    dpiece(H, "Seat", "Body", saddle, col="leather", mat="cloth", role="detail", pri=1.0)
+    peg = merge(tube([[0.18, yh - 0.05, -1.9], [0.75, hip[1] - 1.35, -1.75], [1.2, hip[1] - 1.35, -1.75]], 0.07, 6), box((0.7, 0.1, 0.55), (0.95, hip[1] - 1.32, -1.75), r=0.04))
+    dpiece(H, "Pegs", "Body", merge(peg, mirror(peg), A.lathe([(-1.95, 0.0), (-1.95, 0.24), (-1.75, 0.24), (-1.75, 0.0)], axis=2, segs=12, pos=(0, yh - 0.02, 0))),
+           col="metal", mat="metal", role="detail", pri=1.4)
+    A.mount(H, "Seat", hip, (1.0, 0.15, 1.8), length="auto", enter=(-2.6, -0.4))
+    H.socket("head", (0, hip[1] + 3.4, hip[2]), "Body")
+    H.socket("mouth", (0, yh + 0.6, -7.2), "Body")
+    H.socket("exhaust", (0, yh, 7.0), "Body")
     H.rig["tail"] = ["Bristles"]
 
     def extra(name, u, pose):
@@ -1059,7 +1077,7 @@ def broomstick():
         A._add(pose, "Bristles", (0, 0, 0, 0.06 * k * math.sin(TAU * u * 2), 0.1 * k * math.sin(TAU * u), 0))
         A._add(pose, "Lantern", (0, 0, 0, 0.25 * k * math.sin(TAU * u + 1), 0, 0.15 * math.sin(TAU * u)))
 
-    A.air_clips(H, size=0.6, extra=extra, attack="roll", bank=0.5)
+    A.craft_clips(H, 14.0, hover=True, extra=extra, attack="roll", bank=0.5)
     return H
 
 
@@ -1094,14 +1112,20 @@ def cloud_surfboard():
     dpiece(H, "Seat", "Body", A.slab(bd, 12, 7, 0.14, crease=60), col="secondary", mat="hard", role="detail")
     dpiece(H, "BoardStripe", "Body", merge(box((0.12, 0.05, 4.2), (0, y0 + 1.15, 0.0), r=0.02), A.fin(0.4, 0.5, 0.25, 0.2, thick=0.05, pos=(0, y0 + 1.15, 1.6))), col="white", role="detail")
     H.mprim("Sparkle#", "Body", "Ball", (0.18, 0.18, 0.18), (1.9, y0 + 0.9, -1.5), col="glow", glow=True, role="light", pri=2.6)
-    common(H, (0, y0 + 1.25, 0.2), (1.0, 0.15, 3.0), -3.6, 4.2, y0 + 3.0)
+    k = 1.6  # real game scale: an 8 stud board on a 10 stud cloud; the rider STANDS on the deck
+    A.rescale(H, k)
+    deck = (y0 + 1.05 + 0.02 + 0.07) * k
+    A.mount(H, "Seat", (0.0, deck, 0.3), (1.6, 0.15, 6.0), length="auto", enter=(-4.4, 0.3), stand=True)
+    H.socket("head", (0, deck + 5.3, 0.3), "Body")
+    H.socket("mouth", (0, deck, -5.8), "Body")
+    H.socket("exhaust", (0, y0 * k, 6.7), "Body")
     H.rig["tail"] = ["Wisp1", "Wisp2"]
 
     def extra(name, u, pose):
         for i, b in enumerate(("Wisp1", "Wisp2")):
             A._add(pose, b, (0, 0, 0, 0.12 * math.sin(TAU * u + i), 0.15 * math.sin(TAU * u * (2 if name == "Move" else 1) + i * 1.3), 0))
 
-    A.air_clips(H, size=0.7, extra=extra, attack="ram", hover=True, bank=0.25)
+    A.craft_clips(H, 11.0, extra=extra, attack="ram", hover=True, bank=0.25)
     return H
 
 
@@ -1115,11 +1139,14 @@ def sleigh():
     side = [(-2.2, 1.3), (-2.0, 1.0), (-1.2, 0.9), (1.4, 0.9), (1.9, 1.05), (2.0, 1.6), (1.9, 2.9), (1.4, 3.1), (0.9, 2.3), (-0.4, 2.0), (-1.4, 2.1), (-2.0, 2.6), (-2.5, 2.7), (-2.6, 2.3), (-2.35, 2.05)]
     W = 1.35
     rings = []
-    for x in (-W, -W + 0.1, W - 0.1, W):
-        s = 1.0 if abs(x) < W - 0.05 else 0.96
-        rings.append(np.array([[x, y * s + (1 - s) * 1.8, z * s] for z, y in side]))
-    body = A.loft(rings, "fan", "fan", crease=40)
-    dpiece(H, "Hull", "Body", body, col="primary", mat="wood", fallback="Block")
+    for x, sc in ((W - 0.16, 1.0), (W - 0.12, 1.0), (W, 0.97)):
+        rings.append(np.array([[x, y * sc + (1 - sc) * 1.8, z * sc] for z, y in side]))
+    panel = A.loft(rings, "fan", "fan", crease=40)
+    shell = [panel, mirror(panel), box((2 * W - 0.2, 0.14, 3.3), (0, 0.98, -0.1), r=0.05),
+             xform(box((2 * W - 0.2, 1.35, 0.14), (0, 0, 0), r=0.05), (0, 1.6, -1.45), (12, 0, 0)),
+             xform(box((2 * W - 0.2, 2.1, 0.16), (0, 0, 0), r=0.06), (0, 1.95, 1.75), (-8, 0, 0)),
+             xform(box((2 * W - 0.2, 0.9, 0.14), (0, 0, 0), r=0.05), (0, 2.25, -2.15), (-55, 0, 0))]
+    dpiece(H, "Hull", "Body", merge(*shell), col="primary", mat="wood", fallback="Block")
     # gold trim scrolls on the sides
     trim = []
     for sx in (1, -1):
@@ -1135,7 +1162,8 @@ def sleigh():
         for z in (-1.2, 0.3, 1.6):
             run.append(tube([[x, 0.1, z], [x, 0.95, z]], 0.06, 6))
     dpiece(H, "Runners", "Body", merge(*run), col="secondary", mat="metal", role="detail")
-    dpiece(H, "Seat", "Body", merge(box((2.4, 0.4, 1.4), (0, 1.15, 0.6), r=0.18), box((2.4, 1.0, 0.35), (0, 1.75, 1.45), r=0.15, rot=(-10, 0, 0))), col="cream", mat="cloth", role="detail")
+    dpiece(H, "Seat", "Body", merge(box((2.4, 0.62, 1.2), (0, 1.36, 0.85), r=0.18), box((2.4, 0.5, 1.0), (0, 0.98, 0.9), r=0.08), box((2.4, 1.3, 0.35), (0, 2.0, 1.55), r=0.15, rot=(-10, 0, 0))),
+           col="cream", mat="cloth", role="detail")
     # gift sack + presents in the back, bells on a harness bar
     sack = ellipsoid(0.75, 0.9, 0.7, (0.3, 2.4, 1.7)).su(round_cone((0.3, 3.0, 1.7), (0.35, 3.5, 1.75), 0.25, 0.12), 0.2).noise(0.03, 3.0, 4)
     H.piece("Sack", "Body", sack, col=[0.55, 0.38, 0.22], mat="cloth", tris=900, role="detail")
@@ -1146,12 +1174,18 @@ def sleigh():
     for x in np.linspace(-0.9, 0.9, 5):
         bells.append(A.lathe([(1.82, 0.0), (1.82, 0.14), (1.6, 0.11), (1.5, 0.0)], axis=1, segs=10, pos=(x, 0, -2.6)))
     dpiece(H, "BellsP", "Bells", merge(*bells), col="gold", mat="metal", role="detail")
-    common(H, (0, 1.4, 0.6), (2.2, 0.15, 1.3), -3.3, 2.5, 3.5)
+    k = 1.6  # real game scale: an 9 stud sleigh, 4.3 wide
+    A.rescale(H, k)
+    hip = (0.0, 1.67 * k + 0.25, 0.62 * k)
+    A.mount(H, "Seat", hip, (3.6, 0.15, 1.9), length="auto", enter=(-3.4, hip[2]))
+    H.socket("head", (0, hip[1] + 3.4, hip[2]), "Body")
+    H.socket("mouth", (0, 1.6 * k, -3.3 * k), "Body")
+    H.socket("exhaust", (0, 1.4 * k, 2.6 * k), "Body")
 
     def extra(name, u, pose):
         A._add(pose, "Bells", (0, 0, 0, 0.15 * math.sin(TAU * u * 2), 0, 0.08 * math.sin(TAU * u * 2 + 1)))
 
-    A.air_clips(H, size=0.8, extra=extra, attack="ram", bank=0.3)
+    A.craft_clips(H, 9.5, hover=True, extra=extra, attack="ram", bank=0.3)
     return H
 
 
@@ -1187,11 +1221,11 @@ def chariot_of_fire():
     # two big spoked wheels on bones
     wr = 1.1
     for s, nm in ((1, "R"), (-1, "L")):
-        H.bone(f"Wheel{nm}", "Body", (s * 1.35, wr, 0.4))
+        H.bone(f"WheelB{nm}", "Body", (s * 1.35, wr, 0.4))
         sp = [A.lathe([(-0.12, wr), (0.12, wr), (0.12, wr - 0.14), (-0.12, wr - 0.14)], axis=0, segs=20, closed=True), cyl(0.2, 0.4, (0, 0, 0), axis=0, segs=10)]
         for a in np.linspace(0, TAU, 8, endpoint=False):
             sp.append(tube([[0, 0, 0], [0, (wr - 0.1) * math.sin(a), (wr - 0.1) * math.cos(a)]], 0.045, 5))
-        dpiece(H, f"WheelP{nm}", f"Wheel{nm}", A.direct.moved(merge(*sp), (s * 1.35, wr, 0.4)), col="secondary", mat="metal", role="detail")
+        dpiece(H, f"WheelP{nm}", f"WheelB{nm}", A.direct.moved(merge(*sp), (s * 1.35, wr, 0.4)), col="secondary", mat="metal", role="detail")
     dpiece(H, "Axle", "Body", merge(cyl(0.08, 2.8, (0, wr, 0.4), axis=0, segs=8), tube([[0, 0.8, -0.6], [0, 1.2, -3.4], [0, 1.45, -3.6]], 0.08, 6), tube([[-0.8, 1.25, -3.2], [0.8, 1.25, -3.2]], 0.06, 6)),
            col="secondary", mat="metal", role="detail")
     # flames: a fiery fringe along the back and wheels (small, flame-coloured sculpts; not glowing bodies)
@@ -1204,7 +1238,7 @@ def chariot_of_fire():
         f = flame((x, 0.9, 1.25), 1.1 + 0.4 * math.cos(x * 2.5), 1.3 + 0.2 * (i % 2), 0.28, 0.12 * (-1) ** i)
         fl = f if fl is None else fl.su(f, 0.12)
     H.bone("Flames", "Body", (0, 0.9, 1.2))
-    H.piece("FlamesP", "Flames", fl, col="flame", mat="hard", tris=1600, role="tail",
+    H.piece("FlamesP", "Flames", fl, col="flame", mat="hard", tris=1600, role="tail", glow=True,
             pattern=lambda Q: 0.75 + 0.25 * np.clip((Q[:, 1] - 0.9) / 1.4, 0, 1))
     for nm, s_ in (("R", 1), ("L", -1)):
         f2 = None
@@ -1213,17 +1247,23 @@ def chariot_of_fire():
             base = (s_ * 1.42, wr + (wr - 0.1) * math.sin(a_), 0.4 + (wr - 0.1) * math.cos(a_))
             f = flame(base, 0.7, 1.1, 0.2, 0.08 * (-1) ** k)
             f2 = f if f2 is None else f2.su(f, 0.08)
-        H.piece(f"WheelFire{nm}", "Body", f2, col="flame", mat="hard", tris=800, role="detail")
+        H.piece(f"WheelFire{nm}", "Body", f2, col="flame", mat="hard", tris=800, role="detail", glow=True)
     H.prim("Core", "Body", "Ball", (0.4, 0.4, 0.4), (0, 1.55, -1.05), col="flameCore", glow=True, role="light", pri=2.4)
-    dpiece(H, "Seat", "Body", merge(box((1.4, 0.5, 0.7), (0, 1.0, 0.7), r=0.12), box((1.5, 0.12, 0.8), (0, 1.3, 0.7), r=0.05)), col="secondary", mat="cloth", role="detail")
-    common(H, (0, 1.45, 0.7), (1.4, 0.15, 0.7), -3.8, 2.6, 3.2)
+    dpiece(H, "Seat", "Body", merge(box((2.1, 0.08, 1.75), (0, 0.8, 0.4), r=0.03), tube([[-0.95, 1.95, -0.2], [-0.95, 1.95, 0.9]], 0.05, 6), tube([[0.95, 1.95, -0.2], [0.95, 1.95, 0.9]], 0.05, 6)),
+           col="secondary", mat="metal", role="detail")
+    k = 1.6  # real game scale: the rider STANDS in the car holding the rail, wheels 3.5 studs tall
+    A.rescale(H, k)
+    feet = (0.0, 0.84 * k, 0.55 * k)
+    A.mount(H, "Seat", feet, (2.4, 0.15, 2.4), length="auto", enter=(-3.4, 2.4), stand=True)
+    H.socket("head", (0, feet[1] + 5.3, feet[2]), "Body")
+    H.socket("mouth", (0, 1.5 * k, -3.8 * k), "Body")
+    H.socket("exhaust", (0, 1.4 * k, 2.6 * k), "Body")
     H.rig["tail"] = ["Flames"]
-    spins = [("WheelR", "x", -1, TAU / 8), ("WheelL", "x", -1, TAU / 8)]
 
     def extra(name, u, pose):
         A._add(pose, "Flames", (0, 0, 0, 0.1 * math.sin(TAU * u * 3), 0.12 * math.sin(TAU * u * 2), 0))
 
-    A.air_clips(H, size=0.8, spinners=spins, extra=extra, attack="ram", bank=0.3)
+    A.craft_clips(H, 10.0, hover=True, extra=extra, attack="ram", bank=0.3)
     return H
 
 
