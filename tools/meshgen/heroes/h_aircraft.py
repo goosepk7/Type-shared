@@ -797,103 +797,161 @@ def helicopter():
 
 
 # ================================================================================================ hot air balloon
+def wicker(Q):
+    """Basket weave: a fine checker of light / dark strands."""
+    u = np.sin(Q[:, 1] * 9.0) * np.sin((Q[:, 0] + Q[:, 2]) * 7.0)
+    return 0.82 + 0.18 * (u > 0)
+
+
 @hero("hot air balloon", "aircraft")
 def hot_air_balloon():
+    """Hot air balloon at real game scale (22 stud envelope, 30 studs tall): a wicker basket on bone Basket (it
+    sways) with a padded bench the rider sits on (rim at chest height), corner poles and a twin burner with a
+    glowing flame under the envelope throat, 16 coloured gores with load tapes, a crown ring."""
     H = P("hot air balloon", gait="hover")
-    H.preview = {"primary": "#E53935", "secondary": "#FFC107"}
-    H.body((0, 2.0, 0))
-    prof = [(4.4, 0.95), (5.0, 1.35), (6.2, 2.6), (7.6, 3.7), (9.4, 4.35), (11.0, 4.3), (12.4, 3.6), (13.4, 2.4), (13.95, 1.0), (14.1, 0.0)]
-    ys = np.linspace(prof[0][0], prof[-1][0], 22)
-    rs = np.interp(ys, [p[0] for p in prof], [p[1] for p in prof])
-    # smooth the profile a little (cubic through the points)
+    H.preview = {"primary": "#E53935", "secondary": "#FFC107", "dark": "#2B2F36"}
+    H.body((0, 10.0, 0))
+    prof = [(8.6, 1.9), (9.6, 3.2), (11.6, 6.0), (14.2, 8.6), (17.6, 10.6), (20.6, 11.0), (23.6, 10.2), (26.4, 8.0), (28.6, 4.8), (29.7, 2.0), (30.0, 0.0)]
     from scipy.interpolate import PchipInterpolator  # noqa
+    ys = np.linspace(prof[0][0], prof[-1][0], 30)
     rs = PchipInterpolator([p[0] for p in prof], [p[1] for p in prof])(ys)
-    ng, per = 12, 5
+    ng, per = 16, 6
     gores = [[], []]
     for g in range(ng):
-        rings = []
+        V, F_ = [], []
         for y, r in zip(ys, rs):
-            pts = []
             for k in range(per):
                 u = k / (per - 1)
                 a = TAU * (g + u) / ng
-                rr = r * (1 + 0.045 * math.sin(math.pi * u))
-                pts.append([rr * math.cos(a), y, rr * math.sin(a)])
-            rings.append(pts)
-        # an open strip (one gore), single surface lofted along y
-        V, F = [], []
-        for i, ring in enumerate(rings):
-            V += ring
-        for i in range(len(rings) - 1):
+                rr = r * (1 + 0.035 * math.sin(math.pi * u))
+                V.append([rr * math.cos(a), y, rr * math.sin(a)])
+        for i in range(len(ys) - 1):
             for k in range(per - 1):
                 a_, b_ = i * per + k, (i + 1) * per + k
-                F += [[a_, b_ + 1, b_], [a_, a_ + 1, b_ + 1]]
-        gores[g % 2].append(A.finish(np.array(V), np.array(F), 50))
+                F_ += [[a_, b_ + 1, b_], [a_, a_ + 1, b_ + 1]]
+        gores[g % 2].append(A.finish(np.array(V), np.array(F_), 50))
     dpiece(H, "Hull", "Body", merge(*gores[0]), col="primary", mat="cloth", fallback="Ellipsoid", pri=0.9)
     dpiece(H, "Envelope2", "Body", merge(*gores[1]), col="secondary", mat="cloth", role="body", pri=0.9)
-    dpiece(H, "Crown", "Body", merge(A.lathe([(14.05, 0.0), (14.05, 0.7), (14.2, 0.6), (14.2, 0.0)], axis=1, segs=16),
-                                     A.lathe([(4.3, 0.92), (4.6, 1.02), (4.6, 0.9), (4.3, 0.84)], axis=1, segs=20, closed=True)), col="darker", mat="cloth", role="detail")
-    # basket on a bone (swings under the envelope), ropes, burner
-    H.bone("Basket", "Body", (0, 3.3, 0))
-    bw, bh = 1.0, 1.25
-    basket = [box((2 * bw, bh, 2 * bw), (0, bh / 2, 0), r=0.12, seg=2)]
-    for y in np.linspace(0.15, bh - 0.1, 5):
-        basket.append(A.lathe([(y - 0.04, bw * 1.2), (y + 0.04, bw * 1.2), (y + 0.04, bw * 1.05), (y - 0.04, bw * 1.05)], axis=1, segs=4, rot=(0, 45, 0), closed=True))
-    dpiece(H, "Seat", "Basket", merge(*basket), col="wood", mat="wood", role="detail", fallback="Block")
-    dpiece(H, "Rim", "Basket", merge(A.lathe([(bh - 0.08, bw * 1.42), (bh + 0.08, bw * 1.42), (bh + 0.08, bw * 1.26), (bh - 0.08, bw * 1.26)], axis=1, segs=4, rot=(0, 45, 0), closed=True),
-                                     A.lathe([(-0.02, bw * 1.42), (0.12, bw * 1.42), (0.12, bw * 1.3), (-0.02, bw * 1.3)], axis=1, segs=4, rot=(0, 45, 0), closed=True)), col="leather", mat="cloth", role="detail")
-    ropes = []
+    tapes = []
+    for g in range(ng):
+        a = TAU * g / ng
+        tapes.append(tube([[r * 1.01 * math.cos(a), y, r * 1.01 * math.sin(a)] for y, r in zip(ys[::2], rs[::2])], 0.07, 4))
+    for yy in (14.2, 20.6, 26.4):
+        r = float(PchipInterpolator([p[0] for p in prof], [p[1] for p in prof])(yy))
+        tapes.append(A.lathe([(yy - 0.12, r * 1.04 + 0.04), (yy + 0.12, r * 1.04 + 0.04), (yy + 0.12, r * 0.99), (yy - 0.12, r * 0.99)], axis=1, segs=48, closed=True))
+    dpiece(H, "Tapes", "Body", merge(*tapes), col="cream", mat="cloth", role="detail", pri=1.6)
+    dpiece(H, "Crown", "Body", merge(A.lathe([(29.9, 0.0), (29.9, 1.6), (30.15, 1.4), (30.15, 0.0)], axis=1, segs=24),
+                                     A.lathe([(8.4, 1.85), (8.9, 2.05), (8.9, 1.8), (8.4, 1.7)], axis=1, segs=32, closed=True)), col="darker", mat="cloth", role="detail")
+    # ---- basket on a swinging bone: wicker walls (hollow), padded rim, bench, burner frame
+    H.bone("Basket", "Body", (0, 7.6, 0))
+    bw, bh, th = 2.45, 3.3, 0.22
+    outer = box((2 * bw, bh, 2 * bw), (0, bh / 2 + 0.12, 0), r=0.3, seg=1)
+    walls = []
+    for s in (1, -1):
+        walls.append(box((th, bh, 2 * bw - 0.1), (s * (bw - th / 2), bh / 2 + 0.12, 0), r=0.08))
+        walls.append(box((2 * bw - 0.1, bh, th), (0, bh / 2 + 0.12, s * (bw - th / 2)), r=0.08))
+    walls.append(box((2 * bw - 0.1, 0.3, 2 * bw - 0.1), (0, 0.27, 0), r=0.1))
+    for y in np.linspace(0.55, bh - 0.25, 7):
+        walls.append(A.lathe([(y - 0.11, bw * 1.414 + 0.06), (y + 0.11, bw * 1.414 + 0.06), (y + 0.11, bw * 1.414 - 0.12), (y - 0.11, bw * 1.414 - 0.12)],
+                             axis=1, segs=4, rot=(0, 45, 0), closed=True))
+    dpiece(H, "BasketP", "Basket", merge(*walls), col="wood", mat="wood", role="body", fallback="Block", pattern=wicker)
+    rim = A.lathe([(bh - 0.05, bw * 1.45), (bh + 0.35, bw * 1.45), (bh + 0.35, bw * 1.3), (bh - 0.05, bw * 1.3)], axis=1, segs=4, rot=(0, 45, 0), closed=True)
+    base = A.lathe([(0.0, bw * 1.45), (0.25, bw * 1.45), (0.25, bw * 1.3), (0.0, bw * 1.3)], axis=1, segs=4, rot=(0, 45, 0), closed=True)
+    dpiece(H, "Rim", "Basket", merge(rim, base), col="leather", mat="cloth", role="detail", pri=1.2)
+    hip = (0.0, 1.75, 0.75)
+    bench = merge(box((3.9, 0.45, 1.5), (0, 1.35, 1.35), r=0.15, seg=1), box((3.9, 1.2, 0.3), (0, 2.0, 2.05), r=0.12), box((3.6, 0.9, 1.2), (0, 0.85, 1.45), r=0.08))
+    dpiece(H, "Seat", "Basket", bench, col="leather", mat="cloth", role="detail", pri=1.2)
+    poles, ropes = [], []
     for sx in (1, -1):
         for sz in (1, -1):
-            ropes.append(tube([[sx * bw * 0.95, bh, sz * bw * 0.95], [sx * 0.55, 3.0, sz * 0.55], [sx * 0.66, 4.4, sz * 0.66]], 0.035, 4))
-    frame = merge(*ropes, A.lathe([(2.95, 0.66), (3.05, 0.66), (3.05, 0.56), (2.95, 0.56)], axis=1, segs=4, rot=(0, 45, 0), closed=True),
-                  cyl(0.24, 0.55, (0.22, 3.0, 0), axis=1, segs=10), cyl(0.24, 0.55, (-0.22, 3.0, 0), axis=1, segs=10))
-    dpiece(H, "Rigging", "Basket", frame, col="metal", mat="metal", role="detail")
-    H.prim("Flame", "Basket", "Ball", (0.35, 0.7, 0.35), (0, 3.5, 0), col="flame", glow=True, role="light", pri=2.3)
-    dpiece(H, "Sandbags", "Basket", merge(*[rev([(-0.22, 0), (-0.18, 0.15), (0.12, 0.16), (0.24, 0)], axis=1, segs=8, pos=(x * bw * 1.45, bh * 0.55, z * bw * 1.45)) for x, z in ((1, 0.3), (-1, -0.3), (0.3, -1), (-0.3, 1))]),
-           col=[0.75, 0.66, 0.48], mat="cloth", role="detail")
-    common(H, (0, 3.3 + 0.35, 0), (1.6, 0.15, 1.6), -4.5, 4.5, 14.5)
-    H.socket("seat", (0, 3.6, 0), "Basket")
+            c = np.array([sx * (bw - 0.25), 0, sz * (bw - 0.25)])
+            poles.append(tube([c + [0, bh, 0], c * 0.62 + [0, 6.4, 0]], 0.1, 6))
+            ropes.append(tube([c * 0.62 + [0, 6.4, 0], np.array([sx * 1.55, 9.6, sz * 1.55])], 0.05, 4))
+    frame = A.lathe([(6.3, 1.65), (6.55, 1.65), (6.55, 1.45), (6.3, 1.45)], axis=1, segs=4, rot=(0, 45, 0), closed=True)
+    burner = merge(cyl(0.5, 1.0, (0.55, 6.6, 0), axis=1, segs=14, bevel=0.1), cyl(0.5, 1.0, (-0.55, 6.6, 0), axis=1, segs=14, bevel=0.1),
+                   A.lathe([(7.1, 0.3), (7.6, 0.42), (7.6, 0.32), (7.1, 0.22)], axis=1, segs=12, pos=(0.55, 0, 0), closed=True),
+                   A.lathe([(7.1, 0.3), (7.6, 0.42), (7.6, 0.32), (7.1, 0.22)], axis=1, segs=12, pos=(-0.55, 0, 0), closed=True),
+                   *[cyl(0.32, 1.6, (x, 1.1, -1.7), axis=1, segs=12, bevel=0.1) for x in (-1.2, 0.0, 1.2)])
+    dpiece(H, "Rigging", "Basket", merge(*poles, frame, burner), col="metal", mat="metal", role="detail", pri=1.2)
+    dpiece(H, "Ropes", "Basket", merge(*ropes), col="cream", mat="cloth", role="detail", pri=1.8)
+    H.prim("Flame", "Basket", "Ball", (1.1, 2.2, 1.1), (0, 8.4, 0), col="flame", glow=True, role="light", pri=2.2, tr=0.2)
+    H.prim("FlameCore", "Basket", "Ball", (0.6, 1.3, 0.6), (0, 8.0, 0), col="flameCore", glow=True, role="light", pri=2.4)
+    sb = [rev([(-0.4, 0), (-0.32, 0.3), (0.22, 0.32), (0.42, 0)], axis=1, segs=10, pos=(x * (bw + 0.35), 1.9, z * (bw + 0.35))) for x, z in ((1, 0.4), (-1, -0.4), (0.4, -1), (-0.4, 1))]
+    dpiece(H, "Sandbags", "Basket", merge(*sb), col=[0.75, 0.66, 0.48], mat="cloth", role="detail", pri=2.2)
+    A.mount(H, "Seat", hip, (3.6, 0.15, 1.4), bone="Basket", length="auto", enter=(-4.2, 0.0))
+    H.socket("head", (0, 31.0, 0), "Body")
+    H.socket("mouth", (0, 3.0, -2.6), "Body")
+    H.socket("exhaust", (0, 8.4, 0), "Body")
 
     def extra(name, u, pose):
-        A._add(pose, "Basket", (0, 0, 0, 0.04 * math.sin(TAU * u + 0.5), 0, 0.05 * math.sin(TAU * u)))
-        A._add(pose, "Body", (0, 0, 0, 0, 0.1 * math.sin(TAU * u * 0.5), 0))
+        k = 1.0 if name == "Move" else 0.6
+        A._add(pose, "Basket", (0, 0, 0, 0.02 * k * math.sin(TAU * u + 0.5), 0, 0.025 * k * math.sin(TAU * u)))
 
-    A.air_clips(H, size=1.0, extra=extra, attack="ram", hover=True, bank=0.06)
+    A.craft_clips(H, 22.0, hover=True, attack="ram", bank=0.05, extra=extra)
     return H
 
 
 # ================================================================================================ blimp
 @hero("blimp", "aircraft")
 def blimp():
+    """Airship at real game scale (40 stud envelope): the rider flies from the front of a gondola cabin with a
+    wrap-around windscreen and side windows (seat, panel, yoke); two ducted engine pods with props on bones
+    PropR / PropL (spin about Z), cruciform tail fins, a landing wheel under the gondola."""
     H = P("blimp", gait="hover")
-    H.preview = {"primary": "#ECEFF1", "secondary": "#E53935"}
-    yc, R, L = 4.6, 3.1, 20.0
-    env = Fus([(-L / 2, 0, 0, yc), (-L / 2 + 0.6, R * 0.5, R * 0.5, yc), (-L / 2 + 2.5, R * 0.86, R * 0.86, yc), (-2.0, R, R, yc), (2.0, R, R, yc),
-               (L / 2 - 4.5, R * 0.72, R * 0.72, yc), (L / 2 - 1.5, R * 0.3, R * 0.3, yc), (L / 2, 0, 0, yc)], n=26)
+    H.preview = {"primary": "#ECEFF1", "secondary": "#E53935", "dark": "#2B2F36"}
+    L, R = 40.0, 7.2
+    gy = 2.4
+    G = SplitFus([(-6.4, 0.0, 0.0, 0.0, gy + 0.3), (-6.0, 1.5, 1.0, 1.4, gy + 0.35), (-4.8, 2.45, 1.8, 3.2, gy + 0.5), (-2.5, 2.6, 2.05, 3.65, gy + 0.6),
+                  (2.5, 2.6, 2.05, 3.6, gy + 0.6), (4.8, 2.3, 1.8, 3.0, gy + 0.65), (6.2, 1.2, 1.0, 1.6, gy + 0.75), (6.5, 0.0, 0.0, 0.0, gy + 0.8)], n=30, p_lo=2.6, p_up=3.2)
+    yc = G.top(0.0) + 0.9 + R * 0.97
+    hip = (0.0, G.top(-2.4) - 0.15 - 3.78, -2.4)
+    env = Fus([(-L / 2, 0, 0, yc), (-L / 2 + 0.8, R * 0.42, R * 0.42, yc), (-L / 2 + 3.5, R * 0.82, R * 0.82, yc), (-L / 2 + 9.0, R, R, yc), (2.0, R, R, yc),
+               (L / 2 - 8.0, R * 0.74, R * 0.74, yc), (L / 2 - 2.5, R * 0.3, R * 0.3, yc), (L / 2, 0, 0, yc)], n=40, smooth=True)
     H.body((0, yc, 0))
-    dpiece(H, "Hull", "Body", env.mesh(), col="primary", mat="cloth", fallback="Ellipsoid")
-    dpiece(H, "Stripe", "Body", cheat(env, -L / 2 + 1.2, L / 2 - 1.5, 0.0, r=0.3, out=0.08), col="secondary", role="detail")
-    dpiece(H, "NoseCap", "Body", Fus([(-L / 2 - 0.02, 0, 0, yc), (-L / 2 + 0.6, R * 0.52, R * 0.52, yc), (-L / 2 + 1.0, R * 0.64, R * 0.64, yc)], n=26).mesh(), col="secondary", role="detail")
+    dpiece(H, "Hull", "Body", env.mesh(samples=np.linspace(-L / 2, L / 2, 34)), col="primary", mat="cloth", fallback="Ellipsoid",
+           pattern=lambda Q: 0.9 + 0.1 * np.abs(np.cos(np.arctan2(Q[:, 1] - yc, Q[:, 0]) * 6)))
+    dpiece(H, "Stripe", "Body", merge(cheat(env, -L / 2 + 2.0, L / 2 - 2.0, 0.0, r=0.42, n=24, out=0.12)), col="secondary", role="detail", pri=1.3)
+    dpiece(H, "NoseCap", "Body", Fus([(-L / 2 - 0.04, 0, 0, yc), (-L / 2 + 0.8, R * 0.44, R * 0.44, yc), (-L / 2 + 1.5, R * 0.6, R * 0.6, yc)], n=40).mesh(), col="secondary", role="detail", pri=1.3)
+    battens = merge(*[tube([A.fus_point(env, z, a, -0.08) for z in np.linspace(-L / 2 + 0.9, -L / 2 + 4.8, 6)], 0.11, 5) for a in np.linspace(0, TAU, 12, endpoint=False)])
     fins = []
     for a in (0, 90, 180, 270):
-        f = A.fin(2.2, 3.4, 1.8, 1.4, thick=0.2, pos=(0, R * 0.42, L / 2 - 4.2))
+        f = A.fin(4.6, 7.0, 3.8, 3.0, thick=0.4, pos=(0, R * 0.42, L / 2 - 9.5))
         fins.append(xform(f, (0, yc, 0), (0, 0, a)))
-    dpiece(H, "Fins", "Body", merge(*fins), col="secondary", mat="hard", role="detail")
-    # gondola with windows, open front cockpit seat
-    g = Fus([(-3.0, 0.0, 0.0, 1.0), (-2.6, 0.6, 0.55, 0.95), (-1.6, 0.9, 0.8, 0.9), (1.8, 0.9, 0.8, 0.95), (2.8, 0.4, 0.45, 1.15), (3.1, 0.0, 0.0, 1.3)], n=18, p=3.0)
-    dpiece(H, "Gondola", "Body", merge(g.mesh(), box((1.0, 0.8, 3.0), (0, 1.9, 0.0), r=0.2)), col="secondary", mat="hard", role="body")
-    dpiece(H, "Windows", "Body", merge(window_row(g, [-1.4, -0.5, 0.4, 1.3], 1.2, w=0.6, h=0.42), box((1.0, 0.4, 0.07), (0, 1.3, -2.55), r=0.04, rot=(-40, 0, 0))), col=TINT, mat="glass", role="glass", pri=1.5)
-    dpiece(H, "Seat", "Body", merge(bucket_seat((0, 1.75, -1.2), w=0.7)), col="dark", mat="cloth", role="detail")
-    # engine pods with props on bones
-    ex, ey, ez = 1.8, 1.4, 1.0
-    H.mbone("Prop#", "Body", (ex, ey, ez + 1.3))
-    pod = merge(rev([(-1.0, 0), (-0.8, 0.32), (0.4, 0.34), (1.2, 0.0)], axis=2, segs=12, pos=(ex, ey, ez)), tube([[0.8, ey, ez], [ex, ey, ez]], 0.08, 6))
-    dmpiece(H, "Pod#", "Body", pod, col="metal", mat="metal", role="detail")
-    dmpiece(H, "PropP#", "Prop#", A.prop(3, 0.75, 0.2, axis="z", pos=(ex, ey, ez + 1.25), thick=0.03), col="dark", role="detail")
-    dpiece(H, "Cables", "Body", merge(*[tube([[s * 0.8, 2.2, z], [s * 1.6, yc - R * 0.85, z * 1.3]], 0.03, 4) for s in (1, -1) for z in (-2.0, 2.0)]), col="steel", mat="metal", role="detail", pri=2.5)
-    common(H, (0, 2.1, -1.2), (0.7, 0.15, 0.8), -L / 2 - 0.5, L / 2 + 0.5, yc + R + 0.5)
-    A.air_clips(H, size=1.5, spinners=[("PropR", "z", 1, TAU / 3), ("PropL", "z", -1, TAU / 3)], attack="ram", hover=True, bank=0.08)
+    dpiece(H, "Fins", "Body", merge(*fins, battens), col="secondary", mat="hard", role="detail", pri=1.1)
+    # gondola cabin: tub + roof, glass band, frames
+    zw0, zw1 = -5.9, 3.6
+    zs = zrange(-6.4, 6.5, 0.5, (zw0, zw1))
+    ylo, yhi = hip[1] + 0.85, hip[1] + 2.9
+    zg = [z for z in zs if zw0 <= z <= zw1]
+    sd = band(G.up, zg, ylo=G.yc, yhi=ylo, side=True, th=0.15, n=5)
+    gond = [G.lower(zs, n=24), G.upper([z for z in zs if z <= zw0], n=20), G.upper([z for z in zs if z >= zw1], n=20), band(G.up, zg, ylo=yhi, th=0.15, n=12), sd, mirror(sd)]
+    mount_ = merge(box((1.6, 0.9, 6.0), (0, G.top(0) + 0.55, 0.0), r=0.3), *[tube([[s * 1.2, G.top(z) - 0.1, z], [s * 2.2, yc - R * 0.93, z * 1.4]], 0.07, 4) for s in (1, -1) for z in (-4.0, 4.0)])
+    dpiece(H, "Gondola", "Body", merge(*gond), col="secondary", mat="hard", role="body", pri=0.95)
+    dpiece(H, "Pylon", "Body", mount_, col="dark", role="detail", pri=1.4)
+    gl = band(G.up, zg, ylo=ylo, yhi=yhi, side=True, th=0.08, n=8)
+    dpiece(H, "WindowGlass", "Body", merge(gl, mirror(gl)), col=GLASS, mat="glass", tr=0.5, role="glass", pri=1.1)
+    posts = []
+    for z in (zw0 + 1.6, zw0 + 3.8, zw0 + 6.4):
+        a0, a1 = A.fus_angle(G.up, z, ylo), A.fus_angle(G.up, z, yhi)
+        posts.append(tube([A.fus_point(G.up, z, a, -0.04) for a in np.linspace(a0, a1, 5)], 0.12, 6))
+    pm = merge(*posts, G.line(np.linspace(zw0, zw1, 10), ylo, r=0.1, out=0.04, both=False), G.line(np.linspace(zw0 + 1.0, zw1, 10), yhi, r=0.1, out=0.04, both=False))
+    dpiece(H, "WindowFrames", "Body", merge(pm, mirror(pm)), col="dark", role="detail", pri=1.3)
+    # engine pods on outriggers, props on bones
+    ex, ey, ez = 4.6, gy + 2.2, 2.2
+    H.mbone("Prop#", "Body", (ex, ey, ez + 2.2))
+    pod = merge(rev([(-1.8, 0), (-1.5, 0.62), (0.6, 0.66), (1.8, 0.3), (2.0, 0.0)], axis=2, segs=16, pos=(ex, ey, ez)),
+                A.lathe([(ez + 1.6, 1.55), (ez + 2.9, 1.55), (ez + 2.9, 1.38), (ez + 1.6, 1.38)], axis=2, segs=24, pos=(ex, ey, 0), closed=True),
+                tube([[G.x_at(ez, ey) - 0.2, ey, ez], [ex - 0.5, ey, ez]], 0.16, 8), tube([[ex, ey + 0.6, ez + 2.2], [ex, ey + 1.42, ez + 2.2]], 0.07, 4),
+                tube([[ex, ey - 0.6, ez + 2.2], [ex, ey - 1.42, ez + 2.2]], 0.07, 4))
+    dmpiece(H, "Pod#", "Body", pod, col="metal", mat="metal", role="detail", pri=1.2)
+    dmpiece(H, "PropP#", "Prop#", A.prop(5, 1.3, 0.38, axis="z", pos=(ex, ey, ez + 2.2), thick=0.06, hub=(0.28, 0.4)), col="dark", role="detail", pri=1.3)
+    wh = merge(wheel(0.62, 0.45, (0, 0.62, 1.2), axis=0), cyl(0.36, 0.5, (0, 0.62, 1.2), axis=0, segs=12), tube([[0, G.bottom(1.2) + 0.2, 1.2], [0, 0.9, 1.2]], 0.12, 6),
+             box((0.12, 0.9, 0.9), (0.3, 1.0, 1.2), r=0.04), box((0.12, 0.9, 0.9), (-0.3, 1.0, 1.2), r=0.04))
+    dpiece(H, "Wheel", "Body", wh, col="gunmetal", mat="metal", role="detail", pri=1.4)
+    cockpit(H, G, hip, floor_y=hip[1] - 1.25, panel_z=hip[2] - 2.05, panel_w=4.0, panel_top=hip[1] + 1.15, ctrl="yoke", screens=2)
+    H.prim("Beacon", "Body", "Ball", (0.5, 0.35, 0.5), (0, yc + R + 0.1, 0), col="red", glow=True, role="light", pri=2.4)
+    ride(H, hip, (-4.6, -2.4), -L / 2 - 0.5, L / 2 + 0.5, hip[1] + 3.9)
+    A.craft_clips(H, L, hover=True, attack="ram", bank=0.05)
     return H
 
 

@@ -371,76 +371,122 @@ def ufo():
 
 
 # ================================================================================================ space capsule
+def upright(m):
+    """Rotate a mesh built along +Z (height) so +Z becomes +Y and the section's +Y faces the front (-Z)."""
+    return xform(m, (0, 0, 0), (-90, 0, 0))
+
+
 @hero("space capsule", "spacecraft")
 def space_capsule():
+    """Crew capsule at real game scale (10 stud base, 9 studs tall) standing on its heat shield: the rider sits
+    inside facing a large front window (seat, panel with screens, stick), hatch, RCS thruster quads, docking
+    nose, a packed parachute canister on bone Chute and three landing legs on GearF / GearR / GearL."""
     H = S("space capsule", gait="hover")
-    H.preview = {"primary": "#ECEFF1", "secondary": "#1A1A1A"}
-    H.body((0, 2.0, 0))
-    # cone capsule standing on its heat shield
-    cap = A.lathe([(0.35, 0.0), (0.35, 2.15), (0.55, 2.3), (0.75, 2.25), (3.3, 0.85), (3.45, 0.8), (3.6, 0.6), (3.6, 0.0)], axis=1, segs=28)
-    dpiece(H, "Hull", "Body", cap, col="primary", mat="foil", fallback="Ellipsoid", pattern=lambda Q: 0.9 + 0.1 * np.cos(np.arctan2(Q[:, 2], Q[:, 0]) * 14))
-    dpiece(H, "Shield", "Body", A.lathe([(0.0, 0.0), (0.0, 1.6), (0.12, 2.2), (0.35, 2.3), (0.45, 2.25), (0.45, 0.0)], axis=1, segs=28), col=[0.42, 0.3, 0.2], mat="hard", role="detail")
-    # windows, hatch, RCS quads, docking nose
-    win = []
-    for a in (-35, 35):
-        c, s = math.cos(math.radians(a)), math.sin(math.radians(a))
-        r_ = 2.1 - (1.8 - 0.35) * (2.25 - 0.85) / (3.3 - 0.75) * 0 - 0.62
-        win.append(xform(box((0.5, 0.45, 0.08), (0, 0, 0), r=0.06), (s * 1.63, 1.9, -c * 1.63), (29, -a, 0)))
-    dpiece(H, "Windows", "Body", merge(*win), col=TINT, mat="glass", role="glass", pri=1.5)
-    dpiece(H, "Hatch", "Body", xform(box((0.9, 1.0, 0.1), (0, 0, 0), r=0.08), (0, 1.75, -1.74), (29, 0, 0)), col="secondary", role="detail")
-    rcs = []
+    H.preview = {"primary": "#ECEFF1", "secondary": "#22262C", "dark": "#2B2F36"}
+    H.body((0, 4.0, 0))
+    hip = (0.0, 2.55, 0.55)
+    cone = Fus([(0.9, 4.75, 4.75, 0.0), (1.25, 4.9, 4.9, 0.0), (1.6, 4.72, 4.72, 0.0), (7.4, 1.95, 1.95, 0.0), (8.0, 1.55, 1.55, 0.0), (8.15, 0.0, 0.0, 0.0)], n=40, p=2.0)
+    zs = zrange(0.9, 8.15, 0.45, (2.95, 5.6, 1.25, 1.6, 7.4, 8.0))
+    zw = [z for z in zs if 2.95 <= z <= 5.6]
+    win = lambda z: 0.42 * cone.at(z)[0]
+    hull = [band(cone, [z for z in zs if z <= 2.95], th=0.22, n=44), band(cone, [z for z in zs if z >= 5.6], th=0.22, n=44), band(cone, zw, yhi=win, th=0.22, n=40)]
+    ribs = lambda Q: 0.9 + 0.1 * (np.cos(np.arctan2(Q[:, 2], Q[:, 0]) * 24) > 0.6)
+    dpiece(H, "Hull", "Body", upright(merge(*hull)), col="primary", mat="foil", fallback="Ellipsoid", pattern=ribs)
+    dpiece(H, "WindowGlass", "Body", upright(band(cone, zw, ylo=win, th=0.08, n=16)), col=GLASS, mat="glass", tr=0.5, role="glass", pri=1.1)
+    fr = []
+    for z in (2.95, 5.6):
+        a0 = A.fus_angle(cone, z, win(z))
+        fr.append(tube([A.fus_point(cone, z, a, -0.05) for a in np.linspace(a0, math.pi - a0, 10)], 0.14, 6))
+    side = [A.fus_point(cone, z, A.fus_angle(cone, z, win(z)), -0.05) for z in np.linspace(2.95, 5.6, 5)]
+    fr.append(tube(side, 0.14, 6))
+    fr.append(mirror(tube(side, 0.14, 6)))
+    fr.append(tube([A.fus_point(cone, z, math.pi / 2, -0.05) for z in np.linspace(2.95, 5.6, 5)], 0.1, 6))
+    dpiece(H, "WindowFrame", "Body", upright(merge(*fr)), col="dark", role="detail", pri=1.3)
+    shield = A.lathe([(0.0, 0.0), (0.0, 3.6), (0.25, 4.55), (0.75, 4.92), (1.15, 4.95), (1.15, 4.0), (0.9, 0.0)], axis=1, segs=48)
+    dpiece(H, "Shield", "Body", shield, col=[0.42, 0.3, 0.22], mat="hard", role="detail", pri=1.1)
+    rcs, rim = [], []
     for a in (45, 135, 225, 315):
-        c, s = math.cos(math.radians(a)), math.sin(math.radians(a))
-        rcs.append(xform(box((0.35, 0.3, 0.2), (0, 0, 0), r=0.04), (c * 1.2, 2.75, s * 1.2), (0, -a + 90, 0)))
-    dpiece(H, "RCS", "Body", merge(*rcs, A.lathe([(3.55, 0.0), (3.55, 0.45), (3.95, 0.35), (3.95, 0.0)], axis=1, segs=16)), col="gunmetal", mat="metal", role="detail")
-    # parachute (packed open canopy above on a bone) with shroud lines
-    H.bone("Chute", "Body", (0, 4.0, 0))
-    ch = A.lathe([(8.2, 0.0), (8.15, 0.9), (7.8, 2.0), (7.1, 3.0), (6.4, 3.4), (6.55, 3.4), (7.25, 3.0), (7.95, 2.0), (8.3, 0.9), (8.35, 0.0)], axis=1, segs=20)
-    lines = merge(*[tube([[0, 4.0, 0], [3.3 * math.cos(a), 6.45, 3.3 * math.sin(a)]], 0.025, 3) for a in np.linspace(0, TAU, 8, endpoint=False)])
-    dpiece(H, "Canopy", "Chute", ch, col=[0.95, 0.45, 0.15], mat="cloth", role="wing", pattern=lambda Q: np.where(np.cos(np.arctan2(Q[:, 2], Q[:, 0]) * 4) > 0, 1.0, 0.55))
-    dpiece(H, "Lines", "Chute", lines, col="white", mat="cloth", role="detail", pri=2.5)
-    # the rider sits in an open seat on the docking deck
-    dpiece(H, "Seat", "Body", merge(bucket_seat((0, 4.05, 0.1), w=0.75)), col="secondary", mat="cloth", role="detail")
-    common(H, (0, 4.25, 0.1), (0.8, 0.15, 0.8), (0, 2.0, -2.0), (0, 0.0, 0), 5.5)
+        c, s_ = math.cos(math.radians(a)), math.sin(math.radians(a))
+        r_ = cone.at(6.2)[0]
+        rcs.append(xform(merge(box((0.7, 0.6, 0.4), (0, 0, 0), r=0.08), *[cyl(0.1, 0.35, (dx, dy, -0.3), axis=2, segs=6) for dx, dy in ((0.2, 0.15), (-0.2, 0.15), (0.2, -0.15), (-0.2, -0.15))]),
+                         (c * (r_ + 0.15), 6.2, s_ * (r_ + 0.15)), (0, -a - 90, 0)))
+    nose = merge(A.lathe([(8.1, 0.0), (8.1, 1.0), (8.7, 0.85), (8.7, 0.0)], axis=1, segs=20), A.lathe([(8.65, 0.95), (8.85, 0.95), (8.85, 0.7), (8.65, 0.7)], axis=1, segs=20, closed=True))
+    hatch = xform(box((0.14, 2.0, 1.6), (0, 0, 0), r=0.12), (-(cone.at(4.0)[0] - 0.02), 4.0, 0.9), (0, 0, -24))
+    dpiece(H, "RCS", "Body", merge(*rcs, nose, hatch), col="secondary", mat="metal", role="detail", pri=1.3)
+    H.bone("Chute", "Body", (0, 8.9, 0))
+    dpiece(H, "ChuteCan", "Chute", merge(A.lathe([(8.8, 0.0), (8.8, 0.62), (9.6, 0.6), (9.75, 0.0)], axis=1, segs=18), cyl(0.68, 0.12, (0, 9.2, 0), axis=1, segs=18)),
+           col=[0.95, 0.45, 0.15], mat="cloth", role="detail", pri=1.6)
+    # inside: seat, panel (curved to the window), stick
+    dpiece(H, "Seat", "Body", A.pilot_seat(hip, w=1.8, floor_y=1.3), col="dark", mat="cloth", role="detail", pri=1.2)
+    dpiece(H, "Floor", "Body", A.lathe([(1.15, 0.0), (1.15, 4.3), (1.3, 4.3), (1.3, 0.0)], axis=1, segs=32), col="darker", role="detail", pri=1.6)
+    dpiece(H, "Panel", "Body", merge(xform(box((3.6, 1.0, 0.5), (0, 0, 0), r=0.14), (0, hip[1] + 0.65, hip[2] - 2.2), (-25, 0, 0)),
+                                     box((0.8, hip[1] + 0.2 - 1.3, 0.6), (0, (hip[1] + 0.2 + 1.3) / 2, hip[2] - 2.2), r=0.1)), col="darker", role="detail", pri=1.3)
+    for i, x in enumerate((-0.9, 0.9)):
+        H.prim(f"Screen{i + 1}", "Body", "Block", (1.0, 0.6, 0.05), (x, hip[1] + 0.7, hip[2] - 1.93), rot=(math.radians(-25), 0, 0), col=SCREEN, glow=True, role="light", pri=2.0)
+    dpiece(H, "Controls", "Body", A.stick(hip, 1.3, dz=-1.8, h=1.0), col="gunmetal", mat="metal", role="detail", pri=1.6)
+    legs3(H, [("GearF", (0, 1.5, -3.6), (0, 0.0, -5.0)), ("GearR", (3.1, 1.5, 1.8), (4.3, 0.0, 2.5)), ("GearL", (-3.1, 1.5, 1.8), (-4.3, 0.0, 2.5))], r=0.2, pad=0.6)
+    ride(H, hip, (-6.0, 0.0), -5.0, 5.0, hip[1] + 3.9, exhaust=(0, 0.2, 0))
 
     def extra(name, u, pose):
-        A._add(pose, "Chute", (0, 0, 0, 0.05 * math.sin(TAU * u), 0.15 * math.sin(TAU * u * 0.5), 0.05 * math.sin(TAU * u + 1)))
+        A._add(pose, "Chute", (0, 0, 0, 0.01 * math.sin(TAU * u), 0, 0.01 * math.sin(TAU * u + 1)))
 
-    thrust_clips(H, 0.8, extra=extra, hover=True, attack="ram", bank=0.1)
+    A.craft_clips(H, 10.0, hover=True, attack="ram", bank=0.08, extra=extra)
     return H
 
 
 # ================================================================================================ moon lander
 @hero("moon lander", "spacecraft")
 def moon_lander():
+    """Lunar lander at real game scale (13 stud footprint, 12 studs tall): gold-foil descent stage on four spidery
+    legs (GearFR / GearFL / GearBR / GearBL), faceted ascent cabin the rider sits in behind two front windows (seat,
+    panel, stick), antenna dish, porch + ladder, engine bell with a glow."""
     H = S("moon lander", gait="hover")
-    H.preview = {"primary": "#FFD54F", "secondary": "#C0C0C0"}
-    H.body((0, 2.4, 0))
-    # descent stage: gold-foil octagonal box
-    ds = A.lathe([(1.4, 0.0), (1.4, 2.0), (2.9, 2.0), (2.9, 0.0)], axis=1, segs=8, rot=(0, 22.5, 0))
-    dpiece(H, "Hull", "Body", ds, col="primary", mat="foil", fallback="Block", pattern=lambda Q: 0.85 + 0.15 * np.sin(Q[:, 0] * 7.0 + Q[:, 1] * 5.0) * np.cos(Q[:, 2] * 6.0))
-    dpiece(H, "Engine", "Body", merge(A.lathe([(1.4, 0.45), (0.8, 0.95), (0.8, 0.85), (1.3, 0.38)], axis=1, segs=16, closed=True)), col="gunmetal", mat="metal", role="detail")
-    # ascent stage: faceted cabin with triangular windows, antenna dish, porch + ladder
-    asc = merge(box((2.8, 1.6, 2.4), (0, 3.7, 0.2), r=0.1), box((2.2, 1.0, 1.0), (0, 3.6, -1.1), r=0.1, rot=(0, 0, 0)), cyl(0.7, 0.5, (0, 4.6, 0.3), axis=1, segs=12))
-    dpiece(H, "Cabin", "Body", asc, col="secondary", mat="metal", role="body")
-    win = merge(*[xform(box((0.5, 0.5, 0.08), (0, 0, 0), r=0.04), (s * 0.55, 3.9, -1.62), (0, s * 25, 0)) for s in (1, -1)])
-    dpiece(H, "Windows", "Body", win, col=TINT, mat="glass", role="glass", pri=1.5)
-    dish = merge(tube([[1.1, 4.4, 0.8], [1.6, 5.4, 1.0]], 0.05, 5), A.lathe([(0.0, 0.0), (0.05, 0.5), (0.15, 0.6), (0.18, 0.6), (0.08, 0.5), (0.03, 0.0)], axis=1, segs=14, pos=(1.65, 5.35, 1.0), rot=(30, 0, 0)))
-    dpiece(H, "Dish", "Body", dish, col="white", mat="metal", role="detail")
-    dpiece(H, "Porch", "Body", merge(box((1.2, 0.08, 0.9), (0, 2.05, -2.0), r=0.02), tube([[-0.5, 2.0, -2.4], [-0.5, 0.4, -3.1]], 0.04, 4), tube([[0.5, 2.0, -2.4], [0.5, 0.4, -3.1]], 0.04, 4),
-                                     *[tube([[-0.5, y, -2.4 - (2.0 - y) * 0.44], [0.5, y, -2.4 - (2.0 - y) * 0.44]], 0.03, 4) for y in np.linspace(0.6, 1.8, 5)]), col="metal", mat="metal", role="detail")
-    # four spidery legs with foot pads
-    legs = []
-    for a in (45, 135, 225, 315):
-        c, s = math.cos(math.radians(a)), math.sin(math.radians(a))
-        foot = np.array([3.6 * c, 0.2, 3.6 * s])
-        legs += [tube([[2.3 * c, 2.2, 2.3 * s], foot], 0.12, 6), tube([[2.6 * c, 1.0, 2.6 * s], foot * np.array([0.92, 1, 0.92]) + np.array([0, 0.6, 0])], 0.06, 5),
-                 A.lathe([(0.0, 0.0), (0.0, 0.55), (0.18, 0.5), (0.25, 0.2), (0.25, 0.0)], axis=1, segs=12, pos=tuple(foot - np.array([0, 0.2, 0])))]
-    dpiece(H, "Legs", "Body", merge(*legs), col="primary", mat="foil", role="limb")
-    dpiece(H, "Seat", "Body", bucket_seat((0, 4.95, 0.3), w=0.8), col="dark", mat="cloth", role="detail")
-    H.prim("Flame", "Body", "Ball", (1.0, 0.8, 1.0), (0, 0.55, 0), col="flame", glow=True, role="light", pri=2.4)
-    common(H, (0, 5.15, 0.3), (0.8, 0.15, 0.8), (0, 3.5, -2.0), (0, 0.4, 0), 6.5)
-    thrust_clips(H, 0.8, hover=True, attack="ram", bank=0.1)
+    H.preview = {"primary": "#E9B949", "secondary": "#C7CCD2", "dark": "#2B2F36"}
+    H.body((0, 4.0, 0))
+    ds = A.lathe([(1.5, 0.0), (1.5, 4.3), (4.6, 4.3), (4.6, 0.0)], axis=1, segs=8, rot=(0, 22.5, 0))
+    foil = lambda Q: 0.8 + 0.2 * np.sin(Q[:, 0] * 5.0 + Q[:, 1] * 3.7) * np.cos(Q[:, 2] * 4.3 + Q[:, 1] * 2.1)
+    dpiece(H, "Hull", "Body", ds, col="primary", mat="foil", fallback="Block", pattern=foil)
+    dpiece(H, "Engine", "Body", A.lathe([(1.5, 0.75), (0.6, 1.5), (0.6, 1.38), (1.45, 0.65)], axis=1, segs=20, closed=True), col="gunmetal", mat="metal", role="detail", pri=1.3)
+    H.prim("Burner", "Body", "Cylinder", (0.1, 2.4, 2.4), (0, 0.75, 0), rot=(0, 0, math.pi / 2), col="flame", glow=True, role="light", pri=2.3)
+    # ascent cabin: hollow box (floor, back, sides, roof) + faceted front with two windows
+    y0, y1, hw, z0, z1 = 4.6, 10.2, 2.55, -2.3, 2.6
+    hip = (0.0, y0 + 0.2 + 1.25, 0.4)
+    walls = [box((2 * hw, 0.25, z1 - z0), (0, y0 + 0.12, (z0 + z1) / 2), r=0.06), box((2 * hw, y1 - y0, 0.25), (0, (y0 + y1) / 2, z1 - 0.12), r=0.06),
+             box((0.25, y1 - y0, z1 - z0), (hw - 0.12, (y0 + y1) / 2, (z0 + z1) / 2), r=0.06), box((0.25, y1 - y0, z1 - z0), (-hw + 0.12, (y0 + y1) / 2, (z0 + z1) / 2), r=0.06),
+             box((2 * hw, 0.25, z1 - z0 + 0.6), (0, y1 - 0.12, (z0 + z1) / 2 - 0.3), r=0.06)]
+    wy0, wy1 = hip[1] + 0.9, hip[1] + 2.8
+    fz = z0 - 0.4
+    walls += [box((2 * hw, wy0 - y0, 0.25), (0, (y0 + wy0) / 2, fz), r=0.06), box((2 * hw, y1 - wy1, 0.25), (0, (wy1 + y1) / 2, fz), r=0.06),
+              box((0.5, wy1 - wy0, 0.25), (0, (wy0 + wy1) / 2, fz), r=0.06), box((0.5, wy1 - wy0, 0.25), (hw - 0.25, (wy0 + wy1) / 2, fz), r=0.06),
+              box((0.5, wy1 - wy0, 0.25), (-hw + 0.25, (wy0 + wy1) / 2, fz), r=0.06),
+              box((0.25, y1 - y0, 0.6), (hw - 0.12, (y0 + y1) / 2, fz + 0.2), r=0.06), box((0.25, y1 - y0, 0.6), (-hw + 0.12, (y0 + y1) / 2, fz + 0.2), r=0.06),
+              box((2 * hw, 0.25, 0.6), (0, y0 + 0.12, fz + 0.2), r=0.06)]
+    dpiece(H, "Cabin", "Body", merge(*walls), col="secondary", mat="metal", role="body", pri=0.95)
+    gl = [box((hw - 0.75, wy1 - wy0 + 0.1, 0.08), (s * (hw / 2), (wy0 + wy1) / 2, fz), r=0.05) for s in (1, -1)]
+    dpiece(H, "WindowGlass", "Body", merge(*gl), col=GLASS, mat="glass", tr=0.5, role="glass", pri=1.1)
+    panels = [box((0.08, 1.6, 1.6), (s * (hw + 0.03), y0 + 2.2, 0.8), r=0.05) for s in (1, -1)] + [box((1.6, 0.9, 0.08), (0, y1 - 0.9, z1 + 0.03), r=0.05)]
+    tank = cyl(0.9, 1.6, (0, y1 + 0.55, 0.9), axis=1, segs=16, bevel=0.2)
+    dpiece(H, "CabinDetail", "Body", merge(*panels, tank), col="dark", mat="metal", role="detail", pri=1.6)
+    dish = merge(tube([[1.6, y1 + 0.1, 1.6], [2.6, y1 + 1.6, 2.2]], 0.07, 5),
+                 A.lathe([(0.0, 0.0), (0.08, 0.8), (0.25, 1.0), (0.3, 1.0), (0.14, 0.8), (0.05, 0.0)], axis=1, segs=16, pos=(2.7, y1 + 1.55, 2.25), rot=(30, 0, 0)))
+    porch = merge(box((2.0, 0.12, 1.5), (0, 4.4, -4.5), r=0.03), tube([[-0.8, 4.3, -5.1], [-0.8, 0.5, -6.6]], 0.07, 5), tube([[0.8, 4.3, -5.1], [0.8, 0.5, -6.6]], 0.07, 5),
+                  *[tube([[-0.8, y, -5.1 - (4.3 - y) * 0.39], [0.8, y, -5.1 - (4.3 - y) * 0.39]], 0.05, 4) for y in np.linspace(0.9, 3.9, 6)])
+    dpiece(H, "Dish", "Body", merge(dish, porch), col="white", mat="metal", role="detail", pri=1.5)
+    for a, nm in ((315, "GearFR"), (225, "GearFL"), (45, "GearBR"), (135, "GearBL")):
+        c, s_ = math.cos(math.radians(a)), math.sin(math.radians(a))
+        top = (3.8 * c, 3.4, 3.8 * s_)
+        foot = np.array([6.4 * c, 0.3, 6.4 * s_])
+        H.bone(nm, "Body", top)
+        lm = merge(tube([top, foot], 0.18, 8), tube([[4.2 * c, 1.4, 4.2 * s_], foot * np.array([0.93, 1, 0.93]) + np.array([0, 0.9, 0])], 0.09, 6),
+                   A.lathe([(0.0, 0.0), (0.0, 0.85), (0.22, 0.8), (0.32, 0.3), (0.34, 0.0)], axis=1, segs=14, pos=(foot[0], 0, foot[2])))
+        dpiece(H, nm + "P", nm, lm, col="primary", mat="foil", role="limb", pri=1.2)
+    dpiece(H, "Seat", "Body", A.pilot_seat(hip, w=1.8, floor_y=y0 + 0.25), col="dark", mat="cloth", role="detail", pri=1.2)
+    dpiece(H, "Panel", "Body", merge(xform(box((4.2, 1.0, 0.6), (0, 0, 0), r=0.14), (0, hip[1] + 0.55, hip[2] - 2.15), (-15, 0, 0)), A.stick(hip, y0 + 0.25, dz=-1.8, h=1.0)),
+           col="darker", role="detail", pri=1.3)
+    for i, x in enumerate((-1.0, 1.0)):
+        H.prim(f"Screen{i + 1}", "Body", "Block", (1.1, 0.6, 0.05), (x, hip[1] + 0.6, hip[2] - 1.82), rot=(math.radians(-15), 0, 0), col=SCREEN, glow=True, role="light", pri=2.0)
+    ride(H, hip, (0.0, -7.6), -6.6, 6.6, hip[1] + 3.9, exhaust=(0, 0.6, 0))
+    A.craft_clips(H, 13.0, hover=True, attack="ram", bank=0.08)
     return H
 
 
