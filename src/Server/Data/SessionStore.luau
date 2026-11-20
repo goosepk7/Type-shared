@@ -24,7 +24,7 @@
 --    save (throttled at match end, say) is not robbed of it. A holder that never answers is dead: steal.
 --  * Wipe tripwire: a namespace may define guard(stored, new) -> (ok, reason). A save that fails it is not
 --    written for that namespace (the stored copy stays) and the namespace is frozen for the session.
---  * Backups: every write is a DataStore version (kept 30 days by Roblox). listVersions / restoreVersion
+--  * Backups: Roblox keeps the first write of each UTC hour as a DataStore version (30 days). listVersions / restoreVersion
 --    roll an OFFLINE player back, keeping the receipt ids granted since (no double grants after a restore).
 
 local Env = require(script.Parent.Env)
