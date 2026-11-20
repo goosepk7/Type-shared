@@ -30,7 +30,7 @@ return function(t)
 		local raw = fs.readFile("data/blocklist.txt")
 		for line in string.gmatch(raw, "[^\n]+") do
 			if string.sub(line, 1, 1) ~= "#" then
-				t.ok(string.match(line, "^%a+%d %x+$") ~= nil, "hash-only line: " .. line)
+				t.ok(string.match(line, "^%a+%d? %x+$") ~= nil, "hash-only line: " .. line)
 			end
 		end
 		local data = fs.readFile("src/Server/BlocklistData.luau")
@@ -38,6 +38,22 @@ return function(t)
 		t.eq(ctx.Safety.isBlocked("sh1t"), true)
 		t.eq(ctx.Safety.isBlocked("fuuuuck"), true)
 		t.eq(ctx.Safety.isBlocked("f u c k"), true)
+		-- 2026-11-20 list: variants, leet, lookalike letters, phrases, slurs, self-harm
+		for _, bad in { "FÜCK", "ｆｕｃｋ", "ⓕⓤⓒⓚ", "fvck", "phuck", "motherfucker", "b!tch", "assh0le", "a$$", "n1gg3r",
+			"N.I.G.G.A", "kys", "k y s", "kill yourself", "heil hitler", "r3tard", "p0rn", "s3x", "fucking fireball",
+			"dragon of shit", "f@g", "kkk", "wizard ass" } do
+			t.eq(ctx.Safety.isBlocked(bad), true, bad)
+		end
+		t.eq(ctx.Safety.isBlocked("fu\u{0441}k"), true, "Cyrillic es folds to c")
+		t.eq(ctx.Safety.isBlocked("p\u{043E}rn"), true, "Cyrillic o folds to o")
+		for _, ok in {
+			"as", "con", "bob", "kung fu", "pocket watch", "smartwatch", "coconut water", "go kart", "crisis",
+			"sinigang", "thorny", "fuchsia", "sperm whale", "plumb bob", "maine coon", "alaskan klee kai",
+			"bastard sword", "nigersaurus", "puss caterpillar", "cafe con leche", "fire retardant", "torpedo",
+			"raccoon", "cocoon", "title", "document", "cucumber", "hancock", "button", "massive", "uranus",
+		} do
+			t.eq(ctx.Safety.isBlocked(ok), false, ok)
+		end
 		for _, ok in { "dragon", "grape", "therapist", "class", "scunthorpe", "shiitake", "cocktail", "assassin",
 			"bass", "grass", "hello", "naked mole rat", "pumpkin", "drape", "analysis", "nigeria", "condominium",
 			"hoe", "glass cannon", "peacock", "shuttlecock", "rapier", "kitty", "spice", "isis" } do

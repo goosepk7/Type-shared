@@ -12,6 +12,12 @@
 --   exact1/exact2       -- a token, or the whole phrase without spaces, equals the entry
 --   contains1/contains2 -- the entry appears anywhere in the phrase (only for terms that never
 --                          occur inside innocent words: no Scunthorpe problems)
+--   allow               -- whole-phrase skeletons (collapse 1) that are never blocked: library words
+--                          like "maine coon" whose tokens would otherwise hit an exact entry
+-- Before any of that, lookalike letters (Cyrillic/Greek homoglyphs, accents, fullwidth, circled,
+-- small caps) fold to ASCII via BlocklistFold, so "fück" / "ｆｕｃｋ" / Cyrillic-o spellings match.
+-- Build/extend with tools/blocklist.py (keeps the plaintext out of the repo; `scan` checks the
+-- dictionary + library for false positives).
 
 local Blocklist = {}
 
@@ -19,6 +25,28 @@ local LEET: { [string]: string } = {
 	["0"] = "o", ["1"] = "i", ["2"] = "z", ["3"] = "e", ["4"] = "a", ["5"] = "s", ["6"] = "g", ["7"] = "t",
 	["8"] = "b", ["9"] = "g", ["@"] = "a", ["$"] = "s", ["!"] = "i", ["|"] = "l", ["+"] = "t", ["€"] = "e",
 }
+
+local FOLD: { [string]: string } = (function()
+	local ok, t = pcall(function()
+		return require(script.Parent.BlocklistFold) :: any
+	end)
+	return if ok and type(t) == "table" then t else {}
+end)()
+
+-- Lookalike letters -> ASCII; ASCII passes through. Invalid UTF-8 is returned unchanged.
+function Blocklist.fold(text: string): string
+	if not string.find(text, "[\128-\255]") then
+		return text
+	end
+	local out = table.create(#text)
+	local ok = pcall(function()
+		for _, cp in utf8.codes(text) do
+			local ch = utf8.char(cp)
+			table.insert(out, if cp < 128 then ch else (FOLD[ch] or ch))
+		end
+	end)
+	return if ok then table.concat(out) else text
+end
 
 local function collapse(s: string, keep: number): string
 	local out = table.create(#s)
@@ -39,7 +67,7 @@ end
 
 -- Tokens of the skeleton (split on anything that isn't a letter/leet char).
 function Blocklist.tokens(text: string, keep: number): { string }
-	local lower = string.lower(text)
+	local lower = string.lower(Blocklist.fold(text))
 	local mapped = string.gsub(lower, "[%d@%$!|%+]", LEET)
 	mapped = string.gsub(mapped, "€", "e")
 	local out = {}
@@ -67,7 +95,7 @@ function Blocklist.hash(s: string): string
 	return string.format("%08x%08x", fnv(s, 2166136261), fnv(s, 3735928559))
 end
 
-type Sets = { exact1: { [string]: boolean }, exact2: { [string]: boolean }, contains1: { [string]: boolean }, contains2: { [string]: boolean }, maxLen: number }
+type Sets = { exact1: { [string]: boolean }, exact2: { [string]: boolean }, contains1: { [string]: boolean }, contains2: { [string]: boolean }, allow: { [string]: boolean }, maxLen: number }
 
 local sets: Sets? = nil
 local extra: { [string]: boolean } = {} -- runtime additions (Admin.ban), exact1 semantics
@@ -79,9 +107,9 @@ local function load(): Sets
 	local ok, data = pcall(function()
 		return require(script.Parent.BlocklistData) :: any
 	end)
-	local s: Sets = { exact1 = {}, exact2 = {}, contains1 = {}, contains2 = {}, maxLen = 24 }
+	local s: Sets = { exact1 = {}, exact2 = {}, contains1 = {}, contains2 = {}, allow = {}, maxLen = 24 }
 	if ok and type(data) == "table" then
-		for _, name in { "exact1", "exact2", "contains1", "contains2" } do
+		for _, name in { "exact1", "exact2", "contains1", "contains2", "allow" } do
 			for _, h in data[name] or {} do
 				(s :: any)[name][h] = true
 			end
@@ -126,6 +154,9 @@ function Blocklist.isBlocked(text: string): boolean
 		return false
 	end
 	local s = load()
+	if next(s.allow) ~= nil and s.allow[Blocklist.hash(Blocklist.skeleton(text, 1))] then
+		return false
+	end
 	return checkLevel(text, 1, s.exact1, s.contains1, s.maxLen) or checkLevel(text, 2, s.exact2, s.contains2, s.maxLen)
 end
 
@@ -146,8 +177,8 @@ function Blocklist._setData(data: any?)
 	sets = nil
 	table.clear(extra)
 	if data then
-		local s: Sets = { exact1 = {}, exact2 = {}, contains1 = {}, contains2 = {}, maxLen = data.maxLen or 24 }
-		for _, name in { "exact1", "exact2", "contains1", "contains2" } do
+		local s: Sets = { exact1 = {}, exact2 = {}, contains1 = {}, contains2 = {}, allow = {}, maxLen = data.maxLen or 24 }
+		for _, name in { "exact1", "exact2", "contains1", "contains2", "allow" } do
 			for _, h in data[name] or {} do
 				(s :: any)[name][h] = true
 			end
