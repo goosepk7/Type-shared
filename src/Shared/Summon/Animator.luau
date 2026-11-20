@@ -10,6 +10,7 @@
 --   local anim = Summon.animate(model, result)
 --   anim:play("Idle" | "Move" | "Attack" | "Hit" | "Die" | "Spawn")   one-shots return to the last loop
 --   anim:setSpeed(1.5)   anim:onFinished(fn)   anim:destroy()
+--   anim:setBone(name, cf?)   game-driven bone motion on top of the clip (wheels, steering, turrets, rotors)
 
 local Motion = require(script.Parent.Motion)
 
@@ -189,15 +190,20 @@ function Animator._apply(self: any, _dt: number)
 		opts.height, opts.mood = self.height, self.mood
 		local pose = Motion.pose(self.rig, clip, t, opts, r.pose)
 		local still = r.still
+		local over = self.over
 		for name, m in r.motors do
 			local p = pose[name]
+			local ov = over and over[name]
 			if p and (p[1] ~= 0 or p[2] ~= 0 or p[3] ~= 0 or p[4] ~= 0 or p[5] ~= 0 or p[6] ~= 0) then
 				-- == CFrame.new(x, y, z) * CFrame.Angles(rx, ry, rz)
 				local cf = fromEuler(p[4], p[5], p[6])
 				if p[1] ~= 0 or p[2] ~= 0 or p[3] ~= 0 then
 					cf += Vector3.new(p[1], p[2], p[3])
 				end
-				m.Transform = cf
+				m.Transform = if ov then cf * ov else cf
+				still[name] = nil
+			elseif ov then
+				m.Transform = ov
 				still[name] = nil
 			elseif not still[name] then
 				m.Transform = identity
@@ -219,6 +225,32 @@ function Animator.play(self: any, clip: string)
 	end
 	self.clip = clip
 	self.time = 0
+end
+
+-- Game-driven bone motion layered after the clip (wheel spin, steering, turret aim, rotor spin): the bone's
+-- Transform becomes clipPose * cf. nil clears it.
+function Animator.setBone(self: any, name: string, cf: CFrame?)
+	local over = self.over
+	if not over then
+		if cf == nil then
+			return
+		end
+		over = {}
+		self.over = over
+	end
+	over[name] = cf
+end
+
+-- the rig's motor names (Motor6D names == bone names)
+function Animator.bones(self: any): { string }
+	local out = {}
+	local r = self.rigs[1]
+	if r then
+		for name in r.motors do
+			table.insert(out, name)
+		end
+	end
+	return out
 end
 
 function Animator.setSpeed(self: any, s: number)
