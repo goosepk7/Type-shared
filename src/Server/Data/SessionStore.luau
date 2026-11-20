@@ -16,6 +16,16 @@
 --    never migrated down or overwritten: that namespace is frozen (read-only) for the session.
 --  * Namespaces this server does not know are carried through untouched.
 --  * All calls go through Queue (budget, per-key serialisation, exponential backoff).
+--  * A stored record this build cannot read (not a table, missing meta/ns, newer `format`) is NEVER replaced:
+--    the load fails (the player is kicked with a retry message) and the record stays as it was.
+--  * A namespace entry that exists but is unreadable is frozen (read-only), never reset to the template.
+--  * Lock hand-off: while the holder answers our release requests (`holderAlive`), we keep waiting up to
+--    LockBusySeconds instead of stealing at LockWaitSeconds, so a server that is still writing its final
+--    save (throttled at match end, say) is not robbed of it. A holder that never answers is dead: steal.
+--  * Wipe tripwire: a namespace may define guard(stored, new) -> (ok, reason). A save that fails it is not
+--    written for that namespace (the stored copy stays) and the namespace is frozen for the session.
+--  * Backups: every write is a DataStore version (kept 30 days by Roblox). listVersions / restoreVersion
+--    roll an OFFLINE player back, keeping the receipt ids granted since (no double grants after a restore).
 
 local Env = require(script.Parent.Env)
 local Queue = require(script.Parent.Queue)
@@ -27,6 +37,7 @@ export type Namespace = {
 	template: { [string]: any },
 	version: number,
 	migrations: { [number]: (data: any) -> any? }, -- migrations[n] upgrades n-1 -> n (may mutate or return new)
+	guard: ((stored: any, new: any) -> (boolean, string?))?, -- wipe tripwire (see header)
 }
 
 export type Lock = { job: string, session: string, place: number, t: number }
@@ -57,6 +68,7 @@ export type SessionStore = typeof(setmetatable(
 		namespaces: { [string]: Namespace },
 		sessions: { [string]: Session },
 		requestRelease: ((key: string, lock: Lock) -> ())?,
+		holderAlive: ((lock: Lock, since: number) -> boolean)?,
 		_cfg: () -> any,
 	},
 	SessionStore
@@ -92,6 +104,7 @@ function SessionStore.new(name: string, store: any, opts: {
 	namespaces: { [string]: Namespace }?,
 	queue: Queue.Queue?,
 	requestRelease: ((key: string, lock: Lock) -> ())?,
+	holderAlive: ((lock: Lock, since: number) -> boolean)?, -- did the holder answer a release request since `since` (clock)?
 	config: (() -> any)?,
 }?): SessionStore
 	local o = opts or {}
@@ -105,6 +118,7 @@ function SessionStore.new(name: string, store: any, opts: {
 		namespaces = o.namespaces or {},
 		sessions = {},
 		requestRelease = o.requestRelease,
+		holderAlive = o.holderAlive,
 		_cfg = cfg,
 	}, SessionStore) :: any
 end
@@ -116,17 +130,37 @@ function SessionStore.register(self: SessionStore, name: string, ns: Namespace)
 	for v = 2, ns.version do
 		assert(migrations[v] == nil or type(migrations[v]) == "function", "migration " .. v .. " must be a function")
 	end
-	self.namespaces[name] = { template = ns.template, version = ns.version or 1, migrations = migrations }
+	self.namespaces[name] = { template = ns.template, version = ns.version or 1, migrations = migrations, guard = ns.guard }
 end
 
 local function newRecord(now: number): any
 	return { format = FORMAT, meta = { created = now, updated = now, saves = 0 }, ns = {} }
 end
 
+-- nil = no record yet; true = a record this build understands; false + reason = keep away from it.
+local function readable(rec: any): (boolean?, string?)
+	if rec == nil then
+		return nil, nil
+	end
+	if type(rec) ~= "table" or type(rec.meta) ~= "table" or type(rec.ns) ~= "table" then
+		return false, "stored record is unreadable (" .. type(rec) .. ")"
+	end
+	local f = tonumber(rec.format) or 1
+	if f > FORMAT then
+		return false, ("stored record format %d is newer than this server's %d"):format(f, FORMAT)
+	end
+	return true, nil
+end
+SessionStore.readable = readable
+
 -- Upgrade one namespace entry; returns (data, frozenReason?)
 local function upgrade(name: string, ns: Namespace, entry: any): (any, string?)
-	if type(entry) ~= "table" or type(entry.d) ~= "table" then
+	if entry == nil then
 		return deepCopy(ns.template), nil
+	end
+	if type(entry) ~= "table" or type(entry.d) ~= "table" then
+		-- present but unreadable: never reset it to the template (that would be saved over it)
+		return deepCopy(ns.template), ("namespace %s is unreadable (%s); left untouched"):format(name, type(entry))
 	end
 	local v = tonumber(entry.v) or 1
 	local data = entry.d
@@ -160,29 +194,40 @@ function SessionStore.load(self: SessionStore, key: string, userIds: { number }?
 	local sessionId = Env.guid()
 	local job = Env.jobId()
 	local startedAt = Env.now()
-	local asked = false
+	local askedAt: number? = nil -- clock of the first release request
+	local lastAsk = -math.huge
 	local loops = 0
+	local busy = cfg.LockBusySeconds or (cfg.LockWaitSeconds * 5)
+	local refused: string? = nil
 
 	while true do
 		loops += 1
 		local now = Env.now()
-		local force = (now - startedAt) >= cfg.LockWaitSeconds
+		local waited = now - startedAt
+		local force = waited >= cfg.LockWaitSeconds
 		local blocked: Lock? = nil
 		local loaded: any = nil
 
 		local ok, err = self.queue:run({ key = key, priority = "Normal" }, function()
-			blocked, loaded = nil, nil
+			blocked, loaded, refused = nil, nil, nil
 			self.store:UpdateAsync(key, function(old: any)
-				local rec = old
-				if type(rec) ~= "table" or type(rec.meta) ~= "table" or type(rec.ns) ~= "table" then
-					rec = newRecord(now)
+				local good, why = readable(old)
+				if good == false then
+					refused = why
+					return nil -- never overwrite a record we cannot read
 				end
+				local rec = if good then old else newRecord(now)
 				local lock = rec.meta.lock
 				if type(lock) == "table" and lock.session ~= sessionId then
 					local age = now - (tonumber(lock.t) or 0)
-					if age < cfg.LockStaleSeconds and not force then
-						blocked = lock
-						return nil -- cancel: someone else holds a fresh lock
+					if age < cfg.LockStaleSeconds then
+						-- the holder is alive and answering (still writing its final save): give it longer
+						local alive = force and askedAt ~= nil and self.holderAlive ~= nil
+							and (self.holderAlive :: any)(lock, askedAt :: number) == true
+						if not force or (alive and waited < busy) then
+							blocked = lock
+							return nil -- cancel: someone else holds a fresh lock
+						end
 					end
 				end
 				rec.meta.lock = { job = job, session = sessionId, place = Env.placeId(), t = now }
@@ -191,6 +236,10 @@ function SessionStore.load(self: SessionStore, key: string, userIds: { number }?
 			end)
 		end)
 
+		if refused then
+			Env.log("error", ("%s/%s: %s; load refused, record left untouched"):format(self.name, key, refused :: string))
+			return nil, refused
+		end
 		if not ok then
 			return nil, err
 		end
@@ -222,11 +271,13 @@ function SessionStore.load(self: SessionStore, key: string, userIds: { number }?
 			return session, nil
 		end
 		if blocked then
-			if not asked and self.requestRelease then
-				asked = true
+			-- ask the holder to release (again every ~5 s: a MessagingService message can be lost)
+			if self.requestRelease and Env.clock() - lastAsk >= 5 then
+				lastAsk = Env.clock()
+				askedAt = askedAt or lastAsk
 				pcall(self.requestRelease :: any, key, blocked)
 			end
-			if loops > 60 then
+			if loops > 120 then
 				return nil, "lock wait exceeded"
 			end
 			Env.wait(1.5)
@@ -280,6 +331,7 @@ function SessionStore.save(self: SessionStore, s: Session, release: boolean?): (
 	end
 	local wasDirty = s.dirty
 	s.dirty = false
+	local tripped: { [string]: string } = {}
 
 	local ok, err = self.queue:run({ key = s.key, priority = if release then "Critical" else "Normal" }, function()
 		stolen = false
@@ -290,8 +342,18 @@ function SessionStore.save(self: SessionStore, s: Session, release: boolean?): (
 				return nil
 			end
 			old.ns = if type(old.ns) == "table" then old.ns else {}
+			tripped = {}
 			for name, data in snapshot do
-				old.ns[name] = { v = self.namespaces[name] and self.namespaces[name].version or 1, d = data }
+				local ns = self.namespaces[name]
+				local stored = old.ns[name]
+				if ns and ns.guard and type(stored) == "table" and type(stored.d) == "table" then
+					local okG, pass, why = pcall(ns.guard :: any, stored.d, data)
+					if okG and pass == false then
+						tripped[name] = tostring(why or "guard")
+						continue -- keep the stored copy
+					end
+				end
+				old.ns[name] = { v = ns and ns.version or 1, d = data }
 			end
 			old.format = FORMAT
 			old.meta.updated = now
@@ -315,6 +377,11 @@ function SessionStore.save(self: SessionStore, s: Session, release: boolean?): (
 		Env.log("warn", ("%s/%s: session lock was taken by another server; this session ends without writing"):format(self.name, s.key))
 		endSession(self, s, "stolen")
 		return false, "stolen"
+	end
+	for name, why in tripped do
+		-- wipe tripwire: this session's copy looks like a wipe of the stored one. Stop writing it.
+		s.frozen[name] = "save guard: " .. why
+		Env.log("error", ("%s/%s: save guard tripped for %s (%s); stored copy kept, namespace read-only this session"):format(self.name, s.key, name, why))
 	end
 	s.lastSave = Env.clock()
 	s.meta.updated = now
@@ -371,8 +438,12 @@ function SessionStore.editOffline(self: SessionStore, key: string, nsName: strin
 	local ok, err = self.queue:run({ key = key, priority = "Normal" }, function()
 		refused = nil
 		self.store:UpdateAsync(key, function(old: any)
-			local rec = if type(old) == "table" and type(old.meta) == "table" then old else newRecord(now)
-			rec.ns = rec.ns or {}
+			local good, why = readable(old)
+			if good == false then
+				refused = why
+				return nil
+			end
+			local rec = if good then old else newRecord(now)
 			local lock = rec.meta.lock
 			if type(lock) == "table" and now - (tonumber(lock.t) or 0) < cfg.LockStaleSeconds then
 				refused = "player session is active on server " .. tostring(lock.job)
@@ -395,6 +466,98 @@ function SessionStore.editOffline(self: SessionStore, key: string, nsName: strin
 	end)
 	if not ok then
 		return false, err
+	end
+	if refused then
+		return false, refused
+	end
+	return true, nil
+end
+
+-- Backups: DataStore keeps every write as a version for 30 days. Newest first:
+-- { { version: string, created: number (unix ms), deleted: boolean } }
+function SessionStore.listVersions(self: SessionStore, key: string, maxCount: number?): ({ any }?, string?)
+	local out = {}
+	local limit = maxCount or 20
+	local ok, err = self.queue:run({ key = key, requestType = "GetVersionAsync", priority = "Low", maxBudgetWait = 30 }, function()
+		table.clear(out)
+		local E = (Enum :: any)
+		local dir = if E then E.SortDirection.Descending else "Descending"
+		local pages = self.store:ListVersionsAsync(key, dir, nil, nil, math.min(limit, 100))
+		while true do
+			for _, info in pages:GetCurrentPage() do
+				table.insert(out, { version = info.Version, created = info.CreatedTime, deleted = info.IsDeleted == true })
+				if #out >= limit then
+					return
+				end
+			end
+			if pages.IsFinished then
+				return
+			end
+			pages:AdvanceToNextPageAsync()
+		end
+	end)
+	if not ok then
+		return nil, err
+	end
+	return out, nil
+end
+
+-- One stored version of a record (read only).
+function SessionStore.getVersion(self: SessionStore, key: string, version: string): (any, string?)
+	local value: any = nil
+	local ok, err = self.queue:run({ key = key, requestType = "GetVersionAsync", priority = "Low", maxBudgetWait = 30 }, function()
+		value = self.store:GetVersionAsync(key, version)
+	end)
+	if not ok then
+		return nil, err
+	end
+	return value, nil
+end
+
+-- Roll an OFFLINE player back to `version`. Refuses while a fresh lock is held elsewhere (that server
+-- would overwrite the restore). merge(current, restored) may carry fields over from the current record
+-- (receipt ids, ...) and runs inside the write. Returns (ok, error?).
+function SessionStore.restoreVersion(self: SessionStore, key: string, version: string, merge: ((current: any, restored: any) -> ())?): (boolean, string?)
+	local cfg = self._cfg()
+	local restored, err = self:getVersion(key, version)
+	if err then
+		return false, err
+	end
+	local good, why = readable(restored)
+	if good ~= true then
+		return false, why or "that version is empty"
+	end
+	local now = Env.now()
+	local refused: string? = nil
+	local ok, err2 = self.queue:run({ key = key, priority = "Normal" }, function()
+		refused = nil
+		self.store:UpdateAsync(key, function(old: any)
+			local cur = old
+			if readable(cur) == false then
+				cur = nil -- an unreadable current record is exactly what a restore is for
+			end
+			local lock = cur and cur.meta.lock
+			if type(lock) == "table" and now - (tonumber(lock.t) or 0) < cfg.LockStaleSeconds then
+				refused = "player session is active on server " .. tostring(lock.job)
+				return nil
+			end
+			local rec = deepCopy(restored)
+			rec.meta.lock = nil
+			rec.meta.updated = now
+			rec.meta.saves = (tonumber(cur and cur.meta.saves) or tonumber(rec.meta.saves) or 0) + 1
+			rec.meta.restored = { from = version, t = now }
+			if merge and cur then
+				local okM, e = pcall(merge, cur, rec)
+				if not okM then
+					refused = "merge failed: " .. tostring(e)
+					return nil
+				end
+			end
+			return rec
+		end)
+	end)
+	if not ok then
+		return false, err2
 	end
 	if refused then
 		return false, refused

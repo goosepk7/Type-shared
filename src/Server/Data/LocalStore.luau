@@ -32,6 +32,7 @@ export type LocalStore = typeof(setmetatable(
 		data: { [string]: any },
 		userIds: { [string]: { number } },
 		versions: { [string]: number },
+		history: { [string]: { { version: string, created: number, value: any } } }, -- every write (ListVersionsAsync)
 		calls: { [string]: number },
 		failures: { [string]: number }, -- op -> remaining forced failures
 		failError: string,
@@ -47,6 +48,7 @@ function LocalStore.new(name: string?, ordered: boolean?): LocalStore
 		data = {},
 		userIds = {},
 		versions = {},
+		history = {},
 		calls = {},
 		failures = {},
 		failError = "502: simulated transient failure",
@@ -70,6 +72,14 @@ function LocalStore._op(self: LocalStore, op: string)
 	end
 end
 
+local writes = 0
+function LocalStore._record(self: LocalStore, key: string)
+	writes += 1
+	local h = self.history[key] or {}
+	self.history[key] = h
+	table.insert(h, { version = tostring(self.versions[key]), created = writes, value = copy(self.data[key]) })
+end
+
 function LocalStore.GetAsync(self: LocalStore, key: string): (any, any)
 	self:_op("GetAsync")
 	return copy(self.data[key]), { Version = tostring(self.versions[key] or 0) }
@@ -79,6 +89,7 @@ function LocalStore.SetAsync(self: LocalStore, key: string, value: any, userIds:
 	self:_op("SetAsync")
 	self.data[key] = copy(value)
 	self.versions[key] = (self.versions[key] or 0) + 1
+	self:_record(key)
 	if userIds then
 		self.userIds[key] = table.clone(userIds)
 	end
@@ -96,6 +107,7 @@ function LocalStore.UpdateAsync(self: LocalStore, key: string, transform: (any, 
 	end
 	self.data[key] = copy(new)
 	self.versions[key] = (self.versions[key] or 0) + 1
+	self:_record(key)
 	if type(userIds) == "table" then
 		self.userIds[key] = table.clone(userIds)
 	end
@@ -117,6 +129,39 @@ function LocalStore.RemoveAsync(self: LocalStore, key: string): any
 	local old = self.data[key]
 	self.data[key] = nil
 	return copy(old)
+end
+
+-- DataStore:ListVersionsAsync(key, sortDirection, minDate, maxDate, pageSize) -> one page of
+-- { Version, CreatedTime, IsDeleted } (single page; fine for tests)
+function LocalStore.ListVersionsAsync(self: LocalStore, key: string, direction: any, _min: any, _max: any, pageSize: number?): any
+	self:_op("ListVersionsAsync")
+	local rows = {}
+	for _, v in self.history[key] or {} do
+		table.insert(rows, { Version = v.version, CreatedTime = v.created, IsDeleted = false })
+	end
+	local desc = direction == nil or tostring(direction) == "Descending" or tostring(direction) == "Enum.SortDirection.Descending"
+	if desc then
+		local r = {}
+		for i = #rows, 1, -1 do
+			table.insert(r, rows[i])
+		end
+		rows = r
+	end
+	local page = {}
+	for i = 1, math.min(pageSize or 100, #rows) do
+		page[i] = rows[i]
+	end
+	return { IsFinished = true, GetCurrentPage = function() return page end, AdvanceToNextPageAsync = function() end }
+end
+
+function LocalStore.GetVersionAsync(self: LocalStore, key: string, version: string): (any, any)
+	self:_op("GetVersionAsync")
+	for _, v in self.history[key] or {} do
+		if v.version == version then
+			return copy(v.value), { Version = version }
+		end
+	end
+	return nil, nil
 end
 
 -- OrderedDataStore:GetSortedAsync(ascending, pageSize) -> pages with :GetCurrentPage()

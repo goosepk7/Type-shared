@@ -169,7 +169,8 @@ Config.Services = {
 		KeyPrefix = "u_",
 		AutosaveSeconds = 90, -- also refreshes the session lock timestamp
 		LockStaleSeconds = 330, -- a lock untouched this long is dead (3 missed autosaves + slack)
-		LockWaitSeconds = 12, -- after asking the holder to release, steal once this has passed
+		LockWaitSeconds = 12, -- after asking the holder to release, steal once this has passed (holder silent = dead)
+		LockBusySeconds = 60, -- ...unless the holder answered (still writing its final save): wait up to this long
 		RetryAttempts = 6,
 		RetryBaseSeconds = 1,
 		RetryMaxSeconds = 16,
@@ -177,6 +178,7 @@ Config.Services = {
 		WarnBytes = 3_000_000, -- DataStore value limit is 4,194,304 bytes
 		ReceiptHistory = 64, -- purchase ids remembered per player for idempotency
 		ReleaseTopic = "WordEngine_ReleaseLock",
+		AckTopic = "WordEngine_LockAck", -- holder -> requester: "I have it and I'm releasing"
 	},
 	WordBook = {
 		MaxEntries = 1500, -- distinct words kept per player

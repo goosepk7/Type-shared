@@ -37,6 +37,7 @@ local CORE_TEMPLATE = {
 	wordbook = { entries = {}, total = 0, syncedAt = 0 },
 	wallet = { balances = {}, ledger = {} },
 	receipts = { ids = {}, order = {} },
+	regrant = {}, -- { { id = PurchaseId, p = ProductId } } purchases to grant again after a backup restore
 	settings = {},
 	stats = { joins = 0, firstJoin = 0, lastJoin = 0, playSeconds = 0 },
 	flags = {},
@@ -49,6 +50,7 @@ local namespaces: { [string]: SessionStore.Namespace } = {
 local store: SessionStore.SessionStore? = nil
 local sessions: { [any]: Session } = {} -- player -> session
 local joinedAt: { [any]: number } = {}
+local releasingKeys: { [string]: boolean } = {} -- record keys whose final save is in flight
 local started = false
 local offline = false
 local closing = false
@@ -63,18 +65,25 @@ end
 Data.keyFor = keyFor
 
 -- Register a namespace (template + version + ordered migrations). Call before players load.
-function Data.register(name: string, def: { template: { [string]: any }, version: number?, migrations: { [number]: (any) -> any? }? })
+-- guard(stored, new) -> (ok, reason?): wipe tripwire run on every save (see SessionStore).
+function Data.register(name: string, def: { template: { [string]: any }, version: number?, migrations: { [number]: (any) -> any? }?, guard: ((any, any) -> (boolean, string?))? })
 	assert(name ~= Data.CORE or def.template == CORE_TEMPLATE, "the WordEngine namespace is reserved")
-	local ns: SessionStore.Namespace = { template = def.template, version = def.version or 1, migrations = def.migrations or {} }
+	local ns: SessionStore.Namespace = { template = def.template, version = def.version or 1, migrations = def.migrations or {}, guard = def.guard }
 	namespaces[name] = ns
 	if store then
 		store:register(name, ns)
 	end
 end
 
+local acks: { [string]: number } = {} -- lock session id -> clock of the holder's last answer
+
 local function buildStore(dataStore: any): SessionStore.SessionStore
 	local s = SessionStore.new(cfg().StoreName, dataStore, {
 		namespaces = table.clone(namespaces),
+		holderAlive = function(lock: SessionStore.Lock, since: number): boolean
+			local at = acks[lock.session]
+			return at ~= nil and at >= since
+		end,
 		requestRelease = function(key: string, lock: SessionStore.Lock)
 			if offline or not Env.hasService("MessagingService") then
 				return
@@ -176,7 +185,10 @@ function Data.releasePlayer(player: any, deadline: number?): boolean
 	end
 	joinedAt[player] = nil
 	sessions[player] = nil
-	return (store :: SessionStore.SessionStore):release(s, deadline)
+	releasingKeys[s.key] = true
+	local ok = (store :: SessionStore.SessionStore):release(s, deadline)
+	releasingKeys[s.key] = nil
+	return ok
 end
 
 function Data.session(player: any): Session?
@@ -279,6 +291,65 @@ function Data.editOffline(userId: number, ns: string, fn: (any) -> ()): (boolean
 		return false, "not started"
 	end
 	return (store :: SessionStore.SessionStore):editOffline(keyFor(userId), ns, fn)
+end
+
+-- Backups (DataStore versions, 30 days): newest first { version, created (unix ms), deleted }.
+function Data.listVersions(userId: number, maxCount: number?): ({ any }?, string?)
+	if not store then
+		return nil, "not started"
+	end
+	return (store :: SessionStore.SessionStore):listVersions(keyFor(userId), maxCount)
+end
+
+function Data.peekVersion(userId: number, version: string): (any, string?)
+	if not store then
+		return nil, "not started"
+	end
+	return (store :: SessionStore.SessionStore):getVersion(keyFor(userId), version)
+end
+
+-- Roll an OFFLINE player back to a stored version. Purchases made after that version are never lost or
+-- doubled: their receipt ids stay remembered and their products are queued in core.regrant, which
+-- Purchases grants again on the player's next load. Returns (ok, error?, regrantCount).
+function Data.restoreVersion(userId: number, version: string): (boolean, string?, number)
+	if not store then
+		return false, "not started", 0
+	end
+	local regrants = 0
+	local ok, err = (store :: SessionStore.SessionStore):restoreVersion(keyFor(userId), version, function(cur: any, rec: any)
+		regrants = 0
+		local curCore = cur.ns and cur.ns[Data.CORE]
+		local newCore = rec.ns and rec.ns[Data.CORE]
+		if type(curCore) ~= "table" or type(curCore.d) ~= "table" then
+			return
+		end
+		if type(newCore) ~= "table" or type(newCore.d) ~= "table" then
+			rec.ns[Data.CORE] = { v = curCore.v, d = SessionStore.deepCopy(CORE_TEMPLATE) }
+			newCore = rec.ns[Data.CORE]
+		end
+		local cd, nd = curCore.d, newCore.d
+		cd.receipts = if type(cd.receipts) == "table" then cd.receipts else { ids = {}, order = {} }
+		nd.receipts = if type(nd.receipts) == "table" then nd.receipts else { ids = {}, order = {} }
+		nd.receipts.ids = if type(nd.receipts.ids) == "table" then nd.receipts.ids else {}
+		nd.receipts.order = if type(nd.receipts.order) == "table" then nd.receipts.order else {}
+		nd.regrant = if type(nd.regrant) == "table" then nd.regrant else {}
+		-- still-pending regrants from before carry over
+		for _, r in (if type(cd.regrant) == "table" then cd.regrant else {}) do
+			table.insert(nd.regrant, r)
+		end
+		for id, info in (if type(cd.receipts.ids) == "table" then cd.receipts.ids else {}) do
+			if nd.receipts.ids[id] == nil then
+				nd.receipts.ids[id] = info
+				table.insert(nd.receipts.order, id)
+				if type(info) == "table" and type(info.p) == "number" then
+					table.insert(nd.regrant, { id = id, p = info.p })
+					regrants += 1
+				end
+			end
+		end
+		-- the remembered ring may exceed its cap until the next grant trims it: keeping ids is what matters
+	end)
+	return ok, err, regrants
 end
 
 local function autosaveLoop()
@@ -386,6 +457,16 @@ function Data.start(opts: { dataStore: any? }?)
 	if not offline and Env.hasService("MessagingService") then
 		Env.spawn(function()
 			pcall(function()
+				Env.service("MessagingService"):SubscribeAsync(cfg().AckTopic, function(msg: any)
+					local d = msg and msg.Data
+					if type(d) == "table" and type(d.session) == "string" then
+						acks[d.session] = Env.clock()
+					end
+				end)
+			end)
+		end)
+		Env.spawn(function()
+			pcall(function()
 				Env.service("MessagingService"):SubscribeAsync(cfg().ReleaseTopic, function(msg: any)
 					local d = msg and msg.Data
 					if type(d) ~= "table" or type(d.key) ~= "string" or not store then
@@ -393,6 +474,15 @@ function Data.start(opts: { dataStore: any? }?)
 					end
 					local s = (store :: SessionStore.SessionStore):get(d.key)
 					if s and s.id == d.session then
+						-- tell the asker we are alive and on it, so it waits for our final save instead of stealing
+						Env.spawn(function()
+							pcall(function()
+								Env.service("MessagingService"):PublishAsync(cfg().AckTopic, { session = s.id })
+							end)
+						end)
+						if releasingKeys[d.key] then
+							return -- already writing the final save (player left); it ends the session
+						end
 						local p = findPlayer(d.key)
 						Env.log("warn", "Data: another server asked for " .. d.key .. "; releasing")
 						if p then
@@ -401,7 +491,9 @@ function Data.start(opts: { dataStore: any? }?)
 								p:Kick("You joined another server. See you there!")
 							end
 						else
+							releasingKeys[d.key] = true
 							(store :: SessionStore.SessionStore):release(s)
+							releasingKeys[d.key] = nil
 						end
 					end
 				end)
@@ -449,6 +541,8 @@ function Data._reset()
 	store = nil
 	sessions = {}
 	joinedAt = {}
+	releasingKeys = {}
+	acks = {}
 	started = false
 	offline = false
 	closing = false

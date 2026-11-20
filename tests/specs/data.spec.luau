@@ -52,7 +52,7 @@ return function(t)
 		})
 		local t0 = m.clock.now
 		local b = assert(ssB:load("u_2", { 2 }))
-		t.eq(asked, 1, "release requested once")
+		t.ok(asked >= 1, "release requested")
 		t.ok(m.clock.now - t0 >= m.Config.Services.Data.LockWaitSeconds, "waited before stealing")
 		t.eq(b.data.Game.level, 5, "B sees A's last save")
 

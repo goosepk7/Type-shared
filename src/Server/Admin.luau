@@ -18,6 +18,9 @@
 -- AI controls (owned by Server/AI):
 --   Admin.setAIEnabled(on, actor?)         -- live kill switch, flips every server
 --   Admin.aiStatus()                       -- enabled, today's spend vs Config.AI.DailyBudgetUSD, circuit, queue
+-- Player saves (Server/Data backups = DataStore versions, 30 days):
+--   /we saves <userId>                     -- list backups, newest first
+--   /we restore <userId> <version>         -- roll an OFFLINE player back (audited; later purchases re-granted)
 --
 -- Hooks used by the Interpreter (O(1), never yield):
 --   Admin.isBanned(normalized) -> boolean
@@ -741,6 +744,26 @@ function Admin.handle(player: any, action: any, a: any?, b: any?): { ok: boolean
 		return { ok = ok, message = e or ("AI " .. (if want then "enabled" else "disabled") .. " on every server"), data = Admin.aiStatus() }
 	elseif action == "aistatus" then
 		return { ok = true, message = "AI status", data = Admin.aiStatus() }
+	elseif action == "saves" then
+		-- backups of a player's save (DataStore versions, newest first, 30 days)
+		local target = tonumber(a)
+		if not target then
+			return { ok = false, message = "saves <userId>" }
+		end
+		local list, e = Data.listVersions(target, 25)
+		if not list then
+			return { ok = false, message = "could not list backups: " .. tostring(e) }
+		end
+		return { ok = true, message = ("%d backups of %d (newest first)"):format(#list, target), data = list }
+	elseif action == "restore" then
+		-- roll an OFFLINE player back to a backup; purchases made since are re-granted on their next join
+		local target = tonumber(a)
+		if not target or type(b) ~= "string" or #b == 0 or #b > 128 then
+			return { ok = false, message = "restore <userId> <version> (see: saves <userId>)" }
+		end
+		local ok, e, regrants = Data.restoreVersion(target, b)
+		audit(uid, "restore", tostring(target), b .. (if ok then (" ok, regrants " .. tostring(regrants)) else (" refused: " .. tostring(e))))
+		return { ok = ok, message = if ok then ("restored %d to %s (%d purchase(s) will be re-granted on join)"):format(target, b, regrants) else ("restore refused: " .. tostring(e)) }
 	elseif action == "unknown" or action == "history" then
 		local okA, A = pcall(function()
 			return require((script.Parent :: any):FindFirstChild("Analytics"))
@@ -756,7 +779,7 @@ function Admin.handle(player: any, action: any, a: any?, b: any?): { ok: boolean
 	return { ok = false, message = "unknown action " .. action
 		.. " (ban, unban, clear, retag <id> <json>, force <word> <json>, cache <word>, cachelist [prefix],"
 		.. " cacheedit <word> <json>, cacheretag <word> <json>, cachedelete <word>, ai [on|off], test <word>,"
-		.. " state, stats, unknown, history, audit)" }
+		.. " state, stats, unknown, history, audit, saves <userId>, restore <userId> <version>)" }
 end
 
 local function sendSystem(player: any, text: string)

@@ -38,6 +38,14 @@ local products: { [number]: { handler: Handler, sku: string } } = {}
 local passes: { [number]: (player: any) -> () } = {}
 local passCache: { [number]: { [number]: { owned: boolean, at: number } } } = {} -- userId -> passId -> entry
 local inFlight: { [string]: boolean } = {}
+-- Optional game-side readiness (e.g. the game's own profile repair has finished). May yield; false =
+-- not ready in time -> NotProcessedYet. Without it a purchase made in the first moments of a session
+-- could be refused by the game's grant and wait until the player's next join.
+local readyGate: ((player: any, timeout: number) -> boolean)? = nil
+
+function Purchases.setReadyGate(fn: ((player: any, timeout: number) -> boolean)?)
+	readyGate = fn
+end
 
 local function cfg()
 	return Env.config().Services.Purchases
@@ -158,6 +166,12 @@ function Purchases.processReceipt(receipt: Receipt): any
 	if not Data.waitFor(player, 30) then
 		return finish("NotProcessedYet")
 	end
+	if readyGate then
+		local okG, ready = pcall(readyGate :: any, player, 30)
+		if not okG or ready ~= true then
+			return finish("NotProcessedYet")
+		end
+	end
 	local core = Data.get(player)
 	if not core then
 		return finish("NotProcessedYet")
@@ -268,6 +282,46 @@ function Purchases.onPassPurchased(player: any, passId: number, wasPurchased: bo
 	grantPass(player, passId)
 end
 
+-- After a backup restore (Data.restoreVersion) the purchases made since that backup are queued in
+-- core.regrant: grant each again exactly once (same synchronous rules as a receipt). Entries whose grant
+-- fails stay queued for the next load. Returns how many were granted.
+function Purchases.processRegrants(player: any): number
+	local core = Data.get(player)
+	if not core or type(core.regrant) ~= "table" or #core.regrant == 0 then
+		return 0
+	end
+	if readyGate then
+		local okG, ready = pcall(readyGate :: any, player, 30)
+		if not okG or ready ~= true then
+			return 0
+		end
+	end
+	local n = 0
+	Data.update(player, function(c)
+		local keep = {}
+		for _, r in c.regrant do
+			local product = type(r) == "table" and products[r.p]
+			local done = false
+			if product then
+				local fake: Receipt = { PurchaseId = tostring(r.id), PlayerId = player.UserId, ProductId = r.p }
+				local ok, g = runHandler(product.handler, player, fake)
+				done = ok and g
+			end
+			if done then
+				n += 1
+				Env.log("warn", ("Purchases: re-granted %s (product %s) after a backup restore"):format(tostring(r.id), tostring(r.p)))
+			elseif type(r) == "table" then
+				table.insert(keep, r) -- not granted (handler refused / product not registered yet): next load
+			end
+		end
+		c.regrant = keep
+	end)
+	if n > 0 then
+		Data.saveAsync(player)
+	end
+	return n
+end
+
 local started = false
 function Purchases.start()
 	if started then
@@ -278,6 +332,12 @@ function Purchases.start()
 	MPS.ProcessReceipt = Purchases.processReceipt
 	MPS.PromptGamePassPurchaseFinished:Connect(Purchases.onPassPurchased)
 	Data.onLoaded(function(player)
+		Env.spawn(function()
+			local ok, err = pcall(Purchases.processRegrants, player)
+			if not ok then
+				Env.log("error", "Purchases: regrant failed: " .. tostring(err))
+			end
+		end)
 		for passId in passes do
 			Env.spawn(function()
 				if Purchases.ownsPass(player, passId) then
@@ -296,6 +356,7 @@ function Purchases._reset()
 	passes = {}
 	passCache = {}
 	inFlight = {}
+	readyGate = nil
 	started = false
 	Purchases.granted:DisconnectAll()
 	Purchases.passOwned:DisconnectAll()
