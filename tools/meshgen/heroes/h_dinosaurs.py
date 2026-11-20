@@ -19,6 +19,7 @@ from sdf import *  # noqa: F401,F403
 from kit import Hero, hero, stripes, spots, gradient, combine
 import motion
 import motion_reptiles as MR
+import mountkit as MK
 from motion_reptiles import eloft, squash, grid_bumps, spikes
 
 FAM = "dinosaurs"
@@ -361,12 +362,20 @@ def _theropod(hid, **kw):
     H.rig.update({"head": "Head", "jaw": "Jaw", "neck": "Neck", "tail": tails, "legs": rig_legs})
     MR.theropod(H, legs, arms=arms, neck="Neck", head="Head", jaw="Jaw", tail=tails, stride=P["stride"], walk=P["walk"],
                 height=hipY + 1.2 * s, attack=P["attack"], heavy=P["heavy"])
+    if P.get("mount_len"):
+        sole = np.array([ba[0], 0.0, ba[2] - 0.1 * s])
+        ws, wp, rs, rp = P["mount_gait"]
+        MK.rig_mount(H, torso, -0.55 * BL + hipZ, [("HipR", "KneeR", "AnkleR", False, 1), ("HipL", "KneeL", "AnkleL", False, -1)],
+                     {"AnkleR": sole, "AnkleL": sole * np.array([-1, 1, 1])}, hipY + 1.2 * s, P["mount_len"],
+                     walk=(wp, "biped", "biped", ws, 0.55 * LG), run=(rp, "biprun", "biprun", rs, 0.9 * LG),
+                     neck="Neck", head="Head", jaw="Jaw", tail=tails, pad_col=P.get("pad_col", [0.5, 0.2, 0.12]),
+                     ytop=hipY + 4 * s, curl=0.6)
     return H
 
 
 @hero("tyrannosaurus rex", FAM)
 def t_rex():
-    return _theropod("tyrannosaurus rex", skull="rex", hs=1.35, girth=1.12, legr=1.12, neck=1.05, arms=0.42, teeth=12, brow=0.07, pattern="stripes",
+    return _theropod("tyrannosaurus rex", s=2.4, mount_len=26.0, mount_gait=(7.5, 1.7, 15.0, 1.05), skull="rex", hs=1.35, girth=1.12, legr=1.12, neck=1.05, arms=0.42, teeth=12, brow=0.07, pattern="stripes",
                      pat_depth=0.22, shade=0.72, heavy=1.0, walk=1.35, stride=0.4,
                      preview={"primary": "#6A5A3A", "secondary": "#B8A07A", "iris": "#E8A030"})
 
@@ -939,9 +948,9 @@ def velociraptor():
 
 @hero("raptor", FAM)
 def raptor():
-    return _theropod("raptor", skull="raptor", hs=1.3, leg=0.68, legr=0.6, girth=0.52, body=0.6, neck=0.85, arms=1.15, fingers=3,
+    return _theropod("raptor", s=2.2, mount_len=11.0, mount_gait=(4.6, 1.05, 11.0, 0.62), pad_col=[0.3, 0.2, 0.12], skull="raptor", hs=1.3, leg=0.68, legr=0.6, girth=0.52, body=0.6, neck=0.85, arms=1.15, fingers=3,
                      tail=0.9, tailr=0.8, teeth=10, brow=0.05, sickle=True, pattern="stripes", pat_depth=0.35, shade=0.7,
-                     heavy=0.25, walk=0.8, stride=0.55, attack="slash", eye_r=0.085,
+                     heavy=0.25, walk=0.8, stride=0.55, attack="bite", eye_r=0.085,
                      preview={"primary": "#6B8E23", "secondary": "#D2B48C", "iris": "#E8C030"})
 
 

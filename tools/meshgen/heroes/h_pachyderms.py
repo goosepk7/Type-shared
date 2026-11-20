@@ -46,7 +46,7 @@ K.EARS["round"] = (0.24, 0.13, 30, 10, 0.7)
 
 
 # ------------------------------------------------------------------------------------------------ elephant parts
-def elephant_extra(ear=1.0, tusk="tusk", tusk_len=1.0, mammoth=False, howdah=False):
+def elephant_extra(ear=1.0, tusk="tusk", tusk_len=1.0, mammoth=False, howdah=False, plate=False):
     def f(H, X):
         s, hs, hp, hx, L, T = X["s"], X["hs"], X["hp"], X["hx"], X["L"], X["T"]
         # trunk: five bones hanging from the base of the face, curling forward at the tip
@@ -107,7 +107,7 @@ def elephant_extra(ear=1.0, tusk="tusk", tusk_len=1.0, mammoth=False, howdah=Fal
         if mammoth:
             K.skirt(H, X, length=0.55, col="primary", amp=0.04)
         if howdah:
-            build_howdah(H, X)
+            build_howdah(H, X, plate)
 
     return f
 
@@ -116,7 +116,7 @@ def pts_last(names, H):
     return H.bpos(names[-1]) + np.array([0, -0.25, -0.15])
 
 
-def build_howdah(H, X):
+def build_howdah(H, X, plate=True):
     """Wooden howdah on a padded caparison: the rider's seat on a war elephant."""
     s, top, Dp, body, zs = X["s"], X["top"] * X["s"], X["Dp"] * X["s"], X["torso"], X["zs"]
     zc = -0.15 * s
@@ -124,24 +124,41 @@ def build_howdah(H, X):
     cap = body.shell(0.06 * s) & round_box(2.5 * s, 0.75 * Dp, 1.05 * s, 0.3 * s, (0, top, zc)) & half_space(1, -1, top - 0.78 * Dp)
     H.piece("Caparison", "Body", cap, col=K.BLANKET, mat="cloth", tris=X["T"](1100), res=112, role="detail", pri=1.4,
             pattern=K.band(1, top - 0.74 * Dp, top - 0.66 * Dp, 0.5, soft=0.02 * s))
-    base_y = ytop + 0.08 * s
-    w, l = 0.72 * s, 0.82 * s
-    hd = round_box(w, 0.08 * s, l, 0.04 * s, (0, base_y, zc))                       # platform
-    hd = hd | (round_box(w, 0.22 * s, l, 0.05 * s, (0, base_y + 0.3 * s, zc)) - round_box(w - 0.07 * s, 0.4 * s, l - 0.07 * s, 0.03 * s, (0, base_y + 0.42 * s, zc)))  # rail box
+    # rider-sized (studs): the R15 rider sits on a cushion inside a railed box under a canopy (roof >= seat + 4)
+    base_y = ytop + 0.1
+    w, l = 1.45, 1.55
+    hd = round_box(w, 0.08, l, 0.04, (0, base_y, zc))                                                         # platform
+    hd = hd.su(body.round(0.02) & round_box(w * 0.8, 0.4, l * 0.8, 0.1, (0, base_y - 0.3, zc)), 0.05)          # saddle block onto the back
+    hd = hd | (round_box(w, 0.42, l, 0.05, (0, base_y + 0.42, zc)) - round_box(w - 0.1, 0.6, l - 0.1, 0.03, (0, base_y + 0.62, zc)))  # rail box
+    hd = hd.ss(round_box(w + 0.2, 0.12, 0.5, 0.06, (0, base_y + 0.62, zc)), 0.03)                              # side cut-outs
     for sx in (1, -1):
         for sz in (1, -1):
-            hd = hd | cylinder(0.045 * s, 0.55 * s).at(sx * (w - 0.05 * s), base_y + 0.62 * s, zc + sz * (l - 0.05 * s))   # posts
-    H.piece("Howdah", "Body", hd, col="darkWood", mat="wood", tris=X["T"](1300), res=112, role="detail", pri=1.4)
-    roof = ellipsoid(w + 0.18 * s, 0.32 * s, l + 0.18 * s, (0, base_y + 1.15 * s, zc)) & half_space(1, -1, base_y + 1.12 * s)
-    roof = roof.su(round_cone((0, base_y + 1.4 * s, zc), (0, base_y + 1.62 * s, zc), 0.07 * s, 0.02 * s), 0.05)
-    H.piece("Canopy", "Body", roof, col="gold", mat="cloth", tris=X["T"](700), res=96, role="detail", pri=1.5)
+            hd = hd | cylinder(0.09, 2.15).at(sx * (w - 0.06), base_y + 2.25, zc + sz * (l - 0.06))            # posts
+            hd = hd | sphere(0.14, (sx * (w - 0.06), base_y + 0.86, zc + sz * (l - 0.06)))                     # post knobs
+    H.piece("Howdah", "Body", hd, col="darkWood", mat="wood", tris=X["T"](1600), res=128, role="detail", pri=1.4,
+            pattern=lambda Q: 1 - 0.25 * (np.abs(Q[:, 1] - (base_y + 0.62)) < 0.04))
+    roof = ellipsoid(w + 0.3, 0.75, l + 0.3, (0, base_y + 4.3, zc)) & half_space(1, -1, base_y + 4.25)
+    roof = roof.ss(ellipsoid(w + 0.1, 0.6, l + 0.1, (0, base_y + 4.18, zc)), 0.05)
+    roof = roof.su(round_cone((0, base_y + 4.9, zc), (0, base_y + 5.4, zc), 0.12, 0.03), 0.08)
+    H.piece("Canopy", "Body", roof, col="gold", mat="cloth", tris=X["T"](900), res=112, role="detail", pri=1.5,
+            pattern=lambda Q: 1 - 0.3 * (np.sin(np.arctan2(Q[:, 0], Q[:, 2] - zc) * 8) > 0.6))
+    cz = zc + 0.25
+    cush = round_box(1.15, 0.16, 1.0, 0.13, (0, base_y + 0.24, cz))
+    cush = cush.su(round_box(1.1, 0.45, 0.16, 0.12, (0, base_y + 0.7, cz + 0.95)), 0.06)                       # back rest
+    H.piece("Cushion", "Body", cush, col="secondary", mat="cloth", tris=X["T"](600), res=110, role="detail", pri=1.6)
+    seat_y = base_y + 0.4
+    H._half_w = K.surf(body, (0, top - 0.5 * Dp, zc), (1, 0, 0), hi=6 * s)
     hp, hx, L, hs = X["hp"], X["hx"], X["L"], X["hs"]
     c = X["HP"]["cran"]
+    if not plate:
+        H.socket("seat", (0, seat_y, cz), "Body")
+        H.mount = {"seat": "Torso", "saddle": {"pos": (0, seat_y, cz), "size": (2 * w, 0.3, 2 * l)}}
+        return
     plate = X["head_can"].shell(0.04 * hs) & half_space(2, -1, -0.62 * hs) & half_space(2, 1, -0.15 * hs) & half_space(1, -1, -0.35 * hs)
     plate = plate & half_space(0, 1, 0.24 * hs) & half_space(0, -1, -0.24 * hs)
     H.piece("HeadPlate", "Head", hx(plate), col="gold", mat="metal", tris=X["T"](700), res=104, role="detail", pri=1.5)
-    H.socket("seat", (0, base_y + 0.15 * s, zc), "Body")
-    H.mount = {"seat": "Torso", "saddle": {"pos": (0, base_y + 0.1 * s, zc), "size": (2 * w, 0.18 * s, 2 * l)}}
+    H.socket("seat", (0, seat_y, cz), "Body")
+    H.mount = {"seat": "Torso", "saddle": {"pos": (0, seat_y, cz), "size": (2 * w, 0.3, 2 * l)}}
 
 
 def elephant_kw(**kw):
@@ -162,29 +179,34 @@ def mammoth_dome(head, L, hs, HP):
     return head.su(ellipsoid(0.3 * hs, 0.42 * hs, 0.3 * hs, L(0, 0.32, -0.2)), 0.2)
 
 
+RS = 1.7   # real game scale (mount overhaul): elephants stand ~8 studs at the shoulder next to the 5.2-stud rider
+MOUNT = dict(walk_clip=True, walk_len=1.6, walk_stride=0.75, move_len=1.0, stride=1.0)
+
+
 @hero("elephant", "pachyderms")
 def elephant():
-    return K.ungulate("elephant", **elephant_kw(s=1.3, extra=elephant_extra(ear=1.0, tusk="tusk")))
+    return K.ungulate("elephant", **elephant_kw(s=1.3 * RS, mount={"length": 14.0}, **MOUNT,
+                                                extra=elephant_extra(ear=1.0, tusk="tusk", howdah=True)))
 
 
 @hero("war elephant", "pachyderms")
 def war_elephant():
-    return K.ungulate("war elephant", **elephant_kw(s=1.25, slope=0.05, withers=0.45, head_mod=asian_dome, tags=TAGS + ("elephant", "mount"),
-                                                    extra=elephant_extra(ear=0.7, tusk="tusk", tusk_len=0.8, howdah=True),
+    return K.ungulate("war elephant", **elephant_kw(s=1.25 * RS, mount={"length": 14.0}, **MOUNT, slope=0.05, withers=0.45, head_mod=asian_dome, tags=TAGS + ("elephant", "mount"),
+                                                    extra=elephant_extra(ear=0.7, tusk="tusk", tusk_len=0.8, howdah=True, plate=True),
                                                     preview={"primary": "#7E7A78", "secondary": "#B03030", "nail": "#D9CDB4", "horn": "#F2EAD8",
                                                              "darkWood": "#5A3820", "gold": "#E8B53A"}))
 
 
 @hero("baby elephant", "pachyderms")
 def baby_elephant():
-    return K.ungulate("baby elephant", **elephant_kw(s=0.75, hs=2.25, leg=1.0, girth=1.3, extra=elephant_extra(ear=1.05, tusk=None),
+    return K.ungulate("baby elephant", **elephant_kw(s=0.75 * RS, hs=2.25, leg=1.0, girth=1.3, extra=elephant_extra(ear=1.05, tusk=None),
                                                      stride=0.9, preview={"primary": "#9A9692", "secondary": "#F0E8DE", "nail": "#D9CDB4"}))
 
 
 @hero("woolly mammoth", "pachyderms")
 def mammoth():
-    return K.ungulate("woolly mammoth", **elephant_kw(s=1.4, slope=0.55, withers=0.75, shaggy=0.035, head_mod=mammoth_dome, tail_len=0.5,
-                                                      extra=elephant_extra(ear=1.0, tusk="mammoth", tusk_len=1.15, mammoth=True), tags=TAGS + ("elephant", "ice age"),
+    return K.ungulate("woolly mammoth", **elephant_kw(s=1.4 * RS, mount={"length": 15.0}, **MOUNT, slope=0.55, withers=0.75, shaggy=0.035, head_mod=mammoth_dome, tail_len=0.5,
+                                                      extra=elephant_extra(ear=1.0, tusk="mammoth", tusk_len=1.15, mammoth=True, howdah=True), tags=TAGS + ("elephant", "ice age"),
                                                       preview={"primary": "#6A4A2E", "secondary": "#C8A87A", "nail": "#D9CDB4", "horn": "#F2EAD8"}))
 
 
