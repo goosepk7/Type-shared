@@ -13,7 +13,7 @@ import numpy as np
 from sdf import ellipsoid, sphere as ssphere, capsule, round_cone, tube as stube, round_box, plane, union  # noqa: F401
 from kit import Hero, hero
 import airsea_kit as A
-from airsea_kit import Fus, dpiece, dmpiece, box, cyl, rev, tube, merge, xform, mirror, sphere, wheel, window_row
+from airsea_kit import Fus, dpiece, dmpiece, box, cyl, rev, tube, merge, xform, mirror, sphere, wheel, window_row, band, SplitFus, zrange, gear_leg
 
 TAU = 2 * math.pi
 TINT = [0.13, 0.17, 0.22]
@@ -134,9 +134,130 @@ def _light_plane(hid, high=False, floats=False, prev=None):
     return H
 
 
+def cockpit(H, F, hip, floor_y, panel_z, panel_w, panel_top, ctrl="stick", seat_w=1.9, screens=2, col="darker", side_console=True):
+    """Floor, pilot seat, instrument panel (glare shield + glowing screens), control stick / yoke, rudder pedals
+    and a throttle for a single pilot whose HIP point is `hip`."""
+    x, y, z = hip
+    dpiece(H, "Seat", "Body", A.pilot_seat(hip, w=seat_w, floor_y=floor_y), col="dark", mat="cloth", role="detail", pri=1.2)
+    pz0 = panel_z - 0.75
+    pb = floor_y + 0.6
+    panel = merge(xform(box((panel_w, panel_top - pb, 0.75), (0, 0, 0), r=0.15, seg=1), (x, (panel_top + pb) / 2, panel_z - 0.37), (-8, 0, 0)),
+                  xform(box((panel_w * 0.96, 0.16, 1.15), (0, 0, 0), r=0.07), (x, panel_top + 0.08, panel_z - 0.45), (-5, 0, 0)))
+    dpiece(H, "Panel", "Body", panel, col=col, role="detail", pri=1.3)
+    xs = [x] if screens == 1 else list(np.linspace(x - panel_w * 0.24, x + panel_w * 0.24, screens))
+    for i, sx in enumerate(xs):
+        H.prim(f"Screen{i + 1}", "Body", "Block", (min(1.0, panel_w / (screens + 1.2)), 0.62, 0.06), (sx, panel_top - 0.55, panel_z + 0.035),
+               rot=(math.radians(-8), 0, 0), col=SCREEN, glow=True, role="light", pri=2.0)
+    ms = []
+    if ctrl == "stick":
+        ms.append(A.stick(hip, floor_y, dz=-1.85, h=1.05))
+    else:
+        hn, cl = A.yoke(hip)
+        ms += [hn, cl]
+    for sx in (x - 0.5, x + 0.5):
+        ms.append(xform(box((0.42, 0.62, 0.12), (0, 0, 0), r=0.04), (sx, floor_y + 0.42, z - 2.0), (-38, 0, 0)))
+    if side_console:
+        ms.append(box((0.35, 0.5, 1.2), (x - seat_w / 2 - 0.3, y + 0.25, z - 0.9), r=0.08))
+        ms.append(tube([[x - seat_w / 2 - 0.3, y + 0.45, z - 0.9], [x - seat_w / 2 - 0.3, y + 0.95, z - 1.15]], 0.06, 6))
+        ms.append(sphere(0.13, (x - seat_w / 2 - 0.3, y + 1.0, z - 1.17), segs=8))
+    dpiece(H, "Controls", "Body", merge(*ms), col="gunmetal", mat="metal", role="detail", pri=1.6)
+    dpiece(H, "Floor", "Body", F.floor(z - 2.6, z + 1.1, floor_y), col="darker", role="detail", pri=1.6)
+
+
+def prop_gear(H, F, nose, mains, wheel_r=(0.7, 0.85), pant=True, col="secondary"):
+    """Tricycle gear on bones: GearF (nose leg) and GearR / GearL (mains), each pivoting at the strut top (the game
+    folds them about X). nose / mains: ((top), (axle)) with the right main given (+X)."""
+    (nt, na), (mt, ma) = nose, mains
+    H.bone("GearF", "Body", nt)
+    s, t, p = gear_leg(nt, na, wheel_r[0], 0.5, pant=pant)
+    dpiece(H, "GearFP", "GearF", merge(s, t) if p is None else merge(s, t), col="metal", mat="metal", role="limb", pri=1.3)
+    if p is not None:
+        dpiece(H, "GearFPant", "GearF", p, col=col, role="detail", pri=1.5)
+    H.mbone("Gear#", "Body", mt)
+    s, t, p = gear_leg(mt, ma, wheel_r[1], 0.62, pant=pant)
+    dmpiece(H, "GearP#", "Gear#", merge(s, t), col="metal", mat="metal", role="limb", pri=1.2)
+    if p is not None:
+        dmpiece(H, "GearPant#", "Gear#", p, col=col, role="detail", pri=1.4)
+
+
 @hero("propeller plane", "aircraft")
 def propeller_plane():
-    return _light_plane("propeller plane")
+    """Single-engine low-wing sport plane at real game scale (22 studs long, 30 stud span): bubble canopy over a
+    one-seat cockpit (stick, panel, pedals), 3-blade prop on bone Prop (spins about Z), tricycle gear on GearF /
+    GearR / GearL."""
+    H = P("propeller plane")
+    H.preview = {"primary": "#F4F4F2", "secondary": "#C62828", "dark": "#2B2F36"}
+    hip = (0.0, 4.25, -0.9)
+    F = SplitFus([(-10.95, 0.0, 0.0, 0.0, 4.75), (-10.7, 1.15, 1.2, 1.05, 4.75), (-9.4, 1.8, 1.85, 1.5, 4.8), (-6.8, 2.25, 2.2, 1.75, 4.9),
+                  (-4.4, 2.45, 2.3, 1.95, 4.9), (-3.0, 2.5, 2.3, 2.75, 4.9), (-1.4, 2.5, 2.3, 3.2, 4.9), (0.3, 2.45, 2.25, 3.15, 4.92),
+                  (2.2, 2.25, 2.05, 2.35, 4.95), (3.4, 2.05, 1.9, 1.85, 5.0), (6.5, 1.35, 1.35, 1.3, 5.2), (9.8, 0.75, 0.75, 0.82, 5.45),
+                  (11.0, 0.32, 0.38, 0.45, 5.55), (11.2, 0.0, 0.0, 0.0, 5.56)], n=36, p_lo=2.5, p_up=2.3)
+    H.body((0, 4.9, 0))
+    zg0, zg1, zc = -4.3, 2.6, -7.4
+    zs = zrange(-10.95, 11.2, 0.55, (zg0, zg1, zc))
+    zs = sorted(set(zs + list(np.linspace(-10.95, -10.2, 5))))
+    zc_ = [z for z in zs if z >= zc]
+    belly = lambda Q: 0.82 + 0.18 * np.clip((Q[:, 1] - 2.6) / 2.0, 0, 1)
+    dpiece(H, "Hull", "Body", merge(F.lower(zc_, n=30), F.upper([z for z in zc_ if z <= zg0], n=24), F.upper([z for z in zc_ if z >= zg1], n=24)),
+           col="primary", mat="hard", fallback="Ellipsoid", pattern=belly)
+    zcw = [z for z in zs if z <= zc]
+    dpiece(H, "Cowl", "Body", F.shell(zcw, n=30), col="secondary", mat="hard", role="body", pri=1.1)
+    dpiece(H, "CanopyGlass", "Body", F.upper([z for z in zs if zg0 <= z <= zg1], th=0.08, n=28), col=GLASS, mat="glass", tr=0.5, role="glass", pri=1.1)
+    frame = merge(F.ring(zg0, r=0.13, out=0.03), F.ring(zg0 + 1.1, r=0.07, out=0.04), F.ring(zg1, r=0.12, out=0.03),
+                  F.line(np.linspace(zg0, zg1, 12), yfn=F.yc, r=0.09, out=0.04))
+    dpiece(H, "CanopyFrame", "Body", frame, col="dark", role="detail", pri=1.3)
+    seams = merge(F.ring(zc, r=0.05, ylo="full", out=0.01), F.ring(6.0, r=0.04, ylo="full", out=0.0, n=24))
+    dpiece(H, "Stripe", "Body", merge(F.line(np.linspace(-7.2, 10.6, 20), yfn=lambda z: F.yc(z) - 0.75, r=0.14, out=0.05), seams), col="secondary", role="detail", pri=1.4)
+
+    # ---- wings (low, dihedral), tips with nav lights, flap / aileron lines, tail
+    wy, wz, root_x = 2.8, -4.6, 1.9
+    wing = A.wing(13.1, 4.4, 2.3, sweep=0.55, thick=0.62, dihedral=5, pos=(root_x, wy, wz), nt=10, nu=8, tip_round=0.35)
+    dpiece(H, "Wings", "Body", merge(wing, mirror(wing), box((3.9, 0.5, 3.8), (0, 2.6, wz + 1.9), r=0.22)), col="primary", mat="hard", role="wing")
+    dh = math.tan(math.radians(5))
+    tipx = root_x + 13.1
+    tips = A.wing(0.6, 2.35, 2.1, sweep=0.1, thick=0.24, pos=(tipx - 0.1, wy + 13.0 * dh, wz + 0.5))
+    lines = []
+    for x0, x1 in ((2.6, 8.0), (8.4, 14.2)):
+        zt0 = wz + 4.4 + (2.3 - 4.4) * (x0 - root_x) / 13.1 + 0.55 * (x0 - root_x) / 13.1
+        zt1 = wz + 4.4 + (2.3 - 4.4) * (x1 - root_x) / 13.1 + 0.55 * (x1 - root_x) / 13.1
+        lines.append(tube([[x0, wy + (x0 - root_x) * dh + 0.12, zt0 - 0.85], [x1, wy + (x1 - root_x) * dh + 0.1, zt1 - 0.75]], 0.04, 4))
+        lines.append(tube([[x0, wy + (x0 - root_x) * dh + 0.12, zt0 - 0.85], [x0, wy + (x0 - root_x) * dh + 0.06, zt0 - 0.1]], 0.04, 4))
+    lm = merge(*lines)
+    dpiece(H, "WingTips", "Body", merge(tips, mirror(tips), lm, mirror(lm)), col="secondary", role="detail", pri=1.5)
+    H.prim("NavLightR", "Body", "Ball", (0.28, 0.24, 0.32), (tipx + 0.55, wy + 13.0 * dh + 0.05, wz + 0.75), col=[0.2, 0.95, 0.35], glow=True, role="light", pri=2.4)
+    H.prim("NavLightL", "Body", "Ball", (0.28, 0.24, 0.32), (-tipx - 0.55, wy + 13.0 * dh + 0.05, wz + 0.75), col="red", glow=True, role="light", pri=2.4)
+    hs = A.wing(4.4, 2.5, 1.45, sweep=0.55, thick=0.3, pos=(0.5, 5.45, 8.3), tip_round=0.4)
+    dpiece(H, "Tail", "Body", merge(hs, mirror(hs)), col="primary", mat="hard", role="wing")
+    fin = A.fin(4.2, 3.5, 1.7, 2.1, thick=0.32, pos=(0, 5.9, 7.6))
+    dors = A.fin(0.9, 3.0, 0.4, 2.6, thick=0.26, pos=(0, 6.0, 5.2))
+    dpiece(H, "Fin", "Body", merge(fin, dors), col="secondary", mat="hard", role="detail", pri=1.2)
+    H.prim("Beacon", "Body", "Ball", (0.3, 0.22, 0.3), (0, 10.12, 10.6), col="red", glow=True, role="light", pri=2.4)
+
+    # ---- engine: spinner + 3-blade prop on bone Prop, exhausts, intake, cooling louvres
+    pz, py = -11.0, 4.75
+    H.bone("Prop", "Body", (0, py, pz))
+    pr = A.prop(3, 4.15, 0.62, axis="z", pos=(0, py, pz), thick=0.11, pitch=18)
+    sp = rev([(pz - 1.25, 0.0), (pz - 1.0, 0.42), (pz - 0.45, 0.82), (pz + 0.15, 0.98), (pz + 0.3, 0.0)], axis=2, segs=20, pos=(0, py, 0))
+    dpiece(H, "PropP", "Prop", pr, col="dark", mat="hard", role="detail", pri=1.0)
+    dpiece(H, "Spinner", "Prop", sp, col="secondary", mat="hard", role="detail", pri=1.1)
+    ex = []
+    for z in (-9.3, -8.7, -8.1):
+        x = F.x_at(z, 3.6)
+        ex.append(cyl(0.17, 0.7, (x + 0.2, 3.55, z), axis=0, segs=10, rot=(0, 0, -20)))
+    em = merge(*ex)
+    intake = merge(rev([(-0.6, 0.0), (-0.55, 0.62), (0.6, 0.55), (0.9, 0.0)], axis=2, segs=14, pos=(0, 2.85, -9.4), scale=(1.4, 0.7, 1)),
+                   box((1.3, 0.45, 0.1), (0, 2.95, -10.0), r=0.08))
+    louv = merge(*[box((0.06, 0.12, 0.9), (F.x_at(-8.0, y) + 0.02, y, -8.0), r=0.02) for y in (5.4, 5.7, 6.0)])
+    dpiece(H, "Exhaust", "Body", merge(em, mirror(em), intake, louv, mirror(louv)), col="gunmetal", mat="metal", role="detail", pri=1.8)
+
+    # ---- cockpit + gear
+    cockpit(H, F, hip, floor_y=2.95, panel_z=-2.95, panel_w=3.8, panel_top=5.55)
+    prop_gear(H, F, ((0, 3.0, -8.0), (0, 0.7, -8.2)), ((1.6, 3.0, -2.6), (3.4, 0.85, -2.2)))
+    ant = merge(tube([[0, F.top(4.8) - 0.1, 4.8], [0, F.top(4.8) + 0.9, 5.4]], 0.04, 4), tube([[3.2, wy + 0.1 - 0.35, wz + 0.4], [3.2, wy - 0.45, wz - 1.2]], 0.05, 6))
+    dpiece(H, "Antenna", "Body", ant, col="dark", role="detail", pri=2.6)
+    ride(H, hip, (-4.0, 1.0), -12.3, 11.3, hip[1] + 3.8, exhaust=(0.9, 3.55, -8.7))
+    A.craft_clips(H, 22.0, attack="dive", bank=0.35)
+    return H
 
 
 @hero("seaplane", "aircraft")
@@ -370,47 +491,169 @@ def glider():
 
 
 # ================================================================================================ helicopter
+GLASS = [0.62, 0.8, 0.92]
+SCREEN = [0.35, 0.75, 1.0]
+
+
+def ride(H, hip, enter, nose_z, tail_z, top_y, seat_size=(1.8, 0.15, 1.5), muzzle=None, exhaust=None, length="auto"):
+    """Real-scale rideable craft: seat socket at the rider's hip, enter socket on the ground, measured length."""
+    A.mount(H, "Seat", hip, seat_size, length=length, enter=enter)
+    H.socket("head", (hip[0], top_y, hip[2]), "Body")
+    H.socket("mouth", (0, hip[1] - 0.3, nose_z), "Body")
+    H.socket("exhaust", exhaust or (0, hip[1] - 0.5, tail_z), "Body")
+    if muzzle is not None:
+        H.socket("muzzle", muzzle, "Body")
+
+
+def slab_floor(fus, z0, z1, y, inset=0.25, th=0.14, nz=10):
+    """Cabin floor plate following the inside of a Fus at height y."""
+    rings = []
+    for z in np.linspace(z0, z1, nz):
+        hw = max(fus.x_at(z, y) - inset, 0.05)
+        rings.append(np.array([[-hw, y - th, z], [hw, y - th, z], [hw, y, z], [-hw, y, z]]))
+    return A.loft(rings, "fan", "fan", crease=30)
+
+
+def bulkhead(fus, z, th=0.12, inset=0.1, ylo=None):
+    r = fus.ring(z, 32)
+    w, h, yc, p = fus.at(z)
+    r[:, 0] *= (w - inset) / w
+    r[:, 1] = yc + (r[:, 1] - yc) * (h - inset) / h
+    if ylo is not None:
+        r[:, 1] = np.maximum(r[:, 1], ylo)
+    a, b = r.copy(), r.copy()
+    a[:, 2] = z - th / 2
+    b[:, 2] = z + th / 2
+    return A.loft([a, b], "fan", "fan", crease=40)
+
+
 @hero("helicopter", "aircraft")
 def helicopter():
+    """Civilian light helicopter at real game scale (~28 studs nose to tail, 30 stud rotor): glass bubble cabin with
+    two front seats (the rider flies from the right-hand pilot seat), rear bench, T-bar cyclic, instrument panel,
+    skids, engine fairing, 4-blade main rotor (bone Rotor, spins about Y) and a 2-blade tail rotor (bone TailRotor,
+    spins about X)."""
     H = P("helicopter", gait="hover")
-    H.preview = {"primary": "#2E7D32", "secondary": "#1A1A1A"}
-    yc = 1.9
-    fus = Fus([(-2.6, 0.0, 0.0, yc - 0.1), (-2.3, 0.65, 0.7, yc - 0.05), (-1.4, 1.0, 1.05, yc + 0.05), (0.4, 1.0, 1.05, yc + 0.1), (1.8, 0.7, 0.75, yc + 0.25),
-               (2.6, 0.32, 0.32, yc + 0.45), (7.0, 0.16, 0.18, yc + 0.55), (7.3, 0.0, 0.0, yc + 0.55)], n=22, p=2.3)
-    H.body((0, yc, 0))
-    dpiece(H, "Hull", "Body", fus.mesh(), col="primary", mat="hard", fallback="Ellipsoid")
-    # big bubble glass over the cockpit, two seats inside
-    bub = rev([(-1.6, 0.0), (-1.1, 0.75), (-0.2, 1.05), (0.5, 0.9), (0.9, 0.0)], axis=2, segs=18, pos=(0, yc + 0.35, -1.25), scale=(0.98, 0.95, 1.0))
-    dpiece(H, "Bubble", "Body", bub, col=CANOPY, mat="glass", tr=0.45, role="glass", pri=1.2)
-    dpiece(H, "Seat", "Body", bucket_seat((0.42, yc - 0.15, -1.0), w=0.65), col="dark", mat="cloth", role="detail")
-    dpiece(H, "Seat2", "Body", merge(bucket_seat((-0.42, yc - 0.15, -1.0), w=0.65), box((1.4, 0.35, 0.4), (0, yc - 0.1, -2.1), r=0.1)), col="dark", mat="cloth", role="detail")
-    # engine cowl + mast, rotor on a bone
-    dpiece(H, "Cowl", "Body", merge(box((1.3, 0.6, 2.4), (0, yc + 1.2, 0.9), r=0.28), cyl(0.18, 0.7, (0, yc + 1.75, 0.0), axis=1, segs=10)), col="secondary", role="detail")
-    ry = yc + 2.15
-    H.bone("Rotor", "Body", (0, ry, 0.0))
-    blades = []
+    H.preview = {"primary": "#ECEFF3", "secondary": "#C62828", "dark": "#2B2F36"}
+    hip = (1.1, 3.25, -3.4)
+    cab = Fus([(-9.7, 0.0, 0.0, 3.55), (-9.45, 1.25, 1.25, 3.6), (-8.8, 2.25, 2.05, 3.8), (-7.6, 3.05, 2.65, 4.1), (-5.8, 3.5, 2.9, 4.4), (-3.0, 3.65, 2.98, 4.55),
+               (0.0, 3.6, 2.95, 4.6), (2.4, 3.25, 2.72, 4.75), (4.4, 2.3, 1.95, 5.2), (6.0, 1.2, 1.1, 5.6), (6.5, 0.0, 0.0, 5.75)], n=36, p=2.6, smooth=True)
+    H.body((0, 4.6, 0))
+
+    def yb(z):  # beltline: the glass runs down into a chin bubble at the nose
+        return float(np.interp(z, [-9.7, -8.7, -6.3, 10], [3.15, 3.15, 4.4, 4.4]))
+
+    zs_all = np.r_[np.linspace(-9.7, -8.8, 4), np.linspace(-8.5, 6.5, 26)]
+    zs_glass = [z for z in zs_all if z <= -0.6] + [-0.6]
+    zs_roof = [-0.6] + [z for z in zs_all if z > -0.6]
+    belly = lambda Q: 0.8 + 0.2 * np.clip((Q[:, 1] - 1.6) / 1.6, 0, 1)
+    dpiece(H, "Hull", "Body", band(cab, zs_all, yhi=yb, th=0.2, n=36), col="primary", mat="hard", fallback="Ellipsoid", pattern=belly)
+    dpiece(H, "Roof", "Body", band(cab, zs_roof, ylo=yb, th=0.2, n=28), col="primary", mat="hard", role="body")
+    dpiece(H, "CanopyGlass", "Body", band(cab, zs_glass, ylo=yb, th=0.08, n=28), col=GLASS, mat="glass", tr=0.5, role="glass", pri=1.1)
+    # frames: B-pillar ring, roof spine, windscreen centre post, beltline trim
+    frame = [A.ring_line(cab, -0.6, r=0.14, ylo=4.4, out=0.02, n=20),
+             tube([A.fus_point(cab, z, math.pi / 2, -0.03) for z in np.linspace(-8.9, -0.6, 10)], 0.11, 8)]
+    dpiece(H, "Frame", "Body", merge(*frame), col="dark", mat="hard", role="detail", pri=1.4)
+    dpiece(H, "Beltline", "Body", A.surface_line(cab, np.linspace(-9.55, 6.2, 26), 0, r=0.1, out=0.03, yfn=yb), col="secondary", role="detail", pri=1.3)
+    dpiece(H, "Stripe", "Body", A.surface_line(cab, np.linspace(-9.0, 5.8, 22), 2.75, r=0.16, out=0.04), col="secondary", role="detail", pri=1.5)
+    # doors: seams, handles, rear windows
+    seams = [A.ring_line(cab, z, r=0.05, ylo=2.35, yhi=4.38, out=0.01, n=10) for z in (-6.2, -0.75)]
+    seams.append(A.ring_line(cab, 2.5, r=0.05, ylo=2.4, yhi=6.4, out=0.01, n=14))
+    sm = merge(*seams)
+    hz = [box((0.12, 0.12, 0.55), (cab.x_at(z, 3.9) + 0.06, 3.9, z), r=0.04) for z in (-1.35, 1.9)]
+    dpiece(H, "DoorSeams", "Body", merge(sm, mirror(sm), *hz, *[mirror(m) for m in hz]), col="dark", role="detail", pri=1.9)
+    rw = band(cab, np.linspace(-0.2, 2.1, 6), ylo=4.75, yhi=6.4, side=True, th=0.04, out=0.06, n=8)
+    dpiece(H, "WindowGlass", "Body", merge(rw, mirror(rw)), col=TINT, mat="glass", tr=0.45, role="glass", pri=1.6)
+
+    # ---- interior: floor, two pilot seats, rear bench, bulkhead, panel + screens, T-bar cyclic, pedals
+    dpiece(H, "Floor", "Body", slab_floor(cab, -7.6, 2.2, 2.05), col="darker", role="detail", pri=1.6)
+    seats = [A.pilot_seat(hip, w=1.75, floor_y=2.05), A.pilot_seat((-hip[0], hip[1], hip[2]), w=1.75, floor_y=2.05)]
+    bench = merge(box((5.2, 0.45, 1.5), (0, 2.95, 0.55), r=0.15, seg=1), xform(box((5.2, 2.6, 0.4), (0, 1.3, 0), r=0.15, seg=1), (0, 2.95, 1.45), (8, 0, 0)))
+    dpiece(H, "Seat", "Body", merge(*seats), col="dark", mat="cloth", role="detail", pri=1.2)
+    dpiece(H, "RearBench", "Body", merge(bench, bulkhead(cab, 2.15, ylo=2.0)), col="darker", mat="cloth", role="detail", pri=1.7)
+    panel = merge(xform(box((5.4, 1.15, 0.9), (0, 0, 0), r=0.2, seg=1), (0, 4.3, -5.75), (-12, 0, 0)),
+                  xform(box((5.2, 0.16, 1.2), (0, 0, 0), r=0.07), (0, 4.95, -5.8), (-6, 0, 0)),
+                  box((0.95, 2.3, 0.75), (0, 3.15, -5.75), r=0.12))
+    dpiece(H, "Panel", "Body", panel, col="darker", role="detail", pri=1.3)
+    for i, x in enumerate((1.1, -1.1)):
+        H.prim(f"Screen{i + 1}", "Body", "Block", (1.0, 0.62, 0.06), (x, 4.32, -5.24), rot=(math.radians(-12), 0, 0), col=SCREEN, glow=True, role="light", pri=2.0)
+    cyc = merge(tube([[0, 2.05, -5.15], [0, 3.6, -5.12], [0.0, 4.5, -5.02]], 0.08, 8), tube([[-0.55, 4.55, -5.02], [2.7, 4.55, -5.02]], 0.07, 8),
+                cyl(0.12, 0.5, (2.75, 4.55, -5.02), axis=0, segs=8), cyl(0.12, 0.5, (-0.6, 4.55, -5.02), axis=0, segs=8),
+                tube([[-0.25, 2.1, -2.0], [-0.25, 2.55, -3.2]], 0.06, 6),
+                *[xform(box((0.45, 0.6, 0.12), (0, 0, 0), r=0.04), (x, 2.4, -5.25), (-35, 0, 0)) for x in (0.6, 1.6, -0.6, -1.6)])
+    dpiece(H, "Controls", "Body", cyc, col="gunmetal", mat="metal", role="detail", pri=1.6)
+
+    # ---- engine fairing, exhaust, intakes, mast + rotor
+    fair = Fus([(-0.9, 0.0, 0.0, 7.35), (-0.4, 1.0, 0.65, 7.45), (1.0, 1.55, 1.0, 7.7), (4.0, 1.5, 0.95, 7.65), (6.2, 0.95, 0.7, 7.25), (7.4, 0.0, 0.0, 6.95)], n=24, p=2.8, smooth=True)
+    dpiece(H, "Fairing", "Body", fair.mesh(samples=np.linspace(-0.9, 7.4, 16)), col="primary", mat="hard", role="body")
+    grill = []
+    for z in np.linspace(1.4, 3.0, 5):
+        x = fair.x_at(z, 7.75)
+        grill.append(box((0.08, 0.7, 0.18), (x - 0.01, 7.75, z), r=0.03))
+    gm = merge(*grill)
+    exh = merge(A.lathe([(0, 0.42), (1.1, 0.4), (1.1, 0.3), (0.05, 0.32)], axis=2, segs=14, closed=True, pos=(0.65, 7.75, 5.4), rot=(-20, 0, 0)),
+                A.lathe([(0.5, 0.0), (0.5, 0.32), (0.6, 0.32), (0.6, 0.0)], axis=2, segs=14, pos=(0.65, 7.75, 5.4), rot=(-20, 0, 0)))
+    dpiece(H, "Intakes", "Body", merge(gm, mirror(gm), exh), col="gunmetal", mat="metal", role="detail", pri=1.8)
+    rz, ry = 0.6, 9.85
+    mast = merge(cyl(0.32, 1.6, (0, 9.0, rz), axis=1, segs=14, bevel=0.05), cyl(0.7, 0.16, (0, 9.05, rz), axis=1, segs=18, bevel=0.04),
+                 cyl(0.85, 0.3, (0, 8.62, rz), axis=1, segs=18, bevel=0.1))
+    dpiece(H, "Mast", "Body", mast, col="metal", mat="metal", role="detail", pri=1.4)
+    H.bone("Rotor", "Body", (0, ry, rz))
+    R = 15.0
+    blades, tips = [], []
     for k in range(4):
-        b = A.blade(5.6, lambda t: -0.25, lambda t: 0.25, lambda t, u: 0.035 * math.sin(math.pi * u), pos=(0.3, 0, 0), nt=6, nu=4)
-        blades.append(xform(b, (0, ry, 0.0), (0, 90 * k + 45, 0)))
-    blades.append(cyl(0.35, 0.3, (0, ry, 0.0), axis=1, segs=12))
-    dpiece(H, "RotorP", "Rotor", merge(*blades), col="dark", mat="hard", role="detail")
-    # tail fin, stabiliser, tail rotor on a bone
-    fin = A.fin(1.3, 0.9, 0.5, 0.6, thick=0.12, pos=(0, yc + 0.5, 6.4))
-    hs = A.wing(0.9, 0.55, 0.4, sweep=0.1, thick=0.08, pos=(0.1, yc + 0.5, 5.5))
-    dpiece(H, "TailFin", "Body", merge(fin, hs, mirror(hs)), col="primary", role="detail")
-    H.bone("TailRotor", "Body", (0.28, yc + 1.25, 6.85))
-    tr = A.prop(2, 0.7, 0.14, axis="z", thick=0.025, hub=(0.08, 0.12))
-    dpiece(H, "TailRotorP", "TailRotor", xform(tr, (0.28, yc + 1.25, 6.85), (0, 90, 0)), col="dark", role="detail")
-    # skids
+        b = A.blade(R * 0.9 - 1.1, lambda t: -0.52, lambda t: 0.5, lambda t, u: 0.09 * math.sin(math.pi * u) ** 0.7, pos=(1.1, 0, 0), nt=8, nu=6)
+        tp = A.blade(R * 0.1, lambda t: -0.52, lambda t: 0.5 - 0.35 * t ** 2, lambda t, u: 0.09 * math.sin(math.pi * u) ** 0.7, pos=(R * 0.9, 0, 0), nt=4, nu=6)
+        grip = box((0.9, 0.3, 0.55), (0.95, 0, 0), r=0.1)
+        rot = (0, 90 * k + 45, 0)
+        blades.append(xform(merge(b, grip), (0, ry, rz), rot))
+        tips.append(xform(tp, (0, ry, rz), rot))
+    hub = merge(cyl(0.75, 0.42, (0, ry, rz), axis=1, segs=18, bevel=0.12), rev([(ry + 0.2, 0.0), (ry + 0.25, 0.45), (ry + 0.55, 0.3), (ry + 0.65, 0.0)], axis=1, segs=14, pos=(0, 0, rz)))
+    dpiece(H, "RotorP", "Rotor", merge(*blades, hub), col="dark", mat="hard", role="detail", pri=1.0)
+    dpiece(H, "RotorTips", "Rotor", merge(*tips), col="secondary", mat="hard", role="detail", pri=2.2)
+
+    # ---- tail boom, fins, stabiliser, tail rotor
+    boom = Fus([(5.2, 1.05, 1.0, 5.75), (9.0, 0.8, 0.78, 6.05), (14.0, 0.6, 0.58, 6.4), (17.4, 0.48, 0.48, 6.65), (18.2, 0.34, 0.34, 6.72), (18.45, 0.0, 0.0, 6.75)], n=20, p=2.2, smooth=True)
+    dpiece(H, "Boom", "Body", boom.mesh(samples=np.linspace(5.2, 18.45, 14)), col="primary", mat="hard", role="body", pattern=belly)
+    dpiece(H, "BoomStripe", "Body", A.surface_line(boom, np.linspace(5.6, 17.0, 10), 6.0, r=0.1, out=0.03, yfn=lambda z: float(np.interp(z, [5.6, 17], [5.6, 6.6]))), col="secondary", role="detail", pri=1.8)
+    fin = A.fin(3.3, 2.1, 1.0, 1.5, thick=0.3, pos=(0, 6.75, 16.3))
+    ventral = A.fin(1.7, 1.5, 0.8, 0.9, thick=0.24, pos=(0, -6.5, 16.6), rot=(0, 0, 0))
+    ventral = xform(ventral, (0, 0, 0), (0, 0, 180))
+    skid = tube([[0, 4.9, 17.6], [0, 4.6, 18.3], [0, 4.7, 18.8]], 0.07, 6)
+    dpiece(H, "TailFin", "Body", merge(fin, ventral), col="secondary", mat="hard", role="detail", pri=1.2)
+    hs = A.wing(2.5, 1.35, 0.95, sweep=0.3, thick=0.16, pos=(0.35, 6.3, 14.4))
+    ep = A.fin(1.2, 1.0, 0.7, 0.3, thick=0.12, pos=(2.85, 5.95, 14.6))
+    dpiece(H, "Stabiliser", "Body", merge(hs, mirror(hs), ep, mirror(ep)), col="primary", mat="hard", role="wing", pri=1.4)
+    gb = merge(rev([(-0.15, 0.0), (-0.1, 0.42), (0.35, 0.4), (0.55, 0.0)], axis=0, segs=12, pos=(-0.35, 8.25, 17.75)), skid)
+    dpiece(H, "TailGearbox", "Body", gb, col="metal", mat="metal", role="detail", pri=1.8)
+    tz, tyy, tx = 17.75, 8.25, -0.75
+    H.bone("TailRotor", "Body", (tx, tyy, tz))
+    tr = A.prop(2, 2.2, 0.36, axis="z", thick=0.05, hub=(0.22, 0.3), pitch=12)
+    trm = xform(tr, (tx, tyy, tz), (0, 90, 0))
+    dpiece(H, "TailRotorP", "TailRotor", trm, col="dark", role="detail", pri=1.3)
+
+    # ---- skids (on the ground), cross tubes, steps
     sk = []
     for s in (1, -1):
-        sk += [tube([[s * 1.15, 0.1, -2.2], [s * 1.15, 0.08, -1.9], [s * 1.15, 0.08, 1.6]], 0.08, 6), tube([[s * 1.15, 0.08, -1.2], [s * 0.6, yc - 0.85, -1.0]], 0.07, 6),
-               tube([[s * 1.15, 0.08, 0.9], [s * 0.6, yc - 0.85, 0.8]], 0.07, 6)]
-    dpiece(H, "Skids", "Body", merge(*sk), col="metal", mat="metal", role="detail")
-    dpiece(H, "Stripe", "Body", cheat(fus, -2.1, 6.8, 0.05, r=0.08, out=0.025), col="secondary", role="detail")
-    H.prim("Beacon", "Body", "Ball", (0.2, 0.12, 0.2), (0, yc + 1.55, 2.0), col="red", glow=True, role="light", pri=2.6)
-    common(H, (0.42, yc + 0.1, -1.0), (0.7, 0.15, 0.7), -2.8, 7.4, ry + 0.5)
-    A.air_clips(H, size=1.0, spinners=[("Rotor", "y", 1, math.pi / 2), ("TailRotor", "x", 1, math.pi)], attack="ram", hover=True, bank=0.18)
+        sk.append(tube([[s * 3.0, 1.15, -8.5], [s * 3.0, 0.62, -7.9], [s * 3.0, 0.28, -7.0], [s * 3.0, 0.28, 3.4], [s * 3.0, 0.34, 4.1]], 0.22, 10))
+    for z in (-4.7, 1.8):
+        sk.append(tube([[-3.0, 0.28, z], [-3.0, 0.85, z], [-2.55, 1.55, z], [-1.6, 1.9, z], [0, 1.95, z], [1.6, 1.9, z], [2.55, 1.55, z], [3.0, 0.85, z], [3.0, 0.28, z]], 0.17, 10))
+    dpiece(H, "Skids", "Body", merge(*sk), col="metal", mat="metal", role="limb", pri=1.0)
+    steps = [box((0.8, 0.1, 1.1), (s * 3.0, 0.62, -3.3), r=0.04) for s in (1, -1)] + [box((0.12, 0.35, 0.12), (s * 3.0, 0.42, z), r=0.03) for s in (1, -1) for z in (-3.75, -2.85)]
+    dpiece(H, "Steps", "Body", merge(*steps), col="gunmetal", mat="metal", role="detail", pri=2.2)
+
+    # ---- lights, antennas
+    H.prim("NavLightR", "Body", "Ball", (0.22, 0.22, 0.22), (2.85, 7.22, 15.25), col=[0.2, 0.95, 0.35], glow=True, role="light", pri=2.4)
+    H.prim("NavLightL", "Body", "Ball", (0.22, 0.22, 0.22), (-2.85, 7.22, 15.25), col="red", glow=True, role="light", pri=2.4)
+    H.prim("Beacon", "Body", "Ball", (0.32, 0.22, 0.32), (0, 8.75, 3.8), col="red", glow=True, role="light", pri=2.3)
+    H.prim("Strobe", "Body", "Ball", (0.22, 0.22, 0.22), (0, 10.08, 18.5), col="white", glow=True, role="light", pri=2.6)
+    H.prim("LandingLight", "Body", "Cylinder", (0.1, 0.5, 0.5), (0, 1.88, -6.6), rot=(0, 0, math.pi / 2), col="cream", glow=True, role="light", pri=2.3)
+    ant = merge(A.fin(0.7, 0.5, 0.2, 0.35, thick=0.06, pos=(0, -1.75, 0.5)), tube([[0, 7.2, 3.0], [0, 8.4, 3.6]], 0.03, 4))
+    ant = merge(xform(A.fin(0.7, 0.5, 0.2, 0.35, thick=0.06, pos=(0, 0, 0)), (0, 1.7, -0.2), (180, 0, 0)), tube([[0.9, 7.6, 4.4], [0.9, 8.6, 5.2]], 0.03, 4))
+    dpiece(H, "Antennas", "Body", ant, col="dark", role="detail", pri=2.6)
+
+    ride(H, hip, (5.0, -3.4), -9.8, 18.5, 11.0, exhaust=(0.65, 8.1, 6.4))
+    A.craft_clips(H, 28.0, hover=True, attack="ram", bank=0.2)
     return H
 
 
