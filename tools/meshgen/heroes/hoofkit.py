@@ -959,6 +959,8 @@ def build_wings(H, P, V, s, G, top, BL):
     tip = wrist + V(1.0 * sp, 0.22 * sp, 0.32)
     H.mbone("Wing#1", "Body", tuple(root))
     H.mbone("Wing#2", "Wing#1", tuple(wrist))
+    if P["hq"]:
+        return _wings_hq(H, P, V, s, sp, root, wrist, tip)
     ad = (wrist - root) / np.linalg.norm(wrist - root)
     arm = round_cone(tuple(root - V(0.12, 0, 0)), tuple(wrist), 0.13 * s, 0.075 * s)
     cov = ellipsoid(0.6 * sp * s, 0.06 * s, 0.26 * sp * s, (0, 0, 0)).rot(0, 0, math.degrees(math.atan2(ad[1], ad[0]))).at(*((root + wrist) / 2 + V(0, 0.0, 0.2)))
@@ -1287,10 +1289,10 @@ def wing_fold_pose(H, side, k=1.0):
     sfx = "R" if side > 0 else "L"
     root, wrist = H.bpos("Wing" + sfx + "1"), H.bpos("Wing" + sfx + "2")
     ad = (wrist - root) * np.array([side, 1, 1])
-    Rf = MK.frame_rot(ad, (0, 0, 1), (0.0, -0.32, 1.0), (0.18, -1.0, 0.1))
+    Rf = MK.frame_rot(ad, (0, 0, 1), (0.0, -0.12, 1.0), (0.22, -1.0, 0.0))
     a, b, c = MK.to_euler(Rf)
     w1 = (a * k, b * k * side, c * k * side)
-    w2 = (0.0, -0.12 * k * side, 0.06 * k * side)
+    w2 = (0.0, 0.2 * k * side, 0.3 * k * side)
     return w1, w2
 
 
@@ -1359,3 +1361,47 @@ def mount_table(H, P, s, torso, zs, fF, bF):
     stride = MK.measure_stride(H, "Move", feet) if "Move" in H.clips and P["gait"] != "fly" else None
     walk = MK.measure_stride(H, "Walk", feet) if "Walk" in H.clips else None
     MK.set_mount(H, m["length"], seat, (-(hw + 1.6), 0, seat[2]), stride=stride, walk=walk, extra=m.get("extra"))
+
+
+def _wings_hq(H, P, V, s, sp, root, wrist, tip):
+    """Hero feathered wings: a muscled arm with a layered covert plate, two rows of overlapping coverts and a full
+    row of broad secondaries on Wing#1; a hand with coverts and ten fanned primaries on Wing#2. Feathers overlap
+    heavily so the wing reads as one scalloped surface; the trailing feathers are shaded a little darker."""
+    def row(a, b, n, ln0, ln1, w, d0, d1, lift=0.0, th=0.045, curve=0.0):
+        out = None
+        for i in range(n):
+            u = (i + 0.5) / n
+            p = a + (b - a) * u + V(0, lift, 0)
+            d = np.asarray(d0, float) * (1 - u) + np.asarray(d1, float) * u
+            ln = (ln0 + (ln1 - ln0) * u + curve * math.sin(math.pi * u)) * sp
+            c = p + d / np.linalg.norm(d) * ln * 0.5 * s
+            f = _feather(c, d, ln, w * sp, th, s)
+            out = f if out is None else out.su(f, 0.02 * s)
+        return out
+    arm = round_cone(tuple(root - V(0.15, 0, 0)), tuple(wrist), 0.17 * s, 0.09 * s)
+    arm = arm.su(ellipsoid(0.32 * s, 0.13 * s, 0.2 * s, tuple(root + (wrist - root) * 0.25 + V(0, 0.02, 0.05))), 0.08 * s)
+    w1 = arm.su(row(root, wrist, 12, 0.78, 0.92, 0.15, (0.08, -0.06, 1.0), (0.3, -0.06, 1.0), lift=-0.02), 0.04 * s)
+    w1 = w1.su(row(root, wrist, 9, 0.42, 0.5, 0.15, (0.12, 0.0, 1.0), (0.3, 0.0, 1.0), lift=0.03, th=0.05), 0.03 * s)
+    w1 = w1.su(row(root, wrist, 7, 0.22, 0.26, 0.14, (0.15, 0.04, 1.0), (0.3, 0.04, 1.0), lift=0.07, th=0.055), 0.03 * s)
+    def shade(base, axis_pt, far):
+        def f(Q):
+            d = np.linalg.norm(Q - axis_pt, axis=1)
+            return 1 - 0.16 * np.clip((d - 0.2 * far) / far, 0, 1)
+        return f
+    H.mpiece("Wing#1", "Wing#1", w1, col="primary", tris=1800, res=144, role="wing", pri=1.2,
+             pattern=lambda Q, a=root, b=wrist: 1 - 0.18 * np.clip((Q[:, 2] - (a[2] + (b[2] - a[2]) * np.clip((Q[:, 0] - a[0]) / (b[0] - a[0]), 0, 1)) - 0.5 * s) / (0.9 * sp * s), 0, 1))
+    hand = round_cone(tuple(wrist), tuple(tip), 0.09 * s, 0.04 * s)
+    hd = (tip - wrist) / np.linalg.norm(tip - wrist)
+    w2 = hand
+    for i in range(10):
+        u = i / 9
+        p = wrist + (tip - wrist) * (0.05 + 0.95 * u)
+        ang = math.radians(8 + 66 * u)
+        ln = (0.85 + 0.45 * math.sin(u * 2.3)) * sp
+        d = np.array([math.sin(ang), -0.05 - 0.04 * u, math.cos(ang)])
+        c = p + d / np.linalg.norm(d) * ln * 0.5 * s
+        w2 = w2.su(_feather(c, d, ln, 0.15 * sp, 0.04, s), 0.02 * s)
+    w2 = w2.su(row(wrist, tip, 7, 0.45, 0.4, 0.15, (0.2, 0.02, 1.0), (0.8, 0.02, 0.6), lift=0.04, th=0.05), 0.03 * s)
+    H.mpiece("Wing#2", "Wing#2", w2, col="primary", tris=1800, res=144, role="wing", pri=1.25,
+             pattern=lambda Q, a=wrist: 1 - 0.2 * np.clip((np.linalg.norm(Q - a, axis=1) - 0.9 * sp * s) / (1.2 * sp * s), 0, 1))
+    return [("WingR1", "WingR2"), ("WingL1", "WingL2")]

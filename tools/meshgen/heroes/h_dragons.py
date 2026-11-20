@@ -18,6 +18,8 @@ from kit import Hero, hero, stripes, combine
 from map import NOTFOOD
 import motion
 import motion_mythic as mm
+import motion_canines as MC
+import mountkit as MK
 from mythic_geo import (V, nrm, tri, fan, membrane, scallop, union_hard, bounded, frame, oell, squash, flat_tube, spike,
                         curved_horn, blade_fin, surface_y, bez, outside, band_y, feather)
 
@@ -103,23 +105,14 @@ def _dragon(hid, **kw):
         H.piece("Belly", "Body", bel, col="belly", tris=900, res=120, role="body",
                 pattern=stripes(lambda Q: Q[:, 2] / s, 2.6, width=0.18, depth=0.3))
 
-    # ------------------------------------------------------------------ saddle
+    # ------------------------------------------------------------------ saddle (fitted riding tack, rider-sized)
+    seat_hw = None
     if P["saddle"]:
-        zs0 = saddle_z
-        top = surface_y(core, 0.0, zs0 * s, (bodyY + 2.5) * s, bodyY * s) / s
-        sad_box = box(0.95 * G * s, 0.75 * s, 0.75 * s, v(0, top - 0.35, zs0))
-        cloth = core.round(0.07 * s) & sad_box
-        cloth = cloth.su(core.round(0.06 * s) & box(1.4 * s, 1.6 * s, 0.12 * s, v(0, bodyY, zs0 + 0.35)), 0.02)   # girth strap
-        H.piece("SaddleCloth", "Body", cloth, col="secondary", mat="cloth", tris=700, res=120, role="detail", pri=1.3)
-        seat = core.round(0.18 * s) & box(0.5 * G * s, 0.5 * s, 0.52 * s, v(0, top - 0.1, zs0))
-        seat = seat.su(ellipsoid(0.24 * s, 0.24 * s, 0.14 * s, v(0, top + 0.2, zs0 - 0.48)), 0.08)                 # pommel
-        seat = seat.su(ellipsoid(0.42 * s, 0.2 * s, 0.13 * s, v(0, top + 0.18, zs0 + 0.5)), 0.08)                  # cantle
-        seat = seat.su(capsule(v(0.52 * G, top - 0.35, zs0 + 0.05), v(0.56 * G, top - 0.95, zs0 + 0.05), 0.05 * s).mirror_x(), 0.02)  # stirrup straps
-        seat = seat.su(torus(0.11 * s, 0.035 * s, axis=2).at(*v(0.58 * G, top - 1.05, zs0 + 0.05)).mirror_x(), 0.02)                  # stirrups
-        H.piece("Saddle", "Body", seat, col="leather", mat="cloth", tris=800, res=128, role="detail", pri=1.2)
-        sy = top + 0.22
-        H.socket("seat", v(0, sy, zs0), "Body")
-        H.mount = {"seat": "Torso", "saddle": {"pos": tuple(v(0, sy, zs0)), "size": tuple(v(0.9 * G, 0.25, 1.05))}}
+        zs0 = saddle_z * s
+        seat_y, seat_hw = MK.saddle(H, core, zs0, pad_col="secondary", leather="leather", bags=False, ytop=(bodyY + 5) * s,
+                                    pad_drop=1.6, tris=0.9)
+        H.socket("seat", (0, seat_y, zs0), "Body")
+        H.mount = {"seat": "Torso", "saddle": {"pos": (0, seat_y, zs0), "size": (1.5, 0.3, 2.2)}}
 
     # ------------------------------------------------------------------ legs
     legs = []
@@ -441,7 +434,18 @@ def _dragon(hid, **kw):
     for up, lo, ft, front, side in legs:
         rl.append({"hip": up, "knee": lo, "side": side})
     H.rig["legs"] = rl
-    height = bodyY + 1.2
+    height = (bodyY + 1.2) * s
+    if P.get("mount_clips") and P["wings"] in ("bat", "ragged"):
+        H._s, H._ftc = s, ftc
+        _mount_clips(H, P, legs, wings, tail_b, height, zr * s, biped)
+        feet = [("HockR", tuple(ftc + v(0, 0.02, -0.2)))]
+        if not biped:
+            feet.append(("WristFR", tuple(v(0.92 * G, 0.02, zc - 0.75))))
+        hw = seat_hw or 1.5 * G * s
+        seat = H.sockets["seat"][0]
+        MK.set_mount(H, P["mount_len"], seat, (-(hw + 2.0), 0, seat[2]), stride=P.get("run_stride", 13.0),
+                     walk=P.get("walk_stride", 5.0), extra={"flyer": True})
+        return H
     if P["wings"] == "none":
         ql = [("ShoulderFR", "ElbowFR", "WristFR", 0.75, True), ("ShoulderFL", "ElbowFL", "WristFL", 0.25, True),
               ("HipR", "KneeR", "HockR", 0.5, False), ("HipL", "KneeL", "HockL", 0.0, False)]
@@ -453,30 +457,114 @@ def _dragon(hid, **kw):
     return H
 
 
+def _mount_clips(H, P, legs, wings, tail_b, height, hipz, biped):
+    """Ridden dragon / wyvern: Walk (four-beat walk), Move (heavy bounding run), Fly (flap), Glide, Idle, Attack (rear,
+    breath wind-up, jaw wide: the `mouth` socket), Hit. Wings fold back along the flanks on the ground (the
+    membranes hang like a cape) and open half way while rearing to attack."""
+    neck = ["Neck1", "Neck2"]
+    TAU = 2 * math.pi
+    glegs = []
+    for up, lo, ft, front, side in legs:
+        if front:
+            sole = H.bpos(ft) * np.array([1, 0, 1]) + np.array([0, 0.02, -0.15 * H._s])
+        else:
+            sole = np.array(H._ftc) * np.array([side, 1, 1]) + np.array([0, 0.02, 0])
+        glegs.append({"bones": (up, lo, ft), "sole": sole, "front": front, "side": side})
+
+    def walk_body(u, pose):
+        MK._add(pose, "Body", (0, -0.015 * height * abs(math.sin(TAU * u * 2)) + 0.01 * height, 0, 0.012 * math.sin(TAU * u * 2 + 0.5),
+                               0.035 * math.sin(TAU * u), 0.03 * math.sin(TAU * u + 0.4)))
+        for i, b in enumerate(neck):
+            MK._add(pose, b, (0, 0, 0, -0.03 * math.sin(TAU * u * 2 + 0.8 + i), -0.03 * math.sin(TAU * u + i * 0.5), 0))
+        MK._add(pose, "Head", (0, 0, 0, 0.04 * math.sin(TAU * u * 2 + 1.4), 0.02 * math.sin(TAU * u), 0))
+        for i, b in enumerate(tail_b):
+            MK._add(pose, b, (0, 0, 0, 0.02 * math.sin(TAU * u * 2 - i), 0.09 * math.sin(TAU * u - 0.9 * i - 1.0), 0))
+
+    def run_body(u, pose):
+        rock = math.cos(TAU * (u - 0.15))
+        MK._add(pose, "Body", (0, (0.035 * max(0.0, math.sin(TAU * (u - 0.3))) - 0.01) * height, 0, 0.05 * rock, 0.015 * math.sin(TAU * u),
+                               0.015 * math.sin(TAU * u)))
+        for i, b in enumerate(neck):
+            MK._add(pose, b, (0, 0, 0, -0.06 * rock * (0.6 + 0.4 * i) - 0.04, 0, 0))
+        MK._add(pose, "Head", (0, 0, 0, 0.05 * rock + 0.03, 0, 0))
+        for i, b in enumerate(tail_b):
+            MK._add(pose, b, (0, 0, 0, 0.06 * math.cos(TAU * (u - 0.25 - 0.12 * i)) - 0.03, 0.04 * math.sin(TAU * u - i), 0))
+        MK._add(pose, "Jaw", (0, 0, 0, -0.05 - 0.04 * math.sin(TAU * u), 0, 0))
+
+    ws, rs_ = (P.get("walk_stride", 5.0), P.get("run_stride", 13.0))
+    MK.gait_clip(H, "Walk", glegs, 1.7 if not biped else 1.25, "walk" if not biped else "biped", ws, 0.7 * H._s, walk_body, keys=24)
+    MK.gait_clip(H, "Run", glegs, 1.0 if not biped else 0.8, "gallop" if not biped else "biprun", rs_, 1.5 * H._s, run_body, keys=24, curl=0.8)
+    walk = H.clips.pop("Walk")
+    run = H.clips.pop("Run")
+    mm.flyer(H, legs, wings, neck=neck, head="Head", jaw="Jaw", tail=tail_b, height=height, hipz=hipz, flap=1.0, lift=0.22, period=1.15, tuck=1.0)
+    MK.rename(H, "Move", "Fly")
+    MK.scale_track(H, "Fly", "Body", off=(0, -0.22 * height, 0, 0, 0, 0))   # the game flies the model: keep only the bob
+    H.clips["Walk"] = walk
+    H.clips["Move"] = run
+    fold = {w[0]: MK.fold_euler(H, w[0], w[1], w[2]) for w in wings}
+
+    def folded(k, wob=0.0):
+        out = {}
+        for arm, hand, side in wings:
+            a = fold[arm]
+            out[arm] = (0, 0, 0, a[0] * k, a[1] * k, a[2] * k + side * wob)
+            out[hand] = (0, 0, 0, 0, -0.55 * k * side, 0)
+        return out
+
+    wing_b = [b for w in wings for b in w[:2]]
+    for name, f in (("Idle", 3), ("Walk", 1), ("Move", 1), ("Hit", 1)):
+        for b in wing_b:
+            H.clips[name]["tracks"].pop(b, None)
+        MK.overlay(H, name, lambda t, u, f=f: folded(1.0, 0.025 * math.sin(2 * math.pi * u * f)))
+    MK.overlay(H, "Attack", lambda t, u: folded(1.0 - 0.7 * MK.bump(MK.win(u, 0.02, 0.95))))
+
+    def glide(t):
+        u = t / 3.2
+        w = math.sin(2 * math.pi * u)
+        pose = {}
+        MK._add(pose, "Body", (0, 0.03 * height * w, 0, -0.05, 0, 0.04 * math.sin(2 * math.pi * u)))
+        for arm, hand, side in wings:
+            MK._add(pose, arm, (0, 0, 0, 0.03 * w, 0, side * (0.1 + 0.03 * w)))
+            MK._add(pose, hand, (0, 0, 0, 0, 0, side * (-0.06 + 0.03 * math.sin(2 * math.pi * u - 0.7))))
+        for up, lo, ft, front, side in legs:
+            if front:
+                MK._add(pose, up, (0, 0, 0, -0.45, 0, 0)); MK._add(pose, lo, (0, 0, 0, 1.0, 0, 0)); MK._add(pose, ft, (0, 0, 0, 0.45, 0, 0))
+            else:
+                MK._add(pose, up, (0, 0, 0, -1.0, 0, 0)); MK._add(pose, lo, (0, 0, 0, 0.2, 0, 0)); MK._add(pose, ft, (0, 0, 0, -0.9, 0, 0))
+        for i, b in enumerate(neck):
+            MK._add(pose, b, (0, 0, 0, -0.08 + 0.03 * math.sin(2 * math.pi * u + i), 0.04 * math.sin(2 * math.pi * u * 0.5 + i), 0))
+        MK._add(pose, "Head", (0, 0, 0, 0.1, 0, 0))
+        for i, b in enumerate(tail_b):
+            MK._add(pose, b, (0, 0, 0, 0.04 * math.sin(2 * math.pi * u - 0.8 * i), 0.06 * math.sin(2 * math.pi * u - 0.9 * i), 0))
+        return pose
+
+    H.clip("Glide", 3.2, glide, keys=16)
+
+
 DRAGON_PREVIEW = {"primary": "#B3261E", "secondary": "#F2A43A", "belly": "#F5C27A", "membrane": "#D4683A", "horn": "#EFE3C8",
                   "iris": "#F2C230", "leather": "#6B4423"}
 
 
 @hero("dragon", "dragons")
 def dragon():
-    return _dragon("dragon", saddle=True, preview=DRAGON_PREVIEW)
+    return _dragon("dragon", s=2.0, saddle=True, mount_clips=True, mount_len=28.0, preview=DRAGON_PREVIEW)
 
 
 @hero("elder dragon", "dragons")
 def elder_dragon():
-    return _dragon("elder dragon", wings="ragged", horns="crown", girth=1.15, body=1.08, wing=1.15, spines=1.45, frill=1.45, head=1.05,
+    return _dragon("elder dragon", s=2.0, wings="ragged", horns="crown", girth=1.15, body=1.08, wing=1.15, spines=1.45, frill=1.45, head=1.05,
                    tail=1.1, preview={"primary": "#57534E", "secondary": "#F59E0B", "belly": "#C9A46A", "membrane": "#6E5A4A", "horn": "#D8CBB0", "iris": "#F59E0B"})
 
 
 @hero("drake", "dragons")
 def drake():
-    return _dragon("drake", wings="none", leg=0.82, girth=1.2, body=1.05, neck=0.78, spines=1.35, head=1.0, snout=0.9, tail=0.9,
+    return _dragon("drake", s=1.6, wings="none", leg=0.82, girth=1.2, body=1.05, neck=0.78, spines=1.35, head=1.0, snout=0.9, tail=0.9,
                    preview={"primary": "#C2410C", "secondary": "#FDBA74", "belly": "#FDCB94", "horn": "#3A2A22", "iris": "#FFD23A"})
 
 
 @hero("wyvern", "dragons")
 def wyvern():
-    return _dragon("wyvern", legs4=False, saddle=True, stinger=True, spade=False, girth=0.92, wing=1.08, neck=0.95, horns="classic", frill=0.8,
+    return _dragon("wyvern", s=1.8, mount_clips=True, mount_len=24.0, legs4=False, saddle=True, stinger=True, spade=False, girth=0.92, wing=1.08, neck=0.95, horns="classic", frill=0.8,
                    preview={"primary": "#3F6212", "secondary": "#BEF264", "belly": "#C9E6A0", "membrane": "#6B8A3A", "iris": "#E8E23A", "leather": "#6B4423"})
 
 

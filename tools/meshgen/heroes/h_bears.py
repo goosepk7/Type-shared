@@ -15,6 +15,7 @@ from sdf import *  # noqa: F401,F403
 from kit import Hero, hero, spots, stripes, gradient, combine, _mirror_sdf
 from map import NOTFOOD
 import motion_canines as MC
+import mountkit as MK
 
 NOSE = [0.12, 0.1, 0.1]
 LEATHER = [0.42, 0.26, 0.14]
@@ -94,7 +95,9 @@ def _bear(hid, **kw):
         H.piece("ChestPlate", "Body", plate, col="steel", mat="metal", tris=1000, role="armor", pri=1.3)
         rump = overlay(torso, ellipsoid(s * (1.3 * G), s * (0.6), s * (0.85), T(v(0, backY - 0.05, zr + 0.25))), 0.1 * s)
         H.piece("RumpPlate", "Body", rump, col="steel", mat="metal", tris=900, role="armor", pri=1.3)
-    if P["mount"]:
+    if P["mount"] and P.get("mount_len"):
+        pass                                     # fitted tack + clips: MK.rig_mount at the end
+    elif P["mount"]:
         st = v(0, backY + 0.08 + 0.1 * HU, -0.05)
         seat = round_box(0.5 * G * s, 0.1 * s, 0.55 * s, 0.08 * s, T(st + v(0, 0.12, 0)))
         seat = seat.su(round_box(0.34 * G * s, 0.15 * s, 0.09 * s, 0.06 * s, T(st + v(0, 0.24, -0.5))), 0.05)
@@ -269,6 +272,13 @@ def _bear(hid, **kw):
             ("HipBR", "KneeBR", "HockBR", False, 1), ("HipBL", "KneeBL", "HockBL", False, -1)]
     MC.quad(H, legs, neck="Neck", head="Head", jaw="Jaw", tail=["Tail1"], ears=ears, height=backY * s + 0.6, gait="walk", stride=0.36,
             lift=0.85, walk=1.15 * s ** 0.3, attack=P.get("attack", "swipe"), sway=1.4)
+    if P["mount"] and P.get("mount_len"):
+        soles = {"WristFR": fp, "WristFL": fp * A(-1, 1, 1), "HockBR": bp, "HockBL": bp * A(-1, 1, 1)}
+        MK.rig_mount(H, torso, 0.05 * s, legs, soles, backY * s + 0.6, P["mount_len"],
+                     walk=(1.5, "walk", "amble", 3.4 * s, 0.4 * s),
+                     run=(0.9, "amble", "amble", 6.0 * s, 0.6 * s),
+                     neck="Neck", head="Head", jaw="Jaw", tail=["Tail1"], ears=ears,
+                     pad_col=P.get("pad_col", [0.5, 0.18, 0.12]), ytop=(backY + 3) * s, curl=0.4)
     return H
 
 
@@ -280,12 +290,12 @@ def PV(primary, secondary, **k):
 
 @hero("bear", "canines")
 def bear():
-    return _bear("bear", hump=0.6, legdark=0.35, preview=PV("#6E4A2E", "#A8846A"))
+    return _bear("bear", s=1.75, mount=True, mount_len=10.0, hump=0.6, legdark=0.35, preview=PV("#6E4A2E", "#A8846A"))
 
 
 @hero("grizzly bear", "canines")
 def grizzly():
-    return _bear("grizzly bear", s=1.08, hump=1.25, girth=1.08, claws=1.5, fluff=0.02, legdark=0.45, dome=0.2, muzzle=0.95, mw=1.1,
+    return _bear("grizzly bear", s=1.85, mount=True, mount_len=10.6, hump=1.25, girth=1.08, claws=1.5, fluff=0.02, legdark=0.45, dome=0.2, muzzle=0.95, mw=1.1,
                  preview=PV("#7A5636", "#C2A07A"))
 
 
@@ -297,7 +307,7 @@ def black_bear():
 
 @hero("polar bear", "canines")
 def polar_bear():
-    return _bear("polar bear", s=1.1, hump=0.0, neck=1.45, head=0.9, muzzle=1.3, mw=0.85, ear=0.8, body=1.1, leg=1.08, belly=0.95,
+    return _bear("polar bear", s=1.9, mount=True, mount_len=11.0, pad_col=[0.2, 0.35, 0.55], hump=0.0, neck=1.45, head=0.9, muzzle=1.3, mw=0.85, ear=0.8, body=1.1, leg=1.08, belly=0.95,
                  preview=PV("#F5F3EC", "#2A2A2A"))
 
 
@@ -321,7 +331,7 @@ def koala():
 
 @hero("bear warrior", "canines")
 def bear_warrior():
-    return _bear("bear warrior", s=1.15, hump=0.2, neck=1.3, head=0.95, muzzle=1.2, mw=0.9, ear=0.85, body=1.1, armor=True, mount=True,
+    return _bear("bear warrior", s=1.95, mount_len=11.0, hump=0.2, neck=1.3, head=0.95, muzzle=1.2, mw=0.9, ear=0.85, body=1.1, armor=True, mount=True,
                  belly=0.95, preview=PV("#F5F3EC", "#94A3B8", steel="#8A94A0"))
 
 

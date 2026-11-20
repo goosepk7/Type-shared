@@ -83,7 +83,7 @@ def foal():
 @hero("zebra", "equines")
 def zebra():
     return K.ungulate("zebra", **horse_kw("zebra", s=0.88, girth=1.08, depth=1.05, hs=1.08, ears="zebra", mane="brush", forelock=False, tail="tuft",
-                                          blanket_col=[0.85, 0.55, 0.15], bags=False, attack="buck", pattern=zebra_stripes(0.88, 1.8, 2.45), mane_col="secondary", shade=0.95,
+                                          blanket_col=[0.85, 0.55, 0.15], bags=False, attack="buck", pattern=zebra_stripes(0.88 * RS, 1.8, 2.45), mane_col="secondary", shade=0.95,
                                           preview={"primary": "#F2F2F0", "secondary": "#1A1A1A", "hoof": "#2B2420"}))
 
 
@@ -110,7 +110,7 @@ def unicorn():
 
 
 def _winged(hid, horn, prev):
-    return K.ungulate(hid, **horse_kw(hid, wings="spread", wing_fold=True, wing_span=1.35, horn_unicorn=horn, rig_gait="fly", s=1.15, leg=1.02, girth=0.95,
+    return K.ungulate(hid, **horse_kw(hid, bit=not horn, wings="spread", wing_fold=True, wing_span=1.2, horn_unicorn=horn, rig_gait="fly", s=1.15, leg=1.02, girth=0.95,
                                       arch=0.16, legs_dark=0.0, shade=0.94, tris=0.8, bags=False, hoof_col="gold" if horn else "hoof", tags=TAGS + ("magic", "flying"),
                                       preview=prev))
 
