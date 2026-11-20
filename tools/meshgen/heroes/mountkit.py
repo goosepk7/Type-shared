@@ -483,3 +483,33 @@ def rig_mount(H, torso, zs, legs, soles, h, length, walk, run, neck=(), head=Non
     ws, rs = ground_clips(H, leg_specs(H, legs, soles), h, walk, run, neck, head, jaw, tail, ears, spine, curl)
     set_mount(H, length, (0, seat_y, zs), (-(hw + 1.8), 0, zs), stride=rs, walk=ws, extra=extra)
     return seat_y
+
+
+# -------------------------------------------------------------------------------------------------- uniform rescale
+def scale_sdf(sd, k):
+    from sdf import SDF
+    return SDF(lambda p: sd(p / k) * k)
+
+
+def scale_hero(H, k):
+    """Uniformly rescale a finished hero by k (sculpts, prims, bones, sockets, clip translations, rig height): for
+    families whose sculpt radii do not follow their `s` parameter (felines, canines)."""
+    H.bones = [(n, p, tuple(float(v) * k for v in pos)) for n, p, pos in H.bones]
+    for p in H.parts:
+        if p["kind"] == "piece":
+            p["sdf"] = scale_sdf(p["sdf"], k)
+            if p.get("pattern") is not None:
+                p["pattern"] = (lambda f: (lambda P: f(P / k)))(p["pattern"])
+        else:
+            p["pos"] = tuple(v * k for v in p["pos"])
+            p["size"] = tuple(v * k for v in p["size"])
+    H.sockets = {n: (tuple(v * k for v in pos), b) for n, (pos, b) in H.sockets.items()}
+    for c in H.clips.values():
+        for b, vals in c["tracks"].items():
+            c["tracks"][b] = [tuple(x * k if i < 3 else x for i, x in enumerate(v)) for v in vals]
+    if "height" in H.rig:
+        H.rig["height"] = H.rig["height"] * k
+    if H.mount and "saddle" in H.mount:
+        sd = H.mount["saddle"]
+        H.mount["saddle"] = {"pos": tuple(v * k for v in sd["pos"]), "size": tuple(v * k for v in sd["size"])}
+    H.bounds_scale = k

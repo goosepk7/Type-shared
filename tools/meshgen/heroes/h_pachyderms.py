@@ -46,7 +46,7 @@ K.EARS["round"] = (0.24, 0.13, 30, 10, 0.7)
 
 
 # ------------------------------------------------------------------------------------------------ elephant parts
-def elephant_extra(ear=1.0, tusk="tusk", tusk_len=1.0, mammoth=False, howdah=False):
+def elephant_extra(ear=1.0, tusk="tusk", tusk_len=1.0, mammoth=False, howdah=False, plate=False):
     def f(H, X):
         s, hs, hp, hx, L, T = X["s"], X["hs"], X["hp"], X["hx"], X["L"], X["T"]
         # trunk: five bones hanging from the base of the face, curling forward at the tip
@@ -107,7 +107,7 @@ def elephant_extra(ear=1.0, tusk="tusk", tusk_len=1.0, mammoth=False, howdah=Fal
         if mammoth:
             K.skirt(H, X, length=0.55, col="primary", amp=0.04)
         if howdah:
-            build_howdah(H, X)
+            build_howdah(H, X, plate)
 
     return f
 
@@ -116,7 +116,7 @@ def pts_last(names, H):
     return H.bpos(names[-1]) + np.array([0, -0.25, -0.15])
 
 
-def build_howdah(H, X):
+def build_howdah(H, X, plate=True):
     """Wooden howdah on a padded caparison: the rider's seat on a war elephant."""
     s, top, Dp, body, zs = X["s"], X["top"] * X["s"], X["Dp"] * X["s"], X["torso"], X["zs"]
     zc = -0.15 * s
@@ -150,6 +150,10 @@ def build_howdah(H, X):
     H._half_w = K.surf(body, (0, top - 0.5 * Dp, zc), (1, 0, 0), hi=6 * s)
     hp, hx, L, hs = X["hp"], X["hx"], X["L"], X["hs"]
     c = X["HP"]["cran"]
+    if not plate:
+        H.socket("seat", (0, seat_y, cz), "Body")
+        H.mount = {"seat": "Torso", "saddle": {"pos": (0, seat_y, cz), "size": (2 * w, 0.3, 2 * l)}}
+        return
     plate = X["head_can"].shell(0.04 * hs) & half_space(2, -1, -0.62 * hs) & half_space(2, 1, -0.15 * hs) & half_space(1, -1, -0.35 * hs)
     plate = plate & half_space(0, 1, 0.24 * hs) & half_space(0, -1, -0.24 * hs)
     H.piece("HeadPlate", "Head", hx(plate), col="gold", mat="metal", tris=X["T"](700), res=104, role="detail", pri=1.5)
@@ -188,7 +192,7 @@ def elephant():
 @hero("war elephant", "pachyderms")
 def war_elephant():
     return K.ungulate("war elephant", **elephant_kw(s=1.25 * RS, mount={"length": 14.0}, **MOUNT, slope=0.05, withers=0.45, head_mod=asian_dome, tags=TAGS + ("elephant", "mount"),
-                                                    extra=elephant_extra(ear=0.7, tusk="tusk", tusk_len=0.8, howdah=True),
+                                                    extra=elephant_extra(ear=0.7, tusk="tusk", tusk_len=0.8, howdah=True, plate=True),
                                                     preview={"primary": "#7E7A78", "secondary": "#B03030", "nail": "#D9CDB4", "horn": "#F2EAD8",
                                                              "darkWood": "#5A3820", "gold": "#E8B53A"}))
 

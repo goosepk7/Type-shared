@@ -233,13 +233,15 @@ def _feline(hid, **kw):
     motion.quadruped(H, legs, neck="Neck", head="Head", jaw="Jaw", tail=["Tail1", "Tail2", "Tail3"], stride=0.42, walk=1.1,
                      height=(bodyY + 1.0) * s, attack="pounce", swipe="ShoulderFR")
     if P.get("mount_len"):
-        fs = np.array(v(0.58 * G, 0.0, zc - 0.12))
-        bs = np.array(v(0.6 * G, 0.0, zr - 0.08))
+        k = P.get("scale", 1.0)
+        MK.scale_hero(H, k)
+        fs = np.array(v(0.58 * G, 0.0, zc - 0.12)) * k
+        bs = np.array(v(0.6 * G, 0.0, zr - 0.08)) * k
         soles = {"WristFR": fs, "WristFL": fs * np.array([-1, 1, 1]), "HockBR": bs, "HockBL": bs * np.array([-1, 1, 1])}
-        MK.rig_mount(H, torso, -0.25 * BL * s, legs_ik(), soles, (bodyY + 1.0) * s, P["mount_len"],
-                     walk=(1.3, "walk", "walk", 3.0 * s, 0.45 * s), run=(0.62, "gallop", "gallop", 8.5 * s, 0.9 * s),
+        MK.rig_mount(H, MK.scale_sdf(torso, k), -0.25 * BL * s * k, legs_ik(), soles, (bodyY + 1.0) * s * k, P["mount_len"],
+                     walk=(1.3, "walk", "walk", 3.0 * k, 0.45 * k), run=(0.62, "gallop", "gallop", 8.5 * k, 0.9 * k),
                      neck="Neck", head="Head", jaw="Jaw", tail=["Tail1", "Tail2", "Tail3"], pad_col=P.get("pad_col", [0.45, 0.12, 0.12]),
-                     ytop=(bodyY + 3) * s, curl=0.7)
+                     ytop=(bodyY + 3) * s * k, curl=0.7)
     return H
 
 
@@ -250,7 +252,7 @@ def legs_ik():
 
 @hero("lion", "felines")
 def lion():
-    return _feline("lion", s=1.3, mount_len=12.0, mane=True, tuft=True, girth=1.05, head=1.08, belly=0.85, fluffy=0.0,
+    return _feline("lion", scale=1.3, mount_len=12.0, mane=True, tuft=True, girth=1.05, head=1.08, belly=0.85, fluffy=0.0,
                    preview={"primary": "#C8963E", "secondary": "#6B4423", "nose": "#5A3A33", "iris": "#D9A13B"})
 
 
@@ -261,7 +263,7 @@ def lioness():
 
 @hero("tiger", "felines")
 def tiger():
-    return _feline("tiger", s=1.3, mount_len=12.5, pad_col=[0.12, 0.25, 0.4], pattern="stripes", girth=1.05, body=1.08, head=1.05, ruff=0.7, belly=0.9, fluffy=0.0,
+    return _feline("tiger", scale=1.3, mount_len=12.5, pad_col=[0.12, 0.25, 0.4], pattern="stripes", girth=1.05, body=1.08, head=1.05, ruff=0.7, belly=0.9, fluffy=0.0,
                    preview={"primary": "#E07A1F", "secondary": "#1C1C1C", "nose": "#C46A6A", "iris": "#E3B13A"})
 
 
@@ -303,7 +305,7 @@ def lynx():
 
 @hero("sabertooth", "felines")
 def sabertooth():
-    return _feline("sabertooth", s=1.3, mount_len=10.5, girth=1.15, leg=0.9, body=0.95, head=1.1, fangs=0.42, tail=0.35, tail_thick=1.3, belly=0.85,
+    return _feline("sabertooth", scale=1.3, mount_len=10.5, girth=1.15, leg=0.9, body=0.95, head=1.1, fangs=0.42, tail=0.35, tail_thick=1.3, belly=0.85,
                    preview={"primary": "#B79562", "secondary": "#6B4E30", "nose": "#5A3A33", "iris": "#D9A13B"})
 
 
