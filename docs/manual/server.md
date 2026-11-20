@@ -92,18 +92,22 @@ Servers also re-poll it every 30 s.
 4. Run `python3 tools/validate.py` and `python3 tools/build_library.py`.
 
 ## 7. Blocklist
-`data/blocklist.txt` and `src/Server/BlocklistData.luau` hold **hashes only**. To add a word, hash it
-with Lune and append the line, choosing `exact1` or `contains1`:
+`data/blocklist.txt` and `src/Server/BlocklistData.luau` hold **hashes only**. Extend it with
+`tools/blocklist.py`, keeping the plaintext list OUTSIDE the repo:
 
-```lua
--- in a Lune script loaded with tests/loader.luau, or pasted into the Studio command bar:
-local B = require(game.ServerScriptService.WordEngineServer.Blocklist)
-print(B.hash(B.skeleton("theword", 1)), B.hash(B.skeleton("theword", 2)))
+```sh
+python3 tools/blocklist.py add ~/words.txt     # lines: "<set> <word>", merges hashes, regenerates BlocklistData
+python3 tools/blocklist.py scan data/real_words.txt <library ids>   # false-positive check: must print 0 blocked
+python3 tools/blocklist.py fold                # regenerate BlocklistFold.luau (lookalike letters -> ASCII)
 ```
 
-Lines are `<set> <hash>`. The sets are `exact1`/`exact2` (the whole token) and
-`contains1`/`contains2` (a substring). Put `1` hashes in the `*1` sets and `2` hashes in the
-`*2` sets, following the existing file.
+Sets: `exact1`/`exact2` (a token, or the whole phrase without spaces, equals the entry),
+`contains1`/`contains2` (substring: only for words that never occur inside innocent words) and
+`allow` (a whole phrase that is never blocked, e.g. the library's "maine coon"). The digit is the
+repeat-collapse level: level 1 catches "fuuuck" but folds double letters ("ass" -> "as", "coon" ->
+"con", "boob" -> "bob"), so words like those belong in the `*2` sets. Every check first folds
+Cyrillic/Greek lookalikes, accents, fullwidth and circled letters to ASCII (BlocklistFold), then
+leetspeak digits/symbols, then joins tokens, so "f u c k", "FÜCK", "ｆｕｃｋ" and "f.u.c.k" all hit.
 
 Never commit the plain word. For an urgent ban in a live game, use the Admin ban tools, which call
 `Safety.addBlocked` at runtime.
