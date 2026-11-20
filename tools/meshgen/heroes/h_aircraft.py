@@ -595,7 +595,7 @@ def _airliner(hid, L=44.0, R=2.9, engines=2, hump=False, rear=False, prev=None, 
 
 @hero("jumbo jet", "aircraft")
 def jumbo_jet():
-    return _airliner("jumbo jet", L=50.0, R=3.25, engines=4, hump=True, gear_h=2.9, span_k=0.98)
+    return _airliner("jumbo jet", L=49.4, R=3.25, engines=4, hump=True, gear_h=2.9, span_k=0.98)
 
 
 @hero("airplane", "aircraft")

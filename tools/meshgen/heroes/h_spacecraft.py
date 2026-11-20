@@ -186,7 +186,7 @@ def space_shuttle():
 def spaceship():
     """Sci-fi shuttle at real game scale (30 studs long, 22 stud span): wedge hull with a bubble canopy over the
     cockpit (seat, panel with screens, stick), swept wings with drooping tips, twin fins, three thrusters with glow
-    discs (Glow*), nose cannons, landing legs on GearF / GearR / GearL."""
+    discs (Burner*), nose cannons, landing legs on GearF / GearR / GearL."""
     H = S("spaceship")
     H.preview = {"primary": "#E8ECF0", "secondary": "#2979FF", "dark": "#2B2F36"}
     yc = 4.7
@@ -225,7 +225,7 @@ def spaceship():
         th_.append(A.lathe([(11.6, 1.2), (12.4, 1.24), (14.2, 1.05), (14.2, 0.9), (12.6, 0.95), (12.2, 0.75)], axis=2, segs=22, pos=(x, y, 0), closed=True))
     dpiece(H, "Thrusters", "Body", merge(*th_), col="gunmetal", mat="metal", role="detail", pri=1.2)
     for i, (x, y) in enumerate(((1.75, 4.55), (-1.75, 4.55), (0.0, 5.75))):
-        H.prim(f"Glow{i}", "Body", "Cylinder", (0.08, 1.8, 1.8), (x, y, 13.2), rot=(0, math.pi / 2, 0), col="secondary", glow=True, role="light", pri=2.2)
+        H.prim(f"Burner{i}", "Body", "Cylinder", (0.08, 1.8, 1.8), (x, y, 13.2), rot=(0, math.pi / 2, 0), col="secondary", glow=True, role="light", pri=2.2)
     # nose cannons
     gn = []
     for s in (1, -1):
@@ -245,7 +245,7 @@ def spaceship():
 @hero("starfighter", "spacecraft")
 def starfighter():
     """Space fighter at real game scale (26 studs long, 18 stud span): dart hull with a canopy cockpit (seat, panel,
-    stick), canards, straight wings carrying two engine pods with cannons, dorsal fin, glow discs (Glow*), landing
+    stick), canards, straight wings carrying two engine pods with cannons, dorsal fin, glow discs (Burner*), landing
     legs on GearF / GearR / GearL."""
     H = S("starfighter")
     H.preview = {"primary": "#DDE2E6", "secondary": "#E53935", "dark": "#2B2F36"}
@@ -284,8 +284,8 @@ def starfighter():
     ven = xform(A.fin(1.6, 2.4, 1.2, 1.2, thick=0.22, pos=(0, 0, 0)), (1.5, F.bottom(8.5) + 0.2, 8.0), (0, 0, 180 - 25))
     dpiece(H, "Fins", "Body", merge(fin, ven, mirror(ven)), col="secondary", mat="metal", role="detail", pri=1.2)
     for i, (x, y) in enumerate(((px, py), (-px, py))):
-        H.prim(f"Glow{i}", "Body", "Cylinder", (0.08, 1.65, 1.65), (x, y, 8.0), rot=(0, math.pi / 2, 0), col="secondary", glow=True, role="light", pri=2.2)
-    H.prim("Glow2", "Body", "Cylinder", (0.08, 2.4, 2.4), (0, yc, 12.25), rot=(0, math.pi / 2, 0), col="secondary", glow=True, role="light", pri=2.3)
+        H.prim(f"Burner{i}", "Body", "Cylinder", (0.08, 1.65, 1.65), (x, y, 8.0), rot=(0, math.pi / 2, 0), col="secondary", glow=True, role="light", pri=2.2)
+    H.prim("Burner2", "Body", "Cylinder", (0.08, 2.4, 2.4), (0, yc, 12.25), rot=(0, math.pi / 2, 0), col="secondary", glow=True, role="light", pri=2.3)
     cockpit(H, F, hip, floor_y=hip[1] - 1.25, panel_z=hip[2] - 2.05, panel_w=3.8, panel_top=hip[1] + 1.15, screens=2)
     legs3(H, [("GearF", (0, F.bottom(-7.0) + 0.3, -7.0), (0, 0.0, -7.6)), ("GearR", (px, py - 1.0, 2.0), (px + 0.4, 0.0, 2.6)),
               ("GearL", (-px, py - 1.0, 2.0), (-px - 0.4, 0.0, 2.6))], r=0.22, pad=0.6)
