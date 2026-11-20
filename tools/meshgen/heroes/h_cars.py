@@ -304,7 +304,7 @@ def _car(hid, **kw):
     cy_ = max(belt - 0.62, ytop_arch)
     if cy_ < belt - 0.3:
         cl = extrude(np.array([(zn + 1.7, cy_), (zt - 1.1, cy_), (zt - 1.1, cy_ + 0.08), (zn + 1.7, cy_ + 0.08)]), 0.16, bevel=0.03, seg=1)
-        cl = warp(xf(cl, (hw - 0.03, 0, 0)), bodywarp)
+        cl = warp(xf(cl, (hw - 0.04, 0, 0)), bodywarp)  # outer face 0.04 inside the chassis bounds plane (never coplanar with it)
         piece(H, "SideLine", "Chassis", merge(cl, mirror(cl)), col=P["doors_col"] or "primary", mat="metal", role="detail", pri=2.3)
     for s_ in (-1, 1):
         dark.append(bar((s_ * surf_x(sill + 0.22, 0, 0.03), sill + 0.22, zf + wr + ag + 0.15), (s_ * surf_x(sill + 0.22, 0, 0.03), sill + 0.22, zr - wrr - ag - 0.15), 0.12, 0.2, r=0.04))

@@ -76,8 +76,9 @@ function Motion.spring(x: number, v: number, target: number, k: number, damp: nu
 	return x, v
 end
 
-Motion.clipLength = { Idle = 2.4, Move = 1.0, Attack = 0.7, Hit = 0.35, Die = 1.2, Spawn = 0.6 }
-Motion.looping = { Idle = true, Move = true }
+Motion.clipLength = { Idle = 2.4, Move = 1.0, Attack = 0.7, Hit = 0.35, Die = 1.2, Spawn = 0.6, Walk = 1.0, Fly = 1.0, Glide = 1.0 }
+-- Walk / Fly / Glide are authored-only loops (ridden hero mounts); Animator.play falls back to Move without them
+Motion.looping = { Idle = true, Move = true, Walk = true, Fly = true, Glide = true }
 
 local MOOD_SPEED: { [string]: number } = { Sleepy = 0.55, Lazy = 0.7, Hyper = 1.8, Crazy = 1.4, Scared = 1.3, Angry = 1.2, Sad = 0.8 }
 function Motion.moodSpeed(mood: string?): number

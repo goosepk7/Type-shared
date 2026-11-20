@@ -1055,7 +1055,8 @@ def pilot_seat(hip, w=1.7, back_h=2.9, rake=8, depth=1.5, floor_y=None):
           xform(box((w * 0.62, 0.75, 0.32), (0, back_h + 0.42, -0.04), r=0.13, seg=1), (x, y - 0.3, z + 0.78), (rake, 0, 0))]
     if floor_y is not None and y - 0.67 - floor_y > 0.05:
         hgt = y - 0.67 - floor_y
-        ms.append(box((w * 0.6, hgt + 0.05, depth * 0.6), (x, floor_y + hgt / 2, cz), r=0.05))
+        # the pedestal sinks 0.06 into the floor (its foot never shares the floor's top plane: z-fighting at small scales)
+        ms.append(box((w * 0.6, hgt + 0.09, depth * 0.6), (x, floor_y + hgt / 2 - 0.015, cz), r=0.05))
     return merge(*ms)
 
 

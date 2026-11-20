@@ -213,7 +213,17 @@ function Animator._apply(self: any, _dt: number)
 	end
 end
 
+local AUTHORED_ONLY = { Walk = "Move", Fly = "Move", Glide = "Move" }
+
+-- does this rig have its own authored clip of that name (hero mounts: Walk / Fly / Glide)?
+function Animator.has(self: any, clip: string): boolean
+	return self.rig.clips ~= nil and self.rig.clips[clip] ~= nil
+end
+
 function Animator.play(self: any, clip: string)
+	if AUTHORED_ONLY[clip] and not (self.rig.clips and self.rig.clips[clip]) then
+		clip = AUTHORED_ONLY[clip]
+	end
 	if Motion.clipLength[clip] == nil or self.destroyed then
 		return
 	end
