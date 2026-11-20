@@ -12,6 +12,7 @@ import math
 import numpy as np
 
 from kit import hero, Hero
+from kit import stripes as kit_stripes
 from map import VEH
 import motion
 import landveh_kit as K
@@ -252,6 +253,10 @@ def _old_moped():
 
 @hero("scooter", FAM)
 def kick_scooter():
+    return kick_scooter_real()
+
+
+def _old_kick_scooter():
     H = _new("scooter", pv("#7B2CBF", "#E0E0E0"))
     H.bone("Chassis", "Body", (0, 0, 0))
     H.bone("Fork", "Chassis", (0, 0.55, -1.15))
@@ -377,17 +382,17 @@ def _bicycle(hid, r=0.72, wb=2.15, frame_h=1.0, bmx=False, preview=None, tandem=
 
 @hero("bicycle", FAM)
 def bicycle():
-    return _bicycle("bicycle", preview=pv("#1E88E5", "#F5F5F5"))
+    return _cycle("bicycle", "city", preview=pv("#1E88E5", "#F5F5F5", wood="#C8A165", darkWood="#8A6A3E"))
 
 
 @hero("bmx", FAM)
 def bmx():
-    return _bicycle("bmx", r=0.55, wb=1.8, frame_h=0.75, bmx=True, preview=pv("#FF2E63", "#252A34"))
+    return _cycle("bmx", "bmx", preview=pv("#FF2E63", "#252A34"))
 
 
 @hero("tandem bicycle", FAM)
 def tandem():
-    return _bicycle("tandem bicycle", tandem=True, preview=pv("#2A9D8F", "#F4F1DE"))
+    return _cycle("tandem bicycle", "tandem", preview=pv("#2A9D8F", "#F4F1DE"))
 
 
 @hero("tricycle", FAM)
@@ -487,6 +492,10 @@ def _deck(L=3.0, W=0.85, t=0.1, kick=0.35, y=0.45):
 
 @hero("skateboard", FAM)
 def skateboard():
+    return skateboard_real()
+
+
+def _old_skateboard():
     H = _new("skateboard", pv("#E76F51", "#264653"))
     H.bone("Chassis", "Body", (0, 0.0, 0))
     deck = _deck()
@@ -515,6 +524,10 @@ def skateboard():
 
 @hero("hoverboard", FAM)
 def hoverboard():
+    return hoverboard_real()
+
+
+def _old_hoverboard():
     H = _new("hoverboard", pv("#3A86FF", "#E0E0E0"), gait="hover")
     H.bone("Chassis", "Body", (0, 0.6, 0))
     deck = _deck(3.2, 1.0, 0.16, 0.3, 0.8)
@@ -1489,4 +1502,338 @@ def moped_real():
     H.socket("exhaust", (0.48, 0.74, 2.35), "Chassis")
     H.rig.update({"head": "Chassis"})
     R.finish_mount(H, "Seat", seat, (-1.5, 0.4), seat_size=(0.8, 0.2, 1.6))
+    return H
+
+
+# ==================================================================================================== real-scale pedal cycles
+def _crank_set(H, bone_parent, bb, ring_r=0.36, arm=0.55, side=0.3, col="darker", ring_col="metal", teeth=36):
+    """Pedal crank on its own spinning bone "Crank": chainring (right) + two arms + pedals with tread blocks."""
+    b = H.bone("Crank", bone_parent, bb)
+    x, y, z = bb
+    ring = xf(_sprocket(ring_r, teeth, side - 0.08), (0, y, z))
+    ring = xf(ring, (x, 0, z * 0)) if False else ring
+    arms = [K.bar((x + side, y, z), (x + side, y - arm, z + 0.04), 0.07, 0.11, r=0.03), K.bar((x - side, y, z), (x - side, y + arm, z - 0.04), 0.07, 0.11, r=0.03)]
+    ped = []
+    for sx, py, pz in ((1, y - arm, z + 0.04), (-1, y + arm, z - 0.04)):
+        px = x + sx * (side + 0.2)
+        ped.append(K.box((0.3, 0.07, 0.2), (px, py, pz), r=0.025))
+        ped += [cbox((0.3, 0.03, 0.03), (px, py + 0.05, pz + d), c=0.008) for d in (-0.07, 0.07)]
+    axle = sweep([(x - side, y, z), (x + side, y, z)], 0.06, segs=10)
+    piece(H, "Crank", b, merge(*arms, *ped, axle), col=col, mat="metal", role="detail", pri=1.1)
+    piece(H, "Chainring", b, ring, col=ring_col, mat="metal", role="detail", pri=1.3)
+    return b
+
+
+def _cycle(hid, kind="city", preview=None):
+    """Bicycle family at real scale. kind: city (6 studs, swept bars, basket, fenders, rack), bmx (5 studs, 20" wheels,
+    riser bars, pegs, no fenders), tandem (8.6 studs, two seats / cranks, the captain's seat is the mount seat)."""
+    H = _new(hid, preview)
+    bmx, tandem = kind == "bmx", kind == "tandem"
+    r = 0.84 if bmx else 1.12
+    tw = 0.3 if bmx else 0.2
+    zf, zb = (-1.75, 1.55) if bmx else ((-3.0, 2.65) if tandem else (-1.85, 1.6))
+    bb = (0.0, 0.98 if bmx else 0.98, 0.2 if bmx else (-1.25 if tandem else 0.1))
+    H.bone("Chassis", "Body", (0, 0, 0))
+    ht_top = (0, 2.6 if bmx else 3.05, zf + (0.55 if bmx else 0.66))
+    ht_bot = (0, ht_top[1] - (0.45 if bmx else 0.55), ht_top[2] - (0.15 if bmx else 0.17))
+    H.bone("Steer", "Chassis", ht_top)
+    H.bone("WheelF", "Steer", (0, r, zf))
+    H.bone("WheelB", "Chassis", (0, r, zb))
+    rim_col = "primary" if bmx else "metal"
+    wheels = [R.moto_wheel(H, "WheelF", "WheelF", (0, r, zf), r, tw, style="wire", spokes=36 if bmx else 32, rim_col=rim_col, knobby=0.05 if bmx else 0.0,
+                           ri=r - tw * (1.0 if bmx else 0.9), lugs=30, segs=28),
+              R.moto_wheel(H, "WheelB", "WheelB", (0, r, zb), r, tw, style="wire", spokes=36 if bmx else 32, rim_col=rim_col, knobby=0.05 if bmx else 0.0,
+                           ri=r - tw * (1.0 if bmx else 0.9), lugs=30, segs=28)]
+    cog = merge(_sprocket(0.2 if not bmx else 0.14, 14, 0.2), K.cyl(0.25, 0.1, (0.05, 0, 0), "x", segs=12))
+    piece(H, "Cog", "WheelB", xf(cog, (0, r, zb)), col="steel", mat="metal", role="wheel", pri=1.7)
+    # frame
+    st_dir = np.array([0, 0.956, 0.292])
+    seat_top = np.array(bb) + st_dir * ((2.1 if bmx else 2.55) - bb[1]) / st_dir[1]
+    tube = 0.075 if bmx else 0.065
+    fr = [sweep([ht_top, ht_bot], 0.09, segs=12), sweep([ht_bot, bb], tube * 1.15, segs=10), sweep([bb, tuple(seat_top)], tube, segs=10),
+          sweep([(0, ht_top[1] - 0.08, ht_top[2] + 0.05), tuple(seat_top - st_dir * (0.25 if bmx else 0.15))], tube, segs=10),
+          K.cyl(0.36, 0.11, bb, "x", segs=14)]
+    for s in (-1, 1):
+        fr.append(sweep([(s * 0.06, bb[1], bb[2] + 0.05), (s * 0.18, r + 0.04, zb - 0.6), (s * 0.2, r, zb)], 0.04, segs=8))
+        fr.append(sweep([tuple(seat_top - st_dir * 0.2 + np.array([s * 0.05, 0, 0])), (s * 0.18, r + 0.6, zb - 0.45), (s * 0.2, r, zb)], 0.035, segs=8))
+        fr.append(cbox((0.06, 0.16, 0.2), (s * 0.21, r, zb), c=0.02))
+    seats = [tuple(seat_top)]
+    if tandem:
+        bb2 = (0.0, 0.98, 0.95)
+        st2 = np.array(bb2) + st_dir * (2.55 - bb2[1]) / st_dir[1]
+        fr += [sweep([bb, bb2], tube, segs=10), sweep([bb2, tuple(st2)], tube, segs=10), sweep([tuple(seat_top - st_dir * 0.15), tuple(st2 - st_dir * 0.15)], tube, segs=10),
+               sweep([tuple(seat_top - st_dir * 0.7), bb2], tube * 0.9, segs=10), K.cyl(0.36, 0.11, bb2, "x", segs=14)]
+        seats.append(tuple(st2))
+    piece(H, "Frame", "Chassis", merge(*fr), col="primary", mat="metal", role="body", pri=0.5)
+    # fork + stem + bars
+    fk = [sweep([(0, ht_top[1] + 0.1, ht_top[2] + 0.03), (0, ht_bot[1] - 0.05, ht_bot[2] - 0.02)], 0.055, segs=10), K.box((0.42, 0.12, 0.2), (0, ht_bot[1] - 0.12, ht_bot[2] - 0.04), r=0.04)]
+    for s in (-1, 1):
+        fk.append(sweep([(s * 0.17, ht_bot[1] - 0.12, ht_bot[2] - 0.04), (s * 0.18, (ht_bot[1] + r) / 2, (ht_bot[2] + zf) / 2 - 0.05), (s * 0.18, r, zf)],
+                        0.05 if not bmx else 0.06, segs=8))
+    piece(H, "Fork", "Steer", merge(*fk), col="primary" if not bmx else "darker", mat="metal", role="detail", pri=0.9)
+    if bmx:
+        gy, gz, gx = seat_top[1] + 1.35, seat_top[2] - 1.4, 1.25
+        top = (0, ht_top[1] + 0.25, ht_top[2] + 0.1)
+        bars = [K.box((0.3, 0.2, 0.3), top, r=0.05), sweep([(-gx, gy, gz), (-0.45, gy, gz - 0.08), (-0.3, top[1], top[2]), (0.3, top[1], top[2]), (0.45, gy, gz - 0.08), (gx, gy, gz)], 0.05, segs=8),
+                sweep([(-0.4, gy - 0.25, gz - 0.06), (0.4, gy - 0.25, gz - 0.06)], 0.04, segs=8)]
+    else:
+        gy, gz, gx = seat_top[1] + 1.15, seat_top[2] - 1.38, 1.22
+        top = (0, ht_top[1] + 0.32, ht_top[2] - 0.08)
+        bars = [sweep([(0, ht_top[1] + 0.05, ht_top[2] + 0.02), (0, top[1], top[2])], 0.05, segs=8), K.box((0.18, 0.16, 0.2), top, r=0.04),
+                sweep([(-gx, gy, gz), (-0.75, gy - 0.02, gz - 0.12), (-0.25, top[1], top[2] - 0.05), (0.25, top[1], top[2] - 0.05), (0.75, gy - 0.02, gz - 0.12), (gx, gy, gz)], 0.042, segs=8)]
+        bars += [sweep([(s * 0.75, gy - 0.02, gz - 0.12), (s * 0.95, gy - 0.05, gz - 0.38)], 0.02, segs=5) for s in (-1, 1)]   # brake levers
+    piece(H, "Bars", "Steer", merge(*bars), col="metal" if not bmx else "darker", mat="metal", role="detail", pri=1.0)
+    grips = merge(*[sweep([(s * (gx - 0.42), gy - (0.0 if bmx else 0.01), gz - (0.06 if bmx else 0.04)), (s * (gx + 0.03), gy, gz)], 0.065, segs=10) for s in (-1, 1)])
+    piece(H, "Grips", "Steer", grips, col="tyre" if not bmx else "secondary", mat="rubber", role="detail", pri=1.2)
+    # saddles
+    sd = []
+    for p in seats:
+        x, y, z = p
+        sd.append(sweep([(0, y - 0.35, z - 0.1), (0, y + 0.12, z + 0.04)], 0.04, segs=8))
+        sd.append(loft([(z - 0.42, y + 0.16, 0.06, 0.04, 0.04), (z - 0.3, y + 0.18, 0.11, 0.05, 0.06), (z - 0.05, y + 0.18, 0.18, 0.06, 0.07), (z + 0.18, y + 0.18, 0.3, 0.07, 0.08),
+                        (z + 0.3, y + 0.16, 0.26, 0.05, 0.07)], n=18, sub=3))
+    piece(H, "Seat", "Chassis", merge(*sd), col="darker" if not bmx else "secondary", mat="cloth", role="seat", pri=0.7)
+    # cranks + chain
+    _crank_set(H, "Chassis", bb, ring_r=0.3 if bmx else 0.36, arm=0.5 if bmx else 0.55, side=0.28)
+    chain = [_chain(0.2, (bb[2], bb[1]), 0.3 if bmx else 0.36, (zb, r), 0.14 if bmx else 0.2, w=0.025)]
+    if tandem:
+        b2 = H.bone("Crank2", "Chassis", bb2)
+        c2 = [K.bar((-0.28, bb2[1], bb2[2]), (-0.28, bb2[1] - 0.55, bb2[2]), 0.07, 0.11, r=0.03), K.bar((0.28, bb2[1], bb2[2]), (0.28, bb2[1] + 0.55, bb2[2]), 0.07, 0.11, r=0.03),
+              K.box((0.3, 0.07, 0.2), (-0.48, bb2[1] - 0.55, bb2[2]), r=0.025), K.box((0.3, 0.07, 0.2), (0.48, bb2[1] + 0.55, bb2[2]), r=0.025), sweep([(-0.28, bb2[1], bb2[2]), (0.28, bb2[1], bb2[2])], 0.06)]
+        piece(H, "Crank2", b2, merge(*c2), col="darker", mat="metal", role="detail", pri=1.2)
+        chain = [_chain(-0.22, (bb[2], bb[1]), 0.33, (bb2[2], bb2[1]), 0.33, w=0.025), _chain(0.2, (bb2[2], bb2[1]), 0.36, (zb, r), 0.2, w=0.025)]
+        stoker = [sweep([tuple(seats[0] - st_dir * 0.1), (0, seats[0][1] + 0.35, seats[0][2] + 0.35)], 0.04, segs=8),
+                  sweep([(-0.6, seats[0][1] + 0.35, seats[0][2] + 0.45), (0.6, seats[0][1] + 0.35, seats[0][2] + 0.45)], 0.04, segs=8)]
+        stoker += [sweep([(s * 0.35, seats[0][1] + 0.35, seats[0][2] + 0.45), (s * 0.68, seats[0][1] + 0.35, seats[0][2] + 0.45)], 0.06, segs=8) for s in (-1, 1)]
+        piece(H, "StokerBars", "Chassis", merge(*stoker), col="metal", mat="metal", role="detail", pri=1.2)
+    piece(H, "Chain", "Chassis", merge(*chain), col="steel", mat="metal", role="detail", pri=1.5)
+    if bmx:
+        pegs = merge(*[K.cyl(0.4, 0.07, (s * 0.38, r, z), "x", segs=10) for s in (-1, 1) for z in (zb,)])
+        piece(H, "Pegs", "WheelB", pegs, col="metal", mat="metal", role="detail", pri=1.4)
+        pf = merge(*[K.cyl(0.4, 0.07, (s * 0.38, r, zf), "x", segs=10) for s in (-1, 1)])
+        piece(H, "PegsF", "WheelF", pf, col="metal", mat="metal", role="detail", pri=1.5)
+        pad = loft([(-0.32, 0, 0.1, 0.08, 0.08), (0.32, 0, 0.1, 0.08, 0.08)], n=12, sub=1)
+        pad = xf(pad, (0, top[1] - 0.24, top[2] - 0.06 + 0.0))
+        piece(H, "BarPad", "Steer", xf(pad, (0, 0, 0)) if False else xf(R.loft([(-0.08, gy - 0.25, 0.4, 0.07, 0.07), (0.08, gy - 0.25, 0.4, 0.07, 0.07)], n=12, sub=1), (0, 0, gz - 0.06)),
+              col="primary", mat="cloth", role="detail", pri=1.6)
+    else:
+        ff = _fender(zf, r, r + 0.06, 0.04, 20, 150, tw + 0.16, dome=0.6)
+        piece(H, "FenderF", "Steer", ff, col="metal", mat="metal", role="detail", pri=1.3)
+        rfz = _fender(zb, r, r + 0.06, 0.04, 15, 165 if not tandem else 150, tw + 0.16, dome=0.6)
+        rack = [sweep([(s * 0.2, r, zb), (s * 0.24, r + 1.05, zb + 0.05)], 0.03, segs=6) for s in (-1, 1)]
+        rack += [sweep([(s * 0.22, r + 1.08, zb - 0.6), (s * 0.22, r + 1.08, zb + 0.45)], 0.03, segs=6) for s in (-1, 1)]
+        rack += [sweep([(-0.22, r + 1.08, z), (0.22, r + 1.08, z)], 0.025, segs=6) for z in (zb - 0.6, zb - 0.2, zb + 0.2, zb + 0.45)]
+        rack += [sweep([(0, r + 1.08, zb - 0.6), tuple(seats[-1] - st_dir * 0.4)], 0.025, segs=6)]
+        piece(H, "Rack", "Chassis", merge(rfz, *rack), col="metal", mat="metal", role="detail", pri=1.2)
+        guard = loft([(bb[2] - 0.3, bb[1] + 0.36, 0.04, 0.08, 0.06), (bb[2] + 0.1, bb[1] + 0.43, 0.05, 0.1, 0.08), (zb - 0.3, r + 0.26, 0.05, 0.08, 0.07), (zb - 0.15, r + 0.24, 0.04, 0.06, 0.05)], n=12, sub=3)
+        piece(H, "ChainGuard", "Chassis", xf(guard, (0.32, 0, 0)), col="primary", mat="metal", role="detail", pri=1.5)
+        R.glow_lamp(H, "Taillight", "Chassis", K.box((0.16, 0.12, 0.06), (0, r + 1.0, zb + 0.5), r=0.03), R.TAIL, pri=1.6)
+        if not tandem:
+            by0, bz = ht_top[1] - 0.2, ht_top[2] - 0.75
+            bk = R.loft_y([(by0, bz, 0.46, 0.34, 0.34, 4.0), (by0 + 0.2, bz, 0.5, 0.37, 0.37, 4.0), (by0 + 0.4, bz, 0.53, 0.4, 0.4, 4.0), (by0 + 0.6, bz, 0.56, 0.42, 0.42, 4.0)],
+                          n=28, sub=3, cap=True)
+            lip = R.loft_y([(by0 + 0.58, bz, 0.6, 0.46, 0.46, 4.0), (by0 + 0.68, bz, 0.6, 0.46, 0.46, 4.0)], n=28, sub=1)
+            weave = kit_stripes(lambda P: P[:, 1], 7.5, width=0.4, depth=0.35)
+            piece(H, "Basket", "Steer", merge(bk, sweep([(0, ht_top[1] + 0.2, ht_top[2] - 0.32), (0, top[1] - 0.05, top[2] - 0.05)], 0.03, segs=6)), col="wood", mat="wood", role="detail",
+                  pri=1.0, pattern=weave, ao=False)
+            piece(H, "BasketRim", "Steer", lip, col="darkWood", mat="wood", role="detail", pri=1.6)
+            R.glow_lamp(H, "Headlight", "Steer", K.lamp((0, ht_top[1] - 0.35, ht_top[2] - 1.12), 0.1, 0.06), R.WARM)
+        else:
+            R.glow_lamp(H, "Headlight", "Steer", K.lamp((0, ht_bot[1] - 0.1, ht_bot[2] - 0.16), 0.1, 0.06), R.WARM)
+        bell = merge(K.cyl(0.07, 0.1, (-0.55, gy + 0.03, gz - 0.12), "y", segs=12), K.D.revolve([(0, 0), (0.02, 0.09), (0.09, 0.08), (0.11, 0)], segs=12, axis=1, spline=2))
+        bell = merge(K.cyl(0.05, 0.03, (-0.55, gy + 0.03, gz - 0.12), "y", segs=8), xf(K.D.revolve([(0, 0), (0.02, 0.09), (0.09, 0.08), (0.11, 0)], segs=12, axis=1, spline=2), (-0.55, gy + 0.05, gz - 0.12)))
+        piece(H, "Bell", "Steer", bell, col="metal", mat="metal", role="detail", pri=2.0)
+        stand = sweep([(-0.15, bb[1] - 0.05, bb[2] + 0.45), (-0.38, 0.05, bb[2] + 0.75)], 0.035, segs=6)
+        piece(H, "Kickstand", "Chassis", stand, col="darker", mat="metal", role="detail", pri=1.9)
+
+    def mv(pose, u):
+        K.add(pose, "Crank", (0, 0, 0, -TAU * u, 0, 0))
+        if tandem:
+            K.add(pose, "Crank2", (0, 0, 0, -TAU * u, 0, 0))
+
+    K.vehicle_clips(H, wheels, susp="Chassis", height=3.6, length=zb - zf + 2 * r, sym=12, steer=("Steer",), roll=1.8, bob=0.4, turns=1.0, attack="honk", extra_move=mv)
+    H.socket("head", (0, 4.6, 0), "Chassis")
+    H.socket("mouth", (0, 2.5, zf - r), "Chassis")
+    H.socket("exhaust", (0, r, zb + r), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    hip = (0.0, seats[0][1] + 0.2, seats[0][2] + 0.06)
+    extra = None
+    if tandem:
+        H.socket("seat2", (0.0, seats[1][1] + 0.2, seats[1][2] + 0.06), "Chassis")
+        extra = {"seats": 2}
+    R.finish_mount(H, "Seat", hip, (-1.4, hip[2]), extra=extra, seat_size=(0.5, 0.15, 0.7))
+    return H
+
+
+# ==================================================================================================== real-scale boards (stand rides)
+def _deck_shape(L, W, t, kick, kick_len, y_top, ex=5.0):
+    """Board deck lofted along Z: rounded popsicle nose / tail, kicktails bent up over kick_len at both ends,
+    rails rounded by a boxy superellipse section. Top surface at y_top in the middle."""
+    e = L / 2 - W / 2
+    zs = list(np.linspace(-L / 2, -e, 5)) + list(np.linspace(-e * 0.6, e * 0.6, 3)) + list(np.linspace(e, L / 2, 5))
+    secs = []
+    for z in zs:
+        a = abs(z)
+        hw = W / 2 * math.sqrt(max(1 - ((a - e) / (W / 2)) ** 2, 0.0)) if a > e else W / 2
+        hw = max(hw, W * 0.06)
+        u = min(max((a - (L / 2 - kick_len)) / kick_len, 0), 1)
+        secs.append((z, y_top - t / 2 + kick * u * u, hw, t / 2, t / 2, ex))
+    return loft(secs, n=28, sub=2)
+
+
+def skateboard_real():
+    """Skateboard at real scale (2.9 studs): concave maple deck with kicked nose and tail, grip tape with a printed
+    band, deck bolts, two cast trucks (baseplate, kingpin with bushings, hanger and axle) and four urethane wheels
+    with bearing cores on their own Wheel bones. Stand ride: the seat socket is the deck top (feet)."""
+    H = _new("skateboard", pv("#E76F51", "#F4D35E", darker="#1C1C1F", metal="#B8BEC6"))
+    H.bone("Chassis", "Body", (0, 0, 0))
+    L, W, top, t = 2.9, 0.92, 0.42, 0.08
+    deck = _deck_shape(L, W, t, 0.2, 0.42, top)
+    stripe = kit_stripes(lambda P: P[:, 2], 2.2, width=0.18, depth=0.35)
+    piece(H, "Deck", "Chassis", deck, col="primary", mat="wood", role="body", pri=0.5, pattern=stripe)
+    grip = _deck_shape(L - 0.06, W - 0.06, 0.012, 0.2, 0.41, top + 0.008)
+    piece(H, "Seat", "Chassis", grip, col="darker", mat="rubber", role="seat", pri=0.9)
+    bolts = merge(*[K.cyl(0.012, 0.028, (x, top + 0.016, z), "y", segs=8) for x in (-0.1, 0.1) for z in (-0.88, -1.02, 0.88, 1.02)])
+    piece(H, "Bolts", "Chassis", bolts, col="metal", mat="metal", role="detail", pri=2.0)
+    wheels = []
+    for z, tag in ((-0.95, "F"), (0.95, "B")):
+        ay = 0.14
+        sg = -1 if z < 0 else 1
+        tr = [K.box((0.34, 0.05, 0.42), (0, top - t - 0.025, z), r=0.015),                                   # baseplate
+              sweep([(0, top - t - 0.05, z + sg * 0.05), (0, ay + 0.05, z - sg * 0.06)], 0.035, segs=8),     # kingpin
+              K.cyl(0.07, 0.07, (0, ay + 0.12, z - sg * 0.02), "y", segs=12),                              # bushing seat
+              loft([(-0.08, 0, 0.42, 0.07, 0.05, 3.2), (0.08, 0, 0.42, 0.07, 0.05, 3.2)], n=16, sub=1),     # hanger (placed below)
+              sweep([(-0.54, ay, z), (0.54, ay, z)], 0.025, segs=8)]
+        tr[3] = xf(tr[3], (0, ay + 0.03, z))
+        piece(H, "Truck" + tag, "Chassis", merge(*tr), col="metal", mat="metal", role="detail", pri=0.9)
+        bush = merge(K.cyl(0.05, 0.065, (0, ay + 0.18, z - sg * 0.03), "y", segs=10), K.cyl(0.05, 0.065, (0, ay + 0.07, z - sg * 0.03), "y", segs=10))
+        piece(H, "Bushings" + tag, "Chassis", bush, col="secondary", mat="plastic", role="detail", pri=1.8)
+        for s, sd in ((1, "R"), (-1, "L")):
+            pos = (s * 0.42, ay, z)
+            b = H.bone(f"Wheel{tag}{sd}", "Chassis", pos)
+            wm = K.lathe_profile([(-0.07, 0.05), (-0.075, 0.1), (-0.06, 0.135), (0.06, 0.14), (0.075, 0.11), (0.07, 0.05)], 18, "x")
+            core = K.lathe_profile([(-0.075, 0.0), (-0.075, 0.05), (0.072, 0.05), (0.072, 0.0)], 12, "x")
+            piece(H, f"Wheel{tag}{sd}", b, xf(wm, pos), col="white", mat="plastic", role="wheel", pri=1.0, fallback="Cylinder")
+            piece(H, f"Hub{tag}{sd}", b, xf(core, pos), col="secondary", mat="plastic", role="wheel", pri=1.6, fallback="Cylinder")
+            wheels.append((b, 0.14))
+
+    def atk(pose, s):  # ollie: tail snap, pop, level out, land
+        up = K._bump(s, 0.12, 0.8)
+        K.add(pose, "Chassis", (0, 0.9 * up, 0, 0.32 * K._bump(s, 0.08, 0.4) - 0.12 * K._bump(s, 0.4, 0.75), 0, 0))
+
+    K.vehicle_clips(H, wheels, susp="Chassis", height=0.6, length=L, sym=8, roll=0.8, bob=0.6, turns=2.0, attack="honk", extra_attack=atk)
+    H.socket("head", (0, 2.6, 0), "Chassis")
+    H.socket("mouth", (0, top, -1.45), "Chassis")
+    H.socket("exhaust", (0, top, 1.45), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    R.finish_mount(H, "Seat", (0, top + 0.02, 0), (-1.4, 0.0), stand=True, extra={"stance": "side"}, seat_size=(0.8, 0.05, 2.2))
+    return H
+
+
+def hoverboard_real():
+    """Hoverboard at real scale (4.2 studs): sculpted board with an upturned nose and a raised tail kick, inset grip
+    pad, a glowing trim line around the rails, two thruster nacelles underneath with glowing intakes and exhaust
+    rings (Thruster* glow pieces), twin tail fins and a stabiliser keel. Hovers ~1 stud up (deck top 1.0)."""
+    H = _new("hoverboard", pv("#3A86FF", "#E8ECF2", darker="#1B1E26", metal="#AEB7C2"), gait="hover")
+    H.bone("Chassis", "Body", (0, 1.0, 0))
+    L, W, top, t = 4.2, 1.3, 1.0, 0.16
+    body = loft([(-2.1, top + 0.32, 0.12, 0.04, 0.05, 2.4), (-1.9, top + 0.12, 0.45, 0.06, 0.08, 2.6), (-1.4, top - 0.02, 0.62, 0.07, 0.11, 3.0), (-0.3, top - 0.07, 0.66, 0.07, 0.12, 3.2),
+                 (0.8, top - 0.07, 0.64, 0.07, 0.12, 3.2), (1.7, top - 0.0, 0.52, 0.07, 0.1, 3.0), (2.08, top + 0.12, 0.3, 0.05, 0.07, 2.6)], n=32, sub=5)
+    piece(H, "Deck", "Chassis", body, col="primary", mat="plastic", role="body", pri=0.5)
+    pad = loft([(-1.55, top + 0.025, 0.45, 0.025, 0.02, 3.0), (-0.3, top + 0.0, 0.52, 0.03, 0.02, 3.4), (0.9, top + 0.0, 0.5, 0.03, 0.02, 3.4), (1.6, top + 0.07, 0.38, 0.025, 0.02, 3.0)], n=24, sub=4)
+    piece(H, "Seat", "Chassis", pad, col="darker", mat="rubber", role="seat", pri=0.8)
+    rail = loft([(-2.0, top + 0.18, 0.36, 0.015, 0.015, 2.4), (-1.6, top + 0.0, 0.63, 0.016, 0.016, 2.8), (-0.3, top - 0.075, 0.675, 0.016, 0.016, 3.2), (0.8, top - 0.075, 0.655, 0.016, 0.016, 3.2),
+                 (1.7, top - 0.01, 0.535, 0.016, 0.016, 3.0), (2.02, top + 0.1, 0.34, 0.015, 0.015, 2.6)], n=32, sub=5)
+    R.glow_lamp(H, "TrimGlow", "Chassis", rail, R.CYAN, pri=1.5)
+    belly = loft([(-1.6, top - 0.16, 0.42, 0.06, 0.08), (0.0, top - 0.2, 0.48, 0.08, 0.1), (1.5, top - 0.17, 0.38, 0.06, 0.08)], n=22, sub=4)
+    piece(H, "Belly", "Chassis", belly, col="secondary", mat="metal", role="detail", pri=1.0)
+    nac = []
+    glow_in, glow_out = [], []
+    for z in (-1.05, 1.05):
+        nac.append(R.loft_y([(top - 0.62, z, 0.36, 0.36, 0.36, 2.0), (top - 0.5, z, 0.44, 0.44, 0.44, 2.0), (top - 0.3, z, 0.42, 0.42, 0.42, 2.0), (top - 0.18, z, 0.3, 0.3, 0.3, 2.0)], n=26, sub=3))
+        glow_out.append(K.tube_ring(0.33, 0.2, 0.04, axis="y", segs=26, pos=(0, top - 0.64, z)))
+        glow_out.append(K.cyl(0.03, 0.2, (0, top - 0.63, z), "y", segs=20))
+        glow_in += [K.box((0.06, 0.05, 0.3), (s * 0.43, top - 0.42, z), r=0.02) for s in (-1, 1)]
+    piece(H, "Nacelles", "Chassis", merge(*nac), col="metal", mat="metal", role="detail", pri=0.9)
+    R.glow_lamp(H, "ThrusterJets", "Chassis", merge(*glow_out), R.CYAN, pri=1.2)
+    R.glow_lamp(H, "ThrusterVents", "Chassis", merge(*glow_in), R.CYAN, pri=1.7)
+    fins = []
+    for s in (-1, 1):
+        fp = round_poly(np.array([(1.35, top - 0.1), (1.95, top - 0.05), (2.05, top - 0.42), (1.75, top - 0.45)]), [0.05, 0.08, 0.06, 0.1], 2)
+        fins.append(xf(extrude(fp, 0.05, bevel=0.02, seg=1), (s * 0.42, 0, 0)))
+    keel = extrude(round_poly(np.array([(-0.5, top - 0.18), (0.5, top - 0.18), (0.3, top - 0.38), (-0.3, top - 0.38)]), 0.06, 2), 0.06, bevel=0.02, seg=1)
+    piece(H, "Fins", "Chassis", merge(*fins, keel), col="primary", mat="plastic", role="detail", pri=1.2)
+    lamps = merge(K.box((0.3, 0.05, 0.05), (0, top + 0.22, -2.03), r=0.02, rot_=(30, 0, 0)))
+    R.glow_lamp(H, "Headlight", "Chassis", lamps, R.WARM, pri=1.8)
+    R.glow_lamp(H, "Taillight", "Chassis", K.box((0.32, 0.05, 0.05), (0, top + 0.08, 2.07), r=0.02), R.TAIL, pri=1.8)
+    K.mount(H, "Seat", (0, top + 0.03, 0), (0.9, 0.05, 3.0), "Chassis")
+    H.socket("head", (0, top + 3.4, 0), "Chassis")
+    H.socket("mouth", (0, top, -2.1), "Chassis")
+    H.socket("exhaust", (0, top - 0.64, 1.05), "Chassis")
+    H.rig.update({"head": "Chassis"})
+
+    def move(t):
+        u = t / 1.2
+        return {"Chassis": (0, 0.06 * math.sin(TAU * u * 2), 0, -0.05 + 0.015 * math.sin(TAU * u * 2), 0, 0.07 * math.sin(TAU * u))}
+
+    def idle(t):
+        u = t / 2.4
+        return {"Chassis": (0, 0.1 * math.sin(TAU * u), 0, 0.02 * math.sin(TAU * u * 2), 0.04 * math.sin(TAU * u), 0.025 * math.sin(TAU * u + 1))}
+
+    def atk(t):
+        s = t / 0.8
+        return {"Chassis": (0, 0.7 * K._bump(s, 0.0, 0.75), -0.8 * K._bump(s, 0.2, 0.8), 0.3 * K._bump(s, 0.0, 0.4), TAU * K._ease((s - 0.1) / 0.6), 0)}
+
+    def hit(t):
+        s = t / 0.45
+        k = math.sin(math.pi * min(s, 1))
+        return {"Chassis": (0, -0.1 * k, 0.3 * k, 0.2 * k, 0, 0.2 * math.sin(t * 30) * k)}
+
+    H.clip("Move", 1.2, move, keys=20)
+    H.clip("Idle", 2.4, idle, keys=20)
+    H.clip("Attack", 0.8, atk, keys=16, loop=False)
+    H.clip("Hit", 0.45, hit, keys=10, loop=False)
+    H.rig["height"] = 1.4
+    R.finish_mount(H, "Seat", (0, top + 0.03, 0), (-1.5, 0.0), stand=True, extra={"stance": "side", "hover": 1.0}, seat_size=(0.9, 0.05, 3.0))
+    return H
+
+
+def kick_scooter_real():
+    """Kick scooter at real scale (3.3 studs): aluminium deck with grip and a kicked tail over the rear wheel
+    (foot brake fender), headset with folding clamp, tall T-bar with grips, small spoked urethane wheels."""
+    H = _new("scooter", pv("#7B2CBF", "#E0E0E0", metal="#C4CAD2", darker="#1C1D22"))
+    top = 0.38
+    zf, zb, r = -1.25, 1.3, 0.32
+    H.bone("Chassis", "Body", (0, 0, 0))
+    H.bone("Steer", "Chassis", (0, 0.9, -1.12))
+    H.bone("WheelF", "Steer", (0, r, zf))
+    H.bone("WheelB", "Chassis", (0, r, zb))
+    wheels = [R.moto_wheel(H, "WheelF", "WheelF", (0, r, zf), r, 0.18, style="cast", spokes=5, rim_col="secondary", ri=r * 0.66, segs=24),
+              R.moto_wheel(H, "WheelB", "WheelB", (0, r, zb), r, 0.18, style="cast", spokes=5, rim_col="secondary", ri=r * 0.66, segs=24)]
+    deck = loft([(-1.0, top - 0.06, 0.3, 0.06, 0.06, 4.0), (-0.85, top - 0.06, 0.38, 0.06, 0.07, 4.0), (0.8, top - 0.06, 0.38, 0.06, 0.07, 4.0), (1.0, top - 0.04, 0.3, 0.05, 0.06, 4.0)], n=20, sub=3)
+    neck = sweep([(0, top - 0.08, -0.9), (0, 0.62, -1.05), (0, 0.78, -1.1)], 0.08, segs=10)
+    tailarm = merge(*[sweep([(s * 0.18, top - 0.08, 0.85), (s * 0.15, r, zb)], 0.05, segs=8) for s in (-1, 1)])
+    piece(H, "Chassis", "Chassis", merge(deck, neck, tailarm), col="primary", mat="metal", role="body", pri=0.5)
+    grip = loft([(-0.82, top + 0.005, 0.33, 0.012, 0.01, 4.0), (0.78, top + 0.005, 0.33, 0.012, 0.01, 4.0)], n=20, sub=1)
+    piece(H, "Seat", "Chassis", grip, col="darker", mat="rubber", role="seat", pri=0.8)
+    brake = loft([(0.95, top + 0.08, 0.14, 0.03, 0.02), (1.3, r + 0.38, 0.2, 0.04, 0.03), (1.62, r + 0.2, 0.15, 0.03, 0.02)], n=14, sub=3)
+    piece(H, "Brake", "Chassis", brake, col="darker", mat="metal", role="detail", pri=1.2)
+    gy, gz = top + 2.0 + 1.15, -1.0
+    stem = [sweep([(0, 0.75, -1.12), (0, gy - 0.05, gz - 0.12)], 0.065, segs=12), sweep([(0, 1.1, -1.11), (0, 1.35, -1.1)], 0.085, segs=12),
+            K.box((0.22, 0.12, 0.2), (0, 1.48, -1.08), r=0.04), sweep([(0, gy, gz - 0.12), (-0.85, gy, gz - 0.12)], 0.045, segs=8), sweep([(0, gy, gz - 0.12), (0.85, gy, gz - 0.12)], 0.045, segs=8)]
+    for s in (-1, 1):
+        stem.append(sweep([(s * 0.1, 0.78, -1.12), (s * 0.1, r, zf)], 0.04, segs=8))
+    piece(H, "Stem", "Steer", merge(*stem), col="metal", mat="metal", role="detail", pri=0.8)
+    grips = merge(*[sweep([(s * 0.5, gy, gz - 0.12), (s * 0.92, gy, gz - 0.12)], 0.07, segs=10) for s in (-1, 1)])
+    piece(H, "Grips", "Steer", grips, col="darker", mat="rubber", role="detail", pri=1.2)
+    clamp = merge(K.box((0.2, 0.12, 0.22), (0, 0.95, -1.12), r=0.04), K.box((0.12, 0.08, 0.3), (0.12, 0.95, -1.0), r=0.03))
+    piece(H, "Clamp", "Steer", clamp, col="secondary", mat="plastic", role="detail", pri=1.5)
+    ffend = _fender(zf, r, r + 0.04, 0.03, 40, 150, 0.22, dome=0.5)
+    piece(H, "FenderF", "Steer", ffend, col="primary", mat="plastic", role="detail", pri=1.5)
+    K.vehicle_clips(H, wheels, susp="Chassis", height=3.6, length=3.3, sym=5, steer=("Steer",), roll=1.2, bob=0.4, turns=2.0, attack="honk")
+    H.socket("head", (0, top + 3.4, 0), "Chassis")
+    H.socket("mouth", (0, 0.6, -1.6), "Chassis")
+    H.socket("exhaust", (0, 0.5, 1.6), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    R.finish_mount(H, "Seat", (0, top + 0.02, 0.3), (-1.3, 0.3), stand=True, extra={"stance": "forward"}, seat_size=(0.6, 0.05, 1.6))
     return H
