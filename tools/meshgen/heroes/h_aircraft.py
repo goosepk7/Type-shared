@@ -318,54 +318,101 @@ def biplane():
 
 
 # ================================================================================================ jet fighter
+def jet_gear(H, nose, mains, wr=(0.75, 1.0), door=True):
+    """Gear legs with doors on GearF / GearR / GearL (pivots at the strut tops; the game folds them about X)."""
+    (nt, na), (mt, ma) = nose, mains
+    H.bone("GearF", "Body", nt)
+    s, t, _ = gear_leg(nt, na, wr[0], 0.55, pant=False)
+    ms = [s, t, cyl(0.12, 1.3, (na[0], na[1], na[2]), axis=0, segs=8)]
+    if door:
+        ms.append(box((0.08, (nt[1] - na[1]) * 0.75, 1.5), (nt[0] + 0.62, (nt[1] + na[1]) / 2 + 0.3, nt[2] + 0.25), r=0.03))
+    dpiece(H, "GearFP", "GearF", merge(*ms), col="metal", mat="metal", role="limb", pri=1.3)
+    H.mbone("Gear#", "Body", mt)
+    s, t, _ = gear_leg(mt, ma, wr[1], 0.7, pant=False)
+    ms = [s, t]
+    if door:
+        ms.append(xform(box((0.1, (mt[1] - ma[1]) * 0.8, 1.9), (0, 0, 0), r=0.04), (ma[0] + 0.55, (mt[1] + ma[1]) / 2 + 0.25, (mt[2] + ma[2]) / 2), (0, 0, -12)))
+    dmpiece(H, "GearP#", "Gear#", merge(*ms), col="metal", mat="metal", role="limb", pri=1.2)
+
+
 @hero("jet", "aircraft")
 def jet():
+    """Generic single-seat jet at real game scale (34 studs long, 24 stud span): bubble canopy over the cockpit
+    (ejection seat, stick, panel), side intakes, swept wings, twin canted fins, twin nozzles with Burner glow
+    discs (BurnerR / BurnerL), tricycle gear on GearF / GearR / GearL."""
     H = P("jet")
-    H.preview = {"primary": "#78909C", "secondary": "#37474F"}
-    yc = 2.0
-    fus = Fus([(-7.8, 0.0, 0.0, yc), (-7.2, 0.22, 0.22, yc), (-6.2, 0.42, 0.45, yc + 0.03), (-4.8, 0.6, 0.66, yc + 0.06), (-3.2, 0.72, 0.72, yc + 0.08),
-               (-1.6, 1.25, 0.66, yc), (1.5, 1.35, 0.6, yc), (3.6, 1.05, 0.55, yc), (5.0, 0.95, 0.5, yc)], n=22, p=2.4)
+    H.preview = {"primary": "#9AA6B2", "secondary": "#4A5562", "dark": "#2B3036"}
+    hip = (0.0, 4.1, -7.2)
+    yc = 4.8
+    F = SplitFus([(-17.2, 0.0, 0.0, 0.0, 4.45), (-16.7, 0.42, 0.42, 0.42, 4.47), (-14.6, 1.12, 1.1, 1.08, 4.55), (-12.2, 1.75, 1.75, 1.55, 4.68),
+                  (-10.6, 2.12, 2.1, 2.15, 4.78), (-8.6, 2.38, 2.25, 3.0, yc), (-6.5, 2.38, 2.25, 3.15, yc), (-4.4, 2.32, 2.22, 2.6, yc),
+                  (-2.0, 2.5, 2.15, 1.7, yc), (3.0, 2.95, 1.95, 1.48, yc), (8.0, 3.15, 1.7, 1.3, 4.85), (12.0, 2.95, 1.5, 1.2, 4.9),
+                  (14.6, 2.75, 1.42, 1.15, 4.9), (14.85, 0.0, 0.0, 0.0, 4.9)], n=36, p_lo=2.8, p_up=2.4)
     H.body((0, yc, 0))
-    dpiece(H, "Hull", "Body", fus.mesh(), col="primary", mat="metal", fallback="Ellipsoid")
-    dpiece(H, "Nose", "Body", Fus([(-7.85, 0.0, 0.0, yc), (-7.2, 0.23, 0.23, yc), (-6.4, 0.4, 0.42, yc + 0.03)], n=22, p=2.4).mesh(), col="secondary", role="detail")
-    dpiece(H, "Canopy", "Body", canopy(-5.6, -2.2, 0.62, yc + 0.6, sx=0.85, sy=0.85), col=[0.75, 0.62, 0.3], mat="glass", tr=0.35, role="glass", pri=1.3)
-    dpiece(H, "Seat", "Body", bucket_seat((0, yc + 0.35, -4.0), w=0.6, rake=-20), col="dark", role="detail")
-    # intakes
-    ins = []
+    zg0, zg1, zr = -10.9, -3.4, -13.4
+    zs = zrange(-17.2, 14.85, 0.85, (zg0, zg1, zr))
+    zs = sorted(set(zs + list(np.linspace(-17.2, -16.0, 4)) + list(np.linspace(14.3, 14.85, 3))))
+    under = lambda Q: 0.78 + 0.22 * np.clip((Q[:, 1] - 2.8) / 2.0, 0, 1)
+    zh = [z for z in zs if z >= zr]
+    dpiece(H, "Hull", "Body", merge(F.lower(zh, n=26), F.upper([z for z in zh if z <= zg0], n=22), F.upper([z for z in zh if z >= zg1], n=22)),
+           col="primary", mat="metal", fallback="Ellipsoid", pattern=under)
+    dpiece(H, "Nose", "Body", F.shell([z for z in zs if z <= zr], n=30), col="secondary", mat="hard", role="body", pri=1.1)
+    dpiece(H, "CanopyGlass", "Body", F.upper([z for z in zs if zg0 <= z <= zg1], th=0.08, n=28), col=[0.62, 0.72, 0.8], mat="glass", tr=0.45, role="glass", pri=1.1)
+    frame = merge(F.ring(zg0, r=0.14, out=0.03), F.ring(zg0 + 1.7, r=0.1, out=0.04), F.ring(zg1, r=0.14, out=0.03),
+                  F.line(np.linspace(zg0, zg1, 12), yfn=F.yc, r=0.1, out=0.05))
+    dpiece(H, "CanopyFrame", "Body", frame, col="dark", role="detail", pri=1.3)
+    seams = merge(*[F.ring(z, r=0.045, ylo="full", out=0.0, n=28) for z in (-1.0, 6.0, 11.5)])
+    pitot = merge(tube([[0, 4.45, -17.0], [0, 4.45, -18.6]], 0.06, 6), cyl(0.12, 0.5, (0, 4.45, -17.1), axis=2, segs=8))
+    dpiece(H, "Seams", "Body", merge(seams, pitot), col="secondary", role="detail", pri=2.0)
+    # ---- side intakes (hollow, dark compressor face), LERX strakes
+    ink = Fus([(-6.3, 0.95, 1.15, 3.85, 3.0), (-3.5, 1.0, 1.2, 3.85, 3.0), (2.5, 0.92, 1.12, 3.95, 3.0), (7.0, 0.45, 0.8, 4.2, 2.8), (8.2, 0.0, 0.0, 4.3)], n=20, smooth=True)
+    duct = xform(band(ink, zrange(-6.3, 8.2, 0.9), th=0.16, n=20), (2.75, 0, 0))
+    face = merge(xform(A.lathe([(-0.06, 0.0), (-0.06, 0.62), (0.06, 0.62), (0.06, 0.0)], axis=2, segs=16), (2.75, 3.85, -5.1), (0, 0, 0), (1.0, 1.15, 1.0)),
+                 sphere(0.28, (2.75, 3.85, -5.25), scale=(1, 1, 0.7), segs=10))
+    dpiece(H, "Intakes", "Body", merge(duct, mirror(duct)), col="primary", mat="metal", role="body", pri=1.1)
+    dpiece(H, "IntakeFaces", "Body", merge(face, mirror(face)), col="gunmetal", mat="metal", role="detail", pri=1.9)
+    lerx = A.wing(1.5, 8.8, 0.3, sweep=8.0, thick=0.16, pos=(2.1, 4.85, -10.4), nt=6, nu=6)
+    # ---- wings, tip rails, fins, stabilisers, ventrals
+    wing = A.wing(9.9, 10.6, 2.3, sweep=7.7, thick=0.75, dihedral=-3, pos=(2.3, 4.35, -2.6), nt=9, nu=8)
+    dpiece(H, "Wings", "Body", merge(wing, mirror(wing), lerx, mirror(lerx)), col="primary", mat="metal", role="wing", pattern=under)
+    tx, ty_ = 2.3 + 9.9, 4.35 - 9.9 * math.tan(math.radians(3))
+    rail = merge(rev([(-1.6, 0.0), (-1.4, 0.2), (1.8, 0.2), (2.0, 0.0)], axis=2, segs=10, pos=(tx + 0.05, ty_, -2.6 + 7.7 + 1.0)),
+                 box((0.12, 0.3, 2.6), (tx + 0.05, ty_ - 0.2, -2.6 + 7.7 + 1.0), r=0.04))
+    flaps = []
+    for x0, x1 in ((3.0, 7.2), (7.5, 11.3)):
+        z0 = -2.6 + 10.6 + (7.7 + 2.3 - 10.6) * (x0 - 2.3) / 9.9
+        z1 = -2.6 + 10.6 + (7.7 + 2.3 - 10.6) * (x1 - 2.3) / 9.9
+        dy0, dy1 = -(x0 - 2.3) * math.tan(math.radians(3)), -(x1 - 2.3) * math.tan(math.radians(3))
+        flaps.append(tube([[x0, 4.35 + dy0 + 0.17, z0 - 1.5], [x1, 4.35 + dy1 + 0.1, z1 - 0.95]], 0.045, 4))
+    fm = merge(rail, *flaps)
+    dpiece(H, "WingDetail", "Body", merge(fm, mirror(fm)), col="secondary", role="detail", pri=1.6)
+    H.prim("NavLightR", "Body", "Ball", (0.22, 0.22, 0.3), (tx + 0.05, ty_ + 0.22, 6.5), col=[0.2, 0.95, 0.35], glow=True, role="light", pri=2.4)
+    H.prim("NavLightL", "Body", "Ball", (0.22, 0.22, 0.3), (-tx - 0.05, ty_ + 0.22, 6.5), col="red", glow=True, role="light", pri=2.4)
+    fin = A.fin(6.0, 5.2, 1.7, 4.3, thick=0.38, pos=(0, 0, 0))
+    fin = xform(fin, (2.0, 6.0, 8.2), (0, 0, -16))
+    rud = xform(tube([[0, 1.0, 4.4], [0, 5.4, 5.6]], 0.05, 4), (2.0, 6.0, 8.2), (0, 0, -16))
+    dpiece(H, "Fins", "Body", merge(fin, mirror(fin), rud, mirror(rud)), col="secondary", mat="metal", role="detail", pri=1.1)
+    hs = A.wing(4.9, 4.2, 1.5, sweep=3.2, thick=0.32, dihedral=-4, pos=(2.4, 4.55, 11.0))
+    ven = xform(A.fin(1.5, 2.2, 1.0, 1.0, thick=0.18, pos=(0, 0, 0)), (1.6, 3.4, 10.5), (0, 0, 180 - 20))
+    dpiece(H, "Tail", "Body", merge(hs, mirror(hs), ven, mirror(ven)), col="primary", mat="metal", role="wing")
+    # ---- twin nozzles + afterburner glow (Burner*)
+    noz = []
     for s in (1, -1):
-        ins.append(box((0.5, 0.75, 1.6), (s * 1.05, yc - 0.15, -2.2), r=0.12))
-    dpiece(H, "Intakes", "Body", merge(*ins), col="primary", role="detail")
-    dpiece(H, "IntakeHoles", "Body", merge(*[box((0.36, 0.6, 0.08), (s * 1.06, yc - 0.15, -3.0), r=0.06) for s in (1, -1)]), col=[0.06, 0.06, 0.07], role="detail", pri=2)
-    # delta wings, twin canted fins, small tailplanes
-    w = A.wing(4.3, 5.6, 0.9, sweep=4.4, thick=0.3, dihedral=-2, pos=(1.0, yc - 0.15, -2.0))
-    dpiece(H, "Wings", "Body", merge(w, mirror(w)), col="primary", role="wing")
-    f = A.fin(2.3, 2.3, 0.7, 1.9, thick=0.14, pos=(0.75, yc + 0.35, 2.4), rot=(0, 0, -18))
-    dpiece(H, "Fins", "Body", merge(f, mirror(f)), col="secondary", role="detail")
-    hs = A.wing(1.9, 1.6, 0.6, sweep=1.2, thick=0.1, pos=(0.9, yc - 0.1, 3.6))
-    dpiece(H, "Tail", "Body", merge(hs, mirror(hs)), col="primary", role="wing")
-    # twin exhaust nozzles + afterburner glow
-    nz = []
-    for s in (1, -1):
-        nz.append(A.lathe([(4.8, 0.48), (5.8, 0.42), (5.8, 0.32), (4.9, 0.3)], axis=2, segs=16, pos=(s * 0.5, yc, 0), closed=True))
-        nz.append(A.lathe([(5.3, 0.0), (5.3, 0.33), (5.4, 0.33), (5.4, 0.0)], axis=2, segs=16, pos=(s * 0.5, yc, 0)))
-    dpiece(H, "Nozzles", "Body", merge(*nz), col="gunmetal", mat="metal", role="detail")
-    H.mprim("Burner#", "Body", "Ball", (0.5, 0.5, 0.3), (0.5, yc, 5.5), col="flame", glow=True, role="light", pri=2.4)
-    # missiles under the wings
-    ms = []
-    for x in (2.6, 3.8):
-        ms.append(rev([(-1.3, 0.0), (-1.1, 0.1), (-0.8, 0.12), (1.1, 0.12), (1.2, 0.0)], axis=2, segs=10, pos=(x, yc - 0.45, 0.2 + (x - 2.6) * 0.6)))
-        ms.append(box((0.5, 0.03, 0.3), (x, yc - 0.45, 1.25 + (x - 2.6) * 0.6), r=0.01))
-        ms.append(box((0.03, 0.5, 0.3), (x, yc - 0.45, 1.25 + (x - 2.6) * 0.6), r=0.01))
-        ms.append(box((0.06, 0.28, 0.8), (x, yc - 0.25, 0.2 + (x - 2.6) * 0.6), r=0.02))
-    mm = merge(*ms)
-    dpiece(H, "Missiles", "Body", merge(mm, mirror(mm)), col="white", mat="hard", role="detail")
-    # landing gear
-    gw = [wheel(0.32, 0.25, (1.3, 0.32, 0.6), axis=0), wheel(0.32, 0.25, (-1.3, 0.32, 0.6), axis=0), wheel(0.26, 0.2, (0, 0.26, -5.2), axis=0)]
-    legs = [tube([[1.3, 0.32, 0.6], [1.1, yc - 0.4, 0.4]], 0.08, 6), tube([[-1.3, 0.32, 0.6], [-1.1, yc - 0.4, 0.4]], 0.08, 6), tube([[0, 0.26, -5.2], [0, yc - 0.5, -5.0]], 0.07, 6)]
-    dpiece(H, "Gear", "Body", merge(*gw, *legs), col="tyre", mat="rubber", role="detail")
-    H.mprim("WingTip#", "Body", "Ball", (0.12, 0.12, 0.12), (5.25, yc - 0.3, 3.2), col="red", glow=True, role="light", pri=2.6)
-    common(H, (0, yc + 0.55, -4.0), (0.6, 0.15, 0.7), -7.9, 5.9, yc + 1.6, muzzle=(0.4, yc + 0.1, -6.5), exhaust=(0, yc, 6.0))
-    A.air_clips(H, size=1.4, attack="roll", bank=0.55)
+        noz.append(A.lathe([(13.6, 1.28), (14.6, 1.3), (16.9, 1.08), (16.9, 0.96), (14.8, 1.02), (14.2, 0.9)], axis=2, segs=24, pos=(s * 1.32, 4.75, 0), closed=True))
+        noz.append(A.lathe([(15.3, 0.0), (15.3, 1.0), (15.45, 1.0), (15.45, 0.0)], axis=2, segs=20, pos=(s * 1.32, 4.75, 0)))
+    dpiece(H, "Nozzles", "Body", merge(*noz), col="gunmetal", mat="metal", role="detail", pattern=lambda Q: 0.82 + 0.18 * np.cos(np.arctan2(Q[:, 1] - 4.75, np.abs(Q[:, 0]) - 1.32) * 16))
+    for s, nm in ((1, "R"), (-1, "L")):
+        H.prim(f"Burner{nm}", "Body", "Cylinder", (0.08, 1.9, 1.9), (s * 1.32, 4.75, 15.55), rot=(0, math.pi / 2, 0), col="flame", glow=True, role="light", pri=2.2)
+        H.prim(f"BurnerCore{nm}", "Body", "Ball", (1.2, 1.2, 1.6), (s * 1.32, 4.75, 15.9), col="flameCore", glow=True, role="light", pri=2.5, tr=0.35)
+    # ---- cockpit, gear, antennas
+    cockpit(H, F, hip, floor_y=2.85, panel_z=-9.25, panel_w=3.7, panel_top=5.45)
+    jet_gear(H, ((0, 2.75, -11.6), (0, 0.75, -11.8)), ((1.9, 3.1, 2.4), (2.95, 1.0, 2.9)))
+    H.prim("Beacon", "Body", "Ball", (0.28, 0.2, 0.4), (0, F.top(4.0) + 0.05, 4.0), col="red", glow=True, role="light", pri=2.5)
+    ant = merge(xform(A.fin(0.8, 0.6, 0.25, 0.45, thick=0.07, pos=(0, 0, 0)), (0, F.bottom(-2.0) + 0.05, -2.0), (180, 0, 0)),
+                xform(A.fin(0.7, 0.55, 0.25, 0.4, thick=0.07, pos=(0, 0, 0)), (0, F.top(1.5) - 0.05, 1.5)))
+    dpiece(H, "Antennas", "Body", ant, col="dark", role="detail", pri=2.6)
+    ride(H, hip, (-4.5, -7.2), -18.7, 17.0, hip[1] + 3.9, muzzle=(1.6, 5.3, -12.0), exhaust=(0, 4.75, 17.0))
+    A.craft_clips(H, 34.0, attack="roll", bank=0.5)
     return H
 
 
