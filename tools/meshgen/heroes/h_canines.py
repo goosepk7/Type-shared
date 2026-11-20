@@ -341,12 +341,15 @@ def _canid(hid, **kw):
             stride=0.4 if LG > 0.7 else 0.5, walk=0.62 * (0.75 + 0.25 * LG) * (s ** 0.3), attack=P["attack"], wag=P["wag"],
             floppy=P["ear"] in ("floppy", "long"))
     if P["mount"] and P.get("mount_len"):
-        soles = {"WristFR": fpaw, "WristFL": fpaw * A(-1, 1, 1), "HockBR": bpaw, "HockBL": bpaw * A(-1, 1, 1)}
-        MK.rig_mount(H, torso, -0.15 * BL * s, legs, soles, height, P["mount_len"],
-                     walk=(1.2 * s ** 0.3, "walk", "walk", 2.6 * s, 0.45 * s),
-                     run=(0.62 * s ** 0.3, "bound", "bound", 6.2 * s, 0.75 * s),
+        k = P.get("scale", 1.0)
+        MK.scale_hero(H, k)
+        fp_, bp_ = fpaw * k, bpaw * k
+        soles = {"WristFR": fp_, "WristFL": fp_ * A(-1, 1, 1), "HockBR": bp_, "HockBL": bp_ * A(-1, 1, 1)}
+        MK.rig_mount(H, MK.scale_sdf(torso, k), -0.15 * BL * s * k, legs, soles, height * k, P["mount_len"],
+                     walk=(1.2 * (s * k) ** 0.3, "walk", "walk", 2.6 * s * k, 0.45 * s * k),
+                     run=(0.62 * (s * k) ** 0.3, "bound", "bound", 6.2 * s * k, 0.75 * s * k),
                      neck=main["neck"], head=main["head"], jaw=main["jaw"], tail=["Tail1", "Tail2", "Tail3"], ears=ears,
-                     pad_col=P.get("pad_col", "secondary"), ytop=(backY + 3) * s, curl=0.7)
+                     pad_col=P.get("pad_col", "secondary"), ytop=(backY + 3) * s * k, curl=0.7)
     return H
 
 
@@ -534,7 +537,7 @@ def dog():
 
 @hero("wolf", "canines")
 def wolf():
-    return _canid("wolf", s=1.4, mount=True, mount_len=8.4, pad_col=[0.3, 0.36, 0.5], ear="erect", ear_size=1.12, tail="hang", tail_thick=1.25, ruff=0.6, fluff=0.012, girth=0.95, leg=1.08, muzzle=1.05, belly=0.75,
+    return _canid("wolf", scale=1.4, mount=True, mount_len=8.4, pad_col=[0.3, 0.36, 0.5], ear="erect", ear_size=1.12, tail="hang", tail_thick=1.25, ruff=0.6, fluff=0.012, girth=0.95, leg=1.08, muzzle=1.05, belly=0.75,
                   marks={"bib": "secondary", "mask": "secondary"}, eyecol="gold", wag=0.0, preview=PV("#6E6E70", "#D6D2CC", "#D9A13B", gold="#D9A13B"))
 
 
@@ -727,7 +730,7 @@ def dire_wolf():
 
 @hero("warg", "canines")
 def warg():
-    return _canid("warg", s=1.68, mount_len=10.0, pad_col=[0.35, 0.25, 0.18], ear="erect", ear_size=0.9, tail="hang", tail_thick=1.35, ruff=0.9, fluff=0.024, girth=1.25, chest=1.1, slope=0.1,
+    return _canid("warg", s=1.2, scale=1.4, mount_len=10.0, pad_col=[0.35, 0.25, 0.18], ear="erect", ear_size=0.9, tail="hang", tail_thick=1.35, ruff=0.9, fluff=0.024, girth=1.25, chest=1.1, slope=0.1,
                   lt=1.3, head=1.22, mw=1.25, fangs=2.4, paws=1.2, mane=0.9, eyecol="red", mount=True, saddle="goblin",
                   preview=PV("#44403C", "#A8A29E", red="#D9372B"))
 
