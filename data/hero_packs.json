@@ -24,10 +24,10 @@
   "tris": 7593
  },
  "airplane": {
-  "assetId": 94249429402621,
-  "hash": "df231915f09b1131",
-  "pieces": 11,
-  "tris": 5848
+  "assetId": 91947038132144,
+  "hash": "ad4e13f4ab0adb33",
+  "pieces": 19,
+  "tris": 25696
  },
  "albatross": {
   "assetId": 87103405705190,
@@ -84,10 +84,10 @@
   "tris": 17210
  },
  "ambulance": {
-  "assetId": 92847864969450,
-  "hash": "eaf8cb852b5ff3f4",
-  "pieces": 32,
-  "tris": 16468
+  "assetId": 101397310896008,
+  "hash": "2b9abb61cb332e72",
+  "pieces": 40,
+  "tris": 19478
  },
  "ambulocetus": {
   "assetId": 105957541825723,
@@ -168,16 +168,16 @@
   "tris": 17000
  },
  "armored car": {
-  "assetId": 109331459189206,
-  "hash": "85ad7f6f0e7f3a59",
-  "pieces": 20,
-  "tris": 13370
+  "assetId": 120179455479317,
+  "hash": "b6a1bf82686e5b2e",
+  "pieces": 22,
+  "tris": 15738
  },
  "atv": {
-  "assetId": 114869007881240,
-  "hash": "34efd25b30792d89",
-  "pieces": 15,
-  "tris": 7454
+  "assetId": 72621225288041,
+  "hash": "7c5aed3a460b31b6",
+  "pieces": 26,
+  "tris": 17092
  },
  "axolotl": {
   "assetId": 126823265934573,
@@ -210,8 +210,8 @@
   "tris": 5600
  },
  "banana car": {
-  "assetId": 128037970784837,
-  "hash": "583ee168189fa935",
+  "assetId": 71811477809011,
+  "hash": "4e56ddb26e88eaf7",
   "pieces": 15,
   "tris": 8804
  },
@@ -258,8 +258,8 @@
   "tris": 12300
  },
  "bathtub car": {
-  "assetId": 128692874372211,
-  "hash": "c3951a3d2dec53e3",
+  "assetId": 128061875249175,
+  "hash": "1f0100a0e6dc130a",
   "pieces": 17,
   "tris": 10604
  },
@@ -342,10 +342,10 @@
   "tris": 12400
  },
  "bicycle": {
-  "assetId": 72871019096437,
-  "hash": "c5c749c33d7ce5dd",
-  "pieces": 11,
-  "tris": 6354
+  "assetId": 72241799246975,
+  "hash": "b19722b36b3437e2",
+  "pieces": 22,
+  "tris": 11180
  },
  "bigfoot": {
   "assetId": 86081630240409,
@@ -354,10 +354,10 @@
   "tris": 17350
  },
  "biplane": {
-  "assetId": 124640284126913,
-  "hash": "a75499919dd3d62f",
-  "pieces": 12,
-  "tris": 4832
+  "assetId": 109776283699805,
+  "hash": "002161d1271b1782",
+  "pieces": 17,
+  "tris": 18420
  },
  "bird": {
   "assetId": 109154316634425,
@@ -396,10 +396,10 @@
   "tris": 11880
  },
  "blimp": {
-  "assetId": 83453295715926,
-  "hash": "5ccc2fcbc9730347",
-  "pieces": 12,
-  "tris": 5136
+  "assetId": 95630357327147,
+  "hash": "4f826d8f71264ed1",
+  "pieces": 17,
+  "tris": 17956
  },
  "blobfish": {
   "assetId": 91327538972735,
@@ -432,10 +432,10 @@
   "tris": 17460
  },
  "bmx": {
-  "assetId": 95743369359999,
-  "hash": "c558cb74b3d66973",
-  "pieces": 10,
-  "tris": 5554
+  "assetId": 127334059605830,
+  "hash": "9d38905a8fd575eb",
+  "pieces": 16,
+  "tris": 9908
  },
  "boar": {
   "assetId": 99768566896836,
@@ -468,14 +468,14 @@
   "tris": 7799
  },
  "broomstick": {
-  "assetId": 97604074593324,
-  "hash": "2d96761c960f1eb8",
+  "assetId": 135860426990561,
+  "hash": "f4e5fb2783fde916",
   "pieces": 6,
-  "tris": 3420
+  "tris": 3676
  },
  "bubble car": {
-  "assetId": 84122933985536,
-  "hash": "2f315b17665d78a3",
+  "assetId": 74812533979861,
+  "hash": "1999daa16d65f6a1",
   "pieces": 14,
   "tris": 6100
  },
@@ -492,10 +492,10 @@
   "tris": 17560
  },
  "bulldozer": {
-  "assetId": 73166647997386,
-  "hash": "135fb708841ed4e8",
+  "assetId": 81423492780462,
+  "hash": "09033f95cace6b64",
   "pieces": 28,
-  "tris": 10540
+  "tris": 10548
  },
  "bullet train": {
   "assetId": 81182311817755,
@@ -510,8 +510,8 @@
   "tris": 12398
  },
  "bumper car": {
-  "assetId": 130891169930489,
-  "hash": "4d563c84737927f2",
+  "assetId": 78673674816141,
+  "hash": "fd9f27cdd3bdee3c",
   "pieces": 14,
   "tris": 6712
  },
@@ -522,10 +522,10 @@
   "tris": 14900
  },
  "bus": {
-  "assetId": 80382417872687,
-  "hash": "2bbae5844de93af9",
-  "pieces": 23,
-  "tris": 13076
+  "assetId": 133145869841236,
+  "hash": "1ada39273bcd75cf",
+  "pieces": 29,
+  "tris": 23402
  },
  "butterfly": {
   "assetId": 75109064138903,
@@ -576,10 +576,10 @@
   "tris": 12800
  },
  "car": {
-  "assetId": 114570796330647,
-  "hash": "9ba1c36b03964f53",
-  "pieces": 26,
-  "tris": 14510
+  "assetId": 128865707109100,
+  "hash": "255a83a0469f2903",
+  "pieces": 37,
+  "tris": 22432
  },
  "cardinal": {
   "assetId": 131602234332997,
@@ -594,8 +594,8 @@
   "tris": 18980
  },
  "cart": {
-  "assetId": 103537404946850,
-  "hash": "755f0b5f1795b2ea",
+  "assetId": 102696787326573,
+  "hash": "cfebafda36d2345f",
   "pieces": 8,
   "tris": 4460
  },
@@ -630,10 +630,10 @@
   "tris": 18400
  },
  "cement mixer": {
-  "assetId": 110860831719833,
-  "hash": "4d70f33064da2e51",
-  "pieces": 32,
-  "tris": 23468
+  "assetId": 130305694956209,
+  "hash": "0a1ef9638e6cb299",
+  "pieces": 38,
+  "tris": 26350
  },
  "centaur": {
   "assetId": 112443454735432,
@@ -666,16 +666,16 @@
   "tris": 19340
  },
  "chariot": {
-  "assetId": 135391138592524,
-  "hash": "20f9c47d3b9d8659",
+  "assetId": 109209752600383,
+  "hash": "48fb05135fd914a1",
   "pieces": 9,
-  "tris": 2636
+  "tris": 5072
  },
  "chariot of fire": {
-  "assetId": 131418105424757,
-  "hash": "7d641f38ab006988",
+  "assetId": 119581479557966,
+  "hash": "6e2608e040803e10",
   "pieces": 9,
-  "tris": 5144
+  "tris": 5084
  },
  "cheetah": {
   "assetId": 95704860670776,
@@ -738,8 +738,8 @@
   "tris": 5440
  },
  "chopper motorcycle": {
-  "assetId": 120065301779651,
-  "hash": "884c9d7e4fd89fc0",
+  "assetId": 97495630834582,
+  "hash": "cda0c5e4f38d553b",
   "pieces": 15,
   "tris": 9286
  },
@@ -780,8 +780,8 @@
   "tris": 7500
  },
  "cloud surfboard": {
-  "assetId": 126386035064335,
-  "hash": "8895dca035b3d522",
+  "assetId": 80536582439524,
+  "hash": "28c5a03fd8cf4763",
   "pieces": 5,
   "tris": 4360
  },
@@ -846,10 +846,10 @@
   "tris": 18610
  },
  "convertible": {
-  "assetId": 108487964255259,
-  "hash": "871d25e929a210b7",
-  "pieces": 27,
-  "tris": 19878
+  "assetId": 72539045641537,
+  "hash": "dad46988be692aaf",
+  "pieces": 34,
+  "tris": 24014
  },
  "corgi": {
   "assetId": 92385035507044,
@@ -858,14 +858,14 @@
   "tris": 18810
  },
  "couch car": {
-  "assetId": 91905809359581,
-  "hash": "802fdf153f5bc229",
+  "assetId": 83286775330215,
+  "hash": "aea1035311c9cff1",
   "pieces": 17,
   "tris": 9700
  },
  "covered wagon": {
-  "assetId": 73876712655073,
-  "hash": "a2c60ac1b4b07b39",
+  "assetId": 79333042565306,
+  "hash": "031c93846a259064",
   "pieces": 12,
   "tris": 6712
  },
@@ -942,10 +942,10 @@
   "tris": 19094
  },
  "delivery truck": {
-  "assetId": 138717248114768,
-  "hash": "b6a9bbb8a1cfc57d",
-  "pieces": 27,
-  "tris": 14400
+  "assetId": 97083242604100,
+  "hash": "d65f775d5e45c1aa",
+  "pieces": 34,
+  "tris": 17130
  },
  "demon": {
   "assetId": 103333676406441,
@@ -984,10 +984,10 @@
   "tris": 18108
  },
  "dirt bike": {
-  "assetId": 110675556125377,
-  "hash": "bfaa032d928d09bd",
-  "pieces": 18,
-  "tris": 9444
+  "assetId": 76156425917130,
+  "hash": "05d803dc80e204ef",
+  "pieces": 33,
+  "tris": 18372
  },
  "discus fish": {
   "assetId": 113830659176709,
@@ -1032,10 +1032,10 @@
   "tris": 22230
  },
  "double decker bus": {
-  "assetId": 93744284769357,
-  "hash": "1494ec0797d335d8",
-  "pieces": 23,
-  "tris": 13824
+  "assetId": 106864851701593,
+  "hash": "4ec25284673b68dd",
+  "pieces": 30,
+  "tris": 24234
  },
  "dove of peace": {
   "assetId": 120978104830983,
@@ -1164,8 +1164,8 @@
   "tris": 12010
  },
  "duck car": {
-  "assetId": 137101189603281,
-  "hash": "14ee788ba662a7b6",
+  "assetId": 100302698070428,
+  "hash": "e126cf1be6678122",
   "pieces": 15,
   "tris": 9104
  },
@@ -1176,14 +1176,14 @@
   "tris": 12060
  },
  "dump truck": {
-  "assetId": 110813651760121,
-  "hash": "7ed984b56885fd63",
-  "pieces": 32,
-  "tris": 21778
+  "assetId": 114459249932494,
+  "hash": "8338d7bac59520af",
+  "pieces": 38,
+  "tris": 24610
  },
  "dune buggy": {
-  "assetId": 130790672350132,
-  "hash": "b210392b44a7fc97",
+  "assetId": 118980068494063,
+  "hash": "72f810cdca51aeb3",
   "pieces": 14,
   "tris": 9222
  },
@@ -1254,10 +1254,10 @@
   "tris": 8860
  },
  "excavator": {
-  "assetId": 72525229487648,
-  "hash": "bbb8b19f81b0c257",
+  "assetId": 91689026937946,
+  "hash": "39c94572e8dca165",
   "pieces": 27,
-  "tris": 9724
+  "tris": 9732
  },
  "face grabber": {
   "assetId": 113443291979937,
@@ -1320,10 +1320,10 @@
   "tris": 15300
  },
  "fire truck": {
-  "assetId": 118172639985238,
-  "hash": "d9ce443767a4900d",
-  "pieces": 37,
-  "tris": 23224
+  "assetId": 70834059939907,
+  "hash": "f1c8882532172df3",
+  "pieces": 44,
+  "tris": 27292
  },
  "firefly": {
   "assetId": 107443013840065,
@@ -1380,10 +1380,10 @@
   "tris": 9320
  },
  "flying carpet": {
-  "assetId": 76253013499376,
-  "hash": "f66f583491092fc6",
+  "assetId": 130125933975363,
+  "hash": "a97b96db07b1cfcd",
   "pieces": 10,
-  "tris": 4452
+  "tris": 5288
  },
  "foal": {
   "assetId": 137707192782840,
@@ -1398,14 +1398,14 @@
   "tris": 16430
  },
  "food truck": {
-  "assetId": 101417881493026,
-  "hash": "e75c96579445ca8c",
-  "pieces": 32,
-  "tris": 15292
+  "assetId": 107300117946124,
+  "hash": "021f0ee977d95db8",
+  "pieces": 39,
+  "tris": 18214
  },
  "forklift": {
-  "assetId": 134580908861598,
-  "hash": "d8dd55630551d8bb",
+  "assetId": 136971814095210,
+  "hash": "0d68bd775a5994cf",
   "pieces": 19,
   "tris": 7650
  },
@@ -1440,10 +1440,10 @@
   "tris": 12300
  },
  "garbage truck": {
-  "assetId": 105856885666566,
-  "hash": "c914df5be723c98b",
-  "pieces": 31,
-  "tris": 20574
+  "assetId": 80290734697476,
+  "hash": "1b970af870f1fe34",
+  "pieces": 38,
+  "tris": 23366
  },
  "gazelle": {
   "assetId": 121931568259800,
@@ -1500,16 +1500,16 @@
   "tris": 17344
  },
  "glider": {
-  "assetId": 75862014226437,
-  "hash": "42911f7f78f9d09e",
-  "pieces": 8,
-  "tris": 3232
+  "assetId": 74409525315573,
+  "hash": "d5384c4efed5b0b1",
+  "pieces": 13,
+  "tris": 14504
  },
  "go kart": {
-  "assetId": 87586542119728,
-  "hash": "18599ef9451b3b7f",
+  "assetId": 126110707738557,
+  "hash": "4722534ecc47f371",
   "pieces": 14,
-  "tris": 8120
+  "tris": 8228
  },
  "goat": {
   "assetId": 95445667564946,
@@ -1542,8 +1542,8 @@
   "tris": 15100
  },
  "golf cart": {
-  "assetId": 128193804184786,
-  "hash": "eb78d009db9a5a21",
+  "assetId": 73444866335022,
+  "hash": "d77f06812fcd645d",
   "pieces": 19,
   "tris": 8874
  },
@@ -1674,10 +1674,10 @@
   "tris": 18700
  },
  "helicopter": {
-  "assetId": 137961665922260,
-  "hash": "da2c1b2c5683901a",
-  "pieces": 10,
-  "tris": 3756
+  "assetId": 116688808286844,
+  "hash": "268f9b6271d4bb17",
+  "pieces": 27,
+  "tris": 22880
  },
  "hercules beetle": {
   "assetId": 104888460016948,
@@ -1752,34 +1752,34 @@
   "tris": 23714
  },
  "horse carriage": {
-  "assetId": 113584356870940,
-  "hash": "c96b8d7dca025c2d",
-  "pieces": 14,
-  "tris": 7430
+  "assetId": 108864165557881,
+  "hash": "fb349c7ce14f90d7",
+  "pieces": 18,
+  "tris": 14192
  },
  "horse sleigh": {
-  "assetId": 95520147031654,
-  "hash": "f3eeb5238d9a946b",
+  "assetId": 98099481179354,
+  "hash": "9b6f18c9fd723389",
   "pieces": 5,
   "tris": 4596
  },
  "hot air balloon": {
-  "assetId": 132248653899673,
-  "hash": "7c5002e13830d38e",
-  "pieces": 7,
-  "tris": 3884
+  "assetId": 127426660796916,
+  "hash": "7b9f2acc8e718719",
+  "pieces": 10,
+  "tris": 11120
  },
  "hot dog car": {
-  "assetId": 85419559527147,
-  "hash": "69b284f5ee2b5a90",
+  "assetId": 124319508206850,
+  "hash": "4847af69e817766d",
   "pieces": 16,
   "tris": 10604
  },
  "hoverboard": {
-  "assetId": 98645739240547,
-  "hash": "22898af5180843bd",
-  "pieces": 5,
-  "tris": 1080
+  "assetId": 132829001929405,
+  "hash": "38092df851148574",
+  "pieces": 10,
+  "tris": 7840
  },
  "hovercraft": {
   "assetId": 136928466805596,
@@ -1842,10 +1842,10 @@
   "tris": 17938
  },
  "ice cream truck": {
-  "assetId": 73347268326969,
-  "hash": "59b5ef314fdfc666",
-  "pieces": 33,
-  "tris": 15634
+  "assetId": 127578639002438,
+  "hash": "ce1e2ce41da515e1",
+  "pieces": 40,
+  "tris": 18556
  },
  "ice elemental": {
   "assetId": 87649129099025,
@@ -1926,10 +1926,10 @@
   "tris": 21000
  },
  "jet": {
-  "assetId": 99883018406099,
-  "hash": "5aad259535bec0fc",
-  "pieces": 12,
-  "tris": 6440
+  "assetId": 71189691037350,
+  "hash": "feb24721cdb01f90",
+  "pieces": 20,
+  "tris": 23116
  },
  "jet ski": {
   "assetId": 77250102222811,
@@ -1938,10 +1938,10 @@
   "tris": 2878
  },
  "jumbo jet": {
-  "assetId": 104898529737280,
-  "hash": "6fcbacfd39cae47e",
-  "pieces": 13,
-  "tris": 8184
+  "assetId": 78051080031493,
+  "hash": "80d3771ce574ab3f",
+  "pieces": 21,
+  "tris": 30936
  },
  "jumping spider": {
   "assetId": 84669987882518,
@@ -2082,10 +2082,10 @@
   "tris": 11500
  },
  "limousine": {
-  "assetId": 90569793740044,
-  "hash": "9611b8e3251b5c13",
-  "pieces": 26,
-  "tris": 14334
+  "assetId": 100856973697149,
+  "hash": "d9d116a1317cca79",
+  "pieces": 35,
+  "tris": 22772
  },
  "limpet": {
   "assetId": 126613207117315,
@@ -2208,10 +2208,10 @@
   "tris": 16400
  },
  "mech suit": {
-  "assetId": 71111734030600,
-  "hash": "cb402d82e5bc0027",
-  "pieces": 15,
-  "tris": 7382
+  "assetId": 84198995437622,
+  "hash": "1b6bbde49c69d9e0",
+  "pieces": 34,
+  "tris": 21396
  },
  "medusa": {
   "assetId": 133316596208960,
@@ -2280,10 +2280,10 @@
   "tris": 17000
  },
  "monster truck": {
-  "assetId": 135257224934133,
-  "hash": "e9fe0a2c76f21a07",
-  "pieces": 28,
-  "tris": 16066
+  "assetId": 108737111458890,
+  "hash": "8b4cacdec28aaacc",
+  "pieces": 36,
+  "tris": 20684
  },
  "moon beast": {
   "assetId": 93314232535941,
@@ -2292,10 +2292,10 @@
   "tris": 8200
  },
  "moon lander": {
-  "assetId": 86485191576787,
-  "hash": "a2383ae9785853be",
-  "pieces": 8,
-  "tris": 1768
+  "assetId": 117466461521666,
+  "hash": "fefecff9b24e1b25",
+  "pieces": 12,
+  "tris": 5072
  },
  "moose": {
   "assetId": 116302530718775,
@@ -2304,10 +2304,10 @@
   "tris": 19130
  },
  "moped": {
-  "assetId": 107316302191667,
-  "hash": "516d6d381149d21f",
-  "pieces": 14,
-  "tris": 4044
+  "assetId": 118213688482844,
+  "hash": "bfd1262c5e0eb0f8",
+  "pieces": 19,
+  "tris": 10488
  },
  "mosasaurus": {
   "assetId": 100742207001607,
@@ -2328,10 +2328,10 @@
   "tris": 12320
  },
  "motorcycle": {
-  "assetId": 88447018849592,
-  "hash": "b4eca99b11cd3439",
-  "pieces": 18,
-  "tris": 6970
+  "assetId": 94386107328875,
+  "hash": "a093b0e61f9364a5",
+  "pieces": 38,
+  "tris": 25322
  },
  "mountain goat": {
   "assetId": 113839261017770,
@@ -2364,10 +2364,10 @@
   "tris": 15000
  },
  "muscle car": {
-  "assetId": 108625338189354,
-  "hash": "b9f73f559ea5bc43",
-  "pieces": 28,
-  "tris": 17208
+  "assetId": 75531855385818,
+  "hash": "03d3771f3731ee51",
+  "pieces": 35,
+  "tris": 22302
  },
  "mushroom king": {
   "assetId": 92511623707093,
@@ -2418,10 +2418,10 @@
   "tris": 14840
  },
  "off roader": {
-  "assetId": 80032003590362,
-  "hash": "a6f5b61566988184",
-  "pieces": 28,
-  "tris": 16684
+  "assetId": 83493236646264,
+  "hash": "3a9ec69489d2f21b",
+  "pieces": 36,
+  "tris": 21002
  },
  "ogre": {
   "assetId": 133849033743717,
@@ -2568,10 +2568,10 @@
   "tris": 9460
  },
  "penny farthing": {
-  "assetId": 100280680319369,
-  "hash": "7e4b9a2c64abf87f",
-  "pieces": 8,
-  "tris": 4184
+  "assetId": 86046230152374,
+  "hash": "d6ba1a0ac06ab87b",
+  "pieces": 9,
+  "tris": 6920
  },
  "pet rock": {
   "assetId": 123171439142159,
@@ -2592,10 +2592,10 @@
   "tris": 18620
  },
  "pickup truck": {
-  "assetId": 125036161791852,
-  "hash": "ffe49393af525c63",
-  "pieces": 26,
-  "tris": 15346
+  "assetId": 115632501767438,
+  "hash": "245ae80ef79eb792",
+  "pieces": 34,
+  "tris": 18462
  },
  "pig": {
   "assetId": 108048761679345,
@@ -2658,10 +2658,10 @@
   "tris": 18400
  },
  "police car": {
-  "assetId": 127383743490025,
-  "hash": "06b56ce50c5fce52",
-  "pieces": 31,
-  "tris": 16506
+  "assetId": 133049420311132,
+  "hash": "578dbf56de28e5eb",
+  "pieces": 40,
+  "tris": 23596
  },
  "pomeranian": {
   "assetId": 105211317066652,
@@ -2694,16 +2694,16 @@
   "tris": 8240
  },
  "private jet": {
-  "assetId": 106672637011891,
-  "hash": "e9e78e6adcd252e8",
-  "pieces": 11,
-  "tris": 6856
+  "assetId": 96035187138756,
+  "hash": "1d248913f9643755",
+  "pieces": 19,
+  "tris": 23668
  },
  "propeller plane": {
-  "assetId": 105695413332022,
-  "hash": "6b1f9f4e5f587f47",
-  "pieces": 13,
-  "tris": 5500
+  "assetId": 125524828882353,
+  "hash": "7b96aa2bd1c85b45",
+  "pieces": 23,
+  "tris": 23428
  },
  "pteranodon": {
   "assetId": 137439654982695,
@@ -2796,8 +2796,8 @@
   "tris": 15000
  },
  "race car": {
-  "assetId": 77642161483439,
-  "hash": "338832ec50d5d64f",
+  "assetId": 82038187764852,
+  "hash": "31fdd1b98bc2d06f",
   "pieces": 18,
   "tris": 12044
  },
@@ -2808,10 +2808,10 @@
   "tris": 2760
  },
  "rally car": {
-  "assetId": 84422576758326,
-  "hash": "e1af3c80d2c8528a",
-  "pieces": 31,
-  "tris": 19116
+  "assetId": 114528136780091,
+  "hash": "c1504245d90cb88d",
+  "pieces": 40,
+  "tris": 26060
  },
  "ram": {
   "assetId": 95715297937754,
@@ -2874,10 +2874,10 @@
   "tris": 10400
  },
  "rickshaw": {
-  "assetId": 136188139917420,
-  "hash": "19e2c1538bc11a72",
-  "pieces": 13,
-  "tris": 7660
+  "assetId": 137605523070114,
+  "hash": "07566607412b04a1",
+  "pieces": 17,
+  "tris": 13596
  },
  "robin": {
   "assetId": 128519775103190,
@@ -2922,10 +2922,10 @@
   "tris": 15420
  },
  "rocket": {
-  "assetId": 78988258465544,
-  "hash": "932b83d473740d0b",
-  "pieces": 9,
-  "tris": 4248
+  "assetId": 73649232785929,
+  "hash": "8c4a99bdd3e98c96",
+  "pieces": 15,
+  "tris": 20468
  },
  "rockhopper penguin": {
   "assetId": 119247178717398,
@@ -3024,16 +3024,16 @@
   "tris": 10400
  },
  "school bus": {
-  "assetId": 91299850412166,
-  "hash": "a05644693b466242",
-  "pieces": 26,
-  "tris": 13512
+  "assetId": 111712889294663,
+  "hash": "aaf4fa9fee4327e8",
+  "pieces": 32,
+  "tris": 23168
  },
  "scooter": {
-  "assetId": 126335056630749,
-  "hash": "6263eb1714a79f4d",
-  "pieces": 9,
-  "tris": 3080
+  "assetId": 85848888333646,
+  "hash": "aa1ce35e6c203a12",
+  "pieces": 11,
+  "tris": 5720
  },
  "scorpion": {
   "assetId": 91011899673941,
@@ -3114,16 +3114,16 @@
   "tris": 14250
  },
  "seaplane": {
-  "assetId": 136614792552517,
-  "hash": "4b4d656214fb764b",
-  "pieces": 13,
-  "tris": 5440
+  "assetId": 103461358354223,
+  "hash": "9d14c0f5fbc6b421",
+  "pieces": 18,
+  "tris": 19000
  },
  "self balancing scooter": {
-  "assetId": 73223505104751,
-  "hash": "f995ce5537a5d587",
-  "pieces": 8,
-  "tris": 3636
+  "assetId": 127825387839020,
+  "hash": "cef0ab5b35c8a5e3",
+  "pieces": 10,
+  "tris": 6564
  },
  "shahmaran": {
   "assetId": 130288005488236,
@@ -3162,8 +3162,8 @@
   "tris": 4700
  },
  "shoe car": {
-  "assetId": 118886882928282,
-  "hash": "5665d9d06fd413c3",
+  "assetId": 86410951084476,
+  "hash": "de9fd8c625690b05",
   "pieces": 17,
   "tris": 10904
  },
@@ -3186,10 +3186,10 @@
   "tris": 19550
  },
  "skateboard": {
-  "assetId": 126042926710369,
-  "hash": "7f602eb79e777cc9",
-  "pieces": 8,
-  "tris": 1208
+  "assetId": 107190884762728,
+  "hash": "02ef4008275b3a17",
+  "pieces": 15,
+  "tris": 5720
  },
  "skeleton": {
   "assetId": 103842927186080,
@@ -3204,16 +3204,16 @@
   "tris": 15400
  },
  "sled": {
-  "assetId": 117554833098529,
-  "hash": "c264498b639da087",
+  "assetId": 84554073350110,
+  "hash": "5c4b327fc12014e9",
   "pieces": 4,
-  "tris": 4980
+  "tris": 3300
  },
  "sleigh": {
-  "assetId": 128279187395728,
-  "hash": "0bdc013801959874",
+  "assetId": 93672278237161,
+  "hash": "68794cd5f9970100",
   "pieces": 8,
-  "tris": 2748
+  "tris": 3348
  },
  "slime": {
   "assetId": 110699838699170,
@@ -3270,10 +3270,10 @@
   "tris": 17090
  },
  "snowmobile": {
-  "assetId": 77884122751406,
-  "hash": "ed8a4ad6e2cccba8",
-  "pieces": 12,
-  "tris": 4364
+  "assetId": 104006040315326,
+  "hash": "078058416f3f5a15",
+  "pieces": 19,
+  "tris": 13308
  },
  "snowy owl": {
   "assetId": 74476821248570,
@@ -3288,22 +3288,22 @@
   "tris": 7698
  },
  "space capsule": {
-  "assetId": 105378334455983,
-  "hash": "57cbb64c0e2c22ba",
-  "pieces": 8,
-  "tris": 2012
+  "assetId": 129146526279968,
+  "hash": "b44664ae79b96e12",
+  "pieces": 13,
+  "tris": 10808
  },
  "space shuttle": {
-  "assetId": 118878510924040,
-  "hash": "2be4687cc257c775",
-  "pieces": 12,
-  "tris": 5548
+  "assetId": 132350930329208,
+  "hash": "02bee956397c214f",
+  "pieces": 16,
+  "tris": 19632
  },
  "spaceship": {
-  "assetId": 137164265526539,
-  "hash": "21f1b5376b13c6cd",
-  "pieces": 10,
-  "tris": 3980
+  "assetId": 100500530843467,
+  "hash": "a405355b27b6c275",
+  "pieces": 17,
+  "tris": 17684
  },
  "sparrow": {
   "assetId": 77312808174316,
@@ -3336,10 +3336,10 @@
   "tris": 11580
  },
  "spider walker": {
-  "assetId": 87994909956145,
-  "hash": "0d2103bf678a0cde",
-  "pieces": 21,
-  "tris": 9252
+  "assetId": 116616413894107,
+  "hash": "261cd79f3e872cfc",
+  "pieces": 26,
+  "tris": 16820
  },
  "spinosaurus": {
   "assetId": 75506330828820,
@@ -3348,10 +3348,10 @@
   "tris": 20579
  },
  "sports car": {
-  "assetId": 113269201242404,
-  "hash": "80604256f590ca44",
-  "pieces": 26,
-  "tris": 15334
+  "assetId": 83104472937613,
+  "hash": "6696d04436d77a91",
+  "pieces": 36,
+  "tris": 23612
  },
  "squid": {
   "assetId": 136849559043548,
@@ -3390,10 +3390,10 @@
   "tris": 3400
  },
  "starfighter": {
-  "assetId": 136135606717369,
-  "hash": "0a46920654984025",
-  "pieces": 15,
-  "tris": 5612
+  "assetId": 123972586755172,
+  "hash": "205ab5907301413e",
+  "pieces": 18,
+  "tris": 17544
  },
  "starfish": {
   "assetId": 97127460707459,
@@ -3402,10 +3402,10 @@
   "tris": 9450
  },
  "station wagon": {
-  "assetId": 96882221350555,
-  "hash": "d0762bbeb97ed418",
-  "pieces": 28,
-  "tris": 14850
+  "assetId": 78218713931772,
+  "hash": "c52f6edb144e2c69",
+  "pieces": 36,
+  "tris": 21564
  },
  "steam train": {
   "assetId": 129946392479013,
@@ -3414,10 +3414,10 @@
   "tris": 14062
  },
  "steamroller": {
-  "assetId": 87417135658935,
-  "hash": "64efb73fb0739086",
+  "assetId": 97692174696527,
+  "hash": "17fcdd66d714fbb2",
   "pieces": 11,
-  "tris": 5440
+  "tris": 5448
  },
  "stegosaurus": {
   "assetId": 115233783173035,
@@ -3474,10 +3474,10 @@
   "tris": 7009
  },
  "suv": {
-  "assetId": 76773753697798,
-  "hash": "e7aecce5f502d381",
-  "pieces": 28,
-  "tris": 16102
+  "assetId": 130288176095369,
+  "hash": "a6bdf43507564ca5",
+  "pieces": 37,
+  "tris": 22758
  },
  "swallow": {
   "assetId": 123937094151078,
@@ -3504,22 +3504,22 @@
   "tris": 3900
  },
  "tandem bicycle": {
-  "assetId": 92617801941064,
-  "hash": "0d2429924db2c623",
-  "pieces": 12,
-  "tris": 6980
+  "assetId": 104455408801594,
+  "hash": "5e65f90672235f5b",
+  "pieces": 22,
+  "tris": 11832
  },
  "tank": {
-  "assetId": 127868729503517,
-  "hash": "ecb461ed0af1db0e",
-  "pieces": 29,
-  "tris": 12528
+  "assetId": 135643121948843,
+  "hash": "2d81bf5fc4fbd941",
+  "pieces": 30,
+  "tris": 12828
  },
  "tanker truck": {
-  "assetId": 106030025106526,
-  "hash": "ae02d2ae4c1d7790",
-  "pieces": 35,
-  "tris": 25258
+  "assetId": 78781529643691,
+  "hash": "915065db1588711f",
+  "pieces": 41,
+  "tris": 28916
  },
  "taotie": {
   "assetId": 111620347981731,
@@ -3540,10 +3540,10 @@
   "tris": 13900
  },
  "taxi": {
-  "assetId": 101719530049084,
-  "hash": "dcf1afb9e67179a8",
-  "pieces": 28,
-  "tris": 15306
+  "assetId": 124239361950663,
+  "hash": "d5a4a3bf7c7a2a6c",
+  "pieces": 37,
+  "tris": 22148
  },
  "teapot spirit": {
   "assetId": 102874604894400,
@@ -3630,10 +3630,10 @@
   "tris": 17460
  },
  "tractor": {
-  "assetId": 127782143694945,
-  "hash": "28374d7bb8d9b0c7",
+  "assetId": 119172662921900,
+  "hash": "d5ff9700d6538bf1",
   "pieces": 19,
-  "tris": 8648
+  "tris": 8656
  },
  "train": {
   "assetId": 91917638151969,
@@ -3666,10 +3666,10 @@
   "tris": 20640
  },
  "tricycle": {
-  "assetId": 71611447699242,
-  "hash": "d7ae5fe964f50678",
-  "pieces": 11,
-  "tris": 5548
+  "assetId": 98594289851627,
+  "hash": "af121a1c3b82b72a",
+  "pieces": 16,
+  "tris": 10416
  },
  "trilobite": {
   "assetId": 127503404196391,
@@ -3690,10 +3690,10 @@
   "tris": 16150
  },
  "truck": {
-  "assetId": 130532025295248,
-  "hash": "81fa5ac4d72b96ab",
-  "pieces": 31,
-  "tris": 21226
+  "assetId": 81454949721670,
+  "hash": "9c05bc9fe54806dc",
+  "pieces": 38,
+  "tris": 24200
  },
  "tsuchinoko": {
   "assetId": 109274181610069,
@@ -3738,10 +3738,10 @@
   "tris": 18980
  },
  "ufo": {
-  "assetId": 118235184968605,
-  "hash": "d73ffd305d6877e8",
-  "pieces": 8,
-  "tris": 3452
+  "assetId": 79092553880972,
+  "hash": "eb31704b0c8a801f",
+  "pieces": 12,
+  "tris": 9760
  },
  "unicorn": {
   "assetId": 71232554310932,
@@ -3750,10 +3750,10 @@
   "tris": 20412
  },
  "unicycle": {
-  "assetId": 95509894511801,
-  "hash": "0ee6de9f864a9a50",
+  "assetId": 124133319108251,
+  "hash": "ddc61e1a31c13039",
   "pieces": 5,
-  "tris": 2256
+  "tris": 3752
  },
  "vampire bat": {
   "assetId": 92961869547760,
@@ -3762,10 +3762,10 @@
   "tris": 11898
  },
  "van": {
-  "assetId": 139376212810510,
-  "hash": "2c1f50432948022d",
-  "pieces": 27,
-  "tris": 14398
+  "assetId": 123627459814897,
+  "hash": "ee5b2465a587312c",
+  "pieces": 34,
+  "tris": 17126
  },
  "velociraptor": {
   "assetId": 85835219365057,
@@ -3798,10 +3798,10 @@
   "tris": 18610
  },
  "wagon": {
-  "assetId": 95770542890405,
-  "hash": "f7b9017278b81ed2",
-  "pieces": 12,
-  "tris": 4912
+  "assetId": 115341003398990,
+  "hash": "5a708c6c5ccc95e6",
+  "pieces": 14,
+  "tris": 6324
  },
  "walrus": {
   "assetId": 116056729163234,
