@@ -1227,3 +1227,62 @@ def gear_leg(top, axle, wheel_r, wheel_w, pant=True, fork=False, segs=18):
         pm = rev([(-L * 0.42, 0.0), (-L * 0.36, wheel_r * 0.55), (-L * 0.1, wheel_r * 0.82), (L * 0.2, wheel_r * 0.78), (L * 0.5, wheel_r * 0.35), (L * 0.58, 0.0)],
                  axis=2, segs=16, pos=(ax[0], ax[1] + wheel_r * 0.25, ax[2]), scale=((wheel_w * 0.5 + 0.18) / (wheel_r * 0.82), 1.0, 1.0))
     return strut, tyre, pm
+
+
+# ================================================================================================ rideable craft helpers
+GLASS = [0.62, 0.8, 0.92]
+SCREEN = [0.35, 0.75, 1.0]
+
+
+
+def ride(H, hip, enter, nose_z, tail_z, top_y, seat_size=(1.8, 0.15, 1.5), muzzle=None, exhaust=None, length="auto"):
+    """Real-scale rideable craft: seat socket at the rider's hip, enter socket on the ground, measured length."""
+    mount(H, "Seat", hip, seat_size, length=length, enter=enter)
+    H.socket("head", (hip[0], top_y, hip[2]), "Body")
+    H.socket("mouth", (0, hip[1] - 0.3, nose_z), "Body")
+    H.socket("exhaust", exhaust or (0, hip[1] - 0.5, tail_z), "Body")
+    if muzzle is not None:
+        H.socket("muzzle", muzzle, "Body")
+
+
+def bulkhead(fus, z, th=0.12, inset=0.1, ylo=None):
+    r = fus.ring(z, 32)
+    w, h, yc, p = fus.at(z)
+    r[:, 0] *= (w - inset) / w
+    r[:, 1] = yc + (r[:, 1] - yc) * (h - inset) / h
+    if ylo is not None:
+        r[:, 1] = np.maximum(r[:, 1], ylo)
+    a, b = r.copy(), r.copy()
+    a[:, 2] = z - th / 2
+    b[:, 2] = z + th / 2
+    return loft([a, b], "fan", "fan", crease=40)
+
+
+def cockpit(H, F, hip, floor_y, panel_z, panel_w, panel_top, ctrl="stick", seat_w=1.9, screens=2, col="darker", side_console=True):
+    """Floor, pilot seat, instrument panel (glare shield + glowing screens), control stick / yoke, rudder pedals
+    and a throttle for a single pilot whose HIP point is `hip`."""
+    x, y, z = hip
+    dpiece(H, "Seat", "Body", pilot_seat(hip, w=seat_w, floor_y=floor_y), col="dark", mat="cloth", role="detail", pri=1.2)
+    pz0 = panel_z - 0.75
+    pb = floor_y + 0.6
+    panel = merge(xform(box((panel_w, panel_top - pb, 0.75), (0, 0, 0), r=0.15, seg=1), (x, (panel_top + pb) / 2, panel_z - 0.37), (-8, 0, 0)),
+                  xform(box((panel_w * 0.96, 0.16, 1.15), (0, 0, 0), r=0.07), (x, panel_top + 0.08, panel_z - 0.45), (-5, 0, 0)))
+    dpiece(H, "Panel", "Body", panel, col=col, role="detail", pri=1.3)
+    xs = [x] if screens == 1 else list(np.linspace(x - panel_w * 0.24, x + panel_w * 0.24, screens))
+    for i, sx in enumerate(xs):
+        H.prim(f"Screen{i + 1}", "Body", "Block", (min(1.0, panel_w / (screens + 1.2)), 0.62, 0.06), (sx, panel_top - 0.55, panel_z + 0.035),
+               rot=(math.radians(-8), 0, 0), col=SCREEN, glow=True, role="light", pri=2.0)
+    ms = []
+    if ctrl == "stick":
+        ms.append(stick(hip, floor_y, dz=-1.85, h=1.05))
+    else:
+        hn, cl = yoke(hip)
+        ms += [hn, cl]
+    for sx in (x - 0.5, x + 0.5):
+        ms.append(xform(box((0.42, 0.62, 0.12), (0, 0, 0), r=0.04), (sx, floor_y + 0.42, z - 2.0), (-38, 0, 0)))
+    if side_console:
+        ms.append(box((0.35, 0.5, 1.2), (x - seat_w / 2 - 0.3, y + 0.25, z - 0.9), r=0.08))
+        ms.append(tube([[x - seat_w / 2 - 0.3, y + 0.45, z - 0.9], [x - seat_w / 2 - 0.3, y + 0.95, z - 1.15]], 0.06, 6))
+        ms.append(sphere(0.13, (x - seat_w / 2 - 0.3, y + 1.0, z - 1.17), segs=8))
+    dpiece(H, "Controls", "Body", merge(*ms), col="gunmetal", mat="metal", role="detail", pri=1.6)
+    dpiece(H, "Floor", "Body", F.floor(z - 2.6, z + 1.1, floor_y), col="darker", role="detail", pri=1.6)
