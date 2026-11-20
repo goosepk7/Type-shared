@@ -163,11 +163,11 @@ def ball(r, pos, segs=12):
     return xf(D.revolve([(-r, 0), (-r * 0.7, r * 0.72), (0, r), (r * 0.7, r * 0.72), (r, 0)], segs=segs, axis=1, spline=2), pos)
 
 
-def spring(p0, p1, r, wire=0.04, turns=7, segs=6):
+def spring(p0, p1, r, wire=0.04, turns=7, segs=5):
     """Coil spring from p0 to p1 (shock absorbers)."""
     p0, p1 = np.asarray(p0, float), np.asarray(p1, float)
     Rm, c, L = K._frame(p0, p1)
-    k = turns * 10
+    k = turns * 7
     pts = [(r * math.cos(TAU * turns * i / k), r * math.sin(TAU * turns * i / k), -L / 2 + L * i / k) for i in range(k + 1)]
     m = sweep(pts, wire, segs=segs, sub=1)
     return D.moved(m, offset=c, rot=Rm)
