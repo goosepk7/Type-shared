@@ -14,11 +14,26 @@ import hoofkit as K
 TAGS = ("ungulate", "equine", "mount")
 
 
-def horse_kw(**kw):
+# Real game scale (mount overhaul 2026-11): the reference horse (s = 1) stands 3.3 studs at the withers; mounts are
+# authored next to the 5.2-stud R15 rider, so every equine is RS x its old relative size (horse: withers ~5.3, saddle
+# seat ~5.6, ~10 studs nose to tail). The engine still rescales summons to their size class.
+RS = 1.6
+
+# measured Z length (studs) of each built model, for H.mount.length (the game scales the model to this length)
+LENGTH = {
+    "horse": 10.0, "warhorse": 10.5, "clydesdale": 11.0, "pony": 7.2, "foal": 6.2, "zebra": 8.8, "donkey": 7.4,
+    "mule": 8.8, "unicorn": 10.0, "pegasus": 11.5, "alicorn": 11.5, "nightmare": 10.2,
+}
+
+
+def horse_kw(hid=None, **kw):
     d = dict(head="horse", ears="horse", mane="horse", forelock=True, tail="horse", hoof="solid", tack="riding", pupil=None,
-             gait="gallop", attack="rear", tags=TAGS, tuck=0.35,
+             gait="gallop", attack="rear", tags=TAGS, tuck=0.35, hq=True, walk_clip=True, lt=1.25, body=0.98,
              preview={"primary": "#7A4A2A", "secondary": "#2A1A12", "hoof": "#3B2F2A"})
     d.update(kw)
+    d["s"] = d.get("s", 1.0) * RS
+    if hid and d.get("tack") in ("riding", "barding"):
+        d["mount"] = {"length": LENGTH[hid]}
     return d
 
 
@@ -34,47 +49,47 @@ def zebra_stripes(s=1.0, yb=1.8, cy=2.45):
 
 @hero("horse", "equines")
 def horse():
-    return K.ungulate("horse", **horse_kw(legs_dark=0.55))
+    return K.ungulate("horse", **horse_kw("horse", legs_dark=0.55))
 
 
 @hero("warhorse", "equines")
 def warhorse():
-    return K.ungulate("warhorse", **horse_kw(tack="barding", forelock=False, bit=False, blanket=False, girth=1.1, lt=1.15, s=1.05,
+    return K.ungulate("warhorse", **horse_kw("warhorse", tack="barding", forelock=False, bit=False, blanket=False, bags=False, girth=1.1, lt=1.3, s=1.05,
                                              hs=1.05, legs_dark=0.4, neck_thick=1.1, tris=0.9,
                                              preview={"primary": "#3B2E2A", "secondary": "#2F4E8C", "hoof": "#2B2420", "steel": "#9AA4AE"}))
 
 
 @hero("clydesdale", "equines")
 def clydesdale():
-    return K.ungulate("clydesdale", **horse_kw(s=1.1, girth=1.22, depth=1.08, lt=1.3, hoof_r=1.2, feather=0.8, hs=1.08, neck_thick=1.15, mane_col="dark",
+    return K.ungulate("clydesdale", **horse_kw("clydesdale", s=1.1, girth=1.22, depth=1.08, lt=1.3, hoof_r=1.2, feather=0.8, hs=1.08, neck_thick=1.15, mane_col="dark",
                                                head_over={"roman": 0.04}, legs_dark=0.0,
                                                preview={"primary": "#6A3A1E", "secondary": "#F2F0EA", "hoof": "#3B2F2A"}))
 
 
 @hero("pony", "equines")
 def pony():
-    return K.ungulate("pony", **horse_kw(s=0.72, leg=0.84, girth=1.18, depth=1.08, body=0.9, hs=1.18, neck_len=0.82, neck_thick=1.15,
+    return K.ungulate("pony", **horse_kw("pony", s=0.72, leg=0.84, girth=1.18, depth=1.08, body=0.9, hs=1.18, neck_len=0.82, neck_thick=1.15,
                                          ears="pony", lt=1.2, arch=0.16, legs_dark=0.0,
                                          preview={"primary": "#B88A5A", "secondary": "#F2E6D4", "hoof": "#3B2F2A"}))
 
 
 @hero("foal", "equines")
 def foal():
-    return K.ungulate("foal", **horse_kw(s=0.62, leg=1.28, girth=0.78, depth=0.82, body=0.78, hs=1.3, neck_len=0.86, neck_thick=0.9,
+    return K.ungulate("foal", **horse_kw("foal", s=0.62, leg=1.28, girth=0.78, depth=0.82, body=0.78, hs=1.3, neck_len=0.86, neck_thick=0.9,
                                          lt=0.85, tack=None, tail_len=0.6, forelock=False, mane="brush", legs_dark=0.0, stride=0.9,
                                          preview={"primary": "#A06A3E", "secondary": "#F0E0C8", "hoof": "#3B2F2A"}))
 
 
 @hero("zebra", "equines")
 def zebra():
-    return K.ungulate("zebra", **horse_kw(s=0.88, girth=1.08, depth=1.05, hs=1.08, ears="zebra", mane="brush", forelock=False, tail="tuft",
-                                          tack=None, attack="buck", pattern=zebra_stripes(0.88, 1.8, 2.45), mane_col="secondary", shade=0.95,
+    return K.ungulate("zebra", **horse_kw("zebra", s=0.88, girth=1.08, depth=1.05, hs=1.08, ears="zebra", mane="brush", forelock=False, tail="tuft",
+                                          blanket_col=[0.85, 0.55, 0.15], bags=False, attack="buck", pattern=zebra_stripes(0.88, 1.8, 2.45), mane_col="secondary", shade=0.95,
                                           preview={"primary": "#F2F2F0", "secondary": "#1A1A1A", "hoof": "#2B2420"}))
 
 
 @hero("donkey", "equines")
 def donkey():
-    return K.ungulate("donkey", **horse_kw(s=0.74, leg=0.92, girth=1.1, depth=1.08, hs=1.25, ears="donkey", mane="brush", forelock=False,
+    return K.ungulate("donkey", **horse_kw("donkey", s=0.74, leg=0.92, girth=1.1, depth=1.08, hs=1.25, ears="donkey", mane="brush", forelock=False,
                                            tail="tuft", neck_len=0.85, neck_ang=40, neck_thick=1.1, arch=0.05, attack="buck", gait="trot",
                                            lt=1.1, withers=0.12, legs_dark=0.0,
                                            preview={"primary": "#8A8076", "secondary": "#3A332E", "hoof": "#3B2F2A"}))
@@ -82,21 +97,21 @@ def donkey():
 
 @hero("mule", "equines")
 def mule():
-    return K.ungulate("mule", **horse_kw(s=0.88, girth=1.05, hs=1.18, ears="mule", mane="brush", forelock=False, tail="horse", tail_len=0.85,
+    return K.ungulate("mule", **horse_kw("mule", s=0.88, girth=1.05, hs=1.18, ears="mule", mane="brush", forelock=False, tail="horse", tail_len=0.85,
                                          neck_ang=45, attack="buck", withers=0.15, legs_dark=0.3,
                                          preview={"primary": "#6E5444", "secondary": "#2E2420", "hoof": "#3B2F2A"}))
 
 
 @hero("unicorn", "equines")
 def unicorn():
-    return K.ungulate("unicorn", **horse_kw(tack=None, horn_unicorn=True, leg=1.05, girth=0.95, arch=0.18, feather=0.35, hoof_col="gold",
+    return K.ungulate("unicorn", **horse_kw("unicorn", horn_unicorn=True, blanket_col="secondary", bags=False, leg=1.05, girth=0.95, arch=0.18, feather=0.35, hoof_col="gold",
                                             legs_dark=0.0, shade=0.94, tags=TAGS + ("magic",),
                                             preview={"primary": "#FDF4FF", "secondary": "#F0ABFC", "horn": "#F3E3B0", "gold": "#E8B53A"}))
 
 
 def _winged(hid, horn, prev):
-    return K.ungulate(hid, **horse_kw(tack="bridle", wings="spread", horn_unicorn=horn, gait="fly", rig_gait="fly", leg=1.02, girth=0.95,
-                                      arch=0.16, legs_dark=0.0, shade=0.94, tris=0.8, hoof_col="gold" if horn else "hoof", tags=TAGS + ("magic", "flying"),
+    return K.ungulate(hid, **horse_kw(hid, wings="spread", wing_fold=True, wing_span=1.35, horn_unicorn=horn, rig_gait="fly", s=1.15, leg=1.02, girth=0.95,
+                                      arch=0.16, legs_dark=0.0, shade=0.94, tris=0.8, bags=False, hoof_col="gold" if horn else "hoof", tags=TAGS + ("magic", "flying"),
                                       preview=prev))
 
 
@@ -112,7 +127,7 @@ def alicorn():
 
 @hero("nightmare", "equines")
 def nightmare():
-    return K.ungulate("nightmare", **horse_kw(tack=None, mane="flame", forelock=False, hoof_col="secondary", eye_col=[1.0, 0.35, 0.1], eye_glow=True,
+    return K.ungulate("nightmare", **horse_kw("nightmare", mane="flame", blanket_col=[0.18, 0.05, 0.05], forelock=False, hoof_col="secondary", eye_col=[1.0, 0.35, 0.1], eye_glow=True,
                                               girth=1.05, lt=1.1, neck_thick=1.05, legs_dark=0.0, shade=0.9, tags=TAGS + ("undead", "fire"),
                                               preview={"primary": "#1B1F2A", "secondary": "#F97316", "hoof": "#2B2420"}))
 
