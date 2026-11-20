@@ -46,7 +46,7 @@ def zebra_stripes(s=1.0, yb=1.8, cy=2.45):
         legw = np.clip((yb + 0.1 - y) / 0.45, 0, 1)
         body = z * 1.0 + 0.45 * np.clip(z - 0.6, 0, None) * (y - cy) + 0.12 * np.abs(y - cy)
         return body * (1 - legw) + (y * 1.35 + 0.2 * z) * legw
-    return stripes(axis, 2.6, width=0.42, depth=0.93, wobble=0.05, seed=4)
+    return stripes(axis, 2.0, width=0.46, depth=0.93, wobble=0.05, seed=4)
 
 
 @hero("horse", "equines")
@@ -85,7 +85,7 @@ def foal():
 @hero("zebra", "equines")
 def zebra():
     return K.ungulate("zebra", **horse_kw("zebra", s=0.88, girth=1.08, depth=1.05, hs=1.08, ears="zebra", mane="brush", forelock=False, tail="tuft",
-                                          blanket_col=[0.85, 0.55, 0.15], bags=False, attack="buck", pattern=zebra_stripes(0.88 * RS, 1.8, 2.45), mane_col="secondary", shade=0.95,
+                                          blanket_col=[0.85, 0.55, 0.15], bags=False, attack="buck", pattern=zebra_stripes(0.88 * RS, 1.8, 2.45), mane_col="secondary", shade=0.95, tris=1.3,
                                           preview={"primary": "#F2F2F0", "secondary": "#1A1A1A", "hoof": "#2B2420"}))
 
 
