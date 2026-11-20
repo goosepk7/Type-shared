@@ -34,6 +34,8 @@ def horse_kw(hid=None, **kw):
     d["s"] = d.get("s", 1.0) * RS
     if hid and d.get("tack") in ("riding", "barding"):
         d["mount"] = {"length": LENGTH[hid]}
+        if d.get("wing_fold"):
+            d["mount"]["extra"] = {"flyer": True}
     return d
 
 
