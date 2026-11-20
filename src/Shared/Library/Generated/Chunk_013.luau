@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"hide and seek","KIBOKI","ZY",1,6,2,"8D6E63","FFFFFF","caster vanishing behind sparkles","giggle","Ready or not, here I... where'd I go?","silly,stealth"},
 	{"high chair","BMCC0I","G",1,1,4,"F2F2EE","C49A6C","tall chair with tray","squeak","Dinner. Throne. Fortress.","baby"},
 	{"high elf","ALCJNA","jFTe",6,7,4,"E5E7EB","FACC15","tall elegant elf, silver armor, staff","chime","Thinks very highly of high elves.","mythical,magic,royal"},
 	{"high five","KMBOKI","DF",1,8,2,"FFE082","FFFFFF","two glowing palms slapping with sparkles","clap","Up top!","cute"},
@@ -99,6 +98,7 @@ return {
 	{"honey flood","IMDFGI","ScIN",5,3,3,"E8A317","F7C948","slow golden wave","gloop","Sticky gold everywhere.","edible,sticky"},
 	{"honey fungus","NJCLMI","WSMP",3,1,5,"FFB300","6D4C41","golden clusters with stringy black roots","poof","Biggest living thing on Earth. Sneaky.","plant,fungus"},
 	{"honey lemon tea","IABOKI","KF",2,5,2,"E8B04A","F7E86A","steaming mug, lemon, honey","slurp","A sore throat's best friend.","edible,drink,warm"},
+	{"honey mango","IGBAKF","Fke",3,6,2,"F2C24A","F7D86A","small golden kidney mango","splat","Buttery and golden.","edible,fruit,sweet"},
 	{"honey mustard","IMBNGI","SNP",2,4,1,"E8B02B","F2D870","golden creamy dip","splat","Sweet and zingy.","edible,sauce"},
 	{"honey possum","AMAJAA","Uf",1,6,2,"8A6A4A","C8A07A","tiny striped nectar-eater","chirp","Long tongue. Lives on flowers.","mammal,marsupial"},
 	{"honey roasted peanuts","IMAELB","eVP",2,7,1,"C9A06A","E8A317","golden glazed nuts","pitter","Sweet, salty, sticky.","edible,sweet"},

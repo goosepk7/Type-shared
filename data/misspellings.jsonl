@@ -504,7 +504,7 @@
 {"w": "sword", "ms": ["sowrd", "swrod", "sord", "swerd", "sworde"]}
 {"w": "syrup", "ms": ["sierup", "syrupe"]}
 {"w": "tarantula", "ms": ["tarantual", "tarantla", "terantula"]}
-{"w": "tavern", "ms": ["tavurn", "taverne"]}
+{"w": "inn", "ms": ["tavurn", "taverne"]}
 {"w": "teacher", "ms": ["teecher", "teachur"]}
 {"w": "teepee", "ms": ["teeppee", "teapee"]}
 {"w": "telekinesis", "ms": ["tellekinesis", "teelkinesis"]}

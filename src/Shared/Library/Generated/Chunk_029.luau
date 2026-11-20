@@ -88,7 +88,7 @@ return {
 	{"wild magic","FLCGKE","UjV",5,7,2,"FF4081","7C4DFF","flickering orb changing colour constantly","boing","Could be great. Could be a chicken.","chaos,magic,silly"},
 	{"wild strawberry","IGAELB","eVP",2,7,1,"D7263D","3E8E2B","tiny red berry","pitter","Tiny but intense.","edible,fruit,sweet"},
 	{"wild surge","KLCGKI","jEV",5,8,1,"FF4081","7C4DFF","flickering random-colour pulse","boing","Something happens. Nobody knows what.","chaos,magic"},
-	{"wild west","MEFNII","Sh",3,1,6,"D2691E","E6C27A","dusty main street, saloon, cactus","rumble","This town ain't big enough.","place,terrain"},
+	{"wild west","MEFNII","Sh",3,1,6,"D2691E","E6C27A","dusty main street, general store, cactus","rumble","This town ain't big enough.","place,terrain"},
 	{"wildcat","AMCJAA","ZfT",4,7,3,"8C7A62","2E261C","tabby-striped, bushy ringed tail","hiss","Your house cat's tough cousin.","mammal,predator,wild"},
 	{"wilderness","MGFNII","ZSh",4,1,8,"33691E","8D6E63","untamed forest, rivers and rocks","crowd","No roads. No rules.","place"},
 	{"wildfire","HAENOI","KSP",8,6,4,"D84315","FFB74D","spreading line of tall flames, smoke wall","roar","Spreads faster than you can run.","natural,fire"},

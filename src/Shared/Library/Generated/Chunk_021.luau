@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"purple lightning","FDDAKB","jeL",7,10,1,"AA00FF","EA80FC","bright violet branching bolt","crack","Lightning, now in grape flavour.","electric,magic"},
 	{"purple potato","IEBAKK","keO",3,7,6,"5E2A5E","8A5A9A","small violet potato","bonk","A royal purple spud.","edible,vegetable"},
 	{"push","KFCFOB","kI",4,8,1,"B3E5FC","FFFFFF","invisible palm-shaped force ripple","whoosh","Personal space, enforced.","force"},
 	{"puss caterpillar","AMAJTA","jdM",1,5,1,"C8A07A","F2E8D8","fluffy toupee caterpillar","flutter","Looks like a wig. Stings badly.","insect,cute"},
@@ -227,7 +228,7 @@ return {
 	{"redwood","NGFCMI","GWkS",6,1,10,"8D3B2B","2E7D32","colossal red trunk up into the clouds","rustle","Tallest tree around. Biggest timber!","plant,tree,heavy"},
 	{"redwood forest","MGFNII","GZS",4,1,9,"8D3B2B","2E7D32","colossal red trunks into the clouds","rumble","So tall you can not see the tops.","place,terrain,plant"},
 	{"reed frog","AMAJAG","Ue",1,5,1,"F2D82A","E8701E","colorful small frog on reeds","croak","Clings to reeds like a sticker.","amphibian,wetland"},
-	{"reeds","NBCNMI","ZSN",2,1,3,"9E9D24","6D4C41","tall brown cigar spikes at the water","rustle","Hide-and-seek champion of the swamp.","plant"},
+	{"reeds","NBCNMI","ZSN",2,1,3,"9E9D24","6D4C41","tall brown cattail spikes at the water","rustle","Hide-and-seek champion of the swamp.","plant"},
 	{"reef shark","ABCJEC","DfTB",5,8,6,"7A8896","F2F4F6","sleek reef patroller","chomp","Patrols the reef. Professionally.","fish,aquatic,ocean,predator"},
 	{"reel in","KBCBKI","H",4,6,2,"4FC3F7","FFFFFF","water line dragging target closer","zzzip","Big catch!","aquatic"},
 	{"referee","LMCJNA","GO",3,6,4,"111827","F8FAFC","striped shirt, whistle, red card","whistle","Red card! You're out!","sport"},
@@ -402,5 +403,4 @@ return {
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
 	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
 	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
-	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 }

@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"empusa","AACJNA","Kcf",4,6,4,"DC2626","F59E0B","fiery hair, one bronze leg","hiss","One bronze leg. Great at kicks.","mythical,spooky"},
 	{"emu","AMDJDA","Djkf",5,8,5,"6A5A4A","3AA0D8","shaggy brown feathers, blue neck","boom","Won a war against people. Really.","bird,flightless"},
 	{"emu chick","AMBJDA","Dkf",2,8,5,"6A5A4A","F2E8D0","striped fluffy baby emu","boom","Stripy, fast, and chaotic.","bird,flightless,cute"},
 	{"encantado","ABCJEC","jcB",4,8,3,"F9A8D4","0EA5E9","pink river dolphin in a straw hat","splash","Shows up at parties. Hides his blowhole.","mythical,aquatic"},
@@ -403,4 +402,5 @@ return {
 	{"flame strike","FADBKI","KO",7,7,2,"FF3D00","FFEA00","column of fire slamming down from the sky","roar","Fire, but from above. Surprise!","fire,holy"},
 	{"flame sword","CACHrK","KfP",7,6,4,"D9480F","FF6A1A","blade wreathed in flames","shing","Smells like toast. Hits like a dragon.","fantasy,flammable,glowing"},
 	{"flame tank","DADMHL","KegP",7,3,9,"4B5320","FF5722","tank with a nozzle spitting fire","fwoosh","Toasty treads.","mechanical,vehicle,land"},
+	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
 }

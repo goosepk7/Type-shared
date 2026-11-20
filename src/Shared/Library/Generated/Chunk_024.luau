@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sky pirate","LFCJNB","Aeb",5,7,4,"7F1D1D","60A5FA","pirate with goggles on an airship","arr","Pirates, but higher.","pirate,flying"},
 	{"sky rift","KLEN5K","jhY",7,3,5,"311B92","FFD54F","glowing tear across the sky","warp","The sky is cracked. Something's peeking.","space,magic"},
 	{"sky serpent","AFEJCB","AkH",7,8,6,"E0F2FE","0EA5E9","feathered serpent coiling through clouds","howl","Wraps around storms.","wind,reptile"},
 	{"sky slam","FFDNOI","kO",6,9,2,"81D4FA","ECEFF1","column of wind smashing down from above","boom","The sky body-slams you.","air"},
@@ -312,7 +313,7 @@ return {
 	{"spark storm","FDDEOB","LP",6,7,1,"FFF9C4","FFD600","swirling shower of bright sparks","crackle","Fireworks, but they bite.","electric,storm"},
 	{"sparkle","FHAEOJ","d",1,6,1,"FFF6B3","FFC6F0","scattered twinkling star glints","tinkle","Purely decorative. Mostly.","cute"},
 	{"sparkler","CAAHJF","Kdf",1,6,1,"C9CED4","D4A72C","thin wire fizzing sparks","boom","Writes your name in the air.","party,holiday"},
-	{"sparkling cider","IBBFKI","EkI",3,7,1,"E8C04A","F7F2E8","bubbly golden bottle","fizz","Celebration bubbles.","edible,drink,fizzy"},
+	{"sparkling cider","IBBFKI","EkI",3,7,1,"E8C04A","F7F2E8","glass of fizzy golden apple juice","fizz","Apple bubbles. Kid approved.","edible,drink,fizzy"},
 	{"sparkling water","IBBFKI","EkI",3,7,1,"D8F0F8","F7F7F2","clear bubbly glass","fizz","Bubbles, but plain.","edible,drink,fizzy"},
 	{"sparrow","AMAJDB","dA",1,7,1,"8A6440","D8C4A8","small brown streaky bird","tweet","Small brown bird. Big crumb energy.","bird,cute"},
 	{"sparrowhawk","AMBJDB","DAfT",3,9,3,"6A7A8A","E8A06A","small hawk with barred chest","screech","Small hawk. Huge ambition.","bird,predator"},
@@ -402,5 +403,4 @@ return {
 	{"spiny-tailed iguana","AMBJAA","Cf",2,9,2,"6A6A5A","C8B88A","iguana with spiky tail","hiss","Fastest lizard on the planet.","reptile"},
 	{"spiral","KLBL5K","jHO",3,5,1,"7C3AED","F472B6","spinning purple-pink hypno swirl","warp","Look into the swirl. Looook. Sleeepy.","shape,magic"},
 	{"spiral core","KFBGKI","Dkf",7,9,2,"7EC8FF","FFFFFF","a howling blue sphere spinning in your palm","hum","Spin it. Shove it. Done.","anime,ninja"},
-	{"spire","EMDMII","GSTe",3,1,6,"9E9E9E","5D5D5D","needle-thin pointed tower","thud","Very pointy. Very tall.","structure,defense,tower"},
 }

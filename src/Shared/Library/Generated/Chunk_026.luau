@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
 	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
 	{"sun dragon spirit","AAEJCB","KAF",8,6,6,"FDE047","F97316","serpent of pure sunlight","roar","Burns away shadows.","holy,fire,reptile"},
@@ -223,7 +224,6 @@ return {
 	{"tatzelwurm","AJBJCD","CfM",3,6,3,"57534E","D97706","cat-headed lizard worm","hiss","A cat-faced lizard that hisses at hikers.","cryptid,reptile"},
 	{"taunt","KMBFOB","dc",1,8,1,"FF5252","FFFFFF","tongue-out face ring","neener","Nyah nyah! Come get me.","silly"},
 	{"taurus","MHCEKJ","Dke",5,5,5,"FFFFFF","A1887F","stars in a charging bull shape","rumble","Starry bull. Very cross.","space,zodiac"},
-	{"tavern","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
 	{"tax","KMCONA","iQb",4,5,3,"374151","22C55E","grey suit with a calculator and a sack labelled YOURS","ding","Takes a third. Then a bit more. Then a form.","silly,job"},
 	{"taxi","DMCKHL","Dkg",4,7,5,"F7C600","1A1A1A","yellow sedan, roof sign, checker stripe","engine","Meter is running. So are the enemies.","mechanical,vehicle,land"},
 	{"taxi driver","LMCJNL","Dd",3,8,4,"FACC15","111827","cap, checkered cab, honking","honk","Takes the long way. On purpose.","vehicle,silly"},

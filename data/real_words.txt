@@ -3470,7 +3470,6 @@ drowning
 drowns
 drowsy
 drudge
-drug
 druid
 druids
 drum
@@ -3479,7 +3478,6 @@ drummers
 drums
 drumstick
 drumsticks
-drunk
 dry
 dryad
 dryads
@@ -3605,7 +3603,6 @@ eclipse
 eclipses
 ecology
 economy
-ecstasy
 eddy
 edge
 edible
@@ -8780,10 +8777,8 @@ prune
 prunes
 pry
 psalm
-pub
 public
 publish
-pubs
 puck
 pucker
 pucks
@@ -9662,7 +9657,6 @@ salesman
 salmon
 salon
 salons
-saloon
 salsa
 salt
 salty
@@ -11872,7 +11866,6 @@ tip
 tipped
 tipping
 tips
-tipsy
 tiptoe
 tiptoes
 tirade
@@ -11892,7 +11885,6 @@ toast
 toaster
 toasters
 toasts
-tobacco
 toboggan
 toboggans
 today
@@ -12975,7 +12967,6 @@ winds
 windshield
 windshields
 windy
-wine
 wing
 wings
 wink

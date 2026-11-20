@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"gemini","MHCEKJ","eV",5,5,5,"FFFFFF","FFD54F","two linked star figures","rumble","Two stars for the price of one.","space,zodiac"},
 	{"general","LECJNA","GOh",5,4,6,"365314","CA8A04","medal-covered coat, peaked cap","horn","Has a lot of medals. Mentions all of them.","military"},
 	{"general store","EMCNII","dSch",2,1,5,"8D6E63","FFB300","wooden store with barrels on the porch","ding","Got everything. Mostly beans.","structure,building,shop"},
 	{"general tso's chicken","IABAKK","Kc",5,7,2,"C8402B","F2A62B","glossy spicy chicken chunks","sizzle","Sweet, spicy, and decorated.","edible,spicy,flammable"},
@@ -403,4 +402,5 @@ return {
 	{"gravity mage","LLCJNJ","lHN",6,4,4,"312E81","A855F7","floating rocks orbiting a robed mage","hum","What goes up stays up.","magic"},
 	{"gravity prison","KLCLII","NO",6,3,6,"4527A0","B388FF","warped purple sphere pinning target","whum","Too heavy to move.","space"},
 	{"gravity snail","ALBJFA","HN",2,1,6,"7C3AED","FDE68A","snail with a swirling black-hole shell","squelch","Pulls you closer. Very, very slowly.","alien,silly"},
+	{"gravity storm","FLEN5K","lHPO",8,5,5,"311B92","B388FF","swirling purple storm flinging debris","whum","Up, down, sideways, all at once.","space,storm"},
 }

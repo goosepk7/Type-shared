@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spire","EMDMII","GSTe",3,1,6,"9E9E9E","5D5D5D","needle-thin pointed tower","thud","Very pointy. Very tall.","structure,defense,tower"},
 	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 	{"spirit animal","AHCJAA","GQF",4,6,3,"A5F3FC","FDE68A","glowing translucent animal companion","chime","Your inner animal, on loan.","spirit"},
 	{"spirit bear","AHDJAA","Fkf",6,5,6,"F8FAFC","7DD3FC","glowing translucent bear","roar","A bear hug from the other side.","spirit"},
@@ -363,7 +364,7 @@ return {
 	{"styracosaurus","AMDJAA","DkT",7,5,8,"7A6A4A","C8701E","big nose horn, spiky frill crown","bellow","Wears a crown of spikes.","dinosaur,extinct,reptile"},
 	{"sub sandwich","IMBHJI","Fkf",3,5,4,"D9A04A","7DBE3A","long roll stuffed with fillings","bonk","A sandwich as long as your arm.","edible,silly"},
 	{"submachine gun","CKBAwI","eV",4,9,3,"24262A","8E9196","compact rapid-fire blaster","rattle","Small gun, big hurry.","modern,ranged"},
-	{"submarine","DBEMHC","CEZegB",7,6,9,"37474F","FFC107","long cigar hull, conning tower, periscope","sonar","Down periscope. Up torpedo.","vehicle,aquatic"},
+	{"submarine","DBEMHC","CEZegB",7,6,9,"37474F","FFC107","long torpedo hull, conning tower, periscope","sonar","Down periscope. Up torpedo.","vehicle,aquatic"},
 	{"submarine captain","LBCJNI","ZeB",5,4,5,"111827","FACC15","cap, periscope, turtleneck","ping","Dive dive dive! Ping.","military,aquatic"},
 	{"subscribe","KHBOKJ","QOh",3,6,2,"EF4444","FFFFFF","red SUBSCRIBE button with a ringing bell","ding","Hit the bell. The bell hits back.","meme,internet"},
 	{"substation","EDCNII","SL",4,1,7,"9E9E9E","FFEB3B","fenced yard of humming transformers","hum","Buzzes angrily. Shocks angrily.","structure,mechanical"},
@@ -402,5 +403,4 @@ return {
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
 	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
-	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 }

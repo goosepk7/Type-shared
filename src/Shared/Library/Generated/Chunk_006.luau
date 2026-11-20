@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
 	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
 	{"clash","KMCFOB","kO",5,8,2,"FFAB40","FFFFFF","two forces colliding in a spark ring","clang","Sparks fly. Everyone flinches.","melee"},
 	{"class","MMDNlI","jSNh",4,1,5,"FDE68A","15803D","rows of desks, chalkboard, thirty raised hands","bell","Pop quiz. Sit down. Eyes forward.","school"},
@@ -98,7 +97,7 @@ return {
 	{"clubhouse","EGCMII","Geh",4,1,6,"A9713B","EF4444","wonky wooden shack with a KEEP OUT sign and a periscope","creak","No grown-ups. No siblings. Password required.","toy,defense"},
 	{"clubmoss","NGANMI","S",1,1,2,"558B2F","9CCC65","tiny pine-like creeping moss","rustle","Looks like a mini forest.","plant"},
 	{"clue","BLAOKJ","jQY",2,5,2,"FACC15","7C4A1E","magnifying glass over a glowing footprint","ding","It was the butler. In the library. With a summon.","mystery"},
-	{"clurichaun","AMAJNA","db",1,7,1,"7F1D1D","15803D","grumpy tiny man in red, wine cellar guard","giggle","Leprechaun's grumpy cousin.","fairy,silly"},
+	{"clurichaun","AMAJNA","db",1,7,1,"7F1D1D","15803D","grumpy tiny man in red, cellar guard","giggle","Leprechaun's grumpy cousin.","fairy,silly"},
 	{"cluster bomb","CACGKF","EVP",7,4,2,"6B7B3A","8E9196","canister scattering small bomblets","boom","One becomes many becomes boom.","explosive"},
 	{"clydesdale","AMEKAA","DkIg",6,5,7,"6A3A1E","F2F0EA","huge heavy horse, feathered white hooves","neigh","Built like a truck with fluffy boots.","mammal"},
 	{"cn tower","EMFCII","GkST",6,1,9,"BDBDBD","E53935","concrete spike with a pod halfway up","rumble","Very tall. Very pointy.","structure,landmark"},
@@ -249,7 +248,7 @@ return {
 	{"cookie dough","IMBLGI","ScN",2,3,3,"D9B07A","4A2516","lumpy dough blob with chips","gloop","Raw, chunky, and very tempting.","edible,sticky"},
 	{"cookie jar","BMBLKK","cO",1,1,3,"D2B48C","7A4E2D","bear-shaped jar of cookies","clang","Hand in the jar. Gotcha.","kitchen,household"},
 	{"cookie shield","IMCIII","Ga",3,3,6,"C8904A","4A2516","round cookie as a shield","thud","Crumbs fly. Arrows don't.","edible"},
-	{"cookiecutter shark","ABBJEC","DifTB",2,8,6,"8A6E5A","D8C8B8","tiny cigar shark, round bite","chomp","Takes cookie-shaped bites out of whales.","fish,aquatic,ocean,predator"},
+	{"cookiecutter shark","ABBJEC","DifTB",2,8,6,"8A6E5A","D8C8B8","tiny torpedo-shaped shark, round bite","chomp","Takes cookie-shaped bites out of whales.","fish,aquatic,ocean,predator"},
 	{"cookies and cream","ICBAKJ","JeN",3,5,2,"F7F2EC","2A2A2A","white with dark cookie bits","squish","Cookies and cream. The perfect duo.","edible,frozen,sweet"},
 	{"cooking oil","IMBLGI","SNPO",2,3,2,"E8D04A","F2E07A","clear golden oil bottle","squeak","Very, very slippery.","edible,slippery,silly,sauce"},
 	{"cooking spray","IMBDOI","NPO",2,3,2,"E8D04A","C8C8C8","silver can with mist","squeak","Turns floors into ice rinks.","edible,slippery,silly"},
@@ -403,4 +402,5 @@ return {
 	{"cream","IMBLGI","SN",2,3,2,"F7F4EC","F2EAD5","pitcher of thick cream","squeak","Rich, white, and pourable.","edible,slippery,silly,dairy"},
 	{"cream cheese","IMBLGI","SNP",2,3,3,"F7F4EC","F2EAD5","smooth white block","gloop","Smooth, spreadable, very sticky.","edible,sticky,dairy"},
 	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
+	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 }

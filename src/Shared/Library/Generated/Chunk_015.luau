@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ladoo","IMBLKI","dSc",2,3,3,"F2A62B","E8C07A","golden round sweet ball","chomp","A golden sweet ball of joy.","edible,sweet,dessert"},
 	{"lady slipper","NGBNMI","dFS",1,1,1,"FFEB3B","7E57C2","pouched bloom like a little shoe","rustle","Cinderella left her slipper.","plant,flower"},
 	{"ladybug","AMAJFA","GAFf",1,3,4,"D8201E","1E1E1E","red dome shell, black spots","click","Spots count its age. (Not really.)","insect,armored,cute,garden"},
 	{"ladyfinger","IMBHJI","kf",2,5,4,"F2D88A","F7F2EC","long sugar-dusted sponge stick","bonk","A biscuit finger pointing at you.","edible,silly"},
@@ -402,5 +403,4 @@ return {
 	{"longsword","CKCHrK","kfT",6,5,5,"8A929B","5A3A1E","long straight blade, two-hand grip","shing","For knights with long arms and longer speeches.","medieval,sharp"},
 	{"loofah","BGAHKI","Ff",1,6,1,"D2B48C","F3E6C8","scratchy dried scrubber","splash","Exfoliate the enemy.","bathroom,household"},
 	{"loom","OMCL1I","NO",2,1,5,"8B5A2B","D8CBB5","frame with criss-cross threads","clank","Weaves cloth. Weaves nets.","mechanical"},
-	{"loon","ABBJDC","AfB",2,5,2,"1E1E1E","F2F2F0","checkered black-white back, red eye","wail","Its call sounds like a ghost.","bird,aquatic,spooky"},
 }

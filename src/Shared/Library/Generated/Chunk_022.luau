@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 	{"robot wizard","OLCJNA","eLY",5,4,6,"6366F1","94A3B8","robot in a pointy hat with antenna wand","zap","Casts spells with a USB wand.","robot,magic,silly"},
 	{"robotics engineer","LKCJNA","Fh",4,4,4,"1E3A8A","94A3B8","goggles, soldering iron, robot arm","clank","Builds a robot friend in seconds.","tech,robot"},
 	{"roc","AFFJDB","Akl",8,6,7,"78350F","FDE68A","colossal eagle, huge talons","screech","Snacks on elephants. Probably exaggerating.","mythical,bird,flying"},
@@ -70,7 +71,7 @@ return {
 	{"roommate","LMCJNA","SNb",3,3,4,"84CC16","A3A3A3","person in pajamas eating your labelled leftovers","chomp","Ate your food. Left one bite. As a message.","silly"},
 	{"rooster","AMBJDA","dfO",2,4,2,"B8401E","1E3A2A","proud tail feathers, big red comb","crow","Alarm clock that cannot be snoozed.","bird,farm"},
 	{"root","FGCLMI","NO",4,3,5,"5D4037","81C784","thick roots coiling around feet","creak","You are not going anywhere.","plant"},
-	{"root beer","IBBFKI","EkI",3,7,1,"4A2416","F2E2C8","frothy brown mug","fizz","Frothy and foamy.","edible,drink,fizzy"},
+	{"root beer","IBBFKI","EkI",3,7,1,"4A2416","F2E2C8","brown soda can","fizz","Frothy and foamy.","edible,drink,fizzy"},
 	{"root snare","NECLMI","CSHNO",4,2,5,"6D4C41","8D6E63","gnarled roots bursting from the ground","rustle","The ground grabs your ankles.","plant"},
 	{"ropa vieja","IGBOKI","F",2,5,3,"B0402B","7DBE3A","shredded beef in red sauce","crunch","Old clothes. Delicious stew.","edible,healthy"},
 	{"rope","BMCLJK","HN",1,5,3,"B89B6A","D2B48C","coiled thick rope","clank","Ties up loose ends. And enemies.","tool"},
@@ -402,5 +403,4 @@ return {
 	{"sea lettuce","NBBLMI","SNB",1,1,2,"76FF03","9CCC65","bright green crinkly sheets","splash","Slippery salad of the sea.","plant,aquatic"},
 	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
 	{"sea lion","ABCJEC","UDdfB",3,5,4,"8A6440","C8A07A","sleek brown seal, upright on front flippers","bark","Balances balls. Barks for fish.","mammal,aquatic"},
-	{"sea mine","CBCLKJ","EkB",7,1,4,"24262A","9C4A1A","spiked floating metal ball","boom","A spiky beach ball you shouldn't hug.","explosive,ocean"},
 }
