@@ -197,6 +197,10 @@ def motorcycle():
 
 @hero("chopper motorcycle", FAM)
 def chopper():
+    return _rescaled(_old_chopper())
+
+
+def _old_chopper():
     return _moto("chopper motorcycle", zf=-2.55, rf=0.6, rb=0.62, wb=0.55, head=(2.15, -1.25), rake=45, rim="wire", spokes=28, tank="teardrop",
                  bars="ape", seat_y=1.35, chopper=True, sissy=True, preview=pv("#1A1A1A", "#C0C0C0"))
 
@@ -739,6 +743,10 @@ def _runners(z0, z1, x, curl=0.7, h=0.12, col_y=0.0, w=0.12, posts=3, top=0.8):
 
 @hero("sled", FAM)
 def sled():
+    return sled_real()
+
+
+def _old_sled():
     H = _new("sled", pv("#9C6644", "#C1121F"), gait="drive")
     H.bone("Chassis", "Body", (0, 0.4, 0))
     run = _runners(-1.6, 1.6, 0.65, curl=0.35, w=0.06, posts=3, top=0.55)
@@ -761,6 +769,10 @@ def sled():
 
 @hero("horse sleigh", FAM)
 def sleigh():
+    return _rescaled(_old_sleigh())
+
+
+def _old_sleigh():
     H = _new("horse sleigh", pv("#B5121B", "#E9C46A"))
     H.bone("Chassis", "Body", (0, 0.6, 0))
     run = _runners(-2.4, 2.2, 1.0, curl=0.9, w=0.08, posts=3, top=0.85)
@@ -809,6 +821,10 @@ def _cart_wheels(H, specs, spokes=12, rim_col="darkWood", tyre_col="metal"):
 
 @hero("wagon", FAM)
 def wagon():
+    return wagon_real()
+
+
+def _old_wagon():
     """Kid's red pull wagon."""
     H = _new("wagon", pv("#C1121F", "#F5F5F5"))
     H.bone("Chassis", "Body", (0, 0.35, 0))
@@ -833,6 +849,10 @@ def wagon():
 
 @hero("cart", FAM)
 def cart():
+    return _rescaled(_old_cart())
+
+
+def _old_cart():
     H = _new("cart", pv("#8B5A2B", "#5A3820"))
     H.bone("Chassis", "Body", (0, 1.2, 0))
     wheels = _cart_wheels(H, [("WheelR", (1.25, 1.1, 0.2), 1.1, 0.16), ("WheelL", (-1.25, 1.1, 0.2), 1.1, 0.16)], spokes=10)
@@ -852,6 +872,10 @@ def cart():
 
 @hero("covered wagon", FAM)
 def covered_wagon():
+    return _rescaled(_old_covered_wagon())
+
+
+def _old_covered_wagon():
     H = _new("covered wagon", pv("#8B5A2B", "#F3ECDD"))
     H.bone("Chassis", "Body", (0, 1.2, 0))
     wheels = _cart_wheels(H, [("WheelFR", (1.35, 0.85, -1.9), 0.85, 0.16), ("WheelFL", (-1.35, 0.85, -1.9), 0.85, 0.16),
@@ -878,6 +902,10 @@ def covered_wagon():
 
 @hero("horse carriage", FAM)
 def horse_carriage():
+    return horse_carriage_real()
+
+
+def _old_horse_carriage():
     H = _new("horse carriage", pv("#1D1F3A", "#E9C46A"))
     H.bone("Chassis", "Body", (0, 1.2, 0))
     wheels = _cart_wheels(H, [("WheelFR", (1.35, 0.85, -1.9), 0.85, 0.14), ("WheelFL", (-1.35, 0.85, -1.9), 0.85, 0.14),
@@ -904,6 +932,10 @@ def horse_carriage():
 
 @hero("chariot", FAM)
 def chariot():
+    return chariot_real()
+
+
+def _old_chariot():
     H = _new("chariot", pv("#C9A227", "#8B1E1E"))
     H.bone("Chassis", "Body", (0, 1.1, 0))
     wheels = _cart_wheels(H, [("WheelR", (1.35, 1.05, 0.5), 1.05, 0.16), ("WheelL", (-1.35, 1.05, 0.5), 1.05, 0.16)], spokes=6, rim_col="gold", tyre_col="darker")
@@ -925,6 +957,10 @@ def chariot():
 
 @hero("rickshaw", FAM)
 def rickshaw():
+    return rickshaw_real()
+
+
+def _old_rickshaw():
     H = _new("rickshaw", pv("#2A9D8F", "#E9C46A"))
     H.bone("Chassis", "Body", (0, 1.1, 0))
     H.bone("Fork", "Chassis", (0, 2.1, -2.35))
@@ -2489,4 +2525,265 @@ def segway_real():
     H.socket("exhaust", (0, 0.6, 0.7), "Chassis")
     H.rig.update({"head": "Chassis"})
     R.finish_mount(H, "Seat", (0, top + 0.03, 0.05), (-0.2, 1.4), stand=True, extra={"stance": "forward"}, seat_size=(1.4, 0.05, 0.9))
+    return H
+
+
+# ==================================================================================================== real-scale sleds / carts / carriages
+def _wood_wheels(H, specs, spokes=12, rim_col="darkWood", tyre_col="steel", parent="Body", hub_col=None):
+    wheels = []
+    for nm, pos, r, w in specs:
+        b = H.bone(nm, parent, pos)
+        side = 1 if pos[0] >= 0 else -1
+        m = K.rim(r, w, "cart", spokes, segs=28)
+        band = K.lathe_profile([(-w * 0.55, r * 0.98), (w * 0.55, r * 0.98), (w * 0.6, r * 1.02), (w * 0.55, r * 1.06), (-w * 0.55, r * 1.06), (-w * 0.6, r * 1.02)], 28, "x", closed=True, hard_deg=40)
+        hub = K.lathe_profile([(-w * 1.8, 0), (-w * 1.8, r * 0.1), (-w * 1.2, r * 0.17), (w * 1.2, r * 0.17), (w * 1.8, r * 0.1), (w * 1.8, 0)], 16, "x")
+        if side < 0:
+            m, band, hub = mirror(m), mirror(band), mirror(hub)
+        piece(H, nm + "Rim", b, xf(m, pos), col=rim_col, mat="wood", role="wheel", pri=1.0, fallback="Cylinder")
+        piece(H, nm + "Tyre", b, xf(merge(band, hub), pos), col=tyre_col, mat="metal", role="wheel", pri=1.2, fallback="Cylinder")
+        wheels.append((nm, r))
+    return wheels
+
+
+def chariot_real():
+    """War chariot at real scale (stand ride): bowed wicker-and-bronze car with a tall breastwork, gilded rails and
+    a sun crest, two big six-spoke wheels with scythe hubs, axle, long draught pole with a yoke. The rider stands on
+    the floor and holds the reins over the breastwork."""
+    H = _new("chariot", pv("#C9A227", "#8B1E1E", darkWood="#5A3820", steel="#9097A0", metal="#C2C8CF"))
+    H.bone("Chassis", "Body", (0, 0, 0))
+    r, xw, za = 1.55, 1.75, 0.55
+    wheels = _wood_wheels(H, [("WheelR", (xw, r, za), r, 0.2), ("WheelL", (-xw, r, za), r, 0.2)], spokes=6, rim_col="darkWood", tyre_col="primary")
+    fl = 1.6
+    floor = loft([(-1.25, fl - 0.08, 1.05, 0.08, 0.08, 3.0), (-0.8, fl - 0.08, 1.3, 0.08, 0.08, 4.0), (0.9, fl - 0.08, 1.3, 0.08, 0.08, 4.0), (1.15, fl - 0.08, 1.15, 0.08, 0.08, 4.0)], n=24, sub=3)
+    piece(H, "Seat", "Chassis", floor, col="darkWood", mat="wood", role="seat", pri=0.6)
+    # body: a U-shaped wall (plan) rising high at the front: lofted along Y from horseshoe outlines
+    wall = []
+    for s in (-1, 1):
+        sp = round_poly(np.array([(-1.2, fl - 0.05), (-1.25, fl + 2.0), (-0.6, fl + 1.75), (0.6, fl + 1.0), (1.15, fl + 0.85), (1.15, fl - 0.05)]), [0.05, 0.35, 0.3, 0.3, 0.15, 0.05], 4)
+        sw = warp(extrude(sp, 0.12, bevel=0.04, seg=1), lambda V, s=s: np.column_stack([V[:, 0] + s * (1.22 - 0.25 * np.clip((-V[:, 2] - 0.6) / 0.6, 0, 1) ** 2), V[:, 1], V[:, 2]]))
+        wall.append(sw)
+    front = loft([(-1.32, fl + 1.0, 0.95, 1.05, 1.0, 3.0), (-1.2, fl + 1.0, 1.0, 1.1, 1.05, 3.0)], n=24, sub=1)
+    front = warp(front, lambda V: np.column_stack([V[:, 0], V[:, 1], V[:, 2] - 0.25 * (1 - (V[:, 0] / 1.0) ** 2)]))
+    piece(H, "Body", "Chassis", merge(*wall, front), col="secondary", mat="wood", role="body", pri=0.5, pattern=kit_stripes(lambda P: P[:, 1], 5.0, width=0.2, depth=0.25))
+    rails = [sweep([(s * 1.22, fl + 0.85, 1.15), (s * 1.24, fl + 1.0, 0.6), (s * 1.12, fl + 1.75, -0.6), (s * 0.85, fl + 2.05, -1.35), (0, fl + 2.1, -1.55)], 0.07, segs=8) for s in (-1, 1)]
+    rails += [sweep([(s * 1.24, fl, 1.15), (s * 1.26, fl, -1.0), (s * 0.9, fl, -1.42), (0, fl, -1.58)], 0.06, segs=8) for s in (-1, 1)]
+    crest = xf(K.D.revolve([(0, 0), (0.02, 0.45), (0.12, 0.48), (0.14, 0)], segs=20, axis=2, spline=2), (0, fl + 1.05, -1.62))
+    rays = merge(*[sweep([(0, fl + 1.05, -1.66), (0.7 * math.cos(a), fl + 1.05 + 0.7 * math.sin(a), -1.6)], 0.035, segs=5) for a in np.linspace(0, TAU, 12, endpoint=False)])
+    piece(H, "Trim", "Chassis", merge(*rails, crest, rays), col="primary", mat="metal", role="detail", pri=0.9)
+    gear = [sweep([(-xw - 0.2, r, za), (xw + 0.2, r, za)], 0.09, segs=10), sweep([(0, fl - 0.15, -1.1), (0, 2.0, -3.5), (0, 2.6, -6.4)], 0.11, segs=10),
+            sweep([(-1.6, 2.55, -6.1), (-0.8, 2.75, -6.2), (0.8, 2.75, -6.2), (1.6, 2.55, -6.1)], 0.08, segs=8)]
+    gear += [sweep([(s * 0.9, 2.7, -6.18), (s * 0.95, 2.2, -6.15)], 0.05, segs=6) for s in (-1, 1)]
+    piece(H, "Pole", "Chassis", merge(*gear), col="darkWood", mat="wood", role="detail", pri=1.0)
+    spikes = merge(*[xf(K.lathe_profile([(0.0, 0.16), (0.9, 0.0)], 10, "x"), (s * (xw + 0.35), r, za)) if s > 0 else xf(K.lathe_profile([(-0.9, 0.0), (0.0, 0.16)], 10, "x"), (s * (xw + 0.35), r, za)) for s in (-1, 1)])
+    piece(H, "Spikes", "Chassis", spikes, col="metal", mat="metal", role="detail", pri=1.4)
+    K.vehicle_clips(H, wheels, susp="Chassis", height=4.0, length=8.0, sym=6, roll=0.6, bob=0.8, turns=1.0)
+    H.socket("head", (0, 5.5, 0), "Chassis")
+    H.socket("mouth", (0, 2.6, -6.5), "Chassis")
+    H.socket("exhaust", (0, 1.8, 1.4), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    R.finish_mount(H, "Seat", (0, fl + 0.01, 0.15), (-0.5, 2.6), stand=True, extra={"stance": "forward"}, seat_size=(2.0, 0.1, 2.0))
+    return H
+
+
+def wagon_real():
+    """Big red pull wagon (rideable, 6 studs): pressed-steel tub with rolled rims and wooden side stakes, cushioned
+    bench across the back, white disc wheels with hubcaps on a steering front axle with a long pull handle."""
+    H = _new("wagon", pv("#C1121F", "#F5F5F5", wood="#B98950", darker="#1F2024"))
+    H.bone("Chassis", "Body", (0, 0, 0))
+    r, xw, zf, zb = 0.62, 1.15, -1.75, 1.75
+    H.bone("SteerF", "Chassis", (0, r, zf))
+    wheels = []
+    for s, tag in ((1, "R"), (-1, "L")):
+        wheels += K.add_wheels(H, [dict(name="WheelF" + tag, pos=(s * xw, r, zf), r=r, w=0.34, side=s)], parent="SteerF", rim="disc", rim_col="white", grooves=False, segs=24)[0]
+    for s, tag in ((1, "R"), (-1, "L")):
+        wheels += K.add_wheels(H, [dict(name="WheelB" + tag, pos=(s * xw, r, zb), r=r, w=0.34, side=s)], parent="Chassis", rim="disc", rim_col="white", grooves=False, segs=24)[0]
+    fl = 1.1
+    tub = [K.box((2.5, 0.12, 4.9), (0, fl, 0), r=0.05)]
+    for s in (-1, 1):
+        tub.append(K.box((0.1, 0.85, 4.9), (s * 1.25, fl + 0.42, 0), r=0.04))
+        tub.append(K.box((2.6, 0.85, 0.1), (0, fl + 0.42, s * 2.45), r=0.04))
+    lip = merge(*[sweep([(s * 1.28, fl + 0.86, -2.48), (s * 1.28, fl + 0.86, 2.48)], 0.06, segs=8) for s in (-1, 1)], *[sweep([(-1.28, fl + 0.86, s * 2.48), (1.28, fl + 0.86, s * 2.48)], 0.06, segs=8) for s in (-1, 1)])
+    piece(H, "Chassis", "Chassis", merge(*tub, lip), col="primary", mat="metal", role="body", pri=0.5)
+    stakes = merge(*[cbox((0.08, 0.9, 0.16), (s * 1.34, fl + 0.85, z), c=0.03) for s in (-1, 1) for z in (-1.9, -0.6, 0.6, 1.9)],
+                   *[cbox((0.06, 0.12, 4.4), (s * 1.38, fl + 1.15, 0), c=0.03) for s in (-1, 1)])
+    piece(H, "Stakes", "Chassis", stakes, col="wood", mat="wood", role="detail", pri=1.2)
+    under = merge(sweep([(0, r + 0.15, zf), (0, r + 0.25, zb)], 0.08, segs=8), sweep([(-xw, r, zb), (xw, r, zb)], 0.06, segs=8), K.box((0.5, 0.15, 0.5), (0, fl - 0.15, zf), r=0.05))
+    piece(H, "Undercarriage", "Chassis", under, col="darker", mat="metal", role="detail", pri=1.3)
+    axle = merge(sweep([(-xw, r, zf), (xw, r, zf)], 0.06, segs=8), K.box((0.4, 0.12, 0.3), (0, r + 0.12, zf), r=0.04))
+    piece(H, "FrontAxle", "SteerF", axle, col="darker", mat="metal", role="detail", pri=1.3)
+    handle = merge(sweep([(0, r + 0.1, zf - 0.15), (0, 1.3, zf - 1.4), (0, 2.1, zf - 2.5)], 0.05, segs=8), sweep([(-0.3, 2.15, zf - 2.6), (0.3, 2.15, zf - 2.6)], 0.07, segs=10),
+                   sweep([(-0.3, 2.15, zf - 2.6), (0, 2.1, zf - 2.5), (0.3, 2.15, zf - 2.6)], 0.04, segs=6))
+    piece(H, "Handle", "SteerF", handle, col="darker", mat="metal", role="detail", pri=1.0)
+    bench = merge(K.box((2.3, 0.3, 1.0), (0, 2.05, 1.85), r=0.12, seg=1), K.box((2.3, 0.9, 0.25), (0, 2.6, 2.3), r=0.1, seg=1), K.box((2.3, 0.8, 0.12), (0, 1.55, 1.4), r=0.04))
+    piece(H, "Seat", "Chassis", bench, col="secondary", mat="cloth", role="seat", pri=0.8)
+    K.vehicle_clips(H, wheels, susp="Chassis", height=2.8, length=6.4, sym=5, steer=("SteerF",), roll=0.5, bob=0.5, turns=1.2, attack="honk")
+    H.socket("head", (0, 5.6, 1.5), "Chassis")
+    H.socket("mouth", (0, 1.2, -2.6), "Chassis")
+    H.socket("exhaust", (0, 1.2, 2.6), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    R.finish_mount(H, "Seat", (0, 2.2, 1.75), (-2.1, 1.0), seat_size=(2.2, 0.2, 0.9))
+    return H
+
+
+def sled_real():
+    """Toboggan sled at real scale (6.6 studs): moulded hull with a raised cowl at the nose and a low back, the
+    rider sits inside with the legs in the hull; curled steel runners on posts, side grab rails, a tow rope."""
+    H = _new("sled", pv("#C1121F", "#F4F1DE", metal="#C9CFD6", darker="#1F2024"))
+    H.bone("Chassis", "Body", (0, 0, 0))
+    fl = 0.55
+    floor = loft([(-2.6, fl, 0.6, 0.06, 0.08, 3.0), (-2.2, fl, 1.1, 0.07, 0.08, 4.0), (2.3, fl, 1.15, 0.07, 0.08, 4.0), (2.65, fl + 0.05, 0.95, 0.07, 0.08, 4.0)], n=24, sub=3)
+    walls = []
+    for s in (-1, 1):
+        sp = round_poly(np.array([(-2.6, fl), (-2.7, fl + 1.1), (-1.6, fl + 1.2), (1.6, fl + 1.0), (2.65, fl + 0.85), (2.7, fl)]), [0.05, 0.3, 0.3, 0.3, 0.15, 0.05], 4)
+        walls.append(warp(extrude(sp, 0.12, bevel=0.04, seg=1), lambda V, s=s: np.column_stack([V[:, 0] + s * (1.12 - 0.45 * np.clip((-V[:, 2] - 1.8) / 0.9, 0, 1) ** 2), V[:, 1], V[:, 2]])))
+    cowl = loft([(-3.35, fl + 0.3, 0.3, 0.12, 0.2, 2.6), (-3.05, fl + 0.5, 0.85, 0.32, 0.42, 3.0), (-2.45, fl + 0.62, 1.1, 0.48, 0.55, 3.2), (-1.6, fl + 0.62, 1.16, 0.5, 0.55, 3.4),
+                 (-1.35, fl + 0.6, 1.14, 0.45, 0.5, 3.4)], n=28, sub=3)
+    back = loft([(2.45, fl + 0.45, 1.12, 0.45, 0.4, 3.4), (2.75, fl + 0.4, 1.0, 0.35, 0.35, 3.0)], n=24, sub=1)
+    stripe = kit_stripes(lambda P: P[:, 1], 2.0, width=0.18, depth=0.35, region=lambda P: (P[:, 1] > fl + 0.6).astype(float))
+    piece(H, "Hull", "Chassis", merge(floor, *walls, cowl, back), col="primary", mat="plastic", role="body", pri=0.5, pattern=stripe)
+    run = []
+    for s in (-1, 1):
+        x = s * 0.95
+        run.append(sweep([(x, 0.1, 2.9), (x, 0.06, 1.0), (x, 0.06, -2.4), (x, 0.25, -3.25), (x, 0.7, -3.4), (x, 0.85, -3.05)], 0.08, segs=8, sub=5))
+        run += [sweep([(x, 0.1, z), (x * 0.95, fl - 0.05, z)], 0.06, segs=6) for z in (-2.0, 0.0, 2.0)]
+        run.append(sweep([(s * 1.2, fl + 1.1, -1.0), (s * 1.3, fl + 1.2, 0.0), (s * 1.25, fl + 1.0, 1.4)], 0.05, segs=6))
+    piece(H, "Runners", "Chassis", merge(*run), col="metal", mat="metal", role="detail", pri=0.8)
+    rope = sweep([(-0.6, fl + 0.9, -3.0), (-0.3, 0.6, -3.6), (0, 0.15, -4.1), (0.3, 0.6, -3.6), (0.6, fl + 0.9, -3.0)], 0.035, segs=6, sub=5)
+    piece(H, "Rope", "Chassis", rope, col=[0.85, 0.75, 0.55], mat="cloth", role="detail", pri=1.6)
+    cush = loft([(-0.3, fl + 0.12, 0.95, 0.08, 0.06, 4.0), (2.1, fl + 0.12, 0.95, 0.1, 0.06, 4.0)], n=20, sub=1)
+    piece(H, "Seat", "Chassis", cush, col="secondary", mat="cloth", role="seat", pri=0.8)
+    K.mount(H, "Seat", (0, fl + 0.25, 0.9), (1.8, 0.1, 2.0), "Chassis")
+    H.socket("head", (0, 4.4, 0.9), "Chassis")
+    H.socket("mouth", (0, 0.8, -3.4), "Chassis")
+    H.socket("exhaust", (0, 0.8, 2.8), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    _runner_clips(H, 1.6, 6.6)
+    R.finish_mount(H, "Seat", (0, fl + 0.25, 0.9), (-1.8, 0.9), seat_size=(1.8, 0.1, 2.0))
+    return H
+
+
+def horse_carriage_real():
+    """Coach at real scale (14 studs incl. shafts): curved lacquered body on C-springs with glazed doors and a rear
+    window (glass), gilded mouldings, roof rail and finial, brass carriage lanterns (glowing), small front / big rear
+    spoked wheels, driver's box seat up front with a footboard (the mount seat), shafts for the horse."""
+    H = _new("horse carriage", pv("#1D1F3A", "#E9C46A", darkWood="#3B2416", darker="#1A1A1E", cloth="#7A1E2B"))
+    H.bone("Chassis", "Body", (0, 0, 0))
+    rf, rb, zf, zb, xw = 1.3, 1.8, -3.1, 3.0, 2.0
+    wheels = _wood_wheels(H, [("WheelFR", (xw, rf, zf), rf, 0.18), ("WheelFL", (-xw, rf, zf), rf, 0.18), ("WheelBR", (xw, rb, zb), rb, 0.18), ("WheelBL", (-xw, rb, zb), rb, 0.18)],
+                          spokes=14, rim_col="secondary", tyre_col="darker")
+    body = loft([(-2.3, 3.6, 1.2, 1.4, 1.1, 3.0), (-2.05, 3.9, 1.55, 2.0, 1.3, 3.4), (-1.0, 4.0, 1.68, 2.15, 1.45, 3.6), (1.0, 4.0, 1.68, 2.15, 1.45, 3.6), (2.05, 3.9, 1.55, 2.0, 1.3, 3.4),
+                 (2.3, 3.6, 1.2, 1.4, 1.1, 3.0)], n=32, sub=3)
+    piece(H, "Body", "Chassis", body, col="primary", mat="wood", role="body", pri=0.4)
+    roof = loft([(-2.45, 6.2, 1.5, 0.12, 0.08, 3.0), (-2.2, 6.25, 1.78, 0.22, 0.1, 3.4), (2.2, 6.25, 1.78, 0.22, 0.1, 3.4), (2.45, 6.2, 1.5, 0.12, 0.08, 3.0)], n=28, sub=2)
+    piece(H, "Roof", "Chassis", roof, col="darker", mat="cloth", role="body", pri=0.6)
+    gl = merge(*[K.box((0.06, 1.15, 1.2), (s * 1.66, 4.95, 0.0), r=0.08) for s in (-1, 1)], *[K.box((0.06, 0.95, 0.7), (s * 1.62, 4.95, z), r=0.08) for s in (-1, 1) for z in (-1.55, 1.55)],
+               K.box((1.4, 0.9, 0.06), (0, 5.0, 2.3), r=0.08))
+    piece(H, "WindowGlass", "Chassis", gl, col="glass", mat="glass", role="window", pri=0.9, tr=0.45, ao=False)
+    tr = [sweep([(s * 1.7, 4.3, -2.0), (s * 1.72, 4.3, 2.0)], 0.06, segs=6) for s in (-1, 1)]
+    tr += [sweep([(s * 1.69, 4.25, -0.75), (s * 1.71, 5.7, -0.75), (s * 1.71, 5.7, 0.75), (s * 1.69, 4.25, 0.75), (s * 1.69, 4.25, -0.75)], 0.05, segs=6, sub=1) for s in (-1, 1)]
+    tr += [sweep([(s * 1.68, 4.35, -0.55), (s * 1.71, 4.3, 0.55)], 0.03, segs=5) for s in (-1, 1)]
+    tr += [sweep([(sx * 1.6, 6.48, sz * 2.1), (sx * 1.6, 6.48, -sz * 2.1)], 0.035, segs=6) for sx in (-1, 1) for sz in (1,)]
+    tr += [sweep([(-1.6, 6.48, z), (1.6, 6.48, z)], 0.035, segs=6) for z in (-2.1, 2.1)]
+    tr += [sweep([(x, 6.45, z), (x, 6.6, z)], 0.04, segs=5) for x in (-1.6, 1.6) for z in (-2.1, 0, 2.1)]
+    tr.append(xf(K.D.revolve([(0, 0), (0.1, 0.12), (0.3, 0.08), (0.45, 0.02), (0.5, 0)], segs=12, axis=1, spline=2), (0, 6.45, 0)))
+    tr += [K.box((0.12, 0.2, 0.12), (s * 1.75, 4.95, 0.5), r=0.04) for s in (-1, 1)]
+    piece(H, "Trim", "Chassis", merge(*tr), col="secondary", mat="metal", role="detail", pri=0.9)
+    lant = merge(*[merge(sweep([(s * 1.68, 5.3, -2.15), (s * 1.95, 5.35, -2.3)], 0.03, segs=5), K.box((0.3, 0.42, 0.3), (s * 2.0, 5.45, -2.35), r=0.05)) for s in (-1, 1)])
+    R.glow_lamp(H, "Lanterns", "Chassis", lant, (1.0, 0.82, 0.45), pri=1.4)
+    lt = merge(*[merge(K.cyl(0.1, 0.2, (s * 2.0, 5.72, -2.35), "y", segs=10), K.cyl(0.08, 0.2, (s * 2.0, 5.2, -2.35), "y", segs=10)) for s in (-1, 1)])
+    piece(H, "LanternCaps", "Chassis", lt, col="secondary", mat="metal", role="detail", pri=1.6)
+    # chassis: perch, C-springs, axles, box seat, footboard, shafts
+    ch = [sweep([(0, 2.6, zf), (0, 2.4, 0), (0, 2.75, zb)], 0.12, segs=10), sweep([(-xw - 0.15, rf, zf), (xw + 0.15, rf, zf)], 0.1, segs=10),
+          sweep([(-xw - 0.15, rb, zb), (xw + 0.15, rb, zb)], 0.1, segs=10), K.box((2.4, 0.2, 0.6), (0, rf + 0.35, zf), r=0.06), K.box((2.4, 0.2, 0.6), (0, rb + 0.25, zb), r=0.06)]
+    for s in (-1, 1):
+        ch.append(sweep([(s * 1.1, rb + 0.3, zb), (s * 1.1, 3.4, zb + 0.3), (s * 1.1, 3.75, zb - 0.2), (s * 1.0, 3.3, 2.1)], 0.07, segs=8))
+        ch.append(sweep([(s * 1.1, rf + 0.45, zf), (s * 1.1, 2.9, zf - 0.25), (s * 1.1, 3.3, zf + 0.25), (s * 1.0, 3.0, -2.1)], 0.07, segs=8))
+    piece(H, "Undercarriage", "Chassis", merge(*ch), col="secondary", mat="metal", role="detail", pri=0.9)
+    bx = [K.box((2.2, 1.2, 1.3), (0, 3.6, -3.35), r=0.12, seg=1), K.box((2.2, 0.12, 1.3), (0, 2.85, -4.6), r=0.04)]
+    bx += [sweep([(s * 1.05, 2.9, -4.0), (s * 1.05, 2.9, -5.2), (s * 1.05, 3.7, -5.25)], 0.06, segs=6) for s in (-1, 1)]
+    bx += [sweep([(s * 1.1, 4.25, -3.0), (s * 1.12, 4.9, -3.0)], 0.04, segs=6) for s in (-1, 1)]
+    piece(H, "DriverBox", "Chassis", merge(*bx), col="primary", mat="wood", role="body", pri=0.6)
+    seat = merge(K.box((2.0, 0.28, 0.9), (0, 4.35, -3.3), r=0.1, seg=1), K.box((2.0, 0.7, 0.18), (0, 4.75, -2.8), r=0.08, seg=1))
+    piece(H, "Seat", "Chassis", seat, col="cloth", mat="cloth", role="seat", pri=0.7)
+    shafts = merge(*[sweep([(s * 0.75, rf + 0.35, zf - 0.2), (s * 0.85, 2.6, -6.5), (s * 0.82, 2.9, -9.8)], 0.08, segs=8) for s in (-1, 1)],
+                   sweep([(-0.85, 2.55, -6.4), (0.85, 2.55, -6.4)], 0.06, segs=6))
+    piece(H, "Shafts", "Chassis", shafts, col="darkWood", mat="wood", role="detail", pri=1.0)
+    K.vehicle_clips(H, wheels, susp="Chassis", height=6.6, length=14.0, sym=14, roll=0.6, bob=0.6, turns=0.8)
+    H.socket("head", (0, 7.0, 0), "Chassis")
+    H.socket("mouth", (0, 2.8, -9.9), "Chassis")
+    H.socket("exhaust", (0, 3.0, 3.4), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    R.finish_mount(H, "Seat", (0, 4.5, -3.3), (-2.6, -3.0), seat_size=(2.0, 0.25, 0.9))
+    return H
+
+
+def rickshaw_real():
+    """Cycle rickshaw at real scale (9.6 studs): bicycle front end with the rider's saddle, bars and crank, chain to
+    a rear axle with two wire wheels carrying a passenger cab: cushioned bench, footwell, mudguards and a folding
+    cloth hood on hoops."""
+    H = _new("rickshaw", pv("#2A9D8F", "#E9C46A", cloth="#A23B2A", metal="#C9CFD6"))
+    H.bone("Chassis", "Body", (0, 0, 0))
+    rf, rb, zf, zb, xb = 1.0, 1.0, -4.2, 1.6, 1.45
+    H.bone("Steer", "Chassis", (0, 2.9, -3.55))
+    H.bone("WheelF", "Steer", (0, rf, zf))
+    wheels = [R.moto_wheel(H, "WheelF", "WheelF", (0, rf, zf), rf, 0.2, style="wire", spokes=32, rim_col="metal", ri=rf - 0.18, segs=28)]
+    for s, tag in ((1, "R"), (-1, "L")):
+        b = H.bone("WheelB" + tag, "Chassis", (s * xb, rb, zb))
+        wheels.append(R.moto_wheel(H, "WheelB" + tag, b, (s * xb, rb, zb), rb, 0.2, style="wire", spokes=32, rim_col="metal", ri=rb - 0.18, segs=28))
+    bb = (0, 0.95, -2.45)
+    seat_t = (0, 2.55, -1.85)
+    fr = [sweep([(0, 3.0, -3.5), (0, 2.45, -3.65)], 0.09, segs=12), sweep([(0, 2.5, -3.6), (0, 1.4, -3.0), bb], 0.08, segs=10), sweep([bb, seat_t], 0.07, segs=10),
+          sweep([(0, 2.85, -3.5), (0, 2.4, -1.95)], 0.065, segs=10), sweep([bb, (0, 1.0, -1.2), (0, 1.25, -0.6)], 0.09, segs=10), K.cyl(0.36, 0.11, bb, "x", segs=14),
+          sweep([(-xb, rb, zb), (xb, rb, zb)], 0.07, segs=10)]
+    piece(H, "Frame", "Chassis", merge(*fr), col="primary", mat="metal", role="body", pri=0.5)
+    fk = [sweep([(0, 3.1, -3.5), (0, 2.4, -3.7)], 0.05, segs=8), K.box((0.42, 0.12, 0.2), (0, 2.35, -3.72), r=0.04)]
+    fk += [sweep([(s * 0.17, 2.35, -3.72), (s * 0.18, 1.6, -4.0), (s * 0.18, rf, zf)], 0.05, segs=8) for s in (-1, 1)]
+    gy, gz = seat_t[1] + 1.15, seat_t[2] - 1.38
+    fk += [sweep([(0, 3.1, -3.5), (0, 3.35, -3.55)], 0.05, segs=8), sweep([(-1.2, gy, gz), (-0.6, gy - 0.05, gz - 0.25), (0, 3.35, -3.55), (0.6, gy - 0.05, gz - 0.25), (1.2, gy, gz)], 0.042, segs=8)]
+    piece(H, "Fork", "Steer", merge(*fk), col="metal", mat="metal", role="detail", pri=0.8)
+    grips = merge(*[sweep([(s * 0.8, gy - 0.02, gz - 0.1), (s * 1.24, gy, gz)], 0.065, segs=10) for s in (-1, 1)])
+    piece(H, "Grips", "Steer", grips, col="darker", mat="rubber", role="detail", pri=1.2)
+    sd = loft([(seat_t[2] - 0.4, seat_t[1] + 0.12, 0.08, 0.05, 0.05), (seat_t[2] - 0.2, seat_t[1] + 0.14, 0.16, 0.06, 0.07), (seat_t[2] + 0.15, seat_t[1] + 0.15, 0.32, 0.08, 0.09),
+               (seat_t[2] + 0.32, seat_t[1] + 0.13, 0.3, 0.06, 0.08)], n=18, sub=3)
+    piece(H, "Seat", "Chassis", sd, col="darker", mat="cloth", role="seat", pri=0.7)
+    _crank_set(H, "Chassis", bb, ring_r=0.36, arm=0.55, side=0.28)
+    piece(H, "Chain", "Chassis", _chain(0.2, (bb[2], bb[1]), 0.36, (zb, rb), 0.22, w=0.025), col="steel", mat="metal", role="detail", pri=1.5)
+    cab = [K.box((2.5, 0.14, 1.6), (0, 1.3, -0.15), r=0.05), K.box((2.5, 1.2, 0.12), (0, 1.85, -0.95), r=0.05), K.box((2.5, 0.9, 1.4), (0, 1.85, 1.35), r=0.1, seg=1)]
+    for s in (-1, 1):
+        cab.append(K.box((0.12, 1.1, 2.4), (s * 1.25, 2.4, 0.9), r=0.05))
+        cab.append(_fender(zb, rb, rb + 0.06, 0.05, 20, 160, 0.4, dome=0.6) if False else xf(_fender(zb, rb, rb + 0.08, 0.05, 20, 160, 0.4, dome=0.6), (s * xb, 0, 0)))
+    piece(H, "Cab", "Chassis", merge(*cab), col="primary", mat="metal", role="body", pri=0.5)
+    bench = merge(K.box((2.3, 0.35, 1.2), (0, 2.45, 1.2), r=0.14, seg=1), K.box((2.3, 1.2, 0.3), (0, 3.25, 1.85), r=0.12, seg=1))
+    piece(H, "Bench", "Chassis", bench, col="secondary", mat="cloth", role="detail", pri=0.7)
+    hood = []
+    for k, z in enumerate((2.05, 1.35, 0.6)):
+        top = 5.6 - 0.15 * k
+        hood.append(sweep([(-1.25, 2.9, z), (-1.22, top - 0.6, z - 0.1), (-0.8, top, z - 0.15), (0.8, top, z - 0.15), (1.22, top - 0.6, z - 0.1), (1.25, 2.9, z)], 0.04, segs=6))
+    canv = loft([(0.5, 4.0, 1.3, 1.55, 0.1, 2.4), (1.0, 4.05, 1.32, 1.6, 0.1, 2.4), (2.1, 4.0, 1.3, 1.55, 0.1, 2.4)], n=28, sub=2)
+    piece(H, "Hood", "Chassis", canv, col="cloth", mat="cloth", role="body", pri=0.8)
+    piece(H, "HoodHoops", "Chassis", merge(*hood), col="darker", mat="metal", role="detail", pri=1.4)
+
+    def mv(pose, u):
+        K.add(pose, "Crank", (0, 0, 0, -TAU * u, 0, 0))
+
+    K.vehicle_clips(H, wheels, susp="Chassis", height=5.6, length=9.6, sym=12, steer=("Steer",), roll=0.5, bob=0.4, turns=1.0, attack="honk", extra_move=mv)
+    H.socket("head", (0, 6.0, -1.8), "Chassis")
+    H.socket("mouth", (0, 2.0, -5.2), "Chassis")
+    H.socket("exhaust", (0, 1.2, 2.4), "Chassis")
+    H.socket("seat2", (0, 2.65, 1.15), "Chassis")
+    H.rig.update({"head": "Chassis"})
+    R.finish_mount(H, "Seat", (0, seat_t[1] + 0.22, seat_t[2] + 0.05), (-1.5, -1.9), extra={"seats": 2}, seat_size=(0.6, 0.15, 0.8))
+    return H
+
+
+# old-size builders brought to real game scale: (scale, enter (x, z)) per hero; the seat socket scales with the model
+_RESCALE = {"chopper motorcycle": (1.55, (-1.7, 0.6)), "horse sleigh": (1.7, (-2.6, 1.6)), "cart": (1.8, (-2.6, -1.6)), "covered wagon": (1.8, (-3.0, -4.9))}
+
+
+def _rescaled(H):
+    k, enter = _RESCALE[H.id]
+    R.rescale(H, k)
+    (pos, bone) = H.sockets["seat"]
+    sd = H.mount.get("saddle", {})
+    R.finish_mount(H, H.mount.get("seat", "Seat"), pos, enter, bone=bone, seat_size=sd.get("size", (0.8, 0.2, 0.8)))
     return H

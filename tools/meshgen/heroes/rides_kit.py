@@ -391,3 +391,35 @@ def foot_path(w, stride, lift, duty=0.6):
 def pose_entry(Rm, pos=(0.0, 0.0, 0.0)):
     a, b, c = euler_xyz(Rm)
     return (pos[0], pos[1], pos[2], a, b, c)
+
+
+# ================================================================================================ rescale
+def rescale(H, k):
+    """Uniformly rescale a finished hero authored at the old arbitrary size (bones, direct / SDF pieces, prims,
+    sockets, clip translations, rig sizes, saddle) by k, about the ground origin."""
+    import sdf as S
+    H.bones = [(n, p, tuple(float(v) * k for v in pos)) for n, p, pos in H.bones]
+    for p in H.parts:
+        if p["kind"] == "piece":
+            m = p["sdf"]
+            if isinstance(m, K.DMesh):
+                p["sdf"] = K.dm(D.moved(m, scale=(k, k, k)))
+            else:
+                f = m
+                p["sdf"] = S.SDF(lambda q, f=f: f(q / k) * k)
+        else:
+            p["pos"] = tuple(v * k for v in p["pos"])
+            p["size"] = tuple(v * k for v in p["size"])
+    H.sockets = {n: (tuple(v * k for v in pos), b) for n, (pos, b) in H.sockets.items()}
+    for c in H.clips.values():
+        for b, vals in c["tracks"].items():
+            c["tracks"][b] = [(v[0] * k, v[1] * k, v[2] * k, v[3], v[4], v[5]) for v in vals]
+    if "height" in H.rig:
+        H.rig["height"] = H.rig["height"] * k
+    if "wheels" in H.rig:
+        H.rig["wheels"] = [{"bone": w["bone"], "r": round(w["r"] * k, 3)} for w in H.rig["wheels"]]
+    sd = (H.mount or {}).get("saddle")
+    if sd:
+        sd["pos"] = tuple(v * k for v in sd["pos"])
+        sd["size"] = tuple(v * k for v in sd["size"])
+    return H
