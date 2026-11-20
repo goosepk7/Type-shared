@@ -949,6 +949,10 @@ def rickshaw():
 # ==================================================================================================== walkers
 @hero("mech suit", FAM)
 def mech_walker():
+    return mech_suit_real()
+
+
+def _old_mech_walker():
     """Two-legged mech walker: armoured cockpit pod with a canopy (pilot seat shows), reverse-jointed legs with
     pistons and three-toed feet, arm cannons; biped gait with a heavy stomp, cannon recoil attack."""
     H = Hero("mech suit", plan="Biped", gait="stomp", tags=["vehicle", "mech"])
@@ -1019,6 +1023,10 @@ def mech_walker():
 
 @hero("spider walker", FAM)
 def spider_walker():
+    return spider_walker_real()
+
+
+def _old_spider_walker():
     """Eight-legged walker: rounded cockpit body with a canopy and seat, four leg pairs (coxa / femur / tibia) on
     their own bones walking an alternating tetrapod gait."""
     H = Hero("spider walker", plan="Spider", gait="scuttle", tags=["vehicle", "mech"])
@@ -1996,4 +2004,318 @@ def snowmobile_real():
     H.socket("exhaust", (1.02, 1.56, 0.4), "Chassis")
     H.rig.update({"head": "Chassis"})
     R.finish_mount(H, "Seat", seat, (-2.4, 0.6), seat_size=(1.0, 0.2, 2.0))
+    return H
+
+
+# ==================================================================================================== armed encased walkers
+def _walker_clips(H, legs, body_rest, walk, move, idle_extra=None, move_extra=None, attack=None, hit_bone="Body", flat_feet=True):
+    """Walk / Move / Idle / Attack / Hit for a legged walker with IK-planted feet.
+    legs: dicts {root, mid, end, p0, p1, p2 (rest pivots), phase, bend, yaw, foot (optional end bone to keep flat)}.
+    walk / move: dicts {len, stride, lift, duty, bob, roll, yaw, pitch}."""
+    def gait(spec, extra):
+        L = spec["len"]
+
+        def fn(t):
+            u = t / L
+            pose = {}
+            bob = -spec["bob"] * (0.5 + 0.5 * math.cos(TAU * u * spec.get("beats", 2)))
+            rz = spec["roll"] * math.sin(TAU * u)
+            ry = spec["yaw"] * math.sin(TAU * u)
+            rxp = spec.get("pitch", 0.0) * math.sin(TAU * u * 2)
+            bpos = np.array([0.0, bob, 0.0])
+            Rb = R.axis_rot((1, 0, 0), rxp) @ R.axis_rot((0, 1, 0), ry) @ R.axis_rot((0, 0, 1), rz)
+            pose["Body"] = (0.0, bob, 0.0, *R.euler_xyz(Rb))
+            for lg in legs:
+                w = (u + lg["phase"]) % 1.0
+                dz, dy = R.foot_path(w, spec["stride"], spec["lift"], spec["duty"])
+                tw = np.array(lg["p2"], float) + np.array([0.0, dy, dz])
+                # into the body frame (Body pivot rest = body_rest)
+                q = Rb.T @ (tw - (np.array(body_rest) + bpos)) + np.array(body_rest)
+                R1, R2, R3 = R.leg_ik(lg["p0"], lg["p1"], lg["p2"], q, bend=lg["bend"], yaw=lg.get("yaw", False))
+                pose[lg["root"]] = R.pose_entry(R1)
+                pose[lg["mid"]] = R.pose_entry(R2)
+                if lg.get("foot"):
+                    # keep the sole level in the world: undo the body tilt too, tip the toe up in swing
+                    toe = -0.25 * math.sin(math.pi * (w - spec["duty"]) / (1 - spec["duty"])) if w >= spec["duty"] else 0.0
+                    Rf = (R1 @ R2).T @ Rb.T @ R.axis_rot((1, 0, 0), toe) if not lg.get("yaw") else R3
+                    pose[lg["foot"]] = R.pose_entry(Rf)
+            if extra:
+                extra(pose, u)
+            return pose
+        return fn
+
+    H.clip("Walk", walk["len"], gait(walk, move_extra), keys=24)
+    H.clip("Move", move["len"], gait(move, move_extra), keys=24)
+
+    def idle(t):
+        u = t / 4.0
+        pose = {"Body": (0, 0.04 * math.sin(TAU * u * 2), 0, 0.01 * math.sin(TAU * u), 0.02 * math.sin(TAU * u), 0)}
+        b = pose["Body"]
+        Rb = R.axis_rot((1, 0, 0), b[3]) @ R.axis_rot((0, 1, 0), b[4])
+        for lg in legs:
+            q = Rb.T @ (np.array(lg["p2"], float) - (np.array(body_rest) + np.array([0, b[1], 0]))) + np.array(body_rest)
+            R1, R2, R3 = R.leg_ik(lg["p0"], lg["p1"], lg["p2"], q, bend=lg["bend"], yaw=lg.get("yaw", False))
+            pose[lg["root"]] = R.pose_entry(R1)
+            pose[lg["mid"]] = R.pose_entry(R2)
+            if lg.get("foot"):
+                pose[lg["foot"]] = R.pose_entry((R1 @ R2).T @ Rb.T if not lg.get("yaw") else R3)
+        if idle_extra:
+            idle_extra(pose, u)
+        return pose
+
+    H.clip("Idle", 4.0, idle, keys=24)
+    if attack:
+        H.clip("Attack", attack[0], attack[1], keys=18, loop=False)
+
+    def hit(t):
+        s = t / 0.45
+        k = math.sin(math.pi * min(s, 1)) * (1 - 0.3 * s)
+        return {hit_bone: (0, -0.08 * k, 0.25 * k, 0.08 * k, 0, 0.05 * math.sin(t * 38) * k)}
+
+    H.clip("Hit", 0.45, hit, keys=10, loop=False)
+
+
+def mech_suit_real():
+    """Armed bipedal mech suit (13.5 studs tall), pilot ENCASED: armoured cockpit tub with the pilot's seat, control
+    sticks and a glowing console under a wrap-around canopy (glass), roof armour, back reactor pack with a glowing
+    core and vents, shoulder pauldrons, a right-arm rotary cannon (spinning Barrel bone, `muzzle` socket) and a
+    left-arm missile pod, heavy legs (hip / knee / ankle bones) with hydraulic pistons, knee guards and broad
+    three-toed feet. Walk / Move clips plant the feet with two-bone IK (no sliding); Attack fires the cannon."""
+    H = Hero("mech suit", plan="Biped", gait="stomp", tags=["vehicle", "mech", "ride"])
+    H.preview = pv("#7D8794", "#E36414", darker="#23262C", metal="#A9B2BD", steel="#4D545E", gunmetal="#33383F")
+    body_rest = (0.0, 7.6, 0.3)
+    H.body(body_rest)
+    seat = (0.0, 9.15, 0.35)
+    # ---------------------------------------------------------------- cockpit tub, back pack, canopy, roof
+    tub = loft([(-2.9, 8.55, 1.5, 0.45, 0.6, 3.0), (-2.5, 8.5, 2.35, 0.65, 0.95, 3.2), (-1.0, 8.45, 2.65, 0.7, 1.15, 3.4), (1.0, 8.5, 2.65, 0.7, 1.15, 3.4),
+                (2.5, 8.6, 2.4, 0.6, 1.0, 3.2), (2.95, 8.7, 1.9, 0.45, 0.7, 3.0)], n=32, sub=4)
+    piece(H, "Hull", "Body", tub, col="primary", mat="metal", role="body", pri=0.4)
+    belly = loft([(-2.4, 7.25, 1.8, 0.35, 0.35, 3.0), (2.4, 7.3, 1.8, 0.35, 0.35, 3.0)], n=24, sub=1)
+    joints = merge(belly, *[K.cyl(0.9, 0.85, (s * 2.25, 7.45, 0.25), "x", segs=20) for s in (-1, 1)])
+    piece(H, "Pelvis", "Body", joints, col="gunmetal", mat="metal", role="body", pri=0.6)
+    back = loft([(1.35, 10.7, 2.3, 2.3, 1.75, 3.6), (2.0, 10.8, 2.4, 2.4, 1.85, 3.8), (2.9, 10.8, 2.2, 2.2, 1.7, 3.6), (3.35, 10.7, 1.6, 1.8, 1.4, 3.0)], n=28, sub=3)
+    piece(H, "BackPack", "Body", back, col="primary", mat="metal", role="body", pri=0.5)
+    vents = merge(*[cbox((2.6, 0.08, 0.1), (0, 9.7 + 0.28 * k, 3.38), c=0.02) for k in range(6)], *[K.cyl(0.5, 0.32, (s * 1.2, 12.55, 2.4), "y", segs=16) for s in (-1, 1)],
+                  *[K.tube_ring(0.36, 0.26, 0.2, axis="y", pos=(s * 1.2, 12.85, 2.4), segs=16) for s in (-1, 1)])
+    piece(H, "Vents", "Body", vents, col="gunmetal", mat="metal", role="detail", pri=1.2)
+    core = merge(K.cyl(0.12, 0.55, (0, 11.6, 3.36), "z", segs=20), *[K.box((0.12, 1.2, 0.08), (s * 2.18, 10.6, 1.9), r=0.03) for s in (-1, 1)])
+    R.glow_lamp(H, "ReactorGlow", "Body", core, R.CYAN, pri=1.3)
+    roof = loft([(-0.2, 13.05, 1.7, 0.18, 0.12, 3.0), (0.6, 13.1, 2.1, 0.25, 0.15, 3.2), (1.5, 13.0, 2.2, 0.22, 0.15, 3.2)], n=24, sub=3)
+    piece(H, "Roof", "Body", roof, col="secondary", mat="metal", role="detail", pri=0.8)
+    can = loft([(-2.75, 9.15, 1.4, 0.4, 0.05, 2.4), (-2.5, 9.25, 2.05, 1.5, 0.15, 2.6), (-1.6, 9.2, 2.3, 3.0, 0.2, 2.8), (-0.4, 9.2, 2.35, 3.75, 0.2, 2.8),
+                (0.6, 9.2, 2.35, 3.85, 0.2, 2.8), (1.4, 9.2, 2.3, 3.75, 0.2, 2.8)], n=32, sub=4)
+    piece(H, "CanopyGlass", "Body", can, col="glass", mat="glass", role="window", pri=0.7, tr=0.55, ao=False)
+    frame = []
+    for z in (-1.2, 0.3):
+        top = 9.2 + (3.0 if z < -1 else 3.8)
+        frame.append(sweep([(-2.33, 9.3, z), (-2.2, top - 0.6, z), (-1.0, top + 0.02, z), (1.0, top + 0.02, z), (2.2, top - 0.6, z), (2.33, 9.3, z)], 0.1, segs=8))
+    frame.append(sweep([(0, 12.95, 1.3), (0, 12.6, -0.6), (0, 11.4, -1.85), (0, 9.9, -2.55)], 0.09, segs=8))
+    piece(H, "CanopyFrame", "Body", merge(*frame), col="gunmetal", mat="metal", role="detail", pri=1.0)
+    # ---------------------------------------------------------------- interior
+    st = R.merge(K.seat_mesh(seat, w=1.6, d=1.2, back=2.4, cushion=0.3, recline=8.0), K.box((1.2, 0.5, 0.25), (0, seat[1] + 2.45, seat[2] + 0.75), r=0.1))
+    piece(H, "Seat", "Body", st, col="darker", mat="cloth", role="seat", pri=0.9)
+    con = [K.box((3.2, 0.7, 0.8), (0, 9.15, -2.1), r=0.12, rot_=(-20, 0, 0))]
+    for s in (-1, 1):
+        con.append(K.box((0.55, 0.85, 1.3), (s * 1.6, 9.3, -1.1), r=0.1))
+        con.append(sweep([(s * 1.55, 9.75, -1.25), (s * 1.52, 10.25, -1.32)], 0.07, segs=8))
+        con.append(K.box((0.18, 0.32, 0.18), (s * 1.52, 10.35, -1.33), r=0.06))
+    piece(H, "Console", "Body", merge(*con), col="gunmetal", mat="metal", role="detail", pri=1.0)
+    scr = merge(xf(K.box((1.5, 0.45, 0.04), (0, 0, 0), r=0.04), (0, 9.62, -2.37), r=(-20, 0, 0)), *[K.box((0.04, 0.3, 0.5), (s * 1.89, 9.55, -1.1), r=0.02) for s in (-1, 1)])
+    R.glow_lamp(H, "Screens", "Body", scr, R.CYAN, pri=1.6)
+    lamps = merge(*[xf(K.box((0.5, 0.22, 0.08), (0, 0, 0), r=0.06, seg=1), (s * 1.35, 8.35, -3.0), r=(0, s * 15, 0)) for s in (-1, 1)])
+    R.glow_lamp(H, "Headlight", "Body", lamps, R.WARM, pri=1.4)
+    trim = merge(*[cbox((0.1, 0.12, 4.4), (s * 2.66, 8.85, 0.0), c=0.03) for s in (-1, 1)], cbox((3.0, 0.12, 0.1), (0, 7.95, -2.85), c=0.03))
+    piece(H, "Trim", "Body", trim, col="secondary", mat="metal", role="detail", pri=1.5)
+    # ---------------------------------------------------------------- legs
+    legs = []
+    for s, tag in ((1, "R"), (-1, "L")):
+        p0, p1, p2 = (s * 2.3, 7.45, 0.25), (s * 2.45, 4.5, -0.55), (s * 2.45, 1.35, 0.25)
+        H.bone("Hip" + tag, "Body", p0)
+        H.bone("Knee" + tag, "Hip" + tag, p1)
+        H.bone("Ankle" + tag, "Knee" + tag, p2)
+        x = s * 2.42
+        th = merge(loft([(-0.65, 0, 0.62, 0.55, 0.55, 3.0), (0.5, 0, 0.7, 0.62, 0.62, 3.0)], n=20, sub=1) if False else
+                   R.loft_y([(4.6, -0.5, 0.68, 0.62, 0.68, 3.0), (5.6, -0.25, 0.82, 0.78, 0.84, 3.2), (6.6, 0.05, 0.84, 0.8, 0.86, 3.2), (7.3, 0.2, 0.72, 0.7, 0.7, 3.0)], n=24, sub=3))
+        th = xf(th, (x, 0, 0))
+        piece(H, "Thigh" + tag, "Hip" + tag, th, col="primary", mat="metal", role="limb", pri=0.6)
+        kn = merge(K.cyl(1.25, 0.7, (x, 4.5, -0.55), "x", segs=20), xf(loft([(-0.4, 0, 0.66, 0.66, 0.36, 3.0), (0.4, 0, 0.6, 0.55, 0.3, 3.0)], n=18, sub=1), (x, 4.65, -1.35)))
+        piece(H, "KneeGuard" + tag, "Knee" + tag, kn, col="secondary", mat="metal", role="limb", pri=0.8)
+        sh = R.loft_y([(1.5, 0.25, 0.58, 0.58, 0.52, 3.0), (2.4, 0.0, 0.74, 0.85, 0.66, 3.2), (3.5, -0.3, 0.8, 0.9, 0.66, 3.2), (4.3, -0.5, 0.64, 0.62, 0.5, 3.0)], n=24, sub=3)
+        piece(H, "Shin" + tag, "Knee" + tag, xf(sh, (x, 0, 0)), col="primary", mat="metal", role="limb", pri=0.6)
+        pis = merge(sweep([(x + s * 0.55, 6.6, 0.55), (x + s * 0.62, 4.9, 0.1)], 0.16, segs=10), sweep([(x + s * 0.62, 5.2, 0.18), (x + s * 0.66, 3.4, 0.55)], 0.1, segs=10))
+        piece(H, "Piston" + tag, "Hip" + tag, pis, col="metal", mat="metal", role="detail", pri=1.4)
+        ank = merge(K.cyl(1.0, 0.45, (x, 1.35, 0.25), "x", segs=18))
+        foot = loft([(-2.0, 0.42, 0.75, 0.2, 0.42, 3.0), (-1.4, 0.52, 0.95, 0.35, 0.52, 3.4), (-0.3, 0.68, 1.0, 0.6, 0.68, 3.6), (0.8, 0.6, 0.9, 0.5, 0.6, 3.4), (1.45, 0.45, 0.6, 0.3, 0.45, 3.0)], n=26, sub=3)
+        toes = merge(*[xf(loft([(-0.45, 0, 0.18, 0.15, 0.2), (0.0, 0, 0.22, 0.2, 0.22), (0.45, 0, 0.16, 0.12, 0.16)], n=12, sub=2), (x + dx, 0.22, -2.15 + 0.15 * abs(dx)), r=(0, -dx * 18, 0))
+                       for dx in (-0.55, 0.0, 0.55)])
+        piece(H, "Foot" + tag, "Ankle" + tag, merge(xf(foot, (x, 0, 0)), ank), col="gunmetal", mat="metal", role="foot", pri=0.7)
+        piece(H, "Toes" + tag, "Ankle" + tag, toes, col="steel", mat="metal", role="foot", pri=1.2)
+        legs.append(dict(root="Hip" + tag, mid="Knee" + tag, end="Ankle" + tag, foot="Ankle" + tag, p0=p0, p1=p1, p2=p2, phase=0.0 if s > 0 else 0.5, bend=(0, 0, -1)))
+    # ---------------------------------------------------------------- arms: right rotary cannon, left missile pod
+    for s, tag in ((1, "R"), (-1, "L")):
+        sh_p, el_p = (s * 3.35, 11.2, 0.4), (s * 3.75, 9.5, 0.3)
+        H.bone("Arm" + tag, "Body", sh_p)
+        H.bone("Forearm" + tag, "Arm" + tag, el_p)
+        pad = R.loft_y([(10.3, 0.4, 0.95, 1.2, 1.1, 3.0), (11.3, 0.4, 1.05, 1.35, 1.2, 3.2), (12.0, 0.4, 0.8, 1.0, 0.95, 3.0), (12.25, 0.4, 0.45, 0.6, 0.55, 2.6)], n=24, sub=3)
+        pad = warp(xf(pad, (s * 3.45, 0, 0)), lambda V, s=s: np.column_stack([V[:, 0], V[:, 1] - 0.25 * (s * V[:, 0] - 3.45), V[:, 2]]))
+        piece(H, "Pauldron" + tag, "Arm" + tag, pad, col="secondary", mat="metal", role="limb", pri=0.6)
+        ua = merge(K.cyl(0.9, 0.55, (s * 3.0, 11.2, 0.4), "x", segs=18), R.loft_y([(9.5, 0.3, 0.42, 0.45, 0.45, 3.0), (10.8, 0.4, 0.5, 0.5, 0.5, 3.0)], n=18, sub=1))
+        ua = merge(K.cyl(0.9, 0.55, (s * 3.0, 11.2, 0.4), "x", segs=18), xf(R.loft_y([(9.5, 0.3, 0.42, 0.45, 0.45, 3.0), (10.8, 0.4, 0.5, 0.5, 0.5, 3.0)], n=18, sub=1), (s * 3.75, 0, 0)),
+                   K.cyl(0.9, 0.45, el_p, "x", segs=18))
+        piece(H, "UpperArm" + tag, "Arm" + tag, ua, col="gunmetal", mat="metal", role="limb", pri=0.8)
+    # right: rotary cannon housing on the forearm + spinning barrel cluster
+    cx, cy = 3.75, 9.25
+    hous = merge(R.loft([(-1.6, cy, 0.62, 0.62, 0.62, 3.0), (-0.6, cy, 0.7, 0.7, 0.7, 3.2), (0.6, cy, 0.62, 0.62, 0.62, 3.0)], n=24, sub=2), K.box((0.5, 0.5, 1.0), (0, cy + 0.75, -0.3), r=0.1),
+                 K.tube_ring(0.62, 0.5, 0.3, axis="z", pos=(0, cy, -1.75), segs=22))
+    piece(H, "CannonHousing", "ForearmR", xf(hous, (cx, 0, 0)), col="secondary", mat="metal", role="limb", pri=0.6)
+    belt = sweep([(cx - 0.5, cy + 0.2, 0.3), (cx - 1.2, cy + 0.6, 0.9), (cx - 1.9, cy + 1.2, 1.3), (cx - 2.0, cy + 1.8, 1.4)], 0.13, segs=8)
+    piece(H, "AmmoFeed", "ForearmR", belt, col="gold", mat="metal", role="detail", pri=1.5)
+    H.bone("Barrel", "ForearmR", (cx, cy, -2.0))
+    brl = [K.cyl(0.3, 0.42, (cx, cy, -2.05), "z", segs=18)]
+    for k in range(6):
+        a = TAU * k / 6
+        brl.append(sweep([(cx + 0.27 * math.cos(a), cy + 0.27 * math.sin(a), -1.9), (cx + 0.27 * math.cos(a), cy + 0.27 * math.sin(a), -4.0)], 0.09, segs=8))
+    brl += [K.tube_ring(0.42, 0.34, 0.14, axis="z", pos=(cx, cy, z), segs=18) for z in (-3.0, -3.9)]
+    piece(H, "Barrels", "Barrel", merge(*brl), col="steel", mat="metal", role="detail", pri=0.9)
+    H.socket("muzzle", (cx, cy, -4.15), "Barrel")
+    # left: missile pod
+    lx, ly = -3.8, 9.35
+    pod = merge(K.box((1.5, 1.4, 2.4), (lx, ly, -0.9), r=0.18, seg=1), K.box((1.6, 0.18, 2.5), (lx, ly + 0.8, -0.9), r=0.06))
+    piece(H, "MissilePod", "ForearmL", pod, col="secondary", mat="metal", role="limb", pri=0.7)
+    tips = merge(*[xf(K.D.revolve([(0, 0), (0.12, 0.16), (0.35, 0.17), (0.37, 0)], segs=12, axis=2, spline=2), (lx + dx, ly + dy, -2.42)) for dx in (-0.4, 0.0, 0.4) for dy in (-0.35, 0.05, 0.45)])
+    piece(H, "Missiles", "ForearmL", xf(tips, (0, 0, 0)), col="red", mat="metal", role="detail", pri=1.2)
+    H.socket("muzzle2", (lx, ly, -2.6), "ForearmL")
+    # ---------------------------------------------------------------- motion
+    arm_rest = {"ArmR": 0.0, "ArmL": 0.0}
+
+    def arms(pose, u):
+        K.add(pose, "ArmR", (0, 0, 0, 0.06 * math.sin(TAU * u), 0, 0))
+        K.add(pose, "ArmL", (0, 0, 0, -0.06 * math.sin(TAU * u), 0, 0))
+
+    def idle_x(pose, u):
+        K.add(pose, "ArmR", (0, 0, 0, 0.02 * math.sin(TAU * u * 2), 0, 0))
+        K.add(pose, "ArmL", (0, 0, 0, 0.02 * math.sin(TAU * u * 2 + 1), 0, 0))
+
+    def atk(t):
+        s = t / 1.0
+        aim = K._ease(s / 0.2) if s < 0.2 else (1 - K._ease((s - 0.8) / 0.2) if s > 0.8 else 1.0)
+        p = {"Body": (0, -0.12 * aim, 0, 0, -0.1 * aim, 0)}
+        kick = sum(K._bump(s, 0.22 + 0.1 * k, 0.32 + 0.1 * k) for k in range(5))
+        K.add(p, "ArmR", (0, 0, 0, 0.12 * aim, 0.12 * aim, 0))
+        K.add(p, "ForearmR", (0, 0, 0.12 * kick, 0.05 * kick, 0, 0))
+        K.add(p, "Barrel", (0, 0, 0, 0, 0, TAU * 2 * K._ease((s - 0.15) / 0.7)))
+        K.add(p, "ArmL", (0, 0, 0, 0.08 * aim, 0, 0))
+        for lg in legs:
+            R1, R2, R3 = R.leg_ik(lg["p0"], lg["p1"], lg["p2"], np.array(lg["p2"]) + np.array([0, 0.12 * aim, 0]), bend=lg["bend"])
+            p[lg["root"]] = R.pose_entry(R1)
+            p[lg["mid"]] = R.pose_entry(R2)
+            p[lg["foot"]] = R.pose_entry(R3)
+        return p
+
+    walk = dict(len=1.7, stride=3.2, lift=0.9, duty=0.62, bob=0.18, roll=0.035, yaw=0.04, pitch=0.01)
+    move = dict(len=1.15, stride=4.6, lift=1.3, duty=0.55, bob=0.3, roll=0.05, yaw=0.05, pitch=0.015)
+    _walker_clips(H, legs, body_rest, walk, move, idle_extra=idle_x, move_extra=arms, attack=(1.0, atk))
+    H.socket("head", (0, 13.6, 0), "Body")
+    H.socket("mouth", (cx, cy, -4.15), "Barrel")
+    H.socket("exhaust", (0, 12.9, 2.4), "Body")
+    H.rig.update({"head": "Body", "legsAuthored": True, "height": 13.5})
+    R.finish_mount(H, "Seat", seat, (-3.2, 1.5), bone="Body", seat_size=(1.6, 0.3, 1.2),
+                   extra={"stride": move["stride"], "walkStride": walk["stride"], "encased": True})
+    return H
+
+
+def spider_walker_real():
+    """Armed eight-legged spider walker (16 studs across the legs), pilot ENCASED: armoured hull with the pilot's
+    tub, seat, sticks and console under a bubble canopy (glass) with a roll frame, armoured abdomen with glowing
+    vents, a cluster of glowing sensor eyes, a chin turret (Turret yaw / Gun pitch bones) with twin cannons and a
+    `muzzle` socket, and eight jointed legs (Coxa yaw + lift / Tibia) walking an alternating tetrapod gait with
+    IK-planted feet (Walk / Move)."""
+    H = Hero("spider walker", plan="Spider", gait="scuttle", tags=["vehicle", "mech", "ride"])
+    H.preview = pv("#3D4048", "#C1121F", darker="#1E2025", metal="#A6AFBA", steel="#4D545E", gunmetal="#2D3138")
+    body_rest = (0.0, 4.6, 0.0)
+    H.body(body_rest)
+    seat = (0.0, 5.7, -0.7)
+    hull = loft([(-3.3, 4.6, 1.3, 0.55, 0.7, 2.6), (-2.8, 4.65, 2.3, 0.85, 1.05, 3.0), (-1.2, 4.7, 2.65, 0.95, 1.2, 3.2), (0.6, 4.7, 2.7, 0.95, 1.2, 3.2),
+                 (1.6, 4.75, 2.4, 0.95, 1.1, 3.0)], n=32, sub=4)
+    piece(H, "Hull", "Body", hull, col="primary", mat="metal", role="body", pri=0.4)
+    abd = loft([(0.9, 5.2, 1.8, 1.2, 1.0, 2.4), (1.8, 5.5, 2.5, 1.7, 1.4, 2.6), (3.3, 5.6, 2.6, 1.8, 1.6, 2.6), (4.8, 5.3, 1.9, 1.3, 1.3, 2.4), (5.6, 5.0, 0.6, 0.5, 0.5, 2.2)], n=32, sub=4)
+    stripe = kit_stripes(lambda P: P[:, 2], 1.6, width=0.22, depth=0.45, region=lambda P: np.clip((P[:, 2] - 1.6) / 0.6, 0, 1))
+    piece(H, "Abdomen", "Body", abd, col="primary", mat="metal", role="body", pri=0.5, pattern=stripe)
+    glow = merge(*[K.box((0.1, 0.18, 2.4), (s * 2.6, 5.4, 3.2), r=0.05, rot_=(0, 0, s * -20)) for s in (-1, 1)], K.cyl(0.1, 0.38, (0, 5.2, 5.62), "z", segs=18))
+    R.glow_lamp(H, "VentGlow", "Body", glow, (1.0, 0.25, 0.15), pri=1.4)
+    can = loft([(-3.25, 5.55, 1.3, 0.35, 0.05, 2.4), (-2.9, 5.6, 1.9, 1.5, 0.1, 2.6), (-1.9, 5.6, 2.15, 3.0, 0.15, 2.8), (-0.6, 5.6, 2.2, 3.75, 0.15, 2.8), (0.6, 5.6, 2.1, 3.7, 0.15, 2.6),
+                (1.25, 5.6, 1.7, 3.0, 0.1, 2.4)], n=32, sub=4)
+    piece(H, "CanopyGlass", "Body", can, col="glass", mat="glass", role="window", pri=0.7, tr=0.55, ao=False)
+    frame = [sweep([(-2.18, 5.65, z), (-2.0, 7.8, z), (-1.0, 9.38, z), (1.0, 9.38, z), (2.0, 7.8, z), (2.18, 5.65, z)], 0.1, segs=8) for z in (-1.0,)]
+    frame.append(sweep([(0, 9.3, 1.1), (0, 9.4, -0.6), (0, 8.3, -2.4), (0, 6.0, -3.25)], 0.09, segs=8))
+    piece(H, "CanopyFrame", "Body", merge(*frame), col="gunmetal", mat="metal", role="detail", pri=1.0)
+    st = merge(K.seat_mesh(seat, w=1.6, d=1.2, back=2.3, cushion=0.3, recline=8.0), K.box((1.2, 0.5, 0.25), (0, seat[1] + 2.35, seat[2] + 0.72), r=0.1))
+    piece(H, "Seat", "Body", st, col="darker", mat="cloth", role="seat", pri=0.9)
+    con = [K.box((3.0, 0.6, 0.7), (0, 5.75, -2.65), r=0.12, rot_=(-20, 0, 0))]
+    for s in (-1, 1):
+        con += [K.box((0.5, 0.7, 1.2), (s * 1.55, 5.9, -1.6), r=0.1), sweep([(s * 1.52, 6.2, -1.95), (s * 1.5, 6.75, -2.02)], 0.07, segs=8),
+                K.box((0.18, 0.3, 0.18), (s * 1.5, 6.88, -2.03), r=0.06)]
+    piece(H, "Console", "Body", merge(*con), col="gunmetal", mat="metal", role="detail", pri=1.0)
+    eyes = merge(*[xf(K.lamp((0, 0, 0), r_, 0.1), (x, y, -3.3 + 0.04 * abs(x) * 3)) for x, y, r_ in ((-0.75, 4.55, 0.2), (0.75, 4.55, 0.2), (-0.3, 4.35, 0.13), (0.3, 4.35, 0.13),
+                                                                                                  (-1.15, 4.75, 0.1), (1.15, 4.75, 0.1))],
+                 xf(K.box((1.2, 0.35, 0.04), (0, 0, 0), r=0.04), (0, 6.25, -3.08), r=(-20, 0, 0)))
+    R.glow_lamp(H, "Eyes", "Body", eyes, (1.0, 0.22, 0.15), pri=1.2)
+    # chin turret
+    H.bone("Turret", "Body", (0, 3.75, -2.6))
+    H.bone("Gun", "Turret", (0, 3.55, -3.0))
+    tb = merge(R.loft_y([(3.15, -2.6, 0.75, 0.75, 0.75, 2.4), (3.75, -2.6, 0.95, 0.95, 0.95, 2.6), (4.05, -2.6, 0.8, 0.8, 0.8, 2.4)], n=22, sub=2))
+    piece(H, "TurretBase", "Turret", tb, col="gunmetal", mat="metal", role="detail", pri=0.8)
+    gun = [K.box((1.5, 0.6, 1.0), (0, 3.55, -3.1), r=0.15, seg=1)]
+    for s in (-1, 1):
+        gun += [sweep([(s * 0.42, 3.55, -3.4), (s * 0.42, 3.55, -5.4)], 0.13, segs=12), K.tube_ring(0.2, 0.12, 0.35, axis="z", pos=(s * 0.42, 3.55, -5.4), segs=14),
+                K.cyl(0.6, 0.2, (s * 0.42, 3.55, -4.0), "z", segs=14)]
+    piece(H, "Guns", "Gun", merge(*gun), col="steel", mat="metal", role="detail", pri=0.8)
+    H.socket("muzzle", (0, 3.55, -5.65), "Gun")
+    # legs
+    legs = []
+    for i, (z0, zf_, a) in enumerate(((-2.0, -4.9, 0), (-0.7, -1.9, 1), (0.6, 1.6, 2), (1.8, 4.9, 3))):
+        for s, tag in ((1, "R"), (-1, "L")):
+            nm = f"{i}{tag}"
+            p0 = np.array([s * 2.35, 4.7, z0])
+            p2 = np.array([s * (6.4 if i in (1, 2) else 5.8), 0.0, zf_])
+            p1 = p0 + (p2 - p0) * 0.45 + np.array([0, 4.6, 0])
+            H.bone("Coxa" + nm, "Body", tuple(p0))
+            H.bone("Tibia" + nm, "Coxa" + nm, tuple(p1))
+            fem = merge(ball(0.55, tuple(p0), segs=14), sweep([tuple(p0), tuple(p0 + (p1 - p0) * 0.5 + np.array([0, 0.25, 0])), tuple(p1)], [0.38, 0.42, 0.3], segs=12))
+            arm_ = sweep([tuple(p0 + (p1 - p0) * 0.2 + np.array([0, 0.45, 0])), tuple(p0 + (p1 - p0) * 0.75 + np.array([0, 0.55, 0]))], 0.16, segs=8)
+            tib = merge(ball(0.42, tuple(p1), segs=12), sweep([tuple(p1), tuple(p1 + (p2 - p1) * 0.45 + np.array([0, 0.1, 0]) + (p2 - p0) * np.array([0.04, 0, 0.04])), tuple(p2 + np.array([0, 0.35, 0]))],
+                                                          [0.3, 0.26, 0.14], segs=12),
+                        xf(K.D.revolve([(0, 0), (0.1, 0.16), (0.35, 0.12), (0.4, 0)], segs=10, axis=1, spline=2), tuple(p2)))
+            piece(H, "Femur" + nm, "Coxa" + nm, merge(fem, arm_), col="primary", mat="metal", role="limb", pri=0.6 + 0.04 * i)
+            piece(H, "Tibia" + nm, "Tibia" + nm, tib, col="secondary" if i in (0, 3) else "gunmetal", mat="metal", role="limb", pri=0.7 + 0.04 * i)
+            grp = (i + (0 if s > 0 else 1)) % 2
+            legs.append(dict(root="Coxa" + nm, mid="Tibia" + nm, end=None, p0=tuple(p0), p1=tuple(p1), p2=tuple(p2), phase=0.5 * grp + 0.06 * i, bend=(0, 1, 0), yaw=True))
+
+    def idle_x(pose, u):
+        K.add(pose, "Turret", (0, 0, 0, 0, 0.35 * math.sin(TAU * u), 0))
+        K.add(pose, "Gun", (0, 0, 0, 0.06 * math.sin(TAU * u * 2), 0, 0))
+
+    def atk(t):
+        s = t / 1.0
+        aim = K._ease(s / 0.2) if s < 0.2 else (1 - K._ease((s - 0.8) / 0.2) if s > 0.8 else 1.0)
+        p = {"Body": (0, 0.15 * aim, 0, -0.06 * aim, 0, 0)}
+        kick = sum(K._bump(s, 0.25 + 0.15 * k, 0.37 + 0.15 * k) for k in range(4))
+        K.add(p, "Gun", (0, 0, 0.25 * kick, 0.08 * aim + 0.04 * kick, 0, 0))
+        b = p["Body"]
+        Rb = R.axis_rot((1, 0, 0), b[3])
+        for lg in legs:
+            q = Rb.T @ (np.array(lg["p2"], float) - (np.array(body_rest) + np.array([0, b[1], 0]))) + np.array(body_rest)
+            R1, R2, _ = R.leg_ik(lg["p0"], lg["p1"], lg["p2"], q, bend=lg["bend"], yaw=True)
+            p[lg["root"]] = R.pose_entry(R1)
+            p[lg["mid"]] = R.pose_entry(R2)
+        return p
+
+    walk = dict(len=1.3, stride=2.2, lift=1.0, duty=0.55, bob=0.08, roll=0.02, yaw=0.02, beats=2)
+    move = dict(len=0.8, stride=3.4, lift=1.3, duty=0.5, bob=0.12, roll=0.025, yaw=0.025, beats=2)
+    _walker_clips(H, legs, body_rest, walk, move, idle_extra=idle_x, attack=(1.0, atk))
+    H.socket("head", (0, 9.8, 0), "Body")
+    H.socket("mouth", (0, 3.55, -5.65), "Gun")
+    H.socket("exhaust", (0, 5.2, 5.7), "Body")
+    H.rig.update({"head": "Body", "legsAuthored": True, "height": 9.6})
+    R.finish_mount(H, "Seat", seat, (-3.4, -0.5), bone="Body", seat_size=(1.6, 0.3, 1.2), extra={"stride": move["stride"], "walkStride": walk["stride"], "encased": True})
     return H

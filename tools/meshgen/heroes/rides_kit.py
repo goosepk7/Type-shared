@@ -304,3 +304,90 @@ def finish_mount(H, seat_part, seat, enter, stand=False, bone="Chassis", length=
         H.mount.update(extra)
     H.socket("enter", (enter[0], 0.0, enter[1]))
     return H.mount
+
+
+# ================================================================================================ walker IK
+def axis_rot(axis, ang):
+    a = np.asarray(axis, float)
+    a = a / np.linalg.norm(a)
+    x, y, z = a
+    c, s = math.cos(ang), math.sin(ang)
+    C = 1 - c
+    return np.array([[c + x * x * C, x * y * C - z * s, x * z * C + y * s],
+                     [y * x * C + z * s, c + y * y * C, y * z * C - x * s],
+                     [z * x * C - y * s, z * y * C + x * s, c + z * z * C]])
+
+
+def euler_xyz(Rm):
+    """Decompose Rm = Rx(a) @ Ry(b) @ Rz(c) (Roblox CFrame.Angles order, as kit clips use) -> (a, b, c)."""
+    b = math.asin(max(-1.0, min(1.0, Rm[0, 2])))
+    a = math.atan2(-Rm[1, 2], Rm[2, 2])
+    c = math.atan2(-Rm[0, 1], Rm[0, 0])
+    return a, b, c
+
+
+def leg_ik(root, mid, end, target, bend=(0, 0, -1), yaw=False):
+    """Two-bone IK for a leg whose bones have identity rest rotations.
+    root / mid / end: rest positions (body frame) of the hip, knee and ankle pivots; target: wanted ankle position
+    (body frame). bend: preferred direction for the knee (forward (0,0,-1) for a biped, up (0,1,0) for a spider).
+    yaw: also yaw the root about Y so the leg plane points at the target (spider coxa).
+    Returns (R_root, R_mid, R_end_flat): local rotation matrices; R_end_flat keeps the foot at its rest attitude."""
+    root, mid, end, target = (np.asarray(v, float) for v in (root, mid, end, target))
+    Ry = np.eye(3)
+    d1, d2 = mid - root, end - mid
+    T = target - root
+    if yaw:
+        h0 = np.array([end[0] - root[0], 0.0, end[2] - root[2]])
+        h1 = np.array([T[0], 0.0, T[2]])
+        psi = math.atan2(h0[2], h0[0]) - math.atan2(h1[2], h1[0])
+        Ry = axis_rot((0, 1, 0), psi)
+        T = Ry.T @ T
+    # plane basis: h = horizontal direction of the rest leg (or forward), v = up
+    hv = np.array([end[0] - root[0] + d1[0] * 0, 0.0, end[2] - root[2]])
+    if np.linalg.norm(hv) < 1e-6 or not yaw:
+        hv = np.array([0.0, 0.0, -1.0])
+    h = hv / np.linalg.norm(hv)
+    v = np.array([0.0, 1.0, 0.0])
+    t = np.cross(h, v)
+
+    def p2(w):
+        return np.array([w @ h, w @ v])
+
+    a1, a2, tt = p2(d1), p2(d2), p2(T)
+    L1, L2 = np.linalg.norm(a1), np.linalg.norm(a2)
+    D = float(np.clip(np.linalg.norm(tt), abs(L1 - L2) + 1e-4, L1 + L2 - 1e-4))
+    phiT = math.atan2(tt[1], tt[0])
+    alpha = math.acos(max(-1.0, min(1.0, (L1 * L1 + D * D - L2 * L2) / (2 * L1 * D))))
+    pb = p2(np.asarray(bend, float))
+    best = None
+    for sgn in (1, -1):
+        ph1 = phiT + sgn * alpha
+        M = L1 * np.array([math.cos(ph1), math.sin(ph1)])
+        score = M @ pb
+        if best is None or score > best[0]:
+            best = (score, ph1, M)
+    _, ph1, M = best
+    tgt = tt / max(np.linalg.norm(tt), 1e-9) * D
+    ph2 = math.atan2(*(tgt - M)[::-1])
+    th1 = ph1 - math.atan2(a1[1], a1[0])
+    th2 = ph2 - math.atan2(a2[1], a2[0]) - th1
+    R1 = Ry @ axis_rot(t, th1)
+    R2 = axis_rot(t, th2)
+    R3 = axis_rot(t, -(th1 + th2))
+    return R1, R2, R3
+
+
+def foot_path(w, stride, lift, duty=0.6):
+    """Foot offset (dz, dy) over a gait phase w in [0, 1): planted and sliding back during stance (front -> back,
+    the body moves forward over it), then lifted and swung forward."""
+    if w < duty:
+        s = w / duty
+        return -stride / 2 + stride * s, 0.0
+    s = (w - duty) / (1 - duty)
+    e = 0.5 - 0.5 * math.cos(math.pi * s)
+    return stride / 2 - stride * e, lift * math.sin(math.pi * s) ** 0.8
+
+
+def pose_entry(Rm, pos=(0.0, 0.0, 0.0)):
+    a, b, c = euler_xyz(Rm)
+    return (pos[0], pos[1], pos[2], a, b, c)
