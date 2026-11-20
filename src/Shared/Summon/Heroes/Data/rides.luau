@@ -128,7 +128,7 @@ return {
 			["mouth"] = { pos = { 0, 2.5, -2.97 }, bone = "Chassis" },
 			["exhaust"] = { pos = { 0, 1.12, 2.72 }, bone = "Chassis" },
 			["seat"] = { pos = { 0, 2.75, 0.6395 }, bone = "Chassis" },
-			["enter"] = { pos = { -1.4, 0, 0.6395 }, bone = "Body" },
+			["enter"] = { pos = { -1.4, 0, 0.64 }, bone = "Body" },
 		},
 		mount = { seat = "Seat", saddle = { pos = { 0, 2.75, 0.6395 }, size = { 0.5, 0.15, 0.7 } }, length = 5.69 },
 		clips = {
@@ -189,7 +189,7 @@ return {
 			["mouth"] = { pos = { 0, 2.5, -2.59 }, bone = "Chassis" },
 			["exhaust"] = { pos = { 0, 0.84, 2.39 }, bone = "Chassis" },
 			["seat"] = { pos = { 0, 2.3, 0.6021 }, bone = "Chassis" },
-			["enter"] = { pos = { -1.4, 0, 0.6021 }, bone = "Body" },
+			["enter"] = { pos = { -1.4, 0, 0.6 }, bone = "Body" },
 		},
 		mount = { seat = "Seat", saddle = { pos = { 0, 2.3, 0.6021 }, size = { 0.5, 0.15, 0.7 } }, length = 4.98 },
 		clips = {
@@ -1520,7 +1520,7 @@ return {
 			["exhaust"] = { pos = { 0, 1.12, 3.77 }, bone = "Chassis" },
 			["seat2"] = { pos = { 0, 2.75, 1.4895 }, bone = "Chassis" },
 			["seat"] = { pos = { 0, 2.75, -0.7105 }, bone = "Chassis" },
-			["enter"] = { pos = { -1.4, 0, -0.7105 }, bone = "Body" },
+			["enter"] = { pos = { -1.4, 0, -0.71 }, bone = "Body" },
 		},
 		mount = { seat = "Seat", saddle = { pos = { 0, 2.75, -0.7105 }, size = { 0.5, 0.15, 0.7 } }, length = 7.89, seats = 2 },
 		clips = {

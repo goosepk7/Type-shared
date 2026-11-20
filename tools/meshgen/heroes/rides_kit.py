@@ -302,7 +302,7 @@ def finish_mount(H, seat_part, seat, enter, stand=False, bone="Chassis", length=
         H.mount["stand"] = True
     if extra:
         H.mount.update(extra)
-    H.socket("enter", (enter[0], 0.0, enter[1]))
+    H.socket("enter", (round(float(enter[0]), 2), 0.0, round(float(enter[1]), 2)))
     return H.mount
 
 
