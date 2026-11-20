@@ -3,7 +3,7 @@
 plus optional animation strips sampled from its clips (FK exactly like Motor6D.Transform).
 
   python3 tools/meshgen/heroes/preview.py out.png [--only lion,tiger] [--family felines] [--views 3] [--size 320]
-         [--anim Move --frames 6] [--cols 3] [--colours primary=#C8963E,secondary=#6B4423]
+         [--anim Move --frames 6] [--cols 3] [--colours primary=#C8963E,secondary=#6B4423] [--rider]
 
 Colours: each hero may define H.preview = {key: "#hex"} for its natural look; unknown keys fall back to a neutral
 preview palette that mirrors Summon/Style.luau's Solid defaults.
@@ -120,6 +120,43 @@ def parts_for(H, pose, colours, man):
     return out
 
 
+def rider_parts(H, pose):
+    """A blocky R15 avatar (scale 1, 5.2 studs standing) posed on the hero's "seat" socket for ride-fit checks.
+    The socket is the rider's HIP point (bottom of the pelvis on the saddle / seat cushion), rider faces -Z.
+    H.mount["stand"] = True: the rider STANDS with the feet on the socket (boards)."""
+    s = H.sockets.get("seat")
+    if not s:
+        return []
+    (sx, sy, sz), bone = s
+    W = world_frames(H, pose)
+    R, P = W[bone]
+    bpos = np.array(H.bones[H.bidx[bone]][2])
+    base = P + R @ (np.array([sx, sy, sz]) - bpos)
+    stand = bool((getattr(H, "mount", {}) or {}).get("stand"))
+    shirt, pants, skin = hexc("#3B6FD1"), hexc("#2B2F3A"), hexc("#F1C29A")
+    blocks = []
+
+    def blk(c, size, col, rx=0.0):
+        blocks.append({"s": "Block", "piece": "", "size": list(size), "cf": list(base + R @ np.array(c)) + list((R @ euler(rx, 0, 0)).reshape(-1)),
+                       "col": col, "tr": 0, "mat": "SmoothPlastic"})
+
+    if stand:
+        h = 2.0  # hip height above the feet
+        for x in (-0.5, 0.5):
+            blk((x, 1.0, 0), (1, 2.0, 1), pants)
+    else:
+        h = 0.0
+        for x in (-0.5, 0.5):
+            blk((x, 0.15, -0.6), (1, 0.9, 1.4), pants)  # thighs forward
+            blk((x, -0.55, -1.2), (1, 1.3, 0.9), pants)  # shins down
+    blk((0, h + 0.25, 0), (2, 0.5, 1), pants)  # lower torso
+    blk((0, h + 1.3, 0), (2, 1.6, 1), shirt)  # upper torso
+    blk((0, h + 2.7, 0), (1.2, 1.2, 1.2), skin)  # head (top ~3.3 above the hips)
+    for x in (-1.5, 1.5):
+        blk((x, h + 1.3, -0.55), (1, 1.0, 1.9), shirt, rx=0.0)  # arms reaching forward (wheel / bars / reins)
+    return blocks
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
@@ -131,6 +168,7 @@ def main():
     ap.add_argument("--frames", type=int, default=6)
     ap.add_argument("--cols", type=int, default=1)
     ap.add_argument("--colours", default="")
+    ap.add_argument("--rider", action="store_true", help="seat a blocky R15 avatar on the 'seat' socket")
     a = ap.parse_args()
     build.load()
     import json
@@ -152,6 +190,8 @@ def main():
         pts = None
         for az, el in views:
             parts = parts_for(H, rest, colours, man)
+            if a.rider:
+                parts = parts + rider_parts(H, rest)
             img = rt.render(parts, az, el, W, ss=2, ao_rays=6, ground=True)
             row.append(Image.fromarray(img))
         if a.anim and a.anim in H.clips:
@@ -159,6 +199,8 @@ def main():
             for i in range(a.frames):
                 pose = sample_clip(H, a.anim, L * i / a.frames)
                 parts = parts_for(H, pose, colours, man)
+                if a.rider:
+                    parts = parts + rider_parts(H, pose)
                 img = rt.render(parts, 90, 6, W, ss=1, ao_rays=2, ground=True)
                 row.append(Image.fromarray(img))
         tiles.append((hid, row))
