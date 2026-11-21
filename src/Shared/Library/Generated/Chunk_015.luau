@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"kusarigama","CKCHJI","fHe",4,8,3,"8A929B","24262A","sickle tied to a weighted chain","twang","Sickle and chain, a ninja duet.","ninja"},
 	{"l","KIBAJK","XNO",4,7,1,"DC2626","6B7280","giant red letter L thrown like a boomerang","groan","Hold this. It is heavy. It is an L.","meme,gaming"},
 	{"la llorona","ABCJNJ","jAc",5,5,3,"E2E8F0","1E3A8A","weeping ghost in white by the river","wail","Cries so much the river overflows.","ghost,spooky"},
 	{"lab coat","BMCONI","F",1,5,2,"F2F2EE","8E9196","long white coat with pockets","swish","Science is happening.","clothing,science"},
@@ -403,4 +402,5 @@ return {
 	{"log swap","NGBIMI","ZY",3,9,4,"8B5A2B","D9B38C","you poof into a log and appear somewhere else","poof","Nice hit. On a log.","anime,ninja"},
 	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
 	{"log wall","EGDCII","GST",3,1,6,"8D6E63","5D4037","row of sharpened upright logs","thud","Pointy end goes up. Usually.","sharp,flammable"},
+	{"loggerhead","ABCJUC","GNB",3,2,8,"B8703A","E8C08A","big headed sea turtle","hiss","Big head. Crunches crabs.","reptile,armored"},
 }

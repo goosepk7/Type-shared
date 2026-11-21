@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"flak tower","EKEMII","GEe",7,1,9,"9E9E9E","37474F","massive concrete tower bristling with guns","thud","Anything flying? Not for long.","structure,defense,tower"},
 	{"flake","IMAELJ","cNP",1,4,1,"F2C14E","E0A030","drifting golden cereal flakes and a splash of milk","crunch","Soggy in thirty seconds. Eat fast.","edible,breakfast"},
 	{"flamberge","CKDHrK","fTP",6,5,5,"8A929B","9E1B32","wavy flame-shaped long blade","shing","The blade is wavy. The enemy is worried.","medieval,sharp"},
 	{"flame","FACFOB","KIe",5,7,2,"F06A1D","FFD166","tongue of flame, licking forward edge","whoosh","Points at the problem. Sets it on fire.","fire"},
@@ -31,7 +30,7 @@ return {
 	{"flash flood","HBEF6F","kIP",8,8,4,"3A6F96","B4E0F5","sudden brown-blue water surge, debris","roar","Zero warning. All the water.","natural,aquatic"},
 	{"flash freeze","FCCFOI","JO",6,10,1,"B3E5FC","FFFFFF","instant frost snap over area","crack","Freeze! That means you.","frozen"},
 	{"flashbang","CHBG2F","jeO",3,8,1,"C9CED4","FFFFFF","a grenade that whites out everyone's eyes","bang","Bright. Loud. Everyone's confused.","modern,explosive"},
-	{"flashlight","BHBBJK","jeO",1,8,3,"24262A","F1C40F","cylinder with bright lens","click","Blinding at close range.","tool"},
+	{"flashlight","BHBBJK","je",2,8,3,"F2C230","FFE496","chunky yellow flashlight with a warm beam","click","Blinding at close range.","household,tool"},
 	{"flashlight fish","AHAJEC","jdOB",1,6,1,"1E1E24","8AF0F8","glowing eye patches","splash","Flashes its eye lights on and off.","fish,aquatic"},
 	{"flatbread","IMBAKK","Uke",3,7,2,"E8C88A","C89A5A","thin round charred bread","whoosh","Bread that got flattened. Still happy.","edible"},
 	{"flatbread pizza","IMBAKK","Uke",3,7,2,"E8C88A","D72B2B","thin rectangle pizza","whoosh","A pizza that went minimalist.","edible"},
@@ -403,4 +402,5 @@ return {
 	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
 	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
 	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
+	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
 }

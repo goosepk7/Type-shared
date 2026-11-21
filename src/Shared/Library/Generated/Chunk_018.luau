@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"muzzle","BMBLJI","O",1,1,3,"6B4226","5B6168","cage-like snout strap","clink","No biting allowed.","equipment"},
 	{"mycelium","NGENMI","FSP",3,1,5,"F5F5F5","BCAAA4","web of white threads under the soil","poof","The forest's secret internet.","plant,fungus"},
 	{"myconid","AGBJNA","jMP",3,3,4,"DC2626","F5F5F4","walking red-capped mushroom person","puff","Talks in spores. Says hello a lot.","plant,cute"},
 	{"mynah","AMAJDB","jdA",1,7,1,"1E1E1E","F2C82A","black bird, yellow face patch","tweet","Talks more than a parrot.","bird,cute"},
@@ -403,4 +402,5 @@ return {
 	{"paint","BMAAJI","je",1,6,1,"C0392B","2F6FD1","splash of bright paint","splat","Colour outside the lines.","art"},
 	{"paint bomb","CMBGKF","jeP",2,7,1,"D0349A","F1C40F","balloon full of bright paint","splat","Splat art, delivered fast.","silly"},
 	{"paint palette","BMBIyI","j",1,5,2,"C49A6C","C0392B","wooden palette with paint blobs","splat","Every colour of victory.","art"},
+	{"paint roller","JMDNJF","kSN",3,6,3,"3E8EDE","F2C230","giant fluffy roller soaked in blue paint","splash","Paint the town. And the enemy.","household,diy,art"},
 }

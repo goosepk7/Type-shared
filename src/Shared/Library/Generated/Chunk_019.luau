@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"paint roller","JMDNJF","kSN",3,6,3,"3E8EDE","F2C230","giant fluffy roller soaked in blue paint","splash","Paint the town. And the enemy.","household,diy,art"},
 	{"paint scraper","JKAHrK","f",1,7,3,"8A929B","2F6FD1","flat scraping blade","clank","Scrape, scrape, done.","tool"},
 	{"paint splash","KMBFOB","jd",2,7,1,"FF4081","00E5FF","rainbow paint splatter wave","splat","Now everything's colourful.","silly"},
 	{"paint sprayer","JKBFwK","je",2,6,3,"8E9196","F2F2EE","pistol with paint cup","clank","Coats everything. Everything.","tool"},
@@ -403,4 +402,5 @@ return {
 	{"pitch black","FIDNOI","jZ",4,5,3,"000000","212121","absolute black dome","hush","Can't see your own hand.","spooky,stealth"},
 	{"pitcher plant","NJCLMI","ScMH",4,1,4,"9CCC65","B71C1C","tall slippery tube with a lid","chomp","Slide in. Do not slide out.","plant,carnivorous"},
 	{"pitchfork","CKCAuI","lfT",3,5,4,"8A929B","8B5A2B","three long tines on a pole","whoosh","Angry mob not included.","farm"},
+	{"pitching machine","OMCMwI","keh",3,7,5,"2F7D6B","F2EBDD","tripod ball launcher with a hopper and twin wheels","hum","Strike one. Strike two. Duck.","sport,baseball,turret"},
 }

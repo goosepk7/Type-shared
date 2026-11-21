@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"inertia","FLCOKI","G",3,2,6,"8495B5","D5DCEA","heavy glowing stance aura","hum","Objects at rest stay at rest.","heavy"},
 	{"infect","KJBAKB","MP",4,7,1,"8BC34A","33691E","green germ-shaped glob","squelch","Spreads like a cold in class.","toxic"},
 	{"inferno","FAEN5K","KkSP",8,5,5,"B3261E","FF9F1C","towering ring of fire, swirling smoke crown","roar","The floor is lava, and also the walls.","fire"},
 	{"inferno beam","FADBKI","KTP",8,7,1,"FF3D00","FFEB3B","roaring wide beam of fire","roar","A flamethrower, upgraded.","fire"},
@@ -189,7 +188,7 @@ return {
 	{"jukebox","OMCN1I","jd",1,1,6,"C0392B","D4A72C","glowing curved music machine","hum","Plays the hits. The hits are you.","music"},
 	{"jumbo jet","DFFKHB","DAkgh",7,7,8,"F5F5F5","1565C0","huge four-engine airliner with a hump","jet","Four engines. One very big bonk.","vehicle,air"},
 	{"jump","KMBOKG","l",2,7,2,"FFE082","FFFFFF","springy arc with dust puff","boing","Up! Higher!","speed"},
-	{"jump rope","BMBLJK","NO",1,7,2,"F06292","F2F2EE","rope with two handles","bonk","Double dutch, double trouble.","sport,toy"},
+	{"jump rope","BMCNJK","PO",2,7,2,"F06292","D9A86A","pink rope with wooden handles whirling round the floor","bonk","Jump! ...no? Okay, trip.","household,toy,playground"},
 	{"jumper cables","BDBAJK","fHL",3,6,3,"C0392B","24262A","cables with snapping clamps","clang","Clamp. Zap.","urban"},
 	{"jumping spider","AJBJQG","UfMN",2,6,2,"3A3A30","8AE0E8","fuzzy spider, huge front eyes","skitter","Big eyes, cute dance, jumps on you.","arachnid,spooky,venomous,cute"},
 	{"june bug","AMAJFA","GdAf",1,3,4,"6A4A1E","C8A04A","clumsy brown beetle","click","Crashes into your porch light nightly.","insect,armored"},
@@ -403,4 +402,5 @@ return {
 	{"kunai","CKAArK","Te",3,9,2,"3A3F45","24262A","leaf blade, ring pommel","shing","A ninja's do-everything pointy friend.","medieval,sharp,ninja"},
 	{"kung pao chicken","IABAKK","KP",5,7,2,"C8402B","C8904A","chicken, peanuts, dried chilies","sizzle","Peanuts and chilies, flying everywhere.","edible,spicy,flammable"},
 	{"kunoichi","LICJNA","jZT",5,9,3,"312E81","F472B6","violet ninja garb, smoke bombs","whoosh","Disappears in a puff. Rude.","stealth,martial"},
+	{"kusarigama","CKCHJI","fHe",4,8,3,"8A929B","24262A","sickle tied to a weighted chain","twang","Sickle and chain, a ninja duet.","ninja"},
 }

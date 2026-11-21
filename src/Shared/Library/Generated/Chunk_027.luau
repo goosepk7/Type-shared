@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"thumbtack","BMALJK","TN",1,1,1,"C0392B","C9CED4","tiny pin with round head","tap","Don't step barefoot.","office"},
 	{"thump","KMBAKB","kO",3,7,2,"8D6E63","FFE0B2","dull heavy shockring","thump","Thump. Ow.","heavy"},
 	{"thunder","FDDFOB","kO",5,9,2,"4B4E6D","C7CEFF","visible sound ring, purple-grey shock rim","boom","Loud enough to rattle your teeth.","electric,loud"},
 	{"thunder and lightning","FDEEOJ","kLO",8,8,2,"FFEB3B","3949AB","bolts and booming rings from above","boom","Very, very frightening.","electric,storm"},
@@ -164,6 +163,7 @@ return {
 	{"topi","AMCJAA","Dk",4,8,4,"8A4A2A","3A3A6A","reddish antelope with purple patches","bleat","Stands on termite mounds to look cool.","mammal,wild"},
 	{"topiary","NGCCMI","GdS",2,1,5,"43A047","1B5E20","bush trimmed into a cute animal shape","rustle","Shaped like a rabbit. Fights like a hedge.","silly,cute"},
 	{"topic","KMBOKB","jdY",2,5,2,"F59E0B","FFFFFF","speech bubble with an arrow swerving off sideways","pop","Anyway. Moving on. Completely different thing.","school,silly"},
+	{"toppling dominoes","BMCCII","kP",3,6,3,"F6F1E4","2A2A30","row of giant ivory dominoes tipping over","clack","Tip one. Tip them all.","household,game,toy"},
 	{"torch","BABHJK","Kcf",2,5,2,"8B5A2B","FF6A1A","wooden stick with flaming tip","flicker","Bring one to every cave.","flammable"},
 	{"torii gate","EHCCII","FSY",2,1,8,"C62828","263238","red post-and-beam gateway","thud","Step through to somewhere sacred.","structure,holy"},
 	{"tornado","HFEN5K","klSHP",8,6,5,"8A9BA8","DCE6EC","tall grey funnel, debris ring and flung rocks at base","howl","Picks things up. Puts them down far away.","storm,natural,air"},

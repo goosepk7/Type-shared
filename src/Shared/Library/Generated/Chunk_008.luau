@@ -70,7 +70,6 @@ return {
 	{"dolphin","ABCJEC","UDFB",4,8,4,"7E94A8","D8E4EC","curved dorsal fin, smiling beak","click","Smiles at everyone. Plays with bubbles.","mammal,aquatic,ocean"},
 	{"dome","EMDIII","GS",3,1,9,"ECEFF1","90A4AE","half-sphere roof over a ring wall","thud","Round on top. Safe inside.","structure,defense"},
 	{"dome of light","KHDIKI","GF",2,3,8,"FFF59D","FFFFFF","great golden dome over allies","choir","Safe inside the glow.","holy,defence"},
-	{"domino","BMACII","GV",1,1,3,"24262A","F2F2EE","black tiles with white dots","clack","Tip one. Tip them all.","game"},
 	{"domino line","EMCLII","kSP",3,6,2,"212121","F5F5F5","long winding row of dominoes","clack","One push. Chain reaction.","structure,silly"},
 	{"domovoi","AMAJNA","GdF",1,4,3,"78350F","F59E0B","small hairy grandpa spirit near the stove","giggle","Guards the house. Needs milk and cookies.","mythical,cute"},
 	{"doner kebab","IGBOKI","F",2,5,3,"C88A5A","F2E8D0","wrapped flatbread with sliced meat","crunch","A spinning tower of flavor.","edible,healthy"},
@@ -403,4 +402,5 @@ return {
 	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
 	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
 	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
+	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
 }

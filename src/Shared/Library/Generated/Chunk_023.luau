@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"scuba tank","BBCO2I","B",1,4,4,"F1C40F","24262A","tank with mask and hose","clank","Breathe underwater. For real.","armor,defense"},
 	{"sculpin","ABAJEC","dB",1,6,1,"8A6A4A","C8A07A","spiny big-headed fish","splash","Big head, spines, attitude.","fish,aquatic"},
 	{"sculptor","LECJNA","GO",3,3,5,"D6D3D1","78716C","chisel, mallet, marble dust","clang","Turns enemies to statues. Artistically.","art"},
 	{"scutigera","AMAJTA","CP",1,9,1,"C8B08A","6A5A44","many long legs, zooms","squelch","Runs at you. You run away.","bug"},
@@ -403,4 +402,5 @@ return {
 	{"skeleton pirate","AICJNA","fVb",5,6,4,"F5F5F4","7F1D1D","skeleton in tricorn hat with cutlass","rattle","Yo ho ho. Rattle rattle.","undead,pirate"},
 	{"skeleton samurai","AICJNA","fTV",5,6,4,"F5F5F4","991B1B","skeleton in red samurai armor","rattle","Honor never dies. Neither does he.","undead,warrior"},
 	{"skeleton shark","AIDJEC","fB",6,7,4,"F5F5F4","0EA5E9","shark skeleton swimming with green glow","rattle","All jaw. No fins. Still swims.","undead,aquatic"},
+	{"skeleton ship","DIEMHC","eghB",7,5,6,"EFEBE9","263238","galleon built from giant ribs","rattle","Crewed entirely by bones. Rattles loudly.","spooky,undead"},
 }

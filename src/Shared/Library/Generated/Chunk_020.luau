@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"pitching machine","OMCMwI","keh",3,7,5,"2F7D6B","F2EBDD","tripod ball launcher with a hopper and twin wheels","hum","Strike one. Strike two. Duck.","sport,baseball,turret"},
 	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
 	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
 	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
@@ -403,4 +402,5 @@ return {
 	{"pumpkin","IGCGKF","EkI",5,5,6,"E8761A","5E7A2B","big ribbed orange gourd, stem","rumble","Rolls downhill with intent.","edible,heavy,holiday,vegetable"},
 	{"pumpkin bread","IMCCII","GF",4,2,5,"C2622B","D9A04A","orange-brown spiced loaf","thud","Autumn in a loaf.","edible,giant,dessert"},
 	{"pumpkin catapult","CMDMxI","dkeV",4,3,5,"8B5A2B","E67E22","catapult loaded with pumpkins","creak","Splat attack, seasonal edition.","silly,holiday"},
+	{"pumpkin golem","AADJNA","GKk",6,3,6,"EA580C","166534","stacked pumpkins with glowing faces","crunch","Very festive. Very heavy.","halloween,construct"},
 }

@@ -65,7 +65,7 @@ return {
 	{"clothes","BMCLNA","GjN",2,4,3,"3B82F6","EF4444","empty outfit walking by itself: shirt, jeans, sneakers","rustle","Nobody inside. Still better dressed than you.","clothing,silly"},
 	{"clothes dryer","OACL1I","Kj",3,1,7,"F2F2EE","8E9196","round-door tumble dryer","thud","Tumble. Tumble. Dizzy.","household"},
 	{"clothes hanger","BMAHJK","fH",1,7,2,"8B5A2B","C9CED4","wooden hanger with hook","thud","Hook. Hang. Done.","household"},
-	{"clothes iron","BABHtK","Kkf",3,5,5,"87CEEB","C9CED4","pointy steam iron","thud","Pressing matters. Hot ones.","household"},
+	{"clothes iron","BABAtB","Kke",3,7,4,"2BA7A0","F4F6F7","teal steam iron skating on its hot plate","thud","Pressing matters. Hot ones.","household,laundry"},
 	{"clothes moth","AMAJFB","jdiA",1,5,1,"D8C8A8","B8A88A","small tan moth","flutter","Eats your sweaters.","insect,cute"},
 	{"clothespin","BMALKI","O",1,7,2,"C49A6C","C9CED4","little spring peg","thud","Pinch!","household"},
 	{"clotted cream","IMBLGI","kSO",2,3,2,"F7F0D0","F2E2B0","thick yellow-white cream","squeak","Cream so thick it's a solid.","edible,slippery,silly"},

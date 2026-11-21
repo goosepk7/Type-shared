@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"meta","KLCOnE","DWT",6,7,4,"7C3AED","FACC15","ranked chart with one glowing gold entry at the top","ding","Everyone runs it. That is why it is boring.","gaming,meme"},
 	{"metal","FKCIKI","Ga",4,3,7,"8C949C","D6DCE2","plated steel dome shell","clank","Clang. Your problem now.","heavy"},
 	{"metal detector","BKCOJI","c",1,3,3,"8E9196","24262A","pole with disc sensor","clink","Beep... beep... BEEP! Treasure!","explorer"},
 	{"metal detectorist","LKCJNA","CH",3,4,4,"15803D","FACC15","headphones and beeping detector","beep","Beep beep. Found a bottlecap.","silly"},
@@ -403,4 +402,5 @@ return {
 	{"mutant","AJCJBA","WfMV",6,5,6,"8BC34A","7B1FA2","lumpy green thing, three eyes, one giant arm, extra tail","gurgle","Fell in the goo. Came out improved. Sort of.","scifi,toxic,silly"},
 	{"muttaburrasaurus","AMDJAA","dk",5,5,6,"7A6A4A","C8A87A","bumpy nose","honk","Big nose bump. Australian.","dinosaur,extinct,reptile"},
 	{"mutton curry","IABNGI","KSP",4,4,2,"8A3A1E","D9A02B","dark meaty curry","sizzle","A hearty, heavy curry.","edible,spicy"},
+	{"muzzle","BMBLJI","O",1,1,3,"6B4226","5B6168","cage-like snout strap","clink","No biting allowed.","equipment"},
 }

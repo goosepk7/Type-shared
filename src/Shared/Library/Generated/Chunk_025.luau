@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"spike chain","EKCL3K","kSR",6,6,7,"3A3D45","C9CED6","spiked iron ball on a chain sweeping round a post","whoosh","Mind the swing.","game,platformer,hazard"},
 	{"spike corridor","MKCLII","STN",5,1,7,"616161","9E9E9E","stone hall with spikes in walls","echo","Run. Dodge. Run some more.","place,adventure,sharp"},
 	{"spike launcher","OKCMwI","TeV",5,6,5,"3A3F45","8A929B","turret spraying metal spikes","clank","A porcupine with a grudge.","defense,mechanical"},
 	{"spike pit","EECLII","ZSTO",5,1,6,"5D4037","9E9E9E","hidden hole lined with sharp stakes","thud","Mind the gap. Mind the pointy bits.","structure,defense,sharp"},
@@ -403,4 +402,5 @@ return {
 	{"substitute teacher","LMCJNA","jd",3,4,3,"78350F","F8FAFC","confused face, attendance list","ding","Has no idea what's going on. Same.","school,silly"},
 	{"suburb","MMENII","jSh",2,1,7,"7CB342","F5E6CA","rows of identical houses and lawns","crowd","Every house looks the same. Confusing.","place,silly"},
 	{"subway train","DMEKHL","CDkg",6,7,8,"B0B7BF","1C5CAB","long silver carriages, sliding doors","engine","Mind the gap. Mind the train.","mechanical,vehicle,land"},
+	{"success","KHCOKJ","WFk",4,6,3,"22C55E","FACC15","green tick in a gold burst with a tiny fist pump","fanfare","Nailed it. First try. No one saw the others.","gaming,support"},
 }
