@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
 	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
 	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 	{"carcharodontosaurus","AMEJBA","DkfT",8,6,7,"8A5A3A","D8A07A","huge skull, shark-like teeth","roar","Shark teeth on a giant dino.","dinosaur,extinct,reptile,predator"},
@@ -402,5 +403,4 @@ return {
 	{"clam","ABAJGI","GfHN",1,1,6,"D8C8B0","9A8A70","two-shell clam half open","squelch","Happy as a clam. Allegedly.","mollusk,aquatic"},
 	{"clam chowder","IBBOGI","FS",3,4,3,"F2EAD5","C8A070","creamy white soup, crackers","slurp","Creamy, briny, and warming.","edible,warm,healthy"},
 	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
-	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
 }

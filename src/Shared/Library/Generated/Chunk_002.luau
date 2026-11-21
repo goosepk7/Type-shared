@@ -91,6 +91,7 @@ return {
 	{"azure collapse","KLCGKB","EHeN",8,4,3,"3F7BFF","0C1236","a dark point with a blue rim swallowing everything near it","hum","Come here. Everything. Now.","anime,magic,gravity"},
 	{"azure dragon","AFEKCB","Akeg",8,7,7,"1D4ED8","7DD3FC","long blue sky dragon, wind ribbons","roar","Guardian of the east. Always on time.","mythical,reptile,ancient"},
 	{"azure fall cannon","FACGKI","KkfI",7,8,2,"3FA8FF","C8F0FF","a roaring burst of azure fire poured from two palms","whoosh","Blue fire: the hot kind.","anime,kido,fire,cone"},
+	{"azure pyre","FADB6I","KkeP",7,7,2,"468CFF","BEE1FF","a roaring cone of cold-blue fire shoved out of both palms","roar","Blue burns hotter. Ask anyone who stood in front.","anime,fire,blue,hero"},
 	{"baba ganoush","IMBNGI","SNP",2,4,1,"C8B08A","5B2A5E","smoky eggplant dip","splat","Smoky, creamy, and fun to say.","edible,sauce"},
 	{"baba yaga","ALCJNB","jAMh",6,6,5,"57534E","DC2626","old witch flying in a mortar with a pestle","cackle","Lives in a chicken-legged house. Rent is weird.","witch,spooky"},
 	{"babirusa","AMCJAA","dfT",4,4,4,"8A7A70","E8DCD0","tusks curling up through its snout","bleat","Its tusks grow through its face. Wow.","mammal,farm,wild"},
@@ -402,5 +403,4 @@ return {
 	{"bed","BMDN0I","FN",1,1,5,"F2F2EE","1F2F55","bed with pillows and blanket","thud","Nap time heals all wounds.","furniture,household"},
 	{"bed bug","AMAJFA","diAP",1,6,1,"8A3A1E","C8702A","flat red-brown tiny bug","buzz","Don't let them bite.","insect"},
 	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
-	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
 }

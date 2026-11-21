@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
 	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
 	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
 	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
@@ -149,6 +150,7 @@ return {
 	{"cog railway","DMDKHL","Dklg",4,3,7,"E53935","F5F5F5","stubby car climbing a toothed track","clank","Climbs straight up mountains. Slowly.","mechanical,vehicle,land"},
 	{"coif","BKAONI","G",1,6,4,"5B6168","8A929B","chainmail hood","clank","Clinky hoodie.","armor,defense"},
 	{"coil","BKBLCG","Ukl",3,5,4,"9CA3AF","22D3EE","tight metal spiral compressed then launching upward","boing","Compressed anger. With a boing.","mechanical,bouncy"},
+	{"coil barrage","KMCHNI","Dkf",7,9,2,"C87846","FFECD2","a storm of springing coiled-arm punches","punch","Eight punches. One boing.","anime,pirate,punch,rubber"},
 	{"coiling viper","KICAKD","eN",6,7,2,"7A3CFF","E7D6FF","a serpent of blade light slithers round cover to its target","slash","It always finds a way around.","anime,sword,snake,breathing"},
 	{"coin","BMAAKJ","Uce",1,8,3,"D4A72C","F1C40F","shiny gold coin","chime","Flip it. Heads, you win.","treasure,shiny"},
 	{"coin flip","KKBAKB","ja",3,8,1,"FFC107","FFFFFF","spinning golden coin","ting","Heads you win. Tails you also win?","luck,chaos"},
@@ -177,6 +179,7 @@ return {
 	{"colossal titan","AEFJNA","kfO",9,2,9,"B45309","F87171","giant taller than city walls","stomp","Peeks over walls. Rudely.","giant,boss,danger"},
 	{"colosseum","EMFNII","GSh",5,1,10,"E6D3A3","BCAAA4","huge oval of stacked stone arches","thud","Are you not entertained?","structure,defense,tower,ancient"},
 	{"colossus","AKFJNA","Gkf",9,2,10,"A16207","E7E5E4","enormous bronze statue that walks","stomp","A statue with places to be.","mythical,giant,metal,danger"},
+	{"colossus fist","KMEAXB","DkfT",8,6,1,"ECBE96","F2ECDE","a giant steaming fist rammed down a long lane","boom","Blown up like a balloon, hits like a building.","anime,pirate,punch,giant"},
 	{"columbine","NGBNMI","dFS",2,1,2,"7E57C2","FFFFFF","nodding bloom with curly spurs","rustle","Looks like a tiny jester hat.","plant,flower,silly"},
 	{"comb jelly","AHBJGJ","dSB",1,2,1,"E8F0FF","5AE0F0","clear egg shape with rainbow cilia","squelch","Rainbow lights ripple down its sides.","aquatic,ocean,venomous"},
 	{"combat drone","OKBJDE","AeL",4,9,3,"334155","EF4444","sleek flying drone with twin lasers","whir","Buzzes ominously. Shoots less ominously.","robot,flying"},
@@ -400,7 +403,4 @@ return {
 	{"crater","MEELII","SHN",4,1,8,"5D5D5D","8D6E63","round dented bowl with a rocky rim","rumble","Something big landed here once.","place,terrain"},
 	{"crater landing","KEDNNB","Dk",5,7,3,"D9A25A","6A4A30","leap up and slam down in a three-point landing","slam","Nailed the landing. And the floor.","hero,movie,impact"},
 	{"crawl","KMAOKD","ZN",1,2,2,"A1887F","FFFFFF","low shuffling outline","shuffle","Army crawl. Very sneaky.","stealth,silly"},
-	{"crayfish","ABAJRA","GfT",2,4,5,"A8402A","E89070","tiny lobster with pincers","clack","Tiny freshwater lobster. Feisty.","crustacean,aquatic,armored"},
-	{"crayon","BMAAJK","je",1,7,1,"C0392B","F28C28","waxy coloured stick","tap","Art attack!","school,art,toy"},
-	{"cream","IMBLGI","SN",2,3,2,"F7F4EC","F2EAD5","pitcher of thick cream","squeak","Rich, white, and pourable.","edible,slippery,silly,dairy"},
 }

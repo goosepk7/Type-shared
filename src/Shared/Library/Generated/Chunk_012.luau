@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
+	{"gravestar fall","KEDNKB","DEeN",8,4,2,"9664FF","FF8C32","a burning star pulled down onto a violet gravity ring","boom","He tapped the ground and the sky answered.","anime,pirate,gravity,meteor"},
+	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
+	{"graveyard","MIENII","SNh",5,1,7,"455A64","7CB342","crooked headstones, iron fence, fog","moan","The residents are getting restless.","spooky,undead"},
+	{"graveyard moss","NIBLMI","iSN",2,1,3,"455A64","7CB342","grey-green moss on old stones","moan","Grows on graves. Slows the living.","plant,spooky,undead"},
+	{"gravity","FLDNOI","HNO",6,4,5,"3B2E5A","8F7DE8","warped purple ripples pressing down","hum","What goes up, comes down. Hard.","space,heavy"},
+	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
 	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
 	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
 	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
@@ -396,11 +403,4 @@ return {
 	{"herd","AEEFLA","DkIP",7,7,7,"8B5A2B","E8D2B0","wide wave of galloping hooves and horns in dust","rumble","One got spooked. Now it is everyone's problem.","farm,wild,swarm"},
 	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
 	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
-	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
-	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
-	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
-	{"hero","LHCJNA","GDFf",6,6,6,"1D4ED8","FACC15","caped figure, bright sword, heroic pose","clang","Saves the day. Every day. Exhausted.","hero"},
-	{"heroism","KHCOKJ","GDF",3,6,5,"FFD54F","D32F2F","golden cape-shaped aura","fanfare","Main character moment.","support"},
-	{"heron","AMCJDA","AfT",3,5,2,"6A7A8E","F2F2F0","tall stalking bird, dagger beak","squawk","Stands still forever. Then stab.","bird,wetland"},
-	{"herrerasaurus","AMDJBA","DkfT",6,6,7,"7A5A3A","C8A07A","early predator","roar","One of the first big meat eaters.","dinosaur,extinct,reptile,predator,ancient"},
 }

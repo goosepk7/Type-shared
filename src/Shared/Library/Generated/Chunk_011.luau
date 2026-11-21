@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
+	{"gazebo","EMCCII","GS",2,1,4,"F5F5F5","7CB342","eight-sided open hut with pointed roof","thud","Nice spot for a picnic. And a siege.","structure,building,cute"},
+	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
+	{"gazpacho","ICBOGI","JF",3,4,3,"C8302B","7DBE3A","cold red soup bowl","slurp","Cold soup. Hot debate.","edible,warm,healthy"},
 	{"gear","OKBAKK","UTe",2,6,6,"B58A3A","A86F32","toothed metal wheel","hum","Spinning tooth disc of mild doom.","mechanical"},
 	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
@@ -202,6 +206,7 @@ return {
 	{"glasses","BMAONI","d",1,6,1,"24262A","BFE6F2","round framed glasses","swish","See clearly. Strike clearly.","clothing"},
 	{"glasswing butterfly","AMAJFB","jdAZ",1,5,1,"E8F0F4","3A2A1E","clear see-through wings","flutter","Wings like windows.","insect,cute"},
 	{"glazed donut","IMBLKI","dSc",2,3,3,"E8B860","F7E8C0","shiny glazed ring","chomp","Glossy, sweet, and irresistible.","edible,sweet"},
+	{"gleam volley","KHBA4B","TeV",6,10,2,"FFDC6E","FFFCEB","a fan of seven comma-shaped light-jewels","zap","Speed of light. Aim of a toddler. Seven tries.","anime,pirate,light,volley"},
 	{"glide","KFBOKB","A",2,7,2,"E1F5FE","FFFFFF","wide wings of wind","whoosh","Graceful. Very slightly falling.","air"},
 	{"glider","DFCKHJ","AZg",3,6,3,"F5F5F5","1E88E5","long slender wings, no engine","whoosh","Silent. Graceful. Sneaky.","vehicle,air"},
 	{"glimmer","FHAGKJ","dc",1,4,1,"FFF0C2","FFFFFF","faint flickering light spot","chime","A hint of shiny. A whisper of hope.","cute"},
@@ -222,6 +227,7 @@ return {
 	{"glockenspiel","BKBFJI","d",1,5,3,"C9CED4","1F2F55","row of metal bars","chime","Ding dang dong.","music"},
 	{"gloom","FICDOJ","jSN",3,3,3,"3A3446","7E7590","grey-purple drooping cloud","sigh","Mondays, but as a spell.","spooky,silly"},
 	{"gloom cloud","GBCDOJ","QLN",3,4,3,"6E7F92","BFD6E8","a small grumpy grey cloud that rains on one head","patter","Your own personal bad day.","cartoon,silly,storm"},
+	{"gloom domain","KIEN4I","iSRN",7,3,3,"2E1E4A","A06EFF","a dark rune circle with six orbiting rune shards","hum","Your mana is my mana now.","anime,shadow,zone,drain"},
 	{"glory","KHCOKJ","DF",4,6,4,"FFD54F","FFFFFF","golden spotlight and trumpet sparkles","choir","Glory! Glory! Applause please.","holy"},
 	{"glove","BMAONI","G",1,6,2,"D8CBB5","C0392B","knitted wool mitten","swish","Warm hands. Brave hands.","clothing"},
 	{"glow","FHBOKJ","Fc",2,3,2,"FFF1B8","FFFFFF","soft warm halo around the caster","hum","Stay positive. Literally glowing.","cute"},
@@ -397,10 +403,4 @@ return {
 	{"graupel","GCBEOJ","UN",2,5,1,"F1F6F9","C7D9E4","tiny foam-like snow pellets","patter","Snow that went to the gym.","frozen"},
 	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
 	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
-	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
-	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
-	{"graveyard","MIENII","SNh",5,1,7,"455A64","7CB342","crooked headstones, iron fence, fog","moan","The residents are getting restless.","spooky,undead"},
-	{"graveyard moss","NIBLMI","iSN",2,1,3,"455A64","7CB342","grey-green moss on old stones","moan","Grows on graves. Slows the living.","plant,spooky,undead"},
-	{"gravity","FLDNOI","HNO",6,4,5,"3B2E5A","8F7DE8","warped purple ripples pressing down","hum","What goes up, comes down. Hard.","space,heavy"},
-	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
 }
