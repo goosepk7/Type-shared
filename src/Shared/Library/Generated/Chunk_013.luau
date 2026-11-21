@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hero","LHCJNA","GDFf",6,6,6,"1D4ED8","FACC15","caped figure, bright sword, heroic pose","clang","Saves the day. Every day. Exhausted.","hero"},
 	{"heroism","KHCOKJ","GDF",3,6,5,"FFD54F","D32F2F","golden cape-shaped aura","fanfare","Main character moment.","support"},
 	{"heron","AMCJDA","AfT",3,5,2,"6A7A8E","F2F2F0","tall stalking bird, dagger beak","squawk","Stands still forever. Then stab.","bird,wetland"},
 	{"herrerasaurus","AMDJBA","DkfT",6,6,7,"7A5A3A","C8A07A","early predator","roar","One of the first big meat eaters.","dinosaur,extinct,reptile,predator,ancient"},
@@ -402,5 +403,4 @@ return {
 	{"indestructible","KKDOKI","Ga",2,3,10,"90A4AE","FFD54F","thick shining metal aura","clang","Tried breaking it. It broke you.","defence"},
 	{"indian paintbrush","NGBNMI","dFS",1,1,1,"E53935","FF9800","red-tipped spikes like dipped brushes","rustle","Looks dipped in paint.","plant,flower"},
 	{"indian rhino","AMDJAA","GDkIO",7,4,9,"7C7470","B0A49A","armor-plated folds, one horn","trumpet","Built with its own armor plating.","mammal,heavy,wild"},
-	{"industrial fan","OFDF1I","kI",4,5,6,"4A4D52","F1C40F","wall fan in a steel housing","whoosh","Air conditioning with attitude.","mechanical"},
 }

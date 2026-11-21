@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
+	{"log wall","EGDCII","GST",3,1,6,"8D6E63","5D4037","row of sharpened upright logs","thud","Pointy end goes up. Usually.","sharp,flammable"},
 	{"loggerhead","ABCJUC","GNB",3,2,8,"B8703A","E8C08A","big headed sea turtle","hiss","Big head. Crunches crabs.","reptile,armored"},
 	{"loki","LLCJZA","jZVbY",7,8,5,"166534","D4AF37","grinning red-haired trickster, fur cloak, flickering copies","cackle","It was not him. It is never him. It was him.","mythical,norse,trickster"},
 	{"lollipop","IMBHJI","dkf",3,5,4,"E8434F","F7F2F0","swirl disc on a stick","bonk","A sweet club with a stick handle.","edible,silly,candy"},
@@ -401,6 +403,4 @@ return {
 	{"merman","ABCJEC","fTB",5,7,5,"0F766E","FACC15","fish-tailed warrior with a trident","splash","Ocean guard. Fin-tastic posture.","mythical,aquatic,warrior"},
 	{"merrow","ABCJEC","cB",4,6,4,"15803D","DC2626","mer-person in a red feathered cap","sing","Lose the cap, can't go home.","mythical,aquatic"},
 	{"mess","KMCNGI","jSNP",3,1,3,"F59E0B","8B5CF6","spreading sprawl of toys, crumbs, socks and spilled juice","clatter","Who made this? Nobody. It was always nobody.","silly,household"},
-	{"message in a bottle","BBAA2I","eh",1,5,1,"BFE6F2","E8D9B0","corked bottle with rolled note","thud","Help is on the way. Eventually.","container"},
-	{"messer","CKCHrK","fV",5,6,4,"8A929B","8B5A2B","knife-sword hybrid","shing","A very, very big knife.","sharp,ancient"},
 }

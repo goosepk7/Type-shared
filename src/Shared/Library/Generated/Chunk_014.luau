@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"industrial fan","OFDF1I","kI",4,5,6,"4A4D52","F1C40F","wall fan in a steel housing","whoosh","Air conditioning with attitude.","mechanical"},
 	{"inertia","FLCOKI","G",3,2,6,"8495B5","D5DCEA","heavy glowing stance aura","hum","Objects at rest stay at rest.","heavy"},
 	{"infect","KJBAKB","MP",4,7,1,"8BC34A","33691E","green germ-shaped glob","squelch","Spreads like a cold in class.","toxic"},
 	{"inferno","FAEN5K","KkSP",8,5,5,"B3261E","FF9F1C","towering ring of fire, swirling smoke crown","roar","The floor is lava, and also the walls.","fire"},
@@ -247,7 +248,7 @@ return {
 	{"katsu curry","IGBOKI","F",2,5,3,"8A5A2A","D9A04A","cutlet over rice with brown curry","crunch","Crunch meets comfort.","edible,healthy"},
 	{"katydid","AMAJFG","dAZP",1,6,1,"6AC84A","3A8A2A","leaf-shaped green hopper","buzz","Looks exactly like a leaf.","insect"},
 	{"kaya toast","IGBOKI","F",2,5,3,"C8823A","8DB84A","toast with green coconut jam","crunch","Toast, butter, coconut jam. Breakfast bliss.","edible,healthy"},
-	{"kazoo","BMAFKI","jd",1,8,1,"C0392B","C9CED4","little buzzing tube","kazoo","Bzzzzz-da-da-bzzz.","music,silly,toy"},
+	{"kazoo","BMAAKI","TeN",2,8,1,"E53935","C9CED4","a buzzing kazoo wave rolling through everyone","kazoo","Bzzzzz-da-da-bzzz.","goofy,silly,music,toy"},
 	{"kea","AMBJDB","jdAb",2,6,2,"6A7A3A","E8601E","olive parrot with orange underwings","squawk","Steals car parts for fun.","bird,jungle,silly"},
 	{"kebab","IABHJI","KfT",3,5,4,"C8602B","7DBE3A","meat and peppers on a skewer","bonk","A spear of grilled meat and veg.","edible,silly"},
 	{"kedgeree","IMAELB","eNP",2,6,1,"F2D23A","F7F2E0","yellow rice, egg, fish","pitter","Breakfast rice with a twist.","edible,grain"},
@@ -282,6 +283,7 @@ return {
 	{"kibbeh","IMBAKF","Te",3,6,2,"8A4A2A","C8904A","torpedo-shaped crispy croquette","splat","A crunchy little torpedo.","edible"},
 	{"kibble","IMAELJ","cNP",1,5,1,"8B5A2B","C9A66B","rattling shower of little brown biscuit shapes","rattle","Shake the bag. Every pet for a mile arrives.","pet,edible"},
 	{"kick","KMCAKB","kf",5,8,2,"FFB74D","FFFFFF","sweeping boot arc with impact","thwack","Hi-yah!","melee"},
+	{"kick me sign","BMAAKK","dke",2,7,1,"FFF8E1","E53935","a paper KICK ME sign stuck on a back","slap","The next one's a doozy.","goofy,silly,prank"},
 	{"kickball","BMBG3F","Uke",2,7,2,"C0392B","C0392B","bouncy rubber playground ball","bonk","Recess champion.","sport"},
 	{"kickboxer","LMCJNA","kfO",6,8,5,"DC2626","111827","gloves, shorts, high kick","thud","Roundhouse to the scoreboard.","sport,martial"},
 	{"kid","LMBJNA","Dd",2,7,3,"F97316","1D4ED8","kid in t-shirt and sneakers","giggle","Has endless energy. Uses it all.","family"},
@@ -401,6 +403,4 @@ return {
 	{"kumquat","IMAAKF","jke",3,6,2,"F59F1B","4F8A2B","tiny oval orange, eat whole","squirt","Bite-size citrus. Surprise sour inside.","edible,fruit,sour"},
 	{"kun peng","ABFJEB","AkB",9,5,9,"1E3A8A","F8FAFC","enormous fish that becomes a giant bird","whoosh","A fish so big it became a bird.","mythical,giant,danger"},
 	{"kunai","CKAArK","Te",3,9,2,"3A3F45","24262A","leaf blade, ring pommel","shing","A ninja's do-everything pointy friend.","medieval,sharp,ninja"},
-	{"kung pao chicken","IABAKK","KP",5,7,2,"C8402B","C8904A","chicken, peanuts, dried chilies","sizzle","Peanuts and chilies, flying everywhere.","edible,spicy,flammable"},
-	{"kunoichi","LICJNA","jZT",5,9,3,"312E81","F472B6","violet ninja garb, smoke bombs","whoosh","Disappears in a puff. Rude.","stealth,martial"},
 }

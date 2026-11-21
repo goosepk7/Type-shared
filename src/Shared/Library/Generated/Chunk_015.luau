@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"kung pao chicken","IABAKK","KP",5,7,2,"C8402B","C8904A","chicken, peanuts, dried chilies","sizzle","Peanuts and chilies, flying everywhere.","edible,spicy,flammable"},
+	{"kunoichi","LICJNA","jZT",5,9,3,"312E81","F472B6","violet ninja garb, smoke bombs","whoosh","Disappears in a puff. Rude.","stealth,martial"},
 	{"kusarigama","CKCHJI","fHe",4,8,3,"8A929B","24262A","sickle tied to a weighted chain","twang","Sickle and chain, a ninja duet.","ninja"},
 	{"l","KIBAJK","XNO",4,7,1,"DC2626","6B7280","giant red letter L thrown like a boomerang","groan","Hold this. It is heavy. It is an L.","meme,gaming"},
 	{"la llorona","ABCJNJ","jAc",5,5,3,"E2E8F0","1E3A8A","weeping ghost in white by the river","wail","Cries so much the river overflows.","ghost,spooky"},
@@ -401,6 +403,4 @@ return {
 	{"log fort","EGEMII","GSe",4,1,7,"8D6E63","5D4037","square log stockade with watch posts","thud","Built from a whole forest.","structure,defense,flammable"},
 	{"log splitter","JKCL1I","kV",5,1,7,"C0392B","8A929B","hydraulic wedge on a frame","clank","Splits logs. And opinions.","tool"},
 	{"log swap","NGBIMI","ZY",3,9,4,"8B5A2B","D9B38C","you poof into a log and appear somewhere else","poof","Nice hit. On a log.","anime,ninja"},
-	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
-	{"log wall","EGDCII","GST",3,1,6,"8D6E63","5D4037","row of sharpened upright logs","thud","Pointy end goes up. Usually.","sharp,flammable"},
 }

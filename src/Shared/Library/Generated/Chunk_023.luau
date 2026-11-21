@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"scrub brush","BMAHJK","Ff",1,6,3,"8B5A2B","F1C40F","wooden block with bristles","clank","Scrub-a-dub-dub.","cleaning"},
+	{"scuba diver","LBCJNC","TeB",4,5,5,"111827","FACC15","wetsuit, mask, flippers, air tank","bubble","Breathes underwater. Brought a harpoon.","aquatic"},
 	{"scuba tank","BBCO2I","B",1,4,4,"F1C40F","24262A","tank with mask and hose","clank","Breathe underwater. For real.","armor,defense"},
 	{"sculpin","ABAJEC","dB",1,6,1,"8A6A4A","C8A07A","spiny big-headed fish","splash","Big head, spines, attitude.","fish,aquatic"},
 	{"sculptor","LECJNA","GO",3,3,5,"D6D3D1","78716C","chisel, mallet, marble dust","clang","Turns enemies to statues. Artistically.","art"},
@@ -347,7 +349,7 @@ return {
 	{"silkworm","AMAJCA","jdN",1,5,1,"F2EEE6","E8E0D0","pale chubby caterpillar","flutter","Spins silk pajamas for everyone.","insect,cute"},
 	{"silky anteater","AMAJAA","Cf",1,5,3,"E8C890","C8A060","tiny golden fluffy anteater","squeak","A golden pompom with claws.","mammal,wild,cute"},
 	{"silky shark","ABDJEC","DfTB",7,8,6,"6A7480","E8ECEE","smooth-skinned slim shark","chomp","Smoothest skin of any shark.","fish,aquatic,ocean,predator"},
-	{"silly string","BMBFKI","jeN",1,8,1,"FF3EA5","8BC34A","can spraying neon strings","squeak","Pfssssst! Tangled up.","party,silly"},
+	{"silly string","BMBAKI","jeN",2,8,1,"FF5FA2","8BC34A","three squirts of neon party string that tangle","squeak","Pfssssst! All tangled up.","goofy,silly,party,spray"},
 	{"silo","EMDCII","GS",3,1,8,"B0BEC5","B71C1C","tall metal cylinder with domed cap","thud","Stores a thousand tons of grain. Or ammo.","structure,building"},
 	{"silver","FKBAJB","Te",4,7,4,"C0C6CC","F4F6F8","gleaming silver dart","ting","Werewolves strongly dislike this.","shiny"},
 	{"silver bullet","BHAAJK","Te",4,9,2,"C9CED4","F2F2EE","gleaming silver round","thud","Werewolf repellent.","spooky,holy"},
@@ -401,6 +403,4 @@ return {
 	{"skeleton king","AIDJNA","Gfh",7,4,7,"F5F5F4","CA8A04","crowned skeleton on a bone throne","rattle","Rules a kingdom of bones and dust.","undead,royal,spooky,boss"},
 	{"skeleton mage","AICJNA","Jeh",5,4,3,"F5F5F4","7C3AED","robed skeleton with glowing staff","rattle","Cast spells. Lost lips. Still chants.","undead,magic"},
 	{"skeleton pirate","AICJNA","fVb",5,6,4,"F5F5F4","7F1D1D","skeleton in tricorn hat with cutlass","rattle","Yo ho ho. Rattle rattle.","undead,pirate"},
-	{"skeleton samurai","AICJNA","fTV",5,6,4,"F5F5F4","991B1B","skeleton in red samurai armor","rattle","Honor never dies. Neither does he.","undead,warrior"},
-	{"skeleton shark","AIDJEC","fB",6,7,4,"F5F5F4","0EA5E9","shark skeleton swimming with green glow","rattle","All jaw. No fins. Still swims.","undead,aquatic"},
 }

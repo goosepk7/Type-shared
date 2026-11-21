@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot dragon hatchling","AKAJAB","KA",2,6,4,"94A3B8","22D3EE","tiny chrome dragon with blinking eyes","beep","Beeps fire.","robot,cute,reptile"},
+	{"robot factory","EKENII","GSh",5,1,8,"607D8B","FFB300","conveyor belts and robot arms","hum","Spits out robots. Endlessly.","robot,mechanical"},
 	{"robot ghost","ODCJGJ","ZLY",4,7,2,"22D3EE","0F172A","flickering digital ghost made of code","zap","Haunts your screens.","robot,ghost"},
 	{"robot gorilla","OKDJNA","klf",7,5,8,"1F2937","22D3EE","giant chrome gorilla, piston fists","roar","Pounds its chest. Clang clang.","robot,heavy"},
 	{"robot horse","OKDKAA","Dg",5,9,7,"94A3B8","0EA5E9","chrome horse with piston legs","neigh","Never tired. Needs oil.","robot,mount"},
@@ -115,7 +117,7 @@ return {
 	{"rot","FJBNOI","iSM",3,2,3,"5E4A2C","9BA55A","mushy brown-green ground patch","squelch","Old fruit energy.","toxic"},
 	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
 	{"rotisserie chicken","IGCOKK","F",2,5,3,"C8762B","F2C870","golden bird on spit","crunch","Spins until perfect.","edible,healthy"},
-	{"rotten egg","IJBDOJ","jSMP",3,3,2,"E8E0A0","8A9A3A","cracked grey egg, green fumes","whiff","Smell so bad it has its own weather.","edible,smelly,silly"},
+	{"rotten egg","IJBA7K","SMe",2,6,2,"E8E0A0","8BC34A","a cracked green egg that splats into a stink cloud","splat","Crack. Splat. Pee-yew.","goofy,gross,silly,stink"},
 	{"rotten tomatoes","IJCN7B","eNP",5,4,3,"C8402A","5E7A2B","squishy rotten tomatoes pelting the area","splat","For the worst performances only.","goofy,gross,food,rain"},
 	{"rottweiler","AMCJAA","GDQf",5,7,4,"1C1814","9A5A2A","muscular black dog, rust markings","bark","Big tough guardian. Secret cuddler.","mammal,pet"},
 	{"round","KMBF6B","FIO",3,6,1,"EF4444","F8FAFC","ring girl card reading ROUND 1 and a bell being struck","bell","Round one. FIGHT!","gaming,sport"},
@@ -401,6 +403,4 @@ return {
 	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},
 	{"scribe","LLCJNA","Gh",3,3,3,"78350F","F8FAFC","quill, scroll, candle","scratch","Writes your defeat in pretty letters.","historical"},
 	{"scroll","BLAAJK","eh",3,6,1,"E8D9B0","9E1B32","rolled parchment with seal","tap","Read aloud. Stand back.","magic,fantasy"},
-	{"scrub brush","BMAHJK","Ff",1,6,3,"8B5A2B","F1C40F","wooden block with bristles","clank","Scrub-a-dub-dub.","cleaning"},
-	{"scuba diver","LBCJNC","TeB",4,5,5,"111827","FACC15","wetsuit, mask, flippers, air tank","bubble","Breathes underwater. Brought a harpoon.","aquatic"},
 }

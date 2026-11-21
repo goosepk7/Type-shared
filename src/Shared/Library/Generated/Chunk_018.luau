@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"muttaburrasaurus","AMDJAA","dk",5,5,6,"7A6A4A","C8A87A","bumpy nose","honk","Big nose bump. Australian.","dinosaur,extinct,reptile"},
+	{"mutton curry","IABNGI","KSP",4,4,2,"8A3A1E","D9A02B","dark meaty curry","sizzle","A hearty, heavy curry.","edible,spicy"},
 	{"muzzle","BMBLJI","O",1,1,3,"6B4226","5B6168","cage-like snout strap","clink","No biting allowed.","equipment"},
 	{"mycelium","NGENMI","FSP",3,1,5,"F5F5F5","BCAAA4","web of white threads under the soil","poof","The forest's secret internet.","plant,fungus"},
 	{"myconid","AGBJNA","jMP",3,3,4,"DC2626","F5F5F4","walking red-capped mushroom person","puff","Talks in spores. Says hello a lot.","plant,cute"},
@@ -153,7 +155,7 @@ return {
 	{"noob tube","CACAwI","UEeV",5,6,1,"5D6B3A","FFB13B","a chunky launcher lobs three bouncing grenades","thump","Skill issue? No, tube issue.","gaming,shooter,explosive"},
 	{"noodle whip","IMCACD","fHe",3,7,3,"F0CF7A","C0392B","one giant sauce-dripping spaghetti noodle lashing out","slap","Al dente, and it pulls.","kitchen,pull,hook"},
 	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
-	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
+	{"noogie","KMAHKK","Djf",2,7,1,"FFCC80","FFE082","a quick lunge and a knuckle rub on the head","rub","Rub rub rub. So annoying.","goofy,silly,melee,prank"},
 	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},
 	{"nor'easter","GCEEOJ","JIP",7,5,5,"546E7A","ECEFF1","heavy slanting snow and wind from the sea","howl","Coastal winter, maximum grump.","storm,frozen"},
 	{"north","KCCF6B","JIN",4,6,2,"E0F2FE","1E3A8A","compass needle snapping to N with a blast of frost","howl","Never Eat Soggy Waffles. Starts here.","map,frozen"},
@@ -401,6 +403,4 @@ return {
 	{"pain","KDBAKB","NPO",4,8,1,"EF4444","FDE047","red throbbing star with jagged yellow zigzags","zap","It only hurts when you exist.","mood"},
 	{"pain au chocolat","IMBLKI","dSc",2,3,3,"D9963A","4A2516","flaky rectangle, chocolate bars","chomp","A croissant with a secret.","edible,sweet"},
 	{"paint","BMAAJI","je",1,6,1,"C0392B","2F6FD1","splash of bright paint","splat","Colour outside the lines.","art"},
-	{"paint bomb","CMBGKF","jeP",2,7,1,"D0349A","F1C40F","balloon full of bright paint","splat","Splat art, delivered fast.","silly"},
-	{"paint palette","BMBIyI","j",1,5,2,"C49A6C","C0392B","wooden palette with paint blobs","splat","Every colour of victory.","art"},
 }

@@ -148,6 +148,7 @@ return {
 	{"gulab jamun","IMBLGI","cN",2,3,3,"8A3A1E","E8B860","syrup-soaked brown balls","gloop","Little balls swimming in syrup.","edible,sticky,sweet"},
 	{"gulper eel","AIAJCC","dHB",1,6,1,"1E1E24","5A5A66","giant pelican mouth, whip tail","splash","Mostly mouth. Hungry mouth.","fish,aquatic,deepsea"},
 	{"gum","IMBLGI","SNO",2,3,3,"F2A6C8","F7D9E3","pink chewed blob, stretchy","gloop","Sticks to everything. Forever.","edible,sticky,candy,sweet"},
+	{"gum wad","BMBLGI","SN",2,2,2,"F48FB1","F8BBD0","a big sticky pink wad of chewed gum","squish","Ew. You're stuck.","goofy,gross,silly,trap"},
 	{"gumball","IMAAKK","UeV",3,7,6,"E0102B","4FA3E8","glossy colored sphere","bonk","Round, bouncy, and colorful.","edible,candy"},
 	{"gumball machine","OMBM1I","Ude",1,5,4,"C0392B","BFE6F2","glass globe full of gumballs","hum","Insert coin. Receive chaos.","silly,candy"},
 	{"gumbo","IBBOGI","FS",3,4,3,"8A4A1E","7DBE3A","thick brown stew over rice","slurp","A bayou bowl of everything.","edible,warm,healthy"},
@@ -402,5 +403,4 @@ return {
 	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
 	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
 	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
-	{"hero","LHCJNA","GDFf",6,6,6,"1D4ED8","FACC15","caped figure, bright sword, heroic pose","clang","Saves the day. Every day. Exhausted.","hero"},
 }

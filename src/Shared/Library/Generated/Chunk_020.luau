@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pitcher plant","NJCLMI","ScMH",4,1,4,"9CCC65","B71C1C","tall slippery tube with a lid","chomp","Slide in. Do not slide out.","plant,carnivorous"},
+	{"pitchfork","CKCAuI","lfT",3,5,4,"8A929B","8B5A2B","three long tines on a pole","whoosh","Angry mob not included.","farm"},
 	{"pitching machine","OMCMwI","keh",3,7,5,"2F7D6B","F2EBDD","tripod ball launcher with a hopper and twin wheels","hum","Strike one. Strike two. Duck.","sport,baseball,turret"},
 	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
 	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
@@ -401,6 +403,4 @@ return {
 	{"pump","OBBM1I","HI",2,3,6,"2F6FD1","8E9196","boxy pump with hoses","hum","Pushes water. Pulls water.","mechanical"},
 	{"pumpernickel","IICCII","Gk",4,2,7,"3E2618","6B4026","very dark square loaf","thud","Bread from the dark side.","edible,giant"},
 	{"pumpkin","IGCGKF","EkI",5,5,6,"E8761A","5E7A2B","big ribbed orange gourd, stem","rumble","Rolls downhill with intent.","edible,heavy,holiday,vegetable"},
-	{"pumpkin bread","IMCCII","GF",4,2,5,"C2622B","D9A04A","orange-brown spiced loaf","thud","Autumn in a loaf.","edible,giant,dessert"},
-	{"pumpkin catapult","CMDMxI","dkeV",4,3,5,"8B5A2B","E67E22","catapult loaded with pumpkins","creak","Splat attack, seasonal edition.","silly,holiday"},
 }

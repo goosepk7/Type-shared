@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paint bomb","CMBGKF","jeP",2,7,1,"D0349A","F1C40F","balloon full of bright paint","splat","Splat art, delivered fast.","silly"},
+	{"paint palette","BMBIyI","j",1,5,2,"C49A6C","C0392B","wooden palette with paint blobs","splat","Every colour of victory.","art"},
 	{"paint roller","JMDNJF","kSN",3,6,3,"3E8EDE","F2C230","giant fluffy roller soaked in blue paint","splash","Paint the town. And the enemy.","household,diy,art"},
 	{"paint scraper","JKAHrK","f",1,7,3,"8A929B","2F6FD1","flat scraping blade","clank","Scrape, scrape, done.","tool"},
 	{"paint splash","KMBFOB","jd",2,7,1,"FF4081","00E5FF","rainbow paint splatter wave","splat","Now everything's colourful.","silly"},
@@ -401,6 +403,4 @@ return {
 	{"pitbull","AMCJAA","DQf",5,7,4,"8C7E72","F2EEE8","muscular wide head, big smile","bark","Big smile. Bigger heart.","mammal,pet"},
 	{"pitch","MGENnI","DSN",5,1,6,"22C55E","FFFFFF","striped mown grass with white lines and corner flags","whistle","Get off the grass. Unless you are winning.","sport,place"},
 	{"pitch black","FIDNOI","jZ",4,5,3,"000000","212121","absolute black dome","hush","Can't see your own hand.","spooky,stealth"},
-	{"pitcher plant","NJCLMI","ScMH",4,1,4,"9CCC65","B71C1C","tall slippery tube with a lid","chomp","Slide in. Do not slide out.","plant,carnivorous"},
-	{"pitchfork","CKCAuI","lfT",3,5,4,"8A929B","8B5A2B","three long tines on a pole","whoosh","Angry mob not included.","farm"},
 }

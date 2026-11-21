@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"suburb","MMENII","jSh",2,1,7,"7CB342","F5E6CA","rows of identical houses and lawns","crowd","Every house looks the same. Confusing.","place,silly"},
+	{"subway train","DMEKHL","CDkg",6,7,8,"B0B7BF","1C5CAB","long silver carriages, sliding doors","engine","Mind the gap. Mind the train.","mechanical,vehicle,land"},
 	{"success","KHCOKJ","WFk",4,6,3,"22C55E","FACC15","green tick in a gold burst with a tiny fist pump","fanfare","Nailed it. First try. No one saw the others.","gaming,support"},
 	{"succulent","NGAOMI","GF",1,1,5,"80CBC4","F8BBD0","chubby rosette of plump leaves","thud","Tiny, chubby, unkillable.","plant,desert,cute"},
 	{"suchomimus","AMDJBA","DkfTB",6,6,7,"7A6A4A","D8B88A","croc-mimic snout, low sail","roar","Pretends to be a crocodile. Badly.","dinosaur,extinct,reptile,predator"},
@@ -401,6 +403,4 @@ return {
 	{"thud","KEBAKB","O",3,6,2,"8D6E63","FFFFFF","heavy dust puff landing","thud","Thud. Something heavy arrived.","silly,heavy"},
 	{"thumb","BMBOKE","UFk",3,5,4,"E8B48A","FFD166","giant thumbs-up with a sparkle","ding","Certified approved. Now squish.","body,silly,support"},
 	{"thumb war","KMAAKB","dO",1,8,1,"FFCC80","FFFFFF","tiny glowing thumbs wrestling","boing","One two three four, I declare a thumb war.","silly"},
-	{"thumbnail","BHAIyE","Gdc",1,5,2,"FACC15","EF4444","small bright rectangle with huge shocked face and arrows","pop","Bigger mouth means more views. Science.","internet,meme"},
-	{"thumbprint cookie","IMBAKK","Uke",3,7,2,"E8C88A","B0203E","cookie with jam dot center","whoosh","A cookie with a jammy fingerprint.","edible,dessert"},
 }

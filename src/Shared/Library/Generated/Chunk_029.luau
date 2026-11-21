@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weakness","KIBOKE","iXN",3,6,1,"A78BFA","F87171","glowing red target spot blinking on a cracked armour plate","beep","Hit the glowing bit. It is always the glowing bit.","gaming"},
+	{"wealth","LHCJNA","Gceh",4,3,5,"15803D","FACC15","top-hatted tycoon diving into a pile of gold coins","jingle","Throws money at problems. It works. Annoyingly.","shiny,silly"},
 	{"weapon","CKCELB","kTeP",6,6,5,"8A929B","6B4226","falling rack of swords, axes, maces and a rubber chicken","clang","Which weapon? All of them. At once.","sharp,medieval"},
 	{"weasel","AMBJAA","CjfT",3,8,2,"8A5A30","F2E6CC","long slim body, short legs, white belly","chatter","Pop goes the weasel.","mammal,predator"},
 	{"weather","GFCNOI","jP",3,5,3,"90CAF9","FFF59D","rapidly switching sun, rain and snow","whoosh","Unpredictable, as always.","storm"},
