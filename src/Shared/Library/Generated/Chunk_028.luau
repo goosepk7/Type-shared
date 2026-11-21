@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ufo","DLDKHE","AlHegY",6,8,6,"B0BEC5","76FF03","silver disc, glass dome, tractor beam","warble","Take me to your loser.","space,alien"},
+	{"ugali","IMBLGG","USN",2,3,3,"F7F2E0","E8E0D0","white maize dough mound","wobble","A mound of maize goodness.","edible,wobbly"},
+	{"ugh","KJBDOJ","jIN",2,5,1,"A3B18A","6B8E23","green disgusted face with tongue out and wavy stink lines","whiff","Ewwwww. Get it away. Get it AWAY.","silly,gross"},
+	{"ugli fruit","IMBAKF","jke",3,6,2,"9AAA3A","F2B05A","wrinkly green-orange citrus","squirt","Ugly outside, juicy inside.","edible,fruit,sour"},
+	{"ugliness","KJCF6B","jIO",3,5,2,"8A9A5B","7C3AED","cracked mirror shockwave with a warty lumpy face","crack","A face only a summoner could love.","silly,gross"},
+	{"uintatherium","AMDJAA","DkO",6,4,8,"7A6A5A","C8B8A0","six bumps on head, tusks","roar","Six knobs on its head. Rude.","mammal,extinct,ancient,heavy"},
 	{"ukulele","BMBFJI","dF",1,6,2,"C49A6C","7A4E2D","tiny four-string guitar","strum","Plinky plunk. Aloha.","music"},
 	{"ultimate","KLEOKI","DWk",7,6,6,"FFD54F","D500F9","screaming golden aura, flowing hair glow","choir","Glowing hair means it's serious.","meme"},
 	{"uluru","MEFCII","GS",6,1,10,"C1440E","E6A04D","huge rounded red rock in flat desert","rumble","One rock. Very large. Very red.","place,landmark"},
@@ -397,10 +403,4 @@ return {
 	{"weimaraner","AMCJAA","DQf",4,8,4,"9A9AA0","D8D8DC","sleek silver-grey dog","bark","The grey ghost. Silver, fast.","mammal,pet"},
 	{"weirdo","LLCJNA","UjY",3,6,3,"A3E635","D946EF","mismatched socks, colander hat, walking a pet rock","boing","Normal is a setting on a washing machine.","silly,meme"},
 	{"weka","AMBJDA","dfb",2,4,2,"8A6A4A","C8A07A","flightless brown rail","cluck","Steals shiny things from campers.","bird,farm"},
-	{"welder","OACBJK","KfO",5,4,5,"2F6FD1","24262A","welding gun with bright arc","buzz","Don't look directly at it.","tool"},
-	{"welding mask","BKBONI","G",1,5,5,"24262A","4A4D52","dark-windowed face shield","clank","Flash? What flash?","armor,defense"},
-	{"wels catfish","ABDJEC","DfHB",5,7,4,"4A4A3A","C8C0A0","enormous whiskered catfish","splash","Eats pigeons off riverbanks.","fish,aquatic"},
-	{"welsh rarebit","IGBOKI","F",2,5,3,"E0A040","F2C24A","toast with bubbling cheese","crunch","No rabbits involved. Just cheese.","edible,healthy"},
-	{"welwitschia","NECNMI","dFS",2,1,8,"6D4C41","7CB342","two long tangled leaves on sand","rustle","Two leaves. Two thousand years.","plant,flower,ancient"},
-	{"wendigo","ACDJNA","DiJf",7,8,6,"E7E5E4","7DD3FC","gaunt antlered figure, frost breath","howl","Always cold. Always hungry. Never invited.","spooky,frozen,cryptid"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea lettuce","NBBLMI","SNB",1,1,2,"76FF03","9CCC65","bright green crinkly sheets","splash","Slippery salad of the sea.","plant,aquatic"},
+	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
+	{"sea lion","ABCJEC","UDdfB",3,5,4,"8A6440","C8A07A","sleek brown seal, upright on front flippers","bark","Balances balls. Barks for fish.","mammal,aquatic"},
 	{"sea mine","CBCLKJ","EkB",7,1,4,"24262A","9C4A1A","spiked floating metal ball","boom","A spiky beach ball you shouldn't hug.","explosive,ocean"},
 	{"sea monkey","ABAJRA","GfTPB",1,4,5,"F2C8A0","E8A07A","tiny wiggly brine shrimp","clack","Not monkeys. Do not ask.","crustacean,aquatic,armored,silly"},
 	{"sea mouse","ABAJTD","CP",1,3,1,"C8A07A","6AE8C0","furry iridescent worm","squelch","A worm wearing a fur coat.","bug"},
@@ -358,6 +361,7 @@ return {
 	{"skate","ABBJEC","STB",2,5,3,"9A8A72","E8E0D4","flat diamond body, thin tail","whoosh","Ray's less pointy cousin.","fish,aquatic,ocean"},
 	{"skate park","EMCNII","UlS",2,1,6,"BDBDBD","7E57C2","concrete ramps and bowls","thud","Ramp up, fly out.","structure,building,sport"},
 	{"skateboard","DMAKHF","UDkg",2,7,2,"F28C28","1A1A1A","flat deck, four tiny wheels, grip tape","clack","Kickflip into battle.","mechanical,vehicle,land,sport"},
+	{"skateboard kickflip","BFBOHL","Dke",4,9,2,"3BB7E8","FFD24A","skateboard dash ending in a kickflip that flings the board","clack","Landed it. On you.","transit,skate,movement"},
 	{"skateboarder","LMCJNL","UDd",3,9,3,"DC2626","111827","helmet, skateboard, ollie pose","whoosh","Grinds on rails. And your nerves.","sport"},
 	{"skateboarding","KMBOHF","UDk",3,9,2,"111827","FACC15","board flipping under mid-air trainers, grind sparks","clack","Kickflip! Landed it. Nobody was filming.","sport,cool"},
 	{"skating","KCBONK","UDj",3,8,2,"F8FAFC","F472B6","figure in a spin on one blade, arms up, ice sparkles","swish","Triple axel. Double wobble. Single bruise.","sport,frozen"},
@@ -399,8 +403,4 @@ return {
 	{"skunk kit","AMAJAA","CfM",1,8,2,"1A1A1C","F2F2F2","tiny stripy fluffball","chatter","Practicing the stink. Not ready yet.","mammal,predator"},
 	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
 	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
-	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
-	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
-	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
-	{"sky island","MFENIJ","lS",4,1,7,"8BC34A","E3F2FD","grassy rock floating in the sky","rumble","No roads. Just a long way down.","place,terrain,magic"},
 }

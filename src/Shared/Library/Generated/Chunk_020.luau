@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
+	{"pizza shield","IMCIII","Ga",3,3,6,"E8B04A","D72B2B","round pizza strapped to arm","thud","Cheese-forward defense.","edible"},
+	{"pizza slice","IMBAKK","cTe",3,7,2,"E8B04A","D72B2B","triangle slice, cheese stretch","whoosh","A triangle of hope.","edible"},
 	{"placoderm","ABCJEC","GDfB",4,7,4,"6A6A6A","B8B0A0","armored ancient fish","splash","Armored fish. Bony and proud.","fish,aquatic,extinct,ancient"},
 	{"placodus","ABDJEC","DfHB",5,6,7,"6A6A5A","C8C8B0","clam-crushing sea reptile","roar","Ate shellfish like candy.","extinct,reptile,aquatic,ocean"},
 	{"plague","FJDDOJ","SMP",6,4,3,"7A8A3A","2E2A1E","drifting murky cloud with fly specks","buzz","Spreads faster than gossip.","toxic,spooky"},
@@ -400,7 +403,4 @@ return {
 	{"puppy eyes","KHAAKB","cO",1,7,1,"8D6E63","B3E5FC","huge sparkly pleading eyes","aww","Nobody can say no to these.","cute,silly"},
 	{"pupusa","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","thick stuffed corn cake","whoosh","A stuffed tortilla pillow.","edible"},
 	{"purify","KHCFOB","KF",3,6,2,"FFFFFF","B2EBF2","pure white wave washing outward","chime","Squeaky clean. Evil included.","holy,support"},
-	{"purple carrot","IEBAJK","FTe",3,6,4,"5E1A4E","ED9121","purple-skinned carrot","crunch","A carrot in royal colours.","edible,vegetable,healthy"},
-	{"purple fire","FACAKB","Kje",6,8,2,"AA00FF","EA80FC","violet flame ball with pink core","whoosh","Magic fire. Smells like grapes.","fire,magic"},
-	{"purple frog","AMAJAG","UCe",1,5,1,"6A4A8A","C8A0D8","purple blobby frog with pig nose","croak","A purple blob with a nose.","amphibian,wetland,silly"},
 }

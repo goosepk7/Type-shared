@@ -306,6 +306,7 @@ return {
 	{"deli meat","IMBAKK","Uke",3,7,2,"E8A0A0","C8604A","stack of thin slices","whoosh","Thin layers of sandwich armour.","edible"},
 	{"delicata","IMBHJI","kf",3,5,4,"F2E8B0","3E6B2A","striped cream oblong squash","bonk","A squash in pyjamas.","edible,silly"},
 	{"delivery driver","LMCJNA","Dde",3,8,3,"DC2626","FACC15","cap, box stack, running pose","whoosh","30 minutes or it's free.","silly"},
+	{"delivery drone","OMBAhE","EAQ",5,5,2,"F2F2EE","C08A4A","little quadcopter carrying a cardboard parcel","buzz","Your package has been delivered. To your face.","transit,drone,delivery,homing"},
 	{"delivery robot","OKBJHL","dQ",2,4,5,"F8FAFC","22C55E","cooler-shaped six-wheeled robot","beep","Your package has arrived. Explosively.","robot,silly"},
 	{"delivery truck","DMCKHL","Dkg",4,6,6,"7B4B2A","F2D5A0","tall square van, sliding door, parcel shelves","engine","Your package has arrived. Violently.","mechanical,vehicle,land"},
 	{"delphinium","NJCNMI","dFSM",2,1,2,"3F51B5","9FA8DA","tall spike of deep blue blooms","rustle","Tall, blue, and slightly toxic.","plant,flower"},
@@ -402,5 +403,4 @@ return {
 	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
 	{"dirt cup","IMBLGI","SNP",2,3,3,"3A1A0C","E0102B","cup of crumbs and gummy worms","gloop","Dirt you can eat. With worms.","edible,sticky,dessert,silly"},
 	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
-	{"disco ball","BHCG3K","jca",2,2,3,"C9CED4","A66BDB","spinning mirrored sphere","squeak","Dance fight!","party"},
 }

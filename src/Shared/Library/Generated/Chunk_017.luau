@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"meteor strike","HADAKB","KEkO",8,8,6,"5D4037","FF7043","single blazing rock slamming into a target ring","boom","Marked target. Incoming rock.","space,explosive"},
+	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
 	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
@@ -198,6 +200,7 @@ return {
 	{"monster slayer","LKCJNA","fTe",6,6,6,"57534E","DC2626","two swords, scarred face, cat eyes","clang","Toss a coin. Monster's gone.","warrior"},
 	{"monster tamer","LMCJNA","Qh",4,6,4,"DC2626","F8FAFC","cap, vest, belt of capture orbs","whistle","Gotta tame them all.","gaming"},
 	{"monster truck","DMEKHL","UDkgO",7,7,8,"39B54A","FF6B00","tiny body on gigantic tyres, roll cage","engine","Crushes cars for breakfast. And lunch.","mechanical,vehicle,land,silly"},
+	{"monster truck crush","OKENeL","UEk",8,4,5,"E8452C","2A2A30","huge-tyred monster truck drops from the sky and bounces","crunch","Sunday! Sunday! Also you're under it.","transit,vehicle,drop,heavy"},
 	{"monster under the bed","AIBLGI","jHO",3,5,3,"312E81","FACC15","glowing eyes and claws under a bed frame","growl","Grabs ankles. Afraid of flashlights.","spooky,silly"},
 	{"monstera","NGCCMI","GS",2,1,4,"1B5E20","43A047","huge glossy leaves full of holes","rustle","Holes in its leaves. Holes in your plan.","plant,houseplant"},
 	{"month","KLCNnI","iSN",4,1,3,"3B82F6","F8FAFC","calendar page with thirty squares being crossed off","rustle","Thirty days hath September. The rest forgot.","time"},
@@ -400,7 +403,4 @@ return {
 	{"nag","KMBBKB","iQNO",3,5,1,"F59E0B","DC2626","wagging finger with a speech bubble of blah blah blah","chatter","Are we there yet? Are we there yet? Are we","silly"},
 	{"naga","ABDJCD","GfMB",7,6,7,"065F46","FACC15","cobra hooded serpent, jeweled crest","hiss","A serpent king with excellent taste in jewels.","mythical,reptile,royal"},
 	{"naginata","CKDHuK","fTP",6,6,4,"C9CED4","24262A","curved blade on long shaft","shing","Elegant reach, very rude edge.","medieval,sharp"},
-	{"nahual","ALCJAA","DjY",5,7,4,"7C2D12","FACC15","jaguar shapeshifter with glowing markings","growl","A jaguar on Tuesdays. Your neighbor otherwise.","mythical"},
-	{"nail","BKAAJK","Te",1,9,2,"8A929B","8E9196","thin pointed metal spike","clink","Hit it on the head.","hardware"},
-	{"nail clippers","BMAHrK","f",1,7,2,"C9CED4","C9CED4","tiny snipping clipper","thud","Click. Click.","bathroom"},
 }

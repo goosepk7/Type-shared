@@ -3,11 +3,16 @@
 -- (data/misspellings.jsonl + per-entry 'ms'), sorted.
 return {
 	keys = {
-		"zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands",
-		"zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander",
-		"zylophone","zylophone stairs",
+		"yaoyorozo","yeer","yeett","yeiti","yellow crad","yellow overdirve","yelow card","yet","yeti chrage","yetti","yetti charge","yety","yoag","yoeyo","yogert","yogga",
+		"yoik","yokay","yollo","yoloo","yonk","yormungandr","yougurt","youkay","younicorn","yufo","yugio trap","yuk","yumm","yummi","za hado","za hand",
+		"za handoo","za wardo","za warudoo","zanpackuto","zanpakto","zanpakuto realese","zanzokin","zanzokn","zapp","zawardo","zebrah","zeebra","zeero","zenit haste","zenith hast","zenith hasted",
+		"zepplin","zero gravaty","zero gravety","zero gravit","zero gravitty","zero hr","zeuss","ziggaraut","zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat",
+		"zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands","zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie",
+		"zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander","zylophone","zylophone stairs",
 	},
 	owners = {
-		11514,11518,11518,11518,11519,11518,11520,11520,11519,11520,11521,11540,11525,11525,11525,11531,11531,11531,11531,11525,11525,11531,11546,11525,11540,11546,11510,11548,11548,11512,11512,11553,11450,11450,
+		394,11467,11469,11473,7377,9415,7377,11469,470,11473,470,11473,11482,11479,11485,11482,11486,11487,11488,11488,11486,5349,11485,11487,10830,10801,7904,10803,11496,11496,6962,6962,6962,11517,11517,10818,10818,10818,3633,3633,
+		11504,11517,11506,11506,11516,11513,11513,11513,986,11196,11196,11196,11196,11517,11518,11520,11520,11524,11524,11524,11525,11524,11526,11526,11525,11526,11527,11546,11531,11531,11531,11537,11537,11537,11537,11531,11531,11537,11552,11531,
+		11546,11552,11516,11554,11554,11518,11518,11559,11456,11456,
 	},
 }
