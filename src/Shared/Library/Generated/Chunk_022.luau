@@ -49,7 +49,7 @@ return {
 	{"rodeo queen","LECKNA","DHg",5,8,5,"F472B6","92400E","sparkly cowgirl with lasso on horseback","yeehaw","Lassos anything. Even dragons.","western,mount"},
 	{"roe deer","AMCJAA","Dk",4,8,4,"B8703A","F2F2EE","small deer, short antlers","bark","Small deer, big bark.","mammal,wild"},
 	{"rogue","LICJNA","ZfTb",5,8,3,"1F2937","7C2D12","hooded cloak, twin daggers, lockpicks","whoosh","Already took your wallet. And your shoes.","stealth"},
-	{"rogue wave","FBEF6F","kIO",8,6,5,"0D47A1","E3F2FD","sudden towering dark wave","roar","Came out of nowhere. Very rude.","aquatic"},
+	{"rogue wave","FBDN6F","kI",6,6,2,"1660B8","E3F2FD","a harmless ripple that suddenly rears into a towering wave","roar","Came out of nowhere. Very rude.","nature,water,ocean"},
 	{"rokurokubi","AICJNA","jfH",4,4,4,"F5F5F4","1F2937","woman with stretching noodle neck","giggle","Her neck goes out for snacks at night.","yokai,spooky,silly"},
 	{"roller","JMBFJF","SNP",2,5,3,"F97316","FFFFFF","fluffy paint roller laying down a fat orange stripe","squelch","One coat. Then you. Then a second coat.","tool,art"},
 	{"roller coaster","DMEKHL","Djkg",5,9,6,"E53935","1E88E5","looping track with a train of cars","scream","Scream if you want to go faster.","structure,building,silly"},

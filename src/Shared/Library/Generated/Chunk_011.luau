@@ -31,7 +31,7 @@ return {
 	{"german shepherd","AMCJAA","DQfO",5,7,4,"7A5230","1E1610","black saddle, tan legs, tall pointed ears","bark","Police dog energy at all times.","mammal,pet"},
 	{"germs","KJADLJ","MP",2,5,1,"8BC34A","FFF59D","cloud of tiny smiling green blobs","bubble","Wash your hands!","toxic,silly"},
 	{"geryon","AEEJNA","kfe",8,3,8,"7C2D12","94A3B8","giant with three torsos and six arms","stomp","Three bodies. One very big lunch.","mythical,giant"},
-	{"geyser","FBCLII","Kkl",5,7,3,"7CC6E8","F4FBFF","ground vent firing tall water column","whoosh","Earth's surprise sprinkler.","aquatic"},
+	{"geyser burst","FBCLII","klS",5,7,4,"7CC6E8","F4FBFF","a steaming ground vent that blasts you sky-high","whoosh","Earth's surprise sprinkler, set to launch.","nature,water,trap"},
 	{"gg","KHBOKJ","F",1,5,2,"43A047","FFFFFF","confetti burst","ding","Good game. Sportsmanship heals.","meme"},
 	{"gharial","ABDJAC","fTHOB",7,5,8,"6A7A5A","C8C8A8","super thin long snout, bulb nose","snap","Its snout is basically chopsticks.","reptile,predator,aquatic"},
 	{"ghee","IMBLGI","kSO",2,3,2,"F2C24A","F8E58C","jar of golden liquid fat","squeak","Golden, glossy, and very slippery.","edible,slippery,silly,dairy"},
@@ -94,6 +94,7 @@ return {
 	{"giant growth","KEEONI","Wk",5,4,3,"E8A23A","5A3A2A","grow half again as big, with a longer reach","rumble","Mind your head.","hero,movie,giant"},
 	{"giant gumball","IMEGIF","UkI",7,2,7,"E0102B","4FA3E8","boulder-sized glossy gumball","thud","Bounces over everything.","edible,giant,silly"},
 	{"giant gummy bear","IMEJBA","Udkf",7,2,7,"E0102B","F2A62B","towering translucent bear","thud","Wobbles menacingly. Very sweet.","edible,giant,silly,candy"},
+	{"giant hailstone","GCEN4B","ENV",7,5,2,"CFE8F7","7FB4D8","a car-sized hailstone slams down and cracks into shards","crash","The forecast said scattered hail. It was one hailstone.","weather,ice,storm"},
 	{"giant hamster ball","DMCKHF","UDkg",2,7,4,"81D4FA","FFFFFF","giant clear ball with a rider inside","boing","Roll in. Bowl everyone over.","mechanical,vehicle,land,silly"},
 	{"giant hand","KLELII","lHO",7,5,6,"FFE0B2","B388FF","enormous glowing hand reaching down from the sky","whum","A helping hand. A very, very big one.","magic"},
 	{"giant ice cream cone","ICEJIF","JkcN",7,2,7,"F7E7CE","D9A04A","towering cone, huge scoops","thud","Five scoops. One giant brain freeze.","edible,giant,silly,frozen"},
@@ -402,5 +403,4 @@ return {
 	{"gravity mage","LLCJNJ","lHN",6,4,4,"312E81","A855F7","floating rocks orbiting a robed mage","hum","What goes up stays up.","magic"},
 	{"gravity prison","KLCLII","NO",6,3,6,"4527A0","B388FF","warped purple sphere pinning target","whum","Too heavy to move.","space"},
 	{"gravity snail","ALBJFA","HN",2,1,6,"7C3AED","FDE68A","snail with a swirling black-hole shell","squelch","Pulls you closer. Very, very slowly.","alien,silly"},
-	{"gravity storm","FLEN5K","lHPO",8,5,5,"311B92","B388FF","swirling purple storm flinging debris","whum","Up, down, sideways, all at once.","space,storm"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spiral core","KFBGKI","Dkf",7,9,2,"7EC8FF","FFFFFF","a howling blue sphere spinning in your palm","hum","Spin it. Shove it. Done.","anime,ninja"},
 	{"spire","EMDMII","GSTe",3,1,6,"9E9E9E","5D5D5D","needle-thin pointed tower","thud","Very pointy. Very tall.","structure,defense,tower"},
 	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 	{"spirit animal","AHCJAA","GQF",4,6,3,"A5F3FC","FDE68A","glowing translucent animal companion","chime","Your inner animal, on loan.","spirit"},
@@ -402,5 +403,4 @@ return {
 	{"summoner","LLCJNA","ehY",5,4,3,"6D28D9","F0ABFC","robes with summoning circle sigils","zap","Doesn't fight. Has friends who do.","magic"},
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
 	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
-	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 }

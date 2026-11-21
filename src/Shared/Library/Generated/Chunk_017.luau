@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
 	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
@@ -73,7 +74,6 @@ return {
 	{"mini marshmallows","IMAELB","UeP",2,7,1,"F7F4F0","F2A6C8","tiny white cylinders","pitter","A blizzard of fluffy.","edible,sweet,candy"},
 	{"mini submarine","DBCKHC","lfgB",4,4,8,"FF6F00","F5F5F5","round pod with lights and claw arms","sonar","Finds treasure. Pinches enemies.","vehicle,aquatic"},
 	{"mini sun","FHCGKE","KFR",6,4,3,"FFB300","FFF8E1","tiny blazing sun floating overhead","hum","Your own personal sunshine.","holy,fire"},
-	{"mini tornado","HFBN5K","klH",4,7,2,"B0BEC5","ECEFF1","knee-high spinning funnel that zips around","whoosh","Small, angry and very spinny.","storm,cute"},
 	{"miniature schnauzer","AMBJAA","dQf",2,6,2,"8A8A8E","D8D8DA","small dog, bushy beard","yip","Grandpa mustache, puppy energy.","mammal,pet,cute"},
 	{"miniboss","LICJNA","kf",5,5,5,"57534E","F97316","medium brute with tiny health bar","roar","Like a boss, but fun size.","meme,gaming"},
 	{"minigun","CKDMwI","TeV",8,9,5,"2C3539","24262A","six spinning barrels, ammo belt","rattle","Spins up. Never stops.","modern,ranged"},

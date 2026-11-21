@@ -3,11 +3,14 @@
 -- (data/misspellings.jsonl + per-entry 'ms'), sorted.
 return {
 	keys = {
-		"zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands",
-		"zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander",
-		"zylophone","zylophone stairs",
+		"yoag","yoeyo","yogert","yogga","yoik","yokay","yollo","yoloo","yonk","yormungandr","yougurt","youkay","younicorn","yufo","yugio trap","yuk",
+		"yumm","yummi","za hado","za hand","za handoo","za wardo","za warudoo","zanpackuto","zanpakto","zanpakuto realese","zanzokin","zanzokn","zapp","zawardo","zebrah","zeebra",
+		"zeero","zenit haste","zenith hast","zenith hasted","zepplin","zero gravaty","zero gravety","zero gravit","zero gravitty","zero hr","zeuss","ziggaraut","zigurat","zip lien","zip wier","zipeline",
+		"ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands","zombie hads","zombie handz","zombie hnads","zombiee",
+		"zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander","zylophone","zylophone stairs",
 	},
 	owners = {
-		11514,11518,11518,11518,11519,11518,11520,11520,11519,11520,11521,11540,11525,11525,11525,11531,11531,11531,11531,11525,11525,11531,11546,11525,11540,11546,11510,11548,11548,11512,11512,11553,11450,11450,
+		11477,11474,11480,11477,11481,11482,11483,11483,11481,5348,11480,11482,10825,10796,7901,10798,11491,11491,6959,6959,6959,11512,11512,10813,10813,10813,3632,3632,11499,11512,11501,11501,11511,11508,11508,11508,986,11191,11191,11191,
+		11191,11512,11513,11515,11515,11519,11519,11519,11520,11519,11521,11521,11520,11521,11522,11541,11526,11526,11526,11532,11532,11532,11532,11526,11526,11532,11547,11526,11541,11547,11511,11549,11549,11513,11513,11554,11451,11451,
 	},
 }

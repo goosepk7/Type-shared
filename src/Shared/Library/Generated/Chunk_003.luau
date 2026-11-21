@@ -138,7 +138,7 @@ return {
 	{"black hole beast","AIFJKJ","iHO",10,1,9,"000000","7C3AED","swirling black sphere with ring of teeth","hum","Pulls everything in. Even light.","cosmic,boss,danger"},
 	{"black hole bomb","CIFGKF","ElH",9,3,1,"1B1A22","7D3CB5","tiny bomb ringed by dark swirl","boom","Everything nearby goes \"in\".","explosive,scifi,danger"},
 	{"black hole generator","OIEN1I","ilH",9,1,5,"1B1A22","7D3CB5","ring device holding a tiny black hole","hum","Do not stand near. Do not stand far.","scifi,danger"},
-	{"black ice","FCCLII","ZNO",4,5,3,"1E2A33","6C8A9C","nearly invisible glassy ground patch","crackle","You will not see it coming. Whee.","frozen"},
+	{"black ice","FCCNII","ZSI",4,5,4,"24323D","8FB0C4","nearly invisible glassy patch where you slip and skid","crackle","You will not see it coming. Whee.","weather,ice,winter,trap"},
 	{"black knight","LICJNA","GDif",6,4,8,"111827","7F1D1D","black spiked armor, red plume, greatsword","clang","Tis but a scratch.","warrior,spooky"},
 	{"black light","FHCNOI","ja",3,4,2,"4A148C","76FF03","deep violet glow making things fluoresce","hum","Everything glows. Even secrets.","silly"},
 	{"black lightning","FIDAKB","ieL",8,10,1,"12001F","B388FF","black bolt with violet glowing edges","crack","Lightning that went emo.","electric,spooky"},

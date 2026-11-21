@@ -190,7 +190,7 @@ return {
 	{"bald-faced hornet","AJBJLB","ATMP",3,7,1,"1E1E1E","F2F2F2","black and white hornet","buzz","Black and white and mad all over.","insect,swarm,venomous"},
 	{"ball","BMBA3F","Ukce",3,7,4,"EF4444","FFFFFF","classic red ball with a white stripe and shine","boing","Boing. Boing. Boing. Bonk. Sorry!","toy,sport"},
 	{"ball and chain","BKCG3K","kNO",5,2,8,"24262A","5B6168","iron ball on a leg shackle","thud","Slows you down. Swings you round.","heavy"},
-	{"ball lightning","FDCGKE","UQL",6,5,2,"AFCBFF","FFFFFF","floating crackling sphere, arcs flicking out","buzz","A lightning bolt that chose to roll.","electric"},
+	{"ball lightning","FDCGKE","EeL",5,4,3,"8FB6FF","E8F0FF","slow floating crackling sphere that zaps whoever is near","buzz","A lightning bolt that decided to take its time.","weather,electric,storm"},
 	{"ball pit","BMDLII","NO",1,1,3,"E84A5F","F2F2EE","pit full of plastic balls","squeak","Dive in. Never return.","toy"},
 	{"ball python","AMBJCF","fHO",3,4,6,"3A2A1A","C8A06A","small python curled in a ball","hiss","Rolls into a ball when shy.","reptile,pet,cute"},
 	{"ballet","KMBN5K","dk",2,7,2,"F8BBD0","FFFFFF","graceful spinning tutu glow","music","Elegant. Twirly. Kicky.","music,dance"},
