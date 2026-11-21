@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sugar rush","IMBOKI","Dj",3,9,2,"F2A6C8","F2E23A","swirl of candy and sparks","fizz","Zoom! Zoom! Crash.","edible,drink,silly"},
+	{"sugar skull","IMBLKI","dSc",2,3,3,"F7F7F2","E8434F","decorated white skull candy","chomp","A sweet celebration of memory.","edible,sweet,candy,holiday"},
+	{"sugar snap peas","IGAELB","eVP",2,7,1,"7DBE3A","5E9E3A","plump crunchy pods","pitter","Snap! Crunch! Sweet!","edible"},
+	{"sugar syrup","IMBLGI","SNP",2,3,3,"F7F2E8","E8E0D0","clear sticky syrup","gloop","Sugar, but liquid.","edible,sticky"},
+	{"sugarcane","NGCLMI","WScHN",2,1,4,"AED581","E6EE9C","tall jointed sweet green stalks","rustle","Sweet stalks. Sticky situation.","plant"},
 	{"suit","BMCONA","GjO",3,4,5,"1F2937","DC2626","sharp empty suit with a red tie adjusting its cuffs","click","Dressed to impress. And to distress.","clothing,fancy"},
 	{"suitcase","BMBIyI","G",1,4,4,"7A4E2D","D2B48C","leather suitcase with straps","thud","Packed for adventure.","container"},
 	{"sukiyaki","IABNGI","KF",4,4,2,"8A3A1E","F2E8C8","simmering iron pot of beef","sizzle","A sweet simmering hot pot.","edible,spicy"},
@@ -398,9 +403,4 @@ return {
 	{"thunder horse","ADDKAA","DgL",6,9,5,"FDE047","1E40AF","stallion of storm clouds with lightning hooves","thunder","Gallops so fast it rumbles.","mythical,mount,storm"},
 	{"thunder kick","KDCAKB","kfL",6,9,2,"FFEB3B","448AFF","kick arc with lightning trail","crack","Zappy footwork.","electric,melee"},
 	{"thunder lizard","ADEJAA","DkL",7,5,7,"1E40AF","FDE047","giant lizard crackling with storms","thunder","Every step is a thunderclap.","storm,reptile"},
-	{"thunder owl","ADCJDB","ALh",7,8,3,"7FD8FF","1C2030","a great horned owl crackling with lightning","screech","Who? You. With lightning.","anime,lightning,summon"},
-	{"thunder punch","FDCAKB","kfL",6,8,2,"FFEB3B","2962FF","glowing fist crackling with arcs","crack","A punch with a power bill.","electric"},
-	{"thunder roar","FDCFOB","kO",5,9,1,"7986CB","FFF9C4","crackling sound wave from the caster","roar","Shouting, but with weather.","electric,loud"},
-	{"thunder slash","FDCHJB","fTL",6,10,1,"FFEB3B","448AFF","zigzag slash of lightning","crack","Fast as lightning. Because it is.","electric,sharp"},
-	{"thunder stag","FDEDAB","keLO",9,3,6,"2E6CE6","EBF8FF","a storm cloud from which a lightning beast dives","thunder","The sky had antlers. Briefly.","anime,ninja,lightning"},
 }

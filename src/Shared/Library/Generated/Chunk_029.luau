@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wedge","JKALJK","O",1,1,6,"8A929B","8E9196","triangular metal wedge","clank","Jammed tight.","tool"},
+	{"wedgie","KMBLNI","lNO",3,6,1,"FFFFFF","EF4444","underpants with hearts stretched up over a flagpole","boing","Hoisted by their own pants.","silly,meme"},
+	{"weed","NGALMI","WSP",1,1,3,"7CB342","C0CA33","scraggly green sprouts","rustle","You can not get rid of them. Ever.","plant,silly"},
+	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
+	{"week","KLBF6B","FNO",3,4,2,"EF4444","22C55E","seven boxes in a row: five grey, two golden","sigh","Five days of Monday. Two days of bliss.","time,meme"},
+	{"weekend","KHCNOI","DF",2,6,3,"FFD54F","81D4FA","sunny happy glow with confetti","yay","No school. All fun.","silly,support"},
 	{"weep","KBBEOJ","dNP",2,3,1,"93C5FD","E0F2FE","wobbly lip under two fountain jets of tears","wail","But I don't WANNA lose.","mood,silly"},
 	{"weeping cherry","NGCCMI","GdFS",2,1,5,"5D4037","F8BBD0","drooping branches of pink blossom","rustle","Weeps flowers. Beautifully.","plant,tree,cute"},
 	{"weeping fig","NGCCMI","GWkS",2,1,5,"8D6E63","2E7D32","small tree with glossy drooping leaves","rustle","Sulks if you move it.","plant,tree"},

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"myrtle","NGCCMI","GWkS",2,1,5,"8D6E63","E91E63","smooth bark, frilly pink flowers","rustle","Frilly. Fierce.","plant,tree"},
+	{"mystery meat","IJBG7G","UjE",4,5,3,"8A6A6A","B9D36A","wobbly grey meatloaf that does something random","splat","Nobody knows. Nobody asks.","goofy,gross,food,random"},
+	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
+	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
 	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
 	{"naan","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","teardrop flatbread, char spots","whoosh","Fluffy, blistered, perfect for scooping.","edible"},
 	{"nacho cheese","IMBLGI","ScN",2,3,3,"F2A62B","F2C24A","bright orange gooey sauce","gloop","Liquid gold, but orange.","edible,sticky,dairy"},
@@ -143,6 +147,7 @@ return {
 	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
 	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
 	{"noob tube","CACAwI","UEeV",5,6,1,"5D6B3A","FFB13B","a chunky launcher lobs three bouncing grenades","thump","Skill issue? No, tube issue.","gaming,shooter,explosive"},
+	{"noodle whip","IMCACD","fHe",3,7,3,"F0CF7A","C0392B","one giant sauce-dripping spaghetti noodle lashing out","slap","Al dente, and it pulls.","kitchen,pull,hook"},
 	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
 	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
 	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},
@@ -398,9 +403,4 @@ return {
 	{"paint splash","KMBFOB","jd",2,7,1,"FF4081","00E5FF","rainbow paint splatter wave","splat","Now everything's colourful.","silly"},
 	{"paint sprayer","JKBFwK","je",2,6,3,"8E9196","F2F2EE","pistol with paint cup","clank","Coats everything. Everything.","tool"},
 	{"paint thinner","BJADJK","M",2,5,1,"BFE6F2","F1C40F","tin with a skull warning","clink","Smells terrible. Is terrible.","hardware"},
-	{"paint tunnel","BMDCnI","GSO",3,1,4,"E8DCC0","2A2A36","a canvas wall with a painted tunnel mouth","splat","Looks like a way through. Isn't.","cartoon,silly,trap"},
-	{"paintball","CMBA3B","jeNP",3,9,2,"22C55E","F472B6","neon paint pellet bursting into a bright splat","splat","Stings a bit. Stains forever.","sport,ranged,silly"},
-	{"paintball gun","CMBAwI","jeN",2,8,3,"24262A","8BC34A","hopper-topped paint blaster","thwip","Splat. Now you're a painting.","sport,silly"},
-	{"paintbrush","BMAAJK","je",1,7,1,"8B5A2B","C0392B","wooden brush with painted tip","clank","Every stroke a masterpiece.","art"},
-	{"painted lady","AMAJFB","jdA",1,5,1,"E8803A","1E1E1E","orange black white spotted wings","flutter","Flies across continents.","insect,cute"},
 }

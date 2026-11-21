@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cream","IMBLGI","SN",2,3,2,"F7F4EC","F2EAD5","pitcher of thick cream","squeak","Rich, white, and pourable.","edible,slippery,silly,dairy"},
+	{"cream cheese","IMBLGI","SNP",2,3,3,"F7F4EC","F2EAD5","smooth white block","gloop","Smooth, spreadable, very sticky.","edible,sticky,dairy"},
 	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
 	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 	{"cream puff","IMBLKI","dSc",2,3,3,"E8C88A","F7F2EC","round puff pastry, cream","chomp","A puff of cream in a pastry cloud.","edible,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"diprotodon","AMDJAA","DkO",6,4,8,"8A6A4A","C8A87A","rhino-sized wombat","roar","A wombat the size of a car.","mammal,extinct,ancient,heavy"},
 	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
 	{"director","LMCJNA","jOh",4,4,4,"111827","FBBF24","beret, megaphone, folding chair, clapperboard","clack","CUT! Do it again, but with more dying.","art,movie"},
-	{"dirk","CKBHrK","fT",3,9,3,"8A929B","5A3A1E","long thin dagger","shing","A dagger that went to boarding school.","medieval,sharp"},
-	{"dirt","FEBDOB","jN",2,5,2,"6B4F34","A1856A","kicked-up brown clod burst","thud","Dirt in the eyes. Classic move.","silly"},
 }

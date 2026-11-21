@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skill issue","KIBAKB","iSe",4,9,3,"FF4D6D","2B2D42","a red down-arrow tag and a draining skill bar","buzz","It's not the wand. It's you.","meme,internet,debuff"},
+	{"skin","BMCIyE","GFa",2,3,4,"EBC4A4","F6D9C2","stretchy sheet of skin with goosebumps","squish","Your largest organ. Now your largest shield.","body,defense"},
+	{"skink","AMBJAA","Cf",2,7,2,"8A6A4A","2A4AD8","sleek lizard, bright blue tongue","hiss","Shows its blue tongue. Rude.","reptile"},
+	{"skirt","BFBI5K","UIa",2,6,3,"EC4899","F9A8D4","pink skirt twirling like a spinning top","swish","Twirl defence. Surprisingly solid.","clothing"},
+	{"skis","BCCOJI","D",2,8,3,"C0392B","F2F2EE","two long skinny boards with bindings","bonk","Swoosh! Downhill only.","sport,winter"},
 	{"skorpiovenator","AMDJBA","DkfT",6,6,7,"8A3A2A","D8A07A","bumpy-skulled theropod","roar","Scorpion hunter. Bumpy head.","dinosaur,extinct,reptile,predator"},
 	{"skua","ABBJDB","DAbB",2,7,2,"6A4A2A","C8A07A","brown pirate seabird","squawk","Steals food from other birds. Pirate.","bird,ocean"},
 	{"skull","BIBA3B","UjeO",4,7,5,"F1EBDD","2B2B2B","grinning skull, dark sockets, chattering jaw","chatter","Alas, poor you.","spooky,undead,body"},
@@ -398,9 +403,4 @@ return {
 	{"spiked club","CMCHtK","kfT",4,5,4,"8B5A2B","8A929B","wooden club studded with nails","bonk","A club with opinions.","primitive"},
 	{"spiked gauntlet","CKBHJK","kfT",4,7,6,"3A3F45","8A929B","armoured glove with knuckle spikes","shing","Hi-five of pain.","sharp,armor"},
 	{"spiked mace","CKCHtK","kfT",5,5,6,"3A3F45","5B6168","mace with long spikes","shing","Prickly and persuasive.","sharp"},
-	{"spiked shield","BKCIyI","GkT",4,4,7,"3A3F45","8A929B","shield studded with spikes","clang","Defensive and offensive. Mostly offensive.","armor,defense"},
-	{"spin","KFCN5K","kf",4,8,2,"B3E5FC","FFFFFF","spinning ring of wind around caster","whirr","Dizzy for you, dizzier for them.","silly"},
-	{"spin cycle","KBCN5K","jl",4,7,2,"4FC3F7","FFFFFF","sudsy spinning water whirl","whirr","Wash, rinse, dizzy.","aquatic,silly"},
-	{"spin jump","KFBOKK","UDk",3,9,2,"7FD8FF","FFE45C","a high corkscrew jump that bonks a head and bounces","boing","Your head was a platform. Thanks.","game,platformer,mobility"},
-	{"spin the wheel","KLCN5K","jV",4,6,2,"FF4081","FFEB3B","giant colourful wheel spinning above","tick","Round and round. Where it lands...","luck,chaos"},
 }

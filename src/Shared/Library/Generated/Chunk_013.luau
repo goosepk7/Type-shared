@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"herring","ABAJEC","dPhB",1,6,1,"B8C4D0","4A6A8A","small silver fish, shoals","splash","Travels in million-fish crowds.","fish,aquatic"},
+	{"heterodontosaurus","AMBJAA","dkT",3,5,6,"8A6A4A","D8B88A","tiny dino with fangs","honk","Plant eater with fangs. Confusing.","dinosaur,extinct,reptile"},
+	{"hex","KIBAKB","jiN",4,7,1,"6A1B9A","B2FF59","spinning purple hexagon glyph","cackle","Bad luck delivered by express mail.","spooky,magic"},
 	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
 	{"hex cauldron","BJCL2I","ESN",6,3,5,"2E2E34","6EE650","a black iron cauldron of green brew that boils over","bubble","Recipe: one eye of newt, one very bad mood.","monster,folklore,spooky,witch"},
 	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
@@ -295,7 +298,7 @@ return {
 	{"ice cream man","LCCJNA","dJc",3,5,4,"F8FAFC","F9A8D4","white hat, bell, cone","jingle","Plays a jingle. Everyone follows.","food,sweet"},
 	{"ice cream parlor","ECCNII","dScN",2,1,4,"F8BBD0","80DEEA","pastel shop with a giant cone sign","ding","Free samples. Enemies cannot resist.","sweet,silly"},
 	{"ice cream sandwich","ICBAKJ","JeN",3,5,2,"3A2416","F7F2EC","two dark cookies, white cream","squish","Cold cream, cookie armour.","edible,frozen,sweet"},
-	{"ice cream scoop","BCAHJK","Jf",1,7,3,"C9CED4","8E9196","round scooping spoon","clang","Perfect spheres of chill.","kitchen,household"},
+	{"ice cream scoop","ICCG3F","SeN",3,4,4,"F6C8D4","FFF0D6","giant scoop of strawberry ice cream with a wafer","splat","Splat. Brrr. Sticky.","kitchen,lob,zone,edible,sweet"},
 	{"ice cream social","ICCNGI","JcN",3,3,2,"F7E7CE","F2A6C8","table of scoops","crackle","Cold treats, warm friends.","edible,frozen,sweet"},
 	{"ice cream sundae","ICBNGI","JScN",3,3,2,"F7E7CE","B0101E","glass dish, scoops, sauce, cherry","crackle","Everything good, in a tall glass.","edible,frozen,sweet"},
 	{"ice cream truck","DMDKHL","dkcg",4,5,6,"F7C6D9","8FD3F4","boxy van, giant cone on roof, serving window","jingle","Plays a jingle that no one can resist.","sweet,silly"},
@@ -400,7 +403,4 @@ return {
 	{"inertia","FLCOKI","G",3,2,6,"8495B5","D5DCEA","heavy glowing stance aura","hum","Objects at rest stay at rest.","heavy"},
 	{"infect","KJBAKB","MP",4,7,1,"8BC34A","33691E","green germ-shaped glob","squelch","Spreads like a cold in class.","toxic"},
 	{"inferno","FAEN5K","KkSP",8,5,5,"B3261E","FF9F1C","towering ring of fire, swirling smoke crown","roar","The floor is lava, and also the walls.","fire"},
-	{"inferno beam","FADBKI","KTP",8,7,1,"FF3D00","FFEB3B","roaring wide beam of fire","roar","A flamethrower, upgraded.","fire"},
-	{"inflatable boat","DBBKHC","UDkgB",3,7,3,"FF7043","37474F","rubber tube boat with outboard","splash","Bouncy, speedy, a bit squeaky.","vehicle,aquatic"},
-	{"inflatable flamingo","BBDJDJ","UdB",1,3,2,"FF3EA5","F2F2EE","giant pink pool floatie bird","splash","Floaty fabulous.","beach,silly"},
 }

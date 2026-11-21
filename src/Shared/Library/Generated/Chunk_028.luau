@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"twin swords","CKCHJK","fTV",6,8,4,"C9CED4","1F2F55","matched pair of curved swords","shing","Double the slash, double the flair.","fantasy,sharp"},
+	{"twinkle","FHAEOJ","dF",1,5,1,"FFF59D","FFFFFF","tiny twinkling star sparks","chime","Twinkle twinkle.","cute"},
+	{"twins","LMCJNA","jV",3,6,4,"F472B6","60A5FA","two identical kids","ding","Two of them. Twice the trouble.","family"},
+	{"twinstep fusion","KHCOKI","DWkf",8,7,4,"FFE7A0","5FE0D0","you and a light twin dance, then fold into one","warp","Two steps, one fighter. Mind the fingertips.","anime,dance,buff,transformation"},
+	{"two liter bottle","IBCFKI","EkI",4,7,1,"3A1A0C","3E8E2B","big plastic soda bottle","fizz","A pressurized fizz cannon.","edible,drink,fizzy"},
+	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
 	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
 	{"tylosaurus","ABEJEC","DkfHB",8,6,7,"3A5A6A","C8D0D8","long mosasaur with ram snout","roar","Rammed prey with its nose.","extinct,reptile,aquatic,ocean"},
 	{"typhon","AFFJNA","kleP",9,4,9,"1C1917","EA580C","storm giant with serpent legs and wings","roar","Father of monsters. Storm in a bad mood.","mythical,giant,boss,danger"},
@@ -397,10 +403,4 @@ return {
 	{"weddell seal","ACCJEC","UfB",3,5,4,"4A4A50","B8B8C0","spotted dark seal","bark","Sings underwater in Antarctica.","mammal,aquatic"},
 	{"wedding","KHDNII","FcPO",4,2,3,"FFFFFF","F9A8D4","flower arch, bells, flying rice and a towering cake","bell","Speak now or forever hold your pieces.","party"},
 	{"wedding cake","IMEJII","Gdkc",6,1,7,"F7F4EC","E8C8D0","towering five-tier white cake","thud","Five tiers of pure distraction.","edible,giant,silly,party"},
-	{"wedge","JKALJK","O",1,1,6,"8A929B","8E9196","triangular metal wedge","clank","Jammed tight.","tool"},
-	{"wedgie","KMBLNI","lNO",3,6,1,"FFFFFF","EF4444","underpants with hearts stretched up over a flagpole","boing","Hoisted by their own pants.","silly,meme"},
-	{"weed","NGALMI","WSP",1,1,3,"7CB342","C0CA33","scraggly green sprouts","rustle","You can not get rid of them. Ever.","plant,silly"},
-	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
-	{"week","KLBF6B","FNO",3,4,2,"EF4444","22C55E","seven boxes in a row: five grey, two golden","sigh","Five days of Monday. Two days of bliss.","time,meme"},
-	{"weekend","KHCNOI","DF",2,6,3,"FFD54F","81D4FA","sunny happy glow with confetti","yay","No school. All fun.","silly,support"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spiked shield","BKCIyI","GkT",4,4,7,"3A3F45","8A929B","shield studded with spikes","clang","Defensive and offensive. Mostly offensive.","armor,defense"},
+	{"spin","KFCN5K","kf",4,8,2,"B3E5FC","FFFFFF","spinning ring of wind around caster","whirr","Dizzy for you, dizzier for them.","silly"},
+	{"spin cycle","KBCN5K","jl",4,7,2,"4FC3F7","FFFFFF","sudsy spinning water whirl","whirr","Wash, rinse, dizzy.","aquatic,silly"},
+	{"spin jump","KFBOKK","UDk",3,9,2,"7FD8FF","FFE45C","a high corkscrew jump that bonks a head and bounces","boing","Your head was a platform. Thanks.","game,platformer,mobility"},
+	{"spin the wheel","KLCN5K","jV",4,6,2,"FF4081","FFEB3B","giant colourful wheel spinning above","tick","Round and round. Where it lands...","luck,chaos"},
 	{"spinach","IGBOKI","WFk",4,5,3,"2E6B2A","4E8E3A","pile of dark round leaves","chomp","Instant muscles. Results may vary.","edible,vegetable,healthy"},
 	{"spinach dip","IMBOKI","WF",3,5,3,"3E7A2B","F2E8C8","creamy green dip","chomp","Creamy spinach strength.","edible"},
 	{"spinifex","NGBLMI","STN",2,1,4,"C9A55A","9E9D24","spiky hummocks of desert grass","rustle","Spiky porcupine grass. Do not sit.","plant,sharp"},
@@ -398,9 +403,4 @@ return {
 	{"sugar cube","IMAAKK","ceO",3,7,6,"F7F7F7","E8E8E8","small white crystal cube","bonk","A tiny sweet brick.","edible"},
 	{"sugar glider","AMBJAB","UAf",2,6,2,"A8A4A0","1E1A18","huge eyes, gliding membrane, stripe","chirp","Pocket-sized glider. Loves fruit.","mammal,marsupial,cute"},
 	{"sugar plum","IMBLKI","dSc",2,3,3,"8A2E7E","F7F2F0","sugar-coated round candy","chomp","Dancing in your dreams.","edible,sweet,holiday"},
-	{"sugar rush","IMBOKI","Dj",3,9,2,"F2A6C8","F2E23A","swirl of candy and sparks","fizz","Zoom! Zoom! Crash.","edible,drink,silly"},
-	{"sugar skull","IMBLKI","dSc",2,3,3,"F7F7F2","E8434F","decorated white skull candy","chomp","A sweet celebration of memory.","edible,sweet,candy,holiday"},
-	{"sugar snap peas","IGAELB","eVP",2,7,1,"7DBE3A","5E9E3A","plump crunchy pods","pitter","Snap! Crunch! Sweet!","edible"},
-	{"sugar syrup","IMBLGI","SNP",2,3,3,"F7F2E8","E8E0D0","clear sticky syrup","gloop","Sugar, but liquid.","edible,sticky"},
-	{"sugarcane","NGCLMI","WScHN",2,1,4,"AED581","E6EE9C","tall jointed sweet green stalks","rustle","Sweet stalks. Sticky situation.","plant"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paint tunnel","BMDCnI","GSO",3,1,4,"E8DCC0","2A2A36","a canvas wall with a painted tunnel mouth","splat","Looks like a way through. Isn't.","cartoon,silly,trap"},
+	{"paintball","CMBA3B","jeNP",3,9,2,"22C55E","F472B6","neon paint pellet bursting into a bright splat","splat","Stings a bit. Stains forever.","sport,ranged,silly"},
+	{"paintball gun","CMBAwI","jeN",2,8,3,"24262A","8BC34A","hopper-topped paint blaster","thwip","Splat. Now you're a painting.","sport,silly"},
+	{"paintbrush","BMAAJK","je",1,7,1,"8B5A2B","C0392B","wooden brush with painted tip","clank","Every stroke a masterpiece.","art"},
+	{"painted lady","AMAJFB","jdA",1,5,1,"E8803A","1E1E1E","orange black white spotted wings","flutter","Flies across continents.","insect,cute"},
 	{"painted turtle","AMBJUA","GNB",2,2,8,"3A4A3A","E8301E","shell with red and yellow lines","hiss","Painted by nature.","reptile,armored"},
 	{"pair","KMBONA","QFV",3,5,3,"EC4899","3B82F6","two matching socks dancing arm in arm","pop","Two of them. For twice the problem.","silly"},
 	{"pajama kid","LMBJNG","Ud",2,6,2,"60A5FA","FDE68A","footie pajamas, teddy bear","giggle","Pillow fight champion.","cute,silly"},
@@ -398,9 +403,4 @@ return {
 	{"pixel knight","AKBJYA","Qfh",4,6,5,"C48448","743A8C","squat bronze voxel knight in a kettle hat, lantern eyes","clang","For the high score!","game,arcade,pet"},
 	{"pixel ship","OHAMgE","Ae",3,8,4,"E8EDF2","FF4F6E","tiny voxel starfighter over your shoulder","pew","Pew. Pew pew.","game,arcade,pet"},
 	{"pixel snake","AHCJCD","QS",4,7,3,"7CFF6B","1FA34A","glowing voxel snake with a stinging trail","blip","Don't touch the tail.","game,arcade,trail"},
-	{"pixie swarm","ALBJLB","jAP",3,9,1,"F0ABFC","FDE68A","cloud of glittering winged sprites","chime","Glitter everywhere. You'll find it for years.","fairy,swarm"},
-	{"pixiu","AHCJAA","GQb",4,6,6,"D97706","FDE68A","winged lion with antler horn","roar","Eats gold. Never shares.","mythical,lucky"},
-	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},
-	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
-	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
 }
