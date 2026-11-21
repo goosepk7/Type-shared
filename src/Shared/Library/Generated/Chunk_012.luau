@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
+	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
 	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
 	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
 	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
@@ -401,6 +403,4 @@ return {
 	{"herrerasaurus","AMDJBA","DkfT",6,6,7,"7A5A3A","C8A07A","early predator","roar","One of the first big meat eaters.","dinosaur,extinct,reptile,predator,ancient"},
 	{"herring","ABAJEC","dPhB",1,6,1,"B8C4D0","4A6A8A","small silver fish, shoals","splash","Travels in million-fish crowds.","fish,aquatic"},
 	{"heterodontosaurus","AMBJAA","dkT",3,5,6,"8A6A4A","D8B88A","tiny dino with fangs","honk","Plant eater with fangs. Confusing.","dinosaur,extinct,reptile"},
-	{"hex","KIBAKB","jiN",4,7,1,"6A1B9A","B2FF59","spinning purple hexagon glyph","cackle","Bad luck delivered by express mail.","spooky,magic"},
-	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
 }

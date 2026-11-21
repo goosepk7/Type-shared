@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"painted turtle","AMBJUA","GNB",2,2,8,"3A4A3A","E8301E","shell with red and yellow lines","hiss","Painted by nature.","reptile,armored"},
+	{"pair","KMBONA","QFV",3,5,3,"EC4899","3B82F6","two matching socks dancing arm in arm","pop","Two of them. For twice the problem.","silly"},
 	{"pajama kid","LMBJNG","Ud",2,6,2,"60A5FA","FDE68A","footie pajamas, teddy bear","giggle","Pillow fight champion.","cute,silly"},
 	{"pajamas","BMCONI","FN",1,3,1,"87CEEB","F2F2EE","cosy cloud-print pyjamas","swish","Sleepy power-up.","clothing"},
 	{"pakicetus","AMBJAA","DQfh",3,7,4,"8A7A5A","D8C8A8","wolf-like whale ancestor","howl","Great-grandpa of whales. Looks like a dog.","mammal,predator,wild,extinct,ancient"},
@@ -48,6 +50,7 @@ return {
 	{"paper birch tree","NGDCMI","GWkS",3,1,6,"FAFAFA","9CCC65","bright white peeling bark","rustle","Bark you can write on.","plant,tree"},
 	{"paper clip","BMAAJK","Te",1,8,1,"C9CED4","C9CED4","bent wire loop","tap","Holds things together. Barely.","office"},
 	{"paper dragon","AFBJAB","AT",3,8,1,"F8FAFC","DC2626","folded paper dragon","swish","Papercuts. So many papercuts.","silly"},
+	{"paper route","BMBAGK","keP",3,5,4,"EFE6CF","D23B2E","three rolled newspapers with red rubber bands, flung in a fa","whoosh","Extra! Extra! Thwack!","transit,projectile,silly"},
 	{"paper shredder","BMCLII","HV",3,1,5,"24262A","8E9196","slot box with whirring teeth","whirr","Feed it. It's always hungry.","office"},
 	{"paper towel","BMALKK","i",1,5,1,"F2F2EE","F2F2EE","roll of paper towels","clang","Soaks up spills. And spells.","kitchen,household"},
 	{"paper wasp","AJAJLB","ATMP",2,7,1,"B8701E","F2D82A","slim wasp on paper nest","buzz","Builds paper houses.","insect,swarm,venomous"},
@@ -400,7 +403,4 @@ return {
 	{"pixiu","AHCJAA","GQb",4,6,6,"D97706","FDE68A","winged lion with antler horn","roar","Eats gold. Never shares.","mythical,lucky"},
 	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},
 	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
-	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
-	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
-	{"pizza cutter","BMCFJF","Uke",4,7,3,"C9CED4","C0392B","giant steel pizza cutter wheel rolling along the ground","clang","Eight slices, one bounce.","kitchen,roll,projectile,ricochet"},
 }

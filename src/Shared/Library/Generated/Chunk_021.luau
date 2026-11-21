@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"punching bag","BMCCII","Gd",1,1,6,"C0392B","24262A","hanging leather cylinder","bonk","Takes the hits. Keeps smiling.","sport"},
+	{"punching machine","OKCL1I","kO",4,3,6,"C0392B","C9CED4","wall panel with spring boxing gloves","clank","Pow pow pow! From the wall!","defense,silly"},
+	{"punching tree","NGECMI","GkSf",6,2,8,"4E342E","2E7D32","gnarled tree swinging heavy branches","chime","Do not park next to it.","plant,magic,mythical,silly"},
 	{"punishment","KICLII","SNO",4,1,6,"78716C","DC2626","small chair in a corner under a spotlight, clock ticking","tick","Go to your room. And think about what you typed.","school,silly"},
 	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
 	{"pupfish","AAAJEC","dB",1,6,1,"3A6AE8","E8E0D0","tiny desert pool fish","splash","Lives in the hottest pools.","fish,aquatic,desert"},
@@ -219,6 +222,7 @@ return {
 	{"red hot poker","NACNMI","KdFS",3,1,2,"FF5722","FFEB3B","flame-coloured torch spikes","rustle","Looks hot. Is just a flower.","plant,flower"},
 	{"red kangaroo","AMDJAG","UkfO",6,6,2,"B85A30","F2E2D0","huge red kangaroo boxing","chirp","Biggest boxer in the outback.","mammal,marsupial"},
 	{"red licorice","IMBHJI","fHN",3,5,4,"C8102E","E8434F","twisted red rope","bonk","The red rope of sweetness.","edible,silly,candy"},
+	{"red light","OMCNII","SNO",3,2,6,"E53935","FFC107","a traffic light that flicks amber then red","beep","Red means stop. Moving means ouch.","transit,zone,trap,silly"},
 	{"red lightning","FDDAKB","KeLO",8,10,1,"FF1744","FFCDD2","blood-red forked bolt","crack","Regular lightning, but angry.","electric"},
 	{"red oak","NGECMI","GWkS",4,1,8,"5D4037","C62828","tall oak turning deep red","rustle","Red leaves. Red rage.","plant,tree"},
 	{"red onion","IJBDOJ","jS",3,5,1,"7A2A4E","C88AA8","purple layered bulb","puff","Purple tears, maximum drama.","edible,vegetable"},
@@ -399,8 +403,4 @@ return {
 	{"robot minion","OKAJNA","dQh",1,6,3,"FACC15","1F2937","tiny round yellow helper bot","beep","Small. Loyal. Beeps a lot.","robot,cute"},
 	{"robot octopus","OKCJCC","HeB",4,5,5,"94A3B8","F472B6","steel octopus with grabber claws","whir","Eight grabby arms. Zero chill.","robot,aquatic"},
 	{"robot overlord ai","OKENLA","eLh",8,3,7,"1F2937","EF4444","crowd of red-eyed robots marching","beep","The toasters have unionized.","robot,swarm,boss"},
-	{"robot penguin","OKBJDA","dN",2,4,5,"111827","F8FAFC","waddling penguin robot","beep","Waddles into battle. Adorably.","robot,cute"},
-	{"robot pirate","OKCJNA","feb",5,6,6,"57534E","DC2626","robot with hook claw and eyepatch screen","clank","Searching for buried data.","robot,pirate,silly"},
-	{"robot queen","OKDJNA","Feh",7,3,7,"E5E7EB","C084FC","elegant silver robot with crown antennae","hum","All robots answer to her.","robot,royal"},
-	{"robot referee","OKCJNA","GO",3,5,5,"111827","F8FAFC","striped robot with whistle speaker","whistle","Flags your foul. Beeps loudly.","robot,sport"},
 }

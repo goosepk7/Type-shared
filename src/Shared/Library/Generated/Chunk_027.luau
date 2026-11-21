@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thunder owl","ADCJDB","ALh",7,8,3,"7FD8FF","1C2030","a great horned owl crackling with lightning","screech","Who? You. With lightning.","anime,lightning,summon"},
+	{"thunder punch","FDCAKB","kfL",6,8,2,"FFEB3B","2962FF","glowing fist crackling with arcs","crack","A punch with a power bill.","electric"},
+	{"thunder roar","FDCFOB","kO",5,9,1,"7986CB","FFF9C4","crackling sound wave from the caster","roar","Shouting, but with weather.","electric,loud"},
+	{"thunder slash","FDCHJB","fTL",6,10,1,"FFEB3B","448AFF","zigzag slash of lightning","crack","Fast as lightning. Because it is.","electric,sharp"},
+	{"thunder stag","FDEDAB","keLO",9,3,6,"2E6CE6","EBF8FF","a storm cloud from which a lightning beast dives","thunder","The sky had antlers. Briefly.","anime,ninja,lightning"},
+	{"thunder strike","FDDAKB","kLO",8,9,2,"FFEA00","3D5AFE","bolt slamming down with a ring of thunder","boom","Lightning that hits like a hammer.","electric"},
 	{"thunder sword","CDCHrK","fLO",7,7,4,"F1C40F","1F2F55","zig-zag blade crackling with sparks","shing","Every swing is a little thunderclap.","fantasy,electric"},
 	{"thunder wall","KDDCnI","GLO",5,4,5,"FFEA00","536DFE","crackling fence of vertical lightning","buzz","Do not touch the zappy wall.","electric,defence"},
 	{"thunder wave","FDDFOB","kIO",6,9,1,"5C6BC0","FFF59D","ring of thunder rippling outward","boom","BOOM. Sorry, was that loud?","electric,loud"},
@@ -224,7 +230,7 @@ return {
 	{"trading card","BLAAJK","Teh",3,8,1,"FACC15","60A5FA","glinting foil card spinning like a blade","swish","Mint condition. Do NOT bend it.","game,shiny"},
 	{"tradition","KECOII","GSh",3,2,6,"7C2D12","D4AF37","maypole with ribbons and elders nodding sternly","bell","We have always done it this way. Nobody knows why.","ancient"},
 	{"traffic cone barricade","EMCCnI","Gdk",3,3,7,"F07A1A","F2F2EE","row of striped traffic cones and a sawhorse barrier","clonk","Detour! This way to defeat.","transit,road,wall"},
-	{"traffic jam","EMENII","GSN",3,1,7,"E53935","FFC107","endless line of honking cars","horn","Nobody moves. Ever.","structure,silly"},
+	{"traffic jam","EMDNII","GSN",3,1,5,"2BB3A3","F28A2E","a ring of little honking cars bumper to bumper","horn","Nobody moves. Everybody honks.","transit,zone,silly"},
 	{"traffic lane","BMDNeL","Dk",5,9,1,"FFD23F","3A86FF","a toy road and two boxy toy cars","honk","Look both ways.","game,arcade,knockback"},
 	{"traffic light","OHCMmI","NO",2,1,6,"24262A","2E8B57","three-light signal on pole","clank","Red means STOP. Everyone.","mechanical"},
 	{"tragedy","KBCF6B","iNO",4,4,1,"1E3A8A","9CA3AF","weeping theatre mask and a single wilting rose","wail","Dropped the ice cream. Curtain. Weep.","art,mood"},
@@ -397,10 +403,4 @@ return {
 	{"twilight","FICNOI","ZSN",4,4,3,"5C4B8A","F2A65A","purple-orange dusk haze","hum","Not day, not night, very moody.","spooky"},
 	{"twilight zone","MIFNII","jZS",5,1,8,"1A237E","00E5FF","dim blue depths with glowing creatures","rumble","Strange lights in the deep.","aquatic,spooky"},
 	{"twin fang","KGCHKI","Dkf",6,9,1,"5C8FB0","D9E6EE","a low pounce into four raking cuts from two jagged blades","slash","Pig assault! (It isn't a pig.)","anime,sword,beast,breathing"},
-	{"twin swords","CKCHJK","fTV",6,8,4,"C9CED4","1F2F55","matched pair of curved swords","shing","Double the slash, double the flair.","fantasy,sharp"},
-	{"twinkle","FHAEOJ","dF",1,5,1,"FFF59D","FFFFFF","tiny twinkling star sparks","chime","Twinkle twinkle.","cute"},
-	{"twins","LMCJNA","jV",3,6,4,"F472B6","60A5FA","two identical kids","ding","Two of them. Twice the trouble.","family"},
-	{"twinstep fusion","KHCOKI","DWkf",8,7,4,"FFE7A0","5FE0D0","you and a light twin dance, then fold into one","warp","Two steps, one fighter. Mind the fingertips.","anime,dance,buff,transformation"},
-	{"two liter bottle","IBCFKI","EkI",4,7,1,"3A1A0C","3E8E2B","big plastic soda bottle","fizz","A pressurized fizz cannon.","edible,drink,fizzy"},
-	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
 }

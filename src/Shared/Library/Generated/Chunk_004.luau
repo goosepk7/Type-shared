@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
 	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
 	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
@@ -249,6 +250,7 @@ return {
 	{"cabin boy","LBBJNA","dQ",2,7,2,"0369A1","F8FAFC","barefoot sailor kid with bucket","ding","Mops decks. Dreams big.","pirate"},
 	{"cabinet","BMCC0I","G",1,1,7,"F2F2EE","8B5A2B","tall cabinet with doors","thud","Storage, but sturdy.","furniture,household"},
 	{"cable car","DFCKHJ","lg",3,4,5,"E53935","B0BEC5","box cabin dangling from a cable","hum","Goes up the mountain. Slowly.","mechanical,vehicle,land"},
+	{"cable car ride","OFDOGB","AkY",3,5,3,"E53935","5A6472","a red cable car gliding along a cable","whoosh","Mind the gap. Mind the drop.","transit,movement,silly"},
 	{"cacao tree","NGCCMI","GWFkSc",3,1,6,"5D4037","FF8F00","small tree with big pods on the trunk","rustle","Where chocolate comes from. Respect it.","plant,tree"},
 	{"cackle","KIBFOB","ji",3,6,1,"6A1B9A","76FF03","green-violet laughter rings","cackle","Heh heh heh heh!","spooky,silly"},
 	{"cactus","NECCMI","GST",4,1,7,"43A047","FFF59D","ribbed green column with arms and spines","thud","Do not hug. Learned it the hard way.","plant,desert,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"caramel apple","IMBLGI","ScNP",2,3,3,"B5651D","C8262B","apple on a stick, glossy caramel shell","gloop","Sticky, crunchy, impossible to eat politely.","edible,sticky,sweet"},
 	{"caramel chews","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","wrapped golden squares","gloop","Chewy squares. Teeth trap.","edible,sticky,candy"},
 	{"caramel corn","IMBGKF","EN",4,6,1,"C68E3A","F2D08A","golden clumps of popcorn","pop","Crunch, stick, repeat.","edible,explosive,candy"},
-	{"caramel popcorn","IMBGKF","ENP",4,6,1,"D9A04A","F7E8C8","glossy golden popcorn clusters","pop","Sweet, sticky, and still explodes.","edible,explosive,sweet"},
-	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
 }

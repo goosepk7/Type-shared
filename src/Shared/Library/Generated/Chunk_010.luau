@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flame blade","FACHrB","Kf",6,7,4,"FF6D00","FFE57F","sword made of roaring fire","whoosh","A sword that is also a campfire.","fire,sharp"},
+	{"flame bloom","NABAbI","UKEe",5,8,2,"FF6A1F","FFD23F","fiery flower blooms, then bouncing fireballs","whoosh","Pick a flower. Throw the fire.","game,platformer,power up,fire"},
 	{"flame dancer","LACJNK","Kj",4,7,3,"F97316","111827","spinning fire poi","whoosh","Dazzling. Also burning.","circus,fire"},
 	{"flame jet","FACBKI","KIe",5,9,1,"FF6D00","FFF3E0","tight roaring jet of blue-orange flame","hiss","Precision toasting.","fire"},
 	{"flame salamander","AABJAA","KfB",3,6,3,"EA580C","FDE047","small lizard with flame crest","hiss","Lives in a campfire. Very cozy.","reptile,fire,elemental"},
@@ -401,6 +403,4 @@ return {
 	{"gazebo","EMCCII","GS",2,1,4,"F5F5F5","7CB342","eight-sided open hut with pointed roof","thud","Nice spot for a picnic. And a siege.","structure,building,cute"},
 	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
 	{"gazpacho","ICBOGI","JF",3,4,3,"C8302B","7DBE3A","cold red soup bowl","slurp","Cold soup. Hot debate.","edible,warm,healthy"},
-	{"gear","OKBAKK","UTe",2,6,6,"B58A3A","A86F32","toothed metal wheel","hum","Spinning tooth disc of mild doom.","mechanical"},
-	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 }
