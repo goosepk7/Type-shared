@@ -56,7 +56,7 @@ return {
 	{"sling staff","CMCAzK","ke",3,6,3,"8B5A2B","6B4226","long staff with sling end","shing","Lobs stones over walls.","medieval,ranged"},
 	{"slingshot turret","OMDMxI","Uke",5,4,5,"8B5A2B","6B4226","huge Y-frame with rubber band","clank","Pull back. Let fly. Boing.","defense,mechanical"},
 	{"slingstone","CEAAKK","ke",1,9,3,"8C8C88","8E9196","smooth river stone","shing","Small rock. Big story.","fantasy,sharp"},
-	{"slinky","BKBJKG","Ud",1,4,2,"C9CED4","DDE3E8","coiled walking spring","squeak","Walks downstairs all by itself.","toy"},
+	{"slinky","BKCAKG","Ue",3,4,3,"E8484A","4F8FD6","giant rainbow coil spring flopping end over end","squeak","It walks downstairs all by itself. Onto you.","household,toy"},
 	{"slip","KBBLII","NO",2,6,1,"81D4FA","FFFFFF","shiny slick floor patch","whee","Banana-peel physics, no banana.","silly"},
 	{"slipper lobster","ABBJRA","GfT",2,4,5,"8A6A4A","C8A07A","flat shovel-headed lobster","clack","A lobster that looks like a slipper.","crustacean,aquatic,armored,silly"},
 	{"slippers","BMBONI","dF",1,4,1,"F06292","F2F2EE","fluffy bunny slippers","swish","Comfort is a superpower.","clothing,cute"},

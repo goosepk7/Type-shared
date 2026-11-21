@@ -110,7 +110,7 @@ return {
 	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
 	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
 	{"rubber","BMBI3G","GUa",2,6,6,"1F2937","F472B6","stretchy black sheet snapping back like a trampoline","boing","I am rubber. You are glue.","toy,bouncy"},
-	{"rubber band","BMAAJK","eO",1,9,1,"D2B48C","D2B48C","stretchy loop","tap","Snap! Right on the wrist.","office"},
+	{"rubber band","BMBAJK","Ue",3,9,2,"C98A52","E3A86E","a giant stretched rubber band snapping off walls","snap","Thwap. Off the wall. Thwap.","household,office"},
 	{"rubber band ball","BMBG3K","Ue",2,7,3,"D2B48C","C0392B","ball of a thousand bands","tap","Bounces like it's angry.","office"},
 	{"rubber band gun","CMBAwI","eO",1,9,2,"8B5A2B","D2B48C","wooden clothespin pistol","thwip","Snap! Right on the nose.","toy,silly"},
 	{"rubber chicken","CMBHJK","jdf",1,7,2,"F1C40F","C0392B","floppy squawking rubber chicken","boing","BWAAACK. Comedy damage.","silly"},

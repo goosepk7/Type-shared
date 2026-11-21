@@ -196,7 +196,7 @@ return {
 	{"tapas","IMAELB","FeP",2,7,1,"C8302B","E8B860","many small plates","pitter","A dozen little plates of joy.","edible,sweet"},
 	{"tape dispenser","BMALJK","N",1,3,4,"24262A","BFE6F2","weighted tape holder","tap","Rrrrip.","office"},
 	{"tape gun","BMBLwK","NO",1,6,3,"C0392B","C9CED4","pistol grip tape dispenser","tap","Rrrrrip! Wrapped.","office,sticky"},
-	{"tape measure","JKAAJK","He",1,7,3,"F1C40F","24262A","coil case with metal tape","clank","Shoots out. Snaps back. Ouch.","tool,silly"},
+	{"tape measure","JKBHJK","kf",3,8,2,"F4C21B","24262A","yellow case flicking out a long steel tape with a brass hook","snap","Measure twice, whip once.","household,tool,toolbox"},
 	{"tapejara","AMCJDB","DdAT",4,8,4,"6A5A3A","E8401E","giant colorful head sail","screech","Wears a giant colorful sail hat.","pterosaur,extinct,reptile"},
 	{"tapeworm","AMAJTD","CiP",1,3,1,"F2EEE0","E8D8B0","long flat ribbon worm","squelch","Rude houseguest.","bug"},
 	{"tapir","AMCJAA","DkIB",4,4,8,"2A2624","E6E2DC","pig-like, short trunk, black-white saddle","trumpet","Looks like a pig wearing an oreo costume.","mammal,heavy,wild,silly"},

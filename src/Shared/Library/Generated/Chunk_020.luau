@@ -79,7 +79,7 @@ return {
 	{"plumber","LBCJNA","UH",4,6,5,"DC2626","1E3A8A","overalls, cap, plunger, big moustache","splash","Unclogs pipes. Jumps on things.","silly"},
 	{"plumbing","EBCMII","IeN",4,1,5,"B87333","38BDF8","tangle of copper pipes with one joint spraying water","gurgle","The plumber said Tuesday. Which Tuesday? Unknown.","household"},
 	{"plumeria","NGBNMI","dFSc",2,1,2,"FFFFFF","FFEB3B","waxy five-petal tropical star","rustle","Smells like a beach holiday.","plant,flower"},
-	{"plunger","BMBHJK","fHO",1,6,3,"C0392B","7A4E2D","rubber cup on wooden stick","clank","Shloop. Stuck.","silly,bathroom"},
+	{"plunger","JMBAJK","He",3,7,3,"C8282E","C68A4E","red rubber cup on a wooden handle, fired on a rope","pop","THWOP. Come here, you.","household,bathroom,tool"},
 	{"plunger arrow","CMAAJI","deO",1,8,2,"C0392B","24262A","arrow with a toilet plunger tip","twang","Thwock. Stuck.","medieval,ranged,silly"},
 	{"pluot","IGBAKF","Fke",3,6,2,"8A2A4E","E8762B","speckled plum-apricot","splat","Half plum, half apricot, all juice.","edible,fruit,sweet"},
 	{"plus","KHBOKJ","WFV",3,5,2,"22C55E","FFFFFF","chunky green plus sign with a +1 popping out","ding","One more. And one more. And one more.","school,support"},
