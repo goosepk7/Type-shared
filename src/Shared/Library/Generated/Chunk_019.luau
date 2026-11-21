@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"palm grove","NGECMI","GFSe",3,1,6,"8D6E63","43A047","cluster of swaying palm trees","rustle","Shade, coconuts, and a lot of bonking.","plant,tree"},
 	{"palm strike","KLCFOB","kI",5,9,1,"B3E5FC","FFFFFF","palm-shaped force wave","whum","Talk to the hand. It hits.","melee,magic"},
 	{"palm tree","NGDCMI","GkSe",4,1,6,"8D6E63","43A047","tall curved trunk, frond crown, coconuts","rustle","Bonk. Coconut. Bonk.","plant,tree"},
 	{"palmier","IMBAKK","Uke",3,7,2,"D9A04A","F2C870","heart-shaped flaky swirl","whoosh","A pastry shaped like a heart.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
 	{"pizza shield","IMCIII","Ga",3,3,6,"E8B04A","D72B2B","round pizza strapped to arm","thud","Cheese-forward defense.","edible"},
 	{"pizza slice","IMBAKK","cTe",3,7,2,"E8B04A","D72B2B","triangle slice, cheese stretch","whoosh","A triangle of hope.","edible"},
-	{"placoderm","ABCJEC","GDfB",4,7,4,"6A6A6A","B8B0A0","armored ancient fish","splash","Armored fish. Bony and proud.","fish,aquatic,extinct,ancient"},
 }

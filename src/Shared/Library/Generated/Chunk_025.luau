@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spire","EMDMII","GSTe",3,1,6,"9E9E9E","5D5D5D","needle-thin pointed tower","thud","Very pointy. Very tall.","structure,defense,tower"},
 	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 	{"spirit animal","AHCJAA","GQF",4,6,3,"A5F3FC","FDE68A","glowing translucent animal companion","chime","Your inner animal, on loan.","spirit"},
 	{"spirit bear","AHDJAA","Fkf",6,5,6,"F8FAFC","7DD3FC","glowing translucent bear","roar","A bear hug from the other side.","spirit"},
@@ -14,7 +15,7 @@ return {
 	{"spirit medium","LLCJNI","jh",4,4,3,"7C3AED","E0F2FE","candles, scarf, crystal pendant","whisper","Talks to ghosts. Ghosts talk back.","spooky,magic"},
 	{"spirit whale","ALFJEB","AFk",8,2,8,"1E3A8A","A5F3FC","translucent whale swimming through sky","whale","A whale that swims in the clouds.","spirit,giant,cosmic"},
 	{"spit","KBBAKB","de",1,9,1,"B3E5FC","FFFFFF","small glob arc","ptoo","Ptooey! Gross, but effective.","silly,gross"},
-	{"spitball","CMAAKK","je",1,9,1,"F2F2EE","F2F2EE","soggy paper wad","boing","Gross. Effective.","silly"},
+	{"spitball","CBAAKK","eN",2,9,1,"F2F2EE","E85D75","three soggy paper wads blown through a bendy straw","boing","Gross. Effective.","goofy,gross,silly,prank"},
 	{"spitting cobra","AMCJCD","jfMeN",4,6,3,"6A5440","E8C88A","hooded snake spitting venom","hiss","Aims for the eyes. Accurate too.","reptile,venomous"},
 	{"spitting spider","AJBJQA","fMeN",2,6,2,"E8D0A0","1E1E1E","spotted spider spitting glue","skitter","Spits sticky glue.","arachnid,spooky,venomous"},
 	{"spittlebug","AMAJFG","dASP",1,6,1,"8A6A4A","F2F2EE","bug hiding in spit foam","buzz","Lives in a bubble bath.","insect"},
@@ -227,7 +228,9 @@ return {
 	{"stink bomb","CJBDKF","QSMe",4,5,3,"8BC34A","5E7A2B","corked green stink bomb; its cloud chases people","poof","Smells like victory. Mostly socks.","goofy,gross,silly,cloud"},
 	{"stink bug","AJAJFA","jdAMP",1,6,1,"6A5A3A","C8A86A","shield-shaped flat bug","buzz","Smells awful when squished. Avoid.","insect"},
 	{"stink cloud","FJBDOJ","jdN",2,5,1,"C0CA33","827717","yellow-green puff with wavy stink lines","pfft","Everyone leaves. Fast.","silly,toxic"},
+	{"stink eye","KJBBKJ","Ie",3,6,2,"9CCC65","5D4037","a huge squinting eye with a bushy brow glares a beam","ew","You know what you did.","goofy,silly,beam"},
 	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
+	{"stinky cheese","IJBO7I","SMI",3,4,4,"FDD835","9CCC65","a holey wedge of cheese held high in a green stink haze","ew","Aged to imperfection.","goofy,gross,silly,aura"},
 	{"stinky feet","KJBDOJ","jM",2,4,1,"C0CA33","FFF59D","green wavy stink lines from shoes","whiff","Take off your shoes. Everyone faints.","silly,gross"},
 	{"stinky tofu","IJBDOJ","jSMP",3,3,2,"8A6A3A","C8A070","fried tofu cubes, pungent","whiff","The stinkiest snack. Fans swear by it.","edible,smelly"},
 	{"stir","KFBN5K","jHN",3,6,1,"C4B5FD","F8FAFC","wooden spoon whirling everything into a swirl","swish","Stirring the pot. Literally and socially.","kitchen"},
@@ -400,7 +403,4 @@ return {
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
 	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
-	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
-	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
-	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
 }

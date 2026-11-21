@@ -256,7 +256,7 @@ return {
 	{"cooler","BCCC2I","GJ",1,1,5,"47D7E8","F2F2EE","chunky picnic cooler","thud","Cold drinks, cold defence.","container,summer"},
 	{"cooling tower","EBEDII","GjS",3,1,9,"BDBDBD","ECEFF1","huge curved concrete funnel, steam plume","hiss","Puffs huge clouds that hide everything.","structure,building"},
 	{"coot","ABBJDC","AfB",2,5,2,"1E1E22","F7F7F2","black water bird, white forehead","quack","Weird lobed toes. Old coot.","bird,aquatic"},
-	{"cooties","KJAAKB","jdM",1,9,1,"F48FB1","8BC34A","pink-green sparkle smudge","ew","Ew! Cooties! No backsies!","silly"},
+	{"cooties","KJAALB","MP",2,7,3,"CE93D8","8BC34A","tiny fuzzy cartoon bugs that hop to the next person","ew","Ew! Cooties! No backsies!","goofy,silly,gross,spread"},
 	{"copepod","ABBJLA","fTPB",2,4,5,"E8C88A","F2E8D0","tiny single-eyed swimmer","clack","Tiny. One eye. Lots of friends.","crustacean,aquatic,armored"},
 	{"copper","FKBLII","L",3,4,5,"B87333","E4A672","coiled copper wire mesh","zap","Conducts zaps beautifully.","electric"},
 	{"copperhead","AMCJCD","fMN",4,6,3,"B8703A","6A3A1A","copper head, hourglass bands","hiss","Head looks like a shiny penny.","reptile,venomous"},

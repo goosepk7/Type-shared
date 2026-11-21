@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravity storm","FLEN5K","lHPO",8,5,5,"311B92","B388FF","swirling purple storm flinging debris","whum","Up, down, sideways, all at once.","space,storm"},
 	{"gravity tower","ELDMII","GSHeO",5,1,7,"37474F","7C4DFF","tower with a floating orb that pulls","thud","Sucks enemies in. Then smashes.","structure,defense,tower,magnetic"},
 	{"gravity vortex","KLDN5K","SHN",6,4,5,"311B92","B388FF","swirling purple ground funnel","hum","Everyone slides to the middle.","space"},
 	{"gravity wall","FLCCnI","GHN",4,2,6,"4527A0","B388FF","warped purple ripple wall","whum","Walls that weigh you down.","space,defence"},
@@ -402,5 +403,4 @@ return {
 	{"hiccup","KMAOKG","jY",1,8,1,"F8BBD0","FFFFFF","tiny hopping bubble","hic","Hic! Random teleport.","silly"},
 	{"hickory","NGDCMI","GWkS",4,1,8,"795548","8BC34A","tall shaggy-bark tree","rustle","Shaggy bark, tough wood.","plant,tree"},
 	{"hide","KIBOKI","Z",1,5,3,"78909C","ECEFF1","caster blending into the background","hush","Shh. I am a bush.","stealth,silly"},
-	{"hide and seek","KIBOKI","ZY",1,6,2,"8D6E63","FFFFFF","caster vanishing behind sparkles","giggle","Ready or not, here I... where'd I go?","silly,stealth"},
 }

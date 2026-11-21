@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wendigo","ACDJNA","DiJf",7,8,6,"E7E5E4","7DD3FC","gaunt antlered figure, frost breath","howl","Always cold. Always hungry. Never invited.","spooky,frozen,cryptid"},
+	{"werebear","AGDJNA","Wkf",7,5,7,"78350F","FDE68A","huge bear-man in torn flannel","roar","Hibernates through every meeting.","spooky"},
+	{"werecat","AICJNA","DZf",5,9,4,"1C1917","FACC15","cat-faced prowler with long claws","hiss","Nine lives, one bad attitude.","spooky"},
 	{"werefox","ALCJNA","jZY",4,9,3,"EA580C","F8FAFC","fox-eared trickster with fluffy tail","yip","Sly by nature. Fluffy by design.","trickster"},
 	{"wererat","AJBJNA","fPb",3,8,3,"57534E","F9A8D4","ratty hunched figure, long pink tail","squeak","Turns into a rat. Has a lot of cheese.","spooky"},
 	{"wereshark","ABDJNC","DfB",6,8,5,"64748B","F8FAFC","shark-headed muscle swimmer","chomp","Full moon. Fin up. Everyone out of the pool.","aquatic,silly"},
@@ -13,6 +16,7 @@ return {
 	{"west","KECF6B","kIN",4,6,2,"B45309","FDBA74","compass needle on W, tumbleweed and a setting sun","yeehaw","Go west, young summon. Mind the tumbleweed.","map,western"},
 	{"western omelette","IGBOKI","F",2,5,3,"F2D23A","D72B2B","omelet with ham and peppers","crunch","An omelet that rides horses.","edible,healthy,breakfast"},
 	{"westie","AMBJAA","dQf",2,6,2,"FFFFFF","F2EEE6","white fluffy terrier","yip","Small white dog. Big opinions.","mammal,pet,cute"},
+	{"wet noodle","CBCHJK","fI",2,7,1,"FFE082","F4C430","a giant floppy wet noodle slapped forehand and backhand","splat","Slap. Slap. Drip.","goofy,gross,silly,melee"},
 	{"weta","AMBJFA","dTP",2,6,1,"6A4A2A","C8A07A","huge spiky cricket","buzz","Giant cricket heavier than a mouse.","insect"},
 	{"wetsuit","BBCONI","B",1,7,3,"24262A","47D7E8","sleek neoprene suit","clank","Swim faster. Look sleeker.","armor,defense"},
 	{"whack","KMBAKB","kf",3,8,2,"FFAB91","FFFFFF","big comic swoosh and impact","whack","Whack-a-villain.","silly"},

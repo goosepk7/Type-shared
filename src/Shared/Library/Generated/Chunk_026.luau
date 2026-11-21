@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
+	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
+	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
 	{"sun dragon spirit","AAEJCB","KAF",8,6,6,"FDE047","F97316","serpent of pure sunlight","roar","Burns away shadows.","holy,fire,reptile"},
 	{"sun dried tomatoes","IMAELB","eVP",2,7,1,"8A1E1E","B0302B","shriveled red strips","pitter","Tomatoes that took a long nap in the sun.","edible"},
 	{"sun hat","BHBONI","G",1,6,1,"D2B48C","C0392B","wide floppy straw hat","swish","Shady business.","clothing"},
@@ -400,7 +403,4 @@ return {
 	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
 	{"thyme","IGBOMI","WF",2,4,3,"5E7A4A","8A9A6A","tiny-leaf sprigs","crunch","There's always thyme for this.","edible,vegetable,healthy,herb"},
 	{"tiara","BHAONI","F",2,5,3,"C9CED4","8E5CC2","sparkly jewelled headband","swish","Princess mode: on.","royal,shiny"},
-	{"tibetan mastiff","AMDJAA","GDQf",6,7,4,"6A3A1E","E8A04A","huge maned guardian dog","bark","A lion disguised as a dog.","mammal,pet"},
-	{"tibs","IABNGI","KF",4,4,2,"8A3A1E","D8402B","sauteed meat chunks","sizzle","Sizzling Ethiopian tibs.","edible,spicy"},
-	{"tic tac toe","KMBLnI","GSO",3,1,4,"111827","EF4444","hand-drawn grid with a winning line of three Xs","scratch","Nobody wins. Nobody ever wins. Play again?","game,school"},
 }

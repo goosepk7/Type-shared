@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"inkcap","NIBLMI","jSP",3,1,2,"ECEFF1","212121","tall shaggy cap melting into black ink","poof","Melts into ink. Gross. Effective.","plant,fungus"},
 	{"inkfold flock","AFBJLB","ARNVh",5,8,4,"F2EAD8","E24634","a flock of folded paper birds with vermilion ink seals","flutter","Eight slips, eight folds, eight very small grudges.","anime,paper,summon,swarm"},
 	{"inn","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
 	{"innkeeper","LMCJNA","Fc",3,4,4,"78350F","FDE68A","apron, room key, rag","ding","Rooms available. Rumors free.","merchant"},
@@ -157,7 +158,7 @@ return {
 	{"jouster","LKDKAA","DkTg",6,8,6,"DC2626","FACC15","knight with striped lance on charging horse","clang","Pointy stick. Fast horse. Big bonk.","warrior,sport,mount"},
 	{"jousting arena","MMENII","DkS",4,1,7,"B71C1C","FFD54F","fenced field with striped barrier, banners","crowd","Knights charge! Lances ready!","ancient,royal"},
 	{"joy","KHCOKJ","DF",2,6,3,"FFEB3B","FF80AB","bouncy yellow sparkles and confetti","yay","So happy it heals.","cute,support"},
-	{"joy buzzer","CDALJK","LO",1,9,1,"C9CED4","C0392B","palm buzzer ring","boing","Bzzzt! Gotcha!","prank,silly"},
+	{"joy buzzer","CDAHJG","DLO",3,8,1,"C9CED4","FFD54F","a lunge into a handshake with a crackling palm buzzer","boing","Bzzzt! Gotcha!","goofy,prank,silly,dash"},
 	{"jubilee stomp","KMDNBI","kSe",9,6,5,"FAF6EE","C4A0FF","a giant puffy cartoon foot stamping onto rubbery ground","thud","Boing. Boing. Boing.","anime,pirate,cartoon"},
 	{"judgment","FHEBKI","KTO",8,7,2,"FFD740","FFFFFF","giant golden sword of light slamming down","boom","The verdict is: ouch.","holy"},
 	{"judo master","LMCJNA","klf",5,7,5,"F8FAFC","1E3A8A","white judo gi, throwing stance","thud","Throws you with your own weight.","sport,martial"},
@@ -402,5 +403,4 @@ return {
 	{"ladder","BMCCII","Gl",1,3,4,"C49A6C","8A929B","tall two-rail ladder","clank","Climbs walls. Carry it everywhere.","tool"},
 	{"ladder truck","DBEKHL","Dkleg",6,5,8,"D22B2B","C0C0C0","long red truck with a giant ladder","siren","Ladder up. Hose down.","mechanical,vehicle,land"},
 	{"ladle","BMBHJK","fe",1,6,3,"8A929B","24262A","deep spoon on long handle","clang","Soup's on. In your face.","kitchen,household"},
-	{"ladon","AJEJCI","GfM",7,3,8,"14532D","FACC15","serpent coiled around golden apple tree","hiss","Guards golden apples. Never shares.","mythical,reptile,guardian"},
 }
