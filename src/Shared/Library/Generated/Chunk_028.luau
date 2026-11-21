@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ugliness","KJCF6B","jIO",3,5,2,"8A9A5B","7C3AED","cracked mirror shockwave with a warty lumpy face","crack","A face only a summoner could love.","silly,gross"},
+	{"uintatherium","AMDJAA","DkO",6,4,8,"7A6A5A","C8B8A0","six bumps on head, tusks","roar","Six knobs on its head. Rude.","mammal,extinct,ancient,heavy"},
 	{"ukulele","BMBFJI","dF",1,6,2,"C49A6C","7A4E2D","tiny four-string guitar","strum","Plinky plunk. Aloha.","music"},
 	{"ultimate","KLEOKI","DWk",7,6,6,"FFD54F","D500F9","screaming golden aura, flowing hair glow","choir","Glowing hair means it's serious.","meme"},
 	{"uluru","MEFCII","GS",6,1,10,"C1440E","E6A04D","huge rounded red rock in flat desert","rumble","One rock. Very large. Very red.","place,landmark"},
@@ -401,6 +403,4 @@ return {
 	{"welding mask","BKBONI","G",1,5,5,"24262A","4A4D52","dark-windowed face shield","clank","Flash? What flash?","armor,defense"},
 	{"wels catfish","ABDJEC","DfHB",5,7,4,"4A4A3A","C8C0A0","enormous whiskered catfish","splash","Eats pigeons off riverbanks.","fish,aquatic"},
 	{"welsh rarebit","IGBOKI","F",2,5,3,"E0A040","F2C24A","toast with bubbling cheese","crunch","No rabbits involved. Just cheese.","edible,healthy"},
-	{"welwitschia","NECNMI","dFS",2,1,8,"6D4C41","7CB342","two long tangled leaves on sand","rustle","Two leaves. Two thousand years.","plant,flower,ancient"},
-	{"wendigo","ACDJNA","DiJf",7,8,6,"E7E5E4","7DD3FC","gaunt antlered figure, frost breath","howl","Always cold. Always hungry. Never invited.","spooky,frozen,cryptid"},
 }

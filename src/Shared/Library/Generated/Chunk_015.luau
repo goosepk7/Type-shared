@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ladon","AJEJCI","GfM",7,3,8,"14532D","FACC15","serpent coiled around golden apple tree","hiss","Guards golden apples. Never shares.","mythical,reptile,guardian"},
 	{"ladoo","IMBLKI","dSc",2,3,3,"F2A62B","E8C07A","golden round sweet ball","chomp","A golden sweet ball of joy.","edible,sweet,dessert"},
 	{"lady slipper","NGBNMI","dFS",1,1,1,"FFEB3B","7E57C2","pouched bloom like a little shoe","rustle","Cinderella left her slipper.","plant,flower"},
 	{"ladybug","AMAJFA","GAFf",1,3,4,"D8201E","1E1E1E","red dome shell, black spots","click","Spots count its age. (Not really.)","insect,armored,cute,garden"},
@@ -354,6 +355,7 @@ return {
 	{"lizard man of the swamp","ABCJNA","DfB",5,7,5,"365314","DC2626","green scaled swamp humanoid, red eyes","hiss","Chases cars. Never catches one.","cryptid,reptile"},
 	{"lizardfolk","ABCJNA","feB",5,6,6,"4D7C0F","FDE68A","scaly warrior with crest and spear","hiss","Cold-blooded. Hot-tempered.","reptile,warrior"},
 	{"llama","AMCJAA","dfeg",3,4,4,"F2EEE6","8A6A4A","long neck, banana ears, fluffy coat","hum","Spits first. Explains never.","mammal,farm"},
+	{"llama spit","ABBAAB","eNP",3,8,2,"F2EAD8","9ED65A","llama hocks a big green glob of spit","spit","Spits first. Explains never.","critter,mammal,ranged,gross"},
 	{"lmao","KHBF6F","jPO",3,8,1,"FDE047","38BDF8","laughing-crying face rolling on the floor, tears spraying","giggle","Laughed so hard the summon fell over.","meme,internet,silly"},
 	{"lo mein","IMBLGI","HN",2,3,3,"C8903A","7DBE3A","tossed soft noodles, veg","gloop","Soft noodles tossed with everything.","edible,sticky"},
 	{"loach","ABAJEC","jdB",1,6,1,"F28A1E","1E1E1E","orange fish with black bands","splash","Plays dead for attention.","fish,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"longhorn beetle","AMAJFA","Gf",1,3,4,"1E1E1E","F2F2F2","beetle with super long antennae","click","Antennae longer than its body.","insect,armored"},
 	{"longhouse","EMDCII","GSh",3,1,8,"6D4C41","C9A55A","long wooden hall with turf roof","thud","Feasting hall. Fighting hall. Same hall.","structure,building,ancient"},
 	{"longsword","CKCHrK","kfT",6,5,5,"8A929B","5A3A1E","long straight blade, two-hand grip","shing","For knights with long arms and longer speeches.","medieval,sharp"},
-	{"loofah","BGAHKI","Ff",1,6,1,"D2B48C","F3E6C8","scratchy dried scrubber","splash","Exfoliate the enemy.","bathroom,household"},
-	{"loom","OMCL1I","NO",2,1,5,"8B5A2B","D8CBB5","frame with criss-cross threads","clank","Weaves cloth. Weaves nets.","mechanical"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
+	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
 	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 	{"robot wizard","OLCJNA","eLY",5,4,6,"6366F1","94A3B8","robot in a pointy hat with antenna wand","zap","Casts spells with a USB wand.","robot,magic,silly"},
 	{"robotics engineer","LKCJNA","Fh",4,4,4,"1E3A8A","94A3B8","goggles, soldering iron, robot arm","clank","Builds a robot friend in seconds.","tech,robot"},
@@ -401,6 +403,4 @@ return {
 	{"sea kaiju","ABFJCC","kHB",9,5,9,"0C4A6E","22D3EE","whale-sized finned monster rising from sea","roar","Makes a splash. A very big one.","kaiju,aquatic,giant,danger"},
 	{"sea krait","ABCJCD","fMNB",4,6,3,"3A5A8A","F2F2EE","blue-black banded sea snake","hiss","Swims in the sea, naps on land.","reptile,venomous"},
 	{"sea lettuce","NBBLMI","SNB",1,1,2,"76FF03","9CCC65","bright green crinkly sheets","splash","Slippery salad of the sea.","plant,aquatic"},
-	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
-	{"sea lion","ABCJEC","UDdfB",3,5,4,"8A6440","C8A07A","sleek brown seal, upright on front flippers","bark","Balances balls. Barks for fish.","mammal,aquatic"},
 }

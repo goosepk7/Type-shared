@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"purple fire","FACAKB","Kje",6,8,2,"AA00FF","EA80FC","violet flame ball with pink core","whoosh","Magic fire. Smells like grapes.","fire,magic"},
+	{"purple frog","AMAJAG","UCe",1,5,1,"6A4A8A","C8A0D8","purple blobby frog with pig nose","croak","A purple blob with a nose.","amphibian,wetland,silly"},
 	{"purple lightning","FDDAKB","jeL",7,10,1,"AA00FF","EA80FC","bright violet branching bolt","crack","Lightning, now in grape flavour.","electric,magic"},
 	{"purple potato","IEBAKK","keO",3,7,6,"5E2A5E","8A5A9A","small violet potato","bonk","A royal purple spud.","edible,vegetable"},
 	{"push","KFCFOB","kI",4,8,1,"B3E5FC","FFFFFF","invisible palm-shaped force ripple","whoosh","Personal space, enforced.","force"},
@@ -62,8 +64,8 @@ return {
 	{"rabbit","AMBJAG","UCdV",2,6,1,"C8B8A8","F7F4EE","long ears, fluffy cotton tail, big feet","thump","Hops. Multiplies. Repeat.","mammal,cute"},
 	{"rabbit's foot","BMAOKJ","F",1,5,1,"F2F2EE","F06292","fluffy keychain charm","boing","Lucky for you.","silly"},
 	{"rabbitfish","ABAJEC","dMB",1,6,1,"E8C82A","3A6AE8","rabbit-faced reef fish","splash","Has a bunny face. And spines.","fish,aquatic"},
-	{"raccoon","AMBJAA","dfb",2,5,3,"7A7670","1E1C1A","bandit mask, ringed tail, tiny hands","squeak","Trash panda. Night shift.","mammal,wild,nocturnal,silly"},
 	{"raccoon dog","AMBJAA","jfb",3,7,2,"6E5E4E","2A2420","round fluffy body, raccoon mask","yip","Not a raccoon. Not quite a dog.","mammal,wild"},
+	{"raccoon heist","AMBLAI","cfb",3,7,3,"7A7670","1E1C1A","dented trash can; a masked raccoon bursts out","chatter","Trash panda. Night shift. Your mana, its mana.","critter,mammal,trap,steal"},
 	{"raccoon kit","AMAJAA","Cfb",1,5,3,"8A8680","2A2826","tiny masked fluffball","squeak","Already stealing. Just smaller things.","mammal,wild"},
 	{"race","KFCO6B","DkI",4,10,2,"111827","F8FAFC","chequered flag whipping and speed lines down a straight","vroom","Last one there is a rotten summon.","sport,speed"},
 	{"race car","DMCKHL","Dkg",5,10,4,"E10600","F5F5F5","low wedge body, rear wing, fat slick tyres","engine","Zero to rude in 2.4 seconds.","mechanical,vehicle,land,sport"},
@@ -401,6 +403,4 @@ return {
 	{"robot swarm","OKCJLA","DVP",5,7,4,"475569","22D3EE","carpet of tiny scuttling robots","beep","Beep beep beep beep beep.","robot,swarm"},
 	{"robot tank","OKDMHL","GEe",7,3,9,"365314","1F2937","treaded robot with turret head","clank","Turret, treads, and attitude.","robot,heavy"},
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
-	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
-	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
 	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
 	{"clash","KMCFOB","kO",5,8,2,"FFAB40","FFFFFF","two forces colliding in a spark ring","clang","Sparks fly. Everyone flinches.","melee"},
 	{"class","MMDNlI","jSNh",4,1,5,"FDE68A","15803D","rows of desks, chalkboard, thirty raised hands","bell","Pop quiz. Sit down. Eyes forward.","school"},
@@ -402,5 +403,4 @@ return {
 	{"cream","IMBLGI","SN",2,3,2,"F7F4EC","F2EAD5","pitcher of thick cream","squeak","Rich, white, and pourable.","edible,slippery,silly,dairy"},
 	{"cream cheese","IMBLGI","SNP",2,3,3,"F7F4EC","F2EAD5","smooth white block","gloop","Smooth, spreadable, very sticky.","edible,sticky,dairy"},
 	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
-	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 }

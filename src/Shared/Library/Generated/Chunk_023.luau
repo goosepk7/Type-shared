@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
+	{"sea lion","ABCJEC","UDdfB",3,5,4,"8A6440","C8A07A","sleek brown seal, upright on front flippers","bark","Balances balls. Barks for fish.","mammal,aquatic"},
 	{"sea mine","CBCLKJ","EkB",7,1,4,"24262A","9C4A1A","spiked floating metal ball","boom","A spiky beach ball you shouldn't hug.","explosive,ocean"},
 	{"sea monkey","ABAJRA","GfTPB",1,4,5,"F2C8A0","E8A07A","tiny wiggly brine shrimp","clack","Not monkeys. Do not ask.","crustacean,aquatic,armored,silly"},
 	{"sea mouse","ABAJTD","CP",1,3,1,"C8A07A","6AE8C0","furry iridescent worm","squelch","A worm wearing a fur coat.","bug"},
@@ -393,14 +395,12 @@ return {
 	{"skorpiovenator","AMDJBA","DkfT",6,6,7,"8A3A2A","D8A07A","bumpy-skulled theropod","roar","Scorpion hunter. Bumpy head.","dinosaur,extinct,reptile,predator"},
 	{"skua","ABBJDB","DAbB",2,7,2,"6A4A2A","C8A07A","brown pirate seabird","squawk","Steals food from other birds. Pirate.","bird,ocean"},
 	{"skull","BIBA3B","UjeO",4,7,5,"F1EBDD","2B2B2B","grinning skull, dark sockets, chattering jaw","chatter","Alas, poor you.","spooky,undead,body"},
-	{"skunk","AJBJAA","jfMP",3,8,2,"1A1A1C","F2F2F2","black body, white stripe, raised fluffy tail","chatter","Clears a room in one second flat.","mammal,predator"},
 	{"skunk ape","AJDJNA","DfM",6,6,6,"57534E","365314","stinky shaggy swamp ape","roar","You smell it before you see it.","cryptid,silly"},
 	{"skunk cabbage","NJCDMI","jSM",2,1,3,"9CCC65","FFEB3B","big leaves with a stinky yellow hood","rustle","Smells like a skunk. Literally.","plant,flower,silly"},
 	{"skunk kit","AMAJAA","CfM",1,8,2,"1A1A1C","F2F2F2","tiny stripy fluffball","chatter","Practicing the stink. Not ready yet.","mammal,predator"},
+	{"skunk spray","AJCDAI","SMNP",4,5,3,"1E1C22","9BD84A","skunk turns tail and sprays a cone of green stink","hiss","Clears a room in one second flat.","critter,mammal,cloud,gross"},
 	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
 	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
 	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
 	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
-	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
-	{"sky island","MFENIJ","lS",4,1,7,"8BC34A","E3F2FD","grassy rock floating in the sky","rumble","No roads. Just a long way down.","place,terrain,magic"},
 }

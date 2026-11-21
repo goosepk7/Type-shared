@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza shield","IMCIII","Ga",3,3,6,"E8B04A","D72B2B","round pizza strapped to arm","thud","Cheese-forward defense.","edible"},
+	{"pizza slice","IMBAKK","cTe",3,7,2,"E8B04A","D72B2B","triangle slice, cheese stretch","whoosh","A triangle of hope.","edible"},
 	{"placoderm","ABCJEC","GDfB",4,7,4,"6A6A6A","B8B0A0","armored ancient fish","splash","Armored fish. Bony and proud.","fish,aquatic,extinct,ancient"},
 	{"placodus","ABDJEC","DfHB",5,6,7,"6A6A5A","C8C8B0","clam-crushing sea reptile","roar","Ate shellfish like candy.","extinct,reptile,aquatic,ocean"},
 	{"plague","FJDDOJ","SMP",6,4,3,"7A8A3A","2E2A1E","drifting murky cloud with fly specks","buzz","Spreads faster than gossip.","toxic,spooky"},
@@ -203,7 +205,7 @@ return {
 	{"porcelain crab","ABBJRA","GfTV",2,4,5,"E8C8C8","C8A0A0","flat fan-feeding crab","clack","Breaks its own claws to escape.","crustacean,aquatic,armored"},
 	{"porch","EMCMII","GeN",3,1,6,"F5F5F0","22C55E","wooden steps, rocking chair and a swinging lantern","creak","Get off my lawn. From the comfort of my chair.","household,building"},
 	{"porcini","NGBLMI","FS",2,1,4,"8D6E63","F5E6CA","fat brown cap on a chunky stem","poof","Chunky. Tasty. Kingly.","plant,fungus,edible"},
-	{"porcupine","AMBJAA","GCTe",3,6,5,"5E5248","E8E0D4","covered in quills, raised spikes","squeak","Do not hug. Seriously.","mammal,cute"},
+	{"porcupine quills","AMBAAI","TeP",4,7,3,"6A5646","F0E4CC","curled porcupine firing rings of quills all round","rattle","Do not hug. Seriously.","critter,mammal,nova"},
 	{"porcupinefish","ABBJEC","dWTB",3,6,1,"C8B88A","4A3A2A","spiky round puffed fish","splash","Pufferfish with extra spikes.","fish,aquatic"},
 	{"pork belly","IMBAKK","kce",3,5,3,"E8A0A0","C8603A","layered fat-lean slab","thud","Crispy skin, tender layers.","edible,savory"},
 	{"pork chop","IMBAKK","kce",3,5,3,"D88A6A","F2E8D8","thick chop with bone edge","thud","A meaty chunk with a bone grip.","edible,savory"},
@@ -401,6 +403,4 @@ return {
 	{"pupusa","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","thick stuffed corn cake","whoosh","A stuffed tortilla pillow.","edible"},
 	{"purify","KHCFOB","KF",3,6,2,"FFFFFF","B2EBF2","pure white wave washing outward","chime","Squeaky clean. Evil included.","holy,support"},
 	{"purple carrot","IEBAJK","FTe",3,6,4,"5E1A4E","ED9121","purple-skinned carrot","crunch","A carrot in royal colours.","edible,vegetable,healthy"},
-	{"purple fire","FACAKB","Kje",6,8,2,"AA00FF","EA80FC","violet flame ball with pink core","whoosh","Magic fire. Smells like grapes.","fire,magic"},
-	{"purple frog","AMAJAG","UCe",1,5,1,"6A4A8A","C8A0D8","purple blobby frog with pig nose","croak","A purple blob with a nose.","amphibian,wetland,silly"},
 }
