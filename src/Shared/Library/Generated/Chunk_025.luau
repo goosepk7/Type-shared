@@ -347,7 +347,7 @@ return {
 	{"streamer","BMALKI","dN",1,6,1,"2F6FD1","FF3EA5","curly ribbons of crepe paper","squeak","Tangle up the party pooper.","party"},
 	{"street magician","LLCJNA","jdY",3,6,3,"111827","7C3AED","hoodie, deck of cards, smirk","ding","Is this your card? It explodes.","magic,silly"},
 	{"street performer","LMCJNA","dc",3,5,3,"DC2626","FACC15","open guitar case, coins","guitar","Plays for tips. You tip with HP.","music"},
-	{"street sweeper","OFDFGL","kfI",4,3,5,"F28A2E","FFF1D6","an orange street sweeper truck with spinning side brushes","swish","Sweeps the arena clean. Including you.","transit,sweep,silly"},
+	{"street sweeper","OFDFeL","kfI",4,3,5,"F28A2E","FFF1D6","an orange street sweeper truck with spinning side brushes","swish","Sweeps the arena clean. Including you.","transit,sweep,silly"},
 	{"strength","KECOKI","Wkf",4,4,5,"FF7043","FFE0B2","bulging glowing muscle aura","grunt","Lift with your legs. And the spell.","strength"},
 	{"strength potion","BLAO2I","Wk",4,5,1,"E67E22","BFE6F2","chunky flask of orange goo","bubble","Hulk out for a bit.","magic,fantasy"},
 	{"stress ball","BMAA3F","Ue",1,7,1,"F1C40F","E67E22","squishy foam ball","bonk","Squeeze it. Throw it.","toy,silly"},
