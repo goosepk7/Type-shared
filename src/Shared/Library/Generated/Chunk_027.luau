@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"tibs","IABNGI","KF",4,4,2,"8A3A1E","D8402B","sauteed meat chunks","sizzle","Sizzling Ethiopian tibs.","edible,spicy"},
 	{"tic tac toe","KMBLnI","GSO",3,1,4,"111827","EF4444","hand-drawn grid with a winning line of three Xs","scratch","Nobody wins. Nobody ever wins. Play again?","game,school"},
 	{"tick","AJAJQA","iQfMN",1,6,2,"6A3A1E","3A2A1A","tiny round eight-legged bug","skitter","Moves in. Swells up. Rude.","arachnid,spooky,venomous"},
 	{"ticket","BMAOJB","chY",2,6,1,"FACC15","B45309","golden slip reading ADMIT ONE with a punched hole","ding","Admit one. Violence not included. Bring your own.","party"},
@@ -403,4 +402,5 @@ return {
 	{"ugli fruit","IMBAKF","jke",3,6,2,"9AAA3A","F2B05A","wrinkly green-orange citrus","squirt","Ugly outside, juicy inside.","edible,fruit,sour"},
 	{"ugliness","KJCF6B","jIO",3,5,2,"8A9A5B","7C3AED","cracked mirror shockwave with a warty lumpy face","crack","A face only a summoner could love.","silly,gross"},
 	{"uintatherium","AMDJAA","DkO",6,4,8,"7A6A5A","C8B8A0","six bumps on head, tusks","roar","Six knobs on its head. Rude.","mammal,extinct,ancient,heavy"},
+	{"ukulele","BMBFJI","dF",1,6,2,"C49A6C","7A4E2D","tiny four-string guitar","strum","Plinky plunk. Aloha.","music"},
 }

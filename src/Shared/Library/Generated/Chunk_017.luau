@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
 	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
@@ -296,7 +297,6 @@ return {
 	{"mouse deer","AMAJAA","Dk",1,8,4,"8A6448","E8D8C8","rabbit-sized deer, tiny legs","bleat","Smallest deer. Pocket edition.","mammal,wild"},
 	{"mouse knight","AKAJAA","UfT",2,9,2,"A8A29E","DC2626","tiny mouse in armor with a needle sword","squeak","Small sword. Enormous courage.","cute,warrior,silly"},
 	{"mouse pad","BMBIyK","GUa",1,5,3,"111827","22D3EE","flat black pad with glowing RGB edge","swish","Gamer shield. Wrist support included.","gaming,household"},
-	{"mousetrap","BMALII","cO",2,1,2,"C49A6C","8A929B","wooden board, spring bar, cheese","snap","Bait. Wait. Snap.","trap,silly"},
 	{"moussaka","IMCCII","GF",3,2,5,"D9A04A","5B2A5E","layered eggplant bake","thud","Layers of eggplant and comfort.","edible,giant"},
 	{"mouth","BMCLGE","fHO",4,4,3,"C0392B","FFFFFF","floating open mouth, white teeth, flappy tongue","chomp","All talk. Also all bite.","body,silly"},
 	{"mouthguard","BMAONF","G",1,7,2,"47D7E8","F2F2EE","chunky tooth guard","bonk","Smile safely.","sport"},

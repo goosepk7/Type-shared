@@ -3,11 +3,16 @@
 -- (data/misspellings.jsonl + per-entry 'ms'), sorted.
 return {
 	keys = {
-		"zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands",
-		"zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander",
-		"zylophone","zylophone stairs",
+		"yetti","yetti charge","yety","yoag","yoeyo","yogert","yogga","yoik","yokay","yollo","yoloo","yonk","yormungandr","yougurt","youkay","younicorn",
+		"yufo","yugio trap","yuk","yumm","yummi","za hado","za hand","za handoo","za wardo","za warudoo","zanpackuto","zanpakto","zanpakuto realese","zanzokin","zanzokn","zapp",
+		"zawardo","zebrah","zeebra","zeero","zenit haste","zenith hast","zenith hasted","zepplin","zero gravaty","zero gravety","zero gravit","zero gravitty","zero hr","zeuss","ziggaraut","zigurat",
+		"zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands","zombie hads",
+		"zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander","zylophone",
+		"zylophone stairs",
 	},
 	owners = {
-		11514,11518,11518,11518,11519,11518,11520,11520,11519,11520,11521,11540,11525,11525,11525,11531,11531,11531,11531,11525,11525,11531,11546,11525,11540,11546,11510,11548,11548,11512,11512,11553,11450,11450,
+		11466,470,11466,11475,11472,11478,11475,11479,11480,11481,11481,11479,5347,11478,11480,10823,10794,7901,10796,11489,11489,6959,6959,6959,11510,11510,10811,10811,10811,3632,3632,11497,11510,11499,11499,11509,11506,11506,11506,986,
+		11189,11189,11189,11189,11510,11511,11513,11513,11517,11517,11517,11518,11517,11519,11519,11518,11519,11520,11539,11524,11524,11524,11530,11530,11530,11530,11524,11524,11530,11545,11524,11539,11545,11509,11547,11547,11511,11511,11552,11449,
+		11449,
 	},
 }

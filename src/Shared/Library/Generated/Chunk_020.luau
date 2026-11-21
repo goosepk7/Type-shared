@@ -101,7 +101,7 @@ return {
 	{"poem","KFBF6J","jFO",2,5,1,"C4B5FD","F8FAFC","floating quill and curling lines of verse","whisper","Roses are red. Violets are blue. Bonk.","art,school"},
 	{"pog","KHBOKG","DFO",3,8,2,"A855F7","FACC15","wide-open amazed mouth face with sparkles and hype bars","yay","Poggers. That was actually poggers.","gaming,meme,internet"},
 	{"pogo spring boots","BMBONI","Uk",2,7,3,"C9CED4","E67E22","boots on curved springs","thud","Boing! Over the wall.","toy,silly"},
-	{"pogo stick","BMCOJG","UDk",2,6,4,"C0392B","C9CED4","spring pole with foot pegs","bonk","Boing boing boing boing.","toy"},
+	{"pogo stick","BMCOJG","UDk",4,7,4,"E23B4E","C9CED4","spring pole with foot pegs and handlebars","bonk","Boing boing boing. Landing optional.","household,toy,movement"},
 	{"poinsettia","NGBNMI","dFS",2,1,2,"C62828","1B5E20","red star bracts on green leaves","rustle","Holiday cheer with attitude.","plant,flower,holiday"},
 	{"point","KMBOuB","dQe",2,8,1,"F2D0B4","EF4444","giant gloved finger pointing with a red arrow","ding","Look over there! Ha. Made you look.","silly,trickster"},
 	{"pointer","AMCJAA","DQcf",4,7,4,"F2EEE6","8A4A22","sleek bird dog, one paw raised pointing","bark","It is literally pointing. At you.","mammal,pet"},

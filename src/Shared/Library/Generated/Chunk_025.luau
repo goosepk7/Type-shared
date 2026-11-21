@@ -59,7 +59,6 @@ return {
 	{"springhare","AMAJAG","UCdb",1,6,1,"C8904A","F2E0C8","mini kangaroo rodent","squeak","Hops like a tiny kangaroo.","mammal,cute"},
 	{"springtime","GGDNOI","WF",3,4,3,"81C784","F8BBD0","blooming flowers and soft rain","chime","Everything is blooming. Achoo.","plant,cute"},
 	{"sprinkle donut","IMBLKI","dSc",2,3,3,"F2A6C8","4FA3E8","pink frosted donut, rainbow sprinkles","chomp","A rainbow on a ring.","edible,sweet"},
-	{"sprinkler","OBBEJK","SNP",1,3,3,"2E8B57","F1C40F","spinning lawn sprinkler head","splash","Tick-tick-tick-shhhhh.","garden,summer"},
 	{"sprinkler turret","OBCMwI","IeNP",3,6,5,"47D7E8","C9CED4","rotating spray nozzle on pipe","clank","Soaks everyone in range.","defense,mechanical"},
 	{"sprinkles","IMAELB","jdeP",2,7,1,"F2A6C8","4FA3E8","cloud of colorful tiny sticks","pitter","Confetti you can eat.","edible,sweet,candy"},
 	{"sprint","KFBOKA","D",2,9,2,"FFF59D","FFFFFF","legs blurring into a wheel","tap","Legs go brrrr.","speed"},
@@ -116,7 +115,7 @@ return {
 	{"stamina","KGCOKJ","DF",2,6,4,"43A047","FFF59D","green breathing glow pulse","breath","Keep going. And going.","support"},
 	{"standard bearer","LMCJNA","FOh",3,4,5,"DC2626","FACC15","tall flag with crest","horn","Rally to the flag! Allies buffed.","warrior"},
 	{"staple gun","JKAAwI","Te",2,8,3,"24262A","C9CED4","heavy-duty stapler with grip","thunk","Kachunk. Pinned.","modern,ranged"},
-	{"stapler","BMAAJK","Te",1,7,4,"C0392B","24262A","chunky office stapler","tap","Ka-chunk. Pinned.","office"},
+	{"stapler volley","BKCAJK","TeO",4,7,4,"C0392B","C9CED4","chunky office stapler chomping out staples","tap","Ka-chunk ka-chunk ka-chunk. Pinned to the floor.","household,office,rapid fire"},
 	{"staples","BKAAwB","TeN",2,9,2,"C0C7CE","EF4444","red stapler snapping out a stream of tiny silver staples","click","Ka-chunk. Ka-chunk. Attached.","school,sharp"},
 	{"star","MHCAKJ","TeVO",5,6,5,"FFF59D","FFFFFF","five-point glowing twinkle","twinkle","Twinkle twinkle, little projectile.","space"},
 	{"star anise","IMBAKK","Te",3,7,2,"6B3A1E","A86A3A","eight-pointed brown star pod","whoosh","A spice shaped like a throwing star.","edible,spice"},
@@ -403,4 +402,5 @@ return {
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
 	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
+	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 }
