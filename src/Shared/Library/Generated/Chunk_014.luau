@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"immunity","KHBOKJ","GF",1,4,5,"B2EBF2","FFFFFF","clear shimmering shell","chime","Poison? Not interested.","support"},
+	{"imp","AAAJNB","KjAb",2,9,1,"DC2626","1F2937","tiny red horned prankster with bat wings","cackle","Small horns. Big mischief.","imp,mischief"},
+	{"imp swarm","AACJLB","KAPb",5,9,3,"DC2626","1F2937","cloud of giggling red imps","cackle","Mischief, multiplied.","imp,swarm"},
+	{"impala","AMCJAA","UDk",4,9,4,"C88A4A","F2EEE6","lyre horns, leaps 10 feet high","bleat","Jumps like it's late for something.","mammal,wild"},
 	{"impatiens","NGBNMI","dEFS",1,1,2,"F06292","FFFFFF","bushy little flat blooms","rustle","Seed pods explode when touched. Pop!","plant,flower"},
 	{"implode","KIDGKI","EHO",7,6,1,"1A0033","B388FF","everything crumpling into a dark point","whum","Explosion, but backwards.","space,explosive"},
 	{"impostor","LICJNA","jZb",4,6,4,"DC2626","F8FAFC","teammate shape with a suspicious smile","whisper","Kinda sus. Definitely sus.","meme,villain"},
@@ -399,8 +403,4 @@ return {
 	{"kosmoceratops","AMDJAA","DdkT",7,5,8,"8A5A3A","E8B07A","frill with many hooked horns","bellow","Most horns. Most fabulous.","dinosaur,extinct,reptile"},
 	{"koto","BMDFJI","FN",2,3,3,"C49A6C","F3E6C8","long zither on floor","strum","Plucked serenity.","music"},
 	{"kouign amann","IMBLKI","dSc",2,3,3,"C8803A","F2C870","caramelized flaky pastry","chomp","Butter and sugar, folded forever.","edible,sweet"},
-	{"krait","AMCJCD","fMN",4,6,3,"1E1E24","F2F2F0","black and white banded","hiss","Night shift snake. Stripy.","reptile,venomous,nocturnal"},
-	{"kraken","ABFJCC","kHOB",9,4,9,"7F1D1D","F87171","colossal squid with ship-crushing tentacles","roar","Release it. Please. It's been waiting.","mythical,aquatic,boss,danger"},
-	{"kraken king","ABFJCC","kHOB",9,3,10,"450A0A","FCA5A5","sky-sized kraken with crown of barnacles","roar","Eats fleets. Burps anchors.","mythical,aquatic,boss,danger"},
-	{"kraken spawn","ABBJCC","HB",3,6,3,"991B1B","FCA5A5","small red squid with big eyes","splash","One day it'll eat ships. Today it eats shrimp.","aquatic,cute"},
 }

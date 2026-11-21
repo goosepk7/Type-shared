@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sirin","AICJDB","jAc",4,6,3,"1E1B4B","FDE68A","bird with a woman's face, sad song","sing","Sings so sweetly you forget your name.","mythical,bird"},
+	{"sirius","MHDAKJ","KTeO",7,7,6,"F5F5F5","90CAF9","dazzling blue-white star","twinkle","Brightest star in the night sky. Blinding.","space,star"},
+	{"sister","LMCJNA","jf",3,6,4,"F472B6","1D4ED8","ponytail and backpack","ding","Will tell mom. Will absolutely tell mom.","family"},
+	{"sit","KEBLGI","kNO",3,4,4,"B45309","F2D0B4","big cartoon bottom dropping onto a whoopee cushion","thud","Sat. On you. Comfy.","silly"},
+	{"sitar","BMCFJI","jN",2,4,3,"8B5A2B","F3E6C8","long neck, gourd body","strum","Buzzing, shimmering strings.","music"},
+	{"sitatunga","AMCJAA","DkB",4,8,4,"8A6A4A","E8D8C0","swamp antelope, splayed hooves","bleat","Swims to escape. Swamp ninja.","mammal,wild"},
+	{"six shooter spin","CKBAwI","eV",5,7,3,"C9CED4","5A3A1E","twirling revolver","bang","Trick shot!","cowboy"},
 	{"size","KLBOKJ","jWX",3,5,3,"22D3EE","F472B6","ruler and two arrows, one pointing up, one down","boing","It matters. Sometimes. In boss fights.","silly"},
 	{"sizzle","KABNOI","K",3,6,1,"FF7043","FFF3E0","bubbling hot shimmer on ground","sizzle","Tssss.","fire,silly"},
 	{"sizzling skillet","BADN2I","KlS",3,3,5,"2A2628","FF8A3C","giant black cast-iron skillet glowing hot","sizzle","Hot, hot, hot! Dance!","kitchen,zone,fire"},
@@ -396,11 +403,4 @@ return {
 	{"speed blitz","KDCHNB","DT",5,10,2,"FFE04A","FF8A3A","three blurring dashes that leave afterimages","whoosh","Did you catch that? No? Exactly.","hero,movie,speed"},
 	{"speed bump","BECLnI","klS",3,1,6,"F5C21B","22232A","yellow-and-black striped rubber speed bump","thud","Slow down. Too late.","transit,trap,silly"},
 	{"speed potion","BDAO2I","D",3,7,1,"F1C40F","BFE6F2","fizzy yellow flask","bubble","Zoom zoom zoom.","magic,fantasy"},
-	{"speedboat","DBCKHC","DkIgB",5,9,4,"E53935","F5F5F5","sleek pointed hull, big twin motors","engine","Leaves a wake. And a lot of wet enemies.","vehicle,aquatic"},
-	{"speedrun dash","KHBOKB","DTY",4,10,1,"3BE07A","FFFFFF","a stopwatch pop and a blur through a checkered gate","whoosh","Any percent. All the percent. Through you.","meme,internet,mobility"},
-	{"speedrun ghost","LLCJNA","DZY",3,10,1,"A5F3FC","F8FAFC","translucent copy racing ahead","whoosh","Your best time. Mocking you.","meme,gaming,ghost"},
-	{"speedrunner","LMCJNA","DTY",4,10,3,"DC2626","FACC15","blurry figure with timer above head","whoosh","Clips through walls. Any% only.","meme,gaming"},
-	{"spell","FLBAKB","e",3,7,1,"9575FF","E9DCFF","small glowing glyph projectile","shimmer","The most basic magic. Still magic.","magic"},
-	{"spell echo","KLCOKJ","V",4,7,2,"B39DDB","FFFFFF","faint copy of the last spell repeating","echo","Cast once. Hit twice.","magic"},
-	{"spellblade","LLCJNA","feY",6,6,6,"4338CA","94A3B8","armor with rune-glowing sword","zap","Can't decide between swords and magic. Chose both.","magic,warrior"},
 }

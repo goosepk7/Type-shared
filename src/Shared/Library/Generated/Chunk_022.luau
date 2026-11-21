@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"roast turkey","IGCOKI","Fc",2,5,3,"B0602B","F2D88A","big roasted bird on platter","crunch","A whole feast, ready to share.","edible,healthy,holiday"},
+	{"roasted chestnuts","IABOKI","F",2,5,3,"6B3A1E","E8A85A","paper bag of split brown nuts","crunch","Warm hands, warm hearts.","edible,healthy"},
+	{"rob","KIBONA","DZb",4,8,1,"111827","FACC15","masked figure dashing off with a bulging swag sack","jingle","Yoink. Legally distinct from borrowing.","villain,stealth"},
+	{"robber","LICJNA","DZb",4,7,3,"111827","F8FAFC","striped shirt, mask, loot bag","whoosh","Bag says LOOT. Very subtle.","villain"},
+	{"robber fly","AMAJFB","dAfTP",1,6,1,"6A5A44","C8A07A","bristly fly with beard","buzz","Bearded hunter. Catches wasps.","insect"},
 	{"robe","BLCONI","F",1,5,2,"1F2F55","D4A72C","long star-patterned robe","swish","Comfy. Mystical. Pocketless.","clothing,magic"},
 	{"robin","AMAJDB","dA",1,7,1,"6E5A4A","E8601E","round grey-brown bird with red breast","tweet","Wears a red vest every day.","bird,cute"},
 	{"robin hood","LGCJNA","Zeb",5,8,4,"15803D","78350F","green hood, feathered cap, longbow","twang","Steals from the rich. Gives to you.","archer,folklore"},
@@ -378,6 +383,7 @@ return {
 	{"school","EMDCII","GSh",3,1,7,"B5523B","F5F5F5","brick building with bell and clock","thud","Class is in session. Lesson: pain.","structure,building,silly"},
 	{"school bell","BKBFKI","jO",2,3,5,"B58A3A","C0392B","round brass bell","ring","RIIIIING. Class dismissed.","school,loud"},
 	{"school bus","DMDKHL","Dkgh",5,5,8,"FFC000","1A1A1A","long yellow bus, stop sign arm, black stripes","engine","Field trip! Destination: victory.","mechanical,vehicle,land"},
+	{"school bus stop","OKENeL","GfO",3,3,4,"F2B705","D7263D","a yellow school bus swinging out its red stop arm","honk","The arm is out. Nobody moves.","transit,control,silly"},
 	{"school desk","BMCC0K","G",1,1,5,"C49A6C","8E9196","small desk with attached chair","tap","Duck and cover, school edition.","school"},
 	{"school lunch","IJBDOJ","jM",3,3,2,"C8A0A0","7DAE3A","sectioned tray, mystery mush","whiff","Questionable. Edible. Probably.","edible,smelly,silly"},
 	{"school nurse","LMCJNA","QF",3,5,4,"F8FAFC","DC2626","ice pack, bandages, thermometer","ding","Have you tried ice and a nap?","school,healer"},
@@ -397,10 +403,4 @@ return {
 	{"score","KHBO1E","WFO",3,6,2,"FACC15","111827","flip-number board rolling up to 999 with flashing bulbs","ding","New high score! Enter initials: AAA.","gaming,sport"},
 	{"scoreboard","BMDCII","Gd",1,1,6,"24262A","F1C40F","big lit-up number board","bonk","Home team: winning.","sport"},
 	{"scorpion","AJBJQA","fTMN",4,6,2,"6A4A1E","E8A84A","big pincers, curled stinger tail","skitter","Glows blue under black light.","arachnid,spooky,venomous,desert"},
-	{"scorpion ballista","CMCMxI","Te",5,5,4,"8B5A2B","A86F32","small bolt-thrower on tripod","creak","A tiny ballista with a big sting.","medieval,siege,heavy"},
-	{"scorpion pepper","IABAKK","KMP",7,7,2,"C8202B","8A1E1E","wrinkly pod with stinger tail","sizzle","Stings like a scorpion.","edible,spicy,flammable"},
-	{"scorpionfish","AJBJEC","dZMB",3,6,1,"B85A3A","E8B898","frilly camo fish, venom spines","splash","Camouflage plus stings.","fish,aquatic"},
-	{"scorpionfly","AMAJFB","jdAP",1,6,1,"E8A02A","1E1E1E","fly with scorpion tail","buzz","Scorpion tail. Totally harmless.","insect"},
-	{"scorpius","MHCEKJ","TMe",5,5,5,"FFFFFF","E53935","curving stars with a red heart star","rumble","Stings from the sky.","space,zodiac"},
-	{"scotch bonnet","IABAKK","KeP",6,7,2,"F2A62B","D8302B","squat bonnet-shaped pod","sizzle","A pretty hat full of fire.","edible,spicy,flammable,pepper"},
 }

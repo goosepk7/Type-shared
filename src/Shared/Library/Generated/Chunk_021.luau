@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pueblo","EEDCII","GS",3,1,8,"D7A16A","A1887F","stacked flat-roofed clay rooms, ladders","thud","Ladders up, enemies down.","structure,building"},
+	{"puff adder","AMCJCD","fMNO",4,6,3,"C8A06A","3A2A1A","chunky chevron viper","hiss","Puffs up. Strikes fast.","reptile,venomous"},
+	{"puff pastry","IMCIII","Ga",3,3,3,"F2D08A","E8B860","flaky golden layered square","thud","Puffs up and gets defensive.","edible"},
+	{"puff puff","IMAELB","eVP",2,7,1,"D9A04A","F2C870","round fried dough balls","pitter","Fluffy fried balls of joy.","edible,sweet"},
+	{"puffball","NJBDOI","jEMP",3,1,2,"F5F5F5","BCAAA4","white round ball that bursts into dust","poof","Poof! Cough cough cough.","plant,fungus"},
 	{"puffbird","AMAJDB","dA",1,7,1,"8A6A4A","F2F2EE","puffy round bird","tweet","Very puffy. Very still.","bird,cute"},
 	{"puffed rice","IMAELB","eVP",2,7,1,"F7F2E0","E8D8A8","tiny puffy grains","pitter","Crunchy air.","edible,sweet,snack"},
 	{"pufferfish","AJBJEC","UdWTMB",3,6,1,"E8D08A","6E5A3A","spiky round balloon fish","splash","Inflates into a spiky balloon. Do not lick.","fish,aquatic"},
@@ -390,7 +395,7 @@ return {
 	{"riveter","JKBAwK","Te",3,8,4,"8E9196","C0392B","pneumatic rivet gun","rattle","Rat-a-tat-tat-tat.","tool"},
 	{"rizz master","LMCJNA","jcO",3,6,3,"F472B6","111827","smooth hair, finger guns","ding","Charms the enemy. Enemy forgets to fight.","meme"},
 	{"road","EMDNII","DS",1,1,8,"424242","FFEB3B","grey asphalt strip with lane lines","thud","All roads lead to battle.","structure"},
-	{"road flare","BABNKI","Kc",2,3,1,"C0392B","FF6A1A","stick spewing red sparks","thud","Look here! Over here!","camping,outdoor"},
+	{"road flare","BABNKI","KSc",2,3,3,"D7263D","FF6A1A","a red stick flare spitting sparks on the road","sizzle","Look here! Over here!","transit,area,fire"},
 	{"road grader","DEDKHL","DkIg",5,3,9,"FFC107","424242","long body with a big middle blade","engine","Smooths the road. And the opposition.","mechanical,vehicle,land"},
 	{"roadrunner","AMBJDA","d",2,10,1,"8A6A4A","D8C8B0","long tail, crest, running pose","tweet","Meep meep. Runs at 20 mph.","bird,cute"},
 	{"roar","KFCFOB","jkO",6,9,1,"FF8A65","FFE0B2","thunderous cone ring with flying leaves","roar","ROAAAR! Everyone backs off.","loud"},
@@ -398,9 +403,4 @@ return {
 	{"roast beef","IGBOKI","F",2,5,3,"8A2E2E","F2D8C8","sliced pink roast","crunch","A feast of thin pink slices.","edible,healthy"},
 	{"roast chicken","IGCOKI","Fc",2,5,3,"C8762B","F2D88A","golden roasted bird, legs up","crunch","Sunday dinner, golden and glorious.","edible,healthy"},
 	{"roast potatoes","IMAELB","eVP",2,7,1,"D9A04A","F2D07A","golden crispy chunks","pitter","Crunchy outside, fluffy inside.","edible"},
-	{"roast turkey","IGCOKI","Fc",2,5,3,"B0602B","F2D88A","big roasted bird on platter","crunch","A whole feast, ready to share.","edible,healthy,holiday"},
-	{"roasted chestnuts","IABOKI","F",2,5,3,"6B3A1E","E8A85A","paper bag of split brown nuts","crunch","Warm hands, warm hearts.","edible,healthy"},
-	{"rob","KIBONA","DZb",4,8,1,"111827","FACC15","masked figure dashing off with a bulging swag sack","jingle","Yoink. Legally distinct from borrowing.","villain,stealth"},
-	{"robber","LICJNA","DZb",4,7,3,"111827","F8FAFC","striped shirt, mask, loot bag","whoosh","Bag says LOOT. Very subtle.","villain"},
-	{"robber fly","AMAJFB","dAfTP",1,6,1,"6A5A44","C8A07A","bristly fly with beard","buzz","Bearded hunter. Catches wasps.","insect"},
 }

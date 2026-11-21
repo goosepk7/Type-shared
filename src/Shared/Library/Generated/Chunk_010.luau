@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fishing spider","AJBJQA","fMNB",2,6,2,"8A6A4A","C8A07A","big spider on water","skitter","Runs on water. Fishes.","arachnid,spooky,venomous"},
+	{"fishman","ABCJNA","fB",4,6,4,"0F766E","A3E635","bulgy-eyed fish-headed humanoid","splash","Smells exactly how you think.","aquatic,spooky"},
+	{"fishmonger","LBCJNA","dk",3,4,4,"0EA5E9","F8FAFC","apron, giant fish in hand","splat","Slaps you with a trout.","silly"},
 	{"fissure","HEDNID","lTe",5,6,1,"4A3726","FF8A2A","a crack racing along the ground, slabs heaving up","crack","Mind the gap. It is coming to you.","natural,earth,terrain"},
 	{"fist","KMBAKB","kf",4,9,3,"FFCC80","FFFFFF","glowing knuckle impact","pow","Five fingers. One message.","melee"},
 	{"five spice","IFBDOJ","jPO",2,5,1,"8A4A2A","C8803A","brown spice heap","puff","Five spices, one punch.","edible,spice"},
@@ -228,6 +231,7 @@ return {
 	{"frittata","IMBAKK","Uke",3,7,2,"F2D23A","7DBE3A","thick round egg bake","whoosh","An omelet that never folded.","edible,breakfast"},
 	{"frog","AMAJAG","UHe",1,5,1,"4AA03A","E8E07A","wide mouth, bulging eyes, long legs","croak","Jumps 20 times its length. Ribbit.","amphibian,wetland"},
 	{"frog knight","ABBJAG","UfB",3,7,3,"4D7C0F","94A3B8","frog in a tin helmet with a reed spear","croak","Leaps into battle. Ribbit.","warrior,aquatic,silly"},
+	{"frog leap","ABCOAG","UkY",4,9,2,"56BA46","4EA0C8","you leap like a frog and land with a splash","splash","Never checks the depth first.","critter,amphibian,dash,leap"},
 	{"frog prince","ABBJAG","UcB",2,6,3,"4D7C0F","FACC15","frog with a tiny golden crown","croak","One kiss. Big transformation.","folklore,royal,cute"},
 	{"frogfish","ABAJEC","dZHB",1,6,1,"F2C02A","D8702A","lumpy fish that walks on fins","splash","Walks on its fins. Gulps fast.","fish,aquatic"},
 	{"front","KFBO6B","DkI",3,8,2,"EF4444","FACC15","pointing banner and a line surging ahead","horn","Onward! Forward! That way! Probably!","warrior"},
@@ -399,8 +403,4 @@ return {
 	{"gashadokuro","AIFJNA","ikfO",8,3,8,"E7E5E4","1F2937","towering skeleton fifteen times human size","rattle","Rattles so loud it wakes the neighbors.","yokai,undead,giant,spooky"},
 	{"gasp","KMAFOB","O",1,9,1,"FFFFFF","B3E5FC","sharp quick inhale ring","gasp","*GASP* Everyone freezes.","silly"},
 	{"gastonia","AMDJAA","GkfT",6,3,9,"7A6A4A","C8A07A","spiky shoulder armored","grunt","Spikes everywhere. Hugs: no.","dinosaur,extinct,reptile,armored"},
-	{"gastornis","AMDJDA","Dkf",6,8,5,"6A5A4A","C8A07A","huge flightless bird with massive beak","boom","A giant bird. Ate seeds, probably.","bird,flightless,extinct"},
-	{"gate","EEDCII","GS",3,1,8,"6D4C41","455A64","heavy double doors with iron bands","thud","Knock all you like.","structure,defense"},
-	{"gate surge","KHCNNI","DWkf",7,8,4,"46C8BA","DC322A","a body bursting with colour as inner gates open one by one","roar","Gate one: warm. Gate four: everyone else should leave.","anime,ninja,buff"},
-	{"gatehouse","EEEMII","Ge",4,1,10,"9E9E9E","5D4037","twin towers flanking an arched gate","thud","Two towers, one gate, zero chance.","structure,defense,ancient"},
 }

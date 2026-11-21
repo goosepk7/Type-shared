@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lobster","ABBJRA","GfTO",3,4,5,"C8301E","3A1A12","big claws, segmented tail","clack","Pinches first. Asks questions later.","crustacean,aquatic,armored"},
+	{"lobster roll","IGBOKI","F",2,5,3,"E8604A","F2D08A","buttered bun with pink filling","crunch","A fancy roll from the seaside.","edible,healthy"},
+	{"lobster trap","BMCLII","cO",2,1,4,"8B5A2B","B89B6A","slatted wooden box with funnel","snap","Easy in. Not easy out.","trap,ocean"},
+	{"loch ness","MBENII","ZSh",4,1,8,"1A237E","2E7D32","long dark Scottish lake in hills","rumble","Something is swimming in there.","place,landmark,mythical"},
 	{"lock and chain","BKBLJK","O",1,1,7,"5B6168","8A929B","padlock wrapped in heavy chain","clink","Not going anywhere.","hardware"},
 	{"locker","BKCCII","GO",1,1,7,"2F6FD1","8E9196","tall metal school locker","tap","Stuffed in a locker. Classic.","school"},
 	{"locket","BMAOKJ","F",1,5,3,"D4A72C","E88AA5","heart-shaped opening pendant","chime","Holds a tiny portrait. And hope.","treasure,shiny"},
@@ -399,8 +403,4 @@ return {
 	{"memory eraser","OHABwI","jO",3,8,2,"C9CED4","F2F2EE","slim pen with flash bulb","hum","Look here. Flash. What were we doing?","scifi"},
 	{"menorah","BHBMKI","KFc",2,1,4,"D4A72C","F2F2EE","branched candle holder","jingle","Lights up the darkness.","holiday"},
 	{"mentor","LHCJNA","Fh",4,4,4,"F8FAFC","0EA5E9","wise elder with a walking stick","chime","Teaches you one move. It's the right one.","hero"},
-	{"menu","KMCCnI","GNO",3,2,6,"1F2937","F8FAFC","dark panel: RESUME, OPTIONS, QUIT, with a blinking cursor","click","Paused. You cannot pause an online game, Mum.","gaming"},
-	{"menudo","IBBOGI","FS",3,4,3,"C8302B","F2E8C8","red tripe soup","slurp","A hearty red soup.","edible,warm,healthy"},
-	{"meow","KMBF6B","jdcO",2,6,1,"FDBA74","FFFFFF","sound rings shaped like cat ears with a tiny paw print","meow","Feed me. Feed me. It is 4 a.m. Feed me.","pet,cute"},
-	{"mercenary","LKCJNA","Dfe",6,6,6,"57534E","DC2626","mismatched armor, coin pouch, scar","clang","Will fight for you. For a price.","warrior"},
 }

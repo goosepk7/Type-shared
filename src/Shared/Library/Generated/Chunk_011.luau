@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gastornis","AMDJDA","Dkf",6,8,5,"6A5A4A","C8A07A","huge flightless bird with massive beak","boom","A giant bird. Ate seeds, probably.","bird,flightless,extinct"},
+	{"gate","EEDCII","GS",3,1,8,"6D4C41","455A64","heavy double doors with iron bands","thud","Knock all you like.","structure,defense"},
+	{"gate surge","KHCNNI","DWkf",7,8,4,"46C8BA","DC322A","a body bursting with colour as inner gates open one by one","roar","Gate one: warm. Gate four: everyone else should leave.","anime,ninja,buff"},
+	{"gatehouse","EEEMII","Ge",4,1,10,"9E9E9E","5D4037","twin towers flanking an arched gate","thud","Two towers, one gate, zero chance.","structure,defense,ancient"},
 	{"gatekeeper","LKDCYI","GkO",5,1,8,"57534E","D4AF37","stout armoured guard with a giant key and a crossed halberd","clang","What is the password? Wrong. It is always wrong.","defense,medieval"},
 	{"gatling gun","CKDMwI","TeV",7,7,6,"A86F32","5A3A1E","rotating barrel cluster on wheels","rattle","Crank to shoot. Shoot to win.","medieval,siege,heavy"},
 	{"gaucho","LECKNA","DHg",5,7,5,"7C2D12","F5F5F4","wide hat, poncho, bolas","yeehaw","Lassos with style. And rocks.","western"},
@@ -399,8 +403,4 @@ return {
 	{"grape jelly","IMBLGI","SNP",2,3,3,"5A1E5E","8E2B7E","jar of purple jelly","gloop","Purple, wobbly, sticky.","edible,sticky,sauce,sweet"},
 	{"grape juice","IBBOKI","F",2,6,2,"5A1E5E","8E2B7E","glass of purple juice","slurp","Purple power. Stains everything.","edible,drink"},
 	{"grape soda","IBBFKI","EkI",3,7,1,"7A2A9A","C8A0E8","purple fizzy can","fizz","Purple fizz, max chaos.","edible,drink,fizzy"},
-	{"grapefruit","IMBAKF","jeO",3,6,2,"F5A07A","D24E5A","big round citrus, pink flesh","squirt","Squirts directly in the eye. Every time.","edible,fruit,sour"},
-	{"grapevine","NGCNMI","ScN",2,1,3,"6A1B9A","7CB342","twisted vine with hanging grape bunches","rustle","Grapes drop. Enemies slip.","plant,crop"},
-	{"grapple gun","OKBAwI","lHe",3,10,3,"24262A","C9CED4","pistol that fires a hook and reels you in","twang","Thwip! Yoink.","modern,mobility"},
-	{"grappling iron","CKBAJI","He",3,6,4,"5B6168","B89B6A","multi-hook thrown on rope","bang","Pull that ship closer.","pirate"},
 }

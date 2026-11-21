@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"krait","AMCJCD","fMN",4,6,3,"1E1E24","F2F2F0","black and white banded","hiss","Night shift snake. Stripy.","reptile,venomous,nocturnal"},
+	{"kraken","ABFJCC","kHOB",9,4,9,"7F1D1D","F87171","colossal squid with ship-crushing tentacles","roar","Release it. Please. It's been waiting.","mythical,aquatic,boss,danger"},
+	{"kraken king","ABFJCC","kHOB",9,3,10,"450A0A","FCA5A5","sky-sized kraken with crown of barnacles","roar","Eats fleets. Burps anchors.","mythical,aquatic,boss,danger"},
+	{"kraken spawn","ABBJCC","HB",3,6,3,"991B1B","FCA5A5","small red squid with big eyes","splash","One day it'll eat ships. Today it eats shrimp.","aquatic,cute"},
 	{"kraken tentacle","ABDLCI","kHO",6,4,6,"991B1B","FCA5A5","enormous tentacle rising from the floor","splash","Something's down there. Something big.","aquatic,trap"},
 	{"krampus","AIDJNA","Dfh",6,6,6,"1C1917","DC2626","shaggy horned figure with chains and basket","cackle","Santa's grumpy partner. Very hairy.","spooky,christmas,holiday"},
 	{"krill","ABBJLA","fPB",2,4,5,"F27A6A","F2C0B0","tiny see-through pink shrimp swarm","clack","Small. Many. Whale snack.","crustacean,aquatic,armored"},
@@ -263,7 +267,7 @@ return {
 	{"life","FGCOKJ","WF",4,5,3,"7ED957","FFF8D6","green-gold glowing leafy aura","chime","It finds a way.","holy,plant"},
 	{"life drain","KICBKI","iF",5,7,2,"C62828","7E57C2","red wispy stream flowing back to caster","hum","Your health? Mine now.","spooky"},
 	{"life jacket","BBCONI","GB",1,5,4,"E67E22","24262A","puffy orange vest","bonk","Safety first. Style second.","rescue"},
-	{"life preserver","BBCAKF","He",1,6,4,"F2F2EE","C0392B","red and white ring on rope","bonk","Toss, catch, haul in.","rescue,ocean"},
+	{"life ring","BBCAKK","He",3,6,3,"D7263D","FFF1D6","a red and white life ring on a rope","bonk","Toss, catch, haul in.","transit,pull,ocean"},
 	{"life surge","KGCOKJ","WF",2,6,3,"69F0AE","FFF59D","green vitality burst rising up","chime","Full health. Full speed.","support"},
 	{"lifeblood","FGBOKJ","F",3,5,2,"D9433F","FFB3B0","warm glowing pulse aura","thump","The pulse of a true hero.","holy"},
 	{"lifeboat","DBCKHC","DFkgB",3,7,6,"FF6F00","F5F5F5","bright orange covered boat","splash","Saves friends. Splashes foes.","vehicle,aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"loaf of bread","IMCCII","GF",3,2,6,"C8904A","F5E6C8","rounded loaf with crust","thud","One loaf. Endless defense.","edible,giant"},
 	{"lobby","MMDNlI","jSN",4,1,5,"6366F1","F8FAFC","big room of idle jumping avatars under a countdown clock","music","Waiting for players... 1 of 12.","gaming,place"},
 	{"lobelia","NGANMI","dFS",1,1,1,"3949AB","FFFFFF","spilling mounds of tiny blue flowers","rustle","Tiny blue waterfall.","plant,flower"},
-	{"lobster","ABBJRA","GfTO",3,4,5,"C8301E","3A1A12","big claws, segmented tail","clack","Pinches first. Asks questions later.","crustacean,aquatic,armored"},
-	{"lobster roll","IGBOKI","F",2,5,3,"E8604A","F2D08A","buttered bun with pink filling","crunch","A fancy roll from the seaside.","edible,healthy"},
-	{"lobster trap","BMCLII","cO",2,1,4,"8B5A2B","B89B6A","slatted wooden box with funnel","snap","Easy in. Not easy out.","trap,ocean"},
-	{"loch ness","MBENII","ZSh",4,1,8,"1A237E","2E7D32","long dark Scottish lake in hills","rumble","Something is swimming in there.","place,landmark,mythical"},
 }

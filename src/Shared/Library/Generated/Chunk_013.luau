@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"herald","LMCJNA","Oh",3,5,3,"1D4ED8","FACC15","tabard, trumpet, scroll","horn","HEAR YE. HEAR YE. Ow, my ears.","royal"},
+	{"herb","NGANMI","FS",1,1,2,"7CB342","9CCC65","small bundle of fragrant leaves","rustle","Rub it on. Feel better.","plant,herb"},
+	{"herbal tea","IABOKI","FN",2,5,2,"E8D08A","F2E8C8","teacup with leaves","slurp","Gentle, soothing, sleepy.","edible,drink,warm"},
+	{"herbalist","LJCJNA","FM",3,4,4,"365314","A16207","jars of herbs, mortar and pestle","bubble","Has a remedy for everything. Tastes awful.","healer,plant"},
 	{"hercules","LEDJXA","Dklf",8,6,9,"B45309","FDE68A","mega-muscled hero in a lion skin swinging an olive-wood club","grunt","Twelve labours done. Yours is number thirteen.","mythical,greek,warrior"},
 	{"hercules beetle","AMBJFA","Gklf",3,3,6,"C8B87A","1E1E1E","giant beetle with massive horn","click","Strongest bug. Named accordingly.","insect,armored"},
 	{"herd","AEEFLA","DkIP",7,7,7,"8B5A2B","E8D2B0","wide wave of galloping hooves and horns in dust","rumble","One got spooked. Now it is everyone's problem.","farm,wild,swarm"},
@@ -399,8 +403,4 @@ return {
 	{"immortal jellyfish","ABAJGJ","FSMOB",1,2,1,"F2E8E8","D8302A","tiny jelly with red center","squelch","Gets old, then turns young again.","aquatic,ocean,venomous"},
 	{"immortality","KHEOKJ","GF",2,4,9,"FFF8E1","FFD54F","eternal golden glow with phoenix wisps","choir","Not today. Not ever.","holy"},
 	{"immovable","KEDOKI","G",2,1,10,"6D4C41","BCAAA4","heavy stone-glow around planted feet","thud","Not moving. Ever.","defence,heavy"},
-	{"immunity","KHBOKJ","GF",1,4,5,"B2EBF2","FFFFFF","clear shimmering shell","chime","Poison? Not interested.","support"},
-	{"imp","AAAJNB","KjAb",2,9,1,"DC2626","1F2937","tiny red horned prankster with bat wings","cackle","Small horns. Big mischief.","imp,mischief"},
-	{"imp swarm","AACJLB","KAPb",5,9,3,"DC2626","1F2937","cloud of giggling red imps","cackle","Mischief, multiplied.","imp,swarm"},
-	{"impala","AMCJAA","UDk",4,9,4,"C88A4A","F2EEE6","lyre horns, leaps 10 feet high","bleat","Jumps like it's late for something.","mammal,wild"},
 }

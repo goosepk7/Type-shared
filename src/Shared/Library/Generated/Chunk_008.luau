@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dinosaur","AMDJBA","DkfT",7,6,7,"5A8A3A","D8C86A","classic dinosaur, big tail, scaly","roar","Was here first. Wants it back.","dinosaur,extinct,reptile,predator"},
+	{"dinosaur car","DMCKHL","Dkfg",4,6,5,"43A047","FFEB3B","car shaped like a dinosaur","engine","RAWR. Vroom. RAWR.","vehicle,silly"},
 	{"dinosaur costume kid","LMBJNA","Dd",2,7,3,"15803D","F97316","kid in inflatable dinosaur suit","roar","Stomps. Rawrs. Trips.","cute,silly"},
 	{"dinosaur egg","AMBJKI","Wh",2,4,4,"D8C8A8","8A7A5A","big speckled egg, cracking open","growl","Something inside is getting impatient.","extinct,ancient,dinosaur"},
 	{"dip","IMBL2I","ScN",2,1,2,"F5F0DC","84CC16","bowl of creamy dip with one broken chip stuck in","gloop","Double dippers will be prosecuted.","edible,sauce,sticky"},
@@ -324,7 +326,7 @@ return {
 	{"editor","LMCJNA","TeX",3,5,3,"B91C1C","F8FAFC","person with a giant red pen crossing things out","scratch","Too long. Cut the enemy by half.","job,school"},
 	{"edmontonia","AMDJAA","GkfT",6,3,9,"6A6A4A","C8A87A","shoulder spikes, armored","grunt","Shoulder spikes like a hockey player.","dinosaur,extinct,reptile,armored"},
 	{"edmontosaurus","AMDJAA","dk",5,5,6,"6A7A6A","C8C0A0","big flat duckbill","honk","Thousands of teeth. Eats plants.","dinosaur,extinct,reptile"},
-	{"eel","ABCJCC","DZfB",4,7,4,"5A6A3A","C8C88A","long snakelike fish, open mouth","splash","Slippery. Snappy. Hides in holes.","fish,aquatic"},
+	{"eel zap","ADCNCC","LOB",4,6,2,"46783C","46DCFF","an eel bursts from a puddle and zaps everyone in it","zap","Slippery. Snappy. Also a battery.","critter,fish,zone,stun"},
 	{"eelgrass","NBCLMI","ZSNB",1,1,2,"558B2F","7CB342","long ribbons waving underwater","splash","Waves gently. Hides everything.","plant,aquatic"},
 	{"egg","IMBAKF","jke",3,6,2,"F7F2E8","F2D23A","smooth white oval","splat","Fragile, but makes a satisfying splat.","edible,breakfast"},
 	{"egg and cheese","IGBOKI","F",2,5,3,"F2D23A","F2C24A","melty egg cheese stack","crunch","Simple, melty, morning power.","edible,healthy,breakfast"},
@@ -384,7 +386,7 @@ return {
 	{"elephant bird","AMEJDA","Dkf",6,8,5,"8A6A4A","D8C8A8","colossal round bird, laid huge eggs","boom","Laid eggs the size of footballs.","bird,flightless,extinct"},
 	{"elephant seal","ABDJEC","UkfB",6,5,8,"7A6A5E","B8A898","giant blubbery seal, droopy trunk nose","roar","Fights by belly-flopping. Very loud.","mammal,aquatic"},
 	{"elephantnose fish","ABAJEC","dB",1,6,1,"3A3A3A","8A7A6A","fish with trunk-like chin","splash","Has a tiny trunk. Very smart.","fish,aquatic"},
-	{"elevator","OKDL1I","lY",2,1,7,"C9CED4","DDE3E8","box behind sliding doors","clank","Ding! Going up.","mechanical"},
+	{"elevator","OKDL1I","klS",3,2,4,"C9A041","2BB3A3","an open brass lift car shooting up out of the floor","ding","Ding! Going up.","transit,trap,silly"},
 	{"elf","AGCJNA","ZTe",5,8,4,"15803D","FDE68A","pointed ears, longbow, leaf cloak","whoosh","Never misses. Never lets you forget it.","mythical,archer"},
 	{"elf archer","AGCJNA","ZTe",5,8,3,"15803D","FDE68A","elf drawing a silver longbow","twang","Three arrows. One breath.","mythical,archer"},
 	{"elf city","EGFMII","GFSe",5,1,7,"9CCC65","FFD54F","graceful homes built into giant trees","chime","Elegant. Leafy. Full of archers.","structure,magic,mythical"},
@@ -401,6 +403,4 @@ return {
 	{"ember cloud","FACDOJ","KQ",5,4,2,"FF7043","FFE0B2","glowing cloud raining sparks","crackle","A cloud with a temper.","fire"},
 	{"ember phoenix chick","AAAJDB","KAF",2,6,1,"F97316","FEF08A","fluffy fire chick with flame tuft","chirp","Reborn from a burnt toast.","fire,cute,bird"},
 	{"ember sprite","AAAJNB","KjA",2,9,1,"F97316","FDE047","tiny flame fairy","crackle","Small spark. Big trouble.","fairy,fire"},
-	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
-	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
 }
