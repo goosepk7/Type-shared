@@ -327,7 +327,7 @@ return {
 	{"good witch","LHCJNJ","AFh",4,5,4,"F9A8D4","FDE68A","sparkly gown, star wand, bubble ride","chime","Bibbidi... something. Pumpkin carriage.","magic,holy"},
 	{"goody bag","BMBL2I","ch",1,1,1,"FF3EA5","F2F2EE","small bag of treats","pop","Surprises inside!","party"},
 	{"goofball","LMCJNG","Ujd",3,6,3,"FACC15","F472B6","silly face, propeller hat","giggle","Takes nothing seriously. Including you.","silly"},
-	{"googly eyes","CMAOJK","jd",1,7,1,"F2F2EE","24262A","wobbly stick-on eyes","boing","Stick them on anything. Instant comedy.","silly"},
+	{"googly eyes","CMAAJK","jde",3,7,2,"F2F2EE","24262A","wobbly stick-on eyes that make the world wobble","boing","Stick them on anything. Instant comedy.","goofy,silly,prank"},
 	{"goose","ABCJDC","DAfOB",3,5,2,"E8E4DC","F28A1E","long neck, honking open beak, wings out","honk","Fear it. Respect it. Honk.","bird,aquatic,silly"},
 	{"gooseberry","IGAELB","jeV",2,7,1,"AFC35A","E8F0B0","striped translucent green berry","pitter","Sour, stripy, and suspicious.","edible,fruit,sweet"},
 	{"gopher","AMAJAA","Cdb",1,6,1,"9A7450","D8C0A0","buck teeth, cheek pouches","squeak","Ruins lawns. Proudly.","mammal,cute"},

@@ -3,11 +3,16 @@
 -- (data/misspellings.jsonl + per-entry 'ms'), sorted.
 return {
 	keys = {
-		"zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands",
-		"zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander",
-		"zylophone","zylophone stairs",
+		"yelow card","yet","yeti chrage","yetti","yetti charge","yety","yoag","yoeyo","yogert","yogga","yoik","yokay","yollo","yoloo","yonk","yormungandr",
+		"yougurt","youkay","younicorn","yufo","yugio trap","yuk","yumm","yummi","za hado","za hand","za handoo","za wardo","za warudoo","zanpackuto","zanpakto","zanpakuto realese",
+		"zanzokin","zanzokn","zapp","zawardo","zebrah","zeebra","zeero","zenit haste","zenith hast","zenith hasted","zepplin","zero gravaty","zero gravety","zero gravit","zero gravitty","zero hr",
+		"zeuss","ziggaraut","zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee",
+		"zombei","zombi hands","zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues",
+		"zuse","zwiehander","zylophone","zylophone stairs",
 	},
 	owners = {
-		11514,11518,11518,11518,11519,11518,11520,11520,11519,11520,11521,11540,11525,11525,11525,11531,11531,11531,11531,11525,11525,11531,11546,11525,11540,11546,11510,11548,11548,11512,11512,11553,11450,11450,
+		7374,11465,470,11469,470,11469,11478,11475,11481,11478,11482,11483,11484,11484,11482,5347,11481,11483,10826,10797,7901,10799,11492,11492,6959,6959,6959,11513,11513,10814,10814,10814,3632,3632,11500,11513,11502,11502,11512,11509,
+		11509,11509,986,11192,11192,11192,11192,11513,11514,11516,11516,11520,11520,11520,11521,11520,11522,11522,11521,11522,11523,11542,11527,11527,11527,11533,11533,11533,11533,11527,11527,11533,11548,11527,11542,11548,11512,11550,11550,11514,
+		11514,11555,11452,11452,
 	},
 }

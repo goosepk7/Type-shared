@@ -389,7 +389,7 @@ return {
 	{"myconid","AGBJNA","jMP",3,3,4,"DC2626","F5F5F4","walking red-capped mushroom person","puff","Talks in spores. Says hello a lot.","plant,cute"},
 	{"mynah","AMAJDB","jdA",1,7,1,"1E1E1E","F2C82A","black bird, yellow face patch","tweet","Talks more than a parrot.","bird,cute"},
 	{"myrtle","NGCCMI","GWkS",2,1,5,"8D6E63","E91E63","smooth bark, frilly pink flowers","rustle","Frilly. Fierce.","plant,tree"},
-	{"mystery meat","IJBDOJ","jM",3,3,2,"8A6A6A","C8A0A0","grey-pink slab, questionable","whiff","Nobody knows. Nobody asks.","edible,smelly,silly"},
+	{"mystery meat","IJBG7G","UjE",4,5,3,"8A6A6A","B9D36A","wobbly grey meatloaf that does something random","splat","Nobody knows. Nobody asks.","goofy,gross,food,random"},
 	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
 	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
 	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},

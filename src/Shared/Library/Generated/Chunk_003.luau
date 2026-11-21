@@ -34,7 +34,7 @@ return {
 	{"bells","KKCF6I","kPO",4,6,3,"D4AF37","B45309","three swinging brass bells sending out ringing rings","bell","Ding dong. Ding DONG. DING DONG.","music,loud"},
 	{"belly","BMCI3G","GUka",3,3,7,"F0C09A","E39B7B","big round bouncy belly with a belly button","boing","Rumbles before it rolls.","body,silly,defense"},
 	{"belly button","BMAL5I","HNb",1,2,2,"E8B48A","9E9E9E","small swirly navel with lint floating in","pop","Where lost socks' lint retires.","body,silly"},
-	{"belly flop","KMCNOI","UkO",4,5,3,"FFCC80","4FC3F7","wobbly belly impact ring","splat","Ten out of ten. Ouch.","silly"},
+	{"belly flop","KBCNOG","UDk",5,5,3,"4FC3F7","FFCC80","you leap up and land belly-first in a huge splash","splat","Ten out of ten. Ouch.","goofy,silly,movement,splash"},
 	{"belt","BMAHJI","fH",1,7,3,"6B4226","D4A72C","leather strap with buckle","swish","Holds pants. Snaps foes.","clothing"},
 	{"beluga","ACDJEC","UDB",5,8,4,"F2F4F6","C8D4DE","white whale, round melon head, smiley","whistle","Sea canary. Sings, squeaks, giggles.","mammal,aquatic,ocean,arctic"},
 	{"bench","BMCC0I","G",1,1,6,"8B5A2B","5B6168","long wooden slatted bench","thud","Sit. Wait. Block.","furniture,household"},

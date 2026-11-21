@@ -143,7 +143,7 @@ return {
 	{"bacon","IABAKK","Kdc",3,5,3,"C8502B","F2D0B0","wavy striped strip","thud","Sizzles. Crackles. Summons everyone.","edible,savory"},
 	{"bacon and eggs","IMBOKI","WF",3,5,3,"C8502B","F2B81A","plate of bacon strips, eggs","chomp","The classic power breakfast.","edible,breakfast"},
 	{"bacteria","AJADLJ","SMVP",3,4,1,"84CC16","FDE047","cloud of tiny green rod-shaped wigglers with tails","squelch","Wash your hands. They can hear you coming.","science,toxic,swarm"},
-	{"bad breath","KJBFOB","jM",3,6,1,"AED581","FFF59D","green wavy cone with flies","haaah","Brush your teeth. Please.","silly,gross"},
+	{"bad breath","KJCBOB","kMI",4,5,2,"AED581","FFF59D","green wavy breath cone that blows people back","haaah","Brush your teeth. Please.","goofy,gross,silly,breath"},
 	{"bad dream","KICDOJ","jiO",5,5,2,"1A0033","E040FB","swirling dark cloud with glowing eyes","wail","Wake up! Oh wait, you are awake.","spooky"},
 	{"bad luck","KIBAKB","jN",2,6,1,"37474F","9E9E9E","tiny grey storm cloud on target","womp","Stepped on a rake. Again.","luck,silly"},
 	{"bad vibes","KIBDOJ","jN",2,4,1,"455A64","7E57C2","grumpy grey cloud with frowns","womp","Something's off. Everyone feels it.","silly"},

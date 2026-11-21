@@ -91,7 +91,7 @@ return {
 	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
 	{"rotisserie chicken","IGCOKK","F",2,5,3,"C8762B","F2C870","golden bird on spit","crunch","Spins until perfect.","edible,healthy"},
 	{"rotten egg","IJBDOJ","jSMP",3,3,2,"E8E0A0","8A9A3A","cracked grey egg, green fumes","whiff","Smell so bad it has its own weather.","edible,smelly,silly"},
-	{"rotten tomato","IJBDOJ","jMe",3,3,2,"8A3A2A","5E7A2B","squishy brown-red tomato, flies","whiff","For the worst performances only.","edible,smelly,silly"},
+	{"rotten tomatoes","IJCN7B","eNP",5,4,3,"C8402A","5E7A2B","squishy rotten tomatoes pelting the area","splat","For the worst performances only.","goofy,gross,food,rain"},
 	{"rottweiler","AMCJAA","GDQf",5,7,4,"1C1814","9A5A2A","muscular black dog, rust markings","bark","Big tough guardian. Secret cuddler.","mammal,pet"},
 	{"round","KMBF6B","FIO",3,6,1,"EF4444","F8FAFC","ring girl card reading ROUND 1 and a bell being struck","bell","Round one. FIGHT!","gaming,sport"},
 	{"round house","EECCII","GS",2,1,5,"C9A55A","8D6E63","round stone hut with a cone of thatch","thud","Round walls. No corners to hide in.","structure,defense,ancient"},

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spiral core","KFBGKI","Dkf",7,9,2,"7EC8FF","FFFFFF","a howling blue sphere spinning in your palm","hum","Spin it. Shove it. Done.","anime,ninja"},
 	{"spire","EMDMII","GSTe",3,1,6,"9E9E9E","5D5D5D","needle-thin pointed tower","thud","Very pointy. Very tall.","structure,defense,tower"},
 	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 	{"spirit animal","AHCJAA","GQF",4,6,3,"A5F3FC","FDE68A","glowing translucent animal companion","chime","Your inner animal, on loan.","spirit"},
@@ -227,7 +228,7 @@ return {
 	{"stinger","BJAAuB","TMe",3,9,1,"2B2B2B","F5C518","tiny black barbed needle with a yellow base","zing","Small poke. Big regret.","sharp,insect,venomous"},
 	{"stinging nettle","NJBLMI","STM",3,1,3,"558B2F","33691E","hairy toothed leaves","rustle","Brush past it once. Never again.","plant"},
 	{"stingray","ABCJEC","STMB",4,5,3,"8A7A62","E8E0D2","flat diamond body, whip tail with barb","whoosh","Shuffle your feet. Seriously.","fish,aquatic,ocean"},
-	{"stink bomb","CJADKF","jSMe",2,7,1,"6B7B3A","8BC34A","small vial leaking green fumes","poof","Smells like victory. Mostly socks.","silly"},
+	{"stink bomb","CJBDKF","QSMe",4,5,3,"8BC34A","5E7A2B","corked green stink bomb; its cloud chases people","poof","Smells like victory. Mostly socks.","goofy,gross,silly,cloud"},
 	{"stink bug","AJAJFA","jdAMP",1,6,1,"6A5A3A","C8A86A","shield-shaped flat bug","buzz","Smells awful when squished. Avoid.","insect"},
 	{"stink cloud","FJBDOJ","jdN",2,5,1,"C0CA33","827717","yellow-green puff with wavy stink lines","pfft","Everyone leaves. Fast.","silly,toxic"},
 	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
@@ -402,5 +403,4 @@ return {
 	{"summoner","LLCJNA","ehY",5,4,3,"6D28D9","F0ABFC","robes with summoning circle sigils","zap","Doesn't fight. Has friends who do.","magic"},
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
 	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
-	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 }

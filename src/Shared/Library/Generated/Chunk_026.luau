@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
 	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
@@ -93,6 +94,7 @@ return {
 	{"sweat bee","AJAJLB","iATMP",2,7,1,"2AC86A","F2D82A","tiny metallic bee","buzz","Drinks your sweat. Weird.","insect,swarm,venomous"},
 	{"sweatband","BMAONF","F",1,7,1,"F2F2EE","C0392B","stretchy terry band","bonk","Peak sport energy.","sport"},
 	{"sweater","BMCONI","JF",1,4,2,"2E8B57","C0392B","knitted reindeer sweater","swish","Festive and slightly itchy.","clothing,holiday"},
+	{"sweaty sock","BJBHJK","UMe",4,6,2,"F4F1E6","E0533D","stinky striped tube sock flung like a boomerang","whiff","Worn for eleven days. Undefeated.","goofy,gross,silly,boomerang"},
 	{"swedish meatballs","IMBGKF","DkI",3,5,6,"7A3A2A","C8102E","meatballs with cream sauce, lingonberry","rumble","Meatballs with a flat-pack vibe.","edible,heavy"},
 	{"sweep away","KFCFOB","kI",4,7,1,"E1F5FE","FFFFFF","low wide sweeping arc of wind","swish","Clean sweep. Everybody out.","air"},
 	{"sweet and sour chicken","IMBLGI","jN",2,3,3,"E8402B","F2A62B","glossy red-orange chicken chunks","gloop","Sweet. Sour. Can't decide. Doesn't need to.","edible,sticky"},
@@ -401,6 +403,4 @@ return {
 	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
 	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
 	{"thyme","IGBOMI","WF",2,4,3,"5E7A4A","8A9A6A","tiny-leaf sprigs","crunch","There's always thyme for this.","edible,vegetable,healthy,herb"},
-	{"tiara","BHAONI","F",2,5,3,"C9CED4","8E5CC2","sparkly jewelled headband","swish","Princess mode: on.","royal,shiny"},
-	{"tibetan mastiff","AMDJAA","GDQf",6,7,4,"6A3A1E","E8A04A","huge maned guardian dog","bark","A lion disguised as a dog.","mammal,pet"},
 }

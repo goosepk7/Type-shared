@@ -49,6 +49,7 @@ return {
 	{"sliding floor","BMDLII","jN",2,1,5,"C9CED4","8C8C88","tilting slick floor","snap","Wheeeee— back to the start.","trap,defense"},
 	{"slime","AJBJGG","UNV",2,4,3,"4ADE80","BBF7D0","wobbly translucent jelly dome, two eyes","squelch","Bouncy, squishy, and a little sticky.","slime,cute"},
 	{"slime bomb","FJBGKI","dEN",3,6,1,"76FF03","C5E1A5","wobbly green blob bursting everywhere","splat","Everyone is slimed. Nobody is happy.","silly"},
+	{"slime bucket","BJBLII","SN",4,4,3,"7CE04A","5A6B7A","bucket on a stand that tips slime on passers-by","splat","Look up. Too late.","goofy,gross,prank,trap"},
 	{"slime swarm","AJCJLG","UVPh",4,4,4,"4ADE80","F472B6","dozens of bouncing jellies","squelch","Bounce bounce bounce bounce.","slime,swarm"},
 	{"slime toy","BMBLGI","SNO",1,3,1,"8BC34A","2E8B57","gooey green blob","squeak","Splorch. It's in your hair now.","toy,sticky,silly"},
 	{"slime trail","KJBOKD","dN",2,5,2,"76FF03","C5E1A5","glossy green trail behind caster","squelch","Slimy. Slippery. Effective.","silly"},
@@ -402,5 +403,4 @@ return {
 	{"spiny mouse","AMAJAA","CdFTb",1,6,1,"8A7A6A","F2E8D8","mouse with spiky back","squeak","Regrows skin like a lizard.","mammal,cute"},
 	{"spiny-tailed iguana","AMBJAA","Cf",2,9,2,"6A6A5A","C8B88A","iguana with spiky tail","hiss","Fastest lizard on the planet.","reptile"},
 	{"spiral","KLBL5K","jHO",3,5,1,"7C3AED","F472B6","spinning purple-pink hypno swirl","warp","Look into the swirl. Looook. Sleeepy.","shape,magic"},
-	{"spiral core","KFBGKI","Dkf",7,9,2,"7EC8FF","FFFFFF","a howling blue sphere spinning in your palm","hum","Spin it. Shove it. Done.","anime,ninja"},
 }
