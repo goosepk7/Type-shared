@@ -96,7 +96,7 @@ return {
 	{"sunny day","GHCNOI","F",3,4,3,"FFD54F","81D4FA","bright blue sky, warm golden glow","chime","Not a cloud in sight. Lovely.","cute"},
 	{"sunscreen","BHAOKI","G",1,5,1,"E67E22","F2F2EE","squeeze bottle of lotion","thud","SPF one billion.","camping,outdoor"},
 	{"sunset","MIENKJ","SN",4,2,6,"FF7043","7E57C2","orange and purple sky, low sun","chime","Ride off into it. Dramatically.","space,star"},
-	{"sunspot","MACNKJ","KS",5,3,5,"3E2723","FF9800","dark blotch on a blazing surface","rumble","A hot spot. Very hot.","space"},
+	{"sunspot","MACNKI","KIe",5,3,2,"3E2723","FF9800","a dark blotch with a blazing rim that flares","rumble","A hot spot. The middle is the cool part.","space,fire,weather"},
 	{"super grandma","LHCJNB","AFk",5,6,5,"C084FC","DC2626","grandma with a cape and curlers","whoosh","Faster than a speeding casserole.","hero,family,silly"},
 	{"super hearing","KLBOKI","a",1,5,2,"B39DDB","FFFFFF","glowing sound rings around ears","ping","Heard that from a mile away.","psychic"},
 	{"super jump","KFCOKG","kl",4,8,3,"FFD54F","B3E5FC","huge leap with landing shockwave","boing","See you up there.","speed"},

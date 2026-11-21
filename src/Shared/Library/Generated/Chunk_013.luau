@@ -58,7 +58,7 @@ return {
 	{"hit","KMBAKB","kf",3,8,2,"FFCC80","FFFFFF","comic impact star","thwack","The classic. Never fails.","silly"},
 	{"hitotsume-kozo","AMBJNA","jd",2,6,2,"1E3A8A","FDE68A","small bald boy with one big eye","giggle","Scares you. Runs off giggling.","yokai,silly"},
 	{"hive","EGCMII","SMeh",5,1,4,"E0A82E","8D5B1A","striped papery dome dripping honey, bees circling","buzz","Do not poke it. Somebody always pokes it.","insect,sticky"},
-	{"hoarfrost","FCBNOI","JSN",3,3,3,"D4EEF9","FFFFFF","feathery white crystals on every surface","crackle","Frost that grew a beard.","frozen"},
+	{"hoarfrost","GCCNOI","JSO",4,3,2,"D4EEF9","8CC4E4","feathery frost crystals creeping over the ground","crackle","Frost that grew a beard. And grabbed your feet.","frozen,winter,weather"},
 	{"hoary bat","ACBJDB","jiA",2,7,1,"8A7A6A","F2F2EE","frosted fur","screech","Looks dusted with frost.","mammal,nocturnal,spooky"},
 	{"hoatzin","AMBJDB","jdAM",2,6,2,"8A5A2A","3AA0D8","punk crest, blue face, claws on chicks","squawk","Smells like cow. Looks like punk.","bird,jungle,silly"},
 	{"hobbit","AGBJNA","dZb",2,6,3,"78350F","65A30D","barefoot small adventurer, curly hair","giggle","Seven meals a day. One adventure a year.","mythical"},

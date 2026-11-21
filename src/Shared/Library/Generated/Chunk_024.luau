@@ -223,7 +223,7 @@ return {
 	{"snowdrift","MCCLII","JSN",2,1,3,"FFFFFF","B3E5FC","deep piled bank of snow","thud","Waist deep and very cold.","place,terrain,frozen"},
 	{"snowdrop","NCANMI","dJFS",1,1,1,"FFFFFF","7CB342","drooping white bell in the snow","rustle","Blooms in winter out of spite.","plant,flower"},
 	{"snowfield","MCENII","JSN",3,1,6,"F5F5F5","B3E5FC","wide drift of sparkling snow","rumble","Every step is a struggle.","place,terrain,frozen"},
-	{"snowflake","GCAAKJ","Je",2,6,1,"FFFFFF","B3E5FC","six-pointed crystal flake, spinning","chime","One of a kind. Like a tiny ninja star.","frozen,cute"},
+	{"snowflake","GCBAKK","UJe",3,7,1,"F7FCFF","9ED8F5","a chunky spinning snowflake thrown out that whirls back","chime","One of a kind. Comes back anyway.","frozen,winter,weather"},
 	{"snowman","ACCJGG","GJeN",4,2,5,"FFFFFF","F97316","three snowballs, carrot nose, top hat, stick arms, scarf","crunch","Carrot nose. Coal eyes. Cold heart.","frozen,holiday,cute"},
 	{"snowman monster","ACCJNG","Jke",4,3,4,"F8FAFC","0F172A","three-ball snowman, coal grin, stick arms","crunch","Throws snowballs. Hard.","frozen,silly,holiday"},
 	{"snowmobile","DCCKHL","DkgN",4,8,5,"1E73BE","1A1A1A","front skis, rear track, wraparound windshield","engine","Snow day! Forever.","mechanical,vehicle,land"},

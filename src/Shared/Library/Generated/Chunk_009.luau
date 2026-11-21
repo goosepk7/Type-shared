@@ -402,5 +402,5 @@ return {
 	{"fishing spider","AJBJQA","fMNB",2,6,2,"8A6A4A","C8A07A","big spider on water","skitter","Runs on water. Fishes.","arachnid,spooky,venomous"},
 	{"fishman","ABCJNA","fB",4,6,4,"0F766E","A3E635","bulgy-eyed fish-headed humanoid","splash","Smells exactly how you think.","aquatic,spooky"},
 	{"fishmonger","LBCJNA","dk",3,4,4,"0EA5E9","F8FAFC","apron, giant fish in hand","splat","Slaps you with a trout.","silly"},
-	{"fissure","HEDLII","THO",6,4,5,"4A3726","FF6A2B","zigzag ground split with glowing depths","crack","Mind the gap. Seriously.","natural"},
+	{"fissure","HEDNID","lTe",5,6,1,"4A3726","FF8A2A","a crack racing along the ground, slabs heaving up","crack","Mind the gap. It is coming to you.","natural,earth,terrain"},
 }
