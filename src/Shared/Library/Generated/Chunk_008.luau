@@ -378,7 +378,7 @@ return {
 	{"elephant bird","AMEJDA","Dkf",6,8,5,"8A6A4A","D8C8A8","colossal round bird, laid huge eggs","boom","Laid eggs the size of footballs.","bird,flightless,extinct"},
 	{"elephant seal","ABDJEC","UkfB",6,5,8,"7A6A5E","B8A898","giant blubbery seal, droopy trunk nose","roar","Fights by belly-flopping. Very loud.","mammal,aquatic"},
 	{"elephantnose fish","ABAJEC","dB",1,6,1,"3A3A3A","8A7A6A","fish with trunk-like chin","splash","Has a tiny trunk. Very smart.","fish,aquatic"},
-	{"elevator","OKDL1I","lY",2,1,7,"C9CED4","DDE3E8","box behind sliding doors","clank","Ding! Going up.","mechanical"},
+	{"elevator","OKDL1I","klS",3,2,4,"C9A041","2BB3A3","an open brass lift car shooting up out of the floor","ding","Ding! Going up.","transit,trap,silly"},
 	{"elf","AGCJNA","ZTe",5,8,4,"15803D","FDE68A","pointed ears, longbow, leaf cloak","whoosh","Never misses. Never lets you forget it.","mythical,archer"},
 	{"elf archer","AGCJNA","ZTe",5,8,3,"15803D","FDE68A","elf drawing a silver longbow","twang","Three arrows. One breath.","mythical,archer"},
 	{"elf city","EGFMII","GFSe",5,1,7,"9CCC65","FFD54F","graceful homes built into giant trees","chime","Elegant. Leafy. Full of archers.","structure,magic,mythical"},

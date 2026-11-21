@@ -364,6 +364,7 @@ return {
 	{"school","EMDCII","GSh",3,1,7,"B5523B","F5F5F5","brick building with bell and clock","thud","Class is in session. Lesson: pain.","structure,building,silly"},
 	{"school bell","BKBFKI","jO",2,3,5,"B58A3A","C0392B","round brass bell","ring","RIIIIING. Class dismissed.","school,loud"},
 	{"school bus","DMDKHL","Dkgh",5,5,8,"FFC000","1A1A1A","long yellow bus, stop sign arm, black stripes","engine","Field trip! Destination: victory.","mechanical,vehicle,land"},
+	{"school bus stop","OKENeL","GfO",3,3,4,"F2B705","D7263D","a yellow school bus swinging out its red stop arm","honk","The arm is out. Nobody moves.","transit,control,silly"},
 	{"school desk","BMCC0K","G",1,1,5,"C49A6C","8E9196","small desk with attached chair","tap","Duck and cover, school edition.","school"},
 	{"school lunch","IJBDOJ","jM",3,3,2,"C8A0A0","7DAE3A","sectioned tray, mystery mush","whiff","Questionable. Edible. Probably.","edible,smelly,silly"},
 	{"school nurse","LMCJNA","QF",3,5,4,"F8FAFC","DC2626","ice pack, bandages, thermometer","ding","Have you tried ice and a nap?","school,healer"},
@@ -402,5 +403,4 @@ return {
 	{"scratching post","BMCCII","Gc",1,1,4,"D2B48C","B89B6A","carpeted post with rope wrap","squeak","Shred zone.","pet"},
 	{"scream","KFCFOB","jkO",5,10,1,"FFCDD2","FFFFFF","jagged sound ring burst","scream","AAAAAAAAAAAAAH!","loud"},
 	{"screech","KFCF6B","jIO",4,9,1,"F8FAFC","EF4444","jagged white sound spikes shattering nearby glass","screech","EEEEEEEEEEEEEEEEEEEEEEEEE.","loud"},
-	{"screech owl","AMAJDB","AZT",2,7,2,"8A8A80","D8D0C0","tiny eared owl, bark pattern","hoot","Doesn't screech. Trills.","bird,nocturnal,predator"},
 }

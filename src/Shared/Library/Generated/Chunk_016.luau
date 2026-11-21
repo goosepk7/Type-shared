@@ -63,7 +63,7 @@ return {
 	{"lucky coin","BHAOKJ","Fc",2,6,3,"D4A72C","B8693D","worn shiny coin","boing","Heads: you win. Tails: you also win.","treasure,shiny"},
 	{"lucky seven","KHCOKJ","Da",4,7,3,"FFD54F","D32F2F","three glowing sevens spinning","jingle","Jackpot energy.","luck"},
 	{"lucky streak","KHCOKJ","Da",3,7,3,"43A047","FFD54F","trail of clovers behind caster","ding","Can't stop winning.","luck"},
-	{"luggage carousel","OMCG2K","kSRI",3,3,4,"2BB3A3","D7263D","hard-shell suitcases circling round you on an airport carous","thump","Is that one yours? Is that?","transit,orbit,silly"},
+	{"luggage carousel","OMCG2K","kSRI",3,3,4,"2BB3A3","D7263D","hard-shell suitcases circling you on a belt","thump","Is that one yours? Is that?","transit,orbit,silly"},
 	{"lullaby","KLCDOJ","SNO",5,3,6,"B39DDB","FFF8E1","a drifting cloud of soft notes that puts lingerers to sleep","chime","Hush now. Everybody sleep.","music,control"},
 	{"lumberjack","LGCJNA","Dkf",6,5,6,"DC2626","111827","plaid shirt, beard, giant axe","thud","Yells TIMBER. Means it.","outdoor"},
 	{"lumberjack giant","AGEJNA","Dkf",7,4,8,"DC2626","111827","plaid giant with a tree-sized axe","stomp","Fells forests with one swing.","giant,outdoor"},

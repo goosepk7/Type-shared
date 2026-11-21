@@ -377,7 +377,7 @@ return {
 	{"riveter","JKBAwK","Te",3,8,4,"8E9196","C0392B","pneumatic rivet gun","rattle","Rat-a-tat-tat-tat.","tool"},
 	{"rizz master","LMCJNA","jcO",3,6,3,"F472B6","111827","smooth hair, finger guns","ding","Charms the enemy. Enemy forgets to fight.","meme"},
 	{"road","EMDNII","DS",1,1,8,"424242","FFEB3B","grey asphalt strip with lane lines","thud","All roads lead to battle.","structure"},
-	{"road flare","BABNKI","Kc",2,3,1,"C0392B","FF6A1A","stick spewing red sparks","thud","Look here! Over here!","camping,outdoor"},
+	{"road flare","BABNKI","KSc",2,3,3,"D7263D","FF6A1A","a red stick flare spitting sparks on the road","sizzle","Look here! Over here!","transit,area,fire"},
 	{"road grader","DEDKHL","DkIg",5,3,9,"FFC107","424242","long body with a big middle blade","engine","Smooths the road. And the opposition.","mechanical,vehicle,land"},
 	{"roadrunner","AMBJDA","d",2,10,1,"8A6A4A","D8C8B0","long tail, crest, running pose","tweet","Meep meep. Runs at 20 mph.","bird,cute"},
 	{"roar","KFCFOB","jkO",6,9,1,"FF8A65","FFE0B2","thunderous cone ring with flying leaves","roar","ROAAAR! Everyone backs off.","loud"},

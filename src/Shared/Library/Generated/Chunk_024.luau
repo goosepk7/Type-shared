@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skeleton army","AIDJLA","fVPh",6,5,5,"F5F5F4","1F2937","rows of rattling skeleton soldiers","rattle","Bones. So many bones.","undead,spooky,swarm"},
 	{"skeleton cowboy","AICJNA","eV",4,6,3,"F5F5F4","92400E","skeleton in a ten-gallon hat","rattle","Yee-haw. Rattle rattle.","undead,western"},
 	{"skeleton crypt","MIENII","SNh",5,1,8,"EFEBE9","263238","tomb lined with rattling skeletons","moan","Rattle rattle. Rise up.","place,spooky,undead"},
 	{"skeleton dog","AIBJAA","Qf",2,7,2,"F5F5F4","22C55E","skeletal pup carrying its own bone","rattle","Fetches its own leg.","undead,canine,silly"},
@@ -402,5 +403,4 @@ return {
 	{"sphynx cat","AMBJAA","dfT",2,7,2,"E9C2B0","C99A88","hairless wrinkly body, giant ears","meow","Forgot its sweater. Always.","mammal,pet,cute"},
 	{"spice","IAADOJ","KjP",3,5,1,"C2410C","FACC15","puff of red-orange powder from a shaker","puff","A little kick. Then a big one.","edible,spicy"},
 	{"spicy challenge","IABAKK","KjP",6,7,2,"D8202B","F2862B","flaming bowl with warning label","sizzle","Accept the challenge. Breathe fire.","edible,spicy,flammable"},
-	{"spicy noodles","IABAKK","KHN",5,7,2,"D8202B","F2C24A","red tangled noodles, steam","sizzle","The noodle challenge. Few survive.","edible,spicy,flammable"},
 }

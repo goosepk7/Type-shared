@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"throne","BMDC0I","GFh",4,1,9,"D4A72C","9E1B32","towering golden chair, red velvet","thud","Sit here. Command everyone.","furniture,royal"},
+	{"throne heir","LMCJNA","ch",3,5,4,"7C3AED","F8FAFC","little crown, fancy suit, pout","horn","Will inherit everything. Wants it now.","royal"},
 	{"throne room","MEENII","FSh",4,1,9,"B71C1C","FFD54F","long red carpet to a golden throne","rumble","All rise for the royal smackdown.","place,terrain,royal"},
 	{"throw","KMCAKB","ke",4,8,1,"FFCC80","FFFFFF","spinning thrown arc with dotted path","whoosh","Catch! Oh, you didn't.","silly"},
 	{"throwing axe","CKBAsK","keV",4,7,3,"8A929B","8B5A2B","small curved axe head","chop","Axe, but make it airborne.","medieval,sharp"},
@@ -262,6 +264,7 @@ return {
 	{"trail mix","IEAELB","FeP",2,7,1,"A86A3A","C2302B","nuts, raisins, candy bits","pitter","Adventurer fuel. Pick out the candy.","edible,sweet"},
 	{"train","DMEKHL","DkTg",7,7,9,"2D3A4A","C0392B","long engine with carriages, cowcatcher","horn","Runs on time. Runs over everything.","mechanical,vehicle,land"},
 	{"train conductor","LMCJNL","Dk",4,6,5,"1E3A8A","FACC15","striped cap, whistle, pocket watch","choo","All aboard! Choo choo.","vehicle"},
+	{"train horn","OFCF1I","kfI",3,8,2,"C9CFD6","22232A","a chrome three-trumpet locomotive air horn","honk","HONNNNK.","transit,loud,silly"},
 	{"train station","EMDCII","GSh",3,1,8,"B5523B","37474F","long platform, clock, arched roof","thud","All aboard the pain train.","structure,building"},
 	{"train yard","MMENII","kSh",3,1,7,"6D4C41","9E9E9E","tangle of tracks and parked wagons","crowd","Trains from every direction.","place"},
 	{"training dummy","BMCCNI","Gdc",1,1,5,"D2B48C","C0392B","straw dummy with target face","beep","Hit it. It forgives you.","training"},
@@ -400,7 +403,4 @@ return {
 	{"tunnel","EEDCII","GCSY",2,1,9,"616161","FFB300","arched dark hole with lamp lights","thud","Goes under the problem.","structure"},
 	{"tuojiangosaurus","AMDJAA","GkfT",6,3,9,"7A6A4A","E8A03A","pointy plates stegosaur","grunt","Pointy-plated stego cousin.","dinosaur,extinct,reptile,armored"},
 	{"tupandactylus","AMDJDB","DdAT",6,8,4,"7A5A3A","E8401E","gigantic sail crest","screech","Its head crest is a giant sail.","pterosaur,extinct,reptile"},
-	{"turaco","AMBJDB","jdA",2,6,2,"2AA04A","E8301E","green crested bird, red wings","squawk","Green bird. Red wings. Real pigment.","bird,jungle,silly"},
-	{"turbine","OFDM1K","kIP",4,4,6,"F2F2EE","8E9196","tall pole with three giant blades","whoosh","Spins wind into watts. And foes away.","mechanical"},
-	{"turkey","AMCJDA","Ddf",3,4,2,"5E4232","C8301E","fanned tail, red wattle, puffed chest","gobble","Gobbles at everyone. Hides in November.","bird,farm,holiday"},
 }

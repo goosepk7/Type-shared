@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spicy noodles","IABAKK","KHN",5,7,2,"D8202B","F2C24A","red tangled noodles, steam","sizzle","The noodle challenge. Few survive.","edible,spicy,flammable"},
 	{"spider","AJBJQA","fMeN",2,6,2,"2A2420","8A6A4A","eight legs, round body, many eyes","skitter","Eight legs, eight eyes, zero chill.","arachnid,spooky,venomous"},
 	{"spider cave","MIENII","SMNh",5,1,7,"37474F","ECEFF1","cave draped in thick webs","echo","Sticky. Creepy. Many legs.","place,adventure,spooky"},
 	{"spider centaur","AJDJFA","MHe",6,6,6,"1C1917","7C3AED","elf torso on a giant spider body","skitter","Eight legs. Two bows.","spooky"},
@@ -18,7 +19,7 @@ return {
 	{"spike launcher","OKCMwI","TeV",5,6,5,"3A3F45","8A929B","turret spraying metal spikes","clank","A porcupine with a grudge.","defense,mechanical"},
 	{"spike pit","EECLII","ZSTO",5,1,6,"5D4037","9E9E9E","hidden hole lined with sharp stakes","thud","Mind the gap. Mind the pointy bits.","structure,defense,sharp"},
 	{"spike roller","OKDL1F","DkT",6,4,7,"3A3F45","5B6168","spiked log rolling down a ramp","clank","Rolls in. Pokes everyone.","defense,mechanical"},
-	{"spike strip","BKDLII","TN",4,1,5,"3A3F45","F1C40F","long strip of road spikes","snap","Pop goes every tyre.","trap,defense"},
+	{"spike strip","BKDLII","STN",3,1,3,"3A3F45","F5C21B","a stinger strip unrolled along the road","snap","Pop goes every tyre.","transit,trap,silly"},
 	{"spike trap","BKCLII","TN",5,1,6,"3A3F45","8A929B","plate of sharp metal spikes","snap","Step here. Regret here.","trap,defense"},
 	{"spike wall","EKDCII","GSfT",5,1,8,"6D6D6D","B0BEC5","stone wall bristling with iron spikes","thud","Hugging is strongly discouraged.","structure,defense,sharp"},
 	{"spiked barricade","EECCII","GST",4,1,6,"6D4C41","9E9E9E","log frame bristling with sharpened stakes","thud","Run into it. We dare you.","structure,defense,sharp"},
@@ -398,9 +399,8 @@ return {
 	{"stun gun","CDBAwI","feLO",2,8,3,"24262A","F1C40F","small pistol with two prongs","zap","Bzzzt. Nap time.","electric"},
 	{"stunt double","LACJNA","DEk",5,9,4,"DC2626","F8FAFC","leather jumpsuit, helmet, mid-jump pose","boom","Jumps through fire. Daily.","silly"},
 	{"stunt plane team","DFEELB","jAeP",6,9,5,"E53935","1565C0","formation of jets with coloured smoke","jet","Smoke trails everywhere. Very confusing.","vehicle,air"},
+	{"stunt ramp","EEDOII","DAk",4,8,3,"C99A5B","F28A2E","a plywood kicker ramp with a hazard-striped lip","whoosh","Ten out of ten. Landing pending.","transit,movement,silly"},
 	{"stupidity","KMBDOJ","jNP",3,4,1,"FDE68A","A3E635","question marks around a spinning empty thought bubble","boing","Contagious. Do not make eye contact.","silly,meme"},
 	{"sturgeon","ABDJEC","DfB",5,7,6,"6E6A64","C8C4BC","bony armor plates, shovel snout","splash","Older than dinosaurs. Looks it.","fish,aquatic,ancient"},
 	{"sty","MECNII","SMNh",3,1,4,"6B4F2A","F4A6B7","muddy fenced pen with a trough and snoozing pigs","squelch","Your room, according to your mother.","farm,gross"},
-	{"stygimoloch","AMDJAA","DdkTO",5,5,6,"3A3A3A","8A5A3A","spiky domed head","honk","Pachy with extra spikes. Goth.","dinosaur,extinct,reptile"},
-	{"stymphalian bird","AKCJDB","ATeP",5,8,5,"A16207","E7E5E4","bronze feathers shot like darts","clank","Sheds razor feathers. Terrible pillow.","mythical,bird,metal"},
 }

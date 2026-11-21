@@ -253,7 +253,7 @@ return {
 	{"life","FGCOKJ","WF",4,5,3,"7ED957","FFF8D6","green-gold glowing leafy aura","chime","It finds a way.","holy,plant"},
 	{"life drain","KICBKI","iF",5,7,2,"C62828","7E57C2","red wispy stream flowing back to caster","hum","Your health? Mine now.","spooky"},
 	{"life jacket","BBCONI","GB",1,5,4,"E67E22","24262A","puffy orange vest","bonk","Safety first. Style second.","rescue"},
-	{"life preserver","BBCAKF","He",1,6,4,"F2F2EE","C0392B","red and white ring on rope","bonk","Toss, catch, haul in.","rescue,ocean"},
+	{"life ring","BBCAKK","He",3,6,3,"D7263D","FFF1D6","a red and white life ring on a rope","bonk","Toss, catch, haul in.","transit,pull,ocean"},
 	{"life surge","KGCOKJ","WF",2,6,3,"69F0AE","FFF59D","green vitality burst rising up","chime","Full health. Full speed.","support"},
 	{"lifeblood","FGBOKJ","F",3,5,2,"D9433F","FFB3B0","warm glowing pulse aura","thump","The pulse of a true hero.","holy"},
 	{"lifeboat","DBCKHC","DFkgB",3,7,6,"FF6F00","F5F5F5","bright orange covered boat","splash","Saves friends. Splashes foes.","vehicle,aquatic"},
