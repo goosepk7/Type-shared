@@ -318,7 +318,7 @@ return {
 	{"cosmic dust","HLCDOJ","jN",3,3,2,"5E35B1","FFD54F","drifting sparkly purple dust","hush","Older than everything. Sneezier too.","space"},
 	{"cosmic entity","ALFJNJ","jehY",9,4,8,"312E81","FDE68A","towering figure of galaxies and light","hum","Older than time. Bored of it.","cosmic,boss,danger"},
 	{"cosmic owl","ALCJDB","jAZ",4,7,3,"1E1B4B","FDE68A","owl with constellation feathers","hoot","Wise. Starry. Silent.","cosmic,bird"},
-	{"cosmic ray","HLCBKI","Te",5,10,1,"B388FF","E1F5FE","thin violet-white streak from space","zing","Mystery beam from deep space.","space"},
+	{"cosmic ray","HLCBKI","QSe",5,4,3,"B388FF","E1F5FE","thin violet ray from deep space sliding after you","zing","Mystery beam from deep space. It has questions.","space,light,weather"},
 	{"cosmic serpent","ALEJCB","AHe",8,6,7,"312E81","FDE047","serpent of stars coiling around planets","hiss","Hugs planets too hard.","cosmic,reptile"},
 	{"cosmic snap","KLEN4I","iP",10,1,8,"E9C46A","9B5DE5","jewelled gauntlet snap, foes drift away as dust","snap","Perfectly balanced. Mostly.","hero,movie,meme"},
 	{"cosmic tornado","HLEN5K","jlSH",8,5,5,"1A237E","F48FB1","funnel of swirling stars and nebula","hum","A galaxy, twisting in your backyard.","storm,space"},
