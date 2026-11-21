@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
 	{"bedtime","KLCDOJ","SO",3,3,2,"3949AB","FFF8E1","cosy dark-blue cloud with stars and Zs","snore","Into bed. Now. Everyone.","silly"},
 	{"bee","AJAJLB","AFTMP",2,7,1,"F2C02A","2A1E14","fuzzy striped body, tiny wings, stinger","buzz","Makes honey. Dances directions. Stings once.","insect,swarm,venomous"},
 	{"bee balm","NGBNMI","dFSch",1,1,2,"E91E63","7CB342","spiky ragged pink pompoms","rustle","Bees cannot resist it.","plant,flower"},
@@ -316,6 +317,7 @@ return {
 	{"bone serpent","AIDJCD","fHN",6,5,5,"F5F5F4","4ADE80","giant skeletal serpent","rattle","All spine. Literally.","undead,reptile"},
 	{"bone sword","CMCHrK","fT",4,6,3,"E3DAC9","7A4E2D","blade carved from giant bone","shing","Recycled, but still cranky.","primitive,spooky"},
 	{"bone wall","EIDCII","GdS",3,1,6,"EFEBE9","BCAAA4","stacked skulls and femurs","rattle","Rattles when you knock. Spooky.","spooky,undead"},
+	{"bone wheel","CEDHJK","Uke",7,7,3,"ECE2CC","784640","a giant bone boomerang whirling out on a wide curve and back","whoop","It always comes back. Usually through you.","anime,blade,boomerang,bone"},
 	{"bonefish","ABCJEC","DfB",4,9,4,"C8D0D8","F2F2F2","silver ghost fish","splash","Grey ghost of the flats.","fish,aquatic"},
 	{"bongo","AMCJAA","Dk",4,8,4,"A0401E","F2F0EA","chestnut red, thin white stripes","bleat","Named after a drum. Plays no drums.","mammal,wild"},
 	{"bongo drums","BMBFJI","O",2,6,3,"8B5A2B","D2B48C","pair of small joined drums","strum","Bongo bongo bongo!","music"},
@@ -401,6 +403,4 @@ return {
 	{"boxing combo","BMBHJI","klf",4,9,1,"C62828","F5F5F0","pair of padded red gloves throwing a jab-cross-uppercut","thump","Jab, cross... uppercut.","sport,boxing,melee"},
 	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
 	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
-	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
-	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 }

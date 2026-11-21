@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
+	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
 	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
 	{"boysenberry","IGAELB","eVP",2,7,1,"5E1F3F","8A2B5A","plump dark maroon berry","pitter","A berry with a big name.","edible,fruit,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"caramel corn","IMBGKF","EN",4,6,1,"C68E3A","F2D08A","golden clumps of popcorn","pop","Crunch, stick, repeat.","edible,explosive,candy"},
 	{"caramel popcorn","IMBGKF","ENP",4,6,1,"D9A04A","F7E8C8","glossy golden popcorn clusters","pop","Sweet, sticky, and still explodes.","edible,explosive,sweet"},
 	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
-	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
-	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 }

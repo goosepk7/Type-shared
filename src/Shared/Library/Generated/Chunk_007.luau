@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cream cheese","IMBLGI","SNP",2,3,3,"F7F4EC","F2EAD5","smooth white block","gloop","Smooth, spreadable, very sticky.","edible,sticky,dairy"},
+	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
+	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 	{"cream puff","IMBLKI","dSc",2,3,3,"E8C88A","F7F2EC","round puff pastry, cream","chomp","A puff of cream in a pastry cloud.","edible,sweet"},
 	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
 	{"cream tea","IGBOKI","F",2,5,3,"F7F2EC","C8762B","tea with scones and jam","crunch","Very British. Very civilized.","edible,healthy,fancy"},
@@ -31,8 +34,10 @@ return {
 	{"cricket bat","BMCHtK","kf",4,6,5,"C49A6C","D2B48C","flat paddle bat","bonk","Bowled over.","sport"},
 	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 	{"crimson cataclysm","KAFGKI","KEe",10,3,1,"D6162E","FFBA48","crimson circles stacked in the sky over a huge blast","explosion","One spell a day, and it is always this one.","anime,isekai,explosion,ultimate"},
+	{"crimson needle","KIBBKB","DTe",7,10,2,"DC1434","FF6078","a compressed crimson orb fired as a needle beam","hiss","Pressure is a technique. So is pointing.","anime,curse,beam,ranged"},
 	{"crimson repulse","KLBAKB","EkIe",8,10,1,"FF2834","46060E","a red pinpoint that blasts everything away from itself","boom","Go away. Everything. Now.","anime,magic,force"},
 	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
+	{"crimson stone","BEBO4E","kR",5,7,5,"D21028","ECBE5A","a faceted crimson gem that floats at your shoulder and","crunch","Three charges of bad news, set in gold.","anime,alchemy,buff,earth"},
 	{"cringe","KMBFOB","jO",2,7,1,"BDBDBD","FFAB91","shuddering wobble ring","eugh","Oof. Can't look.","meme,silly"},
 	{"critter","AGBJAA","UCb",2,7,2,"A0724A","F5E6CC","scruffy little furball with bright eyes and a twitchy nose","chitter","Lives in your walls. Pays no rent.","mammal,cute,wild"},
 	{"crocodile","ABDJAC","fHOB",7,5,8,"5A6A3A","C8C08A","long armored snout, teeth showing","snap","Smiles with all its teeth. Not friendly.","reptile,predator,aquatic"},
@@ -398,9 +403,4 @@ return {
 	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
 	{"director","LMCJNA","jOh",4,4,4,"111827","FBBF24","beret, megaphone, folding chair, clapperboard","clack","CUT! Do it again, but with more dying.","art,movie"},
 	{"dirk","CKBHrK","fT",3,9,3,"8A929B","5A3A1E","long thin dagger","shing","A dagger that went to boarding school.","medieval,sharp"},
-	{"dirt","FEBDOB","jN",2,5,2,"6B4F34","A1856A","kicked-up brown clod burst","thud","Dirt in the eyes. Classic move.","silly"},
-	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
-	{"dirt cup","IMBLGI","SNP",2,3,3,"3A1A0C","E0102B","cup of crumbs and gummy worms","gloop","Dirt you can eat. With worms.","edible,sticky,dessert,silly"},
-	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
-	{"disco ball","BHCG3K","jca",2,2,3,"C9CED4","A66BDB","spinning mirrored sphere","squeak","Dance fight!","party"},
 }

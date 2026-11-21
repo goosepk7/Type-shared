@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
+	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 	{"carcharodontosaurus","AMEJBA","DkfT",8,6,7,"8A5A3A","D8A07A","huge skull, shark-like teeth","roar","Shark teeth on a giant dino.","dinosaur,extinct,reptile,predator"},
 	{"card storm","FLCELB","jdT",4,8,1,"D32F2F","FFFFFF","swirl of glowing playing cards","shff","52 card pick-up. Painful version.","magic,silly"},
 	{"cardamom","IFBDOJ","jPO",2,5,1,"8DB86A","C8D88A","small green pods","puff","Fragrant green pods of mystery.","edible,spice"},
@@ -377,6 +379,7 @@ return {
 	{"cinder","FAAEOJ","KeP",2,6,1,"8A2C0E","FF8C42","drifting glowing flakes, grey edges","crackle","Like snow, but rude.","fire"},
 	{"cinder block","BECAKK","ke",4,3,8,"8E9196","4A4D52","grey block with two holes","clink","Heavy-duty brick.","hardware"},
 	{"cinder snap","KADAKI","KEe",7,10,1,"FF8424","FFD678","a finger snap, a spark fuse, then the air explodes","snap","Useless when wet. Lethal when dry.","anime,fire,alchemy"},
+	{"cinder tide","FAEH6I","KfIP",8,6,2,"FF7A1A","FFE07A","a crescent wall of fire rolling out from a blade dragged","roar","The oldest flame in the room, and it knows it.","anime,blade,fire,wave"},
 	{"cinnamon","IABDOJ","KjPO",2,5,1,"A0522D","C8803A","rolled bark quill, brown dust","puff","Warm, sweet, and choke-inducing.","edible,spice"},
 	{"cinnamon oatmeal","IMBLGI","FN",2,3,3,"D8C08A","A0522D","oats with cinnamon swirl","gloop","Cozy oats with spice.","edible,sticky,breakfast"},
 	{"cinnamon roll","IMBLKI","dSc",2,3,3,"C8803A","F7F2E8","spiral roll, white icing","chomp","A swirl of sweet doom.","edible,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"clam chowder","IBBOGI","FS",3,4,3,"F2EAD5","C8A070","creamy white soup, crackers","slurp","Creamy, briny, and warming.","edible,warm,healthy"},
 	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
 	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
-	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
-	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
-	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
 }

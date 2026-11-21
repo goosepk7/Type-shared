@@ -90,6 +90,7 @@ return {
 	{"aztec warrior","LGCJNA","DZf",6,7,5,"F59E0B","15803D","jaguar pelt helm, obsidian club, feathered shield","roar","Fierce. Feathered. Fast.","warrior,ancient"},
 	{"azure collapse","KLCGKB","EHeN",8,4,3,"3F7BFF","0C1236","a dark point with a blue rim swallowing everything near it","hum","Come here. Everything. Now.","anime,magic,gravity"},
 	{"azure dragon","AFEKCB","Akeg",8,7,7,"1D4ED8","7DD3FC","long blue sky dragon, wind ribbons","roar","Guardian of the east. Always on time.","mythical,reptile,ancient"},
+	{"azure fall cannon","FACGKI","KkfI",7,8,2,"3FA8FF","C8F0FF","a roaring burst of azure fire poured from two palms","whoosh","Blue fire: the hot kind.","anime,kido,fire,cone"},
 	{"baba ganoush","IMBNGI","SNP",2,4,1,"C8B08A","5B2A5E","smoky eggplant dip","splat","Smoky, creamy, and fun to say.","edible,sauce"},
 	{"baba yaga","ALCJNB","jAMh",6,6,5,"57534E","DC2626","old witch flying in a mortar with a pestle","cackle","Lives in a chicken-legged house. Rent is weird.","witch,spooky"},
 	{"babirusa","AMCJAA","dfT",4,4,4,"8A7A70","E8DCD0","tusks curling up through its snout","bleat","Its tusks grow through its face. Wow.","mammal,farm,wild"},
@@ -402,5 +403,4 @@ return {
 	{"bed bug","AMAJFA","diAP",1,6,1,"8A3A1E","C8702A","flat red-brown tiny bug","buzz","Don't let them bite.","insect"},
 	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
-	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
 }
