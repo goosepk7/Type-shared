@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lace","BMBLCD","HNO",2,4,2,"FFFFFF","EF4444","two untied shoelaces knotting themselves together","swish","Your shoe is untied. Made you look. Also it is.","clothing,trap"},
+	{"lace monitor","AMCJAA","Cf",4,7,2,"2A2A2A","F2E8C0","patterned big monitor","hiss","Climbs trees with huge claws.","reptile"},
+	{"lacewing","AMAJFB","jdAF",1,5,1,"8AE04A","E8F8E0","lacy green clear wings","flutter","Eats aphids. Looks like lace.","insect,cute"},
+	{"lacrosse ball","BMAA3F","ke",2,9,5,"F2F2EE","F2F2EE","solid rubber ball","bonk","Hard. Fast. Ouch.","sport"},
 	{"lacrosse stick","BMCHJK","fe",2,7,4,"F2F2EE","1F2F55","stick with a netted pocket","bonk","Catch, cradle, fling.","sport"},
 	{"ladder","BMCCII","Gl",1,3,4,"C49A6C","8A929B","tall two-rail ladder","clank","Climbs walls. Carry it everywhere.","tool"},
 	{"ladder truck","DBEKHL","Dkleg",6,5,8,"D22B2B","C0C0C0","long red truck with a giant ladder","siren","Ladder up. Hose down.","mechanical,vehicle,land"},
@@ -399,8 +403,4 @@ return {
 	{"long reach","KMCANB","fH",4,9,3,"E85A4A","3A6AD8","an elastic arm shoots out and tugs the foe in","boing","I can reach the top shelf now.","hero,movie,stretch"},
 	{"long shot","KLCAKB","Te",6,10,1,"FF1744","FFFFFF","thin bright long-range streak","crack","From way over there. Bullseye.","ranged"},
 	{"long-eared bat","AMBJDB","jiA",2,7,1,"8A6A4A","C8A88A","ears as long as its body","screech","Ears longer than its body.","mammal,nocturnal,spooky"},
-	{"long-eared owl","AMBJDB","AZT",3,7,2,"8A6A44","E8701E","long ear tufts, orange face","hoot","Ear tufts like antennae.","bird,nocturnal,predator"},
-	{"longan","IGAAKF","Fke",3,6,2,"C8A46A","F3EEE0","tan marble with see-through flesh","splat","Peel it and it stares back.","edible,fruit,sweet"},
-	{"longboard","DMAKHF","Dkg",2,7,2,"8D6E63","4FC3F7","long wooden deck, big soft wheels","engine","Surfing, but on pavement.","mechanical,vehicle,land,sport"},
-	{"longbow","CMCAvI","Te",5,7,3,"5A3A1E","B89B6A","tall curved yew bow","twang","Hits from very, very far away.","medieval,ranged"},
 }

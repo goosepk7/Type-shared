@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skunk ape","AJDJNA","DfM",6,6,6,"57534E","365314","stinky shaggy swamp ape","roar","You smell it before you see it.","cryptid,silly"},
+	{"skunk cabbage","NJCDMI","jSM",2,1,3,"9CCC65","FFEB3B","big leaves with a stinky yellow hood","rustle","Smells like a skunk. Literally.","plant,flower,silly"},
+	{"skunk kit","AMAJAA","CfM",1,8,2,"1A1A1C","F2F2F2","tiny stripy fluffball","chatter","Practicing the stink. Not ready yet.","mammal,predator"},
+	{"skunk spray","AJCDAI","SMNP",4,5,3,"1E1C22","9BD84A","skunk turns tail and sprays a cone of green stink","hiss","Clears a room in one second flat.","critter,mammal,cloud,gross"},
+	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
 	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
 	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
 	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
@@ -327,7 +332,6 @@ return {
 	{"spartan","LKCJNA","GDkf",6,5,7,"991B1B","CA8A04","crested bronze helm, round shield, spear","clang","THIS. IS. A. SHIELD WALL.","warrior,ancient"},
 	{"spartan helmet","BKBONI","G",2,5,6,"A86F32","9E1B32","bronze helm with red crest","clank","This. Is. A helmet.","armor,defense,ancient"},
 	{"spatha","CKCHrK","fT",5,6,5,"8A929B","A86F32","long straight cavalry sword","shing","Roman, but longer.","sharp,ancient"},
-	{"spatula","BKBHJK","klf",1,7,3,"24262A","8A929B","flat flipping paddle","clank","Flips pancakes and foes.","kitchen,silly"},
 	{"spatula flip","BKCHJK","klf",4,6,4,"C9CED4","7A4524","giant slotted spatula flipping foes over your head","clank","Flips pancakes and foes.","kitchen,melee,toss"},
 	{"spawn","KLCM5I","ShY",5,1,5,"22D3EE","7C3AED","glowing blue circle pad with beams where figures pop in","pop","They just keep coming out. Who is making these?","gaming"},
 	{"spawn camper","LICLNI","ce",5,1,4,"7F1D1D","111827","figure crouched at a glowing spawn pad","bang","Waiting at your spawn. Always.","meme,gaming,villain"},
@@ -399,8 +403,4 @@ return {
 	{"spinach","IGBOKI","WFk",4,5,3,"2E6B2A","4E8E3A","pile of dark round leaves","chomp","Instant muscles. Results may vary.","edible,vegetable,healthy"},
 	{"spinach dip","IMBOKI","WF",3,5,3,"3E7A2B","F2E8C8","creamy green dip","chomp","Creamy spinach strength.","edible"},
 	{"spinifex","NGBLMI","STN",2,1,4,"C9A55A","9E9D24","spiky hummocks of desert grass","rustle","Spiky porcupine grass. Do not sit.","plant,sharp"},
-	{"spinner dolphin","ABCJEC","UDjB",4,8,4,"5E6E80","E8EEF2","slender dolphin spinning mid-air","click","Spins seven times for fun.","mammal,aquatic,ocean"},
-	{"spinning blades","OKCL1K","fVP",6,6,5,"8A929B","4A4D52","post with whirling blades","clank","Wheeeeeee— ouch.","defense,mechanical"},
-	{"spinning plate","BMAAKK","UeV",1,7,1,"F2F2EE","2F6FD1","plate twirling on a stick","thud","Don't drop it. Throw it.","party,silly"},
-	{"spinning top","BMAGKK","jkf",2,7,4,"C0392B","2F6FD1","pointed spinning toy","squeak","Spins forever. Dizzies everyone.","toy"},
 }

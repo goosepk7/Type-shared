@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"typhoon","HBFN5K","kSHIP",9,5,7,"42678A","B9D3E8","spiralling rain-heavy storm wall over sea","howl","A hurricane with extra sea.","storm,aquatic,danger"},
+	{"tyrannosaurus rex","AMEJBA","DkfTO",9,6,8,"4A5A2E","C8A86A","giant head, tiny arms, massive jaws","roar","Tiny arms. Huge bite. No hugs.","dinosaur,extinct,reptile,predator,danger"},
+	{"tyrant","LIDJYA","GiOh",7,3,7,"1F2937","B91C1C","scowling ruler in spiked black armour on a too-big throne","boo","Makes the rules. Changes them when losing.","villain,royal"},
+	{"tyrant sun","KAFGKJ","KEe",10,2,2,"FF5A2A","FFE3A0","fingertip spark swells into a sinking crimson sun","rumble","One finger. One planet. Some assembly required.","anime,ki,heavy,danger"},
+	{"tzatziki","ICBNGI","JN",2,4,1,"F7F4EC","7DBE3A","white yogurt dip, cucumber flecks","splat","Cool, garlicky dip.","edible,sauce,anti-undead"},
 	{"uakari","AMBJBA","deb",2,7,2,"E83A2A","F2D0B0","bright red bald face","chatter","Face as red as a tomato.","mammal,primate,silly"},
 	{"ube","IMBLGI","SNP",2,3,3,"7A3A9A","C8A0E8","bright purple jam","gloop","Purple, sweet, and everywhere now.","edible,sticky,sweet"},
 	{"udon","IMBLGI","FHN",2,3,3,"F7F0DE","C8A070","thick white noodles in broth","gloop","Noodles as thick as ropes.","edible,sticky"},
@@ -398,9 +403,4 @@ return {
 	{"weep","KBBEOJ","dNP",2,3,1,"93C5FD","E0F2FE","wobbly lip under two fountain jets of tears","wail","But I don't WANNA lose.","mood,silly"},
 	{"weeping cherry","NGCCMI","GdFS",2,1,5,"5D4037","F8BBD0","drooping branches of pink blossom","rustle","Weeps flowers. Beautifully.","plant,tree,cute"},
 	{"weeping fig","NGCCMI","GWkS",2,1,5,"8D6E63","2E7D32","small tree with glossy drooping leaves","rustle","Sulks if you move it.","plant,tree"},
-	{"weevil","AMAJFA","Gf",1,3,4,"6A4A2A","3A2A1A","beetle with long trunk snout","click","A beetle with an elephant nose.","insect,armored"},
-	{"weight","BKCLtI","kNO",6,3,9,"374151","9CA3AF","black trapezoid weight marked 16 TON dropping","thud","16 tons. Falls on cue.","heavy,silly"},
-	{"weight plate","BKBAKF","Uke",4,6,9,"24262A","8E9196","heavy iron disc","bonk","A discus with commitment issues.","sport"},
-	{"weightless palm","KLCNKJ","klO",7,7,3,"FFC2E2","6E4AA8","enemies drift up helplessly, then drop","hum","Up you go. Down you come.","anime,hero,gravity"},
-	{"weightlifter","LECJNA","Gkl",6,4,7,"111827","DC2626","tank top, huge muscles, barbell","thud","Do you even lift? He does.","sport,heavy"},
 }

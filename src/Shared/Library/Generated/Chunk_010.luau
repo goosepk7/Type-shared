@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flame salamander","AABJAA","KfB",3,6,3,"EA580C","FDE047","small lizard with flame crest","hiss","Lives in a campfire. Very cozy.","reptile,fire,elemental"},
+	{"flame strike","FADBKI","KO",7,7,2,"FF3D00","FFEA00","column of fire slamming down from the sky","roar","Fire, but from above. Surprise!","fire,holy"},
 	{"flame sword","CACHrK","KfP",7,6,4,"D9480F","FF6A1A","blade wreathed in flames","shing","Smells like toast. Hits like a dragon.","fantasy,flammable,glowing"},
 	{"flame tank","DADMHL","KegP",7,3,9,"4B5320","FF5722","tank with a nozzle spitting fire","fwoosh","Toasty treads.","mechanical,vehicle,land"},
 	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
@@ -60,7 +62,7 @@ return {
 	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
 	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
-	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
+	{"flour bomb","IFBD2J","SNP",3,5,3,"F2E6CF","C08A4A","paper flour sack bursting into a big soft cloud","puff","Everything is a bit beige now.","kitchen,cloud,edible"},
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
 	{"flower bed","NGCNMI","FSN",2,1,3,"F06292","6D4C41","rows of colourful blooms in soil","rustle","Keep off. The flowers fight back.","plant,flower"},
 	{"flower crown","NGAOMI","F",1,1,1,"F8BBD0","FFEB3B","ring of woven blossoms","rustle","Instant festival vibes.","plant,flower,cute"},
@@ -401,6 +403,4 @@ return {
 	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
 	{"geisha","LMCJNA","jc",3,4,3,"F8FAFC","DC2626","white makeup, kimono, paper fan","chime","A fan flick that ends fights.","historical"},
-	{"gelada","AMCJBA","deb",3,7,2,"8A6A4A","D8302A","lion mane, red chest patch","chatter","Grass-eating lion monkey.","mammal,primate"},
-	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
 }

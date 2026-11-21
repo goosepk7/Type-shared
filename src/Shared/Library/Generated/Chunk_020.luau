@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza dough","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","round stretchy dough ball","wobble","Stretchy, sticky, full of potential.","edible,wobbly"},
+	{"pizza ninja","LMCJNA","DZe",4,9,3,"111827","DC2626","ninja carrying pizza boxes","whoosh","Delivers pizza. And pain.","silly,stealth"},
+	{"pizza oven","OACM1I","K",4,1,7,"9C4A3A","FF6A1A","domed brick oven glowing inside","clang","Wood-fired fury.","kitchen,household"},
+	{"pizza party","IMCJII","dFc",5,1,6,"E8B04A","D72B2B","stacked pizza boxes","thud","Free pizza. Everyone comes.","edible,giant,silly"},
+	{"pizza peel","BMCHtK","klf",2,6,3,"C49A6C","8B5A2B","big flat wooden paddle","clang","Scoop. Flip. Fling.","kitchen,household"},
 	{"pizza place","EMCNII","dSc",2,1,5,"E53935","FFC107","shopfront with a leaning pizza sign","ding","Free delivery. Very fast delivery.","structure,building,shop,silly"},
 	{"pizza rolls","IABGKF","KEP",4,6,1,"D9A04A","C8302B","tiny golden pillows","pop","Lava inside every one.","edible,explosive"},
 	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
@@ -398,9 +403,4 @@ return {
 	{"punching machine","OKCL1I","kO",4,3,6,"C0392B","C9CED4","wall panel with spring boxing gloves","clank","Pow pow pow! From the wall!","defense,silly"},
 	{"punching tree","NGECMI","GkSf",6,2,8,"4E342E","2E7D32","gnarled tree swinging heavy branches","chime","Do not park next to it.","plant,magic,mythical,silly"},
 	{"punishment","KICLII","SNO",4,1,6,"78716C","DC2626","small chair in a corner under a spotlight, clock ticking","tick","Go to your room. And think about what you typed.","school,silly"},
-	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
-	{"pupfish","AAAJEC","dB",1,6,1,"3A6AE8","E8E0D0","tiny desert pool fish","splash","Lives in the hottest pools.","fish,aquatic,desert"},
-	{"puppeteer","LLCJNA","jHh",4,4,3,"7C2D12","DC2626","marionette strings from fingertips","giggle","Pulls your strings. Literally.","circus,magic"},
-	{"puppy","AMBJAA","dQf",1,6,2,"D9A56B","FFF1DE","oversized paws, floppy ears, wiggle butt","yip","Chews everything. Forgiven instantly.","mammal,pet,cute"},
-	{"puppy eyes","KHAAKB","cO",1,7,1,"8D6E63","B3E5FC","huge sparkly pleading eyes","aww","Nobody can say no to these.","cute,silly"},
 }

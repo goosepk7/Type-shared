@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
+	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
+	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
 	{"hibiscus","NGBNMI","dFS",2,1,2,"E91E63","FFEB3B","huge trumpet bloom, long stamen","rustle","Tropical vibes only.","plant,flower"},
 	{"hiccup","KMAOKG","jY",1,8,1,"F8BBD0","FFFFFF","tiny hopping bubble","hic","Hic! Random teleport.","silly"},
 	{"hickory","NGDCMI","GWkS",4,1,8,"795548","8BC34A","tall shaggy-bark tree","rustle","Shaggy bark, tough wood.","plant,tree"},
@@ -289,7 +292,7 @@ return {
 	{"ice cream man","LCCJNA","dJc",3,5,4,"F8FAFC","F9A8D4","white hat, bell, cone","jingle","Plays a jingle. Everyone follows.","food,sweet"},
 	{"ice cream parlor","ECCNII","dScN",2,1,4,"F8BBD0","80DEEA","pastel shop with a giant cone sign","ding","Free samples. Enemies cannot resist.","sweet,silly"},
 	{"ice cream sandwich","ICBAKJ","JeN",3,5,2,"3A2416","F7F2EC","two dark cookies, white cream","squish","Cold cream, cookie armour.","edible,frozen,sweet"},
-	{"ice cream scoop","BCAHJK","Jf",1,7,3,"C9CED4","8E9196","round scooping spoon","clang","Perfect spheres of chill.","kitchen,household"},
+	{"ice cream scoop","ICCG3F","SeN",3,4,4,"F6C8D4","FFF0D6","giant scoop of strawberry ice cream with a wafer","splat","Splat. Brrr. Sticky.","kitchen,lob,zone,edible,sweet"},
 	{"ice cream social","ICCNGI","JcN",3,3,2,"F7E7CE","F2A6C8","table of scoops","crackle","Cold treats, warm friends.","edible,frozen,sweet"},
 	{"ice cream sundae","ICBNGI","JScN",3,3,2,"F7E7CE","B0101E","glass dish, scoops, sauce, cherry","crackle","Everything good, in a tall glass.","edible,frozen,sweet"},
 	{"ice cream truck","DMDKHL","dkcg",4,5,6,"F7C6D9","8FD3F4","boxy van, giant cone on roof, serving window","jingle","Plays a jingle that no one can resist.","sweet,silly"},
@@ -400,7 +403,4 @@ return {
 	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
-	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
-	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
-	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
 	{"clarinet","BMBFJI","j",2,5,2,"24262A","C9CED4","black woodwind with silver keys","woodwind","Squeak. Sorry.","music"},
 	{"clarkia","NGBNMI","dFS",1,1,1,"F48FB1","FFFFFF","satin-petalled cup flowers","rustle","Says goodbye to spring.","plant,flower"},
 	{"clash","KMCFOB","kO",5,8,2,"FFAB40","FFFFFF","two forces colliding in a spark ring","clang","Sparks fly. Everyone flinches.","melee"},
@@ -246,6 +247,7 @@ return {
 	{"cookie","IMBAKK","dce",3,7,2,"C8904A","4A2516","round chewy disc with chocolate chips","whoosh","Monsters can't resist them.","edible"},
 	{"cookie beast","AMCJNA","dc",3,5,4,"1D4ED8","92400E","shaggy blue monster with crumbs","chomp","Om nom nom. Always nom.","silly,cute"},
 	{"cookie cake","IMCAKK","Uke",4,7,2,"C8904A","F2A6C8","giant cookie with frosting edge","whoosh","A cookie that wanted to be a cake.","edible,dessert"},
+	{"cookie cutter","BKDNtE","lNO",4,3,5,"D8DDE2","E9B872","giant star-shaped cookie cutter stamping down","clang","You are now cookie-shaped.","kitchen,stamp,telegraph"},
 	{"cookie dough","IMBLGI","ScN",2,3,3,"D9B07A","4A2516","lumpy dough blob with chips","gloop","Raw, chunky, and very tempting.","edible,sticky"},
 	{"cookie jar","BMBLKK","cO",1,1,3,"D2B48C","7A4E2D","bear-shaped jar of cookies","clang","Hand in the jar. Gotcha.","kitchen,household"},
 	{"cookie shield","IMCIII","Ga",3,3,6,"C8904A","4A2516","round cookie as a shield","thud","Crumbs fly. Arrows don't.","edible"},
@@ -401,6 +403,4 @@ return {
 	{"crayfish","ABAJRA","GfT",2,4,5,"A8402A","E89070","tiny lobster with pincers","clack","Tiny freshwater lobster. Feisty.","crustacean,aquatic,armored"},
 	{"crayon","BMAAJK","je",1,7,1,"C0392B","F28C28","waxy coloured stick","tap","Art attack!","school,art,toy"},
 	{"cream","IMBLGI","SN",2,3,2,"F7F4EC","F2EAD5","pitcher of thick cream","squeak","Rich, white, and pourable.","edible,slippery,silly,dairy"},
-	{"cream cheese","IMBLGI","SNP",2,3,3,"F7F4EC","F2EAD5","smooth white block","gloop","Smooth, spreadable, very sticky.","edible,sticky,dairy"},
-	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
 }

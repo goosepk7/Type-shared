@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
+	{"pupfish","AAAJEC","dB",1,6,1,"3A6AE8","E8E0D0","tiny desert pool fish","splash","Lives in the hottest pools.","fish,aquatic,desert"},
+	{"puppeteer","LLCJNA","jHh",4,4,3,"7C2D12","DC2626","marionette strings from fingertips","giggle","Pulls your strings. Literally.","circus,magic"},
+	{"puppy","AMBJAA","dQf",1,6,2,"D9A56B","FFF1DE","oversized paws, floppy ears, wiggle butt","yip","Chews everything. Forgiven instantly.","mammal,pet,cute"},
+	{"puppy eyes","KHAAKB","cO",1,7,1,"8D6E63","B3E5FC","huge sparkly pleading eyes","aww","Nobody can say no to these.","cute,silly"},
 	{"pupusa","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","thick stuffed corn cake","whoosh","A stuffed tortilla pillow.","edible"},
 	{"purify","KHCFOB","KF",3,6,2,"FFFFFF","B2EBF2","pure white wave washing outward","chime","Squeaky clean. Evil included.","holy,support"},
 	{"purple carrot","IEBAJK","FTe",3,6,4,"5E1A4E","ED9121","purple-skinned carrot","crunch","A carrot in royal colours.","edible,vegetable,healthy"},
@@ -398,9 +403,4 @@ return {
 	{"robot referee","OKCJNA","GO",3,5,5,"111827","F8FAFC","striped robot with whistle speaker","whistle","Flags your foul. Beeps loudly.","robot,sport"},
 	{"robot samurai","OKCJNA","GfT",6,6,7,"7F1D1D","CA8A04","lacquered red robot armor with katana","clank","Honor protocol: enabled.","robot,warrior"},
 	{"robot snake","OKCJCD","fHL",4,6,5,"71717A","4ADE80","segmented metal snake with LED eyes","whir","Hisses in binary.","robot,reptile"},
-	{"robot snowplow","OKCJHL","JkI",4,3,7,"F97316","94A3B8","robot with huge plow blade","whir","Clears paths. Clears enemies.","robot,frozen"},
-	{"robot soldier","OKCJNA","DeP",5,5,6,"475569","EF4444","armored humanoid robot with rifle arm","clank","Marches in perfect lines. Always.","robot,warrior"},
-	{"robot spider","OKBJFA","fHL",3,7,4,"334155","22D3EE","eight-legged steel bot with lens eyes","skitter","Climbs walls. Taps on windows.","robot,insect"},
-	{"robot spider tank","OKDJFA","Gke",7,4,8,"57534E","FACC15","six-legged tank with cannon turret","clank","Tank with legs. Stairs no longer safe.","robot,heavy"},
-	{"robot swarm","OKCJLA","DVP",5,7,4,"475569","22D3EE","carpet of tiny scuttling robots","beep","Beep beep beep beep beep.","robot,swarm"},
 }

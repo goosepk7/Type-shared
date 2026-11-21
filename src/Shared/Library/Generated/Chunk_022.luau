@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot snowplow","OKCJHL","JkI",4,3,7,"F97316","94A3B8","robot with huge plow blade","whir","Clears paths. Clears enemies.","robot,frozen"},
+	{"robot soldier","OKCJNA","DeP",5,5,6,"475569","EF4444","armored humanoid robot with rifle arm","clank","Marches in perfect lines. Always.","robot,warrior"},
+	{"robot spider","OKBJFA","fHL",3,7,4,"334155","22D3EE","eight-legged steel bot with lens eyes","skitter","Climbs walls. Taps on windows.","robot,insect"},
+	{"robot spider tank","OKDJFA","Gke",7,4,8,"57534E","FACC15","six-legged tank with cannon turret","clank","Tank with legs. Stairs no longer safe.","robot,heavy"},
+	{"robot swarm","OKCJLA","DVP",5,7,4,"475569","22D3EE","carpet of tiny scuttling robots","beep","Beep beep beep beep beep.","robot,swarm"},
 	{"robot tank","OKDMHL","GEe",7,3,9,"365314","1F2937","treaded robot with turret head","clank","Turret, treads, and attitude.","robot,heavy"},
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
 	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
@@ -398,9 +403,4 @@ return {
 	{"sea fan","ABCCMI","GdWT",3,1,6,"B83A6A","E87AA0","flat lacy fan coral","crackle","Waves at fish all day.","aquatic,ocean,reef"},
 	{"sea fog","GBDDOF","jZS",2,2,4,"B0BEC5","ECEFF1","rolling wall of grey sea fog","hush","Ships hate this. So do villains.","aquatic,spooky"},
 	{"sea giant","ABEJNC","kHB",8,3,8,"0C4A6E","67E8F9","barnacled giant rising from the waves","splash","Waves hello. Literally.","giant,aquatic"},
-	{"sea gooseberry","AHAJGJ","SB",1,2,1,"E8F4F8","8AE0F0","tiny round comb jelly","squelch","A floating glass marble.","aquatic,ocean,venomous"},
-	{"sea hag","ABCJNC","cMh",5,4,4,"134E4A","A3E635","seaweed-haired hag with shell necklace","cackle","Deals in voices and bad bargains.","witch,aquatic"},
-	{"sea hare","ABAJGI","jN",1,1,2,"8A6A4A","C8A07A","big sea slug with ear flaps","squelch","Squirts purple ink. Has ears.","mollusk,aquatic"},
-	{"sea holly","NGBNMI","dFST",2,1,3,"5C6BC0","B0BEC5","spiky metallic-blue thistle","rustle","Spiky. Shiny. Salt-proof.","plant,flower"},
-	{"sea kaiju","ABFJCC","kHB",9,5,9,"0C4A6E","22D3EE","whale-sized finned monster rising from sea","roar","Makes a splash. A very big one.","kaiju,aquatic,giant,danger"},
 }

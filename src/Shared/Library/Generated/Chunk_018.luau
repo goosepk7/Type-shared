@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nacho cheese","IMBLGI","ScN",2,3,3,"F2A62B","F2C24A","bright orange gooey sauce","gloop","Liquid gold, but orange.","edible,sticky,dairy"},
+	{"nacho fries","IMAELB","eVP",2,7,1,"F2862B","F2C24A","seasoned orange fries","pitter","Fries in nacho dust.","edible"},
+	{"nachos","IMBLGI","KcN",2,3,3,"E8B84A","F2A62B","pile of chips, melted cheese, jalapenos","gloop","A cheesy mountain of crunch.","edible,sticky"},
+	{"nag","KMBBKB","iQNO",3,5,1,"F59E0B","DC2626","wagging finger with a speech bubble of blah blah blah","chatter","Are we there yet? Are we there yet? Are we","silly"},
 	{"naga","ABDJCD","GfMB",7,6,7,"065F46","FACC15","cobra hooded serpent, jeweled crest","hiss","A serpent king with excellent taste in jewels.","mythical,reptile,royal"},
 	{"naginata","CKDHuK","fTP",6,6,4,"C9CED4","24262A","curved blade on long shaft","shing","Elegant reach, very rude edge.","medieval,sharp"},
 	{"nahual","ALCJAA","DjY",5,7,4,"7C2D12","FACC15","jaguar shapeshifter with glowing markings","growl","A jaguar on Tuesdays. Your neighbor otherwise.","mythical"},
@@ -137,6 +141,7 @@ return {
 	{"nonsense","KLBDOJ","UjP",3,6,1,"F472B6","A3E635","jumbled letters, a fish on a bicycle and upside-down text","boing","Flibber the wug went sproing. Exactly.","silly"},
 	{"noob","LMBJNA","Ujd",2,4,2,"FACC15","1D4ED8","default avatar, mismatched gear, wobbly stance","oof","Clicks everything. Somehow wins sometimes.","meme,gaming,silly"},
 	{"noob tube","CACAwI","UEeV",5,6,1,"5D6B3A","FFB13B","a chunky launcher lobs three bouncing grenades","thump","Skill issue? No, tube issue.","gaming,shooter,explosive"},
+	{"noodle whip","IMCACD","fHe",3,7,3,"F0CF7A","C0392B","one giant sauce-dripping spaghetti noodle lashing out","slap","Al dente, and it pulls.","kitchen,pull,hook"},
 	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
 	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
 	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},
@@ -398,9 +403,4 @@ return {
 	{"paintbrush","BMAAJK","je",1,7,1,"8B5A2B","C0392B","wooden brush with painted tip","clank","Every stroke a masterpiece.","art"},
 	{"painted lady","AMAJFB","jdA",1,5,1,"E8803A","1E1E1E","orange black white spotted wings","flutter","Flies across continents.","insect,cute"},
 	{"painted turtle","AMBJUA","GNB",2,2,8,"3A4A3A","E8301E","shell with red and yellow lines","hiss","Painted by nature.","reptile,armored"},
-	{"pair","KMBONA","QFV",3,5,3,"EC4899","3B82F6","two matching socks dancing arm in arm","pop","Two of them. For twice the problem.","silly"},
-	{"pajama kid","LMBJNG","Ud",2,6,2,"60A5FA","FDE68A","footie pajamas, teddy bear","giggle","Pillow fight champion.","cute,silly"},
-	{"pajamas","BMCONI","FN",1,3,1,"87CEEB","F2F2EE","cosy cloud-print pyjamas","swish","Sleepy power-up.","clothing"},
-	{"pakicetus","AMBJAA","DQfh",3,7,4,"8A7A5A","D8C8A8","wolf-like whale ancestor","howl","Great-grandpa of whales. Looks like a dog.","mammal,predator,wild,extinct,ancient"},
-	{"pakora","IMAELB","Ke",2,7,1,"C8803A","F2A62B","craggy fried fritter","pitter","Crunchy fritter of spicy veg.","edible"},
 }
