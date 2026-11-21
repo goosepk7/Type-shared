@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"inkanyamba","ADEJCC","kLB",8,5,7,"1E3A8A","FDE047","huge horse-headed eel of storms","thunder","When it's angry, storms happen.","mythical,storm"},
+	{"inkcap","NIBLMI","jSP",3,1,2,"ECEFF1","212121","tall shaggy cap melting into black ink","poof","Melts into ink. Gross. Effective.","plant,fungus"},
 	{"inkfold flock","AFBJLB","ARNVh",5,8,4,"F2EAD8","E24634","a flock of folded paper birds with vermilion ink seals","flutter","Eight slips, eight folds, eight very small grudges.","anime,paper,summon,swarm"},
 	{"inn","EMCCII","GFS",2,1,6,"6D4C41","FFB300","timber-framed building with hanging sign","thud","Rest here. Heal up. Pay later.","structure,building,ancient"},
 	{"innkeeper","LMCJNA","Fc",3,4,4,"78350F","FDE68A","apron, room key, rag","ding","Rooms available. Rumors free.","merchant"},
@@ -401,6 +403,4 @@ return {
 	{"lacrosse stick","BMCHJK","fe",2,7,4,"F2F2EE","1F2F55","stick with a netted pocket","bonk","Catch, cradle, fling.","sport"},
 	{"ladder","BMCCII","Gl",1,3,4,"C49A6C","8A929B","tall two-rail ladder","clank","Climbs walls. Carry it everywhere.","tool"},
 	{"ladder truck","DBEKHL","Dkleg",6,5,8,"D22B2B","C0C0C0","long red truck with a giant ladder","siren","Ladder up. Hose down.","mechanical,vehicle,land"},
-	{"ladle","BMBHJK","fe",1,6,3,"8A929B","24262A","deep spoon on long handle","clang","Soup's on. In your face.","kitchen,household"},
-	{"ladon","AJEJCI","GfM",7,3,8,"14532D","FACC15","serpent coiled around golden apple tree","hiss","Guards golden apples. Never shares.","mythical,reptile,guardian"},
 }

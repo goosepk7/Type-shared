@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"purple fire","FACAKB","Kje",6,8,2,"AA00FF","EA80FC","violet flame ball with pink core","whoosh","Magic fire. Smells like grapes.","fire,magic"},
+	{"purple frog","AMAJAG","UCe",1,5,1,"6A4A8A","C8A0D8","purple blobby frog with pig nose","croak","A purple blob with a nose.","amphibian,wetland,silly"},
+	{"purple lightning","FDDAKB","jeL",7,10,1,"AA00FF","EA80FC","bright violet branching bolt","crack","Lightning, now in grape flavour.","electric,magic"},
 	{"purple potato","IEBAKK","keO",3,7,6,"5E2A5E","8A5A9A","small violet potato","bonk","A royal purple spud.","edible,vegetable"},
 	{"push","KFCFOB","kI",4,8,1,"B3E5FC","FFFFFF","invisible palm-shaped force ripple","whoosh","Personal space, enforced.","force"},
 	{"puss caterpillar","AMAJTA","jdM",1,5,1,"C8A07A","F2E8D8","fluffy toupee caterpillar","flutter","Looks like a wig. Stings badly.","insect,cute"},
@@ -343,7 +346,6 @@ return {
 	{"road","EMDNII","DS",1,1,8,"424242","FFEB3B","grey asphalt strip with lane lines","thud","All roads lead to battle.","structure"},
 	{"road flare","BABNKI","Kc",2,3,1,"C0392B","FF6A1A","stick spewing red sparks","thud","Look here! Over here!","camping,outdoor"},
 	{"road grader","DEDKHL","DkIg",5,3,9,"FFC107","424242","long body with a big middle blade","engine","Smooths the road. And the opposition.","mechanical,vehicle,land"},
-	{"roadblock","EECCII","GSN",2,1,7,"F5F5F5","E53935","striped concrete blocks and orange cones","thud","Road closed. Detour through pain.","structure,defense"},
 	{"roadrunner","AMBJDA","d",2,10,1,"8A6A4A","D8C8B0","long tail, crest, running pose","tweet","Meep meep. Runs at 20 mph.","bird,cute"},
 	{"roar","KFCFOB","jkO",6,9,1,"FF8A65","FFE0B2","thunderous cone ring with flying leaves","roar","ROAAAR! Everyone backs off.","loud"},
 	{"roast","KACNOI","KS",5,4,2,"E65100","FFCC80","ring of crackling coals and heat","sizzle","Roasted. Like a marshmallow.","fire,silly"},
@@ -401,6 +403,4 @@ return {
 	{"robot tank","OKDMHL","GEe",7,3,9,"365314","1F2937","treaded robot with turret head","clank","Turret, treads, and attitude.","robot,heavy"},
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
 	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
-	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
-	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 }

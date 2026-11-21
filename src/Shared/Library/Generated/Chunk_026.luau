@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
+	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
+	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
+	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
 	{"sun dragon spirit","AAEJCB","KAF",8,6,6,"FDE047","F97316","serpent of pure sunlight","roar","Burns away shadows.","holy,fire,reptile"},
 	{"sun dried tomatoes","IMAELB","eVP",2,7,1,"8A1E1E","B0302B","shriveled red strips","pitter","Tomatoes that took a long nap in the sun.","edible"},
 	{"sun hat","BHBONI","G",1,6,1,"D2B48C","C0392B","wide floppy straw hat","swish","Shady business.","clothing"},
@@ -18,6 +22,7 @@ return {
 	{"sunburn","FABAKB","KN",2,6,1,"FF8A80","FFE0B2","pinkish glow on target","sizzle","Should've worn sunscreen.","fire,silly"},
 	{"sunburst","FHDGKI","KEO",7,8,1,"FFC400","FFFFFF","golden starburst exploding outward","boom","A little piece of the sun, popped.","holy,fire,explosive"},
 	{"sunburst flower","NABNMI","KSO",4,1,2,"FFC107","FF5722","blazing gold flower like a little sun","chime","Blinding bloom. Look away.","plant,magic,mythical"},
+	{"sundae drive","OCDAeL","eNP",4,6,2,"F7C6D9","7FD3E8","pastel ice cream truck rolls past flinging cones","jingle","The jingle means run. Toward it or away, your call.","transit,vehicle,ice cream,volley"},
 	{"sunday roast","IGCOKI","F",2,5,3,"C8762B","7DBE3A","plate of roast, potatoes, veg","crunch","The big weekly feast.","edible,healthy"},
 	{"sundew","NGBLMI","ScMN",3,1,3,"F44336","AED581","sticky tentacles with dew droplets","chomp","Sparkles. Sticks. Never lets go.","plant,carnivorous"},
 	{"sundial","EHBCII","GSN",2,1,8,"BCAAA4","FFD54F","stone pillar with a bronze dial","thud","Tells time. Only when sunny.","structure,ancient"},
@@ -398,9 +403,4 @@ return {
 	{"thunderstorm","GDEEOJ","SLPO",8,6,4,"2E3A55","FFE57F","towering black clouds spitting lightning","boom","Loud, bright, and very wet.","storm,electric"},
 	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
 	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
-	{"thyme","IGBOMI","WF",2,4,3,"5E7A4A","8A9A6A","tiny-leaf sprigs","crunch","There's always thyme for this.","edible,vegetable,healthy,herb"},
-	{"tiara","BHAONI","F",2,5,3,"C9CED4","8E5CC2","sparkly jewelled headband","swish","Princess mode: on.","royal,shiny"},
-	{"tibetan mastiff","AMDJAA","GDQf",6,7,4,"6A3A1E","E8A04A","huge maned guardian dog","bark","A lion disguised as a dog.","mammal,pet"},
-	{"tibs","IABNGI","KF",4,4,2,"8A3A1E","D8402B","sauteed meat chunks","sizzle","Sizzling Ethiopian tibs.","edible,spicy"},
-	{"tic tac toe","KMBLnI","GSO",3,1,4,"111827","EF4444","hand-drawn grid with a winning line of three Xs","scratch","Nobody wins. Nobody ever wins. Play again?","game,school"},
 }

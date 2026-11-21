@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
 	{"flame turret","OACMwI","KeP",6,5,6,"4A4D52","D9480F","squat nozzle tower with fuel tank","hum","Toasty perimeter guaranteed.","defense,flammable"},
 	{"flamethrower","CACFwI","KSeP",7,5,4,"D9480F","6B7B3A","nozzle wand with fuel tanks","whoosh","For when you want it well done.","flammable,ranged"},
 	{"flaming sphere","FACGKF","KQ",5,4,3,"FF6D00","FFE082","rolling ball of fire chasing targets","crackle","A fireball that walks you home.","fire"},
@@ -344,6 +345,7 @@ return {
 	{"garbage can","BJCLII","dMO",2,1,5,"4A4D52","2E8B57","tall bin with flip lid","clang","In you go. Pee-yew.","kitchen,household"},
 	{"garbage collector","LMCJNA","GH",3,4,6,"65A30D","F97316","hi-vis vest, gloves, trash bin","clank","Takes out the trash. Including enemies.","silly"},
 	{"garbage truck","DMDKHL","DklHg",5,4,8,"4C7A34","C7C7C7","boxy truck, rear compactor, lifting arms","engine","Takes out the trash. You are the trash.","mechanical,vehicle,land"},
+	{"garbage truck dump","OJDNeL","ESN",6,3,4,"3E8E4E","9C7B4E","green garbage truck backs up beeping and dumps a trash pile","beep","Beep. Beep. Beep. Oh no.","transit,vehicle,trash,zone"},
 	{"garden","MGCNII","WFS",2,1,5,"66BB6A","F06292","neat beds of flowers and veggies","rumble","Weeding in progress. Enemies are weeds.","place,terrain,plant"},
 	{"garden eel","ABAJCC","CdZB",1,6,1,"F2EEE6","3A3A3A","thin eels poking up from sand","splash","Pops up. Pops down. Repeat.","fish,aquatic,silly"},
 	{"garden fork","JGCHuI","CfT",3,5,4,"8A929B","8B5A2B","four-tine digging fork","thud","Digs dirt. Pokes pests.","garden"},
@@ -401,6 +403,4 @@ return {
 	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
 	{"gelatinous cube","AJDJGF","MHN",5,2,6,"86EFAC","F0FDF4","giant clear cube with stuff floating inside","squelch","A dungeon's cleaning crew.","slime,silly"},
 	{"gelato","ICBAKJ","JeN",3,5,2,"F7E0B0","9CBA6B","dense scoop in tiny cup","squish","Italian ice cream with a flair.","edible,frozen,sweet"},
-	{"gem","BMAA4J","cea",2,7,6,"1E9E5A","F2F2EE","faceted sparkling gemstone","chime","Shiny. Pointy. Priceless.","treasure,shiny"},
-	{"gemini","MHCEKJ","eV",5,5,5,"FFFFFF","FFD54F","two linked star figures","rumble","Two stars for the price of one.","space,zodiac"},
 }
