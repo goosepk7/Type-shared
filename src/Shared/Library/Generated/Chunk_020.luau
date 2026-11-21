@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"piston","OKCL1I","klI",5,4,7,"8A929B","4A4D52","cylinder with punching rod","hum","Kachunk! Pushed.","mechanical"},
+	{"piston rush","KFCHKI","Dkf",6,10,1,"78C8FF","4A505C","calf engines spit blue jets into a sonic-boom kick","vroom","Zero to forty studs before you finished blinking.","anime,quirk,speed"},
+	{"pit","MEDL5I","SHNO",6,1,8,"3E2A14","111111","round dark hole in the ground with crumbling edges","echo","Hellooo? ...ellooo? ...llooo?","trap,terrain"},
+	{"pit stop","LMCONI","D",2,5,1,"D7263D","F5C21B","a pit crew swapping your tyres in a blur","whirr","Four tyres, half a second.","transit,buff,movement,silly"},
+	{"pit viper","AMCJCD","fMN",4,6,3,"6AA04A","E8E07A","green viper, heat pits","hiss","Sees body heat. Spooky.","reptile,venomous"},
 	{"pita","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","round flat pocket bread","whoosh","A bread with a secret pocket.","edible"},
 	{"pita chips","IMBAKK","Uke",3,7,2,"E8C07A","C8904A","crisp triangle chips","whoosh","Crunchy bread triangles.","edible,snack"},
 	{"pitbull","AMCJAA","DQf",5,7,4,"8C7E72","F2EEE8","muscular wide head, big smile","bark","Big smile. Bigger heart.","mammal,pet"},
@@ -87,6 +92,7 @@ return {
 	{"platy","ABAJEC","dB",1,6,1,"E8701E","F2D82A","bright little orange fish","splash","Tiny tank fish, big colors.","fish,aquatic"},
 	{"platypus","ABBJAC","UfMB",2,6,2,"7A5236","2A2420","duck bill, beaver tail, webbed feet","chirp","A duck, a beaver and an otter walk into a bar.","mammal,marsupial,silly"},
 	{"play","KHCNII","UdFc",3,7,2,"22C55E","F59E0B","hopscotch grid, skipping rope and a ball mid-bounce","yay","Tag. You are it. No tag-backs.","toy,school,cute"},
+	{"play dead","AMBOAA","Gj",4,5,4,"9A9AA0","F1EEE8","play dead with a possum, then spring up hissing","hiss","Very convincing. Then very rude.","critter,mammal,buff,defense"},
 	{"play-doh","BMBLKI","NO",1,3,2,"2F6FD1","F1C40F","squishy colourful dough lumps","squeak","Squish. Squash. Stuck.","toy,sticky"},
 	{"player","LDCJNA","UeY",4,7,4,"22C55E","111827","kid with a headset and controller, floating P1 arrow","beep","Press start. Regret nothing.","gaming"},
 	{"playground","EMCNII","UdS",2,1,5,"E53935","1E88E5","slides, swings and climbing bars","thud","Recess is over. Battle is on.","structure,building,silly"},
@@ -253,7 +259,6 @@ return {
 	{"portuguese man o war","ABBJGJ","SMPOB",4,2,1,"5A6AE8","C8A8F0","blue float sail, long tentacles","squelch","A jelly with a sail. Floats into trouble.","aquatic,ocean,venomous"},
 	{"pose","KMBOKI","Gd",1,4,3,"FFD54F","FFFFFF","sparkly heroic pose with shine","ding","Admire the muscles.","silly"},
 	{"poseidon","LBFJXC","kTIhB",9,6,9,"0E7490","34D399","sea-green bearded giant, seaweed crown, golden trident, wave","splash","Rules the sea. Bad at sharing it.","mythical,ocean,greek,boss,danger"},
-	{"possum","AMBJAA","UjZf",2,6,2,"B0AAA4","F2EEE8","pointy pink nose, bald tail, playing dead","chirp","Plays dead. Wins an Oscar.","mammal,marsupial"},
 	{"post hole digger","JKCHJK","Cf",2,4,4,"8A929B","8B5A2B","twin-scoop digger","clank","Holes. Lots of holes.","tool"},
 	{"post office","EMCCII","GS",2,1,7,"B71C1C","1565C0","small brick building with a postbox","thud","Your parcel is here. It ticks.","structure,building,silly"},
 	{"poster","BMBInB","Gjd",2,5,2,"EF4444","FACC15","curling band poster, tape on corners","rustle","Covers the hole in the wall. And the enemy.","household,art"},
@@ -398,9 +403,4 @@ return {
 	{"puffin chick","ABAJDB","DAB",1,7,2,"4A4A50","F2F2F0","tiny grey fluffball","squawk","A fluffy sock with a beak.","bird,ocean"},
 	{"pug","AMBJAA","dQf",2,6,2,"D9C2A0","2B2420","squished black face, curly tail, wrinkles","yip","Snorts like a tiny tractor.","mammal,pet,cute,silly"},
 	{"puli","AMCJAA","DjQf",4,7,4,"1E1E1E","3A3A3A","dreadlock corded coat","bark","A mop that barks.","mammal,pet"},
-	{"pull","KLCBKI","H",4,7,2,"B388FF","FFFFFF","glowing tether dragging target in","whum","Come here, you.","force"},
-	{"pull apart bread","IGBOKI","F",2,5,3,"D9A04A","F2C870","loaf scored into squares","crunch","Tear and share.","edible,healthy"},
-	{"pulled pork","IMBLGI","cN",2,3,3,"B0602B","6B2A1E","pile of shredded saucy meat","gloop","Shredded, smoky, saucy.","edible,sticky"},
-	{"pulled pork sandwich","IMBLGI","cN",2,3,3,"B0602B","D9A04A","bun overflowing with pork","gloop","Messy, saucy, glorious.","edible,sticky"},
-	{"pulley","OKBLJK","lH",2,3,5,"8B5A2B","B89B6A","wheel with rope over it","clank","Lifts heavy things with clever science.","science"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"kudzu","NGDLMI","GWSHNP",4,3,6,"2E7D32","7CB342","blanket of vines swallowing everything","rustle","Grows a foot a day. Eats houses.","plant"},
+	{"kuiper belt","MCFEKJ","JReP",6,3,7,"B3E5FC","9E9E9E","ring of icy rocks far from the sun","twinkle","A freezer full of space rocks.","space,star"},
+	{"kukri","CKBHrK","fT",4,7,4,"8A929B","8B5A2B","forward-bent heavy knife","shing","Bent on success.","medieval,sharp"},
+	{"kulcha","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","stuffed fluffy flatbread","whoosh","A flatbread hiding a surprise.","edible"},
 	{"kulfi","ICBAKJ","JeN",3,5,2,"F2E2B0","9CBA6B","cone-shaped frozen stick","squish","Dense, creamy, and cardamom-cool.","edible,frozen,sweet"},
 	{"kumquat","IMAAKF","jke",3,6,2,"F59F1B","4F8A2B","tiny oval orange, eat whole","squirt","Bite-size citrus. Surprise sour inside.","edible,fruit,sour"},
 	{"kun peng","ABFJEB","AkB",9,5,9,"1E3A8A","F8FAFC","enormous fish that becomes a giant bird","whoosh","A fish so big it became a bird.","mythical,giant,danger"},
@@ -399,8 +403,4 @@ return {
 	{"lockpick","CKAOJI","bY",1,9,2,"C9CED4","24262A","thin bent picks","bang","Click. Open sesame.","spy"},
 	{"locksmith","LKCJNA","Gb",3,5,4,"57534E","FACC15","ring of keys, pick set","click","No door is safe. Ever.","tools"},
 	{"locro","IBBOGI","FS",3,4,3,"E8C04A","C8762B","thick corn and squash stew","slurp","Thick, hearty Andean stew.","edible,warm,healthy"},
-	{"locust","AMADLB","diAPh",2,6,1,"8A7A3A","D8B84A","grasshopper swarm cloud","buzz","Arrives in billions. Leaves nothing.","insect"},
-	{"locust tree","NGDCMI","GWkST",4,1,7,"5D4037","9CCC65","thorny tree with long twisty pods","rustle","Thorns as long as fingers.","plant,tree,sharp"},
-	{"log bridge","EGCCII","GSN",1,1,4,"8D6E63","7CB342","single fallen tree across a gap","thud","One wrong step and splash.","structure"},
-	{"log flume","DBCKHC","DIg",3,7,4,"8D6E63","4FC3F7","hollow log boat on a water chute","splash","The big drop! Everyone gets soaked.","vehicle,silly"},
 }

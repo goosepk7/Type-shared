@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gauntlet","CKBHJK","Gkf",4,6,6,"8A929B","6B4226","armoured plated glove","bonk","Slaps with authority.","medieval,armor"},
+	{"gaur","AMDJAA","DkO",7,4,7,"2A2018","F2E6C8","towering black bull, white socks","moo","Biggest wild cattle. Wears socks.","mammal,heavy"},
+	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
 	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
 	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
 	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
@@ -400,7 +403,4 @@ return {
 	{"grass","NGBNMI","FS",1,1,2,"7CB342","8BC34A","patch of green blades","rustle","Touch it. You need to.","plant"},
 	{"grasshopper","AMAJFG","UdP",1,6,1,"6AA03A","C8D84A","long hind legs, antennae","buzz","Jumps first. Thinks never.","insect"},
 	{"grater","BMBHJK","fV",2,5,4,"8A929B","24262A","box with jagged holes","clang","Shred it. Shred them.","kitchen,household"},
-	{"gratitude","KHBOKJ","F",1,4,2,"FFB74D","FFF8E1","warm orange heart glow","chime","Thanks! Here's a heal.","support,cute"},
-	{"graupel","GCBEOJ","UN",2,5,1,"F1F6F9","C7D9E4","tiny foam-like snow pellets","patter","Snow that went to the gym.","frozen"},
-	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
 }

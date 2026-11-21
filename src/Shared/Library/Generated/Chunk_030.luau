@@ -3,5 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"zucchini","IMBHJI","kf",4,5,4,"3E6B2A","9EC86A","long dark green club","bonk","The vegetable that gets everywhere.","edible,silly"},
+	{"zucchini bread","IMCCII","GF",4,2,5,"7A5A2A","5E8E3A","loaf flecked with green","thud","A vegetable in disguise.","edible,giant,dessert"},
+	{"zulu warrior","LECJNA","GDf",6,7,5,"111827","F8FAFC","cowhide shield, short spear","roar","Charges in formation like horns.","warrior"},
+	{"zuniceratops","AMDJAA","DkT",7,5,8,"8A7A5A","D8C8A8","early two-horned dino","bellow","Early horns. Still pointy.","dinosaur,extinct,reptile"},
+	{"zuppa toscana","IBBOGI","FS",3,4,3,"F2E8C8","3E7A2B","creamy soup with kale","slurp","Tuscan comfort, creamy and green.","edible,warm,healthy"},
 	{"zweihander","CKDHrK","kfO",7,3,6,"8A929B","9E1B32","giant two-hand sword, side lugs","shing","Needs two hands and a running start.","medieval,sharp"},
 }

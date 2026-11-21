@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tuojiangosaurus","AMDJAA","GkfT",6,3,9,"7A6A4A","E8A03A","pointy plates stegosaur","grunt","Pointy-plated stego cousin.","dinosaur,extinct,reptile,armored"},
+	{"tupandactylus","AMDJDB","DdAT",6,8,4,"7A5A3A","E8401E","gigantic sail crest","screech","Its head crest is a giant sail.","pterosaur,extinct,reptile"},
+	{"turaco","AMBJDB","jdA",2,6,2,"2AA04A","E8301E","green crested bird, red wings","squawk","Green bird. Red wings. Real pigment.","bird,jungle,silly"},
+	{"turbine","OFDM1K","kIP",4,4,6,"F2F2EE","8E9196","tall pole with three giant blades","whoosh","Spins wind into watts. And foes away.","mechanical"},
+	{"turkey","AMCJDA","Ddf",3,4,2,"5E4232","C8301E","fanned tail, red wattle, puffed chest","gobble","Gobbles at everyone. Hides in November.","bird,farm,holiday"},
 	{"turkey leg","IMCHJI","Fkcf",4,5,4,"B0602B","F2EEE0","huge roasted leg, bone handle","bonk","Fair food. Also a weapon.","edible,silly"},
 	{"turkey stampede","AGCADA","DkP",5,7,2,"7A4A2A","D84A2A","three plump turkeys charging in a fan of lanes","gobble","They heard it was almost the holidays.","holiday,harvest,thanksgiving,charge"},
 	{"turkey vulture","AMCJDB","DASfT",4,9,3,"2A2420","D8303A","red bald head, dark wings","screech","Smells lunch from a mile up.","bird,predator"},
@@ -398,9 +403,4 @@ return {
 	{"waterbuck","AMCJAA","DkB",4,8,4,"8A7A6A","F2F2EE","shaggy antelope with white ring rump","bleat","Has a target on its butt.","mammal,wild"},
 	{"watercress","IGBOMI","WF",2,4,3,"3E8E3A","7DBE5A","small round leaves, thin stems","crunch","Peppery little leaves.","edible,vegetable,healthy"},
 	{"waterfall","MBEFII","kSIN",4,1,7,"4FC3F7","F5F5F5","tall rock with foaming white falls","roar","It never stops. Neither will we.","place,terrain"},
-	{"waterfall cave","MBENII","FZS",3,1,8,"4FC3F7","5D5D5D","cave hidden behind falling water","rumble","Secret base behind the falls.","place,terrain"},
-	{"watering can","JBBEJK","Fe",1,5,3,"2E8B57","C9CED4","can with long sprinkle spout","splash","Plants say thank you.","garden"},
-	{"watermelon","IMCGKF","EkeP",5,4,3,"3A7D2C","E8434F","big striped oval, red flesh, black seeds","splat","Nature's water balloon. Mostly splash.","edible,fruit,summer"},
-	{"watermelon cannon","IMDGKF","EkeP",6,4,3,"3A7D2C","E8434F","huge melon launched in an arc","splat","A melon missile. Splash zone.","edible"},
-	{"watermelon slice","IGBAKF","FeV",3,6,2,"E8434F","3A7D2C","triangle wedge, green rind, black seeds","splat","Grin-shaped. Spits seeds on command.","edible,fruit,sweet"},
 }

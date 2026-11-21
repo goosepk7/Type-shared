@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stupidity","KMBDOJ","jNP",3,4,1,"FDE68A","A3E635","question marks around a spinning empty thought bubble","boing","Contagious. Do not make eye contact.","silly,meme"},
+	{"sturgeon","ABDJEC","DfB",5,7,6,"6E6A64","C8C4BC","bony armor plates, shovel snout","splash","Older than dinosaurs. Looks it.","fish,aquatic,ancient"},
+	{"sty","MECNII","SMNh",3,1,4,"6B4F2A","F4A6B7","muddy fenced pen with a trough and snoozing pigs","squelch","Your room, according to your mother.","farm,gross"},
+	{"stygimoloch","AMDJAA","DdkTO",5,5,6,"3A3A3A","8A5A3A","spiky domed head","honk","Pachy with extra spikes. Goth.","dinosaur,extinct,reptile"},
+	{"stymphalian bird","AKCJDB","ATeP",5,8,5,"A16207","E7E5E4","bronze feathers shot like darts","clank","Sheds razor feathers. Terrible pillow.","mythical,bird,metal"},
 	{"styracosaurus","AMDJAA","DkT",7,5,8,"7A6A4A","C8701E","big nose horn, spiky frill crown","bellow","Wears a crown of spikes.","dinosaur,extinct,reptile"},
 	{"sub sandwich","IMBHJI","Fkf",3,5,4,"D9A04A","7DBE3A","long roll stuffed with fillings","bonk","A sandwich as long as your arm.","edible,silly"},
 	{"submachine gun","CKBAwI","eV",4,9,3,"24262A","8E9196","compact rapid-fire blaster","rattle","Small gun, big hurry.","modern,ranged"},
@@ -398,9 +403,4 @@ return {
 	{"three-banded armadillo","AMBJAF","GUCf",2,5,6,"B8A08E","8A7462","armadillo rolled into a perfect ball","squeak","Rolls into a perfect ball.","mammal,wild"},
 	{"three-eyed puppy","ALBJAA","DQ",2,8,3,"22D3EE","7C3AED","three-eyed glowing puppy","bark","Fetches meteors.","alien,cute,canine"},
 	{"three-headed space dragon","ADFJAB","AkeL",9,6,9,"FACC15","92400E","golden three-headed winged dragon","roar","Three heads, gravity beams, one bad day.","kaiju,giant,reptile,danger"},
-	{"thresher shark","ABDJEC","DkfTOB",7,8,6,"6A6E80","D8DCE2","enormous whip-like tail","chomp","Slaps fish with its tail. Whap.","fish,aquatic,ocean,predator"},
-	{"thrill","KDBOKB","UDO",3,9,1,"F97316","22D3EE","rollercoaster car cresting a drop, arms in the air","whee","Hands up! Scream! Regret lunch!","speed"},
-	{"throat","BMCL5I","iHN",4,3,3,"B03A48","E57373","dark red swallowing tunnel, dangly uvula","gulp","GULP. Gone.","body,silly"},
-	{"throne","BMDC0I","GFh",4,1,9,"D4A72C","9E1B32","towering golden chair, red velvet","thud","Sit here. Command everyone.","furniture,royal"},
-	{"throne heir","LMCJNA","ch",3,5,4,"7C3AED","F8FAFC","little crown, fancy suit, pout","horn","Will inherit everything. Wants it now.","royal"},
 }

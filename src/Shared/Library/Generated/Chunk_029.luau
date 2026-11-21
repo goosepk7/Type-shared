@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"waterfall cave","MBENII","FZS",3,1,8,"4FC3F7","5D5D5D","cave hidden behind falling water","rumble","Secret base behind the falls.","place,terrain"},
+	{"watering can","JBBEJK","Fe",1,5,3,"2E8B57","C9CED4","can with long sprinkle spout","splash","Plants say thank you.","garden"},
+	{"watermelon","IMCGKF","EkeP",5,4,3,"3A7D2C","E8434F","big striped oval, red flesh, black seeds","splat","Nature's water balloon. Mostly splash.","edible,fruit,summer"},
+	{"watermelon cannon","IMDGKF","EkeP",6,4,3,"3A7D2C","E8434F","huge melon launched in an arc","splat","A melon missile. Splash zone.","edible"},
+	{"watermelon slice","IGBAKF","FeV",3,6,2,"E8434F","3A7D2C","triangle wedge, green rind, black seeds","splat","Grin-shaped. Spits seeds on command.","edible,fruit,sweet"},
 	{"watermelon vine","NGCLMI","SeN",2,1,4,"2E7D32","E53935","sprawling vine with stripy melons","rustle","Seeds for days. Ptoo ptoo.","plant"},
 	{"watermill","EBDCIK","GSI",3,1,7,"8D6E63","1E88E5","stone mill with a big turning wheel","splash","Splish, splash, grind.","structure,building"},
 	{"waterzooi","IBBOGI","FS",3,4,3,"F2E8C8","7DBE3A","creamy chicken stew","slurp","A creamy Belgian stew.","edible,warm,healthy"},
@@ -398,9 +403,4 @@ return {
 	{"zoom","KFBOKB","D",3,10,2,"FFEB3B","FFFFFF","speed lines and blur","zoom","Zoom zoom. Catch me if you can.","speed,silly"},
 	{"zoomer","LDBJNA","DjdY",3,9,2,"22D3EE","F472B6","kid filming a dance on a phone, oversized hoodie","beep","Attention span: this long. What were we","meme,silly"},
 	{"zorilla","AJBJAA","CjfTM",3,8,2,"1E1E1E","F2F2F2","stripy skunk-like weasel","chatter","Smells worse than skunks. Wow.","mammal,predator"},
-	{"zucchini","IMBHJI","kf",4,5,4,"3E6B2A","9EC86A","long dark green club","bonk","The vegetable that gets everywhere.","edible,silly"},
-	{"zucchini bread","IMCCII","GF",4,2,5,"7A5A2A","5E8E3A","loaf flecked with green","thud","A vegetable in disguise.","edible,giant,dessert"},
-	{"zulu warrior","LECJNA","GDf",6,7,5,"111827","F8FAFC","cowhide shield, short spear","roar","Charges in formation like horns.","warrior"},
-	{"zuniceratops","AMDJAA","DkT",7,5,8,"8A7A5A","D8C8A8","early two-horned dino","bellow","Early horns. Still pointy.","dinosaur,extinct,reptile"},
-	{"zuppa toscana","IBBOGI","FS",3,4,3,"F2E8C8","3E7A2B","creamy soup with kale","slurp","Tuscan comfort, creamy and green.","edible,warm,healthy"},
 }

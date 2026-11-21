@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"scratch","KMBHJB","fT",3,9,1,"FFCC80","FFFFFF","three glowing claw lines","scritch","Scritch. Ouch.","sharp"},
+	{"scratching post","BMCCII","Gc",1,1,4,"D2B48C","B89B6A","carpeted post with rope wrap","squeak","Shred zone.","pet"},
+	{"scream","KFCFOB","jkO",5,10,1,"FFCDD2","FFFFFF","jagged sound ring burst","scream","AAAAAAAAAAAAAH!","loud"},
+	{"screech","KFCF6B","jIO",4,9,1,"F8FAFC","EF4444","jagged white sound spikes shattering nearby glass","screech","EEEEEEEEEEEEEEEEEEEEEEEEE.","loud"},
+	{"screech owl","AMAJDB","AZT",2,7,2,"8A8A80","D8D0C0","tiny eared owl, bark pattern","hoot","Doesn't screech. Trills.","bird,nocturnal,predator"},
 	{"screen wrap","KLBOKI","Y",2,10,1,"7DFFB2","B57CFF","pixel dissolve and reappear behind them","blip","Left edge, right edge, behind you.","game,arcade,mobility"},
 	{"screw","BKAAJK","Te",1,8,2,"8A929B","C9CED4","spiral threaded spike","clink","Righty tighty.","hardware"},
 	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
@@ -398,9 +403,4 @@ return {
 	{"skateboard kickflip","BFBOHL","Dke",4,9,2,"3BB7E8","FFD24A","skateboard dash ending in a kickflip that flings the board","clack","Landed it. On you.","transit,skate,movement"},
 	{"skateboarder","LMCJNL","UDd",3,9,3,"DC2626","111827","helmet, skateboard, ollie pose","whoosh","Grinds on rails. And your nerves.","sport"},
 	{"skateboarding","KMBOHF","UDk",3,9,2,"111827","FACC15","board flipping under mid-air trainers, grind sparks","clack","Kickflip! Landed it. Nobody was filming.","sport,cool"},
-	{"skating","KCBONK","UDj",3,8,2,"F8FAFC","F472B6","figure in a spin on one blade, arms up, ice sparkles","swish","Triple axel. Double wobble. Single bruise.","sport,frozen"},
-	{"skee ball","BMBA3F","Ue",4,7,2,"C8894B","3EC1D3","wooden arcade ball off a little ramp","bonk","Up the ramp, into the face.","game,arcade,lob"},
-	{"skeleton","AICJNA","feV",4,6,3,"F5F5F4","57534E","rattling bones, grinning skull","rattle","Has a funny bone. Uses all of them.","undead,spooky,halloween"},
-	{"skeleton archer","AICJNA","TeV",4,6,3,"E7E5E4","78350F","skeleton with a bow and quiver","rattle","Never misses. Never hits either.","undead,spooky,archer"},
-	{"skeleton army","AIDJLA","fVPh",6,5,5,"F5F5F4","1F2937","rows of rattling skeleton soldiers","rattle","Bones. So many bones.","undead,spooky,swarm"},
 }

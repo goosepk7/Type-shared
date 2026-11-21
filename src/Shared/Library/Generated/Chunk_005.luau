@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"caramel","IMBLGI","ScN",2,3,3,"C68E3A","E8B860","glossy golden drizzle","gloop","Sticky gold. Wonderful and dangerous.","edible,sticky,candy,sweet"},
+	{"caramel apple","IMBLGI","ScNP",2,3,3,"B5651D","C8262B","apple on a stick, glossy caramel shell","gloop","Sticky, crunchy, impossible to eat politely.","edible,sticky,sweet"},
 	{"caramel chews","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","wrapped golden squares","gloop","Chewy squares. Teeth trap.","edible,sticky,candy"},
 	{"caramel corn","IMBGKF","EN",4,6,1,"C68E3A","F2D08A","golden clumps of popcorn","pop","Crunch, stick, repeat.","edible,explosive,candy"},
 	{"caramel popcorn","IMBGKF","ENP",4,6,1,"D9A04A","F7E8C8","glossy golden popcorn clusters","pop","Sweet, sticky, and still explodes.","edible,explosive,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"citron","IMBAKF","jke",3,6,2,"E9D74A","9AAA3C","huge lumpy yellow citrus","squirt","Mostly rind. Fully dramatic.","edible,fruit,sour"},
 	{"city","MEFNII","Sh",4,1,9,"37474F","90CAF9","skyline of towers and traffic","traffic","Never sleeps. Never stops.","place,terrain"},
 	{"city wall","EEECII","GS",3,1,10,"BCAAA4","8D6E63","long high wall with walkway and towers","thud","The whole town hides behind this.","structure,defense,ancient"},
-	{"civet","AMBJAA","CfM",2,5,3,"8A8070","1E1E1E","spotted, banded tail, masked face","squeak","Smells musky. Proudly.","mammal,wild"},
-	{"civilization","MEFNqI","GWSh",8,1,9,"D6C6A8","3B82F6","sprawl growing from huts to towers to rockets in a blink","crowd","From mud huts to moon rockets. One more turn.","place,ancient"},
 }
