@@ -319,7 +319,7 @@ return {
 	{"space hamster","AMAJAF","Ud",1,8,1,"FDBA74","94A3B8","hamster in a tiny space helmet ball","squeak","Rolls through the galaxy.","silly,cute,space"},
 	{"space heater","OABN1I","KF",3,1,5,"8E9196","E67E22","glowing coil heater","thud","Toasty. Very toasty. Too toasty.","household"},
 	{"space jellyfish","AHDJGJ","ASL",5,3,3,"C4B5FD","67E8F9","giant glowing jelly with trailing light","hum","Floats through nebulas. Stings comets.","alien,cosmic"},
-	{"space junk","MKCEKJ","kReP",4,7,4,"9E9E9E","607D8B","tumbling scraps of satellites","rumble","Spare parts falling at high speed.","space,silly"},
+	{"space junk","MKCNKJ","keP",4,5,4,"9E9E9E","607D8B","tumbling scraps of satellites falling from orbit","clang","What goes up eventually comes down. On you.","space,metal,silly"},
 	{"space knight","LHCJNA","lfa",6,7,5,"F8FAFC","22D3EE","robes with glowing laser sword","hum","May the... force field be with you.","space,warrior"},
 	{"space kraken","ALFJCJ","AkHO",9,3,9,"312E81","F0ABFC","nebula-skinned kraken wrapping a moon","roar","Squeezes planets like stress balls.","alien,cosmic,boss,danger"},
 	{"space marine","LKCJNA","GDe",6,5,7,"1E3A8A","94A3B8","bulky power armor, laser rifle","bang","Fights aliens for a living. Good benefits.","space,military"},

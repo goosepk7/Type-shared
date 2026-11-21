@@ -20,7 +20,7 @@ return {
 	{"brain freeze","ICBA2K","JO",3,6,2,"4FC3F7","E91E63","a giant slushie cup splats; the foe clutches their head","squish","Ow ow ow. Cold.","goofy,silly,frozen"},
 	{"brainstorm","KDCDOJ","jL",5,6,2,"E040FB","FFEB3B","little cloud raining lightbulbs and sparks","crack","A storm of ideas. Some hurt.","psychic,electric,silly"},
 	{"brake","KKBF6B","INO",3,6,3,"DC2626","1F2937","red pedal stomp with screeching skid marks","screech","SCREEEECH. Everyone stops. Coffee spills.","vehicle"},
-	{"bramble","NGCLMI","WSTHN",3,1,4,"4E342E","7CB342","tangle of thorny arching canes","rustle","Prickly, sticky, grabby.","plant,sharp"},
+	{"bramble","NGCLMI","WSN",3,1,4,"4E342E","7CB342","tangle of thorny arching canes","rustle","Hugs back. With thorns.","plant,nature,trap"},
 	{"bramble elemental","AGDJMA","THN",6,3,6,"365314","DC2626","tangle of thorny bramble shaped like a beast","rustle","Hugs hurt. A lot.","elemental,plant"},
 	{"bramble leash","NGCAMI","QHeN",5,8,3,"7A3DB8","C9A3F2","three thorny purple vines lash out and drag a foe in","whoosh","It is not a rope. Ropes do not have thorns.","anime,stand,vine"},
 	{"branch","NGAHJI","kf",1,5,2,"6D4C41","8D6E63","forked wooden stick with a leaf","rustle","Pick it up. Whack. Classic.","plant"},

@@ -151,7 +151,7 @@ return {
 	{"jet boat","DBCKHC","DkIgB",5,10,4,"FF9800","212121","sleek boat blasting a water jet","engine","Spins on the spot. Sprays everyone.","vehicle,aquatic"},
 	{"jet ski","DBBKHC","DkIgB",4,9,3,"FFEB3B","1565C0","small sit-on watercraft, handlebars, spray jet","engine","Sprays enemies with an angry rooster tail.","vehicle,aquatic"},
 	{"jet ski wake","OBCFiC","kIB",3,5,3,"FFF1D6","2BB3A3","a jet ski skimming ahead, its wake throwing enemies aside","vroom","No wake zone? Never heard of it.","transit,water,silly"},
-	{"jet stream","FFDBOB","kIe",6,10,2,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air"},
+	{"jet stream","FFDBOB","kIe",5,10,1,"7DB7D6","F2FAFF","long fast air river with streaks","whoosh","A highway in the sky. No speed limit.","air,wind,weather"},
 	{"jetpack burst","OABOkI","KAl",4,10,2,"9E9E9E","FF6F00","twin thrusters kick you skyward, then you glide","roar","Up, up, and slightly sideways.","modern,air,mobility"},
 	{"jetpack hover","OABOkI","Al",3,6,3,"96C8FF","FF9646","a twin-tank jetpack holding you up on short blue flames","whoosh","Hovering, technically.","scifi,modern"},
 	{"jewel beetle","AMAJFA","Gfa",1,3,4,"2AC88A","E8302A","metallic rainbow beetle","click","Looks like actual jewelry.","insect,armored"},

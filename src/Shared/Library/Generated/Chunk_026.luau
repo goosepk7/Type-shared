@@ -67,7 +67,7 @@ return {
 	{"sunday roast","IGCOKI","F",2,5,3,"C8762B","7DBE3A","plate of roast, potatoes, veg","crunch","The big weekly feast.","edible,healthy"},
 	{"sundew","NGBLMI","ScMN",3,1,3,"F44336","AED581","sticky tentacles with dew droplets","chomp","Sparkles. Sticks. Never lets go.","plant,carnivorous"},
 	{"sundial","EHBCII","GSN",2,1,8,"BCAAA4","FFD54F","stone pillar with a bronze dial","thud","Tells time. Only when sunny.","structure,ancient"},
-	{"sundog","GHBGKE","VO",3,5,2,"FFF3C4","FF8A80","twin glowing spots beside the sun","chime","Two extra suns. Very confusing.","space"},
+	{"sundog","GHBAKE","eV",4,6,3,"FFF3C4","FFB74D","two little suns beside you shooting rays","chime","Two extra suns. Very confusing.","space,light,weather"},
 	{"sunfire","FHDNOI","KFS",7,5,3,"FFB703","FFF3C4","golden sun circle on the ground, rays up","hum","Sunscreen strongly recommended.","fire,holy"},
 	{"sunfire bird","AACJDB","KAF",4,8,3,"FDE047","F97316","small radiant bird with sunray tail","chime","Brings the dawn. Every morning.","fire,bird"},
 	{"sunfish","ABDJEC","DfB",5,2,6,"9AA0A8","D8DCE0","huge round flat fish, no tail","splash","A giant swimming head. Tail sold separately.","fish,aquatic,silly"},
