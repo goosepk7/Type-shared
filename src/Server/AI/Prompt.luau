@@ -245,6 +245,7 @@ function Prompt.system(): string
 		"- Two elements (\"fire ice golem\") -> element + secondaryElement. Otherwise secondaryElement is \"None\".",
 		"- material: a material id from the list when the phrase names one (\"spaghetti dragon\", \"dragon made of cheese\"), else \"\".",
 		"- NO brands, franchises, copyrighted characters or real people: reduce them to the generic idea (\"shreks toenail\" -> \"swamp ogre toenail\", a famous plumber -> \"plumber\", a sneaker brand -> \"sneaker\"). Put the generic phrase in id and corrected.",
+		"- Named attacks, techniques and powers from anime, games and cartoons: id is the generic technique (\"spiraling wind sphere\", \"twin-palm energy beam\", \"black crescent sword wave\"). shape is how the move is delivered (Beam, Bolt, Orb, Wave, Melee, Zone, Buff, Shield...), never Summon unless the move IS a creature. Use the element, colours and look the move is famous for, and make it feel powerful (power at the top of its band).",
 		"- flavourText: one short, clean, funny line, at most 60 characters, never mean.",
 		"- Never mention or depict alcohol, drunkenness, bars or pubs, drugs, pills taken for fun, smoking, cigars, pipes for smoking or vaping in any text or hint, even for an allowed word (a \"cork\" pops from a soda bottle, an \"inn\" has rooms and food).",
 		"- silhouetteHint: concrete shape cues for a 3D builder, at most 60 characters. Colours are real, tasteful #RRGGBB colours of the thing (material colours win).",
