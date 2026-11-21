@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"la llorona","ABCJNJ","jAc",5,5,3,"E2E8F0","1E3A8A","weeping ghost in white by the river","wail","Cries so much the river overflows.","ghost,spooky"},
+	{"lab coat","BMCONI","F",1,5,2,"F2F2EE","8E9196","long white coat with pockets","swish","Science is happening.","clothing,science"},
 	{"lab flask","BJAA2I","MeV",2,6,1,"BFE6F2","A66BDB","cone flask fizzing purple","bubble","Bubbling, glowing, throwable.","science"},
 	{"label","BMAAJB","jSN",1,7,1,"FFFFFF","EF4444","sticky white label slapped on with HELLO written on it","tap","Labelled: property of the winner.","household"},
 	{"label maker","BMAOJK","j",1,5,2,"8E9196","F2F2EE","handheld sticker printer","tap","Labels you DEFEATED.","office"},
@@ -401,6 +403,4 @@ return {
 	{"log wall","EGDCII","GST",3,1,6,"8D6E63","5D4037","row of sharpened upright logs","thud","Pointy end goes up. Usually.","sharp,flammable"},
 	{"loggerhead","ABCJUC","GNB",3,2,8,"B8703A","E8C08A","big headed sea turtle","hiss","Big head. Crunches crabs.","reptile,armored"},
 	{"loki","LLCJZA","jZVbY",7,8,5,"166534","D4AF37","grinning red-haired trickster, fur cloak, flickering copies","cackle","It was not him. It is never him. It was him.","mythical,norse,trickster"},
-	{"lollipop","IMBHJI","dkf",3,5,4,"E8434F","F7F2F0","swirl disc on a stick","bonk","A sweet club with a stick handle.","edible,silly,candy"},
-	{"lomo saltado","IGBOKI","F",2,5,3,"8A3A1E","F2C24A","beef stir fry with fries","crunch","Steak and fries in a wok.","edible,healthy"},
 }

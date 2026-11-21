@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"metal detector","BKCOJI","c",1,3,3,"8E9196","24262A","pole with disc sensor","clink","Beep... beep... BEEP! Treasure!","explorer"},
+	{"metal detectorist","LKCJNA","CH",3,4,4,"15803D","FACC15","headphones and beeping detector","beep","Beep beep. Found a bottlecap.","silly"},
 	{"metal dragon","AKEKAB","GAeg",8,5,9,"71717A","E5E7EB","armored plated dragon with blade wings","clank","Bullets bounce. Swords bend.","mythical,reptile,metal"},
 	{"metal elemental","AKDJNA","Gka",7,3,9,"94A3B8","E2E8F0","liquid chrome giant with gear eyes","clank","Shiny, heavy, and magnetic personality.","elemental,metal"},
 	{"metal form","KKCOWA","Ga",3,3,9,"90A4AE","ECEFF1","caster turning shiny chrome","clang","Shiny, heavy and bonk-proof.","heavy,defence"},
@@ -401,6 +403,4 @@ return {
 	{"mutton curry","IABNGI","KSP",4,4,2,"8A3A1E","D9A02B","dark meaty curry","sizzle","A hearty, heavy curry.","edible,spicy"},
 	{"muzzle","BMBLJI","O",1,1,3,"6B4226","5B6168","cage-like snout strap","clink","No biting allowed.","equipment"},
 	{"mycelium","NGENMI","FSP",3,1,5,"F5F5F5","BCAAA4","web of white threads under the soil","poof","The forest's secret internet.","plant,fungus"},
-	{"myconid","AGBJNA","jMP",3,3,4,"DC2626","F5F5F4","walking red-capped mushroom person","puff","Talks in spores. Says hello a lot.","plant,cute"},
-	{"mynah","AMAJDB","jdA",1,7,1,"1E1E1E","F2C82A","black bird, yellow face patch","tweet","Talks more than a parrot.","bird,cute"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"heron","AMCJDA","AfT",3,5,2,"6A7A8E","F2F2F0","tall stalking bird, dagger beak","squawk","Stands still forever. Then stab.","bird,wetland"},
+	{"herrerasaurus","AMDJBA","DkfT",6,6,7,"7A5A3A","C8A07A","early predator","roar","One of the first big meat eaters.","dinosaur,extinct,reptile,predator,ancient"},
 	{"herring","ABAJEC","dPhB",1,6,1,"B8C4D0","4A6A8A","small silver fish, shoals","splash","Travels in million-fish crowds.","fish,aquatic"},
 	{"heterodontosaurus","AMBJAA","dkT",3,5,6,"8A6A4A","D8B88A","tiny dino with fangs","honk","Plant eater with fangs. Confusing.","dinosaur,extinct,reptile"},
 	{"hex","KIBAKB","jiN",4,7,1,"6A1B9A","B2FF59","spinning purple hexagon glyph","cackle","Bad luck delivered by express mail.","spooky,magic"},
@@ -401,6 +403,4 @@ return {
 	{"indian rhino","AMDJAA","GDkIO",7,4,9,"7C7470","B0A49A","armor-plated folds, one horn","trumpet","Built with its own armor plating.","mammal,heavy,wild"},
 	{"industrial fan","OFDF1I","kI",4,5,6,"4A4D52","F1C40F","wall fan in a steel housing","whoosh","Air conditioning with attitude.","mechanical"},
 	{"inertia","FLCOKI","G",3,2,6,"8495B5","D5DCEA","heavy glowing stance aura","hum","Objects at rest stay at rest.","heavy"},
-	{"infect","KJBAKB","MP",4,7,1,"8BC34A","33691E","green germ-shaped glob","squelch","Spreads like a cold in class.","toxic"},
-	{"inferno","FAEN5K","KkSP",8,5,5,"B3261E","FF9F1C","towering ring of fire, swirling smoke crown","roar","The floor is lava, and also the walls.","fire"},
 }

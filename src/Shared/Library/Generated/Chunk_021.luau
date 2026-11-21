@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pumpkin pie","IMBAKK","kce",3,7,2,"C2622B","F2E8D0","orange custard pie, cream dollop","whoosh","Autumn on a plate.","edible,holiday"},
+	{"pumpkin seeds","IGAELB","eVP",2,7,1,"E8DCB0","6B8E3A","flat oval cream seeds","pitter","Pumpkin's tiny ammunition.","edible"},
+	{"pumpkin soup","IBBOGI","FS",3,4,3,"E8761A","F2E8C8","orange velvet soup bowl","slurp","Autumn in a bowl.","edible,warm,healthy"},
 	{"pumpkin spice","IFBDOJ","jPO",2,5,1,"C2622B","E8A040","orange-brown spice cloud","puff","Autumn, in a cloud.","edible,spice,holiday"},
 	{"pumpkin spirit","AABJGG","UKc",2,5,3,"F97316","166534","bouncing carved pumpkin with glowing grin","cackle","Spicy seasonal energy.","halloween,spooky,silly"},
 	{"punch","KMCAKB","kf",5,9,2,"FF7043","FFE0B2","glowing fist with impact star","pow","The simplest spell. Fist goes forward.","melee"},
@@ -225,6 +228,7 @@ return {
 	{"red hot poker","NACNMI","KdFS",3,1,2,"FF5722","FFEB3B","flame-coloured torch spikes","rustle","Looks hot. Is just a flower.","plant,flower"},
 	{"red kangaroo","AMDJAG","UkfO",6,6,2,"B85A30","F2E2D0","huge red kangaroo boxing","chirp","Biggest boxer in the outback.","mammal,marsupial"},
 	{"red licorice","IMBHJI","fHN",3,5,4,"C8102E","E8434F","twisted red rope","bonk","The red rope of sweetness.","edible,silly,candy"},
+	{"red light","OMCNII","SNO",3,2,6,"E53935","FFC107","a traffic light that flicks amber then red","beep","Red means stop. Moving means ouch.","transit,zone,trap,silly"},
 	{"red lightning","FDDAKB","KeLO",8,10,1,"FF1744","FFCDD2","blood-red forked bolt","crack","Regular lightning, but angry.","electric"},
 	{"red oak","NGECMI","GWkS",4,1,8,"5D4037","C62828","tall oak turning deep red","rustle","Red leaves. Red rage.","plant,tree"},
 	{"red onion","IJBDOJ","jS",3,5,1,"7A2A4E","C88AA8","purple layered bulb","puff","Purple tears, maximum drama.","edible,vegetable"},
@@ -399,8 +403,4 @@ return {
 	{"robot horse","OKDKAA","Dg",5,9,7,"94A3B8","0EA5E9","chrome horse with piston legs","neigh","Never tired. Needs oil.","robot,mount"},
 	{"robot janitor","OKCJNF","IN",3,4,5,"1E3A8A","FACC15","mop-armed robot with bucket body","whir","Cleans up. Including you.","robot,silly"},
 	{"robot jellyfish","OKBJGJ","AL",3,4,3,"E5E7EB","22D3EE","chrome dome with dangling cable tentacles","zap","Floats. Zaps. Recharges.","robot,aquatic"},
-	{"robot king","OKDJNA","Geh",7,3,8,"CA8A04","1F2937","golden robot on a server throne","clank","Rules with an iron fist. Literally iron.","robot,royal,boss"},
-	{"robot knight","OKCJNA","GDf",6,5,8,"94A3B8","1D4ED8","chrome knight with energy lance","clank","Shining armor. Literally.","robot,warrior"},
-	{"robot maker kid","LKBJNA","dh",2,5,3,"F97316","22D3EE","kid with goggles and a tiny robot","clank","Built a robot friend. It's loyal.","science,cute"},
-	{"robot minion","OKAJNA","dQh",1,6,3,"FACC15","1F2937","tiny round yellow helper bot","beep","Small. Loyal. Beeps a lot.","robot,cute"},
 }

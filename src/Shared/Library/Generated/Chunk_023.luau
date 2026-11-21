@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"scylla","ABEJCC","fHVB",8,5,7,"155E75","A3E635","six snarling heads on long necks","roar","Six heads. Zero personal space.","mythical,aquatic"},
+	{"scythe","CKDHsK","fHP",6,4,4,"3A3F45","5A3A1E","long curved blade on tall pole","shing","Wide swing, spooky vibes.","medieval,sharp,spooky"},
+	{"sea anemone","ABBLMI","GTMO",2,1,6,"E85A7A","F2C0D0","stalk with waving stinging tentacles","crackle","A flower that stings. Plot twist.","aquatic,ocean,reef"},
+	{"sea bunny","ABAJGI","N",1,1,2,"F7F7F2","F2D82A","fluffy white sea slug with bunny ears","squelch","A bunny that lives in the sea. Sort of.","mollusk,aquatic,cute"},
+	{"sea captain ghost","LICJNJ","Zh",5,5,3,"94A3B8","22C55E","translucent captain with glowing pipe","wail","Captains a ghost ship. No pay.","ghost,pirate"},
 	{"sea cave","MBENII","SI",3,1,9,"6D6D6D","1E88E5","rock arch with waves crashing through","rumble","Waves boom through it. Mind your head.","place,terrain"},
 	{"sea cucumber","ABAJGA","GjSN",1,1,4,"7A4A3A","C88A6A","lumpy sausage body","squelch","Shoots its guts out to scare you. Gross.","aquatic,ocean,silly"},
 	{"sea dragon","ABEJCC","kHeB",8,7,7,"0E7490","67E8F9","long finned serpent body, crest of fins","roar","Surfs its own tidal waves.","mythical,reptile,aquatic"},
@@ -398,9 +403,4 @@ return {
 	{"sketchbook","BLBOyE","Gjh",3,4,3,"111827","F5F5F0","spiral pad whose doodles peel off the page and walk","scratch","Page one: dragon. Page two: better dragon.","art,school"},
 	{"ski jump","BCCOIB","DlN",4,9,2,"F4F8FC","1E6FD0","snow ramp launching a skier into a powder landing","whoosh","Send it.","sport,ski,mobility,ice"},
 	{"ski lift","DCCKHJ","lg",2,3,4,"1565C0","B0BEC5","row of chairs hanging from a cable","engine","Up the mountain, legs dangling.","mechanical,vehicle,land"},
-	{"ski patrol","LCCJNL","DJF",3,8,5,"DC2626","F8FAFC","red jacket with cross, skis","whoosh","Zooms to the rescue downhill.","rescue,frozen"},
-	{"ski pole","BMBAJI","fT",1,7,3,"C9CED4","24262A","thin pole with little basket tip","bonk","Pokes snow. Pokes foes.","sport,winter"},
-	{"ski slope","MCENII","SIN",3,1,6,"F5F5F5","1E88E5","snowy slope with flags","rumble","Wheeee. Everyone goes downhill fast.","place,terrain,sport"},
-	{"skid steer","DECKHL","Dklg",5,4,8,"FFC107","212121","small boxy loader with front bucket","engine","Small, nimble, scoops everything.","mechanical,vehicle,land"},
-	{"skiing","KCCONA","DJk",4,9,3,"EF4444","E0F2FE","bobble-hatted skier in a tuck, two poles, powder spray","whoosh","Pizza! French fry! Pizza! TREE!","sport,frozen"},
 }

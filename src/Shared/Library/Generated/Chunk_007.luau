@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crayfish","ABAJRA","GfT",2,4,5,"A8402A","E89070","tiny lobster with pincers","clack","Tiny freshwater lobster. Feisty.","crustacean,aquatic,armored"},
+	{"crayon","BMAAJK","je",1,7,1,"C0392B","F28C28","waxy coloured stick","tap","Art attack!","school,art,toy"},
 	{"cream","IMBLGI","SN",2,3,2,"F7F4EC","F2EAD5","pitcher of thick cream","squeak","Rich, white, and pourable.","edible,slippery,silly,dairy"},
 	{"cream cheese","IMBLGI","SNP",2,3,3,"F7F4EC","F2EAD5","smooth white block","gloop","Smooth, spreadable, very sticky.","edible,sticky,dairy"},
 	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
@@ -401,6 +403,4 @@ return {
 	{"diploma","BHBOJK","FaO",2,5,2,"F5F0DC","DC2626","rolled parchment tied with a red ribbon, gold seal","fanfare","Officially qualified to bonk.","school"},
 	{"dipper","ABAJDB","dAB",1,7,1,"3A3A3A","F2F2F2","songbird that walks underwater","tweet","Walks underwater. Seriously.","bird,cute"},
 	{"diprotodon","AMDJAA","DkO",6,4,8,"8A6A4A","C8A87A","rhino-sized wombat","roar","A wombat the size of a car.","mammal,extinct,ancient,heavy"},
-	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
-	{"director","LMCJNA","jOh",4,4,4,"111827","FBBF24","beret, megaphone, folding chair, clapperboard","clack","CUT! Do it again, but with more dying.","art,movie"},
 }

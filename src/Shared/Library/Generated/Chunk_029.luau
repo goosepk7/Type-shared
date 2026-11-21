@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"web","BGCLII","SHN",3,2,3,"F2F2F2","BFC9D1","big silver spiral spiderweb with dew drops","thwip","Sticky situation. Literally.","sticky,trap,spooky"},
+	{"web snare","BGBA3B","SeN",3,10,2,"F4F4F0","AEB8C2","a sticky web ball that pins the target where it stands","thwip","Hang around a while.","hero,movie,sticky"},
+	{"website","MDCLnI","jNY",3,1,3,"F8FAFC","3B82F6","browser window with a spinning wheel and ERROR 404","bzzt","404: enemy not found.","tech,internet"},
+	{"weddell seal","ACCJEC","UfB",3,5,4,"4A4A50","B8B8C0","spotted dark seal","bark","Sings underwater in Antarctica.","mammal,aquatic"},
+	{"wedding","KHDNII","FcPO",4,2,3,"FFFFFF","F9A8D4","flower arch, bells, flying rice and a towering cake","bell","Speak now or forever hold your pieces.","party"},
+	{"wedding cake","IMEJII","Gdkc",6,1,7,"F7F4EC","E8C8D0","towering five-tier white cake","thud","Five tiers of pure distraction.","edible,giant,silly,party"},
 	{"wedge","JKALJK","O",1,1,6,"8A929B","8E9196","triangular metal wedge","clank","Jammed tight.","tool"},
 	{"wedgie","KMBLNI","lNO",3,6,1,"FFFFFF","EF4444","underpants with hearts stretched up over a flagpole","boing","Hoisted by their own pants.","silly,meme"},
 	{"weed","NGALMI","WSP",1,1,3,"7CB342","C0CA33","scraggly green sprouts","rustle","You can not get rid of them. Ever.","plant,silly"},

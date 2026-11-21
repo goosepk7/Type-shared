@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"myconid","AGBJNA","jMP",3,3,4,"DC2626","F5F5F4","walking red-capped mushroom person","puff","Talks in spores. Says hello a lot.","plant,cute"},
+	{"mynah","AMAJDB","jdA",1,7,1,"1E1E1E","F2C82A","black bird, yellow face patch","tweet","Talks more than a parrot.","bird,cute"},
 	{"myrtle","NGCCMI","GWkS",2,1,5,"8D6E63","E91E63","smooth bark, frilly pink flowers","rustle","Frilly. Fierce.","plant,tree"},
 	{"mystery meat","IJBG7G","UjE",4,5,3,"8A6A6A","B9D36A","wobbly grey meatloaf that does something random","splat","Nobody knows. Nobody asks.","goofy,gross,food,random"},
 	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
@@ -401,6 +403,4 @@ return {
 	{"paint roller","JMDNJF","kSN",3,6,3,"3E8EDE","F2C230","giant fluffy roller soaked in blue paint","splash","Paint the town. And the enemy.","household,diy,art"},
 	{"paint scraper","JKAHrK","f",1,7,3,"8A929B","2F6FD1","flat scraping blade","clank","Scrape, scrape, done.","tool"},
 	{"paint splash","KMBFOB","jd",2,7,1,"FF4081","00E5FF","rainbow paint splatter wave","splat","Now everything's colourful.","silly"},
-	{"paint sprayer","JKBFwK","je",2,6,3,"8E9196","F2F2EE","pistol with paint cup","clank","Coats everything. Everything.","tool"},
-	{"paint thinner","BJADJK","M",2,5,1,"BFE6F2","F1C40F","tin with a skull warning","clink","Smells terrible. Is terrible.","hardware"},
 }

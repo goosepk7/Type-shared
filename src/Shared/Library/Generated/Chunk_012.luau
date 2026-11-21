@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"graveyard","MIENII","SNh",5,1,7,"455A64","7CB342","crooked headstones, iron fence, fog","moan","The residents are getting restless.","spooky,undead"},
+	{"graveyard moss","NIBLMI","iSN",2,1,3,"455A64","7CB342","grey-green moss on old stones","moan","Grows on graves. Slows the living.","plant,spooky,undead"},
 	{"gravity","FLDNOI","HNO",6,4,5,"3B2E5A","8F7DE8","warped purple ripples pressing down","hum","What goes up, comes down. Hard.","space,heavy"},
 	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
 	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
@@ -401,6 +403,4 @@ return {
 	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
 	{"hero","LHCJNA","GDFf",6,6,6,"1D4ED8","FACC15","caped figure, bright sword, heroic pose","clang","Saves the day. Every day. Exhausted.","hero"},
 	{"heroism","KHCOKJ","GDF",3,6,5,"FFD54F","D32F2F","golden cape-shaped aura","fanfare","Main character moment.","support"},
-	{"heron","AMCJDA","AfT",3,5,2,"6A7A8E","F2F2F0","tall stalking bird, dagger beak","squawk","Stands still forever. Then stab.","bird,wetland"},
-	{"herrerasaurus","AMDJBA","DkfT",6,6,7,"7A5A3A","C8A07A","early predator","roar","One of the first big meat eaters.","dinosaur,extinct,reptile,predator,ancient"},
 }

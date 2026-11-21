@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot king","OKDJNA","Geh",7,3,8,"CA8A04","1F2937","golden robot on a server throne","clank","Rules with an iron fist. Literally iron.","robot,royal,boss"},
+	{"robot knight","OKCJNA","GDf",6,5,8,"94A3B8","1D4ED8","chrome knight with energy lance","clank","Shining armor. Literally.","robot,warrior"},
+	{"robot maker kid","LKBJNA","dh",2,5,3,"F97316","22D3EE","kid with goggles and a tiny robot","clank","Built a robot friend. It's loyal.","science,cute"},
+	{"robot minion","OKAJNA","dQh",1,6,3,"FACC15","1F2937","tiny round yellow helper bot","beep","Small. Loyal. Beeps a lot.","robot,cute"},
 	{"robot octopus","OKCJCC","HeB",4,5,5,"94A3B8","F472B6","steel octopus with grabber claws","whir","Eight grabby arms. Zero chill.","robot,aquatic"},
 	{"robot overlord ai","OKENLA","eLh",8,3,7,"1F2937","EF4444","crowd of red-eyed robots marching","beep","The toasters have unionized.","robot,swarm,boss"},
 	{"robot penguin","OKBJDA","dN",2,4,5,"111827","F8FAFC","waddling penguin robot","beep","Waddles into battle. Adorably.","robot,cute"},
@@ -266,6 +270,7 @@ return {
 	{"sand worm hatchling","AEBJCH","Cf",2,5,2,"C2A26B","FDBA74","small ringed worm with tiny teeth","chirp","Will grow. Very large.","desert,cute"},
 	{"sand wraith","AECJOJ","jZNP",4,7,3,"D6A35A","FDE68A","swirling sand figure with ember eyes","howl","Gets in your eyes. Gets in everything.","spooky,desert"},
 	{"sandal","BMBAJK","UQeO",4,9,3,"F59E0B","0EA5E9","spinning flip-flop curving through the air","thwack","Never misses. Mothers have trained for this.","clothing,meme"},
+	{"sandbag drop","OEDEGJ","ESe",3,2,6,"E53935","C9A56E","a striped hot air balloon dropping burlap sandbags","thud","Lighten the load. On your head.","transit,rain,silly"},
 	{"sandbags","EECCII","GSN",2,1,7,"C2B280","8D7B5A","low curved stack of lumpy bags","thud","Soaks up bullets like a sponge.","structure,defense"},
 	{"sandbar","MBCNII","SN",2,1,5,"F4E4BC","4FC3F7","low strip of sand in shallow water","rumble","Boats get stuck. On purpose.","place,terrain"},
 	{"sandcastle","EECCII","GdS",2,1,2,"E6C27A","1E88E5","bucket-shaped sand towers, shell windows","thud","One wave from total collapse.","silly,cute"},
@@ -398,9 +403,4 @@ return {
 	{"sculptor","LECJNA","GO",3,3,5,"D6D3D1","78716C","chisel, mallet, marble dust","clang","Turns enemies to statues. Artistically.","art"},
 	{"scutigera","AMAJTA","CP",1,9,1,"C8B08A","6A5A44","many long legs, zooms","squelch","Runs at you. You run away.","bug"},
 	{"scutum","BKDIyI","GI",3,3,8,"9E1B32","D4A72C","curved red rectangle shield","clang","Lock them together. Become a turtle.","armor,defense,ancient"},
-	{"scylla","ABEJCC","fHVB",8,5,7,"155E75","A3E635","six snarling heads on long necks","roar","Six heads. Zero personal space.","mythical,aquatic"},
-	{"scythe","CKDHsK","fHP",6,4,4,"3A3F45","5A3A1E","long curved blade on tall pole","shing","Wide swing, spooky vibes.","medieval,sharp,spooky"},
-	{"sea anemone","ABBLMI","GTMO",2,1,6,"E85A7A","F2C0D0","stalk with waving stinging tentacles","crackle","A flower that stings. Plot twist.","aquatic,ocean,reef"},
-	{"sea bunny","ABAJGI","N",1,1,2,"F7F7F2","F2D82A","fluffy white sea slug with bunny ears","squelch","A bunny that lives in the sea. Sort of.","mollusk,aquatic,cute"},
-	{"sea captain ghost","LICJNJ","Zh",5,5,3,"94A3B8","22C55E","translucent captain with glowing pipe","wail","Captains a ghost ship. No pay.","ghost,pirate"},
 }

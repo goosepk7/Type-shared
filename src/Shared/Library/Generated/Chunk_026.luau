@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sugar","IMBOKI","Dc",3,9,2,"F7F7F7","E8E8E8","white sparkly crystal pile","fizz","Sweet crystals of pure energy.","edible,drink"},
+	{"sugar cookie","IMBAKK","Uke",3,7,2,"F2E8C8","F2A6C8","flat round iced cookie","whoosh","A sweet blank canvas.","edible"},
+	{"sugar crash","KMBAKB","iN",3,6,1,"F8BBD0","9E9E9E","wilting candy-coloured slump glow","womp","Too much candy. Now sleepy.","silly"},
+	{"sugar cube","IMAAKK","ceO",3,7,6,"F7F7F7","E8E8E8","small white crystal cube","bonk","A tiny sweet brick.","edible"},
+	{"sugar glider","AMBJAB","UAf",2,6,2,"A8A4A0","1E1A18","huge eyes, gliding membrane, stripe","chirp","Pocket-sized glider. Loves fruit.","mammal,marsupial,cute"},
+	{"sugar plum","IMBLKI","dSc",2,3,3,"8A2E7E","F7F2F0","sugar-coated round candy","chomp","Dancing in your dreams.","edible,sweet,holiday"},
 	{"sugar rush","IMBOKI","Dj",3,9,2,"F2A6C8","F2E23A","swirl of candy and sparks","fizz","Zoom! Zoom! Crash.","edible,drink,silly"},
 	{"sugar skull","IMBLKI","dSc",2,3,3,"F7F7F2","E8434F","decorated white skull candy","chomp","A sweet celebration of memory.","edible,sweet,candy,holiday"},
 	{"sugar snap peas","IGAELB","eVP",2,7,1,"7DBE3A","5E9E3A","plump crunchy pods","pitter","Snap! Crunch! Sweet!","edible"},
@@ -397,10 +403,4 @@ return {
 	{"thunder and lightning","FDEEOJ","kLO",8,8,2,"FFEB3B","3949AB","bolts and booming rings from above","boom","Very, very frightening.","electric,storm"},
 	{"thunder bear","ADDJAA","kfL",7,5,7,"1E3A8A","FDE047","bear with crackling blue fur","thunder","Hibernates in thunderclouds.","storm"},
 	{"thunder bloom","NDBLMI","SLP",4,1,2,"FFEB3B","7C4DFF","crackling electric petals","chime","Zap! It bloomed.","plant,magic,mythical"},
-	{"thunder bomb","FDCGKI","ELO",6,7,1,"FFEB3B","3D5AFE","crackling orb exploding into arcs","crack","Bright, loud, and very zappy.","electric,explosive"},
-	{"thunder bunny","ADAJAG","UL",2,10,1,"FDE047","60A5FA","fluffy rabbit crackling with static","zap","Zappy hops. Shocking cuteness.","storm,cute,silly"},
-	{"thunder dragon hatchling","ADBJAB","AL",3,8,2,"FDE047","1D4ED8","tiny crackling blue dragon","zap","Sneezes lightning.","cute,storm,reptile"},
-	{"thunder horse","ADDKAA","DgL",6,9,5,"FDE047","1E40AF","stallion of storm clouds with lightning hooves","thunder","Gallops so fast it rumbles.","mythical,mount,storm"},
-	{"thunder kick","KDCAKB","kfL",6,9,2,"FFEB3B","448AFF","kick arc with lightning trail","crack","Zappy footwork.","electric,melee"},
-	{"thunder lizard","ADEJAA","DkL",7,5,7,"1E40AF","FDE047","giant lizard crackling with storms","thunder","Every step is a thunderclap.","storm,reptile"},
 }

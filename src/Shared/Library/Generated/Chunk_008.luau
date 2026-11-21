@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
+	{"director","LMCJNA","jOh",4,4,4,"111827","FBBF24","beret, megaphone, folding chair, clapperboard","clack","CUT! Do it again, but with more dying.","art,movie"},
 	{"dirk","CKBHrK","fT",3,9,3,"8A929B","5A3A1E","long thin dagger","shing","A dagger that went to boarding school.","medieval,sharp"},
 	{"dirt","FEBDOB","jN",2,5,2,"6B4F34","A1856A","kicked-up brown clod burst","thud","Dirt in the eyes. Classic move.","silly"},
 	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
@@ -401,6 +403,4 @@ return {
 	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
 	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
-	{"emp blast","FDDFOB","PO",5,10,1,"00B0FF","E1F5FE","expanding blue ring of distortion","whum","Turns machines off. And on. And off.","electric"},
-	{"emp pulse","CDDNKI","LP",4,7,3,"78DCFF","966078","a coiled spike slammed down, a pulse ring rolling out","zap","Have you tried turning it off and on again?","scifi,electric"},
 }

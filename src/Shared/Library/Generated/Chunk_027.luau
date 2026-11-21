@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thunder bomb","FDCGKI","ELO",6,7,1,"FFEB3B","3D5AFE","crackling orb exploding into arcs","crack","Bright, loud, and very zappy.","electric,explosive"},
+	{"thunder bunny","ADAJAG","UL",2,10,1,"FDE047","60A5FA","fluffy rabbit crackling with static","zap","Zappy hops. Shocking cuteness.","storm,cute,silly"},
+	{"thunder dragon hatchling","ADBJAB","AL",3,8,2,"FDE047","1D4ED8","tiny crackling blue dragon","zap","Sneezes lightning.","cute,storm,reptile"},
+	{"thunder horse","ADDKAA","DgL",6,9,5,"FDE047","1E40AF","stallion of storm clouds with lightning hooves","thunder","Gallops so fast it rumbles.","mythical,mount,storm"},
+	{"thunder kick","KDCAKB","kfL",6,9,2,"FFEB3B","448AFF","kick arc with lightning trail","crack","Zappy footwork.","electric,melee"},
+	{"thunder lizard","ADEJAA","DkL",7,5,7,"1E40AF","FDE047","giant lizard crackling with storms","thunder","Every step is a thunderclap.","storm,reptile"},
 	{"thunder owl","ADCJDB","ALh",7,8,3,"7FD8FF","1C2030","a great horned owl crackling with lightning","screech","Who? You. With lightning.","anime,lightning,summon"},
 	{"thunder punch","FDCAKB","kfL",6,8,2,"FFEB3B","2962FF","glowing fist crackling with arcs","crack","A punch with a power bill.","electric"},
 	{"thunder roar","FDCFOB","kO",5,9,1,"7986CB","FFF9C4","crackling sound wave from the caster","roar","Shouting, but with weather.","electric,loud"},
@@ -231,7 +237,7 @@ return {
 	{"trading card","BLAAJK","Teh",3,8,1,"FACC15","60A5FA","glinting foil card spinning like a blade","swish","Mint condition. Do NOT bend it.","game,shiny"},
 	{"tradition","KECOII","GSh",3,2,6,"7C2D12","D4AF37","maypole with ribbons and elders nodding sternly","bell","We have always done it this way. Nobody knows why.","ancient"},
 	{"traffic cone barricade","EMCCnI","Gdk",3,3,7,"F07A1A","F2F2EE","row of striped traffic cones and a sawhorse barrier","clonk","Detour! This way to defeat.","transit,road,wall"},
-	{"traffic jam","EMENII","GSN",3,1,7,"E53935","FFC107","endless line of honking cars","horn","Nobody moves. Ever.","structure,silly"},
+	{"traffic jam","EMDNII","GSN",3,1,5,"2BB3A3","F28A2E","a ring of little honking cars bumper to bumper","horn","Nobody moves. Everybody honks.","transit,zone,silly"},
 	{"traffic lane","BMDNeL","Dk",5,9,1,"FFD23F","3A86FF","a toy road and two boxy toy cars","honk","Look both ways.","game,arcade,knockback"},
 	{"traffic light","OHCMmI","NO",2,1,6,"24262A","2E8B57","three-light signal on pole","clank","Red means STOP. Everyone.","mechanical"},
 	{"tragedy","KBCF6B","iNO",4,4,1,"1E3A8A","9CA3AF","weeping theatre mask and a single wilting rose","wail","Dropped the ice cream. Curtain. Weep.","art,mood"},
@@ -397,10 +403,4 @@ return {
 	{"tusk","BMCHuB","DkT",5,5,6,"F5ECD7","D8C7A0","long curved ivory tusk, pointed tip","thud","Pointy end first. Always.","body,sharp,wild"},
 	{"tutu","BMBONI","Dd",1,7,1,"F06292","F2F2EE","frilly ballet skirt","swish","Pirouette of doom.","clothing,silly"},
 	{"tuxedo","BMCONI","d",1,5,2,"24262A","F2F2EE","sharp black suit with bow tie","swish","Dressed to impress and/or defeat.","clothing,fancy"},
-	{"tuxedo cat","AMBJAA","dfT",2,7,2,"1E1E1E","FFFFFF","black cat with white chest","meow","Always dressed for a gala.","mammal,pet,cute"},
-	{"tv dinner","IGBOKI","F",2,5,3,"C8C8C8","C8762B","foil tray with compartments","crunch","Dinner in thirty seconds of beeping.","edible,healthy"},
-	{"tweezers","JKAHJK","fH",1,7,2,"C9CED4","DDE3E8","tiny pointed pincers","clank","Precision yoinking.","tool"},
-	{"twilight","FICNOI","ZSN",4,4,3,"5C4B8A","F2A65A","purple-orange dusk haze","hum","Not day, not night, very moody.","spooky"},
-	{"twilight zone","MIFNII","jZS",5,1,8,"1A237E","00E5FF","dim blue depths with glowing creatures","rumble","Strange lights in the deep.","aquatic,spooky"},
-	{"twin fang","KGCHKI","Dkf",6,9,1,"5C8FB0","D9E6EE","a low pounce into four raking cuts from two jagged blades","slash","Pig assault! (It isn't a pig.)","anime,sword,beast,breathing"},
 }

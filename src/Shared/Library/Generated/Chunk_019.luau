@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paint sprayer","JKBFwK","je",2,6,3,"8E9196","F2F2EE","pistol with paint cup","clank","Coats everything. Everything.","tool"},
+	{"paint thinner","BJADJK","M",2,5,1,"BFE6F2","F1C40F","tin with a skull warning","clink","Smells terrible. Is terrible.","hardware"},
 	{"paint tunnel","BMDCnI","GSO",3,1,4,"E8DCC0","2A2A36","a canvas wall with a painted tunnel mouth","splat","Looks like a way through. Isn't.","cartoon,silly,trap"},
 	{"paintball","CMBA3B","jeNP",3,9,2,"22C55E","F472B6","neon paint pellet bursting into a bright splat","splat","Stings a bit. Stains forever.","sport,ranged,silly"},
 	{"paintball gun","CMBAwI","jeN",2,8,3,"24262A","8BC34A","hopper-topped paint blaster","thwip","Splat. Now you're a painting.","sport,silly"},
@@ -55,6 +57,7 @@ return {
 	{"paper birch tree","NGDCMI","GWkS",3,1,6,"FAFAFA","9CCC65","bright white peeling bark","rustle","Bark you can write on.","plant,tree"},
 	{"paper clip","BMAAJK","Te",1,8,1,"C9CED4","C9CED4","bent wire loop","tap","Holds things together. Barely.","office"},
 	{"paper dragon","AFBJAB","AT",3,8,1,"F8FAFC","DC2626","folded paper dragon","swish","Papercuts. So many papercuts.","silly"},
+	{"paper route","BMBAGK","keP",3,5,4,"EFE6CF","D23B2E","three rolled newspapers with red rubber bands, flung in a fa","whoosh","Extra! Extra! Thwack!","transit,projectile,silly"},
 	{"paper shredder","BMCLII","HV",3,1,5,"24262A","8E9196","slot box with whirring teeth","whirr","Feed it. It's always hungry.","office"},
 	{"paper towel","BMALKK","i",1,5,1,"F2F2EE","F2F2EE","roll of paper towels","clang","Soaks up spills. And spells.","kitchen,household"},
 	{"paper wasp","AJAJLB","ATMP",2,7,1,"B8701E","F2D82A","slim wasp on paper nest","buzz","Builds paper houses.","insect,swarm,venomous"},
@@ -400,7 +403,4 @@ return {
 	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
 	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
 	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
-	{"pixel knight","AKBJYA","Qfh",4,6,5,"C48448","743A8C","squat bronze voxel knight in a kettle hat, lantern eyes","clang","For the high score!","game,arcade,pet"},
-	{"pixel ship","OHAMgE","Ae",3,8,4,"E8EDF2","FF4F6E","tiny voxel starfighter over your shoulder","pew","Pew. Pew pew.","game,arcade,pet"},
-	{"pixel snake","AHCJCD","QS",4,7,3,"7CFF6B","1FA34A","glowing voxel snake with a stinging trail","blip","Don't touch the tail.","game,arcade,trail"},
 }

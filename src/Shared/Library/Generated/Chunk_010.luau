@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flake","IMAELJ","cNP",1,4,1,"F2C14E","E0A030","drifting golden cereal flakes and a splash of milk","crunch","Soggy in thirty seconds. Eat fast.","edible,breakfast"},
+	{"flamberge","CKDHrK","fTP",6,5,5,"8A929B","9E1B32","wavy flame-shaped long blade","shing","The blade is wavy. The enemy is worried.","medieval,sharp"},
 	{"flame","FACFOB","KIe",5,7,2,"F06A1D","FFD166","tongue of flame, licking forward edge","whoosh","Points at the problem. Sets it on fire.","fire"},
 	{"flame blade","FACHrB","Kf",6,7,4,"FF6D00","FFE57F","sword made of roaring fire","whoosh","A sword that is also a campfire.","fire,sharp"},
 	{"flame bloom","NABAbI","UKEe",5,8,2,"FF6A1F","FFD23F","fiery flower blooms, then bouncing fireballs","whoosh","Pick a flower. Throw the fire.","game,platformer,power up,fire"},
@@ -401,6 +403,4 @@ return {
 	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
 	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
 	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
-	{"gazebo","EMCCII","GS",2,1,4,"F5F5F5","7CB342","eight-sided open hut with pointed roof","thud","Nice spot for a picnic. And a siege.","structure,building,cute"},
-	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
 }

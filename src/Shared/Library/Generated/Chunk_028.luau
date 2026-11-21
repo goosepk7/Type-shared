@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tuxedo cat","AMBJAA","dfT",2,7,2,"1E1E1E","FFFFFF","black cat with white chest","meow","Always dressed for a gala.","mammal,pet,cute"},
+	{"tv dinner","IGBOKI","F",2,5,3,"C8C8C8","C8762B","foil tray with compartments","crunch","Dinner in thirty seconds of beeping.","edible,healthy"},
+	{"tweezers","JKAHJK","fH",1,7,2,"C9CED4","DDE3E8","tiny pointed pincers","clank","Precision yoinking.","tool"},
+	{"twilight","FICNOI","ZSN",4,4,3,"5C4B8A","F2A65A","purple-orange dusk haze","hum","Not day, not night, very moody.","spooky"},
+	{"twilight zone","MIFNII","jZS",5,1,8,"1A237E","00E5FF","dim blue depths with glowing creatures","rumble","Strange lights in the deep.","aquatic,spooky"},
+	{"twin fang","KGCHKI","Dkf",6,9,1,"5C8FB0","D9E6EE","a low pounce into four raking cuts from two jagged blades","slash","Pig assault! (It isn't a pig.)","anime,sword,beast,breathing"},
 	{"twin swords","CKCHJK","fTV",6,8,4,"C9CED4","1F2F55","matched pair of curved swords","shing","Double the slash, double the flair.","fantasy,sharp"},
 	{"twinkle","FHAEOJ","dF",1,5,1,"FFF59D","FFFFFF","tiny twinkling star sparks","chime","Twinkle twinkle.","cute"},
 	{"twins","LMCJNA","jV",3,6,4,"F472B6","60A5FA","two identical kids","ding","Two of them. Twice the trouble.","family"},
@@ -397,10 +403,4 @@ return {
 	{"weather reporter","LFCJNA","jh",3,4,3,"0EA5E9","FDE68A","pointer, map, umbrella","whoosh","Forecast: you, getting rained on.","silly,storm"},
 	{"weather vane","EFBCII","GdS",1,1,4,"37474F","FFB300","metal rooster on a spinning arrow","thud","Points where the wind blows.","structure"},
 	{"weaver bird","AMAJDB","GdA",1,7,1,"F2D02A","2A2A1E","yellow bird hanging from woven nest","tweet","Knits its own house.","bird,cute"},
-	{"web","BGCLII","SHN",3,2,3,"F2F2F2","BFC9D1","big silver spiral spiderweb with dew drops","thwip","Sticky situation. Literally.","sticky,trap,spooky"},
-	{"web snare","BGBA3B","SeN",3,10,2,"F4F4F0","AEB8C2","a sticky web ball that pins the target where it stands","thwip","Hang around a while.","hero,movie,sticky"},
-	{"website","MDCLnI","jNY",3,1,3,"F8FAFC","3B82F6","browser window with a spinning wheel and ERROR 404","bzzt","404: enemy not found.","tech,internet"},
-	{"weddell seal","ACCJEC","UfB",3,5,4,"4A4A50","B8B8C0","spotted dark seal","bark","Sings underwater in Antarctica.","mammal,aquatic"},
-	{"wedding","KHDNII","FcPO",4,2,3,"FFFFFF","F9A8D4","flower arch, bells, flying rice and a towering cake","bell","Speak now or forever hold your pieces.","party"},
-	{"wedding cake","IMEJII","Gdkc",6,1,7,"F7F4EC","E8C8D0","towering five-tier white cake","thud","Five tiers of pure distraction.","edible,giant,silly,party"},
 }

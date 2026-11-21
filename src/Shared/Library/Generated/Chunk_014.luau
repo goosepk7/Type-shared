@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"infect","KJBAKB","MP",4,7,1,"8BC34A","33691E","green germ-shaped glob","squelch","Spreads like a cold in class.","toxic"},
+	{"inferno","FAEN5K","KkSP",8,5,5,"B3261E","FF9F1C","towering ring of fire, swirling smoke crown","roar","The floor is lava, and also the walls.","fire"},
 	{"inferno beam","FADBKI","KTP",8,7,1,"FF3D00","FFEB3B","roaring wide beam of fire","roar","A flamethrower, upgraded.","fire"},
 	{"inflatable boat","DBBKHC","UDkgB",3,7,3,"FF7043","37474F","rubber tube boat with outboard","splash","Bouncy, speedy, a bit squeaky.","vehicle,aquatic"},
 	{"inflatable flamingo","BBDJDJ","UdB",1,3,2,"FF3EA5","F2F2EE","giant pink pool floatie bird","splash","Floaty fabulous.","beach,silly"},
@@ -401,6 +403,4 @@ return {
 	{"kunoichi","LICJNA","jZT",5,9,3,"312E81","F472B6","violet ninja garb, smoke bombs","whoosh","Disappears in a puff. Rude.","stealth,martial"},
 	{"kusarigama","CKCHJI","fHe",4,8,3,"8A929B","24262A","sickle tied to a weighted chain","twang","Sickle and chain, a ninja duet.","ninja"},
 	{"l","KIBAJK","XNO",4,7,1,"DC2626","6B7280","giant red letter L thrown like a boomerang","groan","Hold this. It is heavy. It is an L.","meme,gaming"},
-	{"la llorona","ABCJNJ","jAc",5,5,3,"E2E8F0","1E3A8A","weeping ghost in white by the river","wail","Cries so much the river overflows.","ghost,spooky"},
-	{"lab coat","BMCONI","F",1,5,2,"F2F2EE","8E9196","long white coat with pockets","swish","Science is happening.","clothing,science"},
 }

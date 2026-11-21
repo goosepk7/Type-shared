@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spike trap","BKCLII","TN",5,1,6,"3A3F45","8A929B","plate of sharp metal spikes","snap","Step here. Regret here.","trap,defense"},
+	{"spike wall","EKDCII","GSfT",5,1,8,"6D6D6D","B0BEC5","stone wall bristling with iron spikes","thud","Hugging is strongly discouraged.","structure,defense,sharp"},
+	{"spiked barricade","EECCII","GST",4,1,6,"6D4C41","9E9E9E","log frame bristling with sharpened stakes","thud","Run into it. We dare you.","structure,defense,sharp"},
+	{"spiked club","CMCHtK","kfT",4,5,4,"8B5A2B","8A929B","wooden club studded with nails","bonk","A club with opinions.","primitive"},
+	{"spiked gauntlet","CKBHJK","kfT",4,7,6,"3A3F45","8A929B","armoured glove with knuckle spikes","shing","Hi-five of pain.","sharp,armor"},
+	{"spiked mace","CKCHtK","kfT",5,5,6,"3A3F45","5B6168","mace with long spikes","shing","Prickly and persuasive.","sharp"},
 	{"spiked shield","BKCIyI","GkT",4,4,7,"3A3F45","8A929B","shield studded with spikes","clang","Defensive and offensive. Mostly offensive.","armor,defense"},
 	{"spin","KFCN5K","kf",4,8,2,"B3E5FC","FFFFFF","spinning ring of wind around caster","whirr","Dizzy for you, dizzier for them.","silly"},
 	{"spin cycle","KBCN5K","jl",4,7,2,"4FC3F7","FFFFFF","sudsy spinning water whirl","whirr","Wash, rinse, dizzy.","aquatic,silly"},
@@ -341,7 +347,7 @@ return {
 	{"streamer","BMALKI","dN",1,6,1,"2F6FD1","FF3EA5","curly ribbons of crepe paper","squeak","Tangle up the party pooper.","party"},
 	{"street magician","LLCJNA","jdY",3,6,3,"111827","7C3AED","hoodie, deck of cards, smirk","ding","Is this your card? It explodes.","magic,silly"},
 	{"street performer","LMCJNA","dc",3,5,3,"DC2626","FACC15","open guitar case, coins","guitar","Plays for tips. You tip with HP.","music"},
-	{"street sweeper","LMCJNA","IN",3,4,4,"F97316","15803D","big broom, cart, orange vest","swish","Sweeps the arena clean.","tools"},
+	{"street sweeper","OFDFGL","kfI",4,3,5,"F28A2E","FFF1D6","an orange street sweeper truck with spinning side brushes","swish","Sweeps the arena clean. Including you.","transit,sweep,silly"},
 	{"strength","KECOKI","Wkf",4,4,5,"FF7043","FFE0B2","bulging glowing muscle aura","grunt","Lift with your legs. And the spell.","strength"},
 	{"strength potion","BLAO2I","Wk",4,5,1,"E67E22","BFE6F2","chunky flask of orange goo","bubble","Hulk out for a bit.","magic,fantasy"},
 	{"stress ball","BMAA3F","Ue",1,7,1,"F1C40F","E67E22","squishy foam ball","bonk","Squeeze it. Throw it.","toy,silly"},
@@ -397,10 +403,4 @@ return {
 	{"suction cup","BMALKI","HO",1,1,2,"C0392B","BFE6F2","rubber suction cup","thud","Thwock. Stuck.","object"},
 	{"sudoku","BLBLnI","jNO",3,1,3,"F8FAFC","111827","nine-by-nine number grid with one square rubbed raw","scratch","There are two sevens in that row. Start again.","game"},
 	{"suds","FBCNOI","UjNP",2,3,1,"FFFFFF","BAE6FD","overflowing mound of white bubbles hiding everything","bubble","Put in too much soap. Way too much.","household,slippery"},
-	{"sugar","IMBOKI","Dc",3,9,2,"F7F7F7","E8E8E8","white sparkly crystal pile","fizz","Sweet crystals of pure energy.","edible,drink"},
-	{"sugar cookie","IMBAKK","Uke",3,7,2,"F2E8C8","F2A6C8","flat round iced cookie","whoosh","A sweet blank canvas.","edible"},
-	{"sugar crash","KMBAKB","iN",3,6,1,"F8BBD0","9E9E9E","wilting candy-coloured slump glow","womp","Too much candy. Now sleepy.","silly"},
-	{"sugar cube","IMAAKK","ceO",3,7,6,"F7F7F7","E8E8E8","small white crystal cube","bonk","A tiny sweet brick.","edible"},
-	{"sugar glider","AMBJAB","UAf",2,6,2,"A8A4A0","1E1A18","huge eyes, gliding membrane, stripe","chirp","Pocket-sized glider. Loves fruit.","mammal,marsupial,cute"},
-	{"sugar plum","IMBLKI","dSc",2,3,3,"8A2E7E","F7F2F0","sugar-coated round candy","chomp","Dancing in your dreams.","edible,sweet,holiday"},
 }

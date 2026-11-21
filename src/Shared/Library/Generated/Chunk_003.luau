@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
 	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
 	{"bedtime","KLCDOJ","SO",3,3,2,"3949AB","FFF8E1","cosy dark-blue cloud with stars and Zs","snore","Into bed. Now. Everyone.","silly"},
 	{"bee","AJAJLB","AFTMP",2,7,1,"F2C02A","2A1E14","fuzzy striped body, tiny wings, stinger","buzz","Makes honey. Dances directions. Stings once.","insect,swarm,venomous"},
@@ -402,5 +403,4 @@ return {
 	{"boxing combo","BMBHJI","klf",4,9,1,"C62828","F5F5F0","pair of padded red gloves throwing a jab-cross-uppercut","thump","Jab, cross... uppercut.","sport,boxing,melee"},
 	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
 	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
-	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
 }
