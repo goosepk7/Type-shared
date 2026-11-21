@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"herb","NGANMI","FS",1,1,2,"7CB342","9CCC65","small bundle of fragrant leaves","rustle","Rub it on. Feel better.","plant,herb"},
+	{"herbal tea","IABOKI","FN",2,5,2,"E8D08A","F2E8C8","teacup with leaves","slurp","Gentle, soothing, sleepy.","edible,drink,warm"},
 	{"herbalist","LJCJNA","FM",3,4,4,"365314","A16207","jars of herbs, mortar and pestle","bubble","Has a remedy for everything. Tastes awful.","healer,plant"},
 	{"hercules","LEDJXA","Dklf",8,6,9,"B45309","FDE68A","mega-muscled hero in a lion skin swinging an olive-wood club","grunt","Twelve labours done. Yours is number thirteen.","mythical,greek,warrior"},
 	{"hercules beetle","AMBJFA","Gklf",3,3,6,"C8B87A","1E1E1E","giant beetle with massive horn","click","Strongest bug. Named accordingly.","insect,armored"},
@@ -60,7 +62,7 @@ return {
 	{"hit","KMBAKB","kf",3,8,2,"FFCC80","FFFFFF","comic impact star","thwack","The classic. Never fails.","silly"},
 	{"hitotsume-kozo","AMBJNA","jd",2,6,2,"1E3A8A","FDE68A","small bald boy with one big eye","giggle","Scares you. Runs off giggling.","yokai,silly"},
 	{"hive","EGCMII","SMeh",5,1,4,"E0A82E","8D5B1A","striped papery dome dripping honey, bees circling","buzz","Do not poke it. Somebody always pokes it.","insect,sticky"},
-	{"hoarfrost","FCBNOI","JSN",3,3,3,"D4EEF9","FFFFFF","feathery white crystals on every surface","crackle","Frost that grew a beard.","frozen"},
+	{"hoarfrost","GCCNOI","JSO",4,3,2,"D4EEF9","8CC4E4","feathery frost crystals creeping over the ground","crackle","Frost that grew a beard. And grabbed your feet.","frozen,winter,weather"},
 	{"hoary bat","ACBJDB","jiA",2,7,1,"8A7A6A","F2F2EE","frosted fur","screech","Looks dusted with frost.","mammal,nocturnal,spooky"},
 	{"hoatzin","AMBJDB","jdAM",2,6,2,"8A5A2A","3AA0D8","punk crest, blue face, claws on chicks","squawk","Smells like cow. Looks like punk.","bird,jungle,silly"},
 	{"hobbit","AGBJNA","dZb",2,6,3,"78350F","65A30D","barefoot small adventurer, curly hair","giggle","Seven meals a day. One adventure a year.","mythical"},
@@ -128,6 +130,7 @@ return {
 	{"honey mango","IGBAKF","Fke",3,6,2,"F2C24A","F7D86A","small golden kidney mango","splat","Buttery and golden.","edible,fruit,sweet"},
 	{"honey mustard","IMBNGI","SNP",2,4,1,"E8B02B","F2D870","golden creamy dip","splat","Sweet and zingy.","edible,sauce"},
 	{"honey possum","AMAJAA","Uf",1,6,2,"8A6A4A","C8A07A","tiny striped nectar-eater","chirp","Long tongue. Lives on flowers.","mammal,marsupial"},
+	{"honey pot","IMCN2I","SeN",3,3,4,"E8A317","8A5A2E","round clay honey pot with a wooden dipper","gloop","Sweet, sticky, stuck.","kitchen,zone,sticky,edible,sweet"},
 	{"honey roasted peanuts","IMAELB","eVP",2,7,1,"C9A06A","E8A317","golden glazed nuts","pitter","Sweet, salty, sticky.","edible,sweet"},
 	{"honey trap","OGCL1I","cNO",2,1,3,"D4A72C","7A4E2D","puddle of sticky golden goo","clank","Sweet. Sticky. Stuck.","trap,sticky"},
 	{"honey tree","NGCCMI","ScN",2,1,5,"FFB300","8D6E63","tree dripping golden honey","chime","Sticky sweet. Everyone gets stuck.","plant,magic,mythical,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"immortality","KHEOKJ","GF",2,4,9,"FFF8E1","FFD54F","eternal golden glow with phoenix wisps","choir","Not today. Not ever.","holy"},
 	{"immovable","KEDOKI","G",2,1,10,"6D4C41","BCAAA4","heavy stone-glow around planted feet","thud","Not moving. Ever.","defence,heavy"},
 	{"immunity","KHBOKJ","GF",1,4,5,"B2EBF2","FFFFFF","clear shimmering shell","chime","Poison? Not interested.","support"},
-	{"imp","AAAJNB","KjAb",2,9,1,"DC2626","1F2937","tiny red horned prankster with bat wings","cackle","Small horns. Big mischief.","imp,mischief"},
-	{"imp swarm","AACJLB","KAPb",5,9,3,"DC2626","1F2937","cloud of giggling red imps","cackle","Mischief, multiplied.","imp,swarm"},
-	{"impala","AMCJAA","UDk",4,9,4,"C88A4A","F2EEE6","lyre horns, leaps 10 feet high","bleat","Jumps like it's late for something.","mammal,wild"},
 }

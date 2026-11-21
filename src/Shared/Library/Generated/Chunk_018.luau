@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"music stand","BMBCII","G",1,1,3,"24262A","C9CED4","folding wire stand","strum","Holds sheet music. Holds the line.","music"},
+	{"music teacher","LLCJNA","jO",3,4,3,"7C3AED","FACC15","baton, sheet music, recorder","sing","Again, from the top.","school,music"},
+	{"music tower","EMDMII","GkSeO",4,1,6,"7E57C2","FFEB3B","tower topped with huge speakers","music","Drops the bass. Drops the enemies.","structure,defense,tower,silly"},
 	{"musical chairs","KFCN0K","jSIO",3,6,3,"EC4899","FACC15","ring of chairs, one too few, music stopping dead","music","The music stopped. There is no chair for you.","party,toy"},
 	{"musician","LMCJNA","jceO",4,5,4,"7C3AED","FCD34D","performer with a guitar on back and drumsticks in hand","music","One, two, three, four! Solo of doom.","music"},
 	{"musk deer","AMBJAA","DkT",3,8,4,"6A5A44","C8B8A0","small deer with long fangs","bleat","No antlers. Vampire fangs instead.","mammal,wild"},
@@ -368,7 +371,7 @@ return {
 	{"oval","KFBG3F","UjR",2,6,3,"A855F7","FFFFFF","purple squashed circle wobbling as it rolls","wobble","A circle after lunch.","school,shape"},
 	{"oven","BADMII","KS",4,1,7,"24262A","C9CED4","boxy oven with glowing window","clang","Preheat to \"battle\".","kitchen,household"},
 	{"oven glove armor","BMAONI","GK",1,5,2,"C0392B","F2F2EE","quilted fire-proof glove","swish","Fireball? Catch.","clothing"},
-	{"oven mitt","BMBINK","G",1,5,2,"C0392B","F2F2EE","thick quilted glove","clang","Hot stuff? Not a problem.","kitchen,household"},
+	{"oven mitt","BABINI","GfI",2,5,4,"C0392B","F2E6D0","thick red quilted oven mitt with a cream cuff","thump","Hot stuff? Not a problem.","kitchen,defense,self,melee"},
 	{"overalls","BECONA","Gfh",3,4,6,"2F5D8A","D4AF37","denim dungarees with a wrench in one pocket, straw in other","thud","One strap down. Maximum farmer.","clothing,farm"},
 	{"overcast","GFCDOJ","ZN",2,3,3,"9EA7AD","D1D6DA","flat grey blanket of cloud","hush","Meh. Just meh.","silly"},
 	{"overcharge","FDCOKJ","DL",5,8,2,"FFEA00","FF6D00","crackling sparks bursting off caster","buzz","Too much power. Way too much.","electric,speed"},
@@ -400,7 +403,4 @@ return {
 	{"pacifier","BMAOKI","FN",1,5,1,"87CEEB","F2F2EE","rubber teat with ring","squeak","Calm down. Calm all the way down.","baby,cute"},
 	{"pack","AGDJAA","DQfh",7,8,5,"6B7280","E5E7EB","five grey wolves fanning out, leader howling","howl","Hunts as one. Argues about dinner as five.","canine,predator,swarm"},
 	{"pack rat","AMAJAA","Cdb",1,6,1,"8A7A6A","D8C8B8","rat with fluffy tail and big ears","squeak","Collects shiny junk. Hoarder.","mammal,cute"},
-	{"package","BMBL2I","Ech",3,2,3,"C8A165","EF4444","taped brown box marked FRAGILE, rattling suspiciously","thud","FRAGILE. This way up. Oops.","household"},
-	{"pacman frog","AMBJAG","UHe",2,5,1,"6AA03A","E8C84A","round frog that is mostly mouth","croak","A mouth with legs.","amphibian,wetland,pet,silly"},
-	{"paczki","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","big round jelly donut","chomp","A jelly donut on a mission.","edible,sweet"},
 }

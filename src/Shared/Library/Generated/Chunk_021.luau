@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"puff pastry","IMCIII","Ga",3,3,3,"F2D08A","E8B860","flaky golden layered square","thud","Puffs up and gets defensive.","edible"},
+	{"puff puff","IMAELB","eVP",2,7,1,"D9A04A","F2C870","round fried dough balls","pitter","Fluffy fried balls of joy.","edible,sweet"},
+	{"puffball","NJBDOI","jEMP",3,1,2,"F5F5F5","BCAAA4","white round ball that bursts into dust","poof","Poof! Cough cough cough.","plant,fungus"},
+	{"puffbird","AMAJDB","dA",1,7,1,"8A6A4A","F2F2EE","puffy round bird","tweet","Very puffy. Very still.","bird,cute"},
 	{"puffed rice","IMAELB","eVP",2,7,1,"F7F2E0","E8D8A8","tiny puffy grains","pitter","Crunchy air.","edible,sweet,snack"},
 	{"pufferfish","AJBJEC","UdWTMB",3,6,1,"E8D08A","6E5A3A","spiky round balloon fish","splash","Inflates into a spiky balloon. Do not lick.","fish,aquatic"},
 	{"pufferfish pop","AJBOEC","UWT",4,3,5,"E2C36A","F3E9C8","puff up into a spiky ball, then pop","pop","Personal space: enforced.","critter,sea,buff,defense"},
@@ -362,7 +366,7 @@ return {
 	{"right","KMBF6B","kIO",3,7,1,"EF4444","FFFFFF","big red arrow pointing right, shoving sideways","whoosh","Always right. Even when left.","silly"},
 	{"right whale","ABFJEC","kIB",8,2,9,"1E2024","D8D2C8","bumpy callosities on head","whalesong","Gentle, slow, and very bumpy.","mammal,aquatic,ocean,heavy"},
 	{"rim","BKBA3K","Uea",3,6,5,"F97316","D1D5DB","orange hoop ring wobbling as a ball rattles round it","clang","In. Out. In. Out. Round the rim. Out.","sport"},
-	{"rime","FCBIKI","GJ",3,2,5,"C6E9F7","FFFFFF","thick white ice crust shell","crackle","Crunchy armour. Very fashionable.","frozen"},
+	{"rime","FCBI4I","GJ",4,2,5,"C6E9F7","FFFFFF","a crusty ring of rime ice round you","crackle","Crunchy armour. Very fashionable.","frozen,winter,weather"},
 	{"ring","BLAOKJ","F",2,5,4,"D4A72C","B0103A","gold band with a red gem","chime","One ring to... bonk them all.","treasure,shiny"},
 	{"ring of fire","FADNOI","GKS",6,4,4,"E64A19","FFD54F","circle of tall flames trapping the middle","crackle","Round and round, and nobody gets out.","fire"},
 	{"ringed seal","ACCJEC","UfB",3,5,4,"6A6A6E","B8B8BC","spotted with pale rings","bark","Lives under sea ice.","mammal,aquatic,arctic"},
@@ -399,8 +403,4 @@ return {
 	{"roast potatoes","IMAELB","eVP",2,7,1,"D9A04A","F2D07A","golden crispy chunks","pitter","Crunchy outside, fluffy inside.","edible"},
 	{"roast turkey","IGCOKI","Fc",2,5,3,"B0602B","F2D88A","big roasted bird on platter","crunch","A whole feast, ready to share.","edible,healthy,holiday"},
 	{"roasted chestnuts","IABOKI","F",2,5,3,"6B3A1E","E8A85A","paper bag of split brown nuts","crunch","Warm hands, warm hearts.","edible,healthy"},
-	{"rob","KIBONA","DZb",4,8,1,"111827","FACC15","masked figure dashing off with a bulging swag sack","jingle","Yoink. Legally distinct from borrowing.","villain,stealth"},
-	{"robber","LICJNA","DZb",4,7,3,"111827","F8FAFC","striped shirt, mask, loot bag","whoosh","Bag says LOOT. Very subtle.","villain"},
-	{"robber fly","AMAJFB","dAfTP",1,6,1,"6A5A44","C8A07A","bristly fly with beard","buzz","Bearded hunter. Catches wasps.","insect"},
-	{"robe","BLCONI","F",1,5,2,"1F2F55","D4A72C","long star-patterned robe","swish","Comfy. Mystical. Pocketless.","clothing,magic"},
 }

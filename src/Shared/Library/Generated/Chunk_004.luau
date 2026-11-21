@@ -116,7 +116,7 @@ return {
 	{"bubble plant","NBBLMI","UdN",2,1,1,"B3E5FC","F48FB1","flower that blows big soap bubbles","chime","Bubbles everywhere. Pop pop pop.","silly,cute"},
 	{"bubble prison","FBCLKJ","lO",4,4,3,"E1F5FE","F8BBD0","big bubble floating trapped enemy upward","pop","Floaty jail.","aquatic,silly"},
 	{"bubble storm","GBDEOJ","Udl",3,4,1,"B3E5FC","F8BBD0","cloud pouring hundreds of bubbles","pop","Pop! Pop! Pop!","silly,cute,storm"},
-	{"bubble tea","IBBOKI","FeV",2,6,2,"C8A070","2A1610","tall cup, wide straw, dark pearls","slurp","Drink it. Chew it. Shoot the pearls.","edible,drink"},
+	{"bubble tea","IBBAKB","keV",2,8,2,"C8A070","2A1610","tall cup of milk tea with a wide straw and dark pearls","slurp","Five pearls, rapid fire. Slurp.","kitchen,projectile,volley,edible,sweet"},
 	{"bubble tornado","HBDN5K","Ujl",4,5,2,"B3E5FC","F8BBD0","spinning column of soap bubbles","pop","Pop pop pop. Wheeeee.","storm,silly"},
 	{"bubble tower","EBDMII","GUlSeN",3,1,5,"B3E5FC","F48FB1","tower blowing huge bubbles","thud","Traps enemies in bubbles. Pop!","structure,defense,tower,silly"},
 	{"bubble waffle","IMCIII","Ga",3,3,3,"E8B860","F7F2EC","waffle covered in bubbles","thud","A waffle with pop-able bubbles.","edible,dessert"},

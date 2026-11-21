@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"zombie hunter","LMCJNA","Gfe",6,6,6,"57534E","84CC16","bandana, crossbow, backpack","bang","Has a plan for the zombie apocalypse.","warrior"},
+	{"zombie king","AJDJNA","MNh",7,3,7,"4D7C0F","CA8A04","bloated crowned zombie on a bone throne","groan","Rules the undead. Smells regal.","undead,royal,boss"},
+	{"zombie mage","AJCJNA","Meh",5,3,4,"65A30D","7C3AED","rotting wizard with a cracked staff","groan","Still remembers one spell. Uses it a lot.","undead,magic"},
+	{"zombie pirate","AJCJNA","fM",4,4,5,"65A30D","7F1D1D","soggy pirate zombie with seaweed beard","groan","Arrr... brains.","undead,pirate"},
+	{"zombie shark","AJDJEC","fMB",6,6,5,"65A30D","64748B","rotting shark with exposed ribs","chomp","Smells worse than a normal shark.","undead,aquatic,silly"},
+	{"zombie unicorn","AJDKAA","DMg",5,5,5,"84CC16","F0ABFC","tattered unicorn with green glow","groan","Still sparkly. Sort of.","undead,silly"},
 	{"zombie viking","AJCJNA","DfM",5,4,6,"65A30D","78350F","rotting viking with axe and horned helm","groan","Valhalla rejected him.","undead,norse"},
 	{"zone","MDEN5I","KSIX",6,2,5,"A855F7","38BDF8","closing purple energy ring with a shrinking safe circle","whum","The circle is closing. You are not in it.","gaming"},
 	{"zongzi","IMBAKK","keO",3,7,6,"5E7A3A","F7F4EC","leaf-wrapped pyramid","bonk","A rice pyramid in leaf armour.","edible"},

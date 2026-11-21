@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"package","BMBL2I","Ech",3,2,3,"C8A165","EF4444","taped brown box marked FRAGILE, rattling suspiciously","thud","FRAGILE. This way up. Oops.","household"},
+	{"pacman frog","AMBJAG","UHe",2,5,1,"6AA03A","E8C84A","round frog that is mostly mouth","croak","A mouth with legs.","amphibian,wetland,pet,silly"},
+	{"paczki","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","big round jelly donut","chomp","A jelly donut on a mission.","edible,sweet"},
 	{"pad thai","IMBLGI","FHN",2,3,3,"E8A040","7DBE3A","stir-fried noodles, peanuts, lime","gloop","Sweet, sour, nutty noodles.","edible,sticky"},
 	{"paddle ball","BMAAJF","UQe",1,9,1,"C0392B","C49A6C","paddle with ball on elastic","bonk","Thwack thwack thwack.","sport"},
 	{"paddle boat","DBBKHC","DkgB",2,3,3,"F5F5F5","FFB300","swan-shaped boat with pedal wheel","splash","The swan is judging you.","silly,cute"},
@@ -400,7 +403,4 @@ return {
 	{"pirate cove","MBENII","Sbh",4,1,7,"1E88E5","6D4C41","hidden bay with a moored pirate ship","chime","Arr, treasure here! Also pirates.","place,mythical,pirate"},
 	{"pirate crew","LBDJLA","fPb",6,6,5,"7F1D1D","78350F","rowdy group of bandana pirates","arr","Many pirates. One shared toothbrush.","pirate,swarm"},
 	{"pirate hat","BMBONI","h",1,6,2,"24262A","D4A72C","three-cornered skull hat","swish","Arrr! Instant crew.","clothing,pirate"},
-	{"pirate parrot captain","AFBJDB","jAb",2,8,2,"15803D","DC2626","parrot in a tiny captain's hat","squawk","Captain now. The crew agreed.","pirate,silly"},
-	{"pirate pistol","CKBAwI","Te",4,4,3,"B58A3A","5A3A1E","ornate flared flintlock","bang","Bang! Arr!","pirate"},
-	{"pirate queen","LBCJNA","ebh",6,6,5,"7F1D1D","FACC15","crowned pirate with twin cutlasses","arr","Rules the seven seas. And snacks.","pirate,royal"},
 }

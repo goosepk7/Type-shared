@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thor","LDEJXA","AkeLO",9,7,9,"B91C1C","C0C7CE","red-bearded Norse giant, winged helm, short stone hammer","thunder","Old Norse weather forecast: hammer.","mythical,storm,norse,boss,danger"},
+	{"thorn","NGAAJI","Te",2,7,1,"6D4C41","C62828","sharp curved thorn","rustle","Small. Sharp. Annoying.","plant,sharp"},
+	{"thorn shield","BGCIyI","GT",3,4,6,"2E8B57","7A4E2D","shield of woven thorny vines","clank","Hit it. Ouch.","armor,defense"},
+	{"thorn storm","FGDEOB","TMP",6,6,2,"33691E","A1887F","swirl of sharp thorns raining down","rustle","Prickly weather.","plant,sharp,storm"},
+	{"thorn vine","NGCLMI","WSTHN",4,2,4,"33691E","6D4C41","coiling vine full of thorns","rustle","It grabs. It pokes. It does not let go.","plant,sharp"},
+	{"thorn wall","EGDCII","GWSTN",4,1,6,"2E7D32","5D4037","tangled thorny vines on a trellis","thud","Ouch, ouch, ouch, ouch.","sharp,plant"},
 	{"thorny devil","AMBJAA","CfT",2,7,2,"C8783A","F2C88A","spiky desert lizard","hiss","Drinks through its skin.","reptile"},
 	{"thoroughbred","AMDKAA","Dkg",5,10,5,"6A3A1E","2A1A12","sleek racing horse","neigh","Born to race. Lives to race.","mammal"},
 	{"thousand island","IMBLGI","kSO",2,3,2,"F2A07A","D72B2B","pink creamy dressing","squeak","A thousand islands. Zero maps.","edible,slippery,silly,sauce"},
@@ -397,10 +403,4 @@ return {
 	{"tube","BMBHzK","Ukf",2,6,3,"22D3EE","F472B6","long bendy foam noodle swung like a sword, bonk lines","bonk","Bonk. Harmless. Bonk. Annoying. Bonk.","toy,silly"},
 	{"tug of war","KMCBKI","HO",4,4,3,"A1887F","FFD54F","glowing rope pulling target in","creak","Heave! Heave! Gotcha.","silly,sport"},
 	{"tugboat","DBCKHC","DkHIgB",5,5,8,"E53935","1A1A1A","short stout boat, big tyre fenders","horn","Small. Stubborn. Pulls anything.","vehicle,aquatic,cute"},
-	{"tui","AMAJDB","dA",1,7,1,"2A3A2A","F2F2F2","dark bird with white throat tuft","tweet","Wears a bow tie. Sings beeps.","bird,cute"},
-	{"tulip","NGBNMI","dFS",2,1,2,"E53935","43A047","cup-shaped bloom on a straight stem","rustle","Neat, tidy, ready for war.","plant,flower"},
-	{"tulip field","NGENMI","dFS",2,1,4,"E53935","FFEB3B","stripes of bright tulips","rustle","Rows of colour. Rows of charm.","plant,crop"},
-	{"tulip tree","NGDCMI","GWkS",3,1,7,"6D4C41","FFB300","tall tree with tulip-shaped flowers","rustle","Tulips. On a tree. Very tall.","plant,tree"},
-	{"tumble","KMBAKF","kO",2,6,2,"FFCC80","FFFFFF","rolling, bouncing tumble trail","thud","Head over heels. Literally.","silly"},
-	{"tumbleweed","NFBAMF","UWke",3,6,2,"C9A55A","8A6A3E","dry ball of twigs that grows with every bounce","wind","Rolls in dramatically. Every time. Bigger each time.","nature,plant,silly,desert"},
 }

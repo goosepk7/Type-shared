@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"scorpionfly","AMAJFB","jdAP",1,6,1,"E8A02A","1E1E1E","fly with scorpion tail","buzz","Scorpion tail. Totally harmless.","insect"},
+	{"scorpius","MHCEKJ","TMe",5,5,5,"FFFFFF","E53935","curving stars with a red heart star","rumble","Stings from the sky.","space,zodiac"},
+	{"scotch bonnet","IABAKK","KeP",6,7,2,"F2A62B","D8302B","squat bonnet-shaped pod","sizzle","A pretty hat full of fire.","edible,spicy,flammable,pepper"},
+	{"scotch egg","IMAAKK","keO",3,7,6,"C8803A","F2D23A","crumbed ball, egg center","bonk","An egg wearing sausage armour.","edible"},
+	{"scottie","AMBJAA","dQf",2,6,2,"1E1E1E","3A3A3A","black wiry terrier, beard","yip","Proud little black terrier.","mammal,pet,cute"},
 	{"scottish fold","AMBJAA","dfT",2,7,2,"B9B3AA","6D665D","round face, ears folded flat","meow","Ears folded for aerodynamics.","mammal,pet,cute"},
 	{"scout","LGBJNA","GQF",3,6,3,"15803D","FACC15","sash of badges, compass, rope","whistle","Prepared for everything.","outdoor"},
 	{"scout car","DMCKHL","Dkeg",4,9,5,"B59B6A","3B3B2F","light open car with a mounted gun","engine","Fast, nosy, and annoying.","mechanical,vehicle,land"},
@@ -398,9 +403,4 @@ return {
 	{"sirin","AICJDB","jAc",4,6,3,"1E1B4B","FDE68A","bird with a woman's face, sad song","sing","Sings so sweetly you forget your name.","mythical,bird"},
 	{"sirius","MHDAKJ","KTeO",7,7,6,"F5F5F5","90CAF9","dazzling blue-white star","twinkle","Brightest star in the night sky. Blinding.","space,star"},
 	{"sister","LMCJNA","jf",3,6,4,"F472B6","1D4ED8","ponytail and backpack","ding","Will tell mom. Will absolutely tell mom.","family"},
-	{"sit","KEBLGI","kNO",3,4,4,"B45309","F2D0B4","big cartoon bottom dropping onto a whoopee cushion","thud","Sat. On you. Comfy.","silly"},
-	{"sitar","BMCFJI","jN",2,4,3,"8B5A2B","F3E6C8","long neck, gourd body","strum","Buzzing, shimmering strings.","music"},
-	{"sitatunga","AMCJAA","DkB",4,8,4,"8A6A4A","E8D8C0","swamp antelope, splayed hooves","bleat","Swims to escape. Swamp ninja.","mammal,wild"},
-	{"six shooter spin","CKBAwI","eV",5,7,3,"C9CED4","5A3A1E","twirling revolver","bang","Trick shot!","cowboy"},
-	{"size","KLBOKJ","jWX",3,5,3,"22D3EE","F472B6","ruler and two arrows, one pointing up, one down","boing","It matters. Sometimes. In boss fights.","silly"},
 }

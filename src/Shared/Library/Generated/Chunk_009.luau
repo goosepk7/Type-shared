@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
+	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
 	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
 	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
@@ -401,6 +403,4 @@ return {
 	{"fishing cat","ABCJAA","ZfTB",4,7,3,"7D7466","2E2A24","stocky olive-grey cat, webbed paws","hiss","A cat that LIKES water. Nobody trusts it.","mammal,predator,wild"},
 	{"fishing rod","BMCAJI","He",1,6,3,"C49A6C","C9CED4","long pole with reel and line","bonk","Hook, line, and sinker.","sport,ocean"},
 	{"fishing spider","AJBJQA","fMNB",2,6,2,"8A6A4A","C8A07A","big spider on water","skitter","Runs on water. Fishes.","arachnid,spooky,venomous"},
-	{"fishman","ABCJNA","fB",4,6,4,"0F766E","A3E635","bulgy-eyed fish-headed humanoid","splash","Smells exactly how you think.","aquatic,spooky"},
-	{"fishmonger","LBCJNA","dk",3,4,4,"0EA5E9","F8FAFC","apron, giant fish in hand","splat","Slaps you with a trout.","silly"},
 }

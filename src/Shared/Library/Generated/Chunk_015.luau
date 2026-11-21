@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"kraken","ABFJCC","kHOB",9,4,9,"7F1D1D","F87171","colossal squid with ship-crushing tentacles","roar","Release it. Please. It's been waiting.","mythical,aquatic,boss,danger"},
+	{"kraken king","ABFJCC","kHOB",9,3,10,"450A0A","FCA5A5","sky-sized kraken with crown of barnacles","roar","Eats fleets. Burps anchors.","mythical,aquatic,boss,danger"},
+	{"kraken spawn","ABBJCC","HB",3,6,3,"991B1B","FCA5A5","small red squid with big eyes","splash","One day it'll eat ships. Today it eats shrimp.","aquatic,cute"},
 	{"kraken tentacle","ABDLCI","kHO",6,4,6,"991B1B","FCA5A5","enormous tentacle rising from the floor","splash","Something's down there. Something big.","aquatic,trap"},
 	{"krampus","AIDJNA","Dfh",6,6,6,"1C1917","DC2626","shaggy horned figure with chains and basket","cackle","Santa's grumpy partner. Very hairy.","spooky,christmas,holiday"},
 	{"krill","ABBJLA","fPB",2,4,5,"F27A6A","F2C0B0","tiny see-through pink shrimp swarm","clack","Small. Many. Whale snack.","crustacean,aquatic,armored"},
@@ -167,7 +170,7 @@ return {
 	{"leaf","NGAELJ","dSP",1,6,1,"7CB342","FF9800","single flat leaf with veins","rustle","Floats down gently. Distracts briefly.","plant"},
 	{"leaf blower","OFCF1K","kIeN",4,7,4,"E67E22","24262A","handheld engine with a long nozzle and leaves","whoosh","Moves leaves. Moves enemies. Wakes the street.","household,garden,loud,push"},
 	{"leaf insect","AMAJFA","dZP",1,6,1,"6AC84A","4A8A3A","flat leaf-shaped green body","buzz","A leaf that walks. Very rude to salads.","insect"},
-	{"leaf pile","NGBLMI","ZSN",1,1,2,"FF9800","C62828","crunchy heap of autumn leaves","rustle","Jump in! Something is hiding in there.","plant,silly"},
+	{"leaf pile","NGBLMI","ZlN",2,1,4,"E07A22","B23A1E","crunchy heap of autumn leaves that bursts when stepped in","rustle","Jump in! Something is hiding in there.","plant,silly,trap"},
 	{"leaf shield","FGCIKK","GF",2,4,4,"43A047","AED581","whirling leaves forming a dome","rustle","Nature has your back.","plant,defence"},
 	{"leaf storm","FGDN5K","jlT",6,6,2,"7CB342","FFB300","whirlwind of sharp green and gold leaves","rustle","Autumn, but violent.","plant,storm"},
 	{"leafcutter ant","AMAJLA","CdlfP",1,5,1,"B85A2A","6AC84A","ants carrying leaf pieces","skitter","Farmers with leaf umbrellas.","insect,swarm"},
@@ -338,7 +341,7 @@ return {
 	{"lilac","NGCNMI","dFS",2,1,3,"B39DDB","7CB342","cone clusters of lavender blooms","rustle","Spring in a single sniff.","plant,flower"},
 	{"lily","NGBNMI","dFS",2,1,2,"FFFFFF","F48FB1","star-shaped trumpet bloom","rustle","Elegant, fragrant, unbothered.","plant,flower"},
 	{"lily of the valley","NJANMI","dFSM",2,1,1,"FFFFFF","2E7D32","row of tiny white bells","rustle","Sweet bells. Secretly poisonous.","plant,flower"},
-	{"lily pad","NBCLMJ","FSN",2,1,3,"43A047","F8BBD0","round floating leaves and a pink bloom","rustle","Hop across. Do not fall in.","plant,flower"},
+	{"lily pad","NBCAMG","DIB",3,8,1,"3E8A3A","F4A6C6","a hop onto a lily pad with a splash","splash","Hop across. Do not fall in.","plant,flower,water"},
 	{"lima bean","IEAELB","eNP",2,6,1,"C8D88A","E8F0C0","pale green flat bean","pitter","The bean nobody chose. Until now.","edible,grain"},
 	{"limb","BGCHJK","kfI",4,5,5,"6B4226","3F7D2A","thick leafy branch swung like a club","whoosh","Out on a limb. Swinging it.","tree"},
 	{"limbo","KMBOKI","Z",1,4,2,"FF7043","FFEB3B","caster bending way, way back","music","How low can you go? Under the attack.","music,dance"},
@@ -400,7 +403,4 @@ return {
 	{"lobby","MMDNlI","jSN",4,1,5,"6366F1","F8FAFC","big room of idle jumping avatars under a countdown clock","music","Waiting for players... 1 of 12.","gaming,place"},
 	{"lobelia","NGANMI","dFS",1,1,1,"3949AB","FFFFFF","spilling mounds of tiny blue flowers","rustle","Tiny blue waterfall.","plant,flower"},
 	{"lobster","ABBJRA","GfTO",3,4,5,"C8301E","3A1A12","big claws, segmented tail","clack","Pinches first. Asks questions later.","crustacean,aquatic,armored"},
-	{"lobster roll","IGBOKI","F",2,5,3,"E8604A","F2D08A","buttered bun with pink filling","crunch","A fancy roll from the seaside.","edible,healthy"},
-	{"lobster trap","BMCLII","cO",2,1,4,"8B5A2B","B89B6A","slatted wooden box with funnel","snap","Easy in. Not easy out.","trap,ocean"},
-	{"loch ness","MBENII","ZSh",4,1,8,"1A237E","2E7D32","long dark Scottish lake in hills","rumble","Something is swimming in there.","place,landmark,mythical"},
 }
