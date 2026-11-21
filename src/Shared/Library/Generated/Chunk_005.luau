@@ -226,7 +226,7 @@ return {
 	{"cheese puffs","IMAELB","deP",2,7,1,"F2862B","F2A65A","bumpy orange puff","pitter","Leaves orange fingerprints of shame.","edible,sweet"},
 	{"cheese stick","IMBHJI","fH",3,5,4,"F7F2E0","E8B860","white peelable stick","bonk","Peel it. Then whip it.","edible,silly"},
 	{"cheese trap","IMBLKI","ScO",2,3,3,"F2C24A","8A5A3A","cheese wedge on a wooden trap","chomp","Snap! Gotcha.","edible,sweet"},
-	{"cheese wall","IMDCII","Gc",4,2,7,"F2C24A","E8A82B","wall of cheese blocks with holes","thud","Holey but holding.","edible,giant"},
+	{"cheese wall","IMDCII","GN",4,2,7,"F6C443","E59B22","thick wall of holey yellow cheese","thud","Holey but holding.","edible,giant,wall,defense"},
 	{"cheese wedge","IMBLKI","dSc",2,3,3,"F2C24A","F7D85A","triangle wedge with holes","chomp","A doorstop of pure temptation.","edible,sweet,dairy"},
 	{"cheese wheel","IMDGKF","DkcI",6,5,6,"F2C24A","C89A3A","huge round cheese drum, rind","rumble","Rolls downhill. Flattens everything.","edible,heavy,dairy"},
 	{"cheesecake","IMBLKI","dSc",2,3,3,"F5E6C0","C8203A","creamy wedge, crumb crust, berries","chomp","Not a cheese. Not a cake. Fully delicious.","edible,sweet"},

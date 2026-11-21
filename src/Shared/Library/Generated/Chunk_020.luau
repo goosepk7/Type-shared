@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza delivery","IMCJHL","DFc",3,7,2,"D72B2B","F7F2EC","scooter with pizza box","whoosh","Hot pizza in thirty minutes or less.","edible"},
+	{"pizza dough","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","round stretchy dough ball","wobble","Stretchy, sticky, full of potential.","edible,wobbly"},
 	{"pizza ninja","LMCJNA","DZe",4,9,3,"111827","DC2626","ninja carrying pizza boxes","whoosh","Delivers pizza. And pain.","silly,stealth"},
 	{"pizza oven","OACM1I","K",4,1,7,"9C4A3A","FF6A1A","domed brick oven glowing inside","clang","Wood-fired fury.","kitchen,household"},
 	{"pizza party","IMCJII","dFc",5,1,6,"E8B04A","D72B2B","stacked pizza boxes","thud","Free pizza. Everyone comes.","edible,giant,silly"},
@@ -401,6 +403,4 @@ return {
 	{"punching bag","BMCCII","Gd",1,1,6,"C0392B","24262A","hanging leather cylinder","bonk","Takes the hits. Keeps smiling.","sport"},
 	{"punching machine","OKCL1I","kO",4,3,6,"C0392B","C9CED4","wall panel with spring boxing gloves","clank","Pow pow pow! From the wall!","defense,silly"},
 	{"punching tree","NGECMI","GkSf",6,2,8,"4E342E","2E7D32","gnarled tree swinging heavy branches","chime","Do not park next to it.","plant,magic,mythical,silly"},
-	{"punishment","KICLII","SNO",4,1,6,"78716C","DC2626","small chair in a corner under a spotlight, clock ticking","tick","Go to your room. And think about what you typed.","school,silly"},
-	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
 }

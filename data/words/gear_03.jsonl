@@ -55,7 +55,9 @@
 {"w":"pulley","a":["pulleys","block and tackle"],"c":"Machine","e":"Metal","z":"Small","s":"Trap","b":["Lifts","Pulls"],"p":2,"sp":3,"d":5,"pc":"#8B5A2B","sc":"#B89B6A","bp":"Weapon","sh":"wheel with rope over it","m":"Spin","snd":"clank","f":"Lifts heavy things with clever science.","t":["science"]}
 {"w":"lever","a":["levers"],"c":"Object","e":"Metal","z":"Small","s":"Trap","b":["Lifts","Knockback"],"p":2,"sp":4,"d":6,"pc":"#8B5A2B","sc":"#5B6168","bp":"Weapon","sh":"long plank on a pivot","m":"Spin","snd":"clank","f":"Give me a lever and a place to stand.","t":["science"]}
 {"w":"jack","a":["jacks","car jack"],"c":"Machine","e":"Metal","z":"Small","s":"Trap","b":["Lifts"],"p":2,"sp":3,"d":7,"pc":"#C0392B","sc":"#8A929B","bp":"Weapon","sh":"scissor lift jack","m":"Spin","snd":"clank","f":"Lifts cars. Lifts enemies.","t":["tool"]}
-{"w":"spatula","a":["spatulas"],"c":"Object","e":"Metal","z":"Small","s":"Blade","b":["Melee","Lifts","Knockback"],"p":1,"sp":7,"d":3,"pc":"#24262A","sc":"#8A929B","bp":"Weapon","sh":"flat flipping paddle","m":"Spin","snd":"clank","f":"Flips pancakes and foes.","t":["kitchen","silly"]}
+<<<<<<< HEAD
+=======
+>>>>>>> b2b4d6767b925ede09374adace91c9f44c54fb7c
 {"w":"mop","a":["mops"],"c":"Object","e":"Water","z":"Medium","s":"Blade","b":["Melee","Slows","Knockback"],"p":1,"sp":5,"d":3,"pc":"#8E9196","sc":"#2F6FD1","bp":"Weapon","sh":"stringy head on long pole","m":"Spin","snd":"clank","f":"Leaves floors slippery and foes falling.","t":["cleaning"]}
 {"w":"feather duster","a":["feather dusters","featherduster"],"c":"Object","e":"None","z":"Small","s":"Blade","b":["Melee","Distracts","Confuses"],"p":1,"sp":7,"d":1,"pc":"#7D3CB5","sc":"#8B5A2B","bp":"Weapon","sh":"fluffy feather tuft on stick","m":"Spin","snd":"clank","f":"Tickle attack!","t":["cleaning","silly"]}
 {"w":"dustpan","a":["dustpans","dust pan"],"c":"Object","e":"None","z":"Small","s":"Shield","b":["Blocks"],"p":1,"sp":6,"d":2,"pc":"#C0392B","sc":"#24262A","bp":"Shield","sh":"flat scoop with short handle","m":"Spin","snd":"clank","f":"Holds dust. Blocks dust.","t":["cleaning"]}

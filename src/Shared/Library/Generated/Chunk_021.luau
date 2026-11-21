@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"punishment","KICLII","SNO",4,1,6,"78716C","DC2626","small chair in a corner under a spotlight, clock ticking","tick","Go to your room. And think about what you typed.","school,silly"},
+	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
 	{"pupfish","AAAJEC","dB",1,6,1,"3A6AE8","E8E0D0","tiny desert pool fish","splash","Lives in the hottest pools.","fish,aquatic,desert"},
 	{"puppeteer","LLCJNA","jHh",4,4,3,"7C2D12","DC2626","marionette strings from fingertips","giggle","Pulls your strings. Literally.","circus,magic"},
 	{"puppy","AMBJAA","dQf",1,6,2,"D9A56B","FFF1DE","oversized paws, floppy ears, wiggle butt","yip","Chews everything. Forgiven instantly.","mammal,pet,cute"},
@@ -401,6 +403,4 @@ return {
 	{"robot pirate","OKCJNA","feb",5,6,6,"57534E","DC2626","robot with hook claw and eyepatch screen","clank","Searching for buried data.","robot,pirate,silly"},
 	{"robot queen","OKDJNA","Feh",7,3,7,"E5E7EB","C084FC","elegant silver robot with crown antennae","hum","All robots answer to her.","robot,royal"},
 	{"robot referee","OKCJNA","GO",3,5,5,"111827","F8FAFC","striped robot with whistle speaker","whistle","Flags your foul. Beeps loudly.","robot,sport"},
-	{"robot samurai","OKCJNA","GfT",6,6,7,"7F1D1D","CA8A04","lacquered red robot armor with katana","clank","Honor protocol: enabled.","robot,warrior"},
-	{"robot snake","OKCJCD","fHL",4,6,5,"71717A","4ADE80","segmented metal snake with LED eyes","whir","Hisses in binary.","robot,reptile"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
 	{"geisha","LMCJNA","jc",3,4,3,"F8FAFC","DC2626","white makeup, kimono, paper fan","chime","A fan flick that ends fights.","historical"},
 	{"gelada","AMCJBA","deb",3,7,2,"8A6A4A","D8302A","lion mane, red chest patch","chatter","Grass-eating lion monkey.","mammal,primate"},
 	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
@@ -151,6 +152,7 @@ return {
 	{"giant vegetable","NGDCMI","GFS",3,1,6,"FF9800","43A047","enormous lumpy prize vegetable","rustle","Won first prize. Now wins fights.","plant,crop,silly"},
 	{"giant water bug","ABAJFB","dAfPB",1,6,1,"6A5A44","C8A07A","huge flat water bug with claws","buzz","Bites toes. Hence the name.","insect"},
 	{"giant watermelon","IMEJIF","EkcP",7,2,7,"3A7D2C","E8434F","car-sized striped melon","thud","The world's biggest splat.","edible,giant,silly"},
+	{"giant whisk","BMCHJK","kfH",4,6,3,"C9CED4","D2352C","huge steel balloon whisk swept round in circles","whirr","Whisks enemies into a froth.","kitchen,spin,melee,pull"},
 	{"gibbon","AMBJBA","Udeb",2,9,2,"3A322C","E8DCC8","super long arms, swinging","whoop","Swings faster than you can blink.","mammal,primate"},
 	{"gift bag","BMBL2I","c",1,1,1,"FF3EA5","F2F2EE","bag with tissue paper","thud","A present! For me?","container"},
 	{"gift box","BMBLKI","Ech",2,1,3,"C0392B","D4A72C","wrapped box with a big bow","squeak","Open it. Surprise!","party,holiday"},
@@ -401,6 +403,4 @@ return {
 	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
 	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
 	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
-	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
-	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
 }

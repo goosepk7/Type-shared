@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
+	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
 	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
 	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
 	{"gravity lily","NFBLMJ","lS",2,1,2,"B388FF","E1F5FE","lily floating upside down","chime","Lifts everything nearby. Wheee.","plant,magic,mythical"},
@@ -401,6 +403,4 @@ return {
 	{"heterodontosaurus","AMBJAA","dkT",3,5,6,"8A6A4A","D8B88A","tiny dino with fangs","honk","Plant eater with fangs. Confusing.","dinosaur,extinct,reptile"},
 	{"hex","KIBAKB","jiN",4,7,1,"6A1B9A","B2FF59","spinning purple hexagon glyph","cackle","Bad luck delivered by express mail.","spooky,magic"},
 	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
-	{"hex cauldron","BJCL2I","ESN",6,3,5,"2E2E34","6EE650","a black iron cauldron of green brew that boils over","bubble","Recipe: one eye of newt, one very bad mood.","monster,folklore,spooky,witch"},
-	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
 }

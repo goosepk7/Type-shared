@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
+	{"tylosaurus","ABEJEC","DkfHB",8,6,7,"3A5A6A","C8D0D8","long mosasaur with ram snout","roar","Rammed prey with its nose.","extinct,reptile,aquatic,ocean"},
+	{"typhon","AFFJNA","kleP",9,4,9,"1C1917","EA580C","storm giant with serpent legs and wings","roar","Father of monsters. Storm in a bad mood.","mythical,giant,boss,danger"},
+	{"typhoon","HBFN5K","kSHIP",9,5,7,"42678A","B9D3E8","spiralling rain-heavy storm wall over sea","howl","A hurricane with extra sea.","storm,aquatic,danger"},
 	{"tyrannosaurus rex","AMEJBA","DkfTO",9,6,8,"4A5A2E","C8A86A","giant head, tiny arms, massive jaws","roar","Tiny arms. Huge bite. No hugs.","dinosaur,extinct,reptile,predator,danger"},
 	{"tyrant","LIDJYA","GiOh",7,3,7,"1F2937","B91C1C","scowling ruler in spiked black armour on a too-big throne","boo","Makes the rules. Changes them when losing.","villain,royal"},
 	{"tyrant sun","KAFGKJ","KEe",10,2,2,"FF5A2A","FFE3A0","fingertip spark swells into a sinking crimson sun","rumble","One finger. One planet. Some assembly required.","anime,ki,heavy,danger"},
@@ -237,7 +241,7 @@ return {
 	{"waffle","IMCIII","GF",3,3,4,"E8B04A","C8803A","square grid cake","thud","A grid of pockets for syrup.","edible,breakfast"},
 	{"waffle cone","ICBAuB","JTe",3,7,2,"D9A066","F9A8D4","pointy crisp cone, pink scoop sliding off","crunch","Pointy end out. Sprinkles optional.","edible,sweet,frozen"},
 	{"waffle fries","IMBAKK","Uke",3,7,2,"E8B04A","F2D08A","lattice-cut golden fries","whoosh","Fries with a waffle pattern.","edible,breakfast"},
-	{"waffle iron","BABLII","KO",3,1,5,"24262A","DDE3E8","hinged grid griddle","clang","Chomp. Now you're a waffle.","kitchen,silly"},
+	{"waffle iron","BABM1I","SfN",4,3,6,"24262A","F2C066","hot cast-iron waffle iron that snaps shut","clang","Chomp. Now you have grill marks.","kitchen,appliance,turret,summon"},
 	{"waffle wall","IMDCII","Gc",4,2,7,"E8B04A","C8803A","giant grid waffle barricade","thud","A barricade with syrup pockets.","edible,giant"},
 	{"wage","BMBO2J","Fcb",2,5,2,"22C55E","F8FAFC","pay envelope with three coins and a long list of deductions","jingle","Payday! And it is gone.","job,silly"},
 	{"wagon","DMBKHL","DQkg",2,4,3,"D32F2F","8D6E63","small red cart, long pull handle","engine","Pull it along. Fill it with chaos.","mechanical,vehicle,land,silly"},
@@ -399,8 +403,4 @@ return {
 	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
 	{"week","KLBF6B","FNO",3,4,2,"EF4444","22C55E","seven boxes in a row: five grey, two golden","sigh","Five days of Monday. Two days of bliss.","time,meme"},
 	{"weekend","KHCNOI","DF",2,6,3,"FFD54F","81D4FA","sunny happy glow with confetti","yay","No school. All fun.","silly,support"},
-	{"weep","KBBEOJ","dNP",2,3,1,"93C5FD","E0F2FE","wobbly lip under two fountain jets of tears","wail","But I don't WANNA lose.","mood,silly"},
-	{"weeping cherry","NGCCMI","GdFS",2,1,5,"5D4037","F8BBD0","drooping branches of pink blossom","rustle","Weeps flowers. Beautifully.","plant,tree,cute"},
-	{"weeping fig","NGCCMI","GWkS",2,1,5,"8D6E63","2E7D32","small tree with glossy drooping leaves","rustle","Sulks if you move it.","plant,tree"},
-	{"weevil","AMAJFA","Gf",1,3,4,"6A4A2A","3A2A1A","beetle with long trunk snout","click","A beetle with an elephant nose.","insect,armored"},
 }

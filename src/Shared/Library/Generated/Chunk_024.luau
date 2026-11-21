@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skua","ABBJDB","DAbB",2,7,2,"6A4A2A","C8A07A","brown pirate seabird","squawk","Steals food from other birds. Pirate.","bird,ocean"},
+	{"skull","BIBA3B","UjeO",4,7,5,"F1EBDD","2B2B2B","grinning skull, dark sockets, chattering jaw","chatter","Alas, poor you.","spooky,undead,body"},
 	{"skunk ape","AJDJNA","DfM",6,6,6,"57534E","365314","stinky shaggy swamp ape","roar","You smell it before you see it.","cryptid,silly"},
 	{"skunk cabbage","NJCDMI","jSM",2,1,3,"9CCC65","FFEB3B","big leaves with a stinky yellow hood","rustle","Smells like a skunk. Literally.","plant,flower,silly"},
 	{"skunk kit","AMAJAA","CfM",1,8,2,"1A1A1C","F2F2F2","tiny stripy fluffball","chatter","Practicing the stink. Not ready yet.","mammal,predator"},
@@ -332,7 +334,7 @@ return {
 	{"spartan","LKCJNA","GDkf",6,5,7,"991B1B","CA8A04","crested bronze helm, round shield, spear","clang","THIS. IS. A. SHIELD WALL.","warrior,ancient"},
 	{"spartan helmet","BKBONI","G",2,5,6,"A86F32","9E1B32","bronze helm with red crest","clank","This. Is. A helmet.","armor,defense,ancient"},
 	{"spatha","CKCHrK","fT",5,6,5,"8A929B","A86F32","long straight cavalry sword","shing","Roman, but longer.","sharp,ancient"},
-	{"spatula","BKBHJK","klf",1,7,3,"24262A","8A929B","flat flipping paddle","clank","Flips pancakes and foes.","kitchen,silly"},
+	{"spatula flip","BKCHJK","klf",4,6,4,"C9CED4","7A4524","giant slotted spatula flipping foes over your head","clank","Flips pancakes and foes.","kitchen,melee,toss"},
 	{"spawn","KLCM5I","ShY",5,1,5,"22D3EE","7C3AED","glowing blue circle pad with beams where figures pop in","pop","They just keep coming out. Who is making these?","gaming"},
 	{"spawn camper","LICLNI","ce",5,1,4,"7F1D1D","111827","figure crouched at a glowing spawn pad","bang","Waiting at your spawn. Always.","meme,gaming,villain"},
 	{"speaker system","BFCFKI","kIO",4,2,5,"24262A","8E9196","giant stacked speaker cabinets","boom","The bass drops. So do the enemies.","music,loud"},
@@ -401,6 +403,4 @@ return {
 	{"spin jump","KFBOKK","UDk",3,9,2,"7FD8FF","FFE45C","a high corkscrew jump that bonks a head and bounces","boing","Your head was a platform. Thanks.","game,platformer,mobility"},
 	{"spin the wheel","KLCN5K","jV",4,6,2,"FF4081","FFEB3B","giant colourful wheel spinning above","tick","Round and round. Where it lands...","luck,chaos"},
 	{"spinach","IGBOKI","WFk",4,5,3,"2E6B2A","4E8E3A","pile of dark round leaves","chomp","Instant muscles. Results may vary.","edible,vegetable,healthy"},
-	{"spinach dip","IMBOKI","WF",3,5,3,"3E7A2B","F2E8C8","creamy green dip","chomp","Creamy spinach strength.","edible"},
-	{"spinifex","NGBLMI","STN",2,1,4,"C9A55A","9E9D24","spiky hummocks of desert grass","rustle","Spiky porcupine grass. Do not sit.","plant,sharp"},
 }

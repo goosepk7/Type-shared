@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flame dancer","LACJNK","Kj",4,7,3,"F97316","111827","spinning fire poi","whoosh","Dazzling. Also burning.","circus,fire"},
 	{"flame jet","FACBKI","KIe",5,9,1,"FF6D00","FFF3E0","tight roaring jet of blue-orange flame","hiss","Precision toasting.","fire"},
 	{"flame salamander","AABJAA","KfB",3,6,3,"EA580C","FDE047","small lizard with flame crest","hiss","Lives in a campfire. Very cozy.","reptile,fire,elemental"},
 	{"flame strike","FADBKI","KO",7,7,2,"FF3D00","FFEA00","column of fire slamming down from the sky","roar","Fire, but from above. Surprise!","fire,holy"},
@@ -402,5 +403,4 @@ return {
 	{"gazpacho","ICBOGI","JF",3,4,3,"C8302B","7DBE3A","cold red soup bowl","slurp","Cold soup. Hot debate.","edible,warm,healthy"},
 	{"gear","OKBAKK","UTe",2,6,6,"B58A3A","A86F32","toothed metal wheel","hum","Spinning tooth disc of mild doom.","mechanical"},
 	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
-	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"emperor penguin","ACCJDA","UDB",3,5,3,"1E1E24","F2B02A","tall penguin, gold neck patch","squawk","Tallest penguin. Handles -60 degrees.","bird,arctic,cute,royal"},
 	{"emperor scorpion","AJBJQA","fMN",3,6,2,"1E1E24","3A4A6A","huge glossy black scorpion","skitter","Big, black, and mostly gentle.","arachnid,spooky,venomous"},
 	{"empire state building","EMFCII","GkSO",7,1,10,"B0BEC5","37474F","art deco skyscraper with a spire","rumble","A whole skyscraper. Delivered.","structure,landmark"},
 	{"empower","KLCOKJ","DW",4,5,4,"FF6D00","FFE57F","glowing muscular outline aura","hum","Power! Unlimited... ish.","support"},
@@ -402,5 +403,4 @@ return {
 	{"flame","FACFOB","KIe",5,7,2,"F06A1D","FFD166","tongue of flame, licking forward edge","whoosh","Points at the problem. Sets it on fire.","fire"},
 	{"flame blade","FACHrB","Kf",6,7,4,"FF6D00","FFE57F","sword made of roaring fire","whoosh","A sword that is also a campfire.","fire,sharp"},
 	{"flame bloom","NABAbI","UKEe",5,8,2,"FF6A1F","FFD23F","fiery flower blooms, then bouncing fireballs","whoosh","Pick a flower. Throw the fire.","game,platformer,power up,fire"},
-	{"flame dancer","LACJNK","Kj",4,7,3,"F97316","111827","spinning fire poi","whoosh","Dazzling. Also burning.","circus,fire"},
 }

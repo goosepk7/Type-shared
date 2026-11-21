@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
+	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
 	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
 	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
@@ -165,7 +167,7 @@ return {
 	{"jouster","LKDKAA","DkTg",6,8,6,"DC2626","FACC15","knight with striped lance on charging horse","clang","Pointy stick. Fast horse. Big bonk.","warrior,sport,mount"},
 	{"jousting arena","MMENII","DkS",4,1,7,"B71C1C","FFD54F","fenced field with striped barrier, banners","crowd","Knights charge! Lances ready!","ancient,royal"},
 	{"joy","KHCOKJ","DF",2,6,3,"FFEB3B","FF80AB","bouncy yellow sparkles and confetti","yay","So happy it heals.","cute,support"},
-	{"joy buzzer","CDALJK","LO",1,9,1,"C9CED4","C0392B","palm buzzer ring","boing","Bzzzt! Gotcha!","prank,silly"},
+	{"joy buzzer","CDAHJG","DLO",3,8,1,"C9CED4","FFD54F","a lunge into a handshake with a crackling palm buzzer","boing","Bzzzt! Gotcha!","goofy,prank,silly,dash"},
 	{"jubilee stomp","KMDNBI","kSe",9,6,5,"FAF6EE","C4A0FF","a giant puffy cartoon foot stamping onto rubbery ground","thud","Boing. Boing. Boing.","anime,pirate,cartoon"},
 	{"judgment","FHEBKI","KTO",8,7,2,"FFD740","FFFFFF","giant golden sword of light slamming down","boom","The verdict is: ouch.","holy"},
 	{"judo master","LMCJNA","klf",5,7,5,"F8FAFC","1E3A8A","white judo gi, throwing stance","thud","Throws you with your own weight.","sport,martial"},
@@ -254,7 +256,6 @@ return {
 	{"kestrel","AMBJDB","DASfT",3,9,3,"B86A3A","6A7A8A","small falcon hovering in place","screech","Hovers like a tiny helicopter.","bird,predator"},
 	{"ketchup","IMBNGI","jSNP",2,4,1,"C8202B","F2E8D0","red squeeze bottle, splotch","splat","Splatters everywhere. Smells like fries.","edible,sauce"},
 	{"ketos","ABFJEC","kHB",8,5,8,"1E3A8A","A3E635","whale body, dog head, fish tail","roar","Eats coastlines. Saves room for dessert.","mythical,aquatic,giant"},
-	{"kettle","BABDKK","Kc",2,3,4,"DDE3E8","24262A","round kettle with whistling spout","whistle","Whistles when it's angry.","kitchen,household"},
 	{"kettle drum","BMDFJI","kO",4,2,6,"B8693D","F2F2EE","big copper bowl drum","boom","Rolling thunder.","music"},
 	{"kettlebell","BKBGKF","kfO",4,4,9,"24262A","8E9196","iron ball with handle","bonk","Heavy. Swingy. Ouchy.","sport"},
 	{"key","BKAOJK","Y",1,7,4,"D4A72C","B58A3A","old-fashioned bit key","clank","Opens doors. Opens plots.","tool"},
@@ -310,6 +311,7 @@ return {
 	{"kiss","KHBAKB","jFcO",2,6,1,"F43F5E","FDA4AF","flying lipstick print trailed by tiny hearts","pop","Eww! Cooties! Critical cooties!","cute,silly"},
 	{"kit fox","AMBJAA","jfb",3,7,2,"CDB58E","F2EAD8","small pale fox, big ears","yip","Desert ninja. Size: snack.","mammal,wild,desert"},
 	{"kitchen","MACNII","KFS",2,1,6,"F5F5F5","E53935","stove, pots, steam and a big table","thud","Something is cooking. Something spicy.","place,room"},
+	{"kitchen timer","BMBAKK","EQl",5,4,2,"D8302A","F6ECD6","cream wind-up kitchen timer with a red dial","tick","Ding! Your opponent is done.","kitchen,sticky,delayed,explosive"},
 	{"kite","DFAJHJ","dAN",2,5,1,"E53935","FFEB3B","diamond kite with bow tail","whoosh","Gets tangled in enemies.","vehicle,air,silly"},
 	{"kite bird","AMBJDB","DAfT",3,9,3,"B85A2A","E8E0D4","forked tail, gliding","screech","Glides like a... you know.","bird,predator"},
 	{"kite dragon","AFCJCB","AI",3,7,2,"DC2626","FACC15","long colorful kite with dragon head","whoosh","Flies when it's windy. Bites when it's not.","silly"},
@@ -401,6 +403,4 @@ return {
 	{"label maker","BMAOJK","j",1,5,2,"8E9196","F2F2EE","handheld sticker printer","tap","Labels you DEFEATED.","office"},
 	{"laboratory","EDDCII","SMLh",3,1,7,"ECEFF1","76FF03","bubbling flasks, sparking coils, monitors","thud","Something escaped. Again.","structure,building,mechanical"},
 	{"labrador","AMCJAA","DQfB",4,7,4,"2E2016","E2C08A","sturdy body, otter tail, friendly face","bark","Will retrieve anything. Including trouble.","mammal,pet"},
-	{"labrador puppy","AMBJAA","dQf",2,6,2,"E2C08A","F7EAD0","chubby yellow lab pup","yip","Chews shoes professionally.","mammal,pet,cute"},
-	{"lace","BMBLCD","HNO",2,4,2,"FFFFFF","EF4444","two untied shoelaces knotting themselves together","swish","Your shoe is untied. Made you look. Also it is.","clothing,trap"},
 }

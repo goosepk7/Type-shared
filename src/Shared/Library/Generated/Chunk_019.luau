@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pajama kid","LMBJNG","Ud",2,6,2,"60A5FA","FDE68A","footie pajamas, teddy bear","giggle","Pillow fight champion.","cute,silly"},
+	{"pajamas","BMCONI","FN",1,3,1,"87CEEB","F2F2EE","cosy cloud-print pyjamas","swish","Sleepy power-up.","clothing"},
 	{"pakicetus","AMBJAA","DQfh",3,7,4,"8A7A5A","D8C8A8","wolf-like whale ancestor","howl","Great-grandpa of whales. Looks like a dog.","mammal,predator,wild,extinct,ancient"},
 	{"pakora","IMAELB","Ke",2,7,1,"C8803A","F2A62B","craggy fried fritter","pitter","Crunchy fritter of spicy veg.","edible"},
 	{"palace","EMFCII","GSh",5,1,9,"FFF8E1","FFD54F","grand wings, golden domes, fountains","thud","So fancy the guards wear sashes.","structure,building,royal"},
@@ -400,7 +402,5 @@ return {
 	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
 	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
 	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
-	{"pizza cutter","BMAHJK","fV",2,7,2,"C9CED4","C0392B","rolling round blade on handle","clang","Slices pizza. Slices problems.","kitchen,household"},
-	{"pizza delivery","IMCJHL","DFc",3,7,2,"D72B2B","F7F2EC","scooter with pizza box","whoosh","Hot pizza in thirty minutes or less.","edible"},
-	{"pizza dough","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","round stretchy dough ball","wobble","Stretchy, sticky, full of potential.","edible,wobbly"},
+	{"pizza cutter","BMCFJF","Uke",4,7,3,"C9CED4","C0392B","giant steel pizza cutter wheel rolling along the ground","clang","Eight slices, one bounce.","kitchen,roll,projectile,ricochet"},
 }

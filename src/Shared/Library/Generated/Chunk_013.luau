@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hex cauldron","BJCL2I","ESN",6,3,5,"2E2E34","6EE650","a black iron cauldron of green brew that boils over","bubble","Recipe: one eye of newt, one very bad mood.","monster,folklore,spooky,witch"},
+	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
 	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
 	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
 	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
@@ -401,6 +403,4 @@ return {
 	{"inflatable boat","DBBKHC","UDkgB",3,7,3,"FF7043","37474F","rubber tube boat with outboard","splash","Bouncy, speedy, a bit squeaky.","vehicle,aquatic"},
 	{"inflatable flamingo","BBDJDJ","UdB",1,3,2,"FF3EA5","F2F2EE","giant pink pool floatie bird","splash","Floaty fabulous.","beach,silly"},
 	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
-	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
-	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
 }

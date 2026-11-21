@@ -234,6 +234,7 @@ return {
 	{"duo","LHCJNA","QFfh",5,6,5,"3B82F6","EF4444","two back-to-back heroes, one red one blue, fist bump","yay","Player two has entered the game.","gaming,team"},
 	{"durian","IJCDOJ","jkSM",5,3,2,"9C9A3A","F2D27A","huge spiky green-gold husk","whiff","Smells like a gym sock's vacation.","edible,smelly,fruit"},
 	{"dust","FEBDOJ","jN",2,5,1,"BFA88A","E6DACB","beige puff cloud, floating motes","whoosh","Achoo. Wait, what happened?","silly"},
+	{"dust bunny","AEBJGF","QI",3,6,4,"A9A39A","6E6A64","grumpy grey fluff ball with eyes that rolls at foes","poof","Lives under the couch. Holds grudges.","goofy,gross,silly,summon"},
 	{"dust bunny monster","AFBJGF","jdP",2,5,2,"A8A29E","D6D3D1","fluffy grey ball of fluff with eyes","puff","Lives under the couch. Growing.","silly,cute"},
 	{"dust cloud","FECDOJ","jZ",2,4,2,"BCAAA4","EFEBE9","billowing beige dust ball","whoosh","Cartoon fight cloud. Arms and legs optional.","silly"},
 	{"dust devil","FFBN5K","jl",4,7,2,"C9A97F","EAD9BF","little tan dusty twister","whoosh","A baby tornado with no manners.","air,desert"},
@@ -402,5 +403,4 @@ return {
 	{"emp pulse","CDDNKI","LP",4,7,3,"78DCFF","966078","a coiled spike slammed down, a pulse ring rolling out","zap","Have you tried turning it off and on again?","scifi,electric"},
 	{"empanada","IMBAKF","Fe",3,6,2,"D9A04A","C8803A","crimped half-moon pastry","splat","A pastry with a crimped smile.","edible"},
 	{"emperor","LHCJNA","GOh",6,3,6,"7F1D1D","FACC15","laurel crown, purple robe, golden throne","horn","Thumbs down. You're out.","royal,ancient"},
-	{"emperor penguin","ACCJDA","UDB",3,5,3,"1E1E24","F2B02A","tall penguin, gold neck patch","squawk","Tallest penguin. Handles -60 degrees.","bird,arctic,cute,royal"},
 }

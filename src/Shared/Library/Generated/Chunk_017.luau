@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"metal storm","FKEEOB","TP",8,6,4,"90A4AE","ECEFF1","swirling rain of metal shards and blades","clang","Forecast: sharp.","sharp,heavy,storm"},
+	{"metal welder","LACJNA","KO",4,4,5,"1F2937","F97316","welding mask, spark torch","sizzle","Sparks fly. Blinding ones.","tools,fire"},
 	{"meteor","HADAKB","KEkeO",8,8,6,"5D4037","FF8F00","flaming boulder streaking down, long fire tail","roar","Space rock. Express delivery.","space,explosive"},
 	{"meteor beetle","AEBJFA","GDE",3,6,6,"57534E","F97316","beetle with a glowing meteor shell","click","Rolls in like a tiny meteor.","alien,insect"},
 	{"meteor dive","KADAKB","KEkO",8,9,3,"BF360C","FFAB40","caster diving from the sky wreathed in fire","roar","Became a meteor. Landed on you.","fire,explosive"},
@@ -401,6 +403,4 @@ return {
 	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
 	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
 	{"naan","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","teardrop flatbread, char spots","whoosh","Fluffy, blistered, perfect for scooping.","edible"},
-	{"nacho cheese","IMBLGI","ScN",2,3,3,"F2A62B","F2C24A","bright orange gooey sauce","gloop","Liquid gold, but orange.","edible,sticky,dairy"},
-	{"nacho fries","IMAELB","eVP",2,7,1,"F2862B","F2C24A","seasoned orange fries","pitter","Fries in nacho dust.","edible"},
 }

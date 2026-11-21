@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"suitcase","BMBIyI","G",1,4,4,"7A4E2D","D2B48C","leather suitcase with straps","thud","Packed for adventure.","container"},
+	{"sukiyaki","IABNGI","KF",4,4,2,"8A3A1E","F2E8C8","simmering iron pot of beef","sizzle","A sweet simmering hot pot.","edible,spicy"},
+	{"sulcata tortoise","AMCJUA","GN",3,1,8,"C8A06A","8A6A3A","big desert tortoise","hiss","Bulldozes through gardens.","reptile,armored,desert"},
+	{"sulk","KBADOJ","N",1,2,2,"90A4AE","B3E5FC","tiny rain cloud over caster","hmph","Hmph. Fine. Whatever.","silly"},
 	{"sultan","LHCJNA","Gch",5,4,5,"B91C1C","FACC15","tall turban with jewel, silk robes","horn","Has a flying carpet on standby.","royal"},
 	{"sultana","IMAELB","eVP",2,7,1,"C8903A","A8702A","golden wrinkled raisin","pitter","A golden raisin with manners.","edible,sweet"},
 	{"sumac","IFBDOJ","jPO",2,5,1,"8A1E2E","B0303A","deep red tangy powder","puff","Red, tangy, and lemony.","edible,spice"},
@@ -399,8 +403,4 @@ return {
 	{"thunder slash","FDCHJB","fTL",6,10,1,"FFEB3B","448AFF","zigzag slash of lightning","crack","Fast as lightning. Because it is.","electric,sharp"},
 	{"thunder stag","FDEDAB","keLO",9,3,6,"2E6CE6","EBF8FF","a storm cloud from which a lightning beast dives","thunder","The sky had antlers. Briefly.","anime,ninja,lightning"},
 	{"thunder strike","FDDAKB","kLO",8,9,2,"FFEA00","3D5AFE","bolt slamming down with a ring of thunder","boom","Lightning that hits like a hammer.","electric"},
-	{"thunder sword","CDCHrK","fLO",7,7,4,"F1C40F","1F2F55","zig-zag blade crackling with sparks","shing","Every swing is a little thunderclap.","fantasy,electric"},
-	{"thunder wall","KDDCnI","GLO",5,4,5,"FFEA00","536DFE","crackling fence of vertical lightning","buzz","Do not touch the zappy wall.","electric,defence"},
-	{"thunder wave","FDDFOB","kIO",6,9,1,"5C6BC0","FFF59D","ring of thunder rippling outward","boom","BOOM. Sorry, was that loud?","electric,loud"},
-	{"thunder wolf","ADCJAA","DfL",5,9,4,"1E3A8A","FDE047","blue wolf with crackling fur","thunder","Static fur. Do not pet.","canine,storm"},
 }

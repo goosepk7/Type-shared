@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot samurai","OKCJNA","GfT",6,6,7,"7F1D1D","CA8A04","lacquered red robot armor with katana","clank","Honor protocol: enabled.","robot,warrior"},
+	{"robot snake","OKCJCD","fHL",4,6,5,"71717A","4ADE80","segmented metal snake with LED eyes","whir","Hisses in binary.","robot,reptile"},
 	{"robot snowplow","OKCJHL","JkI",4,3,7,"F97316","94A3B8","robot with huge plow blade","whir","Clears paths. Clears enemies.","robot,frozen"},
 	{"robot soldier","OKCJNA","DeP",5,5,6,"475569","EF4444","armored humanoid robot with rifle arm","clank","Marches in perfect lines. Always.","robot,warrior"},
 	{"robot spider","OKBJFA","fHL",3,7,4,"334155","22D3EE","eight-legged steel bot with lens eyes","skitter","Climbs walls. Taps on windows.","robot,insect"},
@@ -401,6 +403,4 @@ return {
 	{"sea dragon hatchling","ABBJCC","QB",2,6,2,"0EA5E9","A5F3FC","tiny blue finned dragon","chirp","Splashes adorably.","reptile,cute,aquatic"},
 	{"sea eagle","AMDJDB","DAfTB",6,9,3,"2A2420","F2B02A","massive orange beak, white shoulders","screech","Brought a banana-sized beak.","bird,predator"},
 	{"sea fan","ABCCMI","GdWT",3,1,6,"B83A6A","E87AA0","flat lacy fan coral","crackle","Waves at fish all day.","aquatic,ocean,reef"},
-	{"sea fog","GBDDOF","jZS",2,2,4,"B0BEC5","ECEFF1","rolling wall of grey sea fog","hush","Ships hate this. So do villains.","aquatic,spooky"},
-	{"sea giant","ABEJNC","kHB",8,3,8,"0C4A6E","67E8F9","barnacled giant rising from the waves","splash","Waves hello. Literally.","giant,aquatic"},
 }

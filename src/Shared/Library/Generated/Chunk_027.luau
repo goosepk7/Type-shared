@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thunder sword","CDCHrK","fLO",7,7,4,"F1C40F","1F2F55","zig-zag blade crackling with sparks","shing","Every swing is a little thunderclap.","fantasy,electric"},
+	{"thunder wall","KDDCnI","GLO",5,4,5,"FFEA00","536DFE","crackling fence of vertical lightning","buzz","Do not touch the zappy wall.","electric,defence"},
+	{"thunder wave","FDDFOB","kIO",6,9,1,"5C6BC0","FFF59D","ring of thunder rippling outward","boom","BOOM. Sorry, was that loud?","electric,loud"},
+	{"thunder wolf","ADCJAA","DfL",5,9,4,"1E3A8A","FDE047","blue wolf with crackling fur","thunder","Static fur. Do not pet.","canine,storm"},
 	{"thunderbird","ADEJDB","AkeLO",8,8,6,"1E3A8A","FDE047","massive eagle, lightning feather tips","thunder","Flaps once: thunder. Flaps twice: weather report.","mythical,bird,storm,flying"},
 	{"thunderbird chick","ADBJDB","AL",2,8,2,"1E3A8A","FDE047","fluffy chick that crackles","chirp","Every chirp is a tiny thunderclap.","cute,storm,bird"},
 	{"thunderbolt","FDDAKB","keLO",8,10,2,"FFE600","5A8CFF","thick forked bolt slamming down","crack","Comes with its own drumroll.","electric"},
@@ -399,8 +403,4 @@ return {
 	{"twinstep fusion","KHCOKI","DWkf",8,7,4,"FFE7A0","5FE0D0","you and a light twin dance, then fold into one","warp","Two steps, one fighter. Mind the fingertips.","anime,dance,buff,transformation"},
 	{"two liter bottle","IBCFKI","EkI",4,7,1,"3A1A0C","3E8E2B","big plastic soda bottle","fizz","A pressurized fizz cannon.","edible,drink,fizzy"},
 	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
-	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
-	{"tylosaurus","ABEJEC","DkfHB",8,6,7,"3A5A6A","C8D0D8","long mosasaur with ram snout","roar","Rammed prey with its nose.","extinct,reptile,aquatic,ocean"},
-	{"typhon","AFFJNA","kleP",9,4,9,"1C1917","EA580C","storm giant with serpent legs and wings","roar","Father of monsters. Storm in a bad mood.","mythical,giant,boss,danger"},
-	{"typhoon","HBFN5K","kSHIP",9,5,7,"42678A","B9D3E8","spiralling rain-heavy storm wall over sea","howl","A hurricane with extra sea.","storm,aquatic,danger"},
 }

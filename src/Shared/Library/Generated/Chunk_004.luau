@@ -16,7 +16,7 @@ return {
 	{"brain","BLBMGE","jleO",5,3,2,"F4A6B7","E57390","pink wrinkly brain floating, psychic rings","hum","Big brain time. Finally.","body,science,silly"},
 	{"brain alien","ALCJKJ","jleO",5,3,3,"F9A8D4","0EA5E9","giant brain in a glass dome","hum","Smarter than you. Reminds you constantly.","alien"},
 	{"brain coral","ABCIMI","GWT",3,1,6,"C8A86A","E8D8B0","round coral with maze grooves","crackle","Looks smart. Is a rock-ish animal.","aquatic,ocean,reef"},
-	{"brain freeze","ICBAKJ","jJO",3,5,2,"A6D8F2","F7F7F2","frosty swirl around head","squish","Ow ow ow. Cold.","edible,frozen"},
+	{"brain freeze","ICBA2K","JO",3,6,2,"4FC3F7","E91E63","a giant slushie cup splats; the foe clutches their head","squish","Ow ow ow. Cold.","goofy,silly,frozen"},
 	{"brainstorm","KDCDOJ","jL",5,6,2,"E040FB","FFEB3B","little cloud raining lightbulbs and sparks","crack","A storm of ideas. Some hurt.","psychic,electric,silly"},
 	{"brake","KKBF6B","INO",3,6,3,"DC2626","1F2937","red pedal stomp with screeching skid marks","screech","SCREEEECH. Everyone stops. Coffee spills.","vehicle"},
 	{"bramble","NGCLMI","WSTHN",3,1,4,"4E342E","7CB342","tangle of thorny arching canes","rustle","Prickly, sticky, grabby.","plant,sharp"},

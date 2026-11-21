@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea fog","GBDDOF","jZS",2,2,4,"B0BEC5","ECEFF1","rolling wall of grey sea fog","hush","Ships hate this. So do villains.","aquatic,spooky"},
+	{"sea giant","ABEJNC","kHB",8,3,8,"0C4A6E","67E8F9","barnacled giant rising from the waves","splash","Waves hello. Literally.","giant,aquatic"},
 	{"sea gooseberry","AHAJGJ","SB",1,2,1,"E8F4F8","8AE0F0","tiny round comb jelly","squelch","A floating glass marble.","aquatic,ocean,venomous"},
 	{"sea hag","ABCJNC","cMh",5,4,4,"134E4A","A3E635","seaweed-haired hag with shell necklace","cackle","Deals in voices and bad bargains.","witch,aquatic"},
 	{"sea hare","ABAJGI","jN",1,1,2,"8A6A4A","C8A07A","big sea slug with ear flaps","squelch","Squirts purple ink. Has ears.","mollusk,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"skirt","BFBI5K","UIa",2,6,3,"EC4899","F9A8D4","pink skirt twirling like a spinning top","swish","Twirl defence. Surprisingly solid.","clothing"},
 	{"skis","BCCOJI","D",2,8,3,"C0392B","F2F2EE","two long skinny boards with bindings","bonk","Swoosh! Downhill only.","sport,winter"},
 	{"skorpiovenator","AMDJBA","DkfT",6,6,7,"8A3A2A","D8A07A","bumpy-skulled theropod","roar","Scorpion hunter. Bumpy head.","dinosaur,extinct,reptile,predator"},
-	{"skua","ABBJDB","DAbB",2,7,2,"6A4A2A","C8A07A","brown pirate seabird","squawk","Steals food from other birds. Pirate.","bird,ocean"},
-	{"skull","BIBA3B","UjeO",4,7,5,"F1EBDD","2B2B2B","grinning skull, dark sockets, chattering jaw","chatter","Alas, poor you.","spooky,undead,body"},
 }
