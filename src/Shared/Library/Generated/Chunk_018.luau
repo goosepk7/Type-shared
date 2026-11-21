@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
+	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
 	{"naan","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","teardrop flatbread, char spots","whoosh","Fluffy, blistered, perfect for scooping.","edible"},
 	{"nacho cheese","IMBLGI","ScN",2,3,3,"F2A62B","F2C24A","bright orange gooey sauce","gloop","Liquid gold, but orange.","edible,sticky,dairy"},
 	{"nacho fries","IMAELB","eVP",2,7,1,"F2862B","F2C24A","seasoned orange fries","pitter","Fries in nacho dust.","edible"},
@@ -216,6 +218,7 @@ return {
 	{"ocelot","AMCJAA","ZfT",4,7,3,"C9A267","2A1E12","chain-spotted coat, striped legs","hiss","Looks like a tiny leopard wearing art.","mammal,predator,wild"},
 	{"ocotillo","NECLMI","GSfT",3,1,6,"6D4C41","E53935","spiny whips tipped with red flames","thud","Waves thorny whips at you.","plant,desert,sharp"},
 	{"octopus","ABCJSC","jZfHbB",4,6,3,"C8503A","F2A08A","round head, eight curling tentacles, suckers","squelch","Eight arms, three hearts, zero bones.","aquatic,ocean,smart"},
+	{"octopus grab","ABCNSC","fHO",5,5,4,"D9644E","1E1A2E","an octopus bursts out of an ink puddle and grabs","squelch","Eight arms. All of them for you.","critter,sea,zone,control"},
 	{"odachi","CKDHrK","kfT",7,4,5,"C9CED4","9E1B32","very long curved blade","shing","So long it needs its own zip code.","medieval,sharp"},
 	{"odin","LLEJZA","jATeh",9,5,9,"374151","60A5FA","one-eyed old wanderer, wide hat, spear, two ravens","caw","Traded an eye for wisdom. Still lost his keys.","mythical,norse,boss,danger"},
 	{"off roader","DMCKHL","UDkg",4,7,6,"556B2F","C2B280","open-top boxy 4x4, spare wheel on back","engine","Mud is just a suggestion.","mechanical,vehicle,land"},
@@ -400,7 +403,4 @@ return {
 	{"paint tunnel","BMDCnI","GSO",3,1,4,"E8DCC0","2A2A36","a canvas wall with a painted tunnel mouth","splat","Looks like a way through. Isn't.","cartoon,silly,trap"},
 	{"paintball","CMBA3B","jeNP",3,9,2,"22C55E","F472B6","neon paint pellet bursting into a bright splat","splat","Stings a bit. Stains forever.","sport,ranged,silly"},
 	{"paintball gun","CMBAwI","jeN",2,8,3,"24262A","8BC34A","hopper-topped paint blaster","thwip","Splat. Now you're a painting.","sport,silly"},
-	{"paintbrush","BMAAJK","je",1,7,1,"8B5A2B","C0392B","wooden brush with painted tip","clank","Every stroke a masterpiece.","art"},
-	{"painted lady","AMAJFB","jdA",1,5,1,"E8803A","1E1E1E","orange black white spotted wings","flutter","Flies across continents.","insect,cute"},
-	{"painted turtle","AMBJUA","GNB",2,2,8,"3A4A3A","E8301E","shell with red and yellow lines","hiss","Painted by nature.","reptile,armored"},
 }

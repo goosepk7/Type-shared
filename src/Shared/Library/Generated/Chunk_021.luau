@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pumpkin spirit","AABJGG","UKc",2,5,3,"F97316","166534","bouncing carved pumpkin with glowing grin","cackle","Spicy seasonal energy.","halloween,spooky,silly"},
+	{"punch","KMCAKB","kf",5,9,2,"FF7043","FFE0B2","glowing fist with impact star","pow","The simplest spell. Fist goes forward.","melee"},
+	{"punch bowl","IBCOKI","Fc",2,6,2,"D8202B","F7F2EC","big glass bowl of red punch","slurp","The centrepiece of every party.","edible,drink"},
+	{"punching bag","BMCCII","Gd",1,1,6,"C0392B","24262A","hanging leather cylinder","bonk","Takes the hits. Keeps smiling.","sport"},
+	{"punching machine","OKCL1I","kO",4,3,6,"C0392B","C9CED4","wall panel with spring boxing gloves","clank","Pow pow pow! From the wall!","defense,silly"},
 	{"punching tree","NGECMI","GkSf",6,2,8,"4E342E","2E7D32","gnarled tree swinging heavy branches","chime","Do not park next to it.","plant,magic,mythical,silly"},
 	{"punishment","KICLII","SNO",4,1,6,"78716C","DC2626","small chair in a corner under a spotlight, clock ticking","tick","Go to your room. And think about what you typed.","school,silly"},
 	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
@@ -398,9 +403,4 @@ return {
 	{"robot maker kid","LKBJNA","dh",2,5,3,"F97316","22D3EE","kid with goggles and a tiny robot","clank","Built a robot friend. It's loyal.","science,cute"},
 	{"robot minion","OKAJNA","dQh",1,6,3,"FACC15","1F2937","tiny round yellow helper bot","beep","Small. Loyal. Beeps a lot.","robot,cute"},
 	{"robot octopus","OKCJCC","HeB",4,5,5,"94A3B8","F472B6","steel octopus with grabber claws","whir","Eight grabby arms. Zero chill.","robot,aquatic"},
-	{"robot overlord ai","OKENLA","eLh",8,3,7,"1F2937","EF4444","crowd of red-eyed robots marching","beep","The toasters have unionized.","robot,swarm,boss"},
-	{"robot penguin","OKBJDA","dN",2,4,5,"111827","F8FAFC","waddling penguin robot","beep","Waddles into battle. Adorably.","robot,cute"},
-	{"robot pirate","OKCJNA","feb",5,6,6,"57534E","DC2626","robot with hook claw and eyepatch screen","clank","Searching for buried data.","robot,pirate,silly"},
-	{"robot queen","OKDJNA","Feh",7,3,7,"E5E7EB","C084FC","elegant silver robot with crown antennae","hum","All robots answer to her.","robot,royal"},
-	{"robot referee","OKCJNA","GO",3,5,5,"111827","F8FAFC","striped robot with whistle speaker","whistle","Flags your foul. Beeps loudly.","robot,sport"},
 }

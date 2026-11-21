@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot overlord ai","OKENLA","eLh",8,3,7,"1F2937","EF4444","crowd of red-eyed robots marching","beep","The toasters have unionized.","robot,swarm,boss"},
+	{"robot penguin","OKBJDA","dN",2,4,5,"111827","F8FAFC","waddling penguin robot","beep","Waddles into battle. Adorably.","robot,cute"},
+	{"robot pirate","OKCJNA","feb",5,6,6,"57534E","DC2626","robot with hook claw and eyepatch screen","clank","Searching for buried data.","robot,pirate,silly"},
+	{"robot queen","OKDJNA","Feh",7,3,7,"E5E7EB","C084FC","elegant silver robot with crown antennae","hum","All robots answer to her.","robot,royal"},
+	{"robot referee","OKCJNA","GO",3,5,5,"111827","F8FAFC","striped robot with whistle speaker","whistle","Flags your foul. Beeps loudly.","robot,sport"},
 	{"robot samurai","OKCJNA","GfT",6,6,7,"7F1D1D","CA8A04","lacquered red robot armor with katana","clank","Honor protocol: enabled.","robot,warrior"},
 	{"robot snake","OKCJCD","fHL",4,6,5,"71717A","4ADE80","segmented metal snake with LED eyes","whir","Hisses in binary.","robot,reptile"},
 	{"robot snowplow","OKCJHL","JkI",4,3,7,"F97316","94A3B8","robot with huge plow blade","whir","Clears paths. Clears enemies.","robot,frozen"},
@@ -398,9 +403,4 @@ return {
 	{"sea bunny","ABAJGI","N",1,1,2,"F7F7F2","F2D82A","fluffy white sea slug with bunny ears","squelch","A bunny that lives in the sea. Sort of.","mollusk,aquatic,cute"},
 	{"sea captain ghost","LICJNJ","Zh",5,5,3,"94A3B8","22C55E","translucent captain with glowing pipe","wail","Captains a ghost ship. No pay.","ghost,pirate"},
 	{"sea cave","MBENII","SI",3,1,9,"6D6D6D","1E88E5","rock arch with waves crashing through","rumble","Waves boom through it. Mind your head.","place,terrain"},
-	{"sea cucumber","ABAJGA","GjSN",1,1,4,"7A4A3A","C88A6A","lumpy sausage body","squelch","Shoots its guts out to scare you. Gross.","aquatic,ocean,silly"},
-	{"sea dragon","ABEJCC","kHeB",8,7,7,"0E7490","67E8F9","long finned serpent body, crest of fins","roar","Surfs its own tidal waves.","mythical,reptile,aquatic"},
-	{"sea dragon hatchling","ABBJCC","QB",2,6,2,"0EA5E9","A5F3FC","tiny blue finned dragon","chirp","Splashes adorably.","reptile,cute,aquatic"},
-	{"sea eagle","AMDJDB","DAfTB",6,9,3,"2A2420","F2B02A","massive orange beak, white shoulders","screech","Brought a banana-sized beak.","bird,predator"},
-	{"sea fan","ABCCMI","GdWT",3,1,6,"B83A6A","E87AA0","flat lacy fan coral","crackle","Waves at fish all day.","aquatic,ocean,reef"},
 }

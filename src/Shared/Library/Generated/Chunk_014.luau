@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"inflatable flamingo","BBDJDJ","UdB",1,3,2,"FF3EA5","F2F2EE","giant pink pool floatie bird","splash","Floaty fabulous.","beach,silly"},
 	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
@@ -219,6 +220,7 @@ return {
 	{"kanabo","CKDHtK","kfO",7,3,7,"3A3F45","24262A","giant studded iron club","shing","Ogre-approved.","heavy"},
 	{"kanelbulle","IMBLKI","dSc",2,3,3,"C8803A","F2E8D0","knotted cardamom bun","chomp","Fika time. Sit down.","edible,sweet"},
 	{"kangaroo","AMDJAG","UkfO",6,7,2,"B8784A","E8C8A8","strong tail, huge hind legs, boxing pose","chirp","Boxes. Bounces. Has a built-in pocket.","mammal,marsupial"},
+	{"kangaroo kick","AMDAAA","Ukf",5,7,2,"C08552","EBCFA6","a kangaroo bounds out and double kicks","thump","Both feet. No warning.","critter,mammal,melee"},
 	{"kangaroo rat","AMAJAG","UCdb",1,6,1,"D8B88A","F7F0E6","tiny hopper with huge back legs","squeak","Never drinks water. Hops anyway.","mammal,cute,desert"},
 	{"kapok","NGFCMI","GWkS",5,1,9,"8D8D8D","2E7D32","giant buttress roots, towering crown","rustle","Rainforest giant. Fluffy seeds.","plant,tree"},
 	{"kappa","ABBJBA","dHB",3,5,4,"4D7C0F","7DD3FC","turtle-shelled imp with a water dish on head","splash","Bow to it. Its head water spills.","yokai,aquatic,silly"},
@@ -401,6 +403,4 @@ return {
 	{"lab coat","BMCONI","F",1,5,2,"F2F2EE","8E9196","long white coat with pockets","swish","Science is happening.","clothing,science"},
 	{"lab flask","BJAA2I","MeV",2,6,1,"BFE6F2","A66BDB","cone flask fizzing purple","bubble","Bubbling, glowing, throwable.","science"},
 	{"label","BMAAJB","jSN",1,7,1,"FFFFFF","EF4444","sticky white label slapped on with HELLO written on it","tap","Labelled: property of the winner.","household"},
-	{"label maker","BMAOJK","j",1,5,2,"8E9196","F2F2EE","handheld sticker printer","tap","Labels you DEFEATED.","office"},
-	{"laboratory","EDDCII","SMLh",3,1,7,"ECEFF1","76FF03","bubbling flasks, sparking coils, monitors","thud","Something escaped. Again.","structure,building,mechanical"},
 }

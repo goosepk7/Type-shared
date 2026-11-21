@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paintbrush","BMAAJK","je",1,7,1,"8B5A2B","C0392B","wooden brush with painted tip","clank","Every stroke a masterpiece.","art"},
+	{"painted lady","AMAJFB","jdA",1,5,1,"E8803A","1E1E1E","orange black white spotted wings","flutter","Flies across continents.","insect,cute"},
+	{"painted turtle","AMBJUA","GNB",2,2,8,"3A4A3A","E8301E","shell with red and yellow lines","hiss","Painted by nature.","reptile,armored"},
 	{"pair","KMBONA","QFV",3,5,3,"EC4899","3B82F6","two matching socks dancing arm in arm","pop","Two of them. For twice the problem.","silly"},
 	{"pajama kid","LMBJNG","Ud",2,6,2,"60A5FA","FDE68A","footie pajamas, teddy bear","giggle","Pillow fight champion.","cute,silly"},
 	{"pajamas","BMCONI","FN",1,3,1,"87CEEB","F2F2EE","cosy cloud-print pyjamas","swish","Sleepy power-up.","clothing"},
@@ -183,6 +186,7 @@ return {
 	{"pekingese","AMBJAA","dQf",2,6,2,"E8B87A","F2E0C0","flat face, lion mane fluff","yip","Tiny lion. Huge ego.","mammal,pet,cute"},
 	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
 	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
+	{"pelican drop","ABCNDB","AP",4,7,2,"F4F1EA","3E6E9C","a pelican drops fish along a marked line","squawk","Delivery for you. It's fish.","critter,bird,zone"},
 	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
 	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
 	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
@@ -399,8 +403,4 @@ return {
 	{"pixel snake","AHCJCD","QS",4,7,3,"7CFF6B","1FA34A","glowing voxel snake with a stinging trail","blip","Don't touch the tail.","game,arcade,trail"},
 	{"pixie swarm","ALBJLB","jAP",3,9,1,"F0ABFC","FDE68A","cloud of glittering winged sprites","chime","Glitter everywhere. You'll find it for years.","fairy,swarm"},
 	{"pixiu","AHCJAA","GQb",4,6,6,"D97706","FDE68A","winged lion with antler horn","roar","Eats gold. Never shares.","mythical,lucky"},
-	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},
-	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
-	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
-	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
 }

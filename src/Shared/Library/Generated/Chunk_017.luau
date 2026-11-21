@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"metal form","KKCOWA","Ga",3,3,9,"90A4AE","ECEFF1","caster turning shiny chrome","clang","Shiny, heavy and bonk-proof.","heavy,defence"},
+	{"metal mage","LKCJNA","GHe",6,4,6,"71717A","94A3B8","robes threaded with metal plates","clank","Your armor works for them now.","magic,metal"},
 	{"metal slime","AKBJGG","GUY",3,9,9,"94A3B8","E2E8F0","shiny chrome droplet blob","clink","Super shiny. Super fast. Super annoying.","slime,metal"},
 	{"metal storm","FKEEOB","TP",8,6,4,"90A4AE","ECEFF1","swirling rain of metal shards and blades","clang","Forecast: sharp.","sharp,heavy,storm"},
 	{"metal welder","LACJNA","KO",4,4,5,"1F2937","F97316","welding mask, spark torch","sizzle","Sparks fly. Blinding ones.","tools,fire"},
@@ -401,6 +403,4 @@ return {
 	{"myrtle","NGCCMI","GWkS",2,1,5,"8D6E63","E91E63","smooth bark, frilly pink flowers","rustle","Frilly. Fierce.","plant,tree"},
 	{"mystery meat","IJBG7G","UjE",4,5,3,"8A6A6A","B9D36A","wobbly grey meatloaf that does something random","splat","Nobody knows. Nobody asks.","goofy,gross,food,random"},
 	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
-	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
-	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
 }

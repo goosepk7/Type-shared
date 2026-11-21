@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"long reach","KMCANB","fH",4,9,3,"E85A4A","3A6AD8","an elastic arm shoots out and tugs the foe in","boing","I can reach the top shelf now.","hero,movie,stretch"},
+	{"long shot","KLCAKB","Te",6,10,1,"FF1744","FFFFFF","thin bright long-range streak","crack","From way over there. Bullseye.","ranged"},
 	{"long-eared bat","AMBJDB","jiA",2,7,1,"8A6A4A","C8A88A","ears as long as its body","screech","Ears longer than its body.","mammal,nocturnal,spooky"},
 	{"long-eared owl","AMBJDB","AZT",3,7,2,"8A6A44","E8701E","long ear tufts, orange face","hoot","Ear tufts like antennae.","bird,nocturnal,predator"},
 	{"longan","IGAAKF","Fke",3,6,2,"C8A46A","F3EEE0","tan marble with see-through flesh","splat","Peel it and it stares back.","edible,fruit,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"metal detectorist","LKCJNA","CH",3,4,4,"15803D","FACC15","headphones and beeping detector","beep","Beep beep. Found a bottlecap.","silly"},
 	{"metal dragon","AKEKAB","GAeg",8,5,9,"71717A","E5E7EB","armored plated dragon with blade wings","clank","Bullets bounce. Swords bend.","mythical,reptile,metal"},
 	{"metal elemental","AKDJNA","Gka",7,3,9,"94A3B8","E2E8F0","liquid chrome giant with gear eyes","clank","Shiny, heavy, and magnetic personality.","elemental,metal"},
-	{"metal form","KKCOWA","Ga",3,3,9,"90A4AE","ECEFF1","caster turning shiny chrome","clang","Shiny, heavy and bonk-proof.","heavy,defence"},
-	{"metal mage","LKCJNA","GHe",6,4,6,"71717A","94A3B8","robes threaded with metal plates","clank","Your armor works for them now.","magic,metal"},
 }

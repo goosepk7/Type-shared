@@ -167,6 +167,7 @@ return {
 	{"chalkboard","BMDCII","GO",1,1,5,"2F4F3A","8B5A2B","framed dark board","screech","Screeeech. Everyone stunned.","school"},
 	{"challah","IMCCII","Gk",4,2,6,"D9963A","F5DDA8","shiny braided loaf","thud","A braided loaf. Beautifully tied.","edible,giant"},
 	{"chameleon","AMBJAA","CZfHe",2,7,2,"6AC84A","E8701E","curled tail, cone eyes, long tongue","hiss","Changes color. Still visible to its mom.","reptile"},
+	{"chameleon tongue","AMBAAA","He",4,9,2,"5DB548","E86A8A","a chameleon tongue that yanks an enemy closer","slurp","Thwip. Come here.","critter,reptile,bolt,pull"},
 	{"chamois","AMCJAA","df",3,8,4,"8A6440","F2EADA","hooked horns, face stripes, nimble","bleat","Mountain ballerina.","mammal,farm"},
 	{"chamomile","NGANMI","FSN",1,1,1,"FFFFFF","FFEB3B","tiny daisy-like blooms","rustle","Sleepy flower. Very sleepy.","plant,herb"},
 	{"champion","LHCJNA","GDkf",6,6,6,"FACC15","B91C1C","hero holding a gold trophy overhead, title belt","fanfare","Undefeated. Mostly because of the trophy swing.","sport,warrior"},
@@ -402,5 +403,4 @@ return {
 	{"clam chowder","IBBOGI","FS",3,4,3,"F2EAD5","C8A070","creamy white soup, crackers","slurp","Creamy, briny, and warming.","edible,warm,healthy"},
 	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
 	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
-	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
 }

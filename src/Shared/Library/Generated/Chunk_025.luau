@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spiked shield","BKCIyI","GkT",4,4,7,"3A3F45","8A929B","shield studded with spikes","clang","Defensive and offensive. Mostly offensive.","armor,defense"},
+	{"spin","KFCN5K","kf",4,8,2,"B3E5FC","FFFFFF","spinning ring of wind around caster","whirr","Dizzy for you, dizzier for them.","silly"},
+	{"spin cycle","KBCN5K","jl",4,7,2,"4FC3F7","FFFFFF","sudsy spinning water whirl","whirr","Wash, rinse, dizzy.","aquatic,silly"},
+	{"spin jump","KFBOKK","UDk",3,9,2,"7FD8FF","FFE45C","a high corkscrew jump that bonks a head and bounces","boing","Your head was a platform. Thanks.","game,platformer,mobility"},
+	{"spin the wheel","KLCN5K","jV",4,6,2,"FF4081","FFEB3B","giant colourful wheel spinning above","tick","Round and round. Where it lands...","luck,chaos"},
+	{"spinach","IGBOKI","WFk",4,5,3,"2E6B2A","4E8E3A","pile of dark round leaves","chomp","Instant muscles. Results may vary.","edible,vegetable,healthy"},
 	{"spinach dip","IMBOKI","WF",3,5,3,"3E7A2B","F2E8C8","creamy green dip","chomp","Creamy spinach strength.","edible"},
 	{"spinifex","NGBLMI","STN",2,1,4,"C9A55A","9E9D24","spiky hummocks of desert grass","rustle","Spiky porcupine grass. Do not sit.","plant,sharp"},
 	{"spinner dolphin","ABCJEC","UDjB",4,8,4,"5E6E80","E8EEF2","slender dolphin spinning mid-air","click","Spins seven times for fun.","mammal,aquatic,ocean"},
@@ -98,7 +104,7 @@ return {
 	{"squid","ABCJSC","jZHeB",4,6,3,"E8B0A0","D8584A","long torpedo body, ten arms, fins","squelch","Squirts ink and leaves. Bye!","aquatic,ocean,smart"},
 	{"squid mage","ALCJNJ","jiO",6,5,4,"A855F7","F0ABFC","purple robed figure, tentacle face","hum","Reads your mind. Unimpressed.","dungeon,spooky"},
 	{"squire","LMBJNA","dQF",2,6,3,"78350F","94A3B8","oversized helmet, carries everything","clank","Carries the knight's bags. And the knight.","silly"},
-	{"squirrel","AMAJAA","Cdeb",1,6,1,"A8562A","F2D8B8","big bushy tail, nut in paws","squeak","Buries nuts. Forgets where. Always.","mammal,cute"},
+	{"squirrel barrage","AEAAAA","Ue",3,8,2,"B5642C","B97A3A","a squirrel on your shoulder pelting acorns","chitter","It has been saving these all winter.","critter,mammal,bolt,silly"},
 	{"squirrel monkey","AMAJBA","deb",1,8,2,"E0A84A","F2F2EE","tiny, white mask, yellow arms","chatter","Hyperactive mini monkey.","mammal,primate"},
 	{"squirrelfish","ABAJEC","dB",1,6,1,"E8301E","F2F2EE","big-eyed red reef fish","splash","Big eyes, red coat, night shift.","fish,aquatic,nocturnal"},
 	{"squirt","KBBAwB","jeN",2,8,1,"38BDF8","FFFFFF","spray bottle firing one sharp jet of water","squirt","Bad summon! Off the couch!","silly,pet"},
@@ -397,10 +403,4 @@ return {
 	{"sugar cube","IMAAKK","ceO",3,7,6,"F7F7F7","E8E8E8","small white crystal cube","bonk","A tiny sweet brick.","edible"},
 	{"sugar glider","AMBJAB","UAf",2,6,2,"A8A4A0","1E1A18","huge eyes, gliding membrane, stripe","chirp","Pocket-sized glider. Loves fruit.","mammal,marsupial,cute"},
 	{"sugar plum","IMBLKI","dSc",2,3,3,"8A2E7E","F7F2F0","sugar-coated round candy","chomp","Dancing in your dreams.","edible,sweet,holiday"},
-	{"sugar rush","IMBOKI","Dj",3,9,2,"F2A6C8","F2E23A","swirl of candy and sparks","fizz","Zoom! Zoom! Crash.","edible,drink,silly"},
-	{"sugar skull","IMBLKI","dSc",2,3,3,"F7F7F2","E8434F","decorated white skull candy","chomp","A sweet celebration of memory.","edible,sweet,candy,holiday"},
-	{"sugar snap peas","IGAELB","eVP",2,7,1,"7DBE3A","5E9E3A","plump crunchy pods","pitter","Snap! Crunch! Sweet!","edible"},
-	{"sugar syrup","IMBLGI","SNP",2,3,3,"F7F2E8","E8E0D0","clear sticky syrup","gloop","Sugar, but liquid.","edible,sticky"},
-	{"sugarcane","NGCLMI","WScHN",2,1,4,"AED581","E6EE9C","tall jointed sweet green stalks","rustle","Sweet stalks. Sticky situation.","plant"},
-	{"suit","BMCONA","GjO",3,4,5,"1F2937","DC2626","sharp empty suit with a red tie adjusting its cuffs","click","Dressed to impress. And to distress.","clothing,fancy"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dirt","FEBDOB","jN",2,5,2,"6B4F34","A1856A","kicked-up brown clod burst","thud","Dirt in the eyes. Classic move.","silly"},
 	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
 	{"dirt cup","IMBLGI","SNP",2,3,3,"3A1A0C","E0102B","cup of crumbs and gummy worms","gloop","Dirt you can eat. With worms.","edible,sticky,dessert,silly"},
 	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
@@ -402,5 +403,4 @@ return {
 	{"emp blast","FDDFOB","PO",5,10,1,"00B0FF","E1F5FE","expanding blue ring of distortion","whum","Turns machines off. And on. And off.","electric"},
 	{"emp pulse","CDDNKI","LP",4,7,3,"78DCFF","966078","a coiled spike slammed down, a pulse ring rolling out","zap","Have you tried turning it off and on again?","scifi,electric"},
 	{"empanada","IMBAKF","Fe",3,6,2,"D9A04A","C8803A","crimped half-moon pastry","splat","A pastry with a crimped smile.","edible"},
-	{"emperor","LHCJNA","GOh",6,3,6,"7F1D1D","FACC15","laurel crown, purple robe, golden throne","horn","Thumbs down. You're out.","royal,ancient"},
 }

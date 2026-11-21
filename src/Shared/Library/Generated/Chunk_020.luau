@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},
+	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
+	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
+	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
 	{"pizza cutter","BMCFJF","Uke",4,7,3,"C9CED4","C0392B","giant steel pizza cutter wheel rolling along the ground","clang","Eight slices, one bounce.","kitchen,roll,projectile,ricochet"},
 	{"pizza delivery","IMCJHL","DFc",3,7,2,"D72B2B","F7F2EC","scooter with pizza box","whoosh","Hot pizza in thirty minutes or less.","edible"},
 	{"pizza dough","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","round stretchy dough ball","wobble","Stretchy, sticky, full of potential.","edible,wobbly"},
@@ -372,6 +376,7 @@ return {
 	{"puffbird","AMAJDB","dA",1,7,1,"8A6A4A","F2F2EE","puffy round bird","tweet","Very puffy. Very still.","bird,cute"},
 	{"puffed rice","IMAELB","eVP",2,7,1,"F7F2E0","E8D8A8","tiny puffy grains","pitter","Crunchy air.","edible,sweet,snack"},
 	{"pufferfish","AJBJEC","UdWTMB",3,6,1,"E8D08A","6E5A3A","spiky round balloon fish","splash","Inflates into a spiky balloon. Do not lick.","fish,aquatic"},
+	{"pufferfish pop","AJBOEC","UWT",4,3,5,"E2C36A","F3E9C8","puff up into a spiky ball, then pop","pop","Personal space: enforced.","critter,sea,buff,defense"},
 	{"puffin","ABBJDB","DdAB",2,7,2,"1E1E1E","F2701E","black-white body, rainbow parrot beak","squawk","Holds 10 fish in its beak at once.","bird,ocean,cute"},
 	{"puffin chick","ABAJDB","DAB",1,7,2,"4A4A50","F2F2F0","tiny grey fluffball","squawk","A fluffy sock with a beak.","bird,ocean"},
 	{"pug","AMBJAA","dQf",2,6,2,"D9C2A0","2B2420","squished black face, curly tail, wrinkles","yip","Snorts like a tiny tractor.","mammal,pet,cute,silly"},
@@ -398,9 +403,4 @@ return {
 	{"pumpkin seeds","IGAELB","eVP",2,7,1,"E8DCB0","6B8E3A","flat oval cream seeds","pitter","Pumpkin's tiny ammunition.","edible"},
 	{"pumpkin soup","IBBOGI","FS",3,4,3,"E8761A","F2E8C8","orange velvet soup bowl","slurp","Autumn in a bowl.","edible,warm,healthy"},
 	{"pumpkin spice","IFBDOJ","jPO",2,5,1,"C2622B","E8A040","orange-brown spice cloud","puff","Autumn, in a cloud.","edible,spice,holiday"},
-	{"pumpkin spirit","AABJGG","UKc",2,5,3,"F97316","166534","bouncing carved pumpkin with glowing grin","cackle","Spicy seasonal energy.","halloween,spooky,silly"},
-	{"punch","KMCAKB","kf",5,9,2,"FF7043","FFE0B2","glowing fist with impact star","pow","The simplest spell. Fist goes forward.","melee"},
-	{"punch bowl","IBCOKI","Fc",2,6,2,"D8202B","F7F2EC","big glass bowl of red punch","slurp","The centrepiece of every party.","edible,drink"},
-	{"punching bag","BMCCII","Gd",1,1,6,"C0392B","24262A","hanging leather cylinder","bonk","Takes the hits. Keeps smiling.","sport"},
-	{"punching machine","OKCL1I","kO",4,3,6,"C0392B","C9CED4","wall panel with spring boxing gloves","clank","Pow pow pow! From the wall!","defense,silly"},
 }
