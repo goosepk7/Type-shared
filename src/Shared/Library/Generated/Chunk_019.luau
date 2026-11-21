@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paddlefish","ABCJEC","DfB",4,7,4,"6A7A8A","C8D0D8","long paddle-shaped snout","splash","Swims with a canoe paddle on its face.","fish,aquatic"},
+	{"pademelon","AMBJAG","Uf",2,6,2,"8A6A4A","C8A07A","small round forest wallaby","chirp","Sounds like a melon. Isn't one.","mammal,marsupial"},
 	{"padlock","BKALJK","GO",1,3,7,"B58A3A","8A929B","heavy padlock with shackle","clank","Click. No entry.","tool"},
 	{"paella","IACELB","KFeP",2,6,1,"E8A02B","C8302B","wide pan of saffron rice, seafood","pitter","A giant pan of golden rice.","edible,grain"},
 	{"page","BFAAJB","ATe",1,7,1,"FFFFFF","93C5FD","single lined page fluttering edge-first","rustle","Paper cut. The worst cut.","school,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"piskie","ALAJNB","jY",1,9,1,"A3E635","F472B6","tiny green trickster with glowing trail","giggle","Leads you in circles. Giggles.","fairy"},
 	{"pistachio","IEAAKK","UeO",2,8,5,"9CBA6B","C8A87A","split beige shell, green nut","tok","A nut that smiles at you.","edible,nut"},
 	{"pistachio ice cream","ICBAKJ","JeN",3,5,2,"B8D88A","F2E8C8","pale green scoop","squish","Nutty and cold.","edible,frozen,sweet"},
-	{"pistol","CKBAwI","Te",3,8,3,"2C3539","24262A","compact one-hand blaster","bang","Pew. Small but reliable.","modern,ranged"},
-	{"pistol shrimp","ABAJRA","GEfTeO",4,4,5,"E86A3A","F2C8A8","one giant snapping claw","clack","Snaps so hard it boils water.","crustacean,aquatic,armored"},
 }

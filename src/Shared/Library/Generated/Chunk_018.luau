@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"musk turtle","AMBJUA","GMNB",2,2,8,"3A3A2A","8A8A6A","small turtle that smells","hiss","Stinks when grabbed.","reptile,armored"},
+	{"muskellunge","ABDJEC","DfTB",5,7,4,"8A9A6A","D8D8A0","huge toothy pike","splash","The fish of ten thousand casts.","fish,aquatic"},
 	{"musket","CKCAwI","kTe",5,2,4,"5A3A1E","8A929B","long smoothbore barrel, wooden stock","bang","Aim. Fire. Spend a week reloading.","historic,ranged"},
 	{"musketeer","LKCJNA","fTe",5,7,4,"1D4ED8","F8FAFC","feathered hat, rapier, blue tabard","bang","All for one. One for snacks.","warrior"},
 	{"muskrat","ABAJAA","CdbB",1,6,1,"6A4A2A","A88A6A","water rat with flat tail","squeak","Swims, builds huts, smells musky.","mammal,cute"},
@@ -163,7 +165,7 @@ return {
 	{"noob tube","CACAwI","UEeV",5,6,1,"5D6B3A","FFB13B","a chunky launcher lobs three bouncing grenades","thump","Skill issue? No, tube issue.","gaming,shooter,explosive"},
 	{"noodle whip","IMCACD","fHe",3,7,3,"F0CF7A","C0392B","one giant sauce-dripping spaghetti noodle lashing out","slap","Al dente, and it pulls.","kitchen,pull,hook"},
 	{"noodles","IMBLGI","SHN",2,3,3,"E8C070","C8A070","tangle of long noodles","gloop","Long, slurpy, and tangly.","edible,sticky"},
-	{"noogie","KMAAKB","dO",1,7,1,"FFCC80","FFFFFF","knuckle swirl on the head","rub","Rub rub rub. So annoying.","silly"},
+	{"noogie","KMAHKK","Djf",2,7,1,"FFCC80","FFE082","a quick lunge and a knuckle rub on the head","rub","Rub rub rub. So annoying.","goofy,silly,melee,prank"},
 	{"noppera-bo","AICJNA","jZO",3,5,3,"F5F5F4","9CA3AF","blank egg face, schoolkid uniform","whoosh","Turns around. No face. Classic prank.","yokai,spooky"},
 	{"nor'easter","GCEEOJ","JIP",7,5,5,"546E7A","ECEFF1","heavy slanting snow and wind from the sea","howl","Coastal winter, maximum grump.","storm,frozen"},
 	{"north","KCCF6B","JIN",4,6,2,"E0F2FE","1E3A8A","compass needle snapping to N with a blast of frost","howl","Never Eat Soggy Waffles. Starts here.","map,frozen"},
@@ -401,6 +403,4 @@ return {
 	{"paddle boat","DBBKHC","DkgB",2,3,3,"F5F5F5","FFB300","swan-shaped boat with pedal wheel","splash","The swan is judging you.","silly,cute"},
 	{"paddle steamer","DBEKHC","DkgB",5,4,7,"F5F5F5","C62828","white boat, twin chimneys, big rear paddle wheel","whistle","Slow, steamy, and full of jazz.","vehicle,aquatic"},
 	{"paddleboard","DBAKHC","DkgB",2,5,2,"26C6DA","F5F5F5","long flat board, single paddle","splash","Stand tall. Wobble a lot.","vehicle,aquatic,sport"},
-	{"paddlefish","ABCJEC","DfB",4,7,4,"6A7A8A","C8D0D8","long paddle-shaped snout","splash","Swims with a canoe paddle on its face.","fish,aquatic"},
-	{"pademelon","AMBJAG","Uf",2,6,2,"8A6A4A","C8A07A","small round forest wallaby","chirp","Sounds like a melon. Isn't one.","mammal,marsupial"},
 }

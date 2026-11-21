@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"kronosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","B8C0C8","giant short-necked pliosaur","roar","Skull the size of a car.","extinct,reptile,aquatic,ocean"},
+	{"kudu","AMDJAA","DkT",5,8,4,"8E7A64","F2F0EA","huge spiral horns, white stripes","bleat","Horns like a corkscrew. Very fancy.","mammal,wild"},
 	{"kudzu","NGDLMI","GWSHNP",4,3,6,"2E7D32","7CB342","blanket of vines swallowing everything","rustle","Grows a foot a day. Eats houses.","plant"},
 	{"kuiper belt","MCFEKJ","JReP",6,3,7,"B3E5FC","9E9E9E","ring of icy rocks far from the sun","twinkle","A freezer full of space rocks.","space,star"},
 	{"kukri","CKBHrK","fT",4,7,4,"8A929B","8B5A2B","forward-bent heavy knife","shing","Bent on success.","medieval,sharp"},
@@ -401,6 +403,4 @@ return {
 	{"locker","BKCCII","GO",1,1,7,"2F6FD1","8E9196","tall metal school locker","tap","Stuffed in a locker. Classic.","school"},
 	{"locket","BMAOKJ","F",1,5,3,"D4A72C","E88AA5","heart-shaped opening pendant","chime","Holds a tiny portrait. And hope.","treasure,shiny"},
 	{"lockpick","CKAOJI","bY",1,9,2,"C9CED4","24262A","thin bent picks","bang","Click. Open sesame.","spy"},
-	{"locksmith","LKCJNA","Gb",3,5,4,"57534E","FACC15","ring of keys, pick set","click","No door is safe. Ever.","tools"},
-	{"locro","IBBOGI","FS",3,4,3,"E8C04A","C8762B","thick corn and squash stew","slurp","Thick, hearty Andean stew.","edible,warm,healthy"},
 }

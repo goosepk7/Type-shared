@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"scrap metal","BKCCnK","G",2,1,6,"9C4A1A","8E9196","pile of twisted metal bits","clang","Junkyard barricade.","urban"},
+	{"scrap robot","OKCJNA","GkV",4,4,6,"78716C","B45309","lopsided robot of rusty junk and tires","clank","Built from junk. Proud of it.","robot,silly"},
 	{"scratch","KMBHJB","fT",3,9,1,"FFCC80","FFFFFF","three glowing claw lines","scritch","Scritch. Ouch.","sharp"},
 	{"scratching post","BMCCII","Gc",1,1,4,"D2B48C","B89B6A","carpeted post with rope wrap","squeak","Shred zone.","pet"},
 	{"scream","KFCFOB","jkO",5,10,1,"FFCDD2","FFFFFF","jagged sound ring burst","scream","AAAAAAAAAAAAAH!","loud"},
@@ -361,7 +363,7 @@ return {
 	{"silkworm","AMAJCA","jdN",1,5,1,"F2EEE6","E8E0D0","pale chubby caterpillar","flutter","Spins silk pajamas for everyone.","insect,cute"},
 	{"silky anteater","AMAJAA","Cf",1,5,3,"E8C890","C8A060","tiny golden fluffy anteater","squeak","A golden pompom with claws.","mammal,wild,cute"},
 	{"silky shark","ABDJEC","DfTB",7,8,6,"6A7480","E8ECEE","smooth-skinned slim shark","chomp","Smoothest skin of any shark.","fish,aquatic,ocean,predator"},
-	{"silly string","BMBFKI","jeN",1,8,1,"FF3EA5","8BC34A","can spraying neon strings","squeak","Pfssssst! Tangled up.","party,silly"},
+	{"silly string","BMBAKI","jeN",2,8,1,"FF5FA2","8BC34A","three squirts of neon party string that tangle","squeak","Pfssssst! All tangled up.","goofy,silly,party,spray"},
 	{"silo","EMDCII","GS",3,1,8,"B0BEC5","B71C1C","tall metal cylinder with domed cap","thud","Stores a thousand tons of grain. Or ammo.","structure,building"},
 	{"silver","FKBAJB","Te",4,7,4,"C0C6CC","F4F6F8","gleaming silver dart","ting","Werewolves strongly dislike this.","shiny"},
 	{"silver bullet","BHAAJK","Te",4,9,2,"C9CED4","F2F2EE","gleaming silver round","thud","Werewolf repellent.","spooky,holy"},
@@ -401,6 +403,4 @@ return {
 	{"skate park","EMCNII","UlS",2,1,6,"BDBDBD","7E57C2","concrete ramps and bowls","thud","Ramp up, fly out.","structure,building,sport"},
 	{"skateboard","DMAKHF","UDkg",2,7,2,"F28C28","1A1A1A","flat deck, four tiny wheels, grip tape","clack","Kickflip into battle.","mechanical,vehicle,land,sport"},
 	{"skateboard kickflip","BFBOHL","Dke",4,9,2,"3BB7E8","FFD24A","skateboard dash ending in a kickflip that flings the board","clack","Landed it. On you.","transit,skate,movement"},
-	{"skateboarder","LMCJNL","UDd",3,9,3,"DC2626","111827","helmet, skateboard, ollie pose","whoosh","Grinds on rails. And your nerves.","sport"},
-	{"skateboarding","KMBOHF","UDk",3,9,2,"111827","FACC15","board flipping under mid-air trainers, grind sparks","clack","Kickflip! Landed it. Nobody was filming.","sport,cool"},
 }

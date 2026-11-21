@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"three-eyed puppy","ALBJAA","DQ",2,8,3,"22D3EE","7C3AED","three-eyed glowing puppy","bark","Fetches meteors.","alien,cute,canine"},
+	{"three-headed space dragon","ADFJAB","AkeL",9,6,9,"FACC15","92400E","golden three-headed winged dragon","roar","Three heads, gravity beams, one bad day.","kaiju,giant,reptile,danger"},
 	{"thresher shark","ABDJEC","DkfTOB",7,8,6,"6A6E80","D8DCE2","enormous whip-like tail","chomp","Slaps fish with its tail. Whap.","fish,aquatic,ocean,predator"},
 	{"thrill","KDBOKB","UDO",3,9,1,"F97316","22D3EE","rollercoaster car cresting a drop, arms in the air","whee","Hands up! Scream! Regret lunch!","speed"},
 	{"throat","BMCL5I","iHN",4,3,3,"B03A48","E57373","dark red swallowing tunnel, dangly uvula","gulp","GULP. Gone.","body,silly"},
@@ -401,6 +403,4 @@ return {
 	{"tuna salad","IGBOKI","F",2,5,3,"E8D8C0","F2E8C8","creamy tuna scoop","crunch","Tuna, creamy and spreadable.","edible,healthy"},
 	{"tuna sandwich","IGBOKI","F",2,5,3,"E8C88A","F2E8C8","sandwich with pale filling","crunch","Lunchbox staple.","edible,healthy"},
 	{"tundra","MCFNII","JSN",3,1,8,"ECEFF1","90A4AE","flat frozen ground, low shrubs","rumble","Cold. Flat. More cold.","place,terrain,frozen"},
-	{"tuning fork","JLCL4I","kSN",5,4,7,"9FE8FF","B388FF","giant crystal tuning fork that rings when you near it","chime","Step closer. It wants to sing.","music,trap"},
-	{"tunnel","EEDCII","GCSY",2,1,9,"616161","FFB300","arched dark hole with lamp lights","thud","Goes under the problem.","structure"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skateboarder","LMCJNL","UDd",3,9,3,"DC2626","111827","helmet, skateboard, ollie pose","whoosh","Grinds on rails. And your nerves.","sport"},
+	{"skateboarding","KMBOHF","UDk",3,9,2,"111827","FACC15","board flipping under mid-air trainers, grind sparks","clack","Kickflip! Landed it. Nobody was filming.","sport,cool"},
 	{"skating","KCBONK","UDj",3,8,2,"F8FAFC","F472B6","figure in a spin on one blade, arms up, ice sparkles","swish","Triple axel. Double wobble. Single bruise.","sport,frozen"},
 	{"skee ball","BMBA3F","Ue",4,7,2,"C8894B","3EC1D3","wooden arcade ball off a little ramp","bonk","Up the ramp, into the face.","game,arcade,lob"},
 	{"skeleton","AICJNA","feV",4,6,3,"F5F5F4","57534E","rattling bones, grinning skull","rattle","Has a funny bone. Uses all of them.","undead,spooky,halloween"},
@@ -240,7 +242,7 @@ return {
 	{"soccer player","LMCJNA","Dke",4,8,4,"15803D","F8FAFC","jersey, shin guards, ball at feet","thud","Kicks the ball. And you. Gooool!","sport"},
 	{"sock monster","AMAJGG","Zb",1,7,1,"EF4444","F8FAFC","striped sock with button eyes","giggle","Where all your missing socks went.","silly"},
 	{"sock nunchucks","CJBHJK","jfM",1,8,1,"F2F2EE","8E9196","two smelly socks tied together","boing","Stinky martial arts.","silly"},
-	{"sock puppet","BMAJGG","jd",1,6,1,"F2F2EE","C0392B","sock with button eyes","squeak","Fierce. Floppy. Fluffy.","toy"},
+	{"sock puppet","BMBJGG","QHh",2,6,2,"F2F2EE","E53935","a fierce floppy sock puppet with button eyes","squeak","Fierce. Floppy. Fluffy.","goofy,silly,toy,summon"},
 	{"socks","BJAANI","dMe",1,7,1,"F2F2EE","8E9196","crumpled smelly sock","swish","Smells like defeat.","clothing,silly"},
 	{"soda","IBBFKI","EkIP",3,7,1,"C8202B","F7F7F2","fizzy can, bubbles","fizz","Shake it. Point it. Pop it.","edible,drink,fizzy"},
 	{"soda and mints","IBBFKI","EkIP",5,7,1,"3A1A0C","F7F7F2","erupting bottle, foam geyser","fizz","The science fair classic. Stand back.","edible,drink,fizzy,explosive"},
@@ -401,6 +403,4 @@ return {
 	{"sperm whale","ABFJEC","kfIOB",8,3,9,"4A4E56","8E949C","huge boxy head, small jaw with teeth","whalesong","Fights giant squid in the deep dark.","mammal,aquatic,ocean,heavy"},
 	{"spetum","CKDAuI","fTH",5,5,5,"8A929B","5A3A1E","three-point polearm head","whoosh","Points for days.","medieval,sharp"},
 	{"sphere","BLBG3J","URa",3,6,5,"22D3EE","E0F2FE","flawless shiny cyan ball with one highlight","hum","No edges. No weaknesses. No personality.","school,shape"},
-	{"sphinx","AHDJAA","GjO",6,4,8,"D6A35A","1E3A8A","lion body, headdress, folded wings","roar","Answer the riddle or lose the turn.","mythical,ancient,guardian"},
-	{"sphinx cat","AMBJAA","jd",2,6,2,"D6A35A","FDE68A","small cat with pharaoh headdress","meow","Asks small riddles. Accepts treats.","silly,cute"},
 }

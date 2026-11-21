@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pistol","CKBAwI","Te",3,8,3,"2C3539","24262A","compact one-hand blaster","bang","Pew. Small but reliable.","modern,ranged"},
+	{"pistol shrimp","ABAJRA","GEfTeO",4,4,5,"E86A3A","F2C8A8","one giant snapping claw","clack","Snaps so hard it boils water.","crustacean,aquatic,armored"},
 	{"piston","OKCL1I","klI",5,4,7,"8A929B","4A4D52","cylinder with punching rod","hum","Kachunk! Pushed.","mechanical"},
 	{"piston rush","KFCHKI","Dkf",6,10,1,"78C8FF","4A505C","calf engines spit blue jets into a sonic-boom kick","vroom","Zero to forty studs before you finished blinking.","anime,quirk,speed"},
 	{"pit","MEDL5I","SHNO",6,1,8,"3E2A14","111111","round dark hole in the ground with crumbling edges","echo","Hellooo? ...ellooo? ...llooo?","trap,terrain"},
@@ -401,6 +403,4 @@ return {
 	{"pufferfish pop","AJBOEC","UWT",4,3,5,"E2C36A","F3E9C8","puff up into a spiky ball, then pop","pop","Personal space: enforced.","critter,sea,buff,defense"},
 	{"puffin","ABBJDB","DdAB",2,7,2,"1E1E1E","F2701E","black-white body, rainbow parrot beak","squawk","Holds 10 fish in its beak at once.","bird,ocean,cute"},
 	{"puffin chick","ABAJDB","DAB",1,7,2,"4A4A50","F2F2F0","tiny grey fluffball","squawk","A fluffy sock with a beak.","bird,ocean"},
-	{"pug","AMBJAA","dQf",2,6,2,"D9C2A0","2B2420","squished black face, curly tail, wrinkles","yip","Snorts like a tiny tractor.","mammal,pet,cute,silly"},
-	{"puli","AMCJAA","DjQf",4,7,4,"1E1E1E","3A3A3A","dreadlock corded coat","bark","A mop that barks.","mammal,pet"},
 }

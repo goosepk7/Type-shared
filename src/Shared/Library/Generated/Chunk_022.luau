@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot arm monster","OKCJFA","lH",4,4,6,"FACC15","1F2937","three-legged bot with giant grabber claw","whir","Claw machine, but it wins.","robot"},
+	{"robot ball","OKBJKF","UDd",2,8,5,"F97316","F8FAFC","rolling sphere robot with dome head","beep","Rolls everywhere. Falls down stairs.","robot,cute"},
 	{"robot bear","OKDJAA","kf",6,4,8,"57534E","FACC15","armored mechanical bear","roar","Hibernates in a charging dock.","robot"},
 	{"robot bee swarm","OKBJLB","AMP",3,9,2,"FACC15","1F2937","swarm of tiny yellow-black drone bees","buzz","Pollinates. Also stings. Metallically.","robot,swarm,insect"},
 	{"robot bird","OKAJDB","dAe",2,8,3,"CA8A04","22D3EE","brass bird with ticking gear wings","whistle","Sings in beeps.","robot,bird"},
@@ -128,7 +130,7 @@ return {
 	{"rot","FJBNOI","iSM",3,2,3,"5E4A2C","9BA55A","mushy brown-green ground patch","squelch","Old fruit energy.","toxic"},
 	{"roti canai","IMBAKK","Uke",3,7,2,"E8C07A","D9A02B","flaky folded flatbread with curry","whoosh","Flaky, stretchy, flipped in the air.","edible"},
 	{"rotisserie chicken","IGCOKK","F",2,5,3,"C8762B","F2C870","golden bird on spit","crunch","Spins until perfect.","edible,healthy"},
-	{"rotten egg","IJBDOJ","jSMP",3,3,2,"E8E0A0","8A9A3A","cracked grey egg, green fumes","whiff","Smell so bad it has its own weather.","edible,smelly,silly"},
+	{"rotten egg","IJBA7K","SMe",2,6,2,"E8E0A0","8BC34A","a cracked green egg that splats into a stink cloud","splat","Crack. Splat. Pee-yew.","goofy,gross,silly,stink"},
 	{"rotten tomatoes","IJCN7B","eNP",5,4,3,"C8402A","5E7A2B","squishy rotten tomatoes pelting the area","splat","For the worst performances only.","goofy,gross,food,rain"},
 	{"rottweiler","AMCJAA","GDQf",5,7,4,"1C1814","9A5A2A","muscular black dog, rust markings","bark","Big tough guardian. Secret cuddler.","mammal,pet"},
 	{"round","KMBF6B","FIO",3,6,1,"EF4444","F8FAFC","ring girl card reading ROUND 1 and a bell being struck","bell","Round one. FIGHT!","gaming,sport"},
@@ -401,6 +403,4 @@ return {
 	{"scout car","DMCKHL","Dkeg",4,9,5,"B59B6A","3B3B2F","light open car with a mounted gun","engine","Fast, nosy, and annoying.","mechanical,vehicle,land"},
 	{"scrambled eggs","IGBOKI","jF",2,5,3,"F2D23A","F7E88A","fluffy yellow curd pile","crunch","Eggs in a state of confusion.","edible,healthy,breakfast"},
 	{"scrap heap","MKCNII","SNh",2,1,5,"795548","9E9E9E","towering pile of junk","crowd","One person's trash is another's weapon.","place,silly"},
-	{"scrap metal","BKCCnK","G",2,1,6,"9C4A1A","8E9196","pile of twisted metal bits","clang","Junkyard barricade.","urban"},
-	{"scrap robot","OKCJNA","GkV",4,4,6,"78716C","B45309","lopsided robot of rusty junk and tires","clank","Built from junk. Proud of it.","robot,silly"},
 }

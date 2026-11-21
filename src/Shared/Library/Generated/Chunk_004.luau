@@ -394,7 +394,7 @@ return {
 	{"car","DMCKHL","Dkg",5,7,6,"C8102E","2B2D33","boxy body, four wheels, round headlights","engine","Beep beep. Get out of the lane.","mechanical,vehicle,land"},
 	{"car alarm","OFDMeI","kSI",3,3,3,"F28A2E","F5C21B","a parked car flashing and blaring its alarm in waves","beep","Nobody ever checks.","transit,sound,silly"},
 	{"car battery","BDBL2K","L",3,1,5,"24262A","C0392B","boxy battery with clamps","clang","Bzzzt. Jump start.","urban"},
-	{"car crusher","OKENnI","EO",4,2,5,"6B6F76","F5C21B","two junkyard crusher plates slamming together on a marked sp","crunch","Compact cars, now even more compact.","transit,area,silly"},
+	{"car crusher","OKENnI","EO",4,2,5,"6B6F76","F5C21B","two junkyard crusher plates slamming on a marked spot","crunch","Compact cars, now even more compact.","transit,area,silly"},
 	{"car pile up","DMECHL","GSO",5,1,7,"E53935","9E9E9E","tangled heap of crashed cars","engine","Instant barricade.","vehicle,mechanical,silly"},
 	{"car transporter","DMEKHL","Dkgh",6,4,8,"E53935","B0BEC5","double-deck trailer stacked with cars","engine","Delivers eight cars at once. Into you.","mechanical,vehicle,land"},
 	{"car wall","EKDCII","GS",3,1,7,"795548","9E9E9E","rusty stacked cars","thud","Recycling, but violent.","structure,defense"},

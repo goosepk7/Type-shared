@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
 	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
 	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
 	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
@@ -217,7 +218,7 @@ return {
 	{"howler monkey","AMBJBA","debO",2,7,2,"3A1E14","8A4A22","dark shaggy, big throat, howling","howl","Loudest land animal. Ears hurt.","mammal,primate"},
 	{"huayangosaurus","AMCJAA","GkfT",4,3,9,"8A6A3A","D8B07A","small early stegosaur","grunt","Tiny stego. Same spikes.","dinosaur,extinct,reptile,armored"},
 	{"hubcap","BKBAKK","Ue",2,8,3,"DDE3E8","C9CED4","shiny wheel cover","clang","Spinning chrome disc of doom.","urban"},
-	{"hubcap toss","BKBAJK","Uke",3,4,3,"C9CFD6","22232A","a chrome hubcap spinning flat and ricocheting between enemie","clang","It came off at the first corner.","transit,projectile,silly"},
+	{"hubcap toss","BKBAJK","Uke",3,4,3,"C9CFD6","22232A","a chrome hubcap spinning flat, ricocheting between enemies","clang","It came off at the first corner.","transit,projectile,silly"},
 	{"huckleberry","IGAELB","eVP",2,7,1,"3E2A5E","6B4E8A","small round dark blue berry","pitter","Wild, tart, and hard to pick.","edible,fruit,sweet"},
 	{"huevos rancheros","IGBOKI","F",2,5,3,"F2B81A","C8302B","fried eggs on tortilla with salsa","crunch","Ranch-style eggs with a kick.","edible,healthy"},
 	{"hug","KHBAKB","FO",2,6,3,"F8BBD0","FFFFFF","warm pink glow with floating hearts","aww","Too strong to escape. Too nice to mind.","cute,support"},
@@ -402,5 +403,4 @@ return {
 	{"implode","KIDGKI","EHO",7,6,1,"1A0033","B388FF","everything crumpling into a dark point","whum","Explosion, but backwards.","space,explosive"},
 	{"impostor","LICJNA","jZb",4,6,4,"DC2626","F8FAFC","teammate shape with a suspicious smile","whisper","Kinda sus. Definitely sus.","meme,villain"},
 	{"imprison","KLCLII","GO",6,4,6,"546E7A","FFD54F","glowing bars slamming down around target","clank","Go directly to jail.","magic"},
-	{"impundulu","ADCJDB","AeL",5,9,3,"F8FAFC","FDE047","white bird shooting lightning from wings","zap","Lays an egg of lightning. Hot potato.","mythical,bird,storm"},
 }

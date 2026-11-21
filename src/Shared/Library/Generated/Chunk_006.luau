@@ -97,7 +97,7 @@ return {
 	{"cloves","IFBDOJ","PO",2,5,1,"5A2A1E","8A4A2A","tiny nail-shaped buds","puff","Little spice nails. Numbs the mouth.","edible,spice"},
 	{"clown","LMCJNA","Ujdc",3,6,4,"DC2626","FACC15","red nose, rainbow wig, giant shoes","honk","Honk honk. You're distracted now.","circus,silly"},
 	{"clown car","DMBKHL","jdgh",2,4,4,"F44336","FFEB3B","tiny bubble car, polka dots, horn","honk","How many clowns? Yes.","mechanical,vehicle,land,silly"},
-	{"clown horn","CMAFJK","jO",1,8,1,"C0392B","F1C40F","bulb horn with brass bell","honk","HONK HONK.","silly"},
+	{"clown horn","BMBHJI","kfI",2,8,1,"E53935","F4C430","a huge bulb horn honked twice in a cone","honk","HONK HONK.","goofy,silly,sound,prank"},
 	{"clown knight","LMCJNA","jdf",4,5,6,"DC2626","FACC15","rainbow armor, honking horn sword","honk","Honk honk, have at thee.","silly,warrior"},
 	{"clown nose","BMAONI","jd",1,6,1,"C0392B","C0392B","squishy red ball nose","pop","HONK.","party,silly"},
 	{"clown shoes","BMBONI","dN",1,3,2,"C0392B","F1C40F","enormous floppy shoes","pop","Flop. Flop. Flop.","party,silly"},

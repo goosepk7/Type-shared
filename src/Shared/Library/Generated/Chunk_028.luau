@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tuning fork","JLCL4I","kSN",5,4,7,"9FE8FF","B388FF","giant crystal tuning fork that rings when you near it","chime","Step closer. It wants to sing.","music,trap"},
+	{"tunnel","EEDCII","GCSY",2,1,9,"616161","FFB300","arched dark hole with lamp lights","thud","Goes under the problem.","structure"},
 	{"tuojiangosaurus","AMDJAA","GkfT",6,3,9,"7A6A4A","E8A03A","pointy plates stegosaur","grunt","Pointy-plated stego cousin.","dinosaur,extinct,reptile,armored"},
 	{"tupandactylus","AMDJDB","DdAT",6,8,4,"7A5A3A","E8401E","gigantic sail crest","screech","Its head crest is a giant sail.","pterosaur,extinct,reptile"},
 	{"turaco","AMBJDB","jdA",2,6,2,"2AA04A","E8301E","green crested bird, red wings","squawk","Green bird. Red wings. Real pigment.","bird,jungle,silly"},
@@ -401,6 +403,4 @@ return {
 	{"water wings","BBAONI","B",1,5,1,"E67E22","E67E22","inflatable arm bands","squeak","Floaty power.","toy"},
 	{"waterbed","BBDL0I","UN",1,1,3,"47D7E8","5A3A1E","wobbly bed full of water","thud","Sloshy, wobbly fortress.","furniture,household"},
 	{"waterbuck","AMCJAA","DkB",4,8,4,"8A7A6A","F2F2EE","shaggy antelope with white ring rump","bleat","Has a target on its butt.","mammal,wild"},
-	{"watercress","IGBOMI","WF",2,4,3,"3E8E3A","7DBE5A","small round leaves, thin stems","crunch","Peppery little leaves.","edible,vegetable,healthy"},
-	{"waterfall","MBEFII","kSIN",4,1,7,"4FC3F7","F5F5F5","tall rock with foaming white falls","roar","It never stops. Neither will we.","place,terrain"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"impundulu","ADCJDB","AeL",5,9,3,"F8FAFC","FDE047","white bird shooting lightning from wings","zap","Lays an egg of lightning. Hot potato.","mythical,bird,storm"},
 	{"inchworm","AMAJTA","CP",1,3,1,"8AC83A","C8E87A","green looping caterpillar","squelch","Measures everything. Slowly.","bug"},
 	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
 	{"indestructible","KKDOKI","Ga",2,3,10,"90A4AE","FFD54F","thick shining metal aura","clang","Tried breaking it. It broke you.","defence"},
@@ -257,7 +258,7 @@ return {
 	{"katsu curry","IGBOKI","F",2,5,3,"8A5A2A","D9A04A","cutlet over rice with brown curry","crunch","Crunch meets comfort.","edible,healthy"},
 	{"katydid","AMAJFG","dAZP",1,6,1,"6AC84A","3A8A2A","leaf-shaped green hopper","buzz","Looks exactly like a leaf.","insect"},
 	{"kaya toast","IGBOKI","F",2,5,3,"C8823A","8DB84A","toast with green coconut jam","crunch","Toast, butter, coconut jam. Breakfast bliss.","edible,healthy"},
-	{"kazoo","BMAFKI","jd",1,8,1,"C0392B","C9CED4","little buzzing tube","kazoo","Bzzzzz-da-da-bzzz.","music,silly,toy"},
+	{"kazoo","BMAAKI","TeN",2,8,1,"E53935","C9CED4","a buzzing kazoo wave rolling through everyone","kazoo","Bzzzzz-da-da-bzzz.","goofy,silly,music,toy"},
 	{"kea","AMBJDB","jdAb",2,6,2,"6A7A3A","E8601E","olive parrot with orange underwings","squawk","Steals car parts for fun.","bird,jungle,silly"},
 	{"kebab","IABHJI","KfT",3,5,4,"C8602B","7DBE3A","meat and peppers on a skewer","bonk","A spear of grilled meat and veg.","edible,silly"},
 	{"kedgeree","IMAELB","eNP",2,6,1,"F2D23A","F7F2E0","yellow rice, egg, fish","pitter","Breakfast rice with a twist.","edible,grain"},
@@ -292,6 +293,7 @@ return {
 	{"kibbeh","IMBAKF","Te",3,6,2,"8A4A2A","C8904A","torpedo-shaped crispy croquette","splat","A crunchy little torpedo.","edible"},
 	{"kibble","IMAELJ","cNP",1,5,1,"8B5A2B","C9A66B","rattling shower of little brown biscuit shapes","rattle","Shake the bag. Every pet for a mile arrives.","pet,edible"},
 	{"kick","KMCAKB","kf",5,8,2,"FFB74D","FFFFFF","sweeping boot arc with impact","thwack","Hi-yah!","melee"},
+	{"kick me sign","BMAAKK","dke",2,7,1,"FFF8E1","E53935","a paper KICK ME sign stuck on a back","slap","The next one's a doozy.","goofy,silly,prank"},
 	{"kickball","BMBG3F","Uke",2,7,2,"C0392B","C0392B","bouncy rubber playground ball","bonk","Recess champion.","sport"},
 	{"kickboxer","LMCJNA","kfO",6,8,5,"DC2626","111827","gloves, shorts, high kick","thud","Roundhouse to the scoreboard.","sport,martial"},
 	{"kid","LMBJNA","Dd",2,7,3,"F97316","1D4ED8","kid in t-shirt and sneakers","giggle","Has endless energy. Uses it all.","family"},
@@ -401,6 +403,4 @@ return {
 	{"krampus","AIDJNA","Dfh",6,6,6,"1C1917","DC2626","shaggy horned figure with chains and basket","cackle","Santa's grumpy partner. Very hairy.","spooky,christmas,holiday"},
 	{"krill","ABBJLA","fPB",2,4,5,"F27A6A","F2C0B0","tiny see-through pink shrimp swarm","clack","Small. Many. Whale snack.","crustacean,aquatic,armored"},
 	{"kris","CKBHrK","fT",4,8,3,"8A929B","D4A72C","wavy serpentine dagger","shing","Wiggly blade, straight to the point.","sharp,ancient"},
-	{"kronosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","B8C0C8","giant short-necked pliosaur","roar","Skull the size of a car.","extinct,reptile,aquatic,ocean"},
-	{"kudu","AMDJAA","DkT",5,8,4,"8E7A64","F2F0EA","huge spiral horns, white stripes","bleat","Horns like a corkscrew. Very fancy.","mammal,wild"},
 }

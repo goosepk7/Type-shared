@@ -153,6 +153,7 @@ return {
 	{"gulab jamun","IMBLGI","cN",2,3,3,"8A3A1E","E8B860","syrup-soaked brown balls","gloop","Little balls swimming in syrup.","edible,sticky,sweet"},
 	{"gulper eel","AIAJCC","dHB",1,6,1,"1E1E24","5A5A66","giant pelican mouth, whip tail","splash","Mostly mouth. Hungry mouth.","fish,aquatic,deepsea"},
 	{"gum","IMBLGI","SNO",2,3,3,"F2A6C8","F7D9E3","pink chewed blob, stretchy","gloop","Sticks to everything. Forever.","edible,sticky,candy,sweet"},
+	{"gum wad","BMBLGI","SN",2,2,2,"F48FB1","F8BBD0","a big sticky pink wad of chewed gum","squish","Ew. You're stuck.","goofy,gross,silly,trap"},
 	{"gumball","IMAAKK","UeV",3,7,6,"E0102B","4FA3E8","glossy colored sphere","bonk","Round, bouncy, and colorful.","edible,candy"},
 	{"gumball machine","OMBM1I","Ude",1,5,4,"C0392B","BFE6F2","glass globe full of gumballs","hum","Insert coin. Receive chaos.","silly,candy"},
 	{"gumbo","IBBOGI","FS",3,4,3,"8A4A1E","7DBE3A","thick brown stew over rice","slurp","A bayou bowl of everything.","edible,warm,healthy"},
@@ -402,5 +403,4 @@ return {
 	{"hercules","LEDJXA","Dklf",8,6,9,"B45309","FDE68A","mega-muscled hero in a lion skin swinging an olive-wood club","grunt","Twelve labours done. Yours is number thirteen.","mythical,greek,warrior"},
 	{"hercules beetle","AMBJFA","Gklf",3,3,6,"C8B87A","1E1E1E","giant beetle with massive horn","click","Strongest bug. Named accordingly.","insect,armored"},
 	{"herd","AEEFLA","DkIP",7,7,7,"8B5A2B","E8D2B0","wide wave of galloping hooves and horns in dust","rumble","One got spooked. Now it is everyone's problem.","farm,wild,swarm"},
-	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
 }

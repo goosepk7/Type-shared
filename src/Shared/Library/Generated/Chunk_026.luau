@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stunt double","LACJNA","DEk",5,9,4,"DC2626","F8FAFC","leather jumpsuit, helmet, mid-jump pose","boom","Jumps through fire. Daily.","silly"},
+	{"stunt plane team","DFEELB","jAeP",6,9,5,"E53935","1565C0","formation of jets with coloured smoke","jet","Smoke trails everywhere. Very confusing.","vehicle,air"},
 	{"stupidity","KMBDOJ","jNP",3,4,1,"FDE68A","A3E635","question marks around a spinning empty thought bubble","boing","Contagious. Do not make eye contact.","silly,meme"},
 	{"sturgeon","ABDJEC","DfB",5,7,6,"6E6A64","C8C4BC","bony armor plates, shovel snout","splash","Older than dinosaurs. Looks it.","fish,aquatic,ancient"},
 	{"sty","MECNII","SMNh",3,1,4,"6B4F2A","F4A6B7","muddy fenced pen with a trough and snoozing pigs","squelch","Your room, according to your mother.","farm,gross"},
@@ -401,6 +403,4 @@ return {
 	{"threat","KIBF6B","IXO",4,6,1,"7F1D1D","111827","looming shadow cracking its knuckles","growl","Nice health bar. Shame if something happened.","villain"},
 	{"three wheeler","DMBKHL","Djkg",3,6,3,"1565C0","F5F5F5","tiny car with one front wheel","engine","Tips over in corners. Every corner.","mechanical,vehicle,land,silly"},
 	{"three-banded armadillo","AMBJAF","GUCf",2,5,6,"B8A08E","8A7462","armadillo rolled into a perfect ball","squeak","Rolls into a perfect ball.","mammal,wild"},
-	{"three-eyed puppy","ALBJAA","DQ",2,8,3,"22D3EE","7C3AED","three-eyed glowing puppy","bark","Fetches meteors.","alien,cute,canine"},
-	{"three-headed space dragon","ADFJAB","AkeL",9,6,9,"FACC15","92400E","golden three-headed winged dragon","roar","Three heads, gravity beams, one bad day.","kaiju,giant,reptile,danger"},
 }

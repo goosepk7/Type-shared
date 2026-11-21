@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"zoomer","LDBJNA","DjdY",3,9,2,"22D3EE","F472B6","kid filming a dance on a phone, oversized hoodie","beep","Attention span: this long. What were we","meme,silly"},
+	{"zorilla","AJBJAA","CjfTM",3,8,2,"1E1E1E","F2F2F2","stripy skunk-like weasel","chatter","Smells worse than skunks. Wow.","mammal,predator"},
 	{"zucchini","IMBHJI","kf",4,5,4,"3E6B2A","9EC86A","long dark green club","bonk","The vegetable that gets everywhere.","edible,silly"},
 	{"zucchini bread","IMCCII","GF",4,2,5,"7A5A2A","5E8E3A","loaf flecked with green","thud","A vegetable in disguise.","edible,giant,dessert"},
 	{"zulu warrior","LECJNA","GDf",6,7,5,"111827","F8FAFC","cowhide shield, short spear","roar","Charges in formation like horns.","warrior"},

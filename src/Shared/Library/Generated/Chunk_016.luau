@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"locksmith","LKCJNA","Gb",3,5,4,"57534E","FACC15","ring of keys, pick set","click","No door is safe. Ever.","tools"},
+	{"locro","IBBOGI","FS",3,4,3,"E8C04A","C8762B","thick corn and squash stew","slurp","Thick, hearty Andean stew.","edible,warm,healthy"},
 	{"locust","AMADLB","diAPh",2,6,1,"8A7A3A","D8B84A","grasshopper swarm cloud","buzz","Arrives in billions. Leaves nothing.","insect"},
 	{"locust tree","NGDCMI","GWkST",4,1,7,"5D4037","9CCC65","thorny tree with long twisty pods","rustle","Thorns as long as fingers.","plant,tree,sharp"},
 	{"log bridge","EGCCII","GSN",1,1,4,"8D6E63","7CB342","single fallen tree across a gap","thud","One wrong step and splash.","structure"},
@@ -67,7 +69,7 @@ return {
 	{"lucky coin","BHAOKJ","Fc",2,6,3,"D4A72C","B8693D","worn shiny coin","boing","Heads: you win. Tails: you also win.","treasure,shiny"},
 	{"lucky seven","KHCOKJ","Da",4,7,3,"FFD54F","D32F2F","three glowing sevens spinning","jingle","Jackpot energy.","luck"},
 	{"lucky streak","KHCOKJ","Da",3,7,3,"43A047","FFD54F","trail of clovers behind caster","ding","Can't stop winning.","luck"},
-	{"luggage carousel","OMCG2K","kSRI",3,3,4,"2BB3A3","D7263D","hard-shell suitcases circling round you on an airport carous","thump","Is that one yours? Is that?","transit,orbit,silly"},
+	{"luggage carousel","OMCG2K","kSRI",3,3,4,"2BB3A3","D7263D","hard-shell suitcases circling you on an airport carousel","thump","Is that one yours? Is that?","transit,orbit,silly"},
 	{"lullaby","KLCDOJ","SNO",5,3,6,"B39DDB","FFF8E1","a drifting cloud of soft notes that puts lingerers to sleep","chime","Hush now. Everybody sleep.","music,control"},
 	{"lumberjack","LGCJNA","Dkf",6,5,6,"DC2626","111827","plaid shirt, beard, giant axe","thud","Yells TIMBER. Means it.","outdoor"},
 	{"lumberjack giant","AGEJNA","Dkf",7,4,8,"DC2626","111827","plaid giant with a tree-sized axe","stomp","Fells forests with one swing.","giant,outdoor"},
@@ -401,6 +403,4 @@ return {
 	{"mercury planet","MAEGKJ","KDke",7,6,9,"9E9E9E","795548","small cratered grey sphere","rumble","Smallest planet. Fastest punch.","space"},
 	{"mercury wave","FKDF6F","kNP",7,5,5,"B0BEC5","ECEFF1","rolling mirror-silver liquid wave","slosh","Shiny. Heavy. Unstoppable.","heavy,shiny"},
 	{"mercy","KHBOKJ","F",1,4,3,"FFF8E1","B3E5FC","soft white feather glow","chime","Spared. This time.","holy,support"},
-	{"merganser","ABBJDC","AfTB",2,5,2,"2A6A4A","F2F2F2","crested fish duck with saw bill","quack","Duck with teeth. Kinda.","bird,aquatic"},
-	{"merge","KLCOKI","WF",5,4,4,"FFB74D","7E57C2","two glows swirling into one","warp","Two become one. Bigger one.","magic"},
 }
