@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weimaraner","AMCJAA","DQf",4,8,4,"9A9AA0","D8D8DC","sleek silver-grey dog","bark","The grey ghost. Silver, fast.","mammal,pet"},
+	{"weirdo","LLCJNA","UjY",3,6,3,"A3E635","D946EF","mismatched socks, colander hat, walking a pet rock","boing","Normal is a setting on a washing machine.","silly,meme"},
 	{"weka","AMBJDA","dfb",2,4,2,"8A6A4A","C8A07A","flightless brown rail","cluck","Steals shiny things from campers.","bird,farm"},
 	{"welder","OACBJK","KfO",5,4,5,"2F6FD1","24262A","welding gun with bright arc","buzz","Don't look directly at it.","tool"},
 	{"welding mask","BKBONI","G",1,5,5,"24262A","4A4D52","dark-windowed face shield","clank","Flash? What flash?","armor,defense"},
@@ -50,7 +52,6 @@ return {
 	{"whirligig beetle","AMAJFK","GjfB",1,3,4,"1E1E24","6A6AA0","spinning water beetle","click","Spins in circles on ponds.","insect,armored"},
 	{"whirlpool","FBDN5K","SHNO",6,5,4,"0E4C7A","7CC6F0","spiralling water funnel, foam rim","gurgle","Round and round and round and down.","aquatic"},
 	{"whirlwind","FFCN5K","jlH",5,7,3,"9DBCCB","EAF2F6","spinning column of air and leaves","howl","Spin to win. Mostly to spin.","air"},
-	{"whisk","BMAHJK","jf",1,7,2,"8A929B","C9CED4","wire loops on a handle","clang","Whisks enemies into a froth.","kitchen,household"},
 	{"whisker","BMAOLB","QTe",1,8,1,"F5F5F5","D9D9D9","fan of long white twitching whiskers","twang","Senses danger. Is the danger.","body,cute,pet"},
 	{"whiskerway coach","AFEJXA","DAkT",7,10,2,"5C6884","FFC46E","a long-legged lantern strider carrying a lacquered howdah","growl","One howdah, one lantern, no timetable.","anime,beast,summon,ride"},
 	{"whisper","KIAFOB","j",1,5,1,"B39DDB","FFFFFF","faint drifting ghostly words","psst","Psst. Your shoe's untied.","stealth,spooky"},
@@ -58,6 +59,7 @@ return {
 	{"whistle","BFAFKF","jO",1,9,2,"C9CED4","24262A","small whistle on lanyard","whistle","FWEEEEET! Foul!","sport,loud"},
 	{"whistle lanyard","BFAFKI","Oh",1,8,1,"E67E22","24262A","bright whistle on cord","thud","Tweeet! Help is coming.","camping,outdoor"},
 	{"whistling duck","ABBJDC","AfB",2,5,2,"C8703A","1E1E1E","long-legged duck","whistle","Whistles instead of quacks.","bird,aquatic"},
+	{"whistling kettle","BABB1J","KIe",5,4,4,"D93A2B","F6EAD2","red enamel kettle blasting a jet of steam","whistle","Whistles when it's angry.","kitchen,steam,beam,hot"},
 	{"white bread","IMCCII","Gk",3,2,5,"F5EAD5","E8C88A","soft square sandwich loaf","thud","Soft, plain, dependable.","edible,giant"},
 	{"white chocolate","IMBLKI","dSc",2,3,3,"F7F0DE","E8DCC0","creamy ivory squares","chomp","Chocolate in disguise.","edible,sweet,candy"},
 	{"white dwarf","MHDGKJ","KHe",7,4,9,"FFFFFF","B3E5FC","tiny ultra-bright white star","rumble","Small but extremely heavy.","space"},

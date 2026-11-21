@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
 	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
 	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
 	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
@@ -327,6 +328,7 @@ return {
 	{"spartan helmet","BKBONI","G",2,5,6,"A86F32","9E1B32","bronze helm with red crest","clank","This. Is. A helmet.","armor,defense,ancient"},
 	{"spatha","CKCHrK","fT",5,6,5,"8A929B","A86F32","long straight cavalry sword","shing","Roman, but longer.","sharp,ancient"},
 	{"spatula","BKBHJK","klf",1,7,3,"24262A","8A929B","flat flipping paddle","clank","Flips pancakes and foes.","kitchen,silly"},
+	{"spatula flip","BKCHJK","klf",4,6,4,"C9CED4","7A4524","giant slotted spatula flipping foes over your head","clank","Flips pancakes and foes.","kitchen,melee,toss"},
 	{"spawn","KLCM5I","ShY",5,1,5,"22D3EE","7C3AED","glowing blue circle pad with beams where figures pop in","pop","They just keep coming out. Who is making these?","gaming"},
 	{"spawn camper","LICLNI","ce",5,1,4,"7F1D1D","111827","figure crouched at a glowing spawn pad","bang","Waiting at your spawn. Always.","meme,gaming,villain"},
 	{"speaker system","BFCFKI","kIO",4,2,5,"24262A","8E9196","giant stacked speaker cabinets","boom","The bass drops. So do the enemies.","music,loud"},
@@ -401,6 +403,4 @@ return {
 	{"spinning blades","OKCL1K","fVP",6,6,5,"8A929B","4A4D52","post with whirling blades","clank","Wheeeeeee— ouch.","defense,mechanical"},
 	{"spinning plate","BMAAKK","UeV",1,7,1,"F2F2EE","2F6FD1","plate twirling on a stick","thud","Don't drop it. Throw it.","party,silly"},
 	{"spinning top","BMAGKK","jkf",2,7,4,"C0392B","2F6FD1","pointed spinning toy","squeak","Spins forever. Dizzies everyone.","toy"},
-	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
-	{"spinning wheel","OMCL1I","NO",2,1,4,"8B5A2B","D8CBB5","wooden wheel with spindle","clank","Spins wool. Spins traps.","mechanical,fantasy"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot tank","OKDMHL","GEe",7,3,9,"365314","1F2937","treaded robot with turret head","clank","Turret, treads, and attitude.","robot,heavy"},
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
 	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
 	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
@@ -402,5 +403,4 @@ return {
 	{"sea hare","ABAJGI","jN",1,1,2,"8A6A4A","C8A07A","big sea slug with ear flaps","squelch","Squirts purple ink. Has ears.","mollusk,aquatic"},
 	{"sea holly","NGBNMI","dFST",2,1,3,"5C6BC0","B0BEC5","spiky metallic-blue thistle","rustle","Spiky. Shiny. Salt-proof.","plant,flower"},
 	{"sea kaiju","ABFJCC","kHB",9,5,9,"0C4A6E","22D3EE","whale-sized finned monster rising from sea","roar","Makes a splash. A very big one.","kaiju,aquatic,giant,danger"},
-	{"sea krait","ABCJCD","fMNB",4,6,3,"3A5A8A","F2F2EE","blue-black banded sea snake","hiss","Swims in the sea, naps on land.","reptile,venomous"},
 }

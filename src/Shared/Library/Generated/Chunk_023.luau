@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea krait","ABCJCD","fMNB",4,6,3,"3A5A8A","F2F2EE","blue-black banded sea snake","hiss","Swims in the sea, naps on land.","reptile,venomous"},
 	{"sea lettuce","NBBLMI","SNB",1,1,2,"76FF03","9CCC65","bright green crinkly sheets","splash","Slippery salad of the sea.","plant,aquatic"},
 	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
 	{"sea lion","ABCJEC","UDdfB",3,5,4,"8A6440","C8A07A","sleek brown seal, upright on front flippers","bark","Balances balls. Barks for fish.","mammal,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"skunk kit","AMAJAA","CfM",1,8,2,"1A1A1C","F2F2F2","tiny stripy fluffball","chatter","Practicing the stink. Not ready yet.","mammal,predator"},
 	{"skunk spray","AJCDAI","SMNP",4,5,3,"1E1C22","9BD84A","skunk turns tail and sprays a cone of green stink","hiss","Clears a room in one second flat.","critter,mammal,cloud,gross"},
 	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
-	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
 }
