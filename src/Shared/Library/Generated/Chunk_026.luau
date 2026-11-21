@@ -15,7 +15,7 @@ return {
 	{"sugar cube","IMAAKK","ceO",3,7,6,"F7F7F7","E8E8E8","small white crystal cube","bonk","A tiny sweet brick.","edible"},
 	{"sugar glider","AMBJAB","UAf",2,6,2,"A8A4A0","1E1A18","huge eyes, gliding membrane, stripe","chirp","Pocket-sized glider. Loves fruit.","mammal,marsupial,cute"},
 	{"sugar plum","IMBLKI","dSc",2,3,3,"8A2E7E","F7F2F0","sugar-coated round candy","chomp","Dancing in your dreams.","edible,sweet,holiday"},
-	{"sugar rush","IMBOKI","Dj",3,9,2,"F2A6C8","F2E23A","swirl of candy and sparks","fizz","Zoom! Zoom! Crash.","edible,drink,silly"},
+	{"sugar rush","IMBOKI","DjI",3,9,2,"F2A6C8","F2E23A","a zoomy candy-sparkle dash that bumps people, then a crash","fizz","Zoom! Zoom! Crash.","goofy,silly,speed"},
 	{"sugar skull","IMBLKI","dSc",2,3,3,"F7F7F2","E8434F","decorated white skull candy","chomp","A sweet celebration of memory.","edible,sweet,candy,holiday"},
 	{"sugar snap peas","IGAELB","eVP",2,7,1,"7DBE3A","5E9E3A","plump crunchy pods","pitter","Snap! Crunch! Sweet!","edible"},
 	{"sugar syrup","IMBLGI","SNP",2,3,3,"F7F2E8","E8E0D0","clear sticky syrup","gloop","Sugar, but liquid.","edible,sticky"},

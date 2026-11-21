@@ -269,6 +269,7 @@ return {
 	{"trapeze","BMCLJI","lH",1,4,3,"C0392B","D4A72C","swinging bar on ropes","pop","Swing in. Swoop out.","party"},
 	{"trash","BJCNGI","ScMN",3,1,4,"4B5563","84CC16","heap of black bags, banana peels, fish bones, flies","squelch","One person's trash is still trash.","gross,silly,household"},
 	{"trash can lid","BKBIyI","Gd",1,6,3,"8E9196","4A4D52","dented round metal lid","clang","Clang! Gross, but effective.","silly,defense"},
+	{"trash heap","EJCMII","SMe",3,1,4,"6D7B4E","C5A059","a smelly trash heap that flings apple cores","splat","It's not trash. It's a lifestyle.","goofy,gross,silly,turret"},
 	{"trash wall","EJCCII","GSM",2,1,5,"795548","9E9E9E","heap of bins and junk","thud","Smells like a defence.","structure,defense,silly"},
 	{"traveling merchant","LMCJNA","cbY",3,5,4,"92400E","7C3AED","giant backpack of wares","ding","What're ya buyin'?","merchant"},
 	{"traveller palm","NGDCMI","GWkS",3,1,6,"6D4C41","43A047","giant fan of paddle leaves","rustle","Points the way. Holds water.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"turnover","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","triangle flaky pastry","chomp","A pie that folded itself in half.","edible,sweet"},
 	{"turnstile","EKBCII","GSN",1,1,5,"B0BEC5","37474F","spinning three-armed gate","thud","One at a time, please.","structure,defense,silly"},
 	{"turntable","BMCFJI","jO",2,2,4,"24262A","C9CED4","spinning deck with tonearm","scratch","Drop the beat. Drop the foes.","music"},
-	{"turret","OKCMwI","Te",5,7,6,"2C3539","6B7B3A","swivelling twin-barrel tripod gun","hum","Never sleeps. Never blinks.","defense,mechanical"},
 }

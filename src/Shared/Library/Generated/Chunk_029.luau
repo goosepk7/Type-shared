@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weapon","CKCELB","kTeP",6,6,5,"8A929B","6B4226","falling rack of swords, axes, maces and a rubber chicken","clang","Which weapon? All of them. At once.","sharp,medieval"},
 	{"weasel","AMBJAA","CjfT",3,8,2,"8A5A30","F2E6CC","long slim body, short legs, white belly","chatter","Pop goes the weasel.","mammal,predator"},
 	{"weather","GFCNOI","jP",3,5,3,"90CAF9","FFF59D","rapidly switching sun, rain and snow","whoosh","Unpredictable, as always.","storm"},
 	{"weather machine","OFDN1I","jPh",6,2,5,"F2F2EE","87CEEB","dish tower ringed by tiny clouds","hum","Forecast: whatever you want.","scifi"},
