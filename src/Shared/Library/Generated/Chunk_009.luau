@@ -339,7 +339,7 @@ return {
 	{"fire tower","EADMII","GKSeP",6,1,7,"6D4C41","FF5722","stone tower with a roaring brazier on top","fwoosh","Toasty. Very, very toasty.","structure,defense,tower,flammable"},
 	{"fire trail","FACOKB","KD",4,9,2,"FF6E40","FFD180","caster leaving a streak of fire behind","whoosh","Leaves a hot trail. Literally.","fire,speed"},
 	{"fire truck","DBDKHL","DkIeg",6,6,8,"D22B2B","F2F2F2","long red truck, ladder on top, hose reel","siren","Puts out fires. Sprays out enemies.","mechanical,vehicle,land"},
-	{"fire truck hose","OBDBHL","Ie",3,5,4,"D32F2F","6EC6FF","red fire truck parks and blasts a jet of water","splash","Stand still, you're on fire. Probably.","transit,vehicle,water,beam"},
+	{"fire truck hose","OBDBHL","SIe",3,5,4,"D32F2F","6EC6FF","red fire truck parks and blasts a jet of water","splash","Stand still, you're on fire. Probably.","transit,vehicle,water,beam"},
 	{"fire tsunami","HAFF6F","KkP",9,6,5,"FF3D00","FFD54F","towering curling wall of flame","roar","A tidal wave, but every drop is fire.","fire,natural,danger"},
 	{"fire unicorn","AADKAA","KTg",7,8,6,"DC2626","FDE047","unicorn with burning mane and horn","neigh","Hot horn. Hotter hooves.","mythical,mount,fire"},
 	{"fire vine","NACLMI","KSHP",5,2,4,"FF5722","FFC107","vine wrapped in crackling flames","chime","Grabs you and lights you up.","plant,magic,mythical"},

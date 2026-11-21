@@ -98,7 +98,7 @@ return {
 	{"air shot","FFCAKB","kIe",5,9,1,"CFD8DC","FFFFFF","wobbly air ball with ripple rings","thoomp","Fires nothing. Very hard.","air"},
 	{"air traffic controller","LFCJNI","jh",3,3,4,"1E3A8A","F8FAFC","headset, radar screen, glow sticks","beep","Calls in planes. Lots of planes.","flying"},
 	{"airavata","ABEKAA","DFkg",7,4,8,"F8FAFC","FACC15","white elephant with many tusks and trunks","trumpet","Carries clouds. Sprays rain.","mythical,mount,royal,holy"},
-	{"airbag","BFCIGI","GkI",3,3,3,"F1E8D6","2E3138","a big puffy airbag bursting out in front of you","pop","Fwump! Safety first, enemies second.","transit,shield,silly"},
+	{"airbag","BFCIyI","GkI",3,3,3,"F1E8D6","2E3138","a big puffy airbag bursting out in front of you","pop","Fwump! Safety first, enemies second.","transit,shield,silly"},
 	{"airboat","DFCKHC","kIgB",4,8,4,"43A047","616161","flat boat with a giant fan on back","whoosh","Roars across the swamp. Blows everything away.","mechanical,vehicle,land"},
 	{"airburst","HAEGKI","EkP",8,8,1,"FFF59D","FF6D00","meteor exploding mid-air with a ring","boom","It blew up in the sky. Still felt it.","space,explosive"},
 	{"aircraft carrier","DBFMHC","GeghB",8,3,10,"78909C","455A64","giant flat deck ship, tower island, jets parked","horn","A floating airport. Launches surprises.","vehicle,aquatic"},

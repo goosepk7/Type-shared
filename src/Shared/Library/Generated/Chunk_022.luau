@@ -270,7 +270,7 @@ return {
 	{"sand worm hatchling","AEBJCH","Cf",2,5,2,"C2A26B","FDBA74","small ringed worm with tiny teeth","chirp","Will grow. Very large.","desert,cute"},
 	{"sand wraith","AECJOJ","jZNP",4,7,3,"D6A35A","FDE68A","swirling sand figure with ember eyes","howl","Gets in your eyes. Gets in everything.","spooky,desert"},
 	{"sandal","BMBAJK","UQeO",4,9,3,"F59E0B","0EA5E9","spinning flip-flop curving through the air","thwack","Never misses. Mothers have trained for this.","clothing,meme"},
-	{"sandbag drop","OEDEGJ","ESe",3,2,6,"E53935","C9A56E","a striped hot air balloon dropping burlap sandbags","thud","Lighten the load. On your head.","transit,rain,silly"},
+	{"sandbag drop","OEDE2J","ESe",3,2,6,"E53935","C9A56E","a striped hot air balloon dropping burlap sandbags","thud","Lighten the load. On your head.","transit,rain,silly"},
 	{"sandbags","EECCII","GSN",2,1,7,"C2B280","8D7B5A","low curved stack of lumpy bags","thud","Soaks up bullets like a sponge.","structure,defense"},
 	{"sandbar","MBCNII","SN",2,1,5,"F4E4BC","4FC3F7","low strip of sand in shallow water","rumble","Boats get stuck. On purpose.","place,terrain"},
 	{"sandcastle","EECCII","GdS",2,1,2,"E6C27A","1E88E5","bucket-shaped sand towers, shell windows","thud","One wave from total collapse.","silly,cute"},
