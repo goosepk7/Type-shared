@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"thunder strike","FDDAKB","kLO",8,9,2,"FFEA00","3D5AFE","bolt slamming down with a ring of thunder","boom","Lightning that hits like a hammer.","electric"},
 	{"thunder sword","CDCHrK","fLO",7,7,4,"F1C40F","1F2F55","zig-zag blade crackling with sparks","shing","Every swing is a little thunderclap.","fantasy,electric"},
 	{"thunder wall","KDDCnI","GLO",5,4,5,"FFEA00","536DFE","crackling fence of vertical lightning","buzz","Do not touch the zappy wall.","electric,defence"},
 	{"thunder wave","FDDFOB","kIO",6,9,1,"5C6BC0","FFF59D","ring of thunder rippling outward","boom","BOOM. Sorry, was that loud?","electric,loud"},
@@ -146,6 +145,7 @@ return {
 	{"topi","AMCJAA","Dk",4,8,4,"8A4A2A","3A3A6A","reddish antelope with purple patches","bleat","Stands on termite mounds to look cool.","mammal,wild"},
 	{"topiary","NGCCMI","GdS",2,1,5,"43A047","1B5E20","bush trimmed into a cute animal shape","rustle","Shaped like a rabbit. Fights like a hedge.","silly,cute"},
 	{"topic","KMBOKB","jdY",2,5,2,"F59E0B","FFFFFF","speech bubble with an arrow swerving off sideways","pop","Anyway. Moving on. Completely different thing.","school,silly"},
+	{"toppling dominoes","BMCCII","kP",3,6,3,"F6F1E4","2A2A30","row of giant ivory dominoes tipping over","clack","Tip one. Tip them all.","household,game,toy"},
 	{"torch","BABHJK","Kcf",2,5,2,"8B5A2B","FF6A1A","wooden stick with flaming tip","flicker","Bring one to every cave.","flammable"},
 	{"torii gate","EHCCII","FSY",2,1,8,"C62828","263238","red post-and-beam gateway","thud","Step through to somewhere sacred.","structure,holy"},
 	{"tornado","HFEN5K","klSHP",8,6,5,"8A9BA8","DCE6EC","tall grey funnel, debris ring and flung rocks at base","howl","Picks things up. Puts them down far away.","storm,natural,air"},

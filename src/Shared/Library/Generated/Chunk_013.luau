@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
 	{"hex cauldron","BJCL2I","ESN",6,3,5,"2E2E34","6EE650","a black iron cauldron of green brew that boils over","bubble","Recipe: one eye of newt, one very bad mood.","monster,folklore,spooky,witch"},
 	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
 	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
@@ -403,4 +402,5 @@ return {
 	{"inferno beam","FADBKI","KTP",8,7,1,"FF3D00","FFEB3B","roaring wide beam of fire","roar","A flamethrower, upgraded.","fire"},
 	{"inflatable boat","DBBKHC","UDkgB",3,7,3,"FF7043","37474F","rubber tube boat with outboard","splash","Bouncy, speedy, a bit squeaky.","vehicle,aquatic"},
 	{"inflatable flamingo","BBDJDJ","UdB",1,3,2,"FF3EA5","F2F2EE","giant pink pool floatie bird","splash","Floaty fabulous.","beach,silly"},
+	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 }

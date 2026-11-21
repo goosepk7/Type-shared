@@ -136,7 +136,7 @@ return {
 	{"buffet","IMEJII","GdFc",6,1,6,"D9A04A","D7263D","long table piled with dishes","thud","An all-you-can-eat distraction.","edible,giant,silly"},
 	{"bug net","BMBLKI","O",1,6,1,"F2F2EE","C49A6C","fine net on a long pole","thud","Catch 'em all. Gently.","camping,outdoor"},
 	{"bug spray","BJADKI","MI",1,7,1,"2E8B57","F1C40F","aerosol can with green mist","thud","Shoo! Shoo!","camping,outdoor"},
-	{"bug zapper","ODBL1I","cL",3,1,4,"24262A","A66BDB","blue-glowing grid lantern","clank","Lures them in. Zzzt.","defense,electric"},
+	{"bug zapper","ODBL1I","SL",3,1,4,"2F5A3A","8E6CFF","green lantern zapper with a violet glowing tube","clank","Lures them in. Zzzt.","household,porch,electric"},
 	{"bugbear","AECJNA","DZf",5,6,5,"92400E","4D7C0F","furry big-eared goblin cousin","growl","Big, hairy, and sneaky somehow.","goblin"},
 	{"bugle","BKBFJI","FOh",3,6,3,"B58A3A","D4A72C","small coiled valveless horn","fanfare","CHAAARGE!","music"},
 	{"build","KECCnI","G",1,3,6,"A1887F","FFD54F","wall assembling brick by brick","clank","Instant construction. No hard hat.","defence"},

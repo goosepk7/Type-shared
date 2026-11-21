@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"spinach","IGBOKI","WFk",4,5,3,"2E6B2A","4E8E3A","pile of dark round leaves","chomp","Instant muscles. Results may vary.","edible,vegetable,healthy"},
 	{"spinach dip","IMBOKI","WF",3,5,3,"3E7A2B","F2E8C8","creamy green dip","chomp","Creamy spinach strength.","edible"},
 	{"spinifex","NGBLMI","STN",2,1,4,"C9A55A","9E9D24","spiky hummocks of desert grass","rustle","Spiky porcupine grass. Do not sit.","plant,sharp"},
 	{"spinner dolphin","ABCJEC","UDjB",4,8,4,"5E6E80","E8EEF2","slender dolphin spinning mid-air","click","Spins seven times for fun.","mammal,aquatic,ocean"},
@@ -403,4 +402,5 @@ return {
 	{"sugar snap peas","IGAELB","eVP",2,7,1,"7DBE3A","5E9E3A","plump crunchy pods","pitter","Snap! Crunch! Sweet!","edible"},
 	{"sugar syrup","IMBLGI","SNP",2,3,3,"F7F2E8","E8E0D0","clear sticky syrup","gloop","Sugar, but liquid.","edible,sticky"},
 	{"sugarcane","NGCLMI","WScHN",2,1,4,"AED581","E6EE9C","tall jointed sweet green stalks","rustle","Sweet stalks. Sticky situation.","plant"},
+	{"suit","BMCONA","GjO",3,4,5,"1F2937","DC2626","sharp empty suit with a red tie adjusting its cuffs","click","Dressed to impress. And to distress.","clothing,fancy"},
 }

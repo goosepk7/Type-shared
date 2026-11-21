@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"skorpiovenator","AMDJBA","DkfT",6,6,7,"8A3A2A","D8A07A","bumpy-skulled theropod","roar","Scorpion hunter. Bumpy head.","dinosaur,extinct,reptile,predator"},
 	{"skua","ABBJDB","DAbB",2,7,2,"6A4A2A","C8A07A","brown pirate seabird","squawk","Steals food from other birds. Pirate.","bird,ocean"},
 	{"skull","BIBA3B","UjeO",4,7,5,"F1EBDD","2B2B2B","grinning skull, dark sockets, chattering jaw","chatter","Alas, poor you.","spooky,undead,body"},
 	{"skunk ape","AJDJNA","DfM",6,6,6,"57534E","365314","stinky shaggy swamp ape","roar","You smell it before you see it.","cryptid,silly"},
@@ -403,4 +402,5 @@ return {
 	{"spin cycle","KBCN5K","jl",4,7,2,"4FC3F7","FFFFFF","sudsy spinning water whirl","whirr","Wash, rinse, dizzy.","aquatic,silly"},
 	{"spin jump","KFBOKK","UDk",3,9,2,"7FD8FF","FFE45C","a high corkscrew jump that bonks a head and bounces","boing","Your head was a platform. Thanks.","game,platformer,mobility"},
 	{"spin the wheel","KLCN5K","jV",4,6,2,"FF4081","FFEB3B","giant colourful wheel spinning above","tick","Round and round. Where it lands...","luck,chaos"},
+	{"spinach","IGBOKI","WFk",4,5,3,"2E6B2A","4E8E3A","pile of dark round leaves","chomp","Instant muscles. Results may vary.","edible,vegetable,healthy"},
 }

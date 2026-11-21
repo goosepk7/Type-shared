@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"labrador","AMCJAA","DQfB",4,7,4,"2E2016","E2C08A","sturdy body, otter tail, friendly face","bark","Will retrieve anything. Including trouble.","mammal,pet"},
 	{"labrador puppy","AMBJAA","dQf",2,6,2,"E2C08A","F7EAD0","chubby yellow lab pup","yip","Chews shoes professionally.","mammal,pet,cute"},
 	{"lace","BMBLCD","HNO",2,4,2,"FFFFFF","EF4444","two untied shoelaces knotting themselves together","swish","Your shoe is untied. Made you look. Also it is.","clothing,trap"},
 	{"lace monitor","AMCJAA","Cf",4,7,2,"2A2A2A","F2E8C0","patterned big monitor","hiss","Climbs trees with huge claws.","reptile"},
@@ -403,4 +402,5 @@ return {
 	{"long john","IMBHJI","cf",3,5,4,"C8803A","B5651D","long glazed rectangle donut","bonk","A donut stretched long.","edible,silly"},
 	{"long reach","KMCANB","fH",4,9,3,"E85A4A","3A6AD8","an elastic arm shoots out and tugs the foe in","boing","I can reach the top shelf now.","hero,movie,stretch"},
 	{"long shot","KLCAKB","Te",6,10,1,"FF1744","FFFFFF","thin bright long-range streak","crack","From way over there. Bullseye.","ranged"},
+	{"long-eared bat","AMBJDB","jiA",2,7,1,"8A6A4A","C8A88A","ears as long as its body","screech","Ears longer than its body.","mammal,nocturnal,spooky"},
 }

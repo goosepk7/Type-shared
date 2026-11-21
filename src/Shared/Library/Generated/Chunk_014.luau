@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
@@ -182,7 +181,7 @@ return {
 	{"jukebox","OMCN1I","jd",1,1,6,"C0392B","D4A72C","glowing curved music machine","hum","Plays the hits. The hits are you.","music"},
 	{"jumbo jet","DFFKHB","DAkgh",7,7,8,"F5F5F5","1565C0","huge four-engine airliner with a hump","jet","Four engines. One very big bonk.","vehicle,air"},
 	{"jump","KMBOKG","l",2,7,2,"FFE082","FFFFFF","springy arc with dust puff","boing","Up! Higher!","speed"},
-	{"jump rope","BMBLJK","NO",1,7,2,"F06292","F2F2EE","rope with two handles","bonk","Double dutch, double trouble.","sport,toy"},
+	{"jump rope","BMCNJK","PO",2,7,2,"F06292","D9A86A","pink rope with wooden handles whirling round the floor","bonk","Jump! ...no? Okay, trip.","household,toy,playground"},
 	{"jumper cables","BDBAJK","fHL",3,6,3,"C0392B","24262A","cables with snapping clamps","clang","Clamp. Zap.","urban"},
 	{"jumping spider","AJBJQG","UfMN",2,6,2,"3A3A30","8AE0E8","fuzzy spider, huge front eyes","skitter","Big eyes, cute dance, jumps on you.","arachnid,spooky,venomous,cute"},
 	{"june bug","AMAJFA","GdAf",1,3,4,"6A4A1E","C8A04A","clumsy brown beetle","click","Crashes into your porch light nightly.","insect,armored"},
@@ -403,4 +402,5 @@ return {
 	{"label","BMAAJB","jSN",1,7,1,"FFFFFF","EF4444","sticky white label slapped on with HELLO written on it","tap","Labelled: property of the winner.","household"},
 	{"label maker","BMAOJK","j",1,5,2,"8E9196","F2F2EE","handheld sticker printer","tap","Labels you DEFEATED.","office"},
 	{"laboratory","EDDCII","SMLh",3,1,7,"ECEFF1","76FF03","bubbling flasks, sparking coils, monitors","thud","Something escaped. Again.","structure,building,mechanical"},
+	{"labrador","AMCJAA","DQfB",4,7,4,"2E2016","E2C08A","sturdy body, otter tail, friendly face","bark","Will retrieve anything. Including trouble.","mammal,pet"},
 }

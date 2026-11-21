@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
 	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
 	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
 	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
@@ -357,7 +356,7 @@ return {
 	{"hedge","NGCCMI","GZS",2,1,6,"2E7D32","1B5E20","tidy rectangular green bush","rustle","Neat, tidy, perfectly in the way.","plant"},
 	{"hedge fortress","NGECMI","GWFS",4,1,7,"2E7D32","1B5E20","castle shaped from clipped hedges","rustle","A castle you water.","plant"},
 	{"hedge maze","MGENII","jSN",3,1,7,"2E7D32","1B5E20","tall square hedges in winding paths","rumble","Left. Right. Left. Lost.","place,terrain,plant"},
-	{"hedge trimmer","OKCHJK","fV",4,6,4,"F1C40F","24262A","long toothed vibrating bar","whirr","Bzzzzt. Neat edges.","tool,garden"},
+	{"hedge trimmer","OKCHJK","fV",4,6,4,"F08C28","C8CED6","orange trimmer with a long toothed bar","whirr","Bzzzzt. Neat edges.","household,garden,tool"},
 	{"hedge witch","LGCJNA","WFM",4,5,4,"365314","FDE68A","mossy shawl, herb basket, crooked staff","cackle","Has a potion for that. And that.","magic,plant"},
 	{"hedgehog","AMAJAF","GCfT",1,5,4,"8A7460","F2E6D2","round spiky ball, tiny snout","squeak","Rolls into a spiky ball. Unbeatable.","mammal,wild,cute"},
 	{"hedgehog cactus","NEBLMI","GST",3,1,6,"66BB6A","E91E63","clump of round spiny heads","thud","Spiky ball family.","plant,desert,sharp,cute"},
@@ -403,4 +402,5 @@ return {
 	{"herring","ABAJEC","dPhB",1,6,1,"B8C4D0","4A6A8A","small silver fish, shoals","splash","Travels in million-fish crowds.","fish,aquatic"},
 	{"heterodontosaurus","AMBJAA","dkT",3,5,6,"8A6A4A","D8B88A","tiny dino with fangs","honk","Plant eater with fangs. Confusing.","dinosaur,extinct,reptile"},
 	{"hex","KIBAKB","jiN",4,7,1,"6A1B9A","B2FF59","spinning purple hexagon glyph","cackle","Bad luck delivered by express mail.","spooky,magic"},
+	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
 }

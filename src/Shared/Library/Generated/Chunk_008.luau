@@ -65,7 +65,6 @@ return {
 	{"dolphin","ABCJEC","UDFB",4,8,4,"7E94A8","D8E4EC","curved dorsal fin, smiling beak","click","Smiles at everyone. Plays with bubbles.","mammal,aquatic,ocean"},
 	{"dome","EMDIII","GS",3,1,9,"ECEFF1","90A4AE","half-sphere roof over a ring wall","thud","Round on top. Safe inside.","structure,defense"},
 	{"dome of light","KHDIKI","GF",2,3,8,"FFF59D","FFFFFF","great golden dome over allies","choir","Safe inside the glow.","holy,defence"},
-	{"domino","BMACII","GV",1,1,3,"24262A","F2F2EE","black tiles with white dots","clack","Tip one. Tip them all.","game"},
 	{"domino line","EMCLII","kSP",3,6,2,"212121","F5F5F5","long winding row of dominoes","clack","One push. Chain reaction.","structure,silly"},
 	{"domovoi","AMAJNA","GdF",1,4,3,"78350F","F59E0B","small hairy grandpa spirit near the stove","giggle","Guards the house. Needs milk and cookies.","mythical,cute"},
 	{"doner kebab","IGBOKI","F",2,5,3,"C88A5A","F2E8D0","wrapped flatbread with sliced meat","crunch","A spinning tower of flavor.","edible,healthy"},
@@ -403,4 +402,5 @@ return {
 	{"emp pulse","CDDNKI","LP",4,7,3,"78DCFF","966078","a coiled spike slammed down, a pulse ring rolling out","zap","Have you tried turning it off and on again?","scifi,electric"},
 	{"empanada","IMBAKF","Fe",3,6,2,"D9A04A","C8803A","crimped half-moon pastry","splat","A pastry with a crimped smile.","edible"},
 	{"emperor","LHCJNA","GOh",6,3,6,"7F1D1D","FACC15","laurel crown, purple robe, golden throne","horn","Thumbs down. You're out.","royal,ancient"},
+	{"emperor penguin","ACCJDA","UDB",3,5,3,"1E1E24","F2B02A","tall penguin, gold neck patch","squawk","Tallest penguin. Handles -60 degrees.","bird,arctic,cute,royal"},
 }

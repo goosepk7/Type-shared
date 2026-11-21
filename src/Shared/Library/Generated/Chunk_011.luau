@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
 	{"geisha","LMCJNA","jc",3,4,3,"F8FAFC","DC2626","white makeup, kimono, paper fan","chime","A fan flick that ends fights.","historical"},
 	{"gelada","AMCJBA","deb",3,7,2,"8A6A4A","D8302A","lion mane, red chest patch","chatter","Grass-eating lion monkey.","mammal,primate"},
@@ -403,4 +402,5 @@ return {
 	{"gravity","FLDNOI","HNO",6,4,5,"3B2E5A","8F7DE8","warped purple ripples pressing down","hum","What goes up, comes down. Hard.","space,heavy"},
 	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
 	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
+	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
 }

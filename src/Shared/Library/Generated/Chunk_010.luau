@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"flame bloom","NABAbI","UKEe",5,8,2,"FF6A1F","FFD23F","fiery flower blooms, then bouncing fireballs","whoosh","Pick a flower. Throw the fire.","game,platformer,power up,fire"},
 	{"flame dancer","LACJNK","Kj",4,7,3,"F97316","111827","spinning fire poi","whoosh","Dazzling. Also burning.","circus,fire"},
 	{"flame jet","FACBKI","KIe",5,9,1,"FF6D00","FFF3E0","tight roaring jet of blue-orange flame","hiss","Precision toasting.","fire"},
 	{"flame salamander","AABJAA","KfB",3,6,3,"EA580C","FDE047","small lizard with flame crest","hiss","Lives in a campfire. Very cozy.","reptile,fire,elemental"},
@@ -26,7 +25,7 @@ return {
 	{"flash flood","HBEF6F","kIP",8,8,4,"3A6F96","B4E0F5","sudden brown-blue water surge, debris","roar","Zero warning. All the water.","natural,aquatic"},
 	{"flash freeze","FCCFOI","JO",6,10,1,"B3E5FC","FFFFFF","instant frost snap over area","crack","Freeze! That means you.","frozen"},
 	{"flashbang","CHBG2F","jeO",3,8,1,"C9CED4","FFFFFF","a grenade that whites out everyone's eyes","bang","Bright. Loud. Everyone's confused.","modern,explosive"},
-	{"flashlight","BHBBJK","jeO",1,8,3,"24262A","F1C40F","cylinder with bright lens","click","Blinding at close range.","tool"},
+	{"flashlight","BHBBJK","je",2,8,3,"F2C230","FFE496","chunky yellow flashlight with a warm beam","click","Blinding at close range.","household,tool"},
 	{"flashlight fish","AHAJEC","jdOB",1,6,1,"1E1E24","8AF0F8","glowing eye patches","splash","Flashes its eye lights on and off.","fish,aquatic"},
 	{"flatbread","IMBAKK","Uke",3,7,2,"E8C88A","C89A5A","thin round charred bread","whoosh","Bread that got flattened. Still happy.","edible"},
 	{"flatbread pizza","IMBAKK","Uke",3,7,2,"E8C88A","D72B2B","thin rectangle pizza","whoosh","A pizza that went minimalist.","edible"},
@@ -403,4 +402,5 @@ return {
 	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
 	{"gazpacho","ICBOGI","JF",3,4,3,"C8302B","7DBE3A","cold red soup bowl","slurp","Cold soup. Hot debate.","edible,warm,healthy"},
 	{"gear","OKBAKK","UTe",2,6,6,"B58A3A","A86F32","toothed metal wheel","hum","Spinning tooth disc of mild doom.","mechanical"},
+	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 }
