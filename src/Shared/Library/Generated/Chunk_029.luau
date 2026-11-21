@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"weimaraner","AMCJAA","DQf",4,8,4,"9A9AA0","D8D8DC","sleek silver-grey dog","bark","The grey ghost. Silver, fast.","mammal,pet"},
 	{"weirdo","LLCJNA","UjY",3,6,3,"A3E635","D946EF","mismatched socks, colander hat, walking a pet rock","boing","Normal is a setting on a washing machine.","silly,meme"},
 	{"weka","AMBJDA","dfb",2,4,2,"8A6A4A","C8A07A","flightless brown rail","cluck","Steals shiny things from campers.","bird,farm"},
 	{"welder","OACBJK","KfO",5,4,5,"2F6FD1","24262A","welding gun with bright arc","buzz","Don't look directly at it.","tool"},

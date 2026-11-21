@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"thunderhead","GDEDOJ","QeL",7,3,5,"37474F","FFF59D","towering anvil storm cloud","rumble","A cloud so tall it has a ceiling.","storm,electric"},
 	{"thundersnow","GDDEOJ","JLN",6,5,4,"D8E6F0","FFE37A","snowstorm with flashes of lightning","boom","Snow, but with drum solos.","frozen,electric,storm"},
 	{"thunderstorm","GDEEOJ","SLPO",8,6,4,"2E3A55","FFE57F","towering black clouds spitting lightning","boom","Loud, bright, and very wet.","storm,electric"},
 	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
@@ -403,4 +402,5 @@ return {
 	{"tyrant","LIDJYA","GiOh",7,3,7,"1F2937","B91C1C","scowling ruler in spiked black armour on a too-big throne","boo","Makes the rules. Changes them when losing.","villain,royal"},
 	{"tyrant sun","KAFGKJ","KEe",10,2,2,"FF5A2A","FFE3A0","fingertip spark swells into a sinking crimson sun","rumble","One finger. One planet. Some assembly required.","anime,ki,heavy,danger"},
 	{"tzatziki","ICBNGI","JN",2,4,1,"F7F4EC","7DBE3A","white yogurt dip, cucumber flecks","splat","Cool, garlicky dip.","edible,sauce,anti-undead"},
+	{"uakari","AMBJBA","deb",2,7,2,"E83A2A","F2D0B0","bright red bald face","chatter","Face as red as a tomato.","mammal,primate,silly"},
 }

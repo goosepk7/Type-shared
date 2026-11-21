@@ -327,7 +327,6 @@ return {
 	{"spartan","LKCJNA","GDkf",6,5,7,"991B1B","CA8A04","crested bronze helm, round shield, spear","clang","THIS. IS. A. SHIELD WALL.","warrior,ancient"},
 	{"spartan helmet","BKBONI","G",2,5,6,"A86F32","9E1B32","bronze helm with red crest","clank","This. Is. A helmet.","armor,defense,ancient"},
 	{"spatha","CKCHrK","fT",5,6,5,"8A929B","A86F32","long straight cavalry sword","shing","Roman, but longer.","sharp,ancient"},
-	{"spatula","BKBHJK","klf",1,7,3,"24262A","8A929B","flat flipping paddle","clank","Flips pancakes and foes.","kitchen,silly"},
 	{"spatula flip","BKCHJK","klf",4,6,4,"C9CED4","7A4524","giant slotted spatula flipping foes over your head","clank","Flips pancakes and foes.","kitchen,melee,toss"},
 	{"spawn","KLCM5I","ShY",5,1,5,"22D3EE","7C3AED","glowing blue circle pad with beams where figures pop in","pop","They just keep coming out. Who is making these?","gaming"},
 	{"spawn camper","LICLNI","ce",5,1,4,"7F1D1D","111827","figure crouched at a glowing spawn pad","bang","Waiting at your spawn. Always.","meme,gaming,villain"},
@@ -403,4 +402,5 @@ return {
 	{"spinning blades","OKCL1K","fVP",6,6,5,"8A929B","4A4D52","post with whirling blades","clank","Wheeeeeee— ouch.","defense,mechanical"},
 	{"spinning plate","BMAAKK","UeV",1,7,1,"F2F2EE","2F6FD1","plate twirling on a stick","thud","Don't drop it. Throw it.","party,silly"},
 	{"spinning top","BMAGKK","jkf",2,7,4,"C0392B","2F6FD1","pointed spinning toy","squeak","Spins forever. Dizzies everyone.","toy"},
+	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
 }

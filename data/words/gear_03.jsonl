@@ -56,7 +56,6 @@
 {"w":"lever","a":["levers"],"c":"Object","e":"Metal","z":"Small","s":"Trap","b":["Lifts","Knockback"],"p":2,"sp":4,"d":6,"pc":"#8B5A2B","sc":"#5B6168","bp":"Weapon","sh":"long plank on a pivot","m":"Spin","snd":"clank","f":"Give me a lever and a place to stand.","t":["science"]}
 {"w":"jack","a":["jacks","car jack"],"c":"Machine","e":"Metal","z":"Small","s":"Trap","b":["Lifts"],"p":2,"sp":3,"d":7,"pc":"#C0392B","sc":"#8A929B","bp":"Weapon","sh":"scissor lift jack","m":"Spin","snd":"clank","f":"Lifts cars. Lifts enemies.","t":["tool"]}
 <<<<<<< HEAD
-{"w":"spatula","a":["spatulas"],"c":"Object","e":"Metal","z":"Small","s":"Blade","b":["Melee","Lifts","Knockback"],"p":1,"sp":7,"d":3,"pc":"#24262A","sc":"#8A929B","bp":"Weapon","sh":"flat flipping paddle","m":"Spin","snd":"clank","f":"Flips pancakes and foes.","t":["kitchen","silly"]}
 =======
 {"w":"plunger","a":["plungers","toilet plunger"],"c":"Object","e":"None","z":"Small","s":"Blade","b":["Melee","Pulls","Stuns"],"p":1,"sp":6,"d":3,"pc":"#C0392B","sc":"#7A4E2D","bp":"Weapon","sh":"rubber cup on wooden stick","m":"Spin","snd":"clank","f":"Shloop. Stuck.","t":["silly","bathroom"],"ms":["pluger","plunjer"]}
 >>>>>>> b2b4d6767b925ede09374adace91c9f44c54fb7c
