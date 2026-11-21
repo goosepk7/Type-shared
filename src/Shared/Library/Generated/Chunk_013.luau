@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
+	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
 	{"hero","LHCJNA","GDFf",6,6,6,"1D4ED8","FACC15","caped figure, bright sword, heroic pose","clang","Saves the day. Every day. Exhausted.","hero"},
 	{"heroism","KHCOKJ","GDF",3,6,5,"FFD54F","D32F2F","golden cape-shaped aura","fanfare","Main character moment.","support"},
 	{"heron","AMCJDA","AfT",3,5,2,"6A7A8E","F2F2F0","tall stalking bird, dagger beak","squawk","Stands still forever. Then stab.","bird,wetland"},
@@ -213,6 +215,7 @@ return {
 	{"howler monkey","AMBJBA","debO",2,7,2,"3A1E14","8A4A22","dark shaggy, big throat, howling","howl","Loudest land animal. Ears hurt.","mammal,primate"},
 	{"huayangosaurus","AMCJAA","GkfT",4,3,9,"8A6A3A","D8B07A","small early stegosaur","grunt","Tiny stego. Same spikes.","dinosaur,extinct,reptile,armored"},
 	{"hubcap","BKBAKK","Ue",2,8,3,"DDE3E8","C9CED4","shiny wheel cover","clang","Spinning chrome disc of doom.","urban"},
+	{"hubcap toss","BKBAJK","Uke",3,4,3,"C9CFD6","22232A","a chrome hubcap spinning flat and ricocheting between enemie","clang","It came off at the first corner.","transit,projectile,silly"},
 	{"huckleberry","IGAELB","eVP",2,7,1,"3E2A5E","6B4E8A","small round dark blue berry","pitter","Wild, tart, and hard to pick.","edible,fruit,sweet"},
 	{"huevos rancheros","IGBOKI","F",2,5,3,"F2B81A","C8302B","fried eggs on tortilla with salsa","crunch","Ranch-style eggs with a kick.","edible,healthy"},
 	{"hug","KHBAKB","FO",2,6,3,"F8BBD0","FFFFFF","warm pink glow with floating hearts","aww","Too strong to escape. Too nice to mind.","cute,support"},
@@ -400,7 +403,4 @@ return {
 	{"impundulu","ADCJDB","AeL",5,9,3,"F8FAFC","FDE047","white bird shooting lightning from wings","zap","Lays an egg of lightning. Hot potato.","mythical,bird,storm"},
 	{"inchworm","AMAJTA","CP",1,3,1,"8AC83A","C8E87A","green looping caterpillar","squelch","Measures everything. Slowly.","bug"},
 	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
-	{"indestructible","KKDOKI","Ga",2,3,10,"90A4AE","FFD54F","thick shining metal aura","clang","Tried breaking it. It broke you.","defence"},
-	{"indian paintbrush","NGBNMI","dFS",1,1,1,"E53935","FF9800","red-tipped spikes like dipped brushes","rustle","Looks dipped in paint.","plant,flower"},
-	{"indian rhino","AMDJAA","GDkIO",7,4,9,"7C7470","B0A49A","armor-plated folds, one horn","trumpet","Built with its own armor plating.","mammal,heavy,wild"},
 }

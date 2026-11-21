@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mermaid","ABCJEC","FceB",4,7,4,"0EA5E9","F472B6","fish tail, seashell top, flowing hair","sing","Lives under the sea. Collects forks.","mythical,aquatic"},
+	{"mermaid princess","ABCJEC","FcB",4,7,4,"0EA5E9","F472B6","crowned mermaid with pearl necklace","sing","Wants legs. Settles for victory.","royal,aquatic"},
+	{"mermaid queen","ABDJEC","FhB",6,6,5,"0369A1","FDE68A","crowned mermaid with pearl scepter","sing","Rules the reef. Bans plastic.","aquatic,royal"},
+	{"merman","ABCJEC","fTB",5,7,5,"0F766E","FACC15","fish-tailed warrior with a trident","splash","Ocean guard. Fin-tastic posture.","mythical,aquatic,warrior"},
+	{"merrow","ABCJEC","cB",4,6,4,"15803D","DC2626","mer-person in a red feathered cap","sing","Lose the cap, can't go home.","mythical,aquatic"},
+	{"mess","KMCNGI","jSNP",3,1,3,"F59E0B","8B5CF6","spreading sprawl of toys, crumbs, socks and spilled juice","clatter","Who made this? Nobody. It was always nobody.","silly,household"},
 	{"message in a bottle","BBAA2I","eh",1,5,1,"BFE6F2","E8D9B0","corked bottle with rolled note","thud","Help is on the way. Eventually.","container"},
 	{"messer","CKCHrK","fV",5,6,4,"8A929B","8B5A2B","knife-sword hybrid","shing","A very, very big knife.","sharp,ancient"},
 	{"meta","KLCOnE","DWT",6,7,4,"7C3AED","FACC15","ranked chart with one glowing gold entry at the top","ding","Everyone runs it. That is why it is boring.","gaming,meme"},
@@ -385,7 +391,7 @@ return {
 	{"mushroom tower","NJDMMI","GSMe",4,1,6,"B71C1C","F5F5F5","stack of giant mushrooms with spore cannon","rustle","Fires spore clouds. Achoo!","plant,fungus"},
 	{"mushroom wall","EJCCII","GUSM",3,1,5,"B71C1C","F5F5F5","stacked giant spotted mushrooms","thud","Bouncy. Spore-y. Effective.","structure,defense,fungus"},
 	{"music","KHCNOI","Fc",2,4,3,"7C4DFF","FFD54F","floating notes swirling around","music","Music soothes the savage villain.","music,support"},
-	{"music box","BMBNKI","dN",1,2,3,"5A3A1E","D4A72C","wooden box with tiny dancer","chime","Plinky lullaby. Everyone gets sleepy.","music"},
+	{"music box","BMBNKI","NO",3,3,3,"8E3B2A","C4A0EC","open cherry-wood music box with pink satin","chime","Shh. Sleepy time.","household,nursery,toy"},
 	{"music stand","BMBCII","G",1,1,3,"24262A","C9CED4","folding wire stand","strum","Holds sheet music. Holds the line.","music"},
 	{"music teacher","LLCJNA","jO",3,4,3,"7C3AED","FACC15","baton, sheet music, recorder","sing","Again, from the top.","school,music"},
 	{"music tower","EMDMII","GkSeO",4,1,6,"7E57C2","FFEB3B","tower topped with huge speakers","music","Drops the bass. Drops the enemies.","structure,defense,tower,silly"},
@@ -397,10 +403,4 @@ return {
 	{"muskellunge","ABDJEC","DfTB",5,7,4,"8A9A6A","D8D8A0","huge toothy pike","splash","The fish of ten thousand casts.","fish,aquatic"},
 	{"musket","CKCAwI","kTe",5,2,4,"5A3A1E","8A929B","long smoothbore barrel, wooden stock","bang","Aim. Fire. Spend a week reloading.","historic,ranged"},
 	{"musketeer","LKCJNA","fTe",5,7,4,"1D4ED8","F8FAFC","feathered hat, rapier, blue tabard","bang","All for one. One for snacks.","warrior"},
-	{"muskrat","ABAJAA","CdbB",1,6,1,"6A4A2A","A88A6A","water rat with flat tail","squeak","Swims, builds huts, smells musky.","mammal,cute"},
-	{"mussel","ABAJGI","GNP",1,1,6,"2A2E3A","8A7AA8","blue-black long shells","squelch","Strong mussels. Get it?","mollusk,aquatic"},
-	{"mustache","BMBADB","Ujd",2,7,2,"2C1B10","4A2F1B","curly handlebar mustache flapping like wings","twang","Instantly 40% more distinguished.","body,silly,meme"},
-	{"mustang","AMDKAA","Dkg",5,9,5,"9A5A2E","2A1E16","wild horse rearing, wind-blown mane","neigh","Untameable. Has tried saddles. Hated them.","mammal"},
-	{"mustard","IABNGI","KjP",2,4,1,"F2C21A","E8A82B","yellow squeeze bottle, squiggle","splat","Yellow, zingy, and in your eyes.","edible,sauce"},
-	{"mutant","AJCJBA","WfMV",6,5,6,"8BC34A","7B1FA2","lumpy green thing, three eyes, one giant arm, extra tail","gurgle","Fell in the goo. Came out improved. Sort of.","scifi,toxic,silly"},
 }

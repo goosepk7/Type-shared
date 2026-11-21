@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
+	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
 	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
 	{"graveyard","MIENII","SNh",5,1,7,"455A64","7CB342","crooked headstones, iron fence, fog","moan","The residents are getting restless.","spooky,undead"},
 	{"graveyard moss","NIBLMI","iSN",2,1,3,"455A64","7CB342","grey-green moss on old stones","moan","Grows on graves. Slows the living.","plant,spooky,undead"},
@@ -364,7 +366,7 @@ return {
 	{"hedge","NGCCMI","GZS",2,1,6,"2E7D32","1B5E20","tidy rectangular green bush","rustle","Neat, tidy, perfectly in the way.","plant"},
 	{"hedge fortress","NGECMI","GWFS",4,1,7,"2E7D32","1B5E20","castle shaped from clipped hedges","rustle","A castle you water.","plant"},
 	{"hedge maze","MGENII","jSN",3,1,7,"2E7D32","1B5E20","tall square hedges in winding paths","rumble","Left. Right. Left. Lost.","place,terrain,plant"},
-	{"hedge trimmer","OKCHJK","fV",4,6,4,"F1C40F","24262A","long toothed vibrating bar","whirr","Bzzzzt. Neat edges.","tool,garden"},
+	{"hedge trimmer","OKCHJK","fV",4,6,4,"F08C28","C8CED6","orange trimmer with a long toothed bar","whirr","Bzzzzt. Neat edges.","household,garden,tool"},
 	{"hedge witch","LGCJNA","WFM",4,5,4,"365314","FDE68A","mossy shawl, herb basket, crooked staff","cackle","Has a potion for that. And that.","magic,plant"},
 	{"hedgehog","AMAJAF","GCfT",1,5,4,"8A7460","F2E6D2","round spiky ball, tiny snout","squeak","Rolls into a spiky ball. Unbeatable.","mammal,wild,cute"},
 	{"hedgehog cactus","NEBLMI","GST",3,1,6,"66BB6A","E91E63","clump of round spiny heads","thud","Spiky ball family.","plant,desert,sharp,cute"},
@@ -401,6 +403,4 @@ return {
 	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
 	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
 	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
-	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
-	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
 }

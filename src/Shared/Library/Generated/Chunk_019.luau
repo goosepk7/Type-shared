@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"page","BFAAJB","ATe",1,7,1,"FFFFFF","93C5FD","single lined page fluttering edge-first","rustle","Paper cut. The worst cut.","school,sharp"},
+	{"pagoda","EMDMII","GSe",4,1,7,"C62828","263238","stacked curved roofs, many tiers","thud","Every floor has another curved roof.","structure,defense,tower"},
+	{"pagoda tree","NGDCMI","GWkS",3,1,7,"5D4037","FFF8E1","wide tree with hanging white flowers","rustle","Tiered branches like a pagoda.","plant,tree"},
+	{"pain","KDBAKB","NPO",4,8,1,"EF4444","FDE047","red throbbing star with jagged yellow zigzags","zap","It only hurts when you exist.","mood"},
+	{"pain au chocolat","IMBLKI","dSc",2,3,3,"D9963A","4A2516","flaky rectangle, chocolate bars","chomp","A croissant with a secret.","edible,sweet"},
+	{"paint","BMAAJI","je",1,6,1,"C0392B","2F6FD1","splash of bright paint","splat","Colour outside the lines.","art"},
 	{"paint bomb","CMBGKF","jeP",2,7,1,"D0349A","F1C40F","balloon full of bright paint","splat","Splat art, delivered fast.","silly"},
 	{"paint palette","BMBIyI","j",1,5,2,"C49A6C","C0392B","wooden palette with paint blobs","splat","Every colour of victory.","art"},
 	{"paint roller","JMDNJF","kSN",3,6,3,"3E8EDE","F2C230","giant fluffy roller soaked in blue paint","splash","Paint the town. And the enemy.","household,diy,art"},
@@ -397,10 +403,4 @@ return {
 	{"piston","OKCL1I","klI",5,4,7,"8A929B","4A4D52","cylinder with punching rod","hum","Kachunk! Pushed.","mechanical"},
 	{"piston rush","KFCHKI","Dkf",6,10,1,"78C8FF","4A505C","calf engines spit blue jets into a sonic-boom kick","vroom","Zero to forty studs before you finished blinking.","anime,quirk,speed"},
 	{"pit","MEDL5I","SHNO",6,1,8,"3E2A14","111111","round dark hole in the ground with crumbling edges","echo","Hellooo? ...ellooo? ...llooo?","trap,terrain"},
-	{"pit viper","AMCJCD","fMN",4,6,3,"6AA04A","E8E07A","green viper, heat pits","hiss","Sees body heat. Spooky.","reptile,venomous"},
-	{"pita","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","round flat pocket bread","whoosh","A bread with a secret pocket.","edible"},
-	{"pita chips","IMBAKK","Uke",3,7,2,"E8C07A","C8904A","crisp triangle chips","whoosh","Crunchy bread triangles.","edible,snack"},
-	{"pitbull","AMCJAA","DQf",5,7,4,"8C7E72","F2EEE8","muscular wide head, big smile","bark","Big smile. Bigger heart.","mammal,pet"},
-	{"pitch","MGENnI","DSN",5,1,6,"22C55E","FFFFFF","striped mown grass with white lines and corner flags","whistle","Get off the grass. Unless you are winning.","sport,place"},
-	{"pitch black","FIDNOI","jZ",4,5,3,"000000","212121","absolute black dome","hush","Can't see your own hand.","spooky,stealth"},
 }

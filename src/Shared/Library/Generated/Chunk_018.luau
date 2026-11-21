@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"muskrat","ABAJAA","CdbB",1,6,1,"6A4A2A","A88A6A","water rat with flat tail","squeak","Swims, builds huts, smells musky.","mammal,cute"},
+	{"mussel","ABAJGI","GNP",1,1,6,"2A2E3A","8A7AA8","blue-black long shells","squelch","Strong mussels. Get it?","mollusk,aquatic"},
+	{"mustache","BMBADB","Ujd",2,7,2,"2C1B10","4A2F1B","curly handlebar mustache flapping like wings","twang","Instantly 40% more distinguished.","body,silly,meme"},
+	{"mustang","AMDKAA","Dkg",5,9,5,"9A5A2E","2A1E16","wild horse rearing, wind-blown mane","neigh","Untameable. Has tried saddles. Hated them.","mammal"},
+	{"mustard","IABNGI","KjP",2,4,1,"F2C21A","E8A82B","yellow squeeze bottle, squiggle","splat","Yellow, zingy, and in your eyes.","edible,sauce"},
+	{"mutant","AJCJBA","WfMV",6,5,6,"8BC34A","7B1FA2","lumpy green thing, three eyes, one giant arm, extra tail","gurgle","Fell in the goo. Came out improved. Sort of.","scifi,toxic,silly"},
 	{"muttaburrasaurus","AMDJAA","dk",5,5,6,"7A6A4A","C8A87A","bumpy nose","honk","Big nose bump. Australian.","dinosaur,extinct,reptile"},
 	{"mutton curry","IABNGI","KSP",4,4,2,"8A3A1E","D9A02B","dark meaty curry","sizzle","A hearty, heavy curry.","edible,spicy"},
 	{"muzzle","BMBLJI","O",1,1,3,"6B4226","5B6168","cage-like snout strap","clink","No biting allowed.","equipment"},
@@ -397,10 +403,4 @@ return {
 	{"pademelon","AMBJAG","Uf",2,6,2,"8A6A4A","C8A07A","small round forest wallaby","chirp","Sounds like a melon. Isn't one.","mammal,marsupial"},
 	{"padlock","BKALJK","GO",1,3,7,"B58A3A","8A929B","heavy padlock with shackle","clank","Click. No entry.","tool"},
 	{"paella","IACELB","KFeP",2,6,1,"E8A02B","C8302B","wide pan of saffron rice, seafood","pitter","A giant pan of golden rice.","edible,grain"},
-	{"page","BFAAJB","ATe",1,7,1,"FFFFFF","93C5FD","single lined page fluttering edge-first","rustle","Paper cut. The worst cut.","school,sharp"},
-	{"pagoda","EMDMII","GSe",4,1,7,"C62828","263238","stacked curved roofs, many tiers","thud","Every floor has another curved roof.","structure,defense,tower"},
-	{"pagoda tree","NGDCMI","GWkS",3,1,7,"5D4037","FFF8E1","wide tree with hanging white flowers","rustle","Tiered branches like a pagoda.","plant,tree"},
-	{"pain","KDBAKB","NPO",4,8,1,"EF4444","FDE047","red throbbing star with jagged yellow zigzags","zap","It only hurts when you exist.","mood"},
-	{"pain au chocolat","IMBLKI","dSc",2,3,3,"D9963A","4A2516","flaky rectangle, chocolate bars","chomp","A croissant with a secret.","edible,sweet"},
-	{"paint","BMAAJI","je",1,6,1,"C0392B","2F6FD1","splash of bright paint","splat","Colour outside the lines.","art"},
 }

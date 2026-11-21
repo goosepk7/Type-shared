@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"caramel chews","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","wrapped golden squares","gloop","Chewy squares. Teeth trap.","edible,sticky,candy"},
+	{"caramel corn","IMBGKF","EN",4,6,1,"C68E3A","F2D08A","golden clumps of popcorn","pop","Crunch, stick, repeat.","edible,explosive,candy"},
 	{"caramel popcorn","IMBGKF","ENP",4,6,1,"D9A04A","F7E8C8","glossy golden popcorn clusters","pop","Sweet, sticky, and still explodes.","edible,explosive,sweet"},
 	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
 	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
@@ -121,7 +123,7 @@ return {
 	{"cecropia moth","AMAJFB","jdA",1,5,1,"8A3A2A","F2E8D8","huge red-brown moth","flutter","North America's biggest moth.","insect,cute"},
 	{"cedar","NGECMI","GWkS",4,1,8,"795548","33691E","layered flat branch tiers","rustle","Smells nice. Hits hard.","plant,tree"},
 	{"ceiling","EEDLnI","GkO",6,2,7,"F5F5F0","C9C9C0","white ceiling slab with a wobbling light, dropping","crash","Look up. Too late.","household,heavy"},
-	{"ceiling fan","OFCNJK","INP",2,5,4,"8B5A2B","F2F2EE","five blades on a ceiling hub","clank","Gentle spin, mild breeze, big chop.","tool"},
+	{"ceiling fan","OFCNJK","kSP",3,5,4,"8B5A2B","E6B650","walnut-bladed ceiling fan crashing down","clank","It was wobbling for weeks. Now it's YOUR problem.","household,living room"},
 	{"celeriac","IEBAKK","keO",3,7,6,"C8B88A","E8E0C8","gnarly pale root ball","bonk","The ugliest vegetable. Very proud.","edible,vegetable"},
 	{"celery","IGBHJI","kf",3,5,4,"9DC183","D9EBC0","tall pale ribbed stalks, leafy top","bonk","Takes more energy to eat than it gives.","edible,silly,vegetable"},
 	{"celestial lion","AHDJAA","Dfe",6,7,5,"1E3A8A","FDE68A","lion made of connected stars","roar","Roars in starlight.","cosmic"},
@@ -326,7 +328,7 @@ return {
 	{"chocolate donut","IMBLKI","dSc",2,3,3,"4A2516","7A4026","chocolate glazed ring","chomp","Chocolate on chocolate.","edible,sweet"},
 	{"chocolate drink","IABOKI","KF",2,5,2,"5A3220","F7F2EC","cup of chocolate","slurp","Chocolate, liquified.","edible,drink,warm"},
 	{"chocolate eggs","IMBLKI","dSc",2,3,3,"7A4026","F2A6C8","foil-wrapped egg","chomp","An egg that never hatches. Just melts.","edible,sweet,candy,holiday"},
-	{"chocolate fountain","IMDFII","ScIN",5,3,3,"5A2E16","7A4026","tiered fountain of flowing chocolate","gloop","An unstoppable river of chocolate.","edible,sticky,candy"},
+	{"chocolate fountain","IMDMII","SeN",3,3,5,"5A3018","C9CED4","three-tier steel fountain pouring melted chocolate","splash","Dip anything. Including enemies.","kitchen,turret,summon,edible,sweet"},
 	{"chocolate ice cream","ICBAKJ","JeN",3,5,2,"5A3220","7A4026","dark brown scoop","squish","Chocolate, now freezing.","edible,frozen,sweet"},
 	{"chocolate log","IMBGKF","DkI",3,5,6,"5A2E16","F7F7F2","chocolate cake log, bark texture","rumble","A log of cake. Christmas magic.","edible,heavy,candy,holiday"},
 	{"chocolate malt","ICBOKJ","JF",3,5,2,"8A5A3A","F7F2EC","frothy malt shake","squish","Old-school creamy malt.","edible,frozen,sweet"},
@@ -401,6 +403,4 @@ return {
 	{"city wall","EEECII","GS",3,1,10,"BCAAA4","8D6E63","long high wall with walkway and towers","thud","The whole town hides behind this.","structure,defense,ancient"},
 	{"civet","AMBJAA","CfM",2,5,3,"8A8070","1E1E1E","spotted, banded tail, masked face","squeak","Smells musky. Proudly.","mammal,wild"},
 	{"civilization","MEFNqI","GWSh",8,1,9,"D6C6A8","3B82F6","sprawl growing from huts to towers to rockets in a blink","crowd","From mud huts to moon rockets. One more turn.","place,ancient"},
-	{"claidheamh","CKDHJK","kf",7,4,6,"8A929B","2E5E3E","basket-hilt broadsword","shing","Big sword with tartan pride.","fantasy,sharp"},
-	{"clam","ABAJGI","GfHN",1,1,6,"D8C8B0","9A8A70","two-shell clam half open","squelch","Happy as a clam. Allegedly.","mollusk,aquatic"},
 }
