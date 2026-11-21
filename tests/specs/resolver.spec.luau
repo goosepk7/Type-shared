@@ -48,7 +48,7 @@ return function(t)
 	end)
 
 	t.test("fun inputs land on exciting things", function()
-		t.eq(Resolver.resolveLocal("small tornado").id, "mini tornado")
+		t.eq(Resolver.resolveLocal("small tornado").id, "small tornado") -- Weather lane signature (wave 7) folded the plain mini tornado
 		t.ok(Schema.has(Resolver.resolveLocal("small tornado"), "Knockback"), "small tornado flings")
 		t.eq(Resolver.resolveLocal("wall made of metal").material, "metal")
 		t.ok(Resolver.resolveLocal("spaghetti dragon").synonymGroup ~= Resolver.resolveLocal("dragon").synonymGroup, "material group")

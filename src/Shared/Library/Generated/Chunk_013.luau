@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hiccup","KMAOKG","jY",1,8,1,"F8BBD0","FFFFFF","tiny hopping bubble","hic","Hic! Random teleport.","silly"},
 	{"hickory","NGDCMI","GWkS",4,1,8,"795548","8BC34A","tall shaggy-bark tree","rustle","Shaggy bark, tough wood.","plant,tree"},
 	{"hide","KIBOKI","Z",1,5,3,"78909C","ECEFF1","caster blending into the background","hush","Shh. I am a bush.","stealth,silly"},
 	{"hide and seek","KIBOKI","ZY",1,6,2,"8D6E63","FFFFFF","caster vanishing behind sparkles","giggle","Ready or not, here I... where'd I go?","silly,stealth"},
@@ -402,5 +403,4 @@ return {
 	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
 	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
 	{"ink blot","FIBAKI","je",2,6,2,"14141C","3B4CCA","a lobbed glob of ink that splats and smears the screen","splat","Can't see? That's the idea.","cartoon,silly"},
-	{"ink monster","AICJGA","jZN",4,5,3,"0A0A0A","312E81","dripping ink-blot creature","squelch","Stains everything. Including your record.","spooky"},
 }

@@ -85,6 +85,7 @@ return {
 	{"slurpee","ICBNGI","JN",3,3,2,"E8434F","4FA3E8","cup of colorful frozen slush","crackle","Brain freeze on demand.","edible,frozen,sweet"},
 	{"slushie machine","OCCM1I","JN",2,2,5,"47D7E8","C0392B","tank of spinning icy drink","clang","Brain freeze, weaponised.","kitchen,household"},
 	{"smack","KMBAKB","kf",3,9,1,"FF8A80","FFFFFF","giant cartoon hand swat","smack","Rude, but effective.","silly"},
+	{"small tornado","HFBN5K","Qkl",4,7,3,"A9BCC8","EEF3F5","knee-high funnel that skitters after you and flings you","whoosh","Small, angry and very spinny.","weather,storm,cute,wind"},
 	{"smartwatch","BDAO1I","c",1,6,2,"24262A","BFE6F2","wrist screen watch","beep","Notifications: you are winning.","tech"},
 	{"smash","KECAKB","kfO",6,7,3,"8D6E63","FFE082","giant fist-shaped impact burst","crash","Big hands. Big crash. Big fun.","heavy"},
 	{"smell","FJCDOJ","jSIP",3,4,1,"A3B18A","D9E76C","wavy green stink lines rising from an old trainer","whiff","Whoever smelt it, dealt it.","gross,silly"},
@@ -402,5 +403,4 @@ return {
 	{"spinning top","BMAGKK","jkf",2,7,4,"C0392B","2F6FD1","pointed spinning toy","squeak","Spins forever. Dizzies everyone.","toy"},
 	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
 	{"spinning wheel","OMCL1I","NO",2,1,4,"8B5A2B","D8CBB5","wooden wheel with spindle","clank","Spins wool. Spins traps.","mechanical,fantasy"},
-	{"spinosaurus","AMEJBA","DkfTHB",8,6,7,"8A4A2A","D8783A","crocodile snout, giant back sail","roar","Swims, fishes, has a sail. Overachiever.","dinosaur,extinct,reptile,predator"},
 }

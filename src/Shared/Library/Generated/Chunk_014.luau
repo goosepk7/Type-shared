@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ink monster","AICJGA","jZN",4,5,3,"0A0A0A","312E81","dripping ink-blot creature","squelch","Stains everything. Including your record.","spooky"},
 	{"ink strike","KIBOKI","Dk",8,9,1,"E8E2D6","B3172B","world flashes to black-and-red ink for one hit","thump","Next hit gets its own page.","anime,manga"},
 	{"inkanyamba","ADEJCC","kLB",8,5,7,"1E3A8A","FDE047","huge horse-headed eel of storms","thunder","When it's angry, storms happen.","mythical,storm"},
 	{"inkcap","NIBLMI","jSP",3,1,2,"ECEFF1","212121","tall shaggy cap melting into black ink","poof","Melts into ink. Gross. Effective.","plant,fungus"},
@@ -402,5 +403,4 @@ return {
 	{"lacewing","AMAJFB","jdAF",1,5,1,"8AE04A","E8F8E0","lacy green clear wings","flutter","Eats aphids. Looks like lace.","insect,cute"},
 	{"lacrosse ball","BMAA3F","ke",2,9,5,"F2F2EE","F2F2EE","solid rubber ball","bonk","Hard. Fast. Ouch.","sport"},
 	{"lacrosse stick","BMCHJK","fe",2,7,4,"F2F2EE","1F2F55","stick with a netted pocket","bonk","Catch, cradle, fling.","sport"},
-	{"ladder","BMCCII","Gl",1,3,4,"C49A6C","8A929B","tall two-rail ladder","clank","Climbs walls. Carry it everywhere.","tool"},
 }

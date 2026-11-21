@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spinosaurus","AMEJBA","DkfTHB",8,6,7,"8A4A2A","D8783A","crocodile snout, giant back sail","roar","Swims, fishes, has a sail. Overachiever.","dinosaur,extinct,reptile,predator"},
 	{"spiny lobster","ABBJRA","GfT",3,4,5,"C8701E","F2D0A0","long spiny antennae lobster","clack","Screeches its antennae like a violin.","crustacean,aquatic,armored"},
 	{"spiny mouse","AMAJAA","CdFTb",1,6,1,"8A7A6A","F2E8D8","mouse with spiky back","squeak","Regrows skin like a lizard.","mammal,cute"},
 	{"spiny-tailed iguana","AMBJAA","Cf",2,9,2,"6A6A5A","C8B88A","iguana with spiky tail","hiss","Fastest lizard on the planet.","reptile"},
@@ -402,5 +403,4 @@ return {
 	{"summer","GADNOI","KFS",4,4,4,"FFB300","FFF59D","bright sun haze, warm golden light","hum","School is out. Sun is in.","fire,holiday"},
 	{"summer camp","MGDNII","FSch",4,1,5,"15803D","F59E0B","log cabins, canoes, a flagpole and a friendship bracelet","crackle","Dear Mum. Camp is fine. Send snacks.","outdoor,place"},
 	{"summon","KLCJNA","h",4,5,3,"7C4DFF","FFD54F","glowing summoning circle with a figure rising","warp","Who did you call? Something big.","magic"},
-	{"summoner","LLCJNA","ehY",5,4,3,"6D28D9","F0ABFC","robes with summoning circle sigils","zap","Doesn't fight. Has friends who do.","magic"},
 }
