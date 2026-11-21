@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mercury","FKBF6F","MNV",4,6,3,"BFC5CC","8A939C","rolling liquid mirror blobs","slosh","Liquid metal that refuses to sit still.","toxic,shiny"},
+	{"mercury planet","MAEGKJ","KDke",7,6,9,"9E9E9E","795548","small cratered grey sphere","rumble","Smallest planet. Fastest punch.","space"},
+	{"mercury wave","FKDF6F","kNP",7,5,5,"B0BEC5","ECEFF1","rolling mirror-silver liquid wave","slosh","Shiny. Heavy. Unstoppable.","heavy,shiny"},
+	{"mercy","KHBOKJ","F",1,4,3,"FFF8E1","B3E5FC","soft white feather glow","chime","Spared. This time.","holy,support"},
 	{"merganser","ABBJDC","AfTB",2,5,2,"2A6A4A","F2F2F2","crested fish duck with saw bill","quack","Duck with teeth. Kinda.","bird,aquatic"},
 	{"merge","KLCOKI","WF",5,4,4,"FFB74D","7E57C2","two glows swirling into one","warp","Two become one. Bigger one.","magic"},
 	{"meringue","IMBLGG","USN",2,3,3,"F7F4F0","F2E2D0","swirled white peak","wobble","A sugar cloud with crunch.","edible,wobbly,sweet"},
@@ -399,8 +403,4 @@ return {
 	{"music stand","BMBCII","G",1,1,3,"24262A","C9CED4","folding wire stand","strum","Holds sheet music. Holds the line.","music"},
 	{"music teacher","LLCJNA","jO",3,4,3,"7C3AED","FACC15","baton, sheet music, recorder","sing","Again, from the top.","school,music"},
 	{"music tower","EMDMII","GkSeO",4,1,6,"7E57C2","FFEB3B","tower topped with huge speakers","music","Drops the bass. Drops the enemies.","structure,defense,tower,silly"},
-	{"musical chairs","KFCN0K","jSIO",3,6,3,"EC4899","FACC15","ring of chairs, one too few, music stopping dead","music","The music stopped. There is no chair for you.","party,toy"},
-	{"musician","LMCJNA","jceO",4,5,4,"7C3AED","FCD34D","performer with a guitar on back and drumsticks in hand","music","One, two, three, four! Solo of doom.","music"},
-	{"musk deer","AMBJAA","DkT",3,8,4,"6A5A44","C8B8A0","small deer with long fangs","bleat","No antlers. Vampire fangs instead.","mammal,wild"},
-	{"musk ox","ACDJAA","GDkO",6,4,7,"3E3026","C2B29A","long shaggy coat, helmet horns","moo","Forms a wall. Dares you.","mammal,heavy,arctic"},
 }

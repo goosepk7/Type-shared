@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sizzle","KABNOI","K",3,6,1,"FF7043","FFF3E0","bubbling hot shimmer on ground","sizzle","Tssss.","fire,silly"},
+	{"sizzling skillet","BADN2I","KlS",3,3,5,"2A2628","FF8A3C","giant black cast-iron skillet glowing hot","sizzle","Hot, hot, hot! Dance!","kitchen,zone,fire"},
+	{"skate","ABBJEC","STB",2,5,3,"9A8A72","E8E0D4","flat diamond body, thin tail","whoosh","Ray's less pointy cousin.","fish,aquatic,ocean"},
+	{"skate park","EMCNII","UlS",2,1,6,"BDBDBD","7E57C2","concrete ramps and bowls","thud","Ramp up, fly out.","structure,building,sport"},
+	{"skateboard","DMAKHF","UDkg",2,7,2,"F28C28","1A1A1A","flat deck, four tiny wheels, grip tape","clack","Kickflip into battle.","mechanical,vehicle,land,sport"},
+	{"skateboard kickflip","BFBOHL","Dke",4,9,2,"3BB7E8","FFD24A","skateboard dash ending in a kickflip that flings the board","clack","Landed it. On you.","transit,skate,movement"},
 	{"skateboarder","LMCJNL","UDd",3,9,3,"DC2626","111827","helmet, skateboard, ollie pose","whoosh","Grinds on rails. And your nerves.","sport"},
 	{"skateboarding","KMBOHF","UDk",3,9,2,"111827","FACC15","board flipping under mid-air trainers, grind sparks","clack","Kickflip! Landed it. Nobody was filming.","sport,cool"},
 	{"skating","KCBONK","UDj",3,8,2,"F8FAFC","F472B6","figure in a spin on one blade, arms up, ice sparkles","swish","Triple axel. Double wobble. Single bruise.","sport,frozen"},
@@ -397,10 +403,4 @@ return {
 	{"spellblade","LLCJNA","feY",6,6,6,"4338CA","94A3B8","armor with rune-glowing sword","zap","Can't decide between swords and magic. Chose both.","magic,warrior"},
 	{"spellbloom","NLBNMI","FS",3,1,2,"7C4DFF","40C4FF","flower humming with magic energy","chime","Recharges your magic. Very sparkly.","plant,magic,mythical"},
 	{"spellbook","BLBOJK","eh",5,4,3,"7D3CB5","D4A72C","leather-bound book with glowing runes","tap","Chapter one: everything explodes.","magic,fantasy"},
-	{"spelling","KLBALB","jaO",3,6,2,"DC2626","FACC15","scrambled letter tiles with red squiggly underlines","buzz","Speling. Spelking. Splelling. Close enough.","school,meme"},
-	{"spelling bee champ","LLCJNI","je",4,5,3,"FACC15","1D4ED8","kid at a mic with a trophy","ding","Can spell any word. Including your doom.","school"},
-	{"spelunker","LECJNA","Cc",3,5,4,"F97316","57534E","headlamp, rope, helmet","clank","Goes deep. Comes back dusty.","explorer"},
-	{"sperm whale","ABFJEC","kfIOB",8,3,9,"4A4E56","8E949C","huge boxy head, small jaw with teeth","whalesong","Fights giant squid in the deep dark.","mammal,aquatic,ocean,heavy"},
-	{"spetum","CKDAuI","fTH",5,5,5,"8A929B","5A3A1E","three-point polearm head","whoosh","Points for days.","medieval,sharp"},
-	{"sphere","BLBG3J","URa",3,6,5,"22D3EE","E0F2FE","flawless shiny cyan ball with one highlight","hum","No edges. No weaknesses. No personality.","school,shape"},
 }

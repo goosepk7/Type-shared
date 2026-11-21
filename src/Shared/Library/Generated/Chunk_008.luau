@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dinosaur car","DMCKHL","Dkfg",4,6,5,"43A047","FFEB3B","car shaped like a dinosaur","engine","RAWR. Vroom. RAWR.","vehicle,silly"},
+	{"dinosaur costume kid","LMBJNA","Dd",2,7,3,"15803D","F97316","kid in inflatable dinosaur suit","roar","Stomps. Rawrs. Trips.","cute,silly"},
 	{"dinosaur egg","AMBJKI","Wh",2,4,4,"D8C8A8","8A7A5A","big speckled egg, cracking open","growl","Something inside is getting impatient.","extinct,ancient,dinosaur"},
 	{"dip","IMBL2I","ScN",2,1,2,"F5F0DC","84CC16","bowl of creamy dip with one broken chip stuck in","gloop","Double dippers will be prosecuted.","edible,sauce,sticky"},
 	{"diplodocus","AMFJAA","kIO",8,2,9,"8A8A6A","C8C0A0","very long neck, very long whip tail","rumble","Longer than three buses.","dinosaur,extinct,reptile,heavy"},
@@ -321,7 +323,7 @@ return {
 	{"editor","LMCJNA","TeX",3,5,3,"B91C1C","F8FAFC","person with a giant red pen crossing things out","scratch","Too long. Cut the enemy by half.","job,school"},
 	{"edmontonia","AMDJAA","GkfT",6,3,9,"6A6A4A","C8A87A","shoulder spikes, armored","grunt","Shoulder spikes like a hockey player.","dinosaur,extinct,reptile,armored"},
 	{"edmontosaurus","AMDJAA","dk",5,5,6,"6A7A6A","C8C0A0","big flat duckbill","honk","Thousands of teeth. Eats plants.","dinosaur,extinct,reptile"},
-	{"eel","ABCJCC","DZfB",4,7,4,"5A6A3A","C8C88A","long snakelike fish, open mouth","splash","Slippery. Snappy. Hides in holes.","fish,aquatic"},
+	{"eel zap","ADCNCC","LOB",4,6,2,"46783C","46DCFF","an eel bursts from a puddle and zaps everyone in it","zap","Slippery. Snappy. Also a battery.","critter,fish,zone,stun"},
 	{"eelgrass","NBCLMI","ZSNB",1,1,2,"558B2F","7CB342","long ribbons waving underwater","splash","Waves gently. Hides everything.","plant,aquatic"},
 	{"egg","IMBAKF","jke",3,6,2,"F7F2E8","F2D23A","smooth white oval","splat","Fragile, but makes a satisfying splat.","edible,breakfast"},
 	{"egg and cheese","IGBOKI","F",2,5,3,"F2D23A","F2C24A","melty egg cheese stack","crunch","Simple, melty, morning power.","edible,healthy,breakfast"},
@@ -401,6 +403,4 @@ return {
 	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
 	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
 	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
-	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
-	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 }

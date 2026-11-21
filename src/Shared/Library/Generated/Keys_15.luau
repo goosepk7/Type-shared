@@ -3,13 +3,20 @@
 -- owner ordinals and Double Metaphone codes ("PRI" or "PRI/ALT").
 return {
 	keys = {
-		"zucchini plant","zucchini-bread","zucchini-breads","zucchinibread","zucchinibreads","zucchinis","zulu warrior","zuniceratops","zuniceratopses","zuppa toscana","zuppa-toscana","zuppatoscana","zweihander","zweihanders",
+		"zombie fungus","zombie giant","zombie grab","zombie hand","zombie hand field","zombie hand trap","zombie hands","zombie hoard","zombie horde","zombie hound","zombie hunter","zombie hunters","zombie king","zombie lord","zombie mage","zombie mushroom",
+		"zombie pirate","zombie pirates","zombie shark","zombie slayer","zombie swarm","zombie unicorn","zombie viking","zombie wizard","zombiefungus","zombiefunguses","zombies","zombies rising","zomg","zone","zone of silence","zones",
+		"zongzi","zoo","zoo keeper","zookeeper","zookeepers","zoologist","zoologists","zoom","zoom lane","zoom punch","zoomer","zoomers","zoomies","zooming","zooms","zoos",
+		"zorilla","zorillas","zoro","zucchini","zucchini bread","zucchini breads","zucchini plant","zucchini-bread","zucchini-breads","zucchinibread","zucchinibreads","zucchinis","zulu warrior","zuniceratops","zuniceratopses","zuppa toscana",
+		"zuppa-toscana","zuppatoscana","zweihander","zweihanders",
 	},
 	owners = {
-		9722,11604,11604,11604,11604,11603,11605,11606,11606,11607,11607,11607,11608,11608,
+		11591,11592,11593,11593,11593,11593,11593,11594,11594,11590,11595,11595,11596,11596,11597,11591,11598,11598,11599,11595,11594,11600,11601,11597,11591,11591,11587,11593,7080,11602,9159,11602,11603,11604,11605,11605,11605,11606,11606,11607,
+		10667,9465,11608,11608,11607,11607,11607,11604,11609,11609,10746,11610,11611,11611,9729,11611,11611,11611,11611,11610,11612,11613,11613,11614,11614,11614,11615,11615,
 	},
 	phon = {
-		"SXNP","SXNP","SXNP","SXNP","SXNP","SXNS","SLRR","SNSR","SNSR","SPTS","SPTS","SPTS","SHNT","SHNT",
+		"SMPF","SMPJ/SMPK","SMPK","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPK","SMPL","SMPM","SMPM","SMPP","SMPP","SMPX","SMPS","SMPS","SMPN","SMPF","SMPS/SMPT",
+		"SMPF","SMPF","SMPS","SMPS","SMK","SN","SNFS","SNS","SNKS","S","SKPR","SKPR","SKPR","SLJS/SLKS","SLJS/SLKS","SM","SMLN","SMPN","SMR","SMRS","SMS","SMNK","SMS","SS",
+		"SRL/SR","SRLS","SR","SXN","SXNP","SXNP","SXNP","SXNP","SXNP","SXNP","SXNP","SXNS","SLRR","SNSR","SNSR","SPTS","SPTS","SPTS","SHNT","SHNT",
 	},
-	kinds = "AAAAAAIIAIAAIA",
+	kinds = "IIAAAAIAIAIAIAIAIAIAAIIAAAAAAIAAIIAIAIAIAAIAAAAAIAAIIAAAAAAAIIAIAAIA",
 }

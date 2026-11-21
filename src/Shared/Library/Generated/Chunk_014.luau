@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"impatiens","NGBNMI","dEFS",1,1,2,"F06292","FFFFFF","bushy little flat blooms","rustle","Seed pods explode when touched. Pop!","plant,flower"},
+	{"implode","KIDGKI","EHO",7,6,1,"1A0033","B388FF","everything crumpling into a dark point","whum","Explosion, but backwards.","space,explosive"},
+	{"impostor","LICJNA","jZb",4,6,4,"DC2626","F8FAFC","teammate shape with a suspicious smile","whisper","Kinda sus. Definitely sus.","meme,villain"},
+	{"imprison","KLCLII","GO",6,4,6,"546E7A","FFD54F","glowing bars slamming down around target","clank","Go directly to jail.","magic"},
 	{"impundulu","ADCJDB","AeL",5,9,3,"F8FAFC","FDE047","white bird shooting lightning from wings","zap","Lays an egg of lightning. Hot potato.","mythical,bird,storm"},
 	{"inchworm","AMAJTA","CP",1,3,1,"8AC83A","C8E87A","green looping caterpillar","squelch","Measures everything. Slowly.","bug"},
 	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
@@ -399,8 +403,4 @@ return {
 	{"kraken","ABFJCC","kHOB",9,4,9,"7F1D1D","F87171","colossal squid with ship-crushing tentacles","roar","Release it. Please. It's been waiting.","mythical,aquatic,boss,danger"},
 	{"kraken king","ABFJCC","kHOB",9,3,10,"450A0A","FCA5A5","sky-sized kraken with crown of barnacles","roar","Eats fleets. Burps anchors.","mythical,aquatic,boss,danger"},
 	{"kraken spawn","ABBJCC","HB",3,6,3,"991B1B","FCA5A5","small red squid with big eyes","splash","One day it'll eat ships. Today it eats shrimp.","aquatic,cute"},
-	{"kraken tentacle","ABDLCI","kHO",6,4,6,"991B1B","FCA5A5","enormous tentacle rising from the floor","splash","Something's down there. Something big.","aquatic,trap"},
-	{"krampus","AIDJNA","Dfh",6,6,6,"1C1917","DC2626","shaggy horned figure with chains and basket","cackle","Santa's grumpy partner. Very hairy.","spooky,christmas,holiday"},
-	{"krill","ABBJLA","fPB",2,4,5,"F27A6A","F2C0B0","tiny see-through pink shrimp swarm","clack","Small. Many. Whale snack.","crustacean,aquatic,armored"},
-	{"kris","CKBHrK","fT",4,8,3,"8A929B","D4A72C","wavy serpentine dagger","shing","Wiggly blade, straight to the point.","sharp,ancient"},
 }

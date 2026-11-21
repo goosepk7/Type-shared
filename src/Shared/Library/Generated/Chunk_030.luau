@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"zombie viking","AJCJNA","DfM",5,4,6,"65A30D","78350F","rotting viking with axe and horned helm","groan","Valhalla rejected him.","undead,norse"},
+	{"zone","MDEN5I","KSIX",6,2,5,"A855F7","38BDF8","closing purple energy ring with a shrinking safe circle","whum","The circle is closing. You are not in it.","gaming"},
+	{"zongzi","IMBAKK","keO",3,7,6,"5E7A3A","F7F4EC","leaf-wrapped pyramid","bonk","A rice pyramid in leaf armour.","edible"},
+	{"zoo","MEENII","dSh",3,1,6,"7CB342","C9A55A","enclosures, paths, animals peeking out","rumble","Opens every cage at once.","place,terrain,silly"},
+	{"zookeeper","LGCJNA","ch",3,5,4,"65A30D","D6A35A","khaki shirt, bucket of fish, keys","whistle","Accidentally left all cages open.","outdoor"},
+	{"zoologist","LGCJNA","ch",3,5,4,"65A30D","D6A35A","khaki, binoculars, notebook","whistle","Knows every animal. Calls them over.","science"},
+	{"zoom","KFBOKB","D",3,10,2,"FFEB3B","FFFFFF","speed lines and blur","zoom","Zoom zoom. Catch me if you can.","speed,silly"},
 	{"zoomer","LDBJNA","DjdY",3,9,2,"22D3EE","F472B6","kid filming a dance on a phone, oversized hoodie","beep","Attention span: this long. What were we","meme,silly"},
 	{"zorilla","AJBJAA","CjfTM",3,8,2,"1E1E1E","F2F2F2","stripy skunk-like weasel","chatter","Smells worse than skunks. Wow.","mammal,predator"},
 	{"zucchini","IMBHJI","kf",4,5,4,"3E6B2A","9EC86A","long dark green club","bonk","The vegetable that gets everywhere.","edible,silly"},

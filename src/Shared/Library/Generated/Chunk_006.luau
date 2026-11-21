@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"city wall","EEECII","GS",3,1,10,"BCAAA4","8D6E63","long high wall with walkway and towers","thud","The whole town hides behind this.","structure,defense,ancient"},
 	{"civet","AMBJAA","CfM",2,5,3,"8A8070","1E1E1E","spotted, banded tail, masked face","squeak","Smells musky. Proudly.","mammal,wild"},
 	{"civilization","MEFNqI","GWSh",8,1,9,"D6C6A8","3B82F6","sprawl growing from huts to towers to rockets in a blink","crowd","From mud huts to moon rockets. One more turn.","place,ancient"},
 	{"claidheamh","CKDHJK","kf",7,4,6,"8A929B","2E5E3E","basket-hilt broadsword","shing","Big sword with tartan pride.","fantasy,sharp"},
@@ -362,6 +363,7 @@ return {
 	{"covered wagon","DMDKHL","Dkgh",4,4,6,"F2E6C9","6D4C41","canvas hoop roof, big spoked wheels","engine","Westward ho! Enemies, whoa!","mechanical,vehicle,land,ancient"},
 	{"cow","AMDJAA","Ddk",5,4,7,"F2F0EC","1A1A1A","black and white patches, udder, bell","moo","Says moo. Means it.","mammal,heavy,farm"},
 	{"cow catapult","CMDMxI","keO",5,3,5,"8B5A2B","F2F2EE","catapult with a very surprised cow","creak","Mooooove out of the way.","silly"},
+	{"cow stampede","AEDNAA","DkI",7,8,3,"ECECE6","6E5438","a herd of cows thunders down a marked lane","moo","They were promised greener grass.","critter,mammal,ultimate,line"},
 	{"cowardice","KIBAKB","jI",2,8,1,"FFF59D","9E9E9E","wobbly yellow fear sparkle","eek","Run away! Run away!","silly"},
 	{"cowbell","BKAFJI","jO",1,6,3,"C9CED4","24262A","tin bell with stick","clang","Needs more cowbell.","music,silly"},
 	{"cowbird","AMAJDB","dA",1,7,1,"2A2A2A","6A4A3A","small blackbird","tweet","Babysitting? Not my job.","bird,cute"},
@@ -401,6 +403,4 @@ return {
 	{"crane truck","DMEKHL","klHg",5,3,9,"F2B705","C0392B","truck with long telescoping boom and hook","engine","The claw machine always wins this time.","mechanical,vehicle,land"},
 	{"crank","OKBLJK","lH",2,3,6,"5B6168","B89B6A","drum with crank handle and rope","clank","Wind it in, slow and steady.","tool"},
 	{"crappie","ABBJEC","dB",2,6,1,"8A9A8A","3A3A3A","speckled panfish","splash","Speckled and snacky.","fish,aquatic"},
-	{"crash","KMCAKB","kO",5,8,3,"90A4AE","FFCC80","tumbling impact with debris","crash","Wham. Everything everywhere.","silly"},
-	{"crate","BMCC2I","Gk",2,1,6,"8B5A2B","D2B48C","nailed wooden slat crate","thud","Smashable. Stackable. Loot inside.","container"},
 }

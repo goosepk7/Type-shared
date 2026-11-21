@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tumbleweed storm","NFEFLF","dkP",4,7,2,"C9A55A","A1887F","dozens of tumbleweeds rolling in wind","rustle","The wild west's angriest weather.","plant,silly"},
+	{"tuna","ABDJEC","DfB",5,9,4,"2A3A5A","C8D0D8","torpedo fish, little yellow finlets","splash","Fast, strong, never stops swimming.","fish,aquatic"},
+	{"tuna can","IKAAKK","keO",3,7,6,"C8C8C8","F2C8A8","small round metal can","bonk","A metal puck of protein.","edible"},
+	{"tuna casserole","IGBOKI","F",2,5,3,"F2D08A","E8C070","creamy noodle bake","crunch","A creamy bake from grandma's kitchen.","edible,healthy"},
+	{"tuna salad","IGBOKI","F",2,5,3,"E8D8C0","F2E8C8","creamy tuna scoop","crunch","Tuna, creamy and spreadable.","edible,healthy"},
+	{"tuna sandwich","IGBOKI","F",2,5,3,"E8C88A","F2E8C8","sandwich with pale filling","crunch","Lunchbox staple.","edible,healthy"},
+	{"tundra","MCFNII","JSN",3,1,8,"ECEFF1","90A4AE","flat frozen ground, low shrubs","rumble","Cold. Flat. More cold.","place,terrain,frozen"},
 	{"tuning fork","JLCL4I","kSN",5,4,7,"9FE8FF","B388FF","giant crystal tuning fork that rings when you near it","chime","Step closer. It wants to sing.","music,trap"},
 	{"tunnel","EEDCII","GCSY",2,1,9,"616161","FFB300","arched dark hole with lamp lights","thud","Goes under the problem.","structure"},
 	{"tuojiangosaurus","AMDJAA","GkfT",6,3,9,"7A6A4A","E8A03A","pointy plates stegosaur","grunt","Pointy-plated stego cousin.","dinosaur,extinct,reptile,armored"},
@@ -396,11 +403,4 @@ return {
 	{"water tornado","HBEN5K","klSHI",7,6,5,"2F7FBF","BFE7FA","spiralling column of seawater, spray halo","roar","A tornado that went for a swim.","storm,aquatic"},
 	{"water tower","EBDMII","GSIeN",4,1,7,"90A4AE","1E88E5","big round tank on tall legs","splash","Opens the valve. Everyone gets soaked.","structure,defense,tower"},
 	{"water treatment plant","EBENII","FS",3,1,8,"4FC3F7","B0BEC5","round tanks and pipes","clank","Cleans water. Heals friends.","structure,mechanical"},
-	{"water trough","EBBNII","FSN",1,1,5,"607D8B","4FC3F7","long metal tub of water","thud","Splash an enemy. Refresh a friend.","structure,farm"},
-	{"water truck","DBDKHL","DkIeg",5,5,8,"1E88E5","ECEFF1","truck with tank and roof water cannon","splash","Hoses everything down. Hard.","mechanical,vehicle,land"},
-	{"water wave","FBDF6F","kIP",6,6,3,"1565C0","90CAF9","big rolling ocean wave","splash","The sea gives you a big hug.","aquatic"},
-	{"water whip","FBCHJB","fHI",4,7,2,"29B6F6","E1F5FE","curling tendril of water","splash","Wet slap. Extremely wet slap.","aquatic"},
-	{"water wings","BBAONI","B",1,5,1,"E67E22","E67E22","inflatable arm bands","squeak","Floaty power.","toy"},
-	{"waterbed","BBDL0I","UN",1,1,3,"47D7E8","5A3A1E","wobbly bed full of water","thud","Sloshy, wobbly fortress.","furniture,household"},
-	{"waterbuck","AMCJAA","DkB",4,8,4,"8A7A6A","F2F2EE","shaggy antelope with white ring rump","bleat","Has a target on its butt.","mammal,wild"},
 }

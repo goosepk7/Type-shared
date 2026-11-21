@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thorny devil","AMBJAA","CfT",2,7,2,"C8783A","F2C88A","spiky desert lizard","hiss","Drinks through its skin.","reptile"},
+	{"thoroughbred","AMDKAA","Dkg",5,10,5,"6A3A1E","2A1A12","sleek racing horse","neigh","Born to race. Lives to race.","mammal"},
+	{"thousand island","IMBLGI","kSO",2,3,2,"F2A07A","D72B2B","pink creamy dressing","squeak","A thousand islands. Zero maps.","edible,slippery,silly,sauce"},
+	{"thread snare","BLCLQB","SeNO",5,8,4,"3C6FD6","B5F0FF","a glowing net of thread strung across the lane","whoosh","Pull one thread and the whole net comes with it.","anime,stand,trap"},
+	{"threat","KIBF6B","IXO",4,6,1,"7F1D1D","111827","looming shadow cracking its knuckles","growl","Nice health bar. Shame if something happened.","villain"},
+	{"three wheeler","DMBKHL","Djkg",3,6,3,"1565C0","F5F5F5","tiny car with one front wheel","engine","Tips over in corners. Every corner.","mechanical,vehicle,land,silly"},
+	{"three-banded armadillo","AMBJAF","GUCf",2,5,6,"B8A08E","8A7462","armadillo rolled into a perfect ball","squeak","Rolls into a perfect ball.","mammal,wild"},
 	{"three-eyed puppy","ALBJAA","DQ",2,8,3,"22D3EE","7C3AED","three-eyed glowing puppy","bark","Fetches meteors.","alien,cute,canine"},
 	{"three-headed space dragon","ADFJAB","AkeL",9,6,9,"FACC15","92400E","golden three-headed winged dragon","roar","Three heads, gravity beams, one bad day.","kaiju,giant,reptile,danger"},
 	{"thresher shark","ABDJEC","DkfTOB",7,8,6,"6A6E80","D8DCE2","enormous whip-like tail","chomp","Slaps fish with its tail. Whap.","fish,aquatic,ocean,predator"},
@@ -396,11 +403,4 @@ return {
 	{"tulip tree","NGDCMI","GWkS",3,1,7,"6D4C41","FFB300","tall tree with tulip-shaped flowers","rustle","Tulips. On a tree. Very tall.","plant,tree"},
 	{"tumble","KMBAKF","kO",2,6,2,"FFCC80","FFFFFF","rolling, bouncing tumble trail","thud","Head over heels. Literally.","silly"},
 	{"tumbleweed","NFBAMF","UWke",3,6,2,"C9A55A","8A6A3E","dry ball of twigs that grows with every bounce","wind","Rolls in dramatically. Every time. Bigger each time.","nature,plant,silly,desert"},
-	{"tumbleweed storm","NFEFLF","dkP",4,7,2,"C9A55A","A1887F","dozens of tumbleweeds rolling in wind","rustle","The wild west's angriest weather.","plant,silly"},
-	{"tuna","ABDJEC","DfB",5,9,4,"2A3A5A","C8D0D8","torpedo fish, little yellow finlets","splash","Fast, strong, never stops swimming.","fish,aquatic"},
-	{"tuna can","IKAAKK","keO",3,7,6,"C8C8C8","F2C8A8","small round metal can","bonk","A metal puck of protein.","edible"},
-	{"tuna casserole","IGBOKI","F",2,5,3,"F2D08A","E8C070","creamy noodle bake","crunch","A creamy bake from grandma's kitchen.","edible,healthy"},
-	{"tuna salad","IGBOKI","F",2,5,3,"E8D8C0","F2E8C8","creamy tuna scoop","crunch","Tuna, creamy and spreadable.","edible,healthy"},
-	{"tuna sandwich","IGBOKI","F",2,5,3,"E8C88A","F2E8C8","sandwich with pale filling","crunch","Lunchbox staple.","edible,healthy"},
-	{"tundra","MCFNII","JSN",3,1,8,"ECEFF1","90A4AE","flat frozen ground, low shrubs","rumble","Cold. Flat. More cold.","place,terrain,frozen"},
 }

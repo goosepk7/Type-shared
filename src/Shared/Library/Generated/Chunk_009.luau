@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
+	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
 	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
 	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
@@ -369,6 +371,7 @@ return {
 	{"firefighter robot","OBCJNA","FI",4,4,7,"DC2626","F8FAFC","red robot with hose arms","splash","Sprays foam everywhere.","robot,rescue"},
 	{"firefly","AHAJFB","dAcP",1,6,1,"F2E82A","3A2A1E","small beetle with glowing tail","buzz","Brings its own nightlight.","insect"},
 	{"firefly squid","AHAJSC","jZHB",2,6,3,"3A5AE8","8AE8FF","tiny glowing blue squid","squelch","Lights up like a sky full of stars.","aquatic,ocean,smart"},
+	{"firefly swarm","AHADFB","QRT",3,6,4,"D6F060","32283C","fireflies circle you and dart at nearby enemies","buzz","Every one of them thinks it is the brightest.","critter,insect,orbit,swarm"},
 	{"firefox spirit","AABJAA","KDZ",3,9,2,"F97316","FDE68A","fox with a tail of flame","yip","Leaves smoky paw prints.","fire,cute"},
 	{"fireplace","BACM0I","KF",3,1,7,"9C4A3A","FF6A1A","stone fireplace with crackling fire","thud","Cosy. Toasty. Dangerous.","furniture,household"},
 	{"fireplace poker","BKBHuI","KfT",3,6,5,"5B6168","24262A","hooked iron rod","thud","Stirs fires. And trouble.","furniture,household"},
@@ -400,7 +403,4 @@ return {
 	{"fishing spider","AJBJQA","fMNB",2,6,2,"8A6A4A","C8A07A","big spider on water","skitter","Runs on water. Fishes.","arachnid,spooky,venomous"},
 	{"fishman","ABCJNA","fB",4,6,4,"0F766E","A3E635","bulgy-eyed fish-headed humanoid","splash","Smells exactly how you think.","aquatic,spooky"},
 	{"fishmonger","LBCJNA","dk",3,4,4,"0EA5E9","F8FAFC","apron, giant fish in hand","splat","Slaps you with a trout.","silly"},
-	{"fissure","HEDLII","THO",6,4,5,"4A3726","FF6A2B","zigzag ground split with glowing depths","crack","Mind the gap. Seriously.","natural"},
-	{"fist","KMBAKB","kf",4,9,3,"FFCC80","FFFFFF","glowing knuckle impact","pow","Five fingers. One message.","melee"},
-	{"five spice","IFBDOJ","jPO",2,5,1,"8A4A2A","C8803A","brown spice heap","puff","Five spices, one punch.","edible,spice"},
 }

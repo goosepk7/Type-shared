@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grappling iron","CKBAJI","He",3,6,4,"5B6168","B89B6A","multi-hook thrown on rope","bang","Pull that ship closer.","pirate"},
+	{"grass","NGBNMI","FS",1,1,2,"7CB342","8BC34A","patch of green blades","rustle","Touch it. You need to.","plant"},
+	{"grasshopper","AMAJFG","UdP",1,6,1,"6AA03A","C8D84A","long hind legs, antennae","buzz","Jumps first. Thinks never.","insect"},
+	{"grater","BMBHJK","fV",2,5,4,"8A929B","24262A","box with jagged holes","clang","Shred it. Shred them.","kitchen,household"},
 	{"gratitude","KHBOKJ","F",1,4,2,"FFB74D","FFF8E1","warm orange heart glow","chime","Thanks! Here's a heal.","support,cute"},
 	{"graupel","GCBEOJ","UN",2,5,1,"F1F6F9","C7D9E4","tiny foam-like snow pellets","patter","Snow that went to the gym.","frozen"},
 	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
@@ -399,8 +403,4 @@ return {
 	{"herald","LMCJNA","Oh",3,5,3,"1D4ED8","FACC15","tabard, trumpet, scroll","horn","HEAR YE. HEAR YE. Ow, my ears.","royal"},
 	{"herb","NGANMI","FS",1,1,2,"7CB342","9CCC65","small bundle of fragrant leaves","rustle","Rub it on. Feel better.","plant,herb"},
 	{"herbal tea","IABOKI","FN",2,5,2,"E8D08A","F2E8C8","teacup with leaves","slurp","Gentle, soothing, sleepy.","edible,drink,warm"},
-	{"herbalist","LJCJNA","FM",3,4,4,"365314","A16207","jars of herbs, mortar and pestle","bubble","Has a remedy for everything. Tastes awful.","healer,plant"},
-	{"hercules","LEDJXA","Dklf",8,6,9,"B45309","FDE68A","mega-muscled hero in a lion skin swinging an olive-wood club","grunt","Twelve labours done. Yours is number thirteen.","mythical,greek,warrior"},
-	{"hercules beetle","AMBJFA","Gklf",3,3,6,"C8B87A","1E1E1E","giant beetle with massive horn","click","Strongest bug. Named accordingly.","insect,armored"},
-	{"herd","AEEFLA","DkIP",7,7,7,"8B5A2B","E8D2B0","wide wave of galloping hooves and horns in dust","rumble","One got spooked. Now it is everyone's problem.","farm,wild,swarm"},
 }
