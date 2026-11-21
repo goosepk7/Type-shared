@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"watermelon vine","NGCLMI","SeN",2,1,4,"2E7D32","E53935","sprawling vine with stripy melons","rustle","Seeds for days. Ptoo ptoo.","plant"},
+	{"watermill","EBDCIK","GSI",3,1,7,"8D6E63","1E88E5","stone mill with a big turning wheel","splash","Splish, splash, grind.","structure,building"},
+	{"waterzooi","IBBOGI","FS",3,4,3,"F2E8C8","7DBE3A","creamy chicken stew","slurp","A creamy Belgian stew.","edible,warm,healthy"},
+	{"wave","FBDF6F","kI",5,6,3,"1E88E5","BBDEFB","curling blue wave with white crest","splash","Wave hello. Wave goodbye.","aquatic"},
+	{"wave rider","KBCO6C","DI",3,9,2,"2AA7D8","F4FBFF","you ride a curling wave forward on a board","splash","Paddle out. Drop in. Run them over.","sport,surf,mobility,water"},
+	{"wax","FABNGI","KSN",2,2,3,"FDE68A","F97316","dribbling warm yellow wax pooling and hardening","sizzle","Mind your own. Beeswax, that is.","household,sticky"},
+	{"waxwing","AMAJDB","dA",1,7,1,"C8A07A","F2D82A","sleek crest, black mask","tweet","Wears a mask and a crest. Cool.","bird,cute"},
+	{"waxy monkey frog","AMAJAA","Ue",1,5,1,"6AC84A","F2F2EE","walks instead of hops","croak","Rubs on wax sunscreen. Walks.","amphibian,wetland"},
 	{"weaken","KIBAKB","iXN",3,7,1,"9E9E9E","FFFFFF","downward arrows over target","wub","Nerfed. Sorry not sorry.","silly"},
 	{"weakness","KIBOKE","iXN",3,6,1,"A78BFA","F87171","glowing red target spot blinking on a cracked armour plate","beep","Hit the glowing bit. It is always the glowing bit.","gaming"},
 	{"wealth","LHCJNA","Gceh",4,3,5,"15803D","FACC15","top-hatted tycoon diving into a pile of gold coins","jingle","Throws money at problems. It works. Annoyingly.","shiny,silly"},
@@ -395,5 +403,4 @@ return {
 	{"zulu warrior","LECJNA","GDf",6,7,5,"111827","F8FAFC","cowhide shield, short spear","roar","Charges in formation like horns.","warrior"},
 	{"zuniceratops","AMDJAA","DkT",7,5,8,"8A7A5A","D8C8A8","early two-horned dino","bellow","Early horns. Still pointy.","dinosaur,extinct,reptile"},
 	{"zuppa toscana","IBBOGI","FS",3,4,3,"F2E8C8","3E7A2B","creamy soup with kale","slurp","Tuscan comfort, creamy and green.","edible,warm,healthy"},
-	{"zweihander","CKDHrK","kfO",7,3,6,"8A929B","9E1B32","giant two-hand sword, side lugs","shing","Needs two hands and a running start.","medieval,sharp"},
 }

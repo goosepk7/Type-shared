@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"diplodocus","AMFJAA","kIO",8,2,9,"8A8A6A","C8C0A0","very long neck, very long whip tail","rumble","Longer than three buses.","dinosaur,extinct,reptile,heavy"},
+	{"diploma","BHBOJK","FaO",2,5,2,"F5F0DC","DC2626","rolled parchment tied with a red ribbon, gold seal","fanfare","Officially qualified to bonk.","school"},
 	{"dipper","ABAJDB","dAB",1,7,1,"3A3A3A","F2F2F2","songbird that walks underwater","tweet","Walks underwater. Seriously.","bird,cute"},
 	{"diprotodon","AMDJAA","DkO",6,4,8,"8A6A4A","C8A87A","rhino-sized wombat","roar","A wombat the size of a car.","mammal,extinct,ancient,heavy"},
 	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
@@ -401,6 +403,4 @@ return {
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
 	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
 	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
-	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
-	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 }

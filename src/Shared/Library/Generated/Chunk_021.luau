@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pulse cannon","CDDMxI","keL",7,5,6,"2C3539","3FC1D9","thick barrel with glowing rings","zap","Thoom. Thoom. Thoom.","scifi,ranged"},
+	{"pulse rifle","CDCAwI","TeV",6,8,4,"4A4D52","3FC1D9","boxy rifle with glowing vents","zap","Brrrap-pew.","scifi,ranged"},
+	{"pummel","KMCAKB","kfV",5,9,2,"FF7043","FFE0B2","flurry of fist impact stars","thwack","Punches, but many.","silly"},
+	{"pump","OBBM1I","HI",2,3,6,"2F6FD1","8E9196","boxy pump with hoses","hum","Pushes water. Pulls water.","mechanical"},
+	{"pumpernickel","IICCII","Gk",4,2,7,"3E2618","6B4026","very dark square loaf","thud","Bread from the dark side.","edible,giant"},
+	{"pumpkin","IGCGKF","EkI",5,5,6,"E8761A","5E7A2B","big ribbed orange gourd, stem","rumble","Rolls downhill with intent.","edible,heavy,holiday,vegetable"},
+	{"pumpkin bread","IMCCII","GF",4,2,5,"C2622B","D9A04A","orange-brown spiced loaf","thud","Autumn in a loaf.","edible,giant,dessert"},
+	{"pumpkin catapult","CMDMxI","dkeV",4,3,5,"8B5A2B","E67E22","catapult loaded with pumpkins","creak","Splat attack, seasonal edition.","silly,holiday"},
 	{"pumpkin golem","AADJNA","GKk",6,3,6,"EA580C","166534","stacked pumpkins with glowing faces","crunch","Very festive. Very heavy.","halloween,construct"},
 	{"pumpkin head","AACJNA","KDj",5,5,4,"EA580C","166534","lanky figure with a glowing carved pumpkin head","cackle","Glows from the inside. Smells like pie.","spooky,halloween"},
 	{"pumpkin house","EGCCII","GFS",2,1,4,"F57C00","43A047","giant pumpkin with door and windows","chime","Cosy inside. Spooky outside.","holiday,silly"},
@@ -395,12 +403,4 @@ return {
 	{"robot bird","OKAJDB","dAe",2,8,3,"CA8A04","22D3EE","brass bird with ticking gear wings","whistle","Sings in beeps.","robot,bird"},
 	{"robot butler","OKCJNA","GdF",3,4,5,"F8FAFC","1F2937","tuxedo-painted robot holding a tray","beep","Tea is served. Then the laser is served.","robot,silly"},
 	{"robot cat","OKBJAA","dZf",3,8,4,"E5E7EB","F472B6","sleek chrome kitty, glowing whiskers","meow","Knocks things off tables at 200 mph.","robot,cute,cat"},
-	{"robot chef","OKCJNA","KFe",3,5,5,"F8FAFC","DC2626","robot with chef hat and spatula arms","beep","Flips burgers. And enemies.","robot,silly"},
-	{"robot crab","OKBJFA","Gf",3,4,7,"DC2626","94A3B8","metal crab with pincer claws","click","Walks sideways. Pinches forward.","robot,aquatic"},
-	{"robot dance","KKBNOI","jd",1,5,2,"90A4AE","00E5FF","stiff jerky moves with beeps","beep","Beep boop. Groovy.","music,dance,silly"},
-	{"robot dance crew","OKCJNA","jdh",3,6,4,"F472B6","22D3EE","three robots doing the robot","beep","Doing the robot. Ironically.","robot,silly,music"},
-	{"robot dinosaur","OKEJAA","Dkfe",8,5,8,"94A3B8","DC2626","chrome dinosaur with laser jaw","roar","Extinct? Not with batteries.","robot"},
-	{"robot dog","OKBJAA","DQf",3,7,5,"CBD5E1","3B82F6","four-legged metal pup with LED tail","bark","Never sheds. Occasionally reboots.","robot,cute,canine"},
-	{"robot dragon hatchling","AKAJAB","KA",2,6,4,"94A3B8","22D3EE","tiny chrome dragon with blinking eyes","beep","Beeps fire.","robot,cute,reptile"},
-	{"robot factory","EKENII","GSh",5,1,8,"607D8B","FFB300","conveyor belts and robot arms","hum","Spits out robots. Endlessly.","robot,mechanical"},
 }

@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"screen wrap","KLBOKI","Y",2,10,1,"7DFFB2","B57CFF","pixel dissolve and reappear behind them","blip","Left edge, right edge, behind you.","game,arcade,mobility"},
+	{"screw","BKAAJK","Te",1,8,2,"8A929B","C9CED4","spiral threaded spike","clink","Righty tighty.","hardware"},
+	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
+	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},
+	{"scribe","LLCJNA","Gh",3,3,3,"78350F","F8FAFC","quill, scroll, candle","scratch","Writes your defeat in pretty letters.","historical"},
+	{"scroll","BLAAJK","eh",3,6,1,"E8D9B0","9E1B32","rolled parchment with seal","tap","Read aloud. Stand back.","magic,fantasy"},
+	{"scrub brush","BMAHJK","Ff",1,6,3,"8B5A2B","F1C40F","wooden block with bristles","clank","Scrub-a-dub-dub.","cleaning"},
+	{"scuba diver","LBCJNC","TeB",4,5,5,"111827","FACC15","wetsuit, mask, flippers, air tank","bubble","Breathes underwater. Brought a harpoon.","aquatic"},
 	{"scuba tank","BBCO2I","B",1,4,4,"F1C40F","24262A","tank with mask and hose","clank","Breathe underwater. For real.","armor,defense"},
 	{"sculpin","ABAJEC","dB",1,6,1,"8A6A4A","C8A07A","spiny big-headed fish","splash","Big head, spines, attitude.","fish,aquatic"},
 	{"sculptor","LECJNA","GO",3,3,5,"D6D3D1","78716C","chisel, mallet, marble dust","clang","Turns enemies to statues. Artistically.","art"},
@@ -395,12 +403,4 @@ return {
 	{"skeleton","AICJNA","feV",4,6,3,"F5F5F4","57534E","rattling bones, grinning skull","rattle","Has a funny bone. Uses all of them.","undead,spooky,halloween"},
 	{"skeleton archer","AICJNA","TeV",4,6,3,"E7E5E4","78350F","skeleton with a bow and quiver","rattle","Never misses. Never hits either.","undead,spooky,archer"},
 	{"skeleton army","AIDJLA","fVPh",6,5,5,"F5F5F4","1F2937","rows of rattling skeleton soldiers","rattle","Bones. So many bones.","undead,spooky,swarm"},
-	{"skeleton cowboy","AICJNA","eV",4,6,3,"F5F5F4","92400E","skeleton in a ten-gallon hat","rattle","Yee-haw. Rattle rattle.","undead,western"},
-	{"skeleton crypt","MIENII","SNh",5,1,8,"EFEBE9","263238","tomb lined with rattling skeletons","moan","Rattle rattle. Rise up.","place,spooky,undead"},
-	{"skeleton dog","AIBJAA","Qf",2,7,2,"F5F5F4","22C55E","skeletal pup carrying its own bone","rattle","Fetches its own leg.","undead,canine,silly"},
-	{"skeleton horse","AIDKAA","Dg",5,8,5,"F5F5F4","22C55E","skeletal horse with green eye glow","rattle","No saddle sores. No anything.","undead,mount"},
-	{"skeleton key","BKAOJK","Y",2,7,4,"5B6168","24262A","ornate antique key","clank","Opens every lock. Even the rude ones.","magic"},
-	{"skeleton king","AIDJNA","Gfh",7,4,7,"F5F5F4","CA8A04","crowned skeleton on a bone throne","rattle","Rules a kingdom of bones and dust.","undead,royal,spooky,boss"},
-	{"skeleton mage","AICJNA","Jeh",5,4,3,"F5F5F4","7C3AED","robed skeleton with glowing staff","rattle","Cast spells. Lost lips. Still chants.","undead,magic"},
-	{"skeleton pirate","AICJNA","fVb",5,6,4,"F5F5F4","7F1D1D","skeleton in tricorn hat with cutlass","rattle","Yo ho ho. Rattle rattle.","undead,pirate"},
 }

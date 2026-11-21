@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pita","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","round flat pocket bread","whoosh","A bread with a secret pocket.","edible"},
+	{"pita chips","IMBAKK","Uke",3,7,2,"E8C07A","C8904A","crisp triangle chips","whoosh","Crunchy bread triangles.","edible,snack"},
+	{"pitbull","AMCJAA","DQf",5,7,4,"8C7E72","F2EEE8","muscular wide head, big smile","bark","Big smile. Bigger heart.","mammal,pet"},
+	{"pitch","MGENnI","DSN",5,1,6,"22C55E","FFFFFF","striped mown grass with white lines and corner flags","whistle","Get off the grass. Unless you are winning.","sport,place"},
+	{"pitch black","FIDNOI","jZ",4,5,3,"000000","212121","absolute black dome","hush","Can't see your own hand.","spooky,stealth"},
+	{"pitcher plant","NJCLMI","ScMH",4,1,4,"9CCC65","B71C1C","tall slippery tube with a lid","chomp","Slide in. Do not slide out.","plant,carnivorous"},
+	{"pitchfork","CKCAuI","lfT",3,5,4,"8A929B","8B5A2B","three long tines on a pole","whoosh","Angry mob not included.","farm"},
+	{"pitching machine","OMCMwI","keh",3,7,5,"2F7D6B","F2EBDD","tripod ball launcher with a hopper and twin wheels","hum","Strike one. Strike two. Duck.","sport,baseball,turret"},
 	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
 	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
 	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
@@ -395,12 +403,4 @@ return {
 	{"pulled pork","IMBLGI","cN",2,3,3,"B0602B","6B2A1E","pile of shredded saucy meat","gloop","Shredded, smoky, saucy.","edible,sticky"},
 	{"pulled pork sandwich","IMBLGI","cN",2,3,3,"B0602B","D9A04A","bun overflowing with pork","gloop","Messy, saucy, glorious.","edible,sticky"},
 	{"pulley","OKBLJK","lH",2,3,5,"8B5A2B","B89B6A","wheel with rope over it","clank","Lifts heavy things with clever science.","science"},
-	{"pulse cannon","CDDMxI","keL",7,5,6,"2C3539","3FC1D9","thick barrel with glowing rings","zap","Thoom. Thoom. Thoom.","scifi,ranged"},
-	{"pulse rifle","CDCAwI","TeV",6,8,4,"4A4D52","3FC1D9","boxy rifle with glowing vents","zap","Brrrap-pew.","scifi,ranged"},
-	{"pummel","KMCAKB","kfV",5,9,2,"FF7043","FFE0B2","flurry of fist impact stars","thwack","Punches, but many.","silly"},
-	{"pump","OBBM1I","HI",2,3,6,"2F6FD1","8E9196","boxy pump with hoses","hum","Pushes water. Pulls water.","mechanical"},
-	{"pumpernickel","IICCII","Gk",4,2,7,"3E2618","6B4026","very dark square loaf","thud","Bread from the dark side.","edible,giant"},
-	{"pumpkin","IGCGKF","EkI",5,5,6,"E8761A","5E7A2B","big ribbed orange gourd, stem","rumble","Rolls downhill with intent.","edible,heavy,holiday,vegetable"},
-	{"pumpkin bread","IMCCII","GF",4,2,5,"C2622B","D9A04A","orange-brown spiced loaf","thud","Autumn in a loaf.","edible,giant,dessert"},
-	{"pumpkin catapult","CMDMxI","dkeV",4,3,5,"8B5A2B","E67E22","catapult loaded with pumpkins","creak","Splat attack, seasonal edition.","silly,holiday"},
 }

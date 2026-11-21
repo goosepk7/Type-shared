@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"log fort","EGEMII","GSe",4,1,7,"8D6E63","5D4037","square log stockade with watch posts","thud","Built from a whole forest.","structure,defense,flammable"},
+	{"log splitter","JKCL1I","kV",5,1,7,"C0392B","8A929B","hydraulic wedge on a frame","clank","Splits logs. And opinions.","tool"},
+	{"log swap","NGBIMI","ZY",3,9,4,"8B5A2B","D9B38C","you poof into a log and appear somewhere else","poof","Nice hit. On a log.","anime,ninja"},
+	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
+	{"log wall","EGDCII","GST",3,1,6,"8D6E63","5D4037","row of sharpened upright logs","thud","Pointy end goes up. Usually.","sharp,flammable"},
+	{"loggerhead","ABCJUC","GNB",3,2,8,"B8703A","E8C08A","big headed sea turtle","hiss","Big head. Crunches crabs.","reptile,armored"},
 	{"loki","LLCJZA","jZVbY",7,8,5,"166534","D4AF37","grinning red-haired trickster, fur cloak, flickering copies","cackle","It was not him. It is never him. It was him.","mythical,norse,trickster"},
 	{"lollipop","IMBHJI","dkf",3,5,4,"E8434F","F7F2F0","swirl disc on a stick","bonk","A sweet club with a stick handle.","edible,silly,candy"},
 	{"lomo saltado","IGBOKI","F",2,5,3,"8A3A1E","F2C24A","beef stir fry with fries","crunch","Steak and fries in a wok.","edible,healthy"},
@@ -57,6 +63,7 @@ return {
 	{"lucky coin","BHAOKJ","Fc",2,6,3,"D4A72C","B8693D","worn shiny coin","boing","Heads: you win. Tails: you also win.","treasure,shiny"},
 	{"lucky seven","KHCOKJ","Da",4,7,3,"FFD54F","D32F2F","three glowing sevens spinning","jingle","Jackpot energy.","luck"},
 	{"lucky streak","KHCOKJ","Da",3,7,3,"43A047","FFD54F","trail of clovers behind caster","ding","Can't stop winning.","luck"},
+	{"luggage carousel","OMCG2K","kSRI",3,3,4,"2BB3A3","D7263D","hard-shell suitcases circling round you on an airport carous","thump","Is that one yours? Is that?","transit,orbit,silly"},
 	{"lullaby","KLCDOJ","SNO",5,3,6,"B39DDB","FFF8E1","a drifting cloud of soft notes that puts lingerers to sleep","chime","Hush now. Everybody sleep.","music,control"},
 	{"lumberjack","LGCJNA","Dkf",6,5,6,"DC2626","111827","plaid shirt, beard, giant axe","thud","Yells TIMBER. Means it.","outdoor"},
 	{"lumberjack giant","AGEJNA","Dkf",7,4,8,"DC2626","111827","plaid giant with a tree-sized axe","stomp","Fells forests with one swing.","giant,outdoor"},
@@ -396,11 +403,4 @@ return {
 	{"merlin falcon","AMBJDB","DAfT",3,9,3,"5A6A8A","D8A06A","small dashing falcon","screech","Not the wizard. Still magic.","bird,predator"},
 	{"mermaid","ABCJEC","FceB",4,7,4,"0EA5E9","F472B6","fish tail, seashell top, flowing hair","sing","Lives under the sea. Collects forks.","mythical,aquatic"},
 	{"mermaid princess","ABCJEC","FcB",4,7,4,"0EA5E9","F472B6","crowned mermaid with pearl necklace","sing","Wants legs. Settles for victory.","royal,aquatic"},
-	{"mermaid queen","ABDJEC","FhB",6,6,5,"0369A1","FDE68A","crowned mermaid with pearl scepter","sing","Rules the reef. Bans plastic.","aquatic,royal"},
-	{"merman","ABCJEC","fTB",5,7,5,"0F766E","FACC15","fish-tailed warrior with a trident","splash","Ocean guard. Fin-tastic posture.","mythical,aquatic,warrior"},
-	{"merrow","ABCJEC","cB",4,6,4,"15803D","DC2626","mer-person in a red feathered cap","sing","Lose the cap, can't go home.","mythical,aquatic"},
-	{"mess","KMCNGI","jSNP",3,1,3,"F59E0B","8B5CF6","spreading sprawl of toys, crumbs, socks and spilled juice","clatter","Who made this? Nobody. It was always nobody.","silly,household"},
-	{"message in a bottle","BBAA2I","eh",1,5,1,"BFE6F2","E8D9B0","corked bottle with rolled note","thud","Help is on the way. Eventually.","container"},
-	{"messer","CKCHrK","fV",5,6,4,"8A929B","8B5A2B","knife-sword hybrid","shing","A very, very big knife.","sharp,ancient"},
-	{"meta","KLCOnE","DWT",6,7,4,"7C3AED","FACC15","ranked chart with one glowing gold entry at the top","ding","Everyone runs it. That is why it is boring.","gaming,meme"},
 }
