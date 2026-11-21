@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"metal","FKCIKI","Ga",4,3,7,"8C949C","D6DCE2","plated steel dome shell","clank","Clang. Your problem now.","heavy"},
 	{"metal detector","BKCOJI","c",1,3,3,"8E9196","24262A","pole with disc sensor","clink","Beep... beep... BEEP! Treasure!","explorer"},
 	{"metal detectorist","LKCJNA","CH",3,4,4,"15803D","FACC15","headphones and beeping detector","beep","Beep beep. Found a bottlecap.","silly"},
 	{"metal dragon","AKEKAB","GAeg",8,5,9,"71717A","E5E7EB","armored plated dragon with blade wings","clank","Bullets bounce. Swords bend.","mythical,reptile,metal"},
@@ -382,7 +381,7 @@ return {
 	{"mushroom tower","NJDMMI","GSMe",4,1,6,"B71C1C","F5F5F5","stack of giant mushrooms with spore cannon","rustle","Fires spore clouds. Achoo!","plant,fungus"},
 	{"mushroom wall","EJCCII","GUSM",3,1,5,"B71C1C","F5F5F5","stacked giant spotted mushrooms","thud","Bouncy. Spore-y. Effective.","structure,defense,fungus"},
 	{"music","KHCNOI","Fc",2,4,3,"7C4DFF","FFD54F","floating notes swirling around","music","Music soothes the savage villain.","music,support"},
-	{"music box","BMBNKI","dN",1,2,3,"5A3A1E","D4A72C","wooden box with tiny dancer","chime","Plinky lullaby. Everyone gets sleepy.","music"},
+	{"music box","BMBNKI","NO",3,3,3,"8E3B2A","C4A0EC","open cherry-wood music box with pink satin","chime","Shh. Sleepy time.","household,nursery,toy"},
 	{"music stand","BMBCII","G",1,1,3,"24262A","C9CED4","folding wire stand","strum","Holds sheet music. Holds the line.","music"},
 	{"music teacher","LLCJNA","jO",3,4,3,"7C3AED","FACC15","baton, sheet music, recorder","sing","Again, from the top.","school,music"},
 	{"music tower","EMDMII","GkSeO",4,1,6,"7E57C2","FFEB3B","tower topped with huge speakers","music","Drops the bass. Drops the enemies.","structure,defense,tower,silly"},
@@ -403,4 +402,5 @@ return {
 	{"muttaburrasaurus","AMDJAA","dk",5,5,6,"7A6A4A","C8A87A","bumpy nose","honk","Big nose bump. Australian.","dinosaur,extinct,reptile"},
 	{"mutton curry","IABNGI","KSP",4,4,2,"8A3A1E","D9A02B","dark meaty curry","sizzle","A hearty, heavy curry.","edible,spicy"},
 	{"muzzle","BMBLJI","O",1,1,3,"6B4226","5B6168","cage-like snout strap","clink","No biting allowed.","equipment"},
+	{"mycelium","NGENMI","FSP",3,1,5,"F5F5F5","BCAAA4","web of white threads under the soil","poof","The forest's secret internet.","plant,fungus"},
 }

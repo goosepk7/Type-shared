@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"robot gorilla","OKDJNA","klf",7,5,8,"1F2937","22D3EE","giant chrome gorilla, piston fists","roar","Pounds its chest. Clang clang.","robot,heavy"},
 	{"robot horse","OKDKAA","Dg",5,9,7,"94A3B8","0EA5E9","chrome horse with piston legs","neigh","Never tired. Needs oil.","robot,mount"},
 	{"robot janitor","OKCJNF","IN",3,4,5,"1E3A8A","FACC15","mop-armed robot with bucket body","whir","Cleans up. Including you.","robot,silly"},
 	{"robot jellyfish","OKBJGJ","AL",3,4,3,"E5E7EB","22D3EE","chrome dome with dangling cable tentacles","zap","Floats. Zaps. Recharges.","robot,aquatic"},
@@ -403,4 +402,5 @@ return {
 	{"scrub brush","BMAHJK","Ff",1,6,3,"8B5A2B","F1C40F","wooden block with bristles","clank","Scrub-a-dub-dub.","cleaning"},
 	{"scuba diver","LBCJNC","TeB",4,5,5,"111827","FACC15","wetsuit, mask, flippers, air tank","bubble","Breathes underwater. Brought a harpoon.","aquatic"},
 	{"scuba tank","BBCO2I","B",1,4,4,"F1C40F","24262A","tank with mask and hose","clank","Breathe underwater. For real.","armor,defense"},
+	{"sculpin","ABAJEC","dB",1,6,1,"8A6A4A","C8A07A","spiny big-headed fish","splash","Big head, spines, attitude.","fish,aquatic"},
 }

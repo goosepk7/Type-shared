@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"pumpkin head","AACJNA","KDj",5,5,4,"EA580C","166534","lanky figure with a glowing carved pumpkin head","cackle","Glows from the inside. Smells like pie.","spooky,halloween"},
 	{"pumpkin house","EGCCII","GFS",2,1,4,"F57C00","43A047","giant pumpkin with door and windows","chime","Cosy inside. Spooky outside.","holiday,silly"},
 	{"pumpkin king","LACJNA","Kjh",5,5,4,"F97316","111827","tall skeleton with pumpkin crown","cackle","Rules all of Halloween.","halloween,royal,spooky"},
 	{"pumpkin patch","NGCLMI","SNh",3,1,4,"F57C00","43A047","sprawling vines with giant pumpkins","rustle","Picks itself. Rolls at you.","holiday,spooky"},
@@ -154,7 +153,7 @@ return {
 	{"raisin","IMAELB","eVP",2,7,1,"4A2A1E","6E3A2A","tiny wrinkled dark nugget","pitter","A grape that sunbathed too long.","edible,sweet,fruit"},
 	{"raita","ICBAKJ","JFN",2,5,2,"F7F4EC","7DBE3A","white yogurt with cucumber","squish","Puts out curry fires.","edible,frozen"},
 	{"rajasaurus","AMDJBA","DkfT",6,6,7,"8A4A2A","E8A04A","short horn crown","roar","Royal lizard with a crown bump.","dinosaur,extinct,reptile,predator,royal"},
-	{"rake","JKCHJK","fH",2,5,4,"2E8B57","8B5A2B","row of tines on long handle","clank","Step on it. Learn something.","tool,garden"},
+	{"rake","JGCHJK","fH",2,5,4,"3FA34D","C8955A","giant green leaf rake on a wooden handle","clank","Rake them in like autumn leaves.","household,garden,tool"},
 	{"rake trap","BMBLII","SO",2,3,2,"8B5A2B","9AA0AA","a garden rake hidden in the grass, tines up","thwack","Thwack. Cartoon physics.","cartoon,silly,trap"},
 	{"rakshasa","AIDJNA","jZfY",7,6,6,"7C2D12","FACC15","tiger-headed illusionist in robes","growl","Master of illusions and backwards palms.","mythical"},
 	{"rally","KHCNOI","DF",3,5,3,"FFD54F","D32F2F","banner glow ring over allies","horn","Everybody, with me!","support"},
@@ -403,4 +402,5 @@ return {
 	{"robot dragon hatchling","AKAJAB","KA",2,6,4,"94A3B8","22D3EE","tiny chrome dragon with blinking eyes","beep","Beeps fire.","robot,cute,reptile"},
 	{"robot factory","EKENII","GSh",5,1,8,"607D8B","FFB300","conveyor belts and robot arms","hum","Spits out robots. Endlessly.","robot,mechanical"},
 	{"robot ghost","ODCJGJ","ZLY",4,7,2,"22D3EE","0F172A","flickering digital ghost made of code","zap","Haunts your screens.","robot,ghost"},
+	{"robot gorilla","OKDJNA","klf",7,5,8,"1F2937","22D3EE","giant chrome gorilla, piston fists","roar","Pounds its chest. Clang clang.","robot,heavy"},
 }

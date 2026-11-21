@@ -363,7 +363,7 @@ return {
 	{"bayou","MBENII","ZSN",4,1,7,"4E6B3A","8D6E63","mossy cypress trees, still dark water","rumble","Gators live here. So does trouble.","place,terrain"},
 	{"bazooka","CKDAwI","Eke",8,4,4,"6B7B3A","4A4D52","long open shoulder tube","boom","Big tube. Bigger boom.","explosive,ranged"},
 	{"beach","MBDNII","dSN",2,1,6,"F4E4BC","4FC3F7","golden sand, gentle waves, umbrella","waves","Sun, sand, and a surprise attack.","place,terrain"},
-	{"beach ball","BMCG3F","Ude",1,4,2,"C0392B","F1C40F","striped inflatable ball","bonk","Floaty, bouncy, harmless-ish.","sport,summer,toy"},
+	{"beach ball","BMCG3F","Uke",2,6,2,"E2483F","F2C230","striped inflatable ball","bonk","Boing. And again. Boing.","household,toy,summer"},
 	{"beach bum","LBCJNA","dN",3,3,4,"FACC15","0EA5E9","flip flops, sunglasses, shell necklace","splash","Lazy waves. Lazy attacks.","silly,aquatic"},
 	{"beach hut","EMBCII","GS",1,1,3,"4FC3F7","F5E6CA","striped little hut on the sand","thud","Vacation mode: on. Defence mode: also on.","structure,building,silly"},
 	{"beach towel","BMCLKI","N",1,1,1,"47D7E8","F1C40F","striped towel on the sand","splash","Claimed this spot.","beach,summer"},

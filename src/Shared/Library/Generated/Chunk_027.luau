@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"thump","KMBAKB","kO",3,7,2,"8D6E63","FFE0B2","dull heavy shockring","thump","Thump. Ow.","heavy"},
 	{"thunder","FDDFOB","kO",5,9,2,"4B4E6D","C7CEFF","visible sound ring, purple-grey shock rim","boom","Loud enough to rattle your teeth.","electric,loud"},
 	{"thunder and lightning","FDEEOJ","kLO",8,8,2,"FFEB3B","3949AB","bolts and booming rings from above","boom","Very, very frightening.","electric,storm"},
 	{"thunder bear","ADDJAA","kfL",7,5,7,"1E3A8A","FDE047","bear with crackling blue fur","thunder","Hibernates in thunderclouds.","storm"},
@@ -403,4 +402,5 @@ return {
 	{"turnover","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","triangle flaky pastry","chomp","A pie that folded itself in half.","edible,sweet"},
 	{"turnstile","EKBCII","GSN",1,1,5,"B0BEC5","37474F","spinning three-armed gate","thud","One at a time, please.","structure,defense,silly"},
 	{"turntable","BMCFJI","jO",2,2,4,"24262A","C9CED4","spinning deck with tonearm","scratch","Drop the beat. Drop the foes.","music"},
+	{"turret","OKCMwI","Te",5,7,6,"2C3539","6B7B3A","swivelling twin-barrel tripod gun","hum","Never sleeps. Never blinks.","defense,mechanical"},
 }

@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"skeleton warrior","AICJNA","GfV",5,5,5,"F5F5F4","57534E","skeleton in rusty armor with shield","rattle","Reassembles after every hit.","undead"},
 	{"sketchbook","BLBOyE","Gjh",3,4,3,"111827","F5F5F0","spiral pad whose doodles peel off the page and walk","scratch","Page one: dragon. Page two: better dragon.","art,school"},
 	{"ski jump","BCCOIB","DlN",4,9,2,"F4F8FC","1E6FD0","snow ramp launching a skier into a powder landing","whoosh","Send it.","sport,ski,mobility,ice"},
 	{"ski lift","DCCKHJ","lg",2,3,4,"1565C0","B0BEC5","row of chairs hanging from a cable","engine","Up the mountain, legs dangling.","mechanical,vehicle,land"},
@@ -403,4 +402,5 @@ return {
 	{"spike","CKBLII","STO",4,1,7,"9CA3AF","4B5563","row of sharp steel cones popping up from a floor plate","shing","Every platformer's favourite surprise.","trap,sharp,gaming"},
 	{"spike bomb","CACGKF","ETV",7,4,2,"3A3F45","E67E22","bomb studded with spikes","boom","Explodes. Then pokes.","explosive"},
 	{"spike chain","EKCL3K","kSR",6,6,7,"3A3D45","C9CED6","spiked iron ball on a chain sweeping round a post","whoosh","Mind the swing.","game,platformer,hazard"},
+	{"spike corridor","MKCLII","STN",5,1,7,"616161","9E9E9E","stone hall with spikes in walls","echo","Run. Dodge. Run some more.","place,adventure,sharp"},
 }
