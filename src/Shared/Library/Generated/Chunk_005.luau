@@ -123,7 +123,7 @@ return {
 	{"cecropia moth","AMAJFB","jdA",1,5,1,"8A3A2A","F2E8D8","huge red-brown moth","flutter","North America's biggest moth.","insect,cute"},
 	{"cedar","NGECMI","GWkS",4,1,8,"795548","33691E","layered flat branch tiers","rustle","Smells nice. Hits hard.","plant,tree"},
 	{"ceiling","EEDLnI","GkO",6,2,7,"F5F5F0","C9C9C0","white ceiling slab with a wobbling light, dropping","crash","Look up. Too late.","household,heavy"},
-	{"ceiling fan","OFCNJK","INP",2,5,4,"8B5A2B","F2F2EE","five blades on a ceiling hub","clank","Gentle spin, mild breeze, big chop.","tool"},
+	{"ceiling fan","OFCNJK","kSP",3,5,4,"8B5A2B","E6B650","walnut-bladed ceiling fan crashing down","clank","It was wobbling for weeks. Now it's YOUR problem.","household,living room"},
 	{"celeriac","IEBAKK","keO",3,7,6,"C8B88A","E8E0C8","gnarly pale root ball","bonk","The ugliest vegetable. Very proud.","edible,vegetable"},
 	{"celery","IGBHJI","kf",3,5,4,"9DC183","D9EBC0","tall pale ribbed stalks, leafy top","bonk","Takes more energy to eat than it gives.","edible,silly,vegetable"},
 	{"celestial lion","AHDJAA","Dfe",6,7,5,"1E3A8A","FDE68A","lion made of connected stars","roar","Roars in starlight.","cosmic"},
@@ -171,6 +171,7 @@ return {
 	{"chalkboard","BMDCII","GO",1,1,5,"2F4F3A","8B5A2B","framed dark board","screech","Screeeech. Everyone stunned.","school"},
 	{"challah","IMCCII","Gk",4,2,6,"D9963A","F5DDA8","shiny braided loaf","thud","A braided loaf. Beautifully tied.","edible,giant"},
 	{"chameleon","AMBJAA","CZfHe",2,7,2,"6AC84A","E8701E","curled tail, cone eyes, long tongue","hiss","Changes color. Still visible to its mom.","reptile"},
+	{"chameleon tongue","AMBAAA","He",4,9,2,"5DB548","E86A8A","a chameleon tongue that yanks an enemy closer","slurp","Thwip. Come here.","critter,reptile,bolt,pull"},
 	{"chamois","AMCJAA","df",3,8,4,"8A6440","F2EADA","hooked horns, face stripes, nimble","bleat","Mountain ballerina.","mammal,farm"},
 	{"chamomile","NGANMI","FSN",1,1,1,"FFFFFF","FFEB3B","tiny daisy-like blooms","rustle","Sleepy flower. Very sleepy.","plant,herb"},
 	{"champion","LHCJNA","GDkf",6,6,6,"FACC15","B91C1C","hero holding a gold trophy overhead, title belt","fanfare","Undefeated. Mostly because of the trophy swing.","sport,warrior"},
@@ -402,5 +403,4 @@ return {
 	{"city wall","EEECII","GS",3,1,10,"BCAAA4","8D6E63","long high wall with walkway and towers","thud","The whole town hides behind this.","structure,defense,ancient"},
 	{"civet","AMBJAA","CfM",2,5,3,"8A8070","1E1E1E","spotted, banded tail, masked face","squeak","Smells musky. Proudly.","mammal,wild"},
 	{"civilization","MEFNqI","GWSh",8,1,9,"D6C6A8","3B82F6","sprawl growing from huts to towers to rockets in a blink","crowd","From mud huts to moon rockets. One more turn.","place,ancient"},
-	{"claidheamh","CKDHJK","kf",7,4,6,"8A929B","2E5E3E","basket-hilt broadsword","shing","Big sword with tartan pride.","fantasy,sharp"},
 }

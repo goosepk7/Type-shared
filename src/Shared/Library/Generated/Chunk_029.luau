@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"wave","FBDF6F","kI",5,6,3,"1E88E5","BBDEFB","curling blue wave with white crest","splash","Wave hello. Wave goodbye.","aquatic"},
+	{"wave rider","KBCO6C","DI",3,9,2,"2AA7D8","F4FBFF","you ride a curling wave forward on a board","splash","Paddle out. Drop in. Run them over.","sport,surf,mobility,water"},
+	{"wax","FABNGI","KSN",2,2,3,"FDE68A","F97316","dribbling warm yellow wax pooling and hardening","sizzle","Mind your own. Beeswax, that is.","household,sticky"},
+	{"waxwing","AMAJDB","dA",1,7,1,"C8A07A","F2D82A","sleek crest, black mask","tweet","Wears a mask and a crest. Cool.","bird,cute"},
+	{"waxy monkey frog","AMAJAA","Ue",1,5,1,"6AC84A","F2F2EE","walks instead of hops","croak","Rubs on wax sunscreen. Walks.","amphibian,wetland"},
+	{"weaken","KIBAKB","iXN",3,7,1,"9E9E9E","FFFFFF","downward arrows over target","wub","Nerfed. Sorry not sorry.","silly"},
+	{"weakness","KIBOKE","iXN",3,6,1,"A78BFA","F87171","glowing red target spot blinking on a cracked armour plate","beep","Hit the glowing bit. It is always the glowing bit.","gaming"},
 	{"wealth","LHCJNA","Gceh",4,3,5,"15803D","FACC15","top-hatted tycoon diving into a pile of gold coins","jingle","Throws money at problems. It works. Annoyingly.","shiny,silly"},
 	{"weapon","CKCELB","kTeP",6,6,5,"8A929B","6B4226","falling rack of swords, axes, maces and a rubber chicken","clang","Which weapon? All of them. At once.","sharp,medieval"},
 	{"weasel","AMBJAA","CjfT",3,8,2,"8A5A30","F2E6CC","long slim body, short legs, white belly","chatter","Pop goes the weasel.","mammal,predator"},
@@ -79,7 +86,7 @@ return {
 	{"whippet","AMCJAA","DQ",4,10,4,"C8B8A8","F2F2EE","slim mini greyhound","bark","Mini greyhound. Maxi zoomies.","mammal,pet"},
 	{"whirl frenzy","KFCO5K","Dkf",5,9,3,"C8A878","8A6A4A","you spin into a cartoon dust tornado","whoosh","Brrrrrrrrrrrrrr.","cartoon,silly,melee"},
 	{"whirligig beetle","AMAJFK","GjfB",1,3,4,"1E1E24","6A6AA0","spinning water beetle","click","Spins in circles on ponds.","insect,armored"},
-	{"whirlpool","FBDN5K","SHNO",6,5,4,"0E4C7A","7CC6F0","spiralling water funnel, foam rim","gurgle","Round and round and round and down.","aquatic"},
+	{"whirlpool","FBDN5K","SH",5,5,4,"0E4C7A","7CC6F0","spiralling water funnel, foam rim","gurgle","Round and round and round and down.","aquatic,water,nature"},
 	{"whirlwind","FFCN5K","jlH",5,7,3,"9DBCCB","EAF2F6","spinning column of air and leaves","howl","Spin to win. Mostly to spin.","air"},
 	{"whisker","BMAOLB","QTe",1,8,1,"F5F5F5","D9D9D9","fan of long white twitching whiskers","twang","Senses danger. Is the danger.","body,cute,pet"},
 	{"whiskerway coach","AFEJXA","DAkT",7,10,2,"5C6884","FFC46E","a long-legged lantern strider carrying a lacquered howdah","growl","One howdah, one lantern, no timetable.","anime,beast,summon,ride"},

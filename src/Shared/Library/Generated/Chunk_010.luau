@@ -32,7 +32,7 @@ return {
 	{"flash flood","HBEF6F","kIP",8,8,4,"3A6F96","B4E0F5","sudden brown-blue water surge, debris","roar","Zero warning. All the water.","natural,aquatic"},
 	{"flash freeze","FCCFOI","JO",6,10,1,"B3E5FC","FFFFFF","instant frost snap over area","crack","Freeze! That means you.","frozen"},
 	{"flashbang","CHBG2F","jeO",3,8,1,"C9CED4","FFFFFF","a grenade that whites out everyone's eyes","bang","Bright. Loud. Everyone's confused.","modern,explosive"},
-	{"flashlight","BHBBJK","jeO",1,8,3,"24262A","F1C40F","cylinder with bright lens","click","Blinding at close range.","tool"},
+	{"flashlight","BHBBJK","je",2,8,3,"F2C230","FFE496","chunky yellow flashlight with a warm beam","click","Blinding at close range.","household,tool"},
 	{"flashlight fish","AHAJEC","jdOB",1,6,1,"1E1E24","8AF0F8","glowing eye patches","splash","Flashes its eye lights on and off.","fish,aquatic"},
 	{"flatbread","IMBAKK","Uke",3,7,2,"E8C88A","C89A5A","thin round charred bread","whoosh","Bread that got flattened. Still happy.","edible"},
 	{"flatbread pizza","IMBAKK","Uke",3,7,2,"E8C88A","D72B2B","thin rectangle pizza","whoosh","A pizza that went minimalist.","edible"},

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pulse rifle","CDCAwI","TeV",6,8,4,"4A4D52","3FC1D9","boxy rifle with glowing vents","zap","Brrrap-pew.","scifi,ranged"},
+	{"pummel","KMCAKB","kfV",5,9,2,"FF7043","FFE0B2","flurry of fist impact stars","thwack","Punches, but many.","silly"},
+	{"pump","OBBM1I","HI",2,3,6,"2F6FD1","8E9196","boxy pump with hoses","hum","Pushes water. Pulls water.","mechanical"},
+	{"pumpernickel","IICCII","Gk",4,2,7,"3E2618","6B4026","very dark square loaf","thud","Bread from the dark side.","edible,giant"},
 	{"pumpkin","IGCGKF","EkI",5,5,6,"E8761A","5E7A2B","big ribbed orange gourd, stem","rumble","Rolls downhill with intent.","edible,heavy,holiday,vegetable"},
 	{"pumpkin bread","IMCCII","GF",4,2,5,"C2622B","D9A04A","orange-brown spiced loaf","thud","Autumn in a loaf.","edible,giant,dessert"},
 	{"pumpkin catapult","CMDMxI","dkeV",4,3,5,"8B5A2B","E67E22","catapult loaded with pumpkins","creak","Splat attack, seasonal edition.","silly,holiday"},
@@ -119,7 +123,7 @@ return {
 	{"raiju","ADCJAB","DAL",5,9,4,"2563EB","FDE047","wolf of blue lightning, crackling tail","zap","Naps in belly buttons during storms.","yokai,storm"},
 	{"rail bird","AMBJDA","AfT",2,5,2,"8A6A4A","C8A07A","slim marsh bird","squawk","Thin as a rail. Literally.","bird,wetland"},
 	{"railgun","CDDBwI","DTe",8,10,4,"7FD8FF","3A3F48","twin rails glowing, then one straight blue-white line","zap","Magnets, but angry.","scifi,ranged"},
-	{"railroad crossing","EKENII","GkS",7,8,4,"E53935","F5F5F5","crossing gates drop, bells ring, then a freight train thunde","bell","Ding ding ding! Train coming!","transit,train,telegraph"},
+	{"railroad crossing","EKENII","GkS",7,8,4,"E53935","F5F5F5","crossing gates drop and bells ring, then a train roars by","bell","Ding ding ding! Train coming!","transit,train,telegraph"},
 	{"railroad track","EKDLII","Sh",2,1,8,"6D4C41","9E9E9E","wooden sleepers and steel rails","thud","Something is coming down the line.","structure"},
 	{"railway bridge","EMECII","GSh",3,1,9,"6D4C41","9E9E9E","timber trestle carrying train tracks","thud","A train is coming. On top of you.","structure"},
 	{"rain","GBCEOJ","SN",2,4,2,"5D8AA8","C9E6F5","grey cloud with steady falling drops","patter","Forecast says: you, wet.","storm,aquatic"},
@@ -399,8 +403,4 @@ return {
 	{"robot butler","OKCJNA","GdF",3,4,5,"F8FAFC","1F2937","tuxedo-painted robot holding a tray","beep","Tea is served. Then the laser is served.","robot,silly"},
 	{"robot cat","OKBJAA","dZf",3,8,4,"E5E7EB","F472B6","sleek chrome kitty, glowing whiskers","meow","Knocks things off tables at 200 mph.","robot,cute,cat"},
 	{"robot chef","OKCJNA","KFe",3,5,5,"F8FAFC","DC2626","robot with chef hat and spatula arms","beep","Flips burgers. And enemies.","robot,silly"},
-	{"robot crab","OKBJFA","Gf",3,4,7,"DC2626","94A3B8","metal crab with pincer claws","click","Walks sideways. Pinches forward.","robot,aquatic"},
-	{"robot dance","KKBNOI","jd",1,5,2,"90A4AE","00E5FF","stiff jerky moves with beeps","beep","Beep boop. Groovy.","music,dance,silly"},
-	{"robot dance crew","OKCJNA","jdh",3,6,4,"F472B6","22D3EE","three robots doing the robot","beep","Doing the robot. Ironically.","robot,silly,music"},
-	{"robot dinosaur","OKEJAA","Dkfe",8,5,8,"94A3B8","DC2626","chrome dinosaur with laser jaw","roar","Extinct? Not with batteries.","robot"},
 }

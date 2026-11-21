@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"log fort","EGEMII","GSe",4,1,7,"8D6E63","5D4037","square log stockade with watch posts","thud","Built from a whole forest.","structure,defense,flammable"},
 	{"log splitter","JKCL1I","kV",5,1,7,"C0392B","8A929B","hydraulic wedge on a frame","clank","Splits logs. And opinions.","tool"},
 	{"log swap","NGBIMI","ZY",3,9,4,"8B5A2B","D9B38C","you poof into a log and appear somewhere else","poof","Nice hit. On a log.","anime,ninja"},
 	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
@@ -62,7 +63,7 @@ return {
 	{"lucky coin","BHAOKJ","Fc",2,6,3,"D4A72C","B8693D","worn shiny coin","boing","Heads: you win. Tails: you also win.","treasure,shiny"},
 	{"lucky seven","KHCOKJ","Da",4,7,3,"FFD54F","D32F2F","three glowing sevens spinning","jingle","Jackpot energy.","luck"},
 	{"lucky streak","KHCOKJ","Da",3,7,3,"43A047","FFD54F","trail of clovers behind caster","ding","Can't stop winning.","luck"},
-	{"luggage carousel","OMCGGK","kSRI",3,3,4,"2BB3A3","D7263D","hard-shell suitcases circling round you on an airport carous","thump","Is that one yours? Is that?","transit,orbit,silly"},
+	{"luggage carousel","OMCG2K","kSRI",3,3,4,"2BB3A3","D7263D","hard-shell suitcases circling round you on an airport carous","thump","Is that one yours? Is that?","transit,orbit,silly"},
 	{"lullaby","KLCDOJ","SNO",5,3,6,"B39DDB","FFF8E1","a drifting cloud of soft notes that puts lingerers to sleep","chime","Hush now. Everybody sleep.","music,control"},
 	{"lumberjack","LGCJNA","Dkf",6,5,6,"DC2626","111827","plaid shirt, beard, giant axe","thud","Yells TIMBER. Means it.","outdoor"},
 	{"lumberjack giant","AGEJNA","Dkf",7,4,8,"DC2626","111827","plaid giant with a tree-sized axe","stomp","Fells forests with one swing.","giant,outdoor"},
@@ -81,7 +82,7 @@ return {
 	{"lunch pail","BKAIyI","G",1,6,3,"C9CED4","24262A","old tin lunch pail","thud","Classic grub armour.","container"},
 	{"lunch rush","IMAELB","DP",2,7,1,"D72B2B","F2C24A","stampede of trays","pitter","Everyone, everywhere, all at lunch.","edible,sweet"},
 	{"lunch thief","LIBJNA","Zb",2,9,2,"1F2937","FACC15","kid with stuffed cheeks and paper bag","whoosh","Your sandwich? Gone.","school,silly"},
-	{"lunch tray","BMBIyK","G",1,6,2,"E67E22","8E9196","compartment plastic tray","tap","Sliding down hills since forever.","school"},
+	{"lunch tray","BMBIyI","GaN",2,5,3,"E67E22","8D6E63","a lunch tray held up that flicks gravy at attackers","tap","Today's special: gravy. Again.","goofy,gross,school,shield"},
 	{"lunchbox","BMBIyK","G",1,6,4,"C0392B","C9CED4","metal box with handle","clang","Lunch. Armour. Lunch armour.","kitchen,household"},
 	{"lung","BFCFGE","kHI",4,6,3,"F2A1A1","E57373","pair of pink lungs inflating like bellows","whoosh","Deep breath in. Everybody out.","body,science"},
 	{"lungfish","ABCJEC","DfB",4,7,4,"6A6250","A89A80","eel-like with lungs, leg fins","splash","Breathes air. Naps in mud for years.","fish,aquatic,ancient"},
@@ -402,5 +403,4 @@ return {
 	{"merlin falcon","AMBJDB","DAfT",3,9,3,"5A6A8A","D8A06A","small dashing falcon","screech","Not the wizard. Still magic.","bird,predator"},
 	{"mermaid","ABCJEC","FceB",4,7,4,"0EA5E9","F472B6","fish tail, seashell top, flowing hair","sing","Lives under the sea. Collects forks.","mythical,aquatic"},
 	{"mermaid princess","ABCJEC","FcB",4,7,4,"0EA5E9","F472B6","crowned mermaid with pearl necklace","sing","Wants legs. Settles for victory.","royal,aquatic"},
-	{"mermaid queen","ABDJEC","FhB",6,6,5,"0369A1","FDE68A","crowned mermaid with pearl scepter","sing","Rules the reef. Bans plastic.","aquatic,royal"},
 }

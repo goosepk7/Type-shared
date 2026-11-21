@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"diploma","BHBOJK","FaO",2,5,2,"F5F0DC","DC2626","rolled parchment tied with a red ribbon, gold seal","fanfare","Officially qualified to bonk.","school"},
 	{"dipper","ABAJDB","dAB",1,7,1,"3A3A3A","F2F2F2","songbird that walks underwater","tweet","Walks underwater. Seriously.","bird,cute"},
 	{"diprotodon","AMDJAA","DkO",6,4,8,"8A6A4A","C8A87A","rhino-sized wombat","roar","A wombat the size of a car.","mammal,extinct,ancient,heavy"},
 	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
@@ -71,7 +72,6 @@ return {
 	{"dolphin","ABCJEC","UDFB",4,8,4,"7E94A8","D8E4EC","curved dorsal fin, smiling beak","click","Smiles at everyone. Plays with bubbles.","mammal,aquatic,ocean"},
 	{"dome","EMDIII","GS",3,1,9,"ECEFF1","90A4AE","half-sphere roof over a ring wall","thud","Round on top. Safe inside.","structure,defense"},
 	{"dome of light","KHDIKI","GF",2,3,8,"FFF59D","FFFFFF","great golden dome over allies","choir","Safe inside the glow.","holy,defence"},
-	{"domino","BMACII","GV",1,1,3,"24262A","F2F2EE","black tiles with white dots","clack","Tip one. Tip them all.","game"},
 	{"domino line","EMCLII","kSP",3,6,2,"212121","F5F5F5","long winding row of dominoes","clack","One push. Chain reaction.","structure,silly"},
 	{"domovoi","AMAJNA","GdF",1,4,3,"78350F","F59E0B","small hairy grandpa spirit near the stove","giggle","Guards the house. Needs milk and cookies.","mythical,cute"},
 	{"doner kebab","IGBOKI","F",2,5,3,"C88A5A","F2E8D0","wrapped flatbread with sliced meat","crunch","A spinning tower of flavor.","edible,healthy"},

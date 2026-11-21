@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mustache","BMBADB","Ujd",2,7,2,"2C1B10","4A2F1B","curly handlebar mustache flapping like wings","twang","Instantly 40% more distinguished.","body,silly,meme"},
 	{"mustang","AMDKAA","Dkg",5,9,5,"9A5A2E","2A1E16","wild horse rearing, wind-blown mane","neigh","Untameable. Has tried saddles. Hated them.","mammal"},
 	{"mustard","IABNGI","KjP",2,4,1,"F2C21A","E8A82B","yellow squeeze bottle, squiggle","splat","Yellow, zingy, and in your eyes.","edible,sauce"},
 	{"mutant","AJCJBA","WfMV",6,5,6,"8BC34A","7B1FA2","lumpy green thing, three eyes, one giant arm, extra tail","gurgle","Fell in the goo. Came out improved. Sort of.","scifi,toxic,silly"},
@@ -231,6 +232,7 @@ return {
 	{"ocelot","AMCJAA","ZfT",4,7,3,"C9A267","2A1E12","chain-spotted coat, striped legs","hiss","Looks like a tiny leopard wearing art.","mammal,predator,wild"},
 	{"ocotillo","NECLMI","GSfT",3,1,6,"6D4C41","E53935","spiny whips tipped with red flames","thud","Waves thorny whips at you.","plant,desert,sharp"},
 	{"octopus","ABCJSC","jZfHbB",4,6,3,"C8503A","F2A08A","round head, eight curling tentacles, suckers","squelch","Eight arms, three hearts, zero bones.","aquatic,ocean,smart"},
+	{"octopus grab","ABCNSC","fHO",5,5,4,"D9644E","1E1A2E","an octopus bursts out of an ink puddle and grabs","squelch","Eight arms. All of them for you.","critter,sea,zone,control"},
 	{"odachi","CKDHrK","kfT",7,4,5,"C9CED4","9E1B32","very long curved blade","shing","So long it needs its own zip code.","medieval,sharp"},
 	{"odin","LLEJZA","jATeh",9,5,9,"374151","60A5FA","one-eyed old wanderer, wide hat, spear, two ravens","caw","Traded an eye for wisdom. Still lost his keys.","mythical,norse,boss,danger"},
 	{"off roader","DMCKHL","UDkg",4,7,6,"556B2F","C2B280","open-top boxy 4x4, spare wheel on back","engine","Mud is just a suggestion.","mechanical,vehicle,land"},
@@ -401,6 +403,4 @@ return {
 	{"paella","IACELB","KFeP",2,6,1,"E8A02B","C8302B","wide pan of saffron rice, seafood","pitter","A giant pan of golden rice.","edible,grain"},
 	{"page","BFAAJB","ATe",1,7,1,"FFFFFF","93C5FD","single lined page fluttering edge-first","rustle","Paper cut. The worst cut.","school,sharp"},
 	{"pagoda","EMDMII","GSe",4,1,7,"C62828","263238","stacked curved roofs, many tiers","thud","Every floor has another curved roof.","structure,defense,tower"},
-	{"pagoda tree","NGDCMI","GWkS",3,1,7,"5D4037","FFF8E1","wide tree with hanging white flowers","rustle","Tiered branches like a pagoda.","plant,tree"},
-	{"pain","KDBAKB","NPO",4,8,1,"EF4444","FDE047","red throbbing star with jagged yellow zigzags","zap","It only hurts when you exist.","mood"},
 }

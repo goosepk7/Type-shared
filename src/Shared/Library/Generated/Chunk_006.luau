@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"claidheamh","CKDHJK","kf",7,4,6,"8A929B","2E5E3E","basket-hilt broadsword","shing","Big sword with tartan pride.","fantasy,sharp"},
 	{"clam","ABAJGI","GfHN",1,1,6,"D8C8B0","9A8A70","two-shell clam half open","squelch","Happy as a clam. Allegedly.","mollusk,aquatic"},
 	{"clam chowder","IBBOGI","FS",3,4,3,"F2EAD5","C8A070","creamy white soup, crackers","slurp","Creamy, briny, and warming.","edible,warm,healthy"},
 	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
@@ -66,7 +67,7 @@ return {
 	{"clothes","BMCLNA","GjN",2,4,3,"3B82F6","EF4444","empty outfit walking by itself: shirt, jeans, sneakers","rustle","Nobody inside. Still better dressed than you.","clothing,silly"},
 	{"clothes dryer","OACL1I","Kj",3,1,7,"F2F2EE","8E9196","round-door tumble dryer","thud","Tumble. Tumble. Dizzy.","household"},
 	{"clothes hanger","BMAHJK","fH",1,7,2,"8B5A2B","C9CED4","wooden hanger with hook","thud","Hook. Hang. Done.","household"},
-	{"clothes iron","BABHtK","Kkf",3,5,5,"87CEEB","C9CED4","pointy steam iron","thud","Pressing matters. Hot ones.","household"},
+	{"clothes iron","BABAtB","Kke",3,7,4,"2BA7A0","F4F6F7","teal steam iron skating on its hot plate","thud","Pressing matters. Hot ones.","household,laundry"},
 	{"clothes moth","AMAJFB","jdiA",1,5,1,"D8C8A8","B8A88A","small tan moth","flutter","Eats your sweaters.","insect,cute"},
 	{"clothespin","BMALKI","O",1,7,2,"C49A6C","C9CED4","little spring peg","thud","Pinch!","household"},
 	{"clotted cream","IMBLGI","kSO",2,3,2,"F7F0D0","F2E2B0","thick yellow-white cream","squeak","Cream so thick it's a solid.","edible,slippery,silly"},
@@ -402,5 +403,4 @@ return {
 	{"crate","BMCC2I","Gk",2,1,6,"8B5A2B","D2B48C","nailed wooden slat crate","thud","Smashable. Stackable. Loot inside.","container"},
 	{"crate barricade","EECCII","GdS",2,1,4,"A1887F","6D4C41","stacked wooden crates","thud","Mystery boxes. Mystery defence.","structure,defense,flammable"},
 	{"crate of tnt","BACL2I","EkP",8,1,2,"C0392B","8B5A2B","wooden crate stencilled TNT","thud","Do. Not. Drop.","container,explosive"},
-	{"crater","MEELII","SHN",4,1,8,"5D5D5D","8D6E63","round dented bowl with a rocky rim","rumble","Something big landed here once.","place,terrain"},
 }

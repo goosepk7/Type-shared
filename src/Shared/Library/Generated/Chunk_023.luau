@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"screw","BKAAJK","Te",1,8,2,"8A929B","C9CED4","spiral threaded spike","clink","Righty tighty.","hardware"},
+	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
+	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},
+	{"scribe","LLCJNA","Gh",3,3,3,"78350F","F8FAFC","quill, scroll, candle","scratch","Writes your defeat in pretty letters.","historical"},
 	{"scroll","BLAAJK","eh",3,6,1,"E8D9B0","9E1B32","rolled parchment with seal","tap","Read aloud. Stand back.","magic,fantasy"},
 	{"scrub brush","BMAHJK","Ff",1,6,3,"8B5A2B","F1C40F","wooden block with bristles","clank","Scrub-a-dub-dub.","cleaning"},
 	{"scuba diver","LBCJNC","TeB",4,5,5,"111827","FACC15","wetsuit, mask, flippers, air tank","bubble","Breathes underwater. Brought a harpoon.","aquatic"},
@@ -267,7 +271,7 @@ return {
 	{"shogun","LKDJNA","Gfh",7,4,8,"7F1D1D","CA8A04","towering gold-crested armor, war fan","clang","Commands armies with a fan.","warrior,royal,boss"},
 	{"shonisaurus","ABFJEC","DfHB",8,6,7,"4A5A6A","C8D0D8","gigantic ichthyosaur","roar","A whale-sized ichthyosaur.","extinct,reptile,aquatic,ocean"},
 	{"shoot","KLBAKB","Te",4,10,1,"FFEB3B","FFFFFF","fast glowing bolt","pew","Pew!","ranged"},
-	{"shooting star","HHBAKB","FTe",4,10,1,"FFF6C2","FFD54F","bright star streak with sparkling tail","chime","Make a wish. It is aiming at you.","space,cute"},
+	{"shooting star","HHBAKB","DIe",4,10,1,"FFF6C2","FFD54F","you streak forward as a bright star with a sparkling tail","chime","Make a wish. It is aiming at you.","space,cute,speed"},
 	{"shop","EMBCII","GS",2,1,4,"F5E6CA","43A047","shopfront with awning and sign","thud","Everything must go. Including you.","structure,building"},
 	{"shopkeeper","LMCJNA","cbh",3,4,4,"92400E","FDE68A","apron, coin pouch, ledger","ding","Has what you need. For a price.","merchant"},
 	{"shopping bag","BMBL2I","O",1,1,1,"D2B48C","F2F2EE","paper grocery bag","thud","Bagged and tagged.","container"},
@@ -399,8 +403,4 @@ return {
 	{"skeleton cowboy","AICJNA","eV",4,6,3,"F5F5F4","92400E","skeleton in a ten-gallon hat","rattle","Yee-haw. Rattle rattle.","undead,western"},
 	{"skeleton crypt","MIENII","SNh",5,1,8,"EFEBE9","263238","tomb lined with rattling skeletons","moan","Rattle rattle. Rise up.","place,spooky,undead"},
 	{"skeleton dog","AIBJAA","Qf",2,7,2,"F5F5F4","22C55E","skeletal pup carrying its own bone","rattle","Fetches its own leg.","undead,canine,silly"},
-	{"skeleton horse","AIDKAA","Dg",5,8,5,"F5F5F4","22C55E","skeletal horse with green eye glow","rattle","No saddle sores. No anything.","undead,mount"},
-	{"skeleton key","BKAOJK","Y",2,7,4,"5B6168","24262A","ornate antique key","clank","Opens every lock. Even the rude ones.","magic"},
-	{"skeleton king","AIDJNA","Gfh",7,4,7,"F5F5F4","CA8A04","crowned skeleton on a bone throne","rattle","Rules a kingdom of bones and dust.","undead,royal,spooky,boss"},
-	{"skeleton mage","AICJNA","Jeh",5,4,3,"F5F5F4","7C3AED","robed skeleton with glowing staff","rattle","Cast spells. Lost lips. Still chants.","undead,magic"},
 }

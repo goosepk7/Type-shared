@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot crab","OKBJFA","Gf",3,4,7,"DC2626","94A3B8","metal crab with pincer claws","click","Walks sideways. Pinches forward.","robot,aquatic"},
+	{"robot dance","KKBNOI","jd",1,5,2,"90A4AE","00E5FF","stiff jerky moves with beeps","beep","Beep boop. Groovy.","music,dance,silly"},
+	{"robot dance crew","OKCJNA","jdh",3,6,4,"F472B6","22D3EE","three robots doing the robot","beep","Doing the robot. Ironically.","robot,silly,music"},
+	{"robot dinosaur","OKEJAA","Dkfe",8,5,8,"94A3B8","DC2626","chrome dinosaur with laser jaw","roar","Extinct? Not with batteries.","robot"},
 	{"robot dog","OKBJAA","DQf",3,7,5,"CBD5E1","3B82F6","four-legged metal pup with LED tail","bark","Never sheds. Occasionally reboots.","robot,cute,canine"},
 	{"robot dragon hatchling","AKAJAB","KA",2,6,4,"94A3B8","22D3EE","tiny chrome dragon with blinking eyes","beep","Beeps fire.","robot,cute,reptile"},
 	{"robot factory","EKENII","GSh",5,1,8,"607D8B","FFB300","conveyor belts and robot arms","hum","Spits out robots. Endlessly.","robot,mechanical"},
@@ -31,7 +35,7 @@ return {
 	{"robot tank","OKDMHL","GEe",7,3,9,"365314","1F2937","treaded robot with turret head","clank","Turret, treads, and attitude.","robot,heavy"},
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
 	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
-	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
+	{"robot vacuum","OMBJKF","QH",2,4,4,"33363D","36C9C0","round charcoal robot vacuum with a teal ring","clank","Bumps into walls. Determined.","household,robot,gadget"},
 	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 	{"robot wizard","OLCJNA","eLY",5,4,6,"6366F1","94A3B8","robot in a pointy hat with antenna wand","zap","Casts spells with a USB wand.","robot,magic,silly"},
 	{"robotics engineer","LKCJNA","Fh",4,4,4,"1E3A8A","94A3B8","goggles, soldering iron, robot arm","clank","Builds a robot friend in seconds.","tech,robot"},
@@ -278,7 +282,7 @@ return {
 	{"sand worm hatchling","AEBJCH","Cf",2,5,2,"C2A26B","FDBA74","small ringed worm with tiny teeth","chirp","Will grow. Very large.","desert,cute"},
 	{"sand wraith","AECJOJ","jZNP",4,7,3,"D6A35A","FDE68A","swirling sand figure with ember eyes","howl","Gets in your eyes. Gets in everything.","spooky,desert"},
 	{"sandal","BMBAJK","UQeO",4,9,3,"F59E0B","0EA5E9","spinning flip-flop curving through the air","thwack","Never misses. Mothers have trained for this.","clothing,meme"},
-	{"sandbag drop","OEDEGJ","ESe",3,2,6,"E53935","C9A56E","a striped hot air balloon dropping burlap sandbags","thud","Lighten the load. On your head.","transit,rain,silly"},
+	{"sandbag drop","OEDE2J","ESe",3,2,6,"E53935","C9A56E","a striped hot air balloon dropping burlap sandbags","thud","Lighten the load. On your head.","transit,rain,silly"},
 	{"sandbags","EECCII","GSN",2,1,7,"C2B280","8D7B5A","low curved stack of lumpy bags","thud","Soaks up bullets like a sponge.","structure,defense"},
 	{"sandbar","MBCNII","SN",2,1,5,"F4E4BC","4FC3F7","low strip of sand in shallow water","rumble","Boats get stuck. On purpose.","place,terrain"},
 	{"sandcastle","EECCII","GdS",2,1,2,"E6C27A","1E88E5","bucket-shaped sand towers, shell windows","thud","One wave from total collapse.","silly,cute"},
@@ -399,8 +403,4 @@ return {
 	{"screech","KFCF6B","jIO",4,9,1,"F8FAFC","EF4444","jagged white sound spikes shattering nearby glass","screech","EEEEEEEEEEEEEEEEEEEEEEEEE.","loud"},
 	{"screech owl","AMAJDB","AZT",2,7,2,"8A8A80","D8D0C0","tiny eared owl, bark pattern","hoot","Doesn't screech. Trills.","bird,nocturnal,predator"},
 	{"screen wrap","KLBOKI","Y",2,10,1,"7DFFB2","B57CFF","pixel dissolve and reappear behind them","blip","Left edge, right edge, behind you.","game,arcade,mobility"},
-	{"screw","BKAAJK","Te",1,8,2,"8A929B","C9CED4","spiral threaded spike","clink","Righty tighty.","hardware"},
-	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
-	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},
-	{"scribe","LLCJNA","Gh",3,3,3,"78350F","F8FAFC","quill, scroll, candle","scratch","Writes your defeat in pretty letters.","historical"},
 }

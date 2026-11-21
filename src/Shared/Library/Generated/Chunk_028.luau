@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"turkish coffee","IABOKI","DF",3,9,2,"2A160C","6B4026","tiny cup, thick foam","fizz","Thick enough to read fortunes in.","edible,drink"},
+	{"turkish delight","IMBLGG","dcN",2,3,3,"F2A6C8","F7F7F7","powdered pink jelly cubes","wobble","Sweet cubes in a sugar dust.","edible,wobbly,sweet"},
+	{"turmeric","IEBDOJ","jSP",2,5,1,"E8A21A","C27A1A","knobby orange root, gold powder","puff","Paints the battlefield gold.","edible"},
+	{"turn","KFBO5K","jaY",3,6,2,"F59E0B","3B82F6","curved arrow looping back on itself","whoosh","It is my turn. You had a turn. MUM!","silly,gaming"},
+	{"turnip","IEBAKK","keO",3,7,6,"F2EEF2","9A3A8A","round white root, purple top","bonk","Rolls, thumps, tastes like soup.","edible,vegetable"},
+	{"turnover","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","triangle flaky pastry","chomp","A pie that folded itself in half.","edible,sweet"},
+	{"turnstile","EKBCII","GSN",1,1,5,"B0BEC5","37474F","spinning three-armed gate","thud","One at a time, please.","structure,defense,silly"},
 	{"turntable","BMCFJI","jO",2,2,4,"24262A","C9CED4","spinning deck with tonearm","scratch","Drop the beat. Drop the foes.","music"},
 	{"turret","OKCMwI","Te",5,7,6,"2C3539","6B7B3A","swivelling twin-barrel tripod gun","hum","Never sleeps. Never blinks.","defense,mechanical"},
 	{"turtle","AMBJUA","GNB",2,2,8,"5A7A3A","C8B87A","domed shell, stubby legs","hiss","Carries its house everywhere.","reptile,armored"},
@@ -396,11 +403,4 @@ return {
 	{"watermelon vine","NGCLMI","SeN",2,1,4,"2E7D32","E53935","sprawling vine with stripy melons","rustle","Seeds for days. Ptoo ptoo.","plant"},
 	{"watermill","EBDCIK","GSI",3,1,7,"8D6E63","1E88E5","stone mill with a big turning wheel","splash","Splish, splash, grind.","structure,building"},
 	{"waterzooi","IBBOGI","FS",3,4,3,"F2E8C8","7DBE3A","creamy chicken stew","slurp","A creamy Belgian stew.","edible,warm,healthy"},
-	{"wave","FBDF6F","kI",5,6,3,"1E88E5","BBDEFB","curling blue wave with white crest","splash","Wave hello. Wave goodbye.","aquatic"},
-	{"wave rider","KBCO6C","DI",3,9,2,"2AA7D8","F4FBFF","you ride a curling wave forward on a board","splash","Paddle out. Drop in. Run them over.","sport,surf,mobility,water"},
-	{"wax","FABNGI","KSN",2,2,3,"FDE68A","F97316","dribbling warm yellow wax pooling and hardening","sizzle","Mind your own. Beeswax, that is.","household,sticky"},
-	{"waxwing","AMAJDB","dA",1,7,1,"C8A07A","F2D82A","sleek crest, black mask","tweet","Wears a mask and a crest. Cool.","bird,cute"},
-	{"waxy monkey frog","AMAJAA","Ue",1,5,1,"6AC84A","F2F2EE","walks instead of hops","croak","Rubs on wax sunscreen. Walks.","amphibian,wetland"},
-	{"weaken","KIBAKB","iXN",3,7,1,"9E9E9E","FFFFFF","downward arrows over target","wub","Nerfed. Sorry not sorry.","silly"},
-	{"weakness","KIBOKE","iXN",3,6,1,"A78BFA","F87171","glowing red target spot blinking on a cracked armour plate","beep","Hit the glowing bit. It is always the glowing bit.","gaming"},
 }

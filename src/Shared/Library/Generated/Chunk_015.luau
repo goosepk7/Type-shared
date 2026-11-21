@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"kumquat","IMAAKF","jke",3,6,2,"F59F1B","4F8A2B","tiny oval orange, eat whole","squirt","Bite-size citrus. Surprise sour inside.","edible,fruit,sour"},
 	{"kun peng","ABFJEB","AkB",9,5,9,"1E3A8A","F8FAFC","enormous fish that becomes a giant bird","whoosh","A fish so big it became a bird.","mythical,giant,danger"},
 	{"kunai","CKAArK","Te",3,9,2,"3A3F45","24262A","leaf blade, ring pommel","shing","A ninja's do-everything pointy friend.","medieval,sharp,ninja"},
 	{"kung pao chicken","IABAKK","KP",5,7,2,"C8402B","C8904A","chicken, peanuts, dried chilies","sizzle","Peanuts and chilies, flying everywhere.","edible,spicy,flammable"},
@@ -402,5 +403,4 @@ return {
 	{"locust tree","NGDCMI","GWkST",4,1,7,"5D4037","9CCC65","thorny tree with long twisty pods","rustle","Thorns as long as fingers.","plant,tree,sharp"},
 	{"log bridge","EGCCII","GSN",1,1,4,"8D6E63","7CB342","single fallen tree across a gap","thud","One wrong step and splash.","structure"},
 	{"log flume","DBCKHC","DIg",3,7,4,"8D6E63","4FC3F7","hollow log boat on a water chute","splash","The big drop! Everyone gets soaked.","vehicle,silly"},
-	{"log fort","EGEMII","GSe",4,1,7,"8D6E63","5D4037","square log stockade with watch posts","thud","Built from a whole forest.","structure,defense,flammable"},
 }

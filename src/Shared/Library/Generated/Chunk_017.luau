@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"mermaid queen","ABDJEC","FhB",6,6,5,"0369A1","FDE68A","crowned mermaid with pearl scepter","sing","Rules the reef. Bans plastic.","aquatic,royal"},
 	{"merman","ABCJEC","fTB",5,7,5,"0F766E","FACC15","fish-tailed warrior with a trident","splash","Ocean guard. Fin-tastic posture.","mythical,aquatic,warrior"},
 	{"merrow","ABCJEC","cB",4,6,4,"15803D","DC2626","mer-person in a red feathered cap","sing","Lose the cap, can't go home.","mythical,aquatic"},
 	{"mess","KMCNGI","jSNP",3,1,3,"F59E0B","8B5CF6","spreading sprawl of toys, crumbs, socks and spilled juice","clatter","Who made this? Nobody. It was always nobody.","silly,household"},
@@ -252,7 +253,7 @@ return {
 	{"moon snail","ABAJGI","GTN",1,1,6,"C8B8A0","8A6A4A","round shell, huge foot","squelch","Drills into clams. Cheeky.","mollusk,aquatic"},
 	{"moon spirit","AHBJAG","UjF",2,7,2,"F8FAFC","C4B5FD","white rabbit pounding a mortar on the moon","chime","Makes moon cakes. Moon only.","cute,cosmic"},
 	{"moon surface","MLFNII","lS",4,1,9,"BDBDBD","757575","grey dusty craters under black sky","rumble","Low gravity. Big jumps.","place,terrain,space"},
-	{"moonbeam","FHBBKI","Fe",3,7,1,"C7D3FF","F4F6FF","thin pale-blue silvery ray","chime","Gentle. Silvery. Strangely sleepy.","space"},
+	{"moonbeam","FHCBKI","eN",4,7,1,"C7D3FF","F4F6FF","pale silver-blue ray sweeping out of a little crescent moon","chime","Gentle. Silvery. Strangely sleepy.","space,light,night"},
 	{"moonbow","GHCBKI","FZ",4,5,2,"E1E6FF","B39DDB","pale ghostly rainbow at night","chime","A rainbow that stays up late.","space,cute"},
 	{"mooncake","IHBLKI","dSc",2,3,3,"C8883A","F2D08A","round pressed pastry, imprint","chomp","A cake for watching the moon.","edible,sweet,holiday"},
 	{"moonfall","HEFAKB","EkO",10,2,10,"CFD8DC","90A4AE","giant cratered moon descending slowly","rumble","The moon is coming closer. Uh oh.","space,heavy,silly,danger"},
@@ -338,7 +339,7 @@ return {
 	{"mud elemental","AECJGA","HN",5,3,6,"78350F","65A30D","sloppy brown humanoid dripping mud","squelch","Messier than your room.","elemental"},
 	{"mud flats","MBENII","SN",2,1,5,"8D6E63","90A4AE","wide grey glistening mud","rumble","Squelchy. Slurpy. Sticky.","place,terrain"},
 	{"mud man","AECJNA","GN",4,3,5,"78350F","A16207","dripping figure made of wet mud","squelch","Wipe your feet first.","silly"},
-	{"mud pie","CEAAKK","jeN",1,7,1,"7A4E2D","D2B48C","lumpy wet mud blob","boing","Splat! Now you're messy.","silly"},
+	{"mud pie","CEAA7K","SeN",2,7,1,"7A4E2D","A1887F","a lumpy mud pie that splats into a slippery puddle","splat","Splat! Now you're messy.","goofy,gross,silly,mud"},
 	{"mud pit","MECLII","SN",2,1,5,"6D4C41","8D6E63","sloppy brown puddle","rumble","Pigs love it. Enemies do not.","place,terrain,silly"},
 	{"mud storm","GEDEOJ","jNP",5,4,3,"5D4037","A1887F","brown cloud raining mud blobs","splat","Splat. Splat. Splat.","silly,storm"},
 	{"mud turtle","AMBJUA","GNB",2,2,8,"4A3A2A","8A6A4A","small muddy turtle","hiss","Loves mud. Lives in mud.","reptile,armored"},
@@ -402,5 +403,4 @@ return {
 	{"musketeer","LKCJNA","fTe",5,7,4,"1D4ED8","F8FAFC","feathered hat, rapier, blue tabard","bang","All for one. One for snacks.","warrior"},
 	{"muskrat","ABAJAA","CdbB",1,6,1,"6A4A2A","A88A6A","water rat with flat tail","squeak","Swims, builds huts, smells musky.","mammal,cute"},
 	{"mussel","ABAJGI","GNP",1,1,6,"2A2E3A","8A7AA8","blue-black long shells","squelch","Strong mussels. Get it?","mollusk,aquatic"},
-	{"mustache","BMBADB","Ujd",2,7,2,"2C1B10","4A2F1B","curly handlebar mustache flapping like wings","twang","Instantly 40% more distinguished.","body,silly,meme"},
 }

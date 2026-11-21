@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skeleton horse","AIDKAA","Dg",5,8,5,"F5F5F4","22C55E","skeletal horse with green eye glow","rattle","No saddle sores. No anything.","undead,mount"},
+	{"skeleton key","BKAOJK","Y",2,7,4,"5B6168","24262A","ornate antique key","clank","Opens every lock. Even the rude ones.","magic"},
+	{"skeleton king","AIDJNA","Gfh",7,4,7,"F5F5F4","CA8A04","crowned skeleton on a bone throne","rattle","Rules a kingdom of bones and dust.","undead,royal,spooky,boss"},
+	{"skeleton mage","AICJNA","Jeh",5,4,3,"F5F5F4","7C3AED","robed skeleton with glowing staff","rattle","Cast spells. Lost lips. Still chants.","undead,magic"},
 	{"skeleton pirate","AICJNA","fVb",5,6,4,"F5F5F4","7F1D1D","skeleton in tricorn hat with cutlass","rattle","Yo ho ho. Rattle rattle.","undead,pirate"},
 	{"skeleton samurai","AICJNA","fTV",5,6,4,"F5F5F4","991B1B","skeleton in red samurai armor","rattle","Honor never dies. Neither does he.","undead,warrior"},
 	{"skeleton shark","AIDJEC","fB",6,7,4,"F5F5F4","0EA5E9","shark skeleton swimming with green glow","rattle","All jaw. No fins. Still swims.","undead,aquatic"},
@@ -97,8 +101,8 @@ return {
 	{"slope","MEDNnI","DIN",4,1,7,"8B6B4A","E0F2FE","steep tilted ground with a runaway shopping trolley","whee","Slippery. Capital S. Capital WHEEE.","terrain"},
 	{"sloppy joe","IMBLGI","jcN",2,3,3,"A8402B","D9A04A","bun overflowing with saucy meat","gloop","Messy. Very messy. On purpose.","edible,sticky"},
 	{"slot machine","OKCM1I","jc",2,1,5,"C0392B","D4A72C","lever cabinet with spinning reels","clank","Jackpot? Bonk.","game"},
-	{"sloth","AMCJAA","fN",2,1,3,"9A8A6E","D8C8A8","long claws, hanging upside down","squeak","Takes a month to digest a leaf.","mammal,wild,silly"},
 	{"sloth bear","AMDJAA","Dkf",6,5,7,"2A2420","E6DED2","shaggy black bear, pale snout","roar","Vacuums up termites. Messy eater.","mammal,predator,wild"},
+	{"sloth hug","AMCAAA","fN",2,2,3,"8A7458","E8DCC2","a sloth lands on an enemy and clings on","yawn","It will let go. Eventually.","critter,mammal,bolt,slow"},
 	{"slow","KLBAKB","eN",3,7,1,"90CAF9","E1F5FE","wobbly blue ripple on target","wub","Hurry up. Oh wait, you cannot.","time"},
 	{"slow and steady","KEBOKA","GF",1,1,7,"8D6E63","A5D6A7","calm green shell glow","plod","Wins the race. Eventually.","silly"},
 	{"slow field","KLDNOI","SN",4,2,4,"90CAF9","E1F5FE","blue dome where everything drags","wub","Molasses mode, engaged.","time"},
@@ -142,6 +146,7 @@ return {
 	{"snail","AMAJGI","GSN",1,1,6,"A86A3A","E8C8A0","spiral shell, slimy foot, eye stalks","squelch","Speed: yes. Very little of it.","mollusk,aquatic,garden"},
 	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 	{"snail mobile","DMBKHL","GgN",2,1,6,"FFB300","8D6E63","car under a big spiral shell","engine","The slowest ride ever. Very safe.","vehicle,silly"},
+	{"snail trail","ABANGI","SN",3,1,5,"C98A4B","B8C08A","a snail leaves a slowing slime trail","squelch","Speed: yes, eventually.","critter,zone,slow"},
 	{"snake","AMCJCD","fMN",4,6,3,"4A7A3A","C8B860","long coiled body, forked tongue","hiss","Hugs without arms. Hisses hello.","reptile,venomous"},
 	{"snake charmer","LJCJNI","cOh",3,4,3,"F59E0B","15803D","flute and basket with a dancing snake","flute","Plays a tune. Snakes appear.","music"},
 	{"snake in a can","CMALJK","jO",1,1,2,"2E8B57","C0392B","can with springing fabric snakes","boing","BOING! Ahhh!","prank,silly"},
@@ -398,9 +403,4 @@ return {
 	{"spider","AJBJQA","fMeN",2,6,2,"2A2420","8A6A4A","eight legs, round body, many eyes","skitter","Eight legs, eight eyes, zero chill.","arachnid,spooky,venomous"},
 	{"spider cave","MIENII","SMNh",5,1,7,"37474F","ECEFF1","cave draped in thick webs","echo","Sticky. Creepy. Many legs.","place,adventure,spooky"},
 	{"spider centaur","AJDJFA","MHe",6,6,6,"1C1917","7C3AED","elf torso on a giant spider body","skitter","Eight legs. Two bows.","spooky"},
-	{"spider crab","ABDJRA","GfT",5,4,5,"E87A3A","F2D8C0","extremely long spindly legs","clack","Legs longer than you.","crustacean,aquatic,armored"},
-	{"spider monkey","AMBJBA","dHeb",2,7,2,"2A2420","8E7460","very long limbs, grabbing tail","chatter","Five limbs. Uses all of them.","mammal,primate"},
-	{"spider plant","NGBOMI","FSh",1,1,3,"7CB342","F5F5F5","arching striped leaves with baby plantlets","rustle","Not a spider. Promise.","plant,houseplant,silly"},
-	{"spider queen","AJEJFA","MHh",7,5,7,"1C1917","9333EA","massive spider with crown-shaped carapace","skitter","Mother of a thousand spiders. All hungry.","spooky,insect,boss"},
-	{"spider walker","DKDKFA","DfgN",6,5,7,"37474F","E53935","cockpit on eight jointed metal legs","clank","Crawls up walls. Ugh.","mechanical,vehicle,land,robot"},
 }

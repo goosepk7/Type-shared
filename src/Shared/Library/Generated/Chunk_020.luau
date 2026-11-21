@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pita","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","round flat pocket bread","whoosh","A bread with a secret pocket.","edible"},
+	{"pita chips","IMBAKK","Uke",3,7,2,"E8C07A","C8904A","crisp triangle chips","whoosh","Crunchy bread triangles.","edible,snack"},
+	{"pitbull","AMCJAA","DQf",5,7,4,"8C7E72","F2EEE8","muscular wide head, big smile","bark","Big smile. Bigger heart.","mammal,pet"},
 	{"pitch","MGENnI","DSN",5,1,6,"22C55E","FFFFFF","striped mown grass with white lines and corner flags","whistle","Get off the grass. Unless you are winning.","sport,place"},
 	{"pitch black","FIDNOI","jZ",4,5,3,"000000","212121","absolute black dome","hush","Can't see your own hand.","spooky,stealth"},
 	{"pitcher plant","NJCLMI","ScMH",4,1,4,"9CCC65","B71C1C","tall slippery tube with a lid","chomp","Slide in. Do not slide out.","plant,carnivorous"},
@@ -187,7 +190,7 @@ return {
 	{"police van","DKDKHL","DkgOh",5,6,9,"1B2A49","F5F5F5","armoured black van with roof lights","siren","Backup has arrived. Lots of it.","mechanical,vehicle,land"},
 	{"polish","KKAOKI","a",1,4,3,"ECEFF1","FFFFFF","sparkly gleam on armour","squeak","So shiny. Hits slide off.","shiny"},
 	{"politician","LMCJNA","jdc",3,4,4,"1E3A8A","DC2626","suit, sash, giant scissors","ding","Makes many promises. Keeps none.","silly"},
-	{"pollen","NGBDOI","jSPO",2,4,1,"FFEB3B","FFF59D","drifting golden dust cloud","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly"},
+	{"pollen","NGCDOJ","SIP",3,4,3,"FFEB3B","FFF59D","drifting golden dust cloud that makes you sneeze","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly,nature"},
 	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
 	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
 	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},
@@ -389,6 +392,7 @@ return {
 	{"puffbird","AMAJDB","dA",1,7,1,"8A6A4A","F2F2EE","puffy round bird","tweet","Very puffy. Very still.","bird,cute"},
 	{"puffed rice","IMAELB","eVP",2,7,1,"F7F2E0","E8D8A8","tiny puffy grains","pitter","Crunchy air.","edible,sweet,snack"},
 	{"pufferfish","AJBJEC","UdWTMB",3,6,1,"E8D08A","6E5A3A","spiky round balloon fish","splash","Inflates into a spiky balloon. Do not lick.","fish,aquatic"},
+	{"pufferfish pop","AJBOEC","UWT",4,3,5,"E2C36A","F3E9C8","puff up into a spiky ball, then pop","pop","Personal space: enforced.","critter,sea,buff,defense"},
 	{"puffin","ABBJDB","DdAB",2,7,2,"1E1E1E","F2701E","black-white body, rainbow parrot beak","squawk","Holds 10 fish in its beak at once.","bird,ocean,cute"},
 	{"puffin chick","ABAJDB","DAB",1,7,2,"4A4A50","F2F2F0","tiny grey fluffball","squawk","A fluffy sock with a beak.","bird,ocean"},
 	{"pug","AMBJAA","dQf",2,6,2,"D9C2A0","2B2420","squished black face, curly tail, wrinkles","yip","Snorts like a tiny tractor.","mammal,pet,cute,silly"},
@@ -399,8 +403,4 @@ return {
 	{"pulled pork sandwich","IMBLGI","cN",2,3,3,"B0602B","D9A04A","bun overflowing with pork","gloop","Messy, saucy, glorious.","edible,sticky"},
 	{"pulley","OKBLJK","lH",2,3,5,"8B5A2B","B89B6A","wheel with rope over it","clank","Lifts heavy things with clever science.","science"},
 	{"pulse cannon","CDDMxI","keL",7,5,6,"2C3539","3FC1D9","thick barrel with glowing rings","zap","Thoom. Thoom. Thoom.","scifi,ranged"},
-	{"pulse rifle","CDCAwI","TeV",6,8,4,"4A4D52","3FC1D9","boxy rifle with glowing vents","zap","Brrrap-pew.","scifi,ranged"},
-	{"pummel","KMCAKB","kfV",5,9,2,"FF7043","FFE0B2","flurry of fist impact stars","thwack","Punches, but many.","silly"},
-	{"pump","OBBM1I","HI",2,3,6,"2F6FD1","8E9196","boxy pump with hoses","hum","Pushes water. Pulls water.","mechanical"},
-	{"pumpernickel","IICCII","Gk",4,2,7,"3E2618","6B4026","very dark square loaf","thud","Bread from the dark side.","edible,giant"},
 }
