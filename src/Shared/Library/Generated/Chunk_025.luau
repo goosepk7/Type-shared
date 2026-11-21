@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spider","AJBJQA","fMeN",2,6,2,"2A2420","8A6A4A","eight legs, round body, many eyes","skitter","Eight legs, eight eyes, zero chill.","arachnid,spooky,venomous"},
+	{"spider cave","MIENII","SMNh",5,1,7,"37474F","ECEFF1","cave draped in thick webs","echo","Sticky. Creepy. Many legs.","place,adventure,spooky"},
+	{"spider centaur","AJDJFA","MHe",6,6,6,"1C1917","7C3AED","elf torso on a giant spider body","skitter","Eight legs. Two bows.","spooky"},
 	{"spider crab","ABDJRA","GfT",5,4,5,"E87A3A","F2D8C0","extremely long spindly legs","clack","Legs longer than you.","crustacean,aquatic,armored"},
 	{"spider monkey","AMBJBA","dHeb",2,7,2,"2A2420","8E7460","very long limbs, grabbing tail","chatter","Five limbs. Uses all of them.","mammal,primate"},
 	{"spider plant","NGBOMI","FSh",1,1,3,"7CB342","F5F5F5","arching striped leaves with baby plantlets","rustle","Not a spider. Promise.","plant,houseplant,silly"},
@@ -400,7 +403,4 @@ return {
 	{"sty","MECNII","SMNh",3,1,4,"6B4F2A","F4A6B7","muddy fenced pen with a trough and snoozing pigs","squelch","Your room, according to your mother.","farm,gross"},
 	{"stygimoloch","AMDJAA","DdkTO",5,5,6,"3A3A3A","8A5A3A","spiky domed head","honk","Pachy with extra spikes. Goth.","dinosaur,extinct,reptile"},
 	{"stymphalian bird","AKCJDB","ATeP",5,8,5,"A16207","E7E5E4","bronze feathers shot like darts","clank","Sheds razor feathers. Terrible pillow.","mythical,bird,metal"},
-	{"styracosaurus","AMDJAA","DkT",7,5,8,"7A6A4A","C8701E","big nose horn, spiky frill crown","bellow","Wears a crown of spikes.","dinosaur,extinct,reptile"},
-	{"sub sandwich","IMBHJI","Fkf",3,5,4,"D9A04A","7DBE3A","long roll stuffed with fillings","bonk","A sandwich as long as your arm.","edible,silly"},
-	{"submachine gun","CKBAwI","eV",4,9,3,"24262A","8E9196","compact rapid-fire blaster","rattle","Small gun, big hurry.","modern,ranged"},
 }

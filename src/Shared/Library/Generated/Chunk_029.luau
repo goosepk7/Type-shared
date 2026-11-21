@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"watermelon vine","NGCLMI","SeN",2,1,4,"2E7D32","E53935","sprawling vine with stripy melons","rustle","Seeds for days. Ptoo ptoo.","plant"},
+	{"watermill","EBDCIK","GSI",3,1,7,"8D6E63","1E88E5","stone mill with a big turning wheel","splash","Splish, splash, grind.","structure,building"},
+	{"waterzooi","IBBOGI","FS",3,4,3,"F2E8C8","7DBE3A","creamy chicken stew","slurp","A creamy Belgian stew.","edible,warm,healthy"},
 	{"wave","FBDF6F","kI",5,6,3,"1E88E5","BBDEFB","curling blue wave with white crest","splash","Wave hello. Wave goodbye.","aquatic"},
 	{"wave rider","KBCO6C","DI",3,9,2,"2AA7D8","F4FBFF","you ride a curling wave forward on a board","splash","Paddle out. Drop in. Run them over.","sport,surf,mobility,water"},
 	{"wax","FABNGI","KSN",2,2,3,"FDE68A","F97316","dribbling warm yellow wax pooling and hardening","sizzle","Mind your own. Beeswax, that is.","household,sticky"},
@@ -146,7 +149,7 @@ return {
 	{"wind blade","FFCHrB","kTe",5,9,1,"B2EBF2","FFFFFF","crescent of slicing pale air","whistle","Sharp wind. Very sharp wind.","air,sharp"},
 	{"wind bolt","FFBAKB","ke",4,10,1,"B3E5FC","FFFFFF","swirling clear air dart","whistle","A tiny tornado, fired fast.","air"},
 	{"wind chill","GCCFOB","JIN",4,7,2,"B9D6E6","F7FBFD","biting icy gusts with flakes","howl","Feels colder than it is. Rude.","frozen,air"},
-	{"wind chimes","BFBFJI","dF",1,2,2,"C9CED4","C49A6C","hanging tubes tinkling","chime","Tinkle tinkle. Calm.","music"},
+	{"wind chimes","BFBNII","SI",2,2,3,"E9B949","96DCD6","brass chimes on a black shepherd's hook","chime","Tinkle tinkle. Shoo.","household,porch"},
 	{"wind dash","KFCOKB","DI",4,10,2,"B3E5FC","FFFFFF","caster riding a gust","whoosh","Ride the wind.","air,speed"},
 	{"wind dragon","AFEKCB","Aklg",7,9,6,"E0F2FE","60A5FA","feathered sky serpent with cloud mane","howl","Flies so fast it makes weather.","mythical,reptile,wind"},
 	{"wind horse","AFDKAB","DAg",5,10,4,"E0F2FE","93C5FD","horse made of swirling air","neigh","Faster than the wind. It is the wind.","mount,wind"},
@@ -400,5 +403,4 @@ return {
 	{"zulu warrior","LECJNA","GDf",6,7,5,"111827","F8FAFC","cowhide shield, short spear","roar","Charges in formation like horns.","warrior"},
 	{"zuniceratops","AMDJAA","DkT",7,5,8,"8A7A5A","D8C8A8","early two-horned dino","bellow","Early horns. Still pointy.","dinosaur,extinct,reptile"},
 	{"zuppa toscana","IBBOGI","FS",3,4,3,"F2E8C8","3E7A2B","creamy soup with kale","slurp","Tuscan comfort, creamy and green.","edible,warm,healthy"},
-	{"zweihander","CKDHrK","kfO",7,3,6,"8A929B","9E1B32","giant two-hand sword, side lugs","shing","Needs two hands and a running start.","medieval,sharp"},
 }

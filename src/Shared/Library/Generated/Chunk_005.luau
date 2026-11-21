@@ -328,7 +328,7 @@ return {
 	{"chocolate donut","IMBLKI","dSc",2,3,3,"4A2516","7A4026","chocolate glazed ring","chomp","Chocolate on chocolate.","edible,sweet"},
 	{"chocolate drink","IABOKI","KF",2,5,2,"5A3220","F7F2EC","cup of chocolate","slurp","Chocolate, liquified.","edible,drink,warm"},
 	{"chocolate eggs","IMBLKI","dSc",2,3,3,"7A4026","F2A6C8","foil-wrapped egg","chomp","An egg that never hatches. Just melts.","edible,sweet,candy,holiday"},
-	{"chocolate fountain","IMDFII","ScIN",5,3,3,"5A2E16","7A4026","tiered fountain of flowing chocolate","gloop","An unstoppable river of chocolate.","edible,sticky,candy"},
+	{"chocolate fountain","IMDMII","SeN",3,3,5,"5A3018","C9CED4","three-tier steel fountain pouring melted chocolate","splash","Dip anything. Including enemies.","kitchen,turret,summon,edible,sweet"},
 	{"chocolate ice cream","ICBAKJ","JeN",3,5,2,"5A3220","7A4026","dark brown scoop","squish","Chocolate, now freezing.","edible,frozen,sweet"},
 	{"chocolate log","IMBGKF","DkI",3,5,6,"5A2E16","F7F7F2","chocolate cake log, bark texture","rumble","A log of cake. Christmas magic.","edible,heavy,candy,holiday"},
 	{"chocolate malt","ICBOKJ","JF",3,5,2,"8A5A3A","F7F2EC","frothy malt shake","squish","Old-school creamy malt.","edible,frozen,sweet"},

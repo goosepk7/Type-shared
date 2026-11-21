@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"indian paintbrush","NGBNMI","dFS",1,1,1,"E53935","FF9800","red-tipped spikes like dipped brushes","rustle","Looks dipped in paint.","plant,flower"},
 	{"indian rhino","AMDJAA","GDkIO",7,4,9,"7C7470","B0A49A","armor-plated folds, one horn","trumpet","Built with its own armor plating.","mammal,heavy,wild"},
 	{"industrial fan","OFDF1I","kI",4,5,6,"4A4D52","F1C40F","wall fan in a steel housing","whoosh","Air conditioning with attitude.","mechanical"},
 	{"inertia","FLCOKI","G",3,2,6,"8495B5","D5DCEA","heavy glowing stance aura","hum","Objects at rest stay at rest.","heavy"},
@@ -402,5 +403,4 @@ return {
 	{"kuiper belt","MCFEKJ","JReP",6,3,7,"B3E5FC","9E9E9E","ring of icy rocks far from the sun","twinkle","A freezer full of space rocks.","space,star"},
 	{"kukri","CKBHrK","fT",4,7,4,"8A929B","8B5A2B","forward-bent heavy knife","shing","Bent on success.","medieval,sharp"},
 	{"kulcha","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","stuffed fluffy flatbread","whoosh","A flatbread hiding a surprise.","edible"},
-	{"kulfi","ICBAKJ","JeN",3,5,2,"F2E2B0","9CBA6B","cone-shaped frozen stick","squish","Dense, creamy, and cardamom-cool.","edible,frozen,sweet"},
 }

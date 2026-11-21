@@ -389,7 +389,7 @@ return {
 	{"mushroom tower","NJDMMI","GSMe",4,1,6,"B71C1C","F5F5F5","stack of giant mushrooms with spore cannon","rustle","Fires spore clouds. Achoo!","plant,fungus"},
 	{"mushroom wall","EJCCII","GUSM",3,1,5,"B71C1C","F5F5F5","stacked giant spotted mushrooms","thud","Bouncy. Spore-y. Effective.","structure,defense,fungus"},
 	{"music","KHCNOI","Fc",2,4,3,"7C4DFF","FFD54F","floating notes swirling around","music","Music soothes the savage villain.","music,support"},
-	{"music box","BMBNKI","dN",1,2,3,"5A3A1E","D4A72C","wooden box with tiny dancer","chime","Plinky lullaby. Everyone gets sleepy.","music"},
+	{"music box","BMBNKI","NO",3,3,3,"8E3B2A","C4A0EC","open cherry-wood music box with pink satin","chime","Shh. Sleepy time.","household,nursery,toy"},
 	{"music stand","BMBCII","G",1,1,3,"24262A","C9CED4","folding wire stand","strum","Holds sheet music. Holds the line.","music"},
 	{"music teacher","LLCJNA","jO",3,4,3,"7C3AED","FACC15","baton, sheet music, recorder","sing","Again, from the top.","school,music"},
 	{"music tower","EMDMII","GkSeO",4,1,6,"7E57C2","FFEB3B","tower topped with huge speakers","music","Drops the bass. Drops the enemies.","structure,defense,tower,silly"},

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"throne room","MEENII","FSh",4,1,9,"B71C1C","FFD54F","long red carpet to a golden throne","rumble","All rise for the royal smackdown.","place,terrain,royal"},
+	{"throw","KMCAKB","ke",4,8,1,"FFCC80","FFFFFF","spinning thrown arc with dotted path","whoosh","Catch! Oh, you didn't.","silly"},
+	{"throwing axe","CKBAsK","keV",4,7,3,"8A929B","8B5A2B","small curved axe head","chop","Axe, but make it airborne.","medieval,sharp"},
 	{"throwing hammer","CKBAtK","keO",4,7,5,"8A929B","8B5A2B","small hammer for tossing","shing","Hammer time, at range.","sharp"},
 	{"throwing knife","CKAArK","TeV",3,9,2,"8A929B","24262A","slim balanced blade, ring end","shing","Thrown with style. Usually in threes.","medieval,sharp"},
 	{"thud","KEBAKB","O",3,6,2,"8D6E63","FFFFFF","heavy dust puff landing","thud","Thud. Something heavy arrived.","silly,heavy"},
@@ -400,7 +403,4 @@ return {
 	{"turaco","AMBJDB","jdA",2,6,2,"2AA04A","E8301E","green crested bird, red wings","squawk","Green bird. Red wings. Real pigment.","bird,jungle,silly"},
 	{"turbine","OFDM1K","kIP",4,4,6,"F2F2EE","8E9196","tall pole with three giant blades","whoosh","Spins wind into watts. And foes away.","mechanical"},
 	{"turkey","AMCJDA","Ddf",3,4,2,"5E4232","C8301E","fanned tail, red wattle, puffed chest","gobble","Gobbles at everyone. Hides in November.","bird,farm,holiday"},
-	{"turkey leg","IMCHJI","Fkcf",4,5,4,"B0602B","F2EEE0","huge roasted leg, bone handle","bonk","Fair food. Also a weapon.","edible,silly"},
-	{"turkey stampede","AGCADA","DkP",5,7,2,"7A4A2A","D84A2A","three plump turkeys charging in a fan of lanes","gobble","They heard it was almost the holidays.","holiday,harvest,thanksgiving,charge"},
-	{"turkey vulture","AMCJDB","DASfT",4,9,3,"2A2420","D8303A","red bald head, dark wings","screech","Smells lunch from a mile up.","bird,predator"},
 }

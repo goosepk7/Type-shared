@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"styracosaurus","AMDJAA","DkT",7,5,8,"7A6A4A","C8701E","big nose horn, spiky frill crown","bellow","Wears a crown of spikes.","dinosaur,extinct,reptile"},
+	{"sub sandwich","IMBHJI","Fkf",3,5,4,"D9A04A","7DBE3A","long roll stuffed with fillings","bonk","A sandwich as long as your arm.","edible,silly"},
+	{"submachine gun","CKBAwI","eV",4,9,3,"24262A","8E9196","compact rapid-fire blaster","rattle","Small gun, big hurry.","modern,ranged"},
 	{"submarine","DBEMHC","CEZegB",7,6,9,"37474F","FFC107","long torpedo hull, conning tower, periscope","sonar","Down periscope. Up torpedo.","vehicle,aquatic"},
 	{"submarine captain","LBCJNI","ZeB",5,4,5,"111827","FACC15","cap, periscope, turtleneck","ping","Dive dive dive! Ping.","military,aquatic"},
 	{"subscribe","KHBOKJ","QOh",3,6,2,"EF4444","FFFFFF","red SUBSCRIBE button with a ringing bell","ding","Hit the bell. The bell hits back.","meme,internet"},
@@ -400,7 +403,4 @@ return {
 	{"throat","BMCL5I","iHN",4,3,3,"B03A48","E57373","dark red swallowing tunnel, dangly uvula","gulp","GULP. Gone.","body,silly"},
 	{"throne","BMDC0I","GFh",4,1,9,"D4A72C","9E1B32","towering golden chair, red velvet","thud","Sit here. Command everyone.","furniture,royal"},
 	{"throne heir","LMCJNA","ch",3,5,4,"7C3AED","F8FAFC","little crown, fancy suit, pout","horn","Will inherit everything. Wants it now.","royal"},
-	{"throne room","MEENII","FSh",4,1,9,"B71C1C","FFD54F","long red carpet to a golden throne","rumble","All rise for the royal smackdown.","place,terrain,royal"},
-	{"throw","KMCAKB","ke",4,8,1,"FFCC80","FFFFFF","spinning thrown arc with dotted path","whoosh","Catch! Oh, you didn't.","silly"},
-	{"throwing axe","CKBAsK","keV",4,7,3,"8A929B","8B5A2B","small curved axe head","chop","Axe, but make it airborne.","medieval,sharp"},
 }

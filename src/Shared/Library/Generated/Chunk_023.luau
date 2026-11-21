@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"screen wrap","KLBOKI","Y",2,10,1,"7DFFB2","B57CFF","pixel dissolve and reappear behind them","blip","Left edge, right edge, behind you.","game,arcade,mobility"},
 	{"screw","BKAAJK","Te",1,8,2,"8A929B","C9CED4","spiral threaded spike","clink","Righty tighty.","hardware"},
 	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
 	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},
@@ -257,6 +258,7 @@ return {
 	{"shiro","IBBOGI","FS",3,4,3,"C8762B","E8A040","chickpea stew","slurp","A spicy chickpea stew.","edible,warm,healthy"},
 	{"shirt","BMBIVB","GjA",2,5,2,"EF4444","FFFFFF","flapping red t-shirt with a pizza stain","flutter","Inside out and backwards. Like always.","clothing"},
 	{"shisa","AECJAA","Gf",4,5,7,"DC2626","F59E0B","grinning orange lion-dog statue","roar","Grins at evil. Evil leaves.","yokai,guardian"},
+	{"shish kebab","IMCAuB","kTe",3,8,3,"8A5A2E","D84A2A","giant wooden skewer of grilled meat, pepper and onion","whoosh","Goes through everyone. Tasty.","kitchen,projectile,pierce,edible"},
 	{"shiver","KCAFOB","N",1,6,1,"B3E5FC","FFFFFF","shaking chattering lines","brr","Brr-brr-brr.","frozen,silly"},
 	{"shock grenade","CDBGKI","eLO",4,7,1,"F1C40F","1F2F55","crackling blue sphere","zap","Bzzzap! Everyone twitches.","scifi,ranged"},
 	{"shock pulse","FDCFOB","LO",5,9,1,"FFEB3B","448AFF","ring of crackling energy","zap","One ring of zap for everyone.","electric"},
@@ -389,6 +391,7 @@ return {
 	{"six shooter spin","CKBAwI","eV",5,7,3,"C9CED4","5A3A1E","twirling revolver","bang","Trick shot!","cowboy"},
 	{"size","KLBOKJ","jWX",3,5,3,"22D3EE","F472B6","ruler and two arrows, one pointing up, one down","boing","It matters. Sometimes. In boss fights.","silly"},
 	{"sizzle","KABNOI","K",3,6,1,"FF7043","FFF3E0","bubbling hot shimmer on ground","sizzle","Tssss.","fire,silly"},
+	{"sizzling skillet","BADN2I","KlS",3,3,5,"2A2628","FF8A3C","giant black cast-iron skillet glowing hot","sizzle","Hot, hot, hot! Dance!","kitchen,zone,fire"},
 	{"skate","ABBJEC","STB",2,5,3,"9A8A72","E8E0D4","flat diamond body, thin tail","whoosh","Ray's less pointy cousin.","fish,aquatic,ocean"},
 	{"skate park","EMCNII","UlS",2,1,6,"BDBDBD","7E57C2","concrete ramps and bowls","thud","Ramp up, fly out.","structure,building,sport"},
 	{"skateboard","DMAKHF","UDkg",2,7,2,"F28C28","1A1A1A","flat deck, four tiny wheels, grip tape","clack","Kickflip into battle.","mechanical,vehicle,land,sport"},
@@ -400,7 +403,4 @@ return {
 	{"skeleton","AICJNA","feV",4,6,3,"F5F5F4","57534E","rattling bones, grinning skull","rattle","Has a funny bone. Uses all of them.","undead,spooky,halloween"},
 	{"skeleton archer","AICJNA","TeV",4,6,3,"E7E5E4","78350F","skeleton with a bow and quiver","rattle","Never misses. Never hits either.","undead,spooky,archer"},
 	{"skeleton army","AIDJLA","fVPh",6,5,5,"F5F5F4","1F2937","rows of rattling skeleton soldiers","rattle","Bones. So many bones.","undead,spooky,swarm"},
-	{"skeleton cowboy","AICJNA","eV",4,6,3,"F5F5F4","92400E","skeleton in a ten-gallon hat","rattle","Yee-haw. Rattle rattle.","undead,western"},
-	{"skeleton crypt","MIENII","SNh",5,1,8,"EFEBE9","263238","tomb lined with rattling skeletons","moan","Rattle rattle. Rise up.","place,spooky,undead"},
-	{"skeleton dog","AIBJAA","Qf",2,7,2,"F5F5F4","22C55E","skeletal pup carrying its own bone","rattle","Fetches its own leg.","undead,canine,silly"},
 }

@@ -69,7 +69,7 @@ return {
 	{"clothes hanger","BMAHJK","fH",1,7,2,"8B5A2B","C9CED4","wooden hanger with hook","thud","Hook. Hang. Done.","household"},
 	{"clothes iron","BABAtB","Kke",3,7,4,"2BA7A0","F4F6F7","teal steam iron skating on its hot plate","thud","Pressing matters. Hot ones.","household,laundry"},
 	{"clothes moth","AMAJFB","jdiA",1,5,1,"D8C8A8","B8A88A","small tan moth","flutter","Eats your sweaters.","insect,cute"},
-	{"clothespin","BMALKI","O",1,7,2,"C49A6C","C9CED4","little spring peg","thud","Pinch!","household"},
+	{"clothespin","BMAAKK","eO",2,8,2,"E2C08E","C4CAD2","giant wooden peg with a steel spring","thud","Pinch! Shh.","household,laundry"},
 	{"clotted cream","IMBLGI","kSO",2,3,2,"F7F0D0","F2E2B0","thick yellow-white cream","squeak","Cream so thick it's a solid.","edible,slippery,silly"},
 	{"cloud","GFCDOJ","ZN",2,3,3,"ECEFF1","B0BEC5","fluffy white cumulus puff","whoosh","Soft, fluffy, blocks your view.","cute"},
 	{"cloud car","DFCKHJ","DAg",3,7,3,"F5F5F5","FFF59D","fluffy golden-edged cloud seat","whoosh","Only the pure of heart can ride. Probably.","vehicle,magic,mythical,silly"},

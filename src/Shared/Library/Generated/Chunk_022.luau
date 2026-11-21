@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot chef","OKCJNA","KFe",3,5,5,"F8FAFC","DC2626","robot with chef hat and spatula arms","beep","Flips burgers. And enemies.","robot,silly"},
 	{"robot crab","OKBJFA","Gf",3,4,7,"DC2626","94A3B8","metal crab with pincer claws","click","Walks sideways. Pinches forward.","robot,aquatic"},
 	{"robot dance","KKBNOI","jd",1,5,2,"90A4AE","00E5FF","stiff jerky moves with beeps","beep","Beep boop. Groovy.","music,dance,silly"},
 	{"robot dance crew","OKCJNA","jdh",3,6,4,"F472B6","22D3EE","three robots doing the robot","beep","Doing the robot. Ironically.","robot,silly,music"},
@@ -402,5 +403,4 @@ return {
 	{"scream","KFCFOB","jkO",5,10,1,"FFCDD2","FFFFFF","jagged sound ring burst","scream","AAAAAAAAAAAAAH!","loud"},
 	{"screech","KFCF6B","jIO",4,9,1,"F8FAFC","EF4444","jagged white sound spikes shattering nearby glass","screech","EEEEEEEEEEEEEEEEEEEEEEEEE.","loud"},
 	{"screech owl","AMAJDB","AZT",2,7,2,"8A8A80","D8D0C0","tiny eared owl, bark pattern","hoot","Doesn't screech. Trills.","bird,nocturnal,predator"},
-	{"screen wrap","KLBOKI","Y",2,10,1,"7DFFB2","B57CFF","pixel dissolve and reappear behind them","blip","Left edge, right edge, behind you.","game,arcade,mobility"},
 }

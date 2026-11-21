@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flail","CKCHtK","kfVO",6,4,5,"5B6168","8B5A2B","spiked ball on chain and handle","bonk","Swing. Spin. Hope.","medieval,heavy"},
 	{"flak cannon","CKDMxI","EeV",7,6,6,"6B7B3A","3A3F45","anti-air cannon with twin barrels","zap","Fills the sky with pops.","scifi,ranged"},
 	{"flak tower","EKEMII","GEe",7,1,9,"9E9E9E","37474F","massive concrete tower bristling with guns","thud","Anything flying? Not for long.","structure,defense,tower"},
 	{"flake","IMAELJ","cNP",1,4,1,"F2C14E","E0A030","drifting golden cereal flakes and a splash of milk","crunch","Soggy in thirty seconds. Eat fast.","edible,breakfast"},
@@ -151,7 +152,7 @@ return {
 	{"fortify","KECOKI","G",1,3,8,"8D6E63","FFD54F","stone and metal plating layering on","clank","Tougher. Thicker. Sturdier.","defence"},
 	{"fortress","EEFCII","GSeh",6,1,10,"757575","B71C1C","massive walls, bastions, central keep","thud","Built to say no for a thousand years.","ancient,heavy"},
 	{"fortress city","EMFCII","GSeh",7,1,10,"9E9E9E","B71C1C","city ringed by huge walls and towers","crowd","A whole city that is also a castle.","place,defense"},
-	{"fortune cookie","IMBAKK","jde",3,7,2,"E8B860","F7F2EC","folded cookie with paper slip","whoosh","Your future includes being hit by this.","edible"},
+	{"fortune cookie","ILBO7I","DkP",2,8,2,"E9B872","FFF6E0","giant folded fortune cookie with a paper slip","crunch","You will run fast. Or hit hard. Or both.","kitchen,buff,random,edible,sweet"},
 	{"fortune teller","LLCJNI","jOY",4,4,3,"7C3AED","FACC15","headscarf, crystal ball, rings","chime","Saw this coming. Didn't dodge.","magic"},
 	{"fossa","AMCJAA","ZfT",4,7,3,"A06A3A","D8B48A","sleek cougar-like, long tail","hiss","Madagascar's top predator. Cat-ish.","mammal,predator,wild"},
 	{"fossegrim","ABCJNC","jcB",3,5,4,"1E40AF","FDE68A","fiddler sitting in a waterfall","violin","Plays violin in a waterfall. Never tunes.","mythical,music,aquatic"},
@@ -217,7 +218,7 @@ return {
 	{"frighten","KIBFOB","jI",3,8,1,"4A148C","FFFFFF","ghostly pop-out face ring","boo","BOO! Gotcha.","spooky,silly"},
 	{"frilled lizard","AMBJAA","Cjdf",2,7,2,"B88A5A","E8701E","huge neck frill fanned out","hiss","Opens an umbrella of fear. Runs.","reptile"},
 	{"frilled shark","ABDJCC","DfTB",7,8,6,"5A4A44","9A8A80","eel-like body, frilly gills","chomp","A living fossil eel-shark.","fish,aquatic,ocean,predator,deepsea"},
-	{"frisbee","BMBA3F","UQe",1,8,2,"E67E22","F2F2EE","flat plastic flying disc","bonk","Catch! No? Next time.","sport,toy,summer"},
+	{"frisbee","BMBA3K","Te",2,8,2,"F08C28","FFF4E0","orange flying disc curving right","whoosh","Catch! No? It curves.","household,toy,summer"},
 	{"frittata","IMBAKK","Uke",3,7,2,"F2D23A","7DBE3A","thick round egg bake","whoosh","An omelet that never folded.","edible,breakfast"},
 	{"frog","AMAJAG","UHe",1,5,1,"4AA03A","E8E07A","wide mouth, bulging eyes, long legs","croak","Jumps 20 times its length. Ribbit.","amphibian,wetland"},
 	{"frog knight","ABBJAG","UfB",3,7,3,"4D7C0F","94A3B8","frog in a tin helmet with a reed spear","croak","Leaps into battle. Ribbit.","warrior,aquatic,silly"},
@@ -362,7 +363,7 @@ return {
 	{"garden","MGCNII","WFS",2,1,5,"66BB6A","F06292","neat beds of flowers and veggies","rumble","Weeding in progress. Enemies are weeds.","place,terrain,plant"},
 	{"garden eel","ABAJCC","CdZB",1,6,1,"F2EEE6","3A3A3A","thin eels poking up from sand","splash","Pops up. Pops down. Repeat.","fish,aquatic,silly"},
 	{"garden fork","JGCHuI","CfT",3,5,4,"8A929B","8B5A2B","four-tine digging fork","thud","Digs dirt. Pokes pests.","garden"},
-	{"garden gnome","BEBJNK","Gd",1,1,4,"C0392B","2F6FD1","little bearded statue with pointy hat","clank","Watching. Always watching.","garden,silly"},
+	{"garden gnome","BEBMNI","de",2,3,4,"D23A3A","2F6FD1","red-hatted garden gnome lobbing pebbles","clank","Watching. Always watching. Now throwing.","household,garden"},
 	{"garden hose","JBCBJI","IeN",3,6,3,"3E9A44","F2C230","pistol-grip nozzle on a green hose, blasting a jet","splash","Somebody's getting hosed.","household,garden,water,summer"},
 	{"gardener","LGCJNA","WFe",3,4,4,"15803D","92400E","sun hat, gloves, watering can","rustle","Grows walls of hedges in seconds.","plant,outdoor"},
 	{"gardenia","NGBNMI","dFS",2,1,2,"FFFFFF","1B5E20","creamy white waxy bloom","rustle","Smells like a fancy hotel.","plant,flower"},
@@ -402,5 +403,4 @@ return {
 	{"gauntlet","CKBHJK","Gkf",4,6,6,"8A929B","6B4226","armoured plated glove","bonk","Slaps with authority.","medieval,armor"},
 	{"gaur","AMDJAA","DkO",7,4,7,"2A2018","F2E6C8","towering black bull, white socks","moo","Biggest wild cattle. Wears socks.","mammal,heavy"},
 	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
-	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skeleton cowboy","AICJNA","eV",4,6,3,"F5F5F4","92400E","skeleton in a ten-gallon hat","rattle","Yee-haw. Rattle rattle.","undead,western"},
+	{"skeleton crypt","MIENII","SNh",5,1,8,"EFEBE9","263238","tomb lined with rattling skeletons","moan","Rattle rattle. Rise up.","place,spooky,undead"},
+	{"skeleton dog","AIBJAA","Qf",2,7,2,"F5F5F4","22C55E","skeletal pup carrying its own bone","rattle","Fetches its own leg.","undead,canine,silly"},
 	{"skeleton horse","AIDKAA","Dg",5,8,5,"F5F5F4","22C55E","skeletal horse with green eye glow","rattle","No saddle sores. No anything.","undead,mount"},
 	{"skeleton key","BKAOJK","Y",2,7,4,"5B6168","24262A","ornate antique key","clank","Opens every lock. Even the rude ones.","magic"},
 	{"skeleton king","AIDJNA","Gfh",7,4,7,"F5F5F4","CA8A04","crowned skeleton on a bone throne","rattle","Rules a kingdom of bones and dust.","undead,royal,spooky,boss"},
@@ -400,7 +403,4 @@ return {
 	{"spice","IAADOJ","KjP",3,5,1,"C2410C","FACC15","puff of red-orange powder from a shaker","puff","A little kick. Then a big one.","edible,spicy"},
 	{"spicy challenge","IABAKK","KjP",6,7,2,"D8202B","F2862B","flaming bowl with warning label","sizzle","Accept the challenge. Breathe fire.","edible,spicy,flammable"},
 	{"spicy noodles","IABAKK","KHN",5,7,2,"D8202B","F2C24A","red tangled noodles, steam","sizzle","The noodle challenge. Few survive.","edible,spicy,flammable"},
-	{"spider","AJBJQA","fMeN",2,6,2,"2A2420","8A6A4A","eight legs, round body, many eyes","skitter","Eight legs, eight eyes, zero chill.","arachnid,spooky,venomous"},
-	{"spider cave","MIENII","SMNh",5,1,7,"37474F","ECEFF1","cave draped in thick webs","echo","Sticky. Creepy. Many legs.","place,adventure,spooky"},
-	{"spider centaur","AJDJFA","MHe",6,6,6,"1C1917","7C3AED","elf torso on a giant spider body","skitter","Eight legs. Two bows.","spooky"},
 }

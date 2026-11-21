@@ -21,6 +21,7 @@ return {
 	{"pixiu","AHCJAA","GQb",4,6,6,"D97706","FDE68A","winged lion with antler horn","roar","Eats gold. Never shares.","mythical,lucky"},
 	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},
 	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
+	{"pizza boomerang","IMCA7K","Uke",3,7,3,"E9B44C","C0392B","whole cheese pizza spinning flat through the air","whoosh","It always comes back. Extra cheese.","kitchen,projectile,boomerang,edible"},
 	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
 	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
 	{"pizza cutter","BMCFJF","Uke",4,7,3,"C9CED4","C0392B","giant steel pizza cutter wheel rolling along the ground","clang","Eight slices, one bounce.","kitchen,roll,projectile,ricochet"},
@@ -312,7 +313,7 @@ return {
 	{"preschooler","LMAJNA","Ujd",1,6,2,"FCD34D","EF4444","tiny kid with a paint-smeared smock and juice box","giggle","Nap time is over. Chaos time begins.","school,cute"},
 	{"president","LMCJNA","Gjdh",5,4,5,"1E3A8A","B91C1C","generic leader at a podium with a flag pin and bodyguards","fanfare","My fellow summons. Vote bonk.","leader"},
 	{"pressure","FFCNOI","NO",4,4,4,"9AAAB8","E3E9EE","heavy invisible downward ripples","hum","Under pressure. Literally.","heavy"},
-	{"pressure cooker","BACGII","KE",5,1,6,"8A929B","24262A","sealed pot with hissing valve","clang","Hisssss... POP!","kitchen,household"},
+	{"pressure cooker","OACL2I","Ele",4,3,5,"C9CED4","2A2628","steel pressure cooker with a rattling lid weight","hiss","Do not open while rattling.","kitchen,appliance,trap,explosive"},
 	{"pressure plate","BEBLII","Oh",2,1,6,"8C8C88","8E9196","stone tile that clicks","snap","Click. Uh oh.","trap,defense"},
 	{"pressure washer","JBCFwK","kIe",4,6,4,"F1C40F","24262A","wand with high-pressure jet","hiss","Cleans. Pushes. Hurts a bit.","tool"},
 	{"presto","KLBAKB","jd",3,8,1,"FFD54F","7C4DFF","confetti and sparkle flourish","tada","Ta-da! Applause please.","magic,silly"},
@@ -402,5 +403,4 @@ return {
 	{"pulled pork","IMBLGI","cN",2,3,3,"B0602B","6B2A1E","pile of shredded saucy meat","gloop","Shredded, smoky, saucy.","edible,sticky"},
 	{"pulled pork sandwich","IMBLGI","cN",2,3,3,"B0602B","D9A04A","bun overflowing with pork","gloop","Messy, saucy, glorious.","edible,sticky"},
 	{"pulley","OKBLJK","lH",2,3,5,"8B5A2B","B89B6A","wheel with rope over it","clank","Lifts heavy things with clever science.","science"},
-	{"pulse cannon","CDDMxI","keL",7,5,6,"2C3539","3FC1D9","thick barrel with glowing rings","zap","Thoom. Thoom. Thoom.","scifi,ranged"},
 }

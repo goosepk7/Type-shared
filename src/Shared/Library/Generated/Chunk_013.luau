@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
 	{"hero","LHCJNA","GDFf",6,6,6,"1D4ED8","FACC15","caped figure, bright sword, heroic pose","clang","Saves the day. Every day. Exhausted.","hero"},
 	{"heroism","KHCOKJ","GDF",3,6,5,"FFD54F","D32F2F","golden cape-shaped aura","fanfare","Main character moment.","support"},
 	{"heron","AMCJDA","AfT",3,5,2,"6A7A8E","F2F2F0","tall stalking bird, dagger beak","squawk","Stands still forever. Then stab.","bird,wetland"},
@@ -402,5 +403,4 @@ return {
 	{"inchworm","AMAJTA","CP",1,3,1,"8AC83A","C8E87A","green looping caterpillar","squelch","Measures everything. Slowly.","bug"},
 	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
 	{"indestructible","KKDOKI","Ga",2,3,10,"90A4AE","FFD54F","thick shining metal aura","clang","Tried breaking it. It broke you.","defence"},
-	{"indian paintbrush","NGBNMI","dFS",1,1,1,"E53935","FF9800","red-tipped spikes like dipped brushes","rustle","Looks dipped in paint.","plant,flower"},
 }

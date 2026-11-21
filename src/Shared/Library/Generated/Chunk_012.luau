@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
 	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
 	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
 	{"graveyard","MIENII","SNh",5,1,7,"455A64","7CB342","crooked headstones, iron fence, fog","moan","The residents are getting restless.","spooky,undead"},
@@ -402,5 +403,4 @@ return {
 	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
 	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
 	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
-	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
 }

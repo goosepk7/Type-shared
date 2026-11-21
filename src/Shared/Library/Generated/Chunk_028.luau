@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"turkey leg","IMCHJI","Fkcf",4,5,4,"B0602B","F2EEE0","huge roasted leg, bone handle","bonk","Fair food. Also a weapon.","edible,silly"},
+	{"turkey stampede","AGCADA","DkP",5,7,2,"7A4A2A","D84A2A","three plump turkeys charging in a fan of lanes","gobble","They heard it was almost the holidays.","holiday,harvest,thanksgiving,charge"},
+	{"turkey vulture","AMCJDB","DASfT",4,9,3,"2A2420","D8303A","red bald head, dark wings","screech","Smells lunch from a mile up.","bird,predator"},
 	{"turkish coffee","IABOKI","DF",3,9,2,"2A160C","6B4026","tiny cup, thick foam","fizz","Thick enough to read fortunes in.","edible,drink"},
 	{"turkish delight","IMBLGG","dcN",2,3,3,"F2A6C8","F7F7F7","powdered pink jelly cubes","wobble","Sweet cubes in a sugar dust.","edible,wobbly,sweet"},
 	{"turmeric","IEBDOJ","jSP",2,5,1,"E8A21A","C27A1A","knobby orange root, gold powder","puff","Paints the battlefield gold.","edible"},
@@ -400,7 +403,4 @@ return {
 	{"watermelon","IMCGKF","EkeP",5,4,3,"3A7D2C","E8434F","big striped oval, red flesh, black seeds","splat","Nature's water balloon. Mostly splash.","edible,fruit,summer"},
 	{"watermelon cannon","IMDGKF","EkeP",6,4,3,"3A7D2C","E8434F","huge melon launched in an arc","splat","A melon missile. Splash zone.","edible"},
 	{"watermelon slice","IGBAKF","FeV",3,6,2,"E8434F","3A7D2C","triangle wedge, green rind, black seeds","splat","Grin-shaped. Spits seeds on command.","edible,fruit,sweet"},
-	{"watermelon vine","NGCLMI","SeN",2,1,4,"2E7D32","E53935","sprawling vine with stripy melons","rustle","Seeds for days. Ptoo ptoo.","plant"},
-	{"watermill","EBDCIK","GSI",3,1,7,"8D6E63","1E88E5","stone mill with a big turning wheel","splash","Splish, splash, grind.","structure,building"},
-	{"waterzooi","IBBOGI","FS",3,4,3,"F2E8C8","7DBE3A","creamy chicken stew","slurp","A creamy Belgian stew.","edible,warm,healthy"},
 }

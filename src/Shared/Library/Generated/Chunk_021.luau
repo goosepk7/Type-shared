@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pulse cannon","CDDMxI","keL",7,5,6,"2C3539","3FC1D9","thick barrel with glowing rings","zap","Thoom. Thoom. Thoom.","scifi,ranged"},
 	{"pulse rifle","CDCAwI","TeV",6,8,4,"4A4D52","3FC1D9","boxy rifle with glowing vents","zap","Brrrap-pew.","scifi,ranged"},
 	{"pummel","KMCAKB","kfV",5,9,2,"FF7043","FFE0B2","flurry of fist impact stars","thwack","Punches, but many.","silly"},
 	{"pump","OBBM1I","HI",2,3,6,"2F6FD1","8E9196","boxy pump with hoses","hum","Pushes water. Pulls water.","mechanical"},
@@ -162,7 +163,7 @@ return {
 	{"raisin","IMAELB","eVP",2,7,1,"4A2A1E","6E3A2A","tiny wrinkled dark nugget","pitter","A grape that sunbathed too long.","edible,sweet,fruit"},
 	{"raita","ICBAKJ","JFN",2,5,2,"F7F4EC","7DBE3A","white yogurt with cucumber","squish","Puts out curry fires.","edible,frozen"},
 	{"rajasaurus","AMDJBA","DkfT",6,6,7,"8A4A2A","E8A04A","short horn crown","roar","Royal lizard with a crown bump.","dinosaur,extinct,reptile,predator,royal"},
-	{"rake","JKCHJK","fH",2,5,4,"2E8B57","8B5A2B","row of tines on long handle","clank","Step on it. Learn something.","tool,garden"},
+	{"rake","JGCHJK","fH",2,5,4,"3FA34D","C8955A","giant green leaf rake on a wooden handle","clank","Rake them in like autumn leaves.","household,garden,tool"},
 	{"rake trap","BMBLII","SO",2,3,2,"8B5A2B","9AA0AA","a garden rake hidden in the grass, tines up","thwack","Thwack. Cartoon physics.","cartoon,silly,trap"},
 	{"rakshasa","AIDJNA","jZfY",7,6,6,"7C2D12","FACC15","tiger-headed illusionist in robes","growl","Master of illusions and backwards palms.","mythical"},
 	{"rally","KHCNOI","DF",3,5,3,"FFD54F","D32F2F","banner glow ring over allies","horn","Everybody, with me!","support"},
@@ -402,5 +403,4 @@ return {
 	{"robot bird","OKAJDB","dAe",2,8,3,"CA8A04","22D3EE","brass bird with ticking gear wings","whistle","Sings in beeps.","robot,bird"},
 	{"robot butler","OKCJNA","GdF",3,4,5,"F8FAFC","1F2937","tuxedo-painted robot holding a tray","beep","Tea is served. Then the laser is served.","robot,silly"},
 	{"robot cat","OKBJAA","dZf",3,8,4,"E5E7EB","F472B6","sleek chrome kitty, glowing whiskers","meow","Knocks things off tables at 200 mph.","robot,cute,cat"},
-	{"robot chef","OKCJNA","KFe",3,5,5,"F8FAFC","DC2626","robot with chef hat and spatula arms","beep","Flips burgers. And enemies.","robot,silly"},
 }
