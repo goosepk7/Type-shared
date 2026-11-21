@@ -319,6 +319,7 @@ return {
 	{"arapaima","ABDJEC","DfB",6,7,7,"3A4A3A","C8401E","giant armored fish, red tail","splash","A fish as big as a canoe.","fish,aquatic"},
 	{"arbalest","CMDAvI","kTe",6,3,5,"8A929B","5A3A1E","heavy steel crossbow with crank","twang","Crank it. Wait. Worth it.","medieval,ranged"},
 	{"arc","FDBBKI","TeL",4,9,1,"9BD1FF","FFFFFF","wavering bright arc between two points","crackle","Electricity taking the scenic route.","electric"},
+	{"arc redirect","KDCAKI","eaL",5,9,2,"9FD8FF","FFFFFF","lightning caught in the arms and thrown back","zap","In through the stomach, out the fingertips. Never through the heart.","legends,bending,lightning"},
 	{"arcade","EMCCII","jdS",2,1,5,"7E57C2","00E5FF","room full of glowing game cabinets","thud","Insert coin. Lose friends.","structure,building,silly"},
 	{"arcade machine","OMCC1I","Gdc",1,1,7,"1F2F55","39FF14","tall glowing game cabinet","hum","Insert coin to continue.","game"},
 	{"arcade ufo","ODBJgE","AQeh",3,7,3,"78E8C4","FF6EDC","a little mint saucer with a claw that zaps from above","bzzt","Insert coin. Receive zap.","game,arcade,pet"},
@@ -402,5 +403,4 @@ return {
 	{"arugula","IGBOMI","KF",2,4,3,"3E7A2B","6B9E4A","jagged peppery leaves","crunch","Lettuce with an attitude.","edible,vegetable,healthy"},
 	{"asado","IABNGI","KSc",4,4,2,"8A2E2E","C8603A","meats roasting over open flame","sizzle","A whole afternoon of grilling.","edible,spicy"},
 	{"asgard","MDFNII","SLh",7,1,10,"FFD54F","80DEEA","golden city on a floating rock","chime","Mighty realm. Mightier welcome.","place,mythical"},
-	{"ash","FABDOJ","jSN",2,3,2,"6E6A66","B8B2AC","drifting grey flakes, dim orange specks","hiss","Fire's leftovers. Gets in your eyes.","fire"},
 }

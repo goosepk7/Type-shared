@@ -3,9 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bed","BMDN0I","FN",1,1,5,"F2F2EE","1F2F55","bed with pillows and blanket","thud","Nap time heals all wounds.","furniture,household"},
 	{"bed bug","AMAJFA","diAP",1,6,1,"8A3A1E","C8702A","flat red-brown tiny bug","buzz","Don't let them bite.","insect"},
 	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
+	{"bedrock pillar","EEDCII","kle",6,4,5,"9C7A54","E2C79A","a ground crack, then a stone column bursts up","rumble","Neutral jing: wait, listen, then launch.","legends,bending,earth"},
 	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
 	{"bedtime","KLCDOJ","SO",3,3,2,"3949AB","FFF8E1","cosy dark-blue cloud with stars and Zs","snore","Into bed. Now. Everyone.","silly"},
 	{"bee","AJAJLB","AFTMP",2,7,1,"F2C02A","2A1E14","fuzzy striped body, tiny wings, stinger","buzz","Makes honey. Dances directions. Stings once.","insect,swarm,venomous"},
@@ -401,6 +403,4 @@ return {
 	{"bowling strike","BECA3F","EkT",6,6,3,"2A1F5C","F4F1EA","heavy marbled ball rolling into a rack of pins","rumble","Ten down. Nobody standing.","sport,bowling,projectile"},
 	{"box","BMBL2I","ZO",1,1,2,"C69C6D","7A4E2D","taped cardboard box","thud","Hide inside. Totally invisible.","container"},
 	{"box jellyfish","ABBJGJ","ZSMOB",5,2,1,"B8E0F0","E8F8FF","transparent cube bell, long tentacles","squelch","Clear, square, extremely stingy.","aquatic,ocean,venomous"},
-	{"box of donuts","IMCJII","Gdc",5,1,6,"F2A6C8","D9A04A","box with twelve donuts","thud","The best box in any office.","edible,giant,silly"},
-	{"box turtle","AMBJUA","GN",2,2,9,"6A4A2A","F2C82A","high shell with yellow markings","hiss","Closes its shell like a lunchbox.","reptile,armored"},
 }

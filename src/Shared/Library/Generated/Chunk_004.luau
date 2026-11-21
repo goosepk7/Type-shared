@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"box of donuts","IMCJII","Gdc",5,1,6,"F2A6C8","D9A04A","box with twelve donuts","thud","The best box in any office.","edible,giant,silly"},
+	{"box turtle","AMBJUA","GN",2,2,9,"6A4A2A","F2C82A","high shell with yellow markings","hiss","Closes its shell like a lunchbox.","reptile,armored"},
 	{"boxer","LMCJNA","kfO",6,7,5,"DC2626","F8FAFC","red gloves, robe, mouthguard grin","thud","Floats like a butterfly. Punches like a truck.","sport,martial"},
 	{"boxer dog","AMCJAA","DQkf",4,7,4,"C27A3A","F2EEE6","square jaw, muscular, paws up pose","bark","Punches the air when happy.","mammal,pet"},
 	{"boxfish","ABAJEC","GdMB",1,6,1,"F2D82A","1E1E1E","cube-shaped yellow fish","splash","A swimming box with polka dots.","fish,aquatic,silly"},
@@ -401,6 +403,4 @@ return {
 	{"car wall","EKDCII","GS",3,1,7,"795548","9E9E9E","rusty stacked cars","thud","Recycling, but violent.","structure,defense"},
 	{"car wash","EBCLII","jSIN",2,1,5,"4FC3F7","E53935","tunnel with spinning brushes and spray","splash","Scrub-a-dub! Enemies come out shiny.","structure,silly"},
 	{"cara cara orange","IMBAKF","jke",3,6,2,"F28C28","F2808A","orange with pink flesh","squirt","An orange hiding a pink secret.","edible,fruit,sour"},
-	{"carabiner","BKALKF","H",1,7,5,"7D3CB5","C9CED4","D-shaped clip with spring gate","bonk","Click. Secured.","sport"},
-	{"caracal","AMCJAA","ZfTe",4,7,3,"C08E5A","1E1E1E","long black ear tufts, sandy coat","hiss","Can swat birds out of the air. Rude.","mammal,predator,wild,desert"},
 }

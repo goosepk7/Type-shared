@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dimorphodon","AMCJDB","DAT",4,8,4,"6A6A4A","D8C04A","puffin-like big head pterosaur","screech","Big-headed sky puffin.","pterosaur,extinct,reptile"},
+	{"dimple","KHAOKJ","jFc",1,4,1,"F6B8A8","FFD6CC","cute smile dent with a sparkle","ding","Weaponised cuteness, pocket size.","body,cute"},
+	{"dingo","AMCJAA","DQfh",4,7,4,"D48A44","F2E6D2","ginger lean dog, upright ears","howl","Australia's wild dog. Not a pet.","mammal,predator,wild,australia"},
+	{"dining hall","MMENII","FSc",2,1,7,"6D4C41","FFD54F","long tables piled with feasts","thud","The feast heals everyone at the table.","place,room"},
+	{"dinner","IMCL2I","FcNO",3,1,3,"B45309","15803D","steaming roast on a plate with peas and a dinner bell","bell","DINNER! Wash your hands! Stop fighting!","edible"},
 	{"dinner roll","IMBAKF","Fke",3,6,2,"D9A04A","F5E2B8","round fluffy golden roll","splat","Rolls. As advertised.","edible"},
 	{"dino rider","LEDKNA","Dfg",7,8,6,"15803D","78350F","warrior riding a scaly dinosaur","roar","Brought a dinosaur. You didn't.","mount,warrior"},
 	{"dinosaur","AMDJBA","DkfT",7,6,7,"5A8A3A","D8C86A","classic dinosaur, big tail, scaly","roar","Was here first. Wants it back.","dinosaur,extinct,reptile,predator"},
@@ -398,9 +403,4 @@ return {
 	{"elm","NGECMI","GWkS",4,1,8,"5D4037","558B2F","tall vase-shaped crown","rustle","Elm street, but friendly.","plant,tree"},
 	{"elote","IABAKF","Kke",3,6,2,"F2C24A","F7F2EC","corn with crema, cheese, chili","splat","Corn wearing its party clothes.","edible"},
 	{"elven bow","CGCAvK","QTe",6,9,3,"C49A6C","2E8B57","elegant curved leafy bow","shing","Never misses. Very smug.","fantasy,ranged"},
-	{"email","BDBADB","QeP",2,8,1,"F8FAFC","EF4444","winged envelope with a red unread badge reading 9,999","ding","I hope this summon finds you well.","tech,internet"},
-	{"ember","FAAAKJ","UKe",2,8,1,"FF7A1A","FFD9A0","glowing coal fleck, faint smoke trail","crackle","Small. Hot. Holds a grudge.","fire"},
-	{"ember bloom","FACNbI","KEk",5,6,5,"FF5CAA","FF8C6E","a lotus of pink flame blooming open round the caster","whoomph","Burns the bad guys. Burns the bad stuff off you too.","anime,slayer,fire,demon"},
-	{"ember cloud","FACDOJ","KQ",5,4,2,"FF7043","FFE0B2","glowing cloud raining sparks","crackle","A cloud with a temper.","fire"},
-	{"ember dome","FADNKI","KkP",5,6,4,"FF7A2E","FFD27A","a seed of fire slammed down that swells into a dome of flame","boom","Bring marshmallows, stand well back.","game,adventure,fire,magic"},
 }

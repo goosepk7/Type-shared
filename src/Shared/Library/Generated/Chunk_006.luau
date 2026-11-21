@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"citizen","LMCJNA","Gdh",2,4,3,"38BDF8","F59E0B","ordinary passer-by with shopping bags and a phone","crowd","Just popping to the shops. Oh. A battle.","silly"},
+	{"citron","IMBAKF","jke",3,6,2,"E9D74A","9AAA3C","huge lumpy yellow citrus","squirt","Mostly rind. Fully dramatic.","edible,fruit,sour"},
+	{"city","MEFNII","Sh",4,1,9,"37474F","90CAF9","skyline of towers and traffic","traffic","Never sleeps. Never stops.","place,terrain"},
 	{"city wall","EEECII","GS",3,1,10,"BCAAA4","8D6E63","long high wall with walkway and towers","thud","The whole town hides behind this.","structure,defense,ancient"},
 	{"civet","AMBJAA","CfM",2,5,3,"8A8070","1E1E1E","spotted, banded tail, masked face","squeak","Smells musky. Proudly.","mammal,wild"},
 	{"civilization","MEFNqI","GWSh",8,1,9,"D6C6A8","3B82F6","sprawl growing from huts to towers to rockets in a blink","crowd","From mud huts to moon rockets. One more turn.","place,ancient"},
@@ -400,7 +403,4 @@ return {
 	{"cranberry sauce","IMBLGG","USN",2,3,3,"A3101E","D8434F","jiggly can-shaped red log","wobble","Jiggles at holidays.","edible,wobbly,sweet,sauce,holiday"},
 	{"crane bird","AMCJDA","dAfT",3,5,2,"E8E8EC","D8201E","tall long-legged bird, red crown, dancing","squawk","Dances to impress. Works.","bird,wetland"},
 	{"crane fly","AMAJFB","jdAP",1,6,1,"8A7A5A","C8B88A","huge spindly legs, thin wings","buzz","Looks scary. Can't hurt anything.","insect"},
-	{"crane hook","OKCL1I","lH",4,3,7,"F1C40F","3A3F45","swinging hook on steel cable","clank","Hooked and hoisted.","mechanical"},
-	{"crane operator","LKCJNI","lH",4,3,5,"FACC15","111827","hard hat, control lever","clank","Lifts it. Drops it. On you.","tools"},
-	{"crane truck","DMEKHL","klHg",5,3,9,"F2B705","C0392B","truck with long telescoping boom and hook","engine","The claw machine always wins this time.","mechanical,vehicle,land"},
 }

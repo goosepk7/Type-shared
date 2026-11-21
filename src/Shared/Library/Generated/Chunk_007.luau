@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crane hook","OKCL1I","lH",4,3,7,"F1C40F","3A3F45","swinging hook on steel cable","clank","Hooked and hoisted.","mechanical"},
+	{"crane operator","LKCJNI","lH",4,3,5,"FACC15","111827","hard hat, control lever","clank","Lifts it. Drops it. On you.","tools"},
+	{"crane truck","DMEKHL","klHg",5,3,9,"F2B705","C0392B","truck with long telescoping boom and hook","engine","The claw machine always wins this time.","mechanical,vehicle,land"},
 	{"crank","OKBLJK","lH",2,3,6,"5B6168","B89B6A","drum with crank handle and rope","clank","Wind it in, slow and steady.","tool"},
 	{"crappie","ABBJEC","dB",2,6,1,"8A9A8A","3A3A3A","speckled panfish","splash","Speckled and snacky.","fish,aquatic"},
 	{"crash","KMCAKB","kO",5,8,3,"90A4AE","FFCC80","tumbling impact with debris","crash","Wham. Everything everywhere.","silly"},
@@ -35,6 +38,7 @@ return {
 	{"crescent diadem","BHCAJK","UTe",5,9,3,"F6C85C","FF96CE","a gold tiara spinning in a disc of moonlight","chime","In the name of the moon, it comes back.","anime,magical girl,boomerang"},
 	{"crescent flip","KFCH6K","klf",5,9,1,"9FDBFF","FFFFFF","a backflip kick carving a bright crescent through the air","whoosh","Down, up, kick. The classic answer to anyone jumping at you.","battler,fighting game,kick,anti air"},
 	{"crescent moon","MHDHKK","fTe",5,6,5,"FFF59D","E0E0E0","thin glowing curved sliver","rumble","Sharp enough to slice the night.","space,magic"},
+	{"crescent ricochet","CKBHJK","UeV",3,8,2,"3A3F4A","FFD25A","two crescent blades curving out and back","whoosh","It is not a boomerang. It is a wing-shaped strategic return device.","legends,hero,gadget"},
 	{"crescent slash","FHCHJB","Te",6,9,1,"E8EAF6","9FA8DA","flying silver crescent-moon blade","shing","A sliver of moon. Sharp side first.","space,sharp"},
 	{"crested gecko","AMBJAA","Cf",2,7,2,"E8A03A","F2D07A","eyelash crests, sticky toes","hiss","Has eyelashes. Licks its eyes.","reptile,pet"},
 	{"crested newt","AMAJCA","FMB",1,3,2,"3A3A2A","E8701E","newt with jagged crest","squelch","Wears a dragon crest in spring.","amphibian,wetland"},
@@ -48,6 +52,7 @@ return {
 	{"crime","KICONA","ZbY",4,7,2,"111827","FACC15","striped-shirt silhouette tiptoeing with a swag bag","hush","Does not pay. Has a great dental plan, though.","villain,stealth"},
 	{"crimson cataclysm","KAFGKI","KEe",10,3,1,"D6162E","FFBA48","crimson circles stacked in the sky over a huge blast","explosion","One spell a day, and it is always this one.","anime,isekai,explosion,ultimate"},
 	{"crimson needle","KIBBKB","DTe",7,10,2,"DC1434","FF6078","a compressed crimson orb fired as a needle beam","hiss","Pressure is a technique. So is pointing.","anime,curse,beam,ranged"},
+	{"crimson overdrive","KHCOWJ","DA",5,9,2,"FF2E4A","FFB0C0","a red burst, red fins and red afterimages","hum","Red ones go faster. This is science.","legends,mecha,robot"},
 	{"crimson repulse","KLBAKB","EkIe",8,10,1,"FF2834","46060E","a red pinpoint that blasts everything away from itself","boom","Go away. Everything. Now.","anime,magic,force"},
 	{"crimson skip","KIBOKI","NY",5,10,2,"B3263A","1C1A24","crimson afterimage reappearing behind the target","warp","Skip the boring part.","anime,speed"},
 	{"crimson stone","BEBO4E","kR",5,7,5,"D21028","ECBE5A","a faceted crimson gem that floats at your shoulder and","crunch","Three charges of bad news, set in gold.","anime,alchemy,buff,earth"},
@@ -398,9 +403,4 @@ return {
 	{"dimension door","OLCLoI","jY",5,1,5,"A66BDB","F2F2EE","freestanding door glowing at edges","hum","Where does it go? Yes.","scifi"},
 	{"dimension shift","KLDNOI","jY",6,4,4,"6200EA","18FFFF","cube-like folding space distortion","warp","Up, down, sideways, and the other way.","space"},
 	{"dimetrodon","AMDJAA","fT",6,4,4,"8A4A2A","E8902A","sail back, crocodile legs","growl","Not a dinosaur. Older!","extinct,ancient"},
-	{"dimorphodon","AMCJDB","DAT",4,8,4,"6A6A4A","D8C04A","puffin-like big head pterosaur","screech","Big-headed sky puffin.","pterosaur,extinct,reptile"},
-	{"dimple","KHAOKJ","jFc",1,4,1,"F6B8A8","FFD6CC","cute smile dent with a sparkle","ding","Weaponised cuteness, pocket size.","body,cute"},
-	{"dingo","AMCJAA","DQfh",4,7,4,"D48A44","F2E6D2","ginger lean dog, upright ears","howl","Australia's wild dog. Not a pet.","mammal,predator,wild,australia"},
-	{"dining hall","MMENII","FSc",2,1,7,"6D4C41","FFD54F","long tables piled with feasts","thud","The feast heals everyone at the table.","place,room"},
-	{"dinner","IMCL2I","FcNO",3,1,3,"B45309","15803D","steaming roast on a plate with peas and a dinner bell","bell","DINNER! Wash your hands! Stop fighting!","edible"},
 }

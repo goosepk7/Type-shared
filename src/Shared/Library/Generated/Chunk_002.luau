@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ash","FABDOJ","jSN",2,3,2,"6E6A66","B8B2AC","drifting grey flakes, dim orange specks","hiss","Fire's leftovers. Gets in your eyes.","fire"},
 	{"ash cloud","HAEDOJ","jSMN",5,3,3,"595350","9E9690","huge grey billowing ash plume","rumble","Turns day into a very grey night.","natural,fire"},
 	{"ash fall","HADEOJ","jSN",4,3,3,"9E9E9E","5D4037","grey snowfall of volcanic ash","hush","Grey snow. Warm and gritty.","fire,natural"},
 	{"ash storm","FADDOJ","KjNP",6,4,4,"5D4037","FF7043","grey ash blizzard lit by red sparks","rumble","Grey snow that stings.","fire,storm"},
@@ -402,5 +403,4 @@ return {
 	{"beatboxer","LMCJNI","jO",3,5,3,"111827","22D3EE","mic and booming mouth bass","beat","Boots and cats and boom.","music"},
 	{"beauty","KHCF6B","jcaO",3,5,2,"F9A8D4","FDE68A","shimmering pink sparkle wave with a hand mirror and a rose","shimmer","Stunning. Literally. Two seconds of stun.","fancy,cute"},
 	{"beaver","ABBJAA","GCdB",3,6,1,"6A4428","2A1E16","flat paddle tail, big orange teeth","squeak","Builds dams. Never takes a day off.","mammal,cute"},
-	{"bed","BMDN0I","FN",1,1,5,"F2F2EE","1F2F55","bed with pillows and blanket","thud","Nap time heals all wounds.","furniture,household"},
 }

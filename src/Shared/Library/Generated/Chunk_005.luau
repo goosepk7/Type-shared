@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carabiner","BKALKF","H",1,7,5,"7D3CB5","C9CED4","D-shaped clip with spring gate","bonk","Click. Secured.","sport"},
+	{"caracal","AMCJAA","ZfTe",4,7,3,"C08E5A","1E1E1E","long black ear tufts, sandy coat","hiss","Can swat birds out of the air. Rude.","mammal,predator,wild,desert"},
 	{"caracara","AMCJDB","DAfT",5,9,3,"2A2420","E8702A","orange face, black cap","screech","Walks around like it owns the place.","bird,predator"},
 	{"caramel","IMBLGI","ScN",2,3,3,"C68E3A","E8B860","glossy golden drizzle","gloop","Sticky gold. Wonderful and dangerous.","edible,sticky,candy,sweet"},
 	{"caramel apple","IMBLGI","ScNP",2,3,3,"B5651D","C8262B","apple on a stick, glossy caramel shell","gloop","Sticky, crunchy, impossible to eat politely.","edible,sticky,sweet"},
@@ -365,6 +367,7 @@ return {
 	{"christmas tree worm","ABAJTI","CP",1,3,1,"E8301E","2A6AE8","tiny spiral tree on coral","squelch","Festive worm on coral.","bug,holiday"},
 	{"chrome","FKBIKI","Ga",3,4,6,"DDE3E8","9AA4AE","mirror-polished silver bubble","ting","So shiny you can see your fear.","shiny"},
 	{"chrome endoskeleton","OKCJNA","GQe",6,5,8,"9CA3AF","DC2626","chrome skeleton with glowing red eyes","clank","It'll be back. It's always back.","robot,spooky"},
+	{"chrono sigil","KLDNKK","SNY",5,4,4,"46E27A","D6FFB0","a turning clockwork mandala on the ground","chime","Where you were three seconds ago is where you are now.","legends,hero,time"},
 	{"chronomancer","LLCJNA","NOY",6,5,4,"1E3A8A","FACC15","robe of clocks, hourglass staff","tick","Rewinds your attack. Twice.","magic"},
 	{"chronomancy","KLCNOI","NY",5,5,3,"FFC107","5E35B1","spinning golden clock-runes","tick","Time is a toy.","time,magic"},
 	{"chrysanthemum","NGBNMI","dFS",2,1,2,"FFB300","F57C00","dense ball of thin petals","rustle","A firework made of petals.","plant,flower"},
@@ -400,7 +403,4 @@ return {
 	{"circular saw","JKCHJK","UfV",6,8,5,"8A929B","C0392B","spinning toothed disc","whirr","Bzzzzzzzzzt.","tool,sharp"},
 	{"circus tent","EMENII","jdSh",3,1,5,"E53935","FFF8E1","huge striped tent with flags on top","fanfare","Ladies and gentlemen, the main event!","structure,building,silly"},
 	{"citipati","AMCJBA","DQFfT",5,9,3,"6A6A7A","E8301E","crested oviraptor sitting on nest","screech","Found sitting on its nest. Good parent.","dinosaur,extinct,reptile,predator"},
-	{"citizen","LMCJNA","Gdh",2,4,3,"38BDF8","F59E0B","ordinary passer-by with shopping bags and a phone","crowd","Just popping to the shops. Oh. A battle.","silly"},
-	{"citron","IMBAKF","jke",3,6,2,"E9D74A","9AAA3C","huge lumpy yellow citrus","squirt","Mostly rind. Fully dramatic.","edible,fruit,sour"},
-	{"city","MEFNII","Sh",4,1,9,"37474F","90CAF9","skyline of towers and traffic","traffic","Never sleeps. Never stops.","place,terrain"},
 }
