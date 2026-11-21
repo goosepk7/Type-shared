@@ -245,7 +245,7 @@ return {
 	{"moon snail","ABAJGI","GTN",1,1,6,"C8B8A0","8A6A4A","round shell, huge foot","squelch","Drills into clams. Cheeky.","mollusk,aquatic"},
 	{"moon spirit","AHBJAG","UjF",2,7,2,"F8FAFC","C4B5FD","white rabbit pounding a mortar on the moon","chime","Makes moon cakes. Moon only.","cute,cosmic"},
 	{"moon surface","MLFNII","lS",4,1,9,"BDBDBD","757575","grey dusty craters under black sky","rumble","Low gravity. Big jumps.","place,terrain,space"},
-	{"moonbeam","FHBBKI","Fe",3,7,1,"C7D3FF","F4F6FF","thin pale-blue silvery ray","chime","Gentle. Silvery. Strangely sleepy.","space"},
+	{"moonbeam","FHCBKI","eN",4,7,1,"C7D3FF","F4F6FF","pale silver-blue ray sweeping out of a little crescent moon","chime","Gentle. Silvery. Strangely sleepy.","space,light,night"},
 	{"moonbow","GHCBKI","FZ",4,5,2,"E1E6FF","B39DDB","pale ghostly rainbow at night","chime","A rainbow that stays up late.","space,cute"},
 	{"mooncake","IHBLKI","dSc",2,3,3,"C8883A","F2D08A","round pressed pastry, imprint","chomp","A cake for watching the moon.","edible,sweet,holiday"},
 	{"moonfall","HEFAKB","EkO",10,2,10,"CFD8DC","90A4AE","giant cratered moon descending slowly","rumble","The moon is coming closer. Uh oh.","space,heavy,silly,danger"},

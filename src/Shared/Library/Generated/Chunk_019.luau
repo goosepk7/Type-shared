@@ -350,7 +350,7 @@ return {
 	{"pineapple bun","IMBAKF","ke",3,6,2,"E8B860","F2D88A","bun with crackly sugar top","splat","No pineapple. Just crackle.","edible"},
 	{"pineapple plant","NGBNMI","cT",2,1,4,"43A047","FFB300","spiky rosette with a fruit in the middle","rustle","Spiky crown. Sweet heart.","plant,sharp"},
 	{"pineapple ring","IMBAKK","Uke",3,7,2,"F6D54A","FDEB8C","flat yellow ring, center hole","whoosh","A fruit that wants to be a frisbee.","edible,fruit"},
-	{"pinecone","NGAAMI","UTe",1,6,3,"8D6E63","5D4037","scaly brown cone","rustle","Spiky little missile.","plant,tree"},
+	{"pinecone","NGBAMB","Ee",4,6,2,"8D6E63","5D4037","scaly brown cone that flares and bursts","rustle","Spiky little missile.","plant,tree,nature"},
 	{"ping","KDBAKB","NOY",3,9,1,"EF4444","22C55E","red signal icon reading 999 ms, rubber-banding","beep","999 ms. That hit landed last Tuesday.","gaming,tech"},
 	{"ping marker","KHAOKJ","de",1,10,1,"FF2E63","FFE66D","a bright floating diamond over a tagged enemy","ding","Enemy spotted! Everybody, that one.","gaming,shooter,support"},
 	{"ping pong","KMAA3B","Uje",2,10,1,"F97316","FFFFFF","tiny orange ball rallying back and forth at a blur","tok","Tik tok tik tok tik tok tik SMASH.","sport"},
