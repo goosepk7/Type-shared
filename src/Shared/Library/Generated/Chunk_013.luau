@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hibiscus","NGBNMI","dFS",2,1,2,"E91E63","FFEB3B","huge trumpet bloom, long stamen","rustle","Tropical vibes only.","plant,flower"},
 	{"hiccup","KMAOKG","jY",1,8,1,"F8BBD0","FFFFFF","tiny hopping bubble","hic","Hic! Random teleport.","silly"},
 	{"hickory","NGDCMI","GWkS",4,1,8,"795548","8BC34A","tall shaggy-bark tree","rustle","Shaggy bark, tough wood.","plant,tree"},
 	{"hide","KIBOKI","Z",1,5,3,"78909C","ECEFF1","caster blending into the background","hush","Shh. I am a bush.","stealth,silly"},
@@ -351,7 +352,7 @@ return {
 	{"ice worm","ACEJCH","CJH",7,5,7,"E0F2FE","1E3A8A","giant pale worm bursting from ice","crack","Burrows through glaciers. Brain freeze-proof.","frozen"},
 	{"ice wraith","ACCJNJ","AJZ",5,7,3,"E0F2FE","60A5FA","frosty floating cloak with icicle claws","howl","A chill runs down your spine. It's this.","undead,frozen,ghost"},
 	{"ice yacht","DCCKHL","DkgN",3,9,3,"F5F5F5","1E88E5","sail on skate runners","engine","Sails on ice. Faster than the wind.","mechanical,vehicle,land"},
-	{"iceberg","MCECIJ","GJkS",5,1,9,"ECEFF1","4FC3F7","floating white ice chunk, huge underwater","rumble","Only the tip is showing. Watch out.","place,terrain,frozen"},
+	{"iceberg","MCECII","GklS",6,3,6,"ECEFF1","4FC3F7","jagged ice berg heaving out of the ground","rumble","Only the tip is showing. Watch out.","terrain,frozen,weather"},
 	{"iceberg lettuce","ICBOMI","WF",2,4,3,"B8DC8A","E8F2D8","tight pale green head","crunch","Cold, crunchy, and roundish.","edible,vegetable,healthy"},
 	{"icebreaker","DCFKHC","DkTgB",7,3,10,"C62828","F5F5F5","big red ship, reinforced bow","splash","Breaks ice. Also ships. Also you.","vehicle,aquatic"},
 	{"iced coffee","ICBOKI","DJ",3,9,2,"6B4026","D8F0F8","tall glass with ice cubes","fizz","Cold coffee, hot energy.","edible,drink"},
@@ -402,5 +403,4 @@ return {
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
 	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
 	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
-	{"ink blot","FIBAKI","je",2,6,2,"14141C","3B4CCA","a lobbed glob of ink that splats and smears the screen","splat","Can't see? That's the idea.","cartoon,silly"},
 }

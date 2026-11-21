@@ -268,7 +268,6 @@ return {
 	{"tree of souls","NHFNMI","FSh",6,1,9,"80DEEA","E1F5FE","giant glowing willow with drifting lights","chime","Ancient spirits gather here.","plant,magic,mythical"},
 	{"tree python","AMCJCD","fHO",4,4,6,"3AC84A","F2F2EE","bright green coiled on branch","hiss","Coils on branches like a pretzel.","reptile"},
 	{"treecreeper","AMAJDB","dAZ",1,7,1,"8A6A4A","F2F2EE","small brown bark bird","tweet","A bird that pretends to be bark.","bird,cute"},
-	{"treefall","NGDAMF","keO",6,4,6,"6D4C41","43A047","huge tree toppling over","rustle","TIMBERRR!","plant,tree"},
 	{"treehopper","AMAJFG","dAZP",1,6,1,"6AA04A","F2D82A","bug with weird helmet shapes","buzz","Wears a hat shaped like a thorn.","insect"},
 	{"treehouse","EGCMII","GSe",3,1,5,"8D6E63","43A047","wooden hut wedged in a big leafy tree","thud","Secret club. Password required.","structure,cute"},
 	{"trellis","EGCCII","GWS",1,1,4,"F5F5F5","43A047","lattice frame covered in climbing roses","rustle","Pretty arch. Grabby roses.","structure,plant"},
@@ -403,4 +402,5 @@ return {
 	{"tzatziki","ICBNGI","JN",2,4,1,"F7F4EC","7DBE3A","white yogurt dip, cucumber flecks","splat","Cool, garlicky dip.","edible,sauce,anti-undead"},
 	{"uakari","AMBJBA","deb",2,7,2,"E83A2A","F2D0B0","bright red bald face","chatter","Face as red as a tomato.","mammal,primate,silly"},
 	{"ube","IMBLGI","SNP",2,3,3,"7A3A9A","C8A0E8","bright purple jam","gloop","Purple, sweet, and everywhere now.","edible,sticky,sweet"},
+	{"udon","IMBLGI","FHN",2,3,3,"F7F0DE","C8A070","thick white noodles in broth","gloop","Noodles as thick as ropes.","edible,sticky"},
 }

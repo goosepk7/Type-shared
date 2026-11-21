@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"meteor dive","KADAKB","KEkO",8,9,3,"BF360C","FFAB40","caster diving from the sky wreathed in fire","roar","Became a meteor. Landed on you.","fire,explosive"},
 	{"meteor hammer","CKCAtI","Qke",4,8,3,"8A929B","9E1B32","weighted head spinning on rope","twang","Spins around, comes back swinging.","medieval,ranged"},
 	{"meteor punch","KADAKB","KEkf",8,8,3,"FF6D00","FFD54F","flaming fist plunging from above with crater","boom","A punch that came from space.","fire,melee,explosive"},
 	{"meteor shower","HAEEOB","KEkeP",8,8,5,"6D4C41","FFB300","many fiery streaks raining from a dark sky","roar","Make a wish. Then dodge.","space,explosive"},
@@ -228,7 +229,7 @@ return {
 	{"moon moth","AHCJFB","jAF",3,6,2,"BAE6FD","F8FAFC","pale glowing moth with crescent wings","flutter","Loves the moon. Ignores the lamp.","cute"},
 	{"moon orb","FHCGKK","FR",4,4,4,"E8EAF6","9FA8DA","small cratered moon orbiting caster","chime","Your own pet moon.","space,cute"},
 	{"moon pie","IHBAKK","Uke",3,7,2,"C8904A","F7F2EC","round cookies, marshmallow middle","whoosh","A sweet full moon.","edible,dessert"},
-	{"moon rock","MEBAKJ","Uke",3,5,7,"BDBDBD","E0E0E0","pale grey glittering stone","rumble","Rock from space. Thrown from space.","space"},
+	{"moon rock","MEBAKJ","Ule",3,5,4,"BDBDBD","E0E0E0","pale cratered rock bouncing in moon gravity","rumble","Rock from space. Bounces like it's still there.","space,weather"},
 	{"moon shield","FHCIKI","GF",3,3,6,"E8EAF6","B0BEC5","crescent-moon shaped silver dome","chime","Protected by moonlight.","space,defence"},
 	{"moon snail","ABAJGI","GTN",1,1,6,"C8B8A0","8A6A4A","round shell, huge foot","squelch","Drills into clams. Cheeky.","mollusk,aquatic"},
 	{"moon spirit","AHBJAG","UjF",2,7,2,"F8FAFC","C4B5FD","white rabbit pounding a mortar on the moon","chime","Makes moon cakes. Moon only.","cute,cosmic"},
@@ -402,5 +403,4 @@ return {
 	{"nacho fries","IMAELB","eVP",2,7,1,"F2862B","F2C24A","seasoned orange fries","pitter","Fries in nacho dust.","edible"},
 	{"nachos","IMBLGI","KcN",2,3,3,"E8B84A","F2A62B","pile of chips, melted cheese, jalapenos","gloop","A cheesy mountain of crunch.","edible,sticky"},
 	{"nag","KMBBKB","iQNO",3,5,1,"F59E0B","DC2626","wagging finger with a speech bubble of blah blah blah","chatter","Are we there yet? Are we there yet? Are we","silly"},
-	{"naga","ABDJCD","GfMB",7,6,7,"065F46","FACC15","cobra hooded serpent, jeweled crest","hiss","A serpent king with excellent taste in jewels.","mythical,reptile,royal"},
 }

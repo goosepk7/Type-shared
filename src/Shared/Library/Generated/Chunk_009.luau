@@ -162,6 +162,7 @@ return {
 	{"falling citadel","EEFNqI","EkO",9,2,6,"E8DCC2","4A6FA5","a whole castle falls out of the clouds","rumble","Real estate, delivered. From orbit.","anime,castle,heavy"},
 	{"falling mountain","HEFAKB","EkO",10,2,10,"6D4C41","BCAAA4","upside-down mountain plunging from the clouds","rumble","Where did that mountain come from? Above.","heavy,danger"},
 	{"falling sun","HAFAKB","KEkP",10,2,8,"FFB300","FF3D00","blinding miniature sun descending","roar","Too close. Way too close.","space,fire,explosive,danger"},
+	{"falling tree","NGENMI","Ek",7,3,2,"6B4A2B","5E8C31","tall pine that creaks and topples","crash","Timberrr! Someone yell it.","nature,forest,weather"},
 	{"fallow deer","AMCJAA","Dk",4,8,4,"C8904A","F2F2EE","palm antlers, spotted","bleat","Palmate antlers. Spotty coat.","mammal,wild"},
 	{"false killer whale","ABDJEC","UDB",6,8,4,"2A2A30","6A6A70","sleek black dolphin","click","Not a killer whale. Still scary.","mammal,aquatic,ocean"},
 	{"fame","LHCJNA","dcOh",4,5,3,"FACC15","111827","star in sunglasses on a red carpet, camera flashes","click","No photos, please. Okay, one. Okay, forty.","fancy,meme"},
@@ -402,5 +403,4 @@ return {
 	{"flame dancer","LACJNK","Kj",4,7,3,"F97316","111827","spinning fire poi","whoosh","Dazzling. Also burning.","circus,fire"},
 	{"flame jet","FACBKI","KIe",5,9,1,"FF6D00","FFF3E0","tight roaring jet of blue-orange flame","hiss","Precision toasting.","fire"},
 	{"flame salamander","AABJAA","KfB",3,6,3,"EA580C","FDE047","small lizard with flame crest","hiss","Lives in a campfire. Very cozy.","reptile,fire,elemental"},
-	{"flame strike","FADBKI","KO",7,7,2,"FF3D00","FFEA00","column of fire slamming down from the sky","roar","Fire, but from above. Surprise!","fire,holy"},
 }

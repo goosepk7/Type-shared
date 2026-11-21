@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
 	{"gelatinous cube","AJDJGF","MHN",5,2,6,"86EFAC","F0FDF4","giant clear cube with stuff floating inside","squelch","A dungeon's cleaning crew.","slime,silly"},
 	{"gelato","ICBAKJ","JeN",3,5,2,"F7E0B0","9CBA6B","dense scoop in tiny cup","squish","Italian ice cream with a flair.","edible,frozen,sweet"},
 	{"gem","BMAA4J","cea",2,7,6,"1E9E5A","F2F2EE","faceted sparkling gemstone","chime","Shiny. Pointy. Priceless.","treasure,shiny"},
@@ -21,7 +22,7 @@ return {
 	{"gentle giant","AGEJNA","GFl",6,3,8,"0EA5E9","FDE68A","huge smiling giant with a picnic basket","stomp","Big hugs. Bigger lunchbox.","giant,cute"},
 	{"gentleman","LMCJNA","GaO",4,4,5,"1F2937","F5F5F4","top hat, monocle, cane, tea cup, perfect posture","ding","I say. Fisticuffs it is, then.","fancy,silly"},
 	{"gentoo penguin","ACBJDA","UDB",2,8,3,"2A2A30","F2701E","orange beak, white eye stripe","squawk","Fastest penguin underwater.","bird,arctic,cute"},
-	{"geode","FEBG4F","Ea",4,5,5,"6C5B7B","C9A8F5","dull rock shell cracking to purple crystals","clink","Ugly outside. Sparkly inside. Relatable.","sharp"},
+	{"geode","FEBI4I","GE",4,4,4,"6C5B7B","C9A8F5","dull rock shell cracking to purple crystals","clink","Ugly outside. Sparkly inside. Relatable.","sharp,nature,weather"},
 	{"geodesic dome","EGDIII","GFS",3,1,7,"B2EBF2","ECEFF1","sphere built from triangle panels","thud","Inside: a tiny jungle. Outside: chaos.","structure,defense"},
 	{"geoduck","ABAJGI","GN",1,1,6,"E8C8A8","B88A6A","huge clam with long neck","squelch","A clam with a very long neck.","mollusk,aquatic,silly"},
 	{"geologist","LECJNA","Ck",3,4,5,"78350F","F8FAFC","rock hammer, vest, specimen bag","clank","Rocks? Rocks.","science"},
@@ -402,5 +403,4 @@ return {
 	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
 	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
 	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
-	{"gravity lily","NFBLMJ","lS",2,1,2,"B388FF","E1F5FE","lily floating upside down","chime","Lifts everything nearby. Wheee.","plant,magic,mythical"},
 }

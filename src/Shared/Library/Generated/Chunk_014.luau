@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ink blot","FIBAKI","je",2,6,2,"14141C","3B4CCA","a lobbed glob of ink that splats and smears the screen","splat","Can't see? That's the idea.","cartoon,silly"},
 	{"ink monster","AICJGA","jZN",4,5,3,"0A0A0A","312E81","dripping ink-blot creature","squelch","Stains everything. Including your record.","spooky"},
 	{"ink strike","KIBOKI","Dk",8,9,1,"E8E2D6","B3172B","world flashes to black-and-red ink for one hit","thump","Next hit gets its own page.","anime,manga"},
 	{"inkanyamba","ADEJCC","kLB",8,5,7,"1E3A8A","FDE047","huge horse-headed eel of storms","thunder","When it's angry, storms happen.","mythical,storm"},
@@ -402,5 +403,4 @@ return {
 	{"lace monitor","AMCJAA","Cf",4,7,2,"2A2A2A","F2E8C0","patterned big monitor","hiss","Climbs trees with huge claws.","reptile"},
 	{"lacewing","AMAJFB","jdAF",1,5,1,"8AE04A","E8F8E0","lacy green clear wings","flutter","Eats aphids. Looks like lace.","insect,cute"},
 	{"lacrosse ball","BMAA3F","ke",2,9,5,"F2F2EE","F2F2EE","solid rubber ball","bonk","Hard. Fast. Ouch.","sport"},
-	{"lacrosse stick","BMCHJK","fe",2,7,4,"F2F2EE","1F2F55","stick with a netted pocket","bonk","Catch, cradle, fling.","sport"},
 }

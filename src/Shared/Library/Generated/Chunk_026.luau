@@ -400,7 +400,7 @@ return {
 	{"thunderbird","ADEJDB","AkeLO",8,8,6,"1E3A8A","FDE047","massive eagle, lightning feather tips","thunder","Flaps once: thunder. Flaps twice: weather report.","mythical,bird,storm,flying"},
 	{"thunderbird chick","ADBJDB","AL",2,8,2,"1E3A8A","FDE047","fluffy chick that crackles","chirp","Every chirp is a tiny thunderclap.","cute,storm,bird"},
 	{"thunderbolt","FDDAKB","keLO",8,10,2,"FFE600","5A8CFF","thick forked bolt slamming down","crack","Comes with its own drumroll.","electric"},
-	{"thundercloud","GDDDOJ","QeL",6,4,4,"39445C","D6DDE8","anvil-topped dark cloud with flickers","rumble","Follows you. Rains on your parade.","storm,electric"},
+	{"thundercloud","GDCDOJ","QeL",5,4,4,"39445C","D6DDE8","grumpy little grey cloud that drops bolts","rumble","Follows you. Rains on your parade.","storm,electric,weather"},
 	{"thunderhead","GDEDOJ","QeL",7,3,5,"37474F","FFF59D","towering anvil storm cloud","rumble","A cloud so tall it has a ceiling.","storm,electric"},
 	{"thundersnow","GDDEOJ","JLN",6,5,4,"D8E6F0","FFE37A","snowstorm with flashes of lightning","boom","Snow, but with drum solos.","frozen,electric,storm"},
 }

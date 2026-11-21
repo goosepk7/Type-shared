@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flame strike","FADBKI","KO",7,7,2,"FF3D00","FFEA00","column of fire slamming down from the sky","roar","Fire, but from above. Surprise!","fire,holy"},
 	{"flame sword","CACHrK","KfP",7,6,4,"D9480F","FF6A1A","blade wreathed in flames","shing","Smells like toast. Hits like a dragon.","fantasy,flammable,glowing"},
 	{"flame tank","DADMHL","KegP",7,3,9,"4B5320","FF5722","tank with a nozzle spitting fire","fwoosh","Toasty treads.","mechanical,vehicle,land"},
 	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
@@ -402,5 +403,4 @@ return {
 	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
 	{"geisha","LMCJNA","jc",3,4,3,"F8FAFC","DC2626","white makeup, kimono, paper fan","chime","A fan flick that ends fights.","historical"},
 	{"gelada","AMCJBA","deb",3,7,2,"8A6A4A","D8302A","lion mane, red chest patch","chatter","Grass-eating lion monkey.","mammal,primate"},
-	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
 }

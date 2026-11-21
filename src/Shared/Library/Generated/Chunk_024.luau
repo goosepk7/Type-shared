@@ -150,7 +150,7 @@ return {
 	{"snow day","GCCNOI","dFN",2,3,3,"FFFFFF","B3E5FC","snowy playground glow","yay","No school. Snowball time.","frozen,silly"},
 	{"snow devil","GCCN5K","jJl",5,6,2,"FFFFFF","B3E5FC","small spinning snow funnel","whoosh","Frosty the twister.","frozen,storm"},
 	{"snow elemental","ACDJOK","JNP",6,5,5,"F8FAFC","BAE6FD","whirling snow storm with icy eyes","howl","A snow day that fights back.","elemental,frozen"},
-	{"snow fort","ECCCII","GSeN",3,1,4,"F5F5F5","90CAF9","low snow wall with a stack of snowballs","thud","Comes pre-loaded with snowballs.","silly,frozen"},
+	{"snow fort","ECCCII","GSeN",3,1,4,"F5F5F5","90CAF9","curved snow wall that lobs snowballs","thud","Comes pre-loaded with snowballs.","silly,frozen,weather"},
 	{"snow fortress","ECEMII","GJSe",4,1,6,"FFFFFF","B3E5FC","big fort of packed snow with towers","thud","Every tower full of snowballs.","structure,frozen"},
 	{"snow globe","BCBGKI","jJ",2,3,2,"BFE6F2","F2F2EE","glass dome with swirling snow","squeak","Shake it. Winter happens.","holiday"},
 	{"snow globe snare","BCBLKI","JcN",4,2,4,"BEE1FF","F4FAFF","snow globe that drops a snowstorm dome on passers-by","chime","Shake well. Shake the enemy, mostly.","holiday,winter,trap"},
