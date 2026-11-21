@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flake","IMAELJ","cNP",1,4,1,"F2C14E","E0A030","drifting golden cereal flakes and a splash of milk","crunch","Soggy in thirty seconds. Eat fast.","edible,breakfast"},
+	{"flamberge","CKDHrK","fTP",6,5,5,"8A929B","9E1B32","wavy flame-shaped long blade","shing","The blade is wavy. The enemy is worried.","medieval,sharp"},
+	{"flame","FACFOB","KIe",5,7,2,"F06A1D","FFD166","tongue of flame, licking forward edge","whoosh","Points at the problem. Sets it on fire.","fire"},
+	{"flame blade","FACHrB","Kf",6,7,4,"FF6D00","FFE57F","sword made of roaring fire","whoosh","A sword that is also a campfire.","fire,sharp"},
+	{"flame bloom","NABAbI","UKEe",5,8,2,"FF6A1F","FFD23F","fiery flower blooms, then bouncing fireballs","whoosh","Pick a flower. Throw the fire.","game,platformer,power up,fire"},
 	{"flame dancer","LACJNK","Kj",4,7,3,"F97316","111827","spinning fire poi","whoosh","Dazzling. Also burning.","circus,fire"},
 	{"flame jet","FACBKI","KIe",5,9,1,"FF6D00","FFF3E0","tight roaring jet of blue-orange flame","hiss","Precision toasting.","fire"},
 	{"flame salamander","AABJAA","KfB",3,6,3,"EA580C","FDE047","small lizard with flame crest","hiss","Lives in a campfire. Very cozy.","reptile,fire,elemental"},
@@ -64,7 +69,7 @@ return {
 	{"floppy","KMCAKB","jkl",4,7,1,"FF8A65","FFFFFF","target going floppy and flying","flop","Floppy noodle physics.","silly"},
 	{"florist","LGCJNA","WFc",3,4,3,"F472B6","15803D","flower apron, bouquet","rustle","Says it with flowers. Thorny ones.","plant"},
 	{"flounder","ABBJEC","dZB",2,6,1,"A8906E","6A5640","flat fish, both eyes on one side","splash","Both eyes on one side. Lying down.","fish,aquatic"},
-	{"flour","IFBDOJ","jZP",2,5,1,"F7F4EC","EDE6D6","cloud of white powder, paper sack","puff","Blinding white puff. Great for escapes.","edible"},
+	{"flour bomb","IFBD2J","SNP",3,5,3,"F2E6CF","C08A4A","paper flour sack bursting into a big soft cloud","puff","Everything is a bit beige now.","kitchen,cloud,edible"},
 	{"flower","NGBNMI","dFS",2,1,2,"F06292","FFEB3B","bright petals on a slim stem","rustle","Pretty. Deadly? No. Pretty.","plant,flower"},
 	{"flower bed","NGCNMI","FSN",2,1,3,"F06292","6D4C41","rows of colourful blooms in soil","rustle","Keep off. The flowers fight back.","plant,flower"},
 	{"flower crown","NGAOMI","F",1,1,1,"F8BBD0","FFEB3B","ring of woven blossoms","rustle","Instant festival vibes.","plant,flower,cute"},
@@ -398,9 +403,4 @@ return {
 	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
 	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
 	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
-	{"gazebo","EMCCII","GS",2,1,4,"F5F5F5","7CB342","eight-sided open hut with pointed roof","thud","Nice spot for a picnic. And a siege.","structure,building,cute"},
-	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
-	{"gazpacho","ICBOGI","JF",3,4,3,"C8302B","7DBE3A","cold red soup bowl","slurp","Cold soup. Hot debate.","edible,warm,healthy"},
-	{"gear","OKBAKK","UTe",2,6,6,"B58A3A","A86F32","toothed metal wheel","hum","Spinning tooth disc of mild doom.","mechanical"},
-	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 }
