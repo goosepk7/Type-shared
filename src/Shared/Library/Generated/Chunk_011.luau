@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
 	{"geisha","LMCJNA","jc",3,4,3,"F8FAFC","DC2626","white makeup, kimono, paper fan","chime","A fan flick that ends fights.","historical"},
 	{"gelada","AMCJBA","deb",3,7,2,"8A6A4A","D8302A","lion mane, red chest patch","chatter","Grass-eating lion monkey.","mammal,primate"},
@@ -25,7 +26,7 @@ return {
 	{"gentle giant","AGEJNA","GFl",6,3,8,"0EA5E9","FDE68A","huge smiling giant with a picnic basket","stomp","Big hugs. Bigger lunchbox.","giant,cute"},
 	{"gentleman","LMCJNA","GaO",4,4,5,"1F2937","F5F5F4","top hat, monocle, cane, tea cup, perfect posture","ding","I say. Fisticuffs it is, then.","fancy,silly"},
 	{"gentoo penguin","ACBJDA","UDB",2,8,3,"2A2A30","F2701E","orange beak, white eye stripe","squawk","Fastest penguin underwater.","bird,arctic,cute"},
-	{"geode","FEBG4F","Ea",4,5,5,"6C5B7B","C9A8F5","dull rock shell cracking to purple crystals","clink","Ugly outside. Sparkly inside. Relatable.","sharp"},
+	{"geode","FEBI4I","GE",4,4,4,"6C5B7B","C9A8F5","dull rock shell cracking to purple crystals","clink","Ugly outside. Sparkly inside. Relatable.","sharp,nature,weather"},
 	{"geodesic dome","EGDIII","GFS",3,1,7,"B2EBF2","ECEFF1","sphere built from triangle panels","thud","Inside: a tiny jungle. Outside: chaos.","structure,defense"},
 	{"geoduck","ABAJGI","GN",1,1,6,"E8C8A8","B88A6A","huge clam with long neck","squelch","A clam with a very long neck.","mollusk,aquatic,silly"},
 	{"geologist","LECJNA","Ck",3,4,5,"78350F","F8FAFC","rock hammer, vest, specimen bag","clank","Rocks? Rocks.","science"},
@@ -402,5 +403,4 @@ return {
 	{"gravity","FLDNOI","HNO",6,4,5,"3B2E5A","8F7DE8","warped purple ripples pressing down","hum","What goes up, comes down. Hard.","space,heavy"},
 	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
 	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
-	{"gravity blast","FLCGKI","kHO",6,6,1,"4527A0","B388FF","space-warping ring pulse","whum","Pulled in, then shoved out.","space,explosive"},
 }

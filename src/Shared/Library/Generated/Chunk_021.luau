@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"punching tree","NGECMI","GkSf",6,2,8,"4E342E","2E7D32","gnarled tree swinging heavy branches","chime","Do not park next to it.","plant,magic,mythical,silly"},
 	{"punishment","KICLII","SNO",4,1,6,"78716C","DC2626","small chair in a corner under a spotlight, clock ticking","tick","Go to your room. And think about what you typed.","school,silly"},
 	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
 	{"pupfish","AAAJEC","dB",1,6,1,"3A6AE8","E8E0D0","tiny desert pool fish","splash","Lives in the hottest pools.","fish,aquatic,desert"},
@@ -57,8 +58,7 @@ return {
 	{"quetzalcoatl","AFEJCB","AFke",8,7,7,"059669","F59E0B","serpent with rainbow feathers and wings","whoosh","A snake that got really into feathers.","mythical,reptile,ancient"},
 	{"quetzalcoatlus","AMEJDB","DAklT",8,8,6,"8A6A4A","D84A2A","giraffe-tall pterosaur, giant beak","screech","As tall as a giraffe. Could fly. Wild.","pterosaur,extinct,reptile"},
 	{"quiche","IMBAKK","Uke",3,7,2,"F2D08A","7DBE3A","fluted savory tart","whoosh","An egg pie with a fancy name.","edible"},
-	{"quicksand","FECLII","SHN",5,2,5,"C9A66B","E8D3A7","rippling sand pool, sinking swirl","squelch","Struggling makes it worse. Enjoy.","desert"},
-	{"quicksand pit","EECLII","SHN",3,1,6,"E6C27A","A1887F","rippling patch of wet golden sand","thud","Stop struggling. It only makes it worse.","structure,defense"},
+	{"quicksand","FECLII","SHN",5,2,5,"C9A66B","E8D3A7","rippling sand pool, sinking swirl","squelch","Struggling makes it worse. Enjoy.","desert,weather,nature"},
 	{"quickscope","CHBBwK","Te",6,9,1,"3A4250","FFE35A","a full spin and a sniper round with a scope glint","zap","Get rekt, scrub. (Respectfully.)","gaming,shooter,meme"},
 	{"quill","BMAAJK","Te",1,8,1,"F2F2EE","24262A","long feather with ink nib","tap","Writes curses beautifully.","school,fantasy"},
 	{"quince","IGAAKK","keO",3,7,6,"E8D23A","A88A2A","lumpy yellow pear-apple","bonk","Hard as a rock until cooked.","edible,fruit"},

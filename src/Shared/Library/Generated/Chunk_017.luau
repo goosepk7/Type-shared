@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"metal slime","AKBJGG","GUY",3,9,9,"94A3B8","E2E8F0","shiny chrome droplet blob","clink","Super shiny. Super fast. Super annoying.","slime,metal"},
 	{"metal storm","FKEEOB","TP",8,6,4,"90A4AE","ECEFF1","swirling rain of metal shards and blades","clang","Forecast: sharp.","sharp,heavy,storm"},
 	{"metal welder","LACJNA","KO",4,4,5,"1F2937","F97316","welding mask, spark torch","sizzle","Sparks fly. Blinding ones.","tools,fire"},
 	{"meteor","HADAKB","KEkeO",8,8,6,"5D4037","FF8F00","flaming boulder streaking down, long fire tail","roar","Space rock. Express delivery.","space,explosive"},
@@ -233,7 +234,7 @@ return {
 	{"moon moth","AHCJFB","jAF",3,6,2,"BAE6FD","F8FAFC","pale glowing moth with crescent wings","flutter","Loves the moon. Ignores the lamp.","cute"},
 	{"moon orb","FHCGKK","FR",4,4,4,"E8EAF6","9FA8DA","small cratered moon orbiting caster","chime","Your own pet moon.","space,cute"},
 	{"moon pie","IHBAKK","Uke",3,7,2,"C8904A","F7F2EC","round cookies, marshmallow middle","whoosh","A sweet full moon.","edible,dessert"},
-	{"moon rock","MEBAKJ","Uke",3,5,7,"BDBDBD","E0E0E0","pale grey glittering stone","rumble","Rock from space. Thrown from space.","space"},
+	{"moon rock","MEBAKJ","Ule",3,5,4,"BDBDBD","E0E0E0","pale cratered rock bouncing in moon gravity","rumble","Rock from space. Bounces like it's still there.","space,weather"},
 	{"moon shield","FHCIKI","GF",3,3,6,"E8EAF6","B0BEC5","crescent-moon shaped silver dome","chime","Protected by moonlight.","space,defence"},
 	{"moon snail","ABAJGI","GTN",1,1,6,"C8B8A0","8A6A4A","round shell, huge foot","squelch","Drills into clams. Cheeky.","mollusk,aquatic"},
 	{"moon spirit","AHBJAG","UjF",2,7,2,"F8FAFC","C4B5FD","white rabbit pounding a mortar on the moon","chime","Makes moon cakes. Moon only.","cute,cosmic"},
@@ -402,5 +403,4 @@ return {
 	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
 	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
 	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
-	{"naan","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","teardrop flatbread, char spots","whoosh","Fluffy, blistered, perfect for scooping.","edible"},
 }

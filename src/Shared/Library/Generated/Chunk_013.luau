@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
 	{"hex cauldron","BJCL2I","ESN",6,3,5,"2E2E34","6EE650","a black iron cauldron of green brew that boils over","bubble","Recipe: one eye of newt, one very bad mood.","monster,folklore,spooky,witch"},
 	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
 	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
@@ -357,7 +358,7 @@ return {
 	{"ice worm","ACEJCH","CJH",7,5,7,"E0F2FE","1E3A8A","giant pale worm bursting from ice","crack","Burrows through glaciers. Brain freeze-proof.","frozen"},
 	{"ice wraith","ACCJNJ","AJZ",5,7,3,"E0F2FE","60A5FA","frosty floating cloak with icicle claws","howl","A chill runs down your spine. It's this.","undead,frozen,ghost"},
 	{"ice yacht","DCCKHL","DkgN",3,9,3,"F5F5F5","1E88E5","sail on skate runners","engine","Sails on ice. Faster than the wind.","mechanical,vehicle,land"},
-	{"iceberg","MCECIJ","GJkS",5,1,9,"ECEFF1","4FC3F7","floating white ice chunk, huge underwater","rumble","Only the tip is showing. Watch out.","place,terrain,frozen"},
+	{"iceberg","MCECII","GklS",6,3,6,"ECEFF1","4FC3F7","jagged ice berg heaving out of the ground","rumble","Only the tip is showing. Watch out.","terrain,frozen,weather"},
 	{"iceberg lettuce","ICBOMI","WF",2,4,3,"B8DC8A","E8F2D8","tight pale green head","crunch","Cold, crunchy, and roundish.","edible,vegetable,healthy"},
 	{"icebreaker","DCFKHC","DkTgB",7,3,10,"C62828","F5F5F5","big red ship, reinforced bow","splash","Breaks ice. Also ships. Also you.","vehicle,aquatic"},
 	{"iced coffee","ICBOKI","DJ",3,9,2,"6B4026","D8F0F8","tall glass with ice cubes","fizz","Cold coffee, hot energy.","edible,drink"},
@@ -402,5 +403,4 @@ return {
 	{"inferno beam","FADBKI","KTP",8,7,1,"FF3D00","FFEB3B","roaring wide beam of fire","roar","A flamethrower, upgraded.","fire"},
 	{"inflatable boat","DBBKHC","UDkgB",3,7,3,"FF7043","37474F","rubber tube boat with outboard","splash","Bouncy, speedy, a bit squeaky.","vehicle,aquatic"},
 	{"inflatable flamingo","BBDJDJ","UdB",1,3,2,"FF3EA5","F2F2EE","giant pink pool floatie bird","splash","Floaty fabulous.","beach,silly"},
-	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 }

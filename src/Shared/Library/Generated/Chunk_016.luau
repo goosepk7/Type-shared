@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"long-eared bat","AMBJDB","jiA",2,7,1,"8A6A4A","C8A88A","ears as long as its body","screech","Ears longer than its body.","mammal,nocturnal,spooky"},
 	{"long-eared owl","AMBJDB","AZT",3,7,2,"8A6A44","E8701E","long ear tufts, orange face","hoot","Ear tufts like antennae.","bird,nocturnal,predator"},
 	{"longan","IGAAKF","Fke",3,6,2,"C8A46A","F3EEE0","tan marble with see-through flesh","splat","Peel it and it stares back.","edible,fruit,sweet"},
 	{"longboard","DMAKHF","Dkg",2,7,2,"8D6E63","4FC3F7","long wooden deck, big soft wheels","engine","Surfing, but on pavement.","mechanical,vehicle,land,sport"},
@@ -402,5 +403,4 @@ return {
 	{"metal elemental","AKDJNA","Gka",7,3,9,"94A3B8","E2E8F0","liquid chrome giant with gear eyes","clank","Shiny, heavy, and magnetic personality.","elemental,metal"},
 	{"metal form","KKCOWA","Ga",3,3,9,"90A4AE","ECEFF1","caster turning shiny chrome","clang","Shiny, heavy and bonk-proof.","heavy,defence"},
 	{"metal mage","LKCJNA","GHe",6,4,6,"71717A","94A3B8","robes threaded with metal plates","clank","Your armor works for them now.","magic,metal"},
-	{"metal slime","AKBJGG","GUY",3,9,9,"94A3B8","E2E8F0","shiny chrome droplet blob","clink","Super shiny. Super fast. Super annoying.","slime,metal"},
 }

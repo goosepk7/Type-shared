@@ -10,7 +10,7 @@ return {
 	{"thunderbird","ADEJDB","AkeLO",8,8,6,"1E3A8A","FDE047","massive eagle, lightning feather tips","thunder","Flaps once: thunder. Flaps twice: weather report.","mythical,bird,storm,flying"},
 	{"thunderbird chick","ADBJDB","AL",2,8,2,"1E3A8A","FDE047","fluffy chick that crackles","chirp","Every chirp is a tiny thunderclap.","cute,storm,bird"},
 	{"thunderbolt","FDDAKB","keLO",8,10,2,"FFE600","5A8CFF","thick forked bolt slamming down","crack","Comes with its own drumroll.","electric"},
-	{"thundercloud","GDDDOJ","QeL",6,4,4,"39445C","D6DDE8","anvil-topped dark cloud with flickers","rumble","Follows you. Rains on your parade.","storm,electric"},
+	{"thundercloud","GDCDOJ","QeL",5,4,4,"39445C","D6DDE8","grumpy little grey cloud that drops bolts","rumble","Follows you. Rains on your parade.","storm,electric,weather"},
 	{"thunderhead","GDEDOJ","QeL",7,3,5,"37474F","FFF59D","towering anvil storm cloud","rumble","A cloud so tall it has a ceiling.","storm,electric"},
 	{"thundersnow","GDDEOJ","JLN",6,5,4,"D8E6F0","FFE37A","snowstorm with flashes of lightning","boom","Snow, but with drum solos.","frozen,electric,storm"},
 	{"thunderstorm","GDEEOJ","SLPO",8,6,4,"2E3A55","FFE57F","towering black clouds spitting lightning","boom","Loud, bright, and very wet.","storm,electric"},
@@ -278,7 +278,6 @@ return {
 	{"tree of souls","NHFNMI","FSh",6,1,9,"80DEEA","E1F5FE","giant glowing willow with drifting lights","chime","Ancient spirits gather here.","plant,magic,mythical"},
 	{"tree python","AMCJCD","fHO",4,4,6,"3AC84A","F2F2EE","bright green coiled on branch","hiss","Coils on branches like a pretzel.","reptile"},
 	{"treecreeper","AMAJDB","dAZ",1,7,1,"8A6A4A","F2F2EE","small brown bark bird","tweet","A bird that pretends to be bark.","bird,cute"},
-	{"treefall","NGDAMF","keO",6,4,6,"6D4C41","43A047","huge tree toppling over","rustle","TIMBERRR!","plant,tree"},
 	{"treehopper","AMAJFG","dAZP",1,6,1,"6AA04A","F2D82A","bug with weird helmet shapes","buzz","Wears a hat shaped like a thorn.","insect"},
 	{"treehouse","EGCMII","GSe",3,1,5,"8D6E63","43A047","wooden hut wedged in a big leafy tree","thud","Secret club. Password required.","structure,cute"},
 	{"trellis","EGCCII","GWS",1,1,4,"F5F5F5","43A047","lattice frame covered in climbing roses","rustle","Pretty arch. Grabby roses.","structure,plant"},
@@ -403,4 +402,5 @@ return {
 	{"twinstep fusion","KHCOKI","DWkf",8,7,4,"FFE7A0","5FE0D0","you and a light twin dance, then fold into one","warp","Two steps, one fighter. Mind the fingertips.","anime,dance,buff,transformation"},
 	{"two liter bottle","IBCFKI","EkI",4,7,1,"3A1A0C","3E8E2B","big plastic soda bottle","fizz","A pressurized fizz cannon.","edible,drink,fizzy"},
 	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
+	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
 }

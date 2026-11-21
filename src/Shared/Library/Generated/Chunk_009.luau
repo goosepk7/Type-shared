@@ -165,6 +165,7 @@ return {
 	{"falling citadel","EEFNqI","EkO",9,2,6,"E8DCC2","4A6FA5","a whole castle falls out of the clouds","rumble","Real estate, delivered. From orbit.","anime,castle,heavy"},
 	{"falling mountain","HEFAKB","EkO",10,2,10,"6D4C41","BCAAA4","upside-down mountain plunging from the clouds","rumble","Where did that mountain come from? Above.","heavy,danger"},
 	{"falling sun","HAFAKB","KEkP",10,2,8,"FFB300","FF3D00","blinding miniature sun descending","roar","Too close. Way too close.","space,fire,explosive,danger"},
+	{"falling tree","NGENMI","Ek",7,3,2,"6B4A2B","5E8C31","tall pine that creaks and topples","crash","Timberrr! Someone yell it.","nature,forest,weather"},
 	{"fallow deer","AMCJAA","Dk",4,8,4,"C8904A","F2F2EE","palm antlers, spotted","bleat","Palmate antlers. Spotty coat.","mammal,wild"},
 	{"false killer whale","ABDJEC","UDB",6,8,4,"2A2A30","6A6A70","sleek black dolphin","click","Not a killer whale. Still scary.","mammal,aquatic,ocean"},
 	{"fame","LHCJNA","dcOh",4,5,3,"FACC15","111827","star in sunglasses on a red carpet, camera flashes","click","No photos, please. Okay, one. Okay, forty.","fancy,meme"},
@@ -402,5 +403,4 @@ return {
 	{"flamberge","CKDHrK","fTP",6,5,5,"8A929B","9E1B32","wavy flame-shaped long blade","shing","The blade is wavy. The enemy is worried.","medieval,sharp"},
 	{"flame","FACFOB","KIe",5,7,2,"F06A1D","FFD166","tongue of flame, licking forward edge","whoosh","Points at the problem. Sets it on fire.","fire"},
 	{"flame blade","FACHrB","Kf",6,7,4,"FF6D00","FFE57F","sword made of roaring fire","whoosh","A sword that is also a campfire.","fire,sharp"},
-	{"flame bloom","NABAbI","UKEe",5,8,2,"FF6A1F","FFD23F","fiery flower blooms, then bouncing fireballs","whoosh","Pick a flower. Throw the fire.","game,platformer,power up,fire"},
 }

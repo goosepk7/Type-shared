@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"weep","KBBEOJ","dNP",2,3,1,"93C5FD","E0F2FE","wobbly lip under two fountain jets of tears","wail","But I don't WANNA lose.","mood,silly"},
 	{"weeping cherry","NGCCMI","GdFS",2,1,5,"5D4037","F8BBD0","drooping branches of pink blossom","rustle","Weeps flowers. Beautifully.","plant,tree,cute"},
 	{"weeping fig","NGCCMI","GWkS",2,1,5,"8D6E63","2E7D32","small tree with glossy drooping leaves","rustle","Sulks if you move it.","plant,tree"},
 	{"weevil","AMAJFA","Gf",1,3,4,"6A4A2A","3A2A1A","beetle with long trunk snout","click","A beetle with an elephant nose.","insect,armored"},

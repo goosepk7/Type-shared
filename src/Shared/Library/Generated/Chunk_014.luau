@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"label","BMAAJB","jSN",1,7,1,"FFFFFF","EF4444","sticky white label slapped on with HELLO written on it","tap","Labelled: property of the winner.","household"},
 	{"label maker","BMAOJK","j",1,5,2,"8E9196","F2F2EE","handheld sticker printer","tap","Labels you DEFEATED.","office"},
 	{"laboratory","EDDCII","SMLh",3,1,7,"ECEFF1","76FF03","bubbling flasks, sparking coils, monitors","thud","Something escaped. Again.","structure,building,mechanical"},
-	{"labrador","AMCJAA","DQfB",4,7,4,"2E2016","E2C08A","sturdy body, otter tail, friendly face","bark","Will retrieve anything. Including trouble.","mammal,pet"},
 }

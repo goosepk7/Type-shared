@@ -168,7 +168,7 @@ return {
 	{"stasis field","OLDNKI","SN",5,3,4,"8CE6FF","3C4654","a gyroscope core inside a pale blue bubble where shots crawl","hum","Everything slows down. Including your excuses.","scifi,time"},
 	{"static","FDBLII","dL",2,6,1,"C6D8FF","FFF6A0","frizzy spark field, hair-raising arcs","crackle","Hair goes up. Dignity goes down.","electric,silly"},
 	{"static cling","FDBLII","HN",2,5,1,"FFF59D","82B1FF","crackling sticky field","crackle","Socks stuck to everything.","electric,silly"},
-	{"static shock","FDBAKB","LO",3,10,1,"BFD7FF","FFF59D","tiny blue snap between fingertips","zap","Doorknob revenge.","electric,silly"},
+	{"static shock","FDBBKB","eL",3,9,2,"BFD7FF","FFF59D","crackling arc jumping wizard to wizard","zap","Doorknob revenge.","electric,silly,weather"},
 	{"statice","NGBNMI","dFS",1,1,2,"7E57C2","FFFFFF","papery clusters of tiny blooms","rustle","Never wilts. Never quits.","plant,flower"},
 	{"station wagon","DMCKHL","Dkg",4,6,6,"8A6E4B","E8DCC2","long boxy car, wood side panels, roof rack","engine","Grandma's battle wagon. Fully loaded.","mechanical,vehicle,land,silly"},
 	{"statue","EMCCII","GdS",2,1,9,"9E9E9E","607D8B","stone figure on a plinth","thud","Strikes a pose. Holds it forever.","structure,building"},
