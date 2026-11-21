@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weka","AMBJDA","dfb",2,4,2,"8A6A4A","C8A07A","flightless brown rail","cluck","Steals shiny things from campers.","bird,farm"},
+	{"welder","OACBJK","KfO",5,4,5,"2F6FD1","24262A","welding gun with bright arc","buzz","Don't look directly at it.","tool"},
+	{"welding mask","BKBONI","G",1,5,5,"24262A","4A4D52","dark-windowed face shield","clank","Flash? What flash?","armor,defense"},
 	{"wels catfish","ABDJEC","DfHB",5,7,4,"4A4A3A","C8C0A0","enormous whiskered catfish","splash","Eats pigeons off riverbanks.","fish,aquatic"},
 	{"welsh rarebit","IGBOKI","F",2,5,3,"E0A040","F2C24A","toast with bubbling cheese","crunch","No rabbits involved. Just cheese.","edible,healthy"},
 	{"welwitschia","NECNMI","dFS",2,1,8,"6D4C41","7CB342","two long tangled leaves on sand","rustle","Two leaves. Two thousand years.","plant,flower,ancient"},

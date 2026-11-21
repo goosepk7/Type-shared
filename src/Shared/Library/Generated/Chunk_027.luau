@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thunderstorm","GDEEOJ","SLPO",8,6,4,"2E3A55","FFE57F","towering black clouds spitting lightning","boom","Loud, bright, and very wet.","storm,electric"},
+	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
+	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
 	{"thyme","IGBOMI","WF",2,4,3,"5E7A4A","8A9A6A","tiny-leaf sprigs","crunch","There's always thyme for this.","edible,vegetable,healthy,herb"},
 	{"tiara","BHAONI","F",2,5,3,"C9CED4","8E5CC2","sparkly jewelled headband","swish","Princess mode: on.","royal,shiny"},
 	{"tibetan mastiff","AMDJAA","GDQf",6,7,4,"6A3A1E","E8A04A","huge maned guardian dog","bark","A lion disguised as a dog.","mammal,pet"},
@@ -345,7 +348,7 @@ return {
 	{"tulip field","NGENMI","dFS",2,1,4,"E53935","FFEB3B","stripes of bright tulips","rustle","Rows of colour. Rows of charm.","plant,crop"},
 	{"tulip tree","NGDCMI","GWkS",3,1,7,"6D4C41","FFB300","tall tree with tulip-shaped flowers","rustle","Tulips. On a tree. Very tall.","plant,tree"},
 	{"tumble","KMBAKF","kO",2,6,2,"FFCC80","FFFFFF","rolling, bouncing tumble trail","thud","Head over heels. Literally.","silly"},
-	{"tumbleweed","NFBAMF","Ude",2,6,1,"C9A55A","A1887F","dry round ball of twigs rolling","wind","Rolls in dramatically. Every time.","plant,silly"},
+	{"tumbleweed","NFBAMF","UWke",3,6,2,"C9A55A","8A6A3E","dry ball of twigs that grows with every bounce","wind","Rolls in dramatically. Every time. Bigger each time.","nature,plant,silly,desert"},
 	{"tumbleweed storm","NFEFLF","dkP",4,7,2,"C9A55A","A1887F","dozens of tumbleweeds rolling in wind","rustle","The wild west's angriest weather.","plant,silly"},
 	{"tuna","ABDJEC","DfB",5,9,4,"2A3A5A","C8D0D8","torpedo fish, little yellow finlets","splash","Fast, strong, never stops swimming.","fish,aquatic"},
 	{"tuna can","IKAAKK","keO",3,7,6,"C8C8C8","F2C8A8","small round metal can","bonk","A metal puck of protein.","edible"},
@@ -400,7 +403,4 @@ return {
 	{"tzatziki","ICBNGI","JN",2,4,1,"F7F4EC","7DBE3A","white yogurt dip, cucumber flecks","splat","Cool, garlicky dip.","edible,sauce,anti-undead"},
 	{"uakari","AMBJBA","deb",2,7,2,"E83A2A","F2D0B0","bright red bald face","chatter","Face as red as a tomato.","mammal,primate,silly"},
 	{"ube","IMBLGI","SNP",2,3,3,"7A3A9A","C8A0E8","bright purple jam","gloop","Purple, sweet, and everywhere now.","edible,sticky,sweet"},
-	{"udon","IMBLGI","FHN",2,3,3,"F7F0DE","C8A070","thick white noodles in broth","gloop","Noodles as thick as ropes.","edible,sticky"},
-	{"ufo","DLDKHE","AlHegY",6,8,6,"B0BEC5","76FF03","silver disc, glass dome, tractor beam","warble","Take me to your loser.","space,alien"},
-	{"ugali","IMBLGG","USN",2,3,3,"F7F2E0","E8E0D0","white maize dough mound","wobble","A mound of maize goodness.","edible,wobbly"},
 }

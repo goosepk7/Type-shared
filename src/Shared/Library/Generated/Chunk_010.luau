@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flame sword","CACHrK","KfP",7,6,4,"D9480F","FF6A1A","blade wreathed in flames","shing","Smells like toast. Hits like a dragon.","fantasy,flammable,glowing"},
+	{"flame tank","DADMHL","KegP",7,3,9,"4B5320","FF5722","tank with a nozzle spitting fire","fwoosh","Toasty treads.","mechanical,vehicle,land"},
 	{"flame trap","BACLII","KS",5,1,6,"4A4D52","FF6A1A","floor vent bursting with flame","snap","Warm welcome. Very warm.","trap,flammable"},
 	{"flame turret","OACMwI","KeP",6,5,6,"4A4D52","D9480F","squat nozzle tower with fuel tank","hum","Toasty perimeter guaranteed.","defense,flammable"},
 	{"flamethrower","CACFwI","KSeP",7,5,4,"D9480F","6B7B3A","nozzle wand with fuel tanks","whoosh","For when you want it well done.","flammable,ranged"},
@@ -350,7 +352,7 @@ return {
 	{"garden eel","ABAJCC","CdZB",1,6,1,"F2EEE6","3A3A3A","thin eels poking up from sand","splash","Pops up. Pops down. Repeat.","fish,aquatic,silly"},
 	{"garden fork","JGCHuI","CfT",3,5,4,"8A929B","8B5A2B","four-tine digging fork","thud","Digs dirt. Pokes pests.","garden"},
 	{"garden gnome","BEBJNK","Gd",1,1,4,"C0392B","2F6FD1","little bearded statue with pointy hat","clank","Watching. Always watching.","garden,silly"},
-	{"garden hose","JBCFJK","IeN",2,6,3,"2E8B57","F1C40F","coiled hose with spray nozzle","splash","The best part of summer.","garden,summer"},
+	{"garden hose","JBCBJI","IeN",3,6,3,"3E9A44","F2C230","pistol-grip nozzle on a green hose, blasting a jet","splash","Somebody's getting hosed.","household,garden,water,summer"},
 	{"gardener","LGCJNA","WFe",3,4,4,"15803D","92400E","sun hat, gloves, watering can","rustle","Grows walls of hedges in seconds.","plant,outdoor"},
 	{"gardenia","NGBNMI","dFS",2,1,2,"FFFFFF","1B5E20","creamy white waxy bloom","rustle","Smells like a fancy hotel.","plant,flower"},
 	{"gargle","KBAFOB","jd",1,5,1,"81D4FA","FFFFFF","bubbly sound ripple","glurgle","Glurglurglurg.","silly"},
@@ -401,6 +403,4 @@ return {
 	{"geisha","LMCJNA","jc",3,4,3,"F8FAFC","DC2626","white makeup, kimono, paper fan","chime","A fan flick that ends fights.","historical"},
 	{"gelada","AMCJBA","deb",3,7,2,"8A6A4A","D8302A","lion mane, red chest patch","chatter","Grass-eating lion monkey.","mammal,primate"},
 	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
-	{"gelatinous cube","AJDJGF","MHN",5,2,6,"86EFAC","F0FDF4","giant clear cube with stuff floating inside","squelch","A dungeon's cleaning crew.","slime,silly"},
-	{"gelato","ICBAKJ","JeN",3,5,2,"F7E0B0","9CBA6B","dense scoop in tiny cup","squish","Italian ice cream with a flair.","edible,frozen,sweet"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paladin","LHCJNA","GDFf",6,4,8,"E5E7EB","FACC15","shining plate armor, glowing warhammer","clang","Hits hard. Heals harder. Very polite.","holy,warrior"},
+	{"palak paneer","IMBOKI","WF",3,5,3,"3E7A2B","F7F2E0","green curry with cheese cubes","chomp","Spinach strength plus cheese.","edible"},
 	{"paleontologist","LECJNA","Ch",3,5,4,"78350F","FDE68A","dusty vest, chisel, dino bone","clank","Brought back a whole skeleton. Oops.","explorer,science"},
 	{"pallas cat","AMBJAA","ZfT",4,7,3,"A39A8E","6E655A","extremely fluffy, flat face, grumpy stare","hiss","Permanently unimpressed with you.","mammal,predator,wild,silly,cute"},
 	{"palm grove","NGECMI","GFSe",3,1,6,"8D6E63","43A047","cluster of swaying palm trees","rustle","Shade, coconuts, and a lot of bonking.","plant,tree"},
@@ -36,7 +38,7 @@ return {
 	{"pao de queijo","IMAELB","ce",2,7,1,"F2D08A","E8C070","small puffy cheese balls","pitter","Chewy little clouds of cheese.","edible"},
 	{"papaya","IGBAKF","Fke",3,6,2,"F27E3C","5B8A3A","long pear-shape, black seeds inside","splat","Soft, orange, and great for your tummy.","edible,fruit,sweet,tropical"},
 	{"paper","BMAAJK","eV",1,8,1,"F7F3E8","F2F2EE","flat white sheet","tap","Paper cuts are real.","office"},
-	{"paper airplane","BFAADB","ATe",1,8,1,"F7F3E8","F2F2EE","folded paper dart plane","squeak","Folded with love. Thrown with menace.","toy"},
+	{"paper airplane squadron","BFBADB","AQe",3,8,3,"F4EFE2","4F8FD6","three folded paper darts diving in formation","whoosh","Paper cuts, but make it aerial.","household,office,school,toy"},
 	{"paper bark tree","NGDCMI","GWkS",3,1,6,"F5E6CA","7CB342","peeling layers of papery bark","rustle","Bark like old paper.","plant,tree"},
 	{"paper birch tree","NGDCMI","GWkS",3,1,6,"FAFAFA","9CCC65","bright white peeling bark","rustle","Bark you can write on.","plant,tree"},
 	{"paper clip","BMAAJK","Te",1,8,1,"C9CED4","C9CED4","bent wire loop","tap","Holds things together. Barely.","office"},
@@ -288,7 +290,7 @@ return {
 	{"pierogi","IMBAKF","Fce",3,6,2,"F2E2B0","C8803A","half-moon dumpling, crimped edge","splat","Pillowy dumplings with fried onions.","edible"},
 	{"pierogi ruskie","IMBAKF","ke",3,6,2,"F2E2B0","F7F2E0","dumplings with potato and cheese","splat","Potato pillows from Poland.","edible"},
 	{"pig","AMCJAA","Ddf",3,4,4,"F2A8B0","D8808A","round pink body, curly tail, snout","oink","Smarter than your dog. Muddier too.","mammal,farm"},
-	{"pigeon","AMBJDB","dAQ",2,7,1,"8A8E98","6AB09A","plump grey bird, shimmering neck","coo","Rules every city. Fears nothing.","bird,cute,silly"},
+	{"pigeon flock","AMCNDB","AeP",4,6,2,"8A8E98","6AB09A","a flock of plump grey pigeons dive-bombing a line","coo","Rules every city. Fears nothing.","critter,bird,rain"},
 	{"piggy bank","BMBLKJ","c",1,1,3,"F06292","F2F2EE","ceramic pig with coin slot","chime","Smash in case of emergency.","silly,cute"},
 	{"piglet","AMBJAA","df",2,4,4,"F7BCC2","E894A0","tiny pink pig, curly tail","squeal","Squeals at 110 decibels. Tiny though.","mammal,farm,cute"},
 	{"pigs in a blanket","IMAELB","ce",2,7,1,"D9A04A","B0402B","tiny sausages in pastry","pitter","Tiny sausages in tiny sleeping bags.","edible,snack"},
@@ -401,6 +403,4 @@ return {
 	{"pizza party","IMCJII","dFc",5,1,6,"E8B04A","D72B2B","stacked pizza boxes","thud","Free pizza. Everyone comes.","edible,giant,silly"},
 	{"pizza peel","BMCHtK","klf",2,6,3,"C49A6C","8B5A2B","big flat wooden paddle","clang","Scoop. Flip. Fling.","kitchen,household"},
 	{"pizza place","EMCNII","dSc",2,1,5,"E53935","FFC107","shopfront with a leaning pizza sign","ding","Free delivery. Very fast delivery.","structure,building,shop,silly"},
-	{"pizza rolls","IABGKF","KEP",4,6,1,"D9A04A","C8302B","tiny golden pillows","pop","Lava inside every one.","edible,explosive"},
-	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
 	{"boyfriend","LMCJNA","GdQ",3,5,4,"2563EB","F2D0B4","teen with flowers behind his back, nervous grin","aww","Texted back in under a minute. A hero.","silly,cute"},
 	{"boysenberry","IGAELB","eVP",2,7,1,"5E1F3F","8A2B5A","plump dark maroon berry","pitter","A berry with a big name.","edible,fruit,sweet"},
@@ -119,7 +120,7 @@ return {
 	{"bubble wall","EBCCII","GUS",1,1,2,"B3E5FC","F8BBD0","wobbly wall of shiny bubbles","thud","Pop! Pop! Still standing. Mostly.","silly,cute"},
 	{"bubble wave","FBCF6F","UI",3,6,1,"B3E5FC","F8BBD0","rolling surge of bubbles","pop","Boing boing pop.","silly,aquatic"},
 	{"bubble wizard","LBCJNA","Ujl",3,5,3,"BAE6FD","F0ABFC","robe with bubble wand staff","bubble","Traps foes in bubbles. They float away.","magic,silly"},
-	{"bubble wrap","BMCONI","Gd",1,5,2,"BFE6F2","F2F2EE","wrapped in popping plastic","clank","Pop pop pop pop pop.","silly"},
+	{"bubble wrap","BMCINI","Gk",3,5,3,"BFE6F2","FFFFFF","wrapped head to toe in popping plastic","pop","Pop. Pop. Pop-pop-pop-POP.","household,packing"},
 	{"bubblegum ice cream","ICBAKJ","JSN",3,5,2,"F2A6C8","4FA3E8","pink scoop with gum bits","squish","Ice cream with chewy surprises.","edible,frozen,sweet"},
 	{"bucket","BMBLJK","jN",1,5,3,"8A929B","8E9196","metal pail with handle","clank","Over the head. Lights out.","tool"},
 	{"bucket of chicken","IMCJII","dFc",5,1,6,"D72B2B","C8762B","bucket of crispy drumsticks","thud","A whole bucket of crunchy chaos.","edible,giant,silly"},
@@ -402,5 +403,4 @@ return {
 	{"caramel popcorn","IMBGKF","ENP",4,6,1,"D9A04A","F7E8C8","glossy golden popcorn clusters","pop","Sweet, sticky, and still explodes.","edible,explosive,sweet"},
 	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
 	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
-	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 }

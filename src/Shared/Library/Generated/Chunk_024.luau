@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
+	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
 	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
 	{"sky island","MFENIJ","lS",4,1,7,"8BC34A","E3F2FD","grassy rock floating in the sky","rumble","No roads. Just a long way down.","place,terrain,magic"},
 	{"sky pirate","LFCJNB","Aeb",5,7,4,"7F1D1D","60A5FA","pirate with goggles on an airship","arr","Pirates, but higher.","pirate,flying"},
@@ -60,7 +62,7 @@ return {
 	{"sling staff","CMCAzK","ke",3,6,3,"8B5A2B","6B4226","long staff with sling end","shing","Lobs stones over walls.","medieval,ranged"},
 	{"slingshot turret","OMDMxI","Uke",5,4,5,"8B5A2B","6B4226","huge Y-frame with rubber band","clank","Pull back. Let fly. Boing.","defense,mechanical"},
 	{"slingstone","CEAAKK","ke",1,9,3,"8C8C88","8E9196","smooth river stone","shing","Small rock. Big story.","fantasy,sharp"},
-	{"slinky","BKBJKG","Ud",1,4,2,"C9CED4","DDE3E8","coiled walking spring","squeak","Walks downstairs all by itself.","toy"},
+	{"slinky","BKCAKG","Ue",3,4,3,"E8484A","4F8FD6","giant rainbow coil spring flopping end over end","squeak","It walks downstairs all by itself. Onto you.","household,toy"},
 	{"slip","KBBLII","NO",2,6,1,"81D4FA","FFFFFF","shiny slick floor patch","whee","Banana-peel physics, no banana.","silly"},
 	{"slipper lobster","ABBJRA","GfT",2,4,5,"8A6A4A","C8A07A","flat shovel-headed lobster","clack","A lobster that looks like a slipper.","crustacean,aquatic,armored,silly"},
 	{"slippers","BMBONI","dF",1,4,1,"F06292","F2F2EE","fluffy bunny slippers","swish","Comfort is a superpower.","clothing,cute"},
@@ -83,6 +85,7 @@ return {
 	{"slurpee","ICBNGI","JN",3,3,2,"E8434F","4FA3E8","cup of colorful frozen slush","crackle","Brain freeze on demand.","edible,frozen,sweet"},
 	{"slushie machine","OCCM1I","JN",2,2,5,"47D7E8","C0392B","tank of spinning icy drink","clang","Brain freeze, weaponised.","kitchen,household"},
 	{"smack","KMBAKB","kf",3,9,1,"FF8A80","FFFFFF","giant cartoon hand swat","smack","Rude, but effective.","silly"},
+	{"small tornado","HFBN5K","Qkl",4,7,3,"A9BCC8","EEF3F5","knee-high funnel that skitters after you and flings you","whoosh","Small, angry and very spinny.","weather,storm,cute,wind"},
 	{"smartwatch","BDAO1I","c",1,6,2,"24262A","BFE6F2","wrist screen watch","beep","Notifications: you are winning.","tech"},
 	{"smash","KECAKB","kfO",6,7,3,"8D6E63","FFE082","giant fist-shaped impact burst","crash","Big hands. Big crash. Big fun.","heavy"},
 	{"smell","FJCDOJ","jSIP",3,4,1,"A3B18A","D9E76C","wavy green stink lines rising from an old trainer","whiff","Whoever smelt it, dealt it.","gross,silly"},
@@ -400,7 +403,4 @@ return {
 	{"spinning top","BMAGKK","jkf",2,7,4,"C0392B","2F6FD1","pointed spinning toy","squeak","Spins forever. Dizzies everyone.","toy"},
 	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
 	{"spinning wheel","OMCL1I","NO",2,1,4,"8B5A2B","D8CBB5","wooden wheel with spindle","clank","Spins wool. Spins traps.","mechanical,fantasy"},
-	{"spinosaurus","AMEJBA","DkfTHB",8,6,7,"8A4A2A","D8783A","crocodile snout, giant back sail","roar","Swims, fishes, has a sail. Overachiever.","dinosaur,extinct,reptile,predator"},
-	{"spiny lobster","ABBJRA","GfT",3,4,5,"C8701E","F2D0A0","long spiny antennae lobster","clack","Screeches its antennae like a violin.","crustacean,aquatic,armored"},
-	{"spiny mouse","AMAJAA","CdFTb",1,6,1,"8A7A6A","F2E8D8","mouse with spiky back","squeak","Regrows skin like a lizard.","mammal,cute"},
 }

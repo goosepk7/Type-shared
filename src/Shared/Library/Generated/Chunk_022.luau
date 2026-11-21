@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
+	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
 	{"robot vacuum","OMBJKF","QH",2,4,4,"24262A","C9CED4","flat round wandering puck","clank","Bumps into walls. Determined.","robot,silly"},
 	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 	{"robot wizard","OLCJNA","eLY",5,4,6,"6366F1","94A3B8","robot in a pointy hat with antenna wand","zap","Casts spells with a USB wand.","robot,magic,silly"},
@@ -50,7 +52,7 @@ return {
 	{"rodeo queen","LECKNA","DHg",5,8,5,"F472B6","92400E","sparkly cowgirl with lasso on horseback","yeehaw","Lassos anything. Even dragons.","western,mount"},
 	{"roe deer","AMCJAA","Dk",4,8,4,"B8703A","F2F2EE","small deer, short antlers","bark","Small deer, big bark.","mammal,wild"},
 	{"rogue","LICJNA","ZfTb",5,8,3,"1F2937","7C2D12","hooded cloak, twin daggers, lockpicks","whoosh","Already took your wallet. And your shoes.","stealth"},
-	{"rogue wave","FBEF6F","kIO",8,6,5,"0D47A1","E3F2FD","sudden towering dark wave","roar","Came out of nowhere. Very rude.","aquatic"},
+	{"rogue wave","FBDN6F","kI",6,6,2,"1660B8","E3F2FD","a harmless ripple that suddenly rears into a towering wave","roar","Came out of nowhere. Very rude.","nature,water,ocean"},
 	{"rokurokubi","AICJNA","jfH",4,4,4,"F5F5F4","1F2937","woman with stretching noodle neck","giggle","Her neck goes out for snacks at night.","yokai,spooky,silly"},
 	{"roller","JMBFJF","SNP",2,5,3,"F97316","FFFFFF","fluffy paint roller laying down a fat orange stripe","squelch","One coat. Then you. Then a second coat.","tool,art"},
 	{"roller coaster","DMEKHL","Djkg",5,9,6,"E53935","1E88E5","looping track with a train of cars","scream","Scream if you want to go faster.","structure,building,silly"},
@@ -112,7 +114,7 @@ return {
 	{"royal knight","LKCJNA","GDf",6,5,7,"7C3AED","94A3B8","purple-plumed knight with royal shield","clang","Sworn to protect. Sworn to polish.","royal,warrior"},
 	{"royal sword","CHCHrK","FfT",7,6,6,"D4A72C","B0103A","jewelled golden sword","shing","Fit for a king. Hits like one.","royal,sharp"},
 	{"rubber","BMBI3G","GUa",2,6,6,"1F2937","F472B6","stretchy black sheet snapping back like a trampoline","boing","I am rubber. You are glue.","toy,bouncy"},
-	{"rubber band","BMAAJK","eO",1,9,1,"D2B48C","D2B48C","stretchy loop","tap","Snap! Right on the wrist.","office"},
+	{"rubber band","BMBAJK","Ue",3,9,2,"C98A52","E3A86E","a giant stretched rubber band snapping off walls","snap","Thwap. Off the wall. Thwap.","household,office"},
 	{"rubber band ball","BMBG3K","Ue",2,7,3,"D2B48C","C0392B","ball of a thousand bands","tap","Bounces like it's angry.","office"},
 	{"rubber band gun","CMBAwI","eO",1,9,2,"8B5A2B","D2B48C","wooden clothespin pistol","thwip","Snap! Right on the nose.","toy,silly"},
 	{"rubber chicken","CMBHJK","jdf",1,7,2,"F1C40F","C0392B","floppy squawking rubber chicken","boing","BWAAACK. Comedy damage.","silly"},
@@ -401,6 +403,4 @@ return {
 	{"sea holly","NGBNMI","dFST",2,1,3,"5C6BC0","B0BEC5","spiky metallic-blue thistle","rustle","Spiky. Shiny. Salt-proof.","plant,flower"},
 	{"sea kaiju","ABFJCC","kHB",9,5,9,"0C4A6E","22D3EE","whale-sized finned monster rising from sea","roar","Makes a splash. A very big one.","kaiju,aquatic,giant,danger"},
 	{"sea krait","ABCJCD","fMNB",4,6,3,"3A5A8A","F2F2EE","blue-black banded sea snake","hiss","Swims in the sea, naps on land.","reptile,venomous"},
-	{"sea lettuce","NBBLMI","SNB",1,1,2,"76FF03","9CCC65","bright green crinkly sheets","splash","Slippery salad of the sea.","plant,aquatic"},
-	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
 }

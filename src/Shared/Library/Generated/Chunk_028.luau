@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"udon","IMBLGI","FHN",2,3,3,"F7F0DE","C8A070","thick white noodles in broth","gloop","Noodles as thick as ropes.","edible,sticky"},
+	{"ufo","DLDKHE","AlHegY",6,8,6,"B0BEC5","76FF03","silver disc, glass dome, tractor beam","warble","Take me to your loser.","space,alien"},
+	{"ugali","IMBLGG","USN",2,3,3,"F7F2E0","E8E0D0","white maize dough mound","wobble","A mound of maize goodness.","edible,wobbly"},
 	{"ugh","KJBDOJ","jIN",2,5,1,"A3B18A","6B8E23","green disgusted face with tongue out and wavy stink lines","whiff","Ewwwww. Get it away. Get it AWAY.","silly,gross"},
 	{"ugli fruit","IMBAKF","jke",3,6,2,"9AAA3A","F2B05A","wrinkly green-orange citrus","squirt","Ugly outside, juicy inside.","edible,fruit,sour"},
 	{"ugliness","KJCF6B","jIO",3,5,2,"8A9A5B","7C3AED","cracked mirror shockwave with a warty lumpy face","crack","A face only a summoner could love.","silly,gross"},
@@ -295,7 +298,7 @@ return {
 	{"wasabi","IABAKK","KjO",5,7,2,"8DB84A","C8E08A","blob of bright green paste","sizzle","Clears sinuses. And arenas.","edible,spicy,flammable"},
 	{"wash","KBCF6F","FI",2,6,1,"4FC3F7","FFFFFF","soapy bubbly water wave","splash","Squeaky clean, whether you like it or not.","aquatic,silly"},
 	{"washboard","BMBFJI","j",1,5,3,"C9CED4","8B5A2B","ridged metal board","rattle","Scritch-a-scratch rhythm.","music"},
-	{"washing machine","OBCL1I","jVO",3,1,7,"F2F2EE","BFE6F2","front-loading drum washer","thud","Spin cycle: enemy edition.","household"},
+	{"washing machine","OBDN1K","kSH",4,2,5,"EEF1F2","8FD3F0","front-loading washer churning a sudsy whirlpool","splash","Whirr... whirr... SPIN CYCLE.","household,laundry,water"},
 	{"wasp","AJAJLB","AfTMP",2,7,1,"F2D82A","1E1E1E","narrow waist, sleek black-yellow","buzz","Stings repeatedly. Enjoys it.","insect,swarm,venomous"},
 	{"waste","FJCNGI","SMNP",4,2,2,"6B6B2A","3F4A1A","thick brown-green ooze glugging from a pipe","gloop","Do not ask where it came from.","toxic,gross"},
 	{"watch","BKAOKE","QNO",2,6,4,"C0C7CE","1F2937","ticking wristwatch with a spinning second hand","tick","Look at the time. Yours is up.","household,time"},
@@ -400,7 +403,4 @@ return {
 	{"weightlifter","LECJNA","Gkl",6,4,7,"111827","DC2626","tank top, huge muscles, barbell","thud","Do you even lift? He does.","sport,heavy"},
 	{"weimaraner","AMCJAA","DQf",4,8,4,"9A9AA0","D8D8DC","sleek silver-grey dog","bark","The grey ghost. Silver, fast.","mammal,pet"},
 	{"weirdo","LLCJNA","UjY",3,6,3,"A3E635","D946EF","mismatched socks, colander hat, walking a pet rock","boing","Normal is a setting on a washing machine.","silly,meme"},
-	{"weka","AMBJDA","dfb",2,4,2,"8A6A4A","C8A07A","flightless brown rail","cluck","Steals shiny things from campers.","bird,farm"},
-	{"welder","OACBJK","KfO",5,4,5,"2F6FD1","24262A","welding gun with bright arc","buzz","Don't look directly at it.","tool"},
-	{"welding mask","BKBONI","G",1,5,5,"24262A","4A4D52","dark-windowed face shield","clank","Flash? What flash?","armor,defense"},
 }

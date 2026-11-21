@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"summoner","LLCJNA","ehY",5,4,3,"6D28D9","F0ABFC","robes with summoning circle sigils","zap","Doesn't fight. Has friends who do.","magic"},
+	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
+	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
@@ -161,7 +164,7 @@ return {
 	{"taiko drum","BMDFJI","kO",5,3,6,"5A3A1E","9E1B32","huge barrel drum with thick sticks","boom","DON. DON. DON.","music,loud"},
 	{"tail","BMBHCK","Ukf",3,7,3,"B9773A","F5E0C3","fluffy wagging tail swishing side to side","swish","Wags when happy. Whacks when not.","body,cute"},
 	{"tailor","LMCJNA","HN",3,5,4,"7C3AED","FDE68A","measuring tape, pins, giant scissors","snip","Measures you for a straitjacket.","silly"},
-	{"tailwind","FFBOOB","D",2,9,1,"CDE6F0","FFFFFF","streamers pushing from behind","whoosh","The wind is on your side.","air,speed"},
+	{"tailwind","FFCOOB","DkI",3,9,2,"CDE6F0","FFFFFF","a gust scoops you up and blows you forward","whoosh","The wind is on your side. Everyone else, not so much.","weather,air,speed,wind"},
 	{"taipan","AMCJCD","fMN",6,8,3,"A8784A","F2E0B8","sleek brown snake","hiss","Strongest venom of any land snake.","reptile,venomous"},
 	{"taiyaki","IMBAKF","ke",3,6,2,"C8803A","5A2A2A","fish-shaped golden waffle","splat","A fish that swims in red bean.","edible"},
 	{"taj mahal","EHFCII","GFSO",5,1,10,"FFFFFF","E1BEE7","white marble dome with four minarets","rumble","Stunningly beautiful. Stunning, literally.","structure,landmark"},
@@ -201,7 +204,7 @@ return {
 	{"tapas","IMAELB","FeP",2,7,1,"C8302B","E8B860","many small plates","pitter","A dozen little plates of joy.","edible,sweet"},
 	{"tape dispenser","BMALJK","N",1,3,4,"24262A","BFE6F2","weighted tape holder","tap","Rrrrip.","office"},
 	{"tape gun","BMBLwK","NO",1,6,3,"C0392B","C9CED4","pistol grip tape dispenser","tap","Rrrrrip! Wrapped.","office,sticky"},
-	{"tape measure","JKAAJK","He",1,7,3,"F1C40F","24262A","coil case with metal tape","clank","Shoots out. Snaps back. Ouch.","tool,silly"},
+	{"tape measure","JKBHJK","kf",3,8,2,"F4C21B","24262A","yellow case flicking out a long steel tape with a brass hook","snap","Measure twice, whip once.","household,tool,toolbox"},
 	{"tapejara","AMCJDB","DdAT",4,8,4,"6A5A3A","E8401E","giant colorful head sail","screech","Wears a giant colorful sail hat.","pterosaur,extinct,reptile"},
 	{"tapeworm","AMAJTD","CiP",1,3,1,"F2EEE0","E8D8B0","long flat ribbon worm","squelch","Rude houseguest.","bug"},
 	{"tapir","AMCJAA","DkIB",4,4,8,"2A2624","E6E2DC","pig-like, short trunk, black-white saddle","trumpet","Looks like a pig wearing an oreo costume.","mammal,heavy,wild,silly"},
@@ -400,7 +403,4 @@ return {
 	{"thundercloud","GDDDOJ","QeL",6,4,4,"39445C","D6DDE8","anvil-topped dark cloud with flickers","rumble","Follows you. Rains on your parade.","storm,electric"},
 	{"thunderhead","GDEDOJ","QeL",7,3,5,"37474F","FFF59D","towering anvil storm cloud","rumble","A cloud so tall it has a ceiling.","storm,electric"},
 	{"thundersnow","GDDEOJ","JLN",6,5,4,"D8E6F0","FFE37A","snowstorm with flashes of lightning","boom","Snow, but with drum solos.","frozen,electric,storm"},
-	{"thunderstorm","GDEEOJ","SLPO",8,6,4,"2E3A55","FFE57F","towering black clouds spitting lightning","boom","Loud, bright, and very wet.","storm,electric"},
-	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
-	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
 }

@@ -238,6 +238,7 @@ return {
 	{"anglerfish","AICJEC","dcfB",4,6,1,"3A3232","9AE8F0","huge toothy mouth, glowing lure on head","splash","Brings its own lamp to the deep sea.","fish,aquatic,deepsea,spooky"},
 	{"angora rabbit","AMBJAG","UCd",2,6,1,"FFFFFF","F2EEE6","cloud-fluffy rabbit","squeak","A rabbit that's 90% fluff.","mammal,cute"},
 	{"angry cloud","FDCDOJ","QeL",5,4,3,"455A64","FFEB3B","small dark cloud zapping whoever's under it","rumble","A personal grudge, in cloud form.","electric,silly"},
+	{"angry goose","AMCJDA","DQf",4,7,3,"F2EFE6","F28A1E","furious white goose, wings out, honking open beak","honk","Fear it. Respect it. Honk.","critter,bird,summon,silly"},
 	{"angry mob","LADJLA","KDP",5,5,5,"F97316","78350F","crowd with torches and pitchforks","roar","Not happy. Has torches.","historical,swarm"},
 	{"anhanguera","AMDJDB","DAT",6,8,4,"8A7A6A","E8E0D0","crested beak, fish catcher","screech","Fishing pterosaur with crests.","pterosaur,extinct,reptile"},
 	{"anhinga","ABBJDB","DATB",2,7,2,"1E1E1E","C8A07A","snake-neck diving bird","squawk","Swims with only its neck showing.","bird,ocean"},
@@ -366,8 +367,8 @@ return {
 	{"aries","MHCEKJ","Dke",5,5,5,"FFFFFF","E53935","stars in a curly ram shape","rumble","The star ram charges first.","space,zodiac"},
 	{"arm","BMCHJK","kfI",4,6,5,"E8B48A","D29B73","one long swinging arm, flexed bicep","whoosh","Costs an arm. The leg is extra.","body"},
 	{"arm wrestle","KEBAKB","fO",4,4,3,"FFAB91","FFFFFF","two glowing arms locked together","grunt","Who's stronger? You are now.","sport,silly"},
-	{"armadillo","AMBJAF","GUCf",2,5,6,"B8A08E","8A7462","banded armor shell, rolls into ball","squeak","Rolls up. Bounces off things.","mammal,wild"},
 	{"armadillo lizard","AMBJAF","GCf",2,7,2,"C8903A","3A2A1A","spiky lizard biting its tail","hiss","Bites its own tail to roll up.","reptile"},
+	{"armadillo roll","AECOAF","GDk",4,9,5,"B8977A","7A5E48","you curl into a banded armour ball and roll","rumble","Rolls up. Bounces off things.","critter,mammal,movement"},
 	{"armbands","BBBO3C","GUB",2,4,4,"F97316","FDE047","pair of puffy orange inflatable rings on tiny arms","squeak","Unsinkable. Uncool. Unbothered.","aquatic,cute"},
 	{"armchair","BMCC0I","GF",1,1,6,"8B3A3A","F3E6C8","plush chair with big arms","thud","Sit. Relax. Defend.","furniture,household"},
 	{"armor","BKCONI","G",2,3,8,"8A929B","6B4226","full plate suit, empty visor","clank","Tin can chic.","armor,defense"},
@@ -402,5 +403,4 @@ return {
 	{"asado","IABNGI","KSc",4,4,2,"8A2E2E","C8603A","meats roasting over open flame","sizzle","A whole afternoon of grilling.","edible,spicy"},
 	{"asgard","MDFNII","SLh",7,1,10,"FFD54F","80DEEA","golden city on a floating rock","chime","Mighty realm. Mightier welcome.","place,mythical"},
 	{"ash","FABDOJ","jSN",2,3,2,"6E6A66","B8B2AC","drifting grey flakes, dim orange specks","hiss","Fire's leftovers. Gets in your eyes.","fire"},
-	{"ash cloud","HAEDOJ","jSMN",5,3,3,"595350","9E9690","huge grey billowing ash plume","rumble","Turns day into a very grey night.","natural,fire"},
 }

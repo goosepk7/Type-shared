@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
 	{"disco ball","BHCG3K","jca",2,2,3,"C9CED4","A66BDB","spinning mirrored sphere","squeak","Dance fight!","party"},
 	{"disco floor","BHDNII","jd",2,1,5,"A66BDB","3FC1D9","flashing tile floor","beep","Can't stop dancing.","tech"},
 	{"disco ghost","AICJGJ","jdO",3,6,2,"F472B6","22D3EE","ghost in a disco ball sheet","beat","Haunts dance floors. Groovy.","ghost,silly,music"},
@@ -98,6 +99,7 @@ return {
 	{"doubles","IGBOKI","F",2,5,3,"D9A04A","E8A02B","two flatbreads with chickpea curry","crunch","Two breads. Double fun.","edible,healthy"},
 	{"dough ball","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","smooth round dough","wobble","Squishy and full of potential.","edible,wobbly"},
 	{"douglas fir","NGECMI","GWkST",4,1,8,"4E342E","1B5E20","towering dense conifer","rustle","Prime holiday tree. Prime blocker.","plant,tree"},
+	{"dove","AMBJDB","dAQ",2,7,1,"F4F2EE","B8C4D0","plump white bird, soft grey wingtips","coo","Peace, love and the occasional dive.","bird,cute,silly"},
 	{"dove of peace","AHAJDB","dAF",1,7,1,"FFFFFF","E8E8EC","white dove with olive branch","tweet","Brings peace. And crumbs.","bird,cute"},
 	{"dovecote","EMBCII","GdSh",1,1,4,"F5F5F5","8D6E63","round tower full of little nest holes","thud","Releases a cloud of pigeons.","structure,farm"},
 	{"dover creature","AIBJNA","jZ",2,7,2,"FDBA74","F8FAFC","thin pale creature with a huge head","whisper","Big head, glowing eyes, very lost.","cryptid,alien"},
@@ -401,6 +403,4 @@ return {
 	{"emperor penguin","ACCJDA","UDB",3,5,3,"1E1E24","F2B02A","tall penguin, gold neck patch","squawk","Tallest penguin. Handles -60 degrees.","bird,arctic,cute,royal"},
 	{"emperor scorpion","AJBJQA","fMN",3,6,2,"1E1E24","3A4A6A","huge glossy black scorpion","skitter","Big, black, and mostly gentle.","arachnid,spooky,venomous"},
 	{"empire state building","EMFCII","GkSO",7,1,10,"B0BEC5","37474F","art deco skyscraper with a spire","rumble","A whole skyscraper. Delivered.","structure,landmark"},
-	{"empower","KLCOKJ","DW",4,5,4,"FF6D00","FFE57F","glowing muscular outline aura","hum","Power! Unlimited... ish.","support"},
-	{"empress tree","NGDCMI","GWkS",3,1,6,"6D4C41","B39DDB","giant leaves and purple flower spikes","rustle","Grows insanely fast. Royal colours.","plant,tree,royal"},
 }

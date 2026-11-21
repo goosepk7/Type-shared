@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza rolls","IABGKF","KEP",4,6,1,"D9A04A","C8302B","tiny golden pillows","pop","Lava inside every one.","edible,explosive"},
+	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
 	{"pizza shield","IMCIII","Ga",3,3,6,"E8B04A","D72B2B","round pizza strapped to arm","thud","Cheese-forward defense.","edible"},
 	{"pizza slice","IMBAKK","cTe",3,7,2,"E8B04A","D72B2B","triangle slice, cheese stretch","whoosh","A triangle of hope.","edible"},
 	{"placoderm","ABCJEC","GDfB",4,7,4,"6A6A6A","B8B0A0","armored ancient fish","splash","Armored fish. Bony and proud.","fish,aquatic,extinct,ancient"},
@@ -82,7 +84,7 @@ return {
 	{"plumber","LBCJNA","UH",4,6,5,"DC2626","1E3A8A","overalls, cap, plunger, big moustache","splash","Unclogs pipes. Jumps on things.","silly"},
 	{"plumbing","EBCMII","IeN",4,1,5,"B87333","38BDF8","tangle of copper pipes with one joint spraying water","gurgle","The plumber said Tuesday. Which Tuesday? Unknown.","household"},
 	{"plumeria","NGBNMI","dFSc",2,1,2,"FFFFFF","FFEB3B","waxy five-petal tropical star","rustle","Smells like a beach holiday.","plant,flower"},
-	{"plunger","BMBHJK","fHO",1,6,3,"C0392B","7A4E2D","rubber cup on wooden stick","clank","Shloop. Stuck.","silly,bathroom"},
+	{"plunger","JMBAJK","He",3,7,3,"C8282E","C68A4E","red rubber cup on a wooden handle, fired on a rope","pop","THWOP. Come here, you.","household,bathroom,tool"},
 	{"plunger arrow","CMAAJI","deO",1,8,2,"C0392B","24262A","arrow with a toilet plunger tip","twang","Thwock. Stuck.","medieval,ranged,silly"},
 	{"pluot","IGBAKF","Fke",3,6,2,"8A2A4E","E8762B","speckled plum-apricot","splat","Half plum, half apricot, all juice.","edible,fruit,sweet"},
 	{"plus","KHBOKJ","WFV",3,5,2,"22C55E","FFFFFF","chunky green plus sign with a +1 popping out","ding","One more. And one more. And one more.","school,support"},
@@ -205,7 +207,7 @@ return {
 	{"porcelain crab","ABBJRA","GfTV",2,4,5,"E8C8C8","C8A0A0","flat fan-feeding crab","clack","Breaks its own claws to escape.","crustacean,aquatic,armored"},
 	{"porch","EMCMII","GeN",3,1,6,"F5F5F0","22C55E","wooden steps, rocking chair and a swinging lantern","creak","Get off my lawn. From the comfort of my chair.","household,building"},
 	{"porcini","NGBLMI","FS",2,1,4,"8D6E63","F5E6CA","fat brown cap on a chunky stem","poof","Chunky. Tasty. Kingly.","plant,fungus,edible"},
-	{"porcupine","AMBJAA","GCTe",3,6,5,"5E5248","E8E0D4","covered in quills, raised spikes","squeak","Do not hug. Seriously.","mammal,cute"},
+	{"porcupine quills","AMBAAI","TeP",4,7,3,"6A5646","F0E4CC","curled porcupine firing rings of quills all round","rattle","Do not hug. Seriously.","critter,mammal,nova"},
 	{"porcupinefish","ABBJEC","dWTB",3,6,1,"C8B88A","4A3A2A","spiky round puffed fish","splash","Pufferfish with extra spikes.","fish,aquatic"},
 	{"pork belly","IMBAKK","kce",3,5,3,"E8A0A0","C8603A","layered fat-lean slab","thud","Crispy skin, tender layers.","edible,savory"},
 	{"pork chop","IMBAKK","kce",3,5,3,"D88A6A","F2E8D8","thick chop with bone edge","thud","A meaty chunk with a bone grip.","edible,savory"},
@@ -401,6 +403,4 @@ return {
 	{"puppy","AMBJAA","dQf",1,6,2,"D9A56B","FFF1DE","oversized paws, floppy ears, wiggle butt","yip","Chews everything. Forgiven instantly.","mammal,pet,cute"},
 	{"puppy eyes","KHAAKB","cO",1,7,1,"8D6E63","B3E5FC","huge sparkly pleading eyes","aww","Nobody can say no to these.","cute,silly"},
 	{"pupusa","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","thick stuffed corn cake","whoosh","A stuffed tortilla pillow.","edible"},
-	{"purify","KHCFOB","KF",3,6,2,"FFFFFF","B2EBF2","pure white wave washing outward","chime","Squeaky clean. Evil included.","holy,support"},
-	{"purple carrot","IEBAJK","FTe",3,6,4,"5E1A4E","ED9121","purple-skinned carrot","crunch","A carrot in royal colours.","edible,vegetable,healthy"},
 }
