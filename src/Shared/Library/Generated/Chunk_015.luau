@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"kun peng","ABFJEB","AkB",9,5,9,"1E3A8A","F8FAFC","enormous fish that becomes a giant bird","whoosh","A fish so big it became a bird.","mythical,giant,danger"},
+	{"kunai","CKAArK","Te",3,9,2,"3A3F45","24262A","leaf blade, ring pommel","shing","A ninja's do-everything pointy friend.","medieval,sharp,ninja"},
+	{"kung pao chicken","IABAKK","KP",5,7,2,"C8402B","C8904A","chicken, peanuts, dried chilies","sizzle","Peanuts and chilies, flying everywhere.","edible,spicy,flammable"},
+	{"kunoichi","LICJNA","jZT",5,9,3,"312E81","F472B6","violet ninja garb, smoke bombs","whoosh","Disappears in a puff. Rude.","stealth,martial"},
+	{"kusarigama","CKCHJI","fHe",4,8,3,"8A929B","24262A","sickle tied to a weighted chain","twang","Sickle and chain, a ninja duet.","ninja"},
+	{"l","KIBAJK","XNO",4,7,1,"DC2626","6B7280","giant red letter L thrown like a boomerang","groan","Hold this. It is heavy. It is an L.","meme,gaming"},
 	{"la llorona","ABCJNJ","jAc",5,5,3,"E2E8F0","1E3A8A","weeping ghost in white by the river","wail","Cries so much the river overflows.","ghost,spooky"},
 	{"lab coat","BMCONI","F",1,5,2,"F2F2EE","8E9196","long white coat with pockets","swish","Science is happening.","clothing,science"},
 	{"lab flask","BJAA2I","MeV",2,6,1,"BFE6F2","A66BDB","cone flask fizzing purple","bubble","Bubbling, glowing, throwable.","science"},
@@ -397,10 +403,4 @@ return {
 	{"log bridge","EGCCII","GSN",1,1,4,"8D6E63","7CB342","single fallen tree across a gap","thud","One wrong step and splash.","structure"},
 	{"log flume","DBCKHC","DIg",3,7,4,"8D6E63","4FC3F7","hollow log boat on a water chute","splash","The big drop! Everyone gets soaked.","vehicle,silly"},
 	{"log fort","EGEMII","GSe",4,1,7,"8D6E63","5D4037","square log stockade with watch posts","thud","Built from a whole forest.","structure,defense,flammable"},
-	{"log splitter","JKCL1I","kV",5,1,7,"C0392B","8A929B","hydraulic wedge on a frame","clank","Splits logs. And opinions.","tool"},
-	{"log swap","NGBIMI","ZY",3,9,4,"8B5A2B","D9B38C","you poof into a log and appear somewhere else","poof","Nice hit. On a log.","anime,ninja"},
-	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
-	{"log wall","EGDCII","GST",3,1,6,"8D6E63","5D4037","row of sharpened upright logs","thud","Pointy end goes up. Usually.","sharp,flammable"},
-	{"loggerhead","ABCJUC","GNB",3,2,8,"B8703A","E8C08A","big headed sea turtle","hiss","Big head. Crunches crabs.","reptile,armored"},
-	{"loki","LLCJZA","jZVbY",7,8,5,"166534","D4AF37","grinning red-haired trickster, fur cloak, flickering copies","cackle","It was not him. It is never him. It was him.","mythical,norse,trickster"},
 }

@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot dog","OKBJAA","DQf",3,7,5,"CBD5E1","3B82F6","four-legged metal pup with LED tail","bark","Never sheds. Occasionally reboots.","robot,cute,canine"},
+	{"robot dragon hatchling","AKAJAB","KA",2,6,4,"94A3B8","22D3EE","tiny chrome dragon with blinking eyes","beep","Beeps fire.","robot,cute,reptile"},
+	{"robot factory","EKENII","GSh",5,1,8,"607D8B","FFB300","conveyor belts and robot arms","hum","Spits out robots. Endlessly.","robot,mechanical"},
+	{"robot ghost","ODCJGJ","ZLY",4,7,2,"22D3EE","0F172A","flickering digital ghost made of code","zap","Haunts your screens.","robot,ghost"},
+	{"robot gorilla","OKDJNA","klf",7,5,8,"1F2937","22D3EE","giant chrome gorilla, piston fists","roar","Pounds its chest. Clang clang.","robot,heavy"},
+	{"robot horse","OKDKAA","Dg",5,9,7,"94A3B8","0EA5E9","chrome horse with piston legs","neigh","Never tired. Needs oil.","robot,mount"},
+	{"robot janitor","OKCJNF","IN",3,4,5,"1E3A8A","FACC15","mop-armed robot with bucket body","whir","Cleans up. Including you.","robot,silly"},
+	{"robot jellyfish","OKBJGJ","AL",3,4,3,"E5E7EB","22D3EE","chrome dome with dangling cable tentacles","zap","Floats. Zaps. Recharges.","robot,aquatic"},
 	{"robot king","OKDJNA","Geh",7,3,8,"CA8A04","1F2937","golden robot on a server throne","clank","Rules with an iron fist. Literally iron.","robot,royal,boss"},
 	{"robot knight","OKCJNA","GDf",6,5,8,"94A3B8","1D4ED8","chrome knight with energy lance","clank","Shining armor. Literally.","robot,warrior"},
 	{"robot maker kid","LKBJNA","dh",2,5,3,"F97316","22D3EE","kid with goggles and a tiny robot","clank","Built a robot friend. It's loyal.","science,cute"},
@@ -395,12 +403,4 @@ return {
 	{"screw pine","NGCCMI","GWkS",3,1,6,"8D6E63","7CB342","spiral leaves on stilt roots","rustle","Stands on stilts. Spins its leaves.","plant,tree"},
 	{"screwdriver","JKAAJK","fT",2,7,4,"F1C40F","8A929B","long shaft, chunky grip","clank","Righty tighty, lefty ouchy.","tool"},
 	{"scribe","LLCJNA","Gh",3,3,3,"78350F","F8FAFC","quill, scroll, candle","scratch","Writes your defeat in pretty letters.","historical"},
-	{"scroll","BLAAJK","eh",3,6,1,"E8D9B0","9E1B32","rolled parchment with seal","tap","Read aloud. Stand back.","magic,fantasy"},
-	{"scrub brush","BMAHJK","Ff",1,6,3,"8B5A2B","F1C40F","wooden block with bristles","clank","Scrub-a-dub-dub.","cleaning"},
-	{"scuba diver","LBCJNC","TeB",4,5,5,"111827","FACC15","wetsuit, mask, flippers, air tank","bubble","Breathes underwater. Brought a harpoon.","aquatic"},
-	{"scuba tank","BBCO2I","B",1,4,4,"F1C40F","24262A","tank with mask and hose","clank","Breathe underwater. For real.","armor,defense"},
-	{"sculpin","ABAJEC","dB",1,6,1,"8A6A4A","C8A07A","spiny big-headed fish","splash","Big head, spines, attitude.","fish,aquatic"},
-	{"sculptor","LECJNA","GO",3,3,5,"D6D3D1","78716C","chisel, mallet, marble dust","clang","Turns enemies to statues. Artistically.","art"},
-	{"scutigera","AMAJTA","CP",1,9,1,"C8B08A","6A5A44","many long legs, zooms","squelch","Runs at you. You run away.","bug"},
-	{"scutum","BKDIyI","GI",3,3,8,"9E1B32","D4A72C","curved red rectangle shield","clang","Lock them together. Become a turtle.","armor,defense,ancient"},
 }

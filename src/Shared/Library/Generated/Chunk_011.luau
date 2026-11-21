@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
+	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
 	{"gazebo","EMCCII","GS",2,1,4,"F5F5F5","7CB342","eight-sided open hut with pointed roof","thud","Nice spot for a picnic. And a siege.","structure,building,cute"},
 	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
 	{"gazpacho","ICBOGI","JF",3,4,3,"C8302B","7DBE3A","cold red soup bowl","slurp","Cold soup. Hot debate.","edible,warm,healthy"},
@@ -401,6 +403,4 @@ return {
 	{"graupel","GCBEOJ","UN",2,5,1,"F1F6F9","C7D9E4","tiny foam-like snow pellets","patter","Snow that went to the gym.","frozen"},
 	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
 	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
-	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
-	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
 }

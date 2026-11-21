@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spike","CKBLII","STO",4,1,7,"9CA3AF","4B5563","row of sharp steel cones popping up from a floor plate","shing","Every platformer's favourite surprise.","trap,sharp,gaming"},
+	{"spike bomb","CACGKF","ETV",7,4,2,"3A3F45","E67E22","bomb studded with spikes","boom","Explodes. Then pokes.","explosive"},
+	{"spike chain","EKCL3K","kSR",6,6,7,"3A3D45","C9CED6","spiked iron ball on a chain sweeping round a post","whoosh","Mind the swing.","game,platformer,hazard"},
+	{"spike corridor","MKCLII","STN",5,1,7,"616161","9E9E9E","stone hall with spikes in walls","echo","Run. Dodge. Run some more.","place,adventure,sharp"},
+	{"spike launcher","OKCMwI","TeV",5,6,5,"3A3F45","8A929B","turret spraying metal spikes","clank","A porcupine with a grudge.","defense,mechanical"},
+	{"spike pit","EECLII","ZSTO",5,1,6,"5D4037","9E9E9E","hidden hole lined with sharp stakes","thud","Mind the gap. Mind the pointy bits.","structure,defense,sharp"},
+	{"spike roller","OKDL1F","DkT",6,4,7,"3A3F45","5B6168","spiked log rolling down a ramp","clank","Rolls in. Pokes everyone.","defense,mechanical"},
+	{"spike strip","BKDLII","TN",4,1,5,"3A3F45","F1C40F","long strip of road spikes","snap","Pop goes every tyre.","trap,defense"},
 	{"spike trap","BKCLII","TN",5,1,6,"3A3F45","8A929B","plate of sharp metal spikes","snap","Step here. Regret here.","trap,defense"},
 	{"spike wall","EKDCII","GSfT",5,1,8,"6D6D6D","B0BEC5","stone wall bristling with iron spikes","thud","Hugging is strongly discouraged.","structure,defense,sharp"},
 	{"spiked barricade","EECCII","GST",4,1,6,"6D4C41","9E9E9E","log frame bristling with sharpened stakes","thud","Run into it. We dare you.","structure,defense,sharp"},
@@ -395,12 +403,4 @@ return {
 	{"subscribe","KHBOKJ","QOh",3,6,2,"EF4444","FFFFFF","red SUBSCRIBE button with a ringing bell","ding","Hit the bell. The bell hits back.","meme,internet"},
 	{"substation","EDCNII","SL",4,1,7,"9E9E9E","FFEB3B","fenced yard of humming transformers","hum","Buzzes angrily. Shocks angrily.","structure,mechanical"},
 	{"substitute teacher","LMCJNA","jd",3,4,3,"78350F","F8FAFC","confused face, attendance list","ding","Has no idea what's going on. Same.","school,silly"},
-	{"suburb","MMENII","jSh",2,1,7,"7CB342","F5E6CA","rows of identical houses and lawns","crowd","Every house looks the same. Confusing.","place,silly"},
-	{"subway train","DMEKHL","CDkg",6,7,8,"B0B7BF","1C5CAB","long silver carriages, sliding doors","engine","Mind the gap. Mind the train.","mechanical,vehicle,land"},
-	{"success","KHCOKJ","WFk",4,6,3,"22C55E","FACC15","green tick in a gold burst with a tiny fist pump","fanfare","Nailed it. First try. No one saw the others.","gaming,support"},
-	{"succulent","NGAOMI","GF",1,1,5,"80CBC4","F8BBD0","chubby rosette of plump leaves","thud","Tiny, chubby, unkillable.","plant,desert,cute"},
-	{"suchomimus","AMDJBA","DkfTB",6,6,7,"7A6A4A","D8B88A","croc-mimic snout, low sail","roar","Pretends to be a crocodile. Badly.","dinosaur,extinct,reptile,predator"},
-	{"suction cup","BMALKI","HO",1,1,2,"C0392B","BFE6F2","rubber suction cup","thud","Thwock. Stuck.","object"},
-	{"sudoku","BLBLnI","jNO",3,1,3,"F8FAFC","111827","nine-by-nine number grid with one square rubbed raw","scratch","There are two sevens in that row. Start again.","game"},
-	{"suds","FBCNOI","UjNP",2,3,1,"FFFFFF","BAE6FD","overflowing mound of white bubbles hiding everything","bubble","Put in too much soap. Way too much.","household,slippery"},
 }

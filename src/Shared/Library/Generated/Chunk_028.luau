@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"turntable","BMCFJI","jO",2,2,4,"24262A","C9CED4","spinning deck with tonearm","scratch","Drop the beat. Drop the foes.","music"},
+	{"turret","OKCMwI","Te",5,7,6,"2C3539","6B7B3A","swivelling twin-barrel tripod gun","hum","Never sleeps. Never blinks.","defense,mechanical"},
+	{"turtle","AMBJUA","GNB",2,2,8,"5A7A3A","C8B87A","domed shell, stubby legs","hiss","Carries its house everywhere.","reptile,armored"},
+	{"turtle tank","DEDMHL","Geag",5,2,10,"43A047","8D6E63","tank under a giant turtle shell","engine","Slow. Steady. Untouchable.","vehicle,silly"},
+	{"turtle warrior","ABCJAA","GkB",4,3,8,"15803D","A16207","turtle with shell shield and bo staff","thud","Slow. Steady. Unbreakable.","warrior"},
+	{"tusk","BMCHuB","DkT",5,5,6,"F5ECD7","D8C7A0","long curved ivory tusk, pointed tip","thud","Pointy end first. Always.","body,sharp,wild"},
+	{"tutu","BMBONI","Dd",1,7,1,"F06292","F2F2EE","frilly ballet skirt","swish","Pirouette of doom.","clothing,silly"},
+	{"tuxedo","BMCONI","d",1,5,2,"24262A","F2F2EE","sharp black suit with bow tie","swish","Dressed to impress and/or defeat.","clothing,fancy"},
 	{"tuxedo cat","AMBJAA","dfT",2,7,2,"1E1E1E","FFFFFF","black cat with white chest","meow","Always dressed for a gala.","mammal,pet,cute"},
 	{"tv dinner","IGBOKI","F",2,5,3,"C8C8C8","C8762B","foil tray with compartments","crunch","Dinner in thirty seconds of beeping.","edible,healthy"},
 	{"tweezers","JKAHJK","fH",1,7,2,"C9CED4","DDE3E8","tiny pointed pincers","clank","Precision yoinking.","tool"},
@@ -395,12 +403,4 @@ return {
 	{"waxy monkey frog","AMAJAA","Ue",1,5,1,"6AC84A","F2F2EE","walks instead of hops","croak","Rubs on wax sunscreen. Walks.","amphibian,wetland"},
 	{"weaken","KIBAKB","iXN",3,7,1,"9E9E9E","FFFFFF","downward arrows over target","wub","Nerfed. Sorry not sorry.","silly"},
 	{"weakness","KIBOKE","iXN",3,6,1,"A78BFA","F87171","glowing red target spot blinking on a cracked armour plate","beep","Hit the glowing bit. It is always the glowing bit.","gaming"},
-	{"wealth","LHCJNA","Gceh",4,3,5,"15803D","FACC15","top-hatted tycoon diving into a pile of gold coins","jingle","Throws money at problems. It works. Annoyingly.","shiny,silly"},
-	{"weapon","CKCELB","kTeP",6,6,5,"8A929B","6B4226","falling rack of swords, axes, maces and a rubber chicken","clang","Which weapon? All of them. At once.","sharp,medieval"},
-	{"weasel","AMBJAA","CjfT",3,8,2,"8A5A30","F2E6CC","long slim body, short legs, white belly","chatter","Pop goes the weasel.","mammal,predator"},
-	{"weather","GFCNOI","jP",3,5,3,"90CAF9","FFF59D","rapidly switching sun, rain and snow","whoosh","Unpredictable, as always.","storm"},
-	{"weather machine","OFDN1I","jPh",6,2,5,"F2F2EE","87CEEB","dish tower ringed by tiny clouds","hum","Forecast: whatever you want.","scifi"},
-	{"weather reporter","LFCJNA","jh",3,4,3,"0EA5E9","FDE68A","pointer, map, umbrella","whoosh","Forecast: you, getting rained on.","silly,storm"},
-	{"weather vane","EFBCII","GdS",1,1,4,"37474F","FFB300","metal rooster on a spinning arrow","thud","Points where the wind blows.","structure"},
-	{"weaver bird","AMAJDB","GdA",1,7,1,"F2D02A","2A2A1E","yellow bird hanging from woven nest","tweet","Knits its own house.","bird,cute"},
 }

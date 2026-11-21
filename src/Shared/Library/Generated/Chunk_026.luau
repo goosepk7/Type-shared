@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"suburb","MMENII","jSh",2,1,7,"7CB342","F5E6CA","rows of identical houses and lawns","crowd","Every house looks the same. Confusing.","place,silly"},
+	{"subway train","DMEKHL","CDkg",6,7,8,"B0B7BF","1C5CAB","long silver carriages, sliding doors","engine","Mind the gap. Mind the train.","mechanical,vehicle,land"},
+	{"success","KHCOKJ","WFk",4,6,3,"22C55E","FACC15","green tick in a gold burst with a tiny fist pump","fanfare","Nailed it. First try. No one saw the others.","gaming,support"},
+	{"succulent","NGAOMI","GF",1,1,5,"80CBC4","F8BBD0","chubby rosette of plump leaves","thud","Tiny, chubby, unkillable.","plant,desert,cute"},
+	{"suchomimus","AMDJBA","DkfTB",6,6,7,"7A6A4A","D8B88A","croc-mimic snout, low sail","roar","Pretends to be a crocodile. Badly.","dinosaur,extinct,reptile,predator"},
+	{"suction cup","BMALKI","HO",1,1,2,"C0392B","BFE6F2","rubber suction cup","thud","Thwock. Stuck.","object"},
+	{"sudoku","BLBLnI","jNO",3,1,3,"F8FAFC","111827","nine-by-nine number grid with one square rubbed raw","scratch","There are two sevens in that row. Start again.","game"},
+	{"suds","FBCNOI","UjNP",2,3,1,"FFFFFF","BAE6FD","overflowing mound of white bubbles hiding everything","bubble","Put in too much soap. Way too much.","household,slippery"},
 	{"sugar","IMBOKI","Dc",3,9,2,"F7F7F7","E8E8E8","white sparkly crystal pile","fizz","Sweet crystals of pure energy.","edible,drink"},
 	{"sugar cookie","IMBAKK","Uke",3,7,2,"F2E8C8","F2A6C8","flat round iced cookie","whoosh","A sweet blank canvas.","edible"},
 	{"sugar crash","KMBAKB","iN",3,6,1,"F8BBD0","9E9E9E","wilting candy-coloured slump glow","womp","Too much candy. Now sleepy.","silly"},
@@ -395,12 +403,4 @@ return {
 	{"thud","KEBAKB","O",3,6,2,"8D6E63","FFFFFF","heavy dust puff landing","thud","Thud. Something heavy arrived.","silly,heavy"},
 	{"thumb","BMBOKE","UFk",3,5,4,"E8B48A","FFD166","giant thumbs-up with a sparkle","ding","Certified approved. Now squish.","body,silly,support"},
 	{"thumb war","KMAAKB","dO",1,8,1,"FFCC80","FFFFFF","tiny glowing thumbs wrestling","boing","One two three four, I declare a thumb war.","silly"},
-	{"thumbnail","BHAIyE","Gdc",1,5,2,"FACC15","EF4444","small bright rectangle with huge shocked face and arrows","pop","Bigger mouth means more views. Science.","internet,meme"},
-	{"thumbprint cookie","IMBAKK","Uke",3,7,2,"E8C88A","B0203E","cookie with jam dot center","whoosh","A cookie with a jammy fingerprint.","edible,dessert"},
-	{"thumbtack","BMALJK","TN",1,1,1,"C0392B","C9CED4","tiny pin with round head","tap","Don't step barefoot.","office"},
-	{"thump","KMBAKB","kO",3,7,2,"8D6E63","FFE0B2","dull heavy shockring","thump","Thump. Ow.","heavy"},
-	{"thunder","FDDFOB","kO",5,9,2,"4B4E6D","C7CEFF","visible sound ring, purple-grey shock rim","boom","Loud enough to rattle your teeth.","electric,loud"},
-	{"thunder and lightning","FDEEOJ","kLO",8,8,2,"FFEB3B","3949AB","bolts and booming rings from above","boom","Very, very frightening.","electric,storm"},
-	{"thunder bear","ADDJAA","kfL",7,5,7,"1E3A8A","FDE047","bear with crackling blue fur","thunder","Hibernates in thunderclouds.","storm"},
-	{"thunder bloom","NDBLMI","SLP",4,1,2,"FFEB3B","7C4DFF","crackling electric petals","chime","Zap! It bloomed.","plant,magic,mythical"},
 }

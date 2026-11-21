@@ -390,7 +390,9 @@ return {
 	{"capuchin","AMBJBA","deb",2,7,2,"3A2A20","F2E6CC","cream face, dark cap","chatter","Washes food. Fancy little monkey.","mammal,primate"},
 	{"capybara","AMCJAA","dFB",3,6,1,"9A6E44","C8A07A","barrel rodent, square head, chill face","squeak","Everyone's friend. Even crocodiles'.","mammal,cute,meme"},
 	{"car","DMCKHL","Dkg",5,7,6,"C8102E","2B2D33","boxy body, four wheels, round headlights","engine","Beep beep. Get out of the lane.","mechanical,vehicle,land"},
+	{"car alarm","OFDMGI","kSI",3,3,3,"F28A2E","F5C21B","a parked car flashing and blaring its alarm in waves","beep","Nobody ever checks.","transit,sound,silly"},
 	{"car battery","BDBL2K","L",3,1,5,"24262A","C0392B","boxy battery with clamps","clang","Bzzzt. Jump start.","urban"},
+	{"car crusher","OKENGI","EO",4,2,5,"6B6F76","F5C21B","two junkyard crusher plates slamming together on a marked sp","crunch","Compact cars, now even more compact.","transit,area,silly"},
 	{"car pile up","DMECHL","GSO",5,1,7,"E53935","9E9E9E","tangled heap of crashed cars","engine","Instant barricade.","vehicle,mechanical,silly"},
 	{"car transporter","DMEKHL","Dkgh",6,4,8,"E53935","B0BEC5","double-deck trailer stacked with cars","engine","Delivers eight cars at once. Into you.","mechanical,vehicle,land"},
 	{"car wall","EKDCII","GS",3,1,7,"795548","9E9E9E","rusty stacked cars","thud","Recycling, but violent.","structure,defense"},
@@ -401,6 +403,4 @@ return {
 	{"caracara","AMCJDB","DAfT",5,9,3,"2A2420","E8702A","orange face, black cap","screech","Walks around like it owns the place.","bird,predator"},
 	{"caramel","IMBLGI","ScN",2,3,3,"C68E3A","E8B860","glossy golden drizzle","gloop","Sticky gold. Wonderful and dangerous.","edible,sticky,candy,sweet"},
 	{"caramel apple","IMBLGI","ScNP",2,3,3,"B5651D","C8262B","apple on a stick, glossy caramel shell","gloop","Sticky, crunchy, impossible to eat politely.","edible,sticky,sweet"},
-	{"caramel chews","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","wrapped golden squares","gloop","Chewy squares. Teeth trap.","edible,sticky,candy"},
-	{"caramel corn","IMBGKF","EN",4,6,1,"C68E3A","F2D08A","golden clumps of popcorn","pop","Crunch, stick, repeat.","edible,explosive,candy"},
 }
