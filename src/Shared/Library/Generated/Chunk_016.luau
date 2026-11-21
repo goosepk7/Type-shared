@@ -312,8 +312,7 @@ return {
 	{"meat platter","IMCJII","Gdc",5,1,6,"B0302B","F2C24A","board of meats and cheeses","thud","A board full of tempting bites.","edible,giant,silly"},
 	{"meat skewer","IMBHJI","fT",3,5,4,"8A3A1E","C8C8C8","chunks of meat on a stick","bonk","Food on a sword. Efficient.","edible,silly"},
 	{"meat tenderizer","BMBHtK","kfO",3,6,5,"8A929B","C9CED4","spiky-faced kitchen hammer","clang","Tenderises everything.","kitchen,household"},
-	{"meatball","IMBGKF","DkI",3,5,6,"7A3A2A","5A2416","round browned ball in sauce","rumble","A meaty cannonball.","edible,heavy,savory"},
-	{"meatball rain","IMEELB","kcVP",7,2,7,"7A3A2A","B0202E","meatballs falling from clouds","thud","Cloudy with a chance of meatballs.","edible,giant,silly"},
+	{"meatball mortar","IECG3F","UEe",5,5,3,"7A3A22","D8382A","three big saucy meatballs lobbed high that bounce once","splat","Mamma mia, incoming.","kitchen,savory,lob,explosive"},
 	{"meatball sub","IMBHJI","kcf",3,5,4,"D9A04A","7A3A2A","long roll with meatballs","bonk","Meatballs in a bread canoe.","edible,silly"},
 	{"meatloaf","IMBAKK","keO",4,7,6,"7A3A2A","C82B2B","brick loaf with ketchup glaze","bonk","A brick of meat. Literally.","edible"},
 	{"mech pilot suit","OKDJNA","klf",6,5,7,"334155","FACC15","open-frame power loader with big claws","clank","Lifts cars. Struggles with stairs.","robot,mechanical"},
@@ -403,4 +402,5 @@ return {
 	{"meteor shower","HAEEOB","KEkeP",8,8,5,"6D4C41","FFB300","many fiery streaks raining from a dark sky","roar","Make a wish. Then dodge.","space,explosive"},
 	{"meteor strike","HADAKB","KEkO",8,8,6,"5D4037","FF7043","single blazing rock slamming into a target ring","boom","Marked target. Incoming rock.","space,explosive"},
 	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
+	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 }

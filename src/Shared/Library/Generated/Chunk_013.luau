@@ -169,7 +169,7 @@ return {
 	{"hot potato","IABAKK","UKEe",4,7,2,"B79257","F2862B","steaming potato, wavy heat lines","sizzle","Hot! Hot! Pass it on before it pops!","edible,silly"},
 	{"hot rod","DACKHL","KDkg",5,9,5,"1A1A1A","FF5722","exposed chrome engine, flame decals","rev","Flames painted on. Flames coming out too.","mechanical,vehicle,land"},
 	{"hot sauce","IABAKK","KSeP",5,7,2,"D8202B","F2862B","tall bottle, red sauce, flame label","sizzle","A few drops. Then a lot of screaming.","edible,spicy,flammable,sauce"},
-	{"hot sauce volcano","IADNII","KESP",6,7,2,"D8202B","F2862B","mound erupting red sauce","sizzle","The spiciest eruption ever.","edible,spicy,flammable,silly"},
+	{"hot sauce geyser","IACN6I","KEl",5,5,2,"E2371E","FFB13B","bubbling red puddle that erupts in a column of hot sauce","sizzle","Scoville goes up. So do you.","kitchen,spicy,launch,zone"},
 	{"hot spring","MBCNII","FS",2,1,5,"80DEEA","F5F5F5","steaming turquoise pool among rocks","bubble","Warm. Relaxing. Heals everything.","place,terrain"},
 	{"hot tub","BBCN2I","FScN",3,1,6,"38BDF8","A16207","round wooden tub of bubbling steamy water","bubble","Too relaxed to fight. That is the trap.","household,warm"},
 	{"hotel","EMECII","GFS",3,1,8,"F5E6CA","1565C0","tall building with rows of balconies","thud","Check-in time. No check-out.","structure,building"},

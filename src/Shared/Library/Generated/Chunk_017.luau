@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"metronome","BLDNII","SIN",5,4,7,"B8862E","5CE1E6","giant brass metronome; the ground pulses every beat","tick","Everyone moves at my tempo now.","music,control,zone"},
 	{"mexican free-tailed bat","AMBJDB","jiAPh",2,9,1,"6A5A4A","B8A08A","fast bat with free tail","screech","Flies in clouds of millions.","mammal,nocturnal,spooky"},
 	{"meyer lemon","IMBAKF","jke",3,6,2,"F7D84A","F2E8A0","round deep-yellow lemon","squirt","A lemon that's sweeter than most.","edible,fruit,sour"},
 	{"miasma","FJDDOJ","SMNP",5,3,3,"5D7A3A","A3B86C","thick yellow-green rotten haze","hiss","Smells like a dungeon basement.","toxic"},
@@ -403,4 +402,5 @@ return {
 	{"nahual","ALCJAA","DjY",5,7,4,"7C2D12","FACC15","jaguar shapeshifter with glowing markings","growl","A jaguar on Tuesdays. Your neighbor otherwise.","mythical"},
 	{"nail","BKAAJK","Te",1,9,2,"8A929B","8E9196","thin pointed metal spike","clink","Hit it on the head.","hardware"},
 	{"nail clippers","BMAHrK","f",1,7,2,"C9CED4","C9CED4","tiny snipping clipper","thud","Click. Click.","bathroom"},
+	{"nail gun","JKBAwI","TeV",3,8,4,"F1C40F","24262A","pneumatic nail tool","thunk","Construction, but faster than intended.","modern,ranged"},
 }

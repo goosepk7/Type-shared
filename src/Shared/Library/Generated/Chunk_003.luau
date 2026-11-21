@@ -184,7 +184,7 @@ return {
 	{"blaze knuckle","KADAKB","KEke",8,8,2,"FF8A1E","7A1A08","a giant fist of flame roaring forward","whoosh","Knuckles, but a wildfire.","anime,pirate,fire,punch"},
 	{"bleeding heart","NGBNMI","dFS",2,1,2,"E91E63","FFFFFF","row of dangling heart blooms","rustle","Dramatic. Very dramatic.","plant,flower"},
 	{"bleeding tooth fungus","NJBLMI","SM",3,1,2,"F5F5F5","C62828","white cap oozing red drops","poof","Looks like it is bleeding. Yikes.","plant,fungus,spooky"},
-	{"blender","BMBLII","jV",3,3,4,"BFE6F2","24262A","jug with spinning blades on base","whirr","Whirrrr. Smoothie.","kitchen,household"},
+	{"blender vortex","OFDN1K","kHP",6,4,4,"9FD8EE","E8505B","giant glass blender jar whirling a smoothie","whirr","Ice, fruit, you. Pulse.","kitchen,appliance,pull,zone"},
 	{"blenny","ABAJEC","dZB",1,6,1,"8A7A5A","F2D82A","pop-eyed little reef fish","splash","Pokes its head out of holes. Cute.","fish,aquatic"},
 	{"blessing","KHBOKJ","GF",1,4,3,"FFECB3","FFFFFF","golden sparkle shower on ally","chime","Lucky and loved. Mostly lucky.","holy,support"},
 	{"blight","FJCNOI","iMP",5,3,3,"4E3B2A","8EA34A","withering grey ground with green veins","hiss","Plants hate this one trick.","toxic"},

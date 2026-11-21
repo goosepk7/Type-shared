@@ -3,11 +3,16 @@
 -- (data/misspellings.jsonl + per-entry 'ms'), sorted.
 return {
 	keys = {
-		"zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands",
-		"zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander",
-		"zylophone","zylophone stairs",
+		"yaoyorouzu","yaoyorozo","yeer","yeett","yeiti","yellow crad","yellow overdirve","yelow card","yet","yeti chrage","yetti","yetti charge","yety","yoag","yoeyo","yogert",
+		"yogga","yoik","yokay","yollo","yoloo","yonk","yormungandr","yougurt","youkay","younicorn","yufo","yugio trap","yuk","yumm","yummi","za hado",
+		"za hand","za handoo","za wardo","za warudoo","zanpackuto","zanpakto","zanpakuto realese","zanzokin","zanzokn","zapp","zawardo","zebrah","zeebra","zeero","zenit haste","zenith hast",
+		"zenith hasted","zepplin","zero gravaty","zero gravety","zero gravit","zero gravitty","zero hr","zeuss","ziggaraut","zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet",
+		"zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands","zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer",
+		"zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander","zylophone","zylophone stairs",
 	},
 	owners = {
-		11514,11518,11518,11518,11519,11518,11520,11520,11519,11520,11521,11540,11525,11525,11525,11531,11531,11531,11531,11525,11525,11531,11546,11525,11540,11546,11510,11548,11548,11512,11512,11553,11450,11450,
+		394,394,11458,11460,11464,7373,9409,7373,11460,470,11464,470,11464,11473,11470,11476,11473,11477,11478,11479,11479,11477,5347,11476,11478,10821,10792,7900,10794,11487,11487,6958,6958,6958,11508,11508,10809,10809,10809,3632,
+		3632,11495,11508,11497,11497,11507,11504,11504,11504,986,11187,11187,11187,11187,11508,11509,11511,11511,11515,11515,11515,11516,11515,11517,11517,11516,11517,11518,11537,11522,11522,11522,11528,11528,11528,11528,11522,11522,11528,11543,
+		11522,11537,11543,11507,11545,11545,11509,11509,11550,11447,11447,
 	},
 }

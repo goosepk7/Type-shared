@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"palm grove","NGECMI","GFSe",3,1,6,"8D6E63","43A047","cluster of swaying palm trees","rustle","Shade, coconuts, and a lot of bonking.","plant,tree"},
 	{"palm strike","KLCFOB","kI",5,9,1,"B3E5FC","FFFFFF","palm-shaped force wave","whum","Talk to the hand. It hits.","melee,magic"},
 	{"palm tree","NGDCMI","GkSe",4,1,6,"8D6E63","43A047","tall curved trunk, frond crown, coconuts","rustle","Bonk. Coconut. Bonk.","plant,tree"},
 	{"palmier","IMBAKK","Uke",3,7,2,"D9A04A","F2C870","heart-shaped flaky swirl","whoosh","A pastry shaped like a heart.","edible"},
@@ -13,7 +12,7 @@ return {
 	{"pan flute","BGBFJI","dc",2,6,2,"C49A6C","B89B6A","row of bamboo tubes","woodwind","Breathy and mysterious.","music"},
 	{"panacea","KHCOKJ","F",1,5,4,"FFF59D","69F0AE","rainbow glowing healing sparkle","chime","Fixes everything. Everything.","support,holy"},
 	{"pancake","IMBAKK","Uke",3,7,2,"E8B860","C8762B","round fluffy disc, butter pat","whoosh","A fluffy frisbee with syrup.","edible,breakfast"},
-	{"pancake shield","IMCIII","Ga",3,3,6,"E8B860","C8762B","round fluffy pancake on arm","thud","Syrup-coated deflection.","edible"},
+	{"pancake shield","IMCI7I","GN",4,4,6,"E9B25E","9A4E12","four fluffy pancakes with butter and syrup round you","thud","Breakfast is the most defensive meal of the day.","kitchen,breakfast,shield"},
 	{"pancake tornado","IMDNOK","kleP",5,7,2,"E8B860","B5651D","spinning stack of flying pancakes","whoosh","Breakfast, but spinning.","edible,silly"},
 	{"pancake tortoise","AMBJUA","GN",2,2,5,"8A6A3A","C8A06A","flat flexible shell","hiss","Hides in cracks like a pancake.","reptile,armored"},
 	{"pancit","IMBLGI","HN",2,3,3,"E8C070","7DBE3A","stir-fried thin noodles","gloop","Long noodles for a long life.","edible,sticky"},
@@ -191,7 +190,7 @@ return {
 	{"pentaseal colossus","KIFFXI","kTe",10,4,3,"706880","7838D2","a sealed stone titan blasting a lane from its palms","roar","Some seals are there for a reason.","anime,card game,ultimate"},
 	{"penuche","IMBLGI","SNP",2,3,3,"C89050","E8C07A","brown sugar fudge","gloop","Brown sugar fudge, very rich.","edible,sticky"},
 	{"peony","NGBNMI","dFS",2,1,2,"F48FB1","FCE4EC","huge fluffy pink ball bloom","rustle","Big. Fluffy. Smells divine.","plant,flower"},
-	{"pepper shaker","BMADKK","jO",1,6,1,"24262A","8E9196","wooden grinder","clang","Achoo! Achoo!","kitchen,household"},
+	{"pepper grinder","BFCD2K","jkS",4,4,4,"6B4226","3A3A3A","giant wooden pepper mill grinding a cloud of pepper","rustle","Ah... ah... AAAH-CHOO.","kitchen,spice,cloud,control"},
 	{"peppermint","ICBAKJ","JeP",3,5,2,"E0102B","F7F7F2","round red-white swirl disc","squish","Cool, swirly, and minty fresh.","edible,sweet,candy"},
 	{"peppermint bark","IMAAKK","JTe",3,7,6,"F7F7F2","E0102B","white chocolate with crushed candy","bonk","Festive shards.","edible,holiday"},
 	{"pepperoncini","IABAKK","KeP",2,7,2,"C8C84A","8DB84A","small wrinkled yellow-green pepper","sizzle","Tangy little pepper.","edible,spicy,flammable"},
@@ -403,4 +402,5 @@ return {
 	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
 	{"pizza shield","IMCIII","Ga",3,3,6,"E8B04A","D72B2B","round pizza strapped to arm","thud","Cheese-forward defense.","edible"},
 	{"pizza slice","IMBAKK","cTe",3,7,2,"E8B04A","D72B2B","triangle slice, cheese stretch","whoosh","A triangle of hope.","edible"},
+	{"placoderm","ABCJEC","GDfB",4,7,4,"6A6A6A","B8B0A0","armored ancient fish","splash","Armored fish. Bony and proud.","fish,aquatic,extinct,ancient"},
 }

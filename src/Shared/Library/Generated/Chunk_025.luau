@@ -3,8 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"spire","EMDMII","GSTe",3,1,6,"9E9E9E","5D5D5D","needle-thin pointed tower","thud","Very pointy. Very tall.","structure,defense,tower"},
-	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 	{"spirit animal","AHCJAA","GQF",4,6,3,"A5F3FC","FDE68A","glowing translucent animal companion","chime","Your inner animal, on loan.","spirit"},
 	{"spirit bear","AHDJAA","Fkf",6,5,6,"F8FAFC","7DD3FC","glowing translucent bear","roar","A bear hug from the other side.","spirit"},
 	{"spirit choir","LHCJVJ","Qkh",5,4,5,"F6F0FF","FFD36E","three glowing robed spirits sing hymns that hurt foes","sing","Ahhhhh. (Ow.)","music,summon"},
@@ -98,7 +96,6 @@ return {
 	{"stab","KKBAuB","DfT",4,9,1,"D1D5DB","60A5FA","single fast thrust line ending in a sharp point glint","shing","Stick them with the pointy end.","melee,sharp"},
 	{"stable","EMCCII","GSh",2,1,6,"6D4C41","F5E6CA","low wooden building with half doors","thud","Mounts ready. Saddles up.","structure,building"},
 	{"stable hand","LMCJNA","Fh",3,5,4,"78350F","FDE68A","pitchfork, hay, boots","neigh","Brings the horses. And smells like them.","silly,mount"},
-	{"stack of pancakes","IMCCII","GFc",4,2,5,"E8B860","B5651D","tall stack, butter, syrup flow","thud","A tower of fluff. Topple it on foes.","edible,giant,breakfast"},
 	{"stadium","MEFNII","dSh",3,1,9,"43A047","F5F5F5","oval stands around a bright pitch","crowd","The crowd goes wild. Literally.","place,terrain,sport"},
 	{"staff","BLCAzI","feh",5,5,4,"5A3A1E","8E5CC2","tall gnarled staff with glowing orb","chime","You shall not pass.","magic,fantasy"},
 	{"stag beetle","AMBJFA","Gkf",2,3,4,"3A1E14","8A4A2A","huge antler-like jaws","click","Wears antlers on its face.","insect,armored"},
@@ -403,4 +400,7 @@ return {
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
 	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
+	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
+	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
+	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
 }
