@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
 	{"ink blot","FIBAKI","je",2,6,2,"14141C","3B4CCA","a lobbed glob of ink that splats and smears the screen","splat","Can't see? That's the idea.","cartoon,silly"},
 	{"ink monster","AICJGA","jZN",4,5,3,"0A0A0A","312E81","dripping ink-blot creature","squelch","Stains everything. Including your record.","spooky"},
 	{"ink strike","KIBOKI","Dk",8,9,1,"E8E2D6","B3172B","world flashes to black-and-red ink for one hit","thump","Next hit gets its own page.","anime,manga"},
@@ -162,7 +163,7 @@ return {
 	{"jouster","LKDKAA","DkTg",6,8,6,"DC2626","FACC15","knight with striped lance on charging horse","clang","Pointy stick. Fast horse. Big bonk.","warrior,sport,mount"},
 	{"jousting arena","MMENII","DkS",4,1,7,"B71C1C","FFD54F","fenced field with striped barrier, banners","crowd","Knights charge! Lances ready!","ancient,royal"},
 	{"joy","KHCOKJ","DF",2,6,3,"FFEB3B","FF80AB","bouncy yellow sparkles and confetti","yay","So happy it heals.","cute,support"},
-	{"joy buzzer","CDALJK","LO",1,9,1,"C9CED4","C0392B","palm buzzer ring","boing","Bzzzt! Gotcha!","prank,silly"},
+	{"joy buzzer","CDAHJG","DLO",3,8,1,"C9CED4","FFD54F","a lunge into a handshake with a crackling palm buzzer","boing","Bzzzt! Gotcha!","goofy,prank,silly,dash"},
 	{"jubilee stomp","KMDNBI","kSe",9,6,5,"FAF6EE","C4A0FF","a giant puffy cartoon foot stamping onto rubbery ground","thud","Boing. Boing. Boing.","anime,pirate,cartoon"},
 	{"judgment","FHEBKI","KTO",8,7,2,"FFD740","FFFFFF","giant golden sword of light slamming down","boom","The verdict is: ouch.","holy"},
 	{"judo master","LMCJNA","klf",5,7,5,"F8FAFC","1E3A8A","white judo gi, throwing stance","thud","Throws you with your own weight.","sport,martial"},
@@ -402,5 +403,4 @@ return {
 	{"lace","BMBLCD","HNO",2,4,2,"FFFFFF","EF4444","two untied shoelaces knotting themselves together","swish","Your shoe is untied. Made you look. Also it is.","clothing,trap"},
 	{"lace monitor","AMCJAA","Cf",4,7,2,"2A2A2A","F2E8C0","patterned big monitor","hiss","Climbs trees with huge claws.","reptile"},
 	{"lacewing","AMAJFB","jdAF",1,5,1,"8AE04A","E8F8E0","lacy green clear wings","flutter","Eats aphids. Looks like lace.","insect,cute"},
-	{"lacrosse ball","BMAA3F","ke",2,9,5,"F2F2EE","F2F2EE","solid rubber ball","bonk","Hard. Fast. Ouch.","sport"},
 }

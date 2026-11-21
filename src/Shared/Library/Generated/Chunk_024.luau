@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
 	{"sky bike","DFBKHB","DAg",3,7,2,"E53935","90CAF9","bicycle with propeller and wings","engine","Pedal hard enough and you fly.","vehicle"},
 	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
 	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
@@ -402,5 +403,4 @@ return {
 	{"spinning blades","OKCL1K","fVP",6,6,5,"8A929B","4A4D52","post with whirling blades","clank","Wheeeeeee— ouch.","defense,mechanical"},
 	{"spinning plate","BMAAKK","UeV",1,7,1,"F2F2EE","2F6FD1","plate twirling on a stick","thud","Don't drop it. Throw it.","party,silly"},
 	{"spinning top","BMAGKK","jkf",2,7,4,"C0392B","2F6FD1","pointed spinning toy","squeak","Spins forever. Dizzies everyone.","toy"},
-	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
 }

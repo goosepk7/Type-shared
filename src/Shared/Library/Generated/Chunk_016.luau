@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"longbow","CMCAvI","Te",5,7,3,"5A3A1E","B89B6A","tall curved yew bow","twang","Hits from very, very far away.","medieval,ranged"},
 	{"longbowman","LFCJNA","Te",5,5,4,"15803D","78350F","tall yew longbow, green tunic","twang","Arrows blot out the sun.","warrior,archer"},
 	{"longhorn","AMDJAA","DkTO",6,4,7,"B8783E","F2EAE0","extremely wide horns","moo","Horns wider than a doorway.","mammal,heavy,farm"},
 	{"longhorn beetle","AMAJFA","Gf",1,3,4,"1E1E1E","F2F2F2","beetle with super long antennae","click","Antennae longer than its body.","insect,armored"},
@@ -402,5 +403,4 @@ return {
 	{"metal storm","FKEEOB","TP",8,6,4,"90A4AE","ECEFF1","swirling rain of metal shards and blades","clang","Forecast: sharp.","sharp,heavy,storm"},
 	{"metal welder","LACJNA","KO",4,4,5,"1F2937","F97316","welding mask, spark torch","sizzle","Sparks fly. Blinding ones.","tools,fire"},
 	{"meteor","HADAKB","KEkeO",8,8,6,"5D4037","FF8F00","flaming boulder streaking down, long fire tail","roar","Space rock. Express delivery.","space,explosive"},
-	{"meteor beetle","AEBJFA","GDE",3,6,6,"57534E","F97316","beetle with a glowing meteor shell","click","Rolls in like a tiny meteor.","alien,insect"},
 }

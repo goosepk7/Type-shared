@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"meteor beetle","AEBJFA","GDE",3,6,6,"57534E","F97316","beetle with a glowing meteor shell","click","Rolls in like a tiny meteor.","alien,insect"},
 	{"meteor dive","KADAKB","KEkO",8,9,3,"BF360C","FFAB40","caster diving from the sky wreathed in fire","roar","Became a meteor. Landed on you.","fire,explosive"},
 	{"meteor hammer","CKCAtI","Qke",4,8,3,"8A929B","9E1B32","weighted head spinning on rope","twang","Spins around, comes back swinging.","medieval,ranged"},
 	{"meteor punch","KADAKB","KEkf",8,8,3,"FF6D00","FFD54F","flaming fist plunging from above with crater","boom","A punch that came from space.","fire,melee,explosive"},
@@ -402,5 +403,4 @@ return {
 	{"nacho cheese","IMBLGI","ScN",2,3,3,"F2A62B","F2C24A","bright orange gooey sauce","gloop","Liquid gold, but orange.","edible,sticky,dairy"},
 	{"nacho fries","IMAELB","eVP",2,7,1,"F2862B","F2C24A","seasoned orange fries","pitter","Fries in nacho dust.","edible"},
 	{"nachos","IMBLGI","KcN",2,3,3,"E8B84A","F2A62B","pile of chips, melted cheese, jalapenos","gloop","A cheesy mountain of crunch.","edible,sticky"},
-	{"nag","KMBBKB","iQNO",3,5,1,"F59E0B","DC2626","wagging finger with a speech bubble of blah blah blah","chatter","Are we there yet? Are we there yet? Are we","silly"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot swarm","OKCJLA","DVP",5,7,4,"475569","22D3EE","carpet of tiny scuttling robots","beep","Beep beep beep beep beep.","robot,swarm"},
 	{"robot tank","OKDMHL","GEe",7,3,9,"365314","1F2937","treaded robot with turret head","clank","Turret, treads, and attitude.","robot,heavy"},
 	{"robot teacher","OKCJNA","jO",3,3,5,"1E3A8A","F8FAFC","robot with chalk arm and glasses","beep","Pop quiz loading.","robot,school"},
 	{"robot unicorn","OKDKAA","DTg",6,8,7,"E5E7EB","F472B6","chrome unicorn with laser horn","neigh","Laser horn. Rainbow exhaust.","robot,mount"},
@@ -402,5 +403,4 @@ return {
 	{"sea hag","ABCJNC","cMh",5,4,4,"134E4A","A3E635","seaweed-haired hag with shell necklace","cackle","Deals in voices and bad bargains.","witch,aquatic"},
 	{"sea hare","ABAJGI","jN",1,1,2,"8A6A4A","C8A07A","big sea slug with ear flaps","squelch","Squirts purple ink. Has ears.","mollusk,aquatic"},
 	{"sea holly","NGBNMI","dFST",2,1,3,"5C6BC0","B0BEC5","spiky metallic-blue thistle","rustle","Spiky. Shiny. Salt-proof.","plant,flower"},
-	{"sea kaiju","ABFJCC","kHB",9,5,9,"0C4A6E","22D3EE","whale-sized finned monster rising from sea","roar","Makes a splash. A very big one.","kaiju,aquatic,giant,danger"},
 }

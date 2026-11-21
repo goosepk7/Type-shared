@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
 	{"gravity lily","NFBLMJ","lS",2,1,2,"B388FF","E1F5FE","lily floating upside down","chime","Lifts everything nearby. Wheee.","plant,magic,mythical"},
 	{"gravity mage","LLCJNJ","lHN",6,4,4,"312E81","A855F7","floating rocks orbiting a robed mage","hum","What goes up stays up.","magic"},
 	{"gravity prison","KLCLII","NO",6,3,6,"4527A0","B388FF","warped purple sphere pinning target","whum","Too heavy to move.","space"},
@@ -402,5 +403,4 @@ return {
 	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
 	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
 	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
-	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
 }

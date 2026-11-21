@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gelatin powder","IMBLGG","USN",2,3,3,"F2E8D8","E8DCC0","packet of clear granules","wobble","Turns liquid into wobble.","edible,wobbly,sweet"},
 	{"gelatinous cube","AJDJGF","MHN",5,2,6,"86EFAC","F0FDF4","giant clear cube with stuff floating inside","squelch","A dungeon's cleaning crew.","slime,silly"},
 	{"gelato","ICBAKJ","JeN",3,5,2,"F7E0B0","9CBA6B","dense scoop in tiny cup","squish","Italian ice cream with a flair.","edible,frozen,sweet"},
 	{"gem","BMAA4J","cea",2,7,6,"1E9E5A","F2F2EE","faceted sparkling gemstone","chime","Shiny. Pointy. Priceless.","treasure,shiny"},
@@ -402,5 +403,4 @@ return {
 	{"gravity flip","KLCNOI","jlO",5,6,3,"7E57C2","FFFFFF","everything flipping upside down","whum","Ceiling is the floor now.","space,silly"},
 	{"gravity generator","OLDN1I","AlN",5,3,6,"7D3CB5","C9CED4","orb hovering in a ring frame","hum","Up is down. Down is up.","scifi"},
 	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
-	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
 }

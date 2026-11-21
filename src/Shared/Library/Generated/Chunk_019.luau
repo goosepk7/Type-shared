@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pakora","IMAELB","Ke",2,7,1,"C8803A","F2A62B","craggy fried fritter","pitter","Crunchy fritter of spicy veg.","edible"},
 	{"palace","EMFCII","GSh",5,1,9,"FFF8E1","FFD54F","grand wings, golden domes, fountains","thud","So fancy the guards wear sashes.","structure,building,royal"},
 	{"paladin","LHCJNA","GDFf",6,4,8,"E5E7EB","FACC15","shining plate armor, glowing warhammer","clang","Hits hard. Heals harder. Very polite.","holy,warrior"},
 	{"palak paneer","IMBOKI","WF",3,5,3,"3E7A2B","F7F2E0","green curry with cheese cubes","chomp","Spinach strength plus cheese.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"pizza ninja","LMCJNA","DZe",4,9,3,"111827","DC2626","ninja carrying pizza boxes","whoosh","Delivers pizza. And pain.","silly,stealth"},
 	{"pizza oven","OACM1I","K",4,1,7,"9C4A3A","FF6A1A","domed brick oven glowing inside","clang","Wood-fired fury.","kitchen,household"},
 	{"pizza party","IMCJII","dFc",5,1,6,"E8B04A","D72B2B","stacked pizza boxes","thud","Free pizza. Everyone comes.","edible,giant,silly"},
-	{"pizza peel","BMCHtK","klf",2,6,3,"C49A6C","8B5A2B","big flat wooden paddle","clang","Scoop. Flip. Fling.","kitchen,household"},
 }

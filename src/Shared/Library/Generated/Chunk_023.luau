@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea kaiju","ABFJCC","kHB",9,5,9,"0C4A6E","22D3EE","whale-sized finned monster rising from sea","roar","Makes a splash. A very big one.","kaiju,aquatic,giant,danger"},
 	{"sea krait","ABCJCD","fMNB",4,6,3,"3A5A8A","F2F2EE","blue-black banded sea snake","hiss","Swims in the sea, naps on land.","reptile,venomous"},
 	{"sea lettuce","NBBLMI","SNB",1,1,2,"76FF03","9CCC65","bright green crinkly sheets","splash","Slippery salad of the sea.","plant,aquatic"},
 	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
@@ -402,5 +403,4 @@ return {
 	{"skunk cabbage","NJCDMI","jSM",2,1,3,"9CCC65","FFEB3B","big leaves with a stinky yellow hood","rustle","Smells like a skunk. Literally.","plant,flower,silly"},
 	{"skunk kit","AMAJAA","CfM",1,8,2,"1A1A1C","F2F2F2","tiny stripy fluffball","chatter","Practicing the stink. Not ready yet.","mammal,predator"},
 	{"skunk spray","AJCDAI","SMNP",4,5,3,"1E1C22","9BD84A","skunk turns tail and sprays a cone of green stink","hiss","Clears a room in one second flat.","critter,mammal,cloud,gross"},
-	{"sky","MFFNOI","AlSH",7,3,8,"60A5FA","FFFFFF","endless blue with fluffy clouds, pulling things upward","whoosh","The limit. Come and touch it.","air,place"},
 }

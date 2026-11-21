@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"puppy eyes","KHAAKB","cO",1,7,1,"8D6E63","B3E5FC","huge sparkly pleading eyes","aww","Nobody can say no to these.","cute,silly"},
 	{"pupusa","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","thick stuffed corn cake","whoosh","A stuffed tortilla pillow.","edible"},
 	{"purify","KHCFOB","KF",3,6,2,"FFFFFF","B2EBF2","pure white wave washing outward","chime","Squeaky clean. Evil included.","holy,support"},
 	{"purple carrot","IEBAJK","FTe",3,6,4,"5E1A4E","ED9121","purple-skinned carrot","crunch","A carrot in royal colours.","edible,vegetable,healthy"},
@@ -402,5 +403,4 @@ return {
 	{"robot soldier","OKCJNA","DeP",5,5,6,"475569","EF4444","armored humanoid robot with rifle arm","clank","Marches in perfect lines. Always.","robot,warrior"},
 	{"robot spider","OKBJFA","fHL",3,7,4,"334155","22D3EE","eight-legged steel bot with lens eyes","skitter","Climbs walls. Taps on windows.","robot,insect"},
 	{"robot spider tank","OKDJFA","Gke",7,4,8,"57534E","FACC15","six-legged tank with cannon turret","clank","Tank with legs. Stairs no longer safe.","robot,heavy"},
-	{"robot swarm","OKCJLA","DVP",5,7,4,"475569","22D3EE","carpet of tiny scuttling robots","beep","Beep beep beep beep beep.","robot,swarm"},
 }

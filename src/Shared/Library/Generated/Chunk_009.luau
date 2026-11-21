@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"empire state building","EMFCII","GkSO",7,1,10,"B0BEC5","37474F","art deco skyscraper with a spire","rumble","A whole skyscraper. Delivered.","structure,landmark"},
 	{"empower","KLCOKJ","DW",4,5,4,"FF6D00","FFE57F","glowing muscular outline aura","hum","Power! Unlimited... ish.","support"},
 	{"empress tree","NGDCMI","GWkS",3,1,6,"6D4C41","B39DDB","giant leaves and purple flower spikes","rustle","Grows insanely fast. Royal colours.","plant,tree,royal"},
 	{"empusa","AACJNA","Kcf",4,6,4,"DC2626","F59E0B","fiery hair, one bronze leg","hiss","One bronze leg. Great at kicks.","mythical,spooky"},
@@ -402,5 +403,4 @@ return {
 	{"flame dancer","LACJNK","Kj",4,7,3,"F97316","111827","spinning fire poi","whoosh","Dazzling. Also burning.","circus,fire"},
 	{"flame jet","FACBKI","KIe",5,9,1,"FF6D00","FFF3E0","tight roaring jet of blue-orange flame","hiss","Precision toasting.","fire"},
 	{"flame salamander","AABJAA","KfB",3,6,3,"EA580C","FDE047","small lizard with flame crest","hiss","Lives in a campfire. Very cozy.","reptile,fire,elemental"},
-	{"flame strike","FADBKI","KO",7,7,2,"FF3D00","FFEA00","column of fire slamming down from the sky","roar","Fire, but from above. Surprise!","fire,holy"},
 }

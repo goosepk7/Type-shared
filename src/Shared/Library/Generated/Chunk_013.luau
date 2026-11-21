@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
 	{"hibiscus","NGBNMI","dFS",2,1,2,"E91E63","FFEB3B","huge trumpet bloom, long stamen","rustle","Tropical vibes only.","plant,flower"},
 	{"hiccup","KMAOKG","jY",1,8,1,"F8BBD0","FFFFFF","tiny hopping bubble","hic","Hic! Random teleport.","silly"},
 	{"hickory","NGDCMI","GWkS",4,1,8,"795548","8BC34A","tall shaggy-bark tree","rustle","Shaggy bark, tough wood.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
 	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
 	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
-	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
 }

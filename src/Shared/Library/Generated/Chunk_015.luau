@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lacrosse ball","BMAA3F","ke",2,9,5,"F2F2EE","F2F2EE","solid rubber ball","bonk","Hard. Fast. Ouch.","sport"},
 	{"lacrosse stick","BMCHJK","fe",2,7,4,"F2F2EE","1F2F55","stick with a netted pocket","bonk","Catch, cradle, fling.","sport"},
 	{"ladder","BMCCII","Gl",1,3,4,"C49A6C","8A929B","tall two-rail ladder","clank","Climbs walls. Carry it everywhere.","tool"},
 	{"ladder truck","DBEKHL","Dkleg",6,5,8,"D22B2B","C0C0C0","long red truck with a giant ladder","siren","Ladder up. Hose down.","mechanical,vehicle,land"},
@@ -402,5 +403,4 @@ return {
 	{"long-eared owl","AMBJDB","AZT",3,7,2,"8A6A44","E8701E","long ear tufts, orange face","hoot","Ear tufts like antennae.","bird,nocturnal,predator"},
 	{"longan","IGAAKF","Fke",3,6,2,"C8A46A","F3EEE0","tan marble with see-through flesh","splat","Peel it and it stares back.","edible,fruit,sweet"},
 	{"longboard","DMAKHF","Dkg",2,7,2,"8D6E63","4FC3F7","long wooden deck, big soft wheels","engine","Surfing, but on pavement.","mechanical,vehicle,land,sport"},
-	{"longbow","CMCAvI","Te",5,7,3,"5A3A1E","B89B6A","tall curved yew bow","twang","Hits from very, very far away.","medieval,ranged"},
 }

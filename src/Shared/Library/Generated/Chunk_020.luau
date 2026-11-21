@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza peel","BMCHtK","klf",2,6,3,"C49A6C","8B5A2B","big flat wooden paddle","clang","Scoop. Flip. Fling.","kitchen,household"},
 	{"pizza place","EMCNII","dSc",2,1,5,"E53935","FFC107","shopfront with a leaning pizza sign","ding","Free delivery. Very fast delivery.","structure,building,shop,silly"},
 	{"pizza rolls","IABGKF","KEP",4,6,1,"D9A04A","C8302B","tiny golden pillows","pop","Lava inside every one.","edible,explosive"},
 	{"pizza scooter","DMBKHL","Dkcg",2,7,3,"E53935","F5F5F5","scooter with a pizza box on the back","engine","Thirty minutes or it is free. Or you are.","vehicle,silly"},
@@ -402,5 +403,4 @@ return {
 	{"pupfish","AAAJEC","dB",1,6,1,"3A6AE8","E8E0D0","tiny desert pool fish","splash","Lives in the hottest pools.","fish,aquatic,desert"},
 	{"puppeteer","LLCJNA","jHh",4,4,3,"7C2D12","DC2626","marionette strings from fingertips","giggle","Pulls your strings. Literally.","circus,magic"},
 	{"puppy","AMBJAA","dQf",1,6,2,"D9A56B","FFF1DE","oversized paws, floppy ears, wiggle butt","yip","Chews everything. Forgiven instantly.","mammal,pet,cute"},
-	{"puppy eyes","KHAAKB","cO",1,7,1,"8D6E63","B3E5FC","huge sparkly pleading eyes","aww","Nobody can say no to these.","cute,silly"},
 }

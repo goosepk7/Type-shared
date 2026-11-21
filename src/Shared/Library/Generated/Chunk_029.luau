@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weightless palm","KLCNKJ","klO",7,7,3,"FFC2E2","6E4AA8","enemies drift up helplessly, then drop","hum","Up you go. Down you come.","anime,hero,gravity"},
+	{"weightlifter","LECJNA","Gkl",6,4,7,"111827","DC2626","tank top, huge muscles, barbell","thud","Do you even lift? He does.","sport,heavy"},
+	{"weimaraner","AMCJAA","DQf",4,8,4,"9A9AA0","D8D8DC","sleek silver-grey dog","bark","The grey ghost. Silver, fast.","mammal,pet"},
 	{"weirdo","LLCJNA","UjY",3,6,3,"A3E635","D946EF","mismatched socks, colander hat, walking a pet rock","boing","Normal is a setting on a washing machine.","silly,meme"},
 	{"weka","AMBJDA","dfb",2,4,2,"8A6A4A","C8A07A","flightless brown rail","cluck","Steals shiny things from campers.","bird,farm"},
 	{"welder","OACBJK","KfO",5,4,5,"2F6FD1","24262A","welding gun with bright arc","buzz","Don't look directly at it.","tool"},
@@ -23,6 +26,7 @@ return {
 	{"west","KECF6B","kIN",4,6,2,"B45309","FDBA74","compass needle on W, tumbleweed and a setting sun","yeehaw","Go west, young summon. Mind the tumbleweed.","map,western"},
 	{"western omelette","IGBOKI","F",2,5,3,"F2D23A","D72B2B","omelet with ham and peppers","crunch","An omelet that rides horses.","edible,healthy,breakfast"},
 	{"westie","AMBJAA","dQf",2,6,2,"FFFFFF","F2EEE6","white fluffy terrier","yip","Small white dog. Big opinions.","mammal,pet,cute"},
+	{"wet noodle","CBCHJK","fI",2,7,1,"FFE082","F4C430","a giant floppy wet noodle slapped forehand and backhand","splat","Slap. Slap. Drip.","goofy,gross,silly,melee"},
 	{"weta","AMBJFA","dTP",2,6,1,"6A4A2A","C8A07A","huge spiky cricket","buzz","Giant cricket heavier than a mouse.","insect"},
 	{"wetsuit","BBCONI","B",1,7,3,"24262A","47D7E8","sleek neoprene suit","clank","Swim faster. Look sleeker.","armor,defense"},
 	{"whack","KMBAKB","kf",3,8,2,"FFAB91","FFFFFF","big comic swoosh and impact","whack","Whack-a-villain.","silly"},

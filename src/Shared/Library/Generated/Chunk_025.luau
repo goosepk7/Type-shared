@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
 	{"spinning wheel","OMCL1I","NO",2,1,4,"8B5A2B","D8CBB5","wooden wheel with spindle","clank","Spins wool. Spins traps.","mechanical,fantasy"},
 	{"spinosaurus","AMEJBA","DkfTHB",8,6,7,"8A4A2A","D8783A","crocodile snout, giant back sail","roar","Swims, fishes, has a sail. Overachiever.","dinosaur,extinct,reptile,predator"},
 	{"spiny lobster","ABBJRA","GfT",3,4,5,"C8701E","F2D0A0","long spiny antennae lobster","clack","Screeches its antennae like a violin.","crustacean,aquatic,armored"},
@@ -22,7 +23,7 @@ return {
 	{"spirit medium","LLCJNI","jh",4,4,3,"7C3AED","E0F2FE","candles, scarf, crystal pendant","whisper","Talks to ghosts. Ghosts talk back.","spooky,magic"},
 	{"spirit whale","ALFJEB","AFk",8,2,8,"1E3A8A","A5F3FC","translucent whale swimming through sky","whale","A whale that swims in the clouds.","spirit,giant,cosmic"},
 	{"spit","KBBAKB","de",1,9,1,"B3E5FC","FFFFFF","small glob arc","ptoo","Ptooey! Gross, but effective.","silly,gross"},
-	{"spitball","CMAAKK","je",1,9,1,"F2F2EE","F2F2EE","soggy paper wad","boing","Gross. Effective.","silly"},
+	{"spitball","CBAAKK","eN",2,9,1,"F2F2EE","E85D75","three soggy paper wads blown through a bendy straw","boing","Gross. Effective.","goofy,gross,silly,prank"},
 	{"spitting cobra","AMCJCD","jfMeN",4,6,3,"6A5440","E8C88A","hooded snake spitting venom","hiss","Aims for the eyes. Accurate too.","reptile,venomous"},
 	{"spitting spider","AJBJQA","fMeN",2,6,2,"E8D0A0","1E1E1E","spotted spider spitting glue","skitter","Spits sticky glue.","arachnid,spooky,venomous"},
 	{"spittlebug","AMAJFG","dASP",1,6,1,"8A6A4A","F2F2EE","bug hiding in spit foam","buzz","Lives in a bubble bath.","insect"},
@@ -235,7 +236,9 @@ return {
 	{"stink bomb","CJBDKF","QSMe",4,5,3,"8BC34A","5E7A2B","corked green stink bomb; its cloud chases people","poof","Smells like victory. Mostly socks.","goofy,gross,silly,cloud"},
 	{"stink bug","AJAJFA","jdAMP",1,6,1,"6A5A3A","C8A86A","shield-shaped flat bug","buzz","Smells awful when squished. Avoid.","insect"},
 	{"stink cloud","FJBDOJ","jdN",2,5,1,"C0CA33","827717","yellow-green puff with wavy stink lines","pfft","Everyone leaves. Fast.","silly,toxic"},
+	{"stink eye","KJBBKJ","Ie",3,6,2,"9CCC65","5D4037","a huge squinting eye with a bushy brow glares a beam","ew","You know what you did.","goofy,silly,beam"},
 	{"stinkhorn","NJBDMI","jScM",3,1,2,"F5F5F5","6D4C41","tall white stalk with slimy cap","poof","Smells horrid. Flies love it.","plant,fungus"},
+	{"stinky cheese","IJBO7I","SMI",3,4,4,"FDD835","9CCC65","a holey wedge of cheese held high in a green stink haze","ew","Aged to imperfection.","goofy,gross,silly,aura"},
 	{"stinky feet","KJBDOJ","jM",2,4,1,"C0CA33","FFF59D","green wavy stink lines from shoes","whiff","Take off your shoes. Everyone faints.","silly,gross"},
 	{"stinky tofu","IJBDOJ","jSMP",3,3,2,"8A6A3A","C8A070","fried tofu cubes, pungent","whiff","The stinkiest snack. Fans swear by it.","edible,smelly"},
 	{"stir","KFBN5K","jHN",3,6,1,"C4B5FD","F8FAFC","wooden spoon whirling everything into a swirl","swish","Stirring the pot. Literally and socially.","kitchen"},
@@ -400,7 +403,4 @@ return {
 	{"sulk","KBADOJ","N",1,2,2,"90A4AE","B3E5FC","tiny rain cloud over caster","hmph","Hmph. Fine. Whatever.","silly"},
 	{"sultan","LHCJNA","Gch",5,4,5,"B91C1C","FACC15","tall turban with jewel, silk robes","horn","Has a flying carpet on standby.","royal"},
 	{"sultana","IMAELB","eVP",2,7,1,"C8903A","A8702A","golden wrinkled raisin","pitter","A golden raisin with manners.","edible,sweet"},
-	{"sumac","IFBDOJ","jPO",2,5,1,"8A1E2E","B0303A","deep red tangy powder","puff","Red, tangy, and lemony.","edible,spice"},
-	{"summer","GADNOI","KFS",4,4,4,"FFB300","FFF59D","bright sun haze, warm golden light","hum","School is out. Sun is in.","fire,holiday"},
-	{"summer camp","MGDNII","FSch",4,1,5,"15803D","F59E0B","log cabins, canoes, a flagpole and a friendship bracelet","crackle","Dear Mum. Camp is fine. Send snacks.","outdoor,place"},
 }
