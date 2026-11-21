@@ -75,7 +75,7 @@ return {
 	{"flute","BMBFJI","jdc",2,7,2,"C9CED4","C9CED4","thin silver tube with keys","woodwind","Lures snakes. And enemies.","music"},
 	{"fly","AMAJFB","dASP",1,6,1,"3A3A3A","C82A2A","big red eyes, see-through wings","buzz","Lands on your food. Rubs its hands.","insect"},
 	{"fly agaric","NJBLMI","jSM",4,1,3,"E53935","FFFFFF","classic red cap with white dots","poof","Fairy-tale pretty. Fairy-tale poisonous.","plant,fungus"},
-	{"fly swatter","JMBHJK","fO",1,9,1,"C0392B","24262A","flat mesh paddle on wire","boing","SWAT.","silly"},
+	{"fly swatter","JMDHJK","kfN",4,7,3,"5BC24C","C4CAD2","giant perforated green paddle on a twisted wire handle","boing","SWAT.","household,garden,silly"},
 	{"flycatcher","AMAJDB","dA",1,7,1,"8A8A6A","F2E8C0","small bird catching bugs mid-air","tweet","Snaps bugs out of the air.","bird,cute"},
 	{"flying carpet","DLCKHB","DAgY",4,8,3,"7B1FA2","FFC107","tasselled rug rippling in the air","whoosh","A whole new world of bonking.","vehicle,magic,mythical"},
 	{"flying dragon lizard","AMBJAB","CAf",2,7,2,"8A7A5A","E8701E","lizard with rib wings","hiss","A lizard that flies. On ribs.","reptile"},

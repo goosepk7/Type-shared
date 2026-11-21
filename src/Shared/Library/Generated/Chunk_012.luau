@@ -183,7 +183,7 @@ return {
 	{"hailstorm","GCDEOB","kNPO",7,6,4,"C3D8E6","7FA4BD","dark cloud pelting big ice chunks","rattle","Free ice. Applied at speed.","frozen,storm"},
 	{"hainanese chicken rice","IGBOKI","F",2,5,3,"F2E8C8","7DBE3A","poached chicken, fragrant rice","crunch","Simple, silky, perfect.","edible,healthy"},
 	{"hair","BMCLGD","WHN",3,3,3,"6B4423","A0723D","living mop of long brown hair, no face","swish","Bad hair day. For you.","body,silly"},
-	{"hair dryer","BFBFJI","KIe",2,7,3,"F06292","24262A","pistol-shaped hot air blower","whoosh","Fwoosh! Fabulous and flung.","bathroom,household"},
+	{"hair dryer","OFBF1I","kIe",3,8,3,"F29BBE","5E646E","pink hair dryer roaring hot air","whoosh","Fwoosh! Fabulous and flung.","household,bathroom"},
 	{"hair whip","KMBHJB","kf",2,8,1,"6D4C41","FFD54F","flowing hair arc slash","swish","Fabulous and dangerous.","silly"},
 	{"hairbrush","BMAHJI","jf",1,7,2,"24262A","F06292","paddle brush with bristles","splash","Tames hair. Tames foes.","bathroom,household"},
 	{"haircut","KKBHJB","jfX",3,7,2,"C0C7CE","6B4423","snipping scissors and comb, hair bits flying","snap","Just a little off the top. Oops.","silly"},

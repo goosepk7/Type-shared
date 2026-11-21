@@ -202,7 +202,7 @@ return {
 	{"huckleberry","IGAELB","eVP",2,7,1,"3E2A5E","6B4E8A","small round dark blue berry","pitter","Wild, tart, and hard to pick.","edible,fruit,sweet"},
 	{"huevos rancheros","IGBOKI","F",2,5,3,"F2B81A","C8302B","fried eggs on tortilla with salsa","crunch","Ranch-style eggs with a kick.","edible,healthy"},
 	{"hug","KHBAKB","FO",2,6,3,"F8BBD0","FFFFFF","warm pink glow with floating hearts","aww","Too strong to escape. Too nice to mind.","cute,support"},
-	{"hula hoop","BMCLKK","RO",1,6,2,"FF3EA5","8BC34A","big plastic spinning ring","bonk","Swivel. Trapped. Dizzy.","sport"},
+	{"hula hoop","BMCOKK","kRI",3,6,3,"E23C8E","2BB7B0","candy-striped plastic hoop whirling round the waist","bonk","Swivel. Smack. Swivel.","household,toy,sport"},
 	{"huldra","AGCJNA","jZc",4,6,4,"365314","FDE68A","forest woman with a cow tail","sing","Hides a tail. Hides it badly.","mythical,norse"},
 	{"huli jing","ALCJAA","jAZc",5,8,4,"F97316","F5F5F4","white fox with nine fluffy glowing tails","chime","Nine tails, nine tricks, zero apologies.","mythical,fox,magic"},
 	{"hum","KLBOKJ","F",1,3,2,"B39DDB","FFFFFF","soft wavy notes around caster","hum","Hmm hmm hmmm.","music"},

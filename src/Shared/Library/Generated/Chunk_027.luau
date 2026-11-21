@@ -188,7 +188,7 @@ return {
 	{"toy","BMBJWA","UdQc",2,5,3,"EF4444","FACC15","wind-up tin robot, key in back, googly eyes, wobble walk","squeak","Batteries not included. Menace is.","toy,cute,silly"},
 	{"toy airplane","BMAJgB","dA",1,7,2,"C0392B","F2F2EE","little propeller plane","squeak","Brrrrrm. Loop-de-loop.","toy"},
 	{"toy block wall","EMCCII","GdS",2,1,4,"E53935","1E88E5","stacked colourful toy blocks","thud","A, B, C, D, defence.","silly,cute"},
-	{"toy blocks","BMBCII","GV",1,3,3,"C0392B","2F6FD1","stack of colourful plastic bricks","squeak","Step on one. Learn true pain.","toy,building"},
+	{"toy blocks","BMBLII","SNP",3,4,3,"E2483F","4086DE","chunky wooden toy blocks in bright colours","squeak","Step on one. Learn true pain.","household,toy,nursery"},
 	{"toy boat","BBAJHJ","dB",1,4,2,"F2F2EE","2F6FD1","little toy sailing boat","squeak","Brave little captain.","toy"},
 	{"toy box","BMCL2I","ch",2,1,5,"C0392B","F1C40F","painted chest of toys","thud","Open it. The toys march out.","toy,container"},
 	{"toy car","BMAJHL","Dd",1,7,3,"C0392B","C9CED4","tiny shiny metal car","squeak","Vroom vroom on the carpet.","toy"},
