@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 	{"cream puff","IMBLKI","dSc",2,3,3,"E8C88A","F7F2EC","round puff pastry, cream","chomp","A puff of cream in a pastry cloud.","edible,sweet"},
 	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
 	{"cream tea","IGBOKI","F",2,5,3,"F7F2EC","C8762B","tea with scones and jam","crunch","Very British. Very civilized.","edible,healthy,fancy"},
@@ -402,5 +403,4 @@ return {
 	{"dirt","FEBDOB","jN",2,5,2,"6B4F34","A1856A","kicked-up brown clod burst","thud","Dirt in the eyes. Classic move.","silly"},
 	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
 	{"dirt cup","IMBLGI","SNP",2,3,3,"3A1A0C","E0102B","cup of crumbs and gummy worms","gloop","Dirt you can eat. With worms.","edible,sticky,dessert,silly"},
-	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
 }

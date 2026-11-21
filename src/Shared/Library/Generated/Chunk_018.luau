@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"naginata","CKDHuK","fTP",6,6,4,"C9CED4","24262A","curved blade on long shaft","shing","Elegant reach, very rude edge.","medieval,sharp"},
+	{"nahual","ALCJAA","DjY",5,7,4,"7C2D12","FACC15","jaguar shapeshifter with glowing markings","growl","A jaguar on Tuesdays. Your neighbor otherwise.","mythical"},
 	{"nail","BKAAJK","Te",1,9,2,"8A929B","8E9196","thin pointed metal spike","clink","Hit it on the head.","hardware"},
 	{"nail clippers","BMAHrK","f",1,7,2,"C9CED4","C9CED4","tiny snipping clipper","thud","Click. Click.","bathroom"},
 	{"nail gun","JKBAwI","TeV",3,8,4,"F1C40F","24262A","pneumatic nail tool","thunk","Construction, but faster than intended.","modern,ranged"},
@@ -401,6 +403,4 @@ return {
 	{"pakicetus","AMBJAA","DQfh",3,7,4,"8A7A5A","D8C8A8","wolf-like whale ancestor","howl","Great-grandpa of whales. Looks like a dog.","mammal,predator,wild,extinct,ancient"},
 	{"pakora","IMAELB","Ke",2,7,1,"C8803A","F2A62B","craggy fried fritter","pitter","Crunchy fritter of spicy veg.","edible"},
 	{"palace","EMFCII","GSh",5,1,9,"FFF8E1","FFD54F","grand wings, golden domes, fountains","thud","So fancy the guards wear sashes.","structure,building,royal"},
-	{"paladin","LHCJNA","GDFf",6,4,8,"E5E7EB","FACC15","shining plate armor, glowing warhammer","clang","Hits hard. Heals harder. Very polite.","holy,warrior"},
-	{"palak paneer","IMBOKI","WF",3,5,3,"3E7A2B","F7F2E0","green curry with cheese cubes","chomp","Spinach strength plus cheese.","edible"},
 }

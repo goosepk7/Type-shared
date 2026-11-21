@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
+	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
@@ -401,6 +403,4 @@ return {
 	{"thunderhead","GDEDOJ","QeL",7,3,5,"37474F","FFF59D","towering anvil storm cloud","rumble","A cloud so tall it has a ceiling.","storm,electric"},
 	{"thundersnow","GDDEOJ","JLN",6,5,4,"D8E6F0","FFE37A","snowstorm with flashes of lightning","boom","Snow, but with drum solos.","frozen,electric,storm"},
 	{"thunderstorm","GDEEOJ","SLPO",8,6,4,"2E3A55","FFE57F","towering black clouds spitting lightning","boom","Loud, bright, and very wet.","storm,electric"},
-	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
-	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
 }

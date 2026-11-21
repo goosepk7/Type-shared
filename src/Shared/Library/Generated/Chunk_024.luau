@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sky breaker","KLEBKI","kTe",9,6,2,"5EC8F2","FFFFFF","two cupped hands blast a huge rolling blue beam","zap","Charge it. Hold it. Let it go.","anime"},
+	{"sky dunk","BADN3B","UEk",7,6,2,"F27A1A","2A1A12","a hoop in the sky; a blazing ball dunked through it","crowd","Get posterized.","sport,basketball,sky drop"},
 	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
 	{"sky island","MFENIJ","lS",4,1,7,"8BC34A","E3F2FD","grassy rock floating in the sky","rumble","No roads. Just a long way down.","place,terrain,magic"},
 	{"sky pirate","LFCJNB","Aeb",5,7,4,"7F1D1D","60A5FA","pirate with goggles on an airship","arr","Pirates, but higher.","pirate,flying"},
@@ -401,6 +403,4 @@ return {
 	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
 	{"spinning wheel","OMCL1I","NO",2,1,4,"8B5A2B","D8CBB5","wooden wheel with spindle","clank","Spins wool. Spins traps.","mechanical,fantasy"},
 	{"spinosaurus","AMEJBA","DkfTHB",8,6,7,"8A4A2A","D8783A","crocodile snout, giant back sail","roar","Swims, fishes, has a sail. Overachiever.","dinosaur,extinct,reptile,predator"},
-	{"spiny lobster","ABBJRA","GfT",3,4,5,"C8701E","F2D0A0","long spiny antennae lobster","clack","Screeches its antennae like a violin.","crustacean,aquatic,armored"},
-	{"spiny mouse","AMAJAA","CdFTb",1,6,1,"8A7A6A","F2E8D8","mouse with spiky back","squeak","Regrows skin like a lizard.","mammal,cute"},
 }

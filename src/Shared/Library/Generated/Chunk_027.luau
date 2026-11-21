@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
+	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
 	{"thyme","IGBOMI","WF",2,4,3,"5E7A4A","8A9A6A","tiny-leaf sprigs","crunch","There's always thyme for this.","edible,vegetable,healthy,herb"},
 	{"tiara","BHAONI","F",2,5,3,"C9CED4","8E5CC2","sparkly jewelled headband","swish","Princess mode: on.","royal,shiny"},
 	{"tibetan mastiff","AMDJAA","GDQf",6,7,4,"6A3A1E","E8A04A","huge maned guardian dog","bark","A lion disguised as a dog.","mammal,pet"},
@@ -401,6 +403,4 @@ return {
 	{"uakari","AMBJBA","deb",2,7,2,"E83A2A","F2D0B0","bright red bald face","chatter","Face as red as a tomato.","mammal,primate,silly"},
 	{"ube","IMBLGI","SNP",2,3,3,"7A3A9A","C8A0E8","bright purple jam","gloop","Purple, sweet, and everywhere now.","edible,sticky,sweet"},
 	{"udon","IMBLGI","FHN",2,3,3,"F7F0DE","C8A070","thick white noodles in broth","gloop","Noodles as thick as ropes.","edible,sticky"},
-	{"ufo","DLDKHE","AlHegY",6,8,6,"B0BEC5","76FF03","silver disc, glass dome, tractor beam","warble","Take me to your loser.","space,alien"},
-	{"ugali","IMBLGG","USN",2,3,3,"F7F2E0","E8E0D0","white maize dough mound","wobble","A mound of maize goodness.","edible,wobbly"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gelatinous cube","AJDJGF","MHN",5,2,6,"86EFAC","F0FDF4","giant clear cube with stuff floating inside","squelch","A dungeon's cleaning crew.","slime,silly"},
+	{"gelato","ICBAKJ","JeN",3,5,2,"F7E0B0","9CBA6B","dense scoop in tiny cup","squish","Italian ice cream with a flair.","edible,frozen,sweet"},
 	{"gem","BMAA4J","cea",2,7,6,"1E9E5A","F2F2EE","faceted sparkling gemstone","chime","Shiny. Pointy. Priceless.","treasure,shiny"},
 	{"gemini","MHCEKJ","eV",5,5,5,"FFFFFF","FFD54F","two linked star figures","rumble","Two stars for the price of one.","space,zodiac"},
 	{"general","LECJNA","GOh",5,4,6,"365314","CA8A04","medal-covered coat, peaked cap","horn","Has a lot of medals. Mentions all of them.","military"},
@@ -330,7 +332,6 @@ return {
 	{"goody bag","BMBL2I","ch",1,1,1,"FF3EA5","F2F2EE","small bag of treats","pop","Surprises inside!","party"},
 	{"goofball","LMCJNG","Ujd",3,6,3,"FACC15","F472B6","silly face, propeller hat","giggle","Takes nothing seriously. Including you.","silly"},
 	{"googly eyes","CMAAJK","jde",3,7,2,"F2F2EE","24262A","wobbly stick-on eyes that make the world wobble","boing","Stick them on anything. Instant comedy.","goofy,silly,prank"},
-	{"goose","ABCJDC","DAfOB",3,5,2,"E8E4DC","F28A1E","long neck, honking open beak, wings out","honk","Fear it. Respect it. Honk.","bird,aquatic,silly"},
 	{"gooseberry","IGAELB","jeV",2,7,1,"AFC35A","E8F0B0","striped translucent green berry","pitter","Sour, stripy, and suspicious.","edible,fruit,sweet"},
 	{"gopher","AMAJAA","Cdb",1,6,1,"9A7450","D8C0A0","buck teeth, cheek pouches","squeak","Ruins lawns. Proudly.","mammal,cute"},
 	{"gopher tortoise","AMBJUA","GCN",2,2,8,"8A6A44","C8A07A","burrowing tortoise","hiss","Digs houses for 300 other species.","reptile,armored"},
@@ -402,5 +403,4 @@ return {
 	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
 	{"gravity lily","NFBLMJ","lS",2,1,2,"B388FF","E1F5FE","lily floating upside down","chime","Lifts everything nearby. Wheee.","plant,magic,mythical"},
 	{"gravity mage","LLCJNJ","lHN",6,4,4,"312E81","A855F7","floating rocks orbiting a robed mage","hum","What goes up stays up.","magic"},
-	{"gravity prison","KLCLII","NO",6,3,6,"4527A0","B388FF","warped purple sphere pinning target","whum","Too heavy to move.","space"},
 }

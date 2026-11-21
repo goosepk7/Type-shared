@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ladder truck","DBEKHL","Dkleg",6,5,8,"D22B2B","C0C0C0","long red truck with a giant ladder","siren","Ladder up. Hose down.","mechanical,vehicle,land"},
 	{"ladle","BMBHJK","fe",1,6,3,"8A929B","24262A","deep spoon on long handle","clang","Soup's on. In your face.","kitchen,household"},
 	{"ladon","AJEJCI","GfM",7,3,8,"14532D","FACC15","serpent coiled around golden apple tree","hiss","Guards golden apples. Never shares.","mythical,reptile,guardian"},
 	{"ladoo","IMBLKI","dSc",2,3,3,"F2A62B","E8C07A","golden round sweet ball","chomp","A golden sweet ball of joy.","edible,sweet,dessert"},
@@ -357,6 +358,7 @@ return {
 	{"lizard man of the swamp","ABCJNA","DfB",5,7,5,"365314","DC2626","green scaled swamp humanoid, red eyes","hiss","Chases cars. Never catches one.","cryptid,reptile"},
 	{"lizardfolk","ABCJNA","feB",5,6,6,"4D7C0F","FDE68A","scaly warrior with crest and spear","hiss","Cold-blooded. Hot-tempered.","reptile,warrior"},
 	{"llama","AMCJAA","dfeg",3,4,4,"F2EEE6","8A6A4A","long neck, banana ears, fluffy coat","hum","Spits first. Explains never.","mammal,farm"},
+	{"llama spit","ABBAAB","eNP",3,8,2,"F2EAD8","9ED65A","llama hocks a big green glob of spit","spit","Spits first. Explains never.","critter,mammal,ranged,gross"},
 	{"lmao","KHBF6F","jPO",3,8,1,"FDE047","38BDF8","laughing-crying face rolling on the floor, tears spraying","giggle","Laughed so hard the summon fell over.","meme,internet,silly"},
 	{"lo mein","IMBLGI","HN",2,3,3,"C8903A","7DBE3A","tossed soft noodles, veg","gloop","Soft noodles tossed with everything.","edible,sticky"},
 	{"loach","ABAJEC","jdB",1,6,1,"F28A1E","1E1E1E","orange fish with black bands","splash","Plays dead for attention.","fish,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"longbow","CMCAvI","Te",5,7,3,"5A3A1E","B89B6A","tall curved yew bow","twang","Hits from very, very far away.","medieval,ranged"},
 	{"longbowman","LFCJNA","Te",5,5,4,"15803D","78350F","tall yew longbow, green tunic","twang","Arrows blot out the sun.","warrior,archer"},
 	{"longhorn","AMDJAA","DkTO",6,4,7,"B8783E","F2EAE0","extremely wide horns","moo","Horns wider than a doorway.","mammal,heavy,farm"},
-	{"longhorn beetle","AMAJFA","Gf",1,3,4,"1E1E1E","F2F2F2","beetle with super long antennae","click","Antennae longer than its body.","insect,armored"},
-	{"longhouse","EMDCII","GSh",3,1,8,"6D4C41","C9A55A","long wooden hall with turf roof","thud","Feasting hall. Fighting hall. Same hall.","structure,building,ancient"},
 }

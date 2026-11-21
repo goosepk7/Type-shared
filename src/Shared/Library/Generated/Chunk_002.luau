@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ash cloud","HAEDOJ","jSMN",5,3,3,"595350","9E9690","huge grey billowing ash plume","rumble","Turns day into a very grey night.","natural,fire"},
 	{"ash fall","HADEOJ","jSN",4,3,3,"9E9E9E","5D4037","grey snowfall of volcanic ash","hush","Grey snow. Warm and gritty.","fire,natural"},
 	{"ash storm","FADDOJ","KjNP",6,4,4,"5D4037","FF7043","grey ash blizzard lit by red sparks","rumble","Grey snow that stings.","fire,storm"},
 	{"ash tree","NHDCMI","GWkS",4,1,7,"8D8D8D","E53935","tall tree with orange-red berry clusters","rustle","Wards off witches. Allegedly.","plant,tree"},
@@ -397,10 +398,9 @@ return {
 	{"beatbox","KMBFOB","dO",2,8,1,"7C4DFF","FFFFFF","rhythmic visible bass pulses","boots","Boots and cats and boots and cats.","music"},
 	{"beatboxer","LMCJNI","jO",3,5,3,"111827","22D3EE","mic and booming mouth bass","beat","Boots and cats and boom.","music"},
 	{"beauty","KHCF6B","jcaO",3,5,2,"F9A8D4","FDE68A","shimmering pink sparkle wave with a hand mirror and a rose","shimmer","Stunning. Literally. Two seconds of stun.","fancy,cute"},
-	{"beaver","ABBJAA","GCdB",3,6,1,"6A4428","2A1E16","flat paddle tail, big orange teeth","squeak","Builds dams. Never takes a day off.","mammal,cute"},
+	{"beaver dam","EEDCII","GkS",5,4,7,"7A5232","C89A5E","wall of gnawed logs that bursts and rolls forward","thud","Builds dams. Never takes a day off.","critter,mammal,wall"},
 	{"bed","BMDN0I","FN",1,1,5,"F2F2EE","1F2F55","bed with pillows and blanket","thud","Nap time heals all wounds.","furniture,household"},
 	{"bed bug","AMAJFA","diAP",1,6,1,"8A3A1E","C8702A","flat red-brown tiny bug","buzz","Don't let them bite.","insect"},
 	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
-	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
 }
