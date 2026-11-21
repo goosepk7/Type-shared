@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"weapon","CKCELB","kTeP",6,6,5,"8A929B","6B4226","falling rack of swords, axes, maces and a rubber chicken","clang","Which weapon? All of them. At once.","sharp,medieval"},
 	{"weasel","AMBJAA","CjfT",3,8,2,"8A5A30","F2E6CC","long slim body, short legs, white belly","chatter","Pop goes the weasel.","mammal,predator"},
 	{"weather","GFCNOI","jP",3,5,3,"90CAF9","FFF59D","rapidly switching sun, rain and snow","whoosh","Unpredictable, as always.","storm"},
 	{"weather machine","OFDN1I","jPh",6,2,5,"F2F2EE","87CEEB","dish tower ringed by tiny clouds","hum","Forecast: whatever you want.","scifi"},
@@ -138,7 +137,7 @@ return {
 	{"wind blade","FFCHrB","kTe",5,9,1,"B2EBF2","FFFFFF","crescent of slicing pale air","whistle","Sharp wind. Very sharp wind.","air,sharp"},
 	{"wind bolt","FFBAKB","ke",4,10,1,"B3E5FC","FFFFFF","swirling clear air dart","whistle","A tiny tornado, fired fast.","air"},
 	{"wind chill","GCCFOB","JIN",4,7,2,"B9D6E6","F7FBFD","biting icy gusts with flakes","howl","Feels colder than it is. Rude.","frozen,air"},
-	{"wind chimes","BFBFJI","dF",1,2,2,"C9CED4","C49A6C","hanging tubes tinkling","chime","Tinkle tinkle. Calm.","music"},
+	{"wind chimes","BFBNII","SI",2,2,3,"E9B949","96DCD6","brass chimes on a black shepherd's hook","chime","Tinkle tinkle. Shoo.","household,porch"},
 	{"wind dash","KFCOKB","DI",4,10,2,"B3E5FC","FFFFFF","caster riding a gust","whoosh","Ride the wind.","air,speed"},
 	{"wind dragon","AFEKCB","Aklg",7,9,6,"E0F2FE","60A5FA","feathered sky serpent with cloud mane","howl","Flies so fast it makes weather.","mythical,reptile,wind"},
 	{"wind horse","AFDKAB","DAg",5,10,4,"E0F2FE","93C5FD","horse made of swirling air","neigh","Faster than the wind. It is the wind.","mount,wind"},

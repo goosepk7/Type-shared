@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"spike corridor","MKCLII","STN",5,1,7,"616161","9E9E9E","stone hall with spikes in walls","echo","Run. Dodge. Run some more.","place,adventure,sharp"},
 	{"spike launcher","OKCMwI","TeV",5,6,5,"3A3F45","8A929B","turret spraying metal spikes","clank","A porcupine with a grudge.","defense,mechanical"},
 	{"spike pit","EECLII","ZSTO",5,1,6,"5D4037","9E9E9E","hidden hole lined with sharp stakes","thud","Mind the gap. Mind the pointy bits.","structure,defense,sharp"},
 	{"spike roller","OKDL1F","DkT",6,4,7,"3A3F45","5B6168","spiked log rolling down a ramp","clank","Rolls in. Pokes everyone.","defense,mechanical"},
@@ -403,4 +402,5 @@ return {
 	{"suburb","MMENII","jSh",2,1,7,"7CB342","F5E6CA","rows of identical houses and lawns","crowd","Every house looks the same. Confusing.","place,silly"},
 	{"subway train","DMEKHL","CDkg",6,7,8,"B0B7BF","1C5CAB","long silver carriages, sliding doors","engine","Mind the gap. Mind the train.","mechanical,vehicle,land"},
 	{"success","KHCOKJ","WFk",4,6,3,"22C55E","FACC15","green tick in a gold burst with a tiny fist pump","fanfare","Nailed it. First try. No one saw the others.","gaming,support"},
+	{"succulent","NGAOMI","GF",1,1,5,"80CBC4","F8BBD0","chubby rosette of plump leaves","thud","Tiny, chubby, unkillable.","plant,desert,cute"},
 }

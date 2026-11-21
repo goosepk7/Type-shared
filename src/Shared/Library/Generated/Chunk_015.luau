@@ -117,7 +117,7 @@ return {
 	{"lava giant","AAEJNA","KkS",8,3,8,"450A0A","F97316","cracked black giant oozing lava","rumble","Every footprint is a fire hazard.","giant,fire"},
 	{"lava hammer","CADHtK","KkfO",8,3,7,"1B1A22","D9480F","glowing molten stone hammer","shing","Each hit leaves a puddle of fire.","fantasy,sharp"},
 	{"lava hound","AACJAA","KDS",5,7,4,"7F1D1D","F97316","rocky hound with molten drool","growl","Fetch? It melted the stick.","canine,fire"},
-	{"lava lamp","BHBG0I","jc",1,2,3,"FF3EA5","C9CED4","glass tube with blobby goo","thud","Groovy hypnosis.","furniture,household"},
+	{"lava lamp","BABJ0I","KQ",2,3,3,"D63C8E","FF9A3C","lava lamp oozing glowing goo blobs","thud","Groovy. Gooey. Hot.","household,bedroom"},
 	{"lava moat","EADLII","GKS",6,1,8,"FF5722","3E2723","glowing lava channel in black rock","bubble","Like a moat, but worse in every way.","structure,defense,flammable"},
 	{"lava pizza","IABAKK","UKe",3,7,2,"D8302B","F2862B","pizza bubbling with molten cheese","whoosh","Too hot. Seriously too hot.","edible"},
 	{"lava pool","MACLII","KS",6,1,5,"FF5722","FFC107","bubbling pool of molten rock","thud","The floor is lava. This bit, anyway.","place,terrain,flammable"},
@@ -151,7 +151,6 @@ return {
 	{"leaf blower","OFCF1K","kIeN",4,7,4,"E67E22","24262A","handheld engine with a long nozzle and leaves","whoosh","Moves leaves. Moves enemies. Wakes the street.","household,garden,loud,push"},
 	{"leaf insect","AMAJFA","dZP",1,6,1,"6AC84A","4A8A3A","flat leaf-shaped green body","buzz","A leaf that walks. Very rude to salads.","insect"},
 	{"leaf pile","NGBLMI","ZSN",1,1,2,"FF9800","C62828","crunchy heap of autumn leaves","rustle","Jump in! Something is hiding in there.","plant,silly"},
-	{"leaf rake","JKCHJK","fH",2,5,3,"2E8B57","C9CED4","fan of springy tines","clank","Gathers leaves. Gathers foes.","garden"},
 	{"leaf shield","FGCIKK","GF",2,4,4,"43A047","AED581","whirling leaves forming a dome","rustle","Nature has your back.","plant,defence"},
 	{"leaf storm","FGDN5K","jlT",6,6,2,"7CB342","FFB300","whirlwind of sharp green and gold leaves","rustle","Autumn, but violent.","plant,storm"},
 	{"leafcutter ant","AMAJLA","CdlfP",1,5,1,"B85A2A","6AC84A","ants carrying leaf pieces","skitter","Farmers with leaf umbrellas.","insect,swarm"},
@@ -403,4 +402,5 @@ return {
 	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
 	{"log wall","EGDCII","GST",3,1,6,"8D6E63","5D4037","row of sharpened upright logs","thud","Pointy end goes up. Usually.","sharp,flammable"},
 	{"loggerhead","ABCJUC","GNB",3,2,8,"B8703A","E8C08A","big headed sea turtle","hiss","Big head. Crunches crabs.","reptile,armored"},
+	{"loki","LLCJZA","jZVbY",7,8,5,"166534","D4AF37","grinning red-haired trickster, fur cloak, flickering copies","cackle","It was not him. It is never him. It was him.","mythical,norse,trickster"},
 }
