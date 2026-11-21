@@ -190,6 +190,7 @@ return {
 	{"charades","KMBONA","jdO",2,5,1,"A855F7","FDE68A","person frantically miming, others shouting guesses","crowd","Two words. First word. Sounds like... ouch?","party,toy"},
 	{"chard","IGBOMI","WF",2,4,3,"3E7A2B","D23A4A","broad leaves, rainbow stems","crunch","Comes with its own rainbow.","edible,vegetable,healthy"},
 	{"charge","KMCOKA","DkO",5,9,3,"FF7043","FFFFFF","shoulder-first charge with dust wake","roar","Chaaaaarge!","speed"},
+	{"charge buster","CDCAwB","Dke",5,8,3,"5AE6FF","FFF078","an arm cannon: three pellets, then a charged plasma shot","zap","Hold to charge. Or don't. It charges anyway.","game,platformer,robot,blaster"},
 	{"chariot","DMCKHL","DkfTg",6,8,5,"D4AF37","8B1A1A","two-wheeled open car, spiked hubs, horses","engine","Spinning wheel spikes. Bad day for ankles.","ancient,royal"},
 	{"chariot of fire","DADKHB","KDAfg",7,8,6,"FF6F00","FFD54F","blazing golden chariot pulled by fire horses","whoosh","Leaves scorch marks in the sky.","vehicle,magic,mythical,holy"},
 	{"charisma","KHBOKJ","jc",2,5,2,"FF4081","FFD54F","sparkly confident aura","ding","Everyone suddenly likes you.","cute"},
@@ -402,5 +403,4 @@ return {
 	{"claidheamh","CKDHJK","kf",7,4,6,"8A929B","2E5E3E","basket-hilt broadsword","shing","Big sword with tartan pride.","fantasy,sharp"},
 	{"clam","ABAJGI","GfHN",1,1,6,"D8C8B0","9A8A70","two-shell clam half open","squelch","Happy as a clam. Allegedly.","mollusk,aquatic"},
 	{"clam chowder","IBBOGI","FS",3,4,3,"F2EAD5","C8A070","creamy white soup, crackers","slurp","Creamy, briny, and warming.","edible,warm,healthy"},
-	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
 }

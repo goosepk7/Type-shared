@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
 	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
 	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
 	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
@@ -278,6 +279,7 @@ return {
 	{"coral snake","AMCJCD","fMN",4,6,3,"D8201E","F2D82A","red yellow black rings","hiss","Red touches yellow? Back away.","reptile,venomous"},
 	{"coral wall","EBDCII","GST",3,1,7,"FF7043","26C6DA","jagged colourful coral barrier","thud","Pretty, pointy, and alive.","structure,defense,aquatic"},
 	{"core beam","OHDBwI","kTe",7,5,5,"A8F4FF","2F8FD8","a glowing chest core charges up and fires a thick beam","hum","Fwoom! Out of my space.","hero,movie,scifi"},
+	{"core bomb","BLDL3F","Ekl",6,5,3,"BE6EFF","FAF0FF","a core bomb left behind as the caster rolls away","boom","Drop it, roll, and do not look back.","game,platformer,space,bomb"},
 	{"corgi","AMBJAA","DdQf",2,6,2,"D98A3A","FFF4E6","long body, stubby legs, fox face, loaf butt","yip","Legs: optional. Confidence: maximum.","mammal,pet,cute"},
 	{"coriander","IFBDOJ","jPO",2,5,1,"C8A070","E8D8A8","round tan seeds","puff","Citrusy little seeds.","edible,spice"},
 	{"cork","BMAA3B","UeO",2,9,2,"C9A66B","A67C52","small brown cork popping at high speed","pop","POP! Right in the eye. Every time.","party"},
@@ -401,6 +403,4 @@ return {
 	{"crate barricade","EECCII","GdS",2,1,4,"A1887F","6D4C41","stacked wooden crates","thud","Mystery boxes. Mystery defence.","structure,defense,flammable"},
 	{"crate of tnt","BACL2I","EkP",8,1,2,"C0392B","8B5A2B","wooden crate stencilled TNT","thud","Do. Not. Drop.","container,explosive"},
 	{"crater","MEELII","SHN",4,1,8,"5D5D5D","8D6E63","round dented bowl with a rocky rim","rumble","Something big landed here once.","place,terrain"},
-	{"crater landing","KEDNNB","Dk",5,7,3,"D9A25A","6A4A30","leap up and slam down in a three-point landing","slam","Nailed the landing. And the floor.","hero,movie,impact"},
-	{"crawl","KMAOKD","ZN",1,2,2,"A1887F","FFFFFF","low shuffling outline","shuffle","Army crawl. Very sneaky.","stealth,silly"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"diploma","BHBOJK","FaO",2,5,2,"F5F0DC","DC2626","rolled parchment tied with a red ribbon, gold seal","fanfare","Officially qualified to bonk.","school"},
+	{"dipper","ABAJDB","dAB",1,7,1,"3A3A3A","F2F2F2","songbird that walks underwater","tweet","Walks underwater. Seriously.","bird,cute"},
 	{"diprotodon","AMDJAA","DkO",6,4,8,"8A6A4A","C8A87A","rhino-sized wombat","roar","A wombat the size of a car.","mammal,extinct,ancient,heavy"},
 	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
 	{"director","LMCJNA","jOh",4,4,4,"111827","FBBF24","beret, megaphone, folding chair, clapperboard","clack","CUT! Do it again, but with more dying.","art,movie"},
@@ -284,6 +286,7 @@ return {
 	{"earth tremor","FECNOI","NO",4,5,2,"8D6E63","D7CCC8","shuddering ground ring","rumble","Wobbly floor, wobbly enemies.","heavy"},
 	{"earth wall","KEDCnI","G",2,1,9,"8D8072","BCAAA4","wall of stacked stone erupting from ground","rumble","Earth stands up for you.","heavy,defence"},
 	{"earth wave","FEDF6F","kPO",6,5,5,"795548","BCAAA4","ripple of earth rolling forward like a wave","rumble","The ground does the wave.","heavy"},
+	{"earthbind shout","KECA6B","TeN",4,7,3,"D8344E","FFB0A0","a rolling wave of crimson chain-runes that drags fliers down","roar","What goes up must come down, and stay down a while.","game,rpg,shout,dragon"},
 	{"earthquake","HEFNOI","kPO",8,2,6,"6B4E31","A88B6A","cracking ground, splitting fissures, bouncing rocks","rumble","Floor is now dancing.","natural,heavy"},
 	{"earthrise","MHENKJ","FS",3,2,6,"1E88E5","E0E0E0","blue planet rising over a grey horizon","twinkle","A peaceful view. Then the attack.","space,star"},
 	{"earthshaker","HEFNOI","kPO",9,3,7,"4E342E","FF7043","massive cracking slam with lava glow","rumble","One stomp. Everything shakes.","natural,heavy,danger"},
@@ -391,6 +394,7 @@ return {
 	{"ember","FAAAKJ","UKe",2,8,1,"FF7A1A","FFD9A0","glowing coal fleck, faint smoke trail","crackle","Small. Hot. Holds a grudge.","fire"},
 	{"ember bloom","FACNbI","KEk",5,6,5,"FF5CAA","FF8C6E","a lotus of pink flame blooming open round the caster","whoomph","Burns the bad guys. Burns the bad stuff off you too.","anime,slayer,fire,demon"},
 	{"ember cloud","FACDOJ","KQ",5,4,2,"FF7043","FFE0B2","glowing cloud raining sparks","crackle","A cloud with a temper.","fire"},
+	{"ember dome","FADNKI","KkP",5,6,4,"FF7A2E","FFD27A","a seed of fire slammed down that swells into a dome of flame","boom","Bring marshmallows, stand well back.","game,adventure,fire,magic"},
 	{"ember phoenix chick","AAAJDB","KAF",2,6,1,"F97316","FEF08A","fluffy fire chick with flame tuft","chirp","Reborn from a burnt toast.","fire,cute,bird"},
 	{"ember sprite","AAAJNB","KjA",2,9,1,"F97316","FDE047","tiny flame fairy","crackle","Small spark. Big trouble.","fairy,fire"},
 	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
@@ -399,8 +403,4 @@ return {
 	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
 	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
-	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
-	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
-	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
-	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 }

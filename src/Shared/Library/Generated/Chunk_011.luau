@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gauntlet","CKBHJK","Gkf",4,6,6,"8A929B","6B4226","armoured plated glove","bonk","Slaps with authority.","medieval,armor"},
+	{"gaur","AMDJAA","DkO",7,4,7,"2A2018","F2E6C8","towering black bull, white socks","moo","Biggest wild cattle. Wears socks.","mammal,heavy"},
+	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
+	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
+	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
 	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
 	{"gazebo","EMCCII","GS",2,1,4,"F5F5F5","7CB342","eight-sided open hut with pointed roof","thud","Nice spot for a picnic. And a siege.","structure,building,cute"},
 	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
@@ -311,6 +316,7 @@ return {
 	{"golden lightning","FDDAKB","KeL",8,10,1,"FFD54F","FFFFFF","gleaming gold bolt with sparkles","crack","Lightning's fanciest outfit.","electric,holy"},
 	{"golden milk","IHBOKI","KF",2,5,2,"E8A21A","F7F2E8","mug of yellow milk","slurp","Golden, warm, and soothing.","edible,drink,warm"},
 	{"golden orb weaver","AJBLQA","SfMN",2,6,2,"F2C82A","1E1E1E","big spider with golden web","skitter","Spins webs of gold silk.","arachnid,spooky,venomous"},
+	{"golden overdrive","KHCONI","DkI",4,10,5,"FFD650","FFF4BE","the caster blazing gold with a crest of swept flame spikes","whoosh","Gotta go faster, and shinier.","game,platformer,speed,transformation"},
 	{"golden pheasant","AMBJDA","df",2,4,2,"F2C02A","E8301E","golden crest, red body","cluck","A firework with feathers.","bird,farm"},
 	{"golden retriever","AMCJAA","DQFf",4,7,4,"E0A84A","F5DEB0","fluffy golden coat, happy face, feathered tail","bark","Has never had a bad day. Ever.","mammal,pet"},
 	{"golden retriever puppy","AMBJAA","dQFf",2,6,2,"E8B85A","F7E8C8","fluffy golden puppy","yip","Pure sunshine in dog form.","mammal,pet,cute"},
@@ -397,10 +403,4 @@ return {
 	{"grapple gun","OKBAwI","lHe",3,10,3,"24262A","C9CED4","pistol that fires a hook and reels you in","twang","Thwip! Yoink.","modern,mobility"},
 	{"grappling iron","CKBAJI","He",3,6,4,"5B6168","B89B6A","multi-hook thrown on rope","bang","Pull that ship closer.","pirate"},
 	{"grass","NGBNMI","FS",1,1,2,"7CB342","8BC34A","patch of green blades","rustle","Touch it. You need to.","plant"},
-	{"grasshopper","AMAJFG","UdP",1,6,1,"6AA03A","C8D84A","long hind legs, antennae","buzz","Jumps first. Thinks never.","insect"},
-	{"grater","BMBHJK","fV",2,5,4,"8A929B","24262A","box with jagged holes","clang","Shred it. Shred them.","kitchen,household"},
-	{"gratitude","KHBOKJ","F",1,4,2,"FFB74D","FFF8E1","warm orange heart glow","chime","Thanks! Here's a heal.","support,cute"},
-	{"graupel","GCBEOJ","UN",2,5,1,"F1F6F9","C7D9E4","tiny foam-like snow pellets","patter","Snow that went to the gym.","frozen"},
-	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
-	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
 }

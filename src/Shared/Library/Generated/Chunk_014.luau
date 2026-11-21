@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"impatiens","NGBNMI","dEFS",1,1,2,"F06292","FFFFFF","bushy little flat blooms","rustle","Seed pods explode when touched. Pop!","plant,flower"},
+	{"implode","KIDGKI","EHO",7,6,1,"1A0033","B388FF","everything crumpling into a dark point","whum","Explosion, but backwards.","space,explosive"},
+	{"impostor","LICJNA","jZb",4,6,4,"DC2626","F8FAFC","teammate shape with a suspicious smile","whisper","Kinda sus. Definitely sus.","meme,villain"},
+	{"imprison","KLCLII","GO",6,4,6,"546E7A","FFD54F","glowing bars slamming down around target","clank","Go directly to jail.","magic"},
+	{"impundulu","ADCJDB","AeL",5,9,3,"F8FAFC","FDE047","white bird shooting lightning from wings","zap","Lays an egg of lightning. Hot potato.","mythical,bird,storm"},
+	{"inchworm","AMAJTA","CP",1,3,1,"8AC83A","C8E87A","green looping caterpillar","squelch","Measures everything. Slowly.","bug"},
 	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
 	{"indestructible","KKDOKI","Ga",2,3,10,"90A4AE","FFD54F","thick shining metal aura","clang","Tried breaking it. It broke you.","defence"},
 	{"indian paintbrush","NGBNMI","dFS",1,1,1,"E53935","FF9800","red-tipped spikes like dipped brushes","rustle","Looks dipped in paint.","plant,flower"},
@@ -397,10 +403,4 @@ return {
 	{"kris","CKBHrK","fT",4,8,3,"8A929B","D4A72C","wavy serpentine dagger","shing","Wiggly blade, straight to the point.","sharp,ancient"},
 	{"kronosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","B8C0C8","giant short-necked pliosaur","roar","Skull the size of a car.","extinct,reptile,aquatic,ocean"},
 	{"kudu","AMDJAA","DkT",5,8,4,"8E7A64","F2F0EA","huge spiral horns, white stripes","bleat","Horns like a corkscrew. Very fancy.","mammal,wild"},
-	{"kudzu","NGDLMI","GWSHNP",4,3,6,"2E7D32","7CB342","blanket of vines swallowing everything","rustle","Grows a foot a day. Eats houses.","plant"},
-	{"kuiper belt","MCFEKJ","JReP",6,3,7,"B3E5FC","9E9E9E","ring of icy rocks far from the sun","twinkle","A freezer full of space rocks.","space,star"},
-	{"kukri","CKBHrK","fT",4,7,4,"8A929B","8B5A2B","forward-bent heavy knife","shing","Bent on success.","medieval,sharp"},
-	{"kulcha","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","stuffed fluffy flatbread","whoosh","A flatbread hiding a surprise.","edible"},
-	{"kulfi","ICBAKJ","JeN",3,5,2,"F2E2B0","9CBA6B","cone-shaped frozen stick","squish","Dense, creamy, and cardamom-cool.","edible,frozen,sweet"},
-	{"kumquat","IMAAKF","jke",3,6,2,"F59F1B","4F8A2B","tiny oval orange, eat whole","squirt","Bite-size citrus. Surprise sour inside.","edible,fruit,sour"},
 }

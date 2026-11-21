@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"locro","IBBOGI","FS",3,4,3,"E8C04A","C8762B","thick corn and squash stew","slurp","Thick, hearty Andean stew.","edible,warm,healthy"},
+	{"locust","AMADLB","diAPh",2,6,1,"8A7A3A","D8B84A","grasshopper swarm cloud","buzz","Arrives in billions. Leaves nothing.","insect"},
+	{"locust tree","NGDCMI","GWkST",4,1,7,"5D4037","9CCC65","thorny tree with long twisty pods","rustle","Thorns as long as fingers.","plant,tree,sharp"},
+	{"log bridge","EGCCII","GSN",1,1,4,"8D6E63","7CB342","single fallen tree across a gap","thud","One wrong step and splash.","structure"},
+	{"log flume","DBCKHC","DIg",3,7,4,"8D6E63","4FC3F7","hollow log boat on a water chute","splash","The big drop! Everyone gets soaked.","vehicle,silly"},
+	{"log fort","EGEMII","GSe",4,1,7,"8D6E63","5D4037","square log stockade with watch posts","thud","Built from a whole forest.","structure,defense,flammable"},
 	{"log splitter","JKCL1I","kV",5,1,7,"C0392B","8A929B","hydraulic wedge on a frame","clank","Splits logs. And opinions.","tool"},
 	{"log swap","NGBIMI","ZY",3,9,4,"8B5A2B","D9B38C","you poof into a log and appear somewhere else","poof","Nice hit. On a log.","anime,ninja"},
 	{"log truck","DGDKHL","DkgO",6,4,8,"6D4C41","2E7D32","truck stacked high with logs","engine","Drops a log avalanche.","mechanical,vehicle,land"},
@@ -383,6 +389,7 @@ return {
 	{"melonpan","IMBAKF","ke",3,6,2,"E8D86A","C8B83A","bun with crackled crust","splat","Looks like a melon. Tastes like a cookie.","edible"},
 	{"melt","KACFOB","KXN",5,5,2,"FF8A65","FFE0B2","heat wave turning things droopy","drip","Everything goes droopy and sad.","fire,silly"},
 	{"meltdown","HJENOI","KESM",9,3,4,"C6FF00","FF3D00","glowing green core bursting and sizzling","alarm","Warning. Warning. Too late.","toxic,explosive,danger"},
+	{"meltdown mech","BADLWI","DEk",7,5,3,"FF78BE","FFF4FA","a pink mini mech that beeps faster, then blows up","boom","It was a good mech. It was a great mech.","game,shooter,robot,bomb"},
 	{"melusine","ABCJCC","AcB",5,6,4,"1D4ED8","F0ABFC","serpent-tailed lady with dragon wings","sing","Princess on top, snake on bottom, wings too.","mythical,aquatic"},
 	{"meme","KLCELJ","jdPO",4,8,1,"FFFFFF","111827","square pictures with bold white top and bottom text","honk","Top text. Bottom text.","internet,meme,silly"},
 	{"memory","KLBOKJ","FY",2,4,2,"B39DDB","FFF8E1","floating photo-like light frames","chime","Remember when you were winning?","time"},
@@ -396,11 +403,4 @@ return {
 	{"mercury","FKBF6F","MNV",4,6,3,"BFC5CC","8A939C","rolling liquid mirror blobs","slosh","Liquid metal that refuses to sit still.","toxic,shiny"},
 	{"mercury planet","MAEGKJ","KDke",7,6,9,"9E9E9E","795548","small cratered grey sphere","rumble","Smallest planet. Fastest punch.","space"},
 	{"mercury wave","FKDF6F","kNP",7,5,5,"B0BEC5","ECEFF1","rolling mirror-silver liquid wave","slosh","Shiny. Heavy. Unstoppable.","heavy,shiny"},
-	{"mercy","KHBOKJ","F",1,4,3,"FFF8E1","B3E5FC","soft white feather glow","chime","Spared. This time.","holy,support"},
-	{"merganser","ABBJDC","AfTB",2,5,2,"2A6A4A","F2F2F2","crested fish duck with saw bill","quack","Duck with teeth. Kinda.","bird,aquatic"},
-	{"merge","KLCOKI","WF",5,4,4,"FFB74D","7E57C2","two glows swirling into one","warp","Two become one. Bigger one.","magic"},
-	{"meringue","IMBLGG","USN",2,3,3,"F7F4F0","F2E2D0","swirled white peak","wobble","A sugar cloud with crunch.","edible,wobbly,sweet"},
-	{"merlin falcon","AMBJDB","DAfT",3,9,3,"5A6A8A","D8A06A","small dashing falcon","screech","Not the wizard. Still magic.","bird,predator"},
-	{"mermaid","ABCJEC","FceB",4,7,4,"0EA5E9","F472B6","fish tail, seashell top, flowing hair","sing","Lives under the sea. Collects forks.","mythical,aquatic"},
-	{"mermaid princess","ABCJEC","FcB",4,7,4,"0EA5E9","F472B6","crowned mermaid with pearl necklace","sing","Wants legs. Settles for victory.","royal,aquatic"},
 }
