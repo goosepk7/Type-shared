@@ -67,7 +67,7 @@ return {
 	{"african wild dog","AMCJAA","DQfh",5,8,4,"A0703A","1E1A16","patchy painted coat, round big ears","howl","Best team players on the savanna.","mammal,predator,wild"},
 	{"afro","BMCI3E","GUa",3,3,6,"2B1B12","4A3222","giant round fluffy afro with a comb stuck in","boing","Absorbs impacts and compliments.","body,cool"},
 	{"afternoon","KHCNKI","FSN",3,2,2,"FDBA74","7DD3FC","lazy golden sun at three o'clock with a snoozing cat","yawn","School is out. Snacks are in.","time"},
-	{"aftershock","HEDNOI","kO",6,3,4,"705336","A58866","second ring of ground cracks","rumble","The sequel nobody asked for.","natural"},
+	{"aftershock","HEDNII","kl",6,3,3,"705336","A58866","a stomp, then a wider ring of ground cracks heaves","rumble","The sequel nobody asked for.","natural,earth,terrain"},
 	{"agapanthus","NGBNMI","dFS",2,1,2,"5C6BC0","7CB342","round ball of blue trumpets","rustle","Blue fireworks on a stick.","plant,flower"},
 	{"agave","NECLMI","GST",3,1,7,"80CBC4","26A69A","huge blue spiky rosette","thud","Spikes on every tip.","plant,desert,sharp"},
 	{"agave syrup","IMBLGI","SNP",2,3,3,"E8C04A","F2D870","golden thin syrup","gloop","Desert honey.","edible,sticky"},

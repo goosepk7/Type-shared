@@ -215,7 +215,7 @@ return {
 	{"howler monkey","AMBJBA","debO",2,7,2,"3A1E14","8A4A22","dark shaggy, big throat, howling","howl","Loudest land animal. Ears hurt.","mammal,primate"},
 	{"huayangosaurus","AMCJAA","GkfT",4,3,9,"8A6A3A","D8B07A","small early stegosaur","grunt","Tiny stego. Same spikes.","dinosaur,extinct,reptile,armored"},
 	{"hubcap","BKBAKK","Ue",2,8,3,"DDE3E8","C9CED4","shiny wheel cover","clang","Spinning chrome disc of doom.","urban"},
-	{"hubcap toss","BKBAJK","Uke",3,4,3,"C9CFD6","22232A","a chrome hubcap spinning flat and ricocheting between enemie","clang","It came off at the first corner.","transit,projectile,silly"},
+	{"hubcap toss","BKBAJK","Uke",3,4,3,"C9CFD6","22232A","a chrome hubcap spinning flat, ricocheting between enemies","clang","It came off at the first corner.","transit,projectile,silly"},
 	{"huckleberry","IGAELB","eVP",2,7,1,"3E2A5E","6B4E8A","small round dark blue berry","pitter","Wild, tart, and hard to pick.","edible,fruit,sweet"},
 	{"huevos rancheros","IGBOKI","F",2,5,3,"F2B81A","C8302B","fried eggs on tortilla with salsa","crunch","Ranch-style eggs with a kick.","edible,healthy"},
 	{"hug","KHBAKB","FO",2,6,3,"F8BBD0","FFFFFF","warm pink glow with floating hearts","aww","Too strong to escape. Too nice to mind.","cute,support"},
