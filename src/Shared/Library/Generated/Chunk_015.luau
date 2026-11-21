@@ -123,7 +123,7 @@ return {
 	{"lavender field","NGENMI","FSN",2,1,4,"9575CD","7CB342","purple rows rolling into distance","rustle","Everyone gets very, very relaxed.","plant,crop"},
 	{"lawn chair balloon","DFBKHJ","Alg",2,2,1,"43A047","E53935","garden chair lifted by party balloons","engine","Up, up, and uh oh.","vehicle,silly"},
 	{"lawn flamingo","BMBJDI","jd",1,1,2,"FF3EA5","24262A","plastic flamingo on wire legs","thud","Fabulous lawn sentinel.","garden"},
-	{"lawn mower","OGCO1L","Dkf",4,7,4,"D8413A","5FAE3E","red push mower with a black engine and a steel handle","engine","Gives enemies a short back and sides.","household,garden,mechanical"},
+	{"lawn mower","DGBKHL","DkfTg",4,4,5,"2E8B57","F2C14E","small tractor body, spinning blade deck","engine","Gives enemies a short back and sides.","mechanical,vehicle,land"},
 	{"lawn sprinkler","OBCN1K","kSNP",4,3,4,"3FA34D","7CC8F2","impulse sprinkler head spraying a sweeping jet","splash","Tick-tick-tick-shhhhh. You're soaked.","household,garden,water,summer"},
 	{"lawyer","LMCJNA","jO",3,3,4,"111827","F8FAFC","robe, gavel, briefcase","ding","Objection! Sustained. Bonk.","silly"},
 	{"layer","KEBIyE","GSV",3,2,7,"A855F7","F9A8D4","stacked shells peeling away one at a time","pop","Like an onion. Or a cake. Everybody likes cake.","defense"},

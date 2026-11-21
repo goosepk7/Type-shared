@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ube","IMBLGI","SNP",2,3,3,"7A3A9A","C8A0E8","bright purple jam","gloop","Purple, sweet, and everywhere now.","edible,sticky,sweet"},
 	{"udon","IMBLGI","FHN",2,3,3,"F7F0DE","C8A070","thick white noodles in broth","gloop","Noodles as thick as ropes.","edible,sticky"},
 	{"ufo","DLDKHE","AlHegY",6,8,6,"B0BEC5","76FF03","silver disc, glass dome, tractor beam","warble","Take me to your loser.","space,alien"},
 	{"ugali","IMBLGG","USN",2,3,3,"F7F2E0","E8E0D0","white maize dough mound","wobble","A mound of maize goodness.","edible,wobbly"},
@@ -402,5 +403,4 @@ return {
 	{"weightless palm","KLCNKJ","klO",7,7,3,"FFC2E2","6E4AA8","enemies drift up helplessly, then drop","hum","Up you go. Down you come.","anime,hero,gravity"},
 	{"weightlifter","LECJNA","Gkl",6,4,7,"111827","DC2626","tank top, huge muscles, barbell","thud","Do you even lift? He does.","sport,heavy"},
 	{"weimaraner","AMCJAA","DQf",4,8,4,"9A9AA0","D8D8DC","sleek silver-grey dog","bark","The grey ghost. Silver, fast.","mammal,pet"},
-	{"weirdo","LLCJNA","UjY",3,6,3,"A3E635","D946EF","mismatched socks, colander hat, walking a pet rock","boing","Normal is a setting on a washing machine.","silly,meme"},
 }

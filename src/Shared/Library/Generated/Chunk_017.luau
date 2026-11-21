@@ -308,6 +308,7 @@ return {
 	{"movie","KHCNnI","dScO",3,2,2,"111827","FACC15","big silver screen, projector beam, popcorn flying","click","No talking. No phones. No refunds.","movie,art"},
 	{"movie theater","EMDCII","GdS",2,1,7,"B71C1C","FFD54F","building with glowing marquee","thud","Lights down. Enemies distracted.","structure,building"},
 	{"moving castle","DAFMBA","Gkeg",7,2,9,"8D8D8D","FF7043","lumbering heap of towers on metal legs","stomp","A whole castle. Walking. Towards you.","vehicle,magic,mythical"},
+	{"mower dash","OGCO1L","Dkf",4,7,4,"D8413A","5FAE3E","red push mower with a black engine and a steel handle","engine","Gives enemies a short back and sides.","household,garden,mechanical"},
 	{"mozzarella","IMBLGI","cHN",2,3,3,"F7F4EC","F2EAD5","soft white ball","gloop","Stretches for miles.","edible,sticky,dairy"},
 	{"mozzarella bites","IMAELB","eVP",2,7,1,"F7F2E0","D9A04A","breaded cheese balls","pitter","Gooey cheese grenades.","edible,snack"},
 	{"mrs claus","LCCJNA","Fc",3,4,4,"DC2626","F8FAFC","red dress, apron, cookie tray","jingle","Cookies heal 50 HP.","christmas,holiday"},
@@ -402,5 +403,4 @@ return {
 	{"nacho fries","IMAELB","eVP",2,7,1,"F2862B","F2C24A","seasoned orange fries","pitter","Fries in nacho dust.","edible"},
 	{"nachos","IMBLGI","KcN",2,3,3,"E8B84A","F2A62B","pile of chips, melted cheese, jalapenos","gloop","A cheesy mountain of crunch.","edible,sticky"},
 	{"nag","KMBBKB","iQNO",3,5,1,"F59E0B","DC2626","wagging finger with a speech bubble of blah blah blah","chatter","Are we there yet? Are we there yet? Are we","silly"},
-	{"naga","ABDJCD","GfMB",7,6,7,"065F46","FACC15","cobra hooded serpent, jeweled crest","hiss","A serpent king with excellent taste in jewels.","mythical,reptile,royal"},
 }
