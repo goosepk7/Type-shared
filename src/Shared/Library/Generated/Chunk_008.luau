@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dipper","ABAJDB","dAB",1,7,1,"3A3A3A","F2F2F2","songbird that walks underwater","tweet","Walks underwater. Seriously.","bird,cute"},
 	{"diprotodon","AMDJAA","DkO",6,4,8,"8A6A4A","C8A87A","rhino-sized wombat","roar","A wombat the size of a car.","mammal,extinct,ancient,heavy"},
 	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
 	{"director","LMCJNA","jOh",4,4,4,"111827","FBBF24","beret, megaphone, folding chair, clapperboard","clack","CUT! Do it again, but with more dying.","art,movie"},
@@ -402,5 +403,4 @@ return {
 	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
 	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
 	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
-	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
 }

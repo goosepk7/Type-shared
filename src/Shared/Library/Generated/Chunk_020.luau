@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
 	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
 	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
 	{"pixel knight","AKBJYA","Qfh",4,6,5,"C48448","743A8C","squat bronze voxel knight in a kettle hat, lantern eyes","clang","For the high score!","game,arcade,pet"},
@@ -12,6 +13,7 @@ return {
 	{"pixiu","AHCJAA","GQb",4,6,6,"D97706","FDE68A","winged lion with antler horn","roar","Eats gold. Never shares.","mythical,lucky"},
 	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},
 	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
+	{"pizza boomerang","IMCA7K","Uke",3,7,3,"E9B44C","C0392B","whole cheese pizza spinning flat through the air","whoosh","It always comes back. Extra cheese.","kitchen,projectile,boomerang,edible"},
 	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
 	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
 	{"pizza cutter","BMCFJF","Uke",4,7,3,"C9CED4","C0392B","giant steel pizza cutter wheel rolling along the ground","clang","Eight slices, one bounce.","kitchen,roll,projectile,ricochet"},
@@ -303,7 +305,7 @@ return {
 	{"preschooler","LMAJNA","Ujd",1,6,2,"FCD34D","EF4444","tiny kid with a paint-smeared smock and juice box","giggle","Nap time is over. Chaos time begins.","school,cute"},
 	{"president","LMCJNA","Gjdh",5,4,5,"1E3A8A","B91C1C","generic leader at a podium with a flag pin and bodyguards","fanfare","My fellow summons. Vote bonk.","leader"},
 	{"pressure","FFCNOI","NO",4,4,4,"9AAAB8","E3E9EE","heavy invisible downward ripples","hum","Under pressure. Literally.","heavy"},
-	{"pressure cooker","BACGII","KE",5,1,6,"8A929B","24262A","sealed pot with hissing valve","clang","Hisssss... POP!","kitchen,household"},
+	{"pressure cooker","OACL2I","Ele",4,3,5,"C9CED4","2A2628","steel pressure cooker with a rattling lid weight","hiss","Do not open while rattling.","kitchen,appliance,trap,explosive"},
 	{"pressure plate","BEBLII","Oh",2,1,6,"8C8C88","8E9196","stone tile that clicks","snap","Click. Uh oh.","trap,defense"},
 	{"pressure washer","JBCFwK","kIe",4,6,4,"F1C40F","24262A","wand with high-pressure jet","hiss","Cleans. Pushes. Hurts a bit.","tool"},
 	{"presto","KLBAKB","jd",3,8,1,"FFD54F","7C4DFF","confetti and sparkle flourish","tada","Ta-da! Applause please.","magic,silly"},
@@ -401,6 +403,4 @@ return {
 	{"pumpkin","IGCGKF","EkI",5,5,6,"E8761A","5E7A2B","big ribbed orange gourd, stem","rumble","Rolls downhill with intent.","edible,heavy,holiday,vegetable"},
 	{"pumpkin bread","IMCCII","GF",4,2,5,"C2622B","D9A04A","orange-brown spiced loaf","thud","Autumn in a loaf.","edible,giant,dessert"},
 	{"pumpkin catapult","CMDMxI","dkeV",4,3,5,"8B5A2B","E67E22","catapult loaded with pumpkins","creak","Splat attack, seasonal edition.","silly,holiday"},
-	{"pumpkin golem","AADJNA","GKk",6,3,6,"EA580C","166534","stacked pumpkins with glowing faces","crunch","Very festive. Very heavy.","halloween,construct"},
-	{"pumpkin head","AACJNA","KDj",5,5,4,"EA580C","166534","lanky figure with a glowing carved pumpkin head","cackle","Glows from the inside. Smells like pie.","spooky,halloween"},
 }

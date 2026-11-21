@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thumbnail","BHAIyE","Gdc",1,5,2,"FACC15","EF4444","small bright rectangle with huge shocked face and arrows","pop","Bigger mouth means more views. Science.","internet,meme"},
+	{"thumbprint cookie","IMBAKK","Uke",3,7,2,"E8C88A","B0203E","cookie with jam dot center","whoosh","A cookie with a jammy fingerprint.","edible,dessert"},
+	{"thumbtack","BMALJK","TN",1,1,1,"C0392B","C9CED4","tiny pin with round head","tap","Don't step barefoot.","office"},
+	{"thump","KMBAKB","kO",3,7,2,"8D6E63","FFE0B2","dull heavy shockring","thump","Thump. Ow.","heavy"},
 	{"thunder","FDDFOB","kO",5,9,2,"4B4E6D","C7CEFF","visible sound ring, purple-grey shock rim","boom","Loud enough to rattle your teeth.","electric,loud"},
 	{"thunder and lightning","FDEEOJ","kLO",8,8,2,"FFEB3B","3949AB","bolts and booming rings from above","boom","Very, very frightening.","electric,storm"},
 	{"thunder bear","ADDJAA","kfL",7,5,7,"1E3A8A","FDE047","bear with crackling blue fur","thunder","Hibernates in thunderclouds.","storm"},
@@ -399,8 +403,4 @@ return {
 	{"turmeric","IEBDOJ","jSP",2,5,1,"E8A21A","C27A1A","knobby orange root, gold powder","puff","Paints the battlefield gold.","edible"},
 	{"turn","KFBO5K","jaY",3,6,2,"F59E0B","3B82F6","curved arrow looping back on itself","whoosh","It is my turn. You had a turn. MUM!","silly,gaming"},
 	{"turnip","IEBAKK","keO",3,7,6,"F2EEF2","9A3A8A","round white root, purple top","bonk","Rolls, thumps, tastes like soup.","edible,vegetable"},
-	{"turnover","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","triangle flaky pastry","chomp","A pie that folded itself in half.","edible,sweet"},
-	{"turnstile","EKBCII","GSN",1,1,5,"B0BEC5","37474F","spinning three-armed gate","thud","One at a time, please.","structure,defense,silly"},
-	{"turntable","BMCFJI","jO",2,2,4,"24262A","C9CED4","spinning deck with tonearm","scratch","Drop the beat. Drop the foes.","music"},
-	{"turret","OKCMwI","Te",5,7,6,"2C3539","6B7B3A","swivelling twin-barrel tripod gun","hum","Never sleeps. Never blinks.","defense,mechanical"},
 }

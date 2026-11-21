@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
 	{"emp blast","FDDFOB","PO",5,10,1,"00B0FF","E1F5FE","expanding blue ring of distortion","whum","Turns machines off. And on. And off.","electric"},
 	{"emp pulse","CDDNKI","LP",4,7,3,"78DCFF","966078","a coiled spike slammed down, a pulse ring rolling out","zap","Have you tried turning it off and on again?","scifi,electric"},
 	{"empanada","IMBAKF","Fe",3,6,2,"D9A04A","C8803A","crimped half-moon pastry","splat","A pastry with a crimped smile.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"flagpole","EMCNII","FS",1,1,4,"B0BEC5","E53935","tall pole with a waving flag","thud","Plant the flag. Claim the ground.","structure,silly"},
 	{"flail","CKCHtK","kfVO",6,4,5,"5B6168","8B5A2B","spiked ball on chain and handle","bonk","Swing. Spin. Hope.","medieval,heavy"},
 	{"flak cannon","CKDMxI","EeV",7,6,6,"6B7B3A","3A3F45","anti-air cannon with twin barrels","zap","Fills the sky with pops.","scifi,ranged"},
-	{"flak tower","EKEMII","GEe",7,1,9,"9E9E9E","37474F","massive concrete tower bristling with guns","thud","Anything flying? Not for long.","structure,defense,tower"},
 }

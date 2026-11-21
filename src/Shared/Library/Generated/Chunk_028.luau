@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"turnover","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","triangle flaky pastry","chomp","A pie that folded itself in half.","edible,sweet"},
+	{"turnstile","EKBCII","GSN",1,1,5,"B0BEC5","37474F","spinning three-armed gate","thud","One at a time, please.","structure,defense,silly"},
+	{"turntable","BMCFJI","jO",2,2,4,"24262A","C9CED4","spinning deck with tonearm","scratch","Drop the beat. Drop the foes.","music"},
+	{"turret","OKCMwI","Te",5,7,6,"2C3539","6B7B3A","swivelling twin-barrel tripod gun","hum","Never sleeps. Never blinks.","defense,mechanical"},
 	{"turtle","AMBJUA","GNB",2,2,8,"5A7A3A","C8B87A","domed shell, stubby legs","hiss","Carries its house everywhere.","reptile,armored"},
 	{"turtle tank","DEDMHL","Geag",5,2,10,"43A047","8D6E63","tank under a giant turtle shell","engine","Slow. Steady. Untouchable.","vehicle,silly"},
 	{"turtle warrior","ABCJAA","GkB",4,3,8,"15803D","A16207","turtle with shell shield and bo staff","thud","Slow. Steady. Unbreakable.","warrior"},
@@ -399,8 +403,4 @@ return {
 	{"wax","FABNGI","KSN",2,2,3,"FDE68A","F97316","dribbling warm yellow wax pooling and hardening","sizzle","Mind your own. Beeswax, that is.","household,sticky"},
 	{"waxwing","AMAJDB","dA",1,7,1,"C8A07A","F2D82A","sleek crest, black mask","tweet","Wears a mask and a crest. Cool.","bird,cute"},
 	{"waxy monkey frog","AMAJAA","Ue",1,5,1,"6AC84A","F2F2EE","walks instead of hops","croak","Rubs on wax sunscreen. Walks.","amphibian,wetland"},
-	{"weaken","KIBAKB","iXN",3,7,1,"9E9E9E","FFFFFF","downward arrows over target","wub","Nerfed. Sorry not sorry.","silly"},
-	{"weakness","KIBOKE","iXN",3,6,1,"A78BFA","F87171","glowing red target spot blinking on a cracked armour plate","beep","Hit the glowing bit. It is always the glowing bit.","gaming"},
-	{"wealth","LHCJNA","Gceh",4,3,5,"15803D","FACC15","top-hatted tycoon diving into a pile of gold coins","jingle","Throws money at problems. It works. Annoyingly.","shiny,silly"},
-	{"weapon","CKCELB","kTeP",6,6,5,"8A929B","6B4226","falling rack of swords, axes, maces and a rubber chicken","clang","Which weapon? All of them. At once.","sharp,medieval"},
 }
