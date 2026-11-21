@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"granola bar","IMBOKI","DF",3,5,3,"C89050","6B3A1E","chewy oat bar in wrapper","chomp","Fuel for long quests.","edible"},
+	{"granola bowl","IGBOKI","F",2,5,3,"C89050","F7F4EC","yogurt with granola and berries","crunch","Crunchy morning fuel.","edible,healthy,breakfast"},
+	{"grape","IGAELB","eVP",2,7,1,"6B2D7B","7FAE3A","small round purple orb","pitter","Small, round, perfect for pelting.","edible,fruit,sweet"},
+	{"grape jelly","IMBLGI","SNP",2,3,3,"5A1E5E","8E2B7E","jar of purple jelly","gloop","Purple, wobbly, sticky.","edible,sticky,sauce,sweet"},
+	{"grape juice","IBBOKI","F",2,6,2,"5A1E5E","8E2B7E","glass of purple juice","slurp","Purple power. Stains everything.","edible,drink"},
+	{"grape soda","IBBFKI","EkI",3,7,1,"7A2A9A","C8A0E8","purple fizzy can","fizz","Purple fizz, max chaos.","edible,drink,fizzy"},
+	{"grapefruit","IMBAKF","jeO",3,6,2,"F5A07A","D24E5A","big round citrus, pink flesh","squirt","Squirts directly in the eye. Every time.","edible,fruit,sour"},
 	{"grapevine","NGCNMI","ScN",2,1,3,"6A1B9A","7CB342","twisted vine with hanging grape bunches","rustle","Grapes drop. Enemies slip.","plant,crop"},
 	{"grapple gun","OKBAwI","lHe",3,10,3,"24262A","C9CED4","pistol that fires a hook and reels you in","twang","Thwip! Yoink.","modern,mobility"},
 	{"grappling iron","CKBAJI","He",3,6,4,"5B6168","B89B6A","multi-hook thrown on rope","bang","Pull that ship closer.","pirate"},
@@ -396,11 +403,4 @@ return {
 	{"helix lance","KLDBKI","Te",8,10,1,"E9FF7A","B04CFF","needle beam wrapped in a crackling spiral coil","zap","Charged for a long, long time. Worth it.","anime,ki,beam"},
 	{"hell","MAFN5I","KSHPh",9,2,9,"7F1D1D","FF6B00","cracked glowing pit, flames, rising smoke and red rock","roar","Warm all year. Terrible reviews.","fire,spooky,place,danger"},
 	{"hellbat","AABJDB","KiA",3,9,2,"1C1917","F97316","bat with glowing ember wing veins","screech","Flaming bat. Not a snack.","fire,flying,spooky"},
-	{"hellcat","AABJAA","KZf",3,9,2,"1C1917","F59E0B","smoky black cat with ember eyes","hiss","Lands on its feet. Leaves scorch marks.","cat,fire,spooky"},
-	{"hellfire","FADEOB","KESP",8,6,2,"B91C1C","111827","black-red flames raining with smoking yellow rocks","roar","Smells like eggs. Burns like Mondays.","fire,spooky"},
-	{"hellfire hound","AACJAA","KDf",5,8,4,"1C1917","F97316","coal-black hound with flaming mane","growl","A good boy. A very hot good boy.","canine,fire"},
-	{"hello","KHBF6B","dcIO",2,7,1,"FDE047","38BDF8","big waving hand with a speech bubble HI! and sparkles","ding","Hi! Hello! Hey! Over here! HI!","cute,silly,support"},
-	{"helmet","BKBONI","G",1,5,6,"8A929B","24262A","rounded metal helmet","clank","Protects the thinking bit.","armor,defense"},
-	{"help","KHBJVJ","Fh",2,6,3,"42A5F5","FFFFFF","glowing friendly spirit appearing beside you","chime","Help is on the way!","support"},
-	{"hemlock","NJDCMI","GWkSM",4,1,7,"4E342E","1B5E20","drooping feathery evergreen","rustle","Shady, droopy, slightly sinister.","plant,tree"},
 }

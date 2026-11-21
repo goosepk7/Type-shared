@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"korma","IGBOKI","F",2,5,3,"F2D08A","E8B860","pale creamy mild curry","crunch","Mild, creamy, nutty.","edible,healthy"},
+	{"koschei","AICJNA","Gih",6,5,9,"1F2937","22C55E","gaunt skeleton king with hidden soul egg","cackle","Hid his heart in an egg. Very organized.","undead,royal,spooky"},
+	{"koshari","IMAELB","eNP",2,6,1,"C8762B","E8C070","rice, lentils, pasta, sauce","pitter","Everything in one bowl.","edible,grain"},
+	{"kosmoceratops","AMDJAA","DdkT",7,5,8,"8A5A3A","E8B07A","frill with many hooked horns","bellow","Most horns. Most fabulous.","dinosaur,extinct,reptile"},
+	{"koto","BMDFJI","FN",2,3,3,"C49A6C","F3E6C8","long zither on floor","strum","Plucked serenity.","music"},
+	{"kouign amann","IMBLKI","dSc",2,3,3,"C8803A","F2C870","caramelized flaky pastry","chomp","Butter and sugar, folded forever.","edible,sweet"},
+	{"krait","AMCJCD","fMN",4,6,3,"1E1E24","F2F2F0","black and white banded","hiss","Night shift snake. Stripy.","reptile,venomous,nocturnal"},
+	{"kraken","ABFJCC","kHOB",9,4,9,"7F1D1D","F87171","colossal squid with ship-crushing tentacles","roar","Release it. Please. It's been waiting.","mythical,aquatic,boss,danger"},
 	{"kraken king","ABFJCC","kHOB",9,3,10,"450A0A","FCA5A5","sky-sized kraken with crown of barnacles","roar","Eats fleets. Burps anchors.","mythical,aquatic,boss,danger"},
 	{"kraken spawn","ABBJCC","HB",3,6,3,"991B1B","FCA5A5","small red squid with big eyes","splash","One day it'll eat ships. Today it eats shrimp.","aquatic,cute"},
 	{"kraken tentacle","ABDLCI","kHO",6,4,6,"991B1B","FCA5A5","enormous tentacle rising from the floor","splash","Something's down there. Something big.","aquatic,trap"},
@@ -395,12 +403,4 @@ return {
 	{"llama","AMCJAA","dfeg",3,4,4,"F2EEE6","8A6A4A","long neck, banana ears, fluffy coat","hum","Spits first. Explains never.","mammal,farm"},
 	{"lmao","KHBF6F","jPO",3,8,1,"FDE047","38BDF8","laughing-crying face rolling on the floor, tears spraying","giggle","Laughed so hard the summon fell over.","meme,internet,silly"},
 	{"lo mein","IMBLGI","HN",2,3,3,"C8903A","7DBE3A","tossed soft noodles, veg","gloop","Soft noodles tossed with everything.","edible,sticky"},
-	{"loach","ABAJEC","jdB",1,6,1,"F28A1E","1E1E1E","orange fish with black bands","splash","Plays dead for attention.","fish,aquatic"},
-	{"load","KMCLKI","SNO",3,1,3,"E5E7EB","3B82F6","spinning grey circle and a bar that jumps back to 12%","whirr","Loading... Tip: have you tried dodging?","gaming,tech"},
-	{"loaded fries","IMBLGI","SNP",2,3,3,"F2C24A","C8502B","fries with bacon, cheese, onion","gloop","Fries carrying everything.","edible,sticky"},
-	{"loaded nachos","IMBLGI","KcN",2,3,3,"E8B84A","D8302B","nacho mountain with toppings","gloop","Every topping, one mountain.","edible,sticky"},
-	{"loaf","IMBA7B","kcO",3,5,4,"B5803C","E0A84A","whole crusty brown loaf swung like a club","thud","Use your loaf. On them.","edible"},
-	{"loaf of bread","IMCCII","GF",3,2,6,"C8904A","F5E6C8","rounded loaf with crust","thud","One loaf. Endless defense.","edible,giant"},
-	{"lobby","MMDNlI","jSN",4,1,5,"6366F1","F8FAFC","big room of idle jumping avatars under a countdown clock","music","Waiting for players... 1 of 12.","gaming,place"},
-	{"lobelia","NGANMI","dFS",1,1,1,"3949AB","FFFFFF","spilling mounds of tiny blue flowers","rustle","Tiny blue waterfall.","plant,flower"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ember phoenix chick","AAAJDB","KAF",2,6,1,"F97316","FEF08A","fluffy fire chick with flame tuft","chirp","Reborn from a burnt toast.","fire,cute,bird"},
+	{"ember sprite","AAAJNB","KjA",2,9,1,"F97316","FDE047","tiny flame fairy","crackle","Small spark. Big trouble.","fairy,fire"},
+	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
+	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
+	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
 	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
 	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
@@ -61,6 +66,7 @@ return {
 	{"epaulette shark","ABBJEA","DfTB",2,8,6,"C8B08A","3A2A1E","small shark walking on fins","chomp","A shark that walks. On land. Briefly.","fish,aquatic,ocean,predator"},
 	{"epee","CKCHrK","fT",4,8,3,"C9CED4","24262A","stiff thin blade, bell guard","shing","Fencing with extra French.","medieval,sharp"},
 	{"epic","KHCOKJ","DW",5,6,4,"AB47BC","FFD54F","purple epic loot glow","fanfare","That was epic.","meme"},
+	{"epoch roar","KLDN6I","keN",7,4,3,"5AA8FF","D8F0FF","a roar rolling out in spinning clock rings","roar","Time slows down. So do you, afterwards.","battler,monster catcher,legendary,time"},
 	{"equator","MAFBKI","GKSN",7,1,7,"EF4444","FDE047","red-hot line wrapped round a globe, palm trees wilting","sizzle","The world's belt. It is on the tightest notch.","place,space"},
 	{"equinox","GLDNOI","GF",4,3,5,"FFF59D","1A237E","half-day half-night sky split","chime","Perfect balance of day and night.","space"},
 	{"eradicate","KLDF6B","TIPO",8,6,1,"EF4444","F8FAFC","wide red scanning line sweeping and erasing what it crosses","whum","Target acquired. Target... where did it go?","scifi"},
@@ -397,10 +403,4 @@ return {
 	{"fishing","KBCLzI","cHbO",4,3,2,"38BDF8","EF4444","bending rod, taut line, red-white float bobbing","splash","Caught one THIS big. No photo. Trust me.","sport,aquatic"},
 	{"fishing boat","DBDKHC","DkHgNB",4,4,6,"1565C0","F5F5F5","boat with nets, booms, little cabin","splash","Catches fish. And fools.","vehicle,aquatic"},
 	{"fishing cat","ABCJAA","ZfTB",4,7,3,"7D7466","2E2A24","stocky olive-grey cat, webbed paws","hiss","A cat that LIKES water. Nobody trusts it.","mammal,predator,wild"},
-	{"fishing rod","BMCAJI","He",1,6,3,"C49A6C","C9CED4","long pole with reel and line","bonk","Hook, line, and sinker.","sport,ocean"},
-	{"fishing spider","AJBJQA","fMNB",2,6,2,"8A6A4A","C8A07A","big spider on water","skitter","Runs on water. Fishes.","arachnid,spooky,venomous"},
-	{"fishman","ABCJNA","fB",4,6,4,"0F766E","A3E635","bulgy-eyed fish-headed humanoid","splash","Smells exactly how you think.","aquatic,spooky"},
-	{"fishmonger","LBCJNA","dk",3,4,4,"0EA5E9","F8FAFC","apron, giant fish in hand","splat","Slaps you with a trout.","silly"},
-	{"fissure","HEDLII","THO",6,4,5,"4A3726","FF6A2B","zigzag ground split with glowing depths","crack","Mind the gap. Seriously.","natural"},
-	{"fist","KMBAKB","kf",4,9,3,"FFCC80","FFFFFF","glowing knuckle impact","pow","Five fingers. One message.","melee"},
 }

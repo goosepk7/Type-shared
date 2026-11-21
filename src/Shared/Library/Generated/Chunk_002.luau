@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"ash cloud","HAEDOJ","jSMN",5,3,3,"595350","9E9690","huge grey billowing ash plume","rumble","Turns day into a very grey night.","natural,fire"},
 	{"ash fall","HADEOJ","jSN",4,3,3,"9E9E9E","5D4037","grey snowfall of volcanic ash","hush","Grey snow. Warm and gritty.","fire,natural"},
 	{"ash storm","FADDOJ","KjNP",6,4,4,"5D4037","FF7043","grey ash blizzard lit by red sparks","rumble","Grey snow that stings.","fire,storm"},
 	{"ash tree","NHDCMI","GWkS",4,1,7,"8D8D8D","E53935","tall tree with orange-red berry clusters","rustle","Wards off witches. Allegedly.","plant,tree"},
@@ -58,6 +59,7 @@ return {
 	{"aunt","LMCJNA","Fc",3,5,4,"F472B6","FDE68A","big earrings, purse full of snacks","ding","Pinches cheeks. Hard.","family"},
 	{"aura","FLCOKJ","GFS",3,4,4,"B48CFF","FFE1FF","shimmering coloured glow around caster","hum","Good vibes, visible version.","magic"},
 	{"aura blast","KLCFOB","kO",5,8,1,"B388FF","FFFFFF","aura flaring outward in a ring","whoom","Vibes, weaponized.","magic"},
+	{"aura seeker","KHBGKJ","Qke",4,7,2,"3A8CFF","E4F4FF","a cupped ball of blue aura that curves after its target","hum","It never misses. Unless you put a wall between you, which is honestly fair.","battler,monster catcher,aura,homing"},
 	{"aurochs","AMDJAA","DkO",7,4,7,"2A1E14","E8D8C0","huge wild cattle with forward horns","moo","The ancestor of every cow. Huge.","mammal,heavy,extinct"},
 	{"aurora","GHENOJ","jFS",6,4,3,"00E676","B388FF","rippling green-violet light curtains in the sky","shimmer","The sky put on its party lights.","space,holy"},
 	{"aurora spirit","AHCJOJ","jAF",4,6,2,"22C55E","A855F7","ribbon of shimmering green and violet light","chime","Dances across the sky. No partner needed.","cosmic,frozen"},
@@ -401,6 +403,4 @@ return {
 	{"beauty","KHCF6B","jcaO",3,5,2,"F9A8D4","FDE68A","shimmering pink sparkle wave with a hand mirror and a rose","shimmer","Stunning. Literally. Two seconds of stun.","fancy,cute"},
 	{"beaver","ABBJAA","GCdB",3,6,1,"6A4428","2A1E16","flat paddle tail, big orange teeth","squeak","Builds dams. Never takes a day off.","mammal,cute"},
 	{"bed","BMDN0I","FN",1,1,5,"F2F2EE","1F2F55","bed with pillows and blanket","thud","Nap time heals all wounds.","furniture,household"},
-	{"bed bug","AMAJFA","diAP",1,6,1,"8A3A1E","C8702A","flat red-brown tiny bug","buzz","Don't let them bite.","insect"},
-	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 }

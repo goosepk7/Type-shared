@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crank","OKBLJK","lH",2,3,6,"5B6168","B89B6A","drum with crank handle and rope","clank","Wind it in, slow and steady.","tool"},
+	{"crappie","ABBJEC","dB",2,6,1,"8A9A8A","3A3A3A","speckled panfish","splash","Speckled and snacky.","fish,aquatic"},
+	{"crash","KMCAKB","kO",5,8,3,"90A4AE","FFCC80","tumbling impact with debris","crash","Wham. Everything everywhere.","silly"},
+	{"crate","BMCC2I","Gk",2,1,6,"8B5A2B","D2B48C","nailed wooden slat crate","thud","Smashable. Stackable. Loot inside.","container"},
 	{"crate barricade","EECCII","GdS",2,1,4,"A1887F","6D4C41","stacked wooden crates","thud","Mystery boxes. Mystery defence.","structure,defense,flammable"},
 	{"crate of tnt","BACL2I","EkP",8,1,2,"C0392B","8B5A2B","wooden crate stencilled TNT","thud","Do. Not. Drop.","container,explosive"},
 	{"crater","MEELII","SHN",4,1,8,"5D5D5D","8D6E63","round dented bowl with a rocky rim","rumble","Something big landed here once.","place,terrain"},
@@ -29,6 +33,7 @@ return {
 	{"crepe","IMBAKK","Uke",3,7,2,"F2D88A","F7F2EC","thin folded pancake triangle","whoosh","A pancake that got very thin.","edible"},
 	{"crepe suzette","IABNGI","Kc",4,4,2,"E8A040","F28C28","folded crepes in orange flame sauce","sizzle","Crepes set on fire. Fancy fire.","edible,spicy,breakfast"},
 	{"crescent diadem","BHCAJK","UTe",5,9,3,"F6C85C","FF96CE","a gold tiara spinning in a disc of moonlight","chime","In the name of the moon, it comes back.","anime,magical girl,boomerang"},
+	{"crescent flip","KFCH6K","klf",5,9,1,"9FDBFF","FFFFFF","a backflip kick carving a bright crescent through the air","whoosh","Down, up, kick. The classic answer to anyone jumping at you.","battler,fighting game,kick,anti air"},
 	{"crescent moon","MHDHKK","fTe",5,6,5,"FFF59D","E0E0E0","thin glowing curved sliver","rumble","Sharp enough to slice the night.","space,magic"},
 	{"crescent slash","FHCHJB","Te",6,9,1,"E8EAF6","9FA8DA","flying silver crescent-moon blade","shing","A sliver of moon. Sharp side first.","space,sharp"},
 	{"crested gecko","AMBJAA","Cf",2,7,2,"E8A03A","F2D07A","eyelash crests, sticky toes","hiss","Has eyelashes. Licks its eyes.","reptile,pet"},
@@ -398,9 +403,4 @@ return {
 	{"dingo","AMCJAA","DQfh",4,7,4,"D48A44","F2E6D2","ginger lean dog, upright ears","howl","Australia's wild dog. Not a pet.","mammal,predator,wild,australia"},
 	{"dining hall","MMENII","FSc",2,1,7,"6D4C41","FFD54F","long tables piled with feasts","thud","The feast heals everyone at the table.","place,room"},
 	{"dinner","IMCL2I","FcNO",3,1,3,"B45309","15803D","steaming roast on a plate with peas and a dinner bell","bell","DINNER! Wash your hands! Stop fighting!","edible"},
-	{"dinner roll","IMBAKF","Fke",3,6,2,"D9A04A","F5E2B8","round fluffy golden roll","splat","Rolls. As advertised.","edible"},
-	{"dino rider","LEDKNA","Dfg",7,8,6,"15803D","78350F","warrior riding a scaly dinosaur","roar","Brought a dinosaur. You didn't.","mount,warrior"},
-	{"dinosaur","AMDJBA","DkfT",7,6,7,"5A8A3A","D8C86A","classic dinosaur, big tail, scaly","roar","Was here first. Wants it back.","dinosaur,extinct,reptile,predator"},
-	{"dinosaur car","DMCKHL","Dkfg",4,6,5,"43A047","FFEB3B","car shaped like a dinosaur","engine","RAWR. Vroom. RAWR.","vehicle,silly"},
-	{"dinosaur costume kid","LMBJNA","Dd",2,7,3,"15803D","F97316","kid in inflatable dinosaur suit","roar","Stomps. Rawrs. Trips.","cute,silly"},
 }

@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boxer","LMCJNA","kfO",6,7,5,"DC2626","F8FAFC","red gloves, robe, mouthguard grin","thud","Floats like a butterfly. Punches like a truck.","sport,martial"},
+	{"boxer dog","AMCJAA","DQkf",4,7,4,"C27A3A","F2EEE6","square jaw, muscular, paws up pose","bark","Punches the air when happy.","mammal,pet"},
+	{"boxfish","ABAJEC","GdMB",1,6,1,"F2D82A","1E1E1E","cube-shaped yellow fish","splash","A swimming box with polka dots.","fish,aquatic,silly"},
+	{"boxing","KMCONA","DkfO",5,8,4,"DC2626","F8FAFC","pair of red gloves throwing a one-two, bell ringing","bell","Ding ding. Gloves up. Chin down.","sport,melee"},
 	{"boxing combo","BMBHJI","klf",4,9,1,"C62828","F5F5F0","pair of padded red gloves throwing a jab-cross-uppercut","thump","Jab, cross... uppercut.","sport,boxing,melee"},
 	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
 	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
@@ -399,8 +403,4 @@ return {
 	{"cara cara orange","IMBAKF","jke",3,6,2,"F28C28","F2808A","orange with pink flesh","squirt","An orange hiding a pink secret.","edible,fruit,sour"},
 	{"carabiner","BKALKF","H",1,7,5,"7D3CB5","C9CED4","D-shaped clip with spring gate","bonk","Click. Secured.","sport"},
 	{"caracal","AMCJAA","ZfTe",4,7,3,"C08E5A","1E1E1E","long black ear tufts, sandy coat","hiss","Can swat birds out of the air. Rude.","mammal,predator,wild,desert"},
-	{"caracara","AMCJDB","DAfT",5,9,3,"2A2420","E8702A","orange face, black cap","screech","Walks around like it owns the place.","bird,predator"},
-	{"caramel","IMBLGI","ScN",2,3,3,"C68E3A","E8B860","glossy golden drizzle","gloop","Sticky gold. Wonderful and dangerous.","edible,sticky,candy,sweet"},
-	{"caramel apple","IMBLGI","ScNP",2,3,3,"B5651D","C8262B","apple on a stick, glossy caramel shell","gloop","Sticky, crunchy, impossible to eat politely.","edible,sticky,sweet"},
-	{"caramel chews","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","wrapped golden squares","gloop","Chewy squares. Teeth trap.","edible,sticky,candy"},
 }

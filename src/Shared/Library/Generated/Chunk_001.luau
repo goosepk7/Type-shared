@@ -284,6 +284,7 @@ return {
 	{"apatosaurus","AMFJAA","kIO",8,2,9,"7A7A6A","B8B0A0","thick neck, whip tail","rumble","Sounds like a sonic boom with its tail.","dinosaur,extinct,reptile,heavy"},
 	{"ape","AGDJBA","Dklf",6,6,6,"3B2F2A","8D6E63","big hairy ape, long arms, knuckle-walking, chest thump","roar","Monkey see. Ape SMASH.","mammal,primate,wild"},
 	{"apep","AIFJCD","iHB",9,4,9,"1C1917","7C3AED","endless black serpent in darkness","hiss","Tries to eat the sun every night.","mythical,reptile,ancient,boss,danger"},
+	{"apex evolution","KHDO4J","kI",6,5,6,"FFF2B0","9AF0FF","a keystone crystal over a cracking shell of light","chime","Same you, more you.","battler,monster catcher,buff,transform"},
 	{"apfelstrudel","IMBLKI","dSc",2,3,3,"D9A04A","C8762B","rolled flaky apple pastry","chomp","Apple strudel with an accent.","edible,sweet"},
 	{"aphid","AMAJFB","diAP",1,6,1,"8AE04A","4AA03A","tiny green round bug","buzz","Ant's favorite cow. Literally.","insect"},
 	{"apocalypse","HAFNOI","KEkPO",10,4,8,"8B1A1A","FF6F00","burning red sky, meteors, cracked ground","boom","Well. That escalated.","explosive,danger"},
@@ -402,5 +403,4 @@ return {
 	{"asado","IABNGI","KSc",4,4,2,"8A2E2E","C8603A","meats roasting over open flame","sizzle","A whole afternoon of grilling.","edible,spicy"},
 	{"asgard","MDFNII","SLh",7,1,10,"FFD54F","80DEEA","golden city on a floating rock","chime","Mighty realm. Mightier welcome.","place,mythical"},
 	{"ash","FABDOJ","jSN",2,3,2,"6E6A66","B8B2AC","drifting grey flakes, dim orange specks","hiss","Fire's leftovers. Gets in your eyes.","fire"},
-	{"ash cloud","HAEDOJ","jSMN",5,3,3,"595350","9E9690","huge grey billowing ash plume","rumble","Turns day into a very grey night.","natural,fire"},
 }

@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"bed bug","AMAJFA","diAP",1,6,1,"8A3A1E","C8702A","flat red-brown tiny bug","buzz","Don't let them bite.","insect"},
+	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 	{"bedrock","FEECnI","G",3,1,10,"3B3632","6E655C","dark layered stone bulwark","rumble","The bottom. Literally unbreakable.","heavy,ancient"},
 	{"bedroom","MMCNII","FSN",1,1,6,"90CAF9","F5E6CA","bed, rug, lamp and a messy floor","thud","Nap time. Everyone. Now.","place,room,silly"},
 	{"bedtime","KLCDOJ","SO",3,3,2,"3949AB","FFF8E1","cosy dark-blue cloud with stars and Zs","snore","Into bed. Now. Everyone.","silly"},
@@ -177,6 +179,7 @@ return {
 	{"blade waltz","KFDNKI","fPY",8,10,2,"CFE3F2","3D5A80","you blink between foes, cutting each one","slash","Eight cuts before the first one lands.","anime,sword,speed"},
 	{"bladed boomerang","CMBAJI","UQTe",5,8,3,"8A929B","24262A","metal-edged boomerang","thwip","Comes back. Sharper.","ranged,sharp"},
 	{"bladed fan","CKBAJK","UTe",4,8,3,"C9CED4","A66BDB","fan with razor ribs thrown spinning","shing","Fans out. Cuts down.","fantasy,sharp"},
+	{"bladeleaf fan","NGBHMK","TeP",3,8,1,"5FBF3A","D8FF9A","a fan of five spinning razor-edged leaves","slash","Gardening, but aggressive.","battler,monster catcher,grass,leaf"},
 	{"blanket","BMCIyI","GF",1,3,2,"1F2F55","F3E6C8","folded cosy blanket","thud","Monsters can't get you under here.","furniture,household"},
 	{"blanket flower","NABNMI","dFS",1,1,2,"E53935","FFC107","red daisy with yellow tips","rustle","Looks like a little campfire.","plant,flower"},
 	{"blast","KLCFOB","Ek",5,9,1,"FF9100","FFFFFF","forward cone of bright force","boom","Point. Blast. Done.","explosive"},
@@ -184,6 +187,7 @@ return {
 	{"blaster","CDBAwI","Ke",5,8,3,"24262A","C9CED4","chunky sci-fi pistol","zap","Pew pew pew!","scifi,ranged"},
 	{"blaster rifle","CDCAwI","KeV",6,7,4,"24262A","C9CED4","long rifle with energy cell","zap","Pew-pew, extra pew.","scifi,ranged"},
 	{"blaze","FADNOI","KSP",6,6,3,"D9480F","FFB347","wide wall of tall flames, thick embers","roar","Not a campfire. Definitely not a campfire.","fire"},
+	{"blaze dive","FADNDB","KEkl",7,6,1,"FF7828","FFD65A","a wizard in a firebird of flame, diving","whoosh","All in. The landing is the plan.","battler,monster catcher,platform fighter,fire,dive"},
 	{"blaze knuckle","KADAKB","KEke",8,8,2,"FF8A1E","7A1A08","a giant fist of flame roaring forward","whoosh","Knuckles, but a wildfire.","anime,pirate,fire,punch"},
 	{"blazing sigil shot","KACAKB","KEe",5,9,2,"FFB13A","FFF0C2","a fire-gold hand-sign sigil firing one blazing bolt","whoosh","The hand signs are mostly for style. Mostly.","anime,ki,fire,bolt"},
 	{"bleeding heart","NGBNMI","dFS",2,1,2,"E91E63","FFFFFF","row of dangling heart blooms","rustle","Dramatic. Very dramatic.","plant,flower"},
@@ -399,8 +403,4 @@ return {
 	{"box jellyfish","ABBJGJ","ZSMOB",5,2,1,"B8E0F0","E8F8FF","transparent cube bell, long tentacles","squelch","Clear, square, extremely stingy.","aquatic,ocean,venomous"},
 	{"box of donuts","IMCJII","Gdc",5,1,6,"F2A6C8","D9A04A","box with twelve donuts","thud","The best box in any office.","edible,giant,silly"},
 	{"box turtle","AMBJUA","GN",2,2,9,"6A4A2A","F2C82A","high shell with yellow markings","hiss","Closes its shell like a lunchbox.","reptile,armored"},
-	{"boxer","LMCJNA","kfO",6,7,5,"DC2626","F8FAFC","red gloves, robe, mouthguard grin","thud","Floats like a butterfly. Punches like a truck.","sport,martial"},
-	{"boxer dog","AMCJAA","DQkf",4,7,4,"C27A3A","F2EEE6","square jaw, muscular, paws up pose","bark","Punches the air when happy.","mammal,pet"},
-	{"boxfish","ABAJEC","GdMB",1,6,1,"F2D82A","1E1E1E","cube-shaped yellow fish","splash","A swimming box with polka dots.","fish,aquatic,silly"},
-	{"boxing","KMCONA","DkfO",5,8,4,"DC2626","F8FAFC","pair of red gloves throwing a one-two, bell ringing","bell","Ding ding. Gloves up. Chin down.","sport,melee"},
 }

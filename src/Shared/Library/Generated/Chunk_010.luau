@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fishing rod","BMCAJI","He",1,6,3,"C49A6C","C9CED4","long pole with reel and line","bonk","Hook, line, and sinker.","sport,ocean"},
+	{"fishing spider","AJBJQA","fMNB",2,6,2,"8A6A4A","C8A07A","big spider on water","skitter","Runs on water. Fishes.","arachnid,spooky,venomous"},
+	{"fishman","ABCJNA","fB",4,6,4,"0F766E","A3E635","bulgy-eyed fish-headed humanoid","splash","Smells exactly how you think.","aquatic,spooky"},
+	{"fishmonger","LBCJNA","dk",3,4,4,"0EA5E9","F8FAFC","apron, giant fish in hand","splat","Slaps you with a trout.","silly"},
+	{"fissure","HEDLII","THO",6,4,5,"4A3726","FF6A2B","zigzag ground split with glowing depths","crack","Mind the gap. Seriously.","natural"},
+	{"fist","KMBAKB","kf",4,9,3,"FFCC80","FFFFFF","glowing knuckle impact","pow","Five fingers. One message.","melee"},
 	{"five spice","IFBDOJ","jPO",2,5,1,"8A4A2A","C8803A","brown spice heap","puff","Five spices, one punch.","edible,spice"},
 	{"fjord","MBFNII","SN",3,1,9,"1E88E5","6D6D6D","narrow deep sea channel between cliffs","rumble","Very deep. Very cold. Very pretty.","place,terrain"},
 	{"flag","BMCOzI","Fh",1,4,2,"9E1B32","D4A72C","cloth flag on a pole","pop","Rally to the banner!","party,medieval"},
@@ -397,10 +403,4 @@ return {
 	{"gas mask","BJBONI","G",1,5,4,"6B7B3A","24262A","full face mask with filter can","swish","Poison? Never heard of it.","clothing"},
 	{"gas station","EACCII","GES",3,1,5,"F5F5F5","E53935","canopy over pumps, small shop","thud","Do not light a match here. Please.","structure,building,explosive"},
 	{"gashadokuro","AIFJNA","ikfO",8,3,8,"E7E5E4","1F2937","towering skeleton fifteen times human size","rattle","Rattles so loud it wakes the neighbors.","yokai,undead,giant,spooky"},
-	{"gasp","KMAFOB","O",1,9,1,"FFFFFF","B3E5FC","sharp quick inhale ring","gasp","*GASP* Everyone freezes.","silly"},
-	{"gastonia","AMDJAA","GkfT",6,3,9,"7A6A4A","C8A07A","spiky shoulder armored","grunt","Spikes everywhere. Hugs: no.","dinosaur,extinct,reptile,armored"},
-	{"gastornis","AMDJDA","Dkf",6,8,5,"6A5A4A","C8A07A","huge flightless bird with massive beak","boom","A giant bird. Ate seeds, probably.","bird,flightless,extinct"},
-	{"gate","EEDCII","GS",3,1,8,"6D4C41","455A64","heavy double doors with iron bands","thud","Knock all you like.","structure,defense"},
-	{"gate surge","KHCNNI","DWkf",7,8,4,"46C8BA","DC322A","a body bursting with colour as inner gates open one by one","roar","Gate one: warm. Gate four: everyone else should leave.","anime,ninja,buff"},
-	{"gatehouse","EEEMII","Ge",4,1,10,"9E9E9E","5D4037","twin towers flanking an arched gate","thud","Two towers, one gate, zero chance.","structure,defense,ancient"},
 }

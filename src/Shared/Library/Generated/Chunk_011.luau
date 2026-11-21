@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gasp","KMAFOB","O",1,9,1,"FFFFFF","B3E5FC","sharp quick inhale ring","gasp","*GASP* Everyone freezes.","silly"},
+	{"gastonia","AMDJAA","GkfT",6,3,9,"7A6A4A","C8A07A","spiky shoulder armored","grunt","Spikes everywhere. Hugs: no.","dinosaur,extinct,reptile,armored"},
+	{"gastornis","AMDJDA","Dkf",6,8,5,"6A5A4A","C8A07A","huge flightless bird with massive beak","boom","A giant bird. Ate seeds, probably.","bird,flightless,extinct"},
+	{"gate","EEDCII","GS",3,1,8,"6D4C41","455A64","heavy double doors with iron bands","thud","Knock all you like.","structure,defense"},
+	{"gate surge","KHCNNI","DWkf",7,8,4,"46C8BA","DC322A","a body bursting with colour as inner gates open one by one","roar","Gate one: warm. Gate four: everyone else should leave.","anime,ninja,buff"},
+	{"gatehouse","EEEMII","Ge",4,1,10,"9E9E9E","5D4037","twin towers flanking an arched gate","thud","Two towers, one gate, zero chance.","structure,defense,ancient"},
 	{"gatekeeper","LKDCYI","GkO",5,1,8,"57534E","D4AF37","stout armoured guard with a giant key and a crossed halberd","clang","What is the password? Wrong. It is always wrong.","defense,medieval"},
 	{"gatling gun","CKDMwI","TeV",7,7,6,"A86F32","5A3A1E","rotating barrel cluster on wheels","rattle","Crank to shoot. Shoot to win.","medieval,siege,heavy"},
 	{"gaucho","LECKNA","DHg",5,7,5,"7C2D12","F5F5F4","wide hat, poncho, bolas","yeehaw","Lassos with style. And rocks.","western"},
@@ -236,6 +242,7 @@ return {
 	{"gloom","FICDOJ","jSN",3,3,3,"3A3446","7E7590","grey-purple drooping cloud","sigh","Mondays, but as a spell.","spooky,silly"},
 	{"gloom cloud","GBCDOJ","QLN",3,4,3,"6E7F92","BFD6E8","a small grumpy grey cloud that rains on one head","patter","Your own personal bad day.","cartoon,silly,storm"},
 	{"gloom domain","KIEN4I","iSRN",7,3,3,"2E1E4A","A06EFF","a dark rune circle with six orbiting rune shards","hum","Your mana is my mana now.","anime,shadow,zone,drain"},
+	{"gloom sphere","KICGKK","jke",5,5,3,"4B2A6E","C08CFF","a churning ball of shadow ringed by dark crescents","hum","It hits. Then everything else hits a little harder.","battler,monster catcher,ghost,shadow"},
 	{"glory","KHCOKJ","DF",4,6,4,"FFD54F","FFFFFF","golden spotlight and trumpet sparkles","choir","Glory! Glory! Applause please.","holy"},
 	{"glove","BMAONI","G",1,6,2,"D8CBB5","C0392B","knitted wool mitten","swish","Warm hands. Brave hands.","clothing"},
 	{"glow","FHBOKJ","Fc",2,3,2,"FFF1B8","FFFFFF","soft warm halo around the caster","hum","Stay positive. Literally glowing.","cute"},
@@ -396,11 +403,4 @@ return {
 	{"granite","FEDCnI","Gk",4,1,9,"8C8682","C7C1BB","speckled grey stone wall blocks","rumble","Not moving. Not now, not ever.","heavy"},
 	{"granny smith","IMBAKF","jke",3,6,2,"8DC63F","E8F2C8","bright green round apple","squirt","Sour green apple with grandma energy.","edible,fruit,sour"},
 	{"granola","IMAELB","Fe",2,6,1,"C89050","D9A04A","clusters of toasted oats","pitter","Crunchy clusters of adventure.","edible,grain"},
-	{"granola bar","IMBOKI","DF",3,5,3,"C89050","6B3A1E","chewy oat bar in wrapper","chomp","Fuel for long quests.","edible"},
-	{"granola bowl","IGBOKI","F",2,5,3,"C89050","F7F4EC","yogurt with granola and berries","crunch","Crunchy morning fuel.","edible,healthy,breakfast"},
-	{"grape","IGAELB","eVP",2,7,1,"6B2D7B","7FAE3A","small round purple orb","pitter","Small, round, perfect for pelting.","edible,fruit,sweet"},
-	{"grape jelly","IMBLGI","SNP",2,3,3,"5A1E5E","8E2B7E","jar of purple jelly","gloop","Purple, wobbly, sticky.","edible,sticky,sauce,sweet"},
-	{"grape juice","IBBOKI","F",2,6,2,"5A1E5E","8E2B7E","glass of purple juice","slurp","Purple power. Stains everything.","edible,drink"},
-	{"grape soda","IBBFKI","EkI",3,7,1,"7A2A9A","C8A0E8","purple fizzy can","fizz","Purple fizz, max chaos.","edible,drink,fizzy"},
-	{"grapefruit","IMBAKF","jeO",3,6,2,"F5A07A","D24E5A","big round citrus, pink flesh","squirt","Squirts directly in the eye. Every time.","edible,fruit,sour"},
 }

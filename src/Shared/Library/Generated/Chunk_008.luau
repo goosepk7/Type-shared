@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dinner roll","IMBAKF","Fke",3,6,2,"D9A04A","F5E2B8","round fluffy golden roll","splat","Rolls. As advertised.","edible"},
+	{"dino rider","LEDKNA","Dfg",7,8,6,"15803D","78350F","warrior riding a scaly dinosaur","roar","Brought a dinosaur. You didn't.","mount,warrior"},
+	{"dinosaur","AMDJBA","DkfT",7,6,7,"5A8A3A","D8C86A","classic dinosaur, big tail, scaly","roar","Was here first. Wants it back.","dinosaur,extinct,reptile,predator"},
+	{"dinosaur car","DMCKHL","Dkfg",4,6,5,"43A047","FFEB3B","car shaped like a dinosaur","engine","RAWR. Vroom. RAWR.","vehicle,silly"},
+	{"dinosaur costume kid","LMBJNA","Dd",2,7,3,"15803D","F97316","kid in inflatable dinosaur suit","roar","Stomps. Rawrs. Trips.","cute,silly"},
 	{"dinosaur egg","AMBJKI","Wh",2,4,4,"D8C8A8","8A7A5A","big speckled egg, cracking open","growl","Something inside is getting impatient.","extinct,ancient,dinosaur"},
 	{"dip","IMBL2I","ScN",2,1,2,"F5F0DC","84CC16","bowl of creamy dip with one broken chip stuck in","gloop","Double dippers will be prosecuted.","edible,sauce,sticky"},
 	{"diplodocus","AMFJAA","kIO",8,2,9,"8A8A6A","C8C0A0","very long neck, very long whip tail","rumble","Longer than three buses.","dinosaur,extinct,reptile,heavy"},
@@ -398,9 +403,4 @@ return {
 	{"ember bloom","FACNbI","KEk",5,6,5,"FF5CAA","FF8C6E","a lotus of pink flame blooming open round the caster","whoomph","Burns the bad guys. Burns the bad stuff off you too.","anime,slayer,fire,demon"},
 	{"ember cloud","FACDOJ","KQ",5,4,2,"FF7043","FFE0B2","glowing cloud raining sparks","crackle","A cloud with a temper.","fire"},
 	{"ember dome","FADNKI","KkP",5,6,4,"FF7A2E","FFD27A","a seed of fire slammed down that swells into a dome of flame","boom","Bring marshmallows, stand well back.","game,adventure,fire,magic"},
-	{"ember phoenix chick","AAAJDB","KAF",2,6,1,"F97316","FEF08A","fluffy fire chick with flame tuft","chirp","Reborn from a burnt toast.","fire,cute,bird"},
-	{"ember sprite","AAAJNB","KjA",2,9,1,"F97316","FDE047","tiny flame fairy","crackle","Small spark. Big trouble.","fairy,fire"},
-	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
-	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
-	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
 }

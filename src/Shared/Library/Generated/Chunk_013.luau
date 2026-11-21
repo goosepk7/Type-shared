@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hellcat","AABJAA","KZf",3,9,2,"1C1917","F59E0B","smoky black cat with ember eyes","hiss","Lands on its feet. Leaves scorch marks.","cat,fire,spooky"},
+	{"hellfire","FADEOB","KESP",8,6,2,"B91C1C","111827","black-red flames raining with smoking yellow rocks","roar","Smells like eggs. Burns like Mondays.","fire,spooky"},
+	{"hellfire hound","AACJAA","KDf",5,8,4,"1C1917","F97316","coal-black hound with flaming mane","growl","A good boy. A very hot good boy.","canine,fire"},
+	{"hello","KHBF6B","dcIO",2,7,1,"FDE047","38BDF8","big waving hand with a speech bubble HI! and sparkles","ding","Hi! Hello! Hey! Over here! HI!","cute,silly,support"},
+	{"helmet","BKBONI","G",1,5,6,"8A929B","24262A","rounded metal helmet","clank","Protects the thinking bit.","armor,defense"},
+	{"help","KHBJVJ","Fh",2,6,3,"42A5F5","FFFFFF","glowing friendly spirit appearing beside you","chime","Help is on the way!","support"},
+	{"hemlock","NJDCMI","GWkSM",4,1,7,"4E342E","1B5E20","drooping feathery evergreen","rustle","Shady, droopy, slightly sinister.","plant,tree"},
 	{"henchman","LMBJNA","dQP",2,5,3,"111827","FACC15","black jumpsuit, sunglasses, clipboard","grunt","Here to lose dramatically.","villain,silly"},
 	{"henodus","ABBJUA","GNB",2,2,8,"6A6A5A","C8C0A8","flat square turtle-like reptile","hiss","A square turtle. Weird.","reptile,armored"},
 	{"herald","LMCJNA","Oh",3,5,3,"1D4ED8","FACC15","tabard, trumpet, scroll","horn","HEAR YE. HEAR YE. Ow, my ears.","royal"},
@@ -396,11 +403,4 @@ return {
 	{"idli","IGBOKI","F",2,5,3,"F7F4EC","E8E0D0","soft white steamed cakes","crunch","Fluffy white pillows.","edible,healthy"},
 	{"ifrit","AADJNJ","KAke",7,7,6,"991B1B","F97316","smoky fire spirit, horns, burning tail","whoosh","A genie with anger management issues.","mythical,fire"},
 	{"igloo","ECCIII","GFS",3,1,6,"F5F5F5","B3E5FC","dome of snow blocks, tunnel entrance","thud","Cosy inside. Frosty outside.","structure,frozen"},
-	{"ignition","FABAKB","KeP",4,9,1,"FF6B1A","FFE7A8","spark streak that blooms into flame","fizz","Just add one tiny spark.","fire"},
-	{"iguana","AMCJAA","Cf",3,7,2,"6AA04A","3A6A2A","spiky back crest, dewlap","hiss","A tiny dragon that eats salad.","reptile"},
-	{"iguanodon","AMDJAA","dkT",5,5,6,"6A7A4A","D8C07A","thumb spikes","honk","Thumbs up. Spiky thumbs up.","dinosaur,extinct,reptile"},
-	{"illusion","KLCJVA","jdZ",2,5,1,"CE93D8","B2EBF2","shimmering copy of the caster","shimmer","Is that real? It is not.","magic"},
-	{"illusionist","LLCJNA","jdZY",4,6,3,"C084FC","67E8F9","shimmering robe, mirrors, top hat","chime","Which one's real? Neither.","magic,trickster"},
-	{"imagination","KLCJVJ","jh",4,5,3,"FF4081","00E5FF","doodle-like glowing shapes coming to life","shimmer","If you can dream it, it can bonk you.","magic,cute"},
-	{"immortal jellyfish","ABAJGJ","FSMOB",1,2,1,"F2E8E8","D8302A","tiny jelly with red center","squelch","Gets old, then turns young again.","aquatic,ocean,venomous"},
 }
