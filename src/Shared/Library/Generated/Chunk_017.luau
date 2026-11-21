@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"merganser","ABBJDC","AfTB",2,5,2,"2A6A4A","F2F2F2","crested fish duck with saw bill","quack","Duck with teeth. Kinda.","bird,aquatic"},
+	{"merge","KLCOKI","WF",5,4,4,"FFB74D","7E57C2","two glows swirling into one","warp","Two become one. Bigger one.","magic"},
+	{"meringue","IMBLGG","USN",2,3,3,"F7F4F0","F2E2D0","swirled white peak","wobble","A sugar cloud with crunch.","edible,wobbly,sweet"},
+	{"merlin falcon","AMBJDB","DAfT",3,9,3,"5A6A8A","D8A06A","small dashing falcon","screech","Not the wizard. Still magic.","bird,predator"},
 	{"mermaid","ABCJEC","FceB",4,7,4,"0EA5E9","F472B6","fish tail, seashell top, flowing hair","sing","Lives under the sea. Collects forks.","mythical,aquatic"},
 	{"mermaid princess","ABCJEC","FcB",4,7,4,"0EA5E9","F472B6","crowned mermaid with pearl necklace","sing","Wants legs. Settles for victory.","royal,aquatic"},
 	{"mermaid queen","ABDJEC","FhB",6,6,5,"0369A1","FDE68A","crowned mermaid with pearl scepter","sing","Rules the reef. Bans plastic.","aquatic,royal"},
@@ -399,8 +403,4 @@ return {
 	{"musician","LMCJNA","jceO",4,5,4,"7C3AED","FCD34D","performer with a guitar on back and drumsticks in hand","music","One, two, three, four! Solo of doom.","music"},
 	{"musk deer","AMBJAA","DkT",3,8,4,"6A5A44","C8B8A0","small deer with long fangs","bleat","No antlers. Vampire fangs instead.","mammal,wild"},
 	{"musk ox","ACDJAA","GDkO",6,4,7,"3E3026","C2B29A","long shaggy coat, helmet horns","moo","Forms a wall. Dares you.","mammal,heavy,arctic"},
-	{"musk turtle","AMBJUA","GMNB",2,2,8,"3A3A2A","8A8A6A","small turtle that smells","hiss","Stinks when grabbed.","reptile,armored"},
-	{"muskellunge","ABDJEC","DfTB",5,7,4,"8A9A6A","D8D8A0","huge toothy pike","splash","The fish of ten thousand casts.","fish,aquatic"},
-	{"musket","CKCAwI","kTe",5,2,4,"5A3A1E","8A929B","long smoothbore barrel, wooden stock","bang","Aim. Fire. Spend a week reloading.","historic,ranged"},
-	{"musketeer","LKCJNA","fTe",5,7,4,"1D4ED8","F8FAFC","feathered hat, rapier, blue tabard","bang","All for one. One for snacks.","warrior"},
 }

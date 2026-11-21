@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paddlefish","ABCJEC","DfB",4,7,4,"6A7A8A","C8D0D8","long paddle-shaped snout","splash","Swims with a canoe paddle on its face.","fish,aquatic"},
+	{"pademelon","AMBJAG","Uf",2,6,2,"8A6A4A","C8A07A","small round forest wallaby","chirp","Sounds like a melon. Isn't one.","mammal,marsupial"},
+	{"padlock","BKALJK","GO",1,3,7,"B58A3A","8A929B","heavy padlock with shackle","clank","Click. No entry.","tool"},
+	{"paella","IACELB","KFeP",2,6,1,"E8A02B","C8302B","wide pan of saffron rice, seafood","pitter","A giant pan of golden rice.","edible,grain"},
 	{"page","BFAAJB","ATe",1,7,1,"FFFFFF","93C5FD","single lined page fluttering edge-first","rustle","Paper cut. The worst cut.","school,sharp"},
 	{"pagoda","EMDMII","GSe",4,1,7,"C62828","263238","stacked curved roofs, many tiers","thud","Every floor has another curved roof.","structure,defense,tower"},
 	{"pagoda tree","NGDCMI","GWkS",3,1,7,"5D4037","FFF8E1","wide tree with hanging white flowers","rustle","Tiered branches like a pagoda.","plant,tree"},
@@ -214,6 +218,7 @@ return {
 	{"pendulum hammer","BKDLtI","kO",6,3,7,"5B6168","8B5A2B","huge hammer swinging from above","snap","Tick. Tock. BONK.","trap,defense"},
 	{"penguin","ACBJDA","UDB",2,5,3,"1E1E24","F7F7F2","tuxedo body, flippers, waddle","squawk","Wears a tux to every occasion.","bird,arctic,cute"},
 	{"penguin chick","ACAJDA","UDB",1,5,3,"8A8A8E","F2F2F0","fluffy grey round chick","squawk","A fluffball that waddles.","bird,arctic,cute"},
+	{"penguin slide","ACCODC","Dk",4,9,3,"22262E","F4F4F0","you belly slide like a penguin and bowl enemies up","whoosh","Faster on the belly than on the feet.","critter,bird,movement,ice"},
 	{"penguin soldier","ACBJDA","dNP",2,5,3,"111827","F8FAFC","penguin in a tiny helmet","honk","Smile and wave. Then attack.","silly,frozen"},
 	{"peninsula","MEENII","SN",2,1,8,"7CB342","1E88E5","land jutting into the sea","rumble","Water on three sides. Trouble on the fourth.","place,terrain"},
 	{"pennant","BMBOJB","dQF",2,5,2,"EF4444","FACC15","string of little triangle flags fluttering","flutter","Go team! Whichever team. This is generic bunting.","party,sport"},
@@ -398,9 +403,4 @@ return {
 	{"piskie","ALAJNB","jY",1,9,1,"A3E635","F472B6","tiny green trickster with glowing trail","giggle","Leads you in circles. Giggles.","fairy"},
 	{"pistachio","IEAAKK","UeO",2,8,5,"9CBA6B","C8A87A","split beige shell, green nut","tok","A nut that smiles at you.","edible,nut"},
 	{"pistachio ice cream","ICBAKJ","JeN",3,5,2,"B8D88A","F2E8C8","pale green scoop","squish","Nutty and cold.","edible,frozen,sweet"},
-	{"pistol","CKBAwI","Te",3,8,3,"2C3539","24262A","compact one-hand blaster","bang","Pew. Small but reliable.","modern,ranged"},
-	{"pistol shrimp","ABAJRA","GEfTeO",4,4,5,"E86A3A","F2C8A8","one giant snapping claw","clack","Snaps so hard it boils water.","crustacean,aquatic,armored"},
-	{"piston","OKCL1I","klI",5,4,7,"8A929B","4A4D52","cylinder with punching rod","hum","Kachunk! Pushed.","mechanical"},
-	{"piston rush","KFCHKI","Dkf",6,10,1,"78C8FF","4A505C","calf engines spit blue jets into a sonic-boom kick","vroom","Zero to forty studs before you finished blinking.","anime,quirk,speed"},
-	{"pit","MEDL5I","SHNO",6,1,8,"3E2A14","111111","round dark hole in the ground with crumbling edges","echo","Hellooo? ...ellooo? ...llooo?","trap,terrain"},
 }

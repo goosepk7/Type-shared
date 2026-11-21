@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sphinx","AHDJAA","GjO",6,4,8,"D6A35A","1E3A8A","lion body, headdress, folded wings","roar","Answer the riddle or lose the turn.","mythical,ancient,guardian"},
+	{"sphinx cat","AMBJAA","jd",2,6,2,"D6A35A","FDE68A","small cat with pharaoh headdress","meow","Asks small riddles. Accepts treats.","silly,cute"},
+	{"sphinx queen","AHEJAA","GjO",8,3,9,"D6A35A","1E3A8A","giant stone sphinx with golden headdress","roar","Riddle me this: why'd you summon me?","mythical,ancient,guardian"},
+	{"sphynx cat","AMBJAA","dfT",2,7,2,"E9C2B0","C99A88","hairless wrinkly body, giant ears","meow","Forgot its sweater. Always.","mammal,pet,cute"},
+	{"spice","IAADOJ","KjP",3,5,1,"C2410C","FACC15","puff of red-orange powder from a shaker","puff","A little kick. Then a big one.","edible,spicy"},
 	{"spicy challenge","IABAKK","KjP",6,7,2,"D8202B","F2862B","flaming bowl with warning label","sizzle","Accept the challenge. Breathe fire.","edible,spicy,flammable"},
 	{"spicy noodles","IABAKK","KHN",5,7,2,"D8202B","F2C24A","red tangled noodles, steam","sizzle","The noodle challenge. Few survive.","edible,spicy,flammable"},
 	{"spider","AJBJQA","fMeN",2,6,2,"2A2420","8A6A4A","eight legs, round body, many eyes","skitter","Eight legs, eight eyes, zero chill.","arachnid,spooky,venomous"},
@@ -398,9 +403,4 @@ return {
 	{"stump","NGBCMI","GS",1,1,7,"8D6E63","C0A060","cut trunk with rings on top","rustle","It has been through a lot.","plant,tree,silly"},
 	{"stun","KDBAKB","O",3,9,1,"FFF176","FFFFFF","spinning stars around target's head","bonk","Seeing stars. Not the pretty kind.","silly"},
 	{"stun gun","CDBAwI","feLO",2,8,3,"24262A","F1C40F","small pistol with two prongs","zap","Bzzzt. Nap time.","electric"},
-	{"stunt double","LACJNA","DEk",5,9,4,"DC2626","F8FAFC","leather jumpsuit, helmet, mid-jump pose","boom","Jumps through fire. Daily.","silly"},
-	{"stunt plane team","DFEELB","jAeP",6,9,5,"E53935","1565C0","formation of jets with coloured smoke","jet","Smoke trails everywhere. Very confusing.","vehicle,air"},
-	{"stupidity","KMBDOJ","jNP",3,4,1,"FDE68A","A3E635","question marks around a spinning empty thought bubble","boing","Contagious. Do not make eye contact.","silly,meme"},
-	{"sturgeon","ABDJEC","DfB",5,7,6,"6E6A64","C8C4BC","bony armor plates, shovel snout","splash","Older than dinosaurs. Looks it.","fish,aquatic,ancient"},
-	{"sty","MECNII","SMNh",3,1,4,"6B4F2A","F4A6B7","muddy fenced pen with a trough and snoozing pigs","squelch","Your room, according to your mother.","farm,gross"},
 }

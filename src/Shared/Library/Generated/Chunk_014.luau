@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"impundulu","ADCJDB","AeL",5,9,3,"F8FAFC","FDE047","white bird shooting lightning from wings","zap","Lays an egg of lightning. Hot potato.","mythical,bird,storm"},
+	{"inchworm","AMAJTA","CP",1,3,1,"8AC83A","C8E87A","green looping caterpillar","squelch","Measures everything. Slowly.","bug"},
+	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
 	{"indestructible","KKDOKI","Ga",2,3,10,"90A4AE","FFD54F","thick shining metal aura","clang","Tried breaking it. It broke you.","defence"},
 	{"indian paintbrush","NGBNMI","dFS",1,1,1,"E53935","FF9800","red-tipped spikes like dipped brushes","rustle","Looks dipped in paint.","plant,flower"},
 	{"indian rhino","AMDJAA","GDkIO",7,4,9,"7C7470","B0A49A","armor-plated folds, one horn","trumpet","Built with its own armor plating.","mammal,heavy,wild"},
@@ -139,6 +142,7 @@ return {
 	{"jelly wall","EECCnI","GUk",2,1,4,"E53935","FF8A80","a wobbly red jelly wall that boings people back","wobble","Wobbles. Bounces you right back.","goofy,silly,sweet,wall"},
 	{"jellybud","AGBJGG","UQfNh",4,7,3,"76DEA8","C8FFDE","a squat mint jelly with a seedling on its head","boing","It eats anything that is not nailed down, and some things that are.","anime,isekai,slime,pet"},
 	{"jellyfish","ABBJGJ","SMOB",3,2,1,"E89AD0","F2D8F0","translucent bell, trailing tentacles","squelch","95% water, 5% ouch.","aquatic,ocean,venomous"},
+	{"jellyfish drift","ABCAEJ","QSN",3,2,3,"C98BE8","F2B8F0","a glowing jellyfish drifts toward enemies and stings","bubble","No brain. Still finds you.","critter,sea,projectile"},
 	{"jerboa","AMAJAG","UCdb",1,6,1,"E2C28A","F7F0E6","huge kangaroo legs, long tufted tail","squeak","A mouse on pogo sticks.","mammal,cute,desert"},
 	{"jerk chicken","IABAKK","Kc",5,7,2,"5A2A1E","D8402B","charred spiced chicken pieces","sizzle","Fiery, smoky, Caribbean heat.","edible,spicy,flammable"},
 	{"jerry can","BABL2I","KE",3,1,4,"C0392B","C0392B","boxy fuel can with spout","thud","Do not light. We said DO NOT.","container,flammable"},
@@ -399,8 +403,4 @@ return {
 	{"krampus","AIDJNA","Dfh",6,6,6,"1C1917","DC2626","shaggy horned figure with chains and basket","cackle","Santa's grumpy partner. Very hairy.","spooky,christmas,holiday"},
 	{"krill","ABBJLA","fPB",2,4,5,"F27A6A","F2C0B0","tiny see-through pink shrimp swarm","clack","Small. Many. Whale snack.","crustacean,aquatic,armored"},
 	{"kris","CKBHrK","fT",4,8,3,"8A929B","D4A72C","wavy serpentine dagger","shing","Wiggly blade, straight to the point.","sharp,ancient"},
-	{"kronosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","B8C0C8","giant short-necked pliosaur","roar","Skull the size of a car.","extinct,reptile,aquatic,ocean"},
-	{"kudu","AMDJAA","DkT",5,8,4,"8E7A64","F2F0EA","huge spiral horns, white stripes","bleat","Horns like a corkscrew. Very fancy.","mammal,wild"},
-	{"kudzu","NGDLMI","GWSHNP",4,3,6,"2E7D32","7CB342","blanket of vines swallowing everything","rustle","Grows a foot a day. Eats houses.","plant"},
-	{"kuiper belt","MCFEKJ","JReP",6,3,7,"B3E5FC","9E9E9E","ring of icy rocks far from the sun","twinkle","A freezer full of space rocks.","space,star"},
 }

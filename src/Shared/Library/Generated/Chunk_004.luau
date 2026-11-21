@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
+	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
 	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
 	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
@@ -401,6 +403,4 @@ return {
 	{"carabiner","BKALKF","H",1,7,5,"7D3CB5","C9CED4","D-shaped clip with spring gate","bonk","Click. Secured.","sport"},
 	{"caracal","AMCJAA","ZfTe",4,7,3,"C08E5A","1E1E1E","long black ear tufts, sandy coat","hiss","Can swat birds out of the air. Rude.","mammal,predator,wild,desert"},
 	{"caracara","AMCJDB","DAfT",5,9,3,"2A2420","E8702A","orange face, black cap","screech","Walks around like it owns the place.","bird,predator"},
-	{"caramel","IMBLGI","ScN",2,3,3,"C68E3A","E8B860","glossy golden drizzle","gloop","Sticky gold. Wonderful and dangerous.","edible,sticky,candy,sweet"},
-	{"caramel apple","IMBLGI","ScNP",2,3,3,"B5651D","C8262B","apple on a stick, glossy caramel shell","gloop","Sticky, crunchy, impossible to eat politely.","edible,sticky,sweet"},
 }

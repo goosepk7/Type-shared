@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"musk turtle","AMBJUA","GMNB",2,2,8,"3A3A2A","8A8A6A","small turtle that smells","hiss","Stinks when grabbed.","reptile,armored"},
+	{"muskellunge","ABDJEC","DfTB",5,7,4,"8A9A6A","D8D8A0","huge toothy pike","splash","The fish of ten thousand casts.","fish,aquatic"},
+	{"musket","CKCAwI","kTe",5,2,4,"5A3A1E","8A929B","long smoothbore barrel, wooden stock","bang","Aim. Fire. Spend a week reloading.","historic,ranged"},
+	{"musketeer","LKCJNA","fTe",5,7,4,"1D4ED8","F8FAFC","feathered hat, rapier, blue tabard","bang","All for one. One for snacks.","warrior"},
 	{"muskrat","ABAJAA","CdbB",1,6,1,"6A4A2A","A88A6A","water rat with flat tail","squeak","Swims, builds huts, smells musky.","mammal,cute"},
 	{"mussel","ABAJGI","GNP",1,1,6,"2A2E3A","8A7AA8","blue-black long shells","squelch","Strong mussels. Get it?","mollusk,aquatic"},
 	{"mustache","BMBADB","Ujd",2,7,2,"2C1B10","4A2F1B","curly handlebar mustache flapping like wings","twang","Instantly 40% more distinguished.","body,silly,meme"},
@@ -347,7 +351,7 @@ return {
 	{"ostrich","AMDKDA","DkfgO",5,9,5,"2A2420","F2F2F0","huge bird, long neck, long bare legs","boom","Fastest runner on two legs. Kicks hard.","bird,flightless"},
 	{"ostrich chick","AMBJDA","Dkf",2,8,5,"B8A07A","E8D8B8","spiky-feathered ostrich baby","boom","Runs 35 mph a month after hatching.","bird,flightless,cute"},
 	{"otherworld express","BLEFHL","kTe",8,10,2,"F0ECE0","5ABEFF","a cream delivery truck bursting out of a shimmering portal","honk","Look both ways. Especially in fantasy novels.","anime,isekai,truck"},
-	{"otter","ABBJAA","UCfB",3,8,2,"6A4A30","A8886A","sleek body, whiskers, floating on back","chatter","Holds hands while sleeping.","mammal,predator,cute,aquatic"},
+	{"otter splash","ABCFAC","kIN",4,6,2,"7A5234","4EA8DE","an otter tail-slaps a wave that washes enemies back","splash","Holds hands while sleeping. Not right now.","critter,mammal,wave,sea"},
 	{"ottoman","BMBC0I","G",1,1,4,"6E1630","D4A72C","padded square footrest","thud","Feet up. Defence up.","furniture,household"},
 	{"otyugh","AJDLGI","fMH",5,2,7,"57534E","84CC16","three-legged lump with tentacles in junk pile","chomp","Lives in trash. Loves it there.","dungeon,silly"},
 	{"ouch","KDBAKB","UaO",3,8,1,"EF4444","FDE047","red comic burst reading OUCH with a throbbing thumb","pow","Ouch. Right in the hit points.","silly,meme"},
@@ -399,8 +403,4 @@ return {
 	{"paddle boat","DBBKHC","DkgB",2,3,3,"F5F5F5","FFB300","swan-shaped boat with pedal wheel","splash","The swan is judging you.","silly,cute"},
 	{"paddle steamer","DBEKHC","DkgB",5,4,7,"F5F5F5","C62828","white boat, twin chimneys, big rear paddle wheel","whistle","Slow, steamy, and full of jazz.","vehicle,aquatic"},
 	{"paddleboard","DBAKHC","DkgB",2,5,2,"26C6DA","F5F5F5","long flat board, single paddle","splash","Stand tall. Wobble a lot.","vehicle,aquatic,sport"},
-	{"paddlefish","ABCJEC","DfB",4,7,4,"6A7A8A","C8D0D8","long paddle-shaped snout","splash","Swims with a canoe paddle on its face.","fish,aquatic"},
-	{"pademelon","AMBJAG","Uf",2,6,2,"8A6A4A","C8A07A","small round forest wallaby","chirp","Sounds like a melon. Isn't one.","mammal,marsupial"},
-	{"padlock","BKALJK","GO",1,3,7,"B58A3A","8A929B","heavy padlock with shackle","clank","Click. No entry.","tool"},
-	{"paella","IACELB","KFeP",2,6,1,"E8A02B","C8302B","wide pan of saffron rice, seafood","pitter","A giant pan of golden rice.","edible,grain"},
 }

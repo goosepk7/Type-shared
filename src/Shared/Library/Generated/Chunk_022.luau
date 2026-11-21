@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot arm monster","OKCJFA","lH",4,4,6,"FACC15","1F2937","three-legged bot with giant grabber claw","whir","Claw machine, but it wins.","robot"},
+	{"robot ball","OKBJKF","UDd",2,8,5,"F97316","F8FAFC","rolling sphere robot with dome head","beep","Rolls everywhere. Falls down stairs.","robot,cute"},
+	{"robot bear","OKDJAA","kf",6,4,8,"57534E","FACC15","armored mechanical bear","roar","Hibernates in a charging dock.","robot"},
+	{"robot bee swarm","OKBJLB","AMP",3,9,2,"FACC15","1F2937","swarm of tiny yellow-black drone bees","buzz","Pollinates. Also stings. Metallically.","robot,swarm,insect"},
+	{"robot bird","OKAJDB","dAe",2,8,3,"CA8A04","22D3EE","brass bird with ticking gear wings","whistle","Sings in beeps.","robot,bird"},
 	{"robot butler","OKCJNA","GdF",3,4,5,"F8FAFC","1F2937","tuxedo-painted robot holding a tray","beep","Tea is served. Then the laser is served.","robot,silly"},
 	{"robot cat","OKBJAA","dZf",3,8,4,"E5E7EB","F472B6","sleek chrome kitty, glowing whiskers","meow","Knocks things off tables at 200 mph.","robot,cute,cat"},
 	{"robot chef","OKCJNA","KFe",3,5,5,"F8FAFC","DC2626","robot with chef hat and spatula arms","beep","Flips burgers. And enemies.","robot,silly"},
@@ -398,9 +403,4 @@ return {
 	{"scout car","DMCKHL","Dkeg",4,9,5,"B59B6A","3B3B2F","light open car with a mounted gun","engine","Fast, nosy, and annoying.","mechanical,vehicle,land"},
 	{"scrambled eggs","IGBOKI","jF",2,5,3,"F2D23A","F7E88A","fluffy yellow curd pile","crunch","Eggs in a state of confusion.","edible,healthy,breakfast"},
 	{"scrap heap","MKCNII","SNh",2,1,5,"795548","9E9E9E","towering pile of junk","crowd","One person's trash is another's weapon.","place,silly"},
-	{"scrap metal","BKCCnK","G",2,1,6,"9C4A1A","8E9196","pile of twisted metal bits","clang","Junkyard barricade.","urban"},
-	{"scrap robot","OKCJNA","GkV",4,4,6,"78716C","B45309","lopsided robot of rusty junk and tires","clank","Built from junk. Proud of it.","robot,silly"},
-	{"scratch","KMBHJB","fT",3,9,1,"FFCC80","FFFFFF","three glowing claw lines","scritch","Scritch. Ouch.","sharp"},
-	{"scratching post","BMCCII","Gc",1,1,4,"D2B48C","B89B6A","carpeted post with rope wrap","squeak","Shred zone.","pet"},
-	{"scream","KFCFOB","jkO",5,10,1,"FFCDD2","FFFFFF","jagged sound ring burst","scream","AAAAAAAAAAAAAH!","loud"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
+	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
+	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
 	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
 	{"hermit focus","KGBOKI","DR",7,5,4,"F0D678","96D278","a seated calm with floating river stones, then a gold halo","chime","Be still. Then be faster than them.","anime,ninja,calm"},
 	{"hero","LHCJNA","GDFf",6,6,6,"1D4ED8","FACC15","caped figure, bright sword, heroic pose","clang","Saves the day. Every day. Exhausted.","hero"},
@@ -229,7 +232,7 @@ return {
 	{"humboldt squid","ABCJSC","jZfHhB",5,6,3,"B8302A","E8A08A","big red flashing squid","squelch","Flashes red and white. Hunts in gangs.","aquatic,ocean,smart"},
 	{"humidifier","OBBD1I","FS",1,1,3,"F2F2EE","47D7E8","small misting tower","thud","Puff puff, gentle mist.","household"},
 	{"humidity","GBCNOI","N",2,3,3,"B6D0D9","EAF4F7","steamy damp air shimmer","drip","It is not the heat. It is this.","silly"},
-	{"hummingbird","AMAJDB","dAS",1,10,1,"2AA06A","D8204A","tiny jewel bird, blurred wings, long beak","tweet","Wings flap 80 times a second. Exhausting.","bird,cute"},
+	{"hummingbird dart","AMAADE","AQT",3,10,1,"3FAE6A","E0344E","a hummingbird darts at an enemy four times","buzz","Eighty wingbeats a second, all of them rude.","critter,bird,projectile"},
 	{"hummus","IMBLGI","FSN",2,3,3,"D8BC8A","8A9A3A","creamy beige swirl, olive oil","gloop","Chickpeas, but smoother.","edible,sticky"},
 	{"hump","BECCII","GUF",3,1,7,"C9A66B","A67C52","round sandy hump with a tuft of hair","thud","Storing snacks for later. And for war.","body,desert,defense"},
 	{"humpback whale","ABFJEC","UdkIB",8,3,9,"2E3A48","E8ECEE","long white flippers, knobby head, breaching","whalesong","Sings top hits across entire oceans.","mammal,aquatic,ocean,heavy"},
@@ -400,7 +403,4 @@ return {
 	{"implode","KIDGKI","EHO",7,6,1,"1A0033","B388FF","everything crumpling into a dark point","whum","Explosion, but backwards.","space,explosive"},
 	{"impostor","LICJNA","jZb",4,6,4,"DC2626","F8FAFC","teammate shape with a suspicious smile","whisper","Kinda sus. Definitely sus.","meme,villain"},
 	{"imprison","KLCLII","GO",6,4,6,"546E7A","FFD54F","glowing bars slamming down around target","clank","Go directly to jail.","magic"},
-	{"impundulu","ADCJDB","AeL",5,9,3,"F8FAFC","FDE047","white bird shooting lightning from wings","zap","Lays an egg of lightning. Hot potato.","mythical,bird,storm"},
-	{"inchworm","AMAJTA","CP",1,3,1,"8AC83A","C8E87A","green looping caterpillar","squelch","Measures everything. Slowly.","bug"},
-	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
 }
