@@ -251,6 +251,7 @@ return {
 	{"trapeze","BMCLJI","lH",1,4,3,"C0392B","D4A72C","swinging bar on ropes","pop","Swing in. Swoop out.","party"},
 	{"trash","BJCNGI","ScMN",3,1,4,"4B5563","84CC16","heap of black bags, banana peels, fish bones, flies","squelch","One person's trash is still trash.","gross,silly,household"},
 	{"trash can lid","BKBIyI","Gd",1,6,3,"8E9196","4A4D52","dented round metal lid","clang","Clang! Gross, but effective.","silly,defense"},
+	{"trash heap","EJCMII","SMe",3,1,4,"6D7B4E","C5A059","a smelly trash heap that flings apple cores","splat","It's not trash. It's a lifestyle.","goofy,gross,silly,turret"},
 	{"trash wall","EJCCII","GSM",2,1,5,"795548","9E9E9E","heap of bins and junk","thud","Smells like a defence.","structure,defense,silly"},
 	{"traveling merchant","LMCJNA","cbY",3,5,4,"92400E","7C3AED","giant backpack of wares","ding","What're ya buyin'?","merchant"},
 	{"traveller palm","NGDCMI","GWkS",3,1,6,"6D4C41","43A047","giant fan of paddle leaves","rustle","Points the way. Holds water.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"twins","LMCJNA","jV",3,6,4,"F472B6","60A5FA","two identical kids","ding","Two of them. Twice the trouble.","family"},
 	{"twinstep fusion","KHCOKI","DWkf",8,7,4,"FFE7A0","5FE0D0","you and a light twin dance, then fold into one","warp","Two steps, one fighter. Mind the fingertips.","anime,dance,buff,transformation"},
 	{"two liter bottle","IBCFKI","EkI",4,7,1,"3A1A0C","3E8E2B","big plastic soda bottle","fizz","A pressurized fizz cannon.","edible,drink,fizzy"},
-	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
 }

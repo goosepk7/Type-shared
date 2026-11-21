@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
 	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
 	{"tylosaurus","ABEJEC","DkfHB",8,6,7,"3A5A6A","C8D0D8","long mosasaur with ram snout","roar","Rammed prey with its nose.","extinct,reptile,aquatic,ocean"},
 	{"typhon","AFFJNA","kleP",9,4,9,"1C1917","EA580C","storm giant with serpent legs and wings","roar","Father of monsters. Storm in a bad mood.","mythical,giant,boss,danger"},
@@ -402,5 +403,4 @@ return {
 	{"weed","NGALMI","WSP",1,1,3,"7CB342","C0CA33","scraggly green sprouts","rustle","You can not get rid of them. Ever.","plant,silly"},
 	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
 	{"week","KLBF6B","FNO",3,4,2,"EF4444","22C55E","seven boxes in a row: five grey, two golden","sigh","Five days of Monday. Two days of bliss.","time,meme"},
-	{"weekend","KHCNOI","DF",2,6,3,"FFD54F","81D4FA","sunny happy glow with confetti","yay","No school. All fun.","silly,support"},
 }

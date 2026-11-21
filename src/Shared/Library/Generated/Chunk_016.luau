@@ -68,7 +68,7 @@ return {
 	{"lunch pail","BKAIyI","G",1,6,3,"C9CED4","24262A","old tin lunch pail","thud","Classic grub armour.","container"},
 	{"lunch rush","IMAELB","DP",2,7,1,"D72B2B","F2C24A","stampede of trays","pitter","Everyone, everywhere, all at lunch.","edible,sweet"},
 	{"lunch thief","LIBJNA","Zb",2,9,2,"1F2937","FACC15","kid with stuffed cheeks and paper bag","whoosh","Your sandwich? Gone.","school,silly"},
-	{"lunch tray","BMBIyK","G",1,6,2,"E67E22","8E9196","compartment plastic tray","tap","Sliding down hills since forever.","school"},
+	{"lunch tray","BMBIyI","GaN",2,5,3,"E67E22","8D6E63","a lunch tray held up that flicks gravy at attackers","tap","Today's special: gravy. Again.","goofy,gross,school,shield"},
 	{"lunchbox","BMBIyK","G",1,6,4,"C0392B","C9CED4","metal box with handle","clang","Lunch. Armour. Lunch armour.","kitchen,household"},
 	{"lung","BFCFGE","kHI",4,6,3,"F2A1A1","E57373","pair of pink lungs inflating like bellows","whoosh","Deep breath in. Everybody out.","body,science"},
 	{"lungfish","ABCJEC","DfB",4,7,4,"6A6250","A89A80","eel-like with lungs, leg fins","splash","Breathes air. Naps in mud for years.","fish,aquatic,ancient"},

@@ -375,7 +375,7 @@ return {
 	{"fish owl","AMCJDB","AZTB",4,7,2,"8A6A4A","C8A880","huge shaggy owl","hoot","Biggest owl. Fishes in rivers.","bird,nocturnal,predator"},
 	{"fish pie","IGBOKI","F",2,5,3,"F2D08A","F2E8D0","mash-topped baked dish","crunch","Fish hiding under fluffy potato.","edible,healthy"},
 	{"fish sauce","IJBDOJ","jSM",3,3,2,"A8622B","C8904A","amber bottle","whiff","Smells strong. Tastes amazing.","edible,smelly,sauce"},
-	{"fish slap","CMBHJK","jfO",1,7,1,"C9CED4","47D7E8","large floppy fish held by the tail","boing","SLAP. Smells for a week.","silly"},
+	{"fish slap","CBCHJK","kfN",3,6,1,"9FB8C8","E8EEF2","a giant floppy fish swung up and slapped flat in front","splat","SLAP. Smells for a week.","goofy,gross,silly,melee"},
 	{"fish soup","IBBOGI","FS",3,4,3,"E8C070","F2E8D0","clear soup with fish chunks","slurp","A fisherman's warm bowl.","edible,warm,healthy"},
 	{"fish sticks","IMAELB","ceP",2,7,1,"E8B860","F2E8D0","breaded golden rectangles","pitter","Fish, but rectangle.","edible"},
 	{"fish taco","IMBAKF","ke",3,6,2,"E8B84A","F2E8D0","soft taco with fried fish","splat","A taco with ocean vibes.","edible"},

@@ -325,7 +325,7 @@ return {
 	{"mud elemental","AECJGA","HN",5,3,6,"78350F","65A30D","sloppy brown humanoid dripping mud","squelch","Messier than your room.","elemental"},
 	{"mud flats","MBENII","SN",2,1,5,"8D6E63","90A4AE","wide grey glistening mud","rumble","Squelchy. Slurpy. Sticky.","place,terrain"},
 	{"mud man","AECJNA","GN",4,3,5,"78350F","A16207","dripping figure made of wet mud","squelch","Wipe your feet first.","silly"},
-	{"mud pie","CEAAKK","jeN",1,7,1,"7A4E2D","D2B48C","lumpy wet mud blob","boing","Splat! Now you're messy.","silly"},
+	{"mud pie","CEAA7K","SeN",2,7,1,"7A4E2D","A1887F","a lumpy mud pie that splats into a slippery puddle","splat","Splat! Now you're messy.","goofy,gross,silly,mud"},
 	{"mud pit","MECLII","SN",2,1,5,"6D4C41","8D6E63","sloppy brown puddle","rumble","Pigs love it. Enemies do not.","place,terrain,silly"},
 	{"mud storm","GEDEOJ","jNP",5,4,3,"5D4037","A1887F","brown cloud raining mud blobs","splat","Splat. Splat. Splat.","silly,storm"},
 	{"mud turtle","AMBJUA","GNB",2,2,8,"4A3A2A","8A6A4A","small muddy turtle","hiss","Loves mud. Lives in mud.","reptile,armored"},
