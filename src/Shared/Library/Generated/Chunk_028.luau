@@ -298,7 +298,7 @@ return {
 	{"wasabi","IABAKK","KjO",5,7,2,"8DB84A","C8E08A","blob of bright green paste","sizzle","Clears sinuses. And arenas.","edible,spicy,flammable"},
 	{"wash","KBCF6F","FI",2,6,1,"4FC3F7","FFFFFF","soapy bubbly water wave","splash","Squeaky clean, whether you like it or not.","aquatic,silly"},
 	{"washboard","BMBFJI","j",1,5,3,"C9CED4","8B5A2B","ridged metal board","rattle","Scritch-a-scratch rhythm.","music"},
-	{"washing machine","OBCL1I","jVO",3,1,7,"F2F2EE","BFE6F2","front-loading drum washer","thud","Spin cycle: enemy edition.","household"},
+	{"washing machine","OBDN1K","kSH",4,2,5,"EEF1F2","8FD3F0","front-loading washer churning a sudsy whirlpool","splash","Whirr... whirr... SPIN CYCLE.","household,laundry,water"},
 	{"wasp","AJAJLB","AfTMP",2,7,1,"F2D82A","1E1E1E","narrow waist, sleek black-yellow","buzz","Stings repeatedly. Enjoys it.","insect,swarm,venomous"},
 	{"waste","FJCNGI","SMNP",4,2,2,"6B6B2A","3F4A1A","thick brown-green ooze glugging from a pipe","gloop","Do not ask where it came from.","toxic,gross"},
 	{"watch","BKAOKE","QNO",2,6,4,"C0C7CE","1F2937","ticking wristwatch with a spinning second hand","tick","Look at the time. Yours is up.","household,time"},

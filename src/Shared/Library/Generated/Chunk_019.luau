@@ -38,7 +38,7 @@ return {
 	{"pao de queijo","IMAELB","ce",2,7,1,"F2D08A","E8C070","small puffy cheese balls","pitter","Chewy little clouds of cheese.","edible"},
 	{"papaya","IGBAKF","Fke",3,6,2,"F27E3C","5B8A3A","long pear-shape, black seeds inside","splat","Soft, orange, and great for your tummy.","edible,fruit,sweet,tropical"},
 	{"paper","BMAAJK","eV",1,8,1,"F7F3E8","F2F2EE","flat white sheet","tap","Paper cuts are real.","office"},
-	{"paper airplane","BFAADB","ATe",1,8,1,"F7F3E8","F2F2EE","folded paper dart plane","squeak","Folded with love. Thrown with menace.","toy"},
+	{"paper airplane squadron","BFBADB","AQe",3,8,3,"F4EFE2","4F8FD6","three folded paper darts diving in formation","whoosh","Paper cuts, but make it aerial.","household,office,school,toy"},
 	{"paper bark tree","NGDCMI","GWkS",3,1,6,"F5E6CA","7CB342","peeling layers of papery bark","rustle","Bark like old paper.","plant,tree"},
 	{"paper birch tree","NGDCMI","GWkS",3,1,6,"FAFAFA","9CCC65","bright white peeling bark","rustle","Bark you can write on.","plant,tree"},
 	{"paper clip","BMAAJK","Te",1,8,1,"C9CED4","C9CED4","bent wire loop","tap","Holds things together. Barely.","office"},

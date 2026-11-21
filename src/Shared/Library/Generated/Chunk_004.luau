@@ -120,7 +120,7 @@ return {
 	{"bubble wall","EBCCII","GUS",1,1,2,"B3E5FC","F8BBD0","wobbly wall of shiny bubbles","thud","Pop! Pop! Still standing. Mostly.","silly,cute"},
 	{"bubble wave","FBCF6F","UI",3,6,1,"B3E5FC","F8BBD0","rolling surge of bubbles","pop","Boing boing pop.","silly,aquatic"},
 	{"bubble wizard","LBCJNA","Ujl",3,5,3,"BAE6FD","F0ABFC","robe with bubble wand staff","bubble","Traps foes in bubbles. They float away.","magic,silly"},
-	{"bubble wrap","BMCONI","Gd",1,5,2,"BFE6F2","F2F2EE","wrapped in popping plastic","clank","Pop pop pop pop pop.","silly"},
+	{"bubble wrap","BMCINI","Gk",3,5,3,"BFE6F2","FFFFFF","wrapped head to toe in popping plastic","pop","Pop. Pop. Pop-pop-pop-POP.","household,packing"},
 	{"bubblegum ice cream","ICBAKJ","JSN",3,5,2,"F2A6C8","4FA3E8","pink scoop with gum bits","squish","Ice cream with chewy surprises.","edible,frozen,sweet"},
 	{"bucket","BMBLJK","jN",1,5,3,"8A929B","8E9196","metal pail with handle","clank","Over the head. Lights out.","tool"},
 	{"bucket of chicken","IMCJII","dFc",5,1,6,"D72B2B","C8762B","bucket of crispy drumsticks","thud","A whole bucket of crunchy chaos.","edible,giant,silly"},

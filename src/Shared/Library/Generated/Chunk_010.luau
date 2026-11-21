@@ -352,7 +352,7 @@ return {
 	{"garden eel","ABAJCC","CdZB",1,6,1,"F2EEE6","3A3A3A","thin eels poking up from sand","splash","Pops up. Pops down. Repeat.","fish,aquatic,silly"},
 	{"garden fork","JGCHuI","CfT",3,5,4,"8A929B","8B5A2B","four-tine digging fork","thud","Digs dirt. Pokes pests.","garden"},
 	{"garden gnome","BEBJNK","Gd",1,1,4,"C0392B","2F6FD1","little bearded statue with pointy hat","clank","Watching. Always watching.","garden,silly"},
-	{"garden hose","JBCFJK","IeN",2,6,3,"2E8B57","F1C40F","coiled hose with spray nozzle","splash","The best part of summer.","garden,summer"},
+	{"garden hose","JBCBJI","IeN",3,6,3,"3E9A44","F2C230","pistol-grip nozzle on a green hose, blasting a jet","splash","Somebody's getting hosed.","household,garden,water,summer"},
 	{"gardener","LGCJNA","WFe",3,4,4,"15803D","92400E","sun hat, gloves, watering can","rustle","Grows walls of hedges in seconds.","plant,outdoor"},
 	{"gardenia","NGBNMI","dFS",2,1,2,"FFFFFF","1B5E20","creamy white waxy bloom","rustle","Smells like a fancy hotel.","plant,flower"},
 	{"gargle","KBAFOB","jd",1,5,1,"81D4FA","FFFFFF","bubbly sound ripple","glurgle","Glurglurglurg.","silly"},
