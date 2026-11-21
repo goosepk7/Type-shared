@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"succulent","NGAOMI","GF",1,1,5,"80CBC4","F8BBD0","chubby rosette of plump leaves","thud","Tiny, chubby, unkillable.","plant,desert,cute"},
 	{"suchomimus","AMDJBA","DkfTB",6,6,7,"7A6A4A","D8B88A","croc-mimic snout, low sail","roar","Pretends to be a crocodile. Badly.","dinosaur,extinct,reptile,predator"},
 	{"suction cup","BMALKI","HO",1,1,2,"C0392B","BFE6F2","rubber suction cup","thud","Thwock. Stuck.","object"},
 	{"sudoku","BLBLnI","jNO",3,1,3,"F8FAFC","111827","nine-by-nine number grid with one square rubbed raw","scratch","There are two sevens in that row. Start again.","game"},
@@ -403,4 +402,5 @@ return {
 	{"thumbnail","BHAIyE","Gdc",1,5,2,"FACC15","EF4444","small bright rectangle with huge shocked face and arrows","pop","Bigger mouth means more views. Science.","internet,meme"},
 	{"thumbprint cookie","IMBAKK","Uke",3,7,2,"E8C88A","B0203E","cookie with jam dot center","whoosh","A cookie with a jammy fingerprint.","edible,dessert"},
 	{"thumbtack","BMALJK","TN",1,1,1,"C0392B","C9CED4","tiny pin with round head","tap","Don't step barefoot.","office"},
+	{"thump","KMBAKB","kO",3,7,2,"8D6E63","FFE0B2","dull heavy shockring","thump","Thump. Ow.","heavy"},
 }

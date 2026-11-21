@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"sculpin","ABAJEC","dB",1,6,1,"8A6A4A","C8A07A","spiny big-headed fish","splash","Big head, spines, attitude.","fish,aquatic"},
 	{"sculptor","LECJNA","GO",3,3,5,"D6D3D1","78716C","chisel, mallet, marble dust","clang","Turns enemies to statues. Artistically.","art"},
 	{"scutigera","AMAJTA","CP",1,9,1,"C8B08A","6A5A44","many long legs, zooms","squelch","Runs at you. You run away.","bug"},
 	{"scutum","BKDIyI","GI",3,3,8,"9E1B32","D4A72C","curved red rectangle shield","clang","Lock them together. Become a turtle.","armor,defense,ancient"},
@@ -403,4 +402,5 @@ return {
 	{"skeleton samurai","AICJNA","fTV",5,6,4,"F5F5F4","991B1B","skeleton in red samurai armor","rattle","Honor never dies. Neither does he.","undead,warrior"},
 	{"skeleton shark","AIDJEC","fB",6,7,4,"F5F5F4","0EA5E9","shark skeleton swimming with green glow","rattle","All jaw. No fins. Still swims.","undead,aquatic"},
 	{"skeleton ship","DIEMHC","eghB",7,5,6,"EFEBE9","263238","galleon built from giant ribs","rattle","Crewed entirely by bones. Rattles loudly.","spooky,undead"},
+	{"skeleton warrior","AICJNA","GfV",5,5,5,"F5F5F4","57534E","skeleton in rusty armor with shield","rattle","Reassembles after every hit.","undead"},
 }
