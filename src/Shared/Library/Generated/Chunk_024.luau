@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skeleton samurai","AICJNA","fTV",5,6,4,"F5F5F4","991B1B","skeleton in red samurai armor","rattle","Honor never dies. Neither does he.","undead,warrior"},
+	{"skeleton shark","AIDJEC","fB",6,7,4,"F5F5F4","0EA5E9","shark skeleton swimming with green glow","rattle","All jaw. No fins. Still swims.","undead,aquatic"},
+	{"skeleton ship","DIEMHC","eghB",7,5,6,"EFEBE9","263238","galleon built from giant ribs","rattle","Crewed entirely by bones. Rattles loudly.","spooky,undead"},
+	{"skeleton warrior","AICJNA","GfV",5,5,5,"F5F5F4","57534E","skeleton in rusty armor with shield","rattle","Reassembles after every hit.","undead"},
 	{"sketchbook","BLBOyE","Gjh",3,4,3,"111827","F5F5F0","spiral pad whose doodles peel off the page and walk","scratch","Page one: dragon. Page two: better dragon.","art,school"},
 	{"ski jump","BCCOIB","DlN",4,9,2,"F4F8FC","1E6FD0","snow ramp launching a skier into a powder landing","whoosh","Send it.","sport,ski,mobility,ice"},
 	{"ski lift","DCCKHJ","lg",2,3,4,"1565C0","B0BEC5","row of chairs hanging from a cable","engine","Up the mountain, legs dangling.","mechanical,vehicle,land"},
@@ -399,8 +403,4 @@ return {
 	{"spider plant","NGBOMI","FSh",1,1,3,"7CB342","F5F5F5","arching striped leaves with baby plantlets","rustle","Not a spider. Promise.","plant,houseplant,silly"},
 	{"spider queen","AJEJFA","MHh",7,5,7,"1C1917","9333EA","massive spider with crown-shaped carapace","skitter","Mother of a thousand spiders. All hungry.","spooky,insect,boss"},
 	{"spider walker","DKDKFA","DfgN",6,5,7,"37474F","E53935","cockpit on eight jointed metal legs","clank","Crawls up walls. Ugh.","mechanical,vehicle,land,robot"},
-	{"spike","CKBLII","STO",4,1,7,"9CA3AF","4B5563","row of sharp steel cones popping up from a floor plate","shing","Every platformer's favourite surprise.","trap,sharp,gaming"},
-	{"spike bomb","CACGKF","ETV",7,4,2,"3A3F45","E67E22","bomb studded with spikes","boom","Explodes. Then pokes.","explosive"},
-	{"spike chain","EKCL3K","kSR",6,6,7,"3A3D45","C9CED6","spiked iron ball on a chain sweeping round a post","whoosh","Mind the swing.","game,platformer,hazard"},
-	{"spike corridor","MKCLII","STN",5,1,7,"616161","9E9E9E","stone hall with spikes in walls","echo","Run. Dodge. Run some more.","place,adventure,sharp"},
 }

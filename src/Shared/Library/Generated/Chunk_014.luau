@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"inertia","FLCOKI","G",3,2,6,"8495B5","D5DCEA","heavy glowing stance aura","hum","Objects at rest stay at rest.","heavy"},
 	{"infect","KJBAKB","MP",4,7,1,"8BC34A","33691E","green germ-shaped glob","squelch","Spreads like a cold in class.","toxic"},
 	{"inferno","FAEN5K","KkSP",8,5,5,"B3261E","FF9F1C","towering ring of fire, swirling smoke crown","roar","The floor is lava, and also the walls.","fire"},
 	{"inferno beam","FADBKI","KTP",8,7,1,"FF3D00","FFEB3B","roaring wide beam of fire","roar","A flamethrower, upgraded.","fire"},
@@ -402,5 +403,4 @@ return {
 	{"kunai","CKAArK","Te",3,9,2,"3A3F45","24262A","leaf blade, ring pommel","shing","A ninja's do-everything pointy friend.","medieval,sharp,ninja"},
 	{"kung pao chicken","IABAKK","KP",5,7,2,"C8402B","C8904A","chicken, peanuts, dried chilies","sizzle","Peanuts and chilies, flying everywhere.","edible,spicy,flammable"},
 	{"kunoichi","LICJNA","jZT",5,9,3,"312E81","F472B6","violet ninja garb, smoke bombs","whoosh","Disappears in a puff. Rude.","stealth,martial"},
-	{"kusarigama","CKCHJI","fHe",4,8,3,"8A929B","24262A","sickle tied to a weighted chain","twang","Sickle and chain, a ninja duet.","ninja"},
 }

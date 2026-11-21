@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"loki","LLCJZA","jZVbY",7,8,5,"166534","D4AF37","grinning red-haired trickster, fur cloak, flickering copies","cackle","It was not him. It is never him. It was him.","mythical,norse,trickster"},
 	{"lollipop","IMBHJI","dkf",3,5,4,"E8434F","F7F2F0","swirl disc on a stick","bonk","A sweet club with a stick handle.","edible,silly,candy"},
 	{"lomo saltado","IGBOKI","F",2,5,3,"8A3A1E","F2C24A","beef stir fry with fries","crunch","Steak and fries in a wok.","edible,healthy"},
 	{"lone pine","NGDCMI","GWkS",4,1,8,"4E342E","1B5E20","one windswept tree on a hill","rustle","Stands alone. Stands strong.","plant,tree"},
@@ -329,7 +330,7 @@ return {
 	{"meat pie","IMBAKK","Fe",3,7,2,"C8803A","7A3A2A","round golden pie with steam hole","whoosh","A hearty pie with a meaty secret.","edible"},
 	{"meat platter","IMCJII","Gdc",5,1,6,"B0302B","F2C24A","board of meats and cheeses","thud","A board full of tempting bites.","edible,giant,silly"},
 	{"meat skewer","IMBHJI","fT",3,5,4,"8A3A1E","C8C8C8","chunks of meat on a stick","bonk","Food on a sword. Efficient.","edible,silly"},
-	{"meat tenderizer","BMBHtK","kfO",3,6,5,"8A929B","C9CED4","spiky-faced kitchen hammer","clang","Tenderises everything.","kitchen,household"},
+	{"meat tenderizer","JECFtI","klP",4,5,4,"C9CED4","7A4524","giant waffle-faced steel mallet with a wooden handle","thump","Three thumps. Very tender.","kitchen,tool,melee,shockwave"},
 	{"meatball mortar","IECG3F","UEe",5,5,3,"7A3A22","D8382A","three big saucy meatballs lobbed high that bounce once","splat","Mamma mia, incoming.","kitchen,savory,lob,explosive"},
 	{"meatball sub","IMBHJI","kcf",3,5,4,"D9A04A","7A3A2A","long roll with meatballs","bonk","Meatballs in a bread canoe.","edible,silly"},
 	{"meatloaf","IMBAKK","keO",4,7,6,"7A3A2A","C82B2B","brick loaf with ketchup glaze","bonk","A brick of meat. Literally.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"message in a bottle","BBAA2I","eh",1,5,1,"BFE6F2","E8D9B0","corked bottle with rolled note","thud","Help is on the way. Eventually.","container"},
 	{"messer","CKCHrK","fV",5,6,4,"8A929B","8B5A2B","knife-sword hybrid","shing","A very, very big knife.","sharp,ancient"},
 	{"meta","KLCOnE","DWT",6,7,4,"7C3AED","FACC15","ranked chart with one glowing gold entry at the top","ding","Everyone runs it. That is why it is boring.","gaming,meme"},
-	{"metal","FKCIKI","Ga",4,3,7,"8C949C","D6DCE2","plated steel dome shell","clank","Clang. Your problem now.","heavy"},
 }

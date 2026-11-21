@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flak tower","EKEMII","GEe",7,1,9,"9E9E9E","37474F","massive concrete tower bristling with guns","thud","Anything flying? Not for long.","structure,defense,tower"},
 	{"flake","IMAELJ","cNP",1,4,1,"F2C14E","E0A030","drifting golden cereal flakes and a splash of milk","crunch","Soggy in thirty seconds. Eat fast.","edible,breakfast"},
 	{"flamberge","CKDHrK","fTP",6,5,5,"8A929B","9E1B32","wavy flame-shaped long blade","shing","The blade is wavy. The enemy is worried.","medieval,sharp"},
 	{"flame","FACFOB","KIe",5,7,2,"F06A1D","FFD166","tongue of flame, licking forward edge","whoosh","Points at the problem. Sets it on fire.","fire"},
@@ -149,7 +150,7 @@ return {
 	{"fortify","KECOKI","G",1,3,8,"8D6E63","FFD54F","stone and metal plating layering on","clank","Tougher. Thicker. Sturdier.","defence"},
 	{"fortress","EEFCII","GSeh",6,1,10,"757575","B71C1C","massive walls, bastions, central keep","thud","Built to say no for a thousand years.","ancient,heavy"},
 	{"fortress city","EMFCII","GSeh",7,1,10,"9E9E9E","B71C1C","city ringed by huge walls and towers","crowd","A whole city that is also a castle.","place,defense"},
-	{"fortune cookie","IMBAKK","jde",3,7,2,"E8B860","F7F2EC","folded cookie with paper slip","whoosh","Your future includes being hit by this.","edible"},
+	{"fortune cookie","ILBO7I","DkP",2,8,2,"E9B872","FFF6E0","giant folded fortune cookie with a paper slip","crunch","You will run fast. Or hit hard. Or both.","kitchen,buff,random,edible,sweet"},
 	{"fortune teller","LLCJNI","jOY",4,4,3,"7C3AED","FACC15","headscarf, crystal ball, rings","chime","Saw this coming. Didn't dodge.","magic"},
 	{"fossa","AMCJAA","ZfT",4,7,3,"A06A3A","D8B48A","sleek cougar-like, long tail","hiss","Madagascar's top predator. Cat-ish.","mammal,predator,wild"},
 	{"fossegrim","ABCJNC","jcB",3,5,4,"1E40AF","FDE68A","fiddler sitting in a waterfall","violin","Plays violin in a waterfall. Never tunes.","mythical,music,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
 	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
 	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
-	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
 }
