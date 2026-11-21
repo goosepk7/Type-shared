@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grasshopper","AMAJFG","UdP",1,6,1,"6AA03A","C8D84A","long hind legs, antennae","buzz","Jumps first. Thinks never.","insect"},
+	{"grater","BMBHJK","fV",2,5,4,"8A929B","24262A","box with jagged holes","clang","Shred it. Shred them.","kitchen,household"},
+	{"gratitude","KHBOKJ","F",1,4,2,"FFB74D","FFF8E1","warm orange heart glow","chime","Thanks! Here's a heal.","support,cute"},
+	{"graupel","GCBEOJ","UN",2,5,1,"F1F6F9","C7D9E4","tiny foam-like snow pellets","patter","Snow that went to the gym.","frozen"},
+	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
 	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
 	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
 	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
@@ -150,6 +155,7 @@ return {
 	{"gulab jamun","IMBLGI","cN",2,3,3,"8A3A1E","E8B860","syrup-soaked brown balls","gloop","Little balls swimming in syrup.","edible,sticky,sweet"},
 	{"gulper eel","AIAJCC","dHB",1,6,1,"1E1E24","5A5A66","giant pelican mouth, whip tail","splash","Mostly mouth. Hungry mouth.","fish,aquatic,deepsea"},
 	{"gum","IMBLGI","SNO",2,3,3,"F2A6C8","F7D9E3","pink chewed blob, stretchy","gloop","Sticks to everything. Forever.","edible,sticky,candy,sweet"},
+	{"gum wad","BMBLGI","SN",2,2,2,"F48FB1","F8BBD0","a big sticky pink wad of chewed gum","squish","Ew. You're stuck.","goofy,gross,silly,trap"},
 	{"gumball","IMAAKK","UeV",3,7,6,"E0102B","4FA3E8","glossy colored sphere","bonk","Round, bouncy, and colorful.","edible,candy"},
 	{"gumball machine","OMBM1I","Ude",1,5,4,"C0392B","BFE6F2","glass globe full of gumballs","hum","Insert coin. Receive chaos.","silly,candy"},
 	{"gumbo","IBBOGI","FS",3,4,3,"8A4A1E","7DBE3A","thick brown stew over rice","slurp","A bayou bowl of everything.","edible,warm,healthy"},
@@ -397,10 +403,4 @@ return {
 	{"herbal tea","IABOKI","FN",2,5,2,"E8D08A","F2E8C8","teacup with leaves","slurp","Gentle, soothing, sleepy.","edible,drink,warm"},
 	{"herbalist","LJCJNA","FM",3,4,4,"365314","A16207","jars of herbs, mortar and pestle","bubble","Has a remedy for everything. Tastes awful.","healer,plant"},
 	{"hercules","LEDJXA","Dklf",8,6,9,"B45309","FDE68A","mega-muscled hero in a lion skin swinging an olive-wood club","grunt","Twelve labours done. Yours is number thirteen.","mythical,greek,warrior"},
-	{"hercules beetle","AMBJFA","Gklf",3,3,6,"C8B87A","1E1E1E","giant beetle with massive horn","click","Strongest bug. Named accordingly.","insect,armored"},
-	{"herd","AEEFLA","DkIP",7,7,7,"8B5A2B","E8D2B0","wide wave of galloping hooves and horns in dust","rumble","One got spooked. Now it is everyone's problem.","farm,wild,swarm"},
-	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
-	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
-	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
-	{"hermit crab","ABBJRA","GfT",2,4,6,"D8783A","E8D0A8","crab tucked in a borrowed spiral shell","clack","Lives in a hand-me-down shell.","crustacean,aquatic,armored"},
 }

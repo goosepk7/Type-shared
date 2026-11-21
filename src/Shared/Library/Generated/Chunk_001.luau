@@ -67,7 +67,7 @@ return {
 	{"african wild dog","AMCJAA","DQfh",5,8,4,"A0703A","1E1A16","patchy painted coat, round big ears","howl","Best team players on the savanna.","mammal,predator,wild"},
 	{"afro","BMCI3E","GUa",3,3,6,"2B1B12","4A3222","giant round fluffy afro with a comb stuck in","boing","Absorbs impacts and compliments.","body,cool"},
 	{"afternoon","KHCNKI","FSN",3,2,2,"FDBA74","7DD3FC","lazy golden sun at three o'clock with a snoozing cat","yawn","School is out. Snacks are in.","time"},
-	{"aftershock","HEDNOI","kO",6,3,4,"705336","A58866","second ring of ground cracks","rumble","The sequel nobody asked for.","natural"},
+	{"aftershock","HEDNII","kl",6,3,3,"705336","A58866","a stomp, then a wider ring of ground cracks heaves","rumble","The sequel nobody asked for.","natural,earth,terrain"},
 	{"agapanthus","NGBNMI","dFS",2,1,2,"5C6BC0","7CB342","round ball of blue trumpets","rustle","Blue fireworks on a stick.","plant,flower"},
 	{"agave","NECLMI","GST",3,1,7,"80CBC4","26A69A","huge blue spiky rosette","thud","Spikes on every tip.","plant,desert,sharp"},
 	{"agave syrup","IMBLGI","SNP",2,3,3,"E8C04A","F2D870","golden thin syrup","gloop","Desert honey.","edible,sticky"},
@@ -259,6 +259,7 @@ return {
 	{"anpan","IMBAKF","Fe",3,6,2,"C8803A","5A2A2A","round bun with red bean","splat","A hero's bread, filled with beans.","edible"},
 	{"answer","KHBAKB","eaO",3,7,2,"22C55E","FFFFFF","big green tick with the number 42 glowing","ding","42. It is always 42.","school,meme"},
 	{"ant","AMAJLA","ClfP",1,5,1,"3A1E14","8A3A1E","segmented body, six legs, antennae","skitter","Lifts 50 times its weight. Daily.","insect,swarm"},
+	{"ant army","AEDNFA","lNP",6,3,5,"B8402C","B07A48","an anthill heaves up and ants swarm a wide circle","skitter","Lift fifty times their weight. You are next.","critter,insect,zone"},
 	{"ant farm","EEBM2I","CPh",3,1,2,"F5E6CC","2B1B12","thin glass case of sand tunnels, cracked at the corner","skitter","Do not shake it. Somebody shook it.","insect,toy"},
 	{"ant lion monster","AEDLFH","CfH",6,2,6,"A16207","78350F","sand pit with giant pincers at the bottom","chomp","Waits at the bottom. Patiently.","desert,insect"},
 	{"antares","MAFGKJ","KMe",7,3,7,"D84315","FF8A65","enormous red star in a scorpion","twinkle","The scorpion's burning heart.","space,star"},
@@ -402,5 +403,4 @@ return {
 	{"artist","LLCJNA","jde",3,4,3,"7C3AED","FACC15","beret, palette, paint-splattered smock","swish","Paints you into a corner. Literally.","art"},
 	{"arugula","IGBOMI","KF",2,4,3,"3E7A2B","6B9E4A","jagged peppery leaves","crunch","Lettuce with an attitude.","edible,vegetable,healthy"},
 	{"asado","IABNGI","KSc",4,4,2,"8A2E2E","C8603A","meats roasting over open flame","sizzle","A whole afternoon of grilling.","edible,spicy"},
-	{"asgard","MDFNII","SLh",7,1,10,"FFD54F","80DEEA","golden city on a floating rock","chime","Mighty realm. Mightier welcome.","place,mythical"},
 }
