@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 	{"robot wizard","OLCJNA","eLY",5,4,6,"6366F1","94A3B8","robot in a pointy hat with antenna wand","zap","Casts spells with a USB wand.","robot,magic,silly"},
 	{"robotics engineer","LKCJNA","Fh",4,4,4,"1E3A8A","94A3B8","goggles, soldering iron, robot arm","clank","Builds a robot friend in seconds.","tech,robot"},
 	{"roc","AFFJDB","Akl",8,6,7,"78350F","FDE68A","colossal eagle, huge talons","screech","Snacks on elephants. Probably exaggerating.","mythical,bird,flying"},
@@ -402,5 +403,4 @@ return {
 	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
 	{"sea lion","ABCJEC","UDdfB",3,5,4,"8A6440","C8A07A","sleek brown seal, upright on front flippers","bark","Balances balls. Barks for fish.","mammal,aquatic"},
 	{"sea mine","CBCLKJ","EkB",7,1,4,"24262A","9C4A1A","spiked floating metal ball","boom","A spiky beach ball you shouldn't hug.","explosive,ocean"},
-	{"sea monkey","ABAJRA","GfTPB",1,4,5,"F2C8A0","E8A07A","tiny wiggly brine shrimp","clack","Not monkeys. Do not ask.","crustacean,aquatic,armored,silly"},
 }

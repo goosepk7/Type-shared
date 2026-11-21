@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tick","AJAJQA","iQfMN",1,6,2,"6A3A1E","3A2A1A","tiny round eight-legged bug","skitter","Moves in. Swells up. Rude.","arachnid,spooky,venomous"},
 	{"ticket","BMAOJB","chY",2,6,1,"FACC15","B45309","golden slip reading ADMIT ONE with a punched hole","ding","Admit one. Violence not included. Bring your own.","party"},
 	{"tickle","KMBAKB","jdO",2,8,1,"FFF176","F8BBD0","feathery sparkle wiggling at target","giggle","Cannot fight. Too busy giggling.","silly,cute"},
 	{"tickle feather","CMAHJK","jfO",1,9,1,"F2F2EE","F06292","long fluffy feather","boing","Tickle tickle tickle. Helpless.","silly"},
@@ -402,5 +403,4 @@ return {
 	{"uintatherium","AMDJAA","DkO",6,4,8,"7A6A5A","C8B8A0","six bumps on head, tusks","roar","Six knobs on its head. Rude.","mammal,extinct,ancient,heavy"},
 	{"ukulele","BMBFJI","dF",1,6,2,"C49A6C","7A4E2D","tiny four-string guitar","strum","Plinky plunk. Aloha.","music"},
 	{"ultimate","KLEOKI","DWk",7,6,6,"FFD54F","D500F9","screaming golden aura, flowing hair glow","choir","Glowing hair means it's serious.","meme"},
-	{"uluru","MEFCII","GS",6,1,10,"C1440E","E6A04D","huge rounded red rock in flat desert","rumble","One rock. Very large. Very red.","place,landmark"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 	{"spirit animal","AHCJAA","GQF",4,6,3,"A5F3FC","FDE68A","glowing translucent animal companion","chime","Your inner animal, on loan.","spirit"},
 	{"spirit bear","AHDJAA","Fkf",6,5,6,"F8FAFC","7DD3FC","glowing translucent bear","roar","A bear hug from the other side.","spirit"},
 	{"spirit choir","LHCJVJ","Qkh",5,4,5,"F6F0FF","FFD36E","three glowing robed spirits sing hymns that hurt foes","sing","Ahhhhh. (Ow.)","music,summon"},
@@ -57,9 +58,9 @@ return {
 	{"springhare","AMAJAG","UCdb",1,6,1,"C8904A","F2E0C8","mini kangaroo rodent","squeak","Hops like a tiny kangaroo.","mammal,cute"},
 	{"springtime","GGDNOI","WF",3,4,3,"81C784","F8BBD0","blooming flowers and soft rain","chime","Everything is blooming. Achoo.","plant,cute"},
 	{"sprinkle donut","IMBLKI","dSc",2,3,3,"F2A6C8","4FA3E8","pink frosted donut, rainbow sprinkles","chomp","A rainbow on a ring.","edible,sweet"},
+	{"sprinkle storm","IMDELB","eP",5,4,2,"F47FAE","5BC0F0","giant frosted donut raining rainbow sprinkles","pitter","Confetti you can eat.","edible,sweet,candy,rain"},
 	{"sprinkler","OBBEJK","SNP",1,3,3,"2E8B57","F1C40F","spinning lawn sprinkler head","splash","Tick-tick-tick-shhhhh.","garden,summer"},
 	{"sprinkler turret","OBCMwI","IeNP",3,6,5,"47D7E8","C9CED4","rotating spray nozzle on pipe","clank","Soaks everyone in range.","defense,mechanical"},
-	{"sprinkles","IMAELB","jdeP",2,7,1,"F2A6C8","4FA3E8","cloud of colorful tiny sticks","pitter","Confetti you can eat.","edible,sweet,candy"},
 	{"sprint","KFBOKA","D",2,9,2,"FFF59D","FFFFFF","legs blurring into a wheel","tap","Legs go brrrr.","speed"},
 	{"sprite","AHAJKB","UdA",1,10,1,"FDE68A","93C5FD","glowing mote with insect wings","chime","Mostly sparkle, partly attitude.","fairy,cute"},
 	{"spritz cookie","IMBAKK","Uke",3,7,2,"F2D08A","3E8E2B","piped butter cookie star","whoosh","Butter cookie with a pretty swirl.","edible,dessert"},
@@ -402,5 +403,4 @@ return {
 	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
-	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
 }

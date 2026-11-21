@@ -3,16 +3,20 @@
 -- (data/misspellings.jsonl + per-entry 'ms'), sorted.
 return {
 	keys = {
-		"yaoyorouzu","yaoyorozo","yeer","yeett","yeiti","yellow crad","yellow overdirve","yelow card","yet","yeti chrage","yetti","yetti charge","yety","yoag","yoeyo","yogert",
-		"yogga","yoik","yokay","yollo","yoloo","yonk","yormungandr","yougurt","youkay","younicorn","yufo","yugio trap","yuk","yumm","yummi","za hado",
-		"za hand","za handoo","za wardo","za warudoo","zanpackuto","zanpakto","zanpakuto realese","zanzokin","zanzokn","zapp","zawardo","zebrah","zeebra","zeero","zenit haste","zenith hast",
-		"zenith hasted","zepplin","zero gravaty","zero gravety","zero gravit","zero gravitty","zero hr","zeuss","ziggaraut","zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet",
-		"zipper gat","zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands","zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer",
-		"zomie","zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander","zylophone","zylophone stairs",
+		"wory","wosp","wotch","wow pub","wow pupp","wraithe","wrap pipe","wrap pipes","wrap slash","wrath ghost","wrath spirit","wrecking","wrensh","wrentch","wresler","wrestlr",
+		"wrinkel","writting","wrod","wrok","wrold","wset","wsip lure","wtich","wud","wulf","wuman","wurd","wurewolf","wurld","wurm","wurmheart",
+		"wwo","wyh","wyrm heartt","wyrmhart","wyvren","wyvurn","x-rey","xoloitzcuintle","xplode","xray scna","xylaphone","xylaphone stairs","xylophone stair","xylophone stares","yaer","yaoyorouzu",
+		"yaoyorozo","yeer","yeett","yeiti","yellow crad","yellow overdirve","yelow card","yet","yeti chrage","yetti","yetti charge","yety","yoag","yoeyo","yogert","yogga",
+		"yoik","yokay","yollo","yoloo","yonk","yormungandr","yougurt","youkay","younicorn","yufo","yugio trap","yuk","yumm","yummi","za hado","za hand",
+		"za handoo","za wardo","za warudoo","zanpackuto","zanpakto","zanpakuto realese","zanzokin","zanzokn","zapp","zawardo","zebrah","zeebra","zeero","zenit haste","zenith hast","zenith hasted",
+		"zepplin","zero gravaty","zero gravety","zero gravit","zero gravitty","zero hr","zeuss","ziggaraut","zigurat","zip lien","zip wier","zipeline","ziper","ziplin","zipper gaet","zipper gat",
+		"zippr","zippr gate","zitt","zoen","zombe","zombee","zombei","zombi hands","zombie hads","zombie handz","zombie hnads","zombiee","zomby","zomby hands","zomer","zomie",
+		"zonee","zoomr","zreo","zucchinni","zuchini","zues","zuse","zwiehander","zylophone","zylophone stairs",
 	},
 	owners = {
-		394,394,11458,11460,11464,7373,9409,7373,11460,470,11464,470,11464,11473,11470,11476,11473,11477,11478,11479,11479,11477,5347,11476,11478,10821,10792,7900,10794,11487,11487,6958,6958,6958,11508,11508,10809,10809,10809,3632,
-		3632,11495,11508,11497,11497,11507,11504,11504,11504,986,11187,11187,11187,11187,11508,11509,11511,11511,11515,11515,11515,11516,11515,11517,11517,11516,11517,11518,11537,11522,11522,11522,11528,11528,11528,11528,11522,11522,11528,11543,
-		11522,11537,11543,11507,11545,11545,11509,11509,11550,11447,11447,
+		11415,11088,11090,11418,11418,11419,11077,11077,11079,11419,11419,11424,11428,11428,11430,11430,11432,11435,11407,11408,11410,11208,11348,11351,11390,11376,11383,11407,11204,11410,3077,11437,11417,11270,11437,11437,11439,11439,11440,11446,
+		3299,4728,11448,11448,11448,11448,11459,394,394,11459,11461,11465,7374,9410,7374,11461,470,11465,470,11465,11474,11471,11477,11474,11478,11479,11480,11480,11478,5348,11477,11479,10822,10793,7901,10795,11488,11488,6959,6959,
+		6959,11509,11509,10810,10810,10810,3632,3632,11496,11509,11498,11498,11508,11505,11505,11505,986,11188,11188,11188,11188,11509,11510,11512,11512,11516,11516,11516,11517,11516,11518,11518,11517,11518,11519,11538,11523,11523,11523,11529,
+		11529,11529,11529,11523,11523,11529,11544,11523,11538,11544,11508,11546,11546,11510,11510,11551,11448,11448,
 	},
 }

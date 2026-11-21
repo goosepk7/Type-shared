@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sky rift","KLEN5K","jhY",7,3,5,"311B92","FFD54F","glowing tear across the sky","warp","The sky is cracked. Something's peeking.","space,magic"},
 	{"sky serpent","AFEJCB","AkH",7,8,6,"E0F2FE","0EA5E9","feathered serpent coiling through clouds","howl","Wraps around storms.","wind,reptile"},
 	{"sky slam","FFDNOI","kO",6,9,2,"81D4FA","ECEFF1","column of wind smashing down from above","boom","The sky body-slams you.","air"},
 	{"sky strike","HHEBKI","KkO",9,6,2,"E1F5FE","FF5252","thin targeting line then huge pillar from sky","boom","Target locked from space.","space,danger"},
@@ -318,7 +319,7 @@ return {
 	{"spartan","LKCJNA","GDkf",6,5,7,"991B1B","CA8A04","crested bronze helm, round shield, spear","clang","THIS. IS. A. SHIELD WALL.","warrior,ancient"},
 	{"spartan helmet","BKBONI","G",2,5,6,"A86F32","9E1B32","bronze helm with red crest","clank","This. Is. A helmet.","armor,defense,ancient"},
 	{"spatha","CKCHrK","fT",5,6,5,"8A929B","A86F32","long straight cavalry sword","shing","Roman, but longer.","sharp,ancient"},
-	{"spatula","BKBHJK","klf",1,7,3,"24262A","8A929B","flat flipping paddle","clank","Flips pancakes and foes.","kitchen,silly"},
+	{"spatula flip","BKCHJK","klf",4,6,4,"C9CED4","7A4524","giant slotted spatula flipping foes over your head","clank","Flips pancakes and foes.","kitchen,melee,toss"},
 	{"spawn","KLCM5I","ShY",5,1,5,"22D3EE","7C3AED","glowing blue circle pad with beams where figures pop in","pop","They just keep coming out. Who is making these?","gaming"},
 	{"spawn camper","LICLNI","ce",5,1,4,"7F1D1D","111827","figure crouched at a glowing spawn pad","bang","Waiting at your spawn. Always.","meme,gaming,villain"},
 	{"speaker system","BFCFKI","kIO",4,2,5,"24262A","8E9196","giant stacked speaker cabinets","boom","The bass drops. So do the enemies.","music,loud"},
@@ -402,5 +403,4 @@ return {
 	{"spiral","KLBL5K","jHO",3,5,1,"7C3AED","F472B6","spinning purple-pink hypno swirl","warp","Look into the swirl. Looook. Sleeepy.","shape,magic"},
 	{"spiral core","KFBGKI","Dkf",7,9,2,"7EC8FF","FFFFFF","a howling blue sphere spinning in your palm","hum","Spin it. Shove it. Done.","anime,ninja"},
 	{"spire","EMDMII","GSTe",3,1,6,"9E9E9E","5D5D5D","needle-thin pointed tower","thud","Very pointy. Very tall.","structure,defense,tower"},
-	{"spirea","NGBNMI","dFS",1,1,3,"FFFFFF","F8BBD0","arching sprays of tiny white flowers","rustle","Fancy enough for a wedding.","plant,flower"},
 }

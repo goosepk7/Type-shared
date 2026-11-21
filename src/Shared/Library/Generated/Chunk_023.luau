@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sea monkey","ABAJRA","GfTPB",1,4,5,"F2C8A0","E8A07A","tiny wiggly brine shrimp","clack","Not monkeys. Do not ask.","crustacean,aquatic,armored,silly"},
 	{"sea mouse","ABAJTD","CP",1,3,1,"C8A07A","6AE8C0","furry iridescent worm","squelch","A worm wearing a fur coat.","bug"},
 	{"sea otter","ABBJAA","fTeB",3,8,2,"5A4434","D6C4AA","floating on back, rock on belly","chatter","Has a favourite rock. Keeps it in a pocket.","mammal,predator,cute,aquatic,ocean"},
 	{"sea pig","ABAJGA","GdTN",1,1,4,"F2B8C0","F7D8E0","pink translucent blob with leg tubes","squelch","A pink potato that walks the abyss.","aquatic,ocean,deepsea,silly"},
@@ -402,5 +403,4 @@ return {
 	{"sky heart","KLEGKJ","Eke",9,3,2,"7FC8FF","FFFFFF","a sphere of light grows overhead, then drops","hum","Everyone lend me some energy.","anime"},
 	{"sky island","MFENIJ","lS",4,1,7,"8BC34A","E3F2FD","grassy rock floating in the sky","rumble","No roads. Just a long way down.","place,terrain,magic"},
 	{"sky pirate","LFCJNB","Aeb",5,7,4,"7F1D1D","60A5FA","pirate with goggles on an airship","arr","Pirates, but higher.","pirate,flying"},
-	{"sky rift","KLEN5K","jhY",7,3,5,"311B92","FFD54F","glowing tear across the sky","warp","The sky is cracked. Something's peeking.","space,magic"},
 }

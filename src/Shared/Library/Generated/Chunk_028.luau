@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"uluru","MEFCII","GS",6,1,10,"C1440E","E6A04D","huge rounded red rock in flat desert","rumble","One rock. Very large. Very red.","place,landmark"},
 	{"umbra","FICIKI","GiZ",4,4,4,"1B1426","5D3E87","deep core shadow cloak","hiss","The darkest part of the shadow.","spooky"},
 	{"umbral casket","KIDNII","STeO",8,4,3,"1A1420","9A5CFF","black stone walls box a foe in, then spears pierce it","rumble","Overflowing with darkness. And spears. Mostly spears.","anime,shadow,trap"},
 	{"umbrella","BMBIyK","GA",1,6,3,"1F2F55","24262A","open dome canopy, curved handle","clank","Keeps rain off. Keeps bolts off.","defense"},
@@ -221,7 +222,7 @@ return {
 	{"waffle","IMCIII","GF",3,3,4,"E8B04A","C8803A","square grid cake","thud","A grid of pockets for syrup.","edible,breakfast"},
 	{"waffle cone","ICBAuB","JTe",3,7,2,"D9A066","F9A8D4","pointy crisp cone, pink scoop sliding off","crunch","Pointy end out. Sprinkles optional.","edible,sweet,frozen"},
 	{"waffle fries","IMBAKK","Uke",3,7,2,"E8B04A","F2D08A","lattice-cut golden fries","whoosh","Fries with a waffle pattern.","edible,breakfast"},
-	{"waffle iron","BABLII","KO",3,1,5,"24262A","DDE3E8","hinged grid griddle","clang","Chomp. Now you're a waffle.","kitchen,silly"},
+	{"waffle iron","BABM1I","SfN",4,3,6,"24262A","F2C066","hot cast-iron waffle iron that snaps shut","clang","Chomp. Now you have grill marks.","kitchen,appliance,turret,summon"},
 	{"waffle wall","IMDCII","Gc",4,2,7,"E8B04A","C8803A","giant grid waffle barricade","thud","A barricade with syrup pockets.","edible,giant"},
 	{"wage","BMBO2J","Fcb",2,5,2,"22C55E","F8FAFC","pay envelope with three coins and a long list of deductions","jingle","Payday! And it is gone.","job,silly"},
 	{"wagon","DMBKHL","DQkg",2,4,3,"D32F2F","8D6E63","small red cart, long pull handle","engine","Pull it along. Fill it with chaos.","mechanical,vehicle,land,silly"},
@@ -402,5 +403,4 @@ return {
 	{"wendigo","ACDJNA","DiJf",7,8,6,"E7E5E4","7DD3FC","gaunt antlered figure, frost breath","howl","Always cold. Always hungry. Never invited.","spooky,frozen,cryptid"},
 	{"werebear","AGDJNA","Wkf",7,5,7,"78350F","FDE68A","huge bear-man in torn flannel","roar","Hibernates through every meeting.","spooky"},
 	{"werecat","AICJNA","DZf",5,9,4,"1C1917","FACC15","cat-faced prowler with long claws","hiss","Nine lives, one bad attitude.","spooky"},
-	{"werefox","ALCJNA","jZY",4,9,3,"EA580C","F8FAFC","fox-eared trickster with fluffy tail","yip","Sly by nature. Fluffy by design.","trickster"},
 }

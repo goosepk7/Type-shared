@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
 	{"sun dragon spirit","AAEJCB","KAF",8,6,6,"FDE047","F97316","serpent of pure sunlight","roar","Burns away shadows.","holy,fire,reptile"},
 	{"sun dried tomatoes","IMAELB","eVP",2,7,1,"8A1E1E","B0302B","shriveled red strips","pitter","Tomatoes that took a long nap in the sun.","edible"},
 	{"sun hat","BHBONI","G",1,6,1,"D2B48C","C0392B","wide floppy straw hat","swish","Shady business.","clothing"},
@@ -402,5 +403,4 @@ return {
 	{"tibetan mastiff","AMDJAA","GDQf",6,7,4,"6A3A1E","E8A04A","huge maned guardian dog","bark","A lion disguised as a dog.","mammal,pet"},
 	{"tibs","IABNGI","KF",4,4,2,"8A3A1E","D8402B","sauteed meat chunks","sizzle","Sizzling Ethiopian tibs.","edible,spicy"},
 	{"tic tac toe","KMBLnI","GSO",3,1,4,"111827","EF4444","hand-drawn grid with a winning line of three Xs","scratch","Nobody wins. Nobody ever wins. Play again?","game,school"},
-	{"tick","AJAJQA","iQfMN",1,6,2,"6A3A1E","3A2A1A","tiny round eight-legged bug","skitter","Moves in. Swells up. Rude.","arachnid,spooky,venomous"},
 }
