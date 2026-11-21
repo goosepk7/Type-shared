@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"zombie giant","AJEJNA","DkM",8,3,8,"4D7C0F","78716C","hulking zombie with huge fists","groan","Slow. Big. Bigger.","undead,giant"},
+	{"zombie hands","AEDNNH","SfN",5,4,5,"809874","5C4836","grey-green hands clawing up out of cracked earth","moan","They just want a hand up.","monster,folklore,spooky,graveyard"},
+	{"zombie horde","AJDJLA","fNPh",6,2,6,"4D7C0F","57534E","dozens of shambling silhouettes","groan","Slow, but there are SO many.","undead,spooky,swarm"},
+	{"zombie hunter","LMCJNA","Gfe",6,6,6,"57534E","84CC16","bandana, crossbow, backpack","bang","Has a plan for the zombie apocalypse.","warrior"},
+	{"zombie king","AJDJNA","MNh",7,3,7,"4D7C0F","CA8A04","bloated crowned zombie on a bone throne","groan","Rules the undead. Smells regal.","undead,royal,boss"},
+	{"zombie mage","AJCJNA","Meh",5,3,4,"65A30D","7C3AED","rotting wizard with a cracked staff","groan","Still remembers one spell. Uses it a lot.","undead,magic"},
+	{"zombie pirate","AJCJNA","fM",4,4,5,"65A30D","7F1D1D","soggy pirate zombie with seaweed beard","groan","Arrr... brains.","undead,pirate"},
 	{"zombie shark","AJDJEC","fMB",6,6,5,"65A30D","64748B","rotting shark with exposed ribs","chomp","Smells worse than a normal shark.","undead,aquatic,silly"},
 	{"zombie unicorn","AJDKAA","DMg",5,5,5,"84CC16","F0ABFC","tattered unicorn with green glow","groan","Still sparkly. Sort of.","undead,silly"},
 	{"zombie viking","AJCJNA","DfM",5,4,6,"65A30D","78350F","rotting viking with axe and horned helm","groan","Valhalla rejected him.","undead,norse"},

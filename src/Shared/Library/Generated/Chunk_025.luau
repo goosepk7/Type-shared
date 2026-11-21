@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"speedrun ghost","LLCJNA","DZY",3,10,1,"A5F3FC","F8FAFC","translucent copy racing ahead","whoosh","Your best time. Mocking you.","meme,gaming,ghost"},
+	{"speedrunner","LMCJNA","DTY",4,10,3,"DC2626","FACC15","blurry figure with timer above head","whoosh","Clips through walls. Any% only.","meme,gaming"},
+	{"spell","FLBAKB","e",3,7,1,"9575FF","E9DCFF","small glowing glyph projectile","shimmer","The most basic magic. Still magic.","magic"},
+	{"spell echo","KLCOKJ","V",4,7,2,"B39DDB","FFFFFF","faint copy of the last spell repeating","echo","Cast once. Hit twice.","magic"},
+	{"spellblade","LLCJNA","feY",6,6,6,"4338CA","94A3B8","armor with rune-glowing sword","zap","Can't decide between swords and magic. Chose both.","magic,warrior"},
+	{"spellbloom","NLBNMI","FS",3,1,2,"7C4DFF","40C4FF","flower humming with magic energy","chime","Recharges your magic. Very sparkly.","plant,magic,mythical"},
 	{"spellbook","BLBOJK","eh",5,4,3,"7D3CB5","D4A72C","leather-bound book with glowing runes","tap","Chapter one: everything explodes.","magic,fantasy"},
 	{"spelling","KLBALB","jaO",3,6,2,"DC2626","FACC15","scrambled letter tiles with red squiggly underlines","buzz","Speling. Spelking. Splelling. Close enough.","school,meme"},
 	{"spelling bee champ","LLCJNI","je",4,5,3,"FACC15","1D4ED8","kid at a mic with a trophy","ding","Can spell any word. Including your doom.","school"},
@@ -24,6 +30,7 @@ return {
 	{"spider monkey","AMBJBA","dHeb",2,7,2,"2A2420","8E7460","very long limbs, grabbing tail","chatter","Five limbs. Uses all of them.","mammal,primate"},
 	{"spider plant","NGBOMI","FSh",1,1,3,"7CB342","F5F5F5","arching striped leaves with baby plantlets","rustle","Not a spider. Promise.","plant,houseplant,silly"},
 	{"spider queen","AJEJFA","MHh",7,5,7,"1C1917","9333EA","massive spider with crown-shaped carapace","skitter","Mother of a thousand spiders. All hungry.","spooky,insect,boss"},
+	{"spider trap","AJBLQI","SNO",4,4,6,"2E223A","E69632","a spider spins a web that bites and roots whoever steps in","hiss","It has been waiting there since Tuesday.","critter,arachnid,trap,root"},
 	{"spider walker","DKDKFA","DfgN",6,5,7,"37474F","E53935","cockpit on eight jointed metal legs","clank","Crawls up walls. Ugh.","mechanical,vehicle,land,robot"},
 	{"spike","CKBLII","STO",4,1,7,"9CA3AF","4B5563","row of sharp steel cones popping up from a floor plate","shing","Every platformer's favourite surprise.","trap,sharp,gaming"},
 	{"spike bomb","CACGKF","ETV",7,4,2,"3A3F45","E67E22","bomb studded with spikes","boom","Explodes. Then pokes.","explosive"},
@@ -396,11 +403,4 @@ return {
 	{"strongman","LECJNA","Gkl",6,4,7,"111827","DC2626","striped leotard, handlebar moustache, barbell","thud","Lifts the arena. With one hand.","circus,heavy"},
 	{"strongman hero","LEDJNA","klf",7,5,7,"15803D","7C3AED","giant green muscled hero in torn shorts","thud","SMASH. Then apologizes.","hero,heavy"},
 	{"stroopwafel","IMBAKK","ceN",3,7,2,"D9A04A","B5651D","thin waffle cookie, caramel","whoosh","A thin waffle with a sticky heart.","edible"},
-	{"strudel","IMBLKI","dSc",2,3,3,"D9A04A","E8C88A","rolled flaky pastry log","chomp","Flaky layers wrapped round apple.","edible,sweet"},
-	{"struthiomimus","AMCJBA","DQf",3,9,3,"9A8A6A","E8D8B8","slender ostrich-mimic","screech","Long legs. Longer name.","dinosaur,extinct,reptile,predator"},
-	{"stubborn","KECOKI","G",1,2,8,"8D6E63","FFB74D","planted glowing heels","hmph","Not moving. Not listening.","defence,silly"},
-	{"stud finder","JDAOJK","c",1,5,2,"F1C40F","24262A","beeping wall scanner","clank","Beep. Weakness found.","tool"},
-	{"student","LMCJNA","de",3,5,3,"1D4ED8","FACC15","backpack, glasses, pencil","ding","Throws spitballs with precision.","school"},
-	{"studio","MHDNlI","jdh",4,1,5,"374151","EF4444","warehouse with spotlights, cameras and an ON AIR sign","clack","Quiet on set! That includes screaming.","art,movie,building"},
-	{"stuff","BMCELB","jPO",3,5,3,"F59E0B","8B5CF6","random falling junk: boot, lamp, fish, trophy, sock","clatter","What stuff? All of it. Incoming.","silly"},
 }

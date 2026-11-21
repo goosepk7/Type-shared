@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"tube","BMBHzK","Ukf",2,6,3,"22D3EE","F472B6","long bendy foam noodle swung like a sword, bonk lines","bonk","Bonk. Harmless. Bonk. Annoying. Bonk.","toy,silly"},
+	{"tug of war","KMCBKI","HO",4,4,3,"A1887F","FFD54F","glowing rope pulling target in","creak","Heave! Heave! Gotcha.","silly,sport"},
+	{"tugboat","DBCKHC","DkHIgB",5,5,8,"E53935","1A1A1A","short stout boat, big tyre fenders","horn","Small. Stubborn. Pulls anything.","vehicle,aquatic,cute"},
+	{"tui","AMAJDB","dA",1,7,1,"2A3A2A","F2F2F2","dark bird with white throat tuft","tweet","Wears a bow tie. Sings beeps.","bird,cute"},
+	{"tulip","NGBNMI","dFS",2,1,2,"E53935","43A047","cup-shaped bloom on a straight stem","rustle","Neat, tidy, ready for war.","plant,flower"},
+	{"tulip field","NGENMI","dFS",2,1,4,"E53935","FFEB3B","stripes of bright tulips","rustle","Rows of colour. Rows of charm.","plant,crop"},
+	{"tulip tree","NGDCMI","GWkS",3,1,7,"6D4C41","FFB300","tall tree with tulip-shaped flowers","rustle","Tulips. On a tree. Very tall.","plant,tree"},
 	{"tumble","KMBAKF","kO",2,6,2,"FFCC80","FFFFFF","rolling, bouncing tumble trail","thud","Head over heels. Literally.","silly"},
 	{"tumbleweed","NFBAMF","UWke",3,6,2,"C9A55A","8A6A3E","dry ball of twigs that grows with every bounce","wind","Rolls in dramatically. Every time. Bigger each time.","nature,plant,silly,desert"},
 	{"tumbleweed storm","NFEFLF","dkP",4,7,2,"C9A55A","A1887F","dozens of tumbleweeds rolling in wind","rustle","The wild west's angriest weather.","plant,silly"},
@@ -396,11 +403,4 @@ return {
 	{"water prison","FBCLKI","NO",5,4,4,"0288D1","B3E5FC","floating sphere of water around target","gurgle","Hold your breath.","aquatic"},
 	{"water shield","KBCCnI","GN",3,3,6,"2196F3","BBDEFB","standing sheet of rushing water","splash","Wet wall. Very hard to get through.","aquatic,defence"},
 	{"water skis","DBAKHL","DgB",2,8,2,"FF9800","1E88E5","skis towed on a rope across water","engine","Hold on tight!","mechanical,vehicle,land,sport"},
-	{"water spear","FBCAuB","TIe",5,8,1,"0288D1","E1F5FE","spinning spear of pressurised water","whoosh","Water, sharpened.","aquatic,sharp"},
-	{"water spiral","FBCN5K","HI",5,6,2,"0288D1","E1F5FE","spinning ring of water","gurgle","Round and round you splash.","aquatic"},
-	{"water sprite","ABAJNB","AFB",1,8,1,"38BDF8","E0F2FE","tiny fairy made of a water droplet","chime","Splashes you. Giggles.","fairy,aquatic"},
-	{"water strider","AMAJFA","dPB",1,6,1,"3A3A3A","8A9098","long skinny legs skating on water","buzz","Walks on water like it's ice.","insect"},
-	{"water tank","EBCCII","GSI",2,1,6,"607D8B","4FC3F7","round tank on a stand","thud","Opens the tap. Everyone gets wet.","structure,farm"},
-	{"water temple","MBENII","SIN",5,1,9,"0277BD","80DEEA","flooded halls with rising water","echo","Water levels change. Constantly. Ugh.","place,adventure"},
-	{"water tornado","HBEN5K","klSHI",7,6,5,"2F7FBF","BFE7FA","spiralling column of seawater, spray halo","roar","A tornado that went for a swim.","storm,aquatic"},
 }

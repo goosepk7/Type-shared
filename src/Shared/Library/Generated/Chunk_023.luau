@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"scorpionfish","AJBJEC","dZMB",3,6,1,"B85A3A","E8B898","frilly camo fish, venom spines","splash","Camouflage plus stings.","fish,aquatic"},
+	{"scorpionfly","AMAJFB","jdAP",1,6,1,"E8A02A","1E1E1E","fly with scorpion tail","buzz","Scorpion tail. Totally harmless.","insect"},
+	{"scorpius","MHCEKJ","TMe",5,5,5,"FFFFFF","E53935","curving stars with a red heart star","rumble","Stings from the sky.","space,zodiac"},
+	{"scotch bonnet","IABAKK","KeP",6,7,2,"F2A62B","D8302B","squat bonnet-shaped pod","sizzle","A pretty hat full of fire.","edible,spicy,flammable,pepper"},
+	{"scotch egg","IMAAKK","keO",3,7,6,"C8803A","F2D23A","crumbed ball, egg center","bonk","An egg wearing sausage armour.","edible"},
 	{"scottie","AMBJAA","dQf",2,6,2,"1E1E1E","3A3A3A","black wiry terrier, beard","yip","Proud little black terrier.","mammal,pet,cute"},
 	{"scottish fold","AMBJAA","dfT",2,7,2,"B9B3AA","6D665D","round face, ears folded flat","meow","Ears folded for aerodynamics.","mammal,pet,cute"},
 	{"scout","LGBJNA","GQF",3,6,3,"15803D","FACC15","sash of badges, compass, rope","whistle","Prepared for everything.","outdoor"},
@@ -76,6 +81,7 @@ return {
 	{"seagull swoop","AFBADB","DAQ",3,8,2,"F6F5F0","A9B2BB","a seagull swoops at one enemy three times","squawk","Mine. Mine. Mine.","critter,bird,bolt"},
 	{"seahorse","ABAJEC","dZB",1,6,1,"E8A43A","F2D07A","curled tail, horse head, upright","splash","Dads carry the babies. Respect.","fish,aquatic,cute"},
 	{"seal","ABCJEC","UfB",3,5,4,"7E8288","C8CCD0","plump spotted body, flippers, whiskers","bark","Slaps its belly. Applause.","mammal,aquatic"},
+	{"seal ball","ABBA3F","UV",4,6,2,"8A96A4","FFD246","a seal noses a ball that bounces down the line","boing","Has never once dropped it. Not once.","critter,mammal,projectile,bounce"},
 	{"seal kunai","CDBAJB","TeY",6,10,2,"F2C14E","1F6FEB","three-pronged kunai with a glowing seal tag","warp","Throw it. Be there. Same thing.","anime,ninja,speed"},
 	{"seal pup","ACBJEC","UfB",1,5,4,"F4F4F2","D8DCE0","white fluffy seal pup, huge dark eyes","bark","Most adorable marshmallow alive.","mammal,aquatic,cute,arctic"},
 	{"seaplane","DFCKHB","DAkgB",5,7,5,"FFC107","1565C0","plane with two big floats under it","propeller","Lands on water. Splashes enemies.","vehicle,air"},
@@ -397,10 +403,4 @@ return {
 	{"siren salamander","AMAJCC","FB",1,3,2,"4A4A3A","8A8A6A","eel-like salamander with tiny arms","squelch","Two tiny arms and a long body.","amphibian,wetland"},
 	{"sirin","AICJDB","jAc",4,6,3,"1E1B4B","FDE68A","bird with a woman's face, sad song","sing","Sings so sweetly you forget your name.","mythical,bird"},
 	{"sirius","MHDAKJ","KTeO",7,7,6,"F5F5F5","90CAF9","dazzling blue-white star","twinkle","Brightest star in the night sky. Blinding.","space,star"},
-	{"sister","LMCJNA","jf",3,6,4,"F472B6","1D4ED8","ponytail and backpack","ding","Will tell mom. Will absolutely tell mom.","family"},
-	{"sit","KEBLGI","kNO",3,4,4,"B45309","F2D0B4","big cartoon bottom dropping onto a whoopee cushion","thud","Sat. On you. Comfy.","silly"},
-	{"sitar","BMCFJI","jN",2,4,3,"8B5A2B","F3E6C8","long neck, gourd body","strum","Buzzing, shimmering strings.","music"},
-	{"sitatunga","AMCJAA","DkB",4,8,4,"8A6A4A","E8D8C0","swamp antelope, splayed hooves","bleat","Swims to escape. Swamp ninja.","mammal,wild"},
-	{"six shooter spin","CKBAwI","eV",5,7,3,"C9CED4","5A3A1E","twirling revolver","bang","Trick shot!","cowboy"},
-	{"size","KLBOKJ","jWX",3,5,3,"22D3EE","F472B6","ruler and two arrows, one pointing up, one down","boing","It matters. Sometimes. In boss fights.","silly"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pirate parrot captain","AFBJDB","jAb",2,8,2,"15803D","DC2626","parrot in a tiny captain's hat","squawk","Captain now. The crew agreed.","pirate,silly"},
+	{"pirate pistol","CKBAwI","Te",4,4,3,"B58A3A","5A3A1E","ornate flared flintlock","bang","Bang! Arr!","pirate"},
+	{"pirate queen","LBCJNA","ebh",6,6,5,"7F1D1D","FACC15","crowned pirate with twin cutlasses","arr","Rules the seven seas. And snacks.","pirate,royal"},
+	{"pirate ship","DBEMHC","EkegB",7,5,8,"3E2723","1A1A1A","wooden galleon, black sails, skull flag, cannons","cannon","Arr! Broadside incoming!","vehicle,aquatic,pirate"},
+	{"pisces","MBCEKJ","eV",5,5,5,"FFFFFF","4DD0E1","two star fish tied by a ribbon","rumble","Two starry fish. Very slippery.","space,zodiac"},
 	{"piskie","ALAJNB","jY",1,9,1,"A3E635","F472B6","tiny green trickster with glowing trail","giggle","Leads you in circles. Giggles.","fairy"},
 	{"pistachio","IEAAKK","UeO",2,8,5,"9CBA6B","C8A87A","split beige shell, green nut","tok","A nut that smiles at you.","edible,nut"},
 	{"pistachio ice cream","ICBAKJ","JeN",3,5,2,"B8D88A","F2E8C8","pale green scoop","squish","Nutty and cold.","edible,frozen,sweet"},
@@ -398,9 +403,4 @@ return {
 	{"pudu","AMBJAA","Dk",1,8,4,"8A5A3A","C8A07A","tiny round deer","bleat","World's smallest deer. Pocket deer.","mammal,wild,cute"},
 	{"pueblo","EEDCII","GS",3,1,8,"D7A16A","A1887F","stacked flat-roofed clay rooms, ladders","thud","Ladders up, enemies down.","structure,building"},
 	{"puff adder","AMCJCD","fMNO",4,6,3,"C8A06A","3A2A1A","chunky chevron viper","hiss","Puffs up. Strikes fast.","reptile,venomous"},
-	{"puff pastry","IMCIII","Ga",3,3,3,"F2D08A","E8B860","flaky golden layered square","thud","Puffs up and gets defensive.","edible"},
-	{"puff puff","IMAELB","eVP",2,7,1,"D9A04A","F2C870","round fried dough balls","pitter","Fluffy fried balls of joy.","edible,sweet"},
-	{"puffball","NJBDOI","jEMP",3,1,2,"F5F5F5","BCAAA4","white round ball that bursts into dust","poof","Poof! Cough cough cough.","plant,fungus"},
-	{"puffbird","AMAJDB","dA",1,7,1,"8A6A4A","F2F2EE","puffy round bird","tweet","Very puffy. Very still.","bird,cute"},
-	{"puffed rice","IMAELB","eVP",2,7,1,"F7F2E0","E8D8A8","tiny puffy grains","pitter","Crunchy air.","edible,sweet,snack"},
 }

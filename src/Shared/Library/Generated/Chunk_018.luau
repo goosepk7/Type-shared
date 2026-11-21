@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"music stand","BMBCII","G",1,1,3,"24262A","C9CED4","folding wire stand","strum","Holds sheet music. Holds the line.","music"},
+	{"music teacher","LLCJNA","jO",3,4,3,"7C3AED","FACC15","baton, sheet music, recorder","sing","Again, from the top.","school,music"},
+	{"music tower","EMDMII","GkSeO",4,1,6,"7E57C2","FFEB3B","tower topped with huge speakers","music","Drops the bass. Drops the enemies.","structure,defense,tower,silly"},
+	{"musical chairs","KFCN0K","jSIO",3,6,3,"EC4899","FACC15","ring of chairs, one too few, music stopping dead","music","The music stopped. There is no chair for you.","party,toy"},
 	{"musician","LMCJNA","jceO",4,5,4,"7C3AED","FCD34D","performer with a guitar on back and drumsticks in hand","music","One, two, three, four! Solo of doom.","music"},
 	{"musk deer","AMBJAA","DkT",3,8,4,"6A5A44","C8B8A0","small deer with long fangs","bleat","No antlers. Vampire fangs instead.","mammal,wild"},
 	{"musk ox","ACDJAA","GDkO",6,4,7,"3E3026","C2B29A","long shaggy coat, helmet horns","moo","Forms a wall. Dares you.","mammal,heavy,arctic"},
@@ -380,6 +384,7 @@ return {
 	{"oviraptor","AMCJBA","DQfTb",3,9,3,"6A7A9A","E8C87A","parrot beak, head crest","screech","Wrongly accused of egg thieving.","dinosaur,extinct,reptile,predator"},
 	{"owl","AMBJDB","AZT",3,7,2,"8A6A4A","F2E6D2","round face disc, big eyes, ear tufts","hoot","Turns its head almost all the way round.","bird,nocturnal,predator"},
 	{"owl butterfly","AMAJFB","jdA",1,5,1,"8A6A4A","F2D82A","wings with owl eye spots","flutter","Has owl eyes on its wings.","insect,cute"},
+	{"owl call","AFBNDB","NP",3,6,3,"96683E","B096E6","an owl on your shoulder hoots rings that slow enemies","hoot","Asks who. Never listens to the answer.","critter,bird,zone,slow"},
 	{"owlbear","AGDJAA","Dkf",7,5,7,"78350F","FDE68A","bear body with owl head and feathers","roar","Hoots, then hugs you way too hard.","mythical,silly"},
 	{"owlet","AMAJDB","AZT",1,7,2,"E8E0D4","B8A890","fluffy grey baby owl","hoot","A cotton ball with eyes.","bird,nocturnal,predator,cute"},
 	{"owner","LHCJNA","GOhY",6,5,6,"FACC15","7C3AED","avatar with a gold crown tag floating over its head","fanfare","Has the crown icon. Has the ban button.","gaming"},
@@ -398,9 +403,4 @@ return {
 	{"pacifier","BMAOKI","FN",1,5,1,"87CEEB","F2F2EE","rubber teat with ring","squeak","Calm down. Calm all the way down.","baby,cute"},
 	{"pack","AGDJAA","DQfh",7,8,5,"6B7280","E5E7EB","five grey wolves fanning out, leader howling","howl","Hunts as one. Argues about dinner as five.","canine,predator,swarm"},
 	{"pack rat","AMAJAA","Cdb",1,6,1,"8A7A6A","D8C8B8","rat with fluffy tail and big ears","squeak","Collects shiny junk. Hoarder.","mammal,cute"},
-	{"package","BMBL2I","Ech",3,2,3,"C8A165","EF4444","taped brown box marked FRAGILE, rattling suspiciously","thud","FRAGILE. This way up. Oops.","household"},
-	{"pacman frog","AMBJAG","UHe",2,5,1,"6AA03A","E8C84A","round frog that is mostly mouth","croak","A mouth with legs.","amphibian,wetland,pet,silly"},
-	{"paczki","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","big round jelly donut","chomp","A jelly donut on a mission.","edible,sweet"},
-	{"pad thai","IMBLGI","FHN",2,3,3,"E8A040","7DBE3A","stir-fried noodles, peanuts, lime","gloop","Sweet, sour, nutty noodles.","edible,sticky"},
-	{"paddle ball","BMAAJF","UQe",1,9,1,"C0392B","C49A6C","paddle with ball on elastic","bonk","Thwack thwack thwack.","sport"},
 }

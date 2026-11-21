@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"water spear","FBCAuB","TIe",5,8,1,"0288D1","E1F5FE","spinning spear of pressurised water","whoosh","Water, sharpened.","aquatic,sharp"},
+	{"water spiral","FBCN5K","HI",5,6,2,"0288D1","E1F5FE","spinning ring of water","gurgle","Round and round you splash.","aquatic"},
+	{"water sprite","ABAJNB","AFB",1,8,1,"38BDF8","E0F2FE","tiny fairy made of a water droplet","chime","Splashes you. Giggles.","fairy,aquatic"},
+	{"water strider","AMAJFA","dPB",1,6,1,"3A3A3A","8A9098","long skinny legs skating on water","buzz","Walks on water like it's ice.","insect"},
+	{"water tank","EBCCII","GSI",2,1,6,"607D8B","4FC3F7","round tank on a stand","thud","Opens the tap. Everyone gets wet.","structure,farm"},
+	{"water temple","MBENII","SIN",5,1,9,"0277BD","80DEEA","flooded halls with rising water","echo","Water levels change. Constantly. Ugh.","place,adventure"},
+	{"water tornado","HBEN5K","klSHI",7,6,5,"2F7FBF","BFE7FA","spiralling column of seawater, spray halo","roar","A tornado that went for a swim.","storm,aquatic"},
 	{"water tower","EBDMII","GSIeN",4,1,7,"90A4AE","1E88E5","big round tank on tall legs","splash","Opens the valve. Everyone gets soaked.","structure,defense,tower"},
 	{"water treatment plant","EBENII","FS",3,1,8,"4FC3F7","B0BEC5","round tanks and pipes","clank","Cleans water. Heals friends.","structure,mechanical"},
 	{"water trough","EBBNII","FSN",1,1,5,"607D8B","4FC3F7","long metal tub of water","thud","Splash an enemy. Refresh a friend.","structure,farm"},
@@ -396,11 +403,4 @@ return {
 	{"zombie chicken","AJAJDA","UdM",1,6,1,"65A30D","F5F5F4","ragged undead chicken, glowing eyes","cluck","Crosses the road. Again. Forever.","undead,silly"},
 	{"zombie dog","AJBJAA","DfM",3,7,3,"65A30D","78716C","scrappy undead hound, one floppy ear","growl","Still a good boy. Mostly.","undead,spooky,canine"},
 	{"zombie fungus","NJBLMI","jSP",5,1,2,"FF7043","4E342E","thin orange stalk sprouting from a bug","poof","Takes over minds. Charming.","plant,fungus,spooky"},
-	{"zombie giant","AJEJNA","DkM",8,3,8,"4D7C0F","78716C","hulking zombie with huge fists","groan","Slow. Big. Bigger.","undead,giant"},
-	{"zombie hands","AEDNNH","SfN",5,4,5,"809874","5C4836","grey-green hands clawing up out of cracked earth","moan","They just want a hand up.","monster,folklore,spooky,graveyard"},
-	{"zombie horde","AJDJLA","fNPh",6,2,6,"4D7C0F","57534E","dozens of shambling silhouettes","groan","Slow, but there are SO many.","undead,spooky,swarm"},
-	{"zombie hunter","LMCJNA","Gfe",6,6,6,"57534E","84CC16","bandana, crossbow, backpack","bang","Has a plan for the zombie apocalypse.","warrior"},
-	{"zombie king","AJDJNA","MNh",7,3,7,"4D7C0F","CA8A04","bloated crowned zombie on a bone throne","groan","Rules the undead. Smells regal.","undead,royal,boss"},
-	{"zombie mage","AJCJNA","Meh",5,3,4,"65A30D","7C3AED","rotting wizard with a cracked staff","groan","Still remembers one spell. Uses it a lot.","undead,magic"},
-	{"zombie pirate","AJCJNA","fM",4,4,5,"65A30D","7F1D1D","soggy pirate zombie with seaweed beard","groan","Arrr... brains.","undead,pirate"},
 }

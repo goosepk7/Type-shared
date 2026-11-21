@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"strudel","IMBLKI","dSc",2,3,3,"D9A04A","E8C88A","rolled flaky pastry log","chomp","Flaky layers wrapped round apple.","edible,sweet"},
+	{"struthiomimus","AMCJBA","DQf",3,9,3,"9A8A6A","E8D8B8","slender ostrich-mimic","screech","Long legs. Longer name.","dinosaur,extinct,reptile,predator"},
+	{"stubborn","KECOKI","G",1,2,8,"8D6E63","FFB74D","planted glowing heels","hmph","Not moving. Not listening.","defence,silly"},
+	{"stud finder","JDAOJK","c",1,5,2,"F1C40F","24262A","beeping wall scanner","clank","Beep. Weakness found.","tool"},
+	{"student","LMCJNA","de",3,5,3,"1D4ED8","FACC15","backpack, glasses, pencil","ding","Throws spitballs with precision.","school"},
+	{"studio","MHDNlI","jdh",4,1,5,"374151","EF4444","warehouse with spotlights, cameras and an ON AIR sign","clack","Quiet on set! That includes screaming.","art,movie,building"},
+	{"stuff","BMCELB","jPO",3,5,3,"F59E0B","8B5CF6","random falling junk: boot, lamp, fish, trophy, sock","clatter","What stuff? All of it. Incoming.","silly"},
 	{"stuffed animal","BMBJAA","dc",1,3,2,"F06292","F3E6C8","floppy plush creature","squeak","Fluffy reinforcements.","toy,cute"},
 	{"stuffed mushrooms","IMAELB","eVP",2,7,1,"C8A880","7DBE3A","caps filled with herbs","pitter","Little cups of savory.","edible"},
 	{"stuffed pepper","IGBOKI","F",2,5,3,"D72B2B","F2E8C8","bell pepper with rice filling","crunch","A pepper with a full belly.","edible,healthy,pepper"},
@@ -396,11 +403,4 @@ return {
 	{"thinking cap","BMBONI","FY",2,5,1,"C0392B","F1C40F","cap with light bulb on top","swish","Ding! Great idea.","clothing,silly"},
 	{"third eye","KLBOKJ","Ta",3,5,3,"AA00FF","FFD54F","glowing eye opening on caster's forehead","hum","Sees everything. Even your homework.","psychic"},
 	{"thirst","KACOKJ","iHN",3,4,2,"FDBA74","E0F2FE","cracked dry tongue under a tiny blazing sun, empty cup","gulp","One juice box. That is all it asks.","mood"},
-	{"this","KMBAuB","Uje",2,6,2,"F59E0B","3B82F6","big arrow pointing down at a random thing, then another","ding","This. No, that. No, THIS.","silly,meme"},
-	{"thistle","NGBNMI","ST",3,1,3,"9C27B0","7CB342","spiky purple puff on a prickly stem","rustle","Touch at your own risk.","plant,flower,sharp"},
-	{"thor","LDEJXA","AkeLO",9,7,9,"B91C1C","C0C7CE","red-bearded Norse giant, winged helm, short stone hammer","thunder","Old Norse weather forecast: hammer.","mythical,storm,norse,boss,danger"},
-	{"thorn","NGAAJI","Te",2,7,1,"6D4C41","C62828","sharp curved thorn","rustle","Small. Sharp. Annoying.","plant,sharp"},
-	{"thorn shield","BGCIyI","GT",3,4,6,"2E8B57","7A4E2D","shield of woven thorny vines","clank","Hit it. Ouch.","armor,defense"},
-	{"thorn storm","FGDEOB","TMP",6,6,2,"33691E","A1887F","swirl of sharp thorns raining down","rustle","Prickly weather.","plant,sharp,storm"},
-	{"thorn vine","NGCLMI","WSTHN",4,2,4,"33691E","6D4C41","coiling vine full of thorns","rustle","It grabs. It pokes. It does not let go.","plant,sharp"},
 }

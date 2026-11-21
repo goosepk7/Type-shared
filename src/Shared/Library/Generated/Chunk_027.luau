@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"this","KMBAuB","Uje",2,6,2,"F59E0B","3B82F6","big arrow pointing down at a random thing, then another","ding","This. No, that. No, THIS.","silly,meme"},
+	{"thistle","NGBNMI","ST",3,1,3,"9C27B0","7CB342","spiky purple puff on a prickly stem","rustle","Touch at your own risk.","plant,flower,sharp"},
+	{"thor","LDEJXA","AkeLO",9,7,9,"B91C1C","C0C7CE","red-bearded Norse giant, winged helm, short stone hammer","thunder","Old Norse weather forecast: hammer.","mythical,storm,norse,boss,danger"},
+	{"thorn","NGAAJI","Te",2,7,1,"6D4C41","C62828","sharp curved thorn","rustle","Small. Sharp. Annoying.","plant,sharp"},
+	{"thorn shield","BGCIyI","GT",3,4,6,"2E8B57","7A4E2D","shield of woven thorny vines","clank","Hit it. Ouch.","armor,defense"},
+	{"thorn storm","FGDEOB","TMP",6,6,2,"33691E","A1887F","swirl of sharp thorns raining down","rustle","Prickly weather.","plant,sharp,storm"},
+	{"thorn vine","NGCLMI","WSTHN",4,2,4,"33691E","6D4C41","coiling vine full of thorns","rustle","It grabs. It pokes. It does not let go.","plant,sharp"},
 	{"thorn wall","EGDCII","GWSTN",4,1,6,"2E7D32","5D4037","tangled thorny vines on a trellis","thud","Ouch, ouch, ouch, ouch.","sharp,plant"},
 	{"thorny devil","AMBJAA","CfT",2,7,2,"C8783A","F2C88A","spiky desert lizard","hiss","Drinks through its skin.","reptile"},
 	{"thoroughbred","AMDKAA","Dkg",5,10,5,"6A3A1E","2A1A12","sleek racing horse","neigh","Born to race. Lives to race.","mammal"},
@@ -396,11 +403,4 @@ return {
 	{"tteokbokki","IABAKK","KSN",5,7,2,"E0402B","F7F2EC","red sauce, chewy rice cylinders","sizzle","Chewy rice cakes in fire sauce.","edible,spicy,flammable"},
 	{"tuatara","AMBJAA","Cf",2,7,2,"6A6A4A","C8C0A0","spiny crest, third eye","hiss","Has a third eye. Older than dinosaurs.","reptile,ancient"},
 	{"tuba","BKDFJI","kIO",4,3,5,"B58A3A","D4A72C","huge coiled brass horn","boom","OOMPAH. OOMPAH.","music"},
-	{"tube","BMBHzK","Ukf",2,6,3,"22D3EE","F472B6","long bendy foam noodle swung like a sword, bonk lines","bonk","Bonk. Harmless. Bonk. Annoying. Bonk.","toy,silly"},
-	{"tug of war","KMCBKI","HO",4,4,3,"A1887F","FFD54F","glowing rope pulling target in","creak","Heave! Heave! Gotcha.","silly,sport"},
-	{"tugboat","DBCKHC","DkHIgB",5,5,8,"E53935","1A1A1A","short stout boat, big tyre fenders","horn","Small. Stubborn. Pulls anything.","vehicle,aquatic,cute"},
-	{"tui","AMAJDB","dA",1,7,1,"2A3A2A","F2F2F2","dark bird with white throat tuft","tweet","Wears a bow tie. Sings beeps.","bird,cute"},
-	{"tulip","NGBNMI","dFS",2,1,2,"E53935","43A047","cup-shaped bloom on a straight stem","rustle","Neat, tidy, ready for war.","plant,flower"},
-	{"tulip field","NGENMI","dFS",2,1,4,"E53935","FFEB3B","stripes of bright tulips","rustle","Rows of colour. Rows of charm.","plant,crop"},
-	{"tulip tree","NGDCMI","GWkS",3,1,7,"6D4C41","FFB300","tall tree with tulip-shaped flowers","rustle","Tulips. On a tree. Very tall.","plant,tree"},
 }

@@ -81,6 +81,7 @@ return {
 	{"cat","AMBJAA","dcfT",2,7,2,"E89A3C","F5E6D0","sitting cat, perked ears, curled tail","meow","Knocks things off tables for science.","mammal,pet,cute"},
 	{"cat knight","AKBJAA","DZf",3,8,3,"F59E0B","94A3B8","cat in plate armor with feathered helm","meow","Knocks your sword off the table.","warrior,cat,silly"},
 	{"cat lady","LMCJNA","dh",3,4,4,"A855F7","F59E0B","cardigan covered in fur, cat carrier","meow","Summons 47 cats.","silly,cat"},
+	{"cat pounce","AMBAAG","Dkf",4,9,2,"E89646","FF9678","a cat pounces on an enemy and swipes them","hiss","Knocked your spell off the table on purpose.","critter,mammal,pounce,melee"},
 	{"cat tower","EMBCII","GdSc",1,1,3,"BCAAA4","8D6E63","carpeted tower with perches","thud","Built for cats. Ruled by cats.","silly,cute"},
 	{"cat toy","BMALKI","dc",1,7,1,"7D3CB5","8B5A2B","stick with dangling feather","squeak","Irresistible. Even to bosses.","pet,toy"},
 	{"cataclysm","HLFNOI","EkPO",9,4,7,"4A148C","FF6D00","whole area cracks, fire and violet lightning","boom","All the bad things at once.","explosive,danger"},
@@ -402,5 +403,4 @@ return {
 	{"citipati","AMCJBA","DQFfT",5,9,3,"6A6A7A","E8301E","crested oviraptor sitting on nest","screech","Found sitting on its nest. Good parent.","dinosaur,extinct,reptile,predator"},
 	{"citizen","LMCJNA","Gdh",2,4,3,"38BDF8","F59E0B","ordinary passer-by with shopping bags and a phone","crowd","Just popping to the shops. Oh. A battle.","silly"},
 	{"citron","IMBAKF","jke",3,6,2,"E9D74A","9AAA3C","huge lumpy yellow citrus","squirt","Mostly rind. Fully dramatic.","edible,fruit,sour"},
-	{"city","MEFNII","Sh",4,1,9,"37474F","90CAF9","skyline of towers and traffic","traffic","Never sleeps. Never stops.","place,terrain"},
 }

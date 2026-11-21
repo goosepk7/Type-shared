@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"rob","KIBONA","DZb",4,8,1,"111827","FACC15","masked figure dashing off with a bulging swag sack","jingle","Yoink. Legally distinct from borrowing.","villain,stealth"},
+	{"robber","LICJNA","DZb",4,7,3,"111827","F8FAFC","striped shirt, mask, loot bag","whoosh","Bag says LOOT. Very subtle.","villain"},
+	{"robber fly","AMAJFB","dAfTP",1,6,1,"6A5A44","C8A07A","bristly fly with beard","buzz","Bearded hunter. Catches wasps.","insect"},
+	{"robe","BLCONI","F",1,5,2,"1F2F55","D4A72C","long star-patterned robe","swish","Comfy. Mystical. Pocketless.","clothing,magic"},
+	{"robin","AMAJDB","dA",1,7,1,"6E5A4A","E8601E","round grey-brown bird with red breast","tweet","Wears a red vest every day.","bird,cute"},
 	{"robin hood","LGCJNA","Zeb",5,8,4,"15803D","78350F","green hood, feathered cap, longbow","twang","Steals from the rich. Gives to you.","archer,folklore"},
 	{"robo hound","OKCJAA","Qfh",4,7,5,"C4CAD4","FF382C","a chrome robot dog with a red visor that runs and bites","growl","Good boy. Shiny boy. Bitey boy.","scifi,robot,pet"},
 	{"robot","OKCJNA","GfeL",5,4,7,"94A3B8","3B82F6","boxy metal body, antenna, glowing eye visor","beep","Beep boop. Translation: you're in trouble.","robot,mechanical"},
@@ -398,9 +403,4 @@ return {
 	{"scorpion","AJBJQA","fTMN",4,6,2,"6A4A1E","E8A84A","big pincers, curled stinger tail","skitter","Glows blue under black light.","arachnid,spooky,venomous,desert"},
 	{"scorpion ballista","CMCMxI","Te",5,5,4,"8B5A2B","A86F32","small bolt-thrower on tripod","creak","A tiny ballista with a big sting.","medieval,siege,heavy"},
 	{"scorpion pepper","IABAKK","KMP",7,7,2,"C8202B","8A1E1E","wrinkly pod with stinger tail","sizzle","Stings like a scorpion.","edible,spicy,flammable"},
-	{"scorpionfish","AJBJEC","dZMB",3,6,1,"B85A3A","E8B898","frilly camo fish, venom spines","splash","Camouflage plus stings.","fish,aquatic"},
-	{"scorpionfly","AMAJFB","jdAP",1,6,1,"E8A02A","1E1E1E","fly with scorpion tail","buzz","Scorpion tail. Totally harmless.","insect"},
-	{"scorpius","MHCEKJ","TMe",5,5,5,"FFFFFF","E53935","curving stars with a red heart star","rumble","Stings from the sky.","space,zodiac"},
-	{"scotch bonnet","IABAKK","KeP",6,7,2,"F2A62B","D8302B","squat bonnet-shaped pod","sizzle","A pretty hat full of fire.","edible,spicy,flammable,pepper"},
-	{"scotch egg","IMAAKK","keO",3,7,6,"C8803A","F2D23A","crumbed ball, egg center","bonk","An egg wearing sausage armour.","edible"},
 }

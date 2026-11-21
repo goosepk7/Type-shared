@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"crappie","ABBJEC","dB",2,6,1,"8A9A8A","3A3A3A","speckled panfish","splash","Speckled and snacky.","fish,aquatic"},
+	{"crash","KMCAKB","kO",5,8,3,"90A4AE","FFCC80","tumbling impact with debris","crash","Wham. Everything everywhere.","silly"},
 	{"crate","BMCC2I","Gk",2,1,6,"8B5A2B","D2B48C","nailed wooden slat crate","thud","Smashable. Stackable. Loot inside.","container"},
 	{"crate barricade","EECCII","GdS",2,1,4,"A1887F","6D4C41","stacked wooden crates","thud","Mystery boxes. Mystery defence.","structure,defense,flammable"},
 	{"crate of tnt","BACL2I","EkP",8,1,2,"C0392B","8B5A2B","wooden crate stencilled TNT","thud","Do. Not. Drop.","container,explosive"},
@@ -401,6 +403,4 @@ return {
 	{"dinner bell","BKCF2I","kIP",3,6,3,"D9A441","7A4524","big brass hand bell with a wooden handle","bell","DING DING. Dinner is served.","kitchen,shockwave,self"},
 	{"dinner roll","IMBAKF","Fke",3,6,2,"D9A04A","F5E2B8","round fluffy golden roll","splat","Rolls. As advertised.","edible"},
 	{"dino rider","LEDKNA","Dfg",7,8,6,"15803D","78350F","warrior riding a scaly dinosaur","roar","Brought a dinosaur. You didn't.","mount,warrior"},
-	{"dinosaur","AMDJBA","DkfT",7,6,7,"5A8A3A","D8C86A","classic dinosaur, big tail, scaly","roar","Was here first. Wants it back.","dinosaur,extinct,reptile,predator"},
-	{"dinosaur car","DMCKHL","Dkfg",4,6,5,"43A047","FFEB3B","car shaped like a dinosaur","engine","RAWR. Vroom. RAWR.","vehicle,silly"},
 }

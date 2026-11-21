@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grapevine","NGCNMI","ScN",2,1,3,"6A1B9A","7CB342","twisted vine with hanging grape bunches","rustle","Grapes drop. Enemies slip.","plant,crop"},
+	{"grapple gun","OKBAwI","lHe",3,10,3,"24262A","C9CED4","pistol that fires a hook and reels you in","twang","Thwip! Yoink.","modern,mobility"},
+	{"grappling iron","CKBAJI","He",3,6,4,"5B6168","B89B6A","multi-hook thrown on rope","bang","Pull that ship closer.","pirate"},
+	{"grass","NGBNMI","FS",1,1,2,"7CB342","8BC34A","patch of green blades","rustle","Touch it. You need to.","plant"},
 	{"grasshopper","AMAJFG","UdP",1,6,1,"6AA03A","C8D84A","long hind legs, antennae","buzz","Jumps first. Thinks never.","insect"},
 	{"grater","BMBHJK","fV",2,5,4,"8A929B","24262A","box with jagged holes","clang","Shred it. Shred them.","kitchen,household"},
 	{"gratitude","KHBOKJ","F",1,4,2,"FFB74D","FFF8E1","warm orange heart glow","chime","Thanks! Here's a heal.","support,cute"},
@@ -399,8 +403,4 @@ return {
 	{"henchman","LMBJNA","dQP",2,5,3,"111827","FACC15","black jumpsuit, sunglasses, clipboard","grunt","Here to lose dramatically.","villain,silly"},
 	{"henodus","ABBJUA","GNB",2,2,8,"6A6A5A","C8C0A8","flat square turtle-like reptile","hiss","A square turtle. Weird.","reptile,armored"},
 	{"herald","LMCJNA","Oh",3,5,3,"1D4ED8","FACC15","tabard, trumpet, scroll","horn","HEAR YE. HEAR YE. Ow, my ears.","royal"},
-	{"herb","NGANMI","FS",1,1,2,"7CB342","9CCC65","small bundle of fragrant leaves","rustle","Rub it on. Feel better.","plant,herb"},
-	{"herbal tea","IABOKI","FN",2,5,2,"E8D08A","F2E8C8","teacup with leaves","slurp","Gentle, soothing, sleepy.","edible,drink,warm"},
-	{"herbalist","LJCJNA","FM",3,4,4,"365314","A16207","jars of herbs, mortar and pestle","bubble","Has a remedy for everything. Tastes awful.","healer,plant"},
-	{"hercules","LEDJXA","Dklf",8,6,9,"B45309","FDE68A","mega-muscled hero in a lion skin swinging an olive-wood club","grunt","Twelve labours done. Yours is number thirteen.","mythical,greek,warrior"},
 }
