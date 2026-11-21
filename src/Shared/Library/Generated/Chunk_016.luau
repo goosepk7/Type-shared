@@ -3,6 +3,13 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lock and chain","BKBLJK","O",1,1,7,"5B6168","8A929B","padlock wrapped in heavy chain","clink","Not going anywhere.","hardware"},
+	{"locker","BKCCII","GO",1,1,7,"2F6FD1","8E9196","tall metal school locker","tap","Stuffed in a locker. Classic.","school"},
+	{"locket","BMAOKJ","F",1,5,3,"D4A72C","E88AA5","heart-shaped opening pendant","chime","Holds a tiny portrait. And hope.","treasure,shiny"},
+	{"lockpick","CKAOJI","bY",1,9,2,"C9CED4","24262A","thin bent picks","bang","Click. Open sesame.","spy"},
+	{"locksmith","LKCJNA","Gb",3,5,4,"57534E","FACC15","ring of keys, pick set","click","No door is safe. Ever.","tools"},
+	{"locro","IBBOGI","FS",3,4,3,"E8C04A","C8762B","thick corn and squash stew","slurp","Thick, hearty Andean stew.","edible,warm,healthy"},
+	{"locust","AMADLB","diAPh",2,6,1,"8A7A3A","D8B84A","grasshopper swarm cloud","buzz","Arrives in billions. Leaves nothing.","insect"},
 	{"locust tree","NGDCMI","GWkST",4,1,7,"5D4037","9CCC65","thorny tree with long twisty pods","rustle","Thorns as long as fingers.","plant,tree,sharp"},
 	{"log bridge","EGCCII","GSN",1,1,4,"8D6E63","7CB342","single fallen tree across a gap","thud","One wrong step and splash.","structure"},
 	{"log flume","DBCKHC","DIg",3,7,4,"8D6E63","4FC3F7","hollow log boat on a water chute","splash","The big drop! Everyone gets soaked.","vehicle,silly"},
@@ -396,11 +403,4 @@ return {
 	{"menudo","IBBOGI","FS",3,4,3,"C8302B","F2E8C8","red tripe soup","slurp","A hearty red soup.","edible,warm,healthy"},
 	{"meow","KMBF6B","jdcO",2,6,1,"FDBA74","FFFFFF","sound rings shaped like cat ears with a tiny paw print","meow","Feed me. Feed me. It is 4 a.m. Feed me.","pet,cute"},
 	{"mercenary","LKCJNA","Dfe",6,6,6,"57534E","DC2626","mismatched armor, coin pouch, scar","clang","Will fight for you. For a price.","warrior"},
-	{"mercury","FKBF6F","MNV",4,6,3,"BFC5CC","8A939C","rolling liquid mirror blobs","slosh","Liquid metal that refuses to sit still.","toxic,shiny"},
-	{"mercury planet","MAEGKJ","KDke",7,6,9,"9E9E9E","795548","small cratered grey sphere","rumble","Smallest planet. Fastest punch.","space"},
-	{"mercury wave","FKDF6F","kNP",7,5,5,"B0BEC5","ECEFF1","rolling mirror-silver liquid wave","slosh","Shiny. Heavy. Unstoppable.","heavy,shiny"},
-	{"mercy","KHBOKJ","F",1,4,3,"FFF8E1","B3E5FC","soft white feather glow","chime","Spared. This time.","holy,support"},
-	{"merganser","ABBJDC","AfTB",2,5,2,"2A6A4A","F2F2F2","crested fish duck with saw bill","quack","Duck with teeth. Kinda.","bird,aquatic"},
-	{"merge","KLCOKI","WF",5,4,4,"FFB74D","7E57C2","two glows swirling into one","warp","Two become one. Bigger one.","magic"},
-	{"meringue","IMBLGG","USN",2,3,3,"F7F4F0","F2E2D0","swirled white peak","wobble","A sugar cloud with crunch.","edible,wobbly,sweet"},
 }

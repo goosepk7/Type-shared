@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dinosaur costume kid","LMBJNA","Dd",2,7,3,"15803D","F97316","kid in inflatable dinosaur suit","roar","Stomps. Rawrs. Trips.","cute,silly"},
+	{"dinosaur egg","AMBJKI","Wh",2,4,4,"D8C8A8","8A7A5A","big speckled egg, cracking open","growl","Something inside is getting impatient.","extinct,ancient,dinosaur"},
+	{"dip","IMBL2I","ScN",2,1,2,"F5F0DC","84CC16","bowl of creamy dip with one broken chip stuck in","gloop","Double dippers will be prosecuted.","edible,sauce,sticky"},
 	{"diplodocus","AMFJAA","kIO",8,2,9,"8A8A6A","C8C0A0","very long neck, very long whip tail","rumble","Longer than three buses.","dinosaur,extinct,reptile,heavy"},
 	{"diploma","BHBOJK","FaO",2,5,2,"F5F0DC","DC2626","rolled parchment tied with a red ribbon, gold seal","fanfare","Officially qualified to bonk.","school"},
 	{"dipper","ABAJDB","dAB",1,7,1,"3A3A3A","F2F2F2","songbird that walks underwater","tweet","Walks underwater. Seriously.","bird,cute"},
@@ -25,6 +28,7 @@ return {
 	{"disguise","KLBOKI","jZ",2,4,2,"8D6E63","FFE0B2","fake mustache and hat poof","poof","Nobody will ever guess.","stealth,silly"},
 	{"dish","BMBA3K","UEe",3,7,1,"F8FAFC","60A5FA","spinning white plate with a blue rim","crash","It is your turn to do them. Throw instead.","household,kitchen"},
 	{"dish rack","BMBCII","G",1,1,3,"C9CED4","F2F2EE","wire rack full of plates","clang","Clatter barrier.","kitchen,household"},
+	{"dish soap","BBCGKJ","lSe",2,2,3,"7FD3E8","F2FBFF","squeezy bottle of dish soap blowing big bubbles","pop","Squeaky clean. Pop.","kitchen,projectile,bubbles,household"},
 	{"dishwasher","BBCLII","FV",1,1,6,"C9CED4","24262A","box with racks and spray arms","clang","Swish swash. Spotless.","kitchen,household"},
 	{"disintegrate","FLDBKI","iTe",8,8,1,"76FF03","EEFF41","green beam that turns targets to sparkly dust","hum","Turns things into very small things.","magic"},
 	{"disintegrator","CJCBwI","iTe",8,6,3,"DDE3E8","8BC34A","green-glow ray with skeleton dial","zap","Turns foes into a fine dust.","scifi,ranged"},
@@ -57,6 +61,7 @@ return {
 	{"doedicurus","AMDJAA","GDkO",7,4,10,"6A5A44","B8A07A","armored dome, spiked mace tail","roar","Armadillo with a medieval mace.","mammal,extinct,ancient,heavy"},
 	{"dog","AMCJAA","DQcf",4,7,4,"C08A52","F2E3CC","floppy ears, wagging tail, tongue out","bark","Best friend. Will eat your homework.","mammal,pet"},
 	{"dog bowl","BMALKI","c",1,1,2,"C9CED4","C0392B","steel bowl full of kibble","squeak","Dinner bell for monsters.","pet"},
+	{"dog fetch","AMCAAA","Dkf",4,8,2,"C98E52","F4EBDD","throw a stick and a dog bolts after it","bark","Every throw is the best throw ever.","critter,mammal,projectile"},
 	{"dog groomer","LMCJNA","dF",3,5,4,"F472B6","F8FAFC","apron, blow dryer, brush","snip","Fluffs your dog. Fluffs your enemies.","silly,canine"},
 	{"dog knight","AKBJAA","GQf",3,7,4,"A16207","1D4ED8","loyal pup in shining armor","bark","Good boy. Great knight.","warrior,canine,cute"},
 	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
@@ -398,9 +403,4 @@ return {
 	{"ember sprite","AAAJNB","KjA",2,9,1,"F97316","FDE047","tiny flame fairy","crackle","Small spark. Big trouble.","fairy,fire"},
 	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
 	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
-	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
-	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
-	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
-	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
-	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
 }

@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"fissure","HEDNID","lTe",5,6,1,"4A3726","FF8A2A","a crack racing along the ground, slabs heaving up","crack","Mind the gap. It is coming to you.","natural,earth,terrain"},
+	{"fist","KMBAKB","kf",4,9,3,"FFCC80","FFFFFF","glowing knuckle impact","pow","Five fingers. One message.","melee"},
+	{"five spice","IFBDOJ","jPO",2,5,1,"8A4A2A","C8803A","brown spice heap","puff","Five spices, one punch.","edible,spice"},
+	{"fjord","MBFNII","SN",3,1,9,"1E88E5","6D6D6D","narrow deep sea channel between cliffs","rumble","Very deep. Very cold. Very pretty.","place,terrain"},
+	{"flag","BMCOzI","Fh",1,4,2,"9E1B32","D4A72C","cloth flag on a pole","pop","Rally to the banner!","party,medieval"},
 	{"flagpole","EMCNII","FS",1,1,4,"B0BEC5","E53935","tall pole with a waving flag","thud","Plant the flag. Claim the ground.","structure,silly"},
 	{"flail","CKCHtK","kfVO",6,4,5,"5B6168","8B5A2B","spiked ball on chain and handle","bonk","Swing. Spin. Hope.","medieval,heavy"},
 	{"flak cannon","CKDMxI","EeV",7,6,6,"6B7B3A","3A3F45","anti-air cannon with twin barrels","zap","Fills the sky with pops.","scifi,ranged"},
@@ -398,9 +403,4 @@ return {
 	{"gate","EEDCII","GS",3,1,8,"6D4C41","455A64","heavy double doors with iron bands","thud","Knock all you like.","structure,defense"},
 	{"gate surge","KHCNNI","DWkf",7,8,4,"46C8BA","DC322A","a body bursting with colour as inner gates open one by one","roar","Gate one: warm. Gate four: everyone else should leave.","anime,ninja,buff"},
 	{"gatehouse","EEEMII","Ge",4,1,10,"9E9E9E","5D4037","twin towers flanking an arched gate","thud","Two towers, one gate, zero chance.","structure,defense,ancient"},
-	{"gatekeeper","LKDCYI","GkO",5,1,8,"57534E","D4AF37","stout armoured guard with a giant key and a crossed halberd","clang","What is the password? Wrong. It is always wrong.","defense,medieval"},
-	{"gatling gun","CKDMwI","TeV",7,7,6,"A86F32","5A3A1E","rotating barrel cluster on wheels","rattle","Crank to shoot. Shoot to win.","medieval,siege,heavy"},
-	{"gaucho","LECKNA","DHg",5,7,5,"7C2D12","F5F5F4","wide hat, poncho, bolas","yeehaw","Lassos with style. And rocks.","western"},
-	{"gauntlet","CKBHJK","Gkf",4,6,6,"8A929B","6B4226","armoured plated glove","bonk","Slaps with authority.","medieval,armor"},
-	{"gaur","AMDJAA","DkO",7,4,7,"2A2018","F2E6C8","towering black bull, white socks","moo","Biggest wild cattle. Wears socks.","mammal,heavy"},
 }
