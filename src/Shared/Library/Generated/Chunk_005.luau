@@ -227,6 +227,7 @@ return {
 	{"cheese curds","IMAELB","ceP",2,7,1,"F2D870","F2C24A","squeaky irregular lumps","squeak","They squeak when you eat them.","edible,dairy"},
 	{"cheese danish","IMBLKI","dSc",2,3,3,"E0A050","F7F2E0","flaky pastry with cheese center","chomp","Flaky with a creamy heart.","edible,sweet"},
 	{"cheese fries","IMBLGI","cN",2,3,3,"F2C24A","F2862B","fries under cheese sauce","gloop","Fries wearing a cheesy blanket.","edible,sticky"},
+	{"cheese grater","JKBL2I","SNV",3,3,4,"C9CED4","F2C84B","steel box grater standing on a cheese wedge","clang","Step closer. It's only cheese.","kitchen,trap,tool"},
 	{"cheese omelette","IGBOKI","F",2,5,3,"F2D23A","F2A62B","folded omelet with cheese ooze","crunch","Cheese tucked into egg.","edible,healthy,breakfast"},
 	{"cheese pizza","IMBAKK","Uce",3,7,2,"F2C870","D9A04A","plain cheesy round pizza","whoosh","Simple. Stretchy. Perfect.","edible"},
 	{"cheese platter","IMCJII","Gdc",5,1,6,"F2C24A","8A5A3A","wooden board, assorted cheeses","thud","Every cheese invited.","edible,giant,silly,dairy"},
@@ -402,5 +403,4 @@ return {
 	{"citizen","LMCJNA","Gdh",2,4,3,"38BDF8","F59E0B","ordinary passer-by with shopping bags and a phone","crowd","Just popping to the shops. Oh. A battle.","silly"},
 	{"citron","IMBAKF","jke",3,6,2,"E9D74A","9AAA3C","huge lumpy yellow citrus","squirt","Mostly rind. Fully dramatic.","edible,fruit,sour"},
 	{"city","MEFNII","Sh",4,1,9,"37474F","90CAF9","skyline of towers and traffic","traffic","Never sleeps. Never stops.","place,terrain"},
-	{"city wall","EEECII","GS",3,1,10,"BCAAA4","8D6E63","long high wall with walkway and towers","thud","The whole town hides behind this.","structure,defense,ancient"},
 }

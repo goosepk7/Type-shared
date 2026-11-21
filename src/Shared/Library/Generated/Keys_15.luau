@@ -3,13 +3,23 @@
 -- owner ordinals and Double Metaphone codes ("PRI" or "PRI/ALT").
 return {
 	keys = {
-		"zucchini plant","zucchini-bread","zucchini-breads","zucchinibread","zucchinibreads","zucchinis","zulu warrior","zuniceratops","zuniceratopses","zuppa toscana","zuppa-toscana","zuppatoscana","zweihander","zweihanders",
+		"zippers","zips","zit","zits","ziz","zmei","zmey","zmey gorynych","zoanthid","zoanthids","zodiac key","zombi","zombie","zombie ambush","zombie arms","zombie army",
+		"zombie bride","zombie brute","zombie chicken","zombie chickens","zombie dog","zombie dogs","zombie field","zombie fungi","zombie fungus","zombie giant","zombie grab","zombie hand","zombie hand field","zombie hand trap","zombie hands","zombie hoard",
+		"zombie horde","zombie hound","zombie hunter","zombie hunters","zombie king","zombie lord","zombie mage","zombie mushroom","zombie pirate","zombie pirates","zombie shark","zombie slayer","zombie swarm","zombie unicorn","zombie viking","zombie wizard",
+		"zombiefungus","zombiefunguses","zombies","zombies rising","zomg","zone","zone of silence","zones","zongzi","zoo","zoo keeper","zookeeper","zookeepers","zoologist","zoologists","zoom",
+		"zoom lane","zoom punch","zoomer","zoomers","zoomies","zooming","zooms","zoos","zorilla","zorillas","zoro","zucchini","zucchini bread","zucchini breads","zucchini plant","zucchini-bread",
+		"zucchini-breads","zucchinibread","zucchinibreads","zucchinis","zulu warrior","zuniceratops","zuniceratopses","zuppa toscana","zuppa-toscana","zuppatoscana","zweihander","zweihanders",
 	},
 	owners = {
-		9722,11604,11604,11604,11604,11603,11605,11606,11606,11607,11607,11607,11608,11608,
+		11580,11580,11582,11582,11583,11584,11584,11584,11585,11585,427,11586,11586,11592,11592,11593,11587,11591,11588,11588,11589,11589,11592,11590,11590,11591,11592,11592,11592,11592,11592,11593,11593,11589,11594,11594,11595,11595,11596,11590,
+		11597,11597,11598,11594,11593,11599,11600,11596,11590,11590,11586,11592,7079,11601,9158,11601,11602,11603,11604,11604,11604,11605,11605,11606,10666,9464,11607,11607,11606,11606,11606,11603,11608,11608,10745,11609,11610,11610,9728,11610,
+		11610,11610,11610,11609,11611,11612,11612,11613,11613,11613,11614,11614,
 	},
 	phon = {
-		"SXNP","SXNP","SXNP","SXNP","SXNP","SXNS","SLRR","SNSR","SNSR","SPTS","SPTS","SPTS","SHNT","SHNT",
+		"SPRS","SPS","ST","STS","SS","SM","SM","SMKR","SN0T/SNTT","SN0T/SNTT","STK","SMP","SMP","SMPM","SMPR","SMPR","SMPP","SMPP","SMPX/SMPK","SMPX/SMPK","SMPT","SMPT","SMPF","SMPF",
+		"SMPF","SMPJ/SMPK","SMPK","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPH","SMPK","SMPL","SMPM","SMPM","SMPP","SMPP","SMPX","SMPS","SMPS","SMPN","SMPF","SMPS/SMPT",
+		"SMPF","SMPF","SMPS","SMPS","SMK","SN","SNFS","SNS","SNKS","S","SKPR","SKPR","SKPR","SLJS/SLKS","SLJS/SLKS","SM","SMLN","SMPN","SMR","SMRS","SMS","SMNK","SMS","SS",
+		"SRL/SR","SRLS","SR","SXN","SXNP","SXNP","SXNP","SXNP","SXNP","SXNP","SXNP","SXNS","SLRR","SNSR","SNSR","SPTS","SPTS","SPTS","SHNT","SHNT",
 	},
-	kinds = "AAAAAAIIAIAAIA",
+	kinds = "AAIAIAIAIAAAIAAAIAIAIAAAIIAAAAIAIAIAIAIAIAIAAIIAAAAAAIAAIIAIAIAIAAIAAAAAIAAIIAAAAAAAIIAIAAIA",
 }

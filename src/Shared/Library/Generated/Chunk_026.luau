@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"stuffed mushrooms","IMAELB","eVP",2,7,1,"C8A880","7DBE3A","caps filled with herbs","pitter","Little cups of savory.","edible"},
+	{"stuffed pepper","IGBOKI","F",2,5,3,"D72B2B","F2E8C8","bell pepper with rice filling","crunch","A pepper with a full belly.","edible,healthy,pepper"},
+	{"stuffing","BMBDOJ","UFN",1,4,2,"FFFFFF","FDE68A","puffs of white fluff bursting from a split seam","puff","Teddy had a little accident.","soft,toy"},
+	{"stump","NGBCMI","GS",1,1,7,"8D6E63","C0A060","cut trunk with rings on top","rustle","It has been through a lot.","plant,tree,silly"},
+	{"stun","KDBAKB","O",3,9,1,"FFF176","FFFFFF","spinning stars around target's head","bonk","Seeing stars. Not the pretty kind.","silly"},
+	{"stun gun","CDBAwI","feLO",2,8,3,"24262A","F1C40F","small pistol with two prongs","zap","Bzzzt. Nap time.","electric"},
 	{"stunt double","LACJNA","DEk",5,9,4,"DC2626","F8FAFC","leather jumpsuit, helmet, mid-jump pose","boom","Jumps through fire. Daily.","silly"},
 	{"stunt plane team","DFEELB","jAeP",6,9,5,"E53935","1565C0","formation of jets with coloured smoke","jet","Smoke trails everywhere. Very confusing.","vehicle,air"},
 	{"stupidity","KMBDOJ","jNP",3,4,1,"FDE68A","A3E635","question marks around a spinning empty thought bubble","boing","Contagious. Do not make eye contact.","silly,meme"},
@@ -397,10 +403,4 @@ return {
 	{"thorn vine","NGCLMI","WSTHN",4,2,4,"33691E","6D4C41","coiling vine full of thorns","rustle","It grabs. It pokes. It does not let go.","plant,sharp"},
 	{"thorn wall","EGDCII","GWSTN",4,1,6,"2E7D32","5D4037","tangled thorny vines on a trellis","thud","Ouch, ouch, ouch, ouch.","sharp,plant"},
 	{"thorny devil","AMBJAA","CfT",2,7,2,"C8783A","F2C88A","spiky desert lizard","hiss","Drinks through its skin.","reptile"},
-	{"thoroughbred","AMDKAA","Dkg",5,10,5,"6A3A1E","2A1A12","sleek racing horse","neigh","Born to race. Lives to race.","mammal"},
-	{"thousand island","IMBLGI","kSO",2,3,2,"F2A07A","D72B2B","pink creamy dressing","squeak","A thousand islands. Zero maps.","edible,slippery,silly,sauce"},
-	{"thread snare","BLCLQB","SeNO",5,8,4,"3C6FD6","B5F0FF","a glowing net of thread strung across the lane","whoosh","Pull one thread and the whole net comes with it.","anime,stand,trap"},
-	{"threat","KIBF6B","IXO",4,6,1,"7F1D1D","111827","looming shadow cracking its knuckles","growl","Nice health bar. Shame if something happened.","villain"},
-	{"three wheeler","DMBKHL","Djkg",3,6,3,"1565C0","F5F5F5","tiny car with one front wheel","engine","Tips over in corners. Every corner.","mechanical,vehicle,land,silly"},
-	{"three-banded armadillo","AMBJAF","GUCf",2,5,6,"B8A08E","8A7462","armadillo rolled into a perfect ball","squeak","Rolls into a perfect ball.","mammal,wild"},
 }

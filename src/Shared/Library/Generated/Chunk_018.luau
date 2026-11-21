@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"musician","LMCJNA","jceO",4,5,4,"7C3AED","FCD34D","performer with a guitar on back and drumsticks in hand","music","One, two, three, four! Solo of doom.","music"},
+	{"musk deer","AMBJAA","DkT",3,8,4,"6A5A44","C8B8A0","small deer with long fangs","bleat","No antlers. Vampire fangs instead.","mammal,wild"},
+	{"musk ox","ACDJAA","GDkO",6,4,7,"3E3026","C2B29A","long shaggy coat, helmet horns","moo","Forms a wall. Dares you.","mammal,heavy,arctic"},
 	{"musk turtle","AMBJUA","GMNB",2,2,8,"3A3A2A","8A8A6A","small turtle that smells","hiss","Stinks when grabbed.","reptile,armored"},
 	{"muskellunge","ABDJEC","DfTB",5,7,4,"8A9A6A","D8D8A0","huge toothy pike","splash","The fish of ten thousand casts.","fish,aquatic"},
 	{"musket","CKCAwI","kTe",5,2,4,"5A3A1E","8A929B","long smoothbore barrel, wooden stock","bang","Aim. Fire. Spend a week reloading.","historic,ranged"},
@@ -364,7 +367,7 @@ return {
 	{"oval","KFBG3F","UjR",2,6,3,"A855F7","FFFFFF","purple squashed circle wobbling as it rolls","wobble","A circle after lunch.","school,shape"},
 	{"oven","BADMII","KS",4,1,7,"24262A","C9CED4","boxy oven with glowing window","clang","Preheat to \"battle\".","kitchen,household"},
 	{"oven glove armor","BMAONI","GK",1,5,2,"C0392B","F2F2EE","quilted fire-proof glove","swish","Fireball? Catch.","clothing"},
-	{"oven mitt","BMBINK","G",1,5,2,"C0392B","F2F2EE","thick quilted glove","clang","Hot stuff? Not a problem.","kitchen,household"},
+	{"oven mitt","BABINI","GfI",2,5,4,"C0392B","F2E6D0","thick red quilted oven mitt with a cream cuff","thump","Hot stuff? Not a problem.","kitchen,defense,self,melee"},
 	{"overalls","BECONA","Gfh",3,4,6,"2F5D8A","D4AF37","denim dungarees with a wrench in one pocket, straw in other","thud","One strap down. Maximum farmer.","clothing,farm"},
 	{"overcast","GFCDOJ","ZN",2,3,3,"9EA7AD","D1D6DA","flat grey blanket of cloud","hush","Meh. Just meh.","silly"},
 	{"overcharge","FDCOKJ","DL",5,8,2,"FFEA00","FF6D00","crackling sparks bursting off caster","buzz","Too much power. Way too much.","electric,speed"},
@@ -400,7 +403,4 @@ return {
 	{"paczki","IMBLKI","dSc",2,3,3,"D9A04A","B0203E","big round jelly donut","chomp","A jelly donut on a mission.","edible,sweet"},
 	{"pad thai","IMBLGI","FHN",2,3,3,"E8A040","7DBE3A","stir-fried noodles, peanuts, lime","gloop","Sweet, sour, nutty noodles.","edible,sticky"},
 	{"paddle ball","BMAAJF","UQe",1,9,1,"C0392B","C49A6C","paddle with ball on elastic","bonk","Thwack thwack thwack.","sport"},
-	{"paddle boat","DBBKHC","DkgB",2,3,3,"F5F5F5","FFB300","swan-shaped boat with pedal wheel","splash","The swan is judging you.","silly,cute"},
-	{"paddle steamer","DBEKHC","DkgB",5,4,7,"F5F5F5","C62828","white boat, twin chimneys, big rear paddle wheel","whistle","Slow, steamy, and full of jazz.","vehicle,aquatic"},
-	{"paddleboard","DBAKHC","DkgB",2,5,2,"26C6DA","F5F5F5","long flat board, single paddle","splash","Stand tall. Wobble a lot.","vehicle,aquatic,sport"},
 }

@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"krampus","AIDJNA","Dfh",6,6,6,"1C1917","DC2626","shaggy horned figure with chains and basket","cackle","Santa's grumpy partner. Very hairy.","spooky,christmas,holiday"},
+	{"krill","ABBJLA","fPB",2,4,5,"F27A6A","F2C0B0","tiny see-through pink shrimp swarm","clack","Small. Many. Whale snack.","crustacean,aquatic,armored"},
+	{"kris","CKBHrK","fT",4,8,3,"8A929B","D4A72C","wavy serpentine dagger","shing","Wiggly blade, straight to the point.","sharp,ancient"},
 	{"kronosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","B8C0C8","giant short-necked pliosaur","roar","Skull the size of a car.","extinct,reptile,aquatic,ocean"},
 	{"kudu","AMDJAA","DkT",5,8,4,"8E7A64","F2F0EA","huge spiral horns, white stripes","bleat","Horns like a corkscrew. Very fancy.","mammal,wild"},
 	{"kudzu","NGDLMI","GWSHNP",4,3,6,"2E7D32","7CB342","blanket of vines swallowing everything","rustle","Grows a foot a day. Eats houses.","plant"},
@@ -400,7 +403,4 @@ return {
 	{"lobster trap","BMCLII","cO",2,1,4,"8B5A2B","B89B6A","slatted wooden box with funnel","snap","Easy in. Not easy out.","trap,ocean"},
 	{"loch ness","MBENII","ZSh",4,1,8,"1A237E","2E7D32","long dark Scottish lake in hills","rumble","Something is swimming in there.","place,landmark,mythical"},
 	{"lock and chain","BKBLJK","O",1,1,7,"5B6168","8A929B","padlock wrapped in heavy chain","clink","Not going anywhere.","hardware"},
-	{"locker","BKCCII","GO",1,1,7,"2F6FD1","8E9196","tall metal school locker","tap","Stuffed in a locker. Classic.","school"},
-	{"locket","BMAOKJ","F",1,5,3,"D4A72C","E88AA5","heart-shaped opening pendant","chime","Holds a tiny portrait. And hope.","treasure,shiny"},
-	{"lockpick","CKAOJI","bY",1,9,2,"C9CED4","24262A","thin bent picks","bang","Click. Open sesame.","spy"},
 }

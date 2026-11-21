@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"scottish fold","AMBJAA","dfT",2,7,2,"B9B3AA","6D665D","round face, ears folded flat","meow","Ears folded for aerodynamics.","mammal,pet,cute"},
+	{"scout","LGBJNA","GQF",3,6,3,"15803D","FACC15","sash of badges, compass, rope","whistle","Prepared for everything.","outdoor"},
+	{"scout car","DMCKHL","Dkeg",4,9,5,"B59B6A","3B3B2F","light open car with a mounted gun","engine","Fast, nosy, and annoying.","mechanical,vehicle,land"},
+	{"scrambled eggs","IGBOKI","jF",2,5,3,"F2D23A","F7E88A","fluffy yellow curd pile","crunch","Eggs in a state of confusion.","edible,healthy,breakfast"},
+	{"scrap heap","MKCNII","SNh",2,1,5,"795548","9E9E9E","towering pile of junk","crowd","One person's trash is another's weapon.","place,silly"},
 	{"scrap metal","BKCCnK","G",2,1,6,"9C4A1A","8E9196","pile of twisted metal bits","clang","Junkyard barricade.","urban"},
 	{"scrap robot","OKCJNA","GkV",4,4,6,"78716C","B45309","lopsided robot of rusty junk and tires","clank","Built from junk. Proud of it.","robot,silly"},
 	{"scratch","KMBHJB","fT",3,9,1,"FFCC80","FFFFFF","three glowing claw lines","scritch","Scritch. Ouch.","sharp"},
@@ -398,9 +403,4 @@ return {
 	{"six shooter spin","CKBAwI","eV",5,7,3,"C9CED4","5A3A1E","twirling revolver","bang","Trick shot!","cowboy"},
 	{"size","KLBOKJ","jWX",3,5,3,"22D3EE","F472B6","ruler and two arrows, one pointing up, one down","boing","It matters. Sometimes. In boss fights.","silly"},
 	{"sizzle","KABNOI","K",3,6,1,"FF7043","FFF3E0","bubbling hot shimmer on ground","sizzle","Tssss.","fire,silly"},
-	{"sizzling skillet","BADN2I","KlS",3,3,5,"2A2628","FF8A3C","giant black cast-iron skillet glowing hot","sizzle","Hot, hot, hot! Dance!","kitchen,zone,fire"},
-	{"skate","ABBJEC","STB",2,5,3,"9A8A72","E8E0D4","flat diamond body, thin tail","whoosh","Ray's less pointy cousin.","fish,aquatic,ocean"},
-	{"skate park","EMCNII","UlS",2,1,6,"BDBDBD","7E57C2","concrete ramps and bowls","thud","Ramp up, fly out.","structure,building,sport"},
-	{"skateboard","DMAKHF","UDkg",2,7,2,"F28C28","1A1A1A","flat deck, four tiny wheels, grip tape","clack","Kickflip into battle.","mechanical,vehicle,land,sport"},
-	{"skateboard kickflip","BFBOHL","Dke",4,9,2,"3BB7E8","FFD24A","skateboard dash ending in a kickflip that flings the board","clack","Landed it. On you.","transit,skate,movement"},
 }

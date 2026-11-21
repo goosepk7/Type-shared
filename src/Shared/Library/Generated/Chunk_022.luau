@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robin hood","LGCJNA","Zeb",5,8,4,"15803D","78350F","green hood, feathered cap, longbow","twang","Steals from the rich. Gives to you.","archer,folklore"},
+	{"robo hound","OKCJAA","Qfh",4,7,5,"C4CAD4","FF382C","a chrome robot dog with a red visor that runs and bites","growl","Good boy. Shiny boy. Bitey boy.","scifi,robot,pet"},
+	{"robot","OKCJNA","GfeL",5,4,7,"94A3B8","3B82F6","boxy metal body, antenna, glowing eye visor","beep","Beep boop. Translation: you're in trouble.","robot,mechanical"},
+	{"robot arm","OKCM1I","klf",5,5,7,"E67E22","8E9196","jointed arm with gripper claw","hum","Grab. Lift. Fling.","robot,mechanical"},
 	{"robot arm monster","OKCJFA","lH",4,4,6,"FACC15","1F2937","three-legged bot with giant grabber claw","whir","Claw machine, but it wins.","robot"},
 	{"robot ball","OKBJKF","UDd",2,8,5,"F97316","F8FAFC","rolling sphere robot with dome head","beep","Rolls everywhere. Falls down stairs.","robot,cute"},
 	{"robot bear","OKDJAA","kf",6,4,8,"57534E","FACC15","armored mechanical bear","roar","Hibernates in a charging dock.","robot"},
@@ -236,6 +240,7 @@ return {
 	{"salad","IGBOKI","WF",2,5,3,"7DBE3A","D72B2B","bowl of leaves, tomatoes, croutons","crunch","A bowl of good decisions.","edible,healthy,vegetable"},
 	{"salad bowl","IGBOKI","F",2,5,3,"7DBE3A","D72B2B","wooden bowl of greens","crunch","A whole garden in a bowl.","edible,healthy"},
 	{"salad dressing","IMBLGI","kSO",2,3,2,"E8C04A","7DBE3A","cruet bottle of dressing","squeak","Makes the salad worth eating.","edible,slippery,silly,sauce"},
+	{"salad spinner","OFCN2K","kIP",3,6,3,"7DBE3A","E9EEF2","clear salad spinner bowl full of whirling green leaves","whoosh","Spin dry. Them, mostly.","kitchen,self,spin,area"},
 	{"salak","IGBAKF","Fke",3,6,2,"6B3A1E","F5F2E5","scaly brown teardrop","splat","Fruit wearing snakeskin. Fancy.","edible,fruit,sweet"},
 	{"salamander","AMAJCA","FB",1,3,2,"1E1E24","F2D82A","slick black body, yellow spots","squelch","Wet, spotty and chill.","amphibian,wetland"},
 	{"salami","IMBHJI","kf",3,5,4,"8A1E2E","F2E8D8","marbled red sausage log","bonk","A meat log. Heavy swing.","edible,silly"},
@@ -398,9 +403,4 @@ return {
 	{"scotch bonnet","IABAKK","KeP",6,7,2,"F2A62B","D8302B","squat bonnet-shaped pod","sizzle","A pretty hat full of fire.","edible,spicy,flammable,pepper"},
 	{"scotch egg","IMAAKK","keO",3,7,6,"C8803A","F2D23A","crumbed ball, egg center","bonk","An egg wearing sausage armour.","edible"},
 	{"scottie","AMBJAA","dQf",2,6,2,"1E1E1E","3A3A3A","black wiry terrier, beard","yip","Proud little black terrier.","mammal,pet,cute"},
-	{"scottish fold","AMBJAA","dfT",2,7,2,"B9B3AA","6D665D","round face, ears folded flat","meow","Ears folded for aerodynamics.","mammal,pet,cute"},
-	{"scout","LGBJNA","GQF",3,6,3,"15803D","FACC15","sash of badges, compass, rope","whistle","Prepared for everything.","outdoor"},
-	{"scout car","DMCKHL","Dkeg",4,9,5,"B59B6A","3B3B2F","light open car with a mounted gun","engine","Fast, nosy, and annoying.","mechanical,vehicle,land"},
-	{"scrambled eggs","IGBOKI","jF",2,5,3,"F2D23A","F7E88A","fluffy yellow curd pile","crunch","Eggs in a state of confusion.","edible,healthy,breakfast"},
-	{"scrap heap","MKCNII","SNh",2,1,5,"795548","9E9E9E","towering pile of junk","crowd","One person's trash is another's weapon.","place,silly"},
 }

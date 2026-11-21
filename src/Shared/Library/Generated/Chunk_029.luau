@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"water truck","DBDKHL","DkIeg",5,5,8,"1E88E5","ECEFF1","truck with tank and roof water cannon","splash","Hoses everything down. Hard.","mechanical,vehicle,land"},
+	{"water wave","FBDF6F","kIP",6,6,3,"1565C0","90CAF9","big rolling ocean wave","splash","The sea gives you a big hug.","aquatic"},
+	{"water whip","FBCHJB","fHI",4,7,2,"29B6F6","E1F5FE","curling tendril of water","splash","Wet slap. Extremely wet slap.","aquatic"},
+	{"water wings","BBAONI","B",1,5,1,"E67E22","E67E22","inflatable arm bands","squeak","Floaty power.","toy"},
+	{"waterbed","BBDL0I","UN",1,1,3,"47D7E8","5A3A1E","wobbly bed full of water","thud","Sloshy, wobbly fortress.","furniture,household"},
+	{"waterbuck","AMCJAA","DkB",4,8,4,"8A7A6A","F2F2EE","shaggy antelope with white ring rump","bleat","Has a target on its butt.","mammal,wild"},
 	{"watercress","IGBOMI","WF",2,4,3,"3E8E3A","7DBE5A","small round leaves, thin stems","crunch","Peppery little leaves.","edible,vegetable,healthy"},
 	{"waterfall","MBEFII","kSIN",4,1,7,"4FC3F7","F5F5F5","tall rock with foaming white falls","roar","It never stops. Neither will we.","place,terrain"},
 	{"waterfall cave","MBENII","FZS",3,1,8,"4FC3F7","5D5D5D","cave hidden behind falling water","rumble","Secret base behind the falls.","place,terrain"},
@@ -397,10 +403,4 @@ return {
 	{"zombie shark","AJDJEC","fMB",6,6,5,"65A30D","64748B","rotting shark with exposed ribs","chomp","Smells worse than a normal shark.","undead,aquatic,silly"},
 	{"zombie unicorn","AJDKAA","DMg",5,5,5,"84CC16","F0ABFC","tattered unicorn with green glow","groan","Still sparkly. Sort of.","undead,silly"},
 	{"zombie viking","AJCJNA","DfM",5,4,6,"65A30D","78350F","rotting viking with axe and horned helm","groan","Valhalla rejected him.","undead,norse"},
-	{"zone","MDEN5I","KSIX",6,2,5,"A855F7","38BDF8","closing purple energy ring with a shrinking safe circle","whum","The circle is closing. You are not in it.","gaming"},
-	{"zongzi","IMBAKK","keO",3,7,6,"5E7A3A","F7F4EC","leaf-wrapped pyramid","bonk","A rice pyramid in leaf armour.","edible"},
-	{"zoo","MEENII","dSh",3,1,6,"7CB342","C9A55A","enclosures, paths, animals peeking out","rumble","Opens every cage at once.","place,terrain,silly"},
-	{"zookeeper","LGCJNA","ch",3,5,4,"65A30D","D6A35A","khaki shirt, bucket of fish, keys","whistle","Accidentally left all cages open.","outdoor"},
-	{"zoologist","LGCJNA","ch",3,5,4,"65A30D","D6A35A","khaki, binoculars, notebook","whistle","Knows every animal. Calls them over.","science"},
-	{"zoom","KFBOKB","D",3,10,2,"FFEB3B","FFFFFF","speed lines and blur","zoom","Zoom zoom. Catch me if you can.","speed,silly"},
 }

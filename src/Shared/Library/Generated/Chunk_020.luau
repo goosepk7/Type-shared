@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"piskie","ALAJNB","jY",1,9,1,"A3E635","F472B6","tiny green trickster with glowing trail","giggle","Leads you in circles. Giggles.","fairy"},
+	{"pistachio","IEAAKK","UeO",2,8,5,"9CBA6B","C8A87A","split beige shell, green nut","tok","A nut that smiles at you.","edible,nut"},
+	{"pistachio ice cream","ICBAKJ","JeN",3,5,2,"B8D88A","F2E8C8","pale green scoop","squish","Nutty and cold.","edible,frozen,sweet"},
 	{"pistol","CKBAwI","Te",3,8,3,"2C3539","24262A","compact one-hand blaster","bang","Pew. Small but reliable.","modern,ranged"},
 	{"pistol shrimp","ABAJRA","GEfTeO",4,4,5,"E86A3A","F2C8A8","one giant snapping claw","clack","Snaps so hard it boils water.","crustacean,aquatic,armored"},
 	{"piston","OKCL1I","klI",5,4,7,"8A929B","4A4D52","cylinder with punching rod","hum","Kachunk! Pushed.","mechanical"},
@@ -272,6 +275,7 @@ return {
 	{"pot roast","IGBOKI","F",2,5,3,"8A4A2A","ED9121","braised beef with carrots","crunch","Sunday comfort, slow and tender.","edible,healthy"},
 	{"potato","IEBAKK","keO",3,7,6,"B79257","E8D9A8","lumpy oval, eye dots","bonk","Lumpy, brown, and surprisingly hard.","edible,vegetable"},
 	{"potato cannon","CMCAxI","dke",3,4,3,"F2F2EE","D2B48C","long plastic pipe with chamber","thoomp","Launches dinner at high speed.","silly"},
+	{"potato masher","JECEtI","ElP",3,4,5,"C9CED4","E8D27A","giant steel potato masher with a zigzag head","thump","Lumpy is fine.","kitchen,telegraph,tool,area"},
 	{"potato plant","NGBMMI","CSe",2,1,4,"43A047","C9A55A","leafy mound with spuds underneath","rustle","Dig it up. Throw the spuds.","plant,crop,silly"},
 	{"potato salad","IMBLGI","SNP",2,3,3,"F2E8C0","F2D23A","creamy chunks with egg","gloop","Picnic gold.","edible,sticky"},
 	{"potato skins","IMAELB","eVP",2,7,1,"A87A4A","F2C24A","cheesy bacon potato boats","pitter","Little potato boats of cheese.","edible"},
@@ -399,8 +403,4 @@ return {
 	{"puffball","NJBDOI","jEMP",3,1,2,"F5F5F5","BCAAA4","white round ball that bursts into dust","poof","Poof! Cough cough cough.","plant,fungus"},
 	{"puffbird","AMAJDB","dA",1,7,1,"8A6A4A","F2F2EE","puffy round bird","tweet","Very puffy. Very still.","bird,cute"},
 	{"puffed rice","IMAELB","eVP",2,7,1,"F7F2E0","E8D8A8","tiny puffy grains","pitter","Crunchy air.","edible,sweet,snack"},
-	{"pufferfish","AJBJEC","UdWTMB",3,6,1,"E8D08A","6E5A3A","spiky round balloon fish","splash","Inflates into a spiky balloon. Do not lick.","fish,aquatic"},
-	{"pufferfish pop","AJBOEC","UWT",4,3,5,"E2C36A","F3E9C8","puff up into a spiky ball, then pop","pop","Personal space: enforced.","critter,sea,buff,defense"},
-	{"puffin","ABBJDB","DdAB",2,7,2,"1E1E1E","F2701E","black-white body, rainbow parrot beak","squawk","Holds 10 fish in its beak at once.","bird,ocean,cute"},
-	{"puffin chick","ABAJDB","DAB",1,7,2,"4A4A50","F2F2F0","tiny grey fluffball","squawk","A fluffy sock with a beak.","bird,ocean"},
 }

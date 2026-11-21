@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spelling","KLBALB","jaO",3,6,2,"DC2626","FACC15","scrambled letter tiles with red squiggly underlines","buzz","Speling. Spelking. Splelling. Close enough.","school,meme"},
+	{"spelling bee champ","LLCJNI","je",4,5,3,"FACC15","1D4ED8","kid at a mic with a trophy","ding","Can spell any word. Including your doom.","school"},
+	{"spelunker","LECJNA","Cc",3,5,4,"F97316","57534E","headlamp, rope, helmet","clank","Goes deep. Comes back dusty.","explorer"},
+	{"sperm whale","ABFJEC","kfIOB",8,3,9,"4A4E56","8E949C","huge boxy head, small jaw with teeth","whalesong","Fights giant squid in the deep dark.","mammal,aquatic,ocean,heavy"},
+	{"spetum","CKDAuI","fTH",5,5,5,"8A929B","5A3A1E","three-point polearm head","whoosh","Points for days.","medieval,sharp"},
+	{"sphere","BLBG3J","URa",3,6,5,"22D3EE","E0F2FE","flawless shiny cyan ball with one highlight","hum","No edges. No weaknesses. No personality.","school,shape"},
 	{"sphinx","AHDJAA","GjO",6,4,8,"D6A35A","1E3A8A","lion body, headdress, folded wings","roar","Answer the riddle or lose the turn.","mythical,ancient,guardian"},
 	{"sphinx cat","AMBJAA","jd",2,6,2,"D6A35A","FDE68A","small cat with pharaoh headdress","meow","Asks small riddles. Accepts treats.","silly,cute"},
 	{"sphinx queen","AHEJAA","GjO",8,3,9,"D6A35A","1E3A8A","giant stone sphinx with golden headdress","roar","Riddle me this: why'd you summon me?","mythical,ancient,guardian"},
@@ -397,10 +403,4 @@ return {
 	{"studio","MHDNlI","jdh",4,1,5,"374151","EF4444","warehouse with spotlights, cameras and an ON AIR sign","clack","Quiet on set! That includes screaming.","art,movie,building"},
 	{"stuff","BMCELB","jPO",3,5,3,"F59E0B","8B5CF6","random falling junk: boot, lamp, fish, trophy, sock","clatter","What stuff? All of it. Incoming.","silly"},
 	{"stuffed animal","BMBJAA","dc",1,3,2,"F06292","F3E6C8","floppy plush creature","squeak","Fluffy reinforcements.","toy,cute"},
-	{"stuffed mushrooms","IMAELB","eVP",2,7,1,"C8A880","7DBE3A","caps filled with herbs","pitter","Little cups of savory.","edible"},
-	{"stuffed pepper","IGBOKI","F",2,5,3,"D72B2B","F2E8C8","bell pepper with rice filling","crunch","A pepper with a full belly.","edible,healthy,pepper"},
-	{"stuffing","BMBDOJ","UFN",1,4,2,"FFFFFF","FDE68A","puffs of white fluff bursting from a split seam","puff","Teddy had a little accident.","soft,toy"},
-	{"stump","NGBCMI","GS",1,1,7,"8D6E63","C0A060","cut trunk with rings on top","rustle","It has been through a lot.","plant,tree,silly"},
-	{"stun","KDBAKB","O",3,9,1,"FFF176","FFFFFF","spinning stars around target's head","bonk","Seeing stars. Not the pretty kind.","silly"},
-	{"stun gun","CDBAwI","feLO",2,8,3,"24262A","F1C40F","small pistol with two prongs","zap","Bzzzt. Nap time.","electric"},
 }

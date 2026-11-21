@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paddle boat","DBBKHC","DkgB",2,3,3,"F5F5F5","FFB300","swan-shaped boat with pedal wheel","splash","The swan is judging you.","silly,cute"},
+	{"paddle steamer","DBEKHC","DkgB",5,4,7,"F5F5F5","C62828","white boat, twin chimneys, big rear paddle wheel","whistle","Slow, steamy, and full of jazz.","vehicle,aquatic"},
+	{"paddleboard","DBAKHC","DkgB",2,5,2,"26C6DA","F5F5F5","long flat board, single paddle","splash","Stand tall. Wobble a lot.","vehicle,aquatic,sport"},
 	{"paddlefish","ABCJEC","DfB",4,7,4,"6A7A8A","C8D0D8","long paddle-shaped snout","splash","Swims with a canoe paddle on its face.","fish,aquatic"},
 	{"pademelon","AMBJAG","Uf",2,6,2,"8A6A4A","C8A07A","small round forest wallaby","chirp","Sounds like a melon. Isn't one.","mammal,marsupial"},
 	{"padlock","BKALJK","GO",1,3,7,"B58A3A","8A929B","heavy padlock with shackle","clank","Click. No entry.","tool"},
@@ -400,7 +403,4 @@ return {
 	{"pirate queen","LBCJNA","ebh",6,6,5,"7F1D1D","FACC15","crowned pirate with twin cutlasses","arr","Rules the seven seas. And snacks.","pirate,royal"},
 	{"pirate ship","DBEMHC","EkegB",7,5,8,"3E2723","1A1A1A","wooden galleon, black sails, skull flag, cannons","cannon","Arr! Broadside incoming!","vehicle,aquatic,pirate"},
 	{"pisces","MBCEKJ","eV",5,5,5,"FFFFFF","4DD0E1","two star fish tied by a ribbon","rumble","Two starry fish. Very slippery.","space,zodiac"},
-	{"piskie","ALAJNB","jY",1,9,1,"A3E635","F472B6","tiny green trickster with glowing trail","giggle","Leads you in circles. Giggles.","fairy"},
-	{"pistachio","IEAAKK","UeO",2,8,5,"9CBA6B","C8A87A","split beige shell, green nut","tok","A nut that smiles at you.","edible,nut"},
-	{"pistachio ice cream","ICBAKJ","JeN",3,5,2,"B8D88A","F2E8C8","pale green scoop","squish","Nutty and cold.","edible,frozen,sweet"},
 }

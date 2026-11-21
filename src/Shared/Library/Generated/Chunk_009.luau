@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
+	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
 	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
 	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
@@ -401,6 +403,4 @@ return {
 	{"fishman","ABCJNA","fB",4,6,4,"0F766E","A3E635","bulgy-eyed fish-headed humanoid","splash","Smells exactly how you think.","aquatic,spooky"},
 	{"fishmonger","LBCJNA","dk",3,4,4,"0EA5E9","F8FAFC","apron, giant fish in hand","splat","Slaps you with a trout.","silly"},
 	{"fissure","HEDLII","THO",6,4,5,"4A3726","FF6A2B","zigzag ground split with glowing depths","crack","Mind the gap. Seriously.","natural"},
-	{"fist","KMBAKB","kf",4,9,3,"FFCC80","FFFFFF","glowing knuckle impact","pow","Five fingers. One message.","melee"},
-	{"five spice","IFBDOJ","jPO",2,5,1,"8A4A2A","C8803A","brown spice heap","puff","Five spices, one punch.","edible,spice"},
 }

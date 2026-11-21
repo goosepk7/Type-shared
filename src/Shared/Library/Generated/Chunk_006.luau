@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"city wall","EEECII","GS",3,1,10,"BCAAA4","8D6E63","long high wall with walkway and towers","thud","The whole town hides behind this.","structure,defense,ancient"},
 	{"civet","AMBJAA","CfM",2,5,3,"8A8070","1E1E1E","spotted, banded tail, masked face","squeak","Smells musky. Proudly.","mammal,wild"},
 	{"civilization","MEFNqI","GWSh",8,1,9,"D6C6A8","3B82F6","sprawl growing from huts to towers to rockets in a blink","crowd","From mud huts to moon rockets. One more turn.","place,ancient"},
 	{"claidheamh","CKDHJK","kf",7,4,6,"8A929B","2E5E3E","basket-hilt broadsword","shing","Big sword with tartan pride.","fantasy,sharp"},
@@ -402,5 +403,4 @@ return {
 	{"crank","OKBLJK","lH",2,3,6,"5B6168","B89B6A","drum with crank handle and rope","clank","Wind it in, slow and steady.","tool"},
 	{"crappie","ABBJEC","dB",2,6,1,"8A9A8A","3A3A3A","speckled panfish","splash","Speckled and snacky.","fish,aquatic"},
 	{"crash","KMCAKB","kO",5,8,3,"90A4AE","FFCC80","tumbling impact with debris","crash","Wham. Everything everywhere.","silly"},
-	{"crate","BMCC2I","Gk",2,1,6,"8B5A2B","D2B48C","nailed wooden slat crate","thud","Smashable. Stackable. Loot inside.","container"},
 }

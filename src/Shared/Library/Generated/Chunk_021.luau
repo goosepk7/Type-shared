@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pufferfish","AJBJEC","UdWTMB",3,6,1,"E8D08A","6E5A3A","spiky round balloon fish","splash","Inflates into a spiky balloon. Do not lick.","fish,aquatic"},
+	{"pufferfish pop","AJBOEC","UWT",4,3,5,"E2C36A","F3E9C8","puff up into a spiky ball, then pop","pop","Personal space: enforced.","critter,sea,buff,defense"},
+	{"puffin","ABBJDB","DdAB",2,7,2,"1E1E1E","F2701E","black-white body, rainbow parrot beak","squawk","Holds 10 fish in its beak at once.","bird,ocean,cute"},
+	{"puffin chick","ABAJDB","DAB",1,7,2,"4A4A50","F2F2F0","tiny grey fluffball","squawk","A fluffy sock with a beak.","bird,ocean"},
 	{"pug","AMBJAA","dQf",2,6,2,"D9C2A0","2B2420","squished black face, curly tail, wrinkles","yip","Snorts like a tiny tractor.","mammal,pet,cute,silly"},
 	{"puli","AMCJAA","DjQf",4,7,4,"1E1E1E","3A3A3A","dreadlock corded coat","bark","A mop that barks.","mammal,pet"},
 	{"pull","KLCBKI","H",4,7,2,"B388FF","FFFFFF","glowing tether dragging target in","whum","Come here, you.","force"},
@@ -399,8 +403,4 @@ return {
 	{"robber fly","AMAJFB","dAfTP",1,6,1,"6A5A44","C8A07A","bristly fly with beard","buzz","Bearded hunter. Catches wasps.","insect"},
 	{"robe","BLCONI","F",1,5,2,"1F2F55","D4A72C","long star-patterned robe","swish","Comfy. Mystical. Pocketless.","clothing,magic"},
 	{"robin","AMAJDB","dA",1,7,1,"6E5A4A","E8601E","round grey-brown bird with red breast","tweet","Wears a red vest every day.","bird,cute"},
-	{"robin hood","LGCJNA","Zeb",5,8,4,"15803D","78350F","green hood, feathered cap, longbow","twang","Steals from the rich. Gives to you.","archer,folklore"},
-	{"robo hound","OKCJAA","Qfh",4,7,5,"C4CAD4","FF382C","a chrome robot dog with a red visor that runs and bites","growl","Good boy. Shiny boy. Bitey boy.","scifi,robot,pet"},
-	{"robot","OKCJNA","GfeL",5,4,7,"94A3B8","3B82F6","boxy metal body, antenna, glowing eye visor","beep","Beep boop. Translation: you're in trouble.","robot,mechanical"},
-	{"robot arm","OKCM1I","klf",5,5,7,"E67E22","8E9196","jointed arm with gripper claw","hum","Grab. Lift. Fling.","robot,mechanical"},
 }

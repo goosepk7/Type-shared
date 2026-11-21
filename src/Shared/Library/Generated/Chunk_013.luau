@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hercules beetle","AMBJFA","Gklf",3,3,6,"C8B87A","1E1E1E","giant beetle with massive horn","click","Strongest bug. Named accordingly.","insect,armored"},
+	{"herd","AEEFLA","DkIP",7,7,7,"8B5A2B","E8D2B0","wide wave of galloping hooves and horns in dust","rumble","One got spooked. Now it is everyone's problem.","farm,wild,swarm"},
 	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
 	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
 	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
@@ -124,6 +126,7 @@ return {
 	{"honey mango","IGBAKF","Fke",3,6,2,"F2C24A","F7D86A","small golden kidney mango","splat","Buttery and golden.","edible,fruit,sweet"},
 	{"honey mustard","IMBNGI","SNP",2,4,1,"E8B02B","F2D870","golden creamy dip","splat","Sweet and zingy.","edible,sauce"},
 	{"honey possum","AMAJAA","Uf",1,6,2,"8A6A4A","C8A07A","tiny striped nectar-eater","chirp","Long tongue. Lives on flowers.","mammal,marsupial"},
+	{"honey pot","IMCN2I","SeN",3,3,4,"E8A317","8A5A2E","round clay honey pot with a wooden dipper","gloop","Sweet, sticky, stuck.","kitchen,zone,sticky,edible,sweet"},
 	{"honey roasted peanuts","IMAELB","eVP",2,7,1,"C9A06A","E8A317","golden glazed nuts","pitter","Sweet, salty, sticky.","edible,sweet"},
 	{"honey trap","OGCL1I","cNO",2,1,3,"D4A72C","7A4E2D","puddle of sticky golden goo","clank","Sweet. Sticky. Stuck.","trap,sticky"},
 	{"honey tree","NGCCMI","ScN",2,1,5,"FFB300","8D6E63","tree dripping golden honey","chime","Sticky sweet. Everyone gets stuck.","plant,magic,mythical,sweet"},
@@ -400,7 +403,4 @@ return {
 	{"imp swarm","AACJLB","KAPb",5,9,3,"DC2626","1F2937","cloud of giggling red imps","cackle","Mischief, multiplied.","imp,swarm"},
 	{"impala","AMCJAA","UDk",4,9,4,"C88A4A","F2EEE6","lyre horns, leaps 10 feet high","bleat","Jumps like it's late for something.","mammal,wild"},
 	{"impatiens","NGBNMI","dEFS",1,1,2,"F06292","FFFFFF","bushy little flat blooms","rustle","Seed pods explode when touched. Pop!","plant,flower"},
-	{"implode","KIDGKI","EHO",7,6,1,"1A0033","B388FF","everything crumpling into a dark point","whum","Explosion, but backwards.","space,explosive"},
-	{"impostor","LICJNA","jZb",4,6,4,"DC2626","F8FAFC","teammate shape with a suspicious smile","whisper","Kinda sus. Definitely sus.","meme,villain"},
-	{"imprison","KLCLII","GO",6,4,6,"546E7A","FFD54F","glowing bars slamming down around target","clank","Go directly to jail.","magic"},
 }

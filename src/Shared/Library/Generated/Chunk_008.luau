@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dinosaur costume kid","LMBJNA","Dd",2,7,3,"15803D","F97316","kid in inflatable dinosaur suit","roar","Stomps. Rawrs. Trips.","cute,silly"},
 	{"dinosaur egg","AMBJKI","Wh",2,4,4,"D8C8A8","8A7A5A","big speckled egg, cracking open","growl","Something inside is getting impatient.","extinct,ancient,dinosaur"},
 	{"dip","IMBL2I","ScN",2,1,2,"F5F0DC","84CC16","bowl of creamy dip with one broken chip stuck in","gloop","Double dippers will be prosecuted.","edible,sauce,sticky"},
 	{"diplodocus","AMFJAA","kIO",8,2,9,"8A8A6A","C8C0A0","very long neck, very long whip tail","rumble","Longer than three buses.","dinosaur,extinct,reptile,heavy"},
@@ -26,6 +27,7 @@ return {
 	{"disguise","KLBOKI","jZ",2,4,2,"8D6E63","FFE0B2","fake mustache and hat poof","poof","Nobody will ever guess.","stealth,silly"},
 	{"dish","BMBA3K","UEe",3,7,1,"F8FAFC","60A5FA","spinning white plate with a blue rim","crash","It is your turn to do them. Throw instead.","household,kitchen"},
 	{"dish rack","BMBCII","G",1,1,3,"C9CED4","F2F2EE","wire rack full of plates","clang","Clatter barrier.","kitchen,household"},
+	{"dish soap","BBCGKJ","lSe",2,2,3,"7FD3E8","F2FBFF","squeezy bottle of dish soap blowing big bubbles","pop","Squeaky clean. Pop.","kitchen,projectile,bubbles,household"},
 	{"dishwasher","BBCLII","FV",1,1,6,"C9CED4","24262A","box with racks and spray arms","clang","Swish swash. Spotless.","kitchen,household"},
 	{"disintegrate","FLDBKI","iTe",8,8,1,"76FF03","EEFF41","green beam that turns targets to sparkly dust","hum","Turns things into very small things.","magic"},
 	{"disintegrator","CJCBwI","iTe",8,6,3,"DDE3E8","8BC34A","green-glow ray with skeleton dial","zap","Turns foes into a fine dust.","scifi,ranged"},
@@ -401,6 +403,4 @@ return {
 	{"ember storm","FADEOJ","KP",6,6,2,"FF6E40","FFCCBC","swirling sky full of glowing embers","crackle","Sparkly, but in a burny way.","fire,storm"},
 	{"ember tiger","KADHKI","KDkf",9,6,3,"FF6A1A","FFD27A","leaping flame cleave; a fire tiger head rears up","whoosh","Set your heart ablaze.","anime,sword,fire,breathing"},
 	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
-	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
-	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 }
