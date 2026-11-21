@@ -362,7 +362,7 @@ return {
 	{"hedge","NGCCMI","GZS",2,1,6,"2E7D32","1B5E20","tidy rectangular green bush","rustle","Neat, tidy, perfectly in the way.","plant"},
 	{"hedge fortress","NGECMI","GWFS",4,1,7,"2E7D32","1B5E20","castle shaped from clipped hedges","rustle","A castle you water.","plant"},
 	{"hedge maze","MGENII","jSN",3,1,7,"2E7D32","1B5E20","tall square hedges in winding paths","rumble","Left. Right. Left. Lost.","place,terrain,plant"},
-	{"hedge trimmer","OKCHJK","fV",4,6,4,"F1C40F","24262A","long toothed vibrating bar","whirr","Bzzzzt. Neat edges.","tool,garden"},
+	{"hedge trimmer","OKCHJK","fV",4,6,4,"F08C28","C8CED6","orange trimmer with a long toothed bar","whirr","Bzzzzt. Neat edges.","household,garden,tool"},
 	{"hedge witch","LGCJNA","WFM",4,5,4,"365314","FDE68A","mossy shawl, herb basket, crooked staff","cackle","Has a potion for that. And that.","magic,plant"},
 	{"hedgehog","AMAJAF","GCfT",1,5,4,"8A7460","F2E6D2","round spiky ball, tiny snout","squeak","Rolls into a spiky ball. Unbeatable.","mammal,wild,cute"},
 	{"hedgehog cactus","NEBLMI","GST",3,1,6,"66BB6A","E91E63","clump of round spiny heads","thud","Spiky ball family.","plant,desert,sharp,cute"},

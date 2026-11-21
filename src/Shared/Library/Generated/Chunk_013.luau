@@ -15,7 +15,7 @@ return {
 	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
 	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
 	{"hibiscus","NGBNMI","dFS",2,1,2,"E91E63","FFEB3B","huge trumpet bloom, long stamen","rustle","Tropical vibes only.","plant,flower"},
-	{"hiccup","KMAOKG","jY",1,8,1,"F8BBD0","FFFFFF","tiny hopping bubble","hic","Hic! Random teleport.","silly"},
+	{"hiccups","KMAAKG","jle",2,7,2,"F8BBD0","FFFFFF","a pink hiccup bubble that makes its target hop","hic","Hic! Hic! HIC!","goofy,silly,status"},
 	{"hickory","NGDCMI","GWkS",4,1,8,"795548","8BC34A","tall shaggy-bark tree","rustle","Shaggy bark, tough wood.","plant,tree"},
 	{"hide","KIBOKI","Z",1,5,3,"78909C","ECEFF1","caster blending into the background","hush","Shh. I am a bush.","stealth,silly"},
 	{"hide and seek","KIBOKI","ZY",1,6,2,"8D6E63","FFFFFF","caster vanishing behind sparkles","giggle","Ready or not, here I... where'd I go?","silly,stealth"},

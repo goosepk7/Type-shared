@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paint scraper","JKAHrK","f",1,7,3,"8A929B","2F6FD1","flat scraping blade","clank","Scrape, scrape, done.","tool"},
+	{"paint splash","KMBFOB","jd",2,7,1,"FF4081","00E5FF","rainbow paint splatter wave","splat","Now everything's colourful.","silly"},
 	{"paint sprayer","JKBFwK","je",2,6,3,"8E9196","F2F2EE","pistol with paint cup","clank","Coats everything. Everything.","tool"},
 	{"paint thinner","BJADJK","M",2,5,1,"BFE6F2","F1C40F","tin with a skull warning","clink","Smells terrible. Is terrible.","hardware"},
 	{"paint tunnel","BMDCnI","GSO",3,1,4,"E8DCC0","2A2A36","a canvas wall with a painted tunnel mouth","splat","Looks like a way through. Isn't.","cartoon,silly,trap"},
@@ -192,6 +194,7 @@ return {
 	{"pekingese","AMBJAA","dQf",2,6,2,"E8B87A","F2E0C0","flat face, lion mane fluff","yip","Tiny lion. Huge ego.","mammal,pet,cute"},
 	{"pelagornis","ABDJDB","DAlB",6,7,2,"8A8A8E","F2F2EE","giant seabird with tooth-like beak","squawk","Biggest flying bird ever.","bird,ocean,extinct"},
 	{"pelican","ABCJDB","DAHB",4,7,2,"F2F2EE","F2A03A","giant throat pouch bill","squawk","Its mouth is also its fishing net.","bird,ocean"},
+	{"pelican drop","ABCNDB","AP",4,7,2,"F4F1EA","3E6E9C","a pelican drops fish along a marked line","squawk","Delivery for you. It's fish.","critter,bird,zone"},
 	{"pelican spider","AJBJQA","fTMN",2,6,2,"8A4A2A","C8A07A","long neck jaws","skitter","Long neck. Hunts other spiders.","arachnid,spooky,venomous"},
 	{"pelmeni","IMAELB","Fe",2,7,1,"F2EAD5","C8A070","small round meat dumplings","pitter","Siberian dumplings for cold nights.","edible"},
 	{"pen","BMAAJK","Te",1,8,1,"2F6FD1","F2F2EE","click pen with clip","tap","Mightier than the sword. Allegedly.","school,office"},
@@ -400,7 +403,4 @@ return {
 	{"pitcher plant","NJCLMI","ScMH",4,1,4,"9CCC65","B71C1C","tall slippery tube with a lid","chomp","Slide in. Do not slide out.","plant,carnivorous"},
 	{"pitchfork","CKCAuI","lfT",3,5,4,"8A929B","8B5A2B","three long tines on a pole","whoosh","Angry mob not included.","farm"},
 	{"pitching machine","OMCMwI","keh",3,7,5,"2F7D6B","F2EBDD","tripod ball launcher with a hopper and twin wheels","hum","Strike one. Strike two. Duck.","sport,baseball,turret"},
-	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
-	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
-	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
 }

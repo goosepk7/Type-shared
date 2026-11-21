@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skeleton warrior","AICJNA","GfV",5,5,5,"F5F5F4","57534E","skeleton in rusty armor with shield","rattle","Reassembles after every hit.","undead"},
+	{"sketchbook","BLBOyE","Gjh",3,4,3,"111827","F5F5F0","spiral pad whose doodles peel off the page and walk","scratch","Page one: dragon. Page two: better dragon.","art,school"},
+	{"ski jump","BCCOIB","DlN",4,9,2,"F4F8FC","1E6FD0","snow ramp launching a skier into a powder landing","whoosh","Send it.","sport,ski,mobility,ice"},
+	{"ski lift","DCCKHJ","lg",2,3,4,"1565C0","B0BEC5","row of chairs hanging from a cable","engine","Up the mountain, legs dangling.","mechanical,vehicle,land"},
 	{"ski patrol","LCCJNL","DJF",3,8,5,"DC2626","F8FAFC","red jacket with cross, skis","whoosh","Zooms to the rescue downhill.","rescue,frozen"},
 	{"ski pole","BMBAJI","fT",1,7,3,"C9CED4","24262A","thin pole with little basket tip","bonk","Pokes snow. Pokes foes.","sport,winter"},
 	{"ski slope","MCENII","SIN",3,1,6,"F5F5F5","1E88E5","snowy slope with flags","rumble","Wheeee. Everyone goes downhill fast.","place,terrain,sport"},
@@ -89,8 +93,8 @@ return {
 	{"slope","MEDNnI","DIN",4,1,7,"8B6B4A","E0F2FE","steep tilted ground with a runaway shopping trolley","whee","Slippery. Capital S. Capital WHEEE.","terrain"},
 	{"sloppy joe","IMBLGI","jcN",2,3,3,"A8402B","D9A04A","bun overflowing with saucy meat","gloop","Messy. Very messy. On purpose.","edible,sticky"},
 	{"slot machine","OKCM1I","jc",2,1,5,"C0392B","D4A72C","lever cabinet with spinning reels","clank","Jackpot? Bonk.","game"},
-	{"sloth","AMCJAA","fN",2,1,3,"9A8A6E","D8C8A8","long claws, hanging upside down","squeak","Takes a month to digest a leaf.","mammal,wild,silly"},
 	{"sloth bear","AMDJAA","Dkf",6,5,7,"2A2420","E6DED2","shaggy black bear, pale snout","roar","Vacuums up termites. Messy eater.","mammal,predator,wild"},
+	{"sloth hug","AMCAAA","fN",2,2,3,"8A7458","E8DCC2","a sloth lands on an enemy and clings on","yawn","It will let go. Eventually.","critter,mammal,bolt,slow"},
 	{"slow","KLBAKB","eN",3,7,1,"90CAF9","E1F5FE","wobbly blue ripple on target","wub","Hurry up. Oh wait, you cannot.","time"},
 	{"slow and steady","KEBOKA","GF",1,1,7,"8D6E63","A5D6A7","calm green shell glow","plod","Wins the race. Eventually.","silly"},
 	{"slow field","KLDNOI","SN",4,2,4,"90CAF9","E1F5FE","blue dome where everything drags","wub","Molasses mode, engaged.","time"},
@@ -134,6 +138,7 @@ return {
 	{"snail","AMAJGI","GSN",1,1,6,"A86A3A","E8C8A0","spiral shell, slimy foot, eye stalks","squelch","Speed: yes. Very little of it.","mollusk,aquatic,garden"},
 	{"snail kite","AMBJDB","DAfT",3,9,3,"3A3A44","E8301E","hooked beak for snails","screech","Only eats snails. Picky.","bird,predator"},
 	{"snail mobile","DMBKHL","GgN",2,1,6,"FFB300","8D6E63","car under a big spiral shell","engine","The slowest ride ever. Very safe.","vehicle,silly"},
+	{"snail trail","ABANGI","SN",3,1,5,"C98A4B","B8C08A","a snail leaves a slowing slime trail","squelch","Speed: yes, eventually.","critter,zone,slow"},
 	{"snake","AMCJCD","fMN",4,6,3,"4A7A3A","C8B860","long coiled body, forked tongue","hiss","Hugs without arms. Hisses hello.","reptile,venomous"},
 	{"snake charmer","LJCJNI","cOh",3,4,3,"F59E0B","15803D","flute and basket with a dancing snake","flute","Plays a tune. Snakes appear.","music"},
 	{"snake in a can","CMALJK","jO",1,1,2,"2E8B57","C0392B","can with springing fabric snakes","boing","BOING! Ahhh!","prank,silly"},
@@ -398,9 +403,4 @@ return {
 	{"spike","CKBLII","STO",4,1,7,"9CA3AF","4B5563","row of sharp steel cones popping up from a floor plate","shing","Every platformer's favourite surprise.","trap,sharp,gaming"},
 	{"spike bomb","CACGKF","ETV",7,4,2,"3A3F45","E67E22","bomb studded with spikes","boom","Explodes. Then pokes.","explosive"},
 	{"spike chain","EKCL3K","kSR",6,6,7,"3A3D45","C9CED6","spiked iron ball on a chain sweeping round a post","whoosh","Mind the swing.","game,platformer,hazard"},
-	{"spike corridor","MKCLII","STN",5,1,7,"616161","9E9E9E","stone hall with spikes in walls","echo","Run. Dodge. Run some more.","place,adventure,sharp"},
-	{"spike launcher","OKCMwI","TeV",5,6,5,"3A3F45","8A929B","turret spraying metal spikes","clank","A porcupine with a grudge.","defense,mechanical"},
-	{"spike pit","EECLII","ZSTO",5,1,6,"5D4037","9E9E9E","hidden hole lined with sharp stakes","thud","Mind the gap. Mind the pointy bits.","structure,defense,sharp"},
-	{"spike roller","OKDL1F","DkT",6,4,7,"3A3F45","5B6168","spiked log rolling down a ramp","clank","Rolls in. Pokes everyone.","defense,mechanical"},
-	{"spike strip","BKDLII","TN",4,1,5,"3A3F45","F1C40F","long strip of road spikes","snap","Pop goes every tyre.","trap,defense"},
 }
