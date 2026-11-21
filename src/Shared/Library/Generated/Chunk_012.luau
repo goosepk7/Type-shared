@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
 	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
 	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
 	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
@@ -402,5 +403,4 @@ return {
 	{"herd","AEEFLA","DkIP",7,7,7,"8B5A2B","E8D2B0","wide wave of galloping hooves and horns in dust","rumble","One got spooked. Now it is everyone's problem.","farm,wild,swarm"},
 	{"here","KLBOKB","cHY",2,8,1,"EF4444","FFFFFF","red YOU ARE HERE map pin dropping from above","ding","You are here. So is it. Awkward.","silly"},
 	{"hermes","LFCJNB","DAbY",6,10,4,"F8FAFC","FACC15","slim runner, winged sandals, winged cap, snake staff","zoom","Delivery in zero seconds or your prayers back.","mythical,greek,speed"},
-	{"hermit","LGCJNA","FZ",3,3,4,"78716C","65A30D","ragged robe, walking stick, long beard","sigh","Lives in a cave. Likes it.","outdoor"},
 }

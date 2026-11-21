@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"musketeer","LKCJNA","fTe",5,7,4,"1D4ED8","F8FAFC","feathered hat, rapier, blue tabard","bang","All for one. One for snacks.","warrior"},
 	{"muskrat","ABAJAA","CdbB",1,6,1,"6A4A2A","A88A6A","water rat with flat tail","squeak","Swims, builds huts, smells musky.","mammal,cute"},
 	{"mussel","ABAJGI","GNP",1,1,6,"2A2E3A","8A7AA8","blue-black long shells","squelch","Strong mussels. Get it?","mollusk,aquatic"},
 	{"mustache","BMBADB","Ujd",2,7,2,"2C1B10","4A2F1B","curly handlebar mustache flapping like wings","twang","Instantly 40% more distinguished.","body,silly,meme"},
@@ -17,7 +18,7 @@ return {
 	{"mynah","AMAJDB","jdA",1,7,1,"1E1E1E","F2C82A","black bird, yellow face patch","tweet","Talks more than a parrot.","bird,cute"},
 	{"myrtle","NGCCMI","GWkS",2,1,5,"8D6E63","E91E63","smooth bark, frilly pink flowers","rustle","Frilly. Fierce.","plant,tree"},
 	{"mystery meat","IJBG7G","UjE",4,5,3,"8A6A6A","B9D36A","wobbly grey meatloaf that does something random","splat","Nobody knows. Nobody asks.","goofy,gross,food,random"},
-	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
+	{"mystery stew","IJBE7K","eNP",2,5,2,"7A8A3A","8A5A3A","a ladle flinging lumpy greenish stew blobs","splat","Today's special. Don't ask.","goofy,gross,silly,lunch"},
 	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
 	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
 	{"naan","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","teardrop flatbread, char spots","whoosh","Fluffy, blistered, perfect for scooping.","edible"},
@@ -402,5 +403,4 @@ return {
 	{"paddlefish","ABCJEC","DfB",4,7,4,"6A7A8A","C8D0D8","long paddle-shaped snout","splash","Swims with a canoe paddle on its face.","fish,aquatic"},
 	{"pademelon","AMBJAG","Uf",2,6,2,"8A6A4A","C8A07A","small round forest wallaby","chirp","Sounds like a melon. Isn't one.","mammal,marsupial"},
 	{"padlock","BKALJK","GO",1,3,7,"B58A3A","8A929B","heavy padlock with shackle","clank","Click. No entry.","tool"},
-	{"paella","IACELB","KFeP",2,6,1,"E8A02B","C8302B","wide pan of saffron rice, seafood","pitter","A giant pan of golden rice.","edible,grain"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"flagpole","EMCNII","FS",1,1,4,"B0BEC5","E53935","tall pole with a waving flag","thud","Plant the flag. Claim the ground.","structure,silly"},
 	{"flail","CKCHtK","kfVO",6,4,5,"5B6168","8B5A2B","spiked ball on chain and handle","bonk","Swing. Spin. Hope.","medieval,heavy"},
 	{"flak cannon","CKDMxI","EeV",7,6,6,"6B7B3A","3A3F45","anti-air cannon with twin barrels","zap","Fills the sky with pops.","scifi,ranged"},
 	{"flak tower","EKEMII","GEe",7,1,9,"9E9E9E","37474F","massive concrete tower bristling with guns","thud","Anything flying? Not for long.","structure,defense,tower"},
@@ -402,5 +403,4 @@ return {
 	{"gaucho","LECKNA","DHg",5,7,5,"7C2D12","F5F5F4","wide hat, poncho, bolas","yeehaw","Lassos with style. And rocks.","western"},
 	{"gauntlet","CKBHJK","Gkf",4,6,6,"8A929B","6B4226","armoured plated glove","bonk","Slaps with authority.","medieval,armor"},
 	{"gaur","AMDJAA","DkO",7,4,7,"2A2018","F2E6C8","towering black bull, white socks","moo","Biggest wild cattle. Wears socks.","mammal,heavy"},
-	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
 }

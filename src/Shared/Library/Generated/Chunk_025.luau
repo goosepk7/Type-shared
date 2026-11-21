@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sphynx cat","AMBJAA","dfT",2,7,2,"E9C2B0","C99A88","hairless wrinkly body, giant ears","meow","Forgot its sweater. Always.","mammal,pet,cute"},
+	{"spice","IAADOJ","KjP",3,5,1,"C2410C","FACC15","puff of red-orange powder from a shaker","puff","A little kick. Then a big one.","edible,spicy"},
 	{"spicy challenge","IABAKK","KjP",6,7,2,"D8202B","F2862B","flaming bowl with warning label","sizzle","Accept the challenge. Breathe fire.","edible,spicy,flammable"},
 	{"spicy noodles","IABAKK","KHN",5,7,2,"D8202B","F2C24A","red tangled noodles, steam","sizzle","The noodle challenge. Few survive.","edible,spicy,flammable"},
 	{"spider","AJBJQA","fMeN",2,6,2,"2A2420","8A6A4A","eight legs, round body, many eyes","skitter","Eight legs, eight eyes, zero chill.","arachnid,spooky,venomous"},
@@ -59,6 +61,7 @@ return {
 	{"spirit medium","LLCJNI","jh",4,4,3,"7C3AED","E0F2FE","candles, scarf, crystal pendant","whisper","Talks to ghosts. Ghosts talk back.","spooky,magic"},
 	{"spirit whale","ALFJEB","AFk",8,2,8,"1E3A8A","A5F3FC","translucent whale swimming through sky","whale","A whale that swims in the clouds.","spirit,giant,cosmic"},
 	{"spit","KBBAKB","de",1,9,1,"B3E5FC","FFFFFF","small glob arc","ptoo","Ptooey! Gross, but effective.","silly,gross"},
+	{"spit take","KBBDOI","INP",2,8,1,"FF9800","B3E5FC","a surprised gasp and a big spray of juice","pfft","PFFFT! You did NOT just say that.","goofy,gross,silly,spray"},
 	{"spitball","CBAAKK","eN",2,9,1,"F2F2EE","E85D75","three soggy paper wads blown through a bendy straw","boing","Gross. Effective.","goofy,gross,silly,prank"},
 	{"spitting cobra","AMCJCD","jfMeN",4,6,3,"6A5440","E8C88A","hooded snake spitting venom","hiss","Aims for the eyes. Accurate too.","reptile,venomous"},
 	{"spitting spider","AJBJQA","fMeN",2,6,2,"E8D0A0","1E1E1E","spotted spider spitting glue","skitter","Spits sticky glue.","arachnid,spooky,venomous"},
@@ -368,7 +371,7 @@ return {
 	{"street sweeper","OFDFeL","kfI",4,3,5,"F28A2E","FFF1D6","an orange street sweeper truck with spinning side brushes","swish","Sweeps the arena clean. Including you.","transit,sweep,silly"},
 	{"strength","KECOKI","Wkf",4,4,5,"FF7043","FFE0B2","bulging glowing muscle aura","grunt","Lift with your legs. And the spell.","strength"},
 	{"strength potion","BLAO2I","Wk",4,5,1,"E67E22","BFE6F2","chunky flask of orange goo","bubble","Hulk out for a bit.","magic,fantasy"},
-	{"stress ball","BMAA3F","Ue",1,7,1,"F1C40F","E67E22","squishy foam ball","bonk","Squeeze it. Throw it.","toy,silly"},
+	{"stress ball","BMAAKF","Ue",2,7,1,"F4C430","E67E22","a squishy smiley foam ball that bounces between foes","bonk","Squeeze it. Throw it. Bonk.","goofy,silly,toy,bounce"},
 	{"stretch","KMCOKI","Wf",3,5,3,"FFB74D","FFFFFF","rubbery long limbs","boing","Rubber arms. Long reach.","silly"},
 	{"stretcher","BMDOII","F",1,2,4,"F2F2EE","8E9196","canvas bed on two poles","thud","Off to the medic tent.","medical"},
 	{"strigoi","AICJNA","iAZ",5,7,4,"7F1D1D","F1F5F9","pale cloaked undead with red eyes","hiss","An older, crankier vampire.","undead,spooky"},
@@ -400,7 +403,4 @@ return {
 	{"stun gun","CDBAwI","feLO",2,8,3,"24262A","F1C40F","small pistol with two prongs","zap","Bzzzt. Nap time.","electric"},
 	{"stunt double","LACJNA","DEk",5,9,4,"DC2626","F8FAFC","leather jumpsuit, helmet, mid-jump pose","boom","Jumps through fire. Daily.","silly"},
 	{"stunt plane team","DFEELB","jAeP",6,9,5,"E53935","1565C0","formation of jets with coloured smoke","jet","Smoke trails everywhere. Very confusing.","vehicle,air"},
-	{"stupidity","KMBDOJ","jNP",3,4,1,"FDE68A","A3E635","question marks around a spinning empty thought bubble","boing","Contagious. Do not make eye contact.","silly,meme"},
-	{"sturgeon","ABDJEC","DfB",5,7,6,"6E6A64","C8C4BC","bony armor plates, shovel snout","splash","Older than dinosaurs. Looks it.","fish,aquatic,ancient"},
-	{"sty","MECNII","SMNh",3,1,4,"6B4F2A","F4A6B7","muddy fenced pen with a trough and snoozing pigs","squelch","Your room, according to your mother.","farm,gross"},
 }

@@ -13,6 +13,7 @@ return {
 	{"dirt","FEBDOB","jN",2,5,2,"6B4F34","A1856A","kicked-up brown clod burst","thud","Dirt in the eyes. Classic move.","silly"},
 	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
 	{"dirt cup","IMBLGI","SNP",2,3,3,"3A1A0C","E0102B","cup of crumbs and gummy worms","gloop","Dirt you can eat. With worms.","edible,sticky,dessert,silly"},
+	{"dirty laundry","BJCCGI","GMN",2,1,3,"93C5FD","8BC34A","a teetering wall of stinky socks and shirts","flump","Nobody's touching that.","goofy,gross,silly,wall"},
 	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
 	{"disco ball","BHCG3K","jca",2,2,3,"C9CED4","A66BDB","spinning mirrored sphere","squeak","Dance fight!","party"},
 	{"disco floor","BHDNII","jd",2,1,5,"A66BDB","3FC1D9","flashing tile floor","beep","Can't stop dancing.","tech"},
@@ -402,5 +403,4 @@ return {
 	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
 	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
 	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
-	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
 }

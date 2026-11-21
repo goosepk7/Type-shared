@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"skee ball","BMBA3F","Ue",4,7,2,"C8894B","3EC1D3","wooden arcade ball off a little ramp","bonk","Up the ramp, into the face.","game,arcade,lob"},
+	{"skeleton","AICJNA","feV",4,6,3,"F5F5F4","57534E","rattling bones, grinning skull","rattle","Has a funny bone. Uses all of them.","undead,spooky,halloween"},
 	{"skeleton archer","AICJNA","TeV",4,6,3,"E7E5E4","78350F","skeleton with a bow and quiver","rattle","Never misses. Never hits either.","undead,spooky,archer"},
 	{"skeleton army","AIDJLA","fVPh",6,5,5,"F5F5F4","1F2937","rows of rattling skeleton soldiers","rattle","Bones. So many bones.","undead,spooky,swarm"},
 	{"skeleton cowboy","AICJNA","eV",4,6,3,"F5F5F4","92400E","skeleton in a ten-gallon hat","rattle","Yee-haw. Rattle rattle.","undead,western"},
@@ -154,7 +156,7 @@ return {
 	{"snail trail","ABANGI","SN",3,1,5,"C98A4B","B8C08A","a snail leaves a slowing slime trail","squelch","Speed: yes, eventually.","critter,zone,slow"},
 	{"snake","AMCJCD","fMN",4,6,3,"4A7A3A","C8B860","long coiled body, forked tongue","hiss","Hugs without arms. Hisses hello.","reptile,venomous"},
 	{"snake charmer","LJCJNI","cOh",3,4,3,"F59E0B","15803D","flute and basket with a dancing snake","flute","Plays a tune. Snakes appear.","music"},
-	{"snake in a can","CMALJK","jO",1,1,2,"2E8B57","C0392B","can with springing fabric snakes","boing","BOING! Ahhh!","prank,silly"},
+	{"snake in a can","BMALJI","dlS",2,2,2,"2E8B57","F4C430","a joke can with a springy cloth snake inside","boing","Don't open it. BOING!","goofy,silly,prank,trap"},
 	{"snake plant","NGBOMI","FST",2,1,5,"2E7D32","FFEB3B","upright sword-like striped leaves","rustle","Pointy leaves. Unkillable.","plant,houseplant"},
 	{"snakefly","AMAJFB","dAP",1,6,1,"1E1E1E","8A6A4A","long neck flying bug","buzz","Has a snake neck.","insect"},
 	{"snakehead","ABCJCC","DfB",4,7,4,"5A5A3A","C8B88A","long fish with snake-like head","splash","Walks between ponds. Rude.","fish,aquatic"},
@@ -401,6 +403,4 @@ return {
 	{"sphinx","AHDJAA","GjO",6,4,8,"D6A35A","1E3A8A","lion body, headdress, folded wings","roar","Answer the riddle or lose the turn.","mythical,ancient,guardian"},
 	{"sphinx cat","AMBJAA","jd",2,6,2,"D6A35A","FDE68A","small cat with pharaoh headdress","meow","Asks small riddles. Accepts treats.","silly,cute"},
 	{"sphinx queen","AHEJAA","GjO",8,3,9,"D6A35A","1E3A8A","giant stone sphinx with golden headdress","roar","Riddle me this: why'd you summon me?","mythical,ancient,guardian"},
-	{"sphynx cat","AMBJAA","dfT",2,7,2,"E9C2B0","C99A88","hairless wrinkly body, giant ears","meow","Forgot its sweater. Always.","mammal,pet,cute"},
-	{"spice","IAADOJ","KjP",3,5,1,"C2410C","FACC15","puff of red-orange powder from a shaker","puff","A little kick. Then a big one.","edible,spicy"},
 }

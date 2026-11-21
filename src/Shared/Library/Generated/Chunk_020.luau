@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pit","MEDL5I","SHNO",6,1,8,"3E2A14","111111","round dark hole in the ground with crumbling edges","echo","Hellooo? ...ellooo? ...llooo?","trap,terrain"},
 	{"pit stop","LMCONI","D",2,5,1,"D7263D","F5C21B","a pit crew swapping your tyres in a blur","whirr","Four tyres, half a second.","transit,buff,movement,silly"},
 	{"pit viper","AMCJCD","fMN",4,6,3,"6AA04A","E8E07A","green viper, heat pits","hiss","Sees body heat. Spooky.","reptile,venomous"},
 	{"pita","IMBAKK","Uke",3,7,2,"E8D0A0","C8A070","round flat pocket bread","whoosh","A bread with a secret pocket.","edible"},
@@ -308,6 +309,7 @@ return {
 	{"pralines","IMBAKK","Uke",3,7,2,"C68E3A","8A4A1E","flat pecan sugar discs","whoosh","Sweet pecan coins.","edible"},
 	{"prank","KLBLII","jd",2,5,1,"FF4081","FFEB3B","innocent-looking glowing box","honk","Gotcha! Classic.","silly"},
 	{"prankster","LLCJNA","jdb",3,7,3,"7C3AED","22C55E","whoopee cushion, joy buzzer, grin","giggle","Gotcha! Every time.","silly,trickster"},
+	{"pratfall","KMBIKK","GDk",2,7,1,"FFCC80","F2F2EE","a big slapstick slip backwards and a floor thump","thump","Whoa-whoa-WHOA. Ta-da!","goofy,silly,slapstick,escape"},
 	{"pray","KHBOKJ","GFS",3,2,3,"FEF9C3","BAE6FD","pressed-together hands in a soft ray of light","choir","Hands together. Eyes closed. Heal up.","holy,support"},
 	{"praying mantis","AMBJFA","AZfTP",3,6,1,"6AC84A","C8E87A","raised folded arms, triangle head","buzz","Prays before it eats you. Polite.","insect"},
 	{"precision","KLBOKI","T",2,6,3,"42A5F5","FFFFFF","crisp crosshair rings around caster","ding","Never miss again.","support"},
@@ -401,6 +403,4 @@ return {
 	{"pug","AMBJAA","dQf",2,6,2,"D9C2A0","2B2420","squished black face, curly tail, wrinkles","yip","Snorts like a tiny tractor.","mammal,pet,cute,silly"},
 	{"puli","AMCJAA","DjQf",4,7,4,"1E1E1E","3A3A3A","dreadlock corded coat","bark","A mop that barks.","mammal,pet"},
 	{"pull","KLCBKI","H",4,7,2,"B388FF","FFFFFF","glowing tether dragging target in","whum","Come here, you.","force"},
-	{"pull apart bread","IGBOKI","F",2,5,3,"D9A04A","F2C870","loaf scored into squares","crunch","Tear and share.","edible,healthy"},
-	{"pulled pork","IMBLGI","cN",2,3,3,"B0602B","6B2A1E","pile of shredded saucy meat","gloop","Shredded, smoky, saucy.","edible,sticky"},
 }

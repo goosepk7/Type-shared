@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"incinerate","KADBKI","KT",8,7,1,"FF3D00","FFFFFF","white-hot column of fire","roar","Ashes to ashes. Fast.","fire"},
 	{"indestructible","KKDOKI","Ga",2,3,10,"90A4AE","FFD54F","thick shining metal aura","clang","Tried breaking it. It broke you.","defence"},
 	{"indian paintbrush","NGBNMI","dFS",1,1,1,"E53935","FF9800","red-tipped spikes like dipped brushes","rustle","Looks dipped in paint.","plant,flower"},
 	{"indian rhino","AMDJAA","GDkIO",7,4,9,"7C7470","B0A49A","armor-plated folds, one horn","trumpet","Built with its own armor plating.","mammal,heavy,wild"},
@@ -402,5 +403,4 @@ return {
 	{"kronosaurus","ABEJEC","DfHB",8,6,7,"3A4A5A","B8C0C8","giant short-necked pliosaur","roar","Skull the size of a car.","extinct,reptile,aquatic,ocean"},
 	{"kudu","AMDJAA","DkT",5,8,4,"8E7A64","F2F0EA","huge spiral horns, white stripes","bleat","Horns like a corkscrew. Very fancy.","mammal,wild"},
 	{"kudzu","NGDLMI","GWSHNP",4,3,6,"2E7D32","7CB342","blanket of vines swallowing everything","rustle","Grows a foot a day. Eats houses.","plant"},
-	{"kuiper belt","MCFEKJ","JReP",6,3,7,"B3E5FC","9E9E9E","ring of icy rocks far from the sun","twinkle","A freezer full of space rocks.","space,star"},
 }

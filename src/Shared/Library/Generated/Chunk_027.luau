@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thresher shark","ABDJEC","DkfTOB",7,8,6,"6A6E80","D8DCE2","enormous whip-like tail","chomp","Slaps fish with its tail. Whap.","fish,aquatic,ocean,predator"},
+	{"thrill","KDBOKB","UDO",3,9,1,"F97316","22D3EE","rollercoaster car cresting a drop, arms in the air","whee","Hands up! Scream! Regret lunch!","speed"},
+	{"throat","BMCL5I","iHN",4,3,3,"B03A48","E57373","dark red swallowing tunnel, dangly uvula","gulp","GULP. Gone.","body,silly"},
 	{"throne","BMDC0I","GFh",4,1,9,"D4A72C","9E1B32","towering golden chair, red velvet","thud","Sit here. Command everyone.","furniture,royal"},
 	{"throne heir","LMCJNA","ch",3,5,4,"7C3AED","F8FAFC","little crown, fancy suit, pout","horn","Will inherit everything. Wants it now.","royal"},
 	{"throne room","MEENII","FSh",4,1,9,"B71C1C","FFD54F","long red carpet to a golden throne","rumble","All rise for the royal smackdown.","place,terrain,royal"},
@@ -400,7 +403,4 @@ return {
 	{"tundra","MCFNII","JSN",3,1,8,"ECEFF1","90A4AE","flat frozen ground, low shrubs","rumble","Cold. Flat. More cold.","place,terrain,frozen"},
 	{"tuning fork","JLCL4I","kSN",5,4,7,"9FE8FF","B388FF","giant crystal tuning fork that rings when you near it","chime","Step closer. It wants to sing.","music,trap"},
 	{"tunnel","EEDCII","GCSY",2,1,9,"616161","FFB300","arched dark hole with lamp lights","thud","Goes under the problem.","structure"},
-	{"tuojiangosaurus","AMDJAA","GkfT",6,3,9,"7A6A4A","E8A03A","pointy plates stegosaur","grunt","Pointy-plated stego cousin.","dinosaur,extinct,reptile,armored"},
-	{"tupandactylus","AMDJDB","DdAT",6,8,4,"7A5A3A","E8401E","gigantic sail crest","screech","Its head crest is a giant sail.","pterosaur,extinct,reptile"},
-	{"turaco","AMBJDB","jdA",2,6,2,"2AA04A","E8301E","green crested bird, red wings","squawk","Green bird. Red wings. Real pigment.","bird,jungle,silly"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
 	{"gavel","BMAHtK","fO",2,6,4,"5A3A1E","B58A3A","small wooden judge hammer","bonk","Order! Order! Bonk!","silly"},
 	{"gazania","NGANMI","dFS",1,1,1,"FF9800","FFEB3B","bold striped daisy that closes at night","rustle","Opens with the sun. Snaps shut at night.","plant,flower"},
 	{"gaze","KLBBKB","QNO",3,8,1,"38BDF8","FFFFFF","pair of wide unblinking eyes with dotted sight lines","hum","Staring contest. It does not have eyelids.","silly"},
@@ -217,7 +218,7 @@ return {
 	{"glitch","LLCJNA","jZY",4,8,2,"F472B6","22D3EE","pixelated shimmering outline","zap","Phases through walls. Not a feature.","meme,gaming"},
 	{"glitch spell","KLCAKB","jVY",5,9,1,"00E5FF","FF1744","pixelated flickering cube with colour split","bzzt","Error. Error. Ha ha.","chaos,meme"},
 	{"glitter","FLBDOJ","jdS",2,5,1,"F7A8FF","FFE680","drifting rainbow sparkle cloud","tinkle","You will find it in your shoes for years.","silly,cute"},
-	{"glitter bomb","CMBGKF","jSeP",1,6,1,"FF3EA5","C9CED4","sparkly box bursting with glitter","poof","Weapons-grade sparkle.","silly,party"},
+	{"glitter bomb","BMBGKK","ESeN",2,6,1,"FF3EA5","B388FF","a sparkly gift box that bursts into glitter","poof","You will find it for weeks.","goofy,silly,party,sparkle"},
 	{"glitter glue","BMALJK","jN",1,5,1,"FF3EA5","D4A72C","sparkly glue bottle","tap","Sparkly and inescapable.","school,sticky,silly"},
 	{"glitter golem","ALCJNA","GjO",4,3,5,"F0ABFC","FDE68A","sparkling body of pure glitter","chime","You'll find glitter for years.","silly"},
 	{"glitter gun","CMBFwI","jSe",1,7,1,"FF3EA5","D4A72C","sparkly cone blaster","poof","Glitter is forever. So is this.","silly,party"},
@@ -402,5 +403,4 @@ return {
 	{"grater","BMBHJK","fV",2,5,4,"8A929B","24262A","box with jagged holes","clang","Shred it. Shred them.","kitchen,household"},
 	{"gratitude","KHBOKJ","F",1,4,2,"FFB74D","FFF8E1","warm orange heart glow","chime","Thanks! Here's a heal.","support,cute"},
 	{"graupel","GCBEOJ","UN",2,5,1,"F1F6F9","C7D9E4","tiny foam-like snow pellets","patter","Snow that went to the gym.","frozen"},
-	{"grave hand","KIENKI","kfH",8,7,2,"2A1F3D","7CF2FF","a giant ghostly clawed arm sweeping the ground","whoosh","Need a hand? Here's a big one.","anime,demon"},
 }

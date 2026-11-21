@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pull apart bread","IGBOKI","F",2,5,3,"D9A04A","F2C870","loaf scored into squares","crunch","Tear and share.","edible,healthy"},
+	{"pulled pork","IMBLGI","cN",2,3,3,"B0602B","6B2A1E","pile of shredded saucy meat","gloop","Shredded, smoky, saucy.","edible,sticky"},
 	{"pulled pork sandwich","IMBLGI","cN",2,3,3,"B0602B","D9A04A","bun overflowing with pork","gloop","Messy, saucy, glorious.","edible,sticky"},
 	{"pulley","OKBLJK","lH",2,3,5,"8B5A2B","B89B6A","wheel with rope over it","clank","Lifts heavy things with clever science.","science"},
 	{"pulse cannon","CDDMxI","keL",7,5,6,"2C3539","3FC1D9","thick barrel with glowing rings","zap","Thoom. Thoom. Thoom.","scifi,ranged"},
@@ -401,6 +403,4 @@ return {
 	{"robot arm monster","OKCJFA","lH",4,4,6,"FACC15","1F2937","three-legged bot with giant grabber claw","whir","Claw machine, but it wins.","robot"},
 	{"robot ball","OKBJKF","UDd",2,8,5,"F97316","F8FAFC","rolling sphere robot with dome head","beep","Rolls everywhere. Falls down stairs.","robot,cute"},
 	{"robot bear","OKDJAA","kf",6,4,8,"57534E","FACC15","armored mechanical bear","roar","Hibernates in a charging dock.","robot"},
-	{"robot bee swarm","OKBJLB","AMP",3,9,2,"FACC15","1F2937","swarm of tiny yellow-black drone bees","buzz","Pollinates. Also stings. Metallically.","robot,swarm,insect"},
-	{"robot bird","OKAJDB","dAe",2,8,3,"CA8A04","22D3EE","brass bird with ticking gear wings","whistle","Sings in beeps.","robot,bird"},
 }

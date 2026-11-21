@@ -98,7 +98,7 @@ return {
 	{"clown horn","BMBHJI","kfI",2,8,1,"E53935","F4C430","a huge bulb horn honked twice in a cone","honk","HONK HONK.","goofy,silly,sound,prank"},
 	{"clown knight","LMCJNA","jdf",4,5,6,"DC2626","FACC15","rainbow armor, honking horn sword","honk","Honk honk, have at thee.","silly,warrior"},
 	{"clown nose","BMAONI","jd",1,6,1,"C0392B","C0392B","squishy red ball nose","pop","HONK.","party,silly"},
-	{"clown shoes","BMBONI","dN",1,3,2,"C0392B","F1C40F","enormous floppy shoes","pop","Flop. Flop. Flop.","party,silly"},
+	{"clown shoes","BMBOJG","UDk",2,7,1,"E53935","F4C430","enormous floppy red shoes that boing and squeak","squeak","Flop. Flop. BOING.","goofy,silly,clown,mobility"},
 	{"clownfish","ABAJEC","dB",1,6,1,"F2701E","FFFFFF","orange fish with white stripes","splash","Lives in a stinging house. Unbothered.","fish,aquatic"},
 	{"club","CMCHtK","kfO",3,5,4,"8B5A2B","7A4E2D","knobbly wooden club","bonk","Simple. Effective. Caveman approved.","primitive"},
 	{"club sandwich","IGBOKI","Fc",2,5,3,"E8C88A","D72B2B","triple-decker toothpick sandwich","crunch","Three floors of lunch.","edible,healthy"},

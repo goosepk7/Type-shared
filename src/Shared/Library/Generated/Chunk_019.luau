@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"paella","IACELB","KFeP",2,6,1,"E8A02B","C8302B","wide pan of saffron rice, seafood","pitter","A giant pan of golden rice.","edible,grain"},
 	{"page","BFAAJB","ATe",1,7,1,"FFFFFF","93C5FD","single lined page fluttering edge-first","rustle","Paper cut. The worst cut.","school,sharp"},
 	{"pagoda","EMDMII","GSe",4,1,7,"C62828","263238","stacked curved roofs, many tiers","thud","Every floor has another curved roof.","structure,defense,tower"},
 	{"pagoda tree","NGDCMI","GWkS",3,1,7,"5D4037","FFF8E1","wide tree with hanging white flowers","rustle","Tiered branches like a pagoda.","plant,tree"},
@@ -402,5 +403,4 @@ return {
 	{"pistol shrimp","ABAJRA","GEfTeO",4,4,5,"E86A3A","F2C8A8","one giant snapping claw","clack","Snaps so hard it boils water.","crustacean,aquatic,armored"},
 	{"piston","OKCL1I","klI",5,4,7,"8A929B","4A4D52","cylinder with punching rod","hum","Kachunk! Pushed.","mechanical"},
 	{"piston rush","KFCHKI","Dkf",6,10,1,"78C8FF","4A505C","calf engines spit blue jets into a sonic-boom kick","vroom","Zero to forty studs before you finished blinking.","anime,quirk,speed"},
-	{"pit","MEDL5I","SHNO",6,1,8,"3E2A14","111111","round dark hole in the ground with crumbling edges","echo","Hellooo? ...ellooo? ...llooo?","trap,terrain"},
 }

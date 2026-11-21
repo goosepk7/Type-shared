@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"locust tree","NGDCMI","GWkST",4,1,7,"5D4037","9CCC65","thorny tree with long twisty pods","rustle","Thorns as long as fingers.","plant,tree,sharp"},
 	{"log bridge","EGCCII","GSN",1,1,4,"8D6E63","7CB342","single fallen tree across a gap","thud","One wrong step and splash.","structure"},
 	{"log flume","DBCKHC","DIg",3,7,4,"8D6E63","4FC3F7","hollow log boat on a water chute","splash","The big drop! Everyone gets soaked.","vehicle,silly"},
 	{"log fort","EGEMII","GSe",4,1,7,"8D6E63","5D4037","square log stockade with watch posts","thud","Built from a whole forest.","structure,defense,flammable"},
@@ -402,5 +403,4 @@ return {
 	{"merganser","ABBJDC","AfTB",2,5,2,"2A6A4A","F2F2F2","crested fish duck with saw bill","quack","Duck with teeth. Kinda.","bird,aquatic"},
 	{"merge","KLCOKI","WF",5,4,4,"FFB74D","7E57C2","two glows swirling into one","warp","Two become one. Bigger one.","magic"},
 	{"meringue","IMBLGG","USN",2,3,3,"F7F4F0","F2E2D0","swirled white peak","wobble","A sugar cloud with crunch.","edible,wobbly,sweet"},
-	{"merlin falcon","AMBJDB","DAfT",3,9,3,"5A6A8A","D8A06A","small dashing falcon","screech","Not the wizard. Still magic.","bird,predator"},
 }

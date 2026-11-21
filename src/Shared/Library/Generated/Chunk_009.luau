@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
 	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
 	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 	{"emotion","KLCF6B","jFNO",3,6,1,"F472B6","60A5FA","rolling wave of faces: happy, sad, angry, surprised","sigh","Happy. Sad. Furious. Hungry. All in one minute.","mood"},
@@ -402,5 +403,4 @@ return {
 	{"five spice","IFBDOJ","jPO",2,5,1,"8A4A2A","C8803A","brown spice heap","puff","Five spices, one punch.","edible,spice"},
 	{"fjord","MBFNII","SN",3,1,9,"1E88E5","6D6D6D","narrow deep sea channel between cliffs","rumble","Very deep. Very cold. Very pretty.","place,terrain"},
 	{"flag","BMCOzI","Fh",1,4,2,"9E1B32","D4A72C","cloth flag on a pole","pop","Rally to the banner!","party,medieval"},
-	{"flagpole","EMCNII","FS",1,1,4,"B0BEC5","E53935","tall pole with a waving flag","thud","Plant the flag. Claim the ground.","structure,silly"},
 }

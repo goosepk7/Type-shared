@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"merlin falcon","AMBJDB","DAfT",3,9,3,"5A6A8A","D8A06A","small dashing falcon","screech","Not the wizard. Still magic.","bird,predator"},
 	{"mermaid","ABCJEC","FceB",4,7,4,"0EA5E9","F472B6","fish tail, seashell top, flowing hair","sing","Lives under the sea. Collects forks.","mythical,aquatic"},
 	{"mermaid princess","ABCJEC","FcB",4,7,4,"0EA5E9","F472B6","crowned mermaid with pearl necklace","sing","Wants legs. Settles for victory.","royal,aquatic"},
 	{"mermaid queen","ABDJEC","FhB",6,6,5,"0369A1","FDE68A","crowned mermaid with pearl scepter","sing","Rules the reef. Bans plastic.","aquatic,royal"},
@@ -402,5 +403,4 @@ return {
 	{"musk turtle","AMBJUA","GMNB",2,2,8,"3A3A2A","8A8A6A","small turtle that smells","hiss","Stinks when grabbed.","reptile,armored"},
 	{"muskellunge","ABDJEC","DfTB",5,7,4,"8A9A6A","D8D8A0","huge toothy pike","splash","The fish of ten thousand casts.","fish,aquatic"},
 	{"musket","CKCAwI","kTe",5,2,4,"5A3A1E","8A929B","long smoothbore barrel, wooden stock","bang","Aim. Fire. Spend a week reloading.","historic,ranged"},
-	{"musketeer","LKCJNA","fTe",5,7,4,"1D4ED8","F8FAFC","feathered hat, rapier, blue tabard","bang","All for one. One for snacks.","warrior"},
 }
