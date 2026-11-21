@@ -170,7 +170,7 @@ return {
 	{"police van","DKDKHL","DkgOh",5,6,9,"1B2A49","F5F5F5","armoured black van with roof lights","siren","Backup has arrived. Lots of it.","mechanical,vehicle,land"},
 	{"polish","KKAOKI","a",1,4,3,"ECEFF1","FFFFFF","sparkly gleam on armour","squeak","So shiny. Hits slide off.","shiny"},
 	{"politician","LMCJNA","jdc",3,4,4,"1E3A8A","DC2626","suit, sash, giant scissors","ding","Makes many promises. Keeps none.","silly"},
-	{"pollen","NGBDOI","jSPO",2,4,1,"FFEB3B","FFF59D","drifting golden dust cloud","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly"},
+	{"pollen","NGCDOJ","SIP",3,4,3,"FFEB3B","FFF59D","drifting golden dust cloud that makes you sneeze","rustle","Achoo! Achoo! ACHOO!","plant,flower,silly,nature"},
 	{"pollen burst","FGCDOJ","jPO",3,3,2,"FFEB3B","FFF59D","golden fuzzy pollen cloud","achoo","Achoo! Achoo! Achoo!","plant,silly"},
 	{"pollock","ABAJEC","dB",1,6,1,"6A6A5A","C8C8B8","grey cod-like","splash","Fish stick ingredient #1.","fish,aquatic"},
 	{"pollution","FJCDOJ","MNP",4,3,3,"6E6A55","A8A28A","murky trash-flecked haze","cough","Nobody wants this. Least of all you.","toxic"},

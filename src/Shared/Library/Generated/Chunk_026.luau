@@ -29,7 +29,7 @@ return {
 	{"sun spirit","AHCJKJ","KFe",5,6,3,"FDE047","F97316","round smiling glowing sun face","chime","Gives warm hugs. Very warm.","cosmic,fire"},
 	{"sun strike","FHDBKI","KO",7,8,1,"FFAB00","FFF8E1","pillar of sunlight slamming down","boom","The sun has picked a target.","holy,fire"},
 	{"sun sword","CHCHrK","KFf",8,6,5,"D4A72C","F2F2EE","blinding golden blade","shing","Daylight with an edge.","fantasy,holy"},
-	{"sunbeam","FHCBKI","KTe",5,9,1,"FFC93C","FFF8E1","thick golden ray with dust motes","hum","A cat's favourite spot. Now a weapon.","holy"},
+	{"sunbeam","GHCBOI","KSe",5,3,3,"FFC93C","FFF8E1","clouds part and a golden shaft of sunlight burns the spot","hum","A cat's favourite spot. Now a weapon.","weather,light,sky"},
 	{"sunbird","AMAJDB","dA",1,7,1,"2AB06A","E8302A","tiny iridescent nectar bird","tweet","Old World hummingbird lookalike.","bird,cute"},
 	{"sunbittern","AMCJDA","jAfT",3,5,2,"8A6A4A","E8901E","wings flash sunset eyes","squawk","Flashes two giant sunset eyes.","bird,wetland"},
 	{"sunburn","FABAKB","KN",2,6,1,"FF8A80","FFE0B2","pinkish glow on target","sizzle","Should've worn sunscreen.","fire,silly"},

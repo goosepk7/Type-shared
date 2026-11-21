@@ -248,7 +248,7 @@ return {
 	{"shogun","LKDJNA","Gfh",7,4,8,"7F1D1D","CA8A04","towering gold-crested armor, war fan","clang","Commands armies with a fan.","warrior,royal,boss"},
 	{"shonisaurus","ABFJEC","DfHB",8,6,7,"4A5A6A","C8D0D8","gigantic ichthyosaur","roar","A whale-sized ichthyosaur.","extinct,reptile,aquatic,ocean"},
 	{"shoot","KLBAKB","Te",4,10,1,"FFEB3B","FFFFFF","fast glowing bolt","pew","Pew!","ranged"},
-	{"shooting star","HHBAKB","FTe",4,10,1,"FFF6C2","FFD54F","bright star streak with sparkling tail","chime","Make a wish. It is aiming at you.","space,cute"},
+	{"shooting star","HHBAKB","DIe",4,10,1,"FFF6C2","FFD54F","you streak forward as a bright star with a sparkling tail","chime","Make a wish. It is aiming at you.","space,cute,speed"},
 	{"shop","EMBCII","GS",2,1,4,"F5E6CA","43A047","shopfront with awning and sign","thud","Everything must go. Including you.","structure,building"},
 	{"shopkeeper","LMCJNA","cbh",3,4,4,"92400E","FDE68A","apron, coin pouch, ledger","ding","Has what you need. For a price.","merchant"},
 	{"shopping bag","BMBL2I","O",1,1,1,"D2B48C","F2F2EE","paper grocery bag","thud","Bagged and tagged.","container"},

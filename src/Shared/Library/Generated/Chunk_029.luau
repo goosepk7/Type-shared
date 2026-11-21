@@ -58,7 +58,7 @@ return {
 	{"whippet","AMCJAA","DQ",4,10,4,"C8B8A8","F2F2EE","slim mini greyhound","bark","Mini greyhound. Maxi zoomies.","mammal,pet"},
 	{"whirl frenzy","KFCO5K","Dkf",5,9,3,"C8A878","8A6A4A","you spin into a cartoon dust tornado","whoosh","Brrrrrrrrrrrrrr.","cartoon,silly,melee"},
 	{"whirligig beetle","AMAJFK","GjfB",1,3,4,"1E1E24","6A6AA0","spinning water beetle","click","Spins in circles on ponds.","insect,armored"},
-	{"whirlpool","FBDN5K","SHNO",6,5,4,"0E4C7A","7CC6F0","spiralling water funnel, foam rim","gurgle","Round and round and round and down.","aquatic"},
+	{"whirlpool","FBDN5K","SH",5,5,4,"0E4C7A","7CC6F0","spiralling water funnel, foam rim","gurgle","Round and round and round and down.","aquatic,water,nature"},
 	{"whirlwind","FFCN5K","jlH",5,7,3,"9DBCCB","EAF2F6","spinning column of air and leaves","howl","Spin to win. Mostly to spin.","air"},
 	{"whisker","BMAOLB","QTe",1,8,1,"F5F5F5","D9D9D9","fan of long white twitching whiskers","twang","Senses danger. Is the danger.","body,cute,pet"},
 	{"whiskerway coach","AFEJXA","DAkT",7,10,2,"5C6884","FFC46E","a long-legged lantern strider carrying a lacquered howdah","growl","One howdah, one lantern, no timetable.","anime,beast,summon,ride"},
