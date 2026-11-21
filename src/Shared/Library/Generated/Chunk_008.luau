@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dinosaur egg","AMBJKI","Wh",2,4,4,"D8C8A8","8A7A5A","big speckled egg, cracking open","growl","Something inside is getting impatient.","extinct,ancient,dinosaur"},
+	{"dip","IMBL2I","ScN",2,1,2,"F5F0DC","84CC16","bowl of creamy dip with one broken chip stuck in","gloop","Double dippers will be prosecuted.","edible,sauce,sticky"},
+	{"diplodocus","AMFJAA","kIO",8,2,9,"8A8A6A","C8C0A0","very long neck, very long whip tail","rumble","Longer than three buses.","dinosaur,extinct,reptile,heavy"},
+	{"diploma","BHBOJK","FaO",2,5,2,"F5F0DC","DC2626","rolled parchment tied with a red ribbon, gold seal","fanfare","Officially qualified to bonk.","school"},
 	{"dipper","ABAJDB","dAB",1,7,1,"3A3A3A","F2F2F2","songbird that walks underwater","tweet","Walks underwater. Seriously.","bird,cute"},
 	{"diprotodon","AMDJAA","DkO",6,4,8,"8A6A4A","C8A87A","rhino-sized wombat","roar","A wombat the size of a car.","mammal,extinct,ancient,heavy"},
 	{"dire wolf","AMDJAA","DQfh",6,7,4,"4E4A46","B0A898","huge heavy wolf, broad skull, big teeth","howl","A real ice age wolf. Extra chunky.","mammal,predator,wild,extinct,ancient"},
@@ -54,6 +58,7 @@ return {
 	{"doedicurus","AMDJAA","GDkO",7,4,10,"6A5A44","B8A07A","armored dome, spiked mace tail","roar","Armadillo with a medieval mace.","mammal,extinct,ancient,heavy"},
 	{"dog","AMCJAA","DQcf",4,7,4,"C08A52","F2E3CC","floppy ears, wagging tail, tongue out","bark","Best friend. Will eat your homework.","mammal,pet"},
 	{"dog bowl","BMALKI","c",1,1,2,"C9CED4","C0392B","steel bowl full of kibble","squeak","Dinner bell for monsters.","pet"},
+	{"dog fetch","AMCAAA","Dkf",4,8,2,"C98E52","F4EBDD","throw a stick and a dog bolts after it","bark","Every throw is the best throw ever.","critter,mammal,projectile"},
 	{"dog groomer","LMCJNA","dF",3,5,4,"F472B6","F8FAFC","apron, blow dryer, brush","snip","Fluffs your dog. Fluffs your enemies.","silly,canine"},
 	{"dog knight","AKBJAA","GQf",3,7,4,"A16207","1D4ED8","loyal pup in shining armor","bark","Good boy. Great knight.","warrior,canine,cute"},
 	{"dog sled","DCCKHL","Dkgh",4,7,4,"8D6E63","ECEFF1","wooden sled pulled by a team of huskies","engine","Mush! The dogs know the way.","mechanical,vehicle,land"},
@@ -398,9 +403,4 @@ return {
 	{"ember tree","NADCMI","GKSe",5,1,6,"3E2723","FF6F00","tree with glowing coal leaves","chime","Every leaf a hot coal.","plant,magic,mythical,flammable"},
 	{"emerald","BGAA4J","Fce",3,7,7,"1E9E5A","2E8B57","rich green cut gem","chime","Green with envy. And power.","treasure,shiny"},
 	{"emerald cascade","FGCA4I","SeV",6,9,3,"2FBF6A","B8FFD2","emerald shards burst out; glowing tripwires stay strung","crystal","Every wire is a promise. Every promise is a shard.","anime,stand,crystal"},
-	{"emerald tree boa","AMCJCD","fHO",4,4,6,"2AA04A","F2F2EE","green boa with white zigzags","hiss","An emerald necklace that bites.","reptile"},
-	{"emergency","KACF6B","FIOh",5,8,2,"EF4444","3B82F6","flashing red and blue lights with a spinning beacon","siren","Remain calm. AAAAAAH. I said remain calm.","loud"},
-	{"emo kid","LICJNA","ji",3,5,3,"111827","DC2626","swoopy fringe, band tee","sigh","Nobody understands. Attacks anyway.","music"},
-	{"emoji","KHBELG","UjPO",2,7,2,"FACC15","EF4444","bouncing yellow faces: grin, cry-laugh, heart-eyes, skull","pop","A thousand words. All of them faces.","meme,internet,cute"},
-	{"emote dancer","LMCJNK","jdO",3,6,3,"7C3AED","FACC15","figure mid-emote dance","beat","Emotes on your defeat.","meme,gaming,silly"},
 }
