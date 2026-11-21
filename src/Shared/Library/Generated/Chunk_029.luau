@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"welwitschia","NECNMI","dFS",2,1,8,"6D4C41","7CB342","two long tangled leaves on sand","rustle","Two leaves. Two thousand years.","plant,flower,ancient"},
 	{"wendigo","ACDJNA","DiJf",7,8,6,"E7E5E4","7DD3FC","gaunt antlered figure, frost breath","howl","Always cold. Always hungry. Never invited.","spooky,frozen,cryptid"},
 	{"werebear","AGDJNA","Wkf",7,5,7,"78350F","FDE68A","huge bear-man in torn flannel","roar","Hibernates through every meeting.","spooky"},
 	{"werecat","AICJNA","DZf",5,9,4,"1C1917","FACC15","cat-faced prowler with long claws","hiss","Nine lives, one bad attitude.","spooky"},

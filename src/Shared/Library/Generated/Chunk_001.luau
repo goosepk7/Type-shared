@@ -112,7 +112,7 @@ return {
 	{"al pastor","IMBAKF","Kce",3,6,2,"C8402B","F6D54A","spit-roasted pork with pineapple","splat","Spinning spit, pineapple crown.","edible"},
 	{"alakazam","KLCAKB","jY",4,8,1,"651FFF","FFD54F","zigzag star burst","poof","Alakazam! Something happened.","magic,silly"},
 	{"alarm bell","OKBF1I","Oh",2,3,5,"B58A3A","C0392B","big brass bell on a post","ring","DING DING DING! Everyone up!","defense,mechanical"},
-	{"alarm clock","BMAFII","jO",1,5,3,"C0392B","B58A3A","round clock with two bells","ring","RING RING RING. Wake up.","loud,silly"},
+	{"alarm clock","BMBN1G","kSO",4,5,3,"C0392B","E8B84A","round wind-up clock with two bells on top","ring","RING RING RING. Wake up.","household,bedroom,loud,silly"},
 	{"alarm clock bomb","BABLKK","EO",5,1,2,"C0392B","B58A3A","ringing clock taped to dynamite","thud","RING RING BOOM.","silly,explosive"},
 	{"alarm siren","OMCF1I","cPO",2,4,5,"C0392B","F2F2EE","spinning red beacon with horn","siren","Wee-woo wee-woo.","loud"},
 	{"alarm system","OMCL1I","Oh",2,1,5,"F2F2EE","C0392B","wall panel with flashing light","siren","Intruder! Intruder!","household"},

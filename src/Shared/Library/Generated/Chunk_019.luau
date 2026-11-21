@@ -305,7 +305,7 @@ return {
 	{"pillbox","EECMII","GTe",5,1,9,"9E9E9E","556B2F","small round concrete hut with firing slits","thud","Tiny hut. Huge attitude.","structure,defense"},
 	{"pillory","BMCLII","O",2,1,6,"8B5A2B","5B6168","wooden frame with head and hand holes","thud","Stuck in the town square.","medieval,trap"},
 	{"pillow","BMBAKK","Fke",1,5,1,"F2F2EE","F2F2EE","fluffy rectangle pillow","thud","Pillow fight! Feathers everywhere.","furniture,household"},
-	{"pillow fort","EMCCII","GUFS",1,1,3,"F8BBD0","90CAF9","blankets draped over pillows and chairs","thud","No grown-ups allowed.","silly,cute"},
+	{"pillow fort","EMCC0I","GUSN",4,1,4,"E2725B","F4E3C1","curved fort of couch cushions and pillows","thud","No grown-ups allowed. It falls on you anyway.","household,living room,cover,cute"},
 	{"pillow mallet","CMCHtK","kfO",5,6,1,"F6E7F7","9C7CF4","a huge fluffy pillow mallet, stitched seam, feathers","thud","It doesn't hurt much. It's just very, very sleepy.","meme,internet,melee"},
 	{"pillow pile","BMCCnK","GN",1,1,3,"F2F2EE","87CEEB","heap of soft pillows","thud","Soft landing. Slow escape.","silly,defense"},
 	{"pillow sword","CMCHrK","dkf",1,6,1,"F2F2EE","87CEEB","pillow on a stick","boing","The softest blade.","silly"},

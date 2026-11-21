@@ -109,7 +109,7 @@ return {
 	{"giant marshmallow man","IMFJNA","Ukf",8,2,8,"F7F4F0","4FA3E8","towering puffy white figure","thud","Puffy, sweet, and very stompy.","edible,giant,silly"},
 	{"giant meatball","IMDGKF","DkcI",6,5,6,"7A3A2A","B0202E","enormous meatball, sauce dripping","rumble","A meteor of meat.","edible,heavy"},
 	{"giant moth monster","AHFJFB","jAkP",8,5,7,"F59E0B","1E3A8A","enormous moth with eye-pattern wings","whoosh","Big wings. Bigger lamp addiction.","kaiju,giant,insect"},
-	{"giant mousetrap","BMDLII","kcO",5,1,4,"C49A6C","8A929B","enormous spring trap, huge cheese","snap","Same idea. Bigger snap.","trap,silly"},
+	{"giant mousetrap","BMDLII","kcO",5,1,4,"C49A6C","F2C14E","huge wooden spring trap with a wedge of cheese","snap","Bait. Wait. SNAP.","household,trap,silly"},
 	{"giant mushroom","NJDLMI","GUlS",4,1,6,"C62828","F5F5F5","towering spotted cap like an umbrella","poof","Bounce on it. Very high.","plant,fungus,silly"},
 	{"giant oak","NGFCMI","GWkSO",6,1,10,"4E342E","33691E","enormous gnarled oak, wide crown","rustle","A thousand years of grumpiness.","ancient,heavy"},
 	{"giant onion","IJEDIF","jSMP",7,2,7,"E8D5A8","9A5A2A","onion as big as a hut","thud","Layers on layers. Tears on tears.","edible,giant,silly"},

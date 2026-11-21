@@ -120,6 +120,7 @@ return {
 	{"lawn chair balloon","DFBKHJ","Alg",2,2,1,"43A047","E53935","garden chair lifted by party balloons","engine","Up, up, and uh oh.","vehicle,silly"},
 	{"lawn flamingo","BMBJDI","jd",1,1,2,"FF3EA5","24262A","plastic flamingo on wire legs","thud","Fabulous lawn sentinel.","garden"},
 	{"lawn mower","DGBKHL","DkfTg",4,4,5,"2E8B57","F2C14E","small tractor body, spinning blade deck","engine","Gives enemies a short back and sides.","mechanical,vehicle,land"},
+	{"lawn sprinkler","OBCN1K","kSNP",4,3,4,"3FA34D","7CC8F2","impulse sprinkler head spraying a sweeping jet","splash","Tick-tick-tick-shhhhh. You're soaked.","household,garden,water,summer"},
 	{"lawyer","LMCJNA","jO",3,3,4,"111827","F8FAFC","robe, gavel, briefcase","ding","Objection! Sustained. Bonk.","silly"},
 	{"layer","KEBIyE","GSV",3,2,7,"A855F7","F9A8D4","stacked shells peeling away one at a time","pop","Like an onion. Or a cake. Everybody likes cake.","defense"},
 	{"layer cake","IMCLKI","dSc",2,3,3,"F7E0C0","7A4026","tall many-layered slice","chomp","Layers of joy, stacked high.","edible,sweet"},
@@ -129,7 +130,7 @@ return {
 	{"leader","LHCJNA","GQfh",5,5,6,"B45309","FDE047","commander pointing forward, cape, feathered hat","fanfare","Follow me! Wait, which way were we going?","warrior,royal"},
 	{"leaellynasaura","ACCJAA","dk",3,5,6,"8A7A6A","D8C8B0","small big-eyed polar dino","honk","Big eyes for long polar nights.","dinosaur,extinct,reptile"},
 	{"leaf","NGAELJ","dSP",1,6,1,"7CB342","FF9800","single flat leaf with veins","rustle","Floats down gently. Distracts briefly.","plant"},
-	{"leaf blower","OFCFJK","kIe",3,7,4,"E67E22","24262A","handheld engine with long nozzle","whoosh","Moves leaves. Moves enemies.","tool,garden,loud"},
+	{"leaf blower","OFCF1K","kIeN",4,7,4,"E67E22","24262A","handheld engine with a long nozzle and leaves","whoosh","Moves leaves. Moves enemies. Wakes the street.","household,garden,loud,push"},
 	{"leaf insect","AMAJFA","dZP",1,6,1,"6AC84A","4A8A3A","flat leaf-shaped green body","buzz","A leaf that walks. Very rude to salads.","insect"},
 	{"leaf pile","NGBLMI","ZSN",1,1,2,"FF9800","C62828","crunchy heap of autumn leaves","rustle","Jump in! Something is hiding in there.","plant,silly"},
 	{"leaf rake","JKCHJK","fH",2,5,3,"2E8B57","C9CED4","fan of springy tines","clank","Gathers leaves. Gathers foes.","garden"},
@@ -402,5 +403,4 @@ return {
 	{"longhouse","EMDCII","GSh",3,1,8,"6D4C41","C9A55A","long wooden hall with turf roof","thud","Feasting hall. Fighting hall. Same hall.","structure,building,ancient"},
 	{"longsword","CKCHrK","kfT",6,5,5,"8A929B","5A3A1E","long straight blade, two-hand grip","shing","For knights with long arms and longer speeches.","medieval,sharp"},
 	{"loofah","BGAHKI","Ff",1,6,1,"D2B48C","F3E6C8","scratchy dried scrubber","splash","Exfoliate the enemy.","bathroom,household"},
-	{"loom","OMCL1I","NO",2,1,5,"8B5A2B","D8CBB5","frame with criss-cross threads","clank","Weaves cloth. Weaves nets.","mechanical"},
 }

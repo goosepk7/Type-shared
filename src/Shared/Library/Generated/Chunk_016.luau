@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"loom","OMCL1I","NO",2,1,5,"8B5A2B","D8CBB5","frame with criss-cross threads","clank","Weaves cloth. Weaves nets.","mechanical"},
 	{"loon","ABBJDC","AfB",2,5,2,"1E1E1E","F2F2F0","checkered black-white back, red eye","wail","Its call sounds like a ghost.","bird,aquatic,spooky"},
 	{"loop","KLBL5K","jNY",3,6,2,"22D3EE","F472B6","glowing figure-eight track sending things back to start","warp","See flavour text: loop.","gaming,magic"},
 	{"loop de loop","KFBOKB","D",2,8,2,"FFEB3B","81D4FA","looping motion trail ribbon","whee","Wheeeee! Around we go.","silly"},
@@ -141,7 +142,7 @@ return {
 	{"magnetic pulse","FKCFOB","HO",5,8,1,"D32F2F","1976D2","red-blue ring tugging metal inward","whum","All your stuff flies toward me.","magnetic"},
 	{"magnetism","FKCNOI","lH",5,5,4,"C4302B","3E64D6","red-blue field lines curving outward","hum","Opposites attract. So does armour.","magnetic"},
 	{"magnetize","KKCAKB","lH",4,7,1,"D32F2F","1976D2","red-blue glowing field on target","hum","Everything metal sticks to you now.","magnetic"},
-	{"magnifying glass","BHABJK","Ke",2,6,2,"B58A3A","BFE6F2","round lens with handle","clank","Concentrated sunshine, bug's nemesis.","science,detective"},
+	{"magnifying glass","BHBBJI","Ke",4,6,3,"B58A3A","FFD36B","big brass-rimmed lens focusing a hot spot","clank","Concentrated sunshine. Hold still.","household,science,detective,fire"},
 	{"magnolia","NGDCMI","GdWFkS",3,1,6,"6D4C41","F8BBD0","big waxy pink-white blossoms","rustle","Flowers the size of plates.","plant,tree,flower"},
 	{"magpie","AMBJDB","dAb",2,7,1,"1E1E24","F2F2F2","black and white bird, long blue-green tail","tweet","Steals shiny things. Very shiny.","bird,cute"},
 	{"mahi-mahi","ABCJEC","DfB",4,7,4,"4AB04A","F2D82A","blunt head, green-gold rainbow","splash","Shines like a glowing rainbow.","fish,aquatic"},
@@ -402,5 +403,4 @@ return {
 	{"meteor punch","KADAKB","KEkf",8,8,3,"FF6D00","FFD54F","flaming fist plunging from above with crater","boom","A punch that came from space.","fire,melee,explosive"},
 	{"meteor shower","HAEEOB","KEkeP",8,8,5,"6D4C41","FFB300","many fiery streaks raining from a dark sky","roar","Make a wish. Then dodge.","space,explosive"},
 	{"meteor strike","HADAKB","KEkO",8,8,6,"5D4037","FF7043","single blazing rock slamming into a target ring","boom","Marked target. Incoming rock.","space,explosive"},
-	{"meteorite","HECAKB","Eke",6,8,7,"4E443C","D48A3C","charred pitted rock, glowing seams","whoosh","A meteor that actually made it.","space,heavy"},
 }

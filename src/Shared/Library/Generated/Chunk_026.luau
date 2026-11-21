@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"sumo wrestler","LEDJNA","GDkI",6,4,8,"F8FAFC","1E3A8A","huge wrestler, topknot, mawashi belt","stomp","Slaps once. You leave the ring.","sport,martial,heavy"},
 	{"sun","MAFGKJ","KEkHe",9,3,10,"FFC107","FF5722","blazing sphere with flickering corona","roar","Brings the sun down. Sunscreen sold separately.","space"},
 	{"sun bear","AMCJAA","Dkf",5,5,7,"1A1614","E8B44A","small black bear, golden chest crescent","roar","Tongue long enough to slurp honey.","mammal,predator,wild"},
 	{"sun dance","KHCNOI","KF",3,4,3,"FFC107","FFF8E1","caster dancing as sunlight floods in","music","Dance the clouds away.","music,holy"},
@@ -403,4 +402,5 @@ return {
 	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
 	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
 	{"thyme","IGBOMI","WF",2,4,3,"5E7A4A","8A9A6A","tiny-leaf sprigs","crunch","There's always thyme for this.","edible,vegetable,healthy,herb"},
+	{"tiara","BHAONI","F",2,5,3,"C9CED4","8E5CC2","sparkly jewelled headband","swish","Princess mode: on.","royal,shiny"},
 }
