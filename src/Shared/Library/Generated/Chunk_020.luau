@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pitching machine","OMCMwI","keh",3,7,5,"2F7D6B","F2EBDD","tripod ball launcher with a hopper and twin wheels","hum","Strike one. Strike two. Duck.","sport,baseball,turret"},
+	{"pith helmet","BMBONI","G",1,5,3,"A39B6A","D2B48C","domed explorer helmet","clink","Dr. Explorer, I presume?","explorer"},
+	{"pitta bird","AMAJDB","dA",1,7,1,"2AB04A","E8302A","rainbow plump ground bird","tweet","A rainbow on tiny legs.","bird,cute"},
+	{"pixel","BHAELJ","UjP",2,7,1,"EF4444","22D3EE","flat coloured squares in red, green and blue","beep","One dead one. Right in the middle. Forever.","tech,gaming"},
 	{"pixel knight","AKBJYA","Qfh",4,6,5,"C48448","743A8C","squat bronze voxel knight in a kettle hat, lantern eyes","clang","For the high score!","game,arcade,pet"},
 	{"pixel ship","OHAMgE","Ae",3,8,4,"E8EDF2","FF4F6E","tiny voxel starfighter over your shoulder","pew","Pew. Pew pew.","game,arcade,pet"},
 	{"pixel snake","AHCJCD","QS",4,7,3,"7CFF6B","1FA34A","glowing voxel snake with a stinging trail","blip","Don't touch the tail.","game,arcade,trail"},
@@ -381,6 +385,7 @@ return {
 	{"puffbird","AMAJDB","dA",1,7,1,"8A6A4A","F2F2EE","puffy round bird","tweet","Very puffy. Very still.","bird,cute"},
 	{"puffed rice","IMAELB","eVP",2,7,1,"F7F2E0","E8D8A8","tiny puffy grains","pitter","Crunchy air.","edible,sweet,snack"},
 	{"pufferfish","AJBJEC","UdWTMB",3,6,1,"E8D08A","6E5A3A","spiky round balloon fish","splash","Inflates into a spiky balloon. Do not lick.","fish,aquatic"},
+	{"pufferfish pop","AJBOEC","UWT",4,3,5,"E2C36A","F3E9C8","puff up into a spiky ball, then pop","pop","Personal space: enforced.","critter,sea,buff,defense"},
 	{"puffin","ABBJDB","DdAB",2,7,2,"1E1E1E","F2701E","black-white body, rainbow parrot beak","squawk","Holds 10 fish in its beak at once.","bird,ocean,cute"},
 	{"puffin chick","ABAJDB","DAB",1,7,2,"4A4A50","F2F2F0","tiny grey fluffball","squawk","A fluffy sock with a beak.","bird,ocean"},
 	{"pug","AMBJAA","dQf",2,6,2,"D9C2A0","2B2420","squished black face, curly tail, wrinkles","yip","Snorts like a tiny tractor.","mammal,pet,cute,silly"},
@@ -398,9 +403,4 @@ return {
 	{"pumpkin","IGCGKF","EkI",5,5,6,"E8761A","5E7A2B","big ribbed orange gourd, stem","rumble","Rolls downhill with intent.","edible,heavy,holiday,vegetable"},
 	{"pumpkin bread","IMCCII","GF",4,2,5,"C2622B","D9A04A","orange-brown spiced loaf","thud","Autumn in a loaf.","edible,giant,dessert"},
 	{"pumpkin catapult","CMDMxI","dkeV",4,3,5,"8B5A2B","E67E22","catapult loaded with pumpkins","creak","Splat attack, seasonal edition.","silly,holiday"},
-	{"pumpkin golem","AADJNA","GKk",6,3,6,"EA580C","166534","stacked pumpkins with glowing faces","crunch","Very festive. Very heavy.","halloween,construct"},
-	{"pumpkin head","AACJNA","KDj",5,5,4,"EA580C","166534","lanky figure with a glowing carved pumpkin head","cackle","Glows from the inside. Smells like pie.","spooky,halloween"},
-	{"pumpkin house","EGCCII","GFS",2,1,4,"F57C00","43A047","giant pumpkin with door and windows","chime","Cosy inside. Spooky outside.","holiday,silly"},
-	{"pumpkin king","LACJNA","Kjh",5,5,4,"F97316","111827","tall skeleton with pumpkin crown","cackle","Rules all of Halloween.","halloween,royal,spooky"},
-	{"pumpkin patch","NGCLMI","SNh",3,1,4,"F57C00","43A047","sprawling vines with giant pumpkins","rustle","Picks itself. Rolls at you.","holiday,spooky"},
 }

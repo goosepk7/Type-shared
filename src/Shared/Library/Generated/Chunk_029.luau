@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weasel","AMBJAA","CjfT",3,8,2,"8A5A30","F2E6CC","long slim body, short legs, white belly","chatter","Pop goes the weasel.","mammal,predator"},
+	{"weather","GFCNOI","jP",3,5,3,"90CAF9","FFF59D","rapidly switching sun, rain and snow","whoosh","Unpredictable, as always.","storm"},
+	{"weather machine","OFDN1I","jPh",6,2,5,"F2F2EE","87CEEB","dish tower ringed by tiny clouds","hum","Forecast: whatever you want.","scifi"},
+	{"weather reporter","LFCJNA","jh",3,4,3,"0EA5E9","FDE68A","pointer, map, umbrella","whoosh","Forecast: you, getting rained on.","silly,storm"},
+	{"weather vane","EFBCII","GdS",1,1,4,"37474F","FFB300","metal rooster on a spinning arrow","thud","Points where the wind blows.","structure"},
+	{"weaver bird","AMAJDB","GdA",1,7,1,"F2D02A","2A2A1E","yellow bird hanging from woven nest","tweet","Knits its own house.","bird,cute"},
 	{"web","BGCLII","SHN",3,2,3,"F2F2F2","BFC9D1","big silver spiral spiderweb with dew drops","thwip","Sticky situation. Literally.","sticky,trap,spooky"},
 	{"web snare","BGBA3B","SeN",3,10,2,"F4F4F0","AEB8C2","a sticky web ball that pins the target where it stands","thwip","Hang around a while.","hero,movie,sticky"},
 	{"website","MDCLnI","jNY",3,1,3,"F8FAFC","3B82F6","browser window with a spinning wheel and ERROR 404","bzzt","404: enemy not found.","tech,internet"},

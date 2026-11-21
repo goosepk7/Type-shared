@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"loggerhead","ABCJUC","GNB",3,2,8,"B8703A","E8C08A","big headed sea turtle","hiss","Big head. Crunches crabs.","reptile,armored"},
+	{"loki","LLCJZA","jZVbY",7,8,5,"166534","D4AF37","grinning red-haired trickster, fur cloak, flickering copies","cackle","It was not him. It is never him. It was him.","mythical,norse,trickster"},
 	{"lollipop","IMBHJI","dkf",3,5,4,"E8434F","F7F2F0","swirl disc on a stick","bonk","A sweet club with a stick handle.","edible,silly,candy"},
 	{"lomo saltado","IGBOKI","F",2,5,3,"8A3A1E","F2C24A","beef stir fry with fries","crunch","Steak and fries in a wok.","edible,healthy"},
 	{"lone pine","NGDCMI","GWkS",4,1,8,"4E342E","1B5E20","one windswept tree on a hill","rustle","Stands alone. Stands strong.","plant,tree"},
@@ -401,6 +403,4 @@ return {
 	{"mess","KMCNGI","jSNP",3,1,3,"F59E0B","8B5CF6","spreading sprawl of toys, crumbs, socks and spilled juice","clatter","Who made this? Nobody. It was always nobody.","silly,household"},
 	{"message in a bottle","BBAA2I","eh",1,5,1,"BFE6F2","E8D9B0","corked bottle with rolled note","thud","Help is on the way. Eventually.","container"},
 	{"messer","CKCHrK","fV",5,6,4,"8A929B","8B5A2B","knife-sword hybrid","shing","A very, very big knife.","sharp,ancient"},
-	{"meta","KLCOnE","DWT",6,7,4,"7C3AED","FACC15","ranked chart with one glowing gold entry at the top","ding","Everyone runs it. That is why it is boring.","gaming,meme"},
-	{"metal","FKCIKI","Ga",4,3,7,"8C949C","D6DCE2","plated steel dome shell","clank","Clang. Your problem now.","heavy"},
 }

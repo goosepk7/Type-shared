@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thumbtack","BMALJK","TN",1,1,1,"C0392B","C9CED4","tiny pin with round head","tap","Don't step barefoot.","office"},
+	{"thump","KMBAKB","kO",3,7,2,"8D6E63","FFE0B2","dull heavy shockring","thump","Thump. Ow.","heavy"},
+	{"thunder","FDDFOB","kO",5,9,2,"4B4E6D","C7CEFF","visible sound ring, purple-grey shock rim","boom","Loud enough to rattle your teeth.","electric,loud"},
+	{"thunder and lightning","FDEEOJ","kLO",8,8,2,"FFEB3B","3949AB","bolts and booming rings from above","boom","Very, very frightening.","electric,storm"},
+	{"thunder bear","ADDJAA","kfL",7,5,7,"1E3A8A","FDE047","bear with crackling blue fur","thunder","Hibernates in thunderclouds.","storm"},
+	{"thunder bloom","NDBLMI","SLP",4,1,2,"FFEB3B","7C4DFF","crackling electric petals","chime","Zap! It bloomed.","plant,magic,mythical"},
 	{"thunder bomb","FDCGKI","ELO",6,7,1,"FFEB3B","3D5AFE","crackling orb exploding into arcs","crack","Bright, loud, and very zappy.","electric,explosive"},
 	{"thunder bunny","ADAJAG","UL",2,10,1,"FDE047","60A5FA","fluffy rabbit crackling with static","zap","Zappy hops. Shocking cuteness.","storm,cute,silly"},
 	{"thunder dragon hatchling","ADBJAB","AL",3,8,2,"FDE047","1D4ED8","tiny crackling blue dragon","zap","Sneezes lightning.","cute,storm,reptile"},
@@ -397,10 +403,4 @@ return {
 	{"turnstile","EKBCII","GSN",1,1,5,"B0BEC5","37474F","spinning three-armed gate","thud","One at a time, please.","structure,defense,silly"},
 	{"turntable","BMCFJI","jO",2,2,4,"24262A","C9CED4","spinning deck with tonearm","scratch","Drop the beat. Drop the foes.","music"},
 	{"turret","OKCMwI","Te",5,7,6,"2C3539","6B7B3A","swivelling twin-barrel tripod gun","hum","Never sleeps. Never blinks.","defense,mechanical"},
-	{"turtle","AMBJUA","GNB",2,2,8,"5A7A3A","C8B87A","domed shell, stubby legs","hiss","Carries its house everywhere.","reptile,armored"},
-	{"turtle tank","DEDMHL","Geag",5,2,10,"43A047","8D6E63","tank under a giant turtle shell","engine","Slow. Steady. Untouchable.","vehicle,silly"},
-	{"turtle warrior","ABCJAA","GkB",4,3,8,"15803D","A16207","turtle with shell shield and bo staff","thud","Slow. Steady. Unbreakable.","warrior"},
-	{"tusk","BMCHuB","DkT",5,5,6,"F5ECD7","D8C7A0","long curved ivory tusk, pointed tip","thud","Pointy end first. Always.","body,sharp,wild"},
-	{"tutu","BMBONI","Dd",1,7,1,"F06292","F2F2EE","frilly ballet skirt","swish","Pirouette of doom.","clothing,silly"},
-	{"tuxedo","BMCONI","d",1,5,2,"24262A","F2F2EE","sharp black suit with bow tie","swish","Dressed to impress and/or defeat.","clothing,fancy"},
 }
