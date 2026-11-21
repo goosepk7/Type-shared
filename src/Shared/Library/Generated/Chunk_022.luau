@@ -3,7 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"robot vacuum monster","OKBJGF","DdH",2,6,4,"1F2937","22C55E","round vacuum robot with angry eyes","whir","Sucks up everything. Including you.","robot,silly"},
 	{"robot wizard","OLCJNA","eLY",5,4,6,"6366F1","94A3B8","robot in a pointy hat with antenna wand","zap","Casts spells with a USB wand.","robot,magic,silly"},
 	{"robotics engineer","LKCJNA","Fh",4,4,4,"1E3A8A","94A3B8","goggles, soldering iron, robot arm","clank","Builds a robot friend in seconds.","tech,robot"},
 	{"roc","AFFJDB","Akl",8,6,7,"78350F","FDE68A","colossal eagle, huge talons","screech","Snacks on elephants. Probably exaggerating.","mythical,bird,flying"},
@@ -59,7 +58,6 @@ return {
 	{"rolling boulder","BEELIF","DkO",7,6,9,"8C8C88","7A4E2D","giant round stone rolling","snap","Run. Run faster.","trap,defense"},
 	{"rolling boulder trap","MEDAIF","kTeO",7,6,9,"8D6E63","6D6D6D","huge round boulder thundering down a tunnel","rumble","Run! RUN!","silly,heavy"},
 	{"rolling cart","BMCAHF","Dk",2,5,4,"C9CED4","24262A","wheeled cart with shelves","clang","Pushed with intent.","kitchen,household"},
-	{"rolling pin","BMBHtK","kfO",2,6,4,"C49A6C","8B5A2B","smooth wooden roller, two handles","bonk","Flattens dough and dreams.","kitchen,silly"},
 	{"romaine","IGBOMI","WF",2,4,3,"5E9E3A","D8E8B8","tall crisp leafy head","crunch","A lettuce that stands up straight.","edible,vegetable,healthy"},
 	{"roman candle","CABAJF","KeV",3,6,1,"2F6FD1","D4A72C","long tube shooting coloured balls","boom","Pew pew pew, but sparkly.","party,explosive"},
 	{"roman soldier","LKCJNA","GDf",5,5,7,"991B1B","CA8A04","red tunic, square shield, plumed helmet","clang","Marches in a turtle. A very spiky turtle.","warrior,ancient"},
@@ -403,4 +401,6 @@ return {
 	{"sea lettuce","NBBLMI","SNB",1,1,2,"76FF03","9CCC65","bright green crinkly sheets","splash","Slippery salad of the sea.","plant,aquatic"},
 	{"sea lily","ABAJGI","GTN",1,1,4,"C83A5A","F2A0B0","feathery arms on stalk","squelch","A starfish pretending to be a flower.","aquatic,ocean"},
 	{"sea lion","ABCJEC","UDdfB",3,5,4,"8A6440","C8A07A","sleek brown seal, upright on front flippers","bark","Balances balls. Barks for fish.","mammal,aquatic"},
+	{"sea mine","CBCLKJ","EkB",7,1,4,"24262A","9C4A1A","spiked floating metal ball","boom","A spiky beach ball you shouldn't hug.","explosive,ocean"},
+	{"sea monkey","ABAJRA","GfTPB",1,4,5,"F2C8A0","E8A07A","tiny wiggly brine shrimp","clack","Not monkeys. Do not ask.","crustacean,aquatic,armored,silly"},
 }

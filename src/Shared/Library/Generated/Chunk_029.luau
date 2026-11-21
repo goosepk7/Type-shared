@@ -3,9 +3,6 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
-	{"wendigo","ACDJNA","DiJf",7,8,6,"E7E5E4","7DD3FC","gaunt antlered figure, frost breath","howl","Always cold. Always hungry. Never invited.","spooky,frozen,cryptid"},
-	{"werebear","AGDJNA","Wkf",7,5,7,"78350F","FDE68A","huge bear-man in torn flannel","roar","Hibernates through every meeting.","spooky"},
-	{"werecat","AICJNA","DZf",5,9,4,"1C1917","FACC15","cat-faced prowler with long claws","hiss","Nine lives, one bad attitude.","spooky"},
 	{"werefox","ALCJNA","jZY",4,9,3,"EA580C","F8FAFC","fox-eared trickster with fluffy tail","yip","Sly by nature. Fluffy by design.","trickster"},
 	{"wererat","AJBJNA","fPb",3,8,3,"57534E","F9A8D4","ratty hunched figure, long pink tail","squeak","Turns into a rat. Has a lot of cheese.","spooky"},
 	{"wereshark","ABDJNC","DfB",6,8,5,"64748B","F8FAFC","shark-headed muscle swimmer","chomp","Full moon. Fin up. Everyone out of the pool.","aquatic,silly"},
