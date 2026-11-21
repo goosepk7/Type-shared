@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
+	{"boxing glove launcher","OKCMxI","keO",4,5,5,"C0392B","8E9196","launcher of spring-loaded gloves","clank","Haymakers by the dozen.","defense,silly"},
 	{"boxing ring","BMDNII","O",2,1,6,"2F6FD1","C0392B","square ring with ropes","bonk","Ding ding! Round one.","sport"},
 	{"boxty","IMBAKK","Uke",3,7,2,"E8C88A","D9A04A","potato pancake","whoosh","A potato pancake from Ireland.","edible"},
 	{"boy","LMBJNA","UDf",3,7,3,"22C55E","F2D0B4","kid in a striped shirt with a slingshot in his pocket","yay","Found a stick. It is a sword now.","family"},
@@ -114,7 +116,7 @@ return {
 	{"bubble plant","NBBLMI","UdN",2,1,1,"B3E5FC","F48FB1","flower that blows big soap bubbles","chime","Bubbles everywhere. Pop pop pop.","silly,cute"},
 	{"bubble prison","FBCLKJ","lO",4,4,3,"E1F5FE","F8BBD0","big bubble floating trapped enemy upward","pop","Floaty jail.","aquatic,silly"},
 	{"bubble storm","GBDEOJ","Udl",3,4,1,"B3E5FC","F8BBD0","cloud pouring hundreds of bubbles","pop","Pop! Pop! Pop!","silly,cute,storm"},
-	{"bubble tea","IBBOKI","FeV",2,6,2,"C8A070","2A1610","tall cup, wide straw, dark pearls","slurp","Drink it. Chew it. Shoot the pearls.","edible,drink"},
+	{"bubble tea","IBBAKB","keV",2,8,2,"C8A070","2A1610","tall cup of milk tea with a wide straw and dark pearls","slurp","Five pearls, rapid fire. Slurp.","kitchen,projectile,volley,edible,sweet"},
 	{"bubble tornado","HBDN5K","Ujl",4,5,2,"B3E5FC","F8BBD0","spinning column of soap bubbles","pop","Pop pop pop. Wheeeee.","storm,silly"},
 	{"bubble tower","EBDMII","GUlSeN",3,1,5,"B3E5FC","F48FB1","tower blowing huge bubbles","thud","Traps enemies in bubbles. Pop!","structure,defense,tower,silly"},
 	{"bubble waffle","IMCIII","Ga",3,3,3,"E8B860","F7F2EC","waffle covered in bubbles","thud","A waffle with pop-able bubbles.","edible,dessert"},
@@ -390,7 +392,9 @@ return {
 	{"capuchin","AMBJBA","deb",2,7,2,"3A2A20","F2E6CC","cream face, dark cap","chatter","Washes food. Fancy little monkey.","mammal,primate"},
 	{"capybara","AMCJAA","dFB",3,6,1,"9A6E44","C8A07A","barrel rodent, square head, chill face","squeak","Everyone's friend. Even crocodiles'.","mammal,cute,meme"},
 	{"car","DMCKHL","Dkg",5,7,6,"C8102E","2B2D33","boxy body, four wheels, round headlights","engine","Beep beep. Get out of the lane.","mechanical,vehicle,land"},
+	{"car alarm","OFDMeI","kSI",3,3,3,"F28A2E","F5C21B","a parked car flashing and blaring its alarm in waves","beep","Nobody ever checks.","transit,sound,silly"},
 	{"car battery","BDBL2K","L",3,1,5,"24262A","C0392B","boxy battery with clamps","clang","Bzzzt. Jump start.","urban"},
+	{"car crusher","OKENnI","EO",4,2,5,"6B6F76","F5C21B","two junkyard crusher plates slamming on a marked spot","crunch","Compact cars, now even more compact.","transit,area,silly"},
 	{"car pile up","DMECHL","GSO",5,1,7,"E53935","9E9E9E","tangled heap of crashed cars","engine","Instant barricade.","vehicle,mechanical,silly"},
 	{"car transporter","DMEKHL","Dkgh",6,4,8,"E53935","B0BEC5","double-deck trailer stacked with cars","engine","Delivers eight cars at once. Into you.","mechanical,vehicle,land"},
 	{"car wall","EKDCII","GS",3,1,7,"795548","9E9E9E","rusty stacked cars","thud","Recycling, but violent.","structure,defense"},
@@ -399,8 +403,4 @@ return {
 	{"carabiner","BKALKF","H",1,7,5,"7D3CB5","C9CED4","D-shaped clip with spring gate","bonk","Click. Secured.","sport"},
 	{"caracal","AMCJAA","ZfTe",4,7,3,"C08E5A","1E1E1E","long black ear tufts, sandy coat","hiss","Can swat birds out of the air. Rude.","mammal,predator,wild,desert"},
 	{"caracara","AMCJDB","DAfT",5,9,3,"2A2420","E8702A","orange face, black cap","screech","Walks around like it owns the place.","bird,predator"},
-	{"caramel","IMBLGI","ScN",2,3,3,"C68E3A","E8B860","glossy golden drizzle","gloop","Sticky gold. Wonderful and dangerous.","edible,sticky,candy,sweet"},
-	{"caramel apple","IMBLGI","ScNP",2,3,3,"B5651D","C8262B","apple on a stick, glossy caramel shell","gloop","Sticky, crunchy, impossible to eat politely.","edible,sticky,sweet"},
-	{"caramel chews","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","wrapped golden squares","gloop","Chewy squares. Teeth trap.","edible,sticky,candy"},
-	{"caramel corn","IMBGKF","EN",4,6,1,"C68E3A","F2D08A","golden clumps of popcorn","pop","Crunch, stick, repeat.","edible,explosive,candy"},
 }

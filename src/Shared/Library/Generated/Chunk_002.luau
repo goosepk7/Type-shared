@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"asgard","MDFNII","SLh",7,1,10,"FFD54F","80DEEA","golden city on a floating rock","chime","Mighty realm. Mightier welcome.","place,mythical"},
 	{"ash","FABDOJ","jSN",2,3,2,"6E6A66","B8B2AC","drifting grey flakes, dim orange specks","hiss","Fire's leftovers. Gets in your eyes.","fire"},
 	{"ash cloud","HAEDOJ","jSMN",5,3,3,"595350","9E9690","huge grey billowing ash plume","rumble","Turns day into a very grey night.","natural,fire"},
 	{"ash fall","HADEOJ","jSN",4,3,3,"9E9E9E","5D4037","grey snowfall of volcanic ash","hush","Grey snow. Warm and gritty.","fire,natural"},
@@ -331,6 +332,7 @@ return {
 	{"bat cave","MIENII","jSh",4,1,8,"263238","6D4C41","dark cavern with hanging bats","echo","Disturb nothing. Too late.","place,adventure,spooky"},
 	{"bat flower","NIBLMI","jd",3,1,2,"212121","4A148C","black bloom with bat-wing bracts and whiskers","moan","Looks like a bat. Acts like a flower.","plant,spooky"},
 	{"bat ray","ABCJEC","STB",4,5,3,"3A3A3A","F2F2EE","dark ray with big wings","whoosh","A bat but wet.","fish,aquatic,ocean"},
+	{"bat sonar","AFBADB","TV",4,9,2,"5A4A5E","B08CFF","a bat shrieks a sonar ping that echoes between enemies","screech","It can hear you thinking about dodging.","critter,mammal,projectile,chain"},
 	{"bat swarm","AICNLB","jAR",4,9,3,"2A2433","B04A6A","a swarm of bats circling and pecking the target area","screech","A vampire's version of a group chat.","hero,movie,spooky,swarm"},
 	{"bat-eared fox","AMBJAA","jdfb",3,7,2,"A89070","3A2A1E","enormous ears, small fox","yip","Ears as big as satellite dishes.","mammal,wild"},
 	{"batfish","ABAJEC","dB",1,6,1,"8A7A6A","E8A0A0","flat fish with red lips","splash","Walks on fins, wears lipstick.","fish,aquatic,silly"},
@@ -401,6 +403,4 @@ return {
 	{"beauty","KHCF6B","jcaO",3,5,2,"F9A8D4","FDE68A","shimmering pink sparkle wave with a hand mirror and a rose","shimmer","Stunning. Literally. Two seconds of stun.","fancy,cute"},
 	{"beaver dam","EEDCII","GkS",5,4,7,"7A5232","C89A5E","wall of gnawed logs that bursts and rolls forward","thud","Builds dams. Never takes a day off.","critter,mammal,wall"},
 	{"bed","BMDN0I","FN",1,1,5,"F2F2EE","1F2F55","bed with pillows and blanket","thud","Nap time heals all wounds.","furniture,household"},
-	{"bed bug","AMAJFA","diAP",1,6,1,"8A3A1E","C8702A","flat red-brown tiny bug","buzz","Don't let them bite.","insect"},
-	{"bed car","DMBKHL","DFkg",2,5,3,"90CAF9","F5F5F5","bed frame with wheels and an engine","engine","Sleep and drive. Not recommended.","vehicle,silly"},
 }
