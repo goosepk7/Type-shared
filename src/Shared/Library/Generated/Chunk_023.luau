@@ -28,7 +28,7 @@ return {
 	{"sea witch mermaid","ABCJEC","MHB",5,5,5,"7C3AED","0F766E","octopus-tentacled sorceress","cackle","Eight arms. All of them spellcasting.","aquatic,witch"},
 	{"sea wyvern","ABDJDB","ATB",6,7,6,"0E7490","A5F3FC","finned wyvern dripping seawater","screech","Dive-bombs from the waves.","reptile,aquatic"},
 	{"seafood platter","IMCJII","Gdc",5,1,6,"E8603A","F2E8D0","tiered tray of seafood","thud","An ocean on a plate.","edible,giant,silly"},
-	{"seagull","ABBJDB","DdAbB",2,7,2,"F7F7F4","8A9098","white-grey gull, yellow beak, open beak","squawk","Steals fries. Screams MINE.","bird,ocean"},
+	{"seagull swoop","AFBADB","DAQ",3,8,2,"F6F5F0","A9B2BB","a seagull swoops at one enemy three times","squawk","Mine. Mine. Mine.","critter,bird,bolt"},
 	{"seahorse","ABAJEC","dZB",1,6,1,"E8A43A","F2D07A","curled tail, horse head, upright","splash","Dads carry the babies. Respect.","fish,aquatic,cute"},
 	{"seal","ABCJEC","UfB",3,5,4,"7E8288","C8CCD0","plump spotted body, flippers, whiskers","bark","Slaps its belly. Applause.","mammal,aquatic"},
 	{"seal kunai","CDBAJB","TeY",6,10,2,"F2C14E","1F6FEB","three-pronged kunai with a glowing seal tag","warp","Throw it. Be there. Same thing.","anime,ninja,speed"},
