@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"clam","ABAJGI","GfHN",1,1,6,"D8C8B0","9A8A70","two-shell clam half open","squelch","Happy as a clam. Allegedly.","mollusk,aquatic"},
+	{"clam chowder","IBBOGI","FS",3,4,3,"F2EAD5","C8A070","creamy white soup, crackers","slurp","Creamy, briny, and warming.","edible,warm,healthy"},
 	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
 	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
 	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
@@ -152,6 +154,7 @@ return {
 	{"coif","BKAONI","G",1,6,4,"5B6168","8A929B","chainmail hood","clank","Clinky hoodie.","armor,defense"},
 	{"coil","BKBLCG","Ukl",3,5,4,"9CA3AF","22D3EE","tight metal spiral compressed then launching upward","boing","Compressed anger. With a boing.","mechanical,bouncy"},
 	{"coil barrage","KMCHNI","Dkf",7,9,2,"C87846","FFECD2","a storm of springing coiled-arm punches","punch","Eight punches. One boing.","anime,pirate,punch,rubber"},
+	{"coiling dragon fist","KHDHPB","Dlf",6,8,3,"FFC83A","FFF3B0","a gold ki fist and a light dragon corkscrewing up","roar","It's a punch. The dragon is just how hard.","anime,ki,martial arts,punch"},
 	{"coiling viper","KICAKD","eN",6,7,2,"7A3CFF","E7D6FF","a serpent of blade light slithers round cover to its target","slash","It always finds a way around.","anime,sword,snake,breathing"},
 	{"coin","BMAAKJ","Uce",1,8,3,"D4A72C","F1C40F","shiny gold coin","chime","Flip it. Heads, you win.","treasure,shiny"},
 	{"coin flip","KKBAKB","ja",3,8,1,"FFC107","FFFFFF","spinning golden coin","ting","Heads you win. Tails you also win?","luck,chaos"},
@@ -400,7 +403,4 @@ return {
 	{"crappie","ABBJEC","dB",2,6,1,"8A9A8A","3A3A3A","speckled panfish","splash","Speckled and snacky.","fish,aquatic"},
 	{"crash","KMCAKB","kO",5,8,3,"90A4AE","FFCC80","tumbling impact with debris","crash","Wham. Everything everywhere.","silly"},
 	{"crate","BMCC2I","Gk",2,1,6,"8B5A2B","D2B48C","nailed wooden slat crate","thud","Smashable. Stackable. Loot inside.","container"},
-	{"crate barricade","EECCII","GdS",2,1,4,"A1887F","6D4C41","stacked wooden crates","thud","Mystery boxes. Mystery defence.","structure,defense,flammable"},
-	{"crate of tnt","BACL2I","EkP",8,1,2,"C0392B","8B5A2B","wooden crate stencilled TNT","thud","Do. Not. Drop.","container,explosive"},
-	{"crater","MEELII","SHN",4,1,8,"5D5D5D","8D6E63","round dented bowl with a rocky rim","rumble","Something big landed here once.","place,terrain"},
 }

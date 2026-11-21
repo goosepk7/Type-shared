@@ -134,6 +134,7 @@ return {
 	{"black dragonfish","AIAJEC","dcB",1,6,1,"1E1E24","8AE8F0","black eel fish with glowing barbel","splash","Glows red light only it can see.","fish,aquatic,deepsea"},
 	{"black eyed susan","NGBNMI","dFS",2,1,2,"FFC107","3E2723","golden petals with a dark centre","rustle","Bright, cheerful, tough.","plant,flower"},
 	{"black fire","FIDFOB","KiP",7,6,3,"1A1020","8B3FD9","inky flames with violet rims","hiss","Fire that read too much poetry.","fire,spooky"},
+	{"black flame dragon","KIEBPB","KTe",7,4,3,"2A1438","B26BFF","a weaving dragon of black and violet fire","roar","Don't use it with your arm still healing.","anime,dragon,dark fire,wave"},
 	{"black forest cake","IMCLKI","dSc",2,3,3,"3A1A10","B0101E","chocolate layers, cream, cherries","chomp","A dark forest with cherries in it.","edible,sweet"},
 	{"black griffin","AIDKAB","AZg",7,8,6,"111827","7C3AED","black-feathered griffin with violet eyes","screech","Hunts by moonlight.","mythical,mount,spooky"},
 	{"black hole","HIFN5K","iSHO",10,3,10,"050308","FF8A3D","black sphere, glowing accretion disc, bending light","hum","Everything goes in. Nothing comes out.","space,danger"},
@@ -184,6 +185,7 @@ return {
 	{"blaster rifle","CDCAwI","KeV",6,7,4,"24262A","C9CED4","long rifle with energy cell","zap","Pew-pew, extra pew.","scifi,ranged"},
 	{"blaze","FADNOI","KSP",6,6,3,"D9480F","FFB347","wide wall of tall flames, thick embers","roar","Not a campfire. Definitely not a campfire.","fire"},
 	{"blaze knuckle","KADAKB","KEke",8,8,2,"FF8A1E","7A1A08","a giant fist of flame roaring forward","whoosh","Knuckles, but a wildfire.","anime,pirate,fire,punch"},
+	{"blazing sigil shot","KACAKB","KEe",5,9,2,"FFB13A","FFF0C2","a fire-gold hand-sign sigil firing one blazing bolt","whoosh","The hand signs are mostly for style. Mostly.","anime,ki,fire,bolt"},
 	{"bleeding heart","NGBNMI","dFS",2,1,2,"E91E63","FFFFFF","row of dangling heart blooms","rustle","Dramatic. Very dramatic.","plant,flower"},
 	{"bleeding tooth fungus","NJBLMI","SM",3,1,2,"F5F5F5","C62828","white cap oozing red drops","poof","Looks like it is bleeding. Yikes.","plant,fungus,spooky"},
 	{"blender","BMBLII","jV",3,3,4,"BFE6F2","24262A","jug with spinning blades on base","whirr","Whirrrr. Smoothie.","kitchen,household"},
@@ -401,6 +403,4 @@ return {
 	{"boxer dog","AMCJAA","DQkf",4,7,4,"C27A3A","F2EEE6","square jaw, muscular, paws up pose","bark","Punches the air when happy.","mammal,pet"},
 	{"boxfish","ABAJEC","GdMB",1,6,1,"F2D82A","1E1E1E","cube-shaped yellow fish","splash","A swimming box with polka dots.","fish,aquatic,silly"},
 	{"boxing","KMCONA","DkfO",5,8,4,"DC2626","F8FAFC","pair of red gloves throwing a one-two, bell ringing","bell","Ding ding. Gloves up. Chin down.","sport,melee"},
-	{"boxing combo","BMBHJI","klf",4,9,1,"C62828","F5F5F0","pair of padded red gloves throwing a jab-cross-uppercut","thump","Jab, cross... uppercut.","sport,boxing,melee"},
-	{"boxing glove","BMBHJK","kfO",2,7,3,"C0392B","F2F2EE","padded red glove","bonk","Float like a butterfly, bonk like a glove.","sport"},
 }

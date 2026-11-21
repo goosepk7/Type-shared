@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"henchman","LMBJNA","dQP",2,5,3,"111827","FACC15","black jumpsuit, sunglasses, clipboard","grunt","Here to lose dramatically.","villain,silly"},
+	{"henodus","ABBJUA","GNB",2,2,8,"6A6A5A","C8C0A8","flat square turtle-like reptile","hiss","A square turtle. Weird.","reptile,armored"},
+	{"herald","LMCJNA","Oh",3,5,3,"1D4ED8","FACC15","tabard, trumpet, scroll","horn","HEAR YE. HEAR YE. Ow, my ears.","royal"},
+	{"herb","NGANMI","FS",1,1,2,"7CB342","9CCC65","small bundle of fragrant leaves","rustle","Rub it on. Feel better.","plant,herb"},
+	{"herbal tea","IABOKI","FN",2,5,2,"E8D08A","F2E8C8","teacup with leaves","slurp","Gentle, soothing, sleepy.","edible,drink,warm"},
 	{"herbalist","LJCJNA","FM",3,4,4,"365314","A16207","jars of herbs, mortar and pestle","bubble","Has a remedy for everything. Tastes awful.","healer,plant"},
 	{"hercules","LEDJXA","Dklf",8,6,9,"B45309","FDE68A","mega-muscled hero in a lion skin swinging an olive-wood club","grunt","Twelve labours done. Yours is number thirteen.","mythical,greek,warrior"},
 	{"hercules beetle","AMBJFA","Gklf",3,3,6,"C8B87A","1E1E1E","giant beetle with massive horn","click","Strongest bug. Named accordingly.","insect,armored"},
@@ -221,6 +226,7 @@ return {
 	{"howitzer","OADMxI","Eke",8,1,7,"4D5D3A","1F2937","long angled barrel on two wheels with a trail spade","boom","Knocks politely from three miles away.","military,explosive,heavy"},
 	{"howl","KFCFOB","jN",4,8,1,"90A4AE","E8EAF6","rippling long sound wave, moon glint","howl","Awoooooo!","loud,spooky"},
 	{"howler monkey","AMBJBA","debO",2,7,2,"3A1E14","8A4A22","dark shaggy, big throat, howling","howl","Loudest land animal. Ears hurt.","mammal,primate"},
+	{"howling fang rush","KFCHAA","Dkf",4,9,2,"9FD8FF","FFFFFF","six fast fang strikes under a spectral wolf head","howl","Statistically the strongest move. Emotionally, a gamble.","anime,martial arts,wolf,combo"},
 	{"huayangosaurus","AMCJAA","GkfT",4,3,9,"8A6A3A","D8B07A","small early stegosaur","grunt","Tiny stego. Same spikes.","dinosaur,extinct,reptile,armored"},
 	{"hubcap","BKBAKK","Ue",2,8,3,"DDE3E8","C9CED4","shiny wheel cover","clang","Spinning chrome disc of doom.","urban"},
 	{"huckleberry","IGAELB","eVP",2,7,1,"3E2A5E","6B4E8A","small round dark blue berry","pitter","Wild, tart, and hard to pick.","edible,fruit,sweet"},
@@ -397,10 +403,4 @@ return {
 	{"illusionist","LLCJNA","jdZY",4,6,3,"C084FC","67E8F9","shimmering robe, mirrors, top hat","chime","Which one's real? Neither.","magic,trickster"},
 	{"imagination","KLCJVJ","jh",4,5,3,"FF4081","00E5FF","doodle-like glowing shapes coming to life","shimmer","If you can dream it, it can bonk you.","magic,cute"},
 	{"immortal jellyfish","ABAJGJ","FSMOB",1,2,1,"F2E8E8","D8302A","tiny jelly with red center","squelch","Gets old, then turns young again.","aquatic,ocean,venomous"},
-	{"immortality","KHEOKJ","GF",2,4,9,"FFF8E1","FFD54F","eternal golden glow with phoenix wisps","choir","Not today. Not ever.","holy"},
-	{"immovable","KEDOKI","G",2,1,10,"6D4C41","BCAAA4","heavy stone-glow around planted feet","thud","Not moving. Ever.","defence,heavy"},
-	{"immunity","KHBOKJ","GF",1,4,5,"B2EBF2","FFFFFF","clear shimmering shell","chime","Poison? Not interested.","support"},
-	{"imp","AAAJNB","KjAb",2,9,1,"DC2626","1F2937","tiny red horned prankster with bat wings","cackle","Small horns. Big mischief.","imp,mischief"},
-	{"imp swarm","AACJLB","KAPb",5,9,3,"DC2626","1F2937","cloud of giggling red imps","cackle","Mischief, multiplied.","imp,swarm"},
-	{"impala","AMCJAA","UDk",4,9,4,"C88A4A","F2EEE6","lyre horns, leaps 10 feet high","bleat","Jumps like it's late for something.","mammal,wild"},
 }

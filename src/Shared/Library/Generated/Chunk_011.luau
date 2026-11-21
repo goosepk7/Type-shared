@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gatekeeper","LKDCYI","GkO",5,1,8,"57534E","D4AF37","stout armoured guard with a giant key and a crossed halberd","clang","What is the password? Wrong. It is always wrong.","defense,medieval"},
+	{"gatling gun","CKDMwI","TeV",7,7,6,"A86F32","5A3A1E","rotating barrel cluster on wheels","rattle","Crank to shoot. Shoot to win.","medieval,siege,heavy"},
+	{"gaucho","LECKNA","DHg",5,7,5,"7C2D12","F5F5F4","wide hat, poncho, bolas","yeehaw","Lassos with style. And rocks.","western"},
 	{"gauntlet","CKBHJK","Gkf",4,6,6,"8A929B","6B4226","armoured plated glove","bonk","Slaps with authority.","medieval,armor"},
 	{"gaur","AMDJAA","DkO",7,4,7,"2A2018","F2E6C8","towering black bull, white socks","moo","Biggest wild cattle. Wears socks.","mammal,heavy"},
 	{"gauss rifle","CKCBwI","kTe",8,8,4,"2C3539","B8693D","rifle wrapped in copper coils","zap","Magnets. Very fast magnets.","scifi,ranged"},
@@ -382,6 +385,7 @@ return {
 	{"graham cracker","IMBAKK","Uke",3,7,2,"C8823A","E8B860","perforated golden rectangle","whoosh","The foundation of every s'more.","edible"},
 	{"grain elevator","EMECII","GSN",3,1,8,"B0BEC5","B71C1C","tall concrete towers with a headhouse","thud","Holds a mountain of grain. Releases it.","structure,farm"},
 	{"grand canyon","MEFLII","SNO",7,1,10,"D2691E","A0522D","vast layered red rock gorge","rumble","Very grand. Very canyon. Very far down.","place,landmark"},
+	{"grand surge wave","KHEB6I","TIe",8,3,4,"7FD0FF","FFFFFF","a huge blue-white ki wave thrust from cupped hands","beam","It's the same move. It's just a lot more of it.","anime,ki,beam,wave"},
 	{"grandchild","LMBJNA","UFc",2,7,2,"FDBA74","60A5FA","tiny kid in a hand-knitted sweater three sizes too big","giggle","Gets cookies just for existing.","family,cute"},
 	{"grandfather clock","BMDCII","GN",2,1,6,"5A3A1E","B58A3A","tall wooden clock with pendulum","bong","Bong. Bong. Bong.","time"},
 	{"grandma","LMCJNA","Fceh",3,3,4,"C084FC","F8FAFC","curly white hair, cardigan, knitting needles","ding","Have you eaten? Here, eat. Then fight.","family,cute"},
@@ -399,8 +403,4 @@ return {
 	{"grape juice","IBBOKI","F",2,6,2,"5A1E5E","8E2B7E","glass of purple juice","slurp","Purple power. Stains everything.","edible,drink"},
 	{"grape soda","IBBFKI","EkI",3,7,1,"7A2A9A","C8A0E8","purple fizzy can","fizz","Purple fizz, max chaos.","edible,drink,fizzy"},
 	{"grapefruit","IMBAKF","jeO",3,6,2,"F5A07A","D24E5A","big round citrus, pink flesh","squirt","Squirts directly in the eye. Every time.","edible,fruit,sour"},
-	{"grapevine","NGCNMI","ScN",2,1,3,"6A1B9A","7CB342","twisted vine with hanging grape bunches","rustle","Grapes drop. Enemies slip.","plant,crop"},
-	{"grapple gun","OKBAwI","lHe",3,10,3,"24262A","C9CED4","pistol that fires a hook and reels you in","twang","Thwip! Yoink.","modern,mobility"},
-	{"grappling iron","CKBAJI","He",3,6,4,"5B6168","B89B6A","multi-hook thrown on rope","bang","Pull that ship closer.","pirate"},
-	{"grass","NGBNMI","FS",1,1,2,"7CB342","8BC34A","patch of green blades","rustle","Touch it. You need to.","plant"},
 }

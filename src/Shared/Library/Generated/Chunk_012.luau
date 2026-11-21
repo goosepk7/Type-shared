@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"grapevine","NGCNMI","ScN",2,1,3,"6A1B9A","7CB342","twisted vine with hanging grape bunches","rustle","Grapes drop. Enemies slip.","plant,crop"},
+	{"grapple gun","OKBAwI","lHe",3,10,3,"24262A","C9CED4","pistol that fires a hook and reels you in","twang","Thwip! Yoink.","modern,mobility"},
+	{"grappling iron","CKBAJI","He",3,6,4,"5B6168","B89B6A","multi-hook thrown on rope","bang","Pull that ship closer.","pirate"},
+	{"grass","NGBNMI","FS",1,1,2,"7CB342","8BC34A","patch of green blades","rustle","Touch it. You need to.","plant"},
 	{"grasshopper","AMAJFG","UdP",1,6,1,"6AA03A","C8D84A","long hind legs, antennae","buzz","Jumps first. Thinks never.","insect"},
 	{"grater","BMBHJK","fV",2,5,4,"8A929B","24262A","box with jagged holes","clang","Shred it. Shred them.","kitchen,household"},
 	{"gratitude","KHBOKJ","F",1,4,2,"FFB74D","FFF8E1","warm orange heart glow","chime","Thanks! Here's a heal.","support,cute"},
@@ -255,6 +259,7 @@ return {
 	{"hangar","EMECII","GSh",3,1,8,"B0BEC5","37474F","huge half-cylinder shed, giant doors","thud","Opens wide. Something big rolls out.","structure,building"},
 	{"hanging gardens","EGFCII","GWFS",4,1,9,"43A047","E6D3A3","stepped terraces spilling with plants","rumble","A whole wonder of vines and flowers.","ancient,plant"},
 	{"hanging moss tree","NIDCMI","GWZkS",3,1,6,"6D4C41","9E9E9E","branches dripping grey moss curtains","rustle","Spooky curtains. Free.","plant,tree,spooky"},
+	{"hanging star cage","KHDGKE","ESe",6,4,3,"9CFF5A","F4FFD8","eight ki orbs hanging in a ring round a spot, then diving in","hum","Eight ways out and none of them are open.","anime,ki,orbs,trap"},
 	{"hangman","KMBLnI","jNO",3,1,2,"111827","F8FAFC","chalk dashes _ _ _ _ and a row of guessed wrong letters","scratch","Is there an E? There is always an E. Not today.","game,school"},
 	{"harbor","EBECII","GSh",3,1,8,"8D6E63","1E88E5","wooden piers, cranes, moored boats","thud","Ships in. Trouble out.","structure,building"},
 	{"harbor town","MBENII","h",3,1,6,"1E88E5","F5E6CA","houses on a harbour with boats","rumble","Smells like fish and adventure.","place,terrain"},
@@ -398,9 +403,4 @@ return {
 	{"helmet","BKBONI","G",1,5,6,"8A929B","24262A","rounded metal helmet","clank","Protects the thinking bit.","armor,defense"},
 	{"help","KHBJVJ","Fh",2,6,3,"42A5F5","FFFFFF","glowing friendly spirit appearing beside you","chime","Help is on the way!","support"},
 	{"hemlock","NJDCMI","GWkSM",4,1,7,"4E342E","1B5E20","drooping feathery evergreen","rustle","Shady, droopy, slightly sinister.","plant,tree"},
-	{"henchman","LMBJNA","dQP",2,5,3,"111827","FACC15","black jumpsuit, sunglasses, clipboard","grunt","Here to lose dramatically.","villain,silly"},
-	{"henodus","ABBJUA","GNB",2,2,8,"6A6A5A","C8C0A8","flat square turtle-like reptile","hiss","A square turtle. Weird.","reptile,armored"},
-	{"herald","LMCJNA","Oh",3,5,3,"1D4ED8","FACC15","tabard, trumpet, scroll","horn","HEAR YE. HEAR YE. Ow, my ears.","royal"},
-	{"herb","NGANMI","FS",1,1,2,"7CB342","9CCC65","small bundle of fragrant leaves","rustle","Rub it on. Feel better.","plant,herb"},
-	{"herbal tea","IABOKI","FN",2,5,2,"E8D08A","F2E8C8","teacup with leaves","slurp","Gentle, soothing, sleepy.","edible,drink,warm"},
 }
