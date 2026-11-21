@@ -229,7 +229,7 @@ return {
 	{"dance off","KHDNNK","dcO",5,7,2,"FF4FD8","3BE8FF","a disco ring lights up and everyone inside has to dance","ding","You can't not dance to this.","gaming,meme,dance"},
 	{"dancer","LFCJNA","jdY",3,8,3,"F9A8D4","F8FAFC","tutu, pointe shoes, mid-spin","swish","Pirouettes past your attacks.","music"},
 	{"dancing lady orchid","NGBNMI","jdFS",1,1,1,"FFEB3B","6D4C41","sprays of tiny yellow dancing flowers","rustle","Tiny dancers everywhere.","plant,flower"},
-	{"dandelion","NFADMI","jdP",1,2,1,"FFEB3B","FFFFFF","yellow pompom or white puffball","rustle","Make a wish. Spread chaos.","plant,flower"},
+	{"dandelion","NFBDMJ","AeP",3,4,2,"FFFFFF","FFEB3B","a puff of white seed parachutes drifting out","rustle","Make a wish. Spread chaos.","plant,flower,nature,silly"},
 	{"dandruff","FMAELJ","jNP",1,4,1,"F8FAFC","E5E7EB","gentle fall of white flakes onto dark shoulders","pitter","It is not snowing. Sorry.","gross,silly"},
 	{"danger","KACLnI","ESO",5,1,3,"FACC15","111827","yellow triangle sign with a black exclamation mark, flashing","siren","The sign did say. You read it. You still came.","trap"},
 	{"danger zone","KADNOI","KSML",7,3,4,"FF5252","FFEB3B","striped warning circle with mixed hazards","alarm","Every hazard at once. Stay out.","explosive"},

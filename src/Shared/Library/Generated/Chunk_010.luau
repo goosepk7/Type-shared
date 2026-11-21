@@ -250,7 +250,7 @@ return {
 	{"frost ward","KCCLII","GJ",4,3,5,"81D4FA","FFFFFF","ring of icy runes on the ground","crackle","A cold welcome mat.","frozen,defence"},
 	{"frost wave","FCDFOF","JNP",6,6,2,"81D4FA","FFFFFF","rolling frost front crusting ground","crackle","Frost, on a mission.","frozen"},
 	{"frost wyvern","ACDJDB","AJT",6,7,6,"BAE6FD","1E3A8A","white wyvern with icicle tail","screech","Freezes what it stings.","reptile,frozen"},
-	{"frostbite","FCBAKB","iJe",4,7,2,"7EC8E3","E0F7FF","biting blue frost fangs","crackle","The cold that nibbles back.","frozen"},
+	{"frostbite","FCBAKB","JeN",4,7,2,"7EC8E3","E0F7FF","a spinning frost crystal that bites and nips","crackle","The cold that nibbles back.","frozen,winter,weather"},
 	{"frostbolt","FCCAKB","JTeN",5,8,2,"7FD3F7","EFFBFF","jagged blue ice shard with frost trail","crackle","Chills to the bone. And the knees.","frozen"},
 	{"frosted cookie","IMBAKK","Uke",3,7,2,"F2E8C8","4FA3E8","decorated iced cookie","whoosh","Pretty enough to frame.","edible,dessert"},
 	{"frostfire","FCCAKB","KJe",6,7,2,"40C4FF","FF6E40","blue flame that leaves frost behind","crackle","Hot and cold at once. Confusing.","frozen,fire"},

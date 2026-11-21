@@ -111,7 +111,7 @@ return {
 	{"lava elemental","AADJNA","KkS",7,3,7,"7F1D1D","F97316","molten rock body with glowing cracks","sizzle","Leaves very hot footprints.","elemental,fire"},
 	{"lava field","MAELII","KSN",7,1,7,"FF5722","212121","black crust cracking over glowing lava","bubble","The floor is lava. Literally.","place,terrain,flammable"},
 	{"lava flood","HAENOI","KSNP",8,3,5,"DD2C00","FFB300","glowing lava rising across the ground","bubble","Flood, but it's fire.","fire,natural"},
-	{"lava flow","HAEF6D","KNP",7,2,6,"FF3D00","FFA000","slow river of glowing orange rock","bubble","In no hurry. Still unstoppable.","natural,fire"},
+	{"lava flow","HADN6D","KSP",5,2,5,"FF3D00","FFA000","slow tongue of glowing orange rock with a dark crust","bubble","In no hurry. Still unstoppable.","natural,fire,terrain"},
 	{"lava fountain","HADLII","KlP",7,5,4,"FF3D00","FFD740","tall glowing jet of lava spraying droplets","whoosh","A fountain you do not throw coins in.","fire,natural"},
 	{"lava giant","AAEJNA","KkS",8,3,8,"450A0A","F97316","cracked black giant oozing lava","rumble","Every footprint is a fire hazard.","giant,fire"},
 	{"lava hammer","CADHtK","KkfO",8,3,7,"1B1A22","D9480F","glowing molten stone hammer","shing","Each hit leaves a puddle of fire.","fantasy,sharp"},
