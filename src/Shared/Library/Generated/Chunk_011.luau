@@ -252,7 +252,7 @@ return {
 	{"go kart","DMBKHL","UDkg",3,8,3,"2E86DE","F4D03F","low open seat, tiny wheels, bumper","engine","Banana peels sold separately.","silly,sport"},
 	{"goal","EMCCoI","GHO",3,1,6,"FFFFFF","22C55E","white frame with a net, ball bulging in the back","crowd","Back of the net!","sport,defense"},
 	{"goal post","BMDCII","G",1,1,6,"F2F2EE","F1C40F","tall H-shaped posts","bonk","Can't score past this.","sport"},
-	{"goat","AMCJAA","Ddkf",3,4,4,"E8E2D8","6E5A44","horns, beard, rectangular pupils","bleat","Eats tin cans. Climbs dams. Screams.","mammal,farm"},
+	{"goat charge","AECAAA","Dk",5,7,3,"F0EAE0","8A5A3A","a goat charges and headbutts the first enemy","bleat","Horns first. Questions never.","critter,mammal,farm,bolt"},
 	{"goat cheese","IMBLKI","dSc",2,3,3,"F7F7F2","E8E8DF","soft white log","chomp","Tangy, soft, and crumbly.","edible,sweet,dairy"},
 	{"goatherd","LGCJNA","Dh",3,5,4,"A16207","F8FAFC","staff, cloak, stampeding goats","baa","Brings the goats. Mostly they bring him.","outdoor"},
 	{"gobble","KMCLII","iH",5,6,3,"E64A19","FFE0B2","huge open mouth gulping target","gulp","Gulp. Burp.","silly"},

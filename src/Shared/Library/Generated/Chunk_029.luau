@@ -222,7 +222,7 @@ return {
 	{"wooden shield","BMCIyI","G",2,4,5,"8B5A2B","5B6168","planked shield with iron rim","clank","Splintery, but brave.","armor,defense"},
 	{"wooden sword","CMCHrK","kf",2,6,3,"C49A6C","8B5A2B","plain carved wooden blade","shing","Training wheels for heroes.","training,toy"},
 	{"wooden wall","EGCCII","GKS",2,1,5,"A1887F","6D4C41","upright planks with crossbeams","thud","Cheap, cheerful, slightly splintery.","structure,defense,flammable"},
-	{"woodpecker","AMBJDB","dATO",2,7,1,"1E1E1E","D8201E","black and white bird, red cap, chisel beak","knock","Headbangs trees all day. No headache.","bird,cute"},
+	{"woodpecker drill","AMBNDB","TP",4,7,2,"23212A","E0302A","woodpecker drills a marked spot with rapid pecks","peck","Knock knock. It's always the woodpecker.","critter,bird,zone,silly"},
 	{"wool","BMBLOG","GUN",2,3,4,"F5F0E6","D9D2C3","springy cream fluff bundle with one sheep ear sticking out","bleat","Itchy. Warm. Baa-rely a threat.","farm,soft"},
 	{"woolly bear","AMAJCA","Gjd",1,5,1,"1E1E1E","C8701E","fuzzy black-orange caterpillar","flutter","Predicts winter. Probably wrong.","insect,cute"},
 	{"woolly mammoth","ACEJAA","DkIO",8,4,8,"6A4A2E","C8A87A","shaggy brown fur, huge curved tusks, domed head","trumpet","An elephant in a winter coat.","mammal,extinct,ancient,heavy,arctic"},

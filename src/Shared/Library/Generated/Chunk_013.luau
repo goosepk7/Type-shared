@@ -148,7 +148,7 @@ return {
 	{"horned lizard","AMBJAA","CfTe",2,7,2,"C8A06A","6A4A2A","flat spiky desert lizard","hiss","Squirts blood from its eyes. Defense!","reptile,desert"},
 	{"horned serpent","ABEJCC","HLB",7,5,7,"0E7490","FDE047","giant serpent with antlers and a shining crest","hiss","Antlers on a snake. Instant legend.","mythical,reptile"},
 	{"horned viper","AMCJCD","CZfMN",4,6,3,"E8D0A0","B8986A","viper with eye horns","hiss","Has tiny horns. Hides in sand.","reptile,venomous,desert"},
-	{"hornet","AJBJLB","AfTMP",3,7,1,"B8702A","1E1E1E","giant wasp, orange head","buzz","Bigger wasp. Worse attitude.","insect,swarm,venomous"},
+	{"hornet nest","AJBDLB","SMP",4,5,2,"B7A68A","F2B521","a papery nest bursts into a cloud of hornets","buzz","Do not poke. Too late.","critter,insect,cloud"},
 	{"hornworm","AMAJTA","jdW",1,5,1,"6AC84A","F2F2EE","fat green caterpillar with horn","flutter","Has a horn. Eats your tomatoes.","insect,cute"},
 	{"horror","KICFOB","jiI",5,7,1,"1A0033","FF1744","jagged dark ring with glowing eyes","scream","Nope. Nope. Nope.","spooky"},
 	{"horse","AMDKAA","Dkg",5,8,5,"7A4A2A","2A1A12","sleek horse, flowing mane and tail","neigh","Rideable. Mildly judgemental.","mammal"},

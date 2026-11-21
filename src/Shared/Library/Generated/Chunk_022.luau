@@ -79,7 +79,7 @@ return {
 	{"rook","AIAJDB","dA",1,7,1,"1E1E24","C8C8CC","black crow with pale face","tweet","Builds rookery cities. Smart.","bird,cute,smart"},
 	{"room","MMDLlI","jSN",4,1,6,"93C5FD","F9A8D4","cutaway bedroom box: bed, posters, clothes mountain","thud","Clean it. No, really. There is a smell.","household,silly"},
 	{"roommate","LMCJNA","SNb",3,3,4,"84CC16","A3A3A3","person in pajamas eating your labelled leftovers","chomp","Ate your food. Left one bite. As a message.","silly"},
-	{"rooster","AMBJDA","dfO",2,4,2,"B8401E","1E3A2A","proud tail feathers, big red comb","crow","Alarm clock that cannot be snoozed.","bird,farm"},
+	{"rooster crow","AFBFDA","kI",4,6,2,"B4502A","E0262A","a rooster crows a cone of sound that blows enemies back","crow","Up at dawn. Takes everyone with it.","critter,bird,wave,loud"},
 	{"root","FGCLMI","NO",4,3,5,"5D4037","81C784","thick roots coiling around feet","creak","You are not going anywhere.","plant"},
 	{"root beer","IBBFKI","EkI",3,7,1,"4A2416","F2E2C8","brown soda can","fizz","Frothy and foamy.","edible,drink,fizzy"},
 	{"root snare","NECLMI","CSHNO",4,2,5,"6D4C41","8D6E63","gnarled roots bursting from the ground","rustle","The ground grabs your ankles.","plant"},

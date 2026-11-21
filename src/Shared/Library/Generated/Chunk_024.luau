@@ -132,7 +132,7 @@ return {
 	{"snallygaster","AKDJDB","AfT",6,7,5,"94A3B8","DC2626","metal-beaked dragon bird with tentacles","screech","Part bird, part dragon, all screeching.","cryptid,flying"},
 	{"snapdragon","NGBNMI","dSf",3,1,2,"F44336","FFEB3B","spike of blooms that open like jaws","rustle","Squeeze it and it bites. Kind of.","plant,flower,silly"},
 	{"snapper","ABBJEC","dB",2,6,1,"D84A3A","F2D8D0","rosy red fish","splash","Snappy name. Chill fish.","fish,aquatic"},
-	{"snapping turtle","AMBJUA","GfNOB",4,2,8,"4A4A30","8A7A5A","spiky shell, huge beak","hiss","Snaps fingers. Not the cool way.","reptile,armored"},
+	{"snapping turtle","ABBLUI","fN",4,2,6,"4E5A2E","B9574E","a hidden snapping turtle bites the first enemy close","snap","Patient. Grumpy. Hungry.","critter,reptile,trap"},
 	{"snapvine","NGCLMI","SfHN",4,3,4,"33691E","E53935","coiled vine tipped with tiny jaws","chomp","Every vine has teeth. Every one.","plant,carnivorous"},
 	{"snare","BMBLII","lHO",2,1,3,"B89B6A","8B5A2B","hidden rope loop on bent sapling","snap","Upsy-daisy!","trap,defense"},
 	{"snatch","KMBBKI","Hb",3,9,1,"8D6E63","FFFFFF","glowing hand reaching and grabbing","swish","Gotcha!","silly"},
