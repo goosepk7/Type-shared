@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gazebo","EMCCII","GS",2,1,4,"F5F5F5","7CB342","eight-sided open hut with pointed roof","thud","Nice spot for a picnic. And a siege.","structure,building,cute"},
+	{"gazelle","AMCJAA","UDk",4,9,4,"D8A868","1E1A16","dainty, black side stripe, curved horns","bleat","Pronks for fun. Look it up.","mammal,wild"},
+	{"gazpacho","ICBOGI","JF",3,4,3,"C8302B","7DBE3A","cold red soup bowl","slurp","Cold soup. Hot debate.","edible,warm,healthy"},
+	{"gear","OKBAKK","UTe",2,6,6,"B58A3A","A86F32","toothed metal wheel","hum","Spinning tooth disc of mild doom.","mechanical"},
 	{"gecko","AMBJAA","CSf",2,7,2,"8AC84A","F2E8A0","big eyes, sticky toe pads","hiss","Walks on ceilings. Licks its eyes.","reptile"},
 	{"geiger counter","BJAO1I","c",1,5,3,"F1C40F","24262A","box with wand and clicky dial","bubble","Click. Click. CLICKCLICK.","science"},
 	{"geisha","LMCJNA","jc",3,4,3,"F8FAFC","DC2626","white makeup, kimono, paper fan","chime","A fan flick that ends fights.","historical"},
@@ -173,6 +177,7 @@ return {
 	{"gingerbread golem","AEDJNA","Gdk",6,4,6,"B45309","F8FAFC","giant cookie man with icing buttons","crunch","Delicious. Furious.","silly,holiday,sweet"},
 	{"gingerbread house","IMDJII","Gdc",5,1,7,"A8622B","F2EEE8","cookie cottage, candy roof, icing","thud","A house you can eat. Witches love it.","edible,giant,silly,holiday"},
 	{"gingerbread man","IMBJBA","DdQf",2,9,2,"A8622B","F2EEE8","cookie person, icing buttons","squeak","Run, run, as fast as you can.","edible,silly,cute,holiday"},
+	{"gingerbread runner","IMBJNA","EQh",3,5,4,"B0672E","FFF3E0","little iced gingerbread cookie running on stubby legs","crunch","Run, run, as fast as you can.","kitchen,summon,minion"},
 	{"gingersnap","IMBAKK","Uke",3,7,2,"A0582A","C8803A","thin crackled brown cookie","whoosh","Snaps when you bite it. Snaps back.","edible,candy"},
 	{"ginkgo","NGDCMI","GWkS",3,1,8,"795548","FFEB3B","fan-shaped leaves turning bright gold","rustle","Older than the dinosaurs. Still here.","plant,tree,ancient"},
 	{"ginseng","NGAOMI","F",1,1,2,"E6C27A","7CB342","knobby pale root with green leaves","rustle","Old roots. Big boost.","plant,herb"},
@@ -398,9 +403,4 @@ return {
 	{"gravedigger","LECJNA","Ch",4,4,5,"57534E","78350F","shovel, lantern, long coat","thud","Digs holes. Things climb out.","spooky"},
 	{"gravel","FEBEOB","eN",2,6,3,"8D8780","C2BDB6","spray of small grey chips","rattle","Crunchy hail from below.","heavy"},
 	{"gravestone","EIBCII","GSh",2,1,7,"9E9E9E","7CB342","rounded stone slab, cracked","thud","Here lies your last attack.","spooky,undead"},
-	{"graveyard","MIENII","SNh",5,1,7,"455A64","7CB342","crooked headstones, iron fence, fog","moan","The residents are getting restless.","spooky,undead"},
-	{"graveyard moss","NIBLMI","iSN",2,1,3,"455A64","7CB342","grey-green moss on old stones","moan","Grows on graves. Slows the living.","plant,spooky,undead"},
-	{"gravity","FLDNOI","HNO",6,4,5,"3B2E5A","8F7DE8","warped purple ripples pressing down","hum","What goes up, comes down. Hard.","space,heavy"},
-	{"gravity anomaly","KLCNOI","jlH",5,4,3,"4527A0","00E5FF","warped spot where things float sideways","whum","Gravity forgot how to work here.","space,chaos"},
-	{"gravity beam","FLCBKI","lHN",5,6,2,"4527A0","B388FF","warping purple beam bending light","whum","Things get heavy. Or floaty. Unclear.","space"},
 }

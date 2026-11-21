@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"metal detector","BKCOJI","c",1,3,3,"8E9196","24262A","pole with disc sensor","clink","Beep... beep... BEEP! Treasure!","explorer"},
+	{"metal detectorist","LKCJNA","CH",3,4,4,"15803D","FACC15","headphones and beeping detector","beep","Beep beep. Found a bottlecap.","silly"},
+	{"metal dragon","AKEKAB","GAeg",8,5,9,"71717A","E5E7EB","armored plated dragon with blade wings","clank","Bullets bounce. Swords bend.","mythical,reptile,metal"},
+	{"metal elemental","AKDJNA","Gka",7,3,9,"94A3B8","E2E8F0","liquid chrome giant with gear eyes","clank","Shiny, heavy, and magnetic personality.","elemental,metal"},
+	{"metal form","KKCOWA","Ga",3,3,9,"90A4AE","ECEFF1","caster turning shiny chrome","clang","Shiny, heavy and bonk-proof.","heavy,defence"},
+	{"metal mage","LKCJNA","GHe",6,4,6,"71717A","94A3B8","robes threaded with metal plates","clank","Your armor works for them now.","magic,metal"},
 	{"metal slime","AKBJGG","GUY",3,9,9,"94A3B8","E2E8F0","shiny chrome droplet blob","clink","Super shiny. Super fast. Super annoying.","slime,metal"},
 	{"metal storm","FKEEOB","TP",8,6,4,"90A4AE","ECEFF1","swirling rain of metal shards and blades","clang","Forecast: sharp.","sharp,heavy,storm"},
 	{"metal welder","LACJNA","KO",4,4,5,"1F2937","F97316","welding mask, spark torch","sizzle","Sparks fly. Blinding ones.","tools,fire"},
@@ -397,10 +403,4 @@ return {
 	{"mutton curry","IABNGI","KSP",4,4,2,"8A3A1E","D9A02B","dark meaty curry","sizzle","A hearty, heavy curry.","edible,spicy"},
 	{"muzzle","BMBLJI","O",1,1,3,"6B4226","5B6168","cage-like snout strap","clink","No biting allowed.","equipment"},
 	{"mycelium","NGENMI","FSP",3,1,5,"F5F5F5","BCAAA4","web of white threads under the soil","poof","The forest's secret internet.","plant,fungus"},
-	{"myconid","AGBJNA","jMP",3,3,4,"DC2626","F5F5F4","walking red-capped mushroom person","puff","Talks in spores. Says hello a lot.","plant,cute"},
-	{"mynah","AMAJDB","jdA",1,7,1,"1E1E1E","F2C82A","black bird, yellow face patch","tweet","Talks more than a parrot.","bird,cute"},
-	{"myrtle","NGCCMI","GWkS",2,1,5,"8D6E63","E91E63","smooth bark, frilly pink flowers","rustle","Frilly. Fierce.","plant,tree"},
-	{"mystery meat","IJBG7G","UjE",4,5,3,"8A6A6A","B9D36A","wobbly grey meatloaf that does something random","splat","Nobody knows. Nobody asks.","goofy,gross,food,random"},
-	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
-	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
 }

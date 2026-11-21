@@ -3,6 +3,14 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pixel knight","AKBJYA","Qfh",4,6,5,"C48448","743A8C","squat bronze voxel knight in a kettle hat, lantern eyes","clang","For the high score!","game,arcade,pet"},
+	{"pixel ship","OHAMgE","Ae",3,8,4,"E8EDF2","FF4F6E","tiny voxel starfighter over your shoulder","pew","Pew. Pew pew.","game,arcade,pet"},
+	{"pixel snake","AHCJCD","QS",4,7,3,"7CFF6B","1FA34A","glowing voxel snake with a stinging trail","blip","Don't touch the tail.","game,arcade,trail"},
+	{"pixie swarm","ALBJLB","jAP",3,9,1,"F0ABFC","FDE68A","cloud of glittering winged sprites","chime","Glitter everywhere. You'll find it for years.","fairy,swarm"},
+	{"pixiu","AHCJAA","GQb",4,6,6,"D97706","FDE68A","winged lion with antler horn","roar","Eats gold. Never shares.","mythical,lucky"},
+	{"pizza","IMBAKK","UKkce",3,7,2,"E8B04A","D72B2B","round pie, melted cheese, pepperoni","whoosh","A spinning disc of cheesy doom.","edible"},
+	{"pizza bagel","IMBAKK","Uke",3,7,2,"C8904A","D72B2B","bagel half with pizza toppings","whoosh","Pizza in the morning.","edible"},
+	{"pizza box","IMCIII","Gc",3,3,4,"D9B07A","C8904A","flat square cardboard box","thud","Something wonderful is inside.","edible"},
 	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
 	{"pizza cutter","BMCFJF","Uke",4,7,3,"C9CED4","C0392B","giant steel pizza cutter wheel rolling along the ground","clang","Eight slices, one bounce.","kitchen,roll,projectile,ricochet"},
 	{"pizza delivery","IMCJHL","DFc",3,7,2,"D72B2B","F7F2EC","scooter with pizza box","whoosh","Hot pizza in thirty minutes or less.","edible"},
@@ -395,12 +403,4 @@ return {
 	{"pumpkin house","EGCCII","GFS",2,1,4,"F57C00","43A047","giant pumpkin with door and windows","chime","Cosy inside. Spooky outside.","holiday,silly"},
 	{"pumpkin king","LACJNA","Kjh",5,5,4,"F97316","111827","tall skeleton with pumpkin crown","cackle","Rules all of Halloween.","halloween,royal,spooky"},
 	{"pumpkin patch","NGCLMI","SNh",3,1,4,"F57C00","43A047","sprawling vines with giant pumpkins","rustle","Picks itself. Rolls at you.","holiday,spooky"},
-	{"pumpkin pie","IMBAKK","kce",3,7,2,"C2622B","F2E8D0","orange custard pie, cream dollop","whoosh","Autumn on a plate.","edible,holiday"},
-	{"pumpkin seeds","IGAELB","eVP",2,7,1,"E8DCB0","6B8E3A","flat oval cream seeds","pitter","Pumpkin's tiny ammunition.","edible"},
-	{"pumpkin soup","IBBOGI","FS",3,4,3,"E8761A","F2E8C8","orange velvet soup bowl","slurp","Autumn in a bowl.","edible,warm,healthy"},
-	{"pumpkin spice","IFBDOJ","jPO",2,5,1,"C2622B","E8A040","orange-brown spice cloud","puff","Autumn, in a cloud.","edible,spice,holiday"},
-	{"pumpkin spirit","AABJGG","UKc",2,5,3,"F97316","166534","bouncing carved pumpkin with glowing grin","cackle","Spicy seasonal energy.","halloween,spooky,silly"},
-	{"punch","KMCAKB","kf",5,9,2,"FF7043","FFE0B2","glowing fist with impact star","pow","The simplest spell. Fist goes forward.","melee"},
-	{"punch bowl","IBCOKI","Fc",2,6,2,"D8202B","F7F2EC","big glass bowl of red punch","slurp","The centrepiece of every party.","edible,drink"},
-	{"punching bag","BMCCII","Gd",1,1,6,"C0392B","24262A","hanging leather cylinder","bonk","Takes the hits. Keeps smiling.","sport"},
 }

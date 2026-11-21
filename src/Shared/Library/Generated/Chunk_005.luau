@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"caramel popcorn","IMBGKF","ENP",4,6,1,"D9A04A","F7E8C8","glossy golden popcorn clusters","pop","Sweet, sticky, and still explodes.","edible,explosive,sweet"},
+	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
 	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
 	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 	{"carcharodontosaurus","AMEJBA","DkfT",8,6,7,"8A5A3A","D8A07A","huge skull, shark-like teeth","roar","Shark teeth on a giant dino.","dinosaur,extinct,reptile,predator"},
@@ -280,6 +282,7 @@ return {
 	{"chili dog","IABAKK","Kc",5,7,2,"D84A2B","7A2E1E","hot dog drowned in chili","sizzle","A hot dog with extra trouble.","edible,spicy,flammable"},
 	{"chili plant","NABMMI","KSe",4,1,2,"2E7D32","E53935","bushy plant with red hot peppers","rustle","Spicy fruit. Spicier attitude.","plant,crop,spicy"},
 	{"chili powder","IABDOJ","KjP",2,5,1,"B0302B","E8602B","red powder cloud","puff","Fire, ground to dust.","edible,pepper"},
+	{"chili rush","IAAO7I","KDk",2,9,2,"D3241B","3E8E2E","red-hot chili pepper with steam puffing from your ears","sizzle","Mouth on fire, feet on fire.","kitchen,buff,speed,edible,spicy"},
 	{"chill","FCBFOB","JN",3,6,2,"BDE4F7","F5FCFF","soft cold breeze with drifting flakes","whoosh","Relax. No, literally, you are frozen.","frozen"},
 	{"chill guy","LMCJNA","FN",3,3,5,"78350F","94A3B8","hands in pockets, sweater, unbothered","sigh","Lowkey doesn't care. Wins anyway.","meme"},
 	{"chill out","KCBFOB","FN",1,4,1,"B3E5FC","FFFFFF","soft cool blue ripple","hush","Relax. Breathe. Calm.","frozen,support"},
@@ -400,7 +403,4 @@ return {
 	{"claidheamh","CKDHJK","kf",7,4,6,"8A929B","2E5E3E","basket-hilt broadsword","shing","Big sword with tartan pride.","fantasy,sharp"},
 	{"clam","ABAJGI","GfHN",1,1,6,"D8C8B0","9A8A70","two-shell clam half open","squelch","Happy as a clam. Allegedly.","mollusk,aquatic"},
 	{"clam chowder","IBBOGI","FS",3,4,3,"F2EAD5","C8A070","creamy white soup, crackers","slurp","Creamy, briny, and warming.","edible,warm,healthy"},
-	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
-	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
-	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
 }

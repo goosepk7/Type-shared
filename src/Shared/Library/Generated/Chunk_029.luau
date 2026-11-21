@@ -3,6 +3,18 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weaver bird","AMAJDB","GdA",1,7,1,"F2D02A","2A2A1E","yellow bird hanging from woven nest","tweet","Knits its own house.","bird,cute"},
+	{"web","BGCLII","SHN",3,2,3,"F2F2F2","BFC9D1","big silver spiral spiderweb with dew drops","thwip","Sticky situation. Literally.","sticky,trap,spooky"},
+	{"web snare","BGBA3B","SeN",3,10,2,"F4F4F0","AEB8C2","a sticky web ball that pins the target where it stands","thwip","Hang around a while.","hero,movie,sticky"},
+	{"website","MDCLnI","jNY",3,1,3,"F8FAFC","3B82F6","browser window with a spinning wheel and ERROR 404","bzzt","404: enemy not found.","tech,internet"},
+	{"weddell seal","ACCJEC","UfB",3,5,4,"4A4A50","B8B8C0","spotted dark seal","bark","Sings underwater in Antarctica.","mammal,aquatic"},
+	{"wedding","KHDNII","FcPO",4,2,3,"FFFFFF","F9A8D4","flower arch, bells, flying rice and a towering cake","bell","Speak now or forever hold your pieces.","party"},
+	{"wedding cake","IMEJII","Gdkc",6,1,7,"F7F4EC","E8C8D0","towering five-tier white cake","thud","Five tiers of pure distraction.","edible,giant,silly,party"},
+	{"wedge","JKALJK","O",1,1,6,"8A929B","8E9196","triangular metal wedge","clank","Jammed tight.","tool"},
+	{"wedgie","KMBLNI","lNO",3,6,1,"FFFFFF","EF4444","underpants with hearts stretched up over a flagpole","boing","Hoisted by their own pants.","silly,meme"},
+	{"weed","NGALMI","WSP",1,1,3,"7CB342","C0CA33","scraggly green sprouts","rustle","You can not get rid of them. Ever.","plant,silly"},
+	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
+	{"week","KLBF6B","FNO",3,4,2,"EF4444","22C55E","seven boxes in a row: five grey, two golden","sigh","Five days of Monday. Two days of bliss.","time,meme"},
 	{"weekend","KHCNOI","DF",2,6,3,"FFD54F","81D4FA","sunny happy glow with confetti","yay","No school. All fun.","silly,support"},
 	{"weep","KBBEOJ","dNP",2,3,1,"93C5FD","E0F2FE","wobbly lip under two fountain jets of tears","wail","But I don't WANNA lose.","mood,silly"},
 	{"weeping cherry","NGCCMI","GdFS",2,1,5,"5D4037","F8BBD0","drooping branches of pink blossom","rustle","Weeps flowers. Beautifully.","plant,tree,cute"},

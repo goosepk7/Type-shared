@@ -3,6 +3,11 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"infect","KJBAKB","MP",4,7,1,"8BC34A","33691E","green germ-shaped glob","squelch","Spreads like a cold in class.","toxic"},
+	{"inferno","FAEN5K","KkSP",8,5,5,"B3261E","FF9F1C","towering ring of fire, swirling smoke crown","roar","The floor is lava, and also the walls.","fire"},
+	{"inferno beam","FADBKI","KTP",8,7,1,"FF3D00","FFEB3B","roaring wide beam of fire","roar","A flamethrower, upgraded.","fire"},
+	{"inflatable boat","DBBKHC","UDkgB",3,7,3,"FF7043","37474F","rubber tube boat with outboard","splash","Bouncy, speedy, a bit squeaky.","vehicle,aquatic"},
+	{"inflatable flamingo","BBDJDJ","UdB",1,3,2,"FF3EA5","F2F2EE","giant pink pool floatie bird","splash","Floaty fabulous.","beach,silly"},
 	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
@@ -120,6 +125,7 @@ return {
 	{"jelly","IMBLGG","USaN",2,3,3,"E0102B","F35A6A","wobbly dome mold, glossy","wobble","The wobbliest trap on the battlefield.","edible,wobbly,sweet"},
 	{"jelly baby","IMBJBA","UQf",2,6,2,"F2A62B","E0102B","small chubby gummy figure","squeak","Small, chewy, and brave.","edible,silly,cute,candy"},
 	{"jelly bean","IMAELB","eVP",2,7,1,"E0102B","8DC63F","small glossy bean candy","pitter","Every flavor. Even the weird ones.","edible,sweet"},
+	{"jelly bounce","IMCOGG","Ukl",3,8,2,"E8384F","FFB3C1","giant wobbling red jelly you bounce off","boing","Wibble, wobble, WHEE.","kitchen,mobility,leap,edible,sweet"},
 	{"jelly donut","IMBLKI","Ec",2,3,3,"E8B060","B0203E","round filled donut, sugar dust","chomp","Squeeze for a surprise blast.","edible,sweet"},
 	{"jelly fungus","NJBLMI","USN",2,1,3,"FFB300","FF7043","wobbly orange jelly blobs on wood","poof","Wobbly. Slippery. Gross.","plant,fungus,silly"},
 	{"jelly knight","AJCJGG","GUf",4,4,5,"4ADE80","94A3B8","slime wearing a tiny helmet","clang","Wobbly but brave.","slime,silly"},
@@ -397,10 +403,4 @@ return {
 	{"kunoichi","LICJNA","jZT",5,9,3,"312E81","F472B6","violet ninja garb, smoke bombs","whoosh","Disappears in a puff. Rude.","stealth,martial"},
 	{"kusarigama","CKCHJI","fHe",4,8,3,"8A929B","24262A","sickle tied to a weighted chain","twang","Sickle and chain, a ninja duet.","ninja"},
 	{"l","KIBAJK","XNO",4,7,1,"DC2626","6B7280","giant red letter L thrown like a boomerang","groan","Hold this. It is heavy. It is an L.","meme,gaming"},
-	{"la llorona","ABCJNJ","jAc",5,5,3,"E2E8F0","1E3A8A","weeping ghost in white by the river","wail","Cries so much the river overflows.","ghost,spooky"},
-	{"lab coat","BMCONI","F",1,5,2,"F2F2EE","8E9196","long white coat with pockets","swish","Science is happening.","clothing,science"},
-	{"lab flask","BJAA2I","MeV",2,6,1,"BFE6F2","A66BDB","cone flask fizzing purple","bubble","Bubbling, glowing, throwable.","science"},
-	{"label","BMAAJB","jSN",1,7,1,"FFFFFF","EF4444","sticky white label slapped on with HELLO written on it","tap","Labelled: property of the winner.","household"},
-	{"label maker","BMAOJK","j",1,5,2,"8E9196","F2F2EE","handheld sticker printer","tap","Labels you DEFEATED.","office"},
-	{"laboratory","EDDCII","SMLh",3,1,7,"ECEFF1","76FF03","bubbling flasks, sparking coils, monitors","thud","Something escaped. Again.","structure,building,mechanical"},
 }
