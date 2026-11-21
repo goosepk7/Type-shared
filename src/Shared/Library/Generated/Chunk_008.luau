@@ -3,6 +3,8 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
+	{"dirt cup","IMBLGI","SNP",2,3,3,"3A1A0C","E0102B","cup of crumbs and gummy worms","gloop","Dirt you can eat. With worms.","edible,sticky,dessert,silly"},
 	{"disarm","KLBAKB","bO",3,9,1,"FFD54F","7C4DFF","glowing hand flicking weapon away","clink","No weapon? No problem. For me.","magic"},
 	{"disco ball","BHCG3K","jca",2,2,3,"C9CED4","A66BDB","spinning mirrored sphere","squeak","Dance fight!","party"},
 	{"disco floor","BHDNII","jd",2,1,5,"A66BDB","3FC1D9","flashing tile floor","beep","Can't stop dancing.","tech"},
@@ -401,6 +403,4 @@ return {
 	{"empanada","IMBAKF","Fe",3,6,2,"D9A04A","C8803A","crimped half-moon pastry","splat","A pastry with a crimped smile.","edible"},
 	{"emperor","LHCJNA","GOh",6,3,6,"7F1D1D","FACC15","laurel crown, purple robe, golden throne","horn","Thumbs down. You're out.","royal,ancient"},
 	{"emperor penguin","ACCJDA","UDB",3,5,3,"1E1E24","F2B02A","tall penguin, gold neck patch","squawk","Tallest penguin. Handles -60 degrees.","bird,arctic,cute,royal"},
-	{"emperor scorpion","AJBJQA","fMN",3,6,2,"1E1E24","3A4A6A","huge glossy black scorpion","skitter","Big, black, and mostly gentle.","arachnid,spooky,venomous"},
-	{"empire state building","EMFCII","GkSO",7,1,10,"B0BEC5","37474F","art deco skyscraper with a spire","rumble","A whole skyscraper. Delivered.","structure,landmark"},
 }

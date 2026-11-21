@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"sultan","LHCJNA","Gch",5,4,5,"B91C1C","FACC15","tall turban with jewel, silk robes","horn","Has a flying carpet on standby.","royal"},
+	{"sultana","IMAELB","eVP",2,7,1,"C8903A","A8702A","golden wrinkled raisin","pitter","A golden raisin with manners.","edible,sweet"},
+	{"sumac","IFBDOJ","jPO",2,5,1,"8A1E2E","B0303A","deep red tangy powder","puff","Red, tangy, and lemony.","edible,spice"},
+	{"summer","GADNOI","KFS",4,4,4,"FFB300","FFF59D","bright sun haze, warm golden light","hum","School is out. Sun is in.","fire,holiday"},
+	{"summer camp","MGDNII","FSch",4,1,5,"15803D","F59E0B","log cabins, canoes, a flagpole and a friendship bracelet","crackle","Dear Mum. Camp is fine. Send snacks.","outdoor,place"},
+	{"summon","KLCJNA","h",4,5,3,"7C4DFF","FFD54F","glowing summoning circle with a figure rising","warp","Who did you call? Something big.","magic"},
 	{"summoner","LLCJNA","ehY",5,4,3,"6D28D9","F0ABFC","robes with summoning circle sigils","zap","Doesn't fight. Has friends who do.","magic"},
 	{"sumo robot","OKCJHL","GkI",5,4,8,"F8FAFC","1E3A8A","squat heavy bot with pushing plow","clank","Pushes you out of the ring.","robot,sport"},
 	{"sumo shove","KEDNII","kI",5,5,2,"E8D9A8","B03A2E","straw rope ring and a thundering shove outward","stomp","Out of the ring. Out of the match.","sport,sumo,melee"},
@@ -397,10 +403,4 @@ return {
 	{"thunder wall","KDDCnI","GLO",5,4,5,"FFEA00","536DFE","crackling fence of vertical lightning","buzz","Do not touch the zappy wall.","electric,defence"},
 	{"thunder wave","FDDFOB","kIO",6,9,1,"5C6BC0","FFF59D","ring of thunder rippling outward","boom","BOOM. Sorry, was that loud?","electric,loud"},
 	{"thunder wolf","ADCJAA","DfL",5,9,4,"1E3A8A","FDE047","blue wolf with crackling fur","thunder","Static fur. Do not pet.","canine,storm"},
-	{"thunderbird","ADEJDB","AkeLO",8,8,6,"1E3A8A","FDE047","massive eagle, lightning feather tips","thunder","Flaps once: thunder. Flaps twice: weather report.","mythical,bird,storm,flying"},
-	{"thunderbird chick","ADBJDB","AL",2,8,2,"1E3A8A","FDE047","fluffy chick that crackles","chirp","Every chirp is a tiny thunderclap.","cute,storm,bird"},
-	{"thunderbolt","FDDAKB","keLO",8,10,2,"FFE600","5A8CFF","thick forked bolt slamming down","crack","Comes with its own drumroll.","electric"},
-	{"thundercloud","GDDDOJ","QeL",6,4,4,"39445C","D6DDE8","anvil-topped dark cloud with flickers","rumble","Follows you. Rains on your parade.","storm,electric"},
-	{"thunderhead","GDEDOJ","QeL",7,3,5,"37474F","FFF59D","towering anvil storm cloud","rumble","A cloud so tall it has a ceiling.","storm,electric"},
-	{"thundersnow","GDDEOJ","JLN",6,5,4,"D8E6F0","FFE37A","snowstorm with flashes of lightning","boom","Snow, but with drum solos.","frozen,electric,storm"},
 }

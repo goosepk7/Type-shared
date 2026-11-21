@@ -165,6 +165,7 @@ return {
 	{"bump","BEBLnI","klO",3,1,7,"FACC15","111827","yellow-and-black striped road hump","thud","Slow down. Too late. Coffee everywhere.","trap,vehicle"},
 	{"bumper boat","DBBKHC","UkgB",2,4,4,"2196F3","FFEB3B","round inflatable boat with a motor","engine","Splash! Bonk! Splash!","vehicle,silly"},
 	{"bumper car","DMBKHL","Ukg",3,5,4,"E84393","F5F5F5","round tub car, rubber ring, pole to ceiling","boing","Bonk. Bonk. Bonk. Bonk.","mechanical,vehicle,land,silly"},
+	{"bumper car bash","OMCOHL","UDk",4,8,3,"E53935","FFD24A","fairground bumper car zooms in and bonks with its rubber rin","boing","No hard feelings. Just rubber ones.","transit,fairground,dash"},
 	{"bun","IMBAKF","ke",3,6,2,"D9A04A","F2DDB0","soft round dome roll","splat","Small, round, soft. A comfort projectile.","edible"},
 	{"bun cha","IGBOKI","F",2,5,3,"8A4A1E","F2E8C8","grilled pork with noodles","crunch","Smoky grilled pork, cool noodles.","edible,healthy"},
 	{"bunch","KMBOLG","VPh",3,5,2,"A855F7","FDE047","tied-up cluster of mismatched things in a ribbon","rustle","Why have one when you can have a bunch?","silly"},
@@ -391,7 +392,7 @@ return {
 	{"car pile up","DMECHL","GSO",5,1,7,"E53935","9E9E9E","tangled heap of crashed cars","engine","Instant barricade.","vehicle,mechanical,silly"},
 	{"car transporter","DMEKHL","Dkgh",6,4,8,"E53935","B0BEC5","double-deck trailer stacked with cars","engine","Delivers eight cars at once. Into you.","mechanical,vehicle,land"},
 	{"car wall","EKDCII","GS",3,1,7,"795548","9E9E9E","rusty stacked cars","thud","Recycling, but violent.","structure,defense"},
-	{"car wash","EBCLII","jSIN",2,1,5,"4FC3F7","E53935","tunnel with spinning brushes and spray","splash","Scrub-a-dub! Enemies come out shiny.","structure,silly"},
+	{"car wash","EBCNII","SIN",2,2,5,"4FC3F7","E53935","car wash arch with spinning brushes and foam","splash","Scrub-a-dub! Enemies come out shiny.","transit,zone,silly"},
 	{"cara cara orange","IMBAKF","jke",3,6,2,"F28C28","F2808A","orange with pink flesh","squirt","An orange hiding a pink secret.","edible,fruit,sour"},
 	{"carabiner","BKALKF","H",1,7,5,"7D3CB5","C9CED4","D-shaped clip with spring gate","bonk","Click. Secured.","sport"},
 	{"caracal","AMCJAA","ZfTe",4,7,3,"C08E5A","1E1E1E","long black ear tufts, sandy coat","hiss","Can swat birds out of the air. Rude.","mammal,predator,wild,desert"},
@@ -402,5 +403,4 @@ return {
 	{"caramel corn","IMBGKF","EN",4,6,1,"C68E3A","F2D08A","golden clumps of popcorn","pop","Crunch, stick, repeat.","edible,explosive,candy"},
 	{"caramel popcorn","IMBGKF","ENP",4,6,1,"D9A04A","F7E8C8","glossy golden popcorn clusters","pop","Sweet, sticky, and still explodes.","edible,explosive,sweet"},
 	{"caramel sauce","IMBLGI","SNP",2,3,3,"C68E3A","E8B860","golden drizzle","gloop","Liquid gold, extra sticky.","edible,sticky,sauce,sweet"},
-	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
 }

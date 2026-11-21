@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"spinner dolphin","ABCJEC","UDjB",4,8,4,"5E6E80","E8EEF2","slender dolphin spinning mid-air","click","Spins seven times for fun.","mammal,aquatic,ocean"},
+	{"spinning blades","OKCL1K","fVP",6,6,5,"8A929B","4A4D52","post with whirling blades","clank","Wheeeeeee— ouch.","defense,mechanical"},
+	{"spinning plate","BMAAKK","UeV",1,7,1,"F2F2EE","2F6FD1","plate twirling on a stick","thud","Don't drop it. Throw it.","party,silly"},
+	{"spinning top","BMAGKK","jkf",2,7,4,"C0392B","2F6FD1","pointed spinning toy","squeak","Spins forever. Dizzies everyone.","toy"},
+	{"spinning wall","BEDCII","GY",2,1,7,"8C8C88","5A3A1E","hidden revolving wall panel","snap","Now you're on the other side.","trap,defense"},
+	{"spinning wheel","OMCL1I","NO",2,1,4,"8B5A2B","D8CBB5","wooden wheel with spindle","clank","Spins wool. Spins traps.","mechanical,fantasy"},
 	{"spinosaurus","AMEJBA","DkfTHB",8,6,7,"8A4A2A","D8783A","crocodile snout, giant back sail","roar","Swims, fishes, has a sail. Overachiever.","dinosaur,extinct,reptile,predator"},
 	{"spiny lobster","ABBJRA","GfT",3,4,5,"C8701E","F2D0A0","long spiny antennae lobster","clack","Screeches its antennae like a violin.","crustacean,aquatic,armored"},
 	{"spiny mouse","AMAJAA","CdFTb",1,6,1,"8A7A6A","F2E8D8","mouse with spiky back","squeak","Regrows skin like a lizard.","mammal,cute"},
@@ -397,10 +403,4 @@ return {
 	{"sukiyaki","IABNGI","KF",4,4,2,"8A3A1E","F2E8C8","simmering iron pot of beef","sizzle","A sweet simmering hot pot.","edible,spicy"},
 	{"sulcata tortoise","AMCJUA","GN",3,1,8,"C8A06A","8A6A3A","big desert tortoise","hiss","Bulldozes through gardens.","reptile,armored,desert"},
 	{"sulk","KBADOJ","N",1,2,2,"90A4AE","B3E5FC","tiny rain cloud over caster","hmph","Hmph. Fine. Whatever.","silly"},
-	{"sultan","LHCJNA","Gch",5,4,5,"B91C1C","FACC15","tall turban with jewel, silk robes","horn","Has a flying carpet on standby.","royal"},
-	{"sultana","IMAELB","eVP",2,7,1,"C8903A","A8702A","golden wrinkled raisin","pitter","A golden raisin with manners.","edible,sweet"},
-	{"sumac","IFBDOJ","jPO",2,5,1,"8A1E2E","B0303A","deep red tangy powder","puff","Red, tangy, and lemony.","edible,spice"},
-	{"summer","GADNOI","KFS",4,4,4,"FFB300","FFF59D","bright sun haze, warm golden light","hum","School is out. Sun is in.","fire,holiday"},
-	{"summer camp","MGDNII","FSch",4,1,5,"15803D","F59E0B","log cabins, canoes, a flagpole and a friendship bracelet","crackle","Dear Mum. Camp is fine. Send snacks.","outdoor,place"},
-	{"summon","KLCJNA","h",4,5,3,"7C4DFF","FFD54F","glowing summoning circle with a figure rising","warp","Who did you call? Something big.","magic"},
 }

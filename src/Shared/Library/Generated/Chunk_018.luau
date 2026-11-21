@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"nachos","IMBLGI","KcN",2,3,3,"E8B84A","F2A62B","pile of chips, melted cheese, jalapenos","gloop","A cheesy mountain of crunch.","edible,sticky"},
+	{"nag","KMBBKB","iQNO",3,5,1,"F59E0B","DC2626","wagging finger with a speech bubble of blah blah blah","chatter","Are we there yet? Are we there yet? Are we","silly"},
+	{"naga","ABDJCD","GfMB",7,6,7,"065F46","FACC15","cobra hooded serpent, jeweled crest","hiss","A serpent king with excellent taste in jewels.","mythical,reptile,royal"},
 	{"naginata","CKDHuK","fTP",6,6,4,"C9CED4","24262A","curved blade on long shaft","shing","Elegant reach, very rude edge.","medieval,sharp"},
 	{"nahual","ALCJAA","DjY",5,7,4,"7C2D12","FACC15","jaguar shapeshifter with glowing markings","growl","A jaguar on Tuesdays. Your neighbor otherwise.","mythical"},
 	{"nail","BKAAJK","Te",1,9,2,"8A929B","8E9196","thin pointed metal spike","clink","Hit it on the head.","hardware"},
@@ -400,7 +403,4 @@ return {
 	{"pair","KMBONA","QFV",3,5,3,"EC4899","3B82F6","two matching socks dancing arm in arm","pop","Two of them. For twice the problem.","silly"},
 	{"pajama kid","LMBJNG","Ud",2,6,2,"60A5FA","FDE68A","footie pajamas, teddy bear","giggle","Pillow fight champion.","cute,silly"},
 	{"pajamas","BMCONI","FN",1,3,1,"87CEEB","F2F2EE","cosy cloud-print pyjamas","swish","Sleepy power-up.","clothing"},
-	{"pakicetus","AMBJAA","DQfh",3,7,4,"8A7A5A","D8C8A8","wolf-like whale ancestor","howl","Great-grandpa of whales. Looks like a dog.","mammal,predator,wild,extinct,ancient"},
-	{"pakora","IMAELB","Ke",2,7,1,"C8803A","F2A62B","craggy fried fritter","pitter","Crunchy fritter of spicy veg.","edible"},
-	{"palace","EMFCII","GSh",5,1,9,"FFF8E1","FFD54F","grand wings, golden domes, fountains","thud","So fancy the guards wear sashes.","structure,building,royal"},
 }

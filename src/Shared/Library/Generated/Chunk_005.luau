@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"carbon","FEBDOJ","jSN",2,4,4,"1F2937","6B7280","black sooty puff with tiny hexagon patterns","puff","Coal, pencils and diamonds. Guess which you got.","science"},
 	{"carbonara","IMBLGI","cHN",2,3,3,"F2E2B0","C8502B","creamy spaghetti, bacon bits","gloop","Creamy, cheesy, peppery.","edible,sticky"},
 	{"carcharodontosaurus","AMEJBA","DkfT",8,6,7,"8A5A3A","D8A07A","huge skull, shark-like teeth","roar","Shark teeth on a giant dino.","dinosaur,extinct,reptile,predator"},
 	{"card storm","FLCELB","jdT",4,8,1,"D32F2F","FFFFFF","swirl of glowing playing cards","shff","52 card pick-up. Painful version.","magic,silly"},
@@ -402,5 +403,4 @@ return {
 	{"clamp","JKALJK","O",1,3,6,"E67E22","C9CED4","C-shaped screw clamp","clank","Clamped down tight.","tool"},
 	{"clan","LGDJLA","GQeh",6,5,6,"166534","CA8A04","group in matching tartan with a banner and war drums","drum","Mess with one, meet all forty cousins.","warrior,team"},
 	{"clap","KFBFOB","kO",3,10,1,"FFE082","FFFFFF","shockwave from two palms","clap","Clap! Everybody flinches.","loud"},
-	{"clap swap","KLBAKI","jY",3,10,1,"7C5CFF","7DF9FF","a sharp clap and two people trade places","pop","Clap. You're there now.","anime,magic"},
 }

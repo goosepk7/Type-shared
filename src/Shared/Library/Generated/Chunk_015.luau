@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"lace monitor","AMCJAA","Cf",4,7,2,"2A2A2A","F2E8C0","patterned big monitor","hiss","Climbs trees with huge claws.","reptile"},
+	{"lacewing","AMAJFB","jdAF",1,5,1,"8AE04A","E8F8E0","lacy green clear wings","flutter","Eats aphids. Looks like lace.","insect,cute"},
+	{"lacrosse ball","BMAA3F","ke",2,9,5,"F2F2EE","F2F2EE","solid rubber ball","bonk","Hard. Fast. Ouch.","sport"},
+	{"lacrosse stick","BMCHJK","fe",2,7,4,"F2F2EE","1F2F55","stick with a netted pocket","bonk","Catch, cradle, fling.","sport"},
 	{"ladder","BMCCII","Gl",1,3,4,"C49A6C","8A929B","tall two-rail ladder","clank","Climbs walls. Carry it everywhere.","tool"},
 	{"ladder truck","DBEKHL","Dkleg",6,5,8,"D22B2B","C0C0C0","long red truck with a giant ladder","siren","Ladder up. Hose down.","mechanical,vehicle,land"},
 	{"ladle","BMBHJK","fe",1,6,3,"8A929B","24262A","deep spoon on long handle","clang","Soup's on. In your face.","kitchen,household"},
@@ -212,7 +216,6 @@ return {
 	{"lettuce sea slug","AGAJGI","N",1,1,2,"6AE04A","F2F2E0","frilly lettuce-like slug","squelch","A salad that photosynthesizes.","mollusk,aquatic"},
 	{"levee","EBECII","GS",3,1,9,"7CB342","8D6E63","long raised grassy bank","thud","Keeps water out. And enemies too.","structure,defense"},
 	{"level","JKBHJK","f",1,5,4,"F1C40F","47D7E8","long bar with bubble vial","clank","Keeps things balanced. Including you.","tool"},
-	{"level crossing","EMCLII","GSO",3,1,6,"E53935","F5F5F5","barrier arms with flashing red lights","bell","Ding ding ding! Train coming!","structure"},
 	{"level up","KHCOKJ","DWF",4,6,4,"FFD54F","00E5FF","golden pillar of light with stars","fanfare","Ding! New abilities unlocked.","meme"},
 	{"lever","BKBLJK","kl",2,4,6,"8B5A2B","5B6168","long plank on a pivot","clank","Give me a lever and a place to stand.","science"},
 	{"leviathan","ABFJCC","kHB",9,5,10,"1E3A8A","38BDF8","endless armored sea serpent","roar","The ocean's largest regret.","mythical,aquatic,boss,danger"},
@@ -400,7 +403,4 @@ return {
 	{"long-eared bat","AMBJDB","jiA",2,7,1,"8A6A4A","C8A88A","ears as long as its body","screech","Ears longer than its body.","mammal,nocturnal,spooky"},
 	{"long-eared owl","AMBJDB","AZT",3,7,2,"8A6A44","E8701E","long ear tufts, orange face","hoot","Ear tufts like antennae.","bird,nocturnal,predator"},
 	{"longan","IGAAKF","Fke",3,6,2,"C8A46A","F3EEE0","tan marble with see-through flesh","splat","Peel it and it stares back.","edible,fruit,sweet"},
-	{"longboard","DMAKHF","Dkg",2,7,2,"8D6E63","4FC3F7","long wooden deck, big soft wheels","engine","Surfing, but on pavement.","mechanical,vehicle,land,sport"},
-	{"longbow","CMCAvI","Te",5,7,3,"5A3A1E","B89B6A","tall curved yew bow","twang","Hits from very, very far away.","medieval,ranged"},
-	{"longbowman","LFCJNA","Te",5,5,4,"15803D","78350F","tall yew longbow, green tunic","twang","Arrows blot out the sun.","warrior,archer"},
 }

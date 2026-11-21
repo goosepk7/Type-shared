@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thunderbird","ADEJDB","AkeLO",8,8,6,"1E3A8A","FDE047","massive eagle, lightning feather tips","thunder","Flaps once: thunder. Flaps twice: weather report.","mythical,bird,storm,flying"},
+	{"thunderbird chick","ADBJDB","AL",2,8,2,"1E3A8A","FDE047","fluffy chick that crackles","chirp","Every chirp is a tiny thunderclap.","cute,storm,bird"},
+	{"thunderbolt","FDDAKB","keLO",8,10,2,"FFE600","5A8CFF","thick forked bolt slamming down","crack","Comes with its own drumroll.","electric"},
+	{"thundercloud","GDDDOJ","QeL",6,4,4,"39445C","D6DDE8","anvil-topped dark cloud with flickers","rumble","Follows you. Rains on your parade.","storm,electric"},
+	{"thunderhead","GDEDOJ","QeL",7,3,5,"37474F","FFF59D","towering anvil storm cloud","rumble","A cloud so tall it has a ceiling.","storm,electric"},
+	{"thundersnow","GDDEOJ","JLN",6,5,4,"D8E6F0","FFE37A","snowstorm with flashes of lightning","boom","Snow, but with drum solos.","frozen,electric,storm"},
 	{"thunderstorm","GDEEOJ","SLPO",8,6,4,"2E3A55","FFE57F","towering black clouds spitting lightning","boom","Loud, bright, and very wet.","storm,electric"},
 	{"thylacine","AMCJAA","DQfh",5,7,4,"B89A6A","3A2A1E","dog-like, striped back, stiff tail","howl","A striped dog that was a marsupial.","mammal,predator,wild,extinct,marsupial"},
 	{"thylacoleo","AMDJAA","DkO",6,4,8,"B88A5A","E8D0A8","stocky marsupial lion","roar","A koala's scary ancient cousin.","mammal,extinct,ancient,heavy"},
@@ -397,10 +403,4 @@ return {
 	{"tylosaurus","ABEJEC","DkfHB",8,6,7,"3A5A6A","C8D0D8","long mosasaur with ram snout","roar","Rammed prey with its nose.","extinct,reptile,aquatic,ocean"},
 	{"typhon","AFFJNA","kleP",9,4,9,"1C1917","EA580C","storm giant with serpent legs and wings","roar","Father of monsters. Storm in a bad mood.","mythical,giant,boss,danger"},
 	{"typhoon","HBFN5K","kSHIP",9,5,7,"42678A","B9D3E8","spiralling rain-heavy storm wall over sea","howl","A hurricane with extra sea.","storm,aquatic,danger"},
-	{"tyrannosaurus rex","AMEJBA","DkfTO",9,6,8,"4A5A2E","C8A86A","giant head, tiny arms, massive jaws","roar","Tiny arms. Huge bite. No hugs.","dinosaur,extinct,reptile,predator,danger"},
-	{"tyrant","LIDJYA","GiOh",7,3,7,"1F2937","B91C1C","scowling ruler in spiked black armour on a too-big throne","boo","Makes the rules. Changes them when losing.","villain,royal"},
-	{"tyrant sun","KAFGKJ","KEe",10,2,2,"FF5A2A","FFE3A0","fingertip spark swells into a sinking crimson sun","rumble","One finger. One planet. Some assembly required.","anime,ki,heavy,danger"},
-	{"tzatziki","ICBNGI","JN",2,4,1,"F7F4EC","7DBE3A","white yogurt dip, cucumber flecks","splat","Cool, garlicky dip.","edible,sauce,anti-undead"},
-	{"uakari","AMBJBA","deb",2,7,2,"E83A2A","F2D0B0","bright red bald face","chatter","Face as red as a tomato.","mammal,primate,silly"},
-	{"ube","IMBLGI","SNP",2,3,3,"7A3A9A","C8A0E8","bright purple jam","gloop","Purple, sweet, and everywhere now.","edible,sticky,sweet"},
 }

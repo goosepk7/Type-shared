@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pakicetus","AMBJAA","DQfh",3,7,4,"8A7A5A","D8C8A8","wolf-like whale ancestor","howl","Great-grandpa of whales. Looks like a dog.","mammal,predator,wild,extinct,ancient"},
+	{"pakora","IMAELB","Ke",2,7,1,"C8803A","F2A62B","craggy fried fritter","pitter","Crunchy fritter of spicy veg.","edible"},
+	{"palace","EMFCII","GSh",5,1,9,"FFF8E1","FFD54F","grand wings, golden domes, fountains","thud","So fancy the guards wear sashes.","structure,building,royal"},
 	{"paladin","LHCJNA","GDFf",6,4,8,"E5E7EB","FACC15","shining plate armor, glowing warhammer","clang","Hits hard. Heals harder. Very polite.","holy,warrior"},
 	{"palak paneer","IMBOKI","WF",3,5,3,"3E7A2B","F7F2E0","green curry with cheese cubes","chomp","Spinach strength plus cheese.","edible"},
 	{"paleontologist","LECJNA","Ch",3,5,4,"78350F","FDE68A","dusty vest, chisel, dino bone","clank","Brought back a whole skeleton. Oops.","explorer,science"},
@@ -72,6 +75,7 @@ return {
 	{"park","MGENII","FS",2,1,6,"7CB342","F5E6CA","grass, trees, benches, a duck pond","rumble","Lovely spot for a picnic. And an ambush.","place,terrain"},
 	{"park ranger","LGCJNA","QFc",3,6,5,"365314","D6A35A","flat-brim hat, khaki uniform, binoculars","whistle","Only you can prevent forest fires.","outdoor"},
 	{"parka","BCCONI","GJ",1,4,3,"E67E22","1F2F55","puffy hooded winter coat","swish","Marshmallow armour.","clothing,winter"},
+	{"parking boot","BKBL2I","SO",3,1,6,"F2C12E","2A2A30","bright yellow wheel clamp snapping shut on a foot","clank","You can't park there. Or move.","transit,trap,root"},
 	{"parking lot","MEDNII","SN",1,1,6,"424242","F5F5F5","flat grey lot, painted lines","rumble","Every space is taken. Forever.","place,terrain,silly"},
 	{"parking meter","OKBCmI","Gb",1,1,7,"8E9196","C9CED4","post with coin slot","clank","Time's up.","mechanical"},
 	{"parkour runner","LFCJNA","UDY",3,10,3,"111827","F97316","hoodie, mid-wall-flip","whoosh","Wall run, flip, gone.","sport"},
@@ -206,6 +210,7 @@ return {
 	{"perfume","BFAD2K","jce",1,6,1,"C3A6E8","BFE6F2","fancy spritz bottle","thud","Smells amazing. Confusingly so.","fancy"},
 	{"pergola","EGCNII","FS",1,1,5,"8D6E63","6A1B9A","wooden beams draped with grapevines","rustle","Shade, grapes, and good vibes.","structure,plant"},
 	{"peri peri chicken","IABAKK","KeP",5,7,2,"D8402B","F2A62B","charred red chicken","sizzle","Spicy enough to hear it sizzle.","edible,spicy,flammable"},
+	{"periscope torpedo","OBCAkC","CEe",5,6,3,"5B6B7A","E8453C","a periscope pops up and a torpedo runs along the ground","splash","Torpedo away! Mind the floor.","transit,submarine,projectile"},
 	{"periwinkle","ABAJGI","GN",1,1,6,"6A6A6A","C8C8C8","small round sea snail","squelch","Tiny beach snail. Everywhere.","mollusk,aquatic"},
 	{"permafrost","FCDNOI","JSN",5,2,7,"7FB7D4","E3F4FB","frozen ground plates, blue cracks","crackle","Frozen since forever. Not thawing for you.","frozen,ancient"},
 	{"persian cat","AMBJAA","dfT",2,7,3,"F4F0EA","C9BDAE","flat face, huge fluffy round coat","meow","80% fur, 20% judgement.","mammal,pet,cute"},
@@ -398,9 +403,4 @@ return {
 	{"pizza cutter","BMAHJK","fV",2,7,2,"C9CED4","C0392B","rolling round blade on handle","clang","Slices pizza. Slices problems.","kitchen,household"},
 	{"pizza delivery","IMCJHL","DFc",3,7,2,"D72B2B","F7F2EC","scooter with pizza box","whoosh","Hot pizza in thirty minutes or less.","edible"},
 	{"pizza dough","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","round stretchy dough ball","wobble","Stretchy, sticky, full of potential.","edible,wobbly"},
-	{"pizza ninja","LMCJNA","DZe",4,9,3,"111827","DC2626","ninja carrying pizza boxes","whoosh","Delivers pizza. And pain.","silly,stealth"},
-	{"pizza oven","OACM1I","K",4,1,7,"9C4A3A","FF6A1A","domed brick oven glowing inside","clang","Wood-fired fury.","kitchen,household"},
-	{"pizza party","IMCJII","dFc",5,1,6,"E8B04A","D72B2B","stacked pizza boxes","thud","Free pizza. Everyone comes.","edible,giant,silly"},
-	{"pizza peel","BMCHtK","klf",2,6,3,"C49A6C","8B5A2B","big flat wooden paddle","clang","Scoop. Flip. Fling.","kitchen,household"},
-	{"pizza place","EMCNII","dSc",2,1,5,"E53935","FFC107","shopfront with a leaning pizza sign","ding","Free delivery. Very fast delivery.","structure,building,shop,silly"},
 }

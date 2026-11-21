@@ -3,6 +3,10 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
+	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
+	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
+	{"hibiscus","NGBNMI","dFS",2,1,2,"E91E63","FFEB3B","huge trumpet bloom, long stamen","rustle","Tropical vibes only.","plant,flower"},
 	{"hiccup","KMAOKG","jY",1,8,1,"F8BBD0","FFFFFF","tiny hopping bubble","hic","Hic! Random teleport.","silly"},
 	{"hickory","NGDCMI","GWkS",4,1,8,"795548","8BC34A","tall shaggy-bark tree","rustle","Shaggy bark, tough wood.","plant,tree"},
 	{"hide","KIBOKI","Z",1,5,3,"78909C","ECEFF1","caster blending into the background","hush","Shh. I am a bush.","stealth,silly"},
@@ -399,8 +403,4 @@ return {
 	{"inflate","KFCAKJ","jWl",3,5,1,"FF8A80","FFFFFF","target puffing up like a balloon and floating","squeak","Up, up and away. Balloon style.","silly"},
 	{"influencer","LMCJNA","jdc",3,5,3,"F472B6","FDE68A","selfie stick, sunglasses, perfect hair","click","Everything is content. Even this.","meme"},
 	{"ingredient","IMBELJ","jNP",2,5,2,"FFFFFF","FACC15","flying egg, flour puff, butter block and whisk","puff","Some assembly required.","edible,kitchen"},
-	{"injera","IMBAKK","Uke",3,7,2,"C8A88A","A8886A","huge spongy flatbread","whoosh","A bread plate you eat.","edible"},
-	{"ink","FIBNGI","jSNP",3,3,1,"111827","1E3A8A","spreading blue-black splat with a quill stuck in it","splat","What do you see? A butterfly? It is a splat.","art,sticky"},
-	{"ink blast","FIBDOB","jZN",2,6,1,"1A1A2E","4A148C","black ink splatter cloud","splurt","Squid tech. Blinding and messy.","silly"},
-	{"ink blot","FIBAKI","je",2,6,2,"14141C","3B4CCA","a lobbed glob of ink that splats and smears the screen","splat","Can't see? That's the idea.","cartoon,silly"},
 }

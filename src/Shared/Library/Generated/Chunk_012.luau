@@ -3,6 +3,9 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"gravity grenade","CLBGKI","EHe",5,7,1,"A06EFF","B0B6C0","a grenade that spins up into a tiny gravity well","zap","Everything is attracted to you now.","scifi,game,ranged"},
+	{"gravity gun","CLCBwI","lHIe",5,6,4,"E67E22","2C3539","claw-tipped physics launcher","zap","Picks up anything. Throws it harder.","scifi,ranged"},
+	{"gravity lily","NFBLMJ","lS",2,1,2,"B388FF","E1F5FE","lily floating upside down","chime","Lifts everything nearby. Wheee.","plant,magic,mythical"},
 	{"gravity mage","LLCJNJ","lHN",6,4,4,"312E81","A855F7","floating rocks orbiting a robed mage","hum","What goes up stays up.","magic"},
 	{"gravity prison","KLCLII","NO",6,3,6,"4527A0","B388FF","warped purple sphere pinning target","whum","Too heavy to move.","space"},
 	{"gravity snail","ALBJFA","HN",2,1,6,"7C3AED","FDE68A","snail with a swirling black-hole shell","squelch","Pulls you closer. Very, very slowly.","alien,silly"},
@@ -179,6 +182,7 @@ return {
 	{"hagfish","ABAJCC","dSNB",1,6,1,"D8A0A0","F2D0C8","pink eel blob","splash","Makes buckets of slime. On purpose.","fish,aquatic,silly"},
 	{"haggis","IMBGKF","DkI",3,5,6,"8A5A3A","5A3A2A","round stuffed sausage ball","rumble","Scotland's mysterious round dinner.","edible,heavy"},
 	{"hail","GCCEOB","keO",5,7,3,"DCEBF5","9CBBD0","bouncing ice balls from grey cloud","rattle","Ice cubes, delivered angrily.","frozen,storm"},
+	{"hail a taxi","OMDOHL","DkY",3,9,2,"F2C12E","2A2A30","yellow taxi screeches up and whisks you down the street","honk","Where to? Anywhere but here.","transit,vehicle,movement"},
 	{"hail mary","BECN3K","Eke",6,5,2,"7A3E1E","F4F1EA","laced leather spiral lobbed half a field away","boom","Throw it up and pray.","sport,gridiron,artillery"},
 	{"hailstorm","GCDEOB","kNPO",7,6,4,"C3D8E6","7FA4BD","dark cloud pelting big ice chunks","rattle","Free ice. Applied at speed.","frozen,storm"},
 	{"hainanese chicken rice","IGBOKI","F",2,5,3,"F2E8C8","7DBE3A","poached chicken, fragrant rice","crunch","Simple, silky, perfect.","edible,healthy"},
@@ -399,8 +403,4 @@ return {
 	{"hex bulwark","KHDIII","Gk",6,5,6,"E2801E","FFECC8","a curved honeycomb wall of glowing hex cells","hum","Personal space, enforced.","anime,mecha,barrier"},
 	{"hex cauldron","BJCL2I","ESN",6,3,5,"2E2E34","6EE650","a black iron cauldron of green brew that boils over","bubble","Recipe: one eye of newt, one very bad mood.","monster,folklore,spooky,witch"},
 	{"hex nail","KIBAJK","STe",7,10,2,"B3122E","C9A25E","an iron nail flies, a straw doll is struck with a hammer","clink","Somewhere, a doll just got hammered. So did you.","anime,curse,nail"},
-	{"hexagon","KLBIyE","GaP",3,4,7,"FACC15","F97316","interlocking gold six-sided tiles forming a dome","click","Six sides. The bees were right all along.","school,shape,defense"},
-	{"hexer","LICJNA","jiN",5,5,4,"4C1D95","84CC16","robes stitched with curse runes","cackle","Curses you with bad luck. And hiccups.","magic,spooky"},
-	{"hibernate","KCCOKI","GF",1,1,7,"90CAF9","FFFFFF","frosty cocoon with zzz","snore","Wake me up in spring.","frozen,support"},
-	{"hibiscus","NGBNMI","dFS",2,1,2,"E91E63","FFEB3B","huge trumpet bloom, long stamen","rustle","Tropical vibes only.","plant,flower"},
 }

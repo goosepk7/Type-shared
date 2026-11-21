@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"cream of tomato","IBBOGI","FS",3,4,3,"E8604A","F2E8C8","creamy pink-red soup","slurp","Smooth as velvet.","edible,warm,healthy"},
 	{"cream pie launcher","CMCMxK","jeO",2,5,4,"F3E6C8","C9CED4","catapult arm loaded with pies","boing","Fires desserts with prejudice.","silly"},
 	{"cream puff","IMBLKI","dSc",2,3,3,"E8C88A","F7F2EC","round puff pastry, cream","chomp","A puff of cream in a pastry cloud.","edible,sweet"},
 	{"cream soda","IBBFKI","EkI",3,7,1,"E8C88A","F7F2E8","vanilla fizzy drink","fizz","Vanilla bubbles.","edible,drink,fizzy"},
@@ -42,6 +43,7 @@ return {
 	{"croissant","IMBAKF","Ue",3,6,2,"D9963A","F2D08A","crescent of flaky layers","splat","A buttery crescent moon.","edible,pastry"},
 	{"cronut","IMBLKI","dSc",2,3,3,"D9A04A","F2A6C8","layered fried pastry ring","chomp","Half croissant, half donut. All hype.","edible,sweet"},
 	{"crop","NGDCMI","GWFN",4,1,5,"D4A72C","6B8E23","dense rows of tall golden stalks swaying","rustle","Grows overnight. Ask the scarecrow.","plant,farm"},
+	{"crop duster flyby","OJDNHB","ASN",3,7,3,"E8C547","C9B58A","little biplane swoops low trailing a line of dust","propeller","Fresh from the fields. Cough cough.","transit,plane,dust,line"},
 	{"crop sprayer","DJDKHL","DkMgP",4,4,6,"43A047","FFEB3B","tractor with wide spraying arms","engine","Sprays fields. Sprays faces.","mechanical,vehicle,land"},
 	{"croque monsieur","IGBOKI","F",2,5,3,"D9A04A","F2C870","grilled ham cheese sandwich","crunch","A sandwich with a fancy title.","edible,healthy"},
 	{"croquet mallet","BMCHtK","kf",2,5,4,"8B5A2B","C0392B","long mallet with barrel head","bonk","Wack. Through the hoop.","sport"},
@@ -401,6 +403,4 @@ return {
 	{"director","LMCJNA","jOh",4,4,4,"111827","FBBF24","beret, megaphone, folding chair, clapperboard","clack","CUT! Do it again, but with more dying.","art,movie"},
 	{"dirk","CKBHrK","fT",3,9,3,"8A929B","5A3A1E","long thin dagger","shing","A dagger that went to boarding school.","medieval,sharp"},
 	{"dirt","FEBDOB","jN",2,5,2,"6B4F34","A1856A","kicked-up brown clod burst","thud","Dirt in the eyes. Classic move.","silly"},
-	{"dirt bike","DEBKHL","UDkg",4,9,3,"F28C28","1A1A1A","knobbly tyres, tall seat, high mudguards","rev","Jumps first, lands... eventually.","mechanical,vehicle,land"},
-	{"dirt cup","IMBLGI","SNP",2,3,3,"3A1A0C","E0102B","cup of crumbs and gummy worms","gloop","Dirt you can eat. With worms.","edible,sticky,dessert,silly"},
 }

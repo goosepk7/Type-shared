@@ -3,6 +3,12 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"weight","BKCLtI","kNO",6,3,9,"374151","9CA3AF","black trapezoid weight marked 16 TON dropping","thud","16 tons. Falls on cue.","heavy,silly"},
+	{"weight plate","BKBAKF","Uke",4,6,9,"24262A","8E9196","heavy iron disc","bonk","A discus with commitment issues.","sport"},
+	{"weightless palm","KLCNKJ","klO",7,7,3,"FFC2E2","6E4AA8","enemies drift up helplessly, then drop","hum","Up you go. Down you come.","anime,hero,gravity"},
+	{"weightlifter","LECJNA","Gkl",6,4,7,"111827","DC2626","tank top, huge muscles, barbell","thud","Do you even lift? He does.","sport,heavy"},
+	{"weimaraner","AMCJAA","DQf",4,8,4,"9A9AA0","D8D8DC","sleek silver-grey dog","bark","The grey ghost. Silver, fast.","mammal,pet"},
+	{"weirdo","LLCJNA","UjY",3,6,3,"A3E635","D946EF","mismatched socks, colander hat, walking a pet rock","boing","Normal is a setting on a washing machine.","silly,meme"},
 	{"weka","AMBJDA","dfb",2,4,2,"8A6A4A","C8A07A","flightless brown rail","cluck","Steals shiny things from campers.","bird,farm"},
 	{"welder","OACBJK","KfO",5,4,5,"2F6FD1","24262A","welding gun with bright arc","buzz","Don't look directly at it.","tool"},
 	{"welding mask","BKBONI","G",1,5,5,"24262A","4A4D52","dark-windowed face shield","clank","Flash? What flash?","armor,defense"},
