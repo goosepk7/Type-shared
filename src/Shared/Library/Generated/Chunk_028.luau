@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
 	{"tylosaurus","ABEJEC","DkfHB",8,6,7,"3A5A6A","C8D0D8","long mosasaur with ram snout","roar","Rammed prey with its nose.","extinct,reptile,aquatic,ocean"},
 	{"typhon","AFFJNA","kleP",9,4,9,"1C1917","EA580C","storm giant with serpent legs and wings","roar","Father of monsters. Storm in a bad mood.","mythical,giant,boss,danger"},
 	{"typhoon","HBFN5K","kSHIP",9,5,7,"42678A","B9D3E8","spiralling rain-heavy storm wall over sea","howl","A hurricane with extra sea.","storm,aquatic,danger"},
@@ -402,5 +403,4 @@ return {
 	{"weed whacker","OKCHJK","fVP",3,7,4,"E67E22","8E9196","pole with spinning cord head","whirr","Whacks weeds and ankles.","tool,garden"},
 	{"week","KLBF6B","FNO",3,4,2,"EF4444","22C55E","seven boxes in a row: five grey, two golden","sigh","Five days of Monday. Two days of bliss.","time,meme"},
 	{"weekend","KHCNOI","DF",2,6,3,"FFD54F","81D4FA","sunny happy glow with confetti","yay","No school. All fun.","silly,support"},
-	{"weep","KBBEOJ","dNP",2,3,1,"93C5FD","E0F2FE","wobbly lip under two fountain jets of tears","wail","But I don't WANNA lose.","mood,silly"},
 }

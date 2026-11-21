@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"pizza chef","LACJNA","Kce",3,5,4,"DC2626","22C55E","chef hat, dough spin, moustache","sizzle","Throws pizzas like frisbees.","food,silly"},
 	{"pizza cutter","BMCFJF","Uke",4,7,3,"C9CED4","C0392B","giant steel pizza cutter wheel rolling along the ground","clang","Eight slices, one bounce.","kitchen,roll,projectile,ricochet"},
 	{"pizza delivery","IMCJHL","DFc",3,7,2,"D72B2B","F7F2EC","scooter with pizza box","whoosh","Hot pizza in thirty minutes or less.","edible"},
 	{"pizza dough","IMBLGG","USN",2,3,3,"F2E2C2","E0C8A0","round stretchy dough ball","wobble","Stretchy, sticky, full of potential.","edible,wobbly"},
@@ -402,5 +403,4 @@ return {
 	{"punch","KMCAKB","kf",5,9,2,"FF7043","FFE0B2","glowing fist with impact star","pow","The simplest spell. Fist goes forward.","melee"},
 	{"punch bowl","IBCOKI","Fc",2,6,2,"D8202B","F7F2EC","big glass bowl of red punch","slurp","The centrepiece of every party.","edible,drink"},
 	{"punching bag","BMCCII","Gd",1,1,6,"C0392B","24262A","hanging leather cylinder","bonk","Takes the hits. Keeps smiling.","sport"},
-	{"punching machine","OKCL1I","kO",4,3,6,"C0392B","C9CED4","wall panel with spring boxing gloves","clank","Pow pow pow! From the wall!","defense,silly"},
 }

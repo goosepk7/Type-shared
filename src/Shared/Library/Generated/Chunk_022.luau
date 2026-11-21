@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"robot referee","OKCJNA","GO",3,5,5,"111827","F8FAFC","striped robot with whistle speaker","whistle","Flags your foul. Beeps loudly.","robot,sport"},
 	{"robot samurai","OKCJNA","GfT",6,6,7,"7F1D1D","CA8A04","lacquered red robot armor with katana","clank","Honor protocol: enabled.","robot,warrior"},
 	{"robot snake","OKCJCD","fHL",4,6,5,"71717A","4ADE80","segmented metal snake with LED eyes","whir","Hisses in binary.","robot,reptile"},
 	{"robot snowplow","OKCJHL","JkI",4,3,7,"F97316","94A3B8","robot with huge plow blade","whir","Clears paths. Clears enemies.","robot,frozen"},
@@ -402,5 +403,4 @@ return {
 	{"sea dragon","ABEJCC","kHeB",8,7,7,"0E7490","67E8F9","long finned serpent body, crest of fins","roar","Surfs its own tidal waves.","mythical,reptile,aquatic"},
 	{"sea dragon hatchling","ABBJCC","QB",2,6,2,"0EA5E9","A5F3FC","tiny blue finned dragon","chirp","Splashes adorably.","reptile,cute,aquatic"},
 	{"sea eagle","AMDJDB","DAfTB",6,9,3,"2A2420","F2B02A","massive orange beak, white shoulders","screech","Brought a banana-sized beak.","bird,predator"},
-	{"sea fan","ABCCMI","GdWT",3,1,6,"B83A6A","E87AA0","flat lacy fan coral","crackle","Waves at fish all day.","aquatic,ocean,reef"},
 }

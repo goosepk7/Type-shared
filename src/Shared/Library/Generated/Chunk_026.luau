@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"suit","BMCONA","GjO",3,4,5,"1F2937","DC2626","sharp empty suit with a red tie adjusting its cuffs","click","Dressed to impress. And to distress.","clothing,fancy"},
 	{"suitcase","BMBIyI","G",1,4,4,"7A4E2D","D2B48C","leather suitcase with straps","thud","Packed for adventure.","container"},
 	{"sukiyaki","IABNGI","KF",4,4,2,"8A3A1E","F2E8C8","simmering iron pot of beef","sizzle","A sweet simmering hot pot.","edible,spicy"},
 	{"sulcata tortoise","AMCJUA","GN",3,1,8,"C8A06A","8A6A3A","big desert tortoise","hiss","Bulldozes through gardens.","reptile,armored,desert"},
@@ -402,5 +403,4 @@ return {
 	{"thunder roar","FDCFOB","kO",5,9,1,"7986CB","FFF9C4","crackling sound wave from the caster","roar","Shouting, but with weather.","electric,loud"},
 	{"thunder slash","FDCHJB","fTL",6,10,1,"FFEB3B","448AFF","zigzag slash of lightning","crack","Fast as lightning. Because it is.","electric,sharp"},
 	{"thunder stag","FDEDAB","keLO",9,3,6,"2E6CE6","EBF8FF","a storm cloud from which a lightning beast dives","thunder","The sky had antlers. Briefly.","anime,ninja,lightning"},
-	{"thunder strike","FDDAKB","kLO",8,9,2,"FFEA00","3D5AFE","bolt slamming down with a ring of thunder","boom","Lightning that hits like a hammer.","electric"},
 }

@@ -314,6 +314,7 @@ return {
 	{"movie","KHCNnI","dScO",3,2,2,"111827","FACC15","big silver screen, projector beam, popcorn flying","click","No talking. No phones. No refunds.","movie,art"},
 	{"movie theater","EMDCII","GdS",2,1,7,"B71C1C","FFD54F","building with glowing marquee","thud","Lights down. Enemies distracted.","structure,building"},
 	{"moving castle","DAFMBA","Gkeg",7,2,9,"8D8D8D","FF7043","lumbering heap of towers on metal legs","stomp","A whole castle. Walking. Towards you.","vehicle,magic,mythical"},
+	{"mower dash","OGCO1L","Dkf",4,7,4,"D8413A","5FAE3E","red push mower with a black engine and a steel handle","engine","Gives enemies a short back and sides.","household,garden,mechanical"},
 	{"mozzarella","IMBLGI","cHN",2,3,3,"F7F4EC","F2EAD5","soft white ball","gloop","Stretches for miles.","edible,sticky,dairy"},
 	{"mozzarella bites","IMAELB","eVP",2,7,1,"F7F2E0","D9A04A","breaded cheese balls","pitter","Gooey cheese grenades.","edible,snack"},
 	{"mrs claus","LCCJNA","Fc",3,4,4,"DC2626","F8FAFC","red dress, apron, cookie tray","jingle","Cookies heal 50 HP.","christmas,holiday"},
@@ -402,5 +403,4 @@ return {
 	{"mystery meat","IJBG7G","UjE",4,5,3,"8A6A6A","B9D36A","wobbly grey meatloaf that does something random","splat","Nobody knows. Nobody asks.","goofy,gross,food,random"},
 	{"mystery stew","IJBDOJ","jFM",3,3,2,"6B7A4A","8A5A3A","bubbling greenish bowl","whiff","Ingredients: yes.","edible,smelly,silly"},
 	{"mystic","LLCJNJ","jFY",5,5,4,"7C3AED","22D3EE","floating meditating figure, third eye glow","hum","Knows things. Won't say.","magic"},
-	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
 }

@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"myth","KLCDOJ","jZh",4,4,2,"C4B5FD","6D28D9","misty purple scroll-shaped cloud with shadowy beasts inside","whisper","Nobody has seen it. Everybody knows a guy.","mythical,ancient"},
 	{"naan","IMBAKK","Uke",3,7,2,"F0D8A8","C88A4A","teardrop flatbread, char spots","whoosh","Fluffy, blistered, perfect for scooping.","edible"},
 	{"nacho cheese","IMBLGI","ScN",2,3,3,"F2A62B","F2C24A","bright orange gooey sauce","gloop","Liquid gold, but orange.","edible,sticky,dairy"},
 	{"nacho fries","IMAELB","eVP",2,7,1,"F2862B","F2C24A","seasoned orange fries","pitter","Fries in nacho dust.","edible"},
@@ -392,7 +393,7 @@ return {
 	{"paint","BMAAJI","je",1,6,1,"C0392B","2F6FD1","splash of bright paint","splat","Colour outside the lines.","art"},
 	{"paint bomb","CMBGKF","jeP",2,7,1,"D0349A","F1C40F","balloon full of bright paint","splat","Splat art, delivered fast.","silly"},
 	{"paint palette","BMBIyI","j",1,5,2,"C49A6C","C0392B","wooden palette with paint blobs","splat","Every colour of victory.","art"},
-	{"paint roller","BMBHJK","jf",1,6,2,"F2F2EE","2F6FD1","roller on bent handle","clank","Paint the town. And the enemy.","art"},
+	{"paint roller","JMDNJF","kSN",3,6,3,"3E8EDE","F2C230","giant fluffy roller soaked in blue paint","splash","Paint the town. And the enemy.","household,diy,art"},
 	{"paint scraper","JKAHrK","f",1,7,3,"8A929B","2F6FD1","flat scraping blade","clank","Scrape, scrape, done.","tool"},
 	{"paint splash","KMBFOB","jd",2,7,1,"FF4081","00E5FF","rainbow paint splatter wave","splat","Now everything's colourful.","silly"},
 	{"paint sprayer","JKBFwK","je",2,6,3,"8E9196","F2F2EE","pistol with paint cup","clank","Coats everything. Everything.","tool"},
@@ -402,5 +403,4 @@ return {
 	{"paintball gun","CMBAwI","jeN",2,8,3,"24262A","8BC34A","hopper-topped paint blaster","thwip","Splat. Now you're a painting.","sport,silly"},
 	{"paintbrush","BMAAJK","je",1,7,1,"8B5A2B","C0392B","wooden brush with painted tip","clank","Every stroke a masterpiece.","art"},
 	{"painted lady","AMAJFB","jdA",1,5,1,"E8803A","1E1E1E","orange black white spotted wings","flutter","Flies across continents.","insect,cute"},
-	{"painted turtle","AMBJUA","GNB",2,2,8,"3A4A3A","E8301E","shell with red and yellow lines","hiss","Painted by nature.","reptile,armored"},
 }

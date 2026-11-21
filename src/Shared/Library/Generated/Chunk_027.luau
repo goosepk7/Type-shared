@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"thunder strike","FDDAKB","kLO",8,9,2,"FFEA00","3D5AFE","bolt slamming down with a ring of thunder","boom","Lightning that hits like a hammer.","electric"},
 	{"thunder sword","CDCHrK","fLO",7,7,4,"F1C40F","1F2F55","zig-zag blade crackling with sparks","shing","Every swing is a little thunderclap.","fantasy,electric"},
 	{"thunder wall","KDDCnI","GLO",5,4,5,"FFEA00","536DFE","crackling fence of vertical lightning","buzz","Do not touch the zappy wall.","electric,defence"},
 	{"thunder wave","FDDFOB","kIO",6,9,1,"5C6BC0","FFF59D","ring of thunder rippling outward","boom","BOOM. Sorry, was that loud?","electric,loud"},
@@ -198,7 +199,7 @@ return {
 	{"toy","BMBJWA","UdQc",2,5,3,"EF4444","FACC15","wind-up tin robot, key in back, googly eyes, wobble walk","squeak","Batteries not included. Menace is.","toy,cute,silly"},
 	{"toy airplane","BMAJgB","dA",1,7,2,"C0392B","F2F2EE","little propeller plane","squeak","Brrrrrm. Loop-de-loop.","toy"},
 	{"toy block wall","EMCCII","GdS",2,1,4,"E53935","1E88E5","stacked colourful toy blocks","thud","A, B, C, D, defence.","silly,cute"},
-	{"toy blocks","BMBCII","GV",1,3,3,"C0392B","2F6FD1","stack of colourful plastic bricks","squeak","Step on one. Learn true pain.","toy,building"},
+	{"toy blocks","BMBLII","SNP",3,4,3,"E2483F","4086DE","chunky wooden toy blocks in bright colours","squeak","Step on one. Learn true pain.","household,toy,nursery"},
 	{"toy boat","BBAJHJ","dB",1,4,2,"F2F2EE","2F6FD1","little toy sailing boat","squeak","Brave little captain.","toy"},
 	{"toy box","BMCL2I","ch",2,1,5,"C0392B","F1C40F","painted chest of toys","thud","Open it. The toys march out.","toy,container"},
 	{"toy car","BMAJHL","Dd",1,7,3,"C0392B","C9CED4","tiny shiny metal car","squeak","Vroom vroom on the carpet.","toy"},
@@ -402,5 +403,4 @@ return {
 	{"twinstep fusion","KHCOKI","DWkf",8,7,4,"FFE7A0","5FE0D0","you and a light twin dance, then fold into one","warp","Two steps, one fighter. Mind the fingertips.","anime,dance,buff,transformation"},
 	{"two liter bottle","IBCFKI","EkI",4,7,1,"3A1A0C","3E8E2B","big plastic soda bottle","fizz","A pressurized fizz cannon.","edible,drink,fizzy"},
 	{"two-headed dragon","AAEKAB","KAJeg",8,5,8,"7F1D1D","60A5FA","two necks, one fire head, one ice head","roar","Two heads, constant arguments.","mythical,reptile,flying"},
-	{"two-headed troll","AEDJNA","kf",7,3,8,"57534E","A3E635","troll with two arguing heads","roar","Can't agree on anything except smashing.","giant,silly"},
 }

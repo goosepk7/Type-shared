@@ -209,7 +209,7 @@ return {
 	{"duck car","DMBKHL","UDdkg",2,6,3,"FFEB3B","FF9800","car shaped like a giant rubber duck","quack","Quack quack. Honk honk.","vehicle,silly"},
 	{"duck duck goose","KMBODA","DjO",3,8,1,"FDE047","F8FAFC","circle of sitting kids, one hand about to bop a head","honk","Duck. Duck. Duck. Duck. GOOSE. Run.","toy,school,silly"},
 	{"duckling","ABAJDC","AQfB",1,5,2,"FFE268","F2A030","fluffy yellow baby duck","peep","Follows the first thing it sees.","bird,aquatic,cute"},
-	{"duct tape","BMBLJK","GNO",1,5,3,"8E9196","C9CED4","thick grey tape roll","clank","Fixes everything except the enemy.","sticky"},
+	{"duct tape","BMCLIF","SO",3,4,3,"A9B0B8","C8A271","fat silver tape roll paying out a sticky strip","clank","Fixes everything except the enemy.","household,toolbox,sticky"},
 	{"duel","KMCLII","fO",5,7,3,"FFD54F","212121","ring of light locking two fighters","clang","One on one. No escape.","melee"},
 	{"dugong","ABDJEC","FfB",4,2,7,"9A8E84","D8D0C8","sea cow with a fluke tail","bark","Mermaid legends are mostly this guy.","mammal,aquatic"},
 	{"duiker","AMBJAA","DZk",2,8,4,"B8703A","F2E0C8","small diving antelope","bleat","Dives into bushes. Gone.","mammal,wild"},

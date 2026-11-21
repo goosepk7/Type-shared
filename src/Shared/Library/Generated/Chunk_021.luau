@@ -3,6 +3,7 @@
 -- Entry: {id, enums(c e z s bp m), behaviours, power, speed, durability, primary, secondary,
 --         silhouette, sound, flavour, tags(comma separated)}  -- enums/behaviours are CODE chars
 return {
+	{"punching machine","OKCL1I","kO",4,3,6,"C0392B","C9CED4","wall panel with spring boxing gloves","clank","Pow pow pow! From the wall!","defense,silly"},
 	{"punching tree","NGECMI","GkSf",6,2,8,"4E342E","2E7D32","gnarled tree swinging heavy branches","chime","Do not park next to it.","plant,magic,mythical,silly"},
 	{"punishment","KICLII","SNO",4,1,6,"78716C","DC2626","small chair in a corner under a spotlight, clock ticking","tick","Go to your room. And think about what you typed.","school,silly"},
 	{"punk rocker","LMCJNA","jkO",4,6,4,"111827","F472B6","mohawk, spiked jacket, chains","guitar","Loud guitar. Louder hair.","music"},
@@ -402,5 +403,4 @@ return {
 	{"robot penguin","OKBJDA","dN",2,4,5,"111827","F8FAFC","waddling penguin robot","beep","Waddles into battle. Adorably.","robot,cute"},
 	{"robot pirate","OKCJNA","feb",5,6,6,"57534E","DC2626","robot with hook claw and eyepatch screen","clank","Searching for buried data.","robot,pirate,silly"},
 	{"robot queen","OKDJNA","Feh",7,3,7,"E5E7EB","C084FC","elegant silver robot with crown antennae","hum","All robots answer to her.","robot,royal"},
-	{"robot referee","OKCJNA","GO",3,5,5,"111827","F8FAFC","striped robot with whistle speaker","whistle","Flags your foul. Beeps loudly.","robot,sport"},
 }
